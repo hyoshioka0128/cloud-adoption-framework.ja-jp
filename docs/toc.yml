@@ -1,0 +1,733 @@
+- name: クラウド導入フレームワーク
+  items:
+    - name: はじめに
+      href: index.md
+    - name: 使用の開始
+      items:
+        - name: 移行の過程についての理解
+          href: getting-started/migrate.md
+        - name: イノベーションの過程についての理解
+          href: getting-started/innovate.md
+        - name: いずれの過程でも成功を収める
+          href: getting-started/enable.md
+    - name: 戦略
+      items:
+        - name: 概要
+          href: business-strategy/index.md
+        - name: 動機 (クラウドに移行する理由)
+          href: business-strategy/motivations-why-are-we-moving-to-the-cloud.md
+        - name: ビジネス成果
+          items:
+            - name: 概要 - ビジネス成果とは
+              href: business-strategy/business-outcomes/index.md
+            - name: 財務成果
+              href: business-strategy/business-outcomes/fiscal-outcomes.md
+            - name: 機敏性成果
+              href: business-strategy/business-outcomes/agility-outcomes.md
+            - name: 到達性成果
+              href: business-strategy/business-outcomes/reach-outcomes.md
+            - name: エンゲージメント成果
+              href: business-strategy/business-outcomes/engagement-outcomes.md
+            - name: パフォーマンス成果
+              href: business-strategy/business-outcomes/performance-outcomes.md
+            - name: ビジネス成果を使用する方法
+              href: business-strategy/business-outcomes/how-to-use-the-business-outcome-template.md
+            - name: 技術的取り組みを学習メトリックに合わせる
+              href: business-strategy/learning-metrics.md
+        - name: 業務の妥当性
+          items:
+            - name: クラウド移行のビジネス ケースを作成する
+              href: business-strategy/cloud-migration-business-case.md
+            - name: クラウド変革のための財務モデルを作成する
+              href: business-strategy/financial-models.md
+            - name: クラウド会計とは
+              href: business-strategy/cloud-accounting.md
+        - name: 最初の導入プロジェクト
+          href: business-strategy/first-adoption-project.md
+        - name: 推奨されるスキル
+          href: business-strategy/suggested-skills.md
+    - name: プラン
+      items:
+        - name: 概要
+          href: plan/index.md
+        - name: デジタル資産
+          items:
+            - name: 合理化の 5 R
+              href: digital-estate/5-rs-of-rationalization.md
+            - name: デジタル資産とは
+              href: digital-estate/index.md
+            - name: デジタル資産計画の手法
+              href: digital-estate/approach.md
+            - name: インベントリ データの収集
+              href: digital-estate/inventory.md
+            - name: デジタル資産の合理化
+              href: digital-estate/rationalize.md
+            - name: コストを予測するコスト モデルの配置
+              href: digital-estate/calculate.md
+        - name: 初期の組織配置
+          href: plan/initial-org-alignment.md
+        - name: スキルの準備 - ロール、スキル、プロセスの調整
+          href: plan/adapt-roles-skills-processes.md
+        - name: クラウド導入計画
+          items:
+            - name: はじめに
+              href: plan/plan-intro.md
+            - name: 前提条件
+              href: plan/prerequisites.md
+            - name: クラウド導入計画テンプレートを Azure DevOps にデプロイする
+              href: plan/template.md
+            - name: ワークロードを定義し、優先順位を付ける
+              href: plan/workloads.md
+            - name: ワークロードに合わせて資産を調整する
+              href: plan/assets.md
+            - name: 合理化決定を見直す
+              href: plan/review-rationalization.md
+            - name: イテレーション パスを更新する (リリースとイテレーションを定義する)
+              href: plan/iteration-paths.md
+            - name: タイムラインを作成する
+              href: plan/timelines.md
+        - name: 推奨されるスキル
+          href: plan/suggested-skills.md
+        - name: 既存のロール、スキル、プロセスの調整
+          href: plan/adapt-roles-skills-processes.md
+    - name: Ready
+      items:
+        - name: 概要
+          href: ready/index.md
+        - name: Azure 準備ガイド
+          items:
+            - name: 開始する前に
+              href: ready/azure-readiness-guide/index.md
+            - name: リソースの整理
+              href: ready/azure-readiness-guide/organize-resources.md
+            - name: アクセスを管理する
+              href: ready/azure-readiness-guide/manage-access.md
+            - name: コストと課金の管理
+              href: ready/azure-readiness-guide/manage-costs.md
+            - name: ガバナンス、セキュリティ、およびコンプライアンスの計画
+              href: ready/azure-readiness-guide/govern-org-compliance.md
+            - name: 監視とレポートの使用
+              href: ready/azure-readiness-guide/monitoring-reporting.md
+            - name: Azure を最新の状態に保つ
+              href: ready/azure-readiness-guide/staying-current.md
+            - name: 移行ランディング ゾーンをデプロイする
+              href: ready/azure-readiness-guide/migration-landing-zone.md
+        - name: ランディング ゾーンに関する考慮事項
+          items:
+            - name: 概要
+              href: ready/considerations/index.md
+            - name: Azure 基礎の概念
+              href: ready/considerations/fundamental-concepts.md
+            - name: 計算サービスの選択
+              href: ready/considerations/compute-decisions.md
+            - name: ネットワーク関連の意思決定
+              href: ready/considerations/network-decisions.md
+            - name: ストレージのガイダンス
+              href: ready/considerations/storage-guidance.md
+            - name: データ ストアの選択
+              href: ready/considerations/data-decisions.md
+            - name: ロールベースのアクセス制御
+              href: ready/azure-best-practices/roles.md
+            - name: 一貫性のあるハイブリッド クラウドの作成
+              href: infrastructure/misc/hybrid-consistency.md
+        - name: ベスト プラクティス
+          items:
+            - name: 概要
+              href: ready/azure-best-practices/index.md
+            - name: Azure プリミティブ
+              items:
+                - name: 複数のサブスクリプションで拡大
+                  href: ready/considerations/scaling-subscriptions.md
+                - name: 名前付けとタグ付け
+                  href: ready/considerations/name-and-tag.md
+            - name: ネットワーク
+              items:
+                - name: 仮想ネットワークの計画
+                  href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: ネットワーク セキュリティのベスト プラクティス
+                  href: 'https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: ワークロード移行ネットワークのベスト プラクティス
+                  href: 'https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: 境界ネットワーク
+                  href: ready/azure-best-practices/perimeter-networks.md
+                - name: ハブスポーク ネットワーク トポロジ
+                  href: ready/azure-best-practices/hub-spoke-network-topology.md
+            - name: ID とアクセスの制御
+              items:
+                - name: ID 管理のベスト プラクティス
+                  href: 'https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: Azure AD で管理者アクセスをセキュリティ保護する
+                  href: 'https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: Azure AD 認証の選択
+                  href: 'https://docs.microsoft.com/azure/security/azure-ad-choose-authn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+            - name: Storage
+              items:
+                - name: Storage のセキュリティ ガイド
+                  href: 'https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+            - name: データベース
+              items:
+                - name: データベース セキュリティのベスト プラクティス
+                  href: 'https://docs.microsoft.com/azure/security/azure-database-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: Azure SQL のバージョンを選択する
+                  href: 'https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+            - name: コスト管理
+              items:
+                - name: 事業単位、環境、プロジェクトをまたいでコストを追跡する
+                  href: ready/azure-best-practices/track-costs.md
+                - name: Azure Cost Management のベスト プラクティス
+                  href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: 予算を作成して管理する
+                  href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: コスト データのエクスポート
+                  href: 'https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: 推奨に基づくコストの最適化
+                  href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                - name: コストのアラートを使用して使用量と支出を監視する
+                  href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+        - name: 推奨されるスキル
+          href: ready/suggested-skills.md
+    - name: 採用
+      items:
+        - name: 移行
+          items:
+            - name: 概要
+              href: migrate/index.md
+            - name: Azure 移行ガイド
+              items:
+                - name: Azure 移行ガイドの概要
+                  href: migrate/azure-migration-guide/index.md
+                - name: Azure への移行の前提条件
+                  href: migrate/azure-migration-guide/prerequisites.md
+                - name: 移行前の個々のワークロードの評価
+                  href: migrate/azure-migration-guide/assess.md
+                - name: ワークロードを構成する資産の移行
+                  href: migrate/azure-migration-guide/migrate.md
+                - name: 移行に重点を置いたコスト管理のメカニズム
+                  href: migrate/azure-migration-guide/manage-costs.md
+                - name: 最適化と変換
+                  href: migrate/azure-migration-guide/optimize-and-transform.md
+                - name: セキュリティ保護と管理
+                  href: migrate/azure-migration-guide/secure-and-manage.md
+                - name: Azure への移行時にサポートを受ける
+                  href: migrate/azure-migration-guide/assistance.md
+            - name: 拡大された範囲
+              items:
+                - name: 拡大された範囲のチェックリスト
+                  href: migrate/expanded-scope/index.md
+                - name: ビジネスに基づく範囲の変更
+                  items:
+                    - name: ポートフォリオのバランスを取る
+                      href: migrate/expanded-scope/balance-the-portfolio.md
+                    - name: 複数の地理的リージョン
+                      href: migrate/expanded-scope/multiple-regions.md
+                - name: カルチャに基づく範囲の変更
+                  items:
+                    - name: スキルの準備
+                      href: migrate/expanded-scope/suggested-skills.md
+                - name: 技術戦略に基づく範囲の変更
+                  items:
+                    - name: 複数のデータセンター
+                      href: migrate/expanded-scope/multiple-datacenters.md
+                    - name: データ要件がネットワーク容量を超える
+                      href: migrate/expanded-scope/network-capacity-exceeded.md
+                    - name: ガバナンスとコンプライアンス
+                      href: migrate/expanded-scope/governance-or-compliance.md
+            - name: ベスト プラクティス
+              items:
+                - name: 概要
+                  href: migrate/azure-best-practices/index.md
+                - name: ワークロードを評価するためのベスト プラクティス
+                  items:
+                    - name: 移行の対象となるオンプレミス リソースの評価
+                      href: migrate/azure-best-practices/contoso-migration-assessment.md
+                - name: ワークロードを移行するためのベスト プラクティス
+                  items:
+                    - name: 移行されたワークロードのネットワークの設定
+                      href: migrate/azure-best-practices/migrate-best-practices-networking.md
+                    - name: アプリケーションの移行パターンと例
+                      items:
+                        - name: 概要
+                          href: migrate/azure-best-practices/contoso-migration-overview.md
+                        - name: Azure インフラストラクチャのデプロイ
+                          href: migrate/azure-best-practices/contoso-migration-infrastructure.md
+                        - name: Windows Server ワークロード
+                          items:
+                            - name: Azure VM でのアプリのリホスト
+                              href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
+                            - name: Azure コンテナーと Azure SQL Database を使用するためにアプリを再構築する
+                              href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
+                        - name: Linux ワークロード
+                          items:
+                            - name: Linux アプリを Azure VM 上でリホストする
+                              href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
+                            - name: Azure VM および Azure Database for MySQL で Linux アプリをリホストする
+                              href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
+                        - name: SQL Server ワークロード
+                          items:
+                            - name: Azure VM と Azure SQL Database Managed Instance でアプリをリホストする
+                              href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
+                            - name: Azure VM と SQL Server AlwaysOn 可用性グループでアプリをリホストする
+                              href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
+                        - name: ASP.NET/PHP/Java アプリ
+                          items:
+                            - name: Azure App Service と Azure SQL Database にアプリをリファクタリングする
+                              href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
+                            - name: Azure App Service と Azure Database for MySQL に Linux アプリをリファクタリングする
+                              href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
+                            - name: Azure でのアプリのリビルド
+                              href: migrate/azure-best-practices/contoso-migration-rebuild.md
+                            - name: Azure DevOps Services に TFS を移行する
+                              href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
+                        - name: 移行のスケーリング
+                          href: migrate/azure-best-practices/contoso-migration-scale.md
+                    - name: メインフレーム移行
+                      items:
+                        - name: 概要
+                          href: infrastructure/mainframe-migration/overview.md
+                        - name: 通説と事実
+                          href: infrastructure/mainframe-migration/myths-and-facts.md
+                        - name: 移行方法
+                          href: infrastructure/mainframe-migration/migration-strategies.md
+                        - name: アプリケーションの戦略
+                          href: infrastructure/mainframe-migration/application-strategies.md
+                - name: ワークロードを最適化するためのベスト プラクティス
+                  items:
+                    - name: ワークロードの料金計算とサイズ設定
+                      href: migrate/azure-best-practices/migrate-best-practices-costs.md
+                - name: ワークロードのセキュリティ保護と管理に関するベスト プラクティス
+                  items:
+                    - name: 移行後のワークロードのセキュリティ保護と管理
+                      href: migrate/azure-best-practices/migrate-best-practices-security-management.md
+                    - name: Azure アーキテクチャ センターからの追加のベスト プラクティス
+                      items:
+                        - name: Azure の境界セキュリティに関するベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/architecture/vdc/networking-virtual-datacenter?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure のデータベース セキュリティに関するベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/azure-database-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure のデータ セキュリティと暗号化のベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure の ID 管理とアクセス制御セキュリティのベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure のネットワーク セキュリティに関するベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure で運用可能なセキュリティに関するベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/azure-operational-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure PaaS のベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/security-paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure Service Fabric セキュリティに関するベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/azure-service-fabric-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure VM のセキュリティのベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-best-practices-vms?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure における安全なハイブリッド ネットワーク アーキテクチャの実装
+                          href: 'https://docs.microsoft.com/azure/guidance/guidance-iaas-ra-secure-vnet-hybrid?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: モノのインターネットのセキュリティのベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-iot-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure で Paas データベースをセキュリティで保護する
+                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure App Service を使用して PaaS の Web アプリケーションとモバイル アプリケーションをセキュリティ保護する
+                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure Storage を使用して PaaS の Web アプリケーションとモバイル アプリケーションをセキュリティで保護する
+                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                        - name: Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+            - name: 移行に関する考慮事項
+              items:
+                - name: 概要
+                  href: migrate/migration-considerations/index.md
+                - name: 前提条件
+                  items:
+                    - name: 概要
+                      href: migrate/migration-considerations/prerequisites/index.md
+                    - name: 移行アクティビティに影響を与える意思決定
+                      href: migrate/migration-considerations/prerequisites/decisions.md
+                    - name: 環境計画チェックリスト
+                      href: migrate/migration-considerations/prerequisites/planning-checklist.md
+                    - name: 役割と責任を一致させる
+                      href: migrate/migration-considerations/prerequisites/culture-complexity.md
+                    - name: 変更を管理するためのバックログを構造化する
+                      href: migrate/migration-considerations/prerequisites/technical-complexity.md
+                    - name: 移行バックログの確認
+                      href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
+                - name: 資産とワークロードを評価する
+                  items:
+                    - name: 移行前に資産を評価する
+                      href: migrate/migration-considerations/assess/index.md
+                    - name: 優先順位を一致させる
+                      href: migrate/migration-considerations/assess/business-priorities.md
+                    - name: ワークロードと資産の準備状況を評価する
+                      href: migrate/migration-considerations/assess/evaluate.md
+                    - name: ワークロードを設計する
+                      href: migrate/migration-considerations/assess/architect.md
+                    - name: クラウド コストを見積もる
+                      href: migrate/migration-considerations/assess/estimate.md
+                    - name: 移行パートナーおよびサポートと連携する
+                      href: migrate/migration-considerations/assess/partnership-options.md
+                    - name: 増分プロセスを管理する
+                      href: migrate/migration-considerations/assess/release-iteration-backlog.md
+                    - name: 承認プロセスを変更する
+                      href: migrate/migration-considerations/assess/approve.md
+                - name: 個々の資産を移行する
+                  items:
+                    - name: 概要
+                      href: migrate/migration-considerations/migrate/index.md
+                    - name: 昇格モデル - シングル ステップ、段階的、またはフライト
+                      href: migrate/migration-considerations/migrate/promotion-models.md
+                    - name: 修復タスク
+                      href: migrate/migration-considerations/migrate/remediate.md
+                    - name: 資産をクラウドにレプリケートする
+                      href: migrate/migration-considerations/migrate/replicate.md
+                    - name: オプションをレプリケートする
+                      href: migrate/migration-considerations/migrate/replicate-options.md
+                    - name: テストとプロモーション用にワークロードをステージングする
+                      href: migrate/migration-considerations/migrate/stage.md
+                - name: ワークロードを最適化して昇格させる
+                  items:
+                    - name: 概要
+                      href: migrate/migration-considerations/optimize/index.md
+                    - name: ビジネス変更プラン
+                      href: migrate/migration-considerations/optimize/business-change-plan.md
+                    - name: ビジネス テスト
+                      href: migrate/migration-considerations/optimize/business-test.md
+                    - name: 資産のベンチマークを実行して最適化する
+                      href: migrate/migration-considerations/optimize/optimize.md
+                    - name: 昇格を行うための準備
+                      href: migrate/migration-considerations/optimize/ready.md
+                    - name: 運用環境にワークロードを昇格させる
+                      href: migrate/migration-considerations/optimize/promote.md
+                    - name: 廃止された資産を使用停止する
+                      href: migrate/migration-considerations/optimize/decommission.md
+                    - name: 振り返り
+                      href: migrate/migration-considerations/optimize/retrospective.md
+                - name: 運用環境でのワークロードのセキュリティ保護と管理
+                  items:
+                    - name: 概要
+                      href: migrate/migration-considerations/secure-and-manage/index.md
+        - name: イノベーション
+          items:
+            - name: 概要
+              href: innovate/index.md
+    - name: 運用
+      items:
+        - name: 概要
+          href: operating-model/index.md
+        - name: ガバナンス
+          items:
+            - name: 概要
+              href: governance/index.md
+            - name: 手法
+              href: governance/methodology.md
+            - name: ベンチマーク
+              href: governance/benchmark.md
+            - name: ガバナンスを始めるための基礎
+              href: governance/getting-started.md
+            - name: ガバナンスの基礎の改善
+              href: governance/best-practices.md
+            - name: ガバナンス ガイド
+              items:
+                - name: 概要
+                  href: governance/journeys/index.md
+                - name: 中小企業ガイド
+                  items:
+                    - name: 概要
+                      href: governance/journeys/standard-enterprise/index.md
+                    - name: ナレーション
+                      href: governance/journeys/standard-enterprise/narrative.md
+                    - name: 初期の企業ポリシー
+                      href: governance/journeys/standard-enterprise/initial-corporate-policy.md
+                    - name: 規範的なガイダンス
+                      href: governance/journeys/standard-enterprise/best-practice-explained.md
+                    - name: セキュリティ ベースライン規範の改善
+                      href: governance/journeys/standard-enterprise/security-baseline-evolution.md
+                    - name: リソースの整合性の規範の改善
+                      href: governance/journeys/standard-enterprise/resource-consistency-evolution.md
+                    - name: コスト管理の規範の改善
+                      href: governance/journeys/standard-enterprise/cost-management-evolution.md
+                    - name: マルチクラウド シナリオ
+                      href: governance/journeys/standard-enterprise/multicloud-evolution.md
+                - name: 大企業ガイド
+                  items:
+                    - name: 概要
+                      href: governance/journeys/complex-enterprise/index.md
+                    - name: ナレーション
+                      href: governance/journeys/complex-enterprise/narrative.md
+                    - name: 初期の企業ポリシー
+                      href: governance/journeys/complex-enterprise/initial-corporate-policy.md
+                    - name: 規範的なガイダンス
+                      href: governance/journeys/complex-enterprise/best-practice-explained.md
+                    - name: ID ベースライン規範の改善
+                      href: governance/journeys/complex-enterprise/identity-baseline-evolution.md
+                    - name: セキュリティ ベースライン規範の改善
+                      href: governance/journeys/complex-enterprise/security-baseline-evolution.md
+                    - name: リソースの整合性の規範の改善
+                      href: governance/journeys/complex-enterprise/resource-consistency-evolution.md
+                    - name: コスト管理の規範の改善
+                      href: governance/journeys/complex-enterprise/cost-management-evolution.md
+                    - name: マルチクラウド シナリオ
+                      href: governance/journeys/complex-enterprise/multicloud-evolution.md
+                    - name: 複数レイヤーのガバナンス
+                      href: governance/journeys/complex-enterprise/multiple-layers-of-governance.md
+            - name: ガバナンスに関する考慮事項
+              items:
+                - name: 企業ポリシーの評価
+                  href: governance/corporate-policy.md
+                - name: クラウド対応の企業ポリシーとコンプライアンス
+                  items:
+                    - name: 企業ポリシーをクラウド対応にする
+                      href: governance/policy-compliance/index.md
+                    - name: ビジネス上のリスクについての理解
+                      href: governance/policy-compliance/understanding-business-risk.md
+                    - name: リスク許容度の評価
+                      href: governance/policy-compliance/risk-tolerance.md
+                    - name: 企業ポリシーの定義
+                      href: governance/policy-compliance/define-policy.md
+                    - name: 設計をポリシーと整合させる
+                      href: governance/policy-compliance/align-governance-journeys.md
+                    - name: ポリシー順守プロセスを確立する
+                      href: governance/policy-compliance/processes.md
+                    - name: 規制に対するコンプライアンス
+                      href: governance/policy-compliance/what-is-regulatory-compliance.md
+                    - name: クラウド セキュリティの準備
+                      href: governance/policy-compliance/how-can-a-ciso-prepare-for-the-cloud.md
+                    - name: クラウド ポリシーの確認
+                      href: governance/policy-compliance/what-is-a-cloud-policy-review.md
+                    - name: データ分類
+                      href: governance/policy-compliance/what-is-data-classification.md
+                - name: クラウド ガバナンスの規範
+                  href: governance/governance-disciplines.md
+                - name: クラウド ガバナンスの規範を実装する
+                  items:
+                    - name: コスト管理
+                      items:
+                        - name: コスト管理の概要
+                          href: governance/cost-management/index.md
+                        - name: テンプレートをダウンロードする
+                          href: governance/cost-management/template.md
+                        - name: ビジネス上のリスクについての理解
+                          href: governance/cost-management/business-risks.md
+                        - name: リスク許容値のメトリックとインジケーター
+                          href: governance/cost-management/metrics-tolerance.md
+                        - name: コスト管理ポリシーのサンプル
+                          href: governance/cost-management/policy-statements.md
+                        - name: ポリシーのコンプライアンスのプロセス
+                          href: governance/cost-management/compliance-processes.md
+                        - name: コスト管理の改善
+                          href: governance/cost-management/discipline-improvement.md
+                        - name: コスト管理用の Azure ツール
+                          href: governance/cost-management/toolchain.md
+                    - name: セキュリティ ベースライン
+                      items:
+                        - name: セキュリティ ベースラインの概要
+                          href: governance/security-baseline/index.md
+                        - name: テンプレートをダウンロードする
+                          href: governance/security-baseline/template.md
+                        - name: ビジネス上のリスクについての理解
+                          href: governance/security-baseline/business-risks.md
+                        - name: リスク許容値のメトリックとインジケーター
+                          href: governance/security-baseline/metrics-tolerance.md
+                        - name: セキュリティ ベースライン ポリシーのサンプル
+                          href: governance/security-baseline/policy-statements.md
+                        - name: ポリシーのコンプライアンスのプロセス
+                          href: governance/security-baseline/compliance-processes.md
+                        - name: セキュリティ ベースラインの改善
+                          href: governance/security-baseline/discipline-improvement.md
+                        - name: クラウド ネイティブのセキュリティ ベースライン
+                          href: governance/security-baseline/cloud-native-policy.md
+                        - name: Azure セキュリティに関する追加のガイダンス
+                          href: governance/security-baseline/azure-security-guidance.md
+                        - name: セキュリティ ベースライン用 Azure ツール
+                          href: governance/security-baseline/toolchain.md
+                    - name: ID ベースライン
+                      items:
+                        - name: ID ベースラインの概要
+                          href: governance/identity-baseline/index.md
+                        - name: テンプレートをダウンロードする
+                          href: governance/identity-baseline/template.md
+                        - name: ビジネス上のリスクについての理解
+                          href: governance/identity-baseline/business-risks.md
+                        - name: リスク許容値のメトリックとインジケーター
+                          href: governance/identity-baseline/metrics-tolerance.md
+                        - name: ID ベースライン ポリシーのサンプル
+                          href: governance/identity-baseline/policy-statements.md
+                        - name: ポリシーのコンプライアンスのプロセス
+                          href: governance/identity-baseline/compliance-processes.md
+                        - name: ID ベースラインの改善
+                          href: governance/identity-baseline/discipline-improvement.md
+                        - name: ID ベースライン用の Azure ツール
+                          href: governance/identity-baseline/toolchain.md
+                    - name: リソースの整合性
+                      items:
+                        - name: リソース整合性の概要
+                          href: governance/resource-consistency/index.md
+                        - name: テンプレートをダウンロードする
+                          href: governance/resource-consistency/template.md
+                        - name: ビジネス上のリスクについての理解
+                          href: governance/resource-consistency/business-risks.md
+                        - name: リスク許容値のメトリックとインジケーター
+                          href: governance/resource-consistency/metrics-tolerance.md
+                        - name: リソース整合性ポリシーのサンプル
+                          href: governance/resource-consistency/policy-statements.md
+                        - name: ポリシーのコンプライアンスのプロセス
+                          href: governance/resource-consistency/compliance-processes.md
+                        - name: リソース整合性の改善
+                          href: governance/resource-consistency/discipline-improvement.md
+                        - name: リソース整合性用の Azure ツール
+                          href: governance/resource-consistency/toolchain.md
+                        - name: リソース アクセス管理
+                          href: governance/resource-consistency/azure-resource-access.md
+                        - name: シンプルなワークロード向けガバナンス設計
+                          href: governance/resource-consistency/governance-simple-workload.md
+                        - name: 複数チーム向けのガバナンス設計
+                          href: governance/resource-consistency/governance-multiple-teams.md
+                    - name: デプロイ高速化
+                      items:
+                        - name: デプロイ高速化の概要
+                          href: governance/deployment-acceleration/index.md
+                        - name: テンプレートをダウンロードする
+                          href: governance/deployment-acceleration/template.md
+                        - name: ビジネス上のリスクについての理解
+                          href: governance/deployment-acceleration/business-risks.md
+                        - name: リスク許容値のメトリックとインジケーター
+                          href: governance/deployment-acceleration/metrics-tolerance.md
+                        - name: デプロイ高速化ポリシーのサンプル
+                          href: governance/deployment-acceleration/policy-statements.md
+                        - name: ポリシーのコンプライアンスのプロセス
+                          href: governance/deployment-acceleration/compliance-processes.md
+                        - name: デプロイ高速化の改善
+                          href: governance/deployment-acceleration/discipline-improvement.md
+                        - name: デプロイ高速化用の Azure ツール
+                          href: governance/deployment-acceleration/toolchain.md
+        - name: 整理
+          items:
+            - name: 組織調整の管理
+              href: organization/index.md
+            - name: 必要なクラウド機能
+              items:
+                - name: クラウド戦略
+                  href: organization/cloud-strategy.md
+                - name: クラウド導入
+                  href: organization/cloud-adoption.md
+                - name: クラウド ガバナンス
+                  href: organization/cloud-governance.md
+                - name: 中央 IT
+                  href: organization/central-it.md
+                - name: クラウド操作
+                  href: organization/cloud-operations.md
+                - name: クラウドのセンター オブ エクセレンス
+                  href: organization/cloud-center-excellence.md
+                - name: クラウド プラットフォーム
+                  href: organization/cloud-platform.md
+                - name: クラウド自動化
+                  href: organization/cloud-automation.md
+            - name: チームの確立
+              href: organization/organization-structures.md
+            - name: RACI マトリックスの調整
+              href: organization/raci-alignment.md
+            - name: 技術スキルの構築
+              href: organization/suggested-skills.md
+            - name: コスト志向の組織を作る
+              href: organization/cost-conscious-organization.md
+            - name: アンチパターン - IT 封土と IT サイロ
+              href: organization/fiefdoms-silos.md
+        - name: 管理
+          items:
+            - name: 概要
+              href: operations/index.md
+            - name: Azure サーバー管理
+              items:
+                - name: Azure サーバー管理入門
+                  href: operations/azure-server-management/index.md
+                - name: クラウド運用の準備
+                  href: operations/azure-server-management/prerequisites.md
+                - name: クラウド運用の概要
+                  items:
+                    - name: 概要
+                      href: operations/azure-server-management/onboarding-overview.md
+                    - name: 単一 VM のサービスを構成する
+                      href: operations/azure-server-management/onboard-single-vm.md
+                    - name: サブスクリプション全体のサービスを構成する
+                      href: operations/azure-server-management/onboard-at-scale.md
+                    - name: 自動化により大規模で構成する
+                      href: operations/azure-server-management/onboarding-automation.md
+                    - name: 基本アラートを設定する
+                      href: operations/azure-server-management/setup-alerts.md
+                - name: 進行中のクラウド運用
+                  items:
+                    - name: 概要
+                      href: operations/azure-server-management/ongoing-management-overview.md
+                    - name: ゲスト構成ポリシーを有効にする
+                      href: operations/azure-server-management/guest-configuration-policy.md
+                    - name: 重要な変更 (追跡とアラート)
+                      href: operations/azure-server-management/enable-tracking-alerting.md
+                    - name: スケジュールの更新
+                      href: operations/azure-server-management/update-schedules.md
+                    - name: Azure の共通ポリシー
+                      href: operations/azure-server-management/common-policies.md
+                - name: ツールとサービスのレビュー
+                  href: operations/azure-server-management/tools-services.md
+            - name: 監視
+              items:
+                - name: はじめに
+                  href: operations/monitor/index.md
+                - name: クラウド監視のモデル
+                  href: operations/monitor/cloud-models-monitor-overview.md
+                - name: データ収集
+                  href: operations/monitor/data-collection.md
+                - name: アラート
+                  href: operations/monitor/alert.md
+                - name: 監視プラットフォームの概要
+                  href: operations/monitor/platform-overview.md
+            - name: 運用適合性レビューの確立
+              href: operations/operational-fitness-review.md
+    - name: 参照
+      items:
+        - name: 意思決定ガイド
+          href: decision-guides/index.md
+          items:
+            - name: Subscriptions
+              href: decision-guides/subscriptions/index.md
+            - name: ID
+              href: decision-guides/identity/index.md
+            - name: ポリシーの適用
+              href: decision-guides/policy-enforcement/index.md
+            - name: リソースの整合性
+              href: decision-guides/resource-consistency/index.md
+            - name: リソースのタグ付け
+              href: decision-guides/resource-tagging/index.md
+            - name: 暗号化
+              href: decision-guides/encryption/index.md
+            - name: ソフトウェア定義のネットワーク
+              items:
+                - name: 概要
+                  href: decision-guides/software-defined-network/index.md
+                - name: PaaS のみ
+                  href: decision-guides/software-defined-network/paas-only.md
+                - name: クラウドネイティブ
+                  href: decision-guides/software-defined-network/cloud-native.md
+                - name: クラウド DMZ
+                  href: decision-guides/software-defined-network/cloud-dmz.md
+                - name: ハイブリッド
+                  href: decision-guides/software-defined-network/hybrid.md
+                - name: ハブ アンド スポーク モデル
+                  href: decision-guides/software-defined-network/hub-spoke.md
+            - name: ログとレポート
+              href: decision-guides/log-and-report/index.md
+            - name: 移行ツール
+              href: decision-guides/migrate-decision-guide/index.md
+        - name: インフラストラクチャ
+          items:
+            - name: 仮想マシン
+              items:
+                - name: 基本的なワークロードのデプロイ
+                  href: infrastructure/virtual-machines/basic-workload.md
+        - name: ロードマップ
+          href: appendix/roadmap.md
+        - name: クラウド運用モデル
+          href: appendix/cloud-operating-model.md
+        - name: Azure エンタープライズ スキャフォールディング
+          href: appendix/azure-scaffold.md
+        - name: Azure エンタープライズ スキャフォールディングの実装
+          href: appendix/azure-scaffold-examples.md
+        - name: 仮想データ センター (VDC)
+          href: 'https://docs.microsoft.com/azure/architecture/vdc/index.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+        - name: Azure のしくみ
+          href: getting-started/what-is-azure.md
