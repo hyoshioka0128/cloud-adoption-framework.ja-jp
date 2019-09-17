@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0997698660f19ff47a2eebe6dcdccb122e7f20b5
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906107"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023631"
 ---
 # <a name="subscription-decision-guide"></a>サブスクリプション決定ガイド
 
@@ -37,7 +37,8 @@ Azure のデジタル資産が増加すると、要件を満たすように追�
 
 サブスクリプションの設計を最終的に決定する前に、[リソースの整合性](../resource-consistency/index.md)に関する考慮事項が設計の選択に与える可能性がある影響についても検討してください。
 
-> ![注意] Azure Enterprise Agreement (EA) では、支払い目的で別の組織階層を定義できます。 この階層は、リソースに適切なポリシーとアクセス コントロールを簡単に適用するために、継承モデルの提供に重点を置く、管理グループの階層とは異なります。
+> [!NOTE]
+> Azure Enterprise Agreement (EA) では、支払い目的で別の組織階層を定義できます。 この階層は、リソースに適切なポリシーとアクセス コントロールを簡単に適用するために、継承モデルの提供に重点を置く、管理グループの階層とは異なります。
 
 次のサブスクリプション パターンは、サブスクリプション デザインの高度化において初期増加に反映され、自分の組織にうまく合う可能性があるいくつかのより高度な階層がそれに従います。
 
@@ -94,9 +95,9 @@ Azure のデジタル資産が増加すると、要件を満たすように追�
 
 ## <a name="related-resources"></a>関連リソース
 
-- [Azure でのリソース アクセス管理](../../governance/resource-consistency/azure-resource-access.md)
-- [大企業での複数レイヤーのガバナンス](/azure/architecture/cloud-adoption/governance/journeys/large-enterprise/multiple-layers-of-governance)
-- [複数の地理的リージョン](/azure/architecture/cloud-adoption/migrate/expanded-scope/multiple-regions)
+- [Azure でのリソース アクセス管理](../../govern/resource-consistency/resource-access-management.md)
+- [大企業での複数レイヤーのガバナンス](../../govern/guides/complex/multiple-layers-of-governance.md)
+- [複数の地理的リージョン](../../migrate/expanded-scope/multiple-regions.md)
 
 ## <a name="next-steps"></a>次の手順
 
