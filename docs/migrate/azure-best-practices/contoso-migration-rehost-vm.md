@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d046b16e265bef9a4e2bfdc0d689056f1c2e6a88
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 3bc125145afce529507a341eae6b818cceee9330
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906373"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024027"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>オンプレミス アプリを Azure VM にリホストする
 
@@ -82,20 +82,20 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 ### <a name="migration-process"></a>移行プロセス
 
-Contoso は、Azure Migrate Server Migration ツールのエージェントレス方式を使用して、アプリのフロントエンドとデータベースの VM を Azure VM に移行します。 
+Contoso は、Azure Migrate Server Migration ツールのエージェントレス方式を使用して、アプリのフロントエンドとデータベースの VM を Azure VM に移行します。
 
 - 最初の手順として、Azure Migrate Server Migration 用の Azure コンポーネントを準備してセットアップし、オンプレミスの VMware インフラストラクチャを準備します。
-- [Azure インフラストラクチャ](contoso-migration-infrastructure.md)は既に用意されているので、Contoso では、Azure Migrate Server Migration ツールを使用して VM のレプリケーションの構成を追加するだけで済みます。 
+- [Azure インフラストラクチャ](./contoso-migration-infrastructure.md)は既に用意されているので、Contoso では、Azure Migrate Server Migration ツールを使用して VM のレプリケーションの構成を追加するだけで済みます。
 - すべての準備ができたら、VM のレプリケートを開始できます。
 - レプリケーションを有効にしたら、Azure へのフェールオーバーによって VM を移行します。
 
-![移行プロセス](./media/contoso-migration-rehost-vm/migraton-process-az-migrate.png)
+![移行プロセス](./media/contoso-migration-rehost-vm/migration-process-az-migrate.png)
 
 ### <a name="azure-services"></a>Azure サービス
 
 **サービス** | **説明** | **コスト**
 --- | --- | ---
-[Azure Migrate Server Migration](/azure/migrate/contoso-migration-rehost-vm) | このサービスは、オンプレミスのアプリとワークロード、AWS/GCP VM インスタンスの移行を統制し、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 フェールオーバーが発生すると、Azure VM が作成されて料金がかかります。 料金と価格について[詳しくはこちら](https://azure.microsoft.com/pricing/details/azure-migrate/)をご覧ください。
+[Azure Migrate Server Migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | このサービスは、オンプレミスのアプリとワークロード、AWS/GCP VM インスタンスの移行を統制し、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 フェールオーバーが発生すると、Azure VM が作成されて料金がかかります。 料金と価格について[詳しくはこちら](https://azure.microsoft.com/pricing/details/azure-migrate/)をご覧ください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -105,10 +105,9 @@ Contoso は、Azure Migrate Server Migration ツールのエージェントレ�
 
 **要件** | **詳細**
 --- | ---
-**Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
-**Azure インフラストラクチャ** | [Contoso で Azure インフラストラクチャを設定する方法](contoso-migration-infrastructure.md)を確認してください。<br/><br/> Azure Migrate Server Migration の具体的な[前提条件](/azure/migrate/contoso-migration-rehost-vm#prerequisites)の要件の詳細について確認してください。
+**Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
+**Azure インフラストラクチャ** | [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。<br/><br/> Azure Migrate Server Migration の具体的な[前提条件](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prerequisites)の要件の詳細について確認してください。
 **オンプレミスのサーバー** | オンプレミスの vCenter Server は、バージョン 5.5、6.0、または 6.5 を実行している必要があります。<br/><br/> ESXi ホストは、バージョン 5.5、6.0 または 6.5 を実行している必要があります。<br/><br/> ESXi ホスト上で 1 つ以上の VMware VM が実行されている必要があります。
-
 
 <!-- markdownlint-enable MD033 -->
 
@@ -118,7 +117,7 @@ Contoso の管理者が移行を実行する方法を次に示します。
 
 > [!div class="checklist"]
 >
-> - **手順 1:Azure Migrate Server Migration 用の Azure の準備。** Azure Migrate プロジェクトに Server Migration ツールを追加します。 
+> - **手順 1:Azure Migrate Server Migration 用の Azure の準備。** Azure Migrate プロジェクトに Server Migration ツールを追加します。
 > - **手順 2:Azure Migrate Server Migration 用のオンプレミス VMware の準備。** VM 検出用のアカウントを準備し、フェールオーバー後に Azure VM に接続するための準備をします。
 > - **手順 3:VM をレプリケートする。** レプリケーションを設定し、Azure Storage への VM のレプリケーションを開始します。
 > - **手順 4:Azure Migrate Server Migration による VM の移行。** テスト フェールオーバーを実行してすべてが機能していることを確認した後、完全フェールオーバーを実行して VM を Azure に移行します。
@@ -128,17 +127,16 @@ Contoso の管理者が移行を実行する方法を次に示します。
 Contoso が VM を Azure に移行するには、以下の Azure コンポーネントが必要です。
 
 - フェールオーバー中に作成される Azure VM が配置される VNet。
-- プロビジョニング済みの Azure Migrate Server Migration ツール。 
+- プロビジョニング済みの Azure Migrate Server Migration ツール。
 
 これらを次のように設定します。
 
-1. ネットワークを設定する。Contoso は、[Azure インフラストラクチャのデプロイ](contoso-migration-infrastructure.md)を行ったときに、Azure Migrate Server Migration に使用できるネットワークを既にセットアップしています。
+1. ネットワークを設定する。Contoso は、[Azure インフラストラクチャのデプロイ](./contoso-migration-infrastructure.md)を行ったときに、Azure Migrate Server Migration に使用できるネットワークを既にセットアップしています。
 
     - SmartHotel360 アプリは運用アプリであり、VM はプライマリ リージョンである米国東部 2 の Azure 運用ネットワーク (VNET-PROD-EUS2) に移行されます。
     - 両方の VM は、運用リソースのために使用される ContosoRG リソース グループに配置されます。
     - アプリのフロントエンド VM (WEBVM) は、運用ネットワーク内のフロントエンド サブネット (PROD-FE-EUS2) に移行されます。
     - アプリのデータベース VM (SQLVM) は、運用ネットワーク内のデータベース サブネット (PROD-DB-EUS2) に移行されます。
-
 
 2. Azure Migrate Server Migration ツールをプロビジョニングする。ネットワークとストレージ アカウントが用意できたので、Recovery Services コンテナー (ContosoMigrationVault) を作成し、それをプライマリの米国東部 2 リージョンの ContosoFailoverRG リソース グループ内に配置します。
 
@@ -146,8 +144,7 @@ Contoso が VM を Azure に移行するには、以下の Azure コンポーネ
 
 **さらにサポートが必要な場合**
 
-Azure Migrate Server Migration ツールのセットアップについて[ご確認ください](/azure/migrate/)。 
-
+Azure Migrate Server Migration ツールのセットアップについて[ご確認ください](https://docs.microsoft.com/azure/migrate/)。
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>フェールオーバー後に Azure VM に接続するための準備をする
 
@@ -172,8 +169,7 @@ Contoso は、フェールオーバー後に Azure VM に接続することを�
 
 **さらにサポートが必要な場合**
 
-- 移行用の VM の準備について[ご確認ください](/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)
-
+- 移行用の VM の準備について[ご確認ください](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>手順 3:オンプレミスの VM をレプリケートする
 
@@ -186,7 +182,8 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
     ![VM をレプリケートする](./media/contoso-migration-rehost-vm/select-replicate.png)
 
 2. **[レプリケート]** > **[ソースの設定]**  >  **[マシンは仮想化されていますか?]** で、 **[はい (VMware vSphere の場合)]** を選択します。
-3. **[オンプレミスのアプライアンス]** で、自分が設定した Azure Migrate アプライアンスの名前、 **[OK]** の順に選択します。 
+
+3. **[オンプレミスのアプライアンス]** で、自分が設定した Azure Migrate アプライアンスの名前、 **[OK]** の順に選択します。
 
     ![ソースの設定](./media/contoso-migration-rehost-vm/source-settings.png)
 
@@ -199,31 +196,27 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
 
 5. **[仮想マシン]** で、必要に応じて VM を検索し、移行したい各 VM を確認します。 その後、 **[次へ:ターゲット設定]** をクリックします。
 
-
 6. **[ターゲット設定]** で、サブスクリプションと、移行先となるターゲット リージョンを選択し、移行後に Azure VM が配置されるリソース グループを指定します。 **[仮想ネットワーク]** で、移行後に Azure VM の参加先となる Azure VNet およびサブネットを選択します。
+
 7. **[Azure ハイブリッド特典]** で、
 
     - Azure ハイブリッド特典を適用しない場合は、 **[いいえ]** を選択します。 その後、 **[次へ]** をクリックします。
     - アクティブなソフトウェア アシュアランスまたは Windows Server のサブスクリプションの対象となっている Windows Server マシンがあり、移行中のマシンにその特典を適用する場合は、 **[はい]** を選択します。 その後、 **[次へ]** をクリックします。
 
-
 8. **[コンピューティング]** で、VM の名前、サイズ、OS ディスクの種類、可用性セットを確認します。 VM は [Azure の要件](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements)に準拠している必要があります。
 
-    - **VM サイズ**: 評価の推奨事項を使用している場合は、[VM サイズ] ドロップダウンに推奨サイズが表示されます。 それ以外の場合は、Azure Migrate によって、Azure サブスクリプション内の最も近いサイズが選択されます。 または、 **[Azure VM サイズ]** でサイズを手動で選択します。 
-    - **OS ディスク**:VM の OS (ブート) ディスクを指定します。 OS ディスクは、オペレーティング システムのブートローダーとインストーラーがあるディスクです。 
+    - **VM サイズ**: 評価の推奨事項を使用している場合は、[VM サイズ] ドロップダウンに推奨サイズが表示されます。 それ以外の場合は、Azure Migrate によって、Azure サブスクリプション内の最も近いサイズが選択されます。 または、 **[Azure VM サイズ]** でサイズを手動で選択します。
+    - **OS ディスク**:VM の OS (ブート) ディスクを指定します。 OS ディスクは、オペレーティング システムのブートローダーとインストーラーがあるディスクです。
     - **可用性セット**:移行後に VM を Azure 可用性セットに配置する必要がある場合は、セットを指定します。 このセットは、移行用に指定するターゲット リソース グループ内に存在する必要があります。
 
 9. **[ディスク]** で、VM ディスクを Azure にレプリケートするかどうかを指定し、Azure でのディスクの種類 (Standard SSD か HDD、または Premium マネージド ディスク) を選択します。 その後、 **[次へ]** をクリックします。
     - レプリケーションからディスクを除外できます。
-    - ディスクは除外すると、移行後に Azure VM 上に存在しなくなります。 
-
+    - ディスクは除外すると、移行後に Azure VM 上に存在しなくなります。
 
 10. **[レプリケーションの確認と開始]** で、設定を確認し、 **[レプリケート]** をクリックして、サーバーの初期レプリケーションを開始します。
 
 > [!NOTE]
 > レプリケーションを開始する前であれば、 **[管理]**  >  **[マシンのレプリケート]** でレプリケーションの設定をいつでも更新できます。 レプリケーションの開始後は、設定を変更することができません。
-
-
 
 ## <a name="step-4-migrate-the-vms"></a>手順 4:VM を移行する
 
@@ -246,7 +239,6 @@ Contoso の管理者は、簡単なテスト フェールオーバーを実行�
 
     ![移行のクリーンアップ](./media/contoso-migration-rehost-vm/clean-up.png)
 
-
 ### <a name="migrate-the-vms"></a>VM を移行する
 
 次に、Contoso の管理者は、移行を完了する完全フェールオーバーを実行します。
@@ -262,11 +254,10 @@ Contoso の管理者は、簡単なテスト フェールオーバーを実行�
 4. VM に対して移行ジョブが開始されます。 Azure 通知でジョブを追跡します。
 5. ジョブが完了したら、 **[仮想マシン]** ページで VM を表示して管理できます。
 
-
 **さらにサポートが必要な場合**
 
-- テスト フェールオーバーの実行に関する[説明を参照します](/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)。
-- VM の Azure への移行に関する[説明を参照します](/azure/migrate/tutorial-migrate-vmware#migrate-vms)。 
+- テスト フェールオーバーの実行に関する[説明を参照します](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)。
+- VM の Azure への移行に関する[説明を参照します](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)。
 
 ## <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 
@@ -274,7 +265,7 @@ Contoso の管理者は、簡単なテスト フェールオーバーを実行�
 
 次に、Contoso は、以下のクリーンアップ手順を完了する必要があります。
 
-- 移行が完了したら、レプリケーションを停止します。 
+- 移行が完了したら、レプリケーションを停止します。
 - WEBVM マシンを vCenter インベントリから削除します。
 - SQLVM マシンを vCenter インベントリから削除します。
 - WEBVM と SQLVM をローカル バックアップ ジョブから削除します。
@@ -292,20 +283,20 @@ Contoso のセキュリティ チームは、Azure VM を再調査して、セ�
 - アクセスを制御するために、VM のネットワーク セキュリティ グループ (NSG) を見直します。 NSG は、許可されたトラフィックのみがアプリに到達できるようにするために使用されます。
 - また、このチームは、ディスク上のデータ保護のために、Azure Disk Encryption と Key Vault の使用も検討します。
 
-VM に関するセキュリティの実務の[詳細については、こちら](/azure/security/azure-security-best-practices-vms)を参照してください。
+VM に関するセキュリティの実務の[詳細については、こちら](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms)を参照してください。
 
 ## <a name="bcdr"></a>BCDR
 
 事業継続とディザスター リカバリー (BCDR) のために、Contoso は次のアクションを実施します。
 
-- データの安全性を確保する: Contoso は、Azure Backup サービスを使用して VM 上のデータをバックアップします。 [詳細情報](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
-- アプリの稼働状態を維持する: Contoso は、Site Recovery を使用して、Azure 内のアプリの VM をセカンダリ リージョンにレプリケートします。 [詳細情報](/azure/site-recovery/azure-to-azure-quickstart)。
+- データの安全性を確保する: Contoso は、Azure Backup サービスを使用して VM 上のデータをバックアップします。 [詳細情報](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
+- アプリの稼働状態を維持する: Contoso は、Site Recovery を使用して、Azure 内のアプリの VM をセカンダリ リージョンにレプリケートします。 [詳細情報](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 1. Contoso は、VM の既存のライセンスを所有しており、Azure ハイブリッド特典を活用します。 Contoso は、この特典を活用するために、既存の Azure VM を変換します。
-2. Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](/azure/cost-management/overview)を参照してください。
+2. Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](https://docs.microsoft.com/azure/cost-management/overview)を参照してください。
 
 ## <a name="conclusion"></a>まとめ
 
-この記事では、Contoso が Azure Migrate Server Migration ツールを使用してアプリ VM を Azure VM に移行することで、SmartHotel360 アプリを Azure 内で再ホストしました。 
+この記事では、Contoso が Azure Migrate Server Migration ツールを使用してアプリ VM を Azure VM に移行することで、SmartHotel360 アプリを Azure 内で再ホストしました。

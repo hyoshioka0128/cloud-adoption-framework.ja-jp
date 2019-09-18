@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905287"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025171"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎の概念
 
@@ -69,7 +69,7 @@ Azure サブスクリプションを作成するときに、それを既存の A
 
 メール アカウントは複数の Azure サブスクリプションに関連付けることができます。 アカウント管理者は、サブスクリプションを別のアカウントに譲渡できます。
 
-Azure で定義されているロールの詳細については、「[従来のサブスクリプション管理者ロール、Azure RBAC ロール、および Azure AD 管理者ロール](/azure/role-based-access-control/rbac-and-directory-admin-roles)」を参照してください。
+Azure で定義されているロールの詳細については、「[従来のサブスクリプション管理者ロール、Azure RBAC ロール、および Azure AD 管理者ロール](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles)」を参照してください。
 
 ## <a name="subscriptions-and-regions"></a>サブスクリプションとリージョン
 
@@ -84,13 +84,13 @@ Azure で定義されているロールの詳細については、「[従来の�
 
 この記事で説明した概念の詳細情報は、次のリソースで参照できます。
 
-- [Azure のしくみ](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Azure でのリソース アクセス管理](../../governance/resource-consistency/azure-resource-access.md)
-- [Azure リソース マネージャーの概要](/azure/azure-resource-manager/resource-group-overview)
-- [Azure リソースのロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/overview)
-- [Azure Active Directory とは](/azure/active-directory/fundamentals/active-directory-whatis)
-- [Azure サブスクリプションを Azure Active Directory テナントに関連付けるまたは追加する](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Azure AD Connect のトポロジ](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Azure のしくみ](../../getting-started/what-is-azure.md)
+- [Azure でのリソース アクセス管理](../../govern/resource-consistency/resource-access-management.md)
+- [Azure リソース マネージャーの概要](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Azure リソースのロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [Azure Active Directory とは](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Azure サブスクリプションを Azure Active Directory テナントに関連付けるまたは追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Azure AD Connect のトポロジ](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>次の手順

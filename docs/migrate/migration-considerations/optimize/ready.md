@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7d3e7f408e38634a9472ce75542d9e0ae1fdc38b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836625"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022625"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>移行したアプリケーションの実稼働への昇格を準備する
 
@@ -21,7 +21,7 @@ ms.locfileid: "70836625"
 
 ## <a name="validate-the-business-change-plan"></a>ビジネス変更プランを検証する
 
-ビジネス ユーザーまたはお客様が技術的ソリューションを利用して、ビジネスを推進するプロセスを実行する際に、変革が発生します。 準備状態は、[ビジネス変更プラン](business-change-plan.md)を検証し、関与するビジネスおよび技術チームに適切なトレーニングを確保するための良い機会です。 特に、次の変更プランのテクノロジ関連の側面が正しく伝えられていることを確認します。
+ビジネス ユーザーまたはお客様が技術的ソリューションを利用して、ビジネスを推進するプロセスを実行する際に、変革が発生します。 準備状態は、[ビジネス変更プラン](./business-change-plan.md)を検証し、関与するビジネスおよび技術チームに適切なトレーニングを確保するための良い機会です。 特に、次の変更プランのテクノロジ関連の側面が正しく伝えられていることを確認します。
 
 - エンドユーザーのトレーニングが完了している (または少なくとも予定されている)。
 - 停止期間が伝達され、承認されている。

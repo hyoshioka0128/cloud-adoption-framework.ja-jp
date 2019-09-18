@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 39b52cc79041a5d4df445c416ae7bf8cb8c14879
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906326"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024408"
 ---
 # <a name="mainframe-application-migration"></a>メインフレーム アプリケーションの移行
 
@@ -51,7 +51,7 @@ OLTP アプリケーションを Azure に移動するときは、メインフ�
 
 ### <a name="data-ingestion-systems"></a>データ インジェスト システム
 
-メインフレームでは、小売、金融サービス、製造、その他のソリューションから、処理のためにデータの大きなバッチが取り込まれます。 Azure では、[AzCopy](/azure/storage/common/storage-use-azcopy) などの簡単なコマンド ライン ユーティリティを使用して、保存場所との間でデータのコピーを実行できます。 また、[Azure Data Factory](/azure/data-factory/introduction) サービスを使用すると、各種のデータ ストアからデータを取り込み、データ主導型のワークフローを作成してスケジューリングすることもできます。
+メインフレームでは、小売、金融サービス、製造、その他のソリューションから、処理のためにデータの大きなバッチが取り込まれます。 Azure では、[AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) などの簡単なコマンド ライン ユーティリティを使用して、保存場所との間でデータのコピーを実行できます。 また、[Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) サービスを使用すると、各種のデータ ストアからデータを取り込み、データ主導型のワークフローを作成してスケジューリングすることもできます。
 
 エミュレーション環境だけでなく、Azure では、既存のメインフレーム環境を拡張できるサービスとしてのプラットフォーム (PaaS) および分析サービスも提供されています。
 
@@ -63,7 +63,7 @@ OLTP アプリケーションを Azure に移動するときは、メインフ�
 
 ![エミュレーション ソフトウェアを使用した Azure へのメインフレーム環境の "リフト アンド シフト" 移行](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-Azure では、TP マネージャーと JCL を用いたバッチ ジョブを実行するために、エミュレーション環境が使用されています。 データ層では、DB2 が [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) に置き換えられていますが、Microsoft SQL Server、DB2 LUW、または Oracle Database を使用することもできます。 エミュレーターでは、IMS、VSAM、および SEQ がサポートされています。 メインフレームのシステム管理ツールは、VM 上で実行される Azure サービスおよび他のベンダーのソフトウェアによって置き換えられています。
+Azure では、TP マネージャーと JCL を用いたバッチ ジョブを実行するために、エミュレーション環境が使用されています。 データ層では、DB2 が [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) に置き換えられていますが、Microsoft SQL Server、DB2 LUW、または Oracle Database を使用することもできます。 エミュレーターでは、IMS、VSAM、および SEQ がサポートされています。 メインフレームのシステム管理ツールは、VM 上で実行される Azure サービスおよび他のベンダーのソフトウェアによって置き換えられています。
 
 画面処理とフォーム入力の機能は一般に Web サーバーを使用して実装され、データ アクセスおよびトランザクションには ADO、ODBC、JDBC などのデータベース API と組み合わせることができます。 使用する Azure IaaS コンポーネントの正確なラインナップは、選択するオペレーティング システムによって異なります。 例:
 
@@ -75,7 +75,7 @@ Azure では、TP マネージャーと JCL を用いたバッチ ジョブを�
 
 Azure でのバッチ操作は、メインフレーム上の一般的なバッチ環境とは異なります。 メインフレームのバッチ ジョブは、通常、本質的にシリアルであり、パフォーマンスのためにメインフレーム バックボーンによって提供される IOPS に依存します。 クラウドベースのバッチ環境では、パフォーマンスのために並列コンピューティングと高速ネットワークが使用されます。
 
-Azure を使用するバッチ処理のパフォーマンスを最適化するには、次のような[コンピューティング](/azure/virtual-machines/windows/overview)、[ストレージ](/azure/storage/blobs/storage-blobs-introduction)、[ネットワーク](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)、および[監視](/azure/azure-monitor/overview)のオプションを検討します。
+Azure を使用するバッチ処理のパフォーマンスを最適化するには、次のような[コンピューティング](https://docs.microsoft.com/azure/virtual-machines/windows/overview)、[ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)、[ネットワーク](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)、および[監視](https://docs.microsoft.com/azure/azure-monitor/overview)のオプションを検討します。
 
 ### <a name="compute"></a>Compute
 
@@ -93,7 +93,7 @@ Azure を使用するバッチ処理のパフォーマンスを最適化する�
 
 次のコマンドを使用します。
 
-- 使用可能な最大の IOPS のために [Azure Premium SSD](/azure/virtual-machines/windows/premium-storage) または [Azure Ultra SSD](/azure/virtual-machines/windows/disks-ultra-ssd)。
+- 使用可能な最大の IOPS のために [Azure Premium SSD](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage) または [Azure Ultra SSD](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd)。
 
 - ストレージ サイズあたりの IOPS を上げるために複数のディスクによるストライピング。
 
@@ -101,11 +101,11 @@ Azure を使用するバッチ処理のパフォーマンスを最適化する�
 
 ### <a name="networking"></a>ネットワーク
 
-- 待機時間を最小にするには [Azure 高速ネットワーク](/azure/virtual-network/create-vm-accelerated-networking-powershell)を使用します。
+- 待機時間を最小にするには [Azure 高速ネットワーク](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell)を使用します。
 
 ### <a name="monitoring"></a>監視
 
-- 監視ツール、[Azure Monitor](/azure/azure-monitor/overview)、[Azure Application Insights](/azure/application-insights/app-insights-overview)、Azure ログを使用すると、管理者はバッチ実行の過剰なパフォーマンスを監視し、ボトルネックを回避することができます。
+- 監視ツール、[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview)、[Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview)、Azure ログを使用すると、管理者はバッチ実行の過剰なパフォーマンスを監視し、ボトルネックを回避することができます。
 
 ## <a name="migrate-development-environments"></a>開発環境を移行する
 
@@ -125,7 +125,7 @@ Azure を使用するバッチ処理のパフォーマンスを最適化する�
 
 ## <a name="migrate-databases-and-data"></a>データベースとデータを移行する
 
-アプリケーションの移行には、通常、データ層の再ホストが伴います。 [Azure Database Migration Service](/azure/dms/dms-overview) を使用して、Azure 上のフル マネージド ソリューションに [Azure SQL Database Managed Instance](/azure/sql-database/sql-database-managed-instance)、[Azure Database Service for PostgreSQL](/azure/postgresql/overview)、[Azure Database for MySQL](/azure/mysql/overview) などの (SQL Server、オープン ソース、その他の) リレーショナル データベースを移行できます。
+アプリケーションの移行には、通常、データ層の再ホストが伴います。 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用して、Azure 上のフル マネージド ソリューションに [Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)、[Azure Database Service for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)、[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) などの (SQL Server、オープン ソース、その他の) リレーショナル データベースを移行できます。
 
 たとえば、メインフレームのデータ層で次のものが使用されている場合に移行できます。
 
@@ -159,7 +159,7 @@ Azure では、この目的に別の VM を使用することの方が一般的�
 
 次の図では、プライマリ サイトとセカンダリ サイトを使用して可能な Azure のデプロイを示します。 プライマリ サイトには、運用、ステージング、およびテスト用の VM が高可用性でデプロイされます。 セカンダリ サイトは、バックアップおよびディザスター リカバリー用です。
 
-![プライマリ サイトとセカンダリ サイトを使用して可能な Azure のデプロイ](../../_images/mainframe-migration/migration-backup-DR.png)
+![プライマリ サイトとセカンダリ サイトを使用して可能な Azure のデプロイ](../../_images/mainframe-migration/migration-backup-dr.png)
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>メインフレームから Azure への段階的移行を実行する
 
@@ -167,7 +167,7 @@ Azure では、この目的に別の VM を使用することの方が一般的�
 
 一般的なシナリオでは、アプリケーションを Azure に移動し、アプリケーションによって使用されるデータはメインフレームで維持します。 Azure 上のアプリケーションがメインフレーム上のデータにアクセスできるようにするには、特定のソフトウェアが使用されます。 さいわい、広範なソリューションでは、Azure と既存のメインフレーム環境間の統合、ハイブリッド シナリオのサポート、および時間をかけた移行が提供されています。 Microsoft パートナー、独立系ソフトウェア ベンダー、およびシステム インテグレーターがユーザーの作業を支援できます。
 
-1 つのオプションとして [Microsoft Host Integration Server](/host-integration-server) があります。これは、メインフレームに残っている DB2 のデータにアクセスするために Azure のアプリケーションに必要な分散リレーショナル データベース アーキテクチャ (DRDA) を提供するソリューションです。 メインフレームと Azure の統合に対する他のオプションとしては、IBM、Attunity、Codit、他のベンダーからのソリューション、およびオープン ソースのオプションがあります。
+1 つのオプションとして [Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server) があります。これは、メインフレームに残っている DB2 のデータにアクセスするために Azure のアプリケーションに必要な分散リレーショナル データベース アーキテクチャ (DRDA) を提供するソリューションです。 メインフレームと Azure の統合に対する他のオプションとしては、IBM、Attunity、Codit、他のベンダーからのソリューション、およびオープン ソースのオプションがあります。
 
 ## <a name="partner-solutions"></a>パートナー ソリューション
 
@@ -179,8 +179,8 @@ Azure では、メインフレームで現在実行されているシステム�
 
 詳細については、次のリソースを参照してください。
 
-- [Azure を使ってみる](/azure)
+- [Azure を使ってみる](https://docs.microsoft.com/azure)
 
 - [Azure 上に IBM DB2 pureScale をデプロイする](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
 
-- [Host Integration Server のドキュメント](/host-integration-server)
+- [Host Integration Server のドキュメント](https://docs.microsoft.com/host-integration-server)

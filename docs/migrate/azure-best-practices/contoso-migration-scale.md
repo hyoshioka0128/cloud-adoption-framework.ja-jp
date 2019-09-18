@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 30a510d5acd5773253524200ea65e52a3325e10d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 52e78e6f1e9dd5ee19b9def9a1b9cb4cbcc869ae
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837897"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023990"
 ---
 # <a name="scale-a-migration-to-azure"></a>Azure への移行のスケーリング
 
@@ -46,7 +46,7 @@ Contoso クラウド チームは、この移行の目標を設定しました�
 
 ## <a name="current-deployment"></a>現在のデプロイ
 
-[Azure のインフラストラクチャ](contoso-migration-infrastructure.md)を計画して設定し、上記の表に詳細を示したさまざまな概念実証 (POC) としての移行の組み合わせを試した後、Contoso は Azure への大規模な完全移行を開始する準備が整いました。 Contoso が移行しようとしている項目は次のとおりです。
+[Azure のインフラストラクチャ](./contoso-migration-infrastructure.md)を計画して設定し、上記の表に詳細を示したさまざまな概念実証 (POC) としての移行の組み合わせを試した後、Contoso は Azure への大規模な完全移行を開始する準備が整いました。 Contoso が移行しようとしている項目は次のとおりです。
 
 <!--markdownlint-disable MD033 -->
 
@@ -123,7 +123,7 @@ POC 候補 | Y/N | アプリをクラウド移行に向けての POC または E
 技術的負債 | なし/多少/重大 | インベントリ項目はサポート対象外の製品、プラットフォーム、オペレーティング システムを実行または使用しているか?
 ファイアウォールの影響 | Y/N | アプリはインターネット/外部トラフィックと通信するか?  ファイアウォールに統合されているか?
 セキュリティの問題 | Y/N | アプリに関する既知のセキュリティの問題はあるか?  アプリは暗号化されていないデータまたは最新でないプラットフォームを使用しているか?
-移行戦略 | リホスト/リファクター/リアーキテクト/リビルド | アプリについて、どのような種類の移行が必要か? アプリは Azure にどのようにデプロイされるか? [詳細情報](contoso-migration-overview.md#migration-patterns)。
+移行戦略 | リホスト/リファクター/リアーキテクト/リビルド | アプリについて、どのような種類の移行が必要か? アプリは Azure にどのようにデプロイされるか? [詳細情報](./contoso-migration-overview.md#migration-patterns)。
 技術的な複雑さ | 1 - 5 | 移行はどの程度複雑か? この値は、Contoso DevOps および関連パートナーによって定義される必要があります。
 ビジネス上の重要度 | 1 - 5 | アプリは業務上どのくらい重要か? たとえば、小規模なワークグループ アプリにはスコアとして 1 を割り当て、組織全体で使用する重要なアプリにはスコア 5 を割り当てることができます。 このスコアは、移行の優先度レベルに影響します。
 移行の優先度 | 1/2/3 | アプリの移行の優先度はどれぐらいか?
@@ -156,7 +156,7 @@ Azure Migrate サービスは、Azure への移行準備としてオンプレミ
 Contoso はこの移行のスケールのために Azure Migrate を適切に使用する必要があるとします。
 
 - Contoso は Azure Migrate を使用してアプリごとの評価を行います。 これにより、Azure Migrate から Azure portal に適切なタイミングで確実にデータが返されます。
-- Contoso 管理者は[Azure Migrate の大規模なデプロイ](/azure/migrate/how-to-scale-assessment)についての情報を参照します。
+- Contoso 管理者は[Azure Migrate の大規模なデプロイ](https://docs.microsoft.com/azure/migrate/how-to-scale-assessment)についての情報を参照します。
 - Contoso は次の表に示した Azure Migrate の制限に留意します。
 
 **アクション** | **制限**
@@ -209,8 +209,8 @@ Contoso はおおまかに次の 4 つの移行方法を戦略として検討で
 
 移行を行うために Contoso が主に使用する Azure のサービスとツールは次のとおりです。
 
-- [Azure Site Recovery](/azure/site-recovery/site-recovery-overview):ディザスター リカバリーを調整し、オンプレミスの VM を Azure に移行します。
-- [Azure Database Migration Service](/azure/dms/dms-overview):SQL Server、MySQL、Oracle などのオンプレミス データベースを Azure に移行します。
+- [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview):ディザスター リカバリーを調整し、オンプレミスの VM を Azure に移行します。
+- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview):SQL Server、MySQL、Oracle などのオンプレミス データベースを Azure に移行します。
 
 #### <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -219,7 +219,7 @@ Azure Site Recovery は、ディザスター リカバリーを調整し、Azure
 1. Site Recovery によってオンプレミス サイトから Azure へのレプリケーションの有効化と調整が行われます。
 2. レプリケーションが設定されて実行中の状態になったら、オンプレミス マシンを Azure にフェールオーバーして移行を完了できます。
 
-Contoso は既に [POC を完了](contoso-migration-rehost-vm.md)し、Site Recovery がクラウドへの移行にどのように役立つかを確認済みです。
+Contoso は既に [POC を完了](./contoso-migration-rehost-vm.md)し、Site Recovery がクラウドへの移行にどのように役立つかを確認済みです。
 
 ##### <a name="using-site-recovery-at-scale"></a>Site Recovery の大規模な使用
 
@@ -233,7 +233,7 @@ Contoso は、複数の "リフト アンド シフト" 移行を実行するこ
 
 ###### <a name="gather-on-premises-information"></a>オンプレミス情報の収集
 
-Contoso は、[Site Recovery Deployment Planner](/azure/site-recovery/site-recovery-deployment-planner) ツールを使用して次の手順を完了することができます。
+Contoso は、[Site Recovery Deployment Planner](https://docs.microsoft.com/azure/site-recovery/site-recovery-deployment-planner) ツールを使用して次の手順を完了することができます。
 
 - Contoso はこのツールを使用して、運用環境に影響を与えることなくリモートから VM をプロファイリングすることができます。 これにより、レプリケーションとフェールオーバーの帯域幅とストレージの要件を特定できます。
 - このツールは、Site Recovery のコンポーネントを一切オンプレミスにインストールせずに実行することができます。
@@ -262,10 +262,10 @@ Contoso は、キャパシティに関する考慮事項に基づいて、これ
 --- | ---
 **日次変化率の最大値** | 1 台のプロセス サーバーでは、1 日あたり最大 2 TB の変化率を処理できます。 1 つの VM で使用できるプロセス サーバーは 1 台だけであるため、レプリケートされた VM ごとにサポートされる日次データ変化率の最大値は 2 TB です。
 **最大スループット** | Standard の Azure ストレージ アカウントでは、1 秒間に最大 20,000 要求を処理できます。レプリケート元の VM 全体の 1 秒あたりの入出力操作 (IOPS) 数をこの制限内に抑えることをお勧めします。 たとえば、VM に 5 個のディスクが搭載されていて、その VM 上で 120 IOPS (8 K サイズ) が生成される場合、Azure のディスクごとの IOPS 制限である 500 以内に収まります。<br/><br/> 必要なストレージ アカウントの数は、ソース マシンの IOPS 合計を 20,000 で割ったものに等しいことに注意してください。 レプリケートされたマシンは、Azure の 1 つのストレージ アカウントにのみ属することができます。
-**構成サーバー** | 100 から 200 の VM をまとめてレプリケートする場合の Contoso の見積もりと、[構成サーバーのサイズ要件](/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server)に基づいて、Contoso の見積もりには次のように構成サーバー マシンが必要です。<br/><br/> CPU:16 vCPU (2 ソケット * 8 コア @ 2.5 GHz)<br/><br/> メモリ:32 GB<br/><br/> キャッシュ ディスク:1 TB (テラバイト)<br/><br/> データ変化率:1 TB から 2 TB まで。<br/><br/> Contoso は、サイズ要件に加えて、構成サーバーが最適に配置されていること、すなわち移行される VM と同じネットワークの同じ LAN セグメントに配置されていることを確認する必要があります。
+**構成サーバー** | 100 から 200 の VM をまとめてレプリケートする場合の Contoso の見積もりと、[構成サーバーのサイズ要件](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server)に基づいて、Contoso の見積もりには次のように構成サーバー マシンが必要です。<br/><br/> CPU:16 vCPU (2 ソケット * 8 コア @ 2.5 GHz)<br/><br/> メモリ:32 GB<br/><br/> キャッシュ ディスク:1 TB (テラバイト)<br/><br/> データ変化率:1 TB から 2 TB まで。<br/><br/> Contoso は、サイズ要件に加えて、構成サーバーが最適に配置されていること、すなわち移行される VM と同じネットワークの同じ LAN セグメントに配置されていることを確認する必要があります。
 **プロセス サーバー** | Contoso は、100 から 200 の VM をレプリケートできるスタンドアロンの専用プロセス サーバーをデプロイします。<br/><br/> CPU:16 vCPU (2 ソケット * 8 コア @ 2.5 GHz)<br/><br/> メモリ:32 GB<br/><br/> キャッシュ ディスク:1 TB (テラバイト)<br/><br/> データ変化率:1 TB から 2 TB まで。<br/><br/> プロセス サーバーは負荷が高くなるため、レプリケーションに必要なディスク I/O、ネットワーク トラフィック、CPU 使用率を処理できる ESXi ホストに配置する必要があります。 Contoso は、この目的のために専用ホストを検討します。
-**ネットワーク** | Contoso は現在のサイト間 VPN インフラストラクチャを見直し、Azure ExpressRoute を実装することにしました。 その実装は、待機時間を削減し、Contoso の米国東部 2 プライマリ Azure リージョンの帯域幅を改善するために不可欠です。<br/><br/> **監視:** Contoso はプロセス サーバーからのデータの流れを注意深く監視する必要があります。 データによってネットワーク帯域幅が過負荷になる場合、Contoso は[プロセス サーバーの帯域幅を調整する](/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth)ことを検討します。
-**Azure Storage** | 移行に際して、Contoso は適切な Azure ストレージ アカウントの種類と数を見極める必要があります。 Site Recovery は、VM のデータを Azure Storage にレプリケートします。<br/><br/> Site Recovery により、Standard または Premium (SSD) ストレージ アカウントにレプリケートできます。<br/><br/> ストレージについて決定するために、Contoso は[容量の上限](/azure/virtual-machines/windows/disks-types)を見直し、時間の経過に伴い予想される増加率および使用量の増加を考慮に入れる必要があります。 移行の速度と優先度に従って、Contoso は Premium SSD を使用することを決定しました。<br/><br/>
+**ネットワーク** | Contoso は現在のサイト間 VPN インフラストラクチャを見直し、Azure ExpressRoute を実装することにしました。 その実装は、待機時間を削減し、Contoso の米国東部 2 プライマリ Azure リージョンの帯域幅を改善するために不可欠です。<br/><br/> **監視:** Contoso はプロセス サーバーからのデータの流れを注意深く監視する必要があります。 データによってネットワーク帯域幅が過負荷になる場合、Contoso は[プロセス サーバーの帯域幅を調整する](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth)ことを検討します。
+**Azure Storage** | 移行に際して、Contoso は適切な Azure ストレージ アカウントの種類と数を見極める必要があります。 Site Recovery は、VM のデータを Azure Storage にレプリケートします。<br/><br/> Site Recovery により、Standard または Premium (SSD) ストレージ アカウントにレプリケートできます。<br/><br/> ストレージについて決定するために、Contoso は[容量の上限](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types)を見直し、時間の経過に伴い予想される増加率および使用量の増加を考慮に入れる必要があります。 移行の速度と優先度に従って、Contoso は Premium SSD を使用することを決定しました。<br/><br/>
 Contoso は、Azure にデプロイされるすべての VM にマネージド ディスクを使用することに決定しました。 必要な IOPS は、ディスクが Standard HDD、Standard SSD、Premium (SSD) のいずれかによって決まります。<br/><br/>
 
 <!--markdownlint-enable MD033 -->
@@ -309,7 +309,7 @@ Azure にリソースを移行した後、Contoso はパフォーマンス向上
 - ライセンスが付与されたこのソリューションは、Microsoft の子会社である Cloudyn によって開発されたものです。これにより、Contoso は透明性のある正確なクラウド支出管理を行うことができます。 クラウドのコストを監視、割り当て、削減するためのツールを提供します。
 - Azure Cost Management では、コストの割り当て、ショーバック、チャージバックに役立つシンプルなダッシュボード レポートを利用できます。
 - Cost Management を使うと、使用率が低いリソースを識別して管理、調整することにより、クラウドの支出を最適化できます。
-- Azure Cost Management の詳細については、[こちら](/azure/cost-management/overview)を参照してください。
+- Azure Cost Management の詳細については、[こちら](https://docs.microsoft.com/azure/cost-management/overview)を参照してください。
 
 ![コスト管理](./media/contoso-migration-scale/cost-management.png)
 
@@ -350,16 +350,16 @@ Contoso は、Azure で運用するようになった、新しく移行したア
 
 - これらのツールを使用して、さまざまなソースから簡単にデータを収集し、豊富な分析情報を入手できます。 たとえば、Contoso は VM の CPU ディスク使用量やメモリ使用量を把握し、複数の VM 間のアプリケーションとネットワークの依存関係を可視化することができます。アプリケーションのパフォーマンスを追跡することもできます。
 - これらのクラウド監視ツールは、問題の是正に使用することや、サービス ソリューションと統合することも可能です。
-- Azure での監視の詳細については、[こちらを参照してください](/azure/monitoring-and-diagnostics/monitoring-overview)。
+- Azure での監視の詳細については、[こちらを参照してください](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview)。
 
 ### <a name="business-continuity-and-disaster-recovery"></a>事業継続とディザスター リカバリー
 
 Contoso には、Azure リソースに関する事業継続とディザスター リカバリー (BCDR) 戦略が必要です。
 
-- Azure には、データの安全とアプリやサービスの稼働状態を維持するため、[組み込みの BCDR 機能](/azure/architecture/resiliency/disaster-recovery-azure-applications)が用意されています。
+- Azure には、データの安全とアプリやサービスの稼働状態を維持するため、[組み込みの BCDR 機能](https://docs.microsoft.com/azure/architecture/resiliency/disaster-recovery-azure-applications)が用意されています。
 - 組み込みの機能に加えて、Contoso は、障害からの復旧、コストのかかる業務中断の回避、コンプライアンス目標の達成、ランサムウェアや人為的エラーからのデータの保護を確実にしたいと考えています。 これを行うには、次の手順を実行します。
   - Contoso は、Azure のリソースをバックアップするための費用対効果の高いソリューションとして、Azure Backup をデプロイします。 これは組み込みのサービスであるため、Contoso はいくつかのシンプルな手順でクラウドのバックアップを設定できます。
-  - Contoso は、指定した Azure リージョン間でのレプリケーション、フェールオーバー、フェールバックを行うために、Azure Site Recovery を使用して Azure VM のディザスター リカバリーを設定します。 これにより、Azure VM 上で実行されているアプリは、プライマリ リージョンに障害が発生した場合には、Contoso が選択したセカンダリ リージョンで引き続き確実に使用することができます。 [詳細情報](/azure/site-recovery/azure-to-azure-quickstart)。
+  - Contoso は、指定した Azure リージョン間でのレプリケーション、フェールオーバー、フェールバックを行うために、Azure Site Recovery を使用して Azure VM のディザスター リカバリーを設定します。 これにより、Azure VM 上で実行されているアプリは、プライマリ リージョンに障害が発生した場合には、Contoso が選択したセカンダリ リージョンで引き続き確実に使用することができます。 [詳細情報](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ## <a name="conclusion"></a>まとめ
 

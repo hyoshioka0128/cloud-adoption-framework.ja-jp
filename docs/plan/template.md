@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 91c1433f300efc3950cb54852a00b5020a992e8f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839161"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022300"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>クラウド導入計画と Azure DevOps
 
@@ -59,7 +59,7 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 
 ## <a name="align-the-cloud-adoption-plan"></a>クラウド導入計画を調整する
 
-クラウド導入ライフサイクルの戦略と計画の段階の概要ページはそれぞれ、[クラウド導入フレームワークの戦略と計画に関するテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を参照します。 このテンプレートでは、クラウド導入計画のテンプレートを導入用の特定の計画に合わせて調整するための決定事項およびデータ ポイントが整理されています。 まだ行ってない場合は、新しいプロジェクトを調整する前に、[戦略](../business-strategy/index.md)と[計画](../plan/index.md)に関連した演習を完了することをお勧めします。
+クラウド導入ライフサイクルの戦略と計画の段階の概要ページはそれぞれ、[クラウド導入フレームワークの戦略と計画に関するテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を参照します。 このテンプレートでは、クラウド導入計画のテンプレートを導入用の特定の計画に合わせて調整するための決定事項およびデータ ポイントが整理されています。 まだ行ってない場合は、新しいプロジェクトを調整する前に、[戦略](../strategy/index.md)と[計画](../plan/index.md)に関連した演習を完了することをお勧めします。
 
 次の記事では、クラウド導入計画の調整がサポートされています。
 

@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9fea49fe61b74feb23241f6d2fd52333bda6c9be
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e95817396fb898c3460874e0e63bf793628a4d16
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834737"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022052"
 ---
 # <a name="data-design-decisions"></a>データ設計の決定
 
@@ -32,17 +32,17 @@ ms.locfileid: "70834737"
 ワークロードに関する次の質問に答えると、Azure データベース サービスのデシジョン ツリーに基づいて意思決定を行うのに役立ちます。
 
 - **データベース ソフトウェアやホスト OS の完全な制御または所有権が必要ですか?** 一部のシナリオでは、データベース ワークロードのソフトウェア構成とホスト サーバーに関する高度な制御または所有権が必要です。 これらのシナリオでは、データ サービスのデプロイと構成を完全に制御できるカスタムのサービスとしてのインフラストラクチャ (IaaS) 仮想マシンをデプロイできます。 このような要件がない場合は、サービスとしてのプラットフォーム (PaaS) マネージド データベース サービスを使用して、管理コストと運用コストを削減できる可能性があります。
-- **ワークロードでリレーショナル データベース テクノロジを使用しますか?** そうである場合は、どのようなテクノロジを使用する予定ですか? Azure では、[Azure SQL Database](/azure/sql-database/sql-database-technical-overview)、[MySQL](/azure/mysql/overview)、[PostgreSQL](/azure/postgresql/overview)、[MariaDB](/azure/mariadb/overview) に対する PaaS のマネージド データベース機能を提供します。
-- **ワークロードで SQL Server を使用しますか?** Azure では、[Azure Virtual Machines 上の SQL Server](https://azure.microsoft.com/services/virtual-machines/sql-server/) (IaaS ベース) または [Azure SQL Database ホステッド サービス](/azure/sql-database/sql-database-technical-overview) (PaaS ベース) でワークロードを実行できます。 どちらのオプションを使用するかは、主に、データベースの管理、修正プログラムの適用、バックアップの実行を自分で行うか、あるいはこれらの操作を Azure に委任するかどうかの問題です。 シナリオによっては、互換性の問題により、IaaS でホストされる SQL Server の使用が必要になることがあります。 ワークロードに適したオプションを選択する方法の詳細については、「[Azure で適切な SQL Server オプションを選択する](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)」を参照してください。
-- **ワークロードでキー/値データベース ストレージを使用しますか?** [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview) は、高速でスケーラブルなアプリケーションを実現できる、高性能のキャッシュ キー/値データ ストレージ ソリューションを提供します。 [Azure Cosmos DB](/azure/cosmos-db/introduction) も、汎用的なキー/値ストレージ機能を提供します。
-- **ワークロードでドキュメントまたはグラフ データを使用しますか?** [Azure Cosmos DB](/azure/cosmos-db/introduction) は、さまざまなデータ型と API をサポートするマルチモデル データベース サービスです。 Azure Cosmos DB には、ドキュメントおよびグラフ データベースの機能もあります。
-- **ワークロードで列ファミリ データを使用しますか?** [Azure HDInsight の Apache HBase](/azure/hdinsight/hbase/apache-hbase-overview) は、Apache Hadoop 上に構築されています。 列ファミリ別に編成された、スキーマレス データベース内の大量の非構造化データおよび半構造化データがサポートされています。
-- **ワークロードに大容量のデータ分析機能が必要ですか?** [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) を使用すると、構造化されたペタバイト規模のデータを効率的に格納し、クエリを実行できます。 非構造化ビッグ データ ワークロードの場合、[Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/) を使用すると、ペタバイト規模のファイルと数兆個のオブジェクトを保存して分析できます。
-- **ワークロードに検索エンジンの機能が必要ですか?** [Azure Search](/azure/search/search-what-is-azure-search) を使用すると、アプリケーションに統合できる、AI で強化されたクラウドベースの検索インデックスを作成できます。
-- **ワークロードには時系列データを使用しますか?** [Azure Time Series Insights](/azure/time-series-insights/time-series-insights-overview) は、IoT デバイスによって生成されたデータなどの大量の時系列データの格納、視覚化、クエリ実行のために構築されています。
+- **ワークロードでリレーショナル データベース テクノロジを使用しますか?** そうである場合は、どのようなテクノロジを使用する予定ですか? Azure では、[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)、[MySQL](https://docs.microsoft.com/azure/mysql/overview)、[PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)、[MariaDB](https://docs.microsoft.com/azure/mariadb/overview) に対する PaaS のマネージド データベース機能を提供します。
+- **ワークロードで SQL Server を使用しますか?** Azure では、[Azure Virtual Machines 上の SQL Server](https://azure.microsoft.com/services/virtual-machines/sql-server/) (IaaS ベース) または [Azure SQL Database ホステッド サービス](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) (PaaS ベース) でワークロードを実行できます。 どちらのオプションを使用するかは、主に、データベースの管理、修正プログラムの適用、バックアップの実行を自分で行うか、あるいはこれらの操作を Azure に委任するかどうかの問題です。 シナリオによっては、互換性の問題により、IaaS でホストされる SQL Server の使用が必要になることがあります。 ワークロードに適したオプションを選択する方法の詳細については、「[Azure で適切な SQL Server オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)」を参照してください。
+- **ワークロードでキー/値データベース ストレージを使用しますか?** [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) は、高速でスケーラブルなアプリケーションを実現できる、高性能のキャッシュ キー/値データ ストレージ ソリューションを提供します。 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) も、汎用的なキー/値ストレージ機能を提供します。
+- **ワークロードでドキュメントまたはグラフ データを使用しますか?** [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) は、さまざまなデータ型と API をサポートするマルチモデル データベース サービスです。 Azure Cosmos DB には、ドキュメントおよびグラフ データベースの機能もあります。
+- **ワークロードで列ファミリ データを使用しますか?** [Azure HDInsight の Apache HBase](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview) は、Apache Hadoop 上に構築されています。 列ファミリ別に編成された、スキーマレス データベース内の大量の非構造化データおよび半構造化データがサポートされています。
+- **ワークロードに大容量のデータ分析機能が必要ですか?** [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) を使用すると、構造化されたペタバイト規模のデータを効率的に格納し、クエリを実行できます。 非構造化ビッグ データ ワークロードの場合、[Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/) を使用すると、ペタバイト規模のファイルと数兆個のオブジェクトを保存して分析できます。
+- **ワークロードに検索エンジンの機能が必要ですか?** [Azure Search](https://docs.microsoft.com/azure/search/search-what-is-azure-search) を使用すると、アプリケーションに統合できる、AI で強化されたクラウドベースの検索インデックスを作成できます。
+- **ワークロードには時系列データを使用しますか?** [Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-overview) は、IoT デバイスによって生成されたデータなどの大量の時系列データの格納、視覚化、クエリ実行のために構築されています。
 
 > [!NOTE]
-> 各アプリケーションまたはサービスのデータベース オプションを評価する方法の詳細については、「[Azure アプリケーション アーキテクチャ ガイド](/azure/architecture/guide/technology-choices/data-store-comparison)」で確認してください。
+> 各アプリケーションまたはサービスのデータベース オプションを評価する方法の詳細については、「[Azure アプリケーション アーキテクチャ ガイド](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-comparison)」で確認してください。
 
 ## <a name="common-database-scenarios"></a>一般的なデータベース シナリオ
 
@@ -50,15 +50,15 @@ ms.locfileid: "70834737"
 
 | **シナリオ** | **データ サービス** |
 |-----|-----|
-| NoSQL の選択をサポートする、グローバルに分散されたマルチモデル データベースが必要です。 | [Azure Cosmos DB](/azure/cosmos-db/introduction) |
-| 迅速なプロビジョニングと即座のスケーリングが可能な、インテリジェンスとセキュリティを組み込んだ、フル マネージド リレーショナル データベースが必要です。 | [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) |
-| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MySQL リレーショナル データベースが必要です。 | [Azure Database for MySQL](/azure/mysql/overview) |
-| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな PostgreSQL リレーショナル データベースが必要です。 | [Azure Database for PostgreSQL](/azure/postgresql/overview) |
-| クラウドでエンタープライズ SQL Server アプリをホストし、サーバー OS を完全に制御する予定です。 | [SQL Server on Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
-| 広範なセキュリティが追加料金なしであらゆるレベルに組み込まれた、フル マネージドのエラスティック データ ウェアハウスが必要です。 | [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
+| NoSQL の選択をサポートする、グローバルに分散されたマルチモデル データベースが必要です。 | [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) |
+| 迅速なプロビジョニングと即座のスケーリングが可能な、インテリジェンスとセキュリティを組み込んだ、フル マネージド リレーショナル データベースが必要です。 | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) |
+| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MySQL リレーショナル データベースが必要です。 | [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) |
+| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな PostgreSQL リレーショナル データベースが必要です。 | [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) |
+| クラウドでエンタープライズ SQL Server アプリをホストし、サーバー OS を完全に制御する予定です。 | [SQL Server on Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
+| 広範なセキュリティが追加料金なしであらゆるレベルに組み込まれた、フル マネージドのエラスティック データ ウェアハウスが必要です。 | [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
 | Hadoop クラスターまたは HDFS データをサポートする Data Lake Storage リソースが必要です。 | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/) |
-| 高速でスケーラブルなアプリケーションをサポートするために、高スループットで、一貫性があり、待機時間の短いデータ アクセスが必要です。 | [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview) |
-| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MariaDB リレーショナル データベースが必要です。 | [Azure Database for MariaDB](/azure/mariadb/overview) |
+| 高速でスケーラブルなアプリケーションをサポートするために、高スループットで、一貫性があり、待機時間の短いデータ アクセスが必要です。 | [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) |
+| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MariaDB リレーショナル データベースが必要です。 | [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/overview) |
 
 ## <a name="regional-availability"></a>リージョン別の提供状況
 
@@ -78,6 +78,6 @@ Azure のグローバル インフラストラクチャの詳細については�
 
 ランディング ゾーン環境を準備するときに、ユーザーがデプロイできるデータ ストアを制限する制御を設定できます。 この制御は、開発者や IT チームがワークロードをサポートするために必要なリソースを引き続きデプロイおよび構成できるようにしながら、コストを管理し、セキュリティ リスクを制限するのに役立ちます。
 
-ランディング ゾーンの要件を特定して文書化したら、[Azure Policy](/azure/governance/policy/overview) を使用して、ユーザーに作成を許可するデータベース リソースを制御できます。 これらの制御は、[データベース リソースの種類の作成を許可または拒否する](/azure/governance/policy/samples/allowed-resource-types)という形をとることができます。 たとえば、ユーザーが Azure SQL Database リソースのみを作成するように制限することができます。 また、ポリシーを使用して、リソースを作成するときに指定可能なオプションを制御することもできます。たとえば、[プロビジョニングできる SQL Database SKU を制限したり](/azure/governance/policy/samples/allowed-sql-db-skus)、IaaS VM へのインストールを[特定バージョンの SQL Server のみ許可](/azure/governance/policy/samples/require-sql-12)したりできます。
+ランディング ゾーンの要件を特定して文書化したら、[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) を使用して、ユーザーに作成を許可するデータベース リソースを制御できます。 これらの制御は、[データベース リソースの種類の作成を許可または拒否する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types)という形をとることができます。 たとえば、ユーザーが Azure SQL Database リソースのみを作成するように制限することができます。 また、ポリシーを使用して、リソースを作成するときに指定可能なオプションを制御することもできます。たとえば、[プロビジョニングできる SQL Database SKU を制限したり](https://docs.microsoft.com/azure/governance/policy/samples/allowed-sql-db-skus)、IaaS VM へのインストールを[特定バージョンの SQL Server のみ許可](https://docs.microsoft.com/azure/governance/policy/samples/require-sql-12)したりできます。
 
-ポリシーは、リソース、リソース グループ、サブスクリプション、および管理グループにスコープを設定できます。 これらのポリシーは、[Azure Blueprint](/azure/governance/blueprints/overview) の定義に含めることも、クラウド資産全体で繰り返し適用することもできます。
+ポリシーは、リソース、リソース グループ、サブスクリプション、および管理グループにスコープを設定できます。 これらのポリシーは、[Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) の定義に含めることも、クラウド資産全体で繰り返し適用することもできます。

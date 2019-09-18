@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7895094ea0297f725ae4f0451989055cb1afab93
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836585"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025370"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>技術的な複雑さに備える: アジャイルな変更管理
 
@@ -46,7 +46,7 @@ INVEST は、ユーザー ストーリーまたは製品バックログ項目 (�
 
 最初は、移行バックログのワークロードが、前のセクションで概説した INVEST の条件を満たす可能性が低くなります。 代わりに、これらは今後の作業のプレースホルダーとして、最初のインベントリからの資産の論理グループとして機能します。 これらのプレースホルダーは、厳密には正確ではない可能性がありますが、ビジネスとの調整の基礎として機能します。
 
-![移行プロセス中に使用される、移行、リリース、イテレーション バックログ間の関係](../../../_images/migration/migrate-release-iteration-backlog-relationship.png)
+![移行プロセス中に使用される、移行、リリース、イテレーション バックログ間の関係](../../../_images/migrate/backlog-relationships.png)
 
 *移行、リリース、イテレーション バックログでは、移行プロセス中にさまざまなレベルのアクティビティが追跡されます。*
 

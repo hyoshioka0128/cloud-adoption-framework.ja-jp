@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b19353ebe22faf089ff56b5ee84289928a8eaca7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905625"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022668"
 ---
 # <a name="understand-partnership-options"></a>パートナーシップのオプションを理解する
 
@@ -34,10 +34,10 @@ ms.locfileid: "70905625"
 
 - **評価と移行のツール。** Azure では、既存のインフラストラクチャの評価など、クラウド変換のさまざまなフェーズで使われる広範なツールが提供されています。 詳しくは、後の移行に関する章の評価に関するセクションを参照してください。
 - **[Microsoft クラウド導入フレームワーク](../../index.md)。** このフレームワークでは、クラウドの導入と移行に対して構造化されたアプローチが提供されています。 Microsoft がサポートしている多くのお客様のエンゲージメントで実証済みのプラクティスに基づいており、アーキテクチャや設計から実装までの一連の手順として編成されています。 手順ごとに、アプリケーション アーキテクチャの設計に役立つ補助的なガイダンスがあります。
-- **[クラウド設計パターン](/azure/architecture/patterns)。** Azure では、信頼性が高くスケーラブルで安全なワークロードをクラウドで構築するための便利なクラウド設計パターンがいくつか提供されています。 パターンごとに、そのパターンで対処する問題、パターンの適用に関する考慮事項、Azure に基づいた例が説明されています。 ほとんどのパターンには、Azure でのパターンの実装方法を示すコード サンプルまたはスニペットが含まれています。 ただし、それらは、ホストが Azure か他のクラウド プラットフォームかにかかわらず、分散システムに関連しています。
-- **[クラウドの基礎](/azure/architecture/guide)。** 基礎は、主要な概念の実装に対する基本的な方法を教えるために役立ちます。 このガイドは、単一の Azure サービスの範囲を超えてソリューションについて考えている技術者に役立ちます。
-- **[シナリオ例](/azure/architecture/example-scenario)。** 実際のお客様からの参照情報が提供されており、過去のお客様が特定のビジネス目標を達成するために従ったツール、アプローチ、プロセスの概要がわかります。
-- **[参照アーキテクチャ](/azure/architecture/reference-architectures)。** 参照アーキテクチャは、関連するアーキテクチャをまとめてシナリオごとに配置されています。 各アーキテクチャの説明には、推奨プラクティスが、スケーラビリティ、可用性、管理性、およびセキュリティに関する考慮事項と共に含まれます。 また、ほとんどにはデプロイ可能なソリューションも含まれています。
+- **[クラウド設計パターン](https://docs.microsoft.com/azure/architecture/patterns)。** Azure では、信頼性が高くスケーラブルで安全なワークロードをクラウドで構築するための便利なクラウド設計パターンがいくつか提供されています。 パターンごとに、そのパターンで対処する問題、パターンの適用に関する考慮事項、Azure に基づいた例が説明されています。 ほとんどのパターンには、Azure でのパターンの実装方法を示すコード サンプルまたはスニペットが含まれています。 ただし、それらは、ホストが Azure か他のクラウド プラットフォームかにかかわらず、分散システムに関連しています。
+- **[クラウドの基礎](https://docs.microsoft.com/azure/architecture/guide)。** 基礎は、主要な概念の実装に対する基本的な方法を教えるために役立ちます。 このガイドは、単一の Azure サービスの範囲を超えてソリューションについて考えている技術者に役立ちます。
+- **[シナリオ例](https://docs.microsoft.com/azure/architecture/example-scenario)。** 実際のお客様からの参照情報が提供されており、過去のお客様が特定のビジネス目標を達成するために従ったツール、アプローチ、プロセスの概要がわかります。
+- **[参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures)。** 参照アーキテクチャは、関連するアーキテクチャをまとめてシナリオごとに配置されています。 各アーキテクチャの説明には、推奨プラクティスが、スケーラビリティ、可用性、管理性、およびセキュリティに関する考慮事項と共に含まれます。 また、ほとんどにはデプロイ可能なソリューションも含まれています。
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
@@ -76,7 +76,7 @@ FastTrack for Azure の一般的な連携の主な段階は次のとおりです
 
 ## <a name="microsoft-services-offerings-aligned-to-cloud-adoption-framework-approaches"></a>クラウド導入フレームワーク アプローチに合わせて配置された Microsoft Services オファリング
 
-![Microsoft Services のクラウド導入フレームワーク アプローチ](../../../_images/mcs-program-approach.jpg)
+![Microsoft Services のクラウド導入フレームワーク アプローチ](../../../_images/migrate/mcs-program-approach.jpg)
 
 **評価:** Microsoft Services では、アーキテクチャ ワーク ショップ、Azure のリアルタイム情報、セキュリティと ID の脅威モデル、さまざまなツールで構成される[統合された、データおよびツール主導アプローチ](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf)を使用して、既存の Azure 環境に対する課題、リスク、推奨事項、問題に関する分析情報と、[最新化の概要ロードマップ](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf)などの重要な結果を提供します。
 

@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3296a471540c921d465859d0dfd800a91996f721
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70838433"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024390"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>メインフレームから Azure に切り替える
 
@@ -48,7 +48,7 @@ Azure による vCPU への MIPS の正確な計算は、vCPU の種類と実行
 
 Azure は、ローカルでも他の地域内でも、複数のストレージ デバイスからデータをレプリケートすることで可用性を向上します。 Azure ベースの障害が発生した場合、コンピューティング リソースはローカルまたはリージョン レベルでレプリケートされたデータにアクセスできます。
 
-[Azure SQL Database](/azure/sql-database/sql-database-technical-overview) や [Azure Cosmos Database](/azure/cosmos-db/introduction) などの Azure のサービスとしてのプラットフォーム (PaaS) リソースを使用すると、Azure で自動的にフェールオーバーを処理できます。 Azure サービスとしてのインフラストラクチャ (IaaS) を使用する場合、フェールオーバーは、SQL Server の Always On 機能、フェールオーバー クラスタリング インスタンス、可用性グループなどの特定のシステム機能に依存します。
+[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) や [Azure Cosmos Database](https://docs.microsoft.com/azure/cosmos-db/introduction) などの Azure のサービスとしてのプラットフォーム (PaaS) リソースを使用すると、Azure で自動的にフェールオーバーを処理できます。 Azure サービスとしてのインフラストラクチャ (IaaS) を使用する場合、フェールオーバーは、SQL Server の Always On 機能、フェールオーバー クラスタリング インスタンス、可用性グループなどの特定のシステム機能に依存します。
 
 ## <a name="scalability"></a>スケーラビリティ
 
@@ -60,7 +60,7 @@ Azure は、ローカルでも他の地域内でも、複数のストレージ �
 
 一般的に、メインフレームのお客様は、災害時に備えてディザスター リカバリー サイトを保守するか、独立したメインフレーム プロバイダーを利用しています。 ディザスター リカバリー サイトとの同期は、通常、データのオフライン コピーを使用して実行されます。 どちらの方法も高コストが発生します。
 
-また、自動化された geo 冗長性は、多額の費用はかかりますが、メインフレームの結合機能を介しても利用できます。また、通常はミッションクリティカル システム用に予約されています。 対照的に、Azure には、実装が簡単で費用対効果の高い[バックアップ](/azure/backup/backup-introduction-to-azure-backup)、[復旧](/azure/site-recovery/site-recovery-overview)、および[冗長性](/azure/storage/common/storage-redundancy)のオプションがあり、ローカル レベルまたはリージョン レベルで、または geo 冗長性を介して利用できます。
+また、自動化された geo 冗長性は、多額の費用はかかりますが、メインフレームの結合機能を介しても利用できます。また、通常はミッションクリティカル システム用に予約されています。 対照的に、Azure には、実装が簡単で費用対効果の高い[バックアップ](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)、[復旧](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)、および[冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)のオプションがあり、ローカル レベルまたはリージョン レベルで、または geo 冗長性を介して利用できます。
 
 ## <a name="storage"></a>Storage
 
@@ -73,7 +73,7 @@ Azure は、ローカルでも他の地域内でも、複数のストレージ �
 - **中央ストレージ:** メインフレーム プロセッサ上に直接配置され、これはプロセッサまたは物理ストレージとも呼ばれます。
 - **補助ストレージ:** メインフレームとは別に配置されます。この種類には、DASD 上のストレージが含まれ、ページング ストレージとも呼ばれます。
 
-クラウドには、柔軟でスケーラブルなオプションが幅広く用意されており、必要なオプションに対してのみ料金を支払います。 [Azure Storage](/azure/storage/common/storage-introduction) は、データ オブジェクトのための高度にスケーラブルなオブジェクト ストア、クラウドのためのファイル システム サービス、信頼性の高いメッセージング ストア、および NoSQL ストアを提供します。 VM の場合、マネージド ディスクとアンマネージド ディスクは、永続的でセキュリティで保護されたディスク ストレージを提供します。
+クラウドには、柔軟でスケーラブルなオプションが幅広く用意されており、必要なオプションに対してのみ料金を支払います。 [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction) は、データ オブジェクトのための高度にスケーラブルなオブジェクト ストア、クラウドのためのファイル システム サービス、信頼性の高いメッセージング ストア、および NoSQL ストアを提供します。 VM の場合、マネージド ディスクとアンマネージド ディスクは、永続的でセキュリティで保護されたディスク ストレージを提供します。
 
 ## <a name="mainframe-development-and-testing"></a>メインフレームの開発とテスト
 
@@ -88,4 +88,4 @@ Azure は、ローカルでも他の地域内でも、複数のストレージ �
 ## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
-> [メインフレーム アプリケーションの移行](application-strategies.md)
+> [メインフレーム アプリケーションの移行](./application-strategies.md)

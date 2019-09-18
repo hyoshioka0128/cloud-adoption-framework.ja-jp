@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837821"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023614"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 
-クラウドの合理化は、クラウド内の各資産の移行または最新化を行う上で最適な方法を決定するために資産を評価するプロセスです。 合理化のプロセスの詳細については、「[デジタル資産とは](index.md)」を参照してください。
+クラウドの合理化は、クラウド内の各資産の移行または最新化を行う上で最適な方法を決定するために資産を評価するプロセスです。 合理化のプロセスの詳細については、「[デジタル資産とは](./index.md)」を参照してください。
 
 ## <a name="rationalization-context"></a>合理化のコンテキスト
 
@@ -161,4 +161,4 @@ ms.locfileid: "70837821"
 デジタル資産に対し、これらの合理化の 5 R を総合的に適用することで、各アプリケーションの将来の状態に関する合理化の決定がしやすくなります。
 
 > [!div class="nextstepaction"]
-> [デジタル資産とは](index.md)
+> [デジタル資産とは](./index.md)

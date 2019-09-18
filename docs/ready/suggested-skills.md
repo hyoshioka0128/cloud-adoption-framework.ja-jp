@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834677"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025110"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
@@ -24,7 +24,7 @@ ms.locfileid: "70834677"
 クラウド導入の取り組みに関連する動機とビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チーム (V チーム) を確立することが必要な場合もあります。 以下の記事は、望ましい結果に従ってこれらのチームを編成するために必要なスキルの開発に役立ちます。
 
 - [初期の組織配置](./index.md):特定の目標を達成しやすくするための組織の配置とさまざまなチーム構造の概要です。
-- [サイロおよび封土の分析](../organization/fiefdoms-silos.md): 2 つの一般的な組織のアンチパターンと、生産性の高いコラボレーションにチームを導く方法を理解します。
+- [サイロおよび封土の分析](../organize/fiefdoms-silos.md): 2 つの一般的な組織のアンチパターンと、生産性の高いコラボレーションにチームを導く方法を理解します。
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>環境 (技術) の準備のラーニング パス
 

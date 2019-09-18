@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9be3818dd12dff913aae6a2eef86587d869ce5a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837613"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025315"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>スキル準備パスの開始
 
@@ -24,7 +24,7 @@ IT スタッフ メンバーは、クラウド ソリューションをサポー
 
 クラウド導入フレームワークでは、導入ライフサイクル全体が読者にガイドされます。 このフレームワーク全体を通して、必要なスキルを習得する機会が読者に提供されます。 この行程を開始するために、スキル準備に関する記事は、簡単にアクセスできるように以下のアウトラインに含まれています。 次の各リンクは、これらの各導入フェーズを成功させるために必要なスキルにマップされます。
 
-- **[戦略](../business-strategy/suggested-skills.md):** 実行可能な移行計画を準備するために必要なスキルを磨きます。 これには、業務上の正当な理由や、その他の必要なビジネス計画スキルが含まれます。
+- **[戦略](../strategy/suggested-skills.md):** 実行可能な移行計画を準備するために必要なスキルを磨きます。 これには、業務上の正当な理由や、その他の必要なビジネス計画スキルが含まれます。
 - **[計画](./suggested-skills.md):** 実行可能な移行計画を準備するために必要なスキルを磨きます。 これには、業務上の正当な理由や、その他の必要なビジネス計画スキルが含まれます。
 - **[準備完了](../ready/suggested-skills.md):** 今後の変更に対してビジネス、カルチャ、人、環境を準備するために必要なスキルを磨きます。
 

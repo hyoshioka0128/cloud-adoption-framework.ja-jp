@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 375631e516163dd1c0ea4832033c68bf17aad515
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d1b9d6d7e195661b19eb4dd5c2b3f4f2710682b8
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818491"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022025"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Microsoft Azure を最新の状態に保つ
 
@@ -25,7 +25,7 @@ Microsoft Azure のようなクラウド プラットフォームは、多くの
 
 次のリソースは、Azure に関する最新情報を入手するのに役立ちます。
 
-- [Azure Service Health](/azure/service-health/service-health-overview)
+- [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview)
   - Service Health とアラートによって、進行中のサービス上の問題、計画的なメンテナンス、正常性の勧告についてのタイムリーな通知が提供されます。 このリソースには、Azure から削除される機能に関する情報も含まれます。
 - [Azure の更新情報](https://azure.microsoft.com/updates)
   - Azure の更新情報をサブスクライブして、製品の更新に関するお知らせを受け取ります。 簡単な概要はより詳細な情報にリンクされているため、更新情報を簡単にフォローできます。

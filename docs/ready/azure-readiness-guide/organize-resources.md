@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2951c3049a22036199e2bc73a6d3f9283582e7e1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818508"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025224"
 ---
 # <a name="organize-your-azure-resources"></a>Azure リソースの整理
 
@@ -80,9 +80,9 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 - [Azure の基礎](../considerations/fundamental-concepts.md)
 - [複数の Azure サブスクリプションでのスケーリング](../considerations/scaling-subscriptions.md)
-- [Azure でのリソース アクセス管理について](../../governance/resource-consistency/azure-resource-access.md)
-- [Azure 管理グループでリソースを整理する](/azure/azure-resource-manager/management-groups-overview)
-- [サブスクリプション サービスの制限](/azure/azure-subscription-service-limits)
+- [Azure でのリソース アクセス管理について](../../govern/resource-consistency/resource-access-management.md)
+- [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [サブスクリプション サービスの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 - 運用の面では、IT チームが必要とする情報が名前に含まれるよう徹底する必要があります。 ワークロード、アプリケーション、環境、重要度など、リソースの管理に役立つ情報を識別する情報を使用します。
 
-リソースの種類に応じて、長さの制限と使用可能な文字は異なっている場合があります。それらの多くは、Azure ベスト プラクティスの[名前付け規則](/azure/architecture/best-practices/naming-conventions)に関する記事に記載されています。 特に企業のクラウド導入作業をサポートすることを目的とする詳細と推奨事項については、クラウド導入フレームワークの[名前付けとタグ付けに関するガイダンス](../considerations/name-and-tag.md)を参照してください。
+リソースの種類に応じて、長さの制限と使用可能な文字は異なっている場合があります。それらの多くは、Azure ベスト プラクティスの[名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)に関する記事に記載されています。 特に企業のクラウド導入作業をサポートすることを目的とする詳細と推奨事項については、クラウド導入フレームワークの[名前付けとタグ付けに関するガイダンス](../considerations/naming-and-tagging.md)を参照してください。
 
 次の表には、例としてのいくつかの Azure リソースの種類に対する名前付けパターンが含まれています。
 
@@ -161,7 +161,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 各リソースまたはリソース グループには、最大で 15 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 
-細かいタグ付けの推奨事項と例については、クラウド導入フレームワークの[タグ付けに関するガイドライン](../considerations/name-and-tag.md)を参照してください。
+細かいタグ付けの推奨事項と例については、クラウド導入フレームワークの[タグ付けに関するガイドライン](../considerations/naming-and-tagging.md)を参照してください。
 
 ::: zone target="docs"
 
@@ -176,7 +176,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ## <a name="learn-more"></a>詳細情報
 
-詳しくは、「[タグを使用した Azure リソースの整理](/azure/azure-resource-manager/resource-group-using-tags)」をご覧ください。
+詳しくは、「[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)」をご覧ください。
 
 ::: zone-end
 

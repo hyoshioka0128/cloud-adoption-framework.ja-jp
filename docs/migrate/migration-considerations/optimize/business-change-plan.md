@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839061"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025460"
 ---
 # <a name="business-change-plan"></a>ビジネス変更プラン
 
@@ -25,7 +25,7 @@ ms.locfileid: "70839061"
 
 アプローチはさまざまに異なることがありますが、ほとんどのユーザー導入プランには汎用的なテーマが存在します。 これらのテーマは一般に、段階的な改善に合わせたリスク コントロールと円滑化のアプローチに基づきます。 次の図に示す Eason Matrix は、さまざまな導入の種類についてそれらのテーマの背後にある推進力を表します。
 
-![ユーザー導入の懸念事項の Eason Matrix](../../../_images/eason-matrix.jpg)
+![ユーザー導入の懸念事項の Eason Matrix](../../../_images/migrate/eason-matrix.jpg)
 
 *ユーザー導入の種類の Eason Matrix。*
 
@@ -37,8 +37,8 @@ ms.locfileid: "70839061"
 
 **アップストリームの質問。** アップストリームの質問では、ユーザーの導入が行われる前に発生する影響や変更について考えます。
 
-- 期待される[ビジネスの成果](../../../business-strategy/business-outcomes/index.md)は定量化されていますか?
-- ビジネスへの影響を定義済みの[学習メトリック](../../../business-strategy/learning-metrics.md)にマップしていますか?
+- 期待される[ビジネスの成果](../../../strategy/business-outcomes/index.md)は定量化されていますか?
+- ビジネスへの影響を定義済みの[学習メトリック](../../../strategy/learning-metrics.md)にマップしていますか?
 - どのビジネス プロセスやチームがこの技術的ソリューションを利用しますか?
 - テストとフィードバックのためにパワー ユーザーを最もうまく調整できるのは社内の誰ですか?
 - 影響を受けるビジネス リーダーが、優先順位付けと移行計画に関与しましたか?

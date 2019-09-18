@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bd31f07a24a17a50953eff54856118e9b22d054e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0569dd472e3dd85c13bb3872a351d6eec4868e39
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834749"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025177"
 ---
 # <a name="compute-design-decisions"></a>コンピューティングの設計上の決定
 
@@ -28,7 +28,7 @@ ms.locfileid: "70834749"
 ![Azure コンピューティング サービスのデシジョン ツリー](../../_images/ready/compute-decision-tree.png)
 
 > [!NOTE]
-> 各アプリケーションまたはサービスのコンピューティング オプションを評価する方法の詳細については、Azure アプリケーション アーキテクチャ ガイドの「[Azure コンピューティング オプションの概要](/azure/architecture/guide/technology-choices/compute-overview)」を参照してください。
+> 各アプリケーションまたはサービスのコンピューティング オプションを評価する方法の詳細については、Azure アプリケーション アーキテクチャ ガイドの「[Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)」を参照してください。
 
 ### <a name="key-questions"></a>主な質問
 
@@ -36,11 +36,11 @@ ms.locfileid: "70834749"
 
 - **まったく新しいアプリケーションおよびサービスを構築していますか? それとも、既存のオンプレミスのワークロードから移行していますか?** クラウド導入作業の一環として新しいアプリケーションを開発すると、設計段階から最新のクラウド ベースのホスティング テクノロジを最大限に活用できます。
 - **既存のワークロードを移行する場合、それらは最新のクラウド テクノロジを利用できますか?** オンプレミスのワークロードを移行するには、次の分析が必要です。既存のアプリケーションとサービスを最新のクラウド テクノロジを利用するように簡単に最適化できますか? または、"*リフトアンドシフト*" 方式の方がワークロードに適していますか?
-- **アプリケーションやサービスはコンテナーを利用できますか?** アプリケーションが、コンテナー化されたホスティングに適している場合は、[Azure コンテナー サービス](https://azure.microsoft.com/product-categories/containers)が提供するリソースの効率性、スケーラビリティ、およびオーケストレーション機能を利用できます。 [Azure Disk Storage](/azure/virtual-machines/windows/managed-disks-overview) と [Azure Files](/azure/storage/files/storage-files-introduction) の両方のサービスを、コンテナー化されたアプリケーションの永続的なストレージとして使用できます。
-- **アプリケーションは Web ベースと API ベースのどちらですか? また、アプリケーションで PHP、ASP.NET、Node.js、あるいは類似のテクノロジを使用しますか?** Web アプリは [Azure App Service](/azure/app-service/overview) のマネージド インスタンスにデプロイできるため、ホスティングのために仮想マシンを維持する必要はありません。
-- **ワークロードの OS とホスティング環境を完全に制御する必要がありますか?** OS、ディスク、ローカルで実行されているソフトウェア、その他の構成など、ホスティング環境を制御する必要がある場合は、[Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) を使用してアプリケーションとサービスをホストすることができます。 仮想マシンのサイズとパフォーマンス レベルの選択に加えて、仮想ディスク ストレージに関する決定が、サービスとしてのインフラストラクチャ (IaaS) ベースのワークロードに関連するパフォーマンスと SLA に影響します。 詳細については、[Azure Disk Storage](/azure/virtual-machines/windows/managed-disks-overview) のドキュメントを参照してください。
-- **ワークロードには、ハイパフォーマンス コンピューティング (HPC) 機能が含まれますか?** [Azure Batch](/azure/batch/batch-technical-overview) は、プラットフォーム サービスとしてコンピューティング リソースのジョブ スケジュール設定と自動スケール機能を備えているので、クラウドで大規模な並列アプリケーションや HPC アプリケーションを簡単に実行できます。
-- **アプリケーションでマイクロサービス アーキテクチャが使用されますか?** マイクロサービス ベースのアーキテクチャを使用するアプリケーションでは、いくつかの最適化されたコンピューティング テクノロジを利用できます。 自己完結型のイベント駆動型ワークロードは、[Azure Functions](/azure/azure-functions/functions-overview) を使用して、インフラストラクチャを必要としないスケーラブルなサーバーレス アプリケーションを構築できます。 マイクロサービスが実行されている環境をより詳細に制御する必要があるアプリケーションでは、[Azure Container Instances](/azure/container-instances/container-instances-overview)、[Azure Kubernetes Service](/azure/aks/intro-kubernetes)、[Azure Service Fabric](/azure/service-fabric/service-fabric-overview) などのコンテナー サービスを使用できます。
+- **アプリケーションやサービスはコンテナーを利用できますか?** アプリケーションが、コンテナー化されたホスティングに適している場合は、[Azure コンテナー サービス](https://azure.microsoft.com/product-categories/containers)が提供するリソースの効率性、スケーラビリティ、およびオーケストレーション機能を利用できます。 [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) と [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) の両方のサービスを、コンテナー化されたアプリケーションの永続的なストレージとして使用できます。
+- **アプリケーションは Web ベースと API ベースのどちらですか? また、アプリケーションで PHP、ASP.NET、Node.js、あるいは類似のテクノロジを使用しますか?** Web アプリは [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) のマネージド インスタンスにデプロイできるため、ホスティングのために仮想マシンを維持する必要はありません。
+- **ワークロードの OS とホスティング環境を完全に制御する必要がありますか?** OS、ディスク、ローカルで実行されているソフトウェア、その他の構成など、ホスティング環境を制御する必要がある場合は、[Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) を使用してアプリケーションとサービスをホストすることができます。 仮想マシンのサイズとパフォーマンス レベルの選択に加えて、仮想ディスク ストレージに関する決定が、サービスとしてのインフラストラクチャ (IaaS) ベースのワークロードに関連するパフォーマンスと SLA に影響します。 詳細については、[Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) のドキュメントを参照してください。
+- **ワークロードには、ハイパフォーマンス コンピューティング (HPC) 機能が含まれますか?** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) は、プラットフォーム サービスとしてコンピューティング リソースのジョブ スケジュール設定と自動スケール機能を備えているので、クラウドで大規模な並列アプリケーションや HPC アプリケーションを簡単に実行できます。
+- **アプリケーションでマイクロサービス アーキテクチャが使用されますか?** マイクロサービス ベースのアーキテクチャを使用するアプリケーションでは、いくつかの最適化されたコンピューティング テクノロジを利用できます。 自己完結型のイベント駆動型ワークロードは、[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) を使用して、インフラストラクチャを必要としないスケーラブルなサーバーレス アプリケーションを構築できます。 マイクロサービスが実行されている環境をより詳細に制御する必要があるアプリケーションでは、[Azure Container Instances](https://docs.microsoft.com/azure/container-instances/container-instances-overview)、[Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) などのコンテナー サービスを使用できます。
 
 > [!NOTE]
 > ほとんどの Azure コンピューティング サービスは、Azure Storage と組み合わせて使用されます。 関連するストレージの決定については、「[ストレージ設計に関する決定事項](./storage-guidance.md)」を参照してください。
@@ -79,7 +79,7 @@ Azure のグローバル インフラストラクチャの詳細については�
 
 ランディング ゾーン環境を準備するときに、各ユーザーがデプロイできるリソースを制限する制御を設定できます。 この制御は、開発者や IT チームがワークロードをサポートするために必要なリソースを引き続きデプロイおよび構成できるようにしながら、コストを管理し、セキュリティ リスクを制限するのに役立ちます。
 
-ランディング ゾーンの要件を特定して文書化したら、[Azure Policy](/azure/governance/policy/overview) を使用して、ユーザーに作成を許可するコンピューティング リソースを制御できます。 これらの制御は、[コンピューティング リソースの種類の作成を許可または拒否する](/azure/governance/policy/samples/allowed-resource-types)という形をとることができます。 たとえば、ユーザーが Azure App Service または Azure Functions リソースのみを作成するように制限することができます。 ポリシーを使用して、リソースの作成時に、[プロビジョニングできる仮想マシン SKU を制限する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage)、または[特定の VM イメージのみ許可する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images)など、指定可能なオプションを制御することもできます。
+ランディング ゾーンの要件を特定して文書化したら、[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) を使用して、ユーザーに作成を許可するコンピューティング リソースを制御できます。 これらの制御は、[コンピューティング リソースの種類の作成を許可または拒否する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types)という形をとることができます。 たとえば、ユーザーが Azure App Service または Azure Functions リソースのみを作成するように制限することができます。 ポリシーを使用して、リソースの作成時に、[プロビジョニングできる仮想マシン SKU を制限する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage)、または[特定の VM イメージのみ許可する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images)など、指定可能なオプションを制御することもできます。
 
-ポリシーは、リソース、リソース グループ、サブスクリプション、および管理グループにスコープを設定できます。 これらのポリシーは、[Azure Blueprint](/azure/governance/blueprints/overview) の定義に含めることも、クラウド資産全体で繰り返し適用することもできます。
+ポリシーは、リソース、リソース グループ、サブスクリプション、および管理グループにスコープを設定できます。 これらのポリシーは、[Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) の定義に含めることも、クラウド資産全体で繰り返し適用することもできます。
 

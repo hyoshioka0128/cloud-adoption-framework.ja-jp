@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0f2bf93d8659804db3bdcd41caa832310fe2f46c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905350"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025140"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>複数の Azure サブスクリプションでの拡張
 
@@ -39,7 +39,7 @@ ms.locfileid: "70905350"
 
 - サブスクリプションの制限はリソースの種類によって異なります。 たとえば、あるサブスクリプションでは仮想ネットワークの数に制限があります。 サブスクリプションがその制限に近づいたとき、別のサブスクリプションを作成し、そこに新しいリソースを置く必要があります。
 
-  詳細については、「[Azure サブスクリプションとサービスの制限、クォータ、制約](/azure/azure-subscription-service-limits)」をご覧ください。
+  詳細については、「[Azure サブスクリプションとサービスの制限、クォータ、制約](https://docs.microsoft.com/azure/azure-subscription-service-limits)」をご覧ください。
 
 - デプロイできるリソースの種類とサポートされるリージョンに対して、サブスクリプションごとに独自のポリシーを実装できます。
 
@@ -59,7 +59,7 @@ ms.locfileid: "70905350"
 
 また、組織に固有のビジネス上あるいは技術上の理由から追加のサブスクリプションを作成する場合があります。 サブスクリプション間のデータのイングレスとエグレスに対して追加コストが発生することがあります。
 
-さまざまな種類のリソースをサブスクリプション間で移動したり、自動デプロイを利用してリソースを別のサブスクリプションに移行したりできます。 詳細については、[別のリソース グループまたはサブスクリプションへの Azure リソースの移動](/azure/azure-resource-manager/resource-group-move-resources)に関する記事をご覧ください。
+さまざまな種類のリソースをサブスクリプション間で移動したり、自動デプロイを利用してリソースを別のサブスクリプションに移行したりできます。 詳細については、[別のリソース グループまたはサブスクリプションへの Azure リソースの移動](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)に関する記事をご覧ください。
 
 ## <a name="managing-multiple-subscriptions"></a>複数のサブスクリプションの管理
 
@@ -76,7 +76,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 この継承モデルを利用し、各サブスクリプションが適切なポリシーやセキュリティ コントロールに準拠するように、階層内にサブスクリプションを配置できます。
 
-![Azure リソースを整理するための 4 つのスコープ レベル](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Azure リソースを整理するための 4 つのスコープ レベル](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
 
 ルート管理グループに割り当てられたアクセス権やポリシーは、ディレクトリ内のすべてのリソースに適用されます。 このスコープで定義する項目は慎重に検討してください。 割り当ては必要なものだけを含めてください。
 
@@ -86,26 +86,26 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ![管理グループ階層の例](../../_images/ready/management-group-hierarchy.png)
 
-詳細については、「[Azure 管理グループでリソースを整理する](/azure/governance/management-groups)」をご覧ください。
+詳細については、「[Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/governance/management-groups)」をご覧ください。
 
 ## <a name="tips-for-creating-new-subscriptions"></a>新しいサブスクリプションを作成するためのヒント
 
 - サブスクリプションの新規作成の担当者を特定します。
 - サブスクリプションに既定で追加されるリソースを決定します。
 - すべての標準サブスクリプションの外観を決定します。 RBAC アクセス、ポリシー、タグ、インフラストラクチャ リソースなどの考慮事項があります。
-- 可能であれば、[サービス プリンシパルを使用し](/azure/azure-resource-manager/grant-access-to-create-subscription)、新しいサブスクリプションを作成します。 自動化されたワークフローを通じて新しいサブスクリプションを要求できるセキュリティ グループを定義します。
+- 可能であれば、[サービス プリンシパルを使用し](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription)、新しいサブスクリプションを作成します。 自動化されたワークフローを通じて新しいサブスクリプションを要求できるセキュリティ グループを定義します。
 - エンタープライズ契約 (EA) をご利用のお客様は、組織で非 EA サブスクリプションの作成がブロックされるように Azure サポートにご依頼ください。
 
 ## <a name="related-resources"></a>関連リソース
 
 - [Azure の基本的な概念](./fundamental-concepts.md)。
-- [Azure 管理グループでリソースを整理する](/azure/governance/management-groups)
-- [Azure のすべてのサブスクリプションと管理グループを管理する目的でアクセス権限を昇格させる](/azure/role-based-access-control/elevate-access-global-admin)。
-- [Azure リソースを別のリソース グループやサブスクリプションに移動する](/azure/azure-resource-manager/resource-group-move-resources)。
+- [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/governance/management-groups)
+- [Azure のすべてのサブスクリプションと管理グループを管理する目的でアクセス権限を昇格させる](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)。
+- [Azure リソースを別のリソース グループやサブスクリプションに移動する](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)。
 
 ## <a name="next-steps"></a>次の手順
 
-Azure リソースをデプロイするときに従う[推奨される名前付けとタグ付けの規則](./name-and-tag.md)を確認します。
+Azure リソースをデプロイするときに従う[推奨される名前付けとタグ付けの規則](./naming-and-tagging.md)を確認します。
 
 > [!div class="nextstepaction"]
-> [推奨される名前付けおよびタグ付け規則](./name-and-tag.md)
+> [推奨される名前付けおよびタグ付け規則](./naming-and-tagging.md)

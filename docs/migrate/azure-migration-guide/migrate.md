@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ce8338fbcd0e21cf0875a207633ce7c9ddf2ff9e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818763"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022785"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>資産の移行 (インフラストラクチャ、アプリ、データ)
 
@@ -50,7 +50,7 @@ Azure Migrate を使用して移行を実行するには、次の手順に従い
 
 ### <a name="read-more"></a>詳細情報
 
-- [Azure Migrate のチュートリアル - 物理または仮想サーバーを Azure に移行する](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate のチュートリアル - 物理または仮想サーバーを Azure に移行する](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -59,7 +59,7 @@ Azure Site Recovery サービスは、オンプレミス リソースの Azure �
 以下の手順は、Site Recovery を使用して移行するプロセスの概要です。
 
 > [!TIP]
-> シナリオによっては、以下の手順は若干異なる場合があります。 詳細については、[オンプレミスのマシンの Azure への移行](/azure/site-recovery/migrate-tutorial-on-premises-azure)に関する記事を参照してください。
+> シナリオによっては、以下の手順は若干異なる場合があります。 詳細については、[オンプレミスのマシンの Azure への移行](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)に関する記事を参照してください。
 
 ### <a name="prepare-azure-site-recovery-service"></a>Azure Site Recovery サービスを準備する
 
@@ -102,7 +102,7 @@ Azure Site Recovery サービスは、オンプレミス リソースの Azure �
 
 詳細については、次を参照してください。
 
-- [オンプレミスのマシンを Azure に移行する](/azure/site-recovery/migrate-tutorial-on-premises-azure)
+- [オンプレミスのマシンを Azure に移行する](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)
 
 ::: zone-end
 
@@ -141,8 +141,8 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 
 詳細については、次を参照してください。
 
-- [Azure Database Migration Service の概要](/azure/dms/dms-overview)
-- [Azure Database Migration Service のインスタンスの作成](/azure/dms/quickstart-create-data-migration-service-portal)
+- [Azure Database Migration Service の概要](https://docs.microsoft.com/azure/dms/dms-overview)
+- [Azure Database Migration Service のインスタンスの作成](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Azure portal での Azure Migrate](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
 - [Azure portal: 移行プロジェクトを作成する](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
@@ -166,21 +166,21 @@ Data Migration Assistant の使用を開始するには、以下の手順に従�
 1. **[次へ]** をクリックして評価を開始します。
 1. Data Migration Assistant ツール セット内で結果を確認します。
 
-企業では、「[DMA で企業を評価し評価レポートを統合する](/sql/dma/dma-consolidatereports)」で説明されている方法に従って、複数のサーバーを評価し、レポートを結合した後、提供された Power BI レポートを使用して結果を分析することをお勧めします。
+企業では、「[DMA で企業を評価し評価レポートを統合する](https://docs.microsoft.com/sql/dma/dma-consolidatereports)」で説明されている方法に従って、複数のサーバーを評価し、レポートを結合した後、提供された Power BI レポートを使用して結果を分析することをお勧めします。
 
 詳しい使用手順などの詳細については、以下を参照してください。
 
-- [Data Migration Assistant の概要](/sql/dma/dma-overview)
-- [DMA で企業を評価し評価レポートを統合する](/sql/dma/dma-consolidatereports)
-- [Data Migration Assistant によって作成された統合評価レポートを Power BI で分析する](/sql/dma/dma-powerbiassesreport)
+- [Data Migration Assistant の概要](https://docs.microsoft.com/sql/dma/dma-overview)
+- [DMA で企業を評価し評価レポートを統合する](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
+- [Data Migration Assistant によって作成された統合評価レポートを Power BI で分析する](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport)
 
 ## <a name="sql-server-migration-assistant"></a>SQL Server Migration Assistant
 
-Microsoft SQL Server Migration Assistant (SSMA) は、Microsoft Access、DB2、MySQL、Oracle、および SAP ASE から SQL Server へのデータベース移行を自動化するために設計されたツールです。 一般的な概念は、これらのツールを使用して収集、評価、その後レビューを行うというものですが、それぞれのソース システムでプロセスに違いがあるため、詳細な [SQL Server Migration Assistant のドキュメント](/sql/ssma/sql-server-migration-assistant)を確認することをお勧めします。
+Microsoft SQL Server Migration Assistant (SSMA) は、Microsoft Access、DB2、MySQL、Oracle、および SAP ASE から SQL Server へのデータベース移行を自動化するために設計されたツールです。 一般的な概念は、これらのツールを使用して収集、評価、その後レビューを行うというものですが、それぞれのソース システムでプロセスに違いがあるため、詳細な [SQL Server Migration Assistant のドキュメント](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)を確認することをお勧めします。
 
 詳細については、次を参照してください。
 
-- [SQL Server Migration Assistant の概要](/sql/ssma/sql-server-migration-assistant)
+- [SQL Server Migration Assistant の概要](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)
 
 ## <a name="database-experimentation-assistant"></a>Database Experimentation Assistant
 
@@ -194,7 +194,7 @@ Database Experimentation Assistant には、以下のワークフロー アク�
 
 詳細については、次を参照してください。
 
-- [Database Experimentation Assistant の概要](/sql/dea/database-experimentation-assistant-overview)
+- [Database Experimentation Assistant の概要](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[サード パーティの移行ツール](#tab/third-party-tools)
 
@@ -245,4 +245,4 @@ Movere は、クラウド移行の計画と IT 環境の継続的な最適化、
 
 # <a name="cost-managementtabmanagecost"></a>[コスト管理](#tab/ManageCost)
 
-リソースをクラウド環境に移行するときは、定期的なコスト分析を実行することが重要です。 移行プロセスによって追加の使用量要件がサービスに適用される可能性があるため、想定外の使用量料金をこれにより回避できます。 コストとワークロードのバランスを取るために、必要に応じてリソースのサイズを変更することもできます ( **[最適化と変換](optimize-and-transform.md)** に関するセクションで詳しく説明します)。
+リソースをクラウド環境に移行するときは、定期的なコスト分析を実行することが重要です。 移行プロセスによって追加の使用量要件がサービスに適用される可能性があるため、想定外の使用量料金をこれにより回避できます。 コストとワークロードのバランスを取るために、必要に応じてリソースのサイズを変更することもできます ( **[最適化と変換](./optimize-and-transform.md)** に関するセクションで詳しく説明します)。

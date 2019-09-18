@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6af51f1fa6526e2ea7cf13a824c7834d631aa59
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cc6ce12f425354cbf907474431f2ec0f45735fea
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70835117"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024968"
 ---
 # <a name="application-migration-patterns-and-examples"></a>アプリケーションの移行パターンと例
 
@@ -59,49 +59,49 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 **記事** | **詳細**
 --- | ---
-[Azure への移行の対象となるオンプレミスのリソースの評価](contoso-migration-assessment.md) | この記事では、VMware 上で実行されているオンプレミス アプリの評価を実行する方法を示します。 例では、サンプル組織が Azure Migrate サービスを使用してアプリの VM を、また、Data Migration Assistant を使用してアプリの SQL Server データベースを評価します。
+[Azure への移行の対象となるオンプレミスのリソースの評価](./contoso-migration-assessment.md) | この記事では、VMware 上で実行されているオンプレミス アプリの評価を実行する方法を示します。 例では、サンプル組織が Azure Migrate サービスを使用してアプリの VM を、また、Data Migration Assistant を使用してアプリの SQL Server データベースを評価します。
 
 ### <a name="infrastructure"></a>インフラストラクチャ
 
 **記事** | **詳細**
 --- | ---
-[Azure インフラストラクチャをデプロイする](contoso-migration-infrastructure.md) | この記事では、組織が移行に向けてオンプレミス インフラストラクチャと Azure インフラストラクチャを準備する方法を示します。 この記事で構築したインフラストラクチャの例は、このセクション内で紹介されている他のサンプルの中で参照されます。
+[Azure インフラストラクチャをデプロイする](./contoso-migration-infrastructure.md) | この記事では、組織が移行に向けてオンプレミス インフラストラクチャと Azure インフラストラクチャを準備する方法を示します。 この記事で構築したインフラストラクチャの例は、このセクション内で紹介されている他のサンプルの中で参照されます。
 
 ### <a name="windows-server-workloads"></a>Windows Server ワークロード
 
 **記事** | **詳細**
 --- | ---
-[Azure VM でのアプリのリホスト](contoso-migration-rehost-vm.md) | この記事では、Site Recovery サービスを使用してオンプレミス アプリ VM を Azure VM に移行する例を示します。
-[Azure コンテナーと Azure SQL Database 内でアプリをリアーキテクトする](contoso-migration-rearchitect-container-sql.md) | この記事では、Azure Service Fabric 内で実行される Windows コンテナーとしてアプリの Web 層をリアーキテクトし、さらに、Azure SQL Database を使用してデータベースをリアーキテクトして、アプリを移行する例を示します。
+[Azure VM でのアプリのリホスト](./contoso-migration-rehost-vm.md) | この記事では、Site Recovery サービスを使用してオンプレミス アプリ VM を Azure VM に移行する例を示します。
+[Azure コンテナーと Azure SQL Database 内でアプリをリアーキテクトする](./contoso-migration-rearchitect-container-sql.md) | この記事では、Azure Service Fabric 内で実行される Windows コンテナーとしてアプリの Web 層をリアーキテクトし、さらに、Azure SQL Database を使用してデータベースをリアーキテクトして、アプリを移行する例を示します。
 
 ### <a name="linux-workloads"></a>Linux ワークロード
 
 **記事** | **詳細**
 --- | ---
-[Azure VM および Azure Database for MySQL での Linux アプリのリホスト](contoso-migration-rehost-linux-vm-mysql.md) | この記事では、Site Recovery を使用して Linux でホストされているアプリを Azure VM に移行する例を示します。 アプリ データベースを Azure Database for MySQL に移行するために MySQL Workbench を使用します。
-[Linux アプリの Azure VM へのリホスト](contoso-migration-rehost-linux-vm.md) | この例では、Site Recovery サービスを使用して、Linux ベース アプリの Azure VM への "リフトアンドシフト" 移行を完了する方法を示します。
+[Azure VM および Azure Database for MySQL での Linux アプリのリホスト](./contoso-migration-rehost-linux-vm-mysql.md) | この記事では、Site Recovery を使用して Linux でホストされているアプリを Azure VM に移行する例を示します。 アプリ データベースを Azure Database for MySQL に移行するために MySQL Workbench を使用します。
+[Linux アプリの Azure VM へのリホスト](./contoso-migration-rehost-linux-vm.md) | この例では、Site Recovery サービスを使用して、Linux ベース アプリの Azure VM への "リフトアンドシフト" 移行を完了する方法を示します。
 
 ### <a name="sql-server-workloads"></a>SQL Server ワークロード
 
 **記事** | **詳細**
 --- | ---
-[Azure VM および SQL Database Managed Instance でのアプリのリホスト](contoso-migration-rehost-vm-sql-managed-instance.md) | この記事では、オンプレミス アプリの Azure への "リフト アンド シフト" 移行の例を示します。 これには、[Azure Site Recovery](/azure/site-recovery/site-recovery-overview) を使用してアプリのフロントエンド VM を移行し、[Azure Database Migration Service](/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Database Managed Instance に移行します。
-[Azure VM および SQL Server Always On 可用性グループでのアプリのリホスト](contoso-migration-rehost-vm-sql-ag.md) | この例では、Azure にホストされている SQL Server VM を使用して、アプリとデータを移行する方法を示します。 Site Recovery を使用してアプリの VM を移行し、Azure Database Migration Service を使用してアプリのデータベースを Always On 可用性グループで保護されている SQL Server クラスターに移行します。
+[Azure VM および SQL Database Managed Instance でのアプリのリホスト](./contoso-migration-rehost-vm-sql-managed-instance.md) | この記事では、オンプレミス アプリの Azure への "リフト アンド シフト" 移行の例を示します。 これには、[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) を使用してアプリのフロントエンド VM を移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Database Managed Instance に移行します。
+[Azure VM および SQL Server Always On 可用性グループでのアプリのリホスト](./contoso-migration-rehost-vm-sql-ag.md) | この例では、Azure にホストされている SQL Server VM を使用して、アプリとデータを移行する方法を示します。 Site Recovery を使用してアプリの VM を移行し、Azure Database Migration Service を使用してアプリのデータベースを Always On 可用性グループで保護されている SQL Server クラスターに移行します。
 
 ### <a name="aspnet--php--java-apps"></a>ASP.NET / PHP / Java アプリ
 
 **記事** | **詳細**
 --- | ---
-[Azure Web App と Azure SQL Database 内でアプリをリファクターする](contoso-migration-refactor-web-app-sql.md) | この例では、オンプレミスの Windows ベース アプリを Azure Web アプリに移行し、また、Database Migration Assistant を使用してアプリのデータベースを Azure SQL Server インスタンスに移行する方法を示します。
-[Azure App Service、Azure Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリをリファクターする](contoso-migration-refactor-linux-app-service-mysql.md) | この例では、Azure Traffic Manager を使用してオンプレミスの Linux ベース アプリを、継続的デリバリーのために GitHub に統合される複数の Azure リージョン上の Azure Web アプリに移行する方法を示します。 アプリのデータベースは Azure Database for MySQL インスタンスに移行されます。
-[Azure でのアプリのリビルド](contoso-migration-rebuild.md) | この記事では、Azure のさまざまな機能とマネージド サービス (Azure App Service、Azure Kubernetes Service (AKS)、Azure Functions、Azure Cognitive Services、Azure Cosmos DB など) を使用してオンプレミス アプリをリビルドする例を示します。
-[Azure DevOps Services 上で Team Foundation Server をリファクターする](contoso-migration-tfs-vsts.md) | この記事では、オンプレミスの Team Foundation Server のデプロイを Azure 内の Azure DevOps Services に移行する例を示します。
+[Azure Web App と Azure SQL Database 内でアプリをリファクターする](./contoso-migration-refactor-web-app-sql.md) | この例では、オンプレミスの Windows ベース アプリを Azure Web アプリに移行し、また、Database Migration Assistant を使用してアプリのデータベースを Azure SQL Server インスタンスに移行する方法を示します。
+[Azure App Service、Azure Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリをリファクターする](./contoso-migration-refactor-linux-app-service-mysql.md) | この例では、Azure Traffic Manager を使用してオンプレミスの Linux ベース アプリを、継続的デリバリーのために GitHub に統合される複数の Azure リージョン上の Azure Web アプリに移行する方法を示します。 アプリのデータベースは Azure Database for MySQL インスタンスに移行されます。
+[Azure でのアプリのリビルド](./contoso-migration-rebuild.md) | この記事では、Azure のさまざまな機能とマネージド サービス (Azure App Service、Azure Kubernetes Service (AKS)、Azure Functions、Azure Cognitive Services、Azure Cosmos DB など) を使用してオンプレミス アプリをリビルドする例を示します。
+[Azure DevOps Services 上で Team Foundation Server をリファクターする](./contoso-migration-tfs-vsts.md) | この記事では、オンプレミスの Team Foundation Server のデプロイを Azure 内の Azure DevOps Services に移行する例を示します。
 
 ### <a name="migration-scaling"></a>移行のスケーリング
 
 **記事** | **詳細**
 --- | ---
-[Azure への移行のスケーリング](contoso-migration-scale.md) | この記事では、サンプル組織が Azure への完全な移行に対してスケーリングを行うための準備の方法を示します。
+[Azure への移行のスケーリング](./contoso-migration-scale.md) | この記事では、サンプル組織が Azure への完全な移行に対してスケーリングを行うための準備の方法を示します。
 
 ### <a name="demo-apps"></a>デモ アプリ
 

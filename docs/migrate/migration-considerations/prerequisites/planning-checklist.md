@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d216d65685c7e58fc622a5d7f820f0c23097fa4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839029"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022592"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>移行環境の計画チェックリスト - 移行前に環境の対応性を検証する
 
@@ -33,7 +33,7 @@ ms.locfileid: "70839029"
 
 最初の移行でより広範なクラウド ガバナンス戦略に合わせることを選択したかにかかわらず、ご利用のクラウド デプロイ環境が確実にワークロードをサポートするように構成されているようにする必要があります。
 
-移行をクラウド ガバナンス戦略と合わせることを最初から計画する場合、ご利用のクラウド環境をすべての企業要件と合わせるポリシー、ツールチェーン、強制メカニズムの決定を通知するのに役立つ、[クラウド ガバナンスの 5 つの規律](../../../governance/governance-disciplines.md)を適用する必要があります。 Azure サービスを使用してこのモデルを実装する方法の例については、クラウド導入フレームワークの[実践的なガバナンス デザイン ガイド](../../../governance/journeys/index.md)を参照してください。
+移行をクラウド ガバナンス戦略と合わせることを最初から計画する場合、ご利用のクラウド環境をすべての企業要件と合わせるポリシー、ツールチェーン、強制メカニズムの決定を通知するのに役立つ、[クラウド ガバナンスの 5 つの規律](../../../govern/governance-disciplines.md)を適用する必要があります。 Azure サービスを使用してこのモデルを実装する方法の例については、クラウド導入フレームワークの[実践的なガバナンス デザイン ガイド](../../../govern/guides/index.md)を参照してください。
 
 初期の移行がより広範なクラウド ガバナンス戦略と厳密に合致していない場合は、組織、アクセス、インフラストラクチャの計画における一般的な問題は引き続き管理する必要があります。 これらのクラウドの対応性に関する決定には、[Azure の準備ガイド](../../../ready/azure-readiness-guide/index.md)をご覧ください。
 
@@ -64,7 +64,7 @@ ms.locfileid: "70839029"
 
 ## <a name="next-steps"></a>次の手順
 
-環境が最小要件を満たしている場合、移行の対応性に対して承認されていると見なすことができます。 [文化の複雑さと変更管理](./culture-complexity.md)は、計画の実施中に適切な目標を確保するため、ロールと責任を合致させるのに役立ちます。
+環境が最小要件を満たしている場合、移行の対応性に対して承認されていると見なすことができます。 [文化の複雑さと変更管理](./cultural-complexity.md)は、計画の実施中に適切な目標を確保するため、ロールと責任を合致させるのに役立ちます。
 
 > [!div class="nextstepaction"]
-> [文化の複雑さと変更管理](./culture-complexity.md)
+> [文化の複雑さと変更管理](./cultural-complexity.md)

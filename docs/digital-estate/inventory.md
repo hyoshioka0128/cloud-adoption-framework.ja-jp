@@ -8,16 +8,16 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 616bf15db1fac01966573cd5822717c59286434b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837797"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023494"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>デジタル資産のインベントリ データを収集する
 
-インベントリを作成することは、[デジタル資産計画](index.md)の最初の手順です。 このプロセスでは、後で分析や合理化が可能なように、特定のビジネス機能をサポートする IT 資産の一覧が収集されます。 この記事では、計画上、分析にはボトムアップの手法を採用することが最適だと想定しています。 詳細については、[デジタル資産計画の手法](./approach.md)についての記事を参照してください。
+インベントリを作成することは、[デジタル資産計画](./index.md)の最初の手順です。 このプロセスでは、後で分析や合理化が可能なように、特定のビジネス機能をサポートする IT 資産の一覧が収集されます。 この記事では、計画上、分析にはボトムアップの手法を採用することが最適だと想定しています。 詳細については、[デジタル資産計画の手法](./approach.md)についての記事を参照してください。
 
 ## <a name="take-inventory-of-a-digital-estate"></a>デジタル資産のインベントリの収集
 
@@ -38,4 +38,4 @@ ms.locfileid: "70837797"
 インベントリの作成と検証が終わったら、インベントリを合理化できます。 インベントリの合理化は、デジタル資産計画の次の手順です。
 
 > [!div class="nextstepaction"]
-> [デジタル資産を合理化する](rationalize.md)
+> [デジタル資産を合理化する](./rationalize.md)

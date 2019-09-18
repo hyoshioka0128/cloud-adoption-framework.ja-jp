@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 494bb830337540c79554905ef4e2e6f2c9c9ccd1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e504d4032fc019af43ec7cb1e8513504196559a2
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70835061"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024209"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Azure App Service、Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリをリファクターする
 
@@ -87,7 +87,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 --- | --- | ---
 [Mobile Apps](https://azure.microsoft.com/services/app-service) | このサービスでは、Web サイト向けの Azure PaaS サービスを使用してアプリケーションを実行およびスケーリングします。 | 価格は、インスタンスのサイズと必要な機能に基づきます。 [詳細情報](https://azure.microsoft.com/pricing/details/app-service/windows)。
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | DNS を使用して、Azure、外部 Web サイト、またはサービスにユーザーを送るロード バランサー。 | 価格は、受信した DNS クエリの数と監視対象のエンドポイントの数に基づきます。 | [詳細情報](https://azure.microsoft.com/pricing/details/traffic-manager)。
-[Azure Database for MySQL](/azure/mysql) | データベースは、オープン ソースの MySQL Server エンジンに基づいています。 これは、アプリの開発とデプロイに向けたサービスとしての、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースです。 | 価格は、コンピューティング、ストレージ、およびバックアップ要件に基づきます。 [詳細情報](https://azure.microsoft.com/pricing/details/mysql)。
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | データベースは、オープン ソースの MySQL Server エンジンに基づいています。 これは、アプリの開発とデプロイに向けたサービスとしての、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースです。 | 価格は、コンピューティング、ストレージ、およびバックアップ要件に基づきます。 [詳細情報](https://azure.microsoft.com/pricing/details/mysql)。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -98,7 +98,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 **要件** | **詳細**
 --- | ---
 **Azure サブスクリプション** | Contoso は、この記事シリーズの前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
-**Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。
+**Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -138,8 +138,8 @@ Contoso 管理者は、Azure App Service を使用する 2 つの Web アプリ�
 
 **さらにサポートが必要な場合**
 
-- [Azure App Service Web アプリ](/azure/app-service/overview)に関する記事を参照します。
-- 「[Azure App Service on Linux の概要](/azure/app-service/containers/app-service-linux-intro)」を参照します。
+- [Azure App Service Web アプリ](https://docs.microsoft.com/azure/app-service/overview)に関する記事を参照します。
+- 「[Azure App Service on Linux の概要](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro)」を参照します。
 
 ## <a name="step-2-set-up-traffic-manager"></a>手順 2:Traffic Manager を設定する
 
@@ -159,8 +159,8 @@ Contoso 管理者は、受信 Web 要求を osTicket Web 層で実行中の Web 
 
 **さらにサポートが必要な場合**
 
-- 「[Traffic Manager の概要](/azure/traffic-manager/traffic-manager-overview)」を参照します。
-- [優先順位の高いエンドポイントへのトラフィックのルーティング](/azure/traffic-manager/traffic-manager-configure-priority-routing-method)に関する記事を参照します。
+- 「[Traffic Manager の概要](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)」を参照します。
+- [優先順位の高いエンドポイントへのトラフィックのルーティング](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-configure-priority-routing-method)に関する記事を参照します。
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>手順 3:Azure Database for MySQL をプロビジョニングする
 
@@ -284,7 +284,7 @@ Contoso 管理者は、新しいプライベート GitHub リポジトリを作�
     ![アプリの構成](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app4.png)
 
 5. セカンダリ Web アプリ (**osticket-cus**) に対して、上記のステップを繰り返します。
-6. サイトが構成されたら、Traffic Manager プロファイルを使用してアクセスできます。 DNS 名は、osTicket アプリの新しい場所になります。 [詳細情報](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)。
+6. サイトが構成されたら、Traffic Manager プロファイルを使用してアクセスできます。 DNS 名は、osTicket アプリの新しい場所になります。 [詳細情報](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)。
 
     ![アプリの構成](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
@@ -327,14 +327,14 @@ Contoso 管理者は、新しいプライベート GitHub リポジトリを作�
 
 ### <a name="security"></a>セキュリティ
 
-Contoso のセキュリティ チームは、アプリを再調査して、セキュリティの問題を特定します。 Contoso は、OsTicket アプリと MySQL データベース インスタンス間の通信が SSL 用に構成されていないことを識別しました。 データベース トラフィックをハッキングできないようにするため、これを行う必要があります。 [詳細情報](/azure/mysql/howto-configure-ssl)。
+Contoso のセキュリティ チームは、アプリを再調査して、セキュリティの問題を特定します。 Contoso は、OsTicket アプリと MySQL データベース インスタンス間の通信が SSL 用に構成されていないことを識別しました。 データベース トラフィックをハッキングできないようにするため、これを行う必要があります。 [詳細情報](https://docs.microsoft.com/azure/mysql/howto-configure-ssl)。
 
 ### <a name="backups"></a>バックアップ
 
 - OsTicket Web アプリには状態データが含まれていないため、バックアップは必要ありません。
-- データベースのバックアップを構成する必要はありません。 Azure Database for MySQL は、サーバーのバックアップを自動的に作成して保存します。 彼らはデータベースのために geo 冗長性を使用することを選択したため、このデータベースは耐障害性があり、運用準備ができています。 バックアップを使用すると、サーバーを特定の時点に復元できます。 [詳細情報](/azure/mysql/concepts-backup)。
+- データベースのバックアップを構成する必要はありません。 Azure Database for MySQL は、サーバーのバックアップを自動的に作成して保存します。 彼らはデータベースのために geo 冗長性を使用することを選択したため、このデータベースは耐障害性があり、運用準備ができています。 バックアップを使用すると、サーバーを特定の時点に復元できます。 [詳細情報](https://docs.microsoft.com/azure/mysql/concepts-backup)。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - PaaS のデプロイにライセンスの問題はありません。
-- Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](/azure/cost-management/overview)を参照してください。
+- Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](https://docs.microsoft.com/azure/cost-management/overview)を参照してください。

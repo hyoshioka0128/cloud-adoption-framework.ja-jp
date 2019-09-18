@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0f720d78da2750fa05cbd117cdbf9f29e5e18558
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 096d6756c1d2b4713b6a464cbcc05785e96bc5cc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837481"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023391"
 ---
 # <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークでのクラウドの導入によるイノベーション
 
@@ -43,7 +43,7 @@ ms.locfileid: "70837481"
 - 成長思考を促進するプラクティスの実行
 - DevOps 戦略の統合
 
-![クラウド導入フレームワークの概要](../_images/cloud-adoption-framework-overview.png)
+![クラウド導入フレームワークの概要](../_images/caf-overview.png)
 
 ## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>クラウド イノベーションに関連付けられる一般的なワークロードの例
 

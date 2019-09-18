@@ -8,16 +8,16 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4b181faf89d8196c3bbecd153e92e6f44d076166
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906153"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022162"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
-[コスト志向の組織を構築する](../../organization/cost-conscious-organization.md)には、コスト関連データに対する可視性および適切に定義されたアクセス権 (スコープ) が必要です。 このベスト プラクティスに関する記事では、追跡メカニズムを作成するための意思決定と実装の方法について概説します。
+[コスト志向の組織を構築する](../../organize/cost-conscious-organization.md)には、コスト関連データに対する可視性および適切に定義されたアクセス権 (スコープ) が必要です。 このベスト プラクティスに関する記事では、追跡メカニズムを作成するための意思決定と実装の方法について概説します。
 
 ![コスト志向のプロセスの概要](../../_images/ready/cost-optimization-process.png)
 
@@ -35,16 +35,16 @@ ms.locfileid: "70906153"
 
 事業単位、環境、およびプロジェクトをまたいでコスト情報を正確に追跡する最初の手順は、タグ付けの標準を定義することです。 2 番目の手順は、タグ付けの標準が確実に適用されていることを確認することです。 次の記事は、これらの各手順を完了するのに役立ちます。
 
-- [名前付けとタグ付けの標準を開発する](../considerations/name-and-tag.md)
-- [ガバナンス MVP を確立してタグ付けの標準を適用する](../../governance/journeys/complex-enterprise/index.md)
+- [名前付けとタグ付けの標準を開発する](../considerations/naming-and-tagging.md)
+- [ガバナンス MVP を確立してタグ付けの標準を適用する](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>リソースの編成
 
-資産の編成にはいくつかのアプローチがあります。 このセクションでは、事業単位、地域、および IT 組織に分散されたコスト構造を持つ大企業のニーズに基づいたベスト プラクティスについて概説します。 それほど複雑でない小規模組織向けの同様のベスト プラクティスについては、「[中小企業のガバナンス体験](../../governance/journeys/standard-enterprise/index.md)」で説明しています。
+資産の編成にはいくつかのアプローチがあります。 このセクションでは、事業単位、地域、および IT 組織に分散されたコスト構造を持つ大企業のニーズに基づいたベスト プラクティスについて概説します。 それほど複雑でない小規模組織向けの同様のベスト プラクティスについては、「[中小企業のガバナンス体験](../../govern/guides/standard/index.md)」で説明しています。
 
 大企業の場合は、次のモデルのように、管理グループ、サブスクリプション、およびリソース グループの階層を作成して、必要な職務を遂行できる適切な可視性レベルを各チームに提供できます。 企業で予算超過を防ぐためにコスト管理が必要な場合は、この構造内のサブスクリプションに Azure Blueprints や Azure Policy などのガバナンス ツールを適用して、将来のコスト エラーを迅速に食い止めることができます。
 
-![大企業のリソース編成の図](../../_images/governance/large-enterprise-resource-organization.png)
+![大企業のリソース編成の図](../../_images/govern/large-enterprise-resource-organization.png)
 
 上の図では、管理グループ階層のルートに各事業単位のノードがあります。 この例の多国籍企業では、地域の事業単位に可視性が必要であるため、階層内の各事業単位の下に地域のノードが作成されています。
 
@@ -60,7 +60,7 @@ ms.locfileid: "70906153"
 この記事の残りの部分では、上の図のベスト プラクティスのアプローチを使用することを前提としています。 ただし、次の記事は、お客様の会社に最適なリソース編成にこのアプローチを適用するのに役立ちます。
 
 - [複数の Azure サブスクリプションでのスケーリング](../considerations/scaling-subscriptions.md)
-- [ガバナンス MVP をデプロイして適切に管理された環境の標準を管理する](../../governance/journeys/complex-enterprise/index.md)
+- [ガバナンス MVP をデプロイして適切に管理された環境の標準を管理する](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>適切なレベルのコスト アクセスの提供
 
@@ -75,39 +75,39 @@ ms.locfileid: "70906153"
 
 Azure Cost Management では、各スコープに対して次の組み込みロールがサポートされています。
 
-- [所有者](/azure/role-based-access-control/built-in-roles#owner)。 コストを表示し、コストの構成を含めたすべてを管理することができます。
-- [共同作成者](/azure/role-based-access-control/built-in-roles#contributor)。 コストを表示し、コストの構成を含めたすべてを管理できますが、アクセスの制御はできません。
-- [閲覧者](/azure/role-based-access-control/built-in-roles#reader)。 コストのデータと構成を含めたすべてを表示できますが、変更を加えることはできません。
-- [Cost Management 共同作成者](/azure/role-based-access-control/built-in-roles#cost-management-contributor)。 コストを表示し、コストの構成を管理することができます。
-- [Cost Management 閲覧者](/azure/role-based-access-control/built-in-roles#cost-management-reader)。コストのデータと構成を表示することができます。
+- [所有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)。 コストを表示し、コストの構成を含めたすべてを管理することができます。
+- [共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)。 コストを表示し、コストの構成を含めたすべてを管理できますが、アクセスの制御はできません。
+- [閲覧者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader)。 コストのデータと構成を含めたすべてを表示できますが、変更を加えることはできません。
+- [Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)。 コストを表示し、コストの構成を管理することができます。
+- [Cost Management 閲覧者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader)。コストのデータと構成を表示することができます。
 
-一般的なベスト プラクティスとしては、すべてのチームのメンバーに Cost Management 共同作成者のロールを割り当てます。 このロールでは、予算を作成および管理し、コストをより効果的に監視してレポートできるようにエクスポートするためのアクセス権が付与されます。 ただし、[クラウド戦略チーム](../../organization/cloud-strategy.md)のメンバーは、Cost Management 閲覧者のみに設定する必要があります。 Azure Cost Management ツール内での予算の設定に関与しないためです。
+一般的なベスト プラクティスとしては、すべてのチームのメンバーに Cost Management 共同作成者のロールを割り当てます。 このロールでは、予算を作成および管理し、コストをより効果的に監視してレポートできるようにエクスポートするためのアクセス権が付与されます。 ただし、[クラウド戦略チーム](../../organize/cloud-strategy.md)のメンバーは、Cost Management 閲覧者のみに設定する必要があります。 Azure Cost Management ツール内での予算の設定に関与しないためです。
 
 ### <a name="scope"></a>Scope (スコープ)
 
 次のスコープとロールの設定により、コスト管理に必要な可視性が作成されます。 このベスト プラクティスは、資産の編成方法に応じて若干の変更が必要になることがあります。
 
-- [クラウド導入チーム](../../organization/cloud-adoption.md)。 最適化に向けた継続的な変更を行う職務には、リソース グループ レベルで Cost Management 共同作成者のアクセス権が必要です。
+- [クラウド導入チーム](../../organize/cloud-adoption.md)。 最適化に向けた継続的な変更を行う職務には、リソース グループ レベルで Cost Management 共同作成者のアクセス権が必要です。
 
-  - **作業環境**。 クラウド導入チームは、少なくとも、影響を受けるすべてのリソース グループか、開発/テストまたは継続的なデプロイ アクティビティに関連するこれらのグループに対する[共同作成者](/azure/role-based-access-control/built-in-roles#contributor)のアクセス権を既に持っているはずです。 追加のスコープ設定は必要ありません。
-  - **運用環境**。 責任の適切な分離が確立されたら、クラウド導入チームが自分たちのプロジェクトに関連するリソース グループに対するアクセス権を持ち続けることはないでしょう。 このチームに対しては、ワークロードの運用インスタンスをサポートするリソース グループに追加のスコープを設定し、チームの決定の運用コストへの影響を可視化することが必要です。 このチームの運用リソース グループに [Cost Management 共同作成者](/azure/role-based-access-control/built-in-roles#cost-management-contributor)スコープを設定すると、チームはコストを監視し、サポートされているワークロードでの使用状況と継続的な投資に基づいて予算を設定することができます。
+  - **作業環境**。 クラウド導入チームは、少なくとも、影響を受けるすべてのリソース グループか、開発/テストまたは継続的なデプロイ アクティビティに関連するこれらのグループに対する[共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)のアクセス権を既に持っているはずです。 追加のスコープ設定は必要ありません。
+  - **運用環境**。 責任の適切な分離が確立されたら、クラウド導入チームが自分たちのプロジェクトに関連するリソース グループに対するアクセス権を持ち続けることはないでしょう。 このチームに対しては、ワークロードの運用インスタンスをサポートするリソース グループに追加のスコープを設定し、チームの決定の運用コストへの影響を可視化することが必要です。 このチームの運用リソース グループに [Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)スコープを設定すると、チームはコストを監視し、サポートされているワークロードでの使用状況と継続的な投資に基づいて予算を設定することができます。
 
-- [クラウド戦略チーム](../../organization/cloud-strategy.md)。 複数のプロジェクトや事業単位をまたいでコストを追跡する職務には、管理グループ階層のルート レベルで Cost Management 閲覧者のアクセス権が必要です。
+- [クラウド戦略チーム](../../organize/cloud-strategy.md)。 複数のプロジェクトや事業単位をまたいでコストを追跡する職務には、管理グループ階層のルート レベルで Cost Management 閲覧者のアクセス権が必要です。
 
-  - 管理グループでこのチームに [Cost Management 閲覧者](/azure/role-based-access-control/built-in-roles#cost-management-reader)のアクセス権を割り当てます。 これにより、その管理グループ階層によって管理されるサブスクリプションに関連付けられているすべてのデプロイに対する継続的な可視性が保証されます。
+  - 管理グループでこのチームに [Cost Management 閲覧者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader)のアクセス権を割り当てます。 これにより、その管理グループ階層によって管理されるサブスクリプションに関連付けられているすべてのデプロイに対する継続的な可視性が保証されます。
 
-- [クラウド ガバナンス チーム](../../organization/cloud-governance.md)。 導入作業全体でコスト管理、予算調整、レポートを行う職務には、管理グループ階層のルート レベルで Cost Management 共同作成者のアクセス権が必要です。
+- [クラウド ガバナンス チーム](../../organize/cloud-governance.md)。 導入作業全体でコスト管理、予算調整、レポートを行う職務には、管理グループ階層のルート レベルで Cost Management 共同作成者のアクセス権が必要です。
 
-  - 適切に管理された環境では、クラウド ガバナンス チームが高いレベルのアクセス権を持っている可能性があるため、[Cost Management 共同作成者](/azure/role-based-access-control/built-in-roles#cost-management-contributor)の追加のスコープ割り当ては必要ありません。
+  - 適切に管理された環境では、クラウド ガバナンス チームが高いレベルのアクセス権を持っている可能性があるため、[Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)の追加のスコープ割り当ては必要ありません。
 
-- [クラウドのセンター オブ エクセレンス](../../organization/cloud-center-excellence.md)。 共有サービスに関連するコストを管理する職務には、サブスクリプション レベルで Cost Management 共同作成者のアクセス権が必要です。 さらに、このチームには、CCoE オートメーションがコストに与える影響を理解するために、それらのオートメーションによってデプロイされたアセットを含むリソース グループまたはサブスクリプションに対する Cost Management 共同作成者のアクセス権も必要になることがあります。
+- [クラウドのセンター オブ エクセレンス](../../organize/cloud-center-of-excellence.md)。 共有サービスに関連するコストを管理する職務には、サブスクリプション レベルで Cost Management 共同作成者のアクセス権が必要です。 さらに、このチームには、CCoE オートメーションがコストに与える影響を理解するために、それらのオートメーションによってデプロイされたアセットを含むリソース グループまたはサブスクリプションに対する Cost Management 共同作成者のアクセス権も必要になることがあります。
 
-  - **共有サービス**。 クラウドのセンター オブ エクセレンスが関与している場合、ベスト プラクティスとして、CCoE によって管理される資産が、ハブ/スポーク モデル内の一元的な共有サービス サブスクリプションからサポートされることをお勧めします。 このシナリオでは、CCoE はそのサブスクリプションに対する共同作成者または所有者のアクセス権を持っている可能性があるため、[Cost Management 共同作成者](/azure/role-based-access-control/built-in-roles#cost-management-contributor)の追加のスコープ割り当ては必要ありません。
-  - **CCoE 自動化/コントロール**。 CCoE では一般に、コントロールおよび自動化されたデプロイ スクリプトがクラウド導入チームに提供されます。 CCoE には、これらのアクセラレータがコストに与える影響を理解する責任があります。 これを可視化するため、チームには、それらのアクセラレータを実行しているすべてのリソース グループまたはサブスクリプションに対する [Cost Management 共同作成者](/azure/role-based-access-control/built-in-roles#cost-management-contributor)のアクセス権が必要です。
+  - **共有サービス**。 クラウドのセンター オブ エクセレンスが関与している場合、ベスト プラクティスとして、CCoE によって管理される資産が、ハブ/スポーク モデル内の一元的な共有サービス サブスクリプションからサポートされることをお勧めします。 このシナリオでは、CCoE はそのサブスクリプションに対する共同作成者または所有者のアクセス権を持っている可能性があるため、[Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)の追加のスコープ割り当ては必要ありません。
+  - **CCoE 自動化/コントロール**。 CCoE では一般に、コントロールおよび自動化されたデプロイ スクリプトがクラウド導入チームに提供されます。 CCoE には、これらのアクセラレータがコストに与える影響を理解する責任があります。 これを可視化するため、チームには、それらのアクセラレータを実行しているすべてのリソース グループまたはサブスクリプションに対する [Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)のアクセス権が必要です。
 
 - **クラウド運用チーム**。 運用環境の継続的コストを管理する職務には、運用環境のすべてのサブスクリプションに対する Cost Management 共同作成者のアクセス権が必要です。
 
-  - 一般的に推奨されることとして、運用資産と非運用資産は、運用環境に関連付けられている管理グループ階層のノードによって管理されている別々のサブスクリプションに配置します。 適切に管理された環境では、運用チームのメンバーは運用環境のサブスクリプションに対する所有者または共同作成者のアクセス権を既に持っている可能性があるため、[Cost Management 共同作成者](/azure/role-based-access-control/built-in-roles#cost-management-contributor)ロールは必要ありません。
+  - 一般的に推奨されることとして、運用資産と非運用資産は、運用環境に関連付けられている管理グループ階層のノードによって管理されている別々のサブスクリプションに配置します。 適切に管理された環境では、運用チームのメンバーは運用環境のサブスクリプションに対する所有者または共同作成者のアクセス権を既に持っている可能性があるため、[Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)ロールは必要ありません。
 
 ## <a name="additional-cost-management-resources"></a>コスト管理に関するその他のリソース
 
@@ -119,17 +119,17 @@ Azure Cost Management の利用を開始する方法の詳細については、�
 
 ### <a name="use-azure-cost-management"></a>Azure Cost Management を使用する
 
-- [予算を作成して管理する](/azure/cost-management/tutorial-acm-create-budgets)
-- [コスト データのエクスポート](/azure/cost-management/tutorial-export-acm-data)
-- [推奨に基づくコストの最適化](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [コスト アラートを使用し、使用状況と支出を監視する](/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [予算を作成して管理する](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
+- [コスト データのエクスポート](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
+- [推奨に基づくコストの最適化](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [コスト アラートを使用し、使用状況と支出を監視する](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Azure Cost Management を使用して AWS のコストを管理する
 
-- [AWS のコストと使用状況レポートの統合](/azure/cost-management/aws-integration-set-up-configure)
-- [AWS のコストの管理](/azure/cost-management/aws-integration-manage)
+- [AWS のコストと使用状況レポートの統合](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [AWS のコストの管理](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>アクセス、ロール、スコープを設定する
 
-- [コスト管理のスコープについて](/azure/cost-management/understand-work-scopes)
-- [リソース グループのスコープの設定](/azure/role-based-access-control/quickstart-assign-role-user-portal)
+- [コスト管理のスコープについて](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)
+- [リソース グループのスコープの設定](https://docs.microsoft.com/azure/role-based-access-control/quickstart-assign-role-user-portal)

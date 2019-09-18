@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: d8328560830fe817cb4691632b6c0e38f55d9953
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906403"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024354"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>移行インフラストラクチャをデプロイする
 
@@ -41,9 +41,9 @@ Contoso が Azure への移行を実施するには、その前に Azure イン�
 インフラストラクチャについて始める前に、この記事で説明する Azure の機能に関する背景情報を読みたいかもしれません。
 
 - Azure へのアクセスを購入するには、従量課金制、Enterprise Agreement (EA)、Microsoft リセラーやクラウド ソリューション プロバイダー (CSP) と呼ばれる Microsoft パートナーからのオープン ライセンスなどのいくつかのオプションを使用できます。 [購入オプション](https://azure.microsoft.com/pricing/purchase-options)について学習し、[Azure サブスクリプションの編成](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise)方法をお読みください。
-- Azure の [ID 管理とアクセス管理](https://www.microsoft.com/trustcenter/security/identity)の概要をご覧ください。 特に、[Azure AD およびオンプレミスの Active Directory のクラウドへの拡張](/azure/active-directory/identity-fundamentals)について学習してください。 [ハイブリッド環境での ID とアクセス管理 (IAM)](https://azure.microsoft.com/resources/hybrid-cloud-identity) について役に立つ電子書籍をダウンロードできます。
-- Azure は、ハイブリッド接続のオプションを含む堅牢なネットワーク インフラストラクチャを提供します。 [ネットワークとネットワーク アクセス制御](/azure/security/security-network-overview)の概要についてはこちらをご覧ください。
-- [Azure セキュリティ](/azure/security/azure-security)の概要を理解し、[ガバナンス](/azure/security/governance-in-azure)計画の作成についてお読みください。
+- Azure の [ID 管理とアクセス管理](https://www.microsoft.com/trustcenter/security/identity)の概要をご覧ください。 特に、[Azure AD およびオンプレミスの Active Directory のクラウドへの拡張](https://docs.microsoft.com/azure/active-directory/identity-fundamentals)について学習してください。 [ハイブリッド環境での ID とアクセス管理 (IAM)](https://azure.microsoft.com/resources/hybrid-cloud-identity) について役に立つ電子書籍をダウンロードできます。
+- Azure は、ハイブリッド接続のオプションを含む堅牢なネットワーク インフラストラクチャを提供します。 [ネットワークとネットワーク アクセス制御](https://docs.microsoft.com/azure/security/security-network-overview)の概要についてはこちらをご覧ください。
+- [Azure セキュリティ](https://docs.microsoft.com/azure/security/azure-security)の概要を理解し、[ガバナンス](https://docs.microsoft.com/azure/security/governance-in-azure)計画の作成についてお読みください。
 
 ## <a name="on-premises-architecture"></a>オンプレミス アーキテクチャ
 
@@ -77,12 +77,12 @@ Contoso は [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/ente
 Azure の料金を支払った後、Contoso は Azure サブスクリプションを管理する方法を決める必要があります。 Contoso は EA を利用しているので、設定できる Azure サブスクリプションの数に制限はありません。
 
 - Azure エンタープライズ加入契約では、企業が Azure サービスを構成して使用する方法、および中心となるガバナンス構造が定義されています。
-- 最初の手順として、Contoso は、エンタープライズ加入契約のためのエンタープライズ スキャフォールディングと呼ばれる構造を定義しました。 Contoso では、スキャフォールディングを理解して設計するために、[こちらの記事](/azure/azure-resource-manager/resource-manager-subscription-governance)を読みました。
+- 最初の手順として、Contoso は、エンタープライズ加入契約のためのエンタープライズ スキャフォールディングと呼ばれる構造を定義しました。 Contoso では、スキャフォールディングを理解して設計するために、[こちらの記事](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance)を読みました。
 - ここでは、Contoso は機能的アプローチを使用してサブスクリプションを管理することを決定しました。
   - 会社内では、Azure の予算を制御する 1 つの IT 部門を使用します。 これがサブスクリプションを持つ唯一のグループになります。
   - Contoso は将来的にこのモデルを拡張し、会社の他のグループもエンタープライズ登録に部門として参加できるようにする意向です。
   - IT 部門内には、製造と開発の 2 つのサブスクリプションが構成されています。
-  - 将来、サブスクリプションを追加する必要がある場合は、それらのサブスクリプションのアクセス、ポリシー、コンプライアンスを管理する必要があります。 Contoso では、サブスクリプションの上に追加の階層として [Azure 管理グループ](/azure/azure-resource-manager/management-groups-overview)を導入することで、この管理作業を行うことができます。
+  - 将来、サブスクリプションを追加する必要がある場合は、それらのサブスクリプションのアクセス、ポリシー、コンプライアンスを管理する必要があります。 Contoso では、サブスクリプションの上に追加の階層として [Azure 管理グループ](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)を導入することで、この管理作業を行うことができます。
 
   ![エンタープライズの構造](./media/contoso-migration-infrastructure/enterprise-structure.png)
 
@@ -116,7 +116,7 @@ ID およびアクセス管理 (IAM) によってユーザーが Azure リソー
 - これを行うために、Azure ベースの Active Directory を作成します。
 - Contoso は Office 365 を利用していないので、新しい Azure AD をプロビジョニングする必要があります。
 - Office 365 では、ユーザー管理用に Azure AD が使われています。 Contoso が Office 365 を使用していたとすれば、既に Azure AD テナントが存在するため、それをプライマリ ディレクトリとして使用できます。
-- Office 365 の Azure AD に関して[詳しくはこちらをご覧ください](https://support.office.com/article/understanding-office-365-identity-and-azure-active-directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9)。また、既存の Azure AD テナントに[サブスクリプションを追加する方法](/azure/active-directory/active-directory-how-subscriptions-associated-directory)を学習してください。
+- Office 365 の Azure AD に関して[詳しくはこちらをご覧ください](https://support.office.com/article/understanding-office-365-identity-and-azure-active-directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9)。また、既存の Azure AD テナントに[サブスクリプションを追加する方法](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory)を学習してください。
 
 ### <a name="create-an-azure-ad"></a>Azure AD を作成する
 
@@ -196,9 +196,9 @@ Contoso の管理者は、次の表に示すように Azure リソース グル�
 Contoso は、オンプレミスとクラウドのリソースへのアクセスに共通の ID を提供することを望んでいます。 そのためには、Contoso はオンプレミスの Active Directory と Azure AD を統合します。 このモデルでは次のようになります。
 
 - ユーザーと組織は、単一の ID を利用して、オンプレミスのアプリケーションと、Office 365 などのクラウド サービスまたは何千ものインターネット上の他のサイトにアクセスできます。
-- 管理者は、Active Directory 内のグループを使用して、Azure で[ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/role-assignments-portal) を実装できます。
+- 管理者は、Active Directory 内のグループを使用して、Azure で[ロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) を実装できます。
 
-統合を容易にするため、Contoso は [Azure AD Connect ツール](/azure/active-directory/connect/active-directory-aadconnect)を使います。 ドメイン コントローラーにツールをインストールして構成すると、そのツールは、ローカルなオンプレミスの Active Directory ID を Azure AD に同期します。
+統合を容易にするため、Contoso は [Azure AD Connect ツール](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)を使います。 ドメイン コントローラーにツールをインストールして構成すると、そのツールは、ローカルなオンプレミスの Active Directory ID を Azure AD に同期します。
 
 ### <a name="download-the-tool"></a>ツールをダウンロードする
 
@@ -222,7 +222,7 @@ Contoso は、オンプレミスとクラウドのリソースへのアクセス
 
 以下の点に注意してください。
 
-- Contoso は Azure に直接接続します。 オンプレミスの Active Directory がプロキシの背後に存在する場合は、この[記事](/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity)を読んでください。
+- Contoso は Azure に直接接続します。 オンプレミスの Active Directory がプロキシの背後に存在する場合は、この[記事](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity)を読んでください。
 
 - 最初の同期の後、オンプレミスの Active Directory オブジェクトは Azure AD ディレクトリ内に表示されます。
 
@@ -234,7 +234,7 @@ Contoso は、オンプレミスとクラウドのリソースへのアクセス
 
 ### <a name="set-up-rbac"></a>RBAC を設定する
 
-Azure の[ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/role-assignments-portal) では、Azure のきめ細かなアクセス管理が可能になります。 RBAC を使用すると、タスクの実行に必要な範囲のアクセス権だけをユーザーに付与することができます。 適切な RBAC ロールをユーザー、グループ、およびアプリケーションにスコープ レベルで割り当てます。 ロール割り当てのスコープには、サブスクリプション、リソース グループ、または単独のリソースを指定できます。
+Azure の[ロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) では、Azure のきめ細かなアクセス管理が可能になります。 RBAC を使用すると、タスクの実行に必要な範囲のアクセス権だけをユーザーに付与することができます。 適切な RBAC ロールをユーザー、グループ、およびアプリケーションにスコープ レベルで割り当てます。 ロール割り当てのスコープには、サブスクリプション、リソース グループ、または単独のリソースを指定できます。
 
 Contoso 管理者はここで、オンプレミスから同期した Active Directory グループにロールを割り当てます。
 
@@ -254,7 +254,7 @@ Azure リソースはリージョン内に展開されます。
 - リージョンは地理的に編成されており、データの保存場所、主権、コンプライアンス、回復性に関する要件は地理的な境界内で遵守されます。
 - リージョンは一連のデータセンターで構成されます。 これらのデータセンターは、待機時間が定義された境界内に展開され、待機時間の短い専用のリージョン ネットワークを介して接続されます。
 - 回復性のため、各 Azure リージョンは異なるリージョンとペアにされます。
-- [Azure リージョン](https://azure.microsoft.com/global-infrastructure/regions)について参照し、[リージョンが組み合わされる方法](/azure/best-practices-availability-paired-regions)を理解してください。
+- [Azure リージョン](https://azure.microsoft.com/global-infrastructure/regions)について参照し、[リージョンが組み合わされる方法](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)を理解してください。
 
 Contoso はプライマリ リージョンとして米国東部 2 (バージニア州) を選択し、セカンダリ リージョンとして米国中部 (アイオワ州) を使うことにしました。 これには、いくつかの理由があります。
 
@@ -276,7 +276,7 @@ Contoso は中間の方法を採用することにしました。 Contoso は、
 - 障害ドメインは、データセンター内の一般的な電源とネットワーク スイッチを持つ基になるハードウェアを表します。 可用性セット内の VM は、1 つのハードウェアまたはネットワーク障害によって発生する停止を最小限に抑えるために、さまざまな障害ドメインにわたって分散されます。
 - 更新ドメインは、同時にメンテナンスを実行したり、再起動したりできる基になるハードウェアを表します。 可用性セットはまた、常に少なくとも 1 つのインスタンスが実行されている状態を確保するために、複数の更新ドメインにわたって VM を分散させます。
 
-Contoso は、VM ワークロードに高可用性が必要な場合は常に可用性セットを実装します。 [詳細情報](/azure/virtual-machines/windows/manage-availability)。
+Contoso は、VM ワークロードに高可用性が必要な場合は常に可用性セットを実装します。 [詳細情報](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability)。
 
 **可用性ゾーン:**
 
@@ -287,7 +287,7 @@ Contoso は、VM ワークロードに高可用性が必要な場合は常に可
 - 有効になっているリージョンにはいずれも、最低 3 つのゾーンが別個に存在しています。
 - ゾーンは 1 つのリージョン内で物理的に分離されているため、データセンターで障害が発生した場合でも、アプリケーションとデータを保護できます。
 
-Contoso は、アプリにスケーラビリティ、高可用性、および回復性が求められる場合に、可用性ゾーンを展開します。 [詳細情報](/azure/availability-zones/az-overview)。
+Contoso は、アプリにスケーラビリティ、高可用性、および回復性が求められる場合に、可用性ゾーンを展開します。 [詳細情報](https://docs.microsoft.com/azure/availability-zones/az-overview)。
 
 ### <a name="set-up-backup"></a>バックアップを設定する
 
@@ -299,9 +299,9 @@ Azure Backup を使用すると、Azure VM ディスクをバックアップお�
 - バックアップはアプリケーション整合性を備えているため、バックアップされたデータにトランザクション整合性があり、かつ復元後にアプリケーションが起動されることが保証されます。
 - Azure Backup はローカル冗長ストレージ (LRS) をサポートしており、ローカル ハードウェアの障害が発生した場合は、データセンター内のバックアップ データの複数のコピーをレプリケートします。
 - リージョン障害が発生した場合、Azure Backup は geo 冗長ストレージ (GRS) もサポートしているため、バックアップ データをセカンダリ ペア リージョンにレプリケートします。
-- Azure Backup は、転送中のデータを AES 256 を使用して暗号化します。 バックアップされた保存データは、[Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) を使用して暗号化されます。
+- Azure Backup は、転送中のデータを AES 256 を使用して暗号化します。 バックアップされた保存データは、[Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) を使用して暗号化されます。
 
-Contoso はすべての運用 VM に Azure Backup を GRS と共に使用することにより、ワークロード データがバックアップされ、障害またはその他の中断が発生した場合はすばやく復元されるようにします。 [詳細情報](/azure/backup/backup-introduction-to-azure-backup)。
+Contoso はすべての運用 VM に Azure Backup を GRS と共に使用することにより、ワークロード データがバックアップされ、障害またはその他の中断が発生した場合はすばやく復元されるようにします。 [詳細情報](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)。
 
 ### <a name="set-up-disaster-recovery"></a>ディザスター リカバリーを設定する
 
@@ -313,7 +313,7 @@ Azure Site Recovery は、リージョン障害中でもビジネス アプリ�
 - プライマリ リージョンに障害が発生した場合、アプリケーションまたはサービスはセカンダリ リージョンでレプリケートされた VM インスタンスの使用にフェールオーバーするため、潜在的な中断が最小限に抑えられます。
 - 通常の運用に戻ったら、アプリケーションまたはサービスはプライマリ リージョン内の VM にフェールバックできます。
 
-Contoso は、ミッション クリティカルなワークロードで使用されるすべての運用 VM に Azure Site Recovery を実装することにより、プライマリ リージョン内の障害時の中断が最小限に抑えられるようにします。 [詳細情報](/azure/site-recovery/site-recovery-overview)
+Contoso は、ミッション クリティカルなワークロードで使用されるすべての運用 VM に Azure Site Recovery を実装することにより、プライマリ リージョン内の障害時の中断が最小限に抑えられるようにします。 [詳細情報](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
 
 ## <a name="step-4-design-a-network-infrastructure"></a>手順 4:ネットワーク インフラストラクチャを設計する
 
@@ -325,7 +325,7 @@ Contoso は、ミッション クリティカルなワークロードで使用�
 
 ### <a name="plan-hybrid-network-connectivity"></a>ハイブリッド ネットワーク接続を計画する
 
-Contoso は、Azure とオンプレミスのデータセンターの間のハイブリッド ネットワークに関して、[複数のアーキテクチャ](/azure/architecture/reference-architectures/hybrid-networking)を検討しました。 オプションの比較に関しては、[詳しい記事](/azure/architecture/reference-architectures/hybrid-networking/considerations)をご覧ください。
+Contoso は、Azure とオンプレミスのデータセンターの間のハイブリッド ネットワークに関して、[複数のアーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking)を検討しました。 オプションの比較に関しては、[詳しい記事](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations)をご覧ください。
 
 なお、Contoso のオンプレミス ネットワークのインフラストラクチャは、現在、ニューヨークのデータセンターと、米国東部の複数のローカル支局で構成されています。 すべての場所には、インターネットへのビジネス クラスの接続があります。 各ブランチは、インターネット経由の IPSec VPN トンネルを介して、データセンターに接続されています。
 
@@ -336,8 +336,8 @@ Contoso が決定したハイブリッド接続の実装方法は次のとおり
 1. ニューヨークにある Contoso のデータセンターと、米国東部 2 および米国中部の 2 つの Azure リージョンの間に、新しいサイト間 VPN 接続を設定します。
 2. Azure 仮想ネットワーク宛のブランチ オフィスのトラフィックは、Contoso のメイン データセンターを介してルーティングされます。
 3. Azure の展開をスケールアップするときは、データセンターと Azure リージョンの間に ExpressRoute 接続を確立します。 その際、Contoso は、VPN のサイト間接続をフェールオーバーのためだけに保持します。
-    - VPN と ExpressRoute ハイブリッド ソリューションの選択に関して[詳しくはこちらをご覧ください](/azure/architecture/reference-architectures/hybrid-networking/considerations)。
-    - [ExpressRoute の場所とサポート](/azure/expressroute/expressroute-locations-providers)を確認してください。
+    - VPN と ExpressRoute ハイブリッド ソリューションの選択に関して[詳しくはこちらをご覧ください](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations)。
+    - [ExpressRoute の場所とサポート](https://docs.microsoft.com/azure/expressroute/expressroute-locations-providers)を確認してください。
 
 **VPN のみ:**
 
@@ -349,7 +349,7 @@ Contoso が決定したハイブリッド接続の実装方法は次のとおり
 
 ### <a name="design-the-azure-network-infrastructure"></a>Azure のネットワーク インフラストラクチャを設計する
 
-ハイブリッド展開が安全性と拡張性を備えるような方法でネットワークを配置することが重要です。 そのため、Contoso は長期的なアプローチを採用し、仮想ネットワーク (Vnet) が回復性を持ちエンタープライズに対応するように設計しています。 Vnet の計画に関して[詳しくはこちらをご覧ください](/azure/virtual-network/virtual-network-vnet-plan-design-arm)。
+ハイブリッド展開が安全性と拡張性を備えるような方法でネットワークを配置することが重要です。 そのため、Contoso は長期的なアプローチを採用し、仮想ネットワーク (Vnet) が回復性を持ちエンタープライズに対応するように設計しています。 Vnet の計画に関して[詳しくはこちらをご覧ください](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm)。
 
 2 つのリージョンを接続するため、Contoso はハブ間ネットワーク モデルを実装することにしました。
 
@@ -364,7 +364,7 @@ Azure では、VNet とハブを接続するためにネットワーク ピア�
 - VNet 間のトラフィックは、Microsoft のバックボーン ネットワーク上で保持されます。 VNet 間の通信では、パブリック インターネット、ゲートウェイ、暗号化が必要ありません。
 - ピアリングでは、異なる VNet 内のリソースの間に、待機時間が短く、広帯域幅の接続が既定で提供されます。
 
-ネットワーク ピアリングに関して[詳しくはこちらをご覧ください](/azure/virtual-network/virtual-network-peering-overview)。
+ネットワーク ピアリングに関して[詳しくはこちらをご覧ください](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。
 
 #### <a name="hub-to-hub-across-regions"></a>異なるリージョンのハブとハブ
 
@@ -404,7 +404,7 @@ Contoso は、選択したハブ アンド スポーク モデルの内部にお
 - Contoso は、クラス A のプライベート ネットワークを Azure に実装します (0.0.0.0 から 127.255.255.255)。 現在はオンプレミスでクラス B のプライベート アドレス空間 172.160.0/16 を使用していて、Contoso ではアドレス範囲の間にオーバーラップがないため、これが動作します。
 - Contoso は、プライマリ リージョンとセカンダリ リージョンに VNet を展開します。
 - Contoso はプレフィックス **VNET** とリージョンの省略形 **EUS2** または **CUS** を含む名前付け規則を使用します。 この標準を使用すると、ハブ ネットワークの名前は **VNET-HUB-EUS2** (米国東部 2) および **VNET-HUB-CUS** (米国中部) になります。
-- Contoso は [IPAM ソリューション](/windows-server/networking/technologies/ipam/ipam-top)を使用していないので、NAT なしでネットワーク ルーティングを計画する必要があります。
+- Contoso は [IPAM ソリューション](https://docs.microsoft.com/windows-server/networking/technologies/ipam/ipam-top)を使用していないので、NAT なしでネットワーク ルーティングを計画する必要があります。
 
 #### <a name="virtual-networks-in-east-us-2"></a>米国東部 2 での仮想ネットワーク
 
@@ -554,7 +554,7 @@ VNET-PROD-EUS2 ネットワーク内のドメイン コントローラーでは�
 
 ### <a name="set-up-dns"></a>DNS を設定する
 
-仮想ネットワークにリソースを展開するときは、ドメイン名の解決に 2 つの選択肢があります。 Azure によって提供される名前解決を使うことも、解決用に DNS サーバーを提供することもできます。 どちらの名前解決方法を使用するかは、リソースが互いに通信するために必要な方法によって決まります。 Azure DNS サービスについての[詳細をご覧ください](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution)。
+仮想ネットワークにリソースを展開するときは、ドメイン名の解決に 2 つの選択肢があります。 Azure によって提供される名前解決を使うことも、解決用に DNS サーバーを提供することもできます。 どちらの名前解決方法を使用するかは、リソースが互いに通信するために必要な方法によって決まります。 Azure DNS サービスについての[詳細をご覧ください](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution)。
 
 Contoso の管理者は、Azure DNS サービスはハイブリッド環境に適した選択ではないと判断しました。 代わりに、オンプレミスの DNS サーバーを使用します。
 
@@ -584,7 +584,7 @@ CUS | CONTOSODC6 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4
 2. VM 用の可用性セットを各場所に作成します。 可用性セットは次のことを行います。
 
     - Azure ファブリックが Azure リージョン内の異なるインフラストラクチャに VM を分離することを保証します。
-    - Contoso が Azure の VM で 99.95% SLA の対象になるようにします。 [詳細情報](/azure/virtual-machines/windows/tutorial-availability-sets)。
+    - Contoso が Azure の VM で 99.95% SLA の対象になるようにします。 [詳細情報](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets)。
 
     ![可用性グループ](./media/contoso-migration-infrastructure/availability-group.png)
 
@@ -638,7 +638,7 @@ Active Directory はネットワークで重要なサービスであり、正し
 
 ## <a name="step-5-plan-for-governance"></a>手順 5:ガバナンスを計画する
 
-Azure は、サービスと Azure プラットフォームに対してさまざまなガバナンス コントロールを提供します。 基本的なオプションの[詳細をご覧ください](/azure/security/governance-in-azure)。
+Azure は、サービスと Azure プラットフォームに対してさまざまなガバナンス コントロールを提供します。 基本的なオプションの[詳細をご覧ください](https://docs.microsoft.com/azure/security/governance-in-azure)。
 
 Contoso は ID とアクセスの制御を構成しているので、ガバナンスとセキュリティの一部の面は既に導入しています。 大まかに言うと、考慮する必要がある 3 つの領域があります。
 
@@ -650,7 +650,7 @@ Contoso は ID とアクセスの制御を構成しているので、ガバナ�
 
 Azure Policy サービスは、リソースを評価して、適用されているポリシー定義に準拠していないリソースをスキャンします。 たとえば、特定の種類の VM だけを許可するポリシーや、リソースが特定のタグを持つポリシーが設定されていることがあります。
 
-ポリシーはポリシー定義を指定し、ポリシー割り当てはポリシーが適用される範囲を指定します。 範囲は、管理グループからリソース グループまでです。 ポリシーの作成と管理の[詳細をご覧ください](/azure/governance/policy/tutorials/create-and-manage)。
+ポリシーはポリシー定義を指定し、ポリシー割り当てはポリシーが適用される範囲を指定します。 範囲は、管理グループからリソース グループまでです。 ポリシーの作成と管理の[詳細をご覧ください](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)。
 
 Contoso は、いくつかのポリシーを開始する予定です。
 
@@ -696,7 +696,7 @@ Contoso は、次のようにロックを実装しようとしています。
 - すべての運用コンポーネントまたはフェールオーバー コンポーネントは、ReadOnly ロックを保持するリソース グループに含まれている必要があります。 つまり、運用項目を変更または削除するには、ロックを削除する必要があります。
 - 非運用リソース グループは、CanNotDelete ロックを保持します。 つまり、許可されたユーザーはリソースの読み取りまたは変更をできますが、削除することはできません。
 
-ロックに関して[詳しくはこちらをご覧ください](/azure/azure-resource-manager/resource-group-lock-resources)。
+ロックに関して[詳しくはこちらをご覧ください](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources)。
 
 ### <a name="set-up-tagging"></a>タグ付けの設定
 
@@ -728,9 +728,9 @@ ENV | 指定できる値は DEV、STG、PROD です。 開発、ステージン�
 
 Contoso はいくつかの主要な側面を考慮する必要があります。
 
-- **Azure Security Center:** Azure Security Center は、ハイブリッド クラウド ワークロード全体で統合されたセキュリティ管理と高度な脅威保護を実現します。 Security Center を使用して、ワークロード全体へのセキュリティ ポリシーの適用、脅威にさらされる状態の軽減、攻撃の検出とその対応を行うことができます。 [詳細情報](/azure/security-center/security-center-intro)。
-- **ネットワーク セキュリティ グループ (NSG):** NSG は、一連のセキュリティ規則が含まれているフィルター (ファイアウォール) です。規則が適用されると、Azure VNet に接続されたリソースへのネットワーク トラフィックが許可または拒否されます。 [詳細情報](/azure/virtual-network/security-overview)。
-- **データ暗号化:** Azure Disk Encryption は、Windows と Linux の IaaS 仮想マシン ディスクを暗号化するのに役立つ機能です。 [詳細情報](/azure/security/azure-security-encryption-atrest)。
+- **Azure Security Center:** Azure Security Center は、ハイブリッド クラウド ワークロード全体で統合されたセキュリティ管理と高度な脅威保護を実現します。 Security Center を使用して、ワークロード全体へのセキュリティ ポリシーの適用、脅威にさらされる状態の軽減、攻撃の検出とその対応を行うことができます。 [詳細情報](https://docs.microsoft.com/azure/security-center/security-center-intro)。
+- **ネットワーク セキュリティ グループ (NSG):** NSG は、一連のセキュリティ規則が含まれているフィルター (ファイアウォール) です。規則が適用されると、Azure VNet に接続されたリソースへのネットワーク トラフィックが許可または拒否されます。 [詳細情報](https://docs.microsoft.com/azure/virtual-network/security-overview)。
+- **データ暗号化:** Azure Disk Encryption は、Windows と Linux の IaaS 仮想マシン ディスクを暗号化するのに役立つ機能です。 [詳細情報](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest)。
 
 ### <a name="work-with-the-azure-security-center"></a>Azure Security Center を使用する
 

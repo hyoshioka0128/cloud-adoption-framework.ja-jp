@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836629"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022640"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>クラウド資産をベンチマークおよびサイズ変更する
 
@@ -36,7 +36,7 @@ ms.locfileid: "70836629"
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Azure Cost Management でのベンチマークおよび最適化
 
-Microsoft の子会社である Cloudyn によってライセンスされる [Azure Cost Management](/azure/cost-management/overview) は、透明性と正確性をもってクラウド支出を管理します。 このサービスは、クラウド コストの監視、ベンチマーク、割り当て、および最適化を行います。
+Microsoft の子会社である Cloudyn によってライセンスされる [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview) は、透明性と正確性をもってクラウド支出を管理します。 このサービスは、クラウド コストの監視、ベンチマーク、割り当て、および最適化を行います。
 
 履歴データは、一定期間にわたる使用状況とコストを分析して傾向を識別することにより、コストの管理に役立ちます。これらの傾向は後で、将来の消費を予測するために使用されます。 Cost Management には、便利な予想コスト レポートも含まれます。 コスト割り当ては、タグ付けポリシーに基づいてコストを分析することによってコストを管理します。 ショーバック/チャージバックにコスト割り当てを使用してリソース使用率および関連付けられたコストを示すことにより、消費行動に影響を与えたり、またはテナントの顧客に課金したりします。 アクセス制御は、ユーザーやチームが必要な Cost Management データにのみアクセスできるようにすることにより、コストの管理に役立ちます。 アラートは、異常な消費や過剰な消費が発生した場合の自動通知を通してコストの管理に役立ちます。 また、異常な支出や浪費のリスクについて、他の関係者に自動的に通知することもできます。 さまざまなレポートは、予算とコストしきい値に基づくアラートをサポートします。
 

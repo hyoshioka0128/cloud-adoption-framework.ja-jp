@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6b9d2e5f4b230358985d04aca075cb89e8214422
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 22dc2f69f1b7e1541a9556fc8b8802cbb2d5e878
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837997"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024468"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Azure コンテナーと Azure SQL Database でオンプレミス アプリを再構築する
 
@@ -61,7 +61,7 @@ Contoso は目標と要件を決定した後、デプロイ ソリューショ�
 
 ### <a name="proposed-architecture"></a>提案されたアーキテクチャ
 
-- このアプリのデータベース層について、Contoso は[こちらの記事](/azure/sql-database/sql-database-features)を使用して Azure SQL Database と SQL Server を比較しました。 そして、いくつかの理由で Azure SQL Database を使用することにしました。
+- このアプリのデータベース層について、Contoso は[こちらの記事](https://docs.microsoft.com/azure/sql-database/sql-database-features)を使用して Azure SQL Database と SQL Server を比較しました。 そして、いくつかの理由で Azure SQL Database を使用することにしました。
   - Azure SQL Database は、リレーショナル データベース マネージド サービスです。 複数のサービス レベルで予測可能なパフォーマンスを実現します。管理作業はほぼゼロです。 利点としては、ダウンタイムのない動的スケーラビリティ、組み込みのインテリジェントな最適化、グローバルなスケーラビリティと可用性などがあります。
   - Contoso は、軽量な Data Migration Assistant (DMA) を使用して、オンプレミス データベースを評価し、Azure SQL に移行することができます。
   - Contoso はソフトウェア アシュアランスに基づき、SQL Database では SQL Server 用の Azure ハイブリッド特典を利用して、既存のライセンスを割引料金のライセンスに交換することができます。 この方法なら最大 30% の節約が可能です。
@@ -103,7 +103,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | インテリジェントなフル マネージド リレーショナル クラウド データベース サービスを提供します。 | 機能、スループット、サイズに基づくコスト。 [詳細情報](https://azure.microsoft.com/pricing/details/sql-database/managed)。
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細情報](https://azure.microsoft.com/pricing/details/container-registry)。
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | 常時接続可能でスケーラブルな分散アプリを構築し、運用します | コンピューティング ノードのサイズ、場所、期間に基づくコスト。 [詳細情報](https://azure.microsoft.com/pricing/details/service-fabric)。
-[Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | 継続的インテグレーションと継続的デプロイ (CI/CD) パイプラインをアプリの開発に提供します。 パイプラインは、アプリ コードを管理する Git リポジトリで始まり、パッケージおよびその他のビルド成果物を生成するためのビルド システム、開発、テスト、および運用環境での変更を配置するリリース管理システムへと続きます。
+[Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | 継続的インテグレーションと継続的デプロイ (CI/CD) パイプラインをアプリの開発に提供します。 パイプラインは、アプリ コードを管理する Git リポジトリで始まり、パッケージおよびその他のビルド成果物を生成するためのビルド システム、開発、テスト、および運用環境での変更を配置するリリース管理システムへと続きます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -114,8 +114,8 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 **要件** | **詳細**
 --- | ---
 **Azure サブスクリプション** | Contoso は、この記事シリーズの前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
-**Azure インフラストラクチャ** | [Contoso で以前に Azure インフラストラクチャを設定した方法](contoso-migration-infrastructure.md)を確認してください。
-**開発者の前提条件** | Contoso は、開発者用ワークステーションに次のツールをインストールする必要があります。<br/><br/> - [Visual Studio 2017 Community エディション: バージョン 15.5](https://www.visualstudio.com)<br/><br/> - .NET ワークロードが有効。<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric SDK v 3.0 以降](/azure/service-fabric/service-fabric-get-started)<br/><br/> - [Windows コンテナーを使用するように設定された Docker CE (Windows 10) または Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。
+**Azure インフラストラクチャ** | [Contoso で以前に Azure インフラストラクチャを設定した方法](./contoso-migration-infrastructure.md)を確認してください。
+**開発者の前提条件** | Contoso は、開発者用ワークステーションに次のツールをインストールする必要があります。<br/><br/> - [Visual Studio 2017 Community エディション: バージョン 15.5](https://www.visualstudio.com)<br/><br/> - .NET ワークロードが有効。<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric SDK v 3.0 以降](https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started)<br/><br/> - [Windows コンテナーを使用するように設定された Docker CE (Windows 10) または Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -166,8 +166,8 @@ Contoso 管理者は、Azure SQL データベースをプロビジョニング�
 
 **さらにサポートが必要な場合**
 
-- SQL Database のプロビジョニングの[手順を参照](/azure/sql-database/sql-database-get-started-portal)します。
-- 仮想コア リソースの制限の詳細については[こちら](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)を参照してください。
+- SQL Database のプロビジョニングの[手順を参照](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)します。
+- 仮想コア リソースの制限の詳細については[こちら](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)を参照してください。
 
 ## <a name="step-2-create-an-acr-and-provision-an-azure-container"></a>手順 2:ACR を作成し、Azure コンテナーをプロビジョニングする
 
@@ -298,7 +298,7 @@ Contoso 管理者は、Azure SQL Database に接続するために、アクセ�
 
 **さらにサポートが必要な場合**
 
-Azure SQL Database のファイアウォール ルールの作成と管理の詳細については、[こちら](/azure/sql-database/sql-database-firewall-configure)を参照してください。
+Azure SQL Database のファイアウォール ルールの作成と管理の詳細については、[こちら](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure)を参照してください。
 
 ### <a name="migrate"></a>移行
 
@@ -582,23 +582,23 @@ Cosmos DB がプロビジョニングされたら、Contoso 管理者はそれ�
 
 ### <a name="security"></a>セキュリティ
 
-- Contoso 管理者は新しい **SmartHotel-Registration** データベースがセキュリティで保護されていることを確認する必要があります。 [詳細情報](/azure/sql-database/sql-database-security-overview)。
+- Contoso 管理者は新しい **SmartHotel-Registration** データベースがセキュリティで保護されていることを確認する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - 特に、証明書で SSL を使用するようにコンテナーを更新する必要があります。
-- Key Vault を使用して、Service Fabric アプリのシークレットを保護することを検討する必要があります。 [詳細情報](/azure/service-fabric/service-fabric-application-secret-management)。
+- Key Vault を使用して、Service Fabric アプリのシークレットを保護することを検討する必要があります。 [詳細情報](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
 
 ### <a name="backups"></a>バックアップ
 
-- Contoso は、Azure SQL Database のバックアップ要件を確認する必要があります。 [詳細情報](/azure/sql-database/sql-database-automated-backups)。
-- Contoso 管理者は、データベースのリージョンのフェールオーバーを用意するようにフェールオーバー グループを実装することを検討する必要があります。 [詳細情報](/azure/sql-database/sql-database-geo-replication-overview)。
-- ACR Premium SKU の geo レプリケーションを利用できます。 [詳細情報](/azure/container-registry/container-registry-geo-replication)。
+- Contoso は、Azure SQL Database のバックアップ要件を確認する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
+- Contoso 管理者は、データベースのリージョンのフェールオーバーを用意するようにフェールオーバー グループを実装することを検討する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- ACR Premium SKU の geo レプリケーションを利用できます。 [詳細情報](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
 - Contoso は、Web App for Containers がリリースされた時点で、メインの米国東部 2 リージョンと米国中部リージョンに Web アプリをデプロイすることを検討する必要があります。 Contoso 管理者は、リージョンの障害が発生した場合に確実にフェールオーバーするように Traffic Manager を構成できます。
-- Cosmos DB は自動的にバックアップされます。 Contoso は、このプロセスの詳細情報を[こちらで確認](/azure/cosmos-db/online-backup-and-restore)します。
+- Cosmos DB は自動的にバックアップされます。 Contoso は、このプロセスの詳細情報を[こちらで確認](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)します。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
-- すべてのリソースをデプロイした後、Contoso は[インフラストラクチャ計画](contoso-migration-infrastructure.md#set-up-tagging)に基づいて Azure タグを割り当てる必要があります。
+- すべてのリソースをデプロイした後、Contoso は[インフラストラクチャ計画](./contoso-migration-infrastructure.md#set-up-tagging)に基づいて Azure タグを割り当てる必要があります。
 - すべてのライセンスは、Contoso が使用している PaaS サービスのコストに組み込まれています。 これは EA から差し引かれます。
-- Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](/azure/cost-management/overview)を参照してください。
+- Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](https://docs.microsoft.com/azure/cost-management/overview)を参照してください。
 
 ## <a name="conclusion"></a>まとめ
 

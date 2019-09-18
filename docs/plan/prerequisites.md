@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837609"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022319"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>効果的なクラウド導入計画の前提条件のチェックリスト
 
@@ -21,7 +21,7 @@ ms.locfileid: "70837609"
 
 ## <a name="strategic-inputs"></a>戦略的入力
 
-戦略的入力が正確であれば、実行される作業は確実にビジネスの成果実現に寄与します。 [クラウド導入フレームワークの戦略セクション](../business-strategy/index.md)では、明確な戦略を開発するための一連の演習が提供されます。 これらの演習の出力が、クラウド導入計画に投入されます。 計画を立てる前に、これらの演習の結果として以下のものが適切に定義されていることを確認します。
+戦略的入力が正確であれば、実行される作業は確実にビジネスの成果実現に寄与します。 [クラウド導入フレームワークの戦略セクション](../strategy/index.md)では、明確な戦略を開発するための一連の演習が提供されます。 これらの演習の出力が、クラウド導入計画に投入されます。 計画を立てる前に、これらの演習の結果として以下のものが適切に定義されていることを確認します。
 
 - **明確な動機**: クラウドを導入する理由
 - **定義されたビジネス成果**: クラウドの導入によって見られることが期待される結果

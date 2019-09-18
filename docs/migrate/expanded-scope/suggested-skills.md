@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30f50a6f4d965834de1de354b3149c559f071f72
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839109"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024717"
 ---
 # <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>移行の行程の「移行」フェーズ中のスキル準備パス
 
@@ -23,16 +23,16 @@ ms.locfileid: "70839109"
 
 ## <a name="prerequisites-skilling-resources"></a>前提条件のスキル リソース
 
-「移行」プロセスの実装は、移行の行程の「[計画](../../business-strategy/suggested-skills.md)」と「[準備](../../organization/suggested-skills.md)」のフェーズ中に習得したスキルに基づいて構築されます。
+「移行」プロセスの実装は、移行の行程の「[計画](../../strategy/suggested-skills.md)」と「[準備](../../organize/suggested-skills.md)」のフェーズ中に習得したスキルに基づいて構築されます。
 
 ## <a name="assess-skilling-resources"></a>スキル リソースの評価
 
 次のツールは、評価アクティビティの実行でチームに役立つことがあります。
 
 - [ポートフォリオのバランスを取る](./balance-the-portfolio.md):アプリケーション ポートフォリオ全体での残高および適切な投資配分を確保します。
-- [業務上の正当な理由の構築](../../business-strategy/cloud-migration-business-case.md):クラウド移行作業を推進する業務上の正当な理由を作成し理解します。
+- [業務上の正当な理由の構築](../../strategy/cloud-migration-business-case.md):クラウド移行作業を推進する業務上の正当な理由を作成し理解します。
 - [デジタル資産の合理化](../../digital-estate/rationalize.md):デジタル資産内の資産を合理化します。
-- [アプリケーション ポートフォリオの評価](/learn/modules/app-and-infra-migration-and-modernization):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
+- [アプリケーション ポートフォリオの評価](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
 - [Assessing and Planning Microsoft Azure Migration (Microsoft Azure 移行の評価とプランニング)](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning):オンプレミスのワークロードの評価を支援するための PluralSight コース
 
 評価プロセス中、各ワークロードのソリューションを設計するためにアーキテクトが呼び出されます。 次のスキル リソースでは、これらのタスクのためにアーキテクトを準備できます。
@@ -45,7 +45,7 @@ ms.locfileid: "70839109"
 
 次のチュートリアルでは、移行アクティビティのチームを準備できます。
 
-- [Azure への移行](/azure/site-recovery/migrate-tutorial-on-premises-azure):Azure Site Recovery を使用して VM を Azure に移行します。
+- [Azure への移行](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure):Azure Site Recovery を使用して VM を Azure に移行します。
 - [Rehost workloads to Azure (Azure へのワークロードのリホスト)](https://aka.ms/rehostcourse):ワークロードを Azure にリホストする方法を視聴者に説明する PluralSight コース
 - [Migrating Physical and Virtual Servers to Microsoft Azure (Microsoft Azure への物理サーバーと仮想サーバーの移行)](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents):Azure へのサーバーの移行に関する PluralSight コース
 - [Import and Export Data to Microsoft Azure (Microsoft Azure へのデータのインポートとエクスポート)](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents):Azure との間のデータの移動に関する PluralSight コース

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d4681f372038b5c78d4b0793aac1a2b47e9f2c91
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70835037"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024203"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>オンプレミスの Linux アプリを Azure VM と Azure Database for MySQL にリホストする
 
@@ -79,8 +79,8 @@ Web VM を移行するには:
 
 **サービス** | **説明** | **コスト**
 --- | --- | ---
-[Azure Site Recovery](/azure/site-recovery) | このサービスは、Azure VM、オンプレミス VM、物理サーバーの移行とディザスター リカバリーを調整および管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 フェールオーバーが発生すると、Azure VM が作成されて料金がかかります。 料金と価格について[詳しくはこちら](https://azure.microsoft.com/pricing/details/site-recovery)をご覧ください。
-[Azure Database for MySQL](/azure/mysql) | データベースは、オープン ソースの MySQL Server エンジンに基づいています。 これは、アプリの開発とデプロイに向けたサービスとしての、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースです。
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | このサービスは、Azure VM、オンプレミス VM、物理サーバーの移行とディザスター リカバリーを調整および管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 フェールオーバーが発生すると、Azure VM が作成されて料金がかかります。 料金と価格について[詳しくはこちら](https://azure.microsoft.com/pricing/details/site-recovery)をご覧ください。
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | データベースは、オープン ソースの MySQL Server エンジンに基づいています。 これは、アプリの開発とデプロイに向けたサービスとしての、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースです。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -90,10 +90,10 @@ Web VM を移行するには:
 
 **要件** | **詳細**
 --- | ---
-**Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
-**Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。<br/><br/> Site Recovery 用の[ネットワーク](/azure/site-recovery/vmware-physical-azure-support-matrix#network)と[ストレージ](/azure/site-recovery/vmware-physical-azure-support-matrix#storage)の具体的な要件の詳細を確認してください。
+**Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
+**Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。<br/><br/> Site Recovery 用の[ネットワーク](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network)と[ストレージ](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)の具体的な要件の詳細を確認してください。
 **オンプレミスのサーバー** | オンプレミス vCenter Server は、バージョン 5.5、6.0、または 6.5 を実行している必要があります<br/><br/> バージョン 5.5、6.0、または 6.5 を実行している ESXi ホスト<br/><br/> ESXi ホスト上で実行している 1 つ以上の VMware VM。
-**オンプレミスの VM** | Site Recovery を使用した移行がサポートされる [Linux VM の要件を確認](/azure/site-recovery/vmware-physical-azure-support-matrix#replicated-machines)します。<br/><br/> サポートされる [Linux のファイル システムとストレージ システム](/azure/site-recovery/vmware-physical-azure-support-matrix#linux-file-systemsguest-storage)を確認します。<br/><br/> VM は [Azure の要件](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)を満たす必要があります。
+**オンプレミスの VM** | Site Recovery を使用した移行がサポートされる [Linux VM の要件を確認](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#replicated-machines)します。<br/><br/> サポートされる [Linux のファイル システムとストレージ システム](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#linux-file-systemsguest-storage)を確認します。<br/><br/> VM は [Azure の要件](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)を満たす必要があります。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -114,7 +114,7 @@ Contoso 管理者は、次のようにして移行を完了します。
 
 Site Recovery のために、Contoso には数個の Azure コンポーネントが必要です。
 
-- フェールオーバーされるリソースが配置された VNet。 Contoso は、[Azure インフラストラクチャのデプロイ](contoso-migration-infrastructure.md)時に既に VNet を作成しています。
+- フェールオーバーされるリソースが配置された VNet。 Contoso は、[Azure インフラストラクチャのデプロイ](./contoso-migration-infrastructure.md)時に既に VNet を作成しています。
 - レプリケートされたデータを保持する Azure の新しいストレージ アカウント。
 - Azure 内の Recovery Services コンテナー。
 
@@ -133,7 +133,7 @@ Contoso 管理者は、次のようにストレージ アカウントとコン�
 
 **さらにサポートが必要な場合**
 
-Site Recovery のために Azure を設定することについての[説明を参照します](/azure/site-recovery/tutorial-prepare-azure)。
+Site Recovery のために Azure を設定することについての[説明を参照します](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure)。
 
 ## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>手順 2: Site Recovery のためにオンプレミスの VMware を準備する
 
@@ -174,8 +174,8 @@ Contoso は、Azure へのフェールオーバー後に、Azure VM に接続で
 
 **さらにサポートが必要な場合**
 
-- 自動検出のためにロールを作成して割り当てることについての[説明を参照します](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)。
-- モビリティ サービスのプッシュ インストールのためにアカウントを作成することについての[説明を参照します](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation)。
+- 自動検出のためにロールを作成して割り当てることについての[説明を参照します](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)。
+- モビリティ サービスのプッシュ インストールのためにアカウントを作成することについての[説明を参照します](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation)。
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>手順 3:Azure Database for MySQL をプロビジョニングする
 
@@ -287,9 +287,9 @@ Contoso 管理者は次の手順でこれを実行します。
 
 **さらにサポートが必要な場合**
 
-- これらすべてのステップの詳細な手順については、[オンプレミス VMware VM のディザスター リカバリーの設定に関する記事](/azure/site-recovery/vmware-azure-tutorial)を参照してください。
-- [ソース環境の設定](/azure/site-recovery/vmware-azure-set-up-source)、[構成サーバーのデプロイ](/azure/site-recovery/vmware-azure-deploy-configuration-server)、および[レプリケーション設定の構成](/azure/site-recovery/vmware-azure-set-up-replication)に役立つ詳細な手順が記載されています。
-- Linux 用の Azure ゲスト エージェントの詳細については、[こちら](/azure/virtual-machines/extensions/agent-linux)を参照してください。
+- これらすべてのステップの詳細な手順については、[オンプレミス VMware VM のディザスター リカバリーの設定に関する記事](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial)を参照してください。
+- [ソース環境の設定](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source)、[構成サーバーのデプロイ](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server)、および[レプリケーション設定の構成](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication)に役立つ詳細な手順が記載されています。
+- Linux 用の Azure ゲスト エージェントの詳細については、[こちら](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux)を参照してください。
 
 ### <a name="enable-replication-for-the-web-vm"></a>Web VM のレプリケーションを有効にする
 
@@ -317,7 +317,7 @@ Contoso 管理者は次の手順でこれを実行します。
 
 **さらにサポートが必要な場合**
 
-これらのすべてのステップの詳細な手順は、「[レプリケーションを有効にする](/azure/site-recovery/vmware-azure-enable-replication)」で確認できます。
+これらのすべてのステップの詳細な手順は、「[レプリケーションを有効にする](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication)」で確認できます。
 
 ## <a name="step-5-migrate-the-database"></a>手順 5:データベースを移行する
 
@@ -388,9 +388,9 @@ VM を移行するために、Contoso 管理者は VM を含む復旧計画を�
 
 **さらにサポートが必要な場合**
 
-- テスト フェールオーバーの実行に関する[説明を参照します](/azure/site-recovery/tutorial-dr-drill-azure)。
-- 復旧計画の作成方法に関する[説明を参照します](/azure/site-recovery/site-recovery-create-recovery-plans)。
-- Azure へのフェールオーバーに関する[説明を参照します](/azure/site-recovery/site-recovery-failover)。
+- テスト フェールオーバーの実行に関する[説明を参照します](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure)。
+- 復旧計画の作成方法に関する[説明を参照します](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans)。
+- Azure へのフェールオーバーに関する[説明を参照します](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)。
 
 ### <a name="connect-the-vm-to-the-database"></a>VM をデータベースに接続する
 
@@ -446,17 +446,17 @@ Contoso のセキュリティ チームは VM とデータベースを再調査�
 - ディスクの暗号化と Azure Key Vault を使用した、VM ディスク上のデータのセキュリティ保護を検討します。
 - VM とデータベース インスタンス間の通信は、SSL 用に構成されていません。 データベース トラフィックをハッキングできないようにするため、これを行う必要があります。
 
-VM に関するセキュリティの実務の[詳細については、こちら](/azure/security/azure-security-best-practices-vms)を参照してください。
+VM に関するセキュリティの実務の[詳細については、こちら](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms)を参照してください。
 
 ### <a name="bcdr"></a>BCDR
 
 事業継続とディザスター リカバリーのために、Contoso は次のアクションを実施します。
 
-- **データの安全性を確保する。** Contoso は、Azure Backup サービスを使用して、アプリの VM 上のデータをバックアップします。 [詳細情報](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。 データベースのバックアップを構成する必要はありません。 Azure Database for MySQL は、サーバーのバックアップを自動的に作成して保存します。 彼らはデータベースのために geo 冗長性を使用することを選択したため、このデータベースは耐障害性があり、運用準備ができています。
-- **アプリの稼働状態を維持する。** Contoso は、Site Recovery を使用して、Azure 内のアプリの VM をセカンダリ リージョンにレプリケートします。 [詳細情報](/azure/site-recovery/azure-to-azure-quickstart)。
+- **データの安全性を確保する。** Contoso は、Azure Backup サービスを使用して、アプリの VM 上のデータをバックアップします。 [詳細情報](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。 データベースのバックアップを構成する必要はありません。 Azure Database for MySQL は、サーバーのバックアップを自動的に作成して保存します。 彼らはデータベースのために geo 冗長性を使用することを選択したため、このデータベースは耐障害性があり、運用準備ができています。
+- **アプリの稼働状態を維持する。** Contoso は、Site Recovery を使用して、Azure 内のアプリの VM をセカンダリ リージョンにレプリケートします。 [詳細情報](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
-- Contoso は、リソースのデプロイ後、[Azure インフラストラクチャ](contoso-migration-infrastructure.md#set-up-tagging)のデプロイ中に下した決定に従って Azure タグを割り当てます。
+- Contoso は、リソースのデプロイ後、[Azure インフラストラクチャ](./contoso-migration-infrastructure.md#set-up-tagging)のデプロイ中に下した決定に従って Azure タグを割り当てます。
 - Contoso Ubuntu サーバーにライセンスの問題はありません。
-- Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](/azure/cost-management/overview)を参照してください。
+- Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](https://docs.microsoft.com/azure/cost-management/overview)を参照してください。

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 89ce17ad531d1ab3ea3df3072aa93654bbe00696
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b5fd413b1492d1ef885103ee529b4bdfb68f4666
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818610"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025196"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Azure リソースのコストと課金を管理する
 
@@ -67,9 +67,9 @@ Azure のお客様は、課金とサブスクリプションのサポートに�
 
 詳細については、次を参照してください。
 
-- [Azure の課金とコスト管理に関するドキュメント](/azure/billing)
+- [Azure の課金とコスト管理に関するドキュメント](https://docs.microsoft.com/azure/billing)
 - [クラウド導入フレームワーク:事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md)
-- [クラウド導入フレームワーク:コスト管理ガバナンス規範](../../governance/cost-management/index.md)
+- [クラウド導入フレームワーク:コスト管理ガバナンス規範](../../govern/cost-management/index.md)
 
 ::: zone-end
 

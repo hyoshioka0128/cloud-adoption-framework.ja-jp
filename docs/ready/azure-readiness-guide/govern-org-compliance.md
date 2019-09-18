@@ -10,16 +10,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 94ab5fd4907d7c95ca0d1b0ca932aa25eea5be41
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818644"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025256"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Azure でのガバナンス、セキュリティ、コンプライアンス
 
-企業のポリシーを確立し、ガバナンス戦略を策定するときに、Azure Policy、Azure Blueprints、Azure Security Center などのツールとサービスを使用して、組織のガバナンスに関する意思決定を実施したり自動化したりすることができます。 ガバナンスの計画を開始する前に、[ガバナンス ベンチマーク ツール](http://aka.ms/caf/gov/assess)を使用して、組織のクラウド ガバナンスへのアプローチにおけるギャップを識別します。 ガバナンス プロセスを策定する方法の詳細については、[Azure 向けのクラウド導入フレームワークのガバナンスに関するガイダンス](../../governance/index.md)記事を参照してください。
+企業のポリシーを確立し、ガバナンス戦略を策定するときに、Azure Policy、Azure Blueprints、Azure Security Center などのツールとサービスを使用して、組織のガバナンスに関する意思決定を実施したり自動化したりすることができます。 ガバナンスの計画を開始する前に、[ガバナンス ベンチマーク ツール](http://aka.ms/caf/gov/assess)を使用して、組織のクラウド ガバナンスへのアプローチにおけるギャップを識別します。 ガバナンス プロセスを策定する方法の詳細については、[Azure 向けのクラウド導入フレームワークのガバナンスに関するガイダンス](../../govern/index.md)記事を参照してください。
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
@@ -90,9 +90,9 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 
 詳細については、次を参照してください。
 
-- [Azure Blueprint](/azure/governance/blueprints)
+- [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
 - [クラウド導入フレームワーク:リソースの整合性の意思決定ガイド](../../decision-guides/resource-consistency/index.md)
-- [標準ベースのブループリント サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [標準ベースのブループリント サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Azure Policy は、ポリシーの作成、割り当て、および管理に使�
 
 詳細については、次を参照してください。
 
-- [Azure Policy](/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
 - [クラウド導入フレームワーク:ポリシー適用の意思決定ガイド](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -157,10 +157,10 @@ Azure Security Center について調べるには、[Azure portal](https://porta
 
 詳細については、次を参照してください。
 
-- [Azure Security Center](/azure/security-center)
-- [Just In Time VM アクセス](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure Security Center](https://docs.microsoft.com/azure/security-center)
+- [Just In Time VM アクセス](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Standard 価格レベルと Free 価格レベル](https://azure.microsoft.com/pricing/details/security-center)
-- [クラウド導入フレームワーク:セキュリティ ベースライン ガバナンス規範](../../governance/security-baseline/index.md)
+- [クラウド導入フレームワーク:セキュリティ ベースライン ガバナンス規範](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

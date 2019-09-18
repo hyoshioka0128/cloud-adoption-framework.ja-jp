@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839165"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022281"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>クラウド導入計画のワークロードを優先付けして定義する
 
@@ -44,7 +44,7 @@ ms.locfileid: "70839165"
 
 前の記事「[クラウド導入計画と Azure DevOps](./template.md)」では、Azure DevOps でクラウド導入計画を作成しました。
 
-ここでは、"10 のパワー" リストのワークロードをクラウド導入計画で表すことができます。 これを行う最も簡単な方法は、Microsoft Excel で一括編集することです。 一括編集を行うためにワークステーションを準備するには、「[Excel を使用した作業項目の一括追加または変更](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)」を参照してください。
+ここでは、"10 のパワー" リストのワークロードをクラウド導入計画で表すことができます。 これを行う最も簡単な方法は、Microsoft Excel で一括編集することです。 一括編集を行うためにワークステーションを準備するには、「[Excel を使用した作業項目の一括追加または変更](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)」を参照してください。
 
 その記事の手順 5 では、 **[入力リスト]** を選択するよう指示されています。 代わりに、 **[クエリ リスト]** を選択します。 次に、 **[クエリの選択]** ドロップダウン リストから **[Workload Template]\(ワークロード テンプレート\)** クエリを選択します。 このクエリにより、単一のワークロードの移行に関連するすべての作業がスプレッドシートに読み込まれます。
 
