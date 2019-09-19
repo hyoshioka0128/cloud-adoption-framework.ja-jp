@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fc992a4c00a1acd99481d6090563ecef38c5fedb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70838725"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025094"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Azure DevOps Services に Team Foundation Server の展開をリファクターする
 
@@ -47,7 +47,7 @@ Contoso クラウド チームは、Azure DevOps Services への移行の目標�
 - TFS は、Azure DevOps Services に移行されます。
 - 現在、Contoso には `ContosoDev` という名前の TFS コレクションが 1 つあります。これは `contosodevmigration.visualstudio.com` という Azure DevOps Services 組織に移行されます。
 - 昨年のプロジェクト、作業項目、バグ、およびイテレーションは Azure DevOps Services に移行されます。
-- Contoso は Azure Active Directory を利用します。これは、移行計画の開始時に [Azure インフラストラクチャをデプロイ](contoso-migration-infrastructure.md)したときに設定したものです。
+- Contoso は Azure Active Directory を利用します。これは、移行計画の開始時に [Azure インフラストラクチャをデプロイ](./contoso-migration-infrastructure.md)したときに設定したものです。
 
 ![シナリオのアーキテクチャ](./media/contoso-migration-tfs-vsts/architecture.png)
 
@@ -71,8 +71,8 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 **要件** | **詳細**
 --- | ---
-**Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
-**Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。
+**Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
+**Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。
 **オンプレミスの TFS サーバー** | オンプレミスで、TFS 2018 Upgrade 2 を実行するか、このプロセスの一環としてそれにアップグレードする必要があります。
 
 ## <a name="scenario-steps"></a>シナリオのステップ
@@ -95,15 +95,15 @@ Contoso は、次のようにして移行を完了します。
 
 **さらにサポートが必要な場合**
 
-- [Azure Storage の概要](/azure/storage/common/storage-introduction)。
-- [ストレージ アカウントの作成](/azure/storage/common/storage-create-storage-account)。
+- [Azure Storage の概要](https://docs.microsoft.com/azure/storage/common/storage-introduction)。
+- [ストレージ アカウントの作成](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)。
 
 ## <a name="step-2-upgrade-tfs"></a>手順 2:TFS をアップグレードする
 
 Contoso の管理者は、TFS サーバーを TFS 2018 Update 2 にアップグレードします。 開始前の作業:
 
 - [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads) をダウンロードします
-- [ハードウェア要件](/tfs/server/requirements)を検証し、[リリース ノート](/visualstudio/releasenotes/tfs2018-relnotes)と[アップグレードの注意事項](/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)をすべて読みます。
+- [ハードウェア要件](https://docs.microsoft.com/tfs/server/requirements)を検証し、[リリース ノート](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes)と[アップグレードの注意事項](https://docs.microsoft.com/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)をすべて読みます。
 
 次の手順でアップグレードします。
 
@@ -128,7 +128,7 @@ Contoso の管理者は、TFS サーバーを TFS 2018 Update 2 にアップグ�
      ![TFS](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 一部の TFS アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細情報](/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts)。
+> 一部の TFS アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細情報](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts)。
 
 **さらにサポートが必要な場合**
 
@@ -464,13 +464,13 @@ Contoso は、移行が完了したら、ソース コード管理について�
 
 **さらにサポートが必要な場合**
 
-TFVC からのインポートの詳細については、[こちら](/azure/devops/repos/git/import-from-TFVC?view=vsts)を参照してください。
+TFVC からのインポートの詳細については、[こちら](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts)を参照してください。
 
 ## <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 
 移行が完了したら、Contoso は次の操作を行う必要があります。
 
-- 追加のインポート アクティビティについては、[インポート後](/azure/devops/articles/migration-post-import?view=vsts)に関する記事を参照してください。
+- 追加のインポート アクティビティについては、[インポート後](https://docs.microsoft.com/azure/devops/articles/migration-post-import?view=vsts)に関する記事を参照してください。
 - TFVC リポジトリを削除するか、読み取り専用モードに設定します。 コード ベースは使用しないでください。ただし、履歴のために参照することはできます。
 
 ## <a name="post-migration-training"></a>移行後のトレーニング
