@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c95134909838f11377b16e90c5deb68850388938
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818831"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022832"
 ---
 # <a name="assess-the-digital-estate"></a>デジタル資産を評価する
 
@@ -58,8 +58,8 @@ Azure Migrate を使用してサーバーの移行評価を開始するには、
 
 ### <a name="read-more"></a>詳細情報
 
-- [Azure Migrate の概要](/azure/migrate/migrate-services-overview)
-- [物理サーバーまたは仮想化されたサーバーを Azure に移行する](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate の概要](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
+- [物理サーバーまたは仮想化されたサーバーを Azure に移行する](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Azure portal での Azure Migrate](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -68,22 +68,22 @@ Azure Migrate を使用してサーバーの移行評価を開始するには、
 
 サービス マップは、Windows および Linux システムのアプリケーション コンポーネントを自動的に検出し、サービス間の通信をマップします。 Service Map を使用すると、サーバーを重要なサービスを提供する相互接続されたシステムとして表示することができます。 Service Map は、TCP 接続アーキテクチャ全体におけるサーバー、プロセス、受信接続と送信接続の待機時間、ポートの間の接続を表示します。エージェントのインストール以外の構成は必要ありません。
 
-Azure Migrate では、Service Map を使用して、環境全体でレポート機能と依存関係が強化されます。 この統合の詳細については、「[依存関係の視覚化](/azure/migrate/concepts-dependency-visualization)」を参照してください。 Azure Migration サービスを使用する場合は、Service Map を構成してその利点を得るために余計な手順を行う必要はありません。 以下の説明は、Service Map を他の目的またはプロジェクトに使用したい場合の参考用に提供されています。
+Azure Migrate では、Service Map を使用して、環境全体でレポート機能と依存関係が強化されます。 この統合の詳細については、「[依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)」を参照してください。 Azure Migration サービスを使用する場合は、Service Map を構成してその利点を得るために余計な手順を行う必要はありません。 以下の説明は、Service Map を他の目的またはプロジェクトに使用したい場合の参考用に提供されています。
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>Service Map を使用して依存関係の視覚化を有効にする
 
 依存関係の視覚化を使用するには、分析するオンプレミスの各マシンにエージェントをダウンロードしてインストールする必要があります。
 
-- 各コンピューターに [Microsoft Monitoring Agent (MMA)](/azure/log-analytics/log-analytics-agent-windows) をインストールする必要があります。
-- 各コンピューターに[依存関係エージェント](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)をインストールする必要があります。
+- 各コンピューターに [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) をインストールする必要があります。
+- 各コンピューターに[依存関係エージェント](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)をインストールする必要があります。
 - また、インターネットに接続されていないマシンの場合、それらに Log Analytics ゲートウェイをダウンロードしてインストールする必要があります。
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="read-more"></a>詳細情報
 
-- [Azure での Service Map ソリューションの使用](/azure/azure-monitor/insights/service-map)
-- [Azure Migrate と Service Map: 依存関係の視覚化](/azure/migrate/concepts-dependency-visualization)
+- [Azure での Service Map ソリューションの使用](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
+- [Azure Migrate と Service Map: 依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[シナリオと利害関係者](#tab/Scenarios)

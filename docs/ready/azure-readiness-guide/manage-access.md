@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8f16380af623a6d9cd01e5064599f2688f5136df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e79966dbcbb00cb59fc88133c3ac62255a395a27
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818661"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022102"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>ロールベースのアクセス制御を使用して Azure 環境へのアクセスを管理する
 
@@ -87,7 +87,7 @@ RBAC は、Azure 内のリソースの詳細なアクセス管理を実現しま
 
 詳細については、次を参照してください。
 
-- [ロールベースのアクセス制御 (RBAC) とは何か](/azure/role-based-access-control/overview)
+- [ロールベースのアクセス制御 (RBAC) とは何か](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [クラウド導入フレームワーク:ロールベースのアクセス制御の使用](../azure-best-practices/roles.md)
 
 ::: zone-end

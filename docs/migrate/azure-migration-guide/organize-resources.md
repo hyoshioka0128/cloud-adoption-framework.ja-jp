@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818746"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022766"
 ---
 # <a name="organize-your-azure-resources"></a>Azure リソースの整理
 
@@ -76,9 +76,9 @@ Azure 内のリソースの編成構造には、管理グループ、サブス�
 
 詳細については、次を参照してください。
 
-- [Azure でのリソース アクセス管理について](../../governance/resource-consistency/azure-resource-access.md)
-- [Azure 管理グループでリソースを整理する](/azure/azure-resource-manager/management-groups-overview)
-- [サブスクリプション サービスの制限](/azure/azure-subscription-service-limits)
+- [Azure でのリソース アクセス管理について](../../govern/resource-consistency/resource-access-management.md)
+- [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [サブスクリプション サービスの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Azure 内のリソースの編成構造には、管理グループ、サブス�
 
 ::: zone target="docs"
 
-[パターンと実践のガイダンス](/azure/architecture/best-practices/naming-conventions)を確認して適用することをお勧めします。
+[パターンと実践のガイダンス](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)を確認して適用することをお勧めします。
 
 >[!TIP]
 >特殊文字 (`-` または `_`) は、名前の先頭または末尾には使用しないでください。 こうした文字があると、ほとんどの検証規則でエラーが発生します。
@@ -151,7 +151,7 @@ Azure 内のリソースの編成構造には、管理グループ、サブス�
 
 各リソースまたはリソース グループには、最大で 15 個のタグ名/タグ値のペアを付けることができます。 ただし、この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 
-タグ付けについて詳しくは、[Azure アーキテクチャ センターの Azure リソースの名前付け規則](../../ready/considerations/name-and-tag.md#metadata-tags)に関するページを参照してください
+タグ付けについて詳しくは、[Azure アーキテクチャ センターの Azure リソースの名前付け規則](../../ready/considerations/naming-and-tagging.md#metadata-tags)に関するページを参照してください
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ Azure 内のリソースの編成構造には、管理グループ、サブス�
 
 ## <a name="learn-more"></a>詳細情報
 
-詳しくは、「[タグを使用した Azure リソースの整理](/azure/azure-resource-manager/resource-group-using-tags)」をご覧ください。
+詳しくは、「[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)」をご覧ください。
 
 ::: zone-end
 

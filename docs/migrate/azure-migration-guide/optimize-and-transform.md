@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c44bcd45783ee6ea61bbbe33b6b76ce7034eca2c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e6c5f0aa120339ecd2c3a968503b5ee0be824307
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818899"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024742"
 ---
 # <a name="optimize-and-transform"></a>最適化と変換
 
@@ -60,13 +60,13 @@ Azure Migrate では、移行前評価フェーズの一環として適切なサ
 
 ::: zone target="docs"
 
-- [Azure リソースに対する予約を管理する](/azure/billing/billing-manage-reserved-vm-instance)
-- [Windows VM のサイズを変更する](/azure/virtual-machines/windows/resize-vm)
-- [Azure CLI を使用して Linux 仮想マシンのサイズを変更する](/azure/virtual-machines/linux/change-vm-size)
+- [Azure リソースに対する予約を管理する](https://docs.microsoft.com/azure/billing/billing-manage-reserved-vm-instance)
+- [Windows VM のサイズを変更する](https://docs.microsoft.com/azure/virtual-machines/windows/resize-vm)
+- [Azure CLI を使用して Linux 仮想マシンのサイズを変更する](https://docs.microsoft.com/azure/virtual-machines/linux/change-vm-size)
 
 パートナーはパートナー センターを使用して使用状況を確認できます。
 
-- [最大予約使用状況のための Microsoft Azure VM のサイズ設定](/partner-center/azure-usage)
+- [最大予約使用状況のための Microsoft Azure VM のサイズ設定](https://docs.microsoft.com/partner-center/azure-usage)
 
 ::: zone-end
 
@@ -126,8 +126,8 @@ Azure Cost Management は Azure Advisor と連携して、コストの最適化�
 
 ::: zone target="docs"
 
-- [チュートリアル:推奨事項に従ってコストを最適化する](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Azure の課金とコスト管理で予想外の料金を防ぐ](/azure/billing/billing-getting-started)
-- [コスト分析を使用してコストを調査および分析する](/azure/cost-management/quick-acm-cost-analysis)
+- [チュートリアル:推奨事項に従ってコストを最適化する](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Azure の課金とコスト管理で予想外の料金を防ぐ](https://docs.microsoft.com/azure/billing/billing-getting-started)
+- [コスト分析を使用してコストを調査および分析する](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end
