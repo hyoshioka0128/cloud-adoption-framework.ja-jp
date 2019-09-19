@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 32a24f51a44c088331ea47a65a5d71e3d02cedf4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fbcb06b671b13b48fe5063e5efd8ba72c3071667
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70835041"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024328"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Azure VM および SQL Server Always On 可用性グループ上でオンプレミス アプリを再ホストする
 
@@ -97,7 +97,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 **サービス** | **説明** | **コスト**
 --- | --- | ---
 [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA は、オンプレミスの SQL Server マシンのローカルから実行され、サイト間 VPN を介して Azure にデータベースを移行します。 | DMA は無料でダウンロードできるツールです。
-[Azure Site Recovery](/azure/site-recovery) | Site Recovery は、Azure VM、オンプレミス VM、物理サーバーの移行とディザスター リカバリーを調整および管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 フェールオーバーが発生すると、Azure VM が作成されて料金がかかります。 料金と価格について[詳しくはこちら](https://azure.microsoft.com/pricing/details/site-recovery)をご覧ください。
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery は、Azure VM、オンプレミス VM、物理サーバーの移行とディザスター リカバリーを調整および管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 フェールオーバーが発生すると、Azure VM が作成されて料金がかかります。 料金と価格について[詳しくはこちら](https://azure.microsoft.com/pricing/details/site-recovery)をご覧ください。
 
 ## <a name="migration-process"></a>移行プロセス
 
@@ -122,9 +122,9 @@ Contoso の管理者はアプリの VM を Azure に移行します。
 
 **要件** | **詳細**
 --- | ---
-**Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso は既にサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
-**Azure インフラストラクチャ** | [Contoso で Azure インフラストラクチャを設定する方法](contoso-migration-infrastructure.md)を確認してください。<br/><br/> Site Recovery 用の[ネットワーク](/azure/site-recovery/vmware-physical-azure-support-matrix#network)と[ストレージ](/azure/site-recovery/vmware-physical-azure-support-matrix#storage)の具体的な要件の詳細を確認してください。
-**Site Recovery (オンプレミス)** | オンプレミス vCenter Server は、バージョン 5.5、6.0、または 6.5 を実行している必要があります<br/><br/> バージョン 5.5、6.0、または 6.5 を実行している ESXi ホスト<br/><br/> ESXi ホスト上で実行している 1 つ以上の VMware VM。<br/><br/> VM は [Azure の要件](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)を満たす必要があります。<br/><br/> サポートされている[ネットワーク](/azure/site-recovery/vmware-physical-azure-support-matrix#network)および[ストレージ](/azure/site-recovery/vmware-physical-azure-support-matrix#storage)の構成。<br/><br/> レプリケートする VM は、[Azure の要件](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)を満たしている必要があります。
+**Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso は既にサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
+**Azure インフラストラクチャ** | [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。<br/><br/> Site Recovery 用の[ネットワーク](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network)と[ストレージ](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)の具体的な要件の詳細を確認してください。
+**Site Recovery (オンプレミス)** | オンプレミス vCenter Server は、バージョン 5.5、6.0、または 6.5 を実行している必要があります<br/><br/> バージョン 5.5、6.0、または 6.5 を実行している ESXi ホスト<br/><br/> ESXi ホスト上で実行している 1 つ以上の VMware VM。<br/><br/> VM は [Azure の要件](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)を満たす必要があります。<br/><br/> サポートされている[ネットワーク](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network)および[ストレージ](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)の構成。<br/><br/> レプリケートする VM は、[Azure の要件](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements)を満たしている必要があります。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -175,8 +175,8 @@ Contoso の管理者は、クラスターを以下のように設定します。
 
 **さらにサポートが必要な場合**
 
-- SQL Server VM のプロビジョニングの[手順を参照](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings)します。
-- さまざまな SQL Server SKU の VM の構成方法を[参照します](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)。
+- SQL Server VM のプロビジョニングの[手順を参照](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings)します。
+- さまざまな SQL Server SKU の VM の構成方法を[参照します](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)。
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>ステップ 2: クラスターをデプロイして設定する
 
@@ -246,8 +246,8 @@ Always On を有効にすると、Contoso は SmartHotel360 データベース�
 
 **さらにサポートが必要な場合**
 
-- クラウド監視とそのためのストレージ アカウントの設定について[こちらをお読みください](/windows-server/failover-clustering/deploy-cloud-witness)。
-- クラスターの設定と可用性グループの作成の[手順はこちらを参照してください](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial)。
+- クラウド監視とそのためのストレージ アカウントの設定について[こちらをお読みください](https://docs.microsoft.com/windows-server/failover-clustering/deploy-cloud-witness)。
+- クラスターの設定と可用性グループの作成の[手順はこちらを参照してください](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial)。
 
 ## <a name="step-3-deploy-the-azure-load-balancer"></a>ステップ 3: Azure Load Balancer をデプロイする
 
@@ -305,8 +305,8 @@ Contoso の管理者は正常性プローブを作成して、ロード バラ�
 
 **さらにサポートが必要な場合**
 
-- Azure Load Balancer の[概要を参照してください](/azure/load-balancer/load-balancer-overview)。
-- ロード バランサーを作成する方法を[参照します](/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)。
+- Azure Load Balancer の[概要を参照してください](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)。
+- ロード バランサーを作成する方法を[参照します](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)。
 
 ## <a name="step-4-prepare-azure-for-the-site-recovery-service"></a>ステップ 4: Site Recovery サービス用に Azure を準備する
 
@@ -318,7 +318,7 @@ Contoso が Site Recovery をデプロイする必要がある Azure コンポ�
 
 Contoso の管理者は、これらを次のように設定します。
 
-1. Contoso は、[Azure インフラストラクチャのデプロイ](contoso-migration-rehost-vm-sql-ag.md)を行ったときに、Site Recovery 用に使用できるネットワークとサブネットを既に作成しています。
+1. Contoso は、[Azure インフラストラクチャのデプロイ](./contoso-migration-rehost-vm-sql-ag.md)を行ったときに、Site Recovery 用に使用できるネットワークとサブネットを既に作成しています。
 
     - SmartHotel360 アプリは運用アプリであり、WEBVM はプライマリ リージョンである米国東部 2 の Azure 運用ネットワーク (VNET-PROD-EUS2) に移行されます。
     - WEBVM は、運用リソースのために使用される ContosoRG リソース グループと、運用サブネット (PROD-FE-EUS2) に配置されます。
@@ -336,7 +336,7 @@ Contoso の管理者は、これらを次のように設定します。
 
 **さらにサポートが必要な場合**
 
-Site Recovery のために Azure を設定することについての[説明を参照します](/azure/site-recovery/tutorial-prepare-azure)。
+Site Recovery のために Azure を設定することについての[説明を参照します](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure)。
 
 ## <a name="step-5-prepare-on-premises-vmware-for-site-recovery"></a>ステップ 5: Site Recovery 用にオンプレミスの VMware を準備する
 
@@ -390,8 +390,8 @@ Contoso は、フェールオーバー後に Azure VM に接続することを�
 
 **さらにサポートが必要な場合**
 
-- 自動検出のためにロールを作成して割り当てることについての[説明を参照します](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)。
-- モビリティ サービスのプッシュ インストールのためにアカウントを作成することについての[説明を参照します](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation)。
+- 自動検出のためにロールを作成して割り当てることについての[説明を参照します](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery)。
+- モビリティ サービスのプッシュ インストールのためにアカウントを作成することについての[説明を参照します](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation)。
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure-with-site-recovery"></a>ステップ 6: Site Recovery を使用して、オンプレミス VM を Azure にレプリケートする
 
@@ -497,9 +497,9 @@ Contoso の管理者は、WebVM のレプリケートを開始できるように
 
 **さらにサポートが必要な場合**
 
-- これらすべてのステップの詳細な手順については、[オンプレミス VMware VM のディザスター リカバリーの設定に関する記事](/azure/site-recovery/vmware-azure-tutorial)を参照してください。
-- [ソース環境の設定](/azure/site-recovery/vmware-azure-set-up-source)、[構成サーバーのデプロイ](/azure/site-recovery/vmware-azure-deploy-configuration-server)、および[レプリケーション設定の構成](/azure/site-recovery/vmware-azure-set-up-replication)に役立つ詳細な手順が記載されています。
-- [レプリケーションの有効化](/azure/site-recovery/vmware-azure-enable-replication)の詳細を確認します。
+- これらすべてのステップの詳細な手順については、[オンプレミス VMware VM のディザスター リカバリーの設定に関する記事](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial)を参照してください。
+- [ソース環境の設定](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source)、[構成サーバーのデプロイ](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server)、および[レプリケーション設定の構成](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication)に役立つ詳細な手順が記載されています。
+- [レプリケーションの有効化](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication)の詳細を確認します。
 
 ## <a name="step-7-install-the-data-migration-assistant-dma"></a>手順 7:Data Migration Assistant (DMA) をインストールする
 
@@ -577,9 +577,9 @@ SQL デプロイを設定する最後のステップとして、Contoso の管�
 
 **さらにサポートが必要な場合**
 
-- [可用性グループ](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group)と[リスナー](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)を作成する方法を参照します。
-- 手動で[クラスターがロード バランサーの IP アドレスを使用するように設定](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)します。
-- SAS の作成および使用については、[こちら](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)をご覧ください。
+- [可用性グループ](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group)と[リスナー](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)を作成する方法を参照します。
+- 手動で[クラスターがロード バランサーの IP アドレスを使用するように設定](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)します。
+- SAS の作成および使用については、[こちら](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)をご覧ください。
 
 ## <a name="step-8-migrate-the-vm-with-site-recovery"></a>ステップ 8: Site Recovery を使用して VM を移行する
 
@@ -631,9 +631,9 @@ Contoso の管理者は、移行プロセスの最終ステップとして、ア
 
 **さらにサポートが必要な場合**
 
-- テスト フェールオーバーの実行に関する[説明を参照します](/azure/site-recovery/tutorial-dr-drill-azure)。
-- 復旧計画の作成方法に関する[説明を参照します](/azure/site-recovery/site-recovery-create-recovery-plans)。
-- Azure へのフェールオーバーに関する[説明を参照します](/azure/site-recovery/site-recovery-failover)。
+- テスト フェールオーバーの実行に関する[説明を参照します](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure)。
+- 復旧計画の作成方法に関する[説明を参照します](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans)。
+- Azure へのフェールオーバーに関する[説明を参照します](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)。
 
 ## <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 
@@ -659,20 +659,20 @@ Contoso のセキュリティ チームは、Azure VM (WEBVM、SQLAOG1 および
 - チームは、ディスク上のデータ保護のために、Azure Disk Encryption と Key Vault の使用も検討します。
 - チームは、Transparent Data Encryption (TDE) を評価してから、新しい SQL AOG で実行されている SmartHotel360 データベース上で有効にします。 [詳細情報](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)。
 
-VM に関するセキュリティの実務の[詳細については、こちら](/azure/security/azure-security-best-practices-vms)を参照してください。
+VM に関するセキュリティの実務の[詳細については、こちら](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms)を参照してください。
 
 ## <a name="bcdr"></a>BCDR
 
  事業継続とディザスター リカバリー (BCDR) のために、Contoso は次のアクションを実施します。
 
-- データの保護: Contoso は、Azure Backup サービスを使用して、WEBVM、SQLAOG1、SQLAOG2 の各 VM 上のデータをバックアップします。 [詳細情報](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
-- また、Contoso は、Azure Storage を使用して SQL Server を直接 Blob Storage にバックアップする方法を把握する必要があります。 [詳細情報](/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)。
-- アプリの稼働状態を維持する: Contoso は、Site Recovery を使用して、Azure 内のアプリの VM をセカンダリ リージョンにレプリケートします。 [詳細情報](/azure/site-recovery/azure-to-azure-quickstart)。
+- データの保護: Contoso は、Azure Backup サービスを使用して、WEBVM、SQLAOG1、SQLAOG2 の各 VM 上のデータをバックアップします。 [詳細情報](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。
+- また、Contoso は、Azure Storage を使用して SQL Server を直接 Blob Storage にバックアップする方法を把握する必要があります。 [詳細情報](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)。
+- アプリの稼働状態を維持する: Contoso は、Site Recovery を使用して、Azure 内のアプリの VM をセカンダリ リージョンにレプリケートします。 [詳細情報](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 1. Contoso は、WEBVM の既存のライセンスを所有しており、Azure ハイブリッド特典を活用します。 Contoso は、この特典を活用するために、既存の Azure VM を変換します。
-2. Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](/azure/cost-management/overview)を参照してください。
+2. Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](https://docs.microsoft.com/azure/cost-management/overview)を参照してください。
 
 ## <a name="conclusion"></a>まとめ
 
