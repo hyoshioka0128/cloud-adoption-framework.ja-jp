@@ -11,19 +11,19 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 48f73d7c7f2e7f3bba8183464c786a3e0744807c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905483"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022354"
 ---
 # <a name="hub-and-spoke-network-topology"></a>ハブアンドスポーク ネットワーク トポロジ
 
 *ハブ アンド スポーク*は、一般的な通信またはセキュリティ要件をより効率的に管理するためのネットワーク モデルです。 Azure サブスクリプションの制限の回避にも役立ちます。 このモデルでは、次の懸念事項に対処します。
 
 - **コストの削減と管理の効率**。 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は過剰なリソースと管理作業を最小限にすることができます。
-- **サブスクリプションの制限の克服**。 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 ([サブスクリプションの制限][Limits]を参照してください。)さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。
+- **サブスクリプションの制限の克服**。 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)に関するページを参照してください。
 - **懸念事項の分離**。 中央の IT チームとワークロード チームの間で個々 のワークロードをデプロイすることができます。
 
 小さなクラウド資産は、このモデルによって追加で提供される構造と機能の恩恵を受けない場合があります。 しかし、大規模なクラウド導入作業で、上記のいずれかの懸念事項が 1 つでもあれば、ハブアンドスポーク ネットワーク アーキテクチャの実装を検討してください。
@@ -31,8 +31,8 @@ ms.locfileid: "70905483"
 > [!NOTE]
 > Azure の参照アーキテクチャのサイトには、独自のハブ アンド スポーク ネットワークを実装するための基礎として使用できるサンプル テンプレートが含まれています。
 >
-> - [Azure にハブアンドスポーク ネットワーク トポロジを実装する](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Azure に共有サービスを含むハブアンドスポーク ネットワーク トポロジを実装する](/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Azure にハブアンドスポーク ネットワーク トポロジを実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [Azure に共有サービスを含むハブアンドスポーク ネットワーク トポロジを実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
 ## <a name="overview"></a>概要
 
@@ -45,7 +45,7 @@ ms.locfileid: "70905483"
 多くの場合、ハブには、スポークによって消費される共通のサービス コンポーネントが含まれます。 共通の中央サービスの例を次に示します。
 
 - 信頼されていないネットワークからアクセスするサード パーティがスポーク内のワークロードにアクセスする前のユーザー認証に必要な Windows Server Active Directory インフラストラクチャ。 これには、関連する Active Directory フェデレーション サービス (AD FS) が含まれます。
-- オンプレミスおよびインターネット上のリソースにアクセスするための、スポーク内のワークロードの名前付けを解決する DNS サービス ([Azure DNS][DNS] が使用されていない場合)。
+- オンプレミスおよびインターネット上のリソースにアクセスするための、スポーク内のワークロードの名前付けを解決する DNS サービス ([Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) が使用されていない場合)。
 - ワークロードにシングル サインオンを実装するための公開キー基盤 (PKI)。
 - スポーク ネットワーク ゾーンとインターネット間の TCP/UDP トラフィックのフロー制御。
 - スポークとオンプレミス間のフロー制御。
@@ -61,7 +61,7 @@ ms.locfileid: "70905483"
 
 Azure では、種類に関係なく、すべてのコンポーネントが Azure サブスクリプションにデプロイされます。 異なる Azure サブスクリプションに Azure コンポーネントを分離することで、差別化されたレベルのアクセスと承認の設定など、さまざまな業種の要件を満たすことができます。
 
-1 つのハブアンドスポーク実装で多数のスポークにスケールアップできます。 ただし、他の IT システムと同様に、プラットフォームの制限があります。 ハブのデプロイは特定の Azure サブスクリプションにバインドされており、サブスクリプションには制約と制限があります。 たとえば、仮想ネットワーク ピアリングの最大数が設定されています。 詳細については、「[Azure サブスクリプションとサービスの制限、クォータ、制約][Limits]」を参照してください。
+1 つのハブアンドスポーク実装で多数のスポークにスケールアップできます。 ただし、他の IT システムと同様に、プラットフォームの制限があります。 ハブのデプロイは特定の Azure サブスクリプションにバインドされており、サブスクリプションには制約と制限があります。 たとえば、仮想ネットワーク ピアリングの最大数が設定されています。 詳細については、[Azure サブスクリプションとサービスの制限、クォータ、制約][制限] を参照してください)。
 
 制限が問題になる可能性がある場合は、単一のハブアンドスポークからハブアンドスポークのクラスターにモデルを拡張することによって、アーキテクチャをさらにスケールアップできます。 仮想ネットワーク ピアリング、Azure ExpressRoute、仮想 WAN、またはサイト間 VPN を使用して、1 つ以上の Azure リージョン内の複数のハブを相互接続できます。
 
@@ -83,53 +83,48 @@ Azure では、種類に関係なく、すべてのコンポーネントが Azur
 
 <!-- images -->
 
-[0]: ./images/network-redundant-equipment.png "コンポーネントのオーバーラップの例"
-[1]: ./images/network-hub-spoke-high-level.png "概要レベルのハブ アンド スポークの例"
-[2]: ./images/network-hub-spokes-cluster.png "ハブとスポークのクラスター"
-[3]: ./images/network-spoke-to-spoke.png "スポーク間"
-[4]: ./images/network-hub-spoke-block-level-diagram.png "ハブ アンド スポークのブロックレベルの図"
-[5]: ./images/network-users-groups-subsciptions.png "ユーザー、グループ、サブスクリプション、およびプロジェクト"
-[6]: ./images/network-infrastructure-high-level.png "インフラストラクチャの概要図"
-[7]: ./images/network-highlevel-perimeter-networks.png "インフラストラクチャの概要図"
-[8]: ./images/network-vnet-peering-perimeter-neworks.png "仮想ネットワーク ピアリングと境界ネットワーク"
-[9]: ./images/network-high-level-diagram-monitoring.png "監視の概要図"
-[10]: ./images/network-high-level-workloads.png "ワークロードの概要図"
+[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "コンポーネントのオーバーラップの例"
+[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "概要レベルのハブ アンド スポークの例"
+[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "ハブとスポークのクラスター"
+[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "スポーク間"
+[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "ハブ アンド スポークのブロックレベルの図"
+[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "ユーザー、グループ、サブスクリプション、およびプロジェクト"
+[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "インフラストラクチャの概要図"
+[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "インフラストラクチャの概要図"
+[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "仮想ネットワーク ピアリングと境界ネットワーク"
+[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "監視の概要図"
+[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "ワークロードの概要図"
 
 <!-- links -->
 
-[Limits]: /azure/azure-subscription-service-limits
-[Roles]: /azure/role-based-access-control/built-in-roles
-[VNet]: /azure/virtual-network/virtual-networks-overview
-[network-security-groups]: /azure/virtual-network/virtual-networks-nsg
-[DNS]: /azure/dns/dns-overview
-[PrivateDNS]: /azure/dns/private-dns-overview
-[VNetPeering]: /azure/virtual-network/virtual-network-peering-overview
-[user-defined-routes]: /azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: /azure/role-based-access-control/overview
-[azure-ad]: /azure/active-directory/active-directory-whatis
-[VPN]: /azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: /azure/expressroute/expressroute-introduction
-[ExRD]: /azure/expressroute/expressroute-erdirect-about
-[vWAN]: /azure/virtual-wan/virtual-wan-about
-[NVA]: /azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: /azure/firewall/overview
-[SubMgmt]: /azure/architecture/cloud-adoption/appendix/azure-scaffold
-[RGMgmt]: /azure/azure-resource-manager/resource-group-overview
-[DMZ]: /azure/best-practices-network-security
-[ALB]: /azure/load-balancer/load-balancer-overview
-[PIP]: /azure/virtual-network/resource-groups-networking#public-ip-address
-[AFD]: /azure/frontdoor/front-door-overview
-[AppGW]: /azure/application-gateway/application-gateway-introduction
-[WAF]: /azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: /azure/monitoring-and-diagnostics/
-[ActLog]: /azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: /azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: /azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: /azure/operations-management-suite/operations-management-suite-overview
-[NPM]: /azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: /azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: /azure/app-service/
-[HDI]: /azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: /azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: /azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: /azure/traffic-manager/traffic-manager-overview
+[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
+[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
+[user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
+[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
+[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
+[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
+[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
+[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
+[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
+[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[SubMgmt]: ../../reference/azure-scaffold.md
+[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
+[DMZ]: https://docs.microsoft.com/azure/best-practices-network-security
+[ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
+[PIP]: https://docs.microsoft.com/azure/virtual-network/resource-groups-networking#public-ip-address
+[AFD]: https://docs.microsoft.com/azure/frontdoor/front-door-overview
+[AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
+[WAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
+[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
+[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
+[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
+[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
+[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
+[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
+[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
+[WebApps]: https://docs.microsoft.com/azure/app-service/
+[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
+[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
+[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
+[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

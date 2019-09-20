@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837781"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023443"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>クラウド導入のあらゆる道のりで成功を実現する
 
@@ -22,12 +22,12 @@ Azure 向けの Microsoft Cloud 導入フレームワークは、さまざまな
 
 このフレームワーク全体で、可能化が中心的なテーマです。 以下のチェックリストには、IT とビジネスの両方の視点から、取り組みの成功を確実にするために、あらゆるクラウド導入作業に組み込む必要がある一連のトピックが含まれています。
 
-- **計画:** 明確な[ビジネスの成果](../business-strategy/business-outcomes/index.md)、定義された[デジタル資産計画](../digital-estate/index.md)、よく理解された[導入バックログ](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)を確立する。
+- **計画:** 明確な[ビジネスの成果](../strategy/business-outcomes/index.md)、定義された[デジタル資産計画](../digital-estate/index.md)、よく理解された[導入バックログ](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)を確立する。
 - **準備完了:** [スキルと学習計画](../ready/technical-skills.md)によってスタッフの準備を確実にする。
 - **運用:** 導入中および導入後のアクティビティをガイドする管理可能な運用モデルを定義します。
-  - **[整理](../organization/index.md):** ユーザーとチームを集めて、適切なクラウドの運用と導入に関する知識を伝達します。
-  - **ガバナンス:** 適正な[ガバナンス規範](../governance/index.md)を整備し、コスト管理、リスク軽減、コンプライアンス、セキュリティの各基準をすべてのクラウド導入にわたって一貫して適用します。
-  - **管理:** ビジネス プロセスの中断を最小化するための IT ポートフォリオを継続的に[運用](../operations/index.md)し、IT ポートフォリオの安定性を保証します。
+  - **[整理](../organize/index.md):** ユーザーとチームを集めて、適切なクラウドの運用と導入に関する知識を伝達します。
+  - **ガバナンス:** 適正な[ガバナンス規範](../govern/index.md)を整備し、コスト管理、リスク軽減、コンプライアンス、セキュリティの各基準をすべてのクラウド導入にわたって一貫して適用します。
+  - **管理:** ビジネス プロセスの中断を最小限に抑え、IT ポートフォリオの安定性を確保するための、IT ポートフォリオの継続的な[運用管理](../manage/index.md)。
   - **サポート:** 適正な[パートナーシップとサポートのオプション](../migrate/migration-considerations/assess/partnership-options.md)を整備します。
 
 ## <a name="additional-tools"></a>その他のツール
@@ -38,7 +38,7 @@ Azure 向けの Microsoft Cloud 導入フレームワークは、さまざまな
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">
