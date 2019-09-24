@@ -1,3 +1,38 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
+- name: Azure
+  tocHref: /azure
+  topicHref: /azure
+  items:
+    - name: クラウド導入フレームワーク
+      tocHref: /azure/cloud-adoption-framework/
+      topicHref: /azure/cloud-adoption-framework
+      items:
+        - name: 戦略
+          tocHref: /azure/cloud-adoption-framework/strategy/
+          topicHref: /azure/cloud-adoption-framework/strategy
+        - name: プラン
+          tocHref: /azure/cloud-adoption-framework/plan/
+          topicHref: /azure/cloud-adoption-framework/plan
+        - name: Ready
+          tocHref: /azure/cloud-adoption-framework/ready/
+          topicHref: /azure/cloud-adoption-framework/ready
+        - name: 採用
+          items:
+            - name: 移行
+              tocHref: /azure/cloud-adoption-framework/migrate/
+              topicHref: /azure/cloud-adoption-framework/migrate
+            - name: イノベーション
+              tocHref: /azure/cloud-adoption-framework/innovate/
+              topicHref: /azure/cloud-adoption-framework/innovate
+        - name: 運用
+          tocHref: /azure/cloud-adoption-framework/operate/
+          topicHref: /azure/cloud-adoption-framework/operate
+          items:
+            - name: ガバナンス
+              tocHref: /azure/cloud-adoption-framework/govern/
+              topicHref: /azure/cloud-adoption-framework/govern
+            - name: 整理
+              tocHref: /azure/cloud-adoption-framework/organize/
+              topicHref: /azure/cloud-adoption-framework/organize
+            - name: 管理
+              tocHref: /azure/cloud-adoption-framework/manage/
+              topicHref: /azure/cloud-adoption-framework/manage

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e4b0ab9c886ec8868cd1f630db6c193cadaff234
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023907"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223901"
 ---
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 
@@ -123,7 +123,7 @@ Azure での暗号化とキー管理の詳細については、以下を参照�
 - 「[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)」。 Azure で暗号化を使用して保存データと転送中のデータの両方が保護される方法について詳細に説明されています。
 - [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview)。 Key Vault は、Azure 内の暗号化キー、シークレット、証明書を格納および管理するための主要なキー管理システムです。
 - [Azure のデータ セキュリティと暗号化のベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices)。 Azure のデータ セキュリティと暗号化のベスト プラクティスの説明。
-- 「[Confidential computing in Azure (Azure での Confidential Computing)](https://azure.microsoft.com/solutions/confidential-compute/)」。 Azure の Confidential Computing イニシアチブでは、信頼できる実行環境または使用中のデータを保護するための他の暗号化メカニズムを作成するためのツールとテクノロジが提供されます。
+- 「[Confidential computing in Azure (Azure での Confidential Computing)](https://azure.microsoft.com/solutions/confidential-compute)」。 Azure の Confidential Computing イニシアチブでは、信頼できる実行環境または使用中のデータを保護するための他の暗号化メカニズムを作成するためのツールとテクノロジが提供されます。
 
 ## <a name="next-steps"></a>次の手順
 

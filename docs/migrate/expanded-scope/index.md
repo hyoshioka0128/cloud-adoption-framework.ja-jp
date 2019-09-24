@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド移行の拡大された範囲のチェックリスト
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 125c6d044fd766896971aced5bedbc515c14417f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4daf4b01a2fde83de1040f224b8096475a24fe60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817334"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224359"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>クラウド移行の拡大された範囲
 
@@ -27,7 +27,7 @@ ms.locfileid: "70817334"
 
 - **ビジネスに基づく範囲の変更:**
   - [ポートフォリオのバランス調整](./balance-the-portfolio.md)
-  - [グローバル市場をサポートする](./multiple-regions.md)
+  - [グローバル市場をサポートする](../../decision-guides/regions/index.md)
   - 移行段階でのコスト意識 *(2019 年第 3 四半期の予定)*
 - **カルチャに基づく範囲の変更:**
   - 変更管理と承認プロセス *(2019 年第 3 四半期の予定)*

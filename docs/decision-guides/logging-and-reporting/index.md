@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026004"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223633"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -69,7 +69,7 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 
 ### <a name="gateway-aggregation"></a>ゲートウェイ集約
 
-クラウド ベースのテレメトリ データの量が大きい、または既存のオンプレミスの監視システムで、ログ データが処理できるように事前に変更する必要があるシナリオでは、ログ データの[ゲートウェイ集約](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md)サービスが必要になる場合があります。
+クラウド ベースのテレメトリ データの量が大きい、または既存のオンプレミスの監視システムで、ログ データが処理できるように事前に変更する必要があるシナリオでは、ログ データの[ゲートウェイ集約](/azure/architecture/patterns/gateway-aggregation)サービスが必要になる場合があります。
 
 ゲートウェイ サービスは、クラウド プロバイダーにデプロイされます。 次に、関連するアプリケーションとサービスは、既定のログ システムではなく、ゲートウェイにテレメトリ データが送信されるように構成されます。 ゲートウェイで集約、結合などのデータの処理ができるようになります。それ以外の場合は、取り込みと分析のために監視サービスにデータを送信する前に、データを書式設定できます。
 
