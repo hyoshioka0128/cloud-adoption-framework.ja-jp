@@ -4,24 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンス設計ガイドと企業ポリシーの合致
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c7be14efe6723a32808ba9bd2ba01f48292305df
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031318"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223749"
 ---
-<!---
-I've established policies. How to help developers adopt these policies?
-Draft an architecture design guide.
-
-[Aspirational statement] If you're using Azure, you can use one of ours as a starting point. The choose one of the following 6 as a starting point and mold it to fit your policies.
---->
-
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>クラウド ガバナンス設計ガイドと企業ポリシーの合致
 
 [特定されたリスク](./business-risk.md)に基づいて[クラウド ポリシーを定義](./policy-definition.md)したら、IT スタッフと開発者が参照する、これらのポリシーに合致した実践的なガイダンスを作成する必要があります。 クラウド ガバナンス設計ガイドの素案を作成することで、[5 つのガバナンス規範](../governance-disciplines.md)それぞれに対して作成されるポリシー ステートメントに基づいた構造上、技術上、プロセス上の選択肢を指定することができます。

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032069"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220171"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雑な企業向けのガバナンス ガイド: コスト管理の規範の改善
 
@@ -66,14 +66,14 @@ ms.locfileid: "71032069"
 記事のこのセクションでは、ガバナンス MVP の設計を改善して、新しい Azure ポリシーと Azure Cost Management の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
 1. Azure Enterprise Portal で、カナダのデプロイについて部門管理者に請求するように変更します。
-1. Azure Cost Management を実装します。
+2. Azure Cost Management を実装します。
     1. サブスクリプション パターンとリソース グループ化のパターンに合わせて適切なレベルのアクセス スコープを設定します。 以前の記事で定義したガバナンス MVP との整合を前提にすると、これには、高レベルのレポート作成を実行するクラウド ガバナンスチームの**登録アカウントのスコープ**のアクセスが必要になります。 ガバナンス以外のその他のチーム (カナダの調達チームなど) には、**リソース グループのスコープ**のアクセスが必要になります。
-    1. Azure Cost Management で予算を編成します。
-    1. 初期の推奨事項を確認して対処します。 レポート プロセスをサポートするために定期プロセスを設定することをお勧めします。
-    1. 初期と定期の両方の Azure Cost Management レポートを構成して実行します。
-1. Azure Policy を更新します。
+    2. Azure Cost Management で予算を編成します。
+    3. 初期の推奨事項を確認して対処します。 レポート プロセスをサポートするために定期プロセスを設定することをお勧めします。
+    4. 初期と定期の両方の Azure Cost Management レポートを構成して実行します。
+3. Azure Policy を更新します。
     1. 偏差を識別するために、タグ付け、管理グループ、サブスクリプション、およびリソース グループの値を監査します。
-    1. デプロイ計画ドキュメントに記載されている SKU にデプロイを制限するために、SKU サイズ オプションを設定します。
+    2. デプロイ計画ドキュメントに記載されている SKU にデプロイを制限するために、SKU サイズ オプションを設定します。
 
 ## <a name="conclusion"></a>まとめ
 

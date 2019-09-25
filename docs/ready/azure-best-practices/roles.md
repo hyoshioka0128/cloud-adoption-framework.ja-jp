@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 10f1ae3bc7d1f7a298a020d2079c0f7e486810f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 98f456bf9af0ab5a7533acf9a9d49f445b7fe37b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025277"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224320"
 ---
 # <a name="role-based-access-control"></a>ロールベースのアクセス制御
 
@@ -28,7 +28,7 @@ ID およびセキュリティ戦略の一部として推奨される RBAC の�
 
 [ロールベースのアクセス制御](https://docs.microsoft.com/azure/role-based-access-control/overview)を使用すると、チーム内の職務を分離し、特定の Azure Active Directory (Azure AD) ユーザー、グループ、サービス プリンシパル、またはマネージド ID が自分の業務を実行するために必要なアクセス権のみを付与することができます。 すべてのユーザーに Azure サブスクリプションまたはリソースへの無制限のアクセス権を付与するのではなく、リソースのセットごとにアクセス権を制限することができます。
 
-[RBAC ロール定義](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)には、そのロールに割り当てられているユーザーまたはグループに対して許可されている操作または許可されていない操作が一覧表示されています。 ロールの[スコープ](https://docs.microsoft.com/azure/role-based-access-control/index.md#scope)は、これらの定義されたアクセス許可がどのリソースに適用されるかを指定します。 スコープは、複数のレベル (管理グループ、サブスクリプション、リソース グループ、またはリソース) で指定できます。 スコープは親子関係で構造化されています。
+[RBAC ロール定義](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)には、そのロールに割り当てられているユーザーまたはグループに対して許可されている操作または許可されていない操作が一覧表示されています。 ロールの[スコープ](/azure/role-based-access-control/index#scope)は、これらの定義されたアクセス許可がどのリソースに適用されるかを指定します。 スコープは、複数のレベル (管理グループ、サブスクリプション、リソース グループ、またはリソース) で指定できます。 スコープは親子関係で構造化されています。
 
 ![RBAC のスコープ階層](../../_images/azure-best-practices/rbac-scope.png)
 

@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d739c9794fb925e7da562093161987c3b63d47ee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5303c426ec4eb7adaf8f22a37532c5b1dad14df
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021997"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224228"
 ---
 # <a name="networking-design-decisions"></a>ネットワーク設計の決定
 
@@ -33,13 +33,13 @@ Azure ネットワーク サービスのデシジョン ツリーに基づいた
 
 - **ワークロードには仮想ネットワークが必要ですか?** マネージド PaaS (サービスとしてのプラットフォーム) のリソースの種類では、必ずしも仮想ネットワークを必要としない基になるプラットフォーム ネットワーク機能を使用します。 ワークロードが高度なネットワーク機能を必要とせず、サービスとしてのインフラストラクチャ (IaaS) リソースをデプロイする必要がない場合は、既定の [PaaS リソースによって提供されるネイティブなネットワーク機能](../../decision-guides/software-defined-network/paas-only.md)がワークロード接続とトラフィック管理の要件を満たす可能性があります。
 - **ワークロードには仮想ネットワークとオンプレミスのデータセンターの間の接続が必要ですか?** Azure には、ハイブリッド ネットワーク機能を確立するためのソリューションとして Azure VPN Gateway と Azure ExpressRoute の 2 つが用意されています。 [Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) は、リモート ブランチ オフィスを設定してそこに接続する場合と同様に、サイト間 VPN 経由でオンプレミス ネットワークを Azure に接続します。 VPN Gateway は 1.25 GBps の最大帯域幅を備えています。 [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) は、Azure とオンプレミス インフラストラクチャの間のプライベート接続を使用して、より高い信頼性とより短い待機時間を提供します。 ExpressRoute の帯域幅オプションは 50 MBps ～ 100 GBps です。
-- **オンプレミスのネットワーク デバイスを使用して送信トラフィックを検査および監査する必要がありますか?** クラウド ネイティブなワークロードの場合は、[Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) またはクラウドでホストされたサードパーティの[ネットワーク仮想アプライアンス (NVA)](https://azure.microsoft.com/solutions/network-appliances/) を使用して、パブリック インターネットとの間で送受信されるトラフィックを検査および監査できます。 ただし、多くのエンタープライズ IT セキュリティ ポリシーでは、インターネットへの送信トラフィックが組織のオンプレミス環境内の一元管理されたデバイスを通過する必要があります。 [強制トンネリング](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)は、これらのシナリオをサポートします。 すべてのマネージド サービスが強制トンネリングをサポートしているわけではありません。 [Azure App Service 内の App Service Environment](https://docs.microsoft.com/azure/app-service/environment/intro)、[Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)、[Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Azure SQL Database 内のマネージド インスタンス](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-index)、[Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/what-is-azure-databricks)、[Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/) などのサービスおよび機能は、このサービスまたは機能が仮想ネットワーク内にデプロイされている場合にこの構成をサポートします。
+- **オンプレミスのネットワーク デバイスを使用して送信トラフィックを検査および監査する必要がありますか?** クラウド ネイティブなワークロードの場合は、[Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) またはクラウドでホストされたサードパーティの[ネットワーク仮想アプライアンス (NVA)](https://azure.microsoft.com/solutions/network-appliances) を使用して、パブリック インターネットとの間で送受信されるトラフィックを検査および監査できます。 ただし、多くのエンタープライズ IT セキュリティ ポリシーでは、インターネットへの送信トラフィックが組織のオンプレミス環境内の一元管理されたデバイスを通過する必要があります。 [強制トンネリング](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)は、これらのシナリオをサポートします。 すべてのマネージド サービスが強制トンネリングをサポートしているわけではありません。 [Azure App Service 内の App Service Environment](https://docs.microsoft.com/azure/app-service/environment/intro)、[Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)、[Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Azure SQL Database 内のマネージド インスタンス](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-index)、[Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/what-is-azure-databricks)、[Azure HDInsight](https://docs.microsoft.com/azure/hdinsight) などのサービスおよび機能は、このサービスまたは機能が仮想ネットワーク内にデプロイされている場合にこの構成をサポートします。
 - **複数の仮想ネットワークを接続する必要がありますか?** [仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用して、[Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) の複数のインスタンスを接続できます。 ピアリングはサブスクリプション間およびリージョン間の接続をサポートできます。 複数のサブスクリプション間で共有されるサービスを提供するか、または多数のネットワーク ピアリングを管理する必要があるシナリオの場合は、[ハブ アンド スポーク ネットワーク アーキテクチャ](../../decision-guides/software-defined-network/hub-spoke.md)を導入するか、または [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) を使用することを検討してください。 仮想ネットワーク ピアリングは、2 つのピアリングされたネットワーク間の接続のみを提供します。 既定では、複数のピアリングにまたがる推移的な接続は提供されません。
 - **インターネット経由でワークロードにアクセスできますか?** Azure には、アプリケーションやサービスへの外部アクセスの管理およびセキュリティ保護に役立つように設計された次のサービスが用意されています。
   - [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview)
-  - [ネットワーク アプライアンス](https://azure.microsoft.com/solutions/network-appliances/)
+  - [ネットワーク アプライアンス](https://azure.microsoft.com/solutions/network-appliances)
   - [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
-  - [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/)
+  - [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway)
   - [Azure の Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
 - **カスタム DNS 管理をサポートする必要がありますか?** [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) は DNS ドメインのホスティング サービスです。 Azure DNS は、Azure インフラストラクチャを使用した名前解決を提供します。 ワークロードに、Azure DNS によって提供される機能を超えた名前解決が必要な場合は、追加のソリューションのデプロイが必要になることがあります。 ワークロードに Active Directory サービスも必要な場合は、[Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/overview) を使用して Azure DNS の機能を拡張することを検討してください。 機能を追加するために、[カスタムの IaaS 仮想マシンをデプロイ](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)して要件をサポートすることもできます。
 

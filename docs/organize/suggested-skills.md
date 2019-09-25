@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7b450165c1356e5297a3424ea8f699dced0422a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 75aa65f9a39576eb807e7b147c2c4a658f693619
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031511"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224293"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>移行の "準備" フェーズ中のスキル準備パス
 
@@ -44,9 +44,9 @@ ms.locfileid: "71031511"
 
 この準備フェーズでは、アーキテクトは、すべての Azure 環境にまたがるソリューションを設計する必要があります。 次のリソースでは、これらのタスクに向けた準備を行うことができます。
 
-- [クラウド アーキテクチャの基礎](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): 適切な基本的ソリューションの設計を支援する PluralSight コース。
-- [Microsoft Azure アーキテクチャ](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): アーキテクトに Azure アーキテクチャの基礎を教える PluralSight コース。
-- [Microsoft Azure 移行の設計](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): アーキテクトが移行ソリューションを設計するのに役立つ PluralSight コース。
+- [クラウド アーキテクチャの基礎](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): 適切な基本的ソリューションの設計を支援する PluralSight コース。
+- [Microsoft Azure アーキテクチャ](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): アーキテクトに Azure アーキテクチャの基礎を教える PluralSight コース。
+- [Microsoft Azure 移行の設計](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): アーキテクトが移行ソリューションを設計するのに役立つ PluralSight コース。
 
 ## <a name="deeper-skills-exploration"></a>より詳細なスキル調査
 
@@ -75,4 +75,4 @@ Microsoft Learn のロール固有のラーニング パスのいくつかの例
 
 - [開発者](/learn/browse/?roles=developer&term=infrastructure)は、アーキテクチャ、ガバナンス、最新化アクティビティで役に立てるように Learn のリソースを使用します。
 
-その他のラーニング パスについては、[Learn のカタログ](/learn/browse/)を参照してください。 [ロール] フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+その他のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 [ロール] フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: e46c045d51bd4961f1cf355352cb84b110a81d81
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: afac61c918f90c21e8d96032199d5e8c1cdfa50c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023532"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222630"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>コスト モデルをデジタル資産に対応付けて、クラウドのコストを予測します
 
@@ -24,7 +24,7 @@ Azure の料金計算ツールを使用すると、透明性と正確性を確�
 
 - [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview):Azure Migrate は、おそらく、コスト モデルを対応付けるうえで最もコスト効率に優れたアプローチです。 このツールでは、デジタル資産の[インベントリ](./inventory.md)、[限定的な合理化](./rationalize.md)、コスト計算に 1 つのツールで対応できます。
 
-- [総保有コスト (TCO) 計算ツール](https://azure.microsoft.com/pricing/tco/calculator/):Azure クラウド プラットフォームを使用して、オンプレミス インフラストラクチャの総保有コストを削減します。 Azure の TCO 計算ツールを使用して、アプリケーション ワークロードを Azure に移行することで実現できるコスト節約額を推定します。 お使いのオンプレミス環境の簡単な説明を指定するだけで、即座にレポートが作成されます。
+- [総保有コスト (TCO) 計算ツール](https://azure.microsoft.com/pricing/tco/calculator):Azure クラウド プラットフォームを使用して、オンプレミス インフラストラクチャの総保有コストを削減します。 Azure の TCO 計算ツールを使用して、アプリケーション ワークロードを Azure に移行することで実現できるコスト節約額を推定します。 お使いのオンプレミス環境の簡単な説明を指定するだけで、即座にレポートが作成されます。
 
 - [Azure 料金計算ツール](https://azure.microsoft.com/pricing):料金計算ツールを使用して、予想される毎月の請求額を見積もります。 課金ポータルを使用して、いつでも実際のアカウントの使用状況と課金を追跡できます。 設定した金額を超えたときに通知を希望する場合は、自動電子メール課金アラートを設定します。
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031957"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221387"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>クラウド監視ガイド:アラート
 
@@ -94,7 +94,7 @@ VM に対する Azure Monitor | 正常性基準は、メトリック ストア�
 
 **ゲスト OS テレメトリ**には、システムで取得するパスがいくつかあります。
 
-- このデータに対してアラートを発する最速の方法は、それをカスタム メトリックとしてインポートすることです。 これは、Azure Diagnostics 拡張機能を使用し、次にメトリック アラートを使用することで行います。 ただし、カスタム メトリックは現在プレビュー段階であり、[他の選択肢よりもコストが高くなります](https://azure.microsoft.com/pricing/details/monitor/)。
+- このデータに対してアラートを発する最速の方法は、それをカスタム メトリックとしてインポートすることです。 これは、Azure Diagnostics 拡張機能を使用し、次にメトリック アラートを使用することで行います。 ただし、カスタム メトリックは現在プレビュー段階であり、[他の選択肢よりもコストが高くなります](https://azure.microsoft.com/pricing/details/monitor)。
 
 - 最もコストが低く、最も低速なのは、Azure ログ Kusto ストアに送信する方法です。 VM 上で Log Analytics エージェントを実行することは、すべてのゲスト オペレーティング システムのメトリックとログ データをこのストアに取り込む方法として最適です。
 
@@ -113,9 +113,9 @@ Azure Monitor for VMs を使用していない場合は、アラートの作成�
 
 - [動的しきい値](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds)。 動的しきい値では、一定期間にわたってリソースのアクティビティを調べ、"通常動作" と見なすしきい値の上限と下限を作成します。 監視対象のメトリックがこれらのしきい値の範囲外になると、アラートを受け取ります。
 
-- [マルチシグナル アラート](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/)。 2 つの異なるリソースの種類からの 2 つの異なる入力の組み合わせを使用するメトリック アラートを作成できます。 たとえば、VM の CPU が 90 パーセントを超え、その VM をフィードしている特定の Azure Service Bus キュー内のメッセージ数が一定量を超えたときにアラートを生成する場合は、ログ クエリを作成せずにそれを実行できます。 これは 2 つのシグナルに対してのみ機能します。 より複雑なクエリがある場合は、メトリック データを Azure Monitor ログ ストアにフィードして、ログ クエリを使用します。
+- [マルチシグナル アラート](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts)。 2 つの異なるリソースの種類からの 2 つの異なる入力の組み合わせを使用するメトリック アラートを作成できます。 たとえば、VM の CPU が 90 パーセントを超え、その VM をフィードしている特定の Azure Service Bus キュー内のメッセージ数が一定量を超えたときにアラートを生成する場合は、ログ クエリを作成せずにそれを実行できます。 これは 2 つのシグナルに対してのみ機能します。 より複雑なクエリがある場合は、メトリック データを Azure Monitor ログ ストアにフィードして、ログ クエリを使用します。
 
-- [マルチソース アラート](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/)。 Azure Monitor では、すべての VM リソースに適用される単一のメトリック アラート ルールを使用できます。 VM ごとに個別のアラートを作成する必要がないため、この機能によって時間を節約できます。 この種類のアラートのコストは同じです。 50 台の VM の CPU 使用率を監視するために 50 のアラートを作成する場合のコストと、50 台すべての VM の CPU 使用率を監視するアラートを 1 つ作成する場合のコストは同じです。 動的しきい値と組み合わせてこれらの種類のアラートを使用することもできます。
+- [マルチソース アラート](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts)。 Azure Monitor では、すべての VM リソースに適用される単一のメトリック アラート ルールを使用できます。 VM ごとに個別のアラートを作成する必要がないため、この機能によって時間を節約できます。 この種類のアラートのコストは同じです。 50 台の VM の CPU 使用率を監視するために 50 のアラートを作成する場合のコストと、50 台すべての VM の CPU 使用率を監視するアラートを 1 つ作成する場合のコストは同じです。 動的しきい値と組み合わせてこれらの種類のアラートを使用することもできます。
 
 これらの機能を併用すると、アラート通知と基になるアラートの管理を最小限に抑えることで時間を節約できます。
 

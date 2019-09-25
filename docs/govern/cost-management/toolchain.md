@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure でのコスト管理ツール
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 230e36d1ca59c208109eedbbdf7466f6373f4b00
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3b301f8dfcc50539f4325901cd32553368a0da55
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031399"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222637"
 ---
 # <a name="cost-management-tools-in-azure"></a>Azure でのコスト管理ツール
 
@@ -31,6 +31,6 @@ ms.locfileid: "71031399"
 |1 つのリソースでの支出の管理     | はい - 手動でサイズ設定         | はい         | いいえ         | はい         |
 |複数のリソースでの支出の適用    | いいえ         | はい         | いいえ         | はい         |
 |リソースへの会計メタデータの適用    | いいえ         | いいえ         | いいえ         | はい         |
-|傾向の監視と検出     | はい - 制限あり         | はい        | はい         | いいえ         |
+|傾向の監視と検出     | はい          | はい        | はい         | いいえ         |
 |異常な支出の検出     | いいえ         | 可能        | はい         | いいえ        |
 |逸脱のソーシャライズ     | いいえ        | 可能        | はい        | いいえ        |

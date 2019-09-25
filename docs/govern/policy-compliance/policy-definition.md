@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リスクを反映および修正するためのポリシーを確立する方法を説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/02/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 699fe253048ba33d3964bdc3093aa4f335aaccc8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4184ccdd4a0efa06d6a842f7ba1d9cbf0dc77ea6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031590"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223734"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>クラウド ガバナンスのための企業ポリシーを定義する
 

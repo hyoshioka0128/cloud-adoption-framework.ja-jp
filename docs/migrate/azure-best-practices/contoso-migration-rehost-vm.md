@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3bc125145afce529507a341eae6b818cceee9330
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1d4538230ae99fd7c22f53e2873645c9b112e46a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024027"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224124"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>オンプレミス アプリを Azure VM にリホストする
 
@@ -95,7 +95,7 @@ Contoso は、Azure Migrate Server Migration ツールのエージェントレ�
 
 **サービス** | **説明** | **コスト**
 --- | --- | ---
-[Azure Migrate Server Migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | このサービスは、オンプレミスのアプリとワークロード、AWS/GCP VM インスタンスの移行を統制し、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 フェールオーバーが発生すると、Azure VM が作成されて料金がかかります。 料金と価格について[詳しくはこちら](https://azure.microsoft.com/pricing/details/azure-migrate/)をご覧ください。
+[Azure Migrate Server Migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | このサービスは、オンプレミスのアプリとワークロード、AWS/GCP VM インスタンスの移行を統制し、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 フェールオーバーが発生すると、Azure VM が作成されて料金がかかります。 料金と価格について[詳しくはこちら](https://azure.microsoft.com/pricing/details/azure-migrate)をご覧ください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -144,7 +144,7 @@ Contoso が VM を Azure に移行するには、以下の Azure コンポーネ
 
 **さらにサポートが必要な場合**
 
-Azure Migrate Server Migration ツールのセットアップについて[ご確認ください](https://docs.microsoft.com/azure/migrate/)。
+Azure Migrate Server Migration ツールのセットアップについて[ご確認ください](https://docs.microsoft.com/azure/migrate)。
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>フェールオーバー後に Azure VM に接続するための準備をする
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a0a2674a91b963154d757eb35290b8aeead5c503
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032280"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222300"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>複雑な企業向けのガバナンス ガイド: 複数レイヤーのガバナンス
 
@@ -57,4 +57,3 @@ ms.locfileid: "71032280"
 - **クラウド導入チーム:** アプリケーションまたはワークロードに関する詳細な決定および実装は、ガバナンス要件のコンテキスト内で、各クラウド導入チームによって行うことができます。 場合によっては、導入作業を迅速化するために、追加の Azure リソース整合性テンプレートをチームが要求することもできます。
 
 各レベルでのガバナンス実装に関する詳細は、各チーム間の調整を必要とします。 このガイドで概説したガバナンス MVP およびガバナンスの向上は、その調整の足並みを揃えるために役立ちます。
-

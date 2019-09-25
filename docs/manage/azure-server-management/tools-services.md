@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032413"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221410"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure サーバー管理ツールおよびサービス
 
@@ -96,4 +96,4 @@ Azure 管理サービスの価格の詳細については、次のページを�
 - [Azure File Sync サービス](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Azure Update Management ソリューションは無料ですが、データ インジェストに関連する多少の費用が発生します。 大体の目安として、1 か月あたりの最初の 5 GB のデータ インジェストが無料です。 一般に、各マシンは 1 か月あたり約 25 MB を使うことがわかっています。 この場合、無料の対象となるマシンは 1 か月に約 200 台となります。 サーバーを追加するたびに、追加したサーバーの数と 1 か月あたりの使用量 25 MB を掛けます。 その値と、必要なストレージ総量のストレージ コストを掛けます。 [ストレージ コストについてはこちらをご覧ください](https://azure.microsoft.com/pricing/details/storage/)。 サーバーを追加するたびに、その分だけコストが影響を受けます。
+> Azure Update Management ソリューションは無料ですが、データ インジェストに関連する多少の費用が発生します。 大体の目安として、1 か月あたりの最初の 5 GB のデータ インジェストが無料です。 一般に、各マシンは 1 か月あたり約 25 MB を使うことがわかっています。 この場合、無料の対象となるマシンは 1 か月に約 200 台となります。 サーバーを追加するたびに、追加したサーバーの数と 1 か月あたりの使用量 25 MB を掛けます。 その値と、必要なストレージ総量のストレージ コストを掛けます。 [ストレージ コストについてはこちらをご覧ください](https://azure.microsoft.com/pricing/details/storage)。 サーバーを追加するたびに、その分だけコストが影響を受けます。

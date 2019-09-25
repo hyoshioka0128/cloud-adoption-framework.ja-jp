@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e32d85fb16ec68eba0896bfb2cf2087c436c050e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4733dbb77d7feb8fd2a0fdd289105cd5e112327
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021912"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224208"
 ---
 # <a name="storage-design-decisions"></a>ストレージ設計に関する決定事項
 
@@ -39,7 +39,7 @@ Azure Storage のデシジョン ツリーに基づいた意思決定に役立�
 - **ビッグ データ分析ワークロードをサポートする必要はありますか。** [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) は Azure Blob Storage 上に構築されています。 Data Lake Storage Gen 2 は、大企業のデータ レイク機能をサポートできます。 また、数ペタバイトの情報の格納を処理しながら、数百ギガビットのスループットを維持することもできます。
 - **クラウド ネイティブなファイル共有を提供する必要がありますか?** Azure には、クラウドでホストされたファイル共有を提供する Azure NetApp Files と Azure Files という 2 つのプライマリ サービスがあります。 [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) は、SAP などの一般的なエンタープライズ ワークロードに最適な高パフォーマンスの NFS 共有を提供します。 [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) は、SMB 3.0 および HTTPS 経由でアクセスできるファイル共有を提供します。
 - **オンプレミスのハイ パフォーマンス コンピューティング (HPC) ワークロード用にハイブリッド クラウド ストレージをサポートする必要はありますか。** [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) は、クラウド ベースのストレージを使用して、オンプレミスのストレージ機能を拡張するために使用できるハイブリッド キャッシュ ソリューションです。 Avere vFXT for Azure は、1,000 ～ 40,000 個の CPU コアのコンピューティング ファームを含む、読み取り負荷の高い HPC ワークロード向けに最適化されています。 Avere vFXT for Azure は、オンプレミスのハードウェア ネットワーク接続ストレージ (NAS)、Azure Blob Storage、またはその両方と統合できます。
-- **オンプレミスのデータのクラウドへの大規模なアーカイブや同期を実行する必要がありますか?** [Azure Data Box](https://docs.microsoft.com/azure/databox-family/) 製品は、オンプレミス環境からクラウドへの大量のデータの移動に役立つように設計されています。 [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) は、オンプレミスに存在する仮想デバイスです。 Data Box Gateway は、クラウドへの大規模なデータ移行を管理するために役立ちます。 クラウドに移動する前にデータを分析、変換、またはフィルター処理する必要がある場合は、オンプレミス環境にデプロイされた AI 対応の物理エッジ コンピューティング デバイスである [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) を使用できます。 Data Box Edge は、データの処理と Azure への安全な転送を高速化します。
+- **オンプレミスのデータのクラウドへの大規模なアーカイブや同期を実行する必要がありますか?** [Azure Data Box](https://docs.microsoft.com/azure/databox-family) 製品は、オンプレミス環境からクラウドへの大量のデータの移動に役立つように設計されています。 [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) は、オンプレミスに存在する仮想デバイスです。 Data Box Gateway は、クラウドへの大規模なデータ移行を管理するために役立ちます。 クラウドに移動する前にデータを分析、変換、またはフィルター処理する必要がある場合は、オンプレミス環境にデプロイされた AI 対応の物理エッジ コンピューティング デバイスである [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) を使用できます。 Data Box Edge は、データの処理と Azure への安全な転送を高速化します。
 - **クラウド ストレージを使用するように既存のオンプレミスのファイル共有を拡張したいと考えていますか?** [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide) では、オンプレミスの Windows Server コンピューターでホストされたファイル共有の拡張機能として Azure Files サービスを使用できます。 この同期サービスは、Windows Server を Azure ファイル共有の高速キャッシュに変換します。 これにより、共有にアクセスするオンプレミスのコンピューターは Windows Server で使用できる任意のプロトコルを使用できます。
 
 ## <a name="common-storage-scenarios"></a>一般的なストレージ シナリオ

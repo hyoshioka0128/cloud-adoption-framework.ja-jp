@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031742"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222320"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善
 
@@ -79,14 +79,14 @@ IT チームは、2 つのデータセンターを廃止する CIO と CFO の�
 - **ハイブリッド VNet ブループリントをセキュリティで保護する:** ハイブリッド ネットワークのオンプレミス側を、次のソリューションとオンプレミスの Active Directory サーバー間の通信を許可するように構成する必要があります。 このベスト プラクティスでは、DMZ でネットワーク境界を越えて Active Directory Domain Services を有効にする必要があります。
 - **Azure Resource Manager テンプレート:**
     1. 外部トラフィックをブロックし、内部トラフィックを許可するように NSG を定義します。
-    1. ゴールデン イメージに基づき、負荷分散ペアの 2 つの Active Directory 仮想マシンをデプロイします。 最初の起動時に、そのイメージで PowerShell スクリプトが実行され、ドメインへの参加とドメイン サービスへの登録が行われます。 詳細については、「[Extend Active Directory Domain Services (AD DS) to Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)」 (Azure への Active Directory Domain Services (AD DS) の拡張) を参照してください。
+    2. ゴールデン イメージに基づき、負荷分散ペアの 2 つの Active Directory 仮想マシンをデプロイします。 最初の起動時に、そのイメージで PowerShell スクリプトが実行され、ドメインへの参加とドメイン サービスへの登録が行われます。 詳細については、「[Extend Active Directory Domain Services (AD DS) to Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)」 (Azure への Active Directory Domain Services (AD DS) の拡張) を参照してください。
 - Azure Policy:すべてのリソースに NSG を適用します。
 - Azure のブループリント:
     1. `active-directory-virtual-machines` という名前のブループリントを作成します。
-    1. ブループリントに、Active Directory テンプレートおよびポリシーをそれぞれ追加します。
-    1. 適用可能な管理グループにブループリントを公開します。
-    1. ブループリントを、レガシまたはサード パーティの多要素認証を必要とするサブスクリプションに適用します。
-    1. これで、Azure で実行されている Active Directory のインスタンスを、オンプレミス Active Directory ソリューションの拡張機能として使用でき、それを既存の多要素認証ツールと統合し、クレームベース認証を提供することができます。既存の Active Directory 機能を使用することもできます。
+    2. ブループリントに、Active Directory テンプレートおよびポリシーをそれぞれ追加します。
+    3. 適用可能な管理グループにブループリントを公開します。
+    4. ブループリントを、レガシまたはサード パーティの多要素認証を必要とするサブスクリプションに適用します。
+    5. これで、Azure で実行されている Active Directory のインスタンスを、オンプレミス Active Directory ソリューションの拡張機能として使用でき、それを既存の多要素認証ツールと統合し、クレームベース認証を提供することができます。既存の Active Directory 機能を使用することもできます。
 
 ## <a name="conclusion"></a>まとめ
 

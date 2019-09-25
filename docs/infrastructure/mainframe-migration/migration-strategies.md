@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8416abd3429a0dafd50eda91323eb74bfb1bf9cd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024390"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221524"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>メインフレームから Azure に切り替える
 
@@ -27,7 +27,7 @@ Azure は、従来のメインフレーム アプリケーションを実行す�
 
 メインフレームのワークロードを実行するために必要な仮想中央処理装置 (vCPU) の数を決定するための汎用のマッピング式はありません。 ただし、100万命令毎秒 (MIPS) のメトリックは、多くの場合、Azure 上の vCPU にマップされます。 MIPS では、特定のマシンの 1 秒あたりのサイクル数を一定の値にすることで、メインフレームの全体的なコンピューティング能力を測定します。
 
-小規模な組織では 500 MIPS 未満で済みますが、大規模な組織は通常 5,000 MIPS を超えます。 1 MIPS あたり 1,000 ドルの場合、大規模な組織では 5,000 MIPS のインフラストラクチャをデプロイするために年間約 500 万ドルを費やします。 この規模の一般的な Azure デプロイの年間コスト見積もりは、MIPS インフラストラクチャのコストの約 1/10 です。 詳細については、[メインフレームから Azure への移行の解明](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration)に関するホワイト ペーパーの表 4 を参照してください。
+小規模な組織では 500 MIPS 未満で済みますが、大規模な組織は通常 5,000 MIPS を超えます。 1 MIPS あたり 1,000 ドルの場合、大規模な組織では 5,000 MIPS のインフラストラクチャをデプロイするために年間約 500 万ドルを費やします。 この規模の一般的な Azure デプロイの年間コスト見積もりは、MIPS インフラストラクチャのコストの約 1/10 です。 詳細については、ホワイト ペーパー「[Demystifying Mainframe-to-Azure Migration (メインフレームから Azure への移行の解明)](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration)」の表 4 を参照してください。
 
 Azure による vCPU への MIPS の正確な計算は、vCPU の種類と実行している正確なワークロードによって変わります。 ただし、ベンチマーク調査は、必要となる vCPU の数と種類を見積もるための優れた基盤となります。 最近の HPE zREF ベンチマークは、以下の見積もりを提供しています。
 

@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンス戦略の一環として企業ポリシーを評価します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/03/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d3a93a47508b68a42a88d18c30c3b3fae0319f2a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4f9258095fa0002848bfe88ae43195c369221cc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032412"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221185"
 ---
 # <a name="evaluate-corporate-policy"></a>企業ポリシーの評価
 

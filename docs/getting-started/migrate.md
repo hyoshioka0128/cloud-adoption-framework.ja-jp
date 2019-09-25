@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023412"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223062"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>クラウド移行の取り組みを始める
 
@@ -84,7 +84,7 @@ Azure 向けの Microsoft Cloud 導入フレームワークを使用してクラ
 - **[準備完了](../ready/index.md):** 今後の変化に備えてビジネス、文化、人材、および環境を整えることによって、各取り組みの成功につながり、実装と変更のプロジェクトが加速します。
 - **導入:** ビジネス成果を達成するために、IT とビジネス プロセス全体で、必要な変更が適切に実装されるようにします。
   - **[移行](../migrate/index.md):** テスト済みのプロセス (評価、移行、最適化、セキュリティ確保と管理) に従って[クラウド実装手法](#cloud-implementation)を繰り返し実行し、ワークロードを移行するための反復可能なプロセスを作成します。
-- **[運用](../operating-model/index.md):** 導入中および導入後のアクティビティをガイドする管理可能な運用モデルを定義します。
+- **[運用](../operate/index.md):** 導入中および導入後のアクティビティをガイドする管理可能な運用モデルを定義します。
   - **[整理](../organize/index.md):** ユーザーとチームを集めて、適切なクラウドの運用と導入に関する知識を伝達します。
   - **[ガバナンス](../govern/index.md):** ポリシー、プロセス、およびクラウド ベースのガバナンス ツールを通じて軽減された具体的なリスクに合わせて、会社のポリシーを調整します。
   - **[管理](../manage/index.md):** 最新のクラウド ファーストの運用ツールを使用して、安全でコスト効率に優れたプロセスを通じてクラウド ベースのソリューションを運用できるように、IT 業務を拡張します。
