@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure の移行におけるコア サービスとしてのクラウド プラットフォーム サブスクリプションについて説明します。
 author: alexbuckgit
 ms.author: abuck
-ms.date: 06/07/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023631"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221012"
 ---
 # <a name="subscription-decision-guide"></a>サブスクリプション決定ガイド
 
@@ -67,13 +67,8 @@ Azure のデジタル資産が増加すると、要件を満たすように追�
 組織ごとにアプリケーションの分類が異なり、多くの場合、特定のアプリケーションやサービスに基づいて、またはアプリケーションのアーキタイプの系統に沿って、サブスクリプションが分けられます。 この分類は、多くの場合、サブスクリプションのリソース制限の大部分を消費する可能性があるワークロードをサポートするように、またはミッション クリティカルなワークロードを分けて、これらの制限の下にある他のワークロードと確実に競合しないように設計されています。 このパターンでの個別サブスクリプションを正当化する可能性のあるワークロードには、次のようなものがあります。
 
 - ミッションクリティカルなワークロード。
-- 保護されたデータを含むアプリケーション。
-- 実験的なアプリケーション。
-- 規制の要件の対象となるアプリケーション (HIPAA や FedRAMP など)。
-- バッチ ワークロード。
-- Hadoop などのビッグ データ ワークロード。
-- Kubernetes などのデプロイ オーケストレーターを使用するコンテナー化されたワークロード。
-- 分析ワークロード。
+- 社内の "売却済商品の原価" (COGS) の一部であるアプリケーション。 例: 会社 X のウィジェットのすべてのインスタンスには、テレメトリを送信する Azure IoT モジュールが含まれています。 そのため、COGS の一部として、会計/ガバナンスの目的で専用のサブスクリプションが必要になる場合があります。
+- HIPAA、FedRAMP など、規制の要件の対象となるアプリケーション。
 
 ### <a name="functional-pattern"></a>機能パターン
 
@@ -97,7 +92,7 @@ Azure のデジタル資産が増加すると、要件を満たすように追�
 
 - [Azure でのリソース アクセス管理](../../govern/resource-consistency/resource-access-management.md)
 - [大企業での複数レイヤーのガバナンス](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [複数の地理的リージョン](../../migrate/expanded-scope/multiple-regions.md)
+- [複数の地理的リージョン](../regions/index.md)
 
 ## <a name="next-steps"></a>次の手順
 

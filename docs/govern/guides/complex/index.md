@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 複雑な企業向けのガバナンス ガイド
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 63b66858c023ff85e1ff6f8adc811540f3034e2d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d2218c812c131c16716e9df1f347b4615e0c6b60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025795"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220560"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>複雑な企業向けのガバナンス ガイド
 
@@ -40,9 +40,10 @@ ms.locfileid: "71025795"
 すべてのアプリケーションを管理グループ、サブスクリプション、リソース グループ階層の適切な領域にデプロイする必要があります。 デプロイ計画の間に、クラウド ガバナンス チームは、クラウド導入チームを支援するために必要なノードを階層に作成します。
 
 1. 地理的な場所そして環境の種類 (運用や非運用など) が反映された詳細な階層を持つ各部署の管理グループを定義します。
-1. 部署、地理的な場所、環境、および "アプリケーション分類" の一意の組み合わせごとにサブスクリプションを作成します。
-1. 各アプリケーションに個別のリソース グループを作成します。
-1. このグループ階層の各レベルで、[一貫性のある用語体系](../../../ready/considerations/naming-and-tagging.md)を適用します。
+2. 個別の部署または地域の一意の組み合わせごとに、運用と非運用のサブスクリプションを作成します。 複数のサブスクリプションを作成する場合は注意が必要です。 詳細については、[こちら](../../../decision-guides/subscriptions/index.md) を参照してください。
+3. このグループ階層の各レベルで、[一貫性のある用語体系](../../../ready/considerations/naming-and-tagging.md)を適用します。
+4. リソース グループは、コンテンツのライフサイクルを考慮した方法でデプロイする必要があります。つまり、一緒に開発されたものはすべて、一緒に管理し、一緒に廃止します。 リソース グループのベスト プラクティスの詳細については、[こちらを参照](../../../decision-guides/resource-consistency/index.md)してください。
+5. [リージョンの選択](../../../decision-guides/regions/index.md)は非常に重要であり、ネットワーク、監視、監査をフェールオーバー/フェールバック用に配置できるように考慮し、[必要な SKU を優先リージョンで使用できる](https://azure.microsoft.com/global-infrastructure/services)ことを確認する必要があります。
 
 ![大企業のリソース編成の図](../../../_images/govern/large-enterprise-resource-organization.png)
 

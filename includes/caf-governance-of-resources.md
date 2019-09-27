@@ -53,6 +53,7 @@ Azure Blueprints を使用すると、複数のサブスクリプション全体
     1. [VPN 参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)で、Azure 内に VPN Gateway を作成するためのパターンとデプロイ モデルを確立します。
     2. オンプレミスのセキュリティとトラフィック管理メカニズムで、接続されているクラウド ネットワークが信頼できないものとして扱われることを検証します。 クラウドでホストされるリソースとサービスでは、許可されたオンプレミス サービスにのみアクセスできる必要があります。
     3. オンプレミス データセンター内のローカル エッジ デバイスが [Azure VPN Gateway の要件](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)と互換性があり、パブリック インターネットにアクセスするように構成されていることを確認します。
+    4. 最も単純なワークロードの場合を除き、VPN トンネルは運用に対応する回線と見なすべきではないことに注意してください。 オンプレミス接続を必要とする少数の単純なワークロードを超える場合は、Azure ExpressRoute を利用することをお勧めします。
 1. ルート管理グループ内で、`secure-hybrid-vnet` という名前のブループリント定義をもう 1 つ作成します。
     1. VPN Gateway の Resource Manager テンプレートをブループリント定義にアーティファクトとして追加します。
     2. 仮想ネットワークの Resource Manager テンプレートをブループリント定義にアーティファクトとして追加します。

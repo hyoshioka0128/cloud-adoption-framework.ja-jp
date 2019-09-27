@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1ddb65153cde9fac7426c8ef9b10f58a60918b82
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023857"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223876"
 ---
 # <a name="architectural-decision-guides"></a>アーキテクチャの決定ガイド
 
@@ -42,7 +42,9 @@ ms.locfileid: "71023857"
 
 [暗号化](./encryption/index.md):組織のコンプライアンスとセキュリティ ポリシーの要件に合うように、暗号化を使用して機密データをセキュリティで保護します。
 
-[ログとレポート](./logging-and-reporting/index.md):クラウドベースのリソースによって生成されたログ データを監視します。 データを分析することで、ワークロードの運用、保守、およびコンプライアンスの状況について、正常性に関する分析情報が得られます。
+[ログ記録とレポート](./logging-and-reporting/index.md):クラウドベースのリソースによって生成されたログ データを監視します。 データを分析することで、ワークロードの運用、保守、およびコンプライアンスの状況について、正常性に関する分析情報が得られます。
+
+[地域別のガイダンス](./regions/index.md):Azure プラットフォーム内のリソースのリージョン配置の適切な決定基準について説明します。
 
 ## <a name="next-steps"></a>次の手順
 
