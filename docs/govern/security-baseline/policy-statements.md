@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: セキュリティ ベースラインのサンプル ポリシー ステートメント
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 253646b16d98a35c8cae8eb7f5c57aa60d55d580
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032075"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221660"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>セキュリティ ベースラインのサンプル ポリシー ステートメント
 
@@ -40,7 +40,7 @@ ms.locfileid: "71032075"
 
 **ポリシー ステートメント:** すべての保護対象データは暗号化した状態で保存される必要があります。
 
-**使用可能な設計オプション:** Azure プラットフォームで保存データの暗号化を行う方法については、「[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)」を参照してください。
+**使用可能な設計オプション:** Azure プラットフォームで保存データの暗号化を行う方法については、「[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)」を参照してください。 アカウント データの暗号化やストレージ アカウント設定の変更方法の制御などのその他の制御も考慮する必要があります。
 
 ## <a name="network-isolation"></a>ネットワークの分離
 
@@ -54,17 +54,17 @@ ms.locfileid: "71032075"
 
 **技術的なリスク:** パブリック インターネットからワークロードへのアクセスを許可すると、承認されていないデータの漏洩やビジネスの中断の原因になる侵入のリスクが発生します。
 
-**ポリシー ステートメント:** 保護対象データが含まれているどのサブネットにも、パブリック インターネット経由で、またはデータセンターをまたいで直接アクセスすることはできません。 それらのサブネットへのアクセスは、中間サブネットワークを介してルーティングされる必要があります。 それらのサブネットへのアクセスはすべて、パケットのスキャンおよびブロック機能を実行できるファイアウォール ソリューション経由で行われる必要があります。
+**ポリシー ステートメント:** 保護対象データが含まれているどのサブネットにも、パブリック インターネット経由で、またはデータセンターをまたいで直接アクセスすることはできません。 それらのサブネットへのアクセスは、中間サブネットを介してルーティングされる必要があります。 それらのサブネットへのアクセスはすべて、パケットのスキャンおよびブロック機能を実行できるファイアウォール ソリューション経由で行われる必要があります。
 
-**使用可能な設計オプション:** Azure では、[パブリック インターネットとクラウドベースのネットワークの間に DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) をデプロイすることで、パブリック エンドポイントをセキュリティ保護します。
+**使用可能な設計オプション:** Azure では、[パブリック インターネットとクラウドベースのネットワークの間に DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) をデプロイすることで、パブリック エンドポイントをセキュリティ保護します。 [Azure Firewall](https://docs.microsoft.com/azure/firewall) のデプロイ、構成、および自動化を検討してください。
 
 ## <a name="ddos-protection"></a>DDoS 保護
 
 **技術的なリスク:** 分散型サービス拒否 (DDoS) 攻撃により、業務が中断する可能性があります。
 
-**ポリシー ステートメント:** パブリックにアクセス可能なすべてのネットワーク エンドポイントに、自動化された DDoS リスク軽減メカニズムをデプロイします。
+**ポリシー ステートメント:** パブリックにアクセス可能なすべてのネットワーク エンドポイントに、自動化された DDoS リスク軽減メカニズムをデプロイします。 IaaS によってサポートされる一般向け Web サイトは、DDoS なしでインターネットに公開しないでください。
 
-**使用可能な設計オプション:** [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) を使用して、DDoS 攻撃による中断を最小限に抑えます。
+**使用可能な設計オプション:** [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Standard を使用して、DDoS 攻撃による中断を最小限に抑えます。
 
 ## <a name="secure-on-premises-connectivity"></a>オンプレミスの接続をセキュリティ保護する
 
@@ -88,7 +88,7 @@ ms.locfileid: "71032075"
 
 **ポリシー ステートメント:** クラウドのデプロイに影響を及ぼす可能性があるトレンドおよび潜在的悪用をセキュリティ チームが定期的にレビューし、クラウドで使用されるセキュリティ ベースライン ツールの更新を提供する必要があります。
 
-**使用可能な設計オプション:** 関連する IT およびガバナンス チームのメンバーが参加するセキュリティ レビュー会議を定期的に行います。 既存のセキュリティ データとメトリックのレビューを行って、現在のポリシーとセキュリティ ベースライン ツールのギャップを確かめ、新しいリスクを修復するようにポリシーを更新します。
+**使用可能な設計オプション:** 関連する IT およびガバナンス チームのメンバーが参加するセキュリティ レビュー会議を定期的に行います。 既存のセキュリティ データとメトリックのレビューを行って、現在のポリシーとセキュリティ ベースライン ツールのギャップを確かめ、新しいリスクを修復するようにポリシーを更新します。 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) と [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) を利用すると、デプロイに固有の新たな脅威に関する実用的な分析情報を得ることができます。
 
 ## <a name="next-steps"></a>次の手順
 

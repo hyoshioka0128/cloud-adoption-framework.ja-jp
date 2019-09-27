@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 規制コンプライアンスの概要
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031371"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222031"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>規制コンプライアンスの概要
 
-これは規制コンプライアンスについての入門記事であり、したがってコンプライアンス戦略の実装については触れられていません。 単に一般的な認識を促すためのものです。 [Azure のコンプライアンス認証](https://aka.ms/allcompliance)の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx) をご覧ください。 さらに、Azure の特定のお客様は、[Microsoft Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
+これは規制コンプライアンスについての入門記事であり、したがってコンプライアンス戦略の実装については触れられていません。 [Azure のコンプライアンス認証](https://aka.ms/allcompliance)の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx) をご覧ください。 さらに、Azure の特定のお客様は、[Microsoft Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
 
 規制コンプライアンスとは、地域の行政機関によって施行される法律、または自主的に採択された業界標準で要求されている規則に企業が従うことを保証するための規範とプロセスのことです。 IT 規制コンプライアンスの場合、ユーザーやプロセスが企業システムを監視し、これらの準拠法、規制、標準によって確立されたポリシーや手順への違反を検出して防ぎます。 これはさらに、幅広い監視と強制のプロセスに適用されます。 業界や地域によっては、長くて複雑なプロセスになることがあります。
 
@@ -42,7 +42,7 @@ Payment Card Industry Data Security Standard (PCI DSS) は、Visa、MasterCard�
 
 ## <a name="gdpr"></a>GDPR
 
-この分野で最も重要な開発の 1 つは、欧州委員会の一般データ保護規則 (GDPR) による、欧州連合内の個人データの保護を強化することを目的として設計された、最近の法律の制定です。 GDPR では、個人に関するデータ ("名前、自宅の住所、写真、メール アドレス、銀行の詳細、ソーシャル ネットワーキング Web サイトへの投稿、医療情報、コンピューターの IP アドレス" など) を、EU 内のサーバーの保持し、EU 外に転送してはならないことが、要求されています。 また、企業に対し、データ侵害があった場合は個人に通知することと、データ保護担当者 (DPO) を置くことが、要求されています。 他の国でも、同様の規制が制定済みまたは制定中です。
+この分野で最も重要な開発の 1 つは、欧州連合内の個人のデータ保護を強化するように設計された一般データ保護規則 (GDPR) です。 GDPR では、個人に関するデータ ("名前、自宅の住所、写真、メール アドレス、銀行の詳細、ソーシャル ネットワーキング Web サイトへの投稿、医療情報、コンピューターの IP アドレス" など) を、EU 内のサーバーの保持し、EU 外に転送してはならないことが、要求されています。 また、企業に対し、データ侵害があった場合は個人に通知することと、データ保護担当者 (DPO) を置くことが、要求されています。 他の国でも、同様の規制が制定済みまたは制定中です。
 
 ## <a name="compliant-foundation-in-azure"></a>Azure での準拠の基盤
 

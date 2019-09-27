@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031827"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221380"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 
@@ -21,7 +21,7 @@ Azure サーバー管理サービスのデプロイの効率を向上させる�
 
 ## <a name="onboarding-by-using-automation"></a>Automation を使用したオンボード
 
-このガイダンスには、[CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples) という、サンプル コードのサポートされている GitHub リポジトリがあります。ここでは、Azure サーバー管理サービスのデプロイの自動化に役立つスクリプト例と Azure Resource Manager テンプレートが提供されています。
+このガイダンスには、[CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples) という、サンプル コードのサポートされている GitHub リポジトリがあります。ここでは、Azure サーバー管理サービスのデプロイの自動化に役立つスクリプト例と Azure Resource Manager テンプレートが提供されています。
 
 これらのサンプル ファイルでは、Azure PowerShell コマンドレットを使用して次のタスクを自動化する方法が示されています。
 

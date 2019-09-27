@@ -4,29 +4,29 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ID ベースラインの動機とビジネス上のリスク
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c838063c77b02af4ec86187854a15d93b2998ef
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031156"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222178"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>ID ベースラインの動機とビジネス上のリスク
 
-この記事では、クラウド ガバナンス戦略でお客様が ID ベースラインの規範を一般的に採用する理由について説明します。 ポリシー ステートメントを推進するビジネス リスクの例もいくつか提示します。
+この記事では、クラウド ガバナンス戦略でお客様が ID ベースラインの規範を一般的に採用する理由について説明します。 ポリシー ステートメントを追いやるビジネス リスクの例もいくつか示します。
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-identity-baseline-relevant"></a>ID ベースラインの関連性
+## <a name="identity-baseline-relevancy"></a>ID ベースラインの関連性
 
 従来のオンプレミス ディレクトリは、企業が社内ネットワークおよびデータ センター内のユーザー、グループ、ロールに対するアクセス許可とポリシーを厳密に制御できるように設計されています。 これは通常、オンプレミス環境内でのみ適用可能なサービスを使用して、シングル テナントの実装をサポートすることを目的としています。
 
-クラウド ID サービスは、組織の認証とアクセスの制御の機能をインターネットに拡大することを目的としています。 これらはマルチテナントをサポートしており、クラウド アプリケーションとデプロイ全体でユーザーとアクセス ポリシーを管理するために使用できます。 パブリック クラウド プラットフォームは、管理タスクとデプロイ タスクをサポートする何らかの形式のクラウド ネイティブの ID サービスを備えており、既存のオンプレミスの ID ソリューションを使用して、[統合のレベルを変える](../../decision-guides/identity/index.md)ことができます。 これらすべての機能によって、従来のオンプレミス ソリューションが必要とする以上の複雑なクラウド ID ポリシーになる可能性があります。
+クラウド ID サービスによって、組織の認証とアクセスの制御の機能がインターネットに拡大されます。 これらはマルチテナントをサポートしており、クラウド アプリケーションとデプロイ全体でユーザーとアクセス ポリシーを管理するために使用できます。 パブリック クラウド プラットフォームは、管理タスクとデプロイ タスクをサポートするクラウド ネイティブの ID サービスを備えており、既存のオンプレミスの ID ソリューションを使用して、[統合のレベルを変える](../../decision-guides/identity/index.md)ことができます。 これらすべての機能によって、従来のオンプレミス ソリューションが必要とする以上の複雑なクラウド ID ポリシーになる可能性があります。
 
 クラウド デプロイにとっての ID ベースラインの規範の重要性は、チームの規模と、クラウド ベースの ID ソリューションを既存のオンプレミスの ID サービスと統合する必要性によって決まります。 初期テスト デプロイでは、ユーザーの組織や管理はそれほど必要ありませんが、クラウド資産が成長するにつれ、より複雑な組織の統合と一元管理のサポートが必要になる可能性があります。
 

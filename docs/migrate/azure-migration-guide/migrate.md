@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022785"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224076"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>資産の移行 (インフラストラクチャ、アプリ、データ)
 
@@ -196,6 +196,14 @@ Database Experimentation Assistant には、以下のワークフロー アク�
 
 - [Database Experimentation Assistant の概要](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
+## <a name="cosmos-db-data-migration-tool"></a>Cosmos DB データ移行ツール
+
+Azure Cosmos DB データ移行ツールでは、さまざまなソースからのデータを Azure Cosmos DB コレクションおよびテーブルにインポートできます。 JSON ファイル、CSV ファイル、SQL、MongoDB、Azure テーブル ストレージ、Amazon DynamoDB、さらには Azure Cosmos DB SQL API コレクションからインポートすることができます。 データ移行ツールは、SQL API の 1 つの単一パーティション コレクションから複数パーティション コレクションに移行する場合にも使用できます。
+
+詳細については、次を参照してください。
+
+- [Cosmos DB データ移行ツール](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[サード パーティの移行ツール](#tab/third-party-tools)
 
 移行プロセスを支援する、サード パーティの各種移行ツールおよび ISV サービスを利用できます。 それぞれ利点や長所が異なります。 これには以下のツールが含まれます。
@@ -224,16 +232,28 @@ Movere は、クラウド移行の計画と IT 環境の継続的な最適化、
 
 [詳細情報](https://www.movere.io)
 
+## <a name="cosmos-db-partners"></a>Cosmos DB パートナー
+
+NoSQL データベースの要件に合わせて Azure Cosmos DB の移行をサポートするために、多様で経験豊富なシステム インテグレーターのパートナーやツールから選択できます。
+
+[詳細情報](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+
 [Azure Migration Center](https://azure.microsoft.com/migration/support) にアクセスして、お客様の移行シナリオに合わせてすぐに使えるパートナー テクノロジ ソリューションを提供する組織を探したり、その他のサード パーティの移行ツールやサポート サービスの情報を入手してください。
+
+さまざまなデータベース移行オプションと、ネイティブおよびパートナーとのステップバイステップ ガイダンスについては、「[Azure データベース移行ガイド](https://datamigration.microsoft.com)」を参照してください。
 
 # <a name="project-management-toolstabproject-management-tools"></a>[プロジェクト管理ツール](#tab/project-management-tools)
 
-追跡も管理もされていないプロジェクトでは、問題が発生しやすくなります。 確実に成功を収めるためには、お客様がプロジェクト管理ツールを使用することが重要であると Microsoft では考えています。 利用可能なさまざまなツールがあり、組織のプロジェクト マネージャーが気に入っているツールが既にあるかもしれません。 Microsoft では以下のプロジェクト管理ツールを提供しており、これらは連携してより広範な機能を提供できます。
+追跡も管理もされていないプロジェクトでは、問題が発生しやすくなります。 確実に成功を収めるためには、お客様がプロジェクト管理ツールを使用することが重要であると Microsoft では考えています。 利用可能なさまざまなツールがあり、組織のプロジェクト マネージャーが気に入っているツールが既にあるかもしれません。
+
+Azure DevOps は、クラウド移行時のプロジェクト管理に推奨されるツールです。 Azure DevOps の使用を高速化するために、クラウド導入フレームワークには、プロジェクト テンプレートを自動的にデプロイするためのツールが含まれています。 このテンプレートには、移行作業中に一般的に実行されるタスクが含まれています。 [こちらの手順](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template)に従って、テンプレートをデプロイします。 これで、移行する[ワークロード](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads)と[資産](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets)を反映するようにテンプレートを変更できるようになります。
+
+Microsoft では以下のプロジェクト管理ツールも用意しており、これらを併用してより広範な機能を提供できます。
 
 - [Microsoft Planner](https://tasks.office.com):チームワークを組織化するためのシンプルで視覚的な方法。
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software):プロジェクトおよびポートフォリオ管理、リソース キャパシティ管理、財務管理、タイムシートおよびスケジュール管理。
 - [Microsoft Teams](https://products.office.com/microsoft-teams):チームのコラボレーションとコミュニケーションのためのツール。 Teams を Planner やその他のツールと統合し、コラボレーションを強化することもできます。
-- [Azure DevOps](https://dev.azure.com):Azure DevOps を使用して、インフラストラクチャをコードとして管理できます。または、作業項目とボードを使用してプロジェクト管理を実行することもできます。 発展に合わせて、組織で CI/CD 機能を利用できます。
+- [Azure DevOps](https://dev.azure.com):Azure DevOps を使用するために、クラウド導入フレームワークの計画テンプレートは必要ありません。 テンプレートを使用せずにサービスを使用して、コードとしてインフラストラクチャを管理することや、作業項目とボードを使用してプロジェクト管理を実行することができます。 発展に合わせて、組織で CI/CD 機能を利用できます。
 
 利用可能なツールはこれらに限られません。 他にも多くのサード パーティ製ツールが、プロジェクト管理コミュニティで広く使用されています。
 

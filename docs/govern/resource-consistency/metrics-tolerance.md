@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リソースの整合性のメトリック、指標、およびリスク許容度
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031800"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222947"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>リソースの整合性のメトリック、指標、およびリスク許容度
 
-この記事は、リソースの整合性に関連したビジネス リスク許容度の定量化を支援することを目的にしています。 メトリックと指標を定義すると、リソースの整合性規範の成熟度への投資を行うためのビジネス ケースの作成に役立ちます。
+この記事は、リソースの整合性に関連したビジネス リスク許容度を定量化するために役立ちます。 メトリックと指標を定義すると、リソースの整合性規範の成熟度への投資を行うためのビジネス ケースの作成に役立ちます。
 
 ## <a name="metrics"></a>メトリック
 
@@ -33,7 +33,7 @@ ms.locfileid: "71031800"
 - **リソース経過時間。** リソースが最後にデプロイまたは変更されてからの時間。
 - **重大状況の VM。** 1 つ以上の重大な問題が検出されており、正常な機能に戻すには対処する必要があるデプロイ済み VM の数。
 - **重大度別アラート。** デプロイ済み資産に対するアラートの合計数を重大度別に分類したもの。
-- **異常なサブネット リンク。** ネットワーク接続の問題があるリソースの数。
+- **異常なネットワーク リンク。** ネットワーク接続の問題があるリソースの数。
 - **異常なサービス エンドポイント。** 外部ネットワーク エンドポイントに関する問題の数。
 - **クラウド プロバイダー サービス正常性インシデント。** クラウド プロバイダーが原因の中断またはパフォーマンス インシデントの数。
 - **サービス レベル アグリーメント。** これには、Azure サービスのアップタイムと接続に関する Microsoft のコミットメントと、企業が外部および内部の顧客に対して行うコミットメントの両方が含まれる場合があります。

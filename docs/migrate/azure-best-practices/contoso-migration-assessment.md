@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025035"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221455"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Azure への移行の対象となるオンプレミスのワークロードを評価する
 
@@ -242,8 +242,8 @@ Contoso が VM を探索するには、Azure Migrate プロジェクトを作成
 
 6. * *[プロジェクトの詳細]* で、プロジェクト名と、プロジェクトを作成したい地理的な場所を指定します。 米国、アジア、ヨーロッパ、オーストラリア、英国、カナダ、インド、日本がサポートされています。
 
-    * プロジェクトの地理的な場所は、オンプレミスの VM から収集されたメタデータを格納するためにのみ使用されます。
-    * 移行を実行するときは、任意のターゲット リージョンを選択できます。
+    - プロジェクトの地理的な場所は、オンプレミスの VM から収集されたメタデータを格納するためにのみ使用されます。
+    - 移行を実行するときは、任意のターゲット リージョンを選択できます。
 
 7. **[次へ]** をクリックします。
 
@@ -312,14 +312,13 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
 
     ![Azure Migrate Collector - 前提条件の確認](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. **Azure** アカウントにログインし、サブスクリプションと先ほど作成した移行プロジェクトを選択します。 また、**アプライアンス**の名前を入力して、Azure portal で識別できるようにします。 
-7. **[vCenter Server の詳細を指定する]** で、vCenter Server インスタンスの名前 (FQDN) または IP アドレスと、検出に使用する読み取り専用の資格情報を指定します。
-8. VM 検出のスコープを選択します。 コレクターは、指定されたスコープ内の VM のみを検出できます。 スコープは、特定のフォルダー、データセンター、またはクラスターに設定できます。 
+5. **Azure** アカウントにログインし、サブスクリプションと先ほど作成した移行プロジェクトを選択します。 また、**アプライアンス**の名前を入力して、Azure portal で識別できるようにします。
+6. **[vCenter Server の詳細を指定する]** で、vCenter Server インスタンスの名前 (FQDN) または IP アドレスと、検出に使用する読み取り専用の資格情報を指定します。
+7. VM 検出のスコープを選択します。 コレクターは、指定されたスコープ内の VM のみを検出できます。 スコープは、特定のフォルダー、データセンター、またはクラスターに設定できます。
 
     ![vCenter Server の詳細を指定する](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-
-8. これでコレクターは、Contoso の環境に関する情報の検出と収集を開始します。 
+8. これでコレクターは、Contoso の環境に関する情報の検出と収集を開始します。
 
     ![コレクションの進行状況の表示](./media/contoso-migration-assessment/migrate-disccovery.png)
 
@@ -349,7 +348,7 @@ VM を変更する前に VM のコピーを保管するために、エージェ�
 
 1. **[マシン]** でマシンを選択します。 **[依存関係]** 列の **[要インストール]** を選択します。
 2. **[マシンの検出]** ウィンドウで以下の操作を行います。
-    - Windows VM ごとに Microsoft Monitoring Agent (MMA) と Dependency Agent をダウンロードします。
+    - Windows VM ごとに Microsoft Monitoring Agent (MMA) と Microsoft Dependency Agent をダウンロードします。
     - Linux VM ごとに MMA と Dependency Agent をダウンロードします。
 3. ワークスペース ID とキーをコピーします。 ワークスペース ID とキーは、MMA をインストールするときに必要です。
 
@@ -389,9 +388,11 @@ Contoso は VM ごとにインストールを実行します。
 1. 次のコマンドを使用して、VM ごとに Python の ctypes ライブラリをインストールします。
 
     `sudo apt-get install python-ctypeslib`
+
 2. MMA エージェントをインストールするコマンドは、root として実行する必要があります。 ルートになるには、次のコマンドを実行し、root のパスワードを入力します。
 
     `sudo -i`
+
 3. MMA をインストールします。
     - コマンドでワークスペース ID とキーを入力します。
     - コマンドは 64 ビット用です。
@@ -404,7 +405,7 @@ Contoso は VM ごとにインストールを実行します。
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Linux VM に Dependency Agent をインストールする
 
-MMA をインストールした後、Contoso は Linux VM に Dependency Agent をインストールします。
+MMA をインストールした後、Contoso では Linux VM に Dependency Agent をインストールします。
 
 1. Dependency Agent を Linux コンピューターにインストールするには、InstallDependencyAgent-Linux64.bin (自己解凍バイナリを含むシェル スクリプト) を使用します。 sh を使用してそのファイルを実行するか、実行アクセス許可をファイル自体に追加します。
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: デプロイ高速化のサンプル ポリシー ステートメント
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4a2b1666332ca884dfb95b2b2372f3b5518bd635
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032282"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222651"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>デプロイ高速化のサンプル ポリシー ステートメント
 
@@ -32,7 +32,7 @@ ms.locfileid: "71032282"
 
 **ポリシー ステートメント:** クラウドにデプロイされるすべての資産は、可能な限りテンプレートまたは自動化スクリプトを使用してデプロイする必要があります。
 
-**使用可能な設計オプション:** [Azure Resource Manager テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment)で、リソースを Azure にデプロイするための、コードとしてのインフラストラクチャ手法が提供されます。 [Azure の構成要素](https://github.com/mspnp/template-building-blocks/wiki)で、コマンドライン ツールと、Azure リソースのデプロイの簡略化を意図した Resource Manager テンプレートのセットが提供されます。
+**使用可能な設計オプション:** [Azure Resource Manager テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment)で、リソースを Azure にデプロイするための、コードとしてのインフラストラクチャ手法が提供されます。 整合性のあるオンプレミスおよびクラウドベースのデプロイ ツールとして [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) を使用することもできます。
 
 ## <a name="lack-of-visibility-into-system-issues"></a>システムの問題の可視化の欠如
 
@@ -43,21 +43,21 @@ ms.locfileid: "71032282"
 - 主要なメトリックと診断方法がすべての実稼働システムとコンポーネントに対して識別されます。また、監視ツールと診断ツールがそれらのシステムに適用され、運用担当者によって定期的に監視されます。
 - 運用では、ステージングや QA などの非運用環境で監視ツールと診断ツールを使用して、運用環境でシステムの問題が発生する前にそれらの問題を識別することを検討します。
 
-**使用可能な設計オプション:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor) には Log Analytics と Application Insights も含まれており、テレメトリを収集して分析するためのツールが提供されます。このツールは、アプリケーションの実行状況を把握し、それらのアプリケーションに影響を与える問題およびそれらのアプリケーションが依存するリソースを事前に識別するのに役立ちます。
+**使用可能な設計オプション:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor) には Log Analytics と Application Insights も含まれており、テレメトリを収集して分析するためのツールが提供されます。このツールは、アプリケーションの実行状況を把握し、それらのアプリケーションに影響を与える問題およびそれらのアプリケーションが依存するリソースを事前に識別するのに役立ちます。 さらに、[Azure アクティビティ ログ](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)では、プラットフォーム レベルで行われ、準拠していない変更について監視/監査する必要があるすべての変更が報告されます。
 
 ## <a name="configuration-security-reviews"></a>構成セキュリティ のレビュー
 
 **技術的なリスク:** 時間が経つにつれて、新しいセキュリティ上の脅威または懸念により、セキュリティで保護されたリソースへの不正アクセスのリスクが高まる可能性があります。
 
-**ポリシー ステートメント:** クラウド ガバナンスのプロセスには、クラウド資産の構成によって阻止する必要がある悪意のあるアクターや使用パターンを識別するために、構成管理チームとの四半期ごとのレビューを含める必要があります。
+**ポリシー ステートメント:** クラウド ガバナンスのプロセスには、クラウド資産の構成によって阻止する必要がある悪意のあるアクターや使用パターンを識別するために、構成管理チームとの毎月のレビューを含める必要があります。
 
-**使用可能な設計オプション:** ガバナンスのチーム メンバーと、クラウド アプリケーションとリソースの構成を担当する IT スタッフの両方が参加する、四半期ごとのセキュリティ レビュー会議を設定します。 既存のセキュリティ データとメトリックのレビューを行って、現在のデプロイ高速化のポリシーとツールのギャップを明らかにし、新しいリスクを修復するようにポリシーを更新します。
+**使用可能な設計オプション:** ガバナンスのチーム メンバーと、クラウド アプリケーションとリソースの構成を担当する IT スタッフの両方が参加する、毎月のセキュリティ レビュー会議を設定します。 既存のセキュリティ データとメトリックのレビューを行って、現在のデプロイ高速化のポリシーとツールのギャップを明らかにし、新しいリスクを修復するようにポリシーを更新します。
 
 ## <a name="next-steps"></a>次の手順
 
 この記事で説明されているサンプルを開始点として使用し、クラウドの導入計画に合致する特定のビジネス上のリスクに対処するポリシーを作成します。
 
-ID 管理に関連する独自のカスタム ポリシー ステートメントを作成するには、[ID ベースライン テンプレート](./template.md)をダウンロードします。
+ID 管理に関連する独自のカスタム ポリシー ステートメントを作成するには、[ID ベースライン テンプレート](../identity-baseline/template.md)をダウンロードします。
 
 この規範の導入を促進するには、ご使用の環境に最も合う[実践的なガバナンス ガイド](../guides/index.md)を選択します。 その後、設計を変更して、特定の企業ポリシーの決定を組み込みます。
 

@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b65f0ea129888440fbfa7598a6bc7790ad91b177
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031729"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223988"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 
@@ -168,7 +168,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 つまり、Azure AD はオンプレミスの Active Directory と同じでは "*ありません*"。Azure AD テナントは何か、Azure 加入契約とどのように関連しているかを理解することが重要です。 Azure AD とオンプレミスの Active Directory の基本を確実に学ぶためには、[こちら](../govern/resource-consistency/resource-access-management.md)の情報を確認してください。 Active Directory を Azure AD に接続して同期するには、[Azure AD Connect ツール](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
 
-![アーキテクチャ ダイアグラム](../_images/reference/ad-architecture.png)
+![AD アーキテクチャの図](../_images/reference/ad-architecture.png)
 
 Azure が最初にリリースされたときには、サブスクリプションに対するアクセス制御が基本でした (管理者または共同管理者)。 クラシック モデルでのサブスクリプションへのアクセスは、ポータルでのすべてのリソースへのアクセスを意味していました。 きめ細かく制御することができなかったため、Azure 加入契約に一定レベルの妥当なアクセス制御を提供するためにサブスクリプションが急増しました。 このようにサブスクリプションを急増させる必要はなくなりました。 ロールベースのアクセス制御 (RBAC) では、"所有者"、"共同作成者"、"閲覧者" など一般的なアクセス権を提供する標準ロールをユーザーに割り当てることができます。独自のロールを作成することもできます。
 

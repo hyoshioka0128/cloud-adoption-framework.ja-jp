@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025214"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223928"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>移行ランディング ゾーンをデプロイする
 
@@ -33,7 +33,7 @@ ms.locfileid: "71025214"
 ![ブループリントの配置](../../_images/ready/blueprint-overview.png)
 
 - 文字 A は、このブループリントの範囲を示す曲線の内側にあります。 この範囲が意味する内容は、このブループリントは、対応しているアーキテクチャの複雑性は限定的であるが、比較的中間のコンプライアンス要件に基づいて構築されているということです。
-- 高度な複雑さと厳格なコンプライアンス要件を持つお客様は、パートナーの拡張ブループリント、または[標準に基づくブループリント サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/)の 1 つを利用することで、より適切に対応できると考えられます。
+- 高度な複雑さと厳格なコンプライアンス要件を持つお客様は、パートナーの拡張ブループリント、または[標準に基づくブループリント サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples)の 1 つを利用することで、より適切に対応できると考えられます。
 - ほとんどのお客様は、対極にあるこれら 2 つのケースの間のどこかに該当します。 文字 B は、「[ランディング ゾーンに関する考慮事項](../considerations/index.md)」の記事に記載されているプロセスを表します。 このスペース内のお客様は、それらの記事にある意思決定ガイドを使用して、クラウド導入フレームワークの移行ランディング ゾーンのブループリントに追加するノードを特定できます。 この方法では、ニーズに合わせてブルー プリントをカスタマイズできます。
 
 ## <a name="use-this-blueprint"></a>このブループリントを使用する
@@ -65,7 +65,7 @@ ms.locfileid: "71025214"
 |サブスクリプション デザイン|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../considerations/scaling-subscriptions.md)|
 |管理グループ|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../considerations/scaling-subscriptions.md)         |
 |リソース グループ|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../considerations/scaling-subscriptions.md)         |
-|Data|該当なし|[Azure で適切な SQL Server オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|Data|該当なし|「[Azure SQL で適切なデプロイ オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json)」と [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Storage|該当なし|[Azure Storage ガイダンス](../considerations/storage-guidance.md)         |
 |名前付けとタグ付けの標準|該当なし|[名前付けとタグ付けのベスト プラクティス](../considerations/naming-and-tagging.md)         |
 |コスト管理|該当なし|[コストの追跡](../azure-best-practices/track-costs.md)|
@@ -73,7 +73,7 @@ ms.locfileid: "71025214"
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>このブループリントからランディング ゾーンをカスタマイズまたはデプロイする
 
-デプロイまたはカスタマイズの詳細については、「[Azure Blueprints サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/index)」で、クラウド導入フレームワークの移行ランディング ゾーンのブループリントの参照サンプルを参照し、ダウンロードしてください。
+デプロイまたはカスタマイズの詳細については、「[Azure Blueprints サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples)」で、クラウド導入フレームワークの移行ランディング ゾーンのブループリントの参照サンプルを参照し、ダウンロードしてください。
 
 ブループリントのサンプルは、ポータル内でも使用できます。 ブループリントをデプロイする方法の詳細については、[Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint) に関するページを参照してください。
 

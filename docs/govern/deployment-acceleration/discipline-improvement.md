@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: デプロイ加速規範の改良
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7cff2c0cbf8fea06ea7ebdfaaade1c8538802639
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032004"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220749"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>デプロイ加速規範の改良
 
@@ -52,6 +52,7 @@ ms.locfileid: "71032004"
 
 - 新しいクラウドベースのアプリケーションでは、完全に自動化されたデプロイを早期の開発プロセスに導入します。 この投資によって、テスト プロセスの信頼性が向上し、開発、QA、および運用環境における一貫性が確保されます。
 - デプロイ テンプレートや構成スクリプトなどのデプロイのすべての成果物を、GitHub や Azure DevOps などのソース管理プラットフォームを使用して格納します。
+- すべてのシークレット、パスワード、証明書、および接続文字列を [Azure Key Vault](https://docs.microsoft.com/azure/key-vault) に格納します。
 - ご自身の[デプロイ加速ツールチェーン](./toolchain.md)を実装する前にパイロット テストの実施を検討し、デプロイが可能な限り合理化されていることを確認します。 デプロイ前フェーズで、必要に応じてパイロット テストからのフィードバックを繰り返し適用します。
 - アプリケーションの論理および物理アーキテクチャを評価し、他のクラウドベースのリソースを使用して、アプリケーションのリソースのデプロイを自動化したり、アーキテクチャの特定の部分を改良したりする機会を特定します。
 - デプロイとユーザー導入計画を含むようにアーキテクチャ ガイドライン ドキュメントを更新し、主な利害関係者に配布します。

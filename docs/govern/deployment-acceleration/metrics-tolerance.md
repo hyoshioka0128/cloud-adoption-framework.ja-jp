@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: デプロイ高速化のメトリック、インジケーター、およびリスク許容度
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5049b41abc03c5f59d0d750373b48a39b0638084
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031456"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220712"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>デプロイ高速化のメトリック、インジケーター、およびリスク許容度
 
-この記事は、デプロイ高速化に関連したビジネスのリスク許容度の数値化を支援することを目的としています。 メトリックとインジケーターを定義すると、デプロイ高速化規範の成熟度への投資を行うためのビジネス ケースの作成に役立ちます。
+この記事では、デプロイ高速化に関連したビジネスのリスク許容度を数値化するために役立ちます。 メトリックとインジケーターを定義すると、デプロイ高速化規範の成熟度への投資を行うためのビジネス ケースの作成に役立ちます。
 
 ## <a name="metrics"></a>メトリック
 
@@ -34,7 +34,7 @@ ms.locfileid: "71031456"
 
 <!-- "en-us" location is required for the URL below. -->
 
-クラウド導入体験の早い段階で DevOps または [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) の組織の文化を取り入れることを検討してください。 従来の企業の IT 組織では、運用、セキュリティ、および開発チームがサイロ化されていることが多く、他チームと十分な連携が取れていなかったり、もっと言えば敵対していたりすることもよくあります。 これらの課題を早期に認識して、各チームの主要利害関係者を統合することにより、安全で適切な管理を行いながら、クラウド導入の機敏性を確保することができます。
+従来の企業の IT 組織では、運用、セキュリティ、および開発チームがサイロ化されていることが多く、他チームと十分な連携が取れていなかったり、もっと言えば敵対していたりすることもよくあります。 これらの課題を早期に認識して、各チームの主要利害関係者を統合することにより、安全で適切な管理を行いながら、クラウド導入の機敏性を確保することができます。 そのため、クラウド導入体験の早い段階で DevOps または [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) の組織の文化を取り入れることを検討する必要があります。 
 
 DevSecOps チームおよびビジネス利害関係者と協力して構成に関連した[ビジネス上のリスク](./business-risks.md)を特定し、構成リスク許容度の受け入れ可能なベースラインを決定します。 クラウド導入フレームワーク ガイダンスのこのセクションでは例を提供しますが、お客様の会社またはデプロイの詳細なリスクおよびベースラインは異なっている可能性が高くなります。
 

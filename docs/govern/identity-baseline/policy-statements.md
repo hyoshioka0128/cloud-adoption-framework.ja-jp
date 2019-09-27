@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ID ベースラインのサンプル ポリシー ステートメント
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae5bb8283487ef7724f872fc293def2c1a80071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031214"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222136"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>ID ベースラインのサンプル ポリシー ステートメント
 
@@ -67,7 +67,7 @@ ms.locfileid: "71031214"
 
 **ポリシー ステートメント:** カスタマー認証が必要なアプリケーションをデプロイする場合、内部ユーザー用のプライマリ ID プロバイダーと互換性のある承認済み ID プロバイダーを使用する必要があります。
 
-**使用可能な設計オプション:** 社内の ID プロバイダーと顧客の ID プロバイダーの間に [Azure Active Directory とのフェデレーション](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed)を実装します。
+**使用可能な設計オプション:** 内部および顧客の ID プロバイダーの間に [Azure Active Directory を使用したフェデレーション](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed)を実装するか、[Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b) を活用します
 
 ## <a name="identity-reviews"></a>ID レビュー
 

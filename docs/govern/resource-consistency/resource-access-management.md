@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure でのリソース アクセス管理の説明:Azure Resource Manager、サブスクリプション、リソース グループ、およびリソース
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 46c6de1ecaba5b8278138114b6aa27a2608bfb74
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031531"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223026"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -33,7 +33,7 @@ Azure では、_リソース_という用語は、Azure によって管理され
 
 ## <a name="what-is-an-azure-resource-group"></a>Azure リソース グループとは
 
-Azure の各リソースは、[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)に属している必要があります。 リソース グループは、複数のリソースを単一のエンティティとして管理できるようにまとめる、論理コンストラクトに過ぎません。 たとえば、[n 層アプリケーション](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)のリソースなど、似たようなライフサイクルを共有するリソースを、グループとして作成または削除できます。
+Azure の各リソースは、[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)に属している必要があります。 リソース グループは、"_ライフサイクルとセキュリティに基づいて_" 複数のリソースを単一のエンティティとして管理できるようにまとめる、論理コンストラクトに過ぎません。 たとえば、[n 層アプリケーション](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)のリソースなど、似たようなライフサイクルを共有するリソースを、グループとして作成または削除できます。 もう 1 つの例を挙げると、一緒に作成されたすべてのものは、一緒に管理し、一緒に廃止し、一緒にリソース グループに登録します。
 
 ![リソースが含まれるリソース グループの図](../../_images/govern/design/governance-1-10.png)
 *図 2 - リソース グループにはリソースが含まれる。*
@@ -42,7 +42,7 @@ Azure の各リソースは、[リソース グループ](https://docs.microsoft
 
 ## <a name="what-is-an-azure-subscription"></a>Azure サブスクリプションとは
 
-Azure サブスクリプションは、リソース グループとそのリソースをまとめる論理コンストラクトであるという点では、リソース グループに似ています。 しかし、Azure サブスクリプションは、Azure Resource Manager によって使用される制御にも関連付けられています。 これはどういう意味でしょうか。 Azure サブスクリプションと Azure Resource Manager の関係について確認するために、Azure Resource Manager を詳しく見てみましょう。
+Azure サブスクリプションは、リソース グループとそのリソースをまとめる論理コンストラクトであるという点では、リソース グループに似ています。 しかし、Azure サブスクリプションは、Azure Resource Manager によって使用される制御にも関連付けられています。 Azure サブスクリプションと Azure Resource Manager の関係について確認するために、Azure Resource Manager を詳しく見てみましょう。
 
 ![Azure サブスクリプションの図](../../_images/govern/design/governance-1-11.png)
 *図 3 - Azure サブスクリプション。*

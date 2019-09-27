@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンスに関連したセキュリティ ベースラインの概念の説明。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03d8e9cf2a5e4679b61a318aeee41b982f08ac51
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031172"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222815"
 ---
 # <a name="security-baseline-template"></a>セキュリティ ベースライン テンプレート
 
-変更を実装する最初の手順は、必要な変更を伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下の汎用テンプレートは、クラウド内のセキュリティ関連の問題を管理するポリシー ステートメントを文書化して伝達するための開始点を提供します。
+変更を実装するための最初の手順は、必要なものを伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウド内のセキュリティ関連の問題を管理するポリシー ステートメントを文書化して伝達するための開始点を提供します。
 
 議論が進んだら、このテンプレートの構造を、ビジネス リスク、リスク許容度、コンプライアンス プロセス、および組織のセキュリティ ベースライン ポリシー ステートメントを定義するために必要なツールをキャプチャするためのモデルとして使用してください。
 

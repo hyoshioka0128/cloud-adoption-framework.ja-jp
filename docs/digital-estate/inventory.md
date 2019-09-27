@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023494"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222608"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>デジタル資産のインベントリ データを収集する
 
@@ -28,6 +28,9 @@ ms.locfileid: "71023494"
 - **アプリケーションの刷新:** クラウドが有効になっている間のインベントリでは、顧客と共にアプリケーションの刷新を行うための取り組みが開始されます。 開始から終了まで顧客のエクスペリエンスをマッピングすることが、良い開始点となります。 そのマップをアプリケーション、API、データ、およびその他の資産に対応付けることで、分析用の詳細なインベントリが作成されます。
 
 - **データの刷新:** クラウドに対応できるデータ刷新の取り組みでは、製品またはサービスに注目します。 インベントリには、市場を破壊的に変革する機会や必要な機能のマッピングが含まれます。
+
+- **セキュリティ:** インベントリを使用すると、組織の資産の評価、保護、および監視に役立つ情報をセキュリティに提供します。
+
 
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>インベントリの精度と完全性
 

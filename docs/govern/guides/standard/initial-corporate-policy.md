@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4da4899038ca86bec2f1d003f9eaaee293119a09
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031943"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223669"
 ---
 # <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準的な企業のガイド: ガバナンス戦略の背景にある初期の企業ポリシー
 
@@ -33,7 +33,7 @@ ms.locfileid: "71031943"
 
 現在、リスクの許容度は高く、クラウド ガバナンスへの投資意欲は低い状態です。 このように、許容度指標は、時間とエネルギーの投資を増やす早期警告システムとして機能します。 以下の指標が観測された場合、ガバナンス戦略を反復的に改善する必要があります。
 
-- **コスト管理:** クラウドへのデプロイ規模が 100 資産を超えている、または毎月の支出が 1,000 米ドルを超えている。
+- **コスト管理:** デプロイのスケールが、リソースの数または月額コストの事前に定義された制限を超えています。
 - **セキュリティ ベースライン:** 定義したクラウド導入計画に保護対象データが含まれている。
 - **リソースの整合性:** 定義したクラウド導入計画にミッションクリティカルなアプリケーションが含まれている。
 

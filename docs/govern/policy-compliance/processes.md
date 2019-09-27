@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 企業ポリシーに確実に準拠するためのプロセスを確立します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032401"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222047"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>ポリシー順守プロセスを確立する
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 クラウド ポリシー ステートメントを確立し、デザイン ガイドの草案を作成したら、ポリシー要件に従ってクラウドをデプロイするための戦略を作成する必要があります。 この戦略では、クラウド ガバナンス チームの現行のレビューと通信のプロセスを網羅し、アクションを必要とするポリシー違反に関する基準と、違反を検出し修復アクションをトリガーさせる自動化された監視/コンプライアンス システムの要件を定義するための基準を確立する必要があります。
 
@@ -57,6 +53,8 @@ I've defined policies, I've provided an architecture guide. Now how do I monitor
 ポリシーのコンプライアンスには、IT スタッフと開発者がそれぞれの担当領域に影響を与えるポリシー要件を理解する必要があります。 意思決定や要件を記録するためのリソースを充て、ポリシー要件を支援するデザイン ガイドに関する知識を関連するすべてのチームに教育する計画を立てます。
 
 ポリシーは変更されるので、定期的に文書や研修素材を作り直し、最新の要件やガイダンスがそれに関係する IT スタッフに確実に伝えられるように取り計らいます。
+
+クラウドへの移行のさまざまな段階で、パートナーやプロフェッショナル向けトレーニング プログラムを参考にして、技術と手順の両面でチームの教育を強化することをお勧めします。 さらに、正式な認定資格は教育ポートフォリオに追加する価値のあるものであり、検討する必要があると考える方は多数います。
 
 ### <a name="establish-escalation-paths"></a>エスカレーション パスを確立する
 

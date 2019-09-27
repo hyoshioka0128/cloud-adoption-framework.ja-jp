@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Microsoft はどのようなセキュリティ ガイダンスを提供していますか?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a4b256c665e0f4a86bca5a538de9ae950ccd400
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031683"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222921"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-security-guidance-does-microsoft-provide"></a>Microsoft はどのようなセキュリティ ガイダンスを提供していますか?
+# <a name="microsoft-security-guidance"></a>Microsoft セキュリティ ガイダンス
 
-## <a name="security-guidance-and-tools"></a>セキュリティ ガイダンスおよびツール
+## <a name="tools"></a>ツール
 
 Microsoft は、次のために役立つ [Service Trust Platform](https://servicetrust.microsoft.com) と Compliance Manager を導入しました。
 
@@ -52,7 +52,7 @@ Microsoft は、次のために役立つ [Service Trust Platform](https://servic
 
 ## <a name="unique-intelligent-insights"></a>他にはないインテリジェントな分析情報
 
-セキュリティ シグナルの量や複雑さが増してくると、これらのシグナルが確実な脅威であるかどうかを判定して行動するにはかなり長い時間がかかります。 Microsoft は、脅威をすばやく検出して修復するのに役立つ、クラウド規模で提供される類を見ない幅広いセキュリティ インテリジェンスを提供します。
+セキュリティ シグナルの量や複雑さが増してくると、これらのシグナルが確実な脅威であるかどうかを判定して行動するにはかなり長い時間がかかります。 Microsoft は、脅威をすばやく検出して修復するのに役立つ、クラウド規模で提供される類を見ない幅広いセキュリティ インテリジェンスを提供します。 [詳細](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ## <a name="azure-threat-intelligence"></a>Azure の脅威インテリジェンス
 

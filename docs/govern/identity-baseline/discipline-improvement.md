@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ID ベースライン規範の改良
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032407"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220487"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>ID ベースライン規範の改良
 
@@ -46,7 +46,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - クラウド内の ID 管理とアクセス管理を管理するロールと割り当てを定義します。
 - オンプレミス グループを定義し、対応するクラウド ベースのロールにマップします。
 - ID プロバイダー (カスタム アプリケーションによって使用されるデータベース主導の ID を含む) のインベントリを作成します。
-- 全体的な ID ソリューションを簡素化するために、重複が存在する場合は ID プロバイダーの整理または統合のためのオプションを検討します。
+- 重複が存在する ID プロバイダーを連結および統合して、ID ソリューション全体を簡略化し、リスクを軽減します。
 - 既存の ID プロバイダーのハイブリッド互換性を評価します。
 - ハイブリッド互換性のない ID プロバイダーの場合は、整理または置き換えオプションを評価します。
 
@@ -98,7 +98,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - [ハイブリッド ID 戦略](../../decision-guides/identity/index.md)を検証して改良します。
 - リリースの前に、各アプリケーションまたはワークロードが引き続き ID 戦略に整合していることを確認します。
 - シングル サインオン (SSO) とシームレス SSO がアプリケーションで期待どおりに機能していることを検証します。
-- 可能な場合は、代替 ID ストアの数を減らすか、またはなくします。
+- 代替 ID ストアの数を減らすか、削除します。
 - アプリ内またはデータベース内 ID ストアの必要性を綿密に検査します。 適切な ID プロバイダー (ファーストパーティまたはサードパーティ) から外れた ID は、アプリケーションやユーザーにとってリスクになる場合があります。
 - [オンプレミスのフェデレーション アプリケーション](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup)への条件付きアクセスを有効にします。
 - ID を複数のハブ内のグローバル リージョンにわたって分散させ、リージョン間の同期を維持します。
@@ -120,6 +120,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 **潜在的なアクティビティ:**
 
 - ID ポリシーおよび遵守プラクティスの定期的な監査を実行します。
+- 多要素認証と異常なログインの検出に対して、機密性の高いユーザー アカウント (CEO、CFO、VP など) が常に有効であることを確認します。
 - 悪意のあるアクターやデータ侵害 (特に、潜在的な管理者アカウント乗っ取りなど ID の不正アクセスに関連したもの) を定期的にスキャンします。
 - 監視およびレポート作成ツールを構成します。
 - セキュリティおよび不正アクセス防止システムとのより緊密な統合を検討します。

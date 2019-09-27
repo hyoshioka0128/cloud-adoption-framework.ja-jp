@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024203"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224313"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>オンプレミスの Linux アプリを Azure VM と Azure Database for MySQL にリホストする
 
@@ -432,7 +432,7 @@ VM を移行するために、Contoso 管理者は VM を含む復旧計画を�
 - ローカルのバックアップ ジョブからからオンプレミスの VM を削除します。
 - 社内のドキュメントを更新して、新しい場所と IP アドレスを示します。
 - こうしたオンプレミスの VM と対話しているリソースがないか確認し、新しい構成が反映されるように、関連する設定やドキュメントをすべて更新します。
-- Contoso では、依存関係のマッピングを指定して Azure Migrate サービスを使用し、移行のための **OSTICKETWEB** VM を評価しました。 ここで、この目的のためにインストールしたエージェント (Microsoft Monitoring Agent や Dependency Agent) を VM から削除する必要があります。
+- Contoso では、依存関係のマッピングを指定して Azure Migrate サービスを使用し、移行のための **OSTICKETWEB** VM を評価しました。 次に、この目的のためにインストールしたエージェント (Microsoft Monitoring Agent と Microsoft Dependency Agent) を VM から削除する必要があります。
 
 ## <a name="review-the-deployment"></a>デプロイを再調査する
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025256"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224273"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Azure でのガバナンス、セキュリティ、コンプライアンス
 
@@ -69,7 +69,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 1. **[ブループリント - ブループリントの定義]** に移動します。
 1. 前の手順で作成したブループリントを選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
-1. **[バージョン]** (例: 1.0) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
+1. **[バージョン]** (_1.0_ など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -80,7 +80,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 1. [[ブループリント - ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
 1. 前の手順で作成したブループリントを選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
-1. **[バージョン]** (例: 1.0) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
+1. **[バージョン]** (_1.0_ など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 
 - [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
 - [クラウド導入フレームワーク:リソースの整合性の意思決定ガイド](../../decision-guides/resource-consistency/index.md)
-- [標準ベースのブループリント サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
+- [標準ベースのブループリント サンプル](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 

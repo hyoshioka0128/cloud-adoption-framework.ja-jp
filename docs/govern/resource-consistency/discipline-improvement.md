@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リソースの整合性の規範の改良
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 12a1dbd734d4159f814c093c104709b950dddad8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031194"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223012"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>リソースの整合性の規範の改良
 
@@ -101,7 +101,7 @@ ms.locfileid: "71031194"
 - 自組織がビジネス ユニットの P&L への明確な財務的整合性を求めているかどうかを判断します。
 - グローバルな組織の場合は、自組織の SLA コンプライアンスや主権性の要件を実装します。
 - クラウド アグリゲーションの場合は、クラウド プロバイダーへのゲートウェイ ソリューションをデプロイします。
-- ツールがハイブリッドやゲートウェイのオプションに対応していない場合は、監視と運用監視ツールを密接に結合します。
+- ハイブリッドまたはゲートウェイのオプションを許容しないツールでは、すべてのデータセンターとクラウドにまたがる運用監視ツールを使用して、監視を緊密にします。
 
 ## <a name="operate-and-post-implementation"></a>運用と実装後
 

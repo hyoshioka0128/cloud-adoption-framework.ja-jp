@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リソースの整合性テンプレート
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 372f9ca64b87b51b1404d4c47e07e7aa638191b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 831c40b2bf8f7e8fb64fc6cddcf8d6817376be00
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032538"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221904"
 ---
 # <a name="resource-consistency-template"></a>リソースの整合性テンプレート
 
-変更を実装する最初の手順は、必要な変更を伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウドでの IT 運用および管理を管理するポリシー ステートメントを文書化して伝達するための開始点として機能します。
+変更を実装するための最初の手順は、必要なものを伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウドでの IT 運用および管理を管理するポリシー ステートメントを文書化して伝達するための開始点として機能します。
 
 議論が進んだら、このテンプレートの構造を、ビジネス リスク、リスク許容度、コンプライアンス プロセス、および組織のリソース整合性ポリシー ステートメントを定義するために必要なツールをキャプチャするためのモデルとして使用してください。
 

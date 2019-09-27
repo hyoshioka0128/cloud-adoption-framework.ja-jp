@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cost Management の目的とビジネス上のリスク
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032073"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223613"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management の目的とビジネス上のリスク
 
@@ -39,7 +39,7 @@ Cost Management の規範は、クラウド ベースのワークロードをホ
 - **予算管理:** 予算を管理しないと、クラウド ベンダーとの間で過剰な支出が生じる可能性があります。
 - **使用の損失:** 使用されないままの事前購入や事前コミットメントは、無駄な投資となる可能性があります。
 - **異常な支出:** いずれかの方向への予期せぬ急上昇は、不適切な使用のインジケーターとなる可能性があります。
-- **オーバープロビジョニングされた資産:** 資産がアプリケーションまたは仮想マシン (VM) のニーズを超える構成でデプロイされると、コストが増加して、資産が無駄になる可能性があります。
+- **オーバープロビジョニングされた資産:** 資産がアプリケーションまたは仮想マシン (VM) のニーズを超える構成でデプロイされると、資産が無駄になる可能性があります。
 
 ## <a name="next-steps"></a>次の手順
 

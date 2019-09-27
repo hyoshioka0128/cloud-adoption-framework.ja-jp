@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: デジタル資産を合理化するために使用できるオプションを確認します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023614"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223861"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 
@@ -69,7 +69,7 @@ ms.locfileid: "71023614"
 
 - より迅速で、より短い更新
 - コードの移植性
-- クラウド効率の向上 (リソース、速度、コスト)
+- クラウドの効率性の向上 (リソース、速度、コスト、マネージド操作)
 
 定量分析の要因には、次のものが含まれます。
 
@@ -77,6 +77,7 @@ ms.locfileid: "71023614"
 - 依存関係 (ネットワーク トラフィック)
 - ユーザーのトラフィック (ページ ビュー、ページ上の時間、読み込み時間)
 - 開発プラットフォーム (言語、データ プラットフォーム、中間層サービス)
+- データベース (CPU、メモリ、ストレージ、バージョン)
 
 定性分析の要因には、次のものが含まれます。
 
@@ -102,6 +103,7 @@ ms.locfileid: "71023614"
 - 依存関係 (ネットワーク トラフィック)
 - ユーザーのトラフィック (ページ ビュー、ページ上の時間、読み込み時間)
 - 開発プラットフォーム (言語、データ プラットフォーム、中間層サービス)
+- データベース (CPU、メモリ、ストレージ、バージョン)
 
 定性分析の要因には、次のものが含まれます。
 
@@ -125,6 +127,7 @@ ms.locfileid: "71023614"
 - 依存関係 (ネットワーク トラフィック)
 - ユーザーのトラフィック (ページ ビュー、ページ上の時間、読み込み時間)
 - 開発プラットフォーム (言語、データ プラットフォーム、中間層サービス)
+- データベース (CPU、メモリ、ストレージ、バージョン)
 
 定性分析の要因には、次のものが含まれます。
 
@@ -148,6 +151,7 @@ ms.locfileid: "71023614"
 - VM サイズ (CPU、メモリ、ストレージ)
 - 依存関係 (ネットワーク トラフィック)
 - 廃棄される資産
+- データベース (CPU、メモリ、ストレージ、バージョン)
 
 定性分析の要因には、次のものが含まれます。
 

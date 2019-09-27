@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7db1ed24f23ff9ba931e556356c04b6bb127092a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031147"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224136"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -63,7 +63,7 @@ Azure のクラウド導入フレームワークは、クラウド導入のプ�
 - **開発またはテスト**: オンプレミス環境から開発/テストを排除して、開発者に制御、俊敏性、セルフ サービスの能力を提供します。
 - **単純なアプリ (5 個未満):** 単純なアプリを最新化して移行し、開発者と運用の経験をすばやく獲得します。
 - **パフォーマンス ラボ:** ラボ環境で大規模なパフォーマンスが必要な場合は、クラウドを使用して、短い期間にこれらのラボを迅速かつコスト効果の高い方法でプロビジョニングします。
-- **データ プラットフォーム:** 分析、レポート、または機械学習のワークロードに対応したスケーラブルなコンピューティングでデータ レイクを作成します。
+- **データ プラットフォーム:** 分析、レポート、または機械学習ワークロードに対応したスケーラブルなコンピューティングを備えたデータ レイクを作成し、ダンプ/復元メソッドまたはデータ移行サービスを使用してマネージド データベースに移行します。
 
 ## <a name="next-steps"></a>次の手順
 

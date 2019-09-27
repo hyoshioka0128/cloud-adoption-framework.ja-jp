@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンス戦略の一環としての、デプロイ高速化の規範について説明します。
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: feaf5a7f0f2622c2b2289fe81315ea9ccf2ada4e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031279"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220722"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>デプロイ高速化の動機とビジネス リスク
 
@@ -22,7 +22,7 @@ ms.locfileid: "71031279"
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-deployment-acceleration-relevant"></a>デプロイ高速化の関連性
+## <a name="deployment-acceleration-relevancy"></a>デプロイ高速化の関連性
 
 オンプレミス システムは、多くの場合、ベースライン イメージまたはインストール スクリプトを使用してデプロイされます。 通常は追加の構成が必要で、複数の手順やユーザーの介入が必要になることがあります。 これらの手動プロセスではエラーが発生しやすく、多くの場合 "構成ドリフト" に至るため、時間のかかるトラブルシューティングや修復のタスクが必要になります。
 

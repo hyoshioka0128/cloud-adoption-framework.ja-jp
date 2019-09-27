@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022832"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224389"
 ---
 # <a name="assess-the-digital-estate"></a>デジタル資産を評価する
 
@@ -75,7 +75,7 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 依存関係の視覚化を使用するには、分析するオンプレミスの各マシンにエージェントをダウンロードしてインストールする必要があります。
 
 - 各コンピューターに [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) をインストールする必要があります。
-- 各コンピューターに[依存関係エージェント](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows)をインストールする必要があります。
+- 各マシンに [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) をインストールする必要があります。
 - また、インターネットに接続されていないマシンの場合、それらに Log Analytics ゲートウェイをダウンロードしてインストールする必要があります。
 
 <!-- markdownlint-disable MD024 -->
@@ -84,7 +84,6 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 
 - [Azure での Service Map ソリューションの使用](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate と Service Map: 依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
-
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[シナリオと利害関係者](#tab/Scenarios)
 

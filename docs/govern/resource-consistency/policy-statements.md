@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リソースの整合性のサンプル ポリシー ステートメント
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031151"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221971"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>リソースの整合性のサンプル ポリシー ステートメント
 
@@ -74,8 +74,8 @@ ms.locfileid: "71031151"
 
 **ポリシー ステートメント:** 次のポリシーが実装されます:
 
-- ミッション クリティカルなアプリケーションや保護データに関連するすべての資産がリソース減耗と最適化のための監視対象となっていることを、ガバナンス ツールが検証する必要があります。
-- ミッション クリティカルなアプリケーションや保護されるデータのすべてについて適切なレベルのログ データが収集されていることを、ガバナンス ツールで検証する必要があります。
+- ガバナンス ツールで、リソースの枯渇、セキュリティ、コンプライアンス、および最適化の監視にすべての資産が含まれていることを検証する必要があります。
+- ガバナンス ツールで、すべてのアプリケーションとデータに対して適切なレベルのログ データが収集されていることを検証する必要があります。
 
 **使用可能な設計オプション:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) は Azure での既定の監視サービスであり、リソースをデプロイするときに [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints) を介して一貫した監視を適用できます。
 
@@ -85,7 +85,7 @@ ms.locfileid: "71031151"
 
 **ポリシー ステートメント:** すべてのミッション クリティカルなアプリケーションおよび保護されたデータには、障害やシステム エラーのビジネスへの影響を最小限に抑えるため、バックアップと復旧のソリューションを実装する必要があります。
 
-**使用可能な設計オプション:** Azure Site Recovery サービスでは、ビジネス継続性とディザスター リカバリー (BCDR) のシナリオでの停止時間を最小限に抑えることを目的とする、バックアップ、復旧、およびレプリケーションの機能が提供されています。
+**使用可能な設計オプション:** [Azure Site Recovery サービス](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)では事業継続とディザスター リカバリー (BCDR) のシナリオでの停止時間を最小限に抑えるバックアップ、復旧、およびレプリケーションの機能が提供されています。
 
 ## <a name="next-steps"></a>次の手順
 

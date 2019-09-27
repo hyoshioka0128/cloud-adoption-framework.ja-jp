@@ -4,20 +4,20 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure でのクラウド リソース ガバナンスの説明
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 083b18c0c8c5edc0dc21a198df32e8934929299c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7f22a4f28d0d84a8847d06d37ad88002a03ecc16
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031341"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221865"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-is-cloud-resource-governance"></a>クラウド リソース ガバナンスとは
+# <a name="cloud-resource-governance"></a>クラウド リソース ガバナンス
 
 [Azure のしくみ](../../getting-started/what-is-azure.md)に関するページでは、Azure は、仮想化されたハードウェアとソフトウェアをユーザーの代わりに実行する、サーバーとネットワーク ハードウェアのコレクションであることを説明しました。 Azure を使用すると、必要に応じてリソースを容易に作成、読み取り、更新、および削除できるようにすることで、組織のアプリケーション開発および IT 部門の機敏性を高めることが可能です。
 

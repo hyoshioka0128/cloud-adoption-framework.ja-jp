@@ -4,25 +4,25 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リソースの整合性の目的とビジネス上のリスク
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42510f62cb3f673698832403126901789b05e978
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031867"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222007"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>リソースの整合性の目的とビジネス上のリスク
 
-この記事では、お客様が通常、クラウド ガバナンス戦略でリソースの整合性の規範を採用する理由について説明します。 ポリシー ステートメントを促進する可能性のある潜在的なビジネス リスクの例をいくつかも挙げます。
+この記事では、お客様が通常、クラウド ガバナンス戦略でリソースの整合性の規範を採用する理由について説明します。 また、ポリシー ステートメントを追いやる可能性のある潜在的なビジネス リスクの例をいくつか示します。
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-resource-consistency-relevant"></a>リソース整合性の関連性について
+## <a name="resource-consistency-relevancy"></a>リソースの整合性の関連性
 
 リソースとワークロードのデプロイに関しては、クラウドは従来のほとんどのオンプレミス データセンターよりも敏捷性と柔軟性を向上させます。 ただし、このクラウド ベースの潜在的な利点は、クラウドの導入の成功を危うくする可能性のある潜在的な管理上の欠点と対になります。 デプロイしている資産は何か? どのチームがどの資産を所有しているか? ワークロードをサポートしているリソースは十分であるか? ワークロードが正常であるかどのように把握するか?
 

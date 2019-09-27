@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リソースの整合性ポリシーのコンプライアンス プロセス
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5daec332aa4fdbc75e15bfd9948fe6db52935d20
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032011"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223705"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>リソースの整合性ポリシーのコンプライアンス プロセス
 
@@ -60,6 +60,7 @@ ms.locfileid: "71032011"
 - **プロビジョニング不足のリソースの検出。** 80% を超える CPU またはメモリ容量を使用して検出されたリソースは、容量追加のため、自動的にスケールアップされるか、追加のリソースがプロビジョニングされます。
 - **タグ付けされていないリソースの作成。** 必要なメタ タグのないリソースの作成要求は、すべて自動的に拒否されます。
 - **クリティカルなリソースの停止の検出。** IT スタッフには、検出されたミッション クリティカルな障害がすべて通知されます。 障害がすぐに解決できない場合は、スタッフが問題をエスカレーションして、ワークロード所有者とクラウド ガバナンス チームに通知します。 クラウド ガバナンス チームが解決まで問題を追跡し、将来のインシデントの防止にポリシーの改正が必要な場合には、ガイダンスを更新します。
+- **構成のずれ。** 確立された基準に準拠していないことが検出されたリソースによって、アラートがトリガーされ、Azure Automation、Chef、Puppet、Ansible などの構成管理ツールを使用して自動的に修復されるようにします。
 
 ## <a name="next-steps"></a>次の手順
 

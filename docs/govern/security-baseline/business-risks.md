@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: セキュリティ ベースラインの導入理由とビジネス リスク
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031463"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222285"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>セキュリティ ベースラインの導入理由とビジネス リスク
 
@@ -22,7 +22,7 @@ ms.locfileid: "71031463"
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>セキュリティ ベースラインの関連性
+## <a name="security-baseline-relevancy"></a>セキュリティ ベースラインの関連性
 
 セキュリティは、いかなる IT 組織にとっても重要な懸念事項です。 クラウドのデプロイは、従来のオンプレミス データ センターでホストされるワークロードと同じセキュリティ リスクの大半と直面しています。 ただし、ワークロードを格納して実行する物理的なハードウェアの直接的所有権がないというパブリック クラウド プラットフォームの性質上、クラウドのセキュリティには独自のポリシーとプロセスが必要であることを意味します。
 

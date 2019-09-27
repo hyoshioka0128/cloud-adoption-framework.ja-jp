@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンスと関連した Cost Management の説明
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be1d4456ac8924c87241089c637fa3aacc38fb47
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032071"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220967"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management のメトリック、インジケーター、およびリスク許容度
 
-この記事は、Cost Management に関連したビジネスのリスク許容度の定量化を支援することを目的にしています。 メトリックとインジケーターを定義すると、Cost Management 規範の成熟への投資を行うためのビジネス ケースの作成に役立ちます。
+この記事は、Cost Management に関連したビジネスのリスク許容度を定量化するために役立ちます。 メトリックとインジケーターを定義すると、Cost Management 規範の成熟への投資を行うためのビジネス ケースの作成に役立ちます。
 
 ## <a name="metrics"></a>メトリック
 

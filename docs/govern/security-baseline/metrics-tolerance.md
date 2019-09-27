@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: セキュリティ ベースラインのメトリック、インジケーター、およびリスク許容度
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2eeab224a9f025b9e93cf407626455e74d69ccd4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b8171839b79ffbe9e3849cf303180d1f1ee049f2
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032417"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222840"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>セキュリティ ベースラインのメトリック、インジケーター、およびリスク許容度
 
-この記事は、セキュリティ ベースラインに関連したビジネス リスク許容度の数値化を支援することを目的としています。 メトリックとインジケーターを定義すると、セキュリティ ベースライン規範の成熟度への投資を行うためのビジネス ケースの作成に役立ちます。
+この記事は、セキュリティ ベースラインに関連したビジネス リスク許容度の定量化するために役立ちます。 メトリックとインジケーターを定義すると、セキュリティ ベースライン規範の成熟度への投資を行うためのビジネス ケースの作成に役立ちます。
 
 ## <a name="metrics"></a>メトリック
 
