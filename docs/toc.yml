@@ -678,6 +678,8 @@
                   href: manage/monitor/platform-overview.md
             - name: 運用適合性レビューの確立
               href: manage/operational-fitness-review.md
+            - name: 管理操作の一元化
+              href: manage/centralize-operations.md
     - name: リファレンス
       items:
         - name: クラウド導入フレームワークのロードマップ
