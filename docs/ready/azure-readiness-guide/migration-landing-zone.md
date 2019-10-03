@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure で移行ランディング ゾーンをデプロイする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 5/19/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223928"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811102"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>移行ランディング ゾーンをデプロイする
 
@@ -75,7 +75,7 @@ ms.locfileid: "71223928"
 
 デプロイまたはカスタマイズの詳細については、「[Azure Blueprints サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples)」で、クラウド導入フレームワークの移行ランディング ゾーンのブループリントの参照サンプルを参照し、ダウンロードしてください。
 
-ブループリントのサンプルは、ポータル内でも使用できます。 ブループリントをデプロイする方法の詳細については、[Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint) に関するページを参照してください。
+ブループリントのサンプルは、ポータル内でも使用できます。 ブループリントを作成する方法の詳細については、[Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint) に関するページを参照してください。
 
 このブループリントや結果のランディング ゾーンに対するカスタマイズに関するガイダンスについては、「[ランディング ゾーンに関する考慮事項](../considerations/index.md)」の記事を参照してください。
 

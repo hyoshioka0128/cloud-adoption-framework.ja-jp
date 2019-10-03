@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 環境のガバナンス、セキュリティ、およびコンプライアンスを設定する方法について説明します。
 author: tvuylsteke
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b94c1cac96fa5458c722d0a66e1ef2dac9d167f9
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224273"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71804481"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Azure でのガバナンス、セキュリティ、コンプライアンス
 
-企業のポリシーを確立し、ガバナンス戦略を策定するときに、Azure Policy、Azure Blueprints、Azure Security Center などのツールとサービスを使用して、組織のガバナンスに関する意思決定を実施したり自動化したりすることができます。 ガバナンスの計画を開始する前に、[ガバナンス ベンチマーク ツール](http://aka.ms/caf/gov/assess)を使用して、組織のクラウド ガバナンスへのアプローチにおけるギャップを識別します。 ガバナンス プロセスを策定する方法の詳細については、[Azure 向けのクラウド導入フレームワークのガバナンスに関するガイダンス](../../govern/index.md)記事を参照してください。
+企業のポリシーを確立し、ガバナンス戦略を策定するときに、Azure Policy、Azure Blueprints、Azure Security Center などのツールとサービスを使用して、組織のガバナンスに関する意思決定を実施したり自動化したりすることができます。 ガバナンスの計画を開始する前に、[ガバナンス ベンチマーク ツール](https://cafbaseline.com)を使用して、組織のクラウド ガバナンスへのアプローチにおけるギャップを識別します。 ガバナンス プロセスを策定する方法の詳細については、[Azure 向けのクラウド導入フレームワークのガバナンスに関するガイダンス](../../govern/index.md)記事を参照してください。
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
@@ -78,7 +78,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 ::: zone target="docs"
 
 1. [[ブループリント - ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
-1. 前の手順で作成したブループリントを選択します。
+1. 前の手順で作成したブループリントの定義を選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
 1. **[バージョン]** (_1.0_ など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
 
@@ -165,6 +165,7 @@ Azure Security Center について調べるには、[Azure portal](https://porta
 ::: zone-end
 
 ::: zone target="chromeless"
+
 ## <a name="action"></a>Action
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
