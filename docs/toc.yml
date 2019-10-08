@@ -66,8 +66,6 @@
               href: digital-estate/calculate.md
         - name: 初期の組織配置
           href: plan/initial-org-alignment.md
-        - name: スキルの準備 - ロール、スキル、プロセスの調整
-          href: plan/adapt-roles-skills-processes.md
         - name: クラウド導入計画
           items:
             - name: はじめに
@@ -426,7 +424,7 @@
               items:
                 - name: 概要
                   href: govern/guides/index.md
-                - name: 中小企業ガイド
+                - name: 標準的な企業のガバナンス ガイド
                   items:
                     - name: 概要
                       href: govern/guides/standard/index.md
@@ -444,7 +442,7 @@
                       href: govern/guides/standard/cost-management-improvement.md
                     - name: マルチクラウド シナリオ
                       href: govern/guides/standard/multicloud-improvement.md
-                - name: 大企業ガイド
+                - name: 複雑な企業向けのガバナンス ガイド
                   items:
                     - name: 概要
                       href: govern/guides/complex/index.md
@@ -685,8 +683,9 @@
         - name: クラウド導入フレームワークのロードマップ
           href: reference/roadmap.md
         - name: 意思決定ガイド
-          href: decision-guides/index.md
           items:
+            - name: 概要
+              href: decision-guides/index.md
             - name: Subscriptions
               href: decision-guides/subscriptions/index.md
             - name: ID

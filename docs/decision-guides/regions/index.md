@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 041e1ccaf6ec0e928b6868f4e8c90849c8d4dea8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224594"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967706"
 ---
 # <a name="azure-regions"></a>Azure Azure リージョン
 
@@ -110,7 +110,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 移行の範囲に複数のリージョンが含まれる場合、クラウド導入チームによって、次の準備に関する考慮事項が評価される必要があります。
 
 - データ主権によって、一部の資産のローカライズが必要な場合がありますが、そうしたコンプライアンスの制約に制御されない多くの資産があります。 ログ、レポート、ネットワーク ルーティング、ID、およびその他の中央 IT サービスは、複数のサブスクリプション、または複数のリージョンにまたがって共有サービスとしてホストされるのがふさわしいと考えられます。 クラウド導入チームは、[共有サービスを含むハブおよびスポーク トポロジの参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)の説明に従って、これらのサービスに対して共有サービス モデルを評価することをお勧めします。
-- 類似した環境の複数のインスタンスをデプロイする場合、環境ファクトリで整合性を作成し、ガバナンスを改善して、デプロイを加速させることができます。 [大企業のガバナンス体験](../../govern/guides/complex/index.md)では、複数のリージョンにわたる規模の環境を作成するアプローチを確立しています。
+- 類似した環境の複数のインスタンスをデプロイする場合、環境ファクトリで整合性を作成し、ガバナンスを改善して、デプロイを加速させることができます。 [複雑な企業向けのガバナンス ガイド](../../govern/guides/complex/index.md)では、複数のリージョンにわたる規模の環境を作成するアプローチを確立しています。
 
 チームがベースライン アプローチに慣れ、準備が整ったら、考慮すべきデータドリブンの前提条件がいくつかあります。
 
