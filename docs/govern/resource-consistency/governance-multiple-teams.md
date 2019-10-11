@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d6a21e852ff44a9036f2fbb9d0d0e60a0f4c930f
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8c052b5a9c3745a1d253b533086a9fdf4d86eae9
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223943"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967814"
 ---
 # <a name="governance-design-for-multiple-teams"></a>複数チーム向けのガバナンス設計
 
@@ -255,7 +255,7 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
     - **共有インフラストラクチャ**環境のサブスクリプション。
     - **運用**環境のサブスクリプション。
     - **開発**環境のサブスクリプション。
-5. Azure アカウント管理者は、[サブスクリプション サービス所有者を各サブスクリプションに追加](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription)します。
+5. Azure アカウント管理者は、[サブスクリプション サービス所有者を各サブスクリプションに追加](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)します。
 6. **ワークロード所有者**の承認プロセスを作成して、リソース グループの作成を要求します。 承認プロセスは、さまざまな方法で実装できます。たとえば、電子メールや、[SharePoint ワークフロー](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3)などのプロセス管理ツールを使用できます。 承認プロセスでは、次の手順に従うことができます。
     - **ワークロード所有者**は、**開発**環境、**運用**環境、またはその両方で、必要な Azure リソースの部品表を準備して、**サブスクリプション所有者**に送信します。
     - **サブスクリプション所有者**は部品表を確認し、要求されたリソースを検証して、そのリソースが計画的な使用に適していることを確かめます。たとえば、要求された[仮想マシンのサイズ](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)が正しいことをチェックします。

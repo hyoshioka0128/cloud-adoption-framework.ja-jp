@@ -1,7 +1,7 @@
 ---
 title: '複雑な企業向けのガバナンス ガイド: マルチクラウドの改善'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 大企業ガイド:マルチクラウドの改善
+description: '複雑な企業向けのガバナンス ガイド: マルチクラウドの改善'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: aaafd0d4fa3c94d1ccf0b5bc3ee3f30377a2b08e
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220615"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967649"
 ---
-# <a name="large-enterprise-guide-multicloud-improvement"></a>大企業ガイド:マルチクラウドの改善
+# <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雑な企業向けのガバナンス ガイド: マルチクラウドの改善
 
 ## <a name="advancing-the-narrative"></a>物語を進める
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: df33e9f7f1c591d9de286b0a2c646bb009fc2775
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9a64a069dcebb12cf550f697561b76903e6d01bf
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223056"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967343"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>シンプルなワークロード向けガバナンス設計
 
@@ -109,7 +109,7 @@ Azure アカウントが作成されたら、組織の 1 人を Azure **アカ�
 
 次に、Azure **アカウント所有者**は、[サブスクリプションを作成](https://docs.microsoft.com/partner-center/create-a-new-subscription)し、これに [Azure AD テナントを関連付ける](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)必要があります。
 
-サブスクリプションを作成し、これに Azure AD テナントを関連付けたので、最後に、[**ワークロード所有者**を、組み込みの**所有者**ロールを持つサブスクリプションに追加](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription)します。
+サブスクリプションを作成し、これに Azure AD テナントを関連付けたので、最後に、[**ワークロード所有者**を、組み込みの**所有者**ロールを持つサブスクリプションに追加](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)します。
 
 ## <a name="next-steps"></a>次の手順
 

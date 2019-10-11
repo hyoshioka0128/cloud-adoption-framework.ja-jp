@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222651"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967682"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>デプロイ高速化のサンプル ポリシー ステートメント
 
@@ -32,7 +32,7 @@ ms.locfileid: "71222651"
 
 **ポリシー ステートメント:** クラウドにデプロイされるすべての資産は、可能な限りテンプレートまたは自動化スクリプトを使用してデプロイする必要があります。
 
-**使用可能な設計オプション:** [Azure Resource Manager テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment)で、リソースを Azure にデプロイするための、コードとしてのインフラストラクチャ手法が提供されます。 整合性のあるオンプレミスおよびクラウドベースのデプロイ ツールとして [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) を使用することもできます。
+**使用可能な設計オプション:** [Azure Resource Manager テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview)で、リソースを Azure にデプロイするための、コードとしてのインフラストラクチャ手法が提供されます。 整合性のあるオンプレミスおよびクラウドベースのデプロイ ツールとして [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) を使用することもできます。
 
 ## <a name="lack-of-visibility-into-system-issues"></a>システムの問題の可視化の欠如
 
