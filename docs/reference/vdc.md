@@ -9,26 +9,27 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 39cb6ac3c31873431206d8c6c525c9ce3467653f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f77d42b9f55e5a8585e663b416f0d354e2de78de
+ms.sourcegitcommit: d37c4443e9acaa381ea74ee3fc50e3b99f13f22a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032237"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72001857"
 ---
-# <a name="azure-virtual-datacenter-and-the-enterprise-control-plane"></a>Azure 仮想データセンターとエンタープライズ コントロール プレーン
+# <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
-Azure 仮想データセンターは、既存のセキュリティやネットワーク ポリシーを順守しながら、Azure のクラウド プラットフォーム機能を最大限に活用できる手法です。 IT 企業や IT 事業部門がエンタープライズ ワークロードをクラウドにデプロイする際は、ガバナンスと開発者の俊敏性のバランスを取る必要があります。 Azure 仮想データセンターでは、ガバナンスに重点を置きつつ、このバランスを実現するモデルを提供します。
+> [!WARNING]
+> Azure 仮想データ センターは、Microsoft Cloud Adoption Framework for Azure と統合されています。 このガイダンスは、Cloud Adoption Framework 内での準備とガバナンスの手法を実現するための基盤の重要な部分として機能します。 この移行を行うお客様をサポートするために、次のリソースはアーカイブされており、別の GitHub リポジトリに保持されます。
 
-## <a name="resources"></a>リソース
+## <a name="archived-resources"></a>アーカイブされたリソース
 
 <!-- markdownlint-disable MD033 -->
 
 <table>
 <tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://aka.ms/VDC/Concepts"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
+    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
     <td>
-        <h3><a href="https://aka.ms/VDC/Concepts">Azure 仮想データセンター:概念</a></h3>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Azure 仮想データセンター:概念</a></h3>
         <p>この電子書籍では、既存のセキュリティとネットワーク ポリシーを考慮しながら、エンタープライズ ワークロードを Azure クラウド プラットフォームにデプロイする方法について説明します。</p>
     </td>
 </tr>
@@ -40,37 +41,12 @@ Azure 仮想データセンターは、既存のセキュリティやネット�
     </td>
 </tr>
 <tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://aka.ms/VDC/Lift"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
+    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
-        <h3><a href="https://aka.ms/VDC/Lift">Azure 仮想データセンター:リフト アンド シフト ガイド</a></h3>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Azure 仮想データセンター:リフト アンド シフト ガイド</a></h3>
         <p>このホワイトペーパーでは、大企業の IT スタッフや意思決定者が "リフト アンド シフト" メソッドを使用して、Azure へのアプリケーションとサーバーの移行方法を特定および計画するために使用できるプロセスについて説明します。これにより、追加の開発コストを最小限に抑えながらクラウドのホスティング オプションを最適化できます。</p>
-    </td>
-</tr>
-<tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://aka.ms/VDC/Deck"><img src="../_images/vdc/vdc-deck.png" alt="Presentation Deck" /></a></td>
-    <td>
-        <h3><a href="https://aka.ms/VDC/Deck">Azure 仮想データセンター:プレゼンテーション デッキ</a></h3>
-        <p>このプレゼンテーション デッキでは、Azure 仮想データセンターのガイダンスとツールについて説明します。 ここでは、VDC の目標、顧客要因、Azure リージョン、VDC の自動化要素、先進的で信頼される Azure VDC について触れ、最後に CIO へのガイダンスを中心としたアクション プランを示します。 また、サポート情報とトレーニング情報も提供します。</p>
     </td>
 </tr>
 </table>
 
 <!-- markdownlint-enable MD033 -->
-
-<!-- markdownlint-disable MD026 -->
-
-## <a name="what-is-the-azure-virtual-datacenter"></a>Azure 仮想データセンターとは
-
-ワークロードをクラウドにデプロイするには、既存のデータセンターに対する信頼と同程度に、クラウドへの信頼を高めて維持する必要があります。 Azure 仮想データセンターのガイダンスの最初のモデルは、仮想インフラストラクチャに対するロックダウン方式を通じてこのニーズを満たすように設計されています。 この方法ですべてのユーザーに対応できるわけではありません。 これは、大企業の IT 部門がオンプレミスのインフラストラクチャを Azure のパブリック クラウドに拡張する際に指針となるよう特別に考えられたものです。 この方法は、信頼されたデータセンター拡張モデルと呼ばれます。 時間の経過と共に、仮想データセンターからの、セキュリティで保護された直接のインターネット アクセスが可能なものも含め、その他いくつかのモデルが提供される予定です。
-
-<!-- markdownlint-disable MD033 -->
-
-<img src="../_images/vdc/vdc-components.svg" alt="Virtual Datacenter components" style="max-width:700px;"/>
-
-<!-- markdownlint-enable MD033 -->
-
-Azure 仮想データセンターは、ID、暗号化、ソフトウェアによるネットワーク制御、コンプライアンス (ログおよびレポートを含む) という 4 つのコンポーネントによって可能になります。
-
-Azure 仮想データセンターのこのモデルでは、分離ポリシーの適用により、クラウドを既知の物理データセンターのようにすることができるため、必要なレベルのセキュリティと信頼を達成できます。 どの大企業の IT チームもその重要性を認める 4 つのコンポーネント (ソフトウェアによるネットワーク制御、暗号化、ID 管理、および Azure プラットフォームの基になるコンプライアンス標準と認定資格) によって、これが可能になります。 この 4 つは、仮想データセンターが、既存のインフラストラクチャへの投資に対する確かな拡張となるための鍵です。
-
-引き続き、電子書籍「[Azure 仮想データセンター: 概念](https://azure.microsoft.com/resources/azure-virtual-datacenter)」をお読みください。

@@ -1,7 +1,7 @@
 ---
-title: '標準的な企業のガイド: コスト管理の規範の改善'
+title: 標準的な企業のガイド:コスト管理の規範の改善
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: '標準的な企業のガイド: コスト管理の規範の改善'
+description: 標準的な企業のガイド:コスト管理の規範の改善
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5cbf9a6cdb3776e763fc27492ad499679b4d1327
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b4ff2db2b8d7009eb9d5a50dee630c1a8a60723c
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032000"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967584"
 ---
-# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準的な企業のガイド: コスト管理の規範の改善
+# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準的な企業のガイド:コスト管理の規範の改善
 
 この記事では、ガバナンス MVP にコスト制御を追加することで物語を進めます。
 

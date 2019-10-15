@@ -1,7 +1,7 @@
 ---
-title: '標準的な企業のガイド: リソース整合性の改善'
+title: 標準的な企業のガバナンス ガイド:リソース整合性の改善
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: '標準的な企業のガイド: リソース整合性の改善'
+description: 標準的な企業のガバナンス ガイド:リソース整合性の改善
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222228"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967447"
 ---
-# <a name="standard-enterprise-guide-improving-resource-consistency"></a>標準的な企業のガイド: リソース整合性の改善
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>標準的な企業のガバナンス ガイド:リソース整合性の改善
 
 この記事では、物語をさらに進めて、ミッション クリティカルなアプリケーションをサポートするためのリソース整合性のコントロールを追加します。
 

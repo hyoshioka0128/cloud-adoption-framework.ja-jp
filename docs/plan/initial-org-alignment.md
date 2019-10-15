@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 7b80d61aea9f713de422b5575e7cb3617314857f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4a1135ec23d508cdd0f013439bb034ff66cf0c4d
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022489"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967789"
 ---
 # <a name="initial-organization-alignment"></a>初期の組織配置
 
@@ -43,9 +43,11 @@ ms.locfileid: "71022489"
 - それらのガバナンス コントロールの定義についてだれが説明責任を持ちますか?
 - クラウド導入計画で説明責任または責任を持つ他の機能または担当者はいますか?
 
+これらの質問に対する回答を文書化したら、今後の仕事に向けてこれらの人員を準備する計画を定義する[スキル準備の計画](./adapt-roles-skills-processes.md)を立てることができます。
+
 ## <a name="next-steps"></a>次の手順
 
-これらの質問に対する回答を文書化したら、[スキルの準備に関する記事](./adapt-roles-skills-processes.md)に進み、今後の作業に備えてこれらの人々の準備を整えるための計画を定義します。
+クラウド導入を計画する方法を確認します。
 
 > [!div class="nextstepaction"]
-> [スキルの準備計画を定義する](./adapt-roles-skills-processes.md)
+> [クラウド導入のための計画](./plan-intro.md)

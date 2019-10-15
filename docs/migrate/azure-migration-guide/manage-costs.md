@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024803"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967208"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>移行に重点を置いたコスト管理のメカニズム
 
@@ -71,7 +71,7 @@ Azure Migrate は、コレクターやサービス マップによってキャ�
 ## <a name="additional-resources"></a>その他のリソース
 
 - [Azure Migrate を使用した評価の設定と確認](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[Cost Management の規範](../../govern/cost-management/index.md)に関するガイダンス、および[大企業でのコスト管理の改善に関するガイド](../../govern/guides/complex/cost-management-improvement.md)。
+- 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[Cost Management の規範](../../govern/cost-management/index.md)と[複雑な企業向けのガバナンス ガイドの Cost Management の改善](../../govern/guides/complex/cost-management-improvement.md)に関するページを参照してください。
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[移行中および移行後に VM のコストを見積もり、最適化する](#tab/EstimateOptimize)
 
@@ -104,7 +104,7 @@ Azure Cost Management は、消費習慣のより総合的なビュー (コス�
 
 ## <a name="additional-resources"></a>その他のリソース
 
-- 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[Cost Management の規範](../../govern/cost-management/index.md)に関するガイダンス、および[大企業での段階的なコスト管理の改善に関するガイド](../../govern/guides/complex/cost-management-improvement.md)。
+- 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[Cost Management の規範](../../govern/cost-management/index.md)と[複雑な企業向けのガバナンス ガイドの段階的な Cost Management の改善](../../govern/guides/complex/cost-management-improvement.md)に関するページを参照してください。
 - Azure Advisor の詳細については、[Azure Advisor を使用したサービス コストの削減](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)に関するページを参照してください。
 - Azure Cost Management の詳細については、「[スコープを理解して使用する](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)」および「[コスト分析を使用してコストを調査および分析する](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)」を参照してください。
 
@@ -142,4 +142,4 @@ Microsoft アカウント担当者と話をして、どのようにしたら現�
 
 ## <a name="additional-resources"></a>その他のリソース
 
-多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[Cost Management の規範](../../govern/cost-management/index.md)に関するガイダンス、および[大企業での段階的なコスト管理の改善に関するガバナンス ガイド](../../govern/guides/complex/cost-management-improvement.md)。
+多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[Cost Management の規範](../../govern/cost-management/index.md)と[複雑な企業向けのガバナンス ガイドの段階的な Cost Management の改善](../../govern/guides/complex/cost-management-improvement.md)に関するページを参照してください。

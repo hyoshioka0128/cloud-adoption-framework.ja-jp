@@ -1,7 +1,7 @@
 ---
-title: '標準的な企業のガイド: セキュリティ ベースライン規範の改善'
+title: 標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: '標準的な企業のガイド: セキュリティ ベースライン規範の改善'
+description: 標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e9a913ce0d27e2f15cb83bb842630fcc039f6cc
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223785"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967324"
 ---
-# <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>標準的な企業のガイド: セキュリティ ベースライン規範の改善
+# <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
 
 この記事では、保護対象データのクラウドへの移動をサポートするセキュリティ コントロールを追加することによって、物語を進めます。
 

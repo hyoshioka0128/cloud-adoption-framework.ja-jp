@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022162"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967749"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -40,7 +40,7 @@ ms.locfileid: "71022162"
 
 ### <a name="resource-organization"></a>リソースの編成
 
-資産の編成にはいくつかのアプローチがあります。 このセクションでは、事業単位、地域、および IT 組織に分散されたコスト構造を持つ大企業のニーズに基づいたベスト プラクティスについて概説します。 それほど複雑でない小規模組織向けの同様のベスト プラクティスについては、「[中小企業のガバナンス体験](../../govern/guides/standard/index.md)」で説明しています。
+資産の編成にはいくつかのアプローチがあります。 このセクションでは、事業単位、地域、および IT 組織に分散されたコスト構造を持つ大企業のニーズに基づいたベスト プラクティスについて概説します。 小規模であまり複雑ではない組織向けの同様のベスト プラクティスについては、「[標準的な企業のガバナンス ガイド](../../govern/guides/standard/index.md)」を参照してください。
 
 大企業の場合は、次のモデルのように、管理グループ、サブスクリプション、およびリソース グループの階層を作成して、必要な職務を遂行できる適切な可視性レベルを各チームに提供できます。 企業で予算超過を防ぐためにコスト管理が必要な場合は、この構造内のサブスクリプションに Azure Blueprints や Azure Policy などのガバナンス ツールを適用して、将来のコスト エラーを迅速に食い止めることができます。
 

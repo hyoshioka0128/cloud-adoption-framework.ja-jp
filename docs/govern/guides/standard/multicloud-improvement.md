@@ -1,7 +1,7 @@
 ---
-title: '標準的な企業のガイド: マルチクラウドの改善'
+title: 標準的な企業のガバナンス ガイド:マルチクラウドの改善
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: '標準的な企業のガイド: マルチクラウドの改善'
+description: 標準的な企業のガバナンス ガイド:マルチクラウドの改善
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2616193b01b252a74ad17a241d97bfd0ebc4860c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3a14603574430272004d9fe40654409409dd563e
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223792"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967309"
 ---
-# <a name="small-to-medium-enterprise-guide-multicloud-improvement"></a>中小企業ガイド:マルチクラウドの改善
+# <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準的な企業のガバナンス ガイド:マルチクラウドの改善
 
 この記事では、マルチクラウドの導入のためにコントロールを追加することで物語を進めます。
 

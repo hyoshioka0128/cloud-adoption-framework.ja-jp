@@ -1,5 +1,5 @@
 ---
-title: '標準的な企業のガイド: ガバナンス戦略の背景にある物語'
+title: 標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: この物語では、標準的な企業のクラウド導入体験の間のガバナンスに関するユース ケースを組み立てます。
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 434a4d0238a4633210d31013e9787c3a0a92fc7a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031812"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967465"
 ---
-# <a name="standard-enterprise-guide-the-narrative-behind-the-governance-strategy"></a>標準的な企業のガイド: ガバナンス戦略の背景にある物語
+# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
 
 次の物語では、[標準的な企業のクラウド導入体験](./index.md)の間のガバナンスに関するユース ケースについて説明します。 この体験を実行する前に、この物語に反映されている前提条件と論理的根拠を理解しておくことが重要です。 そうすれば、ガバナンス戦略をお客様の組織の体験に合わせることができます。
 
