@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024432"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72377936"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft Cloud 導入フレームワーク
 
@@ -159,7 +159,7 @@ Cloud 導入フレームワークは、Azure でクラウドを導入するた�
 - [クラウド移行](./migrate/index.md)
 - [クラウド ガバナンス](./govern/guides/index.md)
 
-クラウド導入フレームワークは、GA リリースに近づくにつれて、頻繁に拡張される予定です。 この拡張により、各セクションの深みが増し、コンテンツの新しいセクションも追加されます。 詳細については、[クラウド導入フレームワークのロードマップ](./reference/roadmap.md)に関する記事を参照してください。
+クラウド導入フレームワークは、GA リリースに近づくにつれて、頻繁に拡張される予定です。 この拡張により、各セクションの深みが増し、コンテンツの新しいセクションも追加されます。 詳細については、[クラウド導入フレームワークのロードマップ](./reference/index.md)に関する記事を参照してください。
 
 ## <a name="intent"></a>Intent
 
