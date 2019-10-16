@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b7a2ae0457550189df66b8aa290fd9835cb11904
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223988"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378159"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 
 > [!NOTE]
-> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在はこの新しいフレームワークの「[準備完了](../ready/index.md) 」セクションに移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスの使用を開始するには、[準備の概要](../ready/index.md)、[初めてのランディング ゾーンの作成](../ready/azure-readiness-guide/migration-landing-zone.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
+> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在はこの新しいフレームワークの「[準備完了](../ready/index.md) 」セクションに移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスの使用を開始するには、[準備の概要](../ready/index.md)、[初めてのランディング ゾーンの作成](../ready/azure-setup-guide/migration-landing-zone.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
 
 俊敏性と柔軟性を求めてパブリック クラウドを採用する企業がますます増えています。 これらの企業は、収益を生み出したり、ビジネスのリソース使用状況を最適化したりするために、クラウドの強みに依存しています。 Microsoft Azure は、企業がさまざまなワークロードやアプリケーションに対応するためにブロックのように組み立てることができる多数のサービスと機能を提供しています。
 

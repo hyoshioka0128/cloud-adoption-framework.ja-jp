@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ad32490cd732888ca2fc78a39b3f33d88828776b
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025140"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378306"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>複数の Azure サブスクリプションでの拡張
 
@@ -76,7 +76,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 この継承モデルを利用し、各サブスクリプションが適切なポリシーやセキュリティ コントロールに準拠するように、階層内にサブスクリプションを配置できます。
 
-![Azure リソースを整理するための 4 つのスコープ レベル](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Azure リソースを整理するための 4 つのスコープ レベル](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
 
 ルート管理グループに割り当てられたアクセス権やポリシーは、ディレクトリ内のすべてのリソースに適用されます。 このスコープで定義する項目は慎重に検討してください。 割り当ては必要なものだけを含めてください。
 

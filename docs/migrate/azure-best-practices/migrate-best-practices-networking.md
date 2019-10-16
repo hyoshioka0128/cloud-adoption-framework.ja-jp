@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8fbdd20c435d4aed8a284174d813abc8d391171b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 632ba4f74046636a2a41d9666c5c58784290c9b4
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022848"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378344"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス
 
@@ -120,7 +120,7 @@ VNet をデプロイすると、Azure によって既定で DNS サーバーが�
 **詳細情報:**
 
 - 独自の DNS サーバーを使用するときの名前解決[について学習する](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure)。
-- DNS の名前付け規則と制限事項[について学習する](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions?toc=%2fazure%2fvirtual-network%2ftoc.json#naming-subscriptions)。
+- DNS の名前付け規則と制限事項[について学習する](../../ready/considerations/naming-and-tagging.md)。
 
 ## <a name="best-practice-set-up-availability-zones"></a>ベスト プラクティス:可用性ゾーンを設定する
 

@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 208bab0093d8add065a8c8f5ad2b92d9ff012fe8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031265"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378037"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Azure エンタープライズ スキャフォールディングの実装例
 
 > [!NOTE]
-> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在はこの新しいフレームワークの「[準備完了](../ready/index.md) 」セクションに移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスの使用を開始するには、[準備の概要](../ready/index.md)、[初めてのランディング ゾーンの作成](../ready/azure-readiness-guide/migration-landing-zone.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
+> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在はこの新しいフレームワークの「[準備完了](../ready/index.md) 」セクションに移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスの使用を開始するには、[準備の概要](../ready/index.md)、[初めてのランディング ゾーンの作成](../ready/azure-setup-guide/migration-landing-zone.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
 
 この記事では、企業が [Azure エンタープライズ スキャフォールディング](./azure-scaffold.md)の推奨事項を実装する方法の例を紹介します。 Contoso という架空の会社を使って一般的なシナリオのベスト プラクティスを示します。
 
