@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224136"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378075"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -49,7 +49,7 @@ Azure のクラウド導入フレームワークは、クラウド導入のプ�
 
 - **重要なビジネス イベント:** 重要なビジネス イベントが主な動機であるときは、[Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) のようなツールの実装が最初のプロジェクトとして適切であると考えられます。 移行中に、このツールを使用してデータセンターの資産を迅速に移行できます。 ただし、最初のプロジェクトで、これを純粋にディザスター リカバリー ツールとして使用することで、データセンター内のディザスター リカバリー資産への依存度を減らすことができる可能性があります。
 
-- **移行の動機:** 移行が主な動機である場合、重要でないワークロードの移行から始めるのが賢明です。 [Azure 準備ガイド](../ready/azure-readiness-guide/index.md)と [Azure 移行ガイド](../migrate/azure-migration-guide/index.md)は、最初のワークロードの移行のための手引きとして使用できます。
+- **移行の動機:** 移行が主な動機である場合、重要でないワークロードの移行から始めるのが賢明です。 [Azure セットアップ ガイド](../ready/azure-setup-guide/index.md)と [Azure 移行ガイド](../migrate/azure-migration-guide/index.md)は、最初のワークロードの移行のための手引きとして使用できます。
 
 - **イノベーションの動機:** イノベーションが主な動機である場合、ターゲットの開発環境またはテスト環境の作成が適切な最初のプロジェクトになります。
 

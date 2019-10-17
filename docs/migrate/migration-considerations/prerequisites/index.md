@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022611"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378407"
 ---
 # <a name="prerequisites-for-migration"></a>移行の前提条件
 
@@ -60,7 +60,7 @@ ms.locfileid: "71022611"
 - **変更管理の対応性。** 移行段階の技術的な変更を追跡するための計画を立て、伝達します。 このトピックに関する詳細情報は、2019 年第 3 四半期に公開される予定です。
 - **ビジネス ユーザーとの連携。** 移行の実施に対してビジネス ユーザー コミュニティの準備を整える計画を立てます。 このトピックに関する詳細情報は、2019 年第 3 四半期に公開される予定です。
 - **デジタル資産のインベントリと分析。** デジタル資産のインベントリと分析に必要なツールの実行。 詳細については、[デジタル資産](../../../digital-estate/index.md)のクラウド導入フレームワークに関するディスカッションを参照してください。
-- **クラウドの対応性。** ターゲット デプロイ環境を評価して、最初の数個のワークロード候補の要件に準拠していることを確認します。 詳細については、[Azure 対応性ガイド](../../../ready/azure-readiness-guide/index.md)を参照してください。
+- **クラウドの対応性。** ターゲット デプロイ環境を評価して、最初の数個のワークロード候補の要件に準拠していることを確認します。 詳細については、[Azure セットアップ ガイド](../../../ready/azure-setup-guide/index.md)を参照してください。
 
 個々の実行方法については、このシリーズの残りの記事を参照してください。
 

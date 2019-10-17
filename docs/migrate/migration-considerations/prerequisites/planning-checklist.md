@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022592"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378382"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>移行環境の計画チェックリスト - 移行前に環境の対応性を検証する
 
@@ -35,7 +35,7 @@ ms.locfileid: "71022592"
 
 移行をクラウド ガバナンス戦略と合わせることを最初から計画する場合、ご利用のクラウド環境をすべての企業要件と合わせるポリシー、ツールチェーン、強制メカニズムの決定を通知するのに役立つ、[クラウド ガバナンスの 5 つの規律](../../../govern/governance-disciplines.md)を適用する必要があります。 Azure サービスを使用してこのモデルを実装する方法の例については、クラウド導入フレームワークの[実践的なガバナンス デザイン ガイド](../../../govern/guides/index.md)を参照してください。
 
-初期の移行がより広範なクラウド ガバナンス戦略と厳密に合致していない場合は、組織、アクセス、インフラストラクチャの計画における一般的な問題は引き続き管理する必要があります。 これらのクラウドの対応性に関する決定には、[Azure の準備ガイド](../../../ready/azure-readiness-guide/index.md)をご覧ください。
+初期の移行がより広範なクラウド ガバナンス戦略と厳密に合致していない場合は、組織、アクセス、インフラストラクチャの計画における一般的な問題は引き続き管理する必要があります。 これらのクラウドの対応性に関する決定には、[Azure セットアップ ガイド](../../../ready/azure-setup-guide/index.md)をご覧ください。
 
 > [!CAUTION]
 > 初期ワークロードの移行以外については、ガバナンス戦略を開発することを強くお勧めします。

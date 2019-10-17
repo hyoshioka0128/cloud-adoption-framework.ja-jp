@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: fc4d337f844cef3408c9bc073e3848ee4612fca3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 003e212326959b593071f8230d2ddc0dba646909
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032234"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378280"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>準備完了: 推奨される名前付けおよびタグ付け規則
 
 運用管理を支援し、アカウンティング要件をサポートする方法でのクラウド ベースの資産の整理は、大規模なクラウド導入作業が直面する一般的な課題です。 明確に定義された名前付け規則とメタデータのタグ付け規則をクラウドでホストされているリソースに適用すると、IT スタッフはリソースをすばやく見つけて管理できます。 名前とタグが明確に定義されていると、ビジネス チームとの間でチャージバックとショーバックのアカウンティング メカニズムを使用してクラウドの使用コストを調整する場合にも役立ちます。
 
-Azure アーキテクチャ センターの [Azure リソースの名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)のガイダンスでは、名前付け規則に関する一般的な推奨事項を示し、名前付けの制限とプラットフォーム ルールについて説明します。 次の説明では、その一般的なガイダンスを、特にエンタープライズ クラウド導入作業のサポートを対象にしたより詳細な推奨事項を使用して拡張しています。
+Azure アーキテクチャ センターの [Azure リソースの名前付け規則と制限事項](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)のガイダンスでは、名前付け規則に関する一般的な推奨事項を示し、名前付けの制限とプラットフォーム ルールについて説明します。 次の説明では、その一般的なガイダンスを、特にエンタープライズ クラウド導入作業のサポートを対象にしたより詳細な推奨事項を使用して拡張しています。
 
 リソース名は変更が困難な場合があります。 大規模なクラウドのデプロイを開始する前に、クラウド導入チームは、包括的な名前付け規則を確立することを優先事項にします。
 
@@ -141,6 +141,8 @@ Azure アーキテクチャ センターの [Azure リソースの名前付け�
 ## <a name="sample-naming-convention"></a>サンプルの名前付け規則
 
 次のセクションでは、エンタープライズ クラウド デプロイ中にデプロイされた一般的な Azure リソースの種類の名前付けスキームの例を示します。
+
+<!-- markdownlint-disable MD033 -->
 
 ### <a name="subscriptions"></a>Subscriptions
 

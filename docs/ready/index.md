@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: fa7777f0c6be9c3cd93cfb24cac4ee8e87bee553
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816161"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378332"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ ms.locfileid: "70816161"
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/index.md">
+        <a href="./azure-setup-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -40,8 +40,8 @@ ms.locfileid: "70816161"
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Azure 準備ガイド</h3>
-Azure 準備ガイドでは、ランディング ゾーンの作成に必要なツールや手法を知ることができます。
+                            <h3>Azure セットアップ ガイド</h3>
+Azure セットアップ ガイドでは、ランディング ゾーンの作成に必要なツールや手法を知ることができます。
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ Azure 準備ガイドでは、ランディング ゾーンの作成に必要な�
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/migration-landing-zone.md">
+        <a href="./azure-setup-guide/migration-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Azure 準備ガイドでは、ランディング ゾーンの作成に必要な�
 
 ## <a name="next-steps"></a>次の手順
 
-クラウド導入の準備をするには、[Azure 準備ガイド](./azure-readiness-guide/index.md)をご覧ください。
+クラウド導入の準備をするには、[Azure セットアップ ガイド](./azure-setup-guide/index.md)をご覧ください。
 
 > [!div class="nextstepaction"]
-> [Azure 準備ガイド](./azure-readiness-guide/index.md)
+> [Azure セットアップ ガイド](./azure-setup-guide/index.md)
