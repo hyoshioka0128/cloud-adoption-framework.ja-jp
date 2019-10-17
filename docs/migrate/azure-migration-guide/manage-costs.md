@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967208"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378412"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>移行に重点を置いたコスト管理のメカニズム
 
@@ -91,7 +91,7 @@ Azure Migrate は、コレクターやサービス マップによってキャ�
 
 Azure Cost Management は、消費習慣のより総合的なビュー (コストの詳細ビューや一定期間にわたる消費傾向を含む) を提供できます。 大規模な移行や複雑な移行の場合は、このビューにより、コスト管理に関する広範囲にわたる意思決定を行うために必要な分析情報が提供される可能性があります。
 
-前提条件:このタブの残りでは、読者が Azure の準備状況に関するガイドの完了中に Azure Cost Management の設定を完了しているしていることを前提にしています。 Azure Cost Management の構成の詳細については、この [Azure の準備状況に関するガイドの記事](../../ready/azure-readiness-guide/manage-costs.md)を参照してください。 データが入力されたら、次のいくつかの手順に従って、収集されたデータに基づいて毎月のコストを見積もります。
+前提条件:このタブの残りでは、読者が Azure セットアップ ガイドの完了中に Azure Cost Management の設定を完了していることを前提にしています。 Azure Cost Management の構成の詳細については、この [Azure セットアップ ガイド](../../ready/azure-setup-guide/manage-costs.md)を参照してください。 データが入力されたら、次のいくつかの手順に従って、収集されたデータに基づいて毎月のコストを見積もります。
 
 次の手順では、サブスクリプションに対する Azure Cost Management のコスト分析データを読み込みます。
 
