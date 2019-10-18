@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221116"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547887"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -47,7 +47,7 @@ Azure では、[リソース グループ](https://docs.microsoft.com/azure/azur
 
 基本的なリソース グループ化メカニズムの上に構築されている Azure プラットフォームは、テンプレートを使用して、クラウド環境にリソースをデプロイするためのシステムを提供します。 ワークロードのデプロイ時、テンプレートを使用して一貫性のある組織と名前付け規則を作成し、リソースのデプロイと管理の設計におけるこれらの側面を強化できます。
 
-[Azure Resource Manager テンプレート](/azure/azure-resource-manager/template-deployment-overview)を使用すると、事前に定義された構成とリソース グループの構造を使用して一貫した状態でリソースを繰り返しデプロイすることができます。 Resource Manager テンプレートを使用して、デプロイの基礎として標準のセットを定義できます。
+[Azure Resource Manager テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview)を使用すると、事前に定義された構成とリソース グループの構造を使用して一貫した状態でリソースを繰り返しデプロイすることができます。 Resource Manager テンプレートを使用して、デプロイの基礎として標準のセットを定義できます。
 
 たとえば、サーバー間のトラフィックを分散するために、ロード バランサーと組み合わせた Web サーバーとして 2 つの仮想マシンを含む Web サーバー ワークロードをデプロイするための標準テンプレートを作成できます。 この種類のワークロードが必要な場合はいつでも、このテンプレートを再利用して、関連するデプロイ名と IP アドレスを変更するだけで構造的に同一な一連の仮想マシンとロード バランサーを作成できます。
 
