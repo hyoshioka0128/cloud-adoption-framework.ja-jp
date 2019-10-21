@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure の移行を計画する際のリソースの整合性について説明します。
 author: doodlemania2
 ms.author: dermar
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: cab22f60604b2bf201f333df366c7ceca0398ffc
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547887"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683522"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
