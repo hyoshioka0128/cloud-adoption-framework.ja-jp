@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d2f699596d6464deba81690827de00bab4a33520
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e816420e99bfb712db3ad8064b4c077df3edfcee
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026055"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548180"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>クラウド監視ガイド:はじめに
 
@@ -36,7 +36,7 @@ ms.locfileid: "71026055"
 * ハイブリッド、プライベート、および Azure ネイティブのワークロードの監視に最適なソリューション
 * インフラストラクチャとアプリケーションの両方に対してエンドツーエンドで推奨される監視アプローチ。 これには、Azure に移行するこれらの一般的なワークロードのためのデプロイ可能なソリューションも含まれます。
 
-このガイドは、個々の Azure サービスやソリューションを使用または構成するためのハウツー ガイドではありませんが、該当する場合や利用可能な場合には、それらのソースが参照されます。 このガイドを読むことで、推奨されるプラクティスとパターンに従ってワークロードを正常に処理する方法を理解できます。
+このガイドは、個々の Azure サービスやソリューションを使用または構成するためのハウツー ガイドではありませんが、該当する場合や利用可能な場合には、それらのソースが参照されます。 このガイドを読むことで、ベスト プラクティスとパターンに従ってワークロードを正常に処理する方法を理解できます。
 
 Azure Monitor と System Center Operations Manager に精通していない場合に、それらを比類のないものにしている要素と、それらの比較について理解を深めてから詳細に進みたい場合は、[監視プラットフォームの概要](./platform-overview.md)に関するページを参照してください。
 

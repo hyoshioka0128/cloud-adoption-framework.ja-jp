@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド プラットフォームのリージョンの選択について説明します。
 author: doodlemania2
 ms.author: dermar
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 25922a57c78ef0361ecfcd743bb311c72fdd17d3
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967706"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683490"
 ---
 # <a name="azure-regions"></a>Azure Azure リージョン
 
@@ -25,7 +25,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 1. **制約:** 特定のリージョンでのサービスのデプロイには、特定の制約が適用されます。 たとえば、一部のリージョンは、バックアップまたはフェールオーバーのターゲットとしてのみ使用できます。 注意が必要なその他の制約は、[データ主権要件](https://azure.microsoft.com/global-infrastructure/geographies)です。
 1. **主権:** 特定の主権エンティティ専用のリージョンがあります。 すべてのリージョンは Azure リージョンですが、こうした主権リージョンは他の Azure から完全に分離されており、Microsoft によって管理されるとは限りません。また、顧客の種類の制約を受ける場合もあります。 このような主権リージョンは次のとおりです。
     1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)
-    1. [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany) (標準の Azure ドイツのリージョン (非主権) を優先して非推奨になっています)
+    1. [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany) (標準の Azure German のリージョン (非主権) を優先して非推奨になっています)
     1. [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
     1. 注: [オーストラリア](https://azure.microsoft.com/global-infrastructure/australia)には、Microsoft によって管理されている 2 つのリージョンがありますが、オーストラリア政府とその顧客および請負業者向けに提供されているため、他の主権クラウドと似たクライアントの制約を受けます。
 
@@ -51,10 +51,10 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
     > [!WARNING]
     > VM のバックアップまたは復旧には Azure GRS を利用しないでください。 代わりに、IaaS ワークロードの回復性をサポートするために、[Azure Backup](https://azure.microsoft.com/services/backup) と [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) を [Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) と共に活用してください。
 2. Azure Backup と Azure Site Recovery は、IaaS およびデータ バックアップのニーズに応じてネットワーク設計と連携して機能し、リージョンの回復性を高めます。 データ転送を Microsoft のバックボーンにとどめ、可能な場合は [VNet ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を活用するように、ネットワークが最適化されていることを確認します。 グローバルに配置している大規模な組織では、リージョンのエグレス料金を節約するために [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) を使用してリージョン間のトラフィックをルーティングすることがあります。
-3. Azure リソース グループは、リージョン固有の構成要素です。 ただし、通常、リソース グループ内のリソースは複数のリージョンにまたがります。 このような場合、リージョンの障害が発生した場合に、影響を受けるリージョンで、(そのリソース グループ内の) 他のリージョンにあるリソースが引き続き機能するとしても、リソース グループに対する制御プレーン操作が失敗することを考慮する必要があります。 これは、ネットワークとリソース グループの両方の設計に影響を与える可能性があります。
+3. Azure リソース グループは、リージョン固有の構成要素です。 ただし、通常、リソース グループ内のリソースは複数のリージョンにまたがります。 このような場合、リージョンの障害が発生した場合に、影響を受けるリージョンで、(そのリソース グループ内の) 他のリージョンにあるリソースが引き続き機能するとしても、リソース グループに対する制御プレーン操作が失敗することを考慮することが重要です。 これは、ネットワークとリソース グループの両方の設計に影響を与える可能性があります。
 4. Azure 内の多くの PaaS サービスでは、[サービス エンドポイント](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)や[プライベート リンク](https://docs.microsoft.com/azure/private-link/private-link-overview)がサポートされています。 これらのソリューションはいずれも、リージョンの回復性、移行、ガバナンスを考慮するときに、ネットワークに関する考慮事項に大きく影響します。
-5. 多くの PaaS サービスは、独自のリージョンの回復性ソリューションに依存しています。 たとえば、Azure SQL Database を使用すると、CosmosDB と同様に N 個の追加リージョンに簡単にレプリケートできます。 一部のサービスには Azure DNS のようなリージョンの依存関係がありません。 導入プロセスで利用するサービスを検討する際には、各 Azure サービスで必要となる可能性があるフェールオーバー機能と復旧手順を明確に理解しておきます。
-6. ディザスター リカバリーをサポートするために複数のリージョンに配置するだけでなく、多くの組織では、フェールオーバーを必要としないようにアクティブ/アクティブ パターンで配置することを選択しています。 これには、グローバルな負荷分散と、追加のフォールト トレランスとネットワーク パフォーマンスの向上を実現するという利点があります。 このパターンを利用するには、複数のリージョンでアクティブ/アクティブの実行をアプリケーションがサポートしている必要があります。
+5. 多くの PaaS サービスは、独自のリージョンの回復性ソリューションに依存しています。 たとえば、Azure SQL Database を使用すると、Cosmos DB と同様に N 個の追加リージョンに簡単にレプリケートできます。 一部のサービスには Azure DNS のようなリージョンの依存関係がありません。 導入プロセスで利用するサービスを検討する際には、各 Azure サービスで必要となる可能性があるフェールオーバー機能と復旧手順を明確に理解しておきます。
+6. ディザスター リカバリーをサポートするために複数のリージョンに配置するだけでなく、多くの組織では、フェールオーバーを必要としないようにアクティブ/アクティブ パターンで配置することを選択しています。 これには、グローバルな負荷分散と、追加のフォールト トレランスとネットワーク パフォーマンスの向上を実現するという利点があります。 このパターンを利用するには、アプリケーションによって、複数のリージョンでアクティブ/アクティブの実行がサポートされている必要があります。
 
 > [!WARNING]
 > Azure リージョンは、そこで実行されているサービスに SLA が適用される高可用性構成です。 ただし、1 つのリージョンをミッション クリティカルなアプリケーションに依存させないようにします。 常にリージョンの障害に備えて計画し、回復と緩和の手順を練習してください。
@@ -63,9 +63,9 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 - さらに堅牢な準備とガバナンスの実装を検討します。
 - 影響を受ける地域のインベントリを作成します。 影響を受けるリージョンと国の一覧をまとめます。
-- データ主権要件の文書化:特定された国で、データの主権を制御するコンプライアンス要件がありますか。
-- ユーザー ベースの文書化:特定された国で従業員、パートナー、またはお客様がクラウドへの移行によって影響を受けますか。
-- データセンターと資産の文書化:移行作業に含まれる可能性のある特定された国に資産がありますか。
+- データ主権要件の文書化。 特定された国で、データの主権を制御するコンプライアンス要件がありますか。
+- ユーザー ベースの文書化。 特定された国で従業員、パートナー、またはお客様がクラウドへの移行によって影響を受けますか。
+- データセンターと資産の文書化。 移行作業に含まれる可能性のある特定された国に資産がありますか。
 - リージョンの SKU の可用性とフェールオーバーの要件を文書化します。
 
 初期インベントリに対処するために、移行プロセス全体で変更を調整します。

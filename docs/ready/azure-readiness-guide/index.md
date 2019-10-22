@@ -10,18 +10,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 124b308538161423c3f1b0c34f9834f4454c1e69
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: f2954bafecf542d9fc62587ca051c4cd527ef620
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378358"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548935"
 ---
 # <a name="before-you-start"></a>開始する前に
 
 ::: zone target="docs"
+
 > [!NOTE]
-> このガイドでは、クラウド導入フレームワークを準備するための開始点が提供され、これは Azure クイック スタート センターでも閲覧できます。 リンクについては、記事内のヒントを参照してください。
+> このガイドでは、クラウド導入フレームワークでのイノベーションのガイダンスにおける開始点を提供します。 また、これは Azure クイック スタート センターでも利用できます。 Azure クイック スタート センターへのリンクについては、この記事の後半にあるヒントを参照してください。
 
 ::: zone-end
 

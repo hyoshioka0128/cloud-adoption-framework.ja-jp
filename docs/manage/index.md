@@ -1,48 +1,146 @@
 ---
-title: 運用管理の概要
+title: クラウド管理
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: クラウド導入フレームワーク内の運用管理について説明します。
+description: クラウド導入フレームワークにおけるクラウド管理
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
-ms.topic: article
+ms.date: 10/07/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.custom: manage
-ms.openlocfilehash: 96f87583f50783fa0c6a8c947aa8b34ae440fc95
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+layout: LandingPage
+ms.openlocfilehash: 2ae964d2b145a9d241cc647b939771f219b0379e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221439"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547298"
 ---
-# <a name="establishing-operational-management-practices-in-the-cloud"></a>クラウドでの運用管理プラクティスの確立
+# <a name="cloud-management-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド管理
 
-クラウドの導入は、ビジネス価値を実現するための触媒です。 ただし、真のビジネス価値は、クラウドにデプロイされるテクノロジ資産の進行中の安定した運用によって実現されます。 クラウド導入フレームワークのこのセクションでは、クラウドでの運用管理へのさまざまな移行について説明します。
+[クラウド戦略](../strategy/index.md)を提供するには、十分な計画、準備、導入が必要です。 しかし、これは具体的なビジネスの結果を提供する、デジタル資産の継続的な運用です。 クラウド ソリューションにおいて信頼性の高い、適切に管理された運用を計画していなければ、これらの取り組みによる価値はほとんどありません。 次の演習は、進行中の運用を行うクラウド管理を提供するために必要なビジネスおよび技術的なアプローチを開発するのに役立ちます。
 
-## <a name="actionable-best-practices"></a>実施可能なベスト プラクティス
+## <a name="getting-started"></a>使用の開始
 
-最新の運用管理ソリューションには、運用のマルチクラウド ビューが用意されています。 次の推奨される方法で管理される資産は、クラウド、既存のデータセンター、または競合するクラウド プロバイダーにさえ存在する場合があります。 現在、フレームワークには、クラウドでの運用管理を成熟させるための 2 つの参照推奨方法が含まれています。
+クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークからは、次の演習が提案されます。
 
-- [Azure サーバー管理](./azure-server-management/index.md):このオンボーディング ガイドには、運用管理に必要なクラウドネイティブ ツールとサービスが含まれています。
-- [ハイブリッド監視](./monitor/index.md):多くのお客様は、System Center Operations Manager にかなりの投資を既に行ってきました。 これらのお客様の場合、ハイブリッド監視のこのガイドによって、クラウドネイティブのレポート作成ツールを Operations Manager のツールと比較したり、照らし合わせたりできます。 この比較により、運用管理にどのツールを使用するかをより簡単に決定できるようになります。
+<!-- markdownlint-disable MD033 -->
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./azure-management-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>管理ベースラインの確立</h3>
+運用管理に対する最小限のコミットメントを提供するために必要な重要度の分類、クラウド管理ツール、プロセスを定義します。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/business-alignment.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>ビジネス コミットメントの定義</h3>
+サポートされているワークロードを文書化して、ビジネスに対する運用上のコミットメントを確立し、各ワークロードに対するクラウド管理への投資に同意します。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>管理ベースラインの展開</h3>
+ビジネス コミットメントと運用上の決定に基づいて、含まれているベスト プラクティスを活用し、必要なクラウド管理ツールを実装します。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./design-principles.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>高度な操作と設計の原則</h3>
+より高いレベルのビジネス コミットメントを必要とするプラットフォームやワークロードでは、回復性と信頼性のコミットメントを提供するために、より深いアーキテクチャ レビューが必要になる場合があります。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-## <a name="cloud-operations"></a>クラウド操作
+## <a name="scalable-cloud-management-methodology"></a>スケーラブルなクラウド管理方法
 
-これらのベスト プラクティスはいずれも運用管理の将来の状態の方法論を目指すものです。
+上記の手順では、クラウド導入フレームワークの管理手法を実行するためのアクションにつながるアプローチを作成します。
 
-![CAF 管理メソドロジ](../_images/manage/caf-manage.png)
+![クラウド導入フレームワークの管理手法](../_images/manage/caf-manage.png)
 
-**ビジネスの整合:** 管理メソドロジでは、すべてのワークロードは重要度およびビジネス価値によって分類されます。 次に、この分類は、影響分析によって測定されます。ここでは、パフォーマンスの低下やビジネスの中断に関連付けられている失われた価値を計算します。 その具体的な収益への影響を使用して、クラウド運用チームは事業部門と協力して、コストとパフォーマンスのバランスを取るコミットメントを確立できます。
+## <a name="creating-a-balanced-cloud-portfolio"></a>バランスの取れたクラウド ポートフォリオを作成する
 
-**クラウド運用の規範:** ビジネスが整合されたら、各ワークロードのクラウド運用の適切な規範の追跡と報告がはるかに簡単になります。 各規範に沿って意思決定を行うことで、企業で簡単に把握できるコミットメントを促進できます。 この連携アプローチにより、ビジネス利害関係者を、コストとパフォーマンスの適切なバランスを見つけるためのパートナーにすることができます。
+[ビジネス アラインメント](./considerations/business-alignment.md)に関する記事で説明したように、すべてのワークロードがミッション クリティカルであるとは限りません。 どのポートフォリオ内でも、さまざまな運用管理のニーズがあります。 ビジネス アライメントの取り組みは、ビジネスへの影響を把握し、ビジネスにおける管理コストを交渉して、最も適切な運用管理プロセスとツールを確保するために役立ちます。
 
-- **インベントリと可視性:** 少なくとも、運用管理には、資産のインベントリを作成し、各資産の実行状態を表示するための手段が必要です。
-- **運用のコンプライアンス:** 資産の構成、サイズ、コスト、およびパフォーマンスを定期的に管理することが、期待どおりのパフォーマンスを維持するための鍵です。
-- **保護と復旧:** 運用の中断を最小限に抑えることと、回復を迅速に進めることは、パフォーマンスの低下や収益への影響の回避に役立ちます。 検出と回復は、この規範の重要な側面です。
-- **プラットフォームの運用:** すべての IT 環境には、一連のよく使用されるプラットフォームが含まれます。 これらのプラットフォームには、SQL Server または HDInsights のようなデータ ストアを含めることができます。 その他の一般的なプラットフォームには、Kubernetes や AKS などのコンテナー ソリューションを含めることができます。 プラットフォームに関係なく、プラットフォームの運用の成熟度では、これらの一般的なプラットフォームがワークロードによってどのようにデプロイ、構成、および使用されるかに基づいた運用のカスタマイズに注目します。
-- **ワークロードの運用:** 運用の成熟度の最も高いレベルでは、クラウド運用チームは、ビジネスの成功に不可欠なワークロードの運用を調整できます。 このように重要なワークロードの場合、使用可能なデータが、その使用率に基づいたワークロードの自動修復、サイズ変更、または保護に役立ちます。
+## <a name="objective-of-this-content"></a>このコンテンツの目的
 
-[設計レビュー フレームワーク (コードネーム: クラウド設計原則)](https://docs.microsoft.com/azure/architecture/reliability) などのその他のガイダンスは、上の規範内で各ワークロードに関する詳細なアーキテクチャ上の決定を行う際に役立ちます。
+クラウド導入フレームワークのこのセクションのガイダンスには、次の 2 つの目的があります。
 
-クラウド導入フレームワークのこのセクションでは、これらの各トピックに基づいて、組織内のクラウド運用を成熟させます。
+- お客様がよく経験する一般的なエクスペリエンスを表す、アクションにつながる運用管理のアプローチの例を示します。
+- ビジネス コミットメントに基づいて、カスタマイズされた管理ソリューションを作成するのに役立ちます。
+
+この内容は、クラウド運用チームが使用することを目的としています。 また、クラウド運用またはクラウド設計の原則で強力な基盤を開発する必要があるクラウド設計者も対象としています。
+
+## <a name="intended-audience"></a>対象ユーザー
+
+クラウド導入フレームワークのコンテンツは、企業のビジネス、テクノロジ、および文化に影響を与えます。 クラウド導入フレームワークのこのセクションは主に、IT 運用、IT ガバナンス、財務、事業部門のリーダー、ネットワーク、ID、クラウド導入のチームを対象としています。 これらの役割の人々に対するさまざまな依存関係には、このガイダンスを使用したクラウド アーキテクトによる促進的アプローチが必要です。 これらのチームでの円滑化が、1 回限りの作業であることはめったにありません。
+
+クラウド アーキテクトは、これらの対象ユーザーをまとめる思想的リーダーおよび進行役の役割を果たします。 このガイドのコレクションの内容は、クラウド アーキテクトが適切な対象ユーザーと適切なコミュニケーションを取り、必要な決定を促すことをサポートするために設計されています。 クラウドによって実現されるビジネスの変革は、ビジネスと IT 全体にわたる意思決定を導くクラウド アーキテクトによって決まります。
+
+**このセクションでのクラウド アーキテクトの特性:** クラウド導入フレームワークの各セクションは、クラウド アーキテクトの役割のさまざまな専門性やバリエーションを表しています。 クラウド導入フレームワークのこのセクションは、運用およびデプロイの管理ソリューションに対する情熱を持つクラウド アーキテクトを対象として設計されています。 このフレームワーク内で、これらのスペシャリストは、*クラウド運用*またはまとめて*クラウド運用チーム*として呼ばれることがよくあります。
+
+## <a name="use-this-guide"></a>このガイドの使用法
+
+このガイドに最初から最後まで従う場合、この内容は、堅牢なクラウド運用戦略を開発するのに役立ちます。 このガイダンスでは、そのような戦略の理論と実装を段階を追って説明します。
+
+<!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](./guide/index.md). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
+
+## <a name="next-steps"></a>次の手順
+
+手法を適用して、[明確なビジネス コミットメントを確立します](./considerations/business-alignment.md)。
+
+> [!div class="nextstepaction"]
+> [明確なビジネス コミットメントを確立する](./considerations/business-alignment.md)

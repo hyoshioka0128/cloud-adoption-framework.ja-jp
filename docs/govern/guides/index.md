@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967605"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547571"
 ---
 # <a name="cloud-governance-guides"></a>クラウド ガバナンス ガイド
 
@@ -70,6 +70,8 @@ ms.locfileid: "71967605"
 
 > [!WARNING]
 > より堅牢なガバナンスの開始点が必要になることがあります。 その場合は、[Azure 仮想データセンター](#azure-virtual-datacenter)のアプローチ ([以下](#azure-virtual-datacenter)で簡単に説明します) を検討してください。 このアプローチは通常、エンタープライズ規模の導入を行う場合、特に資産の数が 10,000 個を超える作業で推奨されます。 また、次のいずれかが要求される複雑なガバナンスのシナリオの場合は、事実上の選択となります: 広範なサードパーティのコンプライアンス要件、ドメインに関する深い専門知識、成熟した IT ガバナンス ポリシーやコンプライアンス要件との整合性。
+
+<!-- markdownlint-disable MD028 -->
 
 > [!NOTE]
 > どちらのガイドも、ユーザーの実際の状況と完全には一致していない可能性があります。 どちらか近い方のガイドを選択し、開始点として使用してください。 ガイド全体を通して、特定の条件を満たすよう決定をカスタマイズするのに役立つ追加情報が提供されます。

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fffbb4c2017d05ab6eccb350615ef18572b601d5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025724"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548729"
 ---
 <!-- markdownlint-disable -->
 
@@ -46,7 +46,7 @@ ms.locfileid: "71025724"
 
 [財政上の成果](./fiscal-outcomes.md)のサンプルを確認してください。
 
-## <a name="agility-outcomes"></a>機敏性の成果
+## <a name="agility-outcomes"></a>機敏性成果
 
 今日の変化が速いビジネス環境では、時間が重要視されます。 迅速に市場の変化に対応できるか、市場の変化を推進できるかは、ビジネスの即応性の基本的な指標です。
 

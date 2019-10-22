@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023710"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547863"
 ---
 # <a name="policy-enforcement-decision-guide"></a>ポリシー適用の意思決定ガイド
 
@@ -22,7 +22,7 @@ ms.locfileid: "71023710"
 
 ![複雑さが最小から最大までのポリシー適用オプションを表した図 (対応するジャンプ リンクを下に掲載)](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
-ジャンプ先:[ベースラインの推奨プラクティス](#baseline-recommended-practices) | [ポリシー コンプライアンスの監視](#policy-compliance-monitoring) | [ポリシーの適用](#policy-enforcement) | [組織間のポリシー](#cross-organization-policy) | [適用の自動化](#automated-enforcement)
+ジャンプ先:[ベースラインのベスト プラクティス](#baseline-best-practices) | [ポリシー コンプライアンスの監視](#policy-compliance-monitoring) | [ポリシーの適用](#policy-enforcement) | [組織間のポリシー](#cross-organization-policy) | [適用の自動化](#automated-enforcement)
 
 クラウドの資産が増加するにつれて、増加した一連のリソース、サブスクリプションにわたってポリシーを管理し、適用するという、関連して生じる必要性に直面することになります。 資産が大きくなり、組織のポリシー要件が増えるにつれて、一貫したポリシー適合と迅速な違反の検出を確実に行うためにポリシー適用のプロセスを拡大する必要があります。
 
@@ -30,7 +30,7 @@ ms.locfileid: "71023710"
 
 ポリシー適用プロセスの範囲を決定する主な要因は、組織の[クラウド ガバナンス要件](../../govern/index.md)、クラウド資産のサイズと種類、組織が[サブスクリプション設計](../subscriptions/index.md)に反映される方法です。 資産のサイズが大きくなることや、ポリシー適用を一元管理する必要性が増すことは、どちらも適用範囲を増やす理由になります。
 
-## <a name="baseline-recommended-practices"></a>ベースラインの推奨プラクティス
+## <a name="baseline-best-practices"></a>ベースラインのベスト プラクティス
 
 単一のサブスクリプションとシンプルなクラウドのデプロイでは、Azure のリソースとサブスクリプションにネイティブで備わっている機能を使用して、多くの企業ポリシーを適用できます。 クラウド導入フレームワークの[意思決定ガイド](../index.md)の全体を通じて説明されているパターンを一貫して使用すると、ポリシーの適用に特に投資せずにポリシー コンプライアンスのベースライン レベルを確立するのに役立つ可能性があります。 次のような機能が該当します。
 

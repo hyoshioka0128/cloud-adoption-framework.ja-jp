@@ -7,29 +7,17 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 07/04/2019
-ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.date: 10/14/2019
+ms.openlocfilehash: 73012184e5eab2592cfbeac1e9b5f294284ae270
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72377936"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547985"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft Cloud 導入フレームワーク
 
-Cloud 導入フレームワークは、Azure でクラウドを導入するための One Microsoft のアプローチであり、Microsoft の従業員、パートナー、お客様からのベスト プラクティスを統合および共有しています。 このフレームワークでは、企業のお客様が導入作業中に目的のビジネス成果を推進できるように、テクノロジ、ビジネス、ユーザーに関する戦略の形成に役立つ一連のツール、ガイダンス、体験談を提供します。 このガイダンスは、一般的なクラウド導入ライフサイクルのさまざまなステージと繰り返しに対応しており、適切なタイミングで適切なガイダンスに簡単にアクセスできます。
-
-![クラウド導入フレームワークの概要](./_images/caf-overview.png)
-
-## <a name="getting-started-executive-summaries"></a>作業の開始:概要
-
-クラウド導入フレームワークを初めてお使いになるお客様のために、次の 3 つの導入記事を用意しています。[移行](./getting-started/migrate.md)、[技術革新](./getting-started/innovate.md)、[有効化](./getting-started/enable.md)です。 それぞれの記事では、概要と企業の導入ライフサイクルを通しての高度な体験が提供されます。
-
-より具体的なガイダンスについては、導入ライフサイクルの各ステージへのリンクを続いて参照してください。
-
-## <a name="use-the-cloud-adoption-framework-throughout-the-adoption-lifecycle"></a>導入ライフサイクル全体でクラウド導入フレームワークを使用する
-
-クラウド導入フレームワークの各セクションは、上記の概要図にマップされます。 この一覧は、クラウド導入ライフサイクルにおけるご自身の現在のステージに最も適したセクションを見つけるのに役立ちます。
+Cloud 導入フレームワークは、Azure でクラウドを導入するための One Microsoft のアプローチであり、Microsoft の従業員、パートナー、お客様からのベスト プラクティスを統合および共有しています。 このフレームワークでは、お客様が導入作業中に目的のビジネス成果を推進できるように、テクノロジ、ビジネス、ユーザーに関する戦略の形成に役立つ一連のツール、ガイダンス、体験談を提供します。 このガイダンスは、クラウド導入ライフサイクルの次のフェーズに対応しており、適切なタイミングで適切なガイダンスに簡単にアクセスできます。
 
 <!-- markdownlint-disable MD033 -->
 
@@ -98,12 +86,31 @@ Cloud 導入フレームワークは、Azure でクラウドを導入するた�
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                                <img alt="" src="./_images/caf-migrate.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>移行</h3>
 既存のワークロードを移行して最新化する。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./innovate/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>イノベーション</h3>
+新しいクラウド ネイティブ ソリューションまたはハイブリッド ソリューションを開発する。
                         </div>
                     </div>
                 </div>
@@ -130,13 +137,32 @@ Cloud 導入フレームワークは、Azure でクラウドを導入するた�
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./organize/index.md">
+        <a href="./manage/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
                                 <img alt="" src="./_images/caf-manage.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>管理</h3>
+クラウド ソリューションおよびハイブリッド ソリューションのための運用管理。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./organize/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-organize.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -150,16 +176,11 @@ Cloud 導入フレームワークは、Azure でクラウドを導入するた�
     </li>
 </ul>
 
-## <a name="product-roadmap"></a>製品ロードマップ
+## <a name="understanding-the-lifecycle"></a>ライフサイクルの詳細
 
-クラウド導入フレームワークは、現在パブリック プレビューとして提供されています。 このフレームワークは、次のセクションで説明する高い目標に完全に達したときに一般提供 (GA) される予定です。 このプレビュー リリースで最も重視している領域は、次のとおりです。
+上でキャプチャされた各フェーズは、広範なクラウド導入ライフサイクルの一部です。 次の図は、各フェーズをつないでライフサイクル全体を示しています。 クラウド導入フレームワークは、完全なライフサイクル フレームワークであり、各フェーズを通じてお客様をサポートします。
 
-- [クラウド導入戦略](./strategy/index.md)
-- [クラウド導入計画](./plan/index.md)
-- [クラウド移行](./migrate/index.md)
-- [クラウド ガバナンス](./govern/guides/index.md)
-
-クラウド導入フレームワークは、GA リリースに近づくにつれて、頻繁に拡張される予定です。 この拡張により、各セクションの深みが増し、コンテンツの新しいセクションも追加されます。 詳細については、[クラウド導入フレームワークのロードマップ](./reference/index.md)に関する記事を参照してください。
+![クラウド導入フレームワークの概要](./_images/caf-overview.png)
 
 ## <a name="intent"></a>Intent
 
@@ -179,9 +200,7 @@ Cloud 導入フレームワークは、Azure でクラウドを導入するた�
 
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft Cloud 導入フレームワークの使用方法
 
-企業が Azure を初めて導入する場合は、まず[クラウド導入フレームワークの概要](./getting-started/migrate.md)に関するページをお読みください。 この概要には、企業のデジタル変革に関する規範的ガイダンスが含まれており、プロセスを順を追って説明します。
-
-企業で Azure を利用したことがあり、特定の分野についてさらに詳細なガイダンスやベスト プラクティスをお探しの場合は、[ガバナンスの概要](./govern/index.md)に関するページと「[アーキテクチャの決定ガイド](./decision-guides/index.md)」をご覧ください。 GA リリースに近づくにつれ、セクションがさらに追加されます。
+企業が Azure を初めて導入する場合は、まず[クラウド導入フレームワークの概要](./getting-started/migrate.md)に関するページをお読みください。 この概要では、企業のデジタル変革に関するベスト プラクティスが提供され、プロセスを順を追って説明します。
 
 > [!div class="nextstepaction"]
 > [作業開始](./getting-started/migrate.md)
