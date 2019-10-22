@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022583"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683771"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>セキュリティで保護された監視および管理ツール
 
@@ -41,6 +41,16 @@ Azure Security Center なら、ハイブリッド クラウド ワークロー�
 
 移行した資産のセキュリティ保護については、[Azure Security Center に関するページ](https://docs.microsoft.com/azure/security-center)で詳細を確認してください。
 
+## <a name="service-health-monitoring"></a>サービス正常性の監視
+
+Azure Service Health では、ユーザーが Azure サービスの問題の影響を受ける場合に、パーソナライズされたアラートとガイダンスを提供します。 問題を通知してくれるだけでなく、その影響も把握できるほか、問題が解決した場合にはその更新情報が配信されます。 また、お使いのリソースの可用性に影響を及ぼすおそれのある、予定されているメンテナンスや変更に備えることもできます。
+
+- **サービス正常性ダッシュボード。** 現在のサービスの問題、今後予定されているメンテナンス、およびサービスの移行がある場合はその詳細な更新と共に、Azure サービスおよびリージョンの全体的な正常性を確認できます。
+- **サービス正常性のアラート。** 停止や今後予定されているメンテナンスなど、サービス上の問題がある場合に、ユーザーとユーザーのチームにそれを通知するアラートを構成できます。
+- **サービス正常性の履歴。** 過去のサービスの問題を確認し、Microsoft から公式の概要とレポートをダウンロードできます。
+
+移行したリソースの正常性の情報を取得し続けるには、[Azure Service Health](https://docs.microsoft.com/azure/service-health) に関するドキュメントを参照してください。
+
 ## <a name="protect-assets-and-data"></a>資産およびデータを保護する
 
 Azure Backup は、VM、ファイル、およびデータを保護する手段を提供します。 Azure Backup は、次のような便利な機能を多数備えています。
@@ -51,3 +61,13 @@ Azure Backup は、VM、ファイル、およびデータを保護する手段�
 - 保護された資産の復旧。
 
 移行した資産の保護については、[Azure Backup に関するページ](https://docs.microsoft.com/azure/backup)で詳細を確認してください。
+
+## <a name="optimize-resources"></a>リソースの最適化
+
+Azure Advisor では、パーソナライズされた Azure のベスト プラクティスが提示されます。 これでは、ユーザーの構成と利用統計情報を分析し、レコメンデーションを提供します。これが Azure リソースの最適化に役立ち、高可用性、セキュリティ、パフォーマンス、コストが実現されます。 Advisor のインライン アクションでは、レコメンデーションを迅速かつ簡単に修復し、デプロイを最適化することができます。
+
+- **Azure のベスト プラクティス。** 高可用性、セキュリティ、パフォーマンス、コストのために、移行したリソースを最適化します。
+- **ステップ バイ ステップ ガイダンス。** ガイド付きのクイック リンクを使用して、レコメンデーションを効率的に修復します。
+- **新しいレコメンデーションのアラート。** 追加で VM のサイズを最適化してコストを節約できる場合があるなど、新しいレコメンデーションを取得し続けることができます。
+
+移行したリソースの最適化については、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) に関するページを参照してください。
