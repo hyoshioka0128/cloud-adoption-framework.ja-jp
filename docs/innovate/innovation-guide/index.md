@@ -10,19 +10,25 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fdd33cff299991172fb173e9ab6ae719bec5cc37
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8d30001a3ee97783dca2709c33e7bebb9ab9a889
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556481"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769318"
 ---
-# <a name="before-you-start"></a>開始する前に
-
 ::: zone target="docs"
+
+# <a name="azure-innovation-guide-before-you-start"></a>Azure イノベーション ガイド:開始する前に
 
 > [!NOTE]
 > クラウド導入フレームワークでイノベーションを導くとき、このガイドが開始点となります。 これは Azure クイック スタート センターでも利用できます。 Azure クイック スタート センターへのリンクについては、この記事の後半にあるヒントを参照してください。
+
+::: zone-end
+
+::: zone target="chromeless"
+
+# <a name="before-you-start"></a>開始する前に
 
 ::: zone-end
 

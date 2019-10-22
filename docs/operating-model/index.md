@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入フレームワークの運用モデルを理解します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 85123239ad6dd4a389a2b32692638a3debe98951
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 77e3ded1f76b096655a7831bc1950bf28bd4c86b
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556634"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683811"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>クラウドの運用モデルの確立
 
