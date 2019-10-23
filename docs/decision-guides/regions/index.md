@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 25922a57c78ef0361ecfcd743bb311c72fdd17d3
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683490"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769399"
 ---
 # <a name="azure-regions"></a>Azure Azure リージョン
 
@@ -44,7 +44,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 堅牢なクラウド デプロイには、Azure リージョンが考慮された、十分に考慮されたネットワークが必要です。 デプロイ先のリージョンについて前述の特性を考慮した後に、ネットワークをデプロイする必要があります。 ネットワークに関する包括的な説明はこの記事では扱いませんが、次の点について考慮する必要があります。
 
-1. Azure リージョンはペアで配置されています。 あるリージョンで致命的な障害が発生した場合に備えて、同じ地理的境界* 内の別のリージョンがペア リージョンとして指定されています。 プライマリとセカンダリの回復性戦略として、ペア リージョンへの配置を検討することをお勧めします。 \* Azure ブラジルは注意が必要な例外であり、ペア リージョンが米国中南部です。 詳細については、[こちら](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions)を参照してください。
+1. Azure リージョンはペアで配置されています。 あるリージョンで致命的な障害が発生した場合に備えて、同じ地理的境界* 内の別のリージョンがペア リージョンとして指定されています。 プライマリとセカンダリの回復性戦略として、ペア リージョンへの配置を検討することをお勧めします。 \* Azure ブラジルは注意が必要な例外であり、ペア リージョンが米国中南部です。 詳細については、「[Azure のペアになっているリージョン](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)」をご覧ください。
     1. Azure Storage は [geo 冗長ストレージ (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) をサポートしています。これは、データの 3 つのコピーがプライマリ リージョンに格納され、3 つの追加コピーがペア リージョンに格納されることを意味します。 GRS のストレージ ペアリングを変更することはできません。
     1. Azure Storage GRS に依存するサービスでは、このペア リージョンの機能を利用できます。 そのためには、それをサポートするようにアプリケーションとネットワークを配置する必要があります。
     1. リージョンの回復性のニーズに対応するために GRS を利用する予定がない場合は、セカンダリとしてペアになっているリージョンを利用_しない_ことをお勧めします。 リージョンで障害が発生した場合、リソースの移行時に、ペア リージョンのリソースに大きな負荷がかかります。 別のサイトに回復して、このような負荷を回避することで、回復時の速度を向上させることができます。

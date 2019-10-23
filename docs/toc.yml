@@ -192,7 +192,7 @@
               href: migrate/index.md
             - name: Azure 移行ガイド
               items:
-                - name: Azure 移行ガイドの概要
+                - name: 開始する前に
                   href: migrate/azure-migration-guide/index.md
                 - name: Azure への移行の前提条件
                   href: migrate/azure-migration-guide/prerequisites.md
@@ -334,7 +334,7 @@
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: VMware SRM を使用したディザスター リカバリー サイトとしてのプライベート クラウドの構成
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                - name: SQL Server を移行するためのベスト プラクティス
+                - name: データ プラットフォームを移行するためのベスト プラクティス
                   items:
                     - name: 概要
                       href: migrate/azure-best-practices/sql-migration.md
@@ -418,16 +418,16 @@
                           href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: オンラインで Oracle を Azure DB for PostgreSQL に移行する
                           href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: メインフレーム移行
-                      items:
-                        - name: 概要
-                          href: infrastructure/mainframe-migration/index.md
-                        - name: 通説と事実
-                          href: infrastructure/mainframe-migration/myths-and-facts.md
-                        - name: 移行方法
-                          href: infrastructure/mainframe-migration/migration-strategies.md
-                        - name: アプリケーションの戦略
-                          href: infrastructure/mainframe-migration/application-strategies.md
+                - name: メインフレームを移行するためのベスト プラクティス
+                  items:
+                    - name: 概要
+                      href: infrastructure/mainframe-migration/index.md
+                    - name: 通説と事実
+                      href: infrastructure/mainframe-migration/myths-and-facts.md
+                    - name: 移行方法
+                      href: infrastructure/mainframe-migration/migration-strategies.md
+                    - name: アプリケーションの戦略
+                      href: infrastructure/mainframe-migration/application-strategies.md
                 - name: ワークロードを最適化するためのベスト プラクティス
                   items:
                     - name: ワークロードの料金計算とサイズ設定
@@ -546,7 +546,7 @@
               href: innovate/index.md
             - name: Azure イノベーション ガイド
               items:
-                - name: はじめに
+                - name: 開始する前に
                   href: innovate/innovation-guide/index.md
                 - name: カスタマー フィードバックの準備
                   href: innovate/innovation-guide/adoption.md
@@ -654,40 +654,6 @@
                   items:
                     - name: 概要
                       href: innovate/best-practices/apps.md
-                    - name: クラウドネイティブ
-                      items:
-                        - name: クラウドネイティブ アプリ
-                          items:
-                            - name: クラウドネイティブ アプリ用のリファレンス ソリューション
-                              href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
-                            - name: SQL DB を使用した .NET Core アプリの作成
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: SQL DB を使用した .NET アプリの作成
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: MySQL を使用した PHP アプリの作成
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: MongoDB を使用した Node.js の作成
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: iOS アプリを作成する
-                              href: 'https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-ios-get-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: マイクロサービス
-                          items:
-                            - name: Azure におけるマイクロサービスの設計、構築、運用
-                              href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Service Fabric 上のマイクロサービス用のリファレンス アーキテクチャ
-                              href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/service-fabric?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Azure Kubernetes Services (AKS) を使用したマイクロサービスの参照アーキテクチャ
-                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Azure アプリケーションの設計用のガイド
-                              href: 'https://docs.microsoft.com/azure/architecture/guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: 移行、最新化、イノベーション
-                      items:
-                        - name: ワークロード (アプリ、VM、データ) の移行
-                          href: 'https://azure.microsoft.com/migration/'
-                        - name: Azure マネージド Kubernetes Services (AKS) を使用して既存のアプリを移行する
-                          href: 'https://azure.microsoft.com/solutions/architecture/migrate-existing-applications-with-aks/'
-                        - name: Azure Stack とクラウド ネイティブ アプリを使用してレガシ データを拡張する
-                          href: 'https://azure.microsoft.com/solutions/architecture/unlock-legacy-data/'
                     - name: 市民開発者
                       items:
                         - name: PowerApps でのアプリの作成
@@ -700,28 +666,58 @@
                           href: 'https://docs.microsoft.com/power-platform/admin/wp-compliance-data-privacy?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: 市民開発者向けのデータ損失防止ポリシーのソリューション
                           href: 'https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: 最新の Web エクスペリエンス
+                    - name: インテリジェントなエクスペリエンス
                       items:
-                        - name: クラウドネイティブ アプリ用のリファレンス ソリューション
-                          href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
-                        - name: SQL DB を使用した .NET Core アプリの作成
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: SQL DB を使用した .NET アプリの作成
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: MySQL を使用した PHP アプリの作成
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: MongoDB を使用した Node.js の作成
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: 最新の Web アプリ
+                          items:
+                            - name: Web アプリのリファレンス ソリューション
+                              href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
+                            - name: SQL DB を使用した .NET Core アプリの作成
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: SQL DB を使用した .NET アプリの作成
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: MySQL を使用した PHP アプリの作成
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: MongoDB を使用した Node.js の作成
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: インテリジェンスを使用する
+                          items:
+                            - name: Visual Studio のコンピューター ビジョン
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service'
+                            - name: テキストをリアルタイムで翻訳する
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translate'
+                            - name: LUIS を使用してセンチメントを理解する
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/luis/luis-quickstart-intent-and-sentiment-analysis'
+                            - name: 音声をテキストに変換する
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-dotnet-windows'
+                            - name: Bing Web 検索
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-web-search/tutorial-bing-web-search-single-page-app'
+                            - name: 画像からのビジュアル検索
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-visual-search/index'
+                        - name: ChatBots
+                          items:
+                            - name: 基本的なボットを作成してデプロイする
+                              href: 'https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-basic-deploy'
+                            - name: ラーニング パス - Azure Bot Services を使用してボットを作成する
+                              href: 'https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service/'
+                            - name: リポジトリ - github の Azure Bot サンプル
+                              href: 'https://github.com/microsoft/botframework-sdk'
                     - name: クラウド ネイティブ アプリケーション
                       items:
                         - name: マイクロサービス アーキテクチャ
                           items:
-                            - name: Azure Kubernetes Services (AKS) を使用したマイクロサービスの参照アーキテクチャ
-                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Containers
-                          items:
                             - name: Azure におけるマイクロサービスの設計、構築、運用
                               href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Azure Kubernetes Services (AKS) を使用したマイクロサービスの参照アーキテクチャ
+                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 参照アーキテクチャ - サーバーレス マイクロサービスのサンプル
+                              href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Containers
+                          items:
+                            - name: Kubernetes とは
+                              href: 'https://azure.microsoft.com/topic/what-is-kubernetes/'
+                            - name: Azure Kubernetes Service (AKS) 用のアプリケーションの準備
+                              href: 'https://docs.microsoft.com/azure/aks/tutorial-kubernetes-prepare-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Azure Red Hat OpenShift クラスターを作成する
                               href: 'https://docs.microsoft.com/azure/openshift/tutorial-create-cluster?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Spring Boot マイクロサービス
@@ -732,6 +728,16 @@
                               href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-distributed-tracing?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Azure Cosmos DB を Azure Spring Cloud アプリケーションにバインドする
                               href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-bind-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: イベントドリブン アプリケーション
+                          items:
+                            - name: ラーニング パス - サーバーレス アプリケーションの作成
+                              href: 'https://docs.microsoft.com/learn/paths/create-serverless-applications/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Functions 開発者ガイド
+                              href: 'https://docs.microsoft.com/azure/azure-functions/functions-reference?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: 電子ブック - サーバーレス コンピューティング クックブック
+                              href: 'https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: ドキュメント - Azure Functions
+                              href: 'https://docs.microsoft.com/azure/azure-functions/'
                 - name: 導入の強化
                   items:
                     - name: 概要
