@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 82e011355363eb0483914b01185a739ab847a997
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: cb4b14da5b7f9e934a6597fb0fc4e1c8b3d656ff
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378248"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548913"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>移行ランディング ゾーンをデプロイする
 
@@ -60,12 +60,12 @@ ms.locfileid: "72378248"
 |移行ツール|Azure Site Recovery がデプロイされ、Azure Migrate プロジェクトが作成されます。|[移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)|
 |ログ記録と監視|Operational Insights ワークスペースと診断ストレージ アカウントがプロビジョニングされます。|         |
 |ネットワーク|ゲートウェイ、ファイアウォール、ジャンプボックス、ランディング ゾーンのサブネットを持つ仮想ネットワークが作成されます。|[ネットワーク関連の意思決定](../considerations/network-decisions.md)|
-|ID|サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。|[ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|ID|サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。|[ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
 |ポリシー|このブループリントでは現在、Azure ポリシーを適用しないことを想定しています。|         |
 |サブスクリプション デザイン|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../considerations/scaling-subscriptions.md)|
 |管理グループ|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../considerations/scaling-subscriptions.md)         |
 |リソース グループ|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../considerations/scaling-subscriptions.md)         |
-|Data|該当なし|「[Azure SQL で適切なデプロイ オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json)」と [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Data|該当なし|「[Azure SQL で適切なデプロイ オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)」と [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Storage|該当なし|[Azure Storage ガイダンス](../considerations/storage-guidance.md)         |
 |名前付けとタグ付けの標準|該当なし|[名前付けとタグ付けのベスト プラクティス](../considerations/naming-and-tagging.md)         |
 |コスト管理|該当なし|[コストの追跡](../azure-best-practices/track-costs.md)|

@@ -8,16 +8,16 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c43d07c6cfdea0152559d7a13fec7dde148b1530
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221570"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547272"
 ---
 # <a name="guest-configuration-policy"></a>ゲスト構成ポリシー
 
-Azure Policy の[ゲスト構成](/azure/governance/policy/concepts/guest-configuration)拡張機能では、仮想マシン内の構成設定を監査することができます。 ゲスト構成は、現在 Azure VM 上でのみサポートされます。
+Azure Policy の[ゲスト構成](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)拡張機能では、仮想マシン内の構成設定を監査することができます。 ゲスト構成は、現在 Azure VM 上でのみサポートされます。
 
 Azure Policy ポータル ページでカテゴリ "ゲスト構成" を検索すれば、ゲスト構成ポリシーの一覧が見つかります。 PowerShell ウィンドウでこのコマンドレットを実行しても、この一覧を見つけることができます。
 

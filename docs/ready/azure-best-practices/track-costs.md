@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967749"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548965"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -115,7 +115,7 @@ Azure Cost Management は、予算を設定し、Azure や AWS のクラウド �
 
 ### <a name="get-started-with-azure-cost-management"></a>Azure Cost Management の利用を開始する
 
-Azure Cost Management の利用を開始する方法の詳細については、「[Azure Cost Management を使用してクラウドへの投資を最適化する方法](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)」を参照してください。
+Azure Cost Management の利用を開始する方法の詳細については、「[Azure Cost Management を使用してクラウドへの投資を最適化する方法](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)」を参照してください。
 
 ### <a name="use-azure-cost-management"></a>Azure Cost Management を使用する
 

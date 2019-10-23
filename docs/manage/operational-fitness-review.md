@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 運用の基礎に関するガイダンス
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/20/2018
+ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 04afedc133d001405c5042b309a45c9b41f3268e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7dca64941a07e091cc6b107d8390970d0a19a4
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031824"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683712"
 ---
 # <a name="establish-an-operational-fitness-review"></a>運用適合性レビューの確立
 

@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e96bfc25f86a4992d0e08f09f64d5e1178a23dad
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d1d7c6e39e143ecc74a58fa5364469c46acf9523
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836589"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548291"
 ---
-# <a name="migration-backlog-review"></a>移行バックログのレビュー
+# <a name="migration-backlog-review"></a>移行バックログの確認
 
 計画フェーズのアクションにつながる出力は移行バックログです。これは、これまでに説明したすべての前提条件に影響します。 最初の前提条件として、移行バックログの開発を完了する必要があります。 この記事は、前提条件となるアクティビティを完了するためのマイルストーンとして機能します。 クラウド戦略チームは、デジタル資産のケアとメンテナンスを担当します。 ただし、結果のバックログの実現は、移行作業のすべてのメンバーの責任です。 最後の前提条件として、クラウド戦略チームとクラウド導入チームは、移行バックログを確認して理解する必要があります。 そのレビュー中に、両方のチームのメンバーが、移行バックログの以下のキー ポイントを言葉で明確に表現するための十分な知識を身に付ける必要があります。
 
