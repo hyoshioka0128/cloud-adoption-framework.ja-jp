@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547898"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915035"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -26,7 +26,7 @@ ms.locfileid: "72547898"
 
 クラウドのログ記録およびレポート戦略を決定するときの転換点は、主に組織が運用プロセスに対して行ってきた既存の投資に基づきます。また、マルチクラウド戦略をサポートするために必要な任意の要件もある程度関係します。
 
-クラウドでのアクティビティをログに記録してレポートを作成するには、複数の方法があります。 クラウド ネイティブと一元化されたログには、サブスクリプション設計とサブスクリプションの数に基づく 2 つの共通のサービスとしてのソフトウェア (SaaS) オプションがあります。
+クラウドでのアクティビティをログに記録してレポートを作成するには、複数の方法があります。 クラウド ネイティブと一元化されたログは、サブスクリプション設計とサブスクリプションの数に基づいて決まる、2 つの一般的なマネージド サービスのオプションです。
 
 ## <a name="planning-your-monitoring-infrastructure"></a>監視インフラストラクチャの計画
 
