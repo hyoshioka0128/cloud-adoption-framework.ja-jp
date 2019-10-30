@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d16af8b5b9c70dfdaf08f7bfe280dbd42ed4f8c7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: aaa00910fb37545949087c71d6300918a3435cc2
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022758"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058758"
 ---
 # <a name="secure-and-manage"></a>セキュリティ保護と管理
 
@@ -39,7 +39,7 @@ Azure Monitor は、クラウドおよびオンプレミス環境の利用統計
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>詳細情報
+## <a name="learn-more"></a>詳細情報
 
 - [Azure Monitor の概要](https://docs.microsoft.com/azure/azure-monitor/overview)。
 
@@ -70,7 +70,7 @@ Azure Service Health には以下が含まれます。
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>詳細情報
+## <a name="learn-more"></a>詳細情報
 
 詳細については、[Azure Service Health のドキュメント](https://docs.microsoft.com/azure/service-health)を参照してください。
 
@@ -93,7 +93,7 @@ Azure Advisor は、ベスト プラクティスに従って Azure デプロイ�
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>詳細情報
+## <a name="learn-more"></a>詳細情報
 
 [概要](https://docs.microsoft.com/azure/advisor/advisor-overview)。
 
@@ -116,7 +116,7 @@ Azure Security Center は、データセンターのセキュリティ体制を�
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>詳細情報
+## <a name="learn-more"></a>詳細情報
 
 [概要](https://docs.microsoft.com/azure/security-center/security-center-intro)
 

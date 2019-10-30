@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e365cca30b5fe98e0737beb3005a13544844dc41
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221410"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888880"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure サーバー管理ツールおよびサービス
 
@@ -60,7 +60,7 @@ ms.locfileid: "71221410"
 
 このカテゴリには複数のサービスが含まれます。 運用タスクの自動化、サーバー構成の管理、更新プログラムのコンプライアンスの評価、更新のスケジュール、サーバーに対する変更の検出などに役立ちます。 これらのサービスは、継続的な運用をサポートするための重要な要素です。
 
-- [更新管理](https://docs.microsoft.com/azure/automation/automation-update-management#viewing-update-assessments)では、Azure の外部で実行されているオペレーティング システム インスタンスへのデプロイを含め、環境全体で修正プログラムのデプロイを自動化できます。 Windows と Linux の両方のオペレーティング システムに対応し、OS の主な脆弱性と、修正プログラムの適用漏れに起因する不適合を追跡します。
+- [更新管理](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments)では、Azure の外部で実行されているオペレーティング システム インスタンスへのデプロイを含め、環境全体で修正プログラムのデプロイを自動化できます。 Windows と Linux の両方のオペレーティング システムに対応し、OS の主な脆弱性と、修正プログラムの適用漏れに起因する不適合を追跡します。
 - [Change Tracking および Inventory](https://docs.microsoft.com/azure/automation/change-tracking) では、環境内で実行されているソフトウェアに関する分析情報を得られるほか、発生した変更を明らかにすることができます。
 - [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) では、Python と PowerShell のスクリプトまたは Runbook を実行して環境全体でタスクを自動化できます。 [Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker) を併用すれば、Runbook をオンプレミスのリソースにも実行できます。
 - [Azure Automation State Configuration](https://docs.microsoft.com/azure/automation/automation-dsc-overview) では、PowerShell Desired State Configuration (DSC) 構成を Azure から直接プッシュできます。 その結果、DSC ではゲスト内オペレーティング システムとワークロードの構成を監視して維持できます。

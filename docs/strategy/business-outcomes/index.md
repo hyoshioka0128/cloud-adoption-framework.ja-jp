@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: faa1728dd72828478a167cf09535bdf9f2ac1a82
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048020"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058873"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -64,7 +64,7 @@ ms.locfileid: "73048020"
 
 詳細については、[顧客エンゲージメントの成果に関するページ](./engagement-outcomes.md)をご覧ください。
 
-### <a name="performance-outcomes"></a>パフォーマンスの成果
+### <a name="performance-outcomes"></a>パフォーマンス成果
 
 パフォーマンスと信頼性が前提となっています。 いずれかが低下すると、評判が損なわれ、その状態が長く続く可能性があります。
 
