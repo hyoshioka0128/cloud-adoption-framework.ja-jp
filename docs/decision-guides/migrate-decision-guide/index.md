@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 85d284494a6fd9ca95b9566c939015a0a57b6f78
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: cdfa8ffe64ac7af6d545f9706f8f0652a4d583c4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888905"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047720"
 ---
 # <a name="migration-tools-decision-guide"></a>移行ツール決定ガイド
 
@@ -40,7 +40,7 @@ ms.locfileid: "72888905"
 
 ## <a name="learn-more"></a>詳細情報
 
-- **[ クラウドの基礎:Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** 。 Azure IaaS および PaaS コンピューティング オプションの機能について説明します。
-- **[ クラウドの基礎:適切なデータ ストアを選択する](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** 。 Azure プラットフォーム上で利用できる PaaS ストレージ オプションについて説明します。
-- **[拡大された範囲の移行:移行作業段階でストレージ要件がネットワーク容量を超えている](../../migrate/expanded-scope/network-capacity-exceeded.md)** 。 使用できるネットワーク帯域幅によってデータ移行が妨げられるシナリオの代替データ移行メカニズムについて説明します。
-- **[SQL Database:Azure で適切な SQL Server オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** 。 ホスト型インフラストラクチャ (IaaS) またはホスト型サービス (PaaS) 環境で、SQL Server ワークロードをホストすることを選択する際のオプションとビジネス上の理由について説明します。
+- **[ クラウドの基礎:Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)。** Azure IaaS および PaaS コンピューティング オプションの機能について説明します。
+- **[ クラウドの基礎:適切なデータ ストアの選択](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)。** Azure プラットフォーム上で利用できる PaaS ストレージ オプションについて説明します。
+- **[拡大された範囲の移行:移行作業段階でストレージ要件がネットワーク容量を超えている](../../migrate/expanded-scope/network-capacity-exceeded.md)。** 使用できるネットワーク帯域幅によってデータ移行が妨げられるシナリオの代替データ移行メカニズムについて説明します。
+- **[SQL Database:Azure で適切な SQL Server オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)。** ホスト型インフラストラクチャ (IaaS) またはホスト型サービス (PaaS) 環境で、SQL Server ワークロードをホストすることを選択する際のオプションとビジネス上の理由について説明します。

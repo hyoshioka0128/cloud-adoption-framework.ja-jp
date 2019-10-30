@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548729"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048020"
 ---
-<!-- markdownlint-disable -->
+<!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>変革の取り組みに関連するビジネス成果
 
@@ -29,42 +29,42 @@ ms.locfileid: "72548729"
 
 次に、さまざまな担当者との会話のきっかけとなる傾向のあるビジネス成果をいくつか示します。
 
-- **財務部門のリーダー**: コンプライアンスを遵守しながら収益性を増やす。
-- **マーケティング担当者**: 顧客の獲得および維持、評判の確立。
-- **営業担当者**: 販売を加速し、顧客の生涯価値を向上させる。
-- **人事担当者**: 従業員を維持、採用、および強化する。
+- **財務部門のリーダー:** コンプライアンスを遵守しながら収益性を増やす。
+- **マーケティング担当者:** 顧客の獲得および維持、評判の確立。
+- **営業担当者:** 販売を加速し、顧客の生涯価値を向上させる。
+- **人事:** 従業員を維持、採用、および強化する。
 
-# <a name="sample-outcomes-by-category"></a>カテゴリ別のサンプル成果
+## <a name="sample-outcomes-by-category"></a>カテゴリ別のサンプル成果
 
 多くの場合、技術に詳しい担当者にとって、ビジネス成果の視点で話すこと、外国語で話すような気分になることがあります。 簡単に言い換えることができるように、Microsoft は、一連のビジネス成果の例を[ビジネス成果フレームワークに関するページ](../index.md)で収集しています。 これらのサンプルを使用すると、実際の変革の取り組みに基づくビジネス成果を引き出し、実証できます。
 
 ビジネス成果をより簡単に見つけられるように、次のカテゴリに分けました。 このアプローチは、事業部門どうしのコンセンサスの取れた会話を促す傾向にあります。
 
-## <a name="fiscal-outcomes"></a>財務成果
+### <a name="fiscal-outcomes"></a>財務成果
 
 多くのビジネス リーダーにとって (ビジネス リーダーだけではありませんが)、財務または財政のパフォーマンスは、最もクリーンなビジネス成果です。
 
 [財政上の成果](./fiscal-outcomes.md)のサンプルを確認してください。
 
-## <a name="agility-outcomes"></a>機敏性成果
+### <a name="agility-outcomes"></a>機敏性成果
 
 今日の変化が速いビジネス環境では、時間が重要視されます。 迅速に市場の変化に対応できるか、市場の変化を推進できるかは、ビジネスの即応性の基本的な指標です。
 
 [機敏性の成果](./agility-outcomes.md)のサンプルを確認してください。
 
-## <a name="reach-outcomes"></a>リーチの成果
+### <a name="reach-outcomes"></a>リーチの成果
 
 絶えず縮小する市場では、ビジネスに関する地理のコンプライアンスでグローバル リーチ (グローバル顧客およびユーザーをサポートする能力) を測定できます。
 
 [グローバル リーチ](./reach-outcomes.md)に関する成果を確認してください。
 
-## <a name="customer-engagement-outcomes"></a>顧客エンゲージメントの成果
+### <a name="customer-engagement-outcomes"></a>顧客エンゲージメントの成果
 
 ソーシャル マーケットプ レースでは、勝者と敗者が空前のペースで再定義されています。 ユーザーのニーズに応えることが顧客エンゲージメントの重要な手段となります。
 
 詳細については、[顧客エンゲージメントの成果に関するページ](./engagement-outcomes.md)をご覧ください。
 
-## <a name="performance-outcomes"></a>パフォーマンスの成果
+### <a name="performance-outcomes"></a>パフォーマンスの成果
 
 パフォーマンスと信頼性が前提となっています。 いずれかが低下すると、評判が損なわれ、その状態が長く続く可能性があります。
 
