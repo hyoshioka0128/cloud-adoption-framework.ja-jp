@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224155"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547352"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>移行インフラストラクチャをデプロイする
 

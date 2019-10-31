@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3e39452782f1966e0efe2742264d26a60062d78b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224313"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547331"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>オンプレミスの Linux アプリを Azure VM と Azure Database for MySQL にリホストする
 
@@ -34,7 +34,7 @@ IT リーダーシップ チームは、ビジネス パートナーと密接に
 Contoso クラウド チームは、最適な移行方法を決定するために、この移行の目標を明確にしました。
 
 - 移行後の Azure 内のアプリは、現在のオンプレミス VMware 環境と同じパフォーマンスを発揮できる必要があります。 このアプリは、オンプレミスの場合と同様に、クラウド内にあっても非常に重要であり続けます。
-- Contoso は、このアプリへの投資は望んでいません。 これはビジネスにとって重要なものですが、Contoso は現状のまま確実にクラウドに移すことだけを望んでいます。
+- Contoso は、このアプリへの投資を望んでいません。 これはビジネスにとって重要なものですが、Contoso は現状のまま確実にクラウドに移すことだけを望んでいます。
 - Windows アプリの移行を何件か完了したら、Contoso は Azure で Linux ベースのインフラストラクチャを使用する方法を学びたいと考えています。
 - Contoso は、アプリケーションがクラウドに移された後、データベース管理タスクを最小限にしたいと考えています。
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223012"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548089"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>リソースの整合性の規範の改良
 
@@ -107,7 +107,7 @@ ms.locfileid: "71223012"
 
 変換が完了したら、アプリケーションまたはワークロードの自然なライフサイクルに対してガバナンスと運用を続行する必要があります。 ガバナンス成熟のこのフェーズの焦点は、ソリューションが実装されて変換サイクルが安定し始めた後に一般的に行われるアクティビティです。
 
-**最小限の推奨アクティビティ:**
+**最小限の推奨されるアクティビティ:**
 
 - [リソースの整合性のツールチェーン](./toolchain.md)を、自組織のコスト管理のニーズの変化に基づいてカスタマイズします。
 - 実際のリソース使用状況を反映する通知やレポートの自動化を検討します。

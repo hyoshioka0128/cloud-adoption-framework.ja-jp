@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 22dc2f69f1b7e1541a9556fc8b8802cbb2d5e878
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0efdd1a42ae7ff161c29f37365d0a14d4d869496
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024468"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547366"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Azure コンテナーと Azure SQL Database でオンプレミス アプリを再構築する
 
@@ -82,7 +82,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 **考慮事項** | **詳細**
 --- | ---
 **長所** | SmartHotel360 アプリ コードは、Azure Service Fabric に移行するために変更する必要があります。 ただし、変更には Service Fabric SDK ツールを使用して、作業を最小限に抑えられます。<br/><br/> Contoso は Service Fabric に移行することで、マイクロサービスを開発し、元のコード ベースに悪影響を及ぼすことなく、徐々に簡単にマイクロサービスをアプリケーションに追加することができます。<br/><br/> Windows コンテナーには、一般的にコンテナーと同じ利点があります。 機敏性、移植性、制御性が向上します。<br/><br/> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を利用できます。<br/><br/> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 [詳細情報](https://support.microsoft.com/lifecycle)。<br/><br/> Contoso は複数のインスタンスがあるアプリの Web 層を構成することができたので、単一障害点ではなくなりました。<br/><br/> 古い SQL Server 2008 R2 に依存しなくなります。<br/><br/> SQL Database は、Contoso の技術面の要件をサポートしています。 Contoso 管理者は Data Migration Assistant を使用してオンプレミス データベースを評価し、互換性があることがわかりました。<br/><br/> SQL Database には、Contoso が設定する必要がないフォールト トレランス機能が組み込まれています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。
-**短所** | コンテナーは他の移行オプションより複雑です。 Contoso にとって、コンテナーの学習曲線が問題になる可能性があります。 この曲線にもかかわらず、Contoso は多くの価値を提供する新しいレベルの複雑さを導入します。<br/><br/> Azure、コンテナー、アプリのマイクロサービスを理解し、サポートできるように、Contoso の運用チームを立ち上げる必要があります。<br/><br/> Contoso は Azure Database Migration Service ではなく Data Migration Assistant を使用してデータベースを移行する場合、大規模なデータベースを移行できるインフラストラクチャを用意する予定がありません。
+**短所** | コンテナーは他の移行オプションより複雑です。 Contoso にとって、コンテナーの学習曲線が問題になる可能性があります。 この曲線にもかかわらず、Contoso は多くの価値を提供する新しいレベルの複雑さを導入します。<br/><br/> Azure、コンテナー、アプリのマイクロサービスを理解し、サポートできるように、Contoso の運用チームを立ち上げる必要があります。<br/><br/> Contoso は Azure Database Migration Service ではなく Data Migration Assistant を使用してデータベースを移行する場合、大規模なデータベースを移行するためのインフラストラクチャを用意する予定がありません。
 
 <!-- markdownlint-enable MD033 -->
 

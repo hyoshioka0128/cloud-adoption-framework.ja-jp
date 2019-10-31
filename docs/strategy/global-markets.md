@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca1e18bdc8da300667b721e673bb1fc0388b4bdf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031350"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548621"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ ms.locfileid: "71031350"
 
 ## <a name="employee-usage-patterns"></a>従業員の使用パターン
 
-ユーザーと同じ国でホストされていないアプリケーションにグローバル ユーザーがアクセスする方法を理解しておくことが重要です。 多くの場合、グローバル WAN (ワイド エリア ネットワーク) ではユーザーは既存のネットワーク契約に基づいてルーティングされます。 従来のオンプレミスの世界では、いくつかの制約によって WAN の設計は制限されています。 これらの制約のため、クラウド導入前に十分に理解していない場合、不適切なユーザー エクスペリエンスにつながります。
+ユーザーと同じ国でホストされていないアプリケーションにグローバル ユーザーがアクセスする方法を理解しておくことが重要です。 グローバル ワイド エリア ネットワーク (WAN) ではユーザーは既存のネットワーク契約に基づいてルーティングされます。 従来のオンプレミスの世界では、いくつかの制約によって WAN の設計は制限されています。 これらの制約のため、クラウド導入前に十分に理解していない場合、不適切なユーザー エクスペリエンスにつながります。
 
 クラウド モデルでは、商品インターネットにより多くの新しいオプションが開かれます。 複数の地域に広がる従業員の通信は、クラウド導入チームが、優れたユーザー エクスペリエンスを作成し、**かつ**ネットワーク コスト削減の可能性がある WAN ソリューションを設計するのに役立ちます。
 

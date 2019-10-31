@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cf1be3679032976efa0331e13ea6806f2f8a79f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c3fcb72fc58f4b33735a95a7fcf1623fe081795
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024362"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548108"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>基本的なワークロードを Azure にデプロイする
 
@@ -41,7 +41,7 @@ ms.locfileid: "71024362"
 > [!NOTE]
 > 一部のクイック スタート ガイドでは、既定でリソース グループがデプロイされます。 その場合、明示的にリソース グループを作成する必要はありません。 それ以外の場合は、上記で作成したリソース グループに Web アプリケーションをデプロイします。
 
-単純なワークロードをデプロイしたら、Azure への[基本的な Web アプリケーション](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json)のデプロイに関する実証済みプラクティスの詳細を学習できます。
+単純なワークロードをデプロイしたら、Azure への[基本的な Web アプリケーション](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json)のデプロイに関するベスト プラクティスの詳細を学習できます。
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>単一の Windows または Linux VM (IaaS)
 
@@ -49,7 +49,7 @@ ms.locfileid: "71024362"
 
 次のステップでは、単一の Windows VM または Linux VM のどちらをデプロイするかを決定します。 Windows VM の場合は、[ポータルを使用して Windows VM を Azure にデプロイする](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json)手順に従います。 ここでも、Azure portal で仮想マシンの設定を指定するときに、上記で作成したリソース グループの名前を指定します。
 
-手順に従って VM をデプロイしたら、[Azure での Windows VM の実行に関する実証済みプラクティス](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json)について学習できます。 Linux VM の場合は、[ポータルを使用して Linux VM を Azure にデプロイする](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json)手順に従います。 [Azure での Linux VM の実行に関する実証済みプラクティス](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json)の詳細を参照することもできます。
+手順に従って VM をデプロイしたら、[Azure での Windows VM の実行に関するベスト プラクティス](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json)について学習できます。 Linux VM の場合は、[ポータルを使用して Linux VM を Azure にデプロイする](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json)手順に従います。 [Azure での Linux VM の実行に関するベスト プラクティス](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json)の詳細を参照することもできます。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2d8c2923820883561f75902830425b1bd81eb846
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 56629e6f313614965ee1baddaa08e4264b4bef53
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031598"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547669"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雑な企業向けのガバナンス ガイド: ガバナンス戦略の背景にある初期の企業ポリシー
 
@@ -47,4 +47,4 @@ CIO は最近、個人データとミッションクリティカル ポリシー
 この企業ポリシーにより、クラウド ガバナンス チームでは、導入のための基盤になるガバナンス MVP を実装する準備が整います。 次の手順はこの MVP の実装です。
 
 > [!div class="nextstepaction"]
-> [規範的なガイダンスの説明](./prescriptive-guidance.md)
+> [ベスト プラクティスの説明](./prescriptive-guidance.md)

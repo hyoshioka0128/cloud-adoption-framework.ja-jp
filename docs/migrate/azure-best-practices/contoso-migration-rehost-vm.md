@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1d4538230ae99fd7c22f53e2873645c9b112e46a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d0fff6d3c88d62ed3efc9f4cf2140981e8be331a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224124"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547212"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>オンプレミス アプリを Azure VM にリホストする
 
@@ -35,7 +35,7 @@ IT リーダーシップ チームは、ビジネス パートナーと密接に
 Contoso クラウド チームは、この移行の目標を設定しました。 これらの目標を使用して、最良の移行方法を決定します。
 
 - 移行しても、Azure 内のアプリは、現在の VMware と同じパフォーマンスを発揮できる必要があります。 このアプリは、オンプレミスの場合と同様に、クラウド内にあっても非常に重要であり続けます。
-- Contoso は、このアプリへの投資は望んでいません。 これはビジネスにとって重要なものですが、現状のまま確実にクラウドに移すことだけを Contoso は望んでいます。
+- Contoso は、このアプリへの投資を望んでいません。 これはビジネスにとって重要なものですが、現状のまま確実にクラウドに移すことだけを Contoso は望んでいます。
 - Contoso は、このアプリの操作モデルを変更したくありません。 クラウドでは、今行っているのと同じ方法で操作したいのです。
 - Contoso は、アプリの機能を変更したくありません。 変えるのはアプリの場所のみです。
 

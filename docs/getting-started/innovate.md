@@ -8,19 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 096d6756c1d2b4713b6a464cbcc05785e96bc5cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 718835335103130418f9fe75284adb7ceb94821c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023391"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683477"
 ---
 # <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークでのクラウドの導入によるイノベーション
 
-イノベーションは移行と密接に関連しています。 ワークロードによって市場での差別化を図る機会が生まれた場合、通常はそのようなワークロードをクラウドに移行した後、最新化に取り組みます。 クラウドの最新化が最新のクラウドベースのアプローチによって加速できれば、新しいイノベーションの開発も可能になります。
-
-> [!NOTE]
-> このガイダンスは、クラウド導入フレームワークの Q3 2019 リリース向けに開発されています。 以下の分類とアプローチは、変更される可能性があります。 以下の情報には、イノベーション ガイダンスの全体的な方向性が示されています。
+クラウドへの移行は、環境内に既に存在するワークロードにとって非常に良いオプションです。 新しい製品やサービスを作成するには、別のアプローチが必要です。 このフレームワーク内でのイノベーションの方法論は、新しい製品とサービスの開発をガイドするアプローチを確立します。
 
 ## <a name="motivations-behind-innovation"></a>イノベーションの背後にある動機
 
@@ -34,17 +31,6 @@ ms.locfileid: "71023391"
 - 製品またはサービスの変革
 - 新しい製品またはサービスによる市場の活性化
 
-## <a name="innovation-guidance"></a>イノベーションのガイダンス
-
-クラウド導入フレームワークのイノベーション コンテンツの開発に伴って、次のトピックに関連するガイダンスが提供される予定です。
-
-- 既存のアセットの最新化
-- 新しいアプリのビルド
-- 成長思考を促進するプラクティスの実行
-- DevOps 戦略の統合
-
-![クラウド導入フレームワークの概要](../_images/caf-overview.png)
-
 ## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>クラウド イノベーションに関連付けられる一般的なワークロードの例
 
 - カスタム ビルド アプリケーション。
@@ -52,3 +38,10 @@ ms.locfileid: "71023391"
 - IoT:物理的な製品とテクノロジの統合。
 - アンビエント インテリジェンス:環境への非侵入型テクノロジの統合。
 - コグニティブ サービス:ビッグ データ、AI、機械学習、および予測ソリューション。
+
+## <a name="next-steps"></a>次の手順
+
+[イノベーションの方法論](../innovate/index.md)を使用して、イノベーションの取り組みを開始します。
+
+> [!div class="nextstepaction"]
+> [イノベーションの取り組みを開始する](../innovate/index.md)

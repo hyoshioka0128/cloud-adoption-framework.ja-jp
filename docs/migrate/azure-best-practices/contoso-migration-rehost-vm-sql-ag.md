@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fbcb06b671b13b48fe5063e5efd8ba72c3071667
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3869103c257fa03806fe09b840ab41fd6365c152
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024328"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547229"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Azure VM および SQL Server Always On 可用性グループ上でオンプレミス アプリを再ホストする
 
@@ -36,7 +36,7 @@ IT リーダーシップ チームは、ビジネス パートナーと密接に
 Contoso クラウド チームは、この移行の目標を設定しました。 これらの目標を使用して、最良の移行方法を決定しました。
 
 - 移行しても、Azure 内のアプリは、現在の VMware と同じパフォーマンスを発揮できる必要があります。 このアプリは、オンプレミスの場合と同様に、クラウド内にあっても非常に重要であり続けます。
-- Contoso は、このアプリへの投資は望んでいません。 これはビジネスにとって重要なものですが、Contoso は現状のまま確実にクラウドに移すことだけを望んでいます。
+- Contoso は、このアプリへの投資を望んでいません。 これはビジネスにとって重要なものですが、Contoso は現状のまま確実にクラウドに移すことだけを望んでいます。
 - このアプリのオンプレミス データベースでは、可用性の問題が発生しています。 Contoso の希望は、フェールオーバー機能を備えた高可用性クラスターとしてこのデータベースを Azure にデプロイすることです。
 - Contoso は、現在の SQL Server 2008 R2 プラットフォームを SQL Server 2017 にアップグレードしようとしています。
 - Contoso は、このアプリに Azure SQL Database を使用したくないと考えており、別のデータベースを探しています。

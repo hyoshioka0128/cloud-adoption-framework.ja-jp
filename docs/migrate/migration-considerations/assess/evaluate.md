@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186aa4d4dc5218e2166e7dfb4c9834917e647a02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024661"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549145"
 ---
 # <a name="evaluate-workload-readiness"></a>ワークロードの準備状況を評価する
 
@@ -36,7 +36,7 @@ ms.locfileid: "71024661"
 
 - 現在のデータベース デプロイの目標復旧時点と目標復旧時間を文書化します。 これらは、意思決定を支援するために[アーキテクチャ アクティビティ](./architect.md)で使用されます。
 - 高可用性構成の要件をすべて文書化します。 SQL Server の要件を理解するには、[SQL Server 高可用性ソリューション ガイド](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server)に関するページを参照してください。
-- PaaS 互換性を評価します。 [Azure データ移行ガイド](https://datamigration.microsoft.com)では、オンプレミス データベースが [MySQL](https://docs.microsoft.com/azure/mysql)、[Postgres](https://docs.microsoft.com/azure/postgresql)、または [MariaDB](https://docs.microsoft.com/azure/mariadb) のための [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) や [Azure DB](https://docs.microsoft.com/azure/sql-database) などの互換性のある Azure PaaS ソリューションにマップされています。
+- PaaS 互換性を評価します。 [Azure データ移行ガイド](https://datamigration.microsoft.com)では、オンプレミス データベースが [MySQL](https://docs.microsoft.com/azure/mysql)、[PostgreSQL](https://docs.microsoft.com/azure/postgresql)、または [MariaDB](https://docs.microsoft.com/azure/mariadb) 用の [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) や [Azure DB](https://docs.microsoft.com/azure/sql-database) などの互換性のある Azure PaaS ソリューションにマップされています。
 - PaaS 互換性がオプションであり、修復の必要がない場合は、[アーキテクチャ アクティビティ](./architect.md)を担当するチームに問い合わせてください。 PaaS 移行によって、大幅な時間短縮と、ほとんどのクラウド ソリューションの総保有コスト (TCO) の削減が生み出される可能性があります。
 - PaaS 互換性がオプションであるが、修復が必要な場合は、[アーキテクチャ アクティビティ](./architect.md)と[修復アクティビティ](../migrate/remediate.md)を担当するチームに問い合わせてください。 多くのシナリオでは、修復時間の増加よりデータベース ソリューションの PaaS 移行の利点の方が上回ります。
 - 移行されるデータベースごとに変更のサイズと比率を文書化します。

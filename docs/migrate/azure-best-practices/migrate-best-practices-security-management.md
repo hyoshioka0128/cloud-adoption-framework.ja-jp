@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c5600fb06aefb40764117639b7d856f753c3372e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f7782aeedf794441a7ba4e1f6a97f162fa33abfb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024984"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548545"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのセキュリティ保護と管理に関するベスト プラクティス
 
@@ -280,7 +280,7 @@ Azure では、高度なセキュリティ オプションを提供するセキ�
 
 Azure においてセキュリティ保護されたスケーラブルで管理しやすいワークロードを構築することは、容易でない場合があります。 絶え間ない変更のため、最適な環境になるようにさまざまな機能を最新の状態に維持するのは難しいことがあります。 参考になる参照を用意すると、ワークロードを設計および移行するときに役立つ可能性があります。 Azure および Azure パートナーは、さまざまな種類の環境用に複数のサンプル参照アーキテクチャを構築してきました。 これらのサンプルは、参考にして基にできるアイデアを提供するように設計されています。
 
-参照アーキテクチャはシナリオ別に用意されています。 それには、推奨されるプラクティスと、管理、可用性、スケーラビリティ、およびセキュリティに関するアドバイスが含まれています。
+参照アーキテクチャはシナリオ別に用意されています。 それには、ベスト プラクティスと、管理、可用性、スケーラビリティ、セキュリティに関するアドバイスが含まれます。
 Azure App Service Environment では、Windows や Linux の Web アプリ、Docker コンテナー、モバイル アプリ、関数などの App Service アプリを実行するための、完全に分離された専用の環境が提供されます。 App Service では、セキュリティ、負荷分散、自動スケーリング、自動管理などの Azure の機能が、アプリケーションに追加されます。 Azure DevOps と GitHub からの継続的デプロイ、パッケージ管理、ステージング環境、カスタム ドメイン、SSL 証明書など、DevOps の機能を利用することもできます。 App Service は、分離とセキュリティ保護されたネットワーク アクセスを必要とするアプリや、大量のメモリおよびスケーリングする必要があるその他のリソースを使用するアプリに便利です。
 
 **詳細情報:**

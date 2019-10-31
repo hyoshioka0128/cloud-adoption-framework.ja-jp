@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c4733dbb77d7feb8fd2a0fdd289105cd5e112327
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d1fbc6fb2d16672c7ebfe0eabb28b77288856a3b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224208"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548760"
 ---
 # <a name="storage-design-decisions"></a>ストレージ設計に関する決定事項
 

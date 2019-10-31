@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e269e623f22fa976f85c75c130ef0b19e4e9620
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 20dc2136f997f69cafbbff241994de90e942c7db
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967533"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547544"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある初期の企業ポリシー
 
@@ -44,4 +44,4 @@ ms.locfileid: "71967533"
 この企業ポリシーにより、クラウド ガバナンス チームでは、導入のための基盤になるガバナンス MVP を実装する準備が整います。 次の手順はこの MVP の実装です。
 
 > [!div class="nextstepaction"]
-> [規範的なガイダンスの説明](./prescriptive-guidance.md)
+> [ベスト プラクティスの説明](./prescriptive-guidance.md)
