@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド移行の取り組みを始める
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: fb521115d0a59af123bd78fdc2f4cc7c72939fb6
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378008"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547829"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>クラウド移行の取り組みを始める
 
@@ -84,10 +84,10 @@ Azure 向けの Microsoft クラウド導入フレームワークを使用して
 - **[準備完了](../ready/index.md):** 今後の変化に備えてビジネス、文化、人材、および環境を整えることによって、各取り組みの成功につながり、実装と変更のプロジェクトが加速します。
 - **導入:** ビジネス成果を達成するために、IT とビジネス プロセス全体で、必要な変更が適切に実装されるようにします。
   - **[移行](../migrate/index.md):** テスト済みのプロセス (評価、移行、最適化、セキュリティ確保と管理) に従って[クラウド実装手法](#cloud-implementation)を繰り返し実行し、ワークロードを移行するための反復可能なプロセスを作成します。
-- **[運用](../operate/index.md):** 導入中および導入後のアクティビティをガイドする管理可能な運用モデルを定義します。
-  - **[整理](../organize/index.md):** ユーザーとチームを集めて、適切なクラウドの運用と導入に関する知識を伝達します。
-  - **[ガバナンス](../govern/index.md):** ポリシー、プロセス、およびクラウド ベースのガバナンス ツールを通じて軽減された具体的なリスクに合わせて、会社のポリシーを調整します。
-  - **[管理](../manage/index.md):** 最新のクラウド ファーストの運用ツールを使用して、安全でコスト効率に優れたプロセスを通じてクラウド ベースのソリューションを運用できるように、IT 業務を拡張します。
+  - **[イノベーション](../innovate/index.md):** 新しい技術スキルを解放し、ビジネス能力を拡張するイノベーション活動を通じてビジネス価値を促進します。
+- **[ガバナンス](../govern/index.md):** ポリシー、プロセス、およびクラウド ベースのガバナンス ツールを通じて軽減された具体的なリスクに合わせて、会社のポリシーを調整します。
+- **[管理](../manage/index.md):** 最新のクラウド ファーストの運用ツールを使用して、安全でコスト効率に優れたプロセスを通じてクラウド ベースのソリューションを運用できるように、IT 業務を拡張します。
+- **[整理](../organize/index.md):** ユーザーとチームを集めて、適切なクラウドの運用と導入に関する知識を伝達します。
 
 このフレームワークは、この移行体験全体を通して、あいまいさに対応し、変更を管理し、部門を超えたチームをビジネス成果の達成に導くために使用されます。
 
@@ -134,12 +134,18 @@ Azure 向けの Microsoft クラウド導入フレームワークを使用して
 クラウド導入フレームワークはライフサイクル ソリューションです。 移行を始めたばかりの方だけでなく、移行の真っ只中という方にも役立てていただけるように設計されています。 そのため、コンテンツは非常に限られたコンテキストと読者を対象としています。 読者が次に改善したいと思う上位のプロセスが、次のステップとして最適です。
 
 > [!div class="nextstepaction"]
+> [戦略](../strategy/index.md)
+>
 > [プラン](../plan/index.md)
 >
 > [準備完了](../ready/index.md)
 >
 > [移行](../migrate/index.md)
 >
-> [管理](../manage/index.md)
+> [イノベーション](../innovate/index.md)
 >
 > [ガバナンス](../govern/index.md)
+>
+> [管理](../manage/index.md)
+>
+> [整理](../organize/index.md)

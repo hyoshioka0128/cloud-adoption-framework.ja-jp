@@ -10,18 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224389"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058811"
 ---
 # <a name="assess-the-digital-estate"></a>デジタル資産を評価する
 
 理想的な移行では、すべての資産 (インフラストラクチャ、アプリ、またはデータ) がクラウド プラットフォームと互換性があり、いつでも移行できる状態にあることでしょう。 実際には、すべてをクラウドに移行する必要があるわけではありません。 さらに、すべての資産がクラウド プラットフォームと互換性があるわけでもありません。 ワークロードをクラウドに移行する前に、ワークロードと各関連資産 (インフラストラクチャ、アプリ、データ) を評価することが重要です。
 
 このセクションのリソースは、ご利用の環境を評価して、移行に対するその適合性と、検討すべき方法を判断するのに役立ちます。
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="toolstabtools"></a>[ツール](#tab/Tools)
 
@@ -56,7 +58,7 @@ Azure Migrate を使用してサーバーの移行評価を開始するには、
 
 ::: zone target="docs"
 
-### <a name="read-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 - [Azure Migrate の概要](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [物理サーバーまたは仮想化されたサーバーを Azure に移行する](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -80,7 +82,7 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="read-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 - [Azure での Service Map ソリューションの使用](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate と Service Map: 依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
@@ -102,7 +104,7 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 
 これらの主要な高レベルの利害関係者を中心に構成された中核的なクラウド戦略チームを設立すれば、クラウドの導入に向けて組織の準備を行い、クラウド移行作業全体を先導することができます。 このチームには、クラウド テクノロジと移行プロセスを理解した上で、移行のビジネス上の正当な理由を明らかにし、移行作業に最適なソリューションの概要を決定する役割があります。 また、特定のアプリケーションおよびビジネスの利害関係者を識別し、それらと連携して、移行を確実に成功させることができるように支援します。
 
-クラウド移行作業のために組織を準備する方法の詳細については、「[initial organization alignment](../../ready/initial-org-alignment.md)」 (初期の組織の調整) にある Cloud Adoption Framework に関する記事を参照してください。
+クラウド移行作業のために組織を準備する方法の詳細については、「[initial organization alignment](../../plan/initial-org-alignment.md)」 (初期の組織の調整) にある Cloud Adoption Framework に関する記事を参照してください。
 
 # <a name="timelinestabtimelines"></a>[タイムライン](#tab/Timelines)
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222320"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547736"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善
 
@@ -43,7 +43,7 @@ IT チームは、2 つのデータセンターを廃止する CIO と CFO の�
 
 新たな将来の状態の計画には、レガシ認証要件がある 750 台の仮想マシンを移行するためのより堅牢な ID ベースライン ソリューションが必要です。 これら 2 つのデータセンター以外にも同様の割合の資産があり、それらはこの課題による影響を受けることが予想されます。
 
-また、将来の状態では現在、クラウド プロバイダーから会社の MPLS/専用回線ソリューションへの接続が必要です。
+また、将来の状態では現在、クラウド プロバイダーから会社の MPLS (または専用回線) ソリューションへの接続が必要です。
 
 現在や将来の状態が変わると、新しいリスクが現れるため、新しいポリシー ステートメントが必要になります。
 

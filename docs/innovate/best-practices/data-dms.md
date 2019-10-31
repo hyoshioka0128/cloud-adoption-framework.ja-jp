@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 538cbc89fb592ecc19a5c25c42cf21231bfe05fe
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683433"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047751"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>既存のデータ ソースの移行と最新化によってデータを収集する
 
@@ -25,7 +25,7 @@ ms.locfileid: "72683433"
 
 ## <a name="primary-toolset"></a>プライマリ ツールセット
 
-現在オンプレミスに存在するデータの移行と最新化を行う場合、最も一般的な Azure ツールの選択肢は[データ移行サービス (DMS)](https://docs.microsoft.com/azure/dms) です。これは、より広範な [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) ツールチェーンの一部です。 既存の SQL Server データ ソースについては、[Data Migration Assistant (DMA)](/sql/dma/dma-overview) も、少数のデータ構造の評価と移行に関するサポートを提供する可能性があります。
+現在オンプレミスに存在するデータの移行と最新化を行う場合、最も一般的な Azure ツールの選択肢は[データ移行サービス (DMS)](https://docs.microsoft.com/azure/dms) です。これは、より広範な [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) ツールチェーンの一部です。 既存の SQL Server データ ソースについては、[Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview) も、少数のデータ構造の評価と移行に関するサポートを提供する可能性があります。
 
 Oracle と NoSQL の移行をサポートするために、データベースをターゲットとする特定の種類のソースに対して、[データ移行サービス (DMS)](https://docs.microsoft.com/azure/dms) を使用することもできます (たとえば、Oracle から PostgreSQL へ、MongoDB から Cosmos DB へ)。 導入チームにとってもっと一般的なのは、サードパーティのツールやカスタム移行スクリプトを活用して、Cosmos DB、HDInsight、または IaaS ベースの VM オプションを移行することです。
 

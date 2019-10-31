@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: c713af7557760d0bafeabf9d0cd0ef37a3885fe4
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967682"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547754"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>デプロイ高速化のサンプル ポリシー ステートメント
 
@@ -43,7 +43,7 @@ ms.locfileid: "71967682"
 - 主要なメトリックと診断方法がすべての実稼働システムとコンポーネントに対して識別されます。また、監視ツールと診断ツールがそれらのシステムに適用され、運用担当者によって定期的に監視されます。
 - 運用では、ステージングや QA などの非運用環境で監視ツールと診断ツールを使用して、運用環境でシステムの問題が発生する前にそれらの問題を識別することを検討します。
 
-**使用可能な設計オプション:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor) には Log Analytics と Application Insights も含まれており、テレメトリを収集して分析するためのツールが提供されます。このツールは、アプリケーションの実行状況を把握し、それらのアプリケーションに影響を与える問題およびそれらのアプリケーションが依存するリソースを事前に識別するのに役立ちます。 さらに、[Azure アクティビティ ログ](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)では、プラットフォーム レベルで行われ、準拠していない変更について監視/監査する必要があるすべての変更が報告されます。
+**使用可能な設計オプション:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor) には Log Analytics と Application Insights も含まれており、テレメトリを収集して分析するためのツールが提供されます。このツールは、アプリケーションの実行状況を把握し、それらのアプリケーションに影響を与える問題およびそれらのアプリケーションが依存するリソースを事前に識別するのに役立ちます。 さらに、[Azure アクティビティ ログ](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)では、プラットフォーム レベルで行われ、準拠していない変更について監視または監査する必要があるすべての変更がレポートされます。
 
 ## <a name="configuration-security-reviews"></a>構成セキュリティ のレビュー
 

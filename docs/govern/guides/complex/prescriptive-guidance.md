@@ -1,7 +1,7 @@
 ---
-title: '複雑な企業向けのガバナンス ガイド: 規範的なガイダンスの説明'
+title: '複雑な企業向けのガバナンス ガイド: ベスト プラクティスの説明'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 複雑な企業におけるガバナンスの規範的なガイダンスについて説明します。
+description: 複雑な企業におけるガバナンスのベスト プラクティスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220656"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547647"
 ---
-# <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>複雑な企業向けのガバナンス ガイド: 規範的なガイダンスの説明
+# <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雑な企業向けのガバナンス ガイド: ベスト プラクティスの説明
 
 ガバナンス ガイドは、初期[企業ポリシー](./initial-corporate-policy.md)のセットから始まります。 これらのポリシーは、[ベスト プラクティス](./index.md)が反映された、ガバナンス用の実用最小限の製品 (MVP) を確立するために使用されます。
 
@@ -61,7 +61,7 @@ ms.locfileid: "71220656"
 
 リソースの整合性を決めると、サブスクリプション内で確実にAzure リソースをデプロイして構成し、一貫性を持って管理するために必要なツール、プロセス、および労力が決まります。 ここでは、基本のリソース整合性パターンとして、 **[デプロイの整合性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** が選択されています。
 
-- リソース グループは、ライフサイクル アプローチを使用してアプリケーション用に作成されます。同時に作成、管理、およびインベントリから削除されるものはすべて、1 つのリソース グループに属している必要があります。 リソース グループの詳細については、[こちら](../../../decision-guides/resource-consistency/index.md#basic-grouping)を参照してください。
+- リソース グループは、ライフサイクル アプローチを使用してアプリケーション用に作成されます。 同時に作成、管理、およびインベントリから削除されるものはすべて、1 つのリソース グループに属している必要があります。 リソース グループの詳細については、[こちら](../../../decision-guides/resource-consistency/index.md#basic-grouping)を参照してください。
 - 関連付けられている管理グループのすべてのサブスクリプションに、Azure Policy を適用する必要があります。
 - デプロイ プロセスの一環として、リソース グループの Azure リソース整合性テンプレートをソース管理に格納する必要があります。
 - 上で説明したライフサイクル アプローチに基づき、各リソース グループは、特定のワークロードまたはアプリケーションに関連付けられます。

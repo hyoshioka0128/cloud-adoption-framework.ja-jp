@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 037cfa2a10ecce9bc56d747eb658824014758827
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222903"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548035"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>クラウド ネイティブなセキュリティ ベースライン ポリシー
 

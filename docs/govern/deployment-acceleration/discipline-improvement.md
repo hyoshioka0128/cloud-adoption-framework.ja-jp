@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b1b4395efd909a0f4456a39a6b2b933d25e4f002
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220749"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547787"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>デプロイ加速規範の改良
 

@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d1fbc6fb2d16672c7ebfe0eabb28b77288856a3b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0505b9e09492c5533d17e2f6369794aaa9b6619b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548760"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048428"
 ---
 # <a name="storage-design-decisions"></a>ストレージ設計に関する決定事項
 
@@ -61,7 +61,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | 永続ボリュームを使用してコンテナーを実行しています。 | [Azure Files (Standard または Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure Disk Storage (Standard、Premium、または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | ファイル (RWX) およびブロック (RWO) ボリュームのドライバー オプションは、Azure Kubernetes Service (AKS) とカスタム Kubernetes の両方のデプロイに使用できます。 永続ボリュームは、Azure Disk Storage ディスクまたはマネージド Azure Files 共有のどちらかにマップできます。 永続ボリュームに対するワークロードの要件に基づいて、Premium または Standard オプションを選択します。 |
 | データ レイクがあります (HDFS データ用の Hadoop クラスターなど)。 | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br/><br/> [Azure Disk Storage (Standard または Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Azure Blob Storage の Data Lake Storage Gen 2 機能は、サーバー側の HDFS 互換性とペタバイト規模の並列分析を提供します。 また、HA と信頼性も提供されます。 Cloudera などのソフトウェアは、必要に応じて、マスター/ワーカー ノード上で Premium または Standard SSD を使用できます。 |
 | SAP または SAP HANA の展開があります。 | [Azure Disk Storage (Premium または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD は、階層 1 の SAP ワークロードにミリ秒未満の待機時間を提供するように最適化されています。 Ultra SSD は現在、プレビュー段階です。 Premium SSD は M シリーズと共に、一般提供 (GA) オプションを提供します。 |
-| プライマリ サーバーから同期する厳密な RPO/RTO を持つディザスター リカバリー サイトがあります。 | [Azure ページ BLOB](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Azure ページ BLOB は、フェールオーバーが発生するまでコンピューティング VM を必要とすることなく、Azure への低コストのレプリケーションを可能にするために、レプリケーション ソフトウェアによって使用されます。 詳細については、[Azure Disk Storage のドキュメント](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)を参照してください。 **メモ**:ページ BLOB は最大 8TB をサポートします。 |
+| プライマリ サーバーから同期する厳密な RPO/RTO を持つディザスター リカバリー サイトがあります。 | [Azure ページ BLOB](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Azure ページ BLOB は、フェールオーバーが発生するまでコンピューティング VM を必要とすることなく、Azure への低コストのレプリケーションを可能にするために、レプリケーション ソフトウェアによって使用されます。 詳細については、[Azure Disk Storage のドキュメント](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)を参照してください。 **注:** ページ BLOB は最大 8TB をサポートします。 |
 
 ### <a name="file-and-object-storage-scenarios"></a>ファイルとオブジェクトのストレージ シナリオ
 

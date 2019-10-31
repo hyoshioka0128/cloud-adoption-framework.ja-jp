@@ -10,36 +10,36 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d7e4c0516e1c52f1fc6ddd8b42485902cb24d58e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: fc06264bad61571aaa4735350a16e294492dd9c0
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223642"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547718"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の改善
 
-この記事では、[初期のクラウド ガバナンス基盤](./initial-foundation.md)を確立していることを前提としています。 クラウド導入計画を実装すると、チームがクラウドの導入に使用する提案されるアプローチから具体的なリスクが浮上します。 リリース計画に関する会話でこれらのリスクが表面化したら、次のグリッドを使用して、導入計画に先立っていくつかの推奨プラクティスをすばやく識別して、リスクが真の脅威になることを防ぎます。
+この記事では、[初期のクラウド ガバナンス基盤](./initial-foundation.md)を確立していることを前提としています。 クラウド導入計画を実装すると、チームがクラウドの導入に使用する提案されるアプローチから具体的なリスクが浮上します。 リリース計画に関する会話でこれらのリスクが表面化したら、次のグリッドを使用して、導入計画に先立っていくつかのベスト プラクティスをすばやく識別して、リスクが真の脅威になることを防ぎます。
 
 ## <a name="maturity-vectors"></a>成熟度のベクター
 
-任意の時点で以下の規範的なガイダンスを初期のガバナンス基盤に適用して、次の表で説明されているリスクまたはニーズに対応できます。
+任意の時点で以下のベスト プラクティスを初期のガバナンス基盤に適用して、次の表で説明されているリスクまたはニーズに対応できます。
 
 > [!IMPORTANT]
-> リソース編成は、この規範的なガイダンスの適用方法に影響を与える可能性があります。 前の手順で実装した初期のクラウド ガバナンス基盤に最もよく合致する推奨事項から開始することが重要です。
+> リソース編成は、これらのベスト プラクティスの適用方法に影響を与える可能性があります。 前の手順で実装した初期のクラウド ガバナンス基盤に最もよく合致する推奨事項から開始することが重要です。
 
 |リスク/ニーズ | 標準的な企業 | 複雑な企業 |
 |---|---|---|
-|クラウド内の機密データ|[規範的なガイダンス](./guides/standard/security-baseline-improvement.md)|[規範的なガイダンス](./guides/complex/security-baseline-improvement.md)|
-|クラウド内のミッション クリティカルなアプリ|[規範的なガイダンス](./guides/standard/resource-consistency-improvement.md)|[規範的なガイダンス](./guides/complex/resource-consistency-improvement.md)|
-|クラウドのコスト管理|[規範的なガイダンス](./guides/standard/cost-management-improvement.md)|[規範的なガイダンス](./guides/complex/cost-management-improvement.md)|
-|マルチクラウド|[規範的なガイダンス](./guides/standard/multicloud-improvement.md)|[規範的なガイダンス](./guides/complex/multicloud-improvement.md)|
-|複雑な/レガシ ID 管理|該当なし|[規範的なガイダンス](./guides/complex/identity-baseline-improvement.md)|
-|複数レイヤーのガバナンス|該当なし|[規範的なガイダンス](./guides/complex/multiple-layers-of-governance.md)|
+|クラウド内の機密データ|[規範の改良](./guides/standard/security-baseline-improvement.md)|[規範の改良](./guides/complex/security-baseline-improvement.md)|
+|クラウド内のミッション クリティカルなアプリ|[規範の改良](./guides/standard/resource-consistency-improvement.md)|[規範の改良](./guides/complex/resource-consistency-improvement.md)|
+|クラウドのコスト管理|[規範の改良](./guides/standard/cost-management-improvement.md)|[規範の改良](./guides/complex/cost-management-improvement.md)|
+|マルチクラウド|[規範の改良](./guides/standard/multicloud-improvement.md)|[規範の改良](./guides/complex/multicloud-improvement.md)|
+|複雑な/レガシ ID 管理|該当なし|[規範の改良](./guides/complex/identity-baseline-improvement.md)|
+|複数レイヤーのガバナンス|該当なし|[規範の改良](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>次の手順
 
-規範的なガイダンスの適用に加えて、クラウド導入フレームワーク内のガバナンス方法論は、ビジネス上の固有の制約に合わせてカスタマイズ可能です。 適切な推奨事項に従った後、[企業ポリシーを評価して追加のカスタマイズ要件を把握](./corporate-policy.md)します。
+ベスト プラクティスの適用に加えて、クラウド導入フレームワーク内のガバナンス方法論は、ビジネス上の固有の制約に合わせてカスタマイズ可能です。 適切な推奨事項に従った後、[企業ポリシーを評価して追加のカスタマイズ要件を把握](./corporate-policy.md)します。
 
 > [!div class="nextstepaction"]
 > [企業ポリシーの評価](./corporate-policy.md)

@@ -1,7 +1,7 @@
 ---
-title: 標準的な企業のガバナンス ガイド:規範的なガイダンスの説明
+title: 標準的な企業のガバナンス ガイド:ベスト プラクティスの説明
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 標準的な企業におけるガバナンスの規範的なガイダンスについて説明します。
+description: 標準的な企業におけるガバナンスのベスト プラクティスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967508"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547469"
 ---
-# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>標準的な企業のガバナンス ガイド:規範的なガイダンスの説明
+# <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準的な企業のガバナンス ガイド:ベスト プラクティスの説明
 
-ガバナンス ガイドは、初期[企業ポリシー](./initial-corporate-policy.md)のセットから始まります。 これらのポリシーは、[推奨プラクティス](./index.md)が反映されたガバナンス MVP を確立するために使用されます。
+ガバナンス ガイドは、初期[企業ポリシー](./initial-corporate-policy.md)のセットから始まります。 これらのポリシーは、[ベスト プラクティス](./index.md)が反映されたガバナンス MVP を確立するために使用されます。
 
 この記事では、ガバナンス MVP の作成に必要な高レベルの戦略について説明します。 ガバナンス MVP の中核となるのは、[デプロイ高速化](../../deployment-acceleration/index.md)の規範です。 このステージで適用されるツールとパターンにより、将来のガバナンスの展開に必要な段階的向上が可能になります。
 
@@ -61,7 +61,7 @@ ms.locfileid: "71967508"
 
 リソースの整合性を決めると、サブスクリプション内で確実にAzure リソースをデプロイして構成し、一貫性を持って管理するために必要なツール、プロセス、および労力が決まります。 ここでは、基本のリソース整合性パターンとして、 **[デプロイの整合性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** が選択されています。
 
-- リソース グループは、ライフサイクル アプローチを使用してアプリケーション用に作成されます。同時に作成、管理、およびインベントリから削除されるものはすべて、1 つのリソース グループに属している必要があります。 リソース グループの詳細については、[こちら](../../../decision-guides/resource-consistency/index.md#basic-grouping)を参照してください。
+- リソース グループは、ライフサイクル アプローチを使用してアプリケーション用に作成されます。 同時に作成、管理、およびインベントリから削除されるものはすべて、1 つのリソース グループに属している必要があります。 リソース グループの詳細については、[こちら](../../../decision-guides/resource-consistency/index.md#basic-grouping)を参照してください。
 - 関連付けられている管理グループのすべてのサブスクリプションに、Azure Policy を適用する必要があります。
 - デプロイ プロセスの一環として、リソース グループの Azure リソース整合性テンプレートをソース管理に格納する必要があります。
 - 上で説明したライフサイクル アプローチに基づき、各リソース グループは、特定のワークロードまたはアプリケーションに関連付けられます。
