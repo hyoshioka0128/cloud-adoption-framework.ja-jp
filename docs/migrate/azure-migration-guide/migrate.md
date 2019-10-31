@@ -10,16 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 71838c7125b95ff83d1ac087e4cb028add9d2299
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224076"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058779"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>資産の移行 (インフラストラクチャ、アプリ、データ)
 
 このフェーズでは、評価フェーズの出力を使用して環境の移行を開始します。 このガイドは、ネイティブ ツール、サード パーティ製ツール、プロジェクト管理ツールなど、"完了状態" に到達するための適切なツールを識別するのに役立ちます。
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="native-migration-toolstabtools"></a>[ネイティブ移行ツール](#tab/Tools)
 
@@ -48,7 +50,7 @@ Azure Migrate を使用して移行を実行するには、次の手順に従い
 
 <!-- TODO: TBA -->
 
-### <a name="read-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 - [Azure Migrate のチュートリアル - 物理または仮想サーバーを Azure に移行する](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
@@ -202,7 +204,9 @@ Azure Cosmos DB データ移行ツールでは、さまざまなソースから�
 
 詳細については、次を参照してください。
 
-- [Cosmos DB データ移行ツール](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+- [Cosmos DB データ移行ツール](https://docs.microsoft.com/azure/cosmos-db/import-data)
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[サード パーティの移行ツール](#tab/third-party-tools)
 
@@ -236,7 +240,7 @@ Movere は、クラウド移行の計画と IT 環境の継続的な最適化、
 
 NoSQL データベースの要件に合わせて Azure Cosmos DB の移行をサポートするために、多様で経験豊富なシステム インテグレーターのパートナーやツールから選択できます。
 
-[詳細情報](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+[詳細情報](https://docs.microsoft.com/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
 [Azure Migration Center](https://azure.microsoft.com/migration/support) にアクセスして、お客様の移行シナリオに合わせてすぐに使えるパートナー テクノロジ ソリューションを提供する組織を探したり、その他のサード パーティの移行ツールやサポート サービスの情報を入手してください。
 
