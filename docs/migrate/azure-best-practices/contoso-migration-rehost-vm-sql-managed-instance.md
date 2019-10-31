@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 4948035001cba4ba9b433a6f31811f0c66e1704f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548152"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058499"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>オンプレミス アプリを Azure VM および SQL Database Managed Instance にリホストする
 
@@ -588,7 +588,7 @@ Contoso セキュリティ チームは、Azure VM と SQL Database Managed Inst
 
      ![Managed Instance のセキュリティ - 脅威の検出](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-security.png)
 
-VM のセキュリティに関する作業の詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms)」を参照してください。
+VM のセキュリティに関する作業の詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/iaas)」を参照してください。
 
 ### <a name="bcdr"></a>BCDR
 
