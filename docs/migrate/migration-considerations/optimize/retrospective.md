@@ -8,18 +8,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cd58f4e369100ab55556b7c492c0a46d7c543b92
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 881f8f396d40ca189267d6dbf50eac65abf0b56d
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836617"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548375"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>振り返りは成長の思考様式の構築にどのように役立つか
 
-"文化は戦略を朝食に食べる。" 最適な移行計画でも、経営幹部のサポートやリーダーシップからの奨励がなければ、簡単に元に戻すことができます。 学習、成長、さらには障害でさえ、成長の思考様式の中心に存在します。 それらはまた、すべての変換作業の中心にも存在します。
+"企業文化は戦略に勝る。" 最適な移行計画でも、経営幹部のサポートやリーダーシップからの奨励がなければ、簡単に元に戻すことができます。 学習、成長、さらには障害でさえ、成長の思考様式の中心に存在します。 それらはまた、すべての変換作業の中心にも存在します。
 
 謙虚さと好奇心が、ビジネスの変換中より重要なことはこれまでありませんでした。 デジタル変換を採用するには、その両方が十分な供給で必要です。 これらの特性は、定期的なイントロスペクションと奨励の環境によって強化されます。 従業員は、リスクを取るように奨励された場合、より優れたソリューションを見つけます。 従業員は、失敗して学習することを許可された場合に成功します。 振り返りは、このような調査と成長の機会です。
 

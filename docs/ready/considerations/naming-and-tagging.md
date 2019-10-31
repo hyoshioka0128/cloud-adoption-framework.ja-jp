@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 003e212326959b593071f8230d2ddc0dba646909
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 242b397312fe466670d3f1a315059f72447b300b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378280"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548848"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>準備完了: 推奨される名前付けおよびタグ付け規則
 
 運用管理を支援し、アカウンティング要件をサポートする方法でのクラウド ベースの資産の整理は、大規模なクラウド導入作業が直面する一般的な課題です。 明確に定義された名前付け規則とメタデータのタグ付け規則をクラウドでホストされているリソースに適用すると、IT スタッフはリソースをすばやく見つけて管理できます。 名前とタグが明確に定義されていると、ビジネス チームとの間でチャージバックとショーバックのアカウンティング メカニズムを使用してクラウドの使用コストを調整する場合にも役立ちます。
 
-Azure アーキテクチャ センターの [Azure リソースの名前付け規則と制限事項](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)のガイダンスでは、名前付け規則に関する一般的な推奨事項を示し、名前付けの制限とプラットフォーム ルールについて説明します。 次の説明では、その一般的なガイダンスを、特にエンタープライズ クラウド導入作業のサポートを対象にしたより詳細な推奨事項を使用して拡張しています。
+Azure アーキテクチャ センターの [Azure リソースの名前付け規則と制限事項](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)のガイダンスに、一般的な推奨事項とプラットフォームの制限事項が示されています。 次の説明では、その一般的なガイダンスを、特にエンタープライズ クラウド導入作業のサポートを対象にしたより詳細な推奨事項を使用して拡張しています。
 
 リソース名は変更が困難な場合があります。 大規模なクラウドのデプロイを開始する前に、クラウド導入チームは、包括的な名前付け規則を確立することを優先事項にします。
 
@@ -46,7 +46,7 @@ Azure アーキテクチャ センターの [Azure リソースの名前付け�
 
 #### <a name="naming-scope"></a>名前付けスコープ
 
-すべての Azure リソースの種類には、これらの資産を他のリソースの種類に関連してどのように管理できるかを定義しているスコープがあります。 名前付け規則の点から見ると、これは、リソースがそのスコープ内に一意の名前を持つ必要があることを示しています。
+すべての Azure リソースの種類には、リソース名が一意である必要があるレベルを定義するスコープがあります。 リソースには、そのスコープ内の一意の名前が必要です。
 
 たとえば、仮想ネットワークにはリソース グループ スコープがあります。つまり、指定されたリソース グループには `vnet-prod-westus-001` という名前の 1 つのネットワークだけが存在できます。 他のリソース グループには `vnet-prod-westus-001` という名前の独自の仮想ネットワークが存在できます。 別の例を示すと、サブネットはスコープが仮想ネットワークに設定されています。つまり、仮想ネットワーク内の各サブネットの名前は一意である必要があります。
 
@@ -77,45 +77,48 @@ Azure アーキテクチャ センターの [Azure リソースの名前付け�
 | リソースの種類                       | リソース名のプレフィックス |
 | ----------------------------------- | -------------------- |
 | Resource group                      | rg-                  |
-| Azure Virtual Network                     | vnet-                |
+| Azure Virtual Network               | vnet-                |
 | 仮想ネットワーク ゲートウェイ             | vnet-gw-             |
 | ゲートウェイ接続                  | cn-                  |
 | Subnet                              | snet-                |
 | ネットワーク セキュリティ グループ              | nsg-                 |
-| Azure Virtual Machines                    | vm-                  |
+| ルート テーブル                         | route-               |
+| Azure Virtual Machines              | vm-                  |
 | VM ストレージ アカウント                  | stvm                 |
 | パブリック IP                           | pip-                 |
-| Azure Load Balancer                       | lb-                  |
+| Azure Load Balancer                 | lb-                  |
 | NIC                                 | nic-                 |
-| Azure Service Bus                         | sb-                  |
-| Azure Service Bus キュー                  | sbq-                 |
-| Azure App Service アプリ                    | azapp-               |
-| Azure Functions アプリ                       | azfun-               |
-| Azure クラウド サービス                      | azcs-                |
+| Azure Key Vault                     | kv-                  |
+| Azure Kubernetes Service            | aks-                 |
+| Azure Service Bus                   | sb-                  |
+| Azure Service Bus キュー            | sbq-                 |
+| Azure App Service アプリ              | azapp-               |
+| Azure Functions アプリ                | azfun-               |
+| Azure クラウド サービス                | azcs-                |
 | Azure SQL Database                  | sqldb-               |
 | Azure Cosmos DB (旧称 Azure DocumentDB) | cosdb-               |
 | Azure Cache for Redis               | redis-               |
 | Azure Database for MySQL            | mysql-               |
-| Azure SQL Data Warehouse                  | sqldw-               |
+| Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
 | Azure Storage                       | stor                 |
-| Azure StorSimple                          | ssimp                |
+| Azure StorSimple                    | ssimp                |
 | Azure Search                        | srch-                |
-| Azure Cognitive Services                  | cs-                  |
+| Azure Cognitive Services            | cs-                  |
 | Azure Machine Learning ワークスペース    | aml-                 |
 | Azure Data Lake Storage             | dls                  |
 | Azure Data Lake Analytics           | dla                  |
-| Azure HDInsight - Spark                   | hdis-                |
-| Azure HDInsight - Hadoop                  | hdihd-               |
-| Azure HDInsight - Microsoft R Server                | hdir-                |
-| Azure HDInsight - HBase                   | hdihb-               |
+| Azure HDInsight - Spark             | hdis-                |
+| Azure HDInsight - Hadoop            | hdihd-               |
+| Azure HDInsight - Microsoft R Server          | hdir-                |
+| Azure HDInsight - HBase             | hdihb-               |
 | Power BI Embedded                   | pbiemb               |
-| Azure Stream Analytics                    | asa-                 |
-| Azure Data Factory                        | df-                  |
-| Azure Event Hubs                           | evh-                 |
+| Azure Stream Analytics              | asa-                 |
+| Azure Data Factory                  | df-                  |
+| Azure Event Hubs                    | evh-                 |
 | Azure IoT Hub                       | aih-                 |
-| Azure 通知ハブ                   | anh-                 |
-| Azure Notification Hubs 名前空間          | anhns-               |
+| Azure 通知ハブ             | anh-                 |
+| Azure Notification Hubs 名前空間   | anhns-               |
 
 ### <a name="metadata-tags"></a>メタデータ タグ
 

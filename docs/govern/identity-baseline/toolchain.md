@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72060f16add37d62a4747c5fe9d5aef49fe04c58
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 348bcc8a98585efb4b4b1dddef1499d4c4958424
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222120"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547419"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -28,7 +28,7 @@ ms.locfileid: "71222120"
 
 **Active Directory (IaaS):** Azure の仮想マシンで実行されている Active Directory アプリケーションのインスタンス。
 
-ID は IT セキュリティのコントロール プレーンです。 したがって認証は、クラウドに対する組織のアクセスの保護です。 組織には、セキュリティを強化し、クラウド アプリを侵入者から保護する ID コントロール プレーンが必要です。
+ID は IT セキュリティのコントロール プレーンです。 したがって、認証は、クラウドに対する組織のアクセスの保護です。 組織には、セキュリティを強化し、クラウド アプリを侵入者から保護する ID コントロール プレーンが必要です。
 
 ## <a name="cloud-authentication"></a>クラウド認証
 
@@ -45,7 +45,7 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 
 **フェデレーション認証:**
 
-この方法を選ぶと、Azure AD は別の信頼された認証システム (オンプレミスの Active Directory フェデレーション サービス (AD FS) や、信頼できるサード パーティのフェデレーション プロバイダーなど) に、ユーザーのパスワードを検証する認証プロセスを引き渡します。
+この方法を選択した場合、Azure AD では、別の信頼された認証システム (オンプレミスの Active Directory フェデレーション サービス (AD FS) や信頼できるサード パーティのフェデレーション プロバイダーなど) に、ユーザーのパスワードを検証する認証プロセスが渡されます。
 
 [Azure Active Directory 用の適切な認証方法の選択](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)に関する記事には、組織に最適なソリューションを選択するためのデシジョン ツリーが含まれています。
 

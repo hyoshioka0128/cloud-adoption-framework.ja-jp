@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7542fafccd5b1ef4c5e944db8c14322c76772ed4
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683562"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058697"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>複雑な企業向けのガバナンス ガイド
 
@@ -39,7 +39,7 @@ ms.locfileid: "72683562"
 
 すべてのアプリケーションを管理グループ、サブスクリプション、リソース グループ階層の適切な領域にデプロイする必要があります。 デプロイ計画の間に、クラウド ガバナンス チームは、クラウド導入チームを支援するために必要なノードを階層に作成します。
 
-1. 地理的な場所そして環境の種類 (運用や非運用など) が反映された詳細な階層を持つ各部署の管理グループを定義します。
+1. 地理的な場所そして環境の種類 (運用環境や運用前環境など) が反映された詳細な階層を持つ各部署の管理グループを定義します。
 2. 個別の部署または地域の一意の組み合わせごとに、運用と非運用のサブスクリプションを作成します。 複数のサブスクリプションを作成する場合は注意が必要です。 詳細については、[こちら](../../../decision-guides/subscriptions/index.md) を参照してください。
 3. このグループ階層の各レベルで、[一貫性のある用語体系](../../../ready/considerations/naming-and-tagging.md)を適用します。
 4. リソース グループは、コンテンツのライフサイクルを考慮した方法でデプロイする必要があります。つまり、一緒に開発されたものはすべて、一緒に管理し、一緒に廃止します。 リソース グループのベスト プラクティスの詳細については、[こちらを参照](../../../decision-guides/resource-consistency/index.md)してください。

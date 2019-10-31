@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a5303c426ec4eb7adaf8f22a37532c5b1dad14df
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 39eaf02d2701cc6f9ba2c12751b5e53ff1386776
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224228"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548816"
 ---
 # <a name="networking-design-decisions"></a>ネットワーク設計の決定
 
@@ -96,6 +96,6 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 ネットワーク設計プロセスの一部として、次の記事を参照してください。
 
-- [仮想ネットワークの計画](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)。 分離、接続、場所の要件に基づいて仮想ネットワークを計画する方法について説明します。
-- [Azure のネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)。 ネットワーク セキュリティの強化に役立つ Azure のベスト プラクティスについて説明します。
-- [Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)。 IaaS ベースおよび PaaS ベースのワークロードをサポートするために Azure のネットワークを実装する方法に関する追加のガイダンスを入手します。
+- [仮想ネットワークの計画](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 分離、接続、場所の要件に基づいて仮想ネットワークを計画する方法について説明します。
+- [Azure のネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 ネットワーク セキュリティの強化に役立つ Azure のベスト プラクティスについて説明します。
+- [Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 IaaS ベースおよび PaaS ベースのワークロードをサポートするために Azure のネットワークを実装する方法に関する追加のガイダンスを入手します。

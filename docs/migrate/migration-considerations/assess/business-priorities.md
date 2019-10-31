@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05d9441eb8867ff47ad23ccc44a9b58d8e010499
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a609dbc1c8779452c5dfc9e4fdf67eb407e6c787
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839093"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549197"
 ---
-# <a name="business-priorities---maintaining-alignment"></a>ビジネスの優先順位 - 整合の維持
+# <a name="business-priorities-maintaining-alignment"></a>ビジネスの優先順位:配置の維持
 
 *変換*は多くの場合、劇的な、または自然発生的な変化として定義されます。 取締役会レベルでは、変化が劇的な変換のように見えることがあります。 ただし、組織の中で変化のプロセスを通して作業する従業員にとって、変換は少し誤解を招くような言葉です。 表面下では、変換は、一連の適切に実行されるある状態から別の状態への切り替えとしてより適切に説明されます。
 

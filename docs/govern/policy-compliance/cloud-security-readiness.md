@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: afde9af7da83bfd8d95847542d5f7236d318121e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5675d611979c992f41f03d362f0110aaeb3b9b24
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220449"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547382"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>CISO のクラウド準備状況に関するガイド
 

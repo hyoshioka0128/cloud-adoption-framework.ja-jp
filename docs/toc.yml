@@ -127,6 +127,12 @@
           href: ready/azure-best-practices/roles.md
         - name: 一貫性のあるハイブリッド クラウドの作成
           href: infrastructure/misc/hybrid-consistency.md
+    - name: 拡大された範囲
+      items:
+        - name: Terraform ランディング ゾーン
+          href: ready/expanded-scope/terraform-landing-zone.md
+        - name: ネットワーク境界のセキュリティ
+          href: reference/networking-vdc.md
     - name: ベスト プラクティス
       items:
         - name: 概要
@@ -437,8 +443,6 @@
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
                 - name: その他のベスト プラクティス
                   items:
-                    - name: Azure の境界セキュリティに関するベスト プラクティス
-                      href: reference/networking-vdc.md
                     - name: Azure のデータベース セキュリティに関するベスト プラクティス
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Azure のデータ セキュリティと暗号化のベスト プラクティス
@@ -707,7 +711,7 @@
                       items:
                         - name: Azure におけるマイクロサービスの設計、構築、運用
                           href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Azure Kubernetes Services (AKS) を使用したマイクロサービスの参照アーキテクチャ
+                        - name: Azure Kubernetes Service (AKS) を使用したマイクロサービスの参照アーキテクチャ
                           href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: 参照アーキテクチャ - サーバーレス マイクロサービスのサンプル
                           href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'

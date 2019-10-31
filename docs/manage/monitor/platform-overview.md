@@ -1,7 +1,7 @@
 ---
-title: クラウド監視ガイド – 監視プラットフォームの概要
+title: 'クラウド監視ガイド: 監視プラットフォームの概要'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します
+description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します。
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33d9647a0804859a611d45e130c753cab89a6ef6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 668710d38fe6d3aa03761580f530f484133df792
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031168"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547254"
 ---
-# <a name="cloud-monitoring-guide-overview-of-our-monitoring-platforms"></a>クラウド監視ガイド: 監視プラットフォームの概要
+# <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>クラウド監視ガイド: 監視プラットフォームの概要
 
 Microsoft では、2 つの製品からさまざまな監視機能を提供しています。オンプレミス向けに設計された後クラウドに拡張された System Center Operations Manager と、クラウド向けに設計されたがオンプレミス システムも監視できる Azure Monitor です。 これら 2 つのオファリングでは、アラート、サービス稼働時間の追跡、アプリケーションとインフラストラクチャの正常性の監視、診断、分析などのコア監視サービスが提供されます。
 
@@ -34,7 +34,7 @@ Microsoft では、2 つの製品からさまざまな監視機能を提供し�
 
 Application Insights は、クラウド、モバイル、IoT デバイスが急増する業界の変化と DevOps プラクティスの導入に合わせて移行するために導入されました。 Operations Manager でのアプリケーション パフォーマンス監視から Azure のサービスに拡大し、さまざまな言語で記述された Web アプリケーションの監視機能を豊富に提供します。 2015 年、Visual Studio 向けの Application Insights のプレビューが発表され、これは後に、単に Application Insights と呼ばれるようになりました。 このサービスでは、アプリケーションのパフォーマンス、要求と例外、トレースの詳細が収集されます。
 
-2015 年には、Azure Operational Insights が一般公開されました。 それにより、Azure、オンプレミス、またはその他のクラウド環境にあるコンピューターのデータを収集および検索し、System Center Operations Manager に接続する Log Analytics 分析サービスを提供しました。 セキュリティ監査、正常性の評価、アラート管理などのシナリオ用に、クエリおよび分析ロジック、視覚化、データ収集ルールのコレクションが含まれているインテリジェンス パックが提供され、あらかじめパッケージ化されたさまざまな管理および監視の構成が用意されました。  その後、Azure Operational Insights は Log Analytics と呼ばれるようになりました。  
+2015 年には、Azure Operational Insights が一般公開されました。 これが Azure、オンプレミス、またはその他のクラウド環境にあるコンピューターのデータを収集して検索する Log Analytics 分析サービスを提供し、System Center Operations Manager に接続しました。 セキュリティ監査、正常性の評価、アラート管理などのシナリオ用に、クエリおよび分析ロジック、視覚化、データ収集ルールのコレクションが含まれているインテリジェンス パックが提供され、あらかじめパッケージ化されたさまざまな管理および監視の構成が用意されました。 その後、Azure Operational Insights は Log Analytics と呼ばれるようになりました。  
 
 2016 年、Azure Monitor のプレビューが Ignite で発表されました。 それにより、フレームワークの使用を開始した任意の Azure サービスからプラットフォームのメトリック、リソース診断ログ、サブスクリプションレベルのアクティビティ ログ イベントを収集するための共通フレームワークが提供されました。 以前は、各 Azure サービスに独自の監視方法がありました。
 
@@ -94,7 +94,7 @@ Operations Manager は、ワークフロー (ルール、モニター、およ�
 
 たとえば、モニターによってパフォーマンス カウンターが数分ごとにサンプリングされます。 そのカウンターがしきい値を超えると、すぐにそのターゲット オブジェクトの正常性状態が設定され、それによって直ちに管理グループでアラートがトリガーされます。 スケジュールされたルールを使用して、特定のイベントが作成されるのを監視し、そのイベントがローカル イベント ログ内に作成されたらすぐにアラートを発生させることができます。
 
-これらの監視設定は互いに分離されており、個々のデータ ソースから機能するため、Operations Manager には複数のソース間でデータを関連付けることについての課題があります。 また、収集された後のデータに対応することは困難です。 Operations Manager データベースにアクセスするワークフローを実行することはできますが、このシナリオは一般的ではなく、通常は限られた数の特殊目的のワークフローに使用されます。
+これらの監視設定は互いに分離されており、個々のデータ ソースから機能するため、Operations Manager には複数のソース間でデータを関連付けることについての課題があります。 また、収集された後のデータに対応することは困難です。 Operations Manager データベースにアクセスするワークフローを実行することはできますが、このシナリオは一般的ではなく、通常は限られた数の特殊目的のワークフローのために使用されます。
 
 ![Operations Manager 管理グループの図](./media/monitoring-management-guidance-cloud-and-on-premises/operations-manager-management-group-optimized.svg)
 

@@ -1,19 +1,19 @@
 ---
 title: ポートフォリオのバランスを取る
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: ポートフォリオのバランスを取る
+description: クラウド ポートフォリオのバランスを重要視してください。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1227b798972ce7e139181c9267a1a1e860390029
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836709"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548584"
 ---
 # <a name="balance-the-portfolio"></a>ポートフォリオのバランスを取る
 
