@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 77fe8ba38b2ebf79ddceeb9fe2df940e8e333cc6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378033"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238842"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 
@@ -40,7 +40,7 @@ ms.locfileid: "72378033"
 
 標準化された名前付け規則は、クラウドでホストされるリソースを編成するための開始点です。 適切な構造の名前付けシステムを作成すると、管理とアカウンティング両方の目的でリソースをすばやく識別できるようになります。 組織の他の部分に IT 名前付け規則が既にある場合は、クラウドの名前付け規則をそれらに揃えるかどうか、またはクラウドベースの標準を別に確立する必要があるかを検討します。
 
-Azure リソースの種類によって[名前付けの要件](../../ready/considerations/naming-and-tagging.md)が異なることにも注意してください。 名前付け規則は、これらの名前付け要件に対応している必要があります。
+Azure リソースの種類によって[名前付けの要件](../../ready/azure-best-practices/naming-and-tagging.md)が異なることにも注意してください。 名前付け規則は、これらの名前付け要件に対応している必要があります。
 
 ## <a name="resource-tagging-patterns"></a>リソース タグ付けのパターン
 
