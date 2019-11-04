@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058720"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238792"
 ---
 # <a name="subscription-decision-guide"></a>サブスクリプション決定ガイド
 
@@ -22,7 +22,7 @@ ms.locfileid: "73058720"
 
 仮想マシンやデータベースなど、Azure の各リソースは、サブスクリプションに関連付けられます。 Azure サブスクリプションを作成して、それをアカウントに関連付け、リソースをサブスクリプションにデプロイすることで、Azure の導入が開始されます。 これらの概念の概要については、「[Azure fundamental concepts](../../ready/considerations/fundamental-concepts.md)」 (Azure の基本概念) を参照してください。
 
-Azure のデジタル資産が増加すると、要件を満たすように追加のサブスクリプションを作成する必要がある可能性が高いです。 Azure によって、管理グループの階層を定義し、サブスクリプションを整理して、適切なポリシーを適切なリソースに簡単に適用することができます。 詳細については、「[Scaling with multiple Azure subscriptions](../../ready/considerations/scaling-subscriptions.md)」 (複数の Azure サブスクリプションでのスケーリング) を参照してください。
+Azure のデジタル資産が増加すると、要件を満たすように追加のサブスクリプションを作成する必要がある可能性が高いです。 Azure によって、管理グループの階層を定義し、サブスクリプションを整理して、適切なポリシーを適切なリソースに簡単に適用することができます。 詳細については、「[Scaling with multiple Azure subscriptions](../../ready/azure-best-practices/scaling-subscriptions.md)」 (複数の Azure サブスクリプションでのスケーリング) を参照してください。
 
 管理グループを使用して、さまざまなワークロードを区別する基本的な例には、次のようなものがります。
 

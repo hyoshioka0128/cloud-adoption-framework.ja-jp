@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67b65affee2a2ac351ab603a52b0b6202d41458f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: d55635078be0c32496a0237df1b2a67aecc5e574
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548992"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240161"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 対応性のベスト プラクティス
 
@@ -24,32 +24,32 @@ ms.locfileid: "72548992"
 Azure 環境で資産を整理し、デプロイするとき、次のガイダンスを利用できます。
 
 - [Azure の基本的な概念](../considerations/fundamental-concepts.md)。 Azure で使用される基本的な概念と用語について説明します。 これらの概念の相互関連性についても説明します。
-- [推奨される名前付けおよびタグ付け規則](../considerations/naming-and-tagging.md)。 リソースに名前を付けてタグ付けするための詳細な推奨事項を確認します。 これらの推奨事項では、エンタープライズ クラウドの導入作業がサポートされます。
-- [複数の Azure サブスクリプションによるスケーリング](../considerations/scaling-subscriptions.md)。 複数の Azure サブスクリプションによる拡張戦略を理解できます。
+- [推奨される名前付けおよびタグ付け規則](../azure-best-practices/naming-and-tagging.md)。 リソースに名前を付けてタグ付けするための詳細な推奨事項を確認します。 これらの推奨事項では、エンタープライズ クラウドの導入作業がサポートされます。
+- [複数の Azure サブスクリプションによるスケーリング](../azure-best-practices/scaling-subscriptions.md)。 複数の Azure サブスクリプションによる拡張戦略を理解できます。
 - [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) Azure 管理グループで複数のサブスクリプションにまたがり、リソース、ロール、ポリシー、デプロイを管理する方法について説明します。
-- [一貫性のあるハイブリッド クラウドの作成](../../infrastructure/misc/hybrid-consistency.md)。 オンプレミス管理のさまざまな利便性を維持しながら、クラウド イノベーションの利点を提供するハイブリッド クラウド ソリューションを作成します。
+- [一貫性のあるハイブリッド クラウドの作成](../considerations/hybrid-consistency.md)。 オンプレミス管理のさまざまな利便性を維持しながら、クラウド イノベーションの利点を提供するハイブリッド クラウド ソリューションを作成します。
 
 ## <a name="networking"></a>ネットワーク
 
 ワークロードを支援する目的でクラウド ネットワーク インフラストラクチャを準備するには、次のガイダンスを使用します。
 
-- [ネットワーク関連の意思決定](../considerations/network-decisions.md)。 組織のワークロード、ガバナンス、接続要件を支援するネットワーク関連のサービス、ツール、アーキテクチャを選択します。
+- [ネットワーク関連の意思決定](../considerations/networking-options.md)。 組織のワークロード、ガバナンス、接続要件を支援するネットワーク関連のサービス、ツール、アーキテクチャを選択します。
 - [仮想ネットワークの計画](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 分離、接続、場所の要件に基づいて仮想ネットワークを計画する方法について説明します。
 - [ネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure の組み込み機能を利用してネットワーク セキュリティの一般的な問題に対処するときのベスト プラクティスについて説明します。
 - [境界ネットワーク](./perimeter-networks.md)。 非武装地帯 (DMZ) とも呼ばれている境界ネットワークを使用すると、クラウド ネットワークと、オンプレミス (または物理的) データセンター ネットワークの間で安全な接続とインターネットの双方向接続が可能になります。
-- [ハブアンドスポーク ネットワーク トポロジ](./hub-spoke-network-topology.md)。 ハブ アンド スポークは、複雑なワークロードについて、一般的な通信またはセキュリティ要件をより効率的に管理するためのネットワーク モデルです。 また、Azure サブスクリプションの潜在的な制限にも対応します。
+- [ハブ アンド スポーク ネットワーク トポロジ](./hub-spoke-network-topology.md)。 ハブ アンド スポークは、複雑なワークロードについて、一般的な通信またはセキュリティ要件をより効率的に管理するためのネットワーク モデルです。 また、Azure サブスクリプションの潜在的な制限にも対応します。
 
 ## <a name="identity-and-access-control"></a>ID とアクセスの制御
 
 ワークロードのセキュリティと管理の効率性を改善する目的で ID とアクセス制御インフラストラクチャを設計するとき、次のガイダンスをご利用ください。
 
 - [Azure の ID 管理とアクセス制御セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure の組み込み機能を利用した ID 管理とアクセス制御に関するベスト プラクティスについて説明します。
-- [ロールベースのアクセス制御のベスト プラクティス](./roles.md)。 Azure ロールベースのアクセス制御 (RBAC) では、ユーザー ロールごとに整理されているリソースのグループベース アクセスを詳細に管理できます。
+- [ロールベースのアクセス制御のベスト プラクティス](../considerations/roles.md)。 Azure ロールベースのアクセス制御 (RBAC) では、ユーザー ロールごとに整理されているリソースのグループベース アクセスを詳細に管理できます。
 - [Azure Active Directory でのハイブリッドおよびクラウド デプロイ用の特権アクセスをセキュリティで保護する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Active Directory を使用すると、クラウドとオンプレミスの環境全体で組織の管理者アクセスと管理者アカウントを確実にセキュリティで保護するのに役立ちます。
 
 ## <a name="storage"></a>Storage
 
-- [Azure Storage ガイダンス](../considerations/storage-guidance.md)。 使用シナリオをサポートする最適な Azure Storage ソリューションを選択します。
+- [Azure Storage ガイダンス](../considerations/storage-options.md)。 使用シナリオをサポートする最適な Azure Storage ソリューションを選択します。
 - [Azure Storage のセキュリティ ガイド](https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Storage でのセキュリティ機能について説明します。
 
 ## <a name="databases"></a>データベース

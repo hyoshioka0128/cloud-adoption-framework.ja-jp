@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548467"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240281"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>クラウド導入フレームワーク移行モデル
 
@@ -34,7 +34,7 @@ ms.locfileid: "72548467"
 
 ![移行オプションのインフォグラフィック](../../_images/migrate/migration-options.png)
 
-ワークロードの移行と最新化には、コードやアプリの変更を必要としないサービスとしてのインフラストラクチャ (IaaS) 機能を使用した単純な "*再ホスト*" ("リフト アンド シフト") 移行から、最小限の変更を伴う "*リファクタリング*"、クラウド テクノロジを利用するようにコードやアプリの機能を変更および拡張する "*再設計*" まであります。
+ワークロードの移行と最新化には、コードやアプリの変更を必要としないサービスとしてのインフラストラクチャ (IaaS) 機能を使用したシンプルな_再ホスト_ (_リフト アンド シフト_とも呼ばれる) 移行から、最小限の変更を伴う_リファクタリング_、クラウド テクノロジを利用するようにコードやアプリの機能を変更および拡張する_再設計_まであります。
 
 クラウドネイティブ戦略とサービスとしてのプラットフォーム (PaaS) 戦略では、Azure プラットフォームのオファリングとマネージド サービスを使用してオンプレミス ワークロードを "*再構築*" します。 同等のフル マネージドのサービスとしてのソフトウェア (SaaS) クラウドベース オファリングがあるワークロードは、移行プロセスの一環として、これらのサービスに完全に*置き換えられる*ことがよくあります。
 

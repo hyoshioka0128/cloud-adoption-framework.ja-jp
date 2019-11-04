@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915035"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238767"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -58,7 +58,7 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 
 このアプローチをサポートするためには、[ハイブリッド ネットワーク](../software-defined-network/hybrid.md)と[クラウドでホストされるドメイン サービス](../identity/index.md#cloud-hosted-domain-services)を組み合わせることで、クラウド リソースがオンプレミス システムと直接通信できるようにする必要があります。 これを実施することで、クラウド仮想ネットワークがオンプレミス環境のネットワーク拡張機能として機能します。 そのため、クラウドでホストされるワークロードは、オンプレミスのログおよびレポートのシステムと直接通信できます。
 
-このアプローチでは、クラウドにデプロイされたアプリケーションまたはサービスを少し変更して、監視ツールへの既存の投資を利用します。 多くの場合、これはリフトアンドシフト移行時に監視をサポートする最も速いアプローチです。 しかし、クラウドベースの PaaS および SaaS のリソースによって生成されたログ データはキャプチャされず、VM の状態など、クラウド プラットフォーム自体で生成された VM 関連のログはすべて省略されます。 その結果、このパターンは、より包括的なハイブリッド監視ソリューションが実装されるまでの一時的な解決策とする必要があります。
+このアプローチでは、クラウドにデプロイされたアプリケーションまたはサービスを少し変更して、監視ツールへの既存の投資を利用します。 多くの場合、これはリフト アンド シフト移行時に監視をサポートする最も速いアプローチです。 しかし、クラウドベースの PaaS および SaaS のリソースによって生成されたログ データはキャプチャされず、VM の状態など、クラウド プラットフォーム自体で生成された VM 関連のログはすべて省略されます。 その結果、このパターンは、より包括的なハイブリッド監視ソリューションが実装されるまでの一時的な解決策とする必要があります。
 
 オンプレミス&ndash;のみの前提条件:
 

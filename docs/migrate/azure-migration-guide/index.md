@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 9f9ad2db240ad9453a8e337bdbc23f0122ebb9c5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048522"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239982"
 ---
 ::: zone target="docs"
 
@@ -42,7 +42,7 @@ Azure にリソースを移行する前に、移行方法と、環境の管理�
 
 このガイドでは、オンプレミス環境から Azure へのアプリケーションとリソースの移行の基本について説明します。 これは複雑さが最小限の移行範囲に合わせて設計されています。 お客様の移行にこのガイドが適しているかどうかを判断するには、「**このガイドを使用する状況**」タブを参照してください。
 
-Azure に移行するときは、IaaS ベースの仮想マシン ソリューション ("再ホスト" または "リフト アンド シフト" 移行と呼ばれます) を使用してアプリケーションをそのまま移行するか、マネージド サービスやその他のクラウドネイティブ機能を使用してアプリケーションを最新化することができる柔軟性があります。 これらの選択肢の詳細については、「**移行オプション**」タブを参照してください。 移行戦略を立てるときは、次のような点を考慮します。
+Azure に移行するときは、IaaS ベースの仮想マシン ソリューション (_再ホスト_ または _リフト アンド シフト_ 移行と呼ばれます) を使用してアプリケーションをそのまま移行するか、マネージド サービスやその他のクラウドネイティブ機能を使用してアプリケーションを最新化することができる柔軟性があります。 これらの選択肢の詳細については、「**移行オプション**」タブを参照してください。 移行戦略を立てるときは、次のような点を考慮します。
 
 - 移行するアプリケーションはクラウドで動作するか
 - アプリケーションの (テクノロジ、ツール、移行に関する) 最適な戦略は何か 詳細については、Microsoft クラウド導入フレームワークの[移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)を参照してください。

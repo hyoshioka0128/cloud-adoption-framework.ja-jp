@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: cdfa8ffe64ac7af6d545f9706f8f0652a4d583c4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: f493f53d2cc316a0e4ff7ae75211c5e41bc9d8a8
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047720"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238830"
 ---
 # <a name="migration-tools-decision-guide"></a>移行ツール決定ガイド
 
@@ -42,5 +42,5 @@ ms.locfileid: "73047720"
 
 - **[ クラウドの基礎:Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)。** Azure IaaS および PaaS コンピューティング オプションの機能について説明します。
 - **[ クラウドの基礎:適切なデータ ストアの選択](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)。** Azure プラットフォーム上で利用できる PaaS ストレージ オプションについて説明します。
-- **[拡大された範囲の移行:移行作業段階でストレージ要件がネットワーク容量を超えている](../../migrate/expanded-scope/network-capacity-exceeded.md)。** 使用できるネットワーク帯域幅によってデータ移行が妨げられるシナリオの代替データ移行メカニズムについて説明します。
+- **[拡大された範囲の移行:移行作業段階でデータ要件がネットワーク容量を超えている](../../migrate/expanded-scope/network-capacity-exceeded.md)。** 使用できるネットワーク帯域幅によってデータ移行が妨げられるシナリオの代替データ移行メカニズムについて説明します。
 - **[SQL Database:Azure で適切な SQL Server オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)。** ホスト型インフラストラクチャ (IaaS) またはホスト型サービス (PaaS) 環境で、SQL Server ワークロードをホストすることを選択する際のオプションとビジネス上の理由について説明します。
