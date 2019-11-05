@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 265365d2064349f53d61b10af4af053c418c871a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547448"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915050"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>ID ベースライン規範の改良
 
@@ -126,7 +126,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - セキュリティおよび不正アクセス防止システムとのより緊密な統合を検討します。
 - 管理者特権ユーザーまたはロールのアクセス権を定期的にレビューします。
   - 管理者特権をアクティブ化する資格があるすべてのユーザーを識別します。
-- オンボーディング、オフボーディング、および資格情報の更新プロセスをレビューします。
+- オンボード、オフボード、および資格情報の更新プロセスをレビューします。
 - ID アクセス管理 (IAM) モジュール間の自動化および通信のレベルの増加を調査します。
 - 開発セキュリティ運用 (DevSecOps) アプローチの実装を検討します。
 - 影響分析を実行して、コスト、セキュリティ、およびユーザー導入に関する結果を測定します。

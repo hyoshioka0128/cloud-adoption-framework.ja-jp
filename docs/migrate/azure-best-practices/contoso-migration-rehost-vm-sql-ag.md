@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3869103c257fa03806fe09b840ab41fd6365c152
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1292eeec6559fc6caa6cd6ff265a37147cf0b887
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547229"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058652"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Azure VM および SQL Server Always On 可用性グループ上でオンプレミス アプリを再ホストする
 
@@ -659,7 +659,7 @@ Contoso のセキュリティ チームは、Azure VM (WEBVM、SQLAOG1 および
 - チームは、ディスク上のデータ保護のために、Azure Disk Encryption と Key Vault の使用も検討します。
 - チームは、Transparent Data Encryption (TDE) を評価してから、新しい SQL AOG で実行されている SmartHotel360 データベース上で有効にします。 [詳細情報](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)。
 
-VM に関するセキュリティの実務の[詳細については、こちら](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms)を参照してください。
+詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/iaas)」を参照してください。
 
 ## <a name="bcdr"></a>BCDR
 

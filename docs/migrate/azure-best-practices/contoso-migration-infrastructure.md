@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 13a3a8a8734ffe67298d09544882c612916b995f
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547352"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058906"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>移行インフラストラクチャをデプロイする
 
@@ -325,7 +325,7 @@ Contoso は、ミッション クリティカルなワークロードで使用�
 
 ### <a name="plan-hybrid-network-connectivity"></a>ハイブリッド ネットワーク接続を計画する
 
-Contoso は、Azure とオンプレミスのデータセンターの間のハイブリッド ネットワークに関して、[複数のアーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking)を検討しました。 オプションの比較に関しては、[詳しい記事](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations)をご覧ください。
+Contoso は、Azure とオンプレミスのデータセンターの間のハイブリッド ネットワークに関して、[複数のアーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking)を検討しました。 詳しくは、「[オンプレミス ネットワークを Azure に接続するためのソリューションを選択する](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations)」をご覧ください。
 
 なお、Contoso のオンプレミス ネットワークのインフラストラクチャは、現在、ニューヨークのデータセンターと、米国東部の複数のローカル支局で構成されています。 すべての場所には、インターネットへのビジネス クラスの接続があります。 各ブランチは、インターネット経由の IPSec VPN トンネルを介して、データセンターに接続されています。
 
@@ -638,7 +638,7 @@ Active Directory はネットワークで重要なサービスであり、正し
 
 ## <a name="step-5-plan-for-governance"></a>手順 5:ガバナンスを計画する
 
-Azure は、サービスと Azure プラットフォームに対してさまざまなガバナンス コントロールを提供します。 基本的なオプションの[詳細をご覧ください](https://docs.microsoft.com/azure/security/governance-in-azure)。
+Azure は、サービスと Azure プラットフォームに対してさまざまなガバナンス コントロールを提供します。 詳しくは、[Azure のガバナンスのオプション](https://docs.microsoft.com/azure/security/governance-in-azure)に関するページをご覧ください。
 
 Contoso は ID とアクセスの制御を構成しているので、ガバナンスとセキュリティの一部の面は既に導入しています。 大まかに言うと、考慮する必要がある 3 つの領域があります。
 

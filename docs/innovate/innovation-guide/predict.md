@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b2ed1b072d5226649e5248e350edfa3578978c4c
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 5bd467e6e74ff1289a7db40add87a049d2b0697e
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769255"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047620"
 ---
 ::: zone target="docs"
 
@@ -29,30 +29,31 @@ ms.locfileid: "72769255"
 
 ::: zone-end
 
-イノベーターである、あなたの会社には、顧客ベースのデータ、行動、ニーズに関する分析情報があります。 それらの分析情報を研究することにより、顧客がそれらのニーズを認識する前でも、ニーズを予測することができます。 この記事では、予測ソリューションを提供するためのいくつかの方法を紹介します。 後のセクションでは、顧客の行動に影響を与えるために、それらの予測をお使いのソリューションに戻して統合する方法について説明します。
+イノベーターとして、会社には、顧客ベースのデータ、行動、ニーズに関する分析情報があります。 それらの分析情報を研究することで、場合によっては顧客自身がニーズを認識する前に、顧客のニーズを予測できます。 この記事では、予測ソリューションを提供するアプローチをいくつか紹介します。 最後のセクションでは、顧客の行動に影響を与えるために、予測をソリューションに統合するアプローチについて説明します。
 
-次の表は、実装のニーズに基づいて最適なソリューションを見つけることができるように設計されています。
+次の表は、実装のニーズに基づいて最適なソリューションを見つけるうえで役立ちます。
 
-|Service  |事前に構築されているモデル  |ビルドと実験  |Python でのトレーニングとビルド|必要なスキル|
+|Service  |事前に構築されているモデル  |ビルドと実験  |Python でのトレーニングと構築|必要なスキル|
 |---------|---------|---------|---------|---------|
-|Cognitive Services|はい|いいえ|いいえ|API と開発者のスキル|
+|Azure Cognitive Services|はい|いいえ|いいえ|API と開発者のスキル|
 |Azure Machine Learning Studio|はい|はい|いいえ|予測アルゴリズムに関する一般的な知識|
 |Azure Machine Learning サービス|はい|はい|はい|データ サイエンティスト|
 
 ## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Azure Cognitive Services](#tab/CognitiveServices)
 
-最も迅速かつ簡単に予測できるのは、Azure Cognitive Services です。 Cognitive Services を使用すると、追加でトレーニングを行う必要なく、既存のモデルを使用して予測を行うことができます。 これらのサービスは、予測モデルをトレーニングするデータ科学者がスタッフにいない場合に最適です。 一部のサービスでは、トレーニングは不要です。 他では最小限のトレーニングのみ必要です。
+顧客のニーズを最も迅速かつ簡単に予測できるのは、Azure Cognitive Services です。 Cognitive Services を使用すると、追加でトレーニングを行う必要なく、既存のモデルを使用して予測を行うことができます。 これらのサービスは、予測モデルをトレーニングするデータ サイエンティストがスタッフにいない場合に最適かつ効果的です。 一部のサービスでは、トレーニングは不要です。 最小限のトレーニングのみを必要とするサービスもあります。
 
-利用可能なサービスと必要なトレーニングの量の一覧については、「[Cognitive Services と機械学習](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model)」を参照してください。
+利用可能なサービスと必要と考えられるトレーニングの量の一覧については、「[Cognitive Services と機械学習](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model)」をご覧ください。
 
 ### <a name="action"></a>Action
 
-Cognitive Services の API を使用するには:
+Cognitive Services API を使用するには、次の手順に従います。
 
-1. **[Cognitive Services]** に移動します。
-2. **[追加 +]** をクリックして、マーケットプレースから Cognitive Service を探します。
-3. 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** テキスト ボックスにサービス名を入力します。
-4. または、Cognitive Services のヘッダーの横にある **[もっと見る]** リンクをクリックして、Cognitive Services の一覧を表示することもできます。
+1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts) で **[Cognitive Services]** に移動します。
+2. **[追加]** を選択して、Azure Marketplace で Cognitive Service API を探します。
+3. 次のいずれかを実行します。
+   * 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** ボックスに名前を入力します。
+   * Cognitive Services APIs の一覧については、Cognitive Services の見出しの横の **[もっと見る]** リンクを選択します。
 
 ::: zone target="chromeless"
 
@@ -72,17 +73,18 @@ Cognitive Services の API を使用するには:
 
 ## <a name="azure-machine-learning-studiotabmachinelearningstudio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
 
-Cognitive Services 内の既存のモデルが目的の予測に合わない場合、データ科学者の高いスキルなしに Azure Machine Learning Studio で、目的の予測を構築することができる場合があります。
+Cognitive Services 内の既存のモデルが目的の予測に合わない場合は、データ サイエンティストの高いスキルがなくても、Azure Machine Learning Studio を使用して目的の予測を構築できます。
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="action"></a>Action
 
-次の方法で、Azure Machine Learning Studio を使用してモデルを作成し、そのモデルを試すことができます。
+Azure Machine Learning Studio で、次の手順に従ってモデルを作成し、モデルを試すことができます。
 
-1. **[Azure Machine Learning Studio]** に移動します。
-2. **[Create Machine Learning Studio Workspace]** \(Machine Learning Studio ワークスペースの作成\) をクリックして、プロンプトに従いワークスペースを作成します。
-3. 新しいワークスペースには、詳細なトレーニングの代わりに、モデルを構築して実験するドラッグ アンド ドロップ インターフェイスがあります。
+1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces) で、**Azure Machine Learning Studio** に直接移動します。
+2. **[Create Machine Learning Studio Workspace]\(Machine Learning Studio ワークスペースの作成\)** を選択し、プロンプトに従ってワークスペースを作成します。
+
+   新しいワークスペースには、詳細なトレーニングの代わりに、モデルを作成して試すためのドラッグ アンド ドロップ インターフェイスが用意されています。
 
 ::: zone target="chromeless"
 
@@ -102,21 +104,21 @@ Cognitive Services 内の既存のモデルが目的の予測に合わない場�
 
 ## <a name="azure-machine-learning-servicetabmachinelearningservice"></a>[Azure Machine Learning サービス](#tab/MachineLearningService)
 
-Azure Machine Learning service には、顧客のデータ セットをより詳細にトレーニングするために必要な、より詳細なコードベースの手段があります。 データ科学者は、Python などの言語を使用し、顧客のニーズを予測するアルゴリズムをトレーニングおよび構築できます。
+Azure Machine Learning service では、顧客データ セットのより詳細なトレーニングに必要となる、詳細なコードベースのアプローチが提供されます。 データ サイエンティストは、Python などの言語を使用して、顧客のニーズを予測するアルゴリズムをトレーニングおよび構築できます。
 
 ### <a name="action"></a>Action
 
-データ科学者は、次のように Azure Machine Learning Service を使用し、Python などの高度な言語でモデルをトレーニングおよび構築することができます。
+データ サイエンティストは、Azure Machine Learning service を使用して、Python などの高度な言語でモデルをトレーニングおよび構築できます。
 
-1. **[Azure Machine Learning Service]** に移動します。
-2. **[Create Machine Learning service workspaces]** \(Machine Learning service ワークスペースの作成\) をクリックして、プロンプトに従いワークスペースを作成します。
-3. 新しいワークスペースには、モデルをトレーニングおよび構築する、データ科学者向けのコードを使用する方法が用意されています。これでは、顧客のニーズを正確に予測するためにより高度な分析がされている必要があります。
+1. **[Azure Machine Learning service]** に移動します。
+2. **[Create Machine Learning service workspaces]\(Machine Learning service ワークスペースの作成\)** を選択し、プロンプトに従ってワークスペースを作成します。
+3. 新しいワークスペースでは、データ サイエンティストが、顧客のニーズを正確に予測するためにより高度な分析を必要とするモデルをトレーニングおよび構築するためのコード駆動型のアプローチが提供されます。
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning service" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -130,6 +132,6 @@ Azure Machine Learning service には、顧客のデータ セットをより詳
 
 ## <a name="influence"></a>影響
 
-上記のすべての方法で、予測モデルをアプリケーションに公開する API が生成されます。 これらのいずれかの方法をソリューションで使用すると、顧客から収集したデータを予測 API にフィードできます。 その後、推奨される次の手順として、結果をカスタマー エクスペリエンスに統合できます。
+前述のどのアプローチでも、予測モデルをアプリケーションに公開する API が生成されます。 ソリューション内でいずれかのアプローチを使用して、顧客から収集したデータを予測 API に提供します。 その後、推奨される次の手順として、結果をカスタマー エクスペリエンスに統合できます。
 
-それらの次の手順では、顧客の行動パターンが形成されるようにし、顧客の反応に影響を与えます。 推奨される次の手順は予測アルゴリズムに基づいているため、以前の顧客と使用可能なデータが使用され、しばしば顧客がそのようなニーズがあることを認識する前でも、顧客のニーズを予測し、そのニーズを満たします。
+それらの手順では、顧客の行動パターンを形成し、顧客の反応に影響を与えることができます。 推奨される次の手順は予測アルゴリズムに基づいているため、顧客の以前のニーズと利用可能なデータを使って、多くの場合、顧客自身がニーズの存在を認識する前に、顧客の将来のニーズを予測し、そのニーズを満たします。
