@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549097"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888834"
 ---
 # <a name="cloud-governance-capabilities"></a>クラウド ガバナンス機能
 
@@ -63,7 +63,7 @@ ms.locfileid: "72549097"
 クラウド ガバナンスの活動には、次の関係者が頻繁に参加します。
 
 - 中間管理層のリーダーや、事業の代表者として主要な役割を担う直接的な協力者が、リスク許容度の評価を支援します。
-- クラウド ガバナンス機能は、[クラウド戦略機能](./cloud-strategy.md)の延長として提供されます。 CIO やビジネス リーダーがクラウド戦略機能への参加を求められるように、その部下にはクラウド ガバナンス活動への参加が求められます。
+- クラウド ガバナンス機能は、[クラウド戦略機能](./cloud-strategy.md)の拡張によって提供されます。 CIO やビジネス リーダーがクラウド戦略機能への参加を求められるように、その部下にはクラウド ガバナンス活動への参加が求められます。
 - ビジネス ユニットのメンバーとして基幹業務のリーダーと緊密に連携する従業員には、企業リスクや技術的リスクに関して意思決定を行う権限を与える必要があります。
 - クラウド移行の技術的側面を理解している情報技術 (IT) および情報セキュリティ (IS) の担当者は、クラウド ガバナンス機能の提供を常時担当するのではなく、交代で担当してもかまいません。
 

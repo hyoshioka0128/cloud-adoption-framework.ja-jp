@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0b743ffbace5c2b246df6f03d7e5b23570277dd0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: aa7ce8c882521e9a346e3f00da8c664af7585423
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548140"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058225"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>オンプレミス アプリを Azure VM にリホストする
 
@@ -292,7 +292,7 @@ Contoso のセキュリティ チームは、OSTICKETWEB と OSTICKETMYSQL の V
 - アクセスを制御するために、VM のネットワーク セキュリティ グループ (NSG) を見直します。 NSG は、アプリケーションに対して許可されるトラフィックのみが通過できるようにするために使用されます。
 - ディスクの暗号化と Azure Key Vault を使用した、VM ディスク上のデータのセキュリティ保護もこのチームが検討します。
 
-VM に関するセキュリティの実務の[詳細については、こちら](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms)を参照してください。
+詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/iaas)」を参照してください。
 
 ### <a name="bcdr"></a>BCDR
 

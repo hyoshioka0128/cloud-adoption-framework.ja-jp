@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8d9bce8b12b3054c2f4a6aa0421e1d30d5011860
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031442"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048131"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>クラウド運用モデルは Azure 向けの Microsoft Cloud 導入フレームワークの一部になりました
 
@@ -26,9 +26,9 @@ ms.locfileid: "71031442"
 
 COM に類似するアプローチでは、次のいずれかから読み始める必要があります。
 
-- [クラウドへの移行の概要](../getting-started/migrate.md)
-- [クラウドに対応するための導入の概要](../getting-started/innovate.md)
-- [導入の成功を可能にする](../getting-started/enable.md)
+- [クラウド移行の取り組みを始める](../getting-started/migrate.md)
+- [クラウドの導入によるイノベーション](../getting-started/innovate.md)
+- [クラウド導入の成功を実現する](../getting-started/enable.md)
 
 COM で提供されていたガイダンスは、引き続きクラウドの導入フレームワークに関連しています。 エクスペリエンスは異なりますが、クラウド導入フレームワークの構造は、単にそのガイダンスを拡張したものです。 COM からクラウド導入フレームワークに移行するには、スコープと構造を理解することが重要です。 次の 2 つのセクションで、この移行について説明します。
 

@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 704dbb16be57c4203199ca972aa61b520eece3ca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ca73050c2ca6a753727b7b972a3c1febe4ec9515
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023542"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058732"
 ---
 # <a name="software-defined-networking-paas-only"></a>ソフトウェア定義ネットワーク:PaaS のみ
 
 サービスとしてのプラットフォーム (PaaS) リソースを実装すると、デプロイ プロセスによって、負荷分散、ポートのブロック、他の PaaS サービスへの接続など、そのネットワークに対する少数の制御を持つ仮の基礎ネットワークが自動的に作成されます。
 
-Azure では、いくつかの PaaS リソースの種類を仮想ネットワークに[デプロイ](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services)または[接続](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)して、このようなリソースを既存の仮想ネットワーク インフラストラクチャと統合できます。 他のサービス ([App Service Environments](https://docs.microsoft.com/azure/app-service/environment/intro)、[Azure Kubernetes Services](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) など) は、仮想ネットワーク内にデプロイする必要があります。 ただし、多くの場合、PaaS リソースによって提供される既定のネイティブ ネットワーク機能のみに依存する PaaS のみネットワーク アーキテクチャで、ワークロードの接続性とトラフィック管理の要件を十分に満たすことができます。
+Azure では、いくつかの PaaS リソースの種類を仮想ネットワークに[デプロイ](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services)または[接続](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)して、このようなリソースを既存の仮想ネットワーク インフラストラクチャと統合できます。 [App Service Environments](https://docs.microsoft.com/azure/app-service/environment/intro)、[Azure Kubernetes Services (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) など、その他のサービスは、仮想ネットワーク内にデプロイする必要があります。 ただし、多くの場合、PaaS リソースによって提供される既定のネイティブ ネットワーク機能のみに依存する PaaS のみネットワーク アーキテクチャで、ワークロードの接続性とトラフィック管理の要件を十分に満たすことができます。
 
 PaaS のみのネットワーク アーキテクチャを検討している場合は、必要な前提条件がお客様の要件と一致していることを確認してください。
 

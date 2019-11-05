@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 222768f457f566d1ba19f8c53814110595e03bf3
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379120"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980187"
 ---
 # <a name="organize-your-azure-resources"></a>Azure リソースの整理
 
@@ -159,7 +159,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 - **自動化:** "ShutdownTime" や "DeprovisionDate" のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
 - **課金:** タグを請求書に表示することができます。 それらを使用して、"CostCenter" や "BillTo" などのタグを使って請求書をセグメント化できます。
 
-各リソースまたはリソース グループには、最大で 15 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
+各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 
 細かいタグ付けの推奨事項と例については、クラウド導入フレームワークの[タグ付けに関するガイドライン](../considerations/naming-and-tagging.md)を参照してください。
 

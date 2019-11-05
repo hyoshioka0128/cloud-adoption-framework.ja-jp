@@ -1,7 +1,7 @@
 ---
-title: クラウド導入のあらゆる道のりでお客様の成功を実現する
+title: クラウド導入の取り組みの途中でお客様の成功を実現する
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: クラウド導入のあらゆる道のりでお客様の成功を実現する
+description: クラウド導入の取り組み全体を通じてお客様の成功を実現する
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,20 +9,20 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea9d6b17627883f63e0814b66ed5cb657555995d
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023443"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048335"
 ---
-# <a name="enable-success-across-any-cloud-adoption-journey"></a>クラウド導入のあらゆる道のりで成功を実現する
+# <a name="enable-success-during-a-cloud-adoption-journey"></a>クラウド導入の取り組みの途中で成功を実現する
 
-Azure 向けの Microsoft Cloud 導入フレームワークは、さまざまなクラウド導入作業のガイドとなる無料のセルフ サービス ツールとして提供されています。 このコンテンツの目的は、Azure によって実現できるビジネス目標をお客様が達成できるよう支援することです。 ただし、このコンテンツでは、読者が直面しているビジネス、カルチャ、または技術面の課題は本質的に広範であり、クラウドにとらわれない視点が求められる場合もあるという点にも配慮しています。 そのため、このガイダンスの各セクションは Azure ファーストのアプローチで始まりますが、ビジネスや技術面の意思決定にも応用できる、クラウドにとらわれない理論に従っています。
+クラウド導入フレームワークは、さまざまなクラウド導入作業のガイドとなる無料のセルフサービス ツールです。 このフレームワークは、Microsoft Azure によって実現可能なビジネスの目標を顧客が無事に達成できるよう支援します。 ただし、このコンテンツでは、読者が直面しているビジネス、カルチャ、または技術面の課題は広範であり、クラウドにとらわれない視点が求められる場合があることも認識しています。 したがって、このガイダンスの各セクションは Azure ファーストのアプローチで始まり、ビジネスや技術面の多くの意思決定にも応用できる、クラウドにとらわれない理論に従っています。
 
-このフレームワーク全体で、可能化が中心的なテーマです。 以下のチェックリストには、IT とビジネスの両方の視点から、取り組みの成功を確実にするために、あらゆるクラウド導入作業に組み込む必要がある一連のトピックが含まれています。
+このフレームワーク全体で、可能化が中心的なテーマです。 次のチェックリストは、IT とビジネスの両方で導入の取り組みが成功したと見なされるようにするための、基本的なクラウド導入原則を項目化したものです。
 
-- **計画:** 明確な[ビジネスの成果](../strategy/business-outcomes/index.md)、定義された[デジタル資産計画](../digital-estate/index.md)、よく理解された[導入バックログ](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)を確立する。
+- **プランニング:** 明確な[ビジネスの成果](../strategy/business-outcomes/index.md)、明確に定義された[デジタル資産計画](../digital-estate/index.md)、よく理解された[導入バックログ](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)を確立する。
 - **準備完了:** [スキルと学習計画](../ready/technical-skills.md)によってスタッフの準備を確実にする。
 - **運用:** 導入中および導入後のアクティビティをガイドする管理可能な運用モデルを定義します。
   - **[整理](../organize/index.md):** ユーザーとチームを集めて、適切なクラウドの運用と導入に関する知識を伝達します。

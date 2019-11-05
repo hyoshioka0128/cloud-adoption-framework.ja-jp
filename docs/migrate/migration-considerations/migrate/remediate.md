@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 54621d366f0ae0a3e2e3504532ace183bc7f49c4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839077"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058848"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>移行前に資産を修復する
 
@@ -31,7 +31,7 @@ ms.locfileid: "70839077"
 - **アプリケーション構成の変更。** 移行したアプリケーションでは、依存資産へのネットワーク パスなどの変数の変更、サービス アカウントの変更、または依存 IP アドレスの更新が必要になることがあります。
 - **ネットワーク パスに対する軽微な変更。** ユーザー トラフィックを新しい資産に正しくルーティングするために、ルーティング パターンを変更することが必要になることがあります。
     > [!NOTE]
-    > これは新しい資産への実働ルーティングではなく、資産全般への適切なルーティングができるようにするための構成です。
+    > これは新しい資産への実働ルーティングというよりは、資産全般への適切なルーティングができるようにするための構成です。
 
 ## <a name="large-scale-remediation-tasks"></a>大規模な修復タスク
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0fff6d3c88d62ed3efc9f4cf2140981e8be331a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547212"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058196"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>オンプレミス アプリを Azure VM にリホストする
 
@@ -283,7 +283,7 @@ Contoso のセキュリティ チームは、Azure VM を再調査して、セ�
 - アクセスを制御するために、VM のネットワーク セキュリティ グループ (NSG) を見直します。 NSG は、許可されたトラフィックのみがアプリに到達できるようにするために使用されます。
 - また、このチームは、ディスク上のデータ保護のために、Azure Disk Encryption と Key Vault の使用も検討します。
 
-VM に関するセキュリティの実務の[詳細については、こちら](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms)を参照してください。
+詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/iaas)」を参照してください。
 
 ## <a name="bcdr"></a>BCDR
 

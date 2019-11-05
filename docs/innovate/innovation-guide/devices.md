@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f38c207c89cbe4d37958292c552165f39e2bd383
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 8f7882a28dc135763584c8f2af4f5d834160f3ba
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769282"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047564"
 ---
 ::: zone target="docs"
 
@@ -49,7 +49,9 @@ Azure のお客様は、ユーザー、データ、またはその両方に近�
 
 <!-- markdownlint-enable MD025 -->
 
-数十億台規模の IoT デバイスとの双方向通信を実行するソリューションを設計します。 既定の device-to-cloud 利用統計情報を使用して、デバイスの状態を把握し、構成のみで他の Azure サービスへのメッセージ ルートを定義できます。 cloud-to-device メッセージを活用すると、接続されたデバイスにコマンドや通知を信頼性の高い方法で送信できます。また、受信確認メッセージを使用してメッセージの配信を追跡できます。 断続的な接続に対応するために、必要に応じてデバイス メッセージが自動的に再送信されます。
+数十億台規模の IoT デバイスとの双方向通信を実行するソリューションを設計します。 既定の device-to-cloud 利用統計情報を使用して、デバイスの状態を把握し、構成のみで他の Azure サービスへのメッセージ ルートを定義できます。 cloud-to-device メッセージを利用することにより、接続されたデバイスにコマンドや通知を信頼性の高い方法で送信できます。また、受信確認メッセージを使用してメッセージの配信を追跡できます。 また、断続的な接続に対応するため、必要に応じてデバイス メッセージを自動で再送信します。
+
+次のような機能が用意されています。
 
 - **セキュリティが強化された通信チャネル**で IoT デバイスとの間でデータを送受信する。
 - **ビルトイン デバイス管理**とプロビジョニングで大規模な IoT デバイスに接続して管理する。
@@ -66,16 +68,18 @@ Azure のお客様は、ユーザー、データ、またはその両方に近�
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
 IoT ハブを作成するには:
 
 1. **IoT Hub** に移動します。
-2. **[Create IoT hub]\(IoT ハブの作成\)** をクリックします。
+2. **[Create IoT hub]\(IoT ハブの作成\)** を選択します。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs]" submitText="Go to IoT Hub" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
 
 IoT Hub Device Provisioning Service は、ゼロタッチでの Just-In-Time プロビジョニングを可能にする、IoT Hub のヘルパー サービスです。
 
@@ -86,7 +90,9 @@ IoT Hub Device Provisioning Service は、ゼロタッチでの Just-In-Time プ
 IoT Hub Device Provisioning Service を作成するには:
 
 1. **IoT Hub Device Provisioning Service** に移動します。
-2. **[Create Device Provisioning Services]\(Device Provisioning Service の作成\)** をクリックします。
+2. **[Create Device Provisioning Services]\(Device Provisioning Service の作成\)** を選択します。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FProvisioningServices]" submitText="Go to Device Provisioning Services" :::
 
@@ -112,16 +118,16 @@ IoT Hub Device Provisioning Service を作成するには:
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
 Azure Digital Twins を作成するには:
 
-1. 左側のウィンドウで、 **[リソースの作成]** を選択します。
-2. digital twins を検索し、 **[Digital Twins]** を選択します。
+1. 左側のウィンドウで、 **[リソースの作成]** を選びます。
+2. **digital twins** を検索し、 **[Digital Twins]** を選択します。
 3. **[作成]** を選択してデプロイ プロセスを開始します。
-4. 下のボタンをクリックして、既存の Digital Twins を確認します。
+4. 既存の Digital Twins を確認するには、このボタンを選択します:
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.IoTSpaces%2FGraph]" submitText="Go to Digital Twins" :::
 
@@ -149,14 +155,14 @@ Azure Maps サービスでは、近傍、トラフィック、ルート指定な
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
 位置情報インテリジェンスを使用するには:
 
 1. **Azure Maps アカウント**に移動します。
-2. **[Create Azure Maps accounts]\(Azure Maps アカウントの作成\)** をクリックします。
+2. **[Create Azure Maps accounts]\(Azure Maps アカウントの作成\)** を選択します。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Maps%2Faccounts]" submitText="Go to Azure Maps Account" :::
 
@@ -170,9 +176,9 @@ Azure Spatial Anchors によって、開発者は、複合現実プラットフ�
 
 **現実世界にコンテキストを追加する:** デジタル コンテンツを配置し、物理的な目的地に結び付けることで、ユーザーが必要な場所で必要なときにデータの理解を深めることができるようにします。
 
-**デバイス間でホログラムを共有する:** 任意のデバイスでチームや顧客に 3D を提供することで、意思決定と成果の実現を加速します。 Spatial Anchors によって、同じ空間にいるユーザーはマルチユーザー対応混合現実アプリケーションに簡単にアクセスできます。
+**デバイス間でホログラムを共有する:** 任意のデバイスでチームや顧客に 3D を提供することで、意思決定と成果の実現を加速します。 Spatial Anchors によって、同じ空間にいるユーザーはマルチユーザー対応複合現実アプリケーションに簡単にアクセスできます。
 
-**魅力的なエクスペリエンス:** 空間アンカー間の関係を作成することによって相互につなげて、ユーザーがタスクを完了するために対話する必要がある 2 つ以上の目的地が含まれるユーザー エクスペリエンスを提供します。 お使いのアプリでは、ユーザーが仮想アーティファクトを実際の環境に配置できるようになります。 労働環境では、ユーザーは、サポートされているデバイス カメラを機械に向けることで、コンテキスト情報を受け取ることができます。
+**魅力的なエクスペリエンス:** 相互の関係を作成することによって空間アンカーを接続し、ユーザーがタスクを完了するために対話する必要がある 2 つ以上の目的地が含まれるユーザー エクスペリエンスを提供します。 お使いのアプリでは、ユーザーが仮想アーティファクトを実際の環境に配置できるようになります。 労働環境では、ユーザーは、サポートされているデバイス カメラを機械に向けることで、コンテキスト情報を受け取ることができます。
 
 Azure Spatial Anchors は、サポート対象のデバイス プラットフォーム用のマネージド サービスとクライアント SDK で構成されています。
 
@@ -184,14 +190,14 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
 空間エクスペリエンスを使用するには:
 
 1. **Spatial Anchors アカウント**に移動します。
-2. **[Create spatial anchors accounts]\(Spatial Anchors アカウントの作成\)** をクリックします。
+2. **[Create spatial anchors accounts]\(Spatial Anchors アカウントの作成\)** を選択します。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.MixedReality%2FspatialAnchorsAccounts]" submitText="Go to Spatial Anchors Accounts" :::
 
@@ -215,14 +221,14 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Action
 
 Azure Remote Rendering を使用するには:
 
 1. **Batch アカウント**に移動します。
-2. **[Create batch accounts]\(Batch アカウントの作成\)** をクリックします。
+2. **[Create batch accounts]\(Batch アカウントの作成\)** を選択します。
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Batch%2FbatchAccounts]" submitText="Go to Azure Batch" :::
 

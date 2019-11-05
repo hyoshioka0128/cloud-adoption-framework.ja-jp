@@ -8,12 +8,12 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 3cc5071ca4b57473b52e0478e59b3c6a0dd49bea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378037"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058050"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Azure エンタープライズ スキャフォールディングの実装例
 
@@ -138,6 +138,8 @@ Dave は Azure Enterprise Portal にログインし、サプライ チェーン�
 | --- | --- |
 | 開発 |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | Production |Contoso SupplyChain Operations LoyaltyCard Production |
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="policies"></a>ポリシー
 

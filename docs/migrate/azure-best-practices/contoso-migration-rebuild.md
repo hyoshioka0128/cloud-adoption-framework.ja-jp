@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548222"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058566"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>オンプレミス アプリを Azure 上にリビルドする
 
@@ -132,11 +132,11 @@ Contoso が移行を実行する方法を次に示します。
 Contoso の管理者は、AKS と Azure Container Registry (ACR) を使用して、管理対象の Kubernetes クラスターを作成するデプロイ スクリプトを実行します。
 
 - このセクションの手順では、**SmartHotel360-Azure-backend** リポジトリを使用します。
-- **SmartHotel360-Azure-backend** GitHub リポジトリには、デプロイのこの部分のためのソフトウェアがすべて含まれています。
+- **SmartHotel360-Azure-backend** GitHub リポジトリには、デプロイのこの部分のためのソフトウェアがすべて含まれています。  
 
 ### <a name="prerequisites"></a>前提条件
 
-1. Contos の管理者は、開始する前に、デプロイに使用する開発用マシンにすべての前提条件ソフトウェアがインストールされていることを確認します。
+1. Contoso の管理者は、開始する前に、デプロイに使用する開発用マシンにすべての前提条件ソフトウェアがインストールされていることを確認します。
 2. Git: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git` を使用して、開発用マシンにリポジトリをローカルに複製します。
 
 ### <a name="provision-aks-and-acr"></a>AKS および ACR をプロビジョニングする
@@ -152,7 +152,7 @@ Visual Studio Code を使用してフォルダーを開き、 **/deploy/k8s** �
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. PowerShell 統合ターミナルで、Connect-AzureRmAccount コマンドを使用して Azure にサインインします。 PowerShell の使用の[詳細については、こちら](https://docs.microsoft.com/powershell/azure/get-started-azureps)を参照してください。
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. **az login** コマンドを実行し、Web ブラウザーを使用した認証の手順に従って、Azure CLI の認証を行います。 Azure CLI でのログインの[詳細については、こちら](/cli/azure/authenticate-azure-cli?view=azure-cli-latest)を参照してください。
+6. `az login` コマンドを実行し、Web ブラウザーを使用した認証の手順に従って、Azure CLI の認証を行います。 Azure CLI でのログインの[詳細については、こちら](/cli/azure/authenticate-azure-cli?view=azure-cli-latest)を参照してください。
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. 次のコマンドを、リソース グループ名 ContosoRG、AKS クラスター名 smarthotel-aks-eus2、および新しいレジストリ名を渡して実行します。
 
@@ -178,7 +178,9 @@ Visual Studio Code を使用してフォルダーを開き、 **/deploy/k8s** �
 
 11. 次のコマンドを実行して、Kubernetes Dashboard を起動します。
 
-    **az aks browse --resource-group ContosoRG --name smarthotelakseus2**
+    ```console
+    az aks browse --resource-group ContosoRG --name smarthotelakseus2
+    ```
 
 12. ブラウザー タブが開き、ダッシュボードが表示されます。 これは Azure CLI を使用したトンネル接続です。
 
@@ -278,7 +280,7 @@ AKS クラスターを作成し、Docker イメージをビルドしたので、
 - AKS クラスターにマイクロサービスを送ります。
 - 最初のステップとして、マイクロサービスへの接続文字列を Azure DevOps を使用して更新します。 次に、新しい Azure DevOps リリース パイプラインを構成して、マイクロサービスをデプロイします。
 - このセクションの手順では、[SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend) リポジトリを使用します。
-- 一部の構成設定 (Active Directory B2C など) については、この記事では説明しないためご注意ください。 これらの設定についての詳細情報は、リポジトリをご覧ください。
+- 一部の構成設定 (Active Directory B2C など) については、この記事では説明しません。 これらの設定の詳細については、上記のリポジトリを参照してください。
 
 次のパイプラインを作成します。
 
