@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 10af3ade249bcc115d5b273b2610c093e48bf9a2
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238872"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564832"
 ---
 # <a name="policy-enforcement-decision-guide"></a>ポリシー適用の意思決定ガイド
 
@@ -57,7 +57,7 @@ Azure では、管理グループ、サブスクリプション、またはリ�
 
 クラウドの資産が、適用が必要な多くのサブスクリプションにまたがるまで拡大したら、クラウド資産全体の適用戦略に焦点を合わせて、ポリシーの一貫性を確保する必要があります。
 
-ポリシーは組織構造に関連しているため、[サブスクリプション設計](../subscriptions/index.md)ではポリシーを考慮に入れる必要があります。 サブスクリプション設計内で複雑な組織のサポートを助けるのに加え、[Azure 管理グループ](../../ready/azure-best-practices/scaling-subscriptions.md#managing-multiple-subscriptions)を使用して、Azure ポリシー ルールを複数のサブスクリプションにわたって割り当てることができます。
+ポリシーは組織構造に関連しているため、[サブスクリプション設計](../subscriptions/index.md)ではポリシーを考慮に入れる必要があります。 サブスクリプション設計内で複雑な組織のサポートを助けるのに加え、[Azure 管理グループ](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions)を使用して、Azure ポリシー ルールを複数のサブスクリプションにわたって割り当てることができます。
 
 ## <a name="automated-enforcement"></a>適用の自動化
 
