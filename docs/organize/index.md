@@ -10,14 +10,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71026180"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564285"
 ---
-# <a name="managing-organizational-alignment"></a>組織の配置の管理
+# <a name="manage-organizational-alignment"></a>組織の配置を管理する
 
 クラウド導入は、人員が適切に組織化されていなければ達成できません。 クラウド導入の成功は、適切なスキルを持つ人員が、明確に定義された業務目標に沿って、適切に管理された環境おいて、適切な種類の作業を遂行することによって実現します。 効果的なクラウド運用モデルを実現するには、人員が適切に配置された組織構造を確立することが重要です。 この記事では、適切な組織構造を確立して維持するためのアプローチを 4 つのステップで概説します。
 
@@ -130,7 +130,7 @@ ms.locfileid: "71026180"
 - [クラウド プラットフォーム](./cloud-platform.md):プラットフォームを運用し、成熟させます。
 - [クラウド自動化](./cloud-automation.md):導入とイノベーションを促進します。
 
-## <a name="maturing-organizational-structures"></a>組織構造の成熟化
+## <a name="mature-organizational-structures"></a>組織構造の成熟化
 
 上記の各機能は、明示的に、または定義されたチーム構造に従って、ある程度まで、クラウド導入のあらゆる作業で提供されます。
 導入のニーズが拡大すると、それに伴ってバランスと構造を生み出すニーズも高まります。 そうしたニーズを満たすために、企業は多くの場合、組織構造を成熟させるプロセスに従います。
@@ -139,7 +139,7 @@ ms.locfileid: "71026180"
 
 [組織構造の成熟度の決定](./organization-structures.md)に関する記事では、成熟度の各レベルについてさらに詳しく説明しています。
 
-## <a name="aligning-raci-charts"></a>RACI チャートの配置
+## <a name="align-raci-charts"></a>RACI チャートを配置する
 
 成熟度のレベルごとに、さまざまなクラウド機能の説明責任が新しいチームにシフトします。 このように説明責任がシフトすることで、変化への障壁を取り除き、自動化することにより、移行とイノベーションのサイクルを短縮できます。 割り当てを適切に配置するために、[RACI の配置](./raci-alignment.md)に関する記事では、参照されている各組織構造の RACI チャートを共有しています。
 

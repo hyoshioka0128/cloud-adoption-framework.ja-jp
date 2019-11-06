@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378262"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566856"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -130,7 +130,7 @@ Azure 移行ガイドを活用し、最初のワークロードを段階的に�
 
 ![クラウド導入フレームワーク移行モデル](../_images/operational-transformation-migrate.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>バランスの取れたクラウド ポートフォリオを作成する
+## <a name="create-a-balanced-cloud-portfolio"></a>バランスの取れたクラウド ポートフォリオを作成する
 
 バランスの取れたテクノロジ ポートフォリオには、さまざまな状態の資産が混在しています。 一部のアプリケーションは提供終了が予定されており、提供されるサポートは最小限です。 他のアプリケーションまたは資産は保守状態でサポートされていますが、それらのソリューションの機能は安定しています。 新しいビジネス プロセスでは、市況の変化により、機能強化や最新化が継続的に促進される可能性があります。 新たな収益源となる機会が生じると、新しいアプリケーションまたは資産が環境に導入されます。 資産のライフサイクルの各段階で、投資が収益と利益に与える影響は変わります。 ライフサイクル段階が終わりに近づくほど、新しい機能や最新化の取り組みによって投資から大きな利益が得られる可能性は低くなります。
 

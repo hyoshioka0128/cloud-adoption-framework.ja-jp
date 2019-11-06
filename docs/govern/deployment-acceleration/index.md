@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9de6f01a4252383c1d7619078568964fe8e685c9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222715"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566366"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>デプロイ高速化の規範の概要
 
@@ -33,9 +33,9 @@ ms.locfileid: "71222715"
 実践的なポリシー ステートメントと、その結果のアーキテクチャの要件は、デプロイ高速化の規範の基盤となります。 ポリシー ステートメントのサンプルを参照するには、[デプロイ高速化のポリシー ステートメント](./policy-statements.md)に関する記事をご覧ください。 これらのサンプルは、お客様の組織のガバナンス ポリシーの開始点として使用できます。
 
 > [!CAUTION]
-> このサンプル ポリシーは、よくあるお客様の体験をもとにしています。 特定のクラウド ガバナンスの要件にこれらのポリシーが合うように調整するには、次の手順を実行し、お客様独自のビジネス ニーズに合うポリシー ステートメントを作成してください。
+> このサンプル ポリシーは、よくあるお客様の体験をもとにしています。 特定のクラウド ガバナンスの要件にこれらのポリシーが合うように調整するには、次の手順を行い、お客様独自のビジネス ニーズに合うポリシー ステートメントを作成してください。
 
-## <a name="developing-deployment-acceleration-governance-policy-statements"></a>デプロイ高速化のガバナンス ポリシー ステートメントの開発
+## <a name="develop-governance-policy-statements"></a>ガバナンス ポリシー ステートメントの策定
 
 次の 6 つの手順を使用すると、クラウド環境内のリソースのデプロイおよび構成を管理するガバナンス ポリシーを定義できます。
 

@@ -221,7 +221,7 @@
               href: migrate/expanded-scope/balance-the-portfolio.md
             - name: スキルの準備
               href: migrate/expanded-scope/suggested-skills.md
-            - name: VMWare ホストの移行
+            - name: VMware ホストの移行
               href: migrate/expanded-scope/vmware-host.md
             - name: SQL Server の移行
               href: migrate/expanded-scope/sql-migration.md
@@ -279,7 +279,7 @@
                           href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                     - name: 移行のスケーリング
                       href: migrate/azure-best-practices/contoso-migration-scale.md
-            - name: VMWare ホストの移行
+            - name: VMware ホストの移行
               items:
                 - name: 概要
                   href: migrate/azure-best-practices/vmware-host.md
@@ -475,13 +475,13 @@
               items:
                 - name: 概要
                   href: migrate/migration-considerations/prerequisites/index.md
-                - name: 移行アクティビティに影響を与える意思決定
+                - name: 移行に影響を与える意思決定
                   href: migrate/migration-considerations/prerequisites/decisions.md
                 - name: 環境計画チェックリスト
                   href: migrate/migration-considerations/prerequisites/planning-checklist.md
                 - name: 役割と責任を一致させる
                   href: migrate/migration-considerations/prerequisites/cultural-complexity.md
-                - name: 変更を管理するためのバックログを構造化する
+                - name: アジャイル変更管理
                   href: migrate/migration-considerations/prerequisites/technical-complexity.md
                 - name: 移行バックログの確認
                   href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
@@ -491,31 +491,31 @@
                   href: migrate/migration-considerations/assess/index.md
                 - name: 優先順位を一致させる
                   href: migrate/migration-considerations/assess/business-priorities.md
-                - name: ワークロードと資産の準備状況を評価する
+                - name: ワークロードの準備状況を評価する
                   href: migrate/migration-considerations/assess/evaluate.md
                 - name: ワークロードを設計する
                   href: migrate/migration-considerations/assess/architect.md
                 - name: クラウド コストを見積もる
                   href: migrate/migration-considerations/assess/estimate.md
-                - name: 移行パートナーおよびサポートと連携する
+                - name: パートナーシップのオプションを理解する
                   href: migrate/migration-considerations/assess/partnership-options.md
-                - name: 増分プロセスを管理する
+                - name: 変更の管理
                   href: migrate/migration-considerations/assess/release-iteration-backlog.md
-                - name: 承認プロセスを変更する
+                - name: アーキテクチャの変更を承認する
                   href: migrate/migration-considerations/assess/approve.md
             - name: 個々の資産を移行する
               items:
                 - name: 概要
                   href: migrate/migration-considerations/migrate/index.md
-                - name: 昇格モデル - シングル ステップ、段階的、またはフライト
+                - name: 昇格モデル
                   href: migrate/migration-considerations/migrate/promotion-models.md
-                - name: 修復タスク
+                - name: 資産を修復する
                   href: migrate/migration-considerations/migrate/remediate.md
-                - name: 資産をクラウドにレプリケートする
+                - name: 資産をレプリケートする
                   href: migrate/migration-considerations/migrate/replicate.md
                 - name: オプションをレプリケートする
                   href: migrate/migration-considerations/migrate/replicate-options.md
-                - name: テストとプロモーション用にワークロードをステージングする
+                - name: ワークロードをステージする
                   href: migrate/migration-considerations/migrate/stage.md
             - name: ワークロードを最適化して昇格させる
               items:
@@ -525,15 +525,15 @@
                   href: migrate/migration-considerations/optimize/business-change-plan.md
                 - name: ビジネス テスト
                   href: migrate/migration-considerations/optimize/business-test.md
-                - name: 資産のベンチマークを実行して最適化する
+                - name: 資産をベンチマークおよびサイズ変更する
                   href: migrate/migration-considerations/optimize/optimize.md
-                - name: 昇格を行うための準備
+                - name: 昇格の準備
                   href: migrate/migration-considerations/optimize/ready.md
-                - name: 運用環境にワークロードを昇格させる
+                - name: 運用環境への昇格
                   href: migrate/migration-considerations/optimize/promote.md
                 - name: 廃止された資産を使用停止する
                   href: migrate/migration-considerations/optimize/decommission.md
-                - name: 振り返り
+                - name: 振り返りの実施
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: 運用環境でのワークロードのセキュリティ保護と管理
               items:

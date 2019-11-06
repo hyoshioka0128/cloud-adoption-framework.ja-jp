@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 77e3ded1f76b096655a7831bc1950bf28bd4c86b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683811"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564536"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>クラウドの運用モデルの確立
 
@@ -36,7 +36,7 @@ ms.locfileid: "72683811"
 - [管理](../manage/index.md):テクノロジの運用管理に対して継続中のプロセスを調整し、価値を最大化し、中断を最小限に抑えます。
 - [整理](../organize/index.md):運用モデルが成熟すると、さまざまなチームからなる組織と運用モデルをサポートする機能も成熟します。
 
-## <a name="aligning-operating-models"></a>運用モデルの足並みを揃える
+## <a name="align-operating-models"></a>運用モデルの足並みを揃える
 
 クラウドとデジタル経済には、さまざまな運用モデルに対する需要があります。 この需要は時に、複数のパブリック クラウドをサポートしなければならないという要件から生まれます。 もっと一般的には、オンプレミスをクラウドに移行するときにこの需要が際立ちます。 いずれの場合でも、運用モデルの足並みを揃えることでパフォーマンスを最大化し、冗長性を最小化することが大切です。
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221168"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566419"
 ---
 # <a name="cost-management-discipline-overview"></a>Cost Management の規範の概要
 
@@ -31,9 +31,9 @@ ms.locfileid: "71221168"
 実践的なポリシー ステートメントと、その結果のアーキテクチャの要件は、Cost Management の規範の基盤となります。 ポリシー ステートメントのサンプルを参照するには、[Cost Management のポリシー ステートメント](./policy-statements.md)に関する記事をご覧ください。 これらのサンプルは、お客様の組織のガバナンス ポリシーの開始点として使用できます。
 
 > [!CAUTION]
-> このサンプル ポリシーは、よくあるお客様の体験をもとにしています。 特定のクラウド ガバナンスの要件にこれらのポリシーが合うように調整するには、次の手順を実行し、お客様独自のビジネス ニーズに合うポリシー ステートメントを作成してください。
+> このサンプル ポリシーは、よくあるお客様の体験をもとにしています。 特定のクラウド ガバナンスの要件にこれらのポリシーが合うように調整するには、次の手順を行い、お客様独自のビジネス ニーズに合うポリシー ステートメントを作成してください。
 
-## <a name="developing-cost-management-governance-policy-statements"></a>Cost Management のガバナンス ポリシー ステートメントの開発
+## <a name="develop-governance-policy-statements"></a>ガバナンス ポリシー ステートメントの策定
 
 次の 6 つの手順を使用して、環境内でコストを管理するためのガバナンス ポリシーを定義できます。
 

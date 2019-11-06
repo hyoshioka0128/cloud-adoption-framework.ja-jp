@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ee164f75b4f3748fce027d0c6c98db5200dcdd71
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 181777e08e82cf7e58c73c7c8b66544d0960656d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548505"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564634"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>クラウド移行の拡大された範囲
 
@@ -32,7 +32,7 @@ ms.locfileid: "72548505"
 
 ### <a name="technology-driven-scope-expansion"></a>テクノロジによる範囲の拡大
 
-- **[VMWare の移行](./vmware-host.md):** VMWare ホストを移行すると、移行プロセス全体を高速化できます。 移行された各 VMWare ホストでは、リフトアンドシフト アプローチを使用して、複数のワークロードをクラウドに移動できます。 移行後は、これらの VM とワークロードを VMWare に維持したり、最新のクラウド機能に移行したりすることができます。
+- **[VMware の移行](./vmware-host.md):** VMware ホストを移行すると、移行プロセス全体を高速化できます。 移行された各 VMware ホストでは、リフトアンドシフト アプローチを使用して、複数のワークロードをクラウドに移動できます。 移行後は、これらの VM とワークロードを VMware に維持したり、最新のクラウド機能に移行したりすることができます。
 - **[SQL Server の移行](./sql-migration.md):** SQL Server を移行すると、移行プロセス全体を高速化できます。 移行された各 SQL Server では、複数のデータベースとサービスを移動できるため、複数のワークロードを加速させる可能性があります。
 - **[複数のデータセンター](./multiple-datacenters.md):** 複数のデータセンターの移行は、かなり複雑になります。 評価、移行、最適化、管理の各プロセスでは、より複雑な環境用に準備するために、追加の考慮事項について説明します。
 - **[データ要件がネットワーク容量を超える](./network-capacity-exceeded.md):** 企業がクラウドへの移行を選択する理由は、多くの場合、既存のデータセンターの容量、速度、または安定性に満足できなくなったためです。 残念ながら、こうした同じ制約によって移行プロセスが複雑になり、評価および移行プロセス段階で追加の計画が必要になります。
