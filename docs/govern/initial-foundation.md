@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3e1f2c1b54a55a740376ba1d1c45c13dc9e7e26d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: aae20779a4009692ebf52602341d81939dee01ea
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031393"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239532"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の確立
 
@@ -25,7 +25,7 @@ ms.locfileid: "71031393"
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>クラウド導入フレームワークを既に使用
 
-クラウドの導入フレームワークに従ってきた場合は、ガバナンス MVP が既にデプロイされている可能性があります。 ガイダンスは、運用モデルの核となる要素です。 クラウド導入ライフサイクルのすべてのフェーズに存在します。 そのため、[クラウド導入フレームワーク](../index.md)によって、[クラウド導入計画](../plan/index.md)の実装に関連するアクティビティにガバナンスを挿入するガイダンスが提供されます。 このガバナンス統合の一例は、[準備](../ready/index.md)のガイダンスに見られる 1 つまたは複数のランディング ゾーンをデプロイするためのブループリントの使用です。 別の例は、[サブスクリプションのスケールアウト](../ready/considerations/scaling-subscriptions.md)に関するガイダンスです。 これらの推奨事項のいずれかに従ってきた場合、以下の MVP セクションは、既存のデプロイの決定の単なるレビューです。 クイック レビューの後、[初期のガバナンス ソリューションの成熟化とベスト プラクティスのコントロールの適用](./foundation-improvements.md)に進みます。
+クラウドの導入フレームワークに従ってきた場合は、ガバナンス MVP が既にデプロイされている可能性があります。 ガイダンスは、運用モデルの核となる要素です。 クラウド導入ライフサイクルのすべてのフェーズに存在します。 そのため、[クラウド導入フレームワーク](../index.md)によって、[クラウド導入計画](../plan/index.md)の実装に関連するアクティビティにガバナンスを挿入するガイダンスが提供されます。 このガバナンス統合の一例は、[準備](../ready/index.md)のガイダンスに見られる 1 つまたは複数のランディング ゾーンをデプロイするためのブループリントの使用です。 別の例は、[サブスクリプションのスケールアウト](../ready/azure-best-practices/scaling-subscriptions.md)に関するガイダンスです。 これらの推奨事項のいずれかに従ってきた場合、以下の MVP セクションは、既存のデプロイの決定の単なるレビューです。 クイック レビューの後、[初期のガバナンス ソリューションの成熟化とベスト プラクティスのコントロールの適用](./foundation-improvements.md)に進みます。
 
 ## <a name="establish-an-initial-governance-foundation"></a>初期のガバナンス基盤の確立
 

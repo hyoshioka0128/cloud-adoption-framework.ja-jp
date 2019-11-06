@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 30dd36841171ebc0e239a8e59f94d290cc5782c7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048398"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561767"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎の概念
 
@@ -91,11 +91,11 @@ Azure で定義されているロールの詳細については、「[従来の�
 - [Azure Active Directory とは](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Azure サブスクリプションを Azure Active Directory テナントに関連付けるまたは追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 - [Azure AD Connect のトポロジ](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
-- [マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
+- [マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>次の手順
 
-Azure の基本的な概念を理解したところで、[複数の Azure サブスクリプションで拡張する](./scaling-subscriptions.md)方法について見ていきましょう。
+Azure の基本的な概念を理解したところで、[複数の Azure サブスクリプションで拡張する](../azure-best-practices/scaling-subscriptions.md)方法について見ていきましょう。
 
 > [!div class="nextstepaction"]
-> [複数の Azure サブスクリプションでの拡張](./scaling-subscriptions.md)
+> [複数の Azure サブスクリプションでの拡張](../azure-best-practices/scaling-subscriptions.md)
