@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 887d2e2ec410b761fdc81b87d83f3a471c3bf99e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025094"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566546"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Azure DevOps Services に Team Foundation Server の展開をリファクターする
 
@@ -132,7 +132,7 @@ Contoso の管理者は、TFS サーバーを TFS 2018 Update 2 にアップグ�
 
 **さらにサポートが必要な場合**
 
-TFS のアップグレードの詳細については、[こちら](/tfs/server/upgrade/get-started)を参照してください。
+TFS のアップグレードの詳細については、[こちら](https://docs.microsoft.com/tfs/server/upgrade/get-started)を参照してください。
 
 ## <a name="step-3-validate-the-tfs-collection"></a>手順 3:TFS コレクションを検証する
 
