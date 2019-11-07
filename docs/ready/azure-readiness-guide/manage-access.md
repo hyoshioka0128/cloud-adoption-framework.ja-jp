@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e79966dbcbb00cb59fc88133c3ac62255a395a27
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ced1c366b4eb85c9692e9d65ebdbb034e32bc9b3
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022102"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239892"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>ロールベースのアクセス制御を使用して Azure 環境へのアクセスを管理する
 
@@ -29,7 +29,7 @@ RBAC は、Azure 内のリソースの詳細なアクセス管理を実現しま
 
 アクセスと制御の方法を計画する場合は、組織内でセキュリティとコンプライアンス、IT 管理、およびエンタープライズ アーキテクトの役割を持つ人と協力することをお勧めします。
 
-クラウド導入フレームワークには、クラウド導入への取り組みの一環として、[ロールベースのアクセス制御の使用](../azure-best-practices/roles.md)方法に関する追加のガイダンスがあります。
+クラウド導入フレームワークには、クラウド導入への取り組みの一環として、[ロールベースのアクセス制御の使用](../considerations/roles.md)方法に関する追加のガイダンスがあります。
 
 ::: zone target="chromeless"
 
@@ -88,6 +88,6 @@ RBAC は、Azure 内のリソースの詳細なアクセス管理を実現しま
 詳細については、次を参照してください。
 
 - [ロールベースのアクセス制御 (RBAC) とは何か](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [クラウド導入フレームワーク:ロールベースのアクセス制御の使用](../azure-best-practices/roles.md)
+- [クラウド導入フレームワーク:ロールベースのアクセス制御の使用](../considerations/roles.md)
 
 ::: zone-end

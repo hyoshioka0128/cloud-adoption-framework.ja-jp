@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 79102a3664f055489da37fc3de0ec7156c1272ef
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025224"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239837"
 ---
 # <a name="organize-your-azure-resources"></a>Azure リソースの整理
 
@@ -40,7 +40,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 通常、より高位のレベルで重要な設定を適用し、より低位のレベルでプロジェクト固有の要件を適用することをお勧めします。 たとえば、組織のすべてのリソースを確実に特定のリージョンに配置したい場合などがあります。 これを行うには、許可された場所を指定するポリシーをサブスクリプションに適用します。 組織内の他のユーザーが新しいリソース グループとリソースを追加すると、許可された場所が自動的に適用されます。 ポリシーについて詳しくは、このガイドのガバナンス、セキュリティ、およびコンプライアンスのセクションをご覧ください。
 
-サブスクリプションの数が少なければ、その個別管理は比較的簡単です。 使用するサブスクリプションの数が増えた場合は、サブスクリプションとリソースの管理を簡素化するために管理グループ階層の作成を検討してください。 複数のサブスクリプションを管理する方法の詳細については、「[複数の Azure サブスクリプションでの拡張](../considerations/scaling-subscriptions.md)」を参照してください。
+サブスクリプションの数が少なければ、その個別管理は比較的簡単です。 使用するサブスクリプションの数が増えた場合は、サブスクリプションとリソースの管理を簡素化するために管理グループ階層の作成を検討してください。 複数のサブスクリプションを管理する方法の詳細については、「[複数の Azure サブスクリプションでの拡張](../azure-best-practices/scaling-subscriptions.md)」を参照してください。
 
 コンプライアンス戦略を計画する際には、組織内でセキュリティとコンプライアンス、IT 管理、エンタープライズ アーキテクト、ネットワーク、財務、および調達の役割を持つ人と協力してください。
 
@@ -79,7 +79,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 詳細については、次を参照してください。
 
 - [Azure の基礎](../considerations/fundamental-concepts.md)
-- [複数の Azure サブスクリプションでのスケーリング](../considerations/scaling-subscriptions.md)
+- [複数の Azure サブスクリプションでのスケーリング](../azure-best-practices/scaling-subscriptions.md)
 - [Azure でのリソース アクセス管理について](../../govern/resource-consistency/resource-access-management.md)
 - [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [サブスクリプション サービスの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)
@@ -130,7 +130,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 - 運用の面では、IT チームが必要とする情報が名前に含まれるよう徹底する必要があります。 ワークロード、アプリケーション、環境、重要度など、リソースの管理に役立つ情報を識別する情報を使用します。
 
-リソースの種類に応じて、長さの制限と使用可能な文字は異なっている場合があります。それらの多くは、Azure ベスト プラクティスの[名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)に関する記事に記載されています。 特に企業のクラウド導入作業をサポートすることを目的とする詳細と推奨事項については、クラウド導入フレームワークの[名前付けとタグ付けに関するガイダンス](../considerations/naming-and-tagging.md)を参照してください。
+リソースの種類に応じて、長さの制限と使用可能な文字は異なっている場合があります。それらの多くは、Azure ベスト プラクティスの[名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)に関する記事に記載されています。 特に企業のクラウド導入作業をサポートすることを目的とする詳細と推奨事項については、クラウド導入フレームワークの[名前付けとタグ付けに関するガイダンス](../azure-best-practices/naming-and-tagging.md)を参照してください。
 
 次の表には、例としてのいくつかの Azure リソースの種類に対する名前付けパターンが含まれています。
 
@@ -159,9 +159,9 @@ Azure には、管理グループ、サブスクリプション、リソース �
 - **自動化:** "ShutdownTime" や "DeprovisionDate" のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
 - **課金:** タグを請求書に表示することができます。 それらを使用して、"CostCenter" や "BillTo" などのタグを使って請求書をセグメント化できます。
 
-各リソースまたはリソース グループには、最大で 15 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
+各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 
-細かいタグ付けの推奨事項と例については、クラウド導入フレームワークの[タグ付けに関するガイドライン](../considerations/naming-and-tagging.md)を参照してください。
+細かいタグ付けの推奨事項と例については、クラウド導入フレームワークの[タグ付けに関するガイドライン](../azure-best-practices/naming-and-tagging.md)を参照してください。
 
 ::: zone target="docs"
 

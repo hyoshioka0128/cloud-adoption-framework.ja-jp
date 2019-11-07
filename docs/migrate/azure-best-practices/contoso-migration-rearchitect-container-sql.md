@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0efdd1a42ae7ff161c29f37365d0a14d4d869496
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 2487b7c213c45b0dcc78ffd4c12b1acae67aa429
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547366"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566658"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Azure コンテナーと Azure SQL Database でオンプレミス アプリを再構築する
 
@@ -99,7 +99,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **サービス** | **説明** | **コスト**
 --- | --- | ---
-[Data Migration Assistant (DMA)](/sql/dma/dma-overview?view=ssdt-18vs2017) | Azure のデータベース機能に影響を及ぼす可能性がある互換性の問題を評価して検出します。 DMA は SQL のソースとターゲット間で機能パリティを評価し、パフォーマンスと信頼性の向上箇所を推奨します。 | これは無料でダウンロードできるツールです。
+[Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Azure のデータベース機能に影響を及ぼす可能性がある互換性の問題を評価して検出します。 DMA は SQL のソースとターゲット間で機能パリティを評価し、パフォーマンスと信頼性の向上箇所を推奨します。 | これは無料でダウンロードできるツールです。
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | インテリジェントなフル マネージド リレーショナル クラウド データベース サービスを提供します。 | 機能、スループット、サイズに基づくコスト。 [詳細情報](https://azure.microsoft.com/pricing/details/sql-database/managed)。
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細情報](https://azure.microsoft.com/pricing/details/container-registry)。
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | 常時接続可能でスケーラブルな分散アプリを構築し、運用します | コンピューティング ノードのサイズ、場所、期間に基づくコスト。 [詳細情報](https://azure.microsoft.com/pricing/details/service-fabric)。

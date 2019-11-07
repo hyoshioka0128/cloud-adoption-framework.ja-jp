@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888834"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566787"
 ---
 # <a name="cloud-governance-capabilities"></a>クラウド ガバナンス機能
 
@@ -31,7 +31,7 @@ ms.locfileid: "72888834"
 - ネットワーク
 - ID
 - 仮想化
-- ビジネス継続性/ディザスター リカバリー
+- 事業継続とディザスター リカバリー
 - IT 部門のアプリケーション所有者
 
 クラウド ガバナンス機能では、現在のリリースと将来のリリースに関連するリスクが特定されます。 この機能は、リスクの評価、潜在的影響の把握、リスク許容度に関する意思決定の各取り組みで利用されます。 これにより、[クラウド導入機能](./cloud-adoption.md)のニーズの変化に対応して計画を迅速に更新できます。

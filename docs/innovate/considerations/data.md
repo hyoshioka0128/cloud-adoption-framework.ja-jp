@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 997975a01b171ca1613ace518f29047793c6d437
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980072"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565703"
 ---
 # <a name="democratize-data"></a>データの民主化
 
@@ -80,7 +80,7 @@ IT 環境でデータが中断されると、イノベーションの機会が�
 
 **仮想化:** データの統合とインジェストにより、イノベーションが遅くなることがあります。 データ仮想化のためのソリューションが既に利用可能な場合は、それがより合理的なアプローチとなる可能性があります。 インジェストと統合はどちらも、ストレージおよび開発の要件の重複、データ待機時間の増加、攻撃対象領域の拡大、品質の問題の発生、ガバナンス作業の増加の可能性があります。 データ仮想化は、元のデータを単一の場所に残し、ソース データのパススルーまたはキャッシュされたクエリを作成する、より新しい代替手段です。
 
-SQL Server 2017 と Azure SQL Data Warehouse の両方で、[PolyBase](/sql/relational-databases/polybase/polybase-guide) がサポートされています。これは、Azure で最もよく使用されるデータ仮想化へのアプローチです。
+SQL Server 2017 と Azure SQL Data Warehouse の両方で、[PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) がサポートされています。これは、Azure で最もよく使用されるデータ仮想化へのアプローチです。
 
 ## <a name="next-steps"></a>次の手順
 

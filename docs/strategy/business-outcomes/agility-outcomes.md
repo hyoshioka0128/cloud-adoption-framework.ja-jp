@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048069"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566642"
 ---
-# <a name="examples-of-agility-outcomes"></a>機敏性の成果の例 
+# <a name="examples-of-agility-outcomes"></a>機敏性の成果の例
 
 [ビジネス上の成果の概要](./index.md)に関するページで説明したように、見込みがあるさまざまなビジネス上の成果を、企業との変革に取り組むための対話の基盤として役立てることができます。 この記事では、最もタイムリーなビジネスの評価基準であるビジネスの機敏性に焦点を合わせています。 会社の市場での立ち位置と市場の勢力図を理解することは、ビジネスの変革の過程で目標となるビジネス上の成果を明確にするのに役立ちます。
 
@@ -37,7 +37,9 @@ ms.locfileid: "73048069"
 
 - **例 2:** ある物流会社が未開拓の市場を発見しましたが、その市場のマーケット シェアを獲得するには、自社の最重要アプリケーションの新しいバージョンが必要です。 大手の競合他社も、同じ発見を行っています。 この会社は、クラウド対応アプリケーションの導入の取り組みを通して顧客を囲い込み、DevOps 駆動型開発アプローチによる _x_ か月の先行によって、対応が遅かった長年の競争相手を出し抜きました。 この迅速な市場への参入によって、顧客基盤が確保されました。
 
-**Aurora Health Care**: ヘルスケア システムは、オンライン サービスを親しみやすいデジタル エクスペリエンスに変換します。 Aurora Health Care は、自社のデジタル サービスを変換するために、Web サイトを Microsoft Azure プラットフォームに移行し、継続的イノベーション戦略を採用しました。
+### <a name="aurora-health-care"></a>Aurora Health Care 社
+
+ヘルスケア システムは、オンライン サービスを親しみやすいデジタル エクスペリエンスに変換します。 Aurora Health Care は、自社のデジタル サービスを変換するために、Web サイトを Microsoft Azure プラットフォームに移行し、継続的イノベーション戦略を採用しました。
 
 > 「私たちは、チームとして、高品質なソリューションとスピードに重点的に取り組んでいます。 Azure を選択することは、私たちにとって、非常に斬新な意思決定でした。」  
 > Jamey Shiels  

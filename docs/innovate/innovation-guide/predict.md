@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5bd467e6e74ff1289a7db40add87a049d2b0697e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 507801a0332058917b585d335f859c1b41d48ce1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047620"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565530"
 ---
 ::: zone target="docs"
 
@@ -52,8 +52,8 @@ Cognitive Services API を使用するには、次の手順に従います。
 1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts) で **[Cognitive Services]** に移動します。
 2. **[追加]** を選択して、Azure Marketplace で Cognitive Service API を探します。
 3. 次のいずれかを実行します。
-   * 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** ボックスに名前を入力します。
-   * Cognitive Services APIs の一覧については、Cognitive Services の見出しの横の **[もっと見る]** リンクを選択します。
+   - 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** ボックスに名前を入力します。
+   - Cognitive Services APIs の一覧については、Cognitive Services の見出しの横の **[もっと見る]** リンクを選択します。
 
 ::: zone target="chromeless"
 

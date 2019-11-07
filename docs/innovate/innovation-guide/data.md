@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fe7614d29ba6a6baba99cd447d65bc30e3396bec
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6c1e253d2ff49c331f4f1c153124f2ca06c81c36
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058525"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565547"
 ---
 ::: zone target="docs"
 
@@ -106,10 +106,6 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 <!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
-
-[Azure Open Datasets](https://docs.microsoft.com/azure/open-datasets/overview-what-are-open-datasets) を使用して、[休日](https://azure.microsoft.com/services/open-datasets/catalog/public-holidays)、[天候](https://azure.microsoft.com/services/open-datasets/catalog/noaa-global-forecast-system)、[空間画像](https://azure.microsoft.com/services/open-datasets/catalog/hls)のデータをモデルに組み込んで分析を強化します。
-
-次の手順では、[ビジネス プロセスの民主化](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/democratize-business-processes)と[一般開発者の支援](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/empower-citizen-developers)を行います。
 
 # <a name="insightstabinsights"></a>[分析情報](#tab/Insights)
 

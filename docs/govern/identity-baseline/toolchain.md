@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42c0d24d36785615013076b54c0ec51cc2ec4cb4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5c06523d2b22293463d55f05c397dd55247f4369
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047922"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566164"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -77,6 +77,6 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 
 ## <a name="next-steps"></a>次の手順
 
-[ハイブリッド ID デジタル変換フレームワークに関するホワイトペーパー](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html?LCID=EN-US)では、これらの各コンポーネントを選択および統合するための組み合わせとソリューションについて説明しています。
+[ハイブリッド ID デジタル変換フレームワークに関するホワイトペーパー](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html)では、これらの各コンポーネントを選択および統合するための組み合わせとソリューションについて説明しています。
 
 [Azure AD Connect ツール](https://aka.ms/aadconnectwiz)は、オンプレミスのディレクトリを Azure AD と統合するために役立ちます。
