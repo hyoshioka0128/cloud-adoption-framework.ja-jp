@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 1e54fdc30e0db1ed1cecf01156bb9c25368a8457
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979888"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565029"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド管理
 
@@ -111,7 +111,7 @@ ms.locfileid: "72979888"
 
 ![クラウド導入フレームワークの管理手法](../_images/manage/caf-manage.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>バランスの取れたクラウド ポートフォリオを作成する
+## <a name="create-a-balanced-cloud-portfolio"></a>バランスの取れたクラウド ポートフォリオを作成する
 
 [ビジネス アラインメント](./considerations/business-alignment.md)に関する記事で説明したように、すべてのワークロードがミッション クリティカルであるとは限りません。 どのポートフォリオ内でも、さまざまな運用管理のニーズがあります。 ビジネス アライメントの取り組みは、ビジネスへの影響を把握し、ビジネスにおける管理コストを交渉して、最も適切な運用管理プロセスとツールを確保するために役立ちます。
 

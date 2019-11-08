@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a0b0ed642e11fc3ffc81db7fd1095853a5458b1d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221750"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565942"
 ---
 # <a name="security-baseline-discipline-overview"></a>セキュリティ ベースライン規範の概要
 
@@ -35,7 +35,7 @@ ms.locfileid: "71221750"
 > [!CAUTION]
 > このサンプル ポリシーは、よくあるお客様の体験をもとにしています。 特定のクラウド ガバナンスの要件にこれらのポリシーが合うように調整するには、次の手順を行い、お客様独自のビジネス ニーズに合うポリシー ステートメントを作成してください。
 
-## <a name="developing-security-baseline-governance-policy-statements"></a>セキュリティ ベースラインのガバナンス ポリシー ステートメントの開発
+## <a name="develop-governance-policy-statements"></a>ガバナンス ポリシー ステートメントの策定
 
 次の 6 つの手順は、セキュリティ ベースラインのガバナンスを開発する場合の、例と可能性のあるオプションです。 各手順は、セキュリティに関連するリスクを管理するのに必要なポリシーやプロセスを確立するためのクラウド ガバナンス チーム内での話し合いや、組織の影響を受けるビジネス、IT、およびセキュリティ チームとの討議の中で、出発点として使用します。
 

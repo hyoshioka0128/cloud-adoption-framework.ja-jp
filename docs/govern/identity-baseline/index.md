@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c134cd2a3cf17cd4e650f637fec2c417f3c29ff1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222245"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566191"
 ---
 # <a name="identity-baseline-discipline-overview"></a>ID ベースライン規範の概要
 
@@ -33,9 +33,9 @@ ID ベースラインは、[クラウド導入フレームワーク ガバナン
 実践的なポリシー ステートメントと、その結果のアーキテクチャの要件は、ID ベースラインの規範の基盤となります。 ポリシー ステートメントのサンプルを参照するには、[ID ベースライン ポリシー ステートメント](./policy-statements.md)に関する記事を参照してください。 これらのサンプルは、お客様の組織のガバナンス ポリシーの第一歩となります。
 
 > [!CAUTION]
-> このサンプル ポリシーは、よくあるお客様の体験をもとにしています。 特定のクラウド ガバナンスの要件にこれらのポリシーが合うように調整するには、次の手順を実行し、お客様独自のビジネス ニーズに合うポリシー ステートメントを作成してください。
+> このサンプル ポリシーは、よくあるお客様の体験をもとにしています。 特定のクラウド ガバナンスの要件にこれらのポリシーが合うように調整するには、次の手順を行い、お客様独自のビジネス ニーズに合うポリシー ステートメントを作成してください。
 
-## <a name="developing-identity-baseline-governance-policy-statements"></a>ID ベースラインのガバナンス ポリシー ステートメントの開発
+## <a name="develop-governance-policy-statements"></a>ガバナンス ポリシー ステートメントの策定
 
 次の 6 つの手順は、ID ベースラインのガバナンスを開発する場合の、例と可能性のあるオプションです。 各手順は、ID に関連するリスクを管理するために必要なポリシーとプロセスを確立するためのクラウド ガバナンス チーム内での話し合いや、組織の影響を受けるビジネス チームや IT チームとの討議の中で、出発点として使用します。
 
