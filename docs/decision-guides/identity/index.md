@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023897"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753190"
 ---
 # <a name="identity-decision-guide"></a>ID 決定ガイド
 
@@ -28,7 +28,7 @@ ms.locfileid: "71023897"
 
 Azure では、Azure Active Directory (Azure AD) はクラウド リソースを対象にした基本レベルのアクセス制御と ID 管理を提供します。 ただし、組織のオンプレミスの Active Directory インフラストラクチャに複雑なフォレスト構造やカスタマイズされた組織単位 (OU) があると、クラウドベースのワークロードでは、オンプレミス環境とクラウド環境の間で一貫性のある ID、グループ、およびロールを保持するために、Azure AD とのディレクトリ同期が必要となる場合があります。 さらに、レガシ認証メカニズムに依存しているアプリケーションをサポートするために、クラウドへの Active Directory Domain Services (AD DS) のデプロイが必要になる場合もあります。
 
-クラウドベースの ID 管理は反復的なプロセスです。 最初のデプロイは、クラウドネイティブ ソリューションと、ユーザーと対応するロールの少数のセットを使用して開始します。 移行が進むにつれて、ディレクトリ同期を使用した ID ソリューションの統合や、クラウドへのデプロイの一部としてのドメイン サービスの追加が必要になる場合があります。 移行プロセスを繰り返すたびに、ID 戦略を見直してください。
+クラウドベースの ID 管理は反復的なプロセスです。 最初のデプロイは、クラウドネイティブ ソリューションを使用して、ユーザーと対応するロールの少数のセットで開始できます。 移行が進むにつれて、ディレクトリ同期を使用した ID ソリューションの統合や、クラウドへのデプロイの一部としてのドメイン サービスの追加が必要になる場合があります。 移行プロセスを繰り返すたびに、ID 戦略を見直してください。
 
 ## <a name="determine-identity-integration-requirements"></a>ID 統合の要件の決定
 

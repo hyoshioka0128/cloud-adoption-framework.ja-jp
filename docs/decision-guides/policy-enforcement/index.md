@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564832"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753158"
 ---
 # <a name="policy-enforcement-decision-guide"></a>ポリシー適用の意思決定ガイド
 
@@ -51,13 +51,13 @@ Azure プラットフォームによって提供されるポリシー適用メ�
 
 Azure では、管理グループ、サブスクリプション、またはリソース グループ レベルで構成設定とリソース作成ルールを適用し、ポリシーとの適合を確保しやすくすることもできます。
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) は、ポリシーの作成、割り当て、および管理を行うための Azure のサービスです。 これらのポリシーは、リソースにさまざまなルールと効果を適用して、それらのリソースが会社の標準とサービス レベル アグリーメントに準拠した状態に保たれるようにします。 Azure Policy では、割り当てられているポリシーへの非準拠がないか、リソースを評価します。 たとえば、環境内の仮想マシンの SKU サイズを制限したい場合があります。 対応するポリシーが実施されると、新しいリソースと既存のリソースの準拠状況が評価されます。 適切なポリシーにより、既存のリソースを準拠の状態にすることができます。
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) は、ポリシーの作成、割り当て、および管理を行うための Azure のサービスです。 これらのポリシーは、リソースにさまざまなルールと効果を適用して、それらのリソースが会社の標準とサービス レベル アグリーメントに準拠した状態に保たれるようにします。 Azure Policy では、割り当てられているポリシーへの非準拠がないか、リソースを評価します。 たとえば、環境内の仮想マシンの SKU サイズを制限したい場合があります。 対応するポリシーを実装した後、新しいリソースと既存のリソースの準拠状況が評価されます。 適切なポリシーにより、既存のリソースを準拠の状態にすることができます。
 
 ## <a name="cross-organization-policy"></a>組織間のポリシー
 
 クラウドの資産が、適用が必要な多くのサブスクリプションにまたがるまで拡大したら、クラウド資産全体の適用戦略に焦点を合わせて、ポリシーの一貫性を確保する必要があります。
 
-ポリシーは組織構造に関連しているため、[サブスクリプション設計](../subscriptions/index.md)ではポリシーを考慮に入れる必要があります。 サブスクリプション設計内で複雑な組織のサポートを助けるのに加え、[Azure 管理グループ](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions)を使用して、Azure ポリシー ルールを複数のサブスクリプションにわたって割り当てることができます。
+[サブスクリプション設計](../subscriptions/index.md)では、組織構造に関連してポリシーを考慮に入れる必要があります。 サブスクリプション設計内で複雑な組織のサポートを助けるのに加え、[Azure 管理グループ](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions)を使用して、Azure ポリシー ルールを複数のサブスクリプションにわたって割り当てることができます。
 
 ## <a name="automated-enforcement"></a>適用の自動化
 

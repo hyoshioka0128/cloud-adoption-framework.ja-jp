@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683771"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753423"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>セキュリティで保護された監視および管理ツール
 
-移行が完了したら、移行した資産を、制御された IT 操作によって管理する必要があります。 この記事は、運用上のベスト プラクティスから逸脱することを提案するものではありません。 以下は、IT 操作がオンラインのときに IT 操作または独自の方法で、移行した資産をセキュリティ保護および管理するための MVP (Minimum Viable Product) と見なしてください。
+移行が完了したら、移行した資産を、制御された IT 操作によって管理する必要があります。 この記事は、運用上のベスト プラクティスからの逸脱を表したものではありません。 以下は、IT 操作がオンラインのときに IT 操作または独自の方法で、移行した資産をセキュリティ保護および管理するための MVP (Minimum Viable Product) と見なしてください。
 
 ## <a name="monitoring"></a>監視
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6c3588c7b7b8e3ae53fc2d2a311b93b548b856c5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a678620e2d194fa2430579b0289ac39c0720204
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566286"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753223"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>複雑な企業向けのガバナンス ガイド
 
@@ -39,15 +39,15 @@ ms.locfileid: "73566286"
 
 すべてのアプリケーションを管理グループ、サブスクリプション、リソース グループ階層の適切な領域にデプロイする必要があります。 デプロイ計画の間に、クラウド ガバナンス チームは、クラウド導入チームを支援するために必要なノードを階層に作成します。
 
-1. 地理的な場所そして環境の種類 (運用環境や運用前環境など) が反映された詳細な階層を持つ各部署の管理グループを定義します。
-2. 個別の部署または地域の一意の組み合わせごとに、運用と非運用のサブスクリプションを作成します。 複数のサブスクリプションを作成する場合は注意が必要です。 詳細については、「[サブスクリプション決定ガイド](../../../decision-guides/subscriptions/index.md)」を参照してください。
+1. 最初に地理的な場所、次に環境の種類 (運用環境や非運用環境など) が反映された詳細な階層を持つ各部署の管理グループを定義します。
+2. 個別の部署または地域の一意の組み合わせごとに、運用のサブスクリプションと非運用のサブスクリプションを作成します。 複数のサブスクリプションを作成するには、慎重な検討が必要です。 詳細については、「[サブスクリプション決定ガイド](../../../decision-guides/subscriptions/index.md)」を参照してください。
 3. このグループ階層の各レベルで、[一貫性のある用語体系](../../../ready/azure-best-practices/naming-and-tagging.md)を適用します。
-4. リソース グループは、コンテンツのライフサイクルを考慮した方法でデプロイする必要があります。つまり、一緒に開発されたものはすべて、一緒に管理し、一緒に廃止します。 リソース グループのベスト プラクティスの詳細については、[こちらを参照](../../../decision-guides/resource-consistency/index.md)してください。
+4. リソース グループは、そのコンテンツのライフサイクルを考慮した形でデプロイする必要があります。 同時に開発され、まとめて管理され、同時に廃止されるリソースは、同じリソース グループに属します。 リソース グループの使用に関するベスト プラクティスの詳細については、[こちらを参照](../../../decision-guides/resource-consistency/index.md)してください。
 5. [リージョンの選択](../../../decision-guides/regions/index.md)は非常に重要であり、ネットワーク、監視、監査をフェールオーバー/フェールバック用に配置できるように考慮し、[必要な SKU を優先リージョンで使用できる](https://azure.microsoft.com/global-infrastructure/services)ことを確認する必要があります。
 
 ![大企業のリソース編成の図](../../../_images/govern/large-enterprise-resource-organization.png)
 
-これらのパターンには、階層を必要以上に複雑にしないで成長に対応する余地があります。
+これらのパターンには、階層を必要以上に複雑にしないで成長させる余地があります。
 
 [!INCLUDE [governance-of-resources](../../../../includes/caf-governance-of-resources.md)]
 
