@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: 72a3a5310ae0eaea52cffdec41ea2b1fb6c9a585
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 743bbb31b6bee799e18161a55b0f70c1783eaf6f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239566"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565924"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft Cloud 導入フレームワーク
 
@@ -157,7 +157,7 @@ Cloud 導入フレームワークは、Azure でクラウドを導入するた�
     </li>
 </ul>
 
-## <a name="understanding-the-lifecycle"></a>ライフサイクルの詳細
+## <a name="understand-the-lifecycle"></a>ライフサイクルについて
 
 上でキャプチャされた各フェーズは、広範なクラウド導入ライフサイクルの一部です。 次の図は、各フェーズをつないでライフサイクル全体を示しています。 クラウド導入フレームワークは、完全なライフサイクル フレームワークであり、各フェーズを通じてお客様をサポートします。
 

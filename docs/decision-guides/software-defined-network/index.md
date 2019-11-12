@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023754"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564787"
 ---
 # <a name="software-defined-networking-decision-guide"></a>ソフトウェア定義ネットワーク意思決定ガイド
 
@@ -32,7 +32,7 @@ SDN では、さまざまな度合いの価格と複雑さを持ついくつか�
 
 VM の数が 1,000 未満の小さな単一リージョン デプロイでは、この変曲点によって大きく影響を受ける可能性はあまりありません。 逆に、1,000 台を超える VM、複数の事業単位、または複数の地政学的市場が関与する大規模な導入作業では、SDN に関する意思決定に加え、この重要な変曲点によって大きく影響を受ける可能性があります。
 
-## <a name="choosing-the-right-virtual-networking-architectures"></a>適切な仮想ネットワーク アーキテクチャの選択
+## <a name="choose-the-right-virtual-networking-architectures"></a>適切な仮想ネットワーク アーキテクチャの選択
 
 このセクションでは、適切な仮想ネットワーク アーキテクチャの選択に役立つように意思決定ガイドをさらに詳細に説明します。
 

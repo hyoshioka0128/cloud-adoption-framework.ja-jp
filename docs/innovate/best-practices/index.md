@@ -8,29 +8,31 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8cad82e201fe99294ac2e5a5940654da712017b9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 43e0b74bb7d35585a6ba8ff4ea9b43ef34dbcdbc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683372"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565810"
 ---
-# <a name="developing-digital-inventions-in-azure"></a>Azure でデジタル発明を開発する
+# <a name="develop-digital-inventions-in-azure"></a>Azure でデジタル発明を開発する
 
-Azure は、デジタル発明の各領域で短期間の開発を支援します。 クラウド導入フレームワークのこのセクションは[イノベーション方法論](../considerations/index.md)を基礎とし、Azure のさまざまなサービスを一緒に活用し、デジタル発明のツールチェーンを作る方法について説明します。
+Azure は、デジタル発明の各分野の開発を加速化するのに役立ちます。 クラウド導入フレームワークのこのセクションは、[イノベーションの方法論](../considerations/index.md)に基づいています。 このセクションでは、Azure のサービスを組み合わせてデジタル発明向けのツールチェーンを作成する方法を紹介します。
 
 ## <a name="alignment-to-the-methodology"></a>方法論に足並みを揃える
 
-Azure 内では、デジタル発明とイノベーションのためのクラウド基盤ツールに数え切れない組み合わせがあります。 後続の一連の記事では、イノベーション方法論と密接に足並みを揃えるオプションをいくつか取り上げます。 次の画像からは、さまざまなツールが各種イノベーションに対応するしくみを確認できます。
+Azure 内には、デジタル発明とイノベーションのためのクラウドベース ツールの組み合わせが多数あります。 後続の記事シリーズでは、イノベーション方法論と密接に足並みを揃えるツールをいくつか取り上げます。 次の画像では、さまざまなツールが各種イノベーションにどのように対応しているかを示しています。
 
 ![クラウド導入フレームワークのイノベーション ツールチェーン](../../_images/innovate/innovate-toolchain.png)
 
 ## <a name="toolchain"></a>ツールチェーン
 
-より実用的なガイドが必要であれば、[顧客の共感](../considerations/build.md)に基づいて構築できるよう、ご自分の仮説をテストする種類のデジタル発明に関連する概要ページから始めてください。 この記事シリーズのデジタル発明の種類は次のようになります。
+まず、自分の仮説をテストするために必要なデジタル発明の種類に関連する概要ページから始めます。 最初に、そのページで行動基盤となるガイダンスを参照すると、[顧客の共感を得る](../considerations/build.md)ことが可能になります。
+
+この記事シリーズにおけるデジタル発明の種類を次に示します。
 
 - [データの民主化](./data.md):データを共有し、情報関連の顧客ニーズに応えるためのツール
 - [アプリを使用した連携](./apps.md):生データを越えたところで顧客を引きつけるアプリを作るためのツール
 - [導入の強化](./ci-cd.md):Build-Measure-Learn (構築-測定-学習) サイクルをデジタル サポートすることで Customer Adoption (顧客による製品/サービスの採用) を加速するためのツール
-- [デバイスの操作](./devices.md):顧客向けにさまざまなレベルの環境を作るためのツール
-- [予測と影響](./predict.md):予測分析のためのツールと予測分析からの出力をアプリケーションに統合するためのツール
+- [デバイスの操作](./devices.md):顧客向けにさまざまなレベルのアンビエント エクスペリエンスを作るためのツール
+- [予測と影響](./predict.md):予測分析とアプリケーションへの出力の統合のためのツール

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1bf2331c8ee1275a71be2275cefef49cf0a50dfc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547571"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566253"
 ---
 # <a name="cloud-governance-guides"></a>クラウド ガバナンス ガイド
 
@@ -62,7 +62,7 @@ ms.locfileid: "72547571"
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>クラウド ガバナンスに対する漸進的アプローチ
 
-## <a name="choosing-a-governance-guide"></a>ガバナンス ガイドの選択
+## <a name="choose-a-governance-guide"></a>ガバナンス ガイドの選択
 
 ガイドでは、ガバナンス MVP の実装方法が示されます。 さらに、各ガイドでは、クラウド ガバナンス チームがパートナーとしてクラウド導入チームより先行して、導入作業を高速化する方法が示されています。 クラウド導入フレームワークのガバナンス モデルでは、基礎からその後の改善や進化まで、ガバナンスの適用を案内します。
 

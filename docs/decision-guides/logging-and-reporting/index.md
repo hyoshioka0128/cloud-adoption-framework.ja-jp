@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238767"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564866"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -22,13 +22,13 @@ ms.locfileid: "73238767"
 
 ![ログ、レポート、および監視のオプションを、簡単なものから非常に複雑なものまで、以下のリンクに合わせてプロット](../../_images/decision-guides/decision-guide-logging-and-reporting.png)
 
-ジャンプ先:[監視インフラストラクチャの計画](#planning-your-monitoring-infrastructure) | [クラウド ネイティブ](#cloud-native) | [オンプレミスの拡張機能](#on-premises-extension) | [ゲートウェイ集約](#gateway-aggregation) | [ハイブリッド監視 (オンプレミス)](#hybrid-monitoring-on-premises) | [ハイブリッド監視 (クラウド ベース)](#hybrid-monitoring-cloud-based) | [マルチクラウド](#multicloud) | [詳細情報](#learn-more)
+ジャンプ先:[監視インフラストラクチャの計画](#plan-your-monitoring-infrastructure) | [クラウド ネイティブ](#cloud-native) | [オンプレミスの拡張機能](#on-premises-extension) | [ゲートウェイ集約](#gateway-aggregation) | [ハイブリッド監視 (オンプレミス)](#hybrid-monitoring-on-premises) | [ハイブリッド監視 (クラウド ベース)](#hybrid-monitoring-cloud-based) | [マルチクラウド](#multicloud) | [詳細情報](#learn-more)
 
 クラウドのログ記録およびレポート戦略を決定するときの転換点は、主に組織が運用プロセスに対して行ってきた既存の投資に基づきます。また、マルチクラウド戦略をサポートするために必要な任意の要件もある程度関係します。
 
 クラウドでのアクティビティをログに記録してレポートを作成するには、複数の方法があります。 クラウド ネイティブと一元化されたログは、サブスクリプション設計とサブスクリプションの数に基づいて決まる、2 つの一般的なマネージド サービスのオプションです。
 
-## <a name="planning-your-monitoring-infrastructure"></a>監視インフラストラクチャの計画
+## <a name="plan-your-monitoring-infrastructure"></a>監視インフラストラクチャの計画
 
 デプロイを計画するときには、ログ データの格納場所と、クラウド ベースのレポート サービスと監視サービスを既存のプロセスとツールに統合する方法を検討する必要があります。
 
@@ -45,9 +45,9 @@ ms.locfileid: "73238767"
 
 このシナリオでは、すべてのログ データが記録され、クラウドに格納されます。また、情報を処理して IT スタッフに表示するログ ツールとレポート ツールが、Azure プラットフォームと Azure Monitor から提供されます。
 
-CustomAzure Monitor ベースのログ記録ソリューションは、サブスクリプションごとに、またはより小さい実験的なデプロイにはワークロードごとにアドホックで実装でき、クラウド全体でログ データを監視するための一元化された方法で構成することができます。
+カスタムの Azure Monitor ベースのログ記録ソリューションは、より小規模なデプロイまたは実験的なデプロイでサブスクリプションまたはワークロードごとにアドホックに実装でき、クラウド資産全体でログ データを監視するために一元的に構成されています。
 
-**クラウドネイティブの前提条件。** クラウドネイティブのログとレポートのシステムの使用には、次の前提条件があります。
+**クラウドネイティブの前提条件:** クラウドネイティブのログとレポートのシステムの使用には、次の前提条件があります。
 
 - クラウド ワークロードから既存のオンプレミス システムにログを統合する必要がない。
 - オンプレミス システムの監視に、クラウド ベースのレポート システムを使用する予定がない。
@@ -87,7 +87,7 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 
 置換が難しいまたは置換にコストがかかるオンプレミスの監視システムへの既存の投資がある場合、クラウド ワークロードからのテレメトリを以前から存在している監視ソリューションに統合する必要がある場合があります。 ハイブリッドのオンプレミスの監視システムでは、オンプレミスのテレメトリ データは引き続き既存のオンプレミスの監視システムを使用します。 クラウドベースのテレメトリ データは、オンプレミス監視システムに直接送信されるか、データが Azure Monitor に送信されてから、一定の間隔でコンパイルされ、オンプレミス システムに取り込まれます。
 
-**オンプレミスのハイブリッド監視の前提条件。** ハイブリッド監視にオンプレミスのログとレポートのシステムを使用するには、次の前提条件があります。
+**オンプレミスのハイブリッド監視の前提条件:** ハイブリッド監視にオンプレミスのログとレポートのシステムを使用するには、次の前提条件があります。
 
 - クラウドのワークロードを監視するため、既存のオンプレミスのレポート システムを使用する必要がある。
 - ログ データの所有権をオンプレミスで維持する必要がある。
