@@ -20,7 +20,7 @@ Azure が提供するいくつかの組み込みのポリシーとロール定�
 ガバナンス MVP のサポートに必要なポリシーは、現在のすべてのサブスクリプションに適用されることになっているため、次のビジネス要件は、組み込みの定義とルート管理グループで作成されたカスタム定義を組み合わせて使用し、実装されます。
 
 1. 使用可能なロール割り当てのリストを、クラウド ガバナンス チームが許可した一連の組み込み Azure ロールに制限します。 これには、[カスタム ポリシーの定義](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions)が必要です。
-2. すべてのリソース上で次のタグを使用する必要があります。*Department/Billing Unit*、*Geography*、*Data Classification*、*Criticality*、*SLA*、*Environment*、*Application Archetype*、*Application*、および *Application Owner*。 これは、`Require specified tag` 組み込み定義を使用して処理することができます。
+2. すべてのリソースで次のタグを必須にします。*Department/Billing Unit*、*Geography*、*Data Classification*、*Criticality*、*SLA*、*Environment*、*Application Archetype*、*Application*、および *Application Owner*。 これは、`Require specified tag` 組み込み定義を使用して処理することができます。
 3. リソースの `Application` タグを、関連するリソース グループの名前と一致させる必要があります。 これは、"タグとその値が必要" の組み込みの定義を使用して処理することができます。
 
 カスタム ポリシーの定義については、[Azure Policy のドキュメント](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition)をご覧ください。 カスタム ポリシーのガイダンスおよび例については、[Azure Policy のサンプル サイトに関するページ](https://docs.microsoft.com/azure/governance/policy/samples)、および関連する[GitHub リポジトリに関するページ](https://github.com/Azure/azure-policy)をご覧ください。
@@ -53,7 +53,7 @@ Azure Blueprints を使用すると、複数のサブスクリプション全体
     1. [VPN 参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)で、Azure 内に VPN Gateway を作成するためのパターンとデプロイ モデルを確立します。
     2. オンプレミスのセキュリティとトラフィック管理メカニズムで、接続されているクラウド ネットワークが信頼できないものとして扱われることを検証します。 クラウドでホストされるリソースとサービスでは、許可されたオンプレミス サービスにのみアクセスできる必要があります。
     3. オンプレミス データセンター内のローカル エッジ デバイスが [Azure VPN Gateway の要件](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)と互換性があり、パブリック インターネットにアクセスするように構成されていることを確認します。
-    4. 最も単純なワークロードの場合を除き、VPN トンネルは運用に対応する回線と見なすべきではないことに注意してください。 オンプレミス接続を必要とする少数の単純なワークロードを超える場合は、Azure ExpressRoute を利用してください。
+    4. 最も単純なワークロードの場合を除き、VPN トンネルは運用に対応する回線と見なすべきではないことに注意してください。 オンプレミス接続を必要とする少数の単純なワークロードを超える場合は、Azure ExpressRoute を使用してください。
 1. ルート管理グループ内で、`secure-hybrid-vnet` という名前のブループリント定義をもう 1 つ作成します。
     1. VPN Gateway の Resource Manager テンプレートをブループリント定義にアーティファクトとして追加します。
     2. 仮想ネットワークの Resource Manager テンプレートをブループリント定義にアーティファクトとして追加します。

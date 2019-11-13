@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: b231df4665e0da46229d6bc87f8ac32bc1985067
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2129e0f27dd44a32ea0966326cd0c172603783cf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564846"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753349"
 ---
 # <a name="migration-tools-decision-guide"></a>移行ツール決定ガイド
 
@@ -32,7 +32,7 @@ ms.locfileid: "73564846"
 - **現在、アプリケーションは専用の仮想マシン上で実行されていますか。それとも他のアプリケーションと共にホスティングが共有されていますか。** 専用の仮想マシン上で実行されているアプリケーションは、共有サーバー上で実行されているアプリケーションよりも PaaS ホスティング オプションに簡単に移行できます。
 - **データの移行はネットワークの帯域幅を超えますか。** オンプレミスのデータ ソースと Azure 間のネットワーク容量は、データ移行のボトルネックになる可能性があります。 転送する必要のあるデータに、効率的またはタイムリーな移行を妨げる帯域幅の制限がある場合は、必要に応じて代替またはオフラインの転送メカニズムを検討します。 クラウド導入フレームワークの[移行レプリケーションに関する記事](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)では、レプリケーションの制限が移行作業に与える影響が説明されています。 移行評価の一環として、ローカルおよび WAN の帯域幅が移行要件に対応できるかどうかを IT チームに相談してください。 また、[移行段階でストレージ要件がネットワーク容量を超えている場合の拡大された範囲の移行シナリオ](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites)に関する記事を参照してください。
 - **アプリケーションは既存の DevOps パイプラインを利用していますか。** 多くの場合、Azure Pipelines は、クラウド ベースのホスティング環境にアプリケーションをデプロイするためのリファクタリングが簡単です。
-- **データに複雑なデータ ストレージ要件はありますか。** 通常、運用アプリケーションには可用性の高いデータ ストレージが必要であり、常時オンの機能性と、同様のサービス稼働時間と継続性機能が提供されます。 Azure SQL Database、Azure Database for MySQL、Azure Cosmos DB などの Azure PaaS ベースのマネージド データベース オプションは、いずれも 99.99% の稼働時間のサービス レベル契約を提供します。 逆に、Azure VM 上の IaaS ベースの SQL Server は、99.95% というシングルインスタンスのサービス レベル契約を提供します。 PaaS ストレージ オプションを使用するためにデータを最新化できない場合、より長い IaaS 稼働時間を保証するには、SQL Server Always-on クラスターを実行し、インスタンス間でデータを継続的に同期するなど、より複雑なデータ ストレージ シナリオが必要になります。 これには多大なホスティング コストとメンテナンス コストがかかるため、データ移行のオプションを検討する際には、稼働時間の要件、最新化にかかる労力、全体的な予算への影響のバランスを取ることが重要です。
+- **データに複雑なデータ ストレージ要件はありますか。** 通常、運用アプリケーションには可用性の高いデータ ストレージが必要であり、常時オンの機能性と、同様のサービス稼働時間と継続性機能が提供されます。 Azure SQL Database、Azure Database for MySQL、Azure Cosmos DB などの Azure PaaS ベースのマネージド データベース オプションは、いずれも 99.99% の稼働時間のサービス レベル契約を提供します。 逆に、Azure VM 上の IaaS ベースの SQL Server は、99.95% というシングルインスタンスのサービス レベル アグリーメントを提供します。 PaaS ストレージ オプションを使用するためにデータを最新化できない場合、より長い IaaS 稼働時間を保証するには、SQL Server Always-on クラスターを実行し、インスタンス間でデータを継続的に同期するなど、より複雑なデータ ストレージ シナリオが必要になります。 これには多大なホスティング コストとメンテナンス コストがかかるため、データ移行のオプションを検討する際には、稼働時間の要件、最新化にかかる労力、全体的な予算への影響のバランスを取ることが重要です。
 
 ## <a name="innovation-and-migration"></a>刷新と移行
 

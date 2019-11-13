@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564928"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752779"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>クラウド監視ガイド:はじめに
 
-クラウドは、企業によるテクノロジ リソースの調達と利用の方法が根本的に変化していることの表れです。 以前は、インフラストラクチャからソフトウェアまで、あらゆるレベルのテクノロジの所有権と責任が企業にあることが前提になっていました。 今では、クラウドによって、企業は必要に応じてリソースをプロビジョニングして使用できる可能性があります。
+クラウドは、企業によるテクノロジ リソースの調達と利用の方法を根本的に変えます。 以前は、インフラストラクチャからソフトウェアまで、あらゆるレベルのテクノロジの所有権と責任が企業にあることが前提になっていました。 今では、クラウドによって、企業は必要に応じてリソースをプロビジョニングして使用できる可能性があります。
 
 設計の選択という点から言えば、クラウドはほぼ無制限の柔軟性をもたらしますが、企業が求めているのは、一貫性のある実証済みのクラウド テクノロジ導入手法です。 クラウド導入の目標もタイムラインも企業ごとに異なるため、1 つのアプローチですべての導入に対応することはほぼ不可能です。
 
@@ -64,7 +64,7 @@ Azure、お客様の企業ネットワーク、その他のクラウド プロ�
 * Azure Logic Apps
 * Azure Event Hubs
 
-このガイドの最初のバージョンでは、現在の監視プラットフォームである Azure Monitor と System Center Operations Manager について取り上げます。 また、各クラウド デプロイ モデルを監視するための推奨される戦略についても概説します。 また、データ収集とアラートをはじめとする、監視に関する推奨事項の最初のセットも含まれています。
+このガイドの最初のバージョンでは、現在の監視プラットフォームである Azure Monitor と System Center Operations Manager について説明します。 また、各クラウド デプロイ モデルを監視するための推奨される戦略についても概説します。 また、データ収集とアラートをはじめとする、監視に関する推奨事項の最初のセットも含まれています。
 
 ## <a name="next-steps"></a>次の手順
 
