@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223613"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753261"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management の目的とビジネス上のリスク
 
@@ -45,7 +45,7 @@ Cost Management の規範は、クラウド ベースのワークロードをホ
 
 [クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 
-現実的なビジネス リスクについての理解が確実に得られたら、リスクに対する企業の許容範囲と、その許容範囲を監視するための指標と主なメトリックについて文書化することが、次の手順となります。
+現実的なビジネス リスクについて把握できたら、リスクに対する企業の許容範囲と、その許容範囲を監視するための指標と主なメトリックについて文書化することが、次の手順となります。
 
 > [!div class="nextstepaction"]
 > [指標、メトリック、リスクの許容範囲について理解する](./metrics-tolerance.md)

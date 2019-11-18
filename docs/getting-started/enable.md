@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656591"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753296"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>クラウド導入の取り組みの途中で成功を実現する
 
@@ -32,7 +32,7 @@ ms.locfileid: "73656591"
 
 ## <a name="additional-tools"></a>その他のツール
 
-クラウド導入フレームワークに加えて、Microsoft では、成功を実現できる追加のトピックを扱っています。 この記事では、クラウド導入フレームワークの範囲を超えて、成功を大幅に向上させられるいくつかの一般的なツールについて説明します。 クラウド ガバナンス、回復性があるアーキテクチャ、技術的なスキル、および DevOps アプローチの確立はそれぞれ、あらゆるクラウド導入作業の成功にとって重要です。 クラウド導入作業中にいつでも確認できるリソースとして、このページをブックマークすることをお勧めします。
+クラウド導入フレームワークに加えて、Microsoft では、成功を実現できる追加のトピックを扱っています。 この記事では、クラウド導入フレームワークの範囲を超えて、成功を大幅に向上させられるいくつかの一般的なツールについて説明します。 クラウド ガバナンス、回復性があるアーキテクチャ、技術的なスキル、および DevOps アプローチの確立はそれぞれ、あらゆるクラウド導入作業の成功にとって重要です。 クラウド導入作業中にいつでも確認できるリソースとして、このページをブックマークしてください。
 
 <!-- markdownlint-disable MD033 -->
 

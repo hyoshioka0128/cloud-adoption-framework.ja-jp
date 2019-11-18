@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548020"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752174"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>クラウド セキュリティ ベースラインを理解する
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058557"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751559"
 ---
 ::: zone target="docs"
 
@@ -43,7 +43,7 @@ ms.locfileid: "73058557"
 
 Azure App Service からはアプリケーションのホスティング環境が提供され、それによってインフラストラクチャ管理と OS パッチ適用の負担が取り除かれます。 ユーザーの需要に合わせてスケーリングを自動化し、定義された上限で制約してコストを抑えることができます。
 
-Azure App Service では、ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP、Python などの言語が最高レベルでサポートされています。 別のランタイム スタックをホストする必要がある場合は、Web App for Containers を使用すると、Azure App Service 環境内で Docker コンテナーを迅速かつ簡単にホストできるので、サーバーの管理が不要な環境でカスタム コード スタックをホストできます。
+Azure App Service では、ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP、Python などの言語が最高レベルでサポートされています。 別のランタイム スタックをホストする必要がある場合は、Web App for Containers を使用すると、App Service 内で Docker コンテナーを迅速かつ簡単にホストできるので、サーバーの管理が不要な環境でカスタム コード スタックをホストできます。
 
 ### <a name="action"></a>Action
 

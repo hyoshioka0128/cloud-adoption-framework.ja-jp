@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ab28d38aafdddc0206b9fc7abc98cb489bba5d1b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547243"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751290"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft Cloud 導入フレームワークにおけるクラウド移行
 
@@ -44,7 +44,7 @@ ms.locfileid: "72547243"
 
 このガイドの最初から最後まで従うことを希望する読者にとって、この内容は、堅牢なクラウド移行戦略を開発するのに役立ちます。 このガイダンスでは、そのような戦略の理論と実装を段階を追って説明します。
 
-最初の手順として、[Azure 移行ガイド](./azure-migration-guide/index.md)に取り組み、一般的なユース ケースでの移行に必要な標準セットのツールやアプローチを理解することをお勧めします。 その後は、[複雑な移行シナリオ](./expanded-scope/index.md)、[移行のベスト プラクティス](./azure-best-practices/index.md)、[移行に関する考慮事項](./migration-considerations/index.md)を通じて、ユーザーのニーズに合わせてベースラインのガイダンスを拡張することができます。
+最初の手順として、[Azure 移行ガイド](./azure-migration-guide/index.md)に取り組んで、一般的なユース ケースでの移行に必要な標準セットのツールやアプローチについて確認してください。 その後は、[複雑な移行シナリオ](./expanded-scope/index.md)、[移行のベスト プラクティス](./azure-best-practices/index.md)、[移行に関する考慮事項](./migration-considerations/index.md)を通じて、ユーザーのニーズに合わせてベースラインのガイダンスを拡張することができます。
 
 > [!div class="nextstepaction"]
 > [Azure 移行ガイド](./azure-migration-guide/index.md)

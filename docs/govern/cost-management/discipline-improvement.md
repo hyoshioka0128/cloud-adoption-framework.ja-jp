@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1c546512b2b9407d9edf54648e704209f8d460ea
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1b59121bc0679475079dc1a7b5d3770cc87d7523
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547801"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753090"
 ---
 # <a name="cost-management-discipline-improvement"></a>コスト管理規範の改善
 
@@ -87,7 +87,7 @@ ms.locfileid: "72547801"
 
 ## <a name="operate-and-post-implementation"></a>運用と実装後
 
-変換が完了したら、アプリケーションまたはワークロードの自然なライフサイクルに対してガバナンスと運用を続行する必要があります。 ガバナンス成熟のこのフェーズの焦点は、ソリューションが実装されて変換サイクルが安定し始めた後に一般的に行われるアクティビティです。
+変換の完了後、アプリケーションまたはワークロードの自然なライフサイクルに対してガバナンスと運用を続行する必要があります。 ガバナンス成熟のこのフェーズの焦点は、ソリューションが実装されて変換サイクルが安定し始めた後に一般的に行われるアクティビティです。
 
 **最小限の推奨されるアクティビティ:**
 

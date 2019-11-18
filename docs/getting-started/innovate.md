@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5e88a87a141adb1170f419db5d410cc31341c230
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048432"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753098"
 ---
 # <a name="innovate-through-cloud-adoption"></a>クラウドの導入によるイノベーション
 
@@ -21,7 +21,7 @@ ms.locfileid: "73048432"
 
 ## <a name="motivations-behind-innovation"></a>イノベーションの背後にある動機
 
-イノベーションは、すべてのワークロードに適した導入パスではありません。 イノベーション パスでは、通常、他のパスより、カスタム コードとデータ管理に大きな投資が必要です。 また、イノベーションには、移行や、他の最新化の形式より、時間がかかります。 このパスは、お客様の目標が次のビジネス結果である場合に推奨されます。
+イノベーションは、すべてのワークロードに適した導入パスではありません。 イノベーション パスでは、通常、他のパスより、カスタム コードとデータ管理に大きな投資が必要です。 また、イノベーションには、移行や、他の最新化の形式より、時間がかかります。 このパスに従うのは、次のビジネス成果をターゲットにしている場合です。
 
 - 新しい技術機能に対する準備。
 - 市場需要に合わせたスケーリング。

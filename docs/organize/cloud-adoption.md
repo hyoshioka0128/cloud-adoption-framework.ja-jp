@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7dbddb91d38a11c455e47fcd6f5a589929d8b003
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2aeda3e6efac30e03a917e790ef619f7a6d74cde
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032271"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753402"
 ---
 # <a name="cloud-adoption-capabilities"></a>クラウド導入機能
 
@@ -61,7 +61,7 @@ ms.locfileid: "71032271"
 
 リリース スケジュールとイテレーション期間は会社ごとに固有です。 ただし、イテレーションごとに 1 週間から 4 週間の範囲が平均期間であるようです。 イテレーションやリリースの頻度に関係なく、各リリースの終わりにチームがすべてのサポート チームとミーティングを持ち、リリースの結果を伝え、今後の取り組みを再優先順位付けすることをお勧めします。 同様に、[クラウド センター オブ エクセレンス](./cloud-center-of-excellence.md)や [クラウド ガバナンス チーム](./cloud-governance.md)とともに、各スプリントの最後にチームとして集まり、共通の取り組みとサポートの必要性に常に対応できるようにすることが重要です。
 
-クラウドの導入に関連する技術的なタスクの中には、繰り返し発生するものもあります。 従業員の満足度に関する問題を回避し、関連するスキルを維持するために、チーム メンバーは 3 か月から 6 か月ごとに交代することをお勧めします。 [クラウド センター オブ エクセレンス](./cloud-center-of-excellence.md)や[クラウド ガバナンス チーム](./cloud-governance.md)のメンバーを定期的に交代することにより、従業員を常に新鮮な気持ちに保ち、新しいイノベーションを活用することできる絶好の機会を提供できます。
+クラウドの導入に関連する技術的なタスクの中には、繰り返し発生するものもあります。 従業員の満足度に関する問題を回避し、関連するスキルを維持するためには、チーム メンバーが 3 か月から 6 か月ごとに交代する必要があります。 [クラウド センター オブ エクセレンス](./cloud-center-of-excellence.md)や[クラウド ガバナンス チーム](./cloud-governance.md)のメンバーを定期的に交代することにより、従業員を常に新鮮な気持ちに保ち、新しいイノベーションを活用することできる絶好の機会を提供できます。
 
 ## <a name="next-steps"></a>次の手順
 
