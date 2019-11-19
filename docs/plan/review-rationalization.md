@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d374fdc5df4589e58b890ae5c169d26d0b1f206
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839169"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564132"
 ---
 # <a name="review-rationalization-decisions"></a>合理化決定を見直す
 

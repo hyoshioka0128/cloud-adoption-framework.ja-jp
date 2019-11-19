@@ -8,14 +8,14 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024717"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240266"
 ---
-# <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>移行の行程の「移行」フェーズ中のスキル準備パス
+# <a name="skills-readiness-for-cloud-migration"></a>クラウド移行のためのスキルの準備
 
 クラウドへの移行中、従業員と、責任を負うシステム統合パートナーやマネージド サービス パートナーの中にも、移行作業中に有効になるように新しいスキルを開発することが必要になる可能性があります。
 

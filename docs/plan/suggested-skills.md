@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3caefb507f2348f48d39c055000c3a0250fcc28a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549071"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564216"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>スキル準備パスの開始
 
@@ -37,3 +37,16 @@ IT スタッフ メンバーは、クラウド ソリューションをサポー
   - **管理:** クラウド環境を管理するために必要なスキルを習得します。
 
 これまでの各ラーニング パスでは、知識の獲得を最大化するために複数の種類のメディアで機会が共有されます。
+
+## <a name="microsoft-learn"></a>Microsoft Learn
+
+Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
+クラウド導入フレームワークの「計画」セクションに合わせてカスタマイズされた Microsoft Learn のラーニング パスの例を次に示します。
+
+[DevOps プラクティスを進化させる](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices): DevOps は、エンド ユーザーへの継続的な価値の提供を可能にする人、プロセス、および製品を統合したものです。 Azure DevOps は、そのために必要なツールを提供する一連のサービスです。 Azure DevOps を使用すると、クラウドまたはオンプレミスのいずれかのアプリケーションをビルド、テスト、およびデプロイできます。
+
+[データ エンジニア向け Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): データの世界がどのように進化したか、クラウド テクノロジーの出現によってビジネスが新しい機会をどのように検討できるようになったかを探ります。 使用できるさまざまなデータ プラットフォーム テクノロジと、データ エンジニアがこのテクノロジを組織の利益のために活用する方法を学習します。
+
+## <a name="learn-more"></a>詳細情報
+
+追加のラーニング パスについては、[Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 [ロール] フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

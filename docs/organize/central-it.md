@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549115"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564274"
 ---
 # <a name="central-it-capabilities"></a>中央 IT の機能
 
@@ -93,7 +93,7 @@ ms.locfileid: "72549115"
 
 多くの業界では、サードパーティのコンプライアンスに対して厳密に準拠している必要があります。 コンプライアンス要件によっては、一元化された IT 管理が必要になる場合もあります。 これらのコンプライアンス対策を実現することで、デプロイ プロセスの時間が長くなる場合があります (特に、広く使用されていない新しいテクノロジの場合)。 このようなシナリオでは、導入の初期段階のうちにデプロイの遅れを見込んでおきます。 機密顧客データを扱う企業でも同様の状況が存在する可能性がありますが、サードパーティのコンプライアンス要件によって管理されない場合があります。
 
-### <a name="operating-within-the-exceptions"></a>例外内での運用
+### <a name="operate-within-the-exceptions"></a>例外内の操作
 
 一元化された IT プロセスが必要であり、それらのプロセスによって新しいテクノロジの導入に適切なチェックポイントが作成されるときでも、これらのイノベーション チェックポイントにすぐに対処できます。 ガバナンスとコンプライアンスの要件は、すべてを保護するのではなく、機密性の高いものを保護するように設計されています。 クラウドでは、適切なガードレールを維持しながら、分離されたリソースを取得してデプロイするための単純なメカニズムが提供されます。
 

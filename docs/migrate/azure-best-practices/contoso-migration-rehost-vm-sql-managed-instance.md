@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058499"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239178"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>オンプレミス アプリを Azure VM および SQL Database Managed Instance にリホストする
 
@@ -78,7 +78,7 @@ Contoso はソリューション設計プロセスの一環として、Azure SQL
 
 - Managed Instance では、最新のオンプレミス SQL Server バージョンとのほぼ 100% の互換性を提供することが目的とされています。 Microsoft は、SQL Server をオンプレミスまたは IaaS VM で実行していて、最小限の設計変更で完全に管理されたサービスにアプリを移行することを望んでいるお客様に、Managed Instance を推奨しています。
 - Contoso は、多数のアプリをオンプレミスから IaaS に移行することを計画しています。 それらの多くは、ISV から提供されたものです。 Contoso は、サポートされていない可能性がある SQL Database を使用するのではなく、Managed Instance を使用すると、これらのアプリのデータベース互換性を確保するのに役立つことを理解しています。
-- Contoso は、完全に自動化された Azure Database Migration Service を使用して、Managed Instance への "リフトアンドシフト" 移行を簡単に実行できます。 このサービスを導入すると、Contoso は将来のデータベース移行にそれを再利用できます。
+- Contoso は、完全に自動化された Azure Database Migration Service を使用して、Managed Instance へのリフトアンドシフト移行を簡単に実行できます。 このサービスを導入すると、Contoso は将来のデータベース移行にそれを再利用できます。
 - SQL Managed Instance では、SmartHotel360 アプリの重要な問題である SQL Server エージェントがサポートされています。 Contoso ではこの互換性が必要です。互換性がないと、アプリで必要なメンテナンス プランを再設計する必要があります。
 - ソフトウェア アシュアランスに基づき、Contoso は、SQL Database Managed Instance で SQL Server 用の Azure ハイブリッド特典を利用して、既存のライセンスを割引料金のライセンスに交換することができます。 これによって、Contoso は Managed Instance を最大 30% 節約することができます。
 - SQL Managed Instance は仮想ネットワークに完全に含まれるため、Contoso のデータに対して高い分離性とセキュリティが提供されます。 Contoso は、パブリック インターネットから分離された環境を維持しながら、パブリック クラウドのメリットを得ることができます。
@@ -103,7 +103,7 @@ Contoso は、次の手順を実行して、SmartHotel360 アプリの Web 層�
 
 1. Contoso は既に Azure インフラストラクチャを整備済みであるため、このシナリオで使用する少数の特定 Azure コンポーネントを追加するだけでかまいません。
 2. データ層を移行するときは、Azure Database Migration Service を使用します。 このサービスは、Contoso データセンターと Azure との間のサイト間 VPN 接続を経由して、オンプレミス SQL Server VM に接続します。 次にこのサービスは、データベースを移行します。
-3. Web 層を移行するときは、Site Recovery による "リフトアンドシフト" 移行を使用します。 そのプロセスでは、オンプレミス VMware 環境の準備を整え、レプリケーションを設定して有効にしたうえで、VM を Azure にフェールオーバーすることによって移行する必要があります。
+3. Web 層を移行するときは、Site Recovery によるリフトアンドシフト移行を使用します。 そのプロセスでは、オンプレミス VMware 環境の準備を整え、レプリケーションを設定して有効にしたうえで、VM を Azure にフェールオーバーすることによって移行する必要があります。
 
      ![移行のアーキテクチャ](media/contoso-migration-rehost-vm-sql-managed-instance/migration-architecture.png)
 

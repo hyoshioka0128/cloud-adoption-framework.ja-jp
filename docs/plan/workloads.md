@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022281"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240196"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>クラウド導入計画のワークロードを優先付けして定義する
 
@@ -29,7 +29,7 @@ ms.locfileid: "71022281"
 
 ## <a name="prerequisites"></a>前提条件
 
-前提条件チェックリストからの戦略的入力により、以下のタスクをさらに容易に実行できます。 この記事で言及されているデータの収集については、[前提条件チェックリスト](./prerequisites.md)に関する記事を参照してください。
+前提条件リストからの戦略的入力により、以下のタスクをさらに容易に実行できます。 この記事で言及されているデータの収集については、[前提条件リスト](./prerequisites.md)に関する記事を参照してください。
 
 ## <a name="initial-workload-prioritization"></a>初期ワークロードの優先順位付け
 

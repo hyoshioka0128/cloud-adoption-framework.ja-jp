@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5eabc654c174ac3eff895e6b2ff94700789f5de5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549158"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564657"
 ---
 # <a name="understand-partnership-options"></a>パートナーシップのオプションを理解する
 
@@ -82,7 +82,7 @@ FastTrack for Azure の一般的な連携の主な段階は次のとおりです
 
 **採用:** Microsoft Services の [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) により、要件を最も適切な参照アーキテクチャにマップすることによって核となる Azure の設計、パターン、ガバナンス アーキテクチャを確立し、ワークロードに必要なインフラストラクチャ、管理、セキュリティ、ID を計画、設計、デプロイします。
 
-**移行/最適化:** Microsoft Services の [Cloud Modernization Solution](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) では、アプリケーションとインフラストラクチャを Azure に移動し、合理化された移行によってクラウドに移行した後で最適化および最新化を行う、包括的なアプローチが提供されます。
+**移行/最適化:** Microsoft Services の [Cloud Modernization Solution](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) では、アプリケーションとインフラストラクチャを Azure に移動し、合理化された移行によってクラウドにデプロイした後で最適化および最新化を行う、包括的なアプローチが提供されます。
 
 **イノベーション:** Microsoft Services の [Cloud Center of Excellence (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) ソリューションでは、DevOps コーチング エンゲージメントが提供され、DevOps の原則と規範的なクラウド ネイティブのサービス管理とセキュリティ コントロールの組み合わせにより、安全で予測可能で柔軟なサービス配信および運用管理機能で、ビジネス革新が推進され、アジリティが向上し、価値実現の時間が短縮されます。
 

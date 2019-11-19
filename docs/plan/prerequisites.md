@@ -1,21 +1,21 @@
 ---
-title: 効果的なクラウド導入計画の前提条件のチェックリスト
+title: 効果的なクラウド導入計画の前提条件
 titleSuffix: Microsoft Cloud Adoption Framework
-description: 効果的なクラウド導入計画の前提条件のチェックリスト
+description: 効果的なクラウド導入計画の前提条件について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0933474aef96d01862f0f230073e275ac262cd83
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6689945769c7eb31ba306567e2a09e51456d47cc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048506"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240219"
 ---
-# <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>効果的なクラウド導入計画の前提条件のチェックリスト
+# <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>効果的なクラウド導入計画の前提条件
 
 計画は、そこに入力されたデータと同じだけの効果しかありません。 クラウド導入計画を効果的にするために、"*戦略的*" 入力および "*戦術的*" 入力という 2 つの入力カテゴリがあります。 次のセクションでは、各カテゴリに必要な最小限のデータ ポイントの概要を示します。
 

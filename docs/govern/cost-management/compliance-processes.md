@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6345a8cae51a6b26b7fad174113a40e9dc0dae3e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: eb3bfc584e3c3f86e39918495fe7e0d313f13e55
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220975"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564712"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>コスト管理のポリシー コンプライアンス プロセス
 
@@ -42,7 +42,7 @@ ms.locfileid: "71220975"
 
 これらの基本的なプロセスは、支出を調整し、コスト管理規範の基盤を確立するのに役立ちます。
 
-## <a name="ongoing-monitoring-processes"></a>継続的な監視プロセス
+## <a name="processes-for-ongoing-monitoring"></a>継続的な監視のためのプロセス
 
 コスト管理のガバナンス戦略が成功するかどうかは、過去、現在、および計画されている将来のクラウド関連の支出を、どれだけ正確に把握できるかにかかっています。 既存のコストの関連メトリックと関連データを分析できない場合、リスクの変化を特定したり、リスクの許容範囲の違反を検出したりできません。 上で説明した継続的なガバナンス プロセスには、品質データが必要です。これは、ポリシーを変更して、変化するビジネス要件とクラウドの使用状況に対するインフラストラクチャの保護を強化できるようにするためです。
 
@@ -54,8 +54,8 @@ ms.locfileid: "71220975"
 
 トリガーの例を次に示します。
 
-- **月単位の予算のずれ。** 毎月の支出の予測対実績比が 20% を超えてずれた場合は、課金単位のリーダーと検討します。 予測に関する解決策と変更を記録します。
-- **導入のペース。** サブスクリプション レベルが 20% を超えてずれた場合は、課金単位のリーダーとのレビューをトリガーします。 予測に関する解決策と変更を記録します。
+- **月単位の予算のずれ:** 毎月の支出の予測対実績比が 20% を超えてずれた場合は、課金単位のリーダーと検討します。 予測に関する解決策と変更を記録します。
+- **導入のペース:** サブスクリプション レベルが 20% を超えてずれた場合は、課金単位のリーダーとのレビューをトリガーします。 予測に関する解決策と変更を記録します。
 
 ## <a name="next-steps"></a>次の手順
 

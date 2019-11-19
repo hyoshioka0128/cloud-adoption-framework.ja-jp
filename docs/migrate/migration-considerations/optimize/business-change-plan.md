@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025460"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564595"
 ---
 # <a name="business-change-plan"></a>ビジネス変更プラン
 
@@ -31,7 +31,7 @@ ms.locfileid: "71025460"
 
 これらのテーマは多くの場合に、ユーザーへの新しいソリューションの導入では、主にリスク コントロールと変更の円滑化に重点を置くべきであるという前提に基づきます。 さらに、IT はテクノロジの変更によるリスクと、その変更の円滑化に主に重点を置いてきました。
 
-## <a name="creating-business-change-plans"></a>ビジネス変更プランの作成
+## <a name="create-business-change-plans"></a>ビジネス変更プランを作成する
 
 ビジネス変更プランでは、技術的変更だけを見るのではなく、移行作業でのすべてのリリースで、一定のレベルのビジネス プロセスの変更が発生するものと想定します。 技術的な変更からのアップストリームとダウンストリームを考慮します。 次の質問は、参加者が、ビジネス変更の観点からユーザー導入について考え、ビジネスへの効果を最大にするために役立ちます。
 

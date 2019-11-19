@@ -1,5 +1,5 @@
 ---
-title: 昇格モデル - 昇格、ステージ、またはフライト
+title: '昇格モデル: シングル ステップ、段階的、またはフライト'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 昇進が移行アクティビティに及ぼす影響を理解する
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b251e5159f6e6728e0b5a7ce807eaba0ea85696a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 690c871ab18bef96a5a1738de90a216ca5b8df90
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548434"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564614"
 ---
-# <a name="promotion-models---single-step-staged-or-flight"></a>昇格モデル - シングル ステップ、段階的、またはフライト
+# <a name="promotion-models-single-step-staged-or-flight"></a>昇格モデル: シングル ステップ、段階的、またはフライト
 
 ワークロードの移行は多くの場合、1 つのアクティビティとして説明されます。 実際には、クラウドへのデジタル資産の移動を促進する、より小さなアクティビティの集まりです。 移行における最後のアクティビティの 1 つは、実稼働への資産の昇格です。 昇格とは、実稼働システムがエンド ユーザー向けに変わるポイントのことです。 多くの場合、ネットワークのルーティングを変更し、エンド ユーザーを新しい実稼働資産にリダイレクトする程度の単純さで済みます。 昇格は、IT 運用またはクラウド運用において、運用管理プロセスの焦点を以前の実稼働システムから新しい実稼働システムに切り替えるポイントでもあります。
 

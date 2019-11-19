@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 973bb0e86d3c60e1514061ed7d2aa7ccb787cef6
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 4d50025ee6030e07ccb2979fff89ebb6569e0aed
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979982"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564949"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>クラウド監視ガイド: 監視プラットフォームの概要
 
@@ -78,7 +78,7 @@ Azure Monitor は、それをサポートするすべてのインフラストラ
 
 #### <a name="agents"></a>エージェント
 
-Operations Manager では、[Windows コンピューター](https://docs.microsoft.com//system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent)にインストールされたエージェントからのみ、データが直接収集されます。 Operations Manager SDK からのデータを受け入れることができますが、このアプローチは通常、監視データの収集ではなく、カスタム アプリケーションによって製品を拡張するパートナーのために使用されます。 [Linux コンピューター](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent)やネットワーク デバイスなどの他のソースからのデータ収集は、これらの他のデバイスにリモートからアクセスする Windows エージェントで実行される特別なモジュールを使用して行うことができます。
+Operations Manager では、[Windows コンピューター](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent)にインストールされたエージェントからのみ、データが直接収集されます。 Operations Manager SDK からのデータを受け入れることができますが、このアプローチは通常、監視データの収集ではなく、カスタム アプリケーションによって製品を拡張するパートナーのために使用されます。 [Linux コンピューター](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent)やネットワーク デバイスなどの他のソースからのデータ収集は、これらの他のデバイスにリモートからアクセスする Windows エージェントで実行される特別なモジュールを使用して行うことができます。
 
 ![Operations Manager エージェントの図](./media/monitoring-management-guidance-cloud-and-on-premises/data-collection-opsman-agents-optimized.svg)
 
@@ -128,25 +128,25 @@ Operations Manager の管理パックには、監視対象アプリケーショ�
 
 Azure Monitor では、サービス コンポーネントの現在の正常性状態を示すモニターのサービス モデルを実装するための、ユーザーが定義可能な方法は提供されていません。 監視ソリューションは Azure Monitor の標準機能に基づいているため、状態レベルの監視は提供されません。 Azure Monitor の以下の機能が役に立つ場合があります。
 
-- **Application Insights**:Web アプリケーションの複合マップを構築し、各アプリケーション コンポーネントまたは依存関係についての正常性状態を提供します。 これにはアラートの状態と、アプリケーションのより詳細な診断へのドリルダウンが含まれます。
+- **Application Insights:** Web アプリケーションの複合マップを構築し、各アプリケーション コンポーネントまたは依存関係についての正常性状態を提供します。 これにはアラートの状態と、アプリケーションのより詳細な診断へのドリルダウンが含まれます。
 
-- **Azure Monitor for VMs**:Windows および Linux の仮想マシンを監視するときに、Operations Manager と同様の正常性監視エクスペリエンスがゲスト Azure VM に対して提供されます。 可用性とパフォーマンスの観点から、主なオペレーティング システム コンポーネントの正常性が評価され、現在の正常性状態が判断されます。 ゲスト VM で、リソース使用率、ディスク領域の容量、またはオペレーティング システムのコア機能に関連する問題が継続的に発生していると判断されると、この状態について注意を促すためのアラートが生成されます。
+- **Azure Monitor for VMs:** Windows および Linux の仮想マシンを監視するときに、Operations Manager と同様の正常性監視エクスペリエンスがゲスト Azure VM に対して提供されます。 可用性とパフォーマンスの観点から、主なオペレーティング システム コンポーネントの正常性が評価され、現在の正常性状態が判断されます。 ゲスト VM で、リソース使用率、ディスク領域の容量、またはオペレーティング システムのコア機能に関連する問題が継続的に発生していると判断されると、この状態について注意を促すためのアラートが生成されます。
 
-- **Azure Monitor for containers**:Azure Kubernetes Services または Azure Container Instances のパフォーマンスと正常性が監視されます。 この機能により、Kubernetes で使用可能なコントローラー、ノード、およびコンテナーから、メモリやプロセッサのメトリックが Metrics API 経由で収集されます。 コンテナー ログ、コンテナーに関するインベントリ データ、それらのイメージも収集されます。 収集されたパフォーマンス データに基づく事前定義済みの正常性基準は、リソースのボトルネックや容量の問題が存在するかどうかを特定するのに役立ちます。 全体的なパフォーマンスや、特定の種類の Kubernetes オブジェクト (ポッド、ノード、コントローラー、またはコンテナー) のパフォーマンスを理解することもできます。
+- **コンテナーに対する Azure Monitor:** Azure Kubernetes Service または Azure Container Instances のパフォーマンスと正常性が監視されます。 この機能により、Kubernetes で使用可能なコントローラー、ノード、およびコンテナーから、メモリやプロセッサのメトリックが Metrics API 経由で収集されます。 コンテナー ログ、コンテナーに関するインベントリ データ、それらのイメージも収集されます。 収集されたパフォーマンス データに基づく事前定義済みの正常性基準は、リソースのボトルネックや容量の問題が存在するかどうかを特定するのに役立ちます。 全体的なパフォーマンスや、特定の種類の Kubernetes オブジェクト (ポッド、ノード、コントローラー、またはコンテナー) のパフォーマンスを理解することもできます。
 
-## <a name="analyzing-data"></a>データの分析
+## <a name="analyze-data"></a>データを分析する
 
 ### <a name="operations-manager"></a>Operations Manager
 
 Operations Manager には、収集された後にデータを分析するための基本的な 4 つの方法が用意されています。
 
-- **ヘルス エクスプローラー**:どのモニターが正常性状態の問題を特定しているかを検出し、そのモニターに関する知識とそれに関連するアクションの考えられる原因を確認するために役立ちます。
+- **ヘルス エクスプローラー:** どのモニターが正常性状態の問題を特定しているかを検出し、そのモニターに関する知識とそれに関連するアクションの考えられる原因を確認するために役立ちます。
 
-- **ビュー**:収集されたデータの事前定義済みの視覚化 (パフォーマンス データのグラフや、監視対象コンポーネントとそれらの現在の正常性状態の一覧など) を提供します。 ダイアグラム ビューは、アプリケーションのサービス モデルを視覚的に表したものです。
+- **ビュー:** 収集されたデータの事前定義済みの視覚化 (パフォーマンス データのグラフや、監視対象コンポーネントとそれらの現在の正常性状態の一覧など) を提供します。 ダイアグラム ビューは、アプリケーションのサービス モデルを視覚的に表したものです。
 
-- **[Reports]\(レポート\)** : Operations Manager データ ウェアハウスに格納されている履歴データを集計できます。 ビューとレポートの基になるデータをカスタマイズできます。 ただし、収集されたデータの複雑な分析や対話型の分析を可能にする機能はありません。
+- **レポート:** Operations Manager データ ウェアハウスに格納されている履歴データを集計できます。 ビューとレポートの基になるデータをカスタマイズできます。 ただし、収集されたデータの複雑な分析や対話型の分析を可能にする機能はありません。
 
-- **Operations Manager コマンド シェル**:Windows PowerShell を一連の追加コマンドレットで拡張し、収集されたデータをクエリおよび視覚化することができます。 これには、PowerShell でネイティブに行うか、Operations Manager の HTML ベースの Web コンソールを使用して行う、グラフを始めとする視覚化が含まれます。
+- **Operations Manager コマンド シェル:** Windows PowerShell を一連の追加コマンドレットで拡張し、収集されたデータをクエリおよび視覚化することができます。 これには、PowerShell でネイティブに行うか、Operations Manager の HTML ベースの Web コンソールを使用して行う、グラフを始めとする視覚化が含まれます。
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
@@ -178,7 +178,7 @@ Operations Manager のワークフローは相互に独立しており、この�
 
 Azure Monitor では、データ収集は、そのデータから実施されるアクションと分析から分離されています。 エージェントやその他のデータ ソースは、ログ データを Log Analytics ワークスペースに書き込み、メトリック データをメトリック データベースに書き込みます。そのデータの分析はまったく行われず、その利用方法は認識されません。 Monitor は、格納されたデータに基づいてアラートやその他のアクションを実行します。これにより、すべてのソースのデータにわたって分析を実行できるようになっています。
 
-## <a name="extending-base-platform"></a>基本プラットフォームの拡張
+## <a name="extend-the-base-platform"></a>ベース プラットフォームを拡張する
 
 ### <a name="operations-manager"></a>Operations Manager
 

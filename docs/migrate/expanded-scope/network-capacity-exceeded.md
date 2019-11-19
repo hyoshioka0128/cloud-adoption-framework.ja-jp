@@ -1,21 +1,21 @@
 ---
 title: ネットワーク容量の超過
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: ストレージ要件が移行作業中にネットワーク容量を超えています。
+description: 移行作業中にデータ要件がネットワーク容量を超えます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9b1078cbb6b7ca40b7a38ea56ae803fd61e67449
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024767"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239977"
 ---
-# <a name="storage-requirements-exceed-network-capacity-during-a-migration-effort"></a>ストレージ要件が移行作業中にネットワーク容量を超えている
+# <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>移行作業中にデータ要件がネットワーク容量を超えている
 
 クラウド移行では、資産がレプリケートされ、既存のデータセンターとクラウド間でネットワーク経由で同期されます。 さまざまなワークロードの既存のデータ サイズ要件が、ネットワーク容量を超えることは珍しくありません。 このようなシナリオでは、移行プロセスはきわめて低速になったり、場合によっては完全に停止することがあります。 次のガイダンスは、ネットワーク制限に対処するソリューションを提供する [Azure 移行ガイド](../azure-migration-guide/index.md)の範囲を拡大します。
 

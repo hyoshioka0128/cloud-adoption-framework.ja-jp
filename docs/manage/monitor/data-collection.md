@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0328ea8487817b9c8b74bda2200af9353a56e047
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979833"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564937"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>クラウド監視ガイド: 適切なデータの収集
 

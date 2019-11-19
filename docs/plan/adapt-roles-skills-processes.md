@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 30b3a88a8ce7c90f4b3925af7ead21489c2fb821
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a272a9b8633f60544aca9982654a899288e3b4e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223913"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564149"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>既存の役割、スキル、プロセスをクラウド向けに調整する
 
@@ -25,7 +25,7 @@ IT スタッフ メンバーは、クラウド ソリューションをサポー
 
 新しいスキル セットの構築に関するガイダンスについては、[スキル準備パス](./suggested-skills.md)に関する記事を参照してください。
 
-## <a name="capturing-concerns"></a>懸念を把握する
+## <a name="capture-concerns"></a>キャプチャに関する考慮事項
 
 組織がクラウド導入作業を準備する際に、各チームは以下を識別することで、発生したスタッフの懸念を文書化する必要があります。
 

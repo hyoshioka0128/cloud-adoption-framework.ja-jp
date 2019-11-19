@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224340"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564310"
 ---
 # <a name="cloud-center-of-excellence"></a>クラウドのセンター オブ エクセレンス
 
@@ -92,7 +92,7 @@ CCoE の各メンバーは、現在の IT コントロール セットの原因�
 
 クラウドを検討している健全な企業では、このネゴシエーション プロセスは、ピアと提携 IT チーム間の動的な会話です。 技術的な詳細は複雑な場合がありますが、IT 部門が目的を理解し、CCoE の取り組みに協力的であれば、管理可能です。 IT 部門が協力的ではない場合は、CCoE 成功の実現に関する次のセクションが、文化的な阻害要因の克服に役立ちます。
 
-## <a name="enabling-ccoe-success"></a>CCoE の成功の実現
+## <a name="enable-ccoe-success"></a>CCoE の成功を有効にする
 
 このモデルを使用して先に進む前に、成長の思考様式に対する会社の許容度と一元的な責任の解放による IT 部門の快適性を検証することが重要です。 前述のとおり、CCoE の目的は、機敏性とスピードのコントロールの交換です。
 

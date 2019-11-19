@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8f0f2ed925432badf22de70dfa87aa3528738842
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979856"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564991"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>クラウド監視ガイド:アラート
 
@@ -47,17 +47,17 @@ Azure Monitor のみを使用している場合は、速度、コスト、およ
 
 使用している機能と構成に応じて、次の 6 つのリポジトリのいずれかに監視データを保存できます。
 
-- **Azure Monitor メトリック データベース**:主に Azure Monitor プラットフォームのメトリックに使用される時系列データベースですが、Application Insights メトリック データも反映されています。 このデータベースに入力される情報は、最も速いアラート時間です。
+- **Azure Monitor メトリック データベース:** 主に Azure Monitor プラットフォームのメトリックに使用される時系列データベースですが、Application Insights メトリック データも反映されています。 このデータベースに入力される情報は、最も速いアラート時間です。
 
-- **Application Insights ログ ストア**:ほとんどの Application Insights テレメトリをログ形式で格納するデータベース。
+- **Application Insights ログ ストア:** ほとんどの Application Insights テレメトリをログ形式で格納するデータベース。
 
-- **Azure Monitor ログ ストア**:Azure ログデータのプライマリ ストア。 その他のツールで、データをルーティングし、Azure Monitor ログで分析することができます。 インジェストとインデックス作成のために、ログ アラート クエリの待機時間は長くなります。 この待機時間は通常 5 ～ 10 分ですが、状況によってはより長くなることがあります。
+- **Azure Monitor ログ ストア:** Azure ログデータのプライマリ ストア。 その他のツールで、データをルーティングし、Azure Monitor ログで分析することができます。 インジェストとインデックス作成のために、ログ アラート クエリの待機時間は長くなります。 この待機時間は通常 5 ～ 10 分ですが、状況によってはより長くなることがあります。
 
-- **アクティビティ ログ ストア**:すべてのアクティビティ ログとサービス正常性イベントに使用されます。 専用のアラートを使用できます。 サブスクリプション内のオブジェクトの外側から見て、それらのオブジェクトで発生するサブスクリプション レベルのイベントを保持します。 たとえば、ポリシーが設定されたり、リソースのアクセスや削除が行われたりしたときです。
+- **アクティビティ ログ ストア:** すべてのアクティビティ ログとサービス正常性イベントに使用されます。 専用のアラートを使用できます。 サブスクリプション内のオブジェクトの外側から見て、それらのオブジェクトで発生するサブスクリプション レベルのイベントを保持します。 たとえば、ポリシーが設定されたり、リソースのアクセスや削除が行われたりしたときです。
 
-- **Azure Storage**:Azure Diagnostics やその他の監視ツールでサポートされている汎用ストレージ。 これは、監視テレメトリの長期保持に適した低コストの選択肢です。 このサービスに保存されているデータからのアラートはサポートされていません。
+- **Azure Storage:** Azure Diagnostics やその他の監視ツールでサポートされている汎用ストレージ。 これは、監視テレメトリの長期保持に適した低コストの選択肢です。 このサービスに保存されているデータからのアラートはサポートされていません。
 
-- **Event Hubs**:一般に、オンプレミスまたは他のパートナーの監視または ITSM ツールにデータをストリーミングするために使用されます。
+- **Event Hubs:** 一般に、オンプレミスまたは他のパートナーの監視または ITSM ツールにデータをストリーミングするために使用されます。
 
 Azure Monitor には 4 種類のアラートがあり、それぞれ、データが保存されているリポジトリとある程度関連性があります。
 
@@ -69,7 +69,7 @@ Azure Monitor には 4 種類のアラートがあり、それぞれ、データ
 
 - [Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json):アクティビティ ログ ストアから発生する Service Health 問題専用の特別な種類のアラートです。
 
-### <a name="alerting-through-partner-tools"></a>パートナー ツールによるアラート
+### <a name="enable-alerting-through-partner-tools"></a>パートナー ツールによるアラートを有効にする
 
 外部のアラート ソリューションを使用する予定の場合は、できるだけ多くのアラートを Azure Event Hubs 経由でルーティングします。これは、Azure Monitor から出る最速のパスです。 Event Hub へのインジェスト料金を支払う必要があります。 コストが問題で、速度はそうでない場合は、より低コストの代替策として Azure Storage を利用できます。 監視ツールや ITSM ツールが Azure Storage を読み取ってデータを抽出できるようにするだけです。
 
@@ -100,7 +100,7 @@ VM に対する Azure Monitor | 正常性基準は、メトリック ストア�
 
 - 同じ VM 上で拡張機能とエージェントの両方を実行することで、両方のストアに送信できます。 その後は迅速にアラートを送信できますが、ゲスト オペレーティング システムのデータは、他のテレメトリと組み合わせると、より複雑な検索の一部としても使用することもできます。
 
-**オンプレミスのデータのインポート**:Azure とオンプレミスで実行されている複数のコンピューターにわたってクエリと監視を行おうとしている場合は、Log Analytics エージェントを使用してゲスト オペレーティング システムのデータを収集できます。 その後、"[ログからメトリックへ](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs)" と呼ばれる機能を使用して、メトリックを簡素化してメトリック ストアに送ることができます。 この方法では、Azure ログ ストアへのインジェスト プロセスの一部がバイパスされるため、より短時間のうちにデータをメトリック データベースで利用できるようになります。
+**オンプレミスのデータのインポート:** Azure とオンプレミスで実行されている複数のコンピューターにわたってクエリと監視を行おうとしている場合は、Log Analytics エージェントを使用してゲスト オペレーティング システムのデータを収集できます。 その後、"[ログからメトリックへ](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs)" と呼ばれる機能を使用して、メトリックを簡素化してメトリック ストアに送ることができます。 この方法では、Azure ログ ストアへのインジェスト プロセスの一部がバイパスされるため、より短時間のうちにデータをメトリック データベースで利用できるようになります。
 
 ### <a name="minimize-alerts"></a>アラートを最小限に抑える
 

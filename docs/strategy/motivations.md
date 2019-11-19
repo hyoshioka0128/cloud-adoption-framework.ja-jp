@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9a6c007beedd06ff6e1a88cd7ccc497f58807af9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032384"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561600"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "71032384"
 
 ## <a name="motivations"></a>動機
 
-クラウドの導入によってサポートされるビジネスの変革は、さまざまな動機によって推進することができます。 おそらく、同時に複数の動機を適用することさえできます。 次の表に示す一覧の目的は、どの動機が該当するか、気付きを得られるようにすることです。 そこから、動機によって生じる可能性のある影響を優先度付けし、評価することができます。 この記事では、クラウド導入チームが次の一覧を使用して複数の役員やビジネス リーダーと面談し、どの動機がクラウド導入作業によって影響を受けるかを理解することをお勧めしています。
+クラウドの導入によってサポートされるビジネスの変革は、さまざまな動機によって推進することができます。 複数の動機が同時に適用される可能性があります。 次の表に示す一覧の目的は、どの動機が該当するか、気付きを得られるようにすることです。 そこから、動機によって生じる可能性のある影響を優先度付けし、評価することができます。 この記事では、クラウド導入チームが次の一覧を使用して複数の役員やビジネス リーダーと面談し、どの動機がクラウド導入作業によって影響を受けるかを理解することをお勧めしています。
 
 <!-- markdownlint-disable MD033 -->
 

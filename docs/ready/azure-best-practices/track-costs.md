@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548965"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240142"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -25,7 +25,7 @@ ms.locfileid: "72548965"
 
 コスト管理は、ガバナンスやその他の管理コンストラクトのように、適切に管理された環境に依存します。 このような環境 (特に複雑な環境) を確立するには、全資産の分類および編成で一貫性のあるプロセスが必要です。
 
-資産 (リソースとも呼ばれます) には、すべての仮想マシン、データ ソース、およびクラウドにデプロイされたアプリケーションが含まれます。 Azure では、資産を分類および編成するためのさまざまなメカニズムが用意されています。 「[Scaling with multiple Azure subscriptions (複数の Azure サブスクリプションでのスケーリング)](../considerations/scaling-subscriptions.md)」では、複数の条件に基づいてリソースを編成し、適切に管理された環境を確立するためのオプションについて詳しく説明しています。 この記事では、クラウド コストの可視性を提供するために Azure の基本的な概念を適用することに焦点を当てています。
+資産 (リソースとも呼ばれます) には、すべての仮想マシン、データ ソース、およびクラウドにデプロイされたアプリケーションが含まれます。 Azure では、資産を分類および編成するためのさまざまなメカニズムが用意されています。 「[Scaling with multiple Azure subscriptions (複数の Azure サブスクリプションでのスケーリング)](../azure-best-practices/scaling-subscriptions.md)」では、複数の条件に基づいてリソースを編成し、適切に管理された環境を確立するためのオプションについて詳しく説明しています。 この記事では、クラウド コストの可視性を提供するために Azure の基本的な概念を適用することに焦点を当てています。
 
 ### <a name="classification"></a>分類
 
@@ -35,7 +35,7 @@ ms.locfileid: "72548965"
 
 事業単位、環境、およびプロジェクトをまたいでコスト情報を正確に追跡する最初の手順は、タグ付けの標準を定義することです。 2 番目の手順は、タグ付けの標準が確実に適用されていることを確認することです。 次の記事は、これらの各手順を完了するのに役立ちます。
 
-- [名前付けとタグ付けの標準を開発する](../considerations/naming-and-tagging.md)
+- [名前付けとタグ付けの標準を開発する](../azure-best-practices/naming-and-tagging.md)
 - [ガバナンス MVP を確立してタグ付けの標準を適用する](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>リソースの編成
@@ -59,7 +59,7 @@ ms.locfileid: "72548965"
 
 この記事の残りの部分では、上の図のベスト プラクティスのアプローチを使用することを前提としています。 ただし、次の記事は、お客様の会社に最適なリソース編成にこのアプローチを適用するのに役立ちます。
 
-- [複数の Azure サブスクリプションでのスケーリング](../considerations/scaling-subscriptions.md)
+- [複数の Azure サブスクリプションでのスケーリング](../azure-best-practices/scaling-subscriptions.md)
 - [ガバナンス MVP をデプロイして適切に管理された環境の標準を管理する](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>適切なレベルのコスト アクセスの提供
@@ -102,7 +102,7 @@ Azure Cost Management では、各スコープに対して次の組み込みロ�
 
 - [クラウドのセンター オブ エクセレンス](../../organize/cloud-center-of-excellence.md)。 共有サービスに関連するコストを管理する職務には、サブスクリプション レベルで Cost Management 共同作成者のアクセス権が必要です。 さらに、このチームには、CCoE オートメーションがコストに与える影響を理解するために、それらのオートメーションによってデプロイされたアセットを含むリソース グループまたはサブスクリプションに対する Cost Management 共同作成者のアクセス権も必要になることがあります。
 
-  - **共有サービス**。 クラウドのセンター オブ エクセレンスが関与している場合、ベスト プラクティスとして、CCoE によって管理される資産が、ハブ/スポーク モデル内の一元的な共有サービス サブスクリプションからサポートされることをお勧めします。 このシナリオでは、CCoE はそのサブスクリプションに対する共同作成者または所有者のアクセス権を持っている可能性があるため、[Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)の追加のスコープ割り当ては必要ありません。
+  - **共有サービス**。 クラウドのセンター オブ エクセレンスが関与している場合、ベスト プラクティスとして、CCoE によって管理される資産が、ハブ アンド スポーク モデル内の一元的な共有サービス サブスクリプションからサポートされることをお勧めします。 このシナリオでは、CCoE はそのサブスクリプションに対する共同作成者または所有者のアクセス権を持っている可能性があるため、[Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)の追加のスコープ割り当ては必要ありません。
   - **CCoE 自動化/コントロール**。 CCoE では一般に、コントロールおよび自動化されたデプロイ スクリプトがクラウド導入チームに提供されます。 CCoE には、これらのアクセラレータがコストに与える影響を理解する責任があります。 これを可視化するため、チームには、それらのアクセラレータを実行しているすべてのリソース グループまたはサブスクリプションに対する [Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)のアクセス権が必要です。
 
 - **クラウド運用チーム**。 運用環境の継続的コストを管理する職務には、運用環境のすべてのサブスクリプションに対する Cost Management 共同作成者のアクセス権が必要です。

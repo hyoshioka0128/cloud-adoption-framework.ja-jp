@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 6e02cffdbd76932e3066ed68501856aef2669b02
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979909"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564969"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>クラウド監視ガイド: クラウド デプロイ モデルの監視戦略
 
@@ -88,7 +88,7 @@ Azure テナント | Azure Active Directory || 診断ログを有効にし、Azu
 |最新の Web アプリケーションの監視 | はい | いいえ |
 |レガシ Web アプリケーションの監視 | はい、制限あり、SDK によって異なります<br> .NET および Java Web アプリケーションのより古いバージョンの監視をサポートします。 | はい、制限あり |
 |Azure Kubernetes Service コンテナーを監視する | はい | いいえ |
-|Docker/Windows コンテナーを監視する | はい | いいえ |
+|Docker または Windows コンテナーを監視する | はい | いいえ |
 |ネットワーク パフォーマンスの監視 | はい | はい、制限あり<br> 可用性チェックがサポートされ、簡易ネットワーク管理プロトコル (SNMP) プロトコルを使用して企業ネットワークのネットワーク デバイスから基本的な統計情報が収集されます。|
 |対話型データ分析 | はい | いいえ<br> SQL Server Reporting Services の既定またはカスタムのレポート、サードパーティの視覚化ソリューション、またはカスタムの Power BI 実装に依存しています。 Operations Manager データ ウェアハウスには、スケールとパフォーマンスの制限があります。 データ集約要件に対する代替手段として Azure Monitor ログと統合します。 Log Analytics コネクタを構成することにより、統合を実現します。|
 |エンドツーエンドの診断、根本原因の分析、および適切なタイミングでのトラブルシューティング | はい | はい、制限あり<br> エンドツーエンドの診断とトラブルシューティングは、オンプレミスのインフラストラクチャとアプリケーションに対してのみサポートされます。 他の System Center コンポーネントまたはパートナー ソリューションを使用します。|
@@ -131,7 +131,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Operations Manager を単独で使用する場合の欠点
 
-- Operations Manager での監視データの分析は、通常、管理パックで定義されていてコンソールからアクセスする事前定義ビュー、SQL Server Reporting Services (SSRS) レポート、またはエンド ユーザーが作成したカスタム ビューを使用して実行されます。 データのアドホック分析は、既定では実行できません。 Operations Manager のレポート機能は柔軟ではありません。 監視データの長期保存が提供されるデータ ウェアハウスの拡張性やパフォーマンスは十分ではありません。 また、IT 組織内のさまざまなペルソナの要件をサポートするには、T-SQL ステートメントの記述、Power BI ソリューションの開発、またはサードパーティ製ソリューションの使用に関する専門知識が必要です。
+- Operations Manager での監視データの分析は、通常、管理パックで提供され、コンソールからアクセスする事前定義ビュー、SQL Server Reporting Services (SSRS) レポート、またはエンド ユーザーが作成したカスタム ビューを使用して実行されます。 アドホック データ分析は、すぐには使用できません。 Operations Manager のレポート機能は柔軟ではありません。 監視データの長期保存が提供されるデータ ウェアハウスの拡張性やパフォーマンスは十分ではありません。 また、IT 組織内のさまざまなペルソナの要件をサポートするには、T-SQL ステートメントの記述、Power BI ソリューションの開発、またはサードパーティ製ソリューションの使用に関する専門知識が必要です。
 
 - Operations Manager のアラート機能では、複雑な式がサポートされていないか、相関ロジックが含まれていません。 ノイズを低減するため、アラートはグループ間の関係を示し、その原因を示すためにグループ化されています。
 
@@ -165,7 +165,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 - Azure Monitor for VMs、Azure Monitor for containers、および Application Insights を有効にして、インフラストラクチャとアプリケーションの問題を検出および診断します。 アプリケーションをサポートする複数のコンポーネントまたは依存関係から収集されたデータのさらに詳細な分析と相関関係には、Azure Monitor ログを使用する必要があります。
 
-- アプリケーションとサービス コンポーネントのコア セットに適用できるインテリジェントなアラートを作成し、複雑なシグナルの動的しきい値でアラートのノイズを削減し、機械学習アルゴリズムに基づいたアラートの集計を利用して問題を迅速に特定します。
+- アプリケーションとサービス コンポーネントのコア セットに適用されるインテリジェントなアラートを作成し、複雑なシグナルの動的しきい値でアラートのノイズを削減し、機械学習アルゴリズムに基づいたアラートの集計を使用して問題を迅速に特定します。
 
 - IT 組織内のさまざまなペルソナの要件をサポートするために、クエリとダッシュボードのライブラリを定義します。
 

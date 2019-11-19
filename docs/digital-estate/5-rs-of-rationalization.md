@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223861"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238804"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 
@@ -38,7 +38,7 @@ ms.locfileid: "71223861"
 
 ## <a name="rehost"></a>リホスト
 
-リホストの取り組みは、"リフト アンド シフト" 移行とも呼ばれ、アーキテクチャ全体への変更を最小限に抑えて、現在の状態の資産を選択されたクラウド プロバイダーに移動します。
+リホストの取り組みは、"_リフト アンド シフト_" 移行とも呼ばれ、アーキテクチャ全体への変更を最小限に抑えて、現在の状態の資産を選択されたクラウド プロバイダーに移動します。
 
 一般的な促進要因には、次のものが含まれます。
 
