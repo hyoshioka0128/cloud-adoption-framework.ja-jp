@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f7782aeedf794441a7ba4e1f6a97f162fa33abfb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548545"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656709"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのセキュリティ保護と管理に関するベスト プラクティス
 
@@ -219,7 +219,7 @@ Azure では、高度なセキュリティ オプションを提供するセキ�
 
 **詳細情報:**
 
-- [名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)について学習する。
+- [名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)について学習する。
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>ベスト プラクティス:リソース グループの削除ロックを実装する
 

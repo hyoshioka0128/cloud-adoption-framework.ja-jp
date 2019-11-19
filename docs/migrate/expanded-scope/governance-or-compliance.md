@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6371fe5f3d90e72b29ecfc1e66b3d4991ef5822
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549236"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566904"
 ---
 # <a name="governance-or-compliance-strategy"></a>ガバナンスまたはコンプライアンスの戦略
 
@@ -38,7 +38,7 @@ ms.locfileid: "72549236"
 **Microsoft サービス:** Microsoft サービスでは、確実に最も適切なガバナンスやコンプライアンス モデルになるように、クラウド導入フレームワーク ガバナンス モデル、コンプライアンスのブループリント、仮想データセンターのオプションと整合したソリューション オファリングが提供されます。 [セキュア クラウド分析情報 (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) ソリューション オファリングを使用して、Azure 上のお客様のデプロイについてデータドリブンな全体像を把握し、既存のデプロイ アーキテクチャの最適化を確認しながらお客様の Azure 実装の成熟度を検証して、ガバナンスのセキュリティと可用性のリスクを削減します。 お客様の分析情報に基づいて、次のアプローチにより主導します。
 
 - **クラウド基盤:** [ハイブリッド クラウド基盤 (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) ソリューション オファリングを使用して、お客様の中核となる Azure の設計、パターン、ガバナンス アーキテクチャを確立します。 お客様の要件を最も適切な参照アーキテクチャにマップします。 共有サービスと IaaS ワークロードで構成される実用最小限の製品を実装します。
-- **クラウド最新化:** [クラウド最新化](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)ソリューション オファリングを、アプリケーション、データ、インフラストラクチャをエンタープライズ対応のクラウドに移行するための包括的なアプローチとして使用し、さらにはクラウド上での最適化と最新化にも使用します。
+- **クラウド最新化:** [クラウド最新化](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)ソリューション オファリングを、アプリケーション、データ、およびインフラストラクチャをエンタープライズ対応のクラウドに移行するための包括的なアプローチとして使用し、さらにクラウド デプロイ後の最適化と最新化にも使用します。
 - **クラウドによるイノベーション:** 革新的な独自の[クラウド センター オブ エクセレンス (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) ソリューション アプローチを通してお客様と協力します。このアプローチでは、コントロールを維持しながら DevOps による大規模な機敏性を実現するように最新の IT 組織を構築します。 ビジネス要件を捉え、セキュリティ、コンプライアンス、サービス管理ポリシーに整合したデプロイ パッケージを再利用し、運用手順に整合した Azure プラットフォームを維持するためのアジャイル アプローチを導入します。
 
 ## <a name="assess-process-changes"></a>プロセス変更を評価する

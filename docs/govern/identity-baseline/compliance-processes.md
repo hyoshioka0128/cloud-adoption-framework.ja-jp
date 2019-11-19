@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 22fa26bdf4665584224551015cd4b3277d4755a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223765"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566216"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>ID ベースライン ポリシーのコンプライアンス プロセス
 
@@ -40,7 +40,7 @@ ID 管理ツールはクラウド デプロイにおけるユーザー管理と�
 
 **月単位の監査とレポートのレビュー:** ID ポリシーに継続的に準拠するには、すべてのクラウド デプロイに対して月単位で監査を実行します。 このレビューを使用してビジネスの変更に対するユーザー アクセスを確認し、ユーザーにクラウド リソースへの正しいアクセス権が確実に付与され、RBAC などのアクセス戦略に一貫して確実に準拠するようにします。 権限を持つアカウントを特定し、その目的を文書化します。 このレビュー プロセスでは、ポリシーへの全体的な準拠について詳しく記載されたレポートが、クラウド戦略チームと各クラウド導入チーム向けに作成されます。 レポートの保存は、監査と法的な目的のためでもあります。
 
-## <a name="ongoing-monitoring-processes"></a>継続的な監視のプロセス
+## <a name="processes-for-ongoing-monitoring"></a>継続的に監視するためのプロセス
 
 ID ガバナンス戦略が成功しているかどうかは、自分の ID システムの現在と過去の状態を確認して判断します。 クラウド デプロイの関連メトリックと関連データを分析できない場合、リスクの変化を特定したり、リスクの許容範囲の違反を検出したりすることができません。 先に説明した継続的なガバナンスのプロセスで、ビジネスのニーズの変化に合わせてポリシーを変更するには、品質データが必要です。
 

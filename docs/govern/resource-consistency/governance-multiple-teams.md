@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058777"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656690"
 ---
 # <a name="governance-design-for-multiple-teams"></a>複数チーム向けのガバナンス設計
 
@@ -225,7 +225,7 @@ Azure AD **グローバル管理者**には、ユーザー アカウントを作
 
 したがって、ご自身の要件の優先度に応じて、2 つのサンプル リソース管理モデルのいずれかを選択できます。 皆様の組織で 1 つのサブスクリプションのサービス制限に到達しないと思われる場合は、複数のリソース グループを含む 1 つのサブスクリプションを使用できます。 逆に、組織のワークロードが多くなりそうなときは、環境ごとに複数のサブスクリプションを使用することをお勧めします。
 
-## <a name="implementing-the-resource-management-model"></a>リソース管理モデルの実装
+## <a name="implement-the-resource-management-model"></a>リソース管理モデルを実装する
 
 Azure リソースへのアクセスを管理するためのモデルをいくつか取り上げて説明しました。 ここでは、設計ガイドの**共有インフラストラクチャ**環境、**運用**環境、**開発**環境それぞれに、1 つのサブスクリプションが含まれるリソース管理モデルを実装する手順を説明します。 この 3 つの環境すべてに 1 人の**サブスクリプション所有者**がいます。 ワークロードはそれぞれ、**共同作成者**ロールと共に追加された**ワークロード所有者**を含む**リソース グループ**に分離されます。
 
@@ -259,7 +259,7 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
 6. **ワークロード所有者**の承認プロセスを作成して、リソース グループの作成を要求します。 承認プロセスは、さまざまな方法で実装できます。たとえば、電子メールや、[SharePoint ワークフロー](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3)などのプロセス管理ツールを使用できます。 承認プロセスでは、次の手順に従うことができます。
     - **ワークロード所有者**は、**開発**環境、**運用**環境、またはその両方で、必要な Azure リソースの部品表を準備して、**サブスクリプション所有者**に送信します。
     - **サブスクリプション所有者**は部品表を確認し、要求されたリソースを検証して、そのリソースが計画的な使用に適していることを確かめます。たとえば、要求された[仮想マシンのサイズ](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)が正しいことをチェックします。
-    - 要求が承認されなかった場合は、**ワークロード所有者**に通知されます。 要求が承認された場合、**サブスクリプション所有者**は、自分の組織の[名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)に従って[要求されたリソース グループを作成](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)し、[**共同作成者**ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)と共に[**ワークロード所有者**を追加](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)して、リソース グループが作成されたことを**ワークロード所有者**に通知します。
+    - 要求が承認されなかった場合は、**ワークロード所有者**に通知されます。 要求が承認された場合、**サブスクリプション所有者**は、自分の組織の[名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)に従って[要求されたリソース グループを作成](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)し、[**共同作成者**ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)と共に[**ワークロード所有者**を追加](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)して、リソース グループが作成されたことを**ワークロード所有者**に通知します。
 7. ワークロード所有者の承認プロセスを作成して、仮想ネットワーク ピアリング接続を共有インフラストラクチャ所有者に要求します。 前の手順と同様に、この承認プロセスは、電子メールまたはプロセス管理ツールを使用して実装できます。
 
 ガバナンス モデルが実装されたので、共有インフラストラクチャ サービスをデプロイできます。

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: f77d42b9f55e5a8585e663b416f0d354e2de78de
-ms.sourcegitcommit: d37c4443e9acaa381ea74ee3fc50e3b99f13f22a
+ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72001857"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566672"
 ---
 # <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
@@ -43,8 +43,8 @@ ms.locfileid: "72001857"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Azure 仮想データセンター:リフト アンド シフト ガイド</a></h3>
-        <p>このホワイトペーパーでは、大企業の IT スタッフや意思決定者が "リフト アンド シフト" メソッドを使用して、Azure へのアプリケーションとサーバーの移行方法を特定および計画するために使用できるプロセスについて説明します。これにより、追加の開発コストを最小限に抑えながらクラウドのホスティング オプションを最適化できます。</p>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Azure 仮想データセンター:リフトアンドシフト ガイド</a></h3>
+        <p>このホワイト ペーパーでは、大企業の IT スタッフや意思決定者がリフトアンドシフト アプローチを使用して、Azure へのアプリケーションとサーバーの移行方法を特定して計画するために使用できるプロセスについて説明します。これにより、追加の開発コストを最小限に抑えながらクラウドのホスティング オプションを最適化できます。</p>
     </td>
 </tr>
 </table>

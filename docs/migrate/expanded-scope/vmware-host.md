@@ -1,27 +1,27 @@
 ---
-title: VMware ホストを使用した移行の高速化
+title: VMware ホストを使用して移行を高速化する
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: VMware ホストを使用した移行の高速化
+description: VMware ホストを使用して移行を高速化する
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66a39d53adeaf73e96cf04bdc5f80fc9574b675a
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 724a227407f431e08b5344dfd1280397bfca9b65
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980209"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566885"
 ---
-# <a name="accelerate-migration-with-vmware-hosts"></a>VMware ホストを使用した移行の高速化
+# <a name="accelerate-migration-with-vmware-hosts"></a>VMware ホストを使用して移行を高速化する
 
 VMware ホスト全体を移行すると、1 回の移行作業で複数のワークロードと複数の資産を移動できます。 このガイダンスでは、VMware ホストの移行を通じて [Azure 移行ガイド](../azure-migration-guide/index.md)の範囲を拡大します。 この範囲の拡大によって要求される作業のほとんどは、移行作業の前提条件と移行プロセス中に発生します。
 
 ## <a name="suggested-prerequisites"></a>推奨される前提条件
 
-最初の VMware ホストを Azure に移行する場合、ID、ネットワーク、および管理の要件を準備するために、いくつかの前提条件を満たす必要があります。 これらの前提条件が満たされれば、それぞれの追加のホストの移行に要する労力が大幅に減ります。 以下のセクションでは、前提条件の詳細を示しています。
+最初の VMware ホストを Azure に移行する場合、ID、ネットワーク、および管理の要件を準備するために、複数の前提条件を満たす必要があります。 これらの前提条件が満たされれば、それぞれの追加のホストの移行に要する労力が大幅に減ります。 以下のセクションでは、前提条件の詳細を示しています。
 
 ### <a name="secure-your-azure-environment"></a>Azure 環境のセキュリティ保護
 
@@ -44,7 +44,7 @@ Azure 環境で、ロールベースのアクセス制御とネットワーク�
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>クラウド導入計画との統合
 
-他の前提条件が満たされたら、各 VMWare ホストを[クラウド導入計画](../../plan/template.md)に含める必要があります。 クラウド導入計画内では、移行対象となる各ホストを[個別のワークロード](../../plan/workloads.md)として追加します。 各ワークロード内で、移行する VM を[資産](../../plan/workloads.md)として追加します。 ワークロードと資産を導入計画に一括で追加する方法については、[Excel を使用した作業項目の追加と編集](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)に関するページを参照してください。
+他の前提条件が満たされたら、各 VMware ホストを[クラウド導入計画](../../plan/template.md)に含める必要があります。 クラウド導入計画内では、移行対象となる各ホストを[個別のワークロード](../../plan/workloads.md)として追加します。 各ワークロード内で、移行する VM を[資産](../../plan/workloads.md)として追加します。 ワークロードと資産を導入計画に一括で追加する方法については、[Excel を使用した作業項目の追加と編集](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)に関するページを参照してください。
 
 ## <a name="migrate-process-changes"></a>移行プロセスの変更
 

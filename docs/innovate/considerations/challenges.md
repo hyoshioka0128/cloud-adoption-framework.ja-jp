@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0e4377f8d26cd28df1f9e6d9a82314fbe73fd0a4
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058082"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565722"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>イノベーションに関する一般的な阻害要因と課題
 
@@ -55,7 +55,7 @@ ms.locfileid: "73058082"
 - **ソース コードとデプロイ:** さまざまな開発者のコラボレーションにより、品質が向上し、製品化までの時間が短縮されます。 フィードバックと学習への迅速な対応を統合することで、マーケット リーダーが形成されます。 構築、計測、学習の各プロセスへの取り組みによって、ツールの導入に関する意思決定が促進されます。
 - **予測ソリューション:** デジタル経済では、顧客の現在のニーズを満たすだけでは不十分です。 顧客は、次のステップを予想し、将来のニーズを予測することを企業に求めています。 多くの場合、継続的な学習が予測ツールに発展します。 顧客のニーズの複雑さとデータの可用性に応じて、予測して影響を与えるための最適なツールとアプローチを定義できます。
 
-デジタル経済においてアーキテクトが直面する最大の課題は、発明と採用に対する顧客のニーズを明確に理解し、それらのニーズに対応するためのクラウドベースの最適なツール チェーンを決定することです。
+デジタル経済においてアーキテクトが直面する最大の課題は、発明と採用に対する顧客のニーズを明確に理解し、それらのニーズに対応するためのクラウドベースの最適なツールチェーンを決定することです。
 
 ## <a name="next-steps"></a>次の手順
 

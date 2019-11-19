@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 075d587b60b7da1748cd6d06ce01a1a5866f8304
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058119"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566264"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: セキュリティ ベースライン規範の改善
 
@@ -122,7 +122,7 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
     4. `corporate-it-subscription-blueprint` ブループリントを各リージョンのインスタンスに適用します。
     5. これにより、各リージョンのビジネス ユニットごとにハブが確立されます。 注:さらなるコスト削減も達成できますが、各リージョンのビジネス ユニット間でハブを共有することになります。
 6. 望ましい状態への構成 (DSC: Desired State Configuration) を通じてグループ ポリシー オブジェクト (GPO) を統合します:
-    1. GPO を DSC に変換 – GitHub の [Microsoft Baseline Management プロジェクト](https://github.com/Microsoft/BaselineManagement)でこの取り組みを加速させることができます。 * 必ず、Resource Manager テンプレートと並行して DSC をリポジトリに保存してください。
+    1. GPO を DSC に変換 – GitHub の [Microsoft Baseline Management プロジェクト](https://github.com/Microsoft/BaselineManagement)でこの取り組みを加速させることができます。 必ず、Resource Manager テンプレートと並行して DSC をリポジトリに保存してください。
     2. Azure Automation State Configuration をコーポレート IT サブスクリプションの任意のインスタンスにデプロイします。 Azure Automation を使用して、管理グループ内のサポートされているサブスクリプションにデプロイされている VM に DSC を適用できます。
     3. 現在のロードマップでは、カスタムのゲスト構成ポリシーを有効にすることが計画されています。 その機能がリリースされれば、このベスト プラクティスで Azure Automation を使用する必要はなくなります。
 

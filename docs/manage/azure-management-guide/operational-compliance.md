@@ -10,20 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7073df6b697da49429d4086d9f8f3f113583e52d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557093"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565484"
 ---
 # <a name="operational-compliance-in-azure"></a>Azure における運用のコンプライアンス
 
-運用のコンプライアンスは、すべてのクラウド管理ベースラインにおける 2 つ目の規範です。
+"_運用のコンプライアンス_" は、すべてのクラウド管理ベースラインにおける 2 つ目の規範です。
 
 ![クラウド管理ベースライン](../../_images/manage/management-baseline.png)
 
-運用のコンプライアンスを強化することで、構成のずれに関連した機能停止や、システムのパッチが適切に適用されていないことに関連した脆弱性の可能性を小さくすることができます。
+運用のコンプライアンスを強化することで、構成のずれに関連した機能停止や、システムのパッチが不適切に適用されたことに関連した脆弱性の可能性を小さくすることができます。
 
 すべてのエンタープライズグレード環境について、管理ベースラインの推奨最小値の概要を次の表に示します。
 
@@ -31,7 +31,7 @@ ms.locfileid: "72557093"
 |---------|---------|---------|
 |更新プログラムの管理|更新管理|更新プログラムの管理とスケジューリング|
 |ポリシーの適用|Azure Policy|環境とゲストのコンプライアンスを確保するためのポリシーの適用|
-|環境の 構成|Azure Blueprint|コア サービスの自動化されたコンプライアンス|
+|環境の構成|Azure Blueprint|コア サービスの自動化されたコンプライアンス|
 
 ::: zone target="docs"
 
@@ -44,30 +44,33 @@ ms.locfileid: "72557093"
 
 ::: zone-end
 
-Update Management で管理されるコンピューターでは、評価と更新プログラムのデプロイに次の構成を使用します。
+Update Management で管理されるコンピューターでは、評価と更新プログラムのデプロイに次の構成が使用されます。
 
 - Windows または Linux 用の Microsoft Monitoring Agent (MMA)
 - PowerShell Desired State Configuration (DSC) (Linux の場合)
-- Automation Hybrid Runbook Worker
+- Azure Automation の Hybrid Runbook Worker
 - Microsoft Update または Windows Server Update Services (WSUS) (Windows コンピューターの場合)
 
 詳細については、[Update Management ソリューション](https://docs.microsoft.com/azure/automation/automation-update-management)に関するページを参照してください。
 
 > [!WARNING]
-> Update Management を使用するには、あらかじめ VM またはサブスクリプション全体を Log Analytics および Azure Automation にオンボードしておく必要があります。
-> オンボーディングには、更新の管理を始める前に行うべき 2 つのアプローチがあります。
+> Update Management を使用するには、あらかじめ仮想マシンまたはサブスクリプション全体を Log Analytics および Azure Automation にオンボードしておく必要があります。
+>
+> オンボードには、次の 2 つの方法があります。
 >
 > - [単一の VM](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 > - [サブスクリプション全体](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+>
+> Update Management に進む前に、いずれかに従う必要があります。
 
 ### <a name="manage-updates"></a>更新プログラムの管理
 
 リソース グループにポリシーを適用するには:
 
 1. [[Azure Automation]](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts) に移動します。
-2. 一覧から **Automation アカウント**のいずれかを選択します。
-3. ポータルのナビゲーションから **[構成管理]** セクションを探します。
-4. インベントリ、変更管理、State Configuration をそれぞれ使用して、マネージド VM の状態と運用のコンプライアンスを制御することができます。
+1. **[Automation アカウント]** を選択し、一覧表示されているアカウントの 1 つを選択します。
+1. **[構成管理]** に移動します。
+1. **[インベントリ]** 、 **[変更管理]** 、 **[State Configuration]** を使用して、マネージド VM の状態と運用のコンプライアンスを制御することができます。
 
 ::: zone target="chromeless"
 
@@ -90,13 +93,13 @@ Update Management で管理されるコンピューターでは、評価と更�
 
 ::: zone-end
 
-Azure Policy は、ガバナンス プロセス全体で使用されます。 ただし、クラウド管理プロセス内でも大いに役立ちます。 Azure のリソースを監査し、修復することに加えて、Azure Policy は、マシン内の設定を監査することができます。 検証は、クライアントとゲスト構成拡張機能によって実行されます。 クライアントを介した拡張機能によって、次のような設定が検証されます。
+Azure Policy は、ガバナンス プロセス全体で使用されます。 クラウド管理プロセス内でも大いに役立ちます。 Azure Policy では、Azure リソースを監査および修復でき、マシン内の設定を監査することもできます。 検証は、クライアントとゲスト構成拡張機能によって実行されます。 クライアントを介した拡張機能によって、次のような設定が検証されます。
 
-- オペレーティング システムの構成
-- アプリケーションの構成または存在
-- 環境設定
+- オペレーティング システムの構成。
+- アプリケーションの構成または存在。
+- 環境設定。
 
-現時点での Azure Policy ゲスト構成では、マシン内の設定の監査のみが行われます。 構成は適用されません。
+Azure Policy ゲスト構成では、現在、マシン内の設定の監査のみが行われます。 構成は適用されません。
 
 ::: zone target="chromeless"
 
@@ -134,16 +137,18 @@ Azure Policy は、ガバナンス プロセス全体で使用されます。 �
 
 ::: zone-end
 
-Azure Blueprints によってクラウド アーキテクトや中央の情報技術グループは、組織の標準、パターン、要件を実装および順守した反復可能な一連の Azure リソースを定義できます。 Azure Blueprints を使用すると、開発チームは新しい環境を迅速に構築して立ち上げることができます。新しい環境は組織のコンプライアンスに従って構築され、ネットワークなどの一連の組み込みコンポーネントを含んでいるという確信が得られるため、開発とデリバリーにかかる時間を短縮できます。
+Azure Blueprints を使用すると、クラウド アーキテクトや中央の情報テクノロジ グループは、反復可能な一連の Azure リソースを定義できます。 これらのリソースによって、組織の標準、パターン、および要件が実装され、遵守されます。
 
-ブループリントは、さまざまなリソース テンプレートやその他のアーティファクトのデプロイを宣言によって調整する手法です。
+Azure Blueprints を使用すると、開発チームは新しい環境を迅速に構築して立ち上げることができます。 チームは、組織のコンプライアンスに従って構築しているという確信を得ることができます。 そのためには、ネットワークなどの一連の組み込みコンポーネントを使用して、開発とデリバリーを高速化します。
+
+ブループリントは、さまざまなリソース テンプレートや以下のようなその他のアーティファクトのデプロイを宣言によって調整する手法です。
 
 - ロールの割り当て。
 - ポリシーの割り当て。
 - Azure Resource Manager のテンプレート。
 - リソース グループ。
 
-クラウド ガバナンス チームがまだブループリントを適用していない場合は、ブループリントを適用することによって、環境における運用のコンプライアンスを徹底することができます。
+クラウド ガバナンス チームがまだこの適用を行っていない場合は、ブループリントを適用することによって、環境における運用のコンプライアンスを徹底することができます。
 
 ### <a name="create-a-blueprint"></a>ブループリントを作成する
 
@@ -152,11 +157,12 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 ::: zone target="chromeless"
 
 1. **[Blueprints - Getting started]\(ブループリント - 作業の開始\)** に移動します。
-1. **[ブループリントの作成]** セクションで、 **[作成]** を選択します。
+1. **[ブループリントの作成]** ペインで、 **[作成]** を選択します。
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
-1. **ブループリントの名前**を入力し、適切な**定義の場所**を選択します。
-1. ページの下部の **[次へ:アーティファクト >>]** をクリックし、ブループリントに含まれるアーティファクトを確認します。
-1. **[下書きの保存]** をクリックします。
+1. **ブループリントの名前** ボックスに、ブループリントの名前を入力します。
+1. **[定義の場所]** を選択し、適切な場所を選択します。
+1. **[次へ :アーティファクト >>]** をクリックし、ブループリントに含まれるアーティファクトを確認します。
+1. **[下書きの保存]** を選択します。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -165,11 +171,12 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 ::: zone target="docs"
 
 1. [[Blueprints - Getting started]\(ブループリント - 作業の開始\)](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted) に移動します。
-1. **[ブループリントの作成]** セクションで、 **[作成]** を選択します。
+1. **[ブループリントの作成]** ペインで、 **[作成]** を選択します。
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
-1. **ブループリントの名前**を入力し、適切な**定義の場所**を選択します。
-1. ページの下部の **[次へ:アーティファクト >>]** をクリックし、ブループリントに含まれるアーティファクトを確認します。
-1. **[下書きの保存]** をクリックします。
+1. **ブループリントの名前** ボックスに、ブループリントの名前を入力します。
+1. **[定義の場所]** を選択し、適切な場所を選択します。
+1. **[次へ :アーティファクト >>]** をクリックし、ブループリントに含まれるアーティファクトを確認します。
+1. **[下書きの保存]** を選択します。
 
 ::: zone-end
 
@@ -182,7 +189,9 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 1. **[ブループリント - ブループリントの定義]** に移動します。
 1. 前の手順で作成したブループリントを選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
-1. **[バージョン]** ("1.0" など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
+1. **[Version]\(バージョン\)** ボックスに「1.0」のようなバージョンを入力します。
+1. **[変更に関するメモ]** ボックスに、メモを入力します。
+1. **[発行]** を選択します。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -193,7 +202,11 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 1. [[ブループリント - ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
 1. 前の手順で作成したブループリントを選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
-1. **[バージョン]** ("1.0" など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
+1. **[Version]\(バージョン\)** ボックスに「1.0」のようなバージョンを入力します。
+1. **[変更に関するメモ]** ボックスに、メモを入力します。
+1. **[発行]** を選択します。
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="learn-more"></a>詳細情報
 

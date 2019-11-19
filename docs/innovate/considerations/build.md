@@ -8,12 +8,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 25cc7cac212bffda6d7fa3514de7bb274fc1c17e
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058605"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565731"
 ---
 # <a name="build-with-customer-empathy"></a>顧客の共感を構築する
 

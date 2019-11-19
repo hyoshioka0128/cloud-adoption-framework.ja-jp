@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223749"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566147"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>クラウド ガバナンス設計ガイドと企業ポリシーの合致
 
@@ -27,7 +27,7 @@ ms.locfileid: "71223749"
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="using-the-actionable-governance-guides"></a>実践的なガバナンス ガイドの使用
+## <a name="use-the-actionable-governance-guides"></a>実践的なガバナンス ガイドを使用する
 
 クラウド導入のために Azure プラットフォームを使用する予定がある場合は、クラウド導入フレームワークで、クラウド導入フレームワーク ガバナンス モデルの増分型アプローチについて説明している[実践的なガバナンス ガイド](../guides/index.md)を提供しています。 ストーリー型のこれらのガイドでは、ビジネス リスク、許容の要件、ポリシー ステートメントを含む一般的な導入シナリオが取り上げられていています。これらが、ガバナンスにおける "実用最小限の製品" (MVP) を作り出すことになります。 これらのガイドは、実世界で顧客が経験する Azure でのクラウド導入プロセスの全体を表しています。
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058106"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565560"
 ---
 ::: zone target="docs"
 
@@ -36,7 +36,7 @@ ms.locfileid: "73058106"
 - **定量的 (テストからのフィードバック):** このフィードバックは、開発側が求めるアクションを評価します。
 - **定性的 (顧客からのフィードバック):** このフィードバックは、メトリックが意味することを顧客の声で伝えます。
 
-フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com/) はオープン ソース ソフトウェアのホームです。 商用として開発されたアプリのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)の記事は、自分のリポジトリを開始する際に役立ちます。
+フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープン ソース ソフトウェアのホームです。 商用として開発されたアプリのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)の記事は、自分のリポジトリを開始する際に役立ちます。
 
 Azure の次の各ツールは、GitHub でホストされているプロジェクトと統合されます (または互換性があります)。
 
@@ -126,7 +126,7 @@ API Management サービスを開くには、[Azure portal](https://ms.portal.az
 ### <a name="action"></a>Action
 
 Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。
-これらのツールの使用を開始するには、[Azure DevOps](https://dev.azure.com/) に移動します。
+これらのツールの使用を開始するには、[Azure DevOps](https://dev.azure.com) に移動します。
 
 ::: zone-end
 
@@ -138,11 +138,11 @@ Azure Board と Azure Pipelines には、GitHub および Azure とは別のポ�
 
 DevOps プロジェクトを作成するには:
 
-1. **Azure DevOps プロジェクト**にアクセスします。
+1. **Azure DevOps Projects** に移動します。
 2. **[DevOps プロジェクトの作成]** を選択します。
 3. **[Runtime, Framework and Service]\(ランタイム、フレームワーク、サービス\)** を選択します。
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -152,8 +152,8 @@ DevOps プロジェクトを作成するには:
 
 次の記事は、Azure Boards と GitHub を併用してフィードバックを一元化し、管理する際に役立ちます。
 
-- [Azure Boards の概要](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
-- [Azure Boards と GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
+- [Azure Boards の概要](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards と GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[パイプラインでループを閉じる](#tab/pipelines)
 
@@ -165,13 +165,13 @@ DevOps プロジェクトを作成するには:
 
 1. **[App Service]** に移動します。
 2. 一覧から目的のアプリケーションを選択します。
-3. [App Services] ウィンドウの **[デプロイ]** セクションで、 **[デプロイ センター]** を選択します。
+3. [App Services] ペインの **[デプロイ]** セクションで、 **[デプロイ センター]** を選択します。
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

@@ -8,22 +8,22 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7b77181dd8ef6efe655b56489e5d4e6b210382b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0bf778b89ed91069b9387f7bbdc5f27f05480e0c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031348"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565325"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>フェーズ 3: 継続中の管理とセキュリティ
 
-Azure 管理サービスをオンボードした後、進行中の操作をサポートする操作とセキュリティ構成に重点を置く必要があります。 ここではまず、Azure Security Center を確認して環境を保護します。 そのうえで、サーバーのコンプライアンスを維持するポリシーを構成し、一般的なタスクを自動化します。 このセクションは、次のトピックで構成されています。
+Azure サーバー管理サービスをオンボードした後、進行中の操作をサポートする操作とセキュリティ構成に重点を置く必要があります。 ここではまず、Azure Security Center を確認して環境を保護します。 そのうえで、サーバーのコンプライアンスを維持するポリシーを構成し、一般的なタスクを自動化します。 このセクションは、次のトピックで構成されています。
 
-- **[セキュリティに関する推奨事項に対処する。](#address-security-recommendations)** Azure Security Center から、ご利用の環境のセキュリティを強化するための推奨事項が得られます。 推奨事項を実践したら、セキュリティ スコアを通じてその効果を確認できます。
-- **[ゲスト構成ポリシーを有効にします。](./guest-configuration-policy.md)** Azure Policy のゲスト構成機能を有効にして、仮想マシンの設定を監査します。 たとえば、いずれかの証明書の期限が切れそうになっているかどうかを確認できます。
+- **[セキュリティに関する推奨事項に対処する。](#address-security-recommendations)** Azure Security Center から、ご利用の環境のセキュリティを強化するための推奨事項が得られます。 これらの推奨事項を実践すると、セキュリティ スコアにその効果が反映されます。
+- **[ゲスト構成ポリシーを有効にします。](./guest-configuration-policy.md)** Azure Policy のゲスト構成機能を使用して、仮想マシンの設定を監査します。 たとえば、いずれかの証明書の期限が切れそうになっているかどうかを確認できます。
 - **[重要な変更を追跡し、警告します。](./enable-tracking-alerting.md)** トラブルシューティング時に、考慮すべき最初の質問は、"何が変更されたか" です。 この記事では、変更を追跡し、重要なコンポーネントを予防的に監視するアラートを作成する方法を示します。
 - **[更新スケジュールを作成します。](./update-schedules.md)** 更新プログラムのインストールをスケジュールして、すべてのサーバーに最新の更新プログラムが存在するようにします。
-- **[Azure Policy の一般的な例。](./common-policies.md)** 一般的な管理ポリシーの例を示します。
+- **[Azure Policy の一般的な例。](./common-policies.md)** この記事では、一般的な管理ポリシーの例を示します。
 
 ## <a name="address-security-recommendations"></a>セキュリティに関する推奨事項に対処する
 

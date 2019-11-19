@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a429aa445a7188a98593ec27892fb6ded8f9eb45
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223026"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565968"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a64a069dcebb12cf550f697561b76903e6d01bf
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 116119530ba5cedcdad836b219b43f23f74d9afc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967343"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566014"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>シンプルなワークロード向けガバナンス設計
 
@@ -25,7 +25,7 @@ ms.locfileid: "71967343"
 - シンプルなワークロードのデプロイと保守を担当する 1 人の**ワークロード所有者**の ID を管理する。 ワークロード所有者には、リソースの作成、読み取り、更新、および削除のアクセス許可、および ID 管理システムで他のユーザーにこれらの特権を委任するアクセス許可が必要です。
 - シンプルなワークロードのすべてのリソースを 1 つの管理単位として管理する。
 
-## <a name="licensing-azure"></a>Azure のライセンス
+## <a name="azure-licensing"></a>Azure のライセンス
 
 ガバナンス モデルの設計を開始する前に、Azure のライセンスの取得方法を理解することが重要です。 ご自身の Azure ライセンスに関連付けられている管理者アカウントには、ご使用の Azure リソースに対する最高レベルのアクセス権が付与されているためです。 これらの管理者アカウントにより、ご自身のガバナンス モデルの基礎が形成されます。
 
@@ -92,14 +92,14 @@ Azure **アカウント所有者**は、[ロールベースのアクセス制御
 
 この場合も、組み込みの**所有者**ロールによって、リソース グループ スコープで、すべてのアクセス許可が**ワークロード所有者**に付与されます。 先ほど説明したように、このロールはサブスクリプション レベルから継承されます。 このスコープで別のロールがこのユーザーに割り当てられると、そのロールはこのスコープにのみ適用されます。
 
-最下位レベルの管理スコープは**リソース** レベルです。 リソース レベルで適用された操作は、リソース自体にのみ適用されます。 また、前と同様に、リソース レベルのアクセス許可は、リソース グループ スコープから継承されます。 たとえば、**ワークロード所有者**が[仮想ネットワーク](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)をリソース グループにデプロイするとどうなるかを見てみましょう。
+最下位レベルの管理スコープは**リソース** レベルです。 リソース レベルで適用された操作は、リソース自体にのみ適用されます。 前と同様に、リソース レベルのアクセス許可は、リソース グループ スコープから継承されます。 たとえば、**ワークロード所有者**が[仮想ネットワーク](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)をリソース グループにデプロイするとどうなるかを見てみましょう。
 
 ![**ワークロード所有**がリソースを作成する](../../_images/govern/design/governance-1-8.png)
 *図 8 - ワークロード所有者がリソースを作成し、リソース スコープで組み込みの所有者ロールを継承する。*
 
 **ワークロード所有者**は、リソース スコープで所有者ロールを継承します。つまり、ワークロード所有者には、仮想ネットワークに対するすべてのアクセス許可が付与されます。
 
-## <a name="implementing-the-basic-resource-access-management-model"></a>基本的なリソース アクセス管理モデルの実装
+## <a name="implement-the-basic-resource-access-management-model"></a>基本的なリソース アクセス管理モデルを実装する
 
 次は、前に設計したガバナンス モデルを実装する方法について説明します。
 

@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8828b79aa27083b3b3e0a0188ac9e538089c52cf
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058579"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565684"
 ---
 # <a name="empower-adoption"></a>導入の強化
 
 イノベーションの最終的なテストは、その発明に対する顧客の反応です。 仮説は正しかったのか。 顧客はこのソリューションを使用するのか。 期待する割合のユーザーのニーズに合うようにスケーリングされているのか。 最も重要なこととして、ユーザーは使い続けてくれるのか。 これらの質問は、実用最小限の製品 (MVP) ソリューションがデプロイされるまで確認できません。 この記事では、導入の強化の規範に焦点を絞って説明します。
 
-## <a name="reducing-friction-to-adoption"></a>導入に対する摩擦の削減
+## <a name="reduce-friction-that-affects-adoption"></a>導入に影響する摩擦の軽減
 
 テクノロジとプロセスを組み合わせることによって最小限に抑えることができる、導入に対する重要な摩擦ポイントがいくつかあります。 継続的インテグレーション (CI)/継続的デプロイ (CD) または DevOps プロセスの知識がある読者の場合、以下の内容は熟知していると思われるかもしれません。 この記事は、クラウド導入チームのために出発点を確立することを目的としています。これにより、イノベーションとフィードバック ループが促進されます。 長期的には、この出発点は、製品やチームが成熟するにつれて、より堅牢な CI/CD または DevOps アプローチに発展する可能性があります。
 

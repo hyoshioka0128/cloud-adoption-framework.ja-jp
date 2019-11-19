@@ -47,7 +47,7 @@ ID ベースラインは、すべてのガバナンスに対する基本的な�
 - Azure 管理グループは使用されていますが、比較的単純な階層であることが予想されます。
 - 管理グループ間で RBAC 要件、Resource Manager テンプレート、および Azure Policy を適用することによってサブスクリプションをデプロイおよび更新するには、Azure Blueprints が使用されます。
 
-## <a name="applying-the-dependent-patterns"></a>依存パターンの適用
+## <a name="apply-the-dependent-patterns"></a>依存パターンを適用する
 
 以下の決定は、上記のポリシー適用戦略によって強制されるパターンを表します。
 

@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058181"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656655"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 
@@ -115,7 +115,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 > [!TIP]
 > 命名規則のヒント
 >
-> - [パターンと実践のガイダンス](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)を確認し、可能であれば採用してください。 このガイダンスは意味のある命名規則を決定する際に役立ち、例も豊富に含まれています。
+> - [パターンと実践のガイダンス](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)を確認し、可能であれば採用してください。 このガイダンスは意味のある命名規則を決定する際に役立ち、例も豊富に含まれています。
 > - Resource Manager ポリシーを使用すると、命名規則の適用に役立ちます。
 >
 > 名前を後から変更するのは難しいことに注意してください。ここで数分間かけておけば後で面倒が起きません。
@@ -263,7 +263,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 - **Service Map:** Service Map では、インフラストラクチャ コンポーネント、そのプロセス、および他のコンピューターや外部プロセスへの相互依存関係に関するグラフィカル ビューが提供されます。 これにより、Log Analytics 内のイベント、パフォーマンス データ、管理ソリューションが統合されます。
 
 > [!TIP]
-> 個々のアラートを作成する前に、Azure Alerts 全体で使用される共有アクション グループのセットを作成して管理します。 これによって、受信者リスト、通知配信方法 (電子メール、SMS 電話番号)、および外部アクションに対する Webhooks (Azure Automation Runbook、Azure Functions / Logic Apps、ITSM) のライフサイクルを一元的に管理できるようになります。
+> 個々のアラートを作成する前に、Azure Alerts 全体で使用される共有アクション グループのセットを作成して管理します。 これによって、受信者リスト、通知配信方法 (電子メール、SMS 電話番号)、および外部アクションに対する Webhooks (Azure Automation Runbook、Azure Functions と Logic Apps、ITSM) のライフサイクルを一元的に管理できるようになります。
 
 ## <a name="cost-management"></a>コスト管理
 
@@ -284,7 +284,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 - **Power BI Azure Consumption Insights:** 組織のために独自の視覚エフェクトを作成しますか。 その場合は、Power BI 用の Azure Consumption Insights コンテンツ パックをツールとして選択してください。 このコンテンツ パックと Power BI を使用すると、組織を表すためにカスタムの視覚エフェクトを作成し、コストについて詳しい分析を実行し、さらに充実させるために他のデータ ソースを追加することもできます。
 
-- **Consumption API:** [Consumption API](/rest/api/consumption) を使用すると、コストと使用状況のデータに加え、予算、予約インスタンス、Marketplace 請求料金に関する情報にもプログラミングでアクセスできます。 これらの API にアクセスできるのは、エンタープライズ加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](/cli/azure/consumption?view=azure-cli-latest)こともできます。
+- **Consumption API:** [Consumption API](https://docs.microsoft.com/rest/api/consumption) を使用すると、コストと使用状況のデータに加え、予算、予約インスタンス、Marketplace 請求料金に関する情報にもプログラミングでアクセスできます。 これらの API にアクセスできるのは、エンタープライズ加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest)こともできます。
 
 長期の熟練したクラウド ユーザーであるお客様は、特定のベスト プラクティスに従います。
 
@@ -303,7 +303,7 @@ Azure Automation、Event Grid、Azure CLI といった Microsoft 製ツールか
 
 - **Azure Automation** はクラウドベースの機能です。これを使用して、(PowerShell または Python で) Runbook を作成し、プロセスのオートメーション、リソースの構成、さらにパッチの適用も実行することができます。 [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) には、デプロイに不可欠な広範なクロス プラットフォーム機能のセットが含まれますが、範囲が広すぎるためここで詳しく説明することはできません。
 - **Event Grid** は、Azure 環境内のイベントに対応することができるフル マネージドのイベント ルーティング システムです。 Azure Automation が成熟したクラウド編成の結合組織であるのと同様に、[Event Grid](https://docs.microsoft.com/azure/event-grid) は優れたオートメーションの結合組織です。 Event Grid を使用すると、新しいリソースが作成されるたびに管理者に電子メールを送信して、そのリソースをデータベースに記録する、単純なサーバーレス アクションを作成できます。 その同じ Event Grid が、リソースが削除されたときに通知し、アイテムをデータベースから削除することができます。
-- **Azure Cloud Shell** は、Azure でリソースを管理するための、ブラウザーベースのインタラクティブな[シェル](https://docs.microsoft.com/azure/cloud-shell/overview)です。 これは、PowerShell または Bash に最適な環境を提供します。必要に応じて起動 (および管理) されるため、スクリプトを実行するために一貫性のある環境を得ることができます。 Azure Cloud Shell では、環境のオートメーションを行うために、既にインストールされている他の重要なツールにアクセスできます。[Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) や [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) の他にも、コンテナー、データベース (sqlcmd) などを管理するための[ツール](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)がますます増加しています。
+- **Azure Cloud Shell** は、Azure でリソースを管理するための、ブラウザーベースのインタラクティブな[シェル](https://docs.microsoft.com/azure/cloud-shell/overview)です。 これは、PowerShell または Bash に最適な環境を提供します。必要に応じて起動 (および管理) されるため、スクリプトを実行するために一貫性のある環境を得ることができます。 Azure Cloud Shell では、環境のオートメーションを行うために、既にインストールされている他の重要なツールにアクセスできます。[Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) や [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) の他にも、コンテナー、データベース (sqlcmd) などを管理するための[ツール](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)がますます増加しています。
 
 オートメーションはフルタイム ジョブであり、またたく間にクラウド チームにおける最も重要な運用タスクの 1 つになろうとしています。 "オートメーション ファースト" のアプローチを採用する組織は、 Azure を使用して大きな成功を収めます。
 

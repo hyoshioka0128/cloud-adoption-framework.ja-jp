@@ -1,54 +1,52 @@
 ---
-title: オンボードとアラート構成の自動化
+title: オンボーディングの自動化
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: オンボードとアラート構成の自動化
+description: オンボーディングの自動化
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221380"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565405"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 
-Azure サーバー管理サービスのデプロイの効率を向上させるには、このガイダンスの前のセクションで説明されている推奨事項を使用して管理サービスのデプロイを自動化することを検討してください。 以降のセクションで提供されているスクリプトとサンプル テンプレートは、オンボード プロセスの独自の自動化を開発するための出発点です。
+Azure サーバー管理サービスのデプロイの効率を向上させるには、このガイドの前のセクションで説明されているようにデプロイを自動化することを検討してください。 以降のセクションで提供されているスクリプトとサンプル テンプレートは、オンボード プロセスの独自の自動化を開発するための出発点です。
 
-## <a name="onboarding-by-using-automation"></a>Automation を使用したオンボード
+このガイダンスには、[CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples) という、サンプル コードのサポートされている GitHub リポジトリがあります。 リポジトリでは、Azure サーバー管理サービスのデプロイの自動化に役立つスクリプト例と Azure Resource Manager テンプレートが提供されます。
 
-このガイダンスには、[CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples) という、サンプル コードのサポートされている GitHub リポジトリがあります。ここでは、Azure サーバー管理サービスのデプロイの自動化に役立つスクリプト例と Azure Resource Manager テンプレートが提供されています。
+サンプル ファイルでは、Azure PowerShell コマンドレットを使用して次のタスクを自動化する方法が示されています。
 
-これらのサンプル ファイルでは、Azure PowerShell コマンドレットを使用して次のタスクを自動化する方法が示されています。
+- [Log Analytics ワークスペース](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)を作成します。 (または、要件を満たしている場合は既存のワークスペースを使用します。 詳細については、[ワークスペースの計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)に関するページを参照してください。
 
-1. [Log Analytics ワークスペース](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)を作成します (または、要件を満たしている場合は既存のワークスペースを使用します&mdash;[ワークスペース計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)に関するページを参照)。
+- Automation アカウントを作成します。 (または、要件を満たしている場合は既存のアカウントを使用します。 詳細については、[ワークスペースの計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)に関するページを参照してください)。
 
-2. Automation アカウントを作成します (または、要件を満たしている場合は既存のアカウントを使用します。[ワークスペース計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)に関するページを参照してください)。
+- Automation アカウントと Log Analytics ワークスペースをリンクします。 Azure portal を使用してオンボードしている場合、このステップは必要ありません。
 
-3. Automation アカウントと Log Analytics ワークスペースをリンクします (ポータルを通じてオンボードする場合は不要です)。
+- ワークスペースに対して Update Management および Change Tracking と Inventory を有効にします。
 
-4. ワークスペースに対して Update Management および Change Tracking と Inventory を有効にします。
+- Azure Policy を使用して Azure VM をオンボードします。 ポリシーによって Log Analytics エージェントと Microsoft Dependency Agent が Azure VM にインストールされます。
 
-5. Azure Policy を使用して Azure VM をオンボードします (ポリシーによって Log Analytics Agent と Dependency Agent が Azure VM にインストールされます)。
+- Log Analytics エージェントをオンプレミス サーバーにインストールすることで、それらのサーバーをオンボードします。
 
-6. Log Analytics エージェントをオンプレミス サーバーにインストールすることで、それらのサーバーをオンボードします。
-
-次の表で説明されているファイルはこのサンプル内で使用されています。また、これらをカスタマイズして、独自のデプロイ シナリオをサポートすることができます。
+このサンプルでは、次の表で説明するファイルが使用されています。 これらをカスタマイズして、独自のデプロイ シナリオをサポートできます。
 
 | ファイル名 | 説明 |
 |-----------|-------------|
-| New-AMSDeployment.ps1 | オンボードを自動化するメインの調整スクリプト。 この PowerShell スクリプトには既存のサブスクリプションが必要ですが、リソース グループ、場所、ワークスペース、および Automation アカウントが存在しない場合は作成されます。 |
+| New-AMSDeployment.ps1 | オンボードを自動化するメインの調整スクリプト。 リソース グループ、場所、ワークスペース、Automation アカウントがまだ存在しない場合は、それらが作成されます。 この PowerShell スクリプトには、既存のサブスクリプションが必要です。 |
 | Workspace-AutomationAccount.json | ワークスペースと Automation アカウント リソースをデプロイする Resource Manager テンプレート。 |
-| WorkspaceSolutions.json | Log Analytics ワークスペースで目的のソリューションを有効にする Resource Manager テンプレート。 |
+| WorkspaceSolutions.json | Log Analytics ワークスペース内で目的のソリューションを有効にする Resource Manager テンプレート。 |
 | ScopeConfig.json | Change Tracking ソリューションを備えたオンプレミスのサーバーにオプトイン モデルを使用する Resource Manager テンプレート。 オプトイン モデルの使用はオプションです。 |
-| Enable-VMInsightsPerfCounters.ps1 | サーバーに対して VMInsight を有効にし、パフォーマンス カウンターを構成する PowerShell スクリプト。 |
+| Enable-VMInsightsPerfCounters.ps1 | サーバーに対して VM Insights を有効にし、パフォーマンス カウンターを構成する PowerShell スクリプト。 |
 | ChangeTracking-Filelist.json | Change Tracking によって監視されるファイルの一覧を定義する Resource Manager テンプレート。 |
 
-New-AMSDeployment.ps1 は、次のコマンドを使用して実行できます。
+New-AMSDeployment.ps1 を実行するには次のコマンドを使用します。
 
 ```powershell
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}

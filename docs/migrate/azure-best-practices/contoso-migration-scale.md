@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1e8b42170a4db025087acdabba14544cea9c8194
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548127"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566459"
 ---
 # <a name="scale-a-migration-to-azure"></a>Azure への移行のスケーリング
 
@@ -174,7 +174,7 @@ Contoso は Azure Migrate を次のように使用します。
 
 #### <a name="database-tools"></a>データベース ツール
 
-Azure Migrate に加えて、Contoso はデータベース評価専用のツールを重点的に使用します。 [Data Migration Assistant](/sql/dma/dma-overview?view=sql-server-2017) のようなツールは、移行対象の SQL Server データベースを評価するために役立ちます。
+Azure Migrate に加えて、Contoso はデータベース評価専用のツールを重点的に使用します。 [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017) のようなツールは、移行対象の SQL Server データベースを評価するために役立ちます。
 
 Data Migration Assistant (DMA) は、Azure SQL Database、Azure IaaS VM 上で実行されている SQL Server、Azure SQL Managed Instance などの幅広い Azure データベース ソリューションとの互換性がオンプレミス データベースにあるかどうかを把握するのに役立ちます。
 
@@ -196,7 +196,7 @@ Contoso はおおまかに次の 4 つの移行方法を戦略として検討で
 
 **戦略** | **詳細** | **使用方法**
 --- | --- | ---
-**リホスト** | これは "リフト アンド シフト" による移行と呼ばれることが多く、コードを編集することなく既存のアプリをすばやく Azure に移行できるオプションです。<br/><br/> アプリはそのままの状態で移行されるので、コード変更に伴うリスクやコストなしにクラウドのメリットを享受できます。 | Contoso は、コードの変更が不要な、あまり戦略的でないアプリをリホストすることができません。
+**リホスト** | これは "_リフト アンド シフト_" による移行と呼ばれることが多く、コードを編集することなく既存のアプリをすばやく Azure に移行できるオプションです。<br/><br/> アプリはそのままの状態で移行されるので、コード変更に伴うリスクやコストなしにクラウドのメリットを享受できます。 | Contoso は、コードの変更が不要な、あまり戦略的でないアプリをリホストすることができません。
 **リファクター** | "再パッケージ化" とも呼ばれるこの戦略は、アプリを Azure PaaS に接続し、クラウド機能を有効に活用するために、最小限のアプリ コードまたは構成の変更を必要とします。 | Contoso は戦略的なアプリをリファクターして同じ基本機能を維持しながら、Azure App Service などの Azure プラットフォーム上で実行するように移行できます。<br/><br/> これには最小限のコード変更が必要です。<br/><br/> 一方、これは Microsoft によって管理されないので、Contoso は仮想マシン プラットフォームを維持する必要があります。
 **リアーキテクト** | この戦略では、クラウドの機能とスケールに合わせてアプリのアーキテクチャを最適化するために、アプリケーション コード ベースを変更または拡張します。<br/><br/> 既存のアプリが最先端のものとなり、回復性とスケーラビリティに優れ、単独でのデプロイが可能なアーキテクチャが実現します。<br/><br/> Azure サービスを利用すれば、このプロセスをスピードアップできるほか、自信を持ってアプリケーションをスケーリングすることや、アプリを簡単に管理することが可能となります。
 **リビルド** | この戦略では、クラウドネイティブ テクノロジを使って、アプリケーションをゼロからリビルドします。<br/><br/> Azure の PaaS (サービスとしてのプラットフォーム) は、クラウド内に完全な開発およびデプロイ環境を提供します。 それにより、ソフトウェア ライセンスの費用と複雑さが削減され、基盤となるアプリのインフラストラクチャ、ミドルウェア、その他のリソースが不要になります。 | Contoso は、サーバーレスのコンピューターやマイクロサービスなどのクラウド テクノロジを活用するために、重要なアプリケーションを一から書き直すことができます。<br/><br/> Contoso は開発したアプリとサービスを管理し、その他すべては Azure によって管理されます。
@@ -221,9 +221,9 @@ Azure Site Recovery は、ディザスター リカバリーを調整し、Azure
 
 Contoso は既に [POC を完了](./contoso-migration-rehost-vm.md)し、Site Recovery がクラウドへの移行にどのように役立つかを確認済みです。
 
-##### <a name="using-site-recovery-at-scale"></a>Site Recovery の大規模な使用
+##### <a name="use-site-recovery-at-scale"></a>Site Recovery を大規模に使用する
 
-Contoso は、複数の "リフト アンド シフト" 移行を実行することを計画しています。 これを確実に行うには、Site Recovery によって一度におよそ 100 ずつ VM を一括レプリケートすることになります。 これがどのように機能するかを把握するために、Contoso は提案された Site Recovery による移行について、キャパシティ プランニングを実行する必要があります。
+Contoso は、複数のリフト アンド シフト移行を実行することを計画しています。 これを確実に行うには、Site Recovery によって一度におよそ 100 ずつ VM を一括レプリケートすることになります。 これがどのように機能するかを把握するために、Contoso は提案された Site Recovery による移行について、キャパシティ プランニングを実行する必要があります。
 
 - Contoso は、自社のトラフィックの量に関する情報を収集する必要があります。 具体的には以下のとおりです。
   - Contoso は、レプリケートする対象である VM の変化率を確認する必要があります。
@@ -281,7 +281,7 @@ Azure Database Migration Service は、複数のデータベース ソースか�
 
 DMS は、唯一の Microsoft データベース移行ツールではありません。 [ツールとサービスの比較](https://blogs.msdn.microsoft.com/datamigration/2017/10/13/differentiating-microsofts-database-migration-tools-and-services)を参照してください。
 
-##### <a name="using-dms-at-scale"></a>DMS の大規模な使用
+##### <a name="use-dms-at-scale"></a>DMS を大規模に使用する
 
 SQL Server からの移行時に、Contoso は DMS を使用します。
 
@@ -291,7 +291,7 @@ SQL Server からの移行時に、Contoso は DMS を使用します。
 
 - Contoso のもう 1 つのスケーリング方法は、Azure SQL または MySQL データベースのターゲット インスタンスを、データ移行中は Premium レベル SKU に一時的にスケールアップすることです。 これにより、下位レベルの SKU 使用時にデータ転送活動に影響を与える可能性があるデータベース調整を最小限に抑えることができます。
 
-##### <a name="using-other-tools"></a>その他のツールの使用
+##### <a name="use-other-tools"></a>その他のツールを使用する
 
 DMS に加えて、Contoso は VM 情報を識別するために他のツールやサービスを使用できます。
 

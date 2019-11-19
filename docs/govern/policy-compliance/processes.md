@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222047"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566131"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -83,7 +83,7 @@ ms.locfileid: "71222047"
 | セキュリティ ベースライン | 不審なユーザー ログイン行為を検出する。 | IT セキュリティ チームに連絡し、疑わしいユーザー アカウントを無効にする。 |
 | リソースの整合性 | ワークロードの CPU 使用率が 90% を超えている。 | IT 運用チームに連絡し、リソースをスケールアウトして負荷を処理する。 |
 
-## <a name="monitoring-and-compliance-automation"></a>監視とコンプライアンスの自動化
+## <a name="automation-of-monitoring-and-compliance"></a>監視とコンプライアンスの自動化
 
 コンプライアンス違反のトリガーとアクションを定義したら、監視とポリシーのコンプライアンスの戦略を自動化する目的で、クラウド プラットフォームのログ記録ツール、報告ツール、その他の機能を最も効果的に利用する方法を計画できます。
 

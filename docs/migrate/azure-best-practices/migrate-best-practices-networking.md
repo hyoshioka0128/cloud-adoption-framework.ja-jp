@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bba3d7f028849ec3397e14dbdb0f39dfa246660
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058885"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565224"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス
 
@@ -120,7 +120,7 @@ VNet をデプロイすると、Azure によって既定で DNS サーバーが�
 **詳細情報:**
 
 - 独自の DNS サーバーを使用するときの名前解決[について学習する](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure)。
-- DNS の名前付け規則と制限事項[について学習する](../../ready/considerations/naming-and-tagging.md)。
+- DNS の名前付け規則と制限事項[について学習する](../../ready/azure-best-practices/naming-and-tagging.md)。
 
 ## <a name="best-practice-set-up-availability-zones"></a>ベスト プラクティス:可用性ゾーンを設定する
 
@@ -278,7 +278,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
 
 - [ルーティングの最適化](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing)について学習します。
 
-## <a name="securing-vnets"></a>VNet のセキュリティ保護
+## <a name="secure-vnets"></a>セキュリティで保護された VNet
 
 VNet をセキュリティ保護する責任は、Microsoft とユーザーの両方にあります。 Microsoft では、多くのネットワークの機能だけでなく、リソースの安全性を確保するサービスが提供されています。 VNet のセキュリティを設計するときに従う必要があるベストプラクティスには、境界ネットワークの実装、フィルター処理とセキュリティ グループの使用、リソースと IP アドレスへのアクセスのセキュリティ保護されたアクセス、および攻撃に対する保護の実装が含まれます。
 

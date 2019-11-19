@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 75f19fcdc9f23066d5a6471cd79c0a6a00869554
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: cb5653de592fb92fa9ad9f5866997703a928ee4e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032297"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566590"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>クラウド変革のための財務モデルを作成する
 
@@ -28,13 +28,13 @@ ms.locfileid: "71032297"
 
 次のセクションでは、初期投資と投資利益 (収益) を計算するために必要となるデータについて説明します。
 
-## <a name="calculating-initial-investment"></a>初期投資の計算
+## <a name="calculate-initial-investment"></a>初期投資を計算する
 
 初期投資は、変革を完了するために必要な資本コストと運用経費です。 コストの分類は、会計モデルや CFO の優先順位によって異なる場合があります。 しかし、このカテゴリには、変革するためのプロフェッショナル サービス、変革中にのみ使用されるソフトウェア ライセンス、変革中のクラウド サービスのコスト、および可能性として変革中の定額給従業員のコストなどが含まれます。
 
 初期投資の見積もりを作成するには、これらのコストを追加します。
 
-## <a name="calculating-the-gain-from-investment"></a>投資利益の計算
+## <a name="calculate-the-gain-from-investment"></a>投資利益を計算する
 
 投資利益の計算では多くの場合、ビジネス成果とそれに関連した技術的な変更に固有の 2 番目の数式が必要です。 収益の計算は、コスト削減の計算よりも困難です。
 

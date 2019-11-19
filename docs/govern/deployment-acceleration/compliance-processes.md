@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a393791aac072cb9a135c6fc11e08fc653817742
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: de64b03c6c6113261426beed5de729eb6927a440
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222592"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566391"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>デプロイ高速化ポリシーのコンプライアンス プロセス
 

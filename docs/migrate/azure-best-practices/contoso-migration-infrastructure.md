@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 13a3a8a8734ffe67298d09544882c612916b995f
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058906"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566498"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>移行インフラストラクチャをデプロイする
 
@@ -179,7 +179,7 @@ Contoso の管理者は、次の表に示すように Azure リソース グル�
 
     ![リソース グループ](./media/contoso-migration-infrastructure/resource-groups.png)
 
-##### <a name="scaling-resource-groups"></a>リソース グループのスケーリング
+##### <a name="scale-resource-groups"></a>リソース グループをスケーリングする
 
 今後、Contoso では、ニーズに基づいて他のリソース グループを追加することになります。 たとえば、アプリまたはサービスごとのリソース グループを定義して、それらを独立に管理したり、セキュリティ保護したりできるようにします。
 

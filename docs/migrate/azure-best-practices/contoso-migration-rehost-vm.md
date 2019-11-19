@@ -1,7 +1,7 @@
 ---
-title: Azure Site Recovery を使用した Azure VM への移行によってアプリを再ホストする
+title: Azure Site Recovery を使用して Azure VM 上のアプリを再ホストする
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Azure Site Recovery サービスを使用したオンプレミス マシンの Azure への "リフトアンドシフト" 移行によって、Contoso がオンプレミス アプリを再ホストする方法を説明します。
+description: Azure Site Recovery サービスを使用したオンプレミス マシンの Azure へのリフトアンドシフト移行によって、Contoso がオンプレミス アプリを再ホストする方法を説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 3de31e419ea701f8e7e7091d14db1884a4b641d2
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058196"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566476"
 ---
-# <a name="rehost-an-on-premises-app-to-azure-vms"></a>オンプレミス アプリを Azure VM にリホストする
+# <a name="rehost-an-on-premises-app-on-azure-vms"></a>オンプレミス アプリを Azure VM 上に再ホストする
 
 この記事では、Contoso という架空の会社が、アプリの VM を Azure VM に移行して、VMware VM 上で実行される 2 階層の Windows .NET フロントエンド アプリを再ホストする方法を説明します。
 
@@ -75,7 +75,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **考慮事項** | **詳細**
 --- | ---
-**長所** | アプリの VM はどちらも変更を加えることなく Azure に移されるため、移行が簡単で済みます。<br/><br/> Contoso は両方のアプリの VM に "リフトアンドシフト" を使用するため、アプリのデータベース用に特別な構成や移行ツールは不要です。<br/><br/> Contoso は、Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。<br/><br/> Contoso は、Azure で引き続き アプリの VM を完全に制御できます。
+**長所** | アプリの VM はどちらも変更を加えることなく Azure に移されるため、移行が簡単で済みます。<br/><br/> Contoso は両方のアプリの VM にリフトアンドシフト アプローチを使用するため、アプリのデータベース用に特別な構成や移行ツールは不要です。<br/><br/> Contoso は、Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。<br/><br/> Contoso は、Azure で引き続き アプリの VM を完全に制御できます。
 **短所** | WEBVM と SQLVM では Windows Server 2008 R2 が実行されています。 このオペレーティング システムは、特定のロールを対象に Azure でサポートされます (2018 年 7 月)。 [詳細情報](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines)。<br/><br/> アプリの Web 層とデータ層は、依然として単一フェールオーバー ポイントになります。<br/><br/> SQLVM が動作する SQL Server 2008 R2はメインストリーム サポートの対象外です。 ただし、Azure VM ではサポートされています (2018 年 7 月)。 [詳細情報](https://support.microsoft.com/help/956893)。<br/><br/> Contoso は今後も、Azure App Service や Azure SQL Database といったマネージド サービスにアプリを移行するのではなく、Azure VM としてアプリをサポートしていく必要があります。
 
 <!-- markdownlint-enable MD033 -->
@@ -198,16 +198,16 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
 
 6. **[ターゲット設定]** で、サブスクリプションと、移行先となるターゲット リージョンを選択し、移行後に Azure VM が配置されるリソース グループを指定します。 **[仮想ネットワーク]** で、移行後に Azure VM の参加先となる Azure VNet およびサブネットを選択します。
 
-7. **[Azure ハイブリッド特典]** で、
+7. **[Azure ハイブリッド特典]** で、次のように選択します。
 
     - Azure ハイブリッド特典を適用しない場合は、 **[いいえ]** を選択します。 その後、 **[次へ]** をクリックします。
     - アクティブなソフトウェア アシュアランスまたは Windows Server のサブスクリプションの対象となっている Windows Server マシンがあり、移行中のマシンにその特典を適用する場合は、 **[はい]** を選択します。 その後、 **[次へ]** をクリックします。
 
 8. **[コンピューティング]** で、VM の名前、サイズ、OS ディスクの種類、可用性セットを確認します。 VM は [Azure の要件](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements)に準拠している必要があります。
 
-    - **VM サイズ**: 評価の推奨事項を使用している場合は、[VM サイズ] ドロップダウンに推奨サイズが表示されます。 それ以外の場合は、Azure Migrate によって、Azure サブスクリプション内の最も近いサイズが選択されます。 または、 **[Azure VM サイズ]** でサイズを手動で選択します。
-    - **OS ディスク**:VM の OS (ブート) ディスクを指定します。 OS ディスクは、オペレーティング システムのブートローダーとインストーラーがあるディスクです。
-    - **可用性セット**:移行後に VM を Azure 可用性セットに配置する必要がある場合は、セットを指定します。 このセットは、移行用に指定するターゲット リソース グループ内に存在する必要があります。
+    - **VM サイズ:** 評価の推奨事項を使用している場合は、[VM サイズ] ドロップダウンに推奨サイズが表示されます。 それ以外の場合は、Azure Migrate によって、Azure サブスクリプション内の最も近いサイズが選択されます。 または、 **[Azure VM サイズ]** でサイズを手動で選択します。
+    - **OS ディスク:** VM の OS (ブート) ディスクを指定します。 OS ディスクは、オペレーティング システムのブートローダーとインストーラーがあるディスクです。
+    - **可用性セット:** 移行後に VM を Azure 可用性セットに配置する必要がある場合は、セットを指定します。 このセットは、移行用に指定するターゲット リソース グループ内に存在する必要があります。
 
 9. **[ディスク]** で、VM ディスクを Azure にレプリケートするかどうかを指定し、Azure でのディスクの種類 (Standard SSD か HDD、または Premium マネージド ディスク) を選択します。 その後、 **[次へ]** をクリックします。
     - レプリケーションからディスクを除外できます。

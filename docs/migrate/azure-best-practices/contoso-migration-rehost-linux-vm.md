@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: aa7ce8c882521e9a346e3f00da8c664af7585423
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: c1d7549a820b8f830fc577ce82ebc4d2f1dbfcb2
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058225"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566545"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>オンプレミス アプリを Azure VM にリホストする
 
@@ -69,8 +69,8 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **考慮事項** | **詳細**
 --- | ---
-**長所** | アプリの VM はどちらも変更を加えることなく Azure に移されるため、移行が簡単で済みます。<br/><br/> Contoso は両方のアプリの VM に "リフトアンドシフト" を使用するため、アプリのデータベース用に特別な構成や移行ツールは不要です。<br/><br/> Contoso は、Azure で引き続き アプリの VM を完全に制御できます。 <br/><br/> アプリの VM では、動作保証済みの Linux ディストリビューション Ubuntu 16.04-TLS が実行されています。 [詳細情報](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。
-**短所** | アプリの Web 層とデータ層は、依然として単一フェールオーバー ポイントになります。 <br/><br/> Contoso は今後も、Azure App Service や Azure Database for MySQL といったマネージド サービスにアプリを移行するのではなく、Azure VM としてアプリをサポートしていく必要があります。<br/><br/> "リフト アンド シフト" の VM 移行によって単純化すれば、[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) の特長 (ビルトインの高可用性、予測可能なパフォーマンス、単純なスケーリング、自動バックアップ、ビルトインのセキュリティ) がフル活用できないことを Contoso は認識しています。
+**長所** | アプリの VM はどちらも変更を加えることなく Azure に移されるため、移行が簡単で済みます。<br/><br/> Contoso は両方のアプリの VM にリフトアンドシフト アプローチを使用するため、アプリのデータベース用に特別な構成や移行ツールは不要です。<br/><br/> Contoso は、Azure で引き続き アプリの VM を完全に制御できます。 <br/><br/> アプリの VM では、動作保証済みの Linux ディストリビューション Ubuntu 16.04-TLS が実行されています。 [詳細情報](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。
+**短所** | アプリの Web 層とデータ層は、依然として単一フェールオーバー ポイントになります。 <br/><br/> Contoso は今後も、Azure App Service や Azure Database for MySQL といったマネージド サービスにアプリを移行するのではなく、Azure VM としてアプリをサポートしていく必要があります。<br/><br/> リフトアンドシフトの VM 移行によって単純化すると、[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) の特長 (ビルトインの高可用性、予測可能なパフォーマンス、単純なスケーリング、自動バックアップ、ビルトインのセキュリティ) がフル活用できないことを Contoso は認識しています。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -164,6 +164,7 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
     ![VM をレプリケートする](./media/contoso-migration-rehost-linux-vm/select-replicate.png)
 
 2. **[レプリケート]** > **[ソースの設定]**  >  **[マシンは仮想化されていますか?]** で、 **[はい (VMware vSphere の場合)]** を選択します。
+
 3. **[オンプレミスのアプライアンス]** で、自分が設定した Azure Migrate アプライアンスの名前、 **[OK]** の順に選択します。
 
     ![ソースの設定](./media/contoso-migration-rehost-linux-vm/source-settings.png)
@@ -178,16 +179,17 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
 5. **[仮想マシン]** で、必要に応じて VM を検索し、移行したい各 VM を確認します。 その後、 **[次へ:ターゲット設定]** をクリックします。
 
 6. **[ターゲット設定]** で、サブスクリプションと、移行先となるターゲット リージョンを選択し、移行後に Azure VM が配置されるリソース グループを指定します。 **[仮想ネットワーク]** で、移行後に Azure VM の参加先となる Azure VNet およびサブネットを選択します。
-7. **[Azure ハイブリッド特典]** で、
+
+7. **[Azure ハイブリッド特典]** で、次のように選択します。
 
     - Azure ハイブリッド特典を適用しない場合は、 **[いいえ]** を選択します。 その後、 **[次へ]** をクリックします。
     - アクティブなソフトウェア アシュアランスまたは Windows Server のサブスクリプションの対象となっている Windows Server マシンがあり、移行中のマシンにその特典を適用する場合は、 **[はい]** を選択します。 その後、 **[次へ]** をクリックします。
 
 8. **[コンピューティング]** で、VM の名前、サイズ、OS ディスクの種類、可用性セットを確認します。 VM は [Azure の要件](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements)に準拠している必要があります。
 
-    - **VM サイズ**: 評価の推奨事項を使用している場合は、[VM サイズ] ドロップダウンに推奨サイズが表示されます。 それ以外の場合は、Azure Migrate によって、Azure サブスクリプション内の最も近いサイズが選択されます。 または、 **[Azure VM サイズ]** でサイズを手動で選択します。
-    - **OS ディスク**:VM の OS (ブート) ディスクを指定します。 OS ディスクは、オペレーティング システムのブートローダーとインストーラーがあるディスクです。
-    - **可用性セット**:移行後に VM を Azure 可用性セットに配置する必要がある場合は、セットを指定します。 このセットは、移行用に指定するターゲット リソース グループ内に存在する必要があります。
+    - **VM サイズ:** 評価の推奨事項を使用している場合は、[VM サイズ] ドロップダウンに推奨サイズが表示されます。 それ以外の場合は、Azure Migrate によって、Azure サブスクリプション内の最も近いサイズが選択されます。 または、 **[Azure VM サイズ]** でサイズを手動で選択します。
+    - **OS ディスク:** VM の OS (ブート) ディスクを指定します。 OS ディスクは、オペレーティング システムのブートローダーとインストーラーがあるディスクです。
+    - **可用性セット:** 移行後に VM を Azure 可用性セットに配置する必要がある場合は、セットを指定します。 このセットは、移行用に指定するターゲット リソース グループ内に存在する必要があります。
 
 9. **[ディスク]** で、VM ディスクを Azure にレプリケートするかどうかを指定し、Azure でのディスクの種類 (Standard SSD か HDD、または Premium マネージド ディスク) を選択します。 その後、 **[次へ]** をクリックします。
     - レプリケーションからディスクを除外できます。

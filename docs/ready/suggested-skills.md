@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025110"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566709"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
@@ -30,16 +30,16 @@ ms.locfileid: "71025110"
 
 準備フェーズでは、技術スタッフは、クラウドに移行されたワークロードをホスト、運用、および管理できる移行ランディング ゾーンを作成するよう求められます。 次のラーニング パスを使用して、必要なスキルの開発を加速することができます。
 
-- [Azure アカウントの作成](/learn/modules/create-an-azure-account):Azure を使用する最初の手順では、アカウントを作成します。 アカウントは、自身がプロビジョニングした Azure サービスを保持し、ID、課金、ユーザー設定などの個人的設定を処理します。
-- [Azure ポータル](/learn/modules/tour-azure-portal):Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
-- [Azure 入門](/learn/modules/welcome-to-azure):Azure では最初に、クラウドの最初の仮想マシンを作成し構成します。
-- [Azure のセキュリティの概要](/learn/modules/intro-to-security-in-azure):クラウドで作業する場合のインフラストラクチャとデータの保護に関する基本的な概念について説明します。 自分にどのような責任があり、Azure が代わりに何を処理するかについて理解します。
-- [Azure でのリソースの管理](/learn/paths/manage-resources-in-azure):Azure コマンド ラインと Web ポータルを使用してクラウド ベースのリソースを作成、管理、制御する方法について説明します。
-- [VM の作成](/learn/modules/create-windows-virtual-machine-in-azure):Azure portal を使用して仮想マシンを作成します。
-- [Azure のネットワーク](/learn/modules/intro-to-azure-networking): Azure のネットワークの基本の一部と、Azure のネットワークが回復性の向上と待機時間の短縮にどのように役立つかについて説明します。
-- [Azure のコンピューティング オプション](/learn/modules/intro-to-azure-compute): Azure のコンピューティング サービスを確認します。
-- [ロールベースのアクセス制御 (RBAC) を使用したリソースのセキュリティ保護](/learn/modules/secure-azure-resources-with-rbac): RBAC を使用してリソースをセキュリティで保護します。
-- [データ ストレージ オプション](/learn/modules/intro-to-data-in-azure/index): Azure データ ストレージの利点。
+- [Azure アカウントの作成](https://docs.microsoft.com/learn/modules/create-an-azure-account):Azure を使用する最初の手順では、アカウントを作成します。 アカウントは、自身がプロビジョニングした Azure サービスを保持し、ID、課金、ユーザー設定などの個人的設定を処理します。
+- [Azure ポータル](https://docs.microsoft.com/learn/modules/tour-azure-portal):Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
+- [Azure 入門](https://docs.microsoft.com/learn/modules/welcome-to-azure):Azure では最初に、クラウドの最初の仮想マシンを作成し構成します。
+- [Azure のセキュリティの概要](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure):クラウドで作業する場合のインフラストラクチャとデータの保護に関する基本的な概念について説明します。 自分にどのような責任があり、Azure が代わりに何を処理するかについて理解します。
+- [Azure でのリソースの管理](https://docs.microsoft.com/learn/paths/manage-resources-in-azure):Azure コマンド ラインと Web ポータルを使用してクラウド ベースのリソースを作成、管理、制御する方法について説明します。
+- [VM の作成](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure):Azure portal を使用して仮想マシンを作成します。
+- [Azure のネットワーク](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Azure のネットワークの基本の一部と、Azure のネットワークが回復性の向上と待機時間の短縮にどのように役立つかについて説明します。
+- [Azure のコンピューティング オプション](https://docs.microsoft.com/learn/modules/intro-to-azure-compute): Azure のコンピューティング サービスを確認します。
+- [ロールベースのアクセス制御 (RBAC) を使用したリソースのセキュリティ保護](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac): RBAC を使用してリソースをセキュリティで保護します。
+- [データ ストレージ オプション](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index): Azure データ ストレージの利点。
 
 準備フェーズでは、アーキテクトは、すべての Azure 環境にまたがるソリューションを設計するよう求められます。 アーキテクトは、次のスキル構築リソースを使用して、これらのタスクに対して準備できます。
 
@@ -55,24 +55,26 @@ ms.locfileid: "71025110"
 
 Microsoft とパートナーは、あらゆるお客様を対象に、Azure サービスに関連したスキルの向上のためのさまざまなオプションを提供しています。
 
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/microsoft-azure):Azure の構築を支援した人々によるトレーニングが提供されています。 基本的な概要から詳細な技術トレーニングまで、IT スタッフは Azure をビジネスに利用する方法を学習できます。
-- [Microsoft IT Pro Cloud Essentials](https://www.microsoft.com/azureessentials):クラウド サービス、教育、サポートなどの特典がある無料の年間サブスクリプションが提供されます。 IT Pro Cloud Essentials は、IT 実装者向けに、ハンズオン エクスペリエンスとターゲットを絞った教育機会を提供します。 また、サブスクライバーは、知識を増やし、キャリア アップへの道を切り開くために最も重要な分野のプロに出会うこともできます。
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro):クラウドのキャリア パスをマッピングするのに役立つ無料のオンライン リソースとして機能します。 業界の専門家がクラウド ロールについて行う提案、および提案を実現するためのスキルについて学習してください。 関係を保つために最も必要なスキルを磨くように、学習カリキュラムをご自分のペースで進められます。
 
 Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験](https://www.microsoft.com/learning/azure-certification.aspx)によって公認のものにすることができます。
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
+Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たなスキルと責任に対する準備は、容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
 
-Microsoft Learn のロール固有のラーニング パスのいくつかの例を以下に示します。
+次の例で、クラウド導入フレームワークの準備完了部分に合わせて、Microsoft Learn のいくつかのカスタマイズされたラーニングパスを示します。
 
-[ビジネス ユーザー](/learn/browse/?roles=business-user)は、クラウドベースのテクノロジのプランニング、テスト、および導入に参加することを求められたときに、短期間で多くのことを習得できる可能性があります。 Microsoft Learn では、クラウドベースのサービスを通じてビジネスをより適切に管理するためのクラウド モデルおよびツールの導入に重点を置いたモジュールによって、ビジネス ユーザーを支援します。
+[Azure の基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):高可用性、拡張性、弾力性、機敏性、フォールト トレランス、ディザスター リカバリーなどのクラウドの概念について説明します。  Azure でのクラウド コンピューティングの利点と、それによって時間とコストを節約する方法について理解します。 Azure クラウドに移行するための基本的な戦略を比較対照します。 コンピューティング、ネットワーク、ストレージ、セキュリティなど、Azure で利用できる広範なサービスを調査します。
 
-[ソリューション アーキテクト](/learn/browse/?roles=solution-architect)は、何百ものモジュールとラーニング パスにアクセスできます。 利用できるトピックの範囲は、コア インストラクチャ サービスから高度なデータ変換に及びます。
+[Azure でのリソースの管理](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):Azure コマンド ラインと Web ポータルを使用してクラウド ベースのリソースを作成、管理、制御する方法について説明します。
 
-[管理者](/learn/browse/?roles=administrator)は、Azure の基礎やコンテナーの構成、クラウドでの高度な管理に焦点を合わせたモジュールにアクセスできます。
+[Azureでのインフラストラクチャ リソースの管理](https://docs.microsoft.com/learn/paths/administer-infrastructure-resources-in-azure):仮想マシンのリソースを作成、管理、セキュリティ保護、およびスケーリングする方法について説明します。
 
-[開発者](/learn/browse/?roles=developer&term=infrastructure)は、クラウドへの資産の移行において、重要な役割を果たします。 アーキテクチャ、ガバナンス、最新化アクティビティ中に役立つさまざまな方法について学習できます。
+[データを Azure に保存する:](https://docs.microsoft.com/learn/paths/store-data-in-azure)Azure には、非構造化、アーカイブ、リレーショナルなどの、データを格納するためのさまざまな方法が用意されています。 Azure でのストレージ管理の基本、ストレージ アカウントの作成方法、クラウドに保存するデータに適したモデルの選択方法について説明します。
 
-その他のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+[Azure で最適なソリューションを設計する](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure):すべての優れたアーキテクチャで見られる核となる原則を調べて、セキュリティで保護された、スケーラブルな高パフォーマンスのソリューションを Azure で設計して構築する方法について説明します。
+
+## <a name="learn-more"></a>詳細情報
+
+その他のラーニング パスについては、[Microsoft Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

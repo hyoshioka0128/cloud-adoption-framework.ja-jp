@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 217b2653a4bec268720f44ac1eefd74bc2d05366
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980240"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566895"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>SQL Server のインスタンスを移行して移行を高速化する
 
@@ -32,7 +32,7 @@ SQL Server インスタンス全体を移行すると、ワークロードの移
 - **高密度、低使用率のデータベース:** SQL Server のインスタンスでデータベースの密度が高くなっています。 その各データベースでは、トランザクションの量が少ないため、コンピューティング リソースをほとんど必要としません。 他の最新のソリューションを検討すべきではありますが、サービスとしてのインフラストラクチャ (IaaS) のアプローチは、運用コストの大幅な削減につながる可能性があります。
 - **総保有コスト:** 該当する場合には、表示価格に [Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit)を適用して、SQL Server のインスタンスの保有コストを最小限に抑えることができます。 これは特に、マルチクラウドのシナリオで SQL Server をホストするお客様にとって一般的です。
 - **移行アクセラレータ:** SQL Server インスタンスの "リフトアンドシフト" 移行では、1 回の反復で複数のデータベースを移動できます。 場合によっては、その後の反復で、特にアプリケーションと VM を中心にする、つまり、1 回の反復でより多くのワークロードを移行することができます。
-- **VMWare の移行:** 一般的なオンプレミス アーキテクチャでは、アプリケーションと VM が仮想ホストに、データベースがベア メタルに配置されます。 このシナリオでは、VMWare ホストを Azure VMWare Service に移行するために、SQL Server インスタンス全体を移行することができます。 詳細については、[VMware ホストの移行](./vmware-host.md)に関するページを参照してください。
+- **VMware の移行:** 一般的なオンプレミス アーキテクチャでは、アプリケーションと VM が仮想ホストに、データベースがベア メタルに配置されます。 このシナリオでは、VMware ホストを Azure VMWare Service に移行するために、SQL Server インスタンス全体を移行することができます。 詳細については、[VMware ホストの移行](./vmware-host.md)に関するページを参照してください。
 
 上記の条件がいずれもこの移行に当てはまらない場合は、[標準移行プロセス](../index.md)を続行することをお勧めします。 標準プロセスでは、データ構造が各ワークロードと一緒に反復的に移行されます。
 
@@ -81,7 +81,7 @@ SQL Server の移行を実施する前に、データ資産を追加してデジ
 
 PaaS ソリューションに移行できるデータベースについては、評価プロセス中に次のアクションを実行します。
 
-- **DMA を使用して評価する:** Data Migration Assistant を使用して、移行先の Azure SQL Database マネージド インスタンス内のデータベース機能に影響を与える可能性がある互換性の問題を検出します。 DMA を使用して、パフォーマンスと信頼性の向上に関する推奨事項を確認し、スキーマ、データ、非コンテナー化オブジェクトをソース サーバーからターゲット サーバーに移動します。 詳細については、[Data Migration Assistant](/sql/dma/dma-overview) に関するページを参照してください。
+- **DMA を使用して評価する:** Data Migration Assistant を使用して、移行先の Azure SQL Database マネージド インスタンス内のデータベース機能に影響を与える可能性がある互換性の問題を検出します。 DMA を使用して、パフォーマンスと信頼性の向上に関する推奨事項を確認し、スキーマ、データ、非コンテナー化オブジェクトをソース サーバーからターゲット サーバーに移動します。 詳細については、[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview) に関するページを参照してください。
 - **修復と変換:** DMA の出力内容に基づいて、ソース データ スキーマを変換し、互換性の問題を修復します。 変換されたデータ スキーマは、依存するアプリケーションを使用してテストします。
 
 ## <a name="migrate-process-changes"></a>移行プロセスの変更
@@ -96,9 +96,9 @@ PaaS ソリューションに移行できるデータベースについては、
 
 |移行オプション|目的|
 |---------|---------|
-|[Azure Database Migration Service](/sql/dma/dma-overview)|Azure SQL Database マネージド インスタンスへの大規模なオンライン (最小ダウンタイム) 移行とオフライン (1 回限り) 移行をサポートします。 サポートされる移行元: SQL Server 2005、SQL Server 2008 および SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016、および SQL Server 2017。|
-|[トランザクション レプリケーション](/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|次の移行元については、Azure SQL Database マネージド インスタンスへのトランザクション レプリケーションがサポートされています: SQL Server 2012 (SP2 CU8、SP3、またはそれ以降)、SQL Server 2014 (RTM CU10 以降、または SP1 CU3 以降)、SQL Server 2016、SQL Server 2017。|
-|[一括読み込み](/sql/t-sql/statements/bulk-insert-transact-sql)|次の場所に格納されているデータについては、Azure SQL Database マネージド インスタンスへの一括読み込みを使用します: SQL Server 2005、SQL Server 2008 および SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016、および SQL Server 2017。|
+|[Azure Database Migration Service](https://docs.microsoft.com/sql/dma/dma-overview)|Azure SQL Database マネージド インスタンスへの大規模なオンライン (最小ダウンタイム) 移行とオフライン (1 回限り) 移行をサポートします。 サポートされる移行元: SQL Server 2005、SQL Server 2008 および SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016、および SQL Server 2017。|
+|[トランザクション レプリケーション](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|次の移行元については、Azure SQL Database マネージド インスタンスへのトランザクション レプリケーションがサポートされています: SQL Server 2012 (SP2 CU8、SP3、またはそれ以降)、SQL Server 2014 (RTM CU10 以降、または SP1 CU3 以降)、SQL Server 2016、SQL Server 2017。|
+|[一括読み込み](https://docs.microsoft.com/sql/t-sql/statements/bulk-insert-transact-sql)|次の場所に格納されているデータについては、Azure SQL Database マネージド インスタンスへの一括読み込みを使用します: SQL Server 2005、SQL Server 2008 および SQL Server 2008 R2、SQL Server 2012、SQL Server 2014、SQL Server 2016、および SQL Server 2017。|
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>推奨される移行プロセスに関するガイダンスとチュートリアル
 
@@ -120,7 +120,7 @@ SQL サーバーのインスタンスから Database Migration Service にデー
 |---------|---------|---------|---------|---------|
 |SQL Server Integration Services|Azure Data Factory 統合ランタイム|Azure Data Factory|オフライン|[チュートリアル](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
 |SQL Server Analysis Services - 表形式モデル|Azure Analysis Services|SQL Server Data Tools|オフライン|[チュートリアル](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Power BI Report Server|Power BI|オフライン|[チュートリアル](/power-bi/report-server/migrate-report-server)|
+|SQL Server Reporting Services|Power BI Report Server|Power BI|オフライン|[チュートリアル](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>SQL Server から IaaS インスタンスの SQL Server に移行するためのガイダンスとチュートリアル
 

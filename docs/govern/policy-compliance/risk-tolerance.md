@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547177"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566059"
 ---
 # <a name="evaluate-risk-tolerance"></a>リスク許容度の評価
 
@@ -38,7 +38,7 @@ ms.locfileid: "72547177"
 
 上記の内容は、お客様から挙げられる最も一般的なリスクのごく一部です。 ワークロードが移行され、運用リリースの準備が整ってくると、クラウド ガバナンス チームとクラウド採用チームはリスク プロファイルの開発を始めることができます。 目的とするビジネスの成果と変換作業に基づいて、リスクを定義、調整、管理するための話し合いを準備します。
 
-## <a name="understanding-risk-tolerance"></a>リスク許容度の理解
+## <a name="understand-risk-tolerance"></a>リスク許容度を理解する
 
 リスクの特定は非常に直接的なプロセスです。 通常、IT 関連のリスクは、業界にかかわらず一般的です。 ただし、これらのリスクの許容度は各組織に固有です。 これが、ビジネス チームと IT チームの話し合いが先に進まなくなりがちな点です。 話し合いのそれぞれの側が、本質的に異なる言語で話します。 以下の比較と質問は、各当事者がリスク許容度をより深く理解し、計算するために役立つ話し合いを始められるように設計されています。
 

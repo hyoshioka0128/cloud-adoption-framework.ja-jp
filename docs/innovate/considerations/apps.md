@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f26cf77f918c12c46c653c6fc91ebc972d0db64
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047554"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565772"
 ---
 # <a name="engage-through-applications"></a>アプリケーションによる連携
 
@@ -27,16 +27,16 @@ ms.locfileid: "73047554"
 
 顧客からのフィードバック、市場の変化、イノベーションの機会により迅速かつ正確に反応できるチームは、通常、それぞれの市場でイノベーションをリードします。 革新的なアプリケーションの最初の原則は、[グロース マインドセットの概要](./learn.md#growth-mindset)に関する記事の「コードを共有する」にまとめられています。 時がたつにつれて、カルチャへのフォーカスからイノベーションが生まれます。 イノベーションを維持するには、多様な視点と貢献が必要になります。
 
-イノベーションに備えるために、すべてのアプリケーション開発を共有コード リポジトリから始める必要があります。 コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com/) です。このツールでは、共有コード リポジトリをすばやく作成できます。 または、[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) は、コードの管理に使用できる Azure DevOps Services のバージョン管理ツールのセットです。 Azure Repos では、次の 2 種類のバージョン管理が提供されています。
+イノベーションに備えるために、すべてのアプリケーション開発を共有コード リポジトリから始める必要があります。 コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。このツールでは、共有コード リポジトリをすばやく作成できます。 または、[Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) は、コードの管理に使用できる Azure DevOps Services のバージョン管理ツールのセットです。 Azure Repos では、次の 2 種類のバージョン管理が提供されています。
 
-- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): 分散バージョン管理
-- [Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): 集中バージョン管理
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): 分散バージョン管理
+- [Team Foundation バージョン管理 (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): 集中バージョン管理
 
 ## <a name="citizen-developers"></a>市民開発者
 
 プロ開発者はイノベーションに欠かせない存在です。 仮説が大筋で正しいことが証明されたら、大規模なソリューションを安定させて準備するためにプロ開発者が必要とされます。 この記事で述べる原則のほとんどには、プロ開発者のサポートが必要です。 残念ながら、現在のトレンドでは、開発者よりプロ開発者の需要が多いことが示されています。 さらに、プロフェッショナル開発が要求されれば、イノベーションのコストとペースはいっそう不十分になる可能性があります。 これらの課題に対し、市民開発者は、開発作業を拡大し、初期仮説の検証を迅速化する手段を提供します。
 
-アプリ インターフェイスのための [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](https://docs.microsoft.com//powerapps/use-ai-builder)、ワークフローのための [Microsoft Flow](https://docs.microsoft.com/flow)、データ利用のための [Power BI](https://docs.microsoft.com/power-bi) といったツールを使用して初期仮説を検証できる場合、市民開発者の利用が可能で効果的かもしれません。
+アプリ インターフェイスのための [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder)、ワークフローのための [Microsoft Flow](https://docs.microsoft.com/flow)、データ利用のための [Power BI](https://docs.microsoft.com/power-bi) といったツールを使用して初期仮説を検証できる場合、市民開発者の利用が可能で効果的かもしれません。
 
 > [!NOTE]
 > 仮説のテストを市民開発者に頼るときは、プロ開発者がサポート、レビュー、ガイダンスを提供できるようにしておくことが推奨されます。 仮説が大筋で検証されたら、より堅牢なプログラミング モデルにアプリケーションを移行するプロセスによって、イノベーションの成果をさらに得られるようになります。 初期のプロセス定義にプロ開発者が関与すれば、後々の移行をよりクリーンにできる可能性があります。
@@ -83,11 +83,11 @@ ms.locfileid: "73047554"
 
 - 既存のビジネス ロジックが既存の顧客ニーズを (ほぼ) 満たしている。
 - エクスペリエンスの改善によって、特定の顧客群のニーズ満足度が高まる。
-- 実用最小限の製品 (MVP) ソリューションに必要なビジネス ロジックが集中化されている。これは通常、[N 層](/azure/architecture/guide/architecture-styles/n-tier)、Web サービス、API、または[マイクロサービス](/azure/architecture/guide/architecture-styles/microservices)設計によって実現されます。 このアプローチでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションをラップします。 Azure では、このソリューションは Azure App Services で運用される見込みです。
+- 実用最小限の製品 (MVP) ソリューションに必要なビジネス ロジックが集中化されている。これは通常、[N 層](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)、Web サービス、API、または[マイクロサービス](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)設計によって実現されます。 このアプローチでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションをラップします。 Azure では、このソリューションは Azure App Services で運用される見込みです。
 
 ### <a name="rebuild-an-existing-solution"></a>既存のソリューションを再構築する
 
-アプリケーションを簡単に拡張できない場合、ソリューションのリファクタリングが必要になることがあります。 このアプローチでは、ワークロードはクラウドに移行されます。 アプリケーションを移行した後、その一部を Web サービスまたは[マイクロサービス](/azure/architecture/guide/architecture-styles/microservices)として変更または複製し、既存のソリューションと並行してデプロイします。 並列サービスベースのソリューションは、拡張されたソリューションと同様に扱うことができます。 このソリューションでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションを単にラップします。 Azure では、このソリューションは Azure App Services で運用される見込みです。
+アプリケーションを簡単に拡張できない場合、ソリューションのリファクタリングが必要になることがあります。 このアプローチでは、ワークロードはクラウドに移行されます。 アプリケーションを移行した後、その一部を Web サービスまたは[マイクロサービス](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)として変更または複製し、既存のソリューションと並行してデプロイします。 並列サービスベースのソリューションは、拡張されたソリューションと同様に扱うことができます。 このソリューションでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションを単にラップします。 Azure では、このソリューションは Azure App Services で運用される見込みです。
 
 > [!CAUTION]
 > ソリューションのリファクタリングや再設計、またはビジネス ロジックの一元化は、顧客価値を生み出すのではなく、時間を消費する[技術的スパイク](./build.md#reduce-complexity-and-delay-technical-spikes)をすぐに引き起こす可能性があります。 これは、イノベーションにとって、特に仮説検証の初期においてはリスクになります。 ソリューションの設計をわずかに創造的にするだけで、既存のソリューションのリファクタリングを必要としない MVP への道が開けるはずです。 初期仮説を大筋で検証できるまでは、リファクタリングを遅らせるのが賢明です。
@@ -98,7 +98,7 @@ ms.locfileid: "73047554"
 
 クラウドのセンター オブ エクセレンスにみられる、このようなセルフサービス型の運用管理モデルでは、ソリューション環境内で制御を厳格化し、イテレーションを迅速化することができます。 これらの目標は、運用管理と説明責任をビジネス チームに移管することによって達成されます。
 
-既存のソリューションのグローバル需要を拡張または充足することが目標である場合、顧客仮説の検証にはこのアプローチで十分かもしれません。 ソリューションを移行して若干最新化した後、ビジネス チームはそれを拡張してさまざまな仮説をテストできます。 これらには、一般に、パフォーマンス、グローバル配信、および IT 運用によって妨げられているその他の顧客ニーズに関心を持つ顧客コーホートが含まれます。
+既存のソリューションのグローバル需要をスケーリングまたは充足しようとするのであれば、顧客仮説の検証にはこのアプローチで十分かもしれません。 ソリューションを移行して若干最新化した後、ビジネス チームはそれを拡張してさまざまな仮説をテストできます。 これらには、一般に、パフォーマンス、グローバル配信、および IT 運用によって妨げられているその他の顧客ニーズに関心を持つ顧客コーホートが含まれます。
 
 ## <a name="reduce-overhead-and-management"></a>オーバーヘッドと管理を削減する
 

@@ -8,43 +8,43 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 741a73bacadccc0ee7b06542b86b9958aa236982
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547272"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656316"
 ---
 # <a name="guest-configuration-policy"></a>ゲスト構成ポリシー
 
-Azure Policy の[ゲスト構成](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)拡張機能では、仮想マシン内の構成設定を監査することができます。 ゲスト構成は、現在 Azure VM 上でのみサポートされます。
+Azure Policy の[ゲスト構成](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)拡張機能を使用して、仮想マシン内の構成設定を監査できます。 ゲスト構成は、現在 Azure VM 上でのみサポートされます。
 
-Azure Policy ポータル ページでカテゴリ "ゲスト構成" を検索すれば、ゲスト構成ポリシーの一覧が見つかります。 PowerShell ウィンドウでこのコマンドレットを実行しても、この一覧を見つけることができます。
+ゲスト構成ポリシーの一覧を見つけるには、Azure Policy ポータル ページで「ゲスト構成」を検索します。 または、PowerShell ウィンドウで次のコマンドレットを実行して、一覧を見つけます。
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> ゲスト構成機能は、追加のポリシー セットをサポートするために定期的に更新されます。 新しいサポート対象ポリシーを定期的に確認し、ご自身のニーズに役立つかどうかを評価してください。
+> ゲスト構成機能は、追加のポリシー セットをサポートするために定期的に更新されます。 新しいサポート対象ポリシーを定期的に確認し、役立つかどうかを評価してください。
 
 <!-- TODO: Update these links when available. 
 
-By default, we recommend enabling the following policies:
+By default, we recommend that you enable the following policies:
 
-- [Preview]: Audit to verify password security settings are set correctly inside Linux and Windows machines.
+- [Preview]: Audit to verify that password-security settings are correct on Linux and Windows machines.
 - Audit to verify that certificates are not nearing expiration on Windows VMs.
 
 -->
 
 ## <a name="deployment"></a>Deployment
 
-次の PowerShell スクリプトの例を使用して、これらのポリシーをデプロイできます。
+次の PowerShell スクリプトの例を使用して、これらのポリシーをデプロイします。
 
 - Windows および Linux コンピューターのパスワード セキュリティ設定が正しく設定されていることを確認します。
 - Windows VM で証明書の有効期限が近づいていないことを確認します。
 
- このスクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインする必要があります。 スクリプトを起動するときには、ポリシーを適用するサブスクリプションの名前を指定する必要があります。
+ このスクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。 スクリプトを実行するときに、ポリシーを適用するサブスクリプションの名前を指定する必要があります。
 
 ```powershell
 

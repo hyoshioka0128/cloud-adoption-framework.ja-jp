@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221455"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566486"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Azure への移行の対象となるオンプレミスのワークロードを評価する
 
@@ -73,7 +73,7 @@ Contoso は移行の評価に Microsoft のツールを使用します。 ツー
 
 テクノロジ | 説明 | コスト
 --- | --- | ---
-[Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は、SQL のソースとターゲット間の機能パリティを評価します。 そのうえで、パフォーマンスと信頼性の向上箇所を推奨します。 | Data Migration Assistant は無料でダウンロードできるツールです。
+[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は、SQL のソースとターゲット間の機能パリティを評価します。 そのうえで、パフォーマンスと信頼性の向上箇所を推奨します。 | Data Migration Assistant は無料でダウンロードできるツールです。
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | 2018 年 5 月の時点で Azure Migrate は無料サービスです。
 [サービス マップ](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate では、会社が移行しようとしているマシン間の依存関係が Service Map を使用して示されます。 | Service Map は、Azure Monitor ログの一部です。 現時点では、Contoso は Service Map を 180 日間無料で使用できます。
 
@@ -188,7 +188,7 @@ Contoso が評価を行う方法は次のとおりです。
     ![Data Migration Assistant - 機能に関する推奨事項レポート](./media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso がすべての SQL Server データベースで [Transparent Data Encryption を有効にする](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)ことが推奨されます。 これは、データベースがオンプレミスでホストされている場合よりも、クラウドにある場合に、よりいっそう重要です。 Transparent Data Encryption は、移行後にのみ有効にする必要があります。 Transparent Data Encryption が既に有効になっている場合は、証明書または非対称キーを対象サーバーのマスター データベースに移動する必要があります。 [Transparent Data Encryption によって保護されたデータベースを別の SQL Server に移動する方法については、こちらを参照してください](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
+    > Contoso がすべての SQL Server データベースで [Transparent Data Encryption を有効にする](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)ことが推奨されます。 これは、データベースがオンプレミスでホストされている場合よりも、クラウドにある場合に、よりいっそう重要です。 Transparent Data Encryption は、移行後にのみ有効にする必要があります。 Transparent Data Encryption が既に有効になっている場合は、証明書または非対称キーを対象サーバーのマスター データベースに移動する必要があります。 [Transparent Data Encryption によって保護されたデータベースを別の SQL Server に移動する方法については、こちらを参照してください](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
 
 3. Contoso は評価を JSON または CSV 形式でエクスポートできます。
 
@@ -196,8 +196,8 @@ Contoso が評価を行う方法は次のとおりです。
 > 大規模な評価を行う場合:
 >
 > - 複数の評価を同時に実行し、 **[すべての評価]** ページで評価の状態を確認します。
-> - 評価を [SQL Server データベース](/sql/dma/dma-consolidatereports?view=ssdt-18vs2017)に統合します。
-> - 評価を [Power BI レポート](/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017)に統合します。
+> - 評価を [SQL Server データベース](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017)に統合します。
+> - 評価を [Power BI レポート](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017)に統合します。
 
 ## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>手順 3:Azure Migrate を使用した VM 評価の準備をする
 
@@ -394,6 +394,7 @@ Contoso は VM ごとにインストールを実行します。
     `sudo -i`
 
 3. MMA をインストールします。
+
     - コマンドでワークスペース ID とキーを入力します。
     - コマンドは 64 ビット用です。
     - ワークスペース ID とプライマリ キーは、Azure portal の Log Analytics ワークスペースにあります。 **[設定]** を選択し、次に **[接続されたソース]** タブを選択します。

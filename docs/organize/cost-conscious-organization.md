@@ -8,14 +8,14 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 52789f374b619a974181ed3dbd15e2206e9afdad
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6c01ec344d6c02fa9c576e5e674b8fddf59849fe
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223966"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566808"
 ---
-# <a name="building-a-cost-conscious-organization"></a>コスト志向の組織を構築する
+# <a name="build-a-cost-conscious-organization"></a>コスト志向の組織を構築する
 
 「[動機: クラウドに移行する理由](../strategy/motivations.md)」で説明されているように、企業がクラウドを導入するのに最もな理由が多くあります。 コスト削減が主な原動力の場合は、コスト志向の組織を作成することが重要です。
 
