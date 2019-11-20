@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: bc568602c283fab5abba1d6ad91197e9f0f9ce8e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9caeca52ba0ab3a909b0f42ac6f016d44033a4ee
+ms.sourcegitcommit: 617c3f12a3657a8a1393fd08d261dd98eb81b65c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564042"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74086798"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>準備完了: 推奨される名前付けおよびタグ付け規則
 
@@ -52,7 +52,7 @@ Azure アーキテクチャ センターの [Azure リソースの名前付け�
 
 パブリック エンドポイントを含む PaaS サービスや仮想マシンの DNS ラベルなどの一部のリソースの名前にはグローバル スコープがあります。つまり、それらは Azure プラットフォーム全体にわたって一意である必要があります。
 
-リソース名には長さの制限があります。 名前付け規則を作成するときに、名前に埋め込まれるコンテキストおよびそのスコープと長さのバランスをとることが重要です。 リソースの種類ごとの許可される文字、スコープ、および名前の長さに関連した名前付け規則の詳細については、「[Azure リソースの名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)」を参照してください。
+リソース名には長さの制限があります。 名前付け規則を作成するときに、名前に埋め込まれるコンテキストおよびそのスコープと長さのバランスをとることが重要です。 リソースの種類ごとの許可される文字、スコープ、および名前の長さに関連した名前付け規則の詳細については、「[Azure リソースの名前付け規則](/azure/architecture/best-practices/resource-naming)」を参照してください。
 
 #### <a name="recommended-naming-components"></a>推奨される名前付けコンポーネント
 

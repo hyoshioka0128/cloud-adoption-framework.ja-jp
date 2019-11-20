@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221660"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160533"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>セキュリティ ベースラインのサンプル ポリシー ステートメント
 
@@ -56,7 +56,7 @@ ms.locfileid: "71221660"
 
 **ポリシー ステートメント:** 保護対象データが含まれているどのサブネットにも、パブリック インターネット経由で、またはデータセンターをまたいで直接アクセスすることはできません。 それらのサブネットへのアクセスは、中間サブネットを介してルーティングされる必要があります。 それらのサブネットへのアクセスはすべて、パケットのスキャンおよびブロック機能を実行できるファイアウォール ソリューション経由で行われる必要があります。
 
-**使用可能な設計オプション:** Azure では、[パブリック インターネットとクラウドベースのネットワークの間に DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) をデプロイすることで、パブリック エンドポイントをセキュリティ保護します。 [Azure Firewall](https://docs.microsoft.com/azure/firewall) のデプロイ、構成、および自動化を検討してください。
+**使用可能な設計オプション:** Azure では、[パブリック インターネットとクラウドベースのネットワークの間に DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) をデプロイすることで、パブリック エンドポイントをセキュリティ保護します。 [Azure Firewall](https://docs.microsoft.com/azure/firewall) のデプロイ、構成、および自動化を検討してください。
 
 ## <a name="ddos-protection"></a>DDoS 保護
 

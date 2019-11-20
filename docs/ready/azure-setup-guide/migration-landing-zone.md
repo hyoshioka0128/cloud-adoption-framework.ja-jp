@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 1e9fe49f03eb9cc0b2f53e334f649e8dea9cf2fe
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 528864cab448ef2e6ead89b16ee174cc2c405401
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240105"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159575"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>移行ランディング ゾーンをデプロイする
 
@@ -65,7 +65,7 @@ ms.locfileid: "73240105"
 |サブスクリプション デザイン|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../azure-best-practices/scaling-subscriptions.md)|
 |管理グループ|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../azure-best-practices/scaling-subscriptions.md)         |
 |リソース グループ|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../azure-best-practices/scaling-subscriptions.md)         |
-|Data|該当なし|「[Azure SQL で適切なデプロイ オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json)」と [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Data|該当なし|「[Azure SQL で適切なデプロイ オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)」と [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Storage|該当なし|[Azure Storage ガイダンス](../considerations/storage-options.md)         |
 |名前付けとタグ付けの標準|該当なし|[名前付けとタグ付けのベスト プラクティス](../azure-best-practices/naming-and-tagging.md)         |
 |コスト管理|該当なし|[コストの追跡](../azure-best-practices/track-costs.md)|

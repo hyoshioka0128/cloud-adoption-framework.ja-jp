@@ -1239,9 +1239,7 @@
       href: reference/cloud-operating-model.md
     - name: Azure エンタープライズ スキャフォールディング
       href: reference/azure-scaffold.md
-    - name: Azure エンタープライズ スキャフォールディングの実装
-      href: reference/azure-scaffold-examples.md
-    - name: 仮想データ センター (VDC)
+    - name: 仮想データセンター (VDC)
       href: reference/vdc.md
     - name: Azure のしくみ
       href: getting-started/what-is-azure.md
