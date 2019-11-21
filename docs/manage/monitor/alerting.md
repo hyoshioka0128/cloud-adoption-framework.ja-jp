@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
-ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
+ms.openlocfilehash: d3c3021c75c39b5ae712f9945afd937d4472ecb8
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73912504"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160284"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>クラウド監視ガイド:アラート
 
@@ -67,7 +67,7 @@ Azure Monitor には 4 種類のアラートがあり、それぞれ、データ
 
 - [アクティビティ ログ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log):Service Health データを除く、アクティビティ ログ ストア内の項目に関するアラート。
 
-- [Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json):停止や予定されている計画メンテナンスなど、アクティビティ ログ ストアからの Service Health の問題に対してのみ使用される特別な種類のアラートです。 この種類のアラートは、Azure Monitor するコンパニオン サービスである [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) を使用して構成されることに注意してください。
+- [Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications):停止や予定されている計画メンテナンスなど、アクティビティ ログ ストアからの Service Health の問題に対してのみ使用される特別な種類のアラートです。 この種類のアラートは、Azure Monitor するコンパニオン サービスである [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) を使用して構成されることに注意してください。
 
 ### <a name="enable-alerting-through-partner-tools"></a>パートナー ツールによるアラートを有効にする
 

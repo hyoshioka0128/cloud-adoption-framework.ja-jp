@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751845"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160366"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>移行インフラストラクチャをデプロイする
 
@@ -299,7 +299,7 @@ Azure Backup を使用すると、Azure VM ディスクをバックアップお�
 - バックアップはアプリケーション整合性を備えているため、バックアップされたデータにトランザクション整合性があり、かつ復元後にアプリケーションが起動されることが保証されます。
 - Azure Backup はローカル冗長ストレージ (LRS) をサポートしており、ローカル ハードウェアの障害が発生した場合は、データセンター内のバックアップ データの複数のコピーをレプリケートします。
 - リージョン障害が発生した場合、Azure Backup は geo 冗長ストレージ (GRS) もサポートしているため、バックアップ データをセカンダリ ペア リージョンにレプリケートします。
-- Azure Backup は、転送中のデータを AES 256 を使用して暗号化します。 バックアップされた保存データは、[Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) を使用して暗号化されます。
+- Azure Backup は、転送中のデータを AES 256 を使用して暗号化します。 バックアップされた保存データは、[Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) を使用して暗号化されます。
 
 Contoso はすべての運用 VM に Azure Backup を GRS と共に使用することにより、ワークロード データがバックアップされ、障害またはその他の中断が発生した場合はすばやく復元されるようにします。 [詳細情報](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)。
 
