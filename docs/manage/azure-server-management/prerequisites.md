@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dafe5f36a59d60fa91816695cae1e1f3784df046
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 20a4168f5a7650b20357de2ec2628a0edb093993
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565307"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751643"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>フェーズ 1:Azure サーバー管理サービスの前提条件となる計画
 
@@ -96,7 +96,7 @@ Log Analytics ワークスペースと Automation アカウントの配置先と
 Azure portal を使用して Log Analytics ワークスペースを作成するには、「[ワークスペースを作成する](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace#create-a-workspace)」を参照してください。 次に、「[Azure Automation アカウントを作成する](https://docs.microsoft.com/azure/automation/automation-quickstart-create-account)」の手順に従って、各ワークスペースに対応する Automation アカウントを作成します。
 
 > [!NOTE]
-> Azure portal を使用して Automation アカウントを作成すると、ポータルの既定では、Azure Resource Manager とクラシック デプロイ モデル リソースの両方の実行アカウントの作成が試行されます。 環境内にクラシック仮想マシンを持たず、サブスクリプションの共同管理者でない場合、ポータルでは Resource Manager の実行アカウントが作成されますが、クラシック実行アカウントをデプロイするときにエラーが生成されます。 クラシック リソースをサポートする予定がない場合は、このエラーを無視することができます。
+> Azure portal を使用して Automation アカウントを作成すると、ポータルの既定では、Azure Resource Manager とクラシック デプロイ モデル リソースの両方の実行アカウントの作成が試行されます。 環境内にクラシック仮想マシンが備わっておらず、サブスクリプションの共同管理者でない場合、ポータルでは Resource Manager の実行アカウントが作成されますが、クラシック実行アカウントをデプロイするときにエラーが生成されます。 クラシック リソースをサポートする予定がない場合は、このエラーを無視することができます。
 >
 > [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell) を使用して実行アカウントを作成することもできます。
 

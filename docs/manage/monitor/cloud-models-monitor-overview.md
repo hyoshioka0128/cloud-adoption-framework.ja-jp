@@ -1,5 +1,5 @@
 ---
-title: クラウド監視ガイド – クラウド デプロイ モデルの監視戦略
+title: 'クラウド監視ガイド: クラウド デプロイ モデルの監視戦略'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564969"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752724"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>クラウド監視ガイド: クラウド デプロイ モデルの監視戦略
 
@@ -30,12 +30,13 @@ ms.locfileid: "73564969"
 ## <a name="azure-cloud-monitoring"></a>Azure クラウドの監視
 
 Azure Monitor は、Azure リソースを 1 つのソースから監視できる Azure ネイティブ プラットフォーム サービスです。 次のようなクラウド ソリューション向けに設計されています。
-* Azure を基にして構築されています。
-* 仮想マシン (VM) のワークロードに基づくビジネス機能、またはマイクロサービスや他のプラットフォーム リソースを使用する複雑なアーキテクチャをサポートしています。
 
-Azure Active Directory Domain Services などのテナント サービスから、サブスクリプション レベルのイベント、Azure サービスの正常性まで、スタックのすべてのレイヤーが監視されます。 
+- Azure を基にして構築されています。
+- 仮想マシン (VM) のワークロードに基づくビジネス機能、またはマイクロサービスや他のプラットフォーム リソースを使用する複雑なアーキテクチャをサポートしています。
 
-また、VM、ストレージ、ネットワーク リソースなどのインフラストラクチャ リソースも監視されます。 最上位レイヤーでは、アプリケーションが監視されます。 
+Azure Active Directory Domain Services などのテナント サービスから、サブスクリプション レベルのイベント、Azure サービスの正常性まで、スタックのすべてのレイヤーが監視されます。
+
+また、VM、ストレージ、ネットワーク リソースなどのインフラストラクチャ リソースも監視されます。 最上位レイヤーでは、アプリケーションが監視されます。
 
 これらの各依存関係を監視し、それぞれが出す可能性のある適切な信号を収集することで、必要なアプリケーションや主要インフラストラクチャを観察できます。
 
@@ -56,7 +57,7 @@ Azure テナント | Azure Active Directory || 診断ログを有効にし、Azu
 
 ## <a name="hybrid-cloud-monitoring"></a>ハイブリッド クラウドの監視
 
-多くの組織では、クラウドに段階的に移行する必要がありますが、その過程の最初のステップとして最も一般的なものはハイブリッド クラウド モデルです。 ビジネスの中断を回避しながら、適切なアプリケーションとインフラストラクチャのサブセットを慎重に選択して移行を開始します。 ただし、このクラウド モデルをサポートする監視プラットフォームは 2 つ用意されているため、IT の意思決定者は、ビジネス目標と IT の運用目標を達成するためにどちらが最適か明確に判断できないことがあります。 
+多くの組織では、クラウドに段階的に移行する必要がありますが、その過程の最初のステップとして最も一般的なものはハイブリッド クラウド モデルです。 ビジネスの中断を回避しながら、適切なアプリケーションとインフラストラクチャのサブセットを慎重に選択して移行を開始します。 ただし、このクラウド モデルをサポートする監視プラットフォームは 2 つ用意されているため、IT の意思決定者は、ビジネス目標と IT の運用目標を達成するためにどちらが最適か明確に判断できないことがあります。
 
 このセクションでは、不明確さをなくすため、いくつかの要素を確認し、どのプラットフォームを検討すべきか判断できるようにします。
 
@@ -74,7 +75,7 @@ Azure テナント | Azure Active Directory || 診断ログを有効にし、Azu
 
 |要件 | Azure Monitor | Operations Manager |
 |:--|:---|:---|
-|インフラストラクチャの要件 | いいえ | はい<br> 少なくとも 1 つの管理サーバーと、運用データベースおよびレポート データ ウェアハウス データベースをホストするための SQL サーバーが必要です。 高可用性とディザスター リカバリーが必要で、複数のサイト、信頼されていないシステム、およびその他の複雑な設計上の考慮事項がある場合は、複雑さが増します。|
+|インフラストラクチャの要件 | いいえ | はい<br> 少なくとも 1 つの管理サーバーと、オペレーション データベースとレポート データ ウェアハウス データベースをホストする 1 つの SQL Server が必要です。 高可用性とディザスター リカバリーが必要で、複数のサイト、信頼されていないシステム、およびその他の複雑な設計上の考慮事項がある場合は、複雑さが増します。|
 |接続の制限 - インターネットなし<br> または分離されたネットワーク | いいえ | はい |
 |接続の制限 - 制御されたインターネット アクセス | はい | はい |
 |接続の制限 - 頻繁に切断 | はい | はい |
@@ -90,7 +91,7 @@ Azure テナント | Azure Active Directory || 診断ログを有効にし、Azu
 |Azure Kubernetes Service コンテナーを監視する | はい | いいえ |
 |Docker または Windows コンテナーを監視する | はい | いいえ |
 |ネットワーク パフォーマンスの監視 | はい | はい、制限あり<br> 可用性チェックがサポートされ、簡易ネットワーク管理プロトコル (SNMP) プロトコルを使用して企業ネットワークのネットワーク デバイスから基本的な統計情報が収集されます。|
-|対話型データ分析 | はい | いいえ<br> SQL Server Reporting Services の既定またはカスタムのレポート、サードパーティの視覚化ソリューション、またはカスタムの Power BI 実装に依存しています。 Operations Manager データ ウェアハウスには、スケールとパフォーマンスの制限があります。 データ集約要件に対する代替手段として Azure Monitor ログと統合します。 Log Analytics コネクタを構成することにより、統合を実現します。|
+|対話型データ分析 | はい | いいえ<br> SQL Server Reporting Services のあらかじめ準備されたレポートまたはカスタムのレポート、サードパーティの視覚化ソリューション、またはカスタムの Power BI 実装に依存しています。 Operations Manager データ ウェアハウスには、スケールとパフォーマンスの制限があります。 データ集約要件に対する代替手段として Azure Monitor ログと統合します。 Log Analytics コネクタを構成することにより、統合を実現します。|
 |エンドツーエンドの診断、根本原因の分析、および適切なタイミングでのトラブルシューティング | はい | はい、制限あり<br> エンドツーエンドの診断とトラブルシューティングは、オンプレミスのインフラストラクチャとアプリケーションに対してのみサポートされます。 他の System Center コンポーネントまたはパートナー ソリューションを使用します。|
 |対話的な視覚化 (ダッシュボード) | はい | はい、制限あり<br> HTML5 Web コンソール、または Squared Up や Savision などのパートナー ソリューションの高度なエクスペリエンスで、基本的なダッシュボードが提供されます。 |
 |IT または DevOps ツールとの統合 | はい | はい、制限あり |
@@ -115,7 +116,7 @@ IT サービス マネジメント プロセスおよびツールと緊密に統
 
 Azure で実行されているワークロードを監視するには、次のものが必要です。
 
-- [Azure用の管理パック](https://www.microsoft.com/download/details.aspx?id=50013)。 Web ロール、worker ロール、Application Insights 可用性テスト (Web テスト)、Azure Service Bus などの Azure サービスから出力されたパフォーマンス メトリックが収集されます。 この管理パックでは、Azure REST API を使用して、これらのリソースの可用性とパフォーマンスを監視します。 Azure サービスの一部の種類については、メトリックまたは事前定義されたモニターが管理パックに含まれていませんが、それでも検出されたサービスの Azure 管理パックで定義されているリレーションシップを通じて監視できます。
+- [Azure用の管理パック](https://www.microsoft.com/download/details.aspx?id=50013)。 Web ロール、worker ロール、Application Insights 可用性テスト (Web テスト)、Azure Service Bus などの Azure サービスから出力されたパフォーマンス メトリックが収集されます。 この管理パックでは、Azure REST API を使用して、これらのリソースの可用性とパフォーマンスを監視します。 Azure サービスの一部の種類には、メトリックまたは事前定義されたモニターが管理パックに含まれていませんが、検出されたサービスの Azure 管理パックで定義されているリレーションシップを通じて引き続き監視できます。
 
 - SQL Server システム ビューに対する Azure REST API と T-SQL のクエリを使用して、Azure SQL データベースおよび Azure SQL データベース サーバーの可用性とパフォーマンスを監視するための [Azure SQL Database 用の管理パック](https://www.microsoft.com/download/details.aspx?id=38829)。
 
@@ -137,7 +138,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 #### <a name="advantages-of-using-operations-manager-with-azure-monitor"></a>Operations Manager と Azure Monitor を併用する利点
 
-- Azure Monitor は、Operations Manager の制限を回避する手段です。 重要なパフォーマンスおよびログ データを収集することで、Operations Manager データ ウェアハウス データベースを補完します。 Operations Manager のデータ ウェアハウスより、Azure Monitor の方が、分析、パフォーマンス (大量のデータのクエリを行うとき)、保有の点で優れています。 
+- Azure Monitor は、Operations Manager の制限を回避する手段です。 重要なパフォーマンスおよびログ データを収集することで、Operations Manager データ ウェアハウス データベースを補完します。 Operations Manager のデータ ウェアハウスより、Azure Monitor の方が、分析、パフォーマンス (大量のデータのクエリを行うとき)、保有の点で優れています。
 
   Azure Monitor のクエリ言語を使用すると、いっそう複雑で高度なクエリを作成できます。 テラバイト単位のデータに対するクエリを、数秒で実行できます。 ご利用のデータを円グラフ、タイム チャート、およびその他のさまざまな視覚化にすばやく変換することができます。 このデータを分析する方法が、SQL Server Reporting Services、カスタム SQL クエリ、または他の回避策に基づく Operations Manager レポートだけに制約されることはなくなりました。
 
@@ -150,12 +151,11 @@ Operations Manager を使用して Azure でホストされているリソース
 - Azure Monitor for VMs のマップ機能を使用すると、Azure VM とオンプレミス VM の間のネットワーク接続からの標準的な接続メトリックを監視できます。 これらのメトリックとして、応答時間、1 分あたりの要求数、トラフィックのスループット、リンクがあります。 失敗した接続の識別、トラブルシューティング、移行の検証の実施、セキュリティ分析の実行、サービスの全体的なアーキテクチャの検証ができます。 マップは、Windows および Linux システムのアプリケーション コンポーネントを自動的に検出したり、サービス間の通信をマップしたりできます。 この自動化は、認識していなかった接続および依存関係の識別、Azure への移行の計画および検証、インシデント解決時の推論の最小化に役立ちます。
 
 - Network Performance Monitor を使用して、以下の要素間のネットワーク接続を監視できます。
+  - 企業ネットワークと Azure。
+  - ミッション クリティカルな多層アプリケーションとマイクロサービス。
+  - ユーザーの場所と Web ベースのアプリケーション (HTTP/HTTPS)。
 
-   - 企業ネットワークと Azure。
-   - ミッション クリティカルな多層アプリケーションとマイクロサービス。
-   - ユーザーの場所と Web ベースのアプリケーション (HTTP/HTTPS)。
-
-   この戦略で、SNMP を必要としないネットワーク レイヤーの可視性が実現します。 対話型のトポロジ マップに、送信元と宛先のエンドポイント間の経路のホップバイホップ トポロジを表示することもできます。 Operations Manager のネットワーク監視や現在の環境で使用されているその他のネットワーク監視ツールを使用して同じ結果を得ようとするよりも、こちらの方が適切な選択です。
+この戦略で、SNMP を必要としないネットワーク レイヤーの可視性が実現します。 対話型のトポロジ マップに、送信元と宛先のエンドポイント間の経路のホップバイホップ トポロジを表示することもできます。 Operations Manager のネットワーク監視や現在の環境で使用されているその他のネットワーク監視ツールを使用して同じ結果を得ようとするよりも、こちらの方が適切な選択です。
 
 ### <a name="monitor-with-azure-monitor"></a>Azure Monitor による監視
 
@@ -177,7 +177,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 ## <a name="private-cloud-monitoring"></a>プライベート クラウドの監視
 
-System Center Operations Manager を使用して、Azure Stack の総合的な監視を実現できます。 具体的には、仮想マシン上のテナント (リソース レベル) で実行されているワークロード、および、Azure Stack をホストしているインフラストラクチャ (物理サーバーとネットワーク スイッチ) を監視できます。 
+System Center Operations Manager を使用して、Azure Stack の総合的な監視を実現できます。 具体的には、仮想マシン上のテナント (リソース レベル) で実行されているワークロード、および、Azure Stack をホストしているインフラストラクチャ (物理サーバーとネットワーク スイッチ) を監視できます。
 
 Azure Stack に含まれている[インフラストラクチャ監視機能](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health)を組み合わせて総合的な監視を実現することもできます。 これらの機能は、Azure Stack リージョンの正常性とアラート、および Azure Stack の [Azure Monitor サービス](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data)を表示するために役立ちます。後者は、基本レベルのインフラストラクチャ メトリックと、ほとんどのサービスのログを提供します。
 

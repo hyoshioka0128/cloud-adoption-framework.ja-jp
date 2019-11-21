@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 85b02e488476960a50112c1b5ebd7380a873a3f8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565722"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751992"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>イノベーションに関する一般的な阻害要因と課題
 
@@ -45,7 +45,7 @@ ms.locfileid: "73565722"
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>デジタル経済における発明の課題
 
-今日の発明の課題はさまざまです。 また、クラウド テクノロジの無限の可能性によって、より多くの実装オプションが生まれ、それらの実装の活用方法に関する詳細な考慮事項が生じています。
+今日の発明の課題はさまざまです。 また、クラウド テクノロジの無限の可能性によって、より多くの実装オプションが生まれ、それらの実装の使用方法に関する詳細な考慮事項が生じています。
 
 イノベーションの方法論では、次のイノベーション規範を使用して、発明と採用の目標に合わせて実装の意思決定を調整できるよう支援します。
 

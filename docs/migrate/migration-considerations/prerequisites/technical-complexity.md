@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 415e7b456cc342f7a749cd98a55e573a46563bf4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564544"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753683"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>技術的な複雑さに備える: アジャイルな変更管理
 

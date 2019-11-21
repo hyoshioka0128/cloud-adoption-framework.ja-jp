@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566895"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753522"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>SQL Server のインスタンスを移行して移行を高速化する
 
@@ -102,7 +102,7 @@ PaaS ソリューションに移行できるデータベースについては、
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>推奨される移行プロセスに関するガイダンスとチュートリアル
 
-Database Migration Service を使用した移行に最適なガイダンスの選択は、対象となるソースおよびターゲット プラットフォームに左右されます。 次の表は、Database Migration Service を使用して SQL データベースを移行する標準的な手法ごとに対応したチュートリアルへのリンクです。
+Azure Database Migration Service を使用した移行に最適なガイダンスの選択は、対象となるソースおよびターゲット プラットフォームに左右されます。 次の表は、Azure Database Migration Service を使用して SQL データベースを移行する標準的な手法ごとに対応したチュートリアルへのリンクです。
 
 |source  |ターゲット  |ツール  |移行の種類  |ガイダンス  |
 |---------|---------|---------|---------|---------|
@@ -114,7 +114,7 @@ Database Migration Service を使用した移行に最適なガイダンスの�
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>同等の PaaS ソリューションに対する各種サービスのガイダンスとチュートリアル
 
-SQL サーバーのインスタンスから Database Migration Service にデータベースを移動した後は、多数の PaaS ソリューションでスキーマとデータをリホストすることができます。 ただし、他の必要なサービスがまだそのサーバーで実行されている可能性があります。 次の 3 つのチュートリアルは、SSIS、SSAS、SSRS を Azure 上の同等の PaaS サービスに移動する際に役立ちます。
+SQL Server のインスタンスから Azure Database Migration Service にデータベースを移動した後は、多数の PaaS ソリューションでスキーマとデータを再ホストすることができます。 ただし、他の必要なサービスがまだそのサーバーで実行されている可能性があります。 次の 3 つのチュートリアルは、SSIS、SSAS、SSRS を Azure 上の同等の PaaS サービスに移動する際に役立ちます。
 
 |source  |ターゲット  |ツール  |移行の種類  |ガイダンス  |
 |---------|---------|---------|---------|---------|

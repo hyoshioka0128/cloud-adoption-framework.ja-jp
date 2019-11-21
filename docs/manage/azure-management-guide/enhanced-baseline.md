@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cfe7fdfa47b04cbcff7e09b18c5ba6a0b4fec795
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8cdd9a48d8d229fdca7cba383d677a49525d06cc
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565521"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752976"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Azure の管理ベースラインの改善
 
@@ -67,7 +67,7 @@ ms.locfileid: "73565521"
 
 Azure Automation は、制御の自動化を一元的に管理するためのシステムです。 Azure Automation では、環境メトリックに応じ、単純な修復、スケーリング、および最適化プロセスを実行できます。 これらのプロセスにより、手動によるインシデント処理に関連するオーバーヘッドが軽減されます。
 
-最も重要なのは、ビジネス プロセスの中断を大幅に減らす、自動修復をほぼリアルタイムで配信できることです。 最も頻度の高いビジネスの中断を調査することで、自動化できる可能性がある環境内のアクティビティを識別できます。
+最も重要なのは、ビジネス プロセスの中断を大幅に減らす、自動修復をほぼリアルタイムで配信できることです。 最も一般的なビジネスの中断を調査することで、自動化できる可能性がある環境内のアクティビティを識別できます。
 
 ### <a name="runbooks"></a>Runbooks
 

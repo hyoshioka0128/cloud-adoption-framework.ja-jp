@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 526c7846de947b9098f7d9d0b7458a314177a9c8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566694"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753730"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>仮想データセンター:ネットワーク パースペクティブ
 
@@ -194,7 +194,7 @@ Azure では複雑なトポロジを構成できますが、仮想データセ�
 
 通常、IT の環境 (または階層) は、複数のアプリケーションがデプロイされて実行されるシステムです。 大規模な企業では、開発環境 (変更が行われてテストされる場所) と運用環境 (エンドユーザーが使うもの) が使われます。 これらの環境は分離され、多くの場合、その間に複数のステージング環境があり、段階的にデプロイ (ロールアウト)、テスト、および問題が発生した場合のロールバックを行うことができます。 デプロイ アーキテクチャは大きく異なりますが、通常、開発 (DEV) で始まって運用 (PROD) で終わる基本的なプロセスは同じです。
 
-この種の多層環境の一般的なアーキテクチャは、開発およびテスト用の Azure DevOps、ステージング用の UAT、運用環境で構成されます。 組織では、1 つまたは複数の Azure AD テナントを利用して、これらの環境に対するアクセスと権限を定義できます。 前の図は、Azure DevOps および UAT 用と運用専用の 2 つの異なる Azure AD テナントが使用されているケースを示しています。
+この種の多層環境の一般的なアーキテクチャは、開発およびテスト用の Azure DevOps、ステージング用の UAT、運用環境で構成されます。 組織では、1 つまたは複数の Azure AD テナントを使用して、これらの環境に対するアクセスと権限を定義できます。 前の図は、Azure DevOps および UAT 用と運用専用の 2 つの異なる Azure AD テナントが使用されているケースを示しています。
 
 異なる Azure AD テナントが存在すると、必然的に環境間が分離されます。 同じユーザー グループ (中央 IT など) が、プロジェクトの Azure DevOps または運用環境のロールやアクセス許可を変更するために Azure AD テナントにアクセスするときは、テナントごとに異なる URI を使用して認証する必要があります。 環境にアクセスするときに、環境ごとに異なるユーザー認証が存在すると、人的エラーが原因で発生する可能性のある停止や他の問題が減少します。
 

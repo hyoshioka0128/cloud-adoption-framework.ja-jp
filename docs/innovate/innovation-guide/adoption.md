@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a6eb791e22d834f51face8819133c0ada6774952
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565560"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752946"
 ---
 ::: zone target="docs"
 
@@ -152,8 +152,8 @@ DevOps プロジェクトを作成するには:
 
 次の記事は、Azure Boards と GitHub を併用してフィードバックを一元化し、管理する際に役立ちます。
 
-- [Azure Boards の概要](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
-- [Azure Boards と GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
+- [Azure Boards の概要](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
+- [Azure Boards と GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[パイプラインでループを閉じる](#tab/pipelines)
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0b717222c7e5f1906330eb5b181d675f1247bb37
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 46e21c08bac9501dd9b99fceb4ef3040cc9f0a83
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565864"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752033"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>既存のデータ ソースの移行と最新化によってデータを収集する
 
@@ -33,7 +33,7 @@ Oracle と NoSQL の移行をサポートするために、特定の種類のソ
 
 ## <a name="considerations-and-guidance"></a>考慮事項とガイダンス
 
-データの移行と近代化のために Database Migration Service を使用する場合は、次の点を理解しておくことが重要です。
+データの移行と最新化のために Azure Database Migration Service を使用する場合は、次の点を理解しておくことが重要です。
 
 - データ ソースをホストしている現在のプラットフォーム。
 - 現在のバージョン。

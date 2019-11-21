@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8aa0e1d86bb679241bc8e769bb8a09fc436c6906
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bcb01ada3589b733fe97de2689352ab414ef469b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565585"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752986"
 ---
 # <a name="predict-and-influence"></a>予測と影響
 
@@ -48,7 +48,7 @@ ms.locfileid: "73565585"
 
 ## <a name="insights"></a>洞察
 
-分野の専門家は、顧客のニーズや行動のデータを使用して、未加工のデータを研究してビジネスの基本的な分析情報を生成します。 それらの分析情報からは、期待される顧客の行動 (または望ましくない結果) の発生を指摘できます。 予測の反復の間、これらの分析情報は、最終的に肯定的な結果を生成する可能性がある潜在的な相関関係の識別に役立つ場合があります。 分野の専門家向けの分析情報の開発のガイダンスについては、「[データの民主化](./data.md)」を参照してください。
+分野の専門家は、顧客のニーズや行動に関するデータを使用して、生データを研究してビジネスの基本的な分析情報を作成します。 それらの分析情報からは、期待される顧客の行動 (または望ましくない結果) の発生を指摘できます。 予測の反復の間、これらの分析情報は、最終的に肯定的な結果を生成する可能性がある潜在的な相関関係の識別に役立つ場合があります。 分野の専門家向けの分析情報の開発のガイダンスについては、「[データの民主化](./data.md)」を参照してください。
 
 ## <a name="patterns"></a>パターン
 

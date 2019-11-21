@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656655"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753760"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 
@@ -195,13 +195,13 @@ Azure が最初にリリースされたときには、サブスクリプショ�
 > [!TIP]
 >Azure Security Center は強力なツールであり、絶えず改善されており、脅威の検出や企業の保護に使用できる新しい機能を取り入れています。 Azure Security Center は常に有効化しておくことを強くお薦めします。
 
-### <a name="azure-resource-locks"></a>Azure のリソース ロック
+### <a name="locks-for-azure-resources"></a>Azure リソースのロック
 
-組織がサブスクリプションにコア サービスを追加すると、ビジネスの中断を回避することがますます重要になります。 よく見られる中断の 1 つは、Azure サブスクリプションに対して実行されたスクリプトやツールの結果として、意図せずに誤ってリソースを削除した場合です。 [リソース ロック](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources)を使用すると、変更または削除したときに大きな影響を及ぼす価値の高いリソースに対する操作を制限できます。 ロックは、サブスクリプションとリソース グループだけでなく、個々のリソースにも適用されます。 一般的なユース ケースは、仮想ネットワーク、ゲートウェイ、ネットワーク セキュリティ グループ、キー ストレージ アカウントなど、基盤となるリソースにロックを適用することです。
+組織がサブスクリプションにコア サービスを追加すると、ビジネスの中断を回避することがますます重要になります。 一般的な中断の 1 つは、Azure サブスクリプションで実行されているスクリプトまたはツールがリソースを誤って削除したときに発生します。 [ロック](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources)によって、変更または削除したときに大きな影響を及ぼす価値の高いリソースに対する操作が制限されます。 ロックは、サブスクリプション、リソースグループ、または個々のリソースに適用できます。 仮想ネットワーク、ゲートウェイ、ネットワーク セキュリティ グループ、キー ストレージ アカウントなど、基盤となるリソースにロックを適用します。
 
-### <a name="secure-devops-toolkit"></a>セキュアな DevOps ツールキット
+### <a name="secure-devops-kit-for-azure"></a>Secure DevOps Kit for Azure
 
-Secure DevOps Kit for Azure (AzSK) は、スクリプト、ツール、拡張機能、オートメーション機能のコレクションです。元は Microsoft の IT チームによって作成され、[GitHub でオープン ソースとしてリリース](https://github.com/azsk/DevOpsKit-docs)されています。 AzSK はオートメーションを広範に使用し、セキュリティをネイティブの DevOps ワークフローに円滑に統合して、チームのためにあらゆる Azure サブスクリプションとリソース セキュリティのニーズに対応します。次に示す 6 つの重点分野で、セキュアな DevOps を実現するために役立ちます。
+Secure DevOps Kit for Azure (AzSK) は、スクリプト、ツール、拡張機能、オートメーション機能のコレクションです。元は Microsoft の IT チームによって作成され、[GitHub でオープン ソースとしてリリース](https://github.com/azsk/devopskit-docs)されています。 AzSK はオートメーションを広範に使用し、セキュリティをネイティブの DevOps ワークフローに円滑に統合して、チームのためにあらゆる Azure サブスクリプションとリソース セキュリティのニーズに対応します。次に示す 6 つの重点分野で、セキュアな DevOps を実現するために役立ちます。
 
 - サブスクリプションの保護
 - セキュアな開発の実現
@@ -210,9 +210,9 @@ Secure DevOps Kit for Azure (AzSK) は、スクリプト、ツール、拡張機
 - アラートと監視
 - クラウドのリスク ガバナンス
 
-![Azure DevOps ツールキット](../_images/reference/secure-devops-kit.png)
+![Secure DevOps Kit for Azure の概要図](../_images/reference/secure-devops-kit.png)
 
-AzSK は、Azure ガバナンス プラン全体の重要な部分を占めるツール、スクリプトおよび情報を豊富に含むセットです。これをスキャフォールディングに組み込むことは、組織のリスク管理目標を達成するために重要です。
+AzSK は、Azure ガバナンス プラン全体の重要な部分を占めるツール、スクリプト、情報を豊富に含むセットです。これをスキャフォールディングに組み込むことは、組織のリスク管理目標を達成するために重要です。
 
 ### <a name="azure-update-management"></a>Azure Update Management
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239977"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753502"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>移行作業中にデータ要件がネットワーク容量を超えている
 
@@ -39,7 +39,7 @@ ms.locfileid: "73239977"
 
 1 つまたは複数のワークロードのストレージ要件がネットワーク容量を超えた場合、Azure Data Box はまだオンラインのデータ転送で使用できます。
 
-一般的な Microsoft の立場は、ネットワークが利用できない場合を除き、ネットワーク転送が推奨の方法であるというものです。 この推奨事項は、転送速度によるものです。 一般に、ネットワーク経由でのデータ転送は (帯域幅が制限される場合でも)、Data Box などのオフライン転送メカニズムを使用して同量のデータを物理的に配布する場合よりも高速になります。
+ネットワークが使用できない場合を除き、ネットワーク転送が推奨される方法です。 一般に、ネットワーク経由でのデータ転送速度は (帯域幅が制限される場合でも)、Data Box などのオフライン転送メカニズムを使用して同量のデータを物理的に配布するよりも高速になります。
 
 Azure への接続が利用できる場合、特にワークロードの移行が時間の制約があるときに、Data Box を使用する前に分析を行う必要があります。 Data Box は、必要なデータを転送する時間が、Data Box を使用してデータを入力、配布、および復元する時間を超える場合にのみお勧めします。
 

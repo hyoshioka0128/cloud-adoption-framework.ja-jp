@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566498"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751845"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>移行インフラストラクチャをデプロイする
 
@@ -654,7 +654,7 @@ Azure Policy サービスは、リソースを評価して、適用されてい�
 
 Contoso は、いくつかのポリシーを開始する予定です。
 
-- リソースを EUS2 リージョンと CUS リージョンにのみ展開できるようにするポリシーを作成します。
+- これには、リソースを EUS2 リージョンと CUS リージョンにのみ確実にデプロイできるようにするポリシーが必要です。
 - 承認された SKU だけに VM SKU を制限します。 目的は、高価な VM SKU が使われないようにすることです。
 
 #### <a name="limit-resources-to-regions"></a>リージョンにリソースを制限する
@@ -780,7 +780,7 @@ ASG に関連付けられた NSG は最小限の特権で構成されており�
 
 **アクション** | **Name** | **ソース** | **ターゲット** | **ポート**
 --- | --- | --- | --- | ---
-Allow | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443
+Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443
 Allow | AllowWebToApp | APP1-FE | APP1-APP | 80、443
 Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
 拒否 | DenyAllInbound | Any | Any | Any

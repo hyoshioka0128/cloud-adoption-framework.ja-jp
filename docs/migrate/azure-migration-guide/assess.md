@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a2acba3f9aa06298922d2cc95d298d3792a9ada9
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 27fa0720308910db32a340943f584a4502f52e94
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240008"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753586"
 ---
 # <a name="assess-the-digital-estate"></a>デジタル資産を評価する
 
@@ -31,7 +31,7 @@ ms.locfileid: "73240008"
 
 ## <a name="azure-migrate"></a>Azure Migrate
 
-Azure Migrate サービスでは、Azure への移行についてオンプレミスのインフラストラクチャ、アプリケーション、データを評価します。 このサービスで、オンプレミスの資産の移行の適合性と、パフォーマンスに基づくサイズを評価して、オンプレミスの資産を Azure で実行するためのコストを見積もることができます。 リフト アンド シフトでの移行を検討している場合、または移行の初期評価段階にある場合に、このサービスは適しています。 評価が完了したら、Azure Migrate を利用して移行を実行できます。
+Azure Migrate サービスでは、Azure への移行についてオンプレミスのインフラストラクチャ、アプリケーション、データを評価します。 このサービスで、オンプレミスの資産の移行の適合性と、パフォーマンスに基づくサイズを評価して、オンプレミスの資産を Azure で実行するためのコストを見積もることができます。 リフト アンド シフトでの移行を検討している場合、または移行の初期評価段階にある場合に、このサービスは適しています。 評価が完了したら、Azure Migrate を使用して移行を実行できます。
 
 ![Azure Migrate の概要](./media/assess/azuremigrate-overview-1.png)
 

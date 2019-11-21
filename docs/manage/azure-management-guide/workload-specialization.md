@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 92b9988d47dcc8ba4b7a7e3dd02a4ec9ff3ed2e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565373"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752921"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>クラウド管理のためのワークロードの特殊化
 
@@ -46,7 +46,7 @@ ms.locfileid: "73565373"
 
 これらの一元化されたチームは、ワークロードの専門チームにワークロードの操作を指導および指示します。 しかし、毎日の運用の責任は、IT の外部で管理されるクラウド管理チームにあります。 この種類の分散コントロールは、クラウドのセンター オブ エクセレンスの成熟度を示す主要指標の 1 つです。
 
-## <a name="beyond-platform-specialization---application-insights"></a>プラットフォームの特殊化を越えるもの - Application Insights
+## <a name="beyond-platform-specialization-application-insights"></a>プラットフォームの特殊化を越えるもの: Application Insights
 
 明確なワークロード操作を行うには、特定のワークロードの詳細が必要です。 継続的な改善フェーズの間、Application Insights をクラウド管理ツールチェーンに追加する必要があります。
 

@@ -1,7 +1,7 @@
 ---
-title: クラウド監視ガイド - アラート
+title: 'クラウド監視ガイド: アラート'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します。
+description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します
 author: MGoedtel
 ms.author: magoedte
 ms.date: 06/26/2019
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
+ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564991"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912504"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>クラウド監視ガイド:アラート
 
@@ -67,7 +67,7 @@ Azure Monitor には 4 種類のアラートがあり、それぞれ、データ
 
 - [アクティビティ ログ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log):Service Health データを除く、アクティビティ ログ ストア内の項目に関するアラート。
 
-- [Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json):アクティビティ ログ ストアから発生する Service Health 問題専用の特別な種類のアラートです。
+- [Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json):停止や予定されている計画メンテナンスなど、アクティビティ ログ ストアからの Service Health の問題に対してのみ使用される特別な種類のアラートです。 この種類のアラートは、Azure Monitor するコンパニオン サービスである [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) を使用して構成されることに注意してください。
 
 ### <a name="enable-alerting-through-partner-tools"></a>パートナー ツールによるアラートを有効にする
 
@@ -88,7 +88,7 @@ VM に対する Azure Monitor | 正常性基準は、メトリック ストア�
 
 ### <a name="fastest-speed-driven-by-cost"></a>コストによる最高速度
 
-サービスに影響を与える問題のアラートと迅速な解決を促進する最も重要な決定の 1 つは待機時間です。 5 分未満にほぼリアルタイムで警告する必要がある場合は、テレメトリに関するアラートが既定の保存場所にあるか、そこで取得できるかを最初に評価します。 一般的に、使用中のツールは既にその場所にデータを送信しているため、この戦略は最もコストが低い選択肢でもあります。
+サービスに影響を与える問題のアラートと迅速な解決を促進する最も重要な決定の 1 つは待機時間です。 5 分未満でのほぼリアルタイムのアラートが必要な場合は、テレメトリに関するアラートが既定の保存場所にあるか、そこで取得できるかを最初に評価します。 一般的に、使用中のツールは既にその場所にデータを送信しているため、この戦略は最もコストが低い選択肢でもあります。
 
 とは言え、この原則にはいくつかの重要な注意事項があります。
 

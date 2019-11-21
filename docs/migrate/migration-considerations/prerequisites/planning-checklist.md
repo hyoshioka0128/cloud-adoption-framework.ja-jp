@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564564"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753440"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>移行環境の計画チェックリスト - 移行前に環境の対応性を検証する
 
@@ -52,7 +52,7 @@ ms.locfileid: "73564564"
 
 ### <a name="resource-governance"></a>リソース ガバナンス
 
-リソースを管理するためのツールに関する決定は、移行前に行う必要があります。 ツールは完全に実装される必要はありませんが、方向を選択し、テストする必要があります。 クラウド ガバナンス チームは、移行前のガバナンス ツールに対する実用最小限の製品 (MVP) の実装を定義し、要求することをお勧めします。
+リソースを管理するためのツールに関する決定は、移行前に行う必要があります。 ツールは完全に実装される必要はありませんが、方向を選択し、テストする必要があります。 クラウド ガバナンス チームは、移行前のガバナンス ツールに対する実用最小限の製品 (MVP) の実装を定義し、要求する必要があります。
 
 ## <a name="network"></a>ネットワーク
 

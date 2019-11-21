@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 59a18ab71befd7b4f60c4e0a97ecb6af28690d7f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239178"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752839"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>オンプレミス アプリを Azure VM および SQL Database Managed Instance にリホストする
 
@@ -387,7 +387,7 @@ Azure への移行を実行する前に、Contoso の管理者は、オンプレ
 3. 初めて VM をオンにすると、VM は Windows Server 2016 インストール エクスペリエンスで起動されます。 使用許諾契約書に同意し、管理者パスワードを入力します。
 4. インストールが完了したら、管理者として VM にサインインします。 初めてサインインしたときは、Azure Site Recovery 構成ツールが自動的に実行されます。
 5. Site Recovery 構成ツールで、構成サーバーをコンテナーに登録するために使用する名前を入力します。
-6. ツールによって VM から Azure への接続が確認されます。 接続が確立された後、 **[サインイン]** を選択して、Azure サブスクリプションにサインインします。 この資格情報によって、構成サーバーを登録するコンテナーにアクセスできる必要があります。
+6. このツールによって、仮想マシンから Azure への接続が確認されます。 接続が確立された後、 **[サインイン]** を選択して、Azure サブスクリプションにサインインします。 この資格情報によって、構成サーバーを登録するコンテナーにアクセスできる必要があります。
 
     ![構成サーバーを登録する](./media/contoso-migration-rehost-vm-sql-managed-instance/config-server-register2.png)
 

@@ -8,12 +8,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c050e34feecfe26431c7105eef46d000fbb32cf8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565597"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752113"
 ---
 # <a name="measure-for-customer-impact"></a>顧客への影響を測定する
 
@@ -35,7 +35,7 @@ ms.locfileid: "73565597"
 
 ### <a name="customer-flow-and-learning-metrics"></a>顧客フローと学習メトリック
 
-MVP ソリューションを使用して顧客に重点を置いた仮説を検証する場合、このソリューションによって顧客の行動の変化が推進されます。 多様な顧客集団におけるこれらの行動の変化によって、ビジネス成果が向上します。 顧客の行動の変更は、通常、複数段階から成るプロセスであることに注意してください。 各段階に影響を測定する機会があるため、導入チームは常に学習を行って、より優れたソリューションを構築することができます。
+MVP ソリューションを使用して顧客に重点を置いた仮説を検証する場合、このソリューションによって顧客の行動の変化が推進されます。 多様な顧客集団におけるこれらの行動の変化によって、ビジネス成果が向上します。 顧客の行動の変化は、通常、複数段階から成るプロセスであることに注意してください。 各段階に影響を測定する機会があるため、導入チームは常に学習を行って、より優れたソリューションを構築することができます。
 
 顧客の行動の変化についての学習は、MVP ソリューションからの望ましいフローをマップすることから始まります。
 
