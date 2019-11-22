@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1742f794f12501a1506cc6228241435adc5fba52
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565167"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160360"
 ---
 # <a name="business-criticality-in-cloud-management"></a>クラウド管理におけるビジネスの重要度
 
-すべてのビジネスにおいて、あまりに重要なために失敗できないワークロードがいくつか存在します。 これらはミッション クリティカルであると見なされます。 このようなワークロードで停止やパフォーマンスの低下が発生すると、企業全体で収益と収益性への悪影響が感じられる可能性があります。
+すべてのビジネスにおいて、あまりに重要なために失敗できないワークロードがいくつか存在します。 これらのワークロードは、ミッション クリティカルと見なされます。 このようなワークロードで停止やパフォーマンスの低下が発生すると、企業全体で収益と収益性への悪影響が感じられる可能性があります。
 
 その対極には、数か月も使用されることのないワークロードもあります。 このようなワークロードのパフォーマンス低下や停止は望ましくありませんが、その影響は切り離されており限定的です。
 

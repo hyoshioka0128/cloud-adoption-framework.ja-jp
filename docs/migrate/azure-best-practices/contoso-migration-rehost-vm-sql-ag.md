@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566516"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160348"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Azure VM 上と SQL Server Always On 可用性グループ上でオンプレミス アプリを再ホストする
 
@@ -214,7 +214,7 @@ Contoso の管理者は、次のようにストレージ アカウントを作�
 
 クラスターを設定する前に、Contoso の管理者は、各マシン上の OS ディスクのスナップショットを取得します。
 
-![スナップショット](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
+![スナップショットの作成](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
 
 1. 次に、Windows フェールオーバー クラスターを作成するためにまとめたスクリプトを実行します。
 
@@ -439,7 +439,7 @@ Contoso の管理者は、これらのステップを以下のように実行し
 8. マシンに再度サインインすると、構成サーバーの管理ウィザードが自動的に起動されます。
 9. ウィザードで、レプリケーション トラフィックを受信する NIC を選択します。 この設定は、構成後に変更することはできません。
 10. サブスクリプション、リソース グループ、および構成サーバーを登録するコンテナーを選択します。
-        ![コンテナー](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
+        ![Recovery Services コンテナーの選択](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
 11. MySQL Server と VMware PowerCLI をダウンロードしてインストールします。
 12. 検証が終わったら、vCenter サーバーまたは vSphere ホストの FQDN または IP アドレスを指定します。 ポートは既定のままにして、vCenter サーバーには、わかりやすい名前を指定します。

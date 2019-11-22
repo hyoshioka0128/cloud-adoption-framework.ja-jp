@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753519"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159879"
 ---
 # <a name="evaluate-workload-readiness"></a>ワークロードの準備状況を評価する
 
@@ -23,7 +23,7 @@ ms.locfileid: "73753519"
 
 クラウド導入フレームワークでの原則を説明しているほとんどの内容は、クラウドに依存しません。 ただし、準備状況評価のプロセスは、特定の各クラウド プラットフォームに大きく依存します。 次のガイダンスでは、Azure に移行する意図を前提にしています。 また、[レプリケーション アクティビティ](../migrate/replicate.md)のための Azure Migrate (Azure Site Recovery とも呼ばれます) の使用も前提にしています。 代わりのツールについては、「[レプリケーション オプション](../migrate/replicate-options.md)」を参照してください。
 
-この記事は、可能性のあるすべての評価アクティビティのキャプチャを目的にしたものではありません。 ここでは、各環境およびビジネス成果によって特定の要件が規定されると仮定しています。 これらの要件の作成の高速化に役立つように、この記事の残りでは、[インフラストラクチャ](#common-infrastructure-evaluation-activities)、[データベース](#common-database-evaluation-activities)、および[ネットワーク](#common-network-evaluation-activities)評価に関連したいくつかの一般的な評価アクティビティを共有します。
+この記事では、可能性のあるすべての評価アクティビティをキャプチャすることはありません。 ここでは、各環境およびビジネス成果によって特定の要件が規定されると仮定しています。 これらの要件の作成の高速化に役立つように、この記事の残りでは、[インフラストラクチャ](#common-infrastructure-evaluation-activities)、[データベース](#common-database-evaluation-activities)、および[ネットワーク](#common-network-evaluation-activities)評価に関連したいくつかの一般的な評価アクティビティを共有します。
 
 ## <a name="common-infrastructure-evaluation-activities"></a>一般的なインフラストラクチャ評価アクティビティ
 

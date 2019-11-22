@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222178"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160121"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>ID ベースラインの動機とビジネス上のリスク
 
@@ -24,7 +24,7 @@ ms.locfileid: "71222178"
 
 ## <a name="identity-baseline-relevancy"></a>ID ベースラインの関連性
 
-従来のオンプレミス ディレクトリは、企業が社内ネットワークおよびデータ センター内のユーザー、グループ、ロールに対するアクセス許可とポリシーを厳密に制御できるように設計されています。 これは通常、オンプレミス環境内でのみ適用可能なサービスを使用して、シングル テナントの実装をサポートすることを目的としています。
+従来のオンプレミス ディレクトリは、企業が社内ネットワークおよびデータ センター内のユーザー、グループ、ロールに対するアクセス許可とポリシーを厳密に制御できるように設計されています。 通常、これらのディレクトリでは、オンプレミス環境内でのみ適用可能なサービスを使用して、シングル テナントの実装をサポートします。
 
 クラウド ID サービスによって、組織の認証とアクセスの制御の機能がインターネットに拡大されます。 これらはマルチテナントをサポートしており、クラウド アプリケーションとデプロイ全体でユーザーとアクセス ポリシーを管理するために使用できます。 パブリック クラウド プラットフォームは、管理タスクとデプロイ タスクをサポートするクラウド ネイティブの ID サービスを備えており、既存のオンプレミスの ID ソリューションを使用して、[統合のレベルを変える](../../decision-guides/identity/index.md)ことができます。 これらすべての機能によって、従来のオンプレミス ソリューションが必要とする以上の複雑なクラウド ID ポリシーになる可能性があります。
 

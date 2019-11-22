@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 02a4b4debf11507f557951652f362c02e4ae0ecc
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752878"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160394"
 ---
 # <a name="business-commitment-in-cloud-management"></a>クラウド管理におけるビジネス コミットメント
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753479"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159913"
 ---
 # <a name="balance-the-portfolio"></a>ポートフォリオのバランスを取る
 
@@ -95,7 +95,7 @@ ms.locfileid: "73753479"
   - ワークロードが戦略的ではないが、最新のクラウド ベースのアプリケーション ホスティング プラットフォームと互換性がある場合は、アプリケーションに対してマイナーなリファクタリングを実行して、それを最新のアプリとしてデプロイすることが賢明であると考えられます。 これは、クラウド移行の IaaS と OS の全体的なライセンス要件を削減することで、全体的な節約に寄与する可能性があります。
   - ワークロードがサード パーティ アプリケーションで、そのワークロードのデータがダウンストリームのイノベーションで使用するように計画されていない場合は、バックログにリホスト オプションとして残しておくことが最善であると考えられます。
 
-これらの質問は、各ワークロードについて実行される定性分析の範囲にすべきではありませんが、バランスが取れていないポートフォリオの複雑さに対処するために役立つ会話を導くことを意図しています。
+これらの質問は、各ワークロードについて実行された定性分析の範囲にすべきではありませんが、バランスが取れていないポートフォリオの複雑さに対処するための会話を導くのに役立ちます。
 
 ## <a name="migrate-process-changes"></a>移行プロセスの変更
 

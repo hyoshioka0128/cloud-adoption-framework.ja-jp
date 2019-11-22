@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564582"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159852"
 ---
 # <a name="decisions-that-affect-migration"></a>移行に影響を与える意思決定
 
@@ -80,8 +80,8 @@ ms.locfileid: "73564582"
 先に進む前に、次の前提条件を文書化し、それをクラウド戦略チームおよびクラウド導入チームと共有してください。
 
 - ビジネス成果。
-- 役割。 これは、*評価*、*移行*、*最適化*、*セキュリティ保護と管理*の各移行プロセスに対して文書化および改良されます。
-- 完了の定義。 これは、*評価*、*移行*、*最適化*、*セキュリティ保護と管理*の各移行プロセスに対して個別に文書化および改良されます。
+- ロール。*評価*、*移行*、*最適化*、*セキュリティ保護と管理*の各移行プロセスに対して文書化および改良されます。
+- 完了の定義。*評価*、*移行*、*最適化*、*セキュリティ保護と管理*の各移行プロセスに対して個別に文書化および改良されます。
 - 作業の種類。
 - 作業のスケール。
 - 作業のタイミング。

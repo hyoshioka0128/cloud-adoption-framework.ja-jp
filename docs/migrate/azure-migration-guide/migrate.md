@@ -5,17 +5,17 @@ description: 資産の移行
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 22a9f9f3a6c39932b50f58512e015eed41d30068
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753566"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251815"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>資産の移行 (インフラストラクチャ、アプリ、データ)
 
@@ -265,7 +265,7 @@ Microsoft では以下のプロジェクト管理ツールも用意しており�
 
 クラウド テクノロジへの移行は、DevOps や CI/CD に合わせて組織を再編するまたとない機会です。 組織で管理するのがインフラストラクチャだけの場合でも、インフラストラクチャをコードとして管理し、DevOps 向けの業界のパターンやプラクティスを使用するようになれば、CI/CD パイプラインによって機敏性の向上に着手し、変化、成長、リリース、さらには復旧の各シナリオにより迅速に適応できるようになります。
 
-[Azure DevOps](https://dev.azure.com) は、すべての必要な機能と、Azure、オンプレミス、さらには他のクラウドとの統合を提供します。 詳細は[こちら](https://azure.microsoft.com/services/devops)をご覧ください。 ガイド付きのトレーニングについては、[Azure DevOps を使用した CI と CD のクイック スタート](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)をご覧ください。
+Azure DevOps では、すべての必須機能と、Azure、オンプレミス環境、さらには他のクラウドとの統合を提供します。 詳細については、[Azure DevOps](https://azure.microsoft.com/services/devops) のページをご覧ください。 ガイド付きのトレーニングについては、「[Azure DevOps を使用した CI と CD のクイック スタート](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)」をご覧ください。
 
 # <a name="cost-managementtabmanagecost"></a>[コスト管理](#tab/ManageCost)
 

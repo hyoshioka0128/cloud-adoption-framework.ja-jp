@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564310"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160492"
 ---
 # <a name="cloud-center-of-excellence"></a>クラウドのセンター オブ エクセレンス
 
@@ -22,7 +22,7 @@ ms.locfileid: "73564310"
 
 ## <a name="function-structure"></a>機能の構造
 
-CCoE には、次の各機能間のコラボレーションが必要です。
+CCoE モデルには、次の各機能間のコラボレーションが必要です。
 
 - クラウド導入 (具体的には、ソリューション アーキテクト)
 - クラウド戦略 (具体的には、プログラム マネージャーとプロジェクト マネージャー)
@@ -132,7 +132,7 @@ CCoE 作業の最初の 6 から 9 か月は、ビジネス利害関係者が IT
 
 ## <a name="next-steps"></a>次の手順
 
-クラウドのセンター オブ エクセレンスでは、[クラウド プラットフォーム機能](./cloud-platform.md)と[クラウド自動化機能](./cloud-automation.md)の両方が必要です。 次の手順は、[クラウド プラットフォーム機能](./cloud-platform.md)の調整です。
+CCoE モデルでは、[クラウド プラットフォーム機能](./cloud-platform.md)と[クラウド自動化機能](./cloud-automation.md)の両方が必要です。 次の手順は、[クラウド プラットフォーム機能](./cloud-platform.md)の調整です。
 
 > [!div class="nextstepaction"]
 > [クラウド プラットフォームの機能の調整](./cloud-platform.md)

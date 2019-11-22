@@ -5,17 +5,17 @@ description: Azure リソースの予算と支払い方法を設定し、請求�
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 57725e56c973a8fb094c50987d84c26a70c0ead6
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683838"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251672"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>移行に重点を置いたコスト管理のメカニズム
 
@@ -65,8 +65,8 @@ Azure Migrate は、コレクターやサービス マップによってキャ�
 
 結果の見積もり (下の図を参照) によって、コンピューティングとストレージの毎月のコストが識別されます。これは多くの場合、クラウド コストの最大の部分を表しています。
 
-![compute-storage-monthly-cost-estimate.png](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
-*図 1 - Azure Migrate での評価のコスト詳細ビューの画像。*
+![コスト詳細ビュー](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
+*図 1 - Azure Migrate での評価の [コスト詳細] ビューの画像。*
 
 ## <a name="additional-resources"></a>その他のリソース
 

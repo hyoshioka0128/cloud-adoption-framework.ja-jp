@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656709"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160057"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのセキュリティ保護と管理に関するベスト プラクティス
 
@@ -38,10 +38,10 @@ ms.locfileid: "73656709"
 
 Microsoft では、Azure テナント管理者がワークロードを攻撃から保護するセキュリティ機能を有効にするために必要な情報を入手できるようにする作業が行われています。 Azure Security Center では、統合されたセキュリティ管理が提供されます。 Security Center からは、ワークロード全体へのセキュリティ ポリシーの適用、脅威にさらされる状態の軽減、攻撃の検出とその対応を行うことができます。 Security Center では、Azure テナント全体のリソースと構成が分析されて、セキュリティに関する次のような推奨が行われます。
 
-- **一元化されたポリシー管理** - すべてのハイブリッド クラウド ワークロードのセキュリティ ポリシーを一元的に管理して、会社や規制のセキュリティ要件に確実に準拠できます。
-- **継続的なセキュリティ評価** - マシン、ネットワーク、ストレージおよびデータ サービス、アプリケーションのセキュリティ体制を監視して、潜在的なセキュリティの問題を検出します。
-- **実行可能な推奨事項** - 優先順位が付けられた実行可能なセキュリティの推奨事項により、攻撃者が悪用する前にセキュリティの脆弱性を修復します。
-- **優先順位が付けられたアラートとインシデント** - 優先順位が付けられたセキュリティ アラートとインシデントにより、最も重大な脅威にまず重点を置きます。
+- **一元化されたポリシー管理:** すべてのハイブリッド クラウド ワークロードのセキュリティ ポリシーを一元的に管理することで、会社や規制のセキュリティ要件に確実に準拠できます。
+- **継続的なセキュリティ評価:** マシン、ネットワーク、ストレージとデータ サービス、アプリケーションのセキュリティに対する姿勢を監視して、潜在的なセキュリティの問題を検出します。
+- **実行可能な推奨事項:** 優先順位が付けられた実行可能なセキュリティの推奨事項を使って、攻撃者が悪用する前にセキュリティの脆弱性を修復します。
+- **優先順位が付けられたアラートとインシデント:** 優先順位が付けられたセキュリティ アラートとインシデントを使用して、最も重大な脅威にまず重点を置きます。
 
 評価とレコメンデーションだけでなく、Azure Security Center では、特定のリソースに対して有効にできるその他のセキュリティ機能が提供されています。
 
@@ -135,8 +135,7 @@ Azure では、いくつかのソリューションが提供されています�
   - アプリケーション ゲートウェイの後方にある複数の Web アプリが同時に保護されます。
   - Web アプリケーション ファイアウォールは、Azure Monitor を使用して監視でき、Azure Security Center に統合されています。
 
-![Web アプリをセキュリティで保護する](./media/migrate-best-practices-security-management/web-apps.png)
-
+![セキュリティで保護された Web アプリ](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
 
 **詳細情報:**
@@ -175,7 +174,6 @@ Azure Active Directory (Azure AD) では、Azure Monitor に表示されるア�
 - ログの確認を慣習として行うようにするか、またはセキュリティ情報およびイベント管理 (SIEM) ツールを統合して異常が自動的に確認されるようにします。 Premium 1 または 2 を使用していない場合は、ユーザーが自分で、または SIEM システムを使用して、多くの分析を行う必要があります。 分析には、危険なサインインやイベント、およびその他のユーザー攻撃パターンを探すことが含まれます。
 
 ![ユーザーとグループ](./media/migrate-best-practices-security-management/azure-ad.png)
-
 *Azure AD のユーザーとグループ*
 
 **詳細情報:**
@@ -213,9 +211,8 @@ Azure では、高度なセキュリティ オプションを提供するセキ�
 - Azure の名前付け規則に従うことをお勧めします。
 - Azure AD Connect を使用してオンプレミスの Active Directory を Azure AD に同期している場合は、オンプレミスのセキュリティ グループの名前を Azure でのリソース グループの名前と一致させることを検討します。
 
-![名前を付ける](./media/migrate-best-practices-security-management/naming.png)
-
-*リソース グループ名*
+![名前付け](./media/migrate-best-practices-security-management/naming.png)
+*リソース グループの名前付け*
 
 **詳細情報:**
 
@@ -225,9 +222,8 @@ Azure では、高度なセキュリティ オプションを提供するセキ�
 
 最も困るのは、誤って削除したためにリソース グループが消えてしまうことです。 そのようなことが起きないように、削除ロックを実装することをお勧めします。
 
-![ロックを削除する](./media/migrate-best-practices-security-management/locks.png)
-
-*ロックを削除する*
+![削除ロック](./media/migrate-best-practices-security-management/locks.png)
+*削除ロック*
 
 **詳細情報:**
 
@@ -359,7 +355,7 @@ Azure Backup を使用して、複数の方法で VM をバックアップする
 - **Recovery Services コンテナーでの直接バックアップ。** Azure Backup Recovery Services コンテナーをデプロイすることにより、IaaS VM をバックアップできます。 これにより、1 か所でバックアップを追跡して管理でき、バックアップと復元のきめ細かいオプションが提供されます。 バックアップは、ファイル/フォルダー レベルで 1 日に 3 回まで実行できます。 アプリ対応ではなく、Linux はサポートされていません。 この方法を使用して、バックアップ対象の VM ごとに Microsoft Azure Recovery Services (MARS) エージェントをインストールします。
 - **Azure Backup Server に対して VM を保護する。** Azure Backup Server は、Azure Backup で無料提供されます。 VM は、ローカルの Azure Backup Server ストレージにバックアップされます。 その後、Azure Backup Server をコンテナー内の Azure にバックアップします。 バックアップはアプリ対応であり、バックアップの頻度と保持に関して完全な細分性を備えています。 バックアップはアプリ レベルで実行できます。とたえば、SQL Server や SharePoint でバックアップできます。
 
-セキュリティのため、Azure Backup では転送中のデータは AES 256 を使用して暗号化され、HTTPS 経由で Azure に送信されます。 Azure に保存されているバックアップ データ、および転送と保存のためのデータは、[Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) を使用して暗号化されます。
+セキュリティのため、Azure Backup では転送中のデータは AES 256 を使用して暗号化され、HTTPS 経由で Azure に送信されます。 Azure に保存されているバックアップ データ、および転送と保存のためのデータは、[Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json) を使用して暗号化されます。
 
 ![Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Azure Backup*
@@ -401,7 +397,6 @@ Azure Site Recovery は、障害が発生したときに Azure VM をオンラ�
 Site Recovery では、プライマリ Azure リージョンからセカンダリ Azure リージョンに VM がレプリケートされます。 災害が発生したときは、プライマリ リージョンから VM をフェールオーバーして、セカンダリ リージョンで通常どおり引き続きアクセスします。 操作が正常に戻ったら、プライマリ リージョンに VM をフェールバックできます。
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-
 *Site Recovery*
 
 **詳細情報:**
@@ -419,9 +414,8 @@ Azure マネージド ディスクを使用すると、VM ディスクに関連�
 - 既存のディスクをマネージドに変換できます。
 - 高い回復性と可用性のためには、可用性セットに VM を作成する必要があります。 計画された停止または計画外の停止が発生したときは、可用性セットによって、セット内の少なくとも 1 つの VM が引き続き使用できることが保証されます。
 
-![マネージド ディスク](./media/migrate-best-practices-security-management/managed-disks.png)
-
-*マネージド ディスク*
+![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
+*Managed Disks*
 
 **詳細情報:**
 

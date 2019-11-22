@@ -5,17 +5,17 @@ description: Azure を利用したアプリによって顧客を引き付ける�
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 09d5828e7b90a7530158b7f031e4f6f25d4b1d96
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751559"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251920"
 ---
 ::: zone target="docs"
 
@@ -122,7 +122,7 @@ Visual Studio App Center では、1 回の呼び出しによって複数のプ�
 ### <a name="learn-more"></a>詳細情報
 
 - [App Service の概要](https://docs.microsoft.com/azure/app-service/overview)
-- [Web Apps for Containers:カスタム コンテナーの実行](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker)
+- [Web App for Containers: カスタム コンテナーの実行](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker)
 - [Azure Functions の概要](https://docs.microsoft.com/azure/azure-functions/functions-overview)
 - [.NET および .NET Core 開発者向けの Azure](https://docs.microsoft.com/dotnet/azure/?view=azure-dotnet)
 - [Azure SDK for Python のドキュメント](https://docs.microsoft.com/azure/python)

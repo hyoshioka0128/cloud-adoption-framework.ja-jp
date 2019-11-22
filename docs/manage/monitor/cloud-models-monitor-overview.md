@@ -9,21 +9,21 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752724"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160253"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>クラウド監視ガイド: クラウド デプロイ モデルの監視戦略
 
 この記事では、次の基準に基づいて、クラウド デプロイ モデルごとに推奨する監視戦略について説明します。
 
-- IT 運用プロセス、知識、および専門知識と統合されているため、または Azure Monitor で特定の機能をまだ利用できないため、Operations Manager または他のエンタープライズ監視プラットフォームに継続的に取り組む必要があります。
+- IT 運用プロセス、知識、専門知識と統合されているため、または Azure Monitor で特定の機能をまだ利用できないため、Operations Manager または別のエンタープライズ監視プラットフォームに関与し続ける必要があります。
 - オンプレミスとパブリック クラウドの両方で、またはクラウド内だけで、ワークロードを監視する必要があります。
 - あなたのクラウド移行戦略には、IT 運用の最新化や、Microsoft のクラウド監視サービスおよびソリューションへの移行が含まれます。
-- エアギャップによって、または物理的に隔離され、プライベート クラウドまたは物理ハードウェアでホストされている、重要なシステムが存在する場合があります。 そして、システムを監視する必要があります。
+- エアギャップにより、または物理的に隔離され、またはプライベート クラウドや物理ハードウェアでホストされている重要なシステムを備えている可能性があり、これらのシステムは監視される必要があります。
 
 この戦略には、インフラストラクチャ (コンピューティング、ストレージ、サーバーのワークロード)、アプリケーション (エンド ユーザー、例外、クライアント)、ネットワーク リソースを監視するためのサポートが含まれています。 完全なサービス指向の監視の観点が提供されます。
 
@@ -104,7 +104,7 @@ Azure インフラストラクチャおよびプラットフォームのリソ�
 
 ### <a name="monitor-with-system-center-operations-manager"></a>System Center Operations Manager を使用して監視する
 
-System Center Operations Manager は、元々、IT 環境で実行されているアプリケーション、ワークロード、インフラストラクチャ全体を監視するオンプレミス ソリューションとして設計されましたが、クラウド監視機能を含むように進化しています。 Azure、Office 365、およびアマゾン ウェブ サービス (AWS) と統合されています。 このような多様な環境をサポートするように設計および更新されている管理パックを使用して、それらを監視できます。  
+System Center Operations Manager は、元々、IT 環境で実行されているアプリケーション、ワークロード、インフラストラクチャ コンポーネント全体で監視するオンプレミス ソリューションとして設計されましたが、クラウド監視機能を含むように進化しています。 Azure、Office 365、およびアマゾン ウェブ サービス (AWS) と統合されています。 このような多様な環境をサポートするように設計および更新されている管理パックを使用して、それらを監視できます。  
 
 IT サービス マネジメント プロセスおよびツールと緊密に統合された包括的な監視を実現するために Operations Manager に多額の投資を行ってきたお客様や、Azure を初めて使用するお客様であれば、次のような疑問を持っても当然です。
 
@@ -181,7 +181,7 @@ System Center Operations Manager を使用して、Azure Stack の総合的な�
 
 Azure Stack に含まれている[インフラストラクチャ監視機能](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health)を組み合わせて総合的な監視を実現することもできます。 これらの機能は、Azure Stack リージョンの正常性とアラート、および Azure Stack の [Azure Monitor サービス](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data)を表示するために役立ちます。後者は、基本レベルのインフラストラクチャ メトリックと、ほとんどのサービスのログを提供します。
 
-既に Operations Manager に投資している場合は、Azure Stack 管理パックを使用して、Azure Stack デプロイの可用性と正常性状態を監視します。 これには、リージョン、リソース プロバイダー、更新プログラム、更新プログラムの実行、スケール ユニット、ユニット ノード、インフラストラクチャ ロール、およびそれらのインスタンス (ハードウェア リソースで構成される論理エンティティ) が含まれます。 この管理パックでは、正常性および更新プログラムのリソース プロバイダーの REST API を使用して Azure Stack との通信が行われます。 物理サーバーとストレージ デバイスを監視するには、OEM ベンダーの管理パックを使用します (たとえば、Lenovo、Hewlett Packard、または Dell から提供されています)。 Operations Manager では、ネットワーク スイッチをネイティブに監視し、SNMP を使用して基本的な統計を収集することができます。 Azure 管理パックでは、2 つの基本的な手順に従ってテナント ワークロードを監視できます。 監視するサブスクリプションを構成してから、そのサブスクリプション用のモニターを追加します。
+Operations Manager に既に投資している場合は、Azure Stack 管理パックを使用して、リージョン、リソース プロバイダー、更新プログラム、更新プログラムの実行、スケール ユニット、ユニット ノード、インフラストラクチャのロール、それらのインスタンス (ハードウェア リソースで構成される論理エンティティ) など、Azure Stack デプロイの可用性と正常性の状態を監視します。 この管理パックでは、正常性および更新プログラムのリソース プロバイダーの REST API を使用して Azure Stack との通信が行われます。 物理サーバーとストレージ デバイスを監視するには、OEM ベンダーの管理パックを使用します (たとえば、Lenovo、Hewlett Packard、または Dell から提供されています)。 Operations Manager では、ネットワーク スイッチをネイティブに監視し、SNMP を使用して基本的な統計を収集することができます。 Azure 管理パックでは、2 つの基本的な手順に従ってテナント ワークロードを監視できます。 監視するサブスクリプションを構成してから、そのサブスクリプション用のモニターを追加します。
 
 ## <a name="next-steps"></a>次の手順
 

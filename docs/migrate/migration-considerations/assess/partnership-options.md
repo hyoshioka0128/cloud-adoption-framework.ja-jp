@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564657"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159896"
 ---
 # <a name="understand-partnership-options"></a>パートナーシップのオプションを理解する
 
@@ -84,7 +84,7 @@ FastTrack for Azure の一般的な連携の主な段階は次のとおりです
 
 **移行/最適化:** Microsoft Services の [Cloud Modernization Solution](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) では、アプリケーションとインフラストラクチャを Azure に移動し、合理化された移行によってクラウドにデプロイした後で最適化および最新化を行う、包括的なアプローチが提供されます。
 
-**イノベーション:** Microsoft Services の [Cloud Center of Excellence (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) ソリューションでは、DevOps コーチング エンゲージメントが提供され、DevOps の原則と規範的なクラウド ネイティブのサービス管理とセキュリティ コントロールの組み合わせにより、安全で予測可能で柔軟なサービス配信および運用管理機能で、ビジネス革新が推進され、アジリティが向上し、価値実現の時間が短縮されます。
+**イノベーション:** Microsoft Services の[クラウドのセンター オブ エクセレンス (CCoE) ソリューション](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)では、DevOps コーチング エンゲージメントが提供され、DevOps の原則と規範的なクラウド ネイティブのサービス管理とセキュリティ コントロールの組み合わせにより、安全で予測可能かつ柔軟なサービス配信および運用管理機能で、ビジネス革新が推進され、アジリティが向上し、価値実現の時間が短縮されます。
 
 ## <a name="azure-support"></a>Azure Support
 

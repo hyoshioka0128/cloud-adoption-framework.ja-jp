@@ -5,17 +5,17 @@ description: Azure の管理環境で監視、レポート、およびアラー�
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1be663168815af9067268cd18d9db51cfe10291c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548870"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251362"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 内での監視とレポート
 
@@ -98,12 +98,13 @@ Azure Service Health には以下が含まれます。
 
 # <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
-Azure Advisor は、Azure デプロイのベスト プラクティスをフォローして実装するのに役立つ個人用に設定された無料のクラウド コンサルタントです。 リソースの構成と使用状況テレメトリが分析され、環境を最適化に役立つソリューションが推奨されます。 推奨事項は、4 つのカテゴリに分割されています。
+Azure Advisor は、Azure デプロイのベスト プラクティスをフォローして実装するのに役立つ個人用に設定された無料のクラウド コンサルタントです。 リソースの構成と使用状況テレメトリが分析され、環境を最適化に役立つソリューションが推奨されます。 推奨事項は、次のカテゴリに分割されています。
 
 - **高可用性:** ビジネスに不可欠なアプリケーションの継続性を向上させることができます。 推奨事項には、可用性セットへの仮想マシンの追加や geo 冗長エンドポイントの追加などがあります。
 - **セキュリティ:** セキュリティ侵害に至る可能性がある脅威と脆弱性を検出します。 推奨事項には、ディスク暗号化の適用やネットワーク セキュリティ グループの有効化などがあります。
 - **パフォーマンス:** アプリケーションの速度を向上させます。 推奨事項には、インデックスの作成またはトラフィック マネージャーの設定の再構成による SQL クエリのパフォーマンスの向上などが含まれます。
 - **コスト:** Azure の全体的な支出を最適化し、削減します。 推奨事項には、使用頻度の低い仮想マシンのサイズ変更またはシャットダウンや、総保有コストを削減するための Azure の予約への切り替えなどが含まれます。
+- **オペレーショナル エクセレンス:** プロセスとワークフローの効率性と管理性を向上させます。 推奨事項には、Azure Policy ルールの設定と適用、無効なログ アラート ルールの修復、Azure Service Health アラートの構成などが含まれます。
 
 Advisor での推奨事項は、デプロイするリソースと Azure 内で実行するアクションに基づいています。 Advisor で、最新の推奨事項を定期的に確認できます。
 
