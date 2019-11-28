@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 887d2e2ec410b761fdc81b87d83f3a471c3bf99e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
+ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566546"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74557026"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Azure DevOps Services に Team Foundation Server の展開をリファクターする
 
@@ -103,7 +103,7 @@ Contoso は、次のようにして移行を完了します。
 Contoso の管理者は、TFS サーバーを TFS 2018 Update 2 にアップグレードします。 開始前の作業:
 
 - [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads) をダウンロードします
-- [ハードウェア要件](https://docs.microsoft.com/tfs/server/requirements)を検証し、[リリース ノート](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes)と[アップグレードの注意事項](https://docs.microsoft.com/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)をすべて読みます。
+- [ハードウェア要件](/azure/devops/server/requirements)を検証し、[リリース ノート](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes)と[アップグレードの注意事項](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)をすべて読みます。
 
 次の手順でアップグレードします。
 
@@ -132,7 +132,7 @@ Contoso の管理者は、TFS サーバーを TFS 2018 Update 2 にアップグ�
 
 **さらにサポートが必要な場合**
 
-TFS のアップグレードの詳細については、[こちら](https://docs.microsoft.com/tfs/server/upgrade/get-started)を参照してください。
+TFS のアップグレードの詳細については、[こちら](/azure/devops/server/upgrade/get-started)を参照してください。
 
 ## <a name="step-3-validate-the-tfs-collection"></a>手順 3:TFS コレクションを検証する
 
