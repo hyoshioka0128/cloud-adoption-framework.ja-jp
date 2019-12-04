@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c03e6d25734a487c317fa9c6904a799dfd53f631
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753423"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681785"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>セキュリティで保護された監視および管理ツール
 
@@ -71,3 +71,11 @@ Azure Advisor では、パーソナライズされた Azure のベスト プラ�
 - **新しいレコメンデーションのアラート。** 追加で VM のサイズを最適化してコストを節約できる場合があるなど、新しいレコメンデーションを取得し続けることができます。
 
 移行したリソースの最適化については、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) に関するページを参照してください。
+
+## <a name="suggested-skills"></a>推奨されるスキル
+
+Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
+
+ここでは、クラウド導入フレームワークのセキュリティ保護と管理の部分と一致する Microsoft Learn のカスタマイズされたラーニング パスの例を示します。 
+
+[クラウド データのセキュリティ保護](https://docs.microsoft.com/learn/paths/secure-your-cloud-data/): Azure は、セキュリティとコンプライアンスのために設計されています。 組み込みのサービスを活用してアプリ データを安全に保存し、認可されたサービスとクライアントのみがアクセスできるようにする方法について説明します。

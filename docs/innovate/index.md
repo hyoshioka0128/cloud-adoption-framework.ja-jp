@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 96ca8aab7a1fb1e04180f12ac1753bd1b6857e92
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752135"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681782"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウドのイノベーション
 
@@ -117,8 +117,21 @@ Azure には、革新的なソリューションのデプロイを加速させ�
 
 このアプローチは、既存のリーン手法を基に作成されています。 この目的は、顧客の導入についてクラウド志向の会話を行い、ビジネス価値を生み出すための科学的なモデルを作成できるよう支援することです。 また、このアプローチでは、既存の Azure サービスを管理可能な意思決定プロセスに対応付けます。 この調整は、特定の顧客のニーズや仮説への対処に適した技術的なオプションを見つけるのに役立ちます。
 
+## <a name="suggested-skills"></a>推奨されるスキル
+
+Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
+
+ここでは、クラウド導入フレームワークのイノベーションの部分と一致する Microsoft Learn のロール固有のラーニング パスの例をいくつか示します。
+
+[Azure でコンテナーを管理する](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/)Azure Container Instances (ACI) は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、ACI を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
+
+[サーバーレス アプリケーションの作成](https://docs.microsoft.com/learn/paths/create-serverless-applications/): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を利用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
+
+追加のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+
 ## <a name="next-steps"></a>次の手順
 
 クラウド イノベーションに関する最初の演習は次のとおりです。
 > [!div class="nextstepaction"]
 > [イノベーションのビジネス価値の合意を築く](./business-value.md)
+
