@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: abfbdb31ccb9e0270f8ef93b1173726a372df53f
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 5c241ab6b5f7c9fafa13492151b0ab49a7f619e8
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251452"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681714"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Microsoft Azure を最新の状態に保つ
 
@@ -52,6 +52,8 @@ Microsoft Azure のようなクラウド プラットフォームは、多くの
 
 Azure に関する最新情報を入手するのに役立つより詳しいコンテンツについては、ここに記載されたリソースをご覧ください。
 
+- [Azure グラフ](https://azurecharts.com/)
+  - この非公式のリソースでは、過去 6 か月間に発生したすべての Azure の更新情報が視覚化されており、Azure での変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - 毎週発行の、Azure を構築しているエンジニアによる動画。 内容は、デモ、質問への回答、分析情報の共有などです。
   - [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) 経由でサブスクライブします。

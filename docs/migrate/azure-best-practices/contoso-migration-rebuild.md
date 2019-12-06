@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566609"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681827"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>オンプレミス アプリを Azure 上にリビルドする
 
@@ -143,34 +143,45 @@ Contoso の管理者は、AKS と Azure Container Registry (ACR) を使用して
 
 Contoso の管理者は次のようにプロビジョニングします。
 
-Visual Studio Code を使用してフォルダーを開き、 **/deploy/k8s** ディレクトリに移動します。ここに、スクリプト **gen-aks-env.ps1** が含まれています。
+1. Visual Studio Code を使用してフォルダーを開き、 **/deploy/k8s** ディレクトリに移動します。ここに、スクリプト **gen-aks-env.ps1** が含まれています。
+
 2. AKS と ACR を使用して、管理対象の Kubernetes クラスターを作成するスクリプトを実行します。
-    ![AKS](./media/contoso-migration-rebuild/aks1.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks1.png)
+
 3. ファイルを開いた状態で $location パラメーターを **eastus2** に更新し、ファイルを保存します。
-    ![AKS](./media/contoso-migration-rebuild/aks2.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks2.png)
+
 4. **[表示]**  >  **[統合ターミナル]** を選択して、Visual Studio Code で統合ターミナルを開きます。
-    ![AKS](./media/contoso-migration-rebuild/aks3.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks3.png)
+
 5. PowerShell 統合ターミナルで、Connect-AzureRmAccount コマンドを使用して Azure にサインインします。 PowerShell の使用の[詳細については、こちら](https://docs.microsoft.com/powershell/azure/get-started-azureps)を参照してください。
-    ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. `az login` コマンドを実行し、Web ブラウザーを使用した認証の手順に従って、Azure CLI の認証を行います。 Azure CLI でのログインの[詳細については、こちら](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest)を参照してください。
-    ![AKS](./media/contoso-migration-rebuild/aks5.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks4.png)
+
+6. **az login** コマンドを実行し、Web ブラウザーを使用した認証の手順に従って、Azure CLI の認証を行います。 Azure CLI でのログインの[詳細については、こちら](/cli/azure/authenticate-azure-cli?view=azure-cli-latest)を参照してください。
+
+   ![AKS](./media/contoso-migration-rebuild/aks5.png)
+
 7. 次のコマンドを、リソース グループ名 ContosoRG、AKS クラスター名 smarthotel-aks-eus2、および新しいレジストリ名を渡して実行します。
 
-    ```PowerShell
-    .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
-    ```
+   ```PowerShell
+   .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
+   ```
 
-    ![AKS](./media/contoso-migration-rebuild/aks6.png)
+   ![AKS](./media/contoso-migration-rebuild/aks6.png)
 
 8. Azure によって、AKS クラスターのリソースを含んだ別のリソース グループが作成されます。
 
-    ![AKS](./media/contoso-migration-rebuild/aks7.png)
+   ![AKS](./media/contoso-migration-rebuild/aks7.png)
 
 9. デプロイが完了したら、**kubectl** コマンドライン ツールをインストールします。 このツールは、Azure CloudShell では既にインストールされています。
 
-    ```console
-    az aks install-cli
-    ```
+   ```console
+   az aks install-cli
+   ```
 
 10. **kubectl get nodes** コマンドを実行して、クラスターへの接続を確認します。 ノードは、自動的に作成されたリソース グループ内の VM と同じ名前です。
 
@@ -416,11 +427,11 @@ Azure portal で、Contoso の管理者は Function App をプロビジョニン
 
 1. **[Function App]** を選択します。
 
-    ![Function App の作成](./media/contoso-migration-rebuild/function-app1.png)
+   ![Function App の作成](./media/contoso-migration-rebuild/function-app1.png)
 
 2. アプリ名 (**smarthotelpetchecker**) を指定します。 運用リソース グループ **ContosoRG** にアプリを配置します。ホスティングの場所を**従量課金プラン**に設定し、アプリを米国東部 2 リージョンに配置します。 監視用の Application Insights インスタンスと共に新しいストレージ アカウントが作成されます。
 
-    ![Function App の設定](./media/contoso-migration-rebuild/function-app2.png)
+   ![Function App の設定](./media/contoso-migration-rebuild/function-app2.png)
 
 3. アプリがデプロイされたら、アプリのアドレスを参照して、アプリが正常に作成されたことを確認します。
 
@@ -430,9 +441,10 @@ Contoso 管理者は、フロントエンド サイトに 2 つの異なるプ�
 
 1. Azure DevOps で、プロジェクト **SmartHotelFrontend** を作成します。
 
-    ![フロントエンド プロジェクト](./media/contoso-migration-rebuild/function-app1.png)
+   ![フロントエンド プロジェクト](./media/contoso-migration-rebuild/function-app1.png)
 
 2. [SmartHotel360 フロントエンド](https://github.com/Microsoft/SmartHotel360-public-web.git) Git リポジトリを新しいプロジェクトにインポートします。
+
 3. 関数アプリ用の別の Azure DevOps プロジェクト (SmartHotelPetChecker) を作成し、[PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) Git リポジトリをこのプロジェクトにインポートします。
 
 ### <a name="configure-the-web-app"></a>Web アプリを構成する
@@ -572,14 +584,21 @@ Contoso の管理者はアプリを次のようにデプロイします。
 14. 関数はデプロイされた後、Azure portal に **[実行中]** 状態で表示されます。
 
     ![関数のデプロイ](./media/contoso-migration-rebuild/function6.png)
-
+    
 15. Pet Checker アプリが期待どおりに動作していることを確認するために、アプリを参照します ([http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets))。
+
 16. アバターをクリックして、写真をアップロードします。
-    ![関数をデプロイする](./media/contoso-migration-rebuild/function7.png)
+
+    ![関数のデプロイ](./media/contoso-migration-rebuild/function7.png)
+    
 17. 最初に確認したい写真は、小さい犬の写真です。
-    ![関数をデプロイする](./media/contoso-migration-rebuild/function8.png)
+
+    ![関数のデプロイ](./media/contoso-migration-rebuild/function8.png)
+    
 18. アプリが受領のメッセージを返します。
-    ![関数をデプロイする](./media/contoso-migration-rebuild/function9.png)
+
+    ![関数のデプロイ](./media/contoso-migration-rebuild/function9.png)
+    
 
 ## <a name="review-the-deployment"></a>デプロイを再調査する
 
@@ -607,3 +626,14 @@ Contoso の管理者はアプリを次のようにデプロイします。
 ## <a name="conclusion"></a>まとめ
 
 この記事で、Contoso は SmartHotel360 アプリを Azure にリビルドしました。 オンプレミス アプリのフロントエンド VM は、Azure App Service Web アプリにリビルドされます。 アプリのバックエンドは、Azure Kubernetes Service (AKS) によって管理されるコンテナーにデプロイされたマイクロサービスを使用してビルドされます。 Contoso はアプリの機能を、ペットの写真アプリで強化しました。
+
+## <a name="suggested-skills"></a>推奨されるスキル
+
+Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
+
+ここでは、Azure の Contoso SmartHotel360 アプリに合わせてカスタマイズされた Microsoft Learn のラーニング パスの例をいくつか紹介します。
+
+[Azure App Service を使用して Azure に Web サイトをデプロイする](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/):Azure 内の Web アプリを使用すると、基盤となるサーバー、ストレージ、ネットワーク アセットを操作しなくても簡単に Web サイトを公開して管理することができます。 代わりに、Web サイトの機能に焦点を当て、堅牢な Azure プラットフォームを使用して、サイトへの安全なアクセスを提供することができます。
+
+[Azure Cognitive Vision サービスを使用してイメージを処理して分類する](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/):Microsoft Cognitive Services では、ご利用のアプリケーションで Computer Vision 機能を有効にできる事前に作成した機能を提供します。 Cognitive Vision サービスを使用して、顔を検出し、イメージをタグ付けして分類し、オブジェクトを特定する方法について説明します。
+

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251815"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681754"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>資産の移行 (インフラストラクチャ、アプリ、データ)
 
@@ -266,6 +266,14 @@ Microsoft では以下のプロジェクト管理ツールも用意しており�
 クラウド テクノロジへの移行は、DevOps や CI/CD に合わせて組織を再編するまたとない機会です。 組織で管理するのがインフラストラクチャだけの場合でも、インフラストラクチャをコードとして管理し、DevOps 向けの業界のパターンやプラクティスを使用するようになれば、CI/CD パイプラインによって機敏性の向上に着手し、変化、成長、リリース、さらには復旧の各シナリオにより迅速に適応できるようになります。
 
 Azure DevOps では、すべての必須機能と、Azure、オンプレミス環境、さらには他のクラウドとの統合を提供します。 詳細については、[Azure DevOps](https://azure.microsoft.com/services/devops) のページをご覧ください。 ガイド付きのトレーニングについては、「[Azure DevOps を使用した CI と CD のクイック スタート](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)」をご覧ください。
+
+## <a name="suggested-skills"></a>推奨されるスキル
+
+Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たなスキル上の責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
+
+ここでは、クラウド導入フレームワークにおける DevOps ガイダンスのセットアップを補完する Microsoft Learn のカスタマイズされたラーニング パスの例を示します。 
+
+[Azure DevOps でアプリケーションを構築する](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/):Azure Pipelines と GitHub を使って、他の人と共同でアプリケーションを構築します。 パイプラインで自動テストを実行して、コードの品質を検証します。 潜在的な脆弱性がないかどうかソース コードとサードパーティ コンポーネントをスキャンします。 アプリケーションを構築するために連携させる複数のパイプラインを定義します。 Microsoft がホストするエージェントと独自のビルド エージェントの両方を使用して、アプリケーションを構築します。 
 
 # <a name="cost-managementtabmanagecost"></a>[コスト管理](#tab/ManageCost)
 
