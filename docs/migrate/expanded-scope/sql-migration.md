@@ -8,14 +8,14 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
+ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753522"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "75328924"
 ---
-# <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>SQL Server のインスタンスを移行して移行を高速化する
+# <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>複数のデータベースまたは SQL Server 全体を移行して移行を高速化する
 
 SQL Server インスタンス全体を移行すると、ワークロードの移行作業を高速化できます。 以下のガイダンスでは、ワークロードに重点を置いた移行作業とは別に SQL Server のインスタンスを移行することによって、[Azure 移行ガイド](../azure-migration-guide/index.md)の範囲を拡大します。 この方法では、複数ワークロードの移行を促進する手段として、単一データプラットフォームの移行を実施することができます。 この範囲の拡大で必要となる作業の大半は、移行作業の前提条件、評価、移行、最適化のプロセスで発生します。
 
@@ -27,7 +27,7 @@ SQL Server インスタンス全体を移行すると、ワークロードの移
 
 ただし、一部のデータ構造は、個別のデータプラットフォームの移行によってより効率的に移行できます。 以下に例を示します。
 
-- **サービス終了:** SQL Server インスタンスを速やかに移行してサービス終了の問題を回避することは、標準的な移行作業の他に、このガイドを用いるだけの妥当な理由となりえます。
+- **サービス終了:** より大きな移行作業で、SQL Server インスタンスを分離された反復としてすばやく移行すると、サービス終了の課題を回避できます。 このガイドは、広範な移行プロセスに SQL Server の移行を統合するのに役立ちます。 ただし、その他のクラウドの導入作業とは無関係に SQL Server を移行またはアップグレードする場合は、「[SQL Server サービス終了の概要](/sql/sql-server/end-of-support/sql-server-end-of-life-overview)」または [SQL Server 移行に関するドキュメント](/sql/sql-server/migrate/index)の方が、より明確なガイダンスを得られる場合があります。
 - **SQL Server のサービス:** データ構造が、仮想マシン上で稼働している SQL Server を必要とする、より広範なソリューションの一部になっています。 これは、SQL Server Reporting Services、SQL Server Integration Services、SQL Server Analysis Services など、SQL Server のサービスを使用するソリューションでよく見られます。
 - **高密度、低使用率のデータベース:** SQL Server のインスタンスでデータベースの密度が高くなっています。 その各データベースでは、トランザクションの量が少ないため、コンピューティング リソースをほとんど必要としません。 他の最新のソリューションを検討すべきではありますが、サービスとしてのインフラストラクチャ (IaaS) のアプローチは、運用コストの大幅な削減につながる可能性があります。
 - **総保有コスト:** 該当する場合には、表示価格に [Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit)を適用して、SQL Server のインスタンスの保有コストを最小限に抑えることができます。 これは特に、マルチクラウドのシナリオで SQL Server をホストするお客様にとって一般的です。
@@ -58,14 +58,14 @@ SQL Server の移行を実施する前に、データ資産を追加してデジ
 
 上記のサーバーの 1 つについてのデータベース インベントリの例を次に示します。
 
-|サーバー|Database|[重要度](../../manage/considerations/criticality.md)|[機密度](../../govern/policy-compliance/data-classification.md)|Data Migration Assistant (DMA) の結果|DMA の修復|ターゲット プラットフォーム|
+|サーバー|データベース|[重要度](../../manage/considerations/criticality.md)|[機密度](../../govern/policy-compliance/data-classification.md)|Data Migration Assistant (DMA) の結果|DMA の修復|ターゲット プラットフォーム|
 |---------|---------|---------|---------|---------|---------|---------|
-|sql-01|DB-1|ミッション クリティカル|極秘|互換性あり|該当なし|Azure SQL Database|
-|sql-01|DB-2|高|機密|スキーマの変更が必要|変更実施済み|Azure SQL Database|
-|sql-01|DB-1|高|全般|互換性あり|該当なし|Azure SQL マネージド インスタンス|
-|sql-01|DB-1|低|極秘|スキーマの変更が必要|変更予定|Azure SQL マネージド インスタンス|
-|sql-01|DB-1|ミッション クリティカル|全般|互換性あり|該当なし|Azure SQL マネージド インスタンス|
-|sql-01|DB-2|高|機密|互換性あり|該当なし|Azure SQL Database|
+|sql-01|DB-1|ミッション クリティカル|極秘|互換性あり|該当なし|Azure SQL データベース|
+|sql-01|DB-2|高|機密|スキーマの変更が必要|変更実施済み|Azure SQL データベース|
+|sql-01|DB-3|高|全般|互換性あり|該当なし|Azure SQL マネージド インスタンス|
+|sql-01|DB-4|低|極秘|スキーマの変更が必要|変更予定|Azure SQL マネージド インスタンス|
+|sql-01|DB-5|ミッション クリティカル|全般|互換性あり|該当なし|Azure SQL マネージド インスタンス|
+|sql-01|DB-6|高|機密|互換性あり|該当なし|Azure SQL データベース|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>クラウド導入計画との統合
 
@@ -104,10 +104,10 @@ PaaS ソリューションに移行できるデータベースについては、
 
 Azure Database Migration Service を使用した移行に最適なガイダンスの選択は、対象となるソースおよびターゲット プラットフォームに左右されます。 次の表は、Azure Database Migration Service を使用して SQL データベースを移行する標準的な手法ごとに対応したチュートリアルへのリンクです。
 
-|source  |ターゲット  |ツール  |移行の種類  |ガイダンス  |
+|source  |移行先  |ツール  |移行の種類  |ガイダンス  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|Database Migration Service|オフライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL Database|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Azure SQL データベース|Database Migration Service|オフライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Azure SQL データベース|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
 |SQL Server|Azure SQL Database マネージド インスタンス|Database Migration Service|オフライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
 |SQL Server|Azure SQL Database マネージド インスタンス|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |RDS SQL Server|Azure SQL Database (またはマネージド インスタンス)|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
@@ -116,7 +116,7 @@ Azure Database Migration Service を使用した移行に最適なガイダン�
 
 SQL Server のインスタンスから Azure Database Migration Service にデータベースを移動した後は、多数の PaaS ソリューションでスキーマとデータを再ホストすることができます。 ただし、他の必要なサービスがまだそのサーバーで実行されている可能性があります。 次の 3 つのチュートリアルは、SSIS、SSAS、SSRS を Azure 上の同等の PaaS サービスに移動する際に役立ちます。
 
-|source  |ターゲット  |ツール  |移行の種類  |ガイダンス  |
+|source  |移行先  |ツール  |移行の種類  |ガイダンス  |
 |---------|---------|---------|---------|---------|
 |SQL Server Integration Services|Azure Data Factory 統合ランタイム|Azure Data Factory|オフライン|[チュートリアル](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
 |SQL Server Analysis Services - 表形式モデル|Azure Analysis Services|SQL Server Data Tools|オフライン|[チュートリアル](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
@@ -128,7 +128,7 @@ SQL Server のインスタンスから Azure Database Migration Service にデ�
 
 SQL Server のインスタンス上のデータベースまたはその他のサービスを移行するには、この方法を使用します。
 
-|source  |ターゲット  |ツール  |移行の種類  |ガイダンス  |
+|source  |移行先  |ツール  |移行の種類  |ガイダンス  |
 |---------|---------|---------|---------|---------|
 |単一インスタンス SQL Server|IaaS 上の SQL Server|多様|オフライン|[チュートリアル](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
@@ -156,9 +156,9 @@ SQL Server のインスタンス上のデータベースまたはその他のサ
 
 手順 5 が終わるまで、データベースと同期を終了することはできません。 SQL Server のインスタンス上のすべてのデータベースで 7 つの手順をすべて完了するまでは、SQL Server のオンプレミス インスタンスを運用環境として扱う必要があります。 すべての同期を維持する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [拡張スコープ チェックリスト](./index.md)に戻り、移行方法が完全に調整されていることを確認します。
 
 > [!div class="nextstepaction"]
-> [拡張スコープ チェックリスト](./index.md)
+> [範囲拡大チェックリスト](./index.md)
