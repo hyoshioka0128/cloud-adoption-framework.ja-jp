@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 06110380d848cdab37f7bc6109869be07faa9265
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681782"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868078"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウドのイノベーション
 
@@ -22,7 +22,7 @@ ms.locfileid: "74681782"
 
 クラウド導入フレームワークのこのセクションでは、最大の投資収益率を実現する、ポートフォリオの各要素に重点を置きます。
 
-## <a name="get-started"></a>作業開始
+## <a name="get-started"></a>はじめに
 
 クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークからは、次の演習が提案されます。
 
@@ -123,15 +123,14 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 ここでは、クラウド導入フレームワークのイノベーションの部分と一致する Microsoft Learn のロール固有のラーニング パスの例をいくつか示します。
 
-[Azure でコンテナーを管理する](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/)Azure Container Instances (ACI) は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、ACI を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
+[Azure でコンテナーを管理する](https://docs.microsoft.com/learn/paths/administer-containers-in-azure)Azure Container Instances (ACI) は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、ACI を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
 
-[サーバーレス アプリケーションの作成](https://docs.microsoft.com/learn/paths/create-serverless-applications/): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を利用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
+[サーバーレス アプリケーションの作成](https://docs.microsoft.com/learn/paths/create-serverless-applications): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を利用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
 
 追加のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド イノベーションに関する最初の演習は次のとおりです。
 > [!div class="nextstepaction"]
 > [イノベーションのビジネス価値の合意を築く](./business-value.md)
-

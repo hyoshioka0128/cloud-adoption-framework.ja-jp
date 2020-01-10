@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1142ca43776ab9b147b23ef054d77d76d8aed212
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: c62e087372d21a3883c90425b31e1c5ff9bfd2fb
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160232"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868019"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 
@@ -59,7 +59,7 @@ Azure リソースの種類によって[名前付けの要件](../../ready/azure
 
 <!-- markdownlint-disable MD033 -->
 
-| タグの種類 | 例 | 説明 |
+| タグの種類 | 例 | [説明] |
 |-----|-----|-----|
 | 機能            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します。                                 |
 | 分類        | confidentiality=private<br/>sla = 24hours                                 | 使用方法および適用されるポリシーによって、リソースを分類します                               |
@@ -73,10 +73,10 @@ Azure リソースの種類によって[名前付けの要件](../../ready/azure
 
 Azure での名前付けとタグ付けに関する詳細については、以下を参照してください。
 
-- [Azure リソースの名前付け規則](/azure/architecture/best-practices/resource-naming)。 Azure リソースの推奨される名前付け規則については、次のガイダンスを参照してください。
+- [Azure リソースの名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)。 Azure リソースの推奨される名前付け規則については、次のガイダンスを参照してください。
 - [タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)。 Azure ではリソース グループと個々のリソースの両方のレベルでタグを適用でき、適用されたタグに基づいて柔軟な詳細さでアカウンティング レポートを作成できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 リソースのタグ付けは、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
 

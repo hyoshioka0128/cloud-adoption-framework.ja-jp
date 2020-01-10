@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 86082985a252e4724f237806669814d41ac29173
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: f4cc7aaa9a937327a4dd2ede4bf1c3c619cc632a
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781438"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868031"
 ---
 # <a name="landing-zone-considerations"></a>ランディング ゾーンに関する考慮事項
 
@@ -37,7 +37,7 @@ ms.locfileid: "75781438"
 各ランディング ゾーンは、クラウド環境全体でリソースを整理するための広範なソリューションの一部です。 Azure 基礎は、組織の基本的構成要素です。
 
 - **[Azure 基礎の概念](./fundamental-concepts.md)** 。 Azure でのリソースの整理のために使用される基本的な概念と用語、およびこれらの概念の相互関連性について説明します。
-- **[リソースの整合性の意思決定ガイド](../../decision-guides/resource-consistency/)** 。 それぞれの基礎を理解できたら、ランディング ゾーンを形成する意思決定に、リソース編成に関連する意思決定ガイドが役立ちます。
+- **[リソースの整合性の意思決定ガイド](../../decision-guides/resource-consistency/index.md)** 。 それぞれの基礎を理解できたら、ランディング ゾーンを形成する意思決定に、リソース編成に関連する意思決定ガイドが役立ちます。
 
 ## <a name="governance-considerations"></a>ガバナンスに関する考慮事項
 
