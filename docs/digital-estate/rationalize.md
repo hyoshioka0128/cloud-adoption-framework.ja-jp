@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7c733c715f636416f1a6f3f4a4cfe1d984eae73b
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564708"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781744"
 ---
 # <a name="rationalize-the-digital-estate"></a>デジタル資産の合理化
 
-クラウドの合理化は、クラウドで資産をホストする際の最適なアプローチを決定するために資産を評価するプロセスです。 [アプローチ](./approach.md)を決定し、[インベントリ](./inventory.md)を集計したら、クラウドの合理化を開始できます。 [クラウドの合理化](./rationalize.md)に関する記事では、最も一般的な合理化オプションについて説明しています。
+クラウドの合理化は、クラウドで資産をホストする際の最適なアプローチを決定するために資産を評価するプロセスです。 [アプローチ](./approach.md)を決定し、[インベントリ](./inventory.md)を集計したら、クラウドの合理化を開始できます。 クラウドの合理化に関する記事では、最も一般的な合理化オプションについて説明しています。
 
 ## <a name="traditional-view-of-rationalization"></a>合理化に関する従来の見方
 
@@ -156,7 +156,7 @@ ms.locfileid: "73564708"
 
 場合によっては、追加の合理化を行わないと、財務モデルに余裕がなさすぎて決定を下せないことがあります。 そのような場合、より従来型の、合理化に対する手法が必要になる可能性があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 合理化の取り組みの出力は、選択した変革によって影響を受けるすべての資産の、優先度付けされたバックログです。 このバックログは、この時点で、クラウド サービスのコスト モデルの基礎として使用する準備ができています。
 

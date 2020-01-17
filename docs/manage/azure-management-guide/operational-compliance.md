@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9109a51a85627f3c8d0cee8b72baa0936d56c98e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565484"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781812"
 ---
 # <a name="operational-compliance-in-azure"></a>Azure における運用のコンプライアンス
 
@@ -32,6 +32,7 @@ ms.locfileid: "73565484"
 |更新プログラムの管理|更新管理|更新プログラムの管理とスケジューリング|
 |ポリシーの適用|Azure Policy|環境とゲストのコンプライアンスを確保するためのポリシーの適用|
 |環境の構成|Azure Blueprint|コア サービスの自動化されたコンプライアンス|
+|リソース構成|必要な状態の構成|ゲスト OS と環境のいくつかの側面の自動構成|
 
 ::: zone target="docs"
 
@@ -103,7 +104,7 @@ Azure Policy ゲスト構成では、現在、マシン内の設定の監査の�
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 組み込みのポリシーを管理グループ、サブスクリプション、またはリソース グループに割り当てます。
 

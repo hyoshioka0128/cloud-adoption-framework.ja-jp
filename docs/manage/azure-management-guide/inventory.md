@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4969681cbc6fbb71da70f3ced09b5e4616c773b5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565458"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781778"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure のインベントリと可視性
 
@@ -33,7 +33,7 @@ _インベントリと可視性_は、クラウド管理ベースラインの 3 
 |ログの一元化|Log Analytics|すべての可視性のための一元的なログ|
 |監視の一元化|Azure Monitor|運用データと傾向の一元的な監視|
 |仮想マシンのインベントリと変更の追跡|Azure Change Tracking と Inventory|ゲスト OS レベルの VM のインベントリと変更の監視|
-|サービス正常性|[Azure Activity Log (Azure アクティビティ ログ)]|サブスクリプション レベルの変更の監視|
+|サブスクリプションの監視|[Azure Activity Log (Azure アクティビティ ログ)]|サブスクリプション レベルの変更の監視|
 |ゲスト OS の監視|VM に対する Azure Monitor|VM の変更とパフォーマンスの監視|
 |ネットワーク監視|Azure Network Watcher|ネットワークの変更とパフォーマンスの監視|
 |DNS の監視|DNS Analytics|DNS のセキュリティ、パフォーマンス、操作|
@@ -63,7 +63,7 @@ Azure Service Health には以下が含まれます。
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 サービス正常性アラートを設定するには:
 
@@ -100,7 +100,7 @@ Azure Service Health には以下が含まれます。
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -135,7 +135,7 @@ Azure Monitor では、Azure 内のすべての監視データと診断データ
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 <!-- markdownlint-disable DOCSMD001 -->
 

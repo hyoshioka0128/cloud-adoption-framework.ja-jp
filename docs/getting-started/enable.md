@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f24227cbbb06630810f7f6b48e7acdf842c171b3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753296"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781591"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>クラウド導入の取り組みの途中で成功を実現する
 
@@ -29,6 +29,8 @@ ms.locfileid: "73753296"
   - **ガバナンス:** 適正な[ガバナンス規範](../govern/index.md)を整備し、コスト管理、リスク軽減、コンプライアンス、セキュリティの各基準をすべてのクラウド導入にわたって一貫して適用します。
   - **管理:** ビジネス プロセスの中断を最小限に抑え、IT ポートフォリオの安定性を確保するための、IT ポートフォリオの継続的な[運用管理](../manage/index.md)。
   - **サポート:** 適正な[パートナーシップとサポートのオプション](../migrate/migration-considerations/assess/partnership-options.md)を整備します。
+
+もう 1 つの主要テーマは、クラウド導入を成功させるための重要な品質属性であるセキュリティです。 セキュリティはこのフレームワーク全体に統合されており、クラウド ワークロードに対する機密性、整合性、可用性の保証を維持するための統合されたガイダンスとなります。 
 
 ## <a name="additional-tools"></a>その他のツール
 
@@ -155,7 +157,7 @@ ms.locfileid: "73753296"
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入フレームワークの最も有効な側面を理解していれば、[移行](./migrate.md)または[イノベーション](./innovate.md)の取り組みで成功を収める確率が大幅に上昇します。
 

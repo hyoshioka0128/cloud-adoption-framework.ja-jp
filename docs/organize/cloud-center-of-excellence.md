@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 1f25b3debed6110f7a45933fa3d4f724ff8390a5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160492"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781829"
 ---
 # <a name="cloud-center-of-excellence"></a>クラウドのセンター オブ エクセレンス
 
@@ -42,7 +42,7 @@ CCoE モデルには、次の各機能間のコラボレーションが必要で
 
 上の例の図に示されているアプローチはどちらかが正しくどちらかが間違っているわけではなく、責任と管理の別の見方にすぎません。 事業単位が一連のガイドラインと確立された反復的なコントロールに従いつつ自身の決定を行えるセルフサービス モデルを確立することが望ましい場合は、CCoE モデルがテクノロジ戦略に適合する可能性があります。
 
-## <a name="key-responsibilities"></a>主な責任
+## <a name="key-responsibilities"></a>主な責務
 
 CCoE チームの主要な職務は、クラウドネイティブまたはハイブリッド ソリューションを通じてクラウド導入を加速することです。
 
@@ -130,9 +130,9 @@ CCoE 作業の最初の 6 から 9 か月は、ビジネス利害関係者が IT
 
 **バッファーの作成:** CCoE チームは新しいアプローチを使用して実験します。 これらのアプローチの一部は、既存の運用または技術上の制約とうまく整合しません。 実験が失敗した場合に CCoE が他のチームからの圧力や不服を受けるリスクが実際にあります。 "早い失敗" の学習機会の結果からのチームの激励と緩衝が重要です。 同様に、チームが成長の思考様式に対する責任を果たし、これらの実験から学んでより優れたソリューションを見つけられるようにすることも重要です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 CCoE モデルでは、[クラウド プラットフォーム機能](./cloud-platform.md)と[クラウド自動化機能](./cloud-automation.md)の両方が必要です。 次の手順は、[クラウド プラットフォーム機能](./cloud-platform.md)の調整です。
 
 > [!div class="nextstepaction"]
-> [クラウド プラットフォームの機能の調整](./cloud-platform.md)
+> [クラウド プラットフォーム機能の調整](./cloud-platform.md)

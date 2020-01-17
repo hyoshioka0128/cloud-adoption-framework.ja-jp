@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3ee38869badce877fc89784c1e90a60ed7ee04eb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566396"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781540"
 ---
 # <a name="cost-management-sample-policy-statements"></a>コスト管理のサンプル ポリシー ステートメント
 
@@ -24,7 +24,7 @@ ms.locfileid: "73566396"
 - **ポリシー ステートメント:** ポリシーの要件の端的な概要説明です。
 - **設計オプション:** 実践的な推奨事項、仕様、または IT チームおよび開発者がポリシーの実装時に使用できるその他のガイダンス。
 
-次のサンプル ポリシー ステートメントは、一般的なコスト関連のビジネス リスクに対処しています。 これらのステートメントの例は、組織のニーズに対応するポリシー ステートメントを作成するときに参照できます。 これらの例は規制的になるようには考慮されておらず、識別された各リスクに対処するためのポリシー オプションはいくつか存在する可能性があります。 ビジネスおよび IT チームと緊密に協力して、固有の一連のリスクに最適なポリシーを識別してください。
+次のサンプル ポリシー ステートメントは、一般的なコスト関連のビジネス リスクに対処しています。 これらのステートメントの例は、組織のニーズに対応するポリシー ステートメントを作成するときに参照できます。 これらの例は規範となるものではなく、識別された各リスクに対処するためのポリシー オプションはいくつか存在する可能性があります。 ビジネスおよび IT チームと緊密に協力して、固有の一連のリスクに最適なポリシーを識別してください。
 
 ## <a name="future-proofing"></a>将来性
 
@@ -75,9 +75,9 @@ ms.locfileid: "73566396"
 - Azure では、[Azure Monitor の Insights 機能](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-performance)が、システム利用率の分析に役立つ場合があります。
 - ロールに基づいて、リソースをグループ化およびタグ付けするためのオプションがいくつかあります。 Azure で、ガバナンス チームと協力して、[リソースの整合性モデル](../../decision-guides/resource-consistency/index.md)を選択し、すべての資産にこれを適用する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-手始めに、この記事で説明されているサンプルを使用して、クラウドの導入計画に合致する特定のビジネス リスクに対処するポリシーを作成します。
+この記事で説明されているサンプルを開始点として使用し、クラウドの導入計画に合致する特定のビジネス上のリスクに対処するポリシーを作成します。
 
 コスト管理に関連する独自のカスタム ポリシー ステートメントの作成を開始するには、[コスト管理テンプレート](./template.md)をダウンロードします。
 

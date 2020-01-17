@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 30dd36841171ebc0e239a8e59f94d290cc5782c7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a3b773c4715b064413cb07d15d750b1204ddf90a
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561767"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781506"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎の概念
 
@@ -30,7 +30,7 @@ Azure クラウドの導入作業を開始する場合は、以下の定義を�
 - **Azure Active Directory (Azure AD):** Microsoft のクラウドベースの ID とアクセスの管理サービス。 従業員は、Azure AD を通じてリソースにサインインし、アクセスすることができます。
 - **Azure AD テナント:** Azure AD の信頼された専用インスタンス。 Azure AD テナントは、組織が Microsoft クラウド サービスのサブスクリプション (Microsoft Azure、Microsoft Intune、Office 365 など) に最初にサインアップしたときに自動的に作成されます。 1 つの Azure テナントは単一の組織を表します。
 - **Azure AD ディレクトリ:** 各 Azure AD テナントには、信頼された専用のディレクトリが 1 つ用意されます。 ディレクトリには、テナントのユーザー、グループ、アプリが含まれています。 ディレクトリは、テナント リソースに対する ID とアクセスの管理機能を実行するために使用されます。 ディレクトリは複数のサブスクリプションに関連付けることができますが、各サブスクリプションが関連付けられるディレクトリは 1 つに限られます。
-- **リソース グループ:** サブスクリプション内の関連するリソースをグループ化する論理コンテナー。 各リソースが所属できるリソース グループは 1 つに限られます。
+- **リソース グループ:** サブスクリプション内の関連するリソースをグループ化する論理コンテナー。 各リソースが所属できるリソース グループは 1 つに限られます。 リソース グループを使用すると、サブスクリプション内でより詳細なグループ化を行うことができます。 一般に、サブスクリプション内のワークロード、アプリケーション、または特定の機能をサポートするために必要な資産のコレクションを表すために使用されます。
 - **管理グループ:** 1 つ以上のサブスクリプションに使用する論理コンテナー。 管理グループ、サブスクリプション、リソース グループ、リソースからなる階層を定義し、アクセス、ポリシー、コンプライアンスを継承によって効率よく管理できます。
 - **[リージョン]:** 待ち時間で定義された境界内にデプロイされる Azure データセンターのセット。 データセンターは、リージョンの待ち時間の短い専用ネットワーク経由で接続されます。 ほとんどの Azure リソースは特定の Azure リージョンで実行されます。
 
@@ -93,7 +93,7 @@ Azure で定義されているロールの詳細については、「[従来の�
 - [Azure AD Connect のトポロジ](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure の基本的な概念を理解したところで、[複数の Azure サブスクリプションで拡張する](../azure-best-practices/scaling-subscriptions.md)方法について見ていきましょう。
 

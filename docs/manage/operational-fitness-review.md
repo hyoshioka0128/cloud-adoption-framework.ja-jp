@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564907"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868060"
 ---
 # <a name="establish-an-operational-fitness-review"></a>運用適合性レビューの確立
 
@@ -25,7 +25,7 @@ ms.locfileid: "73564907"
 - 可用性
 - ビジネス継続性やディザスター リカバリーを含めた回復力
 - 管理
-- セキュリティ
+- Security
 
 運用適合性レビューのプロセスでは、ミッション クリティカルなワークロードが品質の重要な要素に関するビジネスの期待を確実に満たしていることを確認します。
 
@@ -130,3 +130,5 @@ Microsoft が実施するプロセスが、この記事で概要を説明する�
     このガイドでは、まず "_回復性_" という用語の定義と関連する概念が説明されています。 次に、設計、実装からデプロイ、運用までというアプリケーションの有効期間全体に体系的な方法を使用することで、回復性を実現するプロセスについて説明します。
 - [クラウド設計パターン](https://docs.microsoft.com/azure/architecture/patterns)。
     これらの設計パターンは、エンジニアリング チームがソフトウェア品質の重要な要素に基づいてアプリケーションを構築するときに役立ちます。
+- [Azure Advisor](https://docs.microsoft.com/azure/advisor)。
+    Advisor は、高可用性、セキュリティ、パフォーマンス、およびコストに関してリソースを最適化するのに役立つ、使用状況と構成に基づいてパーソナライズされたレコメンデーションを提供します。
