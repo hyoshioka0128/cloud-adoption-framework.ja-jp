@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
-ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
+ms.openlocfilehash: 48ceb3581f72f6fed72360ecf4e30596b4d2eb72
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74557026"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868097"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Azure DevOps Services に Team Foundation Server の展開をリファクターする
 
@@ -69,7 +69,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 <!-- markdownlint-disable MD033 -->
 
-**要件** | **詳細**
+**必要条件** | **詳細**
 --- | ---
 **Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
 **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。
@@ -81,9 +81,9 @@ Contoso は、次のようにして移行を完了します。
 
 > [!div class="checklist"]
 >
-> - **手順 1:Azure ストレージ アカウントを作成する。** このストレージ アカウントは、移行プロセス中に使用されます。
+> - **ステップ 1:Azure ストレージ アカウントを作成する。** このストレージ アカウントは、移行プロセス中に使用されます。
 > - **手順 2:TFS をアップグレードする。** 展開を TFS 2018 Update 2 にアップグレードします。
-> - **手順 3:コレクションを検証する。** 移行の準備の TFS コレクションを検証します。
+> - **ステップ 3:コレクションを検証する。** 移行の準備の TFS コレクションを検証します。
 > - **手順 4:準備ファイルを構築する。** TFS Migration Tool を使用して、移行ファイルを作成します。
 
 ## <a name="step-1-create-a-storage-account"></a>手順 1:ストレージ アカウントの作成
@@ -102,8 +102,8 @@ Contoso は、次のようにして移行を完了します。
 
 Contoso の管理者は、TFS サーバーを TFS 2018 Update 2 にアップグレードします。 開始前の作業:
 
-- [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads) をダウンロードします
-- [ハードウェア要件](/azure/devops/server/requirements)を検証し、[リリース ノート](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes)と[アップグレードの注意事項](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)をすべて読みます。
+- [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads) をダウンロードします。
+- [ハードウェア要件](https://docs.microsoft.com/azure/devops/server/requirements)を検証し、[リリース ノート](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes)と[アップグレードの注意事項](https://docs.microsoft.com/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)をすべて読みます。
 
 次の手順でアップグレードします。
 
@@ -128,11 +128,11 @@ Contoso の管理者は、TFS サーバーを TFS 2018 Update 2 にアップグ�
      ![TFS](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 一部の TFS アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細情報](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts)。
+> 一部の TFS アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts)。
 
 **さらにサポートが必要な場合**
 
-TFS のアップグレードの詳細については、[こちら](/azure/devops/server/upgrade/get-started)を参照してください。
+TFS のアップグレードの詳細については、[こちら](https://docs.microsoft.com/azure/devops/server/upgrade/get-started)を参照してください。
 
 ## <a name="step-3-validate-the-tfs-collection"></a>手順 3:TFS コレクションを検証する
 
@@ -266,7 +266,7 @@ Contoso の管理者は、移行前に ContosoDev コレクション データ�
 Contoso は Azure DevOps Services へのインポートのためにバックアップ (DACPAC) を作成します。
 
 - DACPAC の作成には SQL Server Data Tools の SqlPackage.exe が使用されます。 SQL Server Data Tools と共に、120、130、140 などの名前のフォルダー以下に複数バージョンの SqlPackage.exe がインストールされます。 適切なバージョンを使用して DACPAC を準備することが重要です。
-- TFS 2018 のインポートでは、140 以降のフォルダーの SqlPackage.exe を使用する必要があります。 CONTOSOTFS の場合、このファイルは **C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140** フォルダーにあります。
+- TFS 2018 のインポートでは、140 以降のフォルダーの SqlPackage.exe を使用する必要があります。 CONTOSOTFS の場合、このファイルは C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140 フォルダーにあります。
 
 Contoso の管理者は次のように DACPAC を生成します。
 
