@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b9bc3a5c2b2bf62c49726a29cedbac81d1d1a96e
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240142"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520176"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -83,7 +83,7 @@ Azure Cost Management では、各スコープに対して次の組み込みロ�
 
 一般的なベスト プラクティスとしては、すべてのチームのメンバーに Cost Management 共同作成者のロールを割り当てます。 このロールでは、予算を作成および管理し、コストをより効果的に監視してレポートできるようにエクスポートするためのアクセス権が付与されます。 ただし、[クラウド戦略チーム](../../organize/cloud-strategy.md)のメンバーは、Cost Management 閲覧者のみに設定する必要があります。 Azure Cost Management ツール内での予算の設定に関与しないためです。
 
-### <a name="scope"></a>Scope (スコープ)
+### <a name="scope"></a>スコープ
 
 次のスコープとロールの設定により、コスト管理に必要な可視性が作成されます。 このベスト プラクティスは、資産の編成方法に応じて若干の変更が必要になることがあります。
 
@@ -126,7 +126,7 @@ Azure Cost Management の利用を開始する方法の詳細については、�
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Azure Cost Management を使用して AWS のコストを管理する
 
-- [AWS のコストと使用状況レポートの統合](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [AWS のコストと使用状況レポートの統合](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [AWS のコストの管理](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>アクセス、ロール、スコープを設定する
