@@ -1,7 +1,7 @@
 ---
-title: スキル準備パス
+title: 技術スキルの構築
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: スキル準備パスの概要
+description: 移行の準備フェーズ中におけるスキル準備パスの概要。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c8954fbb4e5c17ec43951270ded2708cfb3432df
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 21239c8fafe4ef202ec7feba054b8d176fe598ff
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564245"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520159"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>移行の "準備" フェーズ中のスキル準備パス
+# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>移行の準備フェーズ中のスキル準備パス
 
 移行の "*準備*" フェーズにおける目標は、今後の行程に向けた準備をすることです。 このフェーズは、主に、組織の準備と環境 (技術) の準備という 2 つの分野で実現されます。 どちらの場合も、技術的および非技術的な共同作成者に新しいスキルが必要になることがあります。 次の情報は、組織で必要なスキルを構築するのに役立ちます。
 
