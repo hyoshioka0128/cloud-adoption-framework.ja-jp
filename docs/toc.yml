@@ -1,7 +1,7 @@
 - name: クラウド導入フレームワーク
   href: index.md
   pdf_name: Microsoft Cloud Adoption Framework for Azure
-- name: 使用の開始
+- name: 作業の開始
   items:
     - name: 移行工程の開始
       href: getting-started/migrate.md
@@ -163,7 +163,7 @@
               href: 'https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: 認証方法を選択する
               href: 'https://docs.microsoft.com/azure/security/fundamentals/choose-ad-authn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-        - name: Storage
+        - name: ストレージ
           items:
             - name: Storage のセキュリティ ガイド
               href: 'https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -387,7 +387,7 @@
                       items:
                         - name: Azure SQL DB への SAP ASE の移行
                           href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Access
+                    - name: アクセス
                       items:
                         - name: Azure SQL DB への Access の移行
                           href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -817,8 +817,8 @@
                       href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Azure Sphere を開始する
                       href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
-                    - name: Azure Sphere を使用して無線でアプリをデプロイする
-                      href: 'https://docs.microsoft.com/azure-sphere/deployment/application-deployment-steps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Azure Sphere を使ってデプロイを作成する
+                      href: 'https://docs.microsoft.com/azure-sphere/deployment/create-a-deployment?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Azure Kinect DK を開始する
                       href: 'https://docs.microsoft.com/azure/Kinect-dk/about-azure-kinect-dk?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: 最初の Azure Kinect DK アプリを構築する
@@ -857,8 +857,6 @@
                   items:
                     - name: 実験から運用サービスへの Azure Machine Learning
                       href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: アプリの使用のための Web サービスへの Azure Machine Learning の発行
-                      href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Azure HDInsight での ML サービスの運用化
                       href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
 - name: ガバナンス
@@ -1047,7 +1045,7 @@
               href: govern/deployment-acceleration/discipline-improvement.md
             - name: デプロイ高速化用の Azure ツール
               href: govern/deployment-acceleration/toolchain.md
-- name: 管理
+- name: 管理する
   items:
     - name: 概要
       href: manage/index.md
@@ -1107,7 +1105,7 @@
               href: manage/monitor/index.md
             - name: クラウド監視のモデル
               href: manage/monitor/cloud-models-monitor-overview.md
-            - name: データ収集
+            - name: データ コレクション
               href: manage/monitor/data-collection.md
             - name: アラート
               href: manage/monitor/alerting.md
@@ -1193,13 +1191,13 @@
       items:
         - name: 概要
           href: operating-model/index.md
-        - name: 用語集
+        - name: 用語
           href: operating-model/terms.md
     - name: 意思決定ガイド
       items:
         - name: 概要
           href: decision-guides/index.md
-        - name: Subscriptions
+        - name: サブスクリプション
           href: decision-guides/subscriptions/index.md
         - name: ID
           href: decision-guides/identity/index.md
