@@ -1,6 +1,5 @@
 ---
 title: ポリシー順守プロセスを確立する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 企業ポリシーに確実に準拠するためのプロセスを確立します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6671efc087d718a44de97062dcf8c32498cfdb81
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: bf69c13d80063e44a49d945908e2cc319b90ce3e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159841"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807174"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -89,7 +88,7 @@ ms.locfileid: "74159841"
 
 ご利用のデプロイに最適な監視パターンを選択するためのヘルプについては、「[ログとレポートの意思決定ガイド](../../decision-guides/logging-and-reporting/index.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウドでの規制コンプライアンスの詳細を確認します。
 

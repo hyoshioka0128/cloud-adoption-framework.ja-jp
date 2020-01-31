@@ -1,6 +1,5 @@
 ---
 title: 移行済みのリソースを実稼働に昇格させるために何が必要か
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ワークロードをクラウドに移行するタスクに重点を置いたクラウド移行内のプロセス。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0c5606c0081e01cd20456ec6490b4d6fcd7bd914
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a357d4d5024d7671d2018276be06532134a1f137
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548410"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801683"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -51,7 +50,7 @@ ms.locfileid: "72548410"
 
 ワークロードには、さまざまなレベルの詳細なレビューと昇格プロセスが必要になります。 ただし、ネットワークの再配置は、すべての昇格リリースに共通する最終ステップとなります。 他のすべての準備が整ったら、DNS レコードまたは IP アドレスを更新して、移行したワークロードにトラフィックをルーティングします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ワークロードの昇格によってリリースが完了します。 ただし、移行と並行して、廃止された資産を[使用停止](./decommission.md)してサービスから除外する必要があります。
 

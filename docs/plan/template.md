@@ -1,6 +1,5 @@
 ---
 title: クラウド導入計画を Azure DevOps にデプロイする
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入計画用のテンプレートをデプロイします
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8860fe9f4c689d2d2072a3a494b42c58b532a524
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: a7e4dfda94b15a1e589ffadc9b13db57f4a70ef7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160536"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800119"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>クラウド導入計画と Azure DevOps
 
@@ -71,7 +70,7 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 
 これらの 5 つの記事は、実際の導入作業の管理を開始するために必要な調整タスクそれぞれに役立ちます。 次の手順では、調整の演習を開始します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ワークロードの定義および優先順位付け](./workloads.md)で計画プロジェクトの調整を開始します。
 

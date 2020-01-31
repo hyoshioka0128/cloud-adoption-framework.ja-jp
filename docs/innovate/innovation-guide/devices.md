@@ -1,6 +1,5 @@
 ---
 title: Azure イノベーション ガイド:デバイス経由の操作
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure イノベーション ガイド - デバイス経由の操作
 author: umarmohamedusman
 ms.author: umarm
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cf0671d4ea4c8d008010d43379cd782ff58e38ed
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251883"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808313"
 ---
 ::: zone target="docs"
 
@@ -68,7 +67,7 @@ Azure のお客様は、ユーザー、データ、またはその両方に近�
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 IoT ハブを作成するには:
 
@@ -85,7 +84,7 @@ IoT Hub Device Provisioning Service は、ゼロタッチでの Just-In-Time プ
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 IoT Hub Device Provisioning Service を作成するには:
 
@@ -118,7 +117,7 @@ IoT Hub Device Provisioning Service を作成するには:
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Azure Digital Twins を作成するには:
 
@@ -155,7 +154,7 @@ Azure Maps サービスでは、近傍、トラフィック、ルート指定な
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 位置情報インテリジェンスを使用するには:
 
@@ -190,7 +189,7 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 空間エクスペリエンスを使用するには:
 
@@ -221,7 +220,7 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Azure Remote Rendering を使用するには:
 

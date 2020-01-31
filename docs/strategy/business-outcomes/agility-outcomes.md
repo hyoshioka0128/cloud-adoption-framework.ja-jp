@@ -1,6 +1,5 @@
 ---
 title: 機敏性の成果の例
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 機敏性の成果の例
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566642"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798504"
 ---
 # <a name="examples-of-agility-outcomes"></a>機敏性の成果の例
 
@@ -52,7 +51,7 @@ ms.locfileid: "73566642"
 
 - **例:** 消費者向けパッケージ商品を提供している会社では、会社の業務上の要求に対応するために、毎年数百のデータベース クラスターを作成して解体する必要があります。 オンプレミスの仮想ホストは短時間でプロビジョニングできますが、仮想資産の回復プロセスは遅く、チームは多大の時間を費やす必要があります。 このため、従来のオンプレミス環境は膨張に悩まされ、ほとんど要求に応じることができません。 クラウドへの移行後は、請求に対するチャージバック アプローチを使用して、IT でリソースのスクリプト化されたセルフプロビジョニングを簡単に提供できます。 これにより、必要なときにビジネスをできるだけ迅速に進めることができますが、必要なリソースのコストについて説明する義務が残っています。 クラウドでこれを行う場合、デプロイの限界は、ビジネスの予算のみに依存しています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [リーチの成果](./reach-outcomes.md)を確認する。
 

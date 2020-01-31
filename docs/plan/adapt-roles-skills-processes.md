@@ -1,6 +1,5 @@
 ---
 title: 既存の役割、スキル、プロセスをクラウド向けに調整する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 既存の役割、スキル、プロセスをクラウド向けに調整するプロセスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a272a9b8633f60544aca9982654a899288e3b4e8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a39c38a8ac158a45e22930da98f7268e4db21174
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564149"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800595"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>既存の役割、スキル、プロセスをクラウド向けに調整する
 
@@ -52,7 +51,7 @@ IT スタッフ メンバーは、クラウド ソリューションをサポー
 
 これらの依存関係を追跡し、それらをサポートするプロセスを記録します。 さらに、そのプロセスが現在存在するかどうかも記録します。 ツールを必要とするプロセスでは、ツールをデプロイするためのタイムラインが、デジタル変革の全体的なスケジュールに沿っていることを確認します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 変換された役割の適切なサポートの確保はチームの作業です。 このガイダンスに従って行動するには、適切なチーム構造と参加者を特定する[組織の準備状況の概要](../organize/index.md)を確認します。
 

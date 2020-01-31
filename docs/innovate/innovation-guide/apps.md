@@ -1,6 +1,5 @@
 ---
 title: Azure イノベーション ガイド:アプリを使用したカスタマー エンゲージメントの構築
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure を利用したアプリによって顧客を引き付けることでイノベーションを実現する方法について説明します。
 author: billyclaymyersmsft
 ms.author: wimyers
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 09d5828e7b90a7530158b7f031e4f6f25d4b1d96
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 7b6a94830f35f7dde577ba4b7122cdec7e4a711d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251920"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808347"
 ---
 ::: zone target="docs"
 
@@ -45,7 +44,7 @@ Azure App Service からはアプリケーションのホスティング環境�
 
 Azure App Service では、ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP、Python などの言語が最高レベルでサポートされています。 別のランタイム スタックをホストする必要がある場合は、Web App for Containers を使用すると、App Service 内で Docker コンテナーを迅速かつ簡単にホストできるので、サーバーの管理が不要な環境でカスタム コード スタックをホストできます。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Azure App Service のデプロイを構成または監視するには:
 
@@ -69,7 +68,7 @@ Azure Cognitive Services では、Microsoft がサポートする AI と機械�
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Azure Cognitive Service デプロイを構成または監視するには、次の手順に従います。
 
@@ -91,7 +90,7 @@ Azure Cognitive Service デプロイを構成または監視するには、次�
 
 Azure Bot Service では、AI と機械学習を使用して、顧客と対話する新たな方法を生み出すナチュラル ボット インターフェイスを追加することで、標準のアプリケーションを拡張できます。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Azure Bot Services デプロイを構成または監視するには:
 
@@ -158,7 +157,7 @@ Visual Studio App Center では、1 回の呼び出しによって複数のプ�
 
 フル マネージド Kubernetes サービスを使用して、クラスター リソースのオンデマンドでのプロビジョニング、アップグレード、スケーリングを処理します。 AKS を利用すると、コンテナー化されたアプリケーションを簡単にデプロイし、管理できます。 サーバーレスの Kubernetes、統合された継続的インテグレーションと継続的デリバリー (CI/CD) エクスペリエンス、エンタープライズ レベルのセキュリティとガバナンスが提供されます。 開発チームと運用チームを単一のプラットフォーム上で統合し、迅速かつ確実にアプリケーションをビルド、デリバリー、スケーリングします。
 
-#### <a name="action"></a>Action
+#### <a name="action"></a>アクション
 
 Azure Kubernetes Service を構成または監視するには、次の手順に従います。
 
@@ -186,7 +185,7 @@ Azure Functions ランタイムでは、C#、Java、JavaScript、Python など�
 
 関数のもう 1 つの利点は、HTTPTriggers、TimerTriggers、他の Azure サービス (Blob Storage、EventGrid、ServiceBus など) からのトリガーなど、さまざまなアクションやイベントによってトリガーできることです。 トリガーとバインドの詳細については、「[Azure Functions でのトリガーとバインドの概念](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)」をご覧ください。
 
-#### <a name="action"></a>Action
+#### <a name="action"></a>アクション
 
 Azure Functions デプロイを構成または監視するには:
 
@@ -216,7 +215,7 @@ Azure Functions デプロイを構成または監視するには:
 
 異なるシステム間で必要になる複雑な統合コードを記述せずに、データとアプリを統合します。 Azure Logic Apps によりサーバーレス ワークフローを視覚的に作成し、独自の API やサーバーレス関数のほか、Salesforce、Microsoft Office 365、Dropbox など、すぐに使えるサービスとしてのソフトウェア (SaaS) コネクタを使用できます。
 
-#### <a name="action"></a>Action
+#### <a name="action"></a>アクション
 
 Azure Logic Apps を構成または監視するには、次の手順に従います。
 
@@ -238,7 +237,7 @@ Azure Logic Apps を構成または監視するには、次の手順に従いま
 
 サーバーレス アプリケーションに自然に適合するように設計および実装された使用モデルを提供するフル マネージド サービスである Azure API Management を使用して、API の発行、セキュリティ保護、変換、メンテナンス、監視を行います。
 
-#### <a name="action"></a>Action
+#### <a name="action"></a>アクション
 
 API Management サービスを構成または監視するには:
 
@@ -264,7 +263,7 @@ API Management サービスを構成または監視するには:
 
 サーバーレスなマネージド Azure 環境内で Docker コンテナーをオンデマンドで実行します。 Azure Container Instances は、オーケストレーションを必要とせずに分離コンテナー内で運用できる、あらゆるシナリオに対応するソリューションです。 Container Instances でワークロードを実行すると、アプリケーションを実行するインフラストラクチャの管理ではなく、アプリケーションの設計と構築に集中できます。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 コンテナー インスタンスを構成または監視するには、次の手順に従います。
 
@@ -296,7 +295,7 @@ Azure Red Hat OpenShift では、フル マネージドの OpenShift クラス�
 
 Azure Front Door Service では、世界中にアプリケーションを配信するために使用できる安全かつスケーラブルなエントリ ポイントが提供されます。 Azure Front Door Service では、最適なパフォーマンスを得るためのトラフィックの最適化と、即時グローバル フェールオーバーが組み合わされます。 トランスポート層セキュリティ (TLS) プロトコル終端 (SSL オフロード) または HTTP/HTTPS 要求ごとのアプリケーション層の処理が必要な場合は、Azure Traffic Manager ではなく、Azure Front Door Service を使用してください。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 フロント ドアを構成または監視するには、次の手順に従います。
 
@@ -318,7 +317,7 @@ Azure Front Door Service では、世界中にアプリケーションを配信�
 
 Traffic Manager では、さまざまなルールに基づいてルーティングできる DNS ベースの負荷分散が提供されます。 この機能により、デプロイ済みのサービスで障害が発生した場合の回復性を確保できます。 また、Traffic Manager をスタックして、障害ベースのルーティングとパフォーマンス ベースのルーティングの両方を使用することで、地理的な場所に基づいて最適なエクスペリエンスを提供することもできます。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Traffic Manager プロファイルを構成または監視するには:
 
@@ -340,7 +339,7 @@ Traffic Manager プロファイルを構成または監視するには:
 
 Azure では、資産をユーザーの近くにキャッシュすることで資産のタイムリーな配信を可能にする分散型コンテンツ配信ネットワーク (CDN) が提供されます。 このキャッシュは、顧客のエクスペリエンスの向上に役立ちます。 また、コンテンツのダウンロード時に、CDN エンドポイントとアプリケーションをホストしているデータセンター間で発生するネットワークの問題に起因する問題を防ぐこともできます。 Content Delivery Network は、Azure でホストされていないアプリケーションで使用することも可能です。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Content Delivery Network プロファイルを構成または監視するには、次の手順に従います。
 

@@ -1,6 +1,5 @@
 ---
 title: Azure エンタープライズ スキャフォールディング
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 安全で管理しやすい環境を確保するために役立つエンタープライズ スキャフォールディングについて説明します。
 author: rdendtler
 ms.author: rodend
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 442282951d0b76b1d3041ee43d0e7e464d07fccf
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76521157"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798793"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 

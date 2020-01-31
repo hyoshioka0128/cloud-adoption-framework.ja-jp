@@ -1,6 +1,5 @@
 ---
 title: クラウド自動化の機能
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド自動化の機能の構成について説明します
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 945e72550ebc827dbd08e42b87ed3496f465c1a2
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 26384b8e12962a7c1d86ae71af2b8036e9691de9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032425"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806919"
 ---
 # <a name="cloud-automation-capabilities"></a>クラウド自動化の機能
 
@@ -80,7 +79,7 @@ ms.locfileid: "71032425"
 
 クラウド自動化チームは、機能の他の領域と連携して作業を行う必要があります。 この連携が、ミーティング疲れにつながる可能性があります。 クラウド自動化がソリューション カタログの管理に十分な時間をかけられるようにするには、ミーティングの頻度を見直し、コラボレーションを最大化して、開発作業の中断を最小限に抑える必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 重要なクラウド機能を連携できたら、共同チームは[必要な技術スキルの開発](./suggested-skills.md)に貢献できます。
 

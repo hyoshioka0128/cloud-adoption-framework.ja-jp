@@ -1,6 +1,5 @@
 ---
 title: Azure サーバー管理サービスへのオンボード
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure サーバー管理サービスへのオンボード
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c0b1a3ec7f748f9a9217dde45226ae778a2c78d9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 48c0728c39457a2fa060679460a97c0ddca49c45
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565346"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808007"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>フェーズ 2:Azure サーバー管理サービスへのオンボード
 
@@ -44,7 +43,7 @@ Azure 管理サービスに関連する[ツール](./tools-services.md)と[計�
 - **自動登録:** Log Analytics エージェントがサーバーにインストールされ、ワークスペースに接続するように構成されている場合に、そのワークスペース上で有効になっているソリューションがサーバーに自動的に適用されます。
 - **オプトイン:** エージェントがインストールされ、ワークスペースに接続されている場合でも、ワークスペース内のサーバーのスコープ構成に追加されていない限りソリューションは適用されません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 オンボード プロセスを評価するためにポータルを使用して単一の VM をオンボードする方法を確認します。
 

@@ -1,6 +1,5 @@
 ---
 title: 標準的な企業のガイド:コスト管理の規範の改善
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 標準的な企業のガイド:コスト管理の規範の改善
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4ff2db2b8d7009eb9d5a50dee630c1a8a60723c
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 83fe35135b37fe96a95f7335639aec65538ee829
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967584"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806205"
 ---
 # <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準的な企業のガイド:コスト管理の規範の改善
 
@@ -28,7 +27,7 @@ ms.locfileid: "71967584"
 
 この物語の前のフェーズでは、IT 部門がディザスター リカバリー用データ センターの 100% を廃止しました。 アプリケーション開発チームと BI チームは、運用トラフィックに対する準備を終えていました。
 
-その後、ガバナンスに影響を与える以下のような変更がありました。
+その後、以下に示すように、ガバナンスに影響を与えるいくつかの変化がありました。
 
 - 移行チームが、運用環境のデータ センターから VM の移行を開始しました。
 - アプリケーション開発チームが CI/CD パイプライン経由で運用環境のアプリケーションをクラウドに積極的にプッシュしてます。 それらのアプリケーションは、ユーザーの要求によって事後対的にスケールできます。
@@ -79,7 +78,7 @@ ms.locfileid: "71967584"
 
 ガバナンス MVP にこれらのプロセスと変更を加えることで、コスト ガバナンスに関連するリスクの多くの修正に役立ちます。 同時に、コスト管理に必要な可視性、説明責任、および最適化が実現します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入が継続し、ビジネス価値が高まる一方で、リスクやクラウド ガバナンスのニーズも変わります。 このガイドの架空の企業にとっての次の手順は、このガバナンス投資を利用して複数のクラウドを管理することです。
 

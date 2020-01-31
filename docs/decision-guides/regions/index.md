@@ -1,6 +1,5 @@
 ---
 title: リージョンの決定ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド プラットフォームのリージョンの選択について説明します。
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aff6a3129bd93df434737a861f0b5f0daad24bcc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753300"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806715"
 ---
 # <a name="azure-regions"></a>Azure Azure リージョン
 
@@ -82,8 +81,8 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 | リージョン        | Country     | ローカルの従業員 | ローカルの外部ユーザー   | ローカルのデータセンターまたは資産 | データ主権要件 |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
-| 北米 | USA         | はい             | パートナーとお客様 | はい                         | いいえ                            |
-| 北米 | カナダ      | いいえ              | 顧客              | はい                         | はい                           |
+| 北米 | 米国         | はい             | パートナーとお客様 | はい                         | いいえ                            |
+| 北米 | Canada      | いいえ              | 顧客              | はい                         | はい                           |
 | ヨーロッパ        | ドイツ     | はい             | パートナーとお客様 | なし - ネットワークのみ           | はい                           |
 | アジア太平洋  | 韓国 | はい             | パートナー               | はい                         | いいえ                            |
 
@@ -138,7 +137,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 **データセンター間の依存関係の評価:** [Azure Migrate の依存関係視覚化ツール](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)は、依存関係の特定を支援できます。 移行の前にこれらのツールを使用することをお勧めします。 グローバルな複雑さに対処する場合は、これは評価プロセスで実行する必要がある手順になります。 [依存関係のグループ化](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)による視覚化は、ワークロードをサポートするために必要な資産の IP アドレスとポートを特定することを支援できます。
 
 > [!IMPORTANT]
-> 2 つの重要な注意事項:まず、資産の配置と IP アドレス スキーマを理解している領域の専門家がセカンダリ データセンターに存在する資産を特定する必要があります。 次に、双方向の依存関係を理解するために、視覚的にダウン ストリームの依存関係とクライアントの両方を評価することが重要です。
+> 2 つの重要な注意事項:まず、資産の配置と IP アドレス スキーマを理解している該当分野の専門家が、セカンダリ データセンターに存在している資産を識別する必要があります。 次に、双方向の依存関係を理解するために、視覚的にダウン ストリームの依存関係とクライアントの両方を評価することが重要です。
 
 **グローバル ユーザーへの影響の特定:** 前提条件のユーザー プロファイル分析の結果から、グローバル ユーザー プロファイルに影響を受けるすべてのワークロードを特定する必要があります。 移行候補が影響を受けるワークロードの一覧に含まれる場合、移行を準備するアーキテクトは、ネットワークおよび運用の領域の専門家に問い合わせて、ネットワーク ルーティングとパフォーマンスの予想を検証する必要があります。 少なくとも、アーキテクチャには、最も近いネットワーク運用センター (NOC) と Azure 間の ExpressRoute 接続を含める必要があります。 [ExpressRoute 接続の参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)は、必要な接続の構成に役立つことがあります。
 
@@ -151,7 +150,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 複数のリージョンにデプロイする必要があるアプリケーションを移行する場合、クラウド導入チームが検討すべきいくつかの考慮事項があります。 これらの考慮事項には、Azure Site Recovery コンテナーの設計、構成/プロセス サーバーの設計、ネットワーク帯域幅の設計、データの同期が含まれます。
 
-### <a name="suggested-action-during-the-migrate-process"></a>移行プロセス中に推奨されるアクション
+### <a name="suggested-action-during-the-migrate-process"></a>移行プロセスで推奨されるアクション
 
 **Azure Site Recovery コンテナーの設計:** Azure Site Recovery は、デジタル資産の Azure へのクラウドネイティブのレプリケーションと同期に推奨されるツールです。 Site Recovery では、特定のリージョンと Azure データセンター内の特定のサブスクリプションにバインドされている Site Recovery コンテナーに、資産に関するデータがレプリケートされます。 資産を 2 つ目のリージョンにレプリケートする場合は、2 つ目の Site Recovery コンテナーが必要になることがあります。
 
@@ -171,7 +170,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 最適化と昇格時のグローバルな複雑さに対処するには、追加の各リージョンで重複した作業が必要になる可能性があります。 単一のデプロイが許容される場合でも、ビジネス テストとビジネス変更プランの重複が必要になる可能性があります。
 
-### <a name="suggested-action-during-the-optimize-and-promote-process"></a>最適化および昇格プロセス時の推奨されるアクション
+### <a name="suggested-action-during-the-optimize-and-promote-process"></a>最適化および昇格プロセス中に推奨されるアクション
 
 **事前テストの最適化:** 初期オートメーション テストでは、すべての移行作業の場合と同様に、潜在的な最適化の機会を特定できます。 グローバルなワークロードの場合、ネットワークまたはターゲットの Azure データセンターの小さな構成変更が、パフォーマンスに影響を及ぼす可能性があるため、各リージョンで個別にワークロードをテストすることが重要です。
 

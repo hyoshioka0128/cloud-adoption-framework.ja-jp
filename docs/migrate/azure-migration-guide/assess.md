@@ -1,6 +1,5 @@
 ---
 title: デジタル資産を評価する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: デジタル資産を評価する
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 31e76ec1f81bc38b03e8f1e480d083983dc85b14
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 298cfc866e770e2dcd33a22d6cd4713e4053de25
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251419"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807072"
 ---
 # <a name="assess-the-digital-estate"></a>デジタル資産を評価する
 
@@ -68,7 +67,7 @@ Azure Migrate を使用してサーバーの移行評価を開始するには、
 
 ## <a name="service-map"></a>サービス マップ
 
-サービス マップは、Windows および Linux システムのアプリケーション コンポーネントを自動的に検出し、サービス間の通信をマップします。 Service Map を使用すると、サーバーを重要なサービスを提供する相互接続されたシステムとして表示することができます。 Service Map は、TCP 接続アーキテクチャ全体におけるサーバー、プロセス、受信接続と送信接続の待機時間、ポートの間の接続を表示します。エージェントのインストール以外の構成は必要ありません。
+Service Map は自動的に Windows および Linux のシステム上のアプリケーション コンポーネントを検出し、サービス間の通信をマップします。 Service Map を使用すると、サーバーを重要なサービスを提供する相互接続されたシステムとして表示することができます。 Service Map は、TCP 接続アーキテクチャ全体におけるサーバー、プロセス、受信接続と送信接続の待機時間、ポートの間の接続を表示します。エージェントのインストール以外の構成は必要ありません。
 
 Azure Migrate では、Service Map を使用して、環境全体でレポート機能と依存関係が強化されます。 この統合の詳細については、「[依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)」を参照してください。 Azure Migration サービスを使用する場合は、Service Map を構成してその利点を得るために余計な手順を行う必要はありません。 以下の説明は、Service Map を他の目的またはプロジェクトに使用したい場合の参考用に提供されています。
 
@@ -118,7 +117,7 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 - **変更管理:** 変更の実装および承認について、お客様のビジネスには特定の要件がありますか?
 - **セグメントの規制:** セグメントまたは業界の規制を遵守する必要がありますか?
 
-# <a name="cost-managementtabmanagecost"></a>[コスト管理](#tab/ManageCost)
+# <a name="cost-managementtabmanagecost"></a>[Cost Management](#tab/ManageCost)
 
 ご利用の環境を評価する場合は、コスト分析手順を含める絶好の機会が得られます。 評価活動によって収集されたデータを使用して、コストを分析し予測できることが必要になります。 このコスト予測では、1 回限りのコスト (データのイングレスの増加など) に加えて、従量課金サービスのコストも考慮する必要があります。
 
@@ -131,6 +130,6 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 
 次のリソースには、関連する情報が提供されています。
 
-- [クラウド コストの見積もり](../migration-considerations/assess/estimate.md)
+- [クラウド コストの見積り](../migration-considerations/assess/estimate.md)
 
 ::: zone-end

@@ -1,6 +1,5 @@
 ---
 title: デジタル経済のイノベーション
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入フレームワークにおけるクラウド イノベーションを導く理論について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8f1a89f5cd216bafeb8df4e9c6e0f64c6ec449f4
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 87d47fa7e6f28f41c7edc98525cadabe65b99d48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980049"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808466"
 ---
 # <a name="innovation-in-the-digital-economy"></a>デジタル経済のイノベーション
 
@@ -64,7 +63,7 @@ ms.locfileid: "72980049"
 
 イノベーション周期全体を通して、1 つだけ正しいと言えることがあります。最初の試みでは成功しないということです。 測定は、望まれる結果を得るために必要な調整を理解する上で役立ちます。 好ましい成果につながる変化は、Build-Measure-Learn (構築-計測-学習) のプロセスを繰り返すことから生まれます。 クラウド導入チームとクラウド戦略チームは、成長志向や Build-Measure-Learn (構築-計測-学習) 手法を取り入れる前に、繰り返し志向を約束する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次の偉大なる発明を創造する前に、まず、[Build-Measure-Learn (構築-計測-学習) フィードバック ループ](./adoption.md)を理解し、Customer Adoption (顧客による製品/サービスの採用) から始めます。
 

@@ -1,6 +1,5 @@
 ---
 title: クラウド導入のための計画
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入のための計画
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: ddee24fda25b329eccbee5eebf41fd5929346877
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a900ca61f957f941728829208cf72bc8f2aba601
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753400"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800323"
 ---
 # <a name="plan-for-cloud-adoption"></a>クラウド導入のための計画
 
@@ -42,7 +41,7 @@ ms.locfileid: "73753400"
 5. **イテレーションおよびリリースを定義する:** "*イテレーション*" は、作業を実行するために割り当てられた時間ブロックです。 "*リリース*" は、生産プロセスへの変更をトリガーする前に行うべき作業の定義です。
 6. **タイムラインを見積もる:** 最初の見積もりに基づいて、リリース計画のための大まかなタイムラインを設定します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入計画を作成する前に、[必要な前提条件](./prerequisites.md)がすべて満たされていることを確認してください。
 

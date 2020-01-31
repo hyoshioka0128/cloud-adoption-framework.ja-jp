@@ -1,6 +1,5 @@
 ---
 title: 標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: この物語では、標準的な企業のクラウド導入体験の間のガバナンスに関するユース ケースを組み立てます。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8bf9b65c71defd57c319f46a83b5d4540967b012
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547447"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805525"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
 
@@ -55,7 +54,7 @@ ms.locfileid: "72547447"
     ![今後 5 年間で 2,500 万米国ドルのコスト削減を示すオンプレミスのコストと Azure のコストの比較](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - この会社は、割り当てられている資本コストを IT 部門内の運営費として再配分することで、IT 投資の方法を変えることを計画しています。 この変更により、コスト管理が強化され、IT 部門は他の計画されている作業を加速できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 この会社は、ガバナンスの実装を形作るための企業ポリシーを策定しました。 企業ポリシーによって、多くの技術的な決定は変わります。
 

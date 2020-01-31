@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:Azure 上のデバイスと対話するためのツール
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 上のデバイスと対話するためのツール
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c649ef695e74dce0ae2ec21e1e0d666abc2a65e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 83aa06b897c510b90993d77a119063c3fe5f1af1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565821"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808653"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Azure 上のデバイスと対話するためのツール
 
@@ -39,7 +38,7 @@ Azure では、上記のアンビエント ソリューションの各レベル�
 - 統合現実:Azure IoT Hub、Azure Sphere、Azure Kinect DK
 - 調整現実:IoT cloud-to-device、Azure Digital Twins + HoloLens
 
-## <a name="get-started"></a>作業開始
+## <a name="get-started"></a>はじめに
 
 このページの左側の目次に、さまざまな記事がまとめられています。 これらの記事は、このツールチェーン内の各ツールの使用を開始するのに役立ちます。
 

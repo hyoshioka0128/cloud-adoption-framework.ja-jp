@@ -1,6 +1,5 @@
 ---
 title: デジタル資産計画の手法
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: デジタル資産計画のさまざまな手法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 6a9d82e0211b36a2d34b54deca50227a62d7298e
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 453ac12e8c86aed46675c710395101ff3a121195
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753128"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806545"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>デジタル資産計画の手法
 
@@ -57,7 +56,7 @@ Microsoft では、増分型の手法を強く推奨します。Microsoft でも
 > [!TIP]
 > この増分型の手法では、合理的に計画し、迅速に結果を得られます。 すべての関係者が、意思決定を遅らせるというこの手法について理解しておくことが重要です。 同様に、細部が失われないように、各段階で仮定された事柄を文書化することが重要です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 手法を選択した後、インベントリを収集できます。
 

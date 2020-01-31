@@ -1,6 +1,5 @@
 ---
 title: クラウド管理
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入フレームワークにおけるクラウド管理
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 1e54fdc30e0db1ed1cecf01156bb9c25368a8457
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: dca756b0e511b31372efa1c5ff7a779a34e9d6ac
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565029"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807667"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド管理
 
 [クラウド戦略](../strategy/index.md)を提供するには、十分な計画、準備、導入が必要です。 しかし、これは具体的なビジネスの結果を提供する、デジタル資産の継続的な運用です。 クラウド ソリューションにおいて信頼性の高い、適切に管理された運用を計画していなければ、これらの取り組みによる価値はほとんどありません。 次の演習は、進行中の運用を行うクラウド管理を提供するために必要なビジネスおよび技術的なアプローチを開発するのに役立ちます。
 
-## <a name="getting-started"></a>使用の開始
+## <a name="getting-started"></a>作業の開始
 
 クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークからは、次の演習が提案されます。
 
@@ -138,7 +137,7 @@ ms.locfileid: "73565029"
 
 <!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](./guide/index.md). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 手法を適用して、明確なビジネス コミットメントを確立します。
 

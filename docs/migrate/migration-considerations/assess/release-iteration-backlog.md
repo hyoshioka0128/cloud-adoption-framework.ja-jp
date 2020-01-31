@@ -1,6 +1,5 @@
 ---
 title: イテレーションとリリース バックログ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: イテレーションとリリース バックログの構築
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 604ce189a1518f87660d8f29d33413581e9b00f6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025404"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802448"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>増分型の移行作業での変更を管理する
 
@@ -33,7 +32,7 @@ ms.locfileid: "71025404"
 
 各イテレーション中に、チーム メンバーは現在のイテレーション バックログのコミットメントを実現するために、自己組織化チームとして作業します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 イテレーション バックログが定義され、クラウド導入チームによって承認された後、[変更管理の承認](./approve.md)が完了します。
 

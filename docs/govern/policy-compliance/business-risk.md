@@ -1,6 +1,5 @@
 ---
 title: クラウド移行時のビジネス リスクの理解
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド移行時のビジネス リスクの理解
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 85ff0f9fa54542309a814fbca44c38de65805933
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 801420d31c5f1bbfef20ac610e06f7501bce5e6d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752665"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806137"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -76,7 +75,7 @@ MVP の一部として含まれる可能性があるビジネス リスクのい
 
 このアプローチでリスクを最小限に抑えながら、チームが迅速に動けるようにします。 また、デプロイの前にリスクがすばやく対処され、解決されることも保証されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入時にリスク許容度を評価する方法を確認します。
 

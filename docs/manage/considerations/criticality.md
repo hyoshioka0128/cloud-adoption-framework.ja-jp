@@ -1,6 +1,5 @@
 ---
 title: ビジネス上の重要度:クラウドの管理と運用
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ビジネス上の重要度:クラウドの管理と運用
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 3232d0544f0382c6277e3a2898a95aa0c2f11ddd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160360"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807837"
 ---
 # <a name="business-criticality-in-cloud-management"></a>クラウド管理におけるビジネスの重要度
 
@@ -37,7 +36,7 @@ IT ポートフォリオ内の各ワークロードの重要度を理解する�
 | 高 | 業務の妨げにはなりませんが、重要度の高いプロセスに影響を与えます。 停止した場合は、測定可能な損失を定量化できます。 |
 | Medium | プロセスへの影響が生じる可能性があります。 損失は少ないか見当もつきませんが、ブランドの毀損やアップストリームの損失が発生する可能性があります。 |
 | 低 | ビジネス プロセスへの影響は測定できません。 ブランドの毀損やアップストリームの損失の可能性はありません。 1 つのチームに局地的な影響が及ぶ可能性があります。 |
-| サポートされていません | このワークロードに関連付けられたビジネス所有者、チーム、またはプロセスは、ワークロードの継続的な管理への投資を正当化できません。 |
+| サポートされていない | このワークロードに関連付けられたビジネス所有者、チーム、またはプロセスは、ワークロードの継続的な管理への投資を正当化できません。 |
 
 業界、業種、または特定のビジネス プロセスに固有の重要度の分類を企業が追加で含めることは一般的です。 追加の分類の例を次に示します。
 
@@ -65,7 +64,7 @@ IT ポートフォリオ内の各ワークロードの重要度を理解する�
 2. *Example* または *Clean Template* の各ワークロードは、*Criticality* 列の既定の重要度を反映するように更新します。
 3. 業務では、既定の重要度の誤差を反映するために正しい値を入力する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 チームがビジネスの重要度を定義すると、[ビジネスへの影響を計算および記録](./impact.md)できるようになります。
 

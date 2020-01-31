@@ -1,6 +1,5 @@
 ---
 title: Azure リソースの効果的な整理
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 管理を容易にするために Azure リソースを効果的に編成するためのベスト プラクティス。
 author: laraaleite
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 393c80c684de13cf27cba738a8e539533de57d38
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251406"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799337"
 ---
 # <a name="organize-your-azure-resources"></a>Azure リソースの整理
 
@@ -64,7 +63,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 1. [[サブスクリプション]](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) に移動します。
 1. **[追加]** を選択します。
 
-### <a name="create-a-resource-group"></a>リソース グループの作成
+### <a name="create-a-resource-group"></a>リソース グループを作成する
 
 リソース グループを作成して、Web アプリ、データベースなどのリソースや、同じライフサイクル、アクセス許可、ポリシーを共有するストレージ アカウントなどのリソースを保持します。
 
@@ -141,9 +140,9 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ::: zone-end
 
-| エンティティ | Scope (スコープ) | Length | 大文字小文字の区別 | 有効な文字 | 提案されるパターン | 例 |
+| Entity | Scope | 長さ | 大文字小文字の区別 | 有効な文字 | 提案されるパターン | 例 |
 | --- | --- | --- | --- | --- | --- | --- |
-|Resource group |Subscription |1-90 |大文字と小文字は区別されない |英数字、アンダースコア、かっこ、ハイフン、ピリオド (末尾を除く)、および Unicode 文字 |`<service short name>-<environment>-rg` |`profx-prod-rg` |
+|Resource group |サブスクリプション |1-90 |大文字と小文字は区別されない |英数字、アンダースコア、かっこ、ハイフン、ピリオド (末尾を除く)、および Unicode 文字 |`<service short name>-<environment>-rg` |`profx-prod-rg` |
 |可用性セット |Resource group |1 ～ 80 |大文字と小文字は区別されない |英数字、アンダースコア、ハイフン |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |タグ |関連付けられたエンティティ |512 (名前)、256 (値) |大文字と小文字は区別されない |英数字 |`"key" : "value"` |`"department" : "Central IT"` |
 
@@ -157,7 +156,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 - **メタデータとドキュメント:** 管理者は、"ProjectOwner" などのタグを適用して、操作しているリソースに関する詳細を簡単に確認できます。
 - **自動化:** "ShutdownTime" や "DeprovisionDate" のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
-- **課金:** タグを請求書に表示することができます。 それらを使用して、"CostCenter" や "BillTo" などのタグを使って請求書をセグメント化できます。
+- **課金**: タグを請求書に表示することができます。 それらを使用して、"CostCenter" や "BillTo" などのタグを使って請求書をセグメント化できます。
 
 各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 
@@ -182,7 +181,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Action
+## <a name="action"></a>アクション
 
 **リソース タグの適用:**
 

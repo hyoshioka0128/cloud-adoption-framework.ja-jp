@@ -1,6 +1,5 @@
 ---
 title: Azure のデプロイ高速化ツール
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure のデプロイ高速化ツール
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d47162b3e1a6a303e8b346146948667bc42c2326
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6617fe95f885836241e4b0f16bc17652f36c5a7d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222679"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806324"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure のデプロイ高速化ツール
 
@@ -27,9 +26,9 @@ ms.locfileid: "71222679"
 |  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 管理グループ](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 |企業ポリシーを実装する     |はい |いいえ  |いいえ  |いいえ | いいえ |いいえ |
-|サブスクリプション間でポリシーを適用する     |必須 |はい  |いいえ  |いいえ | いいえ |いいえ |
+|サブスクリプション間でポリシーを適用する     |Required |はい  |いいえ  |いいえ | いいえ |いいえ |
 |定義済みリソースをデプロイする     |いいえ |いいえ  |はい  |いいえ | いいえ |いいえ |
-|完全に準拠した環境を作成する      |必須 |必須  |必須  |はい | いいえ |いいえ |
+|完全に準拠した環境を作成する      |Required |Required  |Required  |はい | いいえ |いいえ |
 |ポリシーを監査する      |はい |いいえ  |いいえ  |いいえ | いいえ |いいえ |
 |Azure リソースをクエリする      |いいえ |いいえ  |いいえ  |いいえ |はい |いいえ |
 |リソースのコストをレポートする      |いいえ |いいえ  |いいえ  |いいえ |いいえ |はい |

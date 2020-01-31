@@ -1,6 +1,5 @@
 ---
 title: 移行に影響を与える意思決定
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行プロセスに関する重要な意思決定。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: aee856c1e9c0a509aecda8ad4d6cf642de0e0fe2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159852"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801479"
 ---
 # <a name="decisions-that-affect-migration"></a>移行に影響を与える意思決定
 
@@ -86,7 +85,7 @@ ms.locfileid: "74159852"
 - 作業のスケール。
 - 作業のタイミング。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 チームの間でプロセスが理解されたら、技術的な前提条件をレビューする必要があります。 [移行環境計画チェックリスト](./planning-checklist.md)は、技術的な基礎が移行のために準備できていることを確認するために役立ちます。
 

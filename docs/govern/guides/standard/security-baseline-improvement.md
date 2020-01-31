@@ -1,6 +1,5 @@
 ---
 title: 標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ef4d58cb871ea290f8489e806a4b78f32a9d8b3d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753049"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807123"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
 
@@ -107,7 +106,7 @@ IT 部門とビジネス部門のリーダーたちは、IT、アプリ開発、
 6. 保護対象データの分類が含まれるすべてのサブスクリプションについて、Azure のポリシーを更新します。
     1. 標準の Azure RBAC ロールのみの使用を監査し、実施します。
     2. 個々のノードのすべてのストレージ アカウントと保存中のファイルに対する暗号化を監査し、実施します。
-    3. 1 つのNSG をすべての NIC とサブネットに適用することを監査し、強制します。 ネットワーク チームと IT セキュリティ チームは NSG を定義します。
+    3. 1 つの NSG をすべての NIC とサブネットに適用することを監査し、強制します。 ネットワーク チームと IT セキュリティ チームは NSG を定義します。
     4. ネットワーク インターフェイスごとに、承認されたネットワーク サブネットおよび VNet の使用を監査し、実施します。
     5. ユーザー定義のルーティング テーブルの制限を監査し、実施します。
     6. ゲスト構成用の組み込みポリシーを次のように適用します。
@@ -127,7 +126,7 @@ IT 部門とビジネス部門のリーダーたちは、IT、アプリ開発、
 
 上記のプロセスと変更をガバナンス MVP に追加すると、セキュリティ ガバナンスに関連するリスクの多くを修正するのに役立ちます。 それらと共に、データを保護するために必要なネットワーク、ID、およびセキュリティ監視ツールが追加されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入が継続し、ビジネス価値が高まる一方で、リスクやクラウド ガバナンスのニーズも変わります。 このガイドの架空の企業の次なるステップは、ミッション クリティカルなワークロードのサポートです。 この段階で、リソース整合性のコントロールが必要になります。
 

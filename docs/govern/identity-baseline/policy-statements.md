@@ -1,6 +1,5 @@
 ---
 title: ID ベースラインのサンプル ポリシー ステートメント
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ID ベースラインのサンプル ポリシー ステートメント
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44c0f8693362572e0faf1e39d9f2ec7ba2ff16b9
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: c3804f24db454e4c198494e0024632efdc7d0d53
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160066"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805049"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>ID ベースラインのサンプル ポリシー ステートメント
 
-個々のクラウド ポリシー ステートメントは、リスクの評価プロセス時に識別された特定のリスクに対処するためのガイドラインとなります。 これらのステートメントでは、リスクとそれらのリスクに対処する計画の簡潔な概要を提供する必要があります。 各ステートメント定義には、以下の情報を含める必要があります。
+個々のクラウド ポリシー ステートメントは、リスクの評価プロセスで識別された特定のリスクに対処するためのガイドラインとなります。 これらのステートメントでは、リスクとそれらのリスクに対処する計画の簡潔な概要を提供する必要があります。 各ステートメント定義には、以下の情報を含める必要があります。
 
 - **技術的なリスク:** このポリシーで対処されるリスクの概要。
 - **ポリシー ステートメント:** ポリシーの要件の端的な概要説明です。
@@ -77,7 +76,7 @@ ms.locfileid: "74160066"
 
 **使用可能な設計オプション:** ガバナンスのチーム メンバーと、ID サービスの管理を担当する IT スタッフの両方を含む四半期ごとのセキュリティ レビュー会議を設定します。 既存のセキュリティ データとメトリックのレビューを行って、現在の ID 管理のポリシーとツールのギャップを確かめ、新しいリスクを改善するようにポリシーを更新します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 この記事で説明されているサンプルを開始点として使用し、クラウドの導入計画に合致する特定のビジネス上のリスクに対処するポリシーを作成します。
 

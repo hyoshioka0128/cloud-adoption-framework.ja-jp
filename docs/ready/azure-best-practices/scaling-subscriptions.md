@@ -1,6 +1,5 @@
 ---
 title: 複数の Azure サブスクリプションでの拡張
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 複数の Azure サブスクリプションで拡張する方法について説明します。
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4910309817d348874ec7eed75640bd0407f1ffcf
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564006"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799796"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>複数の Azure サブスクリプションでの拡張
 
@@ -103,7 +102,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 - [Azure のすべてのサブスクリプションと管理グループを管理する目的でアクセス権限を昇格させる](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)。
 - [Azure リソースを別のリソース グループやサブスクリプションに移動する](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure リソースをデプロイするときに従う[推奨される名前付けとタグ付けの規則](./naming-and-tagging.md)を確認します。
 

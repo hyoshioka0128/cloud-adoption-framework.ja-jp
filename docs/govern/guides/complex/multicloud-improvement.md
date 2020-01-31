@@ -1,6 +1,5 @@
 ---
 title: '複雑な企業向けのガバナンス ガイド: マルチクラウドの改善'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: '複雑な企業向けのガバナンス ガイド: マルチクラウドの改善'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4279f088dd985b26c87d28a580b8351d45d9384e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547664"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805593"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雑な企業向けのガバナンス ガイド: マルチクラウドの改善
 
@@ -43,7 +42,7 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 
 ## <a name="changes-in-tangible-risks"></a>具体的なリスクの変化
 
-**ビジネスの取得コスト:** 新しいビジネスの取得は、約 5 年間で黒字化する見込みです。 利益が出るまでに時間がかるため、取締役会は、できるだけ取得コストを管理することを希望しています。 コスト管理と技術的統合が互いに競合するリスクがあります。
+**ビジネスの取得コスト:** 新しいビジネスの取得は、約 5 年間で黒字化する見込みです。 利益が出るまでに時間がかるため、取締役会は、できるだけ取得コストを管理することを希望しています。 コスト管理と技術的統合が互いに競合するというリスクがあります。
 
 このビジネス リスクは、いくつかの技術的リスクへと拡大する可能性があります。
 
@@ -82,7 +81,7 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 
 技術的なニーズまたは特定のビジネス要件に基づいて、必要な場所にマルチクラウドの導入を含める必要があります。 マルチクラウドの導入が増えるにつれて、複雑さとセキュリティのリスクが生じます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 多くの大企業で、クラウド ガバナンスの 5 つの規範が導入の妨げになる可能性があります。 次の記事では、ガバナンスをチーム スポーツにして、クラウドでの長期的成功の確保に役立てるいくつかの追加的な考えをご紹介します。
 

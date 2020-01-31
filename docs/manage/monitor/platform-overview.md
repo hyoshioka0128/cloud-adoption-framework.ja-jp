@@ -1,6 +1,5 @@
 ---
 title: 'クラウド監視ガイド: 監視プラットフォームの概要'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します。
 author: mgoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751679"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807599"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>クラウド監視ガイド: 監視プラットフォームの概要
 
@@ -72,13 +71,13 @@ Azure Monitor は、それをサポートするすべてのインフラストラ
 
 ![Azure Monitor の図](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
-## <a name="data-collection"></a>データ収集
+## <a name="data-collection"></a>データ コレクション
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="operations-manager"></a>Operations Manager
 
-#### <a name="agents"></a>エージェント
+#### <a name="agents"></a>[エージェント]
 
 Operations Manager では、[Windows コンピューター](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent)にインストールされたエージェントからのみ、データが直接収集されます。 Operations Manager SDK からのデータを受け入れることができますが、このアプローチは通常、監視データの収集ではなく、カスタム アプリケーションによって製品を拡張するパートナーのために使用されます。 [Linux コンピューター](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent)やネットワーク デバイスなどの他のソースからのデータ収集は、これらの他のデバイスにリモートからアクセスする Windows エージェントで実行される特別なモジュールを使用して行うことができます。
 
@@ -194,7 +193,7 @@ Azure Monitor では、構成をほとんどしないかまったくしなくて
 
 Monitor では、Azure または外部リソースから監視データや管理データを収集する方法がいくつかサポートされています。 その後、メトリック ストアまたはログ ストアからデータを抽出し、ITSM または監視ツールに転送することができます。 Azure Monitor REST API を使用して管理タスクを実行することもできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [クラウド デプロイ モデルの監視](./cloud-models-monitor-overview.md)

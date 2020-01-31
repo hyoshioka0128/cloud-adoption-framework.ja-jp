@@ -1,6 +1,5 @@
 ---
 title: セキュリティ ベースライン テンプレート
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンスに関連したセキュリティ ベースラインの概念の説明。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8602676ceb6b3c1400254dc6f72cb2d9f99069b0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222815"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808840"
 ---
 # <a name="security-baseline-template"></a>セキュリティ ベースライン テンプレート
 
@@ -31,7 +30,7 @@ ms.locfileid: "71222815"
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 堅実なガバナンス プラクティスは、ビジネス リスクの理解から始まります。 ビジネス リスクに関する記事をレビューし、現在のクラウド導入計画に整合するビジネス リスクの文書化を開始してください。
 

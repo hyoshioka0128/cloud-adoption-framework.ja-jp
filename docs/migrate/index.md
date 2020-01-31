@@ -1,6 +1,5 @@
 ---
 title: クラウド移行
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入フレームワークにおけるクラウド移行
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 90a9c69b311f1d4687d2691af13c3b51a7b6f813
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566856"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802958"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
 大企業規模の[クラウド導入計画](../plan/index.md)には、新しいビジネス ロジックの開発に大きな投資を約束できないワークロードが含まれます。 そのようなワークロードは、リフト アンド シフト、シフト アンド オプティマイズ、モダナイズなど、さまざまな方法でクラウドに移すことができます。 これらの各方法は移行と見なされます。 次の演習は、そのようなワークロードを評価、移行、最適化、セキュリティ保護、管理するための反復プロセスの構築に役立ちます。
 
-## <a name="getting-started"></a>使用の開始
+## <a name="getting-started"></a>作業の開始
 
 クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークからは、次の 5 つの演習が提案されます。
 
@@ -211,7 +210,7 @@ Azure 移行ガイドを活用し、最初のワークロードを段階的に�
 
 これら 2 つの工程は、クラウド移行に投資しているお客様の 2 つの極端な経験を表します。 ほとんどの企業では、上記の 2 つのシナリオの組み合わせが反映されます。 工程を確認した後、クラウド導入フレームワークの移行モデルを使用して、移行の会話を開始し、実際のニーズをよりよく満たすようにベースラインの体験を修正します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次のどちらかの体験を選択してください。
 

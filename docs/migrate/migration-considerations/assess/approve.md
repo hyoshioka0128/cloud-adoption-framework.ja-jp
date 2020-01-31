@@ -1,6 +1,5 @@
 ---
 title: 移行前にアーキテクチャの変更を承認する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行前の承認の重要性を理解する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8e3030a53a7812eea87ec8cd12d492888cc3c421
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3776f468c48e7483d884a0c6cae8654218ac1a94
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566843"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802754"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>移行前にアーキテクチャの変更を承認する
 
@@ -66,7 +65,7 @@ CAB には一般的に、複数の IT チームやビジネス チームの専�
 
 可能であれば、評価プロセスの間に技術的変更を検出し、文書化する必要があります。 承認プロセスに関係なく、クラウド導入チームは早い段階で承認者を関与させる必要があります。 変更承認を早く開始できればできるほど、承認プロセスが移行アクティビティを妨げる可能性が低くなります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 これらのベスト プラクティスに従えば、適切でリスクの低い承認をより簡単に移行作業に統合できるはずです。 ワークロードの変更が承認されたら、クラウド導入チームは[ワークロードを移行する](../migrate/index.md)準備が整います。
 

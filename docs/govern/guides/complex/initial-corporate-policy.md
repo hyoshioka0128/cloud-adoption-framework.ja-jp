@@ -1,6 +1,5 @@
 ---
 title: '複雑な企業向けのガバナンス ガイド: ガバナンス戦略の背景にある初期の企業ポリシー'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: '複雑な企業向けのガバナンス ガイド: ガバナンス戦略の背景にある初期の企業ポリシー'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 56629e6f313614965ee1baddaa08e4264b4bef53
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 2949c89b5cafd472af98245a37cae43e69c634a4
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547669"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806307"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雑な企業向けのガバナンス ガイド: ガバナンス戦略の背景にある初期の企業ポリシー
 
@@ -42,7 +41,7 @@ CIO は最近、個人データとミッションクリティカル ポリシー
 
 [!INCLUDE [policy-statements](../../../../includes/policy-statements.md)]
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 この企業ポリシーにより、クラウド ガバナンス チームでは、導入のための基盤になるガバナンス MVP を実装する準備が整います。 次の手順はこの MVP の実装です。
 

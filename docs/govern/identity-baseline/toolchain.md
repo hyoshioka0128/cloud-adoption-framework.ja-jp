@@ -1,6 +1,5 @@
 ---
 title: Azure での ID ベースライン ツール
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure での ID ベースライン ツール
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5c06523d2b22293463d55f05c397dd55247f4369
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d145d08aa4cf2b386c3ee1f0df403f684b27c2a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566164"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806069"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -75,7 +74,7 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 > [!NOTE]
 > Azure AD の条件付きアクセスでのカスタム コントロールは、現時点ではデバイスの登録をサポートしていません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ハイブリッド ID デジタル変換フレームワークに関するホワイトペーパー](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html)では、これらの各コンポーネントを選択および統合するための組み合わせとソリューションについて説明しています。
 

@@ -1,6 +1,5 @@
 ---
 title: チーム間での責任の調整
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: チーム間での責任の調整について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 40ccd0c17a55a87c84d40abd749bf8e61f891e6c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 87ff20e3e81b8b01e6405984a63a9192184a4fa5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549082"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800697"
 ---
 # <a name="align-responsibilities-across-teams"></a>チーム間で責任を調整する
 
@@ -97,7 +96,7 @@ ms.locfileid: "72549082"
 ||||||||||
 |合致するクラウド機能|[クラウド導入](./cloud-adoption.md)|[クラウド戦略](./cloud-strategy.md)|[クラウド戦略](./cloud-strategy.md)|[クラウド運用](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[クラウド ガバナンス](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[クラウド プラットフォーム](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[クラウド プラットフォーム](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[クラウド自動化](./cloud-automation.md)|
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 組織構造に関する決定を時間経過に沿って追跡するため、[RACI スプレッドシート テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)をダウンロードして変更します。 この記事の RACI マトリックスから、最もよく合致するサンプルをコピーして修正します。
 

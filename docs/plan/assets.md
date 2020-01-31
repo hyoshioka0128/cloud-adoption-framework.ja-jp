@@ -1,6 +1,5 @@
 ---
 title: 優先順位付けされたワークロードに合わせて資産を調整する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 優先順位付けされたワークロードに合わせて資産を調整する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: ef5ffecd998bbe4e5adadd30cf24fe965e22b703
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 0f005e6b770edb3c89cb033113fdd07e1cd5af0b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048259"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800527"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>優先順位付けされたワークロードに合わせて資産を調整します
 
@@ -46,7 +45,7 @@ Azure Migrate のドキュメントでは、[依存関係に基づいてマシ�
 
 既存の運用管理ツール内に、適切に保守された構成管理データベース (CMDB) が存在する組織も中にはあります。 その場合は、代わりに CMDB を使用して前述のデータ ポイントを提供することも可能です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 資産の調整とワークロードの定義に基づいて[合理化決定を見直し](./review-rationalization.md)ます。
 

@@ -1,6 +1,5 @@
 ---
 title: クラウド監視ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure Monitor と System Center Operations Manager の概要
 author: MGoedtel
 ms.author: magoedte
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 6c2b4521443e76a9d85b35b78af4d5811091fccc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752779"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807582"
 ---
-# <a name="cloud-monitoring-guide-introduction"></a>クラウド監視ガイド:はじめに
+# <a name="cloud-monitoring-guide-introduction"></a>クラウド監視ガイド: はじめに
 
 クラウドは、企業によるテクノロジ リソースの調達と利用の方法を根本的に変えます。 以前は、インフラストラクチャからソフトウェアまで、あらゆるレベルのテクノロジの所有権と責任が企業にあることが前提になっていました。 今では、クラウドによって、企業は必要に応じてリソースをプロビジョニングして使用できる可能性があります。
 
@@ -55,7 +54,7 @@ Azure Monitor と System Center Operations Manager に精通していない場�
 
 ## <a name="products-and-services"></a>製品およびサービス
 
-Azure、お客様の企業ネットワーク、その他のクラウド プロバイダーでホストされているさまざまなリソースを監視、管理するためのいくつかのソフトウェアとサービスを利用できます。 次に例を示します。
+Azure、お客様の企業ネットワーク、その他のクラウド プロバイダーでホストされているさまざまなリソースを監視、管理するためのいくつかのソフトウェアとサービスを利用できます。 これらは次のとおりです。
 
 * System Center Operations Manager
 * Azure Monitor (現在、Log Analytics と Application Insights が含まれています)
@@ -64,9 +63,9 @@ Azure、お客様の企業ネットワーク、その他のクラウド プロ�
 * Azure Logic Apps
 * Azure Event Hubs
 
-このガイドの最初のバージョンでは、現在の監視プラットフォームである Azure Monitor と System Center Operations Manager について説明します。 また、各クラウド デプロイ モデルを監視するための推奨される戦略についても概説します。 また、データ収集とアラートをはじめとする、監視に関する推奨事項の最初のセットも含まれています。
+このガイドの最初のバージョンでは、現在の監視プラットフォームについて説明します。Azure Monitor と System Center Operations Manager。 また、各クラウド デプロイ モデルを監視するための推奨される戦略についても概説します。 また、データ収集とアラートをはじめとする、監視に関する推奨事項の最初のセットも含まれています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [クラウド デプロイ モデルの監視戦略](./cloud-models-monitor-overview.md)

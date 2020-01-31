@@ -1,6 +1,5 @@
 ---
 title: クラウド移行の業務上の妥当性をまとめ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド移行の業務上の妥当性をまとめるときの考慮事項。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 629b882c993e85dbb85b04cc9568491bd6e2036d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 36306ab50f4158741f1ff4334c43900c2f657920
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566614"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798589"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>クラウド移行の業務上の妥当性をまとめ
 
@@ -106,7 +105,7 @@ ROI が 20% を下回る場合は、[合理化](../digital-estate/rationalize.md
 
 ROI がまだ想定外の場合は、マイクロソフトの営業担当者の支援を求めるか、[経験豊富なパートナーを雇います](https://azure.microsoft.com/migration/support)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [クラウド変革のための財務モデルを作成する](./financial-models.md)

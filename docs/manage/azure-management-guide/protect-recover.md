@@ -1,6 +1,5 @@
 ---
 title: Azure での保護と復旧
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 復旧時間を短縮してビジネスの安定性を確保する
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 83ac1abd6ce35b62f64722d101f599726c7b26b3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3e9eadbd246ba38f496d8c74b7bcd3e6ade03685
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565408"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808160"
 ---
 # <a name="protect-and-recover-in-azure"></a>Azure での保護と復旧
 

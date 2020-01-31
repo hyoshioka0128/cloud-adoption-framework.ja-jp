@@ -1,6 +1,5 @@
 ---
 title: 継続中の管理とセキュリティ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 継続中の管理とセキュリティ
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0bf778b89ed91069b9387f7bbdc5f27f05480e0c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: fc15e50f0919745faff89949dbac15169adc5c6c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565325"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807990"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>フェーズ 3: 継続中の管理とセキュリティ
 
@@ -31,7 +30,7 @@ Azure Security Center は、環境のセキュリティを管理する一元的�
 
 このサービスによって提供される推奨事項を確認し、実践することをお勧めします。 Azure Security Center のその他のメリットについては、「[Azure Security Center の推奨事項に従う](https://docs.microsoft.com/azure/migrate/migrate-best-practices-security-management#best-practice-follow-azure-security-center-recommendations)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Azure Policy のゲスト構成機能を有効にする](./guest-configuration-policy.md)方法を確認します。
 

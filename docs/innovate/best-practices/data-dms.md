@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:Azure Database Migration Service
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド イノベーション - Azure Database Migration Service
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 46e21c08bac9501dd9b99fceb4ef3040cc9f0a83
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44ebe7e28eea56d1b7e61b5926a9588f4c985ae1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752033"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808670"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>既存のデータ ソースの移行と最新化によってデータを収集する
 
@@ -47,10 +46,10 @@ Oracle と NoSQL の移行をサポートするために、特定の種類のソ
 
 許容できるビジネスのダウンタイムを決定し、オフライン移行をテストすることをお勧めします。 これを行って、復元時間が許容されるダウンタイムを満たしているかどうかを確認します。 復元時間を許容できない場合は、オンライン移行を実行します。
 
-|source  |ターゲット  |ツール  |移行の種類  |ガイダンス  |
+|source  |移行先  |ツール  |移行の種類  |ガイダンス  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|Database Migration Service|オフライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL Database|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Azure SQL データベース|Database Migration Service|オフライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Azure SQL データベース|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
 |SQL Server|Azure SQL Database マネージド インスタンス|Database Migration Service|オフライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
 |SQL Server|Azure SQL Database マネージド インスタンス|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |RDS SQL Server|Azure SQL Database または Azure SQL Database マネージド インスタンス|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|

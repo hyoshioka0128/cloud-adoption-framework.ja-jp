@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:Measure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド イノベーションの概要 - 内容を測定する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752113"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808415"
 ---
 # <a name="measure-for-customer-impact"></a>顧客への影響を測定する
 
@@ -65,11 +64,11 @@ MVP ソリューションを使用して顧客に重点を置いた仮説を検�
 
 この種類のグループ化は、イノベーションの取り組み中に貴社とのパートナー関係を選択する顧客のさまざまなクロスセクションにわたる学習メトリックを検証する際に役立ちます。 以降のすべてのメトリックは、定義可能な顧客のグループ化から引き出す必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 学習メトリックが蓄積されると、チームは、[顧客と共に学習する](./learn.md)ことを開始できます。
 
 > [!div class="nextstepaction"]
 > [顧客と共に学習する](./learn.md)
 
-この記事の概念の一部は、『[リーン・スタートアップ](http://theleanstartup.com/book)』(Eric Ries 著) で初めて書かれたトピックを基に作成されています。
+この記事の概念の一部は、『[リーン スタートアップ](http://theleanstartup.com/book)』(Eric Ries 著) で初めて書かれたトピックを基に作成されています。

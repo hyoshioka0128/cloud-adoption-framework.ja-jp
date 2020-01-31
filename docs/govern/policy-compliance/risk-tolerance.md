@@ -1,6 +1,5 @@
 ---
 title: リスク許容度の評価
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド変換に関連するビジネス リスクの説明
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 06f8229ab38134ac4d51a4f0cef212ebc864bbdb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566059"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806018"
 ---
 # <a name="evaluate-risk-tolerance"></a>リスク許容度の評価
 
@@ -104,7 +103,7 @@ ms.locfileid: "73566059"
 
 上記の 3 つの質問セットでは、初期の許容度を決定するために十分なデータを供給する必要があります。 リスクと可能性が低く、リスク修正コストが高い場合、ビジネス チームが修復に投資する可能性はほとんどなくなります。 リスクと可能性が高い場合、コストが潜在的なリスクを超えない限り、ビジネス チームは投資を検討する可能性があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このような話し合いは、ビジネス チームと IT チームが許容度をより効果的に評価するために役立ちます。 このような話し合いは、MVP ポリシーの作成時や増分ポリシーのレビュー時に利用できます。
 

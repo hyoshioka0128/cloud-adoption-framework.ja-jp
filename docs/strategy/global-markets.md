@@ -1,6 +1,5 @@
 ---
 title: グローバル マーケットの決定の影響を理解する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: グローバル マーケットの概念の説明
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: af3c9d8b155d2c6a5e861e64b6472effbafcbb6d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548621"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798164"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +40,7 @@ ms.locfileid: "72548621"
 
 顧客やパートナーなど、外部のユーザーの使用パターンを理解することも同じように重要です。 従業員の使用パターンと同様、外部ユーザーの使用パターンも、クラウド デプロイのパフォーマンスに悪影響を与える可能性があります。 外国に大規模またはミッション クリティカルなユーザー ベースが存在する場合は、全体的なソリューション設計にグローバルな展開戦略を組み込むことが賢明です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 グローバル マーケットの決定を行って伝達した後、チームはそれらのメトリックに対する[技術標準の確立](../digital-estate/index.md)を始めることができます。
 結果は、[変換バックログまたは移行バックログ](..//migrate/migration-considerations/prerequisites/technical-complexity.md)になります。

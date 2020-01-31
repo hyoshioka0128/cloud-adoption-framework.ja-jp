@@ -1,6 +1,5 @@
 ---
 title: 'クラウド監視ガイド: クラウド デプロイ モデルの監視戦略'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160253"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807633"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>クラウド監視ガイド: クラウド デプロイ モデルの監視戦略
 
@@ -44,11 +43,11 @@ Azure Active Directory Domain Services などのテナント サービスから�
 
 <!-- markdownlint-disable MD033 -->
 
-レイヤー | リソース | Scope (スコープ) | 方法
+レイヤー | リソース | Scope | Method
 ---|---|---|----
 Application | Azure VM、Azure App Services、Azure Service Fabric、Azure Functions、および Azure Cloud Services 上の .NET、.NET Core、Java、JavaScript、および Node.js プラットフォームで実行されている Web ベースのアプリケーション。 | ライブ Web アプリケーションを監視して、パフォーマンスの異常を自動検出し、コードの例外と問題を識別し、ユーザー動作の分析を収集します。 |  Azure Monitor (Application Insights)。
 Azure リソース - サービスとしてのプラットフォーム (PaaS) | Azure Database サービス (SQL、MySQL など)。 | Azure Database for SQL のパフォーマンス メトリック。 | 診断ログで SQL データを Azure Monitor ログにストリーミングできるようにします。
-Azure リソース - サービスとしてのインフラストラクチャ (IaaS) | 1.Azure Storage<br/> 2.Azure Application Gateway<br/> 手順 3.ネットワーク セキュリティ グループ<br/> 4.Azure の Traffic Manager<br/> 5.Azure Virtual Machines<br/> 6.Azure Kubernetes Service/Azure Container Instances | 1.容量、可用性、およびパフォーマンス。<br/> 2.パフォーマンス ログと診断ログ (アクティビティ、アクセス、パフォーマンス、ファイアウォール)。<br/> 手順 3.ルールが適用されたときのイベントと、拒否または許可を行うためにルールが適用された回数を示すルール カウンターを監視します。<br/> 4.エンドポイントの状態の可用性を監視します。<br/> 5.ゲスト VM オペレーティング システム (OS) での容量、可用性、パフォーマンスを監視します。 各 VM 上でホストされているアプリの依存関係をマップします。これには、サーバー間のアクティブなネットワーク接続の可視性、受信接続および送信接続の待機時間、任意の TCP 接続アーキテクチャでのポートなどが含まれます。<br/> 6.コンテナーおよびコンテナー インスタンス上で実行されるワークロードの容量、可用性、およびパフォーマンスを監視します。 | 1.Blob Storage のストレージ メトリック。<br/> 2.診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。<br/> 手順 3.ネットワーク セキュリティ グループの診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。<br/> 4.Traffic Manager エンドポイントの診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。<br/> 5.Azure Monitor for VMs を有効にします。<br/> 6.Azure Monitor for containers を有効にします。
+Azure リソース - サービスとしてのインフラストラクチャ (IaaS) | 1.Azure Storage<br/> 2.Azure Application Gateway<br/> 3.ネットワーク セキュリティ グループ<br/> 4.Azure の Traffic Manager<br/> 5.Azure Virtual Machines<br/> 6.Azure Kubernetes Service/Azure Container Instances | 1.容量、可用性、およびパフォーマンス。<br/> 2.パフォーマンス ログと診断ログ (アクティビティ、アクセス、パフォーマンス、ファイアウォール)。<br/> 3.ルールが適用されたときのイベントと、拒否または許可を行うためにルールが適用された回数を示すルール カウンターを監視します。<br/> 4.エンドポイントの状態の可用性を監視します。<br/> 5.ゲスト VM オペレーティング システム (OS) での容量、可用性、パフォーマンスを監視します。 各 VM 上でホストされているアプリの依存関係をマップします。これには、サーバー間のアクティブなネットワーク接続の可視性、受信接続および送信接続の待機時間、任意の TCP 接続アーキテクチャでのポートなどが含まれます。<br/> 6.コンテナーおよびコンテナー インスタンス上で実行されるワークロードの容量、可用性、およびパフォーマンスを監視します。 | 1.Blob Storage のストレージ メトリック。<br/> 2.診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。<br/> 3.ネットワーク セキュリティ グループの診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。<br/> 4.Traffic Manager エンドポイントの診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。<br/> 5.Azure Monitor for VMs を有効にします。<br/> 6.Azure Monitor for containers を有効にします。
 ネットワーク | ご利用の仮想マシンと 1 つまたは複数のエンドポイント (別の VM、完全修飾ドメイン名、Uniform Resource Identifier、または IPv4 アドレス) との間の通信です。 | VM とエンドポイントの間で発生する到達可能性、待機時間、およびネットワーク トポロジ変更を監視します。 | Azure Network Watcher。
 Azure サブスクリプション | Azure サービスの正常性と基本的なリソースの正常性。 | <li> サービスまたはリソースに対して実行された管理操作。<br/><li> Azure サービスが低下状態または利用不可状態にあるサービス正常性。<br/><li> Azure サービスの観点から Azure リソースで検出された正常性の問題。<br/><li> 失敗または例外を示す Azure の自動スケーリングを使用して実行された操作。 <br/><li> 許可または拒否操作が発生したことを示す Azure Policy を使用して実行された操作。<br/><li> Azure Security Center によって生成されたアラートのレコード。 | Azure Resource Manager を使用して監視およびアラート通知用のアクティビティ ログで提供されます。
 Azure テナント | Azure Active Directory || 診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。
@@ -183,7 +182,7 @@ Azure Stack に含まれている[インフラストラクチャ監視機能](ht
 
 Operations Manager に既に投資している場合は、Azure Stack 管理パックを使用して、リージョン、リソース プロバイダー、更新プログラム、更新プログラムの実行、スケール ユニット、ユニット ノード、インフラストラクチャのロール、それらのインスタンス (ハードウェア リソースで構成される論理エンティティ) など、Azure Stack デプロイの可用性と正常性の状態を監視します。 この管理パックでは、正常性および更新プログラムのリソース プロバイダーの REST API を使用して Azure Stack との通信が行われます。 物理サーバーとストレージ デバイスを監視するには、OEM ベンダーの管理パックを使用します (たとえば、Lenovo、Hewlett Packard、または Dell から提供されています)。 Operations Manager では、ネットワーク スイッチをネイティブに監視し、SNMP を使用して基本的な統計を収集することができます。 Azure 管理パックでは、2 つの基本的な手順に従ってテナント ワークロードを監視できます。 監視するサブスクリプションを構成してから、そのサブスクリプション用のモニターを追加します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [適切なデータの収集](./data-collection.md)

@@ -1,6 +1,5 @@
 ---
 title: 移行バックログのレビュー
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行バックログの重要なレビュー
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1d7c6e39e143ecc74a58fa5364469c46acf9523
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c8d6d7ab2403df01b2db99314c3ae73e9514b6b5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548291"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801445"
 ---
 # <a name="migration-backlog-review"></a>移行バックログの確認
 
@@ -33,7 +32,7 @@ ms.locfileid: "72548291"
 
 [デジタル資産の合理化](../../../digital-estate/rationalize.md)に関する記事では、デジタル資産を評価する際の基本的前提条件の機敏性および時間節約の影響について説明しています。 これらの価値を十分に実現するために、クラウド導入チームは前提条件とそれらが確立された理由を理解する必要があります。 その知識によって、クラウド導入チームはそれらの前提条件の正当性を疑う根拠を得ることができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 デジタル資産と移行のバックログについて大まかに理解したら、チームは前提条件を超えて[ワークロードの評価](../assess/index.md)を開始する準備ができています。
 

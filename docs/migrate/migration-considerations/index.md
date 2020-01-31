@@ -1,6 +1,5 @@
 ---
 title: クラウド導入フレームワーク移行モデル
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入フレームワーク移行モデル
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 46689512ec799ff8b5aa47ea095d34d8c25dd83a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240281"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802431"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>クラウド導入フレームワーク移行モデル
 
@@ -55,7 +54,7 @@ ms.locfileid: "73240281"
 
 これらの原則を一貫して適用することは、クラウド移行プロセスの最終目標です。必須の出発点とは考えないでください。 移行作業が成熟したら、このセクションのガイダンスを参照して、組織のニーズに対応する最適なプロセスを定義してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このモデルについて学習するには、[移行の前提条件を調査する](./prerequisites/index.md)ことから始めます。
 

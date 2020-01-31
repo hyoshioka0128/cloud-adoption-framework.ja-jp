@@ -1,6 +1,5 @@
 ---
 title: パフォーマンス結果の例
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: パフォーマンス結果の例
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d772f7c8a2e7c76770a6496bb85acbac54debfe4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 8a8c3b471787e1bc189a0d1f0abe2e2d84447e7c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048344"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806834"
 ---
 # <a name="examples-of-performance-outcomes"></a>パフォーマンス結果の例
 
@@ -31,7 +30,7 @@ ms.locfileid: "73048344"
 
 - **例 2:** ある消費者投資会社は、クラウド対応アプリケーションのイノベーション作業の初期段階でした。 アジャイル プロセスと DevOps は十分成熟していましたが、アプリケーションのパフォーマンスではスパイクがよく発生しました。 より成熟した変換として、その会社は需要を監視して自動的にサイズを変更するプログラムを開始しました。 会社は、Azure のパフォーマンス管理ツールを使用してサイズ変更の問題を解消することができ、トランザクションが 5% 増加しました。
 
-## <a name="reliability"></a>信頼性
+## <a name="reliability"></a>[信頼性]
 
 クラウド コンピューティングによって、データ バックアップ、ディザスター リカバリー、およびビジネス継続性を、さらに簡単に、かつ低コストで実現できます。それは、データがクラウド プロバイダーのネットワーク上にある複数の冗長サイトでミラーリングされるためです。
 
@@ -43,7 +42,7 @@ Azure Site Recovery では、Azure リージョン間でアプリケーション
 
 - **例:** ある石油ガス会社は、Azure テクノロジを使って完全なサイトの回復を実装していました。 会社は日常業務にクラウドを全面的に利用してはいませんが、クラウドのディザスター リカバリーとビジネス継続性 (DRBC) 機能で引き続きデータセンターを保護していました。 数百マイル離れた場所でハリケーンが発生したため、実装パートナーは Azure へのサイトの復旧を開始しました。 嵐がやってくる前に、すべてのミッション クリティカルな資産は Azure で実行されるようになり、ダウンタイムが回避されました。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 「[ビジネス成果テンプレートの使用方法](./business-outcome-template.md)」を確認してください。
 

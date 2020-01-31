@@ -1,6 +1,5 @@
 ---
 title: 廃止された資産を使用停止する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 廃止された資産を使用停止する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ae2538263af35e8fdb2cf5c861a2c7b0537108d4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 933a9c42a55e58e5a58f9ef1c308b006e30e1abf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839049"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801938"
 ---
 # <a name="decommission-retired-assets"></a>廃止された資産を使用停止する
 
@@ -35,7 +34,7 @@ ms.locfileid: "70839049"
 
 移行のレプリケーション プロセス中にデータが失われることは珍しいことではありません。 これは特に、定期的に使用されない古いデータの場合に当てはまります。 廃止された資産が無効になった後でも、データの一時的なバックアップとして機能するように、資産をしばらくの間保持することが賢明です。 企業は、廃止された資産を破棄する前に、保持とテストのために少なくとも 30 日を見ておく必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 廃止された資産が使用停止されると、移行は完了します。 これにより、移行プロセスを改善するための良い機会が生まれます。また、[振り返り](./retrospective.md)は、クラウド導入チームを学習と改善のためのリリースのレビューに関与させます。
 

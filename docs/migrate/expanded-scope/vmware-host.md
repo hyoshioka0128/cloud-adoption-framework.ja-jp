@@ -1,6 +1,5 @@
 ---
 title: VMware ホストを使用して移行を高速化する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: VMware ホストを使用して移行を高速化する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 724a227407f431e08b5344dfd1280397bfca9b65
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 77d75127a497778056634f8a84a9021fa874a726
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566885"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802924"
 ---
 # <a name="accelerate-migration-with-vmware-hosts"></a>VMware ホストを使用して移行を高速化する
 
@@ -61,7 +60,7 @@ Azure 環境で、ロールベースのアクセス制御とネットワーク�
 - [Zerto を使用したディザスター リカバリー サイトとしてのプライベート クラウドの構成](https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 - [VMware SRM を使用したディザスター リカバリー サイトとしてのプライベート クラウドの構成](https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 範囲拡大チェックリストに戻り、移行方法が完全に調整されていることを確認します。
 

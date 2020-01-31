@@ -1,6 +1,5 @@
 ---
 title: クラウド ガバナンスの方法論
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 431895263473481fbd43fc9c63d832a538a499db
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547396"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807089"
 ---
 # <a name="cloud-governance-methodology"></a>クラウド ガバナンスの方法論
 
@@ -61,7 +60,7 @@ ms.locfileid: "72547396"
 > [!NOTE]
 > ガバナンスは、セキュリティ、ネットワーク、ID、財務、DevOps、運用などの主要な機能に代わるものではありません。 その過程では、各機能のメンバーとの対話およびメンバーへの依存関係があります。 決定とアクションが速く行われるように、これらのメンバーをクラウド ガバナンス チームに含める必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入フレームワークの[ガバナンス ベンチマーク ツール](https://cafbaseline.com)を使用して、変革の過程を評価し、フレームワーク内で定義されている 6 つの重要な領域における組織内のギャップを特定できます。
 

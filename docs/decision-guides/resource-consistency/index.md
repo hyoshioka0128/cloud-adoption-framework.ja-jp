@@ -1,6 +1,5 @@
 ---
 title: リソースの整合性の意思決定ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure の移行を計画する際のリソースの整合性について説明します。
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f995a3f6ffb26f408a45610d7d0674e02bf6a31
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564795"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806698"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -22,7 +21,7 @@ Azure の[サブスクリプション設計](../subscriptions/index.md)では、
 
 ![複雑さが最小から最大までのリソースの整合性オプションを表わした図 (対応するジャンプ リンクを下に掲載)](../../_images/decision-guides/decision-guide-resource-consistency.png)
 
-ジャンプ先:[基本的なグループ化](#basic-grouping) | [デプロイの整合性](#deployment-consistency) | [ポリシーの整合性](#policy-consistency) | [階層的な整合性](#hierarchical-consistency)  | [整合性の自動化](#automated-consistency)
+ジャンプ先:[基本的なグループ化](#basic-grouping) | [デプロイの整合性](#deployment-consistency) | [ポリシーの整合性](#policy-consistency) | [階層的な整合性](#hierarchical-consistency) | [整合性の自動化](#automated-consistency)
 
 クラウド資産のリソース整合性要件のレベルに関する意思決定を左右する主な要因: 移行後のデジタル資産のサイズ、既存のサブスクリプション設計方法にうまく適合しないビジネスまたは環境の要件、リソースがデプロイされた後に時間の経過と共にガバナンスを適用する必要性。
 
@@ -77,7 +76,7 @@ Azure では、[リソース グループ](https://docs.microsoft.com/azure/azur
 
 これらの展開パッケージを使用すると、IT チームと開発チームが、変化する組織のポリシー要件に準拠する新しいワークロードとネットワーク資産を迅速にデプロイできます。 Blueprints は CI/CD パイプラインに統合して、デプロイの更新時に、改訂されたガバナンス標準をそれらのデプロイに適用することもできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 リソースの整合性は、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
 

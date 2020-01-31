@@ -1,6 +1,5 @@
 ---
 title: 移行の間のステージング アクティビティを理解する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行の間のステージング アクティビティを理解する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a23a1e0f42382311a67e39238db8762c27c14480
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c8dcc71cd47253bbc59e885a085802d78323c5fd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836645"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801989"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>移行の間のステージング アクティビティを理解する
 
@@ -28,7 +27,7 @@ ms.locfileid: "70836645"
 - **構成に関するドキュメント。** 資産に (修復、レプリケーション、またはステージング中に) 加えられた変更は、運用に対応できるように文書化する必要があります。
 - **ドキュメントのバックログ。** 移行のバックログは、ステージングされたワークロードと資産を反映するように更新する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ステージングされた資産がテストされ、文書化された後、[最適化アクティビティ](../optimize/index.md)に進むことができます。
 

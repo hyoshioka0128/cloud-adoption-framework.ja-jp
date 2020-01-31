@@ -1,6 +1,5 @@
 ---
 title: 移行前に資産を修復する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 互換性のない資産を移行前に修復する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 23045cf48dd26400bbad07bbde927e29c3189f8d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058848"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802108"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>移行前に資産を修復する
 
@@ -57,7 +56,7 @@ ms.locfileid: "73058848"
 - **オートメーション。** ワークロードと修復の要件によっては、DevOps アプローチを使用して新しい資産へのデプロイをスクリプトにする方が有益な場合があります。
 - **リビルド。** 修復コストが非常に高く、ビジネス価値が同等に高い場合は、ワークロードがリビルドまたはリアーキテクトの候補として適切な可能性があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 修復が完了すると、[レプリケーション アクティビティ](./replicate.md)の準備が整います。
 

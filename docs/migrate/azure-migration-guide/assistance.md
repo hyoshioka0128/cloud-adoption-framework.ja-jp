@@ -1,6 +1,5 @@
 ---
 title: サポートを得る方法
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure への移行時にサポートを得る方法
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a63cc0b1ff26bf4dc30635f01ba7a6810a43891c
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 479a9433f8768c701aa198e32fe2c9fcc295a61f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251649"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803485"
 ---
 ::: zone target="chromeless"
 
@@ -33,7 +32,7 @@ ms.locfileid: "74251649"
 
 # <a name="support-planstabsupportplans"></a>[サポート プラン](#tab/SupportPlans)
 
-## <a name="microsoft-support"></a>Microsoft Support
+## <a name="microsoft-support"></a>Microsoft サポート
 
 Microsoft では、Azure のすべてのお客様に基本サポート プランを提供しています。 課金およびサブスクリプション サポート、オンライン セルフヘルプ、ドキュメント、ホワイトペーパー、サポート フォーラムに 24 時間 365 日アクセスできます。
 

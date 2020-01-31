@@ -1,6 +1,5 @@
 ---
 title: クラウド移行の拡大された範囲のチェックリスト
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド移行の拡大された範囲のチェックリスト
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 181777e08e82cf7e58c73c7c8b66544d0960656d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6a7a59ba62204d43b7085ab3dbd6b934d6aaccc1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564634"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803111"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>クラウド移行の拡大された範囲
 
@@ -42,7 +41,7 @@ ms.locfileid: "73564634"
 
 これらの各シナリオには、クラウド導入フレームワークのこのセクションのさまざまな記事で対応しています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 具体的なニーズや範囲変更に対応するには、左側の目次を参照してください。 また、一覧の最初の範囲の拡大である「[ポートフォリオのバランスを取る](./balance-the-portfolio.md)」は、このようなシナリオを検討する際の出発点としてお勧めです。
 

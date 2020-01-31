@@ -1,6 +1,5 @@
 ---
-title: クラウド イノベーション:詳細情報
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: クラウド イノベーション:学習する
 description: クラウド イノベーションの概要 - Learn コンテンツ
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753003"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808432"
 ---
 # <a name="learn-with-customers"></a>お客様による学習
 
@@ -49,11 +48,11 @@ Microsoft のお客様は、最大の学習源となっています。 Microsoft
 - **新しいことに挑戦する:** 成功とは、必ずしも顧客からの真の共感を示していることを意味するわけではありません。 固定観念に縛られたり、以前にうまくいったことばかりを続けたりするのは避けましょう。 顧客と関わることで、肯定的なメトリックからも、否定的なメトリックからも学習してください。
 - **包括的に:** さまざまな視点を取り入れて混合するように心掛けましょう。 人間を分断する変数は多々あります。 文化的規範、過去の行動、性別、宗教、性的嗜好、そして身体的能力もそうです。 真のイノベーションは、これまでの違いを確認し、すべての顧客、パートナー、同僚を巻き込むように意識的に取り組んだときに始まります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 この手法を理解するための次のステップとして、「[イノベーションに関する一般的な阻害要因と課題](./challenges.md)」を参照すると、さらに変化を進めることができます。
 
 > [!div class="nextstepaction"]
 > [一般的な阻害要因と課題を理解する](./challenges.md)
 
-この記事の概念の一部は、『[リーン スタートアップ](https://theleanstartup.com/book)』(Eric Ries 著) で初めて書かれたトピックを基に作成されています。
+この記事の概念の一部は、『[リーン スタートアップ](http://theleanstartup.com/book)』(Eric Ries 著) で初めて書かれたトピックを基に作成されています。

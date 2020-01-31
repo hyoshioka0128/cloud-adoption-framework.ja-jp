@@ -1,6 +1,5 @@
 ---
 title: チーム構造の確立
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: チーム構造の確立
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8000847a46082be6116abb22e52def03243c69b0
-ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
+ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71811084"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800918"
 ---
 # <a name="establish-team-structures"></a>チーム構造の確立
 
@@ -93,7 +92,7 @@ ms.locfileid: "71811084"
 
 この構造と、上記の中央 IT 構造との主な違いは、セルフサービスに対する注目です。 この構造のチームは、可能な限りコントロールを委任することを目的として編成されます。 クラウド ネイティブ ソリューションに対してガバナンスとコンプライアンスのプラクティスを連携させることで、ガードレールと保護のメカニズムが作成されます。 中央 IT モデルとは異なり、クラウド ネイティブ アプローチでは、イノベーションが最大化され、運用のオーバーヘッドが最小化されます。 このモデルを導入するには、ビジネスと IT 双方のリーダーシップによる、IT プロセス最新化に対する合意が必要になります。 このモデルは有機的に発生することは少なく、多くの場合、経営陣によるサポートが必要です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 特定の組織構造の成熟ステージに合わせた調整が完了したら、[RACI チャート](./raci-alignment.md)を使用して各チームで説明責任と実行責任を調整します。
 

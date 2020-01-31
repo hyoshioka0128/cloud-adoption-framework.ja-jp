@@ -1,6 +1,5 @@
 ---
 title: 'クラウド監視ガイド: 適切なデータの収集'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 950b767101fea9b33875f1ad0938599a4f371ba9
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751515"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807616"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>クラウド監視ガイド: 適切なデータの収集
 
@@ -47,7 +46,7 @@ ms.locfileid: "73751515"
 
 この指針となる一連の原則を利用することで、ほぼリアルタイムの分析情報が得られ、適切にサービスを管理できるようになります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [アラート戦略](./alerting.md)

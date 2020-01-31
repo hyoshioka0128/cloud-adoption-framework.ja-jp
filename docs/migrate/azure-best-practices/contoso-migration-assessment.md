@@ -1,6 +1,5 @@
 ---
 title: Azure への移行の対象となるオンプレミスのワークロードを評価する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Contoso が Azure への移行に向けて Azure Migrate と Data Migration Assistant を使用してオンプレミスのマシンを評価する方法を説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 051e52bee9b83160860234f953b19439b64eed97
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566486"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807480"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Azure への移行の対象となるオンプレミスのワークロードを評価する
 
@@ -71,7 +70,7 @@ Contoso クラウド チームは、移行評価の目標を決定しました�
 
 Contoso は移行の評価に Microsoft のツールを使用します。 ツールは Contoso の目標に合ったものであり、同社が必要とするすべての情報を提供します。
 
-テクノロジ | 説明 | コスト
+テクノロジ | [説明] | コスト
 --- | --- | ---
 [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は、SQL のソースとターゲット間の機能パリティを評価します。 そのうえで、パフォーマンスと信頼性の向上箇所を推奨します。 | Data Migration Assistant は無料でダウンロードできるツールです。
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | 2018 年 5 月の時点で Azure Migrate は無料サービスです。
@@ -121,9 +120,9 @@ Contoso が評価を行う方法は次のとおりです。
 
 > [!div class="checklist"]
 >
-> - **手順 1:Data Migration Assistant をダウンロードしてインストールする。** Contoso はオンプレミスの SQL Server データベースを評価するために Data Migration Assistant を準備します。
+> - **ステップ 1:Data Migration Assistant をダウンロードしてインストールする。** Contoso はオンプレミスの SQL Server データベースを評価するために Data Migration Assistant を準備します。
 > - **手順 2:Data Migration Assistant を使用してデータベースを評価する。** Contoso はデータベース評価を実行して分析します。
-> - **手順 3:Azure Migrate を使用した VM 評価の準備をする。** Contoso はオンプレミスのアカウントをセットアップし、VMware 設定を微調整します。
+> - **ステップ 3:Azure Migrate を使用した VM 評価の準備をする。** Contoso はオンプレミスのアカウントをセットアップし、VMware 設定を微調整します。
 > - **手順 4:Azure Migrate を使用してオンプレミスの VM を検出する。** Contoso は Azure Migrate コレクター VM を作成します。 次に、コレクターを実行して、評価する対象の VM を検出します。
 > - **手順 5:Azure Migrate を使用して依存関係を分析するための準備を行う。** VM 間の依存関係マッピングを確認できるように、Contoso は Azure Migrate エージェントを VM にインストールします。
 > - **手順 6:Azure Migrate を使用して VM を評価する。** Contoso は依存関係を確認して VM をグループ化し、評価を実行します。 評価ができたら、Contoso は移行に向けて評価を分析します。
@@ -208,7 +207,7 @@ Contoso は、Azure Migrate で評価対象の VM を自動的に検出するた
 VM の検出には、次のプロパティを持つ、vCenter Server の読み取り専用アカウントが必要です。
 
 - **ユーザーの種類:** 少なくとも読み取り専用ユーザーが必要です。
-- **アクセス許可:** データセンター オブジェクトの場合は、**子オブジェクトに伝達** チェック ボックスをオンにします。 **[ロール]** では、 **[読み取り専用]** を選択します。
+- **権限:** データセンター オブジェクトの場合は、**子オブジェクトに伝達** チェック ボックスをオンにします。 **[ロール]** では、 **[読み取り専用]** を選択します。
 - **[詳細]:** ユーザーはデータセンター レベルで割り当てられ、データセンター内のすべてのオブジェクトにアクセスできます。
 - アクセスを制限するには、**子オブジェクトへの伝達**特権を持つ**アクセスなし**ロールを子オブジェクト (vSphere ホスト、データストア、VM、ネットワーク) に割り当てます。
 
@@ -490,7 +489,7 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 
 <!-- markdownlint-disable MD033 -->
 
-Setting | 指示内容 | 詳細
+設定 | 指示内容 | 詳細
 --- | --- | ---
 **Azure VM 対応性** | VM が移行できる状態であるかどうかを示します。 | 次の状態があります。<br/><br/>- Azure に対応<br/><br/>- 条件付きで対応 <br/><br/>- Azure に未対応<br/><br/>- 対応不明<br/><br/> VM の準備が整っていない場合、Azure Migrate によって修正手順が表示されます。
 **Azure VM サイズ** | 準備が完了している VM について、Azure Migrate によって Azure VM サイズが推奨されます。 | サイズ設定の推奨事項は、評価のプロパティによって異なります。<br/><br/>- パフォーマンス ベースのサイズ設定を使用した場合、サイズ設定では VM のパフォーマンス履歴が考慮されます。<br/><br/>- *[オンプレミス]* を使用した場合、サイズ設定はオンプレミスの VM サイズに基づき、使用率データは使われません。
@@ -519,6 +518,6 @@ Setting | 指示内容 | 詳細
 
 このシナリオでは、Contoso が Data Migration Assessment ツールを使用して SmartHotel360 アプリ データベースを評価しました。 また、Azure Migrate サービスを使用してオンプレミスの VM を評価しました。 次いで、オンプレミス リソースを Azure に移行する準備を確実に整えるため、評価を確認しました。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ワークロードを移行可能な対象として評価した後、移行するためのオンプレミス インフラストラクチャと Azure インフラストラクチャの準備を開始できます。 Contoso でこれらのプロセスが どのように実行されるかについては、クラウド導入フレームワークのベスト プラクティスの[Azure インフラストラクチャ](./contoso-migration-infrastructure.md)に関する記事を参照してください。

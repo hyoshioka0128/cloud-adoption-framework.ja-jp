@@ -1,6 +1,5 @@
 ---
 title: Azure でのガバナンス、セキュリティ、コンプライアンス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 環境のガバナンス、セキュリティ、およびコンプライアンスを設定する方法について説明します。
 author: tvuylsteke
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 7a305e1bd3ef8f3f7325905c523d9fe5ded2fc60
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: c38edb9a5723d99974f5f472453bf4b88ee07bb3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251338"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799609"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Azure でのガバナンス、セキュリティ、コンプライアンス
 
@@ -109,7 +108,7 @@ Azure Policy は、ポリシーの作成、割り当て、および管理に使�
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Action
+## <a name="action"></a>アクション
 
 組み込みのポリシーを管理グループ、サブスクリプション、またはリソース グループに割り当てます。
 
@@ -166,7 +165,7 @@ Azure Security Center について調べるには、[Azure portal](https://porta
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Action
+## <a name="action"></a>アクション
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 

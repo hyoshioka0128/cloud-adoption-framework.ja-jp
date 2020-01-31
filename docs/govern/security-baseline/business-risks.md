@@ -1,6 +1,5 @@
 ---
 title: セキュリティ ベースラインの導入理由とビジネス リスク
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: セキュリティ ベースラインの導入理由とビジネス リスク
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d1bf5ef10ec3acd936ba4e66cca374e8365018a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222285"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808959"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>セキュリティ ベースラインの導入理由とビジネス リスク
 
@@ -44,7 +43,7 @@ ms.locfileid: "71222285"
 - **データ侵害:** クラウドでホストされている機密データの不注意による開示や損失は、顧客の喪失、契約上の問題、法的責任につながる可能性があります。
 - **サービスの中断:** セキュリティが確保されていないインフラストラクチャによる停止やその他のパフォーマンスの問題は、通常業務を中断させ、生産性や商機の逸失に至る可能性があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 

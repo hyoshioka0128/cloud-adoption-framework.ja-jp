@@ -1,6 +1,5 @@
 ---
 title: リソースの名前付けとタグ付けの意思決定ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 移行でのコア サービスとしてのリソースの編成とタグ付けについて説明します。
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c62e087372d21a3883c90425b31e1c5ff9bfd2fb
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 4a4b283fa447b296d429f037f12bbf3b2bfcf0fb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868019"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806681"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 

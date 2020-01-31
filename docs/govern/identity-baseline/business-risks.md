@@ -1,6 +1,5 @@
 ---
 title: ID ベースラインの動機とビジネス上のリスク
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ID ベースラインの動機とビジネス上のリスク
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 13aedd3ef5a596547a6a7bb33102182504bde86f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160121"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807140"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>ID ベースラインの動機とビジネス上のリスク
 
@@ -41,7 +40,7 @@ ID ベースラインの規範では、ID サービスとアクセス制御に�
 - **外部のパートナーとリソースを共有できない。** 外部のビジネス パートナーを既存の ID ソリューションに追加できないことにより、効率的なリソースの共有とビジネス コミュニケーションが妨げられる場合があります。
 - **オンプレミスの ID の依存関係。** 従来の認証メカニズムまたはサード パーティの多要素認証は、刷新するワークロードを移行するか、クラウドにデプロイする ID サービスを追加する必要があり、クラウドで使用できない場合があります。 どちらの要件も移行を遅延させたり妨げる可能性があり、コストが増加します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 

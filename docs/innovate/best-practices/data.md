@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:Azure でデータを民主化するためのツール
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure でデータを民主化するためのツール
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d86bebc3a993443c4dded4b1a0f23ff518147bd4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565835"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808687"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Azure でデータを民主化するためのツール
 
@@ -63,7 +62,7 @@ Azure では、上記のフェーズでデジタル発明を加速するため�
 
 発明が大規模な導入に近づくにつれて、各ソリューションの側面に改良と技術的な成熟が必要です。 そのような場合は、これらのサービスのより多くが必要になる可能性があります。 仮説のテスト プロセスに関連する Azure ツールのガイダンスについては、このページの左側の目次を使用してください。
 
-## <a name="get-started"></a>作業開始
+## <a name="get-started"></a>はじめに
 
 このページの左側の目次に、さまざまな記事がまとめられています。 これらの記事は、このツールチェーン内の各ツールの使用を開始するのに役立ちます。
 

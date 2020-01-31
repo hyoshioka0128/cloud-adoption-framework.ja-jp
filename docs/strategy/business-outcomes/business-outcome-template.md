@@ -1,6 +1,5 @@
 ---
 title: ビジネス成果テンプレートの使用方法
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ビジネス成果テンプレートの説明
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8703734cbb287003edfd38ddac4395ac0e437332
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 53e925a7ccf036e03b73bb888fa112549a65433e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048382"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798555"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>ビジネス成果テンプレートの使用方法
 
@@ -61,7 +60,7 @@ Microsoft の Digital Transformation Academy の Kate Johnson によって紹介
 
 **機能:** 変革体験を定義する際に、どのように技術的機能がビジネスの成果の実現を加速させるでしょうか。 ビジネス目標を達成するために、どのようなアプリケーションを変革に含める必要がありますか。 機能を実現するために、さまざまなアプリケーションやワークロードをどのように優先順位付けしますか。 各成果を満たすために、ソリューションの一部をどのように拡張または再構築する必要がありますか。 優先順位付けした影響の大きいビジネスの成果に対して、実行アプローチ (またはタイムライン) を再調整できますか。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 意味のあるラーニング メトリックと[技術的な取り組みの整合](../learning-metrics.md)を確認する。
 

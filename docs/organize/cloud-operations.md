@@ -1,6 +1,5 @@
 ---
 title: クラウド運用機能
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド運用機能の構成について説明します
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c56b3d174438583e07ae3a610180b39318c83f5d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a33dc9921f5e7fcbe2ee05f9483097040d9b309b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031981"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801037"
 ---
 # <a name="cloud-operation-capabilities"></a>クラウド運用機能
 
@@ -62,7 +61,7 @@ ms.locfileid: "71031981"
 
 フィードバックを提供し、運用要件に備えるために、これらのクラウド運用機能の実行をリリース計画とクラウドのセンター オブ エクセレンス計画に含める必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 導入と運用がスケーリングされるときに、既存の IT 要件を拡張するガバナンスのベスト プラクティスを定義および自動化することが重要です。 [クラウドのセンター オブ エクセレンス](./cloud-center-of-excellence.md)は、クラウド導入、クラウド運用、クラウド ガバナンスの取り組みをスケーリングするための重要なステップです。
 

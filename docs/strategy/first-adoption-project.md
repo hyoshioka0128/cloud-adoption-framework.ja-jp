@@ -1,6 +1,5 @@
 ---
 title: 最初のクラウド導入プロジェクト
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 最初のクラウド導入のプロジェクトの実行について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e0ddf68f959130df11305a9791c553aa48009c01
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753804"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798181"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -65,7 +64,7 @@ Azure のクラウド導入フレームワークは、クラウド導入のプ�
 - **パフォーマンス ラボ:** ラボ環境で大規模なパフォーマンスが必要な場合は、クラウドを使用して、短い期間にこれらのラボを迅速かつコスト効果の高い方法でプロビジョニングします。
 - **データ プラットフォーム:** 分析、レポート、または機械学習ワークロードに対応したスケーラブルなコンピューティングを備えたデータ レイクを作成し、ダンプおよび復元メソッドまたはデータ移行サービスを使用してマネージド データベースに移行します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 最初のクラウド導入プロジェクトが開始されると、クラウド戦略チームは長期的な[クラウド導入計画](../plan/index.md)に注意を向けることができます。
 

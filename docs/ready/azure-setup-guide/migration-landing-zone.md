@@ -1,6 +1,5 @@
 ---
 title: Azure で移行ランディング ゾーンをデプロイする
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure で移行ランディング ゾーンをデプロイする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 59b57467eeae47b73fa24ce672d9e7e4f0ed4478
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 42e7064a6d3b125a01f6fca9ce041b473fb1b7f6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251709"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799490"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>移行ランディング ゾーンをデプロイする
 
@@ -66,7 +65,7 @@ ms.locfileid: "74251709"
 |管理グループ|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../azure-best-practices/scaling-subscriptions.md)         |
 |リソース グループ|該当なし - 単一の運用サブスクリプション用に設計されています。|[サブスクリプションのスケーリング](../azure-best-practices/scaling-subscriptions.md)         |
 |Data|該当なし|「[Azure SQL で適切なデプロイ オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)」と [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Storage|該当なし|[Azure Storage ガイダンス](../considerations/storage-options.md)         |
+|ストレージ|該当なし|[Azure Storage ガイダンス](../considerations/storage-options.md)         |
 |名前付けとタグ付けの標準|該当なし|[名前付けとタグ付けのベスト プラクティス](../azure-best-practices/naming-and-tagging.md)         |
 |コスト管理|該当なし|[コストの追跡](../azure-best-practices/track-costs.md)|
 |Compute|該当なし|[コンピューティング オプション](../considerations/compute-options.md)|
@@ -79,7 +78,7 @@ ms.locfileid: "74251709"
 
 このブループリントや結果のランディング ゾーンに対するカスタマイズに関するガイダンスについては、「[ランディング ゾーンに関する考慮事項](../considerations/index.md)」の記事を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 移行ランディング ゾーンがデプロイされたら、Azure へのワークロードの移行を開始することができます。
 最初のワークロードを移行するために必要なツールとプロセスのガイダンスについては、「[Azure 移行ガイド](../../migrate/azure-migration-guide/index.md)」を参照してください。

@@ -1,6 +1,5 @@
 ---
 title: '複雑な企業向けのガバナンス ガイド: ベスト プラクティスの説明'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 複雑な企業におけるガバナンスのベスト プラクティスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e733db73ce5a77d4b1e81f052804b7a49da4aad5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547647"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806273"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雑な企業向けのガバナンス ガイド: ベスト プラクティスの説明
 
@@ -124,7 +123,7 @@ ms.locfileid: "72547647"
 - [ソフトウェア定義ネットワーク パターン](../../../decision-guides/software-defined-network/index.md)
 - [サブスクリプション設計パターン](../../../decision-guides/subscriptions/index.md)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このガイダンスを実施した後、各クラウド導入チームは、健全なガバナンス基盤の確立を進めることができます。 同時に、クラウド ガバナンス チームは、企業のポリシーとガバナンス規範の継続的な更新を行います。
 

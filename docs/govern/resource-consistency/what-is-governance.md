@@ -1,6 +1,5 @@
 ---
 title: クラウド リソース ガバナンスとは
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure でのクラウド リソース ガバナンスの説明
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 7f22a4f28d0d84a8847d06d37ad88002a03ecc16
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9277bf82d9034108b478536a699f96918c38ae0d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221865"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807276"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -39,7 +38,7 @@ RBAC ではロールが定義され、ロールによって、そのロールに
 
 これらのツールを構成するときは、ガバナンスと組織の機敏性のバランスを保つことが重要です。 ガバナンス ポリシーの制限が厳しいほど、開発者や IT 作業者の機敏性が低下します。 ガバナンス ポリシーの制限が厳しいと、開発者がフォームを入力するか、ガバナンス チームのメンバーにメールして、リソースを手動で作成しなければならない、といった手動による操作が必要になる場合があります。 ガバナンス チームの能力には限りがあり、ボトルネックが発生する可能性があります。これにより、リソースが作成されるのを待っている開発チームの生産性が低下したり、リソースが削除される前に不要なリソースによりコストが発生したりします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド リソース ガバナンスの概念を理解したので、Azure でリソース アクセスを管理する方法について確認します。
 

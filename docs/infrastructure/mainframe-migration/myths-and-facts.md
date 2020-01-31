@@ -1,19 +1,18 @@
 ---
-title: メインフレームの移行:通説と事実
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: メインフレームで現在実行されているシステムに関してメインフレーム環境から Azure にアプリケーションを移行します。Azure は可用性が高く、拡張可能なインフラストラクチャであることが証明されています。
+title: メインフレーム移行:通説と事実
+description: メインフレームで現在実行されているシステムに関してメインフレーム環境から Azure にアプリケーションを移行します。Azure は可用性が高く、スケーラブルなインフラストラクチャであることが証明されています。
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4adf229b1ffca1d1360d197ab09a04f0d9584ef8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e3e14bca45f8e5531e663c76b346f295ccb64319
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547923"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808755"
 ---
 # <a name="mainframe-myths-and-facts"></a>メインフレームに関する通説と事実
 
@@ -43,7 +42,7 @@ ms.locfileid: "72547923"
 
 比較すると、Azure では、メインフレームの同等の機能を格段に低いコストで提供できる、代替プラットフォームが提供されます。 さらに、クラウドのサブスクリプションに基づく使用量によるコスト モデルの総保有コスト (TCO) は、メインフレーム コンピューターよりはるかに低コストです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [メインフレームから Azure に切り替える](./migration-strategies.md)

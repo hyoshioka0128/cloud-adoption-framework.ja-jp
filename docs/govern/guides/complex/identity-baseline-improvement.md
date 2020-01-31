@@ -1,6 +1,5 @@
 ---
 title: '複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: '複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8c64507c03a99ef771f7885dc8fbde960c570e4d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7f975f948bc078a80ead4207d755ff67cd5e4f2f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566321"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806290"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善
 
@@ -92,7 +91,7 @@ IT チームは、2 つのデータセンターを廃止する CIO と CFO の�
 
 ガバナンス MVP へのこれらの変更の追加は、この記事に示した多くのリスクを修正するのに役立ち、各クラウド導入チームはこの障害に迅速に対応できるようになります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入が継続し、ビジネス価値が高まる一方で、リスクやクラウド ガバナンスのニーズも変わります。 発生する可能性のあるいくつかの変化を以下に示します。 この架空の会社では、次のトリガーは、クラウド導入計画に保護されたデータを含めることです。 この変更には、追加のセキュリティ制御が必要です。
 

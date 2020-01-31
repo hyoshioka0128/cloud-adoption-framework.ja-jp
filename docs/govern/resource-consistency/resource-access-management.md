@@ -1,6 +1,5 @@
 ---
 title: Azure でのリソース アクセス管理
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure でのリソース アクセス管理の説明:Azure Resource Manager、サブスクリプション、リソース グループ、およびリソース
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a429aa445a7188a98593ec27892fb6ded8f9eb45
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 825c220bda1c560c5d7bf07bcae649017525ff53
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565968"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805627"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -111,7 +110,7 @@ RBAC ロールでは、特定のリソースに対してユーザーが適用で
 
 この記事では、Azure Resource Manager を使用して、リソース アクセスが Azure でどのように管理されるかを説明しました。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure でのリソース アクセスの管理方法については理解できました。次は、これらのサービスを使用して、[単純なワークロード](./governance-simple-workload.md)または[複数チーム](./governance-multiple-teams.md)向けのガバナンス モデルを設計する方法を説明します。
 

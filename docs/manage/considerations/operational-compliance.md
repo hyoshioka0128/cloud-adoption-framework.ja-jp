@@ -1,6 +1,5 @@
 ---
 title: 運用のコンプライアンス - クラウドの管理と運用
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 運用のコンプライアンス - クラウドの管理と運用
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 507f0360636e0c56c771a6afa5fd767a42581af3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f83ec1ced367cca89349188932e608604dc3a005
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565088"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807752"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>クラウド管理における運用のコンプライアンス
 
@@ -57,7 +56,7 @@ ms.locfileid: "73565088"
 
 自動化の対象となるほど一般的な問題は、技術的負債の解決によって解決すべきであるとよく言われます。 長期的な解決が適している場合、それが既定の選択肢になります。 ただし、多くのビジネス シナリオでは、技術的負債の解決に対する多額の投資を妥当と判断することは困難です。 技術的負債の解決を妥当と判断できず、修復が共通してコストのかかる負担となる場合、自動修復が次善策のソリューションになります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [保護と復旧](./protect.md) は、クラウド管理ベースラインで考慮すべき次の分野です。
 

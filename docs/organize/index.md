@@ -1,6 +1,5 @@
 ---
 title: 組織の配置を管理する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 組織の配置を管理するためのアプローチの概要を示します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e715ed8c44d44d463bd5ff4ed0531258508ccc2f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564285"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800884"
 ---
 # <a name="manage-organizational-alignment"></a>組織の配置を管理する
 
@@ -143,7 +142,7 @@ ms.locfileid: "73564285"
 
 成熟度のレベルごとに、さまざまなクラウド機能の説明責任が新しいチームにシフトします。 このように説明責任がシフトすることで、変化への障壁を取り除き、自動化することにより、移行とイノベーションのサイクルを短縮できます。 割り当てを適切に配置するために、[RACI の配置](./raci-alignment.md)に関する記事では、参照されている各組織構造の RACI チャートを共有しています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 組織構造の決定を経時的に追跡するために、[RACI スプレッドシート テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)をダウンロードして変更します。
 

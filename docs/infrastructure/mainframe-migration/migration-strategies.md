@@ -1,6 +1,5 @@
 ---
 title: メインフレーム移行:メインフレームから Azure に切り替える
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: メインフレームで現在実行されているシステムに関してメインフレーム環境から Azure にアプリケーションを移行します。
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8416abd3429a0dafd50eda91323eb74bfb1bf9cd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221524"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808772"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>メインフレームから Azure に切り替える
 
@@ -62,7 +61,7 @@ Azure は、ローカルでも他の地域内でも、複数のストレージ �
 
 また、自動化された geo 冗長性は、多額の費用はかかりますが、メインフレームの結合機能を介しても利用できます。また、通常はミッションクリティカル システム用に予約されています。 対照的に、Azure には、実装が簡単で費用対効果の高い[バックアップ](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)、[復旧](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)、および[冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)のオプションがあり、ローカル レベルまたはリージョン レベルで、または geo 冗長性を介して利用できます。
 
-## <a name="storage"></a>Storage
+## <a name="storage"></a>ストレージ
 
 メインフレームのしくみを理解するには、さまざまな重複する用語を解読することも必要です。 たとえば、一般的に、中央ストレージ、物理メモリ、物理ストレージ、およびメイン ストレージは、すべてメインフレーム プロセッサに直接接続されているストレージを指します。
 
@@ -85,7 +84,7 @@ Azure は、ローカルでも他の地域内でも、複数のストレージ �
 
 ソリューションを Azure 上で開発およびテストし、メインフレームへの展開の準備が整ったら、コードをメインフレームにコピーしてそこでコンパイルする必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [メインフレーム アプリケーションの移行](./application-strategies.md)

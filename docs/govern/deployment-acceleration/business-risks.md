@@ -1,6 +1,5 @@
 ---
 title: デプロイ高速化を促進する動機とビジネス リスク
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンス戦略の一環としての、デプロイ高速化の規範について説明します。
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c9bdb912311aac6c926402753a678b9f191594c9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220722"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806392"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>デプロイ高速化の動機とビジネス リスク
 
@@ -40,7 +39,7 @@ ms.locfileid: "71220722"
 - **コストの超過:** システム リソースの構成において予期しない変更があると、問題の根本原因を特定することがより困難になり、開発、運用、および保守のコストが上昇する可能性があります。
 - **組織の非効率性:** 開発、運用、およびセキュリティのチーム間に障壁があると、クラウド テクノロジの効果的な導入と、統合されたクラウド ガバナンス モデルの開発に、多数の問題が引き起こされる可能性があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 

@@ -1,6 +1,5 @@
 ---
 title: '複雑な企業向けのガバナンス ガイド: 理解に役立つ物語'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: この物語では、複雑な企業のクラウド導入体験の間のガバナンスに関するユース ケースを組み立てます。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: acc82a629adf32cd9a7bfe638b0ad176f1de7933
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: fae1940c1cc522cd917b2b0293d60b630007537c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967670"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805559"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>複雑な企業向けのガバナンス ガイド: 理解に役立つ物語
 
@@ -61,7 +60,7 @@ CIO は会社に役立つ可能性のある革新的な考えを持っていま�
     ![今後 5 年間で 1 億米国ドルのコスト削減を示すオンプレミスのコストと Azure のコストの比較](../../../_images/govern/calculator-enterprise.png)
 - この会社は、このコスト削減に加え、割り当てられている資本コストを IT 部門内の運営費として再配分することで、一部の IT 投資の管理を変更することを予定しています。 この変更により、コスト管理が強化され、IT 部門はこれを使用して他の計画されている作業を加速できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 この会社は、ガバナンスの実装を形作るための企業ポリシーを策定しました。 企業ポリシーによって、多くの技術的な決定は変わります。
 

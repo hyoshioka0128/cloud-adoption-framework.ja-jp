@@ -1,6 +1,5 @@
 ---
 title: Azure イノベーション ガイド:カスタマー フィードバックの準備
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: カスタマー フィードバックの準備
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7bf52b9be08ae2122b6a7f20a19d99f5621fb0e4
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251935"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808364"
 ---
 ::: zone target="docs"
 
@@ -44,7 +43,7 @@ Azure の次の各ツールは、GitHub でホストされているプロジェ�
 
 Application Insights は、アプリケーションの使用状況に関するほぼリアルタイムの定量的フィードバックを提供する監視ツールです。 このフィードバックは、現在の仮説をテストして検証し、バックログにある次の機能やユーザー ストーリーを形成する際に役立ちます。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 アプリケーションの定量的データを表示するには:
 
@@ -83,7 +82,7 @@ Connected Economy (つながる経済) が企業のイノベーションのあ�
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 API で定量的データを記録するには:
 
@@ -123,7 +122,7 @@ API Management サービスを開くには、[Azure portal](https://ms.portal.az
 
 ::: zone target="docs"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。
 これらのツールの使用を開始するには、[Azure DevOps](https://dev.azure.com) に移動します。
@@ -134,7 +133,7 @@ Azure Board と Azure Pipelines には、GitHub および Azure とは別のポ�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 DevOps プロジェクトを作成するには:
 
@@ -159,7 +158,7 @@ DevOps プロジェクトを作成するには:
 
 フィードバックに基づく行動は、顧客から要求された機能の追加を必ずしも意味するわけではありません。 しかし、あらゆるデータ ポイントから何らかの変化が生じます。 その変化は、物事に対する考え方の変化である場合もあれば、 要求されたものとはまったく異なる技術的な変更である場合もあります。 いずれにせよ、Azure Pipelines のようなデプロイ パイプラインおよびツールを使用することで、そうした変更を速やかに公開することが可能となり、顧客と頻繁に共有できるようになります。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 パイプラインにある現在のデプロイを表示するには:
 

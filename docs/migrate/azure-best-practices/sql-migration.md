@@ -1,6 +1,5 @@
 ---
 title: Azure の SQL Server 移行のベスト プラクティス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure の SQL Server 移行のベスト プラクティスの概要
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 09fb5a11a7d97d4cb94a11fbbb22aef84a29b87e
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 52c0c756ec6748b32486deca32054acfd15cd12b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753601"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803587"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>Azure の SQL Server 移行のベスト プラクティス
 

@@ -1,6 +1,5 @@
 ---
 title: クラウド導入戦略を作成する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウドを使用して、ビジネス戦略を推進します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 layout: LandingPage
-ms.openlocfilehash: 6e051b5272535ccb9fe080176e04859ccf20470c
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 5ecc4c99604b6991337ae4f4022a2a8ee0464b0f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240053"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798334"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -109,7 +108,7 @@ ms.locfileid: "73240053"
 
 クラウド導入戦略を構築できるように、[Microsoft クラウド導入計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)をダウンロードし、各演習の出力を追跡してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入戦略を作成するにあたり、まず、クラウド導入の背後にある[動機を文書にします](./motivations.md)。
 

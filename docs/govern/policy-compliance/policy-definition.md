@@ -1,6 +1,5 @@
 ---
 title: クラウド ガバナンスのための企業ポリシーを定義する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リスクを反映および修正するためのポリシーを確立する方法を説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 4184ccdd4a0efa06d6a842f7ba1d9cbf0dc77ea6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223734"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806052"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>クラウド ガバナンスのための企業ポリシーを定義する
 
@@ -64,7 +63,7 @@ ms.locfileid: "71223734"
 
 クラウド ポリシーをレガシ IT ポリシーと統合する必要性は、クラウド ガバナンス プロセスの成熟度とクラウド資産のサイズによって大きく異なります。 クラウド変革時のポリシー統合に関するより広範な説明については、[斬新的なガバナンスとポリシー MVP](./index.md) に関する記事を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ポリシーを定義した後、IT スタッフと開発者に実行可能なガイダンスを提供するためのアーキテクチャ設計ガイドのドラフトを作成します。
 

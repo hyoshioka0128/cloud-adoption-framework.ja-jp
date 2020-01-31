@@ -1,6 +1,5 @@
 ---
 title: クラウド導入計画のワークロードを優先付けして定義する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入計画のワークロードを優先付けして定義する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240196"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799983"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>クラウド導入計画のワークロードを優先付けして定義する
 
@@ -64,7 +63,7 @@ ms.locfileid: "73240196"
 
 ### <a name="business-inputs"></a>業務的な入力
 
-| データ ポイント | 説明 | 入力 |
+| データ ポイント | [説明] | 入力 |
 |---|---|---|
 | ワークロード名 | このワークロードの名前 |         |
 | ワークロードの説明 | このワークロードが何をするかを一文で入力 |         |
@@ -83,12 +82,12 @@ ms.locfileid: "73240196"
 
 ### <a name="technical-inputs"></a>技術的な入力
 
-| データ ポイント | 説明 | 入力 |
+| データ ポイント | [説明] | 入力 |
 |---|---|---|
 | 導入アプローチ | この導入が移行またはイノベーションの候補かどうか |         |
 | アプリケーション運用リード | このワークロードのパフォーマンスと可用性についての責任者を記載します。 |         |
 | SLA | サービス レベル アグリーメント (RTO/RPO 要件) があれば記載します。 |         |
-| 重要性 | 現在のアプリケーションの重要性を記載します。 |         |
+| 重要度 | 現在のアプリケーションの重要性を記載します。 |         |
 | データ分類 | データの機密性の分類を記載します。 |         |
 | 運用地域 | ワークロードがホストされる (またはホストされるべき) 地域を記載します。 |         |
 | [アプリケーション] | このワークロードに含まれるすべてのアプリケーションの最初のリストまたは数を指定します。 |         |
@@ -103,7 +102,7 @@ ms.locfileid: "73240196"
 
 レビュー後、両チームは、結果として得られた優先順位を確認して納得する必要があります。 このように文書化、検証、および確認された一連の優先順位が、優先順位付けされたクラウド導入バックログです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 優先順位付けされたクラウド導入バックログ内のすべてのワークロードに対して、チームは[資産を調整する](./assets.md)準備ができました。
 

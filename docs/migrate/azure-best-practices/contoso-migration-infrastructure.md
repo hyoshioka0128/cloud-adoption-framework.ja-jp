@@ -1,6 +1,5 @@
 ---
 title: 移行インフラストラクチャをデプロイする
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Contoso が Azure への移行用に Azure インフラストラクチャを設定する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160366"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807514"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>移行インフラストラクチャをデプロイする
 
@@ -29,9 +28,9 @@ Contoso が Azure への移行を実施するには、その前に Azure イン�
 
 > [!div class="checklist"]
 >
-> - **手順 1:Azure サブスクリプション。** Contoso が Azure を購入する方法、および Azure プラットフォームやサービスと対話する方法。
+> - **ステップ 1:Azure サブスクリプション。** Contoso が Azure を購入する方法、および Azure プラットフォームやサービスと対話する方法。
 > - **手順 2:ハイブリッド ID。** 移行後にオンプレミスおよび Azure のリソースへのアクセスを管理および制御する方法。 Contoso が ID 管理をクラウドに拡張または移行する方法。
-> - **手順 3:ディザスター リカバリーと回復性。** 停止や障害が発生した場合のアプリとインフラストラクチャの回復性を Contoso が保証する方法。
+> - **ステップ 3:ディザスター リカバリーと回復性。** 停止や障害が発生した場合のアプリとインフラストラクチャの回復性を Contoso が保証する方法。
 > - **手順 4:ネットワーク。** Contoso がネットワーク インフラストラクチャを設計する方法、およびオンプレミスのデータ センターと Azure 間の接続を確立する方法。
 > - **手順 5:セキュリティ。** ハイブリッド/Azure デプロイをセキュリティで保護する方法。
 > - **手順 6:ガバナンス。** Contoso での展開がセキュリティおよびガバナンスの要件を満たし続ける方法。
@@ -59,7 +58,7 @@ Contoso が Azure への移行を実施するには、その前に Azure イン�
 - Contoso は、ID 管理に Active Directory を使用しており、内部ネットワーク上で DNS サーバーを使用しています。
 - データセンター内のドメイン コントローラーは、VMware VM 上で実行されています。 支店にあるドメイン コントローラーは、物理サーバー上で実行されています。
 
-## <a name="step-1-buy-and-subscribe-to-azure"></a>ステップ 1:Azure を購入して登録する
+## <a name="step-1-buy-and-subscribe-to-azure"></a>手順 1:Azure を購入して登録する
 
 Contoso は、Azure の購入方法、サブスクリプションの設計方法、およびサービスとリソースのライセンスを取得する方法を明らかにする必要があります。
 
@@ -94,11 +93,11 @@ Azure の料金を支払った後、Contoso は Azure サブスクリプショ�
 
 Azure に VM を展開するとき、標準イメージにはソフトウェアが使用された分単位で Contoso に請求されるライセンスが含まれます。 ただし、Contoso は Microsoft の顧客であった期間が長く、EA およびソフトウェア アシュアランス (SA) 付きのオープン ライセンスを持っています。
 
-Azure ハイブリッド特典ではコスト効果の高い方法が Contoso の移行に対して提供され、Contoso はソフトウェア アシュアランスでカバーされた Windows Server Datacenter および Standard Edition のライセンスを変換または再利用をすることにより、Azure VM と SQL Server のワークロードを節約できます。 これにより、Contoso が VM と SQL Server に対して支払う基本コンピューティング料金が低くなります。 [詳細情報](https://azure.microsoft.com/pricing/hybrid-benefit)。
+Azure ハイブリッド特典ではコスト効果の高い方法が Contoso の移行に対して提供され、Contoso はソフトウェア アシュアランスでカバーされた Windows Server Datacenter および Standard Edition のライセンスを変換または再利用をすることにより、Azure VM と SQL Server のワークロードを節約できます。 これにより、Contoso が VM と SQL Server に対して支払う基本コンピューティング料金が低くなります。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/hybrid-benefit)。
 
 #### <a name="license-mobility"></a>ライセンス モビリティ
 
-SA によるライセンス モビリティを利用すると、Contoso のような Microsoft ボリューム ライセンスのお客様は、Azure でのアクティブな SA によって、ライセンス モビリティに対応するサーバー アプリを柔軟に展開できます。 これにより、新しいライセンスを購入する必要がなくなります。 関連するモビリティ料金なしで、既存のライセンスを Azure に簡単に展開できます。 [詳細情報](https://azure.microsoft.com/pricing/license-mobility)。
+SA によるライセンス モビリティを利用すると、Contoso のような Microsoft ボリューム ライセンスのお客様は、Azure でのアクティブな SA によって、ライセンス モビリティに対応するサーバー アプリを柔軟に展開できます。 これにより、新しいライセンスを購入する必要がなくなります。 関連するモビリティ料金なしで、既存のライセンスを Azure に簡単に展開できます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/license-mobility)。
 
 #### <a name="reserve-instances-for-predictable-workloads"></a>予測可能なワークロードのためにインスタンスを予約する
 
@@ -108,7 +107,7 @@ SA によるライセンス モビリティを利用すると、Contoso のよ�
 
 長時間維持する必要があることがわかっている特定の VM インスタンスに対して予約インスタンスを使用する見返りに、Contoso は割引と優先容量の両方を得ることができます。 [Azure 予約インスタンス](https://azure.microsoft.com/pricing/reserved-vm-instances)を Azure ハイブリッド特典と共に利用することで、Contoso は正規の従量課金制料金を 82% 節約できます (2018 年 4 月現在)。
 
-## <a name="step-2-manage-hybrid-identity"></a>ステップ 2:ハイブリッドの ID を管理する
+## <a name="step-2-manage-hybrid-identity"></a>手順 2:ハイブリッドの ID を管理する
 
 ID およびアクセス管理 (IAM) によってユーザーが Azure リソースにアクセスできるようにして、アクセスを制御することは、Azure インフラストラクチャをまとめ上げるための重要なステップです。
 
@@ -276,7 +275,7 @@ Contoso は中間の方法を採用することにしました。 Contoso は、
 - 障害ドメインは、データセンター内の一般的な電源とネットワーク スイッチを持つ基になるハードウェアを表します。 可用性セット内の VM は、1 つのハードウェアまたはネットワーク障害によって発生する停止を最小限に抑えるために、さまざまな障害ドメインにわたって分散されます。
 - 更新ドメインは、同時にメンテナンスを実行したり、再起動したりできる基になるハードウェアを表します。 可用性セットはまた、常に少なくとも 1 つのインスタンスが実行されている状態を確保するために、複数の更新ドメインにわたって VM を分散させます。
 
-Contoso は、VM ワークロードに高可用性が必要な場合は常に可用性セットを実装します。 [詳細情報](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability)。
+Contoso は、VM ワークロードに高可用性が必要な場合は常に可用性セットを実装します。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability)。
 
 **可用性ゾーン:**
 
@@ -287,7 +286,7 @@ Contoso は、VM ワークロードに高可用性が必要な場合は常に可
 - 有効になっているリージョンにはいずれも、最低 3 つのゾーンが別個に存在しています。
 - ゾーンは 1 つのリージョン内で物理的に分離されているため、データセンターで障害が発生した場合でも、アプリケーションとデータを保護できます。
 
-Contoso は、アプリにスケーラビリティ、高可用性、および回復性が求められる場合に、可用性ゾーンを展開します。 [詳細情報](https://docs.microsoft.com/azure/availability-zones/az-overview)。
+Contoso は、アプリにスケーラビリティ、高可用性、および回復性が求められる場合に、可用性ゾーンを展開します。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/availability-zones/az-overview)。
 
 ### <a name="set-up-backup"></a>バックアップを設定する
 
@@ -301,7 +300,7 @@ Azure Backup を使用すると、Azure VM ディスクをバックアップお�
 - リージョン障害が発生した場合、Azure Backup は geo 冗長ストレージ (GRS) もサポートしているため、バックアップ データをセカンダリ ペア リージョンにレプリケートします。
 - Azure Backup は、転送中のデータを AES 256 を使用して暗号化します。 バックアップされた保存データは、[Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) を使用して暗号化されます。
 
-Contoso はすべての運用 VM に Azure Backup を GRS と共に使用することにより、ワークロード データがバックアップされ、障害またはその他の中断が発生した場合はすばやく復元されるようにします。 [詳細情報](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)。
+Contoso はすべての運用 VM に Azure Backup を GRS と共に使用することにより、ワークロード データがバックアップされ、障害またはその他の中断が発生した場合はすばやく復元されるようにします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)。
 
 ### <a name="set-up-disaster-recovery"></a>ディザスター リカバリーを設定する
 
@@ -567,7 +566,7 @@ Contoso の管理者は、Azure DNS サービスはハイブリッド環境に�
 
 オンプレミスのドメイン コントローラーだけでなく、Contoso は Azure ネットワークをサポートするために、各リージョンに 2 つずつ、4 つのドメイン コントローラーをさらに実装する予定です。 Contoso の Azure での展開は次のようになります。
 
-**[リージョン]** | **DC** | **VNet** | **サブネット** | **IP アドレス**
+**[リージョン]** | **DC** | **VNet** | **サブネット** | **IP アドレス (IP address)**
 --- | --- | --- | --- | ---
 EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4
 EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5
@@ -584,7 +583,7 @@ CUS | CONTOSODC6 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4
 2. VM 用の可用性セットを各場所に作成します。 可用性セットは次のことを行います。
 
     - Azure ファブリックが Azure リージョン内の異なるインフラストラクチャに VM を分離することを保証します。
-    - Contoso が Azure の VM で 99.95% SLA の対象になるようにします。 [詳細情報](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets)。
+    - Contoso が Azure の VM で 99.95% SLA の対象になるようにします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets)。
 
     ![可用性グループ](./media/contoso-migration-infrastructure/availability-group.png)
 
@@ -706,7 +705,7 @@ Contoso は、次のようにロックを実装しようとしています。
 
 Contoso は、ビジネスにとって有意義な方法で Azure の資産を視覚化する必要があります。 たとえばロール別や部門別です。 タグを共有するために、リソースが同じリソース グループ内に格納されている必要はないことに注意してください。 Contoso は誰もが同じタグを使用できるように、簡単なタグ分類を作成します。
 
-**タグ名** | **値**
+**タグ名** | **Value**
 --- | ---
 CostCenter | 12345:SAP の有効なコスト センターである必要があります。
 BusinessUnit | (SAP の) 部署の名前です。 CostCenter と一致します。
@@ -716,7 +715,7 @@ ServiceManager | リソースの ITIL Service Manager のメール別名です�
 COBPriority | BCDR に対してビジネスによって設定された優先度です。 値は 1 から 5 です。
 ENV | 指定できる値は DEV、STG、PROD です。 開発、ステージング、運用を表します。
 
-例:
+次に例を示します。
 
  ![Azure タグ](./media/contoso-migration-infrastructure/azure-tag.png)
 
@@ -728,9 +727,9 @@ ENV | 指定できる値は DEV、STG、PROD です。 開発、ステージン�
 
 Contoso はいくつかの主要な側面を考慮する必要があります。
 
-- **Azure Security Center:** Azure Security Center は、ハイブリッド クラウド ワークロード全体で統合されたセキュリティ管理と高度な脅威保護を実現します。 Security Center を使用して、ワークロード全体へのセキュリティ ポリシーの適用、脅威にさらされる状態の軽減、攻撃の検出とその対応を行うことができます。 [詳細情報](https://docs.microsoft.com/azure/security-center/security-center-intro)。
-- **ネットワーク セキュリティ グループ (NSG):** NSG は、一連のセキュリティ規則が含まれているフィルター (ファイアウォール) です。規則が適用されると、Azure VNet に接続されたリソースへのネットワーク トラフィックが許可または拒否されます。 [詳細情報](https://docs.microsoft.com/azure/virtual-network/security-overview)。
-- **データ暗号化:** Azure Disk Encryption は、Windows と Linux の IaaS 仮想マシン ディスクを暗号化するのに役立つ機能です。 [詳細情報](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest)。
+- **Azure Security Center:** Azure Security Center は、ハイブリッド クラウド ワークロード全体で統合されたセキュリティ管理と高度な脅威保護を実現します。 Security Center を使用して、ワークロード全体へのセキュリティ ポリシーの適用、脅威にさらされる状態の軽減、攻撃の検出とその対応を行うことができます。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/security-center/security-center-intro)。
+- **ネットワーク セキュリティ グループ (NSG):** NSG は、一連のセキュリティ規則が含まれているフィルター (ファイアウォール) です。規則が適用されると、Azure VNet に接続されたリソースへのネットワーク トラフィックが許可または拒否されます。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/virtual-network/security-overview)。
+- **データ暗号化:** Azure Disk Encryption は、Windows と Linux の IaaS 仮想マシン ディスクを暗号化するのに役立つ機能です。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest)。
 
 ### <a name="work-with-the-azure-security-center"></a>Azure Security Center を使用する
 
@@ -774,11 +773,11 @@ Contoso は、NSG と ASG の両方を実装します。 Contoso は NSG の管�
 
 Contoso は、これがアプリケーションからどのように見えるかをモデル化しています。
 
-![セキュリティ](./media/contoso-migration-infrastructure/asg.png)
+![Security](./media/contoso-migration-infrastructure/asg.png)
 
 ASG に関連付けられた NSG は最小限の特権で構成されており、許可されたパケットのみが、ネットワークの 1 つの部分から宛先にフローできます。
 
-**アクション** | **Name** | **ソース** | **ターゲット** | **ポート**
+**操作** | **Name** | **ソース** | **移行先** | **[ポート]**
 --- | --- | --- | --- | ---
 Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443
 Allow | AllowWebToApp | APP1-FE | APP1-APP | 80、443
@@ -800,6 +799,6 @@ Contoso がここで行ったすてべてのステップが、クラウドへの
 
 このインフラストラクチャの導入が済むと、Contoso は移行を実施する準備が整います。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure インフラストラクチャを設定したら、Contoso は、クラウドへのワークロードの移行を開始する準備ができました。 このサンプル インフラストラクチャを移行ターゲットとして使用したシナリオの選択については、[移行のパターンと例の概要](./contoso-migration-overview.md#windows-server-workloads)に関するセクションを参照してください。

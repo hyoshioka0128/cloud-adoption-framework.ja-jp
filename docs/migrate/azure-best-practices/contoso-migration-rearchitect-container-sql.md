@@ -1,6 +1,5 @@
 ---
 title: Azure コンテナーと Azure SQL Database にアプリをリアーキテクトする
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Contoso が Azure Windows コンテナーと Azure SQL Database でアプリを再構築する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 2487b7c213c45b0dcc78ffd4c12b1acae67aa429
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3727c6bac138dae12ec976683ba2b5954bbd9163
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566658"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807548"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Azure コンテナーと Azure SQL Database でオンプレミス アプリを再構築する
 
 この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware VM 上で実行される 2 層の Windows .NET アプリをリアーキテクトする方法を示します。 Contoso は、アプリ フロントエンド VM を Azure Windows コンテナーに、アプリ データベースを Azure SQL データベースに移行します。
 
-この例で使用される SmartHotel360 アプリは、オープン ソースとして提供されます。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
+この例で使用される SmartHotel360 アプリは、オープン ソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
@@ -30,7 +29,7 @@ Contoso の IT リーダーシップ チームは、ビジネス パートナー
 - **効率化。** Contoso では、不要な手順を取り除き、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は IT に対して、時間やコストを無駄にせず、迅速に作業を行ってもらう必要があります。これは、例えば、顧客の要求に素早く対応するためです。
 - **機敏性の向上。** Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済で成功を収めるために、市場の変化に対して、より迅速な対応ができる必要があります。 ビジネスの妨げになったり、ビジネスの機会を壊すようなことがあってはなりません。
 - **スケール。** ビジネスが順調に成長していく中で、Contoso IT は、同じペースで拡張できるシステムを提供する必要があります。
-- **コストの削減。** Contoso はライセンス コストを最小限に抑えたいと考えています。
+- **コストを削減する。** Contoso はライセンス コストを最小限に抑えたいと考えています。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -40,7 +39,7 @@ Contoso クラウド チームは、この移行の目標を設定しました�
 
 **目標** | **詳細**
 --- | ---
-**アプリの要件** | このアプリは、Azure でも現在と同じくクリティカルです。<br/><br/> 現在の VMware と同じくらいのパフォーマンス機能が必要です。<br/><br/> Contoso は、アプリが現在実行されている Windows Server 2008 R2 のサポートを終了し、アプリに投資したいと考えています。<br/><br/> Contoso は、SQL Server 2008 R2 から最新の PaaS Database プラットフォームに移行したいと考えています。これにより、管理の必要性を最小限に抑えられます。<br/><br/> Contoso は、可能であれば、SQL Server のライセンスとソフトウェア アシュアランスへの投資を活用したいと考えています。<br/><br/> Contoso は、アプリの Web 階層をスケールアップできるようにしたいと考えています。
+**アプリの要件** | このアプリは、Azure でも現在と同じくクリティカルです。<br/><br/> 現在の VMWare と同等のパフォーマンス機能が必要です。<br/><br/> Contoso は、アプリが現在実行されている Windows Server 2008 R2 のサポートを終了し、アプリに投資したいと考えています。<br/><br/> Contoso は、SQL Server 2008 R2 から最新の PaaS Database プラットフォームに移行したいと考えています。これにより、管理の必要性を最小限に抑えられます。<br/><br/> Contoso では、可能であれば、SQL Server ライセンスとソフトウェア アシュアランスへの投資を活かしたいと考えています。<br/><br/> Contoso は、アプリの Web 階層をスケールアップできるようにしたいと考えています。
 **制限事項** | このアプリは、同じ VM 上で実行されている ASP.NET アプリと WCF サービスで構成されています。 Contoso は、Azure App Service を使用して 2 つの Web アプリに分割したいと考えています。
 **Azure の要件** | Contoso は、アプリを Azure に移行し、そのアプリをコンテナーで実行してアプリの寿命を延ばしたいと考えています。 Azure でのアプリの実装を完全に最初から始めたくはありません。
 **DevOps** | Contoso は、コード ビルドとリリース パイプラインに Azure DevOps Services を使用して DevOps モデルに移行したいと考えています。
@@ -81,7 +80,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **考慮事項** | **詳細**
 --- | ---
-**長所** | SmartHotel360 アプリ コードは、Azure Service Fabric に移行するために変更する必要があります。 ただし、変更には Service Fabric SDK ツールを使用して、作業を最小限に抑えられます。<br/><br/> Contoso は Service Fabric に移行することで、マイクロサービスを開発し、元のコード ベースに悪影響を及ぼすことなく、徐々に簡単にマイクロサービスをアプリケーションに追加することができます。<br/><br/> Windows コンテナーには、一般的にコンテナーと同じ利点があります。 機敏性、移植性、制御性が向上します。<br/><br/> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を利用できます。<br/><br/> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 [詳細情報](https://support.microsoft.com/lifecycle)。<br/><br/> Contoso は複数のインスタンスがあるアプリの Web 層を構成することができたので、単一障害点ではなくなりました。<br/><br/> 古い SQL Server 2008 R2 に依存しなくなります。<br/><br/> SQL Database は、Contoso の技術面の要件をサポートしています。 Contoso 管理者は Data Migration Assistant を使用してオンプレミス データベースを評価し、互換性があることがわかりました。<br/><br/> SQL Database には、Contoso が設定する必要がないフォールト トレランス機能が組み込まれています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。
+**長所** | SmartHotel360 アプリ コードは、Azure Service Fabric に移行するために変更する必要があります。 ただし、変更には Service Fabric SDK ツールを使用して、作業を最小限に抑えられます。<br/><br/> Contoso は Service Fabric に移行することで、マイクロサービスを開発し、元のコード ベースに悪影響を及ぼすことなく、徐々に簡単にマイクロサービスをアプリケーションに追加することができます。<br/><br/> Windows コンテナーには、一般的にコンテナーと同じ利点があります。 機敏性、移植性、制御性が向上します。<br/><br/> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を利用できます。<br/><br/> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 [詳細については、こちらを参照してください](https://support.microsoft.com/lifecycle)。<br/><br/> Contoso は複数のインスタンスがあるアプリの Web 層を構成することができたので、単一障害点ではなくなりました。<br/><br/> 古い SQL Server 2008 R2 に依存しなくなります。<br/><br/> SQL Database は、Contoso の技術面の要件をサポートしています。 Contoso 管理者は Data Migration Assistant を使用してオンプレミス データベースを評価し、互換性があることがわかりました。<br/><br/> SQL Database には、Contoso が設定する必要がないフォールト トレランス機能が組み込まれています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。
 **短所** | コンテナーは他の移行オプションより複雑です。 Contoso にとって、コンテナーの学習曲線が問題になる可能性があります。 この曲線にもかかわらず、Contoso は多くの価値を提供する新しいレベルの複雑さを導入します。<br/><br/> Azure、コンテナー、アプリのマイクロサービスを理解し、サポートできるように、Contoso の運用チームを立ち上げる必要があります。<br/><br/> Contoso は Azure Database Migration Service ではなく Data Migration Assistant を使用してデータベースを移行する場合、大規模なデータベースを移行するためのインフラストラクチャを用意する予定がありません。
 
 <!-- markdownlint-enable MD033 -->
@@ -100,9 +99,9 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 **サービス** | **説明** | **コスト**
 --- | --- | ---
 [Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Azure のデータベース機能に影響を及ぼす可能性がある互換性の問題を評価して検出します。 DMA は SQL のソースとターゲット間で機能パリティを評価し、パフォーマンスと信頼性の向上箇所を推奨します。 | これは無料でダウンロードできるツールです。
-[Azure SQL Database](https://azure.microsoft.com/services/sql-database) | インテリジェントなフル マネージド リレーショナル クラウド データベース サービスを提供します。 | 機能、スループット、サイズに基づくコスト。 [詳細情報](https://azure.microsoft.com/pricing/details/sql-database/managed)。
-[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細情報](https://azure.microsoft.com/pricing/details/container-registry)。
-[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | 常時接続可能でスケーラブルな分散アプリを構築し、運用します | コンピューティング ノードのサイズ、場所、期間に基づくコスト。 [詳細情報](https://azure.microsoft.com/pricing/details/service-fabric)。
+[Azure SQL Database](https://azure.microsoft.com/services/sql-database) | インテリジェントなフル マネージド リレーショナル クラウド データベース サービスを提供します。 | 機能、スループット、サイズに基づくコスト。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/sql-database/managed)。
+[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/container-registry)。
+[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | 常時接続可能でスケーラブルな分散アプリを構築し、運用します | コンピューティング ノードのサイズ、場所、期間に基づくコスト。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/service-fabric)。
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | 継続的インテグレーションと継続的デプロイ (CI/CD) パイプラインをアプリの開発に提供します。 パイプラインは、アプリ コードを管理する Git リポジトリで始まり、パッケージおよびその他のビルド成果物を生成するためのビルド システム、開発、テスト、および運用環境での変更を配置するリリース管理システムへと続きます。
 
 ## <a name="prerequisites"></a>前提条件
@@ -111,7 +110,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 <!-- markdownlint-disable MD033 -->
 
-**要件** | **詳細**
+**必要条件** | **詳細**
 --- | ---
 **Azure サブスクリプション** | Contoso は、この記事シリーズの前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
 **Azure インフラストラクチャ** | [Contoso で以前に Azure インフラストラクチャを設定した方法](./contoso-migration-infrastructure.md)を確認してください。
@@ -125,15 +124,15 @@ Contoso が移行を実行する方法を次に示します。
 
 > [!div class="checklist"]
 >
-> - **手順 1:Azure に SQL データベース インスタンスをプロビジョニングします。** Contoso は、Azure で SQL インスタンスをプロビジョニングします。 フロントエンド Web VM が Azure コンテナーに移行された後、アプリ Web フロントエンドを含むコンテナー インスタンスは、このデータベースを示すようになります。
+> - **ステップ 1:Azure に SQL データベース インスタンスをプロビジョニングします。** Contoso は、Azure で SQL インスタンスをプロビジョニングします。 フロントエンド Web VM が Azure コンテナーに移行された後、アプリ Web フロントエンドを含むコンテナー インスタンスは、このデータベースを示すようになります。
 > - **手順 2:Azure Container Registry (ACR) を作成する。** Contoso は、Docker コンテナー イメージのエンタープライズ コンテナー レジストリをプロビジョニングします。
-> - **手順 3:Azure Service Fabric をプロビジョニングする。** Service Fabric クラスターをプロビジョニングします。
+> - **ステップ 3:Azure Service Fabric をプロビジョニングする。** Service Fabric クラスターをプロビジョニングします。
 > - **手順 4:Service Fabric 証明書を管理する。** Contoso は Azure DevOps Services がクラスターにアクセスするための証明書を設定します。
 > - **手順 5:DMA を使用してデータベースを移行する。** Data Migration Assistant を使用してアプリのデータベースを移行します。
 > - **手順 6:Azure DevOps Services を設定する。** Contoso は Azure DevOps Services で新しいプロジェクトを設定し、コードを Git リポジトリにインポートします。
-> - **手順 7: アプリを変換する。** Contoso は Azure DevOps と SDK ツールを使用してアプリをコンテナーに変換します。
+> - **手順 7:アプリを変換する。** Contoso は Azure DevOps と SDK ツールを使用してアプリをコンテナーに変換します。
 > - **手順 8: ビルドとリリースを設定する。** Contoso は、アプリを作成して ACR および Service Fabric クラスターに発行するためのビルド パイプラインとリリース パイプラインを設定します。
-> - **ステップ 9: アプリを拡張する。** アプリの公開後、Contoso は Azure の機能を利用するためにアプリを拡張し、パイプラインを使用してそれを Azure に再発行します。
+> - **手順 9:アプリを拡張する。** アプリの公開後、Contoso は Azure の機能を利用するためにアプリを拡張し、パイプラインを使用してそれを Azure に再発行します。
 
 ## <a name="step-1-provision-an-azure-sql-database"></a>手順 1:Azure SQL Database をプロビジョニングする
 
@@ -354,7 +353,7 @@ Contoso は、アプリケーションのために DevOps インフラストラ�
 
 3. コードをインポートしたら、Visual Studio をリポジトリに接続し、チーム エクスプローラーを使用してコードを複製します。
 
-4. リポジトリが開発者用マシンに複製された後に、アプリ用のソリューション ファイルを開きます。 Web アプリと wcf サービスは、ファイル内にそれぞれ別のプロジェクトを持っています。
+4. リポジトリが開発者のコンピューターに複製された後に、アプリ用のソリューション ファイルを開きます。 Web アプリと wcf サービスは、ファイル内にそれぞれ別のプロジェクトを持っています。
 
     ![ソリューション ファイル](./media/contoso-migration-rearchitect-container-sql/vsts4.png)
 
@@ -403,9 +402,9 @@ Contoso 管理者は、以下のように Visual Studio と SDK Tools を使用�
 
 10. 更新されたコードをコミットし、Azure DevOps Services にプッシュします。
 
-    ![コミット](./media/contoso-migration-rearchitect-container-sql/container9.png)
+    ![Commit](./media/contoso-migration-rearchitect-container-sql/container9.png)
 
-## <a name="step-8-build-and-release-pipelines-in-azure-devops-services"></a>ステップ 8:Azure DevOps Services でパイプラインをビルドおよびリリースする
+## <a name="step-8-build-and-release-pipelines-in-azure-devops-services"></a>手順 8:Azure DevOps Services でパイプラインをビルドおよびリリースする
 
 次に、Contoso 管理者は、DevOps が実行するアクションに対するビルドおよびリリース プロセスを実行するように Azure DevOps Services を構成します。
 
@@ -451,7 +450,7 @@ Contoso 管理者は、以下のように Visual Studio と SDK Tools を使用�
 
 13. 収集した証明書情報は、 **[Server Certificate Thumbprint]\(サーバー証明書の拇印\)** および **[クライアント証明書]** に入力されます。
 
-    ![証明書](./media/contoso-migration-rearchitect-container-sql/pipeline10.png)
+    ![Certificate](./media/contoso-migration-rearchitect-container-sql/pipeline10.png)
 
 14. パイプライン、 **[Add an artifact]\(アーティファクトの追加\)** の順に選択します。
 
@@ -459,7 +458,7 @@ Contoso 管理者は、以下のように Visual Studio と SDK Tools を使用�
 
 15. 最新バージョンを使用して、プロジェクトとビルド パイプラインを選択します。
 
-     ![構築](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
+     ![Build](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
 
 16. アーティファクト上の稲妻にチェックマークが付いていることを確認します。
 
@@ -576,21 +575,21 @@ Cosmos DB がプロビジョニングされたら、Contoso 管理者はそれ�
 - SmartHotel360 アプリの新しい場所を示すように社内ドキュメントを更新します。 Azure SQL データベースでデータベースは実行中と表示され、Service Fabric でフロント エンドは実行中と表示されます。
 - 使用停止されている VM と対話しているリソースがないか確認します。また、関連する設定やドキュメントがあれば、更新して新しい構成を反映します。
 
-## <a name="review-the-deployment"></a>デプロイ環境を検討する
+## <a name="review-the-deployment"></a>デプロイを再調査する
 
 リソースを Azure に移行したら、新しいインフラストラクチャを完全に操作可能にして、セキュリティ保護する必要があります。
 
-### <a name="security"></a>セキュリティ
+### <a name="security"></a>Security
 
-- Contoso 管理者は新しい **SmartHotel-Registration** データベースがセキュリティで保護されていることを確認する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso 管理者は新しい **SmartHotel-Registration** データベースがセキュリティで保護されていることを確認する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - 特に、証明書で SSL を使用するようにコンテナーを更新する必要があります。
-- Key Vault を使用して、Service Fabric アプリのシークレットを保護することを検討する必要があります。 [詳細情報](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
+- Key Vault を使用して、Service Fabric アプリのシークレットを保護することを検討する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
 
 ### <a name="backups"></a>バックアップ
 
-- Contoso は、Azure SQL Database のバックアップ要件を確認する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
-- Contoso 管理者は、データベースのリージョンのフェールオーバーを用意するようにフェールオーバー グループを実装することを検討する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
-- ACR Premium SKU の geo レプリケーションを利用できます。 [詳細情報](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
+- Contoso は、Azure SQL Database のバックアップ要件を確認する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
+- Contoso 管理者は、データベースのリージョンのフェールオーバーを用意するようにフェールオーバー グループを実装することを検討する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- ACR Premium SKU の geo レプリケーションを利用できます。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
 - Contoso は、Web App for Containers がリリースされた時点で、メインの米国東部 2 リージョンと米国中部リージョンに Web アプリをデプロイすることを検討する必要があります。 Contoso 管理者は、リージョンの障害が発生した場合に確実にフェールオーバーするように Traffic Manager を構成できます。
 - Cosmos DB は自動的にバックアップされます。 Contoso は、このプロセスの詳細情報を[こちらで確認](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)します。
 

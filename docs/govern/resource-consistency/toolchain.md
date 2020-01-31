@@ -1,6 +1,5 @@
 ---
 title: Azure のリソース整合性ツール
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure のリソース整合性ツール
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a09e4748dd805757d9f78e8dd927737ca9a91f7f
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a2f553285f9d44085cc816c2db34f76fcb02235d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222926"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805185"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure のリソース整合性ツール
 
@@ -33,16 +32,16 @@ ms.locfileid: "71222926"
 | リソースへの条件付きアクセスを管理する       | はい | はい | はい | いいえ  | いいえ  | いいえ | いいえ |
 | RBAC ユーザーを構成する                         | はい | いいえ  | いいえ  | いいえ  | はい | いいえ | いいえ |
 | ロールとアクセス許可をリソースに割り当てる | はい | はい | はい | いいえ  | はい | いいえ | いいえ |
-| リソース間の依存関係を定義する        | いいえ  | 可能 | はい | いいえ  | いいえ  | いいえ | いいえ |
+| リソース間の依存関係を定義する        | いいえ  | はい | はい | いいえ  | いいえ  | いいえ | いいえ |
 | アクセス制御を適用する                         | はい | はい | はい | いいえ  | はい | いいえ | いいえ |
 | 可用性とスケーラビリティを評価する          | いいえ  | いいえ  | いいえ  | はい | いいえ  | いいえ | いいえ |
 | タグをリソースに適用する                      | はい | はい | はい | いいえ  | いいえ  | いいえ | いいえ |
 | Azure Policy の規則を割り当てる                    | はい | はい | はい | いいえ  | いいえ  | いいえ | いいえ |
 | 自動修復を適用する                  | いいえ  | いいえ  | いいえ  | はい | いいえ  | いいえ | いいえ |
 | 請求の管理                               | はい | いいえ  | いいえ  | いいえ  | いいえ  | いいえ | いいえ |
-| ディザスター リカバリーのためにリソースを計画する         | はい | はい | はい | いいえ  | いいえ  | 可能 | はい |
-|障害発生時または SLA 違反時にデータを復旧する     | いいえ | いいえ  | いいえ  | いいえ  | いいえ  | 可能 | はい |
-|障害発生時または SLA 違反時にアプリケーションとデータを復旧する     | いいえ | いいえ  | いいえ  | いいえ  | いいえ  | 可能 | はい |
+| ディザスター リカバリーのためにリソースを計画する         | はい | はい | はい | いいえ  | いいえ  | はい | はい |
+|障害発生時または SLA 違反時にデータを復旧する     | いいえ | いいえ  | いいえ  | いいえ  | いいえ  | はい | はい |
+|障害発生時または SLA 違反時にアプリケーションとデータを復旧する     | いいえ | いいえ  | いいえ  | いいえ  | いいえ  | はい | はい |
 
 リソースの整合性に関するこれらのツールおよび機能と共に、デプロイされたリソースのパフォーマンスと正常性の問題を監視する必要があります。 [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) は Azure の既定の監視およびレポート ソリューションです。 Azure Monitor には、ご利用のクラウド リソースを監視するための機能が用意されています。 次の一覧に、一般的な監視要件に対応する機能を示します。
 
@@ -62,6 +61,6 @@ ms.locfileid: "71222926"
 > [!NOTE]
 > 組織では、ワークロードとリソースの監視にサード パーティ製の DevOps ツールも使用します。 詳細については、「[DevOps ツールの統合](https://azure.microsoft.com/products/devops-tool-integrations)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure で[ポリシー定義](https://docs.microsoft.com/azure/governance/policy)の作成、割り当て、管理を行う方法について説明します。

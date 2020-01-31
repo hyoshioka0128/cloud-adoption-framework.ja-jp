@@ -1,6 +1,5 @@
 ---
 title: 中央 IT の機能
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 中央 IT の機能の構成について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 25e9ecd4d911766864d81a5ff34f00caf82e86bf
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 17f2395a435d8a29202595caec17932b406a1303
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753631"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806936"
 ---
 # <a name="central-it-capabilities"></a>中央 IT の機能
 
@@ -117,7 +116,7 @@ Contoso 社は、ビジネスのクラウド リソースをサポートする�
 
 Contoso の中央 IT チームの成熟したクリエイティブ アプローチにより、ガバナンスやコンプライアンスに悪影響を与えないようにしながら導入を支援するソリューションが提供されました。 中央 IT に対する、クラウド ネイティブ アプローチを所有するのではなくブローカーするこのアプローチは、真のクラウドのセンター オブ エクセレンス (CCoE) を構築するための第一歩です。 このアプローチを導入して既存のポリシーを迅速に進化させることで、必要に応じた集中管理と、柔軟性を高めることができるときのガバナンス ガードレールに対応できます。 この 2 つの考慮事項のバランスを取ることで、クラウド内の中央 IT に関連するリスクが軽減されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウドで中央 IT が成熟したときの次の成熟度のステップは、通常、[クラウドの運用](./cloud-operations.md)の疎結合です。 クラウド ネイティブの運用管理ツールの可用性と、PaaS 優先ソリューションの運用コストの削減により、多くの場合、ビジネス チーム (具体的には、ビジネス内の DevOps チーム) がクラウド運用の責任を負うことになります。
 

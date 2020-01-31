@@ -1,6 +1,5 @@
 ---
 title: Azure サーバー管理サービスの前提条件となる計画
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure サーバー管理サービスの前提条件となるツールおよび計画
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 20a4168f5a7650b20357de2ec2628a0edb093993
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 934263f5c143d021ce97125f025f96d8ae6f338f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751643"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807973"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>フェーズ 1:Azure サーバー管理サービスの前提条件となる計画
 
@@ -100,7 +99,7 @@ Azure portal を使用して Log Analytics ワークスペースを作成する�
 >
 > [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell) を使用して実行アカウントを作成することもできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure サーバー管理サービスに対して[サーバーをオンボードする](./onboarding-overview.md)方法を参照してください。
 

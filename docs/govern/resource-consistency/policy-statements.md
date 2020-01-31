@@ -1,6 +1,5 @@
 ---
 title: リソースの整合性のサンプル ポリシー ステートメント
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リソースの整合性のサンプル ポリシー ステートメント
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5e997dee318d0d6799167de4f4c61a93c814c548
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221971"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807259"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>リソースの整合性のサンプル ポリシー ステートメント
 
@@ -87,9 +86,9 @@ ms.locfileid: "71221971"
 
 **使用可能な設計オプション:** [Azure Site Recovery サービス](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)では事業継続とディザスター リカバリー (BCDR) のシナリオでの停止時間を最小限に抑えるバックアップ、復旧、およびレプリケーションの機能が提供されています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-手始めに、この記事で説明されているサンプルを使用して、クラウドの導入計画に合致する特定のビジネス リスクに対処するポリシーを作成します。
+この記事で説明されているサンプルを開始点として使用し、クラウドの導入計画に合致する特定のビジネス上のリスクに対処するポリシーを作成します。
 
 リソースの整合性に関連する独自のカスタム ポリシー ステートメントの開発を始めるには、[リソースの整合性テンプレート](./template.md)をダウンロードしてください。
 

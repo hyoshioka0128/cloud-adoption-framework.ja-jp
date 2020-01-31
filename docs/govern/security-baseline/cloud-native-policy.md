@@ -1,6 +1,5 @@
 ---
 title: クラウド ネイティブなセキュリティ ベースライン ポリシー
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ネイティブのセキュリティ ベースライン ポリシー
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d11dff3ce8900d3dc95e1061af87313eae47a1b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9921e04f0b066023842c2ff9009d9e159b759315
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752545"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808942"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>クラウド ネイティブなセキュリティ ベースライン ポリシー
 
@@ -93,7 +92,7 @@ ID は、セキュリティの新しい境界制御面となりつつあり、�
 - **データ アクセスのセキュリティ保護と監査。** 組織は、すべてのデータ アクセスを監査し、高度な機械学習機能を使用して、通常のアクセス パターンから逸脱したものに注意する必要があります。
 - **フェールオーバーの訓練。** 障害の許容範囲が低いクラウド操作は、サイバーセキュリティまたはプラットフォームのインシデントからフェールオーバーまたは復旧できる必要があります。 これらの手順を文書化するだけでなく、四半期ごとに訓練するようにします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 これで、クラウド ネイティブなソリューションのためのサンプルのセキュリティ ベースライン ポリシーを確認したので、[ポリシー レビュー ガイド](../policy-compliance/cloud-policy-review.md)に戻り、このサンプルに基づいてクラウド導入のための独自のポリシーの作成を開始してください。
 

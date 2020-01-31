@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:課題と阻害要因
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド イノベーションの概要 - 課題と阻害要因
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 85b02e488476960a50112c1b5ebd7380a873a3f8
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ab4311ca8d5ccaf6cdf7b9bcf91e55d2a7d5929
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751992"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808534"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>イノベーションに関する一般的な阻害要因と課題
 
@@ -57,7 +56,7 @@ ms.locfileid: "73751992"
 
 デジタル経済においてアーキテクトが直面する最大の課題は、発明と採用に対する顧客のニーズを明確に理解し、それらのニーズに対応するためのクラウドベースの最適なツールチェーンを決定することです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 構築-計測-学習モデルと成長思考について学んだ知識に基づいて、[イノベーションの方法論](./index.md)に沿って[デジタル発明を開発する](./invention.md)準備ができました。
 

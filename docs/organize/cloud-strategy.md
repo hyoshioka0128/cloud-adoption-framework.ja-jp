@@ -1,6 +1,5 @@
 ---
 title: クラウド戦略機能
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド戦略機能の構成について説明します
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 022afb976a807d1e178bcc5788885bcabc3f1b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17ef8a6b84e16b2baf7a69918051c7f6a8257396
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031864"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800850"
 ---
 # <a name="cloud-strategy-capabilities"></a>クラウド戦略機能
 
@@ -29,7 +28,7 @@ ms.locfileid: "71031864"
 - Finance
 - 基幹業務
 - 人的資源
-- Operations
+- 操作
 - エンタープライズ アーキテクチャ
 - IT インフラストラクチャ
 - アプリケーション グループ
@@ -67,7 +66,7 @@ ms.locfileid: "71031864"
 - 導入作業全体で、進捗状況を確認して継続的な優先順位を検証する時間として、月に 1 から 2 時間を割り当てます。
 - 必要に応じて、エグゼクティブ チームの代表メンバーから追加時間が求められる可能性があります。 クラウド戦略チームの各メンバーは、進行中の優先順位付けの質問に対応し、緊急のニーズについて報告するために、週に 5 から 10 時間を割り当てられる代表者を任命する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 戦略と計画は重要です。 ただし、[クラウド導入機能](./cloud-adoption.md)がなければ、何も実施できません。 導入作業を開始する前に、この重要な機能の役割について理解してください。
 

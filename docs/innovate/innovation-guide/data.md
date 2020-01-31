@@ -1,6 +1,5 @@
 ---
 title: Azure イノベーション ガイド:データの民主化
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure を使用してデータを民主化する方法について説明します。
 author: absheik
 ms.author: absheik
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5203ae99a7cf3c5e78f72edf020234f3ea703d36
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 481430ca45d2d4a63f4d1777bd2c34409a2e7851
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251866"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808296"
 ---
 ::: zone target="docs"
 
@@ -41,7 +40,7 @@ Azure Data Catalog は、データ コンシューマーによるデータ検出
 
 > [!div class="checklist"]
 >
-> - Register
+> - [登録]
 > - 検索と注釈
 > - 接続と管理
 
@@ -53,7 +52,7 @@ Azure Data Catalog は、データ コンシューマーによるデータ検出
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織のデータ カタログが既に作成されている場合、カタログを追加することはできません。
 
@@ -92,7 +91,7 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 データ共有を作成するには、次の手順に従います。
 
@@ -128,7 +127,7 @@ Azure Time Series Insights のデータ イノベーション機能は無限で�
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Azure Time Series Insights 環境を作成するには:
 

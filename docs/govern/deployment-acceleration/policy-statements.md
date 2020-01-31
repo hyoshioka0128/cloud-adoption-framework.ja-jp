@@ -1,6 +1,5 @@
 ---
 title: デプロイ高速化のサンプル ポリシー ステートメント
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: デプロイ高速化のサンプル ポリシー ステートメント
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c582b0a6e836f5198724e5675840f3f8085f55dc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752671"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803944"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>デプロイ高速化のサンプル ポリシー ステートメント
 
@@ -53,7 +52,7 @@ ms.locfileid: "73752671"
 
 **使用可能な設計オプション:** ガバナンスのチーム メンバーと、クラウド アプリケーションとリソースの構成を担当する IT スタッフの両方が参加する、毎月のセキュリティ レビュー会議を設定します。 既存のセキュリティ データとメトリックのレビューを行って、現在のデプロイ高速化のポリシーとツールのギャップを明らかにし、新しいリスクを修復するようにポリシーを更新します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 この記事で説明されているサンプルを開始点として使用し、クラウドの導入計画に合致する特定のビジネス上のリスクに対処するポリシーを作成します。
 

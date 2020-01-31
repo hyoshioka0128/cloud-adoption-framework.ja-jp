@@ -1,6 +1,5 @@
 ---
 title: ソフトウェア定義ネットワーク意思決定ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 移行におけるコア サービスとしてのソフトウェア定義ネットワークについて説明します。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7eb03b01dfab3627117b4d07727f09669e6b0924
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564787"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806596"
 ---
 # <a name="software-defined-networking-decision-guide"></a>ソフトウェア定義ネットワーク意思決定ガイド
 
@@ -24,7 +23,7 @@ ms.locfileid: "73564787"
 
 ![ネットワーク オプションを最も簡単なものから最も複雑なものまでプロットし、その下に整合するジャンプ リンクを示す](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-ジャンプ先:[PaaS のみ](./paas-only.md) | [クラウドネイティブ](./cloud-native.md) | [クラウド DMZ](./cloud-dmz.md) [ハイブリッド](./hybrid.md) | [ハブ アンド スポーク モデル](./hub-spoke.md) | [詳細](#learn-more)
+ジャンプ先:[PaaS のみ](./paas-only.md) | [クラウドネイティブ](./cloud-native.md) | [クラウド DMZ](./cloud-dmz.md)[ハイブリッド](./hybrid.md) | [ハブ アンド スポーク モデル](./hub-spoke.md) | [詳細](#learn-more)
 
 SDN では、さまざまな度合いの価格と複雑さを持ついくつかのオプションが提供されます。 上の検出ガイドは、これらのオプションを、特定のビジネスおよびテクノロジ戦略に最も整合するようにすばやく個人用に設定するためのリファレンスを提供します。
 
@@ -43,9 +42,9 @@ VM の数が 1,000 未満の小さな単一リージョン デプロイでは、
 | 質問 | PaaS のみ | クラウドネイティブ | クラウド DMZ | ハイブリッド | ハブ アンド スポーク |
 |-----|-----|-----|-----|-----|-----|
 | ワークロードでは PaaS サービスのみを使用し、それらのサービス自体によって提供されるものを超えるネットワーク機能は必要ありませんか? | はい | いいえ | いいえ | いいえ | いいえ |
-| ワークロードにはオンプレミスのアプリケーションとの統合が必要ですか? | いいえ | いいえ | 可能 | はい | はい |
-| 成熟したセキュリティ ポリシーや、オンプレミスのネットワークとクラウド ネットワークの間のセキュリティで保護された接続を確立していますか? | いいえ | いいえ | いいえ | 可能 | はい |
-| ワークロードにはクラウド ID サービスでサポートされていない認証サービスが必要ですか、またはオンプレミスのドメイン コントローラーへの直接アクセスが必要ですか? | いいえ | いいえ | いいえ | 可能 | はい |
+| ワークロードにはオンプレミスのアプリケーションとの統合が必要ですか? | いいえ | いいえ | はい | はい | はい |
+| 成熟したセキュリティ ポリシーや、オンプレミスのネットワークとクラウド ネットワークの間のセキュリティで保護された接続を確立していますか? | いいえ | いいえ | いいえ | はい | はい |
+| ワークロードにはクラウド ID サービスでサポートされていない認証サービスが必要ですか、またはオンプレミスのドメイン コントローラーへの直接アクセスが必要ですか? | いいえ | いいえ | いいえ | はい | はい |
 | 多数の VM やワークロードをデプロイして管理する必要がありますか? | いいえ | いいえ | いいえ | いいえ | はい |
 | リソースに対する制御を個々のワークロード チームに委任している間、一元管理およびオンプレミスの接続を提供する必要がありますか? | いいえ | いいえ | いいえ | いいえ | はい |
 
@@ -66,7 +65,7 @@ Azure でのソフトウェア定義ネットワークの詳細については�
 - [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)。 Azure では、コアの SDN 機能は、物理的なオンプレミスのネットワークに類似したクラウドとして機能する Azure Virtual Network によって提供されます。 仮想ネットワークはまた、プラットフォーム上のリソース間の既定の分離境界としても機能します。
 - [Azure のネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices)。 セキュリティの脆弱性を最小限に抑えるように仮想ネットワークを構成する方法に関する Azure セキュリティ チームからの推奨事項。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ソフトウェア定義ネットワークは、クラウド導入プロセス中のアーキテクチャの決定で必要なコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
 

@@ -1,6 +1,5 @@
 ---
 title: 基本的なワークロードのデプロイ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 基本的なワークロードを Azure にデプロイする方法について説明します
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4f00fbb1c494d3eecd32597cf94fe17192ad66ed
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: b4d5821e7ed29efeea5dd7e6a59b7e4afd86f0e0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160443"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808738"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>基本的なワークロードを Azure にデプロイする
 
@@ -51,6 +50,6 @@ ms.locfileid: "74160443"
 
 手順に従って VM をデプロイしたら、[Azure での Windows VM の実行に関するベスト プラクティス](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm)について学習できます。 Linux VM の場合は、[ポータルを使用して Linux VM を Azure にデプロイする](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal)手順に従います。 [Azure での Linux VM の実行に関するベスト プラクティス](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm)の詳細を参照することもできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure クラウドのコア インフラストラクチャ コンポーネントの使用方法の詳細については、[アーキテクチャの意思決定ガイド](../../decision-guides/index.md)に関するページを参照してください。

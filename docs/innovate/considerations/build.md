@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:顧客の共感を構築する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 顧客の共感を構築する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 406d53bfb322c424737a9b8cec7c028a9833143d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565731"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808551"
 ---
 # <a name="build-with-customer-empathy"></a>顧客の共感を構築する
 
@@ -102,11 +101,11 @@ MVP の開発には、多額の開発投資は必要ありません。 一度に
 
 代替のアプローチを必要とする可能性のある多くの法律、コンプライアンス、および業界の要件があります。 開発中のソリューションの公開リリースが、特許のタイミング、知的財産保護、顧客データの漏洩、または確立されたコンプライアンス要件違反に対するリスクとなる場合、そのアプローチは適切ではない可能性があります。 このようなリスクが認識されている場合は、リリース管理のガイド付きアプローチを導入する前に、弁護士に相談してください。
 
-## <a name="references"></a>参照
+## <a name="references"></a>References
 
 この記事の概念の一部は、「[*The Lean Startup (リーン スタートアップ)* ](http://theleanstartup.com/book)」(Eric Ries、Crown Business、2011 年) で説明されているトピックに基づいています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 MVP ソリューションを構築した後は、共感の値と規模の値を測定できます。 [顧客への影響を測定する](./measure.md)方法を学びます。
 

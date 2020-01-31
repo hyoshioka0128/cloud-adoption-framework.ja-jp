@@ -1,6 +1,5 @@
 ---
 title: 設計の原則と高度な運用の適用
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 設計の原則と高度な運用の適用
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16762a0eae366c3bf1cd578faaf52df60e6c97b1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752768"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807684"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>設計の原則と高度な運用の適用
 
@@ -100,7 +99,7 @@ Azure Architecture Framework は、システム設計の 5 つの柱全体の改
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>サービス カタログを使用したソリューションのスケーリング
 
-プラットフォームの特化とプラットフォームの運用の基礎となるのは、管理の行き届いたサービス カタログです。 これは、システムの設計の改善と修復が環境全体でどのようにスケーリングされるかを示しています。 クラウド プラットフォーム チームおよびクラウド自動化チームは、どの環境でも最も一般的なプラットフォームに繰り返し可能なソリューションを作成するために配置されます。 ただし、これらのソリューションが一貫した方法で適用されていない場合、クラウド管理でベースライン オファリング以上のものは提供されない可能性があります。
+プラットフォームの特殊化とプラットフォームの運用の基礎は、管理の行き届いたサービス カタログです。 これは、システムの設計の改善と修復が環境全体でどのようにスケーリングされるかを示しています。 クラウド プラットフォーム チームおよびクラウド自動化チームは、どの環境でも最も一般的なプラットフォームに繰り返し可能なソリューションを作成するために配置されます。 ただし、これらのソリューションが一貫した方法で適用されていない場合、クラウド管理でベースライン オファリング以上のものは提供されない可能性があります。
 
 最適化されたプラットフォームを最大限に導入し、メンテナンスのオーバーヘッドを最小限に抑えるには、そのプラットフォームをサービス カタログに追加する必要があります。 カタログ内の各アプリケーションは、サービス カタログを介した内部使用のため、または外部の消費者向けのマーケットプレース オファリングとしてデプロイすることができます。
 

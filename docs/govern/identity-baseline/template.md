@@ -1,6 +1,5 @@
 ---
 title: ID ベースライン テンプレート
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ID ベースライン テンプレート
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fafd0d467940f2086731ff9e9575c7e6d12aaf0b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1f8e752f1952890880eb30f9f1911d83fca6a40
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220421"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807208"
 ---
 # <a name="identity-baseline-template"></a>ID ベースライン テンプレート
 
@@ -31,7 +30,7 @@ ms.locfileid: "71220421"
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ガバナンス プラクティスを堅実なものにするは、[ビジネス リスクの理解](./business-risks.md)から始めます。 ビジネス リスクに関する記事をレビューし、現在のクラウド導入計画に整合するビジネス リスクの文書化を開始してください。
 

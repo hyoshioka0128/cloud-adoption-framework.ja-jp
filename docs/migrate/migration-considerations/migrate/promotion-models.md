@@ -1,6 +1,5 @@
 ---
 title: '昇格モデル: シングル ステップ、段階的、またはフライト'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 昇進が移行アクティビティに及ぼす影響を理解する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 690c871ab18bef96a5a1738de90a216ca5b8df90
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9206b90cc9d5ec3a7e8e084b216be713fb24f265
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564614"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802227"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>昇格モデル: シングル ステップ、段階的、またはフライト
 
@@ -79,7 +78,7 @@ ms.locfileid: "73564614"
 - 選択した移行ツールは、進行中のレプリケーションを移行後に促進することはできません。
 - 段階的な時間枠の間にデータ プラットフォームを同期するためには、二次的なデータ レプリケーション手段が必要です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 昇格モデルが定義され、クラウド導入チームによって承認された後、[資産の修復](./remediate.md)を開始できます。
 

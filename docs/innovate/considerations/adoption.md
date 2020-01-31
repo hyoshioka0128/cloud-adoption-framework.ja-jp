@@ -1,6 +1,5 @@
 ---
 title: Build-Measure-Learn (構築-計測-学習) フィードバック ループによるカスタマー パートナーシップの構築
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Build-Measure-Learn (構築-計測-学習) フィードバック ループによるカスタマー パートナーシップの構築について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 75590b73aff96e3d90ca5103e0ec15e6ad0f0a1e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6dc67f308ea257500e71661585b172f7d3deb61a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047739"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808602"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Build-Measure-Learn (構築-計測-学習) フィードバック ループを使用したカスタマー パートナーシップの構築
 
@@ -37,7 +36,7 @@ ms.locfileid: "73047739"
 
 プロセスの各フェーズは、より良いソリューションを顧客と共に構築するためのものです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Build-Measure-Learn (構築-計測-学習) サイクルを開始するために[顧客の共感を構築](./build.md)する方法について説明します。
 

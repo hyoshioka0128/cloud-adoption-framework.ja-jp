@@ -1,6 +1,5 @@
 ---
 title: ネットワーク容量の超過
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行作業中にデータ要件がネットワーク容量を超えます。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753502"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803094"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>移行作業中にデータ要件がネットワーク容量を超えている
 
@@ -56,7 +55,7 @@ Azure への接続が利用できる場合、特にワークロードの移行�
 
 オフラインの転送メカニズムを使用する場合、[レプリケーション プロセス](../migration-considerations/migrate/replicate.md)はおそらく必要ではありません。 ただし、[同期プロセス](../migration-considerations/migrate/replicate.md)はまだ要件になっていることがあります。 評価プロセス中に完了したずれの分析結果を理解すると、資産がオフラインで転送されている場合、移行中に必要となるタスクがわかります。
 
-### <a name="suggested-action-during-the-migrate-process"></a>移行プロセス中に推奨されるアクション
+### <a name="suggested-action-during-the-migrate-process"></a>移行プロセスで推奨されるアクション
 
 **ストレージのコピー:** このアプローチは、データ HDFS、バックアップ、アーカイブ、ファイル サーバー、アプリケーションなどの転送に使用されることがあります。 既存の技術的なガイダンスでは、このアプローチを使用して、[HDFS ストア](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)から、または [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)、[データ コピー サービス](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)を使用したディスクから Data Box にデータを転送する方法について説明します。
 
@@ -72,13 +71,13 @@ Azure への接続が利用できる場合、特にワークロードの移行�
 
 最適化アクティビティはおそらく、スコープ内のこの変更の影響を受けません。
 
-## <a name="secure-and-manage-process-changes"></a>セキュリティ保護および管理プロセスの変更
+## <a name="secure-and-manage-process-changes"></a>セキュリティ保護プロセスと管理プロセスの変更
 
 セキュリティ保護および管理アクティビティはおそらく、スコープ内のこの変更の影響を受けません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [拡張スコープ チェックリスト](./index.md)に戻り、移行方法が完全に調整されていることを確認します。
 
 > [!div class="nextstepaction"]
-> [拡張スコープ チェックリスト](./index.md)
+> [範囲拡大チェックリスト](./index.md)

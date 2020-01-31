@@ -1,6 +1,5 @@
 ---
 title: CISO のクラウド準備状況に関するガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: CISO がクラウドに向けた準備ができる方法
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 5675d611979c992f41f03d362f0110aaeb3b9b24
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ea86e0b35dd61cb65a5396a6c9f2e604abe6d9a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547382"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804998"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>CISO のクラウド準備状況に関するガイド
 
@@ -70,7 +69,7 @@ ms.locfileid: "72547382"
 - [Microsoft が Azure サービスで顧客データの安全性を確保する方法](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
 - [Azure サービスの証明書確認、Transparency Hub](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 どのガバナンス戦略においても、行動を起こす最初の手順は[ポリシー レビュー](./cloud-policy-review.md)です。 [ポリシーとコンプライアンス](./index.md)は、ポリシー レビュー時に役立つガイドになる可能性があります。
 

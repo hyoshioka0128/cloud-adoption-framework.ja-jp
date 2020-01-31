@@ -1,6 +1,5 @@
 ---
 title: コスト管理規範の改善
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: コスト管理規範の改善
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1b59121bc0679475079dc1a7b5d3770cc87d7523
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ebd297f4fbebd451f47bbb6b88be56e1ccc489be
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753090"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806477"
 ---
 # <a name="cost-management-discipline-improvement"></a>コスト管理規範の改善
 
@@ -38,8 +37,8 @@ ms.locfileid: "73753090"
 **最小限の推奨されるアクティビティ:**
 
 - [コスト管理ツールチェーン](./toolchain.md)の選択肢を評価します。
-- 下書きのアーキテクチャ ガイドライン ドキュメントを作成し、主な関係者に配布します。
-- アーキテクチャ ガイドラインの開発によって影響を受ける人物とチームを教育し、関与させます。
+- アーキテクチャ ガイドライン ドキュメントのドラフトを作成し、主な利害関係者に配布します。
+- アーキテクチャ ガイドラインの作成によって影響を受ける人物とチームを教育し、関与させます。
 
 **潜在的なアクティビティ:**
 
@@ -51,7 +50,7 @@ ms.locfileid: "73753090"
 - 計画された予算にビジネスの目標を合わせ、必要に応じて予算計画を調整します。
 - 各コスト サイクルの最後に、技術およびビジネスの関係者に通知するための目標と予算の報告メカニズムを作成します。
 
-## <a name="build-and-predeployment"></a>ビルドおよびデプロイ前
+## <a name="build-and-predeployment"></a>構築とデプロイ前準備
 
 環境を適切に移行するには、技術的な前提条件と技術面以外のさまざまな前提条件が必要です。 このプロセスでは、移行を進める意思決定、準備状況、およびコア インフラストラクチャに重点を置いています。
 
@@ -93,7 +92,7 @@ ms.locfileid: "73753090"
 
 - 組織のコスト管理のニーズの変化に基づいて[コスト管理ツールチェーン](./toolchain.md)をカスタマイズします。
 - 通知やレポート (ある場合) を自動化して実際の支出を反映することを検討します。
-- 将来の導入プロセスの案内となるように、アーキテクチャ ガイドラインを改良します。
+- 将来の導入プロセスの案内となるように、「アーキテクチャ ガイドライン」を改訂します。
 - アーキテクチャ ガイドラインに常に準拠するように、影響を受けるチームの教育を定期的に行います。
 
 **潜在的なアクティビティ:**
@@ -106,7 +105,7 @@ ms.locfileid: "73753090"
 - 支出の計画と実績の間にある不整合や異常を検出します。
 - クラウド導入チームとクラウド戦略チームがこのような異常を把握して解決できるように支援します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ここでは、クラウド ID ガバナンスの概念を理解しました。次は、[コスト管理ツールチェーン](./toolchain.md)を検証し、Azure プラットフォーム上でコスト管理ガバナンス規範を開発するときに必要になる Azure のツールと機能を特定します。
 

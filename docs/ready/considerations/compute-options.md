@@ -1,6 +1,5 @@
 ---
 title: コンピューティング オプションを確認する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure ワークロードのコンピューティング オプションを確認します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561871"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799185"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 
@@ -71,7 +70,7 @@ Azure のグローバル インフラストラクチャの詳細については�
 
 ## <a name="data-residency-and-compliance-requirements"></a>データの保存場所とコンプライアンスの要件
 
-多くの場合、データ ストレージに関連する法律上および契約上の要件がワークロードに適用されます。 これらの要件は、組織の場所、ファイルやデータが格納および処理される管轄区域、および該当する事業部門によって異なる場合があります。 データに関する義務に関して考慮すべき要素には、データ分類、データの場所、および共有責任モデルに基づくデータ保護に関するそれぞれの責任が含まれます。 多くのコンピューティング ソリューションは、リンクされたストレージ リソースに依存しています。 この要件は、コンピューティングの決定に影響を与えることもあります。 これらの要件の理解に役立つ情報として、ホワイト ペーパーの「 [Azure を使用して基準に準拠しているデータの保存場所とセキュリティを実現する](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)」を参照してください。
+多くの場合、データ ストレージに関連する法律上および契約上の要件がワークロードに適用されます。 これらの要件は、組織の場所、ファイルやデータが格納および処理される管轄区域、および該当する事業部門によって異なる場合があります。 考慮すべきデータに関する義務の要素には、データ分類、データの場所、および共同責任モデルに基づくデータ保護に関するそれぞれの責任が含まれます。 多くのコンピューティング ソリューションは、リンクされたストレージ リソースに依存しています。 この要件は、コンピューティングの決定に影響を与えることもあります。 これらの要件の理解に役立つ情報として、ホワイト ペーパーの「 [Azure を使用して基準に準拠しているデータの保存場所とセキュリティを実現する](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)」を参照してください。
 
 コンプライアンスの取り組みの一環として、コンピューティング リソースが物理的に配置されている場所の制御が必要になる場合があります。 Azure リージョンは地域と呼ばれるグループに編成されています。  [Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies) では、データの保存場所、主権、コンプライアンス、回復性に関する要件が地域的および政治的な境界内で確実に遵守されます。 ワークロードがデータ主権やその他のコンプライアンス要件の影響を受ける場合は、要件に準拠している Azure 地域のリージョンにストレージ リソースをデプロイする必要があります。
 

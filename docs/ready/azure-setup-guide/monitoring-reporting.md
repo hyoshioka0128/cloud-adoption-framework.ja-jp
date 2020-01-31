@@ -1,6 +1,5 @@
 ---
 title: Azure 内での監視とレポート
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure の管理環境で監視、レポート、およびアラートを設定する方法について説明します。
 author: timleyden
 ms.author: tileyden
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 0b37500652606e3a1018b3b93c03aae546827eff
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251362"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799405"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 内での監視とレポート
 
@@ -52,7 +51,7 @@ Azure Monitor を調査するには、[Azure Portal](https://portal.azure.com/#b
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Action
+## <a name="action"></a>アクション
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview]" submitText="Explore Azure Monitor" :::
 
@@ -74,7 +73,7 @@ Azure Service Health には以下が含まれます。
 
 <!-- markdownlint-disable MD024 -->
 
-## <a name="action"></a>Action
+## <a name="action"></a>アクション
 
 サービス正常性アラートを設定するには:
 
@@ -110,7 +109,7 @@ Advisor での推奨事項は、デプロイするリソースと Azure 内で�
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Action
+## <a name="action"></a>アクション
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Expert/AdvisorBlade]" submitText="Explore Azure Advisor" :::
 
@@ -136,7 +135,7 @@ Azure Security Center は Free と Standard という 2 つのレベルで提供
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Action
+## <a name="action"></a>アクション
 
 **最初の 30 日間は無料でご利用いただける Standard レベルをお試しください。**
 

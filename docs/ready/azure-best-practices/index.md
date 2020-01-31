@@ -1,6 +1,5 @@
 ---
 title: Azure 対応性ベスト プラクティス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 対応性のベスト プラクティスの概要
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d55635078be0c32496a0237df1b2a67aecc5e574
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4410c9628cbdf070d2862ba09812e4b968911419
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240161"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799881"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 対応性のベスト プラクティス
 
@@ -47,7 +46,7 @@ Azure 環境で資産を整理し、デプロイするとき、次のガイダ�
 - [ロールベースのアクセス制御のベスト プラクティス](../considerations/roles.md)。 Azure ロールベースのアクセス制御 (RBAC) では、ユーザー ロールごとに整理されているリソースのグループベース アクセスを詳細に管理できます。
 - [Azure Active Directory でのハイブリッドおよびクラウド デプロイ用の特権アクセスをセキュリティで保護する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Active Directory を使用すると、クラウドとオンプレミスの環境全体で組織の管理者アクセスと管理者アカウントを確実にセキュリティで保護するのに役立ちます。
 
-## <a name="storage"></a>Storage
+## <a name="storage"></a>ストレージ
 
 - [Azure Storage ガイダンス](../considerations/storage-options.md)。 使用シナリオをサポートする最適な Azure Storage ソリューションを選択します。
 - [Azure Storage のセキュリティ ガイド](https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Storage でのセキュリティ機能について説明します。

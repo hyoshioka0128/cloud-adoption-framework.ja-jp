@@ -1,6 +1,5 @@
 ---
 title: クラウド プラットフォームの機能
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド プラットフォームの機能の構成について説明します
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: faeea7a0e42c45894d82b31becca06562fef94b9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be5e914bd154ec2db0578714d08383c3c8770a5a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032541"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800969"
 ---
 # <a name="cloud-platform-capabilities"></a>クラウド プラットフォームの機能
 
@@ -70,7 +69,7 @@ ms.locfileid: "71032541"
 
 通常、クラウド プラットフォームの専門知識は作業チームから提供されます。 参加者は、日々のスケジュールの大部分をクラウド プラットフォームの作業に充てることになります。 協力の範囲はミーティングやフィードバック サイクルに限定されません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド プラットフォームがより適切に定義されるようになると、[クラウド自動化機能](./cloud-automation.md)を調整することで導入を加速させることができます。 これは、ビジネス リスクや技術的なリスクを軽減しつつベスト プラクティスを確立することにも役立ちます。
 

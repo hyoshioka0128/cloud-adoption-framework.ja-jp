@@ -1,6 +1,5 @@
 ---
 title: 移行の前提条件
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行の前提条件
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ce4cf827f391c5fb15f6b9e78997dd0f02e1751b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 2f8fe1be35e1f629da3f57e1344b573e97ff571b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683777"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801462"
 ---
 # <a name="prerequisites-for-migration"></a>移行の前提条件
 
@@ -54,7 +53,7 @@ ms.locfileid: "72683777"
 
 ## <a name="responsibilities-during-prerequisites"></a>前提条件段階での責任
 
-高レベルの説明責任に加え、個人またはグループが直接責任を負う必要があるアクションがあります。 これらのアクティビティに影響を与える責任の一部を次に示します。
+概要レベルの説明責任に加え、個人またはグループが直接責任を負う必要があるアクションがあります。 これらのアクティビティに影響を与える責任の一部を次に示します。
 
 - **業務の優先順位付け。** 移行するワークロードと全般的なタイミングの制約に関して業務上の判断を行います。 詳細については、[クラウド移行の業務上の動機](../../../strategy/motivations.md)に関する記事を参照してください。
 - **変更管理の対応性。** 移行段階の技術的な変更を追跡するための計画を立て、伝達します。
@@ -64,7 +63,7 @@ ms.locfileid: "72683777"
 
 個々の実行方法については、このシリーズの残りの記事を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 前提条件を全般的に理解できたら、最初の前提条件である[早期移行の決定事項](./decisions.md)に対応することができます。
 

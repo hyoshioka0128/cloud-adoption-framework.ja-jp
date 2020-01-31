@@ -1,6 +1,5 @@
 ---
 title: ビジネスの整合クラウドの管理と運用
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ビジネス アラインメント - クラウドの管理と運用
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: deeb663a344bb3eb4e8ecc9af307da5ec1348b7a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 114589d11b5e915400832d3d61a3ba91ca9d89fc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565218"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807871"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>クラウド管理でのビジネス アラインメントの構築
 
@@ -38,7 +37,7 @@ ms.locfileid: "73565218"
 
 または、ソリューションが既にクラウドにデプロイされている場合は、Azure でこれらの同じワークロードと関連する資産を直接タグ付けできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ワークロードの重要度](./criticality.md)を定義して、ビジネス アラインメントの構築を開始します。
 

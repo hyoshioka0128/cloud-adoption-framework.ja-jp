@@ -1,6 +1,5 @@
 ---
 title: Azure サーバー管理サービスの概要
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure サーバー管理サービス入門
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8d512141fa20e408e9955b14c560f1037adcd08f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: d83b84ca63043646591c4e2f5b3e5f82fc53c102
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752905"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808058"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Azure サーバー管理サービスの概要
 
@@ -38,7 +37,7 @@ Azure サーバー管理サービスには次の利点があります。
 - **ハイブリッド:** サーバー管理サービスは、Azure IaaS 仮想マシンの他に、オンプレミスまたはその他のホスティング環境でホストされている物理サーバーと仮想サーバーに対応しています。
 - **セキュリティ:** Microsoft では、あらゆる形式のセキュリティに相当のリソースを充てています。 この投資は Azure インフラストラクチャを保護するだけでなく、結果として得られるテクノロジや専門知識を拡大し、場所に関係なく、お客様のリソースを保護します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure サーバー管理スイートの導入に関わる[ツール、サービス、計画作成](./prerequisites.md)を理解してください。
 

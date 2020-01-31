@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:予測と影響
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド イノベーションの概要 ‐ 予測と影響
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bcb01ada3589b733fe97de2689352ab414ef469b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752986"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808398"
 ---
 # <a name="predict-and-influence"></a>予測と影響
 
@@ -76,7 +75,7 @@ API を介して予測が利用可能になると、それを使用して顧客�
 
 [調整された現実のソリューション](./devices.md#adjusted-reality)を通じてアンビエント エクスペリエンスを作成する方法の詳細を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [発明の規範](./invention.md)と[イノベーションの方法論](./index.md)に習熟したので、[顧客の共感を構築する](./build.md)方法を学ぶ準備ができました。
 

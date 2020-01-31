@@ -1,6 +1,5 @@
 ---
 title: 移行されたワークロードの最適化
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行されたワークロードの最適化
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7bed1c8383b9c444c9e272c27f71f73fd3325e24
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 87235584bc9da0f1a9e5124408b587eec864af48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818201"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801887"
 ---
 # <a name="optimize-migrated-workloads"></a>移行されたワークロードの最適化
 
@@ -45,7 +44,7 @@ ms.locfileid: "70818201"
 - **使用停止。** 通常、移行によるコストの削減は、前の運用資産が使用停止され、正常に処分されたときに実現します。
 - **振り返り。** すべてのリリースで、成長思考について深く学び、それを身に付ける機会が生まれます。 各リリース サイクルが完了したら、クラウド導入チームは、移行中に使用されたプロセスを評価して改善点を識別する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 最適化プロセスをおおまかに理解したうえで、[候補となるワークロードのビジネス変更プランを確立する](./business-change-plan.md)ことで、このプロセスを開始できます。
 

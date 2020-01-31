@@ -1,6 +1,5 @@
 ---
 title: 移行時のビジネス テスト (UAT) のガイダンス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ワークロードをクラウドに移行するタスクに重点を置いたクラウド移行内のプロセス。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0f1ba39ae283b1ab2fdb276310a9490af6bf87b7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4c24ae176d3b8fc8ec4fa504ed406bc32a1c0ab3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836633"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801955"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>移行時のビジネス テスト (UAT) のガイダンス
 
@@ -50,7 +49,7 @@ IT はビジネス テスト結果の受信者の 1 人としての役割を果�
 - パワー ユーザーによるテストを効率化できる既存の自動テストを特定します。
 - 繰り返しのデプロイやテストが必要になる可能性のある変更については、テスト プロセスを研究し、ベンチマークを定義し、自動化を作成して、パワー ユーザーによるテストをさらに効率化します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ビジネス テストと組み合わせて[移行された資産の最適化](./optimize.md)によって、コストとワークロードのパフォーマンスを改善できます。
 

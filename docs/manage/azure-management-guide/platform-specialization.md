@@ -1,6 +1,5 @@
 ---
 title: Azure のクラウド管理のためのプラットフォームの特殊化
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: プラットフォーム固有のクラウド管理操作を改善します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8c3954627ee991f43c2b8d3a94dbd77746d3d4b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752941"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808177"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>クラウド管理のためのプラットフォームの特殊化
 

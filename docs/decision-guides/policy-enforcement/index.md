@@ -1,6 +1,5 @@
 ---
 title: ポリシー適用の意思決定ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure への移行におけるコア設計の優先度としての、ポリシー適用のサブスクリプションについて説明します。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 8bc458fa480112c1b1a5748d042c9e439933f47f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753158"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806732"
 ---
 # <a name="policy-enforcement-decision-guide"></a>ポリシー適用の意思決定ガイド
 
@@ -65,7 +64,7 @@ Azure では、管理グループ、サブスクリプション、またはリ�
 
 クラウドとオンプレミスのリソースを統合する IT 環境については、ログ作成とレポート作成のシステムを使用して、ハイブリッドの監視機能を提供することが必要な場合があります。 サード パーティ製またはカスタムの運用監視システムで、追加のポリシー適用機能を提供できる場合があります。 より大規模な、またはより成熟したクラウド資産の場合は、これらのシステムをどのようにクラウド資産と統合するのが最適であるかを検討してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ポリシーの適用は、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
 

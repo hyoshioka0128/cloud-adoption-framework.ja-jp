@@ -1,6 +1,5 @@
 ---
 title: 'クラウド監視ガイド: アラート'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します
 author: MGoedtel
 ms.author: magoedte
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d3c3021c75c39b5ae712f9945afd937d4472ecb8
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 9c13333e6d0e834a4c66d4a1bd6a72ccc9a1bdbb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160284"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807650"
 ---
-# <a name="cloud-monitoring-guide-alerting"></a>クラウド監視ガイド:アラート
+# <a name="cloud-monitoring-guide-alerting"></a>クラウド監視ガイド: アラート
 
 何年もの間、IT 組織は、企業に展開された監視ツールから生成されるアラート疲れとの戦いに苦労してきました。 多くのシステムからはアラートが大量に生成され、意味がないと考えられるものも多いのですが、関連性があるにもかかわらず見過ごされたり、無視されたりするアラートもあります。 その結果、IT と開発者の業務においては苦労して、社内や社外の顧客に約束したサービスレベル品質を満たしてきました。 信頼性を確保するためには、インフラストラクチャとアプリケーションの状態を理解することが不可欠です。 サービスの低下や中断を最小限に抑える、インシデントの影響を軽減する、またはインシデント数を減らすには、原因をすばやく特定する必要があります。
 
