@@ -1,6 +1,5 @@
 ---
 title: Terraform を使用してランディング ゾーンを構築する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Terraform を使用してランディング ゾーンを構築する方法を説明します。
 author: arnaudlh
 ms.author: arnaul
@@ -8,12 +7,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 54fa496c7b97231a8ad8cc7150717bb942bf07a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753757"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798980"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Terraform を使用してランディング ゾーンを構築する
 
@@ -27,7 +26,7 @@ Terraform のクラウド導入フレームワークのファンデーション 
 
 コンポーネントの再利用は、コードとしてのインフラストラクチャの基本原則です。 モジュールは、環境内および環境間でのリソースのデプロイにおける標準と一貫性の定義に役立ちます。 この最初のランディング ゾーンをデプロイするために使用されるモジュールは、公式の [Terraform レジストリ](https://registry.terraform.io/search?q=aztfmod)で入手できます。
 
-## <a name="architecture-diagram"></a>アーキテクチャ ダイアグラム
+## <a name="architecture-diagram"></a>アーキテクチャの図
 
 最初のランディング ゾーンでは、サブスクリプションに次のコンポーネントがデプロイされます。
 
@@ -74,7 +73,7 @@ Terraform ランディング ゾーンでは、次の決定事項が示されま
 | 管理グループ | 該当なし - 単一の運用サブスクリプション用に設計されています。 |[サブスクリプションのスケーリング](../azure-best-practices/scaling-subscriptions.md) |
 | リソース グループ | 該当なし - 単一の運用サブスクリプション用に設計されています。 | [サブスクリプションのスケーリング](../azure-best-practices/scaling-subscriptions.md) |
 | Data | 該当なし | 「[Azure SQL で適切なデプロイ オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)」と [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Storage|該当なし|[Azure Storage ガイダンス](../considerations/storage-options.md) |
+|ストレージ|該当なし|[Azure Storage ガイダンス](../considerations/storage-options.md) |
 | 命名規則 | 環境が作成されるとき、一意のプレフィックスも作成されます。 グローバルな一意名 (ストレージ アカウントなど) を必要とするリソースでは、このプレフィックスが使用されます。 カスタム名には、ランダムなサフィックスが付けられます。 次の表で説明するように、タグの使用法は必須です。 | [名前付けとタグ付けのベスト プラクティス](../azure-best-practices/naming-and-tagging.md) |
 | コスト管理 | 該当なし | [コストの追跡](../azure-best-practices/track-costs.md) |
 | Compute | 該当なし | [コンピューティング オプション](../considerations/compute-options.md) |
@@ -83,13 +82,13 @@ Terraform ランディング ゾーンでは、次の決定事項が示されま
 
 すべてのリソースとリソース グループに、次の最小タグ セットが存在している必要があります。
 
-| タグ名 | 説明 | Key | 値の例 |
+| タグ名 | [説明] | Key | 値の例 |
 |--|--|--|--|
 | 事業単位 | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 | BusinessUnit | FINANCE、MARKETING、{Product Name}、CORP、SHARED |
 | コスト センター | このリソースに関連付けられたアカウンティング コスト センター。| CostCenter | Number |
 | ディザスター リカバリー | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。 | DR | DR-ENABLED、NON-DR-ENABLED |
 | 環境 | アプリケーション、ワークロード、またはサービスのデプロイ環境。 |  Env | Prod、Dev、QA、Stage、Test、Training |
-| 所有者名 | このアプリケーション、ワークロード、またはサービスの所有者。| Owner | email |
+| 所有者名 | このアプリケーション、ワークロード、またはサービスの所有者。| 所有者 | email |
 | デプロイの種類 | リソースの管理方法を定義します。 | deploymentType | Manual、Terraform |
 | Version | デプロイされるブループリントのバージョン。 | version | v0.1 |
 | アプリケーション名 | リソースに関連付けられているアプリケーション、サービス、またはワークロードの名前。 | ApplicationName | "アプリ名" |
@@ -189,11 +188,11 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>作業開始
+## <a name="get-started"></a>はじめに
 
 構成を確認した後、Terraform 環境をデプロイする場合と同様に、構成をデプロイできます。 rover を使用することをお勧めします。これは、Windows、Linux、または MacOS からデプロイできる Docker コンテナーです。 [rover GitHub リポジトリ](https://github.com/aztfmod/rover)で開始できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ファンデーション ランディング ゾーンは、複雑な環境の基礎が分解して構築されます。 このエディションでは、次の方法で拡張できるシンプルな機能のセットが提供されています。
 

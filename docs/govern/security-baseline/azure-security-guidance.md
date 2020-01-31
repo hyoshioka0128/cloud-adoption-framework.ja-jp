@@ -1,6 +1,5 @@
 ---
 title: Azure のセキュリティに関するガイダンス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Microsoft はどのようなセキュリティ ガイダンスを提供していますか?
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058829"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804913"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,7 +46,7 @@ Microsoft は、次のために役立つ [Service Trust Platform](https://servic
   - **データ主体要求:** GDPR は、個人 (またはデータ主体) に自分の個人データの処理に関する特定の権利を付与します。 これには、不正確なデータの修正、データの消去、または処理の制限を行うほか、データを受信し、そのデータを別のコントローラーに転送する要求を実現する権利が含まれます。
   - **データ侵害:** GDPR では、個人データの侵害が発生した場合のデータ コントローラーおよびプロセッサに関する通知要件が規定されています。 STP は、Microsoft が最初から侵害の防止を試みる方法、Microsoft が侵害を検出する方法、および侵害が発生した場合に Microsoft が対応し、データ コントローラーに通知する方法に関する情報を提供します。
   - **データ保護影響評価:** Microsoft は、コントローラーが GDPR データ保護影響評価を完了するのを支援します。 GDPR は、DPIA を実行する必要があるケースの網羅的でない一覧を提供します。これには、プロファイリングや同様のアクティビティの目的のための自動処理、個人データの特殊なカテゴリの大規模な処理、パブリックにアクセス可能な領域の大規模な系統的監視などがあります。
-  - **その他のリソース:** 上のセクションで説明したツール ガイダンスに加えて、STP はまた、リージョナル コンプライアンスを含むその他のリソース、セキュリティ/コンプライアンス センターに関する追加のリソース、Service Trust Platform、Compliance Manager、およびプライバシー/GDPR に関するよく寄せられる質問も提供します。
+  - **その他のリソース**上のセクションで説明したツール ガイダンスに加えて、STP はまた、リージョナル コンプライアンスを含むその他のリソース、セキュリティ/コンプライアンス センターに関する追加のリソース、Service Trust Platform、Compliance Manager、およびプライバシー/GDPR に関するよく寄せられる質問も提供します。
 - **リージョナル コンプライアンス:** STP は、チェコ共和国、ポーランド、ルーマニアを含むさまざまなリージョンのコンプライアンス要件を満たすための、Microsoft オンライン サービスに関する多数のコンプライアンス ドキュメントおよびガイダンスを提供します。
 
 ## <a name="unique-intelligent-insights"></a>他にはないインテリジェントな分析情報

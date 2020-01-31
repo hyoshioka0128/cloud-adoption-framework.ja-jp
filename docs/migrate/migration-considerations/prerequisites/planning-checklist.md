@@ -1,6 +1,5 @@
 ---
 title: 移行環境 - 計画チェックリスト
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行前に環境の対応性を検証する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753440"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801411"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>移行環境の計画チェックリスト - 移行前に環境の対応性を検証する
 
@@ -50,7 +49,7 @@ ms.locfileid: "73753440"
 
 一貫性のある名前付けスキーマと共に、名前付けリソースに対する一貫性のあるアプローチは、移行前に確立する必要があります。
 
-### <a name="resource-governance"></a>リソース ガバナンス
+### <a name="resource-governance"></a>リソース管理
 
 リソースを管理するためのツールに関する決定は、移行前に行う必要があります。 ツールは完全に実装される必要はありませんが、方向を選択し、テストする必要があります。 クラウド ガバナンス チームは、移行前のガバナンス ツールに対する実用最小限の製品 (MVP) の実装を定義し、要求する必要があります。
 
@@ -62,7 +61,7 @@ ms.locfileid: "73753440"
 
 クラウドベースの ID サービスは、クラウド リソースに対して ID およびアクセス管理 (IAM) を提供するための前提条件になります。 続行する前に、自分の ID 管理戦略をクラウド導入プランと合致させます。 たとえば、既存のオンプレミスの資産を移行する場合、移行中と移行後のオンプレミス環境およびクラウド環境を超えてユーザーの資格情報の一貫性のあるセットを許可するために、[ディレクトリの同期](../../../decision-guides/identity/index.md)を使用してハイブリッド ID の方法をサポートすることを検討します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 環境が最小要件を満たしている場合、移行の対応性に対して承認されていると見なすことができます。 [文化の複雑さと変更管理](./cultural-complexity.md)は、計画の実施中に適切な目標を確保するため、ロールと責任を合致させるのに役立ちます。
 

@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:デバイスの操作
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド イノベーションの概要 - デバイスの操作
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4a1b96a5f29ebac9fd228ab1603d12e08b38ba63
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 8b39362f2e0e21431e5d04ef05e2676094bca9bc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752090"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808483"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>アンビエント エクスペリエンス:デバイスの操作
 
@@ -87,7 +86,7 @@ Azure の Integrated Reality の例として含まれるもの:
 
 Azure では、デジタル ツインは [Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins) という名称のサービスから作成され、アクセスされます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 自分のソリューションに適したデバイス操作とアンビエント エクスペリエンスについて理解を深めたら、イノベーションの最後の規範である「[予測と影響](./predict.md)」に進むことができます。
 

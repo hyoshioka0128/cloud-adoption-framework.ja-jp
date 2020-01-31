@@ -1,6 +1,5 @@
 ---
 title: 移行の前にクラウド コストを見積もる
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行の前にクラウド コストを見積もるプロセスの説明。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: be4fe4616b4f0599075ceac2b9c0838949b350c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0618676a995971951a27a5bdba66b7e9b126d7d6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548493"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802584"
 ---
 # <a name="estimate-cloud-costs"></a>クラウド コストを見積もる
 
@@ -35,7 +34,7 @@ ms.locfileid: "72548493"
 
 従来の資本コストのアプローチをアカウンティングにレプリケートする場合は、上の「[デジタル資産のサイズ](#digital-estate-size)」のセクションで推奨されているいずれかのアプローチの出力を使用して年間コストの基準を取得します。 次に、その年間コストに会社の標準的なハードウェア更新サイクルを掛けます。 ハードウェア更新サイクルは、会社が古いハードウェアを置き換える速さです (一般には、年数で測定されます)。 年間ランレートにハードウェア更新サイクルを掛けると、資本コスト投資パターンと同様のコスト構造が得られます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 コストを見積もったら、移行を開始できます。 ただし、移行を開始する前に、[パートナーシップおよびサポート オプション](./partnership-options.md)を確認することが賢明です。
 

@@ -1,6 +1,5 @@
 ---
 title: レプリケーションと同期が移行プロセスで果たす役割
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ワークロードをクラウドに移行するタスクに重点を置いたクラウド移行内のプロセス。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cd76991fc7d8b13302e4614cf9e57da740f650d8
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 6b37cea7b912cb4d65f9b1b119787e96b2f698d6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753693"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802023"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,7 +46,7 @@ ms.locfileid: "73753693"
 - **ディスク ドリフトの累積的な影響。** レプリケーションの時点から資産を実稼働に昇格するまで、ソース バイナリと複製先バイナリの同期を維持する必要があります。 バイナリへのすべての変更を定期的に複製する必要があるため、バイナリの*ドリフト*は追加の帯域幅を消費します。 同期中は、すべてのバイナリ ドリフトを、移行ストレージの合計の計算に含める必要があります。 資産を実稼働に昇格させるまで時間がかかればかかるほど、より多くの累積的ドリフトが発生します。 同期する資産が多ければ多いほど、より多くの帯域幅が消費されます。 各アセットの同期状態が保たれている間は、利用可能な移行帯域幅の合計のうち失われる部分が少し多くなります。
 - **ビジネスの変更までの時間。** 前の項目「ディスク ドリフトの累積的な影響」で説明したように、同期時間は移行速度に累積的な悪影響を及ぼします。 移行バックログの優先順位付けと、[ビジネス変更計画](../optimize/business-change-plan.md)の事前準備は、移行の速度を決定的に左右します。 移行作業中、ビジネスと技術の整合性にとって最も重要な試金石は、昇格のペースです。 資産を実稼働に早く昇格できればできるほど、ディスク ドリフトが帯域幅に及ぼす影響が低減し、次のワークロードの複製に割り当てることができる帯域幅/時間が増加します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 レプリケーションが完了した後は、[ステージング アクティビティ](./stage.md)を開始できます。
 

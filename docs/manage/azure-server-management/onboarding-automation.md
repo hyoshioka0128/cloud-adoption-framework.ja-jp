@@ -1,6 +1,5 @@
 ---
 title: オンボーディングの自動化
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: オンボーディングの自動化
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751587"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808024"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 
@@ -37,7 +36,7 @@ Azure サーバー管理サービスのデプロイの効率を向上させる�
 
 このサンプルでは、次の表で説明するファイルが使用されています。 これらをカスタマイズして、独自のデプロイ シナリオをサポートできます。
 
-| ファイル名 | 説明 |
+| ファイル名 | [説明] |
 |-----------|-------------|
 | New-AMSDeployment.ps1 | オンボードを自動化するメインの調整スクリプト。 リソース グループ、場所、ワークスペース、Automation アカウントがまだ存在しない場合は、それらが作成されます。 この PowerShell スクリプトには、既存のサブスクリプションが必要です。 |
 | Workspace-AutomationAccount.json | ワークスペースと Automation アカウント リソースをデプロイする Resource Manager テンプレート。 |
@@ -52,7 +51,7 @@ New-AMSDeployment.ps1 を実行するには次のコマンドを使用します�
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}
 ```
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 キー管理イベントと問題をチームに通知する基本的なアラートを設定する方法を確認します。
 

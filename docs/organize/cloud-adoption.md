@@ -1,6 +1,5 @@
 ---
 title: クラウド導入機能
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入機能の構成について説明します
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2aeda3e6efac30e03a917e790ef619f7a6d74cde
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: fdd8c6234cfc66f4216ce2e6c4bcc8725ad2f079
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753402"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801174"
 ---
 # <a name="cloud-adoption-capabilities"></a>クラウド導入機能
 
 クラウド導入機能により、クラウドでの技術的ソリューションの実装が可能になります。 あらゆる IT プロジェクトと同様に、実際の作業を提供する人が成功を左右します。 必要なクラウド導入機能を提供するチームのメンバーは、複数の分野の専門家や実装パートナーから構成できます。
 
-## <a name="possible-sources-for-this-capability"></a>この機能の可能なソース
+## <a name="possible-sources-for-this-capability"></a>この機能の提供元
 
 クラウド導入チームは、技術実装チームやプロジェクト チームの現代版です。 ただし、クラウドの性質上、より流動的なチーム構成が必要になる場合があります。 クラウドの移行に集中的に取り組んでいるチームもあれば、クラウド テクノロジを利用したイノベーションに専念しているチームもあります。 一部のチームでは、完全なデータ センターの移行など、大規模な導入作業を完了するために必要な幅広い技術的専門知識が必要になります。 また、技術的な焦点がより厳密であり、特定の目標を達成するためにプロジェクト間を移動することがあるチームもあります。 その 1 つの例として、SQL VM の SQL PaaS インスタンスへの変換を支援するデータ プラットフォーム スペシャリストのチームがあります。
 
@@ -46,7 +45,7 @@ ms.locfileid: "73753402"
 - [優先度付けされた移行バックログ](../migrate/migration-considerations/assess/release-iteration-backlog.md)を確認、検証、促進する
 - 学習機会として[最初のワークロード](../digital-estate/rationalize.md#select-the-first-workload)の実行を開始する
 
-**継続的な月単位のタスク:**
+**毎月の継続的なタスク:**
 
 - [変更管理プロセス](../migrate/migration-considerations/prerequisites/technical-complexity.md)を監督する
 - [リリース バックログとスプリント バックログ](../migrate/migration-considerations/assess/release-iteration-backlog.md)を管理する
@@ -63,7 +62,7 @@ ms.locfileid: "73753402"
 
 クラウドの導入に関連する技術的なタスクの中には、繰り返し発生するものもあります。 従業員の満足度に関する問題を回避し、関連するスキルを維持するためには、チーム メンバーが 3 か月から 6 か月ごとに交代する必要があります。 [クラウド センター オブ エクセレンス](./cloud-center-of-excellence.md)や[クラウド ガバナンス チーム](./cloud-governance.md)のメンバーを定期的に交代することにより、従業員を常に新鮮な気持ちに保ち、新しいイノベーションを活用することできる絶好の機会を提供できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 導入は多くの利点をもたらしますが、管理されていない導入によって予期しない結果が生じる場合があります。 [クラウド ガバナンス機能](./cloud-governance.md)を連携させることにより、 ビジネス上および技術上のリスクを軽減しながら、導入とベストプラクティスを促進できます。
 

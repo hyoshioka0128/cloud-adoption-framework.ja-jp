@@ -1,6 +1,5 @@
 ---
 title: Cost Management の規範の概要
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンスと関連した Cost Management の説明
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: abba9da343342c99fcfa657aa0abd1c55daaef55
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566419"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806494"
 ---
 # <a name="cost-management-discipline-overview"></a>Cost Management の規範の概要
 
@@ -28,7 +27,7 @@ ms.locfileid: "73566419"
 
 ## <a name="policy-statements"></a>ポリシー ステートメント
 
-実践的なポリシー ステートメントと、その結果のアーキテクチャの要件は、Cost Management の規範の基盤となります。 ポリシー ステートメントのサンプルを参照するには、[Cost Management のポリシー ステートメント](./policy-statements.md)に関する記事をご覧ください。 これらのサンプルは、お客様の組織のガバナンス ポリシーの開始点として使用できます。
+実践的なポリシー ステートメントと、その結果のアーキテクチャの要件は、Cost Management の規範の基盤となります。 ポリシー ステートメントのサンプルを参照するには、[Cost Management のポリシー ステートメント](./policy-statements.md)に関する記事をご覧ください。 これらのサンプルは、お客様の組織のガバナンス ポリシーの第一歩となります。
 
 > [!CAUTION]
 > このサンプル ポリシーは、よくあるお客様の体験をもとにしています。 特定のクラウド ガバナンスの要件にこれらのポリシーが合うように調整するには、次の手順を行い、お客様独自のビジネス ニーズに合うポリシー ステートメントを作成してください。
@@ -155,11 +154,11 @@ ms.locfileid: "73566419"
 </li>
 </ul>
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 特定の環境でビジネス上のリスクを評価する方法の概要を学びます。
 
 > [!div class="nextstepaction"]
-> [ビジネス上のリスクについての理解](./business-risks.md)
+> [ビジネス リスクを理解する](./business-risks.md)
 
 <!-- markdownlint-enable MD033 -->

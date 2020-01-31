@@ -1,6 +1,5 @@
 ---
 title: サブスクリプション用の Azure サーバー管理サービスを構成する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: サブスクリプション用の Azure サーバー管理サービスを構成する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4a0964ed8ec28ead844e1fd15275422adf8f081
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656648"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808092"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>大規模な Azure サーバー管理サービスを構成する
 
@@ -138,7 +137,7 @@ Change Tracking ソリューションは、Azure VM では無料で、オンプ�
 
 [[Azure アクティビティ ログ]](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) も Azure Monitor の一部です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
 
-この解決策を実行するには:
+このソリューションを実行するには:
 
 1. Azure portal 内で、 **[すべてのサービス]** を開き、 **[管理 + ガバナンス]**  >  **[ソリューション]** を選択します。
 2. **[ソリューション]** ビューで、 **[追加]** を選択します。
@@ -195,7 +194,7 @@ Azure Security Center の Free レベルを有効にするには、次の手順�
 6. **[Free]** オプションを選択します。
 7. **[保存]** を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 サーバーのオンボードとアラートの作成にオートメーションを使用する方法を確認します。
 

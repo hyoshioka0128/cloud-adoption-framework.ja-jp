@@ -1,6 +1,5 @@
 ---
 title: SQL Server のインスタンスを移行して移行を高速化する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: SQL Server インスタンス全体を移行すると、ワークロードの移行作業を高速化できます。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
-ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
+ms.openlocfilehash: 5b2190456e63c0e1da39f064e34d63eebbf4d998
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "75328924"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802992"
 ---
 # <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>複数のデータベースまたは SQL Server 全体を移行して移行を高速化する
 

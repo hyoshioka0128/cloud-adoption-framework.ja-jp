@@ -1,6 +1,5 @@
 ---
 title: シンプルなワークロード向けガバナンス設計
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure ガバナンス管理を構成してユーザーがシンプルなワークロードをデプロイできるようにするためのガイダンス。
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 116119530ba5cedcdad836b219b43f23f74d9afc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566014"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803859"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>シンプルなワークロード向けガバナンス設計
 
@@ -111,7 +110,7 @@ Azure アカウントが作成されたら、組織の 1 人を Azure **アカ�
 
 サブスクリプションを作成し、これに Azure AD テナントを関連付けたので、最後に、[**ワークロード所有者**を、組み込みの**所有者**ロールを持つサブスクリプションに追加](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [基本的なワークロードを Azure にデプロイする](../../infrastructure/virtual-machines/basic-workload.md)

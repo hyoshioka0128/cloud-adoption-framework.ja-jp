@@ -1,6 +1,5 @@
 ---
 title: Azure でのセキュリティ ベースライン ツール
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure でのセキュリティ ベースラインの改善を促進できるツールの説明。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565907"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808806"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Azure でのセキュリティ ベースライン ツール
 
@@ -31,8 +30,8 @@ Azure ツールの次の一覧は、セキュリティ ベースラインをサ�
 | ハイブリッドの ID サービスを管理する                            | いいえ                              | いいえ              | はい      | いいえ           | いいえ                    | いいえ            |
 | リソースの許可される型を制限する                         | いいえ                              | いいえ              | いいえ       | はい          | いいえ                    | いいえ            |
 | geo リージョンの制限を適用する                          | いいえ                              | いいえ              | いいえ       | はい          | いいえ                    | いいえ            |
-| ネットワークとリソースのセキュリティ正常性を監視する          | いいえ                              | いいえ              | いいえ       | いいえ           | 可能                   | はい           |
-| 悪意のあるアクティビティを検出する                                  | いいえ                              | いいえ              | いいえ       | いいえ           | 可能                   | はい           |
+| ネットワークとリソースのセキュリティ正常性を監視する          | いいえ                              | いいえ              | いいえ       | いいえ           | はい                   | はい           |
+| 悪意のあるアクティビティを検出する                                  | いいえ                              | いいえ              | いいえ       | いいえ           | はい                   | はい           |
 | 事前に脆弱性を検出する                        | いいえ                              | いいえ              | いいえ       | いいえ           | はい                   | いいえ            |
 | バックアップとディザスター リカバリーを構成する                     | はい                             | いいえ              | いいえ       | いいえ           | いいえ                    | いいえ            |
 

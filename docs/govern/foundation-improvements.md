@@ -1,6 +1,5 @@
 ---
 title: 初期のクラウド ガバナンス基盤の改善
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 初期のクラウド ガバナンス基盤を段階的に改善する方法を説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 315797d7ef4ab93d5d386ee32a499f4172752687
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 1b46157e134967095cff9ff84bcfb5b826a22bae
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159933"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805814"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の改善
 
@@ -37,7 +36,7 @@ ms.locfileid: "74159933"
 |複雑な/レガシ ID 管理|該当なし|[規範の改良](./guides/complex/identity-baseline-improvement.md)|
 |複数レイヤーのガバナンス|該当なし|[規範の改良](./guides/complex/multiple-layers-of-governance.md)|
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ベスト プラクティスの適用に加えて、クラウド導入フレームワーク内のガバナンス方法論は、ビジネス上の固有の制約に合わせてカスタマイズ可能です。 適切な推奨事項に従った後、[企業ポリシーを評価して追加のカスタマイズ要件を把握](./corporate-policy.md)します。
 

@@ -1,6 +1,5 @@
 ---
 title: 現在のクラウドのペースで Azure を最新の状態に保つ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 現在のクラウドのペースで Azure を常に最新に保ち、変更を管理する方法を説明します。
 author: jelledruyts
 ms.author: andym
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 5c241ab6b5f7c9fafa13492151b0ab49a7f619e8
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 8dd545e4d34dfafd6a777828b9c590030797fdae
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681714"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799218"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Microsoft Azure を最新の状態に保つ
 

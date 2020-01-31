@@ -1,6 +1,5 @@
 ---
 title: ワークロードの運用 - クラウドの管理と運用
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ワークロードの運用 - クラウドの管理と運用
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7eca93ba324a0e41f2a04e81a6bfe8994c232fcd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b97cd4963dc19753f0d8216923a376f4d077930a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565040"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807701"
 ---
 # <a name="workload-operations-in-cloud-management"></a>クラウド管理におけるワークロードの運用
 
@@ -95,7 +94,7 @@ ms.locfileid: "73565040"
 
 [Azure アーキテクチャ フレームワーク](https://docs.microsoft.com/azure/architecture/guide/pillars)では、全体的な運用を改善するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 これらの重要な要素は、プラットフォームの運用とワークロードの運用の両方に当てはめることができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入フレームワーク内の管理手法を十分に理解できたので、クラウド管理の原則を実装できるようになりました。 運用環境でこの手法を実行可能にするガイダンスについては、導入ライフサイクルの「[クラウド導入フレームワークにおけるクラウド管理](../index.md)」を参照してください。
 

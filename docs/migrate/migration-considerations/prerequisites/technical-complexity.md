@@ -1,6 +1,5 @@
 ---
 title: '技術的な複雑さに備える: アジャイルな変更管理'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 技術的な複雑さに備える - アジャイルな変更管理
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 415e7b456cc342f7a749cd98a55e573a46563bf4
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 73cbd084e79589de68e359ad4dc88b639d92f9df
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753683"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801343"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>技術的な複雑さに備える: アジャイルな変更管理
 
@@ -119,7 +118,7 @@ INVEST は、ユーザー ストーリーまたは製品バックログ項目 (�
 - **運用の承認。** アプリケーション所有者と、デプロイ後のワークロードの管理を担当する IT 運用スタッフによる、運用準備確認の承認。
 - **アーキテクチャの承認。** ワークロード所有者とクラウド導入チームによる、各資産をホストするために必要なアーキテクチャ変更の確認の承認。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 変更管理アプローチが確立された後、最後の前提条件である[移行バックログの確認](./migration-backlog-review.md)に対処します
 

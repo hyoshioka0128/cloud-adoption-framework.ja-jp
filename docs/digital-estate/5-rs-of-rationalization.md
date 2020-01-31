@@ -1,6 +1,5 @@
 ---
 title: クラウドの合理化
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: デジタル資産を合理化するために使用できるオプションを確認します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 1a74487a77388e6260c177096d9563dbe6646cf2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238804"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806562"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 
@@ -111,7 +110,7 @@ ms.locfileid: "73238804"
 - 運用コスト
 - 潜在的なフィードバック ループおよび DevOps 投資。
 
-## <a name="rebuild"></a>再構築
+## <a name="rebuild"></a>[再構築]
 
 一部のシナリオでは、アプリケーションを引き継ぐために克服する必要のある差分が大きすぎて、それ以上の投資を正当化できない場合があります。 ビジネスのニーズは満たしていても、現在サポートされていない、または現在のビジネス プロセスと整合していないアプリケーションには特にこのことが当てはまります。 この場合は、[クラウド ネイティブな](https://azure.microsoft.com/overview/cloudnative)アプローチに整合させるための新しいコード ベースが作成されます。
 
@@ -160,7 +159,7 @@ ms.locfileid: "73238804"
 - データ スキーマ
 - カスタムまたは自動化プロセス
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 デジタル資産に対し、これらの合理化の 5 R を総合的に適用することで、各アプリケーションの将来の状態に関する合理化の決定がしやすくなります。
 

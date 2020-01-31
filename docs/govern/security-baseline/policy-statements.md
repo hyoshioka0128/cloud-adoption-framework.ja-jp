@@ -1,6 +1,5 @@
 ---
 title: セキュリティ ベースラインのサンプル ポリシー ステートメント
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: セキュリティ ベースラインのサンプル ポリシー ステートメント
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: ba0887b93664ac77fc2933c24631110dfab14be0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160533"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808874"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>セキュリティ ベースラインのサンプル ポリシー ステートメント
 
@@ -90,7 +89,7 @@ ms.locfileid: "74160533"
 
 **使用可能な設計オプション:** 関連する IT およびガバナンス チームのメンバーが参加するセキュリティ レビュー会議を定期的に行います。 既存のセキュリティ データとメトリックのレビューを行って、現在のポリシーとセキュリティ ベースライン ツールのギャップを確かめ、新しいリスクを修復するようにポリシーを更新します。 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) と [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) を利用すると、デプロイに固有の新たな脅威に関する実用的な分析情報を得ることができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 手始めに、この記事で説明されているサンプルを使用して、クラウドの導入計画に合致する特定のセキュリティ リスクに対処するポリシーを作成します。
 

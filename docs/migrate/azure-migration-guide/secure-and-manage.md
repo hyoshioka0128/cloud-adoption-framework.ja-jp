@@ -1,6 +1,5 @@
 ---
 title: セキュリティ保護と管理
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: セキュリティ保護と管理
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bd06a0e878b98ff52c7d2c5ab8a3b978758a2ef6
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 6490c9dec38755fcb271774d00471b2a22888fd1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251622"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806970"
 ---
 # <a name="secure-and-manage"></a>セキュリティ保護と管理
 
@@ -52,7 +51,7 @@ Azure Service Health は、Azure サービスの問題がユーザーに影響�
 Azure Service Health には以下が含まれます。
 
 - **[Azure Status]\(Azure の状態):** Azure サービスの正常性のグローバルなビュー。
-- **[サービス正常性]:** Azure サービスの正常性の個人用に設定されたビュー。
+- **サービス正常性:** Azure サービスの正常性の個人用に設定されたビュー。
 - **[リソース正常性]:** Azure サービスによってプロビジョニングされた個々のリソースの正常性のより深いビュー。
 
 組み合わされると、これらのエクスペリエンスにより、Azure の正常性の包括的なビューがユーザーに関連する詳細レベルで表示されます。

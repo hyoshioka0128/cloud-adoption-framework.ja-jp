@@ -1,6 +1,5 @@
 ---
 title: 標準的な企業のガバナンス ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 標準的な企業のガバナンス ガイド
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1f0db9ecd49973c769d74a5357e56406e3bce3cf
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: dc52ce58bf6ecb62723674c1c4ecfb12f72d07ca
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239696"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806222"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準的な企業のガバナンス ガイド
 
@@ -80,7 +79,7 @@ MVP では、企業ポリシーを迅速に適用するために、[デプロイ
 
 ![増分ガバナンス MVP の例](../../../_images/govern/governance-improvement.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ガバナンス MVP について理解し、この後のガバナンスの改善についてわかったら、コンテキストについてさらに理解するのに役立つ物語を読んでください。
 

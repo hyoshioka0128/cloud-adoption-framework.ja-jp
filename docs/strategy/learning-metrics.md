@@ -1,6 +1,5 @@
 ---
 title: 有意義な学習メトリックに取り組みを整合させる方法
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 学習メトリックの概念の説明
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b19357bd98858cc227426d2adb03a6e84210b9b3
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ab79efb82b641ea19c0774d3809a9115995bec58
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753776"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798130"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -53,7 +52,7 @@ VM がクラウドに移動されるにつれて、従来のオンプレミス�
 
 さらに価値のあるメトリックは、結合されたデータ ソースから作成されるダッシュボードの数です。 この数は、新しいデータ ソースによって影響を受ける現在の状態のビジネス プロセスを反映しています。 新しいデータ ソースをオープンに共有することによって、企業は、Power BI などのレポート ツールを使用してデータを利用し、増分的分析情報を生成して、ビジネスの変化を推進できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 学習メトリックの整合が済んだら、チームは、これらのメトリックに対して[デジタル資産の評価](../digital-estate/index.md)を開始できます。 結果は、[変換バックログまたは移行バックログ](../migrate/migration-considerations/prerequisites/technical-complexity.md)になります。
 

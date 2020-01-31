@@ -1,6 +1,5 @@
 ---
 title: Azure イノベーション ガイド:予測と影響
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure を使用した予測と影響について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 506387c87a714964692dde7c082fa31c981b0c6f
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251834"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808262"
 ---
 ::: zone target="docs"
 
@@ -33,7 +32,7 @@ ms.locfileid: "74251834"
 
 次の表は、実装のニーズに基づいて最適なソリューションを見つけるうえで役立ちます。
 
-|Service  |事前構築済みのモデル  |ビルドと実験  |Python でのトレーニングと構築|必要なスキル|
+|サービス  |事前構築済みのモデル  |ビルドと実験  |Python でのトレーニングと構築|必要なスキル|
 |---------|---------|---------|---------|---------|
 |Azure Cognitive Services|はい|いいえ|いいえ|API と開発者のスキル|
 |Azure Machine Learning Studio|はい|はい|いいえ|予測アルゴリズムに関する一般的な知識|
@@ -45,13 +44,13 @@ ms.locfileid: "74251834"
 
 利用可能なサービスと必要と考えられるトレーニングの量の一覧については、「[Cognitive Services と機械学習](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model)」をご覧ください。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Cognitive Services API を使用するには、次の手順に従います。
 
 1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts) で **[Cognitive Services]** に移動します。
 2. **[追加]** を選択して、Azure Marketplace で Cognitive Service API を探します。
-3. 次のいずれかを実行します。
+3. 以下のいずれかを実行します。
    - 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** ボックスに名前を入力します。
    - Cognitive Services APIs の一覧については、Cognitive Services の見出しの横の **[もっと見る]** リンクを選択します。
 
@@ -77,7 +76,7 @@ Cognitive Services 内の既存のモデルが目的の予測に合わない場�
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 Azure Machine Learning Studio で、次の手順に従ってモデルを作成し、モデルを試すことができます。
 
@@ -106,7 +105,7 @@ Azure Machine Learning Studio で、次の手順に従ってモデルを作成�
 
 Azure Machine Learning service では、顧客データ セットのより詳細なトレーニングに必要となる、詳細なコードベースのアプローチが提供されます。 データ サイエンティストは、Python などの言語を使用して、顧客のニーズを予測するアルゴリズムをトレーニングおよび構築できます。
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 データ サイエンティストは、Azure Machine Learning service を使用して、Python などの高度な言語でモデルをトレーニングおよび構築できます。
 

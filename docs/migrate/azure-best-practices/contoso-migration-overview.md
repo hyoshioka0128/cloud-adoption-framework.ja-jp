@@ -1,6 +1,5 @@
 ---
 title: Azure へのアプリケーション移行例の概要
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cloud Adoption Framework の移行セクションの一環として含まれている、アプリケーション移行例の概要を示します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 18b2bc641ba45c83a8ce6c5069857c398801adfd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566442"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807378"
 ---
 # <a name="application-migration-patterns-and-examples"></a>アプリケーションの移行パターンと例
 
@@ -33,7 +32,7 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 <!-- markdownlint-disable MD033 -->
 
-**パターン** | **定義** | **いつ使用するか**
+**パターン** | **[定義]** | **いつ使用するか**
 --- | --- | ---
 **リホスト** | 多くの場合、"_リフト アンド シフト_" 移行と呼ばれます。 このオプションでは、コードの変更を必要とせずに、既存のアプリを Azure にすばやく移行できます。 各アプリはそのままの状態で移行されるので、コード変更に伴うリスクとコストなしにクラウドのメリットを享受できます。 | アプリをクラウドにすばやく移動する必要がある場合。<br/><br/> アプリを変更せずに移動したい場合。<br/><br/> 移行後に [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas) のスケーラビリティを活かせるように、アプリが設計されている場合。<br/><br/> ビジネスにとって重要なアプリであるが、アプリの機能をすぐに変更する必要がない場合。
 **リファクター** | 多くの場合、"再パッケージ化" と呼ばれます。リファクターを行うには、[Azure PaaS](https://azure.microsoft.com/overview/what-is-paas) に接続してクラウド サービスを使用できるように、アプリに最小限の変更を加える必要があります。<br/><br/> たとえば、既存のアプリを Azure App Service または Azure Kubernetes Service (AKS) に移行できます。<br/><br/> または、リレーショナル データベースおよび非リレーショナル データベースを、Azure SQL Database Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB などのオプションにリファクターすることもできます。 | Azure で動作するようにアプリを簡単に再パッケージ化できる場合。<br/><br/> Azure が提供する革新的な DevOps プラクティスを適用したい場合、またはワークロード向けのコンテナー戦略を使用した DevOps を検討している場合。<br/><br/> リファクタリングでは、既存のコード ベースの移植性と使用可能な開発スキルを考慮する必要があります。

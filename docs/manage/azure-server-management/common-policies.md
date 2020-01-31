@@ -1,6 +1,5 @@
 ---
 title: Azure Policy の一般的な例
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure Policy の一般的な例
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7008809ef2e80cd5f1c263b705b46a37b6028482
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 7020ffed2395d6c22f835d66cd1c539b525f37c3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656397"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808126"
 ---
 # <a name="common-azure-policy-examples"></a>Azure Policy の一般的な例
 
@@ -89,7 +88,7 @@ New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default M
 
 ```
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 使用可能な他のサーバー管理ツールやサービスについて学習します。
 

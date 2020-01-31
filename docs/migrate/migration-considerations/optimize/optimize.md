@@ -1,6 +1,5 @@
 ---
 title: クラウド資産をベンチマークおよびサイズ変更する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド資産をベンチマークおよびサイズ変更する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 53ff6f0d32b80ef9c89d4ebd0234dd3442412907
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7198bdc1332a9d55bca68a04fe1384727dc7284a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548426"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801836"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>クラウド資産をベンチマークおよびサイズ変更する
 
@@ -44,7 +43,7 @@ Microsoft の子会社である Cloudyn によってライセンスされる [Az
 
 Cost Management を使用して、最適な VM の使用状況を特定したり、アイドル状態の VM を識別したり、アイドル状態の VM や接続されていないディスクを削除したりします。 サイズ設定の最適化や非効率性レポートの情報を使用して、アイドル状態の VM をダウンサイズまたは削除するための計画を作成します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ワークロードがテストおよび最適化されたら、[ワークロードを昇格のために準備する](./ready.md)必要があります。
 

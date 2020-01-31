@@ -1,6 +1,5 @@
 ---
 title: 移行したアプリケーションの実稼働への昇格を準備する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ワークロードをクラウドに移行するタスクに重点を置いたクラウド移行内のプロセス。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f3aad7a2b7c592478f9d48a50dc96d5fee607dc8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022625"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801615"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>移行したアプリケーションの実稼働への昇格を準備する
 
@@ -45,7 +44,7 @@ ms.locfileid: "71022625"
 - **コストの検証 (プランと現実)。** テストによって、サイズとアーキテクチャの変更が発生する可能性があります。 実際のデプロイの費用が当初のプランと合致していることを確認します。
 - **切り替えプランを伝えて実行する。** 切り替えの前に、切り替えについて伝え、それに従って実行します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 すべての準備アクティビティが完了したら、[ワークロードを昇格する](./promote.md)タイミングになります。
 

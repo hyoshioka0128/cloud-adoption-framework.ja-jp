@@ -1,6 +1,5 @@
 ---
 title: パートナーシップとサポート オプションを理解する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行作業をサポートするためのオプションとアプローチについて説明します
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159896"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802465"
 ---
 # <a name="understand-partnership-options"></a>パートナーシップのオプションを理解する
 
@@ -80,7 +79,7 @@ FastTrack for Azure の一般的な連携の主な段階は次のとおりです
 
 **評価:** Microsoft Services では、アーキテクチャ ワーク ショップ、Azure のリアルタイム情報、セキュリティと ID の脅威モデル、さまざまなツールで構成される[統合された、データおよびツール主導アプローチ](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf)を使用して、既存の Azure 環境に対する課題、リスク、推奨事項、問題に関する分析情報と、[最新化の概要ロードマップ](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf)などの重要な結果を提供します。
 
-**採用:** Microsoft Services の [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) により、要件を最も適切な参照アーキテクチャにマップすることによって核となる Azure の設計、パターン、ガバナンス アーキテクチャを確立し、ワークロードに必要なインフラストラクチャ、管理、セキュリティ、ID を計画、設計、デプロイします。
+**導入:** Microsoft Services の [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) により、要件を最も適切な参照アーキテクチャにマップすることによって核となる Azure の設計、パターン、ガバナンス アーキテクチャを確立し、ワークロードに必要なインフラストラクチャ、管理、セキュリティ、ID を計画、設計、デプロイします。
 
 **移行/最適化:** Microsoft Services の [Cloud Modernization Solution](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) では、アプリケーションとインフラストラクチャを Azure に移動し、合理化された移行によってクラウドにデプロイした後で最適化および最新化を行う、包括的なアプローチが提供されます。
 
@@ -99,7 +98,7 @@ Microsoft 認定ソリューション プロバイダーは、世界中で最新
 - **[クラウド ソリューション パートナーを見つける](https://www.microsoft.com/solution-providers/home)。** 認定 CSP は、クラウド導入のビジネス目標を評価し、ビジネス ニーズを満たして、ビジネスの機敏性と効率性の向上に役立つ最適なクラウド ソリューションを特定して、クラウドを最大限に活用する支援ができます。
 - **[マネージド サービス パートナーを見つける](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)。** Azure マネージド サービス パートナー (MSP) は、クラウド体験のあらゆる側面をガイドして、Azure へのビジネス転換を支援します。 移行および運用管理のコンサルティングから、クラウド MSP はクラウド導入に伴うあらゆる利点をお客様に紹介します。 また、一般的なサポート、プロビジョニング、課金エクスペリエンスのワンストップ ショップとしての役割も持ちます。すべてが柔軟な従量課金制 (PAYG) ビジネス モデルで提供されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 パートナーとサポート戦略を選択した後は、[リリースとイテレーションのバックログ](./release-iteration-backlog.md)を更新し、計画的な作業と割り当てを反映できます。
 

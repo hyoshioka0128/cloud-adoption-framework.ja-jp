@@ -1,6 +1,5 @@
 ---
 title: クラウド変革のための財務モデルを作成する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド変革のための財務モデルを作成する方法。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: cb5653de592fb92fa9ad9f5866997703a928ee4e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 49cce1f4ade76350a820dae2f638edeacb380aa6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566590"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798606"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>クラウド変革のための財務モデルを作成する
 
@@ -105,7 +104,7 @@ ms.locfileid: "73566590"
 
 更新サイクルが承認され、予算化されている場合は、クラウド変革がそのコストの解消に役立つことがあります。 更新サイクルが計画されているが、まだ承認されていない場合は、クラウド変革によって資本コストを回避できます。 どちらの削減もコスト差分に追加されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 詳細については、[クラウド会計](./cloud-accounting.md)モデルを参照してください。
 

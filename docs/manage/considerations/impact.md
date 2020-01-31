@@ -1,6 +1,5 @@
 ---
 title: ビジネスへの影響 - クラウドの管理と運用
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ビジネスへの影響 - クラウドの管理と運用
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0480a03ef488d00625115ded8f03526f959dd203
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3447fcf081af559dd778bf342b0ec95b02fc7562
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752870"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807803"
 ---
 # <a name="business-impact-in-cloud-management"></a>クラウド管理におけるビジネスへの影響
 
@@ -57,7 +56,7 @@ ms.locfileid: "73752870"
 
 - 各業務では、*Example* (例) または *Clean Template* (クリーン テンプレート) の各ワークロードを、各ワークロードの *Time/Value Impact* (時間/価値の影響) で更新する必要があります。 既定で、*Time/Value Impact* (時間/価値の影響) は、ワークロードの停止に関連する 1 時間あたりの予測される損失を表します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 業務の影響を定義したら、[コミットメントを調整](./commitment.md)できます。
 

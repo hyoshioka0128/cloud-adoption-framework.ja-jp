@@ -1,6 +1,5 @@
 ---
 title: 運用モデルの概要
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド導入フレームワークの運用モデルを理解します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: cbd9f8dcea85b22f68ddb0401ef5713491200fdc
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753666"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806953"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>クラウドの運用モデルの確立
 
@@ -48,7 +47,7 @@ ms.locfileid: "73753666"
 
 第一プラットフォームとして Azure が選ばれている場合、運用モデルに関する上記の各セクションで紹介しているガイドとベスト プラクティスは、運用モデルの作成時に役立つことが証明されるでしょう。 しかしながら、このフレームワークでは、一部の読者は Azure だけを第一プラットフォームとしていないことを認識しています。 このような幅広い読者に応えるため、各セクションの理論の内容は、成果を同じくするパブリックまたはプライベートのクラウド運用モデルに適用できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ガバナンスは、クラウドの運用モデルを確立するための一般的な最初の手順です。
 

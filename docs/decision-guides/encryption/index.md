@@ -1,6 +1,5 @@
 ---
 title: 暗号化決定ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 移行のコア サービスとしての暗号化について説明します。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df170713e10460d9e928837a99287be0afd5805
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753356"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807055"
 ---
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 
@@ -127,7 +126,7 @@ Azure での暗号化とキー管理の詳細については、以下を参照�
 - [Azure のデータ セキュリティと暗号化のベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices)。 Azure のデータ セキュリティと暗号化のベスト プラクティスの説明。
 - 「[Confidential computing in Azure (Azure での Confidential Computing)](https://azure.microsoft.com/solutions/confidential-compute)」。 Azure の Confidential Computing イニシアチブでは、信頼できる実行環境または使用中のデータを保護するための他の暗号化メカニズムを作成するためのツールとテクノロジが提供されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 暗号化は、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
 

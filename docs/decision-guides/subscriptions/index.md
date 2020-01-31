@@ -1,6 +1,5 @@
 ---
 title: サブスクリプション決定ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure の移行におけるコア サービスとしてのクラウド プラットフォーム サブスクリプションについて説明します。
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4e97c7c1d363b81badc440eb46495b134c680162
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 327077f912e916975eef08ad6613f3806a759bca
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753140"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806579"
 ---
 # <a name="subscription-decision-guide"></a>サブスクリプション決定ガイド
 
@@ -94,7 +93,7 @@ Azure のデジタル資産が増加すると、要件を満たすように追�
 - [大企業での複数レイヤーのガバナンス](../../govern/guides/complex/multiple-layers-of-governance.md)
 - [複数の地理的リージョン](../regions/index.md)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 サブスクリプションの設計は、クラウド導入プロセス時のアーキテクチャの決定で必要なコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
 

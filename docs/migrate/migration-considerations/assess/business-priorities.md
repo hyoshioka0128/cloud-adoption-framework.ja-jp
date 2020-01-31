@@ -1,6 +1,5 @@
 ---
 title: 長期間の変換プロセス中にビジネスの優先順位を維持する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 長期間の変換プロセス中にビジネスの優先順位を維持します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a609dbc1c8779452c5dfc9e4fdf67eb407e6c787
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 2a48dad8cb7d64b766dc5b9a445aeda4245854e7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549197"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802720"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>ビジネスの優先順位:配置の維持
 
@@ -49,7 +48,7 @@ ms.locfileid: "72549197"
 
 市場が変化すると、クラウド戦略チームは企業と協力して、それらの変化に最適に対応する方法を把握します。 その対応に移行の優先順位の変更が必要になった場合は、移行バックログが調整されます。 これにより、前に優先順位が低かったワークロードの優先順位が上がります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ビジネスの優先順位が適切に整合されている場合、クラウド導入チームはアーキテクチャと移行計画を開発するために、[ワークロードの評価](./evaluate.md)を自信を持って開始できます。
 

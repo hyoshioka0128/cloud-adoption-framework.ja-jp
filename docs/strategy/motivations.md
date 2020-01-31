@@ -1,6 +1,5 @@
 ---
 title: 動機:クラウドに移行する理由
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド アカウンティングとクラウドへの移行
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6c774da4fa90c8a6806021b96d0519edebecfc61
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561600"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798147"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -77,7 +76,7 @@ ms.locfileid: "73561600"
 - カスタマー エクスペリエンスとエンゲージメントの向上。
 - 製品またはサービスの変革。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 予想されるビジネス成果を把握すれば、ビジネス戦略に合わせて動機と利用できるメトリックを文書化する際に必要な会話を円滑化するのに役立ちます。 次に、通常はクラウドへの移行に関係するビジネス成果の概要をお読みください。
 

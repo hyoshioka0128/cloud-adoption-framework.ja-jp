@@ -1,6 +1,5 @@
 ---
 title: Azure に移行されたワークロードのセキュリティ保護と管理に関するベスト プラクティス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure に移行した後は、移行されたワークロードの操作、管理、セキュリティ保護に関するベスト プラクティスに従います。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160057"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803842"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのセキュリティ保護と管理に関するベスト プラクティス
 
@@ -185,7 +184,7 @@ Azure Active Directory (Azure AD) では、Azure Monitor に表示されるア�
 
 Azure では、高度なセキュリティ オプションを提供するセキュリティ機能が他にも用意されています。 以下のベスト プラクティスの一部では、アドオン ライセンスと Premium オプションが必要です。
 
-- **Azure AD 管理単位 (AU) を実装する。** サポート スタッフへの管理責務の委任は、基本的な Azure アクセス制御だけでは複雑な場合があります。 Azure AD 内のすべてのグループを管理できるアクセス権をサポート スタッフに与えるのは、組織のセキュリティにとって理想的な方法ではない可能性があります。 AU を使用すると、オンプレミスの組織単位 (OU) と同様の方法で、コンテナーに Azure リソースを分離することができます。 AU を使用するには、AU の管理者に Premium Azure AD ライセンスが必要です。 [詳細情報](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units)。
+- **Azure AD 管理単位 (AU) を実装する。** サポート スタッフへの管理責務の委任は、基本的な Azure アクセス制御だけでは複雑な場合があります。 Azure AD 内のすべてのグループを管理できるアクセス権をサポート スタッフに与えるのは、組織のセキュリティにとって理想的な方法ではない可能性があります。 AU を使用すると、オンプレミスの組織単位 (OU) と同様の方法で、コンテナーに Azure リソースを分離することができます。 AU を使用するには、AU の管理者に Premium Azure AD ライセンスが必要です。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units)。
 - **多要素認証を使用する。** Premium Azure AD ライセンスがある場合は、管理者アカウントに対して多要素認証を有効にして適用できます。 フィッシングは、アカウントの資格情報を侵害する最も一般的な方法です。 悪意のあるアクターが管理者アカウントの資格情報を手に入れてしまうと、すべてのリソース グループの削除といった影響範囲の広いアクションを阻止することはできません。 多要素認証は、電子メール、認証アプリ、携帯電話のテキスト メッセージなどのさまざまな方法で確立できます。 管理者は、最も影響が少ないオプションを選択できます。 多要素認証は、脅威分析と条件付きアクセス ポリシーと統合して、多要素認証チャレンジの応答をランダムに要求します。 詳しくは、[セキュリティ ガイダンス](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)と[多要素認証の設定方法](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)に関する記事をご覧ください。
 - **条件付きアクセスを実装する。** ほとんどの中小規模組織では、Azure 管理者とサポート チームはおそらく地理的に 1 つの場所にいます。 この場合は、ほとんどのログインは同じ地域から行われます。 これらの場所の IP アドレスが非常に静的な場合、これらの地域の外部からの管理者ログインが行われてはならないのは当然のことです。 離れた場所にいる不正なアクターが管理者の資格情報を侵害した場合でも、条件付きアクセスと多要素認証の組み合わせのようなセキュリティ機能を実装して、離れた場所からのログイン、またはランダムな IP アドレスで偽装された場所からのログインを防ぐことができます。 条件付きアクセスについての[詳細を学習](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)し、Azure AD での条件付きアクセスの[ベスト プラクティスを確認](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)してください。
 - **エンタープライズ アプリケーションのアクセス許可を確認する。** 時間が経つと、管理者は組織に与える影響を知らずに Microsoft やサード パーティのリンクをクリックするようになります。 リンクでは、Azure アプリへのアクセス許可を割り当てる同意画面が表示される場合があり、Azure AD のデータの読み取りアクセスが許可されたり、Azure サブスクリプション全体を管理するためのフル アクセスが許可されることさえあります。 管理者やユーザーに Azure リソースへのアクセスが許可されるアプリを定期的に確認する必要があります。 このようなアプリには、必要なアクセス許可のみがあることを確認してください。 さらに、四半期または半年ごとにアプリのページへのリンクを含むメールをユーザーに送り、組織のデータへのアクセスが許可されるアプリを認識させることができます。 アプリケーションの種類に関する[詳細を学習](https://docs.microsoft.com/azure/active-directory/manage-apps/application-types)し、Azure AD でアプリの割り当てを[制御する方法](https://docs.microsoft.com/azure/active-directory/manage-apps/remove-user-or-group-access-portal)を確認してください。
@@ -549,7 +548,7 @@ Azure では、Azure Automation 内に変更追跡ソリューションがあり
 - Change Tracking [について学習する](https://docs.microsoft.com/azure/automation/automation-change-tracking)。
 - Azure Automation の機能[について学習する](https://docs.microsoft.com/azure/automation/automation-intro)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 他のベスト プラクティスを確認します。
 

@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:導入の強化
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド イノベーションの概要 - 導入の強化
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752103"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808517"
 ---
 # <a name="empower-adoption"></a>導入の強化
 
@@ -95,7 +94,7 @@ MVP ソリューションの初期の反復期間には、欠陥が想定され�
 
 Azure では、[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) に、カスタマー エクスペリエンスからデータを収集して確認するためのツールとインターフェイスが用意されています。 これらの観測と分析情報を適用して、[Azure Boards](https://docs.microsoft.com/azure/devops/boards) でバックログを調整できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 導入を強化するために必要なツールとプロセスについて理解したら、より高度なイノベーション規範である[デバイスの操作](./devices.md)を確認します。 この規範により、物理的エクスペリエンスとデジタル エクスペリエンス間の障壁を減らして、ソリューションをさらに簡単に導入できるようになります。
 

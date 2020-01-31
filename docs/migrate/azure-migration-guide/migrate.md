@@ -1,6 +1,5 @@
 ---
 title: 資産の移行
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 資産の移行
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681754"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807021"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>資産の移行 (インフラストラクチャ、アプリ、データ)
 
@@ -200,7 +199,7 @@ Database Experimentation Assistant には、以下のワークフロー アク�
 
 ## <a name="cosmos-db-data-migration-tool"></a>Cosmos DB データ移行ツール
 
-Azure Cosmos DB データ移行ツールでは、さまざまなソースからのデータを Azure Cosmos DB コレクションおよびテーブルにインポートできます。 JSON ファイル、CSV ファイル、SQL、MongoDB、Azure テーブル ストレージ、Amazon DynamoDB、さらには Azure Cosmos DB SQL API コレクションからインポートすることができます。 データ移行ツールは、SQL API の 1 つの単一パーティション コレクションから複数パーティション コレクションに移行する場合にも使用できます。
+Azure Cosmos DB データ移行ツールでは、さまざまなソースからのデータを Azure Cosmos DB コレクションおよびテーブルにインポートできます。 JSON ファイル、CSV ファイル、SQL、MongoDB、Azure Table Storage、Amazon DynamoDB、さらには Azure Cosmos DB SQL API コレクションからインポートすることができます。 データ移行ツールは、SQL API の 1 つの単一パーティション コレクションから複数パーティション コレクションに移行する場合にも使用できます。
 
 詳細については、次を参照してください。
 
@@ -222,7 +221,7 @@ Cloudamize は、移行戦略のすべてのフェーズに対応した ISV サ�
 
 Zerto は、Microsoft Hyper-V 環境と VMware vSphere 環境の両方に対応した仮想レプリケーションを提供します。
 
-[詳細情報](https://www.zerto.com/solutions/use-cases/data-center-migration-software)
+[詳細情報](https://www.zerto.com/modernize)
 
 ## <a name="carbonite"></a>Carbonite
 
@@ -271,9 +270,9 @@ Azure DevOps では、すべての必須機能と、Azure、オンプレミス�
 
 Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たなスキル上の責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
 
-ここでは、クラウド導入フレームワークにおける DevOps ガイダンスのセットアップを補完する Microsoft Learn のカスタマイズされたラーニング パスの例を示します。 
+ここでは、クラウド導入フレームワークにおける DevOps ガイダンスのセットアップを補完する Microsoft Learn のカスタマイズされたラーニング パスの例を示します。
 
-[Azure DevOps でアプリケーションを構築する](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/):Azure Pipelines と GitHub を使って、他の人と共同でアプリケーションを構築します。 パイプラインで自動テストを実行して、コードの品質を検証します。 潜在的な脆弱性がないかどうかソース コードとサードパーティ コンポーネントをスキャンします。 アプリケーションを構築するために連携させる複数のパイプラインを定義します。 Microsoft がホストするエージェントと独自のビルド エージェントの両方を使用して、アプリケーションを構築します。 
+[Azure DevOps でアプリケーションを構築する](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/):Azure Pipelines と GitHub を使って、他の人と共同でアプリケーションを構築します。 パイプラインで自動テストを実行して、コードの品質を検証します。 潜在的な脆弱性がないかどうかソース コードとサードパーティ コンポーネントをスキャンします。 アプリケーションを構築するために連携させる複数のパイプラインを定義します。 Microsoft がホストするエージェントと独自のビルド エージェントの両方を使用して、アプリケーションを構築します。
 
 # <a name="cost-managementtabmanagecost"></a>[コスト管理](#tab/ManageCost)
 

@@ -1,6 +1,5 @@
 ---
 title: Cost Management のメトリック、インジケーター、およびリスク許容度
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンスと関連した Cost Management の説明
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc026ec6fc1a82db3c5c025becd31cd5cf2e7d8d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aee529f6065e35645805a7f3d6577447eb48cf3f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752699"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806460"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management のメトリック、インジケーター、およびリスク許容度
 
@@ -48,7 +47,7 @@ Cost Management は一般に、コストに関連したメトリックに重点�
 - **年間の支出のトリガー:** クラウドの実験に年間 _x,000_ ドルを支出できる IT 研究開発予算を持つ会社。 この会社はそのクラウドで運用環境のワークロードを実行できますが、予算がその金額を超えていない場合は、まだ試験的なソリューションであると見なされます。 予算が超過したら、予算を運用環境への投資のように扱い、支出を厳密に管理する必要があります。
 - **運用経費を認めない (一般的ではない):** 運用経費を認めない会社では、開発テスト ワークロードをデプロイする前に、コスト管理を行う準備を整える必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画に整合するメトリックと許容度インジケーターを文書化します。
 

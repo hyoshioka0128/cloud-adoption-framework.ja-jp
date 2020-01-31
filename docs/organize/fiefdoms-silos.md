@@ -1,6 +1,5 @@
 ---
 title: サイロと封土
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: サイロと封土のアンチ パターンについて理解します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f0767ad4825a0b6b1506b8ee17e33eccf383325a
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 41f23244119358a3356f65f6050572e4a8c787c1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753644"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800816"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>組織のアンチパターン:サイロと封土
 
@@ -134,7 +133,7 @@ IT 封土は、リーダーシップの体系的な問題の兆候である場�
 
 必要な変更を推進するために、ビジネスの利害関係者、ビジネス上の動機、およびビジネスの成果との調整が必要なこともあります。 [クラウド戦略チーム](./cloud-strategy.md)、[クラウドのセンター オブ エクセレンス](./cloud-center-of-excellence.md)、[クラウド ガバナンス チーム](./cloud-governance.md)とのパートナーシップにより、防衛拠点に必要なデータ ポイントが提供される可能性があります。 必要に応じて、これらのチームは、IT リーダーだけでは対処できない課題に取り組むためのグループ エスカレーションに関与する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 組織のアンチパターンの破壊はチーム作業です。 このガイダンスに従って行動するには、適切なチーム構造と参加者を特定する組織の準備状況の概要を確認します。
 

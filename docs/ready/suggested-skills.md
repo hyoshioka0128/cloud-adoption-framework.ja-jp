@@ -1,6 +1,5 @@
 ---
 title: スキル準備パス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: スキル準備パスの概要
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8116c653656d2b5f20150aaf447225616e2657a6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566709"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798776"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
@@ -61,7 +60,7 @@ Azure に関する知識を [Microsoft Azure 認定のトレーニングや試�
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たなスキルと責任に対する準備は、容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
+Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
 
 次の例で、クラウド導入フレームワークの準備完了部分に合わせて、Microsoft Learn のいくつかのカスタマイズされたラーニングパスを示します。
 

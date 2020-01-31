@@ -1,6 +1,5 @@
 ---
 title: ビジネス コミットメント:クラウドの管理と運用
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ビジネス コミットメント:クラウドの管理と運用
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 02a4b4debf11507f557951652f362c02e4ae0ecc
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 4827ca2aac045b105beed9c15de366311092a7f2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160394"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807854"
 ---
 # <a name="business-commitment-in-cloud-management"></a>クラウド管理におけるビジネス コミットメント
 
@@ -153,7 +152,7 @@ ms.locfileid: "74160394"
 
 プロセスのこの時点までに、一元化または委任された責任、Azure テナント、コミットメントのレベルについてコミットメントが行われました。 クラウド運用チーム、クラウド戦略チーム、およびビジネスの利害関係者が、ワークロードを管理するためにこのコミットメントに合わせて連携していることを確認するために、各コミットメントを検証し、文書化する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 コミットメントが行われると、担当の運用チームは、対象となるワークロードの構成を開始できます。 開始するには、[インベントリと可視性](./inventory.md)に対するさまざまなアプローチを評価します。
 

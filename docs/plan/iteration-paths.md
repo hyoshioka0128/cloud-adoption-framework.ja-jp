@@ -1,6 +1,5 @@
 ---
 title: イテレーション計画とリリース計画の確立
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: イテレーション計画とリリース計画の確立
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0dbef36d3909f11c1616d2e44c63227959c4ff56
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bdd0150aef6c04b43121b5bef1224bea93191e2c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839177"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800340"
 ---
 # <a name="establish-iterations-and-release-plans"></a>イテレーション計画とリリース計画の確立
 
@@ -64,7 +63,7 @@ ms.locfileid: "70839177"
 
 Azure DevOps でクラウド導入計画を管理する場合は、各タスクとユーザー ストーリーにイテレーション パスを割り当てることで前出のプロセスが反映されます。 また、各ワークロードに特定のリリースをタグ付けすることもお勧めします。 このタグ付けと割り当てによって、タイムライン レポートに自動的にデータが取り込まれます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [タイムラインを見積もって](./timelines.md)予測を適切に伝えます。
 

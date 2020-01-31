@@ -1,6 +1,5 @@
 ---
 title: クラウド ガバナンス設計ガイドと企業ポリシーの合致
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンス設計ガイドと企業ポリシーの合致
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 522ab305b7538be303909a13d27879b3e98d2f67
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566147"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805372"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>クラウド ガバナンス設計ガイドと企業ポリシーの合致
 
@@ -33,7 +32,7 @@ ms.locfileid: "73566147"
 
 どのクラウド導入にも固有の目標、優先度、課題がありますが、これらのサンプルは、実際のポリシーをガイダンスに移し替えるための適切なテンプレートとなるはずです。 開始点として、実際の状況に最も近いシナリオを選択し、ポリシーの具体的なニーズに合うように変更します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 設計ガイダンスを用意したので、ポリシー コンプライアンスを確保するためのポリシー準拠プロセスを確立します。
 

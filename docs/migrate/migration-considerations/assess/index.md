@@ -1,6 +1,5 @@
 ---
 title: 移行前に資産を評価する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 移行前に資産を評価する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 76862bfbc4a88d34edb3dddb6281b5c435e6be73
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753461"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802499"
 ---
 # <a name="assess-assets-prior-to-migration"></a>移行前に資産を評価する
 
@@ -58,7 +57,7 @@ ms.locfileid: "73753461"
 > [!CAUTION]
 > この責任とアクションの完全な一覧は、責任のレベルが異なる複数のロールが関与し、詳細な承認プロセスを必要とする、大規模で複雑な移行をサポートできます。 小規模の単純な移行作業では、ここで説明されているロールとアクションのすべてが必要なわけではない可能性があります。 これらのアクティビティのどれに価値があり、どれが不必要であるかを判断するために、クラウド導入チームとクラウド戦略チームは、最初のワークロードの移行の一環としてこの完全なプロセスを使用する必要があります。 ワークロードを検証してテストした後、チームは、このプロセスを評価して、今後も使用するアクションを選択できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 評価プロセスをおおまかに理解したうえで、[ビジネスの優先順位を調整する](./business-priorities.md)ことで、このプロセスを開始できます。
 

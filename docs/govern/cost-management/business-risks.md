@@ -1,6 +1,5 @@
 ---
 title: Cost Management の目的とビジネス上のリスク
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cost Management の目的とビジネス上のリスク
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16408b01e06e29fc2697dbbdd053126d026920f0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753261"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806511"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management の目的とビジネス上のリスク
 
-この記事では、クラウド ガバナンス戦略でお客様が Cost Management の規範を一般的に採用する理由について説明します。 ポリシー ステートメントを促進するビジネス リスクの例もいくつか提示します。
+この記事では、クラウド ガバナンス戦略でお客様が Cost Management の規範を一般的に採用する理由について説明します。 ポリシー ステートメントを追いやるビジネス リスクの例もいくつか示します。
 
 <!-- markdownlint-disable MD026 -->
 
@@ -32,7 +31,7 @@ ms.locfileid: "73753261"
 
 ## <a name="business-risk"></a>ビジネス リスク
 
-Cost Management の規範は、クラウド ベースのワークロードをホストする場合に伴う費用に関連するコア ビジネスのリスクに対処しようとします。 ビジネスとの連携により、これらのリスクを特定し、クラウドのデプロイを計画して実装したら、妥当性について各リスクを監視します。
+コスト管理規範で、クラウドベースのワークロードをホストする場合に発生する費用に関連するコア ビジネス リスクへの対処を試みます。 ビジネスとの連携により、これらのリスクを特定し、クラウドのデプロイを計画して実装したら、妥当性について各リスクを監視します。
 
 リスクは組織によって異なりますが、クラウド ガバナンス チーム内でのディスカッションの開始点として使用できる一般的なコスト関連のリスクとして以下を利用できます。
 
@@ -41,7 +40,7 @@ Cost Management の規範は、クラウド ベースのワークロードをホ
 - **異常な支出:** いずれかの方向への予期せぬ急上昇は、不適切な使用のインジケーターとなる可能性があります。
 - **オーバープロビジョニングされた資産:** 資産がアプリケーションまたは仮想マシン (VM) のニーズを超える構成でデプロイされると、資産が無駄になる可能性があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 

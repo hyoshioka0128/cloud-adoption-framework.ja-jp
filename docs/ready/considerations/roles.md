@@ -1,6 +1,5 @@
 ---
 title: 推奨されるロールベースのアクセス制御
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 推奨されるロールベースのアクセス制御
 author: rotycenh
 ms.author: brblanch
@@ -11,12 +10,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2b7af250046e024393d14e37ae2985f8bf453be7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561773"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806868"
 ---
 # <a name="role-based-access-control"></a>ロールベースのアクセス制御
 
@@ -75,7 +74,7 @@ RBAC を使用すると、組織は大規模なクラウド資産内のさまざ
 
 <!-- markdownlint-disable MD033 -->
 
-| Group | 一般的なロール名 | 責任 |
+| Group | 一般的なロール名 | 役割 |
 | --- | --- | --- |
 | セキュリティ運用担当者 | SecOps | 全般的なセキュリティ監視を行います。<br/><br/> 保存時の暗号化などのセキュリティ ポリシーを確立して適用します。<br/><br/> 暗号化キーを管理します。<br/><br/> ファイアウォール規則を管理します。 |
 | ネットワーク運用担当者 | NetOps | ルートやピアリングなど、仮想ネットワーク内のネットワーク構成および運用を管理します。 |

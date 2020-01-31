@@ -1,6 +1,5 @@
 ---
 title: Linux サービス デスクトップ アプリを Azure と Azure Database for MySQL にリホストする
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Contoso が、オンプレミスの Linux アプリを Azure VM と Azure Database for MySQL に移行することによって、どのようにこのアプリをリホストするかを説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2a695af758ae7e99a7c2257f3adf4ce5058ae3d
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: d6f812c8f32ec9481942f697151e7ed803654a1b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160329"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807412"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>オンプレミスの Linux アプリを Azure VM と Azure Database for MySQL にリホストする
 
@@ -88,7 +87,7 @@ Web VM を移行するには:
 
 <!-- markdownlint-disable MD033 -->
 
-**要件** | **詳細**
+**必要条件** | **詳細**
 --- | ---
 **Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。
 **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。<br/><br/> Site Recovery 用の[ネットワーク](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network)と[ストレージ](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage)の具体的な要件の詳細を確認してください。
@@ -103,9 +102,9 @@ Contoso 管理者は、次のようにして移行を完了します。
 
 > [!div class="checklist"]
 >
-> - **手順 1:Site Recovery のために Azure を準備する。** レプリケートされたデータを保持するための Azure ストレージ アカウントを作成し、Recovery Services コンテナーを作成します。
+> - **ステップ 1:Site Recovery のために Azure を準備する。** レプリケートされたデータを保持するための Azure ストレージ アカウントを作成し、Recovery Services コンテナーを作成します。
 > - **手順 2:Site Recovery のためにオンプレミスの VMware を準備する。** フェールオーバー後に Azure VM に接続するために、VM 検出およびエージェント インストール用のアカウントを準備します。
-> - **手順 3:データベースをプロビジョニングする。** Azure で、Azure Database for MySQL のインスタンスをプロビジョニングします。
+> - **ステップ 3:データベースをプロビジョニングする。** Azure で、Azure Database for MySQL のインスタンスをプロビジョニングします。
 > - **手順 4:VM をレプリケートする。** Site Recovery のソース環境とターゲット環境を構成し、レプリケーション ポリシーを設定して、Azure のストレージへの VM のレプリケーションを開始します。
 > - **手順 5:データベースを移行する。** MySQL ツールを使用して移行を設定します。
 > - **手順 6:Site Recovery を使用して VM を移行する。** 最後に、テスト フェールオーバーを実行してすべてが機能していることを確認した後、完全フェールオーバーを実行して VM を Azure に移行します。
@@ -135,7 +134,7 @@ Contoso 管理者は、次のようにストレージ アカウントとコン�
 
 Site Recovery のために Azure を設定することについての[説明を参照します](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure)。
 
-## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>手順 2: Site Recovery のためにオンプレミスの VMware を準備する
+## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>手順 2:Site Recovery のためにオンプレミスの VMware を準備する
 
 Contoso の管理者は、次のようにオンプレミスの VMware インフラストラクチャを準備します。
 
@@ -372,19 +371,19 @@ VM を移行するために、Contoso 管理者は VM を含む復旧計画を�
 
 2. 計画に基づいてフェールオーバーを実行します。 最新の復旧ポイントを選択し、Site Recovery では、フェールオーバーをトリガーする前にオンプレミス VM のシャットダウンを試みる必要があることを指定します。 フェールオーバーの進行状況は **[ジョブ]** ページで確認できます。
 
-    ![フェールオーバー](./media/contoso-migration-rehost-linux-vm-mysql/failover1.png)
+    ![[フェールオーバー]](./media/contoso-migration-rehost-linux-vm-mysql/failover1.png)
 
 3. フェールオーバー中に、vCenter Server は、ESXi ホストで実行されている 2 つの VM を停止するコマンドを発行します。
 
-    ![フェールオーバー](./media/contoso-migration-rehost-linux-vm-mysql/vcenter-failover.png)
+    ![[フェールオーバー]](./media/contoso-migration-rehost-linux-vm-mysql/vcenter-failover.png)
 
 4. フェールオーバーが完了したら、Azure VM が想定どおりに Azure Portal に表示されることを確認します。
 
-    ![フェールオーバー](./media/contoso-migration-rehost-linux-vm-mysql/failover2.png)
+    ![[フェールオーバー]](./media/contoso-migration-rehost-linux-vm-mysql/failover2.png)
 
 5. VM を確認したら、移行を完了します。 これで、VM のレプリケーションが停止し、その VM に対する Site Recovery の課金が停止します。
 
-    ![フェールオーバー](./media/contoso-migration-rehost-linux-vm-mysql/failover3.png)
+    ![[フェールオーバー]](./media/contoso-migration-rehost-linux-vm-mysql/failover3.png)
 
 **さらにサポートが必要な場合**
 
@@ -438,7 +437,7 @@ VM を移行するために、Contoso 管理者は VM を含む復旧計画を�
 
 アプリが実行されるようになり、Contoso は新しいインフラストラクチャを完全に操作可能にして、セキュリティで保護する必要があります。
 
-### <a name="security"></a>セキュリティ
+### <a name="security"></a>Security
 
 Contoso のセキュリティ チームは VM とデータベースを再調査して、セキュリティの問題を特定します。
 
@@ -452,8 +451,8 @@ Contoso のセキュリティ チームは VM とデータベースを再調査�
 
 事業継続とディザスター リカバリーのために、Contoso は次のアクションを実施します。
 
-- **データの安全性を確保する。** Contoso は、Azure Backup サービスを使用して、アプリの VM 上のデータをバックアップします。 [詳細情報](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。 データベースのバックアップを構成する必要はありません。 Azure Database for MySQL は、サーバーのバックアップを自動的に作成して保存します。 彼らはデータベースのために geo 冗長性を使用することを選択したため、このデータベースは耐障害性があり、運用準備ができています。
-- **アプリの稼働状態を維持する。** Contoso は、Site Recovery を使用して、Azure 内のアプリの VM をセカンダリ リージョンにレプリケートします。 [詳細情報](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
+- **データの安全性を確保する。** Contoso は、Azure Backup サービスを使用して、アプリの VM 上のデータをバックアップします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)。 データベースのバックアップを構成する必要はありません。 Azure Database for MySQL は、サーバーのバックアップを自動的に作成して保存します。 彼らはデータベースのために geo 冗長性を使用することを選択したため、このデータベースは耐障害性があり、運用準備ができています。
+- **アプリの稼働状態を維持する。** Contoso は、Site Recovery を使用して、Azure 内のアプリの VM をセカンダリ リージョンにレプリケートします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 

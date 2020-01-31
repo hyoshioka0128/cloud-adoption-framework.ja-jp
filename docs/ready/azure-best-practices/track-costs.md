@@ -1,6 +1,5 @@
 ---
 title: 事業単位、環境、プロジェクトをまたいでコストを追跡する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 事業単位、環境、プロジェクトをまたいでコストを追跡する
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b9bc3a5c2b2bf62c49726a29cedbac81d1d1a96e
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: a416f5eef95717792036c1a40b99614cefde2cec
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520176"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799660"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -83,7 +82,7 @@ Azure Cost Management では、各スコープに対して次の組み込みロ�
 
 一般的なベスト プラクティスとしては、すべてのチームのメンバーに Cost Management 共同作成者のロールを割り当てます。 このロールでは、予算を作成および管理し、コストをより効果的に監視してレポートできるようにエクスポートするためのアクセス権が付与されます。 ただし、[クラウド戦略チーム](../../organize/cloud-strategy.md)のメンバーは、Cost Management 閲覧者のみに設定する必要があります。 Azure Cost Management ツール内での予算の設定に関与しないためです。
 
-### <a name="scope"></a>スコープ
+### <a name="scope"></a>Scope
 
 次のスコープとロールの設定により、コスト管理に必要な可視性が作成されます。 このベスト プラクティスは、資産の編成方法に応じて若干の変更が必要になることがあります。
 

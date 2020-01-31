@@ -1,6 +1,5 @@
 ---
 title: 合理化決定を見直す
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 合理化決定を見直す
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 47efac0b85198e95a76d40ad053a33c8051837ea
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564132"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800187"
 ---
 # <a name="review-rationalization-decisions"></a>合理化決定を見直す
 
@@ -67,7 +66,7 @@ Azure DevOps でクラウド導入計画を管理する場合は、親作業項�
 
 複数のプロジェクトを伴う大規模で複雑な導入計画では、イテレーション パスを更新することを検討してください。 区分パスを変更すると、そのパスに割り当てられているチームだけがワークロードを表示できるようになります。 この変更により、表示できるタスクの数が減るため、クラウド導入チームの作業が容易になります。 ただし、プロジェクト管理プロセスはより複雑になります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 計画作業を開始するために[イテレーションとリリースを定義します](./iteration-paths.md)。
 

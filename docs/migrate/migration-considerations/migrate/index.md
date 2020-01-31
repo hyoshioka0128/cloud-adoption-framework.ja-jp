@@ -1,19 +1,18 @@
 ---
 title: 移行の実行
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 移行の実行
+description: Azure でのワークロードの移行に関連する可能性のあるさまざまなアクティビティについて説明する記事の概要を説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 21520edecc7ba874713561672cd0bd38aa96c0a2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62100df7a32ca904454e0df2d7be8c1a860fd611
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818235"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802278"
 ---
 # <a name="execute-a-migration"></a>移行を実行する
 
@@ -43,7 +42,7 @@ ms.locfileid: "70818235"
   - 昇格モデルによっては、このアクティビティを完了するには別のツールが必要な場合があります。
 - **ステージング。** ワークロードのすべての資産のレプリケーションと検証を行った後、ビジネス テストとビジネス変更プランを実行するために、ワークロードをステージングできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 移行プロセスをおおまかに理解したら、[昇格モデルを決定する](./promotion-models.md)ことができます。
 

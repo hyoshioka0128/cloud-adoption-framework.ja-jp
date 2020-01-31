@@ -1,6 +1,5 @@
 ---
 title: デプロイ高速化テンプレート
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: デプロイ高速化テンプレート
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 96b10c0c5494325c2cd7b46c1415dfd544932962
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 210abd5fe90810dea0d4da65422b2db8d66b4c26
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223599"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806358"
 ---
 # <a name="deployment-acceleration-template"></a>デプロイ高速化テンプレート
 
@@ -31,7 +30,7 @@ ms.locfileid: "71223599"
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 堅実なガバナンス プラクティスは、ビジネス リスクの理解から始まります。 ビジネス リスクに関する記事をレビューし、現在のクラウド導入計画に整合するビジネス リスクの文書化を開始してください。
 

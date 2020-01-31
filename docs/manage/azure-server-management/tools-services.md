@@ -1,6 +1,5 @@
 ---
 title: Azure サーバー管理ツールおよびサービス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure サーバー管理ツールおよびサービス
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,22 +7,22 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 51564add9bfe50ab494b39344eb24d3079fce000
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565280"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807939"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure サーバー管理ツールおよびサービス
 
 このガイダンスの[概要](./index.md)で説明したように、Azure サーバー管理サービスのスイートは次の分野を対象としています。
 
 - 移行
-- セキュリティ保護
+- セキュリティで保護
 - 保護
-- 監視
-- 構成
+- モニター
+- [構成]
 - ガバナンス
 
 次のセクションでは、これらの管理領域について簡単に説明し、それらに対応する主な Azure サービスに関する詳細なコンテンツへのリンクを提供します。
@@ -32,7 +31,7 @@ ms.locfileid: "73565280"
 
 移行サービスは、Azure へのワークロードの移行を支援します。 最適なガイダンスを提供するために、Azure Migrate サービスではまず、オンプレミス サーバーのパフォーマンスが測定され、移行の適合性が評価されます。 Azure Migrate による評価が完了したら、[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) や [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してオンプレミスのマシンを Azure に移行できます。
 
-## <a name="secure"></a>セキュリティ保護
+## <a name="secure"></a>セキュリティで保護
 
 [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) は、包括的なセキュリティ管理アプリケーションです。 Security Center にオンボードすると、環境のセキュリティや規制遵守の状態をすぐに評価できます。 Azure Security Center にサーバーをオンボードする手順は、[サブスクリプションに対する Azure 管理サービスの構成](./onboard-at-scale.md#azure-security-center)に関するページを参照してください。
 
@@ -54,7 +53,7 @@ ms.locfileid: "73565280"
 
 ファイルサーバー データについては、[Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) サービスも検討の対象となります。このサービスでは、オンプレミス ファイル サーバーの柔軟性、パフォーマンス、互換性を維持しながら、Azure Files で組織のファイル共有を一元化できます。 このサービスを使用するには、Azure File Sync をデプロイする手順に従ってください。
 
-## <a name="monitor"></a>監視
+## <a name="monitor"></a>モニター
 
 [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) では、アプリケーション、コンテナー、仮想マシンなど、さまざまなリソースを表示できます。 また、複数のソースからデータを収集します。
 
@@ -62,7 +61,7 @@ ms.locfileid: "73565280"
 - ログ分析 ([ログ](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) は Azure Monitor の機能です。 Azure 管理全体の中心的役割を果たします。 ログ分析やその他多数の Azure サービスのデータ ストアとして機能します。 高機能なクエリ言語を提供しているほか、アプリケーションやリソースの操作に関する分析情報が得られる分析エンジンを搭載しています。
 - [Azure アクティビティ ログ](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)も Azure Monitor の機能です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
 
-## <a name="configure"></a>構成
+## <a name="configure"></a>[構成]
 
 このカテゴリには複数のサービスが含まれます。 次のような場合に役立ちます。
 
@@ -98,7 +97,7 @@ Azure 管理サービスの価格の詳細については、次のページを�
 - [Azure Security Center](https://azure.microsoft.com/pricing/details/security-center)
 
 - 次を含む [Azure Automation](https://azure.microsoft.com/pricing/details/automation)。
-  - Desired State Configuration
+  - 必要な状態の構成
   - Azure Update Management サービス
   - Azure Change Tracking および Inventory サービス
 

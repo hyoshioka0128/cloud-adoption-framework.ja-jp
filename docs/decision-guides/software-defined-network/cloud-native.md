@@ -1,6 +1,5 @@
 ---
 title: ソフトウェア定義ネットワーク:クラウドネイティブ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウドネイティブ仮想ネットワーク サービスの説明。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bf585f923a4c8abddeeb56bab4a3a4b8eb370f8d
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160209"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806647"
 ---
 # <a name="software-defined-networking-cloud-native"></a>ソフトウェア定義ネットワーク:クラウドネイティブ
 
@@ -37,7 +36,7 @@ ms.locfileid: "74160209"
 - オンプレミスのデータ センターで実行するように設計された既存のワークロードでは、ストレージや認証サービスなどのクラウド ベースの機能を活用するために、大がかりな変更が必要になることがあります。
 - クラウドネイティブ ネットワークは、クラウド プラットフォーム管理ツールを通じてのみ管理されるので、時間の経過とともに、管理とポリシーが既存の IT 標準とは異なる状況になる可能性があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Azure でのクラウドネイティブ仮想ネットワークの詳細については、以下を参照してください。
 

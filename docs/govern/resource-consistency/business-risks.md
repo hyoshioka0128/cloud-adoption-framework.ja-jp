@@ -1,6 +1,5 @@
 ---
 title: リソースの整合性の目的とビジネス上のリスク
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: リソースの整合性の目的とビジネス上のリスク
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e1c4723aa52c20c16dbfa883d7e8566292ca54b3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222007"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807225"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>リソースの整合性の目的とビジネス上のリスク
 
@@ -43,7 +42,7 @@ ms.locfileid: "71222007"
 - **管理の非効率性。** 一貫性のある名前付けおよびタグ付けのメタデータがリソースに関連付けられていないと、IT スタッフが管理タスクに関するリソースを探したり、資産に関連する所有権および会計情報を特定したりするのが困難になります。 その結果、コストが増大し、サービスの中断やその他の運用上の問題に対する IT の対応が遅くなる可能性がある管理上の非効率が生じます。
 - **ビジネスの中断。** 組織で確立されたサービス レベル アグリーメント (SLA) の違反となるサービス中断は、事業の喪失やその他の財務上の影響を会社にもたらす可能性があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 

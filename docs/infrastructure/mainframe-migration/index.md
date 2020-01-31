@@ -1,6 +1,5 @@
 ---
 title: メインフレーム移行の概要
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: メインフレームで現在実行されているシステムに関してメインフレーム環境から Azure にアプリケーションを移行します。Azure は可用性が高く、スケーラブルなインフラストラクチャであることが証明されています。
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 88f844cb0a80971457beeb8814a109d70bb5d814
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 899e1575fa4e8c3bd83ebec38f0a38cb1e02d314
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547930"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808789"
 ---
 # <a name="mainframe-migration-overview"></a>メインフレーム移行の概要
 
@@ -71,7 +70,7 @@ IBM システムでは、CICS などのトランザクション モニターを�
 
 - **初期プログラム ロード (IPL):** ディスクからプロセッサの実ストレージにオペレーティング システムのコピーを読み込み、実行することを指します。 IPL はダウンタイムからの復帰に利用されます。 IPL は、Windows や Linux の VM でのオペレーティング システムの起動に似ています。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [通説と事実](./myths-and-facts.md)

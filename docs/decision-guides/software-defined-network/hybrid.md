@@ -1,6 +1,5 @@
 ---
 title: ソフトウェア定義ネットワーク:ハイブリッド ネットワーク
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: ハイブリッド ネットワークで、クラウドの仮想ネットワークをオンプレミス リソースに接続できるようにする方法の説明。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 94e285f59442b6632209e1cd6a76c39cfccd337b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 61ce3447a852ec8aa1caa0737b0f3757f0f26450
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837857"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806613"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>ソフトウェア定義ネットワーク:ハイブリッド ネットワーク
 

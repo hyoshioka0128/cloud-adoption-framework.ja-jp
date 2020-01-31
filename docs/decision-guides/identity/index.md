@@ -1,6 +1,5 @@
 ---
 title: ID 決定ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 移行のコア サービスとしての ID について説明します。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b447330368823947bfe027036b14c3a6c1fb94f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753190"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807106"
 ---
 # <a name="identity-decision-guide"></a>ID 決定ガイド
 
@@ -36,7 +35,7 @@ Azure では、Azure Active Directory (Azure AD) はクラウド リソースを
 |------|------|------|------|------|
 | 現在、オンプレミス ディレクトリ サービスがない | はい | いいえ | いいえ | いいえ |
 | ワークロードがクラウド環境とオンプレミス環境の間で共通のユーザーおよびグループのセットを使用する必要がある | いいえ | はい | いいえ | いいえ |
-| ワークロードがレガシ認証メカニズム (Kerberos や NTLM など) に依存している | いいえ | いいえ | 可能 | はい |
+| ワークロードがレガシ認証メカニズム (Kerberos や NTLM など) に依存している | いいえ | いいえ | はい | はい |
 | 複数の ID プロバイダーにわたってシングル サインオンが必要である | いいえ | いいえ | いいえ | はい |
 
 Azure への移行を計画する際には、既存の ID 管理とクラウド ID サービスを最適に統合する方法を決定する必要があります。 一般的な統合シナリオを以下に示します。
@@ -105,7 +104,7 @@ Azure での ID サービスの詳細については、以下を参照してく�
 - [Active Directory Domain Services (AD DS) の Azure への拡張](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)。 この参照アーキテクチャでは、ドメイン サービスをクラウドベース リソースに拡張するために AD DS サーバーをデプロイする例を示します。
 - [Active Directory Federation Services (AD FS) の Azure への拡張](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs)。 この参照アーキテクチャでは、Azure AD ディレクトリでのフェデレーション認証と許可を実行するために Active Directory フェデレーション サービス (AD FS) を構成する方法を示します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ID は、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
 

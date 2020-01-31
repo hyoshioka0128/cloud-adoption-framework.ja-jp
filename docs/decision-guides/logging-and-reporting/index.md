@@ -1,6 +1,5 @@
 ---
 title: ログとレポートの意思決定ガイド
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure 移行のコア サービスとしてのログ、レポート、および監視について学習します。
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 038137088abe02160fd199cef468ecc5d5756281
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753164"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806766"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -34,7 +33,7 @@ ms.locfileid: "73753164"
 
 | 質問 | クラウドネイティブ | オンプレミスの拡張機能 | ハイブリッド監視 | ゲートウェイ集約 |
 |-----|-----|-----|-----|-----|
-| 既存のオンプレミスの監視インフラストラクチャはありますか? | いいえ | 可能 | はい |  いいえ |
+| 既存のオンプレミスの監視インフラストラクチャはありますか? | いいえ | はい | はい |  いいえ |
 | ログ データの外部の保存場所への格納を妨げている要件はありますか? | いいえ | はい | いいえ | いいえ |
 | クラウド監視とオンプレミス システムを統合する必要がありますか? | いいえ | いいえ | はい | いいえ |
 テレメトリ データを監視システムに送信する前に、処理またはフィルター処理する必要がありますか? | いいえ | いいえ | いいえ | はい |
@@ -122,9 +121,9 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 - 外部サービスとの統合および監視とアラート サービスの自動化のための [REST API](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-rest-api-walkthrough)。
 - 多くの人気のあるサード パーティ ベンダーとの[統合](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-partners)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-ログとレポートは、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)の記事を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
+ログとレポートは、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
 
 > [!div class="nextstepaction"]
 > [アーキテクチャの意思決定ガイド](../index.md)

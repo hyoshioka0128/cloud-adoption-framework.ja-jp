@@ -1,6 +1,5 @@
 ---
 title: 変革の過程の評価
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 変革の過程の評価
 author: alexbuckgit
 ms.author: abuck
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 413a7023738f510f5b08692a3f88a88cd3333632
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a25e7c9149c14d25f86f7095db8404b85cc95b48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032287"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806528"
 ---
 # <a name="assess-your-transformation-journey"></a>変革の過程の評価
 
@@ -47,7 +46,7 @@ ms.locfileid: "71032287"
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 小規模で簡単に実装されるガバナンス ツールのセットを使って、ガバナンス体験を始めます。 この最初のガバナンス基盤は、実用最小限の製品 (MVP) と呼ばれます。
 

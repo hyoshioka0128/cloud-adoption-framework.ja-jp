@@ -1,6 +1,5 @@
 ---
 title: ID ベースライン規範の概要
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド ガバナンスに関連する ID ベースラインの説明
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c134cd2a3cf17cd4e650f637fec2c417f3c29ff1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1ac3041abc6e4721366f8270ce37d6bf6885b140
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566191"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806188"
 ---
 # <a name="identity-baseline-discipline-overview"></a>ID ベースライン規範の概要
 
@@ -159,9 +158,9 @@ ID ベースラインは、[クラウド導入フレームワーク ガバナン
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 特定の環境で[ビジネス上のリスク](./business-risks.md)を評価する方法の概要です。
 
 > [!div class="nextstepaction"]
-> [ビジネス上のリスクについての理解](./business-risks.md)
+> [ビジネス リスクを理解する](./business-risks.md)

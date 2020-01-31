@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:データの民主化
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラウド イノベーションの概要 - データの民主化
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 158c3e25bac2124312a8ceaf3ac5500a58246f48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753036"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808500"
 ---
 # <a name="democratize-data"></a>データの民主化
 
@@ -44,7 +43,7 @@ ms.locfileid: "73753036"
 
 データを共有すると、顧客との会話で使用できる MVP を迅速に作成できます。 ただし、その共有データを有用で実用的な知識に変えるには、多くの場合、必要なことがもう少しあります。 データ共有によって仮説が検証されたら、通常、開発の次のフェーズはデータ ガバナンスです。
 
-データ ガバナンスは、独自の専用フレームワークを必要とする可能性がある広範なトピックです。 その粒度は、[クラウド導入フレームワーク](../../index.md)の範囲外となります。 ただし、顧客の仮説が検証されたらすぐに考慮すべきデータ ガバナンスの側面がいくつかあります。 例:
+データ ガバナンスは、独自の専用フレームワークを必要とする可能性がある広範なトピックです。 その粒度は、[クラウド導入フレームワーク](../../index.md)の範囲外となります。 ただし、顧客の仮説が検証されたらすぐに考慮すべきデータ ガバナンスの側面がいくつかあります。 次に例を示します。
 
 - **共有データは機密情報ですか?** 顧客と会社の利益を保護するために、一般公開の前は[データを機密扱いにする必要があります](../../govern/policy-compliance/data-classification.md)。
 - **データの機密性が高い場合、セキュリティで保護されていますか?** データの民主化では、機密データの保護を必須とする必要があります。 [データ ソリューションのセキュリティ保護](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions)に重点を置いたワークロードの例では、データをセキュリティで保護するためのリファレンスがいくつか提供されています。
@@ -82,7 +81,7 @@ IT 環境でデータが中断されると、イノベーションの機会が�
 
 SQL Server 2017 と Azure SQL Data Warehouse の両方で、[PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) がサポートされています。これは、Azure で最もよく使用されるデータ仮想化へのアプローチです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 データを民主化する戦略を立てたら、次に、[アプリを使用してカスタマー エンゲージメントを構築する](./apps.md)アプローチを評価します。
 

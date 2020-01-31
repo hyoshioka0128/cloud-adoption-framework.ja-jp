@@ -1,6 +1,5 @@
 ---
 title: クラウド イノベーション:Azure の予測して影響を与えるためのツール
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure の予測して影響を与えるためのツール
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9bb5f837ce3a7bb07fb108f48229f488df1b9dc7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 656074ea65f490dea1345c2e00742846323cf6db
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565796"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808619"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>Azure のデータを予測して影響を与えるためのツール
 
@@ -42,7 +41,7 @@ Azure では、上記の各フェーズでデジタル発明を加速するた�
 
 予測の影響の各フェーズで各ツールがどのように役立つかについては、このページの左側の目次のガイダンスに反映されています。
 
-## <a name="get-started"></a>作業開始
+## <a name="get-started"></a>はじめに
 
 このページの左側の目次に、さまざまな記事がまとめられています。 これらの記事は、このツールチェーン内の各ツールの使用を開始するのに役立ちます。
 

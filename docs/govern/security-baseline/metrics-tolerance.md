@@ -1,6 +1,5 @@
 ---
 title: セキュリティ ベースラインのメトリック、インジケーター、およびリスク許容度
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: セキュリティ ベースラインのメトリック、インジケーター、およびリスク許容度
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b8171839b79ffbe9e3849cf303180d1f1ee049f2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1075563dd4596ad6bd1b4ac202a69a1ab1251cba
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222840"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808857"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>セキュリティ ベースラインのメトリック、インジケーター、およびリスク許容度
 
@@ -57,7 +56,7 @@ ms.locfileid: "71222840"
 
 リスク許容度とセキュリティ ベースライン規範への投資レベルを測定するために使用する正確なメトリックとトリガーは組織固有のものとなりますが、上記の例は、クラウド ガバナンス チーム内での協議を行うための有用な開始点として機能するはずです。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画に整合するメトリックと許容度インジケーターを文書化します。
 

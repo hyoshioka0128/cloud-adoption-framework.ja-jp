@@ -1,6 +1,5 @@
 ---
 title: 複数のデータセンター
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 複数のデータセンター
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024784"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803077"
 ---
 # <a name="multiple-datacenters"></a>複数のデータセンター
 
@@ -35,7 +34,7 @@ ms.locfileid: "71024784"
 
 複数のデータセンターに対応するための範囲の拡大での評価プロセスに対する最大の変更は、ワークロードの正確な記録と優先順位付け、およびデータセンター間の依存関係に関連しています。
 
-### <a name="suggested-action-during-the-assess-process"></a>評価プロセス中の推奨されるアクション
+### <a name="suggested-action-during-the-assess-process"></a>評価プロセス中に推奨されるアクション
 
 **データセンター間の依存関係の評価:** [Azure Migrate の依存関係視覚化ツール](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)は、依存関係の特定を支援できます。 移行前にこのツール セットを使用することは、一般的に適切なベスト プラクティスです。 ただし、グローバルな複雑さを処理する場合は、評価プロセスで実行する必要がある手順になります。 [依存関係のグループ化](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)による視覚化は、ワークロードをサポートするために必要な資産の IP アドレスとポートを特定することを支援できます。
 
@@ -65,7 +64,7 @@ ms.locfileid: "71024784"
 
 セキュリティ保護プロセスと管理プロセスでは、この範囲の拡大による変更はありません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [範囲拡大チェックリスト](./index.md)に戻り、移行方法が完全に調整されていることを確認します。
 
