@@ -1,6 +1,5 @@
 ---
 title: Azure に移行するワークロードの料金計算とサイズ設定のベスト プラクティス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure に移行するワークロードの料金計算とサイズ設定のベスト プラクティスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b358c4d07e4adb30c0420c9d1b3bc85c25e9ce95
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 03fb8ab37657ea500c342884e2ae2ca1c1290fca
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024939"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803723"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Azure に移行するワークロードの料金計算とサイズ設定のベスト プラクティス
 
@@ -76,7 +75,7 @@ ms.locfileid: "71024939"
 - 種類ごとに、内部にいくつかの VM シリーズがあります。
 - さらに、あるシリーズ内の VM を選択すると、そのシリーズ内の VM のみをスケールアップまたはスケールダウンできます。 たとえば、DSv2\_2 は DSv2\_4 にスケールアップできますが、Fsv2\_2 などの異なるシリーズには変更できません。
 
-**詳細情報**:
+**詳細情報:**
 
 - VM の種類とサイズ設定、およびサイズの種類へのマップに関する[詳細を確認します](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)。
 - VM のサイズ変更を[計画](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs)します。
@@ -99,7 +98,7 @@ Azure では、ストレージ データのさまざまな種類が提供され�
 **データの種類** | **詳細** | **使用方法**
 --- | --- |  ---
 **BLOB** | テキスト データやバイナリ データなどの大量の非構造化オブジェクトを格納するために最適化されています<br/><br/> | HTTP/HTTPS 経由でどこからでもデータにアクセスします。 | ストリーミングやランダム アクセスのシナリオに使用します。 たとえば、イメージやドキュメントをブラウザーに直接提供する、ビデオやオーディオをストリーム配信する、バックアップやディザスター リカバリーのデータを格納するなどです。
-**ファイル** | マネージド ファイル共有は SMB 3.0 経由でアクセスされます | オンプレミスのファイル共有を移行する場合に、ファイル データへの複数アクセス/接続を提供するために使用します。
+**[ファイル]** | マネージド ファイル共有は SMB 3.0 経由でアクセスされます | オンプレミスのファイル共有を移行する場合に、ファイル データへの複数アクセス/接続を提供するために使用します。
 **ディスク** | ページ BLOB に基づきます。<br/><br/> ディスクの種類 (速度):Standard (HDD または SSD) または Premium (SSD)。<br/><br/>ディスクの管理:アンマネージド (ユーザーがディスクの設定とストレージを管理する) またはマネージド (ユーザーがディスクの種類を選択し、Azure 側でディスクを管理する)。 | VM には Premium ディスクを使用します。 簡単な管理とスケーリングのためにはマネージド ディスクを使用します。
 **キュー** | 認証された呼び出し (HTTP または HTTPS) を介してアクセスされる大量のメッセージを格納および取得します | 非同期メッセージ キューを使用してアプリのコンポーネントを接続します。
 **テーブル** | テーブルを格納します。 | 現在では Azure Cosmos DB Table API の一部です。
@@ -116,7 +115,7 @@ Azure のストレージには、ブロック BLOB データにアクセスす�
 --- | --- | ---
 **ホット** | ストレージ コストはクールより高いです。 アクセス料金はクールよりも低いです。<br/><br/>これが既定のレベルです。 | 頻繁にアクセスされる、アクティブに使用中のデータに使用します。
 **クール** | ストレージ コストはホットより低いです。 アクセス料金はホットよりも高いです。<br/><br/> 少なくとも 30 日間格納します。 | 短期に格納し、データは使用できますが、アクセス頻度は低いものです。
-**アーカイブ** | 個々 のブロック BLOB に使用されます。<br/><br/> 最も費用対効果の高いストレージ オプション。 データ アクセスは、ホットとコールドよりも高価です。 | 取得の待ち時間としてのサーバー時間を許容でき、少なくとも 180 日間同じレベルに留まるデータに使用します。
+**Archive** | 個々 のブロック BLOB に使用されます。<br/><br/> 最も費用対効果の高いストレージ オプション。 データ アクセスは、ホットとコールドよりも高価です。 | 取得の待ち時間としてのサーバー時間を許容でき、少なくとも 180 日間同じレベルに留まるデータに使用します。
 
 <!--markdownlint-enable MD033 -->
 
@@ -146,7 +145,7 @@ Azure では、さまざまな種類のストレージ アカウントとパフ�
 **geo 冗長ストレージ (GRS)** | プライマリから数百マイル離れたセカンダリ リージョンにデータをレプリケートすることで、リージョン全体の障害から保護します。 年間 99.99999999999999 % 以上 (9 が 16 個) のオブジェクトの持続性を提供します。 | Microsoft がセカンダリ リージョンへのフェールオーバーを開始しない限り、レプリカは使用できません。 フェールオーバーが発生した場合、読み取りと書き込みのアクセスは可能です。
 **読み取りアクセス geo 冗長ストレージ (RA-GRS)** | GRS に似ています。 年間 99.99999999999999 % 以上 (9 が 16 個) のオブジェクトの持続性を提供します | GRS で使用される 2 番目のリージョンからの読み取りアクセスを許可することで、99.99% の読み取り可用性を提供します。
 
-**詳細情報**:
+**詳細情報:**
 
 - Azure Storage の料金を[確認します](https://azure.microsoft.com/pricing/details/storage)。
 - 大量のデータの Azure BLOB とファイルへの移行に関して、Azure Import/Export [の詳細を確認します](https://docs.microsoft.com/azure/storage/common/storage-import-export-service)。
@@ -162,7 +161,7 @@ Windows Server や SQL Server などのシステムへのソフトウェア投�
 
 Microsoft の統合されたオンプレミス/Azure 製品ポートフォリオによって、競争上とコスト上の長所が生み出されています。 オペレーティング システム、またはソフトウェア アシュアランス (SA) を通したその他のソフトウェア ライセンスを現在所有している場合は、Azure ハイブリッド特典によって、クラウドへの移行時にそれらのライセンスをクラウドに移動できます。
 
-**詳細情報**:
+**詳細情報:**
 
 - ハイブリッド特典の節約額計算ツールを[見てみます](https://azure.microsoft.com/pricing/hybrid-benefit)。
 - Windows Server 向けのハイブリッド特典の[詳細を確認します](https://azure.microsoft.com/pricing/hybrid-benefit)。
@@ -182,7 +181,7 @@ Azure 予約 VM インスタンスを使用して、1 年または 3 年の期�
 ![予約インスタンス](./media/migrate-best-practices-costs/reserve.png)
 *Azure 予約 VM*
 
-**詳細情報**:
+**詳細情報:**
 
 - Azure の予約の[詳細を確認します](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations)。
 - 予約インスタンスの FAQ を[読みます](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq)。
@@ -194,7 +193,7 @@ Azure 予約 VM インスタンスを使用して、1 年または 3 年の期�
 
 これを行うために、Azure Cost Management API を使用できます。 その後、Azure SQL などの 1 つのソースにデータを集約したら、Power BI などのツールを使用して、集約されたデータを明示できます。 集約されたサブスクリプション レポートや、きめ細かなレポートを作成できます。 たとえば、コスト管理に関する事前対応のための分析情報が必要なユーザーの場合、部門やリソース グループなどに基づいて、コストに関する特定のビューを作成できます。彼らに Azure の課金データへのフル アクセスを提供する必要はありません。
 
-**詳細情報**:
+**詳細情報:**
 
 - Azure Consumption API の[概要を確認します](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview)。
 - Power BI Desktop で Azure Consumption Insights に接続すること[について学びます](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights)。
@@ -239,7 +238,7 @@ Cost Management では以下のことが可能です。
     "*Azure Cost Management での分析*"
 - **推奨事項を取得する:** 最適化と効率向上が可能な方法を示す Advisor の推奨事項を取得します。
 
-**詳細情報**:
+**詳細情報:**
 
 - Azure Cost Management の[概要を表示します](https://docs.microsoft.com/azure/cost-management/overview)。
 - Azure Cost Management を使用してクラウドへの投資を最適化する[方法を学びます](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices)。
@@ -257,7 +256,7 @@ Azure では、リソースが消費されたときに使用した分だけ支�
 - VM の監視に加えて、利用不足や使いすぎが起きていないか、ExpressRoute や仮想ネットワーク ゲートウェイなどの他のネットワーク リソースを監視する必要があります。
 - Azure Cost Management、Azure Monitor、Azure Advisor などの Microsoft ツールを使用して VM の使用状況を監視できます。 サードパーティ製のツールも使用できます。
 
-**詳細情報**:
+**詳細情報:**
 
 - [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) と [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) の概要を表示しますします。
 - Advisor のコストに関する推奨事項を[表示します](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)。
@@ -271,7 +270,7 @@ Azure では、リソースが消費されたときに使用した分だけ支�
 - リソース グループの予算は、リソース グループに関連するコストを追跡するのに役立ちます。
 - 予算に達したか予算を超えたときにアラートをトリガーし、さまざまなプレイブックを実行できます。
 
-**詳細情報**:
+**詳細情報:**
 
 - Azure Budgets でコストを管理する[方法を学びます](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)。
 - [チュートリアルに従って](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json)、Azure の予算を作成して管理します。
@@ -286,7 +285,7 @@ Azure にリソースを移動し、それらの診断ログを有効にする�
 - ログのストレージ コストを最適化することと、必要なログ データを保管することのバランスに注意する必要があります。
 - 移行の完了直後にログ記録を評価して設定を行うことをお勧めします。そうすることで、重要でないログの保持にコストがかからなくなります。
 
-**詳細情報**:
+**詳細情報:**
 
 - 使用量と推定コストの監視[について学びます](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs)。
 
@@ -299,7 +298,7 @@ Azure にリソースを移動し、それらの診断ログを有効にする�
 - 汎用 v2 ストレージのアクセス層を活用して、重要度の低いデータをホット アクセス層からクールやアーカイブのアクセス層に移動します。
 - カスタマイズしたポリシーに基づいて古いデータを移動しやすくなるように、StorSimple を使用します。
 
-**詳細情報**:
+**詳細情報:**
 
 - アクセス レベルの[詳細を確認します](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)。
 - StorSimple と、[StorSimple の価格](https://azure.microsoft.com/pricing/details/storsimple)の[概要を確認します](https://docs.microsoft.com/azure/azure-monitor/overview)。
@@ -327,7 +326,7 @@ Azure では、テナント課金情報にアクセスできる REST API が提�
 - これらの API はリソース プロバイダーとして実装されていて、Azure Resource Manager が公開している API に含まれています。
 - Budgets API は、Azure Logic Apps や Runbook と統合できます。
 
-**詳細情報**:
+**詳細情報:**
 
 - Budgets API の[詳細について学びます](https://docs.microsoft.com/rest/api/consumption/budgets)。
 - Billing API を使用して Azure の使用状況の[分析情報を取得します](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview)。
@@ -343,9 +342,9 @@ VM ワークロードは、多くの場合、ダウンタイムを回避する�
 - [Azure Functions](https://azure.microsoft.com/services/functions) について学びます。
 - [Azure Batch](https://azure.microsoft.com/services/batch) について学びます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-他のベスト プラクティスを確認してください。
+他のベスト プラクティスを確認します。
 
 - 移行後のセキュリティと管理の[ベスト プラクティス](./migrate-best-practices-security-management.md)。
-- 移行後のネットワーキングの[ベスト プラクティス](./migrate-best-practices-networking.md)。
+- 移行後のネットワークの[ベスト プラクティス](./migrate-best-practices-networking.md)。
