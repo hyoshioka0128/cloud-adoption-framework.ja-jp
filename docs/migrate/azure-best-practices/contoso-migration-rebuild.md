@@ -1,6 +1,5 @@
 ---
 title: オンプレミス アプリを Azure に再構築する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Contoso が Azure App Service、Azure Kubernetes Service、Cosmos DB、Azure Functions、および Azure Cognitive Services サービスを使用して Azure にアプリをリビルドする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681827"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807497"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>オンプレミス アプリを Azure 上にリビルドする
 
@@ -41,7 +40,7 @@ Contoso クラウド チームは、この移行のためのアプリの要件�
 - アプリで下された決定がホテルで受け入れられる必要があるため、ペットの写真に使用される API サービスは正確かつ実世界で信頼できるものである必要があります。 アクセス権を付与されたペットは、ホテルでの滞在を許可されます。
 - DevOps パイプラインの要件を満たすために、Contoso は Git リポジトリと共に Azure DevOps のソース コード管理 (SCM) を使用します。 コードのビルドと Azure App Service、Azure Functions、および AKS へのデプロイには、自動ビルドとリリースが使用されます。
 - バックエンドのマイクロサービスと、フロントエンドの Web サイトに対して別個の CI/CD パイプラインが必要です。
-- バックエンド サービスのリリース サイクルはフロントエンド Web アプリのリリース サイクルとは異なります。 この要件を満たすため、2 つの異なる DevOps パイプラインが展開されます。
+- バックエンド サービスのリリース サイクルはフロントエンド Web アプリのリリース サイクルとは異なります。 この要件を満たすため、2 つの異なるパイプラインが展開されます。
 - Contoso では、すべてのフロント エンド Web サイトのデプロイには上長の承認が必要であり、CI/CD パイプラインではこれを提供する必要があります。
 
 ## <a name="solution-design"></a>ソリューション設計
@@ -95,10 +94,10 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **サービス** | **説明** | **コスト**
 --- | --- | ---
-[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Kubernetes の管理、デプロイ、操作を簡略化します。 完全に管理された Kubernetes コンテナー オーケストレーション サービスを提供します。 | AKS は無料サービスです。 仮想マシンと、関連するストレージとネットワーク リソースの使用した分に対してのみ料金が発生します。 [詳細情報](https://azure.microsoft.com/pricing/details/kubernetes-service)。
-[Azure Functions](https://azure.microsoft.com/services/functions) | イベント ドリブン型のサーバーレス コンピューティング エクスペリエンスにより、開発を高速化できます。 オンデマンドでスケールできます。 | 使用したリソースに対してのみ料金が発生します。 プランでは、1 秒あたりのリソースの使用量と実行回数に基づいて課金されます。 [詳細情報](https://azure.microsoft.com/pricing/details/functions)。
-[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細情報](https://azure.microsoft.com/pricing/details/container-registry)。
-[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | あらゆるプラットフォームで稼働するエンタープライズグレードの Web アプリ、モバイル アプリ、API アプリをすばやくビルド、デプロイ、およびスケーリングできます。 | App Service プランは、1 秒単位で課金されます。 [詳細情報](https://azure.microsoft.com/pricing/details/app-service/windows)。
+[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Kubernetes の管理、デプロイ、操作を簡略化します。 完全に管理された Kubernetes コンテナー オーケストレーション サービスを提供します。 | AKS は無料サービスです。 仮想マシンと、関連するストレージとネットワーク リソースの使用した分に対してのみ料金が発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/kubernetes-service)。
+[Azure Functions](https://azure.microsoft.com/services/functions) | イベント ドリブン型のサーバーレス コンピューティング エクスペリエンスにより、開発を高速化できます。 オンデマンドでスケールできます。 | 使用したリソースに対してのみ料金が発生します。 プランでは、1 秒あたりのリソースの使用量と実行回数に基づいて課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/functions)。
+[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/container-registry)。
+[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | あらゆるプラットフォームで稼働するエンタープライズグレードの Web アプリ、モバイル アプリ、API アプリをすばやくビルド、デプロイ、およびスケーリングできます。 | App Service プランは、1 秒単位で課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -106,7 +105,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 <!-- markdownlint-disable MD033 -->
 
-**要件** | **詳細**
+**必要条件** | **詳細**
 --- | ---
 **Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
 **Azure インフラストラクチャ** | [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。
@@ -120,9 +119,9 @@ Contoso が移行を実行する方法を次に示します。
 
 > [!div class="checklist"]
 >
-> - **手順 1:AKS と ACR をプロビジョニングする。** Contoso は PowerShell を使用して、管理対象の AKS クラスターと Azure Container Registry をプロビジョニングします。
+> - **ステップ 1:AKS と ACR をプロビジョニングする。** Contoso は PowerShell を使用して、管理対象の AKS クラスターと Azure Container Registry をプロビジョニングします。
 > - **手順 2:Docker コンテナーをビルドする。** Azure DevOps を使用して Docker コンテナーの CI を設定し、ACR にプッシュします。
-> - **手順 3:バックエンドのマイクロサービスをデプロイする。** バックエンドのマイクロサービスによって使用される、残りのインフラストラクチャをデプロイします。
+> - **ステップ 3:バックエンドのマイクロサービスをデプロイする。** バックエンドのマイクロサービスによって使用される、残りのインフラストラクチャをデプロイします。
 > - **手順 4:フロントエンドのインフラストラクチャをデプロイする。** フロントエンドのインフラストラクチャ (ペットの写真用の Blob Storage、Cosmos DB、Vision API を含む) をデプロイします。
 > - **手順 5:バックエンドを移行する。** マイクロサービスをデプロイして AKS 上で実行し、バックエンドを移行します。
 > - **手順 6:フロントエンドを公開する。** SmartHotel360 アプリを、App Service と、ペット サービスによって呼び出される関数アプリに公開します。
@@ -134,7 +133,7 @@ Contoso の管理者は、AKS と Azure Container Registry (ACR) を使用して
 - このセクションの手順では、**SmartHotel360-Azure-backend** リポジトリを使用します。
 - **SmartHotel360-Azure-backend** GitHub リポジトリには、デプロイのこの部分のためのソフトウェアがすべて含まれています。  
 
-### <a name="prerequisites"></a>前提条件
+### <a name="ensure-prerequisites"></a>前提条件を確認する
 
 1. Contoso の管理者は、開始する前に、デプロイに使用する開発用マシンにすべての前提条件ソフトウェアがインストールされていることを確認します。
 2. Git: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git` を使用して、開発用マシンにリポジトリをローカルに複製します。
@@ -445,7 +444,7 @@ Contoso 管理者は、フロントエンド サイトに 2 つの異なるプ�
 
 2. [SmartHotel360 フロントエンド](https://github.com/Microsoft/SmartHotel360-public-web.git) Git リポジトリを新しいプロジェクトにインポートします。
 
-3. 関数アプリ用の別の Azure DevOps プロジェクト (SmartHotelPetChecker) を作成し、[PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) Git リポジトリをこのプロジェクトにインポートします。
+3. 関数アプリ用の別の Azure DevOps プロジェクト (SmartHotelPetChecker) を作成し、[PetChecker](https://github.com/sonahander/SmartHotel360-PetCheckerFunction) Git リポジトリをこのプロジェクトにインポートします。
 
 ### <a name="configure-the-web-app"></a>Web アプリを構成する
 
@@ -584,37 +583,36 @@ Contoso の管理者はアプリを次のようにデプロイします。
 14. 関数はデプロイされた後、Azure portal に **[実行中]** 状態で表示されます。
 
     ![関数のデプロイ](./media/contoso-migration-rebuild/function6.png)
-    
+
 15. Pet Checker アプリが期待どおりに動作していることを確認するために、アプリを参照します ([http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets))。
 
 16. アバターをクリックして、写真をアップロードします。
 
     ![関数のデプロイ](./media/contoso-migration-rebuild/function7.png)
-    
+
 17. 最初に確認したい写真は、小さい犬の写真です。
 
     ![関数のデプロイ](./media/contoso-migration-rebuild/function8.png)
-    
+
 18. アプリが受領のメッセージを返します。
 
     ![関数のデプロイ](./media/contoso-migration-rebuild/function9.png)
-    
 
 ## <a name="review-the-deployment"></a>デプロイを再調査する
 
 リソースを Azure に移行したら、新しいインフラストラクチャを完全に操作可能にして、セキュリティ保護する必要があります。
 
-### <a name="security"></a>セキュリティ
+### <a name="security"></a>Security
 
-- Contoso は新しいデータベースが安全であることを確認する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso は新しいデータベースが安全であることを確認する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - アプリは、SSL と証明書を使用するように更新する必要があります。 コンテナー インスタンスは 443 で応答するように再デプロイする必要があります。
-- Contoso は Key Vault を使用して、Service Fabric アプリのシークレットを保護することを検討する必要があります。 [詳細情報](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
+- Contoso は Key Vault を使用して、Service Fabric アプリのシークレットを保護することを検討する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
 
 ### <a name="backups-and-disaster-recovery"></a>バックアップとディザスター リカバリー
 
-- Contoso は、Azure SQL Database のバックアップ要件を確認する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
-- Contoso は、データベースのリージョン内フェールオーバーを提供するように SQL フェールオーバー グループを実装することを検討する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
-- Contoso は ACR Premium SKU の geo レプリケーションを使用できます。 [詳細情報](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
+- Contoso は、Azure SQL Database のバックアップ要件を確認する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
+- Contoso は、データベースのリージョン内フェールオーバーを提供するように SQL フェールオーバー グループを実装することを検討する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso は ACR Premium SKU の geo レプリケーションを使用できます。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)。
 - Cosmos DB は自動的にバックアップされます。 Contoso は、このプロセスの詳細情報を[こちらで確認](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)できます。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
@@ -636,4 +634,3 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 [Azure App Service を使用して Azure に Web サイトをデプロイする](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/):Azure 内の Web アプリを使用すると、基盤となるサーバー、ストレージ、ネットワーク アセットを操作しなくても簡単に Web サイトを公開して管理することができます。 代わりに、Web サイトの機能に焦点を当て、堅牢な Azure プラットフォームを使用して、サイトへの安全なアクセスを提供することができます。
 
 [Azure Cognitive Vision サービスを使用してイメージを処理して分類する](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/):Microsoft Cognitive Services では、ご利用のアプリケーションで Computer Vision 機能を有効にできる事前に作成した機能を提供します。 Cognitive Vision サービスを使用して、顔を検出し、イメージをタグ付けして分類し、オブジェクトを特定する方法について説明します。
-

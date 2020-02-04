@@ -1,6 +1,5 @@
 ---
 title: コスト志向の組織を構築する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: コスト志向の組織を構築するためのベスト プラクティスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 6c01ec344d6c02fa9c576e5e674b8fddf59849fe
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 42025e9e7459aae8731b6269d6bc5512acde64e4
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566808"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800901"
 ---
 # <a name="build-a-cost-conscious-organization"></a>コスト志向の組織を構築する
 
@@ -83,7 +82,7 @@ CCoE は、通常はコスト管理に責任を負いませんが、コスト志
 
 - **最適化:** 複数のデプロイに対する CCoE の可視性を考えると、チームは、最適化のヒントを提案し、導入チームが資産をより適切に調整することを支援するのに理想的な立場にあります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ビジネスの各レベルでこれらの責任を果たすと、コスト志向の組織の推進に役立ちます。 このガイダンスに従って行動を開始するには、適切なチーム構造の特定に役立つ[組織の準備状況の概要](./index.md)を確認します。
 

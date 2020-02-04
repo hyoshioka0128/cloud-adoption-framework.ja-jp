@@ -1,6 +1,5 @@
 ---
 title: Azure App Service と Azure SQL Database に移行してアプリをリファクターする
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Contoso がオンプレミス アプリを Azure App Service Web アプリと Azure SQL Server データベースに移行して、オンプレミス アプリをリホストする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0d0fa87d424cbdf33e2b8516dd43b5156b55756
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 35a64b9f42df3737e186d25a43ecad457010607d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566571"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807446"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Azure App Service Web アプリと Azure SQL データベースにオンプレミス アプリをリファクターする
 
 この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware VM 上で実行される 2 層の Windows .NET アプリをリファクターする方法を示します。 アプリのフロントエンド VM を Azure App Service Web アプリに、また、アプリのデータベースを Azure SQL データベースに移行します。
 
-この例で使用される SmartHotel360 アプリは、オープン ソースとして提供されます。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
+この例で使用される SmartHotel360 アプリは、オープン ソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
@@ -30,7 +29,7 @@ IT リーダーシップ チームは、ビジネス パートナーと密接に
 - **効率化。** Contoso では、不要な手順を取り除き、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は IT に対して、時間やコストを無駄にせず、迅速に作業を行ってもらう必要があります。これは、例えば、顧客の要求に素早く対応するためです。
 - **機敏性の向上。**  Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済で成功を収めるために、市場の変化に対して、より迅速な対応ができる必要があります。 ビジネスの妨げになったり、ビジネスの機会を壊すようなことがあってはなりません。
 - **スケール。** ビジネスが順調に成長していく中で、Contoso IT は、同じペースで拡張できるシステムを提供する必要があります。
-- **コストの削減。** Contoso はライセンス コストを最小限に抑えたいと考えています。
+- **コストを削減する。** Contoso はライセンス コストを最小限に抑えたいと考えています。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -38,7 +37,7 @@ Contoso クラウド チームは、この移行の目標を設定しました�
 
 <!-- markdownlint-disable MD033 -->
 
-**要件** | **詳細**
+**必要条件** | **詳細**
 --- | ---
 **アプリ** | このアプリは、Azure でも現在と同じくクリティカルです。<br/><br/> 現在の VMWare と同等のパフォーマンス機能が必要です。<br/><br/> チームはアプリへの投資を望んでいません。 現在のところ、管理者は単にアプリをクラウドに安全に移行します。<br/><br/> チームは、アプリが現在実行されている Windows Server 2008 R2 のサポートを終了したいと考えています。<br/><br/> また、SQL Server 2008 R2 から最新の PaaS Database プラットフォームに移行したいと考えています。これにより、管理の必要性を最小限に抑えられます。<br/><br/> Contoso では、可能であれば、SQL Server ライセンスとソフトウェア アシュアランスへの投資を活かしたいと考えています。<br/><br/> さらに、Contoso は Web 層の単一障害点を軽減したいと考えています。
 **制限事項** | このアプリは、同じ VM 上で実行されている ASP.NET アプリと WCF サービスで構成されています。 Azure App Service を使用して 2 つの Web アプリに分割したいと考えています。
@@ -77,7 +76,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **考慮事項** | **詳細**
 --- | ---
-**長所** | Azure に移行するために SmartHotel360 アプリ コードを変更する必要はありません。<br/><br/> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。<br/><br/> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 [詳細情報](https://support.microsoft.com/lifecycle)。<br/><br/> Contoso は複数のインスタンスがあるアプリの Web 層を構成することができたので、単一障害点ではなくなりました。<br/><br/> データベースは古い SQL Server 2008 R2 に依存しなくなります。<br/><br/> SQL Database は技術面の要件をサポートしています。 Contoso では、Database Migration Assistant を使用してオンプレミス データベースを評価し、互換性があることがわかりました。<br/><br/> Azure SQL Database には、Contoso が設定する必要がない組み込みのフォールト トレランスが用意されています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。
+**長所** | Azure に移行するために SmartHotel360 アプリ コードを変更する必要はありません。<br/><br/> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。<br/><br/> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 [詳細については、こちらを参照してください](https://support.microsoft.com/lifecycle)。<br/><br/> Contoso は複数のインスタンスがあるアプリの Web 層を構成することができたので、単一障害点ではなくなりました。<br/><br/> データベースは古い SQL Server 2008 R2 に依存しなくなります。<br/><br/> SQL Database は技術面の要件をサポートしています。 Contoso では、Database Migration Assistant を使用してオンプレミス データベースを評価し、互換性があることがわかりました。<br/><br/> Azure SQL Database には、Contoso が設定する必要がない組み込みのフォールト トレランスが用意されています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。
 **短所** | Azure App Services は、各 Web アプリに対して 1 つのアプリのデプロイのみをサポートしています。 これは、2 つの Web アプリをプロビジョニングする必要がある (Web サイト用に 1 つと WCF サービス用に 1 つ) ことを意味します。<br/><br/> Contoso が Azure Database Migration Service ではなく Data Migration Assistant を使用してデータベースを移行した場合、データベースを大規模に移行するためのインフラストラクチャは用意されません。 プライマリ リージョンが利用不可の場合に、確実にフェールオーバーできるように別のリージョンを構築する必要があります。
 
 <!-- markdownlint-enable MD033 -->
@@ -98,8 +97,8 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 **サービス** | **説明** | **コスト**
 --- | --- | ---
 [Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso では DMA を使用して、Azure 内のデータベース機能に影響を与える可能性がある互換性の問題を評価し、検出します。 DMA は SQL のソースとターゲット間で機能パリティを評価し、パフォーマンスと信頼性の向上箇所を推奨します。 | これは無料でダウンロードできるツールです。
-[Azure SQL Database](https://azure.microsoft.com/services/sql-database) | インテリジェントなフル マネージド リレーショナル クラウド データベース サービス。 | 機能、スループット、サイズに基づくコスト。 [詳細情報](https://azure.microsoft.com/pricing/details/sql-database/managed)。
-[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | フルマネージド プラットフォームで強力なクラウド アプリを作成 | サイズ、場所、使用時間に基づくコスト。 [詳細情報](https://azure.microsoft.com/pricing/details/app-service/windows)。
+[Azure SQL Database](https://azure.microsoft.com/services/sql-database) | インテリジェントなフル マネージド リレーショナル クラウド データベース サービス。 | 機能、スループット、サイズに基づくコスト。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/sql-database/managed)。
+[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | フルマネージド プラットフォームで強力なクラウド アプリを作成 | サイズ、場所、使用時間に基づくコスト。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | 継続的インテグレーションと継続的デプロイ (CI/CD) パイプラインをアプリの開発に提供します。 パイプラインは、アプリ コードを管理する Git リポジトリで始まり、パッケージおよびその他のビルド成果物を生成するためのビルド システム、開発、テスト、および運用環境での変更を配置するリリース管理システムへと続きます。
 
 ## <a name="prerequisites"></a>前提条件
@@ -108,7 +107,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 <!-- markdownlint-disable MD033 -->
 
-**要件** | **詳細**
+**必要条件** | **詳細**
 --- | ---
 **Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
 **Azure インフラストラクチャ** | [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。
@@ -121,9 +120,9 @@ Contoso が移行を実行する方法を次に示します。
 
 > [!div class="checklist"]
 >
-> - **手順 1:Azure に SQL データベース インスタンスをプロビジョニングします。** Contoso は、Azure で SQL インスタンスをプロビジョニングします。 アプリの Web サイトが Azure に移行されると、WCF サービス Web アプリはこのインスタンスを示します。
-> - **手順 2:DMA を使用してデータベースを移行します。** Contoso は、Data Migration Assistant を使用してアプリのデータベースを移行します。
-> - **手順 3:Web アプリをプロビジョニングする。** Contoso は 2 つの Web アプリをプロビジョニングします。
+> - **ステップ 1:Azure に SQL データベース インスタンスをプロビジョニングします。** Contoso は、Azure で SQL インスタンスをプロビジョニングします。 アプリの Web サイトが Azure に移行されると、WCF サービス Web アプリはこのインスタンスを示します。
+> - **手順 2:DMA を使用してデータベースを移行する。** Contoso は、Data Migration Assistant を使用してアプリのデータベースを移行します。
+> - **ステップ 3:Web アプリをプロビジョニングする。** Contoso は 2 つの Web アプリをプロビジョニングします。
 > - **手順 4:Azure DevOps を設定する。** Contoso は新しい Azure DevOps プロジェクトを作成し、Git リポジトリをインポートします。
 > - **手順 5:接続文字列を構成する。** Contoso は Web 層 Web アプリ、WCF サービス Web アプリ、および SQL インスタンスが通信できるように接続文字列を構成します。
 > - **手順 6:ビルドとリリース パイプラインを設定する。** 最後の手順として、Contoso はアプリを作成するようにビルドとリリース パイプラインを設定し、それらを 2 つの個別の Web アプリにデプロイします。
@@ -288,7 +287,7 @@ Contoso 管理者は、Web アプリとデータベースがすべて通信で�
 
 5. これで最初のビルドが開始されます。 プロセスを監視するビルド番号を選択します。 完了後、プロセスのフィードバックを表示し、 **[成果物]** を選択してビルドの結果を確認できます。
 
-    ![レビュー](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
+    ![確認](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
 
 6. **Drop** フォルダーにはビルドの結果が格納されています。
 
@@ -319,7 +318,7 @@ Contoso 管理者は、Web アプリとデータベースがすべて通信で�
 
 12. パイプライン > **[成果物]** で、 **[+Add an artifact]\(成果物の追加\)** を選択し、**ContosoSmarthotel360Refactor** パイプラインを使用してビルドするように選択します。
 
-     ![構築](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![Build](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. 成果物にある稲妻アイコンを選択して、継続的配置トリガーを有効にします。
 
@@ -376,20 +375,20 @@ Contoso 管理者は、Web アプリとデータベースがすべて通信で�
 - SmartHotel360 アプリの新しい場所を示すように社内ドキュメントを更新します。 Azure SQL データベースでデータベースは実行中と表示され、2 つの Web アプリでフロント エンドは実行中と表示されます。
 - 使用停止されている VM と対話しているリソースがないか確認します。また、関連する設定やドキュメントがあれば、更新して新しい構成を反映します。
 
-## <a name="review-the-deployment"></a>デプロイ環境を検討する
+## <a name="review-the-deployment"></a>デプロイを再調査する
 
 リソースを Azure に移行したら、新しいインフラストラクチャを完全に操作可能にして、セキュリティ保護する必要があります。
 
-### <a name="security"></a>セキュリティ
+### <a name="security"></a>Security
 
-- Contoso は新しい **SmartHotel-Registration** データベースがセキュリティで保護されていることを確認する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso は新しい **SmartHotel-Registration** データベースがセキュリティで保護されていることを確認する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - 特に、証明書で SSL を使用するように Web アプリを更新する必要があります。
 
 ### <a name="backups"></a>バックアップ
 
-- Contoso は、Azure SQL Database のバックアップ要件を確認する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
+- Contoso は、Azure SQL Database のバックアップ要件を確認する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
 - また、Contoso は SQL Database のバックアップと復元の管理について確認する必要があります。 自動バックアップについては、[こちら](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)をご覧ください。
-- Contoso は、データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループを実装することを検討する必要があります。 [詳細情報](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso は、データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループを実装することを検討する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
 - Contoso では、復元性のために、主要な米国東部 2 リージョンと米国中部リージョンに Web アプリをデプロイすることを検討する必要があります。 リージョンの障害が発生した場合に確実にフェールオーバーするように Traffic Manager を構成できます。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化

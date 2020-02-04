@@ -1,6 +1,5 @@
 ---
 title: Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure に移行した後は、移行されたワークロードに対するネットワークの設定に関するベスト プラクティスに従います。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753616"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803876"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス
 
@@ -261,7 +260,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
 ![VPN](./media/migrate-best-practices-networking/bgp1.png)
 *BGP コミュニティの最適化されていない接続*
 
-**解決策:**
+**解決方法:**
 
 両方のオフィスのユーザーに対するルーティングを最適化するには、どちらのプレフィックスが Azure 米国西部からのもので、どちらが Azure 米国東部からのものかを知る必要があります。 この情報は、BGP コミュニティ値を使用してコード化できます。
 
@@ -512,9 +511,9 @@ NVA ファイアウォール | Azure Firewall と同様に、NVA ファイアウ
 
 - Azure VNet での NVA の使用[について学習する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-他のベスト プラクティスを確認してください。
+他のベスト プラクティスを確認します。
 
 - 移行後のセキュリティと管理の[ベスト プラクティス](./migrate-best-practices-security-management.md)。
 - 移行後のコスト管理の[ベスト プラクティス](./migrate-best-practices-costs.md)。

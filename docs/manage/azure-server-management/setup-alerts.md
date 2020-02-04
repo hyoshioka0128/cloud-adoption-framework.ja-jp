@@ -1,19 +1,18 @@
 ---
 title: 基本アラートを設定する
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 基本アラートを設定する
+description: Azure サーバー管理サービスを使用して、IT チームによる問題把握に役立つアラートと通知を設定する方法を説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5d7469f8613b38ffdaefb41410409fba0c9109fd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e24932b074f69f83aff583d560399d884c6c5b0e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565294"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807956"
 ---
 # <a name="set-up-basic-alerts"></a>基本アラートを設定する
 
@@ -48,7 +47,7 @@ Azure portal を使用して手動でアラートを作成および管理する�
 
 このパッケージでは、例として HP サーバー ハードウェアが使用されています。 関連付けられている構成ファイルの設定を、お使いの OEM ハードウェアを反映するように変更します。 構成ファイルに、パフォーマンス カウンターをさらに追加することもできます。 パッケージをデプロイするには、New-CoreAlerts.ps1 ファイルを実行します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 継続中の運用をサポートする運用とセキュリティのメカニズムについて学習します。
 

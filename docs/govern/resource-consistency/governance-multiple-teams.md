@@ -1,6 +1,5 @@
 ---
 title: Azure での複数チーム向けのガバナンス設計
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 複数のチーム、複数のワークロード、および複数の環境のための Azure ガバナンス管理を構成するためのガイダンス。
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160484"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804301"
 ---
 # <a name="governance-design-for-multiple-teams"></a>複数チーム向けのガバナンス設計
 
@@ -269,7 +268,7 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
 
 [Azure リソースの組み込みロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [基本的なインフラストラクチャのデプロイについて確認する](../../infrastructure/virtual-machines/basic-workload.md)
