@@ -1,6 +1,6 @@
 ---
 title: 境界ネットワーク
-description: 境界ネットワーク
+description: '境界ネットワーク (別名: 非武装地帯 (DMZ)) で Azure 機能とサービスがどのように使用されるかについて説明します。'
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 6125a428d67130d891623a30ca75a11527fbbe23
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2aa561a7ffdcf43ffc56ad89849e933ea8abf186
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799779"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994216"
 ---
 # <a name="perimeter-networks"></a>境界ネットワーク
 

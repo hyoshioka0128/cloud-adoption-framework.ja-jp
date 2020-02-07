@@ -1,18 +1,18 @@
 ---
 title: ポートフォリオのバランスを取る
-description: クラウド ポートフォリオのバランスを重要視してください。
+description: クラウド移行の取り組みを最大限に活用するために、移行、イノベーション、実験のバランスを取るための戦略を見つけます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d317ea1af4dae3d09d62eb39ebd057ab953341bd
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803298"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994199"
 ---
 # <a name="balance-the-portfolio"></a>ポートフォリオのバランスを取る
 

@@ -1,6 +1,6 @@
 ---
 title: 資産の移行
-description: 資産の移行
+description: このガイドは、ネイティブ ツール、サードパーティ製ツール、プロジェクト管理ツールなど、"完了状態" に到達するための適切なツールを特定することで環境の移行を開始するのに役立ちます。
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 41f52c8ddfa3ccc277569fde323161159344cb20
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807021"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994190"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>資産の移行 (インフラストラクチャ、アプリ、データ)
 

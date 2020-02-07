@@ -1,6 +1,6 @@
 ---
 title: セキュリティ保護と管理
-description: セキュリティ保護と管理
+description: Azure に移行した後、環境の管理に使用できるセキュリティと管理の方法について詳しく説明します。
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6490c9dec38755fcb271774d00471b2a22888fd1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1af3ed5ea3b9291263a5ad8da43c65d51570651e
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806970"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994094"
 ---
 # <a name="secure-and-manage"></a>セキュリティ保護と管理
 
