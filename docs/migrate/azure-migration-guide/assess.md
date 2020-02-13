@@ -1,6 +1,6 @@
 ---
 title: デジタル資産を評価する
-description: デジタル資産を評価する
+description: Azure 移行ガイドのこのセクションでは、環境を評価して、移行すべき対象と、検討する必要がある移行方法を決定することができます。
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 298cfc866e770e2dcd33a22d6cd4713e4053de25
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807072"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173381"
 ---
 # <a name="assess-the-digital-estate"></a>デジタル資産を評価する
 

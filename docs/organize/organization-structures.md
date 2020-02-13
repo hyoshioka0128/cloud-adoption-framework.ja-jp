@@ -1,6 +1,6 @@
 ---
 title: チーム構造の確立
-description: チーム構造の確立
+description: ここに示す一般的なチーム構造の例から、運用上のニーズに最も即した組織構造がわかります。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800918"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173413"
 ---
 # <a name="establish-team-structures"></a>チーム構造の確立
 

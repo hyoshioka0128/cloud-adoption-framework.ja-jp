@@ -1,18 +1,18 @@
 ---
 title: ゲスト構成ポリシー
-description: ゲスト構成ポリシー
+description: Azure Policy のゲスト構成拡張機能を使用して、Azuer 仮想マシン (VM) 内の構成設定を監査する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c676766c2de524dcbe9ca66fc248c410b14e17d7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6e935288ce58af0570717c973c21b406ee94ebc0
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808075"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173310"
 ---
 # <a name="guest-configuration-policy"></a>ゲスト構成ポリシー
 
