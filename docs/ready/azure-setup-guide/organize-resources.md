@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799337"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567760"
 ---
 # <a name="organize-your-azure-resources"></a>Azure リソースの整理
 
@@ -22,7 +22,7 @@ ms.locfileid: "76799337"
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchytabazuremanagmentgroupsandhierarchy"></a>[Azure の管理グループと階層](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Azure の管理グループと階層](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure には、管理グループ、サブスクリプション、リソース グループ、およびリソースという 4 つのレベルの管理スコープが用意されています。 次の図に、これらのレベルの関係を示します。
 
@@ -121,7 +121,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ::: zone-end
 
-# <a name="naming-standardstabnamingstandards"></a>[命名規則](#tab/NamingStandards)
+# <a name="naming-standards"></a>[命名規則](#tab/NamingStandards)
 
 適切な命名規則を使用することで、Azure portal、請求書、スクリプト内でリソースを識別しやすくなります。 名前付け戦略には、リソース名のコンポーネントとして、ビジネスと運用の詳細を含める必要があります。
 
@@ -146,7 +146,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 |可用性セット |Resource group |1 ～ 80 |大文字と小文字は区別されない |英数字、アンダースコア、ハイフン |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |タグ |関連付けられたエンティティ |512 (名前)、256 (値) |大文字と小文字は区別されない |英数字 |`"key" : "value"` |`"department" : "Central IT"` |
 
-# <a name="resource-tagstabresourcetags"></a>[リソース タグ](#tab/ResourceTags)
+# <a name="resource-tags"></a>[リソース タグ](#tab/ResourceTags)
 
 タグは、リソースとリソース グループをすばやく特定するのに役立ちます。 Azure リソースにタグを適用すると、カテゴリ別に論理的に整理できます。 各タグは名前と値で構成されます。 たとえば、運用環境のすべてのリソースには名前 "環境" と値 "運用" を適用できます。 タグには、リソースの関連するワークロードまたはアプリケーション、運用要件、および所有者情報に関するコンテキストを含める必要があります。
 
@@ -156,7 +156,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 - **メタデータとドキュメント:** 管理者は、"ProjectOwner" などのタグを適用して、操作しているリソースに関する詳細を簡単に確認できます。
 - **自動化:** "ShutdownTime" や "DeprovisionDate" のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
-- **課金**: タグを請求書に表示することができます。 それらを使用して、"CostCenter" や "BillTo" などのタグを使って請求書をセグメント化できます。
+- **コストの最適化:** コストを担当するチームとリソースにリソースを割り当てることができます。 Azure Cost Management では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金を報告できます。
 
 各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 

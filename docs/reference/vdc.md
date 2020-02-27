@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bc20624beb0d3a088d119bf0f75c1e1881d37fce
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566672"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629217"
 ---
 # <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
@@ -36,8 +36,8 @@ ms.locfileid: "73566672"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Azure 仮想データセンター:ネットワーク パースペクティブ</a></h3>
-        <p>このオンライン記事では、多くのお客様がクラウドへの一括移行を検討するときに直面するアーキテクチャのスケーリング、パフォーマンス、セキュリティに関する問題の解決に役立てることができるネットワーク パターンと設計の概要について説明します。</p>
+        <h3><a href="./networking-vdc.md">仮想データセンター:ネットワーク パースペクティブ</a></h3>
+        <p>このネットワーク パターンと設計の概要では、大規模なクラウド移行を計画するときにお客様が直面するアーキテクチャのスケール、パフォーマンス、セキュリティの問題に対処します。</p>
     </td>
 </tr>
 <tr>

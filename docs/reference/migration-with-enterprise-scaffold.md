@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798793"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629251"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 
@@ -338,7 +338,7 @@ Azure スキャフォールディング参照モデルの最後のコンポー�
 
 ### <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
-Azure では、内部機能だけでなく、充実したパートナー ネットワークからサード パーティ機能も提供され、効果的にセキュリティ体制を整えることができます。 さらに重要なのは、[Azure 仮想データセンター (VDC)](./networking-vdc.md) という形で、ベスト プラクティスとガイダンスが提供されることです。 1 つのワークロードからハイブリッド機能を使用する複数のワークロードに移るとき、VDC ガイダンスから、Azure 内のワークロードが増大するにつれ拡張する柔軟性の高いネットワークを実現する "レシピ" が提供されます。
+Azure では、効果的なセキュリティ体制を提供する充実したパートナー ネットワークから、内部およびサード パーティ両方の機能が提供されます。 さらに重要なのは、[Azure 仮想データセンター (VDC)](./networking-vdc.md) という形で、ベスト プラクティスとガイダンスが提供されることです。 1 つのワークロードからハイブリッド機能を使用する複数のワークロードに移るとき、VDC ガイダンスから、Azure 内のワークロードが増大するにつれ拡張する柔軟性の高いネットワークを実現する "レシピ" が提供されます。
 
 ## <a name="next-steps"></a>次のステップ
 

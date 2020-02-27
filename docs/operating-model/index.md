@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806953"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629285"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>クラウドの運用モデルの確立
 
@@ -23,7 +23,7 @@ ms.locfileid: "76806953"
 
 **これからの行動を説明するものが導入であれば、導入を可能にする第一人者や基礎となる手法は運用モデルにより定義されます。**
 
-サティア ナデラは「**企業文化は戦略に勝る**」と言いました。 運用モデルは IT 文化を具現化するものであり、さまざまな計測可能プロセスで記録されます。 強力な運用モデルがクラウドの動力になるとき、企業文化は戦略に向かって推進し、導入と事業価値の実現を加速します。 反対に、導入に成功しても運用モデルがない場合、見返りは見事でも、非常に短命で終わることがあります。 長期的な成功のためには、導入と運用モデルが並んで進むことが不可欠です。
+"文化は戦略を朝食に食べる。" 運用モデルは IT 文化を具現化するものであり、さまざまな計測可能プロセスで記録されます。 強力な運用モデルがクラウドの動力になるとき、企業文化は戦略に向かって推進し、導入と事業価値の実現を加速します。 反対に、導入に成功しても運用モデルがない場合、見返りは見事でも、非常に短命で終わることがあります。 長期的な成功のためには、導入と運用モデルが並んで進むことが不可欠です。
 
 ## <a name="establish-your-operating-model"></a>運用モデルを確立する
 

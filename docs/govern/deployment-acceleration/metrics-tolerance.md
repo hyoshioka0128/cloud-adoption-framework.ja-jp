@@ -1,6 +1,6 @@
 ---
-title: デプロイ高速化のメトリック、インジケーター、およびリスク許容度
-description: デプロイ高速化のメトリック、インジケーター、およびリスク許容度
+title: デプロイ高速化のリスク許容値のメトリックとインジケーター
+description: Microsoft の Azure 向けクラウド導入フレームワークで、デプロイの高速化に関連するビジネス リスクの許容度を定量化します。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 26bbcd201d699c8f58d51bb4f83582417127fcbb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 18efcb5d46041a0fa87327832c0a4d819d0917b5
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804029"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567709"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>デプロイ高速化のメトリック、インジケーター、およびリスク許容度
 

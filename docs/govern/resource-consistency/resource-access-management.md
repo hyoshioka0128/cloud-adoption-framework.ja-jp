@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 825c220bda1c560c5d7bf07bcae649017525ff53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e32151fc39f22e4dcb2a9ab40b24f351b11775e7
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805627"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629302"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -58,7 +58,7 @@ Azure サブスクリプションは、リソース グループとそのリソ�
 ![Azure Resource Manager API に接続している Azure クライアントの図](../../_images/govern/design/governance-1-13.png)
 *図 5 - Azure クライアントが Azure Resource Manager RESTful API に接続する。*
 
-これらのクライアントは、RESTful API を使用して Azure Resource Manager に接続しますが、Azure Resource Manager には、リソースを直接管理する機能が含まれていません。 代わりに、Azure ではリソースの種類のほとんどに、独自の[**リソース プロバイダー**](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology)があります。
+これらのクライアントは、RESTful API を使用して Azure Resource Manager に接続しますが、Azure Resource Manager には、リソースを直接管理する機能が含まれていません。 代わりに、Azure ではリソースの種類のほとんどに、独自の[リソース プロバイダー](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology)があります。
 
 ![Azure リソース プロバイダー](../../_images/govern/design/governance-1-14.png)
 *図 6 - Azure リソース プロバイダー。*
