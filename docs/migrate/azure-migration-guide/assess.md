@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173381"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567743"
 ---
 # <a name="assess-the-digital-estate"></a>デジタル資産を評価する
 
@@ -24,7 +24,7 @@ ms.locfileid: "77173381"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="toolstabtools"></a>[ツール](#tab/Tools)
+# <a name="tools"></a>[ツール](#tab/Tools)
 
 以下のツールは、ご利用の環境を評価して、移行の適合性と使用すべき最善の方法を判断するのに役立ちます。 移行作業をサポートする適切なツールの選定に関する有益な情報については、[クラウド導入フレームワークの移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)を参照してください。
 
@@ -51,7 +51,7 @@ Azure Migrate を使用してサーバーの移行評価を開始するには、
 
 ::: zone target="chromeless"
 
-::: form action="Blade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
+::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 - [Azure での Service Map ソリューションの使用](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate と Service Map: 依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="scenarios-and-stakeholderstabscenarios"></a>[シナリオと利害関係者](#tab/Scenarios)
+# <a name="scenarios-and-stakeholders"></a>[シナリオと利害関係者](#tab/Scenarios)
 
 ## <a name="scenarios"></a>シナリオ
 
@@ -105,7 +105,7 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 
 クラウド移行作業のために組織を準備する方法の詳細については、「[initial organization alignment](../../plan/initial-org-alignment.md)」 (初期の組織の調整) にある Cloud Adoption Framework に関する記事を参照してください。
 
-# <a name="timelinestabtimelines"></a>[タイムライン](#tab/Timelines)
+# <a name="timelines"></a>[タイムライン](#tab/Timelines)
 
 一般的な状況として、このガイドで取り上げる移行シナリオは 1 か月から 6 か月で完了できるとお客様は理解しています。
 
@@ -117,7 +117,7 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 - **変更管理:** 変更の実装および承認について、お客様のビジネスには特定の要件がありますか?
 - **セグメントの規制:** セグメントまたは業界の規制を遵守する必要がありますか?
 
-# <a name="cost-managementtabmanagecost"></a>[Cost Management](#tab/ManageCost)
+# <a name="cost-management"></a>[Cost Management](#tab/ManageCost)
 
 ご利用の環境を評価する場合は、コスト分析手順を含める絶好の機会が得られます。 評価活動によって収集されたデータを使用して、コストを分析し予測できることが必要になります。 このコスト予測では、1 回限りのコスト (データのイングレスの増加など) に加えて、従量課金サービスのコストも考慮する必要があります。
 
