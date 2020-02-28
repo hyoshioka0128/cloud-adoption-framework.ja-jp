@@ -1,6 +1,6 @@
 ---
 title: 暗号化決定ガイド
-description: Azure 移行のコア サービスとしての暗号化について説明します。
+description: Azure 移行のコア サービスである暗号化ポリシーを実装し、クラウド ベースのワークロードとデータのセキュリティ層を追加します。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7df170713e10460d9e928837a99287be0afd5805
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807055"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707987"
 ---
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 

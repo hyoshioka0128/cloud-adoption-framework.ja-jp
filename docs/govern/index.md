@@ -1,6 +1,6 @@
 ---
 title: Azure 向けの Microsoft クラウド導入フレームワークのガバナンス
-description: Azure 向けの Microsoft クラウド導入フレームワークのガバナンスについて説明します。
+description: Azure のクラウド導入フレームワークを使用して、既存のポリシーを評価し、初期ガバナンス基盤を構築し、ガバナンス ツールを繰り返し追加する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/11/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 60f1672f314c37dda35c19668f3df17b2c54f7db
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 75b2269c4db348ab6a110309490187ef44b55f6c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223697"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706933"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークのガバナンス
 
@@ -130,7 +130,7 @@ ms.locfileid: "71223697"
 
 Azure 実装の理論とクイック アクセスの速習コースについては、[ガバナンス ガイドの概要](./guides/index.md)に関するページから開始してください。 このガイダンスを使用すると、基本的なことから開始して、クラウド導入作業と並行して、ガバナンスのニーズを段階的に改善することができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立します。
 

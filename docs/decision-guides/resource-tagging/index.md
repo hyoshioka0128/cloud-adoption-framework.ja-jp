@@ -1,6 +1,6 @@
 ---
 title: リソースの名前付けとタグ付けの意思決定ガイド
-description: Azure 移行でのコア サービスとしてのリソースの編成とタグ付けについて説明します。
+description: Azure のクラウド導入フレームワークの一部として、クラウドベースのリソースを整理する際の名前付けとタグ付けの方法とオプションについて説明します。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4a4b283fa447b296d429f037f12bbf3b2bfcf0fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90b69a21f1643d4545b2ea5bce46d0c3c499d9a3
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806681"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708684"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 
@@ -58,7 +58,7 @@ Azure リソースの種類によって[名前付けの要件](../../ready/azure
 
 <!-- markdownlint-disable MD033 -->
 
-| タグの種類 | 例 | [説明] |
+| タグの種類 | 例 | 説明 |
 |-----|-----|-----|
 | 機能            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します。                                 |
 | 分類        | confidentiality=private<br/>sla = 24hours                                 | 使用方法および適用されるポリシーによって、リソースを分類します                               |

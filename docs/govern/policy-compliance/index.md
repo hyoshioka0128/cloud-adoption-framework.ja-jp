@@ -1,6 +1,6 @@
 ---
 title: クラウドの企業 IT ポリシーを準備する
-description: クラウド ガバナンスに関連する企業ポリシーの概念の説明。
+description: 企業ポリシーの段階的な変更や自動適用などの主要なアクティビティを含む、拡張されたガバナンス モデルを有効にできるようにします。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b2a260868a873828a1bc47584f479f129b6b255a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e42cd5f8f551ddb4d68b19eab5e15c28cbe539ad
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806086"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709483"
 ---
 <!-- markdownlint-disable MD026 -->
 
