@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99f4a240f186af763c64f06aab580e5aecc4acc4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 4729e8e82cfa6674586cbeb8577fe8c3316423f0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709143"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223946"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>複雑な企業向けのガバナンス ガイド
 
@@ -39,10 +39,14 @@ ms.locfileid: "77709143"
 すべてのアプリケーションを管理グループ、サブスクリプション、リソース グループ階層の適切な領域にデプロイする必要があります。 デプロイ計画の間に、クラウド ガバナンス チームは、クラウド導入チームを支援するために必要なノードを階層に作成します。
 
 1. 最初に地理的な場所、次に環境の種類 (運用環境や非運用環境など) が反映された詳細な階層を持つ各部署の管理グループを定義します。
-2. 個別の部署または地域の一意の組み合わせごとに、運用のサブスクリプションと非運用のサブスクリプションを作成します。 複数のサブスクリプションを作成するには、慎重な検討が必要です。 詳細については、「[サブスクリプション決定ガイド](../../../decision-guides/subscriptions/index.md)」を参照してください。
-3. このグループ階層の各レベルで、[一貫性のある用語体系](../../../ready/azure-best-practices/naming-and-tagging.md)を適用します。
-4. リソース グループは、そのコンテンツのライフサイクルを考慮した形でデプロイする必要があります。 同時に開発され、まとめて管理され、同時に廃止されるリソースは、同じリソース グループに属します。 リソース グループの使用に関するベスト プラクティスの詳細については、[こちらを参照](../../../decision-guides/resource-consistency/index.md)してください。
-5. [リージョンの選択](../../../decision-guides/regions/index.md)は非常に重要であり、ネットワーク、監視、監査をフェールオーバー/フェールバック用に配置できるように考慮し、[必要な SKU を優先リージョンで使用できる](https://azure.microsoft.com/global-infrastructure/services)ことを確認する必要があります。
+
+1. 個別の部署または地域の一意の組み合わせごとに、運用のサブスクリプションと非運用のサブスクリプションを作成します。 複数のサブスクリプションを作成するには、慎重な検討が必要です。 詳細については、「[サブスクリプション決定ガイド](../../../decision-guides/subscriptions/index.md)」を参照してください。
+
+1. このグループ階層の各レベルで、[一貫性のある用語体系](../../../ready/azure-best-practices/naming-and-tagging.md)を適用します。
+
+1. リソース グループは、そのコンテンツのライフサイクルを考慮した形でデプロイする必要があります。 同時に開発され、まとめて管理され、同時に廃止されるリソースは、同じリソース グループに属します。 リソース グループの使用に関するベスト プラクティスの詳細については、[こちらを参照](../../../decision-guides/resource-consistency/index.md)してください。
+
+1. [リージョンの選択](../../../decision-guides/regions/index.md)は非常に重要であり、ネットワーク、監視、監査をフェールオーバー/フェールバック用に配置できるように考慮し、[必要な SKU を優先リージョンで使用できる](https://azure.microsoft.com/global-infrastructure/services)ことを確認する必要があります。
 
 ![大企業のリソース編成の図](../../../_images/govern/large-enterprise-resource-organization.png)
 
