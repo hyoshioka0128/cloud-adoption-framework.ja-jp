@@ -1,6 +1,6 @@
 ---
-title: Azure イノベーション ガイド:開始する前に
-description: Azure を使用し、顧客向けの新しい革新的ソリューションを作成する方法について説明します。
+title: Azure イノベーション:開始する前に
+description: 顧客を引きつけ、ソリューションを構築し、導入を推進するのに役立つ Azure 機能を使用して、クラウド イノベーションのために環境を準備します。
 author: matticusau
 ms.author: mlavery
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7929224bb8b0a3c0a9bec83ef5a08b492cb2d5f4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 262fe97adea985beb2f5f8331ba5a68572900d58
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808279"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171006"
 ---
 ::: zone target="docs"
 

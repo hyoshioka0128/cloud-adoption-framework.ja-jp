@@ -1,6 +1,6 @@
 ---
 title: ポリシー適用の意思決定ガイド
-description: Azure への移行におけるコア設計の優先度としての、ポリシー適用のサブスクリプションについて説明します。
+description: Azure 向けのクラウド導入フレームワークを使用して、Azure への移行におけるコア設計の優先度としての、ポリシー適用のサブスクリプションについて説明します。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8bc458fa480112c1b1a5748d042c9e439933f47f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2a5976d1aa1bb4ae0b1e8a0d810ae0acddabd883
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806732"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170989"
 ---
 # <a name="policy-enforcement-decision-guide"></a>ポリシー適用の意思決定ガイド
 
