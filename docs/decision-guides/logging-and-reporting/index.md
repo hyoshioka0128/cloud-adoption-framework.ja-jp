@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707664"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222780"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -31,7 +31,7 @@ ms.locfileid: "77707664"
 
 デプロイを計画するときには、ログ データの格納場所と、クラウド ベースのレポート サービスと監視サービスを既存のプロセスとツールに統合する方法を検討する必要があります。
 
-| 質問 | クラウドネイティブ | オンプレミスの拡張機能 | ハイブリッド監視 | ゲートウェイ集約 |
+| Question | クラウドネイティブ | オンプレミスの拡張機能 | ハイブリッド監視 | ゲートウェイ集約 |
 |-----|-----|-----|-----|-----|
 | 既存のオンプレミスの監視インフラストラクチャはありますか? | いいえ | はい | はい |  いいえ |
 | ログ データの外部の保存場所への格納を妨げている要件はありますか? | いいえ | はい | いいえ | いいえ |
@@ -44,7 +44,7 @@ ms.locfileid: "77707664"
 
 このシナリオでは、すべてのログ データが記録され、クラウドに格納されます。また、情報を処理して IT スタッフに表示するログ ツールとレポート ツールが、Azure プラットフォームと Azure Monitor から提供されます。
 
-カスタムの Azure Monitor ベースのログ記録ソリューションは、より小規模なデプロイまたは実験的なデプロイでサブスクリプションまたはワークロードごとにアドホックに実装でき、クラウド資産全体でログ データを監視するために一元的に構成されています。
+小規模または試験的なデプロイにおける各サブスクリプションやワークロードには、必要に応じて Azure Monitor に基づくカスタム ログ ソリューションを実装できます。 これらのソリューションは、ご自分のクラウド資産全体のログ データを監視できるよう、一元的に編成されています。
 
 **クラウドネイティブの前提条件:** クラウドネイティブのログとレポートのシステムの使用には、次の前提条件があります。
 

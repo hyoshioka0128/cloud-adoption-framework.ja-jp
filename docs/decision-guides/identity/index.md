@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 67e1b0fefeeab9e95fb001b162efaa5c0f247c59
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 5eb0ab5c264e8abf842f37e03b5c61b43ade9936
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708004"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222800"
 ---
 # <a name="identity-decision-guide"></a>ID 決定ガイド
 
@@ -31,7 +31,7 @@ Azure では、Azure Active Directory (Azure AD) はクラウド リソースを
 
 ## <a name="determine-identity-integration-requirements"></a>ID 統合の要件の決定
 
-| 質問 | クラウド ベースライン | ディレクトリ同期 | クラウドでホストされたドメイン サービス | Active Directory フェデレーション サービス (AD FS) |
+| Question | クラウド ベースライン | ディレクトリ同期 | クラウドでホストされたドメイン サービス | Active Directory フェデレーション サービス (AD FS) |
 |------|------|------|------|------|
 | 現在、オンプレミス ディレクトリ サービスがない | はい | いいえ | いいえ | いいえ |
 | ワークロードがクラウド環境とオンプレミス環境の間で共通のユーザーおよびグループのセットを使用する必要がある | いいえ | はい | いいえ | いいえ |
@@ -106,7 +106,7 @@ Azure での ID サービスの詳細については、以下を参照してく�
 
 ## <a name="next-steps"></a>次のステップ
 
-ID は、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
+ID は、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルについては、[決定ガイドの概要](../index.md)に関するページを参照してください。
 
 > [!div class="nextstepaction"]
 > [アーキテクチャの意思決定ガイド](../index.md)

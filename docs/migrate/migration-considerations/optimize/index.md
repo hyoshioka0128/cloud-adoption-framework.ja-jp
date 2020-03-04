@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 87235584bc9da0f1a9e5124408b587eec864af48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: aed8ba9d97cfbc236d378066569b466302b66239
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801887"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225446"
 ---
 # <a name="optimize-migrated-workloads"></a>移行されたワークロードの最適化
 
@@ -22,7 +22,7 @@ ms.locfileid: "76801887"
 
 ## <a name="definition-of-done"></a>"*完了*" の定義
 
-最適化プロセスは、ワークロードが正常に構成され、サイズ設定され、本番環境で使用されたときに完了します。
+最適化プロセスは、ワークロードが正常に構成され、サイズ設定され、本番環境にデプロイされたときに完了します。
 
 ## <a name="accountability-during-optimization"></a>最適化中の説明責任
 

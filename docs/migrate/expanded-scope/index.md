@@ -3,16 +3,16 @@ title: クラウド移行の拡大された範囲のチェックリスト
 description: クラウド移行の拡大された範囲のチェックリスト
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6a7a59ba62204d43b7085ab3dbd6b934d6aaccc1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba6c768f98e3b74b0478fef0a86e6d8ac5537f1c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803111"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222330"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>クラウド移行の拡大された範囲
 
@@ -22,11 +22,10 @@ ms.locfileid: "76803111"
 
 ## <a name="cloud-migration-expanded-scope-checklist"></a>クラウド移行の拡大された範囲のチェックリスト
 
-以下のチェックリストは、場合によっては [Azure 移行ガイド](../azure-migration-guide/index.md)を超えて移行の範囲を拡大する必要がある、一般的な領域の複雑さをまとめたものです。
+以下のチェックリストは、移行の範囲が [Azure 移行ガイド](../azure-migration-guide/index.md)の範囲を超える可能性のある、一般的に複雑な領域をまとめています。
 
 ### <a name="business-driven-scope-expansion"></a>ビジネスによる範囲の拡大
 
-- **[ポートフォリオのバランスを取る](./balance-the-portfolio.md):** クラウド戦略チームは、移行 (既存のワークロードとアプリケーションを最小限の変更で再ホストする) または刷新 (最新のクラウド テクノロジを使用してそれらのワークロードとアプリケーションをリファクタリングまたは再構築する) にさらに投資することに関心があります。 多くの場合、2 つの優先事項のバランスが成功への鍵です。 このガイドで、クラウド導入ポートフォリオのバランスを取るというトピックは、各移行プロセスで取り上げられている共通のトピックです。
 - **[グローバル市場をサポートする](../../decision-guides/regions/index.md):** 業務は、異なるデータ主権要件がある複数の地域で行われています。 その要件を満たすには、移行段階の前提条件の確認と資産の分散に考慮事項を追加する必要があります。
 
 ### <a name="technology-driven-scope-expansion"></a>テクノロジによる範囲の拡大
@@ -43,7 +42,7 @@ ms.locfileid: "76803111"
 
 ## <a name="next-steps"></a>次のステップ
 
-具体的なニーズや範囲変更に対応するには、左側の目次を参照してください。 また、一覧の最初の範囲の拡大である「[ポートフォリオのバランスを取る](./balance-the-portfolio.md)」は、このようなシナリオを検討する際の出発点としてお勧めです。
+具体的なニーズや範囲変更に対応するには、左側の目次を参照してください。 また、一覧の最初の範囲の拡大である「[グローバル市場をサポートする](../../decision-guides/regions/index.md)」は、このようなシナリオを検討する際の出発点としてお勧めです。
 
 > [!div class="nextstepaction"]
-> [ポートフォリオのバランスを取る](./balance-the-portfolio.md):
+> [グローバル市場をサポートする](../../decision-guides/regions/index.md)

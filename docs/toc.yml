@@ -42,9 +42,11 @@ items:
             href: strategy/financial-models.md
           - name: クラウド会計を理解する
             href: strategy/cloud-accounting.md
+          - name: ポートフォリオのバランスを取る
+            href: strategy/balance-the-portfolio.md
       - name: 最初のクラウド導入プロジェクト
         href: strategy/first-adoption-project.md
-      - name: 推奨されるスキル
+      - name: 戦略に関連するスキル
         href: strategy/suggested-skills.md
   - name: プラン
     items:
@@ -84,10 +86,16 @@ items:
             href: plan/iteration-paths.md
           - name: タイムラインの見積もり
             href: plan/timelines.md
-      - name: 推奨されるスキル
-        href: plan/suggested-skills.md
-      - name: クラウドに適応
-        href: plan/adapt-roles-skills-processes.md
+      - name: スキルの準備計画
+        items:
+          - name: 準備計画の構築
+            href: plan/adapt-roles-skills-processes.md
+          - name: ロールとスキルの関連付け
+            href: plan/suggested-skills.md
+      - name: ベスト プラクティス
+        items:
+          - name: Azure でのデジタル資産の評価
+            href: plan/contoso-migration-assessment.md
   - name: Ready
     items:
       - name: 概要
@@ -108,32 +116,46 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: Azure を最新の状態に保つ
             href: ready/azure-setup-guide/staying-current.md
-          - name: 移行ランディング ゾーンをデプロイする
-            href: ready/azure-setup-guide/migration-landing-zone.md
-      - name: ランディング ゾーンに関する考慮事項
+      - name: 最初のランディング ゾーン
+        items:
+          - name: ランディング ゾーンとは
+            href: ready/landing-zone/index.md
+          - name: 最初のランディング ゾーンの選択
+            href: ready/landing-zone/first-landing-zone.md
+          - name: 移行ランディング ゾーンのブループリント
+            href: ready/landing-zone/migrate-landing-zone.md
+          - name: Terraform ランディング ゾーン
+            href: ready/landing-zone/terraform-landing-zone.md
+      - name: ランディング ゾーンの展開
         items:
           - name: 概要
             href: ready/considerations/index.md
-          - name: Azure 基礎の概念
-            href: ready/considerations/fundamental-concepts.md
-          - name: コンピューティング オプションの確認
-            href: ready/considerations/compute-options.md
-          - name: ネットワーク オプションの確認
-            href: ready/considerations/networking-options.md
-          - name: ストレージ オプションの確認
-            href: ready/considerations/storage-options.md
-          - name: データ オプションの確認
-            href: ready/considerations/data-options.md
-          - name: ロールベースのアクセス制御
-            href: ready/considerations/roles.md
-          - name: 一貫性のあるハイブリッド クラウドの作成
-            href: ready/considerations/hybrid-consistency.md
-      - name: 拡大された範囲
-        items:
-          - name: Terraform ランディング ゾーン
-            href: ready/expanded-scope/terraform-landing-zone.md
-          - name: ネットワーク境界のセキュリティ
-            href: reference/networking-vdc.md
+          - name: 基本的なランディング ゾーンに関する考慮事項
+            items:
+              - name: Azure 基礎の概念
+                href: ready/considerations/fundamental-concepts.md
+              - name: コンピューティング オプションの確認
+                href: ready/considerations/compute-options.md
+              - name: ネットワーク オプションの確認
+                href: ready/considerations/networking-options.md
+              - name: ストレージ オプションの確認
+                href: ready/considerations/storage-options.md
+              - name: データ オプションの確認
+                href: ready/considerations/data-options.md
+              - name: ロールベースのアクセス制御
+                href: ready/considerations/roles.md
+              - name: 一貫性のあるハイブリッド クラウドの作成
+                href: ready/considerations/hybrid-consistency.md
+          - name: ランディング ゾーンのセキュリティの向上 (機密データ)
+            items:
+              - name: Azure における安全なハイブリッド ネットワーク アーキテクチャの実装
+                href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Azure の ID 管理とアクセス制御セキュリティのベスト プラクティス
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Azure のネットワーク セキュリティに関するベスト プラクティス
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Azure で運用可能なセキュリティに関するベスト プラクティス
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
       - name: ベスト プラクティス
         items:
           - name: 概要
@@ -146,6 +168,8 @@ items:
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: ネットワーク
             items:
+              - name: ネットワーク境界のセキュリティ
+                href: reference/networking-vdc.md
               - name: 仮想ネットワークを計画する
                 href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: ネットワーク セキュリティのベスト プラクティス
@@ -188,7 +212,7 @@ items:
                 href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 使用状況と支出の監視
                 href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-      - name: 推奨されるスキル
+      - name: Ready およびランディング ゾーンに関連するスキル
         href: ready/suggested-skills.md
   - name: 採用
     items:
@@ -200,90 +224,40 @@ items:
             items:
               - name: 開始する前に
                 href: migrate/azure-migration-guide/index.md
-              - name: Azure への移行の前提条件
-                href: migrate/azure-migration-guide/prerequisites.md
-              - name: デジタル資産を評価する
+              - name: 各ワークロードを評価し、計画を調整する
                 href: migrate/azure-migration-guide/assess.md
               - name: ワークロード資産を移行する
                 href: migrate/azure-migration-guide/migrate.md
+              - name: テスト、最適化および昇格
+                href: migrate/azure-migration-guide/optimize-and-transform.md
               - name: 移行に重点を置いたコスト管理のメカニズム
                 href: migrate/azure-migration-guide/manage-costs.md
-              - name: 最適化と変換
-                href: migrate/azure-migration-guide/optimize-and-transform.md
-              - name: セキュリティ保護と管理
-                href: migrate/azure-migration-guide/secure-and-manage.md
               - name: サポートを受ける
                 href: migrate/azure-migration-guide/assistance.md
-          - name: 拡大された範囲
-            items:
-              - name: 拡大された範囲のチェックリスト
-                href: migrate/expanded-scope/index.md
-              - name: ポートフォリオのバランスを取る
-                href: migrate/expanded-scope/balance-the-portfolio.md
-              - name: スキルの準備
-                href: migrate/expanded-scope/suggested-skills.md
-              - name: VMware ホストの移行
-                href: migrate/expanded-scope/vmware-host.md
-              - name: SQL Server の移行
-                href: migrate/expanded-scope/sql-migration.md
-              - name: 複数のデータセンター
-                href: migrate/expanded-scope/multiple-datacenters.md
-              - name: データ要件がネットワーク容量を超える
-                href: migrate/expanded-scope/network-capacity-exceeded.md
-              - name: ガバナンスとコンプライアンス
-                href: migrate/expanded-scope/governance-or-compliance.md
-          - name: ベスト プラクティス
+          - name: 移行シナリオ
             items:
               - name: 概要
-                href: migrate/azure-best-practices/index.md
-              - name: ワークロードの評価
+                href: migrate/azure-best-practices/contoso-migration-overview.md
+              - name: Windows Server ワークロード
                 items:
-                  - name: オンプレミスのワークロードの評価
-                    href: migrate/azure-best-practices/contoso-migration-assessment.md
-              - name: ワークロードの移行
+                  - name: Azure VM 上で Windows アプリをリホストする
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
+                  - name: コンテナーと Azure SQL を使用して Windows アプリを再設計する
+                    href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
+              - name: Linux ワークロード
                 items:
-                  - name: 移行されたワークロードのネットワークの設定
-                    href: migrate/azure-best-practices/migrate-best-practices-networking.md
-                  - name: アプリケーションの移行
-                    items:
-                      - name: 概要
-                        href: migrate/azure-best-practices/contoso-migration-overview.md
-                      - name: 移行インフラストラクチャをデプロイする
-                        href: migrate/azure-best-practices/contoso-migration-infrastructure.md
-                      - name: Windows Server ワークロード
-                        items:
-                          - name: Azure VM 上で Windows アプリをリホストする
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
-                          - name: コンテナーと Azure SQL を使用して Windows アプリを再設計する
-                            href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
-                      - name: Linux ワークロード
-                        items:
-                          - name: Linux アプリを Azure VM 上でリホストする
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
-                          - name: Azure VM および Azure Database for MySQL で Linux アプリをリホストする
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
-                      - name: SQL Server ワークロード
-                        items:
-                          - name: Azure VM と Azure SQL Database Managed Instance でアプリをリホストする
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
-                          - name: Azure VM と SQL Server AlwaysOn 可用性グループでアプリをリホストする
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
-                      - name: ASP.NET/PHP/Java アプリ
-                        items:
-                          - name: Azure App Service と Azure SQL Database にアプリをリファクタリングする
-                            href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                          - name: Azure App Service と Azure Database for MySQL に Linux アプリをリファクタリングする
-                            href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
-                          - name: Azure でのアプリのリビルド
-                            href: migrate/azure-best-practices/contoso-migration-rebuild.md
-                          - name: Azure DevOps Services に TFS を移行する
-                            href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
-                      - name: 移行のスケーリング
-                        href: migrate/azure-best-practices/contoso-migration-scale.md
-              - name: VMware ホストの移行
+                  - name: Linux アプリを Azure VM 上でリホストする
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
+                  - name: Azure VM および Azure Database for MySQL で Linux アプリをリホストする
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
+                  - name: Azure App Service と Azure Database for MySQL に Linux アプリをリファクタリングする
+                    href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
+              - name: VMware ホスト
                 items:
                   - name: 概要
                     href: migrate/azure-best-practices/vmware-host.md
+                  - name: VMWare ホストの移行に関する考慮事項
+                    href: migrate/expanded-scope/vmware-host.md
                   - name: 前提条件
                     items:
                       - name: 環境のセキュリティ保護
@@ -336,7 +310,35 @@ items:
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: VMware SRM を使用してプライベート クラウドをディザスター リカバリー サイトとして設定する
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: データ プラットフォームを移行する
+              - name: ASP.NET アプリ
+                items:
+                  - name: Azure App Service と Azure SQL Database にアプリをリファクタリングする
+                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
+                  - name: Azure でのアプリのリビルド
+                    href: migrate/azure-best-practices/contoso-migration-rebuild.md
+                  - name: Azure DevOps Services に TFS を移行する
+                    href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
+              - name: Java アプリ
+                items:
+                  - name: 移行オプション
+                    href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Spring から Azure App Service へ
+                    href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat から Azure App Service へ
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Tomcat から AKS のコンテナーへ
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: WebLogic から Azure Virtual Machines へ
+                    href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: SQL Server
+                items:
+                  - name: SQL Server の移行に関する考慮事項
+                    href: migrate/expanded-scope/sql-migration.md
+                  - name: Azure VM と Azure SQL Database Managed Instance でアプリをリホストする
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
+                  - name: Azure VM と SQL Server AlwaysOn 可用性グループでアプリをリホストする
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
+              - name: データ プラットフォーム
                 items:
                   - name: 概要
                     href: migrate/azure-best-practices/sql-migration.md
@@ -420,7 +422,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: オンラインで Oracle を Azure DB for PostgreSQL に移行する
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: メインフレームを移行する
+              - name: メインフレーム
                 items:
                   - name: 概要
                     href: infrastructure/mainframe-migration/index.md
@@ -430,45 +432,49 @@ items:
                     href: infrastructure/mainframe-migration/migration-strategies.md
                   - name: メインフレーム アプリケーションの移行
                     href: infrastructure/mainframe-migration/application-strategies.md
-              - name: ワークロードを最適化する
-                items:
-                  - name: ワークロードの料金計算とサイズ設定
-                    href: migrate/azure-best-practices/migrate-best-practices-costs.md
-              - name: ワークロードをセキュリティで保護して管理する
+              - name: セキュリティで保護されたワークロードの移行
                 items:
                   - name: 移行後のワークロードのセキュリティ保護と管理
                     href: migrate/azure-best-practices/migrate-best-practices-security-management.md
-                  - name: その他のベスト プラクティス
-                    items:
-                      - name: Azure のデータベース セキュリティに関するベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure のデータ セキュリティと暗号化のベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure の ID 管理とアクセス制御セキュリティのベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure のネットワーク セキュリティに関するベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure で運用可能なセキュリティに関するベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure PaaS のベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure Service Fabric セキュリティに関するベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure VM のセキュリティのベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure における安全なハイブリッド ネットワーク アーキテクチャの実装
-                        href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: IoT セキュリティのベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure で Paas データベースをセキュリティで保護する
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure App Service を使用して PaaS の Web アプリケーションとモバイル アプリケーションをセキュリティ保護する
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure Storage を使用して PaaS の Web アプリケーションとモバイル アプリケーションをセキュリティで保護する
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-          - name: 移行に関する考慮事項
+                  - name: Azure のデータベース セキュリティに関するベスト プラクティス
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure のデータ セキュリティと暗号化のベスト プラクティス
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure PaaS のベスト プラクティス
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure Service Fabric セキュリティに関するベスト プラクティス
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure VM のセキュリティのベスト プラクティス
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: IoT セキュリティのベスト プラクティス
+                    href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure で Paas データベースをセキュリティで保護する
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure App Service を使用して PaaS の Web アプリケーションとモバイル アプリケーションをセキュリティ保護する
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure Storage を使用して PaaS の Web アプリケーションとモバイル アプリケーションをセキュリティで保護する
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: ベスト プラクティス
+            items:
+              - name: 概要
+                href: migrate/azure-best-practices/index.md
+              - name: 複数のデータ センター
+                href: migrate/expanded-scope/multiple-datacenters.md
+              - name: データ要件がネットワーク容量を超える
+                href: migrate/expanded-scope/network-capacity-exceeded.md
+              - name: 移行されたワークロードのネットワークの設定
+                href: migrate/azure-best-practices/migrate-best-practices-networking.md
+              - name: 移行インフラストラクチャをデプロイする
+                href: migrate/azure-best-practices/contoso-migration-infrastructure.md
+              - name: 移行したワークロードのコストの最適化
+                href: migrate/azure-best-practices/migrate-best-practices-costs.md
+              - name: 移行のスケーリング
+                href: migrate/azure-best-practices/contoso-migration-scale.md
+              - name: ガバナンスとコンプライアンス
+                href: migrate/expanded-scope/governance-or-compliance.md
+          - name: プロセス改善
             items:
               - name: 概要
                 href: migrate/migration-considerations/index.md
@@ -486,9 +492,9 @@ items:
                     href: migrate/migration-considerations/prerequisites/technical-complexity.md
                   - name: 移行バックログの確認
                     href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
-              - name: 資産とワークロードを評価する
+              - name: 評価プロセス
                 items:
-                  - name: 移行前に資産を評価する
+                  - name: 移行前に評価の前提条件を検証する ‐ R 調整の追加
                     href: migrate/migration-considerations/assess/index.md
                   - name: 優先順位を一致させる
                     href: migrate/migration-considerations/assess/business-priorities.md
@@ -496,7 +502,7 @@ items:
                     href: migrate/migration-considerations/assess/evaluate.md
                   - name: ワークロードを設計する
                     href: migrate/migration-considerations/assess/architect.md
-                  - name: クラウド コストを見積もる
+                  - name: クラウドの初期見積りの更新と調整
                     href: migrate/migration-considerations/assess/estimate.md
                   - name: パートナーシップのオプションを理解する
                     href: migrate/migration-considerations/assess/partnership-options.md
@@ -504,7 +510,7 @@ items:
                     href: migrate/migration-considerations/assess/release-iteration-backlog.md
                   - name: アーキテクチャの変更を承認する
                     href: migrate/migration-considerations/assess/approve.md
-              - name: 個々の資産を移行する
+              - name: 移行プロセス
                 items:
                   - name: 概要
                     href: migrate/migration-considerations/migrate/index.md
@@ -518,7 +524,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: ワークロードをステージする
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: ワークロードを最適化して昇格させる
+              - name: テスト、最適化、昇格プロセス
                 items:
                   - name: 概要
                     href: migrate/migration-considerations/optimize/index.md
@@ -536,10 +542,8 @@ items:
                     href: migrate/migration-considerations/optimize/decommission.md
                   - name: 振り返りの実施
                     href: migrate/migration-considerations/optimize/retrospective.md
-              - name: 運用環境でのワークロードのセキュリティ保護と管理
-                items:
-                  - name: 概要
-                    href: migrate/migration-considerations/secure-and-manage/index.md
+          - name: 移行に関連するスキル
+            href: migrate/expanded-scope/suggested-skills.md
       - name: イノベーション
         items:
           - name: 概要
@@ -560,39 +564,7 @@ items:
                 href: innovate/innovation-guide/devices.md
               - name: 予測と影響
                 href: innovate/innovation-guide/predict.md
-          - name: 考慮事項
-            items:
-              - name: 概要
-                href: innovate/considerations/index.md
-              - name: 事業価値における合意
-                href: innovate/business-value.md
-              - name: 顧客の導入
-                items:
-                  - name: フィードバック ループ
-                    href: innovate/considerations/adoption.md
-                  - name: 顧客の共感を構築する
-                    href: innovate/considerations/build.md
-                  - name: 顧客への影響を測定する
-                    href: innovate/considerations/measure.md
-                  - name: お客様による学習
-                    href: innovate/considerations/learn.md
-                  - name: お客様の課題とブロック
-                    href: innovate/considerations/challenges.md
-              - name: デジタル発明
-                items:
-                  - name: デジタル発明を開発する
-                    href: innovate/considerations/invention.md
-                  - name: データの民主化
-                    href: innovate/considerations/data.md
-                  - name: アプリを使用した連携
-                    href: innovate/considerations/apps.md
-                  - name: 導入の強化
-                    href: innovate/considerations/ci-cd.md
-                  - name: デバイスの操作
-                    href: innovate/considerations/devices.md
-                  - name: 予測と影響
-                    href: innovate/considerations/predict.md
-          - name: イノベーションのベスト プラクティス
+          - name: ベスト プラクティス
             items:
               - name: 概要と Azure ツールチェーン
                 href: innovate/best-practices/index.md
@@ -860,6 +832,38 @@ items:
                         href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Azure HDInsight での ML サービスの運用化
                         href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: プロセス改善
+            items:
+              - name: 概要
+                href: innovate/considerations/index.md
+              - name: 事業価値における合意
+                href: innovate/business-value.md
+              - name: 顧客の導入
+                items:
+                  - name: フィードバック ループ
+                    href: innovate/considerations/adoption.md
+                  - name: 顧客の共感を構築する
+                    href: innovate/considerations/build.md
+                  - name: 顧客への影響を測定する
+                    href: innovate/considerations/measure.md
+                  - name: お客様による学習
+                    href: innovate/considerations/learn.md
+                  - name: お客様の課題とブロック
+                    href: innovate/considerations/challenges.md
+              - name: デジタル発明
+                items:
+                  - name: デジタル発明を開発する
+                    href: innovate/considerations/invention.md
+                  - name: データの民主化
+                    href: innovate/considerations/data.md
+                  - name: アプリを使用した連携
+                    href: innovate/considerations/apps.md
+                  - name: 導入の強化
+                    href: innovate/considerations/ci-cd.md
+                  - name: デバイスの操作
+                    href: innovate/considerations/devices.md
+                  - name: 予測と影響
+                    href: innovate/considerations/predict.md
   - name: ガバナンス
     items:
       - name: 概要
@@ -1186,7 +1190,7 @@ items:
         href: organize/cost-conscious-organization.md
       - name: アンチパターン - IT 封土と IT サイロ
         href: organize/fiefdoms-silos.md
-  - name: リファレンス
+  - name: リソース
     items:
       - name: クラウド導入フレームワークのロードマップ
         href: reference/index.md
@@ -1244,5 +1248,5 @@ items:
         href: reference/vdc.md
       - name: Azure のしくみ
         href: getting-started/what-is-azure.md
-  - name: Azure アーキテクチャ センター
-    href: 'https://docs.microsoft.com/azure/architecture'
+      - name: Azure アーキテクチャ センター
+        href: 'https://docs.microsoft.com/azure/architecture'

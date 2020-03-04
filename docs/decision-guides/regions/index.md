@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d8545d000d817aa8d6bcaa40a67a157ca5e57669
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 00dfa6c1caed189d9d9b1d27525344b5101c2af0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708497"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222599"
 ---
 # <a name="azure-regions"></a>Azure Azure リージョン
 
 Azure は、世界中のさまざまなリージョンで構成されています。 各 [Azure リージョン](https://azure.microsoft.com/global-infrastructure/regions)には固有の特性があり、それによって使用するリージョンの選択が非常に重要になります。
 
 1. **利用可能なサービス:** 各リージョンにデプロイされるサービスは、さまざまな要因によって異なります。 目的のサービスを含むワークロードのリージョンを選択してください。 各リージョンで利用可能なサービスの詳細については、「[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services)」を参照してください。
-1. **容量:** 各リージョンには最大容量があります。 通常、これはエンド ユーザーから分離されていますが、どの種類のサブスクリプションがどの種類のサービスをどのような状況でデプロイできるかに影響する可能性があります。 これは、サブスクリプションのクォータとは異なります。 大規模なデータセンターの Azure への移行を計画している場合は、ローカルの Azure フィールド チームまたはアカウント マネージャーに問い合わせて、必要なスケールでデプロイできることを確認することをお勧めします。
+1. **容量:** 各リージョンには最大容量があります。 通常、これはエンド ユーザーから分離されていますが、どの種類のサブスクリプションでどの種類のサービスをどのような状況でデプロイできるかに影響します。 これは、サブスクリプションのクォータとは異なります。 大規模なデータセンターを Azure に移行する計画をしている場合は、ご自分の地域の Azure フィールド チームまたはアカウント マネージャーに問い合わせて、必要な規模でデプロイできることを確認することをお勧めします。
 1. **制約:** 特定のリージョンでのサービスのデプロイには、特定の制約が適用されます。 たとえば、一部のリージョンは、バックアップまたはフェールオーバーのターゲットとしてのみ使用できます。 注意が必要なその他の制約は、[データ主権要件](https://azure.microsoft.com/global-infrastructure/geographies)です。
 1. **主権:** 特定のリージョンは、特定の主権エンティティ専用になっています。 すべてのリージョンは Azure リージョンですが、こうした主権リージョンは他の Azure から完全に分離されており、Microsoft によって管理されるとは限りません。また、特定の種類の顧客に制限されている場合もあります。 このような主権リージョンは次のとおりです。
     1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)
