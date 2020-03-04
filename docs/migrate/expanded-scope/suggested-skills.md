@@ -3,16 +3,16 @@ title: クラウド移行のためのスキルの準備
 description: クラウド移行のためのスキルの準備
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
+ms.date: 02/25/2020
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f24d619106674cedf12bc650cd0807e0f766e3c6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802941"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222313"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>クラウド移行のためのスキルの準備
 
@@ -28,7 +28,7 @@ ms.locfileid: "76802941"
 
 次のツールは、評価アクティビティの実行でチームに役立つことがあります。
 
-- [ポートフォリオのバランスを取る](./balance-the-portfolio.md):アプリケーション ポートフォリオ全体での残高および適切な投資配分を確保します。
+- [ポートフォリオのバランスを取る](../../strategy/balance-the-portfolio.md):アプリケーション ポートフォリオ全体での残高および適切な投資配分を確保します。
 - [業務上の正当な理由の構築](../../strategy/cloud-migration-business-case.md):クラウド移行作業を推進する業務上の正当な理由を作成し理解します。
 - [デジタル資産の合理化](../../digital-estate/rationalize.md):デジタル資産内の資産を合理化します。
 - [アプリケーション ポートフォリオの評価](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
