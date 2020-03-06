@@ -1,18 +1,18 @@
 ---
-title: 変革の取り組みに関連するビジネス成果
-description: クラウド変換に関連するビジネス成果の説明。
+title: 変換の取り組みによるビジネス成果
+description: Azure のクラウド導入フレームワークを使用して、クラウド変換に関連するビジネスの成果を理解します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 333e3f2e3be6db16cc8bd6f81360bc5b15f4725e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b0104767c58e31f6ae31cae511d2aa1dc60dd73
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798521"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337942"
 ---
 <!-- markdownlint-disable MD026 -->
 

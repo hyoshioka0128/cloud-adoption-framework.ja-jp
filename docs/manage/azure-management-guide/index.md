@@ -1,6 +1,6 @@
 ---
-title: Azure 管理ガイド:開始する前に
-description: Azure での作業を管理する方法について段階的に学習します。
+title: Azure 管理の概要
+description: Azure のクラウド導入フレームワークと、Azure の運用環境を管理するために必要な基本的なツールに関する情報について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,16 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a6f136f3a9aeae8b9ffe6f7e51dbb65da04e81ea
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223460"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341761"
 ---
+# <a name="azure-management-guide-before-you-start"></a>Azure 管理ガイド:開始する前に
+
+
 ::: zone target="docs"
 
-# <a name="azure-management-guide-before-you-start"></a>Azure 管理ガイド:開始する前に
 
 > [!NOTE]
 > クラウド導入フレームワークでイノベーションを導くとき、このガイドが開始点となります。 これは Azure クイック スタート センターでも利用できます。 Azure クイック スタート センターへのリンクについては、この記事の後半にあるヒントを参照してください。

@@ -1,18 +1,18 @@
 ---
-title: クラウドの管理と運用 - 指導的役割を果たす理論
-description: クラウドの管理と運用 - 指導的役割を果たす理論
+title: クラウド管理のガイド指針
+description: Azure のクラウド導入フレームワークを使用して、クラウドでの成功が証明されている運用モデル、プロセス、ツールについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 88ff7f7f068eeb2c516717930f3633ac1473281f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b08e35ce2ac2d1bfd4a962b9bf5d29654c652c0a
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807786"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341166"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>クラウドの IT 管理と運用
 
