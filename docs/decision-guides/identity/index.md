@@ -9,11 +9,11 @@ ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
 ms.openlocfilehash: 5eb0ab5c264e8abf842f37e03b5c61b43ade9936
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222800"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337378"
 ---
 # <a name="identity-decision-guide"></a>ID 決定ガイド
 
