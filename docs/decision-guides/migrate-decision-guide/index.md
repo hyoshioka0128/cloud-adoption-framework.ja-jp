@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: f3d16455e3babc075bce671cfe867fedb2b4b6c7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 7e6f22d725a06fc82a08e868d4d41f26eea5d60b
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708242"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892533"
 ---
 # <a name="migration-tools-decision-guide"></a>移行ツール決定ガイド
 
@@ -29,7 +29,7 @@ ms.locfileid: "77708242"
 - **移行段階のアプリケーション プラットフォームの最新化は、時間、エネルギー、予算の賢明な投資となりますか。** Azure App Service や Azure Functions などの PaaS テクノロジを利用すると、デプロイの柔軟性を向上し、アプリケーションをホストする仮想マシンの管理の複雑さを軽減できます。 ただし、これらのクラウドネイティブ機能を利用するには、アプリケーションのリファクタリングが必要になる可能性があります。また、移行作業にかなりの時間とコストがかかる可能性があります。 最小限の変更でアプリケーションを PaaS テクノロジに移行できる場合は、最新化に適した候補である可能性があります。 大規模なリファクタリングが必要な場合は、IaaS ベースの仮想マシンを使用して移行する方が適している可能性があります。
 - **移行段階のデータ プラットフォームの最新化は、時間、エネルギー、予算の賢明な投資となりますか。** アプリケーションの移行と同様に、Azure SQL Database、Cosmos DB、Azure Storage などの Azure PaaS マネージド ストレージ オプションにも管理と柔軟性の面で大きなメリットがありますが、これらのサービスへの移行には既存のデータとそのデータを使用するアプリケーションのリファクタリングが必要な可能性があります。 多くの場合、データ プラットフォームに必要なリファクタリングは、アプリケーション プラットフォームよりもはるかに小規模です。 そのため、アプリケーション プラットフォームが同じままでも、データ プラットフォームが最新化されることがごく一般的です。 最小限の変更でデータをマネージド データ サービスに移行できる場合、これは最新化に適した候補です。 これらの PaaS サービスを使用するためのリファクタリングに膨大な時間またはコストがかかるデータには、既存のホスティング機能により適合するように、IaaS ベースの仮想マシンを使用して移行する方が適している可能性があります。
 - **現在、アプリケーションは専用の仮想マシン上で実行されていますか。それとも他のアプリケーションと共にホスティングが共有されていますか。** 専用の仮想マシン上で実行されているアプリケーションは、共有サーバー上で実行されているアプリケーションよりも PaaS ホスティング オプションに簡単に移行できます。
-- **データの移行はネットワークの帯域幅を超えますか。** オンプレミスのデータ ソースと Azure 間のネットワーク容量は、データ移行のボトルネックになる可能性があります。 転送する必要のあるデータに、効率的またはタイムリーな移行を妨げる帯域幅の制限がある場合は、必要に応じて代替またはオフラインの転送メカニズムを検討します。 クラウド導入フレームワークの[移行レプリケーションに関する記事](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)では、レプリケーションの制限が移行作業に与える影響が説明されています。 移行評価の一環として、ローカルおよび WAN の帯域幅が移行要件に対応できるかどうかを IT チームに相談してください。 また、[移行段階でストレージ要件がネットワーク容量を超えている場合の拡大された範囲の移行シナリオ](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites)に関する記事を参照してください。
+- **データの移行はネットワークの帯域幅を超えますか。** オンプレミスのデータ ソースと Azure 間のネットワーク容量は、データ移行のボトルネックになる可能性があります。 転送する必要のあるデータに、効率的またはタイムリーな移行を妨げる帯域幅の制限がある場合は、必要に応じて代替またはオフラインの転送メカニズムを検討します。 クラウド導入フレームワークの[移行レプリケーションに関する記事](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)では、レプリケーションの制限が移行作業に与える影響が説明されています。 移行評価の一環として、ローカルおよび WAN の帯域幅が移行要件に対応できるかどうかを IT チームに相談してください。 また、[移行段階でストレージ要件がネットワーク容量を超えている場合の拡大された範囲の移行シナリオ](../../migrate/azure-best-practices/network-capacity-exceeded.md#suggested-prerequisites)に関する記事を参照してください。
 - **アプリケーションは既存の DevOps パイプラインを利用していますか。** 多くの場合、Azure Pipelines は、クラウド ベースのホスティング環境にアプリケーションをデプロイするためのリファクタリングが簡単です。
 - **データに複雑なデータ ストレージ要件はありますか。** 通常、運用アプリケーションには可用性の高いデータ ストレージが必要であり、常時オンの機能性と、同様のサービス稼働時間と継続性機能が提供されます。 Azure SQL Database、Azure Database for MySQL、Azure Cosmos DB などの Azure PaaS ベースのマネージド データベース オプションは、いずれも 99.99% の稼働時間のサービス レベル契約を提供します。 逆に、Azure VM 上の IaaS ベースの SQL Server は、99.95% というシングルインスタンスのサービス レベル アグリーメントを提供します。 PaaS ストレージ オプションを使用するためにデータを最新化できない場合、より長い IaaS 稼働時間を保証するには、SQL Server Always-on クラスターを実行し、インスタンス間でデータを継続的に同期するなど、より複雑なデータ ストレージ シナリオが必要になります。 これには多大なホスティング コストとメンテナンス コストがかかるため、データ移行のオプションを検討する際には、稼働時間の要件、最新化にかかる労力、全体的な予算への影響のバランスを取ることが重要です。
 
@@ -41,5 +41,5 @@ ms.locfileid: "77708242"
 
 - **[ クラウドの基礎:Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview):** Azure IaaS および PaaS コンピューティング オプションの機能について説明します。
 - **[ クラウドの基礎:適切なデータ ストアの選択](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview):** Azure プラットフォーム上で利用できる PaaS ストレージ オプションについて説明します。
-- **[拡大された範囲の移行:移行作業中にデータ要件がネットワーク容量を超えている](../../migrate/expanded-scope/network-capacity-exceeded.md):** 使用できるネットワーク帯域幅によってデータ移行が妨げられるシナリオの代替データ移行メカニズムについて説明します。
+- **[拡大された範囲の移行:移行作業中にデータ要件がネットワーク容量を超えている](../../migrate/azure-best-practices/network-capacity-exceeded.md):** 使用できるネットワーク帯域幅によってデータ移行が妨げられるシナリオの代替データ移行メカニズムについて説明します。
 - **[SQL Database:Azure で適切な SQL Server オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines):** ホスト型インフラストラクチャ (IaaS) またはホスト型サービス (PaaS) 環境で、SQL Server ワークロードをホストすることを選択する際のオプションとビジネス上の理由について説明します。

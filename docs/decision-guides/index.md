@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6fcd5892eb9d13b61cbaa697731718e1ca8ce3eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708157"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892448"
 ---
 # <a name="architectural-decision-guides"></a>アーキテクチャの決定ガイド
 
@@ -29,7 +29,7 @@ ms.locfileid: "77708157"
 
 [サブスクリプション](./subscriptions/index.md):組織の所有権、請求、管理機能に合わせて、クラウド デプロイのサブスクリプション設計とアカウント構造を計画します。
 
-[ID](./identity/index.md):クラウドベースの ID サービスを既存の ID リソースと統合して、IT 環境内の認証とアクセス制御をサポートします。
+[identity](./identity/index.md): クラウドベースの ID サービスを既存の ID リソースと統合して、IT 環境内の認証とアクセス制御をサポートします。
 
 [ポリシーの適用](./policy-enforcement/index.md):クラウドにデプロイされたリソースおよびワークロードに関して、ガバナンスの要件に合わせた組織ポリシー規則を定義します。
 
@@ -42,8 +42,6 @@ ms.locfileid: "77708157"
 [暗号化](./encryption/index.md):組織のコンプライアンスとセキュリティ ポリシーの要件に合うように、暗号化を使用して機密データをセキュリティで保護します。
 
 [ログ記録とレポート](./logging-and-reporting/index.md):クラウドベースのリソースによって生成されたログ データを監視します。 データを分析することで、ワークロードの運用、保守、およびコンプライアンスの状況について、正常性に関する分析情報が得られます。
-
-[地域別のガイダンス](./regions/index.md):Azure プラットフォーム内のリソースのリージョン配置の適切な決定基準について説明します。
 
 ## <a name="next-steps"></a>次のステップ
 
