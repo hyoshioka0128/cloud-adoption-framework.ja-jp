@@ -1,6 +1,6 @@
 ---
 title: データ分類とは
-description: データ分類によって、組織のデータを判定して価値を割り当てることができます。これは、ガバナンスの一般的な開始点です。
+description: データ分類によって、組織のデータを判定して価値を割り当てることができます。これは、ガバナンスの一般的な開始点となります。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1f476aaccfc88eab4a2bea1db17e7b1d33f31ee9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1680a78af449731ea7e15525d3e276998a73c0d4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805083"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223797"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-data-classification"></a>データ分類とは
 
-データ分類によって、組織のデータを判定して価値を割り当てることができます。これは、ガバナンスの一般的な開始点です。 データ分類プロセスでは、リスクを識別するために、機密性とビジネスへの影響によってデータを分類します。 データを分類する際、機密情報や重要なデータを盗難や損失から保護する方法でデータを管理できます。
+データ分類によって、組織のデータを判定して価値を割り当てることができます。これは、ガバナンスの一般的な開始点となります。 データ分類プロセスでは、リスクを識別するために、機密性とビジネスへの影響によってデータを分類します。 データを分類する際、機密情報や重要なデータを盗難や損失から保護する方法でデータを管理できます。
 
 ## <a name="understand-data-risks-then-manage-them"></a>データのリスクを理解して管理する
 

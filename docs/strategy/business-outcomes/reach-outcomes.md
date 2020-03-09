@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e9a791507a67ddbd53988f1adadd46c4689cd00
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94129d863d524b6ff618835c271c14756487e587
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798351"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225239"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>グローバルな展開の成果の例
 
@@ -32,7 +32,7 @@ Fortune 500 企業と、それより小規模の企業では、サービスと�
 
 新たな市場で活動することで、追加のガバナンス制約が生じます。 GDPR は、かなりの財務的支援が必要になる可能性のあるガバナンス条件の例の 1 つです。 Azure では、規制対象となる業界やグローバル市場においてお客様が遵守義務を満たせるよう支援する、コンプライアンス認証が提供されています。 詳細については、「[Overview of Microsoft Azure compliance ](https://aka.ms/AzureCompliance)」 (Microsoft Azure コンプライアンスの概要) を参照してください。
 
-- **例:** 米国を拠点とするある公益事業者が、カナダで公益事業を提供する契約を獲得しました。 カナダのデータ主権に関する法律では、カナダのデータはカナダ内に留めておく必要があります。 この会社は、クラウド対応のアプリケーション改革に長年取り組んできました。 その結果、その会社のソフトウェアは、完全にスクリプト化された DevOps プロセスを通じてデプロイされることができました。 その会社はコード ベースにいくつかの軽微な変更を加え、コードの作業用コピーをカナダの Azure データセンターにデプロイし、データ主権のコンプライアンスに準拠して顧客を維持することができました。
+- **例:** 米国を拠点とするある公益事業者が、カナダで公益事業を提供する契約を獲得しました。 カナダのデータ主権に関する法律では、カナダのデータはカナダ内に留めておく必要があります。 この会社は、クラウド対応のアプリケーション改革に長年取り組んできました。 その結果、彼らのソフトウェアは、完全にスクリプト化された DevOps プロセスを通じてデプロイすることができました。 その会社はコード ベースにいくつかの軽微な変更を加え、コードの作業用コピーをカナダの Azure データセンターにデプロイし、データ主権のコンプライアンスに準拠して顧客を維持することができました。
 
 ## <a name="next-steps"></a>次のステップ
 

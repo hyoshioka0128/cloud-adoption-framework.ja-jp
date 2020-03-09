@@ -1,6 +1,6 @@
 ---
-title: Azure イノベーション ガイド:デバイス経由の操作
-description: Azure イノベーション ガイド - デバイス経由の操作
+title: Azure イノベーション:デバイスを使用した対話
+description: 接続された知覚機能を備えたエッジ デバイスを介して、イマーシブで効果的なビジネス ソリューションを構築するためのフレームワークを Azure でどのように提供しているかについて説明します。
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5063d22cee1a2711bc3dd4c2d052df2870b61c5a
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808313"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171023"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Azure のお客様は、ユーザー、データ、またはその両方に近�
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="global-scale-iot-servicetabiothub"></a>[グローバルな規模の IoT サービス](#tab/IoTHub)
+## <a name="global-scale-iot-service"></a>[グローバルな規模の IoT サービス](#tab/IoTHub)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -101,7 +101,7 @@ IoT Hub Device Provisioning Service を作成するには:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="azure-digital-twinstabdigitaltwins"></a>[Azure Digital Twins](#tab/DigitalTwins)
+## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 現実世界とデジタル世界の垣根を越えてストリーミング データをリンクする、再利用可能でスケーラビリティが高く、空間認識性を備えたエクスペリエンスを構築します。 物理環境の包括的なモデルを使用して、顧客エンゲージメントを強化します。 人、場所、デバイスの間の関係と相互作用をモデル化する空間インテリジェンス グラフを生成します。 雑多なセンサーのデータではなく、物理空間のデータを照会できます。
 
@@ -136,7 +136,7 @@ Azure Digital Twins を作成するには:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="location-intelligencetabazuremaps"></a>[位置情報インテリジェンス](#tab/AzureMaps)
+## <a name="location-intelligence"></a>[位置情報インテリジェンス](#tab/AzureMaps)
 
 Azure Maps サービスでは、近傍、トラフィック、ルート指定などの従来の位置情報機能に加え、**TomTom** や **Moovit** などの世界水準のモビリティ テクノロジ パートナーが提供するリアルタイムの位置情報インテリジェンスを使用してソリューションを作成できるようになりました。 地理空間サービスにより、高度な位置情報およびモビリティ機能がお客様のアプリケーションに容易に統合されます。
 
@@ -169,7 +169,7 @@ Azure Maps サービスでは、近傍、トラフィック、ルート指定な
 
 ::: zone-end
 
-## <a name="spatial-experiencestabspatial"></a>[空間エクスペリエンス](#tab/spatial)
+## <a name="spatial-experiences"></a>[空間エクスペリエンス](#tab/spatial)
 
 Azure Spatial Anchors によって、開発者は、複合現実プラットフォームで作業を行って、空間の認識、正確な関心ポイントの指定、およびサポートされているデバイスからのこれらの関心ポイントの再呼び出しを実行できます。
 
@@ -204,7 +204,7 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 ::: zone-end
 
-## <a name="azure-remote-renderingtabremoterender"></a>[Azure Remote Rendering](#tab/RemoteRender)
+## <a name="azure-remote-rendering"></a>[Azure Remote Rendering](#tab/RemoteRender)
 
 クラウド内に高品質の対話型 3D コンテンツをレンダリングし、リアルタイムでデバイスにストリーム配信します。 レンダリング ワークロードは、メディアおよびエンターテイメント業界で特殊効果 (VFX) のためによく使用されています。 また、広告、小売、石油とガス、製造など、他にもレンダリングが使用されている業界は多数あります。
 

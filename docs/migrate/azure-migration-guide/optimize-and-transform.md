@@ -1,28 +1,34 @@
 ---
-title: 最適化と変換
+title: 最適化およびレベル上げ
 description: Azure 移行ガイドのこの部分では、ソリューションの設計の確認、サービスの適切なサイズ設定、コストの分析など、最適化の領域について説明します。
 author: matticusau
 ms.author: mlavery
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994174"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222494"
 ---
-# <a name="optimize-and-transform"></a>最適化と変換
+<!-- cSpell:ignore Fservers Fdatabases -->
 
-サービスを Azure に移行したら、次の段階では、ソリューションの最適化できる可能性がある領域の確認などを行います。 これには、ソリューションの設計の確認、サービスの適切なサイズ設定、コストの分析が含まれる可能性があります。
+<!-- markdownlint-disable MD025 DOCSMD001 -->
+
+# <a name="test-optimize-and-promote"></a>テスト、最適化および昇格
+
+サービスを Azure に移行したら、次の段階では、ソリューションの最適化できる可能性がある領域の確認などを行います。 この作業には、ソリューションの設計の確認、サービスの適切なサイズ設定、コストの分析が含まれる可能性があります。
 
 この段階は、環境を最適化し、可能な環境の変換を実行する機会でもあります。 たとえば、"再ホスト" 移行を実行した後、サービスが Azure 上で実行されている場合は、ソリューション構成や消費されるサービスを再検討し、可能であれば何らかの "リファクタリング" を実行してソリューションの機能を最新化して向上することができます。
 
-# <a name="right-size-assetstaboptimize"></a>[資産を適切なサイズにする](#tab/optimize)
+この記事の残りの部分では、移行されたワークロードを最適化するためのツールについて説明します。 パフォーマンスとコストのバランスを取ると、ワークロードを運用環境にレベル上げする準備が整います。 プロモーション オプションのガイダンスについては、「[最適化およびレベル上げ](../migration-considerations/optimize/index.md)」でプロセス改善に関する記事を参照してください。
+
+# <a name="right-size-assets"></a>[資産を適切なサイズにする](#tab/optimize)
 
 消費ベースのコスト モデルを提供するすべての Azure サービスは、Azure portal、CLI、または PowerShell を使用してサイズを変更できます。 サービスのサイズを正しく設定するための最初の手順は、その使用状況のメトリックを確認することです。 Azure Monitor サービスを使用すると、これらのメトリックにアクセスできます。 必要に応じて、分析しているサービスのメトリックの収集を構成し、ワークロード パターンに基づいて意味のあるデータを収集できるように適切な時間を確保します。
 
@@ -48,8 +54,7 @@ Azure Migrate では、移行前評価フェーズの一環として適切なサ
 1. 一覧から **[サイズ]** と目的の新しいサイズを選択します。 必要に応じて、フィルターを調整して目的のサイズを見つけます。
 1. **[サイズ変更]** を選択します。
 
-運用環境の仮想マシンのサイズを変更すると、サービスが中断する可能性がある点に注意してください。 運用環境に昇格する前に、VM に正しいサイズ設定を適用するようにします。
-
+運用環境の仮想マシンのサイズを変更すると、サービスが中断する可能性があります。 運用環境に昇格する前に、VM に正しいサイズ設定を適用するようにします。
 
 ::: zone target="chromeless"
 
@@ -95,9 +100,9 @@ Azure Migrate では、移行前評価フェーズの一環として適切なサ
 
 ::: zone-end
 
-# <a name="cost-managementtabmanagecost"></a>[Cost Management](#tab/ManageCost)
+# <a name="cost-management"></a>[Cost Management](#tab/ManageCost)
 
-継続的なコスト分析とレビューを実行することが重要です。 これは、コストとワークロードのバランスを取るために必要な場合に、リソースのサイズを変更する機会になります。
+継続的なコスト分析とレビューを実行することが重要です。 この作業は、コストとワークロードのバランスを取るために必要な場合に、リソースのサイズを変更する機会になります。
 
 Azure Cost Management は Azure Advisor と連携して、コストの最適化に関する推奨事項を提供します。 Azure Advisor を使用すると、活動休止状態のリソースや十分に活用されていないリソースを特定することで効率性を最適化し、改善することができます。
 

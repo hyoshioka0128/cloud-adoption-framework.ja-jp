@@ -1,6 +1,6 @@
 ---
-title: '複雑な企業向けのガバナンス ガイド: マルチクラウドの改善'
-description: '複雑な企業向けのガバナンス ガイド: マルチクラウドの改善'
+title: 複雑な企業のガバナンス:マルチクラウドの改善
+description: Azure 向けクラウド導入フレームワークを使用して、複数のクラウドの概要と、複雑な企業向けのマルチクラウド組織の統合方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9f4b11023e8b345283054c0ddede132f10664632
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805593"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223928"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雑な企業向けのガバナンス ガイド: マルチクラウドの改善
 
@@ -31,7 +31,7 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 
 - ID は、Active Directory のオンプレミス インスタンスによって管理されている。 Azure Active Directory へのレプリケーションによりハイブリッド ID が促進された。
 - IT の操作やクラウドの操作の多くは、Azure Monitor および関連する自動化機能によって管理されている。
-- ディザスター リカバリーとビジネス継続性 (DRBC) は Azure Vault インスタンスによって制御されている。
+- ビジネス継続性とディザスター リカバリー (BCDR) は、Azure コンテナー インスタンスによって制御されている。
 - Azure Security Center を使用して、セキュリティ違反や攻撃を監視している。
 - Azure Security Center と Azure Monitor を使用して、クラウドのガバナンスを監視している。
 - Azure Blueprints、Azure Policy、および管理グループを使用して、ポリシーのコンプライアンスを自動化している。

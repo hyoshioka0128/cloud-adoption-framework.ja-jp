@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3727c6bac138dae12ec976683ba2b5954bbd9163
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d41c63d9876a5ead14acee9b39542ab256144920
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807548"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223121"
 ---
+<!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
+
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Azure コンテナーと Azure SQL Database でオンプレミス アプリを再構築する
 
 この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware VM 上で実行される 2 層の Windows .NET アプリをリアーキテクトする方法を示します。 Contoso は、アプリ フロントエンド VM を Azure Windows コンテナーに、アプリ データベースを Azure SQL データベースに移行します。
@@ -28,7 +30,7 @@ Contoso の IT リーダーシップ チームは、ビジネス パートナー
 - **ビジネスの成長への対応。** Contoso は成長を続けています。そのため、同社のオンプレミスのシステムとインフラストラクチャに負荷がかかっています。
 - **効率化。** Contoso では、不要な手順を取り除き、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は IT に対して、時間やコストを無駄にせず、迅速に作業を行ってもらう必要があります。これは、例えば、顧客の要求に素早く対応するためです。
 - **機敏性の向上。** Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済で成功を収めるために、市場の変化に対して、より迅速な対応ができる必要があります。 ビジネスの妨げになったり、ビジネスの機会を壊すようなことがあってはなりません。
-- **スケール。** ビジネスが順調に成長していく中で、Contoso IT は、同じペースで拡張できるシステムを提供する必要があります。
+- **スケール。** ビジネスが順調に成長している中で、Contoso IT 部門は、同じペースで拡張できるシステムを提供する必要があります。
 - **コストを削減する。** Contoso はライセンス コストを最小限に抑えたいと考えています。
 
 ## <a name="migration-goals"></a>移行の目標
@@ -39,7 +41,7 @@ Contoso クラウド チームは、この移行の目標を設定しました�
 
 **目標** | **詳細**
 --- | ---
-**アプリの要件** | このアプリは、Azure でも現在と同じくクリティカルです。<br/><br/> 現在の VMWare と同等のパフォーマンス機能が必要です。<br/><br/> Contoso は、アプリが現在実行されている Windows Server 2008 R2 のサポートを終了し、アプリに投資したいと考えています。<br/><br/> Contoso は、SQL Server 2008 R2 から最新の PaaS Database プラットフォームに移行したいと考えています。これにより、管理の必要性を最小限に抑えられます。<br/><br/> Contoso では、可能であれば、SQL Server ライセンスとソフトウェア アシュアランスへの投資を活かしたいと考えています。<br/><br/> Contoso は、アプリの Web 階層をスケールアップできるようにしたいと考えています。
+**アプリの要件** | このアプリは、Azure でも現在と同じくクリティカルです。<br/><br/> 現在の VMWare と同等のパフォーマンス機能が必要です。<br/><br/> Contoso は、アプリが現在ホストされている Windows Server 2008 R2 のサポートを終了することを望んでおり、アプリに投資したいと考えています。<br/><br/> Contoso は、SQL Server 2008 R2 から最新のマネージド データベース プラットフォームに移行して、管理の必要性を最小限に抑えたいと考えています。<br/><br/> Contoso では、可能であれば、SQL Server ライセンスとソフトウェア アシュアランスへの投資を活かしたいと考えています。<br/><br/> Contoso は、必要に応じてアプリの Web 階層をスケーリングしたいと考えています。
 **制限事項** | このアプリは、同じ VM 上で実行されている ASP.NET アプリと WCF サービスで構成されています。 Contoso は、Azure App Service を使用して 2 つの Web アプリに分割したいと考えています。
 **Azure の要件** | Contoso は、アプリを Azure に移行し、そのアプリをコンテナーで実行してアプリの寿命を延ばしたいと考えています。 Azure でのアプリの実装を完全に最初から始めたくはありません。
 **DevOps** | Contoso は、コード ビルドとリリース パイプラインに Azure DevOps Services を使用して DevOps モデルに移行したいと考えています。
@@ -88,9 +90,12 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 ### <a name="migration-process"></a>移行プロセス
 
 1. Contoso は Windows 用 Azure Service Fabric クラスターをプロビジョニングしています。
-2. Azure SQL インスタンスをプロビジョニングし、SmartHotel360 データベースをそこに移行します。
-3. Contoso は Service Fabric SDK ツールを使用して、Web 層の VM を Docker コンテナーに変換します。
-4. Service Fabric クラスターと ACR を接続し、Azure Service Fabric を使用してアプリをデプロイします。
+
+1. Azure SQL インスタンスをプロビジョニングし、SmartHotel360 データベースをそこに移行します。
+
+1. Contoso は Service Fabric SDK ツールを使用して、Web 層の VM を Docker コンテナーに変換します。
+
+1. Service Fabric クラスターと ACR を接続し、Azure Service Fabric を使用してアプリをデプロイします。
 
     ![移行プロセス](./media/contoso-migration-rearchitect-container-sql/migration-process.png)
 
@@ -142,24 +147,25 @@ Contoso 管理者は、Azure SQL データベースをプロビジョニング�
 
     ![SQL をプロビジョニングする](./media/contoso-migration-rearchitect-container-sql/provision-sql1.png)
 
-2. オンプレミス VM 上で実行されているデータベースと一致するようにデータベース名を指定します (**SmartHotel.Registration**)。 ContosoRG リソース グループにデータベースを配置します。 これは、Azure の運用リソースに使用するリソース グループです。
+1. オンプレミス VM 上で実行されているデータベースと一致するようにデータベース名を指定します (**SmartHotel.Registration**)。 ContosoRG リソース グループにデータベースを配置します。 これは、Azure の運用リソースに使用するリソース グループです。
 
     ![SQL をプロビジョニングする](./media/contoso-migration-rearchitect-container-sql/provision-sql2.png)
 
-3. プライマリ リージョンに新しい SQL Server インスタンス (**sql-smarthotel-eus2**) を設定します。
+1. プライマリ リージョンに新しい SQL Server インスタンス (**sql-smarthotel-eus2**) を設定します。
 
     ![SQL をプロビジョニングする](./media/contoso-migration-rearchitect-container-sql/provision-sql3.png)
 
-4. サーバーとデータベースのニーズに合わせて価格レベルを設定します。 既に SQL Server のライセンスを持っているため、Azure ハイブリッド特典で費用を節約することにします。
-5. サイズ設定については、仮想コアベースの購入を使用し、予想される要件の制限を設定します。
+1. サーバーとデータベースのニーズに合わせて価格レベルを設定します。 既に SQL Server のライセンスを持っているため、Azure ハイブリッド特典で費用を節約することにします。
+
+1. サイズ設定については、仮想コアベースの購入を使用し、予想される要件の制限を設定します。
 
     ![SQL をプロビジョニングする](./media/contoso-migration-rearchitect-container-sql/provision-sql4.png)
 
-6. 次に、データベース インスタンスを作成します。
+1. 次に、データベース インスタンスを作成します。
 
     ![SQL をプロビジョニングする](./media/contoso-migration-rearchitect-container-sql/provision-sql5.png)
 
-7. インスタンスが作成された後に、データベースを開き、Data Migration Assistant を移行に使用するときに必要な詳細情報を書き留めます。
+1. インスタンスが作成された後に、データベースを開き、Data Migration Assistant を移行に使用するときに必要な詳細情報を書き留めます。
 
     ![SQL をプロビジョニングする](./media/contoso-migration-rearchitect-container-sql/provision-sql6.png)
 
@@ -176,7 +182,7 @@ Azure コンテナーは、Web VM からエクスポートされたファイル�
 
      ![Container Registry](./media/contoso-migration-rearchitect-container-sql/container-registry1.png)
 
-2. レジストリの名前 (**contosoacreus2**) を指定し、プライマリ リージョンのインフラストラクチャ リソースに使用するリソース グループ内に配置します。 管理者ユーザーにアクセスを許可し、Premium SKU として設定して、geo レプリケーションを使用できるようにします。
+1. レジストリの名前 (**contosoacreus2**) を指定し、プライマリ リージョンのインフラストラクチャ リソースに使用するリソース グループ内に配置します。 管理者ユーザーにアクセスを許可し、Premium SKU として設定して、geo レプリケーションを使用できるようにします。
 
     ![Container Registry](./media/contoso-migration-rearchitect-container-sql/container-registry2.png)
 
@@ -188,49 +194,49 @@ SmartHotel360 コンテナーは、Azure Service Fabric クラスターで実行
 
      ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric1.png)
 
-2. **Basic** では、クラスターの一意の DS 名と、オンプレミス VM にアクセスするための資格情報を指定します。 プライマリ リージョンの米国東部 2 の運用リソース グループ (**ContosoRG**) にリソースを配置します。
+1. **Basic** では、クラスターの一意の DS 名と、オンプレミス VM にアクセスするための資格情報を指定します。 プライマリ リージョンの米国東部 2 の運用リソース グループ (**ContosoRG**) にリソースを配置します。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric2.png)
 
-3. **[ノード タイプの構成]** に、ノード タイプ名、持続性の設定、VM サイズ、およびアプリケーションのエンドポイントを入力します。
+1. **[ノード タイプの構成]** に、ノード タイプ名、持続性の設定、VM サイズ、およびアプリケーションのエンドポイントを入力します。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric3.png)
 
-4. **[キー コンテナーの作成]** で、証明書を格納する新しいキー コンテナーをインフラストラクチャ リソース グループに作成します。
+1. **[キー コンテナーの作成]** で、証明書を格納する新しいキー コンテナーをインフラストラクチャ リソース グループに作成します。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric4.png)
 
-5. **[アクセス ポリシー]** で、仮想マシンにアクセスしてキー コンテナーを展開できるようにします。
+1. **[アクセス ポリシー]** で、仮想マシンにアクセスしてキー コンテナーを展開できるようにします。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric5.png)
 
-6. 証明書の名前を指定します。
+1. 証明書の名前を指定します。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric6.png)
 
-7. 概要ページで、証明書のダウンロードに使用されるリンクをコピーします。 Service Fabric クラスターに接続するには、このリンクが必要です。
+1. 概要ページで、証明書のダウンロードに使用されるリンクをコピーします。 Service Fabric クラスターに接続するには、このリンクが必要です。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric7.png)
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric8.png)
 
-8. 検証に合格したら、クラスターをプロビジョニングします。
+1. 検証に合格したら、クラスターをプロビジョニングします。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric9.png)
 
-9. [証明書のインポート] ウィザードで、ダウンロードした証明書を開発用マシンにインポートします。 証明書は、クラスターに対する認証に使用されます。
+1. [証明書のインポート] ウィザードで、ダウンロードした証明書を開発用マシンにインポートします。 証明書は、クラスターに対する認証に使用されます。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric10.png)
 
-10. クラスターがプロビジョニングされたら、Service Fabric Cluster Explorer に接続します。
+1. クラスターがプロビジョニングされたら、Service Fabric Cluster Explorer に接続します。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric11.png)
 
-11. 正しい証明書を選択する必要があります。
+1. 正しい証明書を選択する必要があります。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric12.png)
 
-12. Service Fabric Explorer が読み込まれ、Contoso 管理者がクラスターを管理できるようになります。
+1. Service Fabric Explorer が読み込まれ、Contoso 管理者がクラスターを管理できるようになります。
 
     ![Service Fabric](./media/contoso-migration-rearchitect-container-sql/service-fabric13.png)
 
@@ -239,28 +245,30 @@ SmartHotel360 コンテナーは、Azure Service Fabric クラスターで実行
 Contoso は、クラスターへの Azure DevOps Services アクセスを許可するクラスター証明書が必要です。 Contoso 管理者がこれを設定します。
 
 1. Azure portal を開き、Key Vault を参照します。
-2. 証明書を開き、プロビジョニング プロセス中に作成された証明書の拇印をコピーします。
+
+1. 証明書を開き、プロビジョニング プロセス中に作成された証明書の拇印をコピーします。
 
     ![拇印をコピーする](./media/contoso-migration-rearchitect-container-sql/cert1.png)
 
-3. 後で参照できるようにテキスト ファイルにコピーします。
-4. これでクライアント証明書が追加され、その証明書がクラスター上の管理用クライアント証明書になります。 これにより、Azure DevOps Services は、リリース パイプラインでアプリをデプロイするためにクラスターに接続できます。 これらの処理を実行するために、ポータルで Key Vault を開き、 **[証明書]**  >  **[生成/インポート]** の順に選択します。
+1. 後で参照できるようにテキスト ファイルにコピーします。
+
+1. これでクライアント証明書が追加され、その証明書がクラスター上の管理用クライアント証明書になります。 これにより、Azure DevOps Services は、リリース パイプラインでアプリをデプロイするためにクラスターに接続できます。 これを実行するために、ポータルで Key Vault を開き、 **[証明書]**  >  **[生成/インポート]** の順に選択します。
 
     ![クライアント証明書を生成する](./media/contoso-migration-rearchitect-container-sql/cert2.png)
 
-5. 証明書の名前を入力し、**サブジェクト**に X.509 の識別名を指定します。
+1. 証明書の名前を入力し、**サブジェクト**に X.509 の識別名を指定します。
 
      ![証明書の名前](./media/contoso-migration-rearchitect-container-sql/cert3.png)
 
-6. 証明書が作成されると、PFX 形式でローカルにダウンロードされます。
+1. 証明書が作成されると、PFX 形式でローカルにダウンロードされます。
 
      ![証明書をダウンロードする](./media/contoso-migration-rearchitect-container-sql/cert4.png)
 
-7. これで Key Vault の証明書一覧に戻るので、作成されたクライアント証明書の拇印をコピーします。 これをテキスト ファイルに保存します。
+1. これで Key Vault の証明書一覧に戻るので、作成されたクライアント証明書の拇印をコピーします。 これをテキスト ファイルに保存します。
 
      ![クライアント証明書の拇印](./media/contoso-migration-rearchitect-container-sql/cert5.png)
 
-8. Azure DevOps Services デプロイの場合、証明書の Base64 値を決定する必要があります。 これは、PowerShell を使用してローカルの開発者用ワークステーションで行います。 後で使用するために、出力をテキスト ファイルに貼り付けます。
+1. Azure DevOps Services デプロイの場合、証明書の Base64 値を決定する必要があります。 これは、PowerShell を使用してローカルの開発者用ワークステーションで行います。 後で使用するために、出力をテキスト ファイルに貼り付けます。
 
     ```powershell
     [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\path\to\certificate.pfx"))
@@ -268,11 +276,11 @@ Contoso は、クラスターへの Azure DevOps Services アクセスを許可�
 
      ![Base64 値](./media/contoso-migration-rearchitect-container-sql/cert6.png)
 
-9. 最後に、新しい証明書を Service Fabric クラスターに追加します。 これを行うには、ポータルでクラスターを開き、 **[セキュリティ]** を選択します。
+1. 最後に、新しい証明書を Service Fabric クラスターに追加します。 これを行うには、ポータルでクラスターを開き、 **[セキュリティ]** を選択します。
 
      ![クライアント証明書を追加する](./media/contoso-migration-rearchitect-container-sql/cert7.png)
 
-10. **[追加]**  >  **[管理クライアント]** の順に選択し、新しいクライアント証明書の拇印に貼り付けます。 次に、 **[追加]** を選択します。 この処理には最大 15 分かかることがあります。
+1. **[追加]**  >  **[管理クライアント]** の順に選択し、新しいクライアント証明書の拇印に貼り付けます。 次に、 **[追加]** を選択します。 この処理には最大 15 分かかることがあります。
 
      ![クライアント証明書を追加する](./media/contoso-migration-rearchitect-container-sql/cert8.png)
 
@@ -283,15 +291,18 @@ Contoso 管理者は DMA を使用して SmartHotel360 データベースを移�
 ### <a name="install-dma"></a>DMA をインストールする
 
 1. [Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=53595) からオンプレミスの SQL Server VM (**SQLVM**) にツールをダウンロードします。
-2. VM 上でセットアップ (DownloadMigrationAssistant.msi) を実行します。
-3. **[完了]** ページで、ウィザードを終了する前に **[Microsoft Data Migration Assistant の起動]** を選択します。
+
+1. VM 上でセットアップ (DownloadMigrationAssistant.msi) を実行します。
+
+1. **[完了]** ページで、ウィザードを終了する前に **[Microsoft Data Migration Assistant の起動]** を選択します。
 
 ### <a name="configure-the-firewall"></a>ファイアウォールの構成
 
 Contoso 管理者は、Azure SQL Database に接続するために、アクセスを許可するようにファイアウォール ルールを設定します。
 
 1. データベースの **[ファイアウォールと仮想ネットワーク]** プロパティで、Azure サービスへのアクセスを許可し、オンプレミス SQL Server VM のクライアント IP アドレスのルールを追加します。
-2. サーバーレベルのファイアウォール ルールが作成されます。
+
+1. サーバーレベルのファイアウォール ルールが作成されます。
 
     ![ファイアウォール](./media/contoso-migration-rearchitect-container-sql/sql-firewall.png)
 
@@ -303,40 +314,41 @@ Azure SQL Database のファイアウォール ルールの作成と管理の詳
 
 Contoso 管理者はデータベースを移動できるようになりました。
 
-1. DMA で新しいプロジェクトを作成し (**SmartHotelDB**)、 **[移行]** を選択します。
-2. ソース サーバーの種類として **SQL Server**、ターゲットとして **Azure SQL Database** を選択します。
+1. DMA で新しいプロジェクト (**SmartHotelDB**) を作成し、 **[移行]** を選択します。
+
+1. ソース サーバーの種類として **SQL Server**、ターゲットとして **Azure SQL Database** を選択します。
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-1.png)
 
-3. 移行の詳細では、ソース サーバーとして **SQLVM** を追加し、**SmartHotel.Registration** データベースを追加します。
+1. 移行の詳細では、ソース サーバーとして **SQLVM** を追加し、**SmartHotel.Registration** データベースを追加します。
 
      ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-2.png)
 
-4. 認証に関連しているようなエラーが表示されます。 ただし、調査の結果、問題はデータベース名のピリオド (.) であることがわかりました。 この問題を解決するため、回避策として、**SmartHotel-Registration** という名前を使用して新しい SQL Database をプロビジョニングすることに決めました。 再度 DMA を実行すると、**SmartHotel-Registration** を選択してウィザードを続行できます。
+1. 認証に関連しているようなエラーが表示されます。 ただし、調査の結果、問題はデータベース名のピリオド (.) であることがわかりました。 この問題を解決するため、回避策として、**SmartHotel-Registration** という名前を使用して新しい SQL Database をプロビジョニングすることに決めました。 再度 DMA を実行すると、**SmartHotel-Registration** を選択してウィザードを続行できます。
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-3.png)
 
-5. **[オブジェクトの選択]** で、データベース テーブルを選択し、SQL スクリプトを生成します。
+1. **[オブジェクトの選択]** で、データベース テーブルを選択し、SQL スクリプトを生成します。
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-4.png)
 
-6. DMA によってスクリプトが作成された後、 **[スキーマの配置]** を選択します。
+1. DMA によってスクリプトが作成された後、 **[スキーマの配置]** を選択します。
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-5.png)
 
-7. DMA で配置が成功したことを確認します。
+1. DMA で配置が成功したことを確認します。
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-6.png)
 
-8. 次は移行の開始です。
+1. 次は移行の開始です。
 
     ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-7.png)
 
-9. 移行が完了すると、Contoso はデータベースが Azure SQL インスタンス上で実行されていることを確認できます。
+1. 移行が完了すると、Contoso はデータベースが Azure SQL インスタンス上で実行されていることを確認できます。
 
      ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-8.png)
 
-10. Azure portal で余計な SQL データベース **SmartHotel.Registration** を削除します。
+1. Azure portal で余計な SQL データベース **SmartHotel.Registration** を削除します。
 
      ![DMA](./media/contoso-migration-rearchitect-container-sql/dma-9.png)
 
@@ -347,13 +359,13 @@ Contoso は、アプリケーションのために DevOps インフラストラ�
 1. Contoso Azure DevOps アカウントで、新しいプロジェクト (**ContosoSmartHotelRearchitect**) を作成し、バージョン コントロールに **[Git]** を選択します。
 ![新しいプロジェクト](./media/contoso-migration-rearchitect-container-sql/vsts1.png)
 
-2. アプリ コードを現在保持している Git リポジトリをインポートします。 [パブリック リポジトリ](https://github.com/Microsoft/SmartHotel360-internal-booking-apps)内にあるので、ダウンロードすることができます。
+1. アプリ コードを現在保持している Git リポジトリをインポートします。 [パブリック リポジトリ](https://github.com/Microsoft/SmartHotel360-internal-booking-apps)内にあるので、ダウンロードすることができます。
 
     ![アプリ コードをダウンロードする](./media/contoso-migration-rearchitect-container-sql/vsts2.png)
 
-3. コードをインポートしたら、Visual Studio をリポジトリに接続し、チーム エクスプローラーを使用してコードを複製します。
+1. コードをインポートしたら、Visual Studio をリポジトリに接続し、チーム エクスプローラーを使用してコードを複製します。
 
-4. リポジトリが開発者のコンピューターに複製された後に、アプリ用のソリューション ファイルを開きます。 Web アプリと wcf サービスは、ファイル内にそれぞれ別のプロジェクトを持っています。
+1. リポジトリが開発者のコンピューターに複製された後に、アプリ用のソリューション ファイルを開きます。 Web アプリと wcf サービスは、ファイル内にそれぞれ別のプロジェクトを持っています。
 
     ![ソリューション ファイル](./media/contoso-migration-rearchitect-container-sql/vsts4.png)
 
@@ -371,36 +383,38 @@ Contoso 管理者は、以下のように Visual Studio と SDK Tools を使用�
 
     ![コンテナー](./media/contoso-migration-rearchitect-container-sql/container2.png)
 
-2. Web アプリを右クリックし、 **[追加]**  >  **[Container Orchestrator Support]\(コンテナー オーケストレーター サポート\)** の順に選択します。
-3. **[Add Container Orchestra Support]\(コンテナー オーケストレーター サポートの追加\)** で **[Service Fabric]** を選択します。
+1. Web アプリを右クリックし、 **[追加]**  >  **[Container Orchestrator Support]\(コンテナー オーケストレーター サポート\)** の順に選択します。
+
+1. **[Add Container Orchestra Support]\(コンテナー オーケストレーター サポートの追加\)** で **[Service Fabric]** を選択します。
 
     ![コンテナー](./media/contoso-migration-rearchitect-container-sql/container3.png)
 
-4. SmartHotel.Registration.WCF アプリについて同じプロセスを繰り返します。
-5. 次にソリューションがどのように変化したかを確認します。
+1. SmartHotel.Registration.WCF アプリについて同じプロセスを繰り返します。
+
+1. 次にソリューションがどのように変化したかを確認します。
 
     - 新しいアプリは **SmartHotel.RegistrationApplication/** です
     - ここには次の 2 つのサービスが含まれています。**SmartHotel.Registration.WCF** と **SmartHotel.Registration.Web** です。
 
     ![コンテナー](./media/contoso-migration-rearchitect-container-sql/container4.png)
 
-6. Visual Studio によって Docker ファイルが作成され、必要なイメージが開発者用マシンのローカルにプルダウンされました。
+1. Visual Studio によって Docker ファイルが作成され、必要なイメージが開発者用マシンのローカルにプルダウンされました。
 
     ![コンテナー](./media/contoso-migration-rearchitect-container-sql/container5.png)
 
-7. Visual Studio によってマニフェスト ファイル (**ServiceManifest.xml**) が作成され、開かれます。 このファイルは、コンテナーが Azure にデプロイされるときにコンテナーを構成する方法を Service Fabric に指示します。
+1. Visual Studio によってマニフェスト ファイル (**ServiceManifest.xml**) が作成され、開かれます。 このファイルは、コンテナーが Azure にデプロイされるときにコンテナーを構成する方法を Service Fabric に指示します。
 
     ![コンテナー](./media/contoso-migration-rearchitect-container-sql/container6.png)
 
-8. もう 1 つのマニフェスト ファイル (**ApplicationManifest.xml) には、コンテナーの構成アプリケーションが含まれています。
+1. もう 1 つのマニフェスト ファイル (**ApplicationManifest.xml) には、コンテナーの構成アプリケーションが含まれています。
 
     ![コンテナー](./media/contoso-migration-rearchitect-container-sql/container7.png)
 
-9. **ApplicationParameters/Cloud.xml** ファイルを開き、Azure SQL データベースにアプリを接続するように接続文字列を更新します。 接続文字列は Azure portal のデータベースで確認できます。
+1. **ApplicationParameters/Cloud.xml** ファイルを開き、Azure SQL データベースにアプリを接続するように接続文字列を更新します。 接続文字列は Azure portal のデータベースで確認できます。
 
     ![接続文字列](./media/contoso-migration-rearchitect-container-sql/container8.png)
 
-10. 更新されたコードをコミットし、Azure DevOps Services にプッシュします。
+1. 更新されたコードをコミットし、Azure DevOps Services にプッシュします。
 
     ![Commit](./media/contoso-migration-rearchitect-container-sql/container9.png)
 
@@ -412,70 +426,72 @@ Contoso 管理者は、以下のように Visual Studio と SDK Tools を使用�
 
     ![新しいパイプライン](./media/contoso-migration-rearchitect-container-sql/pipeline1.png)
 
-2. **[Azure DevOps Services Git]** と 関連するリポジトリを選択します。
+1. **[Azure DevOps Services Git]** と 関連するリポジトリを選択します。
 
     ![Git とリポジトリ](./media/contoso-migration-rearchitect-container-sql/pipeline2.png)
 
-3. **[テンプレートの選択]** で Docker がサポートされているファブリックを選択します。
+1. **[テンプレートの選択]** で Docker がサポートされているファブリックを選択します。
 
      ![ファブリックと Docker](./media/contoso-migration-rearchitect-container-sql/pipeline3.png)
 
-4. アクション タグ イメージを変更して**イメージをビルド**し、プロビジョニングされた ACR を使用するようにタスクを構成します。
+1. アクション タグ イメージを変更して**イメージをビルド**し、プロビジョニングされた ACR を使用するようにタスクを構成します。
 
      ![レジストリ](./media/contoso-migration-rearchitect-container-sql/pipeline4.png)
 
-5. **[Push images]\(イメージのプッシュ\)** タスクでは、ACR にプッシュされるイメージを構成し、最新のタグを含むように選択します。
-6. **[トリガー]** で継続的インテグレーションを有効にして、マスター ブランチを追加します。
+1. **[Push images]\(イメージのプッシュ\)** タスクでは、ACR にプッシュされるイメージを構成し、最新のタグを含むように選択します。
+
+1. **[トリガー]** で継続的インテグレーションを有効にして、マスター ブランチを追加します。
 
     ![トリガー](./media/contoso-migration-rearchitect-container-sql/pipeline5.png)
 
-7. **[Save and Queue]\(保存とキュー\)** を選択してビルドを開始します。
-8. ビルドが成功したら、リリース パイプラインに移動します。 Azure DevOps Services では、 **[リリース]**  >  **[新しいパイプライン]** の順に選択します。
+1. **[Save and Queue]\(保存とキュー\)** を選択してビルドを開始します。
+
+1. ビルドが成功したら、リリース パイプラインに移動します。 Azure DevOps Services では、 **[リリース]**  >  **[新しいパイプライン]** の順に選択します。
 
     ![リリース パイプライン](./media/contoso-migration-rearchitect-container-sql/pipeline6.png)
 
-9. **Azure Service Fabric デプロイ** テンプレートを選択し、ステージに名前 (**SmartHotelSF**) を付けます。
+1. **Azure Service Fabric デプロイ** テンプレートを選択し、ステージに名前 (**SmartHotelSF**) を付けます。
 
     ![環境](./media/contoso-migration-rearchitect-container-sql/pipeline7.png)
 
-10. パイプライン名を指定します (**ContosoSmartHotel360Rearchitect**)。 ステージには **[1 job, 1 task]\(1 ジョブ、1 タスク\)** を選択して Service Fabric デプロイを構成します。
+1. パイプライン名を指定します (**ContosoSmartHotel360Rearchitect**)。 ステージには **[1 job, 1 task]\(1 ジョブ、1 タスク\)** を選択して Service Fabric デプロイを構成します。
 
     ![フェーズとタスク](./media/contoso-migration-rearchitect-container-sql/pipeline8.png)
 
-11. 次に、 **[新規]** を選択して新しいクラスター接続を追加します。
+1. 次に、 **[新規]** を選択して新しいクラスター接続を追加します。
 
     ![新しい接続](./media/contoso-migration-rearchitect-container-sql/pipeline9.png)
 
-12. **[Add Service Fabric service connection]\(Service Fabric サービス接続の追加\)** で、接続を構成し、アプリをデプロイするために Azure DevOps Services に使用される認証設定を構成します。 クラスター エンドポイントは、Azure portal で確認できます。Contoso はプレフィックスに **tcp://** を追加しています。
+1. **[Add Service Fabric service connection]\(Service Fabric サービス接続の追加\)** で、接続を構成し、アプリをデプロイするために Azure DevOps Services に使用される認証設定を構成します。 クラスター エンドポイントは、Azure portal で確認できます。Contoso はプレフィックスに **tcp://** を追加しています。
 
-13. 収集した証明書情報は、 **[Server Certificate Thumbprint]\(サーバー証明書の拇印\)** および **[クライアント証明書]** に入力されます。
+1. 収集した証明書情報は、 **[Server Certificate Thumbprint]\(サーバー証明書の拇印\)** および **[クライアント証明書]** に入力されます。
 
     ![Certificate](./media/contoso-migration-rearchitect-container-sql/pipeline10.png)
 
-14. パイプライン、 **[Add an artifact]\(アーティファクトの追加\)** の順に選択します。
+1. パイプライン、 **[Add an artifact]\(アーティファクトの追加\)** の順に選択します。
 
      ![アーティファクト](./media/contoso-migration-rearchitect-container-sql/pipeline11.png)
 
-15. 最新バージョンを使用して、プロジェクトとビルド パイプラインを選択します。
+1. 最新バージョンを使用して、プロジェクトとビルド パイプラインを選択します。
 
      ![Build](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
 
-16. アーティファクト上の稲妻にチェックマークが付いていることを確認します。
+1. アーティファクト上の稲妻にチェックマークが付いていることを確認します。
 
      ![アーティファクトの状態](./media/contoso-migration-rearchitect-container-sql/pipeline13.png)
 
-17. さらに、継続的配置トリガーが有効になっていることを確認します。
+1. さらに、継続的配置トリガーが有効になっていることを確認します。
    ![有効な継続的配置](./media/contoso-migration-rearchitect-container-sql/pipeline14.png)
 
-18. **[保存]**  >  **[Create a release]\(リリースの作成\)** の順に選択します。
+1. **[保存]**  >  **[Create a release]\(リリースの作成\)** の順に選択します。
 
     ![Release](./media/contoso-migration-rearchitect-container-sql/pipeline15.png)
 
-19. デプロイが完了すると、SmartHotel360 で Service Fabric が実行されます。
+1. デプロイが完了すると、SmartHotel360 で Service Fabric が実行されます。
 
     ![発行](./media/contoso-migration-rearchitect-container-sql/publish4.png)
 
-20. アプリに接続するために、Service Fabric ノードの前面にある Azure Load Balancer のパブリック IP アドレスにトラフィックを誘導します。
+1. アプリに接続するために、Service Fabric ノードの前面にある Azure Load Balancer のパブリック IP アドレスにトラフィックを誘導します。
 
     ![発行](./media/contoso-migration-rearchitect-container-sql/publish5.png)
 
@@ -495,17 +511,19 @@ SmartHotel360 アプリとデータベースが Azure で実行された後、Co
 
     ![Extend](./media/contoso-migration-rearchitect-container-sql/extend1.png)
 
-2. データベース名 (**contososmarthotel**) を指定し、SQL API を選択し、プライマリ リージョンの米国東部 2 の運用リソース グループに配置します。
+1. データベース名 (**contososmarthotel**) を指定し、SQL API を選択し、プライマリ リージョンの米国東部 2 の運用リソース グループに配置します。
 
     ![Extend](./media/contoso-migration-rearchitect-container-sql/extend2.png)
 
-3. **[作業の開始]** で **[データ エクスプローラー]** を選択し、新しいコレクションを追加します。
-4. **[コレクションの追加]** で ID を指定し、ストレージの容量とスループットを設定します。
+1. **[作業の開始]** で **[データ エクスプローラー]** を選択し、新しいコレクションを追加します。
+
+1. **[コレクションの追加]** で ID を指定し、ストレージの容量とスループットを設定します。
 
     ![Extend](./media/contoso-migration-rearchitect-container-sql/extend3.png)
 
-5. ポータルで新しいデータベースを開き、 **[コレクション]**  >  **[ドキュメント]** の順に選択し、 **[新しいドキュメント]** を選択します。
-6. 次の JSON コードをドキュメント ウィンドウに貼り付けます。 これは単一のツイート形式のサンプル データです。
+1. ポータルで新しいデータベースを開き、 **[コレクション]**  >  **[ドキュメント]** の順に選択し、 **[新しいドキュメント]** を選択します。
+
+1. 次の JSON コードをドキュメント ウィンドウに貼り付けます。 これは単一のツイート形式のサンプル データです。
 
     ```json
     {
@@ -528,7 +546,7 @@ SmartHotel360 アプリとデータベースが Azure で実行された後、Co
 
     ![Extend](./media/contoso-migration-rearchitect-container-sql/extend4.png)
 
-7. Cosmos DB エンドポイントと認証キーを確認します。 これらはアプリでコレクションに接続するために使用されます。 データベースで、 **[キー]** を選択し、URI と主キーをメモ帳にコピーします。
+1. Cosmos DB エンドポイントと認証キーを確認します。 これらはアプリでコレクションに接続するために使用されます。 データベースで、 **[キー]** を選択し、URI と主キーをメモ帳にコピーします。
 
     ![Extend](./media/contoso-migration-rearchitect-container-sql/extend5.png)
 
@@ -540,7 +558,7 @@ Cosmos DB がプロビジョニングされたら、Contoso 管理者はそれ�
 
     ![センチメント アプリ](./media/contoso-migration-rearchitect-container-sql/sentiment1.png)
 
-2. 次の 2 つのパラメーターを入力します。
+1. 次の 2 つのパラメーターを入力します。
 
    ```xml
    <Parameter Name="SentimentIntegration.CosmosDBEndpoint" Value="[URI]" />
@@ -558,11 +576,11 @@ Cosmos DB がプロビジョニングされたら、Contoso 管理者はそれ�
 
 1. コードをコミットして Azure DevOps Services にプッシュします。 これでビルドとリリース パイプラインが開始されます。
 
-2. ビルドとデプロイが完了すると、SmartHotel360 で Service Fabric が実行されます。 Service Fabric 管理コンソールに 3 つのサービスが表示されるようになりました。
+1. ビルドとデプロイが完了すると、SmartHotel360 で Service Fabric が実行されます。 Service Fabric 管理コンソールに 3 つのサービスが表示されるようになりました。
 
     ![再発行](./media/contoso-migration-rearchitect-container-sql/republish3.png)
 
-3. これで、サービスをクリックして、SentimentIntegration アプリが起動していることを確認できるようになりました。
+1. これで、サービスをクリックして、SentimentIntegration アプリが起動していることを確認できるようになりました。
 
     ![再発行](./media/contoso-migration-rearchitect-container-sql/republish4.png)
 

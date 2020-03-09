@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807497"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223104"
 ---
+<!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
+
 # <a name="rebuild-an-on-premises-app-on-azure"></a>オンプレミス アプリを Azure 上にリビルドする
 
 この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware VM 上で実行される 2 階層の Windows .NET アプリをリビルドする方法を説明します。 Contoso は、アプリのフロントエンド VM を、Azure App Service Web アプリに移行します。 アプリのバックエンドは、Azure Kubernetes Service (AKS) によって管理されるコンテナーにデプロイされたマイクロサービスを使用してビルドされます。 サイトは、ペットの写真の機能を提供する Azure Functions と対話します。
@@ -178,7 +180,7 @@ Contoso の管理者は次のようにプロビジョニングします。
 
 9. デプロイが完了したら、**kubectl** コマンドライン ツールをインストールします。 このツールは、Azure CloudShell では既にインストールされています。
 
-   ```console
+   ```azurecli
    az aks install-cli
    ```
 
@@ -188,7 +190,7 @@ Contoso の管理者は次のようにプロビジョニングします。
 
 11. 次のコマンドを実行して、Kubernetes Dashboard を起動します。
 
-    ```console
+    ```azurecli
     az aks browse --resource-group ContosoRG --name smarthotelakseus2
     ```
 
@@ -269,10 +271,11 @@ AKS クラスターを作成し、Docker イメージをビルドしたので、
 
 デプロイは次のように行います。
 
-1. 開発者コマンド プロンプトを開き、Azure サブスクリプションのコマンド az ログインを使用します。
+1. 開発者コマンド プロンプトを開き、Azure サブスクリプションのコマンド `az login` を使用します。
+
 2. deploy.cmd ファイルを使用し、次のコマンドを入力して ContosoRG リソース グループと EUS2 リージョンに Azure リソースをデプロイします。
 
-    ```console
+    ```azurecli
     .\deploy.cmd azuredeploy ContosoRG -c eastus2
     ```
 
@@ -374,7 +377,7 @@ Contoso の管理者は、ペットの情報に使用する Cosmos データベ�
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
 
-2. 名前 (**contosomarthotel**) を指定し、SQL API を選択し、米国東部 2 メイン リージョンの ContosoRG リソース グループに配置します。
+2. 名前 (**contososmarthotel**) を指定し、SQL API を選択し、米国東部 2 メイン リージョンの ContosoRG 運用リソース グループに配置します。
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
 
@@ -520,7 +523,7 @@ Contoso 管理者は、フロントエンド サイトに 2 つの異なるプ�
     ![新しい環境](./media/contoso-migration-rebuild/vsts-publishfront8.png)
 
 14. **[スロットを使用した Azure App Service の配置]** を選択し、環境名を **Prod** とします。
-15. **[1 job, 2 task]\(1 ジョブ、2 タスク\)** を選択し、サブスクリプション、アプリ サービス名、および**ステージング** スロットを選択します。
+15. **[1 job, 2 task]\(1 ジョブ、2 タスク\)** を選択し、次にサブスクリプション、アプリ サービス名、および**ステージング** スロットを選択します。
 
     ![環境名](./media/contoso-migration-rebuild/vsts-publishfront10.png)
 
@@ -565,10 +568,10 @@ Contoso の管理者はアプリを次のようにデプロイします。
     ![関数のデプロイ](./media/contoso-migration-rebuild/function5.png)
 
 4. コードをコミットし、Azure DevOps に同期して戻し、変更をプッシュします。
-5. 新しいビルド パイプラインを追加し、ソースに **[Azure DevOps Git]** を選択します。
+5. 新しいビルド パイプラインを追加し、次にソースに **[Azure DevOps Git]** を選択します。
 6. **[ASP.NET Core (.NET Framework)]** テンプレートを選択します。
 7. テンプレートの既定値をそのまま使用します。
-8. **[トリガー]** で、 **[継続的インテグレーションを有効にする]** を選択し、 **[保存してキューに登録]** を選択してビルドを開始します。
+8. **[トリガー]** で、 **[継続的インテグレーションを有効にする]** を選択し、次に **[保存してキューに登録]** を選択してビルドを開始します。
 9. ビルドが完了したら、 **[スロットを使用した Azure App Service の配置]** を追加してリリース パイプラインをビルドします。
 10. 環境に **Prod** という名前を付けて、サブスクリプションを選択します。 **[アプリの種類]** を **[関数アプリ]** に設定し、アプリサービス名を **smarthotelpetchecker** とします。
 
@@ -578,7 +581,7 @@ Contoso の管理者はアプリを次のようにデプロイします。
 
     ![アーティファクト](./media/contoso-migration-rebuild/petchecker3.png)
 
-12. **[継続的配置トリガー]** を有効にし、 **[保存]** を選択します。
+12. **[継続的配置トリガー]** を有効にし、次に **[保存]** を選択します。
 13. **[Queue new build]\(新しいビルドをキューに登録\)** を選択し、CI/CD パイプライン全体を実行します。
 14. 関数はデプロイされた後、Azure portal に **[実行中]** 状態で表示されます。
 

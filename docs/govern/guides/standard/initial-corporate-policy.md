@@ -1,6 +1,6 @@
 ---
-title: 標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある初期の企業ポリシー
-description: 標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある初期の企業ポリシー
+title: 標準的な企業のガバナンス:初期の企業ポリシー
+description: Azure 向けのクラウド導入フレームワークを使用して、初期のガバナンスの位置、初期段階のリスク、初期のポリシー ステートメント、および初期の適用プロセスを定義します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 33c73a13fc49f6e7b70d9b2e2e0dfd01844f1fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 64f04fe32445f79f36fe3846f16e3296e9424130
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806171"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170938"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある初期の企業ポリシー
 

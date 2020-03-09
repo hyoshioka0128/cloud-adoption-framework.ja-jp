@@ -1,6 +1,6 @@
 ---
 title: 初期のクラウド ガバナンス基盤の改善
-description: 初期のクラウド ガバナンス基盤を段階的に改善する方法を説明します。
+description: Azure 向けクラウド導入フレームワークを使用して、初期のクラウド ガバナンス基盤を段階的に改善する方法を学びます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/13/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1b46157e134967095cff9ff84bcfb5b826a22bae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 050d9cdfd2069a4d7da2e411233f6a60f270eb10
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805814"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706610"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の改善
 

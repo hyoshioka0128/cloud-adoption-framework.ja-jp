@@ -1,6 +1,6 @@
 ---
-title: '複雑な企業向けのガバナンス ガイド: 複数レイヤーのガバナンス'
-description: '複雑な企業向けのガバナンス ガイド: 複数レイヤーのガバナンス'
+title: 複雑な企業のガバナンス:複数のガバナンス レイヤー
+description: Azure 向けクラウド導入フレームワークを使用して、大規模な企業での複数のガバナンス レイヤーにおける、より高レベルな複雑さについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5aa48d6561f6d6122c74dcb60e82425b64071304
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5d7dc2163777cb931d6c4c57eb7b1fb276e6a0fd
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806256"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709194"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>複雑な企業向けのガバナンス ガイド: 複数レイヤーのガバナンス
 

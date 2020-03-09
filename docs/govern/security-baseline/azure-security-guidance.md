@@ -1,6 +1,6 @@
 ---
 title: Azure のセキュリティに関するガイダンス
-description: Microsoft はどのようなセキュリティ ガイダンスを提供していますか?
+description: Microsoft の Service Trust Platform と Compliance Manager を使用して、複雑なコンプライアンス義務を果たし、データ保護を向上させることができます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab126c3638edd18d76c579bbf4d1958621546a76
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804913"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709534"
 ---
 <!-- markdownlint-disable MD026 -->
 

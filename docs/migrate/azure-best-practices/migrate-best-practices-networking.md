@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803876"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225583"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス
 
@@ -377,7 +377,7 @@ NIC4 | AsgDb
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | インターネットから Web サーバーへのトラフィックを許可します。 インターネットからの受信トラフィックは DenyAllInbound 既定セキュリティ規則によって拒否されるので、AsgLogic または AsgDb アプリケーション セキュリティ グループでは追加の規則は必要ありません。 | 優先順位:100<br/><br/> 送信元: インターネット<br/><br/> 送信元ポート: *<br/><br/> 変換先:AsgWeb<br/><br/> 宛先ポート:80<br/><br/> プロトコル:TCP<br/><br/> アクセス:許可。
 Deny-Database-All | AllowVNetInBound 既定セキュリティ規則では、同じ VNet 上にあるリソース間の通信がすべて許可され、この規則はすべてのリソースからのトラフィックを拒否するために必要です。 | 優先順位:120<br/><br/> 送信元: *<br/><br/> 送信元ポート: *<br/><br/> 変換先:AsgDb<br/><br/> 宛先ポート:1433<br/><br/> プロトコル:All<br/><br/> アクセス:拒否。
-Allow-Database-BusinessLogic | AsgLogic アプリケーション セキュリティ グループから AsgDb アプリケーション セキュリティ グループへのトラフィックを許可します。 この規則の優先順位は Deny-Database-All 規則より高く、その規則より前に処理されるため、AsgLogic アプリケーション セキュリティ グループからのトラフィックは許可され、それ以外のすべてのトラフィックはブロックされます。 | 優先順位:110<br/><br/> ソース:AsgLogic<br/><br/> 送信元ポート: *<br/><br/> 変換先:AsgDb<br/><br/> 宛先ポート:1433<br/><br/> プロトコル:TCP<br/><br/> アクセス:許可。
+Allow-Database-BusinessLogic | AsgLogic アプリケーション セキュリティ グループから AsgDb アプリケーション セキュリティ グループへのトラフィックを許可します。 この規則の優先度は、Deny-Database-All 規則より高いため、この規則が最初に処理されます。 そのため、AsgLogic アプリケーション セキュリティ グループからのトラフィックは許可され、他のすべてのトラフィックはブロックされます。 | 優先順位:110<br/><br/> ソース:AsgLogic<br/><br/> 送信元ポート: *<br/><br/> 変換先:AsgDb<br/><br/> 宛先ポート:1433<br/><br/> プロトコル:TCP<br/><br/> アクセス:許可。
 
 <!--markdownlint-enable MD033 -->
 

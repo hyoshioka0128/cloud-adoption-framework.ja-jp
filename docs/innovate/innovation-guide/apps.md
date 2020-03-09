@@ -1,6 +1,6 @@
 ---
-title: Azure イノベーション ガイド:アプリを使用したカスタマー エンゲージメントの構築
-description: Azure を利用したアプリによって顧客を引き付けることでイノベーションを実現する方法について説明します。
+title: Azure イノベーション:アプリを使用した連携
+description: 既存の Web アプリと API アプリを簡単に最新化し、クラウドネイティブ アプリを構築するのに役立つ Azure サービスについて説明します。
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7b6a94830f35f7dde577ba4b7122cdec7e4a711d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ad638c667a75561dfbdb9827413249ebc93fd9dc
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808347"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171074"
 ---
 ::: zone target="docs"
 
@@ -34,7 +34,7 @@ ms.locfileid: "76808347"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="deliver-value-fastertabdelivervaluefaster"></a>[より短期間で価値を届ける](#tab/DeliverValueFaster)
+# <a name="deliver-value-faster"></a>[より短期間で価値を届ける](#tab/DeliverValueFaster)
 
 クラウドベースのソリューションの利点の 1 つは、フィードバックを迅速に収集し、エンド ユーザーに価値を提供できることです。 そのユーザーが外部顧客であっても、社内のユーザーであっても、アプリケーションに関するフィードバックが迅速に得られるに越したことはありません。
 
@@ -131,7 +131,7 @@ Visual Studio App Center では、1 回の呼び出しによって複数のプ�
 - [Azure SDK for Go のドキュメント](https://docs.microsoft.com/azure/go)
 - [DevOps ソリューション](https://azure.microsoft.com/solutions/devops)
 
-# <a name="create-cloud-native-appstabcloudnative"></a>[クラウドネイティブなアプリの作成](#tab/CloudNative)
+# <a name="create-cloud-native-apps"></a>[クラウドネイティブなアプリの作成](#tab/CloudNative)
 
 <!-- markdownlint-disable MD026 -->
 
@@ -287,7 +287,7 @@ Azure Red Hat OpenShift では、フル マネージドの OpenShift クラス�
 
 **[[Azure Red Hat OpenShift]](https://docs.microsoft.com/azure/openshift/intro-openshift) に移動します。**
 
-# <a name="isolate-points-of-failuretabisolatepointsoffailure"></a>[障害点を分離する](#tab/IsolatePointsOfFailure)
+# <a name="isolate-points-of-failure"></a>[障害点を分離する](#tab/IsolatePointsOfFailure)
 
 初期テスト フェーズからの移行を開始するときに、障害点を分離し、除去する方法を評価します。 Azure クラウド プラットフォームの分散性により、障害を最小限に抑えると同時に、パフォーマンスも改善するようにアプリケーションを設計できます。
 

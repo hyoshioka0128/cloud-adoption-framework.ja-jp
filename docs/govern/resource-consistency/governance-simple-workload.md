@@ -1,6 +1,6 @@
 ---
 title: シンプルなワークロード向けガバナンス設計
-description: Azure ガバナンス管理を構成してユーザーがシンプルなワークロードをデプロイできるようにするためのガイダンス。
+description: 単一チームとシンプルなワークロードをサポートするリソース ガバナンス モデルを Azure で設計するためのプロセスについて説明します。 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: efdca4c5848e8815166fd2ddf308d40ae62f75a1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803859"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223719"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>シンプルなワークロード向けガバナンス設計
 

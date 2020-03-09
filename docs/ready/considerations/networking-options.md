@@ -7,13 +7,15 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4450f3f1e151e8234c7b2b5f91c2709270cbcdc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 199eedb6c9365f273588fae79b134298e8b60c6e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799133"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225374"
 ---
+<!-- cSpell:ignore paas NVAs VPNs -->
+
 # <a name="review-your-network-options"></a>ネットワーク オプションを確認する
 
 Azure のネットワーク機能の設計と実装は、クラウド導入作業の重要な部分です。 クラウドでホストされたワークロードやサービスを適切にサポートするには、ネットワーク設計に関する意思決定を行う必要があります。 Azure のネットワーク製品とサービスは、さまざまなネットワーク機能をサポートしています。 これらのサービスと選択したネットワーク アーキテクチャをどのように構成するかは、組織のワークロード、ガバナンス、および接続の要件によって異なります。
@@ -72,14 +74,14 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 次の表は、これらのパターンでサポートされる主なシナリオをまとめたものです。
 
-| **シナリオ** | **推奨されるネットワーク アーキテクチャ**
-| --- | --- |
-| ランディング ゾーンにデプロイされた Azure でホストされるワークロードはすべて完全に PaaS ベースであり、仮想ネットワークを必要とせず、また IaaS リソースを含むより広範囲なクラウド導入作業の一部でもありません。 | [PaaS のみ](../../decision-guides/software-defined-network/paas-only.md) |
-| Azure でホストされるワークロードは、仮想マシンなどの IaaS ベースのリソースをデプロイするか、そうでない場合は仮想ネットワークを必要としますが、オンプレミス環境への接続は必要ありません。 | [クラウドネイティブ](../../decision-guides/software-defined-network/cloud-native.md) |
-| Azure でホストされるワークロードには、オンプレミス リソースへの制限付きアクセスが必要ですが、クラウド接続を信頼できないものとして扱う必要があります。 | [クラウド DMZ](../../decision-guides/software-defined-network/cloud-dmz.md) |
-| Azure でホストされるワークロードでは、オンプレミス リソースへのアクセスに制限が必要であるため、クラウドとオンプレミス環境の間で成熟したセキュリティ ポリシーと安全な接続を実装することを計画します。 | [ハイブリッド](../../decision-guides/software-defined-network/hybrid.md) |
-| [Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)を超える可能性のある多数の VM とワークロードをデプロイして管理する必要があるか、サブスクリプション間でサービスを共有する必要があるか、またはロール、アプリケーション、アクセス許可の分離のためのよりセグメント化された構造が必要です。 | [ハブ アンド スポーク](../../decision-guides/software-defined-network/hub-spoke.md) |
-| 互いに接続したり、Azure に接続したりする必要のある多数のブランチ オフィスがあります。 | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| **シナリオ**                                                                                                                                                                                                                                                                                                                        | **推奨されるネットワーク アーキテクチャ**                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| ランディング ゾーンにデプロイされた Azure でホストされるワークロードはすべて完全に PaaS ベースであり、仮想ネットワークを必要とせず、また IaaS リソースを含むより広範囲なクラウド導入作業の一部でもありません。                                                                                                                        | [PaaS のみ](../../decision-guides/software-defined-network/paas-only.md)            |
+| Azure でホストされるワークロードは、仮想マシンなどの IaaS ベースのリソースをデプロイするか、そうでない場合は仮想ネットワークを必要としますが、オンプレミス環境への接続は必要ありません。                                                                                                                                          | [クラウドネイティブ](../../decision-guides/software-defined-network/cloud-native.md)      |
+| Azure でホストされるワークロードには、オンプレミス リソースへの制限付きアクセスが必要ですが、クラウド接続を信頼できないものとして扱う必要があります。                                                                                                                                                                                           | [クラウド DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |
+| Azure でホストされるワークロードでは、オンプレミス リソースへのアクセスに制限が必要であるため、クラウドとオンプレミス環境の間で成熟したセキュリティ ポリシーと安全な接続を実装することを計画します。                                                                                                                         | [ハイブリッド](../../decision-guides/software-defined-network/hybrid.md)                  |
+| [Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)を超える可能性のある多数の VM とワークロードをデプロイして管理する必要があるか、サブスクリプション間でサービスを共有する必要があるか、またはロール、アプリケーション、アクセス許可の分離のためのよりセグメント化された構造が必要です。 | [ハブ アンド スポーク](../../decision-guides/software-defined-network/hub-spoke.md)        |
+| 互いに接続したり、Azure に接続したりする必要のある多数のブランチ オフィスがあります。                                                                                                                                                                                                                                                       | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
 
 ### <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 

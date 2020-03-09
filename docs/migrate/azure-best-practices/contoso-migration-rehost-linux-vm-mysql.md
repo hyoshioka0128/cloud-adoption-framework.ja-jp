@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6f812c8f32ec9481942f697151e7ed803654a1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807412"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223012"
 ---
+<!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
+
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>オンプレミスの Linux アプリを Azure VM と Azure Database for MySQL にリホストする
 
 この記事では、架空の会社である Contoso が、2 階層の Linux ベースの Apache/MySQL/PHP (LAMP) アプリをリホストし、オンプレミスから Azure に移行して Azure VM と Azure Database for MySQL を使用する方法を示します。
@@ -165,7 +167,7 @@ Contoso の管理者は、アカウントを以下のように設定します。
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>フェールオーバー後に Azure VM に接続するための準備をする
 
-Contoso は、Azure へのフェールオーバー後に、Azure VM に接続できることを望んでいます。 そのため、Contoso 管理者は次の手順を実行する必要があります。
+Azure へのフェールオーバー後、Contoso は Azure VM に接続しようとします。 これを可能にするために、Contoso 管理者は次の操作を行う必要があります。
 
 - インターネット経由でアクセスするには、移行前に、オンプレミス Linux VM 上で SSH を有効にします。 Ubuntu の場合、これは次のコマンドを使用して完了させることができます: **Sudo apt-get ssh install -y**。
 - フェールオーバー後、**ブート診断**を調べて VM のスクリーンショットを確認する必要があります。
@@ -214,7 +216,7 @@ Web VM を Azure に移行する前に、Contoso の管理者はレプリケー�
 
 ### <a name="confirm-deployment-planning"></a>展開の計画を確認する
 
-続行するには、 **[Yes, I have done it]** (はい、完了しました) を選択して、デプロイ計画が完了したことを確認します。 このシナリオで Contoso が移行するのは 1 つの VM だけなので、デプロイ計画は不要です。
+続行するには、 **[はい、完了しました]** を選択して完了を確認します。 Contoso は、このシナリオで 1 つの仮想マシンのみを移行するため、デプロイの計画は必要ありません。
 
 ### <a name="set-up-the-source-environment"></a>ソース環境をセットアップする
 

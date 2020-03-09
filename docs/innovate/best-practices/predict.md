@@ -1,18 +1,18 @@
 ---
-title: クラウド イノベーション:Azure の予測して影響を与えるためのツール
-description: Azure の予測して影響を与えるためのツール
+title: 予測して影響を与えるためのイノベーション ツール
+description: Azure 向けクラウド導入フレームワークを使用して、パターンを検出し、予測を統合し、顧客の行動に影響を与えるのに役立つ分析ツールを見つけます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 656074ea65f490dea1345c2e00742846323cf6db
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 064016bddcf8c78e1b722397a9f18c71a0485776
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808619"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170768"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>Azure のデータを予測して影響を与えるためのツール
 

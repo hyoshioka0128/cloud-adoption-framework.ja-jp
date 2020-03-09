@@ -1,6 +1,6 @@
 ---
 title: Cost Management テンプレート
-description: 組織の Cost Management ポリシー ステートメントを定義するために必要なビジネス リスク、リスク許容度、コンプライアンス プロセス、およびツールを把握するためのモデルとして、このテンプレートを使用してください。
+description: このテンプレートを使用して、ビジネス リスク、リスク許容度、コンプライアンス プロセス、およびツールを取り込む Cost Management ポリシー ステートメントを定義します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a44912caaf2a79c505f0f6825471baaa7888e957
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173273"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708803"
 ---
 # <a name="cost-management-template"></a>Cost Management テンプレート
 

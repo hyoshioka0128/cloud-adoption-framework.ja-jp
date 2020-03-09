@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 42025e9e7459aae8731b6269d6bc5512acde64e4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800901"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225385"
 ---
 # <a name="build-a-cost-conscious-organization"></a>コスト志向の組織を構築する
 

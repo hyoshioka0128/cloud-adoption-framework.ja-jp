@@ -1,6 +1,6 @@
 ---
 title: ソフトウェア定義ネットワーク:クラウドネイティブ
-description: クラウドネイティブ仮想ネットワーク サービスの説明。
+description: Azure 向けクラウド導入フレームワークを使用して、VM をクラウドにデプロイするために必要なクラウドネイティブ仮想ネットワークについて説明します。
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 250f78bb0287e30615aee4b2cfb1234823197f56
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806647"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222663"
 ---
 # <a name="software-defined-networking-cloud-native"></a>ソフトウェア定義ネットワーク:クラウドネイティブ
 
@@ -41,4 +41,4 @@ ms.locfileid: "76806647"
 Azure でのクラウドネイティブ仮想ネットワークの詳細については、以下を参照してください。
 
 - [Azure Virtual Network: 攻略ガイド](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm)。 新しく作成される Azure の仮想ネットワークは、既定でクラウド ネイティブとなります。 これらのガイドを使用すると、仮想ネットワークの設計とデプロイの計画に役立ちます。
-- [サブスクリプションの制限: ネットワーク](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits) を選択します。 1 つのサブスクリプション内には、1 つの仮想ネットワークと、接続されたリソースのみが存在できます。これらはサブスクリプションの制限によってバインドされています。
+- [サブスクリプションの制限: ネットワーク](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits) を選択します。 各仮想ネットワークと、接続されたリソースは、単一サブスクリプションに存在します。 これらのリソースはサブスクリプションの制限によってバインドされています。

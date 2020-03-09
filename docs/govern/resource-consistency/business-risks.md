@@ -1,6 +1,6 @@
 ---
-title: リソースの整合性の目的とビジネス上のリスク
-description: リソースの整合性の目的とビジネス上のリスク
+title: リソース整合性のビジネス リスク
+description: Azure 向けクラウド導入フレームワークを使用して、クラウド ガバナンス戦略におけるお客様の一般的なリソース整合性規範の導入について説明します。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e1c4723aa52c20c16dbfa883d7e8566292ca54b3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90959045d877c313576540c3f0288eff8c136b5f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807225"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706865"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>リソースの整合性の目的とビジネス上のリスク
 

@@ -1,6 +1,6 @@
 ---
-title: Cost Management の目的とビジネス上のリスク
-description: Cost Management の目的とビジネス上のリスク
+title: Cost Management のビジネス リスク
+description: クラウド ガバナンス戦略におけるお客様の Cost Management 規範の一般的な導入例を示して説明します。 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 16408b01e06e29fc2697dbbdd053126d026920f0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 544c425e94e9fa2cc4a687608f0dece80b3e9251
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806511"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707885"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management の目的とビジネス上のリスク
 

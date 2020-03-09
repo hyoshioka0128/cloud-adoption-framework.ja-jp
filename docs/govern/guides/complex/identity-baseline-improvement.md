@@ -1,6 +1,6 @@
 ---
-title: '複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善'
-description: '複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善'
+title: 複雑な企業のガバナンス:ID ベースライン規範の改善
+description: Azure 向けクラウド導入フレームワークを使用して、ガバナンスの実用最小限の製品 (MVP) への ID ベースライン コントロールの追加について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/06/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f975f948bc078a80ead4207d755ff67cd5e4f2f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 05a3ce3eb018a9b15f66b90749782def260c66d7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806290"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707613"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善
 

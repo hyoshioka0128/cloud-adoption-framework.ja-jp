@@ -1,18 +1,18 @@
 ---
-title: クラウド イノベーション:Azure Database Migration Service
-description: クラウド イノベーション - Azure Database Migration Service
+title: データを移行するためのイノベーション ツール
+description: クラウドの発明とイノベーションの準備のためにデータを移行して最新化する Azure Database Migration Service とその他のツールについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 44ebe7e28eea56d1b7e61b5926a9588f4c985ae1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cd4009e8201cf6267e9da297ce13987cb025139e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808670"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171278"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>既存のデータ ソースの移行と最新化によってデータを収集する
 

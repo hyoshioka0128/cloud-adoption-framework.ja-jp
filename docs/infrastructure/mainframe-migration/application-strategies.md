@@ -1,18 +1,18 @@
 ---
-title: メインフレーム移行:メインフレーム アプリケーションの移行
-description: メインフレームで現在実行されているシステムに関してメインフレーム環境から Azure にアプリケーションを移行します。Azure は可用性が高く、スケーラブルなインフラストラクチャであることが証明されています。
+title: メインフレーム アプリの移行戦略
+description: メインフレーム環境から Azure に移行するアプリの再ホスト、削除、再構築、または置換などの戦略について説明します。
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808823"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171414"
 ---
 # <a name="mainframe-application-migration"></a>メインフレーム アプリケーションの移行
 

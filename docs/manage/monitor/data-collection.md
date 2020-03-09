@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807616"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223246"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>クラウド監視ガイド: 適切なデータの収集
 
@@ -23,7 +23,7 @@ ms.locfileid: "76807616"
 
 監視と移行を慎重に計画してください。 計画フェーズで監視サービスの所有者、運用の管理者、その他の関係者を含めることから始めて、開発とリリースのサイクルを通して継続的に全員を関与させます。 その焦点は、次の基準に基づいた監視構成を開発することです。
 
-- どのようなサービスの構成ですか。また、それらの依存関係は現在監視されていますか。 そうである場合、複数のツールが関与していますか。 リスクを生じさせずに統合できる可能性はありますか。
+- サービスの構成はどのようなものですか。 それらの依存関係は現在監視されていますか。 そうである場合、複数のツールが関与していますか。 リスクを生じさせずに統合できる可能性はありますか。
 - そのサービスの SLA はどのようなものですか。また、測定とレポートはどのように行いますか。
 - インシデントが発生したときに、サービス ダッシュボードにはどのように表示しますか。 サービス所有者、またサービスをサポートするチームにとって、ダッシュボードはどのような外観であるべきですか。
 - リソースから生成されるメトリックのうち、監視する必要があるものは何ですか。  

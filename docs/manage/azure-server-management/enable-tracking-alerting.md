@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0cd8776c71eae22fdb7a7894b656a3dc1948e45c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4581c865f3dd928df91e7e1eef97a0ea341e4ccb
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808109"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223497"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>重要な変更の追跡とアラートを有効にする
 
 Azure Change Tracking と Inventory では、ハイブリッド環境の構成の状態およびその環境に対する変更に関するアラートが表示されます。 デプロイしたサーバーに影響する可能性がある重要なファイル、サービス、ソフトウェア、レジストリの変更を報告できます。
 
-既定では、Azure Automation インベントリ サービスはファイルやレジストリの設定は監視しません。 このソリューションでは、監視対象として推奨されるレジストリ キーの一覧が提供されます。 この一覧を表示するには、Azure portal でお使いの Automation アカウントに移動し、 **[インベントリ]**  >  **[設定の編集]** を選択します。
+既定では、Azure Automation インベントリ サービスはファイルやレジストリの設定は監視しません。 このソリューションでは、監視対象として推奨されるレジストリ キーの一覧が提供されます。 この一覧を表示するには、Azure portal でお使いの Automation アカウントに移動し、次に **[インベントリ]**  >  **[設定の編集]** を選択します。
 
 ![Azure portal の Azure Automation [インベントリ] ビューのスクリーンショット](./media/change-tracking1.png)
 

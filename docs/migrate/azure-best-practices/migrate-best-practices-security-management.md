@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cef5746f8ab3368150ddcc328a8d929853dfb253
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803842"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222689"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのセキュリティ保護と管理に関するベスト プラクティス
 
@@ -405,13 +405,13 @@ Site Recovery では、プライマリ Azure リージョンからセカンダ�
 
 ## <a name="best-practice-use-managed-disks-and-availability-sets"></a>ベスト プラクティス:マネージド ディスクと可用性セットを使用する
 
-Azure では、VM を論理的にグループ化し、セット内の VM を他のリソースから分離するために、可用性セットが使用されます。 可用性セット内の VM は、局所的な障害から保護するために独立したサブシステムで複数の障害ドメインに分散され、セット内のすべての VM が同時に再起動されないように、複数の更新ドメインにも分散されます。
+Azure では、VM を論理的にグループ化し、セット内の VM を他のリソースから分離するために、可用性セットが使用されます。 可用性セット内の VM は、別々のサブシステムを持つ複数の障害ドメインに分散されて、ローカル障害から保護されます。 また、それらの VM は複数の更新ドメインにも分散され、セット内のすべての VM が同時に再起動されることが防止されます。
 
-Azure マネージド ディスクを使用すると、VM ディスクに関連付けられているストレージ アカウントを管理することで、Azure IaaS VM のディスク管理が簡素化されます。
+Azure マネージド ディスクは、VM ディスクに関連付けられているストレージ アカウントを管理することで、Azure 仮想マシンのディスク管理を簡素化します。
 
-- 可能な場合は、Managed Disks を使用することをお勧めします。 使用するストレージの種類と必要なディスクのサイズを指定するだけで、ディスクの作成と管理は Azure によってバックグラウンドで行われます。
-- 既存のディスクをマネージドに変換できます。
-- 高い回復性と可用性のためには、可用性セットに VM を作成する必要があります。 計画された停止または計画外の停止が発生したときは、可用性セットによって、セット内の少なくとも 1 つの VM が引き続き使用できることが保証されます。
+- 可能な限り、マネージド ディスクを使用してください。 使用するストレージの種類と必要なディスクのサイズを指定するだけで、ディスクの作成と管理は Azure によって行われます。
+- 既存のディスクをマネージド ディスクに変換できます。
+- 高い回復性と可用性のためには、可用性セットに VM を作成する必要があります。 計画済み、または計画外の停止が発生したときは、可用性セットによって、セット内の少なくとも 1 つの VM が使用可能であることが保証されます。
 
 ![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
 *Managed Disks*

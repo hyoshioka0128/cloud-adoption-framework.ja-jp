@@ -1,6 +1,6 @@
 ---
-title: Azure イノベーション ガイド:導入の強化
-description: Azure を使用して導入を強化する方法について説明します。
+title: Azure イノベーション:導入の強化
+description: 開発者チームが生産性を高めると共に、セキュリティで保護されたグローバル コラボレーションを促進し、Azure でイノベーションを拡大する障壁を取り除くことができます。
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 907d4745e86f63eef2a59bea8120395ea33bd1d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 748825e01646b687f49e66ccb975f866312c9310
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808330"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171057"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ ms.locfileid: "76808330"
 
 イノベーションは、組織が求める価値を創出する人々を支援することで実現されます。 イノベーションの触媒となる人々のグループの 1 つが開発者です。 開発者は、あらゆる業界で価値の創出と成長においてますます重要な役割を果たしています。 開発者はこの時代のビルダーであり、世界のコードを書き、イノベーションの中心にいます。 革新的な組織は、開発者がより多くの成果を達成できるように支援するカルチャを構築します。
 
-# <a name="developer-productivitytabdeveloperproductivity"></a>[開発者の生産性](#tab/DeveloperProductivity)
+# <a name="developer-productivity"></a>[開発者の生産性](#tab/DeveloperProductivity)
 
 ## <a name="developer-velocity"></a>開発者のベロシティ
 
@@ -93,7 +93,7 @@ DevOps プロジェクトを作成するには:
 
 ::: zone-end
 
-# <a name="innovate-collaborativelytabcollaboration"></a>[コラボレーションによるイノベーション](#tab/Collaboration)
+# <a name="innovate-collaboratively"></a>[コラボレーションによるイノベーション](#tab/Collaboration)
 
 ## <a name="innovate-through-collaboration"></a>コラボレーションによるイノベーション
 
@@ -111,7 +111,7 @@ DevOps プロジェクトを作成するには:
 
 **[Microsoft Teams のドキュメント](https://docs.microsoft.com/MicrosoftTeams)に移動する**
 
-# <a name="innovation-characteristicstabcharacteristics"></a>[イノベーションの特性](#tab/Characteristics)
+# <a name="innovation-characteristics"></a>[イノベーションの特性](#tab/Characteristics)
 
 ## <a name="innovate-by-using-azure-devops"></a>Azure DevOps を使用したイノベーション
 
@@ -127,7 +127,7 @@ Azure を利用すると、開発者は最新の標準的なアプリケーシ�
 
 Azure には、組織内のイノベーションを活気づかせ、拡大するための独自のオファリングが用意されています。 より多くのイノベーションを促進するために、現在のプロフェッショナルな開発者は、組織内の他の専門家が信頼できる基盤でアプリをビルドできるようにするアプリケーションと構成要素を作成できます。 Azure を使用すると、エキスパートのチームが支える徹底的なセキュリティと、エンタープライズ、政府機関、スタートアップから信頼されるプロアクティブなコンプライアンスが手に入ります。
 
-# <a name="liveops-innovationtabliveops"></a>[LiveOps のイノベーション](#tab/LiveOps)
+# <a name="liveops-innovation"></a>[LiveOps のイノベーション](#tab/LiveOps)
 
 ## <a name="future-ready-liveops"></a>将来への対応: LiveOps
 

@@ -1,6 +1,6 @@
 ---
 title: セキュリティ ベースライン規範の改良
-description: セキュリティ ベースライン規範の改良
+description: セキュリティ ベースライン規範を開発して成熟させるために、企業がクラウド導入の各フェーズで実行する可能性のあるタスクについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 316a848e0f9f3f90a2f7badde3166733dce4a4c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0d5f2e2c1032c77ceb56b187aa9f2bcee02262eb
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808908"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707392"
 ---
 # <a name="security-baseline-discipline-improvement"></a>セキュリティ ベースライン規範の改良
 

@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173413"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222228"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="establish-team-structures"></a>チーム構造の確立
 
 すべてのクラウドの機能は、クラウド導入作業のたびにだれかによって提供されます。 こうした役割分担やチーム構造は有機的に発展する場合もあれば、定義されたチーム構造に合わせて意図的に設計される場合もあります。

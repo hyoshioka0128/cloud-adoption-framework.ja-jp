@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: df6851ff628c0abcb38ee9139fcf24f31e2117cf
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807939"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223282"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure サーバー管理ツールおよびサービス
 
@@ -22,7 +22,7 @@ ms.locfileid: "76807939"
 - セキュリティで保護
 - 保護
 - モニター
-- [構成]
+- 構成
 - ガバナンス
 
 次のセクションでは、これらの管理領域について簡単に説明し、それらに対応する主な Azure サービスに関する詳細なコンテンツへのリンクを提供します。
@@ -61,7 +61,7 @@ ms.locfileid: "76807939"
 - ログ分析 ([ログ](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) は Azure Monitor の機能です。 Azure 管理全体の中心的役割を果たします。 ログ分析やその他多数の Azure サービスのデータ ストアとして機能します。 高機能なクエリ言語を提供しているほか、アプリケーションやリソースの操作に関する分析情報が得られる分析エンジンを搭載しています。
 - [Azure アクティビティ ログ](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)も Azure Monitor の機能です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
 
-## <a name="configure"></a>[構成]
+## <a name="configure"></a>構成
 
 このカテゴリには複数のサービスが含まれます。 次のような場合に役立ちます。
 

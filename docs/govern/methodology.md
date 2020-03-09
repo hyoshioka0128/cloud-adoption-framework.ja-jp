@@ -1,6 +1,6 @@
 ---
 title: クラウド ガバナンスの方法論
-description: クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立します。
+description: 実行最小限の製品 (MVP) に基づく増分ガバナンス アプローチを使用して、企業ポリシーをサポートし、迅速にクラウドの導入へと進みます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807089"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709092"
 ---
 # <a name="cloud-governance-methodology"></a>クラウド ガバナンスの方法論
 

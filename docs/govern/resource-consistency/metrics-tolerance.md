@@ -1,6 +1,6 @@
 ---
 title: リソース整合性のリスク許容度のメトリックとインジケーター
-description: Microsoft の Azure 向けクラウド導入フレームワークで、リソースの整合性に関連するビジネス リスクの許容度を定量化します。
+description: Azure 向けクラウド導入フレームワークを使用して、リソース整合性に関連するビジネス リスク許容度を定量化します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 71b29f1c2d87b916701767e5c74c2699cf8aa4fa
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 98413117b3eb6abf1e826fcf14f765c6cd461d65
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567726"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171363"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>リソースの整合性のメトリック、指標、およびリスク許容度
 

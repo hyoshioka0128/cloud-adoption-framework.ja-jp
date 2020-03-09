@@ -1,6 +1,6 @@
 ---
 title: 標準的な企業のガバナンス:リソース整合性の改善
-description: Microsoft の Azure 向けクラウド導入フレームワークで、復旧、サイジング、監視の各コントロールを追加することで、ガバナンスのベースラインを向上させ、リソース ガバナンスのリスクを緩和します。
+description: Azure 向けクラウド導入フレームワークを使用して、ガバナンス ベースラインの向上、およびリスクを修正するための復旧、サイズ変更、監視コントロールの追加について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 366f5034a89529e65325a8afd2cf0275dcec02e4
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 57358a9933c6f18d72678c3c4ba82bef90e713a0
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567675"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170819"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>標準的な企業のガバナンス ガイド:リソース整合性の改善
 

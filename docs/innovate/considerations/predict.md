@@ -1,18 +1,18 @@
 ---
-title: クラウド イノベーション:予測と影響
-description: クラウド イノベーションの概要 ‐ 予測と影響
+title: 顧客の行動を予測して影響を与える
+description: 予測モデリングを使用して、データ、分析情報、パターン、予測、および相互作用によって予測機能を開発します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e299025afcbf1066411f8d4792fe739663d46c74
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808398"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171108"
 ---
 # <a name="predict-and-influence"></a>予測と影響
 

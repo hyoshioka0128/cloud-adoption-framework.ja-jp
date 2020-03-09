@@ -1,6 +1,6 @@
 ---
 title: コスト モデルをデジタル資産に対応付ける
-description: コスト モデルをデジタル資産に対応付けて、クラウドのコストを予測します。
+description: Azure やその他のクラウドを最大限に活用するために、透明性と正確性をもってクラウド支出を予測および管理するのに役立つ Azure の料金計算ツールについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 30eee82d3afab32890ab00ad82b38106576f33ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 06e1bafa4a4a4c1ed88bb29d6787fec95fbd956b
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804709"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170122"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>コスト モデルをデジタル資産に対応付けて、クラウドのコストを予測します
 

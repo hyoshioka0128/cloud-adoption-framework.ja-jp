@@ -1,6 +1,6 @@
 ---
-title: Azure イノベーション ガイド:予測と影響
-description: Azure を使用した予測と影響について説明します。
+title: Azure イノベーション:予測と影響
+description: お客様のニーズを予測し、お客様の行動に影響を与えるために予測をソリューションに統合するための Azure ソリューションについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808262"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170972"
 ---
 ::: zone target="docs"
 
@@ -38,7 +38,7 @@ ms.locfileid: "76808262"
 |Azure Machine Learning Studio|はい|はい|いいえ|予測アルゴリズムに関する一般的な知識|
 |Azure Machine Learning サービス|はい|はい|はい|データ サイエンティスト|
 
-## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Azure Cognitive Services](#tab/CognitiveServices)
+## <a name="azure-cognitive-services"></a>[Azure Cognitive Services](#tab/CognitiveServices)
 
 顧客のニーズを最も迅速かつ簡単に予測できるのは、Azure Cognitive Services です。 Cognitive Services を使用すると、追加でトレーニングを行う必要なく、既存のモデルを使用して予測を行うことができます。 これらのサービスは、予測モデルをトレーニングするデータ サイエンティストがスタッフにいない場合に最適かつ効果的です。 一部のサービスでは、トレーニングは不要です。 最小限のトレーニングのみを必要とするサービスもあります。
 
@@ -70,7 +70,7 @@ Cognitive Services API を使用するには、次の手順に従います。
 
 ::: zone-end
 
-## <a name="azure-machine-learning-studiotabmachinelearningstudio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
+## <a name="azure-machine-learning-studio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
 
 Cognitive Services 内の既存のモデルが目的の予測に合わない場合は、データ サイエンティストの高いスキルがなくても、Azure Machine Learning Studio を使用して目的の予測を構築できます。
 
@@ -101,7 +101,7 @@ Azure Machine Learning Studio で、次の手順に従ってモデルを作成�
 
 ::: zone-end
 
-## <a name="azure-machine-learning-servicetabmachinelearningservice"></a>[Azure Machine Learning サービス](#tab/MachineLearningService)
+## <a name="azure-machine-learning-service"></a>[Azure Machine Learning サービス](#tab/MachineLearningService)
 
 Azure Machine Learning service では、顧客データ セットのより詳細なトレーニングに必要となる、詳細なコードベースのアプローチが提供されます。 データ サイエンティストは、Python などの言語を使用して、顧客のニーズを予測するアルゴリズムをトレーニングおよび構築できます。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807310"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222830"
 ---
 # <a name="scale-a-migration-to-azure"></a>Azure への移行のスケーリング
 
@@ -49,7 +49,7 @@ Contoso クラウド チームは、この移行の目標を設定しました�
 
 <!--markdownlint-disable MD033 -->
 
-**項目** | **数量** | **詳細**
+**Item** | **数量** | **詳細**
 --- | --- | ---
 **ワークロード** | 3,000 個以上のアプリ | アプリは VM 上で稼働しています。<br/><br/>  SQL ベースで OSS LAMP の Windows アプリです。
 **データベース** | 約 8,500 | データベースは SQL Server、MySQL、PostgreSQL です。
@@ -102,7 +102,7 @@ POC 候補 | Y/N | アプリをクラウド移行に向けての POC または E
 評価プロセスの一環として、Contoso は、アプリがどこで実行されているかを識別し、アプリ サーバー間の依存関係や関係性を把握する必要があります。 Contoso は複数のステップで環境をマップします。
 
 1. 最初のステップとして、サーバーとマシンが個々のアプリ、ネットワークの場所、グループにどのようにマップされているかを検出します。
-2. この情報に基づいて、依存関係がほとんどない、したがって迅速な移行に適したアプリを明確に識別できます。
+2. Contoso は、この情報に基づいて、依存関係がほとんどない、迅速な移行に適したアプリを明確に識別できます。
 3. マッピングを使用して、アプリ サーバー間での、より複雑な依存関係と通信を簡単に識別できます。 その後それらのサーバーを、アプリを反映するように論理的にグループ化したうえで、グループに基づいて移行戦略を計画します。
 
 マッピングを完了することで、移行計画を作成するときに、Contoso はすべてのアプリ コンポーネントを確実に識別し、考慮に入れることができます。

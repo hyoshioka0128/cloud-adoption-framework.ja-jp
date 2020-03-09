@@ -1,6 +1,6 @@
 ---
-title: '複雑な企業向けのガバナンス ガイド: 理解に役立つ物語'
-description: この物語では、複雑な企業のクラウド導入体験の間のガバナンスに関するユース ケースを組み立てます。
+title: 複雑な企業のガバナンス:理解に役立つ物語
+description: Azure 向けクラウド導入フレームワークを使用して、複雑な企業のクラウド導入の取り組みにおいて、ガバナンスのユース ケースを確立します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae1940c1cc522cd917b2b0293d60b630007537c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805559"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706916"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>複雑な企業向けのガバナンス ガイド: 理解に役立つ物語
 

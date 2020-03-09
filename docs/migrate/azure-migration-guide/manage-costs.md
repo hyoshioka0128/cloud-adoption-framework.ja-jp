@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8486d4de8b6055d6d0741d008c10a405c27b8f92
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803519"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222660"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>移行に重点を置いたコスト管理のメカニズム
 
@@ -34,7 +34,7 @@ ms.locfileid: "76803519"
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="estimate-vm-costs-prior-to-migrationtabestimatevmcosts"></a>[移行の前に VM のコストを見積もる](#tab/EstimateVMCosts)
+# <a name="estimate-vm-costs-prior-to-migration"></a>[移行の前に VM のコストを見積もる](#tab/EstimateVMCosts)
 
 資産 (インフラストラクチャ、アプリ、またはデータ) を移行する前に、これらの資産に関する観察されたパフォーマンス条件に基づいてコストを見積もり、サイズ設定を改良する機会が存在します。 コストの見積もりには、次の 2 つの目的があります。つまり、コスト管理が可能になり、現在の予算が必要なパフォーマンス要件を満たすことを確認するためのチェックポイントが提供されます。
 
@@ -54,13 +54,13 @@ ms.locfileid: "76803519"
 Azure Migrate は、コレクターやサービス マップによってキャプチャされたデータに基づいて、**毎月のコスト見積もり**を計算します。 次の手順では、コスト見積もりを読み込みます。
 
 1. ポータルで [Azure Migrate Assessment]\(Azure Migrate の評価) に移動します。
-2. プロジェクトの **[概要]** ページで、 **[+ 評価の作成]** を選択します。
-3. **[すべて表示]** をクリックして、評価のプロパティを確認します。
-4. グループを作成し、グループ名を指定します。
-5. グループに追加するマシンを選びます。
-6. **[評価の作成]** をクリックして、グループと評価を作成します。
-7. 評価が作成されたら、それを [概要] > [ダッシュボード] で表示します。
-8. ポータル ナビゲーションの [評価の詳細] セクションで、 **[コスト詳細]** を選択します。
+1. プロジェクトの **[概要]** ページで、 **[+ 評価の作成]** を選択します。
+1. **[すべて表示]** を選択して、評価のプロパティを確認します。
+1. グループを作成し、グループ名を指定します。
+1. グループに追加するマシンを選びます。
+1. **[評価の作成]** を選択して、グループと評価を作成します。
+1. 評価が作成されたら、それを [概要] > [ダッシュボード] で表示します。
+1. ポータル ナビゲーションの [評価の詳細] セクションで、 **[コスト詳細]** を選択します。
 
 結果の見積もり (下の図を参照) によって、コンピューティングとストレージの毎月のコストが識別されます。これは多くの場合、クラウド コストの最大の部分を表しています。
 
@@ -72,7 +72,7 @@ Azure Migrate は、コレクターやサービス マップによってキャ�
 - [Azure Migrate を使用した評価の設定と確認](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[Cost Management の規範](../../govern/cost-management/index.md)と[複雑な企業向けのガバナンス ガイドの Cost Management の改善](../../govern/guides/complex/cost-management-improvement.md)に関するページを参照してください。
 
-# <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[移行中および移行後に VM のコストを見積もり、最適化する](#tab/EstimateOptimize)
+# <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[移行中および移行後に VM のコストを見積もり、最適化する](#tab/EstimateOptimize)
 
 移行の前のコストの見積もりによって、コスト予測のための確固としたターゲットが提供されます。 また、移行される各資産 (インフラストラクチャ、アプリ、およびデータ) のパフォーマンスやコスト ニーズを検討する機会も提供されます。 ただし、それはまだ見積もりにすぎません。 資産が移行され、負荷がかかる状態になったら、実際の負荷または合成された負荷に基づいて、より正確なコスト計算を作成できます。
 
@@ -94,7 +94,7 @@ Azure Cost Management は、消費習慣のより総合的なビュー (コス�
 
 次の手順では、サブスクリプションに対する Azure Cost Management のコスト分析データを読み込みます。
 
-1. ポータルで **[コストの管理と請求]** に移動します。 左側のウィンドウに [コストの管理と請求] が表示されない場合は、 **[すべてのサービス]** をクリックします。 サービス メニュー ウィンドウで、 **[Monitoring and Management] (監視と管理)** の **[コストの管理と請求]** をクリックします。
+1. ポータルで **[コストの管理と請求]** に移動します。 左側のウィンドウに [コストの管理と請求] が表示されない場合は、 **[すべてのサービス]** を選択します。 サービス メニュー ウィンドウで、 **[Monitoring and Management]\(監視と管理\)** の **[コストの管理と請求]** を選択します。
 2. [コストの管理と請求] で、左側のナビゲーション ウィンドウの **[コスト管理]** を選択して、クラウド コストの分析と最適化を開始します。
 3. [コスト管理] で、 **[コスト分析]** を選択します。
     a. コスト分析で別のスコープに切り替えるには、 **[スコープ]** ピルを使用します。
@@ -107,7 +107,7 @@ Azure Cost Management は、消費習慣のより総合的なビュー (コス�
 - Azure Advisor の詳細については、[Azure Advisor を使用したサービス コストの削減](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)に関するページを参照してください。
 - Azure Cost Management の詳細については、「[スコープを理解して使用する](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)」および「[コスト分析を使用してコストを調査および分析する](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)」を参照してください。
 
-# <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[コストを最適化するためのヒントとコツ](#tab/TipsTricks)
+# <a name="tips-and-tricks-to-optimize-costs"></a>[コストを最適化するためのヒントとコツ](#tab/TipsTricks)
 
 この記事で説明されているツールに加えて、全体的なクラウド コストを急速に削減するために役立ついくつかのヒントとコツがあります。 知っておく必要があるいくつかの高レベルのヒントを次に示します。
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fbdeccc3ed1c1acb516f9aceadc3d8dc8732030
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.openlocfilehash: b426acdc4ae88a88acd295758be4e2d4a6b85dc0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213611"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223271"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>クラウドでの運用管理プラクティスの確立
 
@@ -39,7 +39,7 @@ ms.locfileid: "77213611"
 - **運用のコンプライアンス:** 資産の構成、サイズ、コスト、およびパフォーマンスを定期的に管理することが、期待どおりのパフォーマンスを維持するための鍵です。
 - **保護と復旧:** 運用の中断を最小限に抑えることと、回復を迅速に進めることは、企業の業績悪化や収益への悪影響を避けるために役立ちます。 検出と回復は、この規範の重要な側面です。
 - **プラットフォームの運用:** すべての IT 環境には、一連のよく使用されるプラットフォームが含まれます。 これらのプラットフォームには、SQL Server や Azure HDInsights などのデータ ストアを含めることができます。 その他の一般的なプラットフォームには、Azure Kubernetes Service (AKS) などのコンテナー ソリューションを含めることができます。 プラットフォームに関係なく、プラットフォームの運用の成熟度では、一般的なプラットフォームがワークロードによってどのようにデプロイ、構成、および使用されるかに基づいた運用のカスタマイズに注目します。
-- **ワークロードの運用:** 運用の成熟度の最も高いレベルでは、クラウド運用チームは、ビジネスの成功に不可欠なワークロードの運用を調整できます。 これらの重要度の高いワークロードの場合、使用可能なデータが、その使用率に基づいたワークロードの自動修復、サイズ変更、または保護に役立ちます。
+- **ワークロードの運用:** 運用の成熟度の最も高いレベルでは、クラウド運用チームは重要なワークロードの運用を調整することができます。 そのようなワークロードの場合、使用可能なデータが、ワークロードをその使用に基づいて自動修復、サイズ変更、または保護するのに役立ちます。
 
 [設計レビュー フレームワーク (コードネーム: クラウド設計原則)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview) などのその他のガイダンスは、個々のワークロードに関して、前述の規範を守りつつ、詳細なアーキテクチャ上の決定を下すために役立ちます。
 

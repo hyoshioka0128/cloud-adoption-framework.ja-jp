@@ -1,6 +1,6 @@
 ---
-title: Cost Management のメトリック、インジケーター、およびリスク許容度
-description: クラウド ガバナンスと関連した Cost Management の説明
+title: Cost Management のリスク許容度のメトリックとインジケーター
+description: Azure 向けクラウド導入フレームワークを使用して、クラウド ガバナンスに関連する Cost Management のリスク許容度のメトリックとインジケーターを定量化します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aee529f6065e35645805a7f3d6577447eb48cf3f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806460"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708820"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management のメトリック、インジケーター、およびリスク許容度
 

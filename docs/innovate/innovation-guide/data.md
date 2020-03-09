@@ -1,6 +1,6 @@
 ---
-title: Azure イノベーション ガイド:データの民主化
-description: Azure を使用してデータを民主化する方法について説明します。
+title: Azure イノベーション:データの民主化
+description: データの見つけやすさと理解を強化する Azure Data Catalog、Azure Data Share、およびその他のツールについて説明します。
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 481430ca45d2d4a63f4d1777bd2c34409a2e7851
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f7f3ca7d99d4a1d553c888a8d3fd58a2616b64e8
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808296"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223448"
 ---
+<!-- cspell:ignore Fcatalogs Faccounts FEnvironments -->
+
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-democratize-data"></a>Azure イノベーション ガイド:データの民主化
@@ -32,7 +34,7 @@ ms.locfileid: "76808296"
 
 Azure Time Series Insights や Stream Analytics など、データを処理する Azure サービスも、イノベーションのニーズに対応するためにお客様やパートナーが使用し、成果を上げている機能です。
 
-# <a name="catalogtabcatalog"></a>[カタログ](#tab/Catalog)
+# <a name="catalog"></a>[カタログ](#tab/Catalog)
 
 ## <a name="azure-data-catalog"></a>Azure Data Catalog
 
@@ -59,7 +61,7 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 組織の Azure Data Catalog を作成するには、次の手順に従います。
 
 1. **[Azure Data Catalog]** に移動します。
-2. **作成** を選択します。
+2. **［作成］** を選択します
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -69,7 +71,7 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 
 ::: zone-end
 
-# <a name="sharetabshare"></a>[共有](#tab/Share)
+# <a name="share"></a>[共有](#tab/Share)
 
 ## <a name="azure-data-share"></a>Azure Data Share
 
@@ -106,7 +108,7 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 
 ::: zone-end
 
-# <a name="insightstabinsights"></a>[分析情報](#tab/Insights)
+# <a name="insights"></a>[分析情報](#tab/Insights)
 
 ## <a name="azure-time-series-insights"></a>Azure Time Series Insights
 

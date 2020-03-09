@@ -1,18 +1,18 @@
 ---
-title: クラウド イノベーション:デバイスの操作
-description: クラウド イノベーションの概要 - デバイスの操作
+title: デジタル発明を介したデバイスとの対話
+description: アプリではなく、アンビエント エクスペリエンスやデバイスとの顧客の対話を通じてイノベーションの労力を減らす高度なアプローチについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8b39362f2e0e21431e5d04ef05e2676094bca9bc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 05fc3e3b4ddb0ae630feaee57a345aec8870ea08
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808483"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171227"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>アンビエント エクスペリエンス:デバイスの操作
 

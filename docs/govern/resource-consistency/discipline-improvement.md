@@ -1,6 +1,6 @@
 ---
 title: リソースの整合性の規範の改良
-description: リソースの整合性の規範の改良
+description: Azure 向けクラウド導入フレームワークを使用して、導入の各フェーズでリソース整合性規範を開発して成熟させるために必要なタスクを理解します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0113c37aaca23374021d6790bcbb1db751ffcf4a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3e8c51da7dc0e45ee2722681872ca851ee385656
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807242"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709075"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>リソースの整合性の規範の改良
 

@@ -1,6 +1,6 @@
 ---
 title: デプロイ高速化のビジネス リスク
-description: デプロイ高速化の規範に伴うビジネス リスクについて説明します。これを、Microsoft の Azure 向けクラウド導入フレームワークのガバナンス戦略で使用できます。
+description: Azure 向けクラウド導入フレームワークを使用して、ガバナンス戦略で使用できるデプロイ高速化規範のビジネス リスクについて説明します。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7f56bc9181226b0f0fe03fbcf08a061af33099f
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: dc80f889442fd7139e9f3930da1304d1a25e3e98
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567692"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171431"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>デプロイ高速化の動機とビジネス リスク
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3e9eadbd246ba38f496d8c74b7bcd3e6ade03685
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 908b2c8b07f66d53264e78432e07736a426d1be9
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808160"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223540"
 ---
 # <a name="protect-and-recover-in-azure"></a>Azure での保護と復旧
 
@@ -38,7 +38,7 @@ ms.locfileid: "76808160"
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-backuptabupdbackupatemanagement"></a>[Azure Backup](#tab/UpdbackupateManagement)
+## <a name="azure-backup"></a>[Azure Backup](#tab/UpdbackupateManagement)
 
 ::: zone-end
 
@@ -46,7 +46,7 @@ Azure Backup では、ご自身のデータを Microsoft Cloud 内でバック�
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Azure VM のバックアップを有効にする
 
-1. Azure Portal で、 **[仮想マシン]** を選択し、レプリケートする VM を選択します。
+1. Azure portal で、 **[仮想マシン]** を選択し、レプリケートする VM を選択します。
 1. **[操作]** ペインで、 **[バックアップ]** を選択します。
 1. Azure Recovery Services コンテナーを作成するか、または既存のコンテナーを選択します。
 1. **[Create (or edit) a new policy]\(新しいポリシーを作成 (または編集) する)** を選択します。
@@ -69,7 +69,7 @@ Azure Backup では、ご自身のデータを Microsoft Cloud 内でバック�
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 ::: zone-end
 
@@ -87,7 +87,7 @@ Site Recovery では、プライマリ Azure リージョン内にホストさ�
 
 ### <a name="enable-replication-for-the-azure-vm"></a>Azure VM のレプリケーションの有効化
 
-1. Azure Portal で、 **[仮想マシン]** を選択し、レプリケートする VM を選択します。
+1. Azure portal で、 **[仮想マシン]** を選択し、レプリケートする VM を選択します。
 1. **[操作]** ペインで、 **[ディザスター リカバリー]** を選択します。
 1. **[ディザスター リカバリーの構成]**  >  **[ターゲット リージョン]** を選択し、レプリケート先のターゲット リージョンを選択します。
 1. このクイックスタートでは、他のすべてのオプションの既定値をそのまま使用します。

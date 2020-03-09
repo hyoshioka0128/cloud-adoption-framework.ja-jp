@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807599"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223034"
 ---
+<!-- cspell:ignore opsman ITSM -->
+
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>クラウド監視ガイド: 監視プラットフォームの概要
 
 Microsoft では、2 つの製品からさまざまな監視機能を提供しています。オンプレミス向けに設計された後クラウドに拡張された System Center Operations Manager と、クラウド向けに設計されたがオンプレミス システムも監視できる Azure Monitor です。 これら 2 つのオファリングでは、アラート、サービス稼働時間の追跡、アプリケーションとインフラストラクチャの正常性の監視、診断、分析などのコア監視サービスが提供されます。
@@ -67,7 +69,7 @@ Operations Manager には、管理グループをサポートするための重�
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor は、それをサポートするすべてのインフラストラクチャが Azure で実行され、Microsoft によって管理される、サービスとしてのソフトウェア (SaaS) サービスです。 監視、分析、診断を大規模に実行するように設計されており、すべての国のクラウドで利用可能です。 Azure Monitor をサポートするために必要なインフラストラクチャのコア部分 (コレクター、メトリックとログ ストア、分析) は、Microsoft によってメンテナンスされます。  
+Azure Monitor は、サービスとしてのソフトウェア (SaaS) サービスです。そのため、それをサポートするインフラストラクチャは Azure で実行され、Microsoft によって管理されています。 これは、大規模に監視、分析、および診断を実行します。 すべての各国クラウドで利用できます。 Azure Monitor をサポートするインフラストラクチャのコア部分 (コレクター、メトリックとログ ストア、分析) は、Microsoft によってメンテナンスされます。  
 
 ![Azure Monitor の図](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
@@ -77,7 +79,7 @@ Azure Monitor は、それをサポートするすべてのインフラストラ
 
 ### <a name="operations-manager"></a>Operations Manager
 
-#### <a name="agents"></a>[エージェント]
+#### <a name="agents"></a>エージェント
 
 Operations Manager では、[Windows コンピューター](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent)にインストールされたエージェントからのみ、データが直接収集されます。 Operations Manager SDK からのデータを受け入れることができますが、このアプローチは通常、監視データの収集ではなく、カスタム アプリケーションによって製品を拡張するパートナーのために使用されます。 [Linux コンピューター](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent)やネットワーク デバイスなどの他のソースからのデータ収集は、これらの他のデバイスにリモートからアクセスする Windows エージェントで実行される特別なモジュールを使用して行うことができます。
 
@@ -115,9 +117,9 @@ Azure Monitor では、Azure のインフラストラクチャとプラットフ
 
 Azure Monitor では、データ収集は、そのデータに対して実行されるアクションから分離されています。これにより、クラウド環境で分散マイクロサービスがサポートされます。 複数のソースからのデータが共通のデータ プラットフォームに統合され、その収集されたデータに基づいて、分析、視覚化、アラートの各機能が提供されます。
 
-Azure Monitor によって収集されたすべてのデータは、ログまたはメトリックとして保存され、Monitor のさまざまな機能はどちらかに依存します。 メトリックには、ほぼリアルタイムのアラートと問題の迅速な検出に最適な、時系列の数値が含まれています。 ログにはテキストまたは数値データが含まれており、ログは、複雑な分析を実行する場合に特に便利な強力なクエリ言語によってサポートされています。
+Azure Monitor によって収集されたデータは、ログまたはメトリックとして保存され、Azure Monitor のさまざまな機能はどちらかに依存します。 メトリックには、ほぼリアルタイムのアラートと問題の迅速な検出に最適な、時系列の数値が含まれています。 ログにはテキストまたは数値データが含まれており、複雑な分析を実行する場合に特に役立つ強力な言語を使用してクエリを実行できます。
 
-Monitor ではデータ収集とそのデータに対するアクションが分離されているため、多くの場合に、ほぼリアルタイムのアラートを提供できない可能性があります。 ログ データのアラートを実行するために、アラートで定義された定期的なスケジュールでクエリが実行されます。 この動作により、Azure Monitor では監視対象のすべてのソースからのデータを簡単に関連付けることが可能となっており、さまざまな方法で対話的にデータを分析できます。 これは、根本原因分析を行い、問題が起きる可能性がある他の箇所を特定するために特に役立ちます。
+Azure Monitor ではデータ収集とそのデータに対するアクションが分離されているため、多くの場合に、ほぼリアルタイムのアラートを提供できない可能性があります。 ログ データのアラートを実行するために、アラートで定義された定期的なスケジュールでクエリが実行されます。 この動作により、Azure Monitor では監視対象のすべてのソースからのデータを簡単に関連付けることが可能となっており、さまざまな方法で対話的にデータを分析できます。 これは、根本原因分析を行い、問題が起きる可能性がある他の箇所を特定するために特に役立ちます。
 
 ## <a name="health-monitoring"></a>正常性の監視
 

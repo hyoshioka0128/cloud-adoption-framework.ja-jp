@@ -1,6 +1,6 @@
 ---
-title: 標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
-description: 標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
+title: 標準的な企業のガバナンス:セキュリティ ベースライン規範の改善
+description: Azure 向けクラウド導入フレームワークを使用して、保護されたデータのクラウドへの移行をサポートするセキュリティ コントロールの追加について学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ef4d58cb871ea290f8489e806a4b78f32a9d8b3d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2e9dbaf3bb92893e4eb737964da3f1b0c3a056ad
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807123"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707715"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b5b8710c8545fa2e7c56131ed74a0ea1a3a02f8e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807429"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222965"
 ---
-# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Azure VM 上と SQL Server Always On 可用性グループ上でオンプレミス アプリを再ホストする
+# <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Azure Virtual Machines と SQL Server Always On 可用性グループでオンプレミス アプリを再ホストする
 
-この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware VM 上で実行される 2 階層の Windows .NET アプリを再ホストする方法を説明します。 アプリのフロントエンド VM を Azure VM、アプリのデータベースを Azure SQL Server VM に移行し、SQL Server Always On 可能性グループを含む Windows Server フェールオーバー クラスターで実行するようにします。
+この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware 仮想マシン (VM) 上で実行される 2 階層の Windows .NET アプリを再ホストする方法を説明します。 アプリのフロントエンド VM を Azure VM、アプリのデータベースを Azure SQL Server VM に移行し、SQL Server Always On 可能性グループを含む Windows Server フェールオーバー クラスターで実行するようにします。
 
 この例で使用される SmartHotel360 アプリは、オープン ソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
 
@@ -27,8 +27,8 @@ IT リーダーシップ チームは、ビジネス パートナーと密接に
 
 - **ビジネスの成長への対応。** Contoso は成長を続けています。そのため、オンプレミスのシステムとインフラストラクチャに負荷がかかっています。
 - **効率化。** Contoso では、不要な手順を取り除き、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は IT に対して、時間やコストを無駄にせず、迅速に作業を行ってもらう必要があります。これは、例えば、顧客の要求に素早く対応するためです。
-- **機敏性の向上。** Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済で成功を収めるために、市場の変化に対して、より迅速な対応ができる必要があります。 ビジネスの妨げになったり、ビジネスの機会を壊すようなことがあってはなりません。
-- **スケール。** ビジネスが順調に成長していく中で、Contoso IT は、同じペースで拡張できるシステムを提供する必要があります。
+- **機敏性の向上。** Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済で成功を収めるために、市場の変化よりも迅速に対応する必要があります。 IT がビジネスの妨げになったり、ビジネスの機会を壊すようなことがあってはなりません。
+- **スケール。** ビジネスが順調に成長している中で、Contoso IT 部門は、同じペースで拡張できるシステムを提供する必要があります。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -38,7 +38,7 @@ Contoso クラウド チームは、この移行の目標を設定しました�
 - Contoso は、このアプリへの投資を望んでいません。 これはビジネスにとって重要なものですが、Contoso は現状のまま確実にクラウドに移すことだけを望んでいます。
 - このアプリのオンプレミス データベースでは、可用性の問題が発生しています。 Contoso の希望は、フェールオーバー機能を備えた高可用性クラスターとしてこのデータベースを Azure にデプロイすることです。
 - Contoso は、現在の SQL Server 2008 R2 プラットフォームを SQL Server 2017 にアップグレードしようとしています。
-- Contoso は、このアプリに Azure SQL Database を使用したくないと考えており、別のデータベースを探しています。
+- Contoso は、このアプリに対して Azure SQL Database の代わりになるものを探しています。
 
 ## <a name="solution-design"></a>ソリューション設計
 
@@ -368,7 +368,7 @@ Contoso の管理者は、アカウントを以下のように設定します。
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>フェールオーバー後に Azure VM に接続するための準備をする
 
-Contoso は、フェールオーバー後に Azure VM に接続することを望んでいます。 そのため、Contoso の管理者は、移行前に以下の操作を行います。
+フェールオーバー後、Contoso は Azure VM に接続しようとします。 これを行うには、Contoso 管理者が移行の前に次の手順を実行する必要があります。
 
 1. インターネットでアクセスする場合:
 

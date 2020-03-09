@@ -1,18 +1,18 @@
 ---
-title: クラウド イノベーション:Measure
-description: クラウド イノベーションの概要 - 内容を測定する
+title: 顧客への影響を測定する
+description: 顧客の行動と導入を測定するために、目的の顧客フローを定義し、学習メトリックを確立します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b60f1b9cadb20ae516946fe09299fb3af2f895c
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808415"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171142"
 ---
 # <a name="measure-for-customer-impact"></a>顧客への影響を測定する
 

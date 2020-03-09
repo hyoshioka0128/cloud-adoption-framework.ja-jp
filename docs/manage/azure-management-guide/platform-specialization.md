@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808177"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223519"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>クラウド管理のためのプラットフォームの特殊化
 
@@ -55,7 +55,7 @@ ms.locfileid: "76808177"
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="improve-system-designtabsystemsdesign"></a>[システム設計を改善する](#tab/SystemsDesign)
+## <a name="improve-system-design"></a>[システム設計を改善する](#tab/SystemsDesign)
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Azure Architecture Framework は、システム設計の 5 つの柱全体の改
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="automated-remediationtabautomatedremediation"></a>[自動修復](#tab/AutomatedRemediation)
+## <a name="automated-remediation"></a>[自動修復](#tab/AutomatedRemediation)
 
 ::: zone-end
 
@@ -103,7 +103,7 @@ Azure Architecture Framework は、システム設計の 5 つの柱全体の改
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="scale-the-solution-with-a-service-catalogtabservicecatalog"></a>[サービス カタログを使用したソリューションのスケーリング](#tab/ServiceCatalog)
+## <a name="scale-the-solution-with-a-service-catalog"></a>[サービス カタログを使用したソリューションのスケーリング](#tab/ServiceCatalog)
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ Azure Architecture Framework は、システム設計の 5 つの柱全体の改
 
 1. Azure portal 内で、**マネージド アプリケーション センター (プレビュー)** に移動します。
 2. **[参照]** ペインで、 **[サービス カタログ アプリケーション]** を選択します。
-3. **[+ 追加]** をクリックして、会社のサービス カタログからアプリケーション定義を選択します。
+3. **[+ 追加]** を選択して、会社のサービス カタログからアプリケーション定義を選択します。
 
 サービスを提供しているすべてのマネージド アプリケーションが表示されます。
 
@@ -153,7 +153,7 @@ Azure Architecture Framework は、システム設計の 5 つの柱全体の改
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="continuous-improvementtabcontinuousimprovement"></a>[継続的な改善](#tab/ContinuousImprovement)
+## <a name="continuous-improvement"></a>[継続的な改善](#tab/ContinuousImprovement)
 
 ::: zone-end
 

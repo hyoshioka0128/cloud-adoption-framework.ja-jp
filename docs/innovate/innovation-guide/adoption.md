@@ -1,6 +1,6 @@
 ---
-title: Azure イノベーション ガイド:カスタマー フィードバックの準備
-description: カスタマー フィードバックの準備
+title: Azure イノベーション:フィードバックの準備
+description: Azure のツールを使用して、GitHub でホストされている Web アプリと API に関する定量的で定性的なフィードバックを収集する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808364"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171091"
 ---
 ::: zone target="docs"
 
@@ -39,7 +39,7 @@ ms.locfileid: "76808364"
 
 Azure の次の各ツールは、GitHub でホストされているプロジェクトと統合されます (または互換性があります)。
 
-## <a name="quantitative-feedback-for-web-appstabquantitative-apps"></a>[Web アプリの定量的フィードバック](#tab/Quantitative-Apps)
+## <a name="quantitative-feedback-for-web-apps"></a>[Web アプリの定量的フィードバック](#tab/Quantitative-Apps)
 
 Application Insights は、アプリケーションの使用状況に関するほぼリアルタイムの定量的フィードバックを提供する監視ツールです。 このフィードバックは、現在の仮説をテストして検証し、バックログにある次の機能やユーザー ストーリーを形成する際に役立ちます。
 
@@ -74,7 +74,7 @@ Application Insights は、アプリケーションの使用状況に関する�
 - [Azure Monitor Application Insights の概要](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 - [利用統計情報ダッシュボードを作成する](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
 
-## <a name="quantitative-feedback-for-apistabquantitative-apis"></a>[API の定量的フィードバック](#tab/Quantitative-APIs)
+## <a name="quantitative-feedback-for-apis"></a>[API の定量的フィードバック](#tab/Quantitative-APIs)
 
 Connected Economy (つながる経済) が企業のイノベーションのあり方を変えつつあります。 市場や業界の混乱がこれまでになく加速しています。 混乱の形態はさまざまです。企業は、進行中のビジネス活動でつまずくことなく、変革をどのように先導するかという "_イノベーターのジレンマ_" に取り組まなければなりません。
 
@@ -116,7 +116,7 @@ API Management サービスを開くには、[Azure portal](https://ms.portal.az
 
 - [Azure Monitor を使用して API に関するフィードバックを取得する](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
 
-## <a name="qualitative-feedbacktabqualitative"></a>[定性的フィードバック](#tab/Qualitative)
+## <a name="qualitative-feedback"></a>[定性的フィードバック](#tab/Qualitative)
 
 バックログ (ボード) は、フィードバックがユーザー ストーリーとして記録される場所です。 関連する作業が実行可能なタスクとして追跡される場所でもあります。 Azure Boards は GitHub に直接統合できるので、フィードバック/作業管理とソース コードの間でシームレスなエクスペリエンスが実現されます。
 
@@ -154,7 +154,7 @@ DevOps プロジェクトを作成するには:
 - [Azure Boards の概要](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 - [Azure Boards と GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
-## <a name="close-the-loop-with-pipelinestabpipelines"></a>[パイプラインでループを閉じる](#tab/pipelines)
+## <a name="close-the-loop-with-pipelines"></a>[パイプラインでループを閉じる](#tab/pipelines)
 
 フィードバックに基づく行動は、顧客から要求された機能の追加を必ずしも意味するわけではありません。 しかし、あらゆるデータ ポイントから何らかの変化が生じます。 その変化は、物事に対する考え方の変化である場合もあれば、 要求されたものとはまったく異なる技術的な変更である場合もあります。 いずれにせよ、Azure Pipelines のようなデプロイ パイプラインおよびツールを使用することで、そうした変更を速やかに公開することが可能となり、顧客と頻繁に共有できるようになります。
 

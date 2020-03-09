@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801411"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222246"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>移行環境の計画チェックリスト - 移行前に環境の対応性を検証する
 
@@ -26,7 +26,11 @@ ms.locfileid: "76801411"
 
 ## <a name="governance-alignment"></a>ガバナンスの整合
 
-移行の準備が完了した環境について最初の最も重要な決定事項は、ガバナンスの整合を選択することです。 移行の基礎とガバナンスの整合に関して合意に達していますか? 少なくとも、クラウド導入チームは、この移行が、制限されたガバナンスを伴う単一の環境、完全に管理されている環境ファクトリ、またはその中間のバリエーションのうち、いずれになるかを理解する必要があります。 ガバナンスの整合におけるその他のオプションやガイダンスについては、[ガバナンスとコンプライアンスの整合](../../expanded-scope/governance-or-compliance.md)に関する記事を参照してください。
+移行の準備が完了した環境について最初の最も重要な決定事項は、ガバナンスの整合を選択することです。 移行の基礎とガバナンスの整合に関して合意に達していますか? 少なくとも、クラウド導入チームは、この移行が、制限されたガバナンスを伴う単一の環境、完全に管理されている環境ファクトリ、またはその中間のバリエーションのうち、いずれになるかを理解する必要があります。 ガバナンスの整合に関するその他のガイダンスについては、[ガバナンスの方法論](../../../govern/index.md)に関する記事を参照してください。
+
+## <a name="operations-management-alignment"></a>運用管理の整合
+
+資産をクラウドに移行する前に、運用管理に関する要件や制約を理解しておくことが重要です。 少なくとも、移行環境には、運用のベースラインを満たすために必要なすべての実装が含まれている必要があります。 運用の整合に関するその他のガイダンスについては、[管理の方法論](../../../manage/index.md)に関する記事を参照してください。
 
 ## <a name="cloud-readiness-implementation"></a>クラウド対応性の実装
 

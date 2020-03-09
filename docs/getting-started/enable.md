@@ -1,6 +1,6 @@
 ---
-title: クラウド導入の取り組みの途中でお客様の成功を実現する
-description: クラウド導入の取り組み全体を通じてお客様の成功を実現する
+title: クラウド導入の取り組みで成功を実現する
+description: 無料のセルフサービス クラウド導入フレームワークとその他のツールを使用して、お客様の成功を実現するクラウド導入の意思決定に役立てることができます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
-ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
+ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413198"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170173"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>クラウド導入の取り組みの途中で成功を実現する
 
@@ -69,7 +69,7 @@ ms.locfileid: "77413198"
                     </div>
                     <div class="cardText">
                         <h3>信頼性の高いアーキテクチャ (回復性)</h3>
-                        <p>クラウド内で信頼性の高いアプリケーションを構築することは、従来のアプリケーション開発とは異なります。 従来は、アプリケーション プラットフォーム全体で障害が発生する可能性を最小限に抑えるために、何重もの冗長性の高いハードウェアを購入する場合がありました。 クラウドでは、障害が発生することを事前に確認します。 目標は、障害がまったく発生しないように努力することではなく、障害が発生した単一コンポーネントの影響を最小限に抑えることです。</p>
+                        <p>クラウド内で信頼性の高いアプリケーションを構築することは、従来のアプリケーション開発とは異なります。 従来は、アプリケーション プラットフォーム全体で障害が発生する可能性を最小限に抑えるために、数レベルの冗長なよりハイエンドのハードウェアを購入する場合がありました。 クラウドでは、障害が発生することを事前に確認します。 目標は、障害がまったく発生しないように努力することではなく、障害が発生した単一コンポーネントの影響を最小限に抑えることです。</p>
                     </div>
                 </div>
             </div>

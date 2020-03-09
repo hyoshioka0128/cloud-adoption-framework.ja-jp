@@ -1,18 +1,18 @@
 ---
-title: クラウド イノベーション:導入の強化
-description: クラウド イノベーションの概要 - 導入の強化
+title: デジタル発明で導入を強化する
+description: ベスト プラクティスを維持しつつ、イノベーションの方法論の成熟度モデルを使用して、導入を遅らせる障害を減らします。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808517"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223484"
 ---
 # <a name="empower-adoption"></a>導入の強化
 
@@ -45,7 +45,7 @@ ms.locfileid: "76808517"
 
 イノベーションをスケーリングする場合、ソリューションの共有コードベースほど有益なツールはありません。 残念ながら、どの反復または MVP の組み合わせが成功につながるのかを確実に予測する方法はありません。 このため、共有コードベースまたはリポジトリはいつ確立しても早すぎるということはありません。 これは、遅滞すべきでない[技術的スパイク](./build.md#reduce-complexity-and-delay-technical-spikes)の 1 つです。 チームはさまざまな MVP ソリューションを反復するため、共有リポジトリによって共同作業がしやすくなり、迅速な開発が可能になります。 ソリューションの変更が学習メトリックに悪影響を及ぼす場合は、バージョン コントロールを使用して、以前のより効果的なバージョンのソリューションにロールバックできます。
 
-コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。このツールでは、数回クリックするだけで共有コード リポジトリを作成できます。 また、Azure DevOps の [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 機能を使用して、[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) または [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) リポジトリを作成することもできます。
+コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。これを使うと、いくつかの手順を実行するだけで共有コード リポジトリを作成できます。 また、Azure DevOps の [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 機能を使用して、[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) または [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) リポジトリを作成することもできます。
 
 ## <a name="feedback-loops"></a>フィードバック ループ
 
@@ -61,7 +61,7 @@ ms.locfileid: "76808517"
 
 継続的インテグレーションでは、コードの変更がメイン ブランチに頻繁にマージされます。 自動化されたビルドおよびテスト プロセスにより、メイン ブランチのコードが常に運用品質であることが確認されます。 これにより、開発者が協力して、正確で信頼性の高いフィードバック ループを提供する共有ソリューションを開発できるようになります。
 
-Azure DevOps と [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) は、GitHub や他のさまざまなリポジトリで数回クリックするだけで継続的インテグレーション機能を提供します。
+Azure DevOps と [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) では、GitHub やその他のさまざまなリポジトリでいくつかの手順を実行するだけで継続的インテグレーション機能が提供されます。
 継続的インテグレーションの詳細については、[こちら](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)をご覧ください。または、[ハンズオン ラボ](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration)で詳細を確認してください。 [Azure DevOps を使用した CI/CD パイプライン](https://azure.microsoft.com/solutions/devops)の作成を高速化する、ソリューション アーキテクチャも提供されています。
 
 ## <a name="reliable-testing"></a>信頼性の高いテスト

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5850b9d3da33babd4c44145fbca8f81da7dd8ff5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807361"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223075"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>オンプレミス アプリを Azure VM および SQL Database Managed Instance にリホストする
 
@@ -105,7 +105,7 @@ Contoso は、次の手順を実行して、SmartHotel360 アプリの Web 層�
 
 ### <a name="azure-services"></a>Azure サービス
 
-サービス | [説明] | コスト
+サービス | 説明 | コスト
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。
 [Azure SQL Database マネージド インスタンス](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Managed Instance は、Azure クラウド内の完全に管理された SQL Server インスタンスを表すマネージド データベース サービスです。 最新バージョンの SQL Server データベース エンジンと同じコードを使用し、最新の機能、パフォーマンスの向上、およびセキュリティ更新プログラムが適用されています。 | Azure で実行されている SQL Database Managed Instance を使用すると、容量に基づく料金がかかります。 [Managed Instance の価格の詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/sql-database/managed)。
@@ -331,7 +331,7 @@ Contoso の管理者は、以下の作業を行ってアカウントを設定し
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>フェールオーバー後に Azure VM に接続するための準備をする
 
-Contoso は、Azure へのフェールオーバー後に、Azure 内のレプリケートされた VM に接続できることを望んでいます。 Azure 内のレプリケートされた VM に接続するには、移行前にオンプレミスの VM 上でいくつかの作業を行う必要があります。
+Contoso は、Azure へのフェールオーバー後、Azure 内のレプリケートされた VM に接続しようとします。 これを行うには、移行の前に、Contoso 管理者がオンプレミスの VM でいくつかのタスクを完了する必要があります。
 
 1. インターネット経由でアクセスする場合、フェールオーバーの前に、オンプレミスの VM 上の RDP を有効にします。 TCP と UDP の規則が **[パブリック]** プロファイルに追加されていることを確認し、 **[Windows ファイアウォール]**  >  **[許可されたアプリ]** で、すべてのプロファイルで RDP が許可されていることを確認します。
 2. サイト間 VPN 経由でアクセスする場合は、オンプレミスのコンピューター上で RDP を有効にします。 **[Windows ファイアウォール]**  >  **[許可されたアプリおよび機能]** で、**ドメイン ネットワークとプライベート ネットワーク**での RDP を許可します。

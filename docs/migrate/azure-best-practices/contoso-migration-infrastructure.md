@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807514"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223126"
 ---
+<!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+
 # <a name="deploy-a-migration-infrastructure"></a>移行インフラストラクチャをデプロイする
 
 この記事では、架空の会社 Contoso がそのオンプレミス インフラストラクチャを移行のために準備し、移行に備えて Azure インフラストラクチャを設定した後、ハイブリッド環境でビジネスを実行する方法を示します。 この例を独自のインフラストラクチャ移行作業の計画に役立てるために使用する場合は、次の点に注意してください。
@@ -52,11 +54,11 @@ Contoso が Azure への移行を実施するには、その前に Azure イン�
 
 - Contoso は、米国東部のニューヨーク市に 1 つのメイン データセンターを配置しています。
 - Contoso は、米国の地方に 3 つの支店を配置しています。
-- メイン データセンターは、光ファイバーによるイーサネット接続 (500 mbps) を通じて、インターネットに接続されています。
+- メイン データセンターは、光ファイバーによるメトロ イーサネット接続 (500 Mbps) を通じて、インターネットに接続されています。
 - 各支店は、ビジネス クラスの接続を使用して、インターネットにローカルで接続されています。メイン データセンターには、IPSec VPN トンネルで接続されています。 これにより、ネットワーク全体を永続的に接続でき、インターネット接続が最適化されます。
 - メイン データセンターは、VMware によって完全に仮想化されています。 Contoso には ESXi 6.5 仮想化ホストが 2 つあり、vCenter Server 6.5 で管理されています。
 - Contoso は、ID 管理に Active Directory を使用しており、内部ネットワーク上で DNS サーバーを使用しています。
-- データセンター内のドメイン コントローラーは、VMware VM 上で実行されています。 支店にあるドメイン コントローラーは、物理サーバー上で実行されています。
+- データセンター内のドメイン コントローラーは、VMware 仮想マシン上で実行されています。 支店にあるドメイン コントローラーは、物理サーバー上で実行されています。
 
 ## <a name="step-1-buy-and-subscribe-to-azure"></a>手順 1:Azure を購入して登録する
 
@@ -76,7 +78,7 @@ Contoso は [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/ente
 Azure の料金を支払った後、Contoso は Azure サブスクリプションを管理する方法を決める必要があります。 Contoso は EA を利用しているので、設定できる Azure サブスクリプションの数に制限はありません。
 
 - Azure エンタープライズ加入契約では、企業が Azure サービスを構成して使用する方法、および中心となるガバナンス構造が定義されています。
-- 最初の手順として、Contoso は、エンタープライズ加入契約のためのエンタープライズ スキャフォールディングと呼ばれる構造を定義しました。 Contoso では、スキャフォールディングを理解して設計するために、[こちらの記事](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance)を読みました。
+- 最初の手順として、Contoso は、エンタープライズ加入契約のためのエンタープライズ スキャフォールディングと呼ばれる構造を定義しました。 Contoso は、[Azure エンタープライズ スキャフォールディングのガイダンス](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance)を使用して、スキャフォールディングの理解と設計に役立てました。
 - ここでは、Contoso は機能的アプローチを使用してサブスクリプションを管理することを決定しました。
   - 会社内では、Azure の予算を制御する 1 つの IT 部門を使用します。 これがサブスクリプションを持つ唯一のグループになります。
   - Contoso は将来的にこのモデルを拡張し、会社の他のグループもエンタープライズ登録に部門として参加できるようにする意向です。
@@ -87,7 +89,7 @@ Azure の料金を支払った後、Contoso は Azure サブスクリプショ�
 
 ### <a name="examine-licensing"></a>ライセンスを調べる
 
-サブスクリプションの構成が済むと、Contoso は Microsoft のライセンスを確認できます。 ライセンス戦略は、Contoso が Azure に移行しようとしているリソースや、Azure VM およびサービスが選択されデプロイされる方法によって異なります。
+サブスクリプションの構成が済むと、Contoso は Microsoft のライセンスを確認できます。 ライセンス戦略は、Contoso が Azure に移行しようとしているリソースや、Azure Virtual Machines (VM) およびサービスが選択されデプロイされる方法によって異なります。
 
 #### <a name="azure-hybrid-benefit"></a>Azure ハイブリッド特典
 
@@ -348,16 +350,16 @@ Contoso が決定したハイブリッド接続の実装方法は次のとおり
 
 ### <a name="design-the-azure-network-infrastructure"></a>Azure のネットワーク インフラストラクチャを設計する
 
-ハイブリッド展開が安全性と拡張性を備えるような方法でネットワークを配置することが重要です。 そのため、Contoso は長期的なアプローチを採用し、仮想ネットワーク (Vnet) が回復性を持ちエンタープライズに対応するように設計しています。 Vnet の計画に関して[詳しくはこちらをご覧ください](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm)。
+Contoso のネットワーク構成では、ハイブリッド デプロイをセキュリティで保護し、スケーラブルにする必要があります。 Contoso はこれに対して長期的なアプローチを採用し、仮想ネットワーク (Vnet) が回復性を持ちエンタープライズに対応するように設計しています。 Vnet の計画に関して[詳しくはこちらをご覧ください](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm)。
 
-2 つのリージョンを接続するため、Contoso はハブ間ネットワーク モデルを実装することにしました。
+2 つのリージョンを接続するため、Contoso はハブ間ネットワーク モデルを実装します。
 
 - 各リージョン内で、Contoso はハブ アンド スポーク モデルを使用します。
 - ネットワークとハブを接続するために、Contoso は Azure ネットワーク ピアリングを使用します。
 
 #### <a name="network-peering"></a>ネットワーク ピアリング
 
-Azure では、VNet とハブを接続するためにネットワーク ピアリングが提供されています。 グローバル ピアリングを使うと、異なるリージョンの VNet とハブの間を接続できます。 ローカル ピアリングは同じリージョン内の VNet を接続します。 VNet ピアリングには、次のようないくつかの利点があります。
+Azure ネットワーク ピアリングでは、仮想ネットワークとハブを接続します。 グローバル ピアリングを使うと、異なるリージョンの仮想ネットワークまたはハブ間の接続が可能になります。 ローカル ピアリングでは、同じリージョン内の仮想ネットワークを接続します。 仮想ネットワーク ピアリングには、次のようないくつかの利点があります。
 
 - ピアリングされた VNet 間のネットワーク トラフィックはプライベートになります。
 - VNet 間のトラフィックは、Microsoft のバックボーン ネットワーク上で保持されます。 VNet 間の通信では、パブリック インターネット、ゲートウェイ、暗号化が必要ありません。
@@ -429,7 +431,7 @@ Contoso は、選択したハブ アンド スポーク モデルの内部にお
 
 ![プライマリ リージョン内のハブ アンド スポーク モデル](./media/contoso-migration-infrastructure/primary-hub-peer.png)
 
-#### <a name="subnets-in-the-east-us-2-hub-network-vnet-hub-eus2"></a>東部米国 2 のハブ ネットワーク (VNET-HUB-EUS2) 内のサブネット
+#### <a name="subnets-in-the-east-us-2-hub-network-vnet-hub-eus2"></a>米国東部 2 のハブ ネットワーク (VNET-HUB-EUS2) 内のサブネット
 
 **サブネット/ゾーン** | **CIDR** | **使用可能な IP アドレス
 --- | --- | ---
@@ -439,7 +441,7 @@ Contoso は、選択したハブ アンド スポーク モデルの内部にお
 **OB-TrustZone** | 10.240.3.0/24 | 251
 **GatewaySubnets** | 10.240.10.0/24 | 251
 
-#### <a name="subnets-in-the-east-us-2-dev-network-vnet-dev-eus2"></a>東部米国 2 の開発用ネットワーク (VNET-DEV-EUS2) 内のサブネット
+#### <a name="subnets-in-the-east-us-2-dev-network-vnet-dev-eus2"></a>米国東部 2 の開発用ネットワーク (VNET-DEV-EUS2) 内のサブネット
 
 開発用 VNet は、運用パイロット領域として開発チームによって使われます。 3 つのサブネットがあります。
 
@@ -449,7 +451,7 @@ Contoso は、選択したハブ アンド スポーク モデルの内部にお
 **DEV-APP-EUS2** | 10.245.20.0/22 | 1019 | アプリ階層の VM
 **DEV-DB-EUS2** | 10.245.24.0/23 | 507 | データベース VM
 
-#### <a name="subnets-in-the-east-us-2-production-network-vnet-prod-eus2"></a>東部米国 2 の運用ネットワーク (VNET-PROD-EUS2) 内のサブネット
+#### <a name="subnets-in-the-east-us-2-production-network-vnet-prod-eus2"></a>米国東部 2 の運用ネットワーク (VNET-PROD-EUS2) 内のサブネット
 
 Azure IaaS コンポーネントは、運用ネットワーク内に配置されます。 各アプリ階層には専用のサブネットがあります。 サブネットは開発用ネットワーク内のサブネットと一致し、ドメイン コントローラー用のサブネットが追加されています。
 
@@ -471,7 +473,7 @@ Azure IaaS コンポーネントは、運用ネットワーク内に配置され
   - VNET-PROD-CUS: この VNet は、VNET-PROD_EUS2 に似た運用ネットワークです。
   - VNET-ASR-CUS: この VNet は、オンプレミスからのフェールオーバー後に VM が作成される場所、またはプライマリ リージョンからセカンダリ リージョンにフェールオーバーされる Azure VM のための場所として使用されます。 このネットワークは運用ネットワークに似ていますが、ドメイン コントローラーは存在しません。
   - リージョン内の各 VNet は専用のアドレス空間を持ち、オーバーラップはありません。 Contoso では NAT なしでルーティングを構成する予定です。
-- **サブネット:** サブネットは、米国東部 2 のサブネットと同様の方法で設計されます。 例外は、Contoso ではドメイン コントローラー用のサブネットが必要ないことです。
+- **サブネット:** サブネットは、米国東部 2 のものと同様の方法で設計されます。 例外は、Contoso ではドメイン コントローラー用のサブネットが必要ないことです。
 
 米国中部の VNet をまとめると次の表のようになります。
 
@@ -557,16 +559,16 @@ VNET-PROD-EUS2 ネットワーク内のドメイン コントローラーでは�
 
 Contoso の管理者は、Azure DNS サービスはハイブリッド環境に適した選択ではないと判断しました。 代わりに、オンプレミスの DNS サーバーを使用します。
 
-- これはハイブリッド ネットワークなので、オンプレミスと Azure のすべての VM は、正常に機能するために名前を解決できる必要があります。 つまり、すべての VNet にカスタム DNS の設定を適用する必要があります。
+- これはハイブリッド ネットワークなので、オンプレミスと Azure 内のすべての VM は、正常に機能するために、名前を解決できる必要があります。 つまり、すべての VNet にカスタム DNS の設定を適用する必要があります。
 - Contoso は現在、Contoso データセンターとブランチ オフィスに DC を展開しています。 プライマリ DNS サーバーは CONTOSODC1(172.16.0.10) と CONTOSODC2(172.16.0.1) です。
 - VNet が展開されると、オンプレミスのドメイン コントローラーは、ネットワーク内の DNS サーバーとして使用されるように設定されます。
 - これを構成するには、カスタム DNS を VNet で使用するときに、Azure の再帰的なリゾルバーの IP アドレス (168.63.129.16 など) を DNS リストに追加する必要があります。 そのために、Contoso は各 VNet で DNS サーバーの設定を構成します。 たとえば、VNET-HUB-EUS2 ネットワークのカスタム DNS の設定は次のようになります。
 
     ![[カスタム DNS]](./media/contoso-migration-infrastructure/custom-dns.png)
 
-オンプレミスのドメイン コントローラーだけでなく、Contoso は Azure ネットワークをサポートするために、各リージョンに 2 つずつ、4 つのドメイン コントローラーをさらに実装する予定です。 Contoso の Azure での展開は次のようになります。
+オンプレミスのドメイン コントローラーに加え、Contoso は Azure ネットワークをサポートするために、さらに 4 つのドメイン コントローラー (リージョンごとに 2 つ) を実装します。 Contoso の Azure での展開は次のようになります。
 
-**[リージョン]** | **DC** | **VNet** | **サブネット** | **IP アドレス (IP address)**
+**リージョン** | **DC** | **VNet** | **サブネット** | **IP アドレス (IP address)**
 --- | --- | --- | --- | ---
 EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4
 EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5
@@ -777,7 +779,7 @@ Contoso は、これがアプリケーションからどのように見えるか
 
 ASG に関連付けられた NSG は最小限の特権で構成されており、許可されたパケットのみが、ネットワークの 1 つの部分から宛先にフローできます。
 
-**操作** | **Name** | **ソース** | **移行先** | **[ポート]**
+**操作** | **名前** | **ソース** | **移行先** | **[ポート]**
 --- | --- | --- | --- | ---
 Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443
 Allow | AllowWebToApp | APP1-FE | APP1-APP | 80、443
@@ -795,9 +797,9 @@ Key Vault サブスクリプションでディスク暗号化キーやシーク�
 
 この記事では、Contoso は、Azure インフラストラクチャと Azure サブスクリプションのポリシー、ハイブリッド ID、ディザスター リカバリー、ネットワーク、ガバナンス、セキュリティに対するインフラストラクチャ ポリシーを設定しました。
 
-Contoso がここで行ったすてべてのステップが、クラウドへの移行に必要なわけではありません。 Contoso の場合は、すべての種類の移行に使用でき、安全性、回復性、拡張性を備えたネットワーク インフラストラクチャを計画することを望んでいました。
+クラウドの移行には、ここで実行したすべての手順が必要となるわけではありません。 この例では、Contoso は、すべての種類の移行を処理でき、その一方で安全性、回復性、拡張性を備えたネットワーク インフラストラクチャを計画しました。
 
-このインフラストラクチャの導入が済むと、Contoso は移行を実施する準備が整います。
+このインフラストラクチャにより、Contoso は移行を実施する準備が整いました。
 
 ## <a name="next-steps"></a>次のステップ
 

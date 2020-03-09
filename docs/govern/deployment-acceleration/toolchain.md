@@ -1,6 +1,6 @@
 ---
 title: Azure のデプロイ高速化ツール
-description: Azure のデプロイ高速化ツール
+description: デプロイ高速化のガバナンス規範をサポートするポリシーとプロセスを成熟させるのに、Azure ネイティブ ツールがどのように役立つかについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6617fe95f885836241e4b0f16bc17652f36c5a7d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ee1c81fe5bada0fa435a598db2f79dc0b23b4392
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806324"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709007"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure のデプロイ高速化ツール
 
@@ -26,9 +26,9 @@ ms.locfileid: "76806324"
 |  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 管理グループ](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 |企業ポリシーを実装する     |はい |いいえ  |いいえ  |いいえ | いいえ |いいえ |
-|サブスクリプション間でポリシーを適用する     |Required |はい  |いいえ  |いいえ | いいえ |いいえ |
+|サブスクリプション間でポリシーを適用する     |必須 |はい  |いいえ  |いいえ | いいえ |いいえ |
 |定義済みリソースをデプロイする     |いいえ |いいえ  |はい  |いいえ | いいえ |いいえ |
-|完全に準拠した環境を作成する      |Required |Required  |Required  |はい | いいえ |いいえ |
+|完全に準拠した環境を作成する      |必須 |必須  |必須  |はい | いいえ |いいえ |
 |ポリシーを監査する      |はい |いいえ  |いいえ  |いいえ | いいえ |いいえ |
 |Azure リソースをクエリする      |いいえ |いいえ  |いいえ  |いいえ |はい |いいえ |
 |リソースのコストをレポートする      |いいえ |いいえ  |いいえ  |いいえ |いいえ |はい |

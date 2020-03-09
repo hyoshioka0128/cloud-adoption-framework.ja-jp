@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 8dd545e4d34dfafd6a777828b9c590030797fdae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799218"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222052"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Microsoft Azure を最新の状態に保つ
 
@@ -22,7 +22,7 @@ Microsoft Azure のようなクラウド プラットフォームは、多くの
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="top-resourcestabtopresources"></a>[上位のリソース](#tab/TopResources)
+# <a name="top-resources"></a>[上位のリソース](#tab/TopResources)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -45,14 +45,14 @@ Microsoft Azure のようなクラウド プラットフォームは、多くの
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="additional-resourcestabadditionalresources"></a>[その他のリソース](#tab/AdditionalResources)
+# <a name="additional-resources"></a>[その他のリソース](#tab/AdditionalResources)
 
 <!-- markdownlint-enable MD025 -->
 
 Azure に関する最新情報を入手するのに役立つより詳しいコンテンツについては、ここに記載されたリソースをご覧ください。
 
 - [Azure グラフ](https://azurecharts.com/)
-  - この非公式のリソースでは、過去 6 か月間に発生したすべての Azure の更新情報が視覚化されており、Azure での変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。
+  - この非公式の視覚化では、過去 6 か月間に加えられたすべての Azure の更新が表示されます。 Azure の変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - 毎週発行の、Azure を構築しているエンジニアによる動画。 内容は、デモ、質問への回答、分析情報の共有などです。
   - [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) 経由でサブスクライブします。

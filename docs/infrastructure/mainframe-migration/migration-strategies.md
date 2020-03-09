@@ -1,19 +1,21 @@
 ---
-title: メインフレーム移行:メインフレームから Azure に切り替える
-description: メインフレームで現在実行されているシステムに関してメインフレーム環境から Azure にアプリケーションを移行します。
+title: メインフレームから Azure にアプリを移行する
+description: メインフレーム プラットフォームから、高可用性環境内の Azure ハイパースケールのコンピューティングとストレージに切り替えるための技術的なガイダンスを提供します。
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808772"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223629"
 ---
+<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+
 # <a name="make-the-switch-from-mainframes-to-azure"></a>メインフレームから Azure に切り替える
 
 Azure は、従来のメインフレーム アプリケーションを実行するための代替プラットフォームとして、高可用環境にハイパースケールのコンピューティングとストレージを提供します。 メインフレーム環境に関連するコストをかけずに、最新のクラウドベースのプラットフォームの価値と敏捷性が手に入ります。
@@ -59,7 +61,7 @@ Azure は、ローカルでも他の地域内でも、複数のストレージ �
 
 一般的に、メインフレームのお客様は、災害時に備えてディザスター リカバリー サイトを保守するか、独立したメインフレーム プロバイダーを利用しています。 ディザスター リカバリー サイトとの同期は、通常、データのオフライン コピーを使用して実行されます。 どちらの方法も高コストが発生します。
 
-また、自動化された geo 冗長性は、多額の費用はかかりますが、メインフレームの結合機能を介しても利用できます。また、通常はミッションクリティカル システム用に予約されています。 対照的に、Azure には、実装が簡単で費用対効果の高い[バックアップ](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)、[復旧](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)、および[冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)のオプションがあり、ローカル レベルまたはリージョン レベルで、または geo 冗長性を介して利用できます。
+自動化された geo 冗長性は、メインフレームの結合機能を介しても利用できます。 この方法はコストが高く、通常、ミッション クリティカルなシステム用に予約されています。 対照的に、Azure には、実装が簡単で費用対効果の高い[バックアップ](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)、[復旧](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)、および[冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)のオプションがあり、ローカル レベルまたはリージョン レベルで、または geo 冗長性を介して利用できます。
 
 ## <a name="storage"></a>ストレージ
 

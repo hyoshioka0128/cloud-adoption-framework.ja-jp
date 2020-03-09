@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629251"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225279"
 ---
+<!-- cSpell:ignore rodend subscope ITSM -->
+
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 
 > [!NOTE]
@@ -47,7 +49,7 @@ Azure に移行する場合、企業内でクラウドを有効に活用する�
 >
 次の図は、スキャフォールディングのコンポーネントを示しています。 基礎は、管理階層とサブスクリプションの確かな計画に依存しています。 柱は、Resource Manager ポリシーと厳密な命名規則で構成されます。 スキャフォールディングの残りの部分は、安全で管理しやすい環境を実現して結び付ける Azure のコア機能です。
 
-![エンタープライズ スキャフォールディング](../_images/reference/scaffoldv2.png)
+![エンタープライズ スキャフォールディング](../_images/reference/scaffold-v2.png)
 
 ## <a name="define-your-hierarchy"></a>階層の定義
 
@@ -269,7 +271,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 オンプレミス クラウドからパブリック クラウドに移るときに直面する大きな変化の 1 つは、設備投資 (ハードウェアの購入) から営業経費 (使用するサービスの支払) への切り替えです。 この切り替えには、より慎重なコスト管理も必要です。 クラウドのメリットは、不要になったときにシャットダウンするかサイズを変更するだけで、使用するサービスのコストに根本的かつ肯定的な影響を与えられることです。 意図的にクラウドにおいてコストを管理することは、ベスト プラクティスであり、熟練した顧客は日常的に行っています。
 
-コストの視覚化、追跡、および管理を行うためのいくつかのツールが提供されます。 また、コスト管理を独自のツールとダッシュボードにカスタマイズして統合できるように API の完全なセットも提供されます。 これらのツールは Azure portal の機能と外部機能に大まかに分けることができます。
+Microsoft では、コストの視覚化、追跡、および管理に役立ついくつかのツールを提供しています。 また、コスト管理を独自のツールとダッシュボードにカスタマイズして統合できるように API の完全なセットも提供されます。 これらのツールは Azure portal の機能と外部機能に大まかに分けることができます。
 
 ### <a name="azure-portal-capabilities"></a>Azure portal の機能
 
