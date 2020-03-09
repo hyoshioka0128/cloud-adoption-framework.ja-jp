@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6a80ab660afc9b604a027d3475bb6e2d99f00c98
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 003a5674116f7964971710c5c8c67fc51fa03493
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807395"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222874"
 ---
+<!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
+
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Azure DevOps Services に Team Foundation Server の展開をリファクターする
 
 この記事では、架空の会社である Contoso がオンプレミスの Team Foundation Server (TFS) のデプロイを Azure 上の Azure DevOps Services に移行することで、それをリファクターする方法について説明します。 Contoso の開発チームは、過去 5 年間、チームのコラボレーションとソース管理に TFS を使用してきました。 現在は、開発やテストの作業とソース管理に対応するクラウドベースのソリューションに移行したいと考えています。 Azure DevOps モデルに移行し、新しいクラウドネイティブ アプリを開発する際に、Azure DevOps Services が役立ちます。
@@ -222,10 +224,10 @@ Contoso の管理者は、移行前に ContosoDev コレクション データ�
 移行に備えてコレクションをオフラインにするために、管理者はまず開発チームとダウンタイムのスケジュールを立てます。 移行プロセスの手順は次のとおりです。
 
 1. **コレクションをデタッチする。** コレクションの ID データは、コレクションがアタッチされ、オンラインのときは TFS サーバー構成データベース内にあります。 コレクションが TFS サーバーからデタッチされると、その ID データのコピーが作成され、転送のためにコレクションと共にパッケージ化されます。 インポートの ID 部分を実行するには、このデータが必要です。 インポート中に発生した変更をインポートする方法がないので、インポートが完了するまでコレクションをデタッチしたままにすることをお勧めします。
-2. **バックアップを生成する。** 移行プロセスの次の手順は、Azure DevOps Services にインポートできるバックアップを生成することです。 データ層アプリケーション コンポーネント パッケージ (DACPAC) は、データベースの変更を単一のファイルにパッケージ化し、SQL の他のインスタンスに展開することができる SQL Server の機能です。 また、Azure DevOps Services に直接復元することもできるので、コレクション データをクラウドに取り込むためのパッケージ化方法として使用されます。 Contoso は SqlPackage.exe ツールを使用して DACPAC を生成します。 このツールは、SQL Server Data Tools に含まれています。
+2. **バックアップを生成する。** 移行プロセスの次の手順は、Azure DevOps Services にインポートできるバックアップを生成することです。 データ層アプリケーション コンポーネント パッケージ (DACPAC) は、データベースの変更を単一のファイルにパッケージ化し、SQL の他のインスタンスに展開することができる SQL Server の機能です。 また、Azure DevOps Services に直接復元することもでき、コレクション データをクラウドに取り込むためのパッケージ化方法として使用されます。 Contoso は SqlPackage.exe ツールを使用して DACPAC を生成します。 このツールは、SQL Server Data Tools に含まれています。
 3. **ストレージにアップロードする。** DACPAC が作成されたら、Azure Storage にアップロードします。 アップロードが完了したら、Shared Access Signature (SAS) を取得し、TFS Migration Tool からストレージにアクセスできるようにします。
 4. **インポート ファイルに入力する。** Contoso は、DACPAC 設定など、インポート ファイルに足りないフィールドに入力します。 完全な移行の前に、まず **dry run** インポートを実行して、すべてが正しく動作していることを確認するように指定することから始めます。
-5. **ドライ ランを実行する。** ドライ ランのインポートで、コレクションの移行をテストできます。 ドライ ランの保存期間は限られており、運用環境の移行が実行される前に削除されます。 それらは、設定期間が経過すると、自動的に削除されます。 ドライ ランが削除される時期についての注意は、インポートが完了した後に送信される成功メールに記載されています。 時期を書き留め、それに応じて計画を立てます。
+5. **ドライ ランを実行する。** ドライ ランのインポートで、コレクションの移行をテストできます。 ドライ ランの保存期間は限られているため、運用環境の移行が実行される前に削除されます。 それらは、設定期間が経過すると、自動的に削除されます。 ドライ ランが削除される時期についての注意は、インポートが完了した後に送信される成功メールに記載されています。 時期を書き留め、それに応じて計画を立てます。
 6. **運用環境の移行を完了する。** ドライ ランの移行が完了したら、Contoso の管理者は、**import.json**ファイルを更新し、インポートを再び実行して、最終的な移行を実行します。
 
 ### <a name="detach-the-collection"></a>コレクションをデタッチする
@@ -264,16 +266,15 @@ Contoso の管理者は、移行前に ContosoDev コレクション データ�
 
 Contoso は Azure DevOps Services へのインポートのためにバックアップ (DACPAC) を作成します。
 
-- DACPAC の作成には SQL Server Data Tools の SqlPackage.exe が使用されます。 SQL Server Data Tools と共に、120、130、140 などの名前のフォルダー以下に複数バージョンの SqlPackage.exe がインストールされます。 適切なバージョンを使用して DACPAC を準備することが重要です。
-- TFS 2018 のインポートでは、140 以降のフォルダーの SqlPackage.exe を使用する必要があります。 CONTOSOTFS の場合、このファイルは C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140 フォルダーにあります。
+- DACPAC の作成には SQL Server Data Tools の SqlPackage.exe が使用されます。 SQL Server Data Tools と共に、120、130、140 などの名前のフォルダーに複数バージョンの SqlPackage.exe がインストールされます。 適切なバージョンを使用して DACPAC を準備することが重要です。
+
+- TFS 2018 のインポートでは、140 以降のフォルダーの SqlPackage.exe を使用する必要があります。 CONTOSOTFS の場合、このファイルは次の場所にあります: `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140`
 
 Contoso の管理者は次のように DACPAC を生成します。
 
 1. コマンド プロンプトを開き、SQLPackage.exe の場所に移動します。 次のコマンドを入力して DACPAC を生成します。
 
-    ``` console
-    SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
-    ```
+    `SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory`
 
     ![バックアップ](./media/contoso-migration-tfs-vsts/backup1.png)
 
