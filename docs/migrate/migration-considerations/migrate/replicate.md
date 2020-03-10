@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b37cea7b912cb4d65f9b1b119787e96b2f698d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802023"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337814"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "76802023"
 
 ## <a name="required-prerequisites-to-replication"></a>レプリケーションに必要な前提条件
 
-レプリケーションの前に、*新しいプラットフォーム*とハードウェアで、バイナリのコピーを受け取るための準備をする必要があります。 [前提条件](../prerequisites/index.md)に関する記事では、バイナリのレプリカを受け取るための安全で、堅牢な、パフォーマンスに優れたプラットフォームを作成するために役立つ最低限の環境要件について説明しています。
+レプリケーションの前に、*新しいプラットフォーム*とハードウェアで、バイナリのコピーを受け取るための準備をする必要があります。 [前提条件](../prerequisites/index.md)に関する記事では、バイナリのレプリカを受け取るための安全で、堅牢な、高パフォーマンスのプラットフォームを作成するために役立つ最低限の環境要件について説明しています。
 
 レプリケーションと同期のために*ソース バイナリ*も準備する必要があります。 評価、アーキテクチャ、修復に関する記事ではそれぞれ、レプリケーションと同期のためにソース バイナリの準備ができていることを確認するために必要なアクションについて説明しています。
 
