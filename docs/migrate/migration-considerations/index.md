@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 46689512ec799ff8b5aa47ea095d34d8c25dd83a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: baeac7d27ff7aa71c011a2578968811820ebe22e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802431"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094746"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>クラウド導入フレームワーク移行モデル
 
@@ -50,7 +50,7 @@ ms.locfileid: "76802431"
 
 この段階的なモデルの背後にある原則は、次のインフォグラフィックで示されているプロセスの実行と前提条件に基づいています。
 
-![クラウド導入フレームワーク移行モデル](../../_images/operational-transformation-migrate.png)
+![クラウド導入フレームワーク移行モデル](../../_images/migrate/methodology.png)
 
 これらの原則を一貫して適用することは、クラウド移行プロセスの最終目標です。必須の出発点とは考えないでください。 移行作業が成熟したら、このセクションのガイダンスを参照して、組織のニーズに対応する最適なプロセスを定義してください。
 
