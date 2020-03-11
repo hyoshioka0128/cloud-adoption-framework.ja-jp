@@ -46,6 +46,10 @@ items:
             href: strategy/balance-the-portfolio.md
       - name: 最初のクラウド導入プロジェクト
         href: strategy/first-adoption-project.md
+      - name: その他の注意点
+        items:
+          - name: グローバル市場
+            href: strategy/global-markets.md
       - name: 戦略に関連するスキル
         href: strategy/suggested-skills.md
   - name: プラン
@@ -174,8 +178,6 @@ items:
                 href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: ネットワーク セキュリティのベスト プラクティス
                 href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: ネットワークの移行されたワークロードのベスト プラクティス
-                href: migrate/azure-best-practices/migrate-best-practices-networking.md
               - name: 境界ネットワーク
                 href: ready/azure-best-practices/perimeter-networks.md
               - name: ハブ アンド スポーク ネットワーク トポロジ
@@ -191,7 +193,7 @@ items:
           - name: ストレージ
             items:
               - name: Storage のセキュリティ ガイド
-                href: 'https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/storage/blobs/security-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
           - name: データベース
             items:
               - name: データベース セキュリティのベスト プラクティス
@@ -203,15 +205,15 @@ items:
               - name: コストの追跡
                 href: ready/azure-best-practices/track-costs.md
               - name: クラウドへの投資を最適化する
-                href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 予算を作成して管理する
-                href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: コスト データのエクスポート
-                href: 'https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 推奨事項に従ってコストを最適化する
-                href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 使用状況と支出の監視
-                href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
       - name: Ready およびランディング ゾーンに関連するスキル
         href: ready/suggested-skills.md
   - name: 採用
@@ -256,8 +258,6 @@ items:
                 items:
                   - name: 概要
                     href: migrate/azure-best-practices/vmware-host.md
-                  - name: VMWare ホストの移行に関する考慮事項
-                    href: migrate/expanded-scope/vmware-host.md
                   - name: 前提条件
                     items:
                       - name: 環境のセキュリティ保護
@@ -298,11 +298,11 @@ items:
                         items:
                           - name: VCenter 用の ID プロバイダーとしての Azure AD
                             href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-ad?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: 移行とディザスター リカバリーのオプション
+                  - name: リホストとディザスター リカバリーのオプション
                     items:
-                      - name: ワークロード VM をプライベート クラウド vCenter に移行する
+                      - name: ワークロード VM をプライベート クラウド vCenter にリホストする
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure Data Box を使用してデータを移行する
+                      - name: Azure Data Box を使用してデータをリホストする
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: ワークロード VM をバックアップする
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/backup-workloads-veeam?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -316,24 +316,22 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
                   - name: Azure でのアプリのリビルド
                     href: migrate/azure-best-practices/contoso-migration-rebuild.md
-                  - name: Azure DevOps Services に TFS を移行する
+                  - name: TFS を Azure DevOps Services にリファクターする
                     href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
               - name: Java アプリ
                 items:
                   - name: 移行オプション
                     href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Spring から Azure App Service へ
+                  - name: Spring の Azure App Service へのリファクター
                     href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Tomcat から Azure App Service へ
+                  - name: Tomcat の Azure App Service へのリファクター
                     href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Tomcat から AKS のコンテナーへ
+                  - name: Tomcat の AKS のコンテナーへのリファクター
                     href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: WebLogic から Azure Virtual Machines へ
+                  - name: WebLogic の Azure Virtual Machines へのリファクター
                     href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: SQL Server
                 items:
-                  - name: SQL Server の移行に関する考慮事項
-                    href: migrate/expanded-scope/sql-migration.md
                   - name: Azure VM と Azure SQL Database Managed Instance でアプリをリホストする
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
                   - name: Azure VM と SQL Server AlwaysOn 可用性グループでアプリをリホストする
@@ -344,55 +342,55 @@ items:
                     href: migrate/azure-best-practices/sql-migration.md
                   - name: Azure データベースの移行ガイド
                     items:
-                      - name: Azure SQL DB への SQL Server の移行
+                      - name: SQL Server の Azure SQL DB へのリファクター
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure SQL DB Managed Instance への SQL Server の移行
+                      - name: SQL Server の Azure SQL DB Managed Instance へのリファクター
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure VM 上の SQL Server への SQL Server の移行
+                      - name: Azure VM 上の SQL Server への SQL Server のリファクター
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure SQL DW への SQL Server の移行
+                      - name: SQL Server の Azure SQL DW へのリファクター
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: MySQL
                         items:
-                          - name: Azure SQL DB への MySQL の移行
+                          - name: MySQL の Azure SQL DB へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: Azure DB for MySQL への MySQL の移行
+                          - name: MySQL の Azure DB for MySQL へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuremysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: PostgreSQL
                         items:
-                          - name: Azure DB for PostgreSQL への PostgreSQL の移行
+                          - name: PostgreSQL の Azure DB for PostgreSQL へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: MariaDB
                         items:
-                          - name: Azure DB for MariaDB への MariaDB の移行
+                          - name: MariaDB の Azure DB for MariaDB へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: MongoDB
                         items:
-                          - name: Azure Cosmos DB への MongoDB の移行
+                          - name: MongoDB の Azure Cosmos DB へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Cassandra
                         items:
-                          - name: Azure Cosmos DB への Cassandra の移行
+                          - name: Cassandra の Azure Cosmos DB へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/cassandra-to-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Oracle
                         items:
-                          - name: Azure SQL DB への Oracle の移行
+                          - name: Oracle の Azure SQL DB へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/oracle-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: Azure DB for PostgreSQL への Oracle の移行
+                          - name: Oracle の Azure DB for PostgreSQL へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/oracle-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: Azure SQL DW への Oracle の移行
+                          - name: Oracle の Azure SQL DW への再設計
                             href: 'https://datamigration.microsoft.com/scenario/oracle-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: DB2
                         items:
-                          - name: Azure SQL DB への DB2 の移行
+                          - name: DB2 の Azure SQL DB へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/db2-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: SAP ASE
                         items:
-                          - name: Azure SQL DB への SAP ASE の移行
+                          - name: SAP ASE の Azure SQL DB へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: アクセス
                         items:
-                          - name: Azure SQL DB への Access の移行
+                          - name: Access の Azure SQL DB へのリファクター
                             href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: Azure Database Migration Service (DMS) のチュートリアル
                     items:
@@ -461,9 +459,11 @@ items:
               - name: 概要
                 href: migrate/azure-best-practices/index.md
               - name: 複数のデータ センター
-                href: migrate/expanded-scope/multiple-datacenters.md
+                href: migrate/azure-best-practices/multiple-datacenters.md
+              - name: 複数のリージョン
+                href: migrate/azure-best-practices/multiple-regions.md
               - name: データ要件がネットワーク容量を超える
-                href: migrate/expanded-scope/network-capacity-exceeded.md
+                href: migrate/azure-best-practices/network-capacity-exceeded.md
               - name: 移行されたワークロードのネットワークの設定
                 href: migrate/azure-best-practices/migrate-best-practices-networking.md
               - name: 移行インフラストラクチャをデプロイする
@@ -472,8 +472,8 @@ items:
                 href: migrate/azure-best-practices/migrate-best-practices-costs.md
               - name: 移行のスケーリング
                 href: migrate/azure-best-practices/contoso-migration-scale.md
-              - name: ガバナンスとコンプライアンス
-                href: migrate/expanded-scope/governance-or-compliance.md
+              - name: ガバナンスまたはコンプライアンス
+                href: migrate/azure-best-practices/governance-or-compliance.md
           - name: プロセス改善
             items:
               - name: 概要
@@ -543,7 +543,7 @@ items:
                   - name: 振り返りの実施
                     href: migrate/migration-considerations/optimize/retrospective.md
           - name: 移行に関連するスキル
-            href: migrate/expanded-scope/suggested-skills.md
+            href: migrate/suggested-skills.md
       - name: イノベーション
         items:
           - name: 概要
@@ -594,14 +594,14 @@ items:
                         href: 'https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: データの一元管理
                     items:
-                      - name: Azure SQL Data Warehouse の作成とクエリ
+                      - name: Azure Synapse Analytics の SQL プールを作成し、クエリを実行する
                         href: 'https://docs.microsoft.com/azure/sql-data-warehouse/create-data-warehouse-portal?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure SQL Data Warehouse へのデータ読み込みのベスト プラクティス
+                      - name: データ ウェアハウスのデータ読み込みのベスト プラクティス
                         href: 'https://docs.microsoft.com/azure/sql-data-warehouse/guidance-for-loading-data?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Power BI を使用してウェアハウス データを視覚化する
                         href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-get-started-visualize-with-power-bi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: リファレンス アーキテクチャ - SQL Data Warehouse を使用した Enterprise BI
-                        href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                      - name: リファレンス アーキテクチャ - Azure Synapse Analytics を使用したエンタープライズ BI
+                        href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-synapse?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Azure Data Lake Storage を使用してエンタープライズ ビッグ データを管理する
                         href: 'https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: データ レイクとは
@@ -610,17 +610,17 @@ items:
                     items:
                       - name: SQL、Oracle、または NoSQl プラットフォームから Azure にオンプレミスのデータを移行する
                         href: innovate/best-practices/data-dms.md
-                      - name: クラウド データ ソースを SQL Data Warehouse と統合する
+                      - name: クラウド データ ソースを SQL Analytics データ ウェアハウスと統合する
                         href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: オンプレミスのデータを Azure SQL Data Warehouse に読み込む
-                        href: 'https://docs.microsoft.com/sql/integration-services/load-data-to-sql-data-warehouse?view=sql-server-ver15&toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                      - name: Azure Synapse Analytics にオンプレミス データを読み込む
+                        href: 'https://docs.microsoft.com/sql/integration-services/load-data-to-sql-data-warehouse&toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: データの統合 - データ ファクトリから OLAP
                         href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Stream Analytics を SQL Data Warehouse に取り込む
+                      - name: Azure Synapse Analytics での Azure Stream Analytics の使用
                         href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-integrate-azure-stream-analytics?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: リファレンス アーキテクチャ - 新しいフィードの取り込みと分析
                         href: 'https://docs.microsoft.com/azure/architecture/example-scenario/ai/newsfeed-ingestion?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure SQL Data Warehouse および PolyBase を使用したデータの仮想化
+                      - name: Azure Synapse Analytics SQL プールにデータを読み込む
                         href: 'https://docs.microsoft.com/azure/sql-data-warehouse/load-data-wideworldimportersdw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: アプリを使用した連携
                 items:
@@ -629,9 +629,9 @@ items:
                   - name: 市民開発者
                     items:
                       - name: PowerApps でのアプリの作成
-                        href: 'https://docs.microsoft.com/powerapps/maker?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        href: 'https://docs.microsoft.com/powerapps/maker/index?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Microsoft Flow を使用した最初のワークフローの作成
-                        href: 'https://docs.microsoft.com/flow/getting-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        href: 'https://docs.microsoft.com/power-automate/getting-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: AI Builder の使用
                         href: 'https://docs.microsoft.com/powerapps/use-ai-builder?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: 市民開発者向けのコンプライアンスとデータ プライバシーのソリューション
@@ -655,13 +655,13 @@ items:
                       - name: インテリジェンスを使用する
                         items:
                           - name: Visual Studio のコンピューター ビジョン
-                            href: 'https://docs.microsoft.com/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://docs.microsoft.com/azure/cognitive-services/computer-vision?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: テキストをリアルタイムで翻訳する
                             href: 'https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translate?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: LUIS を使用してセンチメントを理解する
-                            href: 'https://docs.microsoft.com/azure/cognitive-services/luis/luis-quickstart-intent-and-sentiment-analysis?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: 音声をテキストに変換する
-                            href: 'https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-dotnet-windows?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://docs.microsoft.com/azure/cognitive-services/luis/tutorial-publish-settings?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: マイクから音声を認識する
+                            href: 'https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstarts/speech-to-text-from-microphone?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: Bing Web 検索
                             href: 'https://docs.microsoft.com/azure/cognitive-services/bing-web-search/tutorial-bing-web-search-single-page-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: 画像からのビジュアル検索
@@ -742,7 +742,7 @@ items:
                     items:
                       - name: ASP.NET アプリケーションの監視
                         href: 'https://docs.microsoft.com/azure/azure-monitor/learn/quick-monitor-portal?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: .NET Core アプリケーションの監視
+                      - name: ASP.NET Core Web アプリケーションの監視
                         href: 'https://docs.microsoft.com/azure/azure-monitor/learn/dotnetcore-quick-start?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Node.js アプリケーションの監視
                         href: 'https://docs.microsoft.com/azure/azure-monitor/learn/nodejs-quick-start?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -765,13 +765,13 @@ items:
                       - name: PowerApps キャンバス アプリをモバイル上に拡張する
                         href: 'https://docs.microsoft.com/powerapps/user/run-app-client?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Microsoft Flow を拡張してモバイル エクスペリエンスを追加する
-                        href: 'https://docs.microsoft.com/flow/create-mobile-task-flow?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        href: 'https://docs.microsoft.com/power-automate/create-mobile-task-flow?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: セキュリティで保護されたモバイル エクスペリエンス
                         items:
                           - name: 顔、タッチ、またはパスコードを使用してモバイル レポートを保護する
                             href: 'https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: Intune でモバイル タスク フローをセキュリティで保護する
-                            href: 'https://docs.microsoft.com/flow/intune-support?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://docs.microsoft.com/power-automate/intune-support?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: Common Data Service のデータをセキュリティで保護する
                             href: 'https://docs.microsoft.com/power-platform/admin/wp-security?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: 複合現実
@@ -818,7 +818,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/machine-learning/service/concept-azure-machine-learning-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Hadoop R Scaler ソリューション
                         href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Azure SQL Data Warehouse での Azure Machine Learning
+                      - name: Azure Machine Learning を使用したデータの分析
                         href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: 予測
                     items:
@@ -1131,7 +1131,7 @@ items:
               - name: リージョン全体でのサービスの中断から回復する
                 href: 'https://docs.microsoft.com/azure/architecture/resiliency/recovery-loss-azure-region?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: データの破損または偶発的な削除から復旧する
-                href: 'https://docs.microsoft.com/azure/architecture/resiliency/recovery-data-corruption?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                href: 'https://docs.microsoft.com/azure/architecture/framework/resiliency/data-management?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
       - name: 管理の考慮事項
         items:
           - name: 概要
@@ -1240,12 +1240,14 @@ items:
             items:
               - name: 基本的なワークロードのデプロイ
                 href: infrastructure/virtual-machines/basic-workload.md
-      - name: クラウド運用モデル
-        href: reference/cloud-operating-model.md
-      - name: Azure エンタープライズ スキャフォールディング
-        href: reference/azure-scaffold.md
-      - name: 仮想データセンター (VDC)
-        href: reference/vdc.md
+      - name: 非推奨の参照
+        items:
+          - name: クラウド運用モデル
+            href: reference/cloud-operating-model.md
+          - name: Azure エンタープライズ スキャフォールディング
+            href: reference/azure-scaffold.md
+          - name: 仮想データセンター (VDC)
+            href: reference/vdc.md
       - name: Azure のしくみ
         href: getting-started/what-is-azure.md
       - name: Azure アーキテクチャ センター

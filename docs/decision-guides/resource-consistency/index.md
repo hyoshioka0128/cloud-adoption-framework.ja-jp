@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: df1299c091c994e143fdc8102590c823f2974ac2
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bb84d0f7ce6c29d52b1aebb54a456634cb942182
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708718"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892397"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -40,7 +40,7 @@ Azure では、[リソース グループ](https://docs.microsoft.com/azure/azur
 上記のいずれかの点について答えが_いいえ_の場合は、該当するリソースを別のリソース グループに配置する必要があります。
 
 > [!IMPORTANT]
-> リソース グループはリージョン固有でもありますが、リソースは、前述のようにまとめて管理されるため、同じリソース グループ内の異なるリージョンに配置されることが一般的です。 リージョンの選択の詳細については、[リージョンの決定ガイド](../regions/index.md)を参照してください。
+> リソース グループはリージョン固有でもありますが、リソースは、前述のようにまとめて管理されるため、同じリソース グループ内の異なるリージョンに配置されることが一般的です。 リージョンの選択の詳細については、[複数のリージョン](../../migrate/azure-best-practices/multiple-regions.md)を参照してください。
 
 ## <a name="deployment-consistency"></a>デプロイの整合性
 
