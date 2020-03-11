@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806851"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023849"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財務上の結果の例
 
@@ -55,6 +55,8 @@ ms.locfileid: "76806851"
 - **例 1:** ある会社のデータセンターは、IT の年間予算の大きな割合を消費しています。 IT 部門は、クラウドへの移行を実施することを選択し、そのデータセンター内の資産をサービスとしてのインフラストラクチャ (IaaS) ソリューションに移行して、3 年間のコスト削減を実現します。
 - **例 #2:** ある持ち株会社は、最近、新しい会社を買収しました。 この買収では、条件により、6 か月以内に現在のデータセンターから新しいエンティティを削除する必要があります。 これに従わない場合は、この持ち株会社に毎月 100 万米国ドルの罰金が生じます。 クラウドへの移行でデジタル資産をクラウドに移行すれば、古い資産の使用を迅速に停止することができます。
 - **例 3:** 消費者を対象としたある所得税対応の会社では、年間収益の 70% が年初の 3 か月間に発生します。 その年の残りの期間では、大規模な IT 投資は比較的休止状態となります。 クラウドへの移行により、IT 部門は、その 3 か月の間に必要なコンピューティング/ホスティングのキャパシティをデプロイすることができます。 残りの 9 か月間は、コンピューティングのフットプリントを縮小することによって、IaaS のコストを大幅に削減できます。
+
+<!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>例:Coverdell
 

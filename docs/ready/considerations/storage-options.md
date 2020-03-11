@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d6e15d465982c02e34ce1bbc89bd2289297d402a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 054537d4d1b9a83700ed0c6a1a8840682f04faa1
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799031"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892499"
 ---
 # <a name="review-your-storage-options"></a>ストレージ オプションを確認する
 
@@ -54,7 +54,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | LOB アプリケーションを実行している直接接続ストレージを含むベア メタル サーバーまたは VM (Hyper-V または VMware) があります。 | [Azure Disk Storage (Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types#premium-ssd) | 運用サービスの場合、Premium SSD オプションは、高い IOPS とスループットと共に一貫した低待機時間を提供します。 |
 | Web およびモバイル アプリをホストするサーバーがあります。 | [Azure Disk Storage (Standard SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types#standard-ssd) | 運用環境の CPU に依存した Web およびアプリ サーバーには (Premium SSD より低コストの) Standard SSD の IOPS とスループットで十分である可能性があります。 |
 | エンタープライズ SAN またはオールフラッシュ アレイ (AFA) があります。 | [Azure Disk Storage (Premium または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) <br/><br/> [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Ultra SSD は NVMe ベースであり、高い IOPS と帯域幅と共にミリ秒未満の待機時間を提供します。 Ultra SSD は、最大 64 TiB まで拡張できます。 Premium SSD か Ultra SSD かの選択は、ピーク待機時間、IOPS、およびスケーラビリティの要件によって異なります。 |
-| 高可用性 (HA) クラスター化サーバー (SQL Server FCI や Windows Server フェールオーバー クラスタリングなど) があります。 | [Azure Files (Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)<br/> [Azure Disk Storage (Premium または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | クラスター化されたワークロードには、フェールオーバーまたは HA のために同じ基になる共有ストレージをマウントする複数のノードが必要です。 Premium ファイル共有は、SMB 経由でマウントできる共有ストレージを提供します。 また、[パートナー ソリューション](https://azuremarketplace.microsoft.com/marketplace/apps/sios_datakeeper.sios-datakeeper-8?tab=Overview)を使用して、Premium SSD または Ultra SSD 上に共有ブロック ストレージを構成することもできます。 |
+| 高可用性 (HA) クラスター化サーバー (SQL Server FCI や Windows Server フェールオーバー クラスタリングなど) があります。 | [Azure Files (Premium)](/azure/storage/files/storage-files-planning#storage-tiers)<br/> [Azure Disk Storage (Premium または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | クラスター化されたワークロードには、フェールオーバーまたは HA のために同じ基になる共有ストレージをマウントする複数のノードが必要です。 Premium ファイル共有は、SMB 経由でマウントできる共有ストレージを提供します。 また、[パートナー ソリューション](https://azuremarketplace.microsoft.com/marketplace/apps/sios_datakeeper.sios-datakeeper-8?tab=Overview)を使用して、Premium SSD または Ultra SSD 上に共有ブロック ストレージを構成することもできます。 |
 | リレーショナル データベースまたはデータ ウェアハウスのワークロード (SQL Server や Oracle など) があります。 | [Azure Disk Storage (Premium または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Premium SSD か Ultra SSD かの選択は、ピーク待機時間、IOPS、およびスケーラビリティの要件によって異なります。 Ultra SSD ではまた、スケーラビリティのために記憶域プールを構成する必要がなくなるため、複雑さも削減されます ([詳細](https://azure.microsoft.com/blog/mission-critical-performance-with-ultra-ssd-for-sql-server-on-azure-vm)を参照)。 |
 | NoSQL クラスター (Cassandra や MongoDB など) があります。 | [Azure Disk Storage (Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types#premium-ssd) | Azure Disk Storage の Premium SSD オファリングは、高い IOPS とスループットと共に一貫した低待機時間を提供します。 |
 | 永続ボリュームを使用してコンテナーを実行しています。 | [Azure Files (Standard または Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure Disk Storage (Standard、Premium、または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | ファイル (RWX) およびブロック (RWO) ボリュームのドライバー オプションは、Azure Kubernetes Service (AKS) とカスタム Kubernetes の両方のデプロイに使用できます。 永続ボリュームは、Azure Disk Storage ディスクまたはマネージド Azure Files 共有のどちらかにマップできます。 永続ボリュームに対するワークロードの要件に基づいて、Premium または Standard オプションを選択します。 |
@@ -67,7 +67,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | **シナリオ** | **推奨される Azure サービス** | **推奨されるサービスに関する考慮事項** |
 |---|---|---|
 | Windows ファイル サーバーを使用しています。 | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure File Sync を使用すると、めったに使用されないデータをクラウド ベースの Azure ファイル共有に格納しながら、最もよく使用されるファイルをオンプレミスでキャッシュして高速なローカル アクセスを実現できます。 マルチサイト同期を使用して、ファイルを複数のサーバー間の同期を維持することもできます。 ワークロードをクラウドのみのデプロイに移行する予定がある場合は、Azure Files で十分である可能性があります。 |
-| エンタープライズ NAS (NetApp Filers や Dell-EMC Isilon など) があります。 | [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) <br/><br/> [Azure Files (Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers) | NetApp のオンプレミス デプロイがある場合は、Azure NetApp Files を使用してデプロイを Azure に移行することを検討してください。 Windows Server や Linux サーバーを使用しているか、それらのサーバーに移行しようとしているか、またはファイル共有の基本的な機能が必要な場合は、Azure Files を使用することを検討してください。 継続的なオンプレミス アクセスの場合は、クラウド階層化メカニズムを使用して、Azure File Sync で Azure ファイル共有をオンプレミスのファイル共有と同期させます。 |
+| エンタープライズ NAS (NetApp Filers や Dell-EMC Isilon など) があります。 | [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) <br/><br/> [Azure Files (Premium)](/azure/storage/files/storage-files-planning#storage-tiers) | NetApp のオンプレミス デプロイがある場合は、Azure NetApp Files を使用してデプロイを Azure に移行することを検討してください。 Windows Server や Linux サーバーを使用しているか、それらのサーバーに移行しようとしているか、またはファイル共有の基本的な機能が必要な場合は、Azure Files を使用することを検討してください。 継続的なオンプレミス アクセスの場合は、クラウド階層化メカニズムを使用して、Azure File Sync で Azure ファイル共有をオンプレミスのファイル共有と同期させます。 |
 | ファイル共有 (SMB または NFS) があります。 | [Azure Files (Standard または Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure Files の Premium 層か Standard 層かの選択は、IOPS、スループット、および待機時間の一貫性へのニーズによって異なります。 NetApp のオンプレミス デプロイがある場合は、Azure NetApp Files を使用することを検討してください。 アクセス制御リスト (ACL) とタイムスタンプをクラウドに移行する必要がある場合は、Azure File Sync が、これらのすべての設定を便利な移行パスとして Azure ファイル共有に移動することができます。 |
 | 数ペタバイトのデータのためのオンプレミスのオブジェクト ストレージ システム (Dell-EMC ECS など) があります。 | [Azure BLOB Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) |  Azure Blob Storage には、ワークロードのパフォーマンスとコストのニーズに適合するように、Premium、ホット、クール、アーカイブの各層が用意されています。 |
 | DFSR デプロイ、またはブランチ オフィスを処理するための別の方法があります。 | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure File Sync はマルチサイト同期を提供し、クラウド内の複数のサーバーとネイティブ Azure ファイル共有間でファイルの同期を維持します。 クラウド階層化を使用して、オンプレミスの固定のストレージ フットプリントに移動します。 クラウド階層化は、サーバーを関連するファイルのキャッシュに変換しながら、Azure ファイル共有内のコールド データをスケーリングします。 |
@@ -128,7 +128,7 @@ Azure ディスクの適切なソリューションの計画については、[A
 - Shared Access Signature を使って、Azure Storage 内のデータ オブジェクトに対する委任されたアクセス権を付与できます。
 - 分析を使用して、だれかが Azure のストレージにアクセスするときに使用している認証方法を追跡します。
 
-これらのセキュリティ機能は、Azure Blob Storage (ブロックとページ) および Azure Files に適用されます。 ストレージのセキュリティに関する詳細なガイダンスは、「[Azure Storage セキュリティ ガイド](https://docs.microsoft.com/azure/storage/common/storage-security-guide)」で入手してください。
+これらのセキュリティ機能は、Azure Blob Storage (ブロックとページ) および Azure Files に適用されます。 ストレージのセキュリティに関する詳細なガイダンスは、「[Azure Storage セキュリティ ガイド](https://docs.microsoft.com/azure/storage/blobs/security-recommendations)」で入手してください。
 
 [Storage Service Encryption](https://docs.microsoft.com/azure/storage/storage-service-encryption) は、保存時の暗号化を提供し、データを保護して組織のセキュリティとコンプライアンス コミットメントを満たします。 Storage Service Encryption は、すべての Azure リージョン内のすべてのマネージド ディスク、スナップショット、およびイメージに対して既定で有効になっています。 2017 年 6 月 10 日から、新しいマネージド ディスク、スナップショット、イメージ、および既存のマネージド ディスクに書き込まれた新しいデータはすべて、Microsoft によって管理されるキーを使用して保存時に自動的に暗号化されます。 詳細については、[マネージド ディスクの FAQ](https://docs.microsoft.com/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption) に関するページを参照してください。
 

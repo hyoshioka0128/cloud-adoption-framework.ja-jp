@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cd4009e8201cf6267e9da297ce13987cb025139e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 1f6d7545814f51f79a45b619f73dab857ac582d3
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171278"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891991"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>既存のデータ ソースの移行と最新化によってデータを収集する
 
@@ -57,5 +57,3 @@ Oracle と NoSQL の移行をサポートするために、特定の種類のソ
 |PostgreSQL|Azure Database for PostgreSQL|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MongoDB|Azure Cosmos DB Mongo API|Database Migration Service|オフライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|Azure Cosmos DB Mongo API|Database Migration Service|オンライン|[チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|さまざまなサービスとしてのプラットフォーム (PaaS) と IaaS オプション|パートナーのツールまたは Azure Migrate|オフラインまたはオンライン|[デシジョン ツリー](../../migrate/expanded-scope/data-oracle-migration.md)|
-|さまざまな NoSQL DB オプション|Cosmo DB オプションまたは IaaS オプション|手続き型の移行または Azure Migrate|オフラインまたはオンライン|[デシジョン ツリー](../../migrate/expanded-scope/data-no-sql-migration.md)|

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c326461435123b8093c86590baa4461f5048f4df
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: cede336255183abec06311137abfe4e023116c03
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170666"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341778"
 ---
 # <a name="engage-through-applications"></a>アプリケーションによる連携
 
@@ -105,7 +105,7 @@ ms.locfileid: "78170666"
 
 革新的なソリューションを提供するために必要な多くのイテレーションに備えるには、先を読むことが重要です。 たとえば、サーバーレス オプションを優先することによって、プロセス初期の運用負担を最小化します。 Azure では、[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) や[コンテナー](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql)をサーバーレス アプリケーションの選択肢に含めることができます。
 
-これと並行して、Azure では、同じくオーバーヘッドを削減するサーバーレスのトランザクション データという選択肢が提供されます。 [データベースの製品リスト](https://docs.microsoft.com/azure/#pivot=products&panel=databases)では、完全なデータ プラットフォームを必要とせずにデータをホストするためのオプションが提供されています。
+これと並行して、Azure では、同じくオーバーヘッドを削減するサーバーレスのトランザクション データという選択肢が提供されます。 [データベースの製品リスト](/azure/)では、完全なデータ プラットフォームを必要とせずにデータをホストするためのオプションが提供されています。
 
 ## <a name="next-steps"></a>次のステップ
 

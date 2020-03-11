@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 759bd75a134b1f5a5992f038a33693f632b86b03
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1bf3c79b95c748880e5d560003aa65acb1949c48
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801513"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891905"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,10 +47,3 @@ ms.locfileid: "76801513"
 その新しい成長は、リリースまたはイテレーション バックログへの変更で最も明確に表されます。
 
 チームが経験を得て教訓を学習すると、振り返りはリリースまたはイテレーションの終了をマークし、チームは[リリースおよびイテレーション バックログの調整](../assess/release-iteration-backlog.md)をテストされる新しいプロセスと実験が反映されるように調整します。 これにより、移行プロセスを通して次のイテレーションが開始されます。
-
-## <a name="next-steps"></a>次のステップ
-
-このコンテンツの「[セキュリティ保護と管理](../secure-and-manage/index.md)」のセクションは、読者が移行から運用への切り替えを準備するのに役立ちます。
-
-> [!div class="nextstepaction"]
-> [セキュリティで保護された監視および管理ツール](../secure-and-manage/index.md)
