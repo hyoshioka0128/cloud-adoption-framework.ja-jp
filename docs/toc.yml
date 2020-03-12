@@ -42,12 +42,14 @@ items:
             href: strategy/financial-models.md
           - name: クラウド会計を理解する
             href: strategy/cloud-accounting.md
-          - name: ポートフォリオのバランスを取る
-            href: strategy/balance-the-portfolio.md
       - name: 最初のクラウド導入プロジェクト
         href: strategy/first-adoption-project.md
       - name: その他の注意点
         items:
+          - name: 競合する優先順位のバランスを取る
+            href: strategy/balance-competing-priorities.md
+          - name: ポートフォリオのバランスを取る
+            href: strategy/balance-the-portfolio.md
           - name: グローバル市場
             href: strategy/global-markets.md
       - name: 戦略に関連するスキル
@@ -256,7 +258,7 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
               - name: VMware ホスト
                 items:
-                  - name: 概要
+                  - name: VMWare をリホストする場合の考慮事項
                     href: migrate/azure-best-practices/vmware-host.md
                   - name: 前提条件
                     items:
@@ -496,6 +498,8 @@ items:
                 items:
                   - name: 移行前に評価の前提条件を検証する ‐ R 調整の追加
                     href: migrate/migration-considerations/assess/index.md
+                  - name: ワークロードの分類
+                    href: migrate/migration-considerations/assess/classify.md
                   - name: 優先順位を一致させる
                     href: migrate/migration-considerations/assess/business-priorities.md
                   - name: ワークロードの準備状況を評価する
@@ -524,7 +528,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: ワークロードをステージする
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: テスト、最適化、昇格プロセス
+              - name: 昇格プロセス
                 items:
                   - name: 概要
                     href: migrate/migration-considerations/optimize/index.md
@@ -1194,6 +1198,8 @@ items:
     items:
       - name: クラウド導入フレームワークのロードマップ
         href: reference/index.md
+      - name: 新機能
+        href: reference/whats-new.md
       - name: 運用モデル
         items:
           - name: 概要

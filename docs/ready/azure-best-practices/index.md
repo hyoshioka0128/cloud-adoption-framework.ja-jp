@@ -1,18 +1,18 @@
 ---
 title: Azure 対応性のベスト プラクティス
-description: Azure 対応性のベスト プラクティスの概要。
+description: チームが Azure 環境を確立し、準備するためのベスト プラクティスと追加のガイダンスを提供する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d7889b4020d906bb452ded413f6ff5e603bb9881
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 8d44d3981824c9599151391cd3b7e3550ac31cd6
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892618"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093571"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 対応性のベスト プラクティス
 

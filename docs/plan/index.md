@@ -1,6 +1,6 @@
 ---
 title: クラウド導入計画を定義する
-description: クラウド導入計画を提議し、テクノロジを段階的に導入する
+description: Azure のクラウド導入フレームワークを使用して、定義済みのクラウド導入計画を使用して技術的な取り組みを先導する方法について学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 layout: LandingPage
-ms.openlocfilehash: 3e4c32ae4168a1558ca2384b70596d07d915f734
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e22c8332a02b985d733fd8e2e36f6873bd435c77
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800476"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092602"
 ---
 <!-- markdownlint-disable MD026 -->
 

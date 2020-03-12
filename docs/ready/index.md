@@ -1,6 +1,6 @@
 ---
 title: クラウド導入準備
-description: 後続のクラウド導入に合わせて環境を準備します
+description: クラウドに組み込む、またはクラウドに移行する予定のワークロードをホストするために、ランディング ゾーンを作成する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: cd4b29823636cfaa758d0568d3298bc146a00eb8
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892482"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092518"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Azure セットアップ ガイドでは、ランディング ゾーンの作成
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/migrate-landing-zone.md">
+        <a href="./landing-zone/first-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -59,7 +59,7 @@ Azure セットアップ ガイドでは、ランディング ゾーンの作成
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>最初のランディング ゾーン</h3>
-クラウド導入フレームワークの移行ランディング ゾーンのブループリントを評価します。 簡単な実験や学習のために、このブループリントを使用して、移行対応の最初のランディング ゾーンを作成します。
+環境に合わせてコードベースの開始点を確立するには、最も適切なランディング ゾーン オプションを選択します。
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@ Azure セットアップ ガイドでは、ランディング ゾーンの作成
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>ブループリントを拡張する</h3>
-ランディング ゾーンに関する考慮事項を使用し、ブループリント テンプレートに必要な変更を行います。
+                            <h3>ランディング ゾーンの展開</h3>
+最初のランディング ゾーンを展開することで、クラウド導入計画のプラットフォーム要件を満たします。
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ Azure セットアップ ガイドでは、ランディング ゾーンの作成
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>ベスト プラクティス</h3>
-現在と将来のランディング ゾーンを正しく構成するために、ベスト プラクティス セクションに照らしてランディング ゾーンの変更を検証します。
+現在と将来のランディング ゾーンを正しく構成するために、ベスト プラクティスに照らしてランディング ゾーンの変更を検証します。
                         </div>
                     </div>
                 </div>

@@ -1,18 +1,18 @@
 ---
 title: 移行前に評価の前提条件を検証する
-description: 移行前に評価の前提条件を検証する
+description: Azure のクラウド導入フレームワークを使用して、クラウドへの移行を開始する前に評価の前提条件を検証する方法について学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 30cc06e28477c70987c7e8dc23300e3e0a184dd2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222279"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094126"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>移行前に評価の前提条件を検証する
 
@@ -62,7 +62,7 @@ ms.locfileid: "78222279"
 
 ## <a name="next-steps"></a>次のステップ
 
-評価プロセスをおおまかに理解したうえで、[ビジネスの優先順位を調整する](./business-priorities.md)ことで、このプロセスを開始できます。
+評価プロセスをおおまかに理解したうえで、[ワークロードを分類する](./classify.md)ことで、このプロセスを開始できます。
 
 > [!div class="nextstepaction"]
-> [ビジネスの優先順位を調整する](./business-priorities.md)
+> [ワークロードの分類](./classify.md)
