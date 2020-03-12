@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 90b69a21f1643d4545b2ea5bce46d0c3c499d9a3
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 475b9e944188384a72cb3b8670a1ff607e7895f6
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708684"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140407"
 ---
+<!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
+
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 
 デプロイが単純なものでない限り、クラウドベースのリソースの整理は、IT 部門にとって最も重要なタスクの 1 つです。 リソースを編成する目的は、主に次の 3 つです。

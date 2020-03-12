@@ -9,18 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341761"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140288"
 ---
-# <a name="azure-management-guide-before-you-start"></a>Azure 管理ガイド:開始する前に
-
-
 ::: zone target="docs"
 
+# <a name="azure-management-guide-before-you-start"></a>Azure 管理ガイド:開始する前に
 
 > [!NOTE]
 > クラウド導入フレームワークでイノベーションを導くとき、このガイドが開始点となります。 これは Azure クイック スタート センターでも利用できます。 Azure クイック スタート センターへのリンクについては、この記事の後半にあるヒントを参照してください。

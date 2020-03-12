@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 99bcfee8f72250c156178117b368af62eb8a68c9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892414"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140690"
 ---
 # <a name="subscription-decision-guide"></a>サブスクリプション決定ガイド
 
@@ -55,7 +55,7 @@ Azure のデジタル資産が増加すると、要件を満たすように追�
 
 組織が新しいワークロードをクラウドに追加するときに、サブスクリプションのさまざまな所有権または職責の基本的な分離は、運用と非運用の管理グループの両方で複数のサブスクリプションになる可能性があります。 このアプローチでワークロードの分離が提供されますが、サブスクリプションのサブセット全体でポリシーを自動的に適用するために、継承モデルを大きく活用することはありません。
 
-![ワークロード分離パターン](../../_images/ready/management-group-hierarchy.png)
+![ワークロード分離パターン](../../_images/ready/management-group-hierarchy-v2.png)
 
 ### <a name="application-category-pattern"></a>アプリケーション カテゴリ パターン
 
