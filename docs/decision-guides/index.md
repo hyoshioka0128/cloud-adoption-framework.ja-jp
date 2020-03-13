@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 9552ba8b168e79f247916ae86f8e7721282baddb
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892448"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140237"
 ---
 # <a name="architectural-decision-guides"></a>アーキテクチャの決定ガイド
 
@@ -37,7 +37,7 @@ ms.locfileid: "78892448"
 
 [リソースのタグ付け](./resource-tagging/index.md):クラウドベースのリソースを整理して、請求モデル、クラウドの会計処理方法、管理をサポートし、リソース使用率とコストを最適化します。 リソースのタグ付けには、一貫した体系的な名前付け規則とメタデータ スキームが必要です。
 
-[ソフトウェア定義ネットワーク](./software-defined-network/index.md):迅速なデプロイと仮想化ネットワーク機能の変更を使用して、セキュリティで保護されたワークロードをクラウドにデプロイします。 ソフトウェア定義ネットワーク (SDN) は、アジャイル ワークフローをサポートし、リソースを分離し、クラウドベースのシステムを既存の IT インフラストラクチャと統合することができます。
+[ソフトウェア定義ネットワーク](./software-defined-network/index.md):迅速なデプロイと仮想化ネットワーク機能の変更を使用して、セキュリティで保護されたワークロードをクラウドにデプロイします。 ソフトウェア定義ネットワークは、アジャイル ワークフローをサポートし、リソースを分離し、クラウドベースのシステムを既存の IT インフラストラクチャと統合することができます。
 
 [暗号化](./encryption/index.md):組織のコンプライアンスとセキュリティ ポリシーの要件に合うように、暗号化を使用して機密データをセキュリティで保護します。
 
