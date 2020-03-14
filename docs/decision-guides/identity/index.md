@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5eb0ab5c264e8abf842f37e03b5c61b43ade9936
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 62a101b8c9dd957a8eae2279f77c5cf0c4381796
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337378"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312239"
 ---
+<!-- cSpell:ignore Kerberos NTLM SAML -->
+
 # <a name="identity-decision-guide"></a>ID 決定ガイド
 
 オンプレミス環境、ハイブリッド環境、クラウドのみの環境など、どのような環境であっても、IT 部門はリソースへのアクセス権を持つ管理者、ユーザー、およびグループを制御する必要があります。 ID 管理とアクセス管理 (IAM) サービスを使用すると、クラウドでアクセス制御を管理できます。
