@@ -1,18 +1,18 @@
 ---
-title: 優先順位付けされたワークロードに合わせて資産を調整する
-description: 優先順位付けされたワークロードに合わせて資産を調整する
+title: 優先順位付けされたワークロードに合わせて資産を調整します
+description: Azure 向けのクラウド導入フレームワークを使用して、優先順位付けされたワークロードに合わせて資産を調整する方法について学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0f005e6b770edb3c89cb033113fdd07e1cd5af0b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c7e90c1536b2911f8301b1a97f8731139976b4f1
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800527"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342067"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>優先順位付けされたワークロードに合わせて資産を調整します
 

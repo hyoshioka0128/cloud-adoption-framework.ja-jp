@@ -1,18 +1,18 @@
 ---
 title: 運用適合性レビューの確立
-description: 運用の基礎に関するガイダンス
+description: 運用環境でワークロードを実行することが原因で発生する問題を完全に理解するために、運用適合性レビューのプロセスを確立します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9bc4e2bb9b39a83ab8829ea4a12cd1bb019bf0c3
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807565"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341812"
 ---
 # <a name="establish-an-operational-fitness-review"></a>運用適合性レビューの確立
 

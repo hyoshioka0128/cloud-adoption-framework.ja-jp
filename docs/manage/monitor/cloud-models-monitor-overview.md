@@ -1,6 +1,6 @@
 ---
-title: 'クラウド監視ガイド: クラウド デプロイ モデルの監視戦略'
-description: Microsoft Azure で Azure Monitor または System Center Operations Manager を使用するタイミングを選択します
+title: クラウド デプロイ モデルの監視戦略
+description: Azure 向けのクラウド導入フレームワークを使用して、採用すべきクラウド管理の監視戦略について学習します。
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3b6434937816255269bda41c422099a07a25f5bc
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807633"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341829"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>クラウド監視ガイド: クラウド デプロイ モデルの監視戦略
 

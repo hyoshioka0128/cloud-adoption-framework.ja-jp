@@ -1,6 +1,6 @@
 ---
 title: Azure における運用のコンプライアンス
-description: 運用のコンプライアンスを高めることによってビジネスの安定性を確保します
+description: 運用のコンプライアンスを通じて、機能停止や脆弱性の可能性を小さくすることにより、ビジネスの安定性を確保する方法を説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 991c0f8423053b1a79f437b452b64c789c867c3e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: a76ca679b8c61e96b8bc8552b8ffbcaa0822e46a
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223556"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094723"
 ---
 <!-- cSpell:ignore WSUS -->
 

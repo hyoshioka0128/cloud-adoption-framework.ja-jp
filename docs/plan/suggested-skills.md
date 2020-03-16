@@ -1,18 +1,18 @@
 ---
 title: スキル準備パスの開始
-description: スキル準備パスの開始
+description: スキル準備パスを開始し、組織が関連する変化を理解して受け入れることができるよう支援することで、クラウド サービスの導入を牽引します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800153"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892686"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>スキル準備パスの開始
 
@@ -28,7 +28,7 @@ IT スタッフ メンバーは、クラウド ソリューションをサポー
 - **[準備完了](../ready/suggested-skills.md):** 今後の変更に対してビジネス、カルチャ、人、環境を準備するために必要なスキルを磨きます。
 
 - **導入:** 導入スキルはさまざまな技術的取り組みに合致します。
-  - **[移行](../migrate/expanded-scope/suggested-skills.md):** クラウド移行計画を実装するために必要なスキルを習得します。
+  - **[移行](../migrate/suggested-skills.md):** クラウド移行計画を実装するために必要なスキルを習得します。
   - **イノベーション:** 革新的な新しいソリューションを提供するために必要なスキルを習得します。
 
 - **運用:** クラウド導入の運用モデルに関連するスキルは、スキルを習得するためのさまざまな機会に合致します。

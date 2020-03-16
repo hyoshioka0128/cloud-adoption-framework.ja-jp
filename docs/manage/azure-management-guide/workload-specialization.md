@@ -1,6 +1,6 @@
 ---
-title: Azure のクラウド管理のためのワークロードの特殊化
-description: ワークロード固有のクラウド管理操作を改善する
+title: クラウド管理のための特殊化されたワークロード
+description: Azure 向けのクラウド導入フレームワークを使用して、クラウド管理のための特殊化されたワークロード運用について学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ee41e95a8481cd7caeb91d05d4b1420e357aa0f5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7108f90ac19e5a566e068e3292d2fab8bd1b7e3d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808143"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341727"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>クラウド管理のためのワークロードの特殊化
 

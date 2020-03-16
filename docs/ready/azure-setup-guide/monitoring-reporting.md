@@ -1,6 +1,6 @@
 ---
 title: Azure 内での監視とレポート
-description: Azure の管理環境で監視、レポート、およびアラートを設定する方法について説明します。
+description: Azure 向けのクラウド導入フレームワークを使用して、Azure の管理環境に用いる監視、レポート、アラートを設定する方法について学習します。
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 762c302bf52473ae917ab5c59c589225f1c5f0ac
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 1a45fda645231dcd9548c770dee0afd19b8df30c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023999"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093524"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 

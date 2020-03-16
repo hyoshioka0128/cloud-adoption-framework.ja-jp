@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223981"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094443"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Azure でクラウド移行の取り組みを始める
 
@@ -57,13 +57,13 @@ Azure 向けの Microsoft クラウド導入フレームワークを使用して
 
 クラウドの実装は、目標とするビジネス成果と変更管理の制御に合わせて、デジタル資産を移行して最新化するための反復的なプロセスです。 各反復の間に、戦略と計画に合わせてワークロードが移行または最新化されます。 制御と実行を最適化するために、[移行の方法論](../migrate/index.md)の評価フェーズ時に IaaS、PaaS、またはハイブリッドに関する意思決定が行われます。 こうした意志決定により、同じ方法論内の移行フェーズの各反復時に使用されるツールが決まります。 このモデルは、最小限の戦略と計画で使用することができます。 ただし、最大のビジネス成果を上げるためには、IT とビジネスの両方が、実装作業の指針となる明確な戦略と計画について一致している必要があります。
 
-![クラウド導入フレームワークのクラウド実装手法](../_images/operational-transformation-migrate.png)
+![クラウド導入フレームワークのクラウド実装手法](../_images/migrate/methodology.png)
 
 ここで重点的に取り組むのは、ワークロードの移行または最新化です。 ワークロードはインフラストラクチャ、アプリケーション、およびデータの集まりで、そのすべてによって一般的なビジネス目標または一般的なビジネス プロセスの実行がサポートされます。 ワークロードの例としては、基幹業務アプリケーション、人事給与ソリューション、CRM ソリューション、財務文書の承認ワークフロー、ビジネス インテリジェンス ソリューションなどが挙げられます。 また、さまざまなソリューションをサポートするデータ ウェアハウスなどの共有テクニカル リソースもワークロードに含まれる場合があります。 場合によっては、ワークロードが自己完結型のサーバー、アプリケーション、またはデータ プラットフォームなどの 1 つの資産で表されることもあります。
 
 クラウドへの移行は、多くの場合、IT の業務やコスト、複雑さを合理化する幅広いプログラム内の 1 つのプロジェクトとみなされます。 このクラウド実装手法は、一連のワークロード移行に含まれる技術的な取り組みをクラウド戦略と計画で示されている上位のビジネス価値に対応付けるのに役立ちます。
 
-**はじめに:** クラウド実装の開始点として、[Azure 移行ガイド](../migrate/azure-migration-guide/index.md)と [Azure セットアップ ガイド](../ready/azure-setup-guide/index.md)では、クラウドの実装を適切に行うために必要なツールと上位のプロセスについて説明しています。 これらのガイドを利用して最初のワークロードを移行すると、チームは計画プロセスの早い段階で最初の学習曲線を克服することができます。 その後、さらに[拡張スコープのチェックリスト](../migrate/expanded-scope/index.md)、[移行のベスト プラクティス](../migrate/azure-best-practices/index.md)、および[移行の考慮事項](../migrate/migration-considerations/index.md)を検討し、基準となるガイダンスを、自身の取り組みに固有の制約、プロセス、チーム構造、および目標と対応付けます。
+**はじめに:** クラウドの導入を開始するにあたっては、[Azure 移行ガイド](../migrate/azure-migration-guide/index.md)と [Azure セットアップ ガイド](../ready/azure-setup-guide/index.md)をご利用ください。クラウドの導入を適切に行うために必要なツールとプロセスの概要が説明されています。 これらのガイドを利用して最初のワークロードを移行すると、チームは計画プロセスの早い段階で最初の学習曲線を克服することができます。 その後、さらに[移行のベスト プラクティス](../migrate/azure-best-practices/index.md)および[移行の考慮事項](../migrate/migration-considerations/index.md)を検討し、基準となるガイダンスを、自身の取り組みに固有の制約、プロセス、チーム構造、目標と対応付けます。
 
 ## <a name="cloud-strategy-and-planning"></a>クラウド戦略と計画
 

@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898113"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094830"
 ---
+<!-- cSpell:ignore HDFS databox VHDX -->
+
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>移行作業中にデータ要件がネットワーク容量を超えている
 
 クラウド移行では、資産がレプリケートされ、既存のデータセンターとクラウド間でネットワーク経由で同期されます。 さまざまなワークロードの既存のデータ サイズ要件が、ネットワーク容量を超えることは珍しくありません。 このようなシナリオでは、移行プロセスはきわめて低速になったり、場合によっては完全に停止することがあります。 次のガイダンスは、ネットワーク制限に対処するソリューションを提供する [Azure 移行ガイド](../azure-migration-guide/index.md)の範囲を拡大します。
@@ -28,7 +30,7 @@ ms.locfileid: "78898113"
 
 **独立したデータ ストアのオフライン転送:** Azure Data Box とのオンラインおよびオフラインの両方のデータ転送の例が、次の図に示されています。 これらのアプローチは、ワークロードの移行の前にクラウドへ大量のデータを配布するために使用できます。 オフラインのデータ転送では、ソース データは Azure Data Box にコピーされ、続いて Azure Data Box が、Azure ストレージ アカウントにファイルまたは BLOB として転送するために物理的に Microsoft に配布されます。 このプロセスは、その他の移行作業の前に、特定のワークロードに直接関連付けられていないデータを配布するために使用できます。 そのようにすることで、ネットワーク上の制約内での移行を完了するために、ネットワーク経由で配布する必要のあるデータの量が減少します。
 
-このアプローチは、データ HDFS、バックアップ、アーカイブ、ファイル サーバー、アプリケーションなどの転送に使用されることがあります。 既存の技術的なガイダンスでは、このアプローチを使用して、[HDFS ストア](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)から、または [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)、[データ コピー サービス](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)を使用したディスクから Data Box にデータを転送する方法について説明します。
+このアプローチは、HDFS、バックアップ、アーカイブ、ファイル サーバー、アプリケーションなどからのデータ転送に使用されることがあります。 既存の技術的なガイダンスでは、このアプローチを使用して、[HDFS ストア](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)から、または [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)、[データ コピー サービス](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)を使用したディスクから Data Box にデータを転送する方法について説明します。
 
 大量のデータがオフライン転送を介して移動されるが、後からネットワーク経由でより低いスケールで同期される「シードおよびフィード」移行に Azure Data Box を使用する[サード パーティ パートナー ソリューション](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box)もあります。
 

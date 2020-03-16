@@ -1,18 +1,18 @@
 ---
 title: レプリケーション オプション
-description: ワークロードをクラウドに移行するタスクに重点を置いたクラウド移行内のプロセス。
+description: Azure 向けのクラウド導入フレームワークを使用して、レプリケーション プロセスを把握すると共に、クラウド移行になぜレプリケーションが必要かを理解します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: bf798a816d799ba856d8ea20b999de1240ac5284
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 790ef71ed6a3880b23a851adc0054666e16c0dde
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802142"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092841"
 ---
 # <a name="replication-options"></a>レプリケーション オプション
 

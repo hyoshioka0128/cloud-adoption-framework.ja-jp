@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225279"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023940"
 ---
-<!-- cSpell:ignore rodend subscope ITSM -->
+<!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 
 > [!NOTE]
-> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在はこの新しいフレームワークの「[準備完了](../ready/index.md) 」セクションに移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスの使用を開始するには、[準備の概要](../ready/index.md)、[初めてのランディング ゾーンの作成](../ready/azure-setup-guide/migration-landing-zone.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
+> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在はこの新しいフレームワークの「[準備完了](../ready/index.md) 」セクションに移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスの使用を開始するには、[準備の概要](../ready/index.md)、[初めてのランディング ゾーンの作成](../ready/landing-zone/migrate-landing-zone.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
 
 俊敏性と柔軟性を求めてパブリック クラウドを採用する企業がますます増えています。 これらの企業は、収益を生み出したり、ビジネスのリソース使用状況を最適化したりするために、クラウドの強みに依存しています。 Microsoft Azure は、企業がさまざまなワークロードやアプリケーションに対応するためにブロックのように組み立てることができる多数のサービスと機能を提供しています。
 
@@ -77,7 +77,7 @@ Azure の加入契約には、次の 3 つの一般的なパターンがあり�
 
   ![地域パターン](../_images/reference/geographic.png)
 
-これらのパターンのそれぞれに役割がありますが、**部署**パターンが使用されることが増えています。企業のコスト モデルをモデル化する際や、統制範囲を反映する際に柔軟性が高いためです。 Microsoft Core Engineering and Operations グループによって、**連邦**、**州**、および**地方**に関してモデル化された**部署**パターンの効果的なサブセットが作成されました。 詳細については、「[Organizing subscriptions and resource groups within the Enterprise (企業におけるサブスクリプションとリソース グループの編成)](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise)」を参照してください。
+これらのパターンのそれぞれに役割がありますが、**部署**パターンが使用されることが増えています。企業のコスト モデルをモデル化する際や、統制範囲を反映する際に柔軟性が高いためです。 Microsoft Core Engineering and Operations グループによって、**連邦**、**州**、および**地方**に関してモデル化された**部署**パターンの効果的なサブセットが作成されました。 詳細については、[企業におけるサブスクリプションとリソース グループの編成](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions)に関するページを参照してください。
 
 ### <a name="azure-management-groups"></a>Azure 管理グループ
 
@@ -314,7 +314,7 @@ Azure Automation、Event Grid、Azure CLI といった Microsoft 製ツールか
 
 ## <a name="templates-and-devops"></a>テンプレートと DevOps
 
-「自動化」のセクションで強調したように、組織の目標は、ソース管理されたテンプレートとスクリプトを介してリソースをプロビジョニングすること、さらに対話型での環境の構成を最小限にすることです。 継続的なデプロイのための制御された DevOps プロセスと "infrastructure as code" アプローチを組み合わせると、一貫性を保証することができ、環境内での誤差を減らすことができます。 ほぼすべての Azure リソースは、[Azure Resource Manager JSON テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy)を PowerShell または Azure クロス プラットフォーム CLI と、Hashicorp の Terraform (最上のサポートがあり、Azure Cloud Shell に統合される) などのツールと組み合わせてデプロイできます。
+「自動化」のセクションで強調したように、組織の目標は、ソース管理されたテンプレートとスクリプトを介してリソースをプロビジョニングすること、さらに対話型での環境の構成を最小限にすることです。 継続的なデプロイのための制御された DevOps プロセスと "infrastructure as code" アプローチを組み合わせると、一貫性を保証することができ、環境内での誤差を減らすことができます。 ほぼすべての Azure リソースは、[Azure Resource Manager JSON テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy)を PowerShell または Azure クロス プラットフォーム CLI と、HashiCorp の Terraform (最上のサポートがあり、Azure Cloud Shell に統合される) などのツールと組み合わせてデプロイできます。
 
 [Azure Resource Manager テンプレートを使用する場合のベスト プラクティス](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager)などの記事では、[Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) ツール チェーンを含む Azure Resource Manager テンプレートに DevOps アプローチを適用する場合について、ベスト プラクティスや実例から学んだ内容を説明しています。 特に運用環境と QA 環境に関しては、時間と労力を費やして、組織の要件に合うテンプレートのコア セットを開発し、DevOps ツール チェーン (Azure DevOps、Jenkins、Bamboo、TeamCity、Concourse など) を使用して継続的デリバリー パイプラインを開発してください。 [Azure クイック スタート テンプレート](https://github.com/Azure/azure-quickstart-templates)の大規模なライブラリが GitHub 上にあり、テンプレートの作成を開始するときに役立ちます。また、Azure DevOps を使用するとクラウドベースの配信パイプラインを迅速に作成できます。
 

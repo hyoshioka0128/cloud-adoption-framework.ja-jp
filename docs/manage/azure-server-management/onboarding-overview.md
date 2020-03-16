@@ -1,18 +1,18 @@
 ---
-title: Azure サーバー管理サービスへのオンボード
-description: Azure サーバー管理サービスへのオンボード
+title: Azure サーバー管理サービスのオンボード
+description: Azure 仮想マシンとオンプレミス サーバーの情報を使用して Azure サーバー管理サービスをオンボードします。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 48c0728c39457a2fa060679460a97c0ddca49c45
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dcb6be86ec0bcf231cef8286768d014ae7489fea
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808007"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341523"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>フェーズ 2:Azure サーバー管理サービスへのオンボード
 

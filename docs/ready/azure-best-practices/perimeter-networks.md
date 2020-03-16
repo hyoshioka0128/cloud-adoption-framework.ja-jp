@@ -1,6 +1,6 @@
 ---
 title: 境界ネットワーク
-description: '境界ネットワーク (別名: 非武装地帯 (DMZ)) で Azure 機能とサービスがどのように使用されるかについて説明します。'
+description: Azure 向けのクラウド導入フレームワークを使用して、組織に合った効果的な Azure のセットアップ方法を学習します。
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,13 +10,15 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 2aa561a7ffdcf43ffc56ad89849e933ea8abf186
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994216"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093232"
 ---
+<!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
+
 # <a name="perimeter-networks"></a>境界ネットワーク
 
 [境界ネットワーク][perimeter-network]により、クラウド ネットワークと物理的なオンプレミスのデータセンターのネットワークの間で安全な接続が可能になり、また、インターネットの双方向接続も可能になります。 これは非武装地帯 (DMZ) とも呼ばれています。
@@ -41,7 +43,7 @@ ms.locfileid: "76994216"
 
 通常、中央の IT チームとセキュリティ チームは、境界ネットワークを運用するための要件定義を担当します。
 
-![ハブ アンド スポーク ネットワーク トポロジの例][7]
+![ハブ アンド スポーク ネットワーク トポロジの例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
 上の図では、インターネットとオンプレミス ネットワークにアクセスする 2 つの境界の適用を実装する[ハブ アンド スポーク ネットワーク](./hub-spoke-network-topology.md)の例が示されています。 どちらの境界も DMZ ハブに存在します。 DMZ ハブでは、WAF と Azure Firewall インスタンスからなるファームを複数利用してスポーク仮想ネットワークを保護すると、多数の基幹業務 (LOB) をサポートするよう、インターネットへの境界ネットワークをスケールアップできます。 ハブは、必要に応じて VPN または Azure ExpressRoute 経由で接続することもできます。
 
@@ -107,40 +109,13 @@ Azure の一部の機能を使用して、インターネットからリソー�
 
 攻撃中および履歴目的の両方で使用するために、Azure Monitor ビューからリアルタイムのテレメトリを使用できます。 アプリケーション層の保護は、Azure Application Gateway で Web アプリケーション ファイアウォールを使用することによって追加できます。 IPv4 の Azure パブリック IP アドレスに対して保護が提供されます。
 
-<!-- images -->
-
-[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "コンポーネントのオーバーラップの例"
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "概要レベルのハブ アンド スポークの例"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "ハブとスポークのクラスター"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "スポーク間"
-[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "ハブ アンド スポークのブロック レベルの図"
-[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "ユーザー、グループ、サブスクリプション、およびプロジェクト"
-[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "インフラストラクチャの概要図"
-[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "インフラストラクチャの概要図"
-[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "VNet ピアリングと境界ネットワーク"
-[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "監視の概要図"
-[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "ワークロードの概要図"
-
 <!-- links -->
 
-[Limits]: https://docs.microsoft.com/azure/azure-subscription-service-limits
-[Roles]: https://docs.microsoft.com/azure/role-based-access-control/built-in-roles
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
-[DNS]: https://docs.microsoft.com/azure/dns/dns-overview
-[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
-[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
-[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
-[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
-[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
-[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
 [NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
 [AzFW]: https://docs.microsoft.com/azure/firewall/overview
-[SubMgmt]: https://docs.microsoft.com/azure/architecture/cloud-adoption/reference/azure-scaffold
-[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
@@ -149,15 +124,3 @@ Azure の一部の機能を使用して、インターネットからリソー�
 [AFDWAF]: https://docs.microsoft.com/azure/frontdoor/waf-overview
 [AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
 [AppGWWAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
-[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
-[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: https://docs.microsoft.com/azure/app-service/
-[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

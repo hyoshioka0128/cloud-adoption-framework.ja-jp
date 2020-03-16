@@ -1,18 +1,18 @@
 ---
 title: 移行の前のワークロードを設計する
-description: 移行の前のワークロードを設計する
+description: Azure 向けのクラウド導入フレームワークを使用して、クラウド移行の開始前に新しいアーキテクチャを定義する方法について学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b902f4b53784d30cd5de0b0eb77ed943e5e41aab
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: af77abda7d26e032549db0c04f535593fc906789
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802703"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094196"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>移行の前のワークロードを設計する
 

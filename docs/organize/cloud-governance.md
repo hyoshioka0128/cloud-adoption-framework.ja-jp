@@ -1,6 +1,6 @@
 ---
 title: クラウド ガバナンス機能
-description: クラウド ガバナンス機能の構成について説明します
+description: リスクとリスク許容がクラウド ガバナンス機能によってどのように適切に評価され、管理されるかを、Azure 向けのクラウド導入フレームワークを使用して学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 824ce55dd6dc78e0d4200efa9c2d1418b343ccb7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7569d0718f7b25625cc40887af81edda53ff0b1e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806902"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093901"
 ---
 # <a name="cloud-governance-capabilities"></a>クラウド ガバナンス機能
 

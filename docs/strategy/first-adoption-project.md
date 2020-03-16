@@ -1,18 +1,18 @@
 ---
 title: 最初のクラウド導入プロジェクト
-description: 最初のクラウド導入のプロジェクトの実行について説明します。
+description: Azure 向けのクラウド導入フレームワークを使用して、クラウド導入のプロセスと、クラウドにホストされているワークロードの操作のプロセスについて学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225253"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092507"
 ---
 <!-- markdownlint-disable MD026 -->
 

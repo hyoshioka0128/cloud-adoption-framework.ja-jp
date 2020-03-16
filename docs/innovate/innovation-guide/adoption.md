@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 95087aeda19eb87759bc09f605c42c706d79aac2
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171091"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891955"
 ---
 ::: zone target="docs"
 
@@ -124,8 +124,7 @@ API Management サービスを開くには、[Azure portal](https://ms.portal.az
 
 ### <a name="action"></a>アクション
 
-Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。
-これらのツールの使用を開始するには、[Azure DevOps](https://dev.azure.com) に移動します。
+Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps](https://dev.azure.com) を使用して開始してください。
 
 ::: zone-end
 

@@ -1,18 +1,18 @@
 ---
 title: Azure 基礎の概念
-description: Azure で使用されている基本的な概念と用語、概念どうしの関連性について説明します。
+description: Azure 向けのクラウド導入フレームワークを使用して、Azure で使用されている基本的な概念と用語、概念どうしの関連性について学習します。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d11e69014a9e46f916afb5bc8caf083c930ce725
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799150"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092582"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎の概念
 

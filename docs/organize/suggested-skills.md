@@ -1,6 +1,6 @@
 ---
 title: 技術スキルの構築
-description: 移行の準備フェーズ中におけるスキル準備パスの概要。
+description: 望ましい成果を達成するようチームを編成するために必要なスキルを組織がいかにして構築できるかを、Azure 向けのクラウド導入フレームワークを使用して学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7ba7d9044fcc26ecc152e4944dac4999c799bcf2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f1fa9c4705aaa437a0a532fd6463fe502f4df0bb
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800680"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092623"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>移行の準備フェーズ中のスキル準備パス
 

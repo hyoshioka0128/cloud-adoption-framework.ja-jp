@@ -1,6 +1,6 @@
 ---
 title: 移行インフラストラクチャをデプロイする
-description: Contoso が Azure への移行用に Azure インフラストラクチャを設定する方法について説明します。
+description: Azure への移行に備えた Azure インフラストラクチャの設定方法を、Azure 向けのクラウド導入フレームワークを使用し、わかりやすい例を通じて学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/1/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 34d2c96adeb476b3129464566a315c2ada9eab67
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223126"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092424"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -653,7 +653,7 @@ Azure Policy サービスは、リソースを評価して、適用されてい�
 
 ポリシーはポリシー定義を指定し、ポリシー割り当てはポリシーが適用される範囲を指定します。 範囲は、管理グループからリソース グループまでです。 ポリシーの作成と管理の[詳細をご覧ください](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)。
 
-Contoso は、いくつかのポリシーを開始する予定です。
+Contoso は、いくつかのポリシーを開始したいと考えています。
 
 - これには、リソースを EUS2 リージョンと CUS リージョンにのみ確実にデプロイできるようにするポリシーが必要です。
 - 承認された SKU だけに VM SKU を制限します。 目的は、高価な VM SKU が使われないようにすることです。

@@ -1,6 +1,6 @@
 ---
 title: Azure のインベントリと可視性
-description: Azure の管理環境に対してインベントリ、監視、レポート、アラートを設定する方法について説明します
+description: 運用データを収集するためにインベントリとその実行状態の可視性を提供するツールについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42c7ea0b9647015f8ac049710905c8349d073093
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: da3675484c04c9c02384fcbbc0337accff2aaffe
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808211"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092138"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure のインベントリと可視性
 
@@ -44,7 +44,7 @@ _インベントリと可視性_は、クラウド管理ベースラインの 3 
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-service-healthtabazureservicehealth"></a>[Azure Service Health](#tab/AzureServiceHealth)
+## <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 ::: zone-end
 
@@ -91,7 +91,7 @@ Azure Service Health には以下が含まれます。
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="log-analyticstablog-analytics"></a>[Log Analytics](#tab/Log-Analytics)
+## <a name="log-analytics"></a>[Log Analytics](#tab/Log-Analytics)
 
 ::: zone-end
 
@@ -120,7 +120,7 @@ Azure Service Health には以下が含まれます。
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-monitortabazure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
+## <a name="azure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
 
 ::: zone-end
 
@@ -166,7 +166,7 @@ Azure Monitor を調査するには、[Azure Portal](https://portal.azure.com/#b
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="onboard-solutionstabconfigure-solutions"></a>[ソリューションのオンボード](#tab/Configure-solutions)
+## <a name="onboard-solutions"></a>[ソリューションのオンボード](#tab/Configure-solutions)
 
 ::: zone-end
 

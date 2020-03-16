@@ -1,19 +1,21 @@
 ---
 title: データ オプションを確認する
-description: Azure ワークロードのデータ オプションを確認します。
+description: Azure 向けのクラウド導入フレームワークを使用して、ワークロードのホストに必要なデータ要件を判断する方法を学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 434fb0982b0749a6fcb117b86d8cf3bb6335f13a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5fdafdfd9bfccd86e7ddcc1ee08afdf561d4e680
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806885"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093745"
 ---
+<!-- cSpell:ignore HDFS -->
+
 # <a name="review-your-data-options"></a>データ オプションを確認する
 
 クラウド導入のためのランディング ゾーン環境を準備するとき、ワークロードをホストするためのデータ要件を決定する必要があります。 Azure のデータベース製品とサービスは、さまざまなデータ ストレージのシナリオと機能をサポートしています。 データ要件に対応するためのランディング ゾーン環境の構成方法は、ワークロードのガバナンス、技術的要件、ビジネス要件によって異なります。
@@ -47,17 +49,17 @@ ms.locfileid: "76806885"
 
 次の表は、いくつかの一般的な使用シナリオの要件と、その処理に推奨されるデータベース サービスを示しています。
 
-| **シナリオ** | **データ サービス** |
-|-----|-----|
-| NoSQL の選択をサポートする、グローバルに分散されたマルチモデル データベースが必要です。 | [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) |
-| 迅速なプロビジョニングと即座のスケーリングが可能な、インテリジェンスとセキュリティを組み込んだ、フル マネージド リレーショナル データベースが必要です。 | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) |
-| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MySQL リレーショナル データベースが必要です。 | [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) |
-| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな PostgreSQL リレーショナル データベースが必要です。 | [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) |
-| クラウドでエンタープライズ SQL Server アプリをホストし、サーバー OS を完全に制御する予定です。 | [SQL Server on Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
-| 広範なセキュリティが追加料金なしであらゆるレベルに組み込まれた、フル マネージドのエラスティック データ ウェアハウスが必要です。 | [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
-| Hadoop クラスターまたは HDFS データをサポートする Data Lake Storage リソースが必要です。 | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) |
-| 高速でスケーラブルなアプリケーションをサポートするために、高スループットで、一貫性があり、待機時間の短いデータ アクセスが必要です。 | [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) |
-| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MariaDB リレーショナル データベースが必要です。 | [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/overview) |
+| **シナリオ**                                                                                                                            | **データ サービス**                                                                                                                                  |
+|-----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| NoSQL の選択をサポートする、グローバルに分散されたマルチモデル データベースが必要です。                                                     | [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)                                                                        |
+| 迅速なプロビジョニングと即座のスケーリングが可能な、インテリジェンスとセキュリティを組み込んだ、フル マネージド リレーショナル データベースが必要です。 | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)                                               |
+| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MySQL リレーショナル データベースが必要です。           | [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview)                                                                       |
+| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな PostgreSQL リレーショナル データベースが必要です。      | [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)                                                             |
+| クラウドでエンタープライズ SQL Server アプリをホストし、サーバー OS を完全に制御する予定です。                                        | [SQL Server on Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
+| 広範なセキュリティが追加料金なしであらゆるレベルに組み込まれた、フル マネージドのエラスティック データ ウェアハウスが必要です。                               | [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is)                               |
+| Hadoop クラスターまたは HDFS データをサポートする Data Lake Storage リソースが必要です。                                         | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake)                                                                                |
+| 高速でスケーラブルなアプリケーションをサポートするために、高スループットで、一貫性があり、待機時間の短いデータ アクセスが必要です。                           | [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview)                                                    |
+| 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MariaDB リレーショナル データベースが必要です。         | [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/overview)                                                                   |
 
 ## <a name="regional-availability"></a>リージョン別の提供状況
 

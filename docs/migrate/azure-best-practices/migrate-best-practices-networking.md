@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225583"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892703"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス
 
@@ -40,7 +40,7 @@ VNet トポロジを計画する際は、IP アドレス空間の配置方法、
 
 移行の一環として VNet を作成するときは、VNet の IP アドレス空間を計画することが重要です。
 
-- 各 VNet に対して CIDR 範囲の /16 より大きいアドレス空間を割り当てないようにする必要があります。 VNet では 65536 個の IP アドレスを使用でき、/16 より小さいプレフィックスを割り当てると IP アドレスが失われます。 RFC 1918 で定義されているプライベート範囲内であっても、IP アドレスを無駄にしないことが重要です。
+- 各 VNet に対して CIDR 範囲の /16 より大きいアドレス空間を割り当てないようにする必要があります。 VNet では 65,536 個の IP アドレスを使用でき、/16 より小さいプレフィックス (131,072 個のアドレスを含む /15 など) を割り当てると、余剰分の IP アドレスは他で使用できなくなります。 RFC 1918 で定義されているプライベート範囲内であっても、IP アドレスを無駄にしないことが重要です。
 - VNet アドレス空間は、オンプレミス ネットワークの範囲と重複しないようにする必要があります。
 - ネットワーク アドレス変換 (NAT) を使用してはいけません。
 - アドレスが重複していると、ネットワークに接続できなくなったり、ルーティングが正常に動作しなくなる可能性があります。 ネットワークが重複する場合は、ネットワークを設計し直すか、ネットワーク アドレス変換 (NAT) を使用する必要があります。

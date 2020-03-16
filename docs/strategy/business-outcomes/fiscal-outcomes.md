@@ -1,6 +1,6 @@
 ---
 title: 財務上の結果の例
-description: 財務上の結果の例
+description: クラウド変革のコンテキストにおける財務上の結果を、Azure 向けのクラウド導入フレームワークを使用して理解します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 4f9ec4df29469f17f6c057f8d3c0308c66cf1ba5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023849"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092880"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財務上の結果の例
 

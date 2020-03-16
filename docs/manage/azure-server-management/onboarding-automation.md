@@ -1,18 +1,18 @@
 ---
 title: オンボーディングの自動化
-description: オンボーディングの自動化
+description: Azure サーバー管理サービスのデプロイを自動化して効率を高めることを検討している方は、オンボーディング サンプル ファイルをご活用ください。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808024"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094627"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 
@@ -36,7 +36,7 @@ Azure サーバー管理サービスのデプロイの効率を向上させる�
 
 このサンプルでは、次の表で説明するファイルが使用されています。 これらをカスタマイズして、独自のデプロイ シナリオをサポートできます。
 
-| ファイル名 | [説明] |
+| ファイル名 | 説明 |
 |-----------|-------------|
 | New-AMSDeployment.ps1 | オンボードを自動化するメインの調整スクリプト。 リソース グループ、場所、ワークスペース、Automation アカウントがまだ存在しない場合は、それらが作成されます。 この PowerShell スクリプトには、既存のサブスクリプションが必要です。 |
 | Workspace-AutomationAccount.json | ワークスペースと Automation アカウント リソースをデプロイする Resource Manager テンプレート。 |

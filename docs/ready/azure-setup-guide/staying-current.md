@@ -1,6 +1,6 @@
 ---
-title: 現在のクラウドのペースで Azure を最新の状態に保つ
-description: 現在のクラウドのペースで Azure を常に最新に保ち、変更を管理する方法を説明します。
+title: Azure を最新の状態に保つ
+description: Azure 向けのクラウド導入フレームワークを使用して、現在のクラウド パターンを常に最新の状態に保ち、変更を管理する方法について学習します。
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222052"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341982"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Microsoft Azure を最新の状態に保つ
 

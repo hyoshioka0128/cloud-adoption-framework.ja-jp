@@ -1,18 +1,18 @@
 ---
 title: 計画時のスキル準備パス
-description: 移行の計画フェーズ中におけるスキル準備パスの概要。
+description: Azure 向けのクラウド導入フレームワークを使用して、移行の計画フェーズにおけるスキル準備パスについて学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36e7957f8bcdcc7edc12f3a2e5309eac3d551fb5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798113"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092838"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
 

@@ -1,18 +1,18 @@
 ---
 title: 合理化決定を見直す
-description: 合理化決定を見直す
+description: Azure 向けのクラウド導入フレームワークを使用して、合理化に関する決定を再確認し、企業との対話をスムーズに進めるための準備を行う方法について学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 47efac0b85198e95a76d40ad053a33c8051837ea
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e38616b97f5026bd66de510cac12932290e276ba
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800187"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093275"
 ---
 # <a name="review-rationalization-decisions"></a>合理化決定を見直す
 

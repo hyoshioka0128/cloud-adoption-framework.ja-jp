@@ -1,6 +1,6 @@
 ---
-title: Azure でのガバナンス、セキュリティ、コンプライアンス
-description: Azure 環境のガバナンス、セキュリティ、およびコンプライアンスを設定する方法について説明します。
+title: Azure のガバナンス、セキュリティ、コンプライアンス
+description: Azure 向けのクラウド導入フレームワークを使用して、Azure 環境のガバナンス、セキュリティ、コンプライアンスを設定する方法について学習します。
 author: tvuylsteke
 ms.author: kfollis
 ms.date: 09/27/2019
@@ -9,18 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c38edb9a5723d99974f5f472453bf4b88ee07bb3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 89de72cb85cc4c763d443ae9cc1114b648ab72c4
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799609"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024087"
 ---
+<!-- cSpell:ignore tvuylsteke >
+
+<!-- markdownlint-disable MD024 MD025 -->
+
 # <a name="governance-security-and-compliance-in-azure"></a>Azure でのガバナンス、セキュリティ、コンプライアンス
 
 企業のポリシーを確立し、ガバナンス戦略を策定するときに、Azure Policy、Azure Blueprints、Azure Security Center などのツールとサービスを使用して、組織のガバナンスに関する意思決定を実施したり自動化したりすることができます。 ガバナンスの計画を開始する前に、[ガバナンス ベンチマーク ツール](https://cafbaseline.com)を使用して、組織のクラウド ガバナンスへのアプローチにおけるギャップを識別します。 ガバナンス プロセスを策定する方法の詳細については、[Azure 向けのクラウド導入フレームワークのガバナンスに関するガイダンス](../../govern/index.md)記事を参照してください。
 
-# <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
+# <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
 Azure Blueprints によってクラウド アーキテクトや中央の情報技術グループは、組織の標準、パターン、要件を実装および順守した反復可能な一連の Azure リソースを定義できます。 Azure Blueprints を使用すると、開発チームは新しい環境を迅速に構築して立ち上げることができます。新しい環境は組織のコンプライアンスに従って構築され、ネットワークなどの一連の組み込みコンポーネントを含んでいるという確信が得られるため、開発とデリバリーにかかる時間を短縮できます。
 
@@ -41,8 +45,8 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 1. **[ブループリントの作成]** セクションで、 **[作成]** を選択します。
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
 1. **ブループリントの名前**を入力し、適切な**定義の場所**を選択します。
-1. ページの下部の **[次へ:アーティファクト >>]** をクリックし、ブループリントに含まれるアーティファクトを確認します。
-1. **[下書きの保存]** をクリックします。
+1. **[次へ :アーティファクト >>]** 選択し、ブループリントに含まれるアーティファクトを確認します。
+1. **[下書きの保存]** を選択します。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -54,8 +58,8 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 1. **[ブループリントの作成]** セクションで、 **[作成]** を選択します。
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
 1. **ブループリントの名前**を入力し、適切な**定義の場所**を選択します。
-1. ページの下部の **[次へ:アーティファクト >>]** をクリックし、ブループリントに含まれるアーティファクトを確認します。
-1. **[下書きの保存]** をクリックします。
+1. **[次へ :アーティファクト >>]** 選択し、ブループリントに含まれるアーティファクトを確認します。
+1. **[下書きの保存]** を選択します。
 
 ::: zone-end
 
@@ -95,7 +99,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 
 ::: zone-end
 
-# <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+# <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 Azure Policy は、ポリシーの作成、割り当て、および管理に使用するサービスです。 これらのポリシーは、リソースにルールを適用して、それらのリソースが会社の標準とサービス レベル アグリーメントに準拠した状態に保たれるようにします。 Azure Policy では、実装するポリシーに準拠していないリソースを識別するためにリソースがスキャンされます。 たとえば、環境内で特定のサイズの仮想マシン (VM) のみを許可するポリシーを作成できます。 このポリシーを実装する場合は、お使いの環境内の既存の VM と新たにデプロイした VM を評価します。 ポリシーの評価では、監視とレポートに使用するためのコンプライアンス イベントが生成されます。
 
@@ -129,12 +133,12 @@ Azure Policy は、ポリシーの作成、割り当て、および管理に使�
 
 詳細については、次を参照してください。
 
-- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/governance/policy)
 - [クラウド導入フレームワーク:ポリシー適用の意思決定ガイド](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Azure Security Center は、ガバナンス戦略における重要な役割を果たします。 次の機能により、セキュリティを常に把握できます。
 

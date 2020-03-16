@@ -1,6 +1,6 @@
 ---
 title: 最適化およびレベル上げ
-description: Azure 移行ガイドのこの部分では、ソリューションの設計の確認、サービスの適切なサイズ設定、コストの分析など、最適化の領域について説明します。
+description: ソリューションの確認方法について説明します。ソリューションの設計、サービスの適切なサイズ設定、コストの分析など、考えられる最適化の領域について取り上げます。
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3b7d6437e9e066497f55f8ce0bd601e7c53854f0
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: ab8ff4d3b73e38a0d88455fa675870da6a7f22ef
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892465"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094807"
 ---
 <!-- cSpell:ignore Fservers Fdatabases -->
 

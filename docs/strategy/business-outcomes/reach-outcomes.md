@@ -1,18 +1,18 @@
 ---
 title: グローバルな展開の成果の例
-description: グローバルな展開の成果の例
+description: Azure 向けのクラウド導入フレームワークを使用して、クラウド変革のコンテキストにおけるグローバルな展開の成果を理解します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 94129d863d524b6ff618835c271c14756487e587
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: c4fa1d608f62497869c0498ba82cbdce649af1e2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225239"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092464"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>グローバルな展開の成果の例
 

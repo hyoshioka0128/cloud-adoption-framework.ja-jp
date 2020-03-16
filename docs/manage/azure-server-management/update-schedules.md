@@ -1,18 +1,18 @@
 ---
 title: 更新スケジュールの作成
-description: Azure portal または新しい PowerShell コマンドレット モジュールを使用して、更新スケジュールを管理します。
+description: Azure portal または新しい PowerShell コマンドレット モジュールで更新スケジュールを管理する方法を、Azure 向けのクラウド導入フレームワークを使用して学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2f049fce8c109c3028fa84c5822c0eb1053023bb
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: fd812b40ee6d55e543f6b8f61a8af32e34c2e2e2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173348"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094497"
 ---
 # <a name="create-update-schedules"></a>更新スケジュールの作成
 

@@ -1,18 +1,18 @@
 ---
 title: ワークロードの準備状況を評価する
-description: ワークロードをクラウドに移行するタスクに重点を置いたクラウド移行内のプロセス。
+description: クラウドに移行するワークロードの準備状況を評価するために何が必要かを説明します。 すべての資産とそれに関連する依存関係を検証する方法について見ていきましょう。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c695d83c4e04b3cd837ff5916e47c128f17a1d34
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3065dfa39af189c5275f966e758fe49004f4de00
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802550"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094781"
 ---
 # <a name="evaluate-workload-readiness"></a>ワークロードの準備状況を評価する
 

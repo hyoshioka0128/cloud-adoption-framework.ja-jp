@@ -1,6 +1,6 @@
 ---
 title: Azure リソースの効果的な整理
-description: 管理を容易にするために Azure リソースを効果的に編成するためのベスト プラクティス。
+description: Azure リソースを効果的に編成して管理を容易にするうえで必要なベスト プラクティスについて説明します。
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567760"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024019"
 ---
+<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+
 # <a name="organize-your-azure-resources"></a>Azure リソースの整理
 
 クラウドベースのリソースを整理することは、ワークロードに関連するコストをセキュリティ保護、管理、および追跡するために不可欠です。 お使いのリソースを整理するために、Azure プラットフォーム内での管理階層を使用し、十分に考慮された名前付け規則を実践して、リソースのタグ付けを適用してください。
@@ -156,7 +158,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 - **メタデータとドキュメント:** 管理者は、"ProjectOwner" などのタグを適用して、操作しているリソースに関する詳細を簡単に確認できます。
 - **自動化:** "ShutdownTime" や "DeprovisionDate" のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
-- **コストの最適化:** コストを担当するチームとリソースにリソースを割り当てることができます。 Azure Cost Management では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金を報告できます。
+- **コストの最適化:** Azure Cost Management では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金をレポートできます。
 
 各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 

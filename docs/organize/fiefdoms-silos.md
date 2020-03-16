@@ -1,6 +1,6 @@
 ---
 title: サイロと封土
-description: サイロと封土のアンチ パターンについて理解します。
+description: 組織において成長の思考様式を阻む可能性のあるアンチパターンについて説明します。 具体的に取り上げるアンチパターンは、サイロと封土です。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 396e183e0e0af791c514e29b755c0b04a791f3a1
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222296"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093800"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>組織のアンチパターン:サイロと封土
 

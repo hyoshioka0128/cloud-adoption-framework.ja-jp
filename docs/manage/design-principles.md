@@ -1,18 +1,18 @@
 ---
-title: 設計の原則と高度な運用の適用
-description: 設計の原則と高度な運用の適用
+title: 設計の原則と高度な運用
+description: サポート対象のすべてのワークロードに対して最小限のビジネス コミットメントが提供されるオファリングを作成するための設計の原則と高度なオプションの適用について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 16762a0eae366c3bf1cd578faaf52df60e6c97b1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a5861b23e5cc408957f922472dd6ee863c7c13fa
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807684"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341047"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>設計の原則と高度な運用の適用
 

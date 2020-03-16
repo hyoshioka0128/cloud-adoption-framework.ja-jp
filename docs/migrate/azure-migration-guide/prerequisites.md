@@ -1,6 +1,6 @@
 ---
 title: Azure に移行するための前提条件
-description: Azure に移行するための前提条件
+description: Azure への移行に備える方法と移行プロジェクトを成功させるために必要な前提条件を、Azure 向けのクラウド導入フレームワークを使用して理解します。
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9baf2c9fdd307125e80fa77d8b2be54bec15b931
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806987"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094795"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76806987"
 
 このセクションのリソースは、Azure への移行のために現在の環境を準備するために役立ちます。
 
-# <a name="overviewtaboverview"></a>[概要](#tab/Overview)
+# <a name="overview"></a>[概要](#tab/Overview)
 
 Azure に移行する理由には、従来のハードウェアに関連したリスクの排除、資本支出の削減、データセンターの占有領域の解放、投資収益率 (ROI) の迅速な実現などがあります。
 
@@ -58,7 +58,7 @@ Azure に移行する理由には、従来のハードウェアに関連した�
 > - [Windows Server 2008 および Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008)。
 > - [SQL Server 2008 および SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008)。
 
-# <a name="understand-migration-approachestabapproach"></a>[移行方法を理解する](#tab/Approach)
+# <a name="understand-migration-approaches"></a>[移行方法を理解する](#tab/Approach)
 
 アプリケーションを Azure に移行するために使用する戦略およびツールは、お客様のビジネスの動機、テクノロジの要件、およびタイムラインによって大きく異なり、移行する実際のワークロードと資産 (インフラストラクチャ、アプリ、データ) についての深い理解にも左右されます。
 
@@ -73,7 +73,7 @@ Azure に移行する理由には、従来のハードウェアに関連した�
 - [クラウド導入フレームワークの移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)
 - [合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklisttabchecklist"></a>[計画チェックリスト](#tab/Checklist)
+# <a name="planning-checklist"></a>[計画チェックリスト](#tab/Checklist)
 
 移行を開始する前に、いくつかの前提条件を満たす必要があります。 これらのアクティビティの正確な詳細は、移行する環境によって異なります。 一般に、以下のチェックリストが適用されます。
 

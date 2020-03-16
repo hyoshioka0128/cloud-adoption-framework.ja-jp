@@ -1,6 +1,6 @@
 ---
 title: 各ワークロードを評価し、計画を調整する
-description: Azure 移行ガイドのこのセクションでは、環境を評価して、移行の対象と、検討する必要がある移行方法を決定することができます。
+description: Azure 向けのクラウド導入フレームワークを使用して、ご利用の環境の移行に対する適合性と検討すべき方法を評価します。
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 40e62a05101e14fcd7507011d521521e58920ffc
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 47cfc7bdbf823ad8a785705e361ba8fa1a44894f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225546"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094330"
 ---
 # <a name="assess-each-workload-and-refine-plans"></a>各ワークロードを評価し、計画を調整する
 

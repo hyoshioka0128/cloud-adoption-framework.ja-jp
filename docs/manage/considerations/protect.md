@@ -1,18 +1,18 @@
 ---
-title: 保護と回復 - クラウドの管理と運用
-description: 保護と回復 - クラウドの管理と運用
+title: クラウド管理における保護と回復
+description: ワークロードの停止のリスクに備えて準備することの重要性について説明します。 そのように準備しておくことで、チームは障害を迅速に検出し、復旧までの期間を短縮することができます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c9733c238903e2fa66f76337bb255c4cfda33896
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f46fb65572d319e2dc9a4a779cd205bbe476908b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807718"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78340997"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>クラウド管理における保護と回復
 

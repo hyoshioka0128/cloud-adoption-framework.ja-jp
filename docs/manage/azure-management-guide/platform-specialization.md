@@ -1,6 +1,6 @@
 ---
-title: Azure のクラウド管理のためのプラットフォームの特殊化
-description: プラットフォーム固有のクラウド管理操作を改善します。
+title: クラウド管理のための特殊化されたプラットフォーム
+description: Azure 向けのクラウド導入フレームワークを使用して、自動修復やシステム設計の改善を含む、プラットフォーム固有のクラウド管理操作を改善します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 12643d3e26620760e9a13e29936617bfb246fe29
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223519"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341744"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>クラウド管理のためのプラットフォームの特殊化
 

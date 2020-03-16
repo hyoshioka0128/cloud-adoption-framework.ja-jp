@@ -1,18 +1,18 @@
 ---
 title: クラウド会計とは
-description: クラウド会計の概念の説明
+description: クラウド移行への取り組みに伴う IT の一般的なクラウド会計モデルについて、Azure 向けのクラウド導入フレームワークを使用して理解します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806817"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092871"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "76806817"
 
 多くの場合、IT をコスト センターとして考えることは正確です。 従来の IT 会計モデルでは、IT によりすべての IT 資産の購買力が統合されます。 [財務モデル](./financial-models.md)に関する記事で指摘したように、この購買力の統合には、ソフトウェアのライセンス、繰り返し発生する CRM ライセンスの料金、従業員のデスクトップの購入、その他の多額のコストが含まれます。
 
-IT がコスト センターとして機能するときは、IT の知覚価値の大部分は調達管理のレンズを通して見られます。 この認識によって、取締役会やその他の役員が、IT がもたらす真の価値を理解することは難しくなります。 調達コストは、組織によって加えられたその他の価値を上回ることで、IT の見方を歪める傾向があります。 IT がしばしば CFO や COO の責任としてにひとくくりに扱われるのは、この見方が原因です。 この IT の見方は限定的であり、短絡的でもあります。
+IT がコスト センターとして機能するときは、IT の知覚価値の大部分は調達管理のレンズを通して見られます。 この認識によって、取締役会やその他の役員が、IT がもたらす真の価値を理解することは難しくなります。 調達コストは、組織によって加えられたその他の価値を上回ることで、IT の見方を歪める傾向があります。 IT がしばしば最高財務責任者や最高業務責任者の責任としてにひとくくりに扱われるのは、この見方が原因です。 この IT の見方は限定的であり、短絡的でもあります。
 
 ## <a name="central-it-accounting-profit-center-model"></a>中央 IT 会計 (利益センター モデル)
 

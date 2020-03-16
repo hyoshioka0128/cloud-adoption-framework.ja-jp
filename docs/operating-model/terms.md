@@ -1,6 +1,6 @@
 ---
 title: 運用モデルの用語
-description: 運用モデルに関連する用語を理解します。
+description: 運用モデルに関連した用語について説明します。 運用モデルが企業計画という、より大きなテーマにどのように適合するかが、用語によって理解しやすくなります。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
@@ -8,18 +8,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 650ee5e075382de5da855a6f90aac86a8f4706b7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 784a98597439b995b756291247c9142ab5ca5372
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801207"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092752"
 ---
 # <a name="operating-model-terminology"></a>運用モデルの用語
 
 運用モデルという用語には多くの定義があります。 この紹介記事では、運用モデルに関連する用語を説明します。 クラウドに関連する運用モデルを理解するには、まず運用モデルが企業計画のより大きなテーマにどのように適合するかを理解する必要があります。
 
-## <a name="terms"></a>Terms
+## <a name="terms"></a>用語
 
 **ビジネス モデル:** ビジネス モデルでは、企業価値 (「ビジネスが価値を提供するために「何を」するのか」) およびミッション/ビジョン ステートメント (「なぜ」ビジネスがそのように価値を付加することを選んだのか) を定義する傾向があります。 最低限のこととして、ビジネス モデルでは "何を" と "なぜ" を財務予測の形で表せるようにする必要があります。 ビジネス モデルがこれらの基本的なリーダーシップの原則をどの程度超えるかについては、さまざまな考え方があります。 ただし、健全な運営モデルを作成するには、ビジネスモデルに、方向性のある目標を設定するための上位レベルのステートメントを含める必要があります。 これらの目標を、進捗状況を追跡するためのメトリックまたは KPI で表すことができればさらに効果的です。
 

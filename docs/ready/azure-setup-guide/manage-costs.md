@@ -1,6 +1,6 @@
 ---
 title: Azure リソースのコストと課金を管理する
-description: 請求書の内容を理解し、Azure リソースの予算と支払を設定する方法について説明します。
+description: Azure 向けのクラウド導入フレームワークを使用して請求書の内容を理解し、Azure リソースの予算と支払を設定する方法について学習します。
 author: dchimes
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4f0f0d900f75338a33b1873b8d0eac6d91835256
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0f91ed2c09b2511304a59bc8768507f737ec6c76
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799524"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024031"
 ---
+<!-- cSpell:ignore dchimes -->
+
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Azure リソースのコストと課金を管理する
 
 コスト管理とは、ビジネスに関連するコストを効率的に計画して制御するプロセスです。 コストの管理タスクは、一般に、財務、管理、およびアプリのチームが実行します。 Azure Cost Management は、コストを考慮に入れて計画を立てる助けになります。 また、効果的にコストを分析し、クラウド支出を最適化する措置を取ることにも役立ちます。

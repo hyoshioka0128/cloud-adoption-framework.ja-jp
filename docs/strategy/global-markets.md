@@ -1,18 +1,18 @@
 ---
-title: グローバル マーケットの決定の影響を理解する
-description: グローバル マーケットの概念の説明
+title: グローバル マーケットの決定の影響
+description: グローバル マーケットの決定がクラウドへの変革過程に及ぼす影響を、Azure 向けのクラウド導入フレームワークを使用して理解します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: af3c9d8b155d2c6a5e861e64b6472effbafcbb6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 267408d4634bbed9c6bb9c8884e2af395f5df4d9
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798164"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337828"
 ---
 <!-- markdownlint-disable MD026 -->
 
