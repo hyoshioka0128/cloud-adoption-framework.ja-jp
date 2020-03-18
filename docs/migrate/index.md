@@ -1,6 +1,6 @@
 ---
 title: クラウド移行
-description: クラウド導入フレームワークにおけるクラウド移行
+description: クラウドに移行するワークロードを評価、移行、最適化、セキュリティ保護、管理するための反復プロセスを構築する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 90a9c69b311f1d4687d2691af13c3b51a7b6f813
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: c4ee7491fb5fbfa549dfe82c82e720f51188a25c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337797"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312307"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -21,12 +21,12 @@ ms.locfileid: "78337797"
 
 ## <a name="getting-started"></a>作業の開始
 
-クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークからは、次の 5 つの演習が提案されます。
+クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークでは次の演習を推奨しています。
 
 <!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/prerequisites.md?tabs=Checklist">
+        <a href="./azure-migration-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -36,27 +36,8 @@ ms.locfileid: "78337797"
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>移行の前提条件</h3>
-ランディング ゾーンがデプロイされており、Azure に移行する最初のいくつかのワークロードをホストする準備ができていることを検証します。 クラウド導入戦略とクラウド導入計画が作成されていない場合、両方の作業が進行中であることを検証します。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
                             <h3>最初のワークロードを移行する</h3>
-Azure 移行ガイドを活用し、最初のワークロードを段階的に移行します。 これは、導入の規模拡大に必要なツールや手法に慣れるのに役立ちます。
+「Azure 移行ガイド」を活用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。
                         </div>
                     </div>
                 </div>
@@ -70,12 +51,12 @@ Azure 移行ガイドを活用し、最初のワークロードを段階的に�
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>拡大移行シナリオ</h3>
-範囲拡大チェックリストを活用し、将来の状態のアーキテクチャ、移行プロセス、ランディング ゾーン構成、移行ツール決定に合わせた変更が必要になるシナリオを見つけます。
+                            <h3>移行シナリオ</h3>
+追加の移行ツールとアプローチを利用して、追加の移行シナリオに対処します。
                         </div>
                     </div>
                 </div>
@@ -89,12 +70,12 @@ Azure 移行ガイドを活用し、最初のワークロードを段階的に�
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>ベスト プラクティス</h3>
-拡大範囲またはワークロード/アーキテクチャ固有の移行手法が正しく実装されるよう、ベスト プラクティス セクションに対して変更を検証します。
+一貫したベスト プラクティスの適用によって、移行の一般的なニーズに対処します。
                         </div>
                     </div>
                 </div>
@@ -108,12 +89,12 @@ Azure 移行ガイドを活用し、最初のワークロードを段階的に�
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/5.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>プロセス改善</h3>
-移行はプロセス負荷の高い行為です。 移行作業の増加に応じて、移行に関する考慮事項セクションを使用し、プロセスのさまざまな側面を評価し、成熟させてください。
+移行はプロセス負荷の高い行為です。 移行作業の増加に応じて、これらのプロセス改善を使用して、移行のさまざまな側面を評価し、成熟させてください。
                         </div>
                     </div>
                 </div>
@@ -123,11 +104,16 @@ Azure 移行ガイドを活用し、最初のワークロードを段階的に�
 </ul>
 <!-- markdownlint-enable MD033 -->
 
+この手法と上記の手順は、次の前提に基づいています。
+
+- ワークロードを移行する前に、短期的なクラウド導入計画のニーズを満たすために、少なくとも 1 つの[ランディング ゾーン](../ready/index.md)が識別、構成、およびデプロイされています。
+- 移行は、通常、"_リフト アンド シフト_" または "_再ホスト_" と いう用語に関連しています。 この手法と上記の手順は、純粋な再ホスト アプローチを使用してデータセンターを移行しない (移行するワークロードはごくわずかである) という信念を基に構築されています。 多くのワークロードを再ホストできますが、お客様は各ワークロード内の特定の資産を最新化することを選択することが多くなります。 この反復プロセスでは、速度と最新化のバランスが共通の論点となります。
+
 ## <a name="iterative-migration-process"></a>反復移行プロセス
 
 クラウド移行は基本的に、評価、移行、最適化、セキュリティ保護と管理という 4 つの単純なフェーズから構成されます。 クラウド導入フレームワークのこのセクションでは、プロセスの各フェーズを最大限に活用し、クラウド導入計画に合わせて各フェーズを調整する方法について説明します。 次の図は、反復的手法で各フェーズを図示しています。
 
-![クラウド導入フレームワーク移行モデル](../_images/operational-transformation-migrate.png)
+![クラウド導入フレームワーク移行モデル](../_images/migrate/methodology.png)
 
 ## <a name="create-a-balanced-cloud-portfolio"></a>バランスの取れたクラウド ポートフォリオを作成する
 
@@ -143,7 +129,7 @@ Azure 移行ガイドを活用し、最初のワークロードを段階的に�
 
 これらの記事では、既存の資産の大部分を Azure に移行するという同じ目標を持つ 2 つの工程の概要を説明します。 ただし、ビジネスの成果と現状は、そこに到達するために必要なプロセスに大きく影響します。 このような微妙な差異は、同様の最終状態に到達する 2 つの根本的に異なるアプローチになります。
 
-![クラウド導入フレームワーク移行モデル](../_images/operational-transformation-migrate.png)
+![クラウド導入フレームワーク移行モデル](../_images/migrate/methodology.png)
 
 最終状態への移行段階で、段階的な実行をガイドするために、このモデルでは移行を 2 つの焦点となる領域に分けます。
 
@@ -173,48 +159,9 @@ Azure 移行ガイドを活用し、最初のワークロードを段階的に�
 
 クラウド導入フレームワークの段階的な移行アプローチは、技術的およびカルチャ的な制限を反映し、ドキュメント化する段階的な計画を構築するために役立ちます。 このモデルの目的は、IT とビジネス両方のオーバーヘッドを最小限に抑えながら、移行速度を最大化することです。 以下に、移行バックログに基づく段階的な移行の実行例を 2 つ示します。
 
-<!-- markdownlint-disable MD033 -->
-
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./azure-migration-guide/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Azure 移行ガイド</h3>
-                        <p><b>物語の概要:</b>このお客様は、1,000 台未満の VM を移行しています。 サポートされている 10 個未満のアプリケーションは、IT 組織以外のアプリケーション所有者によって所有されています。 その他のアプリケーション、VM、および関連データは、クラウド導入チームのメンバーによって所有およびサポートされています。 クラウド導入チームのメンバーは、既存のデータセンター内の運用環境に対して管理アクセス権を持っています。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./expanded-scope/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>複雑なシナリオのガイド</h3>
-                        <p><b>物語の概要:</b>このお客様の移行は、ビジネス、カルチャ、およびテクノロジ全体にわたって複雑です。 このガイドには、複数の特定の複雑さの課題とそれらの課題を克服する方法が含まれています。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
-
-これら 2 つの工程は、クラウド移行に投資しているお客様の 2 つの極端な経験を表します。 ほとんどの企業では、上記の 2 つのシナリオの組み合わせが反映されます。 工程を確認した後、クラウド導入フレームワークの移行モデルを使用して、移行の会話を開始し、実際のニーズをよりよく満たすようにベースラインの体験を修正します。
-
 ## <a name="next-steps"></a>次のステップ
 
-次のどちらかの体験を選択してください。
+「[Azure 移行ガイド](./azure-migration-guide/index.md)」について理解を深めることから始めてください
 
 > [!div class="nextstepaction"]
 > [Azure 移行ガイド](./azure-migration-guide/index.md)
->
-> [拡大された範囲ガイド](./expanded-scope/index.md)
