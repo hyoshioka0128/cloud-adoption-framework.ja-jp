@@ -1,18 +1,18 @@
 ---
-title: クラウド イノベーション:学習する
-description: クラウド イノベーションの概要 - Learn コンテンツ
+title: 顧客と共に学習してイノベーションを推進する
+description: 顧客パートナーと共に、および顧客パートナーから学習することで、共感によって実用最小限の製品 (MVP) ソリューションを構築し、顧客への影響メトリックを生成する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808432"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312758"
 ---
 # <a name="learn-with-customers"></a>お客様による学習
 

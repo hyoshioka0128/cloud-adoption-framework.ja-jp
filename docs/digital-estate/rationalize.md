@@ -1,19 +1,19 @@
 ---
 title: デジタル資産の合理化
-description: クラウドでデジタル資産をホストする最適な方法を決定するために、デジタル資産を評価します。
+description: クラウドの合理化を使用してデジタル資産を評価し、クラウドでそれらをホストする際の最適なアプローチを決定します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c618e6c1cf83199ae55df44397e07f3755fbb1f8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804556"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312722"
 ---
 # <a name="rationalize-the-digital-estate"></a>デジタル資産の合理化
 
@@ -83,7 +83,7 @@ ms.locfileid: "76804556"
 
 ただし、クラウドの会計モデルに移行すると、資産の廃止により、年間の運用コストと事前の移行労力の点で、大幅な節約を生み出すことができます。
 
-定量分析の完了後に、組織がデジタル資産の 20% 以上をインベントリから削除することも珍しくありません。 そのような活動について決定する前に、さらに定性分析を行うことをお勧めします。 確認されたら、それらの資産をインベントリから削除することで、クラウド移行における最初の ROI の成果を生み出すことができます。 多くの場合、これは最大のコスト節約要因の 1 つです。 そのためクラウド戦略チームには、早期に経済的な成果を上げることができるように、移行プロセスの構築フェーズと並行して、資産の検証と廃止を監督することをお勧めします。
+定量分析の完了後に、組織がデジタル資産の 20% 以上をインベントリから削除することも珍しくありません。 アクションを実行する前に、さらに定性分析を実施することをお勧めします。 確認後にそれらの資産を削除することで、クラウド移行における最初の ROI の成果を生み出すことができます。 多くの場合、これは最大のコスト節約要因の 1 つです。 したがって、クラウド戦略チームは、[移行の方法論](../migrate/index.md)の実行と並行して、資産の検証と削除を監視し、早期に財務上の成果を達成する必要があります。
 
 ### <a name="program-adjustments"></a>プログラムの調整
 

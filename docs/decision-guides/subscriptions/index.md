@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140690"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508034"
 ---
 # <a name="subscription-decision-guide"></a>サブスクリプション決定ガイド
 
@@ -49,7 +49,7 @@ Azure のデジタル資産が増加すると、要件を満たすように追�
 
 ワークロードを実稼働環境にデプロイする準備ができたら、追加のサブスクリプションを追加する必要があります。 これにより、開発環境またはテスト環境の外に実稼働データとその他の資産を保持することができます。 2 つのサブスクリプションにおけるリソース全体で、異なる 2 つのポリシーのセットを簡単に適用することもできます。
 
-![運用と非運用のサブスクリプション パターン](../../_images/ready/basic-subscription-model.png)
+![運用と非運用のサブスクリプション パターン](../../_images/ready/initial-subscription-model.png)
 
 ### <a name="workload-separation-pattern"></a>ワークロード分離パターン
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341914"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140622"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>クラウド導入計画のワークロードを優先付けして定義する
 
@@ -21,6 +21,8 @@ ms.locfileid: "78341914"
 代わりに、チームで最初の 10 個のワークロードの優先順位付けと文書化を徹底的に行うことに注力することをお勧めします。 導入計画の実施が開始されると、チームはその次に優先順位の高い 10 個のワークロードのリストを保持できます。 このアプローチにより、次の数回の反復を計画するのに十分な情報が提供されます。
 
 計画を 10 個のワークロードに制限することで、ビジネス上の条件が変化したときの機敏性と優先順位付けの調整が促進されます。 このアプローチでは、クラウド導入チームが見積もりを学習して調整する余地も生まれます。 最も重要なのは、効果的なビジネス変革に対して障壁となる広範囲にわたる計画がなくなることです。
+
+<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-a-workload"></a>ワークロードとは
 
