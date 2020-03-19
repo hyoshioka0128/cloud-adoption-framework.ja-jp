@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a7f03ce1f83d59fdcfe2b2ce696b6b591b8d0655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341931"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140605"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>クラウド導入計画と Azure DevOps
 
-Azure DevOps は、反復的なプロジェクトを管理する Azure のお客様向けの、クラウドベースのツールのセットです。 これにはデプロイ パイプラインと DevOps の他の重要な側面を管理するためのツールも含まれています。 
+Azure DevOps は、反復的なプロジェクトを管理する Azure のお客様向けの、クラウドベースのツールのセットです。 これにはデプロイ パイプラインと DevOps の他の重要な側面を管理するためのツールも含まれています。
 
 この記事では、クラウド導入計画テンプレートを使用して Azure DevOps にバックログをすばやくデプロイする方法について説明します。 このテンプレートは、クラウド導入フレームワークのガイダンスに基づき、クラウド導入作業を標準化されたプロセスに合わせます。
 
