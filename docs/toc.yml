@@ -2,6 +2,8 @@ items:
   - name: クラウド導入フレームワーク
     href: index.md
     pdf_name: Microsoft Cloud Adoption Framework for Azure
+  - name: 新機能
+    href: getting-started/whats-new.md
   - name: 作業の開始
     items:
       - name: 移行工程の開始
