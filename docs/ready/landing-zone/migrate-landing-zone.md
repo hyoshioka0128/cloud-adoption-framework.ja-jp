@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2c9b932bd1a9500b7308fa24be65a12e46221a99
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 1727bb9c77298663f30e6205a9a3230ce65be3c1
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228590"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069748"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -32,7 +32,7 @@ ms.locfileid: "78228590"
 
 この初期ランディング ゾーンには、次の前提条件または制約が含まれています。 これらの前提条件がご自分の環境の制約と一致する場合、このブループリントを使用して最初のランディング ゾーンを作成することができます。 このブループリントは、固有の制約を満たすランディング ゾーン ブループリントを作成するために拡張することもできます。
 
-- **サブスクリプションの制限**: この導入の取り組みでは、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)を超えることは予想されていません。 2 つの一般的な指標は、25,000 個の VM または 10,000 個の vCPU を超過することです。
+- **サブスクリプションの制限**: この導入の取り組みでは、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)を超えることは予想されていません。
 - **コンプライアンス:** このランディング ゾーンではサード パーティのコンプライアンス要件は必要ありません。
 - **アーキテクチャの複雑さ:** アーキテクチャの複雑さによって、追加の運用サブスクリプションが常に必要になるわけではありません。
 - **共有サービス:** このサブスクリプションをハブ アンド スポーク アーキテクチャのスポークのように扱うことを要求する既存の共有サービスは Azure にありません。
