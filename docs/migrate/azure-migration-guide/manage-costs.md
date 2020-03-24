@@ -1,6 +1,6 @@
 ---
 title: 移行に重点を置いたコスト管理のメカニズム
-description: Azure リソースの予算と支払い方法を設定し、請求書の内容を確認する方法について説明します。
+description: Azure 向けのクラウド導入フレームワークを使用し、予算と支払いを設定する方法と、Azure リソースの請求書について説明します。
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b220929fd6348909b8f06f7a537e1052c459d24d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222660"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312120"
 ---
+<!-- cSpell:ignore bandersmsft -->
+
 # <a name="migration-focused-cost-control-mechanisms"></a>移行に重点を置いたコスト管理のメカニズム
 
 クラウドでは、テクノロジ チームでの役割には関係なく、作業方法にいくつかのシフトが導入されます。 コストは、このシフトの格好の例です。 以前には、IT 資産 (インフラストラクチャ、アプリ、およびデータ) のコストに関心があったのは財務および IT リーダーシップだけでした。 クラウドは IT のすべてのメンバーの能力を高めて、エンド ユーザーをより適切にサポートする意思決定を行い、それに基づいて行動できるようにします。 ただし、その能力には、これらの意思決定を行うときにコストを意識する必要があるという責任が付属します。

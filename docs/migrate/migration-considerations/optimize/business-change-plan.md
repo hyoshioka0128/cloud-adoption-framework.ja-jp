@@ -1,18 +1,18 @@
 ---
-title: ビジネス変更プランを開発するためのガイダンス
-description: ワークロードをクラウドに移行するタスクに重点を置いたクラウド移行内のプロセス。
+title: ビジネス変更プランを立てる
+description: Azure 向けのクラウド導入フレームワークを使用し、より広範なユーザー導入プランを実施するためにビジネス変更プランがどのように役立つかについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 48e670028e26be5a28abf55c7a0565769e17dacf
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d1c842c672cc091deaad4e0b7f4ffc89231895c7
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801972"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312035"
 ---
 # <a name="business-change-plan"></a>ビジネス変更プラン
 

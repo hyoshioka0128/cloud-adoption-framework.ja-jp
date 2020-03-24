@@ -1,18 +1,18 @@
 ---
-title: Azure へのアプリケーション移行例の概要
-description: Cloud Adoption Framework の移行セクションの一環として含まれている、アプリケーション移行例の概要を示します。
+title: Azure へのアプリケーションの移行例
+description: Azure 向けのクラウド導入フレームワークを使用して、オンプレミスのインフラストラクチャを Microsoft Azure クラウドに移行する方法を学習します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ecb6cfc10b88490269b50a5fe6bec7d2c3277d7b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807378"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312770"
 ---
 # <a name="application-migration-patterns-and-examples"></a>アプリケーションの移行パターンと例
 
@@ -32,18 +32,18 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 <!-- markdownlint-disable MD033 -->
 
-**パターン** | **[定義]** | **いつ使用するか**
+**パターン** | **定義** | **いつ使用するか**
 --- | --- | ---
 **リホスト** | 多くの場合、"_リフト アンド シフト_" 移行と呼ばれます。 このオプションでは、コードの変更を必要とせずに、既存のアプリを Azure にすばやく移行できます。 各アプリはそのままの状態で移行されるので、コード変更に伴うリスクとコストなしにクラウドのメリットを享受できます。 | アプリをクラウドにすばやく移動する必要がある場合。<br/><br/> アプリを変更せずに移動したい場合。<br/><br/> 移行後に [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas) のスケーラビリティを活かせるように、アプリが設計されている場合。<br/><br/> ビジネスにとって重要なアプリであるが、アプリの機能をすぐに変更する必要がない場合。
 **リファクター** | 多くの場合、"再パッケージ化" と呼ばれます。リファクターを行うには、[Azure PaaS](https://azure.microsoft.com/overview/what-is-paas) に接続してクラウド サービスを使用できるように、アプリに最小限の変更を加える必要があります。<br/><br/> たとえば、既存のアプリを Azure App Service または Azure Kubernetes Service (AKS) に移行できます。<br/><br/> または、リレーショナル データベースおよび非リレーショナル データベースを、Azure SQL Database Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB などのオプションにリファクターすることもできます。 | Azure で動作するようにアプリを簡単に再パッケージ化できる場合。<br/><br/> Azure が提供する革新的な DevOps プラクティスを適用したい場合、またはワークロード向けのコンテナー戦略を使用した DevOps を検討している場合。<br/><br/> リファクタリングでは、既存のコード ベースの移植性と使用可能な開発スキルを考慮する必要があります。
-**リアーキテクト** | 移行のためのリアーキテクトは、アプリのアーキテクチャを最適化してクラウドのスケーラビリティを活かすために、アプリの機能とコード ベースを変更、拡張することを中心とした作業となります。<br/><br/> たとえば、モノリシック アプリケーションを、相互に連携し、簡単にスケーリングできるマイクロサービスのグループに分割できます。<br/><br/> または、リレーショナル データベースと非リレーショナル データベースを、Azure SQL Database Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB など、フル マネージドのデータベース ソリューションにリアーキテクトすることもできます。 | アプリにメジャー リビジョンを施し、新機能を組み込んだり、クラウド プラットフォームで作業を効果的に行ったりする必要がある場合。<br/><br/> 既存のアプリケーションへの投資を活かしたい場合、スケーラビリティ要件を満たしたい場合、革新的な Azure DevOps プラクティスを適用したい場合、仮想マシンの使用を最小限に抑えたい場合。
-**リビルド** | リビルドでは、Azure のクラウド テクノロジを利用してアプリを最初からリビルドし、進化させることができます。<br/><br/> たとえば、Azure Functions、Azure AI、Azure SQL Database Managed Instance、Azure Cosmos DB などの[クラウド ネイティブ](https://azure.com/cloudnative) テクノロジを活用して、新しいアプリを構築できます。 | 開発は迅速に行いたいが、既存のアプリの機能と寿命が限られている場合。<br/><br/> ビジネスのイノベーションの加速 (Azure が提供する DevOps のプラクティスを含む)、クラウドネイティブ テクノロジを活用した新しいアプリケーションの構築、AI、ブロックチェーン、IoT の進化の活用に対する準備が整っている場合。
+**リアーキテクト** | 移行のためのリアーキテクトは、アプリのアーキテクチャを最適化してクラウドのスケーラビリティを活かすために、アプリの機能とコード ベースを変更、拡張することを中心とした作業となります。<br/><br/> たとえば、モノリシック アプリケーションを、相互に連携し、簡単にスケーリングできるマイクロサービスのグループに分割できます。<br/><br/> または、リレーショナル データベースと非リレーショナル データベースを、Azure SQL Database Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB など、フル マネージドのデータベース ソリューションにリアーキテクトすることもできます。 | アプリにメジャー リビジョンを施し、新機能を組み込んだり、クラウド プラットフォームで作業を効果的に行ったりする必要がある場合。<br/><br/> 既存のアプリケーションへの投資を活かしたい場合、スケーラビリティ要件を満たしたい場合、革新的な DevOps プラクティスを適用したい場合、仮想マシンの使用を最小限に抑えたい場合。
+**リビルド** | リビルドでは、Azure のクラウド テクノロジを利用してアプリを最初からリビルドし、進化させることができます。<br/><br/> たとえば、Azure Functions、Azure AI、Azure SQL Database Managed Instance、Azure Cosmos DB などの[クラウドネイティブ](https://azure.com/cloudnative) テクノロジを活用して、まったく新しいアプリを構築することができます。 | 開発は迅速に行いたいが、既存のアプリの機能と寿命が限られている場合。<br/><br/> ビジネスのイノベーションの加速 (Azure が提供する DevOps のプラクティスを含む)、クラウドネイティブ テクノロジを活用した新しいアプリケーションの構築、AI、ブロックチェーン、IoT の進化の活用に対する準備が整っている場合。
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="migration-example-articles"></a>移行例に関する記事
 
-このセクションに示した記事では、いくつかの一般的な移行シナリオの例を紹介しています。 これらの各例では、背景情報や詳細なデプロイ シナリオについて説明すると共に、移行のインフラストラクチャを設定して移行のためのオンプレミス リソースの適合性を評価する方法を示しています。 このセクションには、今後も記事が追加される予定です。
+このセクションでは、いくつかの一般的な移行シナリオの例を紹介します。 各例では、背景情報や詳細なデプロイ シナリオについて説明すると共に、移行のインフラストラクチャを設定して移行のためのオンプレミス リソースの適合性を評価する方法を示しています。 このセクションには、今後も記事が追加される予定です。
 
 ![一般的な移行/モダン化プロジェクト](./media/migration-patterns.png)
 
@@ -58,7 +58,7 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 **記事** | **詳細**
 --- | ---
-[Azure への移行の対象となるオンプレミスのリソースの評価](./contoso-migration-assessment.md) | この記事では、VMware 上で実行されているオンプレミス アプリの評価を実行する方法を示します。 例では、サンプル組織が Azure Migrate サービスを使用してアプリの VM を、また、Data Migration Assistant を使用してアプリの SQL Server データベースを評価します。
+[Azure への移行の対象となるオンプレミスのリソースの評価](../../plan/contoso-migration-assessment.md) | この計画の方法論のベスト プラクティス記事では、VMware で実行されているオンプレミス アプリの評価を実行する方法について説明します。 この記事では、例の組織が Azure Migrate サービスを使用してアプリの VM を、また、Data Migration Assistant を使用してアプリの SQL Server データベースを評価します。
 
 ### <a name="infrastructure"></a>インフラストラクチャ
 
@@ -84,7 +84,7 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 **記事** | **詳細**
 --- | ---
-[Azure VM および SQL Database Managed Instance でのアプリのリホスト](./contoso-migration-rehost-vm-sql-managed-instance.md) | この記事では、オンプレミス アプリの Azure へのリフト アンド シフト移行の例を示します。 これには、[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) を使用してアプリのフロントエンド VM を移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Database Managed Instance に移行します。
+[Azure VM および SQL Database Managed Instance でのアプリのリホスト](./contoso-migration-rehost-vm-sql-managed-instance.md) | この記事では、オンプレミス アプリの Azure へのリフト アンド シフト移行の例を示します。 この作業では、[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) を使用してアプリのフロントエンド VM を移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Database Managed Instance に移行します。
 [Azure VM および SQL Server Always On 可用性グループでのアプリのリホスト](./contoso-migration-rehost-vm-sql-ag.md) | この例では、Azure にホストされている SQL Server VM を使用して、アプリとデータを移行する方法を示します。 Site Recovery を使用してアプリの VM を移行し、Azure Database Migration Service を使用してアプリのデータベースを Always On 可用性グループで保護されている SQL Server クラスターに移行します。
 
 ### <a name="aspnet-php-and-java-apps"></a>ASP.NET、PHP、および Java アプリ

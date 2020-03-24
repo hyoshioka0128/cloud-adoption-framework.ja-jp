@@ -1,22 +1,25 @@
 ---
-title: サブスクリプション用の Azure サーバー管理サービスを構成する
-description: サブスクリプション用の Azure サーバー管理サービスを構成する
+title: サブスクリプションのサービスを構成する
+description: サーバーにサービス エージェントをデプロイし、管理ソリューションを有効にすることで、サブスクリプションの Azure サーバー管理サービスを構成する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808092"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312738"
 ---
+<!-- cSpell:ignore VMUUID kusto -->
+
 # <a name="configure-azure-server-management-services-at-scale"></a>大規模な Azure サーバー管理サービスを構成する
 
 Azure サーバー管理サービスをサーバーにオンボードするには、次の 2 つのタスクを完了する必要があります。
+
 - サーバーにサービス エージェントをデプロイする
 - 管理ソリューションを有効にする
 
@@ -139,10 +142,10 @@ Change Tracking ソリューションは、Azure VM では無料で、オンプ�
 
 このソリューションを実行するには:
 
-1. Azure portal 内で、 **[すべてのサービス]** を開き、 **[管理 + ガバナンス]**  >  **[ソリューション]** を選択します。
+1. Azure portal で **[すべてのサービス]** を開き、次に **[管理 + ガバナンス]**  >  **[ソリューション]** を選択します。
 2. **[ソリューション]** ビューで、 **[追加]** を選択します。
 3. **[Activity Log Analytics]** を検索して選択します。
-4. **作成** を選択します。
+4. **［作成］** を選択します
 
 前のセクションで作成した、ソリューションが有効になっているワークスペースの**ワークスペース名**を指定する必要があります。
 
@@ -152,10 +155,10 @@ Azure Log Analytics の Agent Health ソリューションでは、Windows お�
 
 このソリューションを実行するには:
 
-1. Azure portal 内で、 **[すべてのサービス]** を開き、 **[管理 + ガバナンス]**  >  **[ソリューション]** を選択します。
+1. Azure portal で **[すべてのサービス]** を開き、次に **[管理 + ガバナンス]**  >  **[ソリューション]** を選択します。
 2. **[ソリューション]** ビューで、 **[追加]** を選択します。
 3. **[Azure Log Analytics の Agent Health]** を検索して選択します。
-4. **作成** を選択します。
+4. **［作成］** を選択します
 
 前のセクションで作成した、ソリューションが有効になっているワークスペースの**ワークスペース名**を指定する必要があります。
 
@@ -167,10 +170,10 @@ Antimalware Assessment ソリューションは、マルウェアに感染して
 
 このソリューションを実行するには:
 
-1. Azure portal 内で、 **[すべてのサービス]** を開き、 **[管理 + ガバナンス]**  >  **[ソリューション]** を選択します。
+1. Azure portal で **[すべてのサービス]** を開き、次に **[管理 + ガバナンス]**  >  **[ソリューション]** を選択します。
 2. **[ソリューション]** ビューで、 **[追加]** を選択します。
 3. **[Antimalware Assessment]** を検索して選択します。
-4. **作成** を選択します。
+4. **［作成］** を選択します
 
 前のセクションで作成した、ソリューションが有効になっているワークスペースの**ワークスペース名**を指定する必要があります。
 
@@ -178,7 +181,7 @@ Antimalware Assessment ソリューションは、マルウェアに感染して
 
 ### <a name="azure-monitor-for-vms"></a>VM に対する Azure Monitor
 
-「[評価のために単一の VM 上の管理サービスを有効にする](./onboard-single-vm.md)」で説明されているように、VM インスタンスのビュー ページを通して [Azure Monitor for VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) を有効にすることができます。 この記事で説明されている他のソリューションに対して行ったように **[ソリューション]** ページからソリューションを直接有効にすることはしないでください。 大規模なデプロイの場合、[自動化](./onboarding-automation.md)を使用してワークスペース内で適切なソリューションを有効にする方が簡単な場合があります。 
+「[評価のために単一の VM 上の管理サービスを有効にする](./onboard-single-vm.md)」で説明されているように、VM インスタンスのビュー ページを通して [Azure Monitor for VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) を有効にすることができます。 この記事で説明されている他のソリューションに対して行ったように **[ソリューション]** ページからソリューションを直接有効にすることはしないでください。 大規模なデプロイの場合、[自動化](./onboarding-automation.md)を使用してワークスペース内で適切なソリューションを有効にする方が簡単な場合があります。
 
 ### <a name="azure-security-center"></a>Azure Security Center
 

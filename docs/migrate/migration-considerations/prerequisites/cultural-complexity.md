@@ -1,18 +1,18 @@
 ---
-title: '文化的な複雑さに備える: 役割と責任の整合'
-description: 役割と責任を整合させることで、文化的な複雑さに備えます。
+title: 役割と責任を調整する文化的な複雑さ
+description: Azure 向けのクラウド導入フレームワークを使用し、移行プロセスの間に役割と責任を調整して明確にすることで、文化的な複雑さに備えます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 56956443bc681cc0c7e00ea13babb55a26280192
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801496"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311797"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>文化的な複雑さに備える: 役割と責任の整合
 
@@ -24,7 +24,7 @@ ms.locfileid: "76801496"
 
 どの移行でも、可能な場合は常に、ビジネスによって最適に実行されるいくつかの重要な機能が存在します。 多くの場合、IT は次のタスクを完了する能力があります。 ただし、ビジネスのメンバーを関与させると、導入プロセスの後の方で障壁を削減するのに役立つ可能性があります。 また、移行プロセス全体を通した主な利害関係者からの相互の投資も保証されます。
 
-| Process | アクティビティ | [説明] |
+| Process | アクティビティ | 説明 |
 |---------|---------|---------|
 | アクセス | ビジネス目標 | 移行作業の望ましいビジネス成果を定義します。 |
 | アクセス | 優先順位 | 変化するビジネスの優先順位や市場の状態との整合を確認します。 |
@@ -45,7 +45,7 @@ ms.locfileid: "76801496"
 > [!NOTE]
 > 次の表では、説明責任のある当事者が役割の整合を開始する必要があります。 その列は、効率的な実行のための既存のプロセスに合うようにカスタマイズする必要があります。 理想的には、説明責任のある当事者として 1 人の人物が指定されるべきです。
 
-| Process | アクティビティ | [説明] | 説明責任のある当事者 |
+| Process | アクティビティ | 説明 | 説明責任のある当事者 |
 |---------|---------|---------|---------|
 | 前提条件 | デジタル資産 | ビジネス成果に基づいて、基本的な前提条件に既存のインベントリを整合させます。 | クラウド戦略チーム |
 | 前提条件 | 移行バックログ | 移行される一連のワークロードに優先順位を付けます。 | クラウド戦略チーム |

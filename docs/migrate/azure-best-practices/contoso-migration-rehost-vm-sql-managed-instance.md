@@ -1,6 +1,6 @@
 ---
-title: オンプレミス アプリを Azure VM および Azure SQL Database Managed Instance に移行して再ホストする
-description: Contoso がオンプレミス アプリを Azure VM で Azure SQL Database Managed Instance を使用してリホストする方法を説明します。
+title: Azure と Azure SQL Database Managed Instance に再ホストする
+description: Azure 向けのクラウド導入フレームワークを使用し、Azure SQL Database Managed Instance を使用して Azure VM でオンプレミス アプリを再ホストする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223075"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311967"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>オンプレミス アプリを Azure VM および SQL Database Managed Instance にリホストする
 

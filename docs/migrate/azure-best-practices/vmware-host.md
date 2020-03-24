@@ -1,18 +1,18 @@
 ---
-title: Azure の VMware ホスト移行のベスト プラクティス
-description: Azure の VMware ホスト移行のベスト プラクティスの概要
+title: Azure の VMWare ホスト移行
+description: Azure 向けのクラウド導入フレームワークを使用し、複雑さを軽減し、移行プロセスを標準化する VMWare ホスト移行のベスト プラクティスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8fafc0f014dcda9e004845398f25897659b619aa
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 7fb9e477575a870d1be09b45c91917f85c6a2f10
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094387"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312137"
 ---
 # <a name="vmware-host-migration-best-practices-for-azure"></a>Azure の VMware ホスト移行のベスト プラクティス
 

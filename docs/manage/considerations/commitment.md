@@ -1,18 +1,18 @@
 ---
-title: ビジネス コミットメント:クラウドの管理と運用
-description: ビジネス コミットメント:クラウドの管理と運用
+title: クラウド管理におけるビジネス コミットメント
+description: さまざまなワークロードの中断の分類と影響から将来の収益を計算し、ビジネス上の意思決定とコミットメントを改善します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4827ca2aac045b105beed9c15de366311092a7f2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807854"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312706"
 ---
 # <a name="business-commitment-in-cloud-management"></a>クラウド管理におけるビジネス コミットメント
 

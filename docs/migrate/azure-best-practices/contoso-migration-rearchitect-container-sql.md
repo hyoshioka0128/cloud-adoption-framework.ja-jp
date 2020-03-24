@@ -1,6 +1,6 @@
 ---
 title: Azure コンテナーと Azure SQL Database にアプリをリアーキテクトする
-description: Contoso が Azure Windows コンテナーと Azure SQL Database でアプリを再構築する方法について説明します。
+description: Azure 向けのクラウド導入フレームワークを使用し、オンプレミスのアプリケーションを Azure コンテナーと Azure SQL データベースに再設計する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d41c63d9876a5ead14acee9b39542ab256144920
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37bf2a4d96cc1f60b351f40f6a2c51c2ea1dcf95
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223121"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311644"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
 

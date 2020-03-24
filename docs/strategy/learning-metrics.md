@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b7a6081f37899f11716eca07b7e6a371bcefcc94
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: a27ef0d432fc0aad64211e9b2228d4f82387f854
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337881"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069806"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ VM がクラウドに移動されるにつれて、従来のオンプレミス�
 
 ## <a name="next-steps"></a>次のステップ
 
-学習メトリックの整合が済んだら、チームは、これらのメトリックに対して[デジタル資産の評価](../digital-estate/index.md)を開始できます。 結果は、[変換バックログまたは移行バックログ](../migrate/migration-considerations/prerequisites/technical-complexity.md)になります。
+学習メトリックの整合が済んだら、それらのメトリックに対して遂行する[ビジネス ケースの構築](cloud-migration-business-case.md)を開始できます。 
 
 > [!div class="nextstepaction"]
-> [デジタル資産を評価する](../digital-estate/index.md)
+> [クラウド ビジネス ケースを構築する](cloud-migration-business-case.md)

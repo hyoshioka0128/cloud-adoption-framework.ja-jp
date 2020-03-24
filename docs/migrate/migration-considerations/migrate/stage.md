@@ -1,18 +1,18 @@
 ---
-title: 移行の間のステージング アクティビティを理解する
-description: 移行の間のステージング アクティビティを理解する
+title: 移行の間のステージング アクティビティ
+description: Azure 向けのクラウド導入フレームワークを使用し、移行の間に必要になるステージング アクティビティと関連する成果物について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c8dcc71cd47253bbc59e885a085802d78323c5fd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 491080353d6cf67009720359257d9f1b8bbfdd6d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801989"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311753"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>移行の間のステージング アクティビティを理解する
 

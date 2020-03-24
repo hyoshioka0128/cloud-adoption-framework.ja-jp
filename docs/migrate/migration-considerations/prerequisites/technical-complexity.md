@@ -1,19 +1,21 @@
 ---
-title: '技術的な複雑さに備える: アジャイルな変更管理'
-description: 技術的な複雑さに備える - アジャイルな変更管理
+title: アジャイルな変更管理の複雑さに備える
+description: Azure 向けのクラウド導入フレームワークを使用し、クラウド アーキテクトがプロジェクト管理に変更管理の概念を説明できるように備えます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 73cbd084e79589de68e359ad4dc88b639d92f9df
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801343"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311831"
 ---
+<!-- cSpell:ignore ITSM TOGAF -->
+
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>技術的な複雑さに備える: アジャイルな変更管理
 
 1 行のコードでデータセンター全体のプロビジョニング解除と再作成が可能な場合、従来のプロセスを保持するのは容易ではありません。 クラウド導入フレームワーク全体のガイダンスは、IT サービス マネジメント (ITSM) や The Open Group Architecture Framework (TOGAF) などのプラクティスに基づいています。 しかし、ビジネスの変化に対する機敏性と応答性を確保するために、このフレームワークではアジャイル方法論と DevOps アプローチに合わせて、これらのプラクティスを変更します。

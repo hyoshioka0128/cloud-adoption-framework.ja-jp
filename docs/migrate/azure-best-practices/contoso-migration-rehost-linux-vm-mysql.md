@@ -1,18 +1,18 @@
 ---
-title: Linux サービス デスクトップ アプリを Azure と Azure Database for MySQL にリホストする
-description: Contoso が、オンプレミスの Linux アプリを Azure VM と Azure Database for MySQL に移行することによって、どのようにこのアプリをリホストするかを説明します。
+title: Linux サービス デスクトップ アプリを Azure と Azure Database for MySQL に再ホストする
+description: Azure 向けのクラウド導入フレームワークを使用し、オンプレミスの Linux アプリを Azure VM および Azure Database for MySQL に移行して再ホストする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 89ba67d795f03a424a22fbf834f07f9d45241449
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223012"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311474"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
 

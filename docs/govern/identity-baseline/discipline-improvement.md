@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709364"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508119"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>ID ベースライン規範の改良
 
@@ -119,7 +119,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 **潜在的なアクティビティ:**
 
 - ID ポリシーおよび遵守プラクティスの定期的な監査を実行します。
-- 多要素認証と異常なログインの検出に対して、機密性の高いユーザー アカウント (CEO、CFO、VP など) が常に有効であることを確認します。
+- 多要素認証と異常なログインの検出に対して、機密性の高いユーザー アカウント (会社役員のアカウントなど) が常に有効であることを確認します。
 - 悪意のあるアクターやデータ侵害 (特に、潜在的な管理者アカウント乗っ取りなど ID の不正アクセスに関連したもの) を定期的にスキャンします。
 - 監視およびレポート作成ツールを構成します。
 - セキュリティおよび不正アクセス防止システムとのより緊密な統合を検討します。

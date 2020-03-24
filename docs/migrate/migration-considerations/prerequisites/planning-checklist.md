@@ -1,18 +1,18 @@
 ---
 title: 移行環境 - 計画チェックリスト
-description: 移行前に環境の対応性を検証する
+description: 移行環境の計画チェックリストを使用して、移行前に環境の対応性を検証します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: c428edaa37924b7e72bb0b9b86537d6cce5b241b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222246"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311984"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>移行環境の計画チェックリスト - 移行前に環境の対応性を検証する
 

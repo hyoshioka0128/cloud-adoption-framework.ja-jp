@@ -1,18 +1,18 @@
 ---
-title: Azure サーバー管理サービスの前提条件となる計画
-description: Azure サーバー管理サービスの前提条件となるツールおよび計画
+title: Azure サーバー管理サービスの計画
+description: ツールについて学習し、Azure サーバー管理サービスを管理するために必要なリソースを準備します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 934263f5c143d021ce97125f025f96d8ae6f338f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807973"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312782"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>フェーズ 1:Azure サーバー管理サービスの前提条件となる計画
 
@@ -97,7 +97,7 @@ Azure portal を使用して Log Analytics ワークスペースを作成する�
 > [!NOTE]
 > Azure portal を使用して Automation アカウントを作成すると、ポータルの既定では、Azure Resource Manager とクラシック デプロイ モデル リソースの両方の実行アカウントの作成が試行されます。 環境内にクラシック仮想マシンが備わっておらず、サブスクリプションの共同管理者でない場合、ポータルでは Resource Manager の実行アカウントが作成されますが、クラシック実行アカウントをデプロイするときにエラーが生成されます。 クラシック リソースをサポートする予定がない場合は、このエラーを無視することができます。
 >
-> [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell) を使用して実行アカウントを作成することもできます。
+> [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell) を使用して実行アカウントを作成することもできます。
 
 ## <a name="next-steps"></a>次のステップ
 

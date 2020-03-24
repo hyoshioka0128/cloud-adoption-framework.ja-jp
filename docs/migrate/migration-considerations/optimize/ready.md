@@ -1,18 +1,18 @@
 ---
 title: 移行したアプリケーションの実稼働への昇格を準備する
-description: ワークロードをクラウドに移行するタスクに重点を置いたクラウド移行内のプロセス。
+description: Azure 向けのクラウド導入フレームワークを使用し、移行したアプリケーションの実稼働への昇格を準備する際に関連する検証について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f3aad7a2b7c592478f9d48a50dc96d5fee607dc8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4b48a4ceea5d322e4a993cdba474269d73fbc7e3
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801615"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312018"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>移行したアプリケーションの実稼働への昇格を準備する
 

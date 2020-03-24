@@ -1,6 +1,6 @@
 ---
-title: Azure App Service と Azure SQL Database に移行してアプリをリファクターする
-description: Contoso がオンプレミス アプリを Azure App Service Web アプリと Azure SQL Server データベースに移行して、オンプレミス アプリをリホストする方法について説明します。
+title: Azure App Service と SQL Database にアプリを移行する
+description: Azure 向けのクラウド導入フレームワークを使用し、アプリを Azure App Service と Azure SQL Database に移行することでリファクターする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3667207de8cc31a85e12666c425ffdf0469c1be5
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 86a7dc6a0754ece24c8d18dca847bde0e93b5345
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223067"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312001"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
 

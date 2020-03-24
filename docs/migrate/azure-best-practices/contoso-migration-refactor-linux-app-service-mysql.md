@@ -1,18 +1,18 @@
 ---
-title: Linux サービス デスク アプリを Azure App Service と Azure Database for MySQL にリファクタリングする
-description: Contoso が Web 層向けの GitHub を使用する Azure App Service と Azure SQL Database にオンプレミスの Linux アプリを移行することによって、それをリファクタリングする方法を説明します。
+title: Azure App Service と Database for MySQL に Linux アプリをリファクターする
+description: Azure 向けのクラウド導入フレームワークを使用し、Linux サービス デスク アプリを Azure App Service および Azure Database for MySQL にリファクターする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2e47647b06da12b9b595f4330767f629121e00a0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807463"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311491"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Azure App Service、Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリをリファクターする
 

@@ -1,18 +1,18 @@
 ---
-title: Azure に移行するワークロードの料金計算とサイズ設定のベスト プラクティス
-description: Azure に移行するワークロードの料金計算とサイズ設定のベスト プラクティスについて説明します。
+title: Azure に移行するワークロードのコストとサイズ
+description: Azure 向けのクラウド導入フレームワークを使用して、Azure に移行するワークロードのコストとサイズ設定のベスト プラクティスについて学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 783652f1f469333c97ebd50673a3d42e1a9741d7
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892584"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508408"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Azure に移行するワークロードの料金計算とサイズ設定のベスト プラクティス
 
@@ -191,7 +191,7 @@ Azure 予約 VM インスタンスを使用して、1 年または 3 年の期�
 
 最終的に複数の Azure サブスクリプションを利用することになるのは避けられません。 たとえば、開発と運用の境界を分けるために追加のサブスクリプションが必要な場合があります。また、クライアントごとに別個のサブスクリプションを必要とするプラットフォームがある場合もあります。 すべてのサブスクリプションにわたってデータのレポート作成を 1 つのプラットフォームに集約する機能があるのは、有用な特徴です。
 
-これを行うために、Azure Cost Management API を使用できます。 その後、Azure SQL などの 1 つのソースにデータを集約したら、Power BI などのツールを使用して、集約されたデータを明示できます。 集約されたサブスクリプション レポートや、きめ細かなレポートを作成できます。 たとえば、コスト管理に関する事前対応のための分析情報が必要なユーザーの場合、部門やリソース グループなどに基づいて、コストに関する特定のビューを作成できます。彼らに Azure の課金データへのフル アクセスを提供する必要はありません。
+これを行うために、Azure Cost Management API を使用できます。 その後、Azure SQL などの 1 つのソースにデータを集約したら、Power BI などのツールを使用して、集約されたデータを明示できます。 集約されたサブスクリプション レポートや、きめ細かなレポートを作成できます。 たとえば、コスト管理に関する事前対応のための分析情報が必要なユーザーのために、部門、リソース グループ、またはその他の情報に基づいて、コストに関する特定のビューを作成できます。 彼らに Azure の課金データへのフル アクセスを提供する必要はありません。
 
 **詳細情報:**
 

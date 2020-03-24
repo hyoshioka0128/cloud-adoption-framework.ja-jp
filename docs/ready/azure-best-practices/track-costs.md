@@ -1,18 +1,18 @@
 ---
-title: 事業単位、環境、プロジェクトをまたいでコストを追跡する
-description: 事業単位、環境、プロジェクトをまたいでコストを追跡する
+title: 事業単位と環境をまたいでコストを追跡する
+description: Azure 向けのクラウド導入フレームワークを使用して、追跡メカニズムを作成するための意思決定と実装の方法を理解します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a416f5eef95717792036c1a40b99614cefde2cec
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799660"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312802"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -99,6 +99,8 @@ Azure Cost Management では、各スコープに対して次の組み込みロ�
 
   - 適切に管理された環境では、クラウド ガバナンス チームが高いレベルのアクセス権を持っている可能性があるため、[Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)の追加のスコープ割り当ては必要ありません。
 
+<!-- cSpell:ignore automations -->
+
 - [クラウドのセンター オブ エクセレンス](../../organize/cloud-center-of-excellence.md)。 共有サービスに関連するコストを管理する職務には、サブスクリプション レベルで Cost Management 共同作成者のアクセス権が必要です。 さらに、このチームには、CCoE オートメーションがコストに与える影響を理解するために、それらのオートメーションによってデプロイされたアセットを含むリソース グループまたはサブスクリプションに対する Cost Management 共同作成者のアクセス権も必要になることがあります。
 
   - **共有サービス**。 クラウドのセンター オブ エクセレンスが関与している場合、ベスト プラクティスとして、CCoE によって管理される資産が、ハブ アンド スポーク モデル内の一元的な共有サービス サブスクリプションからサポートされることをお勧めします。 このシナリオでは、CCoE はそのサブスクリプションに対する共同作成者または所有者のアクセス権を持っている可能性があるため、[Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)の追加のスコープ割り当ては必要ありません。
@@ -114,14 +116,14 @@ Azure Cost Management は、予算を設定し、Azure や AWS のクラウド �
 
 ### <a name="get-started-with-azure-cost-management"></a>Azure Cost Management の利用を開始する
 
-Azure Cost Management の利用を開始する方法の詳細については、「[Azure Cost Management を使用してクラウドへの投資を最適化する方法](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)」を参照してください。
+Azure Cost Management の利用を開始する方法の詳細については、「[Azure Cost Management を使用してクラウドへの投資を最適化する方法](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)」を参照してください。
 
 ### <a name="use-azure-cost-management"></a>Azure Cost Management を使用する
 
-- [予算を作成して管理する](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
-- [コスト データのエクスポート](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
-- [推奨に基づくコストの最適化](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
-- [コスト アラートを使用し、使用状況と支出を監視する](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [予算を作成して管理する](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+- [コスト データのエクスポート](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
+- [推奨に基づくコストの最適化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [コスト アラートを使用し、使用状況と支出を監視する](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Azure Cost Management を使用して AWS のコストを管理する
 

@@ -1,6 +1,6 @@
 ---
 title: 資産の移行
-description: このガイドは、ネイティブ ツール、サードパーティ製ツール、プロジェクト管理ツールなど、"完了状態" に到達するための適切なツールを特定することで環境の移行を開始するのに役立ちます。
+description: ネイティブ ツール、サードパーティ製ツール、プロジェクト管理ツールなど、使用する適切なツールを特定して、Azure への移行を開始します。
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,20 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 41f52c8ddfa3ccc277569fde323161159344cb20
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994190"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312341"
 ---
+<!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
+
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>資産の移行 (インフラストラクチャ、アプリ、データ)
 
 このフェーズでは、評価フェーズの出力を使用して環境の移行を開始します。 このガイドは、ネイティブ ツール、サード パーティ製ツール、プロジェクト管理ツールなど、"完了状態" に到達するための適切なツールを識別するのに役立ちます。
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="native-migration-toolstabtools"></a>[ネイティブ移行ツール](#tab/Tools)
+# <a name="native-migration-tools"></a>[ネイティブ移行ツール](#tab/Tools)
 
 以下のセクションでは、移行を実施または支援するために使用できるネイティブ Azure ツールについて説明します。 移行作業をサポートする適切なツールの選定に関する情報については、[クラウド導入フレームワークの移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)を参照してください。
 
@@ -45,9 +47,7 @@ Azure Migrate を使用して移行を実行するには、次の手順に従い
 1. **[ツールの追加]** を選択して移行プロジェクトを開始します。
 1. 移行をホストするサブスクリプション、リソース グループ、および地域を選択します。
 1. 次を選択します: **[評価ツールの選択]**  >  **[Azure Migrate:Server Assessment]**  >   **[次へ]** 。
-1. **[ツールの確認と追加]** を選択し、構成を確認します。 **[ツールの追加]** をクリックして、移行プロジェクトの作成と選択したソリューションの登録のジョブを開始します。
-
-<!-- TODO: TBA -->
+1. **[ツールの確認と追加]** を選択し、構成を確認します。 **[ツールの追加]** を選択して、移行プロジェクトの作成と選択したソリューションの登録のジョブを開始します。
 
 ### <a name="learn-more"></a>詳細情報
 
@@ -76,7 +76,7 @@ Azure Site Recovery サービスは、オンプレミス リソースの Azure �
 
 1. ソース環境を適宜設定します。
 1. ターゲット環境を設定します。
-    1. **[インフラストラクチャの準備] > [ターゲット]** の順にクリックし、使用する Azure サブスクリプションを選択します。
+    1. **[インフラストラクチャの準備] > [ターゲット]** の順に選択し、使用する Azure サブスクリプションを選択します。
     1. Resource Manager デプロイ モデルを指定します。
     1. Site Recovery によって、互換性のある Azure ストレージ アカウントとネットワークが 1 つ以上あるかどうかが確認されます。
 1. レプリケーション ポリシーを設定します。
@@ -157,14 +157,14 @@ Data Migration Assistant (DMA) を使用すると、SQL Server または Azure S
 > (データベースの数とサイズを基準にした) 大規模な移行の場合、大規模なデータベースを移行できる Azure Database Migration Service を使用することをお勧めします。
 >
 
-Data Migration Assistant の使用を開始するには、以下の手順に従います。
+次の手順で Data Migration Assistant の使用を開始します。
 
 1. [Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=53595)から Data Migration Assistant をダウンロードしてインストールします。
-1. **[新規作成]\(+\)** アイコンをクリックし、 **[評価]** プロジェクト タイプを選択して評価を作成します。
-1. ソースとターゲットのサーバーの種類を設定します。 **Create** をクリックしてください。
+1. **[新規作成]\(+\)** アイコンを選択し、 **[評価]** プロジェクト タイプを選択して評価を作成します。
+1. ソースとターゲットのサーバーの種類を設定し、 **[作成]** を選択します。
 1. 必要に応じて評価オプションを構成します (すべて既定値をお勧めします)。
 1. 評価するデータベースを追加します。
-1. **[次へ]** をクリックして評価を開始します。
+1. **[次へ]** を選択して評価を開始します。
 1. Data Migration Assistant ツール セット内で結果を確認します。
 
 企業では、「[DMA で企業を評価し評価レポートを統合する](https://docs.microsoft.com/sql/dma/dma-consolidatereports)」で説明されている方法に従って、複数のサーバーを評価し、レポートを結合した後、提供された Power BI レポートを使用して結果を分析することをお勧めします。
@@ -207,9 +207,15 @@ Azure Cosmos DB データ移行ツールでは、さまざまなソースから�
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="third-party-migration-toolstabthird-party-tools"></a>[サード パーティの移行ツール](#tab/third-party-tools)
+# <a name="third-party-migration-tools"></a>[サード パーティの移行ツール](#tab/third-party-tools)
 
 移行プロセスを支援する、サード パーティの各種移行ツールおよび ISV サービスを利用できます。 それぞれ利点や長所が異なります。 これには以下のツールが含まれます。
+
+## <a name="unifycloud"></a>UnifyCloud
+
+UnifyCloud は、評価、移行、および最新化の自動化ツールを提供する ISV サービスです。
+
+[詳細情報](https://www.unifycloud.com/)
 
 ## <a name="cloudamize"></a>Cloudamize
 
@@ -245,7 +251,7 @@ NoSQL データベースの要件に合わせて Azure Cosmos DB の移行をサ
 
 さまざまなデータベース移行オプションと、ネイティブおよびパートナーとのステップバイステップ ガイダンスについては、「[Azure データベース移行ガイド](https://datamigration.microsoft.com)」を参照してください。
 
-# <a name="project-management-toolstabproject-management-tools"></a>[プロジェクト管理ツール](#tab/project-management-tools)
+# <a name="project-management-tools"></a>[プロジェクト管理ツール](#tab/project-management-tools)
 
 追跡も管理もされていないプロジェクトでは、問題が発生しやすくなります。 確実に成功を収めるためには、お客様がプロジェクト管理ツールを使用することが重要であると Microsoft では考えています。 利用可能なさまざまなツールがあり、組織のプロジェクト マネージャーが気に入っているツールが既にあるかもしれません。
 
@@ -274,6 +280,6 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 [Azure DevOps でアプリケーションを構築する](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/):Azure Pipelines と GitHub を使って、他の人と共同でアプリケーションを構築します。 パイプラインで自動テストを実行して、コードの品質を検証します。 潜在的な脆弱性がないかどうかソース コードとサードパーティ コンポーネントをスキャンします。 アプリケーションを構築するために連携させる複数のパイプラインを定義します。 Microsoft がホストするエージェントと独自のビルド エージェントの両方を使用して、アプリケーションを構築します。
 
-# <a name="cost-managementtabmanagecost"></a>[コスト管理](#tab/ManageCost)
+# <a name="cost-management"></a>[コスト管理](#tab/ManageCost)
 
 リソースをクラウド環境に移行するときは、定期的なコスト分析を実行することが重要です。 移行プロセスによって追加の使用量要件がサービスに適用される可能性があるため、想定外の使用量料金をこれにより回避できます。 コストとワークロードのバランスを取るために、必要に応じてリソースのサイズを変更することもできます ( **[最適化と変換](./optimize-and-transform.md)** に関するセクションで詳しく説明します)。

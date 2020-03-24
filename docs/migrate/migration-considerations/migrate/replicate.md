@@ -1,18 +1,18 @@
 ---
-title: レプリケーションと同期が移行プロセスで果たす役割
-description: ワークロードをクラウドに移行するタスクに重点を置いたクラウド移行内のプロセス。
+title: レプリケーションと移行プロセス
+description: レプリケーションが移行プロセスで果たす役割と、レプリケーション アクティビティの前提条件とリスクを計画する方法を理解します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 31930cfef32d4a02b3892405e2c5b462e0039566
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337814"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312778"
 ---
 <!-- markdownlint-disable MD026 -->
 

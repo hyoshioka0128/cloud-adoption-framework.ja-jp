@@ -1,18 +1,18 @@
 ---
 title: パートナーシップとサポート オプションを理解する
-description: 移行作業をサポートするためのオプションとアプローチについて説明します
+description: Azure 向けのクラウド導入フレームワークを使用し、移行コストをサポートするためのパートナーシップのオプションとアプローチについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802465"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311865"
 ---
 # <a name="understand-partnership-options"></a>パートナーシップのオプションを理解する
 
