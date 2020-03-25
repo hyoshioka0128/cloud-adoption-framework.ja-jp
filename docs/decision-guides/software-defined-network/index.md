@@ -2,18 +2,18 @@
 title: ソフトウェア定義ネットワーク意思決定ガイド
 description: Azure のクラウド導入フレームワークを使用して、ソフトウェア定義ネットワークによってどのようにソフトウェアによって一元的に管理された仮想化ネットワークが提供されるのかを学びます。
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4fa9f16a2636cf5e8f1340bf51ae39e8db3198b0
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a07130e8d7ac201f7519658ea84e3ff9df33ecbb
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708735"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225736"
 ---
 # <a name="software-defined-networking-decision-guide"></a>ソフトウェア定義ネットワーク意思決定ガイド
 
@@ -39,7 +39,7 @@ VM の数が 1,000 未満の小さな単一リージョン デプロイでは、
 
 クラウド移行を計画するときにどの仮想ネットワーク アーキテクチャまたはアーキテクチャの組み合わせを考慮すべきかを計画する場合は、組織にとって何が適切かを判定するのに役立つ次の質問を考慮してください。
 
-| 質問 | PaaS のみ | クラウドネイティブ | クラウド DMZ | ハイブリッド | ハブ アンド スポーク |
+| Question | PaaS のみ | クラウドネイティブ | クラウド DMZ | ハイブリッド | ハブ アンド スポーク |
 |-----|-----|-----|-----|-----|-----|
 | ワークロードでは PaaS サービスのみを使用し、それらのサービス自体によって提供されるものを超えるネットワーク機能は必要ありませんか? | はい | いいえ | いいえ | いいえ | いいえ |
 | ワークロードにはオンプレミスのアプリケーションとの統合が必要ですか? | いいえ | いいえ | はい | はい | はい |
