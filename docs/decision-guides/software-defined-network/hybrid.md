@@ -2,18 +2,18 @@
 title: ソフトウェア定義ネットワーク:ハイブリッド ネットワーク
 description: Azure 向けクラウド導入フレームワークを使用して、ハイブリッド ネットワークによりクラウド仮想ネットワークをオンプレミスのリソースに接続する方法について説明します。
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f84dcbd1a215a34e2b05b63db2a08f64dca34a4b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 6155018134054aa66c16dbf5988ed00d6d7a6143
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708548"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225668"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>ソフトウェア定義ネットワーク:ハイブリッド ネットワーク
 
