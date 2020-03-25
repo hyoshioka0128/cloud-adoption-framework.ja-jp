@@ -574,6 +574,18 @@ items:
                 href: innovate/innovation-guide/devices.md
               - name: 予測と影響
                 href: innovate/innovation-guide/predict.md
+          - name: イノベーションのシナリオ
+            items:
+              - name: Kubernetes
+                items:
+                  - name: イノベーション シナリオの概要
+                    href: innovate/kubernetes/index.md
+                  - name: アプリケーションの開発とデプロイ
+                    href: innovate/kubernetes/application-development.md
+                  - name: クラスターの設計と操作
+                    href: innovate/kubernetes/cluster-design-operations.md
+                  - name: クラスターとアプリケーションのセキュリティ
+                    href: innovate/kubernetes/cluster-application-security.md
           - name: ベスト プラクティス
             items:
               - name: 概要と Azure ツールチェーン
