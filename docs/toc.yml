@@ -1140,6 +1140,8 @@ items:
                 href: manage/monitor/alerting.md
               - name: 監視プラットフォームの概要
                 href: manage/monitor/platform-overview.md
+              - name: 監視に関連するスキル
+                href: manage/monitor/suggested-skills.md
           - name: 管理操作の一元化
             href: manage/centralize-operations.md
           - name: 運用適合性レビューの確立
