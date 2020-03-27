@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 02/28/2020
-ms.openlocfilehash: 4a6bd2f6a14d4726695f76a776c01a421931005c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 7e98461d0cba205f05400d0ffd8b9ae64c0b69d5
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091976"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356865"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft Cloud 導入フレームワーク
 
@@ -182,6 +182,8 @@ Cloud 導入フレームワークは、Azure でクラウドを導入するた�
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft Cloud 導入フレームワークの使用方法
 
 企業が Azure を初めて導入する場合は、まず[クラウド導入フレームワークの概要](./getting-started/migrate.md)に関するページをお読みください。 この概要では、企業のデジタル変革に関するベスト プラクティスが提供され、プロセスを順を追って説明します。
+
+<!-- test:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
 > [開始するには](./getting-started/migrate.md)
