@@ -7,12 +7,12 @@ ms.date: 03/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1ec13eca60f8e3ed4f2d30b9c4c1b6b0138905a3
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: c7b3a4d946eac1b5296f4d37d50872105ce756ea
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79510831"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225957"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークの最新情報
 
@@ -20,7 +20,19 @@ ms.locfileid: "79510831"
 
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームの連携を通して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携して Azure 向けのクラウド導入フレームワークを構築することをお勧めします。
 
-## <a name="march-2020"></a>2020 年 3 月
+## <a name="march-20-2020"></a>2020 年 3 月 20 日
+
+スケーリングと最適化の前に、Kubernetes でアプリケーションの概念実証から運用環境へのデプロイを成功させるために、ペルソナ別に分類されたツール、プログラム、およびコンテンツを含む規範的なガイダンスを追加しました。
+
+### <a name="kubernetes"></a>Kubernetes
+
+| [アーティクル]                                                                                     | 説明                                                                                                                                                                           |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [アプリケーションの開発とデプロイ](../innovate/kubernetes/application-development.md) | **新しい記事**: アプリケーション開発の計画、DevOps パイプラインの構成、Kubernetes 用のサイト信頼性エンジニアリングの実装に関するチェックリスト、リソース、およびベスト プラクティスが提供されています。 |
+| [クラスターの設計と操作](../innovate/kubernetes/cluster-design-operations.md) | **新しい記事**: Kubernetes 用のクラスター構成、ネットワーク設計、将来も対応できるスケーラビリティ、ビジネス継続性、およびディザスター リカバリーに関するチェックリスト、リソース、およびベスト プラクティスが提供されています。 |
+| [クラスターとアプリケーションのセキュリティ](../innovate/kubernetes/cluster-application-security.md) | **新しい記事**: Kubernetes のセキュリティ計画、運用、およびスケーリングに関するチェックリスト、リソース、およびベスト プラクティスが提供されています。 |
+
+## <a name="march-2-2020"></a>2020 年 3 月 2 日
 
 戦略、計画、準備、および移行が含まれるクラウド導入フレームワークの複数のセクションを貫く移行アプローチの継続性に関するフィードバックに応えて、次の更新が行われています。 これらの更新は、移行の取り組みを進める際に、計画と導入をどのように改善するかを理解しやすくすることを目的として行われています。
 

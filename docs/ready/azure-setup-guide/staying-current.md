@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341982"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225804"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Microsoft Azure を最新の状態に保つ
 
@@ -51,11 +51,15 @@ Microsoft Azure のようなクラウド プラットフォームは、多くの
 
 Azure に関する最新情報を入手するのに役立つより詳しいコンテンツについては、ここに記載されたリソースをご覧ください。
 
-- [Azure グラフ](https://azurecharts.com/)
-  - この非公式の視覚化では、過去 6 か月間に加えられたすべての Azure の更新が表示されます。 Azure の変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - 毎週発行の、Azure を構築しているエンジニアによる動画。 内容は、デモ、質問への回答、分析情報の共有などです。
   - [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) 経由でサブスクライブします。
-- [Azure Weekly](https://azureweekly.info)
-  - このニュースレターは、[endjin](https://endjin.com) が提供する非公式のリソースです。 Microsoft Azure に関するその週のトップ ニュースの概要が含まれています。 また、興味深い歴史的なコンテンツも含まれています。
+- [Azure グラフ](https://azurecharts.com/)*
+  - この視覚化では、過去 6 か月間に加えられたすべての Azure の更新が表示されます。 Azure の変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。
+- [AzAdvertizer](https://www.azadvertizer.net/)*
+  - Azure ガバナンス機能 (Azure Policy、ポリシー イニシアチブブ、ポリシー エイリアス、RBAC など) でのリリースと変更の追跡。
+- [Azure Weekly](https://azureweekly.info)*
+  - [endjin](https://endjin.com) が提供するこのニュースレターには、Microsoft Azure に関するその週のトップ ニュースの概要が含まれます。 また、興味深い歴史的なコンテンツも含まれています。
   - [電子メール](https://azureweekly.info)経由でサブスクライブします。
+
+\* *これらのリソースは、コミュニティによって提供されており、Microsoft が正式に管理するものではありません。*
