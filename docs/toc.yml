@@ -84,7 +84,7 @@ items:
             href: plan/prerequisites.md
           - name: Azure DevOps にテンプレートをデプロイする
             href: plan/template.md
-          - name: ワークロードの優先順位と定義
+          - name: ワークロードを定義し、優先順位を付ける
             href: plan/workloads.md
           - name: ワークロードに合わせて資産を調整する
             href: plan/assets.md
@@ -170,8 +170,12 @@ items:
             href: ready/azure-best-practices/index.md
           - name: リソースの編成
             items:
-              - name: 複数のサブスクリプションで拡大
-                href: ready/azure-best-practices/scaling-subscriptions.md
+              - name: 初期サブスクリプションを作成する
+                href: ready/azure-best-practices/initial-subscriptions.md
+              - name: 複数のサブスクリプションでスケーリングする
+                href: ready/azure-best-practices/scale-subscriptions.md
+              - name: サブスクリプションを整理する
+                href: ready/azure-best-practices/organize-subscriptions.md
               - name: 名前付けとタグ付け
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: ネットワーク

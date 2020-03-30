@@ -1,6 +1,6 @@
 ---
 title: Azure 管理の概要
-description: Azure のクラウド導入フレームワークと、Azure の運用環境を管理するために必要な基本的なツールに関する情報について説明します。
+description: Azure の運用環境を管理するために必要な基本的なツールに関する情報を使用して、Azure のクラウド導入フレームワークについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,19 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 6e9b83784d2fdaaca7ae4a55ccd977d266b6193d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140288"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356487"
 ---
 ::: zone target="docs"
 
 # <a name="azure-management-guide-before-you-start"></a>Azure 管理ガイド:開始する前に
-
-> [!NOTE]
-> クラウド導入フレームワークでイノベーションを導くとき、このガイドが開始点となります。 これは Azure クイック スタート センターでも利用できます。 Azure クイック スタート センターへのリンクについては、この記事の後半にあるヒントを参照してください。
 
 ::: zone-end
 
@@ -31,7 +28,7 @@ ms.locfileid: "79140288"
 
 ::: zone-end
 
-Azure 管理ガイドは、Azure をご利用のお客様が管理ベースラインを作成し、Azure 全体でリソースの一貫性を確立する際に役立ちます。 このガイドでは、Azure のあらゆる運用環境、特に、機密データをホストする環境に必要となる基本的なツールを紹介します。 詳細、ベスト プラクティス、クラウド環境の準備に関連する考慮事項については、[クラウド導入フレームワークの準備セクション](../index.md)に関するページを参照してください。
+Azure 管理ガイドは、Azure をご利用のお客様が管理ベースラインを作成し、Azure 全体でリソースの一貫性を確立する際に役立ちます。 このガイドでは、Azure のあらゆる運用環境、特に、機密データをホストする環境に必要となる基本的なツールを紹介します。 詳細、ベスト プラクティス、クラウド環境の準備に関連する考慮事項については、クラウド導入フレームワークの[準備セクション](../index.md)に関するページを参照してください。
 
 ## <a name="scope-of-this-guide"></a>このガイドの範囲
 
@@ -51,9 +48,6 @@ Azure 管理ガイドは、Azure をご利用のお客様が管理ベースラ�
 管理ベースラインは、環境内のすべての資産に適用する必要のある最小限のツールとプロセスのセットです。 いくつかの追加オプションを管理ベースラインに含めることができます。 後続の記事では数回にわたり、利用可能なすべてのオプションではなく必要最小限のオプションに重点を置くことで、クラウド管理の機能を促進します。
 
 ::: zone target="docs"
-
-> [!TIP]
-> 対話形式で学習したい場合は、Azure portal でこのガイドを参照してください。 Azure portal で [Azure クイック スタート センター](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)に移動し、 **[Azure Management Guide]\(Azure 管理ガイド\)** を選択します。 ステップバイステップの手順に従います。
 
 次の手順は、[インベントリと可視性](./inventory.md)です。
 

@@ -1,31 +1,32 @@
 ---
 title: Azure 対応性のベスト プラクティス
-description: チームが Azure 環境を確立し、準備するためのベスト プラクティスと追加のガイダンスを提供する方法について説明します。
+description: チームが Azure 環境を確立し、準備するためのベスト プラクティスと追加のガイダンスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d44d3981824c9599151391cd3b7e3550ac31cd6
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aecef0bbbdc88b2f95d6a93efeb496cf2d787a45
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093571"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354647"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 対応性のベスト プラクティス
 
-クラウド準備の大部分は、クラウド導入の取り組みを開始して、クラウドに資産とワークロードを移すために移行先の環境を準備するために必要な技術スキルを職員に授けることで占められます。 チームが Azure 環境への準備を行うためのベスト プラクティスと追加のガイダンスについて説明します。
+クラウド準備では、クラウド導入の取り組みを開始して、クラウドに資産とワークロードを移すために移行先の環境を準備するために必要な技術スキルを担当者に身に付けてもらう必要があります。 チームが Azure 環境への準備を行うためのベスト プラクティスと追加のガイダンスについて説明します。
 
 ## <a name="azure-fundamentals"></a>Azure 基礎
 
 Azure 環境でアセットを整理およびデプロイします。
 
 - [Azure の基本的な概念](../considerations/fundamental-concepts.md)。 Azure の主要な概念と用語、およびこれらの概念の相互関連性について説明します。
-- [推奨される名前付けおよびタグ付け規則](../azure-best-practices/naming-and-tagging.md)。 リソースに名前を付けてタグ付けするための詳細な推奨事項を確認します。 これらの推奨事項では、エンタープライズ クラウドの導入作業がサポートされます。
-- [複数の Azure サブスクリプションによるスケーリング](../azure-best-practices/scaling-subscriptions.md)。 複数の Azure サブスクリプションによる拡張戦略を理解できます。
-- [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) Azure 管理グループで複数のサブスクリプションにまたがり、リソース、ロール、ポリシー、デプロイを管理する方法について説明します。
+- [初期サブスクリプションを作成する](./initial-subscriptions.md)。 クラウドの導入を開始するために、Azure サブスクリプションの初期セットを確立します。
+- [複数のサブスクリプションを使用して、Azure 環境をスケーリングする](../azure-best-practices/scale-subscriptions.md)。 Azure 環境をスケーリングするために追加のサブスクリプションを作成するための理由と戦略を理解します。
+- [Azure 管理グループでリソースを整理する](../azure-best-practices/organize-subscriptions.md) Azure 管理グループで複数のサブスクリプションにまたがり、リソース、ロール、ポリシー、デプロイを管理する方法について説明します。
+- [推奨される名前付けおよびタグ付け規則に従う](../azure-best-practices/naming-and-tagging.md)。 リソースに名前を付けてタグ付けするための詳細な推奨事項を確認します。 これらの推奨事項では、エンタープライズ クラウドの導入作業がサポートされます。
 - [一貫性のあるハイブリッド クラウドの作成](../considerations/hybrid-consistency.md)。 オンプレミス管理のさまざまな利便性を維持しながら、クラウド イノベーションの利点を提供するハイブリッド クラウド ソリューションを作成します。
 
 ## <a name="networking"></a>ネットワーク

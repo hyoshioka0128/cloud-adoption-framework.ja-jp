@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 layout: LandingPage
-ms.openlocfilehash: e22c8332a02b985d733fd8e2e36f6873bd435c77
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cc4515b97454094ed84a78d04170a8bd03c0f5b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092602"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354981"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -110,7 +110,7 @@ ms.locfileid: "79092602"
 
 ## <a name="next-steps"></a>次のステップ
 
-[デジタル資産](../digital-estate/index.md)を中心にクラウド導入計画の作成を始めます。
+[クラウド合理化の 5 つの R](../digital-estate/5-rs-of-rationalization.md) について学習して、クラウド導入計画の構築を開始します。
 
 > [!div class="nextstepaction"]
-> [デジタル資産](../digital-estate/index.md)
+> [クラウド合理化の 5 R](../digital-estate/5-rs-of-rationalization.md)
