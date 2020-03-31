@@ -3,16 +3,16 @@ title: 変換の取り組みによるビジネス成果
 description: Azure のクラウド導入フレームワークを使用して、クラウド変換に関連するビジネスの成果を理解します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 03/27/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 646ac9da914939a63b9bd4a5cb73ae2899263823
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092385"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392513"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "79092385"
 
 ## <a name="sample-outcomes-by-category"></a>カテゴリ別のサンプル成果
 
-多くの場合、技術に詳しい担当者にとって、ビジネス成果の視点で話すこと、外国語で話すような気分になることがあります。 簡単に言い換えることができるように、Microsoft は、一連のビジネス成果の例を[ビジネス成果フレームワークに関するページ](../index.md)で収集しています。 これらのサンプルを使用すると、実際の変革の取り組みに基づくビジネス成果を引き出し、実証できます。
+多くの場合、技術に詳しい担当者にとって、ビジネス成果の視点で話すこと、外国語で話すような気分になることがあります。 翻訳を簡単にするために、一連のビジネス成果の例を紹介します。 次の例を使用して、実際の変革の取り組みに基づくビジネス成果を引き出し、実証できます。
 
 ビジネス成果をより簡単に見つけられるように、次のカテゴリに分けました。 このアプローチは、事業部門どうしのコンセンサスの取れた会話を促す傾向にあります。
 
