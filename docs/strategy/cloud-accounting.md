@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4458cdb4cf5b63a6ed8bb6cb2d17020c948d0702
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092871"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354065"
 ---
+<!-- cSpell:ignore CIOs -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-cloud-accounting"></a>クラウド会計とは
@@ -58,7 +60,7 @@ IT のコスト センターとしての評判を変える最初の一般的な�
 
 会計モデルの選択は、システムの設計に不可欠です。 会計モデルの選択は、サブスクリプション戦略、命名規則、タグ付け規則、ポリシーとブループリント設計に影響を与えることがあります。
 
-企業と提携してクラウド会計モデルと[グローバル市場](./global-markets.md)に関する決定を行った後は、[Azure 基盤を開発する](../ready/index.md)ために十分な情報が得られています。
+企業と提携してクラウド会計モデルと[グローバル市場](./global-markets.md)に関する決定を行った後は、[最初のクラウド導入プロジェクトを選択する](./first-adoption-project.md)ために十分な情報が得られています。
 
 > [!div class="nextstepaction"]
-> [Azure 基盤を開発する](../ready/index.md)
+> [最初のクラウド導入プロジェクトを選択する](./first-adoption-project.md)

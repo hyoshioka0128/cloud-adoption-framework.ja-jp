@@ -7,13 +7,15 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312154"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354113"
 ---
+<!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
+
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス
 
 移行を計画して設計するときは、移行自体に加えて、Azure ネットワークの設計と実装が最も重要なステップの 1 つです。 この記事では、Azure の IaaS および PaaS の実装に移行するときのネットワークに関するベスト プラクティスについて説明します。

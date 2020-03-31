@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 0d7207ce5073d1e3e67e2164774ee0da0eddc784
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311865"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355317"
 ---
+<!-- cSpell:ignore CSPs MSPs -->
+
 # <a name="understand-partnership-options"></a>パートナーシップのオプションを理解する
 
 移行の間に、クラウド導入チームは実際にクラウドへのワークロードの移行を行います。 [デジタル資産](../../../digital-estate/index.md)を定義したりコア クラウド インフラストラクチャを構築したりするときの共同作業タスクや問題解決タスクとは異なり、移行では一連のタスクを繰り返し実行する傾向があります。 反復的側面が過ぎると、テストやチューニングのような選択したクラウド プロバイダーについて深い知識を必要とする作業があります。 このプロセスの反復的な性質は、パートナーによる作業が最適な場合があり、フルタイム スタッフの負担が軽減されます。 さらに、パートナーであれば、反復的プロセスの実行で異常が発生したときでも、技術的な専門知識を適合させることができる可能性があります。
@@ -96,7 +98,7 @@ Microsoft 認定ソリューション プロバイダーは、世界中で最新
 既製の Azure ソリューションまたはカスタム Azure ソリューションを提供するパートナー、また、それらのソリューションをデプロイし、管理するうえでの支援を提供するパートナーからサポートを得られます。
 
 - **[クラウド ソリューション パートナーを見つける](https://www.microsoft.com/solution-providers/home)。** 認定 CSP は、クラウド導入のビジネス目標を評価し、ビジネス ニーズを満たして、ビジネスの機敏性と効率性の向上に役立つ最適なクラウド ソリューションを特定して、クラウドを最大限に活用する支援ができます。
-- **[マネージド サービス パートナーを見つける](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)。** Azure マネージド サービス パートナー (MSP) は、クラウド体験のあらゆる側面をガイドして、Azure へのビジネス転換を支援します。 移行および運用管理のコンサルティングから、クラウド MSP はクラウド導入に伴うあらゆる利点をお客様に紹介します。 また、一般的なサポート、プロビジョニング、課金エクスペリエンスのワンストップ ショップとしての役割も持ちます。すべてが柔軟な従量課金制 (PAYG) ビジネス モデルで提供されます。
+- **[マネージド サービス パートナーを見つける](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)。** Azure マネージド サービス パートナー (MSP) は、クラウド体験のあらゆる側面をガイドして、Azure へのビジネス転換を支援します。 移行および運用管理のコンサルティングから、クラウド MSP はクラウド導入に伴うあらゆる利点をお客様に紹介します。 また、一般的なサポート、プロビジョニング、課金エクスペリエンスのワンストップ ショップとしての役割も持ちます。すべてが柔軟な従量課金制ビジネス モデルで提供されます。
 
 ## <a name="next-steps"></a>次のステップ
 

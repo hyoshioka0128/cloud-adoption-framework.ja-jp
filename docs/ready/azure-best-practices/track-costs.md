@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ce9ce90d429064eeb8e848fd203aec11d042e539
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312802"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354528"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -24,7 +24,7 @@ ms.locfileid: "79312802"
 
 コスト管理は、ガバナンスやその他の管理コンストラクトのように、適切に管理された環境に依存します。 このような環境 (特に複雑な環境) を確立するには、全資産の分類および編成で一貫性のあるプロセスが必要です。
 
-資産 (リソースとも呼ばれます) には、すべての仮想マシン、データ ソース、およびクラウドにデプロイされたアプリケーションが含まれます。 Azure では、資産を分類および編成するためのさまざまなメカニズムが用意されています。 「[Scaling with multiple Azure subscriptions (複数の Azure サブスクリプションでのスケーリング)](../azure-best-practices/scaling-subscriptions.md)」では、複数の条件に基づいてリソースを編成し、適切に管理された環境を確立するためのオプションについて詳しく説明しています。 この記事では、クラウド コストの可視性を提供するために Azure の基本的な概念を適用することに焦点を当てています。
+資産 (リソースとも呼ばれます) には、すべての仮想マシン、データ ソース、およびクラウドにデプロイされたアプリケーションが含まれます。 Azure では、資産を分類および編成するためのさまざまなメカニズムが用意されています。 [Azure サブスクリプションの整理と管理](../azure-best-practices/organize-subscriptions.md)に関するページでは、複数の条件に基づいてリソースを整理し、適切に管理された環境を確立するためのオプションについて詳しく説明しています。 この記事では、クラウド コストの可視性を提供するために Azure の基本的な概念を適用することに焦点を当てています。
 
 ### <a name="classification"></a>分類
 
@@ -58,15 +58,16 @@ ms.locfileid: "79312802"
 
 この記事の残りの部分では、上の図のベスト プラクティスのアプローチを使用することを前提としています。 ただし、次の記事は、お客様の会社に最適なリソース編成にこのアプローチを適用するのに役立ちます。
 
-- [複数の Azure サブスクリプションでのスケーリング](../azure-best-practices/scaling-subscriptions.md)
+- [複数のサブスクリプションを使用して、Azure 環境をスケーリングする](../azure-best-practices/scale-subscriptions.md)
+- [Azure サブスクリプションを整理および管理する](../azure-best-practices/organize-subscriptions.md)
 - [ガバナンス MVP をデプロイして適切に管理された環境の標準を管理する](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>適切なレベルのコスト アクセスの提供
 
 コストの管理はチームのアクティビティです。 クラウド導入フレームワークの組織の準備に関するセクションでは、少人数のコア チームを定義し、それらのチームによってサポートされるクラウド導入作業について説明しています。 この記事では、チームの定義について詳しく説明し、各チームにコスト管理データに対する適切なレベルの可視性が提供されるように、それぞれのメンバーに割り当てるスコープとロールを定義します。
 
-- "*ロール*" では、さまざまな資産に対してユーザーが実行できることを定義します。
-- "*スコープ*" では、ユーザーがこれらのことを実行できる資産 (ユーザー、グループ、サービス プリンシパル、またはマネージド ID) を定義します。
+- "**ロール**" では、さまざまな資産に対してユーザーが実行できることを定義します。
+- "**スコープ**" では、ユーザーがこれらのことを実行できる資産 (ユーザー、グループ、サービス プリンシパル、またはマネージド ID) を定義します。
 
 一般的なベスト プラクティスとしては、さまざまなロールやスコープにユーザーを割り当てる、最小特権モデルをお勧めします。
 

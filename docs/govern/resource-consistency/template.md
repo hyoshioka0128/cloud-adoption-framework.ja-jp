@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72e4de691e083aad1df53f6a13e46c2c7fb907e4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 378fa753a2b4ca793d8ad13de8d0c7ed4ec44dfa
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709551"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392611"
 ---
 # <a name="resource-consistency-template"></a>リソースの整合性テンプレート
 
@@ -24,11 +24,7 @@ ms.locfileid: "77709551"
 > [!IMPORTANT]
 > このテンプレートは、限定されたサンプルです。 ユーザーの要件を反映するようにこのテンプレートを更新する前に、クラウド ガバナンス戦略の中で有効なリソースの整合性の規範を定義するための以降の手順を確認する必要があります。
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx">ガバナンス規範テンプレートをダウンロードする</a>
-
-<!-- markdownlint-enable MD033 -->
+[ガバナンス規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>次のステップ
 

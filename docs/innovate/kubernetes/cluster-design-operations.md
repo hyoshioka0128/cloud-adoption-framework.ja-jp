@@ -1,6 +1,5 @@
 ---
 title: クラスターの設計と操作
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラスターの設計と操作用のクラウド導入フレームワークにおける Kubernetes について説明します。
 author: sabbour
 ms.author: asabbour
@@ -8,13 +7,15 @@ ms.topic: guide
 ms.date: 12/16/2019
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5b5aafd1c9470b566395201a46c75d96581306bd
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226701"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392734"
 ---
+<!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
+
 # <a name="cluster-design-and-operations"></a>クラスターの設計と操作
 
 クラスター構成とネットワーク設計を特定します。 インフラストラクチャのプロビジョニングを自動化することで、将来のスケーラビリティに対応します。 事業継続とディザスター リカバリーを計画することで、高可用性を維持します。
@@ -22,6 +23,8 @@ ms.locfileid: "80226701"
 ## <a name="plan-train-and-proof"></a>計画、トレーニング、および証明
 
 開始時に、以下のチェックリストとリソースを使用するとクラスターの設計の計画に役立ちます。 次の質問に答えてください。
+
+<!-- markdownlint-disable MD033 -->
 
 > [!div class="checklist"]
 >

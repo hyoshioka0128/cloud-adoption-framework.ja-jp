@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 07856662f95a588f252c78e8a3dd67eba6e8163c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d90e1fa73029d87d1f699e1a0651a63368bf3b21
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094078"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355186"
 ---
 <!-- cSpell:ignore migrateable -->
 

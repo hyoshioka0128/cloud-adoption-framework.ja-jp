@@ -1,6 +1,5 @@
 ---
 title: アプリケーションの開発とデプロイ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: アプリケーション開発とアーキテクチャのクラウド導入フレームワークで Kubernetes を使用する方法について説明します。
 author: sabbour
 ms.author: asabbour
@@ -8,13 +7,15 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 54d1af4e3f4c0669548638451544de9c6678481a
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 6ad36a6dfbce83b23bfcee382ff44daeb9db5f7f
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226705"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392762"
 ---
+<!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
+
 # <a name="application-development-and-deployment"></a>アプリケーションの開発とデプロイ
 
 アプリケーション開発のパターンとプラクティスを確認し、DevOps パイプラインを構成し、サイト信頼性エンジニアリング (SRE) のベスト プラクティスを実装します。
@@ -44,7 +45,7 @@ ms.locfileid: "80226705"
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>運用環境へのデプロイとベスト プラクティスの適用
 
-運用のためにアプリケーションを準備する場合、ベスト プラクティスの最小セットを実装する必要があります。 この段階で、以下のチェックリストを使用します。 次の質問に答えてください。
+運用環境向けにアプリケーションを準備するときには、ベスト プラクティスの最小セットを実装する必要があります。 この段階で、以下のチェックリストを使用します。 次の質問に答えてください。
 
 > [!div class="checklist"]
 >
@@ -66,7 +67,7 @@ ms.locfileid: "80226705"
 
 ## <a name="optimize-and-scale"></a>最適化とスケーリング
 
-アプリケーションの運用開始後、ワークフローの最適化と、アプリケーションとチームのスケーリングの準備はどのように行うことができますか? 最適化とスケーリングのチェックリストを使用して準備してください。 次の質問に答えてください。
+アプリケーションの運用開始後、ワークフローの最適化と、アプリケーションとチームでのスケーリングの準備はどのように行うことができますか? 最適化とスケーリングのチェックリストを使用して準備してください。 次の質問に答えてください。
 
 > [!div class="checklist"]
 >
@@ -81,4 +82,4 @@ ms.locfileid: "80226705"
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **API ゲートウェイをデプロイする。** マイクロサービスへのフロント ドアとして機能する API ゲートウェイにより、マイクロサービスからクライアントが分離され、セキュリティ レイヤーが追加されて、横断的問題を処理する負担を排除することでマイクロサービスの複雑さが軽減されます。     | [Azure Kubernetes Service にデプロイされたマイクロサービスで Azure API Management を使用する](https://docs.microsoft.com/azure/api-management/api-management-kubernetes) |
 > | **サービス メッシュをデプロイする。** サービス メッシュは、ワークロードに対するトラフィック管理、回復性、ポリシー、セキュリティ、強力な ID、可観測性などの機能を提供します。 アプリケーションはこれらの運用上の機能から切り離され、サービス メッシュがそれらをアプリケーション レイヤーからインフラストラクチャ レイヤーに移動します。     | [Kubernetes でのサービス メッシュのしくみ (ビデオ)](https://www.youtube.com/watch?v=izVWk7rYqWI&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=15&t=0s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/> [サービス メッシュの詳細](https://docs.microsoft.com/azure/aks/servicemesh-about) <br/> [Azure Kubernetes Service での Istio の使用](https://docs.microsoft.com/azure/aks/servicemesh-istio-about) <br/> [Azure Kubernetes Service での Linkerd の使用](https://docs.microsoft.com/azure/aks/servicemesh-linkerd-about) <br/> [Azure Kubernetes Service での Consul の使用](https://docs.microsoft.com/azure/aks/servicemesh-consul-about) |
-> | **サイト信頼性エンジニアリング (SRE) のプラクティスを実施する。**  サイト信頼性エンジニアリング (SRE) は、マーケットプレースで要求される速度で反復を行う一方で、重要なシステムとアプリケーションの信頼性を維持できる実証済みの手法です。   | [サイト信頼性エンジニアリング (SRE) の概要](https://docs.microsoft.com/learn/modules/intro-to-site-reliability-engineering) <br/> [Microsoft での DevOps: ゲーム ストリーミングの SRE](https://azure.microsoft.com/resources/devops-at-microsoft-game-streaming-sre) |
+> | **サイト信頼性エンジニアリング (SRE) のプラクティスを実施する。**  サイト信頼性エンジニアリング (SRE) は、マーケットプレースで要求される速度で反復を行う一方で、重要なシステムとアプリケーションの信頼性を維持できる実証済みの手法です。   | [サイト信頼性エンジニアリング (SRE) の概要](https://docs.microsoft.com/learn/modules/intro-to-site-reliability-engineering) <br/> [Microsoft での DevOps:ゲーム ストリーミングの SRE](https://azure.microsoft.com/resources/devops-at-microsoft-game-streaming-sre) |

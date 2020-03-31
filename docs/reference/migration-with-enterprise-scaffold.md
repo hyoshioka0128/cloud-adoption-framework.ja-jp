@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311610"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353753"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -77,7 +77,7 @@ Azure の加入契約には、次の 3 つの一般的なパターンがあり�
 
   ![地域パターン](../_images/reference/geographic.png)
 
-これらのパターンのそれぞれに役割がありますが、**部署**パターンが使用されることが増えています。企業のコスト モデルをモデル化する際や、統制範囲を反映する際に柔軟性が高いためです。 Microsoft Core Engineering and Operations グループによって、**連邦**、**州**、および**地方**に関してモデル化された**部署**パターンの効果的なサブセットが作成されました。 詳細については、[企業におけるサブスクリプションとリソース グループの編成](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions)に関するページを参照してください。
+これらのパターンのそれぞれに役割がありますが、**部署**パターンが使用されることが増えています。企業のコスト モデルをモデル化する際や、統制範囲を反映する際に柔軟性が高いためです。 Microsoft Core Engineering and Operations グループによって、**連邦**、**州**、および**地方**に関してモデル化された**部署**パターンの効果的なサブセットが作成されました。 詳細については、[サブスクリプションとリソース グループの整理](../ready/azure-best-practices/organize-subscriptions.md)に関するページを参照してください。
 
 ### <a name="azure-management-groups"></a>Azure 管理グループ
 

@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7b2433b787683cf8ecaaf4a1f7a858aa18bf682c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 68b360af15f6a2537fb077202373c846365266d2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093035"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353663"
 ---
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
+
 # <a name="create-hybrid-cloud-consistency"></a>一貫性のあるハイブリッド クラウドの作成
 
 この記事では、一貫性のあるハイブリッド クラウド作成するための高レベルの方法を説明します。
@@ -51,7 +53,7 @@ Azure と Azure Stack によって、顧客向けアプリケーションと社�
 
 - **エッジおよび非接続ソリューション。** 待機時間と接続性の要件に対応するには、お客様は Azure Stack でローカルにデータを処理した後、Azure に集約してさらに詳しく分析できます。 両方で共通するアプリケーション ロジックを使用できます。 多くのお客様が、工場の現場、クルーズ船、坑道など、さまざまなコンテキストにわたるこうしたエッジ シナリオに関心があります。
 - **さまざまな規制に対応するクラウド アプリケーション。** お客様は、Azure でアプリケーションの開発とデプロイを行えば、Azure Stack 上のオンプレミスにデプロイする完全な柔軟性が得られ、規制やポリシーの要件に対応できます。 コードの変更は不要です。 アプリケーションの例としては、グローバルな監査、財務報告書の作成、外国為替取引、オンライン ゲーム、経費報告書の作成が挙げられます。 お客様はビジネス要件と技術的要件に基づいて、同じアプリケーションの異なるインスタンスを Azure または Azure Stack にデプロイしようとする場合があります。 Azure はほとんどの要件を満たすのに対して、Azure Stack は必要な場合にデプロイのアプローチを補完するものです。
-- **オンプレミスのクラウド アプリケーション モデル。** お客様は、Azure の Web サービス、コンテナー、サーバーレス、マイクロサービスの各アーキテクチャを使用して、既存のアプリケーションの更新と拡張を行うか、新しいアプリケーションを構築することができます。 クラウドの Azure と、オンプレミスの Azure Stack で一貫性のある DevOps プロセスを使用できます。 中核のミッションクリティカルなアプリケーションも含めた、アプリケーションの最新化への関心が高まっています。
+- **オンプレミスのクラウド アプリケーション モデル。** お客様は、Azure の Web サービス、コンテナー、マイクロサービス、サーバーレスの各アーキテクチャを使用して、既存のアプリケーションの更新と拡張を行うか、新しいものを構築することができます。 クラウドの Azure と、オンプレミスの Azure Stack で一貫性のある DevOps プロセスを使用できます。 中核のミッションクリティカルなアプリケーションも含めた、アプリケーションの最新化への関心が高まっています。
 
 Azure Stack には 2 つのデプロイ オプションが用意されています。
 
@@ -61,6 +63,8 @@ Azure Stack には 2 つのデプロイ オプションが用意されていま�
 ## <a name="azure-stack-one-cloud-ecosystem"></a>Azure Stack の単一クラウド エコシステム
 
 完全な Azure エコシステムを使用して、Azure Stack の取り組みをスピードアップできます。
+
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
 
 - Azure では、Azure の認定を受けているアプリケーションとサービスの多くが、Azure Stack で動作することが保証されています。 複数の ISV が、Azure Stack に向けて自社のソリューションを拡張しています。 Bitnami、Docker、Kemp Technologies、Pivotal Cloud Foundry、Red Hat Enterprise Linux、SUSE Linux などの ISV があります。
 - Azure Stack は、フル マネージド サービスとして配信および運用することを選択できます。 間もなく、いくつかのパートナーから、Azure と Azure Stack にまたがるマネージド サービスのオファリングが提供される予定です。 Tieto、Yourhosting、Revera、Pulsant、NTT などのパートナーがあります。 これらのパートナーにより、クラウド ソリューション プロバイダー (CSP) プログラムから Azure 用のマネージド サービスが提供されます。 ハイブリッド ソリューションを含むようにオファリングが拡張されています。

@@ -7,13 +7,15 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d61816b0140c36aa405025358a43068201bcad03
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3680af7b55012d0fbfbe0feac632e92b178aa8d2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311933"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354226"
 ---
+<!-- cSpell:ignore FIPS SIEM majeure NSGs -->
+
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのセキュリティ保護と管理に関するベスト プラクティス
 
 移行を計画して設計するときは、移行自体について考えるだけでなく、移行後の Azure でのセキュリティと管理モデルを検討する必要があります。 この記事では、移行後の Azure のデプロイのセキュリティ保護、およびデプロイの実行を最適なレベルに維持するための継続的なタスクに関する、計画とベスト プラクティスについて説明します。

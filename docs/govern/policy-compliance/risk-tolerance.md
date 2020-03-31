@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c96039183f50d0ff189dab04defda4fd1ba2e4fc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709500"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356927"
 ---
 # <a name="evaluate-risk-tolerance"></a>リスク許容度の評価
 

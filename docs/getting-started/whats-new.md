@@ -3,22 +3,36 @@ title: 新機能
 description: Azure 向けの Microsoft クラウド導入フレームワークの最新情報について取り上げます。
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/09/2020
-ms.topic: overview
+ms.date: 03/27/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c7b3a4d946eac1b5296f4d37d50872105ce756ea
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: c701d49a80ea0ec087f26f792b7ffe8dbd4c061f
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225957"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392492"
 ---
+<!-- markdownlint-disable MD024 -->
+
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークの最新情報
 
 クラウド導入フレームワークに加えられた最近の変更の一覧を次に示します。
 
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームの連携を通して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携して Azure 向けのクラウド導入フレームワークを構築することをお勧めします。
+
+## <a name="march-27-2020"></a>2020 年 3 月 27 日
+
+Azure の導入時に作成する必要がある初期サブスクリプションについてのガイダンスを追加しました。
+
+### <a name="ready-updates"></a>準備に関する更新情報
+
+| [アーティクル]                                                                                                                 | 説明                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Azure の初期サブスクリプションを作成する](../ready/azure-best-practices/initial-subscriptions.md)                       | **新しい記事**: 運用および非運用の初期サブスクリプションを作成し、サンドボックス サブスクリプションおよび共有サービスを含むサブスクリプションを作成するかどうかを決定します。 |
+| [追加のサブスクリプションを作成して、Azure 環境をスケーリングする](../ready/azure-best-practices/scale-subscriptions.md) | 追加のサブスクリプションを作成する理由、サブスクリプション間でのリソースの移動、および新しいサブスクリプションを作成するためのヒントについて説明します。                                                   |
+| [複数の Azure サブスクリプションの整理と管理](../ready/azure-best-practices/organize-subscriptions.md)             | 管理グループ階層を作成して、Azure サブスクリプションを整理および管理できるようにします。                                                                                         |
 
 ## <a name="march-20-2020"></a>2020 年 3 月 20 日
 
@@ -69,3 +83,5 @@ ms.locfileid: "80225957"
 | [テスト、最適化、および昇格&nbsp;&nbsp;&nbsp;](../migrate/azure-migration-guide/optimize-and-transform.md)        | この記事のタイトルを、プロセス改善に関する他の提案に合わせて調整しました。                                                                                           |
 | [評価の概要](../migrate/migration-considerations/assess/index.md)                           | 特定のワークロードとその関連資産の技術的な適合性を評価することがこのフェーズにおける評価のねらいであることを示すように更新しました。                               |
 | [計画チェックリスト](../migrate/migration-considerations/prerequisites/planning-checklist.md)    | 移行後のワークロードの管理を徹底するために、移行作業に向けた計画段階で運用の整合を取っておくことの重要性を明確にするように更新しました。                  |
+
+<!-- test:ignoreNextStep -->

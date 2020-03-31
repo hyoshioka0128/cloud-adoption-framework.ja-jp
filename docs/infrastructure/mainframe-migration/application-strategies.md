@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171414"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356848"
 ---
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+
 # <a name="mainframe-application-migration"></a>メインフレーム アプリケーションの移行
 
 アプリケーションをメインフレーム環境から Azure に移行する場合、ほとんどのチームは実際的なアプローチに従います。つまり、いつでもどこでも可能なかぎり再利用し、アプリケーションを再作成または置換するときは段階的デプロイを開始します。
@@ -30,7 +32,7 @@ ms.locfileid: "78171414"
 
 - **置換:** このアプローチでは、メインフレームの機能を、クラウドの同等の機能で置き換えます。 1 つのオプションであるサービスとしてのソフトウェア (SaaS) では、財務、人事、製造、エンタープライズ リソース プランニングなど、企業の関心事のために特に作成されたソリューションが使用されます。 さらに、以前はカスタム メインフレーム ソリューションを使用して解決されていた問題を、今では多くの業界固有アプリを使用して解決できるようになっています。
 
-最初に移行する必要があるワークロードを計画した後、、関連するアプリケーション、レガシ コードベース、データベースを移動するための要件を決定することを、検討する必要があります。
+最初に移行する必要があるワークロードを計画した後、、関連するアプリケーション、レガシ コード ベース、データベースを移動するための要件を決定することを、検討する必要があります。
 
 ## <a name="mainframe-emulation-in-azure"></a>Azure でのメインフレームのエミュレーション
 

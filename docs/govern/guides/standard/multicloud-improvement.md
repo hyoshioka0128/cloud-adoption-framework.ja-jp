@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a83e2b8a0892e216106890e0bed0066be527e974
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a9c09aaf915a7f008cde80ebdc050ee95bbf7430
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709262"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357018"
 ---
+<!-- cSpell:ignore MPLS -->
+
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準的な企業のガバナンス ガイド:マルチクラウドの改善
 
 この記事では、マルチクラウドの導入のためにコントロールを追加することで物語を進めます。
@@ -32,7 +34,7 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 その後、以下に示すように、ガバナンスに影響を与えるいくつかの変化がありました。
 
 - ID は、Active Directory のオンプレミス インスタンスによって管理されている。 Azure Active Directory へのレプリケーションによりハイブリッド ID が促進された。
-- IT の操作やクラウドの操作の多くは、Azure Monitor および関連する自動化によって管理されている。
+- IT の操作やクラウドの操作の多くは、Azure Monitor および関連する自動化プロセスによって管理されている。
 - ディザスター リカバリーとビジネス継続性は Azure コンテナー インスタンスによって制御されている。
 - Azure Security Center を使用して、セキュリティ違反や攻撃を監視している。
 - Azure Security Center と Azure Monitor を使用して、クラウドのガバナンスを監視している。

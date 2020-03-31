@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb278c284a0f72a530eb4b84ecd3137b997933ac
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fc0c52932b15a0987f78e853c3b3756d27629ae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508357"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353473"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -105,3 +105,10 @@ ms.locfileid: "79508357"
 **マイナー リファクタリング:** 一部のアプリケーションは、データまたはアプリケーション レベルでのマイナー リファクタリングによって最新化できます。 この作業では、チーム メンバーがクラウドベースのデータ プラットフォームにデータをデプロイするか、またはアプリケーションにマイナーな構成変更を適用する必要があります。 これには、データまたはアプリケーション開発分野の専門家の限定的なサポートが必要になることがあります。 しかし、この作業は、IT 実装者によってサードパーティ アプリをデプロイする場合に行われる作業に似ています。 この作業は、クラウド移行チームまたはクラウド戦略チームに適しています。 この作業は、リホスト移行ほど高速でありませんが、リファクタリング作業を実行するより時間がかかりません。
 
 移行時に、作業を上記の 3 つの方法で分割し、それらの作業を適切なイテレーションで適切なチームが実行する必要があります。 ポートフォリオを多角化する一方で、作業の焦点が絞られたままであり、分離されていることも確認してください。
+
+## <a name="next-steps"></a>次のステップ
+
+[グローバル マーケットの決定](./global-markets.md)が変革過程に与える影響を把握します。
+
+> [!div class="nextstepaction"]
+> [グローバル マーケットについて理解する](./global-markets.md)

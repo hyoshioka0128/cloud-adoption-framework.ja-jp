@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4281638b7badf9b672ba3a38d2daa847b7604e7e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094627"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356380"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 
@@ -43,7 +43,7 @@ Azure サーバー管理サービスのデプロイの効率を向上させる�
 | WorkspaceSolutions.json | Log Analytics ワークスペース内で目的のソリューションを有効にする Resource Manager テンプレート。 |
 | ScopeConfig.json | Change Tracking ソリューションを備えたオンプレミスのサーバーにオプトイン モデルを使用する Resource Manager テンプレート。 オプトイン モデルの使用はオプションです。 |
 | Enable-VMInsightsPerfCounters.ps1 | サーバーに対して VM Insights を有効にし、パフォーマンス カウンターを構成する PowerShell スクリプト。 |
-| ChangeTracking-Filelist.json | Change Tracking によって監視されるファイルの一覧を定義する Resource Manager テンプレート。 |
+| ChangeTracking-FileList.json | Change Tracking によって監視されるファイルの一覧を定義する Resource Manager テンプレート。 |
 
 New-AMSDeployment.ps1 を実行するには次のコマンドを使用します。
 

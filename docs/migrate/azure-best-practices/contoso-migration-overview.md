@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ecb6cfc10b88490269b50a5fe6bec7d2c3277d7b
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: b7ea46fb1723e0603aa7251f135caa51b9f998ad
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312770"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356035"
 ---
 # <a name="application-migration-patterns-and-examples"></a>アプリケーションの移行パターンと例
 

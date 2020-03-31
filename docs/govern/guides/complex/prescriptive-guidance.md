@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: bbd50e5e2ddda9489f0fc7a90a546ef41fd86ade
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312710"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357119"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雑な企業向けのガバナンス ガイド: ベスト プラクティスの説明
 
@@ -50,7 +50,7 @@ ms.locfileid: "79312710"
 
 ### <a name="subscription-design"></a>サブスクリプション デザイン
 
-使用するサブスクリプション デザインを決めると、サブスクリプションを構造化する方法と、Azure 管理グループを使用してこれらのサブスクリプションのアクセス、ポリシー、およびコンプライアンスを効率的に管理する方法が決まります。 ここでは、ガバナンス チームは、 **[混合](../../../decision-guides/subscriptions/index.md#mixed-patterns)** サブスクリプション デザイン パターンを選択しています。
+使用するサブスクリプション デザインを決めると、サブスクリプションを構造化する方法と、Azure 管理グループを使用してこれらのサブスクリプションのアクセス、ポリシー、およびコンプライアンスを効率的に管理する方法が決まります。 ここでは、ガバナンス チームは、 **[混合サブスクリプション戦略](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** を選択しています。
 
 - Azure リソースに対する新しい要求が発生した場合、各運用地域で主な部署ごとに "部門" を確立する必要があります。 各部門内で、アプリケーション アーキタイプごとに "サブスクリプション" を作成する必要があります。
 - アプリケーション アーキタイプは、同様のニーズを持つアプリケーションをグループ化する手段です。 たとえば、次のような場合です。保護されたデータのあるアプリケーション、管理されたアプリケーション (HIPAA、FedRAMP など)、低リスク アプリケーション、オンプレミスに依存するアプリケーション、Azure での SAP や他のメインフレーム アプリケーション、オンプレミスの SAP やメインフレーム アプリケーションを拡張するアプリケーション。 各組織には、データの分類と、ビジネスをサポートするアプリケーションの種類に基づき、固有のニーズがあります。 デジタル資産の依存関係のマッピングは、組織でのアプリケーション アーキタイプの定義に役立つ場合があります。

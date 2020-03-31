@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709313"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357048"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準的な企業のガバナンス ガイド:ベスト プラクティスの説明
 
@@ -50,7 +50,7 @@ ms.locfileid: "77709313"
 
 ### <a name="subscription-design"></a>サブスクリプション デザイン
 
-使用するサブスクリプション デザインを決めると、サブスクリプションを構造化する方法と、Azure 管理グループを使用してこれらのサブスクリプションのアクセス、ポリシー、およびコンプライアンスを効率的に管理する方法が決まります。 ここでは、ガバナンス チームは、[運用と非運用](../../../decision-guides/subscriptions/index.md#production-and-nonproduction-pattern)サブスクリプション デザイン パターンを選択しています。
+使用するサブスクリプション デザインを決めると、サブスクリプションを構造化する方法と、Azure 管理グループを使用してこれらのサブスクリプションのアクセス、ポリシー、およびコンプライアンスを効率的に管理する方法が決まります。 ここでは、ガバナンス チームは運用環境と非運用環境のワークロードのサブスクリプションである[運用と非運用](../../../ready/azure-best-practices/initial-subscriptions.md)のサブスクリプション デザイン パターンを確立しました。
 
 - 現在のフォーカスによっては、部門は必要ない可能性があります。 デプロイは 1 つの課金単位内に制約されることが期待されます。 導入のステージでは、課金を一元化するためのエンタープライズ契約さえない可能性があります。 このレベルの導入は、単一の従量課金制 Azure サブスクリプションによって管理されている場合があります。
 - EA ポータルの使用や、エンタープライズ契約の有無に関係なく、サブスクリプション モデルを定義して合意し、単なる課金を超える管理オーバーヘッドを最小限に抑える必要があります。

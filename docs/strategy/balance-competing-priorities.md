@@ -1,18 +1,18 @@
 ---
 title: 競合する優先順位のバランスを取る
-description: 競合する優先順位のバランスを取る戦略を発見する
+description: 競合する優先順位のバランスを取る戦略を見い出します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ba70687627e81b58eb76cd69838abf1ebcdb6489
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a0524d8e7cd48f3b93191d9633bb57b10fb2261b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312718"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353703"
 ---
 # <a name="balance-competing-priorities"></a>競合する優先順位のバランスを取る
 
@@ -137,3 +137,10 @@ ms.locfileid: "79312718"
 **最小範囲:** ほとんどの組織は、時間の経過と共に自然な一連の進化を経ます。 整理手法では、最も一般的な一連の進化の概要を説明します。 推奨されるガイダンスは、チームが委任管理アプローチを実現するために、クラウドのセンター オブ エクセレンス構造に向かって取り組むことです。
 
 **範囲の拡張例:** 一元管理の必要性がトリガーされる状況はさまざまです。 サード パーティのコンプライアンス要件と一時的なセキュリティ侵害は、一元管理のトリガーの 2 つの例です。 このような状況では、一般的に、制限ポリシーと厳格で固定された管理を確立する必要があります。 ただし、イノベーションと導入を継続するには、中央の IT チームが各ワークロードの重要度と機密性に基づいてこのような管理を実現することをお勧めします。 管理が少なく、範囲またはリスク プロファイルを減らした環境を用意することで、管理が必要な場合でも柔軟に対応できます。
+
+## <a name="next-steps"></a>次のステップ
+
+クラウド移行の取り組みの価値を最大限に高めるために、[移行、イノベーション、実験のバランスを取る](./balance-the-portfolio.md)方法を確認します。
+
+> [!div class="nextstepaction"]
+> [ポートフォリオのバランスを取る](./balance-the-portfolio.md):

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e505b7794c9eeff94d746286e0d8cbb9f0cea86e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: a22742755f9336fd1cbbae3bb4417314228a432d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171261"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356812"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Azure でデータを民主化するためのツール
 
@@ -39,26 +39,26 @@ ms.locfileid: "78171261"
 
 Azure では、上記のフェーズでデジタル発明を加速するために、一般的に次のツールが使用されます。
 
-- Power BI
-- Azure Data Catalog
-- Azure SQL Data Warehouse
-- Azure Cosmos DB
-- Azure Database for PostgreSQL
-- Azure Database for MySQL
-- Azure Database for MariaDB
-- Azure Database for PostgreSQL Hyperscale
-- Azure Data Lake
-- Azure Database Migration Service
-- Azure SQL Database (マネージド インスタンスあり、またはなし)
-- Azure Data Factory
-- Azure Stream Analytics
-- SQL Server Integration Services
-- Azure Stack
-- SQL Server Stretch Database
-- Microsoft Azure StorSimple
-- Azure Files
-- Azure File Sync
-- PolyBase
+- [Power BI](https://docs.microsoft.com/power-bi)
+- [Azure Data Catalog](https://docs.microsoft.com/azure/data-catalog)
+- [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics)
+- [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)
+- [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql)
+- [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql)
+- [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb)
+- [Azure Database for PostgreSQL Hyperscale](https://docs.microsoft.com/azure/postgresql/concepts-hyperscale-nodes)
+- [Azure Data Lake](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
+- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms)
+- [Azure SQL Database (マネージド インスタンスあり、またはなし)](https://docs.microsoft.com/azure/sql-database)
+- [Azure Data Factory](https://docs.microsoft.com/azure/data-factory)
+- [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics)
+- [SQL Server Integration Services](https://docs.microsoft.com/sql/integration-services)
+- [Azure Stack](https://docs.microsoft.com/azure-stack)
+- [SQL Server Stretch Database](https://docs.microsoft.com/sql/sql-server/stretch-database)
+- [Microsoft Azure StorSimple](https://docs.microsoft.com/azure/storsimple)
+- [Azure Files](https://docs.microsoft.com/azure/storage/files)
+- [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning)
+- [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase)
 
 発明が大規模な導入に近づくにつれて、各ソリューションの側面に改良と技術的な成熟が必要です。 そのような場合は、これらのサービスのより多くが必要になる可能性があります。 仮説のテスト プロセスに関連する Azure ツールのガイダンスについては、このページの左側の目次を使用してください。
 

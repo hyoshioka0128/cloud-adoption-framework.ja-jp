@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225804"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353820"
 ---
+<!-- cSpell:ignore jelledruyts andym endjin -->
+
 # <a name="stay-current-with-microsoft-azure"></a>Microsoft Azure を最新の状態に保つ
 
 Microsoft Azure のようなクラウド プラットフォームは、多くの組織がこれまで経験してきたものより早く変化します。 この変化のペースは、組織が人員とプロセスをこの新たなペースに適応させることが必要であることを意味しています。 組織がこの変化に対応するのに責任を負う担当者は、圧倒される思いがすることもあるでしょう。 このセクションで示されているリソースは、最新情報を入手するのに役立ちます。
@@ -54,9 +56,9 @@ Azure に関する最新情報を入手するのに役立つより詳しいコ�
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - 毎週発行の、Azure を構築しているエンジニアによる動画。 内容は、デモ、質問への回答、分析情報の共有などです。
   - [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) 経由でサブスクライブします。
-- [Azure グラフ](https://azurecharts.com/)*
+- [Azure グラフ](https://azurecharts.com)*
   - この視覚化では、過去 6 か月間に加えられたすべての Azure の更新が表示されます。 Azure の変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。
-- [AzAdvertizer](https://www.azadvertizer.net/)*
+- [AzAdvertizer](https://www.azadvertizer.net)*
   - Azure ガバナンス機能 (Azure Policy、ポリシー イニシアチブブ、ポリシー エイリアス、RBAC など) でのリリースと変更の追跡。
 - [Azure Weekly](https://azureweekly.info)*
   - [endjin](https://endjin.com) が提供するこのニュースレターには、Microsoft Azure に関するその週のトップ ニュースの概要が含まれます。 また、興味深い歴史的なコンテンツも含まれています。

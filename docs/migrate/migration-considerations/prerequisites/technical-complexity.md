@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 56c7d171d46813d7175e93759be10ce1423115b0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311831"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355152"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 

@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223484"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356757"
 ---
+<!-- cSpell:ignore deprioritize -->
+
 # <a name="empower-adoption"></a>導入の強化
 
 イノベーションの最終的なテストは、その発明に対する顧客の反応です。 仮説は正しかったのか。 顧客はこのソリューションを使用するのか。 期待する割合のユーザーのニーズに合うようにスケーリングされているのか。 最も重要なこととして、ユーザーは使い続けてくれるのか。 これらの質問は、実用最小限の製品 (MVP) ソリューションがデプロイされるまで確認できません。 この記事では、導入の強化の規範に焦点を絞って説明します。
@@ -43,7 +45,7 @@ ms.locfileid: "78223484"
 
 「[顧客への影響を測定する](./measure.md)」で説明するように、仮説の有益な検証には反復と決断が必要になります。 イノベーション サイクル中は、成功よりも失敗の方がはるかに多いでしょう。 これは予期されることです。 ただし、顧客のニーズ、仮説、ソリューションを大規模に調整すると、世界はすぐに変わります。
 
-イノベーションをスケーリングする場合、ソリューションの共有コードベースほど有益なツールはありません。 残念ながら、どの反復または MVP の組み合わせが成功につながるのかを確実に予測する方法はありません。 このため、共有コードベースまたはリポジトリはいつ確立しても早すぎるということはありません。 これは、遅滞すべきでない[技術的スパイク](./build.md#reduce-complexity-and-delay-technical-spikes)の 1 つです。 チームはさまざまな MVP ソリューションを反復するため、共有リポジトリによって共同作業がしやすくなり、迅速な開発が可能になります。 ソリューションの変更が学習メトリックに悪影響を及ぼす場合は、バージョン コントロールを使用して、以前のより効果的なバージョンのソリューションにロールバックできます。
+イノベーションをスケーリングする場合、ソリューションの共有コード ベースほど有益なツールはありません。 残念ながら、どの反復または MVP の組み合わせが成功につながるのかを確実に予測する方法はありません。 このため、共有コード ベースまたはリポジトリはいつ確立しても早すぎるということはありません。 これは、遅滞すべきでない[技術的スパイク](./build.md#reduce-complexity-and-delay-technical-spikes)の 1 つです。 チームはさまざまな MVP ソリューションを反復するため、共有リポジトリによって共同作業がしやすくなり、迅速な開発が可能になります。 ソリューションの変更が学習メトリックに悪影響を及ぼす場合は、バージョン コントロールを使用して、以前のより効果的なバージョンのソリューションにロールバックできます。
 
 コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。これを使うと、いくつかの手順を実行するだけで共有コード リポジトリを作成できます。 また、Azure DevOps の [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 機能を使用して、[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) または [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) リポジトリを作成することもできます。
 

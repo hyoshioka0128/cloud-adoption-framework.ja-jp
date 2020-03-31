@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e38616b97f5026bd66de510cac12932290e276ba
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aa544540c0bebb001f9256527a5f0ba388801c3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093275"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354808"
 ---
 # <a name="review-rationalization-decisions"></a>合理化決定を見直す
 
@@ -68,7 +68,7 @@ Azure DevOps でクラウド導入計画を管理する場合は、親作業項�
 
 ## <a name="next-steps"></a>次のステップ
 
-計画作業を開始するために[イテレーションとリリースを定義します](./iteration-paths.md)。
+計画作業を開始するために[イテレーション計画とリリース計画を確立します](./iteration-paths.md)。
 
 > [!div class="nextstepaction"]
-> 計画作業を開始するために[イテレーションとリリースを定義します](./iteration-paths.md)。
+> 計画作業を開始するために[イテレーション計画とリリース計画を確立します](./iteration-paths.md)。

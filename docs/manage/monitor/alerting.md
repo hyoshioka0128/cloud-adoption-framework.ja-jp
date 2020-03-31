@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: c6f48ae433746906d64023bd72f34c21a3163373
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091281"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356314"
 ---
+<!-- cSpell:ignore kusto multiresource multisignal -->
+
 # <a name="cloud-monitoring-guide-alerting"></a>クラウド監視ガイド: アラート
 
 何年もの間、IT 組織は、企業に展開された監視ツールから生成されるアラート疲れとの戦いに苦労してきました。 多くのシステムからはアラートが大量に生成され、意味がないと考えられるものも多いのですが、関連性があるにもかかわらず見過ごされたり、無視されたりするアラートもあります。 その結果、IT と開発者の業務においては苦労して、社内や社外の顧客に約束したサービスレベル品質を満たしてきました。 信頼性を確保するためには、インフラストラクチャとアプリケーションの状態を理解することが不可欠です。 サービスの低下や中断を最小限に抑える、インシデントの影響を軽減する、またはインシデント数を減らすには、原因をすばやく特定する必要があります。

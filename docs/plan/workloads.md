@@ -1,20 +1,20 @@
 ---
-title: クラウド導入のワークロードを優先付けして定義する
-description: Azure 向けのクラウド導入フレームワークを使用して、クラウド導入計画のワークロードに優先順位を付け、それらを定義する方法を学習します。
+title: クラウド導入のワークロードを定義し、優先順位を付ける
+description: Azure 向けのクラウド導入フレームワークを使用して、クラウド導入計画のワークロードを定義し、優先順位を付ける方法を学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140622"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354702"
 ---
-# <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>クラウド導入計画のワークロードを優先付けして定義する
+# <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>クラウド導入計画のワークロードを定義し、優先順位を付ける
 
 明確で実行可能な優先順位を設定することは、クラウド導入を成功させる秘訣の 1 つです。 ついしがちな行動として、クラウド導入時に影響を受ける可能性があるすべてのワークロードを定義することに時間を費やすことがあります。 ただし、それは、特に導入プロセスの初期段階では逆効果になります。
 

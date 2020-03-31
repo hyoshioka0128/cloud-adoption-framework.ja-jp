@@ -7,13 +7,15 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 988d7524941b49821cd96546cc3adafe317dff8a
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311491"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356238"
 ---
+<!-- cSpell:ignore contosohost contosodc vcenter DBHOST DBUSER WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager CNAME -->
+
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Azure App Service、Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリをリファクターする
 
 この記事では、架空の会社である Contoso が、2 階層の Linux ベースの Apache MySQL PHP (LAMP) アプリをリファクターし、オンプレミスから Azure に移行して Azure App Service と GitHub の統合と、Azure Database for MySQL を使用する方法を示します。
@@ -291,7 +293,7 @@ Contoso 管理者は、新しいプライベート GitHub リポジトリを作�
 
     ![アプリの構成](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 
-8. カスタム ホスト名を許可するように **osticket-eus2** Web アプリと **osticket-cus** Web アプリの両方を構成します。
+8. カスタム ホスト名を許可するように **osticket-eus2** と **osticket-cus** Web アプリの両方を構成します。
 
     ![アプリの構成](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app7.png)
 

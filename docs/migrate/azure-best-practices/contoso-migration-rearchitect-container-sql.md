@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 37bf2a4d96cc1f60b351f40f6a2c51c2ea1dcf95
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 83a5c356f5144700173fa4df593e313e44e3172f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311644"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356369"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
 
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Azure コンテナーと Azure SQL Database でオンプレミス アプリを再構築する
 
-この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware VM 上で実行される 2 層の Windows .NET アプリをリアーキテクトする方法を示します。 Contoso は、アプリ フロントエンド VM を Azure Windows コンテナーに、アプリ データベースを Azure SQL データベースに移行します。
+この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware VM 上で実行される 2 層の Windows .NET アプリを再設計する方法を示します。 Contoso は、アプリ フロントエンド VM を Azure Windows コンテナーに、アプリ データベースを Azure SQL データベースに移行します。
 
 この例で使用される SmartHotel360 アプリは、オープン ソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
 

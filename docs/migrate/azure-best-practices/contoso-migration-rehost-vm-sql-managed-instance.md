@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 6b479ac5bd347cda081dc55dbabdc4fbd46d5b11
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311967"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356159"
 ---
+<!-- cSpell:ignore IISRESET WEBVM SQLVM SQLMI contosodc contosohost contosovmsacc cswiz vcenter WEBMV sourcedb -->
+
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>オンプレミス アプリを Azure VM および SQL Database Managed Instance にリホストする
 
 この記事では、Contoso という架空の会社が、Azure Site Recovery サービスを使用して、VMware VM 上で実行される 2 階層の Windows .NET フロントエンド アプリを Azure VM に移行する方法を説明します。 また、Contoso がアプリ データベースを Azure SQL Database Managed Instance に移行する方法も説明します。

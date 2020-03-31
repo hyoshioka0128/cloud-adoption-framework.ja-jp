@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f229515b39c69fa0e9e6c840810720bca4e12dc6
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f1c35b41f267887c62b2568583b929657517c87e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342050"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354846"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>効果的なクラウド導入計画の前提条件
 
@@ -40,7 +40,7 @@ ms.locfileid: "78342050"
 
 ## <a name="next-steps"></a>次のステップ
 
-チームが戦略的入力とデジタル資産の合理化の入力に満足したら、次の手順である[ワークロードの優先順位付け](./workloads.md)を開始できます。
+Azure DevOps に[クラウド導入計画テンプレートをデプロイします](./template.md)。
 
 > [!div class="nextstepaction"]
-> [ワークロードの優先順位と定義](./workloads.md)
+> [Azure DevOps にテンプレートをデプロイする](./template.md)

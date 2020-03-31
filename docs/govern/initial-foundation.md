@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3e7d19fbce96528252e297855a1de41b09492c81
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 5cd0a9f4a9ec7d32b2aced903f2689884c32e97c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223805"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356974"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の確立
 
@@ -24,7 +24,9 @@ ms.locfileid: "78223805"
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>クラウド導入フレームワークを既に使用
 
-クラウドの導入フレームワークに従ってきた場合は、ガバナンス MVP が既にデプロイされている可能性があります。 ガバナンスは、運用モデルの核となる要素です。 クラウド導入ライフサイクルのすべての方法論に存在します。 そのため、[クラウド導入フレームワーク](../index.md)によって、[クラウド導入計画](../plan/index.md)の実装に関連するアクティビティにガバナンスを挿入するガイダンスが提供されます。 このガバナンス統合の 1 つの例は、ブループリントを使用して、[準備](../ready/index.md)ガイダンスにある 1 つ以上のランディング ゾーンをデプロイすることです。 別の例は、[サブスクリプションのスケールアウト](../ready/azure-best-practices/scaling-subscriptions.md)に関するガイダンスです。 これらの推奨事項のいずれかに従ってきた場合、以下の MVP セクションは、既存のデプロイの決定の単なるレビューです。 クイック レビューの後、[初期のガバナンス ソリューションの成熟化とベスト プラクティスのコントロールの適用](./foundation-improvements.md)に進みます。
+クラウドの導入フレームワークに従ってきた場合は、ガバナンス MVP が既にデプロイされている可能性があります。 ガバナンスは、運用モデルの核となる要素です。 クラウド導入ライフサイクルのすべての方法論に存在します。 そのため、[クラウド導入フレームワーク](../index.md)によって、[クラウド導入計画](../plan/index.md)の実装に関連するアクティビティにガバナンスを挿入するガイダンスが提供されます。
+
+このガバナンス統合の 1 つの例は、ブループリントを使用して、[準備](../ready/index.md)ガイダンスにある 1 つ以上のランディング ゾーンをデプロイすることです。 別の例は、[サブスクリプションの整理と管理](../ready/azure-best-practices/organize-subscriptions.md)に関するガイダンスです。 これらの推奨事項のいずれかに従ってきた場合、以下の MVP セクションは、既存のデプロイの決定の単なるレビューです。 クイック レビューの後、[初期のガバナンス ソリューションの成熟化とベスト プラクティスのコントロールの適用](./foundation-improvements.md)に進みます。
 
 ## <a name="establish-an-initial-governance-foundation"></a>初期のガバナンス基盤の確立
 
@@ -40,7 +42,7 @@ ms.locfileid: "78223805"
                 <div class="card">
                     <div class="cardText">
                         <h3>標準的なガバナンス ガイド</h3>
-                        <p>推奨される 2 つのサブスクリプション モデルに基づく大半の組織向けのガイドです。複数のリージョンでのデプロイ向けですが、パブリック クラウドおよびソブリンまたは政府機関クラウドは対象ではありません。</p>
+                        <p>推奨される初期の 2 つのサブスクリプション モデルに基づく大半の組織向けのガイドです。複数のリージョンでのデプロイ向けですが、パブリック クラウドおよびソブリンまたは政府機関クラウドは対象ではありません。</p>
                     </div>
                 </div>
             </div>

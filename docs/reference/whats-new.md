@@ -7,12 +7,12 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 0e93f0279ba210be594b3b5af40cf16657f224e3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a3e316d49acaaee00d5ecd10efac9aa15c2dbd49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79095383"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353674"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework"></a>Microsoft クラウド導入フレームワークの最新情報
 

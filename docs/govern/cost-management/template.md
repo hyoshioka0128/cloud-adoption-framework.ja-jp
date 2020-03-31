@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce937c6e3c173d829a311b838e33ede754a0f173
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708803"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392478"
 ---
 # <a name="cost-management-template"></a>Cost Management テンプレート
 
@@ -24,11 +24,7 @@ ms.locfileid: "77708803"
 > [!IMPORTANT]
 > このテンプレートは、限定されたサンプルです。 お客様の要件を反映するようにこのテンプレートを更新する前に、クラウド ガバナンス戦略内で有効な Cost Management の規範を定義するための後続の手順を確認する必要があります。
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx">ガバナンス規範テンプレートをダウンロードする</a>
-
-<!-- markdownlint-enable MD033 -->
+[ガバナンス規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>次のステップ
 

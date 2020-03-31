@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c7e90c1536b2911f8301b1a97f8731139976b4f1
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 7cefe7d64dbda13321b362f298c1ac45aa99ebcc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342067"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354931"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>優先順位付けされたワークロードに合わせて資産を調整します
 
-ワークロードは、次の資産のコレクションの概念的な説明です:VM、アプリケーション、データ ソース。 [ワークロードの優先順位付けと定義](./workloads.md)に関する前記事では、ワークロードを定義するデータを収集するためのガイダンスを紹介しました。 移行前に、そのリスト内のいくつかの技術的な入力に追加の検証が必要です。 この記事は、以下の入力の検証に役立ちます。
+ワークロードは、次の資産のコレクションの概念的な説明です:VM、アプリケーション、データ ソース。 [定義と優先順位付け](./workloads.md)に関する前の記事では、ワークロードを定義するデータを収集するためのガイダンスを紹介しました。 移行前に、そのリスト内のいくつかの技術的な入力に追加の検証が必要です。 この記事は、以下の入力の検証に役立ちます。
 
 - **アプリケーション:** このワークロードに含まれるすべてのアプリケーションを記載します。
 - **VM とサーバー:** ワークロードに含まれるすべての VM またはサーバーを記載します。

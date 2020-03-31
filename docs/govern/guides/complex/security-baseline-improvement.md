@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: de9fd12afe7445c5cdd3b4ae8c1eba9c7cb07f19
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706814"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357055"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: セキュリティ ベースライン規範の改善
 
@@ -133,7 +133,7 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
     1. [共有サービスを含むハブ スポーク トポロジ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)に関する前のセクションの参照アーキテクチャでは、VNet ピアリングを有効にするために Resource Manager テンプレートが生成されました。
     2. そのテンプレートは、以前のガバナンスのイテレーションの DMZ テンプレートを修正するためのガイドとして使用できます。
     3. ここでは、以前は VPN 経由でローカル エッジ デバイスに接続されていた DMZ VNet に VNet ピアリングを追加しています。
-    4. *** また、コーポレート IT サブスクリプションおよびファイアウォール ソリューションを経由せずに、オンプレミスのデータセンターにトラフィックが直接ルーティングされることが確実にないよう、このテンプレートからも VPN を削除する必要があります。 ExpressRoute 回線の停止が発生した場合に、この VPN をフェールオーバー回線として設定することもできます。
+    4. *** また、コーポレート IT サブスクリプションおよびファイアウォール ソリューションを経由せずに、オンプレミスのデータセンターにトラフィックが直接ルーティングされることが確実にないよう、このテンプレートからも VPN を削除する必要があります。 ExpressRoute 回線の停止が発生した場合に備えて、この VPN をフェールオーバー回線として設定することもできます。
     5. ホストされた VM に DSC を適用するために、追加の[ネットワーク構成](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning)が Azure Automation によって要求されます。
 2. ネットワーク セキュリティ グループを修正します。 ネットワーク セキュリティ グループ内で、すべてのパブリック**および**直接のオンプレミス トラフィックをブロックします。 唯一の受信トラフィックが、コーポレート IT サブスクリプション内の VNet ピアを通過するようにしてください。
     1. 以前のイテレーションでは、すべてのパブリック トラフィックをブロックし、すべての内部トラフィックをホワイトリストに登録するネットワーク セキュリティ グループを作成しました。 今度はこのネットワーク セキュリティ グループを少しシフトします。

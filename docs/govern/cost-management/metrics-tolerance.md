@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 221a29db7eb68acc6ffd5b52a0b01c1769e00222
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708820"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357179"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management のメトリック、インジケーター、およびリスク許容度
 

@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: b1fceb8a7b54ce88917f6feaef6ea70f5aa2f023
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091935"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355629"
 ---
+<!-- cSpell:ignore Hanu Scalr VHDs autosnooze unsnooze -->
+
 # <a name="scale-a-migration-to-azure"></a>Azure への移行のスケーリング
 
 この記事では、架空の会社 Contoso が Azure に対して大規模な移行を行う方法について説明します。 それぞれ 3,000、8,000、10,000 を超えるワークロード、データベース、VM の移行をどのように計画し、実行するかを検討します。

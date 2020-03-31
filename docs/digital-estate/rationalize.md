@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 042487ce2c579f581547e4942785cbbba659ad5e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312722"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357269"
 ---
 # <a name="rationalize-the-digital-estate"></a>デジタル資産の合理化
 

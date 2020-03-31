@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 063fc4074a7b5972b6b2938abdcb90937412e832
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092507"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353535"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -66,7 +66,7 @@ Azure のクラウド導入フレームワークは、クラウド導入のプ�
 
 ## <a name="next-steps"></a>次のステップ
 
-最初のクラウド導入プロジェクトが開始されると、クラウド戦略チームは長期的な[クラウド導入計画](../plan/index.md)に注意を向けることができます。
+[競合する優先順位のバランスを取る](./balance-competing-priorities.md)ための戦略について学習します。
 
 > [!div class="nextstepaction"]
-> [クラウド導入計画を作成する](../plan/index.md)
+> [競合する優先順位のバランスを取る](./balance-competing-priorities.md)

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 267408d4634bbed9c6bb9c8884e2af395f5df4d9
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337828"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353480"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,8 +42,7 @@ ms.locfileid: "78337828"
 
 ## <a name="next-steps"></a>次のステップ
 
-グローバル マーケットの決定を行って伝達した後、チームはそれらのメトリックに対する[技術標準の確立](../digital-estate/index.md)を始めることができます。
-結果は、[変換バックログまたは移行バックログ](..//migrate/migration-considerations/prerequisites/technical-complexity.md)になります。
+クラウド導入の取り組みの[戦略フェーズで必要となるスキル](./suggested-skills.md)について確認します。
 
 > [!div class="nextstepaction"]
-> [デジタル資産を評価する](../digital-estate/index.md)
+> [戦略に関連するスキル](./suggested-skills.md)
