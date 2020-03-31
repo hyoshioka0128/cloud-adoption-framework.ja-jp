@@ -4,15 +4,15 @@ description: クラウドへの移行を準備するのに役立ち、移行の�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb7d0c8b0ee6ebd328ffd4807199e0b0e2620d35
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: ddbd2374cea98d08760e53eba885171aa854ed17
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173317"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429027"
 ---
 # <a name="prerequisites-for-migration"></a>移行の前提条件
 
