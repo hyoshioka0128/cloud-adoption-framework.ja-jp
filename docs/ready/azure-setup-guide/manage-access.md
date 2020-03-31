@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 86988a83b0c68bea60d0cceff5a168e2b2b08fd5
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 5fedbb5164da05b166d8a42d8d1ceaf43ee95185
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024059"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354444"
 ---
-<!-- cSpell:ignore LijuKodicheraJayadevan Fsubscriptions Fresource -->
+<!-- cSpell:ignore LijuKodicheraJayadevan -->
 
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>ロールベースのアクセス制御を使用して Azure 環境へのアクセスを管理する
 
@@ -46,7 +46,7 @@ RBAC は、Azure 内のリソースの詳細なアクセス管理を実現しま
 1. **[+ 追加]**  >  **[ロール割り当ての追加]** の順に選択します。
 1. ロールを選択し、ユーザー、グループ、またはサービス プリンシパルへのアクセスを割り当てます。
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" ::: form-end
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources/Subscriptions/ResourceGroups]" submitText="Go to resource groups" ::: form-end
 
 **サブスクリプションへのアクセスを許可する:**
 
@@ -68,7 +68,7 @@ RBAC は、Azure 内のリソースの詳細なアクセス管理を実現しま
 
 ユーザーにリソース グループへのアクセス権を付与するには:
 
-1. [リソース グループ](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups)に移動します。
+1. [リソース グループ](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)に移動します。
 1. リソース グループを選択します。
 1. **[アクセス制御 (IAM)]** を選択します。
 1. **[+ 追加]**  >  **[ロール割り当ての追加]** の順に選択します。

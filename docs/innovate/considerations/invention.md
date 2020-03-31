@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4ddc8c0e479aaf0feee928249919edf9899ce40f
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f9303adc183596f93c822224e5098549a533a153
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171193"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356743"
 ---
 # <a name="develop-digital-inventions"></a>デジタル発明を開発する
 
@@ -22,7 +22,7 @@ ms.locfileid: "78171193"
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>デジタル発明の各規範の概要
 
-すべてのケースでイノベーションを促進するために、以下の規範の "*すべて*" が必要になるわけではありません。 「[顧客の共感を構築する](./build.md)」のガイダンスに示されているように、すべてのイテレーションで仮説をテストすることが目標です。 各イテレーションの出力を[実用最低限の製品 (MVP)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance#minimum-viable-product-mvp-for-policy) として定義することで、含める規範の数を最小限に抑えられます。
+すべてのケースでイノベーションを促進するために、以下の規範の "*すべて*" が必要になるわけではありません。 「[顧客の共感を構築する](./build.md)」のガイダンスに示されているように、すべてのイテレーションで仮説をテストすることが目標です。 各イテレーションの出力を[実用最低限の製品 (MVP)](../../govern/policy-compliance/index.md) として定義することで、含める規範の数を最小限に抑えられます。
 
 - **[データの民主化](./data.md):** 顧客、パートナー、従業員の手にデータを渡すことで、革新的な意見が促進されます。 データの取り込み、一元化、管理、および共有を行います。
 - **[アプリによる連携](./apps.md):** 人は、アプリとエクスペリエンスを通して、知識とつながります。 プロの開発者と市民開発者によるアプリの迅速な作成を支援します。

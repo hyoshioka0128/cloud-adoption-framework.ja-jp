@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5063d22cee1a2711bc3dd4c2d052df2870b61c5a
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 113fb918e24afd6356eb9eafe840dd97429e044e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171023"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356617"
 ---
+<!-- cSpell:ignore umarmohamedusman umarm Moovit -->
+
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-interact-through-devices"></a>Azure イノベーション ガイド:デバイス経由の操作
@@ -59,7 +61,7 @@ Azure のお客様は、ユーザー、データ、またはその両方に近�
 
 ::: zone target="docs"
 
-**[IoT Hub](https://docs.microsoft.com/azure/iot-dps) に移動する**
+**[IoT Hub](https://docs.microsoft.com/azure/iot-hub) に移動する**
 
 **[デバイス プロビジョニング サービス](https://docs.microsoft.com/azure/iot-dps)に移動する**
 
@@ -163,7 +165,7 @@ Azure Maps サービスでは、近傍、トラフィック、ルート指定な
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Maps%2Faccounts]" submitText="Go to Azure Maps Account" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Maps%2FAccounts]" submitText="Go to Azure Maps Account" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -198,7 +200,7 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.MixedReality%2FspatialAnchorsAccounts]" submitText="Go to Spatial Anchors Accounts" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.MixedReality%2FSpatialAnchorsAccounts]" submitText="Go to Spatial Anchors Accounts" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -229,7 +231,7 @@ Azure Remote Rendering を使用するには:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Batch%2FbatchAccounts]" submitText="Go to Azure Batch" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Batch%2FBatchAccounts]" submitText="Go to Azure Batch" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

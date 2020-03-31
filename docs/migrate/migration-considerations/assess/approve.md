@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d674cfe0378613530adb329ae21b9c379742e91
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 2de71f5a28da4b6ec7c876f26f929b3e0e6de425
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312086"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353827"
 ---
+<!-- cSpell:ignore architected ITIL -->
+
 # <a name="approve-architecture-changes-before-migration"></a>移行前にアーキテクチャの変更を承認する
 
 移行の評価プロセスの間、ワークロードの将来状態計画を作成するために各ワークロードの評価、設計、見積もりが行われます。 一部のワークロードは、アーキテクチャの変更なしでクラウドに移行できます。 オンプレミスの構成とアーキテクチャを維持することで、リスクを軽減し、移行プロセスを効率化することができます。 残念ながら、アーキテクチャ変更なしですべてのアプリケーションをクラウドで実行できるわけではありません。 アーキテクチャの変更が必要な場合、この記事は変更の分類に役立ち、適切な承認アクティビティに関するいくつかのガイダンスを提供することができます。

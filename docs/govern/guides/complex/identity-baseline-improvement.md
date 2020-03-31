@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 05a3ce3eb018a9b15f66b90749782def260c66d7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 6210750d5c11d4ebca55d4c96c7a87d03ca87355
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707613"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357126"
 ---
+<!-- cSpell:ignore CFO's MPLS -->
+
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善
 
 この記事では、ガバナンス MVP に ID ベースライン制御を追加することで物語を進めます。

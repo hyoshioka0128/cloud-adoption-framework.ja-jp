@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 2b255d85b8df33f712238d0457a0e78a5481801d
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: ebcc6d1a2ed45ad199c0b0da880d72d253f21c3e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225719"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354100"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>クラウド移行の業務上の妥当性をまとめ
 
@@ -68,7 +68,7 @@ ms.locfileid: "80225719"
 
 ## <a name="migration-specific-initial-investment"></a>移行固有の初期投資
 
-- Azure などのクラウド プロバイダーでは、クラウドへの投資を見積もる計算ツールが提供されています。 [Azure 料金計算ツール](https://azure.com/calculator)は 1 つの例です。
+- Azure などのクラウド プロバイダーでは、クラウドへの投資を見積もる計算ツールが提供されています。 [Azure 料金計算ツール](https://azure.microsoft.com/pricing/calculator)は 1 つの例です。
 - 一部のクラウド プロバイダーでは、コストの差分計算ツールも提供しています。 [Azure 総保有コスト (TCO) 計算ツール](https://azure.com/tco)は 1 つの例です。
 - より洗練されたコスト構造が対象であれば、[デジタル資産計画](../digital-estate/index.md)を実施することを検討してください。
 - 移行のコストを見積もります。

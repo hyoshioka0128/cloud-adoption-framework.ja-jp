@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a76ca679b8c61e96b8bc8552b8ffbcaa0822e46a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 18c3c81fdd756e90e729387c7030c64e8a87a056
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094723"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356453"
 ---
 <!-- cSpell:ignore WSUS -->
 
@@ -60,8 +60,8 @@ Update Management で管理されるコンピューターでは、評価と更�
 >
 > オンボードには、次の 2 つの方法があります。
 >
-> - [単一の VM](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
-> - [サブスクリプション全体](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+> - [単一の VM](../../manage/azure-server-management/onboard-single-vm.md)
+> - [サブスクリプション全体](../../manage/azure-server-management/onboard-at-scale.md)
 >
 > Update Management に進む前に、いずれかに従う必要があります。
 
@@ -69,7 +69,7 @@ Update Management で管理されるコンピューターでは、評価と更�
 
 リソース グループにポリシーを適用するには:
 
-1. [[Azure Automation]](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts) に移動します。
+1. [[Azure Automation]](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts) に移動します。
 1. **[Automation アカウント]** を選択し、一覧表示されているアカウントの 1 つを選択します。
 1. **[構成管理]** に移動します。
 1. **[インベントリ]** 、 **[変更管理]** 、 **[State Configuration]** を使用して、マネージド VM の状態と運用のコンプライアンスを制御することができます。
@@ -78,7 +78,7 @@ Update Management で管理されるコンピューターでは、評価と更�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

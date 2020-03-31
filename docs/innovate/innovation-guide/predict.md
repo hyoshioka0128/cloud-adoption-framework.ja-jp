@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: adb39a25cfb232b19bd983e5d4e0ab7d7370add1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170972"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356603"
 ---
 ::: zone target="docs"
 
@@ -48,7 +48,7 @@ ms.locfileid: "78170972"
 
 Cognitive Services API を使用するには、次の手順に従います。
 
-1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts) で **[Cognitive Services]** に移動します。
+1. [Azure portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts) で **[Cognitive Services]** に移動します。
 2. **[追加]** を選択して、Azure Marketplace で Cognitive Service API を探します。
 3. 以下のいずれかを実行します。
    - 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** ボックスに名前を入力します。
@@ -58,7 +58,7 @@ Cognitive Services API を使用するには、次の手順に従います。
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts]" submitText="Go to Cognitive Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts]" submitText="Go to Cognitive Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -66,7 +66,7 @@ Cognitive Services API を使用するには、次の手順に従います。
 
 ::: zone target="docs"
 
-[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts) で Cognitive Services に直接進みます。
+[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts) で Cognitive Services に直接進みます。
 
 ::: zone-end
 
@@ -80,7 +80,7 @@ Cognitive Services 内の既存のモデルが目的の予測に合わない場�
 
 Azure Machine Learning Studio で、次の手順に従ってモデルを作成し、モデルを試すことができます。
 
-1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces) で、**Azure Machine Learning Studio** に直接移動します。
+1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces) で、**Azure Machine Learning Studio** に直接移動します。
 2. **[Create Machine Learning Studio Workspace]\(Machine Learning Studio ワークスペースの作成\)** を選択し、プロンプトに従ってワークスペースを作成します。
 
    新しいワークスペースには、詳細なトレーニングの代わりに、モデルを作成して試すためのドラッグ アンド ドロップ インターフェイスが用意されています。
@@ -89,7 +89,7 @@ Azure Machine Learning Studio で、次の手順に従ってモデルを作成�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces]" submitText="Go to Azure Machine Learning Studio" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces]" submitText="Go to Azure Machine Learning Studio" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -97,7 +97,7 @@ Azure Machine Learning Studio で、次の手順に従ってモデルを作成�
 
 ::: zone target="docs"
 
-[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces) で Azure Machine Learning Studio に直接進みます。
+[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces) で Azure Machine Learning Studio に直接進みます。
 
 ::: zone-end
 
@@ -117,7 +117,7 @@ Azure Machine Learning service では、顧客データ セットのより詳細
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces]" submitText="Go to Azure Machine Learning service" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -125,7 +125,7 @@ Azure Machine Learning service では、顧客データ セットのより詳細
 
 ::: zone target="docs"
 
-[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces) で Azure Machine Learning Studio に直接進みます。
+[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces) で Azure Machine Learning Studio に直接進みます。
 
 ::: zone-end
 

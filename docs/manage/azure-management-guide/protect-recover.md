@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bd4a7d64cb6724865faab6ee1d19597368f654fd
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 2da32f8a03eed3e3200408264748559cf2888402
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094710"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356473"
 ---
+<!-- cSpell:ignore siterecovery -->
+
 # <a name="protect-and-recover-in-azure"></a>Azure での保護と復旧
 
 "_保護と復旧_" は、すべてのクラウド管理ベースラインにおいて 3 つ目の、そして最後の分野です。
@@ -38,7 +40,7 @@ ms.locfileid: "79094710"
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-backup"></a>[Azure Backup](#tab/UpdbackupateManagement)
+## <a name="azure-backup"></a>[Azure Backup](#tab/AzureBackup)
 
 ::: zone-end
 

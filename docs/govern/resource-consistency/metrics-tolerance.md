@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 98413117b3eb6abf1e826fcf14f765c6cd461d65
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 75a0e1f06b2a5a2734cc386e02200ec06d707d7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171363"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356905"
 ---
+<!-- cSpell:ignore MTBF MTTR -->
+
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>リソースの整合性のメトリック、指標、およびリスク許容度
 
 この記事は、リソースの整合性に関連したビジネス リスク許容度を定量化するために役立ちます。 メトリックと指標を定義すると、リソースの整合性規範の成熟度への投資を行うためのビジネス ケースの作成に役立ちます。

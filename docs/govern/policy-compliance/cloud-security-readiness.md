@@ -7,13 +7,15 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ec888ba0c21187e71e825ff24aaadf068dc2a191
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: dc82f4d8ad21bcbb9d36b00fbdad1f91d6d4ec2c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709415"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356950"
 ---
+<!-- cSpell:ignore CISO -->
+
 # <a name="ciso-cloud-readiness-guide"></a>CISO のクラウド準備状況に関するガイド
 
 クラウド導入フレームワークなどの Microsoftによるガイダンスは、このドキュメントのサポート対象である何千社もの企業に特有のセキュリティ制約を、特定したり左右したりするように位置付けられていません。 クラウドに移行する場合、最高情報セキュリティ責任者や最高情報セキュリティ オフィス (CISO) の役割は、クラウド テクノロジに取って代わられるものではありません。 まったく逆に、CISO と CISO オフィスは、よりしっかりと根付いた、統合された存在となります。 このガイドは、読者が CISO のプロセスに精通しており、クラウド変革を実現するためにそれらのプロセスを最新化しようとしていることを前提としています。

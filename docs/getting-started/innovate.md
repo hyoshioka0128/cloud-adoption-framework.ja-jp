@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef9291d07a9de6067ae6d47477c47b2d57449feb
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: d77ecb0dbd7fbcd606c73a11f4a8c4db4aac5428
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170105"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357207"
 ---
 # <a name="innovate-through-cloud-adoption"></a>クラウドの導入によるイノベーション
 
@@ -38,7 +38,7 @@ ms.locfileid: "78170105"
 - テクノロジベースのエクスペリエンス。
 - IoT を使用した物理的な製品とテクノロジの統合。
 - アンビエント インテリジェンス:環境への非侵入型テクノロジの統合。
-- コグニティブ サービス:ビッグ データ、AI、機械学習、および予測ソリューション。
+- Cognitive Services:ビッグ データ、AI、機械学習、および予測ソリューション。
 
 ## <a name="next-steps"></a>次のステップ
 
@@ -46,3 +46,5 @@ ms.locfileid: "78170105"
 
 > [!div class="nextstepaction"]
 > [イノベーションの取り組みを開始する](../innovate/index.md)
+
+<!-- test:ignoreNextStep -->

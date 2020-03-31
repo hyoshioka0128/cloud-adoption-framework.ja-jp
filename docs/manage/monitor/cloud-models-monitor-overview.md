@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5513187c65aebc7ae01825bdafa0f175f277c745
-ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
+ms.openlocfilehash: 7dc47021b2b4a3d9e697566332bf602d9166e712
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80069734"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356269"
 ---
+<!-- cSpell:ignore savision -->
+
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>クラウド監視ガイド: クラウド デプロイ モデルの監視戦略
 
 この記事では、次の基準に基づいて、クラウド デプロイ モデルごとに推奨する監視戦略について説明します。

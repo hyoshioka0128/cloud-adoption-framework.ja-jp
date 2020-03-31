@@ -1,6 +1,5 @@
 ---
 title: クラスターとアプリケーションのセキュリティ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: クラスターとアプリケーションのセキュリティのために、クラウド導入フレームワークでの Kubernetes について説明します。
 author: sabbour
 ms.author: asabbour
@@ -8,13 +7,15 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a8f94e2b559f2f0e373c4ae1c2f05c9b90fa57fb
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 64a7f4097a75b54ef4f91b5889fa31fc3b98d61a
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226697"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392743"
 ---
+<!-- cSpell:ignore asabbour sabbour kured -->
+
 # <a name="cluster-and-application-security"></a>クラスターとアプリケーションのセキュリティ
 
 Kubernetes のセキュリティの基本について理解し、クラスターのセキュアな設定とアプリケーションのセキュリティに関するガイダンスを確認します。

@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 35cd68a317ae3c4d49c961d020d6e803f387741d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171312"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356880"
 ---
+<!-- cSpell:ignore njray nanra chargebacks IPLs -->
+
 # <a name="mainframe-myths-and-facts"></a>メインフレームに関する通説と事実
 
 メインフレームはコンピューティングの歴史において際立っており、非常に特殊なワークロードに対して価値があることに変わりはありません。 メインフレームは実績のあるプラットフォームであり、長い歴史を持つ運用手順によって信頼性が高く堅牢な環境が構成されているということに、異論はほとんどありません。 ソフトウェアは使用状況に基づいて実行され、MIPS (百万命令/秒) の単位で測定されて、配賦のために広範な使用状況レポートを利用できます。

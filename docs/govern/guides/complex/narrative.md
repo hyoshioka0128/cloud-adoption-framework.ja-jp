@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cb514ea2395deef91e6eca802de630ad77926823
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706916"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357095"
 ---
+<!-- cSpell:ignore CDO's CIO's -->
+
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>複雑な企業向けのガバナンス ガイド: 理解に役立つ物語
 
 次の物語では、[複雑な企業のクラウド導入体験の間のガバナンス](./index.md)に関するユース ケースを組み立てます。 ガイドでの推奨に基づいて行動する前に、この物語に反映されている前提条件とその理由を理解しておくことが重要です。 そうすれば、ガバナンス戦略をお客様の組織のクラウド導入体験に合わせることができます。

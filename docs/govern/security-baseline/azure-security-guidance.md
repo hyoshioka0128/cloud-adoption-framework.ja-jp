@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ab126c3638edd18d76c579bbf4d1958621546a76
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 54053a21473b3f81c7fbf7781a0d5a9d45458075
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709534"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356890"
 ---
+<!-- cSpell:ignore DPIAs DSRs -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="microsoft-security-guidance"></a>Microsoft セキュリティ ガイダンス
@@ -32,7 +34,7 @@ Microsoft は、次のために役立つ [Service Trust Platform](https://servic
 **Service Trust Platform (STP)** は、Microsoft Cloud サービス (Azure、Office 365、Dynamics 365、および Windows を含む) を使用するニーズを満たすために役立つ詳細な情報およびツールを提供します。 STP は、Microsoft Cloud に関連したセキュリティ、規制、コンプライアンス、およびプライバシー情報のためのワンストップ ショップです。 ここでは、クラウド サービスおよびツールのセルフサービスのリスク評価を実行するために必要な情報やリソースが公開されます。 STP は、Azure 内の規制コンプライアンス アクティビティの追跡を支援するために作成され、次のものが含まれます。
 
 - **Compliance Manager:** Microsoft Service Trust Platform 内のワークフロー ベースのリスク評価ツールである Compliance Manager を使用すると、Office 365、Dynamics 365、Azure などの Microsoft Cloud サービスに関連した組織の規制コンプライアンス アクティビティの追跡、割り当て、および確認を行うことができます。 詳細については、次のセクションを参照してください。
-- **信頼ドキュメント:** 現在、Microsoft Cloud を評価するための十分なリソースを提供する 3 つのカテゴリのガイドが存在します。セキュリティ、コンプライアンス、およびプライバシーにおける Microsoft オペレーションについて学習すると、データ保護機能を向上させるのに役立ちます。 チェックの内容は次のとおりです
+- **信頼ドキュメント:** 現在、Microsoft Cloud を評価するための十分なリソースを提供する 3 つのカテゴリのガイドが存在します。セキュリティ、コンプライアンス、およびプライバシーにおける Microsoft オペレーションについて学習すると、データ保護機能を向上させるのに役立ちます。 これには以下が含まれます。
 - **監査レポート:** 監査レポートを使用すると、Microsoft Cloud サービスのプライバシー、セキュリティ、およびコンプライアンス関連の情報を最新の状態に維持することができます。 これには、Azure、Office 365、Dynamics 365 などの Microsoft Cloud サービスの ISO、SOC、FedRAMP などの監査レポート、ブリッジ レター、および独立したサードパーティの監査に関連した資料が含まれます。
 - **データ保護ガイド:** データ保護ガイドは、Microsoft Cloud サービスがデータを保護する方法、および組織のクラウド データのセキュリティやコンプライアンスを管理する方法に関する情報を提供します。 これには、Microsoft がクラウド サービスをどのように設計し運用しているかに関する情報を提供する詳細なホワイト ペーパー、FAQ、年末のセキュリティ評価のレポート、侵入テストの結果、およびリスク評価を実行し、データ保護機能を向上させるのに役立つガイダンスが含まれます。
 - **Azure のセキュリティとコンプライアンスのブループリント:** ブループリントは、厳格な規制や標準に準拠するために役立つ、クラウドの機能を活用したアプリケーションの構築および起動を支援するリソースを提供します。 他のどのクラウド プロバイダーより多くの認定を得ているため、重要なワークロードを Azure に自信を持ってデプロイできます。ブループリントには、次のものが含まれます。

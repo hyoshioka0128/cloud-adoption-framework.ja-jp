@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a27ef0d432fc0aad64211e9b2228d4f82387f854
-ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
+ms.openlocfilehash: 9173909afb7ffe625a28ec72255c15540dcf7c63
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80069806"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353519"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ VM がクラウドに移動されるにつれて、従来のオンプレミス�
 
 ## <a name="next-steps"></a>次のステップ
 
-学習メトリックの整合が済んだら、それらのメトリックに対して遂行する[ビジネス ケースの構築](cloud-migration-business-case.md)を開始できます。 
+学習メトリックの整合が済んだら、それらのメトリックに対して遂行する[ビジネス ケースの構築](.\cloud-migration-business-case.md)を開始できます。
 
 > [!div class="nextstepaction"]
-> [クラウド ビジネス ケースを構築する](cloud-migration-business-case.md)
+> [クラウド ビジネス ケースを構築する](.\cloud-migration-business-case.md)

@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508119"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356993"
 ---
+<!-- cSpell:ignore offboarding preintegration -->
+
 # <a name="identity-baseline-discipline-improvement"></a>ID ベースライン規範の改良
 
 ID ベースライン規範では、アプリケーションまたはワークロードをホストするクラウド プロバイダーには関係なく、ユーザー ID の一貫性と継続性を保証するポリシーを確立する方法に重点を置いています。 クラウド ガバナンスの 5 つの規範のうち、ID ベースラインには、[ハイブリッド ID 戦略](../../decision-guides/identity/index.md)、ID リポジトリの評価および拡張、シングル サインオン (同じサインオン) の実装、承認されていない使用や悪意のあるアクターに対する監査および監視に関連した意思決定が含まれます。 場合によっては、複数の ID プロバイダーを最新化、整理、または統合するための意思決定も含まれる可能性があります。

@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9921f9b8afc492bef5730e55f2d342ab4ec26436
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bd95aec82e3135222184ded49a7fc013f95a05e4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093705"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354956"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="align-responsibilities-across-teams"></a>チーム間で責任を調整する
 
 "*実行責任、説明責任、助言、通知*" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 この記事では、「[チーム構造の確立](./organization-structures.md)」で説明されている組織構造の RACI マトリックスの例を示します。

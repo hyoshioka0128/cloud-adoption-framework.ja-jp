@@ -4,15 +4,15 @@ description: Azure でのワークロードの移行に関連する可能性の�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 62100df7a32ca904454e0df2d7be8c1a860fd611
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 82ded4af4d3014187e012dbc7d371237d519b4ca
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802278"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392424"
 ---
 # <a name="execute-a-migration"></a>移行を実行する
 

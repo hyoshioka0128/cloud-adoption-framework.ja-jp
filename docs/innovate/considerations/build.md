@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 67ea91e503290c8fee37f3d36770fbbea1b336b4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312754"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356783"
 ---
 # <a name="build-with-customer-empathy"></a>顧客の共感を構築する
 
@@ -102,6 +102,8 @@ MVP の開発には、多額の開発投資は必要ありません。 一度に
 代替のアプローチを必要とする可能性のある多くの法律、コンプライアンス、および業界の要件があります。 開発中のソリューションの公開リリースが、特許のタイミング、知的財産保護、顧客データの漏洩、または確立されたコンプライアンス要件違反に対するリスクとなる場合、そのアプローチは適切ではない可能性があります。 このようなリスクが認識されている場合は、リリース管理のガイド付きアプローチを導入する前に、弁護士に相談してください。
 
 ## <a name="references"></a>References
+
+<!-- cSpell:ignore Ries -->
 
 この記事の概念の一部は、「[*The Lean Startup (リーン スタートアップ)* ](http://theleanstartup.com/book)」(Eric Ries、Crown Business、2011 年) で説明されているトピックに基づいています。
 
