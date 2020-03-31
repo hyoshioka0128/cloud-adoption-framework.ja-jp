@@ -4,17 +4,17 @@ description: 手順付きのガイダンスを利用して、組織で効果的�
 author: timleyden
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 8b55a99194ef6032905c7495206adeb8fa72ebfb
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d7dcf57161990a45ca8e1f9ec3843e1e2ee3530d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354478"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427832"
 ---
 <!-- cSpell:ignore timleyden -->
 

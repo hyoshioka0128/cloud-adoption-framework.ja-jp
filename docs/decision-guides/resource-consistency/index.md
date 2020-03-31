@@ -4,16 +4,16 @@ description: クラウド資産のリソース整合性の重要性と、リソ�
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bb84d0f7ce6c29d52b1aebb54a456634cb942182
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 04386ec98ed0ecb6269c53a60f64bc73f148b12f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892397"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434853"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
