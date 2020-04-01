@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 6e5296ac6350df0d6894ad740a70e49a5ee7eae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508408"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354178"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Azure に移行するワークロードの料金計算とサイズ設定のベスト プラクティス
 
@@ -243,7 +243,7 @@ Cost Management では以下のことが可能です。
 - Azure Cost Management の[概要を表示します](https://docs.microsoft.com/azure/cost-management/overview)。
 - Azure Cost Management を使用してクラウドへの投資を最適化する[方法を学びます](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices)。
 - Azure Cost Management のレポートを使用する[方法を学びます](https://docs.microsoft.com/azure/cost-management/use-reports)。
-- 推奨事項に従ってコストを最適化することに関する[チュートリアルを表示します](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json)。
+- 推奨事項に従ってコストを最適化することに関する[チュートリアルを表示します](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json)。
 - Azure Consumption API について[確認します](https://docs.microsoft.com/rest/api/consumption/budgets)。
 
 ## <a name="best-practice-monitor-resource-utilization"></a>ベスト プラクティス:リソースの使用率を監視する
@@ -260,7 +260,7 @@ Azure では、リソースが消費されたときに使用した分だけ支�
 
 - [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) と [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) の概要を表示しますします。
 - Advisor のコストに関する推奨事項を[表示します](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)。
-- [推奨事項に従ってコストを最適化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json)し、[予期しない料金を防ぐ](https://docs.microsoft.com/azure/billing/billing-getting-started)方法を学びます。
+- [推奨事項に従ってコストを最適化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json)し、[予期しない料金を防ぐ](https://docs.microsoft.com/azure/billing/billing-getting-started)方法を学びます。
 - [Azure Resource Optimization (ARO) ツールキット](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)について学びます。
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>ベスト プラクティス:リソース グループの予算を実施する
@@ -273,7 +273,7 @@ Azure では、リソースが消費されたときに使用した分だけ支�
 **詳細情報:**
 
 - Azure Budgets でコストを管理する[方法を学びます](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)。
-- [チュートリアルに従って](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json)、Azure の予算を作成して管理します。
+- [チュートリアルに従って](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/toc.json)、Azure の予算を作成して管理します。
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>ベスト プラクティス:Azure Monitor の保持期間を最適化する
 

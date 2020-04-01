@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 28cc70af615aa8df17ad7b4047f23b0df324b2db
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311627"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356275"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -37,7 +37,7 @@ Contoso クラウド チームは、Azure DevOps Services への移行の目標�
 - 昨年の作業項目データと履歴を移行する必要があります。
 - 新しいユーザー名とパスワードは設定したくありません。 現在のシステムの割り当てはすべて維持する必要があります。
 - ソース管理については、Team Foundation バージョン管理 (TFVC) から Git に移行したいと考えています。
-- Git への切り替えは、ソース コードの最新バージョンのみをインポートする "tip migration" (チップ移行) になります。 この移行は、コードベースの転換時にすべての作業が中止されるダウンタイム中に行われます。 Contoso は、移行後に最新のマスター ブランチ履歴しか利用できなくなることを理解しています。
+- Git への切り替えは、ソース コードの最新バージョンのみをインポートする "tip migration" (チップ移行) になります。 これは、コードベースの転換時にすべての作業が中止されるダウンタイム中に行われます。 Contoso は、移行後に最新のマスター ブランチ履歴しか利用できなくなることを理解しています。
 - Contoso はこの変更を心配し、完全に移行する前にテストしたいと考えています。 Azure DevOps Services への移行後も TFS へのアクセスを維持したいと考えています。
 - 複数のコレクションがあるので、プロセスをより理解できるように、プロジェクトがごく少数のコレクションから始めたいと考えています。
 - TFS コレクションが Azure DevOps Services 組織と 1 対 1 の関係であることは理解しているので、複数の URL を持つことになります。 ただし、これはコード ベースとプロジェクトの分離の現在のモデルと一致します。
