@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: d23c97ab3d1bc5c25617792d53f147654eb33daa
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80427435"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527611"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウドのイノベーション
 
@@ -59,7 +59,7 @@ ms.locfileid: "80427435"
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Azure イノベーション ガイド</h3>
-Azure には、革新的なソリューションのデプロイを加速させることができる多数のクラウド ツールが用意されています。 仮説によっては、ツールのさまざまな組み合わせを検討する場合があります。 基本ツールを使用して実用最小限の製品 (MVP) を作成することが推奨されます。
+Azure には、革新的なソリューションのデプロイを加速させることができるクラウド ツールが用意されています。 仮説によっては、ツールのさまざまな組み合わせを検討する場合があります。 基本ツールを使用して実用最小限の製品 (MVP) を作成することが推奨されます。
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 [Azure でコンテナーを管理する](https://docs.microsoft.com/learn/paths/administer-containers-in-azure)Azure Container Instances (ACI) は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、ACI を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
 
-[サーバーレス アプリケーションの作成](https://docs.microsoft.com/learn/paths/create-serverless-applications): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を利用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
+[サーバーレス アプリケーションの作成](https://docs.microsoft.com/learn/paths/create-serverless-applications): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を使用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
 
 追加のラーニング パスについては、[Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
 

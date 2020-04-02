@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b9e39f4f0c86239c3c1d249fdb08dbce2c9f4daa
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429432"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527675"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>移行前に評価の前提条件を検証する
 
@@ -51,7 +51,7 @@ ms.locfileid: "80429432"
 - **評価。** ワークロードの互換性と依存関係が評価されます。
   - このアクティビティは、候補になっているワークロードのアーキテクチャと動作に精通している該当分野の専門家に割り当てる必要があります。
 - **設計。** チームが、移行されたワークロードの最終的なアーキテクチャの状態に同意します。
-- **移行ツール。** 近代化とアーキテクチャのアプローチによっては、移行の自動化にさまざまな移行ツールを使用できます。 提案されているアーキテクチャの場合、この移行で最適な[移行ツール](../../../decision-guides/migrate-decision-guide/index.md)が利用されるか?
+- **移行ツール。** 近代化とアーキテクチャのアプローチによっては、移行の自動化にさまざまな移行ツールを使用できます。 提案されているアーキテクチャの場合、この移行で最適な[移行ツール](../../../decision-guides/migrate-decision-guide/index.md)が使用されるか?
 - **バックログの調整。** クラウド導入チームが要件をレビューし、候補になっているワークロードの移行にコミットします。 コミット後に、それに基づいて、リリース バックログとイテレーション バックログが更新されます。
 - **作業分解構造またはワークバック スケジュール。** チームが、計画、実装、およびレビュー プロセスで目標とする完了期限を識別する主要なマイルスローンのスケジュールを確立します。
 - **最終承認。** 必要な承認者が計画をレビューし、資産を移行するためのアプローチを承認します。

@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c4ee7491fb5fbfa549dfe82c82e720f51188a25c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 10fa2bf0f63351adbf50c04b2725090d0c350d2d
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312307"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527770"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -37,7 +37,7 @@ ms.locfileid: "79312307"
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>最初のワークロードを移行する</h3>
-「Azure 移行ガイド」を活用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。
+「Azure 移行ガイド」を使用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ ms.locfileid: "79312307"
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>移行シナリオ</h3>
-追加の移行ツールとアプローチを利用して、追加の移行シナリオに対処します。
+追加の移行ツールとアプローチを使用して、その他の移行シナリオに対処します。
                         </div>
                     </div>
                 </div>
