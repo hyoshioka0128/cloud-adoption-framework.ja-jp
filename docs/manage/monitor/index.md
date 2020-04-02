@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 1cb25ad399c790a3dfbdd6c55119a50165f36196
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
+ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426057"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80606563"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>クラウド監視ガイド: はじめに
 
@@ -31,9 +31,9 @@ ms.locfileid: "80426057"
 
 このガイドの目的は、エンタープライズ IT マネージャー、ビジネス意思決定者、アプリケーション アーキテクト、およびアプリケーション開発者が次のことを理解できるように、詳細なリファレンスを提供することにあります。
 
-* Azure 監視プラットフォーム、およびその機能の概要と比較
-* ハイブリッド、プライベート、および Azure ネイティブのワークロードの監視に最適なソリューション
-* インフラストラクチャとアプリケーションの両方をエンドツーエンドで監視するための推奨されるアプローチ。 このアプローチには、これらの一般的なワークロードを Azure に移行するためのデプロイ可能なソリューションも含まれます。
+- Azure 監視プラットフォーム、およびその機能の概要と比較
+- ハイブリッド、プライベート、および Azure ネイティブのワークロードの監視に最適なソリューション
+- インフラストラクチャとアプリケーションの両方をエンドツーエンドで監視するための推奨されるアプローチ。 このアプローチには、これらの一般的なワークロードを Azure に移行するためのデプロイ可能なソリューションも含まれます。
 
 このガイドは、個々の Azure サービスやソリューションを使用または構成するためのハウツー記事ではありませんが、該当する場合や利用可能な場合には、それらのソースが参照されます。 これを読むことで、ベスト プラクティスとパターンに従ってワークロードを正しく処理する方法を理解できます。
 
@@ -47,21 +47,21 @@ Azure Monitor と System Center Operations Manager に精通していない場�
 
 この記事はシリーズの一部です。 次の記事は、次の順で、まとめて読まれるように作られています。
 
-* はじめに (この記事)
-* [クラウド デプロイ モデルの監視戦略](./cloud-models-monitor-overview.md)
-* [適切なデータの収集](./data-collection.md)
-* [アラート](./alerting.md)
+- はじめに (この記事)
+- [クラウド デプロイ モデルの監視戦略](./cloud-models-monitor-overview.md)
+- [適切なデータの収集](./data-collection.md)
+- [アラート](./alerting.md)
 
 ## <a name="products-and-services"></a>製品およびサービス
 
 Azure、お客様の企業ネットワーク、その他のクラウド プロバイダーでホストされているさまざまなリソースを監視、管理するためのいくつかのソフトウェアとサービスを利用できます。 これらは次のとおりです。
 
-* System Center Operations Manager
-* Azure Monitor (現在、Log Analytics と Application Insights が含まれています)
-* Azure Policy と Azure Blueprints
-* Azure Automation
-* Azure Logic Apps
-* Azure Event Hubs
+- System Center Operations Manager
+- Azure Monitor (現在、Log Analytics と Application Insights が含まれています)
+- Azure Policy と Azure Blueprints
+- Azure Automation
+- Azure Logic Apps
+- Azure Event Hubs
 
 このガイドの最初のバージョンでは、現在の監視プラットフォームについて説明します。Azure Monitor と System Center Operations Manager。 また、各クラウド デプロイ モデルを監視するための推奨される戦略についても概説します。 また、データ収集とアラートをはじめとする、監視に関する推奨事項の最初のセットも含まれています。
 
