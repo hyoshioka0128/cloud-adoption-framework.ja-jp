@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e0cb1779836edce3571a081ae44794aeb8bc06b8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432986"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636503"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Azure 移行ガイド:開始する前に
 
@@ -55,7 +55,7 @@ ms.locfileid: "80432986"
 - 移行するコンポーネントの依存関係のマップは定義が簡単である。
 - 業界には、この移行に関連する最小限の規制要件がある。
 
-ご自身の状況に、これらの条件のいずれも該当しない場合は、代わりに[拡大された範囲ガイド](../expanded-scope/index.md)を検討してください。 また、拡大された範囲ガイドが必要な移行を実行するには、Microsoft チームまたはパートナーのいずれかにサポートを依頼することをお勧めします。 Microsoft または認定パートナーと契約しているお客様には、このようなシナリオでさらにお勧めします。 サポートの依頼の詳細情報は、このガイドに記載されています。
+ご自身の状況に、これらの条件のいずれも該当しない場合は、代わりにほかの[クラウド移行のベスト プラクティス](../azure-best-practices/index.md)を検討してください。 また、より複雑な移行を実行するには、Microsoft チームまたはパートナーのいずれかにサポートを依頼することをお勧めします。 Microsoft または認定パートナーと契約しているお客様には、このようなシナリオでさらにお勧めします。 サポートの依頼の詳細情報は、このガイドに記載されています。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -63,6 +63,6 @@ ms.locfileid: "80432986"
 
 詳細については、次を参照してください。
 
-- [拡大された範囲ガイド](../expanded-scope/index.md)
+- [クラウド移行のベスト プラクティス](../azure-best-practices/index.md)
 
 ::: zone-end

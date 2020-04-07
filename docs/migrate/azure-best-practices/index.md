@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 22f2718775b194196f65672f0cbc1712d0a3a4ac
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a7affd1d64e80cfdf85504ed62960de78a4a34a5
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433543"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636375"
 ---
 # <a name="best-practices-for-cloud-migration"></a>クラウド移行のベスト プラクティス
 
 クラウド導入フレームワークの [Azure 移行ガイド](../azure-migration-guide/index.md)は、Azure への移行に関心がある場合の開始点としてお勧めです。 このガイドでは、仮想マシンをクラウドに移行するための一連のツールおよび基本的なアプローチについて説明します。 クラウド導入フレームワークのこのセクションでは、基本的なクラウドネイティブ ツール以外の多くのベスト プラクティスについて説明します。
 
-## <a name="cloud-migration-best-practice-checklist"></a>クラウド移行のベスト プラクティスのチェックリスト
+## <a name="cloud-migration-best-practices-checklist"></a>クラウド移行のベスト プラクティスのチェックリスト
 
 以下のチェックリストは、移行の範囲が [Azure 移行ガイド](../azure-migration-guide/index.md)の範囲を超える可能性のある、一般的に複雑な領域をまとめています。
 
