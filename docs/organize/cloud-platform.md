@@ -4,16 +4,16 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 204c22e7682886d8c4f90e74aa3d881e32e6c7b0
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 2dc5503c7c24263bf74c4708ffe5e1dca0b8b97b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092705"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80428529"
 ---
 # <a name="cloud-platform-capabilities"></a>クラウド プラットフォームの機能
 

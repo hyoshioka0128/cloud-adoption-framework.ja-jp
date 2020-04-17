@@ -4,16 +4,16 @@ description: このテンプレートは、クラウド内のセキュリティ�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed3e9a193a33ab89ac7a421dcbc1a89a55ffc9b6
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 94570e0e4fbb41342dbe41e0377160449d832818
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392782"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80425913"
 ---
 # <a name="security-baseline-template"></a>セキュリティ ベースライン テンプレート
 

@@ -4,17 +4,17 @@ description: Azure への移行プロセス中にサポートを得る方法に�
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3e191c89a33d09315c332680b82a72caf0785e2f
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 16b82b3be2789a764dcccecc6ef91ef91f3098b2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353912"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80429521"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -42,7 +42,7 @@ Azure の使用中に Microsoft サポートによるサポートが必要な場
 
 ::: zone target="docs"
 
-1. [Azure portal](https://portal.azure.com) で **[ヘルプとサポート]** を選択します。
+1. **Azure portal** で [[ヘルプとサポート]](https://portal.azure.com) を選択します。
 1. **[新しいサポート リクエスト]** を選択し、問題に関する詳細を入力して、サポートに問い合わせます。
 
 ::: zone-end
@@ -60,7 +60,7 @@ Azure の使用中に Microsoft サポートによるサポートが必要な場
 
 サポート リクエストを表示するには、次の手順に従います。
 
-1. [Azure portal](https://portal.azure.com) で **[ヘルプとサポート]** を選択します。
+1. **Azure portal** で [[ヘルプとサポート]](https://portal.azure.com) を選択します。
 1. **[すべてのサポート リクエスト]** を選択し、サポート リクエストを表示します。
 
 ::: zone-end
@@ -78,7 +78,7 @@ Azure の使用中に Microsoft サポートによるサポートが必要な場
 
 ::: zone target="docs"
 
-1. [Azure portal](https://portal.azure.com) で **[ヘルプとサポート]** を選択します。
+1. **Azure portal** で [[ヘルプとサポート]](https://portal.azure.com) を選択します。
 1. **[サポート プラン]** を選択し、使用可能なプランを確認します。
 
 ::: zone-end

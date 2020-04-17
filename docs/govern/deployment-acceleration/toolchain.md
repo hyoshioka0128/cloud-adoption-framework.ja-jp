@@ -4,16 +4,16 @@ description: デプロイ高速化のガバナンス規範をサポートする�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ee1c81fe5bada0fa435a598db2f79dc0b23b4392
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 434f8118d075c907d543f344c26c99c10cbc9bb4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709007"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995468"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure のデプロイ高速化ツール
 
@@ -23,7 +23,7 @@ ms.locfileid: "77709007"
 
 このガバナンス規範をサポートするポリシーとプロセスを成熟させるのに役立つ Azure ツールの一覧を次に示します。
 
-|  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 管理グループ](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview) | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management) |
+|  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure 管理グループ](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 |企業ポリシーを実装する     |はい |いいえ  |いいえ  |いいえ | いいえ |いいえ |
 |サブスクリプション間でポリシーを適用する     |必須 |はい  |いいえ  |いいえ | いいえ |いいえ |
@@ -35,7 +35,7 @@ ms.locfileid: "77709007"
 
 次に示すのは、特定のデプロイ高速化目標を達成するために必要な場合がある追加のツールです。 これらのツールはガバナンス チームの外側で使用されることが多いですが、それでも規範としてのデプロイ高速化の一側面とみなされています。
 
-|  | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops/index) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+|  | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|
 |手動デプロイ (単一アセット)     | はい | はい  | いいえ  | 非効率的 | いいえ | はい |
 |手動デプロイ (環境全体)     | 非効率的 | はい | いいえ  | 非効率的 | いいえ | はい |

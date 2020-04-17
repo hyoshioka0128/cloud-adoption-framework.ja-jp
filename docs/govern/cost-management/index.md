@@ -10,15 +10,15 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: ebb0f0899ad8ea4e5f26c43b0486c56560b4dd14
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "77708871"
 ---
 # <a name="cost-management-discipline-overview"></a>Cost Management の規範の概要
 
-コスト管理は、[クラウド導入フレームワーク ガバナンス モデル](../index.md)の[クラウド ガバナンスの 5 つの規範](../governance-disciplines.md)のうちの 1 つです。 多くのお客様にとって、クラウド テクノロジを採用する際には、管理コストが大きな問題になります。 パフォーマンスに対する要求、導入ペース、およびクラウド サービス コストのバランスをとることが困難な場合があります。 これは、クラウド テクノロジを実装する大規模なビジネス変革の際に特に該当します。 このセクションでは、クラウド ガバナンス戦略の一環として Cost Management 規範を策定する方法について概要を説明します。
+コスト管理は、[クラウド導入フレームワーク ガバナンス モデル](../governance-disciplines.md)の[クラウド ガバナンスの 5 つの規範](../index.md)のうちの 1 つです。 多くのお客様にとって、クラウド テクノロジを採用する際には、管理コストが大きな問題になります。 パフォーマンスに対する要求、導入ペース、およびクラウド サービス コストのバランスをとることが困難な場合があります。 これは、クラウド テクノロジを実装する大規模なビジネス変革の際に特に該当します。 このセクションでは、クラウド ガバナンス戦略の一環として Cost Management 規範を策定する方法について概要を説明します。
 
 > [!NOTE]
 > Cost Management ガバナンスは、IT 関連コストに関する組織の財務管理に関連する既存のビジネス チーム、会計実務、および手順に代わるものではありません。 この規範の主な目的は、IT 支出に関連したクラウド関連の潜在的なリスクを識別し、クラウド リソースのデプロイとその管理を担当するビジネス チームと IT チームにリスク軽減のガイダンスを提供することです。

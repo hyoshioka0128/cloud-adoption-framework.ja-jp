@@ -4,16 +4,16 @@ description: クラウドでの IT の運用と管理を行うポリシー ス�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 378fa753a2b4ca793d8ad13de8d0c7ed4ec44dfa
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 8cb96fc97e8e0ac4695ca28dbcad964d246f95e5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392611"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433651"
 ---
 # <a name="resource-consistency-template"></a>リソースの整合性テンプレート
 

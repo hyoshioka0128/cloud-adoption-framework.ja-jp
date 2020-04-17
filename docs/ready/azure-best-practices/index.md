@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9d14209da7c18a2ba8279977e3c860a3dd1d0589
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 107764931a6188f6976c5cfb8af0f74082c21e2b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433956"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997797"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 対応性のベスト プラクティス
 
@@ -35,7 +35,7 @@ Azure 環境でアセットを整理およびデプロイします。
 
 - [ネットワーク関連の意思決定](../considerations/networking-options.md)。 組織のワークロード、ガバナンス、接続要件を支援するネットワーク関連のサービス、ツール、アーキテクチャを選択します。
 - [仮想ネットワークの計画](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 分離、接続、場所の要件に基づいて仮想ネットワークを計画します。
-- [ネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure の組み込み機能を利用し、ネットワーク セキュリティの問題に対処するときのベスト プラクティスについて説明します。
+- [ネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure の組み込み機能を利用し、ネットワーク セキュリティの問題に対処するときのベスト プラクティスについて説明します。
 - [境界ネットワーク](./perimeter-networks.md)。 クラウド ネットワークと物理的なオンプレミスのデータセンターのネットワークの間で安全な接続が可能になり、また、インターネットの双方向接続も可能になります。
 - [ハブ アンド スポーク ネットワーク トポロジ](./hub-spoke-network-topology.md)。 複雑なワークロードの一般的な通信やセキュリティの要件を効率的に管理し、潜在的な Azure サブスクリプションの制限に対処します。
 
@@ -43,7 +43,7 @@ Azure 環境でアセットを整理およびデプロイします。
 
 ワークロードのセキュリティと管理の効率性を改善するために、ID とアクセスの制御のインフラストラクチャを設計します。
 
-- [Azure の ID 管理とアクセス制御セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure の組み込み機能を利用した ID 管理とアクセス制御に関するベスト プラクティスについて説明します。
+- [Azure の ID 管理とアクセス制御セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 Azure の組み込み機能を利用した ID 管理とアクセス制御に関するベスト プラクティスについて説明します。
 - [ロールベースのアクセス制御のベスト プラクティス](../considerations/roles.md)。 ユーザー ロールごとに整理されているリソースのグループベース アクセスを詳細に管理できます。
 - [Azure Active Directory でのハイブリッドおよびクラウド デプロイ用の特権アクセスをセキュリティで保護する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 クラウドとオンプレミスの環境全体で組織の管理者アクセスと特権アカウントをセキュリティで保護します。
 

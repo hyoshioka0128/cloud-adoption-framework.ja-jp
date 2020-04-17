@@ -4,16 +4,16 @@ description: クラウド変革の完全なビジネス価値を正確に表す�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: ebc85c5a76d9f53b0117567fc79de51488e9b51d
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 738524f01e61b4f8c98f6ac73ca439c54d20c3dc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337987"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80431636"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>クラウド変革のための財務モデルを作成する
 

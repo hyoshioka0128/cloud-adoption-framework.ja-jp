@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354702"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433970"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>クラウド導入計画のワークロードを定義し、優先順位を付ける
 
@@ -92,7 +92,7 @@ ms.locfileid: "80354702"
 | 重要度 | 現在のアプリケーションの重要性を記載します。 |         |
 | データ分類 | データの機密性の分類を記載します。 |         |
 | 運用地域 | ワークロードがホストされる (またはホストされるべき) 地域を記載します。 |         |
-| アプリケーション | このワークロードに含まれるすべてのアプリケーションの最初のリストまたは数を指定します。 |         |
+| [アプリケーション] | このワークロードに含まれるすべてのアプリケーションの最初のリストまたは数を指定します。 |         |
 | VM | このワークロードに含まれるすべての VM またはサーバーの最初のリストまたは数を指定します。 |         |
 | データ ソース | このワークロードに含まれるすべてのデータ ソースの最初のリストまたは数を指定します。 |         |
 | 依存関係 | このワークロードに含まれていないすべての資産の依存関係を記載します。 |         |

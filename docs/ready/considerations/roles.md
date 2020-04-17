@@ -4,24 +4,24 @@ description: チーム内の職務を分離し、ロールベースのアクセ�
 author: rotycenh
 ms.author: brblanch
 ms.date: 11/28/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: c4777f062725a74a98233bfe6851180d70bdfbf8
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092439"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997922"
 ---
 # <a name="role-based-access-control"></a>ロールベースのアクセス制御
 
 グループベースのアクセス権および特権を使用することをお勧めします。 個々のユーザーではなくグループを処理すれば、アクセス ポリシーの保守が簡素化され、チーム間に一貫したアクセス管理が提供され、構成エラーが削減されます。 適切なグループにユーザーを割り当てたり、グループからユーザーを削除することで、特定のユーザーの権限を最新に保つことができます。 Azure [ロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) では、ユーザー ロールごとに整理されているリソースのアクセスを詳細に管理できます。
 
-ID およびセキュリティ戦略の一部として推奨される RBAC の方法の概要については、「[Azure の ID 管理とアクセス制御セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control)」を参照してください。
+ID およびセキュリティ戦略の一部として推奨される RBAC の方法の概要については、「[Azure の ID 管理とアクセス制御セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices#use-role-based-access-control)」を参照してください。
 
 ## <a name="overview-of-role-based-access-control"></a>ロールベースのアクセス制御の概要
 
@@ -38,7 +38,7 @@ ID およびセキュリティ戦略の一部として推奨される RBAC の�
 ![RBAC を使用するための推奨パターン](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> 定義するアクセス許可が具体的または詳細なものになるほど、アクセス制御が複雑になり、管理が困難になる可能性が高くなります。 この傾向は、クラウド資産の規模が大きくなるにつれて顕著になります。 リソース固有のアクセス許可は使わないようにします。 代わりに、エンタープライズ全体のアクセス制御には[管理グループを使用し](https://docs.microsoft.com/azure/governance/management-groups)、サブスクリプション内のアクセス制御には[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)を使用します。 また、ユーザー固有のアクセス許可は使わないようにします。 代わりに、[Azure AD 内のグループ](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)にアクセス権を割り当てます。
+> 定義するアクセス許可が具体的または詳細なものになるほど、アクセス制御が複雑になり、管理が困難になる可能性が高くなります。 この傾向は、クラウド資産の規模が大きくなるにつれて顕著になります。 リソース固有のアクセス許可は使わないようにします。 代わりに、エンタープライズ全体のアクセス制御には[管理グループを使用し](https://docs.microsoft.com/azure/governance/management-groups)、サブスクリプション内のアクセス制御には[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)を使用します。 また、ユーザー固有のアクセス許可は使わないようにします。 代わりに、[Azure AD 内のグループ](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)にアクセス権を割り当てます。
 
 ## <a name="use-built-in-rbac-roles"></a>組み込みの RBAC ロールを使用する
 
@@ -62,7 +62,7 @@ Azure では多くの組み込みのロール定義が用意されており、�
 
 Azure に組み込まれたロールはさまざまなアクセス制御シナリオをサポートしますが、組織やチームのすべてのニーズを満たせるわけではありません。 たとえば、仮想マシンと Azure SQL Database リソースの管理を担当する単一のユーザー グループがある場合、必要なアクセス制御の管理を最適化するためにカスタム ロールを作成することができます。
 
-Azure RBAC のドキュメントには、[ロール定義の機能](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)の詳細と併せて、[カスタム ロールの作成](https://docs.microsoft.com/azure/role-based-access-control/custom-roles)に関する手順が記載されています。
+Azure RBAC のドキュメントには、[ロール定義の機能](https://docs.microsoft.com/azure/role-based-access-control/custom-roles)の詳細と併せて、[カスタム ロールの作成](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)に関する手順が記載されています。
 
 ## <a name="separation-of-responsibilities-and-roles-for-large-organizations"></a>大規模組織における責任とロールの分離
 
@@ -74,7 +74,7 @@ RBAC を使用すると、組織は大規模なクラウド資産内のさまざ
 
 <!-- markdownlint-disable MD033 -->
 
-| グループ | 一般的なロール名 | 役割 |
+| Group | 一般的なロール名 | 役割 |
 | --- | --- | --- |
 | セキュリティ運用担当者 | SecOps | 全般的なセキュリティ監視を行います。<br/><br/> 保存時の暗号化などのセキュリティ ポリシーを確立して適用します。<br/><br/> 暗号化キーを管理します。<br/><br/> ファイアウォール規則を管理します。 |
 | ネットワーク運用担当者 | NetOps | ルートやピアリングなど、仮想ネットワーク内のネットワーク構成および運用を管理します。 |

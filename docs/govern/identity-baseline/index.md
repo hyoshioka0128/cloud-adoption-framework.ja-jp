@@ -9,23 +9,23 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 91096409b17bce6aced180bff989c57934698aa3
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 555128b25aa514bd1f98b2e0b53c3f4e1420cfef
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708990"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997458"
 ---
 # <a name="identity-baseline-discipline-overview"></a>ID ベースライン規範の概要
 
-ID ベースラインは、[クラウド導入フレームワーク ガバナンス モデル](../index.md)の[クラウド ガバナンスの 5 つの規範](../governance-disciplines.md)のうちの 1 つです。 ID はクラウドにおける主要なセキュリティ境界とますます考えられるようになっており、従来のネットワーク セキュリティから焦点が移っています。 ID サービスでは IT 環境内でアクセス制御と組織をサポートする主要なメカニズムが提供され、ID ベースラインの規範はクラウド導入作業全体に認証と承認の要件を一貫して適用することで[セキュリティ ベースラインの規範](../security-baseline/index.md)を補完します。
+ID ベースラインは、[クラウド導入フレームワーク ガバナンス モデル](../governance-disciplines.md)の[クラウド ガバナンスの 5 つの規範](../index.md)のうちの 1 つです。 ID はクラウドにおける主要なセキュリティ境界とますます考えられるようになっており、従来のネットワーク セキュリティから焦点が移っています。 ID サービスでは IT 環境内でアクセス制御と組織をサポートする主要なメカニズムが提供され、ID ベースラインの規範はクラウド導入作業全体に認証と承認の要件を一貫して適用することで[セキュリティ ベースラインの規範](../security-baseline/index.md)を補完します。
 
 > [!NOTE]
 > ID ベースラインのガバナンスは、組織による ID サービスの管理とセキュリティ保護を可能にする既存の IT チーム、プロセス、および手順にとって代わるものではありません。 この規範の主な目的は、ID 関連の潜在的なビジネス リスクを識別し、ID 管理インフラストラクチャの実装、維持、運用を担当する IT スタッフにリスク軽減のためのガイダンスを提供することです。 ガバナンス ポリシーおよびプロセスの策定時には、行っている計画と確認のプロセスに、関係する IT チームを関与させるようにしてください。
 
 クラウド導入フレームワークのこのセクションでは、クラウド ガバナンス戦略の一環として ID ベースライン規範を策定する方法について、概要を説明します。 このガイドの主な対象読者は、お客様の組織のクラウド アーキテクトおよびお客様のクラウド ガバナンス チームのその他のメンバーです。 ただし、この規範に基づく決定、ポリシー、およびプロセスには、組織の ID 管理ソリューションの実装と管理を担当する IT チームの該当メンバーが関与して、議論する必要があります。
 
-社内に ID ベースラインとセキュリティの専門家がいない場合、この規範の一環として外部コンサルタントを雇用することを検討してください。 また、この規範に関連する懸案事項を相談するために、[Microsoft コンサルティング サービス](https://www.microsoft.com/enterprise/services)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) クラウド導入サービス、または外部のその他のクラウド導入パートナーを雇用することを検討してください。
+社内に ID ベースラインとセキュリティの専門家がいない場合、この規範の一環として外部コンサルタントを雇用することを検討してください。 また、この規範に関連する懸案事項を相談するために、[Microsoft コンサルティング サービス](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) クラウド導入サービス、または外部のその他のクラウド導入パートナーを雇用することを検討してください。
 
 ## <a name="policy-statements"></a>ポリシー ステートメント
 

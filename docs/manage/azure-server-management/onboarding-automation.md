@@ -4,15 +4,15 @@ description: Azure サーバー管理サービスのデプロイを自動化し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4281638b7badf9b672ba3a38d2daa847b7604e7e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: cb612930318ed2ecd355cb5466f50650086d7f4c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356380"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80430567"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 

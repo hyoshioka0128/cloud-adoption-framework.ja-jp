@@ -4,19 +4,19 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b68710606f0b361caec66e390e3ac826c1944a2e
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 107385f48f43b449fd835b5ac28aa0a9ebb5207f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708395"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433076"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>クラウド ガバナンス設計ガイドと企業ポリシーの合致
 
-[特定されたリスク](./business-risk.md)に基づいて[クラウド ポリシーを定義](./policy-definition.md)したら、IT スタッフと開発者が参照する、これらのポリシーに合致した実践的なガイダンスを作成する必要があります。 クラウド ガバナンス設計ガイドの素案を作成することで、[5 つのガバナンス規範](../governance-disciplines.md)それぞれに対して作成されるポリシー ステートメントに基づいた構造上、技術上、プロセス上の選択肢を指定することができます。
+[特定されたリスク](./policy-definition.md)に基づいて[クラウド ポリシーを定義](./business-risk.md)したら、IT スタッフと開発者が参照する、これらのポリシーに合致した実践的なガイダンスを作成する必要があります。 クラウド ガバナンス設計ガイドの素案を作成することで、[5 つのガバナンス規範](../governance-disciplines.md)それぞれに対して作成されるポリシー ステートメントに基づいた構造上、技術上、プロセス上の選択肢を指定することができます。
 
 クラウド ガバナンス設計ガイドでは、実際のポリシー要件に最適なクラウド デプロイのコア インフラストラクチャ コンポーネントそれぞれについて、アーキテクチャの選択肢と設計パターンを確立する必要があります。 これらと共に、こうした設計上の各決定事項をサポートするテクノロジ、ツール、およびプロセスの概要説明を含める必要があります。
 

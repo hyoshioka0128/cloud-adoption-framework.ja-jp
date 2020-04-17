@@ -4,16 +4,16 @@ description: セキュリティ ベースライン規範を開発して成熟さ
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0d5f2e2c1032c77ceb56b187aa9f2bcee02262eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 234136b777107c93e7ea26b9a183c1ec34b75e24
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707392"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120098"
 ---
 # <a name="security-baseline-discipline-improvement"></a>セキュリティ ベースライン規範の改良
 
@@ -46,13 +46,13 @@ ms.locfileid: "77707392"
 - データ分類スキーマを定義します。
 - ビジネス プロセスを強化し、運用をサポートしている現在の IT 資産のインベントリを作成するために、デジタル資産計画プロセスを実行します。
 - 既存の企業 IT セキュリティ ポリシーを最新化するプロセスを開始し、既知のリスクに対応した MVP ポリシーを定義するために、[ポリシー レビュー](../../govern/policy-compliance/cloud-policy-review.md)を実行します。
-- クラウド プラットフォームのセキュリティ ガイドラインをレビューします。 Azure の場合、これらは [Microsoft Service Trust Platform](https://www.microsoft.com/trustcenter/stp/default.aspx) にあります。
-- セキュリティ ベースライン ポリシーに[セキュリティ開発ライフサイクル](https://www.microsoft.com/securityengineering/sdl)が含まれているかどうかを判定します。
+- クラウド プラットフォームのセキュリティ ガイドラインをレビューします。 Azure の場合、これらは [Microsoft Service Trust Platform](https://servicetrust.microsoft.com) にあります。
+- セキュリティ ベースライン ポリシーに[セキュリティ開発ライフサイクル](https://www.microsoft.com/en-us/securityengineering/sdl)が含まれているかどうかを判定します。
 - 次の 1 つから 3 つのリリースに基づいてネットワーク、データ、および資産関連のビジネス リスクを評価し、これらのリスクに対する組織の許容度を測定します。
 - 現在のセキュリティ ランドスケープの概要を取得するために、Microsoft の[サイバーセキュリティにおける上位の傾向](https://www.microsoft.com/security/operations/security-intelligence-report)レポートをレビューします。
 - 組織内の[セキュリティ DevOps](https://www.microsoft.com/en-us/securityengineering/devsecops) ロールの開発を検討します。
 
-<!-- "en-us" location is required for the URL above. -->
+<!-- "en-us" location is required for the URLs above. -->
 
 ## <a name="build-and-predeployment"></a>構築とデプロイ前準備
 
@@ -119,5 +119,5 @@ ms.locfileid: "77707392"
 
 > [!div class="nextstepaction"]
 > [Azure のセキュリティ ガイダンスについて](./azure-security-guidance.md)
-> [Azure セキュリティの概要](https://docs.microsoft.com/azure/security/azure-security)
+> [Azure セキュリティの概要](https://docs.microsoft.com/azure/security/fundamentals/overview)
 > [ログ、レポート、および監視について](../../decision-guides/logging-and-reporting/index.md)

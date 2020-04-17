@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4b48a4ceea5d322e4a993cdba474269d73fbc7e3
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 2ad912c7bc2e61465a81e278714f5018c2373f7f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312018"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80429225"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>移行したアプリケーションの実稼働への昇格を準備する
 

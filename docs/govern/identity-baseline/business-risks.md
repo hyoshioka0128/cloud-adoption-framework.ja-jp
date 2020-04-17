@@ -4,16 +4,16 @@ description: クラウド ガバナンス戦略におけるお客様の ID ベ�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8969a2f3cfef80f814f7dae63982e66558a35425
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: fa8bd53e2d920f8d69fe6484d427d9c9400ad174
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709330"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80429890"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>ID ベースラインの動機とビジネス上のリスク
 

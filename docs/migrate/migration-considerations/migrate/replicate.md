@@ -4,15 +4,15 @@ description: レプリケーションが移行プロセスで果たす役割と�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 31930cfef32d4a02b3892405e2c5b462e0039566
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3d1251bba8da5ec17270de38ee94ed87483c4ac6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312778"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80429334"
 ---
 <!-- markdownlint-disable MD026 -->
 
