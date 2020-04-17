@@ -4,16 +4,16 @@ description: Azure のクラウド導入フレームワークを使用して、�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: cfd554aaa2252e9a7569fd2a56af05c3c40e8163
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8145df1035079731016e90b82d3b4b8cd830c171
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355033"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80428672"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 

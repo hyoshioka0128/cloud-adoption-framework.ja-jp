@@ -4,16 +4,16 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc80f889442fd7139e9f3930da1304d1a25e3e98
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: a4f022d995cf4dca25cfd5369ce92dd4496e8687
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171431"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434608"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>デプロイ高速化の動機とビジネス リスク
 

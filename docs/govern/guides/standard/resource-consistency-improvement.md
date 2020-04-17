@@ -4,16 +4,16 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57358a9933c6f18d72678c3c4ba82bef90e713a0
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 6228bc4a2f4a2217ab7cd226ace5075c91a52dfc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170819"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434207"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>標準的な企業のガバナンス ガイド:リソース整合性の改善
 

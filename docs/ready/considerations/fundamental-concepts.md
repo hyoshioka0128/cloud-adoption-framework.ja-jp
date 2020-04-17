@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8c30f859d90e2fca26fbcd6c70db3c662d56b8a1
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: ed8d8511cbdac9996ff61688b4e6d783877e9d9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353648"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997515"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎の概念
 
@@ -60,7 +60,7 @@ Azure では、サブスクリプション、ID、リソースを管理するた
 - Azure ロールベース アクセス制御 (RBAC) ロール
 - Azure Active Directory (Azure AD) 管理者ロール
 
-Azure サブスクリプションのアカウント管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントに割り当てられます。 アカウント管理者はサブスクリプションの請求先所有者です。 アカウント管理者は、[Azure アカウント センター](https://account.azure.com/Subscriptions)でサブスクリプションの詳細を管理できます。
+Azure サブスクリプションのアカウント管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントに割り当てられます。 アカウント管理者はサブスクリプションの請求先所有者です。 アカウント管理者は、[Azure アカウント センター](https://account.azure.com/subscriptions)でサブスクリプションの詳細を管理できます。
 
 既定では、サブスクリプションのサービス管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントにも割り当てられます。 サービス管理者には、サブスクリプションに関して、RBAC ベースの所有者ロールと同等の権限が与えられます。 サービス管理者には、Azure portal へのフル アクセス権も与えられます。 アカウント管理者は、サービス管理者を別のメール アカウントに変更できます。
 
@@ -85,7 +85,7 @@ Azure で定義されているロールの詳細については、「[従来の�
 
 - [Azure のしくみ](../../getting-started/what-is-azure.md)
 - [Azure でのリソース アクセス管理](../../govern/resource-consistency/resource-access-management.md)
-- [Azure リソース マネージャーの概要](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Azure リソース マネージャーの概要](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
 - [Azure リソースのロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [Azure Active Directory とは](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Azure サブスクリプションを Azure Active Directory テナントに関連付けるまたは追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)

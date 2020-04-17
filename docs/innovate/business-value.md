@@ -4,15 +4,15 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fe7533ce7bedb03ef466bad65c5a9a7bfc299fc
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: a03abe234773139e291679e986452702e849c33e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171210"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997220"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>イノベーションのビジネス価値の合意を築く
 
@@ -64,7 +64,7 @@ ms.locfileid: "78171210"
 
 - **仮説の機会:** さまざまな利害関係者や開発チームには、ソリューションに対する期待が多すぎることはよくあることです。 非現実的な期待は、仮説があいまいすぎるという兆候である場合があります。 より明確な仮説を構築するには、「[顧客の共感を構築する](./considerations/build.md)」のガイドに従ってください。
 - **構築の機会:** 顧客のニーズを解決する方法で意見が一致しないため、チームが連携していない場合があります。 通常、このような意見の相違は、チームが[早期の技術的スパイクによって遅れている](./considerations/build.md#reduce-complexity-and-delay-technical-spikes)ことを示します。 チームが顧客に集中できるようにするには、最初のイテレーションを開始し、小さな実用最小限の製品 (MVP) を構築して仮説の一部に対処します。 チームの前進に役立つ詳細なガイダンスについては、「[デジタル発明の発展](./considerations/invention.md)」を参照してください。
-- **トレーニングの機会:** 複雑な技術面の要件や広範な機能要件が必要になるために、どちらかのチームが連携していない可能性があります。 このニーズは、アジャイル手法でトレーニングを行う機会につながる可能性があります。 チームの文化がアジャイル プロセスに対応できない場合は、イノベーションを行い、市場に遅れを取らないことが困難になる可能性があります。  DevOps とアジャイル プラクティスに関するトレーニング用のリソースについては、以下を参照してください。
+- **トレーニングの機会:** 複雑な技術面の要件や広範な機能要件が必要になるために、どちらかのチームが連携していない可能性があります。 このニーズは、アジャイル手法でトレーニングを行う機会につながる可能性があります。 チームの文化がアジャイル プロセスに対応できない場合は、イノベーションを行い、市場に遅れを取らないことが困難になる可能性があります。 DevOps とアジャイル プラクティスに関するトレーニング用のリソースについては、以下を参照してください。
   - [DevOps のプラクティスを進化させる](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Azure DevOps でアプリケーションを構築する](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
   - [Azure DevOps でアプリケーションをデプロイする](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)

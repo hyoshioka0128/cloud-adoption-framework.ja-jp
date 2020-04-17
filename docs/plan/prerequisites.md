@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f1c35b41f267887c62b2568583b929657517c87e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e723e16c039bace12c0a4e5e97c8e6635875732d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354846"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427980"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>効果的なクラウド導入計画の前提条件
 

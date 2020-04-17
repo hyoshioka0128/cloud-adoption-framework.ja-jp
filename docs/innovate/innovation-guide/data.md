@@ -4,17 +4,17 @@ description: データの見つけやすさと理解を強化する Azure Data C
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0c3a584277d708a0dcef8fcf019ed76589a3fd16
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 266c06e36594c008faa39a634c89abe0e0c1cb97
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356648"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427269"
 ---
 ::: zone target="docs"
 

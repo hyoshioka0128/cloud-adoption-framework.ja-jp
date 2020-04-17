@@ -4,15 +4,15 @@ description: スキル準備パスを開始し、組織が関連する変化を�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/23/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 29c4f2aac24c80fcec877e5645dbe61363af5983
-ms.sourcegitcommit: a1209c9dab369171e1fe0cdc6a58e3f6ae6a8f22
+ms.openlocfilehash: ab1cb0e0f98001c6095c5774270ff47e0b088cb3
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80261472"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427932"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>スキル準備パスの開始
 

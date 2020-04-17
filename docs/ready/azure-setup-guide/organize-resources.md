@@ -4,17 +4,17 @@ description: Azure リソースを効果的に編成して管理を容易にす�
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b47f0e3cf6c69bbdf3d5c8260ad4094312e1bea2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354343"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997547"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -24,8 +24,7 @@ ms.locfileid: "80354343"
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-<!-- cSpell:disable-next-line -->
-# <a name="azure-management-groups-and-hierarchy"></a>[Azure の管理グループと階層](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Azure の管理グループと階層](#tab/AzureManagementGroupsAndHierarchy)
 
 Azure には、管理グループ、サブスクリプション、リソース グループ、およびリソースという 4 つのレベルの管理スコープが用意されています。 次の図に、これらのレベルの関係を示します。
 
@@ -86,7 +85,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 - [Azure サブスクリプションを整理および管理する](../azure-best-practices/organize-subscriptions.md)
 - [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Azure でのリソース アクセス管理について](../../govern/resource-consistency/resource-access-management.md)
-- [サブスクリプション サービスの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)
+- [サブスクリプション サービスの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -161,7 +160,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 - **メタデータとドキュメント:** 管理者は、"ProjectOwner" などのタグを適用して、操作しているリソースに関する詳細を簡単に確認できます。
 - **自動化:** "ShutdownTime" や "DeprovisionDate" のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
-- **コストの最適化:** Azure Cost Management では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金をレポートできます。
+- **コストの最適化:** コストを担当するチームとリソースにリソースを割り当てることができます。 Azure Cost Management では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金を報告できます。
 
 各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 
@@ -173,14 +172,14 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 リソース グループにタグを適用するには:
 
-1. [リソース グループ](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups)に移動します。
+1. [リソース グループ](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)に移動します。
 1. リソース グループを選択します。
 1. **[タグの割り当て]** を選択します。
 1. 新しい名前と値を入力するか、ドロップダウン リストを使用して既存の名前と値を選択します。
 
 ## <a name="learn-more"></a>詳細情報
 
-詳しくは、「[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)」をご覧ください。
+詳しくは、「[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)」をご覧ください。
 
 ::: zone-end
 

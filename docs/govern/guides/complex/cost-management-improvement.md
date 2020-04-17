@@ -1,19 +1,19 @@
 ---
-title: 複雑な企業のガバナンス:Cost Management 規範の改善
-description: Azure 向けクラウド導入フレームワークを使用して、ガバナンスの実行可能な最小限の製品 (MVP) へのコスト制御の追加について説明します。
+title: 複雑な企業のガバナンス:コスト管理の規範の改善
+description: Azure 向けクラウド導入フレームワークを使用して、ガバナンスの実用最小限の製品 (MVP) へのコスト制御の追加について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b44f153c9e14f1425aa3bb1374c60243c9a3c326
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: f65118884e4bac8b62d3857008ccd5ad126656b9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709041"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80808990"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雑な企業向けのガバナンス ガイド: コスト管理の規範の改善
 

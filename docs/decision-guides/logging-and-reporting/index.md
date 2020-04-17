@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: deb432528c541fa17b9849d4c2b587740d7e36dd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434899"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996333"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -118,8 +118,8 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 
 - アプリのテレメトリ、ホストのテレメトリ (VM など)、コンテナー メトリック、Azure プラットフォームのメトリック、イベント ログを収集するための統合プラットフォーム。
 - 視覚化ツール、クエリ ツール、アラート ツール、分析ツール。 仮想マシン、ゲスト オペレーティング システム、仮想ネットワーク、およびワークロードのアプリケーション イベントの分析情報を提供できます。
-- 外部サービスとの統合および監視とアラート サービスの自動化のための [REST API](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-rest-api-walkthrough)。
-- 多くの人気のあるサード パーティ ベンダーとの[統合](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-partners)。
+- 外部サービスとの統合および監視とアラート サービスの自動化のための [REST API](https://docs.microsoft.com/azure/azure-monitor/platform/rest-api-walkthrough)。
+- 多くの人気のあるサード パーティ ベンダーとの[統合](https://docs.microsoft.com/azure/azure-monitor/platform/partners)。
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -4,17 +4,17 @@ description: Azure に移行した後、環境の管理に使用できるセキ�
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7e9dd472d2913979211959d1f230bf4fb9c33cba
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222478"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432934"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -46,7 +46,7 @@ Azure Monitor は、クラウドおよびオンプレミス環境の利用統計
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure Service Health](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/serviceHealth)
 
 Azure Service Health は、Azure サービスの問題がユーザーに影響を与えた場合の個人用に設定されたガイダンスとサポートを提供します。 問題を通知してくれるだけでなく、その影響の把握にも役立つほか、問題が解決した場合にはその旨の情報が随時配信されます。 また、お使いのリソースの可用性に影響を及ぼすおそれのある、予定されているメンテナンスや変更に備えることもできます。
 
@@ -149,7 +149,7 @@ Azure Backup は、Microsoft クラウド内のデータをバックアップ (�
 
 ::: zone-end
 
-# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
 このガイドの前の方で、移行の実行の一部として Azure Site Recovery を使用する方法について説明しました。 ただし、それにより、移行が完了した後のディザスター リカバリー戦略の重要なコンポーネントも形成されます。
 

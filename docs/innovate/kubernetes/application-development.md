@@ -3,16 +3,16 @@ title: アプリケーションの開発とデプロイ
 description: アプリケーション開発とアーキテクチャのクラウド導入フレームワークで Kubernetes を使用する方法について説明します。
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 03/20/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6ad36a6dfbce83b23bfcee382ff44daeb9db5f7f
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 5381580fc947c71ba651c96e73874c047246991c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392762"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997690"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
 
@@ -60,7 +60,7 @@ ms.locfileid: "80392762"
 > | チェック リスト  | リソース                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **readiness と liveness の正常性チェックを構成する。** Kubernetes は readiness と liveness のチェックを使用して、アプリケーションがトラフィックを受信する準備ができたこと、およびアプリケーションの再起動が必要になるタイミングを確認します。 このようなチェックを定義しないと、Kubernetes はアプリケーションが起動して実行されているかどうかを判断できません。   | [liveness と readiness のチェック](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes) |
-> | **ログ記録、アプリケーションの監視、およびアラートを構成する。** コンテナーの監視は、複数のアプリケーションを含む大規模な運用クラスターを実行するときは特に重要です。  コンテナー化されたアプリケーションに推奨されるログ記録方法は、標準出力 (stdout) と標準エラー (stderr) ストリームに書き込みを行うことです。   | [Kubernetes でのログ記録](https://kubernetes.io/docs/concepts/cluster-administration/logging) <br/> [Kubernetes の監視とアラートの概要 (ビデオ)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Azure Monitor for Containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Azure Kubernetes Service (AKS) での Kubernetes マスター ノード ログの有効化とレビュー](https://docs.microsoft.com/azure/aks/view-master-logs)  <br/> [Kubernetes のログ、イベント、ポッド メトリックをリアルタイムで表示する](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-livedata-overview) |
+> | **ログ記録、アプリケーションの監視、およびアラートを構成する。** コンテナーの監視は、複数のアプリケーションを含む大規模な運用クラスターを実行するときは特に重要です。 コンテナー化されたアプリケーションに推奨されるログ記録方法は、標準出力 (stdout) と標準エラー (stderr) ストリームに書き込みを行うことです。   | [Kubernetes でのログ記録](https://kubernetes.io/docs/concepts/cluster-administration/logging) <br/> [Kubernetes の監視とアラートの概要 (ビデオ)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Azure Monitor for Containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Azure Kubernetes Service (AKS) での Kubernetes マスター ノード ログの有効化とレビュー](https://docs.microsoft.com/azure/aks/view-master-logs)  <br/> [Kubernetes のログ、イベント、ポッド メトリックをリアルタイムで表示する](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-livedata-overview) |
 > | **アプリケーションのリソース要件を定義する。** Kubernetes クラスター内のコンピューティング リソースを管理する主な方法は、ポッドの要求と制限を使用する方法です。 これらの要求と制限により、Kubernetes スケジューラは、どのコンピューティング リソースにポッドを割り当てる必要があるか認識できます。     | [ポッドのリソース要求と制限の定義](https://docs.microsoft.com/azure/aks/developer-best-practices-resource-management)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 > | **アプリケーションのスケーリング要件を構成する。** Kubernetes はポッドの水平自動スケーリングをサポートしており、CPU 使用率などの選ばれたメトリックに応じて、デプロイのポッドの数を調整します。 オートスケーラーを使用するには、ポッド内のすべてのコンテナーで CPU の要求と制限が定義されている必要があります。    | [ポッドの水平オートスケーラーの構成](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale#autoscale-pods) |
 > | **自動化されたパイプラインと DevOps を使用してアプリケーションをデプロイする。**  コードのコミットから運用環境へのデプロイまでのすべての手順を完全に自動化することで、チームはコードの構築に専念でき、手動による日常的な手順でのオーバーヘッドと潜在的な人的エラーを解消できます。 新しいコードのデプロイが迅速になり、リスクが少なくなるため、チームは俊敏性と生産性を向上させ、実行中のコードについて自信を深めることができます。    | [DevOps のプラクティスを進化させる](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices) <br/> [Kubernetes ビルド パイプラインの設定 (ビデオ)](https://www.youtube.com/watch?v=5irsAdKoEBU&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=6) <br/> [Azure Kubernetes Service のデプロイ センター](https://docs.microsoft.com/azure/aks/deployment-center-launcher) <br/> [Azure Kubernetes Service にデプロイするための GitHub のアクション](https://docs.microsoft.com/azure/aks/kubernetes-action) <br/>  [Jenkins を使用した Azure Kubernetes Service への CI/CD](https://docs.microsoft.com/azure/aks/jenkins-continuous-deployment) |

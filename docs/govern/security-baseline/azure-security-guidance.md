@@ -4,16 +4,16 @@ description: Microsoft の Service Trust Platform と Compliance Manager を使�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 54053a21473b3f81c7fbf7781a0d5a9d45458075
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6a726cd44238a67f050471735e2b96bbbd62c363
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356890"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433449"
 ---
 <!-- cSpell:ignore DPIAs DSRs -->
 

@@ -4,16 +4,16 @@ description: VPN を使用してオンプレミスとクラウドベースのネ
 author: rotycenh
 ms.author: abuck
 ms.date: 02/11/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cc9963118d8f69fd78f9cf5d84f5c140c200aec5
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 2241e1f4e6f738ce435e6cbedfe686a4ed85e1de
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225855"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996234"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>ソフトウェア定義ネットワーク:クラウド DMZ
 
@@ -43,4 +43,4 @@ DMZ は、ファイアウォールやパケット検査などのセキュリテ�
 
 クラウド DMZ の実装の詳細については、以下を参照してください。
 
-- [Azure とオンプレミス データ センター間に DMZ を実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)。 この記事では、安全なハイブリッド ネットワーク アーキテクチャを Azure に実装する方法について説明します。
+- [Azure とオンプレミス データ センター間に DMZ を実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)。 この記事では、安全なハイブリッド ネットワーク アーキテクチャを Azure に実装する方法について説明します。

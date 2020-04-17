@@ -4,16 +4,16 @@ description: Azure ネイティブ ツールが、ID ベースラインのガバ
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0aa9525a42e62012e1aa5913d9f806cc2a40e2f0
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 368d2811bb54ef373be8df036d96452023891b83
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709398"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434953"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -46,7 +46,7 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 
 この方法を選択した場合、Azure AD では、別の信頼された認証システム (オンプレミスの Active Directory フェデレーション サービス (AD FS) や信頼できるサード パーティのフェデレーション プロバイダーなど) に、ユーザーのパスワードを検証する認証プロセスが渡されます。
 
-[Azure Active Directory 用の適切な認証方法の選択](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)に関する記事には、組織に最適なソリューションを選択するためのデシジョン ツリーが含まれています。
+[Azure Active Directory 用の適切な認証方法の選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)に関する記事には、組織に最適なソリューションを選択するためのデシジョン ツリーが含まれています。
 
 次の表は、このガバナンス規範をサポートするポリシーとプロセスを成熟させるのに役立つネイティブ ツールの一覧です。
 

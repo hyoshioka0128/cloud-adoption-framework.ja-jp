@@ -4,16 +4,16 @@ description: Azure Resource Manager、サブスクリプション、リソース
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 009630e45eec28a12828f7651b353c1a5015ab2b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: d07d0c000cc80a74c1c604ca03a20145c43cf916
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709449"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997313"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -32,7 +32,7 @@ Azure では、_リソース_という用語は、Azure によって管理され
 
 ## <a name="what-is-an-azure-resource-group"></a>Azure リソース グループとは
 
-Azure の各リソースは、[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)に属している必要があります。 リソース グループは、"_ライフサイクルとセキュリティに基づいて_" 複数のリソースを単一のエンティティとして管理できるようにまとめる、論理コンストラクトに過ぎません。 たとえば、[n 層アプリケーション](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)のリソースなど、似たようなライフサイクルを共有するリソースを、グループとして作成または削除できます。 もう 1 つの例を挙げると、一緒に作成されたすべてのものは、一緒に管理し、一緒に廃止し、一緒にリソース グループに登録します。
+Azure の各リソースは、[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)に属している必要があります。 リソース グループは、"_ライフサイクルとセキュリティに基づいて_" 複数のリソースを単一のエンティティとして管理できるようにまとめる、論理コンストラクトに過ぎません。 たとえば、[n 層アプリケーション](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)のリソースなど、似たようなライフサイクルを共有するリソースを、グループとして作成または削除できます。 もう 1 つの例を挙げると、一緒に作成されたすべてのものは、一緒に管理し、一緒に廃止し、一緒にリソース グループに登録します。
 
 ![リソースが含まれるリソース グループの図](../../_images/govern/design/governance-1-10.png)
 *図 2 - リソース グループにはリソースが含まれる。*
@@ -58,7 +58,7 @@ Azure サブスクリプションは、リソース グループとそのリソ�
 ![Azure Resource Manager API に接続している Azure クライアントの図](../../_images/govern/design/governance-1-13.png)
 *図 5 - Azure クライアントが Azure Resource Manager RESTful API に接続する。*
 
-これらのクライアントは、RESTful API を使用して Azure Resource Manager に接続しますが、Azure Resource Manager には、リソースを直接管理する機能が含まれていません。 代わりに、Azure ではリソースの種類のほとんどに、独自の[リソース プロバイダー](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology)があります。
+これらのクライアントは、RESTful API を使用して Azure Resource Manager に接続しますが、Azure Resource Manager には、リソースを直接管理する機能が含まれていません。 代わりに、Azure ではリソースの種類のほとんどに、独自の[リソース プロバイダー](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#terminology)があります。
 
 ![Azure リソース プロバイダー](../../_images/govern/design/governance-1-14.png)
 *図 6 - Azure リソース プロバイダー。*
@@ -96,7 +96,7 @@ RBAC ロールでは、特定のリソースに対してユーザーが適用で
 ![Azure リソース ポリシー](../../_images/govern/design/governance-1-19.png)
 *図 11.Azure リソース ポリシー。*
 
-次の制御は、要求が [Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)を超えていないことのチェックです。 たとえば、サブスクリプションあたりのリソース グループ数は、980 グループに制限されています。 追加のリソース グループをデプロイする要求を受け取ったときに、制限に達している場合、その要求は拒否されます。
+次の制御は、要求が [Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えていないことのチェックです。 たとえば、サブスクリプションあたりのリソース グループ数は、980 グループに制限されています。 追加のリソース グループをデプロイする要求を受け取ったときに、制限に達している場合、その要求は拒否されます。
 
 ![Azure リソース制限](../../_images/govern/design/governance-1-20.png)
 *図 12.Azure リソース制限。*

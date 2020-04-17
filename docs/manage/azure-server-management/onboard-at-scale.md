@@ -4,15 +4,15 @@ description: サーバーにサービス エージェントをデプロイし、
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 9647b2e7a32cd1374390e8849b62b41580284163
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312738"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809159"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -38,7 +38,7 @@ Azure サーバー管理サービスをサーバーにオンボードするに�
 
 Azure Policy には、Log Analytics エージェントと [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) を含む[ポリシーのイニシアティブ](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives)が組み込まれています。これは Azure Monitor for VMs に必要です。
 
-<!-- TODO: Add these when available.
+<!-- TODOBACKLOG: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.
 - [Preview]: Enable Azure Monitor for VMs.
  -->

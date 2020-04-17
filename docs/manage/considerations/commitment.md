@@ -4,15 +4,15 @@ description: さまざまなワークロードの中断の分類と影響から�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4c86c6c079cb19497b7c0f19e8b8fa9166226780
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312706"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997142"
 ---
 # <a name="business-commitment-in-cloud-management"></a>クラウド管理におけるビジネス コミットメント
 
@@ -57,7 +57,7 @@ ms.locfileid: "79312706"
 
 従来のオンプレミス環境では、通常、環境の管理コストは IT 運用が所有する埋没コストと見なされます。 クラウドでは、管理とは予算に直接影響する、目的を持った意思決定を意味します。 各管理機能のコストは、クラウドにデプロイされた各ワークロードが直接的な原因で発生することがあります。 このアプローチではより高度な制御が可能ですが、クラウド運用チームとクラウド戦略チームが責任範囲について最初に合意する必要が生じます。
 
-また、組織では、[一部の継続的な管理機能をサービス プロバイダーに外部委託する](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage)こともできます。 これらのサービス プロバイダーは、[Azure Lighthouse](https://azure.com/lighthouse) を使用して組織がリソースへのアクセスを許可する際の精度と制御を強化し、サービス プロバイダーが実行するアクションの可視性を高めることができます。
+また、組織では、[一部の継続的な管理機能をサービス プロバイダーに外部委託する](https://aka.ms/adopt/partneroffers)こともできます。 これらのサービス プロバイダーは、[Azure Lighthouse](https://azure.microsoft.com/services/azure-lighthouse) を使用して組織がリソースへのアクセスを許可する際の精度と制御を強化し、サービス プロバイダーが実行するアクションの可視性を高めることができます。
 
 - **委任された責任:** 運用管理のオーバーヘッドを一元化して想定する必要がないため、多くの組織の IT 運用では新しいアプローチを検討しています。 一般的なアプローチの 1 つは "_委任された責任_" と呼ばれます。 クラウドのセンター オブ エクセレンス モデルでは、プラットフォームの運用とプラットフォームのオートメーションにより、中央の IT 運用チームとは無関係に、業務主導の運用チームが使用できるセルフサービス管理ツールが提供されます。 このアプローチにより、業務の利害関係者は管理関連の予算を完全に制御できます。 また、これにより、クラウドのセンター オブ エクセレンス (CCoE) チームは、最小限のガードレール セットが適切に実装されていることを確実にすることもできます。 このモデルでは、IT 部門は、企業の賢明な意思決定を支援する仲介者およびガイドとして機能します。 事業運営側は、依存するワークロードの日常業務を監督します。
 

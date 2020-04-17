@@ -4,16 +4,16 @@ description: クラウド ガバナンス戦略におけるお客様のセキュ
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3bef524646e6be5ca6cd0b638b9614af389972f9
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 40b92c15af9ea4677d049cc76902d33e6807f139
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709024"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433628"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>セキュリティ ベースラインの導入理由とビジネス リスク
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04386ec98ed0ecb6269c53a60f64bc73f148b12f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: ba284cca38d1ce494792cce3d130d65a6240f4e1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434853"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996348"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -29,7 +29,7 @@ Azure の[サブスクリプション設計](../subscriptions/index.md)では、
 
 ## <a name="basic-grouping"></a>基本的なグループ化
 
-Azure では、[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)はサブスクリプション内でリソースを論理的にグループ化するリソース編成のコア メカニズムです。
+Azure では、[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)はサブスクリプション内でリソースを論理的にグループ化するリソース編成のコア メカニズムです。
 
 リソース グループは、共通のライフサイクルのほか、ポリシーやロールベースのアクセス制御 (RBAC) の要件などの共有管理の制約があるリソースのコンテナーとして機能します。 リソース グループに別のリソース グループを入れ子にすることはできません。また、リソースは 1 つのリソース グループにのみ属することができます。 すべてのコントロール プレーン アクションは、リソース グループ内のすべてのリソースに作用します。 たとえば、リソース グループを削除すると、そのグループ内のすべてのリソースも削除されます。 リソース グループの管理には、次のようなパターンを使用することをお勧めします。
 
@@ -46,7 +46,7 @@ Azure では、[リソース グループ](https://docs.microsoft.com/azure/azur
 
 基本的なリソース グループ化メカニズムの上に構築されている Azure プラットフォームは、テンプレートを使用して、クラウド環境にリソースをデプロイするためのシステムを提供します。 ワークロードのデプロイ時、テンプレートを使用して一貫性のある組織と名前付け規則を作成し、リソースのデプロイと管理の設計におけるこれらの側面を強化できます。
 
-[Azure Resource Manager テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview)を使用すると、事前に定義された構成とリソース グループの構造を使用して一貫した状態でリソースを繰り返しデプロイすることができます。 Resource Manager テンプレートを使用して、デプロイの基礎として標準のセットを定義できます。
+[Azure Resource Manager テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)を使用すると、事前に定義された構成とリソース グループの構造を使用して一貫した状態でリソースを繰り返しデプロイすることができます。 Resource Manager テンプレートを使用して、デプロイの基礎として標準のセットを定義できます。
 
 たとえば、サーバー間のトラフィックを分散するために、ロード バランサーと組み合わせた Web サーバーとして 2 つの仮想マシンを含む Web サーバー ワークロードをデプロイするための標準テンプレートを作成できます。 この種類のワークロードが必要な場合はいつでも、このテンプレートを再利用して、関連するデプロイ名と IP アドレスを変更するだけで構造的に同一な一連の仮想マシンとロード バランサーを作成できます。
 

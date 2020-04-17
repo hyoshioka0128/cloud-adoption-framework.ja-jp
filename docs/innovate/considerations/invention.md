@@ -4,15 +4,15 @@ description: お客様の導入と共感を念頭に置きながら、発明と�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f9303adc183596f93c822224e5098549a533a153
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 010702ef16c3350049e8cc3cd84a26266fe77661
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356743"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80427499"
 ---
 # <a name="develop-digital-inventions"></a>デジタル発明を開発する
 

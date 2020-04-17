@@ -4,17 +4,17 @@ description: 開発者チームが生産性を高めると共に、セキュリ�
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6e0e0ddb2284a238274f9e5cc579e164a4378004
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d4c09f7e92f0c023b641148987a1dad0459e91e5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356638"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809028"
 ---
 ::: zone target="docs"
 
@@ -145,4 +145,4 @@ LiveOps はデータに人間味を与えるうえでも役立ちます。 LiveO
 
 PlayFab には、収益性を高め、ゲームの寿命を延ばす、独自のマージンの高い LiveOps ツールとサービスが用意されています。 デバイスやプラットフォームにまったく依存しない PlayFab は、Facebook や Steam などのソーシャル ID プロバイダー、商取引を調整するストア プラットフォーム、iOS、Android、Xbox、PlayStation などのデバイス プラットフォームと簡単に統合できます。 Azure のデータ資産により、PlayFab は、お客様がより良いゲームとより賢明な意思決定を行い、プレーヤーを獲得して維持し、より多くの実験と反復処理をより迅速に実行して迅速に学習できるようになるインテリジェント サービスを提供できます。
 
-**[Azure PlayFab のドキュメント](https://docs.microsoft.com/gaming/playfab/personas/liveops/liveops)に移動する**
+**[Azure PlayFab のドキュメント](https://docs.microsoft.com/gaming/playfab)に移動する**

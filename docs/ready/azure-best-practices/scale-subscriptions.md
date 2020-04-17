@@ -4,15 +4,15 @@ description: Azure のクラウド導入フレームワークを使用して、�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dd052e42bc9685701df831878c12ed37ed42395c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 465f1771232f8df7226773fb8055052a846cacca
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80359864"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997956"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>追加のサブスクリプションを作成して、Azure 環境をスケーリングする
 
@@ -26,7 +26,7 @@ ms.locfileid: "80359864"
 
 ## <a name="technical-considerations"></a>技術的な考慮事項
 
-**サブスクリプションの制限**: サブスクリプションでは、一部のリソースの種類に対して制限が定義されています。 たとえば、あるサブスクリプションでは仮想ネットワークの数に制限があります。 サブスクリプションがこれらの制限に近づいた場合は、別のサブスクリプションを作成し、そこに追加のリソースを置く必要があります。 詳細については、[Azure サブスクリプションとサービスの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits#general-limits) に関する記事を参照してください。
+**サブスクリプションの制限**: サブスクリプションでは、一部のリソースの種類に対して制限が定義されています。 たとえば、あるサブスクリプションでは仮想ネットワークの数に制限があります。 サブスクリプションがこれらの制限に近づいた場合は、別のサブスクリプションを作成し、そこに追加のリソースを置く必要があります。 詳細については、[Azure サブスクリプションとサービスの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#general-limits) に関する記事を参照してください。
 
 **クラシック モデルのリソース:** Azure を長期間使用している場合は、クラシック デプロイ モデルを使用して作成されたリソースが存在する可能性があります。 Azure のポリシー、ロールベースのアクセス制御、リソースのグループ化、およびタグは、クラシック モデルのリソースには適用できません。 これらのリソースは、クラシック モデルのリソースのみを含むサブスクリプションに移動する必要があります。
 
@@ -47,7 +47,7 @@ ms.locfileid: "80359864"
 
 ## <a name="moving-resources-between-subscriptions"></a>サブスクリプション間でのリソースの移動
 
-サブスクリプション モデルが大きくなると、一部のリソースを他のサブスクリプションに所属させることを決定する場合があります。 多くの種類のリソースをサブスクリプション間で移動できます。 また、自動デプロイを使用して、別のサブスクリプションでリソースを再作成することもできます。 詳細については、[別のリソース グループまたはサブスクリプションへの Azure リソースの移動](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)に関する記事をご覧ください。
+サブスクリプション モデルが大きくなると、一部のリソースを他のサブスクリプションに所属させることを決定する場合があります。 多くの種類のリソースをサブスクリプション間で移動できます。 また、自動デプロイを使用して、別のサブスクリプションでリソースを再作成することもできます。 詳細については、[別のリソース グループまたはサブスクリプションへの Azure リソースの移動](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)に関する記事をご覧ください。
 
 ## <a name="tips-for-creating-new-subscriptions"></a>新しいサブスクリプションを作成するためのヒント
 

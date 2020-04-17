@@ -4,15 +4,15 @@ description: 後で分析や合理化を行うために、特定のビジネス�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 1735c5e6f818f727cee3e28f11fbaf31610de8d8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 186013e2f626be18f0cef8beea66d638be9a793c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170088"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434823"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>デジタル資産のインベントリ データを収集する
 

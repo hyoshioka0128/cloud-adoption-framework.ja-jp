@@ -4,16 +4,16 @@ description: Azure 向けクラウド導入フレームワークで、ID ベー�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 85286fd741cfdc1201eb436f3327993ac0337875
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: fb47ce9aea9baa27404ad927cee344cb0a9fec6c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707444"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433597"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>セキュリティ ベースライン ポリシーのコンプライアンス プロセス
 

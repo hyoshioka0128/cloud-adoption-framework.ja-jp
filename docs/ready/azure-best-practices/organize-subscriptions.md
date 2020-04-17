@@ -4,15 +4,15 @@ description: Azure のクラウド導入フレームワークを使用して、�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e874c518537232104d9bbddbdf8e84841239e56b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 79ba055381ccdcb5a70fb24f5da3554a8652fc97
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80359868"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80998020"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>複数の Azure サブスクリプションの整理と管理
 
@@ -65,7 +65,7 @@ Azure リソースの整理と管理の詳細については、次のリソー�
 
 - [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/governance/management-groups)
 - [Azure のすべてのサブスクリプションと管理グループを管理する目的でアクセス権限を昇格させる](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
-- [Azure リソースを別のリソース グループやサブスクリプションに移動する](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)
+- [Azure リソースを別のリソース グループやサブスクリプションに移動する](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 
 ## <a name="next-steps"></a>次のステップ
 

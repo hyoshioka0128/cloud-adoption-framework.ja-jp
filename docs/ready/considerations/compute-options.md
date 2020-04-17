@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b2712867c8b5dbdf79e5f235ebd45fe02ae4bf20
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 6b868c97cf5334e515ee44b0415d212175d4c26f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092552"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997535"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 
@@ -27,7 +27,7 @@ ms.locfileid: "79092552"
 ![Azure コンピューティング サービスのデシジョン ツリー](../../_images/ready/compute-decision-tree.png)
 
 > [!NOTE]
-> 各アプリケーションまたはサービスのコンピューティング オプションを評価する方法の詳細については、Azure アプリケーション アーキテクチャ ガイドの「[Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)」を参照してください。
+> 各アプリケーションまたはサービスのコンピューティング オプションを評価する方法の詳細については、Azure アプリケーション アーキテクチャ ガイドの「[Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)」を参照してください。
 
 ### <a name="key-questions"></a>主な質問
 

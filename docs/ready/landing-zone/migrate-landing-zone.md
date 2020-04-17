@@ -4,15 +4,15 @@ description: Azure で移行ランディング ゾーンをデプロイする方
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ed7e64e2c18187621f2c7703b5b1d9f2056997ea
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: a76a09e40fc11511213c0f496c9332ba9a05962f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392623"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997843"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "80392623"
 
 ## <a name="deploy-the-first-landing-zone"></a>最初のランディング ゾーンをデプロイする
 
-クラウド導入フレームワークで移行ランディング ゾーン ブループリントを使用する前に、次の前提条件、決定事項、実装ガイダンスを確認してください。 このガイダンスが目的のクラウド導入計画と整合している場合は、[デプロイ手順][deploy-sample]を使用して[移行ランディング ゾーン ブループリント](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/index)をデプロイできます。
+クラウド導入フレームワークで移行ランディング ゾーン ブループリントを使用する前に、次の前提条件、決定事項、実装ガイダンスを確認してください。 このガイダンスが目的のクラウド導入計画と整合している場合は、[デプロイ手順][deploy-sample]を使用して[移行ランディング ゾーン ブループリント](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)をデプロイできます。
 
 > [!div class="nextstepaction"]
 > [ブループリント サンプルをデプロイする][deploy-sample]
@@ -31,7 +31,7 @@ ms.locfileid: "80392623"
 
 この初期ランディング ゾーンには、次の前提条件または制約が含まれています。 これらの前提条件がご自分の環境の制約と一致する場合、このブループリントを使用して最初のランディング ゾーンを作成することができます。 このブループリントは、固有の制約を満たすランディング ゾーン ブループリントを作成するために拡張することもできます。
 
-- **サブスクリプションの制限**: この導入の取り組みでは、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)を超えることは予想されていません。
+- **サブスクリプションの制限**: この導入の取り組みでは、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えることは予想されていません。
 - **コンプライアンス:** このランディング ゾーンではサード パーティのコンプライアンス要件は必要ありません。
 - **アーキテクチャの複雑さ:** アーキテクチャの複雑さによって、追加の運用サブスクリプションが常に必要になるわけではありません。
 - **共有サービス:** このサブスクリプションをハブ アンド スポーク アーキテクチャのスポークのように扱うことを要求する既存の共有サービスは Azure にありません。
@@ -48,7 +48,7 @@ ms.locfileid: "80392623"
 | 移行ツール              | Azure Site Recovery がデプロイされ、Azure Migrate プロジェクトが作成されます。                | [移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | ログ記録と監視       | Operational Insights ワークスペースと診断ストレージ アカウントがプロビジョニングされます。                |                                                                                                                                                                                                                                                                                       |
 | ネットワーク                      | ゲートウェイ、ファイアウォール、ジャンプボックス、ランディング ゾーンのサブネットを持つ仮想ネットワークが作成されます。  | [ネットワーク関連の意思決定](../considerations/networking-options.md)                                                                                                                                                                                                                       |
-| ID                     | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。 | [ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) |
+| ID                     | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。 | [ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) |
 | ポリシー                       | このブループリントでは現在、Azure ポリシーを適用しないことを想定しています。                        |                                                                                                                                                                                                                                                                                       |
 | サブスクリプション デザイン          | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [初期サブスクリプションを作成する](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | リソース グループ              | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [サブスクリプションのスケーリング](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
