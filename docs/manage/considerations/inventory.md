@@ -4,15 +4,15 @@ description: 管理対象のもの (インベントリ) とそれらの管理対
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c9057c84757c49457b46c310d239dc8c49bd50d0
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 45eda399229361d9a2bd762ec6c8d8624e3a0742
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341227"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997126"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>クラウド管理のインベントリと可視性
 
@@ -72,7 +72,7 @@ ms.locfileid: "78341227"
 
 ### <a name="performance-telemetry"></a>パフォーマンス テレメトリ
 
-クラウド管理に関するビジネスのコミットメントは、データによって決まります。 コミットメントを適切に維持するには、まず、クラウド運用チームはワークロードの安定性、パフォーマンス、運用に関するテレメトリと、ワークロードをサポートする資産を理解する必要があります。
+クラウド管理に関するビジネスのコミットメントは、データによって決まります。 コミットメントを適切に維持するには、まず、ワークロードの安定性、パフォーマンス、運用に関するテレメトリと、ワークロードをサポートする資産について、クラウド運用チームが理解する必要があります。
 
 ネットワーク、DNS、オペレーティング システム、および環境のその他の基本的な側面の継続的な正常性と運用は、あらゆるワークロードの全体的な正常性を考慮する上で重要なデータ ポイントです。
 

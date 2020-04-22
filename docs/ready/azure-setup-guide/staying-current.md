@@ -4,17 +4,17 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d0c3379da2962236dfb64ff45a5a9495b8a3fc36
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353820"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80808782"
 ---
 <!-- cSpell:ignore jelledruyts andym endjin -->
 
@@ -59,9 +59,9 @@ Azure に関する最新情報を入手するのに役立つより詳しいコ�
 - [Azure グラフ](https://azurecharts.com)*
   - この視覚化では、過去 6 か月間に加えられたすべての Azure の更新が表示されます。 Azure の変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。
 - [AzAdvertizer](https://www.azadvertizer.net)*
-  - Azure ガバナンス機能 (Azure Policy、ポリシー イニシアチブブ、ポリシー エイリアス、RBAC など) でのリリースと変更の追跡。
+  - Azure Policy、ポリシー イニシアチブブ、ポリシー エイリアス、ロールベースのアクセス制御 (RBAC) などの Azure ガバナンス機能に関するリリースおよび変更の追跡。
 - [Azure Weekly](https://azureweekly.info)*
   - [endjin](https://endjin.com) が提供するこのニュースレターには、Microsoft Azure に関するその週のトップ ニュースの概要が含まれます。 また、興味深い歴史的なコンテンツも含まれています。
   - [電子メール](https://azureweekly.info)経由でサブスクライブします。
 
-\* *これらのリソースは、コミュニティによって提供されており、Microsoft が正式に管理するものではありません。*
+\* _これらのリソースは、コミュニティによって提供されており、Microsoft が正式に管理するものではありません。_

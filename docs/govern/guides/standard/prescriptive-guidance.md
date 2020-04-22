@@ -4,16 +4,16 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 328577aae931194517e015973a935de24b580a96
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357048"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995239"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準的な企業のガバナンス ガイド:ベスト プラクティスの説明
 
@@ -60,7 +60,7 @@ ms.locfileid: "80357048"
 
 リソースの整合性を決めると、サブスクリプション内で確実にAzure リソースをデプロイして構成し、一貫性を持って管理するために必要なツール、プロセス、および労力が決まります。 ここでは、基本のリソース整合性パターンとして、 **[デプロイの整合性](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** が選択されています。
 
-- リソース グループは、ライフサイクル アプローチを使用してアプリケーション用に作成されます。 同時に作成、管理、およびインベントリから削除されるものはすべて、1 つのリソース グループに属している必要があります。 リソース グループの詳細については、[こちら](../../../decision-guides/resource-consistency/index.md#basic-grouping)を参照してください。
+- リソース グループは、ライフサイクル アプローチを使用してアプリケーション用に作成されます。 同時に作成、管理、およびインベントリから削除されるものはすべて、1 つのリソース グループに属している必要があります。 詳細については、「[リソースの整合性の意思決定ガイド](../../../decision-guides/resource-consistency/index.md#basic-grouping)」を参照してください。
 - 関連付けられている管理グループのすべてのサブスクリプションに、Azure Policy を適用する必要があります。
 - デプロイ プロセスの一環として、リソース グループの Azure リソース整合性テンプレートをソース管理に格納する必要があります。
 - 上で説明したライフサイクル アプローチに基づき、各リソース グループは、特定のワークロードまたはアプリケーションに関連付けられます。

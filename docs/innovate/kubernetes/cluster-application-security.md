@@ -3,16 +3,16 @@ title: クラスターとアプリケーションのセキュリティ
 description: クラスターとアプリケーションのセキュリティのために、クラウド導入フレームワークでの Kubernetes について説明します。
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 03/20/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 64a7f4097a75b54ef4f91b5889fa31fc3b98d61a
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: c7d27fb64e03358876eb8384c09e3add5f5c433e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392743"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527243"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -60,7 +60,7 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > | **ネットワーク ポリシーを使用して、ポッド間のネットワーク トラフィックをセキュリティで保護する。** 最低限の特権の原則を適用して、クラスター内のポッド間のネットワーク トラフィック フローを制御します。 | [ネットワーク ポリシーを使用したポッド間のトラフィックのセキュリティ保護](https://docs.microsoft.com/azure/aks/use-network-policies) |
 > | **許可された IP を使用して API サーバーへのアクセスを制限する。** API サーバーへのアクセスを、限られた一連の IP アドレス範囲に制限することで、クラスターのセキュリティを向上させ、攻撃対象を最小限にします。 | [API サーバーへのアクセスをセキュリティで保護する](https://docs.microsoft.com/azure/aks/api-server-authorized-ip-ranges) |
 > | **クラスターのエグレス トラフィックを制限する。** クラスターのエグレス トラフィックを制限する場合に、どのポートとアドレスを許可するか確認します。 Azure Firewall またはサードパーティ製ファイアウォール アプライアンスを使用して、エグレス トラフィックをセキュリティで保護し、これらの必要なポートとアドレスを定義することができます。 | [AKS でクラスター ノードに対するエグレス トラフィックを制御する](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
-> | **Web アプリケーション ファイアウォール (WAF) を使用してトラフィックをセキュリティで保護する。** Kubernetes クラスターのイングレス コントローラーとして Azure Application Gateway を活用します。  | [Azure Application Gateway をイングレス コントローラーとして構成する](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
+> | **Web アプリケーション ファイアウォール (WAF) を使用してトラフィックをセキュリティで保護する。** Kubernetes クラスターのイングレス コントローラーとして Azure Application Gateway を使用します。  | [Azure Application Gateway をイングレス コントローラーとして構成する](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **ワーカー ノードにセキュリティとカーネルの更新プログラムを適用する。** AKS ノードの更新エクスペリエンスを理解します。 クラスターを保護するために、AKS のノードにセキュリティ更新プログラムが自動的に適用されます。 これらの更新プログラムには、OS のセキュリティ修正プログラムやカーネルの更新プログラムが含まれています。 これらの更新プログラムの中には、プロセスを完了するためにノードの再起動が必要なものがあります。 | [更新プログラムを適用するために Kured を使用してノードを自動的に再起動する](https://docs.microsoft.com/azure/aks/node-updates-kured) |
 > | **コンテナーとクラスターのスキャン ソリューションを構成する。** Azure Container Registry にプッシュされたコンテナーをスキャンし、クラスター ノード、クラウド トラフィック、およびセキュリティ制御についてより詳しく把握します。 | [Azure Container Registry と Security Center の統合](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Azure Kubernetes Service と Security Center の統合](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 

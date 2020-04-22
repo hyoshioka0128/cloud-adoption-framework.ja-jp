@@ -3,24 +3,24 @@ title: Azure App Service と Database for MySQL に Linux アプリをリファ�
 description: Azure 向けのクラウド導入フレームワークを使用し、Linux サービス デスク アプリを Azure App Service および Azure Database for MySQL にリファクターする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 04/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 988d7524941b49821cd96546cc3adafe317dff8a
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: ba3ac825fb43a9c185d86ef9695afc52c9437c56
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356238"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396237"
 ---
-<!-- cSpell:ignore contosohost contosodc vcenter DBHOST DBUSER WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager CNAME -->
+<!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Azure App Service、Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリをリファクターする
 
 この記事では、架空の会社である Contoso が、2 階層の Linux ベースの Apache MySQL PHP (LAMP) アプリをリファクターし、オンプレミスから Azure に移行して Azure App Service と GitHub の統合と、Azure Database for MySQL を使用する方法を示します。
 
-この例で使用される osTicket (サービス デスク アプリ) は、オープン ソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。
+この例で使用される osTicket (サービス デスク アプリ) は、オープン ソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub の osTicket リポジトリ](https://github.com/osTicket/osTicket)からダウンロードできます。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
@@ -28,7 +28,7 @@ IT リーダーシップ チームは、ビジネス パートナーと密接に
 
 - **ビジネスの成長への対応。** Contoso は成長し続けており、新しい市場に進出しつつあります。 そのため顧客サービス担当者を追加する必要があります。
 - **スケール。** Contoso は、事業規模が拡大したときに、顧客サービス担当者を追加できるように、ソリューションを構築する必要があります。
-- **回復性を向上させる。**  過去にシステムで発生した問題は、内部ユーザーのみに影響していました。 新しいビジネス モデルでは、外部ユーザーも影響を受けるため、Contoso は、アプリを常時稼働させる必要があります。
+- **回復性を向上させる。** 過去にシステムで発生した問題は、内部ユーザーのみに影響していました。 新しいビジネス モデルでは、外部ユーザーも影響を受けるため、Contoso は、アプリを常時稼働させる必要があります。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -62,7 +62,7 @@ Contoso は目標と要件を決定した後、デプロイ ソリューショ�
 - 両方のリージョンで、2 つの Azure Web Apps の前に Traffic Manager が設定されます。
 - Traffic Manager は、トラフィックを強制的に米国東部 2 を通過させるために、優先モードで構成されます。
 - 米国東部 2 リージョン内の Azure アプリ サーバーがオフラインになった場合でも、ユーザーは、米国中部リージョンにフェールオーバーされたアプリにアクセスできます。
-- アプリのデータベースは、MySQL Workbench ツールを使用して Azure Database for MySQL サービスに移行されます。 オンプレミスのデータベースはローカルでバックアップされ、Azure Database for MySQL に直接復元されます。
+- アプリのデータベースは、Azure Database Migration Service (DMS) を使用して Azure Database for MySQL サービスに移行されます。 オンプレミスのデータベースはローカルでバックアップされ、Azure Database for MySQL に直接復元されます。
 - このデータベースは、プライマリ リージョンである米国東部 2 で、運用ネットワーク (VNET-PROD-EUS2) のデータベース サブネット (PROD-DB-EUS2) に存在します。
 - 運用ワークロードを移行しようとしているため、アプリの Azure リソースは、運用リソース グループ **ContosoRG** 内に存在することになります。
 - Traffic Manager リソースは、Contoso のインフラストラクチャ リソース グループ **ContosoInfraRG** にデプロイされます。
@@ -75,7 +75,7 @@ Contoso は目標と要件を決定した後、デプロイ ソリューショ�
 Contoso は、次のようにして移行プロセスを完了します。
 
 1. 最初のステップとして、Contoso 管理者は、Azure インフラストラクチャをセットアップします。これには、Azure App Service のプロビジョニング、Traffic Manager の設定、および Azure Database for MySQL インスタンスのプロビジョニングが含まれます。
-2. Azure の準備ができたら、MySQL Workbench を使用してデータベースを移行します。
+2. Azure インフラストラクチャを準備した後、Azure Database Migration Service (DMS) を使用してデータベースを移行します。
 3. Azure でデータベースが実行されたら、継続的デリバリーで使用する Azure App Service 用の GitHub プライベート リポジトリを設定し、それを osTicket アプリで読み込みます。
 4. Azure Portal で、Azure App Service を実行する Docker コンテナーに GitHub からアプリを読み込みます。
 5. DNS の設定を調整し、アプリの自動スケーリングを構成します。
@@ -88,6 +88,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 --- | --- | ---
 [Azure App Service](https://azure.microsoft.com/services/app-service) | このサービスでは、Web サイト向けの Azure PaaS サービスを使用してアプリケーションを実行およびスケーリングします。 | 価格は、インスタンスのサイズと必要な機能に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | DNS を使用して、Azure、外部 Web サイト、またはサービスにユーザーを送るロード バランサー。 | 価格は、受信した DNS クエリの数と監視対象のエンドポイントの数に基づきます。 | [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/traffic-manager)。
+[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。
 [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | データベースは、オープン ソースの MySQL Server エンジンに基づいています。 これは、アプリの開発とデプロイに向けたサービスとしての、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースです。 | 価格は、コンピューティング、ストレージ、およびバックアップ要件に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/mysql)。
 
 ## <a name="prerequisites"></a>前提条件
@@ -112,7 +113,7 @@ Contoso は、次のようにして移行を完了します。
 > - **ステップ 1:Azure App Service をプロビジョニングする。** Contoso 管理者は、プライマリ リージョンとセカンダリ リージョンに Web Apps をプロビジョニングします。
 > - **手順 2:Traffic Manager を設定する。** トラフィックのルーティングと負荷分散を行う ために、Traffic Manager を Web アプリの前に設定します。
 > - **ステップ 3:MySQL をプロビジョニングする。** Azure で、Azure Database for MySQL のインスタンスをプロビジョニングします。
-> - **手順 4:データベースを移行する。** MySQL Workbench を使用してデータベースを移行します。
+> - **手順 4:データベースを移行する。** Azure Database Migration Service (DMS) を使用してデータベースを移行します。
 > - **手順 5:GitHub を設定する。** アプリの Web サイト/コード用のローカル GitHub リポジトリを設定します。
 > - **手順 6:Web アプリをデプロイする。** GitHub から Web アプリをデプロイします。
 
@@ -188,9 +189,70 @@ Contoso 管理者は、MySQL データベース インスタンスを、プラ�
 
 ## <a name="step-4-migrate-the-database"></a>手順 4:データベースを移行する
 
-Contoso 管理者は、MySQL ツールでバックアップと復元を使用して、データベースを移行します。 MySQL Workbench をインストールし、OSTICKETMYSQL からデータベースをバックアップして、Azure Database for MySQL Server に復元します。
+MySQL データベースは、次の方法で移動できます。 それぞれのオプションで、ターゲットに対して Azure DB for MySQL インスタンスを作成する必要があります。 作成したら、次の 2 つのパスを使用して移行を実行できます。
 
-### <a name="install-mysql-workbench"></a>MySQL Workbench のインストール
+- 4a:Azure Database Migration Service
+- 4b:MySQL Workbench のバックアップと復元
+
+### <a name="step-4a-migrate-the-database-azure-database-migration-service"></a>手順 4a: データベースの移行 (Azure Database Migration Service)
+
+Contoso の管理者は、[ステップバイステップの移行チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)を使い、Azure Database Migration Service を使用してデータベースを移行します。 MySQL 5.6 または 5.7 を使用して、オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
+
+> [!NOTE]
+> MySQL 8.0 は Azure Database for MySQL でサポートされていますが、DMS ツールはまだこのバージョンをサポートしていません。
+
+まとめると、次を実行する必要があります。
+
+- 次のすべての移行の前提条件が満たされていることを確認します。
+  - MySQL サーバーのソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL は、MySQL Community Edition と InnoDB エンジンをサポートし、同じバージョンのソースとターゲット間の移行をサポートしています。
+  - my.ini (Windows) または my.cnf (Unix) のバイナリ ログを有効にします。 この操作を行わないと、移行ウィザードの実行中に `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more details see https://go.microsoft.com/fwlink/?linkid=873009` エラーが発生します。
+  - ユーザーは `ReplicationAdmin` ロールを持っている必要があります。
+  - 外部キーとトリガーを使用せずにデータベース スキーマを移行します。
+- ExpressRoute または VPN を介してオンプレミス ネットワークに接続する仮想ネットワークを作成します。
+- VNet に接続されている `Premium` SKU を持つ Azure Database Migration Service を作成します。
+- Azure Database Migration Service が仮想ネットワーク経由で MySQL データベースにアクセスできることを確認します。 これには、仮想ネットワーク レベル、ネットワーク VPN、および MySQL をホストするマシンで、 Azure から MySQL にすべての受信ポートが許可されていることの確認が伴います。
+- Azure Database Migration Service ツールを実行する:
+  - **Premium SKU** に基づいて移行プロジェクトを作成します。
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-new-project.png)
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-new-project-02.png)
+
+  - ソース (オンプレミス データベース) を追加します。
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-source.png)
+
+  - ターゲットを選択します。
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-target.png)
+
+  - 移行するデータベースを選択します。
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-databases.png)
+
+  - 詳細設定を構成します。
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-settings.png)
+
+  - レプリケーションを開始し、エラーを解決します。
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-monitor.png)
+  
+  - 最終的なカットオーバーを実行します。
+  
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover.png)
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover-complete.png)
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover-complete-02.png)
+  
+  - 外部キーとトリガーをすべて復帰させます。
+
+  - 新しいデータベースを使用するようにアプリケーションを変更します。
+
+    ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/migration-dms-cutover-apps.png)
+
+### <a name="step-4b-migrate-the-database-mysql-workbench"></a>手順 4b: データベースの移行 (MySQL Workbench)
 
 1. [MySQL Workbench の前提条件を確認してダウンロード](https://dev.mysql.com/downloads/workbench/?utm_source=tuicool)します。
 2. [インストールの指示](https://dev.mysql.com/doc/workbench/en/wb-installing.html)に従って、MySQL Workbench for Windows をインストールします。 インストール先のマシンは、OSTICKETMYSQL VM と、インターネット経由で Azure にアクセス可能である必要があります。
@@ -248,7 +310,7 @@ Contoso 管理者は、新しいプライベート GitHub リポジトリを作�
 
     ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github3.png)
 
-4. エディターで、データベースの詳細 (具体的には **DBHOST** と **DBUSER**) を更新します。
+4. エディターで、データベースの詳細 (具体的には **DBHOST** と **DBUSER** のもの) を更新します。
 
     ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github4.png)
 
@@ -332,10 +394,10 @@ Contoso のセキュリティ チームは、アプリを再調査して、セ�
 
 ### <a name="backups"></a>バックアップ
 
-- OsTicket Web アプリには状態データが含まれていないため、バックアップは必要ありません。
+- OsTicket web アプリには状態データが含まれていないため、バックアップは必要ありません。
 - データベースのバックアップを構成する必要はありません。 Azure Database for MySQL は、サーバーのバックアップを自動的に作成して保存します。 彼らはデータベースのために geo 冗長性を使用することを選択したため、このデータベースは耐障害性があり、運用準備ができています。 バックアップを使用すると、サーバーを特定の時点に復元できます。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/mysql/concepts-backup)。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - PaaS のデプロイにライセンスの問題はありません。
-- Contoso は、Microsoft の子会社である Cloudyn からライセンスが供与される Azure Cost Management を有効にします。 Azure やその他のクラウド リソースの利用や管理に役立つ、マルチクラウド対応のコスト管理ソリューションです。 Azure Cost Management の詳細については、[こちら](https://docs.microsoft.com/azure/cost-management/overview)を参照してください。
+- Contoso は [Azure Cost Management](https://azure.microsoft.com/services/cost-management) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。

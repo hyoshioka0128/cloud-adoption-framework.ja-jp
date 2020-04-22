@@ -4,21 +4,21 @@ description: ソリューションの確認方法について説明します。�
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: eff32a369c55011cea8fb8ace2e7bfae28680eda
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8ac8887f849704610822429a2b5e49833a78487c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353868"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119730"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
-# <a name="test-optimize-and-promote"></a>テスト、最適化および昇格
+# <a name="release-workloads-test-optimize-and-handoff"></a>ワークロードのリリース (テスト、最適化、ハンドオフ)
 
 サービスを Azure に移行したら、次の段階では、ソリューションの最適化できる可能性がある領域の確認などを行います。 この作業には、ソリューションの設計の確認、サービスの適切なサイズ設定、コストの分析が含まれる可能性があります。
 

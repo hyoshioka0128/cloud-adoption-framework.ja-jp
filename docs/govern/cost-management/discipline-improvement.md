@@ -4,22 +4,22 @@ description: Cost Management 規範を開発して成熟させるために企業
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1d32b70c2c07ee341e03a020cd0010c8763d4cdc
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 02d76581a49f58358d624ded4add1af180964f16
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708837"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120390"
 ---
 # <a name="cost-management-discipline-improvement"></a>コスト管理規範の改善
 
 コスト管理規範で、クラウドベースのワークロードをホストする場合に発生する費用に関連するコア ビジネス リスクへの対処を試みます。 クラウド ガバナンスの 5 つの規範の中で、コスト管理は、計画的なコスト サイクルを作成して維持することを目的とした、クラウド リソースのコストと使用の管理に関与しています。
 
-この記事では、コスト管理規範を作成し、成熟させるために会社が実行できる可能性があるタスクについて概要を説明します。 これらのタスクは、クラウド ソリューション実装の計画、構築、導入、および運用フェーズに分類できます。これらのフェーズは繰り返され、[クラウド ガバナンスへの増分アプローチ](../guides/index.md#an-incremental-approach-to-cloud-governance)を開発できるようになります。
+この記事では、コスト管理規範を作成し、成熟させるために会社が実行できる可能性があるタスクについて概要を説明します。 これらのタスクは、クラウド ソリューションの実装の、計画、構築、導入、および運用のフェーズに分類できます。 その後は、[クラウド ガバナンスへの増分型アプローチ](../guides/index.md#an-incremental-approach-to-cloud-governance)を開発できるようにタスクを繰り返します。
 
 ![導入の 4 つのフェーズ](../../_images/govern/adoption-phases.png)
 
@@ -107,7 +107,7 @@ ms.locfileid: "77708837"
 
 ## <a name="next-steps"></a>次のステップ
 
-ここでは、クラウド ID ガバナンスの概念を理解しました。次は、[コスト管理ツールチェーン](./toolchain.md)を検証し、Azure プラットフォーム上でコスト管理ガバナンス規範を開発するときに必要になる Azure のツールと機能を特定します。
+クラウド コストのガバナンスの概念を理解したので、[コスト管理のベスト プラクティス](./best-practices.md)を確認し、全体的な支出を削減する方法を見つけます。
 
 > [!div class="nextstepaction"]
-> [Azure 向けコスト管理ツールチェーン](./toolchain.md)
+> [コスト管理のベスト プラクティス](./best-practices.md)

@@ -4,21 +4,21 @@ description: ネイティブ ツール、サードパーティ製ツール、プ
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353904"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396025"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
-# <a name="migrate-assets-infrastructure-apps-and-data"></a>資産の移行 (インフラストラクチャ、アプリ、データ)
+# <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
 このフェーズでは、評価フェーズの出力を使用して環境の移行を開始します。 このガイドは、ネイティブ ツール、サード パーティ製ツール、プロジェクト管理ツールなど、"完了状態" に到達するための適切なツールを識別するのに役立ちます。
 
@@ -130,7 +130,7 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 1. **[+リソースの作成]** を選択し、マーケットプレースで **Azure Database Migration Service** を検索します。
 1. **[移行サービスの作成]** ウィザードを完了し、 **[作成]** を選択します。
 
-これで、サポートされているソース データベース (SQL Server、MySQL、PostgreSQL、MongoDb など) をサービスで移行する準備ができました。
+これでサービスによって、サポートされているソース データベース (SQL Server、MySQL、PostgreSQL、MongoDB など) を移行する準備ができました。
 
 ::: zone target="chromeless"
 
@@ -262,7 +262,7 @@ Microsoft では以下のプロジェクト管理ツールも用意しており�
 - [Microsoft Planner](https://tasks.office.com):チームワークを組織化するためのシンプルで視覚的な方法。
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software):プロジェクトおよびポートフォリオ管理、リソース キャパシティ管理、財務管理、タイムシートおよびスケジュール管理。
 - [Microsoft Teams](https://products.office.com/microsoft-teams):チームのコラボレーションとコミュニケーションのためのツール。 Teams を Planner やその他のツールと統合し、コラボレーションを強化することもできます。
-- [Azure DevOps](https://dev.azure.com):Azure DevOps を使用するために、クラウド導入フレームワークの計画テンプレートは必要ありません。 テンプレートを使用せずにサービスを使用して、コードとしてインフラストラクチャを管理することや、作業項目とボードを使用してプロジェクト管理を実行することができます。 発展に合わせて、組織で CI/CD 機能を利用できます。
+- [Azure DevOps Services](https://azure.microsoft.com/services/devops):Azure DevOps を使用するために、クラウド導入フレームワークの計画テンプレートは必要ありません。 テンプレートを使用せずにサービスを使用して、コードとしてインフラストラクチャを管理することや、作業項目とボードを使用してプロジェクト管理を実行することができます。 発展に合わせて、組織で CI/CD 機能を利用できます。
 
 利用可能なツールはこれらに限られません。 他にも多くのサード パーティ製ツールが、プロジェクト管理コミュニティで広く使用されています。
 

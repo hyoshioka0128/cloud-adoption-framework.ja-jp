@@ -4,16 +4,16 @@ description: 運用モデルに関連した用語について説明します。 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 784a98597439b995b756291247c9142ab5ca5372
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 03843aa441188bb0bd91d0febfdd5681d6a6670b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092752"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80526815"
 ---
 # <a name="operating-model-terminology"></a>運用モデルの用語
 
@@ -35,7 +35,7 @@ ms.locfileid: "79092752"
 
 ## <a name="next-steps"></a>次のステップ
 
-クラウド導入フレームワークによって提供される[運用モデルを活用して](./index.md)、運用面での成熟度を高めます。
+クラウド導入フレームワークによって提供される[運用モデルを使用](./index.md)して、運用面での成熟度を高めます。
 
 > [!div class="nextstepaction"]
-> [運用モデルを活用する](./index.md)
+> [運用モデルを使用します](./index.md)

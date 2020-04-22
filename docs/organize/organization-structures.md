@@ -4,16 +4,16 @@ description: ここに示す一般的なチーム構造の例から、運用上�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: f01499141c85b1baca2b19f2ce6a8ed15163c4a9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222228"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995170"
 ---
 <!-- cSpell:ignore ccoe -->
 
@@ -62,7 +62,7 @@ ms.locfileid: "78222228"
 
 ## <a name="central-it"></a>中央 IT
 
-導入規模が拡大するにつれて、クラウド ガバナンスチームは、複数のクラウド導入チームからのイノベーションの流れのペースを維持することが困難になる可能性があります。 これは、コンプライアンス、運用、またはセキュリティの要件が高い環境で特に当てはまります。 この段階では、企業がクラウドの役割を既存の中央 IT チームにシフトすることは一般的です。 大規模なクラウド導入をサポートするために、そのチームがツール、プロセス、担当者を再評価できる場合は、中央 IT チームを含めることで、大きく価値を高めることができます。 運用、自動化、セキュリティ、管理の分野の専門家を加えて中央 IT を最新化することにより、運用上のイノベーションを効果的に促進することができます。
+導入規模が拡大するにつれて、クラウド ガバナンスチームは、複数のクラウド導入チームからのイノベーションの流れのペースを維持することが困難になる可能性があります。 これが特に当てはまるのは、コンプライアンス、運用、またはセキュリティの要件が厳しい環境です。 この段階では、企業がクラウドの役割を既存の中央 IT チームにシフトすることは一般的です。 大規模なクラウド導入をサポートするために、そのチームがツール、プロセス、担当者を再評価できる場合は、中央 IT チームを含めることで、大きく価値を高めることができます。 運用、自動化、セキュリティ、管理の分野の専門家を加えて中央 IT を最新化することにより、運用上のイノベーションを効果的に促進することができます。
 
 ![中央 IT モデルを使用したクラウドの導入](../_images/ready/org-ready-central-it.png)
 

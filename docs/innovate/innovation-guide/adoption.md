@@ -4,17 +4,17 @@ description: Azure のツールを使用して、GitHub でホストされてい
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e39a13702f0734e592c7dfbefa90ec5f34846359
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e8ccc7dcefb1fe2fe194e743fe139819ab29b01f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356676"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120494"
 ---
 ::: zone target="docs"
 
@@ -124,7 +124,7 @@ API Management サービスを開くには、[Azure portal](https://ms.portal.az
 
 ### <a name="action"></a>アクション
 
-Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps](https://dev.azure.com) を使用して開始してください。
+Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps Services](https://azure.microsoft.com/services/devops) を使用して開始してください。
 
 ::: zone-end
 

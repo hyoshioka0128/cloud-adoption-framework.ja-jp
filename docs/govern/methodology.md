@@ -4,22 +4,22 @@ description: 実行最小限の製品 (MVP) に基づく増分ガバナンス �
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 2738d623e863ae78903d3f20d60561349ef0d21e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709092"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997410"
 ---
 # <a name="cloud-governance-methodology"></a>クラウド ガバナンスの方法論
 
 クラウドの導入はプロセスであってターゲットではありません。 その過程では、明確なマイルストーンと具体的なビジネス上の利点があります。 ただし、クラウド導入の最終的な状態は、企業が体験を始める時点では不明です。 クラウド ガバナンスでは、企業が体験を通して安全な位置を維持できるガードレールが作成されます。
 
-クラウド導入フレームワークには、実際の顧客の体験に基づく、架空の企業の経験を説明しているガバナンス ガイドが用意されています。 各ガイドは、顧客によるクラウド導入のガバナンスの面に沿って進みます。
+クラウド導入フレームワークには、実際の顧客の体験に基づいた、架空の企業の経験について説明するガバナンス ガイドが用意されています。 各ガイドは、顧客によるクラウド導入のガバナンスの面に沿って進みます。
 
 ## <a name="envision-an-end-state"></a>最終状態の構想
 

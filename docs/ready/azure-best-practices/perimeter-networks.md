@@ -4,18 +4,18 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 802660021dd9ae3a861b51ae4dee6e14b9671ef2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093232"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120184"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -28,17 +28,17 @@ ms.locfileid: "79093232"
 境界ネットワークは、次の Azure の機能とサービスを利用します。
 
 - [仮想ネットワーク][virtual-networks]、[ユーザー定義ルート][user-defined-routes]、および[ネットワーク セキュリティ グループ][network-security-groups]
-- [ネットワーク仮想アプライアンス (NVA)][NVA]
+- [ネットワーク仮想アプライアンス (NVA)][network-virtual-appliances]
 - [Azure Load Balancer][ALB]
 - [Azure Application Gateway][AppGW] と [Web アプリケーション ファイアウォール (WAF)][AppGWWAF]
 - [パブリック IP][PIP]
 - [Azure Front Door][AFD] と [Web アプリケーション ファイアウォール][AFDWAF]
-- [Azure Firewall][AzFW]
+- [Azure Firewall][azure-firewall]
 
 > [!NOTE]
 > Azure の参照アーキテクチャには、独自の境界ネットワークを実装するために使用できるサンプル テンプレートが含まれています。
 >
-> - [Azure とオンプレミス データセンター間に DMZ を実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
+> - [Azure とオンプレミス データセンター間に DMZ を実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [Azure とインターネットの間に DMZ を実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 通常、中央の IT チームとセキュリティ チームは、境界ネットワークを運用するための要件定義を担当します。
@@ -59,7 +59,7 @@ ms.locfileid: "79093232"
 
 ## <a name="azure-firewall"></a>Azure Firewall
 
-[Azure Firewall][AzFW] は、Azure 仮想ネットワーク リソースを保護する、クラウドベースのマネージド サービスです。 これは、組み込みの高可用性とクラウドによる無制限のスケーラビリティを備えた、完全にステートフルなマネージド ファイアウォールです。 サブスクリプションと仮想ネットワークをまたいでアプリケーションとネットワークの接続ポリシーを一元的に作成、適用、記録できます。
+[Azure Firewall][azure-firewall] は、Azure 仮想ネットワーク リソースを保護する、クラウドベースのマネージド サービスです。 これは、組み込みの高可用性とクラウドによる無制限のスケーラビリティを備えた、完全にステートフルなマネージド ファイアウォールです。 サブスクリプションと仮想ネットワークをまたいでアプリケーションとネットワークの接続ポリシーを一元的に作成、適用、記録できます。
 
 Azure Firewall では、仮想ネットワーク リソースに静的パブリック IP アドレスが使用されます。 これにより、仮想ネットワークから送信されるトラフィックを外部のファイアウォールで識別できます。 サービスはログ記録と分析を行うために Azure Monitor と相互運用されます。
 
@@ -69,7 +69,7 @@ Azure Firewall では、仮想ネットワーク リソースに静的パブリ�
 
 一般に、さまざまな LOB で多くの Web アプリケーションが使用されます。 これらのアプリケーションは、さまざまな脆弱性や潜在的な悪用の影響を受ける傾向があります。 Web アプリケーション ファイアウォールでは、Web アプリケーション (HTTP/HTTPS) に対する攻撃が汎用ファイアウォールよりも詳細に検出されます。 従来のファイアウォール テクノロジと比較すると、Web アプリケーション ファイアウォールは脅威から内部 Web サーバーを保護するのに役立つ特定の機能セットを備えています。
 
-Azure Firewall と[ネットワーク仮想アプライアンス][NVA] ファイアウォールでは共通管理プレーンが使用され、一連のセキュリティ規則により、スポークでホストされているワークロードが保護され、オンプレミスのネットワークへのアクセスを制御するのに役立ちます。 Azure Firewall にはスケーラビリティが組み込まれているのに対して、NVA ファイアウォールはロード バランサーの背後で手動でスケーリングできます。
+Azure Firewall と "ネットワーク仮想アプライアンス" (NVA) ファイアウォールでは共通管理プレーンが使用され、一連のセキュリティ規則により、スポークでホストされているワークロードが保護され、オンプレミスのネットワークへのアクセスを制御するのに役立ちます。 Azure Firewall にはスケーラビリティが組み込まれているのに対して、NVA ファイアウォールはロード バランサーの背後で手動でスケーリングできます。
 
 ファイアウォール ファームは一般的に、WAF ほど特化したソフトウェアではありませんが、エグレスおよびイングレスのあらゆる種類のトラフィックをフィルター処理して検査する、より広範なアプリケーション スコープを備えています。 NVA アプローチを使用する場合は、Azure Marketplace からソフトウェアを検索してデプロイできます。
 
@@ -114,8 +114,8 @@ Azure の一部の機能を使用して、インターネットからリソー�
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[network-virtual-appliances]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[azure-firewall]: https://docs.microsoft.com/azure/firewall/overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview

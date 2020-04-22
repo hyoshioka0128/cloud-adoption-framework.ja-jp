@@ -4,18 +4,18 @@ description: 一般的な通信またはセキュリティ要件をより効率�
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: a2827273aa3fd28478c2615610f74f32b155a299
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 5ab24d655327584bd1f6363ac439c1ffcacaccec
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092585"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995130"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "79092585"
 *ハブ アンド スポーク*は、一般的な通信またはセキュリティ要件をより効率的に管理するためのネットワーク モデルです。 Azure サブスクリプションの制限の回避にも役立ちます。 このモデルでは、次の懸念事項に対処します。
 
 - **コストの削減と管理の効率**。 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は過剰なリソースと管理作業を最小限にすることができます。
-- **サブスクリプションの制限の克服**。 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)に関するページを参照してください。
+- **サブスクリプションの制限の克服**。 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)に関するページを参照してください。
 - **懸念事項の分離**。 中央の IT チームとワークロード チームの間で個々 のワークロードをデプロイすることができます。
 
 小さなクラウド資産は、このモデルによって追加で提供される構造と機能の恩恵を受けない場合があります。 しかし、大規模なクラウド導入作業で、上記のいずれかの懸念事項が 1 つでもあれば、ハブおよびスポーク ネットワーク アーキテクチャの実装を検討してください。
@@ -62,7 +62,7 @@ ms.locfileid: "79092585"
 
 Azure では、種類に関係なく、すべてのコンポーネントが Azure サブスクリプションにデプロイされます。 異なる Azure サブスクリプションに Azure コンポーネントを分離することで、差別化されたレベルのアクセスと承認の設定など、さまざまな業種の要件を満たすことができます。
 
-単一のハブおよびスポーク実装で、多数のスポークにスケールアップできます。 ただし、他の IT システムと同様に、プラットフォームの制限があります。 ハブのデプロイは特定の Azure サブスクリプションにバインドされており、サブスクリプションには制約と制限があります。 その一例が、仮想ネットワーク ピアリングの最大数です。 詳細については、「[Azure サブスクリプションとサービスの制限、クォータ、制約](https://docs.microsoft.com/azure/azure-subscription-service-limits)」をご覧ください。
+単一のハブおよびスポーク実装で、多数のスポークにスケールアップできます。 ただし、他の IT システムと同様に、プラットフォームの制限があります。 ハブのデプロイは特定の Azure サブスクリプションにバインドされており、サブスクリプションには制約と制限があります。 その一例が、仮想ネットワーク ピアリングの最大数です。 詳細については、[Azure サブスクリプションとサービスの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits) に関する記事を参照してください。
 
 制限が問題になる可能性がある場合は、単一のハブアンドスポークからハブアンドスポークのクラスターにモデルを拡張することによって、アーキテクチャをさらにスケールアップできます。 仮想ネットワーク ピアリング、Azure ExpressRoute、仮想 WAN、またはサイト間 VPN を使用して、1 つ以上の Azure リージョン内の複数のハブを相互接続できます。
 

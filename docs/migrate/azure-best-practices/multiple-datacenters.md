@@ -4,15 +4,15 @@ description: 複数のデータセンター
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 2ee44d3e83dde52e03dbe2dffca7edc51899da0e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898133"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80636430"
 ---
 # <a name="multiple-datacenters"></a>複数のデータセンター
 
@@ -66,7 +66,7 @@ ms.locfileid: "78898133"
 
 ## <a name="next-steps"></a>次のステップ
 
-[範囲拡大チェックリスト](./index.md)に戻り、移行方法が完全に調整されていることを確認します。
+[移行のベスト プラクティスのチェックリスト](./index.md)に戻り、移行方法が完全に調整されていることを確認します。
 
 > [!div class="nextstepaction"]
-> [範囲拡大チェックリスト](./index.md)
+> [移行のベスト プラクティスのチェックリスト](./index.md)

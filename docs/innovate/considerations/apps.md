@@ -4,15 +4,15 @@ description: データを形にし、顧客を引き付けてイノベーショ�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c482c6a9642e1de3f28bbe650da6fa43cf9229be
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356776"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120516"
 ---
 # <a name="engage-through-applications"></a>アプリケーションによる連携
 
@@ -35,7 +35,7 @@ ms.locfileid: "80356776"
 
 プロ開発者はイノベーションに欠かせない存在です。 仮説が大筋で正しいことが証明されたら、大規模なソリューションを安定させて準備するためにプロ開発者が必要とされます。 この記事で述べる原則のほとんどには、プロ開発者のサポートが必要です。 残念ながら、現在のトレンドでは、開発者よりプロ開発者の需要が多いことが示されています。 さらに、プロフェッショナル開発が要求されれば、イノベーションのコストとペースはいっそう不十分になる可能性があります。 これらの課題に対し、市民開発者は、開発作業を拡大し、初期仮説の検証を迅速化する手段を提供します。
 
-アプリ インターフェイスのための [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder)、ワークフローのための [Microsoft Flow](https://docs.microsoft.com/flow)、データ利用のための [Power BI](https://docs.microsoft.com/power-bi) といったツールを使用して初期仮説を検証できる場合、市民開発者の利用が可能で効果的かもしれません。
+アプリ インターフェイスのための [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder)、ワークフローのための [Microsoft Power Automate](https://docs.microsoft.com/power-automate)、データ利用のための [Power BI](https://docs.microsoft.com/power-bi) といったツールを使用して初期仮説を検証できる場合、市民開発者を利用することが可能で効果的な可能性があります。
 
 > [!NOTE]
 > 仮説のテストを市民開発者に頼るときは、プロ開発者がサポート、レビュー、ガイダンスを提供できるようにしておくことが推奨されます。 仮説が大筋で検証されたら、より堅牢なプログラミング モデルにアプリケーションを移行するプロセスによって、イノベーションの成果をさらに得られるようになります。 初期のプロセス定義にプロ開発者が関与すれば、後々の移行をよりクリーンにできる可能性があります。
@@ -103,7 +103,7 @@ ms.locfileid: "80356776"
 
 ソリューション内で保守するものが多ければ多いほど、ソリューションのイテレーションには時間がかかります。 これは、利用可能な帯域幅に対する運用の影響を減らすことで、イノベーションを加速できることを意味します。
 
-革新的なソリューションを提供するために必要な多くのイテレーションに備えるには、先を読むことが重要です。 たとえば、サーバーレス オプションを優先することによって、プロセス初期の運用負担を最小化します。 Azure では、[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) や[コンテナー](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql)をサーバーレス アプリケーションの選択肢に含めることができます。
+革新的なソリューションを提供するために必要な多くのイテレーションに備えるには、先を読むことが重要です。 たとえば、サーバーレス オプションを優先することによって、プロセス初期の運用負担を最小化します。 Azure では、[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) や[コンテナー](https://docs.microsoft.com/azure/containers)をサーバーレス アプリケーションの選択肢に含めることができます。
 
 これと並行して、Azure では、同じくオーバーヘッドを削減するサーバーレスのトランザクション データという選択肢が提供されます。 [Azure 製品カタログ](https://docs.microsoft.com/azure) には、完全なデータ プラットフォームを必要とせずにデータをホストするためのデータベース オプションが用意されています。
 

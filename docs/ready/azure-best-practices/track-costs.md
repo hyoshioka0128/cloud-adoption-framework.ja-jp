@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ce9ce90d429064eeb8e848fd203aec11d042e539
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b444c94686f6314fb2922e8b2c6ed99fea57e6ec
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354528"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396118"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -75,11 +75,11 @@ ms.locfileid: "80354528"
 
 Azure Cost Management では、各スコープに対して次の組み込みロールがサポートされています。
 
-- [所有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)。 コストを表示し、コストの構成を含めたすべてを管理することができます。
-- [共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)。 コストを表示し、コストの構成を含めたすべてを管理できますが、アクセスの制御はできません。
-- [閲覧者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader)。 コストのデータと構成を含めたすべてを表示できますが、変更を加えることはできません。
-- [Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor)。 コストを表示し、コストの構成を管理することができます。
-- [Cost Management 閲覧者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader)。コストのデータと構成を表示することができます。
+- [所有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) – コストを表示し、コストの構成を含めたすべてを管理することができます。
+- [共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) – コストを表示し、コストの構成を含めたすべてを管理できますが、アクセスの制御はできません。
+- [閲覧者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader) – コストのデータと構成を含めたすべてを表示できますが、変更を加えることはできません。
+- [Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) – コストを表示し、コストの構成を管理することができます。
+- [Cost Management 閲覧者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) – コストのデータと構成を表示することができます。
 
 一般的なベスト プラクティスとしては、すべてのチームのメンバーに Cost Management 共同作成者のロールを割り当てます。 このロールでは、予算を作成および管理し、コストをより効果的に監視してレポートできるようにエクスポートするためのアクセス権が付与されます。 ただし、[クラウド戦略チーム](../../organize/cloud-strategy.md)のメンバーは、Cost Management 閲覧者のみに設定する必要があります。 Azure Cost Management ツール内での予算の設定に関与しないためです。
 

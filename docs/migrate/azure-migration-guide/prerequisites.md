@@ -4,27 +4,27 @@ description: Azure への移行に備える方法と移行プロジェクトを�
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a1c100c4c3c9a960867f0666853df742ecf68c3d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094795"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997584"
 ---
-::: zone target="chromeless"
-
-# <a name="prerequisites"></a>前提条件
-
-::: zone-end
-
 ::: zone target="docs"
 
 # <a name="prerequisites-for-migrating-to-azure"></a>Azure に移行するための前提条件
+
+::: zone-end
+
+::: zone target="chromeless"
+
+# <a name="prerequisites"></a>前提条件
 
 ::: zone-end
 
@@ -44,7 +44,7 @@ Azure に移行する理由には、従来のハードウェアに関連した�
 
 ## <a name="migration-characteristics"></a>移行の特性
 
-このガイドでの想定として、この移行よりも前は、お客様のデジタル資産は主にオンプレミスのホスト型インフラストラクチャで構成されており、ビジネスに不可欠なホスト型アプリケーションが含まれる場合があります。 移行が成功した後、お客様のデータ資産はオンプレミスのときとあまり変わらないように見えるかもしれませんが、インフラストラクチャはクラウド リソースでホストされています。 または、理想的なデータ資産はお客様の現在のデータ資産のバリエーションです。なぜなら、それはオンプレミス インフラストラクチャの側面を備えている一方で、クラウド プラットフォームを最適化して活用するようにコンポーネントがリファクタリングされているからです。
+このガイドでの想定として、この移行よりも前は、お客様のデジタル資産は主にオンプレミスのホスト型インフラストラクチャで構成されており、ビジネスに不可欠なホスト型アプリケーションが含まれる場合があります。 移行が成功した後、お客様のデータ資産はオンプレミスのときとあまり変わらないように見えるかもしれませんが、インフラストラクチャはクラウド リソースでホストされています。 または、お客様の現在のデータ資産のバリエーションが、理想的なデータ資産です。それは、オンプレミス インフラストラクチャの側面と同時に、クラウド プラットフォームを最適化して活用するようにリファクタリングされたコンポーネントを備えているからです。
 
 この移行の道のりの焦点は、以下を達成することです。
 

@@ -4,16 +4,16 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e25c81e2811bcefa238366462db3d2c66184b08
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 18eef9f270e4c9ab8b2ee31268e46f0d4d929e34
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708956"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995524"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>デプロイ高速化のサンプル ポリシー ステートメント
 
@@ -31,7 +31,7 @@ ms.locfileid: "77708956"
 
 **ポリシー ステートメント:** クラウドにデプロイされるすべての資産は、可能な限りテンプレートまたは自動化スクリプトを使用してデプロイする必要があります。
 
-**使用可能な設計オプション:** [Azure Resource Manager テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview)で、リソースを Azure にデプロイするための、コードとしてのインフラストラクチャ手法が提供されます。 整合性のあるオンプレミスおよびクラウドベースのデプロイ ツールとして [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) を使用することもできます。
+**使用可能な設計オプション:** [Azure Resource Manager テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)を使用すると、コードとしてのインフラストラクチャを利用し、リソースを Azure にデプロイできるようになります。 整合性のあるオンプレミスおよびクラウドベースのデプロイ ツールとして [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) を使用することもできます。
 
 ## <a name="lack-of-visibility-into-system-issues"></a>システムの問題の可視化の欠如
 
@@ -42,7 +42,7 @@ ms.locfileid: "77708956"
 - 主要なメトリックと診断方法がすべての実稼働システムとコンポーネントに対して識別されます。また、監視ツールと診断ツールがそれらのシステムに適用され、運用担当者によって定期的に監視されます。
 - 運用では、ステージングや QA などの非運用環境で監視ツールと診断ツールを使用して、運用環境でシステムの問題が発生する前にそれらの問題を識別することを検討します。
 
-**使用可能な設計オプション:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor) には Log Analytics と Application Insights が含まれており、テレメトリを収集して分析するためのツールが提供されます。これは、アプリケーションの実行状況を把握し、それらのアプリケーションに影響を与える問題とそれらのアプリケーションが依存するリソースを事前に識別するのに役立ちます。 さらに、[Azure アクティビティ ログ](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)では、プラットフォーム レベルで行われ、準拠していない変更について監視および監査する必要があるすべての変更がレポートされます。
+**使用可能な設計オプション:** Log Analytics と Application Insights を含む [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor) では、テレメトリを収集して分析するためのツールが提供されます。これは、アプリケーションの実行状況を把握し、それらのアプリケーションに影響を与える問題と、それらのアプリケーションが依存するリソースを事前に識別するのに役立ちます。 さらに、[Azure アクティビティ ログ](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)では、プラットフォーム レベルで行われ、準拠していない変更について監視および監査する必要があるすべての変更がレポートされます。
 
 ## <a name="configuration-security-reviews"></a>構成セキュリティ のレビュー
 

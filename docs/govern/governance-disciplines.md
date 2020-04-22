@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d50364a621e57b95e26f5686f4d470984530e161
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c946b5e7e43004653b31bc67ff1e325363deff9f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707681"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396169"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>クラウド ガバナンスの 5 つの規範
 
@@ -89,7 +89,7 @@ ms.locfileid: "77707681"
                     </div>
                     <div class="cardText">
                         <h3>セキュリティ ベースライン</h3>
-                        <p>セキュリティは複雑なトピックであり、会社ごとに独特です。 セキュリティ要件が確立されると、クラウド ガバナンスのポリシーと実施により、それらの要件がネットワーク、データ、資産の構成全体に適用されます。</p>
+                        <p>セキュリティは複雑なテーマであり、会社ごとに独特です。 セキュリティ要件が確立されると、クラウド ガバナンスのポリシーと実施により、それらの要件がネットワーク、データ、資産の構成全体に適用されます。</p>
                     </div>
                 </div>
             </div>

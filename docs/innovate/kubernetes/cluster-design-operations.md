@@ -3,16 +3,16 @@ title: クラスターの設計と操作
 description: クラスターの設計と操作用のクラウド導入フレームワークにおける Kubernetes について説明します。
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 12/16/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392734"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527181"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -62,7 +62,7 @@ ms.locfileid: "80392734"
 
 ## <a name="optimize-and-scale"></a>最適化とスケール
 
-アプリケーションの運用中、お使いのワークフローを最適化し、スケーリングするためにアプリケーションおよびチームを準備するにはどうすればよいでしょうか。 最適化とスケーリングのチェックリストを利用して準備してください。 次の質問に答えてください。
+アプリケーションの運用開始後、ワークフローの最適化と、アプリケーションとチームでのスケーリングの準備はどのように行うことができますか? 最適化とスケーリングのチェックリストを使用して準備してください。 次の質問に答えてください。
 
 > [!div class="checklist"]
 >
@@ -77,5 +77,5 @@ ms.locfileid: "80392734"
 > | チェック リスト  | リソース |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **アプリケーションの需要を満たすためにクラスターを自動的にスケーリングする。** アプリケーションの需要に対応するには、クラスター オートスケーラーを使用してワークロードを自動的に実行するノードの数を調整することが必要な場合があります。 | [Kubernetes クラスター オートスケーラーを構成する](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
-> | **事業継続とディザスター リカバリーを計画する。** 複数リージョンのデプロイを計画して、ストレージ移行計画を作成し、コンテナー イメージの geo レプリケーションを有効にします。 | [複数リージョンのデプロイのベスト プラクティス](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry の geo レプリケーション](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
+> | **事業継続とディザスター リカバリーを計画する。** 複数リージョンのデプロイを計画して、ストレージ移行計画を作成し、コンテナー イメージの geo レプリケーションを有効にします。 | [リージョンのデプロイのベスト プラクティス](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry の geo レプリケーション](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
 > | **大規模な監視およびトラブルシューティングを構成する。** Kubernetes でアプリケーションのアラートと監視を設定します。 既定の構成、より高度なメトリックを統合する方法、アプリケーションを確実に動作させるために独自のカスタム監視およびアラートを追加する方法について説明します。 | [Kubernetes の監視とアラートの開始 (動画)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [コンテナーに対する Azure Monitor を使用してアラートを構成する](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [マスター コンポーネントの診断ログを確認する](https://docs.microsoft.com/azure/aks/view-master-logs) <br/> [Azure Kubernetes Service (AKS) 診断](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |

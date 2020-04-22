@@ -4,15 +4,15 @@ description: ガバナンスまたはコンプライアンスの戦略
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0526b85e52e203163942050716e5cabd4fc84ff3
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 35e7f2a09dd1421f0d57808658a96135dcf8e947
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355569"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997603"
 ---
 # <a name="governance-or-compliance-strategy"></a>ガバナンスまたはコンプライアンスの戦略
 
@@ -28,7 +28,7 @@ ms.locfileid: "80355569"
 
 **一般的なガバナンスのアプローチ:** [クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)は、ほとんどの組織にとって十分なアプローチであり、実用最小限の製品 (MVP) の実装と、それに続く、導入計画において特定された具体的なリスクに対処するための、ガバナンス成熟度のターゲットを定めた反復によって構成されます。 このアプローチでは、一貫したガバナンスを確立するために必要な最小限のツールが提供されます。そのため、チームはツールを理解できます。 それから、ガバナンスの一般的な懸念事項に対処するために、それらのツールに拡張が行われます。
 
-**ISO 27001 コンプライアンスのブループリント:** ISO コンプライアンス標準に準拠することが必要なお客様の場合、[ISO 27001 共有サービスのブループリントのサンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index)を、反復プロセスの早い段階でより充実したガバナンス制約を作成するための、より効果的な MVP として使用できます。 [ISO 27001 App Service Environment/SQL Database のサンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)を使用すると、ブループリントを拡張してコントロールをマップし、アプリケーション環境用の共通アーキテクチャをデプロイできます。 その他のコンプライアンスのブループリントがリリースされたら、ここで紹介します。
+**ISO 27001 コンプライアンスのブループリント:** ISO コンプライアンス標準に準拠することが必要なお客様の場合、[ISO 27001 共有サービスのブループリントのサンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared)を、反復プロセスの早い段階でより充実したガバナンス制約を作成するための、より効果的な MVP として使用できます。 [ISO 27001 App Service Environment/SQL Database のサンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)を使用すると、ブループリントを拡張してコントロールをマップし、アプリケーション環境用の共通アーキテクチャをデプロイできます。 その他のコンプライアンスのブループリントがリリースされたら、ここで紹介します。
 
 **仮想データセンター:** より堅牢なガバナンスの開始点が必要になることがあります。 そのような場合は、[Azure 仮想データセンター (VDC)](../../reference/vdc.md) を検討してください。 このアプローチは通常、エンタープライズ規模の導入を行う場合、特に資産の数が 10,000 個を超える作業で推奨されます。 また、次のいずれかが要求される複雑なガバナンスのシナリオの場合は、事実上の選択となります: 広範なサードパーティのコンプライアンス要件、ドメインに関する深い専門知識、成熟した IT ガバナンス ポリシーやコンプライアンス要件との整合性。
 
@@ -68,7 +68,7 @@ ms.locfileid: "80355569"
 
 ## <a name="next-steps"></a>次のステップ
 
-[拡大範囲チェックリスト](./index.md)の最後の項目として、チェックリストに戻り、移行作業について、追加の範囲の要件があれば再評価します。
+[移行のベスト プラクティスのチェックリスト](./index.md)の最後の項目として、チェックリストに戻り、移行作業について、追加の範囲の要件があれば再評価します。
 
 > [!div class="nextstepaction"]
-> [範囲拡大チェックリスト](./index.md)
+> [移行のベスト プラクティスのチェックリスト](./index.md)

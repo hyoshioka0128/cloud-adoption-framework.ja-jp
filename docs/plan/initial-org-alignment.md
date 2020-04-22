@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 2df963beba9087f8f3bfc2faf850eb384cd507a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 014d5da585b48754f9cee59431aea92b5047f551
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093757"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396203"
 ---
 # <a name="initial-organization-alignment"></a>初期の組織配置
 
@@ -30,7 +30,7 @@ ms.locfileid: "79093757"
 
 クラウド導入タスクでは、これらのタスクを実行する人々が必要になることは直感的に理解できます。 そのため、クラウド導入チームの存在が要件であることに驚く人はほとんどいません。 ただし、クラウドに不慣れな人は、クラウド ガバナンス チームの重要性を完全には理解しないこともあります。 この問題は多くの場合、導入サイクルの早い段階で生じます。 クラウド ガバナンス チームは、クラウド導入がビジネスを新たなリスクにさらさないようにするために、必要な検査と均衡を提供します。 リスクが不可欠な場合、このチームはこれらのリスクを軽減または管理するための適切なプロセスとコントロールが実施されるようにします。
 
-クラウド導入やクラウド ガバナンスなどの機能について詳しくは、「[必要なクラウド機能を理解する](../organize/index.md?#understand-required-cloud-capabilities)」の要約セクションを参照してください。
+クラウド導入やクラウド ガバナンスなどの機能の詳細については、[必要なクラウド機能を理解する](../organize/index.md#understand-required-cloud-capabilities)ことに関する要約セクションを参照してください。
 
 ## <a name="map-people-to-capabilities"></a>人々を機能にマップする
 

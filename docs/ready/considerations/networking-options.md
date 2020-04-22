@@ -4,15 +4,15 @@ description: Azure ワークロードをサポートするためにランディ�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 71c3a135a89d3ff09cf8511ca619c47db21e1ac9
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bc14bb03f048ab335cd836c6a4a520b8df0ccad8
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093161"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997970"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -33,7 +33,7 @@ Azure のネットワーク機能の設計と実装は、クラウド導入作�
 Azure ネットワーク サービスのデシジョン ツリーに基づいた意思決定に役立てるために、ワークロードに関する次の質問に答えてください。
 
 - **ワークロードには仮想ネットワークが必要ですか?** マネージド PaaS (サービスとしてのプラットフォーム) のリソースの種類では、必ずしも仮想ネットワークを必要としない基になるプラットフォーム ネットワーク機能を使用します。 ワークロードが高度なネットワーク機能を必要とせず、サービスとしてのインフラストラクチャ (IaaS) リソースをデプロイする必要がない場合は、既定の [PaaS リソースによって提供されるネイティブなネットワーク機能](../../decision-guides/software-defined-network/paas-only.md)がワークロード接続とトラフィック管理の要件を満たす可能性があります。
-- **ワークロードには仮想ネットワークとオンプレミスのデータセンターの間の接続が必要ですか?** Azure には、ハイブリッド ネットワーク機能を確立するためのソリューションとして Azure VPN Gateway と Azure ExpressRoute の 2 つが用意されています。 [Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) は、リモート ブランチ オフィスを設定してそこに接続する場合と同様に、サイト間 VPN 経由でオンプレミス ネットワークを Azure に接続します。 VPN Gateway は 1.25 GBps の最大帯域幅を備えています。 [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) は、Azure とオンプレミス インフラストラクチャの間のプライベート接続を使用して、より高い信頼性とより短い待機時間を提供します。 ExpressRoute の帯域幅オプションは 50 MBps ～ 100 GBps です。
+- **ワークロードには仮想ネットワークとオンプレミスのデータセンターの間の接続が必要ですか?** Azure には、ハイブリッド ネットワーク機能を確立するためのソリューションとして Azure VPN Gateway と Azure ExpressRoute の 2 つが用意されています。 [Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) は、リモート ブランチ オフィスを設定してそこに接続する場合と同様に、サイト間 VPN 経由でオンプレミス ネットワークを Azure に接続します。 VPN Gateway は 10 Gbps の最大帯域幅を備えています。 [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) は、Azure とオンプレミス インフラストラクチャの間のプライベート接続を使用して、より高い信頼性とより短い待機時間を提供します。 ExpressRoute の帯域幅オプションは 50 Mbps ～ 100 Gbps です。
 - **オンプレミスのネットワーク デバイスを使用して送信トラフィックを検査および監査する必要がありますか?** クラウド ネイティブなワークロードの場合は、[Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) またはクラウドでホストされたサードパーティの[ネットワーク仮想アプライアンス (NVA)](https://azure.microsoft.com/solutions/network-appliances) を使用して、パブリック インターネットとの間で送受信されるトラフィックを検査および監査できます。 ただし、多くのエンタープライズ IT セキュリティ ポリシーでは、インターネットへの送信トラフィックが組織のオンプレミス環境内の一元管理されたデバイスを通過する必要があります。 [強制トンネリング](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)は、これらのシナリオをサポートします。 すべてのマネージド サービスが強制トンネリングをサポートしているわけではありません。 [Azure App Service 内の App Service Environment](https://docs.microsoft.com/azure/app-service/environment/intro)、[Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)、[Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Azure SQL Database 内のマネージド インスタンス](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-index)、[Azure Databricks](https://docs.microsoft.com/azure/azure-databricks/what-is-azure-databricks)、[Azure HDInsight](https://docs.microsoft.com/azure/hdinsight) などのサービスおよび機能は、このサービスまたは機能が仮想ネットワーク内にデプロイされている場合にこの構成をサポートします。
 - **複数の仮想ネットワークを接続する必要がありますか?** [仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用して、[Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) の複数のインスタンスを接続できます。 ピアリングはサブスクリプション間およびリージョン間の接続をサポートできます。 複数のサブスクリプション間で共有されるサービスを提供するか、または多数のネットワーク ピアリングを管理する必要があるシナリオの場合は、[ハブ アンド スポーク ネットワーク アーキテクチャ](../../decision-guides/software-defined-network/hub-spoke.md)を導入するか、または [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) を使用することを検討してください。 仮想ネットワーク ピアリングは、2 つのピアリングされたネットワーク間の接続のみを提供します。 既定では、複数のピアリングにまたがる推移的な接続は提供されません。
 - **インターネット経由でワークロードにアクセスできますか?** Azure には、アプリケーションやサービスへの外部アクセスの管理およびセキュリティ保護に役立つように設計された次のサービスが用意されています。
@@ -80,7 +80,7 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 | Azure でホストされるワークロードは、仮想マシンなどの IaaS ベースのリソースをデプロイするか、そうでない場合は仮想ネットワークを必要としますが、オンプレミス環境への接続は必要ありません。                                                                                                                                          | [クラウドネイティブ](../../decision-guides/software-defined-network/cloud-native.md)      |
 | Azure でホストされるワークロードには、オンプレミス リソースへの制限付きアクセスが必要ですが、クラウド接続を信頼できないものとして扱う必要があります。                                                                                                                                                                                           | [クラウド DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |
 | Azure でホストされるワークロードでは、オンプレミス リソースへのアクセスに制限が必要であるため、クラウドとオンプレミス環境の間で成熟したセキュリティ ポリシーと安全な接続を実装することを計画します。                                                                                                                         | [ハイブリッド](../../decision-guides/software-defined-network/hybrid.md)                  |
-| [Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)を超える可能性のある多数の VM とワークロードをデプロイして管理する必要があるか、サブスクリプション間でサービスを共有する必要があるか、またはロール、アプリケーション、アクセス許可の分離のためのよりセグメント化された構造が必要です。 | [ハブ アンド スポーク](../../decision-guides/software-defined-network/hub-spoke.md)        |
+| [Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超える可能性のある多数の VM とワークロードをデプロイして管理する必要があるか、サブスクリプション間でサービスを共有する必要があるか、またはロール、アプリケーション、アクセス許可の分離のためのよりセグメント化された構造が必要です。 | [ハブ アンド スポーク](../../decision-guides/software-defined-network/hub-spoke.md)        |
 | 互いに接続したり、Azure に接続したりする必要のある多数のブランチ オフィスがあります。                                                                                                                                                                                                                                                       | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
 
 ### <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
@@ -98,5 +98,5 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 ネットワーク設計プロセスの一部として、次の記事を参照してください。
 
 - [仮想ネットワークの計画](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 分離、接続、場所の要件に基づいて仮想ネットワークを計画する方法について説明します。
-- [Azure のネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 ネットワーク セキュリティの強化に役立つ Azure のベスト プラクティスについて説明します。
+- [Azure のネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 ネットワーク セキュリティの強化に役立つ Azure のベスト プラクティスについて説明します。
 - [Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 IaaS ベースおよび PaaS ベースのワークロードをサポートするために Azure のネットワークを実装する方法に関する追加のガイダンスを入手します。

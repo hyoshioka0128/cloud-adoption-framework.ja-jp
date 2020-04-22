@@ -4,15 +4,15 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 729a359f5ea44d77c691acb0a22477eed7cecb44
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: e99bb023f73baad9e1940f06128ba09bd79ab0a1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709432"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80606582"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,7 +45,7 @@ ms.locfileid: "77709432"
 
 ## <a name="what-is-a-business-risk-mvp"></a>ビジネス リスク MVP とは
 
-**実用最小限の製品**は、具体的な価値を生み出すことができる何かの最小単位を定義するためによく使用される用語です。 ビジネス リスク MVP では、クラウド ガバナンス チームはまず、一部の資産がある時点でクラウド環境にデプロイされるという前提条件から始めます。 その時点でこれらの資産が何であるかは不明なため、チームは、これらの資産にどのような種類のデータが格納されるかに関して確信がない可能性があります。
+**実用最小限の製品**とは、具体的な価値を生み出すことができる何かの最小単位を定義するためによく使用される用語です。 ビジネス リスク MVP では、クラウド ガバナンス チームはまず、一部の資産がある時点でクラウド環境にデプロイされるという前提条件から始めます。 その時点でこれらの資産が何であるかは不明なため、チームは、これらの資産にどのような種類のデータが格納されるかに関して確信がない可能性があります。
 
 ビジネス リスクに対して計画する場合、クラウド ガバナンス チームは最悪のケースのシナリオを構築し、可能性のあるすべてのポリシーをクラウドにマップすることができます。 ただし、すべてのクラウド使用シナリオでのすべての潜在的なビジネス リスクを識別するには膨大な時間と作業が必要になるため、クラウド ワークロードへのガバナンスの実装が遅れる可能性があります。 これは推奨されませんが、1 つの選択肢です。
 

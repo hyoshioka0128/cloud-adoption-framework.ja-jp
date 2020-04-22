@@ -4,16 +4,16 @@ description: クラウドの合理化を使用してデジタル資産を評価�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 042487ce2c579f581547e4942785cbbba659ad5e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 70b4d0ee295f06db68090551fac02fd205111c60
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357269"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995717"
 ---
 # <a name="rationalize-the-digital-estate"></a>デジタル資産の合理化
 

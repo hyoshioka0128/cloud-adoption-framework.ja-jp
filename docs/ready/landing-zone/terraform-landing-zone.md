@@ -4,29 +4,29 @@ description: Terraform を使用してランディング ゾーンを構築す�
 author: arnaudlh
 ms.author: arnaul
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 76fdd8232cff0b90f12c18cc32a32538e6570197
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: fd5f3ca69312156c705857bb91968ea40cd3a867
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354162"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997800"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Terraform を使用してランディング ゾーンを構築する
 
-Azure には、ランディング ゾーンをデプロイするためのネイティブ サービスが用意されています。 他のサードパーティ製ツールも、この作業に役立ちます。 顧客やパートナーがランディング ゾーンのデプロイによく使用するツールの 1 つは、HashiCorp の Terraform です。 このセクションでは、プロトタイプのランディング ゾーンを使用して、Azure サブスクリプションの基本的なログ記録、アカウンティング、およびセキュリティの機能をデプロイする方法について説明します。
+Azure には、ランディング ゾーンをデプロイするためのネイティブ サービスが用意されています。 他のサードパーティ製ツールも、この作業に役立ちます。 顧客やパートナーがランディング ゾーンのデプロイによく使用するツールの 1 つは、HashiCorp の Terraform です。 このセクションでは、サンプルのランディング ゾーンを使用して、Azure サブスクリプションの基本的なガバナンス、アカウンティング、およびセキュリティの機能をデプロイする方法について説明します。
 
 ## <a name="purpose-of-the-landing-zone"></a>ランディング ゾーンの目的
 
-Terraform のクラウド導入フレームワークのファンデーション ランディング ゾーンには、ログ記録、アカウンティング、およびセキュリティを適用するための、限られた責任と機能のセットがあります。 このランディング ゾーンは、Terraform モジュールと呼ばれる標準コンポーネントを使用して、環境にデプロイされるリソース間の一貫性が維持されます。
+Terraform のクラウド導入フレームワークのファンデーション ランディング ゾーンには、ログ記録、アカウンティング、およびセキュリティを適用するための機能があります。 このランディング ゾーンは、Terraform モジュールと呼ばれる標準コンポーネントを使用して、環境にデプロイされるリソース間の一貫性が維持されます。
 
 ## <a name="use-standard-modules"></a>標準モジュールを使用する
 
-コンポーネントの再利用は、コードとしてのインフラストラクチャの基本原則です。 モジュールは、環境内および環境間でのリソースのデプロイにおける標準と一貫性の定義に役立ちます。 この最初のランディング ゾーンをデプロイするために使用されるモジュールは、公式の [Terraform レジストリ](https://registry.terraform.io/search?q=aztfmod)で入手できます。
+コンポーネントの再利用は、コードとしてのインフラストラクチャの基本原則です。 モジュールは、環境内および環境間でのリソースのデプロイにおける標準と一貫性の定義に役立ちます。 この最初のランディング ゾーンをデプロイするために使用されるモジュールは、公式の [Terraform レジストリ](https://registry.terraform.io/modules/aztfmod)で入手できます。
 
 ## <a name="architecture-diagram"></a>アーキテクチャの図
 
@@ -54,7 +54,7 @@ Terraform のクラウド導入フレームワークのファンデーション 
 
 この初期のランディング ゾーンを定義するときに、以下の前提条件または制約が考慮されました。 これらの前提条件がご自分の環境の制約と一致する場合、このブループリントを使用して最初のランディング ゾーンを作成することができます。 このブループリントは、固有の制約を満たすランディング ゾーン ブループリントを作成するために拡張することもできます。
 
-- **サブスクリプションの制限**: この導入作業では、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)を超えることはないと考えられます。 2 つの一般的な指標は、25,000 個の VM または 10,000 個の vCPU を超過することです。
+- **サブスクリプションの制限**: この導入作業では、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えることはないと考えられます。 2 つの一般的な指標は、25,000 個の VM または 10,000 個の vCPU を超過することです。
 - **コンプライアンス:** このランディング ゾーンでは、サードパーティのコンプライアンス要件は必要ありません。
 - **アーキテクチャの複雑さ:** アーキテクチャの複雑さによって、追加の運用サブスクリプションが常に必要になるわけではありません。
 - **共有サービス:** このサブスクリプションをハブ アンド スポーク アーキテクチャのスポークのように扱うことを要求する既存の共有サービスは Azure にありません。
@@ -69,7 +69,7 @@ Terraform ランディング ゾーンでは、次の決定事項が示されま
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ログ記録と監視 | Azure Monitor Log Analytics ワークスペースが使用されます。 診断ストレージ アカウントとイベント ハブがプロビジョニングされます。                                                                                                                                                        |                                                                                                                                                                                                                                                                 |
 | ネットワーク                | N/A - ネットワークは別のランディング ゾーンで実装されます。                                                                                                                                                                                                                    | [ネットワーク関連の意思決定](../considerations/networking-options.md)                                                                                                                                                                                                 |
-| ID               | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。                                                                                                                                                                        | [ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)                                                                                                                               |
+| ID               | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。                                                                                                                                                                        | [ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)                                                                                                                               |
 | ポリシー                 | このランディング ゾーンでは現在、Azure ポリシーは適用されないものと想定されています。                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
 | サブスクリプション デザイン    | 該当なし - 単一の運用サブスクリプション用に設計されています。                                                                                                                                                                                                                     | [初期サブスクリプションを作成する](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | リソース グループ        | 該当なし - 単一の運用サブスクリプション用に設計されています。                                                                                                                                                                                                                     | [サブスクリプションのスケーリング](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
@@ -97,7 +97,7 @@ Terraform ランディング ゾーンでは、次の決定事項が示されま
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>最初のランディング ゾーンをカスタマイズしてデプロイする
 
-[Terraform ファンデーション ランディング ゾーンを複製する](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)ことができます。 Terraform の変数を変更することで、ランディング ゾーンを簡単に開始します。 この例では **blueprint_foundations.sandbox.auto.tfvars** を使用するため、このファイルの値が Terraform によって自動的に設定されます。
+[Terraform ファンデーション ランディング ゾーンを複製する](https://github.com/azure/caf-terraform-landingzones)ことができます。 Terraform の変数を変更することで、ランディング ゾーンを簡単に開始します。 この例では **blueprint_foundations.sandbox.auto.tfvars** を使用するため、このファイルの値が Terraform によって自動的に設定されます。
 
 さまざまな変数セクションを見てみましょう。
 
@@ -192,7 +192,7 @@ security_center = {
 
 ## <a name="get-started"></a>はじめに
 
-構成を確認した後、Terraform 環境をデプロイする場合と同様に、構成をデプロイできます。 rover を使用することをお勧めします。これは、Windows、Linux、または MacOS からデプロイできる Docker コンテナーです。 [rover GitHub リポジトリ](https://github.com/aztfmod/rover)で開始できます。
+構成を確認した後、Terraform 環境をデプロイする場合と同様に、構成をデプロイできます。 rover を使用することをお勧めします。これは、Windows、Linux、または macOS からデプロイできる Docker コンテナーです。 [ランディング ゾーン](https://github.com/azure/caf-terraform-landingzones)の使用を開始できます。
 
 ## <a name="next-steps"></a>次のステップ
 
@@ -206,4 +206,4 @@ security_center = {
 今後の参照アーキテクチャでは、ハブとスポークのトポロジに関するこの概念を説明します。
 
 > [!div class="nextstepaction"]
-> [基盤の Terraform ランディング ゾーン サンプルを確認する](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [基盤の Terraform ランディング ゾーン サンプルを確認する](https://github.com/azure/caf-terraform-landingzones)

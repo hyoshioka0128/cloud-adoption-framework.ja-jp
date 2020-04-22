@@ -4,16 +4,16 @@ description: これらのセキュリティ ベースライン ポリシーの�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 02a1c18a73b784cb9245ed7c83d86c21c0690148
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707210"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997248"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>セキュリティ ベースラインのサンプル ポリシー ステートメント
 
@@ -31,7 +31,7 @@ ms.locfileid: "77707210"
 
 **ポリシー ステートメント:** デプロイされたすべての資産を、重要性とデータ機密性によって分類する必要があります。 クラウド ガバナンス チームとアプリケーション所有者は、クラウドにデプロイする前に、分類をレビューする必要があります。
 
-**使用可能な設計オプション:** [リソースタグ付け標準](../../decision-guides/resource-tagging/index.md)を確立し、IT スタッフによってそれがデプロイされるすべてのリソースに [Azure リソース タグ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)を使用して一貫して適用されるようにします。
+**使用可能な設計オプション:** [リソースタグ付け標準](../../decision-guides/resource-tagging/index.md)を確立し、IT スタッフによってそれがデプロイされるすべてのリソースに [Azure リソース タグ](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)を使用して一貫して適用されるようにします。
 
 ## <a name="data-encryption"></a>データの暗号化
 
@@ -39,7 +39,7 @@ ms.locfileid: "77707210"
 
 **ポリシー ステートメント:** すべての保護対象データは暗号化した状態で保存される必要があります。
 
-**使用可能な設計オプション:** Azure プラットフォームで保存データの暗号化を行う方法については、「[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)」を参照してください。 アカウント データの暗号化やストレージ アカウント設定の変更方法の制御などのその他の制御も考慮する必要があります。
+**使用可能な設計オプション:** Azure プラットフォームで保存データの暗号化を行う方法については、「[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)」を参照してください。 アカウント データの暗号化やストレージ アカウント設定の変更方法の制御などのその他の制御も考慮する必要があります。
 
 ## <a name="network-isolation"></a>ネットワークの分離
 
@@ -87,7 +87,7 @@ ms.locfileid: "77707210"
 
 **ポリシー ステートメント:** クラウドのデプロイに影響を及ぼす可能性があるトレンドおよび潜在的悪用をセキュリティ チームが定期的にレビューし、クラウドで使用されるセキュリティ ベースライン ツールの更新を提供する必要があります。
 
-**使用可能な設計オプション:** 関連する IT およびガバナンス チームのメンバーが参加するセキュリティ レビュー会議を定期的に行います。 既存のセキュリティ データとメトリックのレビューを行って、現在のポリシーとセキュリティ ベースライン ツールのギャップを確かめ、新しいリスクを修復するようにポリシーを更新します。 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) と [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) を利用すると、デプロイに固有の新たな脅威に関する実用的な分析情報を得ることができます。
+**使用可能な設計オプション:** 関連する IT およびガバナンス チームのメンバーが参加するセキュリティ レビュー会議を定期的に行います。 既存のセキュリティ データとメトリックのレビューを行って、現在のポリシーとセキュリティ ベースライン ツールのギャップを確かめ、新しいリスクを修復するようにポリシーを更新します。 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) と [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) を使用して、実際のデプロイに固有の新しい脅威について、アクションにつながる分析情報を入手します。
 
 ## <a name="next-steps"></a>次のステップ
 

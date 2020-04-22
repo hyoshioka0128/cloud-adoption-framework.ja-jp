@@ -4,16 +4,16 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75a0e1f06b2a5a2734cc386e02200ec06d707d7b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9e7cf8bec88178908caeae27742e5fbc92155003
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356905"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997356"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
@@ -32,7 +32,7 @@ ms.locfileid: "80356905"
 - **過少利用資産。** メモリ、CPU、またはネットワーク機能がすべて一貫して十分に利用されていないリソースの数。
 - **リソースの枯渇。** メモリ、CPU、またはネットワーク機能が負荷によって使い尽くされているリソースの数。
 - **リソース経過時間。** リソースが最後にデプロイまたは変更されてからの時間。
-- **重大状況の VM。** 1 つ以上の重大な問題が検出されており、正常な機能に戻すには対処する必要があるデプロイ済み VM の数。
+- **重大状況の VM。** 1 つ以上の重大な問題が検出されており、通常の機能を復元するためには対処する必要がある、デプロイ済みの VM の数。
 - **重大度別アラート。** デプロイ済み資産に対するアラートの合計数を重大度別に分類したもの。
 - **異常なネットワーク リンク。** ネットワーク接続の問題があるリソースの数。
 - **異常なサービス エンドポイント。** 外部ネットワーク エンドポイントに関する問題の数。

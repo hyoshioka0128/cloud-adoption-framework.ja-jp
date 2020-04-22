@@ -4,15 +4,15 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5fa02af8464a63488e77b69226cb02d38ceca5d7
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170615"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527661"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>イノベーションに関する一般的な阻害要因と課題
 
@@ -40,7 +40,7 @@ ms.locfileid: "78170615"
 
 クラウドが普及する前は、情報テクノロジに依存する発明サイクルは多くの時間と労力を要するものでした。 調達サイクルとプロビジョニング サイクルでは、新しいソリューションに向けた重要な最初のステップが遅れることがよくありました。 DevOps ソリューションとフィードバック ループのコストによって、初期段階でアイデア創出と発明について共同作業を行うチームの能力に遅延が生じます。 開発者環境やデータ プラットフォームに関連するコストによって、高度にトレーニングされたプロフェッショナル開発者以外はだれも、新しいソリューションの作成に参加できませんでした。
 
-クラウドは、セルフサービスの自動プロビジョニング、軽量の開発およびデプロイ ツール、プロの開発者と一般開発者が迅速なソリューションを作成するために協力する機会を提供することで、これらの発明の課題の多くを克服してきました。 イノベーションのためにクラウドを活用すると、イノベーションの公式の発明の側について、顧客の課題と阻害要因が劇的に削減されます。
+クラウドは、セルフサービスの自動プロビジョニング、軽量の開発およびデプロイ ツール、プロの開発者と一般開発者が迅速なソリューションを作成するために協力する機会を提供することで、これらの発明の課題の多くを克服してきました。 イノベーションのためにクラウドを利用すると、イノベーションの公式の発明の側について、顧客の課題と阻害要因が劇的に削減されます。
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>デジタル経済における発明の課題
 

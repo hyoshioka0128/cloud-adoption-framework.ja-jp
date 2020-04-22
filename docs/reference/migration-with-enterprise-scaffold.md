@@ -4,16 +4,16 @@ description: Azure エンタープライズ スキャフォールディングは
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e276f6fd504ec0417ec15504cda52682d67bcba6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353753"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119785"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -117,7 +117,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 > [!TIP]
 > 命名規則のヒント
 >
-> - [パターンと実践のガイダンス](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)を確認し、可能であれば採用してください。 このガイダンスは意味のある命名規則を決定する際に役立ち、例も豊富に含まれています。
+> - 可能な限り、[クラウド導入フレームワークの名前付けとタグ付けのガイダンス](../ready/azure-best-practices/naming-and-tagging.md)を確認して採用してください。 このガイダンスは意味のある命名規則を決定する際に役立ち、例も豊富に含まれています。
 > - Resource Manager ポリシーを使用すると、命名規則の適用に役立ちます。
 >
 > 名前を後から変更するのは難しいことに注意してください。ここで数分間かけておけば後で面倒が起きません。
@@ -126,7 +126,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 ### <a name="resource-tags"></a>リソース タグ
 
-リソース タグは命名規則と密接に関連しています。 リソースがサブスクリプションに追加されると、課金、管理、運用の目的から、論理的にリソースを分類することが非常に重要になります。 詳細については、[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)に関するページを参照してください。
+リソース タグは命名規則と密接に関連しています。 リソースがサブスクリプションに追加されると、課金、管理、運用の目的から、論理的にリソースを分類することが非常に重要になります。 詳細については、[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)に関するページを参照してください。
 
 > [!IMPORTANT]
 > タグには個人情報が含まれる可能性があり、GDPR 規制の対象になる場合があります。 タグの管理は注意深く計画してください。 GDPR に関する全般情報については、[Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) の GDPR に関するセクションを参照してください。
@@ -182,9 +182,9 @@ Azure が最初にリリースされたときには、サブスクリプショ�
 - 求められている作業を行うために必要な**最小限の特権**の付与の原則に従います。
 
 > [!IMPORTANT]
->[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)、および[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)機能の使用を検討してください。これらによって、セキュリティが強化され、Azure サブスクリプション全体の管理操作の可視性が向上します。 これらの機能は有効な Azure AD Premium ライセンスで使用でき (機能によって異なる)、アイデンティティをさらに保護して管理します。 Azure AD PIM により、承認ワークフローの "Just-in-Time" 管理アクセスと、管理者のアクティブ化とアクティビティの完全な監査が可能になります。 Azure Multi-Factor Authentication はもう 1 つの重要な機能であり、Azure portal へのログインの 2 段階認証を有効にします。 条件付きアクセス制御と組み合わせると、セキュリティ侵害のリスクを効果的に管理できます。
+>[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)、および[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)機能の使用を検討してください。これらによって、セキュリティが強化され、Azure サブスクリプション全体の管理操作の可視性が向上します。 これらの機能は有効な Azure AD Premium ライセンスで使用でき (機能によって異なる)、アイデンティティをさらに保護して管理します。 Azure AD PIM により、承認ワークフローの "Just-in-Time" 管理アクセスと、管理者のアクティブ化とアクティビティの完全な監査が可能になります。 Azure Multi-Factor Authentication はもう 1 つの重要な機能であり、Azure portal へのサインインの 2 段階認証を有効にします。 条件付きアクセス制御と組み合わせると、セキュリティ侵害のリスクを効果的に管理できます。
 
-アイデンティティとアクセス制御について計画を立てて準備すること、および Azure Identity Management のベスト プラクティス ([リンク](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)) に従うことは、採用できる最適なリスク軽減戦略の 1 つであり、すべてのデプロイにおいて必須と考える必要があります。
+ID およびアクセス制御について計画を立てて準備すること、および [Azure Identity Management のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)に従うことは、採用できる最適なリスク軽減戦略の 1 つであり、すべてのデプロイにおいて必須と考える必要があります。
 
 ## <a name="security"></a>Security
 
@@ -236,7 +236,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 - **アラート:** Azure リソースのすべてのログ、イベント、メトリックを収集できますが、重大な状態や動作を通知する機能はありません。このデータが役立つのは履歴管理の目的やフォレンジクスのためだけです。 Azure アラートは、すべてのアプリケーションとインフラストラクチャに対して定義した状態についてプロアクティブに通知します。 一連の受信者に通知するために、ログ、イベント、メトリックに対して、アクション グループを使用するアラート ルールを作成します。 アクション グループでは、外部アクションを使用して、修復のオートメーションを行う機能も提供されます。たとえば、Webhook を使用して、Azure Automation Runbook や Azure Functions を実行します。
 
-- **ダッシュボード:** ダッシュボードでは、監視ビューを集計して、リソースとサブスクリプションに対するデータを組み合わせることができ、Azure リソースのテレメトリについて企業全体のビューを提供します。 独自のビューを作成して構成し、他のユーザーと共有することができます。 たとえば、さまざまなタイルを含むダッシュボードを作成して、Azure SQL DB、Azure DB for PostgreSQL、Azure DB for MySQL など、すべての Azure データベース サービスに関する情報をデータベース管理者が提供できるようにします。
+- **ダッシュボード:** ダッシュボードでは、監視ビューを集計して、リソースとサブスクリプションに対するデータを組み合わせることができ、Azure リソースのテレメトリについて企業全体のビューを提供します。 独自のビューを作成して構成し、他のユーザーと共有することができます。 たとえば、さまざまなタイルを含むダッシュボードを作成して、Azure SQL Database、Azure DB for PostgreSQL、Azure DB for MySQL など、すべての Azure データベース サービスに関する情報をデータベース管理者が提供できるようにします。
 
 - **メトリックス エクスプローラー:** メトリックは、Azure リソースによって生成される数値 (CPU 使用率やディスク I/O など) であり、これにより、リソースの操作やパフォーマンスを洞察できます。 メトリックス エクスプローラーを使用すると、興味があるメトリックを定義し、Log Analytics に送信して集計および分析できます。
 
@@ -277,10 +277,10 @@ Microsoft では、コストの視覚化、追跡、および管理に役立つ�
 
 これらは、コストに関する即時性のある情報と、アクションを実行する機能を提供するツールです。
 
-- **サブスクリプション リソース コスト:** ポータルにある [Azure コスト分析](https://docs.microsoft.com/azure/cost-management/overview)ビューでは、コストをひとめで確認でき、リソースまたはリソース グループごとの毎日の支出に関する情報を得ることができます。
-- **Azure Cost Management:** この製品は、Microsoft が Cloudyn を買収したことにより生まれました。Azure の支出額および他のパブリック クラウド プロバイダーでの支出を管理および分析することができます。 Free レベルと有料レベルの両方があり、[概要](https://docs.microsoft.com/azure/cost-management/overview)で説明しているように豊富な機能があります。
-- **Azure Budgets とアクション グループ:** 何にコストがかかるか、それについて何をすべきかを把握するのは、最近まではほぼ手動で行っていました。 Azure Budgets とその API が導入されたことにより、コストがしきい値に達したときにアクションを作成できるようになりました ([この例](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)を参照してください)。 たとえば、"test" リソース グループが予算の 100% に到達したときにシャットダウン、または [もう 1 つの例]。
-- **Azure Advisor**: 何にコストがかかるかを把握しても、戦いは半分しか終わっていません。もう半分は、その情報に対してどうすべきかを把握することです。 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) では、費用の節約、信頼性の向上、さらにはセキュリティの向上のための処置についてレコメンデーションが提供されます。
+- **サブスクリプション リソース コスト:** ポータルにある [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) ビューでは、コストをひとめで確認でき、リソースまたはリソース グループごとの毎日の支出に関する情報を得ることができます。
+- **Azure Cost Management:** これにより、Azure の支出額および他のパブリック クラウド プロバイダーでの支出を管理および分析することができます。 Free レベルと有料レベルの両方があり、豊富な機能があります。
+- **Azure Budgets とアクション グループ:** 何にコストがかかるか、それについて何をすべきかを把握するのは、最近まではほぼ手動で行っていました。 Azure Budgets とその API が導入されたことにより、コストがしきい値に達したときに、[この例](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)のようにアクションを作成できるようになりました。 たとえば、"test" リソース グループが予算の 100% に到達したら、シャットダウンできます。
+- **Azure Advisor:** 何にコストがかかるかを把握しても、戦いは半分しか終わっていません。もう半分は、その情報に対してどうすべきかを把握することです。 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) では、費用の節約、信頼性の向上、さらにはセキュリティの向上のための処置についてレコメンデーションが提供されます。
 
 ### <a name="external-cost-management-tools"></a>外部のコスト管理ツール
 

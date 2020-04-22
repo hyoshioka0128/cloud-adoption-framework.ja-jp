@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e23d954835e20735ca5f8ab57e0139504c5f4c75
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: f2d2d5a4d4b220f4e638ad6ecdd525f38e7eb498
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311899"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527729"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>Azure の SQL Server 移行のベスト プラクティス
 
@@ -22,4 +22,4 @@ SQL Server 全体の Azure への移行により、クラウド導入フレー�
 
 ## <a name="migration-best-practices"></a>移行のベスト プラクティス
 
-左側の目次に、Azure データベース移行ガイド、Azure Database Migration Service (DMS)、またはその他のツールを使用した SQL Server 移行の実行を支援する、Microsoft のさまざまなベスト プラクティスのアウトラインが示されています。 このページをブックマークして、ベスト プラクティスの完全な一覧をすばやく参照できます。
+左側の目次に、Azure データベース移行ガイド、Azure Database Migration Service (DMS)、またはその他のツールを使用した SQL Server 移行の実行を支援するベスト プラクティスの概要が示されています。 このページをブックマークして、ベスト プラクティスの完全な一覧をすばやく参照できます。

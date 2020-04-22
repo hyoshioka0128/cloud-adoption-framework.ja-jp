@@ -4,15 +4,15 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 94e49d8f6682d4f5edb6b1d00bd93d47ba600bc8
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c1e34c9f13a170abd1f00b603537c73ce51688da
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706678"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396084"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>クラウド ガバナンスのための企業ポリシーを定義する
 
@@ -55,7 +55,7 @@ ms.locfileid: "77706678"
 - **ポリシー ステートメント:** ポリシーの要件と目標の簡潔な説明。
 - **設計または技術ガイダンス:** 実行可能な推奨事項、仕様、またはその他のガイダンス。IT チームと開発者がクラウド デプロイの設計および構築時に使用できる、このポリシーをサポートして適用するためのものです。
 
-ポリシーの定義を開始する際にヘルプが必要な場合は、ガバナンス セクションの概要に示されている[ガバナンス規範](../governance-disciplines.md)を参照してください。 これらの各規範の記事には、クラウドへの移行時に発生する一般的なビジネス リスクの例と、そのリスクを修正するために使用されるサンプルのポリシーが含まれます (コスト管理規範の[サンプルのポリシー定義](../cost-management/policy-statements.md)などを参照)。
+ポリシーの定義を開始する際にヘルプが必要な場合は、ガバナンス セクションの概要に示されている[ガバナンス規範](../governance-disciplines.md)を参照してください。 これらの各規範の記事には、クラウドへの移行時に発生する一般的なビジネス リスクの例と、そのリスクを修正するために使用されるサンプルのポリシーが含まれます。 たとえば、Cost Management の規範の[サンプル ポリシー定義](../cost-management/policy-statements.md)を参照してください。
 
 ## <a name="incremental-governance-and-integrating-with-existing-policy"></a>斬新的なガバナンスおよび既存のポリシーとの統合
 

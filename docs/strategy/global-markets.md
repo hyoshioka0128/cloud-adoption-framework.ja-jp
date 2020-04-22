@@ -4,15 +4,15 @@ description: グローバル マーケットの決定がクラウドへの変革
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b4c39b0a55485335e65bee9a5e6be2fe5fe22279
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353480"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997751"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "80353480"
 
 ## <a name="data-sovereignty"></a>データの主権
 
-多くの地理的地域ではデータ主権規制が確立されています。 これらの規制では、データを格納できる場所、元の国から持ち出すことのできるデータ、その地域の住民に関して収集できるデータが制限されています。 外国でクラウドベースのソリューションを運用する前に、そのクラウド プロバイダーがデータの主権をどのように処理するかを理解する必要があります。 各地域での Azure のアプローチの詳細については、[こちら](https://azure.microsoft.com/global-infrastructure/geographies)をご覧ください。 Azure でのコンプライアンスの詳細については、Microsoft セキュリティ センターで「[Microsoft におけるプライバシー](https://www.microsoft.com/trustcenter/privacy)」をご覧ください。
+多くの地理的地域ではデータ主権規制が確立されています。 これらの規制では、データを格納できる場所、元の国から持ち出すことのできるデータ、その地域の住民に関して収集できるデータが制限されています。 外国でクラウドベースのソリューションを運用する前に、そのクラウド プロバイダーがデータの主権をどのように処理するかを理解する必要があります。 各地域での Azure のアプローチの詳細については、「[Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies)」を参照してください。 Azure でのコンプライアンスの詳細については、Microsoft セキュリティ センターで「[Microsoft におけるプライバシー](https://www.microsoft.com/trust-center/privacy)」をご覧ください。
 
 この記事の残りの部分では、弁護士が外国での活動を審査および承認したものとします。
 

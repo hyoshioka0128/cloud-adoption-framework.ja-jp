@@ -4,15 +4,15 @@ description: ベスト プラクティスを維持しつつ、イノベーショ
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356757"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120552"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "80356757"
 - [ソリューションのデプロイ](#solution-deployment): チームが変更を顧客と速やかに共有できるように、ソリューションをデプロイします。
 - [統合された測定](#integrated-measurements): 完全なチームによる明確な分析のために、学習メトリックをフィードバック ループに追加します。
 
-技術的スパイクを最小限に抑えるために、これらの各原則において最初は成熟度が低いと仮定します。 ただし、仮説がより詳細になるにつれて、スケーリングが可能なツールやプロセスに合わせて調整を行って、事前に明確に計画を立てます。 Azure では、[GitHub](https://guides.github.com) と [Azure DevOps](https://docs.microsoft.com/azure/devops) により、小規模なチームが摩擦をほとんど生じさせずに作業を開始できます。 これらのチームは、何千人もの開発者がスケーリング ソリューションで共同作業を行い、何百もの顧客の仮説をテストする規模に発展する可能性があります。 この記事の残りの部分では、これらの各原則で導入を強化するための、"大きく計画し、小さく始める" というアプローチについて説明します。
+技術的スパイクを最小限に抑えるために、これらの各原則において最初は成熟度が低いと仮定します。 ただし、仮説がより詳細になるにつれて、スケーリングが可能なツールやプロセスに合わせて調整を行って、事前に明確に計画を立てます。 Azure では、[GitHub](https://guides.github.com) と [Azure DevOps](https://docs.microsoft.com/azure/devops) により、小規模なチームが摩擦をほとんど生じさせずに作業を開始できます。 これらのチームは、何千人もの開発者がスケーリング ソリューションで共同作業を行い、何百もの顧客の仮説をテストする規模に発展する可能性があります。 この記事の残りの部分では、これらの各原則にわたって導入を強化するための、"大きく計画し、小さく始める" というアプローチについて説明します。
 
 ## <a name="shared-solution"></a>共有ソリューション
 

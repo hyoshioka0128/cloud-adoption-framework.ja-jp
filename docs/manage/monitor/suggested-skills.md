@@ -4,27 +4,27 @@ description: クラウド監視のためのスキルの準備
 author: BrianBlanchard
 ms.author: magoedte
 ms.date: 03/23/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe1dcc215c318ef35c7a1d19af50b1451eb1935d
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356227"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120541"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
 # <a name="skills-readiness-for-cloud-monitoring"></a>クラウド監視のためのスキルの準備
 
-移行の行程の計画フェーズでの目標は、実装をガイドするために必要な計画を作成することです。 また、これらのワークロードを運用環境に移行またはリリースする前に (後ではない)、これらのワークロードを操作する方法を計画に含める必要があります。 ビジネス上の利害関係者は有益かつ中断しないサービスを期待しています。 IT スタッフ メンバーは、統合された Azure サービスを自信を持って活用し、Azure とハイブリッド環境のリソースを効率的に監視するために、新しいスキルを習得して順応する必要があるということを認識しています。
+移行の行程の計画フェーズでの目標は、実装をガイドするために必要な計画を作成することです。 また、これらのワークロードを運用環境に移行またはリリースする前に (後ではない)、これらのワークロードを操作する方法を計画に含める必要があります。 ビジネス上の利害関係者は有益かつ中断しないサービスを期待しています。 IT スタッフ メンバーは、統合された Azure サービスを自信を持って使用し、Azure とハイブリッド環境のリソースを効率的に監視するために、新しいスキルを習得して順応する必要があるということを認識しています。
 
 次のラーニング パスを使用して、必要なスキルの開発を加速することができます。
 
 - [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) の概要では、Azure リソースの管理とデプロイの基本的な概念について説明しています。 企業全体の監視エクスペリエンスを管理する IT スタッフは、管理スコープ、ロールベースのアクセス制御 (RBAC)、 Azure Resource Manager テンプレートの使用、および Azure CLI と Azure PowerShell を使用したリソースの管理について理解する必要があります。
 
-- ポリシー、ロールベースのアクセス制御、およびその他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソースのセキュリティを実装する](https://docs.microsoft.com//learn/paths/implement-resource-mgmt-security)」を参照してください。
+- ポリシー、ロールベースのアクセス制御、およびその他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソースのセキュリティを実装する](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security)」を参照してください。
 
 - [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) の概要では、Azure Policy を使用してポリシーを作成、割り当て、管理する方法について説明しています。 Azure Policy では、Azure Monitor エージェントのデプロイと構成、Azure Monitor for VMs と Azure Security Center を使用した監視の有効化、診断設定のデプロイ、ゲスト構成設定の監査などを行うことができます。
 
@@ -39,9 +39,9 @@ ms.locfileid: "80356227"
 
   - 「[Microsoft Azure IaaS の監視と管理](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started)」で、Azure Monitor を使用して IaaS で実行されるワークロードの基本的な監視を実行する方法について学習できます。
 
-  - 「[Microsoft Azure リソースとワークロードの監視](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring)」では、Microsoft Azure 監視ツールを使用して Azure ネットワーク (およびオンプレミス) のリソースを監視する方法について学習できます。
+  - 「[Microsoft Azure リソースとワークロードの監視](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring)」では、Microsoft Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスのリソースを監視する方法について学習できます。
 
-  - 「[Microsoft Azure DevOps エンジニア: フィードバック メカニズムの最適化](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms)」では、Application Insights および Log Analytics を含む Azure Monitor を使用して Web アプリケーションの監視と最適化を準備できます。
+  - 「[Microsoft Azure DevOps エンジニア:フィードバック メカニズムの最適化](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms)」の支援により、Application Insights および Log Analytics を含む Azure Monitor を使用して Web アプリケーションの監視と最適化を準備できます。
 
   - 「[Microsoft Azure のデータベース監視に関するプレイブック](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring)」では、Azure SQL Database、Azure SQL Data Warehouse、および Azure Cosmos DB の監視を実装して使用する方法について学習できます。
 
@@ -57,7 +57,7 @@ Microsoft とパートナーは、あらゆるお客様を対象に、Azure サ�
 
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro):クラウドのキャリア パスをマッピングするのに役立つ無料のオンライン リソースとして機能します。 業界の専門家がクラウド ロールについて行う提案、および提案を実現するためのスキルについて学習してください。 関係を保つために最も必要なスキルを磨くように、学習カリキュラムをご自分のペースで進められます。
 
-Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験]( https://www.microsoft.com/learning/azure-certification.aspx)によって公認のものにすることができます。
+Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験]( https://www.microsoft.com/learning/certification-overview.aspx)によって公認のものにすることができます。
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps とプロジェクトの管理
 
@@ -77,7 +77,7 @@ Azure に関する知識を [Microsoft Azure 認定のトレーニングや試�
 
 ## <a name="other-considerations"></a>その他の考慮事項
 
-多くの場合、顧客は、IT によって提供されるサービスについて、予想されるビジネス上の (および IT 組織に対する) 成果を管理、維持、および提供しようと努力します。 監視は、インフラストラクチャとビジネスを管理するための中核と見なされており、サービスとカスタマー エクスペリエンスの品質の測定に重点が置かれます。  これらの目標を達成するために、ITSM を DevOps と組み合わせて使用して基礎を作ります。これにより、監視チームは、監視サービスを管理、提供、およびサポートする方法を成熟させることができます。 ITSM フレームワークを導入することで、監視チームは、組織の戦略目標とニーズに合わせて、プロバイダーとして機能でき、信頼されたビジネス イネーブラーとして認識されるようになります。
+多くの場合、顧客は、IT によって提供されるサービスについて、予想されるビジネス上の (および IT 組織に対する) 成果を管理、維持、および提供しようと努力します。 監視は、インフラストラクチャとビジネスを管理するための中核と見なされており、サービスとカスタマー エクスペリエンスの品質の測定に重点が置かれます。 これらの目標を達成するために、ITSM を DevOps と組み合わせて使用して基礎を作ります。これにより、監視チームは、監視サービスを管理、提供、およびサポートする方法を成熟させることができます。 ITSM フレームワークを導入することで、監視チームは、組織の戦略目標とニーズに合わせて、プロバイダーとして機能でき、信頼されたビジネス イネーブラーとして認識されるようになります。
 
 以下を確認して、最も人気のある ITSM フレームワークである [ITIL v4 とクラウド コンピューティングのホワイトペーパー](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud)に加えられた更新を理解してください。これは、既存の ITIL ガイダンスを DevOps、アジャイル、および Lean のベスト プラクティスと結合することに重点を置いています。 また、プロセスに依存しないフレームワークを使用して IT を変換する方法について別のブループリントを提供する、[IT4IT 参照アーキテクチャ](https://www.opengroup.org/it4it)についても検討してください。
 

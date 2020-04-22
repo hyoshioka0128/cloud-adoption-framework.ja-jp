@@ -4,16 +4,16 @@ description: Microsoft Azure で System Center Operations Manager や Azure Moni
 author: MGoedtel
 ms.author: magoedte
 ms.date: 06/26/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 5a3879e4b1d5a076e1869100471afbf4f7cd046e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356314"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997669"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -93,7 +93,7 @@ VM に対する Azure Monitor | 正常性基準は、メトリック ストア�
 
 とは言え、この原則にはいくつかの重要な注意事項があります。
 
-**ゲスト OS テレメトリ**には、システムで取得するパスがいくつかあります。
+**ゲスト OS テレメトリ**には、システムに取得するパスが複数あります。
 
 - このデータに対してアラートを発する最速の方法は、それをカスタム メトリックとしてインポートすることです。 これは、Azure Diagnostics 拡張機能を使用し、次にメトリック アラートを使用することで行います。 ただし、カスタム メトリックは現在プレビュー段階であり、[他の選択肢よりもコストが高くなります](https://azure.microsoft.com/pricing/details/monitor)。
 
@@ -120,9 +120,9 @@ Azure Monitor for VMs を使用していない場合は、以下の機能につ�
 
 これらの機能を併用すると、アラート通知と基になるアラートの管理を最小限に抑えることで時間を節約できます。
 
-### <a name="alerts-limitations"></a>アラートの制限事項
+### <a name="limits-on-alerts"></a>アラートに関する限度
 
-作成できるアラートの数の[制限](https://docs.microsoft.com/azure/azure-subscription-service-limits#azure-monitor-limits)に注意してください。 一部の限度 (すべてではありません) は、サポートに連絡して高めることができます。
+[作成できるアラート数の限度](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-monitor-limits)に注意してください。 一部の限度 (すべてではありません) は、サポートに連絡して高めることができます。
 
 ### <a name="best-query-experience"></a>最適なクエリ エクスペリエンス
 

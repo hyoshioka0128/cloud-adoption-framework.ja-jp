@@ -4,15 +4,15 @@ description: 移行前の評価時にワークロードを分類します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/03/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8f912891bf90d0ecef29727d7d7a067d442234fc
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0708c394cca50c64813b7eea04a1239586c825af
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79095391"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527715"
 ---
 # <a name="workload-classification-before-migration"></a>移行前のワークロードの分類
 
@@ -24,7 +24,7 @@ ms.locfileid: "79095391"
 
 ## <a name="data-sensitivity"></a>データの機密性
 
-[データ分類](../../../govern/policy-compliance/data-classification.md)に関する記事で概要を示したように、データ分類は、データ漏洩がビジネスや顧客に及ぼす影響を測定するものです。 ガバナンス チームとセキュリティ チームは、データ機密度またはデータ分類をセキュリティ リスクの指標として活用します。 評価中、クラウド導入チームは、移行対象のワークロードごとにデータ分類を評価し、その分類をサポート チームと共有する必要があります。 "パブリックなデータ" だけを扱うワークロードであれば、サポート チームには一切影響が及ばないこともあります。 しかし、分類の中で最後の "高い機密度" へとデータが近づくにつれて、ガバナンス チームとセキュリティ チーム共に、ワークロード評価への関与に高い関心を抱くことになる可能性が高まります。
+[データ分類](../../../govern/policy-compliance/data-classification.md)に関する記事で概要を示したように、データ分類は、データ漏洩がビジネスや顧客に及ぼす影響を測定するものです。 ガバナンス チームとセキュリティ チームは、データ機密度またはデータ分類をセキュリティ リスクの指標として使用します。 評価中、クラウド導入チームは、移行対象のワークロードごとにデータ分類を評価し、その分類をサポート チームと共有する必要があります。 "パブリックなデータ" だけを扱うワークロードであれば、サポート チームには一切影響が及ばないこともあります。 しかし、分類の中で最後の "高い機密度" へとデータが近づくにつれて、ガバナンス チームとセキュリティ チーム共に、ワークロード評価への関与に高い関心を抱くことになる可能性が高まります。
 
 セキュリティ チームおよびガバナンス チームとできるだけ早く連携して、次の項目を定義してください。
 

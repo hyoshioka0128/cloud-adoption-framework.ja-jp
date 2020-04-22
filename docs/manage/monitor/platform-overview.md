@@ -4,16 +4,16 @@ description: 2 つの監視プラットフォームの概要を説明し、そ�
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5e4effaccc04ba3b534a75394f17d758141c387e
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140554"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527160"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -63,7 +63,7 @@ OMS に含まれていたサービスの機能は、OMS が廃止されても変
 
 ### <a name="operations-manager"></a>Operations Manager
 
-Operations Manager には、管理グループをサポートするための重要なインフラストラクチャとメンテナンスが必要であり、それは機能の基本単位です。 管理グループは少なくとも、1 台以上の管理サーバー、運用およびレポート作成用のデータ ウェアハウス データベースをホストする SQL Server インスタンス、エージェントで構成されます。 管理グループの設計の複雑さは、監視するワークロードの範囲、ワークロードをサポートするデバイスまたはコンピューターの数など、多数の要因によって決まります。 エンタープライズ監視プラットフォームの一般的な特徴として、高可用性とサイトの回復性が必要な場合に、インフラストラクチャの要件が大きく上がり、必要なメンテナンスも大幅に増加する可能性があります。
+Operations Manager には、管理グループをサポートするための重要なインフラストラクチャとメンテナンスが必要であり、それは機能の基本単位です。 管理グループは少なくとも、1 台以上の管理サーバー、運用およびレポート作成用のデータ ウェアハウス データベースをホストする SQL Server インスタンス、エージェントで構成されます。 管理グループの設計の複雑さは、監視するワークロードの範囲、ワークロードをサポートするデバイスやコンピューターの数など、複数の要因によって決まります。 エンタープライズ監視プラットフォームの一般的な特徴として、高可用性とサイトの回復性が必要な場合に、インフラストラクチャの要件が大きく上がり、必要なメンテナンスも大幅に増加する可能性があります。
 
 ![Operations Manager 管理グループの図](./media/monitoring-management-guidance-cloud-and-on-premises/operations-manager-management-group-optimized.svg)
 

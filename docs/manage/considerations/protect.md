@@ -4,15 +4,15 @@ description: ワークロードの停止のリスクに備えて準備するこ�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f46fb65572d319e2dc9a4a779cd205bbe476908b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78340997"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527581"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>クラウド管理における保護と回復
 
@@ -62,7 +62,7 @@ IT 環境の大部分のワークロードでは、特定のビジネス プロ�
 
 ### <a name="protect-and-recover-vms"></a>VM の保護と復旧
 
-ほとんどのワークロードは、ソリューションのさまざまな側面をホストする仮想マシンにある程度依存しています。 システム障害が発生した後で、ワークロードでビジネス プロセスをサポートするには、多数の仮想マシンを迅速に復旧する必要があります。
+ほとんどのワークロードは、ソリューションのさまざまな側面をホストする仮想マシンにある程度依存しています。 システム障害の発生後、ワークロードでビジネス プロセスをサポートするには、いくつかの仮想マシンを迅速に復旧する必要があります。
 
 これらの仮想マシンで発生するダウンタイムは、収益の損失や収益性の低下を引き起こす可能性があります。 VM のダウンタイムがビジネスの財政上の業績に直接影響する場合は、RTO が非常に重要です。 仮想マシンは、セカンダリ サイトへのレプリケーションと自動復旧を使用すると、より迅速に復旧できます。このモデルは、ホット ウォーム復旧モデルと呼ばれます。 復旧の最高の状態で、仮想マシンを完全に機能するセカンダリ サイトにレプリケートできます。 このコストの高いアプローチは、高可用性またはホット ホット復旧モデルと呼ばれます。
 

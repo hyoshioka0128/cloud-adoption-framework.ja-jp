@@ -4,16 +4,16 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7dc47021b2b4a3d9e697566332bf602d9166e712
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356269"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527072"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -160,7 +160,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 ### <a name="monitor-with-azure-monitor"></a>Azure Monitor による監視
 
-クラウドへの移行には多くの課題がありますが、多くの機会もあります。 組織は、1 つ以上のオンプレミスのエンタープライズ監視ツールから移行し、資本投資と運用コストを削減できる可能性があるだけでなく、Azure Monitor などのクラウド監視プラットフォームがクラウド規模で提供する利点も得られます。 監視とアラートの要件、既存の監視ツールの構成、クラウドに移行するワークロードを確認します。 計画が完成したら、Azure Monitor を構成します。
+クラウドへの移行には多くの課題がありますが、好機にもなります。 組織は、1 つ以上のオンプレミスのエンタープライズ監視ツールから移行し、資本投資と運用コストを削減できる可能性があるだけでなく、Azure Monitor などのクラウド監視プラットフォームがクラウド規模で提供する利点も得られます。 監視とアラートの要件、既存の監視ツールの構成、クラウドに移行するワークロードを確認します。 計画が完成したら、Azure Monitor を構成します。
 
 - シンプルなアーキテクチャから、または Azure、他のクラウド プロバイダー、および企業ネットワーク間でコンポーネントがホストされている多層アーキテクチャから、ハイブリッド インフラストラクチャとアプリケーションを監視します。 コンポーネントには、1 つまたは複数の VM、可用性セットまたは仮想マシン スケール セットに配置された複数の VM、または Windows Server または Linux コンテナー上で実行されている Azure Kubernetes Service (AKS) にデプロイされたコンテナー化アプリケーションが含まれる場合があります。
 

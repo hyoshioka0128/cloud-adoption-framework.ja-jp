@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 894208ff08a0100e8d5d8d5d9df3eff592773426
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78340980"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527646"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>クラウド管理における運用のコンプライアンス
 
@@ -54,7 +54,7 @@ ms.locfileid: "78340980"
 
 クラウド管理の拡張されたベースラインとして、一部のワークロードは自動修復からメリットが得られる場合があります。 ワークロードで、コードやアーキテクチャの変更によって解決できない問題が頻繁に発生する場合、修復の自動化によって、クラウド管理の負担が軽減され、ユーザーの満足度が向上する可能性があります。
 
-自動化の対象となるほど一般的な問題は、技術的負債の解決によって解決すべきであるとよく言われます。 長期的な解決が適している場合、それが既定の選択肢になります。 ただし、多くのビジネス シナリオでは、技術的負債の解決に対する多額の投資を妥当と判断することは困難です。 技術的負債の解決を妥当と判断できず、修復が共通してコストのかかる負担となる場合、自動修復が次善策のソリューションになります。
+自動化の対象となるほど一般的な問題は、技術的負債の解決によって解決すべきであるとよく言われます。 長期的な解決が適している場合、それが既定の選択肢になります。 ただし、一部のビジネス シナリオでは、技術的負債の解決に多額の投資をすることを妥当と判断するのは困難です。 技術的負債の解決を妥当と判断できず、修復が共通してコストのかかる負担となる場合、自動修復が次善策のソリューションになります。
 
 ## <a name="next-steps"></a>次のステップ
 

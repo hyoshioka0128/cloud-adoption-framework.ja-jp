@@ -4,15 +4,15 @@ description: クラウド移行のためのスキルの準備
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ab7b0e80a360c214aae418e3383ced59ec06c268
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 396fecb03210980cae4c4f14cc6afcee331c3034
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898129"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997578"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>クラウド移行のためのスキルの準備
 
@@ -32,39 +32,39 @@ ms.locfileid: "78898129"
 - [業務上の正当な理由の構築](../strategy/cloud-migration-business-case.md):クラウド移行作業を推進する業務上の正当な理由を作成し理解します。
 - [デジタル資産の合理化](../digital-estate/rationalize.md):デジタル資産内の資産を合理化します。
 - [アプリケーション ポートフォリオの評価](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
-- [Assessing and Planning Microsoft Azure Migration (Microsoft Azure 移行の評価とプランニング)](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning):オンプレミスのワークロードの評価を支援するための PluralSight コース。
+- [Assessing and Planning Microsoft Azure Migration (Microsoft Azure 移行の評価とプランニング)](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning):オンプレミスのワークロードの評価を支援するための Pluralsight コース。
 
 評価プロセス中、各ワークロードのソリューションをアーキテクトが設計します。 次のスキル習得リソースは、これらのタスクに備えてアーキテクトの準備を支援します。
 
-- [クラウド アーキテクチャの基礎](https://app.pluralsight.com/library/courses/cloud-architecture-foundations):適切な基本的ソリューションの設計を支援する PluralSight コース
-- [Microsoft Azure アーキテクチャ](https://app.pluralsight.com/library/courses/cloud-architecture-foundations):アーキテクトに Azure アーキテクチャの基礎を教える PluralSight コース
-- [Microsoft Azure 移行の設計](https://app.pluralsight.com/library/courses/cloud-architecture-foundations):アーキテクトが移行ソリューションを設計するのに役立つ PluralSight コース
+- [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations):適切な基本的ソリューションの設計を支援する Pluralsight コース。
+- [Microsoft Azure アーキテクチャ - 概要](https://www.pluralsight.com/courses/azure-architecture-getting-started):アーキテクトに Azure アーキテクチャの基礎知識を教える Pluralsight コース。
+- [Microsoft Azure 移行の設計](https://www.pluralsight.com/courses/microsoft-azure-migrations-designing):アーキテクトが移行ソリューションを設計するのに役立つ Pluralsight コース。
 
 ## <a name="migrate-skilling-resources"></a>スキル リソースの移行
 
 次のチュートリアルでは、移行アクティビティのチームを準備できます。
 
 - [Azure への移行](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure):Azure Site Recovery を使用して VM を Azure に移行します。
-- [Rehost workloads to Azure (Azure へのワークロードのリホスト)](https://aka.ms/rehostcourse):ワークロードを Azure にリホストする方法を視聴者に説明する PluralSight コース
-- [Migrating Physical and Virtual Servers to Microsoft Azure (Microsoft Azure への物理サーバーと仮想サーバーの移行)](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents):Azure へのサーバーの移行に関する PluralSight コース
-- [Import and Export Data to Microsoft Azure (Microsoft Azure へのデータのインポートとエクスポート)](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents):Azure との間のデータの移動に関する PluralSight コース
+- [Rehost workloads to Azure (Azure へのワークロードのリホスト)](https://www.pluralsight.com/courses/microsoft-azure-workloads-rehosting):ワークロードを Azure にリホストする方法を視聴者に説明する Pluralsight コース。
+- [Migrating Physical and Virtual Servers to Microsoft Azure (Microsoft Azure への物理サーバーと仮想サーバーの移行)](https://www.pluralsight.com/courses/microsoft-azure-migrating-physical-virtual-servers):Azure へのサーバーの移行に関する Pluralsight コース。
+- [Import and Export Data to Microsoft Azure (Microsoft Azure へのデータのインポートとエクスポート)](https://www.pluralsight.com/courses/microsoft-azure-import-export-data):Azure との間のデータの移動に関する Pluralsight コース。
 
 ## <a name="optimize-and-promote-process-changes"></a>最適化および昇格プロセスの変更
 
 次のツールは、チームがリソースを最適化し、運用環境に昇格する場合に役立ちます。
 
-- [コストとサイズ変更](azure-best-practices/migrate-best-practices-costs.md):コストと予算に合わせてサイズを調整します。
-- [ワークロードの昇格](azure-best-practices/migrate-best-practices-networking.md):運用環境のユーザーを再ルーティングしてワークロードを移行するようにネットワーク構成を変更します。
+- [コストとサイズ変更](./azure-best-practices/migrate-best-practices-costs.md):コストと予算に合わせてサイズを調整します。
+- [ワークロードの昇格](./azure-best-practices/migrate-best-practices-networking.md):運用環境のユーザーを再ルーティングしてワークロードを移行するようにネットワーク構成を変更します。
 
 ## <a name="secure-and-manage-process-changes"></a>セキュリティ保護プロセスと管理プロセスの変更
 
 次のツールは、チームが、移行した資産をセキュリティ保護および管理する方法を見つける場合に役立ちます。
 
-- [Azure でのワークロードのセキュリティ保護と管理](azure-best-practices/migrate-best-practices-security-management.md):Azure でのワークロードのセキュリティ保護と管理に関するベスト プラクティス。
+- [Azure でのワークロードのセキュリティ保護と管理](./azure-best-practices/migrate-best-practices-security-management.md):Azure でのワークロードのセキュリティ保護と管理に関するベスト プラクティス。
 
 ## <a name="next-steps"></a>次のステップ
 
-[拡張スコープ チェックリスト](./index.md)に戻り、移行方法が完全に調整されていることを確認します。
+[移行のベスト プラクティスのチェックリスト](./azure-best-practices/index.md)に戻り、移行方法が完全に調整されていることを確認します。
 
 > [!div class="nextstepaction"]
-> [範囲拡大チェックリスト](./index.md)
+> [移行のベスト プラクティスのチェックリスト](./index.md)

@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f714931624eab819fafcf086e42d3ab765c13eed
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 75b410e293d3e083b45b91b543bce4b70b8078ee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092914"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997747"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
@@ -38,13 +38,13 @@ ms.locfileid: "79092914"
 - [Azure のネットワーク](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Azure のネットワークの基本の一部と、Azure のネットワークが回復性の向上と待機時間の短縮にどのように役立つかについて説明します。
 - [Azure のコンピューティング オプション](https://docs.microsoft.com/learn/modules/intro-to-azure-compute): Azure のコンピューティング サービスを確認します。
 - [ロールベースのアクセス制御 (RBAC) を使用したリソースのセキュリティ保護](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac): RBAC を使用してリソースをセキュリティで保護します。
-- [データ ストレージ オプション](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index): Azure データ ストレージの利点。
+- [データ ストレージ オプション](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure): Azure データ ストレージの利点。
 
 準備フェーズでは、アーキテクトは、すべての Azure 環境にまたがるソリューションを設計するよう求められます。 アーキテクトは、次のスキル構築リソースを使用して、これらのタスクに対して準備できます。
 
-- [クラウド アーキテクチャの基礎](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): アーキテクトによる適切な基本的ソリューションの設計を支援する PluralSight コース。
-- [Microsoft Azure アーキテクチャ](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): アーキテクトに Azure アーキテクチャの基礎を教える PluralSight コース。
-- [Microsoft Azure 移行の設計](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): アーキテクトが移行ソリューションを設計するのに役立つ PluralSight コース。
+- [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations): 適切な基本的ソリューションの設計を支援する Pluralsight コース。
+- [Microsoft Azure アーキテクチャ](https://www.pluralsight.com/courses/cloud-architecture-foundations): アーキテクトに Azure アーキテクチャの基礎を教える Pluralsight コース。
+- [Microsoft Azure 移行の設計](https://www.pluralsight.com/courses/cloud-architecture-foundations): アーキテクトが移行ソリューションを設計するのに役立つ Pluralsight コース。
 
 ## <a name="deeper-skills-exploration"></a>より詳細なスキル調査
 
@@ -56,7 +56,7 @@ Microsoft とパートナーは、あらゆるお客様を対象に、Azure サ�
 
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro):クラウドのキャリア パスをマッピングするのに役立つ無料のオンライン リソースとして機能します。 業界の専門家がクラウド ロールについて行う提案、および提案を実現するためのスキルについて学習してください。 関係を保つために最も必要なスキルを磨くように、学習カリキュラムをご自分のペースで進められます。
 
-Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験](https://www.microsoft.com/learning/azure-certification.aspx)によって公認のものにすることができます。
+Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)によって公認のものにすることができます。
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
@@ -64,7 +64,7 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 次の例で、クラウド導入フレームワークの準備完了部分に合わせて、Microsoft Learn のいくつかのカスタマイズされたラーニングパスを示します。
 
-[Azure の基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):高可用性、拡張性、弾力性、機敏性、フォールト トレランス、ディザスター リカバリーなどのクラウドの概念について説明します。  Azure でのクラウド コンピューティングの利点と、それによって時間とコストを節約する方法について理解します。 Azure クラウドに移行するための基本的な戦略を比較対照します。 コンピューティング、ネットワーク、ストレージ、セキュリティなど、Azure で利用できる広範なサービスを調査します。
+[Azure の基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):高可用性、拡張性、弾力性、機敏性、フォールト トレランス、ディザスター リカバリーなどのクラウドの概念について説明します。 Azure でのクラウド コンピューティングの利点と、それによって時間とコストを節約する方法について理解します。 Azure クラウドに移行するための基本的な戦略を比較対照します。 コンピューティング、ネットワーク、ストレージ、セキュリティなど、Azure で利用できる広範なサービスを調査します。
 
 [Azure でのリソースの管理](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):Azure コマンド ラインと Web ポータルを使用してクラウド ベースのリソースを作成、管理、制御する方法について説明します。
 

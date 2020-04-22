@@ -4,16 +4,16 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: de9fd12afe7445c5cdd3b4ae8c1eba9c7cb07f19
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 16f73a03abf0469b37f907cdfbc62e2309d948af
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357055"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120297"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: セキュリティ ベースライン規範の改善
 
@@ -123,7 +123,7 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
 6. 望ましい状態への構成 (DSC: Desired State Configuration) を通じてグループ ポリシー オブジェクト (GPO) を統合します:
     1. GPO を DSC に変換 – GitHub の [Microsoft Baseline Management プロジェクト](https://github.com/Microsoft/BaselineManagement)でこの取り組みを加速させることができます。 必ず、Resource Manager テンプレートと並行して DSC をリポジトリに保存してください。
     2. Azure Automation State Configuration をコーポレート IT サブスクリプションの任意のインスタンスにデプロイします。 Azure Automation を使用して、管理グループ内のサポートされているサブスクリプションにデプロイされている VM に DSC を適用できます。
-    3. 現在のロードマップでは、カスタムのゲスト構成ポリシーを有効にすることが計画されています。 その機能がリリースされれば、このベスト プラクティスで Azure Automation を使用する必要はなくなります。
+    3. 現在のロードマップでは、カスタムのゲスト構成ポリシーを有効にすることが目標とされています。 その機能がリリースされれば、このベスト プラクティスで Azure Automation を使用する必要はなくなります。
 
 **クラウド導入サブスクリプション (スポーク) に追加のガバナンスを適用する:** `Corporate IT Subscription` をベースに、アプリケーション アーキタイプのサポートに特化した各サブスクリプションに適用されるガバナンス MVP をわずかに変更することで、急激な改善を生み出すことができます。
 
@@ -150,7 +150,7 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
     2. 承認された OS イメージのみの使用を監査し、実施します。
     3. 各ノードのセキュリティ要件に基づいてゲスト構成を監査し、実施します。
 5. 保護対象データの分類が含まれるすべてのサブスクリプションについて、Azure Policy を更新します。
-    1. 標準ロールのみの使用を監査し、実施します
+    1. 標準ロールのみの使用を監査し、強制します
     2. 個別ノードのすべてのストレージ アカウントおよび保存中ファイルに対する暗号化の適用を監査し、実施します。
     3. DMZ ネットワーク セキュリティ グループの新しいバージョンの適用を監査し、実施します。
     4. ネットワーク インターフェイスごとに、承認されたネットワーク サブネットおよび VNet の使用を監査し、強制します。

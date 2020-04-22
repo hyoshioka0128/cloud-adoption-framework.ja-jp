@@ -4,16 +4,16 @@ description: この記事では、エンタープライズ クラウド導入作
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/05/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 2ebb04a09c6c14b44e0237c2530144c69014f5b4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 5091fe94347773d5b1d6bf4397438b31b3c25f9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354515"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120204"
 ---
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "80354515"
 
 運用管理要件と会計処理要件をサポートするようにクラウド資産を整理します。 明確に定義された名前付け規則とメタデータのタグ付け規則を使用すると、リソースをすばやく見つけて管理するのに役立ちます。 これらの規則は、チャージバックとショーバックという会計処理を使用して、クラウドの使用コストをビジネス チームに関連付けるためにも役立ちます。
 
-Azure アーキテクチャ センターの [Azure リソースの名前付け規則と制限事項](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)のガイダンスに、一般的な推奨事項とプラットフォームの制限事項が示されています。 次の説明では、そのガイダンスを、特にエンタープライズ クラウド導入作業のサポートを対象にしたより詳細な推奨事項を使用して拡張しています。
+Azure では、[Azure リソースの名前付け規則と制限事項](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)が定義されています。 このガイダンスでは、エンタープライズ クラウドの導入作業を支援するための詳細な推奨事項について説明します。
 
 リソース名の変更が困難な場合があります。 大規模なクラウドのデプロイを開始する前に、包括的な名前付け規則を確立してください。
 
@@ -53,7 +53,7 @@ Azure アーキテクチャ センターの [Azure リソースの名前付け�
 
 パブリック エンドポイントを含む PaaS サービスや仮想マシンの DNS ラベルなどの一部のリソースの名前にはグローバル スコープがあります。つまり、それらは Azure プラットフォーム全体にわたって一意である必要があります。
 
-リソース名には長さの制限があります。 名前付け規則を作成するときに、名前に埋め込まれるコンテキストおよびそのスコープと長さのバランスをとることが重要です。 リソースの種類ごとの許可される文字、スコープ、および名前の長さに関連した名前付け規則の詳細については、「[Azure リソースの名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)」を参照してください。
+リソース名には長さの制限があります。 名前付け規則を作成するときに、名前に埋め込まれるコンテキストおよびそのスコープと長さのバランスをとることが重要です。 詳細については、「[Azure リソースの名前付け規則と制限事項](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)」を参照してください。
 
 ### <a name="recommended-naming-components"></a>推奨される名前付けコンポーネント
 
@@ -75,7 +75,7 @@ Azure アーキテクチャ センターの [Azure リソースの名前付け�
 
 次の一覧は、名前付け規則を定義する場合に使用すべき推奨される Azure リソースの種類のプレフィックスを示しています。
 
-<!-- cSpell:disable -->
+<!-- cSpell:ignore apim snet traf vmss stvm arcm ntfns sqldb psql sqldw sqlstrdb ssimp srch hbase appi migr -->
 
 ### <a name="general"></a>全般
 
@@ -227,7 +227,7 @@ Azure アーキテクチャ センターの [Azure リソースの名前付け�
 
 次のセクションでは、エンタープライズ クラウドのデプロイにおける一般的な Azure リソースの種類のいくつかのサンプル名を示します。
 
-<!-- cSpell:disable -->
+<!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
 
 <!-- markdownlint-disable MD024 MD033 -->
 
@@ -245,23 +245,23 @@ Azure アーキテクチャ センターの [Azure リソースの名前付け�
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | 仮想ネットワーク              | Resource group  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                      |
 | Subnet                       | 仮想ネットワーク | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                      |
-| ネットワーク インターフェイス (NIC)      | Resource group  | nic-\<\#\#\>-\<vmname\>-\<subscription\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
+| ネットワーク インターフェイス (NIC)      | Resource group  | nic-\<\#\#\>-\<VM 名\>-\<サブスクリプション\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
 | パブリック IP アドレス            | Resource group  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                              |
 | Load Balancer                | Resource group  | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
-| ネットワーク セキュリティ グループ (NSG) | サブネットまたは NIC   | nsg-\<ポリシー名またはアプリ名\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsbloked-001</li></ul>             |
+| ネットワーク セキュリティ グループ (NSG) | サブネットまたは NIC   | nsg-\<ポリシー名またはアプリ名\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsblocked-001</li></ul>             |
 | ローカル ネットワーク ゲートウェイ        | 仮想ゲートウェイ | lgw-\<サブスクリプションの種類\>-\<リージョン\>-\<\#\#\#\>                      | <ul><li>lgw-shared-eastus2-001 </li><li>lgw-prod-westus-001 </li><li>lgw-client-eastus2-001</li></ul>                         |
 | 仮想ネットワーク ゲートウェイ      | 仮想ネットワーク | vgw-\<サブスクリプションの種類\>-\<リージョン\>-\<\#\#\#\>                      | <ul><li>vgw-shared-eastus2-001 </li><li>vgw-prod-westus-001 </li><li>vgw-client-eastus2-001</li></ul>                         |
 | サイト間接続      | Resource group  | cn-\<local gateway name\>-to-\<virtual gateway name\>                | <ul><li>cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001 </li><li>cn-lgw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | VPN 接続               | Resource group  | cn-\<subscription1\>\<region1\>-to-\<subscription2\>\<region2\>-     | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                  |
-| ルート テーブル                  | Resource group  | route-\<ルート テーブル名\>                                           | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
+| ルート テーブル                  | Resource group  | route-\<ルート テーブル名\>                                           | <ul><li>route-navigator</li><li>route-sharepoint</li></ul>                                                        |
 | DNS ラベル                    | グローバル          | \<A record of vm\>.[\<region\>.cloudapp.azure.com]                   | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                                      |
 
 ### <a name="example-names-compute-and-web"></a>名前の例:コンピューティングと Web
 
 | 資産の種類                  | Scope          | Format                                                              | 例                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| 仮想マシン             | Resource group | vm\<policy name or appname\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
-| VM ストレージ アカウント          | グローバル         | stvm\<performance type\>\<appname or prodname\>\<region\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
+| 仮想マシン             | Resource group | vm\<ポリシー名またはアプリ名\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
+| VM ストレージ アカウント          | グローバル         | stvm\<パフォーマンスの種類\>\<アプリ名または製品名\>\<リージョン\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
 | Web アプリ                     | グローバル         | app-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}]   | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul>                   |
 | 関数アプリ                | グローバル         | func-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}]  | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul>                 |
 | クラウド サービス               | グローバル         | cld-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{cloudapp.net}]        | <ul><li>cld-navigator-prod-001.azurewebsites.net </li><li>cld-accountlookup-dev-001.azurewebsites.net</li></ul>                   |

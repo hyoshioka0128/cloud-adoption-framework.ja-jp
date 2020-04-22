@@ -4,16 +4,16 @@ description: ID ベースライン規範を開発して成熟させるために�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 254abb817b89e34e9e92fb2b9eb949784e269601
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356993"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995219"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -72,7 +72,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - 次のアクセス モデルの使用を検討します。
   - [最小特権アクセス](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) モデル。
   - [特権 ID ベースライン](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) アクセス モデル。
-- 統合前の詳細をすべて終了し、[ID のベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)をレビューします。
+- 統合前の詳細をすべて終了し、[ID のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)をレビューします。
   - 単一の ID、シングル サインオン (SSO)、またはシームレス SSO を有効にする。
   - 管理者に対する多要素認証を構成する。
   - 必要な場合は、ID プロバイダーを整理または統合する。
@@ -130,7 +130,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - オンボード、オフボード、および資格情報の更新プロセスをレビューします。
 - ID アクセス管理 (IAM) モジュール間の自動化および通信のレベルの増加を調査します。
 - 開発セキュリティ運用 (DevSecOps) アプローチの実装を検討します。
-- 影響分析を実行して、コスト、セキュリティ、およびユーザー導入に関する結果を測定します。
+- 影響分析を実施して、コスト、セキュリティ、およびユーザー導入に関する結果を測定します。
 - システムによって作成されるメトリックの変化を示す影響レポートを定期的に生成し、[ハイブリッド ID 戦略](../../decision-guides/identity/index.md)のビジネスへの影響を見積もります。
 - [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) によって推奨されている統合された監視を確立します。
 

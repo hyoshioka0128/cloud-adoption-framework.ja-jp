@@ -4,15 +4,15 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092838"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997500"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
 
@@ -63,7 +63,7 @@ ms.locfileid: "79092838"
 - [Azure のネットワーク](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)。 Azure のネットワークの基本と、Azure のネットワークが回復性の向上と待ち時間の短縮にどのように役立つかについて学習します。
 - [Azure のコンピューティング オプション](https://docs.microsoft.com/learn/modules/intro-to-azure-compute)。 Azure のコンピューティング サービスについて学習します。
 - [RBAC によるリソースのセキュリティ保護](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)。 RBAC を使用してリソースをセキュリティで保護します。
-- [データ ストレージ オプション](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index)。 Azure データ ストレージの利点について学習します。
+- [データ ストレージ オプション](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure)。 Azure データ ストレージの利点について学習します。
 
 ## <a name="organizational-skills"></a>組織のスキル
 
@@ -82,13 +82,13 @@ Microsoft とパートナーは、あらゆるお客様を対象に、Azure サ�
 
 - [Microsoft IT Pro Center](https://www.microsoft.com/itpro)。 クラウドのキャリア パスをマッピングするのに役立つ無料のオンライン リソースとして機能します。 業界の専門家がクラウド ロールについて行う提案、および提案を実現するためのスキルについて学習してください。 関係を保つために最も必要なスキルを磨くように、学習カリキュラムをご自分のペースで進められます。
 
-Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験](https://www.microsoft.com/learning/azure-certification.aspx)によって公認のものにすることをお勧めします。
+Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)によって公認のものにすることをお勧めします。
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントを獲得し、レベルを高め、さらなる達成を目指しましょう。
 
-クラウド導入フレームワークの「戦略」部分に合わせて調整された学習パスの例を次に示します。
+以下に、クラウド導入フレームワークの "戦略" 部分に合わせて調整された学習パスの例を示します。
 
 [Microsoft Azure のビジネス価値を学習する](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure):この学習エクスペリエンスでは、デジタル変革とクラウドの機能をビジネスの変革に利用する方法を紹介することから始めます。 ここでは、信頼できるクラウド プラットフォーム上で、Microsoft Azure クラウド サービスの機能を利用して組織を強化する方法について説明します。 最後に、まとめとして、組織でこのエクスペリエンスを実現する方法を説明します。
 

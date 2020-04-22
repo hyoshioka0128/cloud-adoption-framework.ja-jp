@@ -4,21 +4,21 @@ description: クラウド管理の一般的なプラットフォーム運用で�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9a08c2f5fcf799bb6e1f37cd52b3d7e18724618e
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 3480d0411e1a16eed18d14859cbb997706ccccb4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341030"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527625"
 ---
 # <a name="platform-operations-in-cloud-management"></a>クラウド管理でのプラットフォーム運用
 
 [インベントリと可視性](./inventory.md)、[運用のコンプライアンス](./operational-compliance.md)、および[保護と復旧](./protect.md)にわたるクラウド管理ベースラインは、IT ポートフォリオのほとんどのワークロードに十分なレベルのクラウド管理として機能します。 ただし、そのベースラインが完全なポートフォリオをサポートできるほど十分なことはほとんどありません。 この記事は、クラウド管理の最も一般的な次の手順であるポートフォリオの運用に基づいています。
 
-IT ポートフォリオ内の資産を簡単に調べると、サポートされているワークロード全体のパターンが明らかになります。 このようなワークロードには、多くの一般的なプラットフォームがあります。 社内の過去の技術的な決定によっては、こうしたプラットフォームは大きく異なる可能性があります。
+IT ポートフォリオ内の資産を簡単に調べると、サポートされているワークロード全体のパターンが明らかになります。 このようなワークロードには一般的なプラットフォームが含まれます。 社内の過去の技術的な決定によっては、こうしたプラットフォームは大きく異なる可能性があります。
 
 組織によっては、SQL Server、Oracle、またはその他のオープンソース データ プラットフォームへの依存度が高くなります。 他の組織では、共通点は、仮想マシン (VM) またはコンテナーのホスティング プラットフォームに根ざしている可能性があります。 さらに、SAP、Oracle などのアプリケーションやエンタープライズ リソース プランニング (ERP) システムに共通の依存関係が存在する場合もあります。
 

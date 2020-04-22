@@ -4,15 +4,15 @@ description: 革新的なクラウド ベースのテクノロジを利用して
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8555770721a1c00f40ca66a6f7c65adc635cec59
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 866c269257581ab99d70fc0eb6296963edd154f2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357236"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995697"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Azure でクラウド移行の取り組みを始める
 

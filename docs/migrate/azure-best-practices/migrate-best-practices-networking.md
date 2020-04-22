@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 067e84e433fa995c79b588698240afea06e54660
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354113"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120015"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -49,9 +49,9 @@ VNet トポロジを計画する際は、IP アドレス空間の配置方法、
 
 **詳細情報:**
 
-- Azure VNet の[概要を理解する](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)。
-- ネットワークに関する FAQ を[読む](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq)。
-- ネットワークの制限事項[について学習する](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits)。
+- [Azure Virtual Network の概要](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)をご確認ください。
+- 「[Azure 仮想ネットワークについてよく寄せられる質問 (FAQ)](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq)」をご覧ください。
+- [Azure Stack ネットワーク](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits)についてご確認ください。
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>ベスト プラクティス:ハブ アンド スポーク ネットワーク トポロジを実装する
 
@@ -285,7 +285,7 @@ VNet をセキュリティ保護する責任は、Microsoft とユーザーの�
 
 **詳細情報:**
 
-- ネットワーク セキュリティに対するベスト プラクティスの[概要を理解する](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices)。
+- ネットワーク セキュリティに対するベスト プラクティスの[概要を理解する](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices)。
 - セキュリティで保護されたネットワークを設計する[方法を学習する](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security)。
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>ベスト プラクティス:Azure 境界ネットワークを実装する
@@ -307,7 +307,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 
 **詳細情報:**
 
-- Azure とオンプレミス データセンターの間への境界ネットワークのデプロイ[について学習する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)。
+- [Azure とオンプレミス データセンターの間への境界ネットワークをデプロイする](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)方法をご覧ください。
 
 ## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>ベスト プラクティス:NSG で VNet トラフィックをフィルター処理する
 
@@ -511,7 +511,7 @@ NVA ファイアウォール | Azure Firewall と同様に、NVA ファイアウ
 
 **詳細情報:**
 
-- Azure VNet での NVA の使用[について学習する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)。
+- Azure VNet での NVA の使用[について学習する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)。
 
 ## <a name="next-steps"></a>次のステップ
 

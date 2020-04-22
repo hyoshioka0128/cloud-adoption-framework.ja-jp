@@ -4,16 +4,16 @@ description: 複数のチーム、複数のワークロード、および複数�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 614c43a59d7fab493aa97eca47dcd43a73987fa9
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: bee86f2dc43a8758fe7352824fd7810a4660995e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508136"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997482"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -170,7 +170,7 @@ Azure AD **グローバル管理者**には、ユーザー アカウントを作
     ![リソース グループの作成](../../_images/govern/design/governance-3-0d.png)
 2. **サブスクリプション所有者**は、**ネットワーク操作ユーザー** アカウントをそのリソース グループに追加し、**共同作成者**ロールを割り当てます。
     ![ネットワーク操作ユーザーの追加](../../_images/govern/design/governance-3-0e.png)
-3. **ネットワーク操作ユーザー**は、[VPN ゲートウェイ](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)を作成し、オンプレミス VPN アプライアンスに接続するように構成します。 また、**ネットワーク操作ユーザー**は、*environment:shared* および *managedBy:netOps* という[タグ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)のペアを各リソースに適用します。 **サブスクリプション サービス管理者**がコスト レポートをエクスポートすると、それぞれのタグに合わせてコストが調整されます。 これにより、**サブスクリプション サービス管理者**が、*environment* タグ *managedBy* タグを使ってコストをピボットできます。 図の右上にある**リソース制限**カウンターをご覧ください。 各 Azure サブスクリプションに[サービス制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)があります。これらの制限の影響について理解しやすいように、ここでは各サブスクリプションの仮想ネットワークの制限を追跡します。 サブスクリプションあたりの仮想ネットワークの制限は 1,000 です。1 つ目の仮想ネットワークがデプロイされたため、現在 999 の仮想ネットワークが使用可能です。
+3. **ネットワーク操作ユーザー**は、[VPN ゲートウェイ](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)を作成し、オンプレミス VPN アプライアンスに接続するように構成します。 また、**ネットワーク操作ユーザー**は、*environment:shared* および *managedBy:netOps* という[タグ](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)のペアを各リソースに適用します。 **サブスクリプション サービス管理者**がコスト レポートをエクスポートすると、それぞれのタグに合わせてコストが調整されます。 これにより、**サブスクリプション サービス管理者**が、*environment* タグ *managedBy* タグを使ってコストをピボットできます。 図の右上にある**リソース制限**カウンターをご覧ください。 各 Azure サブスクリプションに[サービス制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)があります。これらの制限の影響について理解しやすいように、ここでは各サブスクリプションの仮想ネットワークの制限を追跡します。 サブスクリプションあたりの仮想ネットワークの制限は 1,000 です。1 つ目の仮想ネットワークがデプロイされたため、現在 999 の仮想ネットワークが使用可能です。
     ![VPN ゲートウェイの作成](../../_images/govern/design/governance-3-1.png)
 4. さらに 2 つのリソース グループがデプロイされます。 1 つ目の名前は `prod-rg` です。 このリソース グループは運用環境と連携します。 2 つ目の名前は `dev-rg` で、開発環境と連携します。 運用ワークロードに関連付けられているリソースはすべて、運用環境にデプロイされ、開発ワークロードに関連付けられているリソースはすべて、開発環境にデプロイされます。 この例では、この 2 つの環境それぞれにデプロイするワークロードは 2 つだけなので、Azure サブスクリプション サービスの制限に達することはありません。 しかし、リソース数の上限がリソース グループあたり 800 であることを考慮してください。 各リソース グループにワークロードを追加し続けると、最終的にこの制限に到達します。
     ![リソース グループの作成](../../_images/govern/design/governance-3-2.png)
@@ -239,7 +239,7 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
 1. [Azure アカウント](https://docs.microsoft.com/azure/active-directory/sign-up-organization)を作成します (まだ組織にない場合)。 Azure アカウントにサインアップしたユーザーは、Azure アカウント管理者になります。また、組織の指導者は、このロールを担う個人を選択する必要があります。 この個人は、次を担当します。
     - サブスクリプションの作成。
     - これらのサブスクリプションのユーザー ID を格納する [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) テナントの作成および管理。
-2. ご自身の組織の指導チームは、次の作業を行う担当者を決めます。
+2. 組織の指導チームが、次の作業の担当者を決定します。
     - ユーザー ID の管理。ご自身の組織の Azure アカウントの作成時に [Azure AD テナント](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)が既定で作成されます。アカウント管理者は、[Azure AD グローバル管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)として既定で追加されます。 ご自身の組織がユーザー ID 管理の担当者として別のユーザーを選択するには、[そのユーザーに Azure AD グローバル管理者ロールを割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)ます。
     - サブスクリプション。これらのユーザーは次を行います。
         - そのサブスクリプション内のリソース使用状況に関連付けられたコストを管理します。
@@ -261,7 +261,7 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
 6. **ワークロード所有者**の承認プロセスを作成して、リソース グループの作成を要求します。 承認プロセスは、さまざまな方法で実装できます。たとえば、電子メールや、[SharePoint ワークフロー](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3)などのプロセス管理ツールを使用できます。 承認プロセスでは、次の手順に従うことができます。
     - **ワークロード所有者**は、**開発**環境、**運用**環境、またはその両方で、必要な Azure リソースの部品表を準備して、**サブスクリプション所有者**に送信します。
     - **サブスクリプション所有者**は部品表を確認し、要求されたリソースを検証して、そのリソースが計画的な使用に適していることを確かめます。たとえば、要求された[仮想マシンのサイズ](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)が正しいことをチェックします。
-    - 要求が承認されなかった場合は、**ワークロード所有者**に通知されます。 要求が承認された場合、**サブスクリプション所有者**は、自分の組織の[名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)に従って[要求されたリソース グループを作成](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)し、[**共同作成者**ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)と共に[**ワークロード所有者**を追加](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)して、リソース グループが作成されたことを**ワークロード所有者**に通知します。
+    - 要求が承認されなかった場合は、**ワークロード所有者**に通知されます。 要求が承認された場合、**サブスクリプション所有者**は、自分の組織の[名前付け規則](../../ready/azure-best-practices/naming-and-tagging.md)に従って[要求されたリソース グループを作成](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)し、[**共同作成者**ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)と共に[**ワークロード所有者**を追加](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)して、リソース グループが作成されたことを**ワークロード所有者**に通知します。
 7. ワークロード所有者の承認プロセスを作成して、仮想ネットワーク ピアリング接続を共有インフラストラクチャ所有者に要求します。 前の手順と同様に、この承認プロセスは、電子メールまたはプロセス管理ツールを使用して実装できます。
 
 ガバナンス モデルが実装されたので、共有インフラストラクチャ サービスをデプロイできます。

@@ -4,16 +4,16 @@ description: 企業の既存の IT ポリシーを最新化して、クラウド
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4235830eee8e57581214f3eabb46c32ebcf975b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 244444057561118c2e3f2b7a574bfdfb529f0978
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709126"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997406"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "77709126"
 
 ## <a name="why-perform-a-cloud-policy-review"></a>クラウド ポリシーの確認を行う理由
 
-ほとんどの企業は、管理ポリシーと整合するプロセスの実行を通じて IT を管理しています。 小規模な企業では、それらのポリシーは根拠があいまいで、プロセスが大まかに定義されている場合があります。 ビジネスが大企業へと成長するにつれ、ポリシーとプロセスはより明確に文書化され、一貫して実行される傾向があります。
+ほとんどの企業は、管理ポリシーと整合するプロセスの実行を通して IT を管理しています。 小規模な企業では、それらのポリシーは根拠があいまいで、プロセスが大まかに定義されている場合があります。 ビジネスが大企業へと成長するにつれ、ポリシーとプロセスはより明確に文書化され、一貫して実行される傾向があります。
 
 企業において企業 IT ポリシーが成熟するにつれ、過去の技術的な決定への依存が管理ポリシーに組み込まれていく傾向があります。 たとえば、ディザスター リカバリーのプロセスにオフサイトのテープ バックアップを義務付けるポリシーが含まれていることがよくあります。 これを含めることは、1 つのタイプのテクノロジ (テープ バックアップ) への依存が前提となりますが、そのタイプは最適なソリューションではなくなっている場合があります。
 

@@ -4,17 +4,17 @@ description: Azure 向けのクラウド導入フレームワークを使用し�
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b220929fd6348909b8f06f7a537e1052c459d24d
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 99f4b2ec0a9a92c9f919a005667558ebc2a036c6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312120"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80998030"
 ---
 <!-- cSpell:ignore bandersmsft -->
 
@@ -42,7 +42,7 @@ ms.locfileid: "79312120"
 
 ## <a name="cost-calculators"></a>コスト計算ツール
 
-手動のコスト計算の場合は、移行されるワークロードのアーキテクチャに基づいて迅速なコスト見積もりを提供できる 2 つの便利な計算ツールが存在します。
+手動のコスト計算については、移行されるワークロードのアーキテクチャに基づいて迅速なコスト見積もりを提供できる便利な計算ツールが 2 つ存在します。
 
 - Azure [料金計算ツール](https://azure.microsoft.com/pricing/calculator)は、手動で入力された Azure 製品に基づいてコスト見積もりを提供します。
 - 決定のために、将来のクラウド コストと現在のオンプレミス コストの比較が必要になる場合があります。 [総保有コスト (TCO) 計算ツール](https://azure.microsoft.com/pricing/tco/calculator)は、このような比較を提供できます。
@@ -111,7 +111,7 @@ Azure Cost Management は、消費習慣のより総合的なビュー (コス�
 
 # <a name="tips-and-tricks-to-optimize-costs"></a>[コストを最適化するためのヒントとコツ](#tab/TipsTricks)
 
-この記事で説明されているツールに加えて、全体的なクラウド コストを急速に削減するために役立ついくつかのヒントとコツがあります。 知っておく必要があるいくつかの高レベルのヒントを次に示します。
+この記事で説明されているツールに加えて、全体としてのクラウド コストをすばやく削減するのに役立ついくつかのヒントとコツがあります。 知っておく必要があるいくつかの高レベルのヒントを次に示します。
 
 ## <a name="avoid-unnecessary-spending"></a>不必要な消費を避ける
 

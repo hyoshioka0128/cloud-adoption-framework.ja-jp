@@ -4,16 +4,16 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: rotycenh
 ms.author: abuck
 ms.date: 02/11/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a52615d5b43f7fdd196bcfd473c1aa3fe43d005
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 36c9b9cc749f1feddff64c64717849fe5dfbe3b9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225787"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996101"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>ソフトウェア定義ネットワーク:ハブ アンド スポーク
 
@@ -26,7 +26,7 @@ ms.locfileid: "80225787"
 このモデルは、次の懸念事項に対処することを目的としています。
 
 - **コストの削減と管理の効率。** 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は複数のワークロードにわたって過剰なリソースと管理作業を最小限にすることができます。
-- **サブスクリプションの制限の克服。** 大規模なクラウド ベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります ([サブスクリプションの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits)をご覧ください)。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。
+- **サブスクリプションの制限の克服。** 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure のネットワークの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits)に関するページをご覧ください。
 - **懸念事項の分離。** 中央の IT チームとワークロード チームの間で個々 のワークロードをデプロイする機能。
 
 次の図は、集中管理されたハイブリッド接続を含むハブ アンド スポークのアーキテクチャの例を示しています。

@@ -4,20 +4,20 @@ description: クラウド ガバナンスに影響を与える可能性がある
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e5cfa035efe2fd3dd45b29edec53bfff2c7914f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 22e74aabc56ae25d0448bf321c645449e4989668
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709381"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809126"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>規制コンプライアンスの概要
 
-これは規制コンプライアンスについての入門記事であり、したがってコンプライアンス戦略の実装については触れられていません。 [Azure のコンプライアンス認証](https://aka.ms/allcompliance)の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx) をご覧ください。 さらに、Azure の特定のお客様は、[Microsoft Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
+これは規制コンプライアンスについての入門記事であり、したがってコンプライアンス戦略の実装については触れられていません。 [Azure のコンプライアンス認証](https://aka.ms/allcompliance)の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trust-center) をご覧ください。 さらに、Azure の特定のお客様は、[Microsoft Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
 
 規制コンプライアンスとは、地域の行政機関によって施行される法律、または自主的に採択された業界標準で要求されている規則に企業が従うことを保証するための規範とプロセスのことです。 IT 規制コンプライアンスの場合、ユーザーやプロセスが企業システムを監視し、これらの準拠法、規制、標準によって確立されたポリシーや手順への違反を検出して防ぎます。 これはさらに、幅広い監視と強制のプロセスに適用されます。 業界や地域によっては、長くて複雑なプロセスになることがあります。
 
@@ -49,7 +49,7 @@ Payment Card Industry Data Security Standard (PCI DSS) は、Visa、MasterCard�
 
 Azure のコンプライアンス認証は、独立したサードパーティの監査企業による正式な認証、証明、検証、承認、および評価の他に、Microsoft による契約の修正、自己評価、顧客向けのガイダンス ドキュメントを含むさまざまな種類の保証に基づいています。 このドキュメントでの各認証の説明では、評価の対象になる顧客向けのサービス、および顧客による独自のコンプライアンスへの順守を支援するダウンロード可能なリソースへのリンクを示す、最新の範囲のステートメントが提供されています。
 
-Azure のコンプライアンス認証の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trustcenter/compliance/complianceofferings) をご覧ください。 さらに、Azure の特定のお客様は、次のセクションで [Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
+Microsoft Trust Center では、[Azure のコンプライアンス認証の詳細](https://www.microsoft.com/trust-center/compliance/compliance-overview)をご確認いただけます。 さらに、Azure の特定のお客様は、次のセクションで [Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
 
 - **監査レポート:** FedRAMP、GRC 評価、ISO、PCI DSS、および SOC レポートのセクションが含まれます。
 - **データ保護リソース:** コンプライアンス ガイド、FAQ とホワイト ペーパー、および侵入テストとセキュリティ評価のセクションが含まれます。
