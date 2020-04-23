@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 33c26a266cb1bbb428fb54f8e5ccbd242f75e1f6
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 7fa525ae5a2f0a7fe6d2075cd13d2bc9a1b08713
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434925"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996464"
 ---
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 
@@ -121,9 +121,9 @@ Bring Your Own Key アプローチでは、オンプレミス環境内の専用 
 
 Azure での暗号化とキー管理の詳細については、以下を参照してください。
 
-- 「[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)」。 Azure で暗号化を使用して保存データと転送中のデータの両方が保護される方法について詳細に説明されています。
+- 「[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)」。 Azure で暗号化を使用して保存データと転送中のデータの両方が保護される方法について詳細に説明されています。
 - [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview)。 Key Vault は、Azure 内の暗号化キー、シークレット、証明書を格納および管理するための主要なキー管理システムです。
-- [Azure のデータ セキュリティと暗号化のベスト プラクティス](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices)。 Azure のデータ セキュリティと暗号化のベスト プラクティスの説明。
+- [Azure のデータ セキュリティと暗号化のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)。 Azure のデータ セキュリティと暗号化のベスト プラクティスの説明。
 - 「[Confidential computing in Azure (Azure での Confidential Computing)](https://azure.microsoft.com/solutions/confidential-compute)」。 Azure の Confidential Computing イニシアチブでは、信頼できる実行環境または使用中のデータを保護するための他の暗号化メカニズムを作成するためのツールとテクノロジが提供されます。
 
 ## <a name="next-steps"></a>次のステップ

@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f078f3fb989c6db9ca14371c2fadd17805d4d3a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 0d83ccc83397153619bc7ca99881c6a2775ab1a3
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432273"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120692"
 ---
-# <a name="optimize-migrated-workloads"></a>移行されたワークロードの最適化
+# <a name="release-workloads"></a>ワークロードのリリース
 
-ワークロードとそれがサポートしている資産をクラウドに移行した後、本番環境に昇格させる前に準備を行う必要があります。 このプロセスには、移行されたクラウドベースのワークロードが本番環境での使用を開始する際のワークロードの準備、依存する資産のサイズ設定、およびビジネスの準備というアクティビティがあります。
+ワークロードのコレクションとそれをサポートしている資産をクラウドに移行した後は、リリースする前に準備を行う必要があります。 移行作業のこのフェーズでは、ワークロードのコレクションに対して負荷テストとビジネス テストを行います。 その後、それらを最適化して文書化します。 ビジネス チームと IT チームがワークロードのデプロイを確認してサイン オフすると、それらのワークロードをリリース、つまり継続的な運用のためにガバナンス チーム、セキュリティ チーム、運用チームに渡すことができます。
 
-最適化の目標は、移行されたワークロードを本番環境での使用に昇格させるための準備を行うことです。
+"ワークロードのリリース" の目標は、移行されたワークロードを運用環境での使用に昇格させるための準備を行うことです。
 
 ## <a name="definition-of-done"></a>"*完了*" の定義
 

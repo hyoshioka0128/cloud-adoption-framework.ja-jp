@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: cc095a1751e945ca18763757582a6cd27b65d72a
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527675"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119760"
 ---
-# <a name="validate-assessment-assumptions-before-migration"></a>移行前に評価の前提条件を検証する
+# <a name="assess-workloads-and-validate-assumptions-before-migration"></a>移行前にワークロードを評価して前提条件を検証する
 
 既存のワークロードの多くは、クラウドへの適切な移行候補ですが、すべての資産がクラウド プラットフォームと互換性があるわけではなく、すべてのワークロードがクラウドでのホスティングからメリットを得られるわけではありません。 [デジタル資産計画](../../../digital-estate/index.md)によって、移行できる可能性があるワークロードの総合的な[移行バックログ](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing)を作成できます。 ただし、この計画は概要計画です。 それは、クラウド戦略チームによる前提条件に依存しており、技術的な考慮事項については深く掘り下げていません。
 

@@ -8,22 +8,35 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cda5b1ee78dd3cf0a67fa6207835b52522e5405c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 7d59f446966d853e29fc5c44bbc2da44cba114c2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431426"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396101"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 
-デプロイが単純なものでない限り、クラウドベースのリソースの整理は、IT 部門にとって最も重要なタスクの 1 つです。 リソースを編成する目的は、主に次の 3 つです。
+デプロイが単純なものでない限り、クラウドベースのリソースの整理は IT 部門にとって重要なタスクです。 次の目的のために、名前付けとタグ付けの標準を使用してリソースを整理します。
 
 - **リソース管理:** IT チームは、特定のワークロード、環境、所有権グループ、またはその他の重要な情報に関連付けられているリソースをすばやく見つける必要があります。 リソースの整理は、リソース管理に組織のロールとアクセス許可を割り当てるために不可欠です。
+- **コスト管理と最適化:** ビジネス グループにクラウド リソースの消費量を認識してもらうために、IT 部門は、各チームが使用しているリソースとワークロードを把握する必要があります。 次のトピックがコスト関連のタグでサポートされています。
+
+  - [クラウド会計モデル](../../strategy/cloud-accounting.md)
+  - [ROI の計算](../../strategy/financial-models.md#return-on-investment)
+  - [コスト管理](../../ready/azure-best-practices/track-costs.md)
+  - [予算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+  - [警告](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+  - [定期的な支出の追跡とレポート](../../govern/cost-management/compliance-processes.md)
+  - [実装後の最適化](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
+  - [コスト最適化戦術](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
+- **運用管理:** 運用管理チームにとって、ビジネス コミットメントや SLA に対する可視性は、継続的な運用を行ううえで重要な側面です。 適切に管理するためには、[ミッション クリティカル度](../../manage/considerations/criticality.md)のタグ付けが必要です。
+- **セキュリティ:** データとセキュリティへの影響を分類することは、違反や他のセキュリティの問題が発生したときに、チームにとって重要なデータ ポイントです。 安全に運用するには、[データ分類](../../govern/policy-compliance/data-classification.md)のタグ付けが必要です。
+- **ガバナンスと規制に対するコンプライアンス:** リソース間の一貫性を維持することで、取り決められたポリシーとのずれを特定するのに役立ちます。 [このガバナンスの基礎に関する記事](../../govern/guides/complex/prescriptive-guidance.md#resource-tagging)では、ガバナンス プラクティスを展開するときに以下のいずれかのパターンがどのように役立つかを示します。 タグを使用して規制コンプライアンスを評価するのに類似のパターンを利用できます。
 - **自動化:** 適切な方法で編成すると、IT 部門によるリソースの管理が簡単になるだけでなく、リソースの作成、運用の監視、および DevOps プロセスの作成の一部としてオートメーションを利用できるようになります。
-- **会計:** ビジネス グループにクラウド リソースの消費量を認識させるため、IT 部門は、どのワークロードとチームがどのリソースを使用しているかを把握する必要があります。 チャージバックやショーバック アカウンティングなどの手法をサポートするには、所有権と使用状況を反映するようにクラウド リソースを編成する必要があります。
+- **ワークロードの最適化:** タグ付けは、パターンを特定し、広範な問題を解決するのに役立ちます。 また、タグは 1 つのワークロードをサポートするのに必要な資産を特定するのにも役立ちます。 各ワークロードに関連付けられているすべての資産にタグを付けることで、ミッション クリティカルなワークロードをより詳しく分析して、適切なアーキテクチャを決めることができます。
 
 ## <a name="tagging-decision-guide"></a>タグ付け決定ガイド
 
@@ -33,7 +46,7 @@ ms.locfileid: "80431426"
 
 タグ付けアプローチは、クラウド ワークロードを管理する IT チームのサポートから、ビジネス全体のすべての側面に関連する情報の統合までの範囲の何に注目するかによって、簡単にも複雑にもなります。
 
-ワークロード、機能、または環境に基づくタグ付けのように、IT に合わせることに注目したタグ付けでは、資産を監視する複雑さは軽減され、機能と分類に基づく管理の決定ははるかに簡単になります。
+ワークロード、アプリケーション、機能、または環境に基づくタグ付けのように、IT に合わせることに注目したタグ付けでは、資産を監視する複雑さは軽減され、機能と分類に基づく管理の決定が簡単になります。
 
 会計、企業形態、ビジネス上の重要度など、ビジネスに合わせることに注目したタグ付けスキームでは、ビジネスの関心が反映されたタグ付け標準を作成し、そのような標準を長期間維持するために、より多くの時間をかけることが必要になる場合があります。 ただし、このプロセスの結果として作成されるタグ付けシステムでは、ビジネス全体に対する IT 資産のコストと価値を考慮する機能が向上します。 資産の事業価値とその運用コストのこのような関連付けは、より幅広い組織内での IT のコスト センターとしての認識を変える最初のステップの 1 つです。
 
@@ -41,13 +54,14 @@ ms.locfileid: "80431426"
 
 標準化された名前付け規則は、クラウドでホストされるリソースを編成するための開始点です。 適切な構造の名前付けシステムを作成すると、管理とアカウンティング両方の目的でリソースをすばやく識別できるようになります。 組織の他の部分に IT 名前付け規則が既にある場合は、クラウドの名前付け規則をそれらに揃えるかどうか、またはクラウドベースの標準を別に確立する必要があるかを検討します。
 
-Azure リソースの種類によって[名前付けの要件](../../ready/azure-best-practices/naming-and-tagging.md)が異なることにも注意してください。 名前付け規則は、これらの名前付け要件に対応している必要があります。
+> [!NOTE]
+> [名前付け規則と制限事項](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)は Azure リソースごとに変わります。 名前付け規則は、これらの規則に従っている必要があります。
 
 ## <a name="resource-tagging-patterns"></a>リソース タグ付けのパターン
 
 一貫した名前付け規則だけで提供できるものより高度な組織のために、クラウド プラットフォームではリソースのタグ付けの機能がサポートされています。
 
-"*タグ*" は、リソースにアタッチされているメタデータ要素です。 タグは、キー/値の文字列のペアで構成されます。 これらのペアに含める値はユーザー次第ですが、包括的な名前付けとタグ付けのポリシーの一部として、一貫性のあるグローバルなタグのセットを適用することは、全体的なガバナンス ポリシーの重要な部分です。
+タグは、リソースにアタッチされているメタデータ要素です。 タグは、キー/値の文字列のペアで構成されます。 これらのペアに含める値はユーザー次第ですが、包括的な名前付けとタグ付けのポリシーの一部として、一貫性のあるグローバルなタグのセットを適用することは、全体的なガバナンス ポリシーの重要な部分です。
 
 計画プロセスの一環として、次の質問を使用して、リソース タグでサポートする必要がある情報の種類を判断してください。
 
@@ -64,7 +78,7 @@ Azure リソースの種類によって[名前付けの要件](../../ready/azure
 |-----|-----|-----|
 | 機能            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します。                                 |
 | 分類        | confidentiality=private<br/>sla = 24hours                                 | 使用方法および適用されるポリシーによって、リソースを分類します                               |
-| 会計            | department = finance <br/>project = catalogsearch <br/>region = northamerica | 課金を目的として、組織内の特定のグループにリソースを関連付けることができます |
+| 会計            | department = finance <br/>program = business-initiative <br/>region = northamerica | 課金を目的として、組織内の特定のグループにリソースを関連付けることができます |
 | パートナーシップ           | owner = jsmith <br/>contactalias = catsearchowners<br/>stakeholders = user1;user2;user3<br/>                       | リソースに関連のある、またはそれ以外でリソースによって影響を受けるユーザー (IT 外) に関する情報を提供します                      |
 | 目的               | businessprocess=support<br/>businessimpact=moderate<br/>revenueimpact=high   | 投資に関する決定のサポートを向上させるため、リソースをビジネス機能と一致させます  |
 
@@ -74,7 +88,7 @@ Azure リソースの種類によって[名前付けの要件](../../ready/azure
 
 Azure での名前付けとタグ付けに関する詳細については、以下を参照してください。
 
-- [Azure リソースの名前付け規則](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)。 Azure リソースの推奨される名前付け規則については、次のガイダンスを参照してください。
+- [Azure リソースの名前付け規則](../../ready/azure-best-practices/naming-and-tagging.md)。 Azure リソースの推奨される名前付け規則については、次のガイダンスを参照してください。
 - [タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)。 Azure ではリソース グループと個々のリソースの両方のレベルでタグを適用でき、適用されたタグに基づいて柔軟な詳細さでアカウンティング レポートを作成できます。
 
 ## <a name="next-steps"></a>次のステップ
