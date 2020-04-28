@@ -4,15 +4,15 @@ description: クラウド変換と増分ガバナンスのために最高情報�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: dc82f4d8ad21bcbb9d36b00fbdad1f91d6d4ec2c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 84bb47e05086ba0921a189d96d20c76a1ab5b057
+ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356950"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81646822"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -40,36 +40,35 @@ ms.locfileid: "80356950"
 
 成長の思考様式で[ポリシー レビュー](./cloud-policy-review.md)に取り掛かるためには、クラウドに関する知識が必須です。 以下のリソースは、CISO が Microsoft の Azure プラットフォームのセキュリティ体制をより深く理解するのに役立ちます。
 
-セキュリティ プラットフォームのリソース:
+**セキュリティ プラットフォームのリソース:**
 
 - [セキュリティ開発ライフサイクル、内部監査](https://www.microsoft.com/sdl)
 - [必須のセキュリティ トレーニング、バックグラウンド チェック](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
-- [侵入テスト、不正侵入検出、DDoS、監査、ログ記録](https://www.microsoft.com/trustcenter/Security/AuditingAndLogging)
+- [侵入テスト、不正侵入検出、DDoS、監査、ログ記録](https://www.microsoft.com/security/business/operations)
 - [最新のデータ センター](https://www.microsoft.com/cloud-platform/global-datacenters)、物理的なセキュリティ、[セキュリティで保護されたネットワーク](https://docs.microsoft.com/azure/security/security-network-overview)
-- [クラウドにおける Microsoft Azure のセキュリティ対応に関する資料 (PDF)](https://aka.ms/SecurityResponsePaper)
+- [クラウドにおける Microsoft Azure のセキュリティ対応に関する資料 (PDF)](https://aka.ms/securityresponsepaper)
 
-プライバシーと管理:
+**プライバシーと管理:**
 
-- [データの常時管理](https://www.microsoft.com/trustcenter/Privacy/You-own-your-data)
-- [データ保管場所の管理](https://www.microsoft.com/trustcenter/Privacy/Where-your-data-is-located)
-- [条件に応じたアクセス権の付与](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [法執行機関への対応](https://www.microsoft.com/trustcenter/Privacy/Responding-to-govt-agency-requests-for-customer-data)
-- [厳格なプライバシー基準](https://www.microsoft.com/TrustCenter/Privacy/We-set-and-adhere-to-stringent-standards)
+- [データの常時管理](https://www.microsoft.com/trust-center/privacy/data-management)
+- [データ保管場所の管理](https://www.microsoft.com/trust-center/privacy/data-location)
+- [条件に応じたアクセス権の付与](https://www.microsoft.com/trust-center/privacy/data-access)
+- [法執行機関への対応](https://www.microsoft.com/trust-center/privacy)
+- [厳格なプライバシー基準](https://www.microsoft.com/trust-center/privacy)
 
-コンプライアンス:
+**コンプライアンス:**
 
-- [Microsoft セキュリティ センター](https://www.microsoft.com/trustcenter/default.aspx)
-- [共通管理ハブ](https://www.microsoft.com/trustcenter/Common-Controls-Hub)
-- [クラウド サービス デュー デリジェンス チェック リスト](https://www.microsoft.com/trustcenter/Compliance/Due-Diligence-Checklist)
-- [サービス、場所、および業界ごとのコンプライアンス](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
+- [Microsoft セキュリティ センター](https://www.microsoft.com/trust-center)
+- [共通管理ハブ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [クラウド サービス デュー デリジェンス チェック リスト](https://www.microsoft.com/trust-center/compliance/due-diligence-checklist)
+- [地域と国のコンプライアンス](https://www.microsoft.com/trust-center/compliance/regional-country-compliance)
 
-透明性:
+**透明性:**
 
-- [Microsoft が Azure サービスで顧客データの安全性を確保する方法](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
+- [Microsoft が Azure サービスで顧客データの安全性を確保する方法](https://www.microsoft.com/trust-center)
 - [Microsoft が Azure サービスでデータの保管場所を管理する方法](https://azuredatacentermap.azurewebsites.net)
-- [データにアクセスできるユーザーとその条件](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [Microsoft が Azure サービスで顧客データの安全性を確保する方法](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
-- [Azure サービスの証明書確認、Transparency Hub](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
+- [データにアクセスできるユーザーとその条件](https://www.microsoft.com/trust-center/privacy/data-access)
+- [Azure サービスの証明書確認、Transparency Hub](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="next-steps"></a>次のステップ
 
