@@ -3,16 +3,16 @@ title: クラウド監視のためのスキルの準備
 description: クラウド監視のためのスキルの準備
 author: BrianBlanchard
 ms.author: magoedte
-ms.date: 03/23/2020
+ms.date: 05/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe76729b4a845d71629d7d24d4bdd3110fa6ab9a
+ms.sourcegitcommit: 5058bc57cb53701ac409959b46767ae6fd56ba93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120541"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82861437"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -37,13 +37,13 @@ ms.locfileid: "81120541"
 
 - [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) を使用して、アプリケーションとサービスの可用性とパフォーマンスを 1 か所で確認する方法についてご覧ください。 Pluralsight には、役に立つ次のコースが用意されています。
 
-  - 「[Microsoft Azure IaaS の監視と管理](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started)」で、Azure Monitor を使用して IaaS で実行されるワークロードの基本的な監視を実行する方法について学習できます。
-
-  - 「[Microsoft Azure リソースとワークロードの監視](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring)」では、Microsoft Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスのリソースを監視する方法について学習できます。
+  - 「[Microsoft Azure リソースとワークロードの監視](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents)」では、Microsoft Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスのリソースを監視する方法について学習できます。
 
   - 「[Microsoft Azure DevOps エンジニア:フィードバック メカニズムの最適化](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms)」の支援により、Application Insights および Log Analytics を含む Azure Monitor を使用して Web アプリケーションの監視と最適化を準備できます。
 
   - 「[Microsoft Azure のデータベース監視に関するプレイブック](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring)」では、Azure SQL Database、Azure SQL Data Warehouse、および Azure Cosmos DB の監視を実装して使用する方法について学習できます。
+
+  - 「[Azure Monitor Application Insights を使用したアプリケーションのインストルメント化](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument)」では、Application Insights SDK を使用して、Angular と Node.js コンポーネントを使用するアプリからテレメトリとイベントを収集する方法について詳しく説明します。
 
 - [Azure Arc for servers](https://docs.microsoft.com/azure/azure-arc/servers/overview) に関する記事では、Azure の外部でホストされている Windows および Linux マシンをネイティブの Azure 仮想マシンと同じように管理できる方法について説明しています。
 
