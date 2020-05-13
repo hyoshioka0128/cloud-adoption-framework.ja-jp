@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bc14bb03f048ab335cd836c6a4a520b8df0ccad8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c310bb6bf7bf2054f315d80c5bddf75871edef09
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997970"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223067"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -59,10 +59,10 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 | すべてのドメイン ニーズに対して超高速の DNS 応答と超高可用性を確保したいと考えています。 | [Azure DNS](https://docs.microsoft.com/azure/dns) |
 | アプリケーションや格納されたコンテンツからストリーミング ビデオまで、高帯域幅コンテンツの世界中の顧客への配信を高速化する必要があります。 | [Azure Content Delivery Network](https://docs.microsoft.com/azure/cdn) |
 | Azure アプリケーションを DDoS 攻撃から保護する必要があります。 | [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) |
-| トラフィックをグローバル Azure リージョンにまたがるサービスに最適に分散させながら、高可用性と応答性を提供する必要があります。 | [Azure の Traffic Manager](https://docs.microsoft.com/azure/traffic-manager)<br/>[Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| トラフィックをグローバル Azure リージョンにまたがるサービスに最適に分散させながら、高可用性と応答性を提供する必要があります。 | [Azure の Traffic Manager](https://docs.microsoft.com/azure/traffic-manager) <br><br> [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
 | Microsoft のクラウド サービスがオンプレミスの独自のデータセンターに存在するかのように、企業ネットワークからそれらのサービスにアクセスするプライベート ネットワーク接続を追加する必要があります。 | [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute) |
 | 状態をネットワーク シナリオのレベルで監視および診断したいと考えています。 | [Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher) |
-| 組み込みの高可用性、無制限のクラウド スケーラビリティ、およびメンテナンス不要を備えたネイティブなファイアウォール機能が必要です。 | [Azure Firewall](https://docs.microsoft.com/azure/firewall) |
+| 組み込みの高可用性、無制限のクラウド スケーラビリティ、およびメンテナンス不要を備えたネイティブなファイアウォール機能が必要です。 | [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) |
 | ビジネス オフィス、小売の場所、およびサイトを安全に接続する必要があります。 | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan) |
 | グローバルなマイクロサービス ベースの Web アプリケーションのためのスケーラブルで、かつセキュリティが強化された配信ポイントが必要です。 | [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
 
@@ -74,14 +74,17 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 次の表は、これらのパターンでサポートされる主なシナリオをまとめたものです。
 
-| **シナリオ**                                                                                                                                                                                                                                                                                                                        | **推奨されるネットワーク アーキテクチャ**                                                  |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| ランディング ゾーンにデプロイされた Azure でホストされるワークロードはすべて完全に PaaS ベースであり、仮想ネットワークを必要とせず、また IaaS リソースを含むより広範囲なクラウド導入作業の一部でもありません。                                                                                                                        | [PaaS のみ](../../decision-guides/software-defined-network/paas-only.md)            |
-| Azure でホストされるワークロードは、仮想マシンなどの IaaS ベースのリソースをデプロイするか、そうでない場合は仮想ネットワークを必要としますが、オンプレミス環境への接続は必要ありません。                                                                                                                                          | [クラウドネイティブ](../../decision-guides/software-defined-network/cloud-native.md)      |
-| Azure でホストされるワークロードには、オンプレミス リソースへの制限付きアクセスが必要ですが、クラウド接続を信頼できないものとして扱う必要があります。                                                                                                                                                                                           | [クラウド DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |
-| Azure でホストされるワークロードでは、オンプレミス リソースへのアクセスに制限が必要であるため、クラウドとオンプレミス環境の間で成熟したセキュリティ ポリシーと安全な接続を実装することを計画します。                                                                                                                         | [ハイブリッド](../../decision-guides/software-defined-network/hybrid.md)                  |
+| **シナリオ**                                                                                                                                                                                                                                                                                                                                                          | **推奨されるネットワーク アーキテクチャ**                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| ランディング ゾーンにデプロイされた Azure でホストされるワークロードはすべて完全に PaaS ベースであり、仮想ネットワークを必要とせず、また IaaS リソースを含むより広範囲なクラウド導入作業の一部でもありません。                                                                                                                                                          | [PaaS のみ](../../decision-guides/software-defined-network/paas-only.md)            |
+| Azure でホストされるワークロードは、仮想マシンなどの IaaS ベースのリソースをデプロイするか、そうでない場合は仮想ネットワークを必要としますが、オンプレミス環境への接続は必要ありません。                                                                                                                                                                            | [クラウドネイティブ](../../decision-guides/software-defined-network/cloud-native.md)      |
+| Azure でホストされるワークロードには、オンプレミス リソースへの制限付きアクセスが必要ですが、クラウド接続を信頼できないものとして扱う必要があります。                                                                                                                                                                                                                             | [クラウド DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |
+| Azure でホストされるワークロードでは、オンプレミス リソースへのアクセスに制限が必要であるため、クラウドとオンプレミス環境の間で成熟したセキュリティ ポリシーと安全な接続を実装することを計画します。                                                                                                                                                           | [ハイブリッド](../../decision-guides/software-defined-network/hybrid.md)                  |
 | [Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超える可能性のある多数の VM とワークロードをデプロイして管理する必要があるか、サブスクリプション間でサービスを共有する必要があるか、またはロール、アプリケーション、アクセス許可の分離のためのよりセグメント化された構造が必要です。 | [ハブ アンド スポーク](../../decision-guides/software-defined-network/hub-spoke.md)        |
-| 互いに接続したり、Azure に接続したりする必要のある多数のブランチ オフィスがあります。                                                                                                                                                                                                                                                       | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| 互いに接続したり、Azure に接続したりする必要のある多数のブランチ オフィスがあります。                                                                                                                                                                                                                                                                                         | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
@@ -97,6 +100,6 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 ネットワーク設計プロセスの一部として、次の記事を参照してください。
 
-- [仮想ネットワークの計画](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 分離、接続、場所の要件に基づいて仮想ネットワークを計画する方法について説明します。
-- [Azure のネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 ネットワーク セキュリティの強化に役立つ Azure のベスト プラクティスについて説明します。
-- [Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)。 IaaS ベースおよび PaaS ベースのワークロードをサポートするために Azure のネットワークを実装する方法に関する追加のガイダンスを入手します。
+- [仮想ネットワークの計画](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 分離、接続、場所の要件に基づいて仮想ネットワークを計画する方法について説明します。
+- [Azure のネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 ネットワーク セキュリティの強化に役立つ Azure のベスト プラクティスについて説明します。
+- [Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 IaaS ベースおよび PaaS ベースのワークロードをサポートするために Azure のネットワークを実装する方法に関する追加のガイダンスを入手します。
