@@ -19,11 +19,11 @@ Azure が提供するいくつかの組み込みのポリシーとロール定�
 
 ガバナンス MVP のサポートに必要なポリシーは、現在のすべてのサブスクリプションに適用されることになっているため、次のビジネス要件は、組み込みの定義とルート管理グループで作成されたカスタム定義を組み合わせて使用し、実装されます。
 
-1. 使用可能なロール割り当てのリストを、クラウド ガバナンス チームが許可した一連の組み込み Azure ロールに制限します。 これには、[カスタム ポリシーの定義](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions)が必要です。
-2. すべてのリソースで次のタグを必須にします。*Department/Billing Unit*、*Geography*、*Data Classification*、*Criticality*、*SLA*、*Environment*、*Application Archetype*、*Application*、および *Application Owner*。 これは、`Require specified tag` 組み込み定義を使用して処理することができます。
+1. 使用可能なロール割り当てのリストを、クラウド ガバナンス チームが許可した一連の組み込み Azure ロールに制限します。 これには、[カスタム ポリシーの定義](https://github.com/azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions)が必要です。
+2. すべてのリソースで次のタグを必須にします。*Department/Billing Unit*、_Geography_、_Data Classification_、_Criticality_、_SLA_、_Environment_、_Application Archetype_、_Application_、および _Application Owner_。 これは、`Require specified tag` 組み込み定義を使用して処理することができます。
 3. リソースの `Application` タグを、関連するリソース グループの名前と一致させる必要があります。 これは、"タグとその値が必要" の組み込みの定義を使用して処理することができます。
 
-カスタム ポリシーの定義については、[Azure Policy のドキュメント](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition)をご覧ください。 カスタム ポリシーのガイダンスおよび例については、[Azure Policy のサンプル サイトに関するページ](https://docs.microsoft.com/azure/governance/policy/samples)、および関連する[GitHub リポジトリに関するページ](https://github.com/Azure/azure-policy)をご覧ください。
+カスタム ポリシーの定義については、[Azure Policy のドキュメント](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition)をご覧ください。 カスタム ポリシーのガイダンスおよび例については、[Azure Policy のサンプル サイトに関するページ](https://docs.microsoft.com/azure/governance/policy/samples)、および関連する[GitHub リポジトリに関するページ](https://github.com/azure/azure-policy)をご覧ください。
 
 #### <a name="assign-azure-policy-and-rbac-roles-using-azure-blueprints"></a>Azure Blueprints を使用して Azure Policy および RBAC ロールを割り当てる
 

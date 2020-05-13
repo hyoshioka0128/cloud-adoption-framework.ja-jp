@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d34a97e24e681732de7d171e7add84a0d5e51281
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe1e6edb7f0c5480a4ae20e639471218ae9805e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426329"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223968"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>クラウドの IT 管理と運用
 
@@ -27,6 +27,8 @@ ms.locfileid: "80426329"
 ## <a name="cloud-management"></a>クラウド管理
 
 この歴史的 IT 運用モデルは 20 年以上十分な能力を発揮しました。 しかしながら、今ではこのモデルは時代遅れとなり、クラウドファーストの代替に比べ、望ましくありません。 IT 管理チームは、クラウドに移行する際に、このモデルについて再考し、企業のためにより大きな価値を引き出す機会を得ます。 この記事シリーズでは、IT 管理の最新モデルについて説明します。
+
+<!-- cSpell:ignore caf -->
 
 ![クラウド導入フレームワークの管理手法](../../_images/manage/caf-manage.png)
 

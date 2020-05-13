@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 115b79d41c4f7d0c2c9b27db0d42b61e1ee45dee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6325e577453598bee8092ee3ba49c6dc1057c9e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119687"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214227"
 ---
 # <a name="deploy-workloads"></a>ワークロードのデプロイ
 
@@ -22,11 +22,11 @@ ms.locfileid: "81119687"
 
 移行の目的は、単一のワークロードをクラウドに移行することです。
 
-## <a name="definition-of-done"></a>"*完了*" の定義
+## <a name="definition-of-_done_"></a>"_完了_" の定義
 
 移行フェーズは、ワークロードとワークロードを機能させるために必要なすべての依存する資産がステージングされ、クラウドでテストする準備が整ったときに完了します。 ワークロードを本番環境で使用するための準備は、最適化プロセスで実行されます。
 
-この "*完了*" の定義は、テスト プロセスとリリース プロセスに応じて変化する可能性があります。 このシリーズの次の記事に[昇格モデルの決定](./promotion-models.md)についての説明があり、移行されたワークロードを本番環境に昇格させる最適な時機を理解するのに役立ちます。
+この "_完了_" の定義は、テスト プロセスとリリース プロセスに応じて変化する可能性があります。 このシリーズの次の記事に[昇格モデルの決定](./promotion-models.md)についての説明があり、移行されたワークロードを本番環境に昇格させる最適な時機を理解するのに役立ちます。
 
 ## <a name="accountability-during-migration"></a>移行中の説明責任
 
