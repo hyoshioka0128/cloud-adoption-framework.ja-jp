@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 166c938b510959427a30cecea1c97de35032d20e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 97008960de4eecb7ff0dc4f756ad4ca11865c634
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426997"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224053"
 ---
 ::: zone target="docs"
 
@@ -32,11 +32,11 @@ ms.locfileid: "80426997"
 
 次の表は、実装のニーズに基づいて最適なソリューションを見つけるうえで役立ちます。
 
-|サービス  |事前構築済みのモデル  |ビルドと実験  |Python でのトレーニングと構築|必要なスキル|
-|---------|---------|---------|---------|---------|
-|Azure Cognitive Services|はい|いいえ|いいえ|API と開発者のスキル|
-|Azure Machine Learning Studio|はい|はい|いいえ|予測アルゴリズムに関する一般的な知識|
-|Azure Machine Learning サービス|はい|はい|はい|データ サイエンティスト|
+| サービス | 事前構築済みのモデル | ビルドと実験 | Python でのトレーニングと構築 | 必要なスキル |
+|---|---|---|---|---|
+| Azure Cognitive Services | はい | いいえ | いいえ | API と開発者のスキル |
+| Azure Machine Learning Studio | はい | はい | いいえ | 予測アルゴリズムに関する一般的な知識 |
+| Azure Machine Learning サービス | はい | はい | はい | データ サイエンティスト |
 
 ## <a name="azure-cognitive-services"></a>[Azure Cognitive Services](#tab/CognitiveServices)
 
@@ -48,7 +48,7 @@ ms.locfileid: "80426997"
 
 Cognitive Services API を使用するには、次の手順に従います。
 
-1. [Azure portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts) で **[Cognitive Services]** に移動します。
+1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts) で **[Cognitive Services]** に移動します。
 2. **[追加]** を選択して、Azure Marketplace で Cognitive Service API を探します。
 3. 以下のいずれかを実行します。
    - 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** ボックスに名前を入力します。
@@ -56,11 +56,7 @@ Cognitive Services API を使用するには、次の手順に従います。
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts]" submitText="Go to Cognitive Services" :::
-
-<!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
 
