@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 54a2892ed657c08ee6c984798a61c1ff10716257
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120552"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219752"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "81120552"
 
 「[顧客への影響を測定する](./measure.md)」で説明するように、仮説の有益な検証には反復と決断が必要になります。 イノベーション サイクル中は、成功よりも失敗の方がはるかに多いでしょう。 これは予期されることです。 ただし、顧客のニーズ、仮説、ソリューションを大規模に調整すると、世界はすぐに変わります。 この記事は、イノベーションを失速させる[技術的スパイク](./build.md#reduce-complexity-and-delay-technical-spikes)を最小限に抑えながら、信頼性の高いベスト プラクティスを維持できるようにすることを目的としています。 これにより、チームは顧客の現在のニーズに対応しながら、将来の成功に向けて設計を行うことができます。
 
-## <a name="empowering-adoption-the-maturity-model"></a>導入の強化: 成熟度モデル
+## <a name="empower-adoption-the-maturity-model"></a>導入の強化: 成熟度モデル
 
 [イノベーションの方法論](./index.md)の主な目的は、顧客パートナーシップを構築し、フィードバック ループを加速させることです。これにより、市場のイノベーションが実現します。 次の図および以降のセクションでは、この方法論をサポートする初期実装について説明しています。
 
@@ -92,7 +92,7 @@ MVP ソリューションの初期の反復期間には、欠陥が想定され�
 
 ## <a name="integrated-measurements"></a>統合された測定
 
-[顧客への影響を測定する](./measure.md)ときは、ソリューションの変更に対する顧客の反応を理解することが重要です。 "*テレメトリ*" と呼ばれるこのデータでは、ユーザー (またはユーザーのコーホート) がソリューションの使用時に行ったアクションに関する分析情報が提供されます。 このデータから、仮説の定量的な検証を簡単に取得できます。 これらのメトリックを使用して、ソリューションを調整し、より詳細な仮説を生成できます。 これらの微妙な変更により、初期ソリューションがその後の反復でさらに成熟し、最終的に大規模な導入を繰り返すことができます。
+[顧客への影響を測定する](./measure.md)ときは、ソリューションの変更に対する顧客の反応を理解することが重要です。 "_テレメトリ_" と呼ばれるこのデータでは、ユーザー (またはユーザーのコーホート) がソリューションの使用時に行ったアクションに関する分析情報が提供されます。 このデータから、仮説の定量的な検証を簡単に取得できます。 これらのメトリックを使用して、ソリューションを調整し、より詳細な仮説を生成できます。 これらの微妙な変更により、初期ソリューションがその後の反復でさらに成熟し、最終的に大規模な導入を繰り返すことができます。
 
 Azure では、[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) に、カスタマー エクスペリエンスからデータを収集して確認するためのツールとインターフェイスが用意されています。 これらの観測と分析情報を適用して、[Azure Boards](https://docs.microsoft.com/azure/devops/boards) でバックログを調整できます。
 
