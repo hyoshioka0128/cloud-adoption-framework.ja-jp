@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8cc66b6995cf9221c81254974196c7839313045a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1d6d9569ab95705cd1058af74cf448283f1a2eef
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429361"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216114"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>移行前に資産を修復する
 
-移行の評価プロセス中、チームは、資産と選択したクラウド プロバイダーが非互換になるような構成を特定しようとします。 *修復*は、それらの非互換性が解決したことを確実にするための、移行プロセスにおけるチェックポイントです。 この記事では、参考のためにいくつかの一般的な修復タスクについて説明します。 また、修復が賢明な作業であるかどうかを決定するためのスケルトン プロセスを確立します。
+移行の評価プロセス中、チームは、資産と選択したクラウド プロバイダーが非互換になるような構成を特定しようとします。 _修復_は、それらの非互換性が解決したことを確実にするための、移行プロセスにおけるチェックポイントです。 この記事では、参考のためにいくつかの一般的な修復タスクについて説明します。 また、修復が賢明な作業であるかどうかを決定するためのスケルトン プロセスを確立します。
 
 ## <a name="common-remediation-tasks"></a>一般的な修復タスク
 

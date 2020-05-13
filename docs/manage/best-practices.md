@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29b6c03b7529ee0ca719272802e5920853593289
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3e1134d6ea4538a6b0f4c26418c0009d3810a25a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80392705"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216658"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>クラウドでの運用管理プラクティスの確立
 
@@ -28,6 +28,8 @@ ms.locfileid: "80392705"
 ## <a name="cloud-operations"></a>クラウド操作
 
 これらのベスト プラクティスは、次の図に示すように、いずれも運用管理の将来の状態の方法論を目指すものです。
+
+<!-- cSpell:ignore caf -->
 
 ![クラウド導入フレームワークの管理手法](../_images/manage/caf-manage.png)
 
