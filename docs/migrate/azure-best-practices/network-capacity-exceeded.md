@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4d32a1b521240806b78435141b9876967b4093d8
-ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
+ms.openlocfilehash: a7caa77a9f11f464160548aded6b280bbc9b0b00
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81646852"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217160"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -34,7 +34,7 @@ ms.locfileid: "81646852"
 
 大量のデータがオフライン転送を介して移動されるが、後からネットワーク経由でより低いスケールで同期される「シードおよびフィード」移行に Azure Data Box を使用するサード パーティ パートナー ソリューションもあります。
 
-![Azure Data Box でのオフラインおよびオンラインのデータ転送](../../_images/migrate/databox.png)
+![Azure Data Box でのオフラインおよびオンラインのデータ転送](../../_images/migrate/data-box.png)
 
 ## <a name="assess-process-changes"></a>プロセス変更の評価
 

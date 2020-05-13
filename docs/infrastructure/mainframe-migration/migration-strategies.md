@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0f57483ed09ec87422773c6a2fb53e2785a0a24e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3d50dc6ec4a2c20b7d73bd2f0cc0ed3414e24581
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425529"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217644"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
@@ -23,6 +23,8 @@ Azure は、従来のメインフレーム アプリケーションを実行す�
 このセクションでは、メインフレーム プラットフォームから Azure への切り替えに関する技術的なガイダンスを提供します。
 
 ![メインフレームと Azure](../../_images/mainframe-migration/make-the-switch.png)
+
+<!-- docsTest:ignore "vs. vCPUs" -->
 
 ## <a name="mips-vs-vcpus"></a>MIPS と vCPU
 
@@ -61,7 +63,7 @@ Azure は、ローカルでも他の地域内でも、複数のストレージ �
 
 一般的に、メインフレームのお客様は、災害時に備えてディザスター リカバリー サイトを保守するか、独立したメインフレーム プロバイダーを利用しています。 ディザスター リカバリー サイトとの同期は、通常、データのオフライン コピーを使用して実行されます。 どちらの方法も高コストが発生します。
 
-自動化された geo 冗長性は、メインフレームの結合機能を介しても利用できます。 この方法はコストが高く、通常、ミッション クリティカルなシステム用に予約されています。 対照的に、Azure には、実装が簡単で費用対効果の高い[バックアップ](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)、[復旧](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)、および[冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)のオプションがあり、ローカル レベルまたはリージョン レベルで、または geo 冗長性を介して利用できます。
+自動化された geo 冗長性は、メインフレームの結合機能を介しても利用できます。 この方法はコストが高く、通常、ミッション クリティカルなシステム用に予約されています。 対照的に、Azure には、実装が簡単で費用対効果の高い[バックアップ](https://docs.microsoft.com/azure/backup/backup-overview)、[復旧](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)、および[冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)のオプションがあり、ローカル レベルまたはリージョン レベルで、または geo 冗長性を介して利用できます。
 
 ## <a name="storage"></a>ストレージ
 

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3f6d5cbc2485a8e5a3752f24659e8873abb40a8d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 074762c6d02c6da1cd6812064e20f63a44aa4bd7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430609"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217287"
 ---
 # <a name="common-azure-policy-examples"></a>Azure Policy の一般的な例
 
@@ -32,7 +32,7 @@ ms.locfileid: "80430609"
 ポータルでこのポリシーを見つけるには、ポリシー定義ページで、[場所] で検索します。 または、次のコマンドレットを実行してポリシーを見つけます。
 
 ```powershell
-Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*location*") }
+Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn') -and ($_.Properties.displayName -like '*location*') }
 ```
 
 次のスクリプトでは、ポリシーの割り当て方法を示しています。 ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。
@@ -46,7 +46,7 @@ $scope = "/subscriptions/$SubscriptionID"
 $AllowedLocationPolicy = Get-AzPolicyDefinition -Name "e56962a6-4747-49cd-b67b-bf8b01975c4c"
 
 #Replace the locations with the ones you want to specify.
-$policyParam = '{"listOfAllowedLocations":{"value":["eastus","westus"]}}'
+$policyParam = '{ "listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyParam
 ```
 
@@ -70,7 +70,7 @@ Azure では、さまざまなワークロードをサポートするための�
 
 ### <a name="deploy-antimalware"></a>マルウェア対策のデプロイ
 
-このポリシーを使用すると、マルウェア対策で保護されていない VM に、既定の構成を使用した Microsoft *IaaSAntimalware* 拡張機能をデプロイすることができます。
+このポリシーを使用すると、マルウェア対策で保護されていない VM に、既定の構成を使用した Microsoft _IaaSAntimalware_ 拡張機能をデプロイすることができます。
 
 ポリシーの GUID は `2835b622-407b-4114-9198-6f7064cbe0dc` です。
 

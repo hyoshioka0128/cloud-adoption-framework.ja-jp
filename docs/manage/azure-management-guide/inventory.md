@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9647ec56145d54537541ee70bbdb2280c9cae2ac
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 126699d4d5e8d69f230047f16654d5ccb635a8e2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426809"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216726"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure のインベントリと可視性
 
@@ -26,16 +26,16 @@ _インベントリと可視性_は、クラウド管理ベースラインの 3 
 
 すべてのエンタープライズグレード環境について、管理ベースラインの推奨最小値の概要を次の表に示します。
 
-|Process  |ツール  |目的  |
-|---------|---------|---------|
-|Azure サービスの正常性の監視|Azure Service Health|Azure で実行されているサービスの正常性、パフォーマンス、診断|
-|ログの一元化|Log Analytics|すべての可視性のための一元的なログ|
-|監視の一元化|Azure Monitor|運用データと傾向の一元的な監視|
-|仮想マシンのインベントリと変更の追跡|Azure Change Tracking と Inventory|ゲスト OS レベルの VM のインベントリと変更の監視|
-|サブスクリプションの監視|[Azure Activity Log (Azure アクティビティ ログ)]|サブスクリプション レベルの変更の監視|
-|ゲスト OS の監視|VM に対する Azure Monitor|VM の変更とパフォーマンスの監視|
-|ネットワーク監視|Azure Network Watcher|ネットワークの変更とパフォーマンスの監視|
-|DNS の監視|DNS Analytics|DNS のセキュリティ、パフォーマンス、操作|
+| Process | ツール | 目的 |
+|---|---|---|
+| Azure サービスの正常性の監視 | Azure Service Health | Azure で実行されているサービスの正常性、パフォーマンス、診断 |
+| ログの一元化 | Log Analytics | すべての可視性のための一元的なログ |
+| 監視の一元化 | Azure Monitor | 運用データと傾向の一元的な監視 |
+| 仮想マシンのインベントリと変更の追跡 | Azure Change Tracking と Inventory | ゲスト OS レベルの VM のインベントリと変更の監視 |
+| サブスクリプションの監視 | [Azure Activity Log (Azure アクティビティ ログ)] | サブスクリプション レベルの変更の監視 |
+| ゲスト OS の監視 | VM に対する Azure Monitor | VM の変更とパフォーマンスの監視 |
+| ネットワーク監視 | Azure Network Watcher | ネットワークの変更とパフォーマンスの監視 |
+| DNS の監視 | DNS Analytics | DNS のセキュリティ、パフォーマンス、操作 |
 
 ::: zone target="docs"
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f4b6b2d5d944e3176b2f36ef713955a4c29324f9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67145b6c5da9c7da740771acfea38ba97e6f8a9c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426574"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217457"
 ---
 <!-- cSpell:ignore siterecovery -->
 
@@ -28,10 +28,10 @@ ms.locfileid: "80426574"
 
 すべてのエンタープライズグレード環境について、管理ベースラインの推奨最小値の概要を次の表に示します。
 
-|Process  |ツール  |目的  |
-|---------|---------|---------|
-|データの保護|Azure Backup|クラウド内のデータと仮想マシンをバックアップします。|
-|環境を保護する|Azure Security Center|ハイブリッド ワークロード全体でセキュリティを強化し、高度な脅威保護を提供します。|
+| Process                 | ツール                  | 目的                                                                                  |
+| ----------------------- | --------------------- | ---------------------------------------------------------------------------------------- |
+| データの保護            | Azure Backup          | クラウド内のデータと仮想マシンをバックアップします。                                          |
+| 環境を保護する | Azure Security Center | ハイブリッド ワークロード全体でセキュリティを強化し、高度な脅威保護を提供します。 |
 
 ::: zone target="docs"
 
@@ -64,7 +64,7 @@ Azure Backup では、ご自身のデータを Microsoft Cloud 内でバック�
 
 ::: zone target="docs"
 
-[概要](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
+[概要](https://docs.microsoft.com/azure/backup/backup-overview)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
