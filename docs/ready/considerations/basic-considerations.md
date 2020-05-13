@@ -7,16 +7,16 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 18b5aefb0498c530313afa63d2f005fd874f8741
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f8d4dd2b2c2228bfdb4ebe13980e9f408083e2f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122052"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213989"
 ---
 # <a name="landing-zone-considerations"></a>ランディング ゾーンに関する考慮事項
 
-ランディング ゾーンとは、クラウド導入環境の基礎構成要素です。 "*ランディング ゾーン*" という用語は、Azure など、クラウド環境のワークロードをホストする目的でプロビジョニングされ、準備された環境を指します。 完全に機能するランディング ゾーンは、クラウド導入フレームワークにおける準備手順のイテレーションの最終成果物です。
+ランディング ゾーンとは、クラウド導入環境の基礎構成要素です。 "_ランディング ゾーン_" という用語は、Azure など、クラウド環境のワークロードをホストする目的でプロビジョニングされ、準備された環境を指します。 完全に機能するランディング ゾーンは、クラウド導入フレームワークにおける準備手順のイテレーションの最終成果物です。
 
 ![ランディング ゾーンに関する考慮事項](../../_images/ready/landing-zone-considerations.png)
 
