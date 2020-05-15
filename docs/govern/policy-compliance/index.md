@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eec9c7ae36dbe92142226e78afcdd465e4aa66a2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 63eeb2cbcaa278934ba107114057f911604883f2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224223"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399517"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Microsoft のクラウド導入フレームワークの違いは、購入サイ�
 
 従来のガバナンスと斬新的なガバナンスでは、企業ポリシーによって、ガバナンスの実用的な定義を作成します。 ほとんどの IT ガバナンス アクションでは、企業ポリシーの監視、適用、運用、および自動化を行うテクノロジを実装するように努力しています。 クラウド ガバナンスも同様の概念に基づいています。
 
-![コーポレート ガバナンスとガバナンスの規範](../../_images/operational-transformation-govern-highres.png)
+![コーポレート ガバナンスとガバナンスの規範](../../_images/operational-transformation-govern-large.png)
 
 "_図 1:コーポレート ガバナンスとガバナンスの規範_
 
