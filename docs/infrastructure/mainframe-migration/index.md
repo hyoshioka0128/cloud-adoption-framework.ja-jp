@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 486dabd5b2926b9f8f794767181c75bc1eff34b6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 954c97c78d3dcd4827505e2d9b6df2d4a5355e04
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216811"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398816"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -65,6 +65,9 @@ IBM システムでは、CICS などのトランザクション モニターを�
 メインフレームの一般的な操作:
 
 - **オンライン:** ワークロードには、トランザクション処理、データベース管理、接続があります。 それらは多くの場合、IBM DB2、CICS、z/OS コネクタで実装されます。
+
+<!-- docsTest:ignore "BMC Control-M" -->
+<!-- cSpell:ignore JOB ASSGN DLBL EXTENT LIBDEF EXEC -->
 
 - **バッチ:** ジョブはユーザーの介入なしで実行されます。通常、平日の毎朝などの、定期的なスケジュールで行われます。 バッチ ジョブは、Micro Focus Enterprise Server や BMC Control-M ソフトウェアなど、JCL エミュレーターを利用し、Windows または Linux ベースのシステム上で実行できます。
 

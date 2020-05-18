@@ -4,17 +4,16 @@ description: あらゆるガバナンス シナリオに対する段階的なア
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: d3f664aa94228da83ee86fd51392958341269c1e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6fceb9665712b4d787689ad2e3e709a5ac14d0d0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214737"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400738"
 ---
 # <a name="cloud-governance-guides"></a>クラウド ガバナンス ガイド
 
@@ -26,36 +25,15 @@ ms.locfileid: "83214737"
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./standard/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>標準的なガバナンス ガイド</h3>
-                        <p>推奨される 2 つのサブスクリプション モデルに基づく大半の組織向けのガイドです。複数のリージョンでのデプロイ向けですが、パブリック クラウドおよびソブリンまたは政府機関クラウドは対象ではありません。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./complex/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>複雑な企業向けのガバナンス ガイド</h3>
-                        <p>複数の独立した IT 事業部門で管理されている企業やパブリック クラウドおよびソブリンまたは政府機関クラウドにまたがる企業向けのガイドです。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+- [標準的なガバナンス ガイド](./standard/index.md):推奨される 2 つのサブスクリプション モデルに基づく大半の組織向けのガイドです。複数のリージョンでのデプロイ向けですが、パブリック クラウドおよびソブリンまたは政府機関クラウドは対象ではありません。
+
+> [!div class="nextstepaction"]
+> [標準的なガバナンス ガイド](./standard/index.md)
+
+- [複雑な企業向けのガバナンス ガイド](./complex/index.md):複数の独立した IT 事業部門で管理されている企業やパブリック クラウドおよびソブリンまたは政府機関クラウドにまたがる企業向けのガイドです。
+
+> [!div class="nextstepaction"]
+> [複雑な企業向けのガバナンス ガイド](./complex/index.md)
 
 <!-- markdownlint-enable MD033 -->
 
