@@ -8,14 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6029f3d46f3a59adc465d47d9545a017d04487e6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997922"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216403"
 ---
 # <a name="role-based-access-control"></a>ロールベースのアクセス制御
 
@@ -54,7 +53,7 @@ Azure では多くの組み込みのロール定義が用意されており、�
 - [仮想マシン共同作業者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor)ロールは仮想マシンを管理できますが、それらにアクセスしたり、接続先の仮想ネットワークまたはストレージ アカウントにアクセスすることはできません。
 - [仮想マシンのユーザー ログイン](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) ロールを使用すると、ポータルで仮想マシンを表示し、通常ユーザーとしてサインインできます。
 
-組み込みロールを使用して、特定の機能へのアクセスを管理する別の例については、「[事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access)」の、コスト追跡機能へのアクセスを制御することに関する説明を参照してください。
+組み込みロールを使用して特定の機能へのアクセスを管理する別の例については、「[事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access)」の、コスト追跡機能へのアクセスの制御に関する説明を参照してください。
 
 使用可能な組み込みロールの完全な一覧については、「[Azure リソースの組み込みロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)」をご覧ください。
 
@@ -62,7 +61,7 @@ Azure では多くの組み込みのロール定義が用意されており、�
 
 Azure に組み込まれたロールはさまざまなアクセス制御シナリオをサポートしますが、組織やチームのすべてのニーズを満たせるわけではありません。 たとえば、仮想マシンと Azure SQL Database リソースの管理を担当する単一のユーザー グループがある場合、必要なアクセス制御の管理を最適化するためにカスタム ロールを作成することができます。
 
-Azure RBAC のドキュメントには、[ロール定義の機能](https://docs.microsoft.com/azure/role-based-access-control/custom-roles)の詳細と併せて、[カスタム ロールの作成](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)に関する手順が記載されています。
+Azure RBAC のドキュメントには、[ロール定義の機能](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)の詳細と併せて、[カスタム ロールの作成](https://docs.microsoft.com/azure/role-based-access-control/custom-roles)に関する手順が記載されています。
 
 ## <a name="separation-of-responsibilities-and-roles-for-large-organizations"></a>大規模組織における責任とロールの分離
 
@@ -74,12 +73,12 @@ RBAC を使用すると、組織は大規模なクラウド資産内のさまざ
 
 <!-- markdownlint-disable MD033 -->
 
-| Group | 一般的なロール名 | 役割 |
+| グループ | 一般的なロール名 | 役割 |
 | --- | --- | --- |
-| セキュリティ運用担当者 | SecOps | 全般的なセキュリティ監視を行います。<br/><br/> 保存時の暗号化などのセキュリティ ポリシーを確立して適用します。<br/><br/> 暗号化キーを管理します。<br/><br/> ファイアウォール規則を管理します。 |
+| セキュリティ運用担当者 | SecOps | 全般的なセキュリティ監視を行います。  <br><br> 保存時の暗号化などのセキュリティ ポリシーを確立して適用します。 <br><br> 暗号化キーを管理します。 <br><br> ファイアウォール規則を管理します。 |
 | ネットワーク運用担当者 | NetOps | ルートやピアリングなど、仮想ネットワーク内のネットワーク構成および運用を管理します。 |
 | システム運用担当者 | SysOps | コンピューティングおよびストレージ インフラストラクチャのオプションを指定し、デプロイ済みのリソースを保守します。 |
-| 開発、テスト、および運用担当者 | DevOps | ワークロード機能とアプリケーションを構築してデプロイします。<br/><br/> サービスレベル アグリーメント (SLA) やその他の品質基準を満たすように機能およびアプリケーションを運用します。 |
+| 開発、テスト、および運用担当者 | DevOps | ワークロード機能とアプリケーションを構築してデプロイします。 <br><br> サービスレベル アグリーメント (SLA) やその他の品質基準を満たすように機能およびアプリケーションを運用します。 |
 
 <!-- markdownlint-enable MD033 -->
 

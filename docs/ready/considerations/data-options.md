@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c9fa27ac671b17414a114a43f5224dd0e87de9d2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c125f60358a433e2d6f65b103fba8722b1491ad1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432118"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215332"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -32,7 +32,7 @@ ms.locfileid: "80432118"
 
 ワークロードに関する次の質問に答えると、Azure データベース サービスのデシジョン ツリーに基づいて意思決定を行うのに役立ちます。
 
-- **データベース ソフトウェアやホスト OS の完全な制御または所有権が必要ですか?** 一部のシナリオでは、データベース ワークロードのソフトウェア構成とホスト サーバーに関する高度な制御または所有権が必要です。 これらのシナリオでは、データ サービスのデプロイと構成を完全に制御できるカスタムのサービスとしてのインフラストラクチャ (IaaS) 仮想マシンをデプロイできます。 このような要件がない場合は、サービスとしてのプラットフォーム (PaaS) マネージド データベース サービスを使用して、管理コストと運用コストを削減できる可能性があります。
+- **データベース ソフトウェアやホスト OS の完全な制御または所有権が必要ですか?** 一部のシナリオでは、データベース ワークロードのソフトウェア構成とホスト サーバーに関する高度な制御または所有権が必要です。 これらのシナリオでは、データ サービスのデプロイと構成を完全に制御できるカスタムのサービスとしてのインフラストラクチャ (IaaS) 仮想マシンをデプロイできます。 このような要件がない場合は、サービスとしてのプラットフォーム (PaaS) データベース サービスを使用すると、管理コストと運用コストが削減される可能性があります。
 - **ワークロードでリレーショナル データベース テクノロジを使用しますか?** そうである場合は、どのようなテクノロジを使用する予定ですか? Azure では、[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)、[MySQL](https://docs.microsoft.com/azure/mysql/overview)、[PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)、[MariaDB](https://docs.microsoft.com/azure/mariadb/overview) に対する PaaS のマネージド データベース機能を提供します。
 - **ワークロードで SQL Server を使用しますか?** Azure では、[Azure Virtual Machines 上の SQL Server](https://azure.microsoft.com/services/virtual-machines/sql-server) (IaaS ベース) または [Azure SQL Database ホステッド サービス](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) (PaaS ベース) でワークロードを実行できます。 どちらのオプションを使用するかは、主に、データベースの管理、修正プログラムの適用、バックアップの実行を自分で行うか、あるいはこれらの操作を Azure に委任するかどうかの問題です。 シナリオによっては、互換性の問題により、IaaS でホストされる SQL Server の使用が必要になることがあります。 ワークロードに適したオプションを選択する方法の詳細については、「[Azure で適切な SQL Server オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)」を参照してください。
 - **ワークロードでキー/値データベース ストレージを使用しますか?** [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) は、高速でスケーラブルなアプリケーションを実現できる、高性能のキャッシュ キー/値データ ストレージ ソリューションを提供します。 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) も、汎用的なキー/値ストレージ機能を提供します。
@@ -63,17 +63,17 @@ ms.locfileid: "80432118"
 
 ## <a name="regional-availability"></a>リージョン別の提供状況
 
-Azure を利用すれば、 _場所を問わず_顧客とパートナーを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
+Azure を利用すれば、_場所を問わず_顧客とパートナーを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
 
-ほとんどのデータベース サービスは、ほとんどの Azure リージョンで一般提供されています。 ただし、これらの製品のサブセットのみをサポートするリージョンもいくつかあります (ほとんどの場合は政府機関の顧客が対象となります)。 どのリージョンにデータベース リソースをデプロイするかを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database) を参照して、利用可能なリージョンの最新の状態を確認することをお勧めします。
+ほとんどのデータベース サービスは、ほとんどの Azure リージョンで一般提供されています。 ただし、これらの製品のサブセットのみをサポートするリージョンもいくつかあります (ほとんどの場合は政府機関の顧客が対象となります)。 どのリージョンにデータベース リソースをデプロイするかを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database)を参照して、利用可能なリージョンの最新の状態を確認することをお勧めします。
 
-Azure のグローバル インフラストラクチャの詳細については、[Azure リージョンのページ](https://azure.microsoft.com/global-infrastructure/regions)を参照してください。 また、各 Azure リージョンで利用可能なサービス全体の具体的な詳細については、 [リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)のページで確認できます。
+Azure のグローバル インフラストラクチャの詳細については、[Azure リージョンのページ](https://azure.microsoft.com/global-infrastructure/regions)を参照してください。 また、各 Azure リージョンで利用可能なサービス全体の具体的な詳細については、[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)のページで確認できます。
 
 ## <a name="data-residency-and-compliance-requirements"></a>データの保存場所とコンプライアンスの要件
 
-多くの場合は、データ ストレージに関連した法律上および契約上の要件がワークロードに適用されます。 これらの要件は、組織の場所、データ ストアをホストしている物理的な資産の管轄区域、および該当する事業部門によって異なることがあります。 考慮すべきデータに関する義務の要素には、データ分類、データの場所、および共同責任モデルに基づくデータ保護に関するそれぞれの責任が含まれます。 これらの要件の理解に役立つ情報として、ホワイト ペーパーの「 [Azure を使用して基準に準拠しているデータの保存場所とセキュリティを実現する](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)」を参照してください。
+多くの場合は、データ ストレージに関連した法律上および契約上の要件がワークロードに適用されます。 これらの要件は、組織の場所、データ ストアをホストしている物理的な資産の管轄区域、および該当する事業部門によって異なることがあります。 考慮すべきデータに関する義務の要素には、データ分類、データの場所、および共同責任モデルに基づくデータ保護に関するそれぞれの責任が含まれます。 これらの要件の理解に役立つ情報として、ホワイト ペーパー「[Azure を使用して基準に準拠しているデータの保存場所とセキュリティを実現する](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)」を参照してください。
 
-コンプライアンスの取り組みの一環として、データベース リソースが物理的に配置されている場所の制御が必要になる場合があります。 Azure リージョンは地域と呼ばれるグループに編成されています。  [Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies) では、データの保存場所、主権、コンプライアンス、回復性に関する要件が地域的および政治的な境界内で確実に遵守されます。 ワークロードがデータ主権やその他のコンプライアンス要件の影響を受ける場合は、要件に準拠している Azure 地域のリージョンにストレージ リソースをデプロイする必要があります。
+コンプライアンスの取り組みの一環として、データベース リソースが物理的に配置されている場所の制御が必要になる場合があります。 Azure リージョンは地域と呼ばれるグループに編成されています。 [Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies)では、データの保存場所、主権、コンプライアンス、回復性に関する要件が地域的および政治的な境界内で確実に遵守されます。 ワークロードがデータ主権やその他のコンプライアンス要件の影響を受ける場合は、要件に準拠している Azure 地域のリージョンにストレージ リソースをデプロイする必要があります。
 
 ## <a name="establish-controls-for-database-services"></a>データベース サービスの制御を設定する
 

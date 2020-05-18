@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6e4132bd67623b7eeea856824062c7e973d206c8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e07879cfe8b40f9b0482d804aa6073c7ad79f3e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425638"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217610"
 ---
 <!-- cSpell:ignore njray nanra chargebacks IPLs -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "80425638"
 
 ## <a name="myth-mainframes-never-go-down-and-have-a-minimum-of-five-9s-of-availability"></a>通説:メインフレームはダウンすることがなく、最低でもファイブ ナインの可用性である
 
-メインフレームのハードウェアとオペレーティング システムは、信頼性が高く安定性しているものと見なされます。 しかし、実際には、メンテナンスと再起動のためのダウンタイムをスケジュールする必要があります (イニシャル プログラム ロードまたは IPL と呼ばれます)。 これらのタスクを考慮すると、多くの場合、メインフレーム ソリューションの可用性はツー ナインまたはスリー ナインに近く、これはハイエンドの Intel ベース サーバーと同等です。
+メインフレームのハードウェアとオペレーティング システムは、信頼性が高く安定性しているものと見なされます。 しかし、実際には、メンテナンスと再起動のためのダウンタイムをスケジュールする必要があります (イニシャル プログラム ロード (IPL) と呼ばれます)。 これらのタスクを考慮すると、多くの場合、メインフレーム ソリューションの可用性はツー ナインまたはスリー ナインに近く、これはハイエンドの Intel ベース サーバーと同等です。
 
 また、メインフレームは他のサーバーと同じように災害に対して脆弱であり、この種の障害に対処するために無停電電源 (UPS) システムを必要とします。
 

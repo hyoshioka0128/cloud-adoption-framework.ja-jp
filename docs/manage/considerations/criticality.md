@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2230fe8d8ee2f2c7d5b9a695ec01268e3306bff9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426451"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217406"
 ---
 # <a name="business-criticality-in-cloud-management"></a>クラウド管理におけるビジネスの重要度
 
@@ -54,14 +54,14 @@ IT ポートフォリオ内の各ワークロードの重要度を理解する�
 
 ポートフォリオ内のすべてのワークロードの最初のレビューには時間がかかる場合があります。 この取り組みが、より広範なクラウド戦略の妨げにならないように、すべてのワークロードに適用する既定の重要度についてチームが合意することをお勧めします。
 
-前述の重要度スケールの表に基づいて、*中*程度の重要度を既定値として採用することをお勧めします。 そうすることで、クラウド戦略チームは、より高いレベルの重要度を必要とするワークロードをすばやく特定できます。
+前述の重要度スケールの表に基づいて、_中_程度の重要度を既定値として採用することをお勧めします。 そうすることで、クラウド戦略チームは、より高いレベルの重要度を必要とするワークロードをすばやく特定できます。
 
 ## <a name="use-the-template"></a>テンプレートを使用する
 
-次の手順は、[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理を計画している場合に当てはまります。
+[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理を計画している場合は、次の手順が適用されます。
 
 1. ブックの**スケール** タブで、重要度スケールを記録します。
-2. *Example* または *Clean Template* の各ワークロードは、*Criticality* 列の既定の重要度を反映するように更新します。
+2. _Example_ または _Clean Template_ の各ワークロードは、_Criticality_ 列の既定の重要度を反映するように更新します。
 3. 業務では、既定の重要度の誤差を反映するために正しい値を入力する必要があります。
 
 ## <a name="next-steps"></a>次のステップ

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 18151d68f425f5fa6d966e847b1f6131cb8f838b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8f90848374e4d427ac814c6e24547999ba3dde66
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996008"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215162"
 ---
 # <a name="software-defined-networking-decision-guide"></a>ソフトウェア定義ネットワーク意思決定ガイド
 
@@ -23,7 +23,7 @@ ms.locfileid: "80996008"
 
 ![ネットワーク オプションを最も簡単なものから最も複雑なものまでプロットし、その下に整合するジャンプ リンクを示す](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-ジャンプ先:[PaaS のみ](./paas-only.md) | [クラウドネイティブ](./cloud-native.md) | [クラウド DMZ](./cloud-dmz.md)[ハイブリッド](./hybrid.md) | [ハブ アンド スポーク モデル](./hub-spoke.md) | [詳細](#learn-more)
+ジャンプ先:[PaaS のみ](./paas-only.md) | [クラウドネイティブ](./cloud-native.md) | [クラウド DMZ](./cloud-dmz.md) | [ハイブリッド](./hybrid.md) | [ ハブ アンド スポーク モデル](./hub-spoke.md) | [詳細](#learn-more)
 
 SDN では、さまざまな度合いの価格と複雑さを持ついくつかのオプションが提供されます。 上の検出ガイドは、これらのオプションを、特定のビジネスおよびテクノロジ戦略に最も整合するようにすばやく個人用に設定するためのリファレンスを提供します。
 

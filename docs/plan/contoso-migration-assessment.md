@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b91652ac2dd06882551c6e9474d5c0e0574deda2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc1753821e61ee0a7af74bc720a56ec8962ecded
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80889736"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214584"
 ---
+<!-- docsTest:disable TODO -->
+
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Azure への移行の対象となるオンプレミスのワークロードを評価する
@@ -29,10 +31,10 @@ Azure への移行を検討する際、Contoso では技術的および財務的
 
 <!-- markdownlint-disable MD033 -->
 
-アプリの名前 | プラットフォーム | アプリ層 | 詳細
---- | --- | --- | ---
-SmartHotel360<br/><br/> (Contoso の旅行要件を管理します) | SQL Server データベースが搭載された Windows 上で実行 | 2 層アプリ。 1 つの VM (**WEBVM**) 上でフロントエンド ASP.NET Web サイトが実行され、別の VM (**SQLVM**) 上で SQL Server が実行されます。 | VM は VMware であり、vCenter サーバーによって管理される ESXi ホスト上で実行されます。<br/><br/> サンプル アプリは [GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
-osTicket<br/><br/> (Contoso のサービス デスク アプリ) | MySQL PHP (LAMP) を含む Linux/Apache 上で実行 | 2 層アプリ。 1 つの VM (**OSTICKETWEB**) 上でフロントエンド PHP Web サイトが実行され、別の VM (**OSTICKETMYSQL**) 上で MySQL データベースが実行されます。 | このアプリは、社内の従業員と外部の顧客の問題を追跡するために、顧客サービス アプリによって使用されます。<br/><br/> サンプルは [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。
+| アプリの名前 | プラットフォーム | アプリ層 | 詳細 |
+| --- | --- | --- | --- |
+| SmartHotel360 <br><br> (Contoso の旅行要件を管理します) | SQL Server データベースが搭載された Windows 上で実行 | 2 層アプリ。 1 つの VM (**WEBVM**) 上でフロントエンド ASP.NET Web サイトが実行され、別の VM (**SQLVM**) 上で SQL Server が実行されます。 | VM は VMware であり、vCenter サーバーによって管理される ESXi ホスト上で実行されます。 <br><br> サンプル アプリは [GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 |
+| osTicket <br><br> (Contoso のサービス デスク アプリ) | MySQL PHP (LAMP) を含む Linux/Apache 上で実行 | 2 層アプリ。 1 つの VM (**OSTICKETWEB**) 上でフロントエンド PHP Web サイトが実行され、別の VM (**OSTICKETMYSQL**) 上で MySQL データベースが実行されます。 | このアプリは、社内の従業員と外部の顧客の問題を追跡するために、顧客サービス アプリによって使用されます。 <br><br> サンプルは [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -72,11 +74,11 @@ Contoso クラウド チームは、移行評価の目標を決定しました�
 
 Contoso は移行の評価に Microsoft のツールを使用します。 ツールは Contoso の目標に合ったものであり、同社が必要とするすべての情報を提供します。
 
-テクノロジ | 説明 | コスト
---- | --- | ---
-[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は、SQL のソースとターゲット間の機能パリティを評価します。 そのうえで、パフォーマンスと信頼性の向上箇所を推奨します。 | Data Migration Assistant は無料でダウンロードできるツールです。
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | 2018 年 5 月の時点で Azure Migrate は無料サービスです。
-[サービス マップ](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate では、会社が移行しようとしているマシン間の依存関係が Service Map を使用して示されます。 | Service Map は、Azure Monitor ログの一部です。 現時点では、Contoso は Service Map を 180 日間無料で使用できます。
+| テクノロジ | 説明 | コスト |
+| --- | --- | --- |
+| [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は、SQL のソースとターゲット間の機能パリティを評価します。 そのうえで、パフォーマンスと信頼性の向上箇所を推奨します。 | Data Migration Assistant は無料でダウンロードできるツールです。 |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | 2018 年 5 月の時点で Azure Migrate は無料サービスです。 |
+| [サービス マップ](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate では、会社が移行しようとしているマシン間の依存関係が Service Map を使用して示されます。 | Service Map は、Azure Monitor ログの一部です。 現時点では、Contoso は Service Map を 180 日間無料で使用できます。 |
 
 このシナリオでは、Contoso は Data Migration Assistant をダウンロードして実行し、旅行アプリ用のオンプレミス SQL Server データベースを評価します。 Contoso は Azure への移行前に、Azure Migrate と依存関係マッピングを使用してアプリ VM を評価します。
 
@@ -484,16 +486,16 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 
 - 信頼度レーティングは、評価の計算に必要なデータ ポイントの可用性に基づいて、評価に割り当てられます。
 - レーティングは、Azure Migrate による推奨サイズの信頼性を見積もるために役立ちます。
-- 信頼度レーティングは、*パフォーマンス ベースのサイズ設定*を行う場合に役に立ちます。 Azure Migrate には、使用率ベースのサイズ設定を行うために十分なデータ ポイントがない場合があります。 *[オンプレミス]* のサイズ設定の場合、Azure Migrate には VM のサイズ変更に必要なすべてのデータ ポイントがあるため、信頼度レーティングは常に 5 つ星になります。
+- 信頼度レーティングは、_パフォーマンス ベースのサイズ設定_を行う場合に役に立ちます。 Azure Migrate には、使用率ベースのサイズ設定を行うために十分なデータ ポイントがない場合があります。 _[オンプレミス]_ のサイズ設定の場合、Azure Migrate には VM のサイズ変更に必要なすべてのデータ ポイントがあるため、信頼度レーティングは常に 5 つ星になります。
 - 次のように、使用可能なデータ ポイントの割合に応じて、評価の信頼度レーティングが決まります。
 
-   データ ポイントの可用性 | 信頼度レーティング
-   --- | ---
-   0% - 20% | 1 つ星
-   21% - 40% | 2 つ星
-   41% - 60% | 3 つ星
-   61% - 80% | 4 つ星
-   81% - 100% | 5 つ星
+   | データ ポイントの可用性 | 信頼度レーティング |
+   | --- | --- |
+   | 0% - 20% | 1 つ星 |
+   | 21% - 40% | 2 つ星 |
+   | 41% - 60% | 3 つ星 |
+   | 61% - 80% | 4 つ星 |
+   | 81% - 100% | 5 つ星 |
 
 #### <a name="verify-azure-readiness"></a>Azure 対応性の状態を確認する
 
@@ -507,12 +509,12 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 
 <!-- markdownlint-disable MD033 -->
 
-設定 | 指示内容 | 詳細
---- | --- | ---
-**Azure VM 対応性** | VM が移行できる状態であるかどうかを示します。 | 次の状態があります。<br/><br/>- Azure に対応<br/><br/>- 条件付きで対応 <br/><br/>- Azure に未対応<br/><br/>- 対応不明<br/><br/> VM の準備が整っていない場合、Azure Migrate によって修正手順が表示されます。
-**Azure VM サイズ** | 準備が完了している VM について、Azure Migrate によって Azure VM サイズが推奨されます。 | サイズ設定の推奨事項は、評価のプロパティによって異なります。<br/><br/>- パフォーマンス ベースのサイズ設定を使用した場合、サイズ設定では VM のパフォーマンス履歴が考慮されます。<br/><br/>- *[オンプレミス]* を使用した場合、サイズ設定はオンプレミスの VM サイズに基づき、使用率データは使われません。
-**推奨されるツール** | Azure マシンではエージェントが実行されているため、マシン内で実行されているプロセスが Azure Migrate によって確認されます。 そのマシンがデータベース マシンであるかどうかが識別されます。
-**VM 情報** | レポートには、オペレーティング システム、ブートの種類、ディスクとストレージの情報など、オンプレミス VM の設定が表示されます。
+| 設定 | 指示内容 | 詳細 |
+| --- | --- | --- |
+| **Azure VM 対応性** | VM が移行できる状態であるかどうかを示します。 | 次の状態があります。 <li> Azure に対応 <li> 条件付きで対応 <li> Azure に未対応 <li> 対応不明 <br><br> VM の準備が整っていない場合、Azure Migrate によって修正手順が表示されます。 |
+| **Azure VM サイズ** | 準備が完了している VM について、Azure Migrate によって Azure VM サイズが推奨されます。 | サイズ設定の推奨事項は、評価のプロパティによって異なります。 <li> パフォーマンス ベースのサイズ設定を使用した場合、サイズ設定では VM のパフォーマンス履歴が考慮されます。 <li> _[オンプレミス]_ を使用した場合、サイズ設定はオンプレミスの VM サイズに基づき、使用率 <li> データは使われません。 |
+| **推奨されるツール** | Azure マシンではエージェントが実行されているため、マシン内で実行されているプロセスが Azure Migrate によって確認されます。 そのマシンがデータベース マシンであるかどうかが識別されます。 | |
+| **VM 情報** | レポートには、オペレーティング システム、ブートの種類、ディスクとストレージの情報など、オンプレミス VM の設定が表示されます。 | |
 
 <!-- markdownlint-enable MD033 -->
 

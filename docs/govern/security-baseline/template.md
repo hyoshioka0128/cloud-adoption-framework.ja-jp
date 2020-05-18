@@ -1,5 +1,5 @@
 ---
-title: セキュリティ ベースライン テンプレート
+title: セキュリティ ベースライン規範テンプレート
 description: このテンプレートは、クラウド内のセキュリティ関連の問題を管理するポリシー ステートメントを文書化して伝達するための開始点として使用します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 94570e0e4fbb41342dbe41e0377160449d832818
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7a76999130144b2ac67913f0c9f1974456e442c0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425913"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217712"
 ---
-# <a name="security-baseline-template"></a>セキュリティ ベースライン テンプレート
+# <a name="security-baseline-discipline-template"></a>セキュリティ ベースライン規範テンプレート
 
 変更を実装するための最初の手順は、必要なものを伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウド内のセキュリティ関連の問題を管理するポリシー ステートメントを文書化して伝達するための開始点を提供します。
 
@@ -24,7 +24,7 @@ ms.locfileid: "80425913"
 > [!IMPORTANT]
 > このテンプレートは、限定されたサンプルです。 お客様の要件を反映するようにこのテンプレートを更新する前に、クラウド ガバナンス戦略内で有効なセキュリティ ベースライン規範を定義するための後続の手順を確認する必要があります。
 
-[ガバナンス規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
+[セキュリティ ベースライン規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>次のステップ
 

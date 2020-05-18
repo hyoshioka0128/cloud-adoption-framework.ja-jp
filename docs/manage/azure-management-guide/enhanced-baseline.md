@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7ffdc348d9f5e1d1e9a76155ce9de2b3e19ccf2a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a5cafc31b5ede4060aedf78ff40215cb7d132aaa
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426869"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216794"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -22,12 +22,16 @@ ms.locfileid: "80426869"
 
 最初の 3 つのクラウド管理規範では、管理ベースラインについて説明しています。 このガイドの前の記事では、管理ベースラインと呼ばれるクラウド管理サービスの MVP (実用最小限の製品: Minimum Viable Product) について説明しました。 この記事では、そのベースラインに対する一般的な改善をいくつか概説します。
 
-管理ベースラインの目的は、サポート対象の "*すべて*" のワークロードに対して最小限のレベルのビジネス コミットメントが提供される一貫したオファリングを作成することです。 この共通の繰り返し可能な管理サービスのベースラインにより、チームは、逸脱を最小限に抑えて、高度に最適化された運用管理を実現できます。
+管理ベースラインの目的は、サポート対象の "_すべて_" のワークロードに対して最小限のレベルのビジネス コミットメントが提供される一貫したオファリングを作成することです。 この共通の繰り返し可能な管理サービスのベースラインにより、チームは、逸脱を最小限に抑えて、高度に最適化された運用管理を実現できます。
 
 ただし、ビジネスに対して標準的なオファリングを超えるコミットメントが必要な場合があります。 次の画像およびリストでは、管理ベースラインを超えることを行う 3 つの方法を示しています。
 
 ![クラウド管理ベースラインを越えるもの](../../_images/manage/beyond-the-baseline.png)
 
+- **改善された管理ベースライン:**
+  - ポートフォリオ内のワークロードの過半数で共有される要件がある場合は、管理ベースラインに改善機能を追加します。
+  - クラウドネイティブの運用ツールとプロセスを追加で使用して、ビジネス コミットメントを改善します。
+  - ベースラインの改善機能が特定のワークロードのアーキテクチャに影響しないようにする必要があります。
 - **ワークロードの運用:**
   - ワークロードの運用あたりの最大の投資。
   - 最高レベルの回復性。
@@ -38,9 +42,6 @@ ms.locfileid: "80426869"
   - 回復性の向上は、定義されたプラットフォームを利用するすべてのワークロードに影響します。
   - 重要度が最も高いプラットフォームの約 20% に対して提案されます。
   - 通常は、中から高の重要度のワークロード用に予約されています。
-- **改善された管理ベースライン:**
-  - 最小限の相対的な操作の投資。
-  - 追加のクラウドネイティブの運用ツールとプロセスを使用して、わずかに改善されたビジネス コミットメント。
 
 ワークロードの運用とプラットフォームの運用の両方で、設計とアーキテクチャの原則を変更する必要があります。 これらの変更には時間がかかる可能性があり、運用経費が増加する場合があります。 このような投資を必要とするワークロードの数を削減するために、管理ベースラインを拡張することにより、ビジネス コミットメントを十分に高められる可能性があります。
 
@@ -48,12 +49,13 @@ ms.locfileid: "80426869"
 
 | 規範  | Process  | ツール | 潜在的な影響 | 詳細情報 |
 |---|---|---|---|---|
-|インベントリと可視性|サービスの変更の追跡|Azure Resource Graph|Azure のサービスに対する変更が視認しやすくなると、負の影響をより迅速に検出したり、より迅速に修復できる場合がある。|[Azure Resource Graph の概要](https://docs.microsoft.com/azure/governance/resource-graph/overview)|
-|インベントリと可視性|IT サービスマネジメント (ITSM) の統合|IT Service Management Connector|ITSM に自動接続されることにより、認識が早くなる。|[IT Service Management Connector (ITSMC)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview)|
-|運用のコンプライアンス|操作の自動化|Azure Automation|変更により迅速および正確に対応するために運用のコンプライアンスを自動化する。|次のセクションを参照|
-|運用のコンプライアンス|マルチクラウド操作|Azure Automation の Hybrid Runbook Worker|複数のクラウド間での操作を自動化する。|[Hybrid Runbook Worker の概要](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)|
-|運用のコンプライアンス|ゲストの自動化| Desired State Configuration (DSC)|エラーと構成のずれを減らすためのゲスト オペレーティング システムのコードベースの構成。|[DSC の概要](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview)|
-|保護と復旧|侵害通知|Azure Security Center|セキュリティ違反復旧トリガーを含むよう保護を改善。|次のセクションを参照|
+| インベントリと可視性 | サービスの変更の追跡 | Azure Resource Graph | Azure のサービスに対する変更が視認しやすくなると、負の影響をより迅速に検出したり、より迅速に修復できる場合がある。 | [Azure Resource Graph の概要](https://docs.microsoft.com/azure/governance/resource-graph/overview) |
+| インベントリと可視性 | IT サービスマネジメント (ITSM) の統合 | IT Service Management Connector | ITSM に自動接続されることにより、認識が早くなる。 | [IT Service Management Connector (ITSMC)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview) |
+| 運用のコンプライアンス | 操作の自動化 | Azure Automation | 変更により迅速および正確に対応するために運用のコンプライアンスを自動化する。 | 次のセクションを参照 |
+| 運用のコンプライアンス | パフォーマンスの自動化 | Azure Automation | リソース固有のスケーリングやサイズ変更に関する一般的な問題を解決するために、パフォーマンスの予測によって運用のコンプライアンスを自動化します。 | 次のセクションを参照 |
+| 運用のコンプライアンス | マルチクラウド操作 | Azure Automation の Hybrid Runbook Worker | 複数のクラウド間での操作を自動化する。 | [Hybrid Runbook Worker の概要](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker) |
+| 運用のコンプライアンス | ゲストの自動化 |  Desired State Configuration (DSC) | エラーと構成のずれを減らすためのゲスト オペレーティング システムのコードベースの構成。 | [DSC の概要](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview) |
+| 保護と復旧 | 侵害通知 | Azure Security Center | セキュリティ違反復旧トリガーを含むよう保護を改善。 | 次のセクションを参照 |
 
 ::: zone target="docs"
 
@@ -76,7 +78,7 @@ Azure Automation は、制御の自動化を一元的に管理するためのシ
 
 Runbook を作成または管理するには:
 
-1. [[Azure Automation]](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts) に移動します。
+1. [[Azure Automation]](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts) に移動します。
 1. **[Automation アカウント]** を選択し、一覧表示されているアカウントの 1 つを選択します。
 1. **[プロセス オートメーション]** に移動します。
 1. 表示されるオプションを使用して、Runbook、スケジュール、およびその他の自動修復機能を作成または管理できます。

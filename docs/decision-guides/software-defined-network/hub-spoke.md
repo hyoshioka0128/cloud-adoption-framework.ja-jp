@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 36c9b9cc749f1feddff64c64717849fe5dfbe3b9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f3291bb1a5ef114b2ae790bb1a3c82eaf382c37e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996101"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215128"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>ソフトウェア定義ネットワーク:ハブ アンド スポーク
 
@@ -27,7 +27,7 @@ ms.locfileid: "80996101"
 
 - **コストの削減と管理の効率。** 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は複数のワークロードにわたって過剰なリソースと管理作業を最小限にすることができます。
 - **サブスクリプションの制限の克服。** 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure のネットワークの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits)に関するページをご覧ください。
-- **懸念事項の分離。** 中央の IT チームとワークロード チームの間で個々 のワークロードをデプロイする機能。
+- **懸念事項の分離。** 中央の IT チームとワークロード チームの間で個々のワークロードをデプロイする機能。
 
 次の図は、集中管理されたハイブリッド接続を含むハブ アンド スポークのアーキテクチャの例を示しています。
 
@@ -50,7 +50,7 @@ ms.locfileid: "80996101"
 
 ## <a name="learn-more"></a>詳細情報
 
-ハブ アンド スポークのネットワークを Azure に実装する方法の例については、Azure の参照アーキテクチャのサイトで次の例をご覧ください。
+Azure 上にハブとスポークのネットワークを実装する方法を示す参照アーキテクチャについては、以下を参照してください。
 
 - [ハブ アンド スポーク ネットワーク トポロジを Azure 上に実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 - [共有サービスを含むハブ アンド スポーク ネットワーク トポロジを Azure 上に実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)

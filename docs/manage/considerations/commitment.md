@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4c86c6c079cb19497b7c0f19e8b8fa9166226780
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d0f392d58efe65b8199aefeb9dbd554ed0896cae
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997142"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216182"
 ---
 # <a name="business-commitment-in-cloud-management"></a>クラウド管理におけるビジネス コミットメント
 
@@ -30,12 +30,12 @@ ms.locfileid: "80997142"
 
 ビジネスでのコミットメントを確立する際に、調整すべきいくつかの重要な側面があります。
 
-- IT 運用の前提条件
-- 管理責任
-- クラウド テナント
-- ソフト コスト要因
-- 損失回避の ROI
-- 管理レベルの検証
+- IT 運用の前提条件。
+- 管理責任。
+- クラウド テナント。
+- ソフト コスト要因。
+- 損失回避の ROI。
+- 管理レベルの検証。
 
 決定プロセスを支援するために、この記事の残りの部分では、これらの各側面について詳しく説明します。
 

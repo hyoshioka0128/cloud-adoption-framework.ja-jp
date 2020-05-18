@@ -1,5 +1,5 @@
 ---
-title: リソースの整合性テンプレート
+title: リソースの整合性規範テンプレートの概要
 description: クラウドでの IT の運用と管理を行うポリシー ステートメントを文書化して伝達するための開始点としてこのテンプレートを使用します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cb96fc97e8e0ac4695ca28dbcad964d246f95e5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5a41d4c227c1f96fd4f7e81e893e607bfd51e92b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433651"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217967"
 ---
-# <a name="resource-consistency-template"></a>リソースの整合性テンプレート
+# <a name="resource-consistency-discipline-template"></a>リソースの整合性規範テンプレートの概要
 
 変更を実装するための最初の手順は、必要なものを伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウドでの IT 運用および管理を管理するポリシー ステートメントを文書化して伝達するための開始点として機能します。
 
@@ -24,7 +24,7 @@ ms.locfileid: "80433651"
 > [!IMPORTANT]
 > このテンプレートは、限定されたサンプルです。 ユーザーの要件を反映するようにこのテンプレートを更新する前に、クラウド ガバナンス戦略の中で有効なリソースの整合性の規範を定義するための以降の手順を確認する必要があります。
 
-[ガバナンス規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx)
+[リソースの整合性規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>次のステップ
 

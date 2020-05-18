@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eee8a2845a797cc1d9df3c2484cd3165967ac4d8
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433970"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215519"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>クラウド導入計画のワークロードを定義し、優先順位を付ける
 
@@ -34,18 +34,18 @@ ms.locfileid: "80433970"
 
 ## <a name="initial-workload-prioritization"></a>初期ワークロードの優先順位付け
 
-[増分型の合理化](../digital-estate/rationalize.md)プロセス中、チームは優先順位の高い 10 個のワークロードからなる "10 のパワー" のアプローチに合意する必要があります。 これらのワークロードは、導入計画の最初の境界として機能します。
+[増分型の合理化](../digital-estate/rationalize.md)プロセス中、チームは優先順位の高い 10 個のワークロードからなる [10 のパワーのアプローチ](../digital-estate/rationalize.md#release-planning)に合意する必要があります。 これらのワークロードは、導入計画の最初の境界として機能します。
 
 デジタル資産の合理化が不要であると判断した場合、クラウド導入チームとクラウド戦略チームが、移行の最初の焦点となる 10 個のアプリケーションのリストについて同意することが推奨されます。 さらに、これらの 10 個のワークロードには、単純なワークロード (自己完結型デプロイで資産が 10 個未満) とより複雑なワークロードを混在させることも推奨されます。 これらの 10 個のワークロードがワークロード優先順位付けプロセスを開始します。
 
 > [!NOTE]
-> "10 のパワー" は、初期段階の分析にエネルギーと投資を集中させるための、計画の最初の境界として役立ちます。 ただし、ワークロードを分析および定義することによって、優先ワークロードのリストに変更が生じる可能性があります。
+> 10 のパワーのアプローチは、初期段階の分析にエネルギーと投資を集中させるための、計画の最初の境界として役立ちます。 ただし、ワークロードを分析および定義することによって、優先ワークロードのリストに変更が生じる可能性があります。
 
 ## <a name="add-workloads-to-your-cloud-adoption-plan"></a>ワークロードをクラウド導入計画に追加する
 
 前の記事「[クラウド導入計画と Azure DevOps](./template.md)」では、Azure DevOps でクラウド導入計画を作成しました。
 
-ここでは、"10 のパワー" リストのワークロードをクラウド導入計画で表すことができます。 これを行う最も簡単な方法は、Microsoft Excel で一括編集することです。 一括編集を行うためにワークステーションを準備するには、「[Excel を使用した作業項目の一括追加または変更](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)」を参照してください。
+ここでは、"10 のパワー" リストのワークロードをクラウド導入計画で表すことができます。 これを行う最も簡単な方法は、Microsoft Excel で一括編集することです。 一括編集を行うためにワークステーションを準備するには、[Microsoft Excel を使用した作業項目の一括追加または変更](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)に関する記事をご覧ください。
 
 その記事の手順 5 では、 **[入力リスト]** を選択するよう指示されています。 代わりに、 **[クエリ リスト]** を選択します。 次に、 **[クエリの選択]** ドロップダウン リストから **[Workload Template]\(ワークロード テンプレート\)** クエリを選択します。 このクエリにより、単一のワークロードの移行に関連するすべての作業がスプレッドシートに読み込まれます。
 
@@ -92,7 +92,7 @@ ms.locfileid: "80433970"
 | 重要度 | 現在のアプリケーションの重要性を記載します。 |         |
 | データ分類 | データの機密性の分類を記載します。 |         |
 | 運用地域 | ワークロードがホストされる (またはホストされるべき) 地域を記載します。 |         |
-| [アプリケーション] | このワークロードに含まれるすべてのアプリケーションの最初のリストまたは数を指定します。 |         |
+| アプリケーション | このワークロードに含まれるすべてのアプリケーションの最初のリストまたは数を指定します。 |         |
 | VM | このワークロードに含まれるすべての VM またはサーバーの最初のリストまたは数を指定します。 |         |
 | データ ソース | このワークロードに含まれるすべてのデータ ソースの最初のリストまたは数を指定します。 |         |
 | 依存関係 | このワークロードに含まれていないすべての資産の依存関係を記載します。 |         |

@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4b66a43cdf3524b23c109cdc5fa4e965c6e01f4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425807"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217661"
 ---
-<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
 # <a name="mainframe-application-migration"></a>メインフレーム アプリケーションの移行
 
@@ -106,7 +106,7 @@ Azure を使用するバッチ処理のパフォーマンスを最適化する�
 
 ### <a name="monitoring"></a>監視
 
-- 監視ツール、[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview)、[Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview)、Azure ログを使用すると、管理者はバッチ実行の過剰なパフォーマンスを監視し、ボトルネックを回避することができます。
+- 監視ツール、[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview)、[Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview)、および Azure ログを使用すると、管理者はバッチ実行の過剰なパフォーマンスを監視し、ボトルネックを回避することができます。
 
 ## <a name="migrate-development-environments"></a>開発環境を移行する
 
@@ -164,7 +164,7 @@ Azure では、この目的に別の VM を使用することの方が一般的�
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>メインフレームから Azure への段階的移行を実行する
 
-メインフレームから Azure へのソリューションの移動では、"*段階的な*" 移行が必要な場合があります。つまり、一部のアプリケーションが最初に移動され、他のアプリケーションは一時的または永続的にメインフレームに残されます。 通常、このアプローチには、メインフレームと Azure の間でアプリケーションとデータベースが相互運用できるシステムが必要です。
+メインフレームから Azure へのソリューションの移動では、"_段階的な_" 移行が必要な場合があります。つまり、一部のアプリケーションが最初に移動され、他のアプリケーションは一時的または永続的にメインフレームに残されます。 通常、このアプローチには、メインフレームと Azure の間でアプリケーションとデータベースが相互運用できるシステムが必要です。
 
 一般的なシナリオでは、アプリケーションを Azure に移動し、アプリケーションによって使用されるデータはメインフレームで維持します。 Azure 上のアプリケーションがメインフレーム上のデータにアクセスできるようにするには、特定のソフトウェアが使用されます。 さいわい、広範なソリューションでは、Azure と既存のメインフレーム環境間の統合、ハイブリッド シナリオのサポート、および時間をかけた移行が提供されています。 Microsoft パートナー、独立系ソフトウェア ベンダー、およびシステム インテグレーターがユーザーの作業を支援できます。
 

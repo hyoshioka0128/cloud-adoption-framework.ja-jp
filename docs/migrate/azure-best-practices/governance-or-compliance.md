@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 35e7f2a09dd1421f0d57808658a96135dcf8e947
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b07ded7b1d2ede7bc354709a798180daedfdae3b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997603"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216165"
 ---
 # <a name="governance-or-compliance-strategy"></a>ガバナンスまたはコンプライアンスの戦略
 
@@ -30,7 +30,10 @@ ms.locfileid: "80997603"
 
 **ISO 27001 コンプライアンスのブループリント:** ISO コンプライアンス標準に準拠することが必要なお客様の場合、[ISO 27001 共有サービスのブループリントのサンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared)を、反復プロセスの早い段階でより充実したガバナンス制約を作成するための、より効果的な MVP として使用できます。 [ISO 27001 App Service Environment/SQL Database のサンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)を使用すると、ブループリントを拡張してコントロールをマップし、アプリケーション環境用の共通アーキテクチャをデプロイできます。 その他のコンプライアンスのブループリントがリリースされたら、ここで紹介します。
 
-**仮想データセンター:** より堅牢なガバナンスの開始点が必要になることがあります。 そのような場合は、[Azure 仮想データセンター (VDC)](../../reference/vdc.md) を検討してください。 このアプローチは通常、エンタープライズ規模の導入を行う場合、特に資産の数が 10,000 個を超える作業で推奨されます。 また、次のいずれかが要求される複雑なガバナンスのシナリオの場合は、事実上の選択となります: 広範なサードパーティのコンプライアンス要件、ドメインに関する深い専門知識、成熟した IT ガバナンス ポリシーやコンプライアンス要件との整合性。
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+
+**Azure 仮想データセンター;** より堅牢なガバナンスの開始点が必要になることがあります。 そのような場合は、[Azure 仮想データセンター (VDC)](../../reference/vdc.md) を検討してください。 このアプローチは通常、エンタープライズ規模の導入を行う場合、特に資産の数が 10,000 個を超える作業で推奨されます。 また、次のいずれかが要求される複雑なガバナンスのシナリオの場合は、既定の選択となります: 広範なサードパーティのコンプライアンス要件、ドメインに関する深い専門知識、または成熟した IT ガバナンス ポリシーやコンプライアンス要件との整合性。
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>前提条件を完了するためのパートナーシップ オプション
 
@@ -48,19 +51,19 @@ ms.locfileid: "80997603"
 
 ガバナンスおよびコンプライアンスの評価の要件はお客様に固有であるため、評価時に行う実際の手順に関する一般的なガイダンスを提供することはできません。 しかし、"コンプライアンスやガバナンスの要件との整合" のためのタスクと時間の割り当てをプロセスに含める必要があります。 これらの要件の詳細については、次のリンクを参照してください。
 
-ガバナンスについての理解を深めるには、[クラウド ガバナンスにおける 5 つの規範の概要](../../govern/governance-disciplines.md)に関する記事をご覧ください。 クラウド導入フレームワークのこのセクションには、5 つのセクションのそれぞれについてポリシー、ガイダンス、要件を文書化するためのテンプレートも含まれています。
+ガバナンスについての理解を深めるには、「[クラウド ガバナンスの 5 つの規範](../../govern/governance-disciplines.md)」の概要をご覧ください。 クラウド導入フレームワークのこのセクションには、5 つのセクションのそれぞれについてポリシー、ガイダンス、要件を文書化するためのテンプレートが含まれています。
 
-- [Cost Management](../../govern/cost-management/template.md)
-- [セキュリティ ベースライン](../../govern/security-baseline/template.md)
-- [リソースの整合性](../../govern/resource-consistency/template.md)
-- [ID ベースライン](../../govern/identity-baseline/template.md)
-- [デプロイの高速化](../../govern/deployment-acceleration/template.md)
+- [コスト管理規範](../../govern/cost-management/template.md)
+- [セキュリティ ベースライン規範](../../govern/security-baseline/template.md)
+- [リソースの整合性規範](../../govern/resource-consistency/template.md)
+- [ID ベースライン規範](../../govern/identity-baseline/template.md)
+- [デプロイ高速化規範](../../govern/deployment-acceleration/template.md)
 
-クラウド導入フレームワーク ガバナンス モデルに基づくガバナンス ガイダンスの作成に関するガイダンスについては、「[Implementing a cloud governance strategy](../../govern/corporate-policy.md)」(クラウド ガバナンス戦略の実装) を参照してください。
+クラウド導入フレームワーク ガバナンス モデルに基づくガバナンス ガイダンスの作成の詳細については、[クラウド ガバナンス戦略の実装](../../govern/corporate-policy.md)に関する記事を参照してください。
 
 ## <a name="optimize-and-promote-process-changes"></a>最適化および昇格プロセスの変更
 
-最適化と昇格プロセス中に、クラウド ガバナンス チームは、ガバナンスとコンプライアンスの標準への準拠をテストおよび検証するために時間を費やす必要があります。 さらに、この手順は、クラウド ガバナンス チームがテンプレートをキュレーションするためのプロセスを挿入する良い機会です。テンプレートによって、将来のプロジェクトに追加に[デプロイの加速](../../govern/deployment-acceleration/index.md)がもたらされる可能性があります。
+最適化と昇格プロセス中に、クラウド ガバナンス チームは、ガバナンスとコンプライアンスの標準への準拠をテストおよび検証するために時間を費やす必要があります。 さらに、この手順は、クラウド ガバナンス チームがテンプレートをキュレーションするためのプロセスを挿入する良い機会です。テンプレートによって、将来のプロジェクトに追加の[デプロイの加速規範](../../govern/deployment-acceleration/index.md)が提供される可能性があります。
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>最適化および昇格プロセス中に推奨されるアクション
 

@@ -8,24 +8,23 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 5ab24d655327584bd1f6363ac439c1ffcacaccec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995130"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215570"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
 # <a name="hub-and-spoke-network-topology"></a>ハブ アンド スポーク ネットワーク トポロジ
 
-*ハブ アンド スポーク*は、一般的な通信またはセキュリティ要件をより効率的に管理するためのネットワーク モデルです。 Azure サブスクリプションの制限の回避にも役立ちます。 このモデルでは、次の懸念事項に対処します。
+_ハブ アンド スポーク_は、一般的な通信またはセキュリティ要件をより効率的に管理するためのネットワーク モデルです。 Azure サブスクリプションの制限の回避にも役立ちます。 このモデルでは、次の懸念事項に対処します。
 
 - **コストの削減と管理の効率**。 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は過剰なリソースと管理作業を最小限にすることができます。
 - **サブスクリプションの制限の克服**。 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)に関するページを参照してください。
-- **懸念事項の分離**。 中央の IT チームとワークロード チームの間で個々 のワークロードをデプロイすることができます。
+- **懸念事項の分離**。 中央の IT チームとワークロード チームの間で個々のワークロードをデプロイすることができます。
 
 小さなクラウド資産は、このモデルによって追加で提供される構造と機能の恩恵を受けない場合があります。 しかし、大規模なクラウド導入作業で、上記のいずれかの懸念事項が 1 つでもあれば、ハブおよびスポーク ネットワーク アーキテクチャの実装を検討してください。
 
@@ -39,7 +38,7 @@ ms.locfileid: "80995130"
 
 ![ハブおよびスポーク ネットワーク トポロジの例][1]
 
-図に示したように、Azure では 2 種類のハブおよびスポーク設計がサポートされます。 通信、共有リソース、一元的セキュリティ ポリシーに対するものと (図の "VNet Hub")、ブランチとブランチの間またはブランチと Azure の間の大規模な通信に対する仮想 WAN タイプ (図の "Virtual WAN") がサポートされます。
+図に示したように、Azure では 2 種類のハブおよびスポーク設計がサポートされます。 通信、共有リソース、一元的セキュリティ ポリシーに対するもの (図の "仮想ネットワーク ハブ") と、ブランチとブランチの間またはブランチと Azure の間の大規模な通信に対する仮想 WAN の種類 (図の "仮想 WAN") がサポートされます。
 
 ハブは、ゾーン (インターネット、オンプレミス、スポーク) 間のイングレスまたはエグレス トラフィックを制御および検査する中央ネットワーク ゾーンです。 ハブ アンド スポークのトポロジでは、IT 部門は一元化された場所でセキュリティ ポリシーを効率的に適用できます。 また、構成の誤りや露出の可能性も低減されます。
 
@@ -48,7 +47,7 @@ ms.locfileid: "80995130"
 - 信頼されていないネットワークからアクセスするサード パーティがスポーク内のワークロードにアクセスする前のユーザー認証に必要な Windows Server Active Directory インフラストラクチャ。 これには、関連する Active Directory フェデレーション サービス (AD FS) が含まれます。
 - オンプレミスおよびインターネット上のリソースにアクセスするための、スポーク内のワークロードの名前付けを解決する DNS サービス ([Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) が使用されていない場合)。
 - ワークロードにシングル サインオンを実装するための公開キー基盤 (PKI)。
-- スポーク ネットワーク ゾーンとインターネット間の TCP/UDP トラフィックのフロー制御。
+- スポーク ネットワーク ゾーンとインターネット間の TCP と UDP トラフィックのフロー制御。
 - スポークとオンプレミス間のフロー制御。
 - (必要に応じて) スポーク間のフロー制御。
 
@@ -84,6 +83,6 @@ Azure では、種類に関係なく、すべてのコンポーネントが Azur
 
 <!-- images -->
 
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "概要レベルのハブ アンド スポークの例"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "ハブとスポークのクラスター"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "スポーク間"
+[1]: ../../_Images/azure-best-practices/network-hub-spoke-high-level.png "概要レベルのハブ アンド スポークの例"
+[2]: ../../_Images/azure-best-practices/network-hub-spokes-cluster.png "ハブとスポークのクラスター"
+[3]: ../../_Images/azure-best-practices/network-spoke-to-spoke.png "スポーク間"

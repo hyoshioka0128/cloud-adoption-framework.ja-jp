@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 515ae94c2feedbc7b111ec786551a4680a69f561
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f7675852a6d9b59e0d06873fee028b701dc729e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996023"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215061"
 ---
 # <a name="subscription-decision-guide"></a>サブスクリプション決定ガイド
 
@@ -27,7 +27,7 @@ Azure サブスクリプションを作成して、それをアカウントに�
 - [追加のサブスクリプションを作成](../../ready/azure-best-practices/scale-subscriptions.md)して、Azure 環境をスケーリングする。
 - Azure 管理グループを使用して[サブスクリプションを整理および管理](../../ready/azure-best-practices/organize-subscriptions.md)する。
 
-## <a name="modeling-your-organization"></a>組織をモデル化する
+## <a name="model-your-organization"></a>組織をモデル化する
 
 すべての組織が異なるため、Azure 管理グループは柔軟になるように設計されています。 組織の階層を反映するためにクラウド資産をモデル化すると、階層のより高いレベルでポリシーを定義して適用することができます。また、継承に依存して、これらのポリシーが階層のより低い管理グループに自動的に適用されることを確認します。 サブスクリプションはさまざまな管理グループ間で移動できますが、予測される組織のニーズを反映する初期管理グループの階層を設計するのに役立ちます。
 
@@ -50,12 +50,12 @@ Azure サブスクリプションを作成して、それをアカウントに�
 
 組織のクラウドの占有領域が増加すると、追加のサブスクリプションが、一般に、ビジネスの重要度、コンプライアンスの要件、アクセス制御、またはデータ保護のニーズが根本的に異なるアプリケーションをサポートするために作成されます。 初期の運用と非運用のサブスクリプションから構築すると、これらのアプリケーション カテゴリをサポートするサブスクリプションは、該当する場合は、運用と非運用のいずれかの管理グループの下で整理されます。 通常、これらのサブスクリプションは、中央の IT 運用スタッフによって所有および管理されます。
 
-![アプリケーション カテゴリ戦略](../../_images/infra-subscriptions/application.png)
+![アプリケーション カテゴリ戦略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy.png)
 
 組織ごとにアプリケーションの分類が異なり、多くの場合、特定のアプリケーションやサービスに基づいて、またはアプリケーションのアーキタイプの系統に沿って、サブスクリプションが分けられます。 この分類は、多くの場合、サブスクリプションのリソース制限の大部分を消費する可能性があるワークロードをサポートするように、またはミッション クリティカルなワークロードを分けて、これらの制限の下にある他のワークロードと確実に競合しないように設計されています。 個別サブスクリプションを正当化する可能性のあるワークロードには、次のようなものがあります。
 
 - ミッションクリティカルなワークロード。
-- 社内の "売却済商品の原価" (COGS) の一部であるアプリケーション。 例: 会社 X のウィジェットのすべてのインスタンスには、テレメトリを送信する Azure IoT モジュールが含まれています。 そのため、COGS の一部として、会計/ガバナンスの目的で専用のサブスクリプションが必要になる場合があります。
+- 社内の "_売却済商品の原価_" (COGS) の一部であるアプリケーション。 例: 会社 X のウィジェットのすべてのインスタンスには、テレメトリを送信する Azure IoT モジュールが含まれています。 そのため、COGS の一部として、会計/ガバナンスの目的で専用のサブスクリプションが必要になる場合があります。
 - HIPAA、FedRAMP など、規制の要件の対象となるアプリケーション。
 
 ### <a name="functional-strategy"></a>機能戦略
@@ -70,11 +70,11 @@ Azure サブスクリプションを作成して、それをアカウントに�
 
 国際的な組織では、この地理的戦略により、管理グループの階層を使用し、地理的な地域に基づいてサブスクリプションとアカウントをグループ化します。
 
-## <a name="mixing-subscription-strategies"></a>サブスクリプション戦略を組みわせる
+## <a name="mix-subscription-strategies"></a>サブスクリプション戦略を組みわせる
 
 管理グループの階層は、最大レベル 6 の深さになることがあります。 これにより、組織のニーズを満たすように、これらのいくつかの戦略を組み合わせた階層を作成するための柔軟性が提供されます。 たとえば、以下の図では、事業単位戦略を地理的戦略と組み合わせる組織階層を示しています。
 
-![混合サブスクリプション戦略](../../_images/infra-subscriptions/mixed.png)
+![混合サブスクリプション戦略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy-mixed.png)
 
 ## <a name="related-resources"></a>関連リソース
 

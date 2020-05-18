@@ -3,17 +3,16 @@ title: クラウド導入戦略を作成する
 description: Azure のクラウド導入フレームワークを使用して、クラウドがビジネス戦略をどのように進めることができるかを理解します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
-ms.topic: landing-page
+ms.date: 05/04/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-layout: LandingPage
-ms.openlocfilehash: 5494b9485f67f51c79fac84ca2822bf041ea873f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 63ba6adf112d5d74d4e8de003ea3659e3658642a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79092344"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215502"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -21,96 +20,16 @@ ms.locfileid: "79092344"
 
 クラウドが提供する基盤テクノロジの利点は、企業が複数のビジネス戦略を実行するのに役立ちます。 クラウドベースのアプローチを使用すると、ビジネスの即応性の向上、コストの削減、市場投入までの時間の短縮、新しい市場への進出が可能になります。 この大きな可能性を活用するには、最初に、クラウド技術者が理解でき、なおかつビジネスの関係者に受け入れられる方法でビジネス戦略を文書化してください。
 
-## <a name="cloud-adoption-strategy-process"></a>クラウド導入戦略プロセス
+以下の手順は、事業戦略の効率的な記録に役立ちます。 この手法は、部門連係モデルで目標とする事業価値を得る導入を進めるために役立ちます。 その後、クラウド導入戦略を特定のクラウド機能とビジネス戦略に対応付けることにより、変革の目的の状態に達することができます。
 
-このセクションの演習は、ビジネス戦略を効率的に文書化する際に役立ちます。 この手法を使用することで、部門連係モデルで目標とする事業価値を得る導入を進めることができます。 その後、クラウド導入戦略を特定のクラウド機能とビジネス戦略に対応付けることにより、変革の目的の状態に達することができます。
+<!-- markdownlint-disable MD033 -->
+<!-- docsTest:ignore images _images -->
 
-<!--markdownlint-disable MD033 -->
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[動機を定義して文書化する](./motivations.md): 主要な利害関係者とエグゼクティブに会い、クラウド導入の背後にある動機を記録します。                                |
+| ![2](../_images/icons/2.png)     | <br>[ビジネス成果を文書化する](./business-outcomes/index.md): 動機をもつ利害関係者やエグゼクティブに特定の事業成果を記録してもらいます。                                |
+| ![3](../_images/icons/3.png)     | <br>[ビジネス ケースを開発する](./cloud-migration-business-case.md): 動機や成果を支援する財務モデルを検証するためのビジネス ケースを開発します。                                |
+| ![4](../_images/icons/4.png)      | <br>[最初の適切なプロジェクトを選択する](./first-adoption-project.md): 最初のクラウド導入プロジェクトは、技術的な作業と動機の足並みを揃えるのに役立ちます。 この記事は、最初のプロジェクトを慎重に選択する際に役立ちます。                        |
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./motivations.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>動機</h3>
-主要な利害関係者とエグゼクティブに会い、クラウド導入の背後にある動機を記録します。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./business-outcomes/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>ビジネス成果</h3>
-動機をもつ利害関係者やエグゼクティブに特定の事業成果を記録してもらいます。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./cloud-migration-business-case.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>業務の妥当性</h3>
-動機や成果を支援する財務モデルを検証するためのビジネス ケースを開発します。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./first-adoption-project.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>最初の正しいプロジェクトを選択する</h3>
-最初のクラウド導入プロジェクトは、技術的な作業と動機の足並みを揃えるのに役立ちます。 この記事は、最初のプロジェクトを慎重に選択する際に役立ちます。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-クラウド導入戦略を構築できるように、[Microsoft クラウド導入計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)をダウンロードし、各演習の出力を追跡してください。
-
-## <a name="next-steps"></a>次のステップ
-
-クラウド導入戦略を作成するにあたり、まず、クラウド導入の背後にある[動機を文書にします](./motivations.md)。
-
-> [!div class="nextstepaction"]
-> [動機の文書化](./motivations.md)
+[Microsoft クラウド導入計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)をダウンロードして、クラウド導入戦略を構築し、各演習の出力を追跡してください。
