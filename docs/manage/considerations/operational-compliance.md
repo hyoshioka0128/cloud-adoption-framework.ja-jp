@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc22c00d9470209f4442f1b9c4a194b8b1fdb417
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527646"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223934"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>クラウド管理における運用のコンプライアンス
 
@@ -30,7 +30,7 @@ ms.locfileid: "80527646"
 
 ### <a name="resource-consistency"></a>リソースの整合性
 
-クラウド管理チームが運用上のコンプライアンスに向けて実行できる最も効果的な手順は、リソース編成とタグ付けの整合性を確立することです。 リソースが一貫して編成され、タグ付けされていると、他のすべての運用タスクが簡単になります。 リソースの整合性に関する詳細なガイダンスについては、クラウド導入ライフサイクルの[ガバナンス フェーズ](../../govern/index.md)を参照してください。 具体的には、[初期ガバナンス基盤に関する記事](../../govern/initial-foundation.md)で、リソースの整合性の開発を開始する方法を紹介しています。
+クラウド管理チームが運用上のコンプライアンスに向けて実行できる最も効果的な手順は、リソース編成とタグ付けの整合性を確立することです。 リソースが一貫して編成され、タグ付けされていると、他のすべての運用タスクが簡単になります。 リソースの整合性に関する詳細なガイダンスについては、[ガバナンスの方法論](../../govern/index.md)に関するページを参照してください。 具体的には、[初期ガバナンス基盤に関する記事](../../govern/initial-foundation.md)を読んで、リソースの整合性の開発を始める方法を学習します。
 
 ### <a name="environment-consistency"></a>環境の整合性
 

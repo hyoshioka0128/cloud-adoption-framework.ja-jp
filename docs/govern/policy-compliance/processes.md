@@ -1,6 +1,6 @@
 ---
 title: ポリシー順守プロセスを確立する
-description: クラウド デプロイがポリシー要件に適合するように、戦略とプロセスを作成します。 
+description: クラウド デプロイがポリシー要件に適合するように、戦略とプロセスを作成します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7bdcd96786a232ef810794cf93546275a9603b0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c2a087fec598e2b9d581370f76e35aefef88048f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430807"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224189"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -68,13 +68,15 @@ ms.locfileid: "80430807"
 ポリシー ステートメントごとに、ポリシー違反になる行為を判断する要件を確認します。 ポリシー定義プロセスの一部として既に確立している情報を利用してトリガーを生成します。
 
 - **リスク許容度:** [リスク許容度分析](./risk-tolerance.md)の一部として確立したメトリックとリスク インジケーターに基づいて、違反トリガーを作成します。
-- **定義されたポリシー要件:** ポリシー ステートメントは、コンプライアンス トリガーの基礎として使用する必要のあるサービス レベル アグリーメント (SLA)、ビジネス継続性とディザスター リカバリー (BCDR)、またはパフォーマンス要件を提供できます。
+- **定義されたポリシー要件:** ポリシー ステートメントでは、コンプライアンス トリガーの基礎として使用する必要のあるサービス レベル アグリーメント (SLA)、ビジネス継続性とディザスター リカバリー (BCDR)、またはパフォーマンス要件を提供できます。
 
 ### <a name="define-actions"></a>アクションを定義する
 
 違反トリガーにはそれぞれ、それに対応するアクションを与えます。 違反が発生したら、トリガーされたアクションによって担当の IT スタッフまたはクラウド ガバナンス チーム メンバーに常に通知されるようにします。 この通知により、検出された違反の種類と重大度に応じて、コンプライアンスに関する問題の手動のレビューが行われるか、または定義済みの修復プロセスが開始される場合があります。
 
 違反のトリガーとアクションの例:
+
+<!-- docsTest:ignore "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
 | クラウド ガバナンスの分野 | サンプル トリガー | サンプル アクション |
 |-----------------------------|----------------|---------------|

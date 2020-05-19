@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 7456d74ac4702ee403583148aa8c3f5491ef5721
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0e288b29077d68ee4b0c0522537abe0baaa276ac
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120718"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223696"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -41,7 +41,7 @@ Contoso クラウド チームは、この移行の目標を設定しました�
 
 **必要条件** | **詳細**
 --- | ---
-**App** | このアプリは、Azure でも現在と同じくクリティカルです。<br/><br/> 現在の VMWare と同等のパフォーマンス機能が必要です。<br/><br/> チームはアプリへの投資を望んでいません。 現在のところ、管理者は単にアプリをクラウドに安全に移行します。<br/><br/> チームは、アプリが現在実行されている Windows Server 2008 R2 のサポートを終了したいと考えています。<br/><br/> また、SQL Server 2008 R2 から最新の PaaS Database プラットフォームに移行したいと考えています。これにより、管理の必要性を最小限に抑えられます。<br/><br/> Contoso では、可能であれば、SQL Server ライセンスとソフトウェア アシュアランスへの投資を活かしたいと考えています。<br/><br/> さらに、Contoso は Web 層の単一障害点を軽減したいと考えています。
+**App** | このアプリは、Azure でも現在と同じくクリティカルです。 <br><br> 現在の VMWare と同等のパフォーマンス機能が必要です。 <br><br> チームはアプリへの投資を望んでいません。 現在のところ、管理者は単にアプリをクラウドに安全に移行します。 <br><br> チームは、アプリが現在実行されている Windows Server 2008 R2 のサポートを終了したいと考えています。 <br><br> また、SQL Server 2008 R2 から最新の PaaS Database プラットフォームに移行したいと考えています。これにより、管理の必要性を最小限に抑えられます。 <br><br> Contoso では、可能であれば、SQL Server ライセンスとソフトウェア アシュアランスへの投資を活かしたいと考えています。 <br><br> さらに、Contoso は Web 層の単一障害点を軽減したいと考えています。
 **制限事項** | このアプリは、同じ VM 上で実行されている ASP.NET アプリと WCF サービスで構成されています。 Azure App Service を使用して 2 つの Web アプリに分割したいと考えています。
 **Azure** | Contoso は Azure にアプリを移行したいと考えていますが、VM 上では実行したくありません。 Contoso では、Azure PaaS サービスを Web 層とデータ層の両方に利用したいと考えています。
 **DevOps** | Contoso は、ビルドとリリース パイプラインに Azure DevOps を使用して DevOps モデルに移行したいと考えています。
@@ -63,7 +63,7 @@ Contoso は目標と要件を決定した後、デプロイ ソリューショ�
 ### <a name="proposed-solution"></a>提案されるソリューション
 
 - アプリの Web 層については、Azure App Service を使用することに決めました。 この PaaS サービスにより、わずかな構成変更だけでアプリをデプロイできます。 Visual Studio を使用して変更を加え、2 つの Web アプリをデプロイします。 1 つは Web サイト用、もう 1 つは WCF サービス用です。
-- DevOps パイプラインの要件を満たすために、Contoso はソース コード管理 (SCM) に Git リポジトリと共に Azure DevOps を使用することを選択しました。 コードをビルドして Azure App Service へデプロイするには、自動ビルドとリリースが使用されます。
+- DevOps パイプラインの要件を満たすため、Contoso はソース コード管理のために、Git リポジトリと共に Azure DevOps を選択しました。 コードをビルドして Azure App Service へデプロイするには、自動ビルドとリリースが使用されます。
 
 ### <a name="database-considerations"></a>データベースの考慮事項
 
@@ -85,8 +85,8 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **考慮事項** | **詳細**
 --- | ---
-**長所** | Azure に移行するために SmartHotel360 アプリ コードを変更する必要はありません。<br/><br/> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。<br/><br/> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 詳細については、「[Microsoft ライフサイクル ポリシー](https://aka.ms/lifecycle)」を参照してください。<br/><br/> Contoso は複数のインスタンスがあるアプリの Web 層を構成することができたので、単一障害点ではなくなりました。<br/><br/> データベースは古い SQL Server 2008 R2 に依存しなくなります。<br/><br/> SQL Managed Instance では、Contoso の技術面の要件と目標がサポートされています。<br/><br/> Managed Instance では、SQL Server 2008 R2 から移行するときに、現在の展開との 100% の互換性が提供されます。<br/><br/> ソフトウェア アシュアランスと、SQL Server および Windows Server の Azure ハイブリッド特典を使用して、投資を活用できます。<br/><br/> 将来の移行では、Azure Database Migration Service を再利用できます。<br/><br/> SQL Managed Instance には、Contoso が構成する必要のないフォールト トレランスが組み込まれています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。
-**短所** | Azure App Services は、各 Web アプリに対して 1 つのアプリのデプロイのみをサポートしています。 これは、2 つの Web アプリをプロビジョニングする必要がある (Web サイト用に 1 つと WCF サービス用に 1 つ) ことを意味します。<br/><br/>データ層については、Contoso がオペレーティング システムやデータベース サーバーをカスタマイズしたい場合、または SQL Server と共にサードパーティ製アプリを実行したい場合は、Managed Instance は最適なソリューションではない可能性があります。 IaaS VM で SQL Server を実行すると、このような柔軟性が提供されます。
+**長所** | Azure に移行するために SmartHotel360 アプリ コードを変更する必要はありません。 <br><br> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。 <br><br> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 詳細については、「[Microsoft ライフサイクル ポリシー](https://aka.ms/lifecycle)」を参照してください。 <br><br> Contoso は複数のインスタンスがあるアプリの Web 層を構成することができたので、単一障害点ではなくなりました。 <br><br> データベースは古い SQL Server 2008 R2 に依存しなくなります。 <br><br> SQL Managed Instance では、Contoso の技術面の要件と目標がサポートされています。 <br><br> Managed Instance では、SQL Server 2008 R2 から移行するときに、現在の展開との 100% の互換性が提供されます。 <br><br> ソフトウェア アシュアランスと、SQL Server および Windows Server の Azure ハイブリッド特典を使用して、投資を活用できます。 <br><br> 将来の移行では、Azure Database Migration Service を再利用できます。 <br><br> SQL Managed Instance には、Contoso が構成する必要のないフォールト トレランスが組み込まれています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。
+**短所** | Azure App Services は、各 Web アプリに対して 1 つのアプリのデプロイのみをサポートしています。 これは、2 つの Web アプリをプロビジョニングする必要がある (Web サイト用に 1 つと WCF サービス用に 1 つ) ことを意味します。 <br><br> データ層については、Contoso がオペレーティング システムやデータベース サーバーをカスタマイズしたい場合、または SQL Server と共にサードパーティ製アプリを実行したい場合は、Managed Instance は最適なソリューションではない可能性があります。 IaaS VM で SQL Server を実行すると、このような柔軟性が提供されます。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -118,7 +118,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **必要条件** | **詳細**
 --- | ---
-**Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
+**Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
 **Azure インフラストラクチャ** | [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。
 
 <!--markdownlint-enable MD033 -->
@@ -144,7 +144,7 @@ Azure SQL Database Managed Instance を設定するため、Contoso には次の
 - Managed Instance を作成した後は、サブネットにリソースを追加することはできません。
 - サブネットにネットワーク セキュリティ グループを関連付けることはできません。
 - サブネットにはユーザー定義のルート テーブルが必要です。 割り当てられている唯一のルートが 0.0.0.0/0 の次ホップ インターネットである必要があります。
-- 省略可能なカスタム DNS: カスタム DNS が Azure 仮想ネットワークで指定されている場合、Azure の再帰的なリゾルバーの IP アドレス (168.63.129.16 など) をリストに追加する必要があります。 [Managed Instance のカスタム DNS の構成方法については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
+- 仮想ネットワーク用に省略可能なカスタム DNS が指定されている場合、Azure 内の再帰的なリゾルバーの仮想 IP アドレス `168.63.129.16` をリストに追加する必要があります。 [Azure SQL Database Managed Instance のカスタム DNS を構成する](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)方法についてご確認ください。
 - サブネットにサービス エンドポイント (ストレージまたは SQL) を関連付けることはできません。 仮想ネットワークではサービス エンドポイントを無効にする必要があります。
 - サブネットには 16 個以上の IP アドレスが必要です。 [Managed Instance サブネットのサイズを指定する方法については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
 - Contoso のハイブリッド環境では、カスタム DNS 設定が必要です。 Contoso は、自社の 1 つ以上の Azure DNS サーバーを使用するように DNS 設定を構成します。 [DNS のカスタマイズの詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
@@ -298,11 +298,11 @@ Contoso 管理者は、Web アプリとデータベースがすべて通信で�
 
     ![接続文字列](./media/contoso-migration-refactor-web-app-sql-managed-instance/string1.png)
 
-3. Visual Studio を使用して、ソリューション ファイルから **SmartHotel.Registration.wcf** プロジェクトを開きます。 WCF サービス SmartHotel.Registration.Wcf の web.config ファイルの **connectionStrings** セクションを接続文字列で更新する必要があります。
+3. Visual Studio を使用して、ソリューション ファイルから **SmartHotel.Registration.wcf** プロジェクトを開きます。 WCF サービス **SmartHotel.Registration.Wcf** の web.config ファイルの **connectionStrings** セクションを、接続文字列を指定して更新する必要があります。
 
      ![接続文字列](./media/contoso-migration-refactor-web-app-sql-managed-instance/string2.png)
 
-4. SmartHotel.Registration.Web の web.config ファイルの **client** セクションは、WCF サービスの新しい場所を指すように変更する必要があります。 これは、サービス エンドポイントをホストする WCF Web アプリの URL です。
+4. **SmartHotel.Registration.Web** の web.config ファイルの **client** セクションは、WCF サービスの新しい場所を指すように変更する必要があります。 これは、サービス エンドポイントをホストする WCF Web アプリの URL です。
 
     ![接続文字列](./media/contoso-migration-refactor-web-app-sql-managed-instance/strings3.png)
 
@@ -379,7 +379,7 @@ Contoso 管理者は、Web アプリとデータベースがすべて通信で�
 
     ![WCF の保存](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
 
-17. **[パイプライン]**  >  **[ステージ]** **[+追加]** を選択し、**SHWEB EUS2** 用の環境を追加します。 別の Azure App Service のデプロイを選択します。
+17. **[パイプライン]**  >  **[ステージ]** と選択し、 **[+追加]** を選択して **SHWEB EUS2** 用の環境を追加します。 別の Azure App Service のデプロイを選択します。
 
     ![環境の追加](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
 

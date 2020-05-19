@@ -1,6 +1,6 @@
 ---
 title: Azure リソースの効果的な整理
-description: Azure リソースを効果的に編成して管理を容易にするうえで必要なベスト プラクティスについて説明します。
+description: Azure リソースを効果的に整理してリソース管理を簡素化するためのベスト プラクティスについて説明します。
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: b47f0e3cf6c69bbdf3d5c8260ad4094312e1bea2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3d0afed921d11b16b1d33de311df1144aea6d4a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997547"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221945"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -37,7 +37,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ## <a name="scope-of-management-settings"></a>管理の設定のスコープ
 
-どの管理レベルでも、ポリシーやロール ベースのアクセス制御などの管理設定を適用することができます。 選択するレベルで、設定の適用範囲が決まります。 上位レベルの設定が下位レベルに継承されます。 たとえば、サブスクリプションにポリシーを適用すると、そのポリシーはそのサブスクリプション内のすべてのリソース グループとリソースにも適用されます。
+どの管理レベルでも、ポリシーやロール ベースのアクセス制御などの管理設定を適用できます。 選択するレベルで、設定の適用範囲が決まります。 上位レベルの設定が下位レベルに継承されます。 たとえば、サブスクリプションにポリシーを適用すると、そのポリシーはそのサブスクリプション内のすべてのリソース グループとリソースにも適用されます。
 
 通常、より高位のレベルで重要な設定を適用し、より低位のレベルでプロジェクト固有の要件を適用することをお勧めします。 たとえば、組織のすべてのリソースを確実に特定のリージョンに配置したい場合などがあります。 これを行うには、許可された場所を指定するポリシーをサブスクリプションに適用します。 組織内の他のユーザーが新しいリソース グループとリソースを追加すると、許可された場所が自動的に適用されます。 ポリシーについて詳しくは、このガイドのガバナンス、セキュリティ、およびコンプライアンスのセクションをご覧ください。
 
@@ -146,9 +146,9 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 | Entity | Scope | 長さ | 大文字小文字の区別 | 有効な文字 | 提案されるパターン | 例 |
 | --- | --- | --- | --- | --- | --- | --- |
-|Resource group |サブスクリプション |1-90 |大文字と小文字は区別されない |英数字、アンダースコア、かっこ、ハイフン、ピリオド (末尾を除く)、および Unicode 文字 |`<service short name>-<environment>-rg` |`profx-prod-rg` |
-|可用性セット |Resource group |1 ～ 80 |大文字と小文字は区別されない |英数字、アンダースコア、ハイフン |`<service-short-name>-<context>-as` |`profx-sql-as` |
-|タグ |関連付けられたエンティティ |512 (名前)、256 (値) |大文字と小文字は区別されない |英数字 |`"key" : "value"` |`"department" : "Central IT"` |
+| Resource group | サブスクリプション | 1-90 | 大文字と小文字は区別されない | 英数字、アンダースコア、かっこ、ハイフン、ピリオド (末尾を除く)、および Unicode 文字 | `<service short name>-<environment>-rg` | `profx-prod-rg` |
+| 可用性セット | Resource group | 1 ～ 80 | 大文字と小文字は区別されない | 英数字、アンダースコア、ハイフン | `<service-short-name>-<context>-as` | `profx-sql-as` |
+| タグ | 関連付けられたエンティティ | 512 (名前)、256 (値) | 大文字と小文字は区別されない | 英数字 | `"key" : "value"` | `"department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[リソース タグ](#tab/ResourceTags)
 
@@ -164,7 +164,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 
-細かいタグ付けの推奨事項と例については、クラウド導入フレームワークの[タグ付けに関するガイドライン](../azure-best-practices/naming-and-tagging.md)を参照してください。
+タグ付けの推奨事項と例の詳細については、クラウド導入フレームワークの[推奨される名前付けおよびタグ付け規則](../azure-best-practices/naming-and-tagging.md)を参照してください。
 
 ::: zone target="docs"
 
@@ -172,7 +172,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 リソース グループにタグを適用するには:
 
-1. [リソース グループ](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)に移動します。
+1. [リソース グループ](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)に移動します。
 1. リソース グループを選択します。
 1. **[タグの割り当て]** を選択します。
 1. 新しい名前と値を入力するか、ドロップダウン リストを使用して既存の名前と値を選択します。

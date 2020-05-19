@@ -7,22 +7,24 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 396fecb03210980cae4c4f14cc6afcee331c3034
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4e3c9b7e924f1285389430ea9aae93cdecffea89
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997578"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222013"
 ---
+<!-- cSpell:ignore Getting Started -->
+
 # <a name="skills-readiness-for-cloud-migration"></a>クラウド移行のためのスキルの準備
 
 クラウドへの移行中、従業員と、責任を負うシステム統合パートナーやマネージド サービス パートナーの中にも、移行作業中に有効になるように新しいスキルを開発することが必要になる可能性があります。
 
-移行の行程の「移行」フェーズ中に完全に反復される 4 つの異なるプロセスがあります。 以下のセクションは、スキル リソースの 2 つの前提条件を参照して、これらの各プロセスに必要なスキルを調整します。
+移行方法で繰り返し実行される 4 つの異なるプロセスがあります。 以下のセクションは、スキル リソースの 2 つの前提条件を参照して、これらの各プロセスに必要なスキルを調整します。
 
 ## <a name="prerequisites-skilling-resources"></a>前提条件のスキル リソース
 
-「移行」プロセスの実装は、移行の行程の「[計画](../strategy/suggested-skills.md)」と「[準備](../organize/suggested-skills.md)」のフェーズ中に習得したスキルに基づいて構築されます。
+移行プロセスの実装は、移行の行程の「[計画](../strategy/suggested-skills.md)」と「[準備](../organize/suggested-skills.md)」のフェーズ中に習得したスキルに基づいて構築されます。
 
 ## <a name="assess-skilling-resources"></a>スキル リソースの評価
 

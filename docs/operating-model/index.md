@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 6575848df4a20fd828ed2c07703881a171cbfb69
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1489ad64c9900436ff5c5cc6b76d5660a85d8d71
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80526841"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221979"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>クラウドの運用モデルの確立
 
 クラウド導入は、企業がクラウドで行うことに焦点を当てた繰り返し作業になります。 クラウド戦略では、さまざまなチームの実行導入プロジェクトとして、ビジネス プログラムを手引きするデジタル変革の概要を示します。 こうした重要な要素をすべて成功させる上で計画と準備が役立ちます。 クラウド導入の手順はすべて、管理可能な目的、タイムライン、予算を含む有形プロジェクトに相当します。
 
-こうした導入作業では、複数のイテレーションやリリースを計画している場合でも、追跡記録と測定が比較的簡単です。 導入ライフサイクルの各段階はどれも重要です。 ビジネス、文化、テクノロジにおける制約が混ざり合った障害が各段階で発生する可能性があります。 しかしながら、各段階を大きく左右するのは基礎となる運用モデルです。
+こうした導入作業では、複数のイテレーションやリリースを計画している場合でも、追跡記録と測定が比較的簡単です。 導入ライフサイクルの各段階はどれも重要です。 ビジネス、文化、テクノロジにおける制約が混ざり合った障害が各段階で発生する可能性があります。 ただし、各段階を大きく左右するのは基礎となる運用モデルです。
 
 **これからの行動を説明するものが導入であれば、導入を可能にする第一人者や基礎となる手法は運用モデルにより定義されます。**
 

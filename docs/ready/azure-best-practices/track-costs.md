@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b444c94686f6314fb2922e8b2c6ed99fea57e6ec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: aff6ee1eb16f1e2ab671c20bea61093d68b99fe4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396118"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223305"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -28,7 +28,7 @@ ms.locfileid: "81396118"
 
 ### <a name="classification"></a>分類
 
-"*タグ付け*" は、アセットを分類する簡単な方法です。 タグ付けにより、資産にメタデータが関連付けられます。 このメタデータを使用して、さまざまなデータ ポイントに基づいて資産を分類できます。 企業がコスト管理の取り組みの一環としてタグを使って資産を分類する場合、事業単位、部署、請求コード、地域、環境、プロジェクト、ワークロード、"アプリケーション分類" などのタグが必要であることが多いです。 Azure Cost Management では、これらのタグを使ってコスト データの異なるビューを作成できます。
+"_タグ付け_" は、アセットを分類する簡単な方法です。 タグ付けにより、資産にメタデータが関連付けられます。 このメタデータを使用して、さまざまなデータ ポイントに基づいて資産を分類できます。 企業がコスト管理の取り組みの一環としてタグを使って資産を分類する場合、事業単位、部署、請求コード、地域、環境、プロジェクト、ワークロード、"アプリケーション分類" などのタグが必要であることが多いです。 Azure Cost Management では、これらのタグを使ってコスト データの異なるビューを作成できます。
 
 タグ付けは、あらゆるコスト レポートのデータを理解するための主要な方法です。 これは、適切に管理された環境の基本要素です。 また、環境の適切なガバナンスを確立する最初の手順でもあります。
 
@@ -72,6 +72,8 @@ ms.locfileid: "81396118"
 一般的なベスト プラクティスとしては、さまざまなロールやスコープにユーザーを割り当てる、最小特権モデルをお勧めします。
 
 ### <a name="roles"></a>ロール
+
+<!-- docsTest:ignore Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
 Azure Cost Management では、各スコープに対して次の組み込みロールがサポートされています。
 
@@ -117,7 +119,7 @@ Azure Cost Management は、予算を設定し、Azure や AWS のクラウド �
 
 ### <a name="get-started-with-azure-cost-management"></a>Azure Cost Management の利用を開始する
 
-Azure Cost Management の利用を開始する方法の詳細については、「[Azure Cost Management を使用してクラウドへの投資を最適化する方法](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)」を参照してください。
+Azure Cost Management の利用を開始するには、「[Azure Cost Management を使用してクラウドへの投資を最適化する方法](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)」を参照してください。
 
 ### <a name="use-azure-cost-management"></a>Azure Cost Management を使用する
 

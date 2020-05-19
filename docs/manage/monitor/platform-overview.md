@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 45645ec900c4c85c4dd7698f6d5861027dae8bf6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527160"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223747"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -45,7 +45,7 @@ Application Insights は、クラウド、モバイル、IoT デバイスが急�
 - アプリケーション監視のための **Application Insights**。
 - ログ データの収集と分析のための主要な場所である **Log Analytics**。
 - 前に説明した他の各サービスのアラート メカニズムを統合した新しい**統合アラート サービス**。  
-- Azure 仮想ネットワーク内のリソースの監視、診断、メトリック表示のための **Azure Network Watcher**。
+- 仮想ネットワーク内のリソースの監視、診断、メトリック表示のための **Azure Network Watcher**。
 
 ## <a name="the-story-of-operations-management-suite-oms"></a>Operations Management Suite (OMS) のストーリー
 

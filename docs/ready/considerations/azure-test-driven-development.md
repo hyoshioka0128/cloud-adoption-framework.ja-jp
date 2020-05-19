@@ -1,18 +1,18 @@
 ---
-title: Azure のランディング ゾーン用のテスト駆動開発 (TDD)
-description: Azure のランディング ゾーン用のテスト駆動開発 (TDD)
+title: Azure のランディング ゾーン用のテスト駆動開発 (TDD)。
+description: Azure のランディング ゾーン用のテスト駆動開発 (TDD)。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: de56ab7dca0a769272777118836bc9ee93058002
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b4edc0f0e485c040045bc8c1b7bce6c91f3d13f9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122060"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221911"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Azure のランディング ゾーン用のテスト駆動開発 (TDD)
 
@@ -37,7 +37,7 @@ Azure ネイティブのガバナンス製品とサービスのツールチェ�
 
 ## <a name="azure-governance-tools-that-can-accelerate-tdd-cycles"></a>TDD サイクルを高速化できる Azure ガバナンス ツール
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy):デプロイまたはデプロイの試行がガバナンス ポリシーから逸脱したときに、Azure Policy により自動的に検出、保護、解決できます。 ただし、Azure Policy には、"完了の定義" で受け入れ基準をテストするための主要なメカニズムも用意されています。 TDD サイクルでは、単一の受け入れ基準をテストするためのポリシー定義を作成できます。 同様に、すべての受け入れ基準は、サブスクリプション全体に割り当てられたポリシー イニシアティブに追加できます。 このアプローチは、ランディング ゾーンを変更する前に "赤テスト" のメカニズムを提供します。 ランディング ゾーンは、完了の定義を満たすと、今後のリリースでテストが失敗する可能性のあるコードの変更を回避するために、テスト条件を適用するために使用できます。
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy):デプロイまたはデプロイの試行がガバナンス ポリシーから逸脱したときに、Azure Policy によって自動的に検出、保護、解決が可能です。 ただし、Azure Policy には、"完了の定義" で受け入れ基準をテストするための主要なメカニズムも用意されています。 TDD サイクルでは、単一の受け入れ基準をテストするためのポリシー定義を作成できます。 同様に、すべての受け入れ基準は、サブスクリプション全体に割り当てられたポリシー イニシアティブに追加できます。 このアプローチは、ランディング ゾーンを変更する前に "赤テスト" のメカニズムを提供します。 ランディング ゾーンは、完了の定義を満たすと、今後のリリースでテストが失敗する可能性のあるコードの変更を回避するために、テスト条件を適用するために使用できます。
 
 [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints):Azure Blueprint は、ポリシーとその他のデプロイ ツールを、複数のランディング ゾーンに割り当てることができる反復可能なパッケージにグループ化します。 ブループリントでは、複数の導入作業で共通の完了の定義を共有する場合に有用であることがわかり、時間の経過に伴って更新できます。 また、ランディング ゾーンの以降の展開とリファクタリングの作業の際のデプロイにも役立ちます。
 

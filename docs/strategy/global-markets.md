@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b4c39b0a55485335e65bee9a5e6be2fe5fe22279
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dba91bf7bd87395d3b5c55cf99480f8c6a54bd4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997751"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221452"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "80997751"
 
 ## <a name="data-sovereignty"></a>データの主権
 
-多くの地理的地域ではデータ主権規制が確立されています。 これらの規制では、データを格納できる場所、元の国から持ち出すことのできるデータ、その地域の住民に関して収集できるデータが制限されています。 外国でクラウドベースのソリューションを運用する前に、そのクラウド プロバイダーがデータの主権をどのように処理するかを理解する必要があります。 各地域での Azure のアプローチの詳細については、「[Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies)」を参照してください。 Azure でのコンプライアンスの詳細については、Microsoft セキュリティ センターで「[Microsoft におけるプライバシー](https://www.microsoft.com/trust-center/privacy)」をご覧ください。
+多くの地理的地域ではデータ主権規制が確立されています。 これらの規制では、データを格納できる場所、元の国から持ち出すことのできるデータ、その地域の住民に関して収集できるデータが制限されています。 外国でクラウドベースのソリューションを運用する前に、そのクラウド プロバイダーがデータの主権をどのように処理するかを理解する必要があります。 各地域での Azure のアプローチの詳細については、「[Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies)」をご覧ください。 Azure でのコンプライアンスの詳細については、Microsoft セキュリティ センターで「[Microsoft におけるプライバシー](https://www.microsoft.com/trust-center/privacy)」をご覧ください。
 
 この記事の残りの部分では、弁護士が外国での活動を審査および承認したものとします。
 
@@ -45,4 +45,4 @@ ms.locfileid: "80997751"
 クラウド導入の取り組みの[戦略フェーズで必要となるスキル](./suggested-skills.md)について確認します。
 
 > [!div class="nextstepaction"]
-> [戦略に関連するスキル](./suggested-skills.md)
+> [戦略フェーズで必要となるスキル](./suggested-skills.md)

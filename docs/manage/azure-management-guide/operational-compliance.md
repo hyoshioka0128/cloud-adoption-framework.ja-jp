@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bb09c780a38576b8f4c8154290b4ca4b6cae7309
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b747a6f0d50fbf2510dc3a5220f72d513e8d1cb3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426773"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216709"
 ---
-<!-- cSpell:ignore WSUS -->
+<!-- cSpell:ignore WSUS getting started -->
 
 # <a name="operational-compliance-in-azure"></a>Azure における運用のコンプライアンス
 
@@ -28,12 +28,12 @@ ms.locfileid: "80426773"
 
 すべてのエンタープライズグレード環境について、管理ベースラインの推奨最小値の概要を次の表に示します。
 
-|Process  |ツール  |目的  |
-|---------|---------|---------|
-|更新プログラムの管理|更新管理|更新プログラムの管理とスケジューリング|
-|ポリシーの適用|Azure Policy|環境とゲストのコンプライアンスを確保するためのポリシーの適用|
-|環境の構成|Azure Blueprint|コア サービスの自動化されたコンプライアンス|
-|リソース構成|必要な状態の構成|ゲスト OS と環境のいくつかの側面の自動構成|
+| Process | ツール | 目的 |
+|---|---|---|
+| 更新プログラムの管理 | 更新管理 | 更新プログラムの管理とスケジューリング |
+| ポリシーの適用 | Azure Policy | 環境とゲストのコンプライアンスを確保するためのポリシーの適用 |
+| 環境の構成 | Azure Blueprint | コア サービスの自動化されたコンプライアンス |
+| リソース構成 | 必要な状態の構成 | ゲスト OS と環境のいくつかの側面の自動構成 |
 
 ::: zone target="docs"
 
@@ -48,10 +48,10 @@ ms.locfileid: "80426773"
 
 Update Management で管理されるコンピューターでは、評価と更新プログラムのデプロイに次の構成が使用されます。
 
-- Windows または Linux 用の Microsoft Monitoring Agent (MMA)
-- PowerShell Desired State Configuration (DSC) (Linux の場合)
-- Azure Automation の Hybrid Runbook Worker
-- Microsoft Update または Windows Server Update Services (WSUS) (Windows コンピューターの場合)
+- Windows または Linux 用の Microsoft Monitoring Agent (MMA)。
+- PowerShell Desired State Configuration (DSC) (Linux の場合)。
+- Azure Automation の Hybrid Runbook Worker。
+- Microsoft Update または Windows Server Update Services (WSUS) (Windows コンピューターの場合)。
 
 詳細については、[Update Management ソリューション](https://docs.microsoft.com/azure/automation/automation-update-management)に関するページを参照してください。
 

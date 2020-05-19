@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ed5c0edf9ad7132c51311641d054bcfa9d9b0315
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37a8a55762dc1ddb49e41673da1497cef4a1606f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997052"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223645"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -41,7 +41,7 @@ Contoso クラウド チームは、この移行の目標を設定しました�
 
 **必要条件** | **詳細**
 --- | ---
-**App** | このアプリは、Azure でも現在と同じくクリティカルです。<br/><br/> 現在の VMWare と同等のパフォーマンス機能が必要です。<br/><br/> チームはアプリへの投資を望んでいません。 現在のところ、管理者はアプリをクラウドに安全に移行します。<br/><br/> チームは、アプリが現在実行されている Windows Server 2008 R2 のサポートを終了したいと考えています。<br/><br/> また、SQL Server 2008 R2 から最新の PaaS Database プラットフォームに移行したいと考えています。これにより、管理の必要性を最小限に抑えられます。<br/><br/> Contoso では、可能であれば、SQL Server ライセンスとソフトウェア アシュアランスへの投資を活かしたいと考えています。<br/><br/> さらに、Contoso は Web 層の単一障害点を軽減したいと考えています。
+**App** | このアプリは、Azure でも現在と同じくクリティカルです。 <br><br> 現在の VMWare と同等のパフォーマンス機能が必要です。 <br><br> チームはアプリへの投資を望んでいません。 現在のところ、管理者はアプリをクラウドに安全に移行します。 <br><br> チームは、アプリが現在実行されている Windows Server 2008 R2 のサポートを終了したいと考えています。 <br><br> また、SQL Server 2008 R2 から最新の PaaS Database プラットフォームに移行したいと考えています。これにより、管理の必要性を最小限に抑えられます。 <br><br> Contoso では、可能であれば、SQL Server ライセンスとソフトウェア アシュアランスへの投資を活かしたいと考えています。 <br><br> さらに、Contoso は Web 層の単一障害点を軽減したいと考えています。
 **制限事項** | このアプリは、同じ VM 上で実行されている ASP.NET アプリと WCF サービスで構成されています。 Azure App Service を使用して 2 つの Web アプリにこれらのコンポーネントを分散したいと考えています。
 **Azure** | Contoso は Azure にアプリを移行したいと考えていますが、VM 上では実行したくありません。 Contoso では、Azure PaaS サービスを Web 層とデータ層の両方に利用したいと考えています。
 **DevOps** | Contoso は、ビルドとリリース パイプラインに Azure DevOps を使用して DevOps モデルに移行したいと考えています。
@@ -79,8 +79,10 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **考慮事項** | **詳細**
 --- | ---
-**長所** | Azure に移行するために SmartHotel360 アプリ コードを変更する必要はありません。<br/><br/> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。<br/><br/> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 詳細については、「[Microsoft ライフサイクル ポリシー](https://aka.ms/lifecycle)」を参照してください。<br/><br/> Contoso は複数のインスタンスがあるアプリの Web 層を構成することができたので、単一障害点ではなくなりました。<br/><br/> データベースは古い SQL Server 2008 R2 に依存しなくなります。<br/><br/> SQL Database は技術面の要件をサポートしています。 Contoso では、Database Migration Assistant を使用してオンプレミス データベースを評価し、互換性があることがわかりました。<br/><br/> Azure SQL Database には、Contoso が設定する必要がないフォールト トレランス機能が組み込まれています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。<br/><br/> Contoso が Azure Database Migration Service を使用してデータベースを移行した場合、データベースを大規模に移行するためのインフラストラクチャが用意されます。
-**短所** | Azure App Services は、各 Web アプリに対して 1 つのアプリのデプロイのみをサポートしています。 これは、2 つの Web アプリをプロビジョニングする必要がある (Web サイト用に 1 つと WCF サービス用に 1 つ) ことを意味します。<br/><br/>
+**長所** | Azure に移行するために SmartHotel360 アプリ コードを変更する必要はありません。 <br><br> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。 <br><br> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 詳細については、「[Microsoft ライフサイクル ポリシー](https://aka.ms/lifecycle)」を参照してください。 <br><br> Contoso は複数のインスタンスがあるアプリの Web 層を構成することができたので、単一障害点ではなくなりました。 <br><br> データベースは古い SQL Server 2008 R2 に依存しなくなります。 <br><br> SQL Database は技術面の要件をサポートしています。 Contoso では、Database Migration Assistant を使用してオンプレミス データベースを評価し、互換性があることがわかりました。 <br><br> Azure SQL Database には、Contoso が設定する必要がないフォールト トレランス機能が組み込まれています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。 <br><br> Contoso が Azure Database Migration Service を使用してデータベースを移行した場合、データベースを大規模に移行するためのインフラストラクチャが用意されます。
+**短所** | Azure App Services は、各 Web アプリに対して 1 つのアプリのデプロイのみをサポートしています。 これは、2 つの Web アプリをプロビジョニングする必要がある (Web サイト用に 1 つと WCF サービス用に 1 つ) ことを意味します。
+
+<br>
 
 <!-- markdownlint-enable MD033 -->
 
@@ -113,7 +115,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **必要条件** | **詳細**
 --- | ---
-**Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
+**Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
 **Azure インフラストラクチャ** | [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。
 
 <!--markdownlint-enable MD033 -->
@@ -310,7 +312,7 @@ Contoso 管理者は、Web アプリとデータベースがすべて通信で�
 
     ![WCF の保存](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
-17. **[パイプライン]**  >  **[ステージ]** **[+追加]** を選択し、**SHWEB EUS2** 用の環境を追加します。 別の Azure App Service のデプロイを選択します。
+17. **[パイプライン]**  >  **[ステージ]** と選択し、 **[+追加]** を選択して **SHWEB EUS2** 用の環境を追加します。 別の Azure App Service のデプロイを選択します。
 
     ![環境の追加](./media/contoso-migration-refactor-web-app-sql/pipeline17.png)
 

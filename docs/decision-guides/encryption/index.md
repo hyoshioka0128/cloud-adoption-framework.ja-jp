@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7fa525ae5a2f0a7fe6d2075cd13d2bc9a1b08713
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 703a5152ef47d19ec5eb654f9ba4d83786562d12
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996464"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224393"
 ---
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 
@@ -36,7 +36,7 @@ Azure Key Vault などの最新のキー管理システムでは、開発とテ�
 クラウドへの移行を計画する際は、次の表を参照して、セキュリティ保護された管理しやすいクラウドのデプロイを作成するために不可欠な暗号化キー、証明書、およびシークレットの格納と管理の実行方法を決定してください。
 
 | Question | クラウドネイティブ | Bring Your Own Key | Hold your own key |
-|---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
+|--- |--------------|--------|-------------|
 | 組織では一元的なキーとシークレットの管理が行われていませんか                                                                    | はい          | いいえ     | いいえ          |
 | デバイスに対するキーとシークレットの作成はオンプレミスのハードウェアに制限する必要がある一方で、それらのキーはクラウドで使用されますか | いいえ           | はい    | いいえ          |
 | 組織にはキーがオフサイトに格納されるのを禁止する規則やポリシーがありますか                | いいえ           | いいえ     | はい         |
@@ -45,7 +45,7 @@ Azure Key Vault などの最新のキー管理システムでは、開発とテ�
 
 クラウドネイティブのキー管理では、すべてのキーとシークレットは、Azure Key Vault などのクラウドベースのコンテナーで生成、管理、および格納されます。 このアプローチでは、キーのバックアップ、格納、更新といったキーの管理に関連する多くの IT タスクが簡略化されます。
 
-クラウドネイティブのキー管理システムの使用には、次の前提条件が含まれています。
+**クラウドネイティブの前提条件:** クラウドネイティブのキー管理システムの使用には、次の前提条件が含まれています。
 
 - 組織のシークレットとキーの作成、管理、ホストについて、クラウドのキー管理ソリューションを信頼します。
 - クラウドのキー管理システムにアクセスするために暗号化サービスまたはシークレットへのアクセスに依存するすべてのオンプレミス アプリケーションとサービスを有効にします。
@@ -121,10 +121,10 @@ Bring Your Own Key アプローチでは、オンプレミス環境内の専用 
 
 Azure での暗号化とキー管理の詳細については、以下を参照してください。
 
-- 「[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)」。 Azure で暗号化を使用して保存データと転送中のデータの両方が保護される方法について詳細に説明されています。
-- [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview)。 Key Vault は、Azure 内の暗号化キー、シークレット、証明書を格納および管理するための主要なキー管理システムです。
-- [Azure のデータ セキュリティと暗号化のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)。 Azure のデータ セキュリティと暗号化のベスト プラクティスの説明。
-- 「[Confidential computing in Azure (Azure での Confidential Computing)](https://azure.microsoft.com/solutions/confidential-compute)」。 Azure の Confidential Computing イニシアチブでは、信頼できる実行環境または使用中のデータを保護するための他の暗号化メカニズムを作成するためのツールとテクノロジが提供されます。
+- **[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview):** Azure で暗号化を使用して保存データと転送中のデータの両方が保護される方法について詳細に説明されています。
+- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview):** Key Vault は、Azure 内の暗号化キー、シークレット、証明書を格納および管理するための主要なキー管理システムです。
+- **[Azure のデータ セキュリティと暗号化のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)。** Azure のデータ セキュリティと暗号化のベスト プラクティスの説明。
+- **[Azure におけるコンフィデンシャル コンピューティング](https://azure.microsoft.com/solutions/confidential-compute):** Azure の Confidential Computing イニシアチブでは、信頼できる実行環境または使用中のデータを保護するための他の暗号化メカニズムを作成するためのツールとテクノロジが提供されます。
 
 ## <a name="next-steps"></a>次のステップ
 

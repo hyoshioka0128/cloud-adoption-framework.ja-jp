@@ -1,0 +1,186 @@
+### YamlMime:Hub
+title: Azure 向けの Microsoft Cloud 導入フレームワーク
+summary: クラウド導入フレームワークは、Microsoft が提供する実証済みのガイダンスであるドキュメント、実装ガイド、ベスト プラクティス、ツールのコレクションであり、クラウド導入作業の時間が短縮されるように設計されています。
+brand: azure
+metadata:
+  title: Azure 向けの Microsoft Cloud 導入フレームワーク
+  description: クラウド導入フレームワークは、クラウド導入作業の時間が短縮されるように設計されている、ドキュメント、実装ガイド、ベスト プラクティス、ツールのコレクションです。
+  ms.service: cloud-adoption-framework
+  ms.topic: landing-page
+  services: cloud-adoption-framework
+  author: JanetCThomas
+  ms.author: janet
+  ms.date: 04/20/2020
+  ms.openlocfilehash: 2214466178729bcf6cb0e6ddd02a22d036039004
+  ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 05/12/2020
+  ms.locfileid: "83228305"
+highlightedContent:
+  items:
+  - title: クラウド導入作業に着手する
+    itemType: get-started
+    url: ./get-started/index.md
+  - title: クラウド導入用のツールとテンプレートを探す
+    itemType: download
+    url: ./reference/tools-templates.md
+  - title: クラウド導入フレームワークとは
+    itemType: overview
+    url: ./overview.md
+  - title: クラウド導入フレームワークの新機能
+    itemType: whats-new
+    url: ./get-started/whats-new.md
+productDirectory:
+  title: クラウド導入フレームワークのガイダンス
+  summary: このガイダンスは、クラウド導入ライフサイクルのフェーズに対応しており、適切なタイミングで適切なガイダンスに簡単にアクセスできます。
+  items:
+  - title: はじめに
+    imageSrc: https://docs.microsoft.com/media/common/i_road-map.svg
+    links:
+    - url: ./get-started/cloud-concepts.md
+      text: 基本的な決定事項を文書化する
+    - url: ./get-started/migrate.md
+      text: 移行を促進する
+    - url: ./get-started/operational-excellence.md
+      text: オペレーショナル エクセレンスを実現する
+    - url: ./get-started/org-alignment.md
+      text: 組織の足並みを揃える
+  - title: 戦略
+    imageSrc: ./_images/caf-strategy.png
+    links:
+    - url: ./strategy/motivations.md
+      text: 動機
+    - url: ./strategy/business-outcomes/index.md
+      text: ビジネス成果
+    - url: ./strategy/partner-alignment.md
+      text: パートナー戦略を調整する
+    - url: ./strategy/first-adoption-project.md
+      text: 最初の正しいプロジェクトを選択する
+  - title: プラン
+    imageSrc: ./_images/caf-plan.png
+    links:
+    - url: ./digital-estate/rationalize.md
+      text: デジタル資産を合理化する
+    - url: ./plan/initial-org-alignment.md
+      text: 組織の配置
+    - url: ./plan/suggested-skills.md
+      text: スキルの準備計画
+    - url: ./plan/template.md
+      text: クラウド導入計画の DevOps
+  - title: Ready
+    imageSrc: ./_images/caf-ready.png
+    links:
+    - url: ./ready/azure-setup-guide/index.md
+      text: Azure セットアップ ガイド
+    - url: ./ready/landing-zone/migrate-landing-zone.md
+      text: 最初のランディング ゾーン
+    - url: ./ready/considerations/index.md
+      text: ランディング ゾーンの展開
+    - url: ./ready/azure-best-practices/index.md
+      text: Azure 対応性のベスト プラクティス
+  - title: 移行
+    imageSrc: ./_images/caf-migrate.png
+    links:
+    - url: ./migrate/azure-migration-guide/index.md
+      text: Azure 移行ガイド
+    - url: ./migrate/azure-best-practices/contoso-migration-overview.md
+      text: 移行シナリオ
+    - url: ./migrate/azure-best-practices/index.md
+      text: クラウド移行のベスト プラクティス
+    - url: ./migrate/migration-considerations/index.md
+      text: プロセス改善
+  - title: イノベーション
+    imageSrc: ./_images/caf-adopt.png
+    links:
+    - url: ./innovate/business-value.md
+      text: 事業価値における合意
+    - url: ./innovate/innovation-guide/index.md
+      text: Azure イノベーション ガイド
+    - url: ./innovate/best-practices/index.md
+      text: ベスト プラクティス
+    - url: ./innovate/considerations/adoption.md
+      text: フィードバック ループ
+  - title: ガバナンス
+    imageSrc: ./_images/caf-govern.png
+    links:
+    - url: ./govern/methodology.md
+      text: 手法
+    - url: ./govern/benchmark.md
+      text: ベンチマーク評価
+    - url: ./govern/initial-foundation.md
+      text: ガバナンスの基礎
+    - url: ./govern/foundation-improvements.md
+      text: 基礎を改善する
+  - title: 管理する
+    imageSrc: ./_images/caf-manage.png
+    links:
+    - url: ./manage/azure-management-guide/index.md
+      text: 管理ベースライン
+    - url: ./manage/considerations/business-alignment.md
+      text: ビジネス コミットメント
+    - url: ./manage/best-practices.md
+      text: ベースラインを展開する
+    - url: ./manage/design-principles.md
+      text: 設計原則を評価する
+  - title: 整理
+    imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
+    links:
+    - url: ./organize/index.md
+      text: 組織の配置
+    - url: ./organize/organization-structures.md
+      text: チームの確立
+    - url: ./organize/raci-alignment.md
+      text: 責任を一致させる
+tools:
+  title: Microsoft Learn でスキルを身に付ける
+  summary: 次の Microsoft Learn モジュールを修了すると、Azure とクラウド導入フレームワークについて詳しく学習できます。
+  items:
+  - title: Azure 向けの Microsoft Cloud 導入フレームワーク
+    imageSrc: ./_images/learn-caf-logo.png
+    url: https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/index
+  - title: Azure 基礎
+    imageSrc: ./_images/learn-azure-fundamentals-logo.png
+    url: https://docs.microsoft.com/learn/paths/azure-fundamentals
+  - title: Azure のビジネス価値を学習する
+    imageSrc: ./_images/learn-business-value-of-azure-logo.png
+    url: https://docs.microsoft.com/learn/paths/learn-business-value-of-azure
+conceptualContent:
+  title: 評価
+  summary: 評価は、クラウドへの過程を計画するのに役立ちます。 これらを使用して、現在の状態と望ましい状態の違いを明らかにします。 目的の状態に到達するのに役立つ、パーソナライズされて精選された推奨事項を提供します。
+  items:
+  - title: Cloud Journey Tracker
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker
+      itemType: get-started
+      text: ビジネスのニーズに基づいてクラウド導入パスを特定します。
+  - title: 戦略的な移行評価と準備ツール (SMART)
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=Strategic-Migration-Assessment
+      itemType: get-started
+      text: 移行作業の障害物を取り除き、プロセスを改善し、ビジネスの成功を促進します。
+  - title: ガバナンス ベンチマーク
+    links:
+    - url: https://www.cafbaseline.com
+      itemType: quickstart
+      text: 現在の状態と、ビジネス上の優先事項との間のギャップを特定し、それらのギャップに対処するのに役立つ適切なリソースを取得します。
+  - title: Azure アーキテクチャ レビュー
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=azure-architecture-review
+      itemType: architecture
+      text: 優先順位の高いワークロードに対して基本的な操作を超える方法を調べます。
+additionalContent:
+  sections:
+  - title: サポートを検索する
+    summary: クラウド導入作業に障害物がある場合、それを取り除くのに役立つリソースが用意されています。
+    items:
+    - title: FastTrack for Azure
+      summary: Microsoft のエンジニアから支援を受ける
+      url: https://azure.microsoft.com/programs/azure-fasttrack
+    - title: Azure 移行プログラム
+      summary: クラウドへのワークロードの移行に関して支援を受ける
+      url: https://azure.microsoft.com/migration/migration-program
+    - title: パートナーを見つける
+      summary: 作業を始める手助けをしてくれるパートナーを見つける
+      url: https://aka.ms/adopt/findapartner
+  footer: クラウド導入フレームワークがビジネスに適している理由を確認してください。 [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)

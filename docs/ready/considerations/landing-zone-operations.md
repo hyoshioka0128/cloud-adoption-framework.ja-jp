@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7c3e7bb61ba6fde3ad2c236706673fbc7d195ef6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 43325baa63035779a7a7482faaf828f2ecc5614c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122048"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223084"
 ---
 # <a name="improve-landing-zone-operations"></a>ランディング ゾーンの運用の改善
 
@@ -27,14 +27,16 @@ ms.locfileid: "81122048"
 - [管理操作の一元化](../../manage/centralize-operations.md): Azure Lighthouse を使用して、複数の Azure テナントの運用管理を一元化します。
 - [運用適合性レビューの確立](../../manage/operational-fitness-review.md): 運用適合性について環境を再確認します。
 - ワークロード固有の運用に関するベスト プラクティス:
-  - [回復性のチェックリスト](https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [障害モードの分析](https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [リージョン全体でのサービスの中断から回復する](https://docs.microsoft.com/azure/architecture/resiliency/recovery-loss-azure-region?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [データの破損または偶発的な削除から復旧する](https://docs.microsoft.com/azure/architecture/framework/resiliency/data-management?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+  - [回復性のチェックリスト](https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [障害モードの分析](https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [リージョン全体でのサービスの中断から回復する](https://docs.microsoft.com/azure/architecture/resiliency/recovery-loss-azure-region?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [データの破損または偶発的な削除から復旧する](https://docs.microsoft.com/azure/architecture/framework/resiliency/data-management?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
 ## <a name="four-steps-to-improve-operations-beyond-a-single-landing-zone"></a>1 つのランディング ゾーンを超えて運用を改善するための 4 つのステップ
 
 [管理手法](../../manage/index.md)では、運用管理能力を構築するための全体的なガイダンスを提供します。[管理手法](../../manage/index.md)に関するページを参照してください。 この手法の基本構造と、その手法の次の手順を使用して、ランディング ゾーンの運用とすべてのランディング ゾーンでの運用を改善します。
+
+<!-- cSpell:ignore caf -->
 
 ![管理手法](../../_images/manage/caf-manage.png)
 

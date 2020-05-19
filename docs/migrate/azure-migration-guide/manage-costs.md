@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99f4b2ec0a9a92c9f919a005667558ebc2a036c6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0ce3b5ee28983851e97c10360cf6707b4e3c17d1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998030"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214516"
 ---
 <!-- cSpell:ignore bandersmsft -->
 
@@ -44,7 +44,7 @@ ms.locfileid: "80998030"
 
 手動のコスト計算については、移行されるワークロードのアーキテクチャに基づいて迅速なコスト見積もりを提供できる便利な計算ツールが 2 つ存在します。
 
-- Azure [料金計算ツール](https://azure.microsoft.com/pricing/calculator)は、手動で入力された Azure 製品に基づいてコスト見積もりを提供します。
+- [Azure 料金計算ツール](https://azure.microsoft.com/pricing/calculator)は、選択した Azure 製品のコスト見積もりを提供します。
 - 決定のために、将来のクラウド コストと現在のオンプレミス コストの比較が必要になる場合があります。 [総保有コスト (TCO) 計算ツール](https://azure.microsoft.com/pricing/tco/calculator)は、このような比較を提供できます。
 
 これらの手動のコスト計算ツールを独自に使用すると、潜在的な支出や削減を予測できます。 これらを Azure Migrate のコスト予測ツールと組み合わせて使用すると、代替アーキテクチャまたはパフォーマンス制約に合うようにコスト予測を調整することもできます。
@@ -66,8 +66,9 @@ Azure Migrate は、コレクターやサービス マップによってキャ�
 
 結果の見積もり (下の図を参照) によって、コンピューティングとストレージの毎月のコストが識別されます。これは多くの場合、クラウド コストの最大の部分を表しています。
 
-![コスト詳細ビュー](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
-*図 1 - Azure Migrate での評価の [コスト詳細] ビューの画像。*
+![[コスト詳細] ビュー](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
+
+"_図 1:Azure Migrate での評価の [コスト詳細] ビューの画像。_
 
 ## <a name="additional-resources"></a>その他のリソース
 
@@ -92,14 +93,14 @@ Azure Migrate は、コレクターやサービス マップによってキャ�
 
 Azure Cost Management は、消費習慣のより総合的なビュー (コストの詳細ビューや一定期間にわたる消費傾向を含む) を提供できます。 大規模な移行や複雑な移行の場合は、このビューにより、コスト管理に関する広範囲にわたる意思決定を行うために必要な分析情報が提供される可能性があります。
 
-前提条件:このタブの残りでは、読者が Azure セットアップ ガイドの完了中に Azure Cost Management の設定を完了していることを前提にしています。 Azure Cost Management の構成の詳細については、この [Azure セットアップ ガイド](../../ready/azure-setup-guide/manage-costs.md)を参照してください。 データが入力されたら、次のいくつかの手順に従って、収集されたデータに基づいて毎月のコストを見積もります。
+前提条件:このタブの残りでは、読者が Azure セットアップ ガイドの完了中に Azure Cost Management の設定を完了していることを前提にしています。 Azure Cost Management の構成の詳細については、Azure セットアップ ガイドの「[Azure リソースのコストと課金を管理する](../../ready/azure-setup-guide/manage-costs.md)」を参照してください。 データが入力されたら、次のいくつかの手順に従って、収集されたデータに基づいて毎月のコストを見積もります。
 
 次の手順では、サブスクリプションに対する Azure Cost Management のコスト分析データを読み込みます。
 
 1. ポータルで **[コストの管理と請求]** に移動します。 左側のウィンドウに [コストの管理と請求] が表示されない場合は、 **[すべてのサービス]** を選択します。 サービス メニュー ウィンドウで、 **[Monitoring and Management]\(監視と管理\)** の **[コストの管理と請求]** を選択します。
 2. [コストの管理と請求] で、左側のナビゲーション ウィンドウの **[コスト管理]** を選択して、クラウド コストの分析と最適化を開始します。
 3. [コスト管理] で、 **[コスト分析]** を選択します。
-    a. コスト分析で別のスコープに切り替えるには、 **[スコープ]** ピルを使用します。
+    1. コスト分析で別のスコープに切り替えるには、 **[スコープ]** ピルを使用します。
 
 この分析を使用すると、総コスト、予算 (使用可能な場合)、および累積コストをレビューできます。 各計算は、サービス、リソース、および期間ごとに表示できます。 最も重要なこととして、コストをタグごとに分析できます。 資産 (インフラストラクチャ、アプリ、およびデータ) の適切な名前付けおよびタグ付けは、すべての健全なガバナンスやコスト管理プロセスの基本的な開始点です。 適切なタグにより、コストの管理が改善されると共に、パフォーマンスやコストの最適化のより明確な効果が得られます。
 
@@ -131,7 +132,7 @@ Microsoft アカウント担当者と話をして、どのようにしたら現�
 
 ## <a name="azure-reservations"></a>Azure の予約
 
-[Azure の予約](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations)を使用すると、仮想マシンまたは SQL Database のコンピューティング容量の 1 年または 3 年分を前払いできます。 前払いでは、使用するリソースに関する割引を受けることができます。 Azure の予約では、仮想マシンまたは SQL Database のコンピューティング コストを大幅に削減できます (1 年または 3 年のどちらかの前払い契約の従量課金制の料金で最大 72 %)。 予約は課金割引を提供するもので、仮想マシンまたは SQL Database の実行時の状態には影響しません。
+[Azure の予約](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations)を使用すると、仮想マシンまたは SQL Database のコンピューティング容量の 1 年または 3 年分を前払いできます。 前払いでは、使用するリソースに関する割引を受けることができます。 予約では、仮想マシンまたは SQL Database のコンピューティング コストを大幅に削減できます (1 年または 3 年のどちらかの前払い契約の従量課金制の料金で最大 72%)。 予約は課金割引を提供するもので、仮想マシンまたは SQL Database の実行時の状態には影響しません。
 
 ## <a name="use-azure-hybrid-benefit"></a>Azure ハイブリッド特典を利用する
 

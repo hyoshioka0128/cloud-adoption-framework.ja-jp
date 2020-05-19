@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bbe61dfa9962d194ddb994b6753c2cbd07a9997f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 23ce74def1dd0d5efc77b448b6fe3303a890b994
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120725"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214567"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="assess-workloads-and-refine-plans"></a>ワークロードを評価して計画を調整する
 
 このガイドのリソースは、各ワークロードを評価し、各ワークロードの移行に対する適合性についての前提条件を吟味し、移行オプションに関するアーキテクチャ上の決定を確定するのに役立ちます。
@@ -102,7 +104,7 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 
 [増分型の合理化](../../digital-estate/rationalize.md#incremental-rationalization)を正しく実現するには、均等に重み付けされた 2 つの手順が必要です。 どちらの手順でも、データおよび環境の分析情報が必要です。 ただし、どちらのアプローチでも、移行作業を成功させるために必要な時間と詳細の粒度が尊重されます。
 
-- **[10 のパワーのリリース計画](../../digital-estate/rationalize.md#release-planning):** 最初の合理化とリリース計画では、[合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md) のうち 1 つだけが評価で使用されます。 [クラウド導入戦略に関するドキュメント](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)で定義されている全体的な動機に最適な合理化オプションに基づいて、見積もりと計画を行います。
+- [10 のパワーのリリース計画](../../digital-estate/rationalize.md#release-planning):最初の合理化とリリース計画では、[合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md) のうち 1 つだけが評価で使用されます。 [クラウド導入戦略に関するドキュメント](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)で定義されている全体的な動機に最適な合理化オプションに基づいて、見積もりと計画を行います。
 
 - **各ワークロードの詳細な評価:** 10 のパワーのリリース計画に関連する前提条件は、計画を策定するには十分受け入れ可能です。 ただし、移行前に評価されていない場合は、これらの同じ前提条件によって重大な問題が発生する可能性があります。
 
@@ -112,7 +114,7 @@ Azure Migrate または任意の評価ツールで評価データをよく確認
 
 移行の前に、そのデータと、製品所有者、開発チーム、管理者などとの発見に関する討議内容を使用して、この特定のワークロードの移行の可能性を評価します。 この発見を使用して、このワークロードに関する核となる前提条件を吟味します。 検出内容によって移行または導入の計画が変更された場合は、それに応じて計画を更新します。
 
-これらの前提を吟味する最初の手順は、[5 つの R すべてのレビュー](../../digital-estate/rationalize.md)です。
+これらの前提を吟味する最初の手順は、[合理化の 5 R すべてのレビュー](../../digital-estate/rationalize.md)です。
 
     - 想定される合理化アプローチは、このワークロードに適していますか。 これは最適なアプローチですか。
     - [レプリケーションの物理的性質](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)のいずれかが、このワークロードの移行に影響しますか。

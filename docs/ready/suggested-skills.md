@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 75b410e293d3e083b45b91b543bce4b70b8078ee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 118b8af3ed191be6b203413fc2a5399f6aa6a04d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997747"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221673"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
@@ -20,7 +20,7 @@ ms.locfileid: "80997747"
 
 ## <a name="organizational-readiness-learning-paths"></a>組織の準備のラーニング パス
 
-クラウド導入の取り組みに関連する動機とビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チーム (V チーム) を確立することが必要な場合もあります。 以下の記事は、望ましい結果に従ってこれらのチームを編成するために必要なスキルの開発に役立ちます。
+クラウド導入の取り組みに関連する動機とビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チーム (v チーム) を確立することが必要な場合もあります。 以下の記事は、望ましい結果に従ってこれらのチームを編成するために必要なスキルの開発に役立ちます。
 
 - [初期の組織配置](./index.md):特定の目標を達成しやすくするための組織の配置とさまざまなチーム構造の概要です。
 - [サイロおよび封土の分析](../organize/fiefdoms-silos.md): 2 つの一般的な組織のアンチパターンと、生産性の高いコラボレーションにチームを導く方法を理解します。
@@ -62,7 +62,7 @@ Azure に関する知識を [Microsoft Azure 認定のトレーニングや試�
 
 Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
 
-次の例で、クラウド導入フレームワークの準備完了部分に合わせて、Microsoft Learn のいくつかのカスタマイズされたラーニングパスを示します。
+次の例で、クラウド導入フレームワークの準備手法に合わせてカスタマイズされた、Microsoft Learn のいくつかのラーニング パスを示します。
 
 [Azure の基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):高可用性、拡張性、弾力性、機敏性、フォールト トレランス、ディザスター リカバリーなどのクラウドの概念について説明します。 Azure でのクラウド コンピューティングの利点と、それによって時間とコストを節約する方法について理解します。 Azure クラウドに移行するための基本的な戦略を比較対照します。 コンピューティング、ネットワーク、ストレージ、セキュリティなど、Azure で利用できる広範なサービスを調査します。
 

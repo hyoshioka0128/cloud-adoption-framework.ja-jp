@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ddbd2374cea98d08760e53eba885171aa854ed17
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 500df8bb2ff239a34b2eb87dbe9f6eb2f215c005
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429027"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222081"
 ---
 # <a name="prerequisites-for-migration"></a>移行の前提条件
 
@@ -26,10 +26,10 @@ ms.locfileid: "80429027"
 
 クラウドの移行を始める前に、「Cloud Adoption Framework (クラウド導入フレームワーク)」の「[Plan (計画)](../../../strategy/index.md)」と「[Ready (準備)](../../../ready/index.md)」のガイダンスを参照して、組織がクラウド導入および移行プロセスの準備ができていることを確認します。 特に、移行を推進するビジネスの要件と想定される結果を確認します。
 
-- [概要: 移行](../../../getting-started/migrate.md)
+- [はじめに: 移行を促進する](../../../get-started/migrate.md)
 - [クラウドに移行する理由](../../../strategy/motivations.md)
 
-## <a name="definition-of-done"></a>"*完了*" の定義
+## <a name="definition-of-_done_"></a>"_完了_" の定義
 
 以下の条件に該当する場合、前提条件は満たされます。
 
@@ -38,7 +38,7 @@ ms.locfileid: "80429027"
 - **技術の対応性。** 移行された資産を受け取るランディング ゾーン (つまり、クラウド内に割り当てられたホスティング領域) は、最初に移行されるワークロードをホストする最小要件を満たしています。
 
 > [!CAUTION]
-> 準備は移行が成功するためのキーです。 ただし、準備が多すぎると、"*分析まひ*" の状況になり、計画に時間をかけすぎて移行作業が大幅に遅れる可能性があります。 このセクションで定義されているプロセスと前提条件は、意思決定を支援するためのものですが、有意義な進行を妨げるものではありません。
+> 準備は移行が成功するためのキーです。 ただし、準備が多すぎると、"_分析まひ_" の状況になり、計画に時間をかけすぎて移行作業が大幅に遅れる可能性があります。 このセクションで定義されているプロセスと前提条件は、意思決定を支援するためのものですが、有意義な進行を妨げるものではありません。
 >
 > 最初の移行には比較的単純なワークロードを選択してください。 この最初の移行を計画して実施する際には、このセクションで説明するプロセスを使用してください。 この最初の移行作業で、チームはクラウドの原則をすぐに理解し、クラウドのしくみを否応なく学ぶことになります。 チームが経験を積んできたら、より規模が大きく複雑な移行にとりかかるときにチームの知識をまとめます。
 

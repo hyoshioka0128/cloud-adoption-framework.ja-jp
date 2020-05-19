@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7f0ebc370b18e5c010322a2dacac8750714810f8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 53bf6e8a6c3e01255e57613b3b1a3cd2fa9cdc07
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427355"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222251"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -161,7 +161,7 @@ Visual Studio App Center では、1 回の呼び出しによって複数のプ�
 
 #### <a name="action"></a>アクション
 
-Azure Kubernetes Service を構成または監視するには、次の手順に従います。
+AKS サービスを構成または監視するには:
 
 1. **Azure Kubernetes Services** に移動します。
 2. 新しいサービスを構成する: **[追加]** を選択し、プロンプトに従います。
@@ -171,7 +171,7 @@ Azure Kubernetes Service を構成または監視するには、次の手順に�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -185,7 +185,7 @@ Azure Functions では、小さなコード単位 (関数) をクラウドで実
 
 Azure Functions ランタイムでは、C#、Java、JavaScript、Python など、さまざまな言語がサポートされています。 一覧については、「[Azure Functions でサポートされている言語](https://docs.microsoft.com/azure/azure-functions/supported-languages)」をご覧ください。
 
-関数のもう 1 つの利点は、HTTPTriggers、TimerTriggers、他の Azure サービス (Blob Storage、EventGrid、ServiceBus など) からのトリガーなど、さまざまなアクションやイベントによってトリガーできることです。 トリガーとバインドの詳細については、「[Azure Functions でのトリガーとバインドの概念](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)」をご覧ください。
+関数のもう 1 つの利点は、HTTPTriggers、TimerTriggers、他の Azure サービス (Blob Storage、EventGrid、ServiceBus など) からのトリガーなど、さまざまなアクションやイベントによってトリガーできることです。 トリガーとバインドの詳細については、「[Azure Functions でのトリガーとバインドの概念](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)」を参照してください。
 
 #### <a name="action"></a>アクション
 

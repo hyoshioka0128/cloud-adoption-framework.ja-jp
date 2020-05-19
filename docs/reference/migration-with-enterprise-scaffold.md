@@ -8,13 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: e276f6fd504ec0417ec15504cda52682d67bcba6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b757a0066250a37816eed5445d79663b72a7aae3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119785"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219327"
 ---
+<!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
@@ -162,13 +163,13 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 ポリシーを作成して、それを論理的なイニシアティブにグループ分けしたら、ポリシーをスコープ (管理グループ、サブスクリプション、またはリソース グループ) に割り当てる必要があります。 割り当てによって、ポリシーの割り当てからサブスコープを除外することもできます。 たとえば、あるサブスクリプション内のパブリック IP の作成を拒否する場合に、保護対象の DMZ に接続するリソース グループを除外する割り当てを作成できます。
 
-ポリシーの例をいくつか参照してください。Azure 内でさまざまなリソースにポリシーとイニシアティブを適用できる方法が、この [GitHub](https://github.com/Azure/azure-policy) リポジトリに記載されています。
+ポリシーの例をいくつか参照してください。Azure 内でさまざまなリソースにポリシーとイニシアティブを適用できる方法が、この [GitHub](https://github.com/azure/azure-policy) リポジトリに記載されています。
 
 ## <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 
 パブリック クラウドの使用を開始するにあたり、最初に重要な質問として、「リソースにアクセスできる必要があるのはだれか」、 「このアクセスを制御するにはどうすればよいか」と自問しているかもしれません。 Azure portal とポータルでのリソースへのアクセス制御は、クラウド内の資産の長期的な安全性にとって不可欠です。
 
-リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 つまり、Azure AD はオンプレミスの Active Directory と同じでは "*ありません*"。Azure AD テナントは何か、Azure 加入契約とどのように関連しているかを理解することが重要です。 Azure AD とオンプレミスの Active Directory の基本を確実に学ぶためには、[こちら](../govern/resource-consistency/resource-access-management.md)の情報を確認してください。 Active Directory を Azure AD に接続して同期するには、[Azure AD Connect ツール](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
+リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 つまり、Azure AD はオンプレミスの Active Directory と同じでは "_ありません_"。Azure AD テナントは何か、Azure 加入契約とどのように関連しているかを理解することが重要です。 Azure AD とオンプレミスの Active Directory の基本を確実に学ぶためには、[こちら](../govern/resource-consistency/resource-access-management.md)の情報を確認してください。 Active Directory を Azure AD に接続して同期するには、[Azure AD Connect ツール](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
 
 ![AD アーキテクチャの図](../_images/reference/ad-architecture.png)
 
@@ -182,7 +183,7 @@ Azure が最初にリリースされたときには、サブスクリプショ�
 - 求められている作業を行うために必要な**最小限の特権**の付与の原則に従います。
 
 > [!IMPORTANT]
->[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)、および[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)機能の使用を検討してください。これらによって、セキュリティが強化され、Azure サブスクリプション全体の管理操作の可視性が向上します。 これらの機能は有効な Azure AD Premium ライセンスで使用でき (機能によって異なる)、アイデンティティをさらに保護して管理します。 Azure AD PIM により、承認ワークフローの "Just-in-Time" 管理アクセスと、管理者のアクティブ化とアクティビティの完全な監査が可能になります。 Azure Multi-Factor Authentication はもう 1 つの重要な機能であり、Azure portal へのサインインの 2 段階認証を有効にします。 条件付きアクセス制御と組み合わせると、セキュリティ侵害のリスクを効果的に管理できます。
+>[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)、および[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)機能の使用を検討してください。これらによって、セキュリティが強化され、Azure サブスクリプション全体の管理操作の可視性が向上します。 これらの機能は有効な Azure AD Premium ライセンスで使用でき (機能によって異なる)、アイデンティティをさらに保護して管理します。 Azure AD PIM により、承認ワークフローの "Just-in-Time" 管理アクセスと、管理者のアクティブ化とアクティビティの完全な監査が可能になります。 Azure Multi-Factor Authentication はもう 1 つの重要な機能であり、Azure portal へのサインインの 2 段階認証を有効にします。 条件付きアクセス制御と組み合わせると、セキュリティ侵害のリスクを効果的に管理できます。
 
 ID およびアクセス制御について計画を立てて準備すること、および [Azure Identity Management のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)に従うことは、採用できる最適なリスク軽減戦略の 1 つであり、すべてのデプロイにおいて必須と考える必要があります。
 
@@ -244,11 +245,11 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 - **Azure Monitor:** Azure Monitor は、Azure リソースを 1 つのソースから監視できるコア プラットフォーム サービスです。 Azure Monitor の Azure portal インターフェイスは、Application Insights、Log Analytics、ネットワーク監視、管理ソリューション、Service Map といった、詳細な監視機能を含め、Azure 全体のすべての監視機能が一元管理される出発点です。 Azure Monitor を使用すると、クラウド全体の Azure リソースのメトリックとログを視覚化、クエリ、ルーティング、アーカイブし、そのメトリックとログに対してアクションを実行できます。 ポータルに加え、Monitor PowerShell コマンドレット、クロスプラットフォーム CLI、または Azure Monitor REST API でデータを取得できます。
 
-- **Azure Advisor:** Azure Advisor では、サブスクリプションと環境全体のテレメトリを常に監視します。また、Azure リソースを最適化して費用を節約し、アプリケーションを構成するリソースのパフォーマンス、セキュリティ、および可用性を向上させる方法のベスト プラクティスに関する推奨を行います。
+- **Azure Advisor:** Azure Advisor は、サブスクリプションと環境の全体にわたって継続的にテレメトリを監視します。 また、Azure リソースのコストを最適化し、アプリケーション リソースのパフォーマンス、セキュリティ、可用性を向上させるためのベスト プラクティスが推奨されます。
 
 - **サービス正常性:** Azure Service Health では、アプリケーションに影響を及ぼす可能性がある Azure サービスの問題を特定します。これは、予定メンテナンス期間を計画する際に役立ちます。
 
-- **アクティビティ ログ:** アクティビティ ログには、サブスクリプションのリソースに対するすべての操作が示されています。 提供される監査証跡によって、リソースに対する作成、更新、削除の各操作について "何を"、"だれが"、"いつ" を判別できます。 アクティビティ ログ イベントがプラットフォームに保存され、クエリで使用できる期間は 90 日です。 アクティビティ ログを Log Analytics に取り込むと、長期間保存することができ、複数のリソースに対して詳細なクエリと分析を行うことができます。
+- **アクティビティ ログ:** アクティビティ ログには、サブスクリプションのリソースに対するすべての操作が示されています。 提供される監査証跡によって、リソースに対する作成、更新、削除のすべての操作について、_何を_、_だれが_、_いつ_を特定できます。 アクティビティ ログ イベントがプラットフォームに保存され、クエリで使用できる期間は 90 日です。 アクティビティ ログを Log Analytics に取り込むと、長期間保存することができ、複数のリソースに対して詳細なクエリと分析を行うことができます。
 
 ### <a name="deep-application-monitoring"></a>詳細なアプリケーション監視
 
@@ -279,14 +280,16 @@ Microsoft では、コストの視覚化、追跡、および管理に役立つ�
 
 - **サブスクリプション リソース コスト:** ポータルにある [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) ビューでは、コストをひとめで確認でき、リソースまたはリソース グループごとの毎日の支出に関する情報を得ることができます。
 - **Azure Cost Management:** これにより、Azure の支出額および他のパブリック クラウド プロバイダーでの支出を管理および分析することができます。 Free レベルと有料レベルの両方があり、豊富な機能があります。
-- **Azure Budgets とアクション グループ:** 何にコストがかかるか、それについて何をすべきかを把握するのは、最近まではほぼ手動で行っていました。 Azure Budgets とその API が導入されたことにより、コストがしきい値に達したときに、[この例](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)のようにアクションを作成できるようになりました。 たとえば、"test" リソース グループが予算の 100% に到達したら、シャットダウンできます。
+- **Azure Budgets とアクション グループ:** 何にコストがかかるか、それについて何をすべきかを把握するのは、最近まではほぼ手動で行っていました。 Azure Budgets とその API が導入されたことにより、コストがしきい値に達したときに[アクションを作成](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)できるようになりました。 たとえば、"test" リソース グループが予算の 100% に到達したら、シャットダウンできます。
 - **Azure Advisor:** 何にコストがかかるかを把握しても、戦いは半分しか終わっていません。もう半分は、その情報に対してどうすべきかを把握することです。 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) では、費用の節約、信頼性の向上、さらにはセキュリティの向上のための処置についてレコメンデーションが提供されます。
 
 ### <a name="external-cost-management-tools"></a>外部のコスト管理ツール
 
+<!-- TODO: Content packs are deprecated. -->
+
 - **Power BI Azure Consumption Insights:** 組織のために独自の視覚エフェクトを作成しますか。 その場合は、Power BI 用の Azure Consumption Insights コンテンツ パックをツールとして選択してください。 このコンテンツ パックと Power BI を使用すると、組織を表すためにカスタムの視覚エフェクトを作成し、コストについて詳しい分析を実行し、さらに充実させるために他のデータ ソースを追加することもできます。
 
-- **Consumption API:** [Consumption API](https://docs.microsoft.com/rest/api/consumption) を使用すると、コストと使用状況のデータに加え、予算、予約インスタンス、Marketplace 請求料金に関する情報にもプログラミングでアクセスできます。 これらの API にアクセスできるのは、エンタープライズ加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest)こともできます。
+- **Azure Consumption API:** [Consumption API](https://docs.microsoft.com/rest/api/consumption) を使用すると、予算、予約インスタンス、マーケットプレース請求料金に関する情報に加えて、コストと使用状況のデータにプログラムからアクセスできます。 これらの API にアクセスできるのは、エンタープライズ加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest)こともできます。
 
 長期の熟練したクラウド ユーザーであるお客様は、特定のベスト プラクティスに従います。
 
@@ -314,9 +317,9 @@ Azure Automation、Event Grid、Azure CLI といった Microsoft 製ツールか
 
 ## <a name="templates-and-devops"></a>テンプレートと DevOps
 
-「自動化」のセクションで強調したように、組織の目標は、ソース管理されたテンプレートとスクリプトを介してリソースをプロビジョニングすること、さらに対話型での環境の構成を最小限にすることです。 継続的なデプロイのための制御された DevOps プロセスと "infrastructure as code" アプローチを組み合わせると、一貫性を保証することができ、環境内での誤差を減らすことができます。 ほぼすべての Azure リソースは、[Azure Resource Manager JSON テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy)を PowerShell または Azure クロス プラットフォーム CLI と、HashiCorp の Terraform (最上のサポートがあり、Azure Cloud Shell に統合される) などのツールと組み合わせてデプロイできます。
+「自動化」のセクションで強調したように、組織の目標は、ソース管理されたテンプレートとスクリプトを介してリソースをプロビジョニングすること、さらに対話型での環境の構成を最小限にすることです。 継続的なデプロイのための制御された DevOps プロセスと "infrastructure as code" アプローチを組み合わせると、一貫性を保証することができ、環境内での誤差を減らすことができます。 ほぼすべての Azure リソースは、[Azure Resource Manager JSON テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy)を、PowerShell または Azure クロス プラットフォーム CLI や、HashiCorp の Terraform (最上のサポートと Azure Cloud Shell との統合が提供される) などのツールと組み合わせてデプロイできます。
 
-[Azure Resource Manager テンプレートを使用する場合のベスト プラクティス](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager)などの記事では、[Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) ツール チェーンを含む Azure Resource Manager テンプレートに DevOps アプローチを適用する場合について、ベスト プラクティスや実例から学んだ内容を説明しています。 特に運用環境と QA 環境に関しては、時間と労力を費やして、組織の要件に合うテンプレートのコア セットを開発し、DevOps ツール チェーン (Azure DevOps、Jenkins、Bamboo、TeamCity、Concourse など) を使用して継続的デリバリー パイプラインを開発してください。 [Azure クイック スタート テンプレート](https://github.com/Azure/azure-quickstart-templates)の大規模なライブラリが GitHub 上にあり、テンプレートの作成を開始するときに役立ちます。また、Azure DevOps を使用するとクラウドベースの配信パイプラインを迅速に作成できます。
+[Azure Resource Manager テンプレートを使用する場合のベスト プラクティス](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager)などの記事では、[Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) ツール チェーンを含む Azure Resource Manager テンプレートに DevOps アプローチを適用する場合について、ベスト プラクティスや実例から学んだ内容を説明しています。 特に運用環境と QA 環境に関しては、時間と労力を費やして、組織の要件に合うテンプレートのコア セットを開発し、DevOps ツール チェーン (Azure DevOps、Jenkins、Bamboo、TeamCity、Concourse など) を使用して継続的デリバリー パイプラインを開発してください。 [Azure クイック スタート テンプレート](https://github.com/azure/azure-quickstart-templates)の大規模なライブラリが GitHub 上にあり、テンプレートの作成を開始するときに役立ちます。また、Azure DevOps を使用するとクラウドベースの配信パイプラインを迅速に作成できます。
 
 運用サブスクリプションまたはリソース グループのベスト プラクティスとしては、RBAC セキュリティを使用して既定で対話型ユーザーを禁止することと、サービス プリンシパルに基づいて自動化された継続的デリバリー パイプラインを使用して、すべてのリソースをプロビジョニングし、すべてのアプリケーション コードを配信することが目標です。 管理者も開発者も Azure portal を使用してリソースを対話形式で構成する必要はありません。 このレベルの DevOps では協調が求められますが、Azure スキャフォールディングのすべての概念を使用して、組織の拡大縮小のニーズを満たす、一貫性を備えたセキュアな環境を提供します。
 
@@ -331,12 +334,18 @@ Azure スキャフォールディング参照モデルの最後のコンポー�
 
 - **仮想ネットワーク**は、サブネットのコンテナー オブジェクトです。 必須ではありませんが、多くの場合、アプリケーションを内部の企業リソースに接続するときに使用されます。
 - **ユーザー定義ルート**を使用すると、サブネット内のルート テーブルを操作して、ネットワーク仮想アプライアンス経由でのトラフィックの送信、またはピアリングした仮想ネットワーク上のリモート ゲートウェイへのトラフィックの送信を行うことができます。
-- **仮想ネットワーク ピアリング**では、2 つ以上の Azure 仮想ネットワークをシームレスに接続し、より複雑なハブとスポークの設計または共有サービス ネットワークを作成できます。
+- **仮想ネットワーク ピアリング**では、Azure の 2 つ以上の仮想ネットワークをシームレスに接続し、より複雑なハブとスポークの設計または共有サービス ネットワークを作成できます。
 - **サービス エンドポイント。** かつて、PaaS サービスはさまざまな方法に依存して、仮想ネットワークからそれらのリソースへのアクセスを保護していました。 サービス エンドポイントを使用すると、接続したエンドポイント**のみ**からの有効な PaaS サービスに対するアクセスを保護することができ、全体のセキュリティが向上します。
 - **セキュリティ グループ**は広範な規則のセットであり、これを使用すると、Azure リソースに対するインバウンドおよびアウトバウンド トラフィックを許可または拒否できるようになります。 [セキュリティ グループ](https://docs.microsoft.com/azure/virtual-network/security-overview)は、**サービス タグ** (Azure Key Vault、Azure SQL Database など一般的な Azure サービスを定義) と**アプリケーション セキュリティ グループ** (Web サーバーやアプリ サーバーなどのアプリケーション構造を定義) を使用して拡張できるセキュリティ規則で構成されます。
 
 > [!TIP]
-> サービス タグとアプリケーション セキュリティ グループをネットワーク セキュリティ グループで使用すると、規則がわかりやすくなるだけではありません &mdash; これは影響を理解するために重要です &mdash; ただし、大きめのサブネット内で極小のセグメント化を効果的に行うことができ、対象が不要に広がらないようにし、柔軟性が高まります。
+> ネットワーク セキュリティ グループでサービス タグとアプリケーション セキュリティ グループを使用して、以下のことを行います。
+>
+> - ルールの読みやすさを向上させます。これは、影響を理解するうえで非常に重要です。
+> - 大きなサブネット内で効果的なマイクロセグメント化を有効にすることで、不規則な拡大が減り、柔軟性が高まります。
+
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 

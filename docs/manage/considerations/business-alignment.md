@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 432e974a304741a64e0cd7da9577ecec5e35d57e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434049"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216590"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>クラウド管理でのビジネス アラインメントの構築
 
@@ -26,14 +26,14 @@ ms.locfileid: "80434049"
 
 - **[重要性](./criticality.md):** ワークロードをビジネス プロセスにマップします。 投資に重点を置くために重要度を順位付けします。
 - **[影響](./impact.md):** 潜在的な停止の影響を理解すると、クラウド管理の投資収益率を評価するために役立ちます。
-- **[コミットメント](./commitment.md):** *ビジネスとの*契約を作成および文書化することによって、真のパートナーシップを構築します。
+- **[コミットメント](./commitment.md):** _ビジネスとの_契約を作成および文書化することによって、真のパートナーシップを構築します。
 
 > [!NOTE]
 > これらの用語の基礎となるのは、SLA、RTO、RPO などの従来の IT 用語です。 特定のビジネス用語と IT 用語のマッピングについては、[コミットメント](./commitment.md)に関する記事を参照してください。
 
-## <a name="ops-management-planning-workbook"></a>運用管理計画のブック
+## <a name="operations-management-workbook"></a>運用管理ブック
 
-この用語のアラインメントに関する会話から生じた判断を把握できるように、GitHub サイトで[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を入手できます。 このブックでは、SLA またはコストの計算は行われません。 そのような手段を把握し、損失回避の取り組みに対する結果を予測するためにのみ利用できます。
+用語のアラインメントに関するこの会話が基になった決定内容を記録する助けになるように、GitHub サイトで[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)が提供されています。 このブックでは、SLA またはコストの計算は行われません。 そのような手段を把握し、損失回避の取り組みに対する結果を予測するためにのみ利用できます。
 
 または、ソリューションが既にクラウドにデプロイされている場合は、Azure でこれらの同じワークロードと関連する資産を直接タグ付けできます。
 

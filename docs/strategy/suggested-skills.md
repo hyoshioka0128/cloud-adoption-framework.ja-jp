@@ -1,5 +1,5 @@
 ---
-title: 計画時のスキル準備パス
+title: 移行の行程の計画フェーズ中のスキル準備パス
 description: Azure 向けのクラウド導入フレームワークを使用して、移行の計画フェーズにおけるスキル準備パスについて学習します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 38b5ebc82052869294eb7ad49e50a1d54b5a696f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997500"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214958"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
 
@@ -43,8 +43,8 @@ ms.locfileid: "80997500"
 
 目的のビジネス ケースを現在および将来のデジタル資産インベントリと合わせることで、ビジネス ケースを精緻化できます。 これらの記事では、デジタル資産の合理化の実現について説明します。
 
-- [増分型の合理化](../digital-estate/rationalize.md)。 遅延バインディングの技術的な決定を適切に調整する合理化に対するアジャイルなアプローチです。
-- [合理化の R](../digital-estate/5-rs-of-rationalization.md)。 合理化のさまざまなオプションについて理解します。
+- [増分型の合理化](../digital-estate/rationalize.md):遅延バインディングの技術的な決定を適切に調整する合理化に対するアジャイルなアプローチです。
+- [合理化の 5 R](../digital-estate/5-rs-of-rationalization.md):合理化のさまざまなオプションについて理解します。
 
 ## <a name="create-a-migration-backlog-technical-plan"></a>移行のバックログ (技術的計画) の作成
 
@@ -86,9 +86,9 @@ Azure に関する知識を [Microsoft Azure 認定のトレーニングや試�
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントを獲得し、レベルを高め、さらなる達成を目指しましょう。
+Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
 
-以下に、クラウド導入フレームワークの "戦略" 部分に合わせて調整された学習パスの例を示します。
+以下に、クラウド導入フレームワークの 戦略手法に合わせて調整された学習パスの例を示します。
 
 [Microsoft Azure のビジネス価値を学習する](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure):この学習エクスペリエンスでは、デジタル変革とクラウドの機能をビジネスの変革に利用する方法を紹介することから始めます。 ここでは、信頼できるクラウド プラットフォーム上で、Microsoft Azure クラウド サービスの機能を利用して組織を強化する方法について説明します。 最後に、まとめとして、組織でこのエクスペリエンスを実現する方法を説明します。
 

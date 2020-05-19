@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ffa318f44a6fe3a856598581ca7cc2de37fbd6f5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e64acdc08f975662d3176964acbc2c0dcd53e3e4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997358"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224240"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Microsoft が使用する分類の一覧を以下に示します。 業界や既
 
 リソース タグはメタデータ保存のための優れたアプローチであり、これらのタグを使用して、デプロイされるリソースにデータ分類情報を適用できます。 分類によるクラウド資産のタグ付けは正式なデータ分類プロセスの代わりにはなりませんが、リソースの管理とポリシーの適用を行うための有益なツールを提供します。 [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) は、データの配置場所 (オンプレミス、Azure など) に関係なく、_データ_自体の分類に役立つ優れたソリューションです。 全体的な分類戦略の一部として検討してください。
 
-Azure でのリソースのタグ付けの詳細については、「[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)」を参照してください。
+Azure でのリソースのタグ付けの詳細については、「[タグを使用して Azure リソースと管理階層を整理する](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 067e84e433fa995c79b588698240afea06e54660
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 75a89a0020b4c0ae7ab336ab0d3789bf5096dab7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120015"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222404"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -50,8 +50,8 @@ VNet トポロジを計画する際は、IP アドレス空間の配置方法、
 **詳細情報:**
 
 - [Azure Virtual Network の概要](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)をご確認ください。
-- 「[Azure 仮想ネットワークについてよく寄せられる質問 (FAQ)](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq)」をご覧ください。
-- [Azure Stack ネットワーク](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits)についてご確認ください。
+- [Azure Virtual Network に関する FAQ](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) を読みます。
+- [Azure Stack ネットワーク](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)についてご確認ください。
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>ベスト プラクティス:ハブ アンド スポーク ネットワーク トポロジを実装する
 
@@ -69,7 +69,7 @@ VNet トポロジを計画する際は、IP アドレス空間の配置方法、
 - ハブとスポークの VNet は異なるリソース グループに実装でき、異なるサブスクリプションに実装することさえできます。 異なるサブスクリプションに属する仮想ネットワークをピアリングする場合、サブスクリプションを同じまたは異なる Azure Active Directory (Azure AD) テナントに関連付けることができます。 これにより、各ワークロードを分散管理しながら、ハブ ネットワークで維持されているサービスを共有できます。
 
 ![変更管理](./media/migrate-best-practices-networking/hub-spoke.png)
-*ハブとスポークのトポロジ*
+_ハブとスポークのトポロジ_
 
 **詳細情報:**
 
@@ -92,11 +92,11 @@ VNet 内で分離を実現するには、VNet を 1 つ以上のサブネット�
 
 次の表では、計画的な移行のためにアドレス空間 10.245.16.0/20 をサブネットに分割した VNet の例を示します。
 
-**サブネット** | **CIDR** | **アドレス** | **用途**
---- | --- | --- | ---
-DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | フロントエンド/Web 層の VM
-DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | アプリ階層の VM
-DEV-DB-EUS2 | 10.245.24.0/23 | 507 | データベース VM
+| **サブネット** | **CIDR** | **アドレス** | **用途** |
+| --- | --- | --- | --- |
+| DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | フロントエンド/Web 層の VM |
+| DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | アプリ階層の VM |
+| DEV-DB-EUS2 | 10.245.24.0/23 | 507 | データベース VM |
 
 **詳細情報:**
 
@@ -107,8 +107,8 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | データベース VM
 
 VNet をデプロイすると、Azure によって既定で DNS サーバーが追加されます。 これにより、迅速に Vnet を構築してリソースをデプロイできます。 ただし、この DNS サーバーでは、その VNet 上のリソースに対してのみサービスが提供されます。 複数の VNet を接続したい場合、または VNet からオンプレミス サーバーに接続したい場合は、追加の名前解決機能が必要です。 たとえば、仮想ネットワーク間で DNS 名を解決するには、Active Directory が必要になる場合があります。 これを行うには、Azure に独自のカスタム DNS サーバーをデプロイします。
 
-- VNet 内の DNS サーバーでは、Azure の再帰的リゾルバーに DNS クエリを転送できます。 これにより、その VNet 内のホスト名を解決することができます。 たとえば、Azure で実行しているドメイン コントローラーでは、それ自体のドメインに対する DNS クエリに応答し、他のすべてのクエリを Azure に転送できます。
-- DNS 転送により、VM ではオンプレミスのリソース (ドメイン コントローラー経由) と Azure で提供されるホスト名 (フォワーダー使用) の両方を参照できます。 Azure の再帰的リゾルバーへのアクセスは、仮想 IP アドレス 168.63.129.16 を使用して提供されます。
+- 仮想ネットワーク内の DNS サーバーは、Azure の再帰的リゾルバーに DNS クエリを転送できます。 これにより、その仮想ネットワーク内のホスト名を解決することができます。 たとえば、Azure で実行しているドメイン コントローラーでは、それ自体のドメインに対する DNS クエリに応答し、他のすべてのクエリを Azure に転送できます。
+- DNS 転送により、VM ではオンプレミスのリソース (ドメイン コントローラー経由) と Azure で提供されるホスト名 (フォワーダー使用) の両方を参照できます。 Azure の再帰的リゾルバーへのアクセスは、仮想 IP アドレス `168.63.129.16` を使用して提供されます。
 - また、DNS 転送により、VNet 間の DNS 解決も可能になり、オンプレミスのマシンで Azure によって提供されるホスト名を解決できるようになります。
   - VM のホスト名を解決するには、DNS サーバーの VM が同じ VNet 内に存在し、Azure にホスト名のクエリを転送するように構成されている必要があります。
   - DNS サフィックスは VNet ごとに異なるので、条件付き転送ルールを使用して、解決のための正しい VNet に DNS クエリを送信できます。
@@ -116,7 +116,7 @@ VNet をデプロイすると、Azure によって既定で DNS サーバーが�
 - ネットワーク インターフェイスまたはクラウド サービスに対して指定された DNS サーバーは、VNet に対して指定された DNS サーバーより優先されます。
 - Azure Resource Manager デプロイ モデルでは、VNet とネットワーク インターフェイスに対して DNS サーバーを指定できますが、Vnet でのみ設定を使用するのがベスト プラクティスです。
 
-    ![DNS サーバー](./media/migrate-best-practices-networking/dns2.png) *VNet 用の DNS サーバー*
+    ![DNS サーバー](./media/migrate-best-practices-networking/dns2.png) _VNet 用の DNS サーバー_
 
 **詳細情報:**
 
@@ -133,14 +133,14 @@ VNet をデプロイすると、Azure によって既定で DNS サーバーが�
 - 可用性ゾーンはリージョン内で物理的に分離されているため、データセンターで障害が発生してもアプリケーションとデータは保護されます。
 - ゾーン冗長サービスによってアプリケーションとデータが可用性ゾーン全体にレプリケートされ、単一障害点から保護されます。 可用性ゾーンでは、Azure によって 99.99% VM アップタイムの SLA が提供されます。
 
-    ![可用性ゾーン](./media/migrate-best-practices-networking/availability-zone.png) *可用性ゾーン*
+    ![可用性ゾーン](./media/migrate-best-practices-networking/availability-zone.png) _可用性ゾーン_
 
 - コンピューティング、ストレージ、ネットワーク、およびデータ リソースを 1 つのゾーン内に併置し、他のゾーンにレプリケートすることによって、高可用性を計画し、移行アーキテクチャに組み込むことができます。 可用性ゾーンをサポートしている Azure サービスは、次の 2 つのカテゴリに分類されます。
-  - ゾーン ベース サービス:特定のゾーンにリソースを関連付けます。 たとえば、VM、マネージド ディスク、IP アドレスなどです。
-  - ゾーン冗長サービス:リソースは、ゾーン間で自動的にレプリケートされます。 たとえば、ゾーン冗長ストレージ、Azure SQL Database などです。
+  - **ゾーン ベース サービス:** リソースは、VM、マネージド ディスク、IP アドレスなどの特定のゾーンに関連付けます。
+  - **ゾーン冗長サービス:** リソースは、ゾーン冗長ストレージや Azure SQL Database などのゾーン間で自動的にレプリケートされます。
 - Azure で負荷分散されてインターネットに接続された標準のワークロードやアプリ階層をデプロイして、ゾーン ベースのフォールト トレランスを提供できます。
 
-    ![ロード バランサー](./media/migrate-best-practices-networking/load-balancer.png) *ロード バランサー*
+    ![ロード バランサー](./media/migrate-best-practices-networking/load-balancer.png) _ロード バランサー_
 
 **詳細情報:**
 
@@ -183,7 +183,7 @@ VNet をデプロイすると、Azure によって既定で DNS サーバーが�
 - Border Gateway Protocol (BGP) は、Azure ExpressRoute ゲートウェイとルート ベースの VPN ゲートウェイで使用できるオプション機能であり、オンプレミスの BGP ルートが VNet に伝達されます。
 
 ![VPN](./media/migrate-best-practices-networking/vpn.png)
-*サイト間 VPN*
+_サイト間 VPN_
 
 **詳細情報:**
 
@@ -260,7 +260,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
   - WAN ネットワークでは、両方のプレフィックスが米国西部より米国東部に近いものとみなすことができるため、両方のオフィスのユーザーが米国東部の ExpressRoute 回線にルーティングされ、それによってロサンゼルス オフィスのユーザーのエクスペリエンスが最適ではなくなる可能性があります。
 
 ![VPN](./media/migrate-best-practices-networking/bgp1.png)
-*BGP コミュニティの最適化されていない接続*
+_BGP コミュニティの最適化されていない接続_
 
 **解決方法:**
 
@@ -273,7 +273,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
 - この構成により、Microsoft に対して両方のパスを使用できる場合、ロサンゼルスのユーザーは西部の回線を使用して Azure 米国西部に接続し、ニューヨークのユーザーは東部の回線を使用して Azure 米国東部に接続します。 両側でルーティングが最適化されます。
 
 ![VPN](./media/migrate-best-practices-networking/bgp2.png)
-*BGP コミュニティの最適化された接続*
+_BGP コミュニティの最適化された接続_
 
 **詳細情報:**
 
@@ -303,7 +303,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 次の図は、2 つのセキュリティ境界を持つ企業ネットワークにおける単一のサブネット境界ネットワークの例を示しています。
 
 ![VPN](./media/migrate-best-practices-networking/perimeter.png)
-*境界ネットワークのデプロイ*
+_境界ネットワークのデプロイ_
 
 **詳細情報:**
 
@@ -341,7 +341,7 @@ VNet をセキュリティで保護するときは、攻撃ベクトルを考慮
 
 - この **Sql** タグは、Azure SQL Database サービスおよび Azure SQL Data Warehouse サービスのアドレス プレフィックスを表します。
 - 値として **Sql** を指定した場合、SQL へのトラフィックが許可または拒否されます。
-- 特定のリージョンの **Sql** へのアクセスのみを許可する場合は、そのリージョンを指定することができます。 たとえば、米国東部リージョンの Azure SQL Database へのアクセスのみを許可する場合は、サービス タグとして **Sql.EastUS** と指定できます。
+- 特定のリージョンの **Sql** へのアクセスのみを許可する場合は、そのリージョンを指定することができます。 たとえば、米国東部リージョンの Azure SQL Database へのアクセスのみを許可する場合は、サービス タグに **Sql.EastUS** と指定できます。
 - タグはサービスだけを表し、サービスの特定のインスタンスは表しません。 たとえば、タグは Azure SQL Database サービスを表しますが、特定の SQL データベースや SQL サーバーは表しません。
 - このタグで表されるすべてのアドレス プレフィックスは、**Internet** タグでも表されます。
 
@@ -361,25 +361,25 @@ VNet をセキュリティで保護するときは、攻撃ベクトルを考慮
 **例:**
 
 ![アプリケーション セキュリティ グループ](./media/migrate-best-practices-networking/asg.png)
-*アプリケーション セキュリティ グループの例*
+_アプリケーション セキュリティ グループの例_
 
-**ネットワーク インターフェイス** | **アプリケーション セキュリティ グループ**
---- | ---
-NIC1 | AsgWeb
-NIC2 | AsgWeb
-NIC3 | AsgLogic
-NIC4 | AsgDb
+| **ネットワーク インターフェイス** | **アプリケーション セキュリティ グループ** |
+| --- | --- |
+| NIC1 | AsgWeb |
+| NIC2 | AsgWeb |
+| NIC3 | AsgLogic |
+| NIC4 | AsgDb |
 
 - この例の各ネットワーク インターフェイスは 1 つのアプリケーション セキュリティ グループだけに属していますが、実際には、Azure の制限に従って、1 つのインターフェイスが複数のグループに属することができます。
 - NSG に関連付けられているネットワーク インターフェイスはありません。 NSG1 は両方のサブネットに関連付けられており、次の規則を含んでいます。
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**規則の名前** | **目的** | **詳細**
---- | --- | ---
-Allow-HTTP-Inbound-Internet | インターネットから Web サーバーへのトラフィックを許可します。 インターネットからの受信トラフィックは DenyAllInbound 既定セキュリティ規則によって拒否されるので、AsgLogic または AsgDb アプリケーション セキュリティ グループでは追加の規則は必要ありません。 | 優先順位:100<br/><br/> 送信元: インターネット<br/><br/> 送信元ポート: *<br/><br/> 変換先:AsgWeb<br/><br/> 宛先ポート:80<br/><br/> プロトコル:TCP<br/><br/> アクセス:許可。
-Deny-Database-All | AllowVNetInBound 既定セキュリティ規則では、同じ VNet 上にあるリソース間の通信がすべて許可され、この規則はすべてのリソースからのトラフィックを拒否するために必要です。 | 優先順位:120<br/><br/> 送信元: *<br/><br/> 送信元ポート: *<br/><br/> 変換先:AsgDb<br/><br/> 宛先ポート:1433<br/><br/> プロトコル:All<br/><br/> アクセス:拒否。
-Allow-Database-BusinessLogic | AsgLogic アプリケーション セキュリティ グループから AsgDb アプリケーション セキュリティ グループへのトラフィックを許可します。 この規則の優先度は、Deny-Database-All 規則より高いため、この規則が最初に処理されます。 そのため、AsgLogic アプリケーション セキュリティ グループからのトラフィックは許可され、他のすべてのトラフィックはブロックされます。 | 優先順位:110<br/><br/> ソース:AsgLogic<br/><br/> 送信元ポート: *<br/><br/> 変換先:AsgDb<br/><br/> 宛先ポート:1433<br/><br/> プロトコル:TCP<br/><br/> アクセス:許可。
+| **規則の名前** | **目的** | **詳細** |
+| --- | --- | --- |
+| Allow-HTTP-Inbound-Internet | インターネットから Web サーバーへのトラフィックを許可します。 インターネットからの受信トラフィックは DenyAllInbound 既定セキュリティ規則によって拒否されるので、AsgLogic または AsgDb アプリケーション セキュリティ グループでは追加の規則は必要ありません。 | 優先順位:100 <br><br> 送信元: インターネット <br><br> 送信元ポート: \* <br><br> 変換先:AsgWeb <br><br> 宛先ポート:80 <br><br> プロトコル:TCP <br><br> アクセス:許可。 |
+| Deny-Database-All | AllowVNetInBound 既定セキュリティ規則では、同じ VNet 上にあるリソース間の通信がすべて許可され、この規則はすべてのリソースからのトラフィックを拒否するために必要です。 | 優先順位:120 <br><br> ソース: \* <br><br> 送信元ポート: \* <br><br> 変換先:AsgDb <br><br> 宛先ポート:1433 <br><br> プロトコル:All <br><br> アクセス:拒否。 |
+| Allow-Database-BusinessLogic | AsgLogic アプリケーション セキュリティ グループから AsgDb アプリケーション セキュリティ グループへのトラフィックを許可します。 この規則の優先度は、Deny-Database-All 規則より高いため、この規則が最初に処理されます。 そのため、AsgLogic アプリケーション セキュリティ グループからのトラフィックは許可され、他のすべてのトラフィックはブロックされます。 | 優先順位:110 <br><br> ソース:AsgLogic <br><br> 送信元ポート: \* <br><br> 変換先:AsgDb <br><br> 宛先ポート:1433 <br><br> プロトコル:TCP <br><br> アクセス:許可。 |
 
 <!--markdownlint-enable MD033 -->
 
@@ -398,7 +398,7 @@ VNet サービス エンドポイントでは、VNet の非公開アドレス空
 - VNet でサービス エンドポイントを有効にした後は、Azure サービス リソースに VNet 規則を追加することで、サービス リソースをセキュリティで保護できます。 これにより、リソースへのパブリック インターネット アクセスを完全に排除し、VNet からのトラフィックのみを許可することにより、セキュリティが強化されます。
 
 ![サービス エンドポイント](./media/migrate-best-practices-networking/endpoint.png)
-*サービス エンドポイント*
+_サービス エンドポイント_
 
 **詳細情報:**
 
@@ -430,7 +430,7 @@ Azure には簡単に使用できるプラットフォーム セキュリティ�
 Azure Firewall は、VNet リソースを保護するクラウドベースのマネージド ネットワーク セキュリティ サービスです。 これは、組み込みの高可用性とクラウドによる無制限のスケーラビリティを備えた、完全にステートフルなマネージド ファイアウォールです。
 
 ![サービス エンドポイント](./media/migrate-best-practices-networking/firewall.png)
-*Azure Firewall*
+_Azure Firewall_
 
 - Azure Firewall では、複数のサブスクリプションと VNet に適用されるアプリケーションとネットワークの接続ポリシーを一元的に作成、適用、記録できます。
 - Azure Firewall では、外部のファイアウォールが VNet からのトラフィックを識別できるよう、VNet リソースに静的パブリック IP アドレスが使用されます。
@@ -442,8 +442,8 @@ Azure Firewall は、VNet リソースを保護するクラウドベースのマ
 
 **詳細情報:**
 
-- Azure Firewall の[概要を理解する](https://docs.microsoft.com/azure/firewall/overview)。
-- FQDN タグ[について学習する](https://docs.microsoft.com/azure/firewall/fqdn-tags)。
+- [Azure Firewall の概要](https://docs.microsoft.com/azure/firewall/overview)を読みます。
+- [Azure Firewall の FQDN タグ](https://docs.microsoft.com/azure/firewall/fqdn-tags)について学習します。
 
 ## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>ベスト プラクティス:Web アプリケーション ファイアウォール (WAF) をデプロイする
 
@@ -468,7 +468,7 @@ Web アプリケーション ファイアウォール (WAF) は、Azure Applicat
 Azure Network Watcher では、Azure VNet でのリソースと通信を監視するツールが提供されています。 たとえば、VM と別の VM や FQDN などのエンドポイントとの間の通信を監視したり、VNet 内のリソースやリソースの関係を表示したり、ネットワーク トラフィックの問題を診断したりできます。
 
 ![Network Watcher](./media/migrate-best-practices-networking/network-watcher.png)
-*Network Watcher*
+_Network Watcher_
 
 - Network Watcher を使用すると、VM にログインすることなく、ネットワークの問題を監視して診断できます。
 - アラートを設定することでパケット キャプチャをトリガーし、パケット レベルでのパフォーマンスの情報にリアルタイムでアクセスできます。 問題が見つかったら、詳細に調査できます。
@@ -488,19 +488,19 @@ Azure Network Watcher では、Azure VNet でのリソースと通信を監視�
 
 - NVA とは、ファイアウォール、WAN 最適化、その他のネットワーク機能を実行する VM です。
 - NVA により、VNet のセキュリティとネットワークの機能が強化されます。 高可用性ファイアウォール、侵入防止、侵入検出、Web アプリケーション ファイアウォール (WAF)、WAN 最適化、ルーティング、負荷分散、VPN、証明書管理、Active Directory、および多要素認証のためにデプロイできます。
--  [Azure Marketplace](https://azuremarketplace.microsoft.com) では多数のベンダーの NVA を利用できます。
+- [Azure Marketplace](https://azuremarketplace.microsoft.com) では多数のベンダーの NVA を利用できます。
 
 ## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>ベスト プラクティス:ハブ ネットワークにファイアウォールと NVA を実装する
 
 ハブでは、(インターネットにアクセスできる) 境界ネットワークは、通常、Azure ファイアウォール、ファイアウォール ファーム、または Web アプリケーション ファイアウォール (WAF) を通して管理されます。 次の比較を検討してください。
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**ファイアウォールの種類** | **詳細**
---- | ---
-WAF | Web アプリケーションは一般的であり、脆弱性や潜在的な悪用の影響を受ける傾向があります。<br/><br/> WAF は、Web アプリケーション (HTTP/HTTPS) に対する攻撃を検出するように設計されており、汎用のファイアウォールより限定的です。<br/><br/> 従来のファイアウォール テクノロジと比較すると、WAF は脅威から内部 Web サーバーを保護する特定の機能セットを備えています。
-Azure Firewall | NVA ファイアウォール ファームのように、Azure Firewall では、一般的な管理メカニズムとセキュリティ規則セットを使用して、スポーク ネットワークでホストされるワークロードが保護され、オンプレミスのネットワークへのアクセスが制御されます。<br/><br/> Azure Firewall にはスケーラビリティが組み込まれています。
-NVA ファイアウォール | Azure Firewall と同様に、NVA ファイアウォール ファームでは、共通の管理メカニズムおよびセキュリティ規則のセットを使用して、スポーク ネットワークでホストされているワークロードが保護され、オンプレミスのネットワークへのアクセスが制御されます。<br/><br/> NVA ファイアウォールは、ロード バランサーの後方で手動スケーリングできます。<br/><br/> NVA ファイアウォールは WAF ほど特化したソフトウェアではありませんが、エグレスおよびイングレスのあらゆる種類のトラフィックをフィルター処理して検査する広範な適用範囲を備えています。<br/><br/> NVA を使用する場合は、Azure Marketplace で見つけることができます。
+| **ファイアウォールの種類** | **詳細** |
+| --- | --- |
+| WAF | Web アプリケーションは一般的であり、脆弱性や潜在的な悪用の影響を受ける傾向があります。 <br><br> WAF は、Web アプリケーション (HTTP/HTTPS) に対する攻撃を検出するように設計されており、汎用のファイアウォールより限定的です。 <br><br> 従来のファイアウォール テクノロジと比較すると、WAF は脅威から内部 Web サーバーを保護する特定の機能セットを備えています。 |
+| Azure Firewall | NVA ファイアウォール ファームのように、Azure Firewall では、一般的な管理メカニズムとセキュリティ規則セットを使用して、スポーク ネットワークでホストされるワークロードが保護され、オンプレミスのネットワークへのアクセスが制御されます。 <br><br> Azure Firewall にはスケーラビリティが組み込まれています。 |
+| NVA ファイアウォール | Azure Firewall と同様に、NVA ファイアウォール ファームでは、共通の管理メカニズムおよびセキュリティ規則のセットを使用して、スポーク ネットワークでホストされているワークロードが保護され、オンプレミスのネットワークへのアクセスが制御されます。 <br><br> NVA ファイアウォールは、ロード バランサーの後方で手動スケーリングできます。 <br><br> NVA ファイアウォールは WAF ほど特化したソフトウェアではありませんが、エグレスおよびイングレスのあらゆる種類のトラフィックをフィルター処理して検査する広範な適用範囲を備えています。 <br><br> NVA を使用する場合は、Azure Marketplace で見つけることができます。 |
 
 <!--markdownlint-enable MD033 -->
 

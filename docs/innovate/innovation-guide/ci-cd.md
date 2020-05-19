@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d4c09f7e92f0c023b641148987a1dad0459e91e5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8ba2926d702b12234dd81f93cb6820352c0fbf58
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809028"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222268"
 ---
 ::: zone target="docs"
 
@@ -28,7 +28,7 @@ ms.locfileid: "80809028"
 
 ::: zone-end
 
-ご存知のように、イノベーションはビジネスの成功に不可欠です。 新しいテクノロジを導入するだけではイノベーションは実現できません。 変化を促進し、求めている新たな価値を生み出す人々を支援することに注力する必要があります。 "*開発者*" はデジタル トランスフォーメーションの中心であり、より多くの成果を上げることができるように、開発者のベロシティを高める必要があります。 開発者チームの創造力を解き放つには、生産性を高め、グローバルで安全なコラボレーションを促進し、イノベーションを拡大できるように障壁を取り除く必要があります。
+ご存知のように、イノベーションはビジネスの成功に不可欠です。 新しいテクノロジを導入するだけではイノベーションは実現できません。 変化を促進し、求めている新たな価値を生み出す人々を支援することに注力する必要があります。 "_開発者_" はデジタル トランスフォーメーションの中心であり、より多くの成果を上げることができるように、開発者のベロシティを高める必要があります。 開発者チームの創造力を解き放つには、生産性を高め、グローバルで安全なコラボレーションを促進し、イノベーションを拡大できるように障壁を取り除く必要があります。
 
 ## <a name="generate-value"></a>価値の創出
 
@@ -77,6 +77,7 @@ Azure DevOps は、すべての開発者にクラス最高のツールを提供�
 
 ::: zone target="chromeless"
 
+<!-- docsTest:ignore "Azure DevOps Projects" -->
 <!-- markdownlint-disable DOCSMD001 -->
 
 ### <a name="action"></a>アクション
@@ -85,9 +86,9 @@ DevOps プロジェクトを作成するには:
 
 1. **Azure DevOps Projects** に移動します。
 2. **[DevOps プロジェクトの作成]** を選択します。
-3. **[Runtime, Framework and Service]\(ランタイム、フレームワーク、サービス\)** を選択します。
+3. **[Runtime, Framework, and Service] (ランタイム、フレームワーク、サービス)** を選択します。
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

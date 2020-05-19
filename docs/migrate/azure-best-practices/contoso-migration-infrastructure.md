@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 049de2f62bd2b5bc5720ea1788de7be5d3492b13
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2db5b95fd21fbbfaba4e5d7ad1c1ccad91317c5c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120588"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223781"
 ---
 <!-- cSpell:ignore deltadan CSPs untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -117,7 +117,7 @@ ID およびアクセス管理 (IAM) によってユーザーが Azure リソー
 - これを行うために、Azure ベースの Active Directory を作成します。
 - Contoso は Office 365 を利用していないので、新しい Azure AD をプロビジョニングする必要があります。
 - Office 365 では、ユーザー管理用に Azure AD が使われています。 Contoso が Office 365 を使用していたとすれば、既に Azure AD テナントが存在するため、それをプライマリ ディレクトリとして使用できます。
-- [Office 365 用の Azure AD](https://docs.microsoft.com/office365/enterprise/about-office-365-identity) の詳細について確認してください。また、[既存の Azure AD テナントにサブスクリプションを追加する](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory)方法を学習してください。
+- [Office 365 用の Azure AD](https://docs.microsoft.com/office365/enterprise/about-office-365-identity) の詳細について確認してください。また、[既存の Azure AD テナントにサブスクリプションを追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)方法を学習してください。
 
 ### <a name="create-an-azure-ad"></a>Azure AD を作成する
 
@@ -164,7 +164,7 @@ Contoso の管理者は、次の表に示すように Azure リソース グル�
 
 **リソース グループ** | **詳細**
 --- | ---
-**ContosoCobRG** | このグループには、ビジネスの継続性 (COB) に関連するすべてのリソースが含まれています。 これには、Contoso が Azure Site Recovery サービスおよび Azure Backup サービス用に使用するコンテナーが含まれます。<br/><br/> また、Azure Migrate や Azure Database Migration Service などの、移行に使用されるリソースも含まれます。
+**ContosoCobRG** | このグループには、ビジネスの継続性 (COB) に関連するすべてのリソースが含まれています。 これには、Contoso が Azure Site Recovery サービスおよび Azure Backup サービス用に使用するコンテナーが含まれます。 <br><br> また、Azure Migrate や Azure Database Migration Service などの、移行に使用されるリソースも含まれます。
 **ContosoDevRG** | このグループには、開発とテストのリソースが含まれます。
 **ContosoFailoverRG** | このグループには、フェールオーバーされたリソースが格納されます。
 **ContosoNetworkingRG** | このグループには、すべてのネットワーク リソースが含まれます。
@@ -221,17 +221,17 @@ Contoso は、オンプレミスとクラウドのリソースへのアクセス
 
 5. **[構成の準備完了]** で、 **[構成が完了したら、同期プロセスを開始してください]** を選択して直ちに同期を開始します。 その後インストールします。
 
-以下の点に注意してください。
+次のことを考慮してください。
 
-- Contoso は Azure に直接接続します。 オンプレミスの Active Directory がプロキシの背後に存在する場合は、この[記事](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity)を読んでください。
-
-- 最初の同期の後、オンプレミスの Active Directory オブジェクトは Azure AD ディレクトリ内に表示されます。
-
-    ![Azure 内のオンプレミスの Active Directory](./media/contoso-migration-infrastructure/on-prem-ad-groups.png)
-
-- Contoso の IT チームは、ロールに基づいて各グループで表わされます。
-
-    ![Azure 内のオンプレミスの Active Directory のメンバー](./media/contoso-migration-infrastructure/on-prem-ad-group-members.png)
+    - Contoso は Azure に直接接続します。 オンプレミスの Active Directory がプロキシの背後に存在する場合は、この[記事](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity)を読んでください。
+    
+    - 最初の同期の後、オンプレミスの Active Directory オブジェクトは Azure AD ディレクトリ内に表示されます。
+    
+        ![Azure 内のオンプレミスの Active Directory](./media/contoso-migration-infrastructure/on-prem-ad-groups.png)
+    
+    - Contoso の IT チームは、ロールに基づいて各グループで表わされます。
+    
+        ![Azure 内のオンプレミスの Active Directory のメンバー](./media/contoso-migration-infrastructure/on-prem-ad-group-members.png)
 
 ### <a name="set-up-rbac"></a>RBAC を設定する
 
@@ -302,7 +302,7 @@ Azure Backup を使用すると、Azure VM ディスクをバックアップお�
 - Azure Backup は geo 冗長ストレージ (GRS) もサポートしており、リージョンの障害が発生した場合は、ペアになっているセカンダリ リージョンにバックアップ データをレプリケートします。
 - Azure Backup は、転送中のデータを AES 256 を使用して暗号化します。 バックアップされた保存データは、[Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) を使用して暗号化されます。
 
-Contoso では、ワークロード データが、バックアップされ、障害やその他の中断が発生した場合はすばやく復元可能なように、すべての運用 VM に対して Azure Backup を GRS と共に使用します。 詳細については、[Azure Backup の概要](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)に関するページを参照してください。
+Contoso では、ワークロード データが、バックアップされ、障害やその他の中断が発生した場合はすばやく復元可能なように、すべての運用 VM に対して Azure Backup を GRS と共に使用します。 詳細については、[Azure Backup の概要](https://docs.microsoft.com/azure/backup/backup-overview)に関するページを参照してください。
 
 ### <a name="set-up-disaster-recovery"></a>ディザスター リカバリーを設定する
 
@@ -328,14 +328,14 @@ Contoso は、ミッション クリティカルなワークロードで使用�
 
 Contoso は、Azure とオンプレミスのデータセンターの間のハイブリッド ネットワークに関して、[複数のアーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking)を検討しました。 詳しくは、「[オンプレミス ネットワークを Azure に接続するためのソリューションを選択する](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations)」をご覧ください。
 
-なお、Contoso のオンプレミス ネットワークのインフラストラクチャは、現在、ニューヨークのデータセンターと、米国東部の複数のローカル支局で構成されています。 すべての場所には、インターネットへのビジネス クラスの接続があります。 各ブランチは、インターネット経由の IPSec VPN トンネルを介して、データセンターに接続されています。
+なお、Contoso のオンプレミス ネットワークのインフラストラクチャは、現在、ニューヨークのデータセンターと、米国の東半分にある複数のローカル支局で構成されています。 すべての場所には、インターネットへのビジネス クラスの接続があります。 各ブランチは、インターネット経由の IPSec VPN トンネルを介して、データセンターに接続されています。
 
 ![Contoso のネットワーク](./media/contoso-migration-infrastructure/contoso-networking.png)
 
 Contoso が決定したハイブリッド接続の実装方法は次のとおりです。
 
 1. ニューヨークにある Contoso のデータセンターと、米国東部 2 および米国中部の 2 つの Azure リージョンの間に、新しいサイト間 VPN 接続を設定します。
-2. Azure 仮想ネットワーク宛のブランチ オフィスのトラフィックは、Contoso のメイン データセンターを介してルーティングされます。
+2. Azure 内の仮想ネットワーク宛のブランチ オフィスのトラフィックは、Contoso のメイン データセンターを介してルーティングされます。
 3. Azure の展開をスケールアップするときは、データセンターと Azure リージョンの間に ExpressRoute 接続を確立します。 その際、Contoso は、VPN のサイト間接続をフェールオーバーのためだけに保持します。
     - VPN と ExpressRoute ハイブリッド ソリューションの選択に関して[詳しくはこちらをご覧ください](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations)。
     - [ExpressRoute の場所とサポート](https://docs.microsoft.com/azure/expressroute/expressroute-locations-providers)を確認してください。
@@ -422,44 +422,44 @@ Contoso は、選択したハブ アンド スポーク モデルの内部にお
 
 米国東部 2 の VNet は、次の表に要約されます。
 
-**VNet** | **Range** | **ピア**
---- | --- | ---
-**VNET-HUB-EUS2** | 10.240.0.0/20 | VNET-HUB-CUS2、VNET-DEV-EUS2、VNET-PROD-EUS2
-**VNET-DEV-EUS2** | 10.245.16.0/20 | VNET-HUB-EUS2
-**VNET-PROD-EUS2** | 10.245.32.0/20 | VNET-HUB-EUS2、VNET-PROD-CUS
+| **VNet** | **Range** | **ピア** |
+| --- | --- | --- |
+| **VNET-HUB-EUS2** | 10.240.0.0/20 | VNET-HUB-CUS2、VNET-DEV-EUS2、VNET-PROD-EUS2 |
+| **VNET-DEV-EUS2** | 10.245.16.0/20 | VNET-HUB-EUS2 |
+| **VNET-PROD-EUS2** | 10.245.32.0/20 | VNET-HUB-EUS2、VNET-PROD-CUS |
 
 ![プライマリ リージョン内のハブ アンド スポーク モデル](./media/contoso-migration-infrastructure/primary-hub-peer.png)
 
 #### <a name="subnets-in-the-east-us-2-hub-network-vnet-hub-eus2"></a>米国東部 2 のハブ ネットワーク (VNET-HUB-EUS2) 内のサブネット
 
-**サブネット/ゾーン** | **CIDR** | **使用可能な IP アドレス
---- | --- | ---
-**IB-UntrustZone** | 10.240.0.0/24 | 251
-**IB-TrustZone** | 10.240.1.0/24 | 251
-**OB-UntrustZone** | 10.240.2.0/24 | 251
-**OB-TrustZone** | 10.240.3.0/24 | 251
-**GatewaySubnets** | 10.240.10.0/24 | 251
+| **サブネット/ゾーン** | **CIDR** | **使用可能な IP アドレス |
+| --- | --- | --- |
+| **IB-UntrustZone** | 10.240.0.0/24 | 251 |
+| **IB-TrustZone** | 10.240.1.0/24 | 251 |
+| **OB-UntrustZone** | 10.240.2.0/24 | 251 |
+| **OB-TrustZone** | 10.240.3.0/24 | 251 |
+| **GatewaySubnets** | 10.240.10.0/24 | 251 |
 
 #### <a name="subnets-in-the-east-us-2-dev-network-vnet-dev-eus2"></a>米国東部 2 の開発用ネットワーク (VNET-DEV-EUS2) 内のサブネット
 
 開発用 VNet は、運用パイロット領域として開発チームによって使われます。 3 つのサブネットがあります。
 
-**サブネット** | **CIDR** | **アドレス** | **サブネット内**
---- | --- | --- | ---
-**DEV-FE-EUS2** | 10.245.16.0/22 | 1019 | フロントエンド/Web 層の VM
-**DEV-APP-EUS2** | 10.245.20.0/22 | 1019 | アプリ階層の VM
-**DEV-DB-EUS2** | 10.245.24.0/23 | 507 | データベース VM
+| **サブネット** | **CIDR** | **アドレス** | **サブネット内** |
+| --- | --- | --- | --- |
+| **DEV-FE-EUS2** | 10.245.16.0/22 | 1019 | フロントエンド/Web 層の VM |
+| **DEV-APP-EUS2** | 10.245.20.0/22 | 1019 | アプリ階層の VM |
+| **DEV-DB-EUS2** | 10.245.24.0/23 | 507 | データベース VM |
 
 #### <a name="subnets-in-the-east-us-2-production-network-vnet-prod-eus2"></a>米国東部 2 の運用ネットワーク (VNET-PROD-EUS2) 内のサブネット
 
 Azure IaaS コンポーネントは、運用ネットワーク内に配置されます。 各アプリ階層には専用のサブネットがあります。 サブネットは開発用ネットワーク内のサブネットと一致し、ドメイン コントローラー用のサブネットが追加されています。
 
-**サブネット** | **CIDR** | **アドレス** | **サブネット内**
---- | --- | --- | ---
-**PROD-FE-EUS2** | 10.245.32.0/22 | 1019 | フロントエンド/Web 層の VM
-**PROD-APP-EUS2** | 10.245.36.0/22 | 1019 | アプリ階層の VM
-**PROD-DB-EUS2** | 10.245.40.0/23 | 507 | データベース VM
-**PROD-DC-EUS2** | 10.245.42.0/24 | 251 | ドメイン コントローラー VM
+| **サブネット** | **CIDR** | **アドレス** | **サブネット内** |
+| --- | --- | --- | --- |
+| **PROD-FE-EUS2** | 10.245.32.0/22 | 1019 | フロントエンド/Web 層の VM |
+| **PROD-APP-EUS2** | 10.245.36.0/22 | 1019 | アプリ階層の VM |
+| **PROD-DB-EUS2** | 10.245.40.0/23 | 507 | データベース VM |
+| **PROD-DC-EUS2** | 10.245.42.0/24 | 251 | ドメイン コントローラー VM |
 
 ![ハブ ネットワークのアーキテクチャ](./media/contoso-migration-infrastructure/azure-networks-eus2.png)
 
@@ -476,11 +476,11 @@ Azure IaaS コンポーネントは、運用ネットワーク内に配置され
 
 米国中部の VNet をまとめると次の表のようになります。
 
-**VNet** | **Range** | **ピア**
---- | --- | ---
-**VNET-HUB-CUS** | 10.250.0.0/20 | VNET-HUB-EUS2、VNET-ASR-CUS、VNET-PROD-CUS
-**VNET-ASR-CUS** | 10.255.16.0/20 | VNET-HUB-CUS、VNET-PROD-CUS
-**VNET-PROD-CUS** | 10.255.32.0/20 | VNET-HUB-CUS、VNET-ASR-CUS、VNET-PROD-EUS2
+| **VNet** | **Range** | **ピア** |
+| --- | --- | --- |
+| **VNET-HUB-CUS** | 10.250.0.0/20 | VNET-HUB-EUS2、VNET-ASR-CUS、VNET-PROD-CUS |
+| **VNET-ASR-CUS** | 10.255.16.0/20 | VNET-HUB-CUS、VNET-PROD-CUS |
+| **VNET-PROD-CUS** | 10.255.32.0/20 | VNET-HUB-CUS、VNET-ASR-CUS、VNET-PROD-EUS2 |
 
 ![ペア リージョン内のハブ アンド スポーク モデル](./media/contoso-migration-infrastructure/paired-hub-peer.png)
 
@@ -498,12 +498,12 @@ Azure IaaS コンポーネントは、運用ネットワーク内に配置され
 
 米国東部 2 のプライマリ リージョン内の運用ネットワークと並列に、米国中部のセカンダリ リージョン内に運用ネットワークが存在します。
 
-**サブネット** | **CIDR** | **アドレス** | **サブネット内**
---- | --- | --- | ---
-**PROD-FE-CUS** | 10.255.32.0/22 | 1019 | フロントエンド/Web 層の VM
-**PROD-APP-CUS** | 10.255.36.0/22 | 1019 | アプリ階層の VM
-**PROD-DB-CUS** | 10.255.40.0/23 | 507 | データベース VM
-**PROD-DC-CUS** | 10.255.42.0/24 | 251 | ドメイン コントローラー VM
+| **サブネット** | **CIDR** | **アドレス** | **サブネット内** |
+| --- | --- | --- | --- |
+| **PROD-FE-CUS** | 10.255.32.0/22 | 1019 | フロントエンド/Web 層の VM |
+| **PROD-APP-CUS** | 10.255.36.0/22 | 1019 | アプリ階層の VM |
+| **PROD-DB-CUS** | 10.255.40.0/23 | 507 | データベース VM |
+| **PROD-DC-CUS** | 10.255.42.0/24 | 251 | ドメイン コントローラー VM |
 
 #### <a name="subnets-in-the-central-us-failoverrecovery-network-in-central-us-vnet-asr-cus"></a>米国中部のフェールオーバー/復旧ネットワーク (VNET-ASR-CUS) 内のサブネット
 
@@ -511,11 +511,11 @@ VNET-ASR-CUS ネットワークは、リージョン間のフェールオーバ�
 
 VNET-ASR-CUS は米国東部 2 の運用 VNet と同じ基本サブネットですが、ドメイン コントローラー サブネットの必要はありません。
 
-**サブネット** | **CIDR** | **アドレス** | **サブネット内**
---- | --- | --- | ---
-**ASR-FE-CUS** | 10.255.16.0/22 | 1019 | フロントエンド/Web 層の VM
-**ASR-APP-CUS** | 10.255.20.0/22 | 1019 | アプリ階層の VM
-**ASR-DB-CUS** | 10.255.24.0/23 | 507 | データベース VM
+| **サブネット** | **CIDR** | **アドレス** | **サブネット内** |
+| --- | --- | --- | --- |
+| **ASR-FE-CUS** | 10.255.16.0/22 | 1019 | フロントエンド/Web 層の VM |
+| **ASR-APP-CUS** | 10.255.20.0/22 | 1019 | アプリ階層の VM |
+| **ASR-DB-CUS** | 10.255.24.0/23 | 507 | データベース VM |
 
 ![ハブ ネットワークのアーキテクチャ](./media/contoso-migration-infrastructure/azure-networks-cus.png)
 
@@ -558,21 +558,23 @@ VNET-PROD-EUS2 ネットワーク内のドメイン コントローラーでは�
 
 Contoso の管理者は、Azure DNS サービスはハイブリッド環境に適した選択ではないと判断しました。 代わりに、オンプレミスの DNS サーバーを使用します。
 
+<!-- docsTest:ignore "on premises" -->
+
 - これはハイブリッド ネットワークなので、オンプレミスと Azure のすべての VM は、正常に機能するために名前を解決できる必要があります。 つまり、すべての VNet にカスタム DNS の設定を適用する必要があります。
 - Contoso は現在、Contoso データセンターとブランチ オフィスに DC を展開しています。 プライマリ DNS サーバーは、CONTOSODC1 (172.16.0.10) と CONTOSODC2 (172.16.0.1) です。
 - VNet が展開されると、オンプレミスのドメイン コントローラーは、ネットワーク内の DNS サーバーとして構成されます。
-- これを構成するには、カスタム DNS を VNet で使用するときに、Azure の再帰的なリゾルバーの IP アドレス (168.63.129.16 など) を DNS リストに追加する必要があります。 そのために、Contoso は各 VNet で DNS サーバーの設定を構成します。 たとえば、VNET-HUB-EUS2 ネットワークのカスタム DNS の設定は次のようになります。
+- 仮想ネットワーク用に省略可能なカスタム DNS が指定されている場合、Azure 内の再帰的なリゾルバーの仮想 IP アドレス `168.63.129.16` をリストに追加する必要があります。 そのために、Contoso は各 VNet で DNS サーバーの設定を構成します。 たとえば、VNET-HUB-EUS2 ネットワークのカスタム DNS の設定は次のようになります。
 
     ![[カスタム DNS]](./media/contoso-migration-infrastructure/custom-dns.png)
 
 オンプレミスのドメイン コントローラーに加え、Contoso は Azure ネットワークをサポートするために、さらに 4 つのドメイン コントローラー (リージョンごとに 2 つ) を実装します。 Contoso の Azure での展開は次のようになります。
 
-**リージョン** | **DC** | **VNet** | **サブネット** | **IP アドレス (IP address)**
---- | --- | --- | --- | ---
-EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4
-EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5
-CUS | CONTOSODC5 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4
-CUS | CONTOSODC6 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4
+| **リージョン** | **DC** | **VNet** | **サブネット** | **IP アドレス (IP address)** |
+| --- | --- | --- | --- | --- |
+| EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4 |
+| EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5 |
+| CUS | CONTOSODC5 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4 |
+| CUS | CONTOSODC6 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4 |
 
 オンプレミスのドメイン コントローラーを展開した後、Contoso は、DNS サーバーの一覧に新しいドメイン コントローラーが含まれるように、両方のリージョンのネットワークで DNS の設定を更新する必要があります。
 
@@ -619,7 +621,7 @@ CUS | CONTOSODC6 | VNET-PROD-CUS | PROD-DC-CUS | 10.255.42.4
 
 Active Directory はネットワークで重要なサービスであり、正しく構成する必要があります。 Contoso 管理者は、Contoso データセンターと EUS2 および CUS リージョン用に Active Directory サイトを構築します。
 
-1. 2 つの新しいサイト (AZURE-EUS2、AZURE-CUS) およびデータセンター サイト (ContosoDatacenter) を作成します。
+1. データセンター サイト (`ContosoDatacenter`) と共に、2 つの新しいサイト (`AZURE-EUS2`、`AZURE-CUS`) を作成します。
 2. サイトを作成した後は、VNet およびデータセンターと一致するように、サイト内にサブネットを作成します。
 
     ![DC サブネット](./media/contoso-migration-infrastructure/dc-subnets.png)
@@ -706,15 +708,15 @@ Contoso は、次のようにロックを実装しようとしています。
 
 Contoso は、役割や部署など、ビジネスにとって意味がある方法で Azure の資産を視覚化する必要があります。 タグを共有するために、リソースが同じリソース グループ内に格納されている必要はないことに注意してください。 Contoso は、だれもが同じタグを使用できるように、タグ分類を作成します。
 
-**タグ名** | **Value**
---- | ---
-CostCenter | 12345:SAP の有効なコスト センターである必要があります。
-BusinessUnit | (SAP の) 部署の名前です。 CostCenter と一致します。
-ApplicationTeam | アプリのサポートを所有しているチームのメール別名です。
-CatalogName | リソースがサポートするサービス カタログに従った、アプリまたは ShareService の名前です。
-ServiceManager | リソースの ITIL Service Manager のメール別名です。
-COBPriority | BCDR に対してビジネスによって設定された優先度です。 値は 1 から 5 です。
-ENV | 指定できる値は DEV、STG、PROD です。 開発、ステージング、運用を表します。
+| **タグ名** | **Value** |
+| --- | --- |
+| CostCenter | 12345:SAP の有効なコスト センターである必要があります。 |
+| BusinessUnit | (SAP の) 部署の名前です。 CostCenter と一致します。 |
+| ApplicationTeam | アプリのサポートを所有しているチームのメール別名です。 |
+| CatalogName | リソースがサポートするサービス カタログに従った、アプリまたは ShareService の名前です。 |
+| ServiceManager | リソースの ITIL Service Manager のメール別名です。 |
+| COBPriority | BCDR に対してビジネスによって設定された優先度です。 値は 1 から 5 です。 |
+| ENV | 指定できる値は、DEV、STG、PROD です。 開発、ステージング、運用を表します。 |
 
 次に例を示します。
 
@@ -736,9 +738,9 @@ Contoso はいくつかの主要な側面を考慮する必要があります。
 
 Contoso は、新しいハイブリッド クラウドと特に Azure ワークロードのセキュリティ体制をすばやく確認できる方法を探しています。 結果として、Contoso は Azure Security Center を実装して次の機能を利用することにしました。
 
-- 一元化されたポリシー管理
-- 継続的な評価
-- 実行可能な推奨事項
+- 一元化されたポリシー管理。
+- 継続的な評価。
+- 実行可能な推奨事項。
 
 #### <a name="centralize-policy-management"></a>一元化されたポリシー管理
 
@@ -778,12 +780,12 @@ Contoso は、これがアプリケーションからどのように見えるか
 
 ASG に関連付けられた NSG は最小限の特権で構成されており、許可されたパケットのみが、ネットワークの 1 つの部分から宛先にフローできます。
 
-**操作** | **名前** | **ソース** | **移行先** | **[ポート]**
---- | --- | --- | --- | ---
-Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443
-Allow | AllowWebToApp | APP1-FE | APP1-APP | 80、443
-Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
-拒否 | DenyAllInbound | Any | Any | Any
+| **操作** | **名前** | **ソース** | **移行先** | **[ポート]** |
+| --- | --- | --- | --- | --- |
+| Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80、443 |
+| Allow | AllowWebToApp | APP1-FE | APP1-APP | 80、443 |
+| Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433 |
+| 拒否 | DenyAllInbound | Any | Any | Any |
 
 ### <a name="encrypt-data"></a>データを暗号化する
 

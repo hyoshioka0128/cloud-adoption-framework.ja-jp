@@ -8,22 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: abdd12c9c236b66fced32b1b70886d118a25c7bc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 98c41d102ca54ebcb299989b907e2e6c6b237896
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995059"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223475"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>移行の準備フェーズ中のスキル準備パス
+# <a name="building-technical-skills"></a>技術スキルの構築
 
-移行の "*準備*" フェーズにおける目標は、今後の行程に向けた準備をすることです。 このフェーズは、主に、組織の準備と環境 (技術) の準備という 2 つの分野で実現されます。 どちらの場合も、技術的および非技術的な共同作成者に新しいスキルが必要になることがあります。 次の情報は、組織で必要なスキルを構築するのに役立ちます。
+組織および環境の (技術的な) 準備には、技術者または非技術者である貢献者に新しいスキルが必要になる場合があります。 次の情報は、組織で必要なスキルを構築するのに役立ちます。
 
 ## <a name="organizational-readiness-learning-paths"></a>組織の準備のラーニング パス
 
 クラウド導入作業に関連付けられている動機とビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チーム (v チーム) を確立することが必要になる場合もあります。 以下の記事は、望ましい成果を達成するようこれらのチームを編成するために必要なスキルを組織が開発するのに役立ちます。
 
-- [初期の組織配置](./index.md):特定の目標を達成するのに役立つ配置とチーム構造の概要。
+- [組織の調整](../get-started/org-alignment.md):適切な組織構造を確立するアプローチを発見します。
+- [組織の配置の演習](./index.md):特定の目標を達成するのに役立つ配置とチーム構造の概要を把握します。
+- [チームの確立](../get-started/help.md#establish-teams):クラウド機能の提供を担当する組織内のチームを確立する方法について学習します。
 - [サイロおよび封土の分析](./fiefdoms-silos.md): 2 つの一般的な組織の "*アンチパターン*" と、生産性の高いコラボレーションにチームを導く方法について学習します。
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>環境 (技術) の準備のラーニング パス
@@ -71,8 +73,8 @@ Microsoft Learn のロール固有のラーニング パスのいくつかの例
 
 - [管理者](https://docs.microsoft.com/learn/browse/?roles=administrator)は、Azure の基礎やコンテナーの構成、さらにはクラウドでの高度な管理に重点を置いたモジュールにアクセスできます。
 
-- [開発者](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure)は、アーキテクチャ、ガバナンス、最新化アクティビティで役に立てるように Learn のリソースを使用します。
+- [開発者](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure)は、アーキテクチャ、ガバナンス、最新化アクティビティで役に立てるように Microsoft Learn のリソースを使用します。
 
 ## <a name="learn-more"></a>詳細情報
 
-その他のラーニング パスについては、[Microsoft Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 [ロール] フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+その他のラーニング パスについては、[Microsoft Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 ロール フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a26ad28c5cd91225f02d5824690bc2d409bbd55f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc655eb5d7169c84c8cf577326b7396758e49970
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433736"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221418"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,17 +44,17 @@ VM がクラウドに移動されるにつれて、従来のオンプレミス�
 
 反対に、データ ドリブン学習には、いくつかの肯定的なメトリックが関連付けられることがよくあります (異種データ セットの集中化、データ イングレス、データの民主化)。 チームが将来の顧客について学習している間、実際の結果は今日生成されます。 利用できる学習メトリックには、次のようなものがあります。
 
-- 使用可能なモデルの数
-- 使用されたパートナー データ ソースの数
-- イングレス データを生成するデバイス
-- イングレス データの量
-- データの種類
+- 使用可能なモデルの数。
+- 使用されたパートナー データ ソースの数。
+- イングレス データを生成するデバイス。
+- イングレス データの量。
+- データの種類。
 
 さらに価値のあるメトリックは、結合されたデータ ソースから作成されるダッシュボードの数です。 この数は、新しいデータ ソースによって影響を受ける現在の状態のビジネス プロセスを反映しています。 新しいデータ ソースをオープンに共有することによって、企業は、Power BI などのレポート ツールを使用してデータを利用し、増分的分析情報を生成して、ビジネスの変化を推進できます。
 
 ## <a name="next-steps"></a>次のステップ
 
-学習メトリックの整合が済んだら、それらのメトリックに対して遂行する[ビジネス ケースの構築](.\cloud-migration-business-case.md)を開始できます。
+学習メトリックの整合が済んだら、それらのメトリックに対して遂行する[ビジネス ケースの構築](./cloud-migration-business-case.md)を開始できます。
 
 > [!div class="nextstepaction"]
-> [クラウド ビジネス ケースを構築する](.\cloud-migration-business-case.md)
+> [クラウド ビジネス ケースを構築する](./cloud-migration-business-case.md)

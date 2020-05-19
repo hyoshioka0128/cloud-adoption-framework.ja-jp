@@ -4,17 +4,16 @@ description: クラウド ガバナンス戦略の一環としてセキュリテ
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 9c8bc1a9dd0c475a72db73ad032dabd1ff83f476
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4b5e98141b581eb9b39f3056f1025c7fe614ae70
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219854"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398935"
 ---
 # <a name="security-baseline-discipline-overview"></a>セキュリティ ベースライン規範の概要
 
@@ -40,122 +39,14 @@ ms.locfileid: "83219854"
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsE">
-<li style="display: flex; flex-direction: column;">
-    <a href="./template.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-template.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>セキュリティ ベースライン規範テンプレート</h3>
-                        <p class="x-hidden-focus">セキュリティ ベースライン規範を文書化するテンプレートをダウンロードします。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./business-risks.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-risks.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>ビジネス リスク</h3>
-                        <p class="x-hidden-focus">一般的にセキュリティ ベースラインの規範に関係する動機およびリスクを理解できます。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./metrics-tolerance.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-metrics.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>インジケーターとメトリック</h3>
-                        <p class="x-hidden-focus">セキュリティ ベースラインの規範に投資する最適なタイミングであるかどうかを知るインジケーターです。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./compliance-processes.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-enforce.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>ポリシー準拠プロセス</h3>
-                        <p class="x-hidden-focus">セキュリティ ベースラインの規範によりポリシーのコンプライアンスがサポートされるようにするための推奨の手順です。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./discipline-improvement.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-maturity.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>成熟度</h3>
-                        <p class="x-hidden-focus">クラウドの導入の段階とクラウド管理の成熟度を調整します。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./toolchain.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-toolchain.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>ツールチェーン</h3>
-                        <p class="x-hidden-focus">セキュリティ ベースラインの規範をサポートするために実装できる Azure サービスです。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+| | |
+|---|---|
+| <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | [セキュリティ ベースライン規範テンプレート](./template.md):セキュリティ ベースライン規範を文書化するテンプレートをダウンロードします。 |
+| <br> ![リスク アイコン](../../_images/govern/process-risks.png) | [ビジネス リスク](./business-risks.md):一般的にセキュリティ ベースラインの規範に関係する動機およびリスクを理解できます。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | [インジケーターとメトリック](./metrics-tolerance.md):セキュリティ ベースラインの規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
+| <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | [ポリシー準拠プロセス](./compliance-processes.md):セキュリティ ベースラインの規範によりポリシーのコンプライアンスがサポートされるようにするための推奨の手順です。 |
+| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
+| <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | [ツールチェーン](./toolchain.md):セキュリティ ベースラインの規範をサポートするために実装できる Azure サービスです。 |
 
 <!-- markdownlint-enable MD033 -->
 

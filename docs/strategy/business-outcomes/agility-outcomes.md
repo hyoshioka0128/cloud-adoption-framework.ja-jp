@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 29e30f6980d583850f5af6c82302d91b0078d049
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: feff683b4b19018895cc7eb9ac3ede6b03cd5300
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433782"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218936"
 ---
 # <a name="examples-of-agility-outcomes"></a>機敏性の成果の例
 
@@ -32,9 +32,11 @@ ms.locfileid: "80433782"
 
 クラウドに対応するための導入の取り組みでは、市場投入時間は、市場の変化に対応するという IT の能力を図る重要なメジャーです。 多くの場合、ビジネス リーダーは、アプリケーションや新製品を開発するための予算を確保しています。 市場投入時間のメリットを明確に伝達することで、リーダーが IT の変革過程に予算を振り向ける動機を与えることができます。
 
-- **例 1:** 米国を拠点とするある企業のヨーロッパ支部は、イギリス国内での運用がサポートされるデータベースで顧客データを保護することによって、GDPR 規制を順守する必要があります。 SQL の既存のバージョンでは、この行レベルのセキュリティはサポートされていません。 インプレース アップグレードは破壊的すぎます。 このお客様は、Azure SQL を使用したデータベースのレプリケーションとアップグレードによって、必要なコンプライアンス対策をほんの数週間で追加しています。
+- **例 1:** 米国を拠点とするある企業のヨーロッパ支部は、イギリス国内での運用がサポートされるデータベースで顧客データを保護することによって、GDPR 規制を順守する必要があります。 SQL Server の既存のバージョンでは、この行レベルのセキュリティはサポートされていません。 インプレース アップグレードは破壊的すぎます。 この顧客は、Azure SQL Database を使用したデータベースのレプリケーションとアップグレードによって、必要なコンプライアンス対策をほんの数週間で追加しています。
 
 - **例 2:** ある物流会社が未開拓の市場を発見しましたが、その市場のマーケット シェアを獲得するには、自社の最重要アプリケーションの新しいバージョンが必要です。 大手の競合他社も、同じ発見を行っています。 この会社は、クラウド対応アプリケーションの導入の取り組みを通して顧客を囲い込み、DevOps 駆動型開発アプローチによる _x_ か月の先行によって、対応が遅かった長年の競争相手を出し抜きました。 この迅速な市場への参入によって、顧客基盤が確保されました。
+
+<!-- docsTest:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 
 ### <a name="aurora-health-care"></a>Aurora Health Care 社
 
@@ -42,9 +44,12 @@ ms.locfileid: "80433782"
 
 <!-- cSpell:ignore Jamey Shiels -->
 
-> 「私たちは、チームとして、高品質なソリューションとスピードに重点的に取り組んでいます。 Azure を選択することは、私たちにとって、非常に斬新な意思決定でした。」  
-> Jamey Shiels  
-> デジタル エクスペリエンス担当副社長  
+> 「私たちは、チームとして、高品質なソリューションとスピードに重点的に取り組んでいます。 Azure を選択することは、私たちにとって、非常に斬新な意思決定でした。」
+>
+> Jamey Shiels
+>
+> デジタル エクスペリエンス担当副社長
+>
 > Aurora Health Care 社
 
 ## <a name="provision-time"></a>プロビジョニング時間

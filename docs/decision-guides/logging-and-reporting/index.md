@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e462f0a20daddaf87eda4c77999cb2680dea643e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996333"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224376"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -99,9 +99,9 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 
 オンプレミスの監視システムを維持する切実なニーズがない場合、またはオンプレミスの監視システムを一元化されたクラウドベースのソリューションと置き換える場合、オンプレミスのログ データを Azure Monitor と統合して一元化されたクラウドベースの監視システムを実現することもできます。
 
-このシナリオでは、オンプレミスを中心としたアプローチを反映して、クラウドベースのワークロードから Azure Monitor に直接テレメトリが送信されます。また、オンプレミスのアプリケーションとサービスから Azure モニターにテレメトリが直接送信されるか、定期的に Azure Monitor に取り込むためにそのデータがオンプレミスで集計されます。 その後、Azure Monitor は、IT 資産全体の監視とレポートのプライマリ システムとして機能します。
+このシナリオでは、オンプレミスを中心としたアプローチを反映して、クラウドベースのワークロードから Azure Monitor に直接テレメトリが送信されます。また、オンプレミスのアプリケーションとサービスから Azure Monitor にテレメトリが直接送信されるか、定期的に Azure Monitor に取り込むためにそのデータがオンプレミスで集計されます。 その後、Azure Monitor は、IT 資産全体の監視とレポートのプライマリ システムとして機能します。
 
-クラウドベースのハイブリッド監視の前提条件:ハイブリッド監視にクラウドベースのログとレポートのシステムを使用するには、次の前提条件があります。
+**クラウドベースのハイブリッド監視の前提条件:** ハイブリッド監視にクラウドベースのログとレポートのシステムを使用するには、次の前提条件があります。
 
 - 既存のオンプレミスの監視システムに依存していない。
 - ワークロードにログ データをオンプロミスで格納するための規制やポリシー要件がない。

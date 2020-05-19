@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7259fced72aa959509f55bbb81e9fc4b2f182e36
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 609c4f9f369e27c699f72cf85ebe311dbf918019
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433911"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219276"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -26,8 +26,8 @@ ms.locfileid: "80433911"
 
 ハイブリッド クラウド ソリューションを使用することで、組織はコンピューティング リソースをスケールできます。 短期の需要急増に対処するために、膨大な資本支出をする必要もなくなります。 ビジネスの変更により、より機密性の高いデータやアプリケーションのためにローカル リソースを解放する必要が高まる可能性があります。 クラウド リソースのプロビジョニング解除の方が、より簡単かつ迅速で、コストもかかりません。 追加のリソースを購入して維持する代わりに、組織が一時的に使用するリソースの分に対してのみ支払いを行います。 このアプローチにより、長期間にわたってアイドル状態のままになることもある機器の量が減ります。 ハイブリッド クラウド コンピューティングでは、データ漏洩のリスクを最小限に抑えながら、柔軟性、スケーラビリティ、コスト効率といったクラウド コンピューティングのすべてのメリットが提供されます。
 
-![ID、管理、セキュリティ、データ、開発、DevOps にわたる一貫性のあるハイブリッド クラウドの作成](../../_images/hybrid-consistency.png)
-*図 1 - ID、管理、セキュリティ、データ、開発、DevOps にわたる一貫性のあるハイブリッド クラウドの作成。*
+![ID、管理、セキュリティ、データ、開発、および DevOps にわたって一貫性のあるハイブリッド クラウドの作成](../../_images/hybrid-consistency.png)
+_図 1:ID、管理、セキュリティ、データ、開発、および DevOps にわたって一貫性のあるハイブリッド クラウドの作成。_
 
 真のハイブリッド クラウド ソリューションでは 4 つのコンポーネントを提供する必要があります。そのそれぞれから、次のような大きなメリットがもたらされます。
 

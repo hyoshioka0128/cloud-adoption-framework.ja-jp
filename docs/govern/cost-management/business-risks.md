@@ -1,6 +1,6 @@
 ---
-title: Cost Management のビジネス リスク
-description: クラウド ガバナンス戦略におけるお客様の Cost Management 規範の一般的な導入例を示して説明します。 
+title: Cost Management 規範の目的とビジネス上のリスク
+description: クラウド ガバナンス戦略におけるお客様の Cost Management 規範の一般的な導入例を示して説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,26 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0afb5c3a4c8c1f355083ae6d4734ca4fa45b34ca
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 08ae1bab0697fdd7bbffecca18c62e5ae637c2b6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434702"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220721"
 ---
 <!-- cSpell:ignore prepurchases -->
 
-# <a name="cost-management-motivations-and-business-risks"></a>Cost Management の目的とビジネス上のリスク
+# <a name="motivations-and-business-risks-in-the-cost-management-discipline"></a>Cost Management 規範の目的とビジネス上のリスク
 
 この記事では、クラウド ガバナンス戦略でお客様が Cost Management の規範を一般的に採用する理由について説明します。 ポリシー ステートメントを追いやるビジネス リスクの例もいくつか示します。
 
-<!-- markdownlint-disable MD026 -->
-
-## <a name="is-cost-management-relevant"></a>Cost Management の関連性
+## <a name="relevance"></a>関連性
 
 コストの管理の観点から見ると、クラウドの導入はパラダイム シフトをもたらします。 従来のオンプレミスの世界でのコスト管理は、更新サイクル、データ センターの取得、ホストの更新、および定期的なメンテナンスの問題に基づきます。 年間の設備投資予算に合わせて、これらの各コストを予測、計画、および調整できます。
 
-クラウド ソリューションでは、多くの企業は Cost Management に対してより事後対応型の手法を採用する傾向があります。 多くの場合、企業は一定のクラウド サービスを事前購入するか、使用のコミットを行います。 このモデルでは、特定のクラウド ベンダーでの支出に関してビジネスが計画する金額に基づいて割引を最大化することで、事前対応の計画されたコスト サイクルが認識されると想定しています。 しかし、その認識が現実のものになるのは、ビジネスで、成熟した Cost Management の規範も実装している場合に限られます。
+クラウド ソリューションでは、多くの企業はコスト管理に対してより事後対応型の手法を採用する傾向があります。 多くの場合、企業は一定のクラウド サービスを事前購入するか、使用のコミットを行います。 このモデルでは、特定のクラウド ベンダーでの支出に関してビジネスが計画する金額に基づいて割引を最大化することで、事前対応の計画されたコスト サイクルが認識されると想定しています。 しかし、その認識が現実のものになるのは、ビジネスにおいて成熟したコスト管理規範も実装している場合に限られます。
 
 クラウドでは、従来のオンプレミスのデータセンターでは前例のないセルフ サービス機能を提供します。 これらの新機能によって、ビジネスがより迅速に、より少ない制限で処理され、新しいテクノロジを採用しやすくなります。 ただし、セルフ サービスの欠点は、エンド ユーザーが無意識のうちに割り当てられた予算を超える可能性があることです。 逆に、同じユーザーが計画の変更を経験し、クラウド サービスの予測金額を意外に使用しない可能性もあります。 どちらの方向にもシフトする可能性があるため、ガバナンス チーム内での Cost Management の規範に投資するだけの価値があります。
 
@@ -44,7 +42,7 @@ ms.locfileid: "80434702"
 
 ## <a name="next-steps"></a>次のステップ
 
-[クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
+[Cost Management ポリシー テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 
 現実的なビジネス リスクについて把握できたら、リスクに対する企業の許容範囲と、その許容範囲を監視するための指標と主なメトリックについて文書化することが、次の手順となります。
 

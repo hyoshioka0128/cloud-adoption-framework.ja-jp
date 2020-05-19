@@ -1,29 +1,29 @@
 ---
-title: クラウドのセンター オブ エクセレンス
-description: Azure のクラウド導入フレームワークを使用して、クラウドのセンター オブ エクセレンス (CCoE) を確立する方法を学習します。
+title: クラウドのセンター オブ エクセレンス (CCoE) 機能について
+description: クラウドのセンター オブ エクセレンス (CCoE) の機能について、そのソース、スコープ、成果物を含めて理解します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8145df1035079731016e90b82d3b4b8cd830c171
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0f4ccda8c5f05f24fae2b32715029a42e8c33348
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428672"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215774"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 
-# <a name="cloud-center-of-excellence"></a>クラウドのセンター オブ エクセレンス
+# <a name="cloud-center-of-excellence-ccoe-functions"></a>クラウドのセンター オブ エクセレンス (CCoE) 機能
 
 ビジネスと技術の機敏性は、ほとんどの IT 組織の中核となる目標です。 クラウドのセンター オブ エクセレンス (CCoE) は、速度と安定性のバランスを取る機能です。
 
 ## <a name="function-structure"></a>機能の構造
 
-CCoE モデルには、次の各機能間のコラボレーションが必要です。
+CCoE モデルには、以下のそれぞれの間のコラボレーションが必要です。
 
 - クラウド導入 (具体的には、ソリューション アーキテクト)
 - クラウド戦略 (具体的には、プログラム マネージャーとプロジェクト マネージャー)
@@ -129,11 +129,13 @@ CCoE 作業の最初の 6 から 9 か月は、ビジネス利害関係者が IT
 
 **フォーカスの維持:** CCoE は、リソースに制約がある IT チームにとって重要なコミットメントとなる可能性があります。 短期的なプロジェクトから強力なアーキテクトを排除し、長期的な利益に集中すると、CCoE に属していないチーム メンバーに困難が生じる可能性があります。 IT リーダーと IT 利害関係者が CCoE の目標に集中し続けることが重要です。 CCoE の職務を優先して日常業務の途絶の優先度を下げるには IT リーダーと IT 利害関係者のサポートが必要です。
 
-**バッファーの作成:** CCoE チームは新しいアプローチを使用して実験します。 これらのアプローチの一部は、既存の運用または技術上の制約とうまく整合しません。 実験が失敗した場合に CCoE が他のチームからの圧力や不服を受けるリスクが実際にあります。 "早い失敗" の学習機会の結果からのチームの激励と緩衝が重要です。 同様に、チームが成長の思考様式に対する責任を果たし、これらの実験から学んでより優れたソリューションを見つけられるようにすることも重要です。
+**バッファーの作成:** CCoE チームは新しいアプローチを使用して実験します。 これらのアプローチの一部は、既存の運用または技術上の制約とうまく整合しません。 実験が失敗した場合に CCoE が他のチームからの圧力や不服を受けるリスクが実際にあります。 激励と、"早い失敗" となった学習機会の結果からチームを守ることが重要です。 同様に、チームが成長の思考様式に対する責任を果たし、これらの実験から学んでより優れたソリューションを見つけられるようにすることも重要です。
 
 ## <a name="next-steps"></a>次のステップ
 
-CCoE モデルでは、[クラウド プラットフォーム機能](./cloud-platform.md)と[クラウド自動化機能](./cloud-automation.md)の両方が必要です。 次の手順は、[クラウド プラットフォーム機能](./cloud-platform.md)の調整です。
+CCoE モデルには、クラウド プラットフォーム機能とクラウド自動化機能が必要です。 次の手順は、複数のクラウド プラットフォーム機能を連携させることです。
 
-> [!div class="nextstepaction"]
-> [クラウド プラットフォーム機能の調整](./cloud-platform.md)
+各項目の詳細情報
+
+- [クラウド プラットフォームの機能](./cloud-platform.md)
+- [クラウド自動化機能](./cloud-automation.md)

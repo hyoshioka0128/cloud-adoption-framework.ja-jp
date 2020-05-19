@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e8ccc7dcefb1fe2fe194e743fe139819ab29b01f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: db526c15a4e33f9531a404c8c257d9c6b5b90261
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120494"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222319"
 ---
 ::: zone target="docs"
 
@@ -64,7 +64,7 @@ Application Insights は、アプリケーションの使用状況に関する�
 
 ::: zone target="docs"
 
-アプリに関するデータを表示するには、[Azure portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents) に移動します。
+アプリに関するデータを表示するには、[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents) に移動します。
 
 ::: zone-end
 
@@ -108,7 +108,7 @@ API の定量的データを表示するには:
 
 ::: zone target="docs"
 
-API Management サービスを開くには、[Azure portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService) に移動します。
+API Management サービスを開くには、[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService) に移動します。
 
 ::: zone-end
 
@@ -177,7 +177,7 @@ DevOps プロジェクトを作成するには:
 
 ::: zone target="docs"
 
-App Service でアプリケーションを表示するには、[Azure portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites) に移動します。
+App Service でアプリケーションを表示するには、[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites) に移動します。
 
 ::: zone-end
 

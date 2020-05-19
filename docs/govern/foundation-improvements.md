@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 050d9cdfd2069a4d7da2e411233f6a60f270eb10
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 41535db6452be0b8efea9a91329169326c444ab0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77706610"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220211"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の改善
 
@@ -27,18 +27,18 @@ ms.locfileid: "77706610"
 > [!IMPORTANT]
 > リソース編成は、これらのベスト プラクティスの適用方法に影響を与える可能性があります。 前の手順で実装した初期のクラウド ガバナンス基盤に最もよく合致する推奨事項から開始することが重要です。
 
-|リスク/ニーズ | 標準的な企業 | 複雑な企業 |
+| リスク/ニーズ | 標準的な企業 | 複雑な企業 |
 |---|---|---|
-|クラウド内の機密データ|[規範の改良](./guides/standard/security-baseline-improvement.md)|[規範の改良](./guides/complex/security-baseline-improvement.md)|
-|クラウド内のミッション クリティカルなアプリ|[規範の改良](./guides/standard/resource-consistency-improvement.md)|[規範の改良](./guides/complex/resource-consistency-improvement.md)|
-|クラウドのコスト管理|[規範の改良](./guides/standard/cost-management-improvement.md)|[規範の改良](./guides/complex/cost-management-improvement.md)|
-|マルチクラウド|[規範の改良](./guides/standard/multicloud-improvement.md)|[規範の改良](./guides/complex/multicloud-improvement.md)|
-|複雑な/レガシ ID 管理|該当なし|[規範の改良](./guides/complex/identity-baseline-improvement.md)|
-|複数レイヤーのガバナンス|該当なし|[規範の改良](./guides/complex/multiple-layers-of-governance.md)|
+| クラウド内の機密データ | [規範の改良](./guides/standard/security-baseline-improvement.md) | [規範の改良](./guides/complex/security-baseline-improvement.md) |
+| クラウド内のミッション クリティカルなアプリ | [規範の改良](./guides/standard/resource-consistency-improvement.md) | [規範の改良](./guides/complex/resource-consistency-improvement.md) |
+| クラウドのコスト管理 | [規範の改良](./guides/standard/cost-management-improvement.md) | [規範の改良](./guides/complex/cost-management-improvement.md) |
+| マルチクラウド | [規範の改良](./guides/standard/multicloud-improvement.md) | [規範の改良](./guides/complex/multicloud-improvement.md) |
+| 複雑な/レガシ ID 管理 | 該当なし | [規範の改良](./guides/complex/identity-baseline-improvement.md) |
+| 複数レイヤーのガバナンス | 該当なし | [規範の改良](./guides/complex/multiple-layers-of-governance.md) |
 
 ## <a name="next-steps"></a>次のステップ
 
-ベスト プラクティスの適用に加えて、クラウド導入フレームワーク内のガバナンス方法論は、ビジネス上の固有の制約に合わせてカスタマイズ可能です。 適切な推奨事項に従った後、[企業ポリシーを評価して追加のカスタマイズ要件を把握](./corporate-policy.md)します。
+ベスト プラクティスの適用に加えて、クラウド導入フレームワークのガバナンス 手法をビジネス上の固有の制約に合わせてカスタマイズすることもできます。 適切な推奨事項に従った後、[企業ポリシーを評価して追加のカスタマイズ要件を把握](./corporate-policy.md)します。
 
 > [!div class="nextstepaction"]
 > [企業ポリシーの評価](./corporate-policy.md)

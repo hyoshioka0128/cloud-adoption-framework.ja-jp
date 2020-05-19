@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ba284cca38d1ce494792cce3d130d65a6240f4e1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d89a0e0facd81ed06c38cae4283f96791eeddd3f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996348"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224325"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -37,10 +37,10 @@ Azure では、[リソース グループ](https://docs.microsoft.com/azure/azur
 1. リソース グループのコンテンツは、同じ担当者またはチームによってまとめて管理、更新、および監視されていますか。
 1. リソース グループのコンテンツは一緒に削除されますか。
 
-上記のいずれかの点について答えが_いいえ_の場合は、該当するリソースを別のリソース グループに配置する必要があります。
+上記のいずれかの点について答えが "_いいえ_" の場合は、該当するリソースを別のリソース グループに配置する必要があります。
 
 > [!IMPORTANT]
-> リソース グループはリージョン固有でもありますが、リソースは、前述のようにまとめて管理されるため、同じリソース グループ内の異なるリージョンに配置されることが一般的です。 リージョンの選択の詳細については、[複数のリージョン](../../migrate/azure-best-practices/multiple-regions.md)を参照してください。
+> リソース グループはリージョン固有でもありますが、リソースは、前述のようにまとめて管理されるため、同じリソース グループ内の異なるリージョンに配置されることが一般的です。 リージョンの選択の詳細については、[複数のリージョン](../../migrate/azure-best-practices/multiple-regions.md)に関するページを参照してください。
 
 ## <a name="deployment-consistency"></a>デプロイの整合性
 
@@ -64,7 +64,7 @@ Azure では、[リソース グループ](https://docs.microsoft.com/azure/azur
 
 ## <a name="hierarchical-consistency"></a>階層的な整合性
 
-リソース グループを使用すると、サブスクリプション内の組織内で追加の階層レベルをサポートでき、リソース グループ レベルで Azure Policy の規則とアクセス制御を適用できます。 ただし、クラウド資産のサイズ拡大に合わせて、Azure Enterprise Agreement の企業、部門、アカウント、サブスクリプションの各階層を使用してサポートできる、さらに複雑なサブスクリプション間ガバナンス要件のサポートが必要となる場合があります。
+リソース グループを使用すると、サブスクリプション内の組織内で追加の階層レベルをサポートでき、リソース グループ レベルで Azure Policy の規則とアクセス制御を適用できます。 ただし、クラウド資産のサイズ拡大に合わせて、Azure エンタープライズ契約の企業、部門、アカウント、サブスクリプションの各階層を使用してサポートできる、さらに複雑なサブスクリプション間ガバナンス要件のサポートが必要となる場合があります。
 
 [Azure 管理グループ](https://docs.microsoft.com/azure/governance/management-groups)を使用すると、サブスクリプションをエンタープライズ契約の階層と異なる階層にグループ化することで、サブスクリプションをより高度な組織構造に編成することができます。 この代替階層では、複数のサブスクリプションと各サブスクリプションに含まれるリソースにまたがって、アクセス制御とポリシー実施のメカニズムを適用できます。 管理グループ階層を使用して、クラウド資産のサブスクリプションを運用やビジネス ガバナンスの要件に一致させることができます。 詳細については、「[サブスクリプション決定ガイド](../subscriptions/index.md)」を参照してください。
 

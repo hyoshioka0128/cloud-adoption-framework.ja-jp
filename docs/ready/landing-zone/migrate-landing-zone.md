@@ -7,18 +7,18 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a76a09e40fc11511213c0f496c9332ba9a05962f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 218dbe7cdc4be8e98b4c8ef3fd20ebd865a58a84
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997843"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222897"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
 # <a name="deploy-a-migration-landing-zone"></a>移行ランディング ゾーンをデプロイする
 
-"*移行ランディング ゾーン*" とは、オンプレミス環境から Azure に移行されるワークロードをホストする目的でプロビジョニングされ、準備された環境を表すために使用される用語です。
+"_移行ランディング ゾーン_" とは、オンプレミス環境から Azure に移行されるワークロードをホストする目的でプロビジョニングされ、準備された環境です。
 
 ## <a name="deploy-the-first-landing-zone"></a>最初のランディング ゾーンをデプロイする
 
@@ -48,7 +48,7 @@ ms.locfileid: "80997843"
 | 移行ツール              | Azure Site Recovery がデプロイされ、Azure Migrate プロジェクトが作成されます。                | [移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | ログ記録と監視       | Operational Insights ワークスペースと診断ストレージ アカウントがプロビジョニングされます。                |                                                                                                                                                                                                                                                                                       |
 | ネットワーク                      | ゲートウェイ、ファイアウォール、ジャンプボックス、ランディング ゾーンのサブネットを持つ仮想ネットワークが作成されます。  | [ネットワーク関連の意思決定](../considerations/networking-options.md)                                                                                                                                                                                                                       |
-| ID                     | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。 | [ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) |
+| ID                     | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。 | [ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | ポリシー                       | このブループリントでは現在、Azure ポリシーを適用しないことを想定しています。                        |                                                                                                                                                                                                                                                                                       |
 | サブスクリプション デザイン          | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [初期サブスクリプションを作成する](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | リソース グループ              | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [サブスクリプションのスケーリング](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
@@ -61,7 +61,7 @@ ms.locfileid: "80997843"
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>ランディング ゾーンをカスタマイズまたはデプロイする
 
-デプロイまたはカスタマイズの詳細については、[Azure Blueprints サンプル][deploy-sample]に関するページで、移行ランディング ゾーン ブループリントの参照サンプルを参照し、ダウンロードしてください。
+デプロイまたはカスタマイズの詳細については、[Azure Blueprints サンプル][deploy-sample]に関するページで、CAF 移行ランディング ゾーン ブループリントの参照サンプルを参照し、ダウンロードしてください。
 
 > [!div class="nextstepaction"]
 > [ブループリント サンプルをデプロイする][deploy-sample]

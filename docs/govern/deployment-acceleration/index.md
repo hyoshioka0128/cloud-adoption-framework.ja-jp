@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3c83e40ab6d08b461095385ac58cf64d74da86a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 369e12abcf0325ed44719ccb76bf0032b611f8f1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708973"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220432"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>デプロイ高速化の規範の概要
 
-デプロイ高速化とは、[クラウド導入フレームワーク ガバナンス モデル](../governance-disciplines.md)の[クラウド ガバナンスの 5 つの規範](../index.md)のうちの 1 つです。 この規範は、資産の構成またはデプロイを管理するためのポリシーを確立する方法に焦点を当てています。 クラウド ガバナンスの 5 つの規範のうち、デプロイ高速化には、デプロイ、構成の調整、およびスクリプトの再利用が含まれます。 これは手動のアクティビティによる場合と、完全に自動化された DevOps アクティビティによる場合があります。 どちらの場合も、ポリシーはほとんど同じままです。 この規範が成熟するにつれて、クラウド ガバナンス チームは、再利用可能な資産の適用によってデプロイを高速化し、クラウド導入に対する障壁を取り除くことで、DevOps およびデプロイ戦略におけるパートナーとしての役割を果たすことができます。
+デプロイ高速化とは、[クラウド導入フレームワーク ガバナンス モデル](../index.md)の[クラウド ガバナンスの 5 つの規範](../governance-disciplines.md)のうちの 1 つです。 この規範は、資産の構成またはデプロイを管理するためのポリシーを確立する方法に焦点を当てています。 クラウド ガバナンスの 5 つの規範のうち、デプロイ高速化規範には、デプロイ、構成の調整、およびスクリプトの再利用が含まれます。 これは手動のアクティビティによる場合と、完全に自動化された DevOps アクティビティによる場合があります。 どちらの場合も、ポリシーはほとんど同じままです。 この規範が成熟するにつれて、クラウド ガバナンス チームは、再利用可能な資産の適用によってデプロイを高速化し、クラウド導入に対する障壁を取り除くことで、DevOps およびデプロイ戦略におけるパートナーとしての役割を果たすことができます。
 
-この記事では、クラウド ソリューションの計画、構築、導入、運用の各フェーズで企業が経験するデプロイ高速化プロセスについて概説します。 1 つのドキュメントですべてのビジネスのすべての要件を説明することはできません。 そのため、この記事の各セクションでは、推奨される最小および潜在的なアクティビティについて概説します。 これらのアクティビティの目標は、お客様が[ポリシーの MVP](../policy-compliance/index.md#minimum-viable-product-mvp-for-policy) を構築する一方、[増分型のポリシー](../policy-compliance/index.md#incremental-policy-growth)の改善に対するフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、デプロイ高速化のポジションを向上させるために、これらのアクティビティに投資する金額を決定する必要があります。
+この記事では、クラウド ソリューション実装の計画、構築、導入、運用の各フェーズで企業が経験するデプロイ高速化プロセスについて概説します。 1 つのドキュメントですべてのビジネスのすべての要件を説明することはできません。 そのため、この記事の各セクションでは、推奨される最小および潜在的なアクティビティについて概説します。 これらのアクティビティの目標は、お客様が[ポリシーの MVP](../policy-compliance/index.md#minimum-viable-product-mvp-for-policy) を構築する一方、[増分型のポリシー](../policy-compliance/index.md#incremental-policy-growth)の改善に対するフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、デプロイ高速化のポジションを向上させるために、これらのアクティビティに投資する金額を決定する必要があります。
 
 > [!NOTE]
 > デプロイ高速化の規範は、クラウドベースのリソースを効率的にデプロイおよび構成しているお客様の組織の既存 IT チーム、プロセス、および手順にとって代わるものではありません。 この規範は、クラウド上のご利用のリソースを管理する責任がある IT スタッフが、ビジネス上の潜在的なリスクを特定し、リスクを軽減するときの指針となることを主な目的としています。 ガバナンス ポリシーおよびプロセスの策定時には、行っている計画と確認のプロセスに、関係する IT チームを関与させるようにしてください。
@@ -52,14 +52,15 @@ ms.locfileid: "77708973"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>デプロイ高速化のテンプレート</h3>
+                        <h3>デプロイ高速化規範テンプレート</h3>
                         <p class="x-hidden-focus">デプロイ高速化の規範を文書化するためのテンプレートをダウンロードします。</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -128,7 +129,7 @@ ms.locfileid: "77708973"
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>成熟度</h3>
-                        <p class="x-hidden-focus">クラウドの導入の段階とクラウド管理の成熟度を調整します。</p>
+                        <p class="x-hidden-focus">クラウド管理の成熟度をクラウド導入の段階に合わせて調整します。</p>
                     </div>
                 </div>
             </div>

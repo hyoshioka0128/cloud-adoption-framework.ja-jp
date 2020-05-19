@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 9cf54c8366f70d4b06debd6c09c54bd757759458
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: efefa348324ab0c9dff86b5d19f7c3f11d9d437d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433196"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223271"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
-# <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>ロールベースのアクセス制御を使用して Azure 環境へのアクセスを管理する
+# <a name="manage-access-to-your-azure-environment-with-role-based-access-control"></a>ロールベースのアクセス制御を使用して Azure 環境へのアクセスを管理する
 
 Azure のリソースとサブスクリプションにアクセスできるユーザーを管理することは、Azure のガバナンス戦略の重要な部分を占めており、グループに基づくアクセス権と特権の割り当ては適切なプラクティスです。 個々のユーザーではなくグループを処理すれば、アクセス ポリシーの保守が簡素化され、チーム間に一貫したアクセス管理が提供され、構成エラーが削減されます。 Azure のロールベースのアクセス制御 (RBAC) は、Azure でアクセスを管理するための主要な方法です。
 

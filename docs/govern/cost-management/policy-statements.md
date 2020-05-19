@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7908dfe5a4ab63d37f97296cf8b830f358a2f4ea
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d686d50b98cbdef31c48d27f20d1c66f942e0818
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434644"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220500"
 ---
 # <a name="cost-management-sample-policy-statements"></a>コスト管理のサンプル ポリシー ステートメント
 
@@ -29,7 +29,7 @@ ms.locfileid: "80434644"
 
 **ビジネス リスク:** ガバナンス チームからコスト管理規範への投資が保証されない現在の条件。 しかし、将来、そのような投資が予測されます。
 
-**ポリシー ステートメント:** クラウドにデプロイされたすべての資産を課金単位およびアプリケーション/ワークロードに関連付ける必要があります。 このポリシーにより、将来のコスト管理の取り組みが確実に効果的なものになります。
+**ポリシー ステートメント:** クラウドにデプロイされたすべての資産を課金単位およびアプリケーション/ワークロードに関連付ける必要があります。 このポリシーにより、Cost Management 規範の効果が高まります。
 
 **設計オプション:** 将来性のある基礎を確立する方法については、クラウド導入フレームワーク ガイダンスの一部として含まれている[使用可能な設計ガイド](../guides/index.md)に関するページにあるガバナンス MVP の作成に関連した説明を参照してください。
 
@@ -39,7 +39,7 @@ ms.locfileid: "80434644"
 
 **ポリシー ステートメント:** 承認済み予算と予算制限のメカニズムを使用して、請求単位にクラウド デプロイを割り当てる必要があります。
 
-**設計オプション:** Azure では、[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/manage-budgets) を使用して予算を制御することができます
+**設計オプション:** Azure では、[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/manage-budgets) を使用して予算を制御することができます。
 
 ## <a name="underutilization"></a>過小使用
 
@@ -49,7 +49,7 @@ ms.locfileid: "80434644"
 
 **設計オプション:**
 
-- Azure では、計画された支出と実際の支出を、[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis) を使用して管理することができます
+- Azure では、計画された支出と実際の支出を、[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis) を使用して管理することができます。
 - 課金単位でリソースをグループ化するためのオプションがいくつかあります。 Azure で、ガバナンス チームと協力して、[リソースの整合性モデル](../../decision-guides/resource-consistency/index.md)を選択し、すべての資産に適用する必要があります。
 
 ## <a name="overprovisioned-assets"></a>オーバープロビジョニングの資産
@@ -78,7 +78,7 @@ ms.locfileid: "80434644"
 
 この記事で説明されているサンプルを開始点として使用し、クラウドの導入計画に合致する特定のビジネス上のリスクに対処するポリシーを作成します。
 
-コスト管理に関連する独自のカスタム ポリシー ステートメントの作成を開始するには、[コスト管理テンプレート](./template.md)をダウンロードします。
+Cost Management に関連する独自のカスタム ポリシー ステートメントの作成を開始するには、[Cost Management ポリシー テンプレート](./template.md)をダウンロードします。
 
 この規範の導入を促進するには、ご使用の環境に最も合う[実践的なガバナンス ガイド](../guides/index.md)を選択します。 その後、設計を変更して、特定の企業ポリシーの決定を組み込みます。
 

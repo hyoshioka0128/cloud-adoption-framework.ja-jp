@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 5f0636a5467d1bc1461597f4b0b215b88d8f017d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d1329175f341ca414cc79d2b2fa480ccdb294036
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433917"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223203"
 ---
 <!-- cSpell:ignore dchimes -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "80433917"
 
 コスト管理とは、ビジネスに関連するコストを効率的に計画して制御するプロセスです。 コストの管理タスクは、一般に、財務、管理、およびアプリのチームが実行します。 Azure Cost Management は、コストを考慮に入れて計画を立てる助けになります。 また、効果的にコストを分析し、クラウド支出を最適化する措置を取ることにも役立ちます。
 
-クラウド コスト管理プロセスを組織全体に統合する方法の詳細については、クラウド導入フレームワークの、[事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md)方法に関する記事を参照してください。
+クラウド コスト管理プロセスを組織全体に統合することの詳細については、クラウド導入フレームワークの、[事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md)方法に関する記事を参照してください。
 
 ## <a name="manage-your-costs-with-azure-cost-management"></a>Azure Cost Management でコストを管理する
 
@@ -70,7 +70,7 @@ Azure のお客様は、課金とサブスクリプションのサポートに�
 
 - [Azure の課金とコスト管理に関するドキュメント](https://docs.microsoft.com/azure/billing)
 - [クラウド導入フレームワーク:事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md)
-- [クラウド導入フレームワーク:コスト管理ガバナンス規範](../../govern/cost-management/index.md)
+- [クラウド導入フレームワーク:Cost Management の規範](../../govern/cost-management/index.md)
 
 ::: zone-end
 

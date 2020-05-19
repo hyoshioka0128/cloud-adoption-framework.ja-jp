@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fd5f3ca69312156c705857bb91968ea40cd3a867
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a7662d8460581d143b75a8f95aa48bf290d39c2d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997800"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221758"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -38,13 +38,17 @@ Terraform のクラウド導入フレームワークのファンデーション 
 
 デプロイされるコンポーネントとその目的は次のとおりです。
 
-| コンポーネント             | 担当                                                                                                                                                                                                                                            |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| リソース グループ       | ファンデーションに必要なコア リソース グループ                                                                                                                                                                                                            |
-| アクティビティ ログ      | サブスクリプションのすべてのアクティビティの監査とアーカイブ: </br> - ストレージ アカウント </br> - Azure Event Hubs                                                                                                                                                      |
-| 診断ログ   | すべての操作ログは、特定の日数だけ保持されます。 </br> - ストレージ アカウント </br> - Event Hubs                                                                                                                                                         |
-| Log Analytics         | すべての操作ログを格納します。 </br> 詳細なアプリケーションのベスト プラクティスのレビューのための一般的なソリューションのデプロイ: </br> - NetworkMonitoring </br> - ADAssessment </br> - ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics |
+<!-- markdownlint-disable MD033 -->
+
+| コンポーネント | 担当 |
+|---|---|
+| リソース グループ | ファンデーションに必要なコア リソース グループ |
+| アクティビティ ログ      | サブスクリプションのすべてのアクティビティの監査とアーカイブ: <li> ストレージ アカウント <li> Azure Event Hubs |
+| 診断ログ | すべての操作ログは、特定の日数だけ保持されます。 <li> ストレージ アカウント <li> Event Hubs |
+| Log Analytics | すべての操作ログを格納します。 詳細なアプリケーションのベスト プラクティスのレビューのための一般的なソリューションのデプロイ: <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure Security Center | セキュリティ検疫メトリックおよびメールと電話番号に送信されるアラート                                                                                                                                                                                        |
+
+<!-- markdownlint-enable MD033 -->
 
 ## <a name="use-this-blueprint"></a>このブループリントを使用する
 
@@ -94,6 +98,8 @@ Terraform ランディング ゾーンでは、次の決定事項が示されま
 | デプロイの種類   | リソースの管理方法を定義します。                                                    | deploymentType  | Manual、Terraform                                |
 | Version           | デプロイされるブループリントのバージョン。                                                                 | version         | v0.1                                             |
 | アプリケーション名  | リソースに関連付けられているアプリケーション、サービス、またはワークロードの名前。             | ApplicationName | "アプリ名"                                       |
+
+<!-- cSpell:ignore caf -->
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>最初のランディング ゾーンをカスタマイズしてデプロイする
 
@@ -145,7 +151,7 @@ tags_hub = {
 }
 ```
 
-次に、デプロイの分析に使用されるログ分析名とソリューションのセットを指定します。 ここでは、ネットワーク監視、Active Directory (AD) Assessment と Replication、DNS Analytics、および Key Vault Analytics を保持しました。
+次に、デプロイの分析に使用されるログ分析名とソリューションのセットを指定します。 ここでは、ネットワーク監視、Active Directory Assessment と Replication、DNS Analytics、および Key Vault Analytics を保持しました。
 
 ```hcl
 

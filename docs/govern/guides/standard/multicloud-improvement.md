@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 27ee8420a1d610705b76c80590229ee1a7c454da
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 360c222130341e19d4fd185cc738fa47c26e01a6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434256"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214533"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -34,8 +34,8 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 その後、以下に示すように、ガバナンスに影響を与えるいくつかの変化がありました。
 
 - ID は、Active Directory のオンプレミス インスタンスによって管理されている。 Azure Active Directory へのレプリケーションによりハイブリッド ID が促進された。
-- IT の操作やクラウドの操作の多くは、Azure Monitor および関連する自動化プロセスによって管理されている。
-- ディザスター リカバリーとビジネス継続性は Azure コンテナー インスタンスによって制御されている。
+- IT の操作やクラウドの操作は、主として Azure Monitor および関連する自動化プロセスによって管理されている。
+- ディザスター リカバリーとビジネス継続性は、Azure Recovery Services コンテナーによって制御されている。
 - Azure Security Center を使用して、セキュリティ違反や攻撃を監視している。
 - Azure Security Center と Azure Monitor を使用して、クラウドのガバナンスを監視している。
 - Azure Blueprints、Azure Policy、および Azure 管理グループを使用して、ポリシーのコンプライアンスを自動化している。
@@ -65,7 +65,7 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 
 記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーと Azure Cost Management の実装を含めます。 これらの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
-1. ネットワークを接続する。 この手順は、クラウド ガバナンス チームの支援を受け、ネットワークおよび IT セキュリティ チームが実行します。 MPLS/専用回線のプロバイダーから新しいクラウドに接続を追加することにより、ネットワークが統合されます。 ルーティング テーブルとファイアウォールの構成を追加することにより、環境の間のアクセスとトラフィックを管理します。
+1. ネットワークを接続する。 この手順は、クラウド ガバナンス チームの支援を受け、ネットワーク チームと IT セキュリティ チームが実行します。 MPLS/専用回線のプロバイダーから新しいクラウドに接続を追加することにより、ネットワークが統合されます。 ルーティング テーブルとファイアウォールの構成を追加することにより、環境の間のアクセスとトラフィックを管理します。
 2. ID プロバイダーを統合する。 セカンダリ クラウドでホストされているワークロードに応じて、ID プロバイダーの統合に対してさまざまな選択肢があります。 以下に例を示します。
     1. OAuth 2 を使用して認証するアプリケーションの場合、セカンダリ クラウド内の Active Directory のユーザーは、単純に既存の Azure AD テナントにレプリケートできます。 これにより、すべてのユーザーがテナント内で認証されるようになります。
     2. 一方、フェデレーションの場合は、OU をオンプレミスの Active Directory 経由で Azure AD インスタンスに送ることができます。

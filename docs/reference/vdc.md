@@ -7,21 +7,21 @@ ms.date: 06/12/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4eb8e5a0c9fa88bdfbd6e00c55047e75873ff36f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 87966103eaf1d360db77e9bdf34f62afa77fdaa9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79311559"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221656"
 ---
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 <!-- cSpell:ignore tracsman jonor -->
 
 # <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
 > [!WARNING]
-> Azure 仮想データ センターは、Microsoft Cloud Adoption Framework for Azure と統合されています。 このガイダンスは、Cloud Adoption Framework 内での準備とガバナンスの手法を実現するための基盤の重要な部分として機能します。 この移行を行うお客様をサポートするために、次のリソースはアーカイブされており、別の GitHub リポジトリに保持されます。
+> Azure 仮想データ センターは、Microsoft Cloud Adoption Framework for Azure と統合されています。 このガイダンスは、クラウド導入フレームワークにおける準備とガバナンスの手法を実現するための基盤の重要な部分として機能します。 この移行を行うお客様をサポートするために、次のリソースはアーカイブされており、別の GitHub リポジトリに保持されます。
 
 ## <a name="archived-resources"></a>アーカイブされたリソース
 
@@ -29,7 +29,7 @@ ms.locfileid: "79311559"
 
 <table>
 <tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
+    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Azure Virtual Datacenter e-book" /></a></td>
     <td>
         <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Azure 仮想データセンター:概念</a></h3>
         <p>この電子書籍では、既存のセキュリティとネットワーク ポリシーを考慮しながら、エンタープライズ ワークロードを Azure クラウド プラットフォームにデプロイする方法について説明します。</p>
@@ -38,7 +38,7 @@ ms.locfileid: "79311559"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">仮想データセンター:ネットワーク パースペクティブ</a></h3>
+        <h3><a href="./networking-vdc.md">仮想データセンター: ネットワークの観点</a></h3>
         <p>このネットワーク パターンと設計の概要では、大規模なクラウド移行を計画するときにお客様が直面するアーキテクチャのスケール、パフォーマンス、セキュリティの問題に対処します。</p>
     </td>
 </tr>

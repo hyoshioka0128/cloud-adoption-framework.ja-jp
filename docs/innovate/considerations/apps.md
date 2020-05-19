@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0503ba04a97362b63c6e616b79d1153f3ba691c2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120516"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224172"
 ---
 # <a name="engage-through-applications"></a>アプリケーションによる連携
 
@@ -28,8 +28,8 @@ ms.locfileid: "81120516"
 
 イノベーションに備えるために、すべてのアプリケーション開発を共有コード リポジトリから始める必要があります。 コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。このツールでは、共有コード リポジトリをすばやく作成できます。 または、[Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) は、コードの管理に使用できる Azure DevOps Services のバージョン管理ツールのセットです。 Azure Repos では、次の 2 種類のバージョン管理が提供されています。
 
-- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): 分散バージョン管理
-- [Team Foundation バージョン管理 (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): 集中バージョン管理
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): 分散バージョン管理。
+- [Team Foundation バージョン管理 (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): 集中バージョン管理。
 
 ## <a name="citizen-developers"></a>市民開発者
 
@@ -50,7 +50,7 @@ ms.locfileid: "81120516"
 
 ### <a name="infusing-intelligence"></a>インテリジェンスを使用する
 
-機械学習と人工知能は、開発者にとってますます利用しやすくなっています。 予測機能を備えた共通 API を広く利用できるようになり、データや予測へのアクセスが広がったことで、開発者は、より良く顧客のニーズを満たすことができます。
+機械学習と AI は、開発者にとってますます利用しやすくなっています。 予測機能を備えた共通 API を広く利用できるようになり、データや予測へのアクセスが広がったことで、開発者は、より良く顧客のニーズを満たすことができます。
 
 ソリューションにインテリジェンスを追加することで、音声テキスト変換、テキスト翻訳、コンピューター ビジョン、さらに画像検索が可能になります。 これらの拡張された機能によって、開発者はより簡単に、インテリジェンスを利用してインタラクティブな最新エクスペリエンスを提供するソリューションを構築できます。
 
@@ -82,18 +82,18 @@ ms.locfileid: "81120516"
 
 - 既存のビジネス ロジックが既存の顧客ニーズを (ほぼ) 満たしている。
 - エクスペリエンスの改善によって、特定の顧客群のニーズ満足度が高まる。
-- 実用最小限の製品 (MVP) ソリューションに必要なビジネス ロジックが集中化されている。これは通常、[N 層](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)、Web サービス、API、または[マイクロサービス](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)設計によって実現されます。 このアプローチでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションをラップします。 Azure では、このソリューションは Azure App Services で運用される見込みです。
+- 実用最小限の製品 (MVP) ソリューションに必要なビジネス ロジックが集中化されている。これは通常、[N 層](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)、Web サービス、API、または[マイクロサービス](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)設計によって実現されます。 このアプローチでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションをラップします。 Azure では、このソリューションは Azure App Service で運用される見込みです。
 
 ### <a name="rebuild-an-existing-solution"></a>既存のソリューションを再構築する
 
-アプリケーションを簡単に拡張できない場合、ソリューションのリファクタリングが必要になることがあります。 このアプローチでは、ワークロードはクラウドに移行されます。 アプリケーションを移行した後、その一部を Web サービスまたは[マイクロサービス](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)として変更または複製し、既存のソリューションと並行してデプロイします。 並列サービスベースのソリューションは、拡張されたソリューションと同様に扱うことができます。 このソリューションでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションを単にラップします。 Azure では、このソリューションは Azure App Services で運用される見込みです。
+アプリケーションを簡単に拡張できない場合、ソリューションのリファクタリングが必要になることがあります。 このアプローチでは、ワークロードはクラウドに移行されます。 アプリケーションを移行した後、その一部を Web サービスまたは[マイクロサービス](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)として変更または複製し、既存のソリューションと並行してデプロイします。 並列サービスベースのソリューションは、拡張されたソリューションと同様に扱うことができます。 このソリューションでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションを単にラップします。 Azure では、このソリューションは Azure App Service で運用される見込みです。
 
 > [!CAUTION]
 > ソリューションのリファクタリングや再設計、またはビジネス ロジックの一元化は、顧客価値を生み出すのではなく、時間を消費する[技術的スパイク](./build.md#reduce-complexity-and-delay-technical-spikes)をすぐに引き起こす可能性があります。 これは、イノベーションにとって、特に仮説検証の初期においてはリスクになります。 ソリューションの設計をわずかに創造的にするだけで、既存のソリューションのリファクタリングを必要としない MVP への道が開けるはずです。 初期仮説を大筋で検証できるまでは、リファクタリングを遅らせるのが賢明です。
 
 ## <a name="operating-model-innovations"></a>運用モデルのイノベーション
 
-アプリを作成するための最新の革新的なアプローチに加えて、アプリの "*運用*" においても注目すべきイノベーションがあります。 これらのアプローチによって、多くの組織に変化が生じました。 最も顕著なものの 1 つは、[クラウドのセンター オブ エクセレンス](../../organize/cloud-center-of-excellence.md)運用モデルです。 優れた人員が揃い、成熟したビジネス チームには、ソリューションに対して独自の運用サポートを提供するという選択肢があります。
+アプリを作成するための最新の革新的なアプローチに加えて、アプリの "_運用_" においても注目すべきイノベーションがあります。 これらのアプローチによって、多くの組織に変化が生じました。 最も顕著なものの 1 つは、[クラウドのセンター オブ エクセレンス](../../organize/cloud-center-of-excellence.md)運用モデルです。 優れた人員が揃い、成熟したビジネス チームには、ソリューションに対して独自の運用サポートを提供するという選択肢があります。
 
 クラウドのセンター オブ エクセレンスにみられる、このようなセルフサービス型の運用管理モデルでは、ソリューション環境内で制御を厳格化し、イテレーションを迅速化することができます。 これらの目標は、運用管理と説明責任をビジネス チームに移管することによって達成されます。
 

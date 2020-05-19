@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 212c5634c09900e52c02ec6691862f3c60b7b3dc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79023867"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221690"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>クラウド運用モデルは Azure 向けの Microsoft Cloud 導入フレームワークの一部になりました
 
@@ -26,15 +26,17 @@ ms.locfileid: "79023867"
 
 COM に類似するアプローチでは、次のいずれかから読み始める必要があります。
 
-- [クラウド移行の取り組みを始める](../getting-started/migrate.md)
-- [クラウドの導入によるイノベーション](../getting-started/innovate.md)
-- [クラウド導入の成功を実現する](../getting-started/enable.md)
+- [クラウド移行の取り組みを始める](../get-started/migrate.md)
+- [クラウドの導入によるイノベーション](../get-started/innovate.md)
+- [クラウド導入の成功を実現する](../get-started/enable.md)
 
 COM で提供されていたガイダンスは、引き続きクラウドの導入フレームワークに関連しています。 エクスペリエンスは異なりますが、クラウド導入フレームワークの構造は、単にそのガイダンスを拡張したものです。 COM からクラウド導入フレームワークに移行するには、スコープと構造を理解することが重要です。 次の 2 つのセクションで、この移行について説明します。
 
 ## <a name="scope"></a>Scope
 
 COM では、次のコンポーネントで構成される範囲が確立されていました。
+
+<!-- cSpell:ignore caf -->
 
 ![クラウド導入フレームワークの範囲](../_images/caf-scope.png)
 
@@ -45,7 +47,7 @@ COM では、次のコンポーネントで構成される範囲が確立され�
 クラウド運用モデルとクラウド導入フレームワークの範囲は、概要レベルでは類似しています。 ビジネス、カルチャ、およびテクノロジは、クラウド導入フレームワークのガイダンス全体と各方法論の中に反映されています。
 
 > [!NOTE]
-> クラウド導入フレームワークの範囲には、明確さの 2 つの重要なポイントがあります。 クラウド導入フレームワークでは、ビジネス戦略は、クラウドのコストの文書化という範囲を超えて、動機、望ましい成果、見返り、およびクラウド コストを理解して、実施可能な計画を作成し、ビジネスを明確に正当化することに関連しています。 クラウド導入フレームワークでは、ユーザー戦略は、トレーニングの範囲を超えて、実証可能なカルチャの成熟を生み出すアプローチが含まれています。 ロードマップのいくつかの領域には、アジャイル管理、DevOps 統合、顧客の共感と支持、および製品のリーン開発アプローチの影響のデモが含まれています。
+> クラウド導入フレームワークの範囲には、明確さの 2 つの重要なポイントがあります。 このフレームワークでは、ビジネス戦略は、クラウドのコストの文書化という範囲を超えて、動機、望ましい成果、見返り、およびクラウド コストを理解して、実施可能な計画を作成し、ビジネスを明確に正当化することに関連しています。 クラウド導入フレームワークでは、ユーザー戦略は、トレーニングの範囲を超えて、実証可能なカルチャの成熟を生み出すアプローチが含まれています。 ロードマップのいくつかの領域には、アジャイル管理、DevOps 統合、顧客の共感と支持、および製品のリーン開発アプローチの影響のデモが含まれています。
 
 ## <a name="structure"></a>構造体
 
@@ -65,15 +67,15 @@ COM には、クラウド導入の取り組みで必要な、さまざまな意�
 
 クラウド導入の 3 つのフェーズは、2 つの具体的な過程にマップされます。
 
-- [移行](../getting-started/migrate.md):既存のワークロードをクラウドに移行します。
-- [イノベーション](../getting-started/innovate.md):既存のワークロードを最新化し、新しい製品やサービスを開発します。
+- [移行](../get-started/migrate.md):既存のワークロードをクラウドに移行します。
+- [イノベーション](../get-started/innovate.md):既存のワークロードを最新化し、新しい製品やサービスを開発します。
 
-クラウド導入を成功させるために必要なその他のリソースについては、[導入の成功の実現](../getting-started/enable.md)に関するページを参照してください。
+クラウド導入を成功させるために必要なその他のリソースについては、[導入の成功の実現](../get-started/enable.md)に関するページを参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 
-COM で終了したところから過程を再開するには、次のクラウド導入過程のいずれかを選択してください。
+COM が中断したところから再開するには、次の概要ガイドのいずれかを選択してください。
 
-- [クラウドへの移行の概要](../getting-started/migrate.md)
-- [クラウドに対応するための導入の概要](../getting-started/innovate.md)
-- [導入の成功を可能にする](../getting-started/enable.md)
+- [クラウド移行の概要](../get-started/migrate.md)
+- [クラウドに対応するための導入の概要](../get-started/innovate.md)
+- [導入の成功を実現する](../get-started/enable.md)

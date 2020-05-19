@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 244444057561118c2e3f2b7a574bfdfb529f0978
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 872a492be4ef27fbbbba758c9780a9af5d070940
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997406"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224274"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,12 +36,18 @@ ms.locfileid: "80997406"
 
 ## <a name="the-cloud-policy-review-process"></a>クラウド ポリシーの確認のプロセス
 
-クラウド ポリシーの確認では、既存の IT ガバナンスと IT セキュリティ ポリシーを次の[クラウド ガバナンスの 5 つの規範](../index.md)と整合させます。[Cost Management](../cost-management/index.md)、[セキュリティ ベースライン](../security-baseline/index.md)、 [ID ベースライン](../identity-baseline/index.md)、[リソースの整合性](../resource-consistency/index.md)、[デプロイ高速化](../deployment-acceleration/index.md)。
+クラウド ポリシーの確認では、既存の IT ガバナンスと IT セキュリティ ポリシーを次の[クラウド ガバナンスの 5 つの規範](../index.md)と整合させます。
+
+- [コスト管理規範](../cost-management/index.md)
+- [セキュリティ ベースライン規範](../security-baseline/index.md)
+- [ID ベースライン規範](../identity-baseline/index.md)
+- [リソースの整合性規範](../resource-consistency/index.md)
+- [デプロイ高速化規範](../deployment-acceleration/index.md)。
 
 確認プロセスは、これらの規範ごとに次の手順に従います。
 
 1. 特定の規範に関連する既存のオンプレミス ポリシーを確認し、2 つの主要なデータ ポイント (レガシの依存、識別されたビジネス上のリスク) を探します。
-2. 次の簡単な質問を行ってビジネス上の各リスクを評価します。「クラウド モデルにビジネス上のリスクがまだ存在しますか?」
+2. 次の簡単な質問を行ってビジネス上の各リスクを評価します: "クラウド モデルにビジネス上のリスクがまだ存在しますか?"
 3. リスクが依然として存在する場合は、技術的なソリューションではなく、必要なビジネスの軽減策を文書化することでポリシーを書き換えます。
 4. 更新されたポリシーをクラウド導入チームと共に確認して、必要な軽減策に対する可能な技術ソリューションを理解します。
 
@@ -50,7 +56,7 @@ ms.locfileid: "80997406"
 プロセスの例を示すために、前のセクションのテープ バックアップ ポリシーをもう一度使用します。
 
 - 企業ポリシーでは、すべての実稼働システムに対してオフサイト テープ バックアップが義務付けられています。 このポリシーでは、対象となる次の 2 つのデータ ポイントを確認できます。
-  - テープ バックアップ ソリューションへのレガシの依存
+  - テープ バックアップ ソリューションへのレガシの依存。
   - 実稼働機器と同じ物理的な場所にバックアップを保存することに関連して想定されるビジネス上のリスク。
 - リスクはまだ存在しますか? はい。 クラウドでも、1 つの施設に依存することでリスクが発生します。 オンプレミスのソリューションに存在していたリスクよりも、このリスクがビジネスに影響を与える可能性は低いですが、リスクは依然として存在します。
 - ポリシーを書き換えます。 データ センター全体の障害の場合は、障害から 24 時間以内に別のデータセンターと別の地理的な場所に実稼働システムを復元する手段が必要です。

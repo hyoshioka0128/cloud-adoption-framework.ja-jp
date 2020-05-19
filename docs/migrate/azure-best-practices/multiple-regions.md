@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ff04f94c8f6dbf023f706ac3c66778fdc89c3437
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998070"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217185"
 ---
 # <a name="azure-regions"></a>Azure Azure リージョン
 
@@ -24,7 +24,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 1. **制約:** 特定のリージョンでのサービスのデプロイには、特定の制約が適用されます。 たとえば、一部のリージョンは、バックアップまたはフェールオーバーのターゲットとしてのみ使用できます。 注意が必要なその他の制約は、[データ主権要件](https://azure.microsoft.com/global-infrastructure/geographies)です。
 1. **主権:** 特定のリージョンは、特定の主権エンティティ専用になっています。 すべてのリージョンは Azure リージョンですが、こうした主権リージョンは他の Azure から完全に分離されており、Microsoft によって管理されるとは限りません。また、特定の種類の顧客に制限されている場合もあります。 このような主権リージョンは次のとおりです。
     1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)
-    1. [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany) (ドイツ国内の標準の非主権 Azure リージョンを優先するために推奨されていません)
+    1. [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany): 非推奨とされる予定で、ドイツ国内の標準の非主権 Azure リージョンが優先されます
     1. [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
     1. 注: [オーストラリア](https://azure.microsoft.com/global-infrastructure/australia)の 2 つのリージョンは Microsoft によって管理されていますが、オーストラリア政府とその顧客および請負業者向けに提供されているため、他の主権クラウドと似たクライアントの制約を受けます。
 
@@ -43,7 +43,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 堅牢なクラウド デプロイには、Azure リージョンが考慮された、十分に考慮されたネットワークが必要です。 デプロイ先のリージョンについて前述の特性を考慮した後に、ネットワークをデプロイする必要があります。 ネットワークに関する包括的な説明はこの記事では扱いませんが、次の点について考慮する必要があります。
 
-- Azure リージョンはペアで配置されています。 あるリージョンで致命的な障害が発生した場合に備えて、同じ地理的境界* 内の別のリージョンがペア リージョンとして指定されています。 プライマリとセカンダリの回復性戦略として、ペア リージョンへの配置を検討することをお勧めします。 \* Azure ブラジルは注意が必要な例外であり、ペア リージョンが米国中南部です。 詳細については、「[Azure のペアになっているリージョン](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)」をご覧ください。
+- Azure リージョンはペアで配置されています。 あるリージョンで致命的な障害が発生した場合に備えて、同じ地理的境界内の別のリージョンがペア リージョンとして指定されています。 プライマリとセカンダリの回復性戦略として、ペア リージョンへの配置を検討することをお勧めします。 Azure ブラジルは注意が必要な例外であり、ペア リージョンが米国中南部です。 詳細については、「[Azure のペアになっているリージョン](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)」をご覧ください。
 
   - Azure Storage は [geo 冗長ストレージ (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) をサポートしています。これは、データの 3 つのコピーがプライマリ リージョンに格納され、3 つの追加コピーがペア リージョンに格納されることを意味します。 GRS のストレージ ペアリングを変更することはできません。
   - Azure Storage GRS に依存するサービスでは、このペア リージョンの機能を利用できます。 そのためには、それをサポートするようにアプリケーションとネットワークを配置する必要があります。
@@ -88,7 +88,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="data-sovereignty-relevancy"></a>データ主権の関連性
+## <a name="relevance-of-data-sovereignty"></a>データ主権の関連性
 
 世界中で、政府組織が、一般データ保護規則 (GDPR) のようなデータ主権要件を確立し始めています。 この類のコンプライアンス要件では、多くの場合、特定のリージョン内または特定の国内においても、市民を保護するためにローカリゼーションが必要になります。 場合によっては、お客様、従業員、またはパートナーに属するデータを、エンド ユーザーと同じリージョン内のクラウド プラットフォームに格納する必要があります。
 

@@ -1,5 +1,5 @@
 ---
-title: 標準的な企業のガバナンス:Cost Management 規範の改善
+title: 標準的な企業のガバナンス:コスト管理の規範の改善
 description: Azure 向けクラウド導入フレームワークを使用して、ガバナンスの実用最小限の製品 (MVP) へのコスト制御の追加について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3d0a4e06a2aaa21f191130b937790408abf16952
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1c25a98eaa63e6cd6f71ac571ec4e006ad7c4946
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434287"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219939"
 ---
-# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>標準的な企業のガイド:コスト管理の規範の改善
+# <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準的な企業のガバナンス ガイド:コスト管理の規範の改善
 
 この記事では、ガバナンス MVP にコスト制御を追加することで物語を進めます。
 
 ## <a name="advancing-the-narrative"></a>物語を進める
+
+<!-- docsTest:ignore DR -->
 
 導入は、ガバナンス MVP で定義されているコストの許容範囲指標を以上に拡大しました。 これは "ディザスター リカバリー" 用データ センターからの移行に対応しているため、良いことです。 今回は支出の増加が、クラウド ガバナンス チームが時間をかける理由となっています。
 
@@ -36,7 +38,7 @@ ms.locfileid: "80434287"
 
 ### <a name="incrementally-improve-the-future-state"></a>将来の状態を段階的に改善する
 
-コストの監視およびレポートが、クラウド ソリューションに追加されます。 現在も IT 部門がコスト情報センターとしての役割を果たしています。 これは、クラウド サービスの支払いが、引き続き IT 調達に分類されることを意味します。 しかしレポートでは、クラウド コストを費やしている機能に直接運用経費を結び付ける必要があります。 このモデルは、"ショーバック" クラウド会計モデルと呼ばれています。
+コストの監視およびレポートが、クラウド ソリューションに追加されます。 現在も IT 部門がコスト情報センターとしての役割を果たしています。 これは、クラウド サービスの支払いが、引き続き IT 調達に分類されることを意味します。 しかしレポートでは、クラウド コストを費やしている機能に直接運用経費を結び付ける必要があります。 このモデルは、_ショーバック_ クラウド会計モデルと呼ばれています。
 
 現在や将来の状態が変わると、新しいリスクが現れるため、新しいポリシー ステートメントが必要になります。
 

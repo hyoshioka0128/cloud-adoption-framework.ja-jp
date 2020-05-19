@@ -7,18 +7,18 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3731564f5f481f62cd461a9742eb8416e182b550
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e5407f2f78942d22c5fa07b277f600d5440ddc04
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427873"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214023"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>クラウド導入計画のタイムライン
 
 このシリーズの前の記事では、ワークロードとタスクが[リリースとイテレーション](./iteration-paths.md)に割り当てられました。 これらの割り当てによって、この記事内のタイムラインの見積もりがフィードされます。
 
-作業分解構造 (WBS) は、シーケンシャルなプロジェクト管理ツール内でよく使用されます。 これらは、依存するタスクが一定期間にわたってどのように完了するかを表します。 このような構造は、タスクが本質的にシーケンシャルである場合にうまく機能します。 クラウド導入で見られるタスク内の相互依存関係によって、このような構造の管理が難しくなります。 このギャップを埋めるために、複雑さを隠すことで、イテレーション パスの割り当てに基づいてタイムラインを見積もることができます。
+作業分解構造は、シーケンシャルなプロジェクト管理ツール内でよく使用されます。 これらは、依存するタスクが一定期間にわたってどのように完了するかを表します。 このような構造は、タスクが本質的にシーケンシャルである場合にうまく機能します。 クラウド導入で見られるタスク内の相互依存関係によって、このような構造の管理が難しくなります。 このギャップを埋めるために、複雑さを隠すことで、イテレーション パスの割り当てに基づいてタイムラインを見積もることができます。
 
 ## <a name="estimate-timelines"></a>タイムラインの見積もり
 
@@ -30,4 +30,6 @@ ms.locfileid: "80427873"
 
 ## <a name="delivery-plans-in-azure-devops"></a>Azure DevOps でのデリバリー計画
 
-Azure DevOps を使用してクラウド導入計画を管理している場合は、[Microsoft Delivery Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans) 拡張機能の使用を検討してください。 この拡張機能を使用すると、イテレーションとリリースの割り当てに基づくタイムラインをすばやく視覚的に表現できます。
+<!-- docsTest:ignore "Microsoft Delivery Plans" -->
+
+Azure DevOps を使用してクラウド導入計画を管理している場合は、[Microsoft Delivery Plans 拡張機能](https://marketplace.visualstudio.com/items?itemname=ms.vss-plans)の使用を検討してください。 この拡張機能を使用すると、イテレーションとリリースの割り当てに基づくタイムラインをすばやく視覚的に表現できます。

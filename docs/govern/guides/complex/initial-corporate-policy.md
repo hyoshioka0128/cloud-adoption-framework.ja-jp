@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 470c84385606f1f7c5c36ec8e72b348aa6d4d8a5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9dbbf67fcd303803a110b49b803698eea2c37687
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995408"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220143"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雑な企業向けのガバナンス ガイド: ガバナンス戦略の背景にある初期の企業ポリシー
 

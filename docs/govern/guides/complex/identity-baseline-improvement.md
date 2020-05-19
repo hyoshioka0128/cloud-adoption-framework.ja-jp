@@ -8,25 +8,25 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6cce3a3aafc62926c7e53d611cb4c94ae2496ac2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ec0f2ff617e0d4e5464dc5c9b1cead87b5a27048
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434446"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220126"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善
 
-この記事では、ガバナンス MVP に ID ベースライン制御を追加することで物語を進めます。
+この記事では、ガバナンス MVP に ID ベースライン コントロールを追加することで話を進めます。
 
 ## <a name="advancing-the-narrative"></a>物語を進める
 
 2 つのデータセンターのクラウドへの移行に関する業務上の正当な理由は、CFO によって承認されました。 技術的実現可能性の調査時に、いくつかの障害が検出されました。
 
 - 保護されたデータおよびミッション クリティカルなアプリケーションについては、2 つのデータセンターのワークロードが 25% と示されています。 機微な個人データとミッション クリティカルなアプリケーションに関する現在のガバナンス ポリシーが最新化されるまで、いずれも除去できません。
-- これらのデータセンター内の資産の 7% はクラウドと互換性はありません。 これらは、データセンターの契約が終了する前に、代替データセンターに移動されます。
+- これらのデータセンター内の 7% の資産がクラウドと互換性がありません。 これらは、データセンターの契約が終了する前に、代替データセンターに移動されます。
 - データセンター内の資産の 15% (750 台の仮想マシン) は、レガシ認証またはサード パーティの多要素認証に依存しています。
 - 既存のデータセンターと Azure を接続する VPN 接続では、2 年のタイムライン内で大量の資産を移行し、データセンターを廃止するために十分なデータ転送速度や待機時間は提供されません。
 
@@ -77,11 +77,11 @@ IT チームは、2 つのデータセンターを廃止する CIO と CFO の�
 
 新しいベスト プラクティスを以下に示します。
 
-- **ハイブリッド VNet ブループリントをセキュリティで保護する:** ハイブリッド ネットワークのオンプレミス側を、次のソリューションとオンプレミスの Active Directory サーバー間の通信を許可するように構成する必要があります。 このベスト プラクティスでは、DMZ でネットワーク境界を越えて Active Directory Domain Services を有効にする必要があります。
+- **セキュアなハイブリッド仮想ネットワークのブループリント:** ハイブリッド ネットワークのオンプレミス側を、次のソリューションとオンプレミスの Active Directory サーバー間の通信を許可するように構成する必要があります。 このベスト プラクティスでは、DMZ でネットワーク境界を越えて Active Directory Domain Services を有効にする必要があります。
 - **Azure Resource Manager テンプレート:**
     1. 外部トラフィックをブロックし、内部トラフィックを許可するように NSG を定義します。
     2. ゴールデン イメージに基づき、負荷分散ペアの 2 つの Active Directory 仮想マシンをデプロイします。 最初の起動時に、そのイメージで PowerShell スクリプトが実行され、ドメインへの参加とドメイン サービスへの登録が行われます。 詳細については、「[Extend Active Directory Domain Services (AD DS) to Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)」 (Azure への Active Directory Domain Services (AD DS) の拡張) を参照してください。
-- Azure Policy:すべてのリソースに NSG を適用します。
+- Azure Policy: すべてのリソースに NSG を適用します。
 - Azure のブループリント:
     1. `active-directory-virtual-machines` という名前のブループリントを作成します。
     2. ブループリントに、Active Directory テンプレートおよびポリシーをそれぞれ追加します。

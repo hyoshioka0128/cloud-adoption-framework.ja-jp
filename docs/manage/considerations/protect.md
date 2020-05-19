@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 423c87fd351f3220710ab35ffe0bc4e6beac3a1d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527581"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223900"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>クラウド管理における保護と回復
 
@@ -72,7 +72,7 @@ IT 環境の大部分のワークロードでは、特定のビジネス プロ�
 
 ## <a name="next-steps"></a>次のステップ
 
-この管理ベースラインのコンポーネントが満たされたら、チームは、[プラットフォームの運用](./platform.md)と[ワークロードの運用](./workload.md)の停止を回避するために先を見越すことができます。
+この管理ベースラインのコンポーネントが満たされたら、チームは、将来を見据えて[プラットフォームの運用](./platform.md)と[ワークロードの運用](./workload.md)の停止を回避することができます。
 
 > [!div class="nextstepaction"]
 > [プラットフォームの運用](./platform.md)

@@ -7,13 +7,15 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f8ced104862d27c01c2d63ecbcb4af15deded343
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 00efe3b582b5850ff7a5c6c1a6ab16977c6ada4d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434002"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216896"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="cloud-adoption-plan-and-azure-devops"></a>クラウド導入計画と Azure DevOps
 
 Azure DevOps は、反復的なプロジェクトを管理する Azure のお客様向けの、クラウドベースのツールのセットです。 これにはデプロイ パイプラインと DevOps の他の重要な側面を管理するためのツールも含まれています。
@@ -32,19 +34,19 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 
 プロジェクトの作成が完了したら、この一連の記事を読み進めて、実際のクラウド導入計画に合わせてこのテンプレートを変更する方法を確認してください。
 
-このツールに関するその他のサポートとガイダンスについては、[Azure DevOps Services Demo Generator](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops) に関するページを参照してください。
+このツールに関するその他のサポートとガイダンスについては、[Azure DevOps Services Demo Generator](https://docs.microsoft.com/azure/devops/demo-gen) に関する記事をご覧ください。
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>クラウド導入計画を一括編集する
 
-計画プロジェクトがデプロイされたら、Microsoft Excel を使用してそれを変更できます。 Excel を使用すると、Azure DevOps ブラウザー エクスペリエンスを使用するよりもはるかに簡単に計画内に新しいワークロードまたは資産を作成できます。
+計画プロジェクトがデプロイされたら、Microsoft Excel を使用してそれを変更できます。 Microsoft Excel を使用すると、Azure DevOps ブラウザー エクスペリエンスを使用するよりもはるかに簡単に計画内に新しいワークロードまたは資産を作成できます。
 
-一括編集を行うためにワークステーションを準備するには、「[Excel を使用した作業項目の一括追加または変更](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)」を参照してください。
+一括編集を行うためにワークステーションを準備するには、[Microsoft Excel を使用した作業項目の一括追加または変更](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)に関する記事をご覧ください。
 
 ## <a name="use-the-cloud-adoption-plan"></a>クラウド導入計画を使用する
 
 クラウド導入計画では、アクティビティがアクティビティの種類ごとに整理されています。
 
-- **エピック:** "*エピック*" は、クラウド導入ライフサイクルの全体的なフェーズを表します。
+- **エピック:** "_エピック_" は、クラウド導入ライフサイクルの全体的なフェーズを表します。
 - **機能:** 機能は、各フェーズ内での具体的な目標の整理に使用されます。 たとえば、特定のワークロードの移行は 1 つの機能になります。
 - **ユーザー ストーリー:** ユーザー ストーリーは、特定の目標に基づくアクティビティの論理的なコレクションに作業をグループ化します。
 - **タスク:** タスクは、実際に実行する必要がある作業です。
@@ -58,7 +60,7 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 
 ## <a name="align-the-cloud-adoption-plan"></a>クラウド導入計画を調整する
 
-クラウド導入ライフサイクルの戦略と計画の段階の概要ページはそれぞれ、[クラウド導入フレームワークの戦略と計画に関するテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を参照します。 このテンプレートでは、クラウド導入計画のテンプレートを導入用の特定の計画に合わせて調整するための決定事項およびデータ ポイントが整理されています。 まだ行ってない場合は、新しいプロジェクトを調整する前に、[戦略](../strategy/index.md)と[計画](../plan/index.md)に関連した演習を完了することをお勧めします。
+クラウド導入ライフサイクルの戦略と計画のステージの概要ページではそれぞれ、[クラウド導入フレームワークの戦略と計画に関するテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)に言及しています。 このテンプレートでは、クラウド導入計画のテンプレートを導入用の特定の計画に合わせて調整するための決定事項およびデータ ポイントが整理されています。 まだ行ってない場合は、新しいプロジェクトを調整する前に、[戦略](../strategy/index.md)と[計画](../plan/index.md)に関連した演習を完了することをお勧めします。
 
 次の記事では、クラウド導入計画の調整がサポートされています。
 

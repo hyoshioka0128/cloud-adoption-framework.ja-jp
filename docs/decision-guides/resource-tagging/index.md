@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7d59f446966d853e29fc5c44bbc2da44cba114c2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396101"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222761"
 ---
+<!--docsTest:disable - TODO -->
+
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
@@ -27,8 +29,8 @@ ms.locfileid: "81396101"
   - [クラウド会計モデル](../../strategy/cloud-accounting.md)
   - [ROI の計算](../../strategy/financial-models.md#return-on-investment)
   - [コスト管理](../../ready/azure-best-practices/track-costs.md)
-  - [予算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [警告](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+  - [予算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [警告](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [定期的な支出の追跡とレポート](../../govern/cost-management/compliance-processes.md)
   - [実装後の最適化](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [コスト最適化戦術](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -76,11 +78,11 @@ ms.locfileid: "81396101"
 
 | タグの種類 | 例 | 説明 |
 |-----|-----|-----|
-| 機能            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します。                                 |
-| 分類        | confidentiality=private<br/>sla = 24hours                                 | 使用方法および適用されるポリシーによって、リソースを分類します                               |
-| 会計            | department = finance <br/>program = business-initiative <br/>region = northamerica | 課金を目的として、組織内の特定のグループにリソースを関連付けることができます |
-| パートナーシップ           | owner = jsmith <br/>contactalias = catsearchowners<br/>stakeholders = user1;user2;user3<br/>                       | リソースに関連のある、またはそれ以外でリソースによって影響を受けるユーザー (IT 外) に関する情報を提供します                      |
-| 目的               | businessprocess=support<br/>businessimpact=moderate<br/>revenueimpact=high   | 投資に関する決定のサポートを向上させるため、リソースをビジネス機能と一致させます  |
+| 機能 | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します |
+| 分類 | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | 使用方法および適用されるポリシーによって、リソースを分類します |
+| 会計 | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | 課金を目的として、組織内の特定のグループにリソースを関連付けることができます |
+| パートナーシップ | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | リソースに関連のある、またはそれ以外でリソースによって影響を受けるユーザー (IT 外) に関する情報を提供します |
+| 目的 | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | 投資に関する決定のサポートを向上させるため、リソースをビジネス機能と一致させます |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -89,7 +91,7 @@ ms.locfileid: "81396101"
 Azure での名前付けとタグ付けに関する詳細については、以下を参照してください。
 
 - [Azure リソースの名前付け規則](../../ready/azure-best-practices/naming-and-tagging.md)。 Azure リソースの推奨される名前付け規則については、次のガイダンスを参照してください。
-- [タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)。 Azure ではリソース グループと個々のリソースの両方のレベルでタグを適用でき、適用されたタグに基づいて柔軟な詳細さでアカウンティング レポートを作成できます。
+- [タグを使用して Azure リソースと整理階層を整理する](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。 Azure ではリソース グループと個々のリソースの両方のレベルでタグを適用でき、適用されたタグに基づいて柔軟な詳細さでアカウンティング レポートを作成できます。
 
 ## <a name="next-steps"></a>次のステップ
 

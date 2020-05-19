@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4e26787fb2125dd2784698b06171e898dd7ac55
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396025"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214482"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
-このフェーズでは、評価フェーズの出力を使用して環境の移行を開始します。 このガイドは、ネイティブ ツール、サード パーティ製ツール、プロジェクト管理ツールなど、"完了状態" に到達するための適切なツールを識別するのに役立ちます。
+このフェーズでは、評価フェーズの出力を使用して環境の移行を開始します。 このガイドは、ネイティブ ツール、サード パーティ製ツール、プロジェクト管理ツールなど、完了状態に到達するための適切なツールを識別するのに役立ちます。
 
 <!-- markdownlint-disable MD025 -->
 
@@ -270,7 +270,7 @@ Microsoft では以下のプロジェクト管理ツールも用意しており�
 
 クラウド テクノロジへの移行は、DevOps や CI/CD に合わせて組織を再編するまたとない機会です。 組織で管理するのがインフラストラクチャだけの場合でも、インフラストラクチャをコードとして管理し、DevOps 向けの業界のパターンやプラクティスを使用するようになれば、CI/CD パイプラインによって機敏性の向上に着手し、変化、成長、リリース、さらには復旧の各シナリオにより迅速に適応できるようになります。
 
-Azure DevOps では、すべての必須機能と、Azure、オンプレミス環境、さらには他のクラウドとの統合を提供します。 詳細については、[Azure DevOps](https://azure.microsoft.com/services/devops) のページをご覧ください。 ガイド付きのトレーニングについては、「[Azure DevOps を使用した CI と CD のクイック スタート](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)」をご覧ください。
+Azure DevOps では、すべての必須機能と、Azure、オンプレミス環境、さらには他のクラウドとの統合を提供します。 詳細については、[Azure DevOps](https://azure.microsoft.com/services/devops) のページをご覧ください。 ガイド付きのトレーニングについては、[Azure DevOps を使用した CI と CD のクイック スタート](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)をご覧ください。
 
 ## <a name="suggested-skills"></a>推奨されるスキル
 
@@ -282,4 +282,4 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 # <a name="cost-management"></a>[コスト管理](#tab/ManageCost)
 
-リソースをクラウド環境に移行するときは、定期的なコスト分析を実行することが重要です。 移行プロセスによって追加の使用量要件がサービスに適用される可能性があるため、想定外の使用量料金をこれにより回避できます。 コストとワークロードのバランスを取るために、必要に応じてリソースのサイズを変更することもできます ( **[最適化と変換](./optimize-and-transform.md)** に関するセクションで詳しく説明します)。
+リソースをクラウド環境に移行するときは、定期的なコスト分析を実行することが重要です。 移行プロセスによって追加の使用量要件がサービスに適用される可能性があるため、想定外の使用量料金をこれにより回避できます。 コストとワークロードのバランスを取るために、必要に応じてリソースのサイズを変更することもできます (詳しくは、[最適化と変換](./optimize-and-transform.md)** に関する記事をご覧ください)。

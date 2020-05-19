@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e8846d265fff84a1ccea62193c01ed0b706b3637
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 65d1ac327bc5a36e1dca12ab121825751be3b53f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428153"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214244"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>優先順位付けされたワークロードに合わせて資産を調整します
 
@@ -33,7 +33,7 @@ ms.locfileid: "80428153"
 
 **最新化:** ワークロードの目標がアプリケーションやその他の資産の最新化の場合、これらのデータ ポイントは複雑さに対して依然として堅牢なメジャーです。 ただし、ワークロード ドキュメントに最新化の機会の入力を追加することが賢明な場合があります。
 
-**イノベーション:** クラウド導入作業中にデータまたはビジネス ロジックの重要な変更がある場合、それは "*革新的*" な種類の変革と見なされます。 新しいデータまたは新しいビジネス ロジックが作成される場合にも同じことが当てはまります。 革新的なシナリオの場合、資産の移行は必要な最小の作業量を表す可能性があります。 これらのシナリオでは、チームは相対的な複雑さを測定するために一連の技術データを考案する必要があります。
+**イノベーション:** クラウド導入作業中にデータまたはビジネス ロジックの重要な変更がある場合、それは "_革新的_" な種類の変革と見なされます。 新しいデータまたは新しいビジネス ロジックが作成される場合にも同じことが当てはまります。 革新的なシナリオの場合、資産の移行は必要な最小の作業量を表す可能性があります。 これらのシナリオでは、チームは相対的な複雑さを測定するために一連の技術データを考案する必要があります。
 
 ## <a name="azure-migrate"></a>Azure Migrate
 

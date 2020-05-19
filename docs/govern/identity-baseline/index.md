@@ -4,17 +4,16 @@ description: クラウド ガバナンス戦略の一環として ID ベース�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 4728270f71893680886e40b4e647b9fec6624ef7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2e171736ccf993d3e7401350008ab542759b703b
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218817"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400796"
 ---
 # <a name="identity-baseline-discipline-overview"></a>ID ベースライン規範の概要
 
@@ -40,122 +39,14 @@ ID ベースラインは、[クラウド導入フレームワーク ガバナン
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsE">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./template.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-template.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>ID ベースライン規範テンプレート</h3>
-                            <p class="x-hidden-focus">ID ベースライン規範を文書化するためのテンプレートをダウンロードします。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./business-risks.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-risks.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>ビジネス リスク</h3>
-                            <p class="x-hidden-focus">一般的に ID ベースラインの規範に関係する動機およびリスクを理解できます。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./metrics-tolerance.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-metrics.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>インジケーターとメトリック</h3>
-                            <p class="x-hidden-focus">ID ベースラインの規範に投資する最適なタイミングであるかどうかを知るインジケーターです。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./compliance-processes.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-enforce.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>ポリシー準拠プロセス</h3>
-                            <p class="x-hidden-focus">ID ベースラインの規範がポリシーに準拠するようにするための推奨の手順です。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./discipline-improvement.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-maturity.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>成熟度</h3>
-                            <p class="x-hidden-focus">クラウドの導入の段階とクラウド管理の成熟度を調整します。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./toolchain.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-toolchain.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>ツールチェーン</h3>
-                            <p class="x-hidden-focus">ID ベースラインの規範をサポートするために実装できる Azure サービスです。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| <br> ![テンプレート アイコン](../../_images/govern/process-template.png) ;; <br> [ID ベースライン規範テンプレート](./template.md):ID ベースライン規範を文書化するためのテンプレートをダウンロードします。 |
+| <br> ![リスク アイコン](../../_images/govern/process-risks.png) ;; <br> [ビジネス リスク](./business-risks.md):一般的に ID ベースラインの規範に関係する動機およびリスクを理解できます。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) ;; <br> [インジケーターとメトリック](./metrics-tolerance.md):ID ベースラインの規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
+| <br> ![準拠アイコン](../../_images/govern/process-enforce.png) ;; <br> [ポリシー準拠プロセス](./compliance-processes.md):ID ベースラインの規範がポリシーに準拠するようにするための推奨の手順です。 |
+| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) ;; <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
+| <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) ;; <br> [ツールチェーン](./toolchain.md):ID ベースラインの規範をサポートするために実装できる Azure サービスです。 |
 
 <!-- markdownlint-enable MD033 -->
 

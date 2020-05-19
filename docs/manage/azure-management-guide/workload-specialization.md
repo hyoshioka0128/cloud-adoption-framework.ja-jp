@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 06389b972ee01079a3927515c95d3f3ae3cab3de
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cd6f89162b2975313f0eebcd4e3e1385787f8ee7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426567"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217440"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>クラウド管理のためのワークロードの特殊化
 
@@ -41,7 +41,7 @@ ms.locfileid: "80426567"
 
 ワークロードの特殊化が必要な場合、運用管理は一般に中央 IT の観点を越えて進化します。 クラウド導入フレームワークで提案されているアプローチは、クラウド管理機能の分散です。
 
-このモデルでは、監視、デプロイ、DevOps、およびその他の技術革新に焦点を当てた機能などの運用タスクは、アプリケーション開発またはビジネスユニット組織に移行します。 クラウド プラットフォームとコア クラウド監視チームは、引き続き環境全体の管理ベースラインを提供します。
+このモデルでは、監視、デプロイ、DevOps、およびその他の技術革新に焦点を当てた機能などの運用タスクは、アプリケーション開発またはビジネスユニット組織に移行します。 クラウド プラットフォーム チームとコア クラウド監視チームは、引き続き環境全体の管理ベースラインを提供します。
 
 これらの一元化されたチームは、ワークロードの専門チームにワークロードの操作を指導および指示します。 しかし、毎日の運用の責任は、IT の外部で管理されるクラウド管理チームにあります。 この種類の分散コントロールは、クラウドのセンター オブ エクセレンスの成熟度を示す主要指標の 1 つです。
 
@@ -49,10 +49,10 @@ ms.locfileid: "80426567"
 
 明確なワークロード操作を行うには、特定のワークロードの詳細が必要です。 継続的な改善フェーズの間、Application Insights をクラウド管理ツールチェーンに追加する必要があります。
 
-|要件|ツール|目的|
-|---|---|---|
-|アプリケーションの監視|Application Insights|アプリの監視と診断|
-|パフォーマンス、可用性、使用状況|Application Insights|アプリ ダッシュボード、複合マップ、使用状況、トレースを使用した高度なアプリケーション監視|
+| 要件                          | ツール                 | 目的                                                                                |
+| ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------- |
+| アプリケーションの監視               | Application Insights | アプリの監視と診断                                                    |
+| パフォーマンス、可用性、使用状況 | Application Insights | アプリ ダッシュボード、複合マップ、使用状況、トレースを使用した高度なアプリケーション監視 |
 
 ### <a name="deploy-application-insights"></a>Application Insights のデプロイ
 

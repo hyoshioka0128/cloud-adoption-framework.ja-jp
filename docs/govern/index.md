@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 37c7b219699d2d70c1f0493fbb146933f8eeee21
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: edd91f1786dfc0649e06d643662fb7af12ec4c96
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218664"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399679"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークのガバナンス
 
@@ -22,14 +22,13 @@ ms.locfileid: "83218664"
 クラウド ガバナンスは反復プロセスです。 オンプレミスの IT 環境を管理する既存のポリシーを持つ組織の場合、クラウド ガバナンスによりこれらのポリシーが補完される必要があります。 ただし、オンプレミスとクラウド間の会社のポリシーの統合レベルは、クラウド ガバナンスの成熟度とクラウド内のデジタル資産によって異なります。 クラウド資産が時間の経過とともに変化するにつれて、クラウド ガバナンスのプロセスとポリシーも変化します。 次の演習は、最初のガバナンス基盤の構築を開始するのに役立ちます。
 
 <!-- markdownlint-disable MD033 -->
-<!-- docsTest:disable TODO -->
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[方法論](./methodology.md):クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立し、最終状態のソリューションについて熟考を開始します。                                |
-| ![2](../_images/icons/2.png)     | <br>[ベンチマーク](./benchmark.md): 現状の状態と将来の状態を評価して、フレームワークを適用するためのビジョンを確立します。                                |
-| ![3](../_images/icons/3.png)     | <br>[ガバナンスを始めるための基礎](./initial-foundation.md): 小規模で簡単に実装されるガバナンス ツールのセットを使って、ガバナンス体験を始めます。 この最初のガバナンス基盤は、実用最小限の製品 (MVP) と呼ばれます。                                |
-| ![4](../_images/icons/4.png)      | <br>[初期のガバナンス基盤の改善](./foundation-improvements.md):クラウド導入プランの実装全体で、最終状態へと進みながら、ガバナンス コントロールを繰り返し追加して具体的なリスクに対処します。  |
+| <br> ![1](../_images/icons/1.png) | [方法論](./methodology.md):クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立し、最終状態のソリューションについて熟考を開始します。 |
+| <br> ![2](../_images/icons/2.png) | <br> [ベンチマーク](./benchmark.md): 現状の状態と将来の状態を評価して、フレームワークを適用するためのビジョンを確立します。 |
+| <br> ![3](../_images/icons/3.png) | <br> [ガバナンスを始めるための基礎](./initial-foundation.md): 小規模で簡単に実装されるガバナンス ツールのセットを使って、ガバナンス体験を始めます。 この最初のガバナンス基盤は、実用最小限の製品 (MVP) と呼ばれます。                                |
+| <br> ![4](../_images/icons/4.png) | <br> [初期のガバナンス基盤の改善](./foundation-improvements.md):クラウド導入プランの実装全体で、最終状態へと進みながら、ガバナンス コントロールを繰り返し追加して具体的なリスクに対処します。 |
 
 ## <a name="objective-of-this-content"></a>このコンテンツの目的
 

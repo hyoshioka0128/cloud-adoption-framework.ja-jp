@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4dea8b186d2c37f614be364c605144a744479990
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e7b5811099119e3f3b1c148ae550bd92e8fc8090
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433204"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223254"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -22,7 +22,7 @@ ms.locfileid: "80433204"
 
 # <a name="governance-security-and-compliance-in-azure"></a>Azure でのガバナンス、セキュリティ、コンプライアンス
 
-企業のポリシーを確立し、ガバナンス戦略を策定するときに、Azure Policy、Azure Blueprints、Azure Security Center などのツールとサービスを使用して、組織のガバナンスに関する意思決定を実施したり自動化したりすることができます。 ガバナンスの計画を開始する前に、[ガバナンス ベンチマーク ツール](https://cafbaseline.com)を使用して、組織のクラウド ガバナンスへのアプローチにおけるギャップを識別します。 ガバナンス プロセスを策定する方法の詳細については、[Azure 向けのクラウド導入フレームワークのガバナンスに関するガイダンス](../../govern/index.md)記事を参照してください。
+企業のポリシーを確立し、ガバナンス戦略を策定するときに、Azure Policy、Azure Blueprints、Azure Security Center などのツールとサービスを使用して、組織のガバナンスに関する意思決定を実施したり自動化したりすることができます。 ガバナンスの計画を開始する前に、[ガバナンス ベンチマーク ツール](https://cafbaseline.com)を使用して、組織のクラウド ガバナンスへのアプローチにおけるギャップを識別します。 ガバナンス プロセスの策定の詳細については、[Azure 向けクラウド導入フレームワークのガバナンスのガイダンス](../../govern/index.md)に関する記事を参照してください。
 
 # <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
@@ -54,7 +54,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 
 ::: zone target="docs"
 
-1. [[Blueprints - Getting started]\(ブループリント - 作業の開始\)](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted) に移動します。
+1. [[Blueprints:Getting started] (ブループリント: 作業の開始)](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted) に移動します。
 1. **[ブループリントの作成]** セクションで、 **[作成]** を選択します。
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
 1. **ブループリントの名前**を入力し、適切な**定義の場所**を選択します。
@@ -162,8 +162,8 @@ Azure Security Center について調べるには、[Azure portal](https://porta
 
 - [Azure Security Center](https://docs.microsoft.com/azure/security-center)
 - [Just In Time VM アクセス](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
-- [Standard 価格レベルと Free 価格レベル](https://azure.microsoft.com/pricing/details/security-center)
-- [クラウド導入フレームワーク:セキュリティ ベースライン ガバナンス規範](../../govern/security-baseline/index.md)
+- [Security Center の価格レベル](https://azure.microsoft.com/pricing/details/security-center)
+- [クラウド導入フレームワーク:セキュリティ ベースライン規範](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

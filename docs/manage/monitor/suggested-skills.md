@@ -7,12 +7,12 @@ ms.date: 05/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe76729b4a845d71629d7d24d4bdd3110fa6ab9a
-ms.sourcegitcommit: 5058bc57cb53701ac409959b46767ae6fd56ba93
+ms.openlocfilehash: c32ecde3bc5929bc8ed360b1d792e5f2345bfd8f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82861437"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223679"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -28,12 +28,12 @@ ms.locfileid: "82861437"
 
 - [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) の概要では、Azure Policy を使用してポリシーを作成、割り当て、管理する方法について説明しています。 Azure Policy では、Azure Monitor エージェントのデプロイと構成、Azure Monitor for VMs と Azure Security Center を使用した監視の有効化、診断設定のデプロイ、ゲスト構成設定の監査などを行うことができます。
 
-- [Azure コマンド ライン インターフェイス](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) (CLI) の概要をご覧ください。これは、Azure リソースを管理するためのクロスプラットフォーム コマンド ライン エクスペリエンスです。 また、[Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1) の概要についても確認してください。 LinkedIn は、[Azure の管理ツールを学習する](https://www.linkedin.com/learning/learning-azure-management-tools)初級レベルのコースの一部として、Azure CLI と PowerShell プログラミング言語を対象としたセッションを提供しています。
+- [Azure コマンド ライン インターフェイス](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) (CLI) の概要。これは、Azure リソースを管理するためのクロスプラットフォーム コマンド ライン エクスペリエンスとなっています。 また、[Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1) の概要についても確認してください。 LinkedIn は、[Azure の管理ツールを学習する](https://www.linkedin.com/learning/learning-azure-management-tools)初級レベルのコースの一部として、Azure CLI と PowerShell プログラミング言語を対象としたセッションを提供しています。
 
   - [Azure CLI を使用する](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
-  - [Azure PowerShell を使ってみる](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
+  - [Azure PowerShell の概要](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- [Azure Monitor でログ クエリ](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)を作成する方法をご確認ください。  Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
+- [Azure Monitor でログ クエリ](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
 
 - [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) を使用して、アプリケーションとサービスの可用性とパフォーマンスを 1 か所で確認する方法についてご覧ください。 Pluralsight には、役に立つ次のコースが用意されています。
 
@@ -63,7 +63,7 @@ Azure に関する知識を [Microsoft Azure 認定のトレーニングや試�
 
 ハイブリッド クラウド環境では、定義されていない役割、責任、およびアクティビティによって IT が中断されます。 組織は、アジャイルや DevOps の手法を含む最新のサービス管理手法に移行して、合理化された効率的な方法で、現在のビジネスにおける変革と最適化のニーズをより適切に満たす必要があります。
 
-クラウド監視プラットフォームへの移行の一環として、企業内の監視の管理を担当する IT チームは、アジャイルのトレーニングと参加を DevOps アクティビティに含める必要があります。 これには、ビジネス ニーズに合わせて繰り返し調整された最小限の実行可能な監視ソリューションを提供するために、DevOps の *Dev* に従い、要件を把握して、それを整理されたアジャイルの要件に発展させることも含まれます。 反復的な監視ソリューション パッケージとその他の関連する対象を管理するソース管理では、Azure DevOps Server プロジェクトと GitHub Enterprise Server リポジトリを関連付けます。 これにより、GitHub のコミットと、作業項目に対するプル要求の間でリンクが提供されます。 Azure Boards を使用して作業を計画および追跡する一方で、継続的な監視の統合とデプロイのサポートにより、開発のために GitHub Enterprise を使用できます。
+クラウド監視プラットフォームへの移行の一環として、企業内の監視の管理を担当する IT チームは、アジャイルのトレーニングと参加を DevOps アクティビティに含める必要があります。 これには、ビジネス ニーズに合わせて繰り返し調整された最小限の実行可能な監視ソリューションを提供するために、DevOps の _Dev_ に従い、要件を把握して、それを整理されたアジャイルの要件に発展させることも含まれます。 反復的な監視ソリューション パッケージとその他の関連する対象を管理するソース管理では、Azure DevOps Server プロジェクトと GitHub Enterprise Server リポジトリを関連付けます。 これにより、GitHub のコミットと、作業項目に対するプル要求の間でリンクが提供されます。 Azure Boards を使用して作業を計画および追跡する一方で、継続的な監視の統合とデプロイのサポートにより、開発のために GitHub Enterprise を使用できます。
 
 詳細については、以下を参照してください。
 

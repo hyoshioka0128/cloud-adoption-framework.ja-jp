@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ebb0f0899ad8ea4e5f26c43b0486c56560b4dd14
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4b0d1c727a0b224071d008e82af16a142e98d60a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708871"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220738"
 ---
 # <a name="cost-management-discipline-overview"></a>Cost Management の規範の概要
 
-コスト管理は、[クラウド導入フレームワーク ガバナンス モデル](../governance-disciplines.md)の[クラウド ガバナンスの 5 つの規範](../index.md)のうちの 1 つです。 多くのお客様にとって、クラウド テクノロジを採用する際には、管理コストが大きな問題になります。 パフォーマンスに対する要求、導入ペース、およびクラウド サービス コストのバランスをとることが困難な場合があります。 これは、クラウド テクノロジを実装する大規模なビジネス変革の際に特に該当します。 このセクションでは、クラウド ガバナンス戦略の一環として Cost Management 規範を策定する方法について概要を説明します。
+Cost Management 規範は、[クラウド導入フレームワーク ガバナンス モデル](../index.md)の[クラウド ガバナンスの 5 つの規範](../governance-disciplines.md)のうちの 1 つです。 多くのお客様にとって、クラウド テクノロジを採用する際には、コストの管理が大きな問題になります。 パフォーマンスに対する要求、導入ペース、およびクラウド サービス コストのバランスをとることが困難な場合があります。 これは、クラウド テクノロジを実装する大規模なビジネス変革の際に特に該当します。 このセクションでは、クラウド ガバナンス戦略の一環として Cost Management 規範を策定する方法について概要を説明します。
 
 > [!NOTE]
-> Cost Management ガバナンスは、IT 関連コストに関する組織の財務管理に関連する既存のビジネス チーム、会計実務、および手順に代わるものではありません。 この規範の主な目的は、IT 支出に関連したクラウド関連の潜在的なリスクを識別し、クラウド リソースのデプロイとその管理を担当するビジネス チームと IT チームにリスク軽減のガイダンスを提供することです。
+> Cost Management 規範は、IT 関連コストに関する組織の財務管理に関連する既存のビジネス チーム、会計実務、および手順に代わるものではありません。 この規範の主な目的は、IT 支出に関連したクラウド関連の潜在的なリスクを識別し、クラウド リソースのデプロイとその管理を担当するビジネス チームと IT チームにリスク軽減のガイダンスを提供することです。
 
 このガイドの主な対象読者は、お客様の組織のクラウド アーキテクトおよびお客様のクラウド ガバナンス チームのその他のメンバーです。 ただし、この規範を使用した決定、ポリシー、プロセスには、ビジネス チームと IT チームの該当メンバー (特にクラウド ベースのワークロードの所有、管理、支払いを担当するリーダー) が関与して、議論する必要があります。
 
@@ -50,14 +50,15 @@ ms.locfileid: "77708871"
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Cost Management テンプレート</h3>
-                        <p class="x-hidden-focus">Cost Management の規範を文書化するテンプレートをダウンロードする</p>
+                        <h3>Cost Management 規範テンプレート</h3>
+                        <p class="x-hidden-focus">Cost Management 規範を文書化するテンプレートをダウンロードします。</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -126,7 +127,7 @@ ms.locfileid: "77708871"
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>成熟度</h3>
-                        <p class="x-hidden-focus">クラウドの導入の段階とクラウド管理の成熟度を調整します。</p>
+                        <p class="x-hidden-focus">クラウド管理の成熟度をクラウド導入の段階に合わせて調整します。</p>
                     </div>
                 </div>
             </div>

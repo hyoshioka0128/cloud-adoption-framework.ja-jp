@@ -1,5 +1,5 @@
 ---
-title: デプロイ高速化のビジネス リスク
+title: デプロイ高速化規範での動機とビジネス リスク
 description: Azure 向けクラウド導入フレームワークを使用して、ガバナンス戦略で使用できるデプロイ高速化規範のビジネス リスクについて説明します。
 author: alexbuckgit
 ms.author: abuck
@@ -8,26 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a4f022d995cf4dca25cfd5369ce92dd4496e8687
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6cd6d309b5c44c55d0409b759950662eccb9f50a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434608"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220449"
 ---
-# <a name="deployment-acceleration-motivations-and-business-risks"></a>デプロイ高速化の動機とビジネス リスク
+# <a name="motivations-and-business-risks-in-the-deployment-acceleration-discipline"></a>デプロイ高速化規範での動機とビジネス リスク
 
 この記事では、お客様が一般的に、クラウド ガバナンス戦略の中のデプロイ高速化の規範を採用する理由について説明します。 ポリシー ステートメントを追いやるビジネス リスクの例もいくつか示します。
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="deployment-acceleration-relevancy"></a>デプロイ高速化の関連性
+## <a name="relevance"></a>関連性
 
 オンプレミス システムは、多くの場合、ベースライン イメージまたはインストール スクリプトを使用してデプロイされます。 通常は追加の構成が必要で、複数の手順やユーザーの介入が必要になることがあります。 これらの手動プロセスではエラーが発生しやすく、多くの場合 "構成ドリフト" に至るため、時間のかかるトラブルシューティングや修復のタスクが必要になります。
 
-ほとんどの Azure リソースは、Azure portal からのデプロイと手動での構成が可能です。 管理対象のリソースがいくつかあるだけの場合は、このアプローチで十分な可能性があります。 ただし、クラウド資産が増加するにつれて、組織は、手動プロセスによって発生するクラウド リソースの構成ドリフトやその他の問題を確実に回避するために、デプロイ プロセスへの自動化の統合を開始する必要があります。 クラウドを導入するための取り組みが十分に行わえているとき、DevOps または [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) アプローチを採用することは、多くの場合、デプロイを管理するための最適な方法です。
-
-<!-- "en-us" location is required for the URL above. -->
+ほとんどの Azure リソースは、Azure portal からのデプロイと手動での構成が可能です。 管理対象のリソースがいくつかあるだけの場合は、このアプローチで十分な可能性があります。 ただし、クラウド資産が増加するにつれて、組織は、手動プロセスによって発生するクラウド リソースの構成ドリフトやその他の問題を確実に回避するために、デプロイ プロセスへの自動化の統合を開始する必要があります。 クラウドを導入するための取り組みが十分に行わえているとき、DevOps または [DevSecOps](https://www.microsoft.com/devsecops) アプローチを採用することは、多くの場合、デプロイを管理するための最適な方法です。
 
 確固としたデプロイ高速化の計画によって、クラウド リソースが確実に、正しく一貫してデプロイ、更新、構成されてその状態が維持されるようにします。 デプロイ高速化戦略の成熟度は、[コスト管理戦略](../cost-management/index.md)においても非常に重要な要因になる場合があります。 クラウド リソースの自動プロビジョニングおよび構成を行うと、需要が少なかったり期間限定であったりするときに、スケール ダウンやリソース割り当ての解除をすることができます。そうすれば、必要なときにだけリソースの料金を支払うことができます。
 
@@ -41,7 +39,7 @@ ms.locfileid: "80434608"
 
 ## <a name="next-steps"></a>次のステップ
 
-[クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
+[デプロイ高速化規範テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 
 現実的なビジネス リスクについての理解が確実に得られたら、リスクに対する企業の許容範囲と、その許容範囲を監視するための指標と主なメトリックについて文書化することが、次の手順となります。
 

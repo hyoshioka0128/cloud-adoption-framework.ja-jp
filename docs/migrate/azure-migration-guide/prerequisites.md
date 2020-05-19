@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a1c100c4c3c9a960867f0666853df742ecf68c3d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: feb59290437318cfe43bed824cfde5233e357e11
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997584"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217032"
 ---
 ::: zone target="docs"
 
@@ -81,7 +81,7 @@ Azure に移行する理由には、従来のハードウェアに関連した�
 >
 > - **利害関係者を識別する:** 移行に何らかの役割を果たす、または移行の結果に関与する主要な人物を識別します。
 > - **重要なマイルストーンを識別する:** 移行タイムラインを効果的に計画するには、満たすべき重要なマイルストーンを識別します。
-> - **移行戦略を識別する:** 合理化の 5 つの R のうちどれを使用するかを決定します。
+> - **移行戦略を識別する:** 合理化の 5 つの R のうち、どれを使用するかを決定します。
 > - **技術的適合性を評価する:** 技術即応性と移行適合性を検証し、外部パートナーまたは Azure サポートからどのレベルの支援が必要か判断します。
 > - **移行計画:** Azure インフラストラクチャに加えて資産 (インフラストラクチャ、アプリ、データ) を移行のために準備するのに必要な、詳細な評価と計画を実行します。
 > - **移行をテストする:** 限られた範囲のテスト移行を実行することによって、移行計画を検証します。

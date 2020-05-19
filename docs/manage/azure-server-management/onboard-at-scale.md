@@ -7,27 +7,27 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9647b2e7a32cd1374390e8849b62b41580284163
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9347c0c9517327dfa01bc49e344dfcc8ed90e60d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809159"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219718"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
 # <a name="configure-azure-server-management-services-at-scale"></a>大規模な Azure サーバー管理サービスを構成する
 
-Azure サーバー管理サービスをサーバーにオンボードするには、次の 2 つのタスクを完了する必要があります。
+Azure サーバー管理サービスをサーバーにオンボードするには、次の 2 つのタスクを完了する
 
-- サーバーにサービス エージェントをデプロイする
-- 管理ソリューションを有効にする
+- サーバーにサービス エージェントをデプロイする。
+- 管理ソリューションを有効にする。
 
 この記事では、これらのタスクを完了するために必要な 3 つのプロセスについて説明します。
 
-1. Azure Policy を使用して必須のエージェントを Azure VM にデプロイする
-1. 必須のエージェントをオンプレミスのサーバーにデプロイする
-1. ソリューションを有効にして構成する
+1. Azure Policy を使用して必須のエージェントを Azure VM にデプロイします。
+1. 必須のエージェントをオンプレミスのサーバーにデプロイします。
+1. ソリューションを有効にして構成します。
 
 > [!NOTE]
 > 仮想マシンを Azure サーバー管理サービスにオンボードする前に、必須の [Log Analytics ワークスペースと Azure Automation アカウント](./prerequisites.md#create-a-workspace-and-automation-account)を作成します。
@@ -36,11 +36,11 @@ Azure サーバー管理サービスをサーバーにオンボードするに�
 
 [Azure 管理ツールとサービス](./tools-services.md)に関する記事で説明されているすべての管理ソリューションでは、Log Analytics エージェントが Azure 仮想マシンとオンプレミスのサーバーにインストールする必要があります。 Azure Policy を使用すると Azure VM を大規模にオンボードできます。 エージェントがお使いの Azure VM にインストールされ、適切な Log Analytics ワークスペースに接続されるようにポリシーを割り当てます。
 
-Azure Policy には、Log Analytics エージェントと [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) を含む[ポリシーのイニシアティブ](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives)が組み込まれています。これは Azure Monitor for VMs に必要です。
+Azure Policy には、Log Analytics エージェントと [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) を含む[組み込みのポリシー イニシアチブ](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives)があります。これは Azure Monitor for VMs に必要です。
 
 <!-- TODOBACKLOG: Add these when available.
-- [Preview]: Enable Azure Monitor for virtual machine scale sets.
-- [Preview]: Enable Azure Monitor for VMs.
+**Preview:** Enable Azure Monitor for virtual machine scale sets.
+**Preview:** Enable Azure Monitor for VMs.
  -->
 
 > [!NOTE]

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b900826ef28aada53a9a73cdae9679d5f35f3007
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80606563"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223764"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>クラウド監視ガイド: はじめに
 
@@ -57,7 +57,7 @@ Azure Monitor と System Center Operations Manager に精通していない場�
 Azure、お客様の企業ネットワーク、その他のクラウド プロバイダーでホストされているさまざまなリソースを監視、管理するためのいくつかのソフトウェアとサービスを利用できます。 これらは次のとおりです。
 
 - System Center Operations Manager
-- Azure Monitor (現在、Log Analytics と Application Insights が含まれています)
+- Azure Monitor (Log Analytics と Application Insights を含む)
 - Azure Policy と Azure Blueprints
 - Azure Automation
 - Azure Logic Apps

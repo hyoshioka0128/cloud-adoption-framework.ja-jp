@@ -9,15 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c946b5e7e43004653b31bc67ff1e325363deff9f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c1c54d7587bf73f5c9348c878caea7ae7cde89ae
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396169"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220194"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>クラウド ガバナンスの 5 つの規範
 
+<!-- docsTest:disable TODO -->
 <!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsI">
@@ -26,7 +27,10 @@ ms.locfileid: "81396169"
             <div class="cardPadding" style="padding-bottom:10px;">
                 <div class="card" style="padding-bottom:10px;">
                     <div class="cardText" style="padding-left:0px;">
-ビジネス プロセスまたは技術プラットフォームの変更にはリスクが伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、リスクを軽減し、導入やイノベーションの作業をできるだけ中断させないようにすることです。<br/><br/>クラウド導入フレームワーク ガバナンス モデルでは、<a href="./corporate-policy.md">企業ポリシーの策定</a>と<a href="#disciplines-of-cloud-governance">クラウド ガバナンスの 5 つの規範</a>に重点を置くことによって、(選択したクラウド プラットフォームに関係なく) これらの決定を導きます。 <a href="./guides/index.md">アクションにつながる設計ガイド</a>は、Azure サービスを使用してこのモデルを実証します。 以下では、クラウド導入フレームワーク ガバナンス モデルの規範について説明します。
+ビジネス プロセスまたは技術プラットフォームの変更にはリスクが伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、リスクを軽減し、導入やイノベーションの作業をできるだけ中断させないようにすることです。
+    <br>
+    <br>
+クラウド導入フレームワーク ガバナンス モデルでは、<a href="./corporate-policy.md">企業ポリシーの策定</a>と<a href="#disciplines-of-cloud-governance">クラウド ガバナンスの 5 つの規範</a>に重点を置くことによって、(選択したクラウド プラットフォームに関係なく) これらの決定を導きます。 <a href="./guides/index.md">アクションにつながる設計ガイド</a>は、Azure サービスを使用してこのモデルを実証します。 以下では、クラウド導入フレームワーク ガバナンス モデルの規範について説明します。
                     </div>
                 </div>
             </div>
@@ -40,7 +44,7 @@ ms.locfileid: "81396169"
                         <div class="cardText" style="padding-left:0px;">
     <img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
     <br>
-    <i>図 1 - 企業ポリシーとクラウド ガバナンスの 5 つの規範のダイアグラム。</i>
+    <i> 図 1: 企業ポリシーとクラウド ガバナンスの 5 つの規範のダイアグラム</i>
                         </div>
                     </div>
                 </div>

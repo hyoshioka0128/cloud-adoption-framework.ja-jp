@@ -1,6 +1,6 @@
 ---
-title: ID ベースラインのビジネス リスク
-description: クラウド ガバナンス戦略におけるお客様の ID ベースライン規範の一般的な導入例を提示して説明します。 
+title: ID ベースライン規範の導入理由とビジネス リスク
+description: クラウド ガバナンス戦略におけるお客様の ID ベースライン規範の一般的な導入例を提示して説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fa8bd53e2d920f8d69fe6484d427d9c9400ad174
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 370dfa7a040a41e22f23741ca30cf3a305de7f29
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429890"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219888"
 ---
-# <a name="identity-baseline-motivations-and-business-risks"></a>ID ベースラインの動機とビジネス上のリスク
+# <a name="motivations-and-business-risks-in-the-identity-baseline-discipline"></a>ID ベースライン規範の導入理由とビジネス リスク
 
 この記事では、クラウド ガバナンス戦略でお客様が ID ベースラインの規範を一般的に採用する理由について説明します。 ポリシー ステートメントを追いやるビジネス リスクの例もいくつか示します。
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="identity-baseline-relevancy"></a>ID ベースラインの関連性
+## <a name="relevance"></a>関連性
 
 従来のオンプレミス ディレクトリは、企業が社内ネットワークおよびデータ センター内のユーザー、グループ、ロールに対するアクセス許可とポリシーを厳密に制御できるように設計されています。 通常、これらのディレクトリでは、オンプレミス環境内でのみ適用可能なサービスを使用して、シングル テナントの実装をサポートします。
 
@@ -42,7 +42,7 @@ ID ベースラインの規範では、ID サービスとアクセス制御に�
 
 ## <a name="next-steps"></a>次のステップ
 
-[クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
+[ID ベースライン規範テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 
 現実的なビジネス リスクについての理解が確実に得られたら、リスクに対する企業の許容範囲と、その許容範囲を監視するための指標と主なメトリックについて文書化することが、次の手順となります。
 

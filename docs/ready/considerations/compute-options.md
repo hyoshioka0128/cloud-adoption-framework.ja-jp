@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6b868c97cf5334e515ee44b0415d212175d4c26f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b05218d1dfc353e0d9cbed9006a980b845f67915
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997535"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221860"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 
@@ -35,9 +35,9 @@ ms.locfileid: "80997535"
 
 - **まったく新しいアプリケーションおよびサービスを構築していますか? それとも、既存のオンプレミスのワークロードから移行していますか?** クラウド導入作業の一環として新しいアプリケーションを開発すると、設計段階から最新のクラウド ベースのホスティング テクノロジを最大限に活用できます。
 - **既存のワークロードを移行する場合、それらは最新のクラウド テクノロジを利用できますか?** オンプレミスのワークロードを移行するには、次の分析が必要です。既存のアプリケーションとサービスを最新のクラウド テクノロジを利用するように簡単に最適化できますか? または、"_リフト アンド シフト_" 方式の方がワークロードに適していますか?
-- **アプリケーションやサービスはコンテナーを利用できますか?** アプリケーションが、コンテナー化されたホスティングに適している場合は、[Azure コンテナー サービス](https://azure.microsoft.com/product-categories/containers)が提供するリソースの効率性、スケーラビリティ、およびオーケストレーション機能を利用できます。 [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) と [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) の両方のサービスを、コンテナー化されたアプリケーションの永続的なストレージとして使用できます。
+- **アプリケーションやサービスはコンテナーを利用できますか?** アプリケーションが、コンテナー化されたホスティングに適している場合は、[Azure のコンテナー サービス](https://azure.microsoft.com/product-categories/containers)が提供するリソースの効率性、スケーラビリティ、およびオーケストレーション機能を利用できます。 [Azure マネージド ディスク](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)と [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) の両方を、コンテナー化されたアプリケーションで永続的ストレージとして使用できます。
 - **アプリケーションは Web ベースと API ベースのどちらですか? また、アプリケーションで PHP、ASP.NET、Node.js、あるいは類似のテクノロジを使用しますか?** Web アプリは [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) のマネージド インスタンスにデプロイできるため、ホスティングのために仮想マシンを維持する必要はありません。
-- **ワークロードの OS とホスティング環境を完全に制御する必要がありますか?** OS、ディスク、ローカルで実行されているソフトウェア、その他の構成など、ホスティング環境を制御する必要がある場合は、[Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) を使用してアプリケーションとサービスをホストすることができます。 仮想マシンのサイズとパフォーマンス レベルの選択に加えて、仮想ディスク ストレージに関する決定が、サービスとしてのインフラストラクチャ (IaaS) ベースのワークロードに関連するパフォーマンスと SLA に影響します。 詳細については、[Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) のドキュメントを参照してください。
+- **ワークロードの OS とホスティング環境を完全に制御する必要がありますか?** OS、ディスク、ローカルで実行されているソフトウェア、その他の構成など、ホスティング環境を制御する必要がある場合は、[Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) を使用してアプリケーションとサービスをホストすることができます。 仮想マシンのサイズとパフォーマンス レベルの選択に加えて、仮想ディスク ストレージに関する決定が、サービスとしてのインフラストラクチャ (IaaS) のワークロードに関連するパフォーマンスと SLA に影響します。 詳細については、[Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) のドキュメントを参照してください。
 - **ワークロードには、ハイパフォーマンス コンピューティング (HPC) 機能が含まれますか?** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) は、プラットフォーム サービスとしてコンピューティング リソースのジョブ スケジュール設定と自動スケール機能を備えているので、クラウドで大規模な並列アプリケーションや HPC アプリケーションを簡単に実行できます。
 - **アプリケーションでマイクロサービス アーキテクチャが使用されますか?** マイクロサービス ベースのアーキテクチャを使用するアプリケーションでは、いくつかの最適化されたコンピューティング テクノロジを利用できます。 自己完結型のイベント駆動型ワークロードは、[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) を使用して、インフラストラクチャを必要としないスケーラブルなサーバーレス アプリケーションを構築できます。 マイクロサービスが実行されている環境をより詳細に制御する必要があるアプリケーションでは、[Azure Container Instances](https://docs.microsoft.com/azure/container-instances/container-instances-overview)、[Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) などのコンテナー サービスを使用できます。
 
@@ -62,17 +62,17 @@ ms.locfileid: "80997535"
 
 ## <a name="regional-availability"></a>リージョン別の提供状況
 
-Azure を利用すれば、 _場所を問わず_顧客とパートナーを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
+Azure を利用すれば、_顧客やパートナーがいる場所を問わず_、彼らを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
 
-Azure App Service など、いくつかのコンピューティング オプションは、ほとんどの Azure リージョンで一般提供されています。 ただし、一部のコンピューティング サービスは、特定のリージョンでのみサポートされます。 一部の仮想マシンの種類とそれに関連付けられているストレージの種類は、利用可能なリージョンに制限があります。 どのリージョンにコンピューティング リソースをデプロイするかを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) を参照して、利用可能なリージョンの最新の状態を確認することをお勧めします。
+Azure App Service など、いくつかのコンピューティング オプションは、ほとんどの Azure リージョンで一般提供されています。 ただし、一部のコンピューティング サービスは、特定のリージョンでのみサポートされます。 一部の仮想マシンの種類とそれに関連付けられているストレージの種類は、利用可能なリージョンに制限があります。 どのリージョンにコンピューティング リソースをデプロイするかを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines)を参照して、リージョン別の提供状況の最新の状態を確認することをお勧めします。
 
-Azure のグローバル インフラストラクチャの詳細については、 [Azure リージョンのページ](https://azure.microsoft.com/global-infrastructure/regions)を参照してください。 また、各 Azure リージョンで利用可能なサービス全体の具体的な詳細については、 [リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)のページで確認できます。
+Azure のグローバル インフラストラクチャの詳細については、[Azure リージョンのページ](https://azure.microsoft.com/global-infrastructure/regions)を参照してください。 また、各 Azure リージョンで利用可能なサービス全体の具体的な詳細については、[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)に関するページで確認できます。
 
 ## <a name="data-residency-and-compliance-requirements"></a>データの保存場所とコンプライアンスの要件
 
-多くの場合、データ ストレージに関連する法律上および契約上の要件がワークロードに適用されます。 これらの要件は、組織の場所、ファイルやデータが格納および処理される管轄区域、および該当する事業部門によって異なる場合があります。 考慮すべきデータに関する義務の要素には、データ分類、データの場所、および共同責任モデルに基づくデータ保護に関するそれぞれの責任が含まれます。 多くのコンピューティング ソリューションは、リンクされたストレージ リソースに依存しています。 この要件は、コンピューティングの決定に影響を与えることもあります。 これらの要件の理解に役立つ情報として、ホワイト ペーパーの「 [Azure を使用して基準に準拠しているデータの保存場所とセキュリティを実現する](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)」を参照してください。
+多くの場合、データ ストレージに関連する法律上および契約上の要件がワークロードに適用されます。 これらの要件は、組織の場所、ファイルやデータが格納および処理される管轄区域、および該当する事業部門によって異なる場合があります。 考慮すべきデータに関する義務の要素には、データ分類、データの場所、および共同責任モデルに基づくデータ保護に関するそれぞれの責任が含まれます。 多くのコンピューティング ソリューションは、リンクされたストレージ リソースに依存しています。 この要件は、コンピューティングの決定に影響を与えることもあります。 これらの要件の理解に役立つ情報として、ホワイト ペーパー「[Azure を使用して基準に準拠しているデータの保存場所とセキュリティを実現する](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure)」を参照してください。
 
-コンプライアンスの取り組みの一環として、コンピューティング リソースが物理的に配置されている場所の制御が必要になる場合があります。 Azure リージョンは地域と呼ばれるグループに編成されています。  [Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies) では、データの保存場所、主権、コンプライアンス、回復性に関する要件が地域的および政治的な境界内で確実に遵守されます。 ワークロードがデータ主権やその他のコンプライアンス要件の影響を受ける場合は、要件に準拠している Azure 地域のリージョンにストレージ リソースをデプロイする必要があります。
+コンプライアンスの取り組みの一環として、コンピューティング リソースが物理的に配置されている場所の制御が必要になる場合があります。 Azure リージョンは地域と呼ばれるグループに編成されています。 [Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies)では、データの保存場所、主権、コンプライアンス、回復性に関する要件が地域的および政治的な境界内で確実に遵守されます。 ワークロードがデータ主権やその他のコンプライアンス要件の影響を受ける場合は、要件に準拠している Azure 地域のリージョンにストレージ リソースをデプロイする必要があります。
 
 ## <a name="establish-controls-for-compute-services"></a>コンピューティング サービスの制御を設定する
 

@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ed8d8511cbdac9996ff61688b4e6d783877e9d9c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 869b3b9e0a283ce28c6fba7807d0282dcb53d9cf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997515"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216335"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎の概念
 
@@ -37,7 +37,7 @@ Azure クラウドの導入作業を開始する場合は、以下の定義を�
 
 Azure サブスクリプションにはいくつかの目的があります。 Azure サブスクリプションとは:
 
-- **法的契約。** 各サブスクリプションは [Azure プラン](https://azure.microsoft.com/support/legal/offer-details) (無料試用版や従量課金制など) に関連付けられます。 各プランには固有の料金プラン、特典、使用条件が設定されています。 Azure プランはサブスクリプションを作成するときに選択します。
+- **法的契約。** 各サブスクリプションは、無料試用版や従量課金制などの [Azure プラン](https://azure.microsoft.com/support/legal/offer-details)に関連付けられます。 各プランには固有の料金プラン、特典、使用条件が設定されています。 Azure プランはサブスクリプションを作成するときに選択します。
 - **支払い契約。** サブスクリプションを作成するときに、そのサブスクリプションの支払い情報 (クレジット カード番号など) を指定します。 そのサブスクリプションにデプロイされたリソースにかかる費用が毎月計算され、指定した支払い方法で請求されます。
 - **スケールの境界。** サブスクリプションに対してスケール制限が定義されます。 サブスクリプションのリソースは、設定されたスケール制限を超えることはできません。 たとえば、1 つのサブスクリプションで作成できる仮想マシンの数には制限があります。
 - **管理上の境界。** サブスクリプションは、管理、セキュリティ、ポリシーの境界として機能します。 Azure では、これらのニーズに対応するその他のメカニズムも提供しています (管理グループ、リソース グループ、ロールベースのアクセス制御など)。
@@ -50,14 +50,14 @@ Azure サブスクリプションを作成するときに、サブスクリプ�
 - **関心のある Azure プラン**: 各サブスクリプションは、特定の [Azure プラン](https://azure.microsoft.com/support/legal/offer-details)に関連付けられます。 自分のニーズに最も合う Azure プランを選択できます。 たとえば、サブスクリプションを使用して非運用ワークロードを実行する場合は、開発テスト用の従量課金制プランまたは Enterprise Dev/Test プランを選択することができます。
 
 > [!NOTE]
-> Azure にサインアップするときに、"*Azure アカウントの作成*" というフレーズが表示されることがあります。 Azure アカウントは、Azure サブスクリプションを作成し、サブスクリプションをメール アカウントに関連付けるときに作成します。
+> Azure にサインアップするときに、"_Azure アカウントの作成_" というフレーズが表示されることがあります。 Azure アカウントは、Azure サブスクリプションを作成し、サブスクリプションをメール アカウントに関連付けるときに作成します。
 
 ## <a name="azure-administrative-roles"></a>Azure 管理ロール
 
 Azure では、サブスクリプション、ID、リソースを管理するための 3 種類のロールが定義されています。
 
 - 従来のサブスクリプション管理者ロール
-- Azure ロールベース アクセス制御 (RBAC) ロール
+- Azure ロールベースのアクセス制御 (RBAC) ロール
 - Azure Active Directory (Azure AD) 管理者ロール
 
 Azure サブスクリプションのアカウント管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントに割り当てられます。 アカウント管理者はサブスクリプションの請求先所有者です。 アカウント管理者は、[Azure アカウント センター](https://account.azure.com/subscriptions)でサブスクリプションの詳細を管理できます。
@@ -83,7 +83,7 @@ Azure で定義されているロールの詳細については、「[従来の�
 
 この記事で説明した概念の詳細情報は、次のリソースで参照できます。
 
-- [Azure のしくみ](../../getting-started/what-is-azure.md)
+- [Azure のしくみ](../../get-started/what-is-azure.md)
 - [Azure でのリソース アクセス管理](../../govern/resource-consistency/resource-access-management.md)
 - [Azure リソース マネージャーの概要](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
 - [Azure リソースのロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)

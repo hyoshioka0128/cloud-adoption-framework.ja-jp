@@ -7,12 +7,12 @@ ms.date: 04/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba3ac825fb43a9c185d86ef9695afc52c9437c56
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a40fb364df481df9c75ade25f18b9a3a1a0468fb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396237"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223713"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -89,7 +89,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 [Azure App Service](https://azure.microsoft.com/services/app-service) | このサービスでは、Web サイト向けの Azure PaaS サービスを使用してアプリケーションを実行およびスケーリングします。 | 価格は、インスタンスのサイズと必要な機能に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | DNS を使用して、Azure、外部 Web サイト、またはサービスにユーザーを送るロード バランサー。 | 価格は、受信した DNS クエリの数と監視対象のエンドポイントの数に基づきます。 | [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/traffic-manager)。
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。
-[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | データベースは、オープン ソースの MySQL Server エンジンに基づいています。 これは、アプリの開発とデプロイに向けたサービスとしての、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースです。 | 価格は、コンピューティング、ストレージ、およびバックアップ要件に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/mysql)。
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | データベースは、オープン ソースの MySQL Server エンジンに基づいています。 これは、アプリの開発とデプロイ向けのフルマネージドのエンタープライズ対応コミュニティ MySQL データベースです。 | 価格は、コンピューティング、ストレージ、およびバックアップ要件に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/mysql)。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -99,7 +99,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 **必要条件** | **詳細**
 --- | ---
-**Azure サブスクリプション** | Contoso は、この記事シリーズの前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
+**Azure サブスクリプション** | Contoso は、この記事シリーズの前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
 **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。
 
 <!-- markdownlint-enable MD033 -->
@@ -205,7 +205,7 @@ Contoso の管理者は、[ステップバイステップの移行チュート�
 
 - 次のすべての移行の前提条件が満たされていることを確認します。
   - MySQL サーバーのソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL は、MySQL Community Edition と InnoDB エンジンをサポートし、同じバージョンのソースとターゲット間の移行をサポートしています。
-  - my.ini (Windows) または my.cnf (Unix) のバイナリ ログを有効にします。 この操作を行わないと、移行ウィザードの実行中に `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more details see https://go.microsoft.com/fwlink/?linkid=873009` エラーが発生します。
+  - my.ini (Windows) または my.cnf (Unix) のバイナリ ログを有効にします。 この操作を行わないと、移行ウィザードの実行中に `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` が発生します。
   - ユーザーは `ReplicationAdmin` ロールを持っている必要があります。
   - 外部キーとトリガーを使用せずにデータベース スキーマを移行します。
 - ExpressRoute または VPN を介してオンプレミス ネットワークに接続する仮想ネットワークを作成します。
@@ -351,7 +351,7 @@ Contoso 管理者は、新しいプライベート GitHub リポジトリを作�
 
     ![アプリの構成](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
-7. Contoso では、覚えやすい DNS 名を求めています。 Traffic Manager の名を指すエイリアス レコード (CNAME) **osticket.contoso.com** を、ドメイン コントローラーの DNS 内に作成します。
+7. Contoso では、覚えやすい DNS 名を求めています。 Traffic Manager の名前を指すエイリアス レコード (CNAME) `osticket.contoso.com` をドメイン コントローラーの DNS 内に作成します。
 
     ![アプリの構成](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 

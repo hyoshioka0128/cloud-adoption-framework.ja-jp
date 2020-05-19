@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3eb3a4feb5871ac2e3ebe72c0bcbc1747e3f3eaa
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9f0005c3d84f1a9f49c3756932838bbe5634269d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122032"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213955"
 ---
 # <a name="improve-landing-zone-governance"></a>ランディング ゾーンのガバナンスの改善
 
@@ -21,10 +21,10 @@ ms.locfileid: "81122032"
 ## <a name="landing-zone-governance-best-practices"></a>ランディング ゾーンのガバナンスのベスト プラクティス
 
 - **初期ランディングのガバナンス:** [ガバナンスを始めるための基礎](../../govern/guides/complex/index.md)の確立に関する記事は、最初のいくつかのランディング ゾーンに初期ガバナンス ツールを追加する際に役立ちます。 これらのプラクティスは、導入とガバナンスのスケーリングに役立ち、安定したコスト管理の実装にも役立ちます。 このアプローチは次のものから始まります。リソースの編成、ポリシー定義、RBAC ロール、およびブループリントの定義。
-- **[名前付けとタグ付けの標準](../azure-best-practices/naming-and-tagging.md)** :名前付けとタグ付けの一貫性を確保します。これは、安定したガバナンス プラクティスを確立するための基本データです。
-- **[ワークロード間のコストの追跡](../azure-best-practices/track-costs.md)** :最初のランディング ゾーンのコストの追跡を始めます。 複数のワークロードとロール間で一貫性を適用する方法を評価します。
-- **[複数のサブスクリプションでスケーリングする](../azure-best-practices/scale-subscriptions.md)** :複数のサブスクリプションが要件になるため、このランディング ゾーンとその他のランディング ゾーンのスケーリング方法を評価します。
-- **[サブスクリプションを整理する](../azure-best-practices/organize-subscriptions.md)** :複数のサブスクリプションの整理と管理の方法を理解します。
+- **[名前付けとタグ付けの標準](../azure-best-practices/naming-and-tagging.md):** 名前付けとタグ付けの一貫性を確保します。これは、安定したガバナンス プラクティスを確立するための基本データです。
+- **[ワークロード間にわたってコストを追跡する](../azure-best-practices/track-costs.md):** 最初のランディング ゾーンのコストの追跡を始めます。 複数のワークロードとロール間で一貫性を適用する方法を評価します。
+- **[複数のサブスクリプションでスケーリングする](../azure-best-practices/scale-subscriptions.md):** 複数のサブスクリプションが要件になるため、このランディング ゾーンとその他のランディング ゾーンのスケーリング方法を評価します。
+- **[サブスクリプションを整理する](../azure-best-practices/organize-subscriptions.md):** 複数のサブスクリプションの整理と管理の方法を理解します。
 
 ## <a name="four-steps-to-improve-overall-governance"></a>全体的なガバナンスを向上させるための 4 つのステップ
 

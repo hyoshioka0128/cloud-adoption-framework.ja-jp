@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 6d59781c94355a6b5ca980950ca4f1e73108e818
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ff7c476737bed0f079cbebac736506cb6801bfd8
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996804"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223611"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -94,8 +94,8 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 **考慮事項** | **詳細**
 --- | ---
-**長所** | WEBVM は変更することなく Azure に移されるため、移行が簡単で済みます。<br/><br/> SQL Server 層は、SQL Server 2017 と Windows Server 2016 で実行されます。 これによって現在の Windows Server 2008 R2 オペレーティング システムは廃止されることになりますが、Contoso の技術的要件と目標は、SQL Server 2017 を実行することで満たすことができます。 SQL Server 2008 R2 から移行しても 100% の互換性が確保されます。<br/><br/> Contoso は、Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。<br/><br/> Azure への高可用性 SQL Server のデプロイによってフォールト トレランスが得られるので、アプリのデータ層が単一フェールオーバー ポイントではなくなります。
-**短所** | WEBVM では、Windows Server 2008 R2 が実行されています。 このオペレーティング システムは、特定のロールを対象に Azure でサポートされます (2018 年 7 月)。 [詳細については、こちらを参照してください](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines)。<br/><br/> アプリの Web 層は、依然として単一フェールオーバー ポイントになります。<br/><br/> Contoso は、Azure App Service といったマネージド サービスにアプリを移行するのではなく、Azure VM として Web 層を引き続きサポートする必要があります。<br/><br/> このソリューションを選択した場合、Contoso は、Azure SQL Database Managed Instance などのマネージド プラットフォームに移行するのではなく、引き続き 2 つの SQL Server VM を管理する必要があります。 また、ソフトウェア アシュアランスに基づき、Contoso は、既存のライセンスを Azure SQL Database Managed Instance の割引料金のライセンスに交換することができます。
+**長所** | WEBVM は変更することなく Azure に移されるため、移行が簡単で済みます。 <br><br> SQL Server 層は、SQL Server 2017 と Windows Server 2016 で実行されます。 これによって現在の Windows Server 2008 R2 オペレーティング システムは廃止されることになりますが、Contoso の技術的要件と目標は、SQL Server 2017 を実行することで満たすことができます。 SQL Server 2008 R2 から移行しても 100% の互換性が確保されます。 <br><br> Contoso は、Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。 <br><br> Azure への高可用性 SQL Server のデプロイによってフォールト トレランスが得られるので、アプリのデータ層が単一フェールオーバー ポイントではなくなります。
+**短所** | WEBVM では、Windows Server 2008 R2 が実行されています。 このオペレーティング システムは、特定のロールを対象に Azure でサポートされます (2018 年 7 月)。 [詳細については、こちらを参照してください](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines)。 <br><br> アプリの Web 層は、依然として単一フェールオーバー ポイントになります。 <br><br> Contoso は、Azure App Service といったマネージド サービスにアプリを移行するのではなく、Azure VM として Web 層を引き続きサポートする必要があります。 <br><br> このソリューションを選択した場合、Contoso は、Azure SQL Database Managed Instance などのマネージド プラットフォームに移行するのではなく、引き続き 2 つの SQL Server VM を管理する必要があります。 また、ソフトウェア アシュアランスに基づき、Contoso は、既存のライセンスを Azure SQL Database Managed Instance の割引料金のライセンスに交換することができます。
 
 <!-- markdownlint-enable MD033 -->
 
@@ -104,7 +104,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 **サービス** | **説明** | **コスト**
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | 2018 年 5 月の時点で Azure Migrate は無料サービスです。
+[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | 2018 年 5 月の時点で Azure Migrate は無料サービスです。
 
 ## <a name="migration-process"></a>移行プロセス
 
@@ -127,12 +127,12 @@ Contoso の管理者はアプリの VM を Azure に移行します。
 
 <!-- markdownlint-disable MD033 -->
 
-**必要条件** | **詳細**
---- | ---
-**Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso は既にサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。<br/><br/> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。<br/><br/> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。<br/><br/>
-**Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。<br/><br/> Azure Migrate Server Migration の具体的な[前提条件](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites)の要件の詳細について確認してください。
-**オンプレミスのサーバー** | オンプレミス vCenter Server は、バージョン 5.5、6.0、6.5、または 6.7 を実行している必要があります<br/><br/> バージョン 5.5、6.0、6.5、または 6.7 を実行している ESXi ホスト<br/><br/> ESXi ホスト上で実行している 1 つ以上の VMware VM。
-**オンプレミスの VM** | Azure での実行が保証されている [Linux マシンを確認します](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。
+| **必要条件** | **詳細** |
+| --- | --- |
+| **Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso は既にサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。 |
+| **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。 <br><br> Azure Migrate: Server Migration の具体的な[前提条件](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites)の要件の詳細について確認してください。Server Migration に関するエラーのトラブルシューティングに役立つ情報を提供しています。 |
+| **オンプレミスのサーバー** | オンプレミス vCenter Server は、バージョン 5.5、6.0、6.5、または 6.7 を実行している必要があります。 <br><br> バージョン 5.5、6.0、6.5、または 6.7 を実行している ESXi ホスト。 <br><br> ESXi ホスト上で実行している 1 つ以上の VMware VM。 |
+| **オンプレミスの VM** | Azure での実行が保証されている [Linux マシンを確認します](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -579,7 +579,7 @@ Contoso のセキュリティ チームは、Azure VM (WEBVM、SQLAOG1 および
 
 事業継続とディザスター リカバリー (BCDR) のために、Contoso は次のアクションを実施します。
 
-- データの安全性を確保するために、Contoso は、Azure Backup サービスを使用して、WEBVM、SQLAOG1、SQLAOG2 の各 VM 上のデータをバックアップします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=/azure/virtual-machines/linux/toc.json)。
+- データの安全性を確保するために、Contoso は、Azure Backup サービスを使用して、WEBVM、SQLAOG1、SQLAOG2 の各 VM 上のデータをバックアップします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/backup/backup-overview)。
 - また、Contoso は、Azure Storage を使用して SQL Server を直接 Blob Storage にバックアップする方法を把握する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)。
 - アプリの稼働状態を維持するために、Contoso は、Site Recovery を使用して、Azure 内のアプリの VM をセカンダリ リージョンにレプリケートします。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)。
 

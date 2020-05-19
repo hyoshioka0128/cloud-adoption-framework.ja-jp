@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18eef9f270e4c9ab8b2ee31268e46f0d4d929e34
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b92f9593c0d35f4c73dc17733d1ae57dbbe599b4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995524"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220262"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>デプロイ高速化のサンプル ポリシー ステートメント
 
@@ -56,7 +56,7 @@ ms.locfileid: "80995524"
 
 この記事で説明されているサンプルを開始点として使用し、クラウドの導入計画に合致する特定のビジネス上のリスクに対処するポリシーを作成します。
 
-ID 管理に関連する独自のカスタム ポリシー ステートメントを作成するには、[ID ベースライン テンプレート](../identity-baseline/template.md)をダウンロードします。
+独自のカスタム ID ベースライン ポリシー ステートメントの開発を開始するには、[ID ベースライン規範テンプレート](../identity-baseline/template.md)をダウンロードします。
 
 この規範の導入を促進するには、ご使用の環境に最も合う[実践的なガバナンス ガイド](../guides/index.md)を選択します。 その後、設計を変更して、特定の企業ポリシーの決定を組み込みます。
 
