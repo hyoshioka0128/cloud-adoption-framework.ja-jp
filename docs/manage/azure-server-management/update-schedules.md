@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3d40eb748c58643a981110e03417275b465c158
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ba44b786e63a0f7a9c63a527b6abbb1074a410fb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430487"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219548"
 ---
 # <a name="create-update-schedules"></a>更新スケジュールの作成
 
@@ -28,9 +28,9 @@ Azure PowerShell を使用した更新管理の構成が Az.Automation モジュ
 
 - 毎週土曜日の午前 8:00 に実行する Azure Automation 更新スケジュールを作成します。
 - 次の条件に一致するマシンのクエリを作成します。
-  - `westus`、`eastus`、`eastus2` のいずれかの Azure の場所にデプロイされている
-  - `Owner` タグが適用され、値が `JaneSmith` に設定されている
-  - `Production` タグが適用され、値が `true` に設定されている
+  - `westus`、`eastus`、`eastus2` のいずれかの Azure の場所にデプロイされている。
+  - `Owner` タグが適用され、値が `JaneSmith` に設定されている。
+  - `Production` タグが適用され、値が `true` に設定されている。
 - クエリ対象のマシンに更新スケジュールを適用し、2 時間の更新ウィンドウを設定します。
 
 サンプル スクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインする必要があります。 スクリプトを開始するときに、次の情報を指定します。
@@ -54,19 +54,19 @@ Azure PowerShell を使用した更新管理の構成が Az.Automation モジュ
 
     param (
         [Parameter(Mandatory=$true)]
-        [string]$SubscriptionId,
+        [string] $SubscriptionId,
 
         [Parameter(Mandatory=$true)]
-        [string]$ResourceGroupName,
+        [string] $ResourceGroupName,
 
         [Parameter(Mandatory=$true)]
-        [string]$WorkspaceName,
+        [string] $WorkspaceName,
 
         [Parameter(Mandatory=$true)]
-        [string]$AutomationAccountName,
+        [string] $AutomationAccountName,
 
         [Parameter(Mandatory=$false)]
-        [string]$scheduleName = "SaturdayCriticalSecurity"
+        [string] $scheduleName = "SaturdayCriticalSecurity"
     )
 
     Import-Module Az.Automation
@@ -87,8 +87,8 @@ Azure PowerShell を使用した更新管理の構成が Az.Automation モジュ
 
     $query1Location =@("westus", "eastus", "eastus2")
     $query1FilterOperator = "Any"
-    $ownerTag = @{"Owner"= @("JaneSmith")}
-    $ownerTag.add("Production", "true")
+    $ownerTag = @{ "Owner"= @("JaneSmith") }
+    $ownerTag.Add("Production", "true")
 
     $DGQuery = New-AzAutomationUpdateManagementAzureQuery -ResourceGroupName $ResourceGroupName `
         -AutomationAccountName $AutomationAccountName `

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3781bb50f8d2ad76efd606f8d6914582cee0754c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 213fc070f648a43d285e59948bb567502f944603
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434234"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218783"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
 
@@ -50,7 +50,7 @@ ms.locfileid: "80434234"
 
 - CIO は、将来的な状態の目標を見越して個人データと財務データに関するポリシーを見直しています。
 - アプリケーション開発チームと BI チームは、顧客エンゲージメントと新製品のビジョンに基づいて、今後 24 か月間でクラウドベースのソリューションを運用環境にリリースしたいと考えています。
-- 今年、IT チームは、2,000 個の VM をクラウドに移行することで、DR データセンターのディザスター リカバリー ワークロードを廃止する予定です。 これにより、今後 5 年間で推定 2,500 万米ドルのコスト削減が見込まれます。
+- 今年、IT チームは、2,000 個の VM をクラウドに移行することで、DR データセンターのディザスター リカバリー ワークロードを廃止する予定です。 これにより、今後 5 年間で推定 2,500 万米国ドルのコスト削減が見込まれます。
     ![今後 5 年間で 2,500 万米国ドルのコスト削減を示すオンプレミスのコストと Azure のコストの比較](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - この会社は、割り当てられている資本コストを IT 部門内の運営費として再配分することで、IT 投資の方法を変えることを計画しています。 この変更により、コスト管理が強化され、IT 部門は他の計画されている作業を加速できます。
 

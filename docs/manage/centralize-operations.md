@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 12b1a578c98a2c870306d9bc5b3587477adbb3d3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6d777a1c919e72c55d8c6202ef1c32f44d9444d9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430352"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219480"
 ---
 <!-- cSpell:ignore jenhayes -->
 
@@ -29,7 +29,7 @@ ms.locfileid: "80430352"
 
 マルチテナント アーキテクチャが必要な場合は、[Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/overview) を使用して、管理操作を一元化し、合理化することができます。 複数のテナントからのサブスクリプションを [Azure 委任リソース管理](https://docs.microsoft.com/azure/lighthouse/concepts/azure-delegated-resource-management)のためにオンボードできます。 このオプションにより、管理側テナント内の指定されたユーザーが、一元化されたスケーラブルな方法で[テナント間管理機能](https://docs.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience)を実行できます。
 
-たとえば、組織に 1 つのテナント、"*テナント A*" があるとします。その後、組織は*テナント B* と*テナント C* の 2 つの追加テナントを取得します。これらを個別のテナントとして維持する必要があるビジネス上の理由があります。
+たとえば、組織に単一のテナント `Tenant A` があるとします。 その後、組織は 2 つの別のテナント (`Tenant B` と `Tenant C`) を取得します。これらを個別のテナントとして維持する必要があるビジネス上の理由があります。
 
 組織では、すべてのテナントで同じポリシー定義、バックアップ方法、およびセキュリティ プロセスを使用する必要があります。 テナント A 内でこれらのタスクの実行を担当するユーザー (ユーザー グループとサービス プリンシパルを含む) が既に存在するため、テナント A 内の同じユーザーがこれらのタスクを実行できるように、テナント B とテナント C 内のすべてのサブスクリプションをオンボードできます。 テナント A は、テナント B とテナント C の管理テナントになります。
 

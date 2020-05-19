@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7050b4b40508f9ac133322600625e016c270bb15
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434076"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219565"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure サーバー管理ツールおよびサービス
 
@@ -57,8 +57,8 @@ ms.locfileid: "80434076"
 
 [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) では、アプリケーション、コンテナー、仮想マシンなど、さまざまなリソースを表示できます。 また、複数のソースからデータを収集します。
 
-- Azure Monitor for VMs ([分析情報](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)) では、仮想マシンの正常性、パフォーマンスの傾向、依存関係の詳細を確認できます。 このサービスは、Azure 仮想マシン、仮想マシン スケール セット、オンプレミス環境のマシンのオペレーティング システムの正常性を監視します。
-- ログ分析 ([ログ](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) は Azure Monitor の機能です。 Azure 管理全体の中心的役割を果たします。 ログ分析やその他多数の Azure サービスのデータ ストアとして機能します。 高機能なクエリ言語を提供しているほか、アプリケーションやリソースの操作に関する分析情報が得られる分析エンジンを搭載しています。
+- [Azure Monitor for VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) では、VM の正常性、パフォーマンスの傾向、および依存関係の詳細が提供されます。 このサービスは、Azure 仮想マシン、仮想マシン スケール セット、オンプレミス環境のマシンのオペレーティング システムの正常性を監視します。
+- [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) は Azure Monitor の機能です。 Azure 管理全体の中心的役割を果たします。 ログ分析やその他多数の Azure サービスのデータ ストアとして機能します。 高機能なクエリ言語を提供しているほか、アプリケーションやリソースの操作に関する分析情報が得られる分析エンジンを搭載しています。
 - [Azure アクティビティ ログ](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview)も Azure Monitor の機能です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
 
 ## <a name="configure"></a>構成

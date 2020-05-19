@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cb612930318ed2ecd355cb5466f50650086d7f4c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9e0c9904bd05eb2464c2765050fbdbf3948079a1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430567"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219667"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 
@@ -24,7 +24,7 @@ Azure サーバー管理サービスのデプロイの効率を向上させる�
 
 - [Log Analytics ワークスペース](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)を作成します。 (または、要件を満たしている場合は既存のワークスペースを使用します。 詳細については、[ワークスペースの計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)に関するページを参照してください。
 
-- Automation アカウントを作成します。 (または、要件を満たしている場合は既存のアカウントを使用します。 詳細については、[ワークスペースの計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)に関するページを参照してください)。
+- Automation アカウントを作成するか、要件を満たしている既存のアカウントを使用します。 詳細については、「[ワークスペースの計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)」を参照してください。
 
 - Automation アカウントと Log Analytics ワークスペースをリンクします。 Azure portal を使用してオンボードしている場合、このステップは必要ありません。
 

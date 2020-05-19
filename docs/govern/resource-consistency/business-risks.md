@@ -1,5 +1,5 @@
 ---
-title: リソース整合性のビジネス リスク
+title: リソースの整合性規範の同期とビジネス上のリスク
 description: Azure 向けクラウド導入フレームワークを使用して、クラウド ガバナンス戦略におけるお客様の一般的なリソース整合性規範の導入について説明します。
 author: alexbuckgit
 ms.author: abuck
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3eff0f6130adc35d8c087d385d42b06e141f3c64
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17b39eba50b11ee1124e174f3bc89f3e6dada3e2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433492"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218256"
 ---
-# <a name="resource-consistency-motivations-and-business-risks"></a>リソースの整合性の目的とビジネス上のリスク
+# <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>リソースの整合性規範の同期とビジネス上のリスク
 
 この記事では、お客様が通常、クラウド ガバナンス戦略でリソースの整合性の規範を採用する理由について説明します。 また、ポリシー ステートメントを追いやる可能性のある潜在的なビジネス リスクの例をいくつか示します。
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="resource-consistency-relevancy"></a>リソースの整合性の関連性
+## <a name="relevance"></a>関連性
 
 リソースとワークロードのデプロイに関しては、クラウドは従来のほとんどのオンプレミス データセンターよりも敏捷性と柔軟性を向上させます。 ただし、このクラウド ベースの潜在的な利点は、クラウドの導入の成功を危うくする可能性のある潜在的な管理上の欠点と対になります。 デプロイしている資産は何か? どのチームがどの資産を所有しているか? ワークロードをサポートしているリソースは十分であるか? ワークロードが正常であるかどのように把握するか?
 
@@ -44,7 +44,7 @@ ms.locfileid: "80433492"
 
 ## <a name="next-steps"></a>次のステップ
 
-[クラウド管理テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
+[リソースの整合性規範テンプレート](./template.md)を使用して、現在のクラウド導入計画によって生じる可能性が高いビジネス リスクを文書化します。
 
 現実的なビジネス リスクについての理解が確実に得られたら、リスクに対する企業の許容範囲と、その許容範囲を監視するための指標と主なメトリックについて文書化することが、次の手順となります。
 

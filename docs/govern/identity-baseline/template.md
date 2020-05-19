@@ -1,6 +1,6 @@
 ---
-title: ID ベースライン テンプレート
-description: ID ベースライン テンプレートをダウンロードして、クラウドでの ID サービスを管理するポリシー ステートメントの文書化と伝達を開始してください。
+title: ID ベースライン規範テンプレート
+description: このテンプレートは、クラウドでの ID サービスを管理するポリシー ステートメントを文書化して伝達するための開始点として使用します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a5fb50a35c064ca72a04301122b0799a5d09999e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9a3aa20bb2935d99623aab767a9b9194c4bd8def
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429879"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218562"
 ---
-# <a name="identity-baseline-template"></a>ID ベースライン テンプレート
+# <a name="identity-baseline-discipline-template"></a>ID ベースライン規範テンプレート
 
 変更を実装する最初の手順は、必要な変更を伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウドでの ID サービスを管理するポリシー ステートメントを文書化して伝達するための開始点として機能します。
 
@@ -24,7 +24,7 @@ ms.locfileid: "80429879"
 > [!IMPORTANT]
 > このテンプレートは、限定されたサンプルです。 お客様の要件を反映するようにこのテンプレートを更新する前に、クラウド ガバナンス戦略内で有効な ID ベースライン規範を定義するための後続の手順を確認する必要があります。
 
-[ガバナンス規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx)
+[ID ベースライン規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>次のステップ
 

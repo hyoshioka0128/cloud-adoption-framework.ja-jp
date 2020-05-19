@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8ff62f3a508fa033f882101b13fd85f90526bab3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe217a1fb6379522d8afccc9640bdd32409eb1cd
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425573"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219820"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Azure のアプリを使用して連携するためのツール
 
@@ -32,7 +32,7 @@ ms.locfileid: "80425573"
 - **インテリジェントなエクスペリエンス:** クラウド プラットフォームを使用して最新のエクスペリエンスを作成し、迅速なデプロイと短いフィードバック ループを推進します。 Web アプリケーションに展開して、インテリジェンスを組み込んだり、ボットを統合したりします。
 - **クラウドネイティブ:** 必然的にクラウド機能を利用する新しい発明を構築します。
 
-各パスでは、短期的にも長期的にも、長所と短所が発生します。 クラウド ガバナンス チーム、クラウド運用チーム、および卓越したクラウド研究チームが、すべてのアプローチをサポートする準備ができたら、持続可能なビジネス運用への影響を最小限に抑えて導入を加速させることができます。
+各パスでは、短期的にも長期的にも、長所と短所が発生します。 クラウド ガバナンス チーム、クラウド運用チーム、およびクラウド センター オブ エクセレンス チームが、すべてのアプローチをサポートする準備ができたら、持続可能なビジネス運用への影響を最小限に抑えて導入を加速させることができます。
 
 ## <a name="toolchain"></a>ツールチェーン
 

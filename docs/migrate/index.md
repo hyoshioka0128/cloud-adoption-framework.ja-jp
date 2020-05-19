@@ -3,108 +3,35 @@ title: クラウド移行
 description: クラウドに移行するワークロードを評価、移行、最適化、セキュリティ保護、管理するための反復プロセスを構築する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
-ms.topic: landing-page
+ms.date: 05/04/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-layout: LandingPage
-ms.openlocfilehash: b341996c45c4a0c5b7d8467419c3117f939afa20
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8a1c601108befd2dbbb32a6b24d72a1b0852d081
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120749"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219531"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
 大企業規模の[クラウド導入計画](../plan/index.md)には、新しいビジネス ロジックの開発に大きな投資を約束できないワークロードが含まれます。 そのようなワークロードは、リフト アンド シフト、シフト アンド オプティマイズ、モダナイズなど、さまざまな方法でクラウドに移すことができます。 これらの各方法は移行と見なされます。 次の演習は、そのようなワークロードを評価、移行、最適化、セキュリティ保護、管理するための反復プロセスの構築に役立ちます。
 
-## <a name="getting-started"></a>作業の開始
-
-クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークでは次の演習を推奨しています。
+クラウド導入ライフサイクルのこのフェーズを準備するために、以下が推奨されます。
 
 <!-- markdownlint-disable MD033 -->
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>最初のワークロードを移行する</h3>
-「Azure 移行ガイド」を使用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>移行シナリオ</h3>
-追加の移行ツールとアプローチを使用して、その他の移行シナリオに対処します。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>ベスト プラクティス</h3>
-一貫したベスト プラクティスの適用によって、移行の一般的なニーズに対処します。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./migration-considerations/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>プロセス改善</h3>
-移行はプロセス負荷の高い行為です。 移行作業の増加に応じて、これらのプロセス改善を使用して、移行のさまざまな側面を評価し、成熟させてください。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[最初のワークロードを移行する](./azure-migration-guide/index.md):「Azure 移行ガイド」を使用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。                                |
+| ![2](../_images/icons/2.png)     | <br>[移行シナリオ](./azure-best-practices/index.md):追加の移行ツールとアプローチを使用して、その他の移行シナリオに対処します。                                |
+| ![3](../_images/icons/3.png)     | <br>[ベスト プラクティス](./azure-best-practices/index.md):一貫したベスト プラクティスの適用によって、移行の一般的なニーズに対処します。                                |
+| ![4](../_images/icons/4.png)      | <br>[プロセス改善](./migration-considerations/index.md):移行はプロセス負荷の高い行為です。 移行作業の増加に応じて、これらのプロセス改善を使用して、移行のさまざまな側面を評価し、成熟させてください。                        |
+
 <!-- markdownlint-enable MD033 -->
 
-この手法と上記の手順は、次の前提に基づいています。
+移行手法と上記の手順は、次の前提に基づいています。
 
 - 移行スプリントを管理する手法は移行のウェーブまたはリリースに収まり、計画、準備、リリースの手法を使用して定義されます。 各移行スプリント内で、ワークロードのバッチがクラウドに移行されます。
 - ワークロードを移行する前に、短期的なクラウド導入計画のニーズを満たすために、少なくとも 1 つの[ランディング ゾーン](../ready/index.md)が識別、構成、およびデプロイされています。
@@ -137,7 +64,7 @@ ms.locfileid: "81120749"
 
 ## <a name="next-steps"></a>次のステップ
 
-上記の「はじめに」の手順と、後続の移行手法で紹介するガイダンスは、各移行スプリント内のプロセスの実行を向上させるスキルを開発するのに役立ちます。 [Azure 移行ガイド](./azure-migration-guide/index.md)は最初の移行ウェーブで必要とされる最も一般的なツールと方法について概説した一連の記事です。
+前述の手順と、後続の移行手法で紹介するガイダンスは、各移行スプリント内のプロセスの実行を向上させるスキルを開発するのに役立てることができます。 [Azure 移行ガイド](./azure-migration-guide/index.md)は最初の移行ウェーブで必要とされる最も一般的なツールと方法について概説した一連の記事です。
 
 > [!div class="nextstepaction"]
 > [Azure 移行ガイド](./azure-migration-guide/index.md)

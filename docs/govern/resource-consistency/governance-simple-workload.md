@@ -1,6 +1,6 @@
 ---
 title: シンプルなワークロード向けガバナンス設計
-description: 単一チームとシンプルなワークロードをサポートするリソース ガバナンス モデルを Azure で設計するためのプロセスについて説明します。 
+description: 単一チームとシンプルなワークロードをサポートするリソース ガバナンス モデルを Azure で設計するためのプロセスについて説明します。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f7a9f455c302c6cbdee843f04a8d1b48f56940a1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 75f07c6f3c37d83321fd6758d3d79c7573792ef0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809038"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218222"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>シンプルなワークロード向けガバナンス設計
 
@@ -33,8 +33,8 @@ ms.locfileid: "80809038"
 
 Azure がご自身の組織のエンタープライズ契約に追加されたとき、組織は **Azure アカウント**を作成するよう求められました。 アカウントの作成プロセス中に、**Azure アカウント所有者**が、Azure Active Directory (Azure AD) テナントおよび**グローバル管理者**アカウントと共に作成されています。 Azure AD テナントとは、Azure AD の安全な専用インスタンスを表す論理コンストラクトです。
 
-![Azure アカウント マネージャーと Azure AD グローバル管理者が含まれる Azure アカウント](../../_images/govern/design/governance-3-0.png)
-*図 1 - アカウント マネージャーと Azure AD グローバル管理者が含まれる Azure アカウント。*
+![Azure アカウント所有者と Azure AD グローバル管理者が含まれる Azure アカウント](../../_images/govern/design/governance-3-0.png)
+_図 1: Azure アカウント所有者と Azure AD グローバル管理者が含まれる Azure アカウント。_
 
 ## <a name="identity-management"></a>ID 管理
 
@@ -45,7 +45,7 @@ Azure は、[Azure AD](https://docs.microsoft.com/azure/active-directory) のみ
 Azure AD のグローバル管理者が、ワークロード所有者を表す**ワークロード所有者**アカウントを作成します。
 
 ![Azure AD のグローバル管理者がワークロード所有者アカウントを作成する](../../_images/govern/design/governance-1-2.png)
-*図 2 - Azure AD のグローバル管理者がワークロード所有者のユーザー アカウントを作成する。*
+_図 2: Azure AD のグローバル管理者がワークロード所有者のユーザー アカウントを作成する。_
 
 このユーザーが**サブスクリプション**に追加されるまで、リソースのアクセス許可を割り当てることができません。そこで、次の 2 つのセクションでは、これを行います。
 
@@ -56,26 +56,26 @@ Azure AD のグローバル管理者が、ワークロード所有者を表す**
 最上位レベルのリソース管理のスコープは**サブスクリプション** レベルです。 サブスクリプションは、Azure **アカウント所有者**によって作成されます。このユーザーは財務コミットメントを確立し、そのサブスクリプションに関連付けられているすべての Azure リソースに対する支払いを行う責任があります。
 
 ![Azure アカウント所有者がサブスクリプションを作成する](../../_images/govern/design/governance-1-3.png)
-*図 3 - Azure アカウント所有者がサブスクリプションを作成する。*
+_図 3: Azure アカウント所有者がサブスクリプションを作成する。_
 
 サブスクリプションが作成されると、Azure **アカウント所有者**は、Azure AD テナントをサブスクリプションに関連付けます。この Azure AD テナントは、ユーザーの認証と承認に使用されます。
 
-![Azure アカウント所有者が Azure AD テナントとサブスクリプションを関連付ける](../../_images/govern/design/governance-1-4.png)
-*図 4 - Azure アカウント所有者が Azure AD テナントをサブスクリプションに関連付ける。*
+![Azure アカウント所有者が Azure AD テナントをサブスクリプションに関連付ける](../../_images/govern/design/governance-1-4.png)
+_図 4: Azure アカウント所有者が Azure AD テナントをサブスクリプションに関連付ける。_
 
 お気付きかもしれませんが、現在サブスクリプションにはユーザーが関連付けられていません。つまり、リソースを管理するアクセス許可は、誰にも付与されていません。 実際には、**アカウント所有者**はサブスクリプションの所有者であり、サブスクリプションのリソースに対して任意のアクションを実行するアクセス許可を持っています。 しかし、実のところ、**アカウント所有者**は、組織の財務担当者である可能性が高く、リソースの作成、読み取り、更新、および削除を担当しません。これらのタスクは**ワークロード所有者**によって実行されます。 したがって、**ワークロード所有者**をサブスクリプションに追加して、アクセス許可を割り当てる必要があります。
 
 **アカウント所有者**は、現時点で**ワークロード所有者**をサブスクリプションに追加するアクセス許可を持つ唯一のユーザーです。したがって、アカウント所有者が、**ワークロード所有者**をサブスクリプションに追加します。
 
 ![Azure アカウント所有者が**ワークロード所有者**をサブスクリプションに追加する](../../_images/govern/design/governance-1-5.png)
-*図 5 - Azure アカウント所有者がワークロード所有者をサブスクリプションに追加する。*
+_図 5: Azure アカウント所有者がワークロード所有者をサブスクリプションに追加する。_
 
-Azure **アカウント所有者**は、**ロールベースのアクセス制御 (RBAC)** ロールを割り当てることで、[ワークロード所有者](https://docs.microsoft.com/azure/role-based-access-control)にアクセス許可を付与します。 RBAC ロールにより、個々のリソースの種類または一連のリソースの種類に対して**ワークロード所有者**が持つ一連のアクセス許可が指定されます。
+Azure **アカウント所有者**は、[ロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control) ロールを割り当てることで、**ワークロード所有者**にアクセス許可を付与します。 RBAC ロールにより、個々のリソースの種類または一連のリソースの種類に対して**ワークロード所有者**が持つ一連のアクセス許可が指定されます。
 
 この例では、**アカウント所有者**は、[組み込みの**所有者**ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)を割り当てました。
 
 ![**ワークロード所有者**に組み込みの所有者ロールが割り当てられる](../../_images/govern/design/governance-1-6.png)
-*図 6 - ワークロード所有者に組み込みの所有者ロールが割り当てられる。*
+_図 6: **ワークロード所有者**に組み込みの所有者ロールが割り当てられる。_
 
 組み込みの**所有者**ロールによって、サブスクリプション スコープで、すべてのアクセス許可が**ワークロード所有者**に付与されます。
 
@@ -86,15 +86,15 @@ Azure **アカウント所有者**は、**ロールベースのアクセス制�
 
 これを確認するために、**ワークロード所有者**がリソース グループを作成するとき、何が起こるかを見てみましょう。
 
-![**ワークロード所有**がリソース グループを作成する](../../_images/govern/design/governance-1-7.png)
-*図 7 - ワークロード所有者がリソース グループを作成し、リソース グループ スコープで組み込みの所有者ロールを継承する。*
+![**ワークロード所有者**がリソース グループを作成する](../../_images/govern/design/governance-1-7.png)
+_図 7: ワークロード所有者がリソース グループを作成し、リソース グループ スコープで組み込みの所有者ロールを継承する。_
 
 この場合も、組み込みの**所有者**ロールによって、リソース グループ スコープで、すべてのアクセス許可が**ワークロード所有者**に付与されます。 先ほど説明したように、このロールはサブスクリプション レベルから継承されます。 このスコープで別のロールがこのユーザーに割り当てられると、そのロールはこのスコープにのみ適用されます。
 
 最下位レベルの管理スコープは**リソース** レベルです。 リソース レベルで適用された操作は、リソース自体にのみ適用されます。 前と同様に、リソース レベルのアクセス許可は、リソース グループ スコープから継承されます。 たとえば、**ワークロード所有者**が[仮想ネットワーク](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)をリソース グループにデプロイするとどうなるかを見てみましょう。
 
-![**ワークロード所有**がリソースを作成する](../../_images/govern/design/governance-1-8.png)
-*図 8 - ワークロード所有者がリソースを作成し、リソース スコープで組み込みの所有者ロールを継承する。*
+![**ワークロード所有者**がリソースを作成する](../../_images/govern/design/governance-1-8.png)
+_図 8: ワークロード所有者がリソースを作成し、リソース スコープで組み込みの所有者ロールを継承する。_
 
 **ワークロード所有者**は、リソース スコープで所有者ロールを継承します。つまり、ワークロード所有者には、仮想ネットワークに対するすべてのアクセス許可が付与されます。
 
@@ -104,7 +104,7 @@ Azure **アカウント所有者**は、**ロールベースのアクセス制�
 
 まず、お客様の組織には Azure アカウントが必要です。 お客様の組織の既存の[マイクロソフトエンタープライズ契約](https://www.microsoft.com/licensing/licensing-programs/enterprise)に Azure が含まれていない場合は、前払いによる年額コミットメントを行うことで Azure を追加できます。 詳細については、「[Azure のエンタープライズ向けライセンス](https://azure.microsoft.com/pricing/enterprise-agreement)」を参照してください。
 
-Azure アカウントが作成されたら、組織の 1 人を Azure **アカウント所有者**に指定します。 Azure Active Directory (Azure AD) テナントは、そのとき既定で作成されます。 Azure **アカウント所有者**は、[ワークロード所有者](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)となる組織内ユーザーの**ユーザー アカウントを作成する**必要があります。
+Azure アカウントが作成されたら、組織の 1 人を Azure **アカウント所有者**に指定します。 Azure Active Directory (Azure AD) テナントは、そのとき既定で作成されます。 Azure **アカウント所有者**は、**ワークロード所有者**となる組織内ユーザーの[ユーザー アカウントを作成する](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)必要があります。
 
 次に、Azure **アカウント所有者**は、[サブスクリプションを作成](https://docs.microsoft.com/partner-center/create-a-new-subscription)し、これに [Azure AD テナントを関連付ける](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)必要があります。
 

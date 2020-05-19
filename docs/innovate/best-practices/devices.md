@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f6dfc621d20f2f2d3135e99be197e3fdfd315bdc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 401acfb2a0689fe54d43c29a8ab32a8d6e218670
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425411"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219769"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Azure 上のデバイスと対話するためのツール
 
@@ -33,10 +33,16 @@ ms.locfileid: "80425411"
 
 Azure では、上記のアンビエント ソリューションの各レベル間でのデジタル発明を加速するために、一般に次のツールを使用します。 これらのツールは、これらのエクスペリエンスにツールを合わせる際の複雑さを軽減するために必要なエクスペリエンスの量に基づいてグループ化されています。
 
-- モバイル エクスペリエンス:Azure App Service、PowerApps、Microsoft Flow、Intune
-- 複合現実:Unity、Azure Spatial Anchors、HoloLens
-- 統合現実:Azure IoT Hub、Azure Sphere、Azure Kinect DK
-- 調整現実:IoT cloud-to-device、Azure Digital Twins + HoloLens
+<!-- markdownlint-disable MD033 -->
+
+| カテゴリ | ツール |
+|---|---|
+| モバイル エクスペリエンス | <li> Azure App Service <li> PowerApps <li> Microsoft Flow <li> Intune |
+| 複合現実 | <li> Unity <li> Azure Spatial Anchors <li> HoloLens |
+| Integrated Reality | <li> Azure IoT Hub <li> Azure Sphere <li> Azure Kinect DK |
+| 調整された現実 | <li> IoT クラウドからデバイスへ <li> Azure Digital Twins と HoloLens |
+
+<!--markdownlint-enable MD033 -->
 
 ## <a name="get-started"></a>はじめに
 

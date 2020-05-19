@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e3f2a6156d282e2db6fb8a7206251447f9e48f71
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997248"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219803"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>セキュリティ ベースラインのサンプル ポリシー ステートメント
 
@@ -55,7 +55,7 @@ ms.locfileid: "80997248"
 
 **ポリシー ステートメント:** 保護対象データが含まれているどのサブネットにも、パブリック インターネット経由で、またはデータセンターをまたいで直接アクセスすることはできません。 それらのサブネットへのアクセスは、中間サブネットを介してルーティングされる必要があります。 それらのサブネットへのアクセスはすべて、パケットのスキャンおよびブロック機能を実行できるファイアウォール ソリューション経由で行われる必要があります。
 
-**使用可能な設計オプション:** Azure では、[パブリック インターネットとクラウドベースのネットワークの間に DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) をデプロイすることで、パブリック エンドポイントをセキュリティ保護します。 [Azure Firewall](https://docs.microsoft.com/azure/firewall) のデプロイ、構成、および自動化を検討してください。
+**使用可能な設計オプション:** Azure では、[パブリック インターネットとクラウドベースのネットワークの間に DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) をデプロイすることで、パブリック エンドポイントをセキュリティ保護します。 [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) のデプロイ、構成、および自動化を検討してください。
 
 ## <a name="ddos-protection"></a>DDoS 保護
 
@@ -63,7 +63,7 @@ ms.locfileid: "80997248"
 
 **ポリシー ステートメント:** パブリックにアクセス可能なすべてのネットワーク エンドポイントに、自動化された DDoS リスク軽減メカニズムをデプロイします。 IaaS によってサポートされる一般向け Web サイトは、DDoS なしでインターネットに公開しないでください。
 
-**使用可能な設計オプション:** [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Standard を使用して、DDoS 攻撃による中断を最小限に抑えます。
+**使用可能な設計オプション:** [Azure DDoS Protection Standard](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) を使用して、DDoS 攻撃による中断を最小限に抑えます。
 
 ## <a name="secure-on-premises-connectivity"></a>オンプレミスの接続をセキュリティ保護する
 
@@ -93,7 +93,7 @@ ms.locfileid: "80997248"
 
 手始めに、この記事で説明されているサンプルを使用して、クラウドの導入計画に合致する特定のセキュリティ リスクに対処するポリシーを作成します。
 
-セキュリティ ベースラインに関連する独自のカスタム ポリシー ステートメントを作成するには、[セキュリティ ベースライン テンプレート](./template.md)をダウンロードします。
+独自のカスタム ID ベースライン ポリシー ステートメントの開発を開始するには、[セキュリティ ベースライン規範テンプレート](./template.md)をダウンロードします。
 
 この規範の導入を促進するには、ご使用の環境に最も合う[実践的なガバナンス ガイド](../guides/index.md)を選択します。 その後、設計を変更して、特定の企業ポリシーの決定を組み込みます。
 

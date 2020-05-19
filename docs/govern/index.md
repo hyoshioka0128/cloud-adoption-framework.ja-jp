@@ -3,109 +3,33 @@ title: Azure 向けの Microsoft クラウド導入フレームワークのガ�
 description: Azure のクラウド導入フレームワークを使用して、既存のポリシーを評価し、初期ガバナンス基盤を構築し、ガバナンス ツールを繰り返し追加する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/11/2019
-ms.topic: landing-page
+ms.date: 05/04/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 75b2269c4db348ab6a110309490187ef44b55f6c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37c7b219699d2d70c1f0493fbb146933f8eeee21
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77706933"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218664"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークのガバナンス
 
 クラウドは、ビジネスをサポートするテクノロジの新しいパラダイムを生み出します。 また、これらの新しいパラダイムによって、それらのテクノロジの導入、管理、およびガバナンスの方法も変わります。 無人プロセスで実行される 1 行のコードによって、実質的にデータ センター全体を破壊して再構築できる場合、私たちは従来のアプローチについて見直す必要があります。 これは、特にガバナンスの場合に当てはまります。
 
-## <a name="get-started-with-cloud-governance"></a>クラウド ガバナンスを開始する
-
 クラウド ガバナンスは反復プロセスです。 オンプレミスの IT 環境を管理する既存のポリシーを持つ組織の場合、クラウド ガバナンスによりこれらのポリシーが補完される必要があります。 ただし、オンプレミスとクラウド間の会社のポリシーの統合レベルは、クラウド ガバナンスの成熟度とクラウド内のデジタル資産によって異なります。 クラウド資産が時間の経過とともに変化するにつれて、クラウド ガバナンスのプロセスとポリシーも変化します。 次の演習は、最初のガバナンス基盤の構築を開始するのに役立ちます。
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:disable TODO -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./methodology.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>手法</h3>
-クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立し、最終状態のソリューションについて熟考を開始します。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./benchmark.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>ベンチマーク</h3>
-現状の状態と将来の状態を評価して、フレームワークを適用するためのビジョンを確立します。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./initial-foundation.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>ガバナンスを始めるための基礎</h3>
-小規模で簡単に実装されるガバナンス ツールのセットを使って、ガバナンス体験を始めます。 この最初のガバナンス基盤は、実用最小限の製品 (MVP) と呼ばれます。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./foundation-improvements.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>初期のガバナンス基盤の改善</h3>
-クラウド導入プランの実装全体で、最終状態へと進みながら、ガバナンス コントロールを繰り返し追加して具体的なリスクに対処します。
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[方法論](./methodology.md):クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立し、最終状態のソリューションについて熟考を開始します。                                |
+| ![2](../_images/icons/2.png)     | <br>[ベンチマーク](./benchmark.md): 現状の状態と将来の状態を評価して、フレームワークを適用するためのビジョンを確立します。                                |
+| ![3](../_images/icons/3.png)     | <br>[ガバナンスを始めるための基礎](./initial-foundation.md): 小規模で簡単に実装されるガバナンス ツールのセットを使って、ガバナンス体験を始めます。 この最初のガバナンス基盤は、実用最小限の製品 (MVP) と呼ばれます。                                |
+| ![4](../_images/icons/4.png)      | <br>[初期のガバナンス基盤の改善](./foundation-improvements.md):クラウド導入プランの実装全体で、最終状態へと進みながら、ガバナンス コントロールを繰り返し追加して具体的なリスクに対処します。  |
 
 ## <a name="objective-of-this-content"></a>このコンテンツの目的
 
@@ -122,17 +46,10 @@ ms.locfileid: "77706933"
 
 クラウド アーキテクトは、これらの対象ユーザーをまとめる思想的リーダーおよび進行役の役割を果たします。 このガイドのコレクションの内容は、クラウド アーキテクトが適切な対象ユーザーと適切なコミュニケーションを取り、必要な決定を促すことをサポートするために設計されています。 クラウドによって実現されるビジネスの変革は、ビジネスと IT 全体にわたる意思決定を導くクラウド アーキテクトによって決まります。
 
-**このセクションでのクラウド アーキテクトの特性:** クラウド導入フレームワークの各セクションは、クラウド アーキテクトの役割のさまざまな専門性やバリエーションを表しています。 クラウド導入フレームワークのこのセクションは、技術的リスクの軽減または削減に対する情熱を持つクラウド アーキテクトを対象として設計されています。 一部のクラウド プロバイダーは、これらのスペシャリストを "*クラウド カストディアン*" と呼びます。弊社では、"*クラウド ガーディアン*"、または総称して "*クラウド ガバナンス チーム*" と呼ぶことにします。 実践的な各ガバナンス ガイドの記事では、クラウド ガバナンス チームの構成とロールが時間の経過とともにどのように変化するかを示します。
+**このセクションでのクラウド アーキテクトの特性:** クラウド導入フレームワークの各セクションは、クラウド アーキテクトの役割のさまざまな専門性やバリエーションを表しています。 クラウド導入フレームワークのこのセクションは、技術的リスクの軽減または削減に対する情熱を持つクラウド アーキテクトを対象として設計されています。 一部のクラウド プロバイダーは、これらのスペシャリストを "_クラウド カストディアン_" と呼びます。弊社では、"_クラウド ガーディアン_"、または総称して "_クラウド ガバナンス チーム_" と呼ぶことにします。 実践的な各ガバナンス ガイドの記事では、クラウド ガバナンス チームの構成とロールが時間の経過とともにどのように変化するかを示します。
 
 ## <a name="use-this-guide"></a>このガイドの使用法
 
-このガイドに最初から最後まで従う場合、この内容は、クラウドの実装と並行して堅牢なクラウド ガバナンス戦略を開発するのに役立ちます。 このガイダンスでは、そのような戦略の理論と実装を段階を追って説明します。
+ガバナンスの方法論の内容を隅から隅まで読んでおくと、堅牢なクラウド ガバナンス戦略の開発とクラウドの実装を並行して行うために役立ちます。 このガイダンスでは、この戦略の理論と実装を段階を追って説明します。
 
 Azure 実装の理論とクイック アクセスの速習コースについては、[ガバナンス ガイドの概要](./guides/index.md)に関するページから開始してください。 このガイダンスを使用すると、基本的なことから開始して、クラウド導入作業と並行して、ガバナンスのニーズを段階的に改善することができます。
-
-## <a name="next-steps"></a>次のステップ
-
-クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立します。
-
-> [!div class="nextstepaction"]
-> [メソドロジを理解する](./methodology.md)
