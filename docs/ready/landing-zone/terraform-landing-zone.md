@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a7662d8460581d143b75a8f95aa48bf290d39c2d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 69d1aaf7ff2a5bd3d71cb03fd1149019792c71f1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221758"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401280"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -43,10 +43,10 @@ Terraform のクラウド導入フレームワークのファンデーション 
 | コンポーネント | 担当 |
 |---|---|
 | リソース グループ | ファンデーションに必要なコア リソース グループ |
-| アクティビティ ログ      | サブスクリプションのすべてのアクティビティの監査とアーカイブ: <li> ストレージ アカウント <li> Azure Event Hubs |
+| アクティビティ ログ | サブスクリプションのすべてのアクティビティの監査とアーカイブ: <li> ストレージ アカウント <li> Azure Event Hubs |
 | 診断ログ | すべての操作ログは、特定の日数だけ保持されます。 <li> ストレージ アカウント <li> Event Hubs |
 | Log Analytics | すべての操作ログを格納します。 詳細なアプリケーションのベスト プラクティスのレビューのための一般的なソリューションのデプロイ: <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
-| Azure Security Center | セキュリティ検疫メトリックおよびメールと電話番号に送信されるアラート                                                                                                                                                                                        |
+| Azure Security Center | セキュリティ検疫メトリックおよびメールと電話番号に送信されるアラート |
 
 <!-- markdownlint-enable MD033 -->
 

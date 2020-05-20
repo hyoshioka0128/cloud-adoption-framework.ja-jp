@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6515a690ea0590061cb4b5ea707f7636b380dd10
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 31c8f460f60258a8da6444ae017194a6fd684e43
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220160"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400561"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雑な企業向けのガバナンス ガイド: コスト管理の規範の改善
 
@@ -31,7 +31,7 @@ ms.locfileid: "83220160"
 
 その後、以下に示すように、ガバナンスに影響を与えるいくつかの変化がありました。
 
-- 廃止のフラグが設定された 2 つのデータセンターから 5,000 個の資産が削除されました。 調達と IT セキュリティ チームは現在、残りの物理的な資産をプロビジョニング解除しています。
+- 廃止のフラグが設定された 2 つのデータ センターから 5,000 個の資産が削除されました。 調達と IT セキュリティ チームは現在、残りの物理的な資産をプロビジョニング解除しています。
 - アプリケーション開発チームは、カスタマー エクスペリエンスに大きな影響を与える、複数のクラウドネイティブ アプリケーションをデプロイする CI/CD パイプラインを実装しました。
 - BI チームは、集計、キュレーション、洞察、および予測の各プロセスを作成して、事業運営に目に見える利益をもたらしました。 これらの予測により、独創的な新しい製品やサービスの創出が強化されるようになりました。
 

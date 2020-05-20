@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8e17c53a2a54a212fa312b62b2ff527497583919
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c75b7a17c8c2676688f5221ec0e4d0f2ed0641a5
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230471"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400210"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>作業を開始しましょう。適切な管理によって信頼性を向上させる
 
 どうすれば適切な管理策を適用して信頼性を向上させることができるのでしょうか。 このガイドに従うと、構成、リソース編成、セキュリティ ベースライン、リソース保護の不整合に関連した中断を最小限に抑えることができます。 このガイドの各手順を通じて、運用チームは IT ポートフォリオ全体で信頼性とコストのバランスを取ることができ、また、ガバナンス チームは一貫してそのバランスを確実に適用することができます。 信頼性は、他の役割や機能にも依存します。 この記事では、関係する各チーム間で一致した認識を形成できるよう、そうしたさまざまな関連機能を明らかにしていきます。
@@ -34,7 +32,7 @@ ms.locfileid: "83230471"
 - クラウド戦略チームと協議してビジネス コミットメントを取り決め、高度な運用と回復性の要件に向けた計画を策定します。
 - 大半のワークロードに追加の運用が必要である場合は、管理ベースラインを拡張します。
 - より重要度の高いワークロードをサポートするランディング ゾーンとリソースに高度な運用要件を適用します。
-- [運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で、IT ポートフォリオ全体における運用上の判断を文書化します。
+- [運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で、IT ポートフォリオ全体における運用上の判断を文書化します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -158,7 +156,7 @@ ms.locfileid: "83230471"
 
 - リソースの整合性ポリシーを使用して、運用環境のデプロイの運用準備状況をテストします。
 - リソース整合性の設計ガイダンスと運用の要件に準拠していることを確認します。
-- 高度な運用の要件を[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で文書化します。
+- 高度な運用の要件を[運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で文書化します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 

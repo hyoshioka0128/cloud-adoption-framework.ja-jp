@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 81955582145c9ffa2b63364a1ed2948715cf37d5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a885de58423bea1cef9e2e87ef4d09f4cb6e9363
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230331"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399873"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-build-a-cloud-strategy-team"></a>作業を開始しましょう。クラウド戦略チームを結成する
 
 クラウド導入に向けたあらゆる取り組みは、成功を収めるために、ある程度の戦略を必要とします。 このファースト ステップ ガイドは、専任のチームまたはバーチャル チーム (v チーム) を結成して確かなクラウド戦略を実現するうえで参考となります。 最初に行うべきことは、戦略チームが必要か、それとも既存のチーム メンバーで役割を分担し、クラウド戦略を遂行できるかの判断です。
@@ -184,7 +182,7 @@ ms.locfileid: "83230331"
 **成果物の完遂をサポートするうえでのガイダンス:**
 
 - [増分型の合理化](../../digital-estate/rationalize.md):遅延バインディングの技術的な決定を適切に調整する合理化に対するアジャイルなアプローチです。
-- [合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md): 合理化のさまざまなオプションについて理解します。
+- [合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md):合理化のさまざまなオプションについて理解します。
 
 
 <!-- markdownlint-disable MD033 -->

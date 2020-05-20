@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: be509cff8eb1b7a342310975afe50ef1f66e88bd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ba845420954225e69fb2c4b8ffcffa8a42fec7f7
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223730"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401142"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -226,7 +226,7 @@ Contoso の管理者は、移行前に ContosoDev コレクション データ�
 1. **コレクションをデタッチする。** コレクションの ID データは、コレクションがアタッチされ、オンラインのときは TFS サーバー構成データベース内にあります。 コレクションが TFS サーバーからデタッチされると、その ID データのコピーが作成され、転送のためにコレクションと共にパッケージ化されます。 インポートの ID 部分を実行するには、このデータが必要です。 インポート中に発生した変更をインポートする方法がないため、インポートが完了するまでコレクションをデタッチしたままにすることを推奨されます。
 2. **バックアップを生成する。** 移行プロセスの次の手順は、Azure DevOps Services にインポートできるバックアップを生成することです。 データ層アプリケーション コンポーネント パッケージ (DACPAC) は、データベースの変更を単一のファイルにパッケージ化し、SQL の他のインスタンスに展開することができる SQL Server の機能です。 また、Azure DevOps Services に直接復元することもでき、コレクション データをクラウドに取り込むためのパッケージ化方法として使用されます。 Contoso は SqlPackage.exe ツールを使用して DACPAC を生成します。 このツールは、SQL Server Data Tools に含まれています。
 3. **ストレージにアップロードする。** DACPAC が作成されたら、Azure Storage にアップロードします。 アップロードが完了したら、Shared Access Signature (SAS) を取得し、TFS Migration Tool からストレージにアクセスできるようにします。
-4. **インポート ファイルに入力する。** Contoso は、DACPAC 設定など、インポート ファイルに足りないフィールドに入力します。 初めに、完全な移行の前にすべてが正常に機能していることを確認するため、**dry-run** インポートを実行することを指定します。
+4. **インポート ファイルに入力する。** Contoso は、DACPAC 設定など、インポート ファイルに足りないフィールドに入力します。 初めに、完全な移行の前にすべてが正常に機能していることを確認するため、_dry-run_ インポートを実行することを指定します。
 5. **dry-run インポートを実行します。** dry-run インポートは、コレクションの移行をテストするのに役立ちます。 ドライ ランの保存期間は限られているため、運用環境の移行が実行される前に削除されます。 それらは、設定期間が経過すると、自動的に削除されます。 ドライ ランが削除される時期についての注意は、インポートが完了した後に送信される成功メールに記載されています。 時期を書き留め、それに応じて計画を立てます。
 6. **運用環境の移行を完了する。** dry-run による移行が完了したら、Contoso の管理者は **import.json** ファイルを更新し、インポートを再実行することによって、最終的な移行を実行します。
 

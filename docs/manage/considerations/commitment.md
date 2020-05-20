@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d0f392d58efe65b8199aefeb9dbd554ed0896cae
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0ca1c1804b2c7116ed61e05a10a221b472a2807d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216182"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398757"
 ---
 # <a name="business-commitment-in-cloud-management"></a>クラウド管理におけるビジネス コミットメント
 
@@ -49,7 +49,7 @@ ms.locfileid: "83216182"
 <!-- -->
 
 > [!TIP]
-> [運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理の計画を立てている場合は、これらの前提条件を反映するように運用管理フィールドを更新する必要があります。 これらのフィールドには、_Commitment level_ (コミットメント レベル)、_Composite SLA_ (複合 SLA)、_Monthly cost_ (月額料金) などがあります。 月額料金は、追加された運用管理ツールのコストを月単位で表します。
+> [運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理の計画を立てている場合は、これらの前提条件を反映するように運用管理フィールドを更新する必要があります。 これらのフィールドには、_Commitment level_ (コミットメント レベル)、_Composite SLA_ (複合 SLA)、_Monthly cost_ (月額料金) などがあります。 月額料金は、追加された運用管理ツールのコストを月単位で表します。
 
 運用管理ベースラインは、次の各セクションでの検証の最初の開始点として使用できます。
 
@@ -110,7 +110,7 @@ ms.locfileid: "83216182"
 次の計算では、損失と管理への投資の増加との差について理解を深めるための数式について説明します。 管理の増加コストの計算に関するガイダンスについては、[ワークロードのオートメーション](./workload.md)と[プラットフォームのオートメーション](./platform.md)に関する記事を参照してください。
 
 > [!TIP]
-> [運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理を計画している場合は、各メッセージ交換が反映されるように運用管理のフィールドを更新してください。 これらのフィールドには、_Commitment level_ (コミットメント レベル)、_Composite SLA_ (複合 SLA)、_Monthly cost_ (月額料金) などがあります。 月額料金は、追加された運用管理ツールの月額コストを表します。 これらのフィールドを更新すると、ROI の式と次の各フィールドが更新されます。
+> [運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理を計画している場合は、各メッセージ交換が反映されるように運用管理のフィールドを更新してください。 これらのフィールドには、_Commitment level_ (コミットメント レベル)、_Composite SLA_ (複合 SLA)、_Monthly cost_ (月額料金) などがあります。 月額料金は、追加された運用管理ツールの月額コストを表します。 これらのフィールドを更新すると、ROI の式と次の各フィールドが更新されます。
 
 ### <a name="estimate-outage-hours-per-year"></a>推定停止時間 (年間の時間)
 

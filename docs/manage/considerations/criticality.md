@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2230fe8d8ee2f2c7d5b9a695ec01268e3306bff9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2114b212718adb22b190f854de665e0d59fa50a4
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217406"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398470"
 ---
 # <a name="business-criticality-in-cloud-management"></a>クラウド管理におけるビジネスの重要度
 
@@ -58,7 +58,7 @@ IT ポートフォリオ内の各ワークロードの重要度を理解する�
 
 ## <a name="use-the-template"></a>テンプレートを使用する
 
-[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理を計画している場合は、次の手順が適用されます。
+[運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理を計画している場合は、次の手順が適用されます。
 
 1. ブックの**スケール** タブで、重要度スケールを記録します。
 2. _Example_ または _Clean Template_ の各ワークロードは、_Criticality_ 列の既定の重要度を反映するように更新します。

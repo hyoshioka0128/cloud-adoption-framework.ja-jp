@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 82725e152efc8038d983939b1f690be0574e435b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f1e991a83c79be3e829bce618a50243b74c2c90f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219871"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400716"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -94,8 +94,6 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - [ID ベースライン ツールチェーン](./toolchain.md)を開発環境から運用環境に移行します。
 - アーキテクチャ ガイドラインのドキュメントを更新し、主な利害関係者に配布します。
 - ユーザー導入の促進に役立つ教材やドキュメント、認識の伝達、インセンティブなどのプログラムを開発します。
-
-<!-- docsTest:ignore "Seamless SSO" -->
 
 **潜在的なアクティビティ:**
 

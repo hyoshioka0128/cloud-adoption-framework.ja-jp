@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 30c25159dc677c5220c80697c282304f73a59a9b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: db90e2ca82164d645605e49dc288c21b610e12b9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218800"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399536"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -87,7 +87,7 @@ _図 2:Azure AD グローバル管理者は必要なユーザー アカウント
 ![所有者ロールを持つサブスクリプション サービス管理者](../../_images/govern/design/governance-2-1.png)
 _図 3:組み込み所有者ロールが割り当てられたサービス管理者が含まれるサブスクリプション。_
 
-<!-- docsTest:ignore "resource group A" "resource group B" "resource groups A and B" "workload owner A" "workload owner B" -->
+<!-- docsTest:ignore "resource group A" "resource groups A and B" "workload owner A" -->
 
 1. 最初の例の**ワークロード所有者 A** にはサブスクリプション スコープのアクセス許可がありません。つまり、既定では、この所有者にはリソース アクセス管理のアクセス権がありません。 このユーザーは、そのワークロードに対応したリソースを展開して管理する必要があります。 ワークロード所有者は**サービス管理者**に、リソース グループを作成するように要求する必要があります。
     ![ワークロード所有者がリソース グループ A の作成を要求する](../../_images/govern/design/governance-2-2.png)
@@ -168,7 +168,8 @@ _図 7:Azure アカウント所有者は、**サブスクリプション所有�
 
 まずは、最初のオプションについて考えてみましょう。 ここでは、前のセクションで説明したアクセス許可モデルと、1 人のサブスクリプション サービス管理者を使用します。この管理者は、リソース グループを作成し、そのグループに、ユーザーを、組み込み**共同作成者**ロールまたは**閲覧者**ロールと共に追加します。
 
-<!-- docsTest:ignore managedBy hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
+<!-- docsTest:ignore managedBy -->
+<!-- hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
 
 1. デプロイされた最初のリソース グループは、**共有インフラストラクチャ**環境を表します。 **サブスクリプション所有者**アカウントで、`netops-shared-rg` という名前の共有インフラストラクチャ リソースのリソース グループを作成します。
     ![リソース グループの作成](../../_images/govern/design/governance-3-0d.png)

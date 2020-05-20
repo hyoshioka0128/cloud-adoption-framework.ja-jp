@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5a7bfbffa84e7a64221d560b88067caebd311e85
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216590"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400782"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>クラウド管理でのビジネス アラインメントの構築
 
@@ -33,7 +33,7 @@ ms.locfileid: "83216590"
 
 ## <a name="operations-management-workbook"></a>運用管理ブック
 
-用語のアラインメントに関するこの会話が基になった決定内容を記録する助けになるように、GitHub サイトで[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)が提供されています。 このブックでは、SLA またはコストの計算は行われません。 そのような手段を把握し、損失回避の取り組みに対する結果を予測するためにのみ利用できます。
+用語のアラインメントに関するこの会話が基になった決定内容を記録する助けになるように、GitHub サイトで[運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)が提供されています。 このブックでは、SLA またはコストの計算は行われません。 そのような手段を把握し、損失回避の取り組みに対する結果を予測するためにのみ利用できます。
 
 または、ソリューションが既にクラウドにデプロイされている場合は、Azure でこれらの同じワークロードと関連する資産を直接タグ付けできます。
 

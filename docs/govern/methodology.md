@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0e26e7ee1c4bc534ea461de2293fe69b75de1360
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d1cbf6c608bbea2374cb6325e755fc9367aedc03
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218392"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399608"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>クラウドのガバナンス手法
 
@@ -25,7 +25,7 @@ ms.locfileid: "83218392"
 
 目的地のない旅は単なる放浪です。 最初の一歩を踏み出す前に、終了状態の大まかなビジョンを確立することが重要です。 次のインフォグラフィックでは、終了状態の枠組みを提供します。 それは作業の開始点ではなく、可能性のある目標を示します。
 
-![クラウド導入フレームワークのガバナンス モデルのインフォグラフィック](../_images/operational-transformation-govern-highres.png)
+![クラウド導入フレームワークのガバナンス モデルのインフォグラフィック](../_images/operational-transformation-govern-large.png)
 
 クラウド導入フレームワークのガバナンス モデルでは、体験の過程での重要な主要領域が識別されます。 各領域は、企業がクラウド サービスを導入することで対処する必要のある異なる種類のリスクに関係しています。 このフレームワーク内では、ガバナンス ガイドによってクラウド ガバナンス チームに必要なアクションが示されます。 その過程で、クラウド導入フレームワークのガバナンス モデルの各原則がさらに詳しく説明されます。 だいたい次のような内容です。
 

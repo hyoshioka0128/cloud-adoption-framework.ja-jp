@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d3d0afed921d11b16b1d33de311df1144aea6d4a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 93aec136df947f9df94d188dffce79f037cf8fed
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221945"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621555"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -172,7 +172,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 リソース グループにタグを適用するには:
 
-1. [リソース グループ](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups)に移動します。
+1. [リソース グループ](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)に移動します。
 1. リソース グループを選択します。
 1. **[タグの割り当て]** を選択します。
 1. 新しい名前と値を入力するか、ドロップダウン リストを使用して既存の名前と値を選択します。

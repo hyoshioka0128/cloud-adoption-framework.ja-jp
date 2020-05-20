@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 6052e119cc2bf2ce078bfdc3df6613ff665e503f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 845574b9b7e045869561f43745a23ec104893d1f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230451"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400197"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>作業を開始しましょう。ポートフォリオ全体で一貫したパフォーマンスを確保する
 
 ワークロードのポートフォリオ全体で十分なパフォーマンスを確保するにはどうすればよいのでしょうか。 このガイドは、企業全体のパフォーマンスを維持するためのプロセスを確立するのに役立ちます。 ここに記載されている手順を参考に、運用チームは、すべてのワークロードで一貫したパフォーマンスの期待値を設定できます。 パフォーマンスは、他の役割や機能にも依存します。 この記事では、関係する各チーム間で一致した認識を形成できるよう、そうした関連機能を明らかにしていきます。
@@ -32,7 +30,7 @@ ms.locfileid: "83230451"
 
 - パフォーマンスの期待値からの逸脱に関連した自動修復タスクを含むように管理ベースラインを改善します。
 - パフォーマンスの要件を満たすためにワークロード固有のデータ パターンやアーキテクチャの変更が必要である場合、ワークロード固有の運用によって、より優れたパフォーマンス管理が可能となります。
-- IT ポートフォリオ全体の運用に関する判断を[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で文書化します。特に、[Baseline]\(ベースライン\) タブの [Operational Compliance]\(運用のコンプライアンス\) セクションで、パフォーマンスの自動化に関する判断を中心に入力します。
+- IT ポートフォリオ全体の運用に関する判断を[運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で文書化します。特に、[Baseline]\(ベースライン\) タブの [Operational Compliance]\(運用のコンプライアンス\) セクションで、パフォーマンスの自動化に関する判断を中心に入力します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -147,7 +145,7 @@ ms.locfileid: "83230451"
 
 - リソースの整合性ポリシーを使用して、運用環境のデプロイの運用準備状況をテストします。
 - リソース整合性の設計ガイダンスと運用の要件に準拠していることを確認します。
-- 高度な運用の要件を[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で文書化します。
+- 高度な運用の要件を[運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で文書化します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 

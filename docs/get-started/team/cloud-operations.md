@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: c3bb04bd49a055e71a7572cd8c144a45f5da2efd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: af65cff02d7c3768bf5fca554334923cf2172937
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230343"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400160"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>作業を開始しましょう。クラウド運用チームの構築
 
@@ -55,7 +55,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 - クラウド戦略チームのメンバーと共に会社の[戦略と計画テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を確認して、動機、メトリック、戦略を理解します。
 - クラウド導入チームのメンバーと共に会社の[クラウド導入計画テンプレート](../../plan/template.md)を確認して、タイムラインと優先順位を理解します。
-- [運用管理のブック](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx)の開発を開始して、ビジネスで確立されている運用の要件とコミットメントを理解します。
+- [運用管理のブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)の開発を開始して、ビジネスで確立されている運用の要件とコミットメントを理解します。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -128,7 +128,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 **成果物の完成をサポートするためのガイダンス:**
 
 - クラウド上で[ビジネス アラインメント](../../manage/considerations/business-alignment.md)を構築します。
-- [運用管理のブック](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx)で、ポートフォリオと運用に期待される内容を文書化します。
+- [運用管理のブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で、ポートフォリオと運用に期待される内容を文書化します。
 
 **説明責任チーム:**
 

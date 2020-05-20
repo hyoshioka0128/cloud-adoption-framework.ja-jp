@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 22956507d801163b2ee75f074f48bbd955546c11
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d14e37cad9d6d1e63200a9401cfaac2ca2e07655
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230527"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400708"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-manage-cloud-costs"></a>作業を開始しましょう。クラウド コストを管理する
 
 クラウド ガバナンスの中核となる規範の 1 つは、コスト管理です。 コスト管理の規範では、予算の確定、コスト割り当てパターンの監視、IT ポートフォリオ全体でのクラウド支出行動を改善するための制御の実装に重点を置きます。 ただし、エンタープライズ コストの最適化では、コストを最小限に抑え、スケーリング、パフォーマンス、セキュリティ、信頼性に対する要求のバランスを取るために、他にも多くの役割や機能が関係します。 この記事では、関係する各チーム間の調整に役立つように、これらのさまざまなサポート機能の位置づけを入門ガイドとしてまとめています。
@@ -108,7 +106,7 @@ ms.locfileid: "83230527"
 - [インベントリの収集](../digital-estate/inventory.md)。 導入前に、デジタル資産を分析するためのデータ ソースを確立します。
 - [ベスト プラクティス:Azure Migrate](../plan/contoso-migration-assessment.md)。 Azure Migrate を使用してインベントリを収集します。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization)。 段階的な合理化では、予算を作成するために定量分析でクラウドの候補を特定します。
-- [コスト モデルと予測モデルの調整](../digital-estate/calculate.md)。 Azure Cost Management を使用して、[予算を作成](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コスト モデルと予測モデルを調整します。
+- [コスト モデルと予測モデルの調整](../digital-estate/calculate.md)。 Azure Cost Management を使用して、[予算を作成](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コスト モデルと予測モデルを対応付けます。
 - [クラウド導入計画の作成](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 実用的なワークロード、資産、タイムラインの詳細を含む計画を作成します。 この計画は、一定期間にわたる支出 (またはコスト予測) の基礎となります。 "_一定期間にわたる支出_" は、ガバナンスのコスト管理の規範内で、すべての実施可能な最適化分析のための最初のベースラインになります。
 
 <!-- markdownlint-disable MD033 -->

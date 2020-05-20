@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 4db3e7b94d370ebc50fa96c92e019ca9b2839497
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bb7ff19f7def1d41fa8a205667345ae0673503e4
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224206"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399407"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>クラウド ガバナンスのための企業ポリシーを定義する
 
@@ -24,7 +24,7 @@ ms.locfileid: "83224206"
 
 従来のガバナンスと斬新的なガバナンスでは、企業ポリシーによって、ガバナンスの実用的な定義を作成します。 ほとんどの IT ガバナンス アクションでは、企業ポリシーの監視、適用、運用、および自動化を行うテクノロジを実装するように努力しています。 クラウド ガバナンスも同様の概念に基づいています。
 
-![コーポレート ガバナンスとガバナンスの規範](../../_images/operational-transformation-govern-highres.png)
+![コーポレート ガバナンスとガバナンスの規範](../../_images/operational-transformation-govern-large.png)
 
 "_図 1:コーポレート ガバナンスとガバナンスの規範_
 

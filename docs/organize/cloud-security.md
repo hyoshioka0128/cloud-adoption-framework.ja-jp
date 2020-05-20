@@ -7,14 +7,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 344931adc74456f8253cc3e53dfe034f8c071f52
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6ab95bab83c7683628c0ba4a0e332d8aba4b4034
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230683"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401269"
 ---
-# <a name="functions-of-a-cloud-security-team"></a>クラウド セキュリティ チームの機能
+<!-- cSpell:ignore MarkSimos -->
+
+# <a name="cloud-security-functions"></a>クラウド セキュリティ機能
 
 この記事では、企業で情報セキュリティ リスクを管理するために必要な組織の機能の概要について説明します。 これらの組織機能により、サイバーセキュリティ システム全体の人間の部分が形成されます。 カルチャ、予算、利用可能なリソースなどのさまざまな要因に応じて、各機能は 1 人以上のユーザーによって実行される場合があり、各ユーザーが 1 つまたは複数の機能を実行する場合があります。
 
@@ -23,6 +25,8 @@ ms.locfileid: "83230683"
 ![エンタープライズ セキュリティ チームの機能のビュー](../_images/security/enterprise-security-team.png)
 
 **セキュリティはチーム スポーツである:** セキュリティ チームのメンバーは、お互いを、同じ敵対者に対して防御するセキュリティチーム全体の一部、組織全体の一部、および大規模なセキュリティ コミュニティの一部として認識することが重要です。 この包括的なビューにより、チームは一般的な作業を行うことができます。 チームは役割と責任の発展中に検出された計画外のギャップと重複を処理するため、これは特に重要なことです。
+
+<!-- cSpell:ignore apsec -->
 
 ## <a name="security-functions"></a>セキュリティ機能
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 835614ca30fc4fc5ca3e617e920f46aa4039cd8b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3851fbc2634f98ce7e993be5cca14d89f523abf1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220364"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400622"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>デプロイ加速規範の改良
 
@@ -25,7 +25,7 @@ ms.locfileid: "83220364"
 
 "_図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。_
 
-1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、漸進的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、ID ベースライン規範を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
+1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、段階的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、ID ベースライン規範を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
 
 > [!CAUTION]
 > この記事で概要を説明する最小限のアクティビティと潜在的なアクティビティのどちらも、特定の企業ポリシーやサードパーティのコンプライアンス要件には整合していません。 このガイダンスは、両方の要件とクラウド ガバナンス モデルの整合に導く会話の促進に役立つように設計されています。
@@ -88,6 +88,8 @@ ms.locfileid: "83220364"
 - デプロイ後のメトリックについて報告し、利害関係者に配布します。
 - 将来の導入プロセスのガイドとなるようにアーキテクチャ ガイドラインを改訂します。
 - 影響を受ける人物とチームとのやり取りを続け、トレーニングを定期的に実施して、アーキテクチャ ガイドラインへの順守が継続されるようにします。
+
+<!-- docsTest:ignore "desired state configuration" -->
 
 **潜在的なアクティビティ:**
 

@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.openlocfilehash: 828ab41080e4742fb633bb30467dda4bd4e3c535
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 686bac552a1c91efd7bbfede22221a0e61b6bcfa
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221962"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401247"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="cloud-strategy-functions"></a>クラウド戦略の職務
 
 クラウド戦略チームは、動機とビジネスの成果を定義し、ビジネスの優先順位とクラウド導入の取り組みの整合性を検証して維持します。 定義されたクラウド戦略チームが存在しない場合には、技術的な活動をビジネス成果に合わせるための職能をだれかが提供する必要があります。 その同じ担当者またはグループが、プロジェクト全体の変更管理も行います。

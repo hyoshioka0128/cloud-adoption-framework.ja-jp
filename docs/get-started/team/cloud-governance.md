@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 5b1d1cb9213b40242e95af60bead9ef3a919054a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ac6696cf71d43fb8cae3ec5d7e8fe455cf18d989
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230383"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400175"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-build-a-cloud-governance-team"></a>作業を開始しましょう。クラウド ガバナンス チームを構築する
 
 クラウド ガバナンス チームは、リスクとリスクの許容範囲が適切に評価され、管理されるようにします。 このチームにより、ビジネスで許容できないリスクが確実に正しく特定されます。 このチームのメンバーは、リスクを企業の管理ポリシーに転換します。
@@ -55,7 +53,7 @@ ms.locfileid: "83230383"
 
 - クラウド戦略チームのメンバーと共に会社の[戦略と計画テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を確認して、動機、メトリック、戦略を把握します。
 - クラウド導入チームのメンバーと共に会社の[クラウド導入計画テンプレート](../../plan/template.md)を確認して、タイムラインと優先順位を把握します。
-- 運用チームの[運用管理ワークブック](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx)を確認して、ビジネスで確立されている運用要件とコミットメントを把握します。
+- 運用チームの[運用管理ワークブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を確認して、ビジネスで確立されている運用要件とコミットメントを把握します。
 
 <!-- markdownlint-disable MD033 -->
 <br>

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7000f40ebfedb6f5285f3e9148c7f07ebbc17ab5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 71aab771fbfe5b0b0f63750dbf2fc97327dd8436
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218528"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399757"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -39,7 +39,7 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 
 **Azure AD パススルー認証:** 1 つ以上のオンプレミス サーバーで実行されているソフトウェア エージェントを使用して、Azure AD 認証サービスに永続的なパスワード検証を提供します。
 
-<!-- docsTest:ignore "pass-through authentication method" -->
+<!-- docsTest:ignore "the pass-through authentication method" -->
 
 > [!NOTE]
 > オンプレミスのユーザー アカウントの状態、パスワード ポリシー、およびサインイン時間をすぐに適用するセキュリティ要件のある企業では、パススルー認証方法を検討してください。

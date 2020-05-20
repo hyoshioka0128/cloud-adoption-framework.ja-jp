@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 39e5feba4e0d214a86767bf6a2152ae1887dc383
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 007a2219a65147e1682de5d1e0a4ae29251d2153
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230583"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400006"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-design-and-configuration"></a>作業を開始しましょう。設計と構成
 
 環境の設計と構成は、移行またはイノベーションに重点を置く導入作業にとって最も一般的な阻害要素です。 長期的な導入計画をサポートする設計を迅速に実装することが困難な場合があります。 この記事では、一般的な阻害要素を克服し、導入作業を促進するためのアプローチと一連の手順を説明します。

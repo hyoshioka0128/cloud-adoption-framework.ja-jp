@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: c27ab20e703ae8ef37fcfba1a2d3f4585d2832da
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 137ab71429b6f827ee0f01154ea372784327e964
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219395"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400923"
 ---
-<!-- docsTest:disable -->
+<!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
 
 # <a name="the-virtual-datacenter-a-network-perspective"></a>仮想データセンター:ネットワーク パースペクティブ
@@ -430,7 +430,7 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 
 Security | その他の Azure サービス | |
 |-|-|-|
-| [Azure Firewall][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway の WAF][AppGWWAF] <br> [Front Door の WAF][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Azure ストレージ][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Event Hubs][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
+| [Azure Firewall][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway の WAF][AppGWWAF] <br> [Front Door の WAF][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Azure ストレージ][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Azure Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Event Hubs][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
 
 <!-- markdownlint-enable MD033 -->
 

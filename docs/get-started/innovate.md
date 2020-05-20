@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a49e52f94b2c9b84afd4e00402a4307fac21923b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 97da5f902fb195a4390b33ef5b8eed2f12ac4a94
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230535"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621190"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>作業を開始しましょう。クラウドで新しい製品とサービスのイノベーションを促進する
 
 クラウドで新しい製品やサービスを作成するには、移行とは異なるアプローチが必要です。 クラウド導入フレームワークにおけるイノベーションの方法論では、新しい製品とサービスの開発をガイドするアプローチが確立されます。
@@ -31,6 +29,8 @@ ms.locfileid: "83230535"
 **成果物:**
 
 - [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を使用して、動機および目標となるビジネス成果を記録します。
+
+<!-- docsTest:ignore "Get started: Accelerate migration" -->
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -149,13 +149,13 @@ ms.locfileid: "83230535"
 **成果物:**
 
 - [Azure Architecture Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) に必要事項を記入して、さまざまなアーキテクチャと運用の意思決定を評価します。
-- 高度な運用が必要であれば、[運用管理ブック](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を調整して反映します。
+- 高度な運用が必要であれば、[運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を調整して反映します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
 - [管理ベースラインの展開](../manage/best-practices.md):クラウド導入フレームワークのこのセクションでは、クラウドでの運用管理へのさまざまな移行について説明します。
 - [高度な運用についての詳細を把握する](../manage/design-principles.md): 管理ベースラインの範囲を超える運用方法を紹介します。
-- 実際の運用ニーズに対応するために高度な運用が要求される場合、[ビジネス コミットメント](https://docs.microsoft.com/manage/considerations/business-alignment)を評価して、両方のチームに対する運用上の責任を明らかにします。
+- 実際の運用ニーズに対応するために高度な運用が要求される場合、[ビジネス コミットメント](../manage/considerations/business-alignment.md)を評価して、両方のチームに対する運用上の責任を明らかにします。
 
 <!-- markdownlint-disable MD033 -->
 <br>

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33aaab94c1f6758f6b77be62ab7a70ed2f6bc1ee
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223832"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400804"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -87,7 +87,7 @@ Azure Monitor には、他の監視プラットフォームや、ServiceNow な�
 VM に対する Azure Monitor | 正常性基準は、メトリック ストアに書き込まれるメトリックです。 | 正常性状態が正常から異常に変化すると、アラートが生成されます。 このアラートは、SMS またはメール通知を送信するように構成されたアクション グループのみをサポートします。 |
 | | マップおよびゲスト オペレーティング システムのパフォーマンス ログ データはログ ストアに書き込まれます。 | ログ クエリ アラートを作成します。 |
 
-<!-- docsTest:ignore "speed driven" -->
+<!-- docsTest:ignore "speed driven by cost" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>コストによる最高速度
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7e5512cba033adca5c3e88be265d45b5f8bc8f3c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215570"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621419"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -22,9 +22,9 @@ ms.locfileid: "83215570"
 
 _ハブ アンド スポーク_は、一般的な通信またはセキュリティ要件をより効率的に管理するためのネットワーク モデルです。 Azure サブスクリプションの制限の回避にも役立ちます。 このモデルでは、次の懸念事項に対処します。
 
-- **コストの削減と管理の効率**。 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は過剰なリソースと管理作業を最小限にすることができます。
-- **サブスクリプションの制限の克服**。 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)に関するページを参照してください。
-- **懸念事項の分離**。 中央の IT チームとワークロード チームの間で個々のワークロードをデプロイすることができます。
+- **コストの削減と管理の効率。** 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は過剰なリソースと管理作業を最小限にすることができます。
+- **サブスクリプションの制限の克服。** 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)に関するページを参照してください。
+- **懸念事項の分離。** 中央の IT チームとワークロード チームの間で個々のワークロードをデプロイすることができます。
 
 小さなクラウド資産は、このモデルによって追加で提供される構造と機能の恩恵を受けない場合があります。 しかし、大規模なクラウド導入作業で、上記のいずれかの懸念事項が 1 つでもあれば、ハブおよびスポーク ネットワーク アーキテクチャの実装を検討してください。
 
