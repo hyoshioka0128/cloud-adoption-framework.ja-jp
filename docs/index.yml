@@ -11,12 +11,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 04/20/2020
-  ms.openlocfilehash: 2214466178729bcf6cb0e6ddd02a22d036039004
-  ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+  ms.openlocfilehash: 2c792541e959b365825acc4d5ced11f2542f4aa3
+  ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/12/2020
-  ms.locfileid: "83228305"
+  ms.lasthandoff: 05/19/2020
+  ms.locfileid: "83620599"
 highlightedContent:
   items:
   - title: クラウド導入作業に着手する
@@ -67,7 +67,7 @@ productDirectory:
     - url: ./plan/suggested-skills.md
       text: スキルの準備計画
     - url: ./plan/template.md
-      text: クラウド導入計画の DevOps
+      text: DevOps のクラウド導入計画
   - title: Ready
     imageSrc: ./_images/caf-ready.png
     links:
@@ -120,7 +120,7 @@ productDirectory:
     - url: ./manage/considerations/business-alignment.md
       text: ビジネス コミットメント
     - url: ./manage/best-practices.md
-      text: ベースラインを展開する
+      text: ベースラインの展開
     - url: ./manage/design-principles.md
       text: 設計原則を評価する
   - title: 整理
@@ -172,7 +172,7 @@ conceptualContent:
 additionalContent:
   sections:
   - title: サポートを検索する
-    summary: クラウド導入作業に障害物がある場合、それを取り除くのに役立つリソースが用意されています。
+    summary: クラウド導入作業を妨げるものがある場合、それを取り除くのに役立つリソースが用意されています。
     items:
     - title: FastTrack for Azure
       summary: Microsoft のエンジニアから支援を受ける

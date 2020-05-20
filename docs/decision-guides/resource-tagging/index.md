@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 638f8dad1d7f284104765b28fe53561d98e02b56
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222761"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399819"
 ---
-<!--docsTest:disable - TODO -->
-
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
@@ -75,15 +73,17 @@ ms.locfileid: "83222761"
 次に示す一般的なタグ付けパターンは、タグ付けを使用してクラウド資産を整理する方法の例を示しています。 これらのパターンは、1 つだけ使用する必要はなく、いくつかを同時に使用でき、会社のニーズに基づいて複数の方法で資産を整理できます。
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:disable -->
 
 | タグの種類 | 例 | 説明 |
 |-----|-----|-----|
-| 機能 | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します |
-| 分類 | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | 使用方法および適用されるポリシーによって、リソースを分類します |
-| 会計 | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | 課金を目的として、組織内の特定のグループにリソースを関連付けることができます |
-| パートナーシップ | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | リソースに関連のある、またはそれ以外でリソースによって影響を受けるユーザー (IT 外) に関する情報を提供します |
-| 目的 | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | 投資に関する決定のサポートを向上させるため、リソースをビジネス機能と一致させます |
+| 機能 | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します。 |
+| 分類 | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | 使用方法および適用されるポリシーによって、リソースを分類します。 |
+| 会計 | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | 課金を目的として、組織内の特定のグループにリソースを関連付けることができます。 |
+| パートナーシップ | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | リソースに関連のある、またはそれ以外でリソースによって影響を受けるユーザー (IT 外) に関する情報を提供します。 |
+| 目的 | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | 投資に関する決定のサポートを向上させるため、リソースをビジネス機能と一致させます。 |
 
+<!-- docsTest:enable -->
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="learn-more"></a>詳細情報
