@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3cdc9b294fddad6e7d77fb8a3229a372f24ca69c
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: b5792eb9fbff305bde35a795d062e7c8586a5811
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400305"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621365"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -24,10 +24,10 @@ ms.locfileid: "83400305"
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png)     | [最初のワークロードを移行する](./azure-migration-guide/index.md):「Azure 移行ガイド」を使用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。                                |
-| <br> ![2](../_images/icons/2.png)     | [移行シナリオ](./azure-best-practices/index.md):追加の移行ツールとアプローチを使用して、その他の移行シナリオに対処します。                                |
-| <br> ![3](../_images/icons/3.png)     | [ベスト プラクティス](./azure-best-practices/index.md):一貫したベスト プラクティスの適用によって、移行の一般的なニーズに対処します。                                |
-| <br> ![4](../_images/icons/4.png)      | [プロセス改善](./migration-considerations/index.md):移行はプロセス負荷の高い行為です。 移行作業の増加に応じて、これらのプロセス改善を使用して、移行のさまざまな側面を評価し、成熟させてください。                        |
+| <br> ![1](../_images/icons/1.png) | <br> [最初のワークロードを移行する](./azure-migration-guide/index.md):「Azure 移行ガイド」を使用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。                                |
+| <br> ![2](../_images/icons/2.png) | <br> [移行シナリオ](./azure-best-practices/index.md):追加の移行ツールとアプローチを使用して、その他の移行シナリオに対処します。                                |
+| <br> ![3](../_images/icons/3.png) | <br> [ベスト プラクティス](./azure-best-practices/index.md):一貫したベスト プラクティスの適用によって、移行の一般的なニーズに対処します。                                |
+| <br> ![4](../_images/icons/4.png) | <br> [プロセス改善](./migration-considerations/index.md):移行はプロセス負荷の高い行為です。 移行作業の増加に応じて、これらのプロセス改善を使用して、移行のさまざまな側面を評価し、成熟させてください。                        |
 
 <!-- markdownlint-enable MD033 -->
 

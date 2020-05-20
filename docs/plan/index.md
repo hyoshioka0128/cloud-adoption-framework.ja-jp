@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: ad46a2a97a1231906e76e2ca0d9f2d86c13a50bf
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 6686f90a860cbf2ce5042833cec7e928df2b1099
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400877"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621735"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -26,9 +26,9 @@ ms.locfileid: "83400877"
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png)     | [デジタル資産](../digital-estate/rationalize.md):動機やビジネス成果に合わせた想定に基づき、デジタル資産の目録を作成し、合理化します。                                |
-| <br> ![2](../_images/icons/2.png)     | [初期の組織配置](./initial-org-alignment.md):導入計画を支援する最初の編成調整を計画します。                                |
-| <br> ![3](../_images/icons/3.png)     | [スキルの準備計画](./adapt-roles-skills-processes.md):スキルの準備不足に対処するための計画を立てる                                |
-| <br> ![4](../_images/icons/4.png)      | [クラウド導入計画](./plan-intro.md):デジタル資産、スキル、組織をまたいで変更を管理するクラウド導入計画を作成します。                        |
+| <br> ![1](../_images/icons/1.png) | <br> [デジタル資産](../digital-estate/rationalize.md):動機やビジネス成果に合わせた想定に基づき、デジタル資産の目録を作成し、合理化します。                                |
+| <br> ![2](../_images/icons/2.png) | <br> [初期の組織配置](./initial-org-alignment.md):導入計画を支援する最初の編成調整を計画します。                                |
+| <br> ![3](../_images/icons/3.png) | <br> [スキルの準備計画](./adapt-roles-skills-processes.md):スキルの準備不足に対処するための計画を立てる                                |
+| <br> ![4](../_images/icons/4.png) | <br> [クラウド導入計画](./plan-intro.md):デジタル資産、スキル、組織をまたいで変更を管理するクラウド導入計画を作成します。                        |
 
 [クラウド導入フレームワークの戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)をダウンロードし、クラウド導入戦略を構築しながら各演習の成果を記録します。 [クラウド合理化の 5 R](../digital-estate/5-rs-of-rationalization.md) について学習して、クラウド導入計画の立案に役立てます。

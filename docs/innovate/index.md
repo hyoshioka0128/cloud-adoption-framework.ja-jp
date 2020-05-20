@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e2bc8643ce1af2493d5a81477a81cf1c0ea9f4f8
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 0a55d829f5881fc8b39f550e2c0fdb5073373780
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398838"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621352"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウドのイノベーション
 
@@ -26,10 +26,10 @@ ms.locfileid: "83398838"
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png)     | [事業価値における合意](./business-value.md):技術的なソリューションを決定する前に、新しいイノベーションによってビジネス価値がどのように促進されるかを特定します。 その価値を自分のクラウド戦略に対応付けます。 この段階的な手法では、ビジネス価値は仮定される顧客ニーズで表されます。                                |
-| <br> ![2](../_images/icons/2.png)     | [Azure イノベーション ガイド](./innovation-guide/index.md):Azure には、革新的なソリューションのデプロイを加速させることができるクラウド ツールが用意されています。 仮説によっては、ツールのさまざまな組み合わせを検討する場合があります。 基本ツールを使用して実用最小限の製品 (MVP) を作成することが推奨されます。                                |
-| <br>![3](../_images/icons/3.png)     | [ベスト プラクティス](./best-practices/index.md):アーキテクチャに関する決定は、ツールチェーンの各ツールのベスト プラクティスに従う必要があります。 このようなガイダンスに準拠することで、ソリューションの開発を加速させ、確かなアーキテクチャの設計に関するリファレンスを提供しやすくなります。                                |
-| <br>![4](../_images/icons/4.png)      | [フィードバック ループ](./considerations/adoption.md): 繰り返すたびに、チームは、開発中のソリューションから顧客と共に学ぶことができます。 顧客による迅速かつ正確なフィードバック ループは、テスト、測定、習得を向上させ、最終的に製品化までの時間による影響を軽減するのに役立ちます。 Azure と GitHub がどのようにフィードバック ループを加速させるか学習できます。                        |
+| <br> ![1](../_images/icons/1.png)     | <br> [事業価値における合意](./business-value.md):技術的なソリューションを決定する前に、新しいイノベーションによってビジネス価値がどのように促進されるかを特定します。 その価値を自分のクラウド戦略に対応付けます。 この段階的な手法では、ビジネス価値は仮定される顧客ニーズで表されます。                                |
+| <br> ![2](../_images/icons/2.png)     | <br> [Azure イノベーション ガイド](./innovation-guide/index.md):Azure には、革新的なソリューションのデプロイを加速させることができるクラウド ツールが用意されています。 仮説によっては、ツールのさまざまな組み合わせを検討する場合があります。 基本ツールを使用して実用最小限の製品 (MVP) を作成することが推奨されます。                                |
+| <br> ![3](../_images/icons/3.png)     | <br> [ベスト プラクティス](./best-practices/index.md):アーキテクチャに関する決定は、ツールチェーンの各ツールのベスト プラクティスに従う必要があります。 このようなガイダンスに準拠することで、ソリューションの開発を加速させ、確かなアーキテクチャの設計に関するリファレンスを提供しやすくなります。                                |
+| <br> ![4](../_images/icons/4.png)     | <br> [フィードバック ループ](./considerations/adoption.md): 繰り返すたびに、チームは、開発中のソリューションから顧客と共に学ぶことができます。 顧客による迅速かつ正確なフィードバック ループは、テスト、測定、習得を向上させ、最終的に製品化までの時間による影響を軽減するのに役立ちます。 Azure と GitHub がどのようにフィードバック ループを加速させるか学習できます。                        |
 
 ## <a name="innovation-summary"></a>イノベーションの概要
 

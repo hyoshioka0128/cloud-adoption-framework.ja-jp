@@ -31,6 +31,8 @@ items:
         href: get-started/innovate.md
       - name: 環境の設計と構成の阻害要素を取り除く
         href: get-started/design-and-configuration.md
+      - name: 顧客の成功を支援する
+        href: get-started/enable.md
       - name: オペレーショナル エクセレンスを実現する
         href: get-started/operational-excellence.md
       - name: クラウド コストを管理する
@@ -41,8 +43,6 @@ items:
         href: get-started/reliability.md
       - name: 一貫したパフォーマンスを確保する
         href: get-started/performance.md
-      - name: 顧客の成功を支援する
-        href: get-started/enable.md
       - name: 組織の足並みを揃える
         href: get-started/org-alignment.md
       - name: クラウド戦略チームを結成する

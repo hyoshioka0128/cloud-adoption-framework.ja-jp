@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e171736ccf993d3e7401350008ab542759b703b
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 92e793e2df89bbb70fe51fd7af9ef8fc1456ffa2
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400796"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620657"
 ---
 # <a name="identity-baseline-discipline-overview"></a>ID ベースライン規範の概要
 
@@ -41,12 +41,12 @@ ID ベースラインは、[クラウド導入フレームワーク ガバナン
 
 | | |
 |---|---|
-| <br> ![テンプレート アイコン](../../_images/govern/process-template.png) ;; <br> [ID ベースライン規範テンプレート](./template.md):ID ベースライン規範を文書化するためのテンプレートをダウンロードします。 |
-| <br> ![リスク アイコン](../../_images/govern/process-risks.png) ;; <br> [ビジネス リスク](./business-risks.md):一般的に ID ベースラインの規範に関係する動機およびリスクを理解できます。 |
-| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) ;; <br> [インジケーターとメトリック](./metrics-tolerance.md):ID ベースラインの規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
-| <br> ![準拠アイコン](../../_images/govern/process-enforce.png) ;; <br> [ポリシー準拠プロセス](./compliance-processes.md):ID ベースラインの規範がポリシーに準拠するようにするための推奨の手順です。 |
-| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) ;; <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
-| <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) ;; <br> [ツールチェーン](./toolchain.md):ID ベースラインの規範をサポートするために実装できる Azure サービスです。 |
+| <br> ![テンプレート アイコン](../../_images/govern/process-template.png)   | <br> [ID ベースライン規範テンプレート](./template.md):ID ベースライン規範を文書化するためのテンプレートをダウンロードします。 |
+| <br> ![リスク アイコン](../../_images/govern/process-risks.png)         | <br> [ビジネス リスク](./business-risks.md):一般的に ID ベースラインの規範に関係する動機およびリスクを理解できます。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png)     | <br> [インジケーターとメトリック](./metrics-tolerance.md):ID ベースラインの規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
+| <br> ![準拠アイコン](../../_images/govern/process-enforce.png)   | <br> [ポリシー準拠プロセス](./compliance-processes.md):ID ベースラインの規範がポリシーに準拠するようにするための推奨の手順です。 |
+| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png)   | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
+| <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):ID ベースラインの規範をサポートするために実装できる Azure サービスです。 |
 
 <!-- markdownlint-enable MD033 -->
 

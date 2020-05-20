@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6db5662a5e470730116310a291ac669192e0f3e4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: dbd60db37d5eb14b877f45c00956fd1869e9a0ba
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400640"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620538"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>デプロイ高速化の規範の概要
 
@@ -41,12 +41,12 @@ ms.locfileid: "83400640"
 
 | | |
 |---|---|
-| <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | [デプロイ高速化規範テンプレート](./template.md):デプロイ高速化の規範を文書化するためのテンプレートをダウンロードします。 |
-| <br> ![リスク アイコン](../../_images/govern/process-risks.png) | [ビジネス リスク](./business-risks.md):一般的にデプロイ高速化の規範に関係する動機およびリスクを理解できます。|
-| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | [インジケーターとメトリック](./metrics-tolerance.md):デプロイ高速化の規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
-| <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | [ポリシー準拠プロセス](./compliance-processes.md):デプロイ高速化の規範でのポリシー準拠を確保するための推奨の手順です。 |
-| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。|
-| <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | [ツールチェーン](./toolchain.md):デプロイ高速化の規範をサポートするために実装できる Azure サービスです。 |
+| <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [デプロイ高速化規範テンプレート](./template.md):デプロイ高速化の規範を文書化するためのテンプレートをダウンロードします。 |
+| <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):一般的にデプロイ高速化の規範に関係する動機およびリスクを理解できます。|
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md):デプロイ高速化の規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
+| <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | <br> [ポリシー準拠プロセス](./compliance-processes.md):デプロイ高速化の規範でのポリシー準拠を確保するための推奨の手順です。 |
+| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。|
+| <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):デプロイ高速化の規範をサポートするために実装できる Azure サービスです。 |
 
 ## <a name="next-steps"></a>次のステップ
 
