@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: cf65664ba6e80fc2df37ec1b3a923ee3c72ae895
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b634f09d11cccf6b1c75fc53441dde79106dadb5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223237"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756381"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -51,7 +51,9 @@ Azure サービスを使用してソリューションのビルドとデプロ�
 > [!TIP]
 > 対話形式で学習したい場合は、Azure portal でこのガイドを参照してください。 Azure portal で [Azure クイック スタート センター](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)にアクセスし、 **[Azure セットアップ ガイド]** を選択して、段階を追った手順に従います。
 
-次のステップ:[設定を簡単に適用できるようにリソースを整理する](./organize-resources.md)
+**次の手順:**
+
+- [設定を簡単に適用できるようにリソースを整理する](./organize-resources.md)
 
 ::: zone-end
 

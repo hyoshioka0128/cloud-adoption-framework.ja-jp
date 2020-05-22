@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7af2b3865a78a72231efed3b3faea21f764d45ff
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1718a1f41ceaa167583681146dbd046dccfb7987
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224070"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756245"
 ---
 ::: zone target="docs"
 
@@ -49,7 +49,9 @@ Azure サービスを使用して革新的ソリューションの開発を始�
 > [!TIP]
 > 対話形式で学習したい場合は、Azure portal でこのガイドを参照してください。 Azure portal で [Azure クイック スタート センター](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)にアクセスし、 **[Azure innovation guide]** を選択して、段階を追った手順に従います。
 
-次のステップ:[共有リポジトリと思考過程管理ツールでイノベーションに備える](./adoption.md)
+**次の手順:**
+
+- [共有リポジトリと思考過程管理ツールでイノベーションに備える](./adoption.md)
 
 ::: zone-end
 
