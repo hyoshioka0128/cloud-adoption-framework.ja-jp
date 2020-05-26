@@ -7,18 +7,16 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3de015250a7fd14e01eb14094e564f51e0425648
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 100d5c327fb6e87f0a355f5305ff83ebb972b020
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230439"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400757"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 <!-- cSpell:ignore CISO passwordless -->
 
-# <a name="get-started-implementing-security-across-the-enterprise-environment"></a>作業を開始しましょう。企業環境全体でのセキュリティの実装
+# <a name="get-started-implement-security-across-the-enterprise-environment"></a>作業を開始しましょう。企業環境全体へのセキュリティの実装
 
 セキュリティを実装することで、企業では、内部と外部の両方の悪意のある意図しない行為による運用への潜在的な影響に対する保護に特に重点を置いて、機密性、整合性、可用性を保証することができます。 このロードマップでは、クラウドでの重要なセキュリティ プラクティスを迅速に確立し、セキュリティをクラウド導入プロセスに統合することによって、サイバーセキュリティ攻撃によるビジネス リスクを軽減または回避する主な手順の概要を示します。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 638f8dad1d7f284104765b28fe53561d98e02b56
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 2865f9a7ceb6d20828e76ad4da3a7ae5ebd81ba3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399819"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753491"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -48,7 +48,7 @@ ms.locfileid: "83399819"
 
 ワークロード、アプリケーション、機能、または環境に基づくタグ付けのように、IT に合わせることに注目したタグ付けでは、資産を監視する複雑さは軽減され、機能と分類に基づく管理の決定が簡単になります。
 
-会計、企業形態、ビジネス上の重要度など、ビジネスに合わせることに注目したタグ付けスキームでは、ビジネスの関心が反映されたタグ付け標準を作成し、そのような標準を長期間維持するために、より多くの時間をかけることが必要になる場合があります。 ただし、このプロセスの結果として作成されるタグ付けシステムでは、ビジネス全体に対する IT 資産のコストと価値を考慮する機能が向上します。 資産の事業価値とその運用コストのこのような関連付けは、より幅広い組織内での IT のコスト センターとしての認識を変える最初のステップの 1 つです。
+会計、企業形態、ビジネス上の重要度など、ビジネスに合わせることに注目したタグ付けスキームでは、ビジネスの関心が反映されたタグ付け標準を作成し、そのような標準を長期間維持するために、より多くの時間をかけることが必要になる場合があります。 この投資によって、ビジネス全体に対する IT 資産のコストと価値の会計を向上させることができるタグ付けシステムが実現します。 資産の事業価値とその運用コストのこのような関連付けは、より幅広い組織内での IT のコスト センターとしての認識を変える最初のステップの 1 つです。
 
 ## <a name="baseline-naming-conventions"></a>ベースラインの名前付け規則
 

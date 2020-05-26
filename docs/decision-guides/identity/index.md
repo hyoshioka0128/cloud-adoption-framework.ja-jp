@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ed4c1c3cf7958f4e96db7eba71fe1f008bc81eb2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3c89c5347032d0dcec68344066ac00028fedb7bd
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222846"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753804"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -27,7 +27,7 @@ ms.locfileid: "83222846"
 
 クラウド環境で ID を管理するためのオプションがいくつかあります。 これらのオプションは、コストと複雑さによって異なります。 クラウド ベースの ID サービスを構築する際の重要な要素は、既存のオンプレミス ID インフラストラクチャで必要とされる統合のレベルです。
 
-Azure Active Directory (Azure AD) は Azure リソースを対象にした基本レベルのアクセス制御と ID 管理を提供します。 ただし、組織のオンプレミスの Active Directory インフラストラクチャに複雑なフォレスト構造やカスタマイズされた組織単位 (OU) があると、クラウドベースのワークロードでは、オンプレミス環境とクラウド環境の間で一貫性のある ID、グループ、およびロールを保持するために、Azure AD とのディレクトリ同期が必要となる場合があります。 さらに、レガシ認証メカニズムに依存しているアプリケーションをサポートするために、クラウドへの Active Directory Domain Services (AD DS) のデプロイが必要になる場合もあります。
+Azure Active Directory (Azure AD) は Azure リソースを対象にした基本レベルのアクセス制御と ID 管理を提供します。 組織のオンプレミスの Active Directory インフラストラクチャに複雑なフォレスト構造やカスタマイズされた組織単位 (OU) があると、クラウドベースのワークロードでは、オンプレミス環境とクラウド環境の間で一貫性のある ID、グループ、およびロールを保持するために、Azure AD とのディレクトリ同期が必要となる場合があります。 さらに、レガシ認証メカニズムに依存しているアプリケーションをサポートするために、クラウドへの Active Directory Domain Services (AD DS) のデプロイが必要になる場合もあります。
 
 クラウドベースの ID 管理は反復的なプロセスです。 最初のデプロイは、クラウドネイティブ ソリューションを使用して、ユーザーと対応するロールの少数のセットで開始できます。 移行が進むにつれて、ディレクトリ同期を使用した ID ソリューションの統合や、クラウドへのデプロイの一部としてのドメイン サービスの追加が必要になる場合があります。 移行プロセスを繰り返すたびに、ID 戦略を見直してください。
 

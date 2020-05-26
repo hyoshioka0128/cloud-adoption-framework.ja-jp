@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 3ac1d332e0671a682eaa9b60a7e8a677fbf2fa37
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d3a0e4c640588dda3e97d7ecc24039869d87dd94
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223373"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621683"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -131,7 +131,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 |--------------------------------|-------------|
 | Azure SQL Database サーバー      | sql-        |
 | Azure SQL データベース             | sqldb-      |
-| Cosmos DB データベース             | cosmos-     |
+| Azure Cosmos DB データベース       | cosmos-     |
 | Azure Cache for Redis インスタンス | redis-      |
 | MySQL データベース                 | mysql-      |
 | PostgreSQL データベース            | psql-       |
@@ -236,7 +236,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 
 | 資産の種類                      | Scope                              | Format                                                      | 例                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| サブスクリプション                    | アカウント/ <br/>Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> corp-shared-001  <li> fin-client-001 |
+| サブスクリプション                    | アカウント/ <br> Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> corp-shared-001 <li> fin-client-001 |
 | Resource group                  | サブスクリプション                       | rg-\<アプリ名またはサービス名\>-\<サブスクリプションの種類\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-acctlookupsvc-share-001  <li> rg-ad-dir-services-shared-001 |
 | API 管理サービス インスタンス | グローバル                             | apim-\<アプリ名またはサービス名\>                                | apim-navigator-prod                                                                                                     |
 
@@ -275,7 +275,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
 | Azure SQL Database サーバー      | グローバル             | sql-\<App Name\>-\<Environment\>       | <li> sql-navigator-prod <li> sql-emissions-dev |
 | Azure SQL データベース             | Azure SQL データベース | sqldb-\<Database Name>-\<Environment\> | <li> sqldb-users-prod <li> sqldb-users-dev |
-| Cosmos DB データベース             | グローバル             | cosmos-\<App Name\>-\<Environment\>    | <li> cosmos-navigator-prod <li> cosmos-emissions-dev |
+| Azure Cosmos DB データベース       | グローバル             | cosmos-\<App Name\>-\<Environment\>    | <li> cosmos-navigator-prod <li> cosmos-emissions-dev |
 | Azure Cache for Redis インスタンス | グローバル             | redis-\<App Name\>-\<Environment\>     | <li> redis-navigator-prod <li> redis-emissions-dev |
 | MySQL データベース                 | グローバル             | mysql-\<App Name\>-\<Environment\>     | <li> mysql-navigator-prod <li> mysql-emissions-dev |
 | PostgreSQL データベース            | グローバル             | psql-\<App Name\>-\<Environment\>      | <li> psql-navigator-prod <li> psql-emissions-dev |

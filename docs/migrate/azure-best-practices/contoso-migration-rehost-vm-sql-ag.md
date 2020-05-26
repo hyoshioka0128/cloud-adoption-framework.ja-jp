@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ff7c476737bed0f079cbebac736506cb6801bfd8
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c356554dbdca417708d7eb9698d9729270d8e981
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223611"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401019"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -203,7 +203,7 @@ Contoso の管理者は、次のようにストレージ アカウントを作�
 
 1. アカウントのわかりやすい名前 (**contosocloudwitness**) を指定します。
 2. LRS の汎用アカウントをデプロイします。
-3. サード リージョン (米国中南部) にアカウントを配置します。 リージョンで障害が発生した際にも使用できるように、プライマリ リージョンやセカンダリ リージョン以外に配置します。
+3. サード リージョンにアカウントを配置します:米国中南部。 リージョンで障害が発生した際にも使用できるように、プライマリ リージョンやセカンダリ リージョン以外に配置します。
 4. インフラストラクチャ リソースを保持するリソース グループ (**ContosoInfraRG**) に配置します。
 
     ![クラウド監視](./media/contoso-migration-rehost-vm-sql-ag/witness-storage.png)

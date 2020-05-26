@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a89fe9d799e866468df02a9a0f6e7d973ed35dd
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 17d1e25c7e87252b51b83d283da5c328a622293f
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620460"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755066"
 ---
 # <a name="cost-management-discipline-overview"></a>Cost Management の規範の概要
 
@@ -22,11 +22,11 @@ Cost Management 規範は、[クラウド導入フレームワーク ガバナ�
 > [!NOTE]
 > Cost Management 規範は、IT 関連コストに関する組織の財務管理に関連する既存のビジネス チーム、会計実務、および手順に代わるものではありません。 この規範の主な目的は、IT 支出に関連したクラウド関連の潜在的なリスクを識別し、クラウド リソースのデプロイとその管理を担当するビジネス チームと IT チームにリスク軽減のガイダンスを提供することです。
 
-このガイドの主な対象読者は、お客様の組織のクラウド アーキテクトおよびお客様のクラウド ガバナンス チームのその他のメンバーです。 ただし、この規範を使用した決定、ポリシー、プロセスには、ビジネス チームと IT チームの該当メンバー (特にクラウド ベースのワークロードの所有、管理、支払いを担当するリーダー) が関与して、議論する必要があります。
+このガイドの主な対象読者は、お客様の組織のクラウド アーキテクトおよびお客様のクラウド ガバナンス チームのその他のメンバーです。 この規範を使用した決定、ポリシー、プロセスには、ビジネス チームと IT チームの該当メンバー (特にクラウド ベースのワークロードの所有、管理、支払いを担当するリーダー) が関与して、議論する必要があります。
 
 ## <a name="policy-statements"></a>ポリシー ステートメント
 
-実践的なポリシー ステートメントと、その結果のアーキテクチャの要件は、Cost Management の規範の基盤となります。 ポリシー ステートメントのサンプルを参照するには、[Cost Management のポリシー ステートメント](./policy-statements.md)に関する記事をご覧ください。 これらのサンプルは、お客様の組織のガバナンス ポリシーの第一歩となります。
+実践的なポリシー ステートメントと、その結果のアーキテクチャの要件は、Cost Management の規範の基盤となります。 [サンプル ポリシー ステートメント](./policy-statements.md)を開始点として使用して、Cost Management のポリシーを定義します。
 
 > [!CAUTION]
 > このサンプル ポリシーは、よくあるお客様の体験をもとにしています。 特定のクラウド ガバナンスの要件にこれらのポリシーが合うように調整するには、次の手順を行い、お客様独自のビジネス ニーズに合うポリシー ステートメントを作成してください。

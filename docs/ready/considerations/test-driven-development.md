@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 055279bccb9c2897b3cc67adf549f5f57c5bf5fc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0eb8597e32f14685e1f1fc69a51673fb1d1d360f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222999"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621820"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>ランディング ゾーン用のテスト駆動開発 (TDD)
 
@@ -59,11 +59,11 @@ ms.locfileid: "83222999"
 - クラウド導入チームは、導入作業中に、サービス構成を変更するために環境に一時的にアクセスすることを希望しています。
 - 単に認識しておくこと: 運用リリースの前に、これらのワークロードには、運用管理の目的で継続的な ID とアクセスを管理するために、企業の ID プロバイダーとの統合が必要になります。 その時点で、クラウド導入チームのアクセス権を取り消す必要があります。
 
-上記の最後のポイントは、機能または受け入れ基準ではありません。 ただし、これは追加の展開が必要であることを示す指標であり、他のチームと一緒に早い段階で調査する必要があります。
+上記の最後のポイントは、機能または受け入れ基準ではありません。 しかし、これは追加の展開が必要であることを示す指標であり、他のチームと一緒に早い段階で調査する必要があります。
 
 ## <a name="additional-examples-of-a-definition-of-done"></a>完了の定義のその他の例
 
-クラウド導入フレームワーク内のガバナンス手法は、ガバナンス チームの自然な成熟度を物語る体験を提供します。 この体験に組み込まれているのは、ポリシー ステートメントの形式での "完了の定義" と "受け入れ基準" のいくつかの例です。
+クラウド導入フレームワーク内の管理方法は、ガバナンス チームの自然な成熟度を物語る体験を提供します。 この体験に組み込まれているのは、ポリシー ステートメントの形式での "完了の定義" と "受け入れ基準" のいくつかの例です。
 
 - [初期のポリシー ステートメント](../../govern/guides/complex/initial-corporate-policy.md#policy-statements): 初期段階の導入要件に基づいた、企業ポリシーの管理と初期の完了の定義の例。
 - [ID の展開](../../govern/guides/complex/identity-baseline-improvement.md#incremental-improvement-of-the-policy-statements): ランディング ゾーンの ID 管理を展開するための要件を満たす企業ポリシーの管理 ("完了の定義") の例。

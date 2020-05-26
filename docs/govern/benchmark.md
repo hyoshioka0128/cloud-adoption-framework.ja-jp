@@ -4,17 +4,16 @@ description: このガバナンス ベンチマーク ツールを使用して�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 08/27/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: d6eb865cb0ab44a76278afb7751684b53a40e0e7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: daad757372250014556de53ddd6cfdacf66b0b7f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708905"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620349"
 ---
 # <a name="assess-your-transformation-journey"></a>変革の過程の評価
 
@@ -22,29 +21,10 @@ ms.locfileid: "77708905"
 
 ## <a name="governance-benchmark-tool"></a>ガバナンス ベンチマーク ツール
 
-ガバナンス ベンチマーク ツールは、現在の状態とビジネス上の優先順位の違いを示すパーソナライズされたレポートや、作業の開始に役立つカスタマイズされたリソースを提供します。
+現在の状態とビジネス上の優先順位の違いを要約するパーソナライズされたレポートと、作業の開始に役立つカスタマイズされたリソースを受け取ります。 現状の状態と将来の状態を評価して、フレームワークを適用するためのビジョンを確立します。
 
-<!-- markdownlint-disable MD033 -->
-
-<ul class="panelContent cardsZ">
-    <li style="display: flex; flex-direction: column;">
-        <a href="https://cafbaseline.com" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-            <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-                <div class="cardPadding" style="display: flex;">
-                    <div class="card">
-                        <div class="cardText">
-                            <h3>ガバナンス ベンチマーク ツール</h3>
-                            <p>現状の状態と将来の状態を評価して、フレームワークを適用するためのビジョンを確立します。</p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+> [!div class="nextstepaction"]
+> [ガバナンス ベンチマーク ツールの使用](https://cafbaseline.com)
 
 ## <a name="next-steps"></a>次のステップ
 

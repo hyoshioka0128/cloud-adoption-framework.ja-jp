@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1b4859d3adbfdedc1ff8d5322398e350ba9d72de
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217185"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400829"
 ---
 # <a name="azure-regions"></a>Azure Azure リージョン
 
@@ -43,9 +43,9 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 堅牢なクラウド デプロイには、Azure リージョンが考慮された、十分に考慮されたネットワークが必要です。 デプロイ先のリージョンについて前述の特性を考慮した後に、ネットワークをデプロイする必要があります。 ネットワークに関する包括的な説明はこの記事では扱いませんが、次の点について考慮する必要があります。
 
-- Azure リージョンはペアで配置されています。 あるリージョンで致命的な障害が発生した場合に備えて、同じ地理的境界内の別のリージョンがペア リージョンとして指定されています。 プライマリとセカンダリの回復性戦略として、ペア リージョンへの配置を検討することをお勧めします。 Azure ブラジルは注意が必要な例外であり、ペア リージョンが米国中南部です。 詳細については、「[Azure のペアになっているリージョン](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)」をご覧ください。
+- Azure リージョンはペアで配置されています。 リージョンで致命的な障害が発生した場合に備えて、同じ地理的境界内の別のリージョンがペア リージョンとして指定されています。 回復性の一次的および二次的戦略として、ペア リージョンに配置することを検討してください。 これの典型的な例外は、ペア リージョンが米国中南部のブラジル南部です。 詳細については、「[Azure のペアになっているリージョン](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)」をご覧ください。
 
-  - Azure Storage は [geo 冗長ストレージ (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) をサポートしています。これは、データの 3 つのコピーがプライマリ リージョンに格納され、3 つの追加コピーがペア リージョンに格納されることを意味します。 GRS のストレージ ペアリングを変更することはできません。
+  - Azure Storage は [geo 冗長ストレージ (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) をサポートしています。これでは、お使いのデータのコピーが 3 つご自分のプライマリ リージョンに格納され、ペア リージョンにも 3 つ追加で格納されます。 GRS のストレージ ペアリングを変更することはできません。
   - Azure Storage GRS に依存するサービスでは、このペア リージョンの機能を利用できます。 そのためには、それをサポートするようにアプリケーションとネットワークを配置する必要があります。
   - リージョンの回復性のニーズに対応するために GRS を使用する予定がない場合は、セカンダリとしてペアになっているリージョンを使用_しない_ことをお勧めします。 リージョンで障害が発生した場合、リソースの移行時に、ペア リージョンのリソースに大きな負荷がかかります。 別のサイトに回復して、このような負荷を回避することで、回復時の速度を向上させることができます。
   > [!WARNING]
@@ -57,7 +57,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 - Azure 内の多くの PaaS サービスでは、[サービス エンドポイント](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)や[プライベート リンク](https://docs.microsoft.com/azure/private-link/private-link-overview)がサポートされています。 これらのソリューションはいずれも、リージョンの回復性、移行、ガバナンスを考慮するときに、ネットワークに関する考慮事項に大きく影響します。
 
-- 多くの PaaS サービスは、独自のリージョンの回復性ソリューションに依存しています。 たとえば、Azure SQL Database と Cosmos DB はいずれも、_x_ 個の追加リージョンに簡単にレプリケートできます。 一部のサービスには Azure DNS のようなリージョンの依存関係がありません。 導入プロセスで使用するサービスを検討する際には、各 Azure サービスで必要となる可能性があるフェールオーバー機能と復旧手順を明確に理解しておきます。
+- 多くの PaaS サービスは、独自のリージョンの回復性ソリューションに依存しています。 たとえば、Azure SQL Database と Azure Cosmos DB のいずれからも、簡単に _x_ 個の追加リージョンにレプリケートできます。 一部のサービスには Azure DNS のようなリージョンの依存関係がありません。 導入プロセスで使用するサービスを検討する際には、各 Azure サービスで必要となる可能性があるフェールオーバー機能と復旧手順を明確に理解しておきます。
 
 - ディザスター リカバリーをサポートするために複数のリージョンに配置するだけでなく、多くの組織では、フェールオーバーを必要としないようにアクティブ/アクティブ パターンで配置することを選択しています。 これには、グローバルな負荷分散と、追加のフォールト トレランスとネットワーク パフォーマンスの向上を実現するという利点があります。 このパターンを利用するには、アプリケーションによって、複数のリージョンでアクティブ/アクティブの実行がサポートされている必要があります。
 

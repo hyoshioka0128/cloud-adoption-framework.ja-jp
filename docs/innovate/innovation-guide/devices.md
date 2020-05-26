@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3cc247866d60b428a908180ba3eda74bb61f8cd3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b7967a97a48e987db623de9abff304a4e0b4458c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224087"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621304"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -61,9 +61,11 @@ Azure のお客様は、ユーザー、データ、またはその両方に近�
 
 ::: zone target="docs"
 
-**[IoT Hub](https://docs.microsoft.com/azure/iot-hub) に移動する**
+### <a name="learn-more"></a>詳細情報
 
-**[デバイス プロビジョニング サービス](https://docs.microsoft.com/azure/iot-dps)に移動する**
+- [IoT Hub](https://docs.microsoft.com/azure/iot-hub)
+
+- [Azure IoT Hub Device Provisioning Service (DPS)](https://docs.microsoft.com/azure/iot-dps)
 
 ::: zone-end
 
@@ -82,16 +84,16 @@ IoT ハブを作成するには:
 
 <!-- markdownlint-enable DOCSMD001 -->
 
-IoT Hub Device Provisioning Service は、ゼロタッチでの Just-In-Time プロビジョニングを可能にする、IoT Hub のヘルパー サービスです。
+Azure IoT Hub Device Provisioning Service は、ゼロタッチでの Just-In-Time プロビジョニングを可能にする、IoT Hub のヘルパー サービスです。
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="action"></a>アクション
 
-IoT Hub Device Provisioning Service を作成するには:
+Azure IoT Hub Device Provisioning Service を作成するには:
 
-1. **IoT Hub Device Provisioning Service** に移動します。
-2. **[Create Device Provisioning Services]\(Device Provisioning Service の作成\)** を選択します。
+1. **[デバイス プロビジョニング サービス]** に移動します。
+2. **[追加]** を選択します。
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -113,7 +115,9 @@ IoT Hub Device Provisioning Service を作成するには:
 
 ::: zone target="docs"
 
-**[Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins) に移動する**
+### <a name="learn-more"></a>詳細情報
+
+- [Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins)
 
 ::: zone-end
 
@@ -150,7 +154,9 @@ Azure Maps サービスでは、近傍、トラフィック、ルート指定な
 
 ::: zone target="docs"
 
-**[Azure Maps](https://docs.microsoft.com/azure/azure-maps) に移動する**
+### <a name="learn-more"></a>詳細情報
+
+- [Azure Maps](https://docs.microsoft.com/azure/azure-maps)
 
 ::: zone-end
 
@@ -185,7 +191,7 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 ::: zone target="docs"
 
-**[Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors) に移動する**
+- [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors)
 
 ::: zone-end
 
@@ -214,9 +220,11 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 ::: zone target="docs"
 
-**[Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering) に移動する**
+### <a name="learn-more"></a>詳細情報
 
-**[Azure を使用したレンダリング](https://docs.microsoft.com/azure/batch/batch-rendering-service)に移動する**
+- [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)
+
+- [Azure を使用したレンダリング](https://docs.microsoft.com/azure/batch/batch-rendering-service)
 
 ::: zone-end
 

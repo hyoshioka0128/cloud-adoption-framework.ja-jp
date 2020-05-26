@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3eb722a170f508f749795fbfc91dc2ce58a1edb9
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 01619281c3531c18afe3fc031b9f1fde1f7d4f0b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621200"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753995"
 ---
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 
@@ -25,7 +25,7 @@ ms.locfileid: "83621200"
 
 要求の厳しいワークロードでは、暗号化とパフォーマンスの適切なバランスを取ること、およびデータとトラフィックの暗号化方法を決定することが重要です。 暗号化メカニズムのコストと複雑さはさまざまであり、技術的な要件とポリシー要件の両方が、暗号化の適用方法や、重要なシークレットとキーを格納および管理する方法の決定に影響を与えます。
 
-企業のポリシーとサード パーティのコンプライアンスは、暗号化戦略を計画するときの最も大きな要因です。 Azure には、保存時と転送中のデータの暗号化に関する一般的な要件を満たすことができる複数の標準的なメカニズムが用意されています。 一方、標準化されたシークレットとキーの管理、使用する暗号化、データ固有の暗号化など、より厳しい制御が要求されるポリシーとコンプライアンス要件の場合は、このような要件をサポートするために、より高度な暗号化戦略の策定が必要になります。
+企業のポリシーとサード パーティのコンプライアンスは、暗号化戦略を計画するときの最も大きな要因です。 Azure には、保存時と転送中のデータの暗号化に関する一般的な要件を満たすことができる複数の標準的なメカニズムが用意されています。 標準化されたシークレットとキーの管理、使用する暗号化、データ固有の暗号化など、より厳しい制御が要求されるポリシーとコンプライアンス要件の場合は、このような要件をサポートするために、より高度な暗号化戦略の策定が必要になります。
 
 ## <a name="key-management"></a>キー管理
 

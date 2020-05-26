@@ -1225,9 +1225,9 @@ items:
             href: manage/centralize-operations.md
           - name: 運用適合性レビューの確立
             href: manage/operational-fitness-review.md
-          - name: プラットフォームまたはワークロードの回復性の向上
+          - name: プラットフォームまたはワークロードの信頼性の向上
             items:
-              - name: Azure サービスの回復性のチェックリスト
+              - name: Azure サービスの信頼性のチェックリスト
                 href: 'https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: 障害モード分析
                 href: 'https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
@@ -1363,7 +1363,7 @@ items:
         items:
           - name: ソリューション アーキテクチャ向けの Azure アーキテクチャ センター
             href: 'https://docs.microsoft.com/azure/architecture'
-          - name: ワークロード アーキテクチャ向けの Azure アーキテクチャ フレームワーク
+          - name: ワークロード アーキテクチャ向けの Microsoft Azure Well-Architected Framework
             href: 'https://docs.microsoft.com/azure/architecture/framework'
           - name: 製品を実装するためのドキュメント
             href: 'https://docs.microsoft.com'

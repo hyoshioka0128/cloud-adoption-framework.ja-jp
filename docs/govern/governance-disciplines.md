@@ -4,159 +4,34 @@ description: Azure 向けクラウド導入フレームワークを使用して�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: c1c54d7587bf73f5c9348c878caea7ae7cde89ae
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 550dd724ae6a8eedd34b5a8ffc2146425500bc59
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220194"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400604"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>クラウド ガバナンスの 5 つの規範
 
-<!-- docsTest:disable TODO -->
+<!-- docsTest:ignore "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsI">
-    <li style="display: flex; flex-direction: column;">
-        <div class="cardSize">
-            <div class="cardPadding" style="padding-bottom:10px;">
-                <div class="card" style="padding-bottom:10px;">
-                    <div class="cardText" style="padding-left:0px;">
-ビジネス プロセスまたは技術プラットフォームの変更にはリスクが伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、リスクを軽減し、導入やイノベーションの作業をできるだけ中断させないようにすることです。
-    <br>
-    <br>
-クラウド導入フレームワーク ガバナンス モデルでは、<a href="./corporate-policy.md">企業ポリシーの策定</a>と<a href="#disciplines-of-cloud-governance">クラウド ガバナンスの 5 つの規範</a>に重点を置くことによって、(選択したクラウド プラットフォームに関係なく) これらの決定を導きます。 <a href="./guides/index.md">アクションにつながる設計ガイド</a>は、Azure サービスを使用してこのモデルを実証します。 以下では、クラウド導入フレームワーク ガバナンス モデルの規範について説明します。
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="../_images/operational-transformation-govern-highres.png" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardText" style="padding-left:0px;">
-    <img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
-    <br>
-    <i> 図 1: 企業ポリシーとクラウド ガバナンスの 5 つの規範のダイアグラム</i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+| | |
+|---|---|
+| ビジネス プロセスまたは技術プラットフォームの変更にはリスクが伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、リスクを軽減し、導入やイノベーションの作業をできるだけ中断させないようにすることです。 <br><br> これらの意思決定の指針には、選択されているクラウド プラットフォームに関係なく、[企業ポリシーの策定](./corporate-policy.md)と[クラウド ガバナンスの 5 つの規範](#disciplines-of-cloud-governance)に重点が置かれた、クラウド導入フレームワーク ガバナンス モデルが使用されます。 [アクションにつながる設計ガイド](./guides/index.md)は、Azure サービスを使用してこのモデルを実証します。 以下では、クラウド導入フレームワーク ガバナンス モデルの規範について説明します。 | <br><br> [![クラウド導入フレームワーク ガバナンス モデルの図: 企業のポリシーとガバナンスの規範](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> "_図 1:企業ポリシーとクラウド ガバナンスの 5 つの規範。_ |
 
 ## <a name="disciplines-of-cloud-governance"></a>クラウド ガバナンスの規範
 
 どのようなクラウド プラットフォームにも、ポリシーを周知したりツールチェーンを調整したりするのに役立つ共通のガバナンス規範があります。 これらの規範は、クラウド プラットフォームの枠を超えた企業ポリシーの自動化と実施の適切なレベルに関する意思決定の指針です。
 
-<!-- markdownlint-disable MD033 -->
-
-<ul class="panelContent cardsA">
-<li style="display: flex; flex-direction: column;">
-    <a href="./cost-management/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_images/govern/cost-management.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Cost Management</h3>
-                        <p>コストはクラウド ユーザーの最大の関心事です。 すべてのクラウド プラットフォームに対応した、コスト管理のためのポリシーを策定します。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./security-baseline/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_images/govern/security-baseline.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>セキュリティ ベースライン</h3>
-                        <p>セキュリティは複雑なテーマであり、会社ごとに独特です。 セキュリティ要件が確立されると、クラウド ガバナンスのポリシーと実施により、それらの要件がネットワーク、データ、資産の構成全体に適用されます。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./identity-baseline/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_images/govern/identity-baseline.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>ID ベースライン</h3>
-                        <p>ID 要件の適用が一貫性を欠いた場合、侵害のリスクが高まるおそれがあります。 ID ベースラインの規範では、クラウド導入作業全体で ID が一貫して適用されることを保証することに焦点が当てられています。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./resource-consistency/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_images/govern/resource-consistency.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>リソースの整合性</h3>
-                        <p>クラウドの運用はリソース構成の一貫性に依存します。 ガバナンス ツールを使用して、一貫した方法でリソースを構成し、オンボーディング、ドリフト、検出可能性、および復旧に関連したリスクを管理できます。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./deployment-acceleration/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_images/govern/deployment-acceleration.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>デプロイ高速化</h3>
-                        <p>デプロイと構成のアプローチにおける集中化、標準化、一貫性により、ガバナンスのプラクティスが改善されます。 クラウド ベースのガバナンス ツールによって提供されれば、デプロイ アクティビティの迅速化に寄与するクラウドの要因となります。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+| | |
+|---|---|
+| <br> ![Cost Management](../_images/govern/cost-management.png) | <br> [コスト管理](./cost-management/index.md):コストはクラウド ユーザーの最大の関心事です。 すべてのクラウド プラットフォームに対応した、コスト管理のためのポリシーを策定します。 |
+| <br> ![セキュリティ ベースライン](../_images/govern/security-baseline.png) | <br> [セキュリティ ベースライン](./security-baseline/index.md):セキュリティは複雑なテーマであり、会社ごとに独特です。 セキュリティ要件が確立されると、クラウド ガバナンスのポリシーと実施により、それらの要件がネットワーク、データ、資産の構成全体に適用されます。|
+| <br> ![ID ベースライン](../_images/govern/identity-baseline.png) | <br> [ID ベースライン](./identity-baseline/index.md):ID 要件の適用が一貫性を欠いた場合、侵害のリスクが高まるおそれがあります。 ID ベースラインの規範では、クラウド導入作業全体で ID が一貫して適用されることを保証することに焦点が当てられています。 |
+| <br> ![リソースの整合性](../_images/govern/resource-consistency.png) | <br> [リソースの整合性](./resource-consistency/index.md):クラウドの運用はリソース構成の一貫性に依存します。 ガバナンス ツールを使用して、一貫した方法でリソースを構成し、オンボーディング、ドリフト、検出可能性、および復旧に関連したリスクを管理できます。 |
+| <br> ![デプロイ高速化](../_images/govern/deployment-acceleration.png) | <br> [デプロイ高速化](./deployment-acceleration/index.md):デプロイと構成のアプローチにおける集中化、標準化、一貫性により、ガバナンスのプラクティスが改善されます。 クラウド ベースのガバナンス ツールによって提供されれば、デプロイ アクティビティの迅速化に寄与するクラウドの要因となります。 |

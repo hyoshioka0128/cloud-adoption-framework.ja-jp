@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a4e26787fb2125dd2784698b06171e898dd7ac55
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 574dba7b2c5db10b007dcf6cb7ecdd6dc93a0111
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214482"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401162"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -197,13 +197,13 @@ Database Experimentation Assistant には、以下のワークフロー アク�
 
 - [Database Experimentation Assistant の概要](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
-## <a name="cosmos-db-data-migration-tool"></a>Cosmos DB データ移行ツール
+## <a name="azure-cosmos-db-data-migration-tool"></a>Azure Cosmos DB データ移行ツール
 
 Azure Cosmos DB データ移行ツールでは、さまざまなソースからのデータを Azure Cosmos DB コレクションおよびテーブルにインポートできます。 JSON ファイル、CSV ファイル、SQL、MongoDB、Azure Table Storage、Amazon DynamoDB、さらには Azure Cosmos DB SQL API コレクションからインポートすることができます。 データ移行ツールは、SQL API の 1 つの単一パーティション コレクションから複数パーティション コレクションに移行する場合にも使用できます。
 
 詳細については、次を参照してください。
 
-- [Cosmos DB データ移行ツール](https://docs.microsoft.com/azure/cosmos-db/import-data)
+- [Azure Cosmos DB データ移行ツール](https://docs.microsoft.com/azure/cosmos-db/import-data)
 
 <!-- markdownlint-disable MD025 -->
 
@@ -241,7 +241,7 @@ Movere は、クラウド移行の計画と IT 環境の継続的な最適化、
 
 [詳細情報](https://www.movere.io)
 
-## <a name="cosmos-db-partners"></a>Cosmos DB パートナー
+## <a name="azure-cosmos-db-partners"></a>Azure Cosmos DB パートナー
 
 NoSQL データベースの要件に合わせて Azure Cosmos DB の移行をサポートするために、多様で経験豊富なシステム インテグレーターのパートナーやツールから選択できます。
 

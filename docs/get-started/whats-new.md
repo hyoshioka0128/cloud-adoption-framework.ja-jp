@@ -7,14 +7,13 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ebeb0d36b82a60ce0a0516b98909db5da8626dd2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230319"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620872"
 ---
-<!-- cSpell:ignore CAF -->
 <!-- markdownlint-disable MD024 -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークの最新情報
@@ -22,6 +21,18 @@ ms.locfileid: "83230319"
 クラウド導入フレームワークに加えられた最近の変更の一覧を次に示します。
 
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームの連携を通して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携して Azure 向けのクラウド導入フレームワークを構築することをお勧めします。
+
+## <a name="may-15-2020"></a>2020 年 5 月 15 日
+
+フィードバックに基づいて、クラウド導入フレームワークの使用を開始するための新しいコンテンツを作成しました。 新しいファースト ステップ ガイドは、実行する内容に基づいてフレームワークを移動するのに役立ちます。
+
+| [アーティクル] | 説明 |
+|---|---|
+| [クラウド導入フレームワークの概要](./index.md) | ここから開始して、クラウドの導入目標に合わせてファースト ステップ ガイドを選択します。 これらの一般的なシナリオでは、Azure 向けの Microsoft クラウド導入フレームワークを使用したロードマップを提供します。|
+| [基本的なアラインメントに関する決定事項を理解し、文書化する](./cloud-concepts.md) | クラウドの導入に関与するすべてのチームが理解する必要がある最初の決定事項について学習します。 |
+| [ポートフォリオ階層を理解して整理する](../reference/fundamental-concepts/hosting-hierarchy.md) | ポートフォリオ階層で、ワークロードとサポート サービスがどのようにまとめられているかについて学習します。 |
+| [Azure 製品によるポートフォリオ階層のサポート方法](../reference/fundamental-concepts/hierarchy-azure-tools.md) | ポートフォリオ階層をサポートする Azure ツールとソリューションについて学習します。 |
+| [組織の配置を管理する](../organize/index.md) | クラウドの効果的な運用モデルとして、適切に配置された組織構造を確立します。 |
 
 ## <a name="april-14-2020"></a>2020 年 4 月 14 日
 

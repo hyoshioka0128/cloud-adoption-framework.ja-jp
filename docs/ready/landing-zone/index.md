@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbb39153dc729b7822c53520e9424a5280cb013a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: de1fef059841fe013163f822c9188b7ed5b64a29
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621742"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755697"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -34,7 +34,7 @@ ms.locfileid: "83621742"
 **共同責任:** "_プラットフォーム基盤_" によって、クラウド プラットフォームを制御する集中管理が提供されます。 ID、セキュリティ、運用、コンプライアンス、およびガバナンスの要件を検討するチームのすべてのメンバーに共同責任があります。 ランディング ゾーンでテクノロジを導入する前に、"_プラットフォーム基盤_" に用意されているユーティリティと、共同責任を果たすためにランディング ゾーン内に実装する必要があるものを把握してください。
 
 > [!IMPORTANT]
-> ランディング ゾーン内にソリューションを展開している開発者とアーキテクトは、「[Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/)」を参照して、ランディング ゾーン内で実行されるワークロードを設計、構築、またはサポートするときに、これらの共有アーキテクチャの柱を組み込んで構築することができます。
+> ランディング ゾーン内にソリューションを展開している開発者とアーキテクトは、「[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/)」を参照して、ランディング ゾーン内で実行されるワークロードを設計、構築、またはサポートするときに、これらの共有アーキテクチャの柱を組み込んで構築することができます。
 
 ## <a name="landing-zone-definition"></a>ランディング ゾーンの定義
 
@@ -60,7 +60,7 @@ ms.locfileid: "83621742"
 
 ## <a name="decentralized-operations"></a>分散型運用
 
-一部の分散型組織の導入設計では、セキュリティ、ガバナンス、運用管理、およびその他の職務を含む、分離された各ワークロードの独自の実装と運用に**単独で責任を負う**ワークロード チームが必要です。 これらのチームにとって、ワークロードには、プラットフォームの基盤に依存しない独自の分離された環境が存在する場合があります。 こうしたワークロード固有の環境では、セキュリティ、信頼性、パフォーマンス、コスト、およびクラウド運用の実装に一貫性がない場合があります。 そのため、これらをランディング ゾーンと呼ぶことはできません。 これらのチームは、[Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/) のガイダンスを参考にして、各ワークロードを個別に設計、構築、最適化することをお勧めします。
+一部の分散型組織の導入設計では、セキュリティ、ガバナンス、運用管理、およびその他の職務を含む、分離された各ワークロードの独自の実装と運用に**単独で責任を負う**ワークロード チームが必要です。 これらのチームにとって、ワークロードには、プラットフォームの基盤に依存しない独自の分離された環境が存在する場合があります。 こうしたワークロード固有の環境では、セキュリティ、信頼性、パフォーマンス、コスト、およびクラウド運用の実装に一貫性がない場合があります。 そのため、これらをランディング ゾーンと呼ぶことはできません。 これらのチームは、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/) のガイダンスを参考にして、各ワークロードを個別に設計、構築、最適化することをお勧めします。
 
 > [!IMPORTANT]
 > 似て非なるもの: クラウド導入ライフサイクルの初期段階では、小規模なチームは、必要に応じて、一元化されていない組織と同様に活動する場合があります。 これらのチームが (設計によって分散されるのではなく) 状況によって分散されている場合は、ランディング ゾーンのベスト プラクティスに従う必要があります。

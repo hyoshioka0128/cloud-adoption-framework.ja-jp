@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/20/2020
-ms.openlocfilehash: 3fd693d5e3275eea40d1a71149207689b7dca35b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3e11e280e0faa12d7bbb6ee1a951e9eb1546cdab
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215621"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400980"
 ---
 # <a name="cloud-operations-functions"></a>クラウド運用機能
 
@@ -60,7 +60,7 @@ ms.locfileid: "83215621"
 - ワークロード パフォーマンスの継続的な改善
 - ビジネスへのコミットメントに合わせてワークロードの予算および設計要件を改善する
 
-### <a name="meeting-cadence"></a>ミーティングの開催
+### <a name="meeting-cadence"></a>ミーティングの頻度
 
 フィードバックの提供と運用要件の準備を行うために、リリース計画とクラウド センター オブ エクセレンス計画の立案にクラウド運用チームを関与させる必要があります。
 
@@ -74,7 +74,7 @@ ms.locfileid: "83215621"
 
 各項目の詳細情報
 
-- [クラウド センター オブ エクセレンス](../organize/cloud-center-of-excellence.md)の機能
+- [クラウドのセンター オブ エクセレンス](../organize/cloud-center-of-excellence.md)の機能。
 - [組織のアンチパターン: サイロと封土](../organize/fiefdoms-silos.md)
 
 "実行責任、説明責任、助言、通知" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 [RACI スプレッドシート テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)をダウンロードして編集してください。

@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c55bbd0e14ff9825a61e91745bba0044b6bf9fc1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7d343fb07aae068126236f4b7c18f2fdec52ebec
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214822"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621475"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -108,7 +108,7 @@ Microsoft では、Azure テナント管理者がワークロードを攻撃か�
 - それは、ユーザーの介入なしにバックグラウンドで実行される単一エージェント ソリューションです。
 - Azure Security Center では、エンドポイントの保護が実行されていない VM を簡単に識別し、必要に応じて Microsoft マルウェア対策をインストールできます。
 
-![VM のマルウェア対策](./media/migrate-best-practices-security-management/antimalware.png)
+![VM のマルウェア対策](./media/migrate-best-practices-security-management/antimalware.png) <br/>
 _VM のマルウェア対策_
 
 **詳細情報:**
@@ -136,12 +136,12 @@ Azure では、いくつかのソリューションが提供されています�
   - アプリケーション ゲートウェイの後方にある複数の Web アプリが同時に保護されます。
   - Web アプリケーション ファイアウォールは、Azure Monitor を使用して監視でき、Azure Security Center に統合されています。
 
-![セキュリティで保護された Web アプリ](./media/migrate-best-practices-security-management/web-apps.png)
+![Web アプリをセキュリティで保護する](./media/migrate-best-practices-security-management/web-apps.png) <br/>
 _Azure Key Vault_
 
 **詳細情報:**
 
-- Azure Key Vault の[概要を理解する](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview)。
+- Azure Key Vault の[概要を理解する](https://docs.microsoft.com/azure/key-vault/general/overview)。
 - [Web アプリケーション ファイアウォール](https://docs.microsoft.com/azure/application-gateway/waf-overview)について学習する。
 - App Service Environment の[概要を理解する](https://docs.microsoft.com/azure/app-service/environment/intro)。
 - Key Vault からシークレットを読み取るように Web アプリを構成する[方法を学習する](https://docs.microsoft.com/azure/key-vault/tutorial-web-application-keyvault)。
@@ -156,7 +156,7 @@ _Azure Key Vault_
 - また、RBAC ではロールの境界を設定するスコープを設定できます。 スコープは、管理グループ、サブスクリプション、リソース グループ、リソースなどのさまざまなレベルで設定できます
 - Azure へのアクセス権を持つ管理者が許可されたリソースにのみアクセスできることを確認します。 Azure で定義済みのロールの細かさが十分でない場合は、カスタム ロールを作成し、アクセス許可を分離して制限できます。
 
-![アクセス制御](./media/migrate-best-practices-security-management/subscription.png)
+![アクセス制御](./media/migrate-best-practices-security-management/subscription.png) <br/>
 _アクセス制御 - IAM_
 
 **詳細情報:**
@@ -174,7 +174,7 @@ Azure Active Directory (Azure AD) では、Azure Monitor に表示されるア�
 - アクティビティ ログは、長期的な保持とデータ分析のためにさまざまなエンドポイントにルーティングできます。
 - ログの確認を慣習として行うようにするか、またはセキュリティ情報およびイベント管理 (SIEM) ツールを統合して異常が自動的に確認されるようにします。 Premium 1 または 2 を使用していない場合は、ユーザーが自分で、または SIEM システムを使用して、多くの分析を行う必要があります。 分析には、危険なサインインやイベント、およびその他のユーザー攻撃パターンを探すことが含まれます。
 
-![ユーザーとグループ](./media/migrate-best-practices-security-management/azure-ad.png)
+![ユーザーとグループ](./media/migrate-best-practices-security-management/azure-ad.png) <br/>
 _Azure AD のユーザーとグループ_
 
 **詳細情報:**
@@ -212,8 +212,8 @@ Azure では、高度なセキュリティ オプションを提供するセキ�
 - Azure の名前付け規則に従うことをお勧めします。
 - Azure AD Connect を使用してオンプレミスの Active Directory を Azure AD に同期している場合は、オンプレミスのセキュリティ グループの名前を Azure でのリソース グループの名前と一致させることを検討します。
 
-![名前付け](./media/migrate-best-practices-security-management/naming.png)
-_リソース グループの名前付け_
+![名前を付ける](./media/migrate-best-practices-security-management/naming.png) <br/>
+_リソース グループ名_
 
 **詳細情報:**
 
@@ -223,8 +223,8 @@ _リソース グループの名前付け_
 
 最も困るのは、誤って削除したためにリソース グループが消えてしまうことです。 そのようなことが起きないように、削除ロックを実装することをお勧めします。
 
-![削除ロック](./media/migrate-best-practices-security-management/locks.png)
-_削除ロック_
+![ロックを削除する](./media/migrate-best-practices-security-management/locks.png) <br/>
+_ロックを削除する_
 
 **詳細情報:**
 
@@ -252,7 +252,7 @@ _削除ロック_
 - リソース グループまたは個々のリソースにタグを適用することができます。 リソース グループのタグは、グループ内のリソースによって継承されません。
 - PowerShell または Azure Automation を使用してタグ付けを自動化することも、グループやリソースに個別にタグを付けることもできます。 \- タグ付けのアプローチまたはセルフサービスのタグ付け。 要求および変更管理システムを導入している場合は、要求の情報を使用して会社固有のリソース タグを簡単に設定できます。
 
-![タグ付け](./media/migrate-best-practices-security-management/tagging.png)
+![タグ付け](./media/migrate-best-practices-security-management/tagging.png) <br/>
 _タグ付け_
 
 **詳細情報:**
@@ -297,7 +297,7 @@ Azure App Service Environment では、Windows や Linux の Web アプリ、Doc
 
 次の図は、管理グループを使用した管理のための階層を作成する例を示します。
 
-![管理グループ](./media/migrate-best-practices-security-management/management-groups.png)
+![管理グループ](./media/migrate-best-practices-security-management/management-groups.png) <br/>
 _管理グループ_
 
 **詳細情報:**
@@ -313,7 +313,7 @@ Azure Policy は、ポリシーの作成、割り当て、管理に使用する 
 - たとえば、VM に対して特定の SKU サイズのみを許可するポリシーを、環境に作成できます。 リソースを作成および更新するときと、既存のリソースをスキャンするときに、Azure Policy によってこの設定が評価されます。
 - Azure で提供されている組み込みポリシーを割り当てることも、独自に作成することもできます。
 
-![Azure Policy](./media/migrate-best-practices-security-management/policy.png)
+![Azure Policy](./media/migrate-best-practices-security-management/policy.png) <br/>
 _Azure Policy_
 
 **詳細情報:**
@@ -358,7 +358,7 @@ Azure Backup を使用して、複数の方法で VM をバックアップする
 
 セキュリティのため、Azure Backup では転送中のデータは AES 256 を使用して暗号化され、HTTPS 経由で Azure に送信されます。 Azure に保存されているバックアップ データ、および転送と保存のためのデータは、[Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) を使用して暗号化されます。
 
-![Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png)
+![Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png) <br/>
 _Azure Backup_
 
 **詳細情報:**
@@ -385,7 +385,7 @@ Azure VM は、Azure Storage にページ BLOB として格納されます。
 
 #### <a name="third-party-backup"></a>サード パーティのバックアップ
 
-さらに、サード パーティのソリューションを使用して、Azure VM とストレージ コンテナーをローカル ストレージまたは他のクラウド プロバイダーにバックアップすることができます。 Azure Marketplace でのバックアップ ソリューションについて[詳しく学習する](https://azuremarketplace.microsoft.com/marketplace/apps?search=backup&page=1)。
+さらに、サード パーティのソリューションを使用して、Azure VM とストレージ コンテナーをローカル ストレージまたは他のクラウド プロバイダーにバックアップすることができます。 Azure Marketplace でのバックアップ ソリューションに関する[詳細を表示](https://azuremarketplace.microsoft.com/marketplace/apps?search=backup&page=1)します。
 
 ### <a name="set-up-disaster-recovery-for-iaas-apps"></a>IaaS アプリのディザスター リカバリーを設定する
 
@@ -397,7 +397,7 @@ Azure Site Recovery は、障害が発生したときに Azure VM をオンラ�
 
 Site Recovery では、プライマリ Azure リージョンからセカンダリ Azure リージョンに VM がレプリケートされます。 災害が発生したときは、プライマリ リージョンから VM をフェールオーバーして、セカンダリ リージョンで通常どおり引き続きアクセスします。 操作が正常に戻ったら、プライマリ リージョンに VM をフェールバックできます。
 
-![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
+![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png) <br/>
 _Site Recovery_
 
 **詳細情報:**
@@ -415,8 +415,8 @@ Azure マネージド ディスクは、VM ディスクに関連付けられて�
 - 既存のディスクをマネージド ディスクに変換できます。
 - 高い回復性と可用性のためには、可用性セットに VM を作成する必要があります。 計画済み、または計画外の停止が発生したときは、可用性セットによって、セット内の少なくとも 1 つの VM が使用可能であることが保証されます。
 
-![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
-_Managed Disks_
+![マネージド ディスク](./media/migrate-best-practices-security-management/managed-disks.png) <br/>
+_マネージド ディスク_
 
 **詳細情報:**
 
@@ -436,14 +436,14 @@ Azure の優れたスケーリング機能が目的で、Azure にワークロ�
 - Azure Monitor は、これらのメトリックを明らかにし、アラート、自動スケーリング、イベント ハブ、ロジック アプリなどで応答を提供するのに役立ちます。
 - Azure の監視に加え、サード パーティ製の SIEM アプリケーションを統合して、Azure ログで監査とパフォーマンスのイベントを監視することもできます。
 
-![Azure Monitor](./media/migrate-best-practices-security-management/monitor.png)
+![Azure Monitor](./media/migrate-best-practices-security-management/monitor.png) <br/>
 _Azure Monitor_
 
 **詳細情報:**
 
 - Azure Monitor [について学習する](https://docs.microsoft.com/azure/azure-monitor/overview)。
 - 監視と診断に関する[ベスト プラクティスを知る](https://docs.microsoft.com/azure/architecture/best-practices/monitoring)。
-- 自動スケーリング[について学習する](https://docs.microsoft.com/azure/architecture/best-practices/scaling)。
+- 自動スケーリング[について学習する](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling)。
 - Azure のデータを SIEM ツールにルーティングする[方法を学習する](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem)。
 
 ## <a name="best-practice-enable-diagnostic-logging"></a>ベスト プラクティス:診断ログの有効化
@@ -454,7 +454,7 @@ Azure リソースでは、かなり多くのログ メトリックとテレメ�
 - リソース全体で診断ログを有効にすることにより、ログ データのクエリを実行し、アラートとそれに基づくプレイブックを作成できます。
 - 診断ログを有効にするとき、各リソースには特定のカテゴリのセットがあります。 1 つまたは複数のログ カテゴリと、ログ データの場所を選択します。 ログは、ストレージ アカウント、イベント ハブ、または Azure Monitor ログに送信できます。
 
-![診断ログ](./media/migrate-best-practices-security-management/diagnostics.png)
+![診断ログ](./media/migrate-best-practices-security-management/diagnostics.png) <br/>
 _診断ログ_
 
 **詳細情報:**
@@ -471,8 +471,8 @@ Azure リソースの診断ログを有効にすると、ログ データを使�
 - 簡単な例としては、ネットワーク セキュリティ グループに対してポート スキャンが発生するとトリガーされるアラートを作成できます。 実行してスキャン元の IP アドレスをロックするプレイブックを設定することができます。
 - 別の例としては、メモリ リークが発生しているアプリがあります。 メモリの使用量が特定のポイントに達したら、プレイブックでプロセスをリサイクルできます。
 
-![アラート](./media/migrate-best-practices-security-management/alerts.png)
-_アラート_
+![警告](./media/migrate-best-practices-security-management/alerts.png) <br/>
+_警告_
 
 **詳細情報:**
 
@@ -486,7 +486,7 @@ Azure portal は Web ベースの統合コンソールで、簡単な Web アプ
 - ダッシュボードを複数作成し、ご自分の Azure サブスクリプションにアクセスできる他のユーザーと共有することができます。
 - この共有モデルでは、チームは Azure 環境の内部を見ることができ、プロアクティブにクラウド内のシステムを管理できます。
 
-![Azure ダッシュボード](./media/migrate-best-practices-security-management/dashboard.png)
+![Azure ダッシュボード](./media/migrate-best-practices-security-management/dashboard.png) <br/>
 _Azure ダッシュボード_
 
 **詳細情報:**
@@ -501,7 +501,7 @@ _Azure ダッシュボード_
 - Azure サービスの問題によってワークロードに影響が発生した場合に備えて、管理者は、最も適切かつ効率的な方法で Microsoft にサポート チケットを送信する方法を知っている必要があります。
 - Azure に対して提供されているさまざまなサポート プランを理解しておきます。 その範囲は、Developer インスタンスに専用の応答時間から、応答時間が 15 分未満の Premier サポートまで及びます。
 
-![サポート プラン](./media/migrate-best-practices-security-management/support.png)
+![サポート プラン](./media/migrate-best-practices-security-management/support.png) <br/>
 _サポート プラン_
 
 **詳細情報:**
@@ -518,7 +518,7 @@ Azure VM をオペレーティング システムとソフトウェアの最新�
 - VM の Update Management は、Azure Automation アカウントから直接有効にすることができます。 Azure portal の VM のページから 1 つの VM を更新することもできます。
 - さらに、Azure VM を System Center Configuration Manager に登録できます。 そうすると、Configuration Manager のワークロードを Azure に移行して、単一の Web インターフェイスからレポートやソフトウェアの更新を行うことができます。
 
-![VM の更新](./media/migrate-best-practices-security-management/updates.png)
+![VM の更新](./media/migrate-best-practices-security-management/updates.png) <br/>
 _更新プログラム_
 
 **詳細情報:**
@@ -542,7 +542,7 @@ Azure では、Azure Automation 内に変更追跡ソリューションがあり
 - 受信したデータにロジックが適用され、クラウド サービスによってそのデータが記録されます。
 - [変更の追跡] ダッシュボードでは、サーバー インフラストラクチャで行われた変更を簡単に確認できます。
 
-![変更管理](./media/migrate-best-practices-security-management/change.png)
+![変更管理](./media/migrate-best-practices-security-management/change.png) <br/>
 _変更管理_
 
 **詳細情報:**

@@ -3,16 +3,16 @@ title: ランディング ゾーンを拡張する
 description: Azure のクラウド導入フレームワークを使用して、ランディング ゾーンを拡張します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3adb6067ec003b668316b5296f3105d1a09e01a4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0964da23da680755ea9d6c35fef0996e986780b4
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215213"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756568"
 ---
 # <a name="expand-your-landing-zone"></a>ランディング ゾーンを拡張する
 
@@ -24,16 +24,16 @@ ms.locfileid: "83215213"
 
 ![共有アーキテクチャの原則](../../_images/ready/shared-principles.png)
 
-これらの同じアーキテクチャ原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。
+これらの同じアーキテクチャ原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。
 
 ## <a name="applying-these-principles-to-your-landing-zone-improvements"></a>これらの原則をランディング ゾーンの改善点に適用する
 
 クラウド導入フレームワークの手法との連携を強化するために、上記の原則は、実用的なランディング ゾーンの改善点別にグループ化されています。
 
-- 基本的な考慮事項:ホスティング、基礎、その他の基本要素を改良するためにランディング ゾーンをリファクターします。
-- 運用の拡張:運用管理構成を追加して、**パフォーマンス、信頼性、オペレーショナル エクセレンス**を改善します。
-- ガバナンスの拡張:ガバナンス構成を追加して、**コスト、信頼性、セキュリティ**、整合性を改善します。
-- セキュリティの拡張:機密データや重要なシステムの保護を強化するために**セキュリティ**構成を追加します。
+- 基本的な考慮事項: ホスティング、基礎、その他の基本要素を改良するためにランディング ゾーンをリファクターします。
+- 運用の拡張: 運用管理構成を追加して、**パフォーマンス、信頼性、オペレーショナル エクセレンス**を改善します。
+- ガバナンスの拡張: ガバナンス構成を追加して、**コスト、信頼性、セキュリティ**、整合性を改善します。
+- セキュリティの拡張: 機密データや重要なシステムの保護を強化するために**セキュリティ**構成を追加します。
 
 > [!WARNING]
 > (24 か月以内に) **クラウドに 1,000 以上の資産 (アプリ、インフラストラクチャ、データ資産) をホストする**中間目標を設定している導入チームは、自チームのクラウド導入体験において早期の段階でこれらの拡張について検討してください。 他のすべての導入パターンについては、ランディング ゾーンの拡張が並列イテレーションになる場合があり、早期のビジネスの成功につながります。

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b05218d1dfc353e0d9cbed9006a980b845f67915
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 42ace02c82ffbb034f3405a6c699d7b0d29fbf1e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221860"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621504"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 
@@ -64,7 +64,7 @@ ms.locfileid: "83221860"
 
 Azure を利用すれば、_顧客やパートナーがいる場所を問わず_、彼らを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
 
-Azure App Service など、いくつかのコンピューティング オプションは、ほとんどの Azure リージョンで一般提供されています。 ただし、一部のコンピューティング サービスは、特定のリージョンでのみサポートされます。 一部の仮想マシンの種類とそれに関連付けられているストレージの種類は、利用可能なリージョンに制限があります。 どのリージョンにコンピューティング リソースをデプロイするかを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines)を参照して、リージョン別の提供状況の最新の状態を確認することをお勧めします。
+Azure App Service など、いくつかのコンピューティング オプションは、ほとんどの Azure リージョンで一般提供されています。 しかし、一部のコンピューティング サービスは、特定のリージョンでのみサポートされます。 一部の仮想マシンの種類とそれに関連付けられているストレージの種類は、利用可能なリージョンに制限があります。 どのリージョンにコンピューティング リソースをデプロイするかを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines)を参照して、リージョン別の提供状況の最新の状態を確認することをお勧めします。
 
 Azure のグローバル インフラストラクチャの詳細については、[Azure リージョンのページ](https://azure.microsoft.com/global-infrastructure/regions)を参照してください。 また、各 Azure リージョンで利用可能なサービス全体の具体的な詳細については、[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)に関するページで確認できます。
 

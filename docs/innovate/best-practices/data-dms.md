@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1f1060ba4df7dfb398a94f8611901612e1ecf60d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 87376016c2d775d9aa546036504dfdf8c3ec9ba2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219786"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398730"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>既存のデータ ソースの移行と最新化によってデータを収集する
 
@@ -28,7 +28,7 @@ ms.locfileid: "83219786"
 
 オンプレミスのデータを移行して最新化する場合、最も一般的な Azure ツールの選択肢は [Azure Database Migration Service](https://docs.microsoft.com/azure/dms) です。 このサービスは、より広範な [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) ツールチェーンの一部です。 既存の SQL Server データ ソースについては、[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview) を使用して、少数のデータ構造の評価と移行を行うことができます。
 
-Oracle と NoSQL の移行をサポートするために、特定の種類のソース データベースのターゲット データベースへの移行に対して、[Database Migration Service](https://docs.microsoft.com/azure/dms) を使用することもできます。 例として、Oracle から PostgreSQL への 移行や、MongoDB から Cosmos DB への移行があります。 一般的に、導入チームは、パートナー ツールまたはカスタム スクリプトを使用して、Azure Cosmos DB、Azure HDInsight、またはサービスとしてのインフラストラクチャ (IaaS) に基づく仮想マシンのオプションに移行します。
+Oracle と NoSQL の移行をサポートするために、特定の種類のソース データベースのターゲット データベースへの移行に対して、[Database Migration Service](https://docs.microsoft.com/azure/dms) を使用することもできます。 例として、Oracle から PostgreSQL への移行や、MongoDB から Azure Cosmos DB への移行があります。 一般的に、導入チームは、パートナー ツールまたはカスタム スクリプトを使用して、Azure Cosmos DB、Azure HDInsight、またはサービスとしてのインフラストラクチャ (IaaS) に基づく仮想マシンのオプションに移行します。
 
 ## <a name="considerations-and-guidance"></a>考慮事項とガイダンス
 

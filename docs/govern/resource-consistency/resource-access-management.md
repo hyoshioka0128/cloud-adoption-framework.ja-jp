@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 23212be551ace2808757836a0e7ac135363dd8e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 51047cd648953b68caa7f09e132b832a287e4a71
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218188"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399052"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -48,7 +48,7 @@ _図 3: Azure サブスクリプション。_
 
 ## <a name="what-is-azure-resource-manager"></a>Azure Resource Manager とは
 
-[Azure のしくみ](../../get-started/what-is-azure.md)に関する記事で、Azure には、Azure のすべての機能を調整する多くのサービスを備えたフロントエンドが含まれていることが説明されています。 これらのサービスの 1 つが [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager) で、このサービスは、リソースを管理するために、クライアントによって使用される RESTful API をホストしています。
+「[Azure のしくみ](../../get-started/what-is-azure.md)」では、Azure のすべての機能を調整する多数のサービスが Azure のフロントエンドに含まれていることを学習しました。 これらのサービスの 1 つが [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager) で、このサービスは、リソースを管理するために、クライアントによって使用される RESTful API をホストしています。
 
 ![Azure Resource Manager の図](../../_images/govern/design/governance-1-12.png)
 _図 4: Azure Resource Manager。_

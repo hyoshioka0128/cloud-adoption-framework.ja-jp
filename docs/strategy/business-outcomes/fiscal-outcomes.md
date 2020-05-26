@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 9087a61baaeffa2bb769899a04f55c3eb959f4ea
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218834"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401184"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財務上の結果の例
 
@@ -77,9 +77,7 @@ Coverdell では、自社のインフラストラクチャを最新化して、A
 
 - **例:** ある会社のデータセンターはリース契約を 6 か月で更新しています。 データセンターは 8 年間使用されています。 4 年前にすべてのサーバーが更新されて仮想化され、会社には数百万ドルのコストがかかりました。 来年、同社はハードウェアとソフトウェアを再度更新する予定です。 そのデータセンター内の資産の移行は、クラウド移行の一環として、来年の予測される予算から予定された更新をなくすことでコスト回避を可能にします。 また、不動産リース費用を削減または排除することで、コスト削減を図ることもできます。
 
-<!-- docsTest:ignore "vs. Operating" -->
-
-### <a name="capital-expenses-vs-operating-expenses"></a>資本支出と操業費用
+### <a name="capital-expenses-and-operating-expenses"></a>資本支出と操業費用
 
 コストの結果について議論する前に、資本支出と操業費用という 2 つの主要なコスト オプションを理解しておくことが重要です。
 

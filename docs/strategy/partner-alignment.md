@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fc7806035d66d44f29f9c4658c24efb950193378
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 096657f869f591a8ef758ce5b5ed2f504b07a894
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230615"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401316"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -26,13 +26,12 @@ ms.locfileid: "83230615"
 
 導入の初期戦略フェーズの間に、パートナーシップ戦略の調整を始めることが重要です。 以下の手順は、導入ライフサイクルの後のフェーズでの問題点を除去するのに役立ちます。
 
-1) サポート ニーズの理解を開始する
-2) カルチャとニーズに合ったパートナーシップ オプションを検討する
-3) パートナー オプションの一覧を評価する
-4) 選択したパートナーとの契約および書類レビューを開始する
+1. サポート ニーズの理解を開始する。
+1. カルチャとニーズに合ったパートナーシップ オプションを検討する。
+1. パートナー オプションの一覧を評価する。
+1. 選択したパートナーとの契約および書類レビューを開始する。
 
-これらの手順を早い段階で完了すると、技術的な作業が開始されたときにチームが成功します。
-この記事の以下のセクションでは、これらの各手順に関するガイダンスを提供します。
+これらの手順を早い段階で完了すると、技術的な作業が開始されたときにチームが成功します。 この記事の以下のセクションでは、これらの各手順に関するガイダンスを提供します。
 
 ## <a name="understanding-support-needs"></a>サポート ニーズを理解する
 

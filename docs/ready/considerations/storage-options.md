@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: af6604db1e0bd50ea93373dfdffa67d74b413f68
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d44115174b519f14dcd4162d0411cacb565f083c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216318"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621828"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
 
@@ -45,10 +45,11 @@ Azure Storage のデシジョン ツリーに基づいた意思決定に役立�
 
 ## <a name="common-storage-scenarios"></a>一般的なストレージ シナリオ
 
-Azure には、さまざまなストレージ機能のための複数の製品やサービスが用意されています。 この記事で前に示されているストレージ要件のデシジョン ツリーに加えて、次の表では、一連の可能性のあるストレージ シナリオと、そのシナリオの要件に対処するための推奨される Azure サービスについて説明します。
+Azure には、さまざまなストレージ機能のための複数の製品やサービスが用意されています。 前に示されているストレージ要件のデシジョン ツリーに加えて、次の表では、一連の可能性のあるストレージ シナリオと、そのシナリオの要件に対処するための推奨される Azure サービスについて説明します。
 
 ### <a name="block-storage-scenarios"></a>ブロック ストレージのシナリオ
 
+<!-- docsTest:ignore M-series -->
 <!-- markdownlint-disable MD033 -->
 
 | **シナリオ** | **推奨される Azure サービス** | **推奨されるサービスに関する考慮事項** |
@@ -61,7 +62,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | NoSQL クラスター (Cassandra や MongoDB など) があります。 | [Azure Disk Storage (Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types#premium-ssd) | Azure Disk Storage の Premium SSD オファリングは、高い IOPS とスループットと共に一貫した低待機時間を提供します。 |
 | 永続ボリュームを使用してコンテナーを実行しています。 | [Azure Files (Standard または Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure Disk Storage (Standard、Premium、または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | ファイル (RWX) およびブロック (RWO) ボリュームのドライバー オプションは、Azure Kubernetes Service (AKS) とカスタム Kubernetes の両方のデプロイに使用できます。 永続ボリュームは、Azure Disk Storage ディスクまたはマネージド Azure Files 共有のどちらかにマップできます。 永続ボリュームに対するワークロードの要件に基づいて、Premium または Standard オプションを選択します。 |
 | データ レイクがあります (HDFS データ用の Hadoop クラスターなど)。 | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br><br> [Azure Disk Storage (Standard または Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Azure Blob Storage の Data Lake Storage Gen 2 機能は、サーバー側の HDFS 互換性とペタバイト規模の並列分析を提供します。 また、HA と信頼性も提供されます。 Cloudera などのソフトウェアは、必要に応じて、マスター/ワーカー ノード上で Premium または Standard SSD を使用できます。 |
-| SAP または SAP HANA の展開があります。 | [Azure Disk Storage (Premium または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD は、階層 1 の SAP ワークロードにミリ秒未満の待機時間を提供するように最適化されています。 Ultra SSD は現在、プレビュー段階です。 Premium SSD は M シリーズと共に、一般提供 (GA) オプションを提供します。 |
+| SAP または SAP HANA の展開があります。 | [Azure Disk Storage (Premium または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD は、階層 1 の SAP ワークロードにミリ秒未満の待機時間を提供するように最適化されています。 Ultra SSD は現在、プレビュー段階です。 Premium SSD は M シリーズの VM と共に、一般提供 (GA) オプションを提供します。 |
 | プライマリ サーバーから同期する厳密な RPO/RTO を持つディザスター リカバリー サイトがあります。 | [Azure ページ BLOB](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Azure ページ BLOB は、フェールオーバーが発生するまでコンピューティング VM を必要とすることなく、Azure への低コストのレプリケーションを可能にするために、レプリケーション ソフトウェアによって使用されます。 詳細については、[Azure Disk Storage のドキュメント](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)を参照してください。 **注:** ページ BLOB は最大 8TB をサポートします。 |
 
 ### <a name="file-and-object-storage-scenarios"></a>ファイルとオブジェクトのストレージ シナリオ
@@ -74,7 +75,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | 数ペタバイトのデータのためのオンプレミスのオブジェクト ストレージ システム (Dell-EMC ECS など) があります。 | [Azure BLOB Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) |  Azure Blob Storage には、ワークロードのパフォーマンスとコストのニーズに適合するように、Premium、ホット、クール、アーカイブの各層が用意されています。 |
 | DFSR デプロイ、またはブランチ オフィスを処理するための別の方法があります。 | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure File Sync はマルチサイト同期を提供し、クラウド内の複数のサーバーとネイティブ Azure ファイル共有間でファイルの同期を維持します。 クラウド階層化を使用して、オンプレミスの固定のストレージ フットプリントに移動します。 クラウド階層化は、サーバーを関連するファイルのキャッシュに変換しながら、Azure ファイル共有内のコールド データをスケーリングします。 |
 | バックアップとディザスター リカバリー、または長期的なデータ保持のために、テープ ライブラリ (オンプレミスまたはオフサイト) を所有しています。 | [Azure Blob Storage (クールまたはアーカイブ層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) | Azure Blob Storage のアーカイブ層は、可能性のある最も低いコストになりますが、オフライン データをクール、ホット、または Premium 層のストレージにコピーしてアクセス可能になるまでに数時間必要になることがあります。 クール層は、低コストでの瞬時のアクセスを提供します。 |
-| バックアップを受け取るように構成されたファイルまたはオブジェクト ストレージがあります。 | [Azure Blob Storage (クールまたはアーカイブ層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) <br/>[Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | 最もコストが低いストレージでの長期の保持のためにデータをバックアップするには、データを Azure Blob Storage に移動し、クールおよびアーカイブ層を使用します。 サーバー (オンプレミスまたは Azure VM 上に存在) 上のファイル データの高速ディザスター リカバリーを有効にするには、Azure File Sync を使用して、共有を個々の Azure ファイル共有と同期します。Azure ファイル共有スナップショットを使用すると、以前のバージョンを復元し、それを元の接続されたサーバーと同期したり、Azure ファイル共有でネイティブにアクセスしたりできます。 |
+| バックアップを受け取るように構成されたファイルまたはオブジェクト ストレージがあります。 | [Azure Blob Storage (クールまたはアーカイブ層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) <br> [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | 最もコストが低いストレージでの長期の保持のためにデータをバックアップするには、データを Azure Blob Storage に移動し、クールおよびアーカイブ層を使用します。 サーバー (オンプレミスまたは Azure VM に存在) 上のファイル データの高速ディザスター リカバリーを有効にするには、Azure File Sync を使用して、共有を個々の Azure ファイル共有と同期します。Azure ファイル共有スナップショットを使用すると、以前のバージョンを復元し、それを元の接続されたサーバーと同期したり、Azure ファイル共有でネイティブにアクセスしたりできます。 |
 | ディザスター リカバリー サイトへのデータ レプリケーションを実行しています。 | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure File Sync では、ディザスター リカバリー サーバーが必要なくなり、ファイルがネイティブな Azure SMB 共有に格納されます。 高速ディザスター リカバリーでは、障害が発生したオンプレミス サーバー上のすべてのデータが迅速に再構築されます。 複数のサーバーの場所の同期状態を維持したり、クラウドを使った階層化により関連するデータのみをオンプレミスに保存したりすることができます。 |
 | 切断されたシナリオでデータ転送を管理します。 | [Azure Data Box Edge または Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online) | Data Box Edge または Data Box Gateway を使用すると、接続が切断されたシナリオでデータをコピーできます。 ゲートウェイはオフラインである場合、コピーされたすべてのファイルをキャッシュに保存し、後で接続されたときにそれをアップロードします。 |
 | クラウドへの継続的なデータ パイプラインを管理しています。 | [Azure Data Box Edge または Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online) | 単に、常にデータを生成しているシステムにそのデータを直接 Storage Gateway にコピーさせることによって、そのシステムからクラウドにデータを移動します。 後でそのデータにアクセスする必要がある場合は、そのまま配置した場所にあります。 |
@@ -108,7 +109,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) | Azure Files では、フル マネージドのネイティブな SMB ファイル共有が提供され、VM を実行する必要がありません。 Azure Files 共有をネットワーク ドライブとして任意の Azure VM またはオンプレミス マシンにマウントできます。 |
 | [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure File Sync を使用すると、オンプレミスのファイル サーバーの柔軟性、パフォーマンス、互換性を維持したまま、Azure Files 内の組織のファイル共有を一元化できます。 Azure File Sync により、ご利用の Windows Server が Azure ファイル共有の高速キャッシュに変わります。 |
 | [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure NetApp Files サービスは、エンタープライズ クラスでハイパフォーマンスの従量制課金ファイル ストレージ サービスです。 Azure NetApp Files は、既定で高い可用性を備え、あらゆる種類のワークロードをサポートします。 サービス レベルとパフォーマンス レベルを選び、サービスを通じてスナップショットを設定することができます。 |
-| [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge は、Azure との間でデータを移動するオンプレミスのネットワーク デバイスです。 Data Box Edge は、アップロード中にデータを前処理するための AI 対応のエッジ コンピューティング機能を備えています。 Data Box Gateway は、仮想バージョンのデバイスですが、同じデータ転送機能を備えています。 |
+| [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge は、Azure との間でデータを移動するオンプレミスのネットワーク デバイスです。 Data Box Edge は、アップロード中にデータを前処理するための AI 対応のエッジ コンピューティングを備えています。 Data Box Gateway は、仮想バージョンのデバイスですが、同じデータ転送機能を備えています。 |
 | [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) | Azure Data Box Gateway は、Azure にシームレスにデータを送信できるストレージ ソリューションです。 Data Box Gateway は、仮想化環境またはハイパーバイザーにプロビジョニングされた仮想マシンに基づく仮想デバイスです。 この仮想デバイスはオンプレミスに存在し、ユーザーは NFS および SMB プロトコルを使用してそこにデータを書き込みます。 このデバイスはその後、Azure ブロック BLOB、Azure ページ BLOB、または Azure Files にデータを転送します。 |
 | [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT for Azure は、データ集約型のハイ パフォーマンス コンピューティング (HPC) タスク向けのファイルシステム キャッシュ ソリューションです。 これを使用すると、クラウド コンピューティングのスケーラビリティを活かして、データがお客様のオンプレミス ハードウェアに格納されている場合であっても、必要なときに必要な場所でデータにアクセスできます。 |
 
@@ -116,7 +117,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 
 Azure Storage には、ローカル冗長ストレージ (LRS)、ゾーン冗長ストレージ (ZRS)、geo 冗長ストレージ (GRS)、読み取りアクセス geo 冗長ストレージ (RA-GRS) など、顧客のニーズに基づいて持続性と高可用性を確保するために役立つさまざまな冗長性オプションがあります。
 
-これらの機能や、ユース ケースに最適な冗長性オプションを決定する方法の詳細については、「[Azure Storage の冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)」を参照してください。 また、ストレージ サービスのサービス レベル アグリーメント (SLA) は、財務的な裏付けのある保証を提供します。 詳細については、「[Managed Disks の SLA](https://azure.microsoft.com/support/legal/sla/managed-disks/v1_0)」、「[Virtual Machines の SLA](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_8)」、および「[ストレージ アカウントの SLA](https://azure.microsoft.com/support/legal/sla/storage/v1_4)」を参照してください。
+これらの機能や、ユース ケースに最適な冗長性オプションを決定する方法の詳細については、「[Azure Storage の冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)」を参照してください。 また、ストレージ サービスのサービス レベル アグリーメント (SLA) では、財務的な裏付けのある保証も提供します。 詳細については、「[Managed Disks の SLA](https://azure.microsoft.com/support/legal/sla/managed-disks/v1_0)」、「[Virtual Machines の SLA](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_8)」、および「[ストレージ アカウントの SLA](https://azure.microsoft.com/support/legal/sla/storage/v1_4)」を参照してください。
 
 Azure ディスクの適切なソリューションの計画については、[Azure Disk Storage のバックアップとディザスター リカバリー](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)に関するページを参照してください。
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 53bf6e8a6c3e01255e57613b3b1a3cd2fa9cdc07
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c1a6ce684998ed3a9a67ad92face8adfdcbce104
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222251"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621337"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -116,7 +116,7 @@ Azure Bot Services デプロイを構成または監視するには:
 
 ## <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-モバイル アプリの人気が上がり続ける中、さまざまな構成を持つ実際のデバイスでテストを自動化できるプラットフォームに対するニーズが増えています。 Visual Studio App Center は、iOS、Android、Windows、macOS でアプリケーションをテストできる場所を提供するだけではありません。 Azure Application Insights を使用してテレメトリを迅速かつ簡単に分析できる監視プラットフォームも提供します。 詳細については、[Visual Studio App Center の概要](https://docs.microsoft.com/appcenter)に関するページをご覧ください。
+モバイル アプリの人気が上がり続ける中、さまざまな構成を持つ実際のデバイスでテストを自動化できるプラットフォームに対するニーズが増えています。 Visual Studio App Center は、iOS、Android、Windows、macOS をまたいでアプリケーションをテストできる場所だけでなく、Azure Application Insights を使用し、テレメトリをすばやく簡単に分析できる監視プラットフォームも提供します。 詳細については、[Visual Studio App Center](https://docs.microsoft.com/appcenter) に関するページを参照してください。
 
 Visual Studio App Center では、1 回の呼び出しによって複数のプラットフォームでアプリに通知を送信できる通知サービスも提供されます。各通知サービスに個別に連絡する必要はありません。 詳細については、「[Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push)」を参照してください。
 
@@ -287,7 +287,9 @@ API Management サービスを構成または監視するには:
 
 Azure Red Hat OpenShift では、フル マネージドの OpenShift クラスターをセルフサービスで柔軟にデプロイすることが可能です。 マスター ノード、インフラストラクチャ ノード、アプリケーション ノードの修正プログラムの適用、更新、監視が Microsoft と Red Hat の両社によって行われるので、規制コンプライアンスを維持し、アプリケーション開発に集中できます。 独自のレジストリ、ネットワーク、ストレージ、CI/CD のソリューションを選択できます。 また、ソース コード管理、コンテナーとアプリケーションのビルド、デプロイ、スケーリング、正常性管理などが自動化された組み込みのソリューションを使用してすぐに開始することもできます。
 
-**[[Azure Red Hat OpenShift]](https://docs.microsoft.com/azure/openshift/intro-openshift) に移動します。**
+### <a name="learn-more"></a>詳細情報
+
+- [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)
 
 # <a name="isolate-points-of-failure"></a>[障害点を分離する](#tab/IsolatePointsOfFailure)
 

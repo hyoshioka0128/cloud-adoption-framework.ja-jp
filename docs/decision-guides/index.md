@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 49bfe755f27305e644b28ece987e1ad09a52d39e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1da093324253a3a551b1bb8306a0727536ec46b5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214987"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753774"
 ---
 # <a name="architectural-decision-guides"></a>アーキテクチャの決定ガイド
 
 クラウド導入フレームワークのアーキテクチャの決定ガイドでは、クラウド ガバナンス設計ガイダンスを作成する際に役立つパターンとモデルについて説明します。 各決定ガイドでは、クラウド デプロイの中心的なインフラストラクチャ コンポーネントの 1 つに焦点を当て、特定のクラウド デプロイのシナリオをサポートすることを目的とするパターンおよびモデルの一覧を紹介します。
 
-組織のクラウド ガバナンスの制定を始めるときに、アクションにつながるガバナンス体験が提供するベースラインのロードマップを利用できます。 ただし、このような体験で提供される前提条件は、組織の要件や優先順位を反映していない可能性があります。
+組織のクラウド ガバナンスの制定を始めるときに、アクションにつながるガバナンス体験が提供するベースラインのロードマップを利用できます。 このような体験で提供される前提条件は、組織の要件や優先順位を反映していない可能性があります。
 
 これらの決定ガイドは、サンプル設計ガイダンスで行われたアーキテクチャ設計の選択をお客様の要件に合わせるために役立つ代替のパターンやモデルを提供することで、サンプルのガバナンス体験を補完します。
 

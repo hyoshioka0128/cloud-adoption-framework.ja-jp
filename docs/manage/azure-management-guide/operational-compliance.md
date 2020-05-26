@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b747a6f0d50fbf2510dc3a5220f72d513e8d1cb3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7aeb83064faa4105214d47149fbf9e789add47d3
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216709"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621218"
 ---
 <!-- cSpell:ignore WSUS getting started -->
 
@@ -127,7 +127,7 @@ Azure Policy ゲスト構成では、現在、マシン内の設定の監査の�
 詳細については、次を参照してください。
 
 - [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
-- [Azure Policy - ゲスト構成](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)
+- [Azure Policy: ゲスト構成](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)
 - [クラウド導入フレームワーク:ポリシー適用の意思決定ガイド](../../decision-guides/policy-enforcement/index.md)
 
 ## <a name="azure-blueprints"></a>Azure Blueprint
@@ -158,7 +158,7 @@ Azure Blueprints を使用すると、開発チームは新しい環境を迅速
 
 ::: zone target="chromeless"
 
-1. **[Blueprints - Getting started]\(ブループリント - 作業の開始\)** に移動します。
+1. **[Blueprints:Getting started] (ブループリント: 作業の開始)** に移動します。
 1. **[ブループリントの作成]** ペインで、 **[作成]** を選択します。
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
 1. **ブループリントの名前** ボックスに、ブループリントの名前を入力します。
@@ -172,7 +172,7 @@ Azure Blueprints を使用すると、開発チームは新しい環境を迅速
 
 ::: zone target="docs"
 
-1. [[Blueprints - Getting started]\(ブループリント - 作業の開始\)](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted) に移動します。
+1. [[Blueprints:Getting started] (ブループリント: 作業の開始)](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted) に移動します。
 1. **[ブループリントの作成]** ペインで、 **[作成]** を選択します。
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
 1. **ブループリントの名前** ボックスに、ブループリントの名前を入力します。
@@ -201,7 +201,7 @@ Azure Blueprints を使用すると、開発チームは新しい環境を迅速
 
 ::: zone target="docs"
 
-1. [[ブループリント - ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
+1. [[Blueprints:ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
 1. 前の手順で作成したブループリントを選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
 1. **[Version]\(バージョン\)** ボックスに「1.0」のようなバージョンを入力します。

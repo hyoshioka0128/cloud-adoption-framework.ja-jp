@@ -1,20 +1,20 @@
 ---
-title: クラウドでのユーザー セキュリティの機能
-description: クラウドでのユーザー セキュリティの機能について説明します。
+title: クラウドのユーザー セキュリティ機能
+description: クラウドのユーザー セキュリティ機能について
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 85c878517fbb3ceca84bc2588e90648e9b1cb2f3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3e6895e1f2b13c4f2791b60baf7457223732fecf
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230191"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401096"
 ---
-# <a name="functions-of-a-people-security-in-the-cloud"></a>クラウドでのユーザー セキュリティの機能
+# <a name="people-security-functions-in-the-cloud"></a>クラウドのユーザー セキュリティ機能
 
 ユーザー セキュリティにより、組織は不注意による間違いや悪意のあるインサイダー アクションのリスクから保護されます。
 
@@ -37,9 +37,11 @@ ms.locfileid: "83230191"
 - 人的資源
 - プライバシー チーム
 - データのセキュリティ
-- コミュニケーション チーム (ユーザー認識について)
-- セキュリティ運用 (インサイダー リスクについて)
-- 物理的セキュリティ (インサイダー リスク)
+- コミュニケーション チーム、ユーザー認識について
+- セキュリティ運用、インサイダー リスクについて
+- 物理的セキュリティ、インサイダー リスク
+
+<!-- cSpell:ignore apsec -->
 
 ## <a name="next-steps"></a>次のステップ
 
