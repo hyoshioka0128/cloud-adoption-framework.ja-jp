@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 074762c6d02c6da1cd6812064e20f63a44aa4bd7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 61777d3fa99c8692c8db91281dfdc0914e9f2b59
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217287"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861567"
 ---
 # <a name="common-azure-policy-examples"></a>Azure Policy の一般的な例
 
@@ -32,20 +32,21 @@ ms.locfileid: "83217287"
 ポータルでこのポリシーを見つけるには、ポリシー定義ページで、[場所] で検索します。 または、次のコマンドレットを実行してポリシーを見つけます。
 
 ```powershell
-Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn') -and ($_.Properties.displayName -like '*location*') }
+Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn') `
+  -and ($_.Properties.displayName -like '*location*') }
 ```
 
 次のスクリプトでは、ポリシーの割り当て方法を示しています。 ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。
 
 ```powershell
-#Specify the value for $SubscriptionID.
+# Specify the value for $SubscriptionID.
 $SubscriptionID = <subscription ID>
 $scope = "/subscriptions/$SubscriptionID"
 
-#Replace the -Name GUID with the policy GUID you want to assign.
+# Replace the -Name GUID with the policy GUID you want to assign.
 $AllowedLocationPolicy = Get-AzPolicyDefinition -Name "e56962a6-4747-49cd-b67b-bf8b01975c4c"
 
-#Replace the locations with the ones you want to specify.
+# Replace the locations with the ones you want to specify.
 $policyParam = '{ "listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyParam
 ```
@@ -77,14 +78,14 @@ Azure では、さまざまなワークロードをサポートするための�
 次のスクリプトでは、ポリシーの割り当て方法を示しています。 スクリプトを使用するには、ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。
 
 ```powershell
-#Specify the value for $SubscriptionID.
-$SubscriptionID = <subscription ID>
-$scope = "/subscriptions/$SubscriptionID"
+# Specify the value for $SubscriptionID.
+$subscriptionID = <subscription ID>
+$scope = "/subscriptions/$subscriptionID"
 
-$AntimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
+$antimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
 
-#Replace location "eastus" with the value that you want to use.
-New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $AntimalwarePolicy -Location eastus –AssignIdentity
+# Replace location "eastus" with the value that you want to use.
+New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $antimalwarePolicy -Location eastus –AssignIdentity
 
 ```
 

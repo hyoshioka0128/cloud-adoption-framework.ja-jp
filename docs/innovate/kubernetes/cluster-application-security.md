@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6a5ae0083e619dc2db975682b5f50c0e8e2f1936
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 919291ade8c760429eb5df4d848f745014912eb6
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224019"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861992"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -37,7 +37,7 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **セキュリティの基本に関するホワイトペーパーを入念に確認する。** セキュリティで保護された Kubernetes 環境の主な目標は、実行されるアプリケーションを保護すること、セキュリティの問題を迅速に特定して対処できること、および今後同様の問題を回避することです。 | [Kubernetes を保護するための決定版ガイド (ホワイトペーパー)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **クラスター ノードのセキュリティ強化の設定を確認する。** セキュリティが強化されたホスト OS を使用すると、攻撃の対象範囲が減り、コンテナーを安全にデプロイできます。 | [AKS 仮想マシン ホストでのセキュリティ強化](https://docs.microsoft.com/azure/aks/security-hardened-vm-host-image)     |
-> | **クラスターのロールベースのアクセス制御 (RBAC) を設定する。** この制御メカニズムを使用して、ユーザーまたはユーザー グループに対して、リソースの作成または変更、実行中のアプリケーション ワークロードのログの表示などの操作を行うアクセス許可を割り当てることができます。 | [Kubernetes でのロールベースのアクセス制御 (RBAC) について (ビデオ)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br/> [Azure AD と Azure Kubernetes Service を統合する](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br/> [クラスター構成ファイルへのアクセスの制限](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
+> | **クラスターのロールベースのアクセス制御 (RBAC) を設定する。** この制御メカニズムを使用して、ユーザーまたはユーザー グループに対して、リソースの作成または変更、実行中のアプリケーション ワークロードのログの表示などの操作を行うアクセス許可を割り当てることができます。 | [Kubernetes でのロールベースのアクセス制御 (RBAC) について (ビデオ)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [Azure AD と Azure Kubernetes Service を統合する](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br> [クラスター構成ファイルへのアクセスの制限](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>運用環境へのデプロイとベスト プラクティスの適用
 
@@ -62,7 +62,7 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > | **クラスターのエグレス トラフィックを制限する。** クラスターのエグレス トラフィックを制限する場合に、どのポートとアドレスを許可するか確認します。 Azure Firewall またはサードパーティ製ファイアウォール アプライアンスを使用して、エグレス トラフィックをセキュリティで保護し、これらの必要なポートとアドレスを定義することができます。 | [AKS でクラスター ノードに対するエグレス トラフィックを制御する](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
 > | **Web アプリケーション ファイアウォール (WAF) を使用してトラフィックをセキュリティで保護する。** Kubernetes クラスターのイングレス コントローラーとして Azure Application Gateway を使用します。  | [Azure Application Gateway をイングレス コントローラーとして構成する](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **ワーカー ノードにセキュリティとカーネルの更新プログラムを適用する。** AKS ノードの更新エクスペリエンスを理解します。 クラスターを保護するために、AKS のノードにセキュリティ更新プログラムが自動的に適用されます。 これらの更新プログラムには、OS のセキュリティ修正プログラムやカーネルの更新プログラムが含まれています。 これらの更新プログラムの中には、プロセスを完了するためにノードの再起動が必要なものがあります。 | [更新プログラムを適用するために Kured を使用してノードを自動的に再起動する](https://docs.microsoft.com/azure/aks/node-updates-kured) |
-> | **コンテナーとクラスターのスキャン ソリューションを構成する。** Azure Container Registry にプッシュされたコンテナーをスキャンし、クラスター ノード、クラウド トラフィック、およびセキュリティ制御についてより詳しく把握します。 | [Azure Container Registry と Security Center の統合](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Azure Kubernetes Service と Security Center の統合](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
+> | **コンテナーとクラスターのスキャン ソリューションを構成する。** Azure Container Registry にプッシュされたコンテナーをスキャンし、クラスター ノード、クラウド トラフィック、およびセキュリティ制御についてより詳しく把握します。 | [Azure Container Registry と Security Center の統合](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br> [Azure Kubernetes Service と Security Center の統合](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 
 ## <a name="optimize-and-scale"></a>最適化とスケーリング
 

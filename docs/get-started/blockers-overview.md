@@ -3,16 +3,16 @@ title: クラウド導入の阻害要因を取り除く
 description: クラウド導入フレームワークを使用して阻害要因を取り除きます。 これらのシナリオでは、クラウド導入フレームワークを使用したロードマップを提供します。
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/03/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 497fa72c60d1890efa0b8dbca76464a57782560d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6ae30bea30c80644e30f5f18b44a07d01c49131a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230595"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753253"
 ---
 # <a name="accelerate-adoption"></a>導入を加速する
 

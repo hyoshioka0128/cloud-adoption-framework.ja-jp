@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: c966129e01d9cf97af0ac1db0a8ac7bec8efb751
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: 45fe536ab6ae8efd9a11adb6e7f8776a05f76566
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401137"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815516"
 ---
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
@@ -31,8 +31,8 @@ SOC が成熟するにつれて、セキュリティ運用は次のようにな�
 
 - **ビジネス リスク管理への昇格:** SOC は、組織のビジネ スリスク管理の重要なコンポーネントになっています。
 - **メトリックと目標:** SOC の有効性の追跡は、"検出までの時間" から次の主要な指標に進化しています。
-  - 平均応答時間 (MTTA) による*応答性*
-  - 平均修復時間 (MTTR) による*修復速度*
+  - 平均応答時間 (MTTA) による_応答性_
+  - 平均修復時間 (MTTR) による_修復速度_
 - **テクノロジの進化:** SOC テクノロジは、SIEM 内のログの静的分析だけの使用から、特殊なツールや高度な分析手法の使用の追加へと、発展しています。 これにより、SIEM の広範なビューを補完する高品質のアラートと調査エクスペリエンスを提供する、資産に関する深い分析情報が得られます。 どちらの種類のツールでも、悪意のある攻撃者である可能性がある異常なアクションの特定と優先順位付けのために、AI と機械学習、動作分析、および統合脅威インテリジェンス (TI) の使用が増えています。
 - **脅威ハンティング:** SOC では、高度な攻撃者を事前に特定し、最前線のアナリストのキューから雑音の多いアラートを除くために、仮説主導の脅威ハンティングが追加されています。
 - **インシデント管理:** 法律、コミュニケーション、およびその他のチームでインシデントの非技術的要素を調整するため、規範が形式化されています。

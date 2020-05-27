@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: e5e6e495aed54648ec480c8def0ae9c784b6b800
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ed1bce61d2a5ba51459df60e94949e0cdd5e533d
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216913"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815448"
 ---
 <!-- cSpell:ignore ccoe -->
 
 # <a name="align-responsibilities-across-teams"></a>チーム間で責任を調整する
 
-"*実行責任、説明責任、助言、通知*" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 この記事では、「[チーム構造の確立](./organization-structures.md)」で説明されている組織構造の RACI マトリックスの例を示します。
+"_実行責任、説明責任、助言、通知_" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 この記事では、「[チーム構造の確立](./organization-structures.md)」で説明されている組織構造の RACI マトリックスの例を示します。
 
 - [クラウド導入チームのみ](#cloud-adoption-team-only)
 - [MVP のベスト プラクティス](#best-practice-minimum-viable-product-mvp)

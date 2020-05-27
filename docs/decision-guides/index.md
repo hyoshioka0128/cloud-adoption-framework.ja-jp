@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1da093324253a3a551b1bb8306a0727536ec46b5
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2f619ae4b8d1b4cc28062537489ddc6d30f4f6e7
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753774"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814717"
 ---
 # <a name="architectural-decision-guides"></a>アーキテクチャの決定ガイド
 
@@ -25,7 +25,7 @@ ms.locfileid: "83753774"
 
 ## <a name="decision-guidance-categories"></a>決定ガイダンスのカテゴリ
 
-次の各カテゴリは、すべてのクラウド デプロイの基盤となるテクノロジを表しています。 サンプルのガバナンス体験では、例に使用しているビジネスのニーズに基づいて、これらのテクノロジに関連する設計上の決定を行います。これらの決定事項の一部は、ご自身の組織のニーズと一致しない場合があります。 以下のセクションでは、これらの各カテゴリについて代替オプションを説明しているので、ご自分の要件により適したパターンまたはモデルを選択できます。
+次のカテゴリは、すべてのクラウド デプロイの基盤となるテクノロジを表しています。 サンプルのガバナンス体験では、例に使用しているビジネスのニーズに基づいて、これらのテクノロジに関連する設計上の決定を行います。これらの決定事項の一部は、ご自身の組織のニーズと一致しない場合があります。 以下のセクションでは、各カテゴリについて代替オプションを説明しているので、ご自分の要件により適したパターンまたはモデルを選択できます。
 
 [サブスクリプション](./subscriptions/index.md):組織の所有権、請求、管理機能に合わせて、クラウド デプロイのサブスクリプション設計とアカウント構造を計画します。
 

@@ -387,7 +387,7 @@ items:
                 items:
                   - name: Azure App Service と Azure SQL Database にアプリをリファクターする
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                  - name: Azure App Service と Azure SQL Database マネージド インスタンスにアプリをリファクターする
+                  - name: Azure App Service と Azure SQL Managed Instance にアプリをリファクターする
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance.md
                   - name: Azure App Service でアプリをリビルドする
                     href: migrate/azure-best-practices/contoso-migration-rebuild.md
@@ -415,7 +415,7 @@ items:
                     href: 'https://docs.microsoft.com/azure/java/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: SQL Server
                 items:
-                  - name: Azure VM と Azure SQL Database マネージド インスタンスでアプリをリホストする
+                  - name: Azure VM および Azure SQL Managed Instance でのアプリのリホスト
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
                   - name: Azure VM と SQL Server AlwaysOn 可用性グループでアプリをリホストする
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
@@ -427,7 +427,7 @@ items:
                     items:
                       - name: SQL Server の Azure SQL Database へのリファクター
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb'
-                      - name: SQL Server の Azure SQL Database マネージド インスタンスへのリファクター
+                      - name: SQL Server の Azure SQL Managed Instance へのリファクター
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi'
                       - name: Azure VM 上の SQL Server への SQL Server のリファクター
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm'
@@ -483,11 +483,11 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: オンラインで SQL Server から Azure SQL Database に移行する
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: オフラインで SQL Server から Azure SQL Database マネージド インスタンスに移行する
+                      - name: オフラインで SQL Server を Azure SQL Managed Instance に移行する
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: オンラインで SQL Server から Azure SQL Database マネージド インスタンスに移行する
+                      - name: オンラインで SQL Server を Azure SQL Managed Instance に移行する
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: オンラインで Amazon RDS SQL Server を Azure SQL Database または Azure SQL Database マネージド インスタンスに移行する
+                      - name: オンラインで Amazon RDS SQL Server を Azure SQL Database または Azure SQL Managed Instance に移行する
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: オンラインで MySQL を Azure Database for MySQL に移行する
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'

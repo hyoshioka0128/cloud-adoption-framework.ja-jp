@@ -6,14 +6,14 @@ ms.service: cloud-adoption-framework
 ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.subservice: overview
-ms.openlocfilehash: 0481175abfc695d9a7eb17f537cdb3ff40fcd7a3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bdcf7b83191c2e4311759c56bd3928207dd00b8a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230555"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752811"
 ---
 # <a name="help-finding-the-appropriate-getting-started-guide"></a>適切なファースト ステップ ガイドを見つけるためのヘルプ
 

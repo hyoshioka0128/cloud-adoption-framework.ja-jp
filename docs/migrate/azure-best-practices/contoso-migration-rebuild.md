@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 04e5d34da71fb67ce6608aea5f1db5dc6f90f705
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: e09df6f954a410dedde7ecd77fd7b8bd5d429241
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401115"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862230"
 ---
 <!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
 
@@ -109,11 +109,11 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 <!-- markdownlint-disable MD033 -->
 
-**必要条件** | **詳細**
---- | ---
-Azure サブスクリプション | <li> Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。 <li> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <li> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。
-Azure インフラストラクチャ | <li> [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。
-開発者の前提条件 | Contoso は、開発者用ワークステーションに次のツールをインストールする必要があります。 <li>  [Visual Studio 2017 Community エディション: バージョン 15.5](https://visualstudio.microsoft.com) <li> .NET ワークロードが有効。 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> Windows コンテナーを使用するように設定された [Docker CE (Windows 10) または Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。
+| **必要条件** | **詳細** |
+| --- | --- |
+| Azure サブスクリプション | <li> Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/pricing/free-trial)を作成してください。 <li> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <li> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。 |
+| Azure インフラストラクチャ | <li> [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。 |
+| 開発者の前提条件 | Contoso は、開発者用ワークステーションに次のツールをインストールする必要があります。 <li>  [Visual Studio 2017 Community エディション: バージョン 15.5](https://visualstudio.microsoft.com) <li> .NET ワークロードが有効。 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> Windows コンテナーを使用するように設定された [Docker CE (Windows 10) または Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install)。 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -152,39 +152,37 @@ Contoso の管理者は次のようにプロビジョニングします。
 
 2. AKS と Azure Container Registry を使用して、マネージド Kubernetes クラスターを作成するスクリプトを実行します。
 
-   ![AKS](./media/contoso-migration-rebuild/aks1.png)
+    ![AKS](./media/contoso-migration-rebuild/aks1.png)
 
 3. ファイルを開いた状態で $location パラメーターを **eastus2** に更新し、ファイルを保存します。
 
-   ![AKS](./media/contoso-migration-rebuild/aks2.png)
+    ![AKS](./media/contoso-migration-rebuild/aks2.png)
 
 4. **[表示]**  >  **[統合ターミナル]** を選択して、Visual Studio Code で統合ターミナルを開きます。
 
-   ![AKS](./media/contoso-migration-rebuild/aks3.png)
+    ![AKS](./media/contoso-migration-rebuild/aks3.png)
 
 5. PowerShell 統合ターミナルで、Connect-AzureRmAccount コマンドを使用して Azure にサインインします。 PowerShell の使用を開始する方法の[詳細を確認](https://docs.microsoft.com/powershell/azure/get-started-azureps)してください。
 
-   ![AKS](./media/contoso-migration-rebuild/aks4.png)
+    ![AKS](./media/contoso-migration-rebuild/aks4.png)
 
 6. `az login` コマンドを実行し、Web ブラウザーを使用した認証の手順に従って、Azure CLI の認証を行います。 Azure CLI でのログインの[詳細については、こちら](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest)を参照してください。
 
-   ![AKS](./media/contoso-migration-rebuild/aks5.png)
+    ![AKS](./media/contoso-migration-rebuild/aks5.png)
 
 7. 次のコマンドを、リソース グループ名 **ContosoRG**、AKS クラスター名 **smarthotel-aks-eus2**、および新しいレジストリ名を渡して実行します。
 
-   ```PowerShell
-   .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
-   ```
+    `.\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2`
 
-   ![AKS](./media/contoso-migration-rebuild/aks6.png)
+    ![AKS](./media/contoso-migration-rebuild/aks6.png)
 
 8. Azure によって、AKS クラスターのリソースを含んだ別のリソース グループが作成されます。
 
-   ![AKS](./media/contoso-migration-rebuild/aks7.png)
+    ![AKS](./media/contoso-migration-rebuild/aks7.png)
 
 9. デプロイが完了したら、`kubectl` コマンドライン ツールをインストールします。 このツールは、Azure Cloud Shell では既にインストールされています。
 
-   `az aks install-cli`
+    `az aks install-cli`
 
 10. `kubectl get nodes` コマンドを実行して、クラスターへの接続を確認します。 ノードは、自動的に作成されたリソース グループ内の VM と同じ名前です。
 
@@ -275,9 +273,7 @@ AKS クラスターを作成し、Docker イメージをビルドしたので、
 
 2. deploy.cmd ファイルを使用し、次のコマンドを入力して **ContosoRG** リソース グループと **EUS2** リージョンに Azure リソースをデプロイします。
 
-    ```azurecli
-    .\deploy.cmd azuredeploy ContosoRG -c eastus2
-    ```
+    `.\deploy.cmd azuredeploy ContosoRG -c eastus2`
 
     ![バック エンドをデプロイする](./media/contoso-migration-rebuild/backend1.png)
 
@@ -433,11 +429,11 @@ Azure portal で、Contoso の管理者は Function App をプロビジョニン
 
 1. **[Function App]** を選択します。
 
-   ![Function App の作成](./media/contoso-migration-rebuild/function-app1.png)
+    ![Function App の作成](./media/contoso-migration-rebuild/function-app1.png)
 
 2. アプリ名 (**smarthotelpetchecker**) を指定します。 運用リソース グループ **ContosoRG** にアプリを配置します。 ホスティングの場所を**従量課金プラン**に設定し、アプリを米国東部 2 リージョンに配置します。 監視用の Application Insights インスタンスと共に新しいストレージ アカウントが作成されます。
 
-   ![Function App の設定](./media/contoso-migration-rebuild/function-app2.png)
+    ![Function App の設定](./media/contoso-migration-rebuild/function-app2.png)
 
 3. アプリがデプロイされたら、アプリのアドレスを参照して、アプリが正常に作成されたことを確認します。
 
@@ -447,7 +443,7 @@ Contoso 管理者は、フロントエンド サイトに 2 つの異なるプ�
 
 1. Azure DevOps で、プロジェクト **SmartHotelFrontend** を作成します。
 
-   ![フロントエンド プロジェクト](./media/contoso-migration-rebuild/function-app1.png)
+    ![フロントエンド プロジェクト](./media/contoso-migration-rebuild/function-app1.png)
 
 2. [SmartHotel360 フロントエンド](https://github.com/Microsoft/SmartHotel360-Website) Git リポジトリを新しいプロジェクトにインポートします。
 

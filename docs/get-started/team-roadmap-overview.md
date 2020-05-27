@@ -3,16 +3,16 @@ title: クラウド導入チーム向けのファースト ステップ ガイ�
 description: これらのファースト ステップ ガイドを使用して、クラウド導入の取り組みを担当するチームの目標と責任を理解します。 これらのガイドでは、クラウド導入フレームワークのロードマップを示しています。
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 891300cd245b96598e1bce375aef064dc3544d7a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 72d6f233f1dbdda60a0f48dbc89449915c013cf8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230431"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83751999"
 ---
 # <a name="getting-started-guides-for-cloud-adoption-teams"></a>クラウド導入チーム向けのファースト ステップ ガイド
 

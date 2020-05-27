@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 137ab71429b6f827ee0f01154ea372784327e964
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 7fc85776fee5078b17fc9e7d91b184d2ba550a66
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400923"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862689"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -428,7 +428,7 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 | --- | --- | --- |
 | [Azure Active Directory][azure-ad] <br>[Multi-Factor Authentication][multi-factor-authentication] <br> [ロールベースのアクセス制御][RBAC] <br> [既定の Azure AD ロール][Roles] <br><br><br> | [Network Watcher][NetWatch] <br> [Azure Monitor][MonitorOverview] <br> [Log Analytics][LogAnalytics] <br> | [管理グループ][MgmtGrp] <br> [サブスクリプション管理](../ready/azure-best-practices/scale-subscriptions.md) <br> [リソース グループ管理][RGMgmt] <br> [Azure サブスクリプションの制限][limits] <br><br><br> |
 
-Security | その他の Azure サービス | |
+| Security | その他の Azure サービス | |
 |-|-|-|
 | [Azure Firewall][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway の WAF][AppGWWAF] <br> [Front Door の WAF][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Azure ストレージ][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Azure Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Event Hubs][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
 
