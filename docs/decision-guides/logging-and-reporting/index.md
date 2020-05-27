@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f88d7a6e7856e1a909547d721be2e4b4a132692e
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5aa8f25ea54fc6ab8df5728bc742f6f3c9ff3886
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753533"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862468"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -36,7 +36,7 @@ ms.locfileid: "83753533"
 | 既存のオンプレミスの監視インフラストラクチャはありますか? | いいえ | はい | はい |  いいえ |
 | ログ データの外部の保存場所への格納を妨げている要件はありますか? | いいえ | はい | いいえ | いいえ |
 | クラウド監視とオンプレミス システムを統合する必要がありますか? | いいえ | いいえ | はい | いいえ |
-テレメトリ データを監視システムに送信する前に、処理またはフィルター処理する必要がありますか? | いいえ | いいえ | いいえ | はい |
+| テレメトリ データを監視システムに送信する前に、処理またはフィルター処理する必要がありますか? | いいえ | いいえ | いいえ | はい |
 
 ### <a name="cloud-native"></a>クラウドネイティブ
 
