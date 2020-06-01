@@ -7,18 +7,18 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d1e8542b1fe53c88773bd477fe7872b6fac02288
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2780347386db755cab9cc2c0a69549a75463c820
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223492"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862553"
 ---
 # <a name="initial-organization-alignment"></a>初期の組織配置
 
 あらゆるクラウド導入計画で最も重要な側面は、計画を実行する人の配置です。 人的な側面を理解しなければ、どの計画も完全ではありません。
 
-本当の意味での組織配置には時間がかかります。 特に、クラウドの導入がビジネスと IT の文化全体に拡大するにつれて、長期的な組織配置に取り組むことが重要になります。 組織配置は非常に重要であり、[セクション全体](../organize/index.md)がクラウド導入フレームワークの整理手法に割り当てられています。
+本当の意味での組織配置には時間がかかります。 特に、クラウドの導入がビジネスと IT の文化全体に拡大するにつれて、長期的な組織配置に取り組むことが重要になります。 組織配置は非常に重要であり、クラウド導入フレームワークの[整理手法](../organize/index.md)で、あるセクション全体がそれに専念しています。
 
 全面的な組織配置は、クラウド導入計画の必須の要素ではありません。 ただし、なんらかの初期の組織配置は必要です。 この記事では、組織配置に対するベスト プラクティスの出発点について説明します。 このガイダンスは、計画を完成させ、チームがクラウド導入の準備を整えるのに役立ちます。 準備ができたら、[組織配置](../organize/index.md)セクションを使用して、このガイダンスを組織に合うようにカスタマイズすることができます。
 

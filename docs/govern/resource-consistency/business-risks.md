@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17b39eba50b11ee1124e174f3bc89f3e6dada3e2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ebad1c02e22f00532ebb1fa0d16fc4b156ea9253
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218256"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755945"
 ---
 # <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>リソースの整合性規範の同期とビジネス上のリスク
 
@@ -23,7 +23,7 @@ ms.locfileid: "83218256"
 
 ## <a name="relevance"></a>関連性
 
-リソースとワークロードのデプロイに関しては、クラウドは従来のほとんどのオンプレミス データセンターよりも敏捷性と柔軟性を向上させます。 ただし、このクラウド ベースの潜在的な利点は、クラウドの導入の成功を危うくする可能性のある潜在的な管理上の欠点と対になります。 デプロイしている資産は何か? どのチームがどの資産を所有しているか? ワークロードをサポートしているリソースは十分であるか? ワークロードが正常であるかどのように把握するか?
+リソースとワークロードのデプロイに関しては、クラウドは従来のほとんどのオンプレミス データセンターよりも敏捷性と柔軟性を向上させます。 このクラウドベースの潜在的な利点には、クラウドの導入の成功を危うくする可能性のある潜在的な管理上の欠点も伴います。 デプロイしている資産は何か? どのチームがどの資産を所有しているか? ワークロードをサポートしているリソースは十分であるか? ワークロードが正常であるかどのように把握するか?
 
 リソースの整合性は、リソースが繰り返し可能な方法で、一貫してデプロイ、更新、構成されるようにし、サービスの中断を最小限に抑え、できるだけ短時間で修復されるようにするために不可欠です。
 

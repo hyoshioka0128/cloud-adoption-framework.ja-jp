@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: eda7866700edb0a1e86776f1b0f23d95799d5b67
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3968e453eb89a0f00d7fd23eeec90fb6a947cd05
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621583"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756058"
 ---
 <!-- cSpell:ignore Terraform's -->
 
@@ -63,7 +63,7 @@ ms.locfileid: "83621583"
 
 | リソース | 説明 |
 |----------|-------------|
-| [Azure アーキテクチャ レビュー](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | このオンライン評価は、ワークロード固有の、アーキテクチャと操作に関するオプションの定義に役立ちます。 |
+| [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | このオンライン評価は、ワークロード固有の、アーキテクチャと操作に関するオプションの定義に役立ちます。 |
 | [ベスト&nbsp;プラクティス&nbsp;ソース&nbsp;コード](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | このデプロイ可能なソース コードは、Azure サーバー管理サービスについてのベスト プラクティスを補完し、その導入を促進するものです。 このソース コードを使用して、運用管理を迅速に有効にし、運用ベースラインを確立します。 |
 | [運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | クラウドでの運用管理に関する決定事項を文書化し、ビジネス部門との会話を促進することで、SLA、回復性への投資、運用に関連する予算割り当てに関する整合性を確保します。 |
 

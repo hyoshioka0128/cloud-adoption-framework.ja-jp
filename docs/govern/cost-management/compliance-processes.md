@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 85df89eb5cf17631e63441a806ab15bcfd94c326
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e7a2858773edecb3cfd7e0e8b24f69db44bc6af8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220687"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755089"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>コスト管理のポリシー コンプライアンス プロセス
 
@@ -60,7 +60,7 @@ ms.locfileid: "83220687"
 
 [コスト管理規範テンプレート](./template.md)を使用して、現在のクラウド導入計画に適合するプロセスとトリガーを文書化します。
 
-導入計画に適合したコスト管理ポリシーを実行する場合のガイダンスについては、コスト管理規範の改善に関する記事を参照してください。
+導入計画に適合したコスト管理ポリシーの実行に関するガイダンスについては、「[コスト管理規範の改善](./discipline-improvement.md)」をご覧ください。
 
 > [!div class="nextstepaction"]
 > [コスト管理規範の改善](./discipline-improvement.md)

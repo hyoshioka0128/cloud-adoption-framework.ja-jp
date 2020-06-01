@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: b757a0066250a37816eed5445d79663b72a7aae3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1e25d89d5c4beccb3b1f32e846028b8d93e41a11
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219327"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756126"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -247,7 +247,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 - **Azure Advisor:** Azure Advisor は、サブスクリプションと環境の全体にわたって継続的にテレメトリを監視します。 また、Azure リソースのコストを最適化し、アプリケーション リソースのパフォーマンス、セキュリティ、可用性を向上させるためのベスト プラクティスが推奨されます。
 
-- **サービス正常性:** Azure Service Health では、アプリケーションに影響を及ぼす可能性がある Azure サービスの問題を特定します。これは、予定メンテナンス期間を計画する際に役立ちます。
+- **Azure Service Health:** Azure Service Health では、アプリケーションに影響を及ぼす可能性がある Azure サービスの問題を特定します。これは、予定メンテナンス期間を計画する際に役立ちます。
 
 - **アクティビティ ログ:** アクティビティ ログには、サブスクリプションのリソースに対するすべての操作が示されています。 提供される監査証跡によって、リソースに対する作成、更新、削除のすべての操作について、_何を_、_だれが_、_いつ_を特定できます。 アクティビティ ログ イベントがプラットフォームに保存され、クエリで使用できる期間は 90 日です。 アクティビティ ログを Log Analytics に取り込むと、長期間保存することができ、複数のリソースに対して詳細なクエリと分析を行うことができます。
 

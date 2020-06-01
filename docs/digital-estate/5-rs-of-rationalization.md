@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 21504538837030bf9a6ab84e42a09f365386fa78
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5c4098e2d5655d3b0fbb7fcb1c5a0470547421f3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214805"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753550"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 
@@ -21,7 +21,7 @@ ms.locfileid: "83214805"
 
 ## <a name="rationalization-context"></a>合理化のコンテキスト
 
-この記事に記載されている "合理化の 5 R" は、クラウドの候補と見なされるすべてのワークロードの将来見込まれる状態を分類するための優れた方法です。 ただし、この分類プロセスは、環境の合理化を試みる前の適切なコンテキスト内に配置する必要があります。 そのコンテキストを用意するために、次の根拠のない説を見直してください。
+この記事に記載されている "_合理化の 5 R_" は、クラウドの候補と見なされるすべてのワークロードの将来見込まれる状態を分類するための優れた方法です。 この分類プロセスは、環境の合理化を試みる前の適切なコンテキスト内に配置する必要があります。 そのコンテキストを用意するために、次の根拠のない説を見直してください。
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>通説:プロセスの早い段階で合理化に関する決定を下すことは容易である
 

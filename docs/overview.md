@@ -3,17 +3,17 @@ title: Azure 向けの Microsoft クラウド導入フレームワークのド�
 description: クラウド導入ライフサイクルのすべてのフェーズで戦略を策定し、目的のビジネス成果を推進するためのツール、ガイダンス、体験談を入手できます。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 06ac22741c7b61b59ae308444833852f2fcbff08
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: b6c88d978b6b7750bd687e411663d5828f6f4257
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621457"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815482"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,9 +42,7 @@ Azure 向けの Microsoft クラウド導入フレームワークのベスト �
 
 ## <a name="understand-the-lifecycle"></a>ライフサイクルについて
 
-上でキャプチャされた各手法は、広範なクラウド導入ライフサイクルの一部です。 次の図は、各手法をつないでライフサイクル全体を示しています。 このクラウド導入フレームワークは、一般的なブロッカーに打ち勝つ特定のアプローチを手法として提供する、導入の各フェーズ中お客様をサポートする完全なライフサイクルのフレームワークです。
-
-<!-- cSpell:ignore caf -->
+上記の各手法は、広範なクラウド導入ライフサイクルの一部です。 クラウド導入フレームワークは、次に示すように、一般的な阻害要因を克服するための具体的なアプローチとして各手法を提供することで、導入の各フェーズでお客様をサポートする完全なライフサイクル フレームワークです。
 
 ::: image type="content" source="./_images/caf-overview-new.svg" alt-text="Overview of the Cloud Adoption Framework" :::
 

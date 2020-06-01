@@ -3,16 +3,16 @@ title: Azure リソースの料金計算とサイズ設定
 description: Azure 向けのクラウド導入フレームワークを使用して、Azure リソースの料金計算とサイズ設定のベスト プラクティスについて学習します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df2231a5e60bebf25124cfdc42110c13f80833e3
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 237ec750ddc8be3614d686c325458f12e9b0f5d9
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400663"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862366"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "83400663"
 
 ## <a name="best-practices-by-team-and-accountability"></a>ベスト プラクティス (チーム別) とアカウンタビリティ
 
-企業全体のコスト管理は、クラウド ガバナンスおよびクラウド運用機能です。 ただし、すべてのコスト管理を決定することで、ワークロードをサポートする資産が変更されます。 これらの変更がワークロードのアーキテクチャに影響を与える場合は、エンドユーザーとビジネス機能への影響を最小限に抑えるために、追加の考慮事項が必要になります。 そのワークロードを構成または開発したクラウド導入チームが、これらの種類の変更を完了するためのアカウンタビリティを保持している可能性があります。
+企業全体のコスト管理は、クラウド ガバナンスおよびクラウド運用機能です。 すべてのコスト管理を決定することで、ワークロードをサポートする資産が変更されます。 これらの変更がワークロードのアーキテクチャに影響を与える場合は、エンドユーザーとビジネス機能への影響を最小限に抑えるために、追加の考慮事項が必要になります。 そのワークロードを構成または開発したクラウド導入チームが、これらの種類の変更を完了するためのアカウンタビリティを保持している可能性があります。
 
 - **タグ付けは、すべてのガバナンスにとって重要です。** すべてのワークロードとリソースが[適切な名前付けおよびタグ付け規則](../../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認し、[Azure Policy を使用してタグ付け規則を適用します](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)。
 - **適切なサイズの機会を特定します。** 環境全体の現在のリソース使用率とパフォーマンス要件を確認します。
@@ -34,7 +34,7 @@ ms.locfileid: "83400663"
 
 ## <a name="operational-cost-management-best-practices"></a>運用コスト管理のベスト プラクティス
 
-次のベスト プラクティスは、通常、修正プログラムやその他のスケジュールされたメンテナンス プロセスに従って、クラウド ガバナンスまたはクラウド運用チームのメンバーによって実行されます。 これらの各ベスト プラクティスは、この記事の後半で、実行可能なガイダンスにマップされます。
+次のベスト プラクティスは、通常、修正プログラムやその他のスケジュールされたメンテナンス プロセスに従って、クラウド ガバナンスまたはクラウド運用チームのメンバーによって実行されます。 これらのベスト プラクティスは、この記事の後半で、実行可能なガイダンスにマップされます。
 
 - **タグ付けはすべてのガバナンスにとって重要:** すべてのワークロードとリソースが[適切な名前付けおよびタグ付け規則](../../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認し、[Azure Policy を使用してタグ付け規則を適用します](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)。
 - **適切なサイズの機会の特定:** 環境全体の現在のリソース使用率とパフォーマンスの要件を確認して、一定期間 (通常は 90 日以上) にわたって使用されているリソースを特定します。
@@ -48,10 +48,10 @@ ms.locfileid: "83400663"
 
 ## <a name="workload-cost-management-best-practices"></a>ワークロード コスト管理のベスト プラクティス
 
-アーキテクチャを変更する前に、ワークロードの技術リーダーに問い合わせてください。 [Azure アーキテクチャ レビュー](https://docs.microsoft.com/assessments/?id=azure-architecture-review) と [Azure アーキテクチャ](https://docs.microsoft.com/azure/architecture/framework) フレームワークを使用したワークロードの確認を容易にし、次の種類のアーキテクチャ変更に関する決定について説明します。
+アーキテクチャを変更する前に、ワークロードの技術リーダーに問い合わせてください。 [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) と [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) を使用したワークロードの確認を容易にし、次の種類のアーキテクチャ変更に関する決定について説明します。
 
 - **Azure App Service。** すべての Premium レベルの App Service プランについて運用上の要件を確認します。 ワークロードのビジネス要件と、基になる資産の構成を理解していないと、Premium レベルのプランが必要かどうかを判断するのが困難になります。
-- **垂直を上回る水平スケーリング。** 複数の小さいインスタンスを使用すると、1 つの大きなインスタンスを簡単にスケーリングできます。 これによりスケーリングの自動化が可能になり、コストの最適化が実現します。 ただし、ワークロードを水平方向にスケーリングできるようにするには、アプリケーションがべき等であることを技術チームが確認する必要があります。 水平方向のスケールを実現するには、まず、アプリケーションのさまざまなレイヤーのコードと構成を変更する必要があります。
+- **垂直を上回る水平スケーリング。** 複数の小さいインスタンスを使用すると、1 つの大きなインスタンスを簡単にスケーリングできます。 これによりスケーリングの自動化が可能になり、コストの最適化が実現します。 ワークロードを水平方向にスケーリングできるようにするには、アプリケーションがべき等であることを技術チームが確認する必要があります。 水平方向のスケールを実現するには、まず、アプリケーションのさまざまなレイヤーのコードと構成を変更する必要があります。
 - **自動スケール。** すべての App Service で自動スケールを有効にして、バースト可能な数のより小さな VM を許可します。 自動スケーリングの有効化には、同じべき等要件があるため、ワークロード アーキテクチャに関する知識が必要です。 運用上の変更を行う前に、ワークロードとサポート資産が、水平スケーリングと自動スケーリングについて導入チームによって承認されている必要があります。
 - **サーバーレス テクノロジの実装:** VM ワークロードは、多くの場合、ダウンタイムを回避するために "現状のまま" で移行されます。 VM は、断続的で実行期間が短いタスクや、その逆に長時間かかるタスクをホストしている場合もよくあります。 たとえば、Windows タスク スケジューラや PowerShell スクリプトでなどの、スケジュールされたタスクを実行する VM です。 これらのタスクが実行中でないときには、それにもかかわらず VM とディスク ストレージのコストが費やされています。 移行後に、ワークロードのレイヤーを Azure Functions や Azure Batch ジョブなどのサーバーレス テクノロジに再構築することを検討してください。
 
@@ -93,7 +93,7 @@ Azure リソースの月額料金を予測するために、利用できるツ�
 
 ワークロードをサポートする Azure VM をデプロイするときは、さまざまなオプションを選択できます。 各種類の VM には特定の機能があり、さまざまな組み合わせの CPU、メモリ、およびディスクが用意されています。 VM は以下のようにグループ化されます。
 
-| **Type** | **詳細** | **用途** |
+| Type | 詳細 | 用途 |
 |---|---|---|
 | **汎用目的** | CPU とメモリのバランスがとれています。 | テストと開発、小規模から中規模のデータベース、小規模から中規模のボリュームに適しています。 | トラフィック Web サーバー。 |
 | **コンピューティング最適化** | メモリに対する CPU の比が大きくなっています。 | トラフィック量が中程度の Web サーバー、ネットワーク アプライアンス、バッチ処理、アプリ サーバーに適しています。 |
@@ -126,9 +126,9 @@ Azure では、ストレージ データのさまざまな種類が提供され�
 
 <!-- markdownlint-disable MD033 -->
 
-| **データの種類** | **詳細** | **使用方法** |
+| データ型 | 詳細 | 使用法 |
 | ---|---|---|
-| **BLOB** | テキスト データやバイナリ データなどの大量の非構造化オブジェクトを格納するために最適化されています。 | HTTP/HTTPS 経由でどこからでもデータにアクセスします。 | ストリーミングやランダム アクセスのシナリオに使用します。 たとえば、イメージやドキュメントをブラウザーに直接提供する、ビデオやオーディオをストリーム配信する、バックアップやディザスター リカバリーのデータを格納するなどです。 |
+| **BLOB** | テキスト データやバイナリ データなどの大量の非構造化オブジェクトを格納するために最適化されています。 | HTTP/HTTPS 経由でどこからでもデータにアクセスします。 <br><br> ストリーミングやランダム アクセスのシナリオに使用します。 たとえば、イメージやドキュメントをブラウザーに直接提供する、ビデオやオーディオをストリーム配信する、バックアップやディザスター リカバリーのデータを格納するなどです。 |
 | **[ファイル]** | マネージド ファイル共有は SMB 3.0 経由でアクセスされます。 | オンプレミスのファイル共有を移行する場合に、ファイル データへの複数アクセスおよび接続を提供するために使用します。 |
 | **ディスク** | ページ BLOB に基づきます。 <br><br> ディスクの種類 (速度): Standard HDD、Standard SSD、Premium SSD、または Ultra ディスク。 <br><br> ディスク管理: アンマネージド (ユーザーがディスクの設定とストレージを管理する) またはマネージド (ユーザーがディスクの種類を選択し、Azure 側でディスクを管理する)。 | VM には Premium ディスクを使用します。 簡単な管理とスケーリングのためにはマネージド ディスクを使用します。 |
 | **キュー** | 認証された呼び出し (HTTP または HTTPS) を介してアクセスされる大量のメッセージを格納および取得します。 | 非同期メッセージ キューを使用してアプリのコンポーネントを接続します。 |
@@ -142,7 +142,7 @@ Azure Storage には、ブロック BLOB データにアクセスするための
 
 <!-- markdownlint-disable MD033 -->
 
-| **アクセス層** | **詳細** | **使用方法** |
+| アクセス層 | 詳細 | 使用法 |
 | --- | --- | --- |
 | **ホット** | より高いストレージ コスト、より低いアクセスおよびトランザクション コスト <br><br> これは既定のアクセス層です。 | 頻繁にアクセスされる、アクティブに使用中のデータに使用します。 |
 | **クール** | より低いストレージ コスト、より高いアクセスおよびトランザクション コスト。 <br><br> 少なくとも 30 日間格納します。 | 短期に格納し、データは使用できますが、アクセス頻度は低いものです。 |
@@ -156,7 +156,7 @@ Azure では、さまざまな種類のストレージ アカウントとパフ�
 
 <!-- markdownlint-disable MD033 -->
 
-| **アカウントの種類** | **詳細** | **使用方法** |
+| アカウントの種類 | 詳細 | 使用法 |
 | --- | --- | --- |
 | **汎用 v2 Standard レベル** | BLOB (ブロック、ページ、追加)、ファイル、ディスク、キュー、およびテーブルをサポートしています。 <br><br> ホット、クール、およびアーカイブのアクセス層をサポートしています。 ゾーン冗長ストレージ (ZRS) がサポートされています。 | ほとんどのシナリオの、ほとんどの種類のデータに使用します。 Standard ストレージ アカウントは、HDD または SSD ベースとして指定できます。 |
 | **汎用 v2 Premium レベル** | BLOB ストレージ データ (ページ BLOB) をサポートしています。 ホット、クール、およびアーカイブのアクセス層をサポートしています。 ZRS がサポートされています。 <br><br> SSD に格納されます。 | すべての VM のために使用することをお勧めします。 |
@@ -169,7 +169,7 @@ Azure では、さまざまな種類のストレージ アカウントとパフ�
 
 ストレージ アカウントでは、回復力と高可用性のためにさまざまな種類の冗長性を使用できます。
 
-| **Type** | **詳細** | **使用方法** |
+| Type | 詳細 | 使用法 |
 | --- | --- | --- |
 | **ローカル冗長ストレージ (LRS)** | 1 つのストレージ単位内で、別個の障害ドメインと更新ドメインにレプリケートすることで、ローカルの障害から保護します。 1 つのデータ センター内に複数のデータコピーを保管します。 オブジェクトに年間 99.999999999% (9 が 11 個) 以上の持続性を提供します。 | アプリが格納するデータは簡単に再構築できるものかどうかを考慮に入れます。 |
 | **ゾーン冗長ストレージ (ZRS)** | 1 つのリージョン内の 3 つのストレージ クラスター間でレプリケートすることで、データ センター停止の保護に冗長性を持たせます。 各ストレージ クラスターは、物理的に分離されており、独自の可用性ゾーン内に置かれています。 複数のデータセンターまたはリージョンにわたってデータのコピーを複数保持することで、年間 99.9999999999% (9 が 12 個) 以上のオブジェクトの持続性を提供します。 | 一貫性、持続性、および高可用性が必要かどうかを考慮します。 複数のゾーンが永続的に影響を受けるリージョンの災害からは保護されないことがあります。 |
@@ -178,11 +178,11 @@ Azure では、さまざまな種類のストレージ アカウントとパフ�
 
 **詳細情報:**
 
-- Azure Storage の料金を[確認します](https://azure.microsoft.com/pricing/details/storage)。
-- 大量のデータの Azure BLOB とファイルへの導入に関して、Azure Import/Export の[詳細を確認します](https://docs.microsoft.com/azure/storage/common/storage-import-export-service)。
-- ストレージ データの種類の、BLOB、ファイル、およびディスクを[比較します](https://docs.microsoft.com/azure/storage/common/storage-introduction)。
+- [Azure Storage の料金](https://azure.microsoft.com/pricing/details/storage)を確認します。
+- [Azure Import/Export サービス](https://docs.microsoft.com/azure/storage/common/storage-import-export-service)を使用して大量のデータを Azure Blob Storage と Azure Files に安全にインポートする方法について説明します。
+- [BLOB、ファイル、ディスク ストレージのデータの種類](https://docs.microsoft.com/azure/storage/common/storage-introduction)を比較します。
 - [アクセス レベル](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)の詳細を確認します。
-- さまざまな種類のストレージ アカウントを[確認します](https://docs.microsoft.com/azure/storage/common/storage-account-overview)。
+- [さまざまな種類のストレージ アカウント](https://docs.microsoft.com/azure/storage/common/storage-account-overview)を確認します。
 - LRS、ZRS、GRS、読み取りアクセス GRS など、[Azure Storage の冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)について説明します。
 - [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) の詳細を確認します。
 
@@ -207,7 +207,7 @@ Microsoft の統合されたオンプレミス/Azure 製品ポートフォリオ
 
 - Azure ハイブリッド特典の節約額計算ツールを[見てみます](https://azure.microsoft.com/pricing/hybrid-benefit)。
 - [Windows Server 向けの Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit)の詳細を確認します。
-- SQL Server Azure VM の料金ガイダンスを[確認します](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)。
+- [SQL Server Azure VM の料金ガイダンス](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)を確認します。
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>ベスト プラクティス:予約 VM インスタンスを使用する
 
@@ -237,9 +237,9 @@ _図 1:Azure 予約 VMs。_
 
 **詳細情報:**
 
-- Azure Consumption API の[概要を確認します](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview)。
-- Power BI Desktop で Azure Consumption Insights に接続すること[について学びます](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights)。
-- ロール ベースのアクセス制御 (RBAC) を使用して、Azure の課金情報へのアクセスを管理する[方法について学びます](https://docs.microsoft.com/azure/billing/billing-manage-access)。
+- [Azure Consumption API の概要](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview)を確認します。
+- [Power BI Desktop で Azure Consumption Insights に接続する方法](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights)を確認します。
+- [ロール ベースのアクセス制御 (RBAC) を使用して、Azure の課金情報へのアクセスを管理する](https://docs.microsoft.com/azure/billing/billing-manage-access)方法について学びます。
 
 ## <a name="best-practice-monitor-resource-utilization"></a>ベスト プラクティス:リソースの使用率を監視する
 
@@ -253,8 +253,8 @@ Azure では、リソースが消費されたときに使用した分だけ支�
 
 **詳細情報:**
 
-- [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) と [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) の概要を表示しますします。
-- Advisor のコストに関する推奨事項を[表示します](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)。
+- [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) と [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) の概要を確認します。
+- [Azure Advisor のコストに関する推奨事項](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)を確認します。
 - [推奨事項に従ってコストを最適化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)し、[予期しない料金を防ぐ](https://docs.microsoft.com/azure/billing/billing-getting-started)方法を学びます。
 - [Azure Resource Optimization (ARO) ツールキット](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)について学びます。
 
@@ -306,11 +306,11 @@ Azure Cost Management では、次の操作が可能になります。
 
 **詳細情報:**
 
-- Azure Cost Management の[概要を表示します](https://docs.microsoft.com/azure/cost-management/overview)。
-- Azure Cost Management を使用してクラウドへの投資を最適化する[方法を学びます](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices)。
-- Azure Cost Management のレポートを使用する[方法を学びます](https://docs.microsoft.com/azure/cost-management/use-reports)。
-- 推奨事項に従ってコストを最適化することに関する[チュートリアルを表示します](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)。
-- Azure Consumption API について[確認します](https://docs.microsoft.com/rest/api/consumption/budgets)。
+- [Azure Cost Management の概要](https://docs.microsoft.com/azure/cost-management/overview)を確認します。
+- [Azure Cost Management を使用してクラウドへの投資を最適化する](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices)方法を学びます。
+- [Azure Cost Management のレポートを使用する](https://docs.microsoft.com/azure/cost-management/use-reports)方法を学びます。
+- [推奨事項に従ってコストを最適化する](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)ことに関するチュートリアルを確認します。
+- [Azure Consumption API](https://docs.microsoft.com/rest/api/consumption/budgets) について確認します。
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>ベスト プラクティス:リソース グループの予算を実施する
 
@@ -321,8 +321,8 @@ Azure Cost Management では、次の操作が可能になります。
 
 **詳細情報:**
 
-- Azure Budgets でコストを管理する[方法を学びます](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)。
-- [チュートリアルに従って](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)、Azure の予算を作成して管理します。
+- [Azure Budgets でコストを管理する](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)方法を学びます。
+- [Azure の予算の作成と管理](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)に関するチュートリアルを確認します。
 
 ## <a name="best-practice-review-azure-advisor-recommendations"></a>ベスト プラクティス:Azure Advisor の推奨事項を確認する
 
@@ -344,11 +344,11 @@ Azure にリソースを移動し、それらの診断ログを有効にする�
 
 **詳細情報:**
 
-- 使用量と推定コストの監視[について学びます](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs)。
+- [使用量と推定コストの監視](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs)について学びます。
 
 ## <a name="best-practice-optimize-storage"></a>ベスト プラクティス:ストレージを最適化する
 
-導入の前にベスト プラクティスに従ってストレージを選択した場合は、おそらくいくつかの利点を得ることになります。 ただし十中八九は、まだ最適化できるその他のストレージ コストがあります。 BLOB やファイルは時間の経過と共に古くなります。 データがもはや使用されない可能性もありますが、規制の要件のため、データを一定期間保管する必要がある可能性があります。 そのため、元の導入に使用したパフォーマンスが高いストレージにデータを格納する必要がない場合があります。
+導入の前にベスト プラクティスに従ってストレージを選択すると、いくつかの利点が得られることでしょう。 おそらく追加のストレージ コストの最適化につながります。 BLOB やファイルは時間の経過と共に古くなります。 データがもはや使用されない可能性もありますが、規制の要件のため、データを一定期間保管する必要がある可能性があります。 そのため、元の導入に使用したパフォーマンスが高いストレージにデータを格納する必要がない場合があります。
 
 古いデータを識別して、より低コストのストレージ領域に移動することが、月単位のストレージ予算とコスト削減に大きな影響を及ぼすことがあります。 Azure では、こうした古いデータを識別して格納する場合に役立つ方法を多数提供しています。
 
@@ -358,7 +358,8 @@ Azure にリソースを移動し、それらの診断ログを有効にする�
 **詳細情報:**
 
 - [アクセス レベル](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)の詳細を確認します。
-- StorSimple と、[StorSimple の価格](https://azure.microsoft.com/pricing/details/storsimple)の[概要を確認します](https://docs.microsoft.com/azure/azure-monitor/overview)。
+- [StorSimple の概要](https://docs.microsoft.com/azure/azure-monitor/overview)を確認します。
+- [StorSimple の価格](https://azure.microsoft.com/pricing/details/storsimple)を確認します。
 
 ## <a name="best-practice-automate-vm-optimization"></a>ベスト プラクティス:VM の最適化を自動化する
 
@@ -368,9 +369,9 @@ VM は、Azure Automation、仮想マシン スケール セット、自動シ�
 
 **詳細情報:**
 
-- 垂直方向の自動スケーリングを使用[する方法を学びます](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision)。
-- VM の自動開始を[スケジュールします](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start)。
-- Azure Automation で業務時間外の VM を開始または停止する[方法を学びます](https://docs.microsoft.com/azure/automation/automation-solution-vm-management)。
+- [垂直方向の自動スケーリング](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision)について学びます。
+- 「[Azure DevTest Labs: Schedule VM auto-start](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start)」 (Azure DevTest Labs: VM の自動開始をスケジュールする) を確認します。
+- [Azure Automation で業務時間外の VM を開始または停止する](https://docs.microsoft.com/azure/automation/automation-solution-vm-management)方法を確認します。
 - [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) と [Azure Resource Optimization (ARO) ツールキット](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)に関する詳細情報を表示します。
 
 ## <a name="best-practice-use-logic-apps-and-runbooks-with-budgets-api"></a>ベスト プラクティス:Budgets API によって Logic Apps と Runbook を使用する

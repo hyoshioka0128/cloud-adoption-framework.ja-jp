@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b56c599be38c83c325ffbd00fba077452019e0e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4850fe8377c642ae7af2c763ee28c13d90f25b61
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220398"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754985"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>デプロイ高速化ポリシーのコンプライアンス プロセス
 
-この記事では、[デプロイ高速化規範](./index.md)を統制するポリシー準拠プロセスに対するアプローチについて説明します。 クラウド構成の効果的なガバナンスは、問題を検出し、それらのリスクを修正するためのポリシーを適用するように設計された手動プロセスを繰り返すことから始まります。 ただし、これらのプロセスを自動化し、ツールで補完することで、ガバナンスのオーバーヘッドを軽減し、逸脱に迅速に対応することができます。
+この記事では、[デプロイ高速化規範](./index.md)を統制するポリシー準拠プロセスに対するアプローチについて説明します。 クラウド構成の効果的なガバナンスは、問題を検出し、それらのリスクを修正するためのポリシーを適用するように設計された手動プロセスを繰り返すことから始まります。 これらのプロセスを自動化して補完することで、ガバナンスのオーバーヘッドを軽減し、逸脱に迅速に対応することができます。
 
 ## <a name="planning-review-and-reporting-processes"></a>計画、レビュー、レポート作成のプロセス
 
@@ -61,7 +61,7 @@ ms.locfileid: "83220398"
 
 [デプロイ高速化規範テンプレート](./template.md)を使用して、現在のクラウド導入計画に適合するプロセスとトリガーを文書化します。
 
-導入計画に適合したクラウド管理ポリシーを実行する場合のガイダンスについては、規範の改善に関する記事を参照してください。
+導入計画に適合したクラウド管理ポリシーを実行する場合のガイダンスについては、「[デプロイ加速規範の改良](./discipline-improvement.md)」を参照してください。
 
 > [!div class="nextstepaction"]
 > [デプロイ加速規範の改良](./discipline-improvement.md)

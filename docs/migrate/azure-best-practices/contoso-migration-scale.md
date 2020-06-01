@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: cb8fba789ef2f8d66d1f1a7a6480d37e662fc525
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c0b0bde877de2ae03decebe1b0237e1ba406e453
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222302"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861074"
 ---
 <!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -352,7 +352,7 @@ Contoso は、Azure で運用するようになった、新しく移行したア
 
 - これらのツールを使用して、さまざまなソースから簡単にデータを収集し、豊富な分析情報を入手できます。 たとえば、Contoso は VM の CPU ディスク使用量やメモリ使用量を把握し、複数の VM 間のアプリケーションとネットワークの依存関係を可視化することができます。アプリケーションのパフォーマンスを追跡することもできます。
 - これらのクラウド監視ツールは、問題の是正に使用することや、サービス ソリューションと統合することも可能です。
-- Azure での監視の詳細については、[こちらを参照してください](https://docs.microsoft.com/azure/azure-monitor/overview)。
+- Azure での監視の詳細については、[こちら](https://docs.microsoft.com/azure/azure-monitor/overview)をご覧ください。
 
 ### <a name="business-continuity-and-disaster-recovery"></a>事業継続とディザスター リカバリー
 

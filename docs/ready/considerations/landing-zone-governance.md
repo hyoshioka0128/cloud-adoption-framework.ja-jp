@@ -3,16 +3,16 @@ title: ランディング ゾーンのガバナンスの改善
 description: ランディング ゾーンのガバナンスの改善
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9f0005c3d84f1a9f49c3756932838bbe5634269d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fd500f00ecd021a1d05904c675d63a64e8b6764b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213955"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756534"
 ---
 # <a name="improve-landing-zone-governance"></a>ランディング ゾーンのガバナンスの改善
 
@@ -20,7 +20,7 @@ ms.locfileid: "83213955"
 
 ## <a name="landing-zone-governance-best-practices"></a>ランディング ゾーンのガバナンスのベスト プラクティス
 
-- **初期ランディングのガバナンス:** [ガバナンスを始めるための基礎](../../govern/guides/complex/index.md)の確立に関する記事は、最初のいくつかのランディング ゾーンに初期ガバナンス ツールを追加する際に役立ちます。 これらのプラクティスは、導入とガバナンスのスケーリングに役立ち、安定したコスト管理の実装にも役立ちます。 このアプローチは次のものから始まります。リソースの編成、ポリシー定義、RBAC ロール、およびブループリントの定義。
+- **初期ランディングのガバナンス:** [初期のガバナンス基盤](../../govern/guides/complex/index.md)の確立に関する記事は、最初のいくつかのランディング ゾーンに初期ガバナンス ツールを追加する際に役立ちます。 これらのプラクティスは、導入とガバナンスのスケーリングに役立ち、安定したコスト管理の実装にも役立ちます。 このアプローチは、リソース編成、ポリシー定義、RBAC ロール、ブループリント定義から始まります。
 - **[名前付けとタグ付けの標準](../azure-best-practices/naming-and-tagging.md):** 名前付けとタグ付けの一貫性を確保します。これは、安定したガバナンス プラクティスを確立するための基本データです。
 - **[ワークロード間にわたってコストを追跡する](../azure-best-practices/track-costs.md):** 最初のランディング ゾーンのコストの追跡を始めます。 複数のワークロードとロール間で一貫性を適用する方法を評価します。
 - **[複数のサブスクリプションでスケーリングする](../azure-best-practices/scale-subscriptions.md):** 複数のサブスクリプションが要件になるため、このランディング ゾーンとその他のランディング ゾーンのスケーリング方法を評価します。

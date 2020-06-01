@@ -3,16 +3,16 @@ title: 健全な運用モデルで顧客の成功を実現する
 description: 無料のセルフサービス クラウド導入フレームワークとその他のツールを使用して、お客様の成功を実現するクラウド導入の意思決定に役立てることができます。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1155431e10a53d34eaa8e8c585c40c09d7be06f0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 54ea9341cfcd5064a6cae737f302ef03736f21af
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230571"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752861"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model"></a>健全な運用モデルで顧客の成功を実現する
 
@@ -45,9 +45,9 @@ ms.locfileid: "83230571"
 
 ![共有アーキテクチャの原則](../_images/shared-principles.png)
 
-上記の原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。
+上記の原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。
 
 - [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) では、ソリューション、ワークロード、および完全なポートフォリオにわたる個々の資産の原則が評価されます。
 - [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)では、特定の技術的なソリューションを開発および管理するために、これらの原則が適用されます。
-- [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework) では、アーキテクチャの決定をガイドするために、ワークロード全体でこれらの原則のバランスをとることができます。
+- [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) では、アーキテクチャの決定を導くために、ワークロード全体でこれらの原則のバランスをとることができます。
 - [クラウド導入フレームワーク](../index.yml)では、確実にポートフォリオ全体で原則がスケーリングされ、適切に管理された環境にわたって導入チームが有効になります。

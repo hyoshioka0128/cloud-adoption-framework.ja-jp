@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 69d1aaf7ff2a5bd3d71cb03fd1149019792c71f1
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 8eee7eeaf2406a94ee703054ed5f1b9e369bf5a2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401280"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755653"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -45,7 +45,7 @@ Terraform のクラウド導入フレームワークのファンデーション 
 | リソース グループ | ファンデーションに必要なコア リソース グループ |
 | アクティビティ ログ | サブスクリプションのすべてのアクティビティの監査とアーカイブ: <li> ストレージ アカウント <li> Azure Event Hubs |
 | 診断ログ | すべての操作ログは、特定の日数だけ保持されます。 <li> ストレージ アカウント <li> Event Hubs |
-| Log Analytics | すべての操作ログを格納します。 詳細なアプリケーションのベスト プラクティスのレビューのための一般的なソリューションのデプロイ: <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
+| Log Analytics | すべての操作ログを格納します。 詳細なアプリケーションのベスト プラクティスのレビューのための一般的なソリューションのデプロイ: <li> Networkmonitoring <li> Adassessment <li> Adreplication <li> Agenthealthassessment <li> Dnsanalytics <li> Keyvaultanalytics |
 | Azure Security Center | セキュリティ検疫メトリックおよびメールと電話番号に送信されるアラート |
 
 <!-- markdownlint-enable MD033 -->
@@ -72,13 +72,13 @@ Terraform ランディング ゾーンでは、次の決定事項が示されま
 | コンポーネント              | 決定事項                                                                                                                                                                                                                                                                | 他の方法                                                                                                                                                                                                                                          |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ログ記録と監視 | Azure Monitor Log Analytics ワークスペースが使用されます。 診断ストレージ アカウントとイベント ハブがプロビジョニングされます。                                                                                                                                                        |                                                                                                                                                                                                                                                                 |
-| ネットワーク                | N/A - ネットワークは別のランディング ゾーンで実装されます。                                                                                                                                                                                                                    | [ネットワーク関連の意思決定](../considerations/networking-options.md)                                                                                                                                                                                                 |
+| ネットワーク                | 該当なし - ネットワークは別のランディング ゾーンで実装されます。                                                                                                                                                                                                                    | [ネットワーク関連の意思決定](../considerations/networking-options.md)                                                                                                                                                                                                 |
 | ID               | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。                                                                                                                                                                        | [ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)                                                                                                                               |
 | ポリシー                 | このランディング ゾーンでは現在、Azure ポリシーは適用されないものと想定されています。                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
 | サブスクリプション デザイン    | 該当なし - 単一の運用サブスクリプション用に設計されています。                                                                                                                                                                                                                     | [初期サブスクリプションを作成する](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | リソース グループ        | 該当なし - 単一の運用サブスクリプション用に設計されています。                                                                                                                                                                                                                     | [サブスクリプションのスケーリング](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
 | 管理グループ      | 該当なし - 単一の運用サブスクリプション用に設計されています。                                                                                                                                                                                                                     | [サブスクリプションを整理する](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
-| Data                   | 該当なし                                                                                                                                                                                                                                                                      | 「[Azure SQL で適切なデプロイ オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)」と [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+| Data                   | 該当なし                                                                                                                                                                                                                                                                      | [Azure で正しい SQL Server のオプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)および [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 | ストレージ                | 該当なし                                                                                                                                                                                                                                                                      | [Azure Storage ガイダンス](../considerations/storage-options.md)                                                                                                                                                                                                  |
 | 命名規則       | 環境が作成されるとき、一意のプレフィックスも作成されます。 グローバルな一意名 (ストレージ アカウントなど) を必要とするリソースでは、このプレフィックスが使用されます。 カスタム名には、ランダムなサフィックスが付けられます。 次の表で説明するように、タグの使用法は必須です。 | [名前付けとタグ付けのベスト プラクティス](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
 | コスト管理        | 該当なし                                                                                                                                                                                                                                                                      | [コストの追跡](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
@@ -90,14 +90,14 @@ Terraform ランディング ゾーンでは、次の決定事項が示されま
 
 | タグ名          | 説明                                                                                        | Key             | 値の例                                    |
 |-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
-| 事業単位     | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 | BusinessUnit    | FINANCE、MARKETING、{Product Name}、CORP、SHARED |
-| コスト センター       | このリソースに関連付けられたアカウンティング コスト センター。                                              | CostCenter      | Number                                           |
-| ディザスター リカバリー | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。                                     | DR              | DR-ENABLED、NON-DR-ENABLED                       |
-| 環境       | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                   | Env             | Prod、Dev、QA、Stage、Test、Training             |
-| 所有者名        | このアプリケーション、ワークロード、またはサービスの所有者。                                                    | 所有者           | email                                            |
-| デプロイの種類   | リソースの管理方法を定義します。                                                    | deploymentType  | Manual、Terraform                                |
-| Version           | デプロイされるブループリントのバージョン。                                                                 | version         | v0.1                                             |
-| アプリケーション名  | リソースに関連付けられているアプリケーション、サービス、またはワークロードの名前。             | ApplicationName | "アプリ名"                                       |
+| 事業単位     | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 | Businessunit    | Finance、marketing、{製品名}、corp、shared |
+| コスト センター       | このリソースに関連付けられたアカウンティング コスト センター。                                              | Costcenter      | Number                                           |
+| 障害復旧 | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。                                     | Dr              | Dr-enabled、non-dr-enabled                       |
+| 環境       | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                   | Env             | Prod、dev、QA、stage、test、training             |
+| 所有者名        | このアプリケーション、ワークロード、またはサービスの所有者。                                                    | 所有者           | Email                                            |
+| デプロイの種類   | リソースの管理方法を定義します。                                                    | Deploymenttype  | Manual、Terraform                                |
+| Version           | デプロイされるブループリントのバージョン。                                                                 | Version         | V0.1                                             |
+| アプリケーション名  | リソースに関連付けられているアプリケーション、サービス、またはワークロードの名前。             | Applicationname | "アプリ名"                                       |
 
 <!-- cSpell:ignore caf -->
 
@@ -151,7 +151,7 @@ tags_hub = {
 }
 ```
 
-次に、デプロイの分析に使用されるログ分析名とソリューションのセットを指定します。 ここでは、ネットワーク監視、Active Directory Assessment と Replication、DNS Analytics、および Key Vault Analytics を保持しました。
+次に、デプロイの分析に使用される Log Analytics ワークスペース名とソリューションのセットを指定します。 ここでは、ネットワーク監視、Active Directory Assessment と Replication、DNS Analytics、および Key Vault Analytics を保持しました。
 
 ```hcl
 

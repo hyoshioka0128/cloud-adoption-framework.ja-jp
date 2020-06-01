@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4c2a8e4e87e1ad99fedf002b0f13854949345916
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e5351d14c6200056e4c5b43f622f655a23e79668
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215009"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753579"
 ---
 # <a name="software-defined-networking-paas-only"></a>ソフトウェア定義ネットワーク:PaaS のみ
 
 サービスとしてのプラットフォーム (PaaS) リソースを実装すると、デプロイ プロセスによって、負荷分散、ポートのブロック、他の PaaS サービスへの接続など、そのネットワークに対する少数の制御を持つ仮の基礎ネットワークが自動的に作成されます。
 
-Azure では、いくつかの PaaS リソースの種類を仮想ネットワークに[デプロイ](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services)または[接続](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)して、このようなリソースを既存の仮想ネットワーク インフラストラクチャと統合できます。 [App Service Environment](https://docs.microsoft.com/azure/app-service/environment/intro)、[Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) など、その他のサービスは、仮想ネットワーク内にデプロイする必要があります。 ただし、多くの場合、PaaS リソースによって提供される既定のネイティブ ネットワーク機能のみに依存する PaaS のみネットワーク アーキテクチャで、ワークロードの接続性とトラフィック管理の要件を十分に満たすことができます。
+Azure では、いくつかの PaaS リソースの種類を[仮想ネットワークにデプロイ](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services)するか、[仮想ネットワークに接続](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)して、このようなリソースを既存の仮想ネットワーク インフラストラクチャと統合できます。 [App Service Environment](https://docs.microsoft.com/azure/app-service/environment/intro)、[Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) など、その他のサービスは、仮想ネットワーク内にデプロイする必要があります。 多くの場合、PaaS リソースによって提供される既定のネイティブ ネットワーク機能だけに依存する PaaS のみのネットワーク アーキテクチャで、ワークロードの接続性とトラフィック管理の要件を十分に満たすことができます。
 
-PaaS のみのネットワーク アーキテクチャを検討している場合は、必要な前提条件がお客様の要件と一致していることを確認してください。
+PaaS のみのネットワーク アーキテクチャを検討している場合は、必要な前提条件が実際の要件と一致していることを必ず確認してください。
 
 ## <a name="paas-only-assumptions"></a>PaaS のみの前提条件
 

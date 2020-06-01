@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 75a89a0020b4c0ae7ab336ab0d3789bf5096dab7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8e0c340e8d0dffb36c692ee3f3b8d4b0ece978a0
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222404"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861091"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "83222404"
 
 ## <a name="design-virtual-networks"></a>仮想ネットワークを設計する
 
-Azure では仮想ネットワーク (VNet) が提供されます。
+Azure では、次の機能を備えた仮想ネットワークが提供されます。
 
 - Azure のリソースは、VNet を通して相互に、セキュリティ保護された非公開の通信を直接行います。
 - インターネット通信を必要とする VM およびサービスに対する VNet にエンドポイント接続を構成することができます。
@@ -49,8 +49,8 @@ VNet トポロジを計画する際は、IP アドレス空間の配置方法、
 
 **詳細情報:**
 
-- [Azure Virtual Network の概要](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)をご確認ください。
-- [Azure Virtual Network に関する FAQ](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) を読みます。
+- [Azure Virtual Network の概要](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)を読む。
+- [Azure Virtual Network に関する FAQ](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) を確認する。
 - [Azure Stack ネットワーク](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)についてご確認ください。
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>ベスト プラクティス:ハブ アンド スポーク ネットワーク トポロジを実装する
@@ -75,7 +75,7 @@ _ハブとスポークのトポロジ_
 
 - ハブとスポークのトポロジ[について読む](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)。
 - Azure [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) VM および [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) VM を実行するためのネットワークの推奨事項を確認する。
-- VNet ピアリング[について学習する](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)。
+- [VNet ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)について学習する。
 
 ## <a name="best-practice-design-subnets"></a>ベスト プラクティス:サブネットを設計する
 
@@ -100,7 +100,7 @@ VNet 内で分離を実現するには、VNet を 1 つ以上のサブネット�
 
 **詳細情報:**
 
-- サブネットの設計[について学習する](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)。
+- [サブネットの設計](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)について学習する。
 - 架空の会社 (Contoso) が自社のネットワーク インフラストラクチャを移行するために準備した[方法を学習する](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure)。
 
 ## <a name="best-practice-set-up-a-dns-server"></a>ベスト プラクティス:DNS サーバーをセットアップする
@@ -120,8 +120,8 @@ VNet をデプロイすると、Azure によって既定で DNS サーバーが�
 
 **詳細情報:**
 
-- 独自の DNS サーバーを使用するときの名前解決[について学習する](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure)。
-- DNS の名前付け規則と制限事項[について学習する](../../ready/azure-best-practices/naming-and-tagging.md)。
+- [独自の DNS サーバーを使用するときの名前解決](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure)について学習する。
+- [DNS の名前付け規則と制限事項](../../ready/azure-best-practices/naming-and-tagging.md)について学習する。
 
 ## <a name="best-practice-set-up-availability-zones"></a>ベスト プラクティス:可用性ゾーンを設定する
 
@@ -144,7 +144,7 @@ VNet をデプロイすると、Azure によって既定で DNS サーバーが�
 
 **詳細情報:**
 
-- 可用性ゾーンの[概要を理解する](https://docs.microsoft.com/azure/availability-zones/az-overview)。
+- [Availability Zones の概要](https://docs.microsoft.com/azure/availability-zones/az-overview)を読む。
 
 ## <a name="design-hybrid-cloud-networking"></a>ハイブリッド クラウド ネットワークを設計する
 
@@ -155,7 +155,7 @@ VNet をデプロイすると、Azure によって既定で DNS サーバーが�
 
 **詳細情報:**
 
-- ハイブリッド クラウド ネットワークについて[詳しく学習する](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)。
+- [ハイブリッド クラウド ネットワーク](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)の詳細を確認する。
 
 ## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>ベスト プラクティス:高可用性のサイト間 VPN を実装する
 
@@ -187,12 +187,12 @@ _サイト間 VPN_
 
 **詳細情報:**
 
-- 互換性のあるオンプレミス VPN デバイスを[確認する](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
-- VPN ゲートウェイの[概要を理解する](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)。
-- 高可用性 VPN 接続[について学習する](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)。
-- VPN ゲートウェイの計画と設計[について学習する](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-plan-design)。
-- VPN ゲートウェイの設定を[確認する](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku)。
-- ゲートウェイの SKU を[確認する](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)。
+- [互換性のあるオンプレミス VPN デバイス](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)を確認する。
+- [Azure VPN Gateway の概要](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)を読む。
+- [高可用性 VPN 接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)について学習する。
+- [VPN ゲートウェイの計画と設計](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-plan-design)について学習する。
+- [VPN ゲートウェイの設定](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku)を確認する。
+- [ゲートウェイの SKU](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) を確認する。
 - Azure VPN ゲートウェイでの BGP の設定[について読む](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-bgp-overview)。
 
 ### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>ベスト プラクティス:VPN ゲートウェイ用にゲートウェイを構成する
@@ -216,8 +216,7 @@ Azure で VPN ゲートウェイを作成するときは、GatewaySubnet とい�
 - 推奨プロバイダー デバイスを使用すると、使いやすさ、接続性、および構成管理を実現できます。
 - Azure WAN の組み込みダッシュボードにはすぐに使用できるトラブルシューティング用分析情報が用意されているため、時間を節約でき、大規模なサイト間接続を簡単に追跡できます。
 
-**詳細情報:** 
- Azure Virtual WAN [について学習する](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about)。
+**詳細情報:** [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) について学習する。
 
 ### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>ベスト プラクティス:ミッション クリティカルな接続用に ExpressRoute を実装する
 
@@ -234,7 +233,7 @@ Azure ExpressRoute サービスでは、仮想 Azure データセンターとオ
 **詳細情報:**
 
 - ExpressRoute の[概要を理解する](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)。
-- ExpressRoute Direct [について学習する](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about)。
+- [ExpressRoute Direct](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about) について学習する。
 
 ### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>ベスト プラクティス:BGP コミュニティで ExpressRoute のルーティングを最適化する
 
@@ -277,7 +276,7 @@ _BGP コミュニティの最適化された接続_
 
 **詳細情報:**
 
-- [ルーティングの最適化](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing)について学習します。
+- [ルーティングの最適化](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing)について学習する。
 
 ## <a name="secure-vnets"></a>セキュリティで保護された VNet
 
@@ -285,8 +284,8 @@ VNet をセキュリティ保護する責任は、Microsoft とユーザーの�
 
 **詳細情報:**
 
-- ネットワーク セキュリティに対するベスト プラクティスの[概要を理解する](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices)。
-- セキュリティで保護されたネットワークを設計する[方法を学習する](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security)。
+- [ネットワーク セキュリティのベスト プラクティスの概要](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices)を読む。
+- [セキュリティで保護されたネットワークを設計する](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security)方法を学習する。
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>ベスト プラクティス:Azure 境界ネットワークを実装する
 
@@ -347,8 +346,8 @@ VNet をセキュリティで保護するときは、攻撃ベクトルを考慮
 
 **詳細情報:**
 
-- NSG [について読む](https://docs.microsoft.com/azure/virtual-network/security-overview)。
-- NSG に使用可能なサービス タグを[確認する](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags)。
+- [ネットワーク セキュリティ グループ (NSG)](https://docs.microsoft.com/azure/virtual-network/security-overview) の概要を読む。
+- [NSG に使用可能なサービス タグ](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags)を確認する。
 
 ## <a name="best-practice-use-application-security-groups"></a>ベスト プラクティス:アプリケーション セキュリティ グループを使用する
 
@@ -387,7 +386,7 @@ _アプリケーション セキュリティ グループの例_
 
 **詳細情報:**
 
-- アプリケーション セキュリティ グループ[について学習する](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups)。
+- [アプリケーション セキュリティ グループ](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups)について学習する。
 
 ### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>ベスト プラクティス:VNet サービス エンドポイントを使用して PaaS へのアクセスをセキュリティで保護する
 
@@ -402,7 +401,7 @@ _サービス エンドポイント_
 
 **詳細情報:**
 
-- VNet サービス エンドポイント[について学習する](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)。
+- [VNet サービス エンドポイント](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)について学習する。
 
 ## <a name="best-practice-control-public-ip-addresses"></a>ベスト プラクティス:パブリック IP アドレスを管理する
 
@@ -442,7 +441,7 @@ _Azure Firewall_
 
 **詳細情報:**
 
-- [Azure Firewall の概要](https://docs.microsoft.com/azure/firewall/overview)を読みます。
+- [Azure Firewall の概要](https://docs.microsoft.com/azure/firewall/overview)を読む。
 - [Azure Firewall の FQDN タグ](https://docs.microsoft.com/azure/firewall/fqdn-tags)について学習します。
 
 ## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>ベスト プラクティス:Web アプリケーション ファイアウォール (WAF) をデプロイする
@@ -460,8 +459,8 @@ Web アプリケーション ファイアウォール (WAF) は、Azure Applicat
 
 **詳細情報:**
 
-- WAF [について学習する](https://docs.microsoft.com/azure/application-gateway/waf-overview)。
-- WAF の制限事項と除外事項を[確認する](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration)。
+- [WAF](https://docs.microsoft.com/azure/application-gateway/waf-overview) について学習する。
+- [WAF の制限事項と除外事項](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration)を確認する。
 
 ## <a name="best-practice-implement-azure-network-watcher"></a>ベスト プラクティス:Azure Network Watcher を実装する
 
@@ -479,8 +478,8 @@ _Network Watcher_
 
 **詳細情報:**
 
-- Network Watcher の[概要を理解する](https://docs.microsoft.com/azure/network-watcher)。
-- NSG のフロー ログ[について学習する](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview)。
+- [Network Watcher の概要](https://docs.microsoft.com/azure/network-watcher)を読む。
+- [NSG のフロー ログ](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview)の詳細を確認する。
 
 ## <a name="use-partner-tools-in-the-azure-marketplace"></a>Azure Marketplace のパートナー ツールを使用する
 
@@ -511,7 +510,7 @@ _Network Watcher_
 
 **詳細情報:**
 
-- Azure VNet での NVA の使用[について学習する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)。
+- [Azure VNet での NVA の使用](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)について学習する。
 
 ## <a name="next-steps"></a>次のステップ
 

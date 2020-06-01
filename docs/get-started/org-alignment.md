@@ -3,16 +3,16 @@ title: 作業を開始しましょう。組織の足並みを揃える
 description: クラウド導入を成功させる準備が整うように組織の足並みを揃える推奨手順。
 author: JanetCThomas
 ms.author: janet
-ms.date: 05/05/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f40e0ecf16ceb1d3af7c3b99eb111d09a975b6da
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 7ab2ea31c90215efd37c2ab0d65f8a8c7baf24b1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621155"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814292"
 ---
 # <a name="get-started-align-your-organization"></a>作業を開始しましょう。組織の足並みを揃える
 
@@ -41,11 +41,11 @@ ms.locfileid: "83621155"
 - それらのガバナンス コントロールの定義について誰が説明責任を持ちますか?
 - クラウド導入計画で説明責任または責任を持つ他の機能または担当者はいますか?
 
-これらの質問に対する回答を文書化したら、今後の仕事に向けてこれらの人員を準備する計画を定義できるように、[スキルの準備計画](../plan/adapt-roles-skills-processes.md)を参照してください。
+これらの質問に対する回答を文書化したら、今後の仕事に向けてこれらの人員を準備する計画を定義できるように、[スキルの準備計画](../plan/adapt-roles-skills-processes.md)に関する記事をご覧ください。
 
 ## <a name="step-3-determine-how-teams-align-within-your-organization"></a>手順 3:組織内でチームの足並みを揃える方法を決定する
 
-以下の組織構造は、必ずしも組織図にマップする必要はありません。 通常、組織図には、命令と統制の管理構造が反映されています。 対照的に、以下の組織構造は、役割と責任の整合を取るように設計されています。 
+以下の組織構造は、必ずしも組織図にマップする必要はありません。 通常、組織図には、命令と統制の管理構造が反映されています。 対照的に、以下の組織構造は、役割と責任の整合を取るように設計されています。
 
 アジャイルなマトリックス組織では、これらの構造は仮想チーム (v チーム) として表現するのが最適かもしれません。 v チームが組織図で表せないことを示唆するものはありませんが、効果的な運用モデルを作成するために、正式な組織図は必要ありません。
 
@@ -74,7 +74,7 @@ ms.locfileid: "83621155"
 
 ## <a name="step-5-align-raci-charts"></a>手順 5:RACI チャートを配置する
 
-成熟度のレベルごとに、さまざまなクラウド機能の説明責任が新しいチームにシフトします。 このように説明責任がシフトすることで、変化への障壁を取り除き、自動化することにより、移行とイノベーションのサイクルを短縮できます。 割り当てを適切に配置するために、[RACI の配置](../organize/raci-alignment.md)に関する記事では、参照されている各組織構造の RACI チャートが示されています。
+成熟度のレベルごとに、さまざまなクラウド機能の説明責任が新しいチームにシフトします。 このように説明責任がシフトすることで、変化への障壁を取り除き、自動化することにより、移行とイノベーションのサイクルを短縮できます。 割り当てを適切に配置するために、[RACI の配置](../organize/raci-alignment.md)に関する記事では、各組織構造の RACI チャートが示されています。
 
 ## <a name="additional-information"></a>関連情報
 

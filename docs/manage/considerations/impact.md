@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dc2c490850c47dfa92ec91d5133168b982b5c719
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 42a4dc16a7249ab7211da1e1574511479a566011
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398481"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815244"
 ---
 # <a name="business-impact-in-cloud-management"></a>クラウド管理におけるビジネスへの影響
 
@@ -54,7 +54,7 @@ ms.locfileid: "83398481"
 
 [運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理を計画している場合は、次の手順を実行することを検討してください。
 
-- 各業務では、_Example_ (例) または _Clean Template_ (クリーン テンプレート) の各ワークロードを、各ワークロードの *Time/Value Impact* (時間/価値の影響) で更新する必要があります。 既定で、*Time/Value Impact* (時間/価値の影響) は、ワークロードの停止に関連する 1 時間あたりの予測される損失を表します。
+- 各業務では、`Example` ワークシートまたは `Clean Template` ワークシートの各ワークロードと、各ワークロードの `Time/Value Impact` を更新する必要があります。 既定では、`Time/Value Impact` は、ワークロードの停止に関連する 1 時間あたりの予測される損失を表します。
 
 ## <a name="next-steps"></a>次のステップ
 

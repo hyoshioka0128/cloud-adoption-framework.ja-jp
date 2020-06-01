@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bc1753821e61ee0a7af74bc720a56ec8962ecded
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dba69e75565658b0101a1849ca3d90e21890fa4a
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214584"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862604"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -131,8 +131,10 @@ Contoso が評価を行う方法は次のとおりです。
 > - **手順 5:Azure Migrate を使用して依存関係を分析するための準備を行う。** VM 間の依存関係マッピングを確認できるように、Contoso は Azure Migrate エージェントを VM にインストールします。
 > - **手順 6:Azure Migrate を使用して VM を評価する。** Contoso は依存関係を確認して VM をグループ化し、評価を実行します。 評価ができたら、Contoso は移行に向けて評価を分析します。
 
-    > [!NOTE]
-    > Assessments shouldn't just be limited to using tooling to discover information about your environment. You should also schedule time to speak to business owners, end users, and other members of the IT department to fully understand of what is happening in the environment and understand factors that tooling cannot tell you. 
+<!-- -->
+
+> [!NOTE]
+> 評価は、ツールを使用してお使いの環境に関する情報を発見することだけに限定しないでください。 また、ビジネス オーナー、エンド ユーザー、IT 部門のその他メンバーが環境内で何が発生しているか、およびツールには検出されない要素について理解できるよう、説明する時間を設けるようにしてください。
 
 ## <a name="step-1-download-and-install-data-migration-assistant"></a>手順 1:Data Migration Assistant をダウンロードしてインストールする
 
@@ -286,7 +288,7 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
 
     **例:**
 
-    ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
+    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 
 3. 生成されるハッシュは、「[Azure Migrate: Server Assessment を使用して VMware VM を評価する](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware)」の「[セキュリティを確認する](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security)」セクションに記載されているハッシュ値と一致する必要があります。
 
@@ -489,13 +491,13 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 - 信頼度レーティングは、_パフォーマンス ベースのサイズ設定_を行う場合に役に立ちます。 Azure Migrate には、使用率ベースのサイズ設定を行うために十分なデータ ポイントがない場合があります。 _[オンプレミス]_ のサイズ設定の場合、Azure Migrate には VM のサイズ変更に必要なすべてのデータ ポイントがあるため、信頼度レーティングは常に 5 つ星になります。
 - 次のように、使用可能なデータ ポイントの割合に応じて、評価の信頼度レーティングが決まります。
 
-   | データ ポイントの可用性 | 信頼度レーティング |
-   | --- | --- |
-   | 0% - 20% | 1 つ星 |
-   | 21% - 40% | 2 つ星 |
-   | 41% - 60% | 3 つ星 |
-   | 61% - 80% | 4 つ星 |
-   | 81% - 100% | 5 つ星 |
+    | データ ポイントの可用性 | 信頼度レーティング |
+    | --- | --- |
+    | 0% - 20% | 1 つ星 |
+    | 21% - 40% | 2 つ星 |
+    | 41% - 60% | 3 つ星 |
+    | 61% - 80% | 4 つ星 |
+    | 81% - 100% | 5 つ星 |
 
 #### <a name="verify-azure-readiness"></a>Azure 対応性の状態を確認する
 

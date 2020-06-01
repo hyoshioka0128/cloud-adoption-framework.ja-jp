@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 51047cd648953b68caa7f09e132b832a287e4a71
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9bcd4fb4a516062c053322932e1de878f4ec9095
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399052"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756177"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -41,7 +41,7 @@ _図 2: リソース グループにはリソースが含まれる。_
 
 ## <a name="what-is-an-azure-subscription"></a>Azure サブスクリプションとは
 
-Azure サブスクリプションは、リソース グループとそのリソースをまとめる論理コンストラクトであるという点では、リソース グループに似ています。 しかし、Azure サブスクリプションは、Azure Resource Manager によって使用される制御にも関連付けられています。 Azure サブスクリプションと Azure Resource Manager の関係について確認するために、Azure Resource Manager を詳しく見てみましょう。
+Azure サブスクリプションは、リソース グループとそのリソースをまとめる論理コンストラクトであるという点では、リソース グループに似ています。 Azure サブスクリプションは、Azure Resource Manager によって使用される制御にも関連付けられています。 Azure サブスクリプションと Azure Resource Manager の関係について確認するために、Azure Resource Manager を詳しく見てみましょう。
 
 ![Azure サブスクリプションの図](../../_images/govern/design/governance-1-11.png)
 _図 3: Azure サブスクリプション。_

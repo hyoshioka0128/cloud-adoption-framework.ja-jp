@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f3291bb1a5ef114b2ae790bb1a3c82eaf382c37e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9f77d4a13b83c6d22592f36c924c2dd11164e27b
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215128"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814360"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>ソフトウェア定義ネットワーク:ハブ アンド スポーク
 
@@ -23,7 +23,7 @@ ms.locfileid: "83215128"
 
 ワークロード スポーク ネットワークを出入りするすべてのトラフィックは、ハブ ネットワークを介してルーティングされます。そのハブ ネットワークで、集中管理された IT 規則またはプロセスによってトラフィックをルーティング、検査、またはその他の方法で管理できます。
 
-このモデルは、次の懸念事項に対処することを目的としています。
+このモデルは、次の問題に対処することを目的としています。
 
 - **コストの削減と管理の効率。** 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は複数のワークロードにわたって過剰なリソースと管理作業を最小限にすることができます。
 - **サブスクリプションの制限の克服。** 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure のネットワークの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits)に関するページをご覧ください。
@@ -46,7 +46,7 @@ ms.locfileid: "83215128"
 
 ## <a name="global-hub-and-spoke"></a>グローバルなハブ アンド スポーク
 
-ハブ アンド スポークのアーキテクチャの実装は、通常、ネットワーク間の待機時間を最小限に抑えるために、同じ Azure リージョンにデプロイされた仮想ネットワークを使用して行われます。 ただし、世界規模で展開している大規模組織では、可用性、ディザスター リカバリー、または規制の要件のために、複数のリージョンにわたってワークロードをデプロイすることが必要な場合があります。 ハブ アンド スポーク モデルでは、Azure の[グローバル仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用して、集中管理と共有サービスをリージョン全体に拡張し、世界中に分散されたワークロードをサポートできます。
+ハブ アンド スポークのアーキテクチャの実装は、通常、ネットワーク間の待機時間を最小限に抑えるために、同じ Azure リージョンにデプロイされた仮想ネットワークを使用して行われます。 世界規模で展開している大規模組織では、可用性、ディザスター リカバリー、または規制の要件に対応するために、複数のリージョンにわたってワークロードをデプロイすることが必要な場合があります。 ハブ アンド スポーク モデルでは、Azure の[グローバル仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用して、集中管理と共有サービスをリージョン全体に拡張し、世界中に分散されたワークロードをサポートできます。
 
 ## <a name="learn-more"></a>詳細情報
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: d072ed1ac5abaa4f0c5cf3051d6585b4b5b13b24
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400804"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861397"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -66,9 +66,9 @@ Azure Monitor には 4 種類のアラートがあり、それぞれ、データ
 
 - [ログ クエリ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query):Application Insights ストアまたは Azure ログ ストアのコンテンツに関するアラートに使用できます。 クロスワークスペース クエリに基づいて警告することもできます。
 
-- [アクティビティ ログ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log):Service Health データを除く、アクティビティ ログ ストア内の項目に関するアラート。
+- [アクティビティ ログ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log):Azure Service Health データを除く、アクティビティ ログ ストア内の項目に関するアラート。
 
-- [Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications):停止や予定されている計画メンテナンスなど、アクティビティ ログ ストアからの Service Health の問題に対してのみ使用される特別な種類のアラートです。 この種類のアラートは、Azure Monitor するコンパニオン サービスである [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) を使用して構成されることに注意してください。
+- [Azure Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications):停止や予定されている計画メンテナンスなど、アクティビティ ログ ストアからの Azure Service Health の問題に対してのみ使用される特別な種類のアラートです。 この種類のアラートは、Azure Monitor するコンパニオン サービスである [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) を使用して構成されることに注意してください。
 
 ### <a name="enable-alerting-through-partner-tools"></a>パートナー ツールによるアラートを有効にする
 
@@ -84,7 +84,7 @@ Azure Monitor には、他の監視プラットフォームや、ServiceNow な�
 |---| ---| --- |
 | コンテナーに対する Azure Monitor | ノードとポッドの計算された平均パフォーマンス データは、メトリック ストアに書き込まれます。 | 一定期間にわたって集計される、使用量の測定済みパフォーマンスの変動に基づいてアラートを受け取る必要がある場合は、メトリック アラートを作成します。 |
 | | ノード、コントローラー、コンテナー、およびポッドからのパーセンタイルを使用する計算後のパフォーマンス データは、ログ ストアに書き込まれます。 コンテナー ログとインベントリ情報もログ ストアに書き込まれます。 | クラスターおよびコンテナーの測定済み使用量の変動に基づいてアラートを受け取る必要がある場合は、ログ クエリ アラートを作成します。 ログ クエリ アラートは、ポッドフェーズ数と状態ノード数に基づいて構成することもできます。 |
-VM に対する Azure Monitor | 正常性基準は、メトリック ストアに書き込まれるメトリックです。 | 正常性状態が正常から異常に変化すると、アラートが生成されます。 このアラートは、SMS またはメール通知を送信するように構成されたアクション グループのみをサポートします。 |
+| VM に対する Azure Monitor | 正常性基準は、メトリック ストアに書き込まれるメトリックです。 | 正常性状態が正常から異常に変化すると、アラートが生成されます。 このアラートは、SMS またはメール通知を送信するように構成されたアクション グループのみをサポートします。 |
 | | マップおよびゲスト オペレーティング システムのパフォーマンス ログ データはログ ストアに書き込まれます。 | ログ クエリ アラートを作成します。 |
 
 <!-- docsTest:ignore "speed driven by cost" -->
@@ -128,4 +128,4 @@ Azure Monitor for VMs を使用していない場合は、以下の機能につ�
 
 ### <a name="best-query-experience"></a>最適なクエリ エクスペリエンス
 
-すべてのデータにわたる傾向を探そうとしている場合は、既にデータが Application Insights にある場合を除き、すべてのデータを Azure ログにインポートすることが理にかなっています。 両方のワークスペースにまたがるクエリを作成できるので、それらの間でデータを移動する必要はありません。 アクティビティ ログと Service Health データを Log Analytics ワークスペースにインポートすることもできます。 このインジェストとストレージに対して料金が発生しますが、分析とクエリのためにすべてのデータが 1 か所で取得されます。 このアプローチにより、複雑なクエリ条件と、それらに対するアラートを生成できるようにもなります。
+すべてのデータにわたる傾向を探そうとしている場合は、既にデータが Application Insights にある場合を除き、すべてのデータを Azure ログにインポートすることが理にかなっています。 両方のワークスペースにまたがるクエリを作成できるので、それらの間でデータを移動する必要はありません。 アクティビティ ログと Azure Service Health データを Log Analytics ワークスペースにインポートすることもできます。 このインジェストとストレージに対して料金が発生しますが、分析とクエリのためにすべてのデータが 1 か所で取得されます。 このアプローチにより、複雑なクエリ条件と、それらに対するアラートを生成できるようにもなります。

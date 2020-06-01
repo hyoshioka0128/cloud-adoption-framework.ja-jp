@@ -3,17 +3,17 @@ title: クラウド導入機能を理解する
 description: クラウド導入機能によって、技術的なソリューションを実装してチームを適切に配置できるようにする方法を理解します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac8307d3af159f3d6d35ccf2ded55f77786a33d7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c2f030d594a3bdb3ef195252187ae3c033c06e27
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215876"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755826"
 ---
 # <a name="cloud-adoption-functions"></a>クラウド導入機能
 
@@ -38,8 +38,8 @@ ms.locfileid: "83215876"
 - [Azure アカウントの作成](https://docs.microsoft.com/learn/modules/create-an-azure-account):Azure を使用する最初の手順では、アカウントを作成します。
 - [Azure ポータル](https://docs.microsoft.com/learn/modules/tour-azure-portal):Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
 - [Azure 入門](https://docs.microsoft.com/learn/modules/welcome-to-azure):Azure を使ってみましょう。 クラウドに最初の仮想マシンを作成して構成します。
-- [Azure の基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):クラウドの概念を学習し、利点を理解し、基本的な戦略を比較対照し、Azure で利用できる幅広いサービスを確認します。
-- [移行の方法論](../migrate/index.md)を確認します。
+- [Azure の基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):クラウドの概念を学習し、利点を理解し、基本的な戦略を比較対照して、Azure で利用できる幅広いサービスを確認します。
+- [移行手法](../migrate/index.md)を確認します。
 
 ## <a name="minimum-scope"></a>最小スコープ
 

@@ -6,19 +6,19 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 1ccda999eb0327f7694374b0589321ca0965f1c2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: dfa8275bb96fc075e099b19c9c4b9b81d1714131
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215757"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755593"
 ---
 <!-- docsTest:ignore IS -->
 
 # <a name="cloud-governance-functions"></a>クラウド ガバナンス機能
 
-クラウド ガバナンス チームは、リスクとリスクの許容範囲が適切に評価され、管理されていることを請け合います。 このチームによって、ビジネスで許容できないリスクが適切に識別されていることが確認されます。 このチームのメンバーは、リスクを企業の管理ポリシーに転換します。
+クラウド ガバナンス チームは、リスクとリスクの許容範囲が適切に評価され、管理されていることを請け合います。 このチームにより、ビジネスで許容できないリスクが確実に正しく特定されます。 このチームのメンバーは、リスクを企業の管理ポリシーに転換します。
 
 必要なビジネス成果に応じて、完全なクラウド ガバナンスの機能を実現するために必要なスキルには以下が含まれます。
 

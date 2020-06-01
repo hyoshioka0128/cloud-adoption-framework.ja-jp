@@ -7,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8432a00865d29767b48292541255f88f9d451665
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0b4f0738e93d08be4f61183272b459eb7856aad1
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217474"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862213"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>基本的なワークロードを Azure にデプロイする
 
@@ -26,7 +26,7 @@ ms.locfileid: "83217474"
 
 ## <a name="basic-workload"></a>基本的なワークロード
 
-_基本的なワークロード_は、通常、単一の Web アプリケーション、または仮想マシン (VM) を含む仮想ネットワーク (VNet) と定義されます。
+"_基本的なワークロード_" は、通常、単一の Web アプリケーション、または仮想マシン (VM) を含む仮想ネットワークと定義されます。
 
 > [!NOTE]
 > このガイドでは、アプリケーション開発については取り上げません。 Azure でのアプリケーション開発の詳細については、「[Azure アプリケーション アーキテクチャ ガイド](https://docs.microsoft.com/azure/architecture/guide)」を参照してください。

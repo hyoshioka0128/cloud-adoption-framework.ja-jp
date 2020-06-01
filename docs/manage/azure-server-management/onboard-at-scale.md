@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9347c0c9517327dfa01bc49e344dfcc8ed90e60d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 368c5b44513ee98cb7f361305bfe1de468474a03
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219718"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861533"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
 # <a name="configure-azure-server-management-services-at-scale"></a>大規模な Azure サーバー管理サービスを構成する
 
-Azure サーバー管理サービスをサーバーにオンボードするには、次の 2 つのタスクを完了する
+Azure サーバー管理サービスをサーバーにオンボードするには、次の 2 つのタスクを完了する必要があります。
 
 - サーバーにサービス エージェントをデプロイする。
 - 管理ソリューションを有効にする。
@@ -125,14 +125,14 @@ Change Tracking ソリューションは、Azure VM では無料で、オンプ�
 
 1. Change Tracking にオプトインするコンピューターを含めるためにコンピューター名または VMUUID を入力します。
 
-    ```kusto
-    Heartbeat
-    | where AzureEnvironment=~"Azure" or Computer in~ ("list of the on-premises server names", "server1")
-    | distinct Computer
-    ```
+  ```kusto
+  Heartbeat
+  | where AzureEnvironment=~"Azure" or Computer in~ ("list of the on-premises server names", "server1")
+  | distinct Computer
+  ```
 
-    > [!NOTE]
-    > このサーバー名は、式に含まれる値と厳密に一致する必要があります。ドメイン名サフィックスは含めないでください。
+  > [!NOTE]
+  > このサーバー名は、式に含まれる値と厳密に一致する必要があります。ドメイン名サフィックスは含めないでください。
 
 1. **[保存]** を選択します。 既定では、スコープ構成は保存された検索 **MicrosoftDefaultComputerGroup** にリンクされます。 それは自動的に更新されます。
 
@@ -185,7 +185,7 @@ Antimalware Assessment ソリューションは、マルウェアに感染して
 
 ### <a name="azure-security-center"></a>Azure Security Center
 
-すべてのサーバーを少なくとも Azure Security Center *Free* レベルにオンボードすることをお勧めします。 このオプションでは、基本レベルのセキュリティ評価と、環境に対する実行可能なセキュリティの推奨事項が提供されます。 *Standard* レベルにアップグレードすると、[Security Center の価格ページ](https://docs.microsoft.com/azure/security-center/security-center-pricing)で詳しく説明されている追加の特典が提供されます。
+すべてのサーバーを少なくとも Azure Security Center の Free レベルにオンボードすることをお勧めします。 このオプションでは、基本的なセキュリティ評価と、環境に関する実行可能なセキュリティの推奨事項が提供されます。 Standard レベルにはさらに多くの利点があります。 詳細については、[Azure Security Center の価格](https://docs.microsoft.com/azure/security-center/security-center-pricing)に関する記事をご覧ください。
 
 Azure Security Center の Free レベルを有効にするには、次の手順に従います。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d686d50b98cbdef31c48d27f20d1c66f942e0818
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 72b2651b1b9b9332048f9f2f452feac039346d9c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220500"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755032"
 ---
 # <a name="cost-management-sample-policy-statements"></a>コスト管理のサンプル ポリシー ステートメント
 
@@ -27,7 +27,7 @@ ms.locfileid: "83220500"
 
 ## <a name="future-proofing"></a>将来性
 
-**ビジネス リスク:** ガバナンス チームからコスト管理規範への投資が保証されない現在の条件。 しかし、将来、そのような投資が予測されます。
+**ビジネス リスク:** 現在はガバナンス チームからの Cost Management 規範への投資が保証されない状況ですが、今後そのような投資が予測されます。
 
 **ポリシー ステートメント:** クラウドにデプロイされたすべての資産を課金単位およびアプリケーション/ワークロードに関連付ける必要があります。 このポリシーにより、Cost Management 規範の効果が高まります。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c5c295ef24571309e1d97a91ec0c65a0816082e7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6307cb792b6c2cbbda472d1620a91ebdffc18845
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217890"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755897"
 ---
 <!-- cSpell:ignore DPIAs -->
 
@@ -81,4 +81,4 @@ Azure Security Center は、ユーザーがセキュリティの向上を実現�
 
 ## <a name="behavioral-analytics"></a>行動分析
 
-行動分析は、データを分析し、既知のパターンのコレクションと照らして比較する手法です。 ただし、これらのパターンはただのシグネチャではありません。 これらは、大量のデータ セットに適用される複雑な機械学習アルゴリズムによって決定されます。 また、パターンの特定にあたっては、専門のアナリストによって悪質な行動が緻密に分析されます。 Azure Security Center は、行動分析を使用して仮想マシンのログ、仮想ネットワーク デバイスのログ、ファブリック ログ、クラッシュ ダンプ、およびその他のソースを分析し、これに基づいて侵害されたリソースを識別することができます。
+行動分析は、データを分析し、既知のパターンのコレクションと照らして比較する手法です。 これらのパターンはただのシグネチャではありません。 大量のデータ セットに適用される複雑な機械学習アルゴリズムによって決定されます。 また、それらは専門のアナリストによる悪質な行動の緻密な分析によっても決定されます。 Azure Security Center は、行動分析を使用して仮想マシンのログ、仮想ネットワーク デバイスのログ、ファブリック ログ、クラッシュ ダンプ、およびその他のソースを分析し、これに基づいて侵害されたリソースを識別することができます。

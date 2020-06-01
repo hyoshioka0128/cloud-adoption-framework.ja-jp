@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94f51b92b50dabff8551e30e476d2738c3f2fef7
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: e8f20079df4a0e3e55a93e1a35734673d53a0634
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621649"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862519"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -30,7 +30,7 @@ RBAC は、Azure 内のリソースの詳細なアクセス管理を実現しま
 
 アクセスと制御の方法を計画する場合は、組織内でセキュリティとコンプライアンス、IT 管理、およびエンタープライズ アーキテクトの役割を持つ人と協力することをお勧めします。
 
-クラウド導入フレームワークには、クラウド導入への取り組みの一環として、[ロールベースのアクセス制御の使用](../considerations/roles.md)方法に関する追加のガイダンスがあります。
+クラウド導入フレームワークには、クラウド導入への取り組みに[ロールベースのアクセス制御](../considerations/roles.md)を使用することに関する追加のガイダンスがあります。
 
 ::: zone target="chromeless"
 
@@ -68,7 +68,7 @@ RBAC は、Azure 内のリソースの詳細なアクセス管理を実現しま
 
 ユーザーにリソース グループへのアクセス権を付与するには:
 
-1. [リソース グループ](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)に移動します。
+1. [[リソース グループ]](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) に移動します。
 1. リソース グループを選択します。
 1. **[アクセス制御 (IAM)]** を選択します。
 1. **[+ 追加]**  >  **[ロール割り当ての追加]** の順に選択します。

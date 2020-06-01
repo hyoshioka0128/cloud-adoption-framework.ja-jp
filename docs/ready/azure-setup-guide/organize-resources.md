@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 93aec136df947f9df94d188dffce79f037cf8fed
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0f85ccbd46587724cba23b859722c4f4fcdc3e88
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621555"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756330"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -69,7 +69,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 リソース グループを作成して、Web アプリ、データベースなどのリソースや、同じライフサイクル、アクセス許可、ポリシーを共有するストレージ アカウントなどのリソースを保持します。
 
-1. [リソース グループ](https://portal.azure.com/#create/Microsoft.ResourceGroup)に移動します。
+1. [[リソース グループ]](https://portal.azure.com/#create/Microsoft.ResourceGroup) に移動します。
 1. **[追加]** を選択します。
 1. 下にリソース グループを作成した**サブスクリプション**を選択します。
 1. **[リソース グループ]** の名前を入力します。
@@ -146,9 +146,9 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 | Entity | Scope | 長さ | 大文字小文字の区別 | 有効な文字 | 提案されるパターン | 例 |
 | --- | --- | --- | --- | --- | --- | --- |
-| Resource group | サブスクリプション | 1-90 | 大文字と小文字は区別されない | 英数字、アンダースコア、かっこ、ハイフン、ピリオド (末尾を除く)、および Unicode 文字 | `<service short name>-<environment>-rg` | `profx-prod-rg` |
-| 可用性セット | Resource group | 1 ～ 80 | 大文字と小文字は区別されない | 英数字、アンダースコア、ハイフン | `<service-short-name>-<context>-as` | `profx-sql-as` |
-| タグ | 関連付けられたエンティティ | 512 (名前)、256 (値) | 大文字と小文字は区別されない | 英数字 | `"key" : "value"` | `"department" : "Central IT"` |
+| Resource group | サブスクリプション | 1-90 | 大文字と小文字は区別されない | 英数字、アンダースコア、かっこ、ハイフン、ピリオド (末尾を除く)、および Unicode 文字 | `<service short name>-<environment>-Rg` | `profx-prod-rg` |
+| 可用性セット | Resource group | 1 ～ 80 | 大文字と小文字は区別されない | 英数字、アンダースコア、ハイフン | `<service-short-name>-<context>-As` | `profx-SQL-as` |
+| タグ | 関連付けられたエンティティ | 512 (名前)、256 (値) | 大文字と小文字は区別されない | 英数字 | `"Key" : "value"` | `"Department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[リソース タグ](#tab/ResourceTags)
 
@@ -158,9 +158,9 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 その他の多くの要素にもタグを使用できます。 一般的な用途は次のとおりです。
 
-- **メタデータとドキュメント:** 管理者は、"ProjectOwner" などのタグを適用して、操作しているリソースに関する詳細を簡単に確認できます。
-- **自動化:** "ShutdownTime" や "DeprovisionDate" のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
-- **コストの最適化:** コストを担当するチームとリソースにリソースを割り当てることができます。 Azure Cost Management では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金を報告できます。
+- **メタデータとドキュメント:** 管理者は、`projectowner` などのタグを適用して、操作しているリソースに関する詳細を簡単に確認できます。
+- **自動化:** `shutdowntime` や `deprovisiondate` のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
+- **コストの最適化**: コストを担当するチームとリソースにリソースを割り当てることができます。 Azure Cost Management では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金を報告できます。
 
 各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 
@@ -172,7 +172,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 リソース グループにタグを適用するには:
 
-1. [リソース グループ](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups)に移動します。
+1. [[リソース グループ]](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) に移動します。
 1. リソース グループを選択します。
 1. **[タグの割り当て]** を選択します。
 1. 新しい名前と値を入力するか、ドロップダウン リストを使用して既存の名前と値を選択します。

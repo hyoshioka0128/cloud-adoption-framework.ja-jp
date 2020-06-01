@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0837950a32a57fba595166c1b78c18aea0385417
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0882b34dc9b83d6da5926b350db35ab7ecb28495
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214465"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754577"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>ID ベースライン ポリシーのコンプライアンス プロセス
 
@@ -21,7 +21,7 @@ ms.locfileid: "83214465"
 
 ## <a name="planning-review-and-reporting-processes"></a>計画、レビュー、レポート作成のプロセス
 
-ID 管理ツールはクラウド デプロイにおけるユーザー管理とアクセスの制御の大部分を支援する機能を提供しています。 ただし、組織の目標を支援するためのプロセスとポリシーは、よく考慮する必要があります。 ID ベースラインの規範に一般的に含まれるプロセスの例を以下に示します。 この例を、プロセスの計画の最初に使用することで、ビジネスの変化と、ガバナンスのガイダンスを行動に移す任務を負う IT チームからのフィードバックに基づき、ID ポリシーを継続して更新できるようになります。
+ID 管理ツールはクラウド デプロイにおけるユーザー管理とアクセスの制御の大部分を支援する機能を提供しています。 組織の目標を支援するために、十分に考慮されたプロセスとポリシーも必要となります。 ID ベースラインの規範に一般的に含まれるプロセスの例を以下に示します。 この例を、プロセスの計画の最初に使用することで、ビジネスの変化と、ガバナンスのガイダンスを行動に移す任務を負う IT チームからのフィードバックに基づき、ID ポリシーを継続して更新できるようになります。
 
 **初期のリスク評価と計画:** ID ベースラインの規範の初期導入の一環として、クラウド ID 管理に関連す主要なビジネス リスクと許容範囲を特定します。 この情報は、ID サービスを管理する IT チームのメンバーと特定の技術的なリスクについて話し合い、そのようなリスクを軽減するためのセキュリティ ポリシーのベースライン セットを開発して、初期のガバナンス戦略を策定するために使用します。
 

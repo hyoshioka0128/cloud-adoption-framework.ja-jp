@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 36b194f1985a9d277315207ea685d5fff94a87a0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 159c102931d192e3a4fc77a3f16edc1fbe98f576
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400683"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862400"
 ---
 # <a name="evaluate-corporate-policy"></a>企業ポリシーの評価
 
@@ -41,7 +41,7 @@ ms.locfileid: "83400683"
 
 ## <a name="next-steps"></a>次のステップ
 
-企業ポリシーをクラウドに対応させる方法を確認します。
+クラウドの企業ポリシーを準備する方法を確認します。
 
 > [!div class="nextstepaction"]
 > [クラウドの企業ポリシーを準備する](./policy-compliance/index.md)

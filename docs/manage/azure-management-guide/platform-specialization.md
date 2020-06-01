@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 37826614e405ddb5cb15db62ffce7cfe43b2ec20
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 88f153d80df79098c4228a6012f513f42f3a2f64
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216641"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756415"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>クラウド管理のためのプラットフォームの特殊化
 
@@ -32,7 +32,7 @@ ms.locfileid: "83216641"
 
 | Process | ツール | 目的  | 推奨される管理レベル |
 |---|---|---|---|
-| システム設計を改善する | Azure Architecture Framework | プラットフォームのアーキテクチャ設計の改善による操作の向上 | 該当なし |
+| システム設計を改善する | Microsoft Azure Well-Architected Framework | プラットフォームのアーキテクチャ設計の改善による操作の向上 | 該当なし |
 | 自動修復 | Azure Automation | プラットフォーム固有の自動化による高度なプラットフォーム データへの対応 | プラットフォームの運用 |
 | サービス カタログ | マネージド アプリケーション センター | 組織の標準を満たす承認済みソリューションのセルフサービス カタログの提供 | プラットフォームの運用 |
 | コンテナーのパフォーマンス | コンテナーに対する Azure Monitor | コンテナーの監視と診断 | プラットフォームの運用 |
@@ -61,9 +61,9 @@ ms.locfileid: "83216641"
 
 システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、Azure 向けのクラウド導入フレームワーク全体で使用される環境ビューの範囲外です。
 
-クラウド導入フレームワークを補完するために、Azure Architecture Framework には、特定のシステムの回復性と設計を向上させるためのベスト プラクティスが用意されています。 このような設計の改善は、プラットフォームのシステム設計や特定のワークロードに適用できます。
+クラウド導入フレームワークを補完するために、Microsoft Azure Well-Architected Framework には、特定のシステムの回復性と設計を向上させるためのベスト プラクティスが用意されています。 このような設計の改善は、プラットフォームのシステム設計や特定のワークロードに適用できます。
 
-Azure Architecture Framework は、システム設計の 5 つの柱全体の改善に焦点を当てています。
+Microsoft Azure Well-Architected Framework は、システム設計における次の 5 つの柱全体の改善に焦点を合わせています。
 
 - **拡張性:** 負荷の増加に対応するために、共通プラットフォーム資産をスケーリングします。
 - **可用性:** 可能性のあるアップタイムを向上させることにより、ビジネスの中断を減らします。
@@ -75,7 +75,7 @@ Azure Architecture Framework は、システム設計の 5 つの柱全体の改
 
 次の **[自動修復]** タブでは、対処できない、または対処するべきではない技術的負債を修復する方法について説明します。
 
-システム設計を改善する詳細な方法については、[Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) に関する記事を参照してください。
+システム設計の改善に役立てるために、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) の詳細をご覧ください。
 
 システムの設計が向上したら、この記事に戻り、お使いの環境全体で改良を加え、スケーリングする新しい機会を見つけてください。
 

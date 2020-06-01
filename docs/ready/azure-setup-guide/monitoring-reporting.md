@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0be49567a459915dbe4b8e8db90feae9b47a1e5c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 857cc9622e71d6ee464fd9d324c6d94e77b0276e
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223186"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756347"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -63,9 +63,9 @@ Azure Monitor を調査するには、[Azure Portal](https://portal.azure.com/#b
 
 # <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
-Azure Service Health では、ご利用中の Azure サービスとリージョンの正常性について、個々のお客様に応じたビューを提供します。 アクティブな懸案事項に関する情報が Service Health に投稿されるため、これによりリソースへの影響を理解できます。 通常の更新情報では、問題が解決されたときに随時情報が提供されます。
+Azure Service Health では、ご利用中の Azure サービスとリージョンの正常性について、個々のお客様に応じたビューを提供します。 アクティブな問題に関する情報が Azure Service Health に投稿され、リソースへの影響を把握するのに役立ちます。 通常の更新情報では、問題が解決されたときに随時情報が提供されます。
 
-Service Health に計画メンテナンス イベントも公開しているため、リソースの可用性に影響を与える可能性のある変更も把握できます。 サービスの問題、計画メンテナンス、またはその他の変更がお使いの Azure サービスやリージョンに影響を及ぼす可能性がある場合に通知されるように Service Health アラートを設定してください。
+また、Azure Service Health には計画メンテナンス イベントも公開しているため、リソースの可用性に影響を与える可能性のある変更も把握できます。 サービスの問題、計画メンテナンス、またはその他の変更がお使いの Azure サービスやリージョンに影響を及ぼす可能性がある場合に通知されるように Service Health アラートを設定してください。
 
 Azure Service Health には以下が含まれます。
 
@@ -83,7 +83,7 @@ Azure Service Health には以下が含まれます。
 
 1. **Service Health** に移動します。
 2. **[正常性アラート]** を選択します。
-3. サービス正常性アラートを作成します。
+3. Service Health アラートを作成します。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts]" submitText="Go to Service Health" :::
 
@@ -91,11 +91,11 @@ Azure Service Health には以下が含まれます。
 
 ::: zone target="docs"
 
-サービス正常性アラートを設定するには、[Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts) に移動します。
+Azure Service Health アラートを設定するには、[Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts) に移動します。
 
 ## <a name="learn-more"></a>詳細情報
 
-詳細については、[Azure Service Health のドキュメント](https://docs.microsoft.com/azure/service-health)を参照してください。
+詳細については、「[Azure Service Health](https://docs.microsoft.com/azure/service-health)」を参照してください。
 
 ::: zone-end
 
@@ -107,7 +107,7 @@ Azure Advisor は、Azure デプロイのベスト プラクティスをフォ�
 - **セキュリティ:** セキュリティ侵害に至る可能性がある脅威と脆弱性を検出します。 推奨事項には、ディスク暗号化の適用やネットワーク セキュリティ グループの有効化などがあります。
 - **パフォーマンス:** アプリケーションの速度を向上させます。 推奨事項には、インデックスの作成またはトラフィック マネージャーの設定の再構成による SQL クエリのパフォーマンスの向上などが含まれます。
 - **コスト:** Azure の全体的な支出を最適化し、削減します。 推奨事項には、使用頻度の低い仮想マシンのサイズ変更またはシャットダウンや、総保有コストを削減するための Azure Reservations への切り替えなどが含まれます。
-- **オペレーショナル エクセレンス:** プロセスとワークフローの効率性と管理性を向上させます。 推奨事項には、Azure Policy ルールの設定と適用、無効なログ アラート ルールの修復、Azure Service Health アラートの構成などが含まれます。
+- **オペレーショナル エクセレンス:** プロセスとワークフローの効率性と管理性を向上させます。 推奨事項としては、Azure Policy ルールの設定と適用、無効なログ アラート ルールの修復、Azure Service Health アラートの構成などが含まれる場合があります。
 
 Advisor での推奨事項は、デプロイするリソースと Azure 内で実行するアクションに基づいています。 Advisor で、最新の推奨事項を定期的に確認できます。
 

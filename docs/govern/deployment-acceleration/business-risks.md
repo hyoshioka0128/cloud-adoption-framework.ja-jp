@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6cd6d309b5c44c55d0409b759950662eccb9f50a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1a2c1f53e5559c9ca161cad5b68266f0cd1ff83d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220449"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755016"
 ---
 # <a name="motivations-and-business-risks-in-the-deployment-acceleration-discipline"></a>デプロイ高速化規範での動機とビジネス リスク
 
@@ -25,7 +25,7 @@ ms.locfileid: "83220449"
 
 オンプレミス システムは、多くの場合、ベースライン イメージまたはインストール スクリプトを使用してデプロイされます。 通常は追加の構成が必要で、複数の手順やユーザーの介入が必要になることがあります。 これらの手動プロセスではエラーが発生しやすく、多くの場合 "構成ドリフト" に至るため、時間のかかるトラブルシューティングや修復のタスクが必要になります。
 
-ほとんどの Azure リソースは、Azure portal からのデプロイと手動での構成が可能です。 管理対象のリソースがいくつかあるだけの場合は、このアプローチで十分な可能性があります。 ただし、クラウド資産が増加するにつれて、組織は、手動プロセスによって発生するクラウド リソースの構成ドリフトやその他の問題を確実に回避するために、デプロイ プロセスへの自動化の統合を開始する必要があります。 クラウドを導入するための取り組みが十分に行わえているとき、DevOps または [DevSecOps](https://www.microsoft.com/devsecops) アプローチを採用することは、多くの場合、デプロイを管理するための最適な方法です。
+ほとんどの Azure リソースは、Azure portal からのデプロイと手動での構成が可能です。 管理対象のリソースがいくつかあるだけの場合は、このアプローチで十分な可能性があります。 クラウド資産が増加するにつれて、組織は、手動プロセスによって発生するクラウド リソースの構成ドリフトやその他の問題を確実に回避するために、デプロイ プロセスへの自動化の統合を開始する必要があります。 クラウドを導入するための取り組みが十分に行わえているとき、DevOps または [DevSecOps](https://www.microsoft.com/devsecops) アプローチを採用することは、多くの場合、デプロイを管理するための最適な方法です。
 
 確固としたデプロイ高速化の計画によって、クラウド リソースが確実に、正しく一貫してデプロイ、更新、構成されてその状態が維持されるようにします。 デプロイ高速化戦略の成熟度は、[コスト管理戦略](../cost-management/index.md)においても非常に重要な要因になる場合があります。 クラウド リソースの自動プロビジョニングおよび構成を行うと、需要が少なかったり期間限定であったりするときに、スケール ダウンやリソース割り当ての解除をすることができます。そうすれば、必要なときにだけリソースの料金を支払うことができます。
 

@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 876705322aad42ac2dac0eb29d7291d6d6df71ec
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: a5b3caa04e3f87c30236425aff770e82e0a37b4c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401000"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755581"
 ---
 # <a name="cloud-migration-functions"></a>クラウド移行機能
 

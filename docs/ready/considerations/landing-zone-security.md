@@ -3,16 +3,16 @@ title: ランディング ゾーンのセキュリティの向上
 description: ランディング ゾーンのセキュリティの向上
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3debb2057b4f4a6c925b62b3d783c135c5d2b3bb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 116c628d31267fafe50d8a870f9e6c83d3c51f3c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215179"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756500"
 ---
 <!-- cSpell:ignore SIEM -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "83215179"
 
 ## <a name="test-driven-development-cycle"></a>テスト駆動開発サイクル
 
-セキュリティの強化を始める前に、"完了の定義" とすべての "受け入れ基準" を理解しておくことが重要です。 詳細については、[ランディング ゾーンのテスト駆動開発](./test-driven-development.md)および [Azure でのテスト駆動開発](./azure-test-driven-development.md)に関する記事を参照してください。
+セキュリティの強化を始める前に、"完了の定義" とすべての "受け入れ基準" を理解しておくことが重要です。 詳細については、[ランディング ゾーンのテスト駆動開発](./test-driven-development.md)および [Azure でのテスト駆動開発](./azure-test-driven-development.md)に関する記事をご覧ください。
 
 ![クラウド ランディング ゾーンのテスト駆動開発プロセス](../../_images/ready/test-driven-development-process.png)
 

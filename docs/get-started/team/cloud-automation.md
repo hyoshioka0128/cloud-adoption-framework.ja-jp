@@ -6,19 +6,19 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: bbb9f557f68fc50ef38c34371fe5b550375c335b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 4c560271b86b384aa0ba43763344bd0a5335f239
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230407"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814224"
 ---
 # <a name="get-started-build-a-cloud-automation-team"></a>作業を開始しましょう。クラウド自動化チームを構築する
 
 このガイドは、クラウド導入に取り組んでいる自動化チームの目標と目的を理解するのに役立ちます。
 
-クラウドの導入時、クラウド自動化の機能は、DevOps とクラウド ネイティブ アプローチの可能性を引き出します。 これらの各分野の専門知識により、導入とイノベーションが促進されます。
+クラウドの導入時、クラウド自動化の機能は、DevOps とクラウド ネイティブ アプローチの可能性を引き出します。 これらの分野の専門知識により、導入とイノベーションが促進されます。
 
 ## <a name="prerequisites"></a>前提条件
 

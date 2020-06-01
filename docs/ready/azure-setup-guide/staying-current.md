@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d0c3379da2962236dfb64ff45a5a9495b8a3fc36
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 25972ae001dd9cb153a2f6ae5e75f627ce86b7d6
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80808782"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756313"
 ---
 <!-- cSpell:ignore jelledruyts andym endjin -->
 
@@ -31,7 +31,7 @@ Microsoft Azure のようなクラウド プラットフォームは、多くの
 次のリソースは、Azure に関する最新情報を入手するのに役立ちます。
 
 - [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview)
-  - Service Health とアラートによって、進行中のサービス上の問題、計画的なメンテナンス、正常性の勧告についてのタイムリーな通知が提供されます。 このリソースには、Azure から削除される機能に関する情報も含まれます。
+  - Service Health アラートによって、進行中のサービス上の問題、計画的なメンテナンス、正常性の勧告についてのタイムリーな通知が提供されます。 このリソースには、Azure から削除される機能に関する情報も含まれます。
 - [Azure の更新情報](https://azure.microsoft.com/updates)
   - Azure の更新情報をサブスクライブして、製品の更新に関するお知らせを受け取ります。 簡単な概要はより詳細な情報にリンクされているため、更新情報を簡単にフォローできます。
   - [RSS](https://azurecomcdn.azureedge.net/updates/feed) 経由でサブスクライブします。

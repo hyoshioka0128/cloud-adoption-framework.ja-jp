@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0860dfc137b8aaa9ad39beeebb3856786eee1318
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 927c42b216ff22aa3b721c5f741e49fe089e2923
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218307"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755973"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>規制コンプライアンスの概要
 
@@ -23,7 +23,7 @@ ms.locfileid: "83218307"
 
 多国籍組織 (特に、ヘルスケアや金融サービスなどの規制の厳しい業界) では、コンプライアンスが困難です。 標準と規制は数多く存在し、頻繁に変更されることもあるため、企業が変わり続ける国際電子データ処理法に対応するのは困難です。
 
-セキュリティ管理と同様、組織はクラウドでの規制コンプライアンスに関する責任の分担を理解する必要があります。 クラウド プロバイダーは、そのプラットフォームとサービスを準拠させることに努めています。 しかし組織もまた、提供するアプリケーション、それらのアプリケーションが依存するインフラストラクチャ、および、サード パーティによって提供されるサービスも準拠の認定を受けていることを確認する必要があります。
+セキュリティ管理と同様、組織はクラウドでの規制コンプライアンスに関する責任の分担を理解する必要があります。 クラウド プロバイダーは、そのプラットフォームとサービスを準拠させることに努めています。 また、組織も提供するアプリケーション、それらのアプリケーションが依存するインフラストラクチャ、サード パーティによって提供されるサービスが準拠の認定を受けていることを確認する必要があります。
 
 以下では、さまざまな業界や地域でのコンプライアンスに関する規制について説明します。
 

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c973dfbdf7cb4fede3520465b2192b7f821cec1d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1fa20d37c5cc7813220ff5862743f3179f4aefcd
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434137"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861516"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -32,9 +32,9 @@ hosts ファイルに対してファイル コンテンツの追跡を有効に�
 
 追跡中のファイルに加えられた変更に対するアラートを追加することもできます。 たとえば、hosts ファイルに加えられた変更に対してアラートを設定するとします。 コマンド バーまたはリンクされた Log Analytics ワークスペースのログ検索で **[Log Analytics]** を選択します。 Log Analytics で、次のクエリを使用して、hosts ファイルに対する変更を検索します。
 
-```kusto
-ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
-```
+  ```kusto
+  ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
+  ```
 
 ![Azure portal の Log Analytics クエリ エディターのスクリーンショット](./media/change-tracking2.png)
 
@@ -98,7 +98,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ## <a name="next-steps"></a>次のステップ
 
-Azure Automation を使用して[更新スケジュールを作成](./update-schedules.md)することで、サーバーに対する更新を管理する方法を確認します。
+Azure Automation で[更新スケジュールを作成](./update-schedules.md)して、サーバーの更新を管理する方法を確認します。
 
 > [!div class="nextstepaction"]
 > [更新スケジュールの作成](./update-schedules.md)

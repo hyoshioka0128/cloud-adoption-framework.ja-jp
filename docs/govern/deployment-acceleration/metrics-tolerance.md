@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed92a62d83092a54aa86c58f7b453768fe71ad1f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1ab0d2c8657889a8f4ee16bd4dd9ca4f631b32c2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220279"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754971"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-deployment-acceleration-discipline"></a>デプロイ高速化の規範におけるリスク許容値のメトリックとインジケーター
 
@@ -21,7 +21,7 @@ ms.locfileid: "83220279"
 
 ## <a name="metrics"></a>メトリック
 
-デプロイ高速化は、クラウド リソースがどのように構成、デプロイ、更新、および管理されるかに関連するリスクに焦点を合わせています。 次の情報は、このクラウド ガバナンスの規範を導入する際に役立ちます。
+デプロイ高速化は、クラウド リソースがどのように構成、デプロイ、更新、および管理されるかに関連するリスクに焦点を合わせています。 次の情報は、デプロイ高速化規範を導入する際に役立ちます。
 
 - **デプロイの失敗:** 失敗したデプロイまたはリソースの構成が間違っているという結果になった割合。
 - **デプロイ時間:** 既存のシステムに更新プログラムをデプロイするために必要な時間。

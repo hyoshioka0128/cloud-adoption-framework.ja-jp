@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 41134eacc0fbb5356fdff1a56dc292465e6e8750
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f874edbb899512cce5a3868ffa7426b188cedb7d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223883"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756449"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>設計の原則と高度な運用の適用
 
@@ -75,9 +75,9 @@ CCoE における役割の自然な配置の概要を次に示します。
 
 ### <a name="improve-system-design"></a>システム設計を改善する
 
-システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、クラウド導入フレームワークを介して実行される環境ビューの範囲外です。 このフレームワークを補完するために、Azure Architecture Framework には、特定のシステムの回復性と設計を向上させるためのベスト プラクティスが用意されています。 このような設計の改善は、プラットフォームのシステム設計や特定のワークロードに適用できます。
+システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、クラウド導入フレームワークを介して実行される環境ビューの範囲外です。 このフレームワークを補完するために、Microsoft Azure Well-Architected Framework には、特定のシステムの回復性と設計を向上させるためのベスト プラクティスが用意されています。 このような設計の改善は、プラットフォームのシステム設計や特定のワークロードに適用できます。
 
-Azure Architecture Framework は、システム設計の 5 つの柱全体の改善に焦点を当てています。
+Microsoft Azure Well-Architected Framework は、システム設計の 5 つの柱全体の改善に焦点を合わせています。
 
 - **拡張性:** 負荷の増加に対応するために、共通プラットフォーム資産をスケーリングします。
 - **可用性:** アップタイムの可能性を向上させることにより、ビジネスの中断を軽減します。
@@ -87,7 +87,7 @@ Azure Architecture Framework は、システム設計の 5 つの柱全体の改
 
 ほとんどのビジネス中断は、何らかの形の技術的負債が発生しているか、またはアーキテクチャに欠陥があることを意味します。 既存のデプロイの場合、システム設計の改善は、既存の技術的負債の返済と見なすことができます。 新しいデプロイの場合、システム設計の改善は、技術的負債の回避と見なすことができます。 次の「自動修復」では、対処できない、または対処する必要がない技術的負債に対処する方法について説明します。
 
-システム設計に役立てるために、[Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) の詳細をご覧ください。 システム設計が改善されたら、この記事に戻り、改善を行って改善点を環境全体に拡張できる新たな機会を見つけてください。
+システム設計の改善に役立てるために、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) の詳細をご覧ください。 システム設計が改善されたら、この記事に戻り、改善を行って改善点を環境全体に拡張できる新たな機会を見つけてください。
 
 ### <a name="automated-remediation"></a>自動修復
 

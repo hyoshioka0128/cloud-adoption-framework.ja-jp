@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 374fe7d5aee3a2277f3bd8c6188f132756e538a1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401184"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815363"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財務上の結果の例
 

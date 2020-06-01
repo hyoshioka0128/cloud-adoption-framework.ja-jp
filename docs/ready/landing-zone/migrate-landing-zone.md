@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 601481112f2d8144596951e1a68bd7d0bda0b95a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d9aaa631aab30c2a35719425c6249d80a8aff53b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621762"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755663"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -53,7 +53,7 @@ ms.locfileid: "83621762"
 | サブスクリプション デザイン          | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [初期サブスクリプションを作成する](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | リソース グループ              | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [サブスクリプションのスケーリング](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
 | 管理グループ            | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [サブスクリプションを整理および管理する](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
-| Data                         | 該当なし                                                                                               | 「[Azure SQL で適切なデプロイ オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)」と [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                       |
+| Data                         | 該当なし                                                                                               | [Azure で正しい SQL Server のオプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)および [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                       |
 | ストレージ                      | 該当なし                                                                                               | [Azure Storage ガイダンス](../considerations/storage-options.md)                                                                                                                                                                                                                        |
 | 名前付けとタグ付けの標準 | 該当なし                                                                                               | [名前付けとタグ付けのベスト プラクティス](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
 | コスト管理              | 該当なし                                                                                               | [コストの追跡](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
@@ -61,7 +61,7 @@ ms.locfileid: "83621762"
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>ランディング ゾーンをカスタマイズまたはデプロイする
 
-デプロイまたはカスタマイズの詳細については、[Azure Blueprints サンプル][deploy-sample]に関するページで、CAF 移行ランディング ゾーン ブループリントの参照サンプルを参照し、ダウンロードしてください。
+デプロイまたはカスタマイズの詳細については、[Azure Blueprints サンプル][deploy-sample]のページで、CAF 移行ランディング ゾーン ブループリントの参照サンプルを参照し、ダウンロードしてください。
 
 > [!div class="nextstepaction"]
 > [ブループリント サンプルをデプロイする][deploy-sample]
@@ -77,4 +77,4 @@ ms.locfileid: "83621762"
 
 <!-- links -->
 
-[deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy
+[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy

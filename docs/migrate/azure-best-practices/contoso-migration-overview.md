@@ -7,12 +7,12 @@ ms.date: 04/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a95247fb479b1c9413c5c61fb499d1f9c4e70c4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2688faf21c6a42846db246172fba6aabc8eca56f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223577"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815176"
 ---
 <!-- cSpell:ignore givenscj -->
 
@@ -85,7 +85,7 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 **記事** | **詳細**
 --- | ---
-[Azure VM と Azure SQL Database マネージド インスタンスでアプリをリホストする](./contoso-migration-rehost-vm-sql-managed-instance.md) | この記事では、オンプレミス アプリの Azure へのリフト アンド シフト移行の例を示します。 Azure Migrate を使用してアプリのフロントエンド VM を移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Database マネージド インスタンスに移行します。
+[Azure VM と Azure SQL Database Managed Instance でアプリをリホストする](./contoso-migration-rehost-vm-sql-managed-instance.md) | この記事では、オンプレミス アプリの Azure へのリフト アンド シフト移行の例を示します。 Azure Migrate を使用してアプリのフロントエンド VM を移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Database Managed Instance に移行します。
 [SQL Server AlwaysOn 可用性グループで Azure VM のアプリをリホストする](./contoso-migration-rehost-vm-sql-ag.md) | この例では、Azure にホストされている SQL Server VM を使用して、アプリとデータを移行する方法を示します。 Azure Migrate を使用してアプリの VM を移行し、Azure Database Migration Service を使用してアプリのデータベースを Always On 可用性グループで保護されている SQL Server クラスターに移行します。
 
 ### <a name="aspnet-php-and-java-apps"></a>ASP.NET、PHP、および Java アプリ
@@ -93,7 +93,7 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 **記事** | **詳細**
 --- | ---
 [Azure App Service と Azure SQL Database を使用して Windows アプリをリファクターする](./contoso-migration-refactor-web-app-sql.md) | この例では、オンプレミスの Windows ベース アプリを Azure Web アプリに移行し、また、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Server インスタンスに移行する方法を示します。
-[Azure App Service と SQL Managed Instance を使用して Windows アプリをリファクタリングする](./contoso-migration-refactor-web-app-sql-managed-instance.md) | この例では、オンプレミスの Windows ベース アプリを Azure Web アプリに移行し、また、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Database Managed Instance に移行する方法を示します。
+[Azure App Service と SQL Managed Instance を使用して Windows アプリをリファクタリングする](./contoso-migration-refactor-web-app-sql-managed-instance.md) | この例では、オンプレミスの Windows ベース アプリを Azure Web アプリに移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Managed Instance に移行する方法を示します。
 [Azure App Service、Azure Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリをリファクターする](./contoso-migration-refactor-linux-app-service-mysql.md) | この例では、Azure Traffic Manager を使用してオンプレミスの Linux ベース アプリを、継続的デリバリーのために GitHub に統合される複数の Azure リージョン上の Azure Web アプリに移行する方法を示します。 アプリのデータベースは Azure Database for MySQL インスタンスに移行されます。
 [Azure でのアプリのリビルド](./contoso-migration-rebuild.md) | この記事では、Azure のさまざまな機能とマネージド サービス (Azure App Service、Azure Kubernetes Service (AKS)、Azure Functions、Azure Cognitive Services、Azure Cosmos DB など) を使用してオンプレミス アプリをリビルドする例を示します。
 [Azure DevOps Services 上で Team Foundation Server をリファクターする](./contoso-migration-tfs-vsts.md) | この記事では、オンプレミスの Team Foundation Server のデプロイを Azure 内の Azure DevOps Services に移行する例を示します。

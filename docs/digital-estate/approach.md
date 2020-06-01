@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5fe16c365c3b51f275e337e39c39538816765645
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e60d7810e1ddf8cf63f3ded16ba990f08e4ac63f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214754"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814700"
 ---
-<!-- docsTest:ignore windows -->
-
 # <a name="approaches-to-digital-estate-planning"></a>デジタル資産計画の手法
 
 デジタル資産計画は、希望する結果や既存の資産のサイズに応じて、さまざまな形で具体化できます。 その取り組みには、さまざまな手法が存在します。 計画サイクルの早期に、手法に関する期待値を定めることが重要です。 期待値が不明確だと、多くの場合、インベントリの収集を追加で実施することが伴って、遅れにつながります。 この記事では、分析に対する 3 つの手法の概要を説明します。

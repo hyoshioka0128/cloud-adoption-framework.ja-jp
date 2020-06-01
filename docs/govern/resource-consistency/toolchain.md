@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a64cbd53cdd4c524b370681ebedf1f8282ac2a93
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 86fc0785ddca2a6b0d184a00ce48f818941ec373
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217950"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862264"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure のリソース整合性ツール
 
@@ -63,4 +63,4 @@ ms.locfileid: "83217950"
 
 ## <a name="next-steps"></a>次のステップ
 
-Azure で[ポリシー定義](https://docs.microsoft.com/azure/governance/policy)の作成、割り当て、管理を行う方法について説明します。
+Azure で[ポリシー定義](https://docs.microsoft.com/azure/governance/policy)の作成、割り当て、管理を行う方法を確認します。

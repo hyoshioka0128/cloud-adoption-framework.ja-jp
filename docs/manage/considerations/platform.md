@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8c79c5fe2069d73a9f488f82700f7a96a7c24829
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d9c493436196a8cf95453d1822dfa43df0fa6b5c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223917"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755990"
 ---
 # <a name="platform-operations-in-cloud-management"></a>クラウド管理でのプラットフォーム運用
 
@@ -55,7 +55,7 @@ CCoE モデル内でサービス カタログを構築する場合、クラウ�
 - **管理:** 運用環境でシステムを継続的に動作させる運用プロセスです。
 - **セキュリティ:** 脅威からアプリケーションとデータを保護することです。
 
-[Azure アーキテクチャ フレームワーク](https://docs.microsoft.com/azure/architecture/guide/pillars)では、全体的な運用を改善するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 これらの重要な要素は、プラットフォームの運用とワークロードの運用の両方に当てはめることができます。
+[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) では、全体的な運用の改善を支援するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 これらの重要な要素は、プラットフォームの運用とワークロードの運用の両方に当てはめることができます。
 
 ## <a name="get-started-with-specific-platforms"></a>特定のプラットフォームの概要
 

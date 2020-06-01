@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66419aa1ec4ebf7a1513ae064edd3b24e98758b9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 00eefa3b865adf4230a77ed2062bef0a7cf0e854
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224291"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753590"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>ソフトウェア定義ネットワーク:クラウド DMZ
 
@@ -37,7 +37,7 @@ DMZ は、ファイアウォールやパケット検査などのセキュリテ�
 クラウド DMZ 仮想ネットワーク アーキテクチャの実装を考える際、クラウド導入チームは、次の問題を考慮する必要があります。
 
 - オンプレミス ネットワークをクラウド ネットワークに接続すると、セキュリティ要件がより複雑になります。 クラウド ネットワークとオンプレミス環境の間の接続がセキュリティ保護されていても、クラウド リソースを確実に保護する必要があります。 クラウドベースのワークロードにアクセスするために作成されるすべてのパブリック IP を、[パブリック接続 DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) または [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) を使用して、適切にセキュリティ保護する必要があります。
-- クラウドDMZ アーキテクチャは、接続をセキュリティでさらに保護し、オンプレミスとクラウド ネットワークの間でセキュリティ ポリシーを調整しながら、本格的なハイブリッド ネットワーク アーキテクチャを幅広く採用できるようにするための足がかりとして広く使用されています。 ただし、分離デプロイに対して、クラウド DMZ アプローチで対応する必要がある特定のセキュリティ、ID、および接続ニーズを適用することもできます。
+- クラウドDMZ アーキテクチャは、接続をセキュリティでさらに保護し、オンプレミスとクラウド ネットワークの間でセキュリティ ポリシーを調整しながら、本格的なハイブリッド ネットワーク アーキテクチャを幅広く採用できるようにするための足がかりとして広く使用されています。 クラウド DMZ アプローチで対応できる、セキュリティ、ID、接続の特定のニーズがある分離デプロイに適用することもできます。
 
 ## <a name="learn-more"></a>詳細情報
 

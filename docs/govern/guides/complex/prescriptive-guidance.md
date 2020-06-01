@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0b807867164fb9ad2717499fc6772c7594140fc2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dcd7c58a1e89539dcec62cf63615c4fb88d9fe08
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220024"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754899"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雑な企業向けのガバナンス ガイド: ベスト プラクティスの説明
 
@@ -73,7 +73,7 @@ ms.locfileid: "83220024"
 - デプロイ プロセスの一環として、リソース グループ用の Azure リソース整合性テンプレートを、ソース管理に格納する必要があります。
 - 上で説明したライフサイクル アプローチに基づき、各リソース グループは、特定のワークロードまたはアプリケーションに関連付けられます。
 - Azure 管理グループにより、会社のポリシーが成熟したらガバナンスの設計を更新できます。
-- Azure Policy の広範な実装は、チームの時間コミットメントを超える可能性があり、この時点では大きな価値を提供しない場合があります。 ただし、シンプルな既定のポリシーを作成して各管理グループに適用し、少数の現在のクラウド ガバナンス ポリシー ステートメントを強制する必要があります。 このポリシーでは、特定のガバナンス要件の実装を定義します。 その後、これらの実装をデプロイされるすべての資産に適用できます。
+- Azure Policy の広範な実装は、チームの時間コミットメントを超える可能性があり、この時点では大きな価値を提供しない場合があります。 シンプルな既定のポリシーを作成し、各管理グループに適用して、少数の現在のクラウド ガバナンス ポリシー ステートメントを強制する必要があります。 このポリシーでは、特定のガバナンス要件の実装を定義します。 その後、これらの実装をデプロイされるすべての資産に適用できます。
 
 >[!IMPORTANT]
 >リソース グループ内のリソースが同じライフサイクルを共有しなくなったら、別のリソース グループに移動する必要があります。 たとえば、共通のデータベースやネットワーク コンポーネントなどです。 それらは、開発中のアプリケーションにサービスを提供しているかもしれませんが、他の目的にも使われている可能性があるため、他のリソース グループに存在する必要があります。
@@ -124,12 +124,12 @@ ms.locfileid: "83220024"
 
 - [暗号化パターン](../../../decision-guides/encryption/index.md)
 - [ID パターン](../../../decision-guides/identity/index.md)
-- [ログ記録とレポートのパターン](../../../decision-guides/logging-and-reporting/index.md)
+- [ログ記録とレポート パターン](../../../decision-guides/logging-and-reporting/index.md)
 - [ポリシー適用パターン](../../../decision-guides/policy-enforcement/index.md)
 - [リソース整合性パターン](../../../decision-guides/resource-consistency/index.md)
 - [リソース タグ付けパターン](../../../decision-guides/resource-tagging/index.md)
 - [ソフトウェア定義ネットワーク パターン](../../../decision-guides/software-defined-network/index.md)
-- [サブスクリプション デザイン パターン](../../../decision-guides/subscriptions/index.md)
+- [サブスクリプション設計パターン](../../../decision-guides/subscriptions/index.md)
 
 ## <a name="next-steps"></a>次のステップ
 

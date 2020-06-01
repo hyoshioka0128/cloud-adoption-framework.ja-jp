@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 8dd96aaba22713a0dce733d379b44eeaae386e81
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 252db2665a4ea7d64947cfd8a973013b6a17e97b
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222693"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862451"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>コスト モデルをデジタル資産に対応付けて、クラウドのコストを予測します
 
@@ -21,7 +21,7 @@ ms.locfileid: "83222693"
 
 Azure の料金計算ツールを使用すると、透明性と正確性を確保してクラウド支出を管理できるため、Azure や他のクラウドを最大限に活用できます。 クラウドのコストを監視、割り当て、最適化するためのツールが提供されるため、お客様は自信を持って将来の投資を推進することができます。
 
-- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview):Azure Migrate は、おそらく、コスト モデルを対応付けるうえで最もコスト効率に優れたアプローチです。 このツールでは、デジタル資産の[インベントリ](./inventory.md)、[限定的な合理化](./rationalize.md)、コスト計算に 1 つのツールで対応できます。
+- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview):Azure Migrate は、おそらく、コスト モデルを対応付けるうえで最もコスト効率に優れたアプローチです。 このツール 1 つで、[デジタル資産のインベントリ](./inventory.md)、[限定的な合理化](./rationalize.md)、コスト計算に対応できます。
 
 - [総保有コスト (TCO) 計算ツール](https://azure.microsoft.com/pricing/tco/calculator):Azure クラウド プラットフォームを使用して、オンプレミス インフラストラクチャの総保有コストを削減します。 Azure の TCO 計算ツールを使用して、アプリケーション ワークロードを Azure に移行することで実現できるコスト節約額を推定します。 お使いのオンプレミス環境の簡単な説明を指定するだけで、即座にレポートが作成されます。
 

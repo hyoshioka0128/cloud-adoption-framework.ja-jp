@@ -3,16 +3,16 @@ title: 新機能
 description: Azure 向けの Microsoft クラウド導入フレームワークの最新情報について取り上げます。
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/27/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3f57409adfa399e267cf14f1f24a3b380ed1bf85
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620872"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862383"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -24,10 +24,11 @@ ms.locfileid: "83620872"
 
 ## <a name="may-15-2020"></a>2020 年 5 月 15 日
 
-フィードバックに基づいて、クラウド導入フレームワークの使用を開始するための新しいコンテンツを作成しました。 新しいファースト ステップ ガイドは、実行する内容に基づいてフレームワークを移動するのに役立ちます。
+フィードバックに基づいて、クラウド導入フレームワークの使用を開始するための新しいコンテンツを作成しました。 新しいファースト ステップ ガイドは、実行する内容に基づいてフレームワークを移動するのに役立ちます。 また、クラウド導入の成功をサポートするガイダンス、ツール、学習モジュールとプログラムを簡単に見つけることができるように、新しいランディング ページも作成しました。
 
 | [アーティクル] | 説明 |
 |---|---|
+| [Azure 向けのクラウド導入フレームワーク](../index.yml) | クラウド導入の成功をサポートするガイダンス、ツール、学習モジュールとプログラムを簡単に見つけることができるように、クラウド導入フレームワークのランディング ページのデザインが変更されました。 |
 | [クラウド導入フレームワークの概要](./index.md) | ここから開始して、クラウドの導入目標に合わせてファースト ステップ ガイドを選択します。 これらの一般的なシナリオでは、Azure 向けの Microsoft クラウド導入フレームワークを使用したロードマップを提供します。|
 | [基本的なアラインメントに関する決定事項を理解し、文書化する](./cloud-concepts.md) | クラウドの導入に関与するすべてのチームが理解する必要がある最初の決定事項について学習します。 |
 | [ポートフォリオ階層を理解して整理する](../reference/fundamental-concepts/hosting-hierarchy.md) | ポートフォリオ階層で、ワークロードとサポート サービスがどのようにまとめられているかについて学習します。 |

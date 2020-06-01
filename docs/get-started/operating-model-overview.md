@@ -3,16 +3,16 @@ title: 操作を改善する
 description: クラウド導入フレームワークを使用して操作を改善します。 これらのシナリオは、コスト管理、セキュリティ、信頼性、パフォーマンスなどに役立ちます。
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0a1f2e1a768cf82bf95508bd1292ddc4f81be9ac
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3c73d4baaa71b87c749483a8fb5ba9f53bb72d70
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230503"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752712"
 ---
 # <a name="improve-operations"></a>操作を改善する
 
@@ -33,6 +33,6 @@ ms.locfileid: "83230503"
 
 ![共有アーキテクチャの原則](../_images/shared-principles.png)
 
-上記の原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。 Azure Advisor では、個々のリソースの原則が評価されます。 Azure アーキテクチャ センターでは、適切に設計されたソリューションを提供するために、これらの原則が適用されます。 Azure Architecture Framework では、アーキテクチャの決定を行うときに、ワークロード全体でこれらの原則のバランスをとることができます。
+上記の原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。 Azure Advisor では、個々のリソースの原則が評価されます。 Azure アーキテクチャ センターでは、適切に設計されたソリューションを提供するために、これらの原則が適用されます。 Microsoft Azure Well-Architected Framework では、アーキテクチャの決定を行うときに、ワークロード全体でこれらの原則のバランスをとることができます。
 
 クラウド導入フレームワークでは、ワークロードのポートフォリオとサポート環境にわたってこれらの原則を適用することで、適切に管理された環境が確保されます。

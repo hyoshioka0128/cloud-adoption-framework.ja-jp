@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7fedacff566fb25e7bb166b62ee711f461209f07
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8256c043677ecaf5b540553b27ddb5f1488b5132
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223815"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756143"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -51,7 +51,7 @@ Azure Active Directory Domain Services などのテナント サービスから�
 | Azure リソース - サービスとしてのプラットフォーム (PaaS) | Azure Database サービス (SQL、MySQL など)。 | Azure Database for SQL のパフォーマンス メトリック。 | 診断ログで SQL データを Azure Monitor ログにストリーミングできるようにします。 |
 | Azure リソース - サービスとしてのインフラストラクチャ (IaaS) | 1.Azure Storage <br> 2.Azure Application Gateway <br>  3.ネットワーク セキュリティ グループ <br>  4.Azure の Traffic Manager <br>  5.Azure Virtual Machines <br>  6.Azure Kubernetes Service/Azure Container Instances | 1.容量、可用性、およびパフォーマンス。 <br>  2.パフォーマンス ログと診断ログ (アクティビティ、アクセス、パフォーマンス、ファイアウォール)。 <br>  3.ルールが適用されたときのイベントと、拒否または許可を行うためにルールが適用された回数を示すルール カウンターを監視します。 <br>  4.エンドポイントの状態の可用性を監視します。 <br>  5.ゲスト VM オペレーティング システム (OS) での容量、可用性、パフォーマンスを監視します。 各 VM 上でホストされているアプリの依存関係をマップします。これには、サーバー間のアクティブなネットワーク接続の可視性、受信接続および送信接続の待機時間、任意の TCP 接続アーキテクチャでのポートなどが含まれます。 <br>  6.コンテナーおよびコンテナー インスタンス上で実行されるワークロードの容量、可用性、およびパフォーマンスを監視します。 | 1.Blob Storage のストレージ メトリック。 <br>  2.診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 <br>  3.ネットワーク セキュリティ グループの診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 <br>  4.Traffic Manager エンドポイントの診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 <br>  5.Azure Monitor for VMs を有効にします。 <br>  6.Azure Monitor for containers を有効にします。 |
 | ネットワーク | ご利用の仮想マシンと 1 つまたは複数のエンドポイント (別の VM、完全修飾ドメイン名、Uniform Resource Identifier、または IPv4 アドレス) との間の通信です。 | VM とエンドポイントの間で発生する到達可能性、待機時間、およびネットワーク トポロジ変更を監視します。 | Azure Network Watcher。 |
-| Azure サブスクリプション | Azure サービスの正常性と基本的なリソースの正常性。 | <li> サービスまたはリソースに対して実行された管理操作。 <li> Azure サービスが低下状態または利用不可状態にあるサービス正常性。 <li> Azure サービスの観点から Azure リソースで検出された正常性の問題。 <li> 失敗または例外を示す Azure の自動スケーリングを使用して実行された操作。 <li> 許可または拒否操作が発生したことを示す Azure Policy を使用して実行された操作。 <li> Azure Security Center によって生成されたアラートのレコード。 | Azure Resource Manager を使用して監視およびアラート通知用のアクティビティ ログで提供されます。 |
+| Azure サブスクリプション | Azure Service Health と基本的なリソースの正常性。 | <li> サービスまたはリソースに対して実行された管理操作。 <li> Azure サービスが低下状態または利用不可状態にあるサービス正常性。 <li> Azure サービスの観点から Azure リソースで検出された正常性の問題。 <li> 失敗または例外を示す Azure の自動スケーリングを使用して実行された操作。 <li> 許可または拒否操作が発生したことを示す Azure Policy を使用して実行された操作。 <li> Azure Security Center によって生成されたアラートのレコード。 | Azure Resource Manager を使用して監視およびアラート通知用のアクティビティ ログで提供されます。 |
 | Azure テナント | Azure Active Directory | 診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 |
 
 <!-- markdownlint-enable MD033 -->
@@ -86,7 +86,7 @@ Azure Active Directory Domain Services などのテナント サービスから�
 | VM ワークロードの監視 | はい、制限あり <br>  IIS および SQL Server のエラー ログ、Windows イベント、およびパフォーマンス カウンターを収集できます。 カスタム クエリ、アラート、および視覚化の作成が必要です。 | はい <br>  利用可能な管理パックを使用して、ほとんどのサーバー ワークロードの監視をサポートします。 VM 上に Log Analytics Windows エージェントまたは Operations Manager エージェントのいずれかを必要とし、企業ネットワーク上の管理グループに報告します。 |
 | Azure IaaS の監視 | はい | はい <br>  企業ネットワークからの大部分のインフラストラクチャの監視をサポートします。 Azure 管理パックを使用して、Azure VM、SQL、およびストレージの可用性の状態、メトリック、およびアラートを追跡します。 |
 | Azure PaaS の監視 | はい | はい、制限あり <br><br> Azure 管理パックでサポートされている内容に基づいています。 |
-| Azure サービスの監視 | はい | はい <br><br> 現在、管理パックでは Azure サービスの正常性のネイティブな監視は行われませんが、カスタム ワークフローを作成して、Azure サービスの正常性アラートのクエリを実行することができます。 Azure REST API を使用し、既存の通知を介してアラートを取得します。 |
+| Azure サービスの監視 | はい | はい <br><br> 現在、管理パックでは Azure Service Health のネイティブな監視は提供されていませんが、カスタム ワークフローを作成して、Service Health アラートのクエリを実行できます。 Azure REST API を使用し、既存の通知を介してアラートを取得します。 |
 | 最新の Web アプリケーションの監視 | はい | いいえ |
 | レガシ Web アプリケーションの監視 | はい、制限あり、SDK によって異なります <br><br> .NET および Java Web アプリケーションのより古いバージョンの監視をサポートします。 | はい、制限あり |
 | Azure Kubernetes Service コンテナーを監視する | はい | いいえ |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4f0f680c26fec666c7f60ba9c74b5cdc7eb22348
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9fe2d91971e13ded533747e079fc52063feaf70d
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217745"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862247"
 ---
 # <a name="security-baseline-discipline-improvement"></a>セキュリティ ベースライン規範の改良
 
@@ -49,7 +49,7 @@ ms.locfileid: "83217745"
 - クラウド プラットフォームのセキュリティ ガイドラインをレビューします。 Azure の場合、これらは [Microsoft Service Trust Portal](https://servicetrust.microsoft.com) にあります。
 - セキュリティ ベースライン ポリシーに[セキュリティ開発ライフサイクル](https://www.microsoft.com/sdl)が含まれているかどうかを判定します。
 - 次の 1 つから 3 つのリリースに基づいてネットワーク、データ、および資産関連のビジネス リスクを評価し、これらのリスクに対する組織の許容度を測定します。
-- 現在のセキュリティ ランドスケープの概要を取得するために、Microsoft の[サイバーセキュリティにおける上位の傾向](https://www.microsoft.com/security/operations/security-intelligence-report)レポートをレビューします。
+- 現在のセキュリティ ランドスケープの概要について、Microsoft の[サイバーセキュリティにおける上位の傾向](https://www.microsoft.com/security/operations/security-intelligence-report)に関するレポートを確認します。
 - 組織内の [DevSecOps](https://www.microsoft.com/devsecops) ロールの開発を検討します。
 
 ## <a name="build-and-predeployment"></a>構築とデプロイ前準備

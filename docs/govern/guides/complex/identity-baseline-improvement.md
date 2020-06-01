@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ada273d5de7f0579848e102781f7a1f40d91bef2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9f239c0cb5cadad59ca687f156b04c095ee7b3c1
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400534"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754932"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "83400534"
 2 つのデータセンターのクラウドへの移行に関する業務上の正当な理由は、CFO によって承認されました。 技術的実現可能性の調査時に、いくつかの障害が検出されました。
 
 - 保護されたデータおよびミッション クリティカルなアプリケーションについては、2 つのデータセンターのワークロードが 25% と示されています。 機微な個人データとミッション クリティカルなアプリケーションに関する現在のガバナンス ポリシーが最新化されるまで、いずれも除去できません。
-- これらのデータセンター内の資産の 7% はクラウドと互換性はありません。 これらは、データセンターの契約が終了する前に、代替データセンターに移動されます。
+- これらのデータセンター内の 7% の資産がクラウドと互換性がありません。 これらは、データセンターの契約が終了する前に、代替データセンターに移動されます。
 - データセンター内の資産の 15% (750 台の仮想マシン) は、レガシ認証またはサード パーティの多要素認証に依存しています。
 - 既存のデータセンターと Azure を接続する VPN 接続では、2 年のタイムライン内で大量の資産を移行し、データセンターを廃止するために十分なデータ転送速度や待機時間は提供されません。
 
@@ -38,7 +38,7 @@ ms.locfileid: "83400534"
 
 ### <a name="changes-in-the-current-state"></a>現在の状態の変化
 
-IT チームは、2 つのデータセンターを廃止する CIO と CFO の計画を進めるための承認を得ました。 しかし、IT チームは、これらのデータセンター内の 750 台 (15%) の資産をクラウド以外の場所に移動する必要があることを懸念しています。
+IT チームは、2 つのデータセンターを廃止する CIO と CFO の計画を進めるための承認を得ました。 チームは、これらのデータセンター内の 750 台 (15%) の資産をクラウド以外の場所に移動する必要があることを懸念しています。
 
 ### <a name="incrementally-improve-the-future-state"></a>将来の状態を段階的に改善する
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f130bbfd306b85620064e50df7c74af804725f62
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fd859de8d7388a0cbd7c55255e005d98e6e87418
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223628"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861584"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -72,7 +72,7 @@ Contoso は目標と要件を決定した後、デプロイ ソリューショ�
 
 ### <a name="database-considerations"></a>データベースの考慮事項
 
-Contoso はソリューション設計プロセスの一環として、Azure SQL Database と SQL Server Managed Instance の機能を比較しました。 Managed Instance にすることを決定するにあたり、次の考慮事項が役に立ちました。
+Contoso はソリューション設計プロセスの一環として、Azure SQL Database と SQL Server Managed Instance の機能を比較しました。 Managed Instance を使用することを決定するにあたり、次の考慮事項が役に立ちました。
 
 - Managed Instance では、最新のオンプレミス SQL Server バージョンとのほぼ 100% の互換性を提供することが目的とされています。 Microsoft では、SQL Server をオンプレミスまたは IaaS VM で実行していて、最小限の設計変更で完全に管理されたサービスにアプリを移行することを望んでいるお客様には、Managed Instance を推奨しています。
 - Contoso は、多数のアプリをオンプレミスから IaaS に移行することを計画しています。 それらの多くは、ISV から提供されたものです。 Contoso は、Managed Instance を使用すれば、サポートされていない可能性がある SQL Database を使用することなく、これらのアプリのデータベース互換性を確保する助けになることを認識しています。
@@ -186,7 +186,7 @@ Contoso の管理者は仮想ネットワークを次のように設定します
 
 **さらにサポートが必要な場合**
 
-- [SQL Database Managed Instance の概要については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)。
+- [SQL Database Managed Instance の概要](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)を確認してください。
 - [SQL Database Managed Instance 用の仮想ネットワークを作成する方法については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration)。
 - [ピアリングを設定する方法については、こちらを参照してください](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering)。
 - [Azure Active Directory DNS 設定を更新する方法については、こちらを参照してください](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance)。
@@ -332,7 +332,7 @@ Contoso が VM を Azure に移行するには、以下の Azure コンポーネ
 
 **さらにサポートが必要な場合**
 
-Azure Migrate: Server Migration ツールの設定について[ご確認ください](https://docs.microsoft.com/azure/migrate)サーバー移行ツール。
+[Azure Migrate: Server Migration ツール](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool)の設定についてご確認ください。
 
 ### <a name="prepare-on-premises-vms"></a>オンプレミスの VM を準備する
 
@@ -362,7 +362,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
 
 5. 他に支援が必要でしょうか。
 
-   - 移行用の VM の準備について[ご確認ください](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)。
+   - [移行用の VM の準備](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)についてご確認ください。
 
 ## <a name="step-5-replicate-the-on-premises-vms"></a>手順 5:オンプレミスの VM をレプリケートする
 

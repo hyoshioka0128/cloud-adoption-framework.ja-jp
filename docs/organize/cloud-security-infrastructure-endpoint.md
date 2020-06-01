@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 81dc8e9ab0aaad9981dd44fdbbd64d4b5d1caf87
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 427ab031953652c32c77a24e73fb0a0e4cfa10af
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230231"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755426"
 ---
 # <a name="function-of-cloud-infrastructure-and-endpoint-security"></a>クラウド インフラストラクチャとエンドポイント セキュリティの機能
 
@@ -22,7 +22,7 @@ ms.locfileid: "83230231"
 
 ソフトウェア定義データセンターやその他のクラウド テクノロジは、次のようなインフラストラクチャとエンドポイントのセキュリティに関する従来の課題を解決するのに役立ちます。
 
-- **インベントリと構成エラーの検出**は、すべてがすぐに表示されるため、クラウドでホストされているアセットについての信頼性がはるかに高くなります (物理データセンターとの比較)。
+- **インベントリと構成エラーの検出**は、すべてがすぐに可視化されるため、クラウドでホストされているアセットについての信頼性がはるかに高くなります (物理データセンターとの比較)。
 - **脆弱性管理**は、全体的なセキュリティ体制管理の重要な部分に発展しています。
 - **コンテナー テクノロジの追加**は、組織がこのテクノロジを幅広く採用すると、インフラストラクチャ チームとネットワーク チームによって管理およびセキュリティ保護されます。 例については、「[Security Center のコンテナーのセキュリティ](https://docs.microsoft.com/azure/security-center/container-security)」を参照してください。
 - **セキュリティ エージェントの統合**とツールの簡素化により、セキュリティ エージェントとツールの保守とパフォーマンスのオーバーヘッドが削減されます。

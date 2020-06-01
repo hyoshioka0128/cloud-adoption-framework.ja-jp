@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: dbf5f3364277ad3a245796e47523cb803a074d31
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0304d2a8f8794f7cc191f494179c3bbb9080d00d
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216420"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815465"
 ---
 # <a name="build-a-cost-conscious-organization"></a>コスト志向の組織を構築する
 
@@ -35,7 +35,7 @@ _図 1: コスト志向の組織の概要_
 
 - **最適化:** 最適化は、コスト削減を生み出すアクションです。 最適化中に、さまざまなワークロードのサポート コストを削減するためにリソース割り当てが変更されます。 このプロセスでは、繰り返しや実験が必要です。 コストを削減するごとにパフォーマンスが低下します。 コスト管理と期待されるエンドユーザー パフォーマンスの間の適切なバランスを見つけるには、複数の関係者からの入力が必要な場合があります。
 
-以下のセクションでは、コスト志向の組織の育成において "_クラウド戦略チーム_"、"_クラウド導入チーム_"、"_クラウド ガバナンス チーム_"、"_クラウド センター オブ エクセレンス (CCoE)_ " が果たす役割について説明します。
+以下のセクションでは、コスト志向の組織の育成において、さまざまなチームが果たす役割について説明します。
 
 ## <a name="cloud-strategy-team"></a>クラウド戦略チーム
 

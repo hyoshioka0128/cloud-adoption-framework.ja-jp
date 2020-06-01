@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d53f9ad9f69e80f4ff65f31f29e00f8e2bb3f90
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f08e1c0bdb516edea017da27baa531e0d422bd42
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218239"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815023"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>リソースの整合性ポリシーのコンプライアンス プロセス
 
@@ -21,7 +21,7 @@ ms.locfileid: "83218239"
 
 ## <a name="planning-review-and-reporting-processes"></a>計画、レビュー、レポート作成のプロセス
 
-クラウドのプラットフォームでは、ダウンタイムの計画、プロビジョニング、スケーリング、最小化のために使用できる、一連の管理ツールと機能が提供されます。 このようなツールを使用して潜在的リスクが修正されるようにクラウド デプロイを効果的に構築し、運用するには、IT 運用チームやビジネスの関係者と緊密に連携するだけでなく、プロセスとポリシーをよく考慮する必要があります。
+クラウドのプラットフォームでは、ダウンタイムの計画、プロビジョニング、スケーリング、最小化のために使用できる、一連の管理ツールと機能が提供されます。 このようなツールを使用して潜在的リスクが修正されるようにクラウド デプロイを効果的に構築し、運用するには、IT 運用チームやビジネス利害関係者と緊密に連携するだけでなく、プロセスとポリシーをよく考慮する必要があります。
 
 リソースの整合性の規範に一般的に含まれるプロセスの例を以下に示します。 この例は、プロセスの計画の最初に使用してください。ビジネスの変化と、ガイダンスを行動に移す開発および IT チームからのフィードバックに基づき、リソースの整合性ポリシーを継続して更新できるようになります。
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 613e1ebaa3341b9aa96af659d0eb03cbc21a1303
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9e54205060604e24974d853e666962130b756ada
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425602"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814921"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Azure でデータを民主化するためのツール
 
@@ -49,7 +49,7 @@ Azure では、上記のフェーズでデジタル発明を加速するため�
 - [Azure Database for PostgreSQL Hyperscale](https://docs.microsoft.com/azure/postgresql/concepts-hyperscale-nodes)
 - [Azure Data Lake](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure Database Migration Service](https://docs.microsoft.com/azure/dms)
-- [Azure SQL Database (マネージド インスタンスあり、またはなし)](https://docs.microsoft.com/azure/sql-database)
+- [Azure SQL Database (Azure SQL Managed Instance あり、またはなし)](https://docs.microsoft.com/azure/sql-database)
 - [Azure Data Factory](https://docs.microsoft.com/azure/data-factory)
 - [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics)
 - [SQL Server Integration Services](https://docs.microsoft.com/sql/integration-services)

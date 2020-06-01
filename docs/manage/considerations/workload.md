@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 92453f3323a2479160bd7bd45e6ef5101c1d9f1b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1b3f21999cea35de59f30d882f9d8b104169952c
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430132"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815227"
 ---
 # <a name="workload-operations-in-cloud-management"></a>クラウド管理におけるワークロードの運用
 
@@ -20,9 +20,11 @@ ms.locfileid: "80430132"
 
 その結果、ワークロードの運用への投資によって、パフォーマンスの向上、業務が中断するリスクの低減、システム障害発生時の迅速な復旧が可能になります。 この記事では、このような優先度の高いワークロードの継続的な運用に投資して、ビジネス コミットメントの改善を促進する方法について説明します。
 
+<!-- docsTest:disable Pareto -->
+
 ## <a name="when-to-invest-in-workload-operations"></a>ワークロードの運用に投資するタイミング
 
-"_パレート原則_" ("_80/20 ルール_" とも呼ばれます) によると、効果の 80% は原因の 20% に由来しています。 IT ポートフォリオが時間の経過と共に有機的に成長することを見込んでいる場合、IT ポートフォリオのレビューでこのルールがよい例になることがよくあります。 投資を必要とする効果に応じて原因は異なりますが、一般的な原則は当てはまります。
+"_パレート原則_" ("_80/20 ルール_" とも呼ばれます) によると、結果の 80% は原因の 20% に由来しています。 IT ポートフォリオが時間の経過と共に有機的に成長することを見込んでいる場合、IT ポートフォリオのレビューでこのルールがよい例になることがよくあります。 投資を必要とする効果に応じて原因は異なりますが、一般的な原則は当てはまります。
 
 - システム障害の 80 パーセントは、一般的なエラーまたはバグの 20 パーセントの結果である傾向があります。
 - ビジネス価値の 80% は、ポートフォリオ内のワークロードの 20% に由来する傾向があります。
@@ -92,7 +94,7 @@ ms.locfileid: "80430132"
 - **管理:** 運用環境でシステムを継続的に動作させる運用プロセスです。
 - **セキュリティ:** 脅威からアプリケーションとデータを保護することです。
 
-[Azure アーキテクチャ フレームワーク](https://docs.microsoft.com/azure/architecture/guide/pillars)では、全体的な運用を改善するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 これらの重要な要素は、プラットフォームの運用とワークロードの運用の両方に当てはめることができます。
+[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) では、全体的な運用の改善を支援するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 これらの重要な要素は、プラットフォームの運用とワークロードの運用の両方に当てはめることができます。
 
 ## <a name="next-steps"></a>次のステップ
 

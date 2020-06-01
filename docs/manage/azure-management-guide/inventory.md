@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 126699d4d5e8d69f230047f16654d5ccb635a8e2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e6cae79ab54c4b1389f9f74ab291575e16831b38
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216726"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756432"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure のインベントリと可視性
 
@@ -48,9 +48,9 @@ _インベントリと可視性_は、クラウド管理ベースラインの 3 
 
 ::: zone-end
 
-Azure Service Health では、ご利用中の Azure サービスとリージョンの正常性について、個々のお客様に応じたビューを提供します。 アクティブな懸案事項に関する情報が Service Health に投稿されるため、これによりリソースへの影響を理解できます。 通常の更新情報では、問題が解決されたときに随時情報が提供されます。
+Azure Service Health では、ご利用中の Azure サービスとリージョンの正常性について、個々のお客様に応じたビューを提供します。 アクティブな問題に関する情報が Azure Service Health に投稿され、リソースへの影響を把握できます。 通常の更新情報では、問題が解決されたときに随時情報が提供されます。
 
-Service Health に計画メンテナンス イベントも公開しているため、リソースの可用性に影響を与える可能性のある変更も把握できます。 サービスの問題、計画メンテナンス、またはその他の変更がお使いの Azure サービスやリージョンに影響を及ぼす可能性がある場合に通知されるように Service Health アラートを設定してください。
+また、Azure Service Health には計画メンテナンス イベントも公開しているため、リソースの可用性に影響を与える可能性のある変更も把握できます。 サービスの問題、計画メンテナンス、またはその他の変更がお使いの Azure サービスやリージョンに影響を及ぼす可能性がある場合に通知されるように Service Health アラートを設定してください。
 
 Azure Service Health には以下が含まれます。
 
@@ -80,11 +80,11 @@ Azure Service Health には以下が含まれます。
 
 ::: zone target="docs"
 
-サービス正常性アラートを設定するには、[Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts) に移動します。
+サービス正常性アラートを設定するには、[Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts) に移動します。
 
 ### <a name="learn-more"></a>詳細情報
 
-詳細については、[Azure Service Health のドキュメント](https://docs.microsoft.com/azure/service-health)を参照してください。
+詳細については、「[Azure Service Health](https://docs.microsoft.com/azure/service-health)」を参照してください。
 
 ## <a name="log-analytics"></a>Log Analytics
 

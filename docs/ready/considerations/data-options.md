@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: af1ba2cbf55d0c144241676f59e6ad154ea1b5f2
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 74fc5b90484bbbc8f72568eb83bbca7c8eb25afb
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620414"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755795"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -57,7 +57,7 @@ ms.locfileid: "83620414"
 | 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな PostgreSQL リレーショナル データベースが必要です。      | [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)                                                             |
 | クラウドでエンタープライズ SQL Server アプリをホストし、サーバー OS を完全に制御する予定です。                                        | [SQL Server on Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
 | 広範なセキュリティが追加料金なしであらゆるレベルに組み込まれた、フル マネージドのエラスティック データ ウェアハウスが必要です。                               | [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is)                               |
-| Hadoop クラスターまたは HDFS データをサポートする Data Lake Storage リソースが必要です。                                         | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake)                                                                                |
+| Hadoop クラスターまたは HDFS データをサポートするデータ レイク用のストレージ リソースが必要です。                                         | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake)                                                                                |
 | 高速でスケーラブルなアプリケーションをサポートするために、高スループットで、一貫性があり、待機時間の短いデータ アクセスが必要です。                           | [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview)                                                    |
 | 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MariaDB リレーショナル データベースが必要です。         | [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/overview)                                                                   |
 
@@ -79,6 +79,6 @@ Azure のグローバル インフラストラクチャの詳細については�
 
 ランディング ゾーン環境を準備するときに、ユーザーがデプロイできるデータ ストアを制限する制御を設定できます。 この制御は、開発者や IT チームがワークロードをサポートするために必要なリソースを引き続きデプロイおよび構成できるようにしながら、コストを管理し、セキュリティ リスクを制限するのに役立ちます。
 
-ランディング ゾーンの要件を特定して文書化したら、[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) を使用して、ユーザーに作成を許可するデータベース リソースを制御できます。 これらの制御は、[データベース リソースの種類の作成を許可または拒否する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types)という形をとることができます。 たとえば、ユーザーが Azure SQL Database リソースのみを作成するように制限することができます。 また、ポリシーを使用して、リソースを作成するときに指定可能なオプションを制御することもできます。たとえば、[プロビジョニングできる SQL Database SKU を制限したり](https://docs.microsoft.com/azure/governance/policy/samples/allowed-sql-db-skus)、IaaS VM へのインストールを[特定バージョンの SQL Server のみ許可](https://docs.microsoft.com/azure/governance/policy/samples/require-sql-12)したりできます。
+ランディング ゾーンの要件を特定して文書化したら、[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) を使用して、ユーザーに作成を許可するデータベース リソースを制御できます。 これらの制御は、[データベース リソースの種類の作成を許可または拒否する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types)という形をとることができます。 たとえば、ユーザーが Azure SQL Database リソースのみを作成するように制限することができます。 また、ポリシーを使用して、リソースが作成されるときに指定可能なオプションを制御することもできます。たとえば、[プロビジョニングできる SQL Database SKU を制限](https://docs.microsoft.com/azure/governance/policy/samples/allowed-sql-db-skus)したり、IaaS VM へのインストールを[特定バージョンの SQL Server のみ許可](https://docs.microsoft.com/azure/governance/policy/samples/require-sql-12)したりできます。
 
-ポリシーは、リソース、リソース グループ、サブスクリプション、および管理グループにスコープを設定できます。 これらのポリシーは、[Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) の定義に含めることも、クラウド資産全体で繰り返し適用することもできます。
+ポリシーは、リソース、リソース グループ、サブスクリプション、および管理グループにスコープを設定できます。 これらのポリシーを [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) の定義に含め、クラウド資産全体で繰り返し適用できます。
