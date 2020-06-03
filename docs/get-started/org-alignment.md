@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7ab2ea31c90215efd37c2ab0d65f8a8c7baf24b1
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 91e9199d8d4dee4a52b0d558f16bb3fcd344bf78
+ms.sourcegitcommit: d2a6430eba5aa3db4a21b8dc4f1c9996224b9cb3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814292"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84149374"
 ---
 # <a name="get-started-align-your-organization"></a>作業を開始しましょう。組織の足並みを揃える
 
@@ -70,7 +70,9 @@ ms.locfileid: "83814292"
 
 導入のニーズが拡大すると、それに伴ってバランスと構造を生み出すニーズも高まります。 そうしたニーズを満たすために、企業は多くの場合、その組織構造を成熟させるプロセスに従います。
 
-![組織成熟度サイクルの図](../_images/ready/org-ready-maturity.png)
+組織のさまざまな成熟段階での一般的なチーム構造の概要を確認するには、このビデオをご覧ください。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS]
 
 ## <a name="step-5-align-raci-charts"></a>手順 5:RACI チャートを配置する
 
