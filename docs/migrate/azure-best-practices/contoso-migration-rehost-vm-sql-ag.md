@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c356554dbdca417708d7eb9698d9729270d8e981
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: e8ec09b9653af39e950dd5cbd814417b35022963
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401019"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023476"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -183,7 +183,7 @@ Contoso の管理者は、クラスターを以下のように設定します。
 **さらにサポートが必要な場合**
 
 - SQL Server VM のプロビジョニングの[手順を参照](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings)します。
-- さまざまな SQL Server SKU の VM の構成方法を[参照します](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)。
+- [さまざまな SQL Server SKU の VM の構成方法](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)を参照します。
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>手順 2:クラスターをデプロイして設定する
 
@@ -312,8 +312,8 @@ Contoso の管理者は正常性プローブを作成して、ロード バラ�
 
 **さらにサポートが必要な場合**
 
-- Azure Load Balancer の[概要を参照してください](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)。
-- ロード バランサーを作成する方法を[参照します](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)。
+- [Azure Load Balancer の概要](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)を参照します。
+- [ロード バランサーの作成方法](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)を参照します。
 
 ## <a name="step-4-prepare-azure-for-azure-migrate"></a>手順 4:Azure Migrate 用に Azure を準備する
 
@@ -381,7 +381,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
 
 5. 他に支援が必要でしょうか。
 
-   - 移行用の VM の準備について[ご確認ください](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)。
+   - [移行用の VM の準備](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)についてご確認ください。
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure"></a>手順 6:オンプレミスの VM を Azure にレプリケートする
 
@@ -493,7 +493,7 @@ SQL デプロイを設定する最後のステップとして、Contoso の管�
 
 - [可用性グループ](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group)と[リスナー](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)を作成する方法を参照します。
 - 手動で[クラスターがロード バランサーの IP アドレスを使用するように設定](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)します。
-- SAS の作成および使用については、[こちら](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)をご覧ください。
+- [SAS の作成および使用方法](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)を参照します。
 
 ## <a name="step-9-migrate-the-vm-with-azure-migrate"></a>手順 9:Azure Migrate で VM を移行する
 
@@ -545,9 +545,9 @@ Contoso の管理者は、移行プロセスの最終ステップとして、ア
 
 **さらにサポートが必要な場合**
 
-- テスト フェールオーバーの実行に関する[説明を参照します](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure)。
+- [テスト フェールオーバーの実行](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure)について学習する。
 - 復旧計画の作成方法に関する[説明を参照します](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans)。
-- Azure へのフェールオーバーに関する[説明を参照します](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)。
+- [Azure へのフェールオーバー](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)に関する説明を参照します。
 
 ### <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 61edff97499b0d9bf5b9d5e4349c548431bdf395
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 146760046dc82b80e347ca2b71ca2ac5f8c090e0
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223560"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023425"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -167,8 +167,7 @@ Contoso が VM を Azure に移行するには、以下の Azure コンポーネ
 
 **さらにサポートが必要な場合**
 
-Azure Migrate: Server Migration ツールの設定について[ご確認ください](https://docs.microsoft.com/azure/migrate)サーバー移行ツール。
-
+[Azure Migrate: Server Migration ツール](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool)の設定についてご確認ください。
 ### <a name="prepare-on-premises-vms"></a>オンプレミスの VM を準備する
 
 Contoso は移行後、Azure VM に接続し、Azure で VM を管理できるようにしたいと考えています。 そのため、Contoso の管理者は、移行前に以下の操作を行います。
@@ -196,7 +195,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
 
 5. 他に支援が必要でしょうか。
 
-   - 移行用の VM の準備について[ご確認ください](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)。
+   - [移行用の VM の準備](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration)についてご確認ください。
 
 ## <a name="step-2-replicate-the-on-premises-vms"></a>手順 2:オンプレミスの VM をレプリケートする
 
@@ -283,8 +282,8 @@ Contoso の管理者は、クイックテスト移行を実行し、その後、
 
 **さらにサポートが必要な場合**
 
-- テスト移行の実行に関する[説明を参照します](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)。
-- VM の Azure への移行に関する[説明を参照します](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)。
+- [テスト移行の実行](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)に関する説明を参照します。
+- [VM の Azure への移行](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)に関する説明を参照します。
 
 ## <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 

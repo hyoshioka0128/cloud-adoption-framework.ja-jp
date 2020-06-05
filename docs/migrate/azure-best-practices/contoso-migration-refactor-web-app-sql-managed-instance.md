@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 0e288b29077d68ee4b0c0522537abe0baaa276ac
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1de34dc3a37414a87bdc89b233af2e2564d44b10
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223696"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023493"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -159,7 +159,7 @@ Contoso の管理者は仮想ネットワークを次のように設定します
     - **SQLMI-DS-EUS2** (10.235.0.0.25)
     - **SQLMI-SAW-EUS2** (10.235.0.128/29) このサブネットは、Managed Instance にディレクトリを接続するために使用されます。
 
-      ![Managed Instance - 仮想ネットワークの作成](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
+      ![Managed Instance:仮想ネットワークの作成](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
 
 4. 仮想ネットワークとサブネットがデプロイされた後、ネットワークを以下のようにピアリングします。
 
@@ -179,19 +179,19 @@ Contoso の管理者は仮想ネットワークを次のように設定します
 
 **さらにサポートが必要な場合**
 
-- [SQL Database Managed Instance の概要については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)。
+- [SQL Database Managed Instance の概要](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)を確認してください。
 - [SQL Database Managed Instance 用の仮想ネットワークを作成する方法については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)。
 - [ピアリングを設定する方法については、こちらを参照してください](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering)。
 - [Azure Active Directory DNS 設定を更新する方法については、こちらを参照してください](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance)。
 
 ### <a name="set-up-routing"></a>ルーティングを設定する
 
-Managed Instance は、プライベート仮想ネットワーク内に配置されます。 仮想ネットワークが Azure Management Service と通信するためのルート テーブルが必要です。 仮想ネットワークが、仮想ネットワークを管理するサービスと通信できない場合、仮想ネットワークへのアクセスができなくなります。
+マネージド インスタンスは、プライベート仮想ネットワーク内に配置されます。 仮想ネットワークが Azure Management Service と通信するためのルート テーブルが必要です。 仮想ネットワークが、仮想ネットワークを管理するサービスと通信できない場合、仮想ネットワークへのアクセスができなくなります。
 
 Contoso は以下の点を考慮します。
 
 - ルート テーブルには、Managed Instance から送信されたパケットを仮想ネットワーク内でルーティングする方法を指定した一連のルール (ルート) が含まれています。
-- ルート テーブルは、Managed Instance がデプロイされているサブネットに関連付けられています。 サブネットから離れる各パケットは、関連付けられたルート テーブルに基づいて処理されます。
+- ルート テーブルは、マネージド インスタンスがデプロイされているサブネットに関連付けられています。 サブネットから離れる各パケットは、関連付けられたルート テーブルに基づいて処理されます。
 - 1 つのサブネットは、1 つのルート テーブルにのみ関連付けることができます。
 - Microsoft Azure では、ルート テーブルの作成に追加料金はかかりません。
 
@@ -415,7 +415,7 @@ Contoso 管理者は、Web アプリとデータベースがすべて通信で�
 
 - vCenter のインベントリからオンプレミスの VM を削除します。
 - ローカルのバックアップ ジョブからから VM を削除します。
-- SmartHotel360 アプリの新しい場所を示すように社内ドキュメントを更新します。 Azure SQL Managed Instance データベースでデータベースは実行中と表示され、2 つの Web アプリでフロント エンドは実行中と表示されます。
+- SmartHotel360 アプリの新しい場所を示すように社内ドキュメントを更新します。 Azure SQL Managed Instance でデータベースは実行中と表示され、2 つの Web アプリでフロント エンドは実行中と表示されます。
 - 使用停止されている VM と対話しているリソースがないか確認します。また、関連する設定やドキュメントがあれば、更新して新しい構成を反映します。
 
 ## <a name="review-the-deployment"></a>デプロイを再調査する

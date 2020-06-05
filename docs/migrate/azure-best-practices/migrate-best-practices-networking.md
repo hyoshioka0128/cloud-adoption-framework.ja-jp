@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8e0c340e8d0dffb36c692ee3f3b8d4b0ece978a0
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 5064de8d3fe2ca435aba7aa6322d0e6e47e65c1a
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861091"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023459"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -376,9 +376,9 @@ _アプリケーション セキュリティ グループの例_
 
 | **規則の名前** | **目的** | **詳細** |
 | --- | --- | --- |
-| Allow-HTTP-Inbound-Internet | インターネットから Web サーバーへのトラフィックを許可します。 インターネットからの受信トラフィックは DenyAllInbound 既定セキュリティ規則によって拒否されるので、AsgLogic または AsgDb アプリケーション セキュリティ グループでは追加の規則は必要ありません。 | 優先順位:100 <br><br> 送信元: インターネット <br><br> 送信元ポート: \* <br><br> 変換先:AsgWeb <br><br> 宛先ポート:80 <br><br> プロトコル:TCP <br><br> アクセス:許可。 |
-| Deny-Database-All | AllowVNetInBound 既定セキュリティ規則では、同じ VNet 上にあるリソース間の通信がすべて許可され、この規則はすべてのリソースからのトラフィックを拒否するために必要です。 | 優先順位:120 <br><br> ソース: \* <br><br> 送信元ポート: \* <br><br> 変換先:AsgDb <br><br> 宛先ポート:1433 <br><br> プロトコル:All <br><br> アクセス:拒否。 |
-| Allow-Database-BusinessLogic | AsgLogic アプリケーション セキュリティ グループから AsgDb アプリケーション セキュリティ グループへのトラフィックを許可します。 この規則の優先度は、Deny-Database-All 規則より高いため、この規則が最初に処理されます。 そのため、AsgLogic アプリケーション セキュリティ グループからのトラフィックは許可され、他のすべてのトラフィックはブロックされます。 | 優先順位:110 <br><br> ソース:AsgLogic <br><br> 送信元ポート: \* <br><br> 変換先:AsgDb <br><br> 宛先ポート:1433 <br><br> プロトコル:TCP <br><br> アクセス:許可。 |
+| `Allow-HTTP-Inbound-Internet` | インターネットから Web サーバーへのトラフィックを許可します。 インターネットからの受信トラフィックは `DenyAllInbound` 既定セキュリティ規則によって拒否されるので、`AsgLogic` または `AsgDb` アプリケーション セキュリティ グループでは追加の規則は必要ありません。 | 優先度: `100`<br><br> ソース: `internet`<br/><br/> 送信元ポート: `*`<br/><br/> 宛先: `AsgWeb`<br/><br/> 宛先ポート: `80`<br/><br/> プロトコル: `TCP`<br/><br/> アクセス: `Allow` |
+| `Deny-Database-All` | `AllowVNetInBound` 既定セキュリティ規則では、同じ VNet 上にあるリソース間の通信がすべて許可され、この規則はすべてのリソースからのトラフィックを拒否するために必要です。 | 優先度: `120`<br/><br/> ソース: `*`<br/><br/> 送信元ポート: `*`<br/><br/> 宛先: `AsgDb`<br/><br/> 宛先ポート: `1433`<br/><br/> プロトコル: `All`<br/><br/> アクセス: `Deny`. |
+| `Allow-Database-BusinessLogic` | `AsgLogic` アプリケーション セキュリティ グループから `AsgDb` アプリケーション セキュリティ グループへのトラフィックを許可します。 この規則の優先度は、`Deny-Database-All` 規則より高いため、この規則が最初に処理されます。 そのため、`AsgLogic` アプリケーション セキュリティ グループからのトラフィックは許可され、他のすべてのトラフィックはブロックされます。 | 優先度: `110`<br/><br/> ソース: `AsgLogic`<br/><br/> 送信元ポート: `*`<br/><br/> 宛先: `AsgDb`<br/><br/> 宛先ポート: `1433`<br/><br/> プロトコル: `TCP`<br/><br/> アクセス: `Allow` |
 
 <!--markdownlint-enable MD033 -->
 

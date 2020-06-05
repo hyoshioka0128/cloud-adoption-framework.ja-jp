@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 37a8a55762dc1ddb49e41673da1497cef4a1606f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3372db305c2353b10fb33deb43585ee182836efd
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223645"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023510"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -127,7 +127,7 @@ Contoso が移行を実行する方法を次に示します。
 > [!div class="checklist"]
 >
 > - **ステップ 1:Azure に SQL データベース インスタンスをプロビジョニングします。** Contoso は、Azure で SQL インスタンスをプロビジョニングします。 アプリの Web サイトが Azure に移行されると、WCF サービス Web アプリはこのインスタンスを示します。
-> - **手順 2:Azure Database Migration Assistant (DMA) を使用してデータベースを評価し、Database Migration Service (DMS) を移行します。** Contoso は、移行するデータベースを評価した後、アプリケーション データベースを Azure Data Migration Service で移行します。
+> - **手順 2:Azure Database Migration Assistant (DMA) を使用してデータベースを評価し、Database Migration Service (DMS) を使用してそのデータベースを移行します。** Contoso は、移行するデータベースを評価した後、Azure Data Migration Service を使用してアプリケーション データベースを移行します。
 > - **ステップ 3:Web アプリをプロビジョニングする。** Contoso は 2 つの Web アプリをプロビジョニングします。
 > - **手順 4:Azure DevOps を設定する。** Contoso は新しい Azure DevOps プロジェクトを作成し、Git リポジトリをインポートします。
 > - **手順 5:接続文字列を構成する。** Contoso は Web 層 Web アプリ、WCF サービス Web アプリ、および SQL インスタンスが通信できるように接続文字列を構成します。
@@ -163,9 +163,9 @@ Contoso が移行を実行する方法を次に示します。
 **さらにサポートが必要な場合**
 
 - SQL Database のプロビジョニングの[手順を参照](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)します。
-- 仮想コア リソースの制限の詳細については[こちら](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)を参照してください。
+- [仮想コア リソースの制限](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)に関する説明を参照します。
 
-## <a name="step-2-assess-the-database-with-database-migration-assistant-dma-and-migrate-with-azure-database-migration-service-dms"></a>手順 2:Database Migration Assistant (DMA) を使用してデータベースを評価し、Azure Database Migration Service (DMS) を使用して移行する
+## <a name="step-2-assess-the-database-using-database-migration-assistant-dma-and-migrate-it-using-azure-database-migration-service-dms"></a>手順 2:Database Migration Assistant (DMA) を使用してデータベースを評価し、Azure Database Migration Service (DMS) を使用してそのデータベースを移行します
 
 Contoso の管理者は、Database Migration Assistant (DMA) を使用してデータベースを評価した後、[ステップバイステップの移行チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)を使い、Azure Database Migration Services (DMS) を使用してデータベースを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
 

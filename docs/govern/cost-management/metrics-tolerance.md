@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: abaa95421c8e6acdec724f40e5b0e1cd30b7babf
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 8c4387575f9cb9190327f2d644a60695809e185a
+ms.sourcegitcommit: 09a2cb66863f7f7fe69568c5ed007ab9f360b85e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815057"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84300996"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-cost-management-discipline"></a>コスト管理規範におけるリスク許容度のメトリックとインジケーター
 
@@ -49,7 +49,7 @@ ms.locfileid: "83815057"
 
 ## <a name="next-steps"></a>次のステップ
 
-[コスト管理ポリシー テンプレート](./template.md)を使用して、現在のクラウド導入計画に整合するメトリックと許容度インジケーターを文書化します。
+[Cost Management 規範テンプレート](./template.md)を使用して、現在のクラウド導入計画に整合するメトリックと許容度インジケーターを文書化します。
 
 クラウド導入計画に沿って特定のビジネス リスクに対処する独自のポリシーを作成するための開始点として、コスト管理ポリシーのサンプルを確認します。
 
