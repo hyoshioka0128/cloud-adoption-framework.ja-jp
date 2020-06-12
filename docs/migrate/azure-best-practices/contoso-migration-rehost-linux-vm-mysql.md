@@ -106,10 +106,10 @@ Contoso 管理者は、次のようにして移行を完了します。
 
 > [!div class="checklist"]
 >
-> - **ステップ 1:Azure Migrate: Server Migration 用の Azure を準備する。** Azure Migrate プロジェクトに Server Migration ツールを追加します。
-> - **手順 2:Azure Migrate: Server Migration 用のオンプレミス VMware を準備する。** VM 検出用のアカウントを準備し、移行後に Azure VM に接続するための準備をします。
+> - **ステップ 1:Azure Migrate: Server Migration 用の Azure を準備するServer Migration.** Azure Migrate プロジェクトに Server Migration ツールを追加します。
+> - **手順 2:Azure Migrate: Server Migration 用のオンプレミス VMware を準備するServer Migration.** VM 検出用のアカウントを準備し、移行後に Azure VM に接続するための準備をします。
 > - **ステップ 3:VM をレプリケートする。** レプリケーションを設定し、Azure Storage への VM のレプリケーションを開始します。
-> - **手順 4:Azure Migrate: Server Migration でアプリの VM を移行する。** テスト移行を実行してすべてが機能していることを確認した後、完全移行を実行して VM を Azure に移動します。
+> - **手順 4:Azure Migrate: Server Migration でアプリの VM を移行するServer Migration.** テスト移行を実行してすべてが機能していることを確認した後、完全移行を実行して VM を Azure に移動します。
 > - **手順 5:データベースを移行する。** Azure Data Migration Service (DMS) を使用して移行を設定します。
 
 ## <a name="step-1-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>手順 1:Azure Migrate: Server Migration ツール用の Azure を準備するServer Migration ツール
