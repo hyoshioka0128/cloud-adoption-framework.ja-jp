@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ae03aa1186aab3503f8d5397e5d397f0fa086b26
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9e39f1e1589374b438009f423aadf0195837e5cb
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426543"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785448"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Azure サーバー管理サービスの概要
 
@@ -25,8 +25,6 @@ Microsoft クラウド導入フレームワークのこのセクションから�
 わかりやすくするため、このガイダンスを 3 つのステージに分類しました。
 
 ![Azure サーバー管理スイート導入の 3 つのステージ](./media/operations-stages.png)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="why-use-azure-server-management-services"></a>Azure サーバー管理サービスを使用する理由
 

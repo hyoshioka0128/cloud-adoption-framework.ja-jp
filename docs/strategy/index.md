@@ -7,15 +7,13 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 05a2d46bff1bc68bfaad32427170c8e6e5035963
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 32a261bc94cc00fad8d44e0a7699b4bda27fbbee
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621690"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787167"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="develop-a-cloud-adoption-strategy"></a>クラウド導入戦略を作成する
 
 クラウドが提供する基盤テクノロジの利点は、企業が複数のビジネス戦略を実行するのに役立ちます。 クラウドベースのアプローチを使用すると、ビジネスの即応性の向上、コストの削減、市場投入までの時間の短縮、新しい市場への進出が可能になります。 この大きな可能性を活用するには、最初に、クラウド技術者が理解でき、なおかつビジネスの関係者に受け入れられる方法でビジネス戦略を文書化してください。

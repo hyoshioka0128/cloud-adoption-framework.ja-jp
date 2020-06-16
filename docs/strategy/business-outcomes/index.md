@@ -7,15 +7,13 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5284af93b76ae2396e753914264861492b65356f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d298be02fcb27b0f7165d36c045455decc3a8908
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218766"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788134"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>変革の取り組みに関連するビジネス成果
 
 変革の取り組みで最大の成功を収めるには、最初にビジネス成果を考える必要があります。 クラウドの導入には、コストと時間がかかります。 成功を収めるには、IT やその他のビジネス エリアから適切なレベルのサポートが得られるようにすることが重要です。 この一連の記事は、顧客が定義済みの簡潔なビジネス成果を識別し、特定の手段でサポートされるビジネス パフォーマンスの結果や変化を確認できるように設計されています。

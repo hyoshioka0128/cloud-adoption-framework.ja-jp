@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d52ac870c7732732ec5ec92e93b5af6caaf8eacf
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 239e006b7d4c8165e55bc3ba9bd921bc3f4e0842
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755221"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786638"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>クラウドの企業 IT ポリシーを準備する
 
 クラウド ガバナンスは、時間をかけた継続的な導入努力の成果です。真の持続的な変革が一夜にして起こることはないためです。 企業ポリシーの重要な変更に取り組む前に、拙速な対応によって完全なクラウド ガバナンスを実現しようとしても、目的の成果が得られることはめったにありません。 Microsoft が代わりにお勧めするのは、漸進的アプローチです。

@@ -7,15 +7,13 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3711ea0ec99260456f15e0997fabe3a8381e15a1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 721f87e52d78cd05056d5abe402c4bba5607b10e
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222625"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786128"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-is-a-digital-estate"></a>デジタル資産とは
 
 現代のどの企業にも、何らかの形式のデジタル資産があります。 デジタル資産は、物理的な資産と同様に、形のある、所有されている資産のコレクションへの抽象的な参照です。 デジタル資産では、これらの資産に仮想マシン (VM)、サーバー、アプリケーション、データなどが含まれます。 基本的に、デジタル資産は、ビジネス プロセスやサポートしている操作の機能を向上させる IT 資産のコレクションです。
