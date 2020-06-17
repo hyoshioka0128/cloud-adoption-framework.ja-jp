@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b5792eb9fbff305bde35a795d062e7c8586a5811
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 47ca228af7d88d4a02ac9481c9be7dd804dceda5
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621365"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787896"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -60,7 +60,7 @@ ms.locfileid: "83621365"
 
 移行のイテレーションでは、資産とワークロードを移行することによって技術的価値を提供します。 移行ウェーブは、具体的で測定可能なビジネス価値を提供する、ワークロードの最小のコレクションです。 各イテレーションの最後には、完了した技術的な作業を大まかにまとめたレポートを作成してください。 ただし、ビジネスの変更計画や戦略計画は、一般に若干高いレベルで行われます。 クラウド導入チームが移行作業に取り組む間、クラウド戦略チームはその次に行われる 1 つか 2 つの移行ウェーブを計画することに注力します。 また、クラウド戦略チームは、ビジネス価値を実現するためのタイムラインをより把握できるように、学習メトリックとして技術的な進行状況を追跡します。 その点において、移行ウェーブはビジネスの結果、担当者、およびタイムラインを追跡するための反復的な変更管理アプローチです。
 
-前のセクションの図に示すように、クラウド導入フレームワークの[計画](../plan/index.md)手法、[準備](../ready/index.md)手法、一部の[戦略](../strategy/index.md)手法におけるプロセスは、移行ウェーブの計画と移行に関するガイダンスを提供します。 これらのウェーブを管理することで、技術チームによって行われる移行作業の優先順位と定義が決まります。
+前のセクションの図に示すように、クラウド導入フレームワークの[計画手法](../plan/index.md)、[準備手法](../ready/index.md)、一部の[戦略手法](../strategy/index.md)におけるプロセスは、移行ウェーブの計画と管理に関するガイダンスを提供します。 これらのウェーブを管理することで、技術チームによって行われる移行作業の優先順位と定義が決まります。
 
 ## <a name="next-steps"></a>次のステップ
 

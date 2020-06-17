@@ -169,28 +169,54 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: Azure を最新の状態に保つ
             href: ready/azure-setup-guide/staying-current.md
-      - name: 最初のランディング ゾーン
+      - name: Azure ランディング ゾーン
         items:
           - name: ランディング ゾーンとは
             href: ready/landing-zone/index.md
-          - name: ランディング ゾーンのリファクター
-            href: ready/landing-zone/refactor.md
-          - name: 最初のランディング ゾーンの選択
-            href: ready/landing-zone/first-landing-zone.md
-          - name: 移行ランディング ゾーンのブループリント
-            href: ready/landing-zone/migrate-landing-zone.md
-          - name: Terraform ランディング ゾーン
-            href: ready/landing-zone/terraform-landing-zone.md
-      - name: ランディング ゾーンの展開
-        items:
-          - name: 概要
-            href: ready/considerations/index.md
-          - name: ランディング ゾーン用のテスト駆動開発 (TDD)
-            href: ready/considerations/test-driven-development.md
-          - name: Azure でのランディング ゾーンの TDD
-            href: ready/considerations/azure-test-driven-development.md
+          - name: 設計領域
+            href: ready/landing-zone/design-areas.md
+          - name: 実装オプション
+            href: ready/landing-zone/implementation-options.md
+          - name: エンタープライズ スケールから始める
+            items:
+              - name: 概要
+                href: ready/enterprise-scale/index.md
+              - name: エンタープライズ規模のランディング ゾーンを実装する
+                href: ready/enterprise-scale/implementation.md
+              - name: Architecture
+                href: ready/enterprise-scale/architecture.md
+              - name: 設計原則
+                href: ready/enterprise-scale/design-principles.md
+              - name: 設計ガイドライン
+                href: ready/enterprise-scale/design-guidelines.md
+              - name: 重要な設計領域
+                items:
+                  - name: エンタープライズ登録と Azure AD テナント
+                    href: ready/enterprise-scale/enterprise-enrollment-and-azure-ad-tenants.md
+                  - name: ID 管理とアクセス管理
+                    href: ready/enterprise-scale/identity-and-access-management.md
+                  - name: 管理グループとサブスクリプションの組織
+                    href: ready/enterprise-scale/management-group-and-subscription-organization.md
+                  - name: ネットワーク トポロジと接続
+                    href: ready/enterprise-scale/network-topology-and-connectivity.md
+                  - name: 管理と監視
+                    href: ready/enterprise-scale/management-and-monitoring.md
+                  - name: 事業継続とディザスター リカバリー
+                    href: ready/enterprise-scale/business-continuity-and-disaster-recovery.md
+                  - name: セキュリティ、ガバナンス、およびコンプライアンス
+                    href: ready/enterprise-scale/security-governance-and-compliance.md
+                  - name: プラットフォームの自動化と DevOps
+                    href: ready/enterprise-scale/platform-automation-and-devops.md
+              - name: 実装ガイドライン
+                href: ready/enterprise-scale/implementation-guidelines.md
           - name: 小規模から始めて拡張する
             items:
+              - name: CAF 移行ブループリント
+                href: ready/landing-zone/migrate-landing-zone.md
+              - name: CAF 基盤ブループリント
+                href: ready/landing-zone/foundation-blueprint.md
+              - name: Terraform ランディング ゾーン
+                href: ready/landing-zone/terraform-landing-zone.md
               - name: 基本的なランディング ゾーンに関する考慮事項
                 items:
                   - name: 概要
@@ -227,10 +253,14 @@ items:
                     href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: Azure で運用可能なセキュリティに関するベスト プラクティス
                     href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-          - name: エンタープライズ スケールから始める
+          - name: コードとしてのインフラストラクチャ理論
             items:
-              - name: 概要
-                href: ready/considerations/enterprise-scale.md
+              - name: ランディング ゾーンのリファクター
+                href: ready/landing-zone/refactor.md
+              - name: ランディング ゾーン用のテスト駆動開発 (TDD)
+                href: ready/considerations/test-driven-development.md
+              - name: Azure でのランディング ゾーンの TDD
+                href: ready/considerations/azure-test-driven-development.md
       - name: ベスト プラクティス
         items:
           - name: 概要
@@ -245,6 +275,8 @@ items:
                 href: ready/azure-best-practices/organize-subscriptions.md
               - name: 名前付けとタグ付け
                 href: ready/azure-best-practices/naming-and-tagging.md
+              - name: リソースの移動
+                href: 'https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
           - name: ネットワーク
             items:
               - name: ネットワーク境界のセキュリティ
