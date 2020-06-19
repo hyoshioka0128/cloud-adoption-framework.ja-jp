@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 370dfa7a040a41e22f23741ca30cf3a305de7f29
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 49ec30f5a623e3be0c06f4c019669bfd9d3e6006
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219888"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786264"
 ---
 # <a name="motivations-and-business-risks-in-the-identity-baseline-discipline"></a>ID ベースライン規範の導入理由とビジネス リスク
 
 この記事では、クラウド ガバナンス戦略でお客様が ID ベースラインの規範を一般的に採用する理由について説明します。 ポリシー ステートメントを追いやるビジネス リスクの例もいくつか示します。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance"></a>関連性
 

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 68ce6816dbcbbc1770ac8a51a6d77329e65b4eca
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 58fa0ac8b3c522318472f4adbe4ae8d28d2f8636
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755306"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84813298"
 ---
 <!-- cSpell:ignore MarkSimos -->
 
@@ -26,8 +26,6 @@ ms.locfileid: "83755306"
 
 **セキュリティはチーム スポーツである:** セキュリティ チームのメンバーは、お互いを、同じ敵対者に対して防御するセキュリティチーム全体の一部、組織全体の一部、および大規模なセキュリティ コミュニティの一部として認識することが重要です。 この包括的なビューにより、チームは一般的な作業を行うことができます。 チームは役割と責任の発展中に検出された計画外のギャップと重複を処理するため、これは特に重要なことです。
 
-<!-- cSpell:ignore apsec -->
-
 ## <a name="security-functions"></a>セキュリティ機能
 
 次の各記事では、各機能に関する情報を提供します。 各記事では、目標の概要、脅威環境やクラウド テクノロジの変化によって機能がどのように進化するか、およびその成功に不可欠な関係と依存関係について説明します。
@@ -37,7 +35,7 @@ ms.locfileid: "83755306"
 - [セキュリティのアーキテクチャ](./cloud-security-architecture.md)
 - [セキュリティ コンプライアンス管理](./cloud-security-compliance-management.md)
 - [人のセキュリティ](./cloud-security-people.md)
-- [アプリケーションのセキュリティと DevSecOps](./cloud-security-apsec-devsecops.md)
+- [アプリケーションのセキュリティと DevSecOps](./cloud-security-application-security-devsecops.md)
 - [データのセキュリティ](./cloud-security-data-security.md)
 - [インフラストラクチャとエンドポイント セキュリティ](./cloud-security-infrastructure-endpoint.md)
 - [ID とキー](./cloud-security-identity-keys.md)

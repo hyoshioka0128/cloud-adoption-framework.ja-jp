@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d7d621f8f25b5369c4b9d39341c3e735b0996493
-ms.sourcegitcommit: 871d0256a2d448e22b4ab8054e906fc2db946518
+ms.openlocfilehash: 6672d86f215360f1024b233f62a48eb390b52a52
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83705943"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785176"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "83705943"
 
 ## <a name="infrastructure-monitoring"></a>インフラストラクチャ監視
 
-- 「[Design a Monitoring Strategy for Infrastructure in Microsoft Azure (Microsoft Azure でのインフラストラクチャの監視戦略の設計)](https://www.pluralsight.com/courses/microsoft-azure-monitoring-strategy-infrastructure-design-update)」では、Azure の監視機能およびソリューションの基礎知識を習得できます。 
+- 「[Design a Monitoring Strategy for Infrastructure in Microsoft Azure (Microsoft Azure でのインフラストラクチャの監視戦略の設計)](https://www.pluralsight.com/courses/microsoft-azure-monitoring-strategy-infrastructure-design-update)」では、Azure の監視機能およびソリューションの基礎知識を習得できます。
 
 - 「[How to monitor your Kubernetes clusters (Kubernetes クラスターを監視する方法)](https://www.youtube.com/watch?time_continue=3&v=RjsNmapggPU&feature=emb_logo)」では、コンテナー用 Azure Monitor を使用して Kubernetes クラスターを監視する方法について、中級レベルの詳細情報を提供します。
 
@@ -67,9 +67,9 @@ ms.locfileid: "83705943"
 
 ## <a name="data-analysis"></a>データ分析
 
-- [Azure Monitor でログ クエリ](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。 
+- [Azure Monitor でログ クエリ](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
 
-- 「[Kusto Query Language (KQL) from Scratch (ゼロから始める Kusto クエリ言語 (KQL))](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)」は、Azure Monitor ログでのログ分析の幅広いユースケースと手法を示す詳細な例を含む包括的なコースです。 
+- 「[Kusto Query Language (KQL) from Scratch (ゼロから始める Kusto クエリ言語 (KQL))](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)」は、Azure Monitor ログでのログ分析の幅広いユースケースと手法を示す詳細な例を含む包括的なコースです。
 
 ## <a name="deeper-skills-exploration"></a>より詳細なスキル調査
 

@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dc655eb5d7169c84c8cf577326b7396758e49970
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d403a16abd441c7698fb4f6ec66328d37641d806
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221418"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786196"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-can-we-align-efforts-to-meaningful-learning-metrics"></a>有意義な学習メトリックに取り組みを整合させる方法
 
 [ビジネス上の成果の概要](./business-outcomes/index.md)に関するページでは、変換がビジネスに及ぼす影響を測定し通信する方法について説明しました。 残念ながら、こうした成果の一部が測定可能な結果を生み出すまでに何年もかかかることがあります。 役員会や経営幹部は、長期間にわたる 0% デルタを示すレポートでは満足できません。

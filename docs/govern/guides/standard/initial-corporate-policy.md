@@ -1,6 +1,6 @@
 ---
 title: 標準的な企業のガバナンス:初期の企業ポリシー
-description: Azure 向けのクラウド導入フレームワークを使用して、初期のガバナンスの位置、初期段階のリスク、初期のポリシー ステートメント、および初期の適用プロセスを定義します。
+description: Azure 向けクラウド導入フレームワークを使用して、初期のガバナンスの位置、初期段階のリスク、初期のポリシー ステートメント、および初期の適用プロセスを定義します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c32193ee76899af327a2ed727de43f56f9d1ff63
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c541aa8c13602376de17ffa9b9811ab4e59003f0
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214550"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787012"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある初期の企業ポリシー
 
 次の企業ポリシーでは、このガイドの出発点である初期のガバナンス ポジションが定義されています。 この記事では、初期段階のリスク、初期ポリシー ステートメント、ポリシー ステートメントを適用するための初期プロセスを定義します。
 
 > [!NOTE]
->企業ポリシーは技術文書ではありませんが、多くの技術的判断の根拠になります。 [概要](./index.md)で説明するガバナンス MVP は、最終的にこのポリシーから派生します。 ガバナンス MVP を実装する前に、組織はその目標とビジネス リスクに基づいて企業ポリシーを策定する必要があります。
+> 企業ポリシーは技術文書ではありませんが、多くの技術的判断の根拠になります。 [概要](./index.md)で説明するガバナンス MVP は、最終的にこのポリシーから派生します。 ガバナンス MVP を実装する前に、組織はその目標とビジネス リスクに基づいて企業ポリシーを策定する必要があります。
 
 ## <a name="cloud-governance-team"></a>クラウド ガバナンス チーム
 

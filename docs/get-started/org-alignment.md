@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 91e9199d8d4dee4a52b0d558f16bb3fcd344bf78
-ms.sourcegitcommit: d2a6430eba5aa3db4a21b8dc4f1c9996224b9cb3
+ms.openlocfilehash: d26c60bc2f2dad96710b834f58976dd17fda4a5d
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84149374"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84812974"
 ---
 # <a name="get-started-align-your-organization"></a>作業を開始しましょう。組織の足並みを揃える
 
@@ -72,7 +72,11 @@ ms.locfileid: "84149374"
 
 組織のさまざまな成熟段階での一般的なチーム構造の概要を確認するには、このビデオをご覧ください。
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS]
+<!-- markdownlint-disable MD034 -->
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wvTS]
+
+<!-- markdownlint-enable MD034 -->
 
 ## <a name="step-5-align-raci-charts"></a>手順 5:RACI チャートを配置する
 

@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9dbbf67fcd303803a110b49b803698eea2c37687
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 77fccc221dbcc360f2bb2c2b24bd0ce12a34d85f
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220143"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786417"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雑な企業向けのガバナンス ガイド: ガバナンス戦略の背景にある初期の企業ポリシー
 
 次の企業ポリシーでは、このガイドの出発点となっている初期のガバナンスの位置を定義しています。 この記事では、初期段階のリスク、初期ポリシー ステートメント、ポリシー ステートメントを適用するための初期プロセスを定義します。
 
 > [!NOTE]
->企業ポリシーは技術文書ではありませんが、多くの技術的判断の根拠になります。 [概要](./index.md)で説明するガバナンス MVP は、最終的にこのポリシーから派生します。 ガバナンス MVP を実装する前に、組織はその目標とビジネス リスクに基づいて企業ポリシーを策定する必要があります。
+> 企業ポリシーは技術文書ではありませんが、多くの技術的判断の根拠になります。 [概要](./index.md)で説明するガバナンス MVP は、最終的にこのポリシーから派生します。 ガバナンス MVP を実装する前に、組織はその目標とビジネス リスクに基づいて企業ポリシーを策定する必要があります。
 
 ## <a name="cloud-governance-team"></a>クラウド ガバナンス チーム
 

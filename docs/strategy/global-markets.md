@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8dba91bf7bd87395d3b5c55cf99480f8c6a54bd4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8546e1a86c39f286e30a2a476242a626b85c69a0
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221452"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787267"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-will-global-market-decisions-affect-the-transformation-journey"></a>グローバル マーケットの決定が変革過程に与える影響
 
 クラウドでは、グローバル スケールで実行する新しい機会が開かれます。 企業は、新しいデータセンターに大きな投資を必要とせずに市場に資産を展開できるので、グローバルな運用の障壁が大幅に減ります。 残念ながら、これにより技術および法律の点での複雑さも大幅に増します。

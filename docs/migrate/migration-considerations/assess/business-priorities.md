@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8dea3f98b73c6df7c6b667da56411c78cb02d581
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6f2bac40952af40376e57243c75c4dd6910d2bc1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215485"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787845"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>ビジネスの優先順位:配置の維持
 
@@ -23,8 +23,6 @@ _変換_は多くの場合、劇的な、または自然発生的な変化とし
 しかし残念ながら、市場はビジネスの切り替えを待ってはくれません。 消費者の行動パターンは、多くの場合は予期せずに、独自に変化します。 企業とその製品に対する市場の認識は、ソーシャル メディアや競合相手の位置付けによって影響を受ける場合があります。 急速で、かつ予期しない市場の変化に対して、企業は迅速に対応できる必要があります。
 
 プロセスや技術的な切り替えを実行する能力には、一貫性のある、安定した取り組みが必要です。 市場の状態に対応するには、すばやい意思決定と迅速なアクションが必要です。 これらの 2 つは反目する条件であるため、容易に優先順位の整合が取れなくなります。 この記事では、移行作業中に移行の整合を維持するためのアプローチについて説明します。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="how-can-business-and-technical-priorities-stay-aligned-during-a-migration"></a>移行中にビジネスの優先順位と技術的な優先順位をどのように整合させることができるか
 

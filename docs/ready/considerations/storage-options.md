@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c3a7fe76da6fd98f5e37d96cdcbc5426c7f5dea2
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: bfb401486443aae9a086d98b9d93c80dea710074
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862587"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994060"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
 
@@ -139,7 +139,7 @@ Azure Disk Encryption を使用すると、[Azure Key Vault](https://azure.micro
 
 ## <a name="regional-availability"></a>リージョン別の提供状況
 
-Azure を使用すると、顧客やパートナーが "_どのような場所にいても_"、そこに到達するために必要な規模でサービスを提供できます。 [マネージド ディスク](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks)と [Azure Storage](https://azure.microsoft.com/global-infrastructure/services/?products=storage) のリージョン別の提供状況のページには、これらのサービスが使用可能なリージョンが表示されています。 あるサービスのリージョン別の提供状況を事前に確認しておくと、ワークロードや顧客のニーズに関する適切な意思決定を行うために役立ちます。
+Azure を使用すると、顧客やパートナーが "**どのような場所にいても**"、そこに到達するために必要な規模でサービスを提供できます。 [マネージド ディスク](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks)と [Azure Storage](https://azure.microsoft.com/global-infrastructure/services/?products=storage) のリージョン別の提供状況のページには、これらのサービスが使用可能なリージョンが表示されています。 あるサービスのリージョン別の提供状況を事前に確認しておくと、ワークロードや顧客のニーズに関する適切な意思決定を行うために役立ちます。
 
 マネージド ディスクは、Premium SSD と Standard SSD のオファリングがあるすべての Azure リージョンで利用できます。 Ultra SSD は現在パブリック プレビュー段階ですが、1 つの可用性ゾーン (米国東部 2 リージョン) でのみ提供されます。 Ultra SSD を必要とするミッション クリティカルな最上位層のワークロードを計画する場合は、リージョン別の提供状況を確認してください。
 

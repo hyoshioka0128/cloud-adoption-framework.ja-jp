@@ -7,15 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 17d6368eb8e0d55e8ad8107601a690046af1c2e9
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ae57f79aeb4976a2c6306728f354ab972f3b33e3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755633"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788117"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-do-azure-products-support-the-portfolio-hierarchy"></a>Azure 製品によるポートフォリオ階層のサポート方法
 
 「[ポートフォリオ階層を理解して整理する](./hosting-hierarchy.md)」では、ポートフォリオ階層とロール マッピングに対する定義セットによって、ほとんどのポートフォリオ アプローチのスコープの階層が確立されています。 その記事で説明されているので、概要を示す各レベルまたは "_スコープ_" は必要ないかもしれません。 レイヤーの数を最小限に抑えると複雑さが軽減されるため、これらのレイヤーをすべて要件として示すべきではありません。

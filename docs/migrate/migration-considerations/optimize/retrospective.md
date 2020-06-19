@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 00f6b12994b11d0bc1930c71cfa44f64769e3105
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 96ddb1944401990086191be7ceb500c038eb1d2d
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429099"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787760"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>振り返りは成長の思考様式の構築にどのように役立つか
 
 "文化は戦略を朝食に食べる。" 最適な移行計画でも、経営幹部のサポートやリーダーシップからの奨励がなければ、簡単に元に戻すことができます。 学習、成長、さらには障害でさえ、成長の思考様式の中心に存在します。 それらはまた、すべての変換作業の中心にも存在します。

@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 53549ed01b9656ba4ce365e4707b411bdae2db1f
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: aa579f628ccb6f0dfb28bfe23e782580330dd3c1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862281"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786842"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -21,8 +21,6 @@ ms.locfileid: "83862281"
 クラウド導入フレームワークなどの Microsoftによるガイダンスは、このドキュメントのサポート対象である何千社もの企業に特有のセキュリティ制約を、特定したり左右したりするように位置付けられていません。 クラウドに移行する場合、最高情報セキュリティ責任者や最高情報セキュリティ オフィス (CISO) の役割は、クラウド テクノロジに取って代わられるものではありません。 まったく逆に、CISO と CISO オフィスは、よりしっかりと根付いた、統合された存在となります。 このガイドは、読者が CISO のプロセスに精通しており、クラウド変革を実現するためにそれらのプロセスを最新化しようとしていることを前提としています。
 
 クラウドの導入により、従来の IT 環境ではあまり検討されなかったサービスが実現します。 セルフサービスのデプロイや自動化されたデプロイは、一般に、従来は運用環境のデプロイには結び付けられていなかったアプリケーション開発チームやその他の IT チームによって実行されます。 組織によっては、事業の構成単位が同様に、セルフ サービスの機能を持つことになります。 これは、オンプレミス環境では必要でなかった、新しいセキュリティ要件が生じるきっかけとなる可能性があります。 セキュリティの一元化はより困難であり、セキュリティは多くの場合、事業部門と IT 部門の間で責任を共有することになります。 この記事は、そうしたアプローチに向けた CISO の準備と、増分ガバナンスへの取り組みの助けになります。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="how-can-a-ciso-prepare-for-the-cloud"></a>CISO がクラウドの準備をする方法
 

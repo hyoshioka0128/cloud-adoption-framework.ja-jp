@@ -7,18 +7,16 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: bb7ff19f7def1d41fa8a205667345ae0673503e4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 377ee74df593438b9bfda6ad5a2e780051d6f9b7
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399407"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786621"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>クラウド ガバナンスのための企業ポリシーを定義する
 
 組織のクラウド変革体験での既知のリスクと関連するリスクの許容度を分析したら、次はこれらのリスクに明示的に対処し、可能であれば、リスクを修正するのに必要な手順を定義するポリシーを確立します。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="how-can-corporate-it-policy-become-cloud-ready"></a>会社の IT ポリシーがクラウドに対応するしくみ
 
@@ -35,8 +33,6 @@ ms.locfileid: "83399407"
 クラウド導入フレームワークについての違いは、購入サイクルであり、そのサイクルで本物の変革を可能にできるということです。 多額の資本的支出が必要とされないため、エンジニアは、実験と導入を早めに開始できます。 ほとんどの企業文化では、導入への資本的支出の壁を取り除くことが、フィードバック ループ、有機的成長、および段階的実行の強化につながる可能性があります。
 
 クラウド導入への転換には、ガバナンスでの転換が必要です。 多くの組織では、企業ポリシーの変革によってガバナンスが向上し、漸進的なポリシーの変更とこれらの変更の自動的な適用によって準拠率が高まります。これらは、お客様がクラウド サービス プロバイダーと共に構成する新たに定義された機能を活用することで実現します。
-
-<!-- markdownlint-enable MD026 -->
 
 ## <a name="review-existing-policies"></a>既存のポリシーを見直す
 

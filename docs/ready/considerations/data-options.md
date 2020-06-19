@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 74fc5b90484bbbc8f72568eb83bbca7c8eb25afb
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 36f473f768d499619f2749491bbc7753696cba79
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755795"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994114"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -63,7 +63,7 @@ ms.locfileid: "83755795"
 
 ## <a name="regional-availability"></a>リージョン別の提供状況
 
-Azure を利用すれば、_場所を問わず_顧客とパートナーを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
+Azure を利用すれば、**場所を問わず**顧客とパートナーを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
 
 ほとんどのデータベース サービスは、ほとんどの Azure リージョンで一般提供されています。 しかし、これらの製品のサブセットのみをサポートするリージョンもいくつかあります (ほとんどの場合は政府機関の顧客が対象となります)。 どのリージョンにデータベース リソースをデプロイするかを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database)を参照して、利用可能なリージョンの最新の状態を確認することをお勧めします。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a5dc85aba4b5bd37bc65682bd039ecf57658624
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 71d813526d739984390fc671c44245b21ce078f1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862332"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786247"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -55,15 +55,13 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 <!-- markdownlint-disable MD033 -->
 <!-- docsTest:ignore UserPrincipalName SamAccountName -->
 
-<!-- TODO: Fix link for Azure Active Directory admin center -->
-
 | 考慮事項 | パスワード ハッシュ同期 + シームレス SSO | パススルー認証 + シームレス SSO | AD FS とのフェデレーション |
 | --- | --- | --- | --- |
 | 認証が行われる場所 | クラウド内 | クラウド内で、オンプレミスの認証エージェントとのセキュリティで保護されたパスワード検証の交換後 | オンプレミス |
 | プロビジョニング システム以外のオンプレミスのサーバーの要件: Azure AD Connect | なし | 追加の認証エージェントごとに 1 つのサーバー | 2 つ以上の AD FS サーバー <br><br> 境界/DMZ ネットワークに 2 つ以上の WAP サーバー |
 | プロビジョニング システムを超えたオンプレミスのインターネットおよびネットワークの要件は何ですか? | なし | 認証エージェントを実行しているサーバーからの[発信インターネット アクセス](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) | 境界の WAP サーバーへの[着信インターネット アクセス](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) <br><br> 境界の WAP サーバーから AD FS サーバーへの着信ネットワーク アクセス <br><br> ネットワークの負荷分散 |
 | SSL 証明書の要件 | いいえ | いいえ | はい |
-| 正常性の監視ソリューション | 必要なし | エージェントの状態は [Azure Active Directory 管理センター](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication)によって提供される | [Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs) |
+| 正常性の監視ソリューション | 必要なし | エージェントの状態は [Azure Active Directory 管理センター](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication#general-issues)によって提供される | [Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs) |
 | 会社のネットワーク内のドメインに参加しているデバイスからクラウドのリソースへのユーザーのシングル サインオン | [シームレス SSO](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) を使用して実行 | [シームレス SSO](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) を使用して実行 | はい |
 | サポートされているサインインの種類 | UserPrincipalName + パスワード <br><br>  [シームレス SSO](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) による統合 Windows 認証 <br><br> [代替ログイン ID](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom) | UserPrincipalName + パスワード <br><br> [シームレス SSO](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) による統合 Windows 認証 <br><br> [代替ログイン ID](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-faq) | UserPrincipalName + パスワード <br><br> SamAccountName とパスワード <br><br> 統合 Windows 認証 <br><br> [証明書とスマート カード認証](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-user-certificate-authentication) <br><br> [代替ログイン ID](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) |
 | Windows Hello for Business のサポート | [キー信頼モデル](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Intune での証明書信頼モデル](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [キー信頼モデル](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Intune での証明書信頼モデル](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [キー信頼モデル](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [証明書信頼モデル](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs) |

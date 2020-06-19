@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4d17c8fe7251a4ce5281f94d8776ba5ceaddd181
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0086b76c93a6a1491b7715ca568a43bdc40c1ab0
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621242"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84992868"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "83621242"
 
 最初の 3 つのクラウド管理規範では、管理ベースラインについて説明しています。 このガイドの前の記事では、管理ベースラインと呼ばれるクラウド管理サービスの MVP (実用最小限の製品: Minimum Viable Product) について説明しました。 この記事では、そのベースラインに対する一般的な改善をいくつか概説します。
 
-管理ベースラインの目的は、サポート対象の "_すべて_" のワークロードに対して最小限のレベルのビジネス コミットメントが提供される一貫したオファリングを作成することです。 この共通の繰り返し可能な管理サービスのベースラインにより、チームは、逸脱を最小限に抑えて、高度に最適化された運用管理を実現できます。
+管理ベースラインの目的は、サポート対象の "**すべて**" のワークロードに対して最小限のレベルのビジネス コミットメントが提供される一貫したオファリングを作成することです。 この共通の繰り返し可能な管理サービスのベースラインにより、チームは、逸脱を最小限に抑えて、高度に最適化された運用管理を実現できます。
 
 ただし、ビジネスに対して標準的なオファリングを超えるコミットメントが必要な場合があります。 次の画像およびリストでは、管理ベースラインを超えることを行う 3 つの方法を示しています。
 

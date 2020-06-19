@@ -7,15 +7,13 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 31c0335cd4f1a6d8ef8e4793e3f6fb4fa383d339
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cbb80dacdb34cc4ab11cf2d3435a0e8d4ff86e73
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221486"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84784989"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="first-cloud-adoption-project"></a>最初のクラウド導入プロジェクト
 
 クラウド導入計画に関連した学習曲線と時間のコミットメントがあります。 経験豊富なチームにとっても、適切な計画を策定するには時間がかかります。つまり、利害関係者を調整する時間、データを収集して分析する時間、長期的な決定事項を検証する時間、そして人、プロセス、テクノロジを調整する時間が必要になります。 最も生産性の高い導入の取り組みでは、計画は導入とともに拡大し、リリースごと、およびクラウドへのワークロードの移行ごとに改善されます。 クラウド導入計画とクラウド導入戦略の違いを理解することが重要です。 クラウド導入計画の実行を促進し、ガイドするには、明確に定義された戦略が必要です。

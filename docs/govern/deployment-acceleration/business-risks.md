@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a2c1f53e5559c9ca161cad5b68266f0cd1ff83d
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: d1f9ea9498cd47702b2c3bc359a54100f1b7c74c
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755016"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786434"
 ---
 # <a name="motivations-and-business-risks-in-the-deployment-acceleration-discipline"></a>デプロイ高速化規範での動機とビジネス リスク
 
 この記事では、お客様が一般的に、クラウド ガバナンス戦略の中のデプロイ高速化の規範を採用する理由について説明します。 ポリシー ステートメントを追いやるビジネス リスクの例もいくつか示します。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance"></a>関連性
 

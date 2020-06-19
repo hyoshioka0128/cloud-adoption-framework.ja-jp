@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c2a087fec598e2b9d581370f76e35aefef88048f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fac64038c805eed0566554dd42551b32f4294900
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224189"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786230"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="establish-policy-adherence-processes"></a>ポリシー順守プロセスを確立する
 
 クラウド ポリシー ステートメントを確立し、デザイン ガイドの草案を作成したら、ポリシー要件に従ってクラウドをデプロイするための戦略を作成する必要があります。 この戦略では、クラウド ガバナンス チームの現行のレビューと通信のプロセスを網羅し、アクションを必要とするポリシー違反に関する基準と、違反を検出し修復アクションをトリガーさせる自動化された監視/コンプライアンス システムの要件を定義するための基準を確立する必要があります。

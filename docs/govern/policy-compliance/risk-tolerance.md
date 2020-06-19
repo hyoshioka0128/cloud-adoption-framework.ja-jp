@@ -7,20 +7,18 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: e5dd2effba64b4aee4a60f8264e8ca9499a0f5fd
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: dc848313ba3d09cc6030a7fd613aa7a89b783e8a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755956"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786213"
 ---
 # <a name="evaluate-risk-tolerance"></a>リスク許容度の評価
 
 どのようなビジネス上の決定でも、新しいリスクが生じます。 何に投資しても、損失のリスクが生じます。 新しい製品やサービスで、市場の失敗のリスクが生じます。 現在の製品やサービスを変更すると、市場シェアが減少する可能性があります。 クラウド変換は、日常的なビジネス リスクに対して魔法のような解決策を提供するものではありません。 その反対に、接続済みのソリューション (クラウドまたはオンプレミス) によって新たなリスクがもたらされます。 また、ネットワークに接続された施設に資産を展開すると、セキュリティの脆弱性がはるかに広いグローバル コミュニティにさらされるため、潜在的な脅威のプロファイルも広がります。 幸いなことに、クラウド プロバイダーはリスクの変化、増加、追加を認識しています。 また、このようなリスクを削減および管理するために顧客の代わりに多額の投資を行っています。
 
 この記事では、クラウドのリスクに重点を置いていません。 そうではなく、さまざまな形式のクラウド変換に関連するビジネス リスクについて説明します。 この記事の後半では、ビジネスのリスク許容度を理解する方法の説明に焦点を移します。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-business-risks-are-associated-with-a-cloud-transformation"></a>クラウド変換に関連するビジネス リスク
 

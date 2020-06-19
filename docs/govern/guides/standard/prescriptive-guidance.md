@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7a6a6db8204b4bca9a285773297146e79c201994
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: db398eeb461e4fa069af54be4b45e9d75effab3b
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754778"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786995"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準的な企業のガバナンス ガイド:ベスト プラクティスの説明
 
@@ -70,7 +70,7 @@ ms.locfileid: "83754778"
 - Azure Policy の広範な実装は、チームの時間コミットメントを超える可能性があり、この時点では大きな価値を提供しない場合があります。 シンプルな既定のポリシーを作成し、各管理グループに適用して、少数の現在のクラウド ガバナンス ポリシー ステートメントを強制する必要があります。 このポリシーでは、特定のガバナンス要件の実装を定義します。 その後、これらの実装をデプロイされるすべての資産に適用できます。
 
 >[!IMPORTANT]
->リソース グループ内のリソースが同じライフサイクルを共有しなくなったら、別のリソース グループに移動する必要があります。 たとえば、共通のデータベースやネットワーク コンポーネントなどです。 それらは、開発中のアプリケーションにサービスを提供しているかもしれませんが、他の目的にも使われている可能性があるため、他のリソース グループに存在する必要があります。
+> リソース グループ内のリソースが同じライフサイクルを共有しなくなったら、別のリソース グループに移動する必要があります。 たとえば、共通のデータベースやネットワーク コンポーネントなどです。 それらは、開発中のアプリケーションにサービスを提供しているかもしれませんが、他の目的にも使われている可能性があるため、他のリソース グループに存在する必要があります。
 
 ### <a name="resource-tagging"></a>リソースのタグ付け
 

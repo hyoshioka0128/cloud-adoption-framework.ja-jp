@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d469df5110822024f93c261e9ec63dbe0f143ca2
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 077f6f36fba1b8267fecf6ce3926aa2dd9ae8e1b
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862298"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786876"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="conduct-a-cloud-policy-review"></a>クラウド ポリシーの確認を実施する
 
 クラウド ポリシーの確認は、クラウドにおける[ガバナンスの成熟](../index.md)に向けた最初の手順です。 このプロセスの目的は、既存の社内 IT ポリシーを最新化することです。 完了すると、更新されたポリシーによって、クラウドベースのリソースに対して同等のレベルでリスク管理を実行できます。 この記事では、クラウド ポリシーの確認プロセスとその重要性について説明します。
