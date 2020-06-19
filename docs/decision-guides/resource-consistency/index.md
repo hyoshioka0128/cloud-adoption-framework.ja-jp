@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0d38c59c75c2119043f04cdeb9c10402bfce53c2
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 1947ed8ccadae4f2f2d289bc3c58e9206fbe533d
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753524"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993683"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -37,7 +37,7 @@ Azure では、[リソース グループ](https://docs.microsoft.com/azure/azur
 1. リソース グループのコンテンツは、同じ担当者またはチームによってまとめて管理、更新、および監視されていますか。
 1. リソース グループのコンテンツは一緒に削除されますか。
 
-上記のいずれかの点について答えが "_いいえ_" の場合は、該当するリソースを別のリソース グループに配置する必要があります。
+上記のいずれかの点について答えが "**いいえ**" の場合は、該当するリソースを別のリソース グループに配置する必要があります。
 
 > [!IMPORTANT]
 > リソース グループはリージョン固有でもありますが、リソースは、前述のようにまとめて管理されるため、同じリソース グループ内の異なるリージョンに配置されることが一般的です。 リージョンの選択の詳細については、[複数のリージョン](../../migrate/azure-best-practices/multiple-regions.md)に関するページを参照してください。

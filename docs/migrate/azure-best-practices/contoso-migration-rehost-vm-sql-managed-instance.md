@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: fd859de8d7388a0cbd7c55255e005d98e6e87418
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 47343781c43b3074e722eacff293c120f11aec47
+ms.sourcegitcommit: e5c4db8f660fa4c58d1441f0feb4cce415491dfd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861584"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "84943034"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -109,9 +109,9 @@ Contoso は、次の手順を実行して、SmartHotel360 アプリの Web 層�
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)と | [Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)についてご確認ください。 |
+| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
 | [Azure SQL Database マネージド インスタンス](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Managed Instance は、Azure クラウド内の完全に管理された SQL Server インスタンスを表すマネージド データベース サービスです。 最新バージョンの SQL Server データベース エンジンと同じコードを使用し、最新の機能、パフォーマンスの向上、およびセキュリティ更新プログラムが適用されています。 | Azure で実行されている SQL Database Managed Instance を使用すると、容量に基づく料金がかかります。 [Managed Instance の価格の詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して | VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します | 。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します | Azure。 | 2018 年 5 月の時点で Azure Migrate は無料サービスです。 |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | 2018 年 5 月の時点で Azure Migrate は無料サービスです。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -137,7 +137,7 @@ Contoso が予定しているデプロイ設定方法は次のとおりです。
 >
 > - **ステップ 1:SQL Database Managed Instance を準備する。** Contoso では、オンプレミス SQL Server データベースの移行先となる既存のマネージド インスタンスが必要です。
 > - **手順 2:Azure Database Migration Service を準備する。** データベース移行プロバイダーを登録し、インスタンスを作成した後に、Azure Database Migration Service プロジェクトを作成する必要があります。 また、Azure Database Migration Service 用に Shared Access Signature (SAS) の Uniform Resource Identifier (URI) も設定する必要があります。 SAS URI によって Contoso のストレージ アカウント内のリソースへの委任アクセスが可能になり、Contoso はストレージ オブジェクトへの制限付きアクセス許可を付与できます。 SQL Server バックアップ ファイルのアップロード先であるストレージ アカウント コンテナーに Azure Database Migration Service がアクセスできるように、SAS URI を設定します。
-> - **ステップ 3:Azure Migrate: Server Migration 用の Azure を準備する。** Azure Migrate プロジェクトに Server Migration ツールを追加します。
+> - **ステップ 3:Azure Migrate: Server Migration 用の Azure を準備するServer Migration.** Azure Migrate プロジェクトに Server Migration ツールを追加します。
 > - **手順 4:Azure Migrate: Server Migration 用のオンプレミス VMware を準備する。** VM 検出用のアカウントを準備し、移行後に Azure VM に接続するための準備をします。
 > - **手順 5:VM をレプリケートする。** レプリケーションを設定し、Azure Storage への VM のレプリケーションを開始します。
 > - **手順 6:Azure Database Migration Service を使用してデータベースを移行する。** Contoso は、データベースを移行します。

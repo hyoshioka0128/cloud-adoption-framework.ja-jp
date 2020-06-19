@@ -7,20 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cc7558e9adf16d962e086307e213af990ff60e92
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: de561a28e1b6b0bf6253bcb082ded110e84572c3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219004"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788151"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>ビジネス成果テンプレートの使用方法
 
 [ビジネスの成果の概要](./index.md)で説明したように、ビジネス上の会話と技術的な会話の間のギャップを埋めることが困難な場合があります。 この簡単なテンプレートは、チームが後でお客様の変革体験戦略の開発において使うことになるビジネスの成果を一様に把握するために役立つように設計されています。
 
 [ビジネス成果テンプレート スプレッドシート](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx)をダウンロードし、ビジネスの成果のブレインストーミングと追跡を開始します。 引き続き、テンプレートの使用方法について説明します。 エグゼクティブの会話で上る可能性のある潜在的なビジネスの成果に関する意見については、[ビジネスの成果のセクション](./index.md)を確認してください。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="use-the-business-outcome-template"></a>ビジネス成果テンプレートを使用する
 

@@ -7,16 +7,13 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f241899ff97b3ded1e5c2c82c4b0c6724843a411
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 32ea202317ecddab49bed0944212f3f7be7e724c
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218970"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788185"
 ---
-<!-- docsTest:ignore "Team 1" "Team 2" -->
-<!-- cSpell:ignore CSAT -->
-
 # <a name="balance-the-portfolio"></a>ポートフォリオのバランスを取る
 
 クラウドの導入は、技術的実装として巧妙に見せ掛けたポートフォリオ管理作業です。 ポートフォリオ管理の実行と同様に、ポートフォリオのバランスは成功に不可欠な要素です。 戦略的レベルで、これは、クラウドを最大限に活用するために、移行、イノベーション、実験のバランスを取ることを意味します。 クラウド導入作業が一方向に傾きすぎると、導入作業に複雑さが加わります。 この記事では、ポートフォリオのバランスを実現するためのアプローチをわかりやすく説明します。
@@ -25,7 +22,8 @@ ms.locfileid: "83218970"
 
 ポートフォリオのバランスを取ることは、本来、戦略的です。 そのため、この記事で採用されているアプローチも等しく戦略的です。 データ主導の意思決定に基づいた戦略とするため、この記事は、読者が既存の[デジタル資産](../digital-estate/index.md)を評価済みであるか、そのプロセスを開始済みであることを前提としています。 このアプローチの目標は、ワークロードの評価をサポートし、定性的質問とポートフォリオの改善によって、ポートフォリオ間の適切なバランスを確保することです。
 
-<!-- docsTest:ignore 2M months years datacenters improvement TODO -->
+<!-- docsTest TODO: Handle capitalization following numbers and back-ticks -->
+<!-- cSpell:ignore 2M months years datacenters improvement CSAT -->
 
 ### <a name="document-business-outcomes"></a>ビジネス成果の文書化
 

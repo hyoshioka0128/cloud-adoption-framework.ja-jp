@@ -7,20 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: feff683b4b19018895cc7eb9ac3ede6b03cd5300
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d9bd12087b21f8ace7ffc8501073b84650ada458
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218936"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788168"
 ---
 # <a name="examples-of-agility-outcomes"></a>機敏性の成果の例
 
 [ビジネス上の成果の概要](./index.md)に関するページで説明したように、見込みがあるさまざまなビジネス上の成果を、企業との変革に取り組むための対話の基盤として役立てることができます。 この記事では、最もタイムリーなビジネスの評価基準であるビジネスの機敏性に焦点を合わせています。 会社の市場での立ち位置と市場の勢力図を理解することは、ビジネスの変革の過程で目標となるビジネス上の成果を明確にするのに役立ちます。
 
 これまで、最高投資責任者と IT チームは、安定性の源は中核となるミッションクリティカルなプロセスにあると考えていました。 これは相変わらず本当のことです。 IT プラットフォームが安定しない状態で、支障なく機能できる企業はほとんどありません。 ただし、今日のビジネスの世界では、さらに多くのことが期待されています。 IT は、ビジネスと提携して市場での優位性を提供することによって、単純なコスト センターから発展させることができます。 多くの最高投資責任者や役員は、安定性は単に IT のベースラインであると見なしています。 これらのリーダーにとって、ビジネスの機敏性は、ビジネスに対する IT の貢献度を測るメジャーになります。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="why-is-agility-so-important"></a>機敏性が非常に重要な理由
 
