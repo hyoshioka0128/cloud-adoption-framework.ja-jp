@@ -99,6 +99,8 @@ items:
             href: strategy/global-markets.md
           - name: セキュリティ戦略を定義する
             href: strategy/define-security-strategy.md
+          - name: 監視戦略を定義する
+            href: strategy/monitoring-strategy.md
       - name: 戦略に関連するスキル
         href: strategy/suggested-skills.md
   - name: プラン

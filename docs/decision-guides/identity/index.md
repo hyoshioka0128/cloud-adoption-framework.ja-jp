@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c89c5347032d0dcec68344066ac00028fedb7bd
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c9a4a7759388dcbd812e26a482c18a1e48de67eb
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753804"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075914"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -79,7 +79,7 @@ Kerberos や NTLM などの従来のプロトコルを使用する要求ベー�
 
 このパターンでは、クラウド上のリソース用の Active Directory Domain Services (AD DS) を提供するために、Active Directory を実行する仮想マシンをクラウドベース仮想ネットワークにデプロイすることが必要になります。 クラウド ネットワークに移行する既存のすべてのアプリケーションとサービスは、マイナーな変更によって、これらのクラウドでホストされたディレクトリ サーバーを使用できるようにする必要があります。
 
-既存のディレクトリとドメイン サービスは、オンプレミス環境で引き続き使用される場合が多いと思われます。 そのようなシナリオでは、クラウド環境とオンプレミス環境の両方で共通のユーザーとロールを提供するために、ディレクトリ同期も使用することをお勧めします。
+既存のディレクトリとドメイン サービスは、オンプレミス環境で引き続き使用される場合が多いと思われます。 そのようなシナリオでは、クラウド環境とオンプレミス環境の両方で共通のユーザーとロールを提供するために、ディレクトリ同期も使用する必要があります。
 
 **クラウドでホストされるドメイン サービスの前提条件:** ディレクトリの移行を実行するには、次の事項が前提となります。
 

@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 500df8bb2ff239a34b2eb87dbe9f6eb2f215c005
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1ab9dc80830c40754cbd68dbd4f39242f3204676
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222081"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994148"
 ---
 # <a name="prerequisites-for-migration"></a>移行の前提条件
 
-移行を開始する前に、移行ターゲットの "_環境_" を今後の変更に備えて準備しておく必要があります。 このケースでは、環境とはクラウド内の技術基盤を指します。 また、環境は、移行を促進するビジネス環境と考え方も意味します。 同様に、環境には、変更を実行するチームと結果を受け取るチームのカルチャが含まれます。 このような変更に対する準備不足が、移行が失敗する最も一般的な理由です。 この記事のシリーズでは、環境を準備するために推奨される前提条件について説明します。
+移行を開始する前に、移行ターゲットの環境を今後の変更に備えて準備しておく必要があります。 このケースでは、"_環境_" とはクラウド内の技術基盤を指します。 また、環境は、移行を促進するビジネス環境と考え方も意味します。 同様に、環境には、変更を実行するチームと結果を受け取るチームのカルチャが含まれます。 このような変更に対する準備不足が、移行が失敗する最も一般的な理由です。 この記事のシリーズでは、環境を準備するために推奨される前提条件について説明します。
 
 ## <a name="objective"></a>目的
 

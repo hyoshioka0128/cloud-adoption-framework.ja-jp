@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 490aec877e4a841cc746da8e2fa712da8d7e10b1
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3be6a82c2538d20cd147bb5be03bfaf10c67015f
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621498"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076862"
 ---
 # <a name="manage-organizational-alignment"></a>組織の配置を管理する
 
@@ -47,7 +47,7 @@ ms.locfileid: "83621498"
 - [クラウド戦略](./cloud-strategy.md):技術的な変更をビジネス ニーズに合わせます。
 - [クラウド導入](./cloud-adoption.md):技術的なソリューションを提供します。
 - [クラウド ガバナンス](./cloud-governance.md):リスクを管理します。
-- [中央 IT](./central-it.md):既存の IT スタッフからのサポート。
+- [中央 IT チーム](./central-it.md):既存の IT スタッフからのサポート。
 - [クラウド運用](./cloud-operations.md):採用されたソリューションをサポートおよび運用します。
 - [クラウドのセンター オブ エクセレンス](./cloud-center-of-excellence.md):導入の品質、速度、回復性を向上させます。
 - [クラウド プラットフォーム](./cloud-platform.md):プラットフォームを運用し、成熟させます。
