@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: cb0b963b68fbad8d883e7cbbfd107cc774136ad0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: c25279222a0a1dbd9531ffe6e941e1ffc1046051
+ms.sourcegitcommit: b94dab2545384e44650136b17dc9f708ccdc3c7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401083"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85195098"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>クラウド導入計画と Azure DevOps
 
@@ -39,6 +39,8 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 計画プロジェクトがデプロイされたら、Microsoft Excel を使用してそれを変更できます。 Microsoft Excel を使用すると、Azure DevOps ブラウザー エクスペリエンスを使用するよりもはるかに簡単に計画内に新しいワークロードまたは資産を作成できます。
 
 一括編集を行うためにワークステーションを準備するには、[Microsoft Excel を使用した作業項目の一括追加または変更](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)に関する記事をご覧ください。
+
+ユーザーは、プロジェクトを使用してタスクを追跡し、バックログを作成して、リソースを割り当てることができます。 [プロジェクトを Azure DevOps に接続する](https://docs.microsoft.com/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)手順を次に示します。
 
 ## <a name="use-the-cloud-adoption-plan"></a>クラウド導入計画を使用する
 
