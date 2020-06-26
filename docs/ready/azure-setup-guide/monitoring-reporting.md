@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 857cc9622e71d6ee464fd9d324c6d94e77b0276e
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 965e2021a03429782352889a15a8632ec1a84641
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756347"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787539"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -105,7 +105,7 @@ Azure Advisor は、Azure デプロイのベスト プラクティスをフォ�
 
 - **高可用性:** ビジネスに不可欠なアプリケーションの継続性を向上させることができます。 推奨事項には、可用性セットへの仮想マシンの追加や geo 冗長エンドポイントの追加などがあります。
 - **セキュリティ:** セキュリティ侵害に至る可能性がある脅威と脆弱性を検出します。 推奨事項には、ディスク暗号化の適用やネットワーク セキュリティ グループの有効化などがあります。
-- **パフォーマンス:** アプリケーションの速度を向上させます。 推奨事項には、インデックスの作成またはトラフィック マネージャーの設定の再構成による SQL クエリのパフォーマンスの向上などが含まれます。
+- **パフォーマンス:** アプリケーションの速度を向上させます。 推奨事項には、インデックスの作成または Traffic Manager の設定の再構成による SQL クエリのパフォーマンスの向上などが含まれます。
 - **コスト:** Azure の全体的な支出を最適化し、削減します。 推奨事項には、使用頻度の低い仮想マシンのサイズ変更またはシャットダウンや、総保有コストを削減するための Azure Reservations への切り替えなどが含まれます。
 - **オペレーショナル エクセレンス:** プロセスとワークフローの効率性と管理性を向上させます。 推奨事項としては、Azure Policy ルールの設定と適用、無効なログ アラート ルールの修復、Azure Service Health アラートの構成などが含まれる場合があります。
 

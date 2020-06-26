@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e70a448cb96f7e6a790731cd558627e03a543b49
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9c833689b183f1817c8cb403dc1098330b899df7
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756585"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800029"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -64,7 +64,8 @@ Azure Stack には 2 つのデプロイ オプションが用意されていま�
 
 完全な Azure エコシステムを使用して、Azure Stack の取り組みをスピードアップできます。
 
-<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
+<!-- docsTest:ignore "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
+<!-- cSpell:ignore ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers -->
 
 - Azure では、Azure の認定を受けているアプリケーションとサービスの多くが、Azure Stack で動作することが保証されています。 複数の ISV が、Azure Stack に向けて自社のソリューションを拡張しています。 ISV として、Bitnami、Docker、Kemp Technologies、Pivotal Cloud Foundry、Red Hat Enterprise Linux、SUSE Linux などが挙げられます。
 - Azure Stack は、フル マネージド サービスとして配信および運用することを選択できます。 間もなく、いくつかのパートナーから、Azure と Azure Stack にまたがるマネージド サービスのオファリングが提供される予定です。 パートナーとして、Tieto、Yourhosting、Revera、Pulsant、NTT などが挙げられます。 これらのパートナーにより、クラウド ソリューション プロバイダー (CSP) プログラムから Azure 用のマネージド サービスが提供されます。 ハイブリッド ソリューションを含むようにオファリングが拡張されています。

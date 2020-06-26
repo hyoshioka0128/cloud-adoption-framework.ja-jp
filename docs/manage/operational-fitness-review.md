@@ -7,26 +7,26 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2ee786e1a9c7f6b4cb4699aec01d647cabc37827
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8cecbdcf475f243533b9b7215729dd15de4a51e3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223662"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785193"
 ---
 # <a name="establish-an-operational-fitness-review"></a>運用適合性レビューの確立
 
 企業が Azure でワークロードの運用を開始したら、次のステップは、これらのワークロードに対する_運用適合性レビュー_のプロセスを確立することです。 このプロセスでは、これらのワークロードに対する_非機能的な_要件を列挙し、実装して、繰り返し確認します。 非機能的要件は、サービスの予期される運用的な動作に関連します。
 
-非機能的要件には、[ソフトウェア品質の柱](https://docs.microsoft.com/azure/architecture/guide/pillars)と呼ばれる 5 つの重要なカテゴリがあります。
+非機能的要件には、[アーキテクチャ エクセレンスの要素](https://docs.microsoft.com/azure/architecture/framework)と呼ばれる 5 つの重要なカテゴリがあります。
 
-- スケーラビリティ
-- 可用性
-- 回復性 (ビジネス継続性やディザスター リカバリーを含む)
-- 管理
+- コストの最適化
+- オペレーショナル エクセレンス
+- パフォーマンス効率
+- [信頼性]
 - Security
 
-運用適合性レビューのプロセスでは、ミッション クリティカルなワークロードが品質の重要な要素に関するビジネスの期待を確実に満たしていることを確認します。
+運用適合性レビューのプロセスでは、ミッション クリティカルなワークロードが重要な要素に関するビジネスの期待を確実に満たしていることを確認します。
 
 運用環境でワークロードを実行することが原因で発生する問題と、それらの問題を修復および解決する方法を完全に理解するために、運用適合性レビューのプロセスを作成します。 この記事では、企業がこの目標を達成するために使用できる高レベルの運用適合性レビューのプロセスの概要について説明します。
 
@@ -121,13 +121,17 @@ Microsoft が実施するプロセスが、この記事で概要を説明する�
 
 ## <a name="recommended-resources"></a>推奨リソース
 
-- 「[ソフトウェア品質の重要な要素](https://docs.microsoft.com/azure/architecture/guide/pillars)」。
-    Azure アプリケーション アーキテクチャ ガイドのこのセクションでは、ソフトウェア品質の 5 つの重要な要素、すなわち拡張性、可用性、回復性、管理性、セキュリティが説明されています。
+- 「[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)」: ワークロードの品質を向上させるための基本原則について説明します。 フレームワークは、優れたアーキテクチャの 5 つの柱で構成されています。
+  - コストの最適化
+  - オペレーショナル エクセレンス
+  - パフォーマンス効率
+  - [信頼性]
+  - Security
 - 「[Azure アプリケーションの 10 の設計原則](https://docs.microsoft.com/azure/architecture/guide/design-principles)」。
-    Azure アプリケーション アーキテクチャ ガイドのこのセクションでは、アプリケーションをよりスケーラブルで回復性があり、管理しやすいものにする一連の設計原則が説明されています。
+    次の設計原則に従って、アプリケーションのスケーラビリティを上げて、回復力や管理しやすさを強化します。
 - 「[回復性に優れた Azure 用アプリケーションの設計](https://docs.microsoft.com/azure/architecture/resiliency)」。
-    このガイドでは、まず "_回復性_" という用語の定義と関連する概念が説明されています。 次に、設計、実装からデプロイ、運用までというアプリケーションの有効期間全体に体系的な方法を使用することで、回復性を実現するプロセスについて説明します。
+    次に、設計、実装からデプロイ、運用までというアプリケーションの有効期間全体に体系的な方法を使用することで、信頼性の高いシステムを構築して維持します。
 - [クラウド設計パターン](https://docs.microsoft.com/azure/architecture/patterns)。
-    これらの設計パターンは、エンジニアリング チームがソフトウェア品質の重要な要素に基づいてアプリケーションを構築するときに役立ちます。
+    設計パターンを使用して、アーキテクチャ エクセレンスの要素に基づくアプリケーションを構築します。
 - [Azure Advisor](https://docs.microsoft.com/azure/advisor)。
-    Advisor は、高可用性、セキュリティ、パフォーマンス、およびコストに関してリソースを最適化するのに役立つ、使用状況と構成に基づいてパーソナライズされたレコメンデーションを提供します。
+    Azure Advisor では、高可用性、セキュリティ、パフォーマンス、コストに関してリソースを最適化するのに役立つ、使用状況と構成に基づいてパーソナライズされたレコメンデーションが提供されます。

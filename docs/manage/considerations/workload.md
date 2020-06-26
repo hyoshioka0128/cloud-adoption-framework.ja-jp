@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1b3f21999cea35de59f30d882f9d8b104169952c
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: ba2a227f0ee12322d7d306b1bad2ff3c1a325e26
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815227"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785244"
 ---
 # <a name="workload-operations-in-cloud-management"></a>クラウド管理におけるワークロードの運用
 
@@ -94,7 +94,7 @@ ms.locfileid: "83815227"
 - **管理:** 運用環境でシステムを継続的に動作させる運用プロセスです。
 - **セキュリティ:** 脅威からアプリケーションとデータを保護することです。
 
-[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) では、全体的な運用の改善を支援するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 これらの重要な要素は、プラットフォームの運用とワークロードの運用の両方に当てはめることができます。
+[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) では、全体的な運用の改善を支援するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 プラットフォームの運用とワークロードの運用の両方に、重要な要素を適用します。
 
 ## <a name="next-steps"></a>次のステップ
 

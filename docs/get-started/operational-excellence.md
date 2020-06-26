@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 9a207590049021a6bb373ab13ff30c5c26431238
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 948a4b9dc03fd7353112f52e605d515819bc6ceb
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814411"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076477"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>作業を開始しましょう。デジタル変革におけるオペレーショナル エクセレンスを実現する
 
@@ -43,7 +43,7 @@ ms.locfileid: "83814411"
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- [動機を把握する](../strategy/motivations.md): 重要なビジネス イベントや、移行の動機によっては、コストが重視される傾向があります。 これらの領域は、後のすべての作業でコスト管理の重要性を高める可能性があります。 一方、イノベーションまたは移行による成長に関連した未来志向の動機の場合、営業収益がより重視されます。 動機を理解することは、コスト管理の優先順位を決めるうえで役立ちます。
+- [動機を把握する](../strategy/motivations.md): 重要なビジネス イベントや、移行の動機によっては、コストが重視される傾向があります。 そのような領域においては、後のあらゆる取り組みについてコスト管理の重要性が高くなる場合があります。 一方、イノベーションまたは移行による成長に関連した未来志向の動機もあり、その場合には、より営業収益に重点が置かれます。 動機を理解することは、コスト管理の優先順位を決めるうえで役立ちます。
 - [ビジネス成果](../strategy/business-outcomes/index.md):一部の財政上の成果では、コストが極端に重視される傾向があります。 目的の成果を財務上のメトリックに対応付ける場合は、初期段階でコスト管理ガバナンス規範に投資してください。
 - [業務上の正当な理由](../strategy/cloud-migration-business-case.md): 業務上の正当な理由は、クラウド導入の財務計画全体の概要を示します。 これは、最初の予算編成に役立つ情報源となる可能性があります。
 - [メトリックの学習](../strategy/learning-metrics.md):包括的なビジネス戦略とより戦術的な変更管理計画の整合性を維持するために、学習メトリックを確立します。 これらのメトリックは、計画に向けて反復的かつ段階的な進捗状況を示すように設計する必要があります。
@@ -53,7 +53,7 @@ ms.locfileid: "83814411"
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド戦略チーム | <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド戦略チーム | <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-2-develop-an-organizational-change-management-plan-to-span-cloud-adoption"></a>手順 2:クラウド導入を拡大するための組織変更管理の計画を策定する
 
@@ -81,7 +81,7 @@ ms.locfileid: "83814411"
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド戦略チーム | <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド戦略チーム | <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-3-manage-change-across-cloud-adoption-efforts"></a>手順 3:クラウドの導入作業全体で変更を管理する
 

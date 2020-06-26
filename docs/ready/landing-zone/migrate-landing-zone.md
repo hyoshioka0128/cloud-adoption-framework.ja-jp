@@ -7,25 +7,75 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d9aaa631aab30c2a35719425c6249d80a8aff53b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9cca384f3c4e38e6a8a023210aca18c2e92c60dc
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755663"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074679"
 ---
-<!-- cSpell:ignore vCPUs jumpbox -->
-
 # <a name="deploy-a-migration-landing-zone"></a>移行ランディング ゾーンをデプロイする
 
 "_移行ランディング ゾーン_" とは、オンプレミス環境から Azure に移行されるワークロードをホストする目的でプロビジョニングされ、準備された環境です。
 
-## <a name="deploy-the-first-landing-zone"></a>最初のランディング ゾーンをデプロイする
+## <a name="deploy-the-blueprint"></a>ブループリントをデプロイする
 
-クラウド導入フレームワークで移行ランディング ゾーン ブループリントを使用する前に、次の前提条件、決定事項、実装ガイダンスを確認してください。 このガイダンスが目的のクラウド導入計画と整合している場合は、[デプロイ手順][deploy-sample]を使用して[移行ランディング ゾーン ブループリント](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)をデプロイできます。
+クラウド導入フレームワークで CAF 移行ランディング ゾーン ブループリントを使用する前に、次の設計原則、前提条件、決定事項、実装ガイダンスを確認してください。 このガイダンスが目的のクラウド導入計画と整合している場合は、[デプロイ手順][deploy-sample]を使用して [CAF 移行ランディング ゾーン ブループリント](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)をデプロイできます。
 
 > [!div class="nextstepaction"]
 > [ブループリント サンプルをデプロイする][deploy-sample]
+
+## <a name="design-principles"></a>設計原則
+
+この実装オプションでは、すべての Azure ランディング ゾーンによって共有される共通の設計領域に対する厳格なアプローチが提供されます。 他の技術的な詳細については、以下の想定と決定事項を参照してください。
+
+### <a name="deployment-options"></a>デプロイ オプション
+
+この実装オプションでは、移行を開始するための_実用最小限の製品 (MVP)_ がデプロイされます。 移行が進むにつれて、お客様はモジュール化されたリファクタリングベースのアプローチに従って、運用モデルを並行して成熟させることができます。[ガバナンス手法](../../govern/index.md)と[管理手法](../../manage/index.md)を使用し、初期の移行作業と並行してこれらの複雑なトピックに対処します。
+
+この MVP アプローチによってデプロイされる具体的なリソースについては、[後の決定に関するセクション](#decisions)で説明します。
+
+### <a name="enterprise-enrollment"></a>エンタープライズ登録
+
+この実装オプションには、エンタープライズ登録での固有の位置はありません。 このアプローチは、Microsoft または Microsoft パートナーとの契約上の合意に関係なく、お客様に適用されるように設計されています。 この実装オプションをデプロイする前に、お客様は対象のサブスクリプションを作成しておく必要があります。
+
+### <a name="identity"></a>ID
+
+この実装オプションでは、[ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に従って、ターゲット サブスクリプションが既に Azure Active Directory インスタンスに関連付けられている必要があります
+
+### <a name="network-topology-and-connectivity"></a>ネットワーク トポロジと接続
+
+この実装オプションでは、ゲートウェイ、ファイアウォール、ジャンプボックス、ランディング ゾーンのサブネットを使用して仮想ネットワークが作成されます。 次のステップの繰り返しとして、チームは[ネットワーク関連の意思決定ガイド](../considerations/networking-options.md)に従い、[ネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に沿って、ゲートウェイ サブネットと他のネットワークとの間に適切な形式の接続を実装します。
+
+### <a name="resource-organization"></a>リソースの編成
+
+この実装オプションでは、特定のリソース グループによって定義されたワークロードに合わせてリソースが編成される、単一のランディング ゾーンが作成されます。 リソース編成に対するこのミニマリスト アプローチを選択すると、チームのクラウド運用モデルがより明確に定義されるまで、リソース編成の技術的な決定が延期されます。
+
+このアプローチは、クラウド導入作業が[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えることがないという前提に基づいています。 また、このオプションは、このランディング ゾーン内でのアーキテクチャの複雑さとセキュリティ要件が限定的であることも前提となっていいます。
+
+クラウド導入計画の過程でこれが変化する場合は、[ガバナンス手法](../../govern/index.md)のガイダンスを使用して、リソース組織をリファクタリングすることが必要になる場合があります。
+
+### <a name="governance-disciplines"></a>ガバナンスの規範
+
+この実装オプションでは、どのようなガバナンス ツールも実装されません。 ポリシーの自動化が定義されていない場合は、いかなるミッション クリティカルなワークロードや機密データに対しても、このランディング ゾーンを使用しないでください。 このランディング ゾーンは、これらの初期段階の移行作業と並行して、全体的な運用モデルの学習、繰り返し、開発を開始するための限定的な運用デプロイに使用されることが想定されています。
+
+ガバナンスの規範の並列開発の時間を短縮するには、[ガバナンス手法](../../govern/index.md)を確認し、CAF 移行ランディング ゾーン ブループリントに加えて、[CAF 基盤ブループリント](./foundation-blueprint.md)をデプロイすることを検討します。
+
+> [!WARNING]
+> ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)ことが必要になる場合があります。
+
+### <a name="operations-baseline"></a>運用ベースライン
+
+この実装オプションでは、どのような運用も実装されません。 運用ベースラインが定義されていない場合は、いかなるミッション クリティカルなワークロードや機密データに対しても、このランディング ゾーンを使用しないでください。 このランディング ゾーンは、これらの初期段階の移行作業と並行して、全体的な運用モデルの学習、繰り返し、開発を開始するための限定的な運用デプロイに使用されることが想定されています。
+
+運用ベースラインの並列開発の時間を短縮するには、[ガバナンス手法](../../manage/index.md)を確認し、[Azure サーバー管理ガイド](../../manage/azure-server-management/index.md)をデプロイすることを検討します。
+
+> [!WARNING]
+> 運用ベースラインが開発されると、リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)ことが必要になる場合があります。
+
+### <a name="business-continuity-and-disaster-recovery-bcdr"></a>ビジネス継続性とディザスター リカバリー (BCDR)
+
+この実装オプションでは、どのような BCDR ソリューションも実装されません。 保護と復旧のためのソリューションは、運用ベースラインの開発によって対処することが想定されています。
 
 ## <a name="assumptions"></a>前提条件
 
@@ -70,7 +120,7 @@ ms.locfileid: "83755663"
 
 ## <a name="next-steps"></a>次のステップ
 
-最初のランディング ゾーンをデプロイしたら、[ランディング ゾーンを展開](../considerations/index.md)することができます。
+最初のランディング ゾーンをデプロイしたら、[ランディング ゾーンを拡張する](../considerations/index.md)ことができます
 
 > [!div class="nextstepaction"]
 > [ランディング ゾーンを展開する](../considerations/index.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: cf026f32e52f5742525e655cd904e152e849bcd6
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: cbe349d5ad7fa7ddf5ad4f58c8c29e63bc26cda7
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861975"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785397"
 ---
 <!-- cSpell:ignore deltadan CSPs untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -170,8 +170,6 @@ Contoso の管理者は、次の表に示すように Azure リソース グル�
 | `ContosoFailoverRG` | このグループには、フェールオーバーされたリソースが格納されます。 |
 | `ContosoNetworkingRG` | このグループには、すべてのネットワーク リソースが含まれます。 |
 | `ContosoRG` | このグループには、運用アプリおよびデータベースに関連するリソースが含まれます。 |
-
-<!-- markdownlint-disable MD026 -->
 
 リソース グループは次のようにして作成します。
 
@@ -368,7 +366,7 @@ Azure の[仮想ネットワーク ピアリング](https://docs.microsoft.com/a
 
 #### <a name="hub-to-hub-across-regions"></a>異なるリージョンのハブとハブ
 
-Contoso は各リージョンにハブを展開します。 ハブは、オンプレミス ネットワークへの接続の中心点として機能する Azure の仮想ネットワークです。 ハブの VNet は、グローバル VNet ピアリングを使用して相互接続します。 グローバル VNet ピアリングは、異なる Azure リージョンにある VNet の間を接続します。
+Contoso は各リージョンにハブを展開します。 ハブは、オンプレミス ネットワークへの接続の中心点として機能する Azure の仮想ネットワークです。 ハブの VNet は、Azure リージョンをまたいで VNet を接続するグローバル VNet ピアリングにより、相互に接続されます。
 
 - 各リージョンのハブは、他のリージョンにあるパートナー ハブにピアリングされます。
 - ハブは、そのリージョン内のすべてのネットワークにピアリングされ、すべてのネットワーク リソースに接続できます。
@@ -568,7 +566,7 @@ Contoso の管理者は、Azure DNS サービスはハイブリッド環境に�
 
 オンプレミスのドメイン コントローラーに加え、Contoso は Azure ネットワークをサポートするために、さらに 4 つのドメイン コントローラー (リージョンごとに 2 つ) を実装します。 Contoso の Azure での展開は次のようになります。
 
-| **リージョン** | **DC** | **VNet** | **サブネット** | **IP アドレス (IP address)** |
+| リージョン | DC | VNet | Subnet | IP アドレス |
 | --- | --- | --- | --- | --- |
 | EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4 |
 | EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5 |

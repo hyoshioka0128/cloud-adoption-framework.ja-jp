@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0ce3b5ee28983851e97c10360cf6707b4e3c17d1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a8daf90b03d4040d03c8a6432c6a7150183a0fb9
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214516"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787862"
 ---
 <!-- cSpell:ignore bandersmsft -->
 
@@ -53,7 +53,7 @@ ms.locfileid: "83214516"
 
 **前提条件:** このタブの残りでは、読者が移行される資産 (インフラストラクチャ、アプリ、およびデータ) のコレクションを既に Azure Migrate に入力していることを前提にしています。 評価に関する前の記事では、初期データの収集に関する指示が提供されています。 データが入力されたら、次のいくつかの手順に従って、収集されたデータに基づいて毎月のコストを見積もります。
 
-Azure Migrate は、コレクターやサービス マップによってキャプチャされたデータに基づいて、**毎月のコスト見積もり**を計算します。 次の手順では、コスト見積もりを読み込みます。
+Azure Migrate では、コレクターやサービス マップによってキャプチャされたデータに基づいて、毎月のコスト見積もりが計算されます。 次の手順では、コスト見積もりを読み込みます。
 
 1. ポータルで [Azure Migrate Assessment]\(Azure Migrate の評価) に移動します。
 1. プロジェクトの **[概要]** ページで、 **[+ 評価の作成]** を選択します。
@@ -68,7 +68,7 @@ Azure Migrate は、コレクターやサービス マップによってキャ�
 
 ![[コスト詳細] ビュー](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
 
-"_図 1:Azure Migrate での評価の [コスト詳細] ビューの画像。_
+"_図 1:Azure Migrate での評価の [コスト詳細] ビューの図。_
 
 ## <a name="additional-resources"></a>その他のリソース
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b3c963341e7e13020cb4e67fca29db14569fa6b3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b3998f05afa4bd0b8e0fe972674d84318ff63ac4
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223951"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075370"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>クラウド管理のインベントリと可視性
 
@@ -92,7 +92,7 @@ ms.locfileid: "83223951"
 
 運用監視のプロセスを開発する場合、毎日の運用と各プロセスの定期的なサポートの責任を決定することも同様に重要です。
 
-中央の IT 組織では、IT が運用の専門知識を提供します。 修復が必要な問題の場合、ビジネスは相談的な性質になります。
+一元化された IT 組織では、IT が運用の専門知識を提供します。 修復が必要な問題の場合、ビジネスは相談的な性質になります。
 
 優れた組織のクラウド センターでは、業務によって専門知識を提供し、このようなプロセスの管理に責任を持ちます。 IT は、チームが環境を運用する際のチームのオートメーションとサポートに焦点を当てます。
 

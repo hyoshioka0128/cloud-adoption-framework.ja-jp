@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f9217e64919198feb2b55cf068ca3dc5133309e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f3b3987c016a5fbf76355a27eec720c5620cdc34
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222438"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993769"
 ---
 # <a name="predict-and-influence"></a>予測と影響
 
@@ -32,7 +32,15 @@ ms.locfileid: "83222438"
 
 ## <a name="develop-predictive-capabilities"></a>予測機能の開発
 
-常に正確な予測機能を提供するソリューションに共通する 5 つの特性は、"_データ_"、"_分析情報_"、"_パターン_"、"_予測_" および "_対話_" です。 予測機能の開発には、各側面が必要です。 すべての大きなイノベーション同様、予測機能の開発には[反復に対するコミットメント](./index.md#commitment-to-iteration)が必要です。 各反復では、次の 1 つ以上の特性が熟慮され、ますます複雑化する顧客の仮説が検証されます。
+常に正確な予測機能を提供するソリューションは、一般に次の 5 つの主要な特性を備えています。
+
+    - Data
+    - 洞察
+    - パターン
+    - 予測
+    - インタラクション
+
+予測機能の開発には、各側面が必要です。 すべての大きなイノベーション同様、予測機能の開発には[反復に対するコミットメント](./index.md#commitment-to-iteration)が必要です。 各反復では、次の 1 つ以上の特性が熟慮され、ますます複雑化する顧客の仮説が検証されます。
 
 ![予測機能の手順](../../_images/innovate/predict-and-influence.png)
 

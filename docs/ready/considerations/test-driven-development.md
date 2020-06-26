@@ -1,18 +1,18 @@
 ---
 title: ランディング ゾーン用のテスト駆動開発
-description: ランディング ゾーン用のテスト駆動開発
+description: ランディング ゾーン用のテスト駆動開発。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d7aa0f388f68e876569ef2e8c3638b77af8ed033
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 81a6ca5f7b642cb2e8723e6861bf61afe8242003
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755728"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077034"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>ランディング ゾーン用のテスト駆動開発 (TDD)
 
@@ -20,7 +20,7 @@ ms.locfileid: "83755728"
 
 ![クラウド ランディング ゾーンのテスト駆動開発プロセス](../../_images/ready/test-driven-development-process.png)
 
-クラウドでは、インフラストラクチャはコードの出力です。 適切に構造化、テスト、および検証されたコードにより、実行可能なランディング ゾーンが生成されます。 [ランディング ゾーンの定義](../landing-zone/index.md)によると、"ランディング ゾーンは、コードを使用して事前プロビジョニングされたワークロードをホストするための環境です。 これには、定義されたクラウド サービスとベスト プラクティスのセットを使用した基本機能が含まれており、ユーザーを**成功に導きます**。" この記事では、品質、セキュリティ、運用、ガバナンスの要件を満たしながら、テスト駆動開発を使用してその定義の最後の部分を実現するアプローチの 1 つについて説明します。
+クラウドでは、インフラストラクチャはコード実行の出力です。 適切に構造化、テスト、および検証されたコードにより、実行可能なランディング ゾーンが生成されます。 [ランディング ゾーン](../landing-zone/index.md)は、コードを使用して事前プロビジョニングされたワークロードをホストするための環境です。 これには、定義されたクラウド サービスとベスト プラクティスのセットを使用した基本機能が含まれており、ユーザーを成功に導きます。 このガイダンスでは、品質、セキュリティ、運用、ガバナンスの要件を満たしながら、テスト駆動開発を使用してその定義の最後の部分を実現するアプローチの 1 つについて説明します。
 
 このアプローチは、初期開発時の単純な機能要求を満たすために使用できます。 クラウド導入ライフサイクルの後半で、このプロセスを使用して、セキュリティ、運用、ガバナンス、またはコンプライアンスの要件を満たすことができます。
 

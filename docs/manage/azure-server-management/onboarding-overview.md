@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0396ccaf952bc9d7812304af5d1d9c9952b751cc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: de26df188d2e6e240b07abde8c284bf57cb232db
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219633"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84992853"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>フェーズ 2:Azure サーバー管理サービスへのオンボード
 
@@ -38,7 +38,7 @@ Azure 管理サービスに関連する[ツール](./tools-services.md)と[計�
 
 ![推奨されるデプロイ モデルの図](./media/recommended-deployment.png)
 
-上の図に示すように、Log Analytics エージェントには、オンプレミス サーバーの "_自動登録_" と "_オプトイン_" の両方の構成があります。
+上の図に示すように、Log Analytics エージェントには、オンプレミス サーバー用に 2 つの構成があります。
 
 - **自動登録:** Log Analytics エージェントがサーバーにインストールされ、ワークスペースに接続するように構成されている場合に、そのワークスペース上で有効になっているソリューションがサーバーに自動的に適用されます。
 - **オプトイン:** エージェントがインストールされ、ワークスペースに接続されている場合でも、ワークスペース内のサーバーのスコープ構成に追加されていない限りソリューションは適用されません。

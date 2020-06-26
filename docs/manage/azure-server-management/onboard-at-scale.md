@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 368c5b44513ee98cb7f361305bfe1de468474a03
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 83739453ac8d9466c01656788a22baaec4e78e5a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861533"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785431"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -56,7 +56,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
 2. **[ポリシーの割り当て]** ページで、 **[スコープ]** を設定します。その際、省略記号 (…) を選択した後、管理グループまたはサブスクリプションを選択します。 任意でリソース グループを選択します。 次に、 **[スコープ]** ページの下部にある **[選択]** を選択します。 スコープによって、ポリシーの割り当て先のリソースまたはリソース グループが決まります。
 
-3. **[ポリシー定義]** の横にある省略記号 ( **...** ) を選択して、使用可能な定義の一覧を開きます。 イニシアティブ定義をフィルター処理するには、 **[検索]** ボックスに「**Azure Monitor**」と入力します。
+3. **[ポリシー定義]** の横にある省略記号 **[...]** を選択して、使用可能な定義の一覧を開きます。 イニシアティブ定義をフィルター処理するには、 **[検索]** ボックスに「**Azure Monitor**」と入力します。
 
     ![ポータルのポリシー インターフェイスのスクリーン ショット](./media/onboarding-at-scale2.png)
 
@@ -66,7 +66,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
     ![ポータルのポリシー インターフェイスのスクリーン ショット](./media/onboarding-at-scale3.png)
 
-6. **[マネージド ID の場所]** チェック ボックスを選択します。 このポリシーが [DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists) という種類の場合、このポリシーをデプロイするにはマネージド ID が必要になります。 ポータルでは、チェック ボックスの選択で指示されたとおりにアカウントが作成されます。
+6. **[マネージド ID の場所]** チェック ボックスを選択します。 このポリシーの種類が `[DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists)` である場合、このポリシーをデプロイするにはマネージド ID が必要になります。 ポータルでは、チェック ボックスの選択で指示されたとおりにアカウントが作成されます。
 
 7. **[割り当て]** を選択します。
 
@@ -77,7 +77,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 > [!NOTE]
 > Azure サーバー管理サービスをサーバーにオンボードする前に、必須の [Log Analytics ワークスペースと Azure Automation アカウント](./prerequisites.md#create-a-workspace-and-automation-account)を作成します。
 
-オンプレミスのサーバーの場合、[Log Analytics エージェントと Microsoft Dependency エージェント](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud)を手動でダウンロードしてインストールし、適切なワークスペースに接続するようにそれらを構成する必要があります。 ワークスペース ID とキー情報を指定する必要があります。 この情報を取得するには、Azure portal で Log Analytics ワークスペースに移動し、 **[設定]**  >  **[詳細設定]** を選択します。
+オンプレミスのサーバーの場合、[Log Analytics エージェントと Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) を手動でダウンロードしてインストールし、適切なワークスペースに接続するようにそれらを構成する必要があります。 ワークスペース ID とキー情報を指定する必要があります。 この情報を取得するには、Azure portal で Log Analytics ワークスペースに移動し、 **[設定]**  >  **[詳細設定]** を選択します。
 
 ![Azure portal 内の Log Analytics ワークスペース詳細設定のスクリーンショット](./media/onboarding-on-premises.png)
 

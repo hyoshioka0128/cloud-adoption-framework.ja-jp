@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: e8ec09b9653af39e950dd5cbd814417b35022963
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: 7682617184f7b9bcb3ffda775097163e4fac2716
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023476"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993870"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -258,7 +258,7 @@ Always On を有効にすると、Contoso は SmartHotel360 データベース�
 
 ## <a name="step-3-deploy-the-azure-load-balancer"></a>手順 3:Azure Load Balancer をデプロイする
 
-ここで、Contoso の管理者は、クラスター ノードの前に置く内部ロード バランサーをデプロイしようとします。 ロード バランサーは、トラフィックをリッスンし、適切なノードにリダイレクトします。
+ここで、Contoso の管理者は、クラスター ノードの前に内部ロード バランサーをデプロイしようとします。 ロード バランサーは、トラフィックをリッスンし、適切なノードにリダイレクトします。
 
 ![負荷分散](./media/contoso-migration-rehost-vm-sql-ag/architecture-lb.png)
 

@@ -1,24 +1,24 @@
 ---
 title: ランディング ゾーンのセキュリティの向上
-description: ランディング ゾーンのセキュリティの向上
+description: ランディング ゾーンのセキュリティを向上させます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 116c628d31267fafe50d8a870f9e6c83d3c51f3c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c015b54a10b7b1ef76969148dbea263d37353562
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756500"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076159"
 ---
 <!-- cSpell:ignore SIEM -->
 
 # <a name="improve-landing-zone-security"></a>ランディング ゾーンのセキュリティの向上
 
-ワークロード、またはそれらがホストされているランディング ゾーンが、機密データや重要なシステムにアクセスする必要がある場合は、データと資産を保護することが重要です。 ランディング ゾーンのセキュリティの向上は、ランディング ゾーンを展開またはリファクタリングして高度なセキュリティ要件に対応させることによる、[ランディング ゾーンに対するテスト駆動開発アプローチ](./test-driven-development.md)を基礎とします。
+ワークロードまたはそれらがホストされているランディング ゾーンで、機密データや重要なシステムにアクセスする必要がある場合は、データと資産を保護することが重要です。 ランディング ゾーンのセキュリティの向上は、ランディング ゾーンを展開またはリファクタリングして高度なセキュリティ要件に対応させることによる、[ランディング ゾーンに対するテスト駆動開発アプローチ](./test-driven-development.md)を基礎とします。
 
 ## <a name="landing-zone-security-best-practices"></a>ランディング ゾーンのセキュリティに関するベスト プラクティス
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: db53dbb9e024cdde817b80a79dae3e3e789d9c16
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: 0dc11884a761b41a2c4da02d60b55b01eab3e59a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023544"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785533"
 ---
 <!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
 
@@ -96,12 +96,12 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 ### <a name="azure-services"></a>Azure サービス
 
-**サービス** | **説明** | **コスト**
---- | --- | ---
-[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Kubernetes の管理、デプロイ、操作を簡略化します。 完全に管理された Kubernetes コンテナー オーケストレーション サービスを提供します。 | AKS は無料サービスです。 仮想マシンと、関連するストレージとネットワーク リソースの使用した分に対してのみ料金が発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/kubernetes-service)。
-[Azure Functions](https://azure.microsoft.com/services/functions) | イベント ドリブン型のサーバーレス コンピューティング エクスペリエンスにより、開発を高速化できます。 オンデマンドでスケールできます。 | 使用したリソースに対してのみ料金が発生します。 プランでは、1 秒あたりのリソースの使用量と実行回数に基づいて課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/functions)。
-[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/container-registry)。
-[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | あらゆるプラットフォームで稼働するエンタープライズグレードの Web アプリ、モバイル アプリ、API アプリをすばやくビルド、デプロイ、およびスケーリングできます。 | App Service プランは、1 秒単位で課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。
+| サービス | 説明 | コスト |
+|---|---|---|
+| [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Kubernetes の管理、デプロイ、操作を簡略化します。 完全に管理された Kubernetes コンテナー オーケストレーション サービスを提供します。 | AKS は無料サービスです。 仮想マシンと、関連するストレージとネットワーク リソースの使用した分に対してのみ料金が発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/kubernetes-service)。 |
+| [Azure Functions](https://azure.microsoft.com/services/functions) | イベント ドリブン型のサーバーレス コンピューティング エクスペリエンスにより、開発を高速化できます。 オンデマンドでスケールできます。 | 使用したリソースに対してのみ料金が発生します。 プランでは、1 秒あたりのリソースの使用量と実行回数に基づいて課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/functions)。 |
+| [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/container-registry)。 |
+| [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | あらゆるプラットフォームで稼働するエンタープライズグレードの Web アプリ、モバイル アプリ、API アプリをすばやくビルド、デプロイ、およびスケーリングできます。 | App Service プランは、1 秒単位で課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -202,7 +202,7 @@ Contoso の管理者は次のようにプロビジョニングします。
 
 Contoso は Azure DevOps プロジェクトを作成し、CI ビルドを構成してコンテナーを作成し、それをコンテナー レジストリにプッシュします。 このセクションの手順では、[SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend) リポジトリを使用します。
 
-1. visualstudio.com から新しい組織 (**contosodevops360.visualstudio.com**) を作成し、それを Git を使用するように構成します。
+1. `visualstudio.com` から新しい組織 (**contosodevops360.visualstudio.com**) を作成し、Git を使用するようにそれを構成します。
 
 2. バージョン コントロールに Git、ワークフローにアジャイルを使用して、新しいプロジェクト (**SmartHotelBackend**) を作成します。
 
@@ -423,9 +423,9 @@ Contoso の管理者は、Azure portal を使用して Web アプリをプロビ
 
     ![Web アプリのステージング スロット](./media/contoso-migration-rebuild/web-app3.png)
 
-### <a name="provision-the-azure-function-app"></a>Azure Function アプリのプロビジョニング
+### <a name="provision-the-function-app"></a>関数アプリをプロビジョニングする
 
-Azure portal で、Contoso の管理者は Function App をプロビジョニングします。
+Contoso の管理者は、Azure portal で関数アプリをプロビジョニングします。
 
 1. **[Function App]** を選択します。
 

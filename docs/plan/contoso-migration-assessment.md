@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: dba69e75565658b0101a1849ca3d90e21890fa4a
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: ef1c9ea599a61561a6cff9d78c8d167129f13a26
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862604"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993822"
 ---
 <!-- docsTest:disable TODO -->
 
-<!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
+<!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Azure への移行の対象となるオンプレミスのワークロードを評価する
 
@@ -33,8 +33,8 @@ Azure への移行を検討する際、Contoso では技術的および財務的
 
 | アプリの名前 | プラットフォーム | アプリ層 | 詳細 |
 | --- | --- | --- | --- |
-| SmartHotel360 <br><br> (Contoso の旅行要件を管理します) | SQL Server データベースが搭載された Windows 上で実行 | 2 層アプリ。 1 つの VM (**WEBVM**) 上でフロントエンド ASP.NET Web サイトが実行され、別の VM (**SQLVM**) 上で SQL Server が実行されます。 | VM は VMware であり、vCenter サーバーによって管理される ESXi ホスト上で実行されます。 <br><br> サンプル アプリは [GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 |
-| osTicket <br><br> (Contoso のサービス デスク アプリ) | MySQL PHP (LAMP) を含む Linux/Apache 上で実行 | 2 層アプリ。 1 つの VM (**OSTICKETWEB**) 上でフロントエンド PHP Web サイトが実行され、別の VM (**OSTICKETMYSQL**) 上で MySQL データベースが実行されます。 | このアプリは、社内の従業員と外部の顧客の問題を追跡するために、顧客サービス アプリによって使用されます。 <br><br> サンプルは [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 |
+| SmartHotel360 <br><br> (Contoso の旅行要件を管理します) | SQL Server データベースが搭載された Windows 上で実行 | 2 層アプリ。 1 つの VM (`WEBVM`) 上でフロントエンド ASP.NET Web サイトが実行され、別の VM (`SQLVM`) 上で SQL Server が実行されます。 | VM は、vCenter Server によって管理される VMware ESXi ホスト上で実行されています。 <br><br> サンプル アプリは [GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 |
+| osTicket <br><br> (Contoso のサービス デスク アプリ) | MySQL PHP (LAMP) を含む Linux/Apache 上で実行 | 2 層アプリ。 1 つの VM (`OSTICKETWEB`) 上でフロントエンド PHP Web サイトが実行され、別の VM (`OSTICKETMYSQL`) 上で MySQL データベースが実行されます。 | このアプリは、社内の従業員と外部の顧客の問題を追跡するために、顧客サービス アプリによって使用されます。 <br><br> サンプルは [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -197,7 +197,7 @@ Contoso が評価を行う方法は次のとおりです。
     ![Data Migration Assistant - 機能に関する推奨事項レポート](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso がすべての SQL Server データベースで [Transparent Data Encryption を有効にする](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)ことが推奨されます。 これは、データベースがオンプレミスでホストされている場合よりも、クラウドにある場合に、よりいっそう重要です。 Transparent Data Encryption は、移行後にのみ有効にする必要があります。 Transparent Data Encryption が既に有効になっている場合は、証明書または非対称キーを対象サーバーのマスター データベースに移動する必要があります。 [Transparent Data Encryption によって保護されたデータベースを別の SQL Server に移動する方法については、こちらを参照してください](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
+    > Contoso がすべての SQL Server データベースで [Transparent Data Encryption を有効にする](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)ことが推奨されます。 これは、データベースがオンプレミスでホストされている場合よりも、クラウドにある場合に、よりいっそう重要です。 Transparent Data Encryption は、移行後にのみ有効にする必要があります。 Transparent Data Encryption が既に有効になっている場合は、証明書または非対称キーを対象サーバーの `master` データベースに移動する必要があります。 [Transparent Data Encryption によって保護されたデータベースを別の SQL Server に移動する方法については、こちらを参照してください](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
 
 3. Contoso は評価を JSON または CSV 形式でエクスポートできます。
 
@@ -281,14 +281,13 @@ Contoso が VM を探索するには、Azure Migrate プロジェクトを作成
 Contoso は、VM をデプロイする前に OVA ファイルが安全であることを確認します。
 
 1. ファイルをダウンロードしたマシンで、管理者用のコマンド ウィンドウを開きます。
-
 2. 次のコマンドを実行して、OVA ファイルのハッシュを生成します。
 
-    `C:\>CertUtil -HashFile <file_location> [Hashing Algorithm]`
+    `C:\> CertUtil -HashFile <file_location> [Hashing Algorithm]`
 
     **例:**
 
-    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
+    `C:\> CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 
 3. 生成されるハッシュは、「[Azure Migrate: Server Assessment を使用して VMware VM を評価する](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware)」の「[セキュリティを確認する](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security)」セクションに記載されているハッシュ値と一致する必要があります。
 
@@ -315,7 +314,6 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
 次に、Contoso はコレクターを実行して VM を検出します。 現時点でオペレーティング システムの言語およびコレクター インターフェイスの言語としてコレクターでサポートされるのは、**英語 (米国)** のみであることに注意してください。
 
 1. vSphere Client コンソールで、 **[コンソールを開く]** を選択します。 ライセンス条項を受け入れ、コレクター VM のパスワード設定を指定します。
-
 2. デスクトップ上で、**Microsoft Azure Appliance Configuration Manager** のショートカットを選択します。
 
     ![vSphere Client コンソール - コレクターのショートカット](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
@@ -329,7 +327,7 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
 
     ![Azure Migrate Collector - 前提条件の確認](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-5. **Azure** アカウントにログインし、サブスクリプションと先ほど作成した移行プロジェクトを選択します。 また、**アプライアンス**の名前を入力して、Azure portal で識別できるようにします。
+5. Azure アカウントにサインインし、サブスクリプションと先ほど作成した移行プロジェクトを選択します。 また、**アプライアンス**の名前を入力して、Azure portal で識別できるようにします。
 
 6. **[vCenter Server の詳細を指定する]** で、vCenter Server インスタンスの名前 (FQDN) または IP アドレスと、検出に使用する読み取り専用の資格情報を指定します。
 
@@ -368,10 +366,10 @@ VM を変更する前に VM のコピーを保管するために、エージェ�
 1. **[マシン]** でマシンを選択します。 **[依存関係]** 列の **[要インストール]** を選択します。
 
 2. **[マシンの検出]** ウィンドウで以下の操作を行います。
-    - Windows VM ごとに Microsoft Monitoring Agent (MMA) と Microsoft Dependency Agent をダウンロードします。
-    - Linux VM ごとに MMA と Dependency Agent をダウンロードします。
+    - Windows VM ごとに Microsoft Monitoring Agent と Microsoft Dependency Agent をダウンロードします。
+    - Linux VM ごとに Microsoft Monitoring Agent と Microsoft Dependency Agent をダウンロードします。
 
-3. ワークスペース ID とキーをコピーします。 ワークスペース ID とキーは、MMA をインストールするときに必要です。
+3. ワークスペース ID とキーをコピーします。 ワークスペース ID とキーは、Microsoft Monitoring Agent をインストールするときに必要です。
 
     ![エージェントのダウンロード](../migrate/azure-best-practices/media/contoso-migration-assessment/download-agents.png)
 
@@ -395,13 +393,13 @@ Contoso は VM ごとにインストールを実行します。
 
 5. **[インストールの準備完了]** で、MMA をインストールします。
 
-#### <a name="install-the-dependency-agent-on-windows-vms"></a>Windows に依存関係エージェントをインストールする
+#### <a name="install-the-microsoft-dependency-agent-on-windows-vms"></a>Windows VM に Microsoft Dependency Agent をインストールする
 
-1. ダウンロードした Dependency Agent をダブルクリックします。
+1. ダウンロードしたエージェントをダブルクリックします。
 
 2. ライセンス条項に同意し、インストールが完了するまで待ちます。
 
-    ![Dependency Agent のセットアップ - インストール](../migrate/azure-best-practices/media/contoso-migration-assessment/dependency-agent.png)
+    ![Microsoft Dependency Agent をインストールする](../migrate/azure-best-practices/media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>Linux VM にエージェントをインストールする
 
@@ -413,11 +411,11 @@ Contoso は VM ごとにインストールを実行します。
 
     `sudo apt-get install python-ctypeslib`
 
-1. MMA エージェントをインストールするコマンドは、root として実行する必要があります。 ルートになるには、次のコマンドを実行し、root のパスワードを入力します。
+2. MMA エージェントをインストールするコマンドは、root として実行する必要があります。 ルートになるには、次のコマンドを実行し、root のパスワードを入力します。
 
     `sudo -i`
 
-1. MMA をインストールします。
+3. MMA をインストールします。
 
     - コマンドでワークスペース ID とキーを入力します。
     - コマンドは 64 ビット用です。
@@ -426,13 +424,13 @@ Contoso は VM ごとにインストールを実行します。
 
         `wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 6b7fcaff-7efb-4356-ae06-516cacf5e25d -s k7gAMAw5Bk8pFVUTZKmk2lG4eUciswzWfYLDTxGcD8pcyc4oT8c6ZRgsMy3MmsQSHuSOcmBUsCjoRiG2x9A8Mg==`
 
-#### <a name="install-the-dependency-agent-on-linux-vms"></a>Linux VM に Dependency Agent をインストールする
+#### <a name="install-the-microsoft-dependency-agent-on-linux-vms"></a>Linux VM に Microsoft Dependency Agent をインストールする
 
-MMA をインストールした後、Contoso では Linux VM に Dependency Agent をインストールします。
+Microsoft Monitoring Agent をインストールした後、Contoso では Linux VM に Microsoft Dependency Agent をインストールします。
 
-1. Dependency Agent を Linux コンピューターにインストールするには、InstallDependencyAgent-Linux64.bin (自己解凍バイナリを含むシェル スクリプト) を使用します。 sh を使用してそのファイルを実行するか、実行アクセス許可をファイル自体に追加します。
+1. Microsoft Dependency Agent を Linux コンピューターにインストールするには、`InstallDependencyAgent-Linux64.bin` (自己解凍バイナリを含むシェル スクリプト) を使用します。 `sh` を使用してそのファイルを実行するか、実行アクセス許可をファイル自体に追加します。
 
-2. root として Linux の Dependency Agent をインストールします。
+2. root として Linux の依存関係エージェントをインストールします。
 
     `wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s`
 
@@ -457,8 +455,7 @@ MMA をインストールした後、Contoso では Linux VM に Dependency Agen
 
     ![Azure Migrate - グループの依存関係の表示](../migrate/azure-best-practices/media/contoso-migration-assessment/sqlvm-dependencies.png)
 
-4. グループに追加する VM (SQLVM と WEBVM) を選択します。 Ctrl キーを押したまま、複数の VM をクリックします。
-
+4. グループに追加する VM (SQLVM と WEBVM) を選択します。 `Ctrl` キーを押しながら、複数の VM を選択します。
 5. **[グループの作成]** を選択し、名前 (**smarthotelapp**) を入力します。
 
     > [!NOTE]
@@ -468,7 +465,7 @@ MMA をインストールした後、Contoso では Linux VM に Dependency Agen
 
 1. **[グループ]** でグループ (**smarthotelapp**) を開き、 **[評価の作成]** を選択します。
 
-    ![Azure Migrate - 評価の作成](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
+    ![Azure Migrate: 評価を作成する](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
 
 2. 評価を表示するには、 **[管理]**  >  **[評価]** を選択します。
 
@@ -514,7 +511,7 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 | 設定 | 指示内容 | 詳細 |
 | --- | --- | --- |
 | **Azure VM 対応性** | VM が移行できる状態であるかどうかを示します。 | 次の状態があります。 <li> Azure に対応 <li> 条件付きで対応 <li> Azure に未対応 <li> 対応不明 <br><br> VM の準備が整っていない場合、Azure Migrate によって修正手順が表示されます。 |
-| **Azure VM サイズ** | 準備が完了している VM について、Azure Migrate によって Azure VM サイズが推奨されます。 | サイズ設定の推奨事項は、評価のプロパティによって異なります。 <li> パフォーマンス ベースのサイズ設定を使用した場合、サイズ設定では VM のパフォーマンス履歴が考慮されます。 <li> _[オンプレミス]_ を使用した場合、サイズ設定はオンプレミスの VM サイズに基づき、使用率 <li> データは使われません。 |
+| **Azure VM サイズ** | 準備が完了している VM について、Azure Migrate によって Azure VM サイズが推奨されます。 | サイズ設定の推奨事項は、評価のプロパティによって異なります。 <li> パフォーマンス ベースのサイズ設定を使用した場合、サイズ設定では VM のパフォーマンス履歴が考慮されます。 <li> "_オンプレミス_" のサイズ設定を使用した場合、サイズ設定はオンプレミスの VM サイズと使用率に基づきます。 <li> データは使われません。 |
 | **推奨されるツール** | Azure マシンではエージェントが実行されているため、マシン内で実行されているプロセスが Azure Migrate によって確認されます。 そのマシンがデータベース マシンであるかどうかが識別されます。 | |
 | **VM 情報** | レポートには、オペレーティング システム、ブートの種類、ディスクとストレージの情報など、オンプレミス VM の設定が表示されます。 | |
 

@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7f232b6af4dc501b775d99a567cdca11dc0500a2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0e9115387360b46015114d6069fcedb9afb43d58
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223424"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84799655"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>複数の Azure サブスクリプションの整理と管理
 
@@ -48,7 +48,7 @@ Azure には、次の 4 つのレベルの管理スコープがあります。
 
 サブスクリプションを既存の管理グループに移動すると、それより上位の管理グループ階層からポリシーとロールの割り当てが継承されます。 Azure ワークロード用に複数のサブスクリプションを作成したら、他のサブスクリプションと共有される Azure サービスを格納する追加のサブスクリプションを作成できます。
 
-Azure 環境が拡張されることが予想される場合は、運用環境と非運用環境用の管理グループをここで作成し、管理グループ レベルで適切なポリシーとアクセス制御を適用する必要があります。 新しいサブスクリプションは、各管理グループに追加されると、適切なコントロールを継承します。
+Azure 環境が拡張されることが予想される場合は、運用環境と非運用環境用の管理グループをここで作成し、管理グループ レベルで適切なポリシーとアクセス制御を適用する必要があります。 新しいサブスクリプションが各管理グループに追加されるときには、適切な制御が継承されます。
 
 ![管理グループ階層の例](../../_images/ready/management-group-hierarchy-v2.png)
 

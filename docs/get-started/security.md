@@ -7,18 +7,18 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0ea7caddcc0bcc6e5f2564c2833341b54b9347e3
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 92f42ff82b6ff944de13a360bd5135b31f7de372
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752262"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076339"
 ---
 <!-- cSpell:ignore CISO passwordless -->
 
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>作業を開始しましょう。企業環境全体へのセキュリティの実装
 
-セキュリティにより、ビジネスの機密性、整合性、可用性を保証できるようになります。 セキュリティの取り組みでは、内部と外部の悪意のある意図しない行為に起因する運用への潜在的な影響からの保護に特に重点を置いています。 
+セキュリティにより、ビジネスの機密性、整合性、可用性を保証できるようになります。 セキュリティの取り組みでは、内部と外部の悪意のある意図しない行為に起因する運用への潜在的な影響からの保護に特に重点を置いています。
 
 このファースト ステップ ガイドでは、サイバーセキュリティ攻撃によるビジネス リスクを軽減または回避するための主要な手順の概要を説明します。 このガイドに従うことで、クラウドでの重要なセキュリティ プラクティスを迅速に確立し、セキュリティをクラウド導入プロセスに組み込むことができます。
 
@@ -69,7 +69,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド セキュリティ チーム <br><br><br> | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド セキュリティ チーム <br><br><br> | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 この最初の手順では、ガバナンス チームは、環境間で監視、管理、適用できるセキュリティ ベースラインの作成の調整を開始する必要もあります。 これを構築するための追加のガイダンスについては、手順 4 で後述します。
 
@@ -125,9 +125,9 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> セキュリティ リーダーシップ チーム (情報セキュリティ最高責任者 (CISO) または同等のもの) | <li> クラウド戦略チーム <li> クラウド セキュリティ チーム <li> クラウド導入チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> セキュリティ リーダーシップ チーム (情報セキュリティ最高責任者 (CISO) または同等のもの) | <li> クラウド戦略チーム <li> クラウド セキュリティ チーム <li> クラウド導入チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
-**戦略の承認:** 
+**戦略の承認:**
 
 組織内のビジネス ラインの成果またはリスクについて説明責任を負う経営幹部とビジネス リーダーがこの戦略を承認する必要があります。 組織によっては、このグループに取締役会が含まれる場合があります。
 
@@ -150,12 +150,12 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
     - [Azure コンポーネントとリファレンス モデル](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)。これは、Azure セキュリティ ロールのプランの策定と設計を促進するためのものです。
 
       ![Azure 管理モデル](../_images/security/azure-administration-model.png)
-      
+
       ![Azure RBAC モデル](../_images/security/azure-rbac-model.png)
     - [Microsoft サイバーセキュリティ リファレンス アーキテクチャ](https://aka.ms/mcra)。これは、オンプレミスとクラウドのリソースにまたがるハイブリッド エンタープライズ向けのサイバーセキュリティ アーキテクチャを構築するためのものです。
     - [セキュリティ オペレーション センター (SOC) リファレンス アーキテクチャ](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks#part-1-introduction---soc-learnings-strategies-and-technical-integration-2430)。これは、セキュリティの検出、対応、回復を最新化するためのものです。
     - [ゼロ トラスト ユーザー アクセス リファレンス アーキテクチャ](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3#part-5-zero-trust-user-access-reference-architecture-842)。これは、クラウドの生成用のアクセス制御アーキテクチャを最新化するためのものです。
-    - [Azure Security Center](https://docs.microsoft.com/azure/security-center/) と [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/)。これは、クラウド資産をセキュリティで保護するためものです。
+    - [Azure Security Center](https://docs.microsoft.com/azure/security-center) と [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)。これは、クラウド資産をセキュリティで保護するためものです。
   - **セキュリティの意識と教育のプラン**: すべてのチームが、重要なセキュリティに関する基礎知識を身に付けます。
   - **資産の機密度のマーキング**: ビジネスへの影響に合わせた分類を使用して機密性の高い資産を指定します。 この分類は、ビジネス利害関係者、セキュリティ チーム、その他の関係者が共同で構築します。
 
@@ -187,9 +187,9 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド セキュリティ チーム | <li> クラウド戦略チーム <li> クラウド ガバナンス チーム <li> 組織内のすべてのリスク チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド セキュリティ チーム | <li> クラウド戦略チーム <li> クラウド ガバナンス チーム <li> 組織内のすべてのリスク チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
-**セキュリティ プランの承認:** 
+**セキュリティ プランの承認:**
 
 セキュリティ リーダーシップ チーム (CISO または同等の経営幹部) がプランを承認する必要があります。
 
@@ -205,7 +205,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- **既存の要件とクラウドに関する推奨事項を調和させる:** 推奨されるガイダンスから始め、これを独自のセキュリティ要件に適合させます。 既存のオンプレミス ポリシーと標準を適用しようとしたときに問題が発生しました。多くの場合、これらは古いテクノロジやセキュリティ手法を示しているためです。 
+- **既存の要件とクラウドに関する推奨事項を調和させる:** 推奨されるガイダンスから始め、これを独自のセキュリティ要件に適合させます。 既存のオンプレミス ポリシーと標準を適用しようとしたときに問題が発生しました。多くの場合、これらは古いテクノロジやセキュリティ手法を示しているためです。
 
   Microsoft では、セキュリティ ベースラインを構築するのに役立つガイダンスを公開しています。
   - [戦略とアーキテクチャに関する Azure のセキュリティ標準](https://docs.microsoft.com/security/compass/compass): 環境のセキュリティ体制を形成するための戦略とアーキテクチャに関する推奨事項。
@@ -215,8 +215,8 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
   Microsoft では、これを可能にするために Azure でいくつかのネイティブ機能を提供しています。
   - [セキュリティ スコア](https://docs.microsoft.com/azure/security-center/secure-score-security-controls): Azure セキュリティ体制のスコア付けされた評価を使用して、組織内のセキュリティの取り組みとプロジェクトを追跡します。
-  - [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview):クラウド アーキテクトと中央 IT グループは、組織の標準、パターン、要件を実装し、これらに準拠した一連の反復可能な Azure リソースを定義できます。
-  - [Azure Policy](https://docs.microsoft.com/azure/governance/policy/):これは、他のサービスで使用される可視性と制御の機能の基盤となります。 Azure Policy は、[Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager) に統合されています。これにより、変更を監査し、Azure 内のリソースの作成前、作成中、または作成後にポリシーを適用できます。
+  - [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview):クラウド アーキテクトと一元化された IT グループは、組織の標準、パターン、要件を実装し、これらに準拠した一連の反復可能な Azure リソースを定義できます。
+  - [Azure Policy](https://docs.microsoft.com/azure/governance/policy):これは、他のサービスで使用される可視性と制御の機能の基盤となります。 Azure Policy は、[Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager) に統合されています。これにより、変更を監査し、Azure 内のリソースの作成前、作成中、または作成後にポリシーを適用できます。
 - [ランディング ゾーンの運用を改善する](../ready/considerations/landing-zone-security.md): ランディング ゾーン内のセキュリティを強化するためのベスト プラクティスを使用します。
 
 <!-- markdownlint-disable MD033 -->
@@ -224,7 +224,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド セキュリティ チーム | <li> クラウド導入チーム <li> クラウド プラットフォーム チーム <li> クラウド戦略チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド セキュリティ チーム | <li> クラウド導入チーム <li> クラウド プラットフォーム チーム <li> クラウド戦略チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-5-secure-existing-cloud-workloads"></a>手順 5:既存のクラウド ワークロードをセキュリティで保護する
 
@@ -251,7 +251,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド導入チーム | <li> クラウド導入チーム <li> クラウド戦略チーム <li> クラウド セキュリティ チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド導入チーム | <li> クラウド導入チーム <li> クラウド戦略チーム <li> クラウド セキュリティ チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-6-govern-to-manage-and-improve-security-posture"></a>手順 6:セキュリティ体制の管理と改善のために統制する
 
@@ -275,7 +275,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド ガバナンス チーム | <li> クラウド戦略チーム <li> クラウド セキュリティ チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド ガバナンス チーム | <li> クラウド戦略チーム <li> クラウド セキュリティ チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="next-steps"></a>次のステップ
 

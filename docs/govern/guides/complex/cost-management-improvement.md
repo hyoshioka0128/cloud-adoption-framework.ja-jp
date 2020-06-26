@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6ea51d75a2c75fd8e75ade42eb3c9fe15def67b4
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ccc413343ccaf6db5425000c1dca44010976eb79
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754953"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075582"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雑な企業向けのガバナンス ガイド: コスト管理の規範の改善
 
@@ -68,7 +68,7 @@ ms.locfileid: "83754953"
 2. Azure Cost Management を実装します。
     1. サブスクリプション パターンとリソース グループ化のパターンに合わせて適切なレベルのアクセス スコープを設定します。 以前の記事で定義したガバナンス MVP との整合を前提にすると、これには、高レベルのレポート作成を実行するクラウド ガバナンスチームの**登録アカウントのスコープ**のアクセスが必要になります。 ガバナンス以外のその他のチーム (カナダの調達チームなど) には、**リソース グループのスコープ**のアクセスが必要になります。
     2. Azure Cost Management で予算を編成します。
-    3. 初期の推奨事項を確認して対応します。 レポート プロセスをサポートするために定期プロセスを設定することをお勧めします。
+    3. 初期の推奨事項を確認して対応します。 レポート プロセスをサポートするために定期プロセスを作成します。
     4. 初期用と繰り返し用の両方について、Azure Cost Management のレポートを構成して実行します。
 3. Azure Policy を更新します。
     1. 偏差を識別するために、タグ付け、管理グループ、サブスクリプション、およびリソース グループの値を監査します。

@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2f09b7894782a038c7e39e85f0a93c2a49b20b07
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 32dbff24bf4a6ec49c4136bdef6d5e10c3bf83d0
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223543"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993533"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-role-does-replication-play-in-the-migration-process"></a>レプリケーションが移行プロセスで果たす役割
 
 オンプレミスのデータセンターは、サーバー、アプライアンス、ネットワーク デバイスなどの物理的資産で満たされています。 しかし、各サーバーは物理的なシェルにすぎません。 実際に価値を生み出すのはサーバー上で実行されるバイナリです。 アプリケーションとデータはデータセンターの目的です。 それらは移行する主要なバイナリです。 これらのアプリケーションやデータ ストアを支えているのは、オペレーティング システム、ネットワーク ルート、ファイル、セキュリティ プロトコルなど、他のデジタル資産やバイナリ ソースです。
@@ -24,7 +22,7 @@ ms.locfileid: "83223543"
 
 ## <a name="required-prerequisites-to-replication"></a>レプリケーションに必要な前提条件
 
-レプリケーションの前に、_新しいプラットフォーム_とハードウェアで、バイナリのコピーを受け取るための準備をする必要があります。 [前提条件](../prerequisites/index.md)に関する記事では、バイナリのレプリカを受け取るための安全で、堅牢な、高パフォーマンスのプラットフォームを作成するために役立つ最低限の環境要件について説明しています。
+レプリケーションの前に、新しいプラットフォームとハードウェアで、バイナリのコピーを受け取るための準備をする必要があります。 [前提条件](../prerequisites/index.md)に関する記事では、バイナリのレプリカを受け取るための安全で、堅牢な、高パフォーマンスのプラットフォームを作成するために役立つ最低限の環境要件について説明しています。
 
 レプリケーションと同期のために_ソース バイナリ_も準備する必要があります。 評価、アーキテクチャ、修復に関する記事ではそれぞれ、レプリケーションと同期のためにソース バイナリの準備ができていることを確認するために必要なアクションについて説明しています。
 

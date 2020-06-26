@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 54ea9341cfcd5064a6cae737f302ef03736f21af
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 8eaded2f79ce16e2dfa0bc5730093abfd2e5ee32
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752861"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786094"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model"></a>健全な運用モデルで顧客の成功を実現する
 
@@ -45,7 +45,7 @@ ms.locfileid: "83752861"
 
 ![共有アーキテクチャの原則](../_images/shared-principles.png)
 
-上記の原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。
+これらの原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。
 
 - [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) では、ソリューション、ワークロード、および完全なポートフォリオにわたる個々の資産の原則が評価されます。
 - [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)では、特定の技術的なソリューションを開発および管理するために、これらの原則が適用されます。

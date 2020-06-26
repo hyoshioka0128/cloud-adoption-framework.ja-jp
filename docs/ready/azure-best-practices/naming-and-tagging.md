@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: d3a0e4c640588dda3e97d7ecc24039869d87dd94
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: a0060f6d92b7479158fd46f951e994cc0dcb9d60
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621683"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076745"
 ---
-<!-- docsTest:disable TODO -->
+<!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
 
 # <a name="recommended-naming-and-tagging-conventions"></a>推奨される名前付けおよびタグ付け規則
@@ -64,17 +64,17 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 
 | 名前付けコンポーネント            | 説明                                                                                                                                                                                                      | 例                                         |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| 事業単位               | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 小規模な組織では、このコンポーネントは 1 つの会社の最上位の組織要素を表す可能性があります。 | _fin_、_mktg_、_product_、_it_、_corp_           |
-| サブスクリプションの種類           | リソースが含まれているサブスクリプションの目的に関する概要の説明。 多くの場合は、デプロイ環境の種類または特定のワークロードによって分類されます。                                                       | _prod_、_shared_、_client_                       |
-| アプリケーションまたはサービス名 | リソースが属しているアプリケーション、ワークロード、またはサービスの名前。                                                                                                                                    | _navigator_、_emissions_、_sharepoint_、_hadoop_ |
-| デプロイ環境      | リソースによってサポートされているワークロードの開発ライフサイクルのステージ。                                                                                                                              | _prod_、_dev_、_qa_、_stage_、_test_             |
-| リージョン                      | リソースがデプロイされている Azure リージョン。                                                                                                                                                                 | _westus_、_eastus2_、_westeurope_、_usgovia_     |
+| 事業単位               | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 小規模な組織では、このコンポーネントは 1 つの会社の最上位の組織要素を表す可能性があります。 | `fin`、`mktg`、`product`、`it`、`corp`           |
+| サブスクリプションの種類           | リソースが含まれているサブスクリプションの目的に関する概要の説明。 多くの場合は、デプロイ環境の種類または特定のワークロードによって分類されます。                                                       | `prod`、`shared`、`client`                       |
+| アプリケーションまたはサービス名 | リソースが属しているアプリケーション、ワークロード、またはサービスの名前。                                                                                                                                    | `navigator`、`emissions`、`sharepoint`, `hadoop` |
+| デプロイ環境      | リソースによってサポートされているワークロードの開発ライフサイクルのステージ。                                                                                                                              | `prod`、`dev`、`qa`、`stage`、`test`             |
+| リージョン                      | リソースがデプロイされている Azure リージョン。                                                                                                                                                                 | `westus`、`eastus2`、`westeurope`, `usgovia`     |
 
 ### <a name="recommended-resource-type-prefixes"></a>推奨されるリソースの種類のプレフィックス
 
 各ワークロードは、多数の個々のリソースやサービスで構成できます。 リソースの種類のプレフィックスをリソース名に組み込むと、アプリケーションまたはサービス コンポーネントの視覚的な識別が簡単になります。
 
-次の一覧は、名前付け規則を定義する場合に使用すべき推奨される Azure リソースの種類のプレフィックスを示しています。
+この一覧では、名前付け規則を定義する場合に使用すべき推奨される Azure リソースの種類のプレフィックスを示します。
 
 <!-- cSpell:ignore apim snet traf vmss stvm arcm ntfns sqldb psql sqldw sqlstrdb ssimp srch hbase appi migr -->
 
@@ -188,6 +188,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 | 資産の種類              | 名前のプレフィックス |
 |-------------------------|-------------|
 | ブループリント               | bp-         |
+| ブループリント割り当て    | bpa-        |
 | Key Vault               | kv-         |
 | Log Analytics ワークスペース | log-        |
 | Application Insights    | appi-       |
@@ -220,13 +221,15 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 | プロジェクトの終了日   | アプリケーション、ワークロード、またはサービスの使用停止がスケジュールされている日付。                                                                                                                                         | _EndDate_         | _{date}_                                                   |
 | 環境               | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                                                                                                                                     | _Env_             | _Prod_、_Dev_、_QA_、_Stage_、_Test_                       |
 | 所有者名                | このアプリケーション、ワークロード、またはサービスの所有者。                                                                                                                                                                      | _所有者_           | _{email}_                                                  |
-| 要求者名            | このアプリケーションの作成を要求したユーザー。                                                                                                                                                                 | _Requestor_       | _{email}_                                                  |
+| 要求者名            | このアプリケーションの作成を要求したユーザー。                                                                                                                                                                 | _要求者_       | _{email}_                                                  |
 | サービス クラス             | アプリケーション、ワークロード、またはサービスのサービス レベル アグリーメント レベル。                                                                                                                                              | _ServiceClass_    | _Dev_、_Bronze_、_Silver_、_Gold_                          |
 | プロジェクトの開始日 | アプリケーション、ワークロード、またはサービスが最初にデプロイされた日付。                                                                                                                                                  | _StartDate_       | _{date}_                                                   |
 
 ## <a name="example-names"></a>名前の例
 
 次のセクションでは、エンタープライズ クラウドのデプロイにおける一般的な Azure リソースの種類のいくつかのサンプル名を示します。
+
+<!-- TODO: Use tick marks for names. -->
 
 <!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
 
@@ -237,8 +240,8 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 | 資産の種類                      | Scope                              | Format                                                      | 例                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | サブスクリプション                    | アカウント/ <br> Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> corp-shared-001 <li> fin-client-001 |
-| Resource group                  | サブスクリプション                       | rg-\<アプリ名またはサービス名\>-\<サブスクリプションの種類\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-acctlookupsvc-share-001  <li> rg-ad-dir-services-shared-001 |
-| API 管理サービス インスタンス | グローバル                             | apim-\<アプリ名またはサービス名\>                                | apim-navigator-prod                                                                                                     |
+| Resource group                  | サブスクリプション                       | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-acctlookupsvc-share-001  <li> rg-ad-dir-services-shared-001 |
+| API 管理サービス インスタンス | グローバル                             | apim-\<App or service name\>                                | apim-navigator-prod                                                                                                     |
 
 ### <a name="example-names-networking"></a>名前の例:ネットワーク
 
@@ -246,23 +249,23 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | 仮想ネットワーク              | Resource group  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-shared-eastus2-001  <li> vnet-prod-westus-001  <li> vnet-client-eastus2-001 |
 | Subnet                       | 仮想ネットワーク | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <li> snet-shared-eastus2-001  <li> snet-prod-westus-001  <li> snet-client-eastus2-001 |
-| ネットワーク インターフェイス (NIC)      | Resource group  | nic-\<\#\#\>-\<VM 名\>-\<サブスクリプション\>\<\#\#\#\>                   | <li> nic-01-dc1-shared-001  <li> nic-02-vmhadoop1-prod-001  <li> nic-02-vmtest1-client-001 |
+| ネットワーク インターフェイス (NIC)      | Resource group  | nic-\<\#\#\>-\<vm name\>-\<subscription\>\<\#\#\#\>                   | <li> nic-01-dc1-shared-001  <li> nic-02-vmhadoop1-prod-001  <li> nic-02-vmtest1-client-001 |
 | パブリック IP アドレス            | Resource group  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <li> pip-dc1-shared-eastus2-001  <li> pip-hadoop-prod-westus-001 |
 | Load Balancer                | Resource group  | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                     | <li> lb-navigator-prod-001  <li> lb-sharepoint-dev-001 |
-| ネットワーク セキュリティ グループ (NSG) | サブネットまたは NIC   | nsg-\<ポリシー名またはアプリ名\>-\<\#\#\#\>                           | <li> nsg-weballow-001  <li> nsg-rdpallow-001  <li> nsg-sqlallow-001  <li> nsg-dnsblocked-001 |
-| ローカル ネットワーク ゲートウェイ        | 仮想ゲートウェイ | lgw-\<サブスクリプションの種類\>-\<リージョン\>-\<\#\#\#\>                      | <li> lgw-shared-eastus2-001  <li> lgw-prod-westus-001  <li> lgw-client-eastus2-001 |
-| 仮想ネットワーク ゲートウェイ      | 仮想ネットワーク | vgw-\<サブスクリプションの種類\>-\<リージョン\>-\<\#\#\#\>                      | <li> vgw-shared-eastus2-001 <li> vgw-prod-westus-001 <li> vgw-client-eastus2-001 |
+| ネットワーク セキュリティ グループ (NSG) | サブネットまたは NIC   | nsg-\<policy name or app name\>-\<\#\#\#\>                           | <li> nsg-weballow-001  <li> nsg-rdpallow-001  <li> nsg-sqlallow-001  <li> nsg-dnsblocked-001 |
+| ローカル ネットワーク ゲートウェイ        | 仮想ゲートウェイ | lgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> lgw-shared-eastus2-001  <li> lgw-prod-westus-001  <li> lgw-client-eastus2-001 |
+| 仮想ネットワーク ゲートウェイ      | 仮想ネットワーク | vgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> vgw-shared-eastus2-001 <li> vgw-prod-westus-001 <li> vgw-client-eastus2-001 |
 | サイト間接続      | Resource group  | cn-\<local gateway name\>-to-\<virtual gateway name\>                | <li> cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001 <li> cn-lgw-shared-eastus2-001-to-shared-westus-001 |
 | VPN 接続               | Resource group  | cn-\<subscription1\>\<region1\>-to-\<subscription2\>\<region2\>-     | <li> cn-shared-eastus2-to-shared-westus <li> cn-prod-eastus2-to-prod-westus |
-| ルート テーブル                  | Resource group  | route-\<ルート テーブル名\>                                           | <li> route-navigator <li> route-sharepoint |
-| DNS ラベル                    | グローバル          | \<A record of vm\>.[\<region\>.cloudapp.azure.com]                   | <li> dc1.westus.cloudapp.azure.com <li> web1.eastus2.cloudapp.azure.com |
+| ルート テーブル                  | Resource group  | route-\<route table name\>                                           | <li> route-navigator <li> route-sharepoint |
+| DNS ラベル                    | グローバル          | \<A record of vm\>.<region\>.cloudapp.azure.com                   | <li> dc1.westus.cloudapp.azure.com <li> web1.eastus2.cloudapp.azure.com |
 
 ### <a name="example-names-compute-and-web"></a>名前の例:コンピューティングと Web
 
 | 資産の種類                  | Scope          | Format                                                              | 例                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| 仮想マシン             | Resource group | vm\<ポリシー名またはアプリ名\>\<\#\#\#\>                              | <li> vmnavigator001 <li> vmsharepoint001 <li> vmsqlnode001 <li> vmhadoop001 |
-| VM ストレージ アカウント          | グローバル         | stvm\<パフォーマンスの種類\>\<アプリ名または製品名\>\<リージョン\>\<\#\#\#\> | <li> stvmstcoreeastus2001 <li> stvmpmcoreeastus2001 <li> stvmstplmeastus2001 <li> stvmsthadoopeastus2001 |
+| 仮想マシン             | Resource group | vm\<policy name or app name\>\<\#\#\#\>                              | <li> vmnavigator001 <li> vmsharepoint001 <li> vmsqlnode001 <li> vmhadoop001 |
+| VM ストレージ アカウント          | グローバル         | stvm\<performance type\>\<app name or prod name\>\<region\>\<\#\#\#\> | <li> stvmstcoreeastus2001 <li> stvmpmcoreeastus2001 <li> stvmstplmeastus2001 <li> stvmsthadoopeastus2001 |
 | Web アプリ                     | グローバル         | app-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}]   | <li> app-navigator-prod-001.azurewebsites.net <li> app-accountlookup-dev-001.azurewebsites.net |
 | 関数アプリ                | グローバル         | func-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
 | クラウド サービス               | グローバル         | cld-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{cloudapp.net}]        | <li> cld-navigator-prod-001.azurewebsites.net <li> cld-accountlookup-dev-001.azurewebsites.net |
@@ -307,9 +310,9 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 | Data Lake Analytics アカウント | グローバル         | dla\<App Name\>\<Environment\>      | <li> dlanavigatorprod <li> dlaemissionsdev |
 | Data Lake Storage アカウント   | グローバル         | dls\<App Name\>\<Environment\>      | <li> dlsnavigatorprod <li> dlsemissionsdev |
 | イベント ハブ                   | グローバル         | evh-\<App Name\>-\<Environment\>    | <li> evh-navigator-prod <li> evh-emissions-dev |
-| HDInsight - HBase クラスター   | グローバル         | ntfns-\<アプリ名\>-\<環境\>  | <li> hbase-navigator-prod <li> hbase-emissions-dev |
-| HDInsight - Hadoop クラスター  | グローバル         | hadoop-\<アプリ名\>-\<環境\> | <li> hadoop-navigator-prod <li> hadoop-emissions-dev |
-| HDInsight - Spark クラスター   | グローバル         | spark-\<アプリ名\>-\<環境\>  | <li> spark-navigator-prod <li> spark-emissions-dev  |
+| HDInsight - HBase クラスター   | グローバル         | hbase-\<App Name\>-\<Environment\>  | <li> hbase-navigator-prod <li> hbase-emissions-dev |
+| HDInsight - Hadoop クラスター  | グローバル         | hadoop-\<App Name\>-\<Environment\> | <li> hadoop-navigator-prod <li> hadoop-emissions-dev |
+| HDInsight - Spark クラスター   | グローバル         | spark-\<App Name\>-\<Environment\>  | <li> spark-navigator-prod <li> spark-emissions-dev  |
 | IoT ハブ                     | グローバル         | iot-\<App Name\>-\<Environment\>    | <li> iot-navigator-prod <li> iot-emissions-dev |
 | Power BI Embedded           | グローバル         | pbi-\<App Name\>\<Environment\>     | <li> pbi-navigator-prod <li> pbi-emissions-dev |
 

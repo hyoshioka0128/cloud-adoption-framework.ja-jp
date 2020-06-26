@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 2c7a57f339ad241f3d2f448a61d0553d1487bde7
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 5527ca51f08b3eaf6a5bb6d022ad5a8696f502b6
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862621"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076107"
 ---
 # <a name="role-based-access-control"></a>ロールベースのアクセス制御
 
@@ -49,7 +49,7 @@ Azure では多くの組み込みのロール定義が用意されており、�
 
 これらのコア アクセス レベルから開始して、組み込みロールを追加することによって、特定のリソースの種類または Azure 機能にアクセスするためのより詳細なコントロールが提供されます。 たとえば、仮想マシンへのアクセスは、次の組み込みロールを使用して管理できます。
 
-- [仮想マシンの管理者ログイン](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) ロールは、ポータルで仮想マシンを表示し、"_管理者_" としてサインインできます。
+- [仮想マシンの管理者ログイン](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) ロールは、ポータルで仮想マシンを表示し、`administrator` としてサインインできます。
 - [仮想マシン共同作業者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor)ロールは仮想マシンを管理できますが、それらにアクセスしたり、接続先の仮想ネットワークまたはストレージ アカウントにアクセスしたりすることはできません。
 - [仮想マシンのユーザー ログイン](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) ロールは、ポータルで仮想マシンを表示し、通常ユーザーとしてサインインできます。
 
@@ -84,4 +84,6 @@ RBAC を使用すると、組織は大規模なクラウド資産内のさまざ
 
 これらの標準ロール内のアクションおよびアクセス許可の内訳は、これらのロールがさまざまなレベルでさまざまなユーザーによって実行されたとしても、多くの場合はアプリケーション、サブスクリプション、またはすべてのクラウド資産について同じです。 したがって、環境内のさまざまなスコープに適用するための共通の RBAC ロール定義のセットを作成できます。 その後、ユーザーおよびグループには共通のロールを割り当てることができますが、それらはユーザーおよびグループが管理する責任があるリソース、リソース グループ、サブスクリプション、または管理グループのスコープのみが対象となります。
 
-たとえば、複数のサブスクリプションを含む[ハブ アンド スポーク ネットワーク トポロジ](../azure-best-practices/hub-spoke-network-topology.md)では、ハブとすべてのワークロード スポークに対して共通のロール定義のセットを使用することができます。 ハブ サブスクリプションの NetOps ロールは、すべてのワークロードによって使用される共有サービスのためのネットワークの保守を担当している組織の中央の IT スタッフ メンバーに割り当てることができます。 ワークロード スポーク サブスクリプションの NetOps ロールを、その特定のワークロード チームのメンバーに割り当てることで、ワークロード要件を最適にサポートするように、そのサブスクリプション内でネットワークを構成できます。 同じロール定義が両方に使用されますが、スコープベースの割り当てにより、ユーザーは自分の業務を実行するために必要なアクセス権のみを持つようになります。
+<!-- cSpell:ignore NetOps SecOps " -->
+
+たとえば、複数のサブスクリプションを含む[ハブ アンド スポーク ネットワーク トポロジ](../azure-best-practices/hub-spoke-network-topology.md)では、ハブとすべてのワークロード スポークに対して共通のロール定義のセットを使用することができます。 ハブ サブスクリプションの NetOps ロールは、すべてのワークロードによって使用される共有サービスのためのネットワークの保守を担当している組織の中央 IT チームに割り当てることができます。 ワークロード スポーク サブスクリプションの NetOps ロールを、その特定のワークロード チームのメンバーに割り当てることで、ワークロード要件を最も良くサポートするように、そのサブスクリプション内でネットワークを構成することができます。 同じロール定義が両方に使用されますが、スコープベースの割り当てにより、ユーザーは自分の業務を実行するために必要なアクセス権のみを持つようになります。

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 02317405adc974e9836bb3e64b881da3296e3d8e
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 08090044ab0d97f8bdcf5258b0df0cbcb4c54bcd
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862434"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075771"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>作業を開始しましょう。クラウド運用チームを結成する
 
@@ -63,7 +63,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li>  クラウド運用チーム | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li>  クラウド運用チーム | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-3-establish-a-cadence-with-other-teams"></a>手順 3:他のチームとのミーティングの頻度を確立する
 

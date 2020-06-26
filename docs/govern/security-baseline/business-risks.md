@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dd4f6b58d3d8f1a1d1b6348ae83979c37c9305bc
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5f4feaf4bbc9ffb78d58a86c42dcd28b4eb785c7
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755866"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785623"
 ---
 # <a name="motivations-and-business-risks-in-the-security-baseline-discipline"></a>セキュリティ ベースライン規範の目的とビジネス上のリスク
 
 この記事では、クラウド ガバナンス戦略において、お客様が通常はセキュリティ ベースライン規範を導入する理由について説明します。 また、ポリシー ステートメントを追いやる可能性のある潜在的なビジネス リスクの例をいくつか示します。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance"></a>関連性
 
@@ -32,7 +30,7 @@ ms.locfileid: "83755866"
 セキュリティ ベースライン規範の対象は、セキュリティ リスクからクラウド デプロイを保護するために配置できる企業ポリシーと手動プロセスです。
 
 > [!NOTE]
->セキュリティ ベースライン規範のコンテキストでの [ID ベースライン規範](../identity-baseline/index.md)と、それがアクセス制御にどのように関連しているかを理解することは大切ですが、[クラウド ガバナンスの 5 つの規範](../index.md)では、それは独立した規範として扱われています。
+> セキュリティ ベースライン規範のコンテキストでの [ID ベースライン規範](../identity-baseline/index.md)と、それがアクセス制御にどのように関連しているかを理解することは大切ですが、[クラウド ガバナンスの 5 つの規範](../index.md)では、それは独立した規範として扱われています。
 
 ## <a name="business-risk"></a>ビジネス リスク
 

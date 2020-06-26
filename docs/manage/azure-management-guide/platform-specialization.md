@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 88f153d80df79098c4228a6012f513f42f3a2f64
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 6d4b2e0677b896bf61e4c57b49dda548a6719b69
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756415"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785482"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>クラウド管理のためのプラットフォームの特殊化
 
@@ -61,21 +61,19 @@ ms.locfileid: "83756415"
 
 システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、Azure 向けのクラウド導入フレームワーク全体で使用される環境ビューの範囲外です。
 
-クラウド導入フレームワークを補完するために、Microsoft Azure Well-Architected Framework には、特定のシステムの回復性と設計を向上させるためのベスト プラクティスが用意されています。 このような設計の改善は、プラットフォームのシステム設計や特定のワークロードに適用できます。
+このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。フレームワークの焦点は、アーキテクチャ エクセレンスの 5 つの要素の向上に当てられています。
 
-Microsoft Azure Well-Architected Framework は、システム設計における次の 5 つの柱全体の改善に焦点を合わせています。
-
-- **拡張性:** 負荷の増加に対応するために、共通プラットフォーム資産をスケーリングします。
-- **可用性:** 可能性のあるアップタイムを向上させることにより、ビジネスの中断を減らします。
-- **回復性:** 復旧時間を改善して中断期間を短縮します。
-- **セキュリティ:** 外部の脅威からアプリケーションとデータを保護します。
-- **管理:** これらの共通プラットフォーム資産に固有の運用プロセス。
+- **コストの最適化**: もたらされる価値が最大になるようにコストを管理します。
+- **オペレーショナル エクセレンス:** 運用環境でのシステムの動作を維持するオペレーショナル プロセスに従います。
+- **パフォーマンス効率:** 負荷の変化に合わせてシステムをスケーリングします。
+- **信頼性:** 障害から回復して動作を続行するようにシステムを設計します。
+- **セキュリティ:** 脅威からアプリケーションとデータを保護します。
 
 技術的負債とアーキテクチャの欠陥は、ほとんどのビジネス中断の原因となります。 既存のデプロイの場合、システム設計の改善は、既存の技術的負債の返済と見なすことができます。 新規のデプロイでは、これらの改善点を技術的負債の回避と見なすことができます。
 
 次の **[自動修復]** タブでは、対処できない、または対処するべきではない技術的負債を修復する方法について説明します。
 
-システム設計の改善に役立てるために、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) の詳細をご覧ください。
+システム設計の改善については、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) の詳細を確認してください。
 
 システムの設計が向上したら、この記事に戻り、お使いの環境全体で改良を加え、スケーリングする新しい機会を見つけてください。
 

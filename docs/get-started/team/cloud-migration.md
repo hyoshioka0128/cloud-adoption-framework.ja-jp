@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: d6d1d60ce89aa6ab809bb413a0d56ecea5ceb352
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 6405317ef9172ac8f0b50b2afadd8d3850fc0ad6
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751829"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075780"
 ---
 # <a name="get-started-build-a-cloud-migration-team"></a>作業を開始しましょう。クラウド移行チームを構築する
 
@@ -75,7 +75,7 @@ ms.locfileid: "83751829"
 
 既存の IT スタッフによる追加のサポートが必要になる場合があります。 IT は、イノベーションやビジネスの機敏性のためのクラウド ブローカーやパートナーになることにより、クラウドの導入に対する価値のある貢献者になることができます。
 
-- [中央 IT の役割](../../organize/central-it.md)
+- [中央 IT チームの役割](../../organize/central-it.md)
 
 ## <a name="whats-next"></a>参照トピック
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 17ba2d635e702faedec3c3441c5171c88d8fc59e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 86be2dfc12efe36afbc88fed74c0e8a60395f91f
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217134"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993556"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "83217134"
 
 この段階は、環境を最適化し、可能な環境の変換を実行する機会でもあります。 たとえば、"再ホスト" 移行を実行した後、サービスが Azure 上で実行されている場合は、ソリューション構成や消費されるサービスを再検討し、可能であれば何らかの "リファクタリング" を実行してソリューションの機能を最新化して向上することができます。
 
-この記事の残りの部分では、移行されたワークロードを最適化するためのツールについて説明します。 パフォーマンスとコストのバランスを取ると、ワークロードを運用環境にレベル上げする準備が整います。 プロモーション オプションのガイダンスについては、「[最適化およびレベル上げ](../migration-considerations/optimize/index.md)」でプロセス改善に関する記事を参照してください。
+この記事の残りの部分では、移行されたワークロードを最適化するためのツールについて説明します。 パフォーマンスとコストのバランスが適切になったら、ワークロードを運用環境にレベル上げする準備が整います。 プロモーション オプションのガイダンスについては、「[最適化およびレベル上げ](../migration-considerations/optimize/index.md)」でプロセス改善に関する記事を参照してください。
 
 # <a name="right-size-assets"></a>[資産を適切なサイズにする](#tab/optimize)
 

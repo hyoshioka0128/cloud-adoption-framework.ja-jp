@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5064de8d3fe2ca435aba7aa6322d0e6e47e65c1a
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: b2b8dcce16fd0e6d277160f1177347f887488712
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023459"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993860"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -33,7 +33,7 @@ Azure では、次の機能を備えた仮想ネットワークが提供され�
 - 各 Azure サブスクリプションと Azure リージョン内に複数の VNet を実装できます。
 - VNet 同士は分離されています。
 - Vnet は、[RFC 1918](https://tools.ietf.org/html/rfc1918) で定義されている、CIDR 表記で表されたプライベート IP アドレスとパブリック IP アドレスを含むことができます。 VNet のアドレス空間内に指定されたパブリック IP アドレスは、インターネットから直接アクセスすることはできません。
-- VNet は、VNet ピアリングを使用して相互に接続できます。 同じリージョンの Vnet または異なるリージョンの Vnet のどちらとでも接続できます。 したがって、ある VNet 内のリソースは、他の Vnet 内のリソースに接続できます。
+- VNet は、仮想ネットワーク ピアリングを使用して相互に接続できます。 同じリージョンの Vnet または異なるリージョンの Vnet のどちらとでも接続できます。 したがって、ある VNet 内のリソースは、他の Vnet 内のリソースに接続できます。
 - 既定では、VNet 内のサブネット、接続されている VNet、オンプレミスのネットワーク、およびインターネットの間でトラフィックがルーティングされます。
 
 VNet トポロジを計画する際は、IP アドレス空間の配置方法、ハブ アンド スポーク ネットワークの実装方法、VNet をサブネットに分割する方法、DNS の設定方法、およびAzure 可用性ゾーンの実装方法を考慮する必要があります。
@@ -42,9 +42,9 @@ VNet トポロジを計画する際は、IP アドレス空間の配置方法、
 
 移行の一環として VNet を作成するときは、VNet の IP アドレス空間を計画することが重要です。
 
-- 各 VNet に対して CIDR 範囲の /16 より大きいアドレス空間を割り当てないようにする必要があります。 VNet では 65,536 個の IP アドレスを使用でき、/16 より小さいプレフィックス (131,072 個のアドレスを含む /15 など) を割り当てると、余剰分の IP アドレスは他で使用できなくなります。 RFC 1918 で定義されているプライベート範囲内であっても、IP アドレスを無駄にしないことが重要です。
+- 各 VNet に対して CIDR 範囲の `/16` より大きいアドレス空間を割り当てないようにする必要があります。 VNet では 65,536 個の IP アドレスを使用でき、`/16` より小さいプレフィックス (131,072 個のアドレスを含む `/15` など) を割り当てると、余剰分の IP アドレスは他で使用できなくなります。 RFC 1918 で定義されているプライベート範囲内であっても、IP アドレスを無駄にしないことが重要です。
 - VNet アドレス空間は、オンプレミス ネットワークの範囲と重複しないようにする必要があります。
-- ネットワーク アドレス変換 (NAT) を使用してはいけません。
+- ネットワーク アドレス変換 (NAT) は使用しないでください。
 - アドレスが重複していると、ネットワークに接続できなくなったり、ルーティングが正常に動作しなくなる可能性があります。 ネットワークが重複する場合は、ネットワークを設計し直すか、ネットワーク アドレス変換 (NAT) を使用する必要があります。
 
 **詳細情報:**
@@ -58,7 +58,7 @@ VNet トポロジを計画する際は、IP アドレス空間の配置方法、
 ハブ アンド スポーク ネットワーク トポロジを使用すると、ID やセキュリティなどのサービスは共有されますが、ワークロードは切り離されます。
 
 - ハブは、接続の中心点として機能する Azure VNet です。
-- スポークは、VNet ピアリングを使用してハブ VNet に接続する VNet です。
+- スポークは、仮想ネットワーク ピアリングを使用してハブ VNet に接続する VNet です。
 - 共有サービスはハブにデプロイされ、個々のワークロードはスポークとしてデプロイされます。
 
 以下、具体例に沿って説明します。
@@ -73,9 +73,9 @@ _ハブとスポークのトポロジ_
 
 **詳細情報:**
 
-- ハブとスポークのトポロジ[について読む](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)。
-- Azure [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) VM および [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) VM を実行するためのネットワークの推奨事項を確認する。
-- [VNet ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)について学習する。
+- [ハブとスポークのトポロジ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)について読む。
+- Azure で [Windows VM](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) と [Linux VM](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) を実行するためのネットワークの推奨事項を確認する。
+- [仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)について学習する。
 
 ## <a name="best-practice-design-subnets"></a>ベスト プラクティス:サブネットを設計する
 
@@ -212,7 +212,7 @@ Azure で VPN ゲートウェイを作成するときは、GatewaySubnet とい�
 
 複数の VPN 接続がある場合、Azure Virtual WAN は、Azure を介して最適化および自動化されたブランチ間接続を提供するネットワーク サービスです。
 
-- Virtual WAN を使用すると、ブランチ デバイスへの接続と構成を行って Azure と通信できます。 これは、手動で行うことも、Virtual WAN パートナーを介して推奨プロバイダー デバイスを使用して行うこともできます。
+- Virtual WAN を使用すると、ブランチ デバイスへの接続と構成を行って Azure と通信できます。 これは、手動で行うことも、Azure Virtual WAN パートナーを介して推奨プロバイダー デバイスを使用して行うこともできます。
 - 推奨プロバイダー デバイスを使用すると、使いやすさ、接続性、および構成管理を実現できます。
 - Azure WAN の組み込みダッシュボードにはすぐに使用できるトラブルシューティング用分析情報が用意されているため、時間を節約でき、大規模なサイト間接続を簡単に追跡できます。
 
@@ -292,7 +292,7 @@ VNet をセキュリティ保護する責任は、Microsoft とユーザーの�
 Microsoft は、クラウド インフラストラクチャの保護に多額の投資を行っていますが、ユーザーも自身のクラウド サービスとリソース グループを保護する必要があります。 セキュリティの多層アプローチにより、最大限の保護が実現されます。 境界ネットワークを設けることは、その防御戦略の重要な部分です。
 
 - 境界ネットワークでは、内部のネットワーク リソースが信頼されていないネットワークから保護されます。
-- インターネットに公開される最も外側の層になります。 一般にインターネットとエンタープライズ インフラストラクチャの間に配置され、通常は両方の側で何らかの保護が行われます。
+- インターネットに公開される最も外側の層になります。 通常、インターネットとエンタープライズ インフラストラクチャの間に配置され、通常は両方の側で何らかの保護が行われます。
 - 一般的なエンタープライズ ネットワーク トポロジでは、コア インフラストラクチャは複数層のセキュリティ デバイスを備えた境界で厳重に防備されています。 各層の境界は、デバイスとポリシー適用ポイントで構成されます。
 - 各層には、ファイアウォール、サービス拒否 (DoS) 防止、侵入検出/侵入防止システム (IDS/IPS)、VPN デバイスなどのネットワーク セキュリティ ソリューションを組み合わせたものを含めることができます。
 - 境界ネットワークでのポリシーの適用では、ファイアウォール ポリシー、アクセス制御リスト (ACL)、または特定のルーティングを使用できます。

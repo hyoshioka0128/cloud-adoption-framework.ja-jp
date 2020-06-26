@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8256c043677ecaf5b540553b27ddb5f1488b5132
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 4eb15ffbbe11f79bcb9ebe198369cc109a10780e
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756143"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075317"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -35,7 +35,7 @@ Azure Monitor は、Azure リソースを 1 つのソースから監視できる
 - Azure を基にして構築されています。
 - 仮想マシン (VM) のワークロードに基づくビジネス機能、またはマイクロサービスや他のプラットフォーム リソースを使用する複雑なアーキテクチャをサポートしています。
 
-Azure Active Directory Domain Services などのテナント サービスから、サブスクリプション レベルのイベント、Azure サービスの正常性まで、スタックのすべてのレイヤーが監視されます。
+Azure Active Directory Domain Services などのテナント サービスから、サブスクリプション レベルのイベント、Azure Service Health まで、スタックのすべてのレイヤーが監視されます。
 
 また、VM、ストレージ、ネットワーク リソースなどのインフラストラクチャ リソースも監視されます。 最上位レイヤーでは、アプリケーションが監視されます。
 
@@ -172,7 +172,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 - ハイブリッドおよびクラウド リソース全体の監視、各リソースの監視基準、アラートのしきい値などを有効にするための標準と方法を定義します。  
 
-- ロールベースのアクセス制御 (RBAC) を構成して、ユーザーとグループに対し、それらが管理を担当するリソースからのデータを監視するために必要なアクセス権のみを付与します。
+- ロールベースのアクセス制御 (RBAC) を構成して、ユーザーとグループに対し、管理対象のリソースからのデータを監視するために必要なアクセス権のみを付与します。
 
 - 各チームが必要に応じて監視とアラートの構成を作成、有効化、および調整できるように、自動化とセルフサービスを含めます。
 

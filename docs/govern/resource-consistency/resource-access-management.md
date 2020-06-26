@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9bcd4fb4a516062c053322932e1de878f4ec9095
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 339de4106b9e31576b4f6986ac1f766972b8f0de
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756177"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993123"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
 [ガバナンスの方法論](../index.md)に関する記事で、リソース管理を含むクラウド ガバナンスの 5 つの規範の概要が説明されています。 [リソース アクセス ガバナンスの概要](./index.md)に関するページでは、リソース アクセス管理がリソース管理の規範にどのように適合するかについても説明しています。 ガバナンス モデルを設計する方法について確認する前に、Azure のリソース アクセス管理の制御について理解することが重要です。 これらのリソース アクセス管理の制御の構成により、ご自身のガバナンス モデルの基礎が形成されます。
 
 まずは、Azure でリソースがどのようにデプロイされるかを詳しく見ていきましょう。
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-an-azure-resource"></a>Azure リソースとは
 
@@ -32,16 +30,16 @@ _図 1: リソース。_
 
 ## <a name="what-is-an-azure-resource-group"></a>Azure リソース グループとは
 
-Azure の各リソースは、[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)に属している必要があります。 リソース グループは、"_ライフサイクルとセキュリティに基づいて_" 複数のリソースを単一のエンティティとして管理できるようにまとめる、論理コンストラクトに過ぎません。 たとえば、[n 層アプリケーション](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)のリソースなど、似たようなライフサイクルを共有するリソースを、グループとして作成または削除できます。 もう 1 つの例を挙げると、一緒に作成されたすべてのものは、一緒に管理し、一緒に廃止し、一緒にリソース グループに登録します。
+Azure の各リソースは、[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)に属している必要があります。 リソース グループは、"**ライフサイクルとセキュリティに基づいて**" 複数のリソースを単一のエンティティとして管理できるようにまとめる、論理コンストラクトに過ぎません。 たとえば、[n 層アプリケーション](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)のリソースなど、似たようなライフサイクルを共有するリソースを、グループとして作成または削除できます。 つまり、一緒に作成されたすべてのものは、一緒に管理し、一緒に廃止し、一緒にリソース グループに登録します。
 
 ![リソースを含むリソース グループの図](../../_images/govern/design/governance-1-10.png)
 _図 2: リソース グループにはリソースが含まれる。_
 
-リソース グループ、およびそのリソース グループに含まれているリソースは、Azure **サブスクリプション**に関連付けられます。
+リソース グループ、およびそのリソース グループに含まれているリソースは、Azure サブスクリプションに関連付けられます。
 
 ## <a name="what-is-an-azure-subscription"></a>Azure サブスクリプションとは
 
-Azure サブスクリプションは、リソース グループとそのリソースをまとめる論理コンストラクトであるという点では、リソース グループに似ています。 Azure サブスクリプションは、Azure Resource Manager によって使用される制御にも関連付けられています。 Azure サブスクリプションと Azure Resource Manager の関係について確認するために、Azure Resource Manager を詳しく見てみましょう。
+Azure "_サブスクリプション_" は、リソース グループとそのリソースをまとめる論理コンストラクトであるという点では、リソース グループに似ています。 Azure サブスクリプションは、Azure Resource Manager によって使用される制御にも関連付けられています。 Azure サブスクリプションと Azure Resource Manager の関係について確認するために、Azure Resource Manager を詳しく見てみましょう。
 
 ![Azure サブスクリプションの図](../../_images/govern/design/governance-1-11.png)
 _図 3: Azure サブスクリプション。_
@@ -63,10 +61,10 @@ _図 5: Azure クライアントが Azure Resource Manager RESTful API に接続
 ![Azure リソース プロバイダー](../../_images/govern/design/governance-1-14.png)
 _図 6: Azure リソース プロバイダー。_
 
-クライアントが特定のリソースを管理するように要求すると、Azure Resource Manager は要求を完了するために、そのリソースの種類のリソース プロバイダーに接続します。 たとえば、クライアントが仮想マシン リソースを管理するように要求した場合、Azure Resource Manager は、**Microsoft.Compute** リソース プロバイダーに接続します。
+クライアントが特定のリソースを管理するように要求すると、Azure Resource Manager は要求を完了するために、そのリソースの種類のリソース プロバイダーに接続します。 たとえば、クライアントが仮想マシン リソースを管理するように要求した場合、Azure Resource Manager は、`Microsoft.Compute` リソース プロバイダーに接続されます。
 
 ![Azure Resource Manager から Microsoft.Compute リソース プロバイダーへの接続](../../_images/govern/design/governance-1-15.png)
-_図 7: Azure Resource Manager は、クライアント要求で指定されたリソースを管理する **Microsoft.Compute** リソース プロバイダーに接続します。_
+_図 7: Azure Resource Manager は、クライアント要求で指定されたリソースを管理する `Microsoft.Compute` リソース プロバイダーに接続されます。_
 
 Azure Resource Manager が、仮想マシン リソースを管理するために、サブスクリプションとリソース グループの両方の識別子を指定するようクライアントに要求しています。
 
@@ -77,7 +75,7 @@ Azure Resource Manager のしくみがわかったので、Azure サブスクリ
 ![Azure Active Directory](../../_images/govern/design/governance-1-16.png)
 _図 8: Azure Active Directory。_
 
-Azure AD では、ユーザーが**テナント**にセグメント化されています。 テナントとは、通常は組織に関連付けられる Azure AD の安全な専用インスタンスを表す論理コンストラクターです。 各サブスクリプションが Azure AD テナントと関連付けられています。
+Azure AD では、ユーザーがテナントにセグメント化されています。 "_テナント_" とは、通常は組織に関連付けられる Azure AD の安全な専用インスタンスを表す論理コンストラクターです。 各サブスクリプションが Azure AD テナントと関連付けられています。
 
 ![サブスクリプションに関連付けられている Azure AD テナント](../../_images/govern/design/governance-1-17.png)
 _図 9: サブスクリプションと関連付けられている Azure AD テナント。_
@@ -89,7 +87,7 @@ _図 9: サブスクリプションと関連付けられている Azure AD テ�
 ![RBAC ロールに割り当てられたユーザー](../../_images/govern/design/governance-1-18.png)
 _図 10: テナントの各ユーザーに 1 つ以上の RBAC ロールが割り当てらている。_
 
-RBAC ロールでは、特定のリソースに対してユーザーが適用できる一連のアクセス許可が指定されます。 ロールがユーザーに割り当てられると、これらのアクセス許可が適用されます。 たとえば、[組み込み**所有者**ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)を使用すると、ユーザーはリソースに対して任意のアクションを実行できます。
+RBAC ロールでは、特定のリソースに対してユーザーが適用できる一連のアクセス許可が指定されます。 ロールがユーザーに割り当てられると、これらのアクセス許可が適用されます。 たとえば、[組み込みの `owner` ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)を使用すると、ユーザーはリソースに対して任意のアクションを実行できます。
 
 次の制御は、[Azure リソース ポリシー](https://docs.microsoft.com/azure/governance/policy)に適うように指定されている設定で、要求が許可されることのチェックです。 Azure リソース ポリシーでは、特定のリソースに対して許可される操作が指定されます。 たとえば、Azure リソース ポリシーを使用して、ユーザーが特定の種類の仮想マシンのみデプロイできるように指定できます。
 

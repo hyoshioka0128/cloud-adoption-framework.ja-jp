@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e64acdc08f975662d3176964acbc2c0dcd53e3e4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0696eb9b3720519fe26641322fa8b50caf020620
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224240"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994188"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-is-data-classification"></a>データ分類とは
 
 データ分類によって、組織のデータを判定して価値を割り当てることができます。これは、ガバナンスの一般的な開始点となります。 データ分類プロセスでは、リスクを識別するために、機密性とビジネスへの影響によってデータを分類します。 データを分類する際、機密情報や重要なデータを盗難や損失から保護する方法でデータを管理できます。
@@ -39,7 +37,7 @@ Microsoft が使用する分類の一覧を以下に示します。 業界や既
 
 ## <a name="tagging-data-classification-in-azure"></a>Azure でのデータ分類のタグ付け
 
-リソース タグはメタデータ保存のための優れたアプローチであり、これらのタグを使用して、デプロイされるリソースにデータ分類情報を適用できます。 分類によるクラウド資産のタグ付けは正式なデータ分類プロセスの代わりにはなりませんが、リソースの管理とポリシーの適用を行うための有益なツールを提供します。 [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) は、データの配置場所 (オンプレミス、Azure など) に関係なく、_データ_自体の分類に役立つ優れたソリューションです。 全体的な分類戦略の一部として検討してください。
+リソース タグはメタデータ保存のための優れたアプローチであり、これらのタグを使用して、デプロイされるリソースにデータ分類情報を適用できます。 分類によるクラウド資産のタグ付けは正式なデータ分類プロセスの代わりにはなりませんが、リソースの管理とポリシーの適用を行うための有益なツールを提供します。 [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) は、存在する場所 (オンプレミス、Azure など) に関係なく、データ自体の分類に役立つ優れたソリューションです。 全体的な分類戦略の一部として検討してください。
 
 Azure でのリソースのタグ付けの詳細については、「[タグを使用して Azure リソースと管理階層を整理する](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)」を参照してください。
 

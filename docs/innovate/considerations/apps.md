@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0503ba04a97362b63c6e616b79d1153f3ba691c2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 822866cfd944cd47a3eff96a24a6e0f09a69634f
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224172"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993973"
 ---
 # <a name="engage-through-applications"></a>アプリケーションによる連携
 
@@ -93,7 +93,7 @@ ms.locfileid: "83224172"
 
 ## <a name="operating-model-innovations"></a>運用モデルのイノベーション
 
-アプリを作成するための最新の革新的なアプローチに加えて、アプリの "_運用_" においても注目すべきイノベーションがあります。 これらのアプローチによって、多くの組織に変化が生じました。 最も顕著なものの 1 つは、[クラウドのセンター オブ エクセレンス](../../organize/cloud-center-of-excellence.md)運用モデルです。 優れた人員が揃い、成熟したビジネス チームには、ソリューションに対して独自の運用サポートを提供するという選択肢があります。
+アプリを作成するための最新の革新的なアプローチに加えて、アプリの運用においても注目すべきイノベーションがあります。 これらのアプローチによって、多くの組織に変化が生じました。 最も顕著なものの 1 つは、[クラウドのセンター オブ エクセレンス](../../organize/cloud-center-of-excellence.md)運用モデルです。 優れた人員が揃い、成熟したビジネス チームには、ソリューションに対して独自の運用サポートを提供するという選択肢があります。
 
 クラウドのセンター オブ エクセレンスにみられる、このようなセルフサービス型の運用管理モデルでは、ソリューション環境内で制御を厳格化し、イテレーションを迅速化することができます。 これらの目標は、運用管理と説明責任をビジネス チームに移管することによって達成されます。
 

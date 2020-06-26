@@ -7,14 +7,14 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8eee7eeaf2406a94ee703054ed5f1b9e369bf5a2
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: b7c73bda075ce0e9826fdf4738c203ff68709be8
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755653"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074996"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
+<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Terraform を使用してランディング ゾーンを構築する
 
@@ -45,7 +45,7 @@ Terraform のクラウド導入フレームワークのファンデーション 
 | リソース グループ | ファンデーションに必要なコア リソース グループ |
 | アクティビティ ログ | サブスクリプションのすべてのアクティビティの監査とアーカイブ: <li> ストレージ アカウント <li> Azure Event Hubs |
 | 診断ログ | すべての操作ログは、特定の日数だけ保持されます。 <li> ストレージ アカウント <li> Event Hubs |
-| Log Analytics | すべての操作ログを格納します。 詳細なアプリケーションのベスト プラクティスのレビューのための一般的なソリューションのデプロイ: <li> Networkmonitoring <li> Adassessment <li> Adreplication <li> Agenthealthassessment <li> Dnsanalytics <li> Keyvaultanalytics |
+| Log Analytics | 操作ログを格納します。 詳細なアプリケーションのベスト プラクティスのレビューのための一般的なソリューションのデプロイ: <li> NetworkMonitoring <li> AdAssessment <li> AdReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure Security Center | セキュリティ検疫メトリックおよびメールと電話番号に送信されるアラート |
 
 <!-- markdownlint-enable MD033 -->
@@ -67,7 +67,7 @@ Terraform のクラウド導入フレームワークのファンデーション 
 
 ## <a name="design-decisions"></a>設計上の決定
 
-Terraform ランディング ゾーンでは、次の決定事項が示されます。
+CAF Terraform モジュールでは、次の決定事項が示されます。
 
 | コンポーネント              | 決定事項                                                                                                                                                                                                                                                                | 他の方法                                                                                                                                                                                                                                          |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -88,18 +88,19 @@ Terraform ランディング ゾーンでは、次の決定事項が示されま
 
 すべてのリソースとリソース グループに、次に示す最小タグ セットが存在している必要があります。
 
-| タグ名          | 説明                                                                                        | Key             | 値の例                                    |
-|-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
-| 事業単位     | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 | Businessunit    | Finance、marketing、{製品名}、corp、shared |
-| コスト センター       | このリソースに関連付けられたアカウンティング コスト センター。                                              | Costcenter      | Number                                           |
-| 障害復旧 | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。                                     | Dr              | Dr-enabled、non-dr-enabled                       |
-| 環境       | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                   | Env             | Prod、dev、QA、stage、test、training             |
-| 所有者名        | このアプリケーション、ワークロード、またはサービスの所有者。                                                    | 所有者           | Email                                            |
-| デプロイの種類   | リソースの管理方法を定義します。                                                    | Deploymenttype  | Manual、Terraform                                |
-| Version           | デプロイされるブループリントのバージョン。                                                                 | Version         | V0.1                                             |
-| アプリケーション名  | リソースに関連付けられているアプリケーション、サービス、またはワークロードの名前。             | Applicationname | "アプリ名"                                       |
+<!-- TODO: Review capitalization and hyphenation -->
+<!-- TODO: Eliminate either "Tag name" or "Key" column -->
 
-<!-- cSpell:ignore caf -->
+| タグ名          | 説明                                                                                        | Key             | 値の例                                    |
+|-------------------|----------------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------|
+| 事業単位     | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 | `BusinessUnit`    | `finance`、`marketing`、`<product-name>`、`corp`、`shared` |
+| コスト センター       | このリソースに関連付けられたアカウンティング コスト センター。                                              | `CostCenter`      | `<cost-center-number>`                                     |
+| 障害復旧 | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。                                     | `DR`              | `dr-enabled`, `non-dr-enabled`                   |
+| 環境       | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                   | `Env`             | `prod`、`dev`、`qa`、`staging`、`test`、`training` |
+| 所有者名        | このアプリケーション、ワークロード、またはサービスの所有者。                                                    | `Owner`           | `email`                                            |
+| デプロイの種類   | リソースの管理方法を定義します。                                                    | `DeploymentType`  | `manual`, `terraform`                                |
+| Version           | デプロイされるブループリントのバージョン。                                                                 | `Version`         | `v0.1`                                             |
+| アプリケーション名  | リソースに関連付けられているアプリケーション、サービス、またはワークロードの名前。             | `ApplicationName` | `<app-name>`                                       |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>最初のランディング ゾーンをカスタマイズしてデプロイする
 

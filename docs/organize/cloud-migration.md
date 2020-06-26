@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: a5b3caa04e3f87c30236425aff770e82e0a37b4c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: eedd956934022db81fbc8380db27a3831ab1b197
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755581"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077191"
 ---
 # <a name="cloud-migration-functions"></a>クラウド移行機能
 
@@ -75,7 +75,7 @@ ms.locfileid: "83755581"
 
 既存の IT スタッフによる追加のサポートが必要になる場合があります。 IT は、イノベーションやビジネスの機敏性のためのクラウド ブローカーやパートナーになることにより、クラウドの導入に対する価値のある貢献者になることができます。
 
-- [中央 IT の役割](../organize/central-it.md)
+- [中央 IT チームの役割](../organize/central-it.md)
 
 ## <a name="whats-next"></a>参照トピック
 

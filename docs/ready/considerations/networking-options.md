@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a5a9fee1d8625cb2732e725aee924f1fd3984d3
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: cf33fabd3b3b7cfb6b1deadd127a8b8fb13b559d
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815499"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076083"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -39,9 +39,9 @@ Azure ネットワーク サービスのデシジョン ツリーに基づいた
 - **インターネット経由でワークロードにアクセスできますか?** Azure には、アプリケーションやサービスへの外部アクセスの管理およびセキュリティ保護に役立つように設計された次のサービスが用意されています。
   - [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview)
   - [ネットワーク アプライアンス](https://azure.microsoft.com/solutions/network-appliances)
-  - [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
+  - [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
   - [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway)
-  - [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
+  - [Azure の Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
 - **カスタム DNS 管理をサポートする必要がありますか?** [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) は DNS ドメインのホスティング サービスです。 Azure DNS は、Azure インフラストラクチャを使用した名前解決を提供します。 ワークロードに、Azure DNS によって提供される機能を超えた名前解決が必要な場合は、追加のソリューションのデプロイが必要になることがあります。 ワークロードに Active Directory サービスも必要な場合は、[Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/overview) を使用して Azure DNS の機能を拡張することを検討してください。 機能を追加するために、[カスタムの IaaS 仮想マシンをデプロイ](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)して要件をサポートすることもできます。
 
 ## <a name="common-networking-scenarios"></a>一般的なネットワーク シナリオ
@@ -54,17 +54,17 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 | --- | --- |
 | 仮想マシンから受信 VPN 接続までのすべてを接続するためのネットワーク インフラストラクチャが必要です。 | [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network) |
 | 受信および送信接続とアプリケーションまたはサービスへの要求のバランスをとる必要があります。 | [Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer) |
-| アプリケーション サーバー ファームからの配信を最適化しながら、Web アプリケーション ファイアウォールでアプリケーションのセキュリティを向上させたいと考えています。 | [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway) <br> [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| アプリケーション サーバー ファームからの配信を最適化しながら、Web アプリケーション ファイアウォールでアプリケーションのセキュリティを向上させたいと考えています。 | [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway) <br> [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 | 高パフォーマンスの VPN ゲートウェイ経由でインターネットを安全に使用して Azure Virtual Network にアクセスする必要があります。 | [Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway) |
 | すべてのドメイン ニーズに対して超高速の DNS 応答と超高可用性を確保したいと考えています。 | [Azure DNS](https://docs.microsoft.com/azure/dns) |
-| アプリケーションや格納されたコンテンツからストリーミング ビデオまで、高帯域幅コンテンツの世界中の顧客への配信を高速化する必要があります。 | [Azure Content Delivery Network](https://docs.microsoft.com/azure/cdn) |
+| アプリケーションや格納されたコンテンツからストリーミング ビデオまで、高帯域幅コンテンツの世界中の顧客への配信を高速化する必要があります。 | [Azure Content Delivery Network (CDN)](https://docs.microsoft.com/azure/cdn) |
 | Azure アプリケーションを DDoS 攻撃から保護する必要があります。 | [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) |
-| トラフィックをグローバル Azure リージョンにまたがるサービスに最適に分散させながら、高可用性と応答性を提供する必要があります。 | [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager) <br><br> [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| トラフィックをグローバル Azure リージョンにまたがるサービスに最適に分散させながら、高可用性と応答性を提供する必要があります。 | [Azure の Traffic Manager](https://docs.microsoft.com/azure/traffic-manager) <br><br> [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 | Microsoft のクラウド サービスがオンプレミスの独自のデータセンターに存在するかのように、企業ネットワークからそれらのサービスにアクセスするプライベート ネットワーク接続を追加する必要があります。 | [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute) |
 | 状態をネットワーク シナリオのレベルで監視および診断したいと考えています。 | [Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher) |
 | 組み込みの高可用性、無制限のクラウド スケーラビリティ、およびメンテナンス不要を備えたネイティブなファイアウォール機能が必要です。 | [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) |
 | ビジネス オフィス、小売の場所、およびサイトを安全に接続する必要があります。 | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan) |
-| グローバルなマイクロサービス ベースの Web アプリケーションのためのスケーラブルで、かつセキュリティが強化された配信ポイントが必要です。 | [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| グローバルなマイクロサービス ベースの Web アプリケーションのためのスケーラブルで、かつセキュリティが強化された配信ポイントが必要です。 | [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -88,13 +88,14 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 ### <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
-これらのアーキテクチャ パターンのいずれかの使用に加えて、エンタープライズ IT グループが大規模なクラウド環境を管理する場合は、Azure ベースのクラウド インフラストラクチャを設計するときに [Azure 仮想データセンターのガイダンス](../../reference/vdc.md)を参照することを検討してください。 組織が次の基準を満たしている場合、Azure 仮想データセンターは、ネットワーク、セキュリティ、管理、およびインフラストラクチャへの結合されたアプローチを提供します。
+これらのアーキテクチャ パターンのいずれかの使用に加えて、エンタープライズ IT グループが大規模なクラウド環境を管理する場合は、「[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)」を参照することを検討してください。 Azure ベースのクラウド インフラストラクチャを設計するとき、**クラウドで 1,000 を超える資産 (アプリ、インフラストラクチャ、またはデータ資産) をホストする**中期的目標 (24 か月以内) がある場合は、CAF エンタープライズ規模のランディング ゾーンによって、ネットワーク、セキュリティ、管理、インフラストラクチャが組み合わされたアプローチが提供されます。
 
-- 企業が、集中管理された監視および監査機能を必要とする規制コンプライアンスに従っている。
-- クラウド資産が、10,000 個を超える IaaS VM または同等の規模の PaaS サービスで構成される。
-- 開発者チームと運用チームをサポートするためのワークロードの俊敏なデプロイ機能を有効にしながら、共通のポリシーとガバナンスのコンプライアンスおよびコア サービスに対する集中的な IT 制御を維持する必要がある。
-- 所属する業界が、各分野の深い専門知識 (たとえば、金融、石油およびガス、製造など) を必要とする複雑なプラットフォームに依存している。
-- 初期段階の導入時であっても、既存の IT ガバナンス ポリシーに既存の機能とのより厳密な同等性が必要である。
+次の条件を満たす組織については、[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)で開始することが適切である場合があります。
+
+- 企業が、集中管理された監視機能と監査機能を必要とする規制コンプライアンス要件の影響を受ける。
+- 共通のポリシーとガバナンスのコンプライアンス、およびコア サービスに対する集中的な IT 制御を維持する必要がある。
+- 所属する業界が複雑なプラットフォームに依存しており、そのプラットフォームを制御するために複雑なコントロールや各分野の深い専門知識が必要になる。 これは、金融、石油とガス、製造の大企業で最も一般的です。
+- 既存の IT ガバナンス ポリシーにより、初期段階の導入時であっても、既存の機能とのより厳密な整合性が必要になる。
 
 ## <a name="follow-azure-networking-best-practices"></a>Azure ネットワークのベスト プラクティスに従う
 

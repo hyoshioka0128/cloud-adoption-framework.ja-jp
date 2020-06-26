@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 33744f6911ec724c517a7fa93979a8adbdd370c1
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 9a35e4d9f693362597d301f1ec8d01efdb7887f4
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814464"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076222"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>作業を開始しましょう。クラウド導入チームを構築する
 
@@ -68,7 +68,7 @@ ms.locfileid: "83814464"
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド戦略チームは、クラウド導入ライフサイクル全体にわたって明確な RACI 構造を維持する責任を負います。 | 以下からのガイダンスと要件を確認します。 <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT <li> RACI に掲載されている他のクラウド導入チームまたは個人 |
+| <li> クラウド戦略チームは、クラウド導入ライフサイクル全体にわたって明確な RACI 構造を維持する責任を負います。 | 以下からのガイダンスと要件を確認します。 <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム <li> RACI に掲載されている他のクラウド導入チームまたは個人 |
 
 ## <a name="step-3-begin-your-adoption-journey"></a>手順 3:導入の取り組みを開始する
 
@@ -98,7 +98,7 @@ ms.locfileid: "83814464"
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド導入チーム | <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT <li> クラウド戦略チーム |
+| <li> クラウド導入チーム | <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム <li> クラウド戦略チーム |
 
 ## <a name="step-4-expand-your-skills-with-scenarios-and-best-practices"></a>手順 4:シナリオとベスト プラクティスを使用してスキルを伸ばす
 

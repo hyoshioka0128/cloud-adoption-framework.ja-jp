@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cd6f89162b2975313f0eebcd4e3e1385787f8ee7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f45418b85c0f7afbae2ea23586693c7de5054b79
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217440"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075505"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>クラウド管理のためのワークロードの特殊化
 
@@ -39,7 +39,7 @@ ms.locfileid: "83217440"
 
 多くの場合、ワークロードの特殊化によって、管理ベースライン、強化されたベースライン、プラットフォーム操作の提供に焦点を当てた従来の IT ビルド プロセスに文化の変化がもたらされます。 このような種類のオファリングは、環境全体にスケーリングできます。 ワークロードの特殊化は、プラットフォームの特殊化と実行方法が似ています。 ただし、一般的なプラットフォームとは異なり、個々のワークロードに必要な特殊化は、多くの場合、スケーリングされません。
 
-ワークロードの特殊化が必要な場合、運用管理は一般に中央 IT の観点を越えて進化します。 クラウド導入フレームワークで提案されているアプローチは、クラウド管理機能の分散です。
+ワークロードの特殊化が必要な場合、運用管理は一般に一元化された IT の観点を越えて進化します。 クラウド導入フレームワークで提案されているアプローチは、クラウド管理機能の分散です。
 
 このモデルでは、監視、デプロイ、DevOps、およびその他の技術革新に焦点を当てた機能などの運用タスクは、アプリケーション開発またはビジネスユニット組織に移行します。 クラウド プラットフォーム チームとコア クラウド監視チームは、引き続き環境全体の管理ベースラインを提供します。
 

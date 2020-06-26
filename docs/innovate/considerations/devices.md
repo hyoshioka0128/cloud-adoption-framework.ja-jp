@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 2fd3bfb329131e2ec344131ba3e2cbf8bc189a8f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0b786293386ae85bca7d29865639f839dd79ead4
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219735"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993931"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>アンビエント エクスペリエンス:デバイスの操作
 
@@ -52,7 +52,7 @@ Azure App Service はこのアプローチの好例です。 初期の反復の�
 複合現実ソリューションは、アンビエント エクスペリエンスの成熟度の次のレベルを表しています。 このアプローチでは、顧客を取り巻く環境を補強または複製します。顧客が活動する現実が拡張されます。
 
 > [!IMPORTANT]
-> 仮想現実 (VR) デバイスが必要であり、*顧客の身の周りの環境や自然な行動にまだ含まれていない*場合、拡張現実または仮想現実はアンビエント エクスペリエンスというより代替エクスペリエンスです。
+> 仮想現実 (VR) デバイスが必要であり、顧客の身の周りの環境や自然な行動にまだ含まれていない場合、拡張現実または仮想現実はアンビエント エクスペリエンスというより代替エクスペリエンスです。
 
 複合現実エクスペリエンスは、リモート ワーカーの間でますます一般的になっています。 その利用は、コラボレーションや、ローカル市場ではすぐに入手できない専門スキルを必要とする業界で特に急増しています。 リモート ワーカーのために複雑な製品の導入を 1 か所でサポートする必要がある状況は、拡張現実を利用する絶好の機会となります。 これらのシナリオでは、中央のサポート チームとリモート従業員が拡張現実を使用して作業に取り組み、トラブルシューティングを行い、製品を導入することができます。
 

@@ -7,19 +7,19 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 61777d3fa99c8692c8db91281dfdc0914e9f2b59
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 492a1f58848c0889bc80d6e5b535019e785f5c34
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861567"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785465"
 ---
 # <a name="common-azure-policy-examples"></a>Azure Policy の一般的な例
 
 [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) は、お使いのクラウド リソースにガバナンスを適用するのに役立ちます。 このサービスは、ガバナンス ポリシー要件への会社全体のコンプライアンスを確実にするためのガードレールを作成するのに役立ちます。 ポリシーを作成するには、Azure portal または PowerShell コマンドレットを使用します。 この記事では、PowerShell コマンドレットの例を紹介します。
 
 > [!NOTE]
-> Azure Policy を使用した場合、強制ポリシー (**deployIfNotExists**) が自動的に既存の VM にデプロイされることはありません。 VM のコンプライアンスを維持するには、修復が必要です。 詳細については、「[Azure Policy を使って準拠していないリソースを修復する](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources)」を参照してください。
+> Azure Policy を使用した場合、強制ポリシー (`DeployIfNotExists`) が自動的に既存の VM にデプロイされることはありません。 VM のコンプライアンスを維持するには、修復が必要です。 詳細については、「[Azure Policy を使って準拠していないリソースを修復する](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources)」を参照してください。
 
 ## <a name="common-policy-examples"></a>一般的なポリシーの例
 

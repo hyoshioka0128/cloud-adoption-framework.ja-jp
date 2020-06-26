@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1de34dc3a37414a87bdc89b233af2e2564d44b10
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: b00fd6d677b493ed70b2432e2b013e4e93851aa4
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023493"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785227"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -156,7 +156,7 @@ Contoso の管理者は仮想ネットワークを次のように設定します
 1. 米国東部 2 プライマリ リージョンに新しい仮想ネットワーク (**VNET-SQLMI-EU2**) を作成します。 その仮想ネットワークを **ContosoNetworkingRG** リソース グループに追加します。
 2. 10.235.0.0/24 のアドレス空間を割り当てます。 その範囲がエンタープライズ内の他のどのネットワークとも重複しないことを確認します。
 3. ネットワークに以下の 2 つのサブネットを追加します。
-    - **SQLMI-DS-EUS2** (10.235.0.0.25)
+    - **SQLMI-DS-EUS2** (10.235.0.0/25)。
     - **SQLMI-SAW-EUS2** (10.235.0.128/29) このサブネットは、Managed Instance にディレクトリを接続するために使用されます。
 
       ![Managed Instance:仮想ネットワークの作成](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)

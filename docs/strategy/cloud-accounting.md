@@ -7,16 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 69f92ffaeb30b59bfa8ac2aeaea9aaad02e9aaeb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5b1788558ecda13c2e95292fa503092a68fdd2ad
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216233"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074644"
 ---
 <!-- cSpell:ignore CIOs -->
-
-<!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-cloud-accounting"></a>クラウド会計とは
 
@@ -26,7 +24,7 @@ ms.locfileid: "83216233"
 
 多くの場合、IT をコスト センターとして考えることは正確です。 従来の IT 会計モデルでは、IT によりすべての IT 資産の購買力が統合されます。 [財務モデル](./financial-models.md)に関する記事で指摘したように、この購買力の統合には、ソフトウェアのライセンス、繰り返し発生する CRM ライセンスの料金、従業員のデスクトップの購入、その他の多額のコストが含まれます。
 
-IT がコスト センターとして機能するときは、IT の知覚価値の大部分は調達管理のレンズを通して見られます。 この認識によって、取締役会やその他の役員が、IT がもたらす真の価値を理解することは難しくなります。 調達コストは、組織によって加えられたその他の価値を上回ることで、IT の見方を歪める傾向があります。 IT がしばしば最高財務責任者や最高業務責任者の責任としてにひとくくりに扱われるのは、この見方が原因です。 この IT の見方は限定的であり、短絡的でもあります。
+IT がコスト センターとして機能するときは、IT の知覚価値の大部分は調達管理のレンズを通して見られます。 この認識によって、取締役会やその他の役員が、IT がもたらす真の価値を理解することは難しくなります。 調達コストは、組織によって加えられたその他の価値を上回ることで、IT の見方を歪める傾向があります。 IT がしばしば最高財務責任者や最高業務責任者の責任としてにひとくくりに扱われるのは、この見方が原因です。 この IT の見方は限定的であり、短絡的である可能性もあります。
 
 ## <a name="central-it-accounting-profit-center-model"></a>中央 IT 会計 (利益センター モデル)
 

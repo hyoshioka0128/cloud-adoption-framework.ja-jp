@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0445ba3048a7b16b792cd144c29d1643aefe0d09
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 636b0e2554fb9ab25134a226ef3bdd7aae067bb3
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815312"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076786"
 ---
 # <a name="azure-regions"></a>Azure Azure リージョン
 
@@ -51,7 +51,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
   > [!WARNING]
   > VM のバックアップまたは復旧には Azure GRS を使用しないでください。 代わりに、IaaS ワークロードの回復性をサポートするために、[Azure Backup](https://azure.microsoft.com/services/backup) と [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) を [Azure マネージド ディスク](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)と共に使用してください。
 
-- Azure Backup と Azure Site Recovery は、IaaS およびデータ バックアップのニーズに応じてネットワーク設計と連携して機能し、リージョンの回復性を高めます。 データ転送を Microsoft のバックボーンにとどめ、可能な場合は [VNet ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用するように、ネットワークが最適化されていることを確認します。 グローバルに配置している大規模な組織では、リージョンのエグレス料金を節約するために [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) を使用してリージョン間のトラフィックをルーティングすることがあります。
+- Azure Backup と Azure Site Recovery は、IaaS およびデータ バックアップのニーズに応じてネットワーク設計と連携して機能し、リージョンの回復性を高めます。 データ転送を Microsoft のバックボーンにとどめ、可能な場合は[仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用するように、ネットワークが最適化されていることを確認します。 グローバルに配置している大規模な組織では、リージョンのエグレス料金を節約するために [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) を使用してリージョン間のトラフィックをルーティングすることがあります。
 
 - Azure リソース グループは、リージョン固有の構成要素です。 ただし、通常、リソース グループ内のリソースは複数のリージョンにまたがります。 このような場合、リージョンの障害が発生した場合に、影響を受けるリージョンで、(そのリソース グループ内の) 他のリージョンにあるリソースが引き続き機能するとしても、リソース グループに対する制御プレーン操作が失敗することを考慮することが重要です。 これは、ネットワークの設計とリソース グループの設計の両方に影響を与える可能性があります。
 
@@ -86,8 +86,6 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 | ヨーロッパ        | ドイツ     | はい             | パートナーとお客様 | なし - ネットワークのみ           | はい                           |
 | アジア太平洋  | 韓国 | はい             | パートナー               | はい                         | いいえ                            |
 
-<!-- markdownlint-disable MD026 -->
-
 ## <a name="relevance-of-data-sovereignty"></a>データ主権の関連性
 
 世界中で、政府組織が、一般データ保護規則 (GDPR) のようなデータ主権要件を確立し始めています。 この類のコンプライアンス要件では、多くの場合、特定のリージョン内または特定の国内においても、市民を保護するためにローカリゼーションが必要になります。 場合によっては、お客様、従業員、またはパートナーに属するデータを、エンド ユーザーと同じリージョン内のクラウド プラットフォームに格納する必要があります。
@@ -114,7 +112,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 移行の範囲に複数のリージョンが含まれる場合、クラウド導入チームによって、次の準備に関する考慮事項が評価される必要があります。
 
-- データ主権によって、一部の資産のローカライズが必要な場合がありますが、多くの資産はそうしたコンプライアンスの制約に制御されない可能性があります。 ログ、レポート、ネットワーク ルーティング、ID、およびその他の中央 IT サービスは、複数のサブスクリプション、または複数のリージョンにまたがって共有サービスとしてホストされるのがふさわしいと考えられます。 クラウド導入チームは、[共有サービスを含むハブおよびスポーク トポロジの参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)の説明に従って、これらのサービスの共有サービス モデルを使用して評価する必要があります。
+- データ主権によって、一部の資産のローカライズが必要な場合がありますが、多くの資産はそうしたコンプライアンスの制約に制御されない可能性があります。 ログ、レポート、ネットワーク ルーティング、ID、およびその他の一元化された IT サービスは、複数のサブスクリプション、または複数のリージョンにまたがって共有サービスとしてホストされるのがふさわしいと考えられます。 クラウド導入チームは、[共有サービスを含むハブおよびスポーク トポロジの参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)の説明に従って、これらのサービスの共有サービス モデルを使用して評価する必要があります。
 - 類似した環境の複数のインスタンスをデプロイする場合、環境ファクトリで整合性を作成し、ガバナンスを改善して、デプロイを加速させることができます。 [複雑な企業向けのガバナンス ガイド](../../govern/guides/complex/index.md)では、複数のリージョンにわたる規模の環境を作成するアプローチを確立しています。
 
 チームがベースライン アプローチに慣れ、準備が整ったら、データドリブンの前提条件についていくつか検討します。

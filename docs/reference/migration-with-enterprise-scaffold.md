@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 1e25d89d5c4beccb3b1f32e846028b8d93e41a11
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 329f421d5c4755e69a856511718f18c53e8db24b
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756126"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994019"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -21,7 +21,7 @@ ms.locfileid: "83756126"
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 
 > [!NOTE]
-> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在はこの新しいフレームワークの「[準備完了](../ready/index.md) 」セクションに移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスの使用を開始するには、[準備の概要](../ready/index.md)、[初めてのランディング ゾーンの作成](../ready/landing-zone/migrate-landing-zone.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
+> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在はこの新しいフレームワークの「[準備完了](../ready/index.md) 」セクションに移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスを使い始めるには、[準備の概要](../ready/index.md)、[Azure ランディング ゾーン](../ready/landing-zone/index.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
 
 俊敏性と柔軟性を求めてパブリック クラウドを採用する企業がますます増えています。 これらの企業は、収益を生み出したり、ビジネスのリソース使用状況を最適化したりするために、クラウドの強みに依存しています。 Microsoft Azure は、企業がさまざまなワークロードやアプリケーションに対応するためにブロックのように組み立てることができる多数のサービスと機能を提供しています。
 
@@ -101,7 +101,7 @@ Microsoft は階層をモデル化するための別の方法を提供してい�
 
 ### <a name="resource-groups"></a>リソース グループ
 
-Azure Resource Manager では、管理、課金、または自然なアフィニティのために、リソースを意味のあるグループに配置できます。 リソース グループは、共通のライフサイクルを持つリソースまたは "all SQL servers" や "Application A" などの属性を共有するリソースのコンテナーです。
+Azure Resource Manager では、管理、課金、または自然なアフィニティのために、リソースを意味のあるグループに編成できます。 リソース グループは、共通のライフサイクルを持つリソースまたは "all SQL servers" や "Application A" などの属性を共有するリソースのコンテナーです。
 
 リソース グループに別のリソース グループを入れ子にすることはできません。また、リソースは 1 つのリソース グループにのみ属することができます。 リソース グループのすべてのリソースに対して特定のアクションを適用できます。 たとえば、リソース グループを削除すると、そのリソース グループ内のすべてのリソースが削除されます。 サブスクリプションと同じく、リソース グループを作成するときには一般的なパターンがあり、これらは "従来型 IT" ワークロードから "アジャイル IT" ワークロードまでさまざまです。
 
@@ -169,7 +169,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 パブリック クラウドの使用を開始するにあたり、最初に重要な質問として、「リソースにアクセスできる必要があるのはだれか」、 「このアクセスを制御するにはどうすればよいか」と自問しているかもしれません。 Azure portal とポータルでのリソースへのアクセス制御は、クラウド内の資産の長期的な安全性にとって不可欠です。
 
-リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 つまり、Azure AD はオンプレミスの Active Directory と同じでは "_ありません_"。Azure AD テナントは何か、Azure 加入契約とどのように関連しているかを理解することが重要です。 Azure AD とオンプレミスの Active Directory の基本を確実に学ぶためには、[こちら](../govern/resource-consistency/resource-access-management.md)の情報を確認してください。 Active Directory を Azure AD に接続して同期するには、[Azure AD Connect ツール](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
+リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは "**ありません**"。Azure AD テナントとは何か、Azure 加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
 
 ![AD アーキテクチャの図](../_images/reference/ad-architecture.png)
 
@@ -183,7 +183,7 @@ Azure が最初にリリースされたときには、サブスクリプショ�
 - 求められている作業を行うために必要な**最小限の特権**の付与の原則に従います。
 
 > [!IMPORTANT]
->[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)、および[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)機能の使用を検討してください。これらによって、セキュリティが強化され、Azure サブスクリプション全体の管理操作の可視性が向上します。 これらの機能は有効な Azure AD Premium ライセンスで使用でき (機能によって異なる)、アイデンティティをさらに保護して管理します。 Azure AD PIM により、承認ワークフローの "Just-in-Time" 管理アクセスと、管理者のアクティブ化とアクティビティの完全な監査が可能になります。 Azure Multi-Factor Authentication はもう 1 つの重要な機能であり、Azure portal へのサインインの 2 段階認証を有効にします。 条件付きアクセス制御と組み合わせると、セキュリティ侵害のリスクを効果的に管理できます。
+> [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)、および[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)機能の使用を検討してください。これらによって、セキュリティが強化され、Azure サブスクリプション全体の管理操作の可視性が向上します。 これらの機能は有効な Azure AD Premium ライセンスで使用でき (機能によって異なる)、アイデンティティをさらに保護して管理します。 Azure AD PIM により、承認ワークフローの "Just-in-Time" 管理アクセスと、管理者のアクティブ化とアクティビティの完全な監査が可能になります。 Azure Multi-Factor Authentication はもう 1 つの重要な機能であり、Azure portal へのサインインの 2 段階認証を有効にします。 条件付きアクセス制御と組み合わせると、セキュリティ侵害のリスクを効果的に管理できます。
 
 ID およびアクセス制御について計画を立てて準備すること、および [Azure Identity Management のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)に従うことは、採用できる最適なリスク軽減戦略の 1 つであり、すべてのデプロイにおいて必須と考える必要があります。
 
@@ -196,7 +196,7 @@ ID およびアクセス制御について計画を立てて準備すること�
 [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) は、環境全体のリソースのセキュリティ状態についての統一されたビューと、脅威に対する高度な保護を提供します。 Azure Security Center はオープン プラットフォームです。Microsoft のパートナーは、プラグインして機能を強化するソフトウェアを作成できます。 Azure Security Center のベースライン機能 (Free レベル) によって、セキュリティの体制を強化する評価とレコメンデーションが提供されます。 有料レベルでは、Just-In-Time 管理アクセスや適応型アプリケーション制御 (ホワイトリスト登録) など役に立つ機能が有効になります。
 
 > [!TIP]
->Azure Security Center は強力なツールであり、絶えず改善されており、脅威の検出や企業の保護に使用できる新しい機能を取り入れています。 Azure Security Center は常に有効化しておくことを強くお薦めします。
+> Azure Security Center は強力なツールであり、絶えず改善されており、脅威の検出や企業の保護に使用できる新しい機能を取り入れています。 Azure Security Center は常に有効化しておくことを強くお薦めします。
 
 ### <a name="locks-for-azure-resources"></a>Azure リソースのロック
 

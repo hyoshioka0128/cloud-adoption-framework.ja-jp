@@ -1,18 +1,18 @@
 ---
 title: 作業を開始しましょう。クラウド プラットフォーム チームを構築する
-description: このガイドは、クラウド プラットフォーム チームが担当するスコープ、成果物、および機能を理解するために役立ちます。
+description: このガイドは、クラウド プラットフォーム チームが提供するスコープ、成果物、および機能を理解するために役立ちます。
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: c7753434a9ce901693938651f303add90bb6002b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 28abe413c521bdb4915548fbdbafc8a0be4fc532
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751967"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075653"
 ---
 # <a name="get-started-build-a-cloud-platform-team"></a>作業を開始しましょう。クラウド プラットフォーム チームを構築する
 

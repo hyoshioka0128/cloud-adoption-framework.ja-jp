@@ -7,12 +7,12 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 98160a01647907609bfbc1b16d9a4ffe8e23e06c
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: de6299dd2dc7c8623137d77576ae681306abe375
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621523"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077065"
 ---
 # <a name="landing-zone-considerations"></a>ランディング ゾーンに関する考慮事項
 
@@ -26,7 +26,7 @@ ms.locfileid: "83621523"
 
 すべてのランディング ゾーンで、ホスティング オプションに構造が与えられます。 構造はガバナンス コントロールを介して明示的に作成されるか、ランディング ゾーン内でサービスを導入することにより自然に作成されます。 次の記事は、自身のランディング ゾーンを作成するブループリントまたはその他の自動化スクリプトに反映させる意思決定を行う際に役立ちます。
 
-- [コンピューティング関連の意思決定](./compute-options.md): 運用面の複雑さを最小限に抑えるために、コンピューティング関連の選択肢をランディング ゾーンの目的に合わせて調整します。 この意思決定は、Azure Policy イニシアティブやランディング ゾーン ブループリントなど、自動化ツールチェーンを利用して強制できます。
+- [コンピューティング関連の意思決定](./compute-options.md): 運用面の複雑さを最小限に抑えるために、コンピューティング関連の選択肢をランディング ゾーンの目的に合わせて調整します。 この意思決定は、Azure Policy イニシアチブやランディング ゾーンなど、自動化ツールチェーンを利用して強制できます。
 - [ストレージ関連の意思決定](./storage-options.md): ワークロード要件を支援する正しい Azure Storage ソリューションを選択します。
 - [ネットワーク関連の意思決定](./networking-options.md): 組織のワークロード、ガバナンス、接続要件を支援するネットワーク関連のサービス、ツール、アーキテクチャを選択します。
 - [データベース関連の意思決定](./data-options.md): ワークロード要件に最適なデータベース テクノロジを決定しま

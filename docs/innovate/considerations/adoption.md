@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3dc7eeb2a8727fd1787265b408d1f930f3d76c11
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d6534d15e1b552d0f8bcf8849e972da480dfb1a1
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222487"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993989"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Build-Measure-Learn (構築-計測-学習) フィードバック ループを使用したカスタマー パートナーシップの構築
 
@@ -24,7 +24,7 @@ ms.locfileid: "83222487"
 
 ## <a name="the-build-measure-learn-feedback-loop"></a>Build-Measure-Learn (構築-計測-学習) フィードバック ループ
 
-「[デジタル経済のイノベーション](./index.md)」で説明されているように、イノベーションでは "_発明_" と "_導入_" を両立させる必要があります。 カスタマー フィードバックとパートナーシップが導入を促進します。 イノベーション サイクルの間に顧客を強力で緊密なパートナーに変えることで、より優れた製品を実現し、より早く市場からの支持を集めることができます。
+「[デジタル経済のイノベーション](./index.md)」で説明されているように、イノベーションでは発明と採用の間のバランスが求められます。 カスタマー フィードバックとパートナーシップが導入を促進します。 イノベーション サイクルの間に顧客を強力で緊密なパートナーに変えることで、より優れた製品を実現し、より早く市場からの支持を集めることができます。
 
 ![Build-Measure-Learn (構築-計測-学習) フィードバック ループの図](../../_images/innovate/bml-feedback-loop.png)
 

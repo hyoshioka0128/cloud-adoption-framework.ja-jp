@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 3968e453eb89a0f00d7fd23eeec90fb6a947cd05
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c098fbf86771b9520d7530354ab993f956683050
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756058"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077172"
 ---
 <!-- cSpell:ignore Terraform's -->
 
@@ -43,8 +43,8 @@ ms.locfileid: "83756058"
 | [名前付けとタグ付けの追跡テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx) | 一貫性を確保し、オンボードする時間を短縮するために、名前付けとタグ付けの基準に関する決定事項を文書化します。 |
 | [CAF&nbsp;基盤&nbsp;ブループリント](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | 最初のガバナンス基盤となる軽量な実装を利用して、Azure でガバナンス ツールの実際の経験を提供します。 |
 | [CAF 移行ランディング ゾーンのブループリント](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone) | オンプレミス環境から Azure に移行されるワークロードをホストするためのプロビジョニングと準備を行います。 このブループリントの詳細については、「[移行ランディング ゾーンをデプロイする](../ready/landing-zone/migrate-landing-zone.md)」を参照してください。 |
-| [Terraform ランディング ゾーンのブループリント](../ready/landing-zone/terraform-landing-zone.md) | Terraform バージョンの CAF ランディング ゾーン ブループリント用のオープンソース コード ベース。 |
-| [Terraform レジストリ](https://registry.terraform.io/search?q=aztfmod) | Terraform のレジストリ Web サイトがフィルター処理されて、Terraform ランディング ゾーンを作成するために必要なすべてのクラウド導入フレームワーク モジュールが一覧表示されます。 |
+| [Terraform モジュール](../ready/landing-zone/terraform-landing-zone.md) | Terraform バージョンの CAF ランディング ゾーン用のオープンソース コード ベース。 |
+| [Terraform レジストリ](https://registry.terraform.io/search?q=aztfmod) | Terraform のレジストリ Web サイト。フィルター処理されて、Terraform でランディング ゾーンを作成するために必要なすべてのクラウド導入フレームワーク モジュールが一覧表示されます。 |
 
 ## <a name="govern"></a>ガバナンス
 

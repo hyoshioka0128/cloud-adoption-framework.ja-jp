@@ -7,12 +7,12 @@ ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2b1cfc3ed38889a8767a979e1abf6e4712d463b8
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c09124d6a09ee3350fb6a1b605c493a51d15bb4a
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221639"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84813252"
 ---
 <!-- cSpell:ignore rodend -->
 
@@ -23,7 +23,7 @@ Azure エンタープライズ スキャフォールディングは、Azure 向�
 Cloud Adoption Framework の使用を開始するには、以下を参照してください。
 
 - [準備の概要](../ready/index.md)
-- [最初のランディング ゾーンを作成する](../ready/landing-zone/migrate-landing-zone.md)
+- [Azure ランディング ゾーン](../ready/landing-zone/index.md)
 - [ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)。
 
 非推奨のコンテンツを確認する必要がある場合は、[Azure エンタープライズ スキャフォールディング](./migration-with-enterprise-scaffold.md)を参照してください。

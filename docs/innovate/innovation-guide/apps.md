@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b3535e9dc05b495c7f8ca166c388027e600af065
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: e1441a6bd9606d82b81e35e97d8edf50f2f7c29b
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862148"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785636"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -134,8 +134,6 @@ Visual Studio App Center では、1 回の呼び出しによって複数のプ�
 - [DevOps ソリューション](https://azure.microsoft.com/solutions/devops)
 
 # <a name="create-cloud-native-apps"></a>[クラウドネイティブなアプリの作成](#tab/CloudNative)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-are-cloud-native-applications"></a>クラウドネイティブ アプリケーションとは
 
@@ -295,9 +293,9 @@ Azure Red Hat OpenShift では、フル マネージドの OpenShift クラス�
 
 初期テスト フェーズからの移行を開始するときに、障害点を分離し、除去する方法を評価します。 Azure クラウド プラットフォームの分散性により、障害を最小限に抑えると同時に、パフォーマンスも改善するようにアプリケーションを設計できます。
 
-## <a name="azure-front-door-service"></a>Azure Front Door Service
+## <a name="azure-front-door"></a>Azure Front Door
 
-Azure Front Door Service では、世界中にアプリケーションを配信するために使用できる安全かつスケーラブルなエントリ ポイントが提供されます。 Azure Front Door Service では、最適なパフォーマンスを得るためのトラフィックの最適化と、即時グローバル フェールオーバーが組み合わされます。 トランスポート層セキュリティ (TLS) プロトコル終端 (SSL オフロード) または HTTP/HTTPS 要求ごとのアプリケーション層の処理が必要な場合は、Azure Traffic Manager ではなく、Azure Front Door Service を使用してください。
+Azure Front Door により、世界中にアプリケーションを配信するために使用できる安全かつスケーラブルなエントリ ポイントが提供されます。 Azure Front Door では、トラフィックの最適化を組み合わせることで最良のパフォーマンスと瞬間的なグローバル フェールオーバーが得られます。 トランスポート層セキュリティ (TLS) プロトコルの終端 (SSL オフロード) または HTTP/HTTPS 要求ごとのアプリケーション層の処理が必要な場合は、Azure Traffic Manager ではなく、Azure Front Door を使用する必要があります。
 
 ### <a name="action"></a>アクション
 
@@ -341,11 +339,11 @@ Traffic Manager プロファイルを構成または監視するには:
 
 ## <a name="azure-content-delivery-network"></a>Azure Content Delivery Network
 
-Azure では、資産をユーザーの近くにキャッシュすることで資産のタイムリーな配信を可能にする分散型コンテンツ配信ネットワーク (CDN) が提供されます。 このキャッシュは、顧客のエクスペリエンスの向上に役立ちます。 また、コンテンツのダウンロード時に、CDN エンドポイントとアプリケーションをホストしているデータセンター間で発生するネットワークの問題に起因する問題を防ぐこともできます。 Content Delivery Network は、Azure でホストされていないアプリケーションで使用することも可能です。
+Azure では、資産をユーザーの近くにキャッシュすることで資産のタイムリーな配信を可能にする分散型コンテンツ配信ネットワーク (CDN) が提供されます。 このキャッシュは、顧客のエクスペリエンスの向上に役立ちます。 また、コンテンツのダウンロード時に、CDN エンドポイントとアプリケーションをホストしているデータセンター間で発生するネットワークの問題に起因する問題を防ぐこともできます。 Azure CDN は、Azure でホストされていないアプリケーションで使用することもできます。
 
 ### <a name="action"></a>アクション
 
-Content Delivery Network プロファイルを構成または監視するには、次の手順に従います。
+Azure CDN プロファイルを構成または監視するには:
 
 1. **[CDN プロファイル]** に移動します。
 2. 新しいプロファイルを構成する: **[追加]** を選択し、プロンプトに従います。

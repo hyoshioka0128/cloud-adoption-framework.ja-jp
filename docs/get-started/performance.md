@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b200fb8dee07c016338beed9b9356d00e26a8abd
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: f6b6a715d8dc8ea9335ca482f22a54f23278aabe
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814343"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076409"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>作業を開始しましょう。ポートフォリオ全体で一貫したパフォーマンスを確保する
 
@@ -50,7 +50,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド運用チーム | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド運用チーム | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-2-consistent-application-of-the-management-baseline"></a>手順 2:管理ベースラインを一貫性をもって適用する
 
@@ -72,7 +72,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド ガバナンス チーム | <li> クラウド戦略チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド ガバナンス チーム | <li> クラウド戦略チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-3-define-strategy"></a>手順 3:戦略を定義する
 
@@ -94,7 +94,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド戦略チーム | <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド戦略チーム | <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-4-assess-and-plan-for-workload-adoption"></a>手順 4:ワークロードの導入を評価、計画する
 
@@ -121,7 +121,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド戦略チーム | <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド戦略チーム | <li> クラウド ガバナンス チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-5-expand-the-landing-zones"></a>手順 5:ランディング ゾーンを拡張する
 
@@ -143,7 +143,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド導入チーム | <li> クラウド運用チーム <li> クラウド戦略チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド導入チーム | <li> クラウド運用チーム <li> クラウド戦略チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-6-adoption"></a>手順 6:導入
 
@@ -166,7 +166,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド導入チーム | <li> クラウド戦略チーム <li> クラウド運用チーム <li> クラウド戦略チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド導入チーム | <li> クラウド戦略チーム <li> クラウド運用チーム <li> クラウド戦略チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="value-statement"></a>バリュー ステートメント
 

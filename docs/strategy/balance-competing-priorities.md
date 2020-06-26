@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7a09f6fe1dd337d1c42eb193cc23c9aa9519e6b9
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: ee5ef7d171002d21b104b8fad7a33a77a57cfaa9
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815414"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788202"
 ---
 # <a name="balance-competing-priorities"></a>競合する優先順位のバランスを取る
 
@@ -88,7 +88,7 @@ ms.locfileid: "83815414"
 
 **最小範囲:** 初期段階の計画では、このオプションは技術的な決定ではなく、最初のビジネスの仮定であることを明確に理解したうえで、計画に再ホスト オプションを使用します。 この移行手法では、クラウド導入チームは移行されたワークロードごとにこの仮定を検討します。 この手法では、各ワークロードまたはグループ、または移行ファクトリを作成するワークロードの評価/移行/昇格アプローチに従います。 評価フェーズで、導入チームは、各ワークロードの技術的な適合とアーキテクチャを評価します。 アーキテクチャ内のコンポーネントの多くはリファクタリングと最新化のために選択される傾向があるため、その評価作業が純粋なリフト アンド シフト アプローチになることはほとんどありません。
 
-**範囲の拡張例:** メインフレームや多層マイクロサービス アプリケーションなどのミッションクリティカルな、または機密性の高いワークロードの場合、評価フェーズでワークロードのより深い評価が必要になる場合があります。 このような再構築の状況では、顧客は Microsoft Azure Well-Architected Review と Microsoft Azure Well-Architected Framework を使用して、評価段階のワークロード要件を調整する必要があります。
+**範囲の拡張例:** メインフレームや多層マイクロサービス アプリケーションなどのミッションクリティカルな、または機密性の高いワークロードの場合、評価フェーズでワークロードのより深い評価が必要になる場合があります。 このような再構築の状況では、お客様は Microsoft Azure Well-Architected Review と [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) を使用して、評価の間にワークロードの要件を調整する必要があります。
 
 ## <a name="balance-during-the-innovate-phase"></a>イノベーション フェーズでのバランス
 

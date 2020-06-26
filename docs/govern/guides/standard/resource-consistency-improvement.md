@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7297e568f2fe16a2e499217af47d091c88544559
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6ee0387a0de73af6b26a4a2396582bf790f2ec65
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219922"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786978"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-resource-consistency-discipline"></a>標準的な企業のガバナンス ガイド:リソースの整合性の規範の改善
 
@@ -91,7 +91,7 @@ Azure のデプロイを本番の業務プロセスで使用するには、ク�
     1. すべてのサブスクリプションを対象として重要性とデータ分類を監査し、強制します。これは、ミッション クリティカルな資産を持つサブスクリプションを特定するためです。
     2. 承認されたイメージだけを使用することを監査し、実施します。
 5. Azure Monitor の実装:
-    1. ミッションクリティカルなワークロードが特定されたら、Azure Monitor ワークスペースを作成します。
+    1. ミッション クリティカルなワークロードが特定されたら、Azure Monitor Log Analytics ワークスペースを作成します。
     2. デプロイ テストの中で、クラウド運用チームは必要なエージェントをデプロイして検出をテストします。
 6. ミッション クリティカルなアプリケーションを持つすべてのサブスクリプションについて、Azure Policy を更新します。
     1. 1 つの NSG をすべての NIC とサブネットに適用することを監査し、強制します。 ネットワーク構成と IT セキュリティによって NSG が定義されます。

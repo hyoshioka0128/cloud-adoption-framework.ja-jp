@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 56abab2dbbc1acaa397fd04564bec45a8ebc5f8e
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 8233d262a8f6ea7f2ecd573cf33aff8d46f74f4b
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862570"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077240"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -262,7 +262,7 @@ Azure では、高度なセキュリティ オプションを提供するセキ�
 
 ## <a name="best-practice-implement-blueprints"></a>ベスト プラクティス:ブループリントを実装する
 
-設計図によってエンジニアやアーキテクトがプロジェクト設計パラメーターの概略を示すのと同じように、Azure Blueprints によってクラウド アーキテクトや中央の IT 部門は、組織の標準、パターン、要件を実装および順守した反復可能な一連の Azure リソースを定義できます。 Azure Blueprints を使用すると、開発チームは、組織のコンプライアンス要件を満たしている新しい環境を迅速に構築して作成できます。その環境には、開発とデリバリーの時間を短縮するネットワークなどの一連のコンポーネントが組み込まれています。
+設計図によってエンジニアやアーキテクトがプロジェクト設計パラメーターの概略を示すのと同じように、Azure Blueprints によってクラウド アーキテクトや中央 IT チームは、組織の標準、パターン、要件を実装および順守した反復可能な一連の Azure リソースを定義できます。 Azure Blueprints を使用すると、開発チームは、組織のコンプライアンス要件を満たしている新しい環境を迅速に構築して作成できます。その環境には、開発とデリバリーの時間を短縮するネットワークなどの一連のコンポーネントが組み込まれています。
 
 - ブループリントを使用して、リソース グループのデプロイ、Azure Resource Manager テンプレート、およびポリシーとロールの割り当てを調整します。
 - ブループリントは、グローバルに分散された Azure Cosmos DB に格納されます。 Blueprint オブジェクトは複数の Azure リージョンにレプリケートされます。 ブループリントによってどのリージョンにリソースがデプロイされても、レプリケーションにより、ブループリントに対するアクセスの低遅延、高可用性、一貫性が実現されます。

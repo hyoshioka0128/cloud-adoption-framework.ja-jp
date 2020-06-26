@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1d6d9569ab95705cd1058af74cf448283f1a2eef
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f2d9250dec7a157fdee2dc908c34625e970aeef1
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216114"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076165"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>移行前に資産を修復する
 
@@ -42,7 +42,7 @@ ms.locfileid: "83216114"
 
 ## <a name="decision-framework"></a>意思決定フレームワーク
 
-小規模なワークロードの修復は簡単な可能性があり、これが、最初の移行の対象として小規模なワークロードを選択することが推奨される理由の 1 つです。 ただし、移行作業に慣れ、より大規模なワークロードへの取り組みを開始すると、修復は時間とコストのかかるプロセスになる可能性があります。 たとえば、5,000 個以上の VM 資産プールがある Windows Server 2003 の移行の場合、修復作業によって移行が数か月の単位で遅延する可能性があります。 このような大規模な修復が必要な場合に意思決定ガイドとして役立つ質問を以下に示します。
+小規模なワークロードの修復は簡単である場合があるため、最初の移行の対象としては小規模なワークロードを選択する必要があります。 ただし、移行作業に慣れ、より大規模なワークロードへの取り組みを開始すると、修復は時間とコストのかかるプロセスになる可能性があります。 たとえば、5,000 個以上の VM 資産プールがある Windows Server 2003 の移行の場合、修復作業によって移行が数か月の単位で遅延する可能性があります。 このような大規模な修復が必要な場合に意思決定ガイドとして役立つ質問を以下に示します。
 
 - 修復によって影響を受けるすべてのワークロードを特定し、移行バックログに記載されていますか?
 - 影響を受けないワークロードについて、移行によって同様の投資収益率 (ROI) が得られますか?

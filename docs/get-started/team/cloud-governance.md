@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: f27ca49738a987780729b9354e9a4653d5ecafcd
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 1129098d5a99defd309c4a252991e31be623808f
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814241"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075855"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>作業を開始しましょう。クラウド ガバナンス チームを構築する
 
@@ -49,7 +49,7 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 
 **成果物:**
 
-- 現在の実装状態と進行中の導入計画について各チームと話し合います。
+- 現在の実装状況と進行中の導入計画について各チームと話し合います。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -62,7 +62,7 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li> クラウド ガバナンス チーム | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT |
+| <li> クラウド ガバナンス チーム | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウド運用チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-3-establish-a-cadence-with-other-teams"></a>手順 3:他のチームとのミーティングの頻度を確立する
 

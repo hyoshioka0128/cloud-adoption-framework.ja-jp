@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 889a524c26b06a3252dc84d9fa36426cdc07b88c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 222008cde15fdd0aef0a46ac3937fadade7e6cc9
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223356"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076729"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -31,7 +31,7 @@ ms.locfileid: "83223356"
 - [Azure Load Balancer][alb]
 - [Azure Application Gateway][appgw] と [Web アプリケーション ファイアウォール (WAF)][appgwwaf]
 - [パブリック IP][PIP]
-- [Azure Front Door サービス][afd]と [Web アプリケーション ファイアウォール][afdwaf]
+- [Azure Front Door][afd] と [Web アプリケーション ファイアウォール][afdwaf]
 - [Azure Firewall][Azure-firewall]
 
 > [!NOTE]
@@ -40,7 +40,7 @@ ms.locfileid: "83223356"
 > - [Azure とオンプレミス データセンター間に DMZ を実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [Azure とインターネットの間に DMZ を実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
-通常、中央の IT チームとセキュリティ チームは、境界ネットワークを運用するための要件定義を担当します。
+通常、中央 IT チームとセキュリティ チームは、境界ネットワークを運用するための要件定義を担当します。
 
 ![ハブ アンド スポーク ネットワーク トポロジの例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
@@ -82,15 +82,17 @@ Azure Load Balancer では、さまざまなサーバー インスタンスの�
 
 ハブ アンド スポーク ネットワーク トポロジを使用する例としては、ハブとスポークの両方に外部ロード バランサーをデプロイできます。 ハブでは、ロード バランサーによってスポーク内のサービスにトラフィックが効率的にルーティングされます。 スポークでは、ロード バランサーによってアプリケーション トラフィックが管理されます。
 
-## <a name="azure-front-door-service"></a>Azure Front Door Service
+## <a name="azure-front-door"></a>Azure Front Door
 
-[Azure Front Door Service][afd] は、Microsoft による高可用性かつスケーラブルな Web アプリケーション アクセラレーション プラットフォームとグローバル HTTPS ロード バランサーです。 Azure Front Door Service を使用し、動的 Web アプリケーションと静的コンテンツを構築、運用、スケールアウトできます。 Microsoft のグローバル ネットワークのエッジにある 100 を超える場所で実行されます。
+[Azure Front Door][afd] は、Microsoft による高可用性かつスケーラブルな Web アプリケーション アクセラレーション プラットフォームとグローバル HTTPS ロード バランサーです。 Azure Front Door を使用し、動的 Web アプリケーションと静的コンテンツを構築、運用、スケールアウトできます。 Microsoft のグローバル ネットワークのエッジにある 100 を超える場所で実行されます。
 
-Azure Front Door Service サービスから、リージョナル/スタンプ メンテナンス自動化、BCDR 自動化、統合クライアント/ユーザー情報、キャッシュ、サービス分析情報がアプリケーションに提供されます。 プラットフォームからは、パフォーマンス、信頼性、サポート SLA が提供されます。 また、コンプライアンス認定資格と、Azure でネイティブに開発、運用、サポートされる監査可能なセキュリティ プラクティスが提供されます。
+Azure Front Door サービスから、リージョナル/スタンプ メンテナンス自動化、BCDR 自動化、統合クライアント/ユーザー情報、キャッシュ、サービス分析情報がアプリケーションに提供されます。 プラットフォームからは、パフォーマンス、信頼性、サポート SLA が提供されます。 また、コンプライアンス認定資格と、Azure でネイティブに開発、運用、サポートされる監査可能なセキュリティ プラクティスが提供されます。
 
 ## <a name="azure-application-gateway"></a>Azure Application Gateway
 
 [Azure Application Gateway][appgw] とは、マネージド アプリケーション配信コントローラーを提供する専用の仮想アプライアンスです。 これは、レイヤー 7 のさまざまな負荷分散機能をお客様のアプリケーションに提供します。
+
+<!-- docsTest:ignore "application gateway" TODO -->
 
 CPU 負荷の高い SSL ターミネーションを Azure Application Gateway にオフロードすることによって、Web ファームの生産性を最大限に高めることができます。 また、着信トラフィックのラウンド ロビン分散、Cookie ベースのセッション アフィニティ、URL パス ベースのルーティング、単一のアプリケーション ゲートウェイの背後で複数の Web サイトをホストする機能など、レイヤー 7 のその他のルーティング機能も用意されています。
 

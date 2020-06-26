@@ -1,18 +1,18 @@
 ---
 title: ランディング ゾーンの運用の改善
-description: ランディング ゾーンの運用の改善
+description: ランディング ゾーンの運用を改善します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1e338974e3720609640b23e7123fc003801cb371
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f7e60e97a38b38351e8f90ac90caf3925225ac68
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756517"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075073"
 ---
 # <a name="improve-landing-zone-operations"></a>ランディング ゾーンの運用の改善
 

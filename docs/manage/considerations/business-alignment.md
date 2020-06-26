@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5a7bfbffa84e7a64221d560b88067caebd311e85
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 1c1a2bbdb6665246563f9514b55784f48114dee9
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400782"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84992840"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>クラウド管理でのビジネス アラインメントの構築
 
@@ -26,7 +26,7 @@ ms.locfileid: "83400782"
 
 - **[重要性](./criticality.md):** ワークロードをビジネス プロセスにマップします。 投資に重点を置くために重要度を順位付けします。
 - **[影響](./impact.md):** 潜在的な停止の影響を理解すると、クラウド管理の投資収益率を評価するために役立ちます。
-- **[コミットメント](./commitment.md):** _ビジネスとの_契約を作成および文書化することによって、真のパートナーシップを構築します。
+- **[コミットメント](./commitment.md):** ビジネスとの契約を作成および文書化することによって、真のパートナーシップを構築します。
 
 > [!NOTE]
 > これらの用語の基礎となるのは、SLA、RTO、RPO などの従来の IT 用語です。 特定のビジネス用語と IT 用語のマッピングについては、[コミットメント](./commitment.md)に関する記事を参照してください。

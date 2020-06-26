@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ed1bce61d2a5ba51459df60e94949e0cdd5e533d
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: fed517b2241ebbffccbefd71ab5741dac52b5bae
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815448"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075202"
 ---
 <!-- cSpell:ignore ccoe -->
 
 # <a name="align-responsibilities-across-teams"></a>チーム間で責任を調整する
 
-"_実行責任、説明責任、助言、通知_" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 この記事では、「[チーム構造の確立](./organization-structures.md)」で説明されている組織構造の RACI マトリックスの例を示します。
+"_実行責任、説明責任、助言、通知 (RACI)_ " の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 この記事では、「[チーム構造の確立](./organization-structures.md)」で説明されている組織構造の RACI マトリックスの例を示します。
 
 - [クラウド導入チームのみ](#cloud-adoption-team-only)
 - [MVP のベスト プラクティス](#best-practice-minimum-viable-product-mvp)
-- [中央 IT](#central-it)
+- [中央 IT チーム](#central-it-team)
 - [戦略的連携](#strategic-alignment)
 - [運用での連携](#operational-alignment)
 - [クラウドのセンター オブ エクセレンス (CCoE)](#cloud-center-of-excellence-ccoe)
@@ -54,15 +54,15 @@ ms.locfileid: "83815448"
 |                          |                                       |                                       |                                       |                                           |                                                                                   |                                                                               |                                                                               |                                                                                   |
 | 合致するクラウド機能 | [クラウド導入](./cloud-adoption.md) | [クラウド戦略](./cloud-strategy.md) | [クラウド戦略](./cloud-strategy.md) | [クラウド運用](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) と[クラウド ガバナンス](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md) - [クラウド プラットフォーム](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) と[クラウド プラットフォーム](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) と[クラウド自動化](./cloud-automation.md) |
 
-## <a name="central-it"></a>中央 IT
+## <a name="central-it-team"></a>中央 IT チーム
 
 |                          | ソリューションの配信                     | ビジネスの整合                    | 変更管理                     | ソリューションの運用                       | ガバナンス                                | プラットフォームの成熟度             | プラットフォームの運用           | プラットフォームの自動化           |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | ----------------------------------------- | ----------------------------- | ----------------------------- | ----------------------------- |
 | クラウド導入チーム      | 説明責任                           | 説明責任                           | 責任                           | 責任                               | 通知                                  | 通知                      | 通知                      | 通知                      |
 | クラウド ガバナンス チーム    | 助言                             | 通知                              | 通知                              | 通知                                  | 説明責任                               | 助言                     | 責任                   | 通知                      |
-| 中央 IT               | 助言                             | 通知                              | 説明責任                           | 説明責任                               | 責任                               | 説明責任                   | 説明責任                   | 説明責任                   |
+| 中央 IT チーム               | 助言                             | 通知                              | 説明責任                           | 説明責任                               | 責任                               | 説明責任                   | 説明責任                   | 説明責任                   |
 |                          |                                       |                                       |                                       |                                           |                                           |                               |                               |                               |
-| 合致するクラウド機能 | [クラウド導入](./cloud-adoption.md) | [クラウド戦略](./cloud-strategy.md) | [クラウド戦略](./cloud-strategy.md) | [クラウド運用](./cloud-operations.md) | [クラウド ガバナンス](./cloud-governance.md) | [中央 IT](./central-it.md) | [中央 IT](./central-it.md) | [中央 IT](./central-it.md) |
+| 合致するクラウド機能 | [クラウド導入](./cloud-adoption.md) | [クラウド戦略](./cloud-strategy.md) | [クラウド戦略](./cloud-strategy.md) | [クラウド運用](./cloud-operations.md) | [クラウド ガバナンス](./cloud-governance.md) | [中央 IT チーム](./central-it.md) | [中央 IT チーム](./central-it.md) | [中央 IT チーム](./central-it.md) |
 
 ## <a name="strategic-alignment"></a>戦略的連携
 
