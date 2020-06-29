@@ -140,7 +140,7 @@ Contoso の管理者は、AKS と Azure Container Registry を使用して、マ
 ### <a name="ensure-prerequisites"></a>前提条件を確認する
 
 1. Contoso の管理者は、開始する前に、デプロイに使用する開発用マシンにすべての前提条件ソフトウェアがインストールされていることを確認します。
-2. Git を使用して、開発用マシンにリポジトリをローカルに複製します。
+2. Git を使用して、開発用マシンにリポジトリをローカルにクローンします。
 
     `git clone https://github.com/Microsoft/SmartHotel360-Backend.git`
 
@@ -453,7 +453,7 @@ Contoso 管理者は、フロントエンド サイトに 2 つの異なるプ�
 
 次に、Contoso の管理者は Contoso リソースを使用するように Web アプリを構成します。
 
-1. Azure DevOps プロジェクトに接続し、リポジトリを開発用マシンにローカルに複製します。
+1. Azure DevOps プロジェクトに接続し、リポジトリを開発用マシンにローカルにクローンします。
 2. Visual Studio でフォルダーを開いて、リポジトリ内のすべてのファイルを表示します。
 
     ![リポジトリ ファイル](./media/contoso-migration-rebuild/configure-webapp1.png)
@@ -561,7 +561,7 @@ Contoso 管理者は、フロントエンド サイトに 2 つの異なるプ�
 
 Contoso の管理者はアプリを次のようにデプロイします。
 
-1. Azure DevOps プロジェクトに接続することで、リポジトリを開発用マシンにローカルに複製します。
+1. Azure DevOps プロジェクトに接続することで、リポジトリを開発用マシンにローカルにクローンします。
 2. Visual Studio でフォルダーを開いて、リポジトリ内のすべてのファイルを表示します。
 3. **src/PetCheckerFunction/local.settings.json** ファイルを開き、ストレージ、Azure Cosmos DB データベース、および Computer Vision API 用のアプリ設定を追加します。
 
