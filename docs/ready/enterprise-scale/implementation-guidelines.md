@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d15a5f70430a86da18195c58326dd9b573198c6
-ms.sourcegitcommit: b94dab2545384e44650136b17dc9f708ccdc3c7d
+ms.openlocfilehash: 392e1e9625f631a76cd7584d4cc31485bcea8f0a
+ms.sourcegitcommit: 7c16b2857b00520bec3c4f6e9844ceac33970846
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85195115"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85766788"
 ---
 <!-- cSpell:ignore interdomain VMSS -->
 
@@ -90,6 +90,7 @@ ms.locfileid: "85195115"
 9. (省略可能:)ExpressRoute を介して Azure に複数のオンプレミスの場所が接続されている場合に、オンプレミス HQ および DC に接続するように ExpressRoute Global Reach を構成します。 「[ExpressRoute Global Reach を構成する](https://docs.microsoft.com/azure/expressroute/expressroute-howto-set-global-reach)」の手順に従います。
 
 次の一覧は、エンタープライズ規模のデプロイ用のネットワーク リソースを実装するときに使用される Azure Policy 割り当てを示しています。
+
 | 名前                     | 説明                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
 | [Deploy-FirewallPolicy](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json)  | ファイアウォール ポリシーを作成します。 |
