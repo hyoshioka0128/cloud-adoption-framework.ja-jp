@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: f67482821816fb48a2e44ab66715bd1804f9863a
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: fad625eb7b2cd1ebcfefe3a5ac27be6682ad00d2
+ms.sourcegitcommit: 7c16b2857b00520bec3c4f6e9844ceac33970846
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077052"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85766858"
 ---
 <!-- cSpell:ignore CAF -->
 
@@ -39,7 +39,7 @@ CAF のエンタープライズ規模ランディング ゾーン アーキテ�
 
 - **主な目的:** 限られたリファクタリングの機会と明確なサブスクリプション戦略によって、お客様のランディング ゾーンをより早く成熟する可能性があります。 CAF のエンタープライズ規模ランディング ゾーンによって、ガバナンス、コンプライアンス、セキュリティ、および運用管理の側面に焦点を当てるように、ランディング ゾーンの主な目的が広がります。 これらはそれぞれ、ランディング ゾーンの最初のリリースで対応され、共有サービスがサポートされます。
 
-これは、新しい家を建築する前に、水道、ガス、電気などの都市のユーティリティにアクセスする方法に似ています。 このコンテキストでは、ネットワーク、ID とアクセスの管理、ポリシー、管理、および監視は、アプリケーションの移行プロセスを開始する前に、合理化するためにすぐに使用できる必要がある共有の "ユーティリティ" サービスです。
+これは、新しい家を建築する前に、水道、ガス、電気などの都市のユーティリティにアクセスする方法に似ています。 このコンテキストでは、ネットワーク、ID とアクセスの管理、ポリシー、管理、および監視は、アプリケーションの移行プロセスを開始する前に、合理化するためにすぐに使用できる必要がある共有のユーティリティ サービスです。
 
 ![ランディング ゾーン](./media/lz-design.png)
 _図 1: ランディング ゾーンの設計。_
@@ -70,6 +70,8 @@ _図 1: ランディング ゾーンの設計。_
 
 ![CAF のエンタープライズ規模ランディング ゾーン アーキテクチャ](./media/ns-arch.png)
 _図 2: CAF のエンタープライズ規模ランディング ゾーン アーキテクチャ。_
+
+_このアーキテクチャ ダイアグラムを含む [Visio ファイル](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/enterprise-scale-architecture.vsdx)をダウンロードします。_
 
 ## <a name="next-steps"></a>次のステップ
 

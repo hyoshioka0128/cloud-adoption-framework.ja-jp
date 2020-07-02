@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bff08721f87b8ecb14b2e63107108e3d0bc8911c
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 4363ead6a4319629df964f3efa4ace802ac81ee4
+ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075199"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85335991"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -84,7 +84,7 @@ DNS は、エンタープライズ規模のアーキテクチャ全体におい�
 
 ネットワーク トポロジは、アプリケーションの相互通信方法が最終的に定義されるため、エンタープライズ規模のアーキテクチャの重要な基本要素です。 このセクションでは、Azure Virtual WAN に基づくトポロジと従来のトポロジの 2 つの主要なアプローチに重点を置いて、エンタープライズ Azure デプロイに関連するテクノロジとトポロジのアプローチについて説明します。
 
-Azure Virtual WAN に基づくネットワーク トポロジは、お客様がグローバルな場所を Azure とオンプレミスの両方に接続する必要がある大規模なマルチリージョンのデプロイに適したエンタープライズ規模のアプローチです。 お客様が Azure と完全に統合された SD-WAN デプロイを使用する場合も常に、Virtual WAN のネットワーク トポロジを使用する必要があります。 Virtual WAN は、大規模な相互接続の要件を満たすために使用されます。 Microsoft の管理サービスであるため、ネットワークの全体的な複雑さが軽減され、お客様のネットワークの近代化にも役立ちます。
+Azure Virtual WAN に基づくネットワーク トポロジは、お客様がグローバルな場所を Azure とオンプレミスの両方に接続する必要がある大規模なマルチリージョンのデプロイに適したエンタープライズ規模のアプローチです。 お客様が Azure と完全に統合されたソフトウェアによる WAN (SD-WAN) デプロイを使用する場合も常に、Virtual WAN のネットワーク トポロジを使用する必要があります。 Virtual WAN は、大規模な相互接続の要件を満たすために使用されます。 Microsoft の管理サービスであるため、ネットワークの全体的な複雑さが軽減され、お客様のネットワークの近代化にも役立ちます。
 
 少数の Azure リージョンにだけリソースをデプロイする場合、グローバルに相互接続されたネットワークが必要ない場合、リージョンあたりのリモートの場所またはブランチの場所が少ない場合 (30 未満)、または Azure ネットワークを手動で構成できるように完全な制御と細分性が必要な場合は、従来の Azure ネットワーク トポロジを使用する必要があります。 この従来のトポロジは、このようなお客様が Azure でセキュリティ保護されたネットワーク基盤を構築するのに役立ちます。
 

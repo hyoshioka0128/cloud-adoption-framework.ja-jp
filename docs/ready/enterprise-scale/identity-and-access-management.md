@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c3b364a42e69a1064122091780bbf66fe3424f6c
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 62c1c9cd21d2fb3382fde876ef38a39e7c7aec20
+ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077166"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85335974"
 ---
 # <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 

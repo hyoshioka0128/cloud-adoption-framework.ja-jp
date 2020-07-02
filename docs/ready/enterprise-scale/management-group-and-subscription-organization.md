@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8e120a450bdc2d129e092c1e2de4a118a9437a29
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: d74b03459c306143a02936e22ef47dea4ab9d9a9
+ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075053"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85335957"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理グループとサブスクリプションの組織
 
@@ -66,7 +66,8 @@ Azure Active Directory (Azure AD) テナント内の管理グループの構造�
 - サブスクリプションでは、ガバナンスと分離のための管理境界が提供され、問題が明確に分離されます。
 
 - Azure AD テナントでエンタープライズ登録サブスクリプションだけが使用されるように制限するために実行できる手動のプロセス (将来的には自動化が予定されています) があります。 これにより、ルート管理グループのスコープでは MSDN サブスクリプションを作成できなくなります。
-  **設計上の推奨事項:**
+
+**設計上の推奨事項:**
 
 - ビジネス ニーズや優先度に合わせて民主化された管理のユニットとして、サブスクリプションを扱います。
 
