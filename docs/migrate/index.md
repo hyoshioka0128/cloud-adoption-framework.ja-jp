@@ -1,18 +1,20 @@
 ---
 title: クラウド移行
-description: クラウドに移行するワークロードを評価、移行、最適化、セキュリティ保護、管理するための反復プロセスを構築する方法について説明します。
+description: Azure に移行します。 移行の各フェーズについて説明します。 ワークロードを評価、移行、最適化、セキュリティ保護、管理するための反復プロセスを使用して、Azure に正常に移行できるように準備します。
+keywords: Azure クラウド移行, クラウド導入, Azure への移行, リフトアンドシフト, 移行ウェーブ, 移行計画, 移行手法, クラウド移行フレームワーク
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47ca228af7d88d4a02ac9481c9be7dd804dceda5
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.custom: azure-migrate-seo
+ms.openlocfilehash: 25bf28c450f5b12e01f825d1aa76681986d97cba
+ms.sourcegitcommit: bdf40eca6647ecab5cbed05f527a3f6542d37899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787896"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86058985"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -56,7 +58,7 @@ ms.locfileid: "84787896"
 > [!NOTE]
 > 移行ファクトリを構築する際、チームによっては上記のフェーズを複数のチームやスプリントにわたって分散することを選択する場合があります。 このアプローチにより、再現性を高め、移行作業を高速化できます。
 
-## <a name="migration-waves"></a>移行ウェーブ
+## <a name="migration-waves-and-iterative-change-management"></a>移行ウェーブと反復的な変更管理
 
 移行のイテレーションでは、資産とワークロードを移行することによって技術的価値を提供します。 移行ウェーブは、具体的で測定可能なビジネス価値を提供する、ワークロードの最小のコレクションです。 各イテレーションの最後には、完了した技術的な作業を大まかにまとめたレポートを作成してください。 ただし、ビジネスの変更計画や戦略計画は、一般に若干高いレベルで行われます。 クラウド導入チームが移行作業に取り組む間、クラウド戦略チームはその次に行われる 1 つか 2 つの移行ウェーブを計画することに注力します。 また、クラウド戦略チームは、ビジネス価値を実現するためのタイムラインをより把握できるように、学習メトリックとして技術的な進行状況を追跡します。 その点において、移行ウェーブはビジネスの結果、担当者、およびタイムラインを追跡するための反復的な変更管理アプローチです。
 
@@ -64,7 +66,7 @@ ms.locfileid: "84787896"
 
 ## <a name="next-steps"></a>次のステップ
 
-前述の手順と、後続の移行手法で紹介するガイダンスは、各移行スプリント内のプロセスの実行を向上させるスキルを開発するのに役立てることができます。 [Azure 移行ガイド](./azure-migration-guide/index.md)は最初の移行ウェーブで必要とされる最も一般的なツールと方法について概説した一連の記事です。
+前述の手順と、後続の移行手法で紹介するガイダンスは、各移行スプリント内のプロセスを向上させるスキルを開発するのに役立てることができます。 [Azure 移行ガイド](./azure-migration-guide/index.md)は最初の移行ウェーブで必要とされる最も一般的なツールと方法について概説した一連の記事です。
 
 > [!div class="nextstepaction"]
 > [Azure 移行ガイド](./azure-migration-guide/index.md)
