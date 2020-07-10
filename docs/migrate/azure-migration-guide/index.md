@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 10525a8bf3c49646d99e5e99de6372c0c1d570ee
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: b05470f702c302ade30ab3d9f4a6a47268ed682b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815295"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194461"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Azure 移行ガイド:開始する前に
 
@@ -56,8 +56,6 @@ ms.locfileid: "83815295"
 - 業界には、この移行に関連する最小限の規制要件がある。
 
 ご自身の状況に、これらの条件のいずれも該当しない場合は、代わりにほかの[クラウド移行のベスト プラクティス](../azure-best-practices/index.md)を検討してください。 また、より複雑な移行を実行するには、Microsoft チームまたはパートナーのいずれかにサポートを依頼することをお勧めします。 Microsoft または認定パートナーと契約しているお客様には、このようなシナリオでさらにお勧めします。 サポートの依頼の詳細情報は、このガイドに記載されています。
-
-<!-- markdownlint-enable MD033 -->
 
 ::: zone target="docs"
 
