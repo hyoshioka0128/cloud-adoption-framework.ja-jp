@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f5bcde9c0eab879eea9c49a7ab46338a141cb1cb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 027dd52f4a7cbb4535eca5a9b338296864f2bc25
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217015"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194903"
 ---
 # <a name="assess-workloads-and-validate-assumptions-before-migration"></a>移行前にワークロードを評価して前提条件を検証する
 
@@ -26,7 +26,7 @@ ms.locfileid: "83217015"
 
 移行に先立って、ワークロード、関連付けられている資産、および依存関係を評価して、移行候補を評価します。
 
-## <a name="definition-of-_done_"></a>"_完了_" の定義
+## <a name="definition-of-done"></a>完了の定義
 
 このプロセスは、単一の移行候補に関して、以下が識別されたときに完了します。
 

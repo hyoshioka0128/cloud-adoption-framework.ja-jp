@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 3be6a82c2538d20cd147bb5be03bfaf10c67015f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ce029948d6d44ce8193b0d4dfb81fa61e40b7c9e
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076862"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194223"
 ---
 # <a name="manage-organizational-alignment"></a>組織の配置を管理する
 
 クラウド導入は、人員が適切に組織化されていなければ達成できません。 クラウド導入の成功は、適切なスキルを持つ人員が、明確に定義された業務目標に沿って、適切に管理された環境おいて、適切な種類の作業を遂行することによって実現します。 クラウドの効果的な運用モデルを実現するには、人員が適切に配置された組織構造を確立することが重要です。 この記事では、適切な組織構造を確立して維持するためのアプローチを 4 つのステップで概説します。
 
 次の演習は、クラウド導入を支援するランディング ゾーンの作成プロセスのガイダンスとして役立ちます。
-
-<!-- markdownlint-disable MD033 -->
 
 | | |
 |---|---|

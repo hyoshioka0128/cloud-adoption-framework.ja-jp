@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d298be02fcb27b0f7165d36c045455decc3a8908
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 48cbb33ed40286f1201f85b67d75809e487b83d4
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788134"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195005"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>変革の取り組みに関連するビジネス成果
 
@@ -48,6 +48,8 @@ ms.locfileid: "84788134"
 今日の変化が速いビジネス環境では、時間が重要視されます。 迅速に市場の変化に対応できるか、市場の変化を推進できるかは、ビジネスの即応性の基本的な指標です。
 
 [機敏性の成果](./agility-outcomes.md)のサンプルを確認してください。
+
+<!-- docsTest:ignore "global reach" -->
 
 ### <a name="reach-outcomes"></a>到達性成果
 

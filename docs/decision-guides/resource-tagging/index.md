@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: dac89280547cf219ad604d7c6dce609979100520
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 9d888a8323506d0c7150f2d948f0d5b4c6de340f
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075871"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190632"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -77,11 +77,11 @@ ms.locfileid: "85075871"
 
 | タグの種類 | 例 | 説明 |
 |-----|-----|-----|
-| 機能 | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します。 |
-| 分類 | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | 使用方法および適用されるポリシーによって、リソースを分類します。 |
-| 会計 | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | 課金を目的として、組織内の特定のグループにリソースを関連付けることができます。 |
-| パートナーシップ | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | リソースに関連のある、またはそれ以外でリソースによって影響を受けるユーザー (IT 外) に関する情報を提供します。 |
-| 目的 | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | 投資に関する決定のサポートを向上させるため、リソースをビジネス機能と一致させます。 |
+| 機能 | `app` = `catalogsearch1` <br> `tier` = `web` <br> `webserver` = `apache` <br> `env` = `prod` <br> `env` = `staging` <br> `env` = `dev` | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します。 |
+| 分類 | `confidentiality` = `private` <br> `SLA` = `24hours` | 使用方法および適用されるポリシーによって、リソースを分類します。 |
+| 会計 | `department` = `finance` <br> `program` = `business-initiative` <br> `region` = `northamerica` | 課金を目的として、組織内の特定のグループにリソースを関連付けることができます。 |
+| パートナーシップ | `owner` = `jsmith` <br> `contactalias` = `catsearchowners` <br> `stakeholders` = `user1;user2;user3` | リソースに関連のある、またはそれ以外でリソースによって影響を受けるユーザー (IT 外) に関する情報を提供します。 |
+| 目的 | `businessprocess` = `support` <br> `businessimpact` = `moderate` <br> `revenueimpact` = `high` | 投資に関する決定のサポートを向上させるため、リソースをビジネス機能と一致させます。 |
 
 <!-- docsTest:enable -->
 <!-- markdownlint-enable MD033 -->

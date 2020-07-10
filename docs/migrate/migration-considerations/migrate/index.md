@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ce653ab8c37eb4e034647cb8022adaf391f1949f
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: c118a09f2d233ebc2123c3b66128291bf06e14a3
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815346"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194444"
 ---
 # <a name="deploy-workloads"></a>ワークロードのデプロイ
 
@@ -22,7 +22,7 @@ ms.locfileid: "83815346"
 
 移行の目的は、単一のワークロードをクラウドに移行することです。
 
-## <a name="definition-of-_done_"></a>"_完了_" の定義
+## <a name="definition-of-done"></a>完了の定義
 
 移行フェーズは、ワークロードとワークロードを機能させるために必要なすべての依存する資産がステージングされ、クラウドでテストする準備が整ったときに完了します。 ワークロードを本番環境で使用するための準備は、最適化プロセスで実行されます。
 

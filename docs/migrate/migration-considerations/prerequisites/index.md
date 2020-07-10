@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1ab9dc80830c40754cbd68dbd4f39242f3204676
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 010af9c5f3988c3a4cef05a1d9e3284e1d550675
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994148"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194359"
 ---
 # <a name="prerequisites-for-migration"></a>移行の前提条件
 
@@ -29,7 +29,7 @@ ms.locfileid: "84994148"
 - [はじめに: 移行を促進する](../../../get-started/migrate.md)
 - [クラウドに移行する理由](../../../strategy/motivations.md)
 
-## <a name="definition-of-_done_"></a>"_完了_" の定義
+## <a name="definition-of-done"></a>完了の定義
 
 以下の条件に該当する場合、前提条件は満たされます。
 
