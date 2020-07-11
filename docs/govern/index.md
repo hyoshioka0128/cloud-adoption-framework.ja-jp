@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cd9454d33e15a862a68ba299cc10036fdb0c8ac9
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 65a3686a402681d76b5d91665eb00cb8bdd6e5c3
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754434"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233700"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークのガバナンス
 
@@ -25,10 +25,10 @@ ms.locfileid: "83754434"
 
 | | |
 |---|---|
-| <br> ![1](../_Images/icons/1.png) | <br> [方法論](./methodology.md):クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立し、最終状態のソリューションについて熟考を開始します。 |
-| <br> ![2](../_Images/icons/2.png) | <br> [ベンチマーク](./benchmark.md): 現状の状態と将来の状態を評価して、フレームワークを適用するためのビジョンを確立します。 |
-| <br> ![3](../_Images/icons/3.png) | <br> [ガバナンスを始めるための基礎](./initial-foundation.md): 小規模で簡単に実装されるガバナンス ツールのセットを使って、ガバナンス体験を始めます。 この最初のガバナンス基盤は、実用最小限の製品 (MVP) と呼ばれます。                                |
-| <br> ![4](../_Images/icons/4.png) | <br> [初期のガバナンス基盤の改善](./foundation-improvements.md):クラウド導入プランの実装全体で、最終状態へと進みながら、ガバナンス コントロールを繰り返し追加して具体的なリスクに対処します。 |
+| <br> ![1](../_images/icons/1.png) | <br> [方法論](./methodology.md):クラウド導入フレームワークでクラウド ガバナンスを推進する手法の基本的な理解を確立し、最終状態のソリューションについて熟考を開始します。 |
+| <br> ![2](../_images/icons/2.png) | <br> [ベンチマーク](./benchmark.md): 現状の状態と将来の状態を評価して、フレームワークを適用するためのビジョンを確立します。 |
+| <br> ![3](../_images/icons/3.png) | <br> [ガバナンスを始めるための基礎](./initial-foundation.md): 小規模で簡単に実装されるガバナンス ツールのセットを使って、ガバナンス体験を始めます。 この最初のガバナンス基盤は、実用最小限の製品 (MVP) と呼ばれます。                                |
+| <br> ![4](../_images/icons/4.png) | <br> [初期のガバナンス基盤の改善](./foundation-improvements.md):クラウド導入プランの実装全体で、最終状態へと進みながら、ガバナンス コントロールを繰り返し追加して具体的なリスクに対処します。 |
 
 ## <a name="objective-of-this-content"></a>このコンテンツの目的
 
