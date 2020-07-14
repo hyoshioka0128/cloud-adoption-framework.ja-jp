@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8f45a16e3699977dce152a06c563844d83b4b1b
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 03b7e13a14c2b3d9a6fe6e2b2757f065e041b3f9
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075522"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191231"
 ---
 # <a name="cloud-governance-guides"></a>クラウド ガバナンス ガイド
 
@@ -49,7 +49,7 @@ ms.locfileid: "85075522"
 <!-- docsTest:ignore "Azure Virtual Datacenter" -->
 
 > [!WARNING]
-> より堅牢なガバナンスの開始点が必要になることがあります。 そのような場合は、[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)を検討してください。 CAF エンタープライズ規模のランディング ゾーンのアプローチは、1,000 を超える資産 (アプリ、インフラ、またはデータ資産) をクラウドでホストするという中期目標 (24 か月以内) を設けている導入チームに焦点を当てています。 CAF エンタープライズ規模のランディング ゾーンは、このような大規模なクラウド導入の取り組みにおける複雑なガバナンス シナリオの事実上の選択となります。
+> より堅牢なガバナンスの開始点が必要になることがあります。 そのような場合は、[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)を検討してください。 CAF エンタープライズ規模のランディング ゾーンのアプローチは、1,000 を超える資産 (インフラストラクチャ、アプリ、またはデータ資産) をクラウドでホストするという中期目標 (24 か月以内) を設けている導入チームに焦点を当てています。 CAF エンタープライズ規模のランディング ゾーンは、このような大規模なクラウド導入の取り組みにおける複雑なガバナンス シナリオの事実上の選択となります。
 
 <!-- markdownlint-disable MD028 -->
 
@@ -61,8 +61,8 @@ ms.locfileid: "85075522"
 | 特徴 | 標準的な組織 | 複雑な企業 |
 |---|---|---|
 | 地理的な場所 (国または地理的地域) | 顧客やスタッフは主に 1 つの地理的な場所に存在する | 顧客やスタッフが複数の地理的な場所に存在するか、ソブリン クラウドを必要としている |
-| 影響を受ける部署 | 一般的な IT インフラストラクチャを共有する部署 | 一般的な IT インフラストラクチャを共有しない複数の部署 |
-| IT 予算 | 1 つの IT 予算 | 複数の部署や通貨に割り当てられた予算 |
+| 影響を受ける部署 | 一般的な IT インフラストラクチャを共有する部署 | 一般的な IT インフラストラクチャを共有しない複数の部署。 |
+| IT 予算 | 1 つの IT 予算 | 複数の部署や通貨に割り当てられた予算。 |
 | IT 投資 | 資本コスト主導型の投資が毎年計画され、通常は、基本的なメンテナンスのみがカバーされる。 | 資本コスト主導型の投資が毎年計画され、多くの場合、メンテナンスおよび 3 年から 5 年ごとの更新サイクルが含まれる。 |
 
 ### <a name="current-state-before-adopting-cloud-governance"></a>クラウド ガバナンス採用前に現在の状態

@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4ca17f40d32bd09e3fb4833b53a2bacfbfe3b484
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: dfe4b4ddfe263baefb07d9ee24b70687278df1ce
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993513"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233938"
 ---
 # <a name="release-workloads"></a>ワークロードのリリース
 
-ワークロードのコレクションとそれをサポートしている資産をクラウドに移行した後は、リリースする前に準備を行う必要があります。 移行作業のこのフェーズでは、ワークロードのコレクションに対して負荷テストとビジネス テストを行います。 その後、それらを最適化して文書化します。 ビジネス チームと IT チームがワークロードのデプロイを確認してサイン オフすると、それらのワークロードをリリース、つまり継続的な運用のためにガバナンス チーム、セキュリティ チーム、運用チームに渡すことができます。
+ワークロードのコレクションとそれをサポートしている資産をクラウドに移行した後は、リリースする前に準備を行う必要があります。 移行作業のこのフェーズでは、ワークロードのコレクションに対して負荷テストとビジネスによる検証を行います。 その後、それらを最適化して文書化します。 ビジネス チームと IT チームがワークロードのデプロイを確認してサイン オフすると、それらのワークロードをリリース、つまり継続的な運用のためにガバナンス チーム、セキュリティ チーム、運用チームに渡すことができます。
 
 "ワークロードのリリース" の目標は、移行されたワークロードを運用環境での使用に昇格させるための準備を行うことです。
 

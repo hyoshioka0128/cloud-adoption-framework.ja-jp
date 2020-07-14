@@ -1,18 +1,18 @@
 ---
 title: メインフレーム移行の概要
-description: メインフレームのワークロード、アプリ、およびデータベースを Azure に移行して、メインフレームの多くの欠点を持たない、信頼性の高い、可用性に優れたスケーラブルなインフラストラクチャを実現します。
+description: メインフレームのワークロード、アプリケーション、およびデータベースを Azure に移行して、メインフレームの多くの欠点を持たない、信頼性の高い、可用性に優れたスケーラブルなインフラストラクチャを実現します。
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 954c97c78d3dcd4827505e2d9b6df2d4a5355e04
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: ef9ac0935b21a1294dc77e631223fc0e24dcef0d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398816"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193764"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 

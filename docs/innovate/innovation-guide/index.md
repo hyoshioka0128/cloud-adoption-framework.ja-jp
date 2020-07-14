@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1718a1f41ceaa167583681146dbd046dccfb7987
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 59111ad2bac9cf3b4fca2053a7d4b56d88c0cb89
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756245"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190993"
 ---
 ::: zone target="docs"
 
@@ -41,7 +41,7 @@ Azure サービスを使用して革新的ソリューションの開発を始�
 > - **データの民主化:** 顧客に革新的なソリューションを届けるには、データだけでも十分かもしれません。 Azure で一般的なデータ オプションをデプロイします。
 > - **アプリによる連携:** イノベーションによっては、魅力的な体験が必要になります。 クラウドネイティブのアプリケーション プラットフォームを活用し、魅力的な体験を創造します。
 > - **導入の強化:** 発明はすばらしいことですが、導入を支援し、拡大するには衝突を減らす計画が必要です。 CI/CD、DevOps、その他の導入イネーブラー (可能にするもの) の基礎をデプロイします。
-> - **デバイス経由の操作:** 顧客のニーズにアプリやデータを近づける環境を作ります。 IoT、複合現実、モバイル体験は Azure で簡単になります。
+> - **デバイス経由の操作:** 顧客のニーズにアプリケーションやデータを近づける環境を作ります。 IoT、複合現実、モバイル体験は Azure で簡単になります。
 > - **予測と影響:** データの中からパターンを見つけます。 Azure ベースの予測分析ツールを利用して、それらのパターンから顧客の行動を予測し、影響を与えます。
 
 ::: zone target="docs"

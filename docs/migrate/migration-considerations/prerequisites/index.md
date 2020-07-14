@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 010af9c5f3988c3a4cef05a1d9e3284e1d550675
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 321ce198cf4e2ad4486719e1702266540313277a
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194359"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235383"
 ---
 # <a name="prerequisites-for-migration"></a>移行の前提条件
 
@@ -24,7 +24,7 @@ ms.locfileid: "86194359"
 
 ## <a name="review-business-drivers"></a>ビジネスの推進要因を確認する
 
-クラウドの移行を始める前に、「Cloud Adoption Framework (クラウド導入フレームワーク)」の「[Plan (計画)](../../../strategy/index.md)」と「[Ready (準備)](../../../ready/index.md)」のガイダンスを参照して、組織がクラウド導入および移行プロセスの準備ができていることを確認します。 特に、移行を推進するビジネスの要件と想定される結果を確認します。
+クラウドの移行を始める前に、クラウド導入フレームワークの[計画のメソドロジ](../../../plan/index.md)と[準備のメソドロジ](../../../ready/index.md)に関するガイダンスを参照して、組織がクラウド導入および移行プロセスの準備ができていることを確認します。 特に、移行を推進するビジネスの要件と想定される結果を確認します。
 
 - [はじめに: 移行を促進する](../../../get-started/migrate.md)
 - [クラウドに移行する理由](../../../strategy/motivations.md)

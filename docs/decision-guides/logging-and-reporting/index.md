@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5aa8f25ea54fc6ab8df5728bc742f6f3c9ff3886
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 92e7882eed949f6e93062017e5079b2135065a22
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862468"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193934"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -55,7 +55,7 @@ ms.locfileid: "83862468"
 
 Azure Monitor などのクラウドベースのログおよびレポート ソリューションを利用するには、クラウドに移行するアプリケーションとサービスにかなりの再開発作業が必要になる場合があります。 このような場合、これらのワークロードから既存のオンプレミス システムにテレメトリ データを送信し続けられるようにすることを検討してください。
 
-このアプローチをサポートするためには、[ハイブリッド ネットワーク](../software-defined-network/hybrid.md)と[クラウドでホストされるドメイン サービス](../identity/index.md#cloud-hosted-domain-services)を組み合わせることで、クラウド リソースがオンプレミス システムと直接通信できるようにする必要があります。 これを実施することで、クラウド仮想ネットワークがオンプレミス環境のネットワーク拡張機能として機能します。 そのため、クラウドでホストされるワークロードは、オンプレミスのログおよびレポートのシステムと直接通信できます。
+このアプローチをサポートするためには、[ハイブリッド ネットワーク](../software-defined-network/hybrid.md)と[クラウドでホストされるドメイン サービス](../identity/index.md#cloud-hosted-domain-services)を組み合わせることで、クラウド リソースがオンプレミス システムと直接通信する必要があります。 これを実施することで、クラウド仮想ネットワークがオンプレミス環境のネットワーク拡張機能として機能します。 そのため、クラウドでホストされるワークロードは、オンプレミスのログおよびレポートのシステムと直接通信できます。
 
 このアプローチでは、クラウドにデプロイされたアプリケーションまたはサービスを少し変更して、監視ツールへの既存の投資を利用します。 多くの場合、これはリフト アンド シフト移行時に監視をサポートする最も速いアプローチです。 しかし、クラウドベースの PaaS および SaaS のリソースによって生成されたログ データはキャプチャされず、VM の状態など、クラウド プラットフォーム自体で生成された VM 関連のログはすべて省略されます。 その結果、このパターンは、より包括的なハイブリッド監視ソリューションが実装されるまでの一時的な解決策とする必要があります。
 

@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 01619281c3531c18afe3fc031b9f1fde1f7d4f0b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ca1a65d0c385a7fc57e66b4c3f41157363a8a392
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753995"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191911"
 ---
+<!-- cSpell:ignore BYOK -->
+
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 
 データを暗号化すると、データが不正アクセスから保護されます。 暗号化ポリシーを適切に実装すると、クラウドベースのワークロードにセキュリティのレイヤーが追加され、組織やネットワークの内外両方からの攻撃者や他の承認されていないユーザーに対する保護が提供されます。
@@ -50,9 +52,9 @@ Azure Key Vault などの最新のキー管理システムでは、開発とテ�
 - 組織のシークレットとキーの作成、管理、ホストについて、クラウドのキー管理ソリューションを信頼します。
 - クラウドのキー管理システムにアクセスするために暗号化サービスまたはシークレットへのアクセスに依存するすべてのオンプレミス アプリケーションとサービスを有効にします。
 
-### <a name="bring-your-own-key"></a>Bring Your Own Key
+### <a name="bring-your-own-key-byok"></a>Bring Your Own Key (BYOK)
 
-Bring Your Own Key アプローチでは、オンプレミス環境内の専用 HSM ハードウェアでキーを生成後、クラウドでホストされるリソースで使用するために、Azure Key Vault などのクラウドベースの管理システムにこれらのキーを安全に転送します。
+BYOK アプローチでは、オンプレミス環境内の専用 HSM ハードウェアでキーを生成後、クラウドでホストされるリソースで使用するために、Azure Key Vault などのクラウドベースの管理システムにこれらのキーを安全に転送します。
 
 **Bring Your Own Key の前提:** オンプレミスでのキーの生成とクラウドベースのキー管理システムでの使用には、次の前提条件が含まれています。
 
