@@ -1,18 +1,18 @@
 ---
 title: 作業を開始しましょう。クラウド自動化チームを構築する
 description: このガイドは、クラウド自動化チームが担当するスコープ、成果物、および機能を理解するために役立ちます。
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 4c560271b86b384aa0ba43763344bd0a5335f239
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 2c96ff5c0a2c32d64c8380219f36f14c6c7e745e
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814224"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233241"
 ---
 # <a name="get-started-build-a-cloud-automation-team"></a>作業を開始しましょう。クラウド自動化チームを構築する
 

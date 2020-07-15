@@ -9,32 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 266c06e36594c008faa39a634c89abe0e0c1cb97
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 98a772a2c20aba6689ec66593bd15571c74cec33
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427269"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373273"
 ---
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-democratize-data"></a>Azure イノベーション ガイド:データの民主化
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="democratize-data"></a>データの民主化
-
-::: zone-end
 
 データの民主化の最初の一歩として、データを見つけやすくすることが挙げられます。 データ共有のカタログ化と管理は、企業が既存の情報資産から最大の価値を得るために役立ちます。 データ カタログにより、データを管理しているユーザーはデータ ソースの検出と把握が容易になります。 Azure Data Catalog により、企業内部での管理が可能となり、Azure Data Share により、企業外部での管理と共有が可能になります。
 
 Azure Time Series Insights や Stream Analytics など、データを処理する Azure サービスも、イノベーションのニーズに対応するためにお客様やパートナーが使用し、成果を上げている機能です。
 
-# <a name="catalog"></a>[カタログ](#tab/Catalog)
+## <a name="catalog"></a>[カタログ](#tab/Catalog)
 
-## <a name="azure-data-catalog"></a>Azure Data Catalog
+### <a name="azure-data-catalog"></a>Azure Data Catalog
 
 Azure Data Catalog は、データ コンシューマーによるデータ検出の課題に対処し、データ プロデューサーが情報資産を管理することを可能にします。 IT とビジネス間のギャップが解消され、すべてのユーザーが分析情報を共有して貢献できるようになります。 必要な場所にデータを保存し、使用するツールで接続できます。 Azure Data Catalog を使用すると、登録されたデータ資産を検出できるユーザーを制御できます。 オープン REST API を使用して、既存のツールやプロセスに統合できます。
 
@@ -52,7 +42,7 @@ Azure Data Catalog は、データ コンシューマーによるデータ検出
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>アクション
+#### <a name="action"></a>アクション
 
 Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織のデータ カタログが既に作成されている場合、カタログを追加することはできません。
 
@@ -69,9 +59,9 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 
 ::: zone-end
 
-# <a name="share"></a>[共有](#tab/Share)
+## <a name="share"></a>[共有](#tab/Share)
 
-## <a name="azure-data-share"></a>Azure Data Share
+### <a name="azure-data-share"></a>Azure Data Share
 
 データのオープンな共有と、共有するデータおよび共有する相手の制御のバランスを取ることが、イノベーションの重要な推進要素となります。 企業はデータの民主化を試みるときに、データの膨大な量、ペース、ライフサイクルに圧倒されがちです。 Azure Data Share を使用すると、プロバイダーはデータ共有の使用条件を指定してデータを処理する方法を制御できます。 データ コンシューマーは、データを受け取る前に、これらの条件に同意する必要があります。 データ プロバイダーは、データ コンシューマーが更新を受け取る頻度を指定できます。 データ プロバイダーは、新しい更新へのアクセスをいつでも取り消すことができます。
 
@@ -91,7 +81,7 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="action"></a>アクション
+#### <a name="action"></a>アクション
 
 データ共有を作成するには、次の手順に従います。
 
@@ -106,9 +96,9 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 
 ::: zone-end
 
-# <a name="insights"></a>[分析情報](#tab/Insights)
+## <a name="insights"></a>[分析情報](#tab/Insights)
 
-## <a name="azure-time-series-insights"></a>Azure Time Series Insights
+### <a name="azure-time-series-insights"></a>Azure Time Series Insights
 
 Azure Time Series Insights のデータ イノベーション機能は無限です。 データ ストリームのほぼリアルタイムのデータ探索と、IoT 規模の時系列データに対応する多層ストレージが提供されます。 また、未加工のテレメトリをコンテキスト化し、資産ベースの分析情報を引き出すモデルも提供されます。 Time Series Insights プラットフォーム上で、他のデータ ソリューションとのスムーズかつ継続的な統合を実現し、根本原因分析や異常検出を行うことができます。また、カスタム アプリケーションを構築することもできます。
 
@@ -127,7 +117,7 @@ Azure Time Series Insights のデータ イノベーション機能は無限で�
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>アクション
+#### <a name="action"></a>アクション
 
 Azure Time Series Insights 環境を作成するには:
 

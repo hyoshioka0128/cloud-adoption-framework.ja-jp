@@ -1,5 +1,5 @@
 ---
-title: 移行バックログのレビュー
+title: 移行バックログの確認
 description: Azure 向けのクラウド導入フレームワークを使用して、移行バックログの作成と確認の重要性を理解します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b55281d6fc06528c0c9da5c13190ba6b08d83116
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 856627779dcb5de0417e5a0d229b069c2937a6cc
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219208"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235366"
 ---
 # <a name="migration-backlog-review"></a>移行バックログの確認
 

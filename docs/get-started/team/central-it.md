@@ -1,18 +1,18 @@
 ---
 title: 作業を開始しましょう。中央 IT チームを調整する
 description: このガイドは、中央 IT チームがクラウド導入の成功に必要なスコープ、成果物、および機能を理解するために役立ちます。
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: eee0bd9cb59b3deaf7aa87c0758dcd70c1cb51c8
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 54cc5a5d2438ddd0350cf3873c391d489f8df2e2
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076215"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233904"
 ---
 # <a name="get-started-align-a-central-it-team"></a>作業を開始しましょう。中央 IT チームを調整する
 

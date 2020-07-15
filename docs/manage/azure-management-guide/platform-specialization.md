@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6d4b2e0677b896bf61e4c57b49dda548a6719b69
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 73b49894ae375e5c5995e33057d29b48a61e57e2
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785482"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190755"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>クラウド管理のためのプラットフォームの特殊化
 
@@ -30,7 +30,7 @@ ms.locfileid: "84785482"
 
 次の表では、改善された顧客の管理ベースラインに共通する共通のプロセス、ツール、および考えられる影響の概要を示します。
 
-| Process | ツール | 目的  | 推奨される管理レベル |
+| Process | ツール | 目的 | 推奨される管理レベル |
 |---|---|---|---|
 | システム設計を改善する | Microsoft Azure Well-Architected Framework | プラットフォームのアーキテクチャ設計の改善による操作の向上 | 該当なし |
 | 自動修復 | Azure Automation | プラットフォーム固有の自動化による高度なプラットフォーム データへの対応 | プラットフォームの運用 |

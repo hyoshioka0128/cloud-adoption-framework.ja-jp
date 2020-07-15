@@ -1,18 +1,18 @@
 ---
 title: 作業を開始しましょう。クラウド移行チームを構築する
 description: このガイドは、クラウド移行チームがクラウド移行を成功させるために必要なスコープ、成果物、および機能を理解するために役立ちます。
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 6405317ef9172ac8f0b50b2afadd8d3850fc0ad6
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 84c48140aa700c806e8d6b50c2b7ac7f1628cbb8
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075780"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233292"
 ---
 # <a name="get-started-build-a-cloud-migration-team"></a>作業を開始しましょう。クラウド移行チームを構築する
 

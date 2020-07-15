@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cbb80dacdb34cc4ab11cf2d3435a0e8d4ff86e73
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 35df4edd8437cea20f0bc397be901443c21015a5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84784989"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194648"
 ---
 # <a name="first-cloud-adoption-project"></a>最初のクラウド導入プロジェクト
 
@@ -51,6 +51,8 @@ Azure のクラウド導入フレームワークは、クラウド導入のプ�
 - **移行の動機:** 移行が主な動機である場合、重要でないワークロードの移行から始めるのが賢明です。 [Azure セットアップ ガイド](../ready/azure-setup-guide/index.md)と [Azure 移行ガイド](../migrate/azure-migration-guide/index.md)は、最初のワークロードの移行のための手引きとして使用できます。
 
 - **イノベーションの動機:** イノベーションが主な動機である場合、ターゲットの開発環境またはテスト環境の作成が適切な最初のプロジェクトになります。
+
+<!-- docsTest:ignore "data migration services" -->
 
 最初の導入プロジェクトのその他の例を以下に示します。
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: caa4349293df5387c4ba62aa265499d4140d3f9f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: e8c464f7985dde96b3a2c09823c47266c104f58e
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076473"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191809"
 ---
 # <a name="get-started-manage-cloud-costs"></a>作業を開始しましょう。クラウド コストを管理する
 
@@ -50,7 +50,7 @@ ms.locfileid: "85076473"
 
   - [一般コストのベスト プラクティス](../govern/cost-management/best-practices.md)に従って、サイズ変更とコストを削減し、未使用のマシンを停止します。
   - [ハイブリッド使用特典](../govern/cost-management/best-practices.md#best-practice-take-advantage-of-azure-hybrid-benefit)を適用して、ライセンス コストを削減します。
-  - [予約インスタンス](../govern/cost-management/best-practices.md#best-practice-use-reserved-vm-instances)を調整して、リソース コストを削減します。
+  - [予約インスタンス](../govern/cost-management/best-practices.md#best-practice-use-azure-reserved-vm-instances)を調整して、リソース コストを削減します。
   - [リソース使用率を監視](../govern/cost-management/best-practices.md#best-practice-monitor-resource-utilization)して、リソースのパフォーマンスへの影響を最小限に抑えます。
   - 非運用環境を管理するポリシーを使用して、[非運用コストを削減](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs)します。
   - [コストの最適化に関する推奨事項](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に従います。

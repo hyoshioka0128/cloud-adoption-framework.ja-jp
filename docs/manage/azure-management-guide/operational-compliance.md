@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7aeb83064faa4105214d47149fbf9e789add47d3
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: cc3d8ddfc599a33e28874774e92915b964aa4e3c
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621218"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190874"
 ---
 <!-- cSpell:ignore WSUS getting started -->
 

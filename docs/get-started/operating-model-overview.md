@@ -1,18 +1,18 @@
 ---
 title: 操作を改善する
 description: クラウド導入フレームワークを使用して操作を改善します。 これらのシナリオは、コスト管理、セキュリティ、信頼性、パフォーマンスなどに役立ちます。
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b3f72f4fb73550c3e2a421cb9965b8ac0c75b80e
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 367c4061e8f69c7335fb1816b804daf993e3abe2
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786077"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233496"
 ---
 # <a name="improve-operations"></a>操作を改善する
 

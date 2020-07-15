@@ -9,24 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8f69e5c6d988bbfc637c7ba40eb156dc45524bce
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 08ce97b44442e172a7111c190279ae6e331556d6
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621320"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373290"
 ---
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-empower-adoption"></a>Azure イノベーション ガイド:導入の強化
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="empower-adoption"></a>導入の強化
-
-::: zone-end
 
 ご存知のように、イノベーションはビジネスの成功に不可欠です。 新しいテクノロジを導入するだけではイノベーションは実現できません。 変化を促進し、求めている新たな価値を生み出す人々を支援することに注力する必要があります。 "_開発者_" はデジタル トランスフォーメーションの中心であり、より多くの成果を上げることができるように、開発者のベロシティを高める必要があります。 開発者チームの創造力を解き放つには、生産性を高め、グローバルで安全なコラボレーションを促進し、イノベーションを拡大できるように障壁を取り除く必要があります。
 
@@ -44,13 +34,13 @@ ms.locfileid: "83621320"
 
 イノベーションは、組織が求める価値を創出する人々を支援することで実現されます。 イノベーションの触媒となる人々のグループの 1 つが開発者です。 開発者は、あらゆる業界で価値の創出と成長においてますます重要な役割を果たしています。 開発者はこの時代のビルダーであり、世界のコードを書き、イノベーションの中心にいます。 革新的な組織は、開発者がより多くの成果を達成できるように支援するカルチャを構築します。
 
-# <a name="developer-productivity"></a>[開発者の生産性](#tab/DeveloperProductivity)
+## <a name="developer-productivity"></a>[開発者の生産性](#tab/DeveloperProductivity)
 
-## <a name="developer-velocity"></a>開発者のベロシティ
+### <a name="developer-velocity"></a>開発者のベロシティ
 
 開発者の考案を支援するということは、開発者のベロシティを高めて、開発者がより多くのものを生み出し、イノベーションを促進し、より多くの問題を解決できるようにすることです。 開発者のベロシティは、各組織の技術強度の基盤です。 開発者のベロシティはスピードだけを意味するわけではありません。 開発者の創造力を引き出して、開発者のアイデアを迅速かつ俊敏にソフトウェアに変え、革新的なソリューションを構築できるようにすることでもあります。 Azure の差別化されたソリューションは、組織でイノベーションを生み出す独自の位置にあります。
 
-## <a name="build-productively"></a>生産的に構築する
+### <a name="build-productively"></a>生産的に構築する
 
 Azure が生産性の向上に役立つ可能性がある領域がいくつかあります。
   
@@ -80,7 +70,7 @@ Azure DevOps は、すべての開発者にクラス最高のツールを提供�
 <!-- docsTest:ignore "Azure DevOps Projects" -->
 <!-- markdownlint-disable DOCSMD001 -->
 
-### <a name="action"></a>アクション
+#### <a name="action"></a>アクション
 
 DevOps プロジェクトを作成するには:
 
@@ -94,9 +84,9 @@ DevOps プロジェクトを作成するには:
 
 ::: zone-end
 
-# <a name="innovate-collaboratively"></a>[コラボレーションによるイノベーション](#tab/Collaboration)
+## <a name="innovate-collaboratively"></a>[コラボレーションによるイノベーション](#tab/Collaboration)
 
-## <a name="innovate-through-collaboration"></a>コラボレーションによるイノベーション
+### <a name="innovate-through-collaboration"></a>コラボレーションによるイノベーション
 
 ソフトウェア開発はチームのスポーツです。 チーム内でのピアとナレッジ共有によるコラボレーションは基本的なものです。 開発と運用の間の障壁を破ることが不可欠です。 また、GitHub などのプラットフォームを使用して、コア製品チーム以外の豊富な組織のナレッジを活用することもできます。
 
@@ -104,47 +94,46 @@ DevOps プロジェクトを作成するには:
 
 **[GitHub の Microsoft Azure リポジトリ](https://github.com/azure)に移動する**
 
-## <a name="open-source-innovation"></a>オープンソースのイノベーション
+### <a name="open-source-innovation"></a>オープンソースのイノベーション
 
 イノベーションを実現するために、多くの開発者がオープンソース コードを利用しています。 新しいアプリケーション開発の 80 から 90% が、オープンソース コードから始まっています。 オープンソースは単なるコードではありません。 相互に接続された世界中のコミュニティと開発者が協力して構築することでもあります。 チームは、GitHub でオープンな開発モデルを使用して、イノベーションとコラボレーションを行い、セキュリティの脆弱性を早期に特定し、専門家を見つけることができます。 エンタープライズ開発チームは、GitHub リポジトリと Microsoft Teams および Azure を統合できます。 Teams は、Microsoft Office アプリ、会議、およびビジネス プロセス ワークフローの機能を持つチャット、音声、およびコラボレーションをすべて単一のユーザー エクスペリエンスにまとめる唯一のソリューションです。 これは、チームワークとイノベーションのためのハブです。
 
 ### <a name="learn-more"></a>詳細情報
 
 - [Azure のオープンソース](https://azure.microsoft.com/overview/choose-azure-opensource)
-
 - [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
 
-# <a name="innovation-characteristics"></a>[イノベーションの特性](#tab/Characteristics)
+## <a name="innovation-characteristics"></a>[イノベーションの特性](#tab/Characteristics)
 
-## <a name="innovate-by-using-azure-devops"></a>Azure DevOps を使用したイノベーション
+### <a name="innovate-by-using-azure-devops"></a>Azure DevOps を使用したイノベーション
 
 企業は GitHub を使用してソース コードをホストし、継続的インテグレーションと継続的デリバリーのために Azure Pipelines を使用して変更を Azure に迅速にデプロイします。 Azure Boards を GitHub リポジトリに接続して、Azure Boards で提供される豊富なプロジェクト管理機能 (かんばんボード、バックログ、チームのダッシュボード、カスタム レポートなど) を利用します。
 
-## <a name="characteristics-of-innovative-applications"></a>革新的なアプリケーションの特性
+### <a name="characteristics-of-innovative-applications"></a>革新的なアプリケーションの特性
 
 Azure を利用すると、開発者は最新の標準的なアプリケーション パターンを使用してクラウドネイティブなアプリケーションを構築できます。 Azure では、開発チームがコンテナー、マネージド データベース、人工知能、サーバーレス機能を使用するアプリケーションを構築するために必要なすべての構成要素がサポートおよび提供されます。
 
-## <a name="scale-innovation"></a>イノベーションの拡大
+### <a name="scale-innovation"></a>イノベーションの拡大
 
 カスタマー エクスペリエンスと基幹業務アプリケーションの活気のあるイノベーションは、すべてのビジネス リーダーにとって最優先事項となっています。 Web、モバイル、IoT、複合現実のどのエクスペリエンスを構築する場合でも、イノベーションは組織の将来の成功の鍵となります。 イノベーションを拡大するには、パートナーと従業員が共有価値の創出に簡単かつ効率的に参加できるように、組織は独自のビジネス価値を構成可能なサービスとしてパッケージ化し、出荷することに注力する必要があります。
 
 Azure には、組織内のイノベーションを活気づかせ、拡大するための独自のオファリングが用意されています。 より多くのイノベーションを促進するために、現在のプロフェッショナルな開発者は、組織内の他の専門家が信頼できる基盤でアプリをビルドできるようにするアプリケーションと構成要素を作成できます。 Azure を使用すると、エキスパートのチームが支える徹底的なセキュリティと、エンタープライズ、政府機関、スタートアップから信頼されるプロアクティブなコンプライアンスが手に入ります。
 
-# <a name="liveops-innovation"></a>[LiveOps のイノベーション](#tab/LiveOps)
+## <a name="liveops-innovation"></a>[LiveOps のイノベーション](#tab/LiveOps)
 
-## <a name="future-ready-liveops"></a>将来への対応: LiveOps
+### <a name="future-ready-liveops"></a>将来への対応: LiveOps
 
 革新的な組織は、ライブ運用 (LiveOps) の考え方を取り入れています。 LiveOps は、顧客と継続的に関わり合うための設計プロセスです。 エンド ツー エンドの顧客体験が焦点となっています。 これは、顧客満足度と結果を重視して、顧客に価値を提供することに焦点を当てた設計と方向性のアプローチです。
 
 LiveOps はデータに人間味を与えるうえでも役立ちます。 LiveOps アプローチを使用すると、データはより実用的になるため、組織は、アプリ、顧客、ビジネスに影響を及ぼすアクションをリアルタイムで実行できます。 これは、実験に重点を置いたプロセスであり、反復と進化を重視し、一貫した頻繁な変更を推進します。 LiveOps は、DevOps と CRM を組み合わせるアプローチです。
 
-## <a name="liveops-transition"></a>LiveOps の遷移
+### <a name="liveops-transition"></a>LiveOps の遷移
 
 ゲーム開発は、現在 LiveOps を採用しつつある業界の一例です。 最新のゲームはその象徴的な LiveOps アプリケーションです。 ゲームには静かな革命が起きており、有効期間が時間単位で測定されるパッケージ商品から、有効期間が年単位で測定されるアクティブなコミュニティへと変化しています。 ゲーマー数が 20 億人を超え、毎年出荷される何万個もの新しいゲームが注目を集めるためにしのぎを削っている中で、ゲーム開発者はプレーヤー ベースのエンゲージメントと維持を経時的に向上させるために、LiveOps に目を向けるようになっています。 イノベーションは、プレーヤーの継続的なエンゲージメント (コンテンツの更新、特別なイベント、プロモーション、オファー) によって発生します。
 
-## <a name="azure-playfab"></a>Azure PlayFab
+### <a name="azure-playfab"></a>Azure PlayFab
 
-[Azure PlayFab](https://azure.microsoft.com/services/playfab) は、ライブ ゲーム用の完全なバックエンド プラットフォームであり、優れた LiveOps アプリケーション プラットフォームの一例です。 Azure PlayFab では、コードを継続的に監視し、リアルタイム分析を利用できます。また、リアルタイムの更新をリリースしてアプリを最適化し、収益化を強化することもできます。 PlayFab の目的は、ゲーム用のインテリジェント クラウドを提供することで、開発者がプレーヤーのエンゲージメント、維持、収益化を強化できるようにすることです。
+[Azure PlayFab](https://docs.microsoft.com/gaming/playfab/what-is-playfab) は、ライブ ゲーム用の完全なバックエンド プラットフォームであり、優れた LiveOps アプリケーション プラットフォームの一例です。 Azure PlayFab では、コードを継続的に監視し、リアルタイム分析を利用できます。また、リアルタイムの更新をリリースしてアプリを最適化し、収益化を強化することもできます。 PlayFab の目的は、ゲーム用のインテリジェント クラウドを提供することで、開発者がプレーヤーのエンゲージメント、維持、収益化を強化できるようにすることです。
 
 PlayFab には、収益性を高め、ゲームの寿命を延ばす、独自のマージンの高い LiveOps ツールとサービスが用意されています。 デバイスやプラットフォームにまったく依存しない PlayFab は、Facebook や Steam などのソーシャル ID プロバイダー、商取引を調整するストア プラットフォーム、iOS、Android、Xbox、PlayStation などのデバイス プラットフォームと簡単に統合できます。 Azure のデータ資産により、PlayFab は、お客様がより良いゲームとより賢明な意思決定を行い、プレーヤーを獲得して維持し、より多くの実験と反復処理をより迅速に実行して迅速に学習できるようになるインテリジェント サービスを提供できます。
 

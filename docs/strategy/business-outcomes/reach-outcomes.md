@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 41393cab0775dedd634be966a5677d6839cb1c14
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 774d910786a5458244298228669126410a78afd8
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994219"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194971"
 ---
+<!-- docsTest:ignore "global reach" -->
+
 # <a name="examples-of-global-reach-outcomes"></a>グローバルな展開の成果の例
 
 [ビジネス成果](./index.md)に関するページで説明したように、見込みがあるさまざまなビジネス上の成果を、企業との変革に取り組むための対話の基盤として役立てることができます。 この記事では、一般的なビジネス手段であるリーチに注目します。 会社のグローバル化戦略を理解することは、ビジネスの変革への取り組みによって目指すビジネス成果をより明確に示すことに役立ちます。
