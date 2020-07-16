@@ -157,9 +157,9 @@ items:
         href: ready/index.md
       - name: Azure セットアップ ガイド
         items:
-          - name: 開始する前に
+          - name: セットアップ ガイドの概要
             href: ready/azure-setup-guide/index.md
-          - name: リソースの整理
+          - name: リソースの編成
             href: ready/azure-setup-guide/organize-resources.md
           - name: アクセスを管理する
             href: ready/azure-setup-guide/manage-access.md
@@ -335,7 +335,7 @@ items:
             href: migrate/index.md
           - name: Azure 移行ガイド
             items:
-              - name: 開始する前に
+              - name: 移行ガイドの概要
                 href: migrate/azure-migration-guide/index.md
               - name: ワークロードの評価
                 href: migrate/azure-migration-guide/assess.md
@@ -707,17 +707,17 @@ items:
             href: innovate/index.md
           - name: Azure イノベーション ガイド
             items:
-              - name: 開始する前に
+              - name: イノベーション ガイドの概要
                 href: innovate/innovation-guide/index.md
               - name: カスタマー フィードバックの準備
                 href: innovate/innovation-guide/adoption.md
               - name: データの民主化
                 href: innovate/innovation-guide/data.md
-              - name: アプリによる連携
+              - name: アプリを使用したカスタマー エンゲージメントの構築
                 href: innovate/innovation-guide/apps.md
               - name: 導入の強化
                 href: innovate/innovation-guide/ci-cd.md
-              - name: デバイスの操作
+              - name: デバイス経由の操作
                 href: innovate/innovation-guide/devices.md
               - name: 予測と影響
                 href: innovate/innovation-guide/predict.md

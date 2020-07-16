@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 794f500b50a4376cc52861a61dbc70a8a9197114
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 22da52f3cdec09d3337c320875076c579bb5bb61
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233717"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373154"
 ---
-# <a name="azure-migration-guide-before-you-start"></a>Azure 移行ガイド:開始する前に
+# <a name="azure-migration-guide-overview"></a>Azure 移行ガイドの概要
 
 [クラウド導入フレームワークの移行のメソドロジ](../index.md)では、1 つのワークロード、またはリリースごとのワークロードの小さなコレクションを移行する反復的なプロセスについて案内します。 次に、ワークロードが運用環境の需要に対応できるようにするため、各イテレーションにおける、評価、移行、最適化と昇格のプロセスが続きます。 そのクラウドに依存しないプロセスによって、任意のクラウド プロバイダーに移行することができます。
 
