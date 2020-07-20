@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 92e7882eed949f6e93062017e5079b2135065a22
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 05498e7e1163f627b33f1a555aa3870e4bebd868
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193934"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450715"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -59,7 +59,7 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 
 このアプローチでは、クラウドにデプロイされたアプリケーションまたはサービスを少し変更して、監視ツールへの既存の投資を利用します。 多くの場合、これはリフト アンド シフト移行時に監視をサポートする最も速いアプローチです。 しかし、クラウドベースの PaaS および SaaS のリソースによって生成されたログ データはキャプチャされず、VM の状態など、クラウド プラットフォーム自体で生成された VM 関連のログはすべて省略されます。 その結果、このパターンは、より包括的なハイブリッド監視ソリューションが実装されるまでの一時的な解決策とする必要があります。
 
-オンプレミス&ndash;のみの前提条件:
+オンプレミスのみの前提条件:
 
 - 技術的な要件をサポートするため、または規制やポリシー要件により、ログ データのみをオンプレミス環境でのみ維持する必要がある。
 - オンプレミス システムでハイブリッドのログとレポート、またはゲートウェイ集約ソリューションをサポートしていない。

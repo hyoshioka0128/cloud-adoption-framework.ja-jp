@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 760b97f268c9696ee73c9ae4e4c3b9b1475ffafa
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: fbe43c1769eed4b7ad0a032b7af11a0755d954cd
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862196"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449151"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウドのイノベーション
 
@@ -43,7 +43,7 @@ ms.locfileid: "83862196"
 
 ここでは、クラウド導入フレームワークのイノベーション手法と一致する Microsoft Learn のロール固有のラーニング パスの例をいくつか示します。
 
-[Azure でコンテナーを管理する](https://docs.microsoft.com/learn/paths/administer-containers-in-azure)Azure Container Instances (ACI) は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、ACI を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
+[Azure でコンテナーを管理する](https://docs.microsoft.com/learn/paths/administer-containers-in-azure)Azure Container Instances は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、Azure Container Instances を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
 
 [サーバーレス アプリケーションの作成](https://docs.microsoft.com/learn/paths/create-serverless-applications): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を使用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
 

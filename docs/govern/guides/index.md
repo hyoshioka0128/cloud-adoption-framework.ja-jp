@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03b7e13a14c2b3d9a6fe6e2b2757f065e041b3f9
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: fc3e2aa9ea201e203c961275f26305cbfd5d45ed
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191231"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450171"
 ---
 # <a name="cloud-governance-guides"></a>クラウド ガバナンス ガイド
 
@@ -77,8 +77,8 @@ ms.locfileid: "86191231"
 
 | State | 標準的な組織 | 複雑な企業 |
 |---|---|---|
-| コスト管理&mdash;クラウド アカウンティング | ショーバック モデル。 課金は IT で集中管理される。 | チャージバック モデル。 課金は、IT 調達全体に分散できる。 |
-| セキュリティ ベースライン&mdash;保護されたデータ | 会社の財務データと IP。 制限された顧客データ。 サード パーティのコンプライアンス要件はない。 | 顧客の財務と個人データの複数のコレクション。 サード パーティのコンプライアンスの考慮が必要な場合がある。 |
+| コスト管理: クラウド アカウンティング | ショーバック モデル。 課金は IT で集中管理される。 | チャージバック モデル。 課金は、IT 調達全体に分散できる。 |
+| セキュリティ ベースライン: 保護されたデータ | 会社の財務データと IP。 制限された顧客データ。 サード パーティのコンプライアンス要件はない。 | 顧客の財務と個人データの複数のコレクション。 サード パーティのコンプライアンスの考慮が必要な場合がある。 |
 
 ## <a name="caf-enterprise-scale-landing-zone"></a>CAF エンタープライズ規模のランディング ゾーン
 

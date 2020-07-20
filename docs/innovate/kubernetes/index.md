@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 431e69e83eb6205051b6ebbc9d14c76238cb2749
-ms.sourcegitcommit: 6cf47803c75f36903703647a76aa878895f2b040
+ms.openlocfilehash: 3fc1a3ce4d0c6146d3b06d3fcb5acf34dbe387b0
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84328393"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448794"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 
@@ -30,8 +30,8 @@ ms.locfileid: "84328393"
 
 | | |
 |---|---|
-| ![項目 1 アイコン](../../_images/icons/1.png) | <br>[アプリケーションの開発とデプロイ](./application-development.md):アプリケーション開発のパターンとプラクティスを確認し、DevOps パイプラインを構成し、サイト信頼性エンジニアリング (SRE) のベスト プラクティスを実装します。 |
-| ![項目 2 アイコン](../../_images/icons/2.png) | <br>[クラスターの設計と操作](./cluster-design-operations.md):クラスター構成とネットワーク設計を特定します。 インフラストラクチャのプロビジョニングを自動化することで、将来のスケーラビリティに対応します。 事業継続とディザスター リカバリーを計画することで、高可用性を維持します。 |
-| ![項目 3 アイコン](../../_images/icons/3.png) | <br>[クラスターとアプリケーションのセキュリティ](./cluster-application-security.md):Kubernetes のセキュリティの基本について理解を深めます。 クラスターのセキュリティ保護設定とアプリケーションのセキュリティに関するガイダンスを確認します。 |
+| ![項目 1 アイコン](../../_images/icons/1.png) | <br> [アプリケーションの開発とデプロイ](./application-development.md):アプリケーション開発のパターンとプラクティスを確認し、CI/CD パイプラインを構成し、サイト信頼性エンジニアリング (SRE) のベスト プラクティスを実装します。 |
+| ![項目 2 アイコン](../../_images/icons/2.png) | <br> [クラスターの設計と操作](./cluster-design-operations.md):クラスター構成とネットワーク設計を特定します。 インフラストラクチャのプロビジョニングを自動化することで、将来のスケーラビリティに対応します。 事業継続とディザスター リカバリーを計画することで、高可用性を維持します。 |
+| ![項目 3 アイコン](../../_images/icons/3.png) | <br> [クラスターとアプリケーションのセキュリティ](./cluster-application-security.md):Kubernetes のセキュリティの基本について理解を深めます。 クラスターのセキュリティ保護設定とアプリケーションのセキュリティに関するガイダンスを確認します。 |
 
 <!-- markdownlint-enable MD033 -->

@@ -3,18 +3,18 @@ title: Azure セットアップ ガイド:開始する前に
 description: 手順付きのガイダンスを利用して、組織で効果的に Azure を設定する方法を学習します。
 author: timleyden
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 07/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c17aa1a2f12a7949792229665aa73884deb63ac8
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 331e8bf4274c9f2259516acd41b451f3b9a259f6
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373358"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450817"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -27,7 +27,7 @@ ms.locfileid: "86373358"
 
 ::: zone-end
 
-Azure サービスを使用してソリューションのビルドとデプロイを開始する前に、自分の環境を準備する必要があります。 このガイドでは、リソースを整理し、コストを管理し、組織をセキュリティで保護して管理するために役立つ機能を紹介します。 詳細、ベスト プラクティス、クラウド環境の準備に関連する考慮事項については、[クラウド導入フレームワークの準備セクション](../index.md)に関するページを参照してください。
+Azure サービスを使用してソリューションのビルドとデプロイを開始する前に、自分の環境を準備する必要があります。 このガイドでは、リソースを整理し、コストを管理し、組織をセキュリティで保護して管理するために役立つ機能を紹介します。 クラウド環境の準備に関する詳細、ベスト プラクティス、考慮事項については、クラウド導入フレームワークの[準備セクション](../index.md)を参照してください。
 
 学習内容は次のとおりです。
 

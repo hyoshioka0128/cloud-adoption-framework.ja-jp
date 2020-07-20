@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ebdb349954a675b9a277f10f6b34984f12aef489
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e43e0010398fcb9d297d7246cb95a1d1c1a2246a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222676"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449679"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>Azure でデジタル発明を開発する
 
@@ -31,7 +31,7 @@ Azure 内には、デジタル発明とイノベーションのためのクラ�
 この記事シリーズにおけるデジタル発明の種類を次に示します。
 
 - [データの民主化](./data.md):データを共有し、情報関連の顧客ニーズに応えるためのツール。
-- [アプリを使用した連携](./apps.md):生データを越えたところで顧客を引きつけるアプリを作るためのツール。
+- [アプリケーション経由での関与](./apps.md):生データを越えたところで顧客を引きつけるアプリケーションを作るためのツール。
 - [導入の強化](./ci-cd.md):Build-Measure-Learn (構築-測定-学習) サイクルをデジタル サポートすることで Customer Adoption (顧客による製品/サービスの採用) を加速するためのツール。
 - [デバイスの操作](./devices.md):顧客向けにさまざまなレベルのアンビエント エクスペリエンスを作るためのツール。
 - [予測と影響](./predict.md):予測分析とアプリケーションへの出力の統合のためのツール。
