@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3537c41610a49b2fd600bb5d81197c515e5c6164
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 127a553b94f4432fe08bbf7772407b401339470b
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219378"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235026"
 ---
 # <a name="estimate-cloud-costs"></a>クラウド コストを見積もる
 

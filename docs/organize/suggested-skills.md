@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: b396bef511aad0e715f8d4391f26882357da5378
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: d3f772ec4bec79b3f9473d2a0ee6b2a2035f145b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993380"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194172"
 ---
-# <a name="building-technical-skills"></a>技術スキルの構築
+# <a name="build-technical-skills"></a>技術スキルの構築
 
 組織および環境の (技術的な) 準備には、技術者または非技術者である貢献者に新しいスキルが必要になる場合があります。 次の情報は、組織で必要なスキルを構築するのに役立ちます。
 
@@ -55,7 +55,7 @@ ms.locfileid: "84993380"
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>クラウド IT の役割の典型的なマッピング
 
-Microsoft とそのパートナーは、あらゆるお客様を対象に、Microsoft Azure サービスを使用するためのスキルの向上に役立つオプションを提供しています。
+Microsoft とそのパートナーは、あらゆるお客様を対象に、Azure サービスを使用するためのスキルの向上に役立つオプションを提供しています。
 
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro):クラウドのキャリア パスをマッピングするのに役立つ無料のオンライン リソース。 クラウド ロールと必要なスキルについて、業界のプロから学びます。 関係を保つために必要なスキルを磨くように、学習カリキュラムをご自分のペースで進められます。
 

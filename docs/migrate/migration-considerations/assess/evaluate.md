@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7666a937e59d9e528cb7337e83ab3ec4a20b448b
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 6cfa7478224185ca5be1535a50f7cdfe785617a7
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401336"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235009"
 ---
 # <a name="evaluate-workload-readiness"></a>ワークロードの準備状況を評価する
 

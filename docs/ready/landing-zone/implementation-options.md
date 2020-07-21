@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 93b5f540e8b7a501a7491f406d15296f2245e6ee
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ea137df62336139abf7a6a90b47f33ee710854be
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076804"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235230"
 ---
 # <a name="landing-zone-implementation-options"></a>ランディング ゾーンの実装オプション
 
@@ -32,10 +32,8 @@ ms.locfileid: "85076804"
 
 ランディング ゾーンの実装オプションと決定に影響する変数の一部を次に示します。
 
-<!-- docsTest:ignore "CAF Enterprise-scale" "CAF Terraform" -->
-
 | 実装オプション | 説明 | デプロイの速度 | より深い設計原則 | デプロイの手順 |
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|
 | [CAF 移行ランディング ゾーンのブループリント](./migrate-landing-zone.md) | 危険度の低い資産を移行するための基本的な基盤をデプロイします。 | 小規模から始める | [設計原則](./migrate-landing-zone.md#design-principles) | [デプロイする](./migrate-landing-zone.md) |
 | [CAF 基盤ブループリント](./foundation-blueprint.md) | ガバナンス戦略の開発を始めるために必要な最小限のツールが追加されます。 | 小規模から始める | [設計原則](./foundation-blueprint.md#design-principles) | [デプロイする](./foundation-blueprint.md) |
 | [CAF エンタープライズ規模のランディング ゾーン](./enterprise-scale.md) | エンタープライズ対応のプラットフォーム基盤と、完全な IT ポートフォリオをサポートするために必要なすべての共有サービスがデプロイされます。 | エンタープライズ規模 | [設計原則](../enterprise-scale/design-principles.md) | [デプロイする](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |

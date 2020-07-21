@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cc30b67d0103b60ff0b53187caef007063ca7efb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0902d72f2d11e3a930182c5ee88e18c9095d9574
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214261"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234992"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "83214261"
 
 - **ガイド付きセルフサービス。** 既存の技術チームが、Microsoft から支援を受けて、移行を実行します。
 - **FastTrack for Azure。** Microsoft FastTrack for Azure プログラムを使用して、移行の期間を短縮します。
-- **ソリューション パートナー。** Azure ソリューション パートナーまたはクラウド ソリューション パートナー (CSP) と連携して、移行を促進します。
+- **ソリューション パートナー。** Azure パートナーまたはクラウド ソリューション プロバイダー (CSP) と連携して移行を促進します。
 - **サポート付きセルフサービス。** Microsoft からのサポートを受けて、既存の技術スタッフが実行します。
 
 ## <a name="guided-self-service"></a>ガイド付きセルフサービス
@@ -49,23 +49,19 @@ ms.locfileid: "83214261"
 - Azure での Linux
 - SAP on Azure
 - ビジネス継続性とディザスター リカバリー (BCDR)
-- ハイ パフォーマンス コンピューティング*
-- クラウドネイティブ アプリ
+- ハイ パフォーマンス コンピューティング
+- クラウドネイティブ アプリケーション
 - DevOps
-- アプリの最新化
-- クラウド規模の分析**
-- インテリジェントなアプリ
-- インテリジェントなエージェント**
+- アプリケーションの最新化
+- クラウド規模の分析
+- インテリジェントなアプリケーション
+- インテリジェントなエージェント
 - Azure へのデータの最新化
 - セキュリティと管理
 - グローバルに分散されたデータ
-- IoT***
-
-\* 米国、カナダ、英国、および西ヨーロッパでの限定プレビュー。
-
-** 英国および西ヨーロッパでの限定プレビュー。
-
-*** 2019 年 H2 に利用可能
+- Windows Virtual Desktop
+- Azure Marketplace
+- 基礎とガバナンス
 
 一般的な FastTrack for Azure のエンゲージメントでは、Azure ソリューションの計画と開発を成功させるためのビジネス ビジョンの定義を Microsoft がお手伝いします。 チームは、アーキテクチャのニーズを評価し、Azure ソリューションの構築、デプロイ、管理に役立つガイダンス、設計の原則、ツール、リソースを提供します。 チームは、要求があればデプロイ サービスに適したスキルを持つパートナーを割り当て、定期的にデプロイが順調であることを確認して、障害の排除を支援します。
 
@@ -81,19 +77,19 @@ FastTrack for Azure の一般的な連携の主な段階は次のとおりです
 
 **評価:** Microsoft Services では、アーキテクチャ ワーク ショップ、Azure のリアルタイム情報、セキュリティと ID の脅威モデル、さまざまなツールで構成される[統合された、データおよびツール主導アプローチ](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf)を使用して、既存の Azure 環境に対する課題、リスク、推奨事項、問題に関する分析情報と、[最新化の概要ロードマップ](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf)などの重要な結果を提供します。
 
-**導入:** Microsoft Services の [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) により、要件を最も適切な参照アーキテクチャにマップすることによって核となる Azure の設計、パターン、ガバナンス アーキテクチャを確立し、ワークロードに必要なインフラストラクチャ、管理、セキュリティ、ID を計画、設計、デプロイします。
+**導入:** Microsoft Services の [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) を使用し、要件を最も適切な参照アーキテクチャにマップすることによって核となる Azure の設計、パターン、ガバナンス アーキテクチャを確立し、ワークロードに必要なインフラストラクチャ、管理、セキュリティ、ID を計画、設計、デプロイします。
 
-**移行/最適化:** Microsoft Services の [Cloud Modernization Solution](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) では、アプリケーションとインフラストラクチャを Azure に移動し、合理化された移行によってクラウドにデプロイした後で最適化および最新化を行う、包括的なアプローチが提供されます。
+**移行と最適化:** Microsoft Services の[クラウド最新化ソリューション](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf)では、アプリケーションとインフラストラクチャを Azure に移動し、合理化された移行によってクラウドにデプロイした後で最適化および最新化を行う、包括的なアプローチが提供されます。
 
-**イノベーション:** Microsoft Services の[クラウドのセンター オブ エクセレンス (CCoE) ソリューション](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)では、DevOps コーチング エンゲージメントが提供され、DevOps の原則と規範的なクラウド ネイティブのサービス管理とセキュリティ コントロールの組み合わせにより、安全で予測可能かつ柔軟なサービス配信および運用管理機能で、ビジネス革新が推進され、アジリティが向上し、価値実現の時間が短縮されます。
+**イノベーション:** Microsoft Services の[クラウドのセンター オブ エクセレンス (CCoE) ソリューション](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)では、DevOps コーチング エンゲージメントが提供され、DevOps の原則と規範的なクラウドネイティブのサービス管理とセキュリティ コントロールの組み合わせにより、安全で予測可能かつ柔軟なサービス配信および運用管理機能で、ビジネス革新が推進され、アジリティが向上し、価値実現の時間が短縮されます。
 
-## <a name="azure-support"></a>Azure Support
+## <a name="azure-support"></a>Azure サポート
 
 ご質問がある場合やヘルプが必要な場合は、[サポート リクエストを作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)してください。 サポート リクエストに高度な技術的ガイダンスが必要な場合は、[Azure サポート プラン](https://azure.microsoft.com/support/plans)でニーズに最適なプランを探してください。
 
 ## <a name="azure-solutions-partner"></a>Azure ソリューション パートナー
 
-Microsoft 認定ソリューション プロバイダーは、Microsoft のテクノロジに基づく最新の カスタマー ソリューションを世界中に提供することを専門としています。 経験豊富なパートナーのサポートでクラウドでのビジネスを最適化します。
+Microsoft 認定ソリューション プロバイダーは、Microsoft のテクノロジに基づく最新のカスタマー ソリューションを世界中に提供することを専門としています。 経験豊富なパートナーのサポートでクラウドでのビジネスを最適化します。
 
 既製の Azure ソリューションまたはカスタム Azure ソリューションを提供するパートナー、また、それらのソリューションをデプロイし、管理するうえでの支援を提供するパートナーからサポートを得られます。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: d65bffde98974ce9326a33884257ecc9e681fe50
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 576c6d1fecc908011edeb447595e025819439cc7
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787692"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194013"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークとは
 
@@ -33,7 +33,7 @@ Azure 向けの Microsoft クラウド導入フレームワークのベスト �
 
 | | | | | |
 |--|--|--|--|--|
-| <br> ![戦略アイコン](./_images/icons/strategy.png) | <br> [戦略](./strategy/index.md):&nbsp;業務上の正当な理由と導入による予想される結果を定義する。&nbsp;&nbsp;&nbsp; | <br> ![計画アイコン](./_images/icons/plan.png) | <br> [計画](./plan/index.md):&nbsp;ビジネスの結果に合わせて実行可能な導入計画を調整する。&nbsp;&nbsp;&nbsp; |
+| <br> ![戦略アイコン](./_images/icons/strategy.png) | <br> [戦略](./strategy/index.md):業務上の&nbsp;正当な理由&nbsp;と導入による予想される結果を&nbsp;定義する&nbsp;。 | <br> ![計画アイコン](./_images/icons/plan.png) | <br> [計画](./plan/index.md):ビジネスの結果に合わせて実行可能な&nbsp;導入&nbsp;計画を&nbsp;調整する&nbsp;。 |
 | <br> ![準備完了アイコン](./_images/icons/ready.png)       | <br> [準備完了](./ready/index.md):計画された変更のためにクラウド環境を準備する。 | <br> ![移行アイコン](./_images/icons/adopt.png) | <br> [移行](./migrate/index.md):既存のワークロードを移行して最新化する。 |
 | <br> ![イノベーション アイコン](./_images/icons/innovate.png) | <br> [イノベーション](./innovate/index.md):新しいクラウド ネイティブ ソリューションまたはハイブリッド ソリューションを開発する。 | <br> ![ガバナンス アイコン](./_images/icons/govern.png) | <br> [ガバナンス](./govern/index.md):環境とワークロードを管理する。 |
 | <br> ![管理アイコン](./_images/icons/manage.png)     | <br> [管理](./manage/index.md):クラウド ソリューションおよびハイブリッド ソリューションのための運用管理。 | <br> ![整理アイコン](./_images/icons/organize.png) | <br> [整理](./organize/index.md):環境とワークロードを管理する。 |
@@ -42,7 +42,7 @@ Azure 向けの Microsoft クラウド導入フレームワークのベスト �
 
 上記の各手法は、広範なクラウド導入ライフサイクルの一部です。 クラウド導入フレームワークは、次に示すように、一般的な阻害要因を克服するための具体的なアプローチとして各手法を提供することで、導入の各フェーズでお客様をサポートする完全なライフサイクル フレームワークです。
 
-::: image type="content" source="./_images/caf-overview-new.svg" alt-text="Overview of the Cloud Adoption Framework" :::
+![クラウド導入フレームワークの概要](./_images/caf-overview-new.png)
 
 ## <a name="intent"></a>Intent
 

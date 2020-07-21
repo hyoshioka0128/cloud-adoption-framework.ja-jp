@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f45418b85c0f7afbae2ea23586693c7de5054b79
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 74c304969760e5bc52e318aa33401af12704d55d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075505"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190738"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>クラウド管理のためのワークロードの特殊化
 
@@ -52,7 +52,7 @@ ms.locfileid: "85075505"
 | 要件                          | ツール                 | 目的                                                                                |
 | ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------- |
 | アプリケーションの監視               | Application Insights | アプリの監視と診断                                                    |
-| パフォーマンス、可用性、使用状況 | Application Insights | アプリ ダッシュボード、複合マップ、使用状況、トレースを使用した高度なアプリケーション監視 |
+| パフォーマンス、可用性、使用状況 | Application Insights | アプリケーション ダッシュボード、複合マップ、使用状況、トレースを使用した高度なアプリケーション監視 |
 
 ### <a name="deploy-application-insights"></a>Application Insights のデプロイ
 

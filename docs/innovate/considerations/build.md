@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e895c3ed8f11f618ca19ae45d9c7cb26acc76925
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 66f1de5c339b237e780bf50c82438ce6831fb3c3
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993953"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193662"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
@@ -77,7 +77,7 @@ MVP の定義には、たゆまない単純化アプローチが推奨されま�
 
 場合によっては、イノベーションへの最速のパスは、クラウド導入チームが正確に仮説が検証されたと確信するまで、このような規範を一時的に完全に回避することを意味します。 Microsoft のようなテクノロジ企業によるこのようなガイダンスは、直感に反するように聞こえるかもしれません。 ただし、これは、特定の技術の決定ではなく、顧客のニーズが MVP ソリューションにおける最優先事項であると強調することです。
 
-一般に、MVP ソリューションは、最小限の機能と限られた洗練を備えたシンプルな Web アプリまたはデータ ソリューションで構成されます。 プロフェッショナルな開発の専門知識を持つ組織にとって、多くの場合、このパスは学習とイテレーションへの最速のものです。 次に、チームが MVP を構築するために利用できるその他のアプローチをいくつか紹介します。
+一般に、MVP ソリューションは、最小限の機能と限られた洗練を備えたシンプルなアプリケーションまたはデータ ソリューションで構成されます。 プロフェッショナルな開発の専門知識を持つ組織にとって、多くの場合、このパスは学習とイテレーションへの最速のものです。 次に、チームが MVP を構築するために利用できるその他のアプローチをいくつか紹介します。
 
 - 99% の時間は間違っているが、特定の望ましい結果を示す予測アルゴリズム。
 - 運用規模で安全に通信することはできないが、プロセス内のほぼリアルタイムのデータの価値を実証する IoT デバイス。

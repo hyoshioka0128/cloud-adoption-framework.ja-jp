@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 40a0899a10e242e98ed16aa2bcbfdbd55f65afc2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8d1f6c4b5f0f672b9dd6b7fb9adc5b0fce4a54a6
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216080"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234822"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>移行の間のステージング アクティビティを理解する
 

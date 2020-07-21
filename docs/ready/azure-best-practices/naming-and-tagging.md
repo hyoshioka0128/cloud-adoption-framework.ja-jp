@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: a0060f6d92b7479158fd46f951e994cc0dcb9d60
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 938bbc706fdb4aa500cb55021ec73d17dcfc6e1e
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076745"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194580"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -117,7 +117,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 | コンテナー インスタンス          | aci-        |
 | AKS クラスター                 | aks-        |
 | Service Fabric クラスター      | sf-         |
-| App Service Environment     | ase-        |
+| App Service 環境     | ase-        |
 | App Service プラン            | plan-       |
 | Web アプリ                     | app-        |
 | 関数アプリ                | func-       |
@@ -212,7 +212,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 
 | タグ名                  | 説明                                                                                                                                                                                                          | Key               | 値の例                                              |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|------------------------------------------------------------|
-| アプリケーション名          | リソースが関連付けられているアプリケーション、サービス、またはワークロードの名前。                                                                                                                                       | _ApplicationName_ | _{app name}_                                               |
+| アプリケーション名          | リソースが関連付けられているアプリケーション、サービス、またはワークロードの名前。                                                                                                                                       | _ApplicationName_ | _{アプリケーション名}_                                               |
 | 承認者名             | このリソースに関連したコストの承認を担当する人物。                                                                                                                                                     | _Approver_        | _{email}_                                                  |
 | 必要な予算/承認された予算  | このアプリケーション、サービス、またはワークロードに割り当てられた金額。                                                                                                                                                          | _BudgetAmount_    | _{\$}_                                                     |
 | 事業単位             | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 小規模な組織では、このタグは 1 つの会社の、または共有された最上位の組織要素を表す可能性があります。 | _BusinessUnit_    | _FINANCE_、_MARKETING_、 _{Product Name}_ 、_CORP_、_SHARED_ |
@@ -293,7 +293,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](https://
 | Storage アカウント (診断ログ) | グローバル | stdiag\<first 2 letters of subscription name and number\>\<region\>\<\#\#\#\> | <li> stdiagsh001eastus2001 <li> stdiagsh001westus001 |
 | Azure StorSimple                  | グローバル | ssimp\<App Name\>\<Environment\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionsdev |
 
-### <a name="example-names-ai-and-machine-learning"></a>名前の例:AI および機械学習
+### <a name="example-names-ai-and-machine-learning"></a>名前の例:AI と機械学習
 
 | 資産の種類                       | Scope          | Format                            | 例                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|

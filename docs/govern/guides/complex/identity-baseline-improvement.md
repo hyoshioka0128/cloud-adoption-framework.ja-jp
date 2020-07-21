@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f239c0cb5cadad59ca687f156b04c095ee7b3c1
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 52131e3d5fd93eb48ee0cbc941f5cffe48375daf
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754932"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191554"
 ---
-<!-- cSpell:ignore CFO's MPLS -->
+<!-- cSpell:ignore MPLS -->
 
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善
 

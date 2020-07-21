@@ -7,13 +7,17 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 117f8bebd157069703add28348667abe88ddf96e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a689de5ddf48ff095a59d362571c75791cf10eff
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432431"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235298"
 ---
+<!-- cSpell:ignore Eason -->
+
+<!-- docsTest:ignore "Eason Matrix" -->
+
 # <a name="business-change-plan"></a>ビジネス変更プラン
 
 従来、IT は新しいワークロードのリリースを監視してきました。 データセンターの移行やクラウドへの移行などの大きな変革時に、IT リード導入の類似パターンを適用できます。 ただし、従来のアプローチでは、追加のビジネス価値を実現する機会を逃す可能性があります。 このため、移行したワークロードを実稼働に昇格する前に、ユーザー導入への広範なアプローチの実装をお勧めします。 この記事では、ビジネス変更プランを標準ユーザー導入プランに追加する方法について説明します。
@@ -25,8 +29,7 @@ ms.locfileid: "80432431"
 アプローチはさまざまに異なることがありますが、ほとんどのユーザー導入プランには汎用的なテーマが存在します。 これらのテーマは一般に、段階的な改善に合わせたリスク コントロールと円滑化のアプローチに基づきます。 次の図に示す Eason Matrix は、さまざまな導入の種類についてそれらのテーマの背後にある推進力を表します。
 
 ![ユーザー導入の懸念事項の Eason Matrix](../../../_images/migrate/eason-matrix.jpg)
-
-*ユーザー導入の種類の Eason Matrix。*
+_図:ユーザー導入の種類の Eason Matrix。_
 
 これらのテーマは多くの場合に、ユーザーへの新しいソリューションの導入では、主にリスク コントロールと変更の円滑化に重点を置くべきであるという前提に基づきます。 さらに、IT はテクノロジの変更によるリスクと、その変更の円滑化に主に重点を置いてきました。
 
@@ -66,6 +69,8 @@ ms.locfileid: "80432431"
 
 ## <a name="references"></a>References
 
-<!-- cSpell:ignore Eason -->
+<!-- docsTest:disable -->
 
-- Eason, K.(1988) _Information technology and organizational change_ (情報技術と組織の変化)、ニューヨーク:Taylor と Francis
+- Eason, K.(1988) _Information Technology and Organizational Change_ (情報技術と組織の変化)、ニューヨーク:Taylor と Francis
+
+<!-- docsTest:enable -->

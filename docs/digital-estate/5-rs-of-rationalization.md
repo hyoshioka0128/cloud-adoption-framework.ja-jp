@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5c4098e2d5655d3b0fbb7fcb1c5a0470547421f3
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 775dea2eb2bb91a1434714b151710fbb3c96ea8d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753550"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190483"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 
@@ -123,7 +123,7 @@ ms.locfileid: "83753550"
 一般的な促進要因には、次のものが含まれます。
 
 - イノベーションの加速。
-- アプリの迅速なビルド。
+- アプリケーションの短期間構築。
 - 運用コストの削減。
 
 定量分析の要因には、次のものが含まれます。

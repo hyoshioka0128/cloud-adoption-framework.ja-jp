@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 72dc18bc354e1a3f4a95a2a0c55373ee90f978f4
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 19fc139021f891eafd9c0ac8034a1f57d9f6f7d0
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786860"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191214"
 ---
 # <a name="understand-business-risk-during-cloud-migration"></a>クラウド移行時のビジネス リスクの理解
 
@@ -30,7 +30,7 @@ ms.locfileid: "84786860"
 
 - 初期の実験段階では、関連データがほとんどないか、まったくない少数の資産がデプロイされます。 リスクは小規模です。
 - 最初のワークロードがデプロイされると、リスクは少し上がります。 このリスクは、ユーザー ベースが小さく、本質的にリスクの低いアプリケーションを選択することによって容易に修復されます。
-- より多くのワークロードがオンラインになるにつれて、リスクはリリースごとに変わります。 新しいアプリがリリースされると、リスクは変わります。
+- より多くのワークロードがオンラインになるにつれて、リスクはリリースごとに変わります。 新しいアプリケーションがリリースされると、リスクは変わります。
 - ある会社が最初の 10 または 20 個のアプリケーションをオンラインに移行したときと、1,000 個目のアプリケーションをクラウドでの運用に移行したときでは、リスク プロファイルは大きく異なります。
 
 従来のオンプレミスの場所に累積された資産は、一定の期間にわたって累積されてきた可能性があります。 ビジネス チームと IT チームの成熟度は、おそらく同じように成長していました。 このような並行した成長によって、不必要なポリシーの荷物が生じる傾向があります。

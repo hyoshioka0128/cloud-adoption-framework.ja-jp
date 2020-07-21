@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 237ec750ddc8be3614d686c325458f12e9b0f5d9
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 6aa2780ba7b788701a71f366b03df4a1ccec32fc
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862366"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193849"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -68,19 +68,20 @@ ms.locfileid: "83862366"
 Azure リソースの月額料金を予測するために、利用できるツールがいくつかあります。
 
 <!-- TODO: Change "input costs" -->
+
 - **Azure 料金計算ツール:** VM やストレージなど、見積もる製品を選択し、料金計算ツールにコストを入力して見積もりを作成します。
 
-    ![Azure 料金計算ツール](../../migrate/azure-best-practices/media/migrate-best-practices-costs/pricing.png) _Azure 料金計算ツール_
+    ![Azure 料金計算ツール](../../migrate/azure-best-practices/media/migrate-best-practices-costs/pricing.png) _Azure 料金計算ツール。_
 
 - **Azure Migrate:** コストを見積もるには、Azure でワークロードを実行するために必要なすべてのリソースを確認し、それらを計上します。 このデータを取得するには、サーバー、VM、データベース、ストレージを含む資産のインベントリを作成します。 この情報は、Azure Migrate を使用して収集できます。
   - Azure Migrate は、オンプレミス環境で検出と評価を行ってインベントリを提供します。
   - Azure Migrate では、全体像を把握できるように、VM 間の依存関係をマップして表示できます。
   - Azure Migrate の評価には、推定コストが含まれています。
-    - **コンピューティング コスト:** Azure Migrate は、評価の作成時には推奨される Azure VM のサイズを採用し、Azure Billing API シリーズを使用して VM の推定月間コストを計算します。 この見積りでは、オペレーティング システム、ソフトウェア アシュアランス、予約インスタンス、VM のアップタイム、場所、および通貨の設定が考慮されます。 評価に含まれるすべての VM にわたるコストが集計され、月間コンピューティング コストの合計が計算されます。
+    - **コンピューティング コスト:** Azure Migrate は、評価の作成時には推奨される Azure VM のサイズを採用し、Azure Billing API シリーズを使用して VM の推定月間コストを計算します。 この見積りでは、オペレーティング システム、ソフトウェア アシュアランス、Azure Reserved VM Instances、VM のアップタイム、場所、および通貨の設定が考慮されます。 評価に含まれるすべての VM にわたるコストが集計され、月間コンピューティング コストの合計が計算されます。
     - **ストレージ コスト:** Azure Migrate は、評価に含まれるすべての VM のストレージ コストを集計して、月間ストレージ コストの合計を計算します。 特定のマシンの月間ストレージ コストは、そのマシンに接続されているすべてのディスクの月間コストを集計することで計算できます。
 
     ![Azure Migrate](../../migrate/azure-best-practices/media/migrate-best-practices-costs/assess.png)
-    "_Azure Migrate の評価_"
+     _Azure Migrate の評価。_
 
 **詳細情報:**
 
@@ -93,18 +94,18 @@ Azure リソースの月額料金を予測するために、利用できるツ�
 
 ワークロードをサポートする Azure VM をデプロイするときは、さまざまなオプションを選択できます。 各種類の VM には特定の機能があり、さまざまな組み合わせの CPU、メモリ、およびディスクが用意されています。 VM は以下のようにグループ化されます。
 
-| Type | 詳細 | 用途 |
+| Type | 詳細 | 使用法 |
 |---|---|---|
 | **汎用目的** | CPU とメモリのバランスがとれています。 | テストと開発、小規模から中規模のデータベース、小規模から中規模のボリュームに適しています。 | トラフィック Web サーバー。 |
 | **コンピューティング最適化** | メモリに対する CPU の比が大きくなっています。 | トラフィック量が中程度の Web サーバー、ネットワーク アプライアンス、バッチ処理、アプリ サーバーに適しています。 |
 | **メモリ最適化** | 高いメモリ対 CPU。 | リレーショナル データベース、中から大規模のキャッシュ、インメモリ分析に適しています。 |
 | **ストレージの最適化** | 高いディスク スループットと I/O。 | ビッグ データ、SQL、および NoSQL のデータベースに適しています。 |
 | **GPU の最適化** | 特殊な VM。 1 つまたは複数の GPU。 | 大量のグラフィックスおよびビデオの編集。 |
-| **高性能** | 最も高速で最も強力な CPU。 オプションの、高スループットのネットワーク インターフェイス (RDMA) を備えた VM。 | クリティカルな高性能アプリ。 |
+| **高性能** | 最も高速で最も強力な CPU。 オプションの、高スループットのネットワーク インターフェイス (RDMA) を備えた VM。 | クリティカルな高性能アプリケーション。 |
 
 - これらの VM 間の価格の違いと、長期的な予算への影響を理解しておくことが重要です。
 - 種類ごとに、内部にいくつかの VM シリーズがあります。
-- さらに、あるシリーズ内の VM を選択すると、そのシリーズ内の VM のみをスケールアップまたはスケールダウンできます。 たとえば、dsv2\_2 は dsv2\_4 にスケールアップできますが、fsv2\_2 などの異なるシリーズには変更できません。
+- さらに、あるシリーズ内の VM を選択すると、そのシリーズ内の VM のみをスケールアップまたはスケールダウンできます。 たとえば、`DS2_v2` インスタンスは `DS4_v2` にスケールアップできますが、`F2s_v2` インスタンスなどの異なるシリーズには変更できません。
 
 **詳細情報:**
 
@@ -160,7 +161,7 @@ Azure では、さまざまな種類のストレージ アカウントとパフ�
 | --- | --- | --- |
 | **汎用 v2 Standard レベル** | BLOB (ブロック、ページ、追加)、ファイル、ディスク、キュー、およびテーブルをサポートしています。 <br><br> ホット、クール、およびアーカイブのアクセス層をサポートしています。 ゾーン冗長ストレージ (ZRS) がサポートされています。 | ほとんどのシナリオの、ほとんどの種類のデータに使用します。 Standard ストレージ アカウントは、HDD または SSD ベースとして指定できます。 |
 | **汎用 v2 Premium レベル** | BLOB ストレージ データ (ページ BLOB) をサポートしています。 ホット、クール、およびアーカイブのアクセス層をサポートしています。 ZRS がサポートされています。 <br><br> SSD に格納されます。 | すべての VM のために使用することをお勧めします。 |
-| **汎用 v1** | アクセスの階層化はサポートされません。 ZRS をサポートしていません | アプリに Azure クラシック デプロイ モデルが必要な場合に使用します。 |
+| **汎用 v1** | アクセスの階層化はサポートされません。 ZRS をサポートしていません | アプリケーションに Azure クラシック デプロイ モデルが必要な場合に使用します。 |
 | **BLOB** | 非構造化オブジェクトを格納するための特殊なストレージ アカウント。 ブロック BLOB と 追加 BLOB のみを提供します (ファイル、キュー、テーブル、ディスクのストレージ サービスはありません)。 同じ持続性、可用性、スケーラビリティ、および General Purpose v2 と同じパフォーマンスを提供します。 | これらのアカウントにページ BLOB を格納することはできないため、VHD ファイルは格納できません。 アクセス層はホットまたはクールに設定できます。 |
 
 <!--markdownlint-enable MD033 -->
@@ -195,7 +196,7 @@ Azure では、さまざまな種類のストレージ アカウントとパフ�
 - データを分析して、Azure のリソース グループとリソースについての予算ベースラインを生成します。
 - サイズを減らし、リソースを停止または一時停止することで、さらにコストを削減できる使用パターンを特定します。
 
-このセクションのベスト プラクティスには、Azure ハイブリッド特典と予約 VM の使用、複数のサブスクリプションにわたるクラウドの支出の削減、コストの予算管理と分析での Azure Cost Management の使用、リソースの監視とリソース グループ予算の実施、および監視、ストレージ、VM の最適化が含まれます。
+このセクションのベスト プラクティスには、Azure ハイブリッド特典と Azure Reserved VM Instances の使用、複数のサブスクリプションにわたるクラウドの支出の削減、コストの予算管理と分析での Azure Cost Management の使用、リソースの監視とリソース グループ予算の実施、および監視、ストレージ、VM の最適化が含まれます。
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>ベスト プラクティス:Azure ハイブリッド特典を活用する
 
@@ -209,18 +210,18 @@ Microsoft の統合されたオンプレミス/Azure 製品ポートフォリオ
 - [Windows Server 向けの Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit)の詳細を確認します。
 - [SQL Server Azure VM の料金ガイダンス](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)を確認します。
 
-## <a name="best-practice-use-reserved-vm-instances"></a>ベスト プラクティス:予約 VM インスタンスを使用する
+## <a name="best-practice-use-azure-reserved-vm-instances"></a>ベスト プラクティス:Azure Reserved VM Instances の使用
 
 ほとんどのクラウド プラットフォームは、従量課金制で提供されています。 動的なワークロードがどのようになるか分かっているとは限らないため、このモデルには不利な点があります。 ワークロードの明確な意図を指定すれば、インフラストラクチャの計画に貢献することになります。
 
-Azure Reserved VM Instances を使用すると、VM インスタンスの 1 年間または 3 年間の期間分について前払いすることになります。
+Azure Reserved VM Instances を使用すると、予約インスタンスの 1 年間または 3 年間の期間分について前払いすることになります。
 
 - 前払いにより、使用するリソースに関して割引が提供されます。
-- VM、SQL Database のコンピューティング、Azure Cosmos DB、またはその他のリソース コストを、従量課金制の料金の最大 72% まで大幅に削減できます。
-- 予約は課金割引を提供するもので、リソースの実行時の状態には影響しません。
+- VM のコンピューティング、SQL Database のコンピューティング、Azure Cosmos DB、またはその他のリソースのコストを従量課金制の料金の最大 72% まで大幅に削減できます。
+- 予約インスタンスは課金割引を提供するもので、リソースの実行時の状態には影響しません。
 - 予約インスタンスはキャンセルできます。
 
-![予約インスタンス](../../migrate/azure-best-practices/media/migrate-best-practices-costs/reserve.png)
+![Azure Reserved Virtual Machine Instances](../../migrate/azure-best-practices/media/migrate-best-practices-costs/reserve.png)
 _図 1:Azure 予約 VMs。_
 
 **詳細情報:**
@@ -292,7 +293,7 @@ Azure Cost Management では、次の操作が可能になります。
   - コスト管理データは、分析のために Azure Storage にエクスポートできます。
 
     ![Azure Cost Management で予算を表示する](../../migrate/azure-best-practices/media/migrate-best-practices-costs/budget.png)
-    _Azure Cost Management の予算_
+    _Azure Cost Management と Billing の予算。_
 
 - **コスト分析を行う:** コスト分析を取得し、組織のコストを探って分析すれば、コストがどのように生じるかを理解し、支出の傾向を識別する助けになります。
   - EA ユーザーがコスト分析を使用できます。

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1a85c1abd6cadb53df8862ea5eb3558811c7cd87
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 3afc881c3f99d740bf6d9146db2cb5024be56ac8
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075608"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193577"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>フェーズ 1:Azure サーバー管理サービスの前提条件となる計画
 
@@ -55,7 +55,7 @@ Azure 管理サービスをオンボードするために使用する多くの�
 - **Azure の地域と規制遵守:** Azure リージョンは "_地域_" に分かれています。 [Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies)では、データの保存場所、主権、コンプライアンス、回復性に関する要件が地域的な境界内で確実に遵守されます。 ワークロードがデータ主権またはその他のコンプライアンス要件の対象となる場合、ワークスペースと Automation アカウントは、それらがサポートするワークロード リソースと同じ Azure の地域内のリージョンにデプロイされる必要があります。
 - **ワークスペースの数:** 原則として、Azure の地域ごとに必要な最も少ない数のワークスペースを作成します。 コンピューティング リソースやストレージ リソースが配置される Azure の地域ごとに少なくとも 1 つのワークスペースを作成することをお勧めします。 この初期の配置により、今後データを異なる地域に移行する場合に規制の問題を回避しやすくなります。
 - **データ保持とキャッピング:** ワークスペースや Automation アカウントを作成するとき、データ保持ポリシーまたはデータ キャッピングの要件も考慮に入れることが必要な場合もあります。 ワークスペースを計画するときこれらの原則およびその他の考慮事項の詳細については、[Azure Monitor でログ データとワークスペースを管理する](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)についての記事を参照してください。
-- **リージョン マッピング:** Log Analytics ワークスペースと Azure Automation アカウントのリンクは特定の Azure リージョン間でのみサポートされます。 たとえば、Log Analytics ワークスペースが `EastUS` リージョンにホストされている場合、リンクされる Automation アカウントは、管理サービスと一緒に使用される `EastUS2` リージョン内に作成する必要があります。 他のリージョン内に作成した Automation アカウントを `EastUS` 内のワークスペースにリンクすることはできません。 デプロイ リージョンの選択は、Azure の地域要件に大きく影響する可能性があります。 ワークスペースと Automation アカウントをホストするリージョンを決定する際は、[リージョン マッピング テーブル](https://docs.microsoft.com/azure/automation/how-to/region-mappings)を参照してください。
+- **リージョン マッピング:** Log Analytics ワークスペースと Azure Automation アカウントのリンクは特定の Azure リージョン間でのみサポートされます。 たとえば、Log Analytics ワークスペースが `East US` リージョンにホストされている場合、リンクされる Automation アカウントは、管理サービスと一緒に使用される `East US 2` リージョン内に作成する必要があります。 他のリージョン内に作成した Automation アカウントを `East US` 内のワークスペースにリンクすることはできません。 デプロイ リージョンの選択は、Azure の地域要件に大きく影響する可能性があります。 ワークスペースと Automation アカウントをホストするリージョンを決定する際は、[リージョン マッピング テーブル](https://docs.microsoft.com/azure/automation/how-to/region-mappings)を参照してください。
 - **ワークスペース マルチホーム:** Azure Log Analytics エージェントは一部のシナリオでマルチホームをサポートしますが、この構成で実行すると、エージェントはいくつかの制限事項や課題に直面します。 特定のシナリオに対してマイクロソフトが推奨する場合を除き、Log Analytics エージェント上にマルチホームを構成しないでください。
 
 ## <a name="resource-placement-examples"></a>リソースの配置例

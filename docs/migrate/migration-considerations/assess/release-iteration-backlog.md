@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 90b6ecf9f7f4914855bbeeaa0afc5d920a85eeb4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d8b54ef557be065088ea853009b12ac436bb4f99
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214193"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234958"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>増分型の移行作業での変更を管理する
 

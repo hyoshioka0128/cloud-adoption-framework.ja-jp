@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 965e2021a03429782352889a15a8632ec1a84641
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 1894872688948e3f4b80d8e52095cf15b40f8f50
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787539"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86372865"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "84787539"
 
 Azure が提供する多数のサービスを組み合わせると、アプリケーションやそれらを支える Azure リソースからテレメトリを収集、分析し、それに基づいて対処するための包括的なソリューションが提供されます。 さらに、これらのサービスを拡張して、オンプレミスの重要なリソースを監視して、ハイブリッド監視環境を構築することもできます。
 
-# <a name="azure-monitor"></a>[Azure Monitor](#tab/AzureMonitor)
+## <a name="azure-monitor"></a>[Azure Monitor](#tab/AzureMonitor)
 
 Azure Monitor では、Azure 内のすべての監視データと診断データに対して 1 つの統合されたハブが提供されます。 これを使用してご利用のリソース全体を可視化することができます。 Azure Monitor を使用すれば、問題を見つけて修正し、パフォーマンスを最適化することができます。 顧客の行動を把握することもできます。
 
@@ -45,7 +45,7 @@ Azure Monitor では、Azure 内のすべての監視データと診断データ
 
 Azure Monitor を調査するには、[Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview) に移動します。
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 詳しくは、「[Azure Monitor のドキュメント](https://docs.microsoft.com/azure/monitoring-and-diagnostics)」をご覧ください。
 
@@ -55,13 +55,13 @@ Azure Monitor を調査するには、[Azure Portal](https://portal.azure.com/#b
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-## <a name="action"></a>アクション
+### <a name="action"></a>アクション
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview]" submitText="Explore Azure Monitor" :::
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
+## <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 Azure Service Health では、ご利用中の Azure サービスとリージョンの正常性について、個々のお客様に応じたビューを提供します。 アクティブな問題に関する情報が Azure Service Health に投稿され、リソースへの影響を把握するのに役立ちます。 通常の更新情報では、問題が解決されたときに随時情報が提供されます。
 
@@ -77,7 +77,7 @@ Azure Service Health には以下が含まれます。
 
 <!-- markdownlint-disable MD024 -->
 
-## <a name="action"></a>アクション
+### <a name="action"></a>アクション
 
 サービス正常性アラートを設定するには:
 
@@ -93,18 +93,18 @@ Azure Service Health には以下が含まれます。
 
 Azure Service Health アラートを設定するには、[Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts) に移動します。
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 詳細については、「[Azure Service Health](https://docs.microsoft.com/azure/service-health)」を参照してください。
 
 ::: zone-end
 
-# <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
+## <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
 Azure Advisor は、Azure デプロイのベスト プラクティスをフォローして実装するのに役立つ個人用に設定された無料のクラウド コンサルタントです。 リソースの構成と使用状況テレメトリが分析され、環境を最適化に役立つソリューションが推奨されます。 推奨事項は、次のカテゴリに分割されています。
 
 - **高可用性:** ビジネスに不可欠なアプリケーションの継続性を向上させることができます。 推奨事項には、可用性セットへの仮想マシンの追加や geo 冗長エンドポイントの追加などがあります。
-- **セキュリティ:** セキュリティ侵害に至る可能性がある脅威と脆弱性を検出します。 推奨事項には、ディスク暗号化の適用やネットワーク セキュリティ グループの有効化などがあります。
+- **セキュリティ:** セキュリティ侵害に至る可能性がある脅威と脆弱性を検出します。 推奨事項には、Azure ディスク暗号化の適用やネットワーク セキュリティ グループの有効化などがあります。
 - **パフォーマンス:** アプリケーションの速度を向上させます。 推奨事項には、インデックスの作成または Traffic Manager の設定の再構成による SQL クエリのパフォーマンスの向上などが含まれます。
 - **コスト:** Azure の全体的な支出を最適化し、削減します。 推奨事項には、使用頻度の低い仮想マシンのサイズ変更またはシャットダウンや、総保有コストを削減するための Azure Reservations への切り替えなどが含まれます。
 - **オペレーショナル エクセレンス:** プロセスとワークフローの効率性と管理性を向上させます。 推奨事項としては、Azure Policy ルールの設定と適用、無効なログ アラート ルールの修復、Azure Service Health アラートの構成などが含まれる場合があります。
@@ -113,7 +113,7 @@ Advisor での推奨事項は、デプロイするリソースと Azure 内で�
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>アクション
+### <a name="action"></a>アクション
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Expert/AdvisorBlade]" submitText="Explore Azure Advisor" :::
 
@@ -123,13 +123,13 @@ Advisor での推奨事項は、デプロイするリソースと Azure 内で�
 
 Azure Advisor を調査するには、[Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorBlade) に移動します。
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 詳しくは、「[Azure Advisor のドキュメント](https://docs.microsoft.com/azure/advisor)」をご覧ください。
 
 ::: zone-end
 
-# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+## <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Azure Security Center も、監視戦略における重要な役割を果たします。 コンピューター、ネットワーク、ストレージ、データ サービス、およびアプリケーションのセキュリティを監視するために役立てることができます。 Security Center では、Azure リソースを対象とするアクティブな脅威の識別に役立つ機械学習と行動分析を使用して、高度な脅威検出が提供されます。 マルウェアやその他の不審なコードをブロックし、ブルート フォース攻撃やその他のネットワーク攻撃にさらされる領域を縮小する脅威の防止も提供されます。
 
@@ -139,7 +139,7 @@ Azure Security Center は Free と Standard という 2 つのレベルで提供
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>アクション
+### <a name="action"></a>アクション
 
 **最初の 30 日間は無料でご利用いただける Standard レベルをお試しください。**
 
@@ -153,7 +153,7 @@ Azure Security Center は Free と Standard という 2 つのレベルで提供
 
 Azure Security Center について調べるには、[Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0) に移動します。
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 詳しくは、「[Azure Security Center のドキュメント](https://docs.microsoft.com/azure/security-center)」をご覧ください。
 

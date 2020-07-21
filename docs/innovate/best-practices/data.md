@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9e54205060604e24974d853e666962130b756ada
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 85b24ecd5045554181cd88aa9671ab8f85fcad25
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814921"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193747"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Azure でデータを民主化するためのツール
 
@@ -55,7 +55,7 @@ Azure では、上記のフェーズでデジタル発明を加速するため�
 - [SQL Server Integration Services](https://docs.microsoft.com/sql/integration-services)
 - [Azure Stack](https://docs.microsoft.com/azure-stack)
 - [SQL Server Stretch Database](https://docs.microsoft.com/sql/sql-server/stretch-database)
-- [Microsoft Azure StorSimple](https://docs.microsoft.com/azure/storsimple)
+- [Azure StorSimple](https://docs.microsoft.com/azure/storsimple)
 - [Azure Files](https://docs.microsoft.com/azure/storage/files)
 - [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning)
 - [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase)

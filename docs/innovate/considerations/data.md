@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: eb54bd4c583878fb72b4e7401fd05662ca87bc63
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 20ba243ff81397aa475f13b61b14f6889fc89f95
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224138"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193696"
 ---
 # <a name="democratize-data"></a>データの民主化
 

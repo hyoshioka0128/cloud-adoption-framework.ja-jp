@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 83ce5d4a2c4cb44ebd66f1f784002660bad6c86f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d838b2bf1e05152fc9273746b264d8f2da3b77e5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621662"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194631"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -28,7 +28,7 @@ ms.locfileid: "83621662"
 
 ### <a name="classification"></a>分類
 
-"_タグ付け_" は、アセットを分類する簡単な方法です。 タグ付けにより、資産にメタデータが関連付けられます。 このメタデータを使用して、さまざまなデータ ポイントに基づいて資産を分類できます。 企業がコスト管理の取り組みの一環としてタグを使って資産を分類する場合、事業単位、部署、請求コード、地域、環境、プロジェクト、ワークロード、"アプリケーション分類" などのタグが必要であることが多いです。 Azure Cost Management では、これらのタグを使ってコスト データの異なるビューを作成できます。
+"_タグ付け_" は、アセットを分類する簡単な方法です。 タグ付けにより、資産にメタデータが関連付けられます。 このメタデータを使用して、さまざまなデータ ポイントに基づいて資産を分類できます。 企業がコスト管理の取り組みの一環としてタグを使って資産を分類する場合、事業単位、部署、請求コード、地域、環境、プロジェクト、ワークロード、"アプリケーション分類" などのタグが必要であることが多いです。 Azure Cost Management と Billing では、これらのタグを使ってコスト データの異なるビューを作成できます。
 
 タグ付けは、あらゆるコスト レポートのデータを理解するための主要な方法です。 これは、適切に管理された環境の基本要素です。 また、環境の適切なガバナンスを確立する最初の手順でもあります。
 
@@ -75,7 +75,7 @@ ms.locfileid: "83621662"
 
 <!-- docsTest:ignore Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
-Azure Cost Management では、各スコープに対して次の組み込みロールがサポートされています。
+Azure Cost Management と Billing では、各スコープに対して次の組み込みロールがサポートされています。
 
 - [所有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner):コストを表示し、コストの構成を含めたすべてを管理することができます。
 - [共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor):コストを表示し、コストの構成を含めたすべてを管理できますが、アクセスの制御はできません。
@@ -83,7 +83,7 @@ Azure Cost Management では、各スコープに対して次の組み込みロ�
 - [Cost Management 共同作成者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor): コストを表示し、コストの構成を管理することができます。
 - [Cost Management 閲覧者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader): コストのデータと構成を表示することができます。
 
-一般的なベスト プラクティスとしては、すべてのチームのメンバーに Cost Management 共同作成者のロールを割り当てます。 このロールでは、予算を作成および管理し、コストをより効果的に監視してレポートできるようにエクスポートするためのアクセス権が付与されます。 しかし、[クラウド戦略チーム](../../organize/cloud-strategy.md)のメンバーは、Cost Management 閲覧者のみに設定する必要があります。 Azure Cost Management ツール内での予算の設定に関与しないためです。
+一般的なベスト プラクティスとしては、すべてのチームのメンバーに Cost Management 共同作成者のロールを割り当てます。 このロールでは、予算を作成および管理し、コストをより効果的に監視してレポートできるようにエクスポートするためのアクセス権が付与されます。 しかし、[クラウド戦略チーム](../../organize/cloud-strategy.md)のメンバーは、Cost Management 閲覧者のみに設定する必要があります。 Azure Cost Management と Billing ツール内での予算の設定に関与しないためです。
 
 ### <a name="scope"></a>Scope
 
@@ -115,13 +115,13 @@ Azure Cost Management では、各スコープに対して次の組み込みロ�
 
 ## <a name="additional-cost-management-resources"></a>コスト管理に関するその他のリソース
 
-Azure Cost Management は、予算を設定し、Azure や AWS のクラウド コストを可視化するための定評あるツールです。 適切に管理された環境の階層への適切なアクセス権を確立した後、このツールを使用してコストを監視および管理するとき、次の記事が役立つ可能性があります。
+Azure Cost Management と Billing は、予算を設定し、Azure や AWS のクラウド コストを可視化するための定評あるツールです。 適切に管理された環境の階層への適切なアクセス権を確立した後、このツールを使用してコストを監視および管理するとき、次の記事が役立つ可能性があります。
 
-### <a name="get-started-with-azure-cost-management"></a>Azure Cost Management の利用を開始する
+### <a name="get-started-with-azure-cost-management-and-billing"></a>Azure Cost Management と Billing の利用を開始する
 
-Azure Cost Management の利用を開始するには、「[Azure Cost Management を使用してクラウドへの投資を最適化する方法](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)」を参照してください。
+Azure Cost Management と Billing の利用を開始するには、[Azure Cost Management と Billing を使用してクラウドへの投資を最適化する方法](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に関するページを参照してください。
 
-### <a name="use-azure-cost-management"></a>Azure Cost Management を使用する
+### <a name="use-azure-cost-management-and-billing"></a>Azure Cost Management と Billing の使用
 
 - [予算を作成して管理する](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
 - [コスト データのエクスポート](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
@@ -130,7 +130,7 @@ Azure Cost Management の利用を開始するには、「[Azure Cost Management
 
 <-- docsTest: "AWS のコストと使用状況" -->
 
-### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Azure Cost Management を使用して AWS のコストを管理する
+### <a name="use-azure-cost-management-and-billing-to-govern-aws-costs"></a>Azure Cost Management と Billing を使用して AWS のコストを管理する
 
 - [AWS のコストと使用状況レポートの統合を設定する](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [AWS のコストの管理](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)

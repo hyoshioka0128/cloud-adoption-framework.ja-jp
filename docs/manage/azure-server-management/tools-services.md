@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7050b4b40508f9ac133322600625e016c270bb15
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cee35d0166c8ffa4cd1401c1ccff2ff4bef13ba0
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219565"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193254"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure サーバー管理ツールおよびサービス
 
@@ -41,7 +41,7 @@ ms.locfileid: "83219565"
 
 データ保護戦略を構築する場合、最初にワークロード アプリケーションを異なる層に分割することを検討します。 通常、各層には独自の保護計画が必要なため、このアプローチは役立ちます。 回復性に優れたアプリケーションの設計に関する詳細については、[回復性に優れた Azure 用アプリケーションの設計](https://docs.microsoft.com/azure/architecture/resiliency)に関するページを参照してください。
 
-最も基本的なデータ保護はバックアップです。 サーバーが失われた場合の回復プロセスを高速化するには、データだけでなくサーバー構成もバックアップします。 バックアップは、偶発的なデータ削除やランサムウェア攻撃に対応するための効果的なメカニズムです。 [Azure Backup](https://docs.microsoft.com/azure/backup) では、Windows または Linux を実行している Azure サーバーおよびオンプレミス サーバー上のデータを保護できます。 Backup でできることの詳細とハウツーガイドについては、[Azure Backup のドキュメント](https://docs.microsoft.com/azure/backup/backup-overview)を参照してください。
+最も基本的なデータ保護はバックアップです。 サーバーが失われた場合の回復プロセスを高速化するには、データだけでなくサーバー構成もバックアップします。 バックアップは、偶発的なデータ削除やランサムウェア攻撃に対応するための効果的なメカニズムです。 [Azure Backup](https://docs.microsoft.com/azure/backup) では、Windows または Linux を実行している Azure サーバーおよびオンプレミス サーバー上のデータを保護できます。 Backup でできることの詳細とハウツーガイドについては、[Azure Backup サービスの概要](https://docs.microsoft.com/azure/backup/backup-overview)ページを参照してください。
 
 バックアップによる復旧には時間がかかります。 業界の標準では通常、1 日です。 ハードウェア障害やデータ センター停止が発生したときのビジネス継続性がワークロードに必要である場合は、データ レプリケーションの使用を検討します。 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) は VM の継続的なレプリケーションを可能にします。これはデータ損失を最小限に抑えるソリューションです。 Site Recovery では、レプリケーションなど、いくつかのレプリケーション シナリオもサポートされます。
 

@@ -1,36 +1,40 @@
 ---
-title: 実装ガイドライン
-description: 実装ガイドライン。
+title: CAF エンタープライズ規模の実装ガイドライン
+description: Azure 向けの Microsoft Cloud 導入フレームワークの CAF エンタープライズ規模の実装ガイドラインについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 392e1e9625f631a76cd7584d4cc31485bcea8f0a
-ms.sourcegitcommit: 7c16b2857b00520bec3c4f6e9844ceac33970846
+ms.openlocfilehash: 5fee6cc6eefb8529209172d40d6fc3aa73ef8bc3
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85766788"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373171"
 ---
-<!-- cSpell:ignore interdomain VMSS -->
+<!-- cSpell:ignore interdomain VMSS VWAN -->
 
-# <a name="implementation-guidelines"></a>実装ガイドライン
+# <a name="caf-enterprise-scale-implementation-guidelines"></a>CAF エンタープライズ規模の実装ガイドライン
 
 このセクションでは、エンタープライズ規模のプラットフォーム ネイティブ リファレンス実装を開始する方法と、設計目標の概要について説明します。
 
 エンタープライズ規模のアーキテクチャを実装するためには、次の 3 つのカテゴリのアクティビティを実行する必要があります。
 
+<!-- docsTest:disable -->
+
 1. **エンタープライズ規模のアーキテクチャに該当するもの:** 初期構成を確立するために Azure と Azure AD の管理者が実行する必要があるアクティビティが含まれます。 これらのアクティビティは本質的にシーケンシャルであり、主に 1 回限りのアクティビティです。
 
-2. **新しいリージョンを有効にする ( _[ファイル] -> [新規] -> [リージョン]_ ):** エンタープライズ規模のプラットフォームを新しい Azure リージョンに拡張する必要がある場合に常に必要な一連のアクティビティ。
+2. **新しいリージョンを有効にする ([ファイル]、[新規]、[リージョン] の順に選択):** エンタープライズ規模のプラットフォームを新しい Azure リージョンに拡張する必要がある場合に常に必要な一連のアクティビティ。
 
-3. **新しいランディング ゾーンをデプロイする ( _[ファイル] -> [新規] -> [Landing Zone]\(ランディング ゾーン\)_ ):** これらは、新しいランディング ゾーンのインスタンスを作成するために必要な定期的なアクティビティです。
+3. **新しいランディング ゾーンをデプロイする ([ファイル]、[新規]、[Landing Zone]\(ランディング ゾーン\)):** これらは、新しいランディング ゾーンのインスタンスを作成するために必要な定期的なアクティビティです。
+
+<!-- docsTest:enable -->
 
 大規模に運用するには、これらのアクティビティがコードとしてのインフラストラクチャ (IaC) の原則に従う必要があり、デプロイ パイプラインを使用して自動化される必要があります。
 
-## <a name="what-must-be-true-for-an-enterprise-scale-landing-zone"></a>エンタープライズ規模のランディング ゾーンに該当すること
+## <a name="what-must-be-true-for-a-caf-enterprise-scale-landing-zone"></a>CAF エンタープライズ規模のランディング ゾーンに該当すること
 
 ### <a name="enterprise-agreement-ea-enrollment-and-azure-ad-tenants"></a>Enterprise Agreement (EA) の登録と Azure AD テナント
 
@@ -50,7 +54,7 @@ ms.locfileid: "85766788"
 
 2. サブスクリプション プロビジョニング基準と、サブスクリプション所有者の責任を定義します。
 
-3. プラットフォーム管理、グローバル ネットワーク、接続と ID のリソース (AD ドメイン コントローラーなど) 用に、管理、接続、および ID の各サブスクリプションを作成します。
+3. プラットフォーム管理、グローバル ネットワーク、接続と ID のリソース (Active Directory ドメイン コントローラーなど) 用に、管理、接続、および ID の各サブスクリプションを作成します。
 
 4. プラットフォームの CI/CD パイプラインで使用するために IaC とサービス プリンシパルをホストするように Git リポジトリを設定します。
 
@@ -60,16 +64,16 @@ ms.locfileid: "85766788"
 
 | 名前                  | 説明                                                                                   |
 |-----------------------|-----------------------------------------------------------------------------------------------|
-| [Deny-PublicEndpoints](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.json)  | すべてのランディング ゾーンでパブリック エンドポイントを使用したサービスの作成を拒否します。                    |
-| [Deploy-VM-Backup](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-VM-Backup.parameters.json)      | バックアップが構成され、ランディング ゾーン内のすべての VM に配置されるようにします。                |
-| [Deploy-VNet](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json)           | すべてのランディング ゾーンに VNet がデプロイされ、リージョンの仮想ハブにピアリングされるようにします。 |
+| [`Deny-PublicEndpoints`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.json) | すべてのランディング ゾーンでパブリック エンドポイントを使用したサービスの作成を拒否します。 |
+| [`Deploy-VM-Backup`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/Landing%20Zones/.AzState/Microsoft.Authorization_policyAssignments-Deploy-VM-Backup.parameters.json) | バックアップが構成され、ランディング ゾーン内のすべての VM に配置されるようにします。 |
+| [`Deploy-VNet`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | すべてのランディング ゾーンに VNet がデプロイされ、リージョンの仮想ハブにピアリングされるようにします。 |
 
 ### <a name="global-networking-and-connectivity"></a>グローバル ネットワークと接続性
 
 1. 仮想ハブと VNet がデプロイされる Azure リージョンごとに適切な VNet CIDR 範囲を割り当てます
 
 2. Azure Policy を介してネットワーク リソースを作成する場合は、以下の表に記載されているポリシーを接続サブスクリプションに割り当てます。 こうすることで、指定されたパラメーターに基づいて以下の一覧のリソースが作成されることが Azure Policy により保証されます。
-   - Azure Virtual WAN Standard を作成します。
+   - Azure Virtual WAN Standard インスタンスを作成します。
    - リージョンごとに Azure Virtual WAN 仮想ハブを作成します。 仮想ハブごとに少なくとも 1 つのゲートウェイ (ExpressRoute または VPN) がデプロイされていることを確認します。
    - 各仮想ハブ内に Azure Firewall をデプロイすることにより、仮想ハブをセキュリティで保護します。
    - 必要な Azure Firewall ポリシーを作成し、セキュリティで保護された仮想ハブに割り当てます。
@@ -83,7 +87,7 @@ ms.locfileid: "85766788"
 
 6. NSG を使用して、仮想ハブ間の VNet トラフィックを保護します。
 
-7. (省略可能:)ExpressRoute プライベート ピアリングで暗号化を設定します。 「[ExpressRoute の暗号化: Virtual WAN 向けの ExpressRoute 経由の IPsec](https://docs.microsoft.com/en-us/azure/virtual-wan/vpn-over-expressroute)」の手順に従います。
+7. (省略可能:)ExpressRoute プライベート ピアリングで暗号化を設定します。 「[ExpressRoute 暗号化:Virtual WAN 向けの ExpressRoute 経由の IPsec](https://docs.microsoft.com/azure/virtual-wan/vpn-over-expressroute)」の手順に従います。
 
 8. (省略可能:)VPN 経由でブランチを仮想ハブに接続します。 「[Azure Virtual WAN を使用してサイト間接続を作成する](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-site-to-site-portal)」の手順に従います。
 
@@ -93,9 +97,9 @@ ms.locfileid: "85766788"
 
 | 名前                     | 説明                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
-| [Deploy-FirewallPolicy](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json)  | ファイアウォール ポリシーを作成します。 |
-| [Deploy-VHub](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json)        | このポリシーは、仮想ハブ、Azure Firewall、ゲートウェイ (VPN/ExpressRoute) をデプロイし、接続されている VNet の Azure Firewall への既定のルートを構成します。 |
-| [Deploy-VWAN](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vWAN.parameters.json)            | 仮想 WAN をデプロイします                             |
+| [`Deploy-FirewallPolicy`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json) | ファイアウォール ポリシーを作成します。 |
+| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | このポリシーは、仮想ハブ、Azure Firewall、VPN または ExpressRoute ゲートウェイをデプロイし、接続されている VNet の Azure Firewall への既定のルートを構成します。 |
+| [`Deploy-VWAN`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vWAN.parameters.json)| 仮想 WAN をデプロイします。 |
 
 ### <a name="security-governance-and-compliance"></a>セキュリティ、ガバナンス、およびコンプライアンス
 
@@ -117,32 +121,32 @@ ms.locfileid: "85766788"
 
 | 名前                       | 説明                                                        |
 |----------------------------|--------------------------------------------------------------------|
-| [Allowed-ResourceLocation](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Allowed-ResourceLocation.parameters.json)   | リソースをデプロイできる許可されたリージョンを指定します       |
-| [Allowed-RGLocation](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Allowed-RGLocation.parameters.json)         | リソース グループをデプロイできる許可されたリージョンを指定します |
-| [Denied-Resources](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Denied-Resources.parameters.json)           | 会社に対して拒否されているリソース                           |
-| [Deny-AppGW-Without-WAF](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.json)     | WAF を有効にした Application Gateway のデプロイを許可します              |
-| [Deny-IP-Forwarding](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-IP-Forwarding.parameters.json)         | IP 転送を拒否します                                                 |
-| [Deny-RDP-From-Internet](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-RDP-From-Internet.parameters.json)     | インターネットからの RDP 接続を拒否します                                 |
-| [Deny-Subnet-Without-Nsg](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.json)    | NSG を使用しないサブネットの作成を拒否します                                |
-| [Deploy-ASC-CE](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.json)              | ワークスペースに ASC 連続エクスポートをデプロイします                          |
-| [Deploy-ASC-Monitoring](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Monitoring.parameters.json)      | Azure Security Center で監視を有効にします                         |
-| [Deploy-ASC-Standard](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.json)        | サブスクリプションで Security Center Standard が確実に有効であるようにします。  |
-| [Deploy-Diag-ActivityLog](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diag-ActivityLog.parameters.json)    | 診断アクティビティ ログを有効にし、LA に転送します             |
-| [Deploy-Diag-LogAnalytics](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diag-LogAnalytics.parameters.json)   |                                                                    |
-| [Deploy-VM-Monitoring](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-VM-Monitoring.parameters.json)       | VM の監視が確実に有効であるようにします  
+| [`Allowed-ResourceLocation`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Allowed-ResourceLocation.parameters.json)   | リソースをデプロイできる許可されたリージョンを指定します |
+| [`Allowed-RGLocation`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Allowed-RGLocation.parameters.json)         | リソース グループをデプロイできる許可されたリージョンを指定します。 |
+| [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | 会社に対して拒否されているリソース。 |
+| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.json)     | WAF を有効にしたアプリケーション ゲートウェイのデプロイを許可します。 |
+| [`Deny-IP-Forwarding`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Deny-IP-Forwarding.parameters.json)         | IP 転送を拒否します。 |
+| [`Deny-RDP-From-Internet`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Deny-RDP-From-Internet.parameters.json)     | インターネットからの RDP 接続を拒否します。 |
+| [`Deny-Subnet-Without-Nsg`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.json)    | NSG を使用しないサブネットの作成を拒否します。 |
+| [`Deploy-ASC-CE`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.json)              | Log Analytics ワークスペースへの Security Center 連続エクスポートを設定します。 |
+| [`Deploy-ASC-Monitoring`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Deploy-ASC-Monitoring.parameters.json)      | Azure Security Center で監視を有効にします。 |
+| [`Deploy-ASC-Standard`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.json)        | サブスクリプションで Security Center Standard が確実に有効であるようにします。 |
+| [`Deploy-Diag-ActivityLog`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-ActivityLog.parameters.json) | 診断アクティビティ ログを有効にし、Log Analytics に転送します。 |
+| [`Deploy-Diag-LogAnalytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | |
+| [`Deploy-VM-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-VM.parameters.json) | VM の監視が確実に有効であるようにします。 |
 
-### <a name="platform-indentity"></a>プラットフォーム ID
+### <a name="platform-identity"></a>プラットフォーム ID
 
 1. Azure Policy 経由で ID リソースを作成する場合は、以下の表に記載されているポリシーを ID サブスクリプションに割り当てます。 こうすることで、指定されたパラメーターに基づいて以下の一覧のリソースが作成されることが Azure Policy により保証されます。
 
-2. AD ドメイン コントローラーをデプロイします。
+2. Active Directory ドメイン コントローラーをデプロイします。
 
 次の一覧は、エンタープライズ規模のデプロイ用の ID リソースを実装するときに使用できるポリシーを示しています。
 
 | 名前                         | 説明                                                               |
 |------------------------------|---------------------------------------------------------------------------|
-| [DataProtectionSecurityCenter](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-DataProtectionSecurityCenter.parameters.json) | Azure Security Center によって自動的に作成された ASC DataProtection         |
-| [Deploy-VNet-Identity](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json)         | たとえば DC をホストする ID サブスクリプションに VNet をデプロイします。     |
+| [`DataProtectionSecurityCenter`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState) | Azure Security Center によって自動的に作成されたデータ保護。 |
+| [`Deploy-VNet-Identity`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | たとえば DC をホストする ID サブスクリプションに VNet をデプロイします。 |
 
 ### <a name="platform-management-and-monitoring"></a>プラットフォームの管理と監視
 
@@ -158,15 +162,16 @@ ms.locfileid: "85766788"
 
 | 名前                   | 説明                                                                            |
 |------------------------|----------------------------------------------------------------------------------------|
-| [Deploy-LA-Config](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.json)       | Log Analytics ワークスペースの構成                                           |
-| [Deploy-Log-Analytics](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json)   | Log Analytics ワークスペースをデプロイします |
+| [`Deploy-LA-Config`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.json) | Log Analytics ワークスペースの構成。 |
+| [`Deploy-Log-Analytics`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | Log Analytics ワークスペースをデプロイします。 |
 
 ## <a name="file--new--region"></a>**[ファイル] -> [新規] -> [リージョン]**
 
 1. Azure Policy を介してネットワーク リソースを作成する場合は、以下の表に記載されているポリシーを接続サブスクリプションに割り当てます。 こうすることで、指定されたパラメーターに基づいて以下の一覧のリソースが作成されることが Azure Policy により保証されます。
-   - 接続サブスクリプション内で、既存の Virtual WAN 内に新しい仮想ハブを作成します。
-   - Azure Firewall を仮想ハブ内にデプロイして、仮想ハブをセキュリティで保護し、既存または新規のファイアウォール ポリシーを Azure Firewall にリンクします。
-   - セキュリティで保護された仮想ハブに接続されているすべての VNet が Azure Firewall で保護されていることを確認します。
+
+    - 接続サブスクリプションで、既存の Virtual WAN 内に新しい仮想ハブを作成します。
+    - Azure Firewall を仮想ハブ内にデプロイして、仮想ハブをセキュリティで保護し、既存または新規のファイアウォール ポリシーを Azure Firewall にリンクします。
+    - セキュリティで保護された仮想ハブに接続されているすべての VNet が Azure Firewall で保護されていることを確認します。
 
 2. ExpressRoute または VPN を使用して、仮想ハブをオンプレミスのネットワークに接続します。
 
@@ -176,12 +181,16 @@ ms.locfileid: "85766788"
 
 | 名前                     | 説明                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
-| [Deploy-VHub](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json)        | このポリシーは、仮想ハブ、Azure Firewall、ゲートウェイ (VPN/ExpressRoute) をデプロイし、接続されている VNet の Azure Firewall への既定のルートを構成します。 |
+| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | このポリシーは、仮想ハブ、Azure Firewall、ゲートウェイ (VPN/ExpressRoute) をデプロイし、接続されている VNet の Azure Firewall への既定のルートを構成します。 |
+
+<!-- docsTest:disable -->
 
 ## <a name="file---new---landing-zone-for-applications-and-workloads"></a>アプリケーションおよびワークロード用の [ファイル] -> [新規] -> [Landing zone]\(ランディング ゾーン\)
 
+<!-- docsTest:enable -->
+
 1. サブスクリプションを作成し、`Landing Zones` 管理グループのスコープの下に移動します。
 
-2. サブスクリプションに対して Azure AD グループ (所有者、閲覧者、共同作成者など) を作成します。
+2. `Owner`、`Reader`、`Contributor` など、サブスクリプションの Azure AD グループを作成します。
 
 3. 確立された Azure AD グループの Azure AD PIM のエンタイトルメントを作成します。

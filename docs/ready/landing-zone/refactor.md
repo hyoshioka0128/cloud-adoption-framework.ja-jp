@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2252b1c575c3fa853d0da05e75c964a63cfb3285
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 97d906504424761264bc550c8ce82dac2cc5cbd0
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075014"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195209"
 ---
 # <a name="refactor-landing-zones"></a>ランディング ゾーンのリファクター
 
@@ -20,7 +20,7 @@ ms.locfileid: "85075014"
 
 準備手法ではリファクタリングの概念を利用して、移行を促進し、一般的な阻害要因を取り除きます。 準備の概要の手順では、ホストする機能に最適な定義済みのランディング ゾーン テンプレートを使用して開始するプロセスについて説明しています。 その後、ソース コードに対するリファクターまたは追加を行って、強化されるセキュリティ、運用、またはガバナンスを通してその機能を提供するランディング ゾーンの機能を拡張します。 次の図に、リファクタリングの概念を示します。
 
-![ランディング ゾーンのリファクタリングの図 - この記事の後のセクションで説明](../../_images/ready/refactor.png)
+![ランディング ゾーンのリファクタリングの図、この記事の後半で説明](../../_images/ready/refactor.png)
 
 ## <a name="common-blockers"></a>一般的な阻害要因
 

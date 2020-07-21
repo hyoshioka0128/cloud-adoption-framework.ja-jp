@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e0c9904bd05eb2464c2765050fbdbf3948079a1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d7cd6222ec973177b1b7f2edeb2df451b17348a7
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219667"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193594"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 
@@ -38,14 +38,14 @@ Azure サーバー管理サービスのデプロイの効率を向上させる�
 
 | ファイル名 | 説明 |
 |-----------|-------------|
-| New-AMSDeployment.ps1 | オンボードを自動化するメインの調整スクリプト。 リソース グループ、場所、ワークスペース、Automation アカウントがまだ存在しない場合は、それらが作成されます。 この PowerShell スクリプトには、既存のサブスクリプションが必要です。 |
-| Workspace-AutomationAccount.json | ワークスペースと Automation アカウント リソースをデプロイする Resource Manager テンプレート。 |
-| WorkspaceSolutions.json | Log Analytics ワークスペース内で目的のソリューションを有効にする Resource Manager テンプレート。 |
-| ScopeConfig.json | Change Tracking ソリューションを備えたオンプレミスのサーバーにオプトイン モデルを使用する Resource Manager テンプレート。 オプトイン モデルの使用はオプションです。 |
-| Enable-VMInsightsPerfCounters.ps1 | サーバーに対して VM Insights を有効にし、パフォーマンス カウンターを構成する PowerShell スクリプト。 |
-| ChangeTracking-FileList.json | Change Tracking によって監視されるファイルの一覧を定義する Resource Manager テンプレート。 |
+| `New-AMSDeployment.ps1` | オンボードを自動化するメインの調整スクリプト。 リソース グループ、場所、ワークスペース、Automation アカウントがまだ存在しない場合は、それらが作成されます。 この PowerShell スクリプトには、既存のサブスクリプションが必要です。 |
+| `Workspace-AutomationAccount.json` | ワークスペースと Automation アカウント リソースをデプロイする Resource Manager テンプレート。 |
+| `WorkspaceSolutions.json` | Log Analytics ワークスペース内で目的のソリューションを有効にする Resource Manager テンプレート。 |
+| `ScopeConfig.json` | Change Tracking ソリューションを備えたオンプレミスのサーバーにオプトイン モデルを使用する Resource Manager テンプレート。 オプトイン モデルの使用はオプションです。 |
+| `Enable-VMInsightsPerfCounters.ps1` | サーバーに対して VM Insights を有効にし、パフォーマンス カウンターを構成する PowerShell スクリプト。 |
+| `ChangeTracking-FileList.json` | Change Tracking によって監視されるファイルの一覧を定義する Resource Manager テンプレート。 |
 
-New-AMSDeployment.ps1 を実行するには次のコマンドを使用します。
+次のコマンドを使用して `New-AMSDeployment.ps1` を実行します。
 
 ```powershell
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 71d813526d739984390fc671c44245b21ce078f1
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: fefbea898dbdc0d2fbabc7c80a902df7c5d3994d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786247"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191248"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -27,13 +27,13 @@ ms.locfileid: "84786247"
 
 **Active Directory (IaaS):** Azure の仮想マシンで実行されている Active Directory アプリケーションのインスタンス。
 
-ID は IT セキュリティのコントロール プレーンです。 したがって、認証は、クラウドに対する組織のアクセスの保護です。 組織には、セキュリティを強化し、クラウド アプリを侵入者から保護する ID コントロール プレーンが必要です。
+ID は IT セキュリティのコントロール プレーンです。 したがって、認証は、クラウドに対する組織のアクセスの保護です。 組織には、セキュリティを強化し、クラウド アプリケーションを侵入者から保護する ID コントロール プレーンが必要です。
 
 ## <a name="cloud-authentication"></a>クラウド認証
 
-正しい認証方法の選択は、クラウドにアプリを移行しようとしている組織にとって最大の関心事です。
+正しい認証方法の選択は、クラウドにアプリケーションを移行しようとしている組織にとって最大の関心事です。
 
-この方法を選ぶと、Azure AD がユーザーのサインイン プロセスを処理します。 シームレスなシングル サインオン (SSO) と組み合わせることで、ユーザーは資格情報を再入力しなくてもクラウド アプリにサインインできます。 クラウド認証では、2 つのオプションから選ぶことができます。
+この方法を選ぶと、Azure AD がユーザーのサインイン プロセスを処理します。 シームレスなシングル サインオン (SSO) と組み合わせることで、ユーザーは資格情報を再入力しなくてもクラウド アプリケーションにサインインできます。 クラウド認証では、2 つのオプションから選ぶことができます。
 
 **Azure AD のパスワード ハッシュ同期:** Azure AD でオンプレミスのディレクトリ オブジェクトの認証を有効にする最も簡単な方法です。 この方法は、オンプレミスのサーバーがダウンした場合のバックアップ フェールオーバー認証方法として、任意の方法と一緒に使用することもできます。
 

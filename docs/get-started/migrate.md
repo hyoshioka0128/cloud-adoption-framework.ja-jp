@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 65a201886f9cbc67a58aa5bd14f53e928d4495b8
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 2e20b63bed8ef337f89546049632dd2c8babf539
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076506"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233547"
 ---
 # <a name="get-started-accelerate-migration"></a>作業を開始しましょう。移行を促進する
 
@@ -57,7 +57,7 @@ ms.locfileid: "85076506"
 
 ## <a name="step-2-align-partner-support"></a>手順 2:パートナーのサポートを適切に利用する
 
-移行プロセスの全過程にわたって、パートナー、Microsoft サービス、Microsoft の各種プログラムによるサポートを利用できます。
+移行プロセスの全過程にわたって、パートナー、Microsoft Services、Microsoft の各種プログラムによるサポートを利用できます。
 
 - [パートナーシップのオプションを理解](../migrate/migration-considerations/assess/partnership-options.md)し、適切なレベルのパートナーシップとサポートを見つけます。
 
@@ -254,7 +254,7 @@ ms.locfileid: "85076506"
 
 クラウド導入フレームワークはライフサイクル ソリューションです。 これは、移行工程を開始するのに役立ちます。 また、移行作業をサポートするチームの成熟度を高める効果もあります。 以下に示したチームは、後続の手順を使用して、その作業の成熟度を引き続き高めていくことができます。 これらは並行して行うプロセスであって直線的なものではなく、また阻害要因と考えるべきではありません。 それぞれが会社の全体的なクラウド対応を成熟させる効果を持った、並行したバリュー ストリームなのです。
 
-| チーム  | 次のイテレーション |
+| チーム | 次のイテレーション |
 |---|---|
 | クラウド&nbsp;導入&nbsp;チーム | [プロセス改善](../migrate/migration-considerations/index.md)では、効率のよい継続的な移行機能を備えた移行ファクトリを目指すことについての分析情報が得られます。 |
 | クラウド&nbsp;戦略&nbsp;チーム | [戦略の方法論](../strategy/index.md)と[計画の方法論](../plan/index.md)は、導入計画と共に進化する反復的なプロセスです。 これらの概要ページに戻り、引き続きビジネス戦略と技術戦略の反復作業を行います。 |

@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5e36757cd187b42a9ff8b976db886feb55f1b2e0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fe42f3cc8e2003dd73dc191225173d2270d53190
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223526"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235332"
 ---
-# <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>移行環境の計画チェックリスト - 移行前に環境の対応性を検証する
+# <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>移行環境の計画チェックリスト:移行前に環境の対応性を検証する
 
 移行プロセスの最初の手順として、移行する資産を受け取り、ホストし、サポートするために、クラウドに適切な環境を作成する必要があります。 この記事では、移行前に現在の環境で検証する項目の一覧を提供します。
 

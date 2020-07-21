@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abe6fb81a1108e291d0a4f12382172a5f6b39e4d
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: dcbc8d7906bd18a225b9fb2b116b4acc3bd0f395
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861482"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193135"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -27,7 +27,7 @@ Microsoft では、2 つの製品からさまざまな監視機能を提供し�
 
 ## <a name="the-story-of-system-center-operations-manager"></a>System Center Operations Manager のストーリー
 
-弊社は 2000 年に Microsoft Operations Manager (MOM) 2000 で運用管理の分野に参入しました。 2007 年には、System Center Operations Manager という名前の、その製品の再設計バージョンを導入しました。 これは、Windows サーバーの単純な監視にとどまらず、異種プラットフォーム、ネットワーク デバイス、その他のアプリケーションやサービスの依存関係を含むサービスおよびアプリケーションの、堅牢なエンドツーエンドの監視に注力したものでした。 これは、業界において IBM Tivoli や HP Operations Manager と同じクラスに属する、確立されたエンタープライズ レベルのオンプレミス環境向け監視プラットフォームでした。 それが、Azure、アマゾン ウェブ サービス (AWS)、およびその他のクラウド プロバイダーで実行されているコンピューティングとプラットフォームのリソースの監視をサポートするように拡大してきました。
+Microsoft は 2000 年に Microsoft Operations Manager 2000 で運用管理の分野に参入しました。 2007 年には、その製品のリエンジニア バージョンである System Center Operations Manager を導入しました。 これは、Windows サーバーの単純な監視にとどまらず、異種プラットフォーム、ネットワーク デバイス、その他のアプリケーションやサービスの依存関係を含むサービスおよびアプリケーションの、堅牢なエンドツーエンドの監視に注力したものでした。 これは、業界において IBM Tivoli や HP Operations Manager と同じクラスに属する、確立されたエンタープライズ レベルのオンプレミス環境向け監視プラットフォームでした。 それが、Azure、アマゾン ウェブ サービス (AWS)、およびその他のクラウド プロバイダーで実行されているコンピューティングとプラットフォームのリソースの監視をサポートするように拡大してきました。
 
 ## <a name="the-story-of-azure-monitor"></a>Azure Monitor のストーリー
 
@@ -165,7 +165,7 @@ Operations Manager では、パフォーマンスのしきい値に達したと�
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor では、しきい値を超過したメトリックや、スケジュールされたクエリの結果に基づくアラートを作成できます。 メトリックに基づくアラートでは、ほぼリアルタイムの結果を達成できますが、スケジュールされたクエリでは、データ インジェストとインデックス付けの速度に応じて、応答時間がより長くなります。 Azure Monitor のログ クエリ アラートを使用すると、特定のエージェントに限定されるのではなく、複数のワークスペースに格納されているすべてのデータにわたってデータを分析することができます。 これらのアラートには、クロスワークスペース クエリを使用することで、特定の Application Insights アプリからのデータも含められます。
+Azure Monitor では、しきい値を超過したメトリックや、スケジュールされたクエリの結果に基づくアラートを作成できます。 メトリックに基づくアラートでは、ほぼリアルタイムの結果を達成できますが、スケジュールされたクエリでは、データ インジェストとインデックス付けの速度に応じて、応答時間がより長くなります。 Azure Monitor のログ クエリ アラートを使用すると、特定のエージェントに限定されるのではなく、複数のワークスペースに格納されているすべてのデータにわたってデータを分析することができます。 これらのアラートには、クロスワークスペース クエリを使用することで、特定の Application Insights アプリケーションからのデータも含められます。
 
 監視ソリューションにはアラート ルールを含めることができますが、通常は独自の要件に基づいてアラート ルールを作成します。
 

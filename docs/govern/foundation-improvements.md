@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 456e9105cd4d8425681664bc9cbcb74d54f7f58f
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9e06a96c7e7397680e26b326f02a055013ec29ee
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400572"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191792"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の改善
 
@@ -29,7 +29,7 @@ ms.locfileid: "83400572"
 | リスク/ニーズ | 標準的な企業 | 複雑な企業 |
 |---|---|---|
 | クラウド内の機密データ | [規範の改良](./guides/standard/security-baseline-improvement.md) | [規範の改良](./guides/complex/security-baseline-improvement.md) |
-| クラウド内のミッション クリティカルなアプリ | [規範の改良](./guides/standard/resource-consistency-improvement.md) | [規範の改良](./guides/complex/resource-consistency-improvement.md) |
+| クラウド内のミッション クリティカルなアプリケーション | [規範の改良](./guides/standard/resource-consistency-improvement.md) | [規範の改良](./guides/complex/resource-consistency-improvement.md) |
 | クラウドのコスト管理 | [規範の改良](./guides/standard/cost-management-improvement.md) | [規範の改良](./guides/complex/cost-management-improvement.md) |
 | マルチクラウド | [規範の改良](./guides/standard/multicloud-improvement.md) | [規範の改良](./guides/complex/multicloud-improvement.md) |
 | 複雑な/レガシ ID 管理 | 該当なし | [規範の改良](./guides/complex/identity-baseline-improvement.md) |

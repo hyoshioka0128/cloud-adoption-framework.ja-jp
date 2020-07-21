@@ -1,18 +1,18 @@
 ---
 title: 基本的なワークロードを Azure にデプロイする
-description: クラウド インフラストラクチャのコア コンポーネントと基本的なワークロード (基本的な Web アプリ、単一の仮想マシン、仮想ネットワークなど) について説明します。
+description: クラウド インフラストラクチャのコア コンポーネントと基本的なワークロード (基本的な Web アプリケーション、単一の仮想マシン、仮想ネットワークなど) について説明します。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0b4f0738e93d08be4f61183272b459eb7856aad1
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 92c0d9deb038e1c89d3db5ca5bfc72cace2d2ff9
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862213"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193730"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>基本的なワークロードを Azure にデプロイする
 
@@ -35,7 +35,7 @@ ms.locfileid: "83862213"
 
 ## <a name="basic-web-application-paas"></a>基本的な Web アプリケーション (PaaS)
 
-基本的な Web アプリケーションの場合、[Web Apps のドキュメント](https://docs.microsoft.com/azure/app-service)に記載されている 5 分間のクイック スタートのいずれかを選択し、その手順に従います。
+基本的な Web アプリケーションの場合、[Azure App Service のドキュメント](https://docs.microsoft.com/azure/app-service)に記載されている 5 分間のクイック スタートのいずれかを選択し、その手順に従います。
 
 > [!NOTE]
 > 一部のクイック スタート ガイドでは、既定でリソース グループがデプロイされます。 その場合、明示的にリソース グループを作成する必要はありません。 それ以外の場合は、上記で作成したリソース グループに Web アプリケーションをデプロイします。

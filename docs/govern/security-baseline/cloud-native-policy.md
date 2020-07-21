@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 683340ce6247e33e78def4abf662dd63b65bf085
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 11de19074526634af368916d5e58511c6f51ca90
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217729"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193798"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>クラウド ネイティブなセキュリティ ベースライン ポリシー
 
@@ -64,8 +64,8 @@ ID は、セキュリティの新しい境界制御面となりつつあり、�
 
 - データの暗号化制御は、仮想マシンからストレージおよび SQL Database へのサービスに組み込まれます。
 - クラウドと顧客の間でデータが移動するときには、業界標準の暗号化プロトコルを使用してデータを保護できます。
-- ユーザーは Azure Key Vault を使用すると、クラウド アプリとサービスに使用される暗号化キー、パスワード、接続文字列、証明書を保護および制御できます。
-- Azure Information Protection は、アプリ内の機密データを分類、ラベル付け、および保護するために役立ちます。
+- ユーザーは Azure Key Vault を使用すると、クラウド アプリケーションとサービスに使用される暗号化キー、パスワード、接続文字列、証明書を保護および制御できます。
+- Azure Information Protection は、アプリケーション内の機密データを分類、ラベル付け、および保護するために役立ちます。
 
 これらの機能は Azure に組み込まれていますが、上記の各機能を利用するには構成が必要で、コストが増える可能性もあります。 クラウド ネイティブな各機能と[データ分類戦略](../policy-compliance/data-classification.md)との整合を強くお勧めします。
 

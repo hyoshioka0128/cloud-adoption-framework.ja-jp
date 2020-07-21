@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9f77d4a13b83c6d22592f36c924c2dd11164e27b
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: c9fbde180874f530191c3d58a8cb86df9906fc10
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814360"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190721"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>ソフトウェア定義ネットワーク:ハブ アンド スポーク
 
@@ -46,7 +46,7 @@ ms.locfileid: "83814360"
 
 ## <a name="global-hub-and-spoke"></a>グローバルなハブ アンド スポーク
 
-ハブ アンド スポークのアーキテクチャの実装は、通常、ネットワーク間の待機時間を最小限に抑えるために、同じ Azure リージョンにデプロイされた仮想ネットワークを使用して行われます。 世界規模で展開している大規模組織では、可用性、ディザスター リカバリー、または規制の要件に対応するために、複数のリージョンにわたってワークロードをデプロイすることが必要な場合があります。 ハブ アンド スポーク モデルでは、Azure の[グローバル仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用して、集中管理と共有サービスをリージョン全体に拡張し、世界中に分散されたワークロードをサポートできます。
+ハブ アンド スポークのアーキテクチャの実装は、通常、ネットワーク間の待機時間を最小限に抑えるために、同じ Azure リージョンにデプロイされた仮想ネットワークを使用して行われます。 世界規模で存在感を示している大規模組織では、可用性、ディザスター リカバリー、または規制の要件に対応するために、複数のリージョンにわたってワークロードをデプロイすることが必要な場合があります。 ハブ アンド スポーク モデルでは、Azure の[グローバル仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用して、集中管理と共有サービスをリージョン全体に拡張し、世界中に分散されたワークロードをサポートできます。
 
 ## <a name="learn-more"></a>詳細情報
 

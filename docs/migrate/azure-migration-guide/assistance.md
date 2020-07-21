@@ -9,32 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ea911e51b909a9787cb0d0d327cebd884c36a275
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a57d476e20d037fad1531ee944f13722ecb3788d
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214499"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373069"
 ---
 <!-- cSpell:ignore MSPs -->
 
-::: zone target="chromeless"
-
-# <a name="assistance"></a>サポート
-
-::: zone-end
-
-::: zone target="docs"
-
-# <a name="obtain-assistance-during-your-journey-to-azure"></a>Azure への移行時にサポートを得る
-
-::: zone-end
+# <a name="get-assistance"></a>サポートを受ける
 
 適切なタイミングで適切なサポートを得ることによって、移行作業が加速することがわかっています。 ニーズを満たすために、次のサポート手段を確認してください。
 
-# <a name="support-plans"></a>[サポート プラン](#tab/SupportPlans)
+## <a name="support-plans"></a>[サポート プラン](#tab/SupportPlans)
 
-## <a name="microsoft-support"></a>Microsoft サポート
+### <a name="microsoft-support"></a>Microsoft サポート
 
 Microsoft では、Azure のすべてのお客様に基本サポート プランを提供しています。 課金およびサブスクリプション サポート、オンライン セルフヘルプ、ドキュメント、ホワイトペーパー、サポート フォーラムに 24 時間 365 日アクセスできます。
 
@@ -94,7 +84,7 @@ Azure の使用中に Microsoft サポートによるサポートが必要な場
 
 ::: zone target="docs"
 
-## <a name="online-communities"></a>オンライン コミュニティ
+### <a name="online-communities"></a>オンライン コミュニティ
 
 次のオンライン コミュニティで、コミュニティ ベースのサポートを提供しています。
 
@@ -103,13 +93,13 @@ Azure の使用中に Microsoft サポートによるサポートが必要な場
 
 ::: zone-end
 
-# <a name="partners"></a>[パートナー](#tab/Partners)
+## <a name="partners"></a>[パートナー](#tab/Partners)
 
-## <a name="azure-solutions-partner"></a>Azure ソリューション パートナー
+### <a name="azure-solutions-partner"></a>Azure ソリューション パートナー
 
-Microsoft 認定ソリューション プロバイダーは、Microsoft のテクノロジに基づく最新の カスタマー ソリューションを世界中に提供することを専門としています。 経験豊富なパートナーのサポートでクラウドでのビジネスを最適化します。
+Microsoft 認定ソリューション プロバイダーは、Microsoft のテクノロジに基づく最新のカスタマー ソリューションを世界中に提供することを専門としています。 経験豊富なパートナーのサポートでクラウドでのビジネスを最適化します。
 
 既製の Azure ソリューションまたはカスタム Azure ソリューションを提供するパートナー、また、それらのソリューションをデプロイし、管理するうえでの支援を提供するパートナーからサポートを得られます。
 
-- [クラウド ソリューション パートナーを見つける](https://www.microsoft.com/solution-providers/home)。 認定 CSP は、クラウド導入のビジネス目標を評価し、ビジネス ニーズを満たして、ビジネスの機敏性と効率性の向上に役立つ最適なクラウド ソリューションを特定して、クラウドを最大限に活用する支援ができます。
+- [Cloud Solution Provider (CSP) を見つける](https://www.microsoft.com/solution-providers/home)。 認定 CSP は、クラウド導入のビジネス目標を評価し、ビジネス ニーズを満たして、ビジネスの機敏性と効率性の向上に役立つ最適なクラウド ソリューションを特定して、クラウドを最大限に活用する支援ができます。
 - [マネージド サービス パートナーを見つける](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)。 Azure マネージド サービス パートナー (MSP) は、クラウド体験のあらゆる側面をガイドして、Azure へのビジネス転換を支援します。 移行および運用管理のコンサルティングから、クラウド MSP はクラウド導入に伴うあらゆる利点をお客様に紹介します。 また、一般的なサポート、プロビジョニング、課金エクスペリエンスのワンストップ ショップとしての役割も持ちます &mdash; すべてが柔軟な従量課金制ビジネス モデルで提供されます。

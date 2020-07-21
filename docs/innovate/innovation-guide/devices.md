@@ -9,26 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0b876c402f18492b956b5ae561107ec6b57e63ee
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: ded639348eaee2053d6f02e4179694df7e193b0b
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862111"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373256"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-interact-through-devices"></a>Azure イノベーション ガイド:デバイス経由の操作
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="interact-through-devices"></a>デバイス経由の操作
-
-::: zone-end
 
 断続的に接続される、知覚機能を備えたエッジ デバイスを介してイノベーションを促進することができます。 数百万台のこのようなデバイスを調整し、無限のデータを取得して処理し、増え続けるマルチセンス、マルチデバイスのエクスペリエンスを活用します。 ネットワークのエッジにあるデバイス向けに、Azure では、イマーシブで効果的なビジネス ソリューションを構築するためのフレームワークを提供しています。 Azure を人工知能 (AI) テクノロジと組み合わせることで実現されるユビキタスなコンピューティングにより、思い描くことができるあらゆる種類のインテリジェントなアプリケーションやシステムを構築できます。
 
@@ -64,7 +54,6 @@ Azure のお客様は、ユーザー、データ、またはその両方に近�
 ### <a name="learn-more"></a>詳細情報
 
 - [IoT Hub](https://docs.microsoft.com/azure/iot-hub)
-
 - [Azure IoT Hub Device Provisioning Service (DPS)](https://docs.microsoft.com/azure/iot-dps)
 
 ::: zone-end
@@ -144,7 +133,7 @@ Azure Digital Twins を作成するには:
 
 ## <a name="location-intelligence"></a>[位置情報インテリジェンス](#tab/AzureMaps)
 
-Azure Maps サービスでは、近傍、トラフィック、ルート指定などの従来の位置情報機能に加え、**TomTom** や **Moovit** などの世界水準のモビリティ テクノロジ パートナーが提供するリアルタイムの位置情報インテリジェンスを使用してソリューションを作成できるようになりました。 地理空間サービスにより、高度な位置情報およびモビリティ機能がお客様のアプリケーションに容易に統合されます。
+Azure Maps サービスでは、近傍、トラフィック、ルート指定などの従来の位置情報機能に加え、TomTom や Moovit などの世界水準のモビリティ テクノロジ パートナーが提供するリアルタイムの位置情報インテリジェンスを使用してソリューションを作成できるようになりました。 地理空間サービスにより、高度な位置情報およびモビリティ機能がお客様のアプリケーションに容易に統合されます。
 
 **データ サービス (プレビュー):** 空間演算や画像合成で使用する地理空間データをアップロードして格納することで、待ち時間を短縮し、生産性を向上させるほか、お客様のアプリケーション内で新しいシナリオを有効にすることもできます。
 
@@ -191,7 +180,9 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 ::: zone target="docs"
 
-- [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors)
+### <a name="learn-more"></a>詳細情報
+
+- [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview)
 
 ::: zone-end
 
@@ -222,8 +213,7 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 ### <a name="learn-more"></a>詳細情報
 
-- [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)
-
+- [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/overview/about)
 - [Azure を使用したレンダリング](https://docs.microsoft.com/azure/batch/batch-rendering-service)
 
 ::: zone-end
