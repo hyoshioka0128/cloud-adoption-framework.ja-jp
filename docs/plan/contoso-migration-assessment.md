@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: ef1c9ea599a61561a6cff9d78c8d167129f13a26
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 500cf5558f69281c1a5e29fda57d84ece7c07677
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993822"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194155"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "84993822"
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Azure への移行の対象となるオンプレミスのワークロードを評価する
 
-この記事では、Contoso という架空の会社が Azure に移行するためにオンプレミスのアプリを評価する方法を示します。 このサンプル シナリオでは、Contoso のオンプレミスの SmartHotel360 アプリが VMware 上で現在実行されています。 Contoso では、Azure Migrate サービスを使用してアプリの VM を評価し、Data Migration Assistant を使用してアプリの SQL Server データベースを評価します。
+この記事では、Contoso という架空の会社が Azure に移行するためにオンプレミスのアプリを評価する方法を示します。 このサンプル シナリオでは、Contoso のオンプレミスの SmartHotel360 アプリケーションが VMware 上で現在実行されています。 Contoso では、Azure Migrate サービスを使用してアプリケーションの VM を評価し、Data Migration Assistant を使用して SQL Server アプリケーション データベースを評価します。
 
 ## <a name="overview"></a>概要
 
@@ -29,14 +29,10 @@ Azure への移行を検討する際、Contoso では技術的および財務的
 
 作業を開始し、関連するテクノロジの理解を深めるために、Contoso は次の表にまとめたオンプレミス アプリのうち 2 つを評価します。 同社は、移行対象のアプリをリホストしてリファクターする移行シナリオを評価します。 リホストとリファクタリングの詳細については、[移行の例の概要](../migrate/azure-best-practices/contoso-migration-overview.md)に関する記事を参照してください。
 
-<!-- markdownlint-disable MD033 -->
-
 | アプリの名前 | プラットフォーム | アプリ層 | 詳細 |
 | --- | --- | --- | --- |
-| SmartHotel360 <br><br> (Contoso の旅行要件を管理します) | SQL Server データベースが搭載された Windows 上で実行 | 2 層アプリ。 1 つの VM (`WEBVM`) 上でフロントエンド ASP.NET Web サイトが実行され、別の VM (`SQLVM`) 上で SQL Server が実行されます。 | VM は、vCenter Server によって管理される VMware ESXi ホスト上で実行されています。 <br><br> サンプル アプリは [GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 |
-| osTicket <br><br> (Contoso のサービス デスク アプリ) | MySQL PHP (LAMP) を含む Linux/Apache 上で実行 | 2 層アプリ。 1 つの VM (`OSTICKETWEB`) 上でフロントエンド PHP Web サイトが実行され、別の VM (`OSTICKETMYSQL`) 上で MySQL データベースが実行されます。 | このアプリは、社内の従業員と外部の顧客の問題を追跡するために、顧客サービス アプリによって使用されます。 <br><br> サンプルは [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 |
-
-<!-- markdownlint-enable MD033 -->
+| **SmartHotel360** <br><br> (Contoso の旅行要件を管理します) | SQL Server データベースが搭載された Windows 上で実行 | 2 層アプリ。 1 つの VM (`WEBVM`) 上でフロントエンド ASP.NET Web サイトが実行され、別の VM (`SQLVM`) 上で SQL Server が実行されます。 | VM は、vCenter Server によって管理される VMware ESXi ホスト上で実行されています。 <br><br> サンプル アプリは [GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 |
+| **osTicket** <br><br> (Contoso のサービス デスク アプリ) | [LAMP](https://wikipedia.org/wiki/LAMP_(software_bundle)) スタック上で実行されます。 | 2 層アプリ。 1 つの VM (`OSTICKETWEB`) 上でフロントエンド PHP Web サイトが実行され、別の VM (`OSTICKETMYSQL`) 上で MySQL データベースが実行されます。 | このアプリは、社内の従業員と外部の顧客の問題を追跡するために、顧客サービス アプリによって使用されます。 <br><br> サンプルは [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 |
 
 ## <a name="current-architecture"></a>現在のアーキテクチャ
 
@@ -46,7 +42,7 @@ Azure への移行を検討する際、Contoso では技術的および財務的
 
 - Contoso にはメイン データセンターが 1 つあります。 そのデータセンターは、米国東部のニューヨーク市に位置しています。
 - Contoso は、その他にも米国内全体で 3 つの地方支店があります。
-- メイン データセンターは、光ファイバーによるメトロ イーサネット接続 (500 MBps) を通じて、インターネットに接続されています。
+- メイン データセンターは、光ファイバーによるメトロ イーサネット接続 (500 Mbps) を通じて、インターネットに接続されています。
 - 各支店は、ビジネス クラスの接続を使用して、インターネットにローカルで接続されています。メイン データセンターには、IPsec VPN トンネルで接続されています。 このセットアップにより、Contoso のネットワーク全体を永続的に接続でき、インターネット接続が最適化されます。
 - メイン データセンターは、VMware によって完全に仮想化されています。 Contoso には、vCenter Server 6.5 で管理されている ESXi 6.5 仮想化ホストが 2 つあります。
 - Contoso は ID 管理に Active Directory を使用しています。 Contoso は内部ネットワーク上で DNS サーバーを使用しています。
@@ -77,7 +73,7 @@ Contoso は移行の評価に Microsoft のツールを使用します。 ツー
 | テクノロジ | 説明 | コスト |
 | --- | --- | --- |
 | [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は、SQL のソースとターゲット間の機能パリティを評価します。 そのうえで、パフォーマンスと信頼性の向上箇所を推奨します。 | Data Migration Assistant は無料でダウンロードできるツールです。 |
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | 2018 年 5 月の時点で Azure Migrate は無料サービスです。 |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | Azure Migrate は、追加料金なしで利用できます。 ただし、評価と移行に使用するツール (ファーストパーティまたは ISV) によっては料金が発生する場合があります。 [Azure Migrate の価格](https://azure.microsoft.com/pricing/details/azure-migrate)について、詳しくはこちらを参照してください。  |
 | [サービス マップ](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate では、会社が移行しようとしているマシン間の依存関係が Service Map を使用して示されます。 | Service Map は、Azure Monitor ログの一部です。 現時点では、Contoso は Service Map を 180 日間無料で使用できます。 |
 
 このシナリオでは、Contoso は Data Migration Assistant をダウンロードして実行し、旅行アプリ用のオンプレミス SQL Server データベースを評価します。 Contoso は Azure への移行前に、Azure Migrate と依存関係マッピングを使用してアプリ VM を評価します。
@@ -87,19 +83,19 @@ Contoso は移行の評価に Microsoft のツールを使用します。 ツー
 ![移行評価のアーキテクチャ](../migrate/azure-best-practices/media/contoso-migration-assessment/migration-assessment-architecture.png)
 
 - Contoso は一般的なエンタープライズ組織を表す架空の名前です。
-- Contoso にはオンプレミスのデータセンター (**contoso-datacenter**) と、オンプレミスのドメイン コントローラー (**CONTOSODC1**、**CONTOSODC2**) があります。
-- VMware VM は、バージョン 6.5 を実行している VMware ESXi ホスト (**contosohost1**、**contosohost2**) 上にあります。
-- VMware 環境は、vCenter Server 6.5 (VM 上で実行されている **vcenter.contoso.com**) によって管理されています。
+- Contoso には、オンプレミスのデータセンター (`contoso-datacenter`) があり、これにはオンプレミスのドメイン コントローラー (`CONTOSODC1`、`CONTOSODC2`) が含まれています。
+- VMware VM は、バージョン 6.5 を実行する VMware ESXi ホスト上にあります (`contosohost1`、`contosohost2`)。
+- VMware 環境は、VM で実行中の vCenter Server 6.5 (`vcenter.contoso.com`、VM 上で実行) によって管理されています。
 - SmartHotel360 旅行アプリには次の特徴があります。
-  - アプリは 2 つの VMware VM (**WEBVM** と **SQLVM**) に階層化されています。
-  - VM は、VMware ESXi ホスト **contosohost1.contoso.com** 上にあります。
+  - アプリは 2 つの VMware VM (`WEBVM` と `SQLVM`) に階層化されています。
+  - これらの VM は、VMware ESXi ホスト `contosohost1.contoso.com` 上に配置されています。
   - VM は Windows Server 2008 R2 Datacenter SP1 を実行しています。
-- VMware 環境は、VM で実行中の vCenter Server (**vcenter.contoso.com**) によって管理されます。
+- VMware 環境は、VM で実行中の vCenter Server (`vcenter.contoso.com`) によって管理されています。
 - osTicket サービス デスク アプリ:
-  - アプリは 2 つの VM (**OSTICKETWEB** と **OSTICKETMYSQL**) に階層化されています。
+  - アプリは 2 つの VM (`OSTICKETWEB` と `OSTICKETMYSQL`) に階層化されています。
   - VM では Ubuntu Linux Server 16.04-LTS を実行しています。
-  - **OSTICKETWEB** では Apache 2 と PHP 7.0 が実行されています。
-  - **OSTICKETMYSQL** では MySQL 5.7.22 が実行されています。
+  - `OSTICKETWEB` では Apache 2 と PHP 7.0 が実行されています。
+  - `OSTICKETMYSQL` では MySQL 5.7.22 が実行されています。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -152,29 +148,29 @@ Contoso が評価を行う方法は次のとおりです。
 
 2. **[ソース サーバーの種類]** で、Contoso は **[SQL Server]** を選択します。 **[ターゲット サーバーの種類]** で、Contoso は **[Azure Virtual Machines 上の SQL Server]** を選択します。
 
-    ![Data Migration Assistant - ソースの選択](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-1.png)
+    ![Data Migration Assistant:ソースの選択](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-1.png)
 
     > [!NOTE]
-    > 現時点では、Data Migration Assistant は Azure SQL Database Managed Instance への移行の評価をサポートしていません。 この問題を回避するために、Contoso では Azure VM 上の SQL Server を想定されるターゲットとして評価に使用します。
+    > 現時点では、Data Migration Assistant は Azure SQL Managed Instance への移行の評価をサポートしていません。 この問題を回避するために、Contoso では Azure VM 上の SQL Server を想定されるターゲットとして評価に使用します。
 
-3. **[ターゲット バージョンを選択する]** で、SQL Server 2017 をターゲット バージョンとして選択します。 これは SQL Database Managed Instance によって使用されるバージョンであるため、Contoso はこのバージョンを選択する必要があります。
+3. **[ターゲット バージョンを選択する]** で、SQL Server 2017 をターゲット バージョンとして選択します。 これは SQL Managed Instance によって使用されるバージョンであるため、Contoso はこのバージョンを選択する必要があります。
 
 4. 互換性と新機能に関する情報の検出に役立つレポートを選択します。
 
     - **[互換性の問題]** では、移行を中断させる可能性がある変更や、移行前に微調整が必要な変更がわかります。 このレポートにより、Contoso は現在使用している機能の中で非推奨になった機能を常に把握することができます。 問題は、互換性レベルごとに整理されます。
     - **[新機能のお勧め]** では、移行後にデータベースで使用できる、ターゲット SQL Server プラットフォームの新機能がわかります。 新機能のお勧めは、 **[パフォーマンス]** 、 **[セキュリティ]** 、 **[ストレージ]** の見出し別に整理されます。
 
-    ![Data Migration Assistant - 互換性の問題と新機能](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-2.png)
+    ![Data Migration Assistant:互換性の問題と新機能](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-2.png)
 
 5. **[サーバーへの接続]** で、データベースを実行している VM の名前と、それにアクセスするための資格情報を入力します。 VM が SQL Server に確実に接続できるように、 **[サーバー証明書を信頼する]** をオンにします。 次に、 **[接続]** を選択します。
 
-    ![Data Migration Assistant - サーバーへの接続](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-3.png)
+    ![Data Migration Assistant:サーバーに接続する](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-3.png)
 
-6. **[ソースの追加]** で、Contoso は評価するデータベースを選択し、 **[次へ]** を選択して評価を開始します。
+6. **[ソースの追加]** で、Contoso は評価するデータベースを追加し、 **[次へ]** を選択して評価を開始します。
 
 7. 評価が作成されます。
 
-    ![Data Migration Assistant - 評価の作成](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-4.png)
+    ![Data Migration Assistant:評価を作成する](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-4.png)
 
 8. **[結果の確認]** で、評価の結果を確認します。
 
@@ -190,11 +186,11 @@ Contoso が評価を行う方法は次のとおりです。
     - 130:SQL Server 2016/Azure SQL Database
     - 140:SQL Server 2017/Azure SQL Database
 
-    ![Data Migration Assistant - 互換性の問題レポート](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-5.png)
+    ![Data Migration Assistant:互換性の問題レポート](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-5.png)
 
 2. **[機能に関する推奨事項]** レポートで、Contoso は評価を通して推奨されるパフォーマンス、セキュリティ、ストレージの機能を移行後に確認します。 インメモリ OLTP と列ストア インデックス、Stretch Database、Always Encrypted、動的データ マスク、Transparent Data Encryption など、さまざまな機能が推奨されます。
 
-    ![Data Migration Assistant - 機能に関する推奨事項レポート](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-6.png)
+    ![Data Migration Assistant:機能に関する推奨事項レポート](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
     > Contoso がすべての SQL Server データベースで [Transparent Data Encryption を有効にする](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)ことが推奨されます。 これは、データベースがオンプレミスでホストされている場合よりも、クラウドにある場合に、よりいっそう重要です。 Transparent Data Encryption は、移行後にのみ有効にする必要があります。 Transparent Data Encryption が既に有効になっている場合は、証明書または非対称キーを対象サーバーの `master` データベースに移動する必要があります。 [Transparent Data Encryption によって保護されたデータベースを別の SQL Server に移動する方法については、こちらを参照してください](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
@@ -243,13 +239,13 @@ Contoso が VM を探索するには、Azure Migrate プロジェクトを作成
 
 1. **[概要]** の **[サーバーの検出、評価、移行]** で、 **[サーバーの評価と移行]** を選択します。
 
-    ![Azure Migrate - 移行プロジェクトの作成](../migrate/azure-best-practices/media/contoso-migration-assessment/assess-migrate.png)
+    ![Azure Migrate: 移行プロジェクトの作成](../migrate/azure-best-practices/media/contoso-migration-assessment/assess-migrate.png)
 
 1. **[作業の開始]** で、 **[ツールの追加]** を選択します。
 
 1. **[移行プロジェクト]** で、自分の Azure サブスクリプションを選択し、リソース グループがない場合は作成します。
 
-1. * *[プロジェクトの詳細]* で、プロジェクト名と、プロジェクトを作成したい地理的な場所を指定します。 米国、アジア、ヨーロッパ、オーストラリア、英国、カナダ、インド、日本がサポートされています。
+1. **[プロジェクトの詳細]** で、プロジェクト名と、プロジェクトを作成したい地理的な場所を指定します。 米国、アジア、ヨーロッパ、オーストラリア、英国、カナダ、インド、日本がサポートされています。
 
     - プロジェクトの地理的な場所は、オンプレミスの VM から収集されたメタデータを格納するためにのみ使用されます。
     - 移行を実行するときは、任意のターゲット リージョンを選択できます。
@@ -258,7 +254,7 @@ Contoso が VM を探索するには、Azure Migrate プロジェクトを作成
 
 1. **[評価ツールの選択]** で、次を選択します: **[Azure Migrate: Server Assessment]**  >  **[次へ]** 。
 
-    ![Azure Migrate - 評価ツール](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-tool.png)
+    ![Azure Migrate: 評価ツール](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-tool.png)
 
 1. **[移行ツールの選択]** で、 **[今は移行ツールの追加をスキップします]**  >  **[次へ]** の順に選択します。
 
@@ -274,7 +270,7 @@ Contoso が VM を探索するには、Azure Migrate プロジェクトを作成
 
 1. **[ダウンロード]** を選択して、.OVA テンプレート ファイルをダウンロードします。
 
-     ![Azure Migrate - コレクターのダウンロード](../migrate/azure-best-practices/media/contoso-migration-assessment/download-ova-v2.png)
+     ![Azure Migrate: コレクターのダウンロード](../migrate/azure-best-practices/media/contoso-migration-assessment/download-ova-v2.png)
 
 ### <a name="verify-the-collector-appliance"></a>コレクター アプライアンスを確認する
 
@@ -297,7 +293,7 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
 
 1. vSphere Client コンソールで、 **[ファイル]**  >  **[OVF テンプレートのデプロイ]** を選択します。
 
-    ![vSphere Web Client - OVF テンプレートのデプロイ](../migrate/azure-best-practices/media/contoso-migration-assessment/vcenter-wizard.png)
+    ![vSphere Web Client:OVF テンプレートのデプロイ](../migrate/azure-best-practices/media/contoso-migration-assessment/vcenter-wizard.png)
 
 2. OVF テンプレートのデプロイ ウィザードで **[ソース]** を選択し、OVA ファイルの場所を指定します。
 
@@ -316,7 +312,7 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
 1. vSphere Client コンソールで、 **[コンソールを開く]** を選択します。 ライセンス条項を受け入れ、コレクター VM のパスワード設定を指定します。
 2. デスクトップ上で、**Microsoft Azure Appliance Configuration Manager** のショートカットを選択します。
 
-    ![vSphere Client コンソール - コレクターのショートカット](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
+    ![vSphere Client コンソール:コレクターのショートカット](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
 
 3. Azure Migrate Collector で、 **[前提条件のセットアップ]** を選択します。 ライセンス条項に同意し、サード パーティの情報を確認します。
 
@@ -325,7 +321,7 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
     > [!NOTE]
     > VM からインターネットにプロキシを使用しないで直接アクセスできると仮定しています。
 
-    ![Azure Migrate Collector - 前提条件の確認](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
+    ![Azure Migrate Collector:前提条件を確認する](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
 5. Azure アカウントにサインインし、サブスクリプションと先ほど作成した移行プロジェクトを選択します。 また、**アプライアンス**の名前を入力して、Azure portal で識別できるようにします。
 
@@ -343,13 +339,13 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
 
 収集の完了後、Contoso は VM がポータルに表示されていることを確認します。
 
-1. Azure Migrate プロジェクトで、 **[サーバー]**  >  **[検出済みサーバー]** を選択します。 検出したい VM が表示されていることを確認します。
+1. Azure Migrate プロジェクトの **[サーバー]** で「servers**」を選択します。 検出したい VM が表示されていることを確認します。
 
-    ![Azure Migrate - 検出されたマシン](../migrate/azure-best-practices/media/contoso-migration-assessment/discovery-complete.png)
+    ![Azure Migrate: 検出されたマシン](../migrate/azure-best-practices/media/contoso-migration-assessment/discovery-complete.png)
 
 2. 現時点では、マシンに Azure Migrate エージェントはインストールされていません。 Contoso は、依存関係を表示するためにエージェントをインストールする必要があります。
 
-    ![Azure Migrate - エージェントのインストールが必要](../migrate/azure-best-practices/media/contoso-migration-assessment/machines-no-agent.png)
+    ![Azure Migrate: エージェントのインストールが必要](../migrate/azure-best-practices/media/contoso-migration-assessment/machines-no-agent.png)
 
 ## <a name="step-5-prepare-for-dependency-analysis"></a>手順 5:依存関係の分析の準備をする
 
@@ -385,11 +381,11 @@ Contoso は VM ごとにインストールを実行します。
 
 3. **[エージェントのセットアップ オプション]** で、 **[Azure Log Analytics にエージェントを接続する]**  >  **[次へ]** を選択します。
 
-    ![Microsoft Monitoring Agent のセットアップ - エージェントのセットアップ オプション](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install.png)
+    ![Microsoft Monitoring Agent のセットアップ:エージェントのセットアップ オプション](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install.png)
 
 4. **[Azure Log Analytics]** で、ポータルからコピーしたワークスペース ID とキーを貼り付けます。
 
-    ![Microsoft Monitoring Agent のセットアップ - Azure Log Analytics](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install2.png)
+    ![Microsoft Monitoring Agent のセットアップ:Azure Log Analytics](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install2.png)
 
 5. **[インストールの準備完了]** で、MMA をインストールします。
 
@@ -442,7 +438,7 @@ Microsoft Monitoring Agent をインストールした後、Contoso では Linux
 
 1. 分析対象のマシンを確認するために、Contoso は **[依存関係の表示]** を選択します。
 
-    ![Azure Migrate - マシンの依存関係の表示](../migrate/azure-best-practices/media/contoso-migration-assessment/view-machine-dependencies.png)
+    ![Azure Migrate: マシンの依存関係の表示](../migrate/azure-best-practices/media/contoso-migration-assessment/view-machine-dependencies.png)
 
 2. SQLVM 依存関係マップでは、SQLVM について次の詳細が表示されます。
 
@@ -451,19 +447,19 @@ Microsoft Monitoring Agent をインストールした後、Contoso では Linux
     - Azure Migrate エージェントがインストールされた依存関係にあるマシンが、別々のボックスとして表示されます。
     - エージェントがインストールされていないマシンには、ポートと IP アドレスの情報が表示されます。
 
-3. エージェントがインストールされているマシン (WEBVM) について、マシンのボックスを選択すると詳細情報が表示されます。 その情報には、FQDN、オペレーティング システム、MAC アドレスが含まれます。
+3. エージェントがインストールされているマシン (`WEBVM`) について、マシンのボックスを選択すると詳細情報が表示されます。 その情報には、FQDN、オペレーティング システム、MAC アドレスが含まれます。
 
-    ![Azure Migrate - グループの依存関係の表示](../migrate/azure-best-practices/media/contoso-migration-assessment/sqlvm-dependencies.png)
+    ![Azure Migrate: グループの依存関係の表示](../migrate/azure-best-practices/media/contoso-migration-assessment/sqlvm-dependencies.png)
 
-4. グループに追加する VM (SQLVM と WEBVM) を選択します。 `Ctrl` キーを押しながら、複数の VM を選択します。
-5. **[グループの作成]** を選択し、名前 (**smarthotelapp**) を入力します。
+4. グループに追加する VM (`SQLVM` と `WEBVM`) を選択します。 `Ctrl` キーを押しながら、複数の VM を選択します。
+5. **[グループの作成]** を選択し、名前 (`smarthotelapp`) を入力します。
 
     > [!NOTE]
     > さらに細かい依存関係を表示するために、時間の範囲を拡張できます。 特定の期間、つまり開始日と終了日を選択できます。
 
 ### <a name="run-an-assessment"></a>評価を実行する
 
-1. **[グループ]** でグループ (**smarthotelapp**) を開き、 **[評価の作成]** を選択します。
+1. **[グループ]** でグループ (`smarthotelapp`) を開き、 **[評価の作成]** を選択します。
 
     ![Azure Migrate: 評価を作成する](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
 
@@ -475,11 +471,11 @@ Contoso では既定の評価の設定を使用しましたが、[設定はカ�
 
 Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨される適切な Azure VM サイズ設定、推定月間 Azure コストに関する情報が含まれています。
 
-![Azure Migrate - 評価レポート](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-overview.png)
+![Azure Migrate: 評価レポート](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-overview.png)
 
 #### <a name="review-confidence-rating"></a>信頼度レーティングを確認する
 
-![Azure Migrate - 評価の表示](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-display.png)
+![Azure Migrate: 評価の表示](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-display.png)
 
 評価には、1 つ星から 5 つ星 (1 つ星が最低で 5 つ星が最高) までの信頼度レーティングが付いています。
 
@@ -498,15 +494,13 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 
 #### <a name="verify-azure-readiness"></a>Azure 対応性の状態を確認する
 
-![Azure Migrate - 評価の準備状態](../migrate/azure-best-practices/media/contoso-migration-assessment/azure-readiness.png)
+![Azure Migrate: アセスメントの準備状態](../migrate/azure-best-practices/media/contoso-migration-assessment/azure-readiness.png)
 
 評価レポートには、情報が表でまとめられて表示されます。 パフォーマンス ベースのサイズ設定を表示するには、Azure Migrate に次の情報が必要です。 この情報を収集できない場合、サイズ設定評価は正確でない可能性があります。
 
 - CPU とメモリの使用率データ。
 - VM にアタッチされた各ディスクの読み取り/書き込み IOPS とスループット。
 - VM にアタッチされた各ネットワーク アダプターのネットワーク受信/送信情報。
-
-<!-- markdownlint-disable MD033 -->
 
 | 設定 | 指示内容 | 詳細 |
 | --- | --- | --- |
@@ -515,13 +509,11 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 | **推奨されるツール** | Azure マシンではエージェントが実行されているため、マシン内で実行されているプロセスが Azure Migrate によって確認されます。 そのマシンがデータベース マシンであるかどうかが識別されます。 | |
 | **VM 情報** | レポートには、オペレーティング システム、ブートの種類、ディスクとストレージの情報など、オンプレミス VM の設定が表示されます。 | |
 
-<!-- markdownlint-enable MD033 -->
-
 #### <a name="review-monthly-cost-estimates"></a>推定月間コストを確認する
 
 このビューには、Azure で VM を実行する際の計算コストとストレージ コストの合計が表示されます。 各マシンの詳細も表示されます。
 
-![Azure Migrate - Azure のコスト](../migrate/azure-best-practices/media/contoso-migration-assessment/azure-costs.png)
+![Azure Migrate: Azure のコスト](../migrate/azure-best-practices/media/contoso-migration-assessment/azure-costs.png)
 
 - コストの見積もりは、マシンの推奨サイズを使って計算されます。
 - コンピューティングとストレージの見積もり月額コストが、グループ内の全 VM について集計されます。
@@ -530,12 +522,12 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 
 - 評価の終了後、Contoso は今後の評価に使用するために Azure Migrate のアプライアンスを保持します。
 - VMware VM をオフにします。 追加の VM を評価するときに再度使用します。
-- **Contoso の移行**プロジェクトを Azure に保管します。 現在、プロジェクトは米国東部 Azure リージョンにある **ContosoFailoverRG** リソース グループにデプロイされています。
+- `Contoso Migration` プロジェクトを Azure に保持します。 現在、プロジェクトは米国東部 Azure リージョンにある `ContosoFailoverRG` リソース グループにデプロイされています。
 - コレクター VM には 180 日間の評価版ライセンスがあります。 この制限の有効期限が切れた場合は、コレクターをダウンロードして再度セットアップする必要があります。
 
 ## <a name="conclusion"></a>まとめ
 
-このシナリオでは、Contoso が Data Migration Assessment ツールを使用して SmartHotel360 アプリ データベースを評価しました。 また、Azure Migrate サービスを使用してオンプレミスの VM を評価しました。 次いで、オンプレミス リソースを Azure に移行する準備を確実に整えるため、評価を確認しました。
+このシナリオでは、Contoso が Data Migration Assistant ツールを使用して SmartHotel360 アプリ データベースを評価しました。 また、Azure Migrate サービスを使用してオンプレミスの VM を評価しました。 次いで、オンプレミス リソースを Azure に移行する準備を確実に整えるため、評価を確認しました。
 
 ## <a name="next-steps"></a>次のステップ
 

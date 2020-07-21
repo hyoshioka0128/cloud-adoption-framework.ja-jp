@@ -1,22 +1,22 @@
 ---
-title: ネットワーク容量の超過
-description: 移行作業中にデータ要件がネットワーク容量を超えます。
+title: 移行作業中にデータ要件がネットワーク容量を超える場合のベスト プラクティス
+description: 移行作業中にデータ要件がネットワーク容量を超える場合のベスト プラクティス
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a075b99945a50850561ceab4a9f1b16bfe180936
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: d2246b71dea7397b724b69b429827ffd9b0801e5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862485"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194512"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
-# <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>移行作業中にデータ要件がネットワーク容量を超えている
+# <a name="best-practices-when-data-requirements-exceed-network-capacity-during-a-migration-effort"></a>移行作業中にデータ要件がネットワーク容量を超える場合のベスト プラクティス
 
 クラウド移行では、資産がレプリケートされ、既存のデータセンターとクラウド間でネットワーク経由で同期されます。 さまざまなワークロードの既存のデータ サイズ要件が、ネットワーク容量を超えることは珍しくありません。 このようなシナリオでは、移行プロセスはきわめて低速になったり、場合によっては完全に停止することがあります。 次のガイダンスは、ネットワーク制限に対処するソリューションを提供する [Azure 移行ガイド](../azure-migration-guide/index.md)の範囲を拡大します。
 
@@ -26,13 +26,13 @@ ms.locfileid: "83862485"
 
 ## <a name="suggested-prerequisites"></a>推奨される前提条件
 
-**ネットワーク容量のリスクの検証:** [デジタル資産の合理化](../../digital-estate/rationalize.md)は、特に使用可能なネットワーク容量への過負荷に関する問題がある場合に、強く推奨される前提条件です。 デジタル資産の合理化中に、[デジタル資産のインベントリ](../../digital-estate/inventory.md)が収集されます。 そのインベントリには、デジタル資産全体の既存のストレージ要件を含める必要があります。 「[レプリケーションのリスク: レプリケーションの物理的特性](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)」で説明しているように、そのインベントリは、**移行データの合計サイズ**を評価するために使用できます。これは、**利用可能な移行帯域幅**の合計と比較できます。 その比較が**ビジネスの変更までの必要な時間**に整合しない場合、この記事は、移行速度を速めて、データセンターを移行するために必要な時間を短縮する場合に役立ちます。
+**ネットワーク容量のリスクの検証:** [デジタル資産の合理化](../../digital-estate/rationalize.md)は、特に使用可能なネットワーク容量への過負荷に関する問題がある場合に、強く推奨される前提条件です。 デジタル資産の合理化中に、[デジタル資産のインベントリ](../../digital-estate/inventory.md)が収集されます。 そのインベントリには、デジタル資産全体の既存のストレージ要件を含める必要があります。 「[レプリケーションのリスク - レプリケーションの物理的特性](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)」で説明しているように、そのインベントリは、**移行データの合計サイズ**を評価するために使用できます。これは、**利用可能な移行帯域幅**の合計と比較できます。 その比較が**ビジネスの変更までの必要な時間**に整合しない場合、この記事は、移行速度を速めて、データセンターを移行するために必要な時間を短縮する場合に役立ちます。
 
-**独立したデータ ストアのオフライン転送:** Azure Data Box とのオンラインおよびオフラインの両方のデータ転送の例が、次の図に示されています。 これらのアプローチは、ワークロードの移行の前にクラウドへ大量のデータを配布するために使用できます。 オフラインのデータ転送では、ソース データは Azure Data Box にコピーされ、続いて Azure Data Box が、Azure ストレージ アカウントにファイルまたは BLOB として転送するために物理的に Microsoft に配布されます。 このプロセスは、その他の移行作業の前に、特定のワークロードに直接関連付けられていないデータを配布するために使用できます。 そのようにすることで、ネットワーク上の制約内での移行を完了するために、ネットワーク経由で配布する必要のあるデータの量が減少します。
+**独立したデータ ストアのオフライン転送:** Azure Data Box とのオンラインおよびオフラインの両方のデータ転送の例が、次の図に示されています。 これらのアプローチは、ワークロードの移行の前にクラウドへ大量のデータを配布するために使用できます。 オフラインのデータ転送では、ソース データは Azure Data Box にコピーされ、続いて Azure Data Box が、Azure Storage アカウントにファイルまたは BLOB として転送するために物理的に Microsoft に配布されます。 このプロセスは、その他の移行作業の前に、特定のワークロードに直接関連付けられていないデータを配布するために使用できます。 そのようにすることで、ネットワーク上の制約内での移行を完了するために、ネットワーク経由で配布する必要のあるデータの量が減少します。
 
 このアプローチは、HDFS、バックアップ、アーカイブ、ファイル サーバー、アプリケーションなどからのデータ転送に使用されることがあります。 既存の技術的なガイダンスでは、このアプローチを使用して、[HDFS ストア](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)から、または [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)、[データ コピー サービス](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)を使用してディスクから Data Box にデータを転送する方法について説明します。
 
-大量のデータがオフライン転送を介して移動されるが、後からネットワーク経由でより低いスケールで同期される「シードおよびフィード」移行に Azure Data Box を使用するサード パーティ パートナー ソリューションもあります。
+大量のデータがオフライン転送を介して移動されるが、後からネットワーク経由でより低いスケールで同期される "シードおよびフィード" 移行に Azure Data Box を使用するサードパーティ パートナー ソリューションもあります。
 
 ![Azure Data Box でのオフラインおよびオンラインのデータ転送](../../_images/migrate/data-box.png)
 
@@ -55,7 +55,7 @@ Azure への接続が利用できる場合、特にワークロードの移行�
 
 ## <a name="migrate-process-changes"></a>移行プロセスの変更
 
-オフラインの転送メカニズムを使用する場合、[レプリケーション プロセス](../migration-considerations/migrate/replicate.md)はおそらく必要ではありません。 ただし、[同期プロセス](../migration-considerations/migrate/replicate.md)はまだ要件になっていることがあります。 評価プロセス中に完了したずれの分析結果を理解すると、資産がオフラインで転送されている場合、移行中に必要となるタスクがわかります。
+オフラインの転送メカニズムを使用する場合、[レプリケーション プロセス](../migration-considerations/migrate/replicate.md)はおそらく必要ではありません。 とはいえ、[同期プロセス](../migration-considerations/migrate/replicate.md)はまだ要件になっていることがあります。 評価プロセス中に完了したずれの分析結果を理解すると、資産がオフラインで転送されている場合、移行中に必要となるタスクがわかります。
 
 ### <a name="suggested-action-during-the-migrate-process"></a>移行プロセスで推奨されるアクション
 
@@ -63,7 +63,7 @@ Azure への接続が利用できる場合、特にワークロードの移行�
 
 大量のデータがオフライン転送を介して移動されるが、後からネットワーク経由でより低いスケールで同期される「シードおよび同期」移行に Azure Data Box を使用するサード パーティ パートナー ソリューションもあります。
 
-**デバイスの配布:** データをコピーすると、デバイスは [Microsoft に配布](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up)できます。 受信およびインポートされた後、データは Azure ストレージ アカウントで使用できます。
+**デバイスの配布:** データをコピーすると、デバイスは [Microsoft に配布](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up)できます。 受信およびインポートされた後、データは Azure Storage アカウントで使用できます。
 
 **資産の復元:** [データの検証](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure)はストレージ アカウントで使用できます。 検証されると、データは、BLOB として、または Azure Files で使用できます。 データが VHD/VHDX ファイルの場合、ファイルをマネージド ディスクに変換できます。 これらのマネージド ディスクは続いて、仮想マシンをインスタンス化するために使用でき、この仮想マシンが元のオンプレミス資産のレプリカを作成します。
 

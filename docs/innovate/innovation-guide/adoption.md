@@ -9,24 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: db526c15a4e33f9531a404c8c257d9c6b5b90261
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 257c02ae6ac6fcb878386ca64897ec44352b68ad
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222319"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373324"
 ---
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-prepare-for-customer-feedback"></a>Azure イノベーション ガイド:カスタマー フィードバックの準備
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="prepare-for-customer-feedback"></a>カスタマー フィードバックの準備
-
-::: zone-end
 
 ユーザーによる採用、エンゲージメント、リテンション期間がイノベーションの成功の鍵となります。 なぜですか?
 
@@ -49,7 +39,7 @@ Application Insights は、アプリケーションの使用状況に関する�
 
 1. **Application Insights** に移動します。
    - 目的のアプリケーションが一覧に表示されない場合は、 **[追加]** を選択し、プロンプトに従って App Insights の構成を開始します。
-   - 目的のアプリが一覧にある場合はそれを選択します。
+   - 目的のアプリケーションが一覧にある場合はそれを選択します。
 1. **[概要]** ウィンドウには、アプリケーションに関するいくつかの統計情報があります。 仮説との関連性の高いデータを表示するカスタム ダッシュボードを作成するには、 **[アプリケーション ダッシュボード]** を選択します。
 
 ::: zone target="chromeless"
@@ -124,7 +114,7 @@ API Management サービスを開くには、[Azure portal](https://portal.azure
 
 ### <a name="action"></a>アクション
 
-Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps Services](https://azure.microsoft.com/services/devops) を使用して開始してください。
+Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops) を使用して開始してください。
 
 ::: zone-end
 

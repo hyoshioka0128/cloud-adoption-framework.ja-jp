@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ccc413343ccaf6db5425000c1dca44010976eb79
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 5a193c9b54bac12023130b6e365f866dc8f3ca36
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075582"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191656"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雑な企業向けのガバナンス ガイド: コスト管理の規範の改善
 
@@ -57,7 +57,7 @@ ms.locfileid: "85075582"
 - すべてのコストは、責任の所在を明らかにするため、特定の職務に割り当てる必要があります。
 - クラウド資産は、最適化の機会を探して継続的に監視する必要があります。
 - クラウド ガバナンス ツールでは、資産のサイズ変更オプションを、承認済みの構成リストに限定する必要があります。 このツールにより、すべての資産がコスト監視ソリューションによって発見可能で、追跡されるようにする必要があります。
-- デプロイの計画時には、運用ワークロードのホスティングに関連付けられている必須のクラウド リソースがあれば、それを文書化する必要があります。 このドキュメントは、予算の精度を高め、より高価なオプションの使用を防ぐ追加の自動化ツールを準備するのに役立ちます。 このプロセス中には、予約インスタンスやライセンス コストの削減など、クラウド プロバイダーが提供するさまざまな割引ツールについて検討する必要があります。
+- デプロイの計画時には、運用ワークロードのホスティングに関連付けられている必須のクラウド リソースがあれば、それを文書化する必要があります。 このドキュメントは、予算の精度を高め、より高価なオプションの使用を防ぐ追加の自動化ツールを準備するのに役立ちます。 このプロセス中には、Azure Reserved Virtual Machine Instances やライセンス コストの削減など、クラウド プロバイダーが提供するさまざまな割引ツールについて検討する必要があります。
 - すべてのアプリケーション所有者は、クラウド コストをより適切に管理するために、ワークロードの最適化実習のトレーニングに参加する必要があります。
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>ベスト プラクティスの段階的な改善

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84e31db3819235b7a17d6a5f4727e09854bc1b35
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7e8542a45cd9fa9517d4ddf9ed5789f8173a9897
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755893"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373206"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -22,11 +22,11 @@ ms.locfileid: "83755893"
 
 環境を Azure に移行したら、セキュリティや、環境を管理するために使用される方法を検討することが重要です。 Azure では、ソリューションでこれらのニーズを満たすための多くの機能が提供されます。
 
-# <a name="azure-monitor"></a>[Azure Monitor](#tab/monitor)
+## <a name="azure-monitor"></a>[Azure Monitor](#tab/monitor)
 
 Azure Monitor は、クラウドおよびオンプレミス環境の利用統計情報を収集、分析し、それに対応する包括的なソリューションを提供することにより、アプリケーションの可用性とパフォーマンスを最大化します。 このツールは、ご利用のアプリケーションがどのように実行されているかを把握するのに役立ちます。さらに、このツールにより、そのアプリケーションに影響している問題点およびアプリケーションが依存しているリソースを事前に明らかにしておくことができます。
 
-## <a name="use-and-configure-azure-monitor"></a>Azure Monitor を使用および構成する
+### <a name="use-and-configure-azure-monitor"></a>Azure Monitor を使用および構成する
 
 1. Azure Portal で **[監視]** に移動します。
 2. 概要の **[メトリック]** 、 **[ログ]** 、または **[サービス正常性]** を選択します。
@@ -40,25 +40,25 @@ Azure Monitor は、クラウドおよびオンプレミス環境の利用統計
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 - [Azure Monitor の概要](https://docs.microsoft.com/azure/azure-monitor/overview)。
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure Service Health](#tab/serviceHealth)
+## <a name="azure-service-health"></a>[Azure Service Health](#tab/serviceHealth)
 
 Azure Service Health は、Azure サービスの問題がユーザーに影響を与えた場合の個人用に設定されたガイダンスとサポートを提供します。 問題を通知してくれるだけでなく、その影響の把握にも役立つほか、問題が解決した場合にはその旨の情報が随時配信されます。 また、お使いのリソースの可用性に影響を及ぼすおそれのある、予定されているメンテナンスや変更に備えることもできます。
 
 Azure Service Health には以下が含まれます。
 
 - **[Azure Status]\(Azure の状態):** Azure サービスの正常性のグローバルなビュー。
-- **サービス正常性:** Azure サービスの正常性の個人用に設定されたビュー。
+- **[サービス正常性]:** Azure サービスの正常性の個人用に設定されたビュー。
 - **[リソース正常性]:** Azure サービスによってプロビジョニングされた個々のリソースの正常性のより深いビュー。
 
 組み合わされると、これらのエクスペリエンスにより、Azure の正常性の包括的なビューがユーザーに関連する詳細レベルで表示されます。
 
-## <a name="access-service-health"></a>Service Health にアクセスする
+### <a name="access-service-health"></a>Service Health にアクセスする
 
 1. Azure Portal で **[監視]** に移動します。
 2. **[サービスの正常性]** を選択します。
@@ -71,17 +71,17 @@ Azure Service Health には以下が含まれます。
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 詳細については、「[Azure Service Health](https://docs.microsoft.com/azure/service-health)」を参照してください。
 
 ::: zone-end
 
-# <a name="azure-advisor"></a>[Azure Advisor](#tab/advisor)
+## <a name="azure-advisor"></a>[Azure Advisor](#tab/advisor)
 
 Azure Advisor は、ベスト プラクティスに従って Azure デプロイメントを最適化できるようにする、個人用に設定されたクラウド コンサルタントです。 Azure Advisor では、リソース構成と使用量テレメトリを分析します。 その後、Azure の全体的な使用量を削減する機会を探すと同時に、リソースのパフォーマンス、セキュリティ、高可用性を向上させることができるソリューションを提案します。
 
-## <a name="access-azure-advisor"></a>Azure Advisor にアクセスする
+### <a name="access-azure-advisor"></a>Azure Advisor にアクセスする
 
 1. Azure Portal で **[Advisor]** に移動するか、またはリソースを検索します。
 2. **[高可用性]** 、 **[セキュリティ]** 、 **[パフォーマンス]** 、 **[コスト]** を選択します。
@@ -94,17 +94,17 @@ Azure Advisor は、ベスト プラクティスに従って Azure デプロイ�
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 [概要](https://docs.microsoft.com/azure/advisor/advisor-overview)。
 
 ::: zone-end
 
-# <a name="azure-security-center"></a>[Azure Security Center](#tab/security)
+## <a name="azure-security-center"></a>[Azure Security Center](#tab/security)
 
-Azure Security Center は、データセンターのセキュリティ体制を強化すると共に、クラウド内 (Azure 内かどうかにかかわらず) だけでなくオンプレミスのハイブリッド ワークロードにわたる高度な脅威防止機能を提供する、統合されたインフラストラクチャ セキュリティ管理システムです。
+Azure Security Center は、データセンターのセキュリティ体制を強化すると共に、クラウド内 (&mdash;Azure 内かどうかにかかわらず&mdash;) だけでなくオンプレミスのハイブリッド ワークロードにわたる Azure Advanced Threat Protection を提供する、統合されたインフラストラクチャ セキュリティ管理システムです。
 
-## <a name="access-azure-security-center"></a>Azure Security Center にアクセスする
+### <a name="access-azure-security-center"></a>Azure Security Center にアクセスする
 
 1. Azure Portal で **[Security Center]** に移動するか、またはリソースを検索します。
 2. **[推奨事項]** を選択します。
@@ -117,17 +117,17 @@ Azure Security Center は、データセンターのセキュリティ体制を�
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 [概要](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ::: zone-end
 
-# <a name="azure-backup"></a>[Azure Backup](#tab/backup)
+## <a name="azure-backup"></a>[Azure Backup](#tab/backup)
 
 Azure Backup は、Microsoft クラウド内のデータをバックアップ (または保護) および復元するために使用できる Azure ベースのサービスです。 Azure Backup は、既存のオンプレミスまたはオフサイトのバックアップ ソリューションを、信頼性の高い、セキュリティで保護された、コスト競争力のあるクラウド ベースのソリューションに置き換えます。
 
-## <a name="enable-backup-for-an-azure-vm"></a>Azure VM のバックアップを有効にする
+### <a name="enable-backup-for-an-azure-vm"></a>Azure VM のバックアップを有効にする
 
 1. Azure portal で、 **[仮想マシン]** を選択し、レプリケートする VM を選択します。
 1. **[操作]** で、 **[バックアップ]** を選択します。
@@ -149,13 +149,13 @@ Azure Backup は、Microsoft クラウド内のデータをバックアップ (�
 
 ::: zone-end
 
-# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
+## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
 このガイドの前の方で、移行の実行の一部として Azure Site Recovery を使用する方法について説明しました。 ただし、それにより、移行が完了した後のディザスター リカバリー戦略の重要なコンポーネントも形成されます。
 
 Azure Site Recovery サービスを使用すると、プライマリ Azure リージョンでホストされた仮想マシンとワークロードを、セカンダリ リージョンでホストされたコピーにレプリケートできます。 プライマリ リージョンで障害が発生した場合は、セカンダリ リージョンで実行されているコピーにフェールオーバーし、そこから引き続きアプリケーションやサービスにアクセスできます。 仮想マシンのプライマリ コピーの停止が再び稼働状態になったら、そこにフェールバックできます。
 
-## <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>Site Recovery サービスを使用して Azure VM を別のリージョンにレプリケートする
+### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>Site Recovery サービスを使用して Azure VM を別のリージョンにレプリケートする
 
 次の手順では、Site Recovery サービスを使用して Azure VM を別のリージョンに (Azure 間で) レプリケートするプロセスの概要を説明しています。
 
@@ -164,11 +164,11 @@ Azure Site Recovery サービスを使用すると、プライマリ Azure リ�
 > シナリオによっては、正確な手順が少し異なることがあります。
 >
 
-## <a name="enable-replication-for-the-azure-vm"></a>Azure VM のレプリケーションの有効化
+### <a name="enable-replication-for-the-azure-vm"></a>Azure VM のレプリケーションの有効化
 
 1. Azure portal で、 **[仮想マシン]** を選択し、レプリケートする VM を選択します。
 1. **[操作]** で、 **[ディザスター リカバリー]** を選択します。
-1. **[Configure disaster recovery]\(ディザスター リカバリーを構成する\)**  >  **[ターゲット リージョン]** で、レプリケート先のターゲット リージョンを選択します。
+1. **[ディザスター リカバリーの構成]**  >  **[ターゲット リージョン]** で、レプリケート先のターゲット リージョンを選択します。
 1. このクイック スタートでは、その他は既定の設定をそのまま使用します。
 1. **[レプリケーションを有効にする]** を選択します。 これにより VM レプリケーションを有効にするジョブが開始されます。
 
@@ -178,7 +178,7 @@ Azure Site Recovery サービスを使用すると、プライマリ Azure リ�
 
 ::: zone-end
 
-## <a name="verify-settings"></a>設定の確認
+### <a name="verify-settings"></a>設定の確認
 
 レプリケーション ジョブが完了したら、レプリケーションの状態を確認し、レプリケーションの正常性を検証した後、デプロイをテストできます。
 
@@ -193,7 +193,7 @@ Azure Site Recovery サービスを使用すると、プライマリ Azure リ�
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 - [Azure Site Recovery の概要](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
 - [Azure VM を別のリージョンにレプリケートする](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)

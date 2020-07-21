@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 329f421d5c4755e69a856511718f18c53e8db24b
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 604017caee1225766c2e7bc84b19c09f2a6d4235
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994019"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194410"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -54,7 +54,7 @@ Azure に移行する場合、企業内でクラウドを有効に活用する�
 
 ## <a name="define-your-hierarchy"></a>階層の定義
 
-スキャフォールディングの基盤は、サブスクリプションとリソース グループにおける Azure エンタープライズ加入契約の階層とリレーションシップです。 エンタープライズ加入契約は、契約の観点から、企業内での Azure サービスの構造と使用法を定めています。 エンタープライズ契約の範囲内で、各企業の構造に合わせて、環境を部門、アカウント、サブスクリプション、リソース グループにさらに分割できます。
+スキャフォールディングの基盤は、サブスクリプションとリソース グループにおける Enterprise Agreement (EA) 加入契約の階層とリレーションシップです。 加入契約は、契約の観点から、企業内での Azure サービスの構造と使用法を定めています。 エンタープライズ契約の範囲内で、各企業の構造に合わせて、環境を部門、アカウント、サブスクリプション、リソース グループにさらに分割できます。
 
 ![Hierarchy](../_images/reference/agreement.png)
 
@@ -64,7 +64,7 @@ Azure サブスクリプションは、すべてのリソースが含まれる�
 
 ### <a name="departments-and-accounts"></a>部門とアカウント
 
-Azure の加入契約には、次の 3 つの一般的なパターンがあります。
+EA 加入契約には、次の 3 つの一般的なパターンがあります。
 
 - **機能**パターン:
 
@@ -169,11 +169,11 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 パブリック クラウドの使用を開始するにあたり、最初に重要な質問として、「リソースにアクセスできる必要があるのはだれか」、 「このアクセスを制御するにはどうすればよいか」と自問しているかもしれません。 Azure portal とポータルでのリソースへのアクセス制御は、クラウド内の資産の長期的な安全性にとって不可欠です。
 
-リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは "**ありません**"。Azure AD テナントとは何か、Azure 加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
+リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは**ありません**。Azure AD テナントとは何か、加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
 
 ![AD アーキテクチャの図](../_images/reference/ad-architecture.png)
 
-Azure が最初にリリースされたときには、サブスクリプションに対するアクセス制御が基本でした (管理者または共同管理者)。 クラシック モデルでのサブスクリプションへのアクセスは、ポータルでのすべてのリソースへのアクセスを意味していました。 きめ細かく制御することができなかったため、Azure 加入契約に一定レベルの妥当なアクセス制御を提供するためにサブスクリプションが急増しました。 このようにサブスクリプションを急増させる必要はなくなりました。 ロールベースのアクセス制御 (RBAC) では、"所有者"、"共同作成者"、"閲覧者" など一般的なアクセス権を提供する標準ロールをユーザーに割り当てることができます。独自のロールを作成することもできます。
+Azure が最初にリリースされたときには、サブスクリプションに対するアクセス制御が基本でした (管理者または共同管理者)。 クラシック モデルでのサブスクリプションへのアクセスは、ポータルでのすべてのリソースへのアクセスを意味していました。 きめ細かく制御することができなかったため、加入契約に一定レベルの妥当なアクセスの制御を提供するためにサブスクリプションが急増しました。 このようにサブスクリプションを急増させる必要はなくなりました。 ロールベースのアクセス制御 (RBAC) では、"所有者"、"共同作成者"、"閲覧者" など一般的なアクセス権を提供する標準ロールをユーザーに割り当てることができます。独自のロールを作成することもできます。
 
 ロールベースのアクセスを実装するとき、次を強くお薦めします。
 
@@ -187,14 +187,13 @@ Azure が最初にリリースされたときには、サブスクリプショ�
 
 ID およびアクセス制御について計画を立てて準備すること、および [Azure Identity Management のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)に従うことは、採用できる最適なリスク軽減戦略の 1 つであり、すべてのデプロイにおいて必須と考える必要があります。
 
-## <a name="security"></a>Security
+## <a name="security"></a>セキュリティ
 
 従来、クラウド導入の最大の障壁の 1 つは、セキュリティに対する懸念でした。 IT リスク マネージャーとセキュリティ部門は、Azure 内のリソースのセキュリティが既定で保護されており安全であることを保証する必要があります。 Azure には、リソースを保護しながら、リソースに対する脅威を検出して排除するために使用できる機能があります。
 
 ### <a name="azure-security-center"></a>Azure Security Center
 
-[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) は、環境全体のリソースのセキュリティ状態についての統一されたビューと、脅威に対する高度な保護を提供します。 Azure Security Center はオープン プラットフォームです。Microsoft のパートナーは、プラグインして機能を強化するソフトウェアを作成できます。 Azure Security Center のベースライン機能 (Free レベル) によって、セキュリティの体制を強化する評価とレコメンデーションが提供されます。 有料レベルでは、Just-In-Time 管理アクセスや適応型アプリケーション制御 (ホワイトリスト登録) など役に立つ機能が有効になります。
-
+[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) は、環境全体のリソースのセキュリティ状態についての統一されたビューと、脅威に対する高度な保護を提供します。 Azure Security Center はオープン プラットフォームです。Microsoft のパートナーは、プラグインして機能を強化するソフトウェアを作成できます。 Azure Security Center のベースライン機能 (Free レベル) によって、セキュリティの体制を強化する評価とレコメンデーションが提供されます。 有料レベルでは、Just-In-Time 管理アクセスや適応型アプリケーション制御 (許可リスト) など役に立つ追加機能が有効になります。
 > [!TIP]
 > Azure Security Center は強力なツールであり、絶えず改善されており、脅威の検出や企業の保護に使用できる新しい機能を取り入れています。 Azure Security Center は常に有効化しておくことを強くお薦めします。
 
@@ -253,7 +252,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 ### <a name="deep-application-monitoring"></a>詳細なアプリケーション監視
 
-- **Application Insights:** Application Insights では、アプリケーション固有のテレメトリを収集し、クラウドまたはオンプレミス内のアプリケーションのパフォーマンス、可用性、使用状況を監視できます。 .NET、JavaScript、JAVA、Node.js、Ruby、Python など、サポートされる複数の言語用の SDK を使用してアプリケーションをインストルメント化します。 Application Insights イベントが、インフラストラクチャとセキュリティ監視をサポートする同じ Log Analytics データ ストアに取り込まれると、高機能のクエリ言語を使用し、長期にわたってイベントを相互に関連付けて集計できます。
+- **Application Insights:** Application Insights では、アプリケーション固有のテレメトリを収集し、クラウドまたはオンプレミス内のアプリケーションのパフォーマンス、可用性、使用状況を監視できます。 .NET、JavaScript、Java、Node.js、Ruby、Python など、サポートされる複数の言語用の SDK を使用してアプリケーションをインストルメント化します。 Application Insights イベントが、インフラストラクチャとセキュリティ監視をサポートする同じ Log Analytics データ ストアに取り込まれると、高機能のクエリ言語を使用し、長期にわたってイベントを相互に関連付けて集計できます。
 
 ### <a name="deep-infrastructure-monitoring"></a>詳細なインフラストラクチャ監視
 
@@ -289,12 +288,12 @@ Microsoft では、コストの視覚化、追跡、および管理に役立つ�
 
 - **Power BI Azure Consumption Insights:** 組織のために独自の視覚エフェクトを作成しますか。 その場合は、Power BI 用の Azure Consumption Insights コンテンツ パックをツールとして選択してください。 このコンテンツ パックと Power BI を使用すると、組織を表すためにカスタムの視覚エフェクトを作成し、コストについて詳しい分析を実行し、さらに充実させるために他のデータ ソースを追加することもできます。
 
-- **Azure Consumption API:** [Consumption API](https://docs.microsoft.com/rest/api/consumption) を使用すると、予算、予約インスタンス、マーケットプレース請求料金に関する情報に加えて、コストと使用状況のデータにプログラムからアクセスできます。 これらの API にアクセスできるのは、エンタープライズ加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest)こともできます。
+- **Azure Consumption API:** [Consumption API](https://docs.microsoft.com/rest/api/consumption) を使用すると、予算、予約インスタンス、マーケットプレース請求料金に関する情報に加えて、コストと使用状況のデータにプログラムからアクセスできます。 これらの API にアクセスできるのは、EA 加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest)こともできます。
 
 長期の熟練したクラウド ユーザーであるお客様は、特定のベスト プラクティスに従います。
 
 - **コストを積極的に監視します。** 熟達した Azure ユーザーである組織は、絶えずコストを監視して、必要に応じて対処しています。 組織によっては、分析を実行して使用方法の変更を提案するために専任の担当者を置くところもあります。このような担当者は、数か月間稼働しているのに未使用の HDInsight クラスターを見つけたときに初めて、採算以上の働きをしたことになります。
-- **予約 VM インスタンスを使用します。** クラウドにおいてコストを管理するもう 1 つの重要な理念は、ジョブに対して正しいツールを使用することです。 年中無休で維持する必要がある IaaS VM がある場合は、予約 VM インスタンスを使用すると大幅にコストを節約できます。 VM のシャットダウンのオートメーションと予約 VM インスタンスの使用の間で適切なバランスを見つけるには、経験と分析が必要です。
+- **Azure Reserved VM Instances を使用します。** クラウドにおいてコストを管理するもう 1 つの重要な理念は、ジョブに対して正しいツールを使用することです。 年中無休で維持する必要がある IaaS VM がある場合は、予約インスタンスを使用すると大幅にコストを節約できます。 VM のシャットダウンのオートメーションと予約インスタンスの使用の間で適切なバランスを見つけるには、経験と分析が必要です。
 - **オートメーションを効果的に使用します。** 多くのワークロードは毎日実行する必要はありません。 毎日 4 時間ずつ VM をオフにすると、コストの 15% を節約できます。 オートメーションはすぐに効果が得られます。
 - **わかりやすくするためにリソース タグを使用します。** このドキュメントの別の場所でも説明していますが、リソース タグを使用するとコストを詳しく分析できます。
 

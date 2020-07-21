@@ -1,18 +1,18 @@
 ---
 title: メインフレーム アプリの移行戦略
-description: メインフレーム環境から Azure に移行するアプリの再ホスト、削除、再構築、または置換などの戦略について説明します。
+description: メインフレーム環境から Azure に移行するアプリケーションの再ホスト、削除、再構築、または置換などの戦略について説明します。
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb599b892e5cb3e898faf84fb1bd8b65b8d9d03b
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 11f13f38508d480a86eab45ba9bcfe805c27a180
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815074"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193781"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
@@ -126,7 +126,7 @@ Azure を使用するバッチ処理のパフォーマンスを最適化する�
 
 ## <a name="migrate-databases-and-data"></a>データベースとデータを移行する
 
-アプリケーションの移行には、通常、データ層の再ホストが伴います。 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用して、Azure 上のフル マネージド ソリューションに [Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)、[Azure Database Service for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)、[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) などの (SQL Server、オープン ソース、その他の) リレーショナル データベースを移行できます。
+アプリケーションの移行には、通常、データ層の再ホストが伴います。 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用すると、[Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)、[Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)、[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) などの Azure 上のフルマネージド ソリューションに、SQL Server、オープンソース、その他のリレーショナル データベースを移行できます。
 
 たとえば、メインフレームのデータ層で次のものが使用されている場合に移行できます。
 

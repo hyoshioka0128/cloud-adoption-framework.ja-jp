@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: db7f16e8a283e5b5c7b786ef7097584b85109330
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 88c6225915e023bfd148cc0663c7781a11af730d
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077225"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235417"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -173,7 +173,7 @@ Azure では、種類に関係なく、すべてのコンポーネントが Azur
 
 Azure では複雑なトポロジを構成できますが、VDC の概念の中核となる原則の 1 つは再現性と単純さです。 管理作業を最小限に抑えるために、単純なハブ スポーク設計が、推奨される VDC 参照アーキテクチャです。
 
-### <a name="components"></a>Components
+### <a name="components"></a>コンポーネント
 
 仮想データセンターは、4 種類の基本的なコンポーネントで構成されています。**インフラストラクチャ**、**境界ネットワーク**、**ワークロード**、および**監視**です。
 
@@ -368,7 +368,7 @@ Azure Monitor では、カスタム ダッシュボードを作成すること�
 
 "![10][10]"
 
-これらの例は、Azure で作成できるワークロードの種類のほんの一部を示しているにすぎません。基本的な Web および SQL アプリから、最新の IoT、ビッグ データ、Machine Learning、AI などあらゆるものに対応します。
+これらの例は、Azure で作成できるワークロードの種類のほんの一部を示しているにすぎません &mdash; 基本的な Web および SQL アプリから、最新の IoT、ビッグ データ、機械学習、AI などあらゆるものに対応します。
 
 ### <a name="highly-availability-multiple-virtual-datacenters"></a>高可用性: 複数の仮想データセンター
 
@@ -426,7 +426,7 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 | --- | --- | --- |
 | [Azure Active Directory][azure-ad] <br>[Multi-Factor Authentication][multi-factor-authentication] <br> [ロールベースのアクセス制御][RBAC] <br> [既定の Azure AD ロール][Roles] <br><br><br> | [Network Watcher][NetWatch] <br> [Azure Monitor][MonitorOverview] <br> [Log Analytics][LogAnalytics] <br> | [管理グループ][MgmtGrp] <br> [サブスクリプション管理](../ready/azure-best-practices/scale-subscriptions.md) <br> [リソース グループ管理][RGMgmt] <br> [Azure サブスクリプションの制限][limits] <br><br><br> |
 
-| Security | その他の Azure サービス | |
+| セキュリティ | その他の Azure サービス | |
 |-|-|-|
 | [Azure Firewall][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway の WAF][AppGWWAF] <br> [Front Door の WAF][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Azure ストレージ][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Azure Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Event Hubs][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
 

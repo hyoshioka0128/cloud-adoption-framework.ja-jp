@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6672d86f215360f1024b233f62a48eb390b52a52
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 65f28f92e731eac11a337ab9b191b7d0bc09101b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785176"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193067"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "84785176"
 
 - ポリシー、ロールベースのアクセス制御、およびその他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソースのセキュリティを実装する](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security)」を参照してください。
 
-- 「[Monitoring Microsoft Azure Resources and Workloads (Microsoft Azure のリソースとワークロードの監視)](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents)」では、Microsoft Azure 監視ツールを使用して、Azure ネットワーク リソースとオンプレミスのリソースを監視する方法について学習できます。
+- 「[Microsoft Azure リソースとワークロードの監視](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents)」では、Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスにあるリソースを監視する方法について学習できます。
 
 ## <a name="infrastructure-monitoring"></a>インフラストラクチャ監視
 
@@ -81,7 +81,7 @@ Microsoft とパートナーは、あらゆるお客様を対象に、Azure サ�
 
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro):クラウドのキャリア パスをマッピングするのに役立つ無料のオンライン リソースとして機能します。 業界の専門家がクラウド ロールについて行う提案、および提案を実現するためのスキルについて学習してください。 関係を保つために最も必要なスキルを磨くように、学習カリキュラムをご自分のペースで進められます。
 
-Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験]( https://www.microsoft.com/learning/certification-overview.aspx)によって公認のものにすることができます。
+Azure に関する知識を [Azure 認定資格のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)によって公認のものにすることができます。
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps とプロジェクトの管理
 
