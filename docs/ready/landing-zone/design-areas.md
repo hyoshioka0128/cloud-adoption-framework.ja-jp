@@ -7,14 +7,16 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ff839cb704ce79910fc29d6954712a0337a53e1e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 3ec600379b185ae5ab084d80f3d2a6374ba0703e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077012"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479434"
 ---
-# <a name="modular-design-areas-considered-by-all-azure-landing-zones"></a>すべての Azure ランディング ゾーンで考慮されるモジュール設計領域
+<!-- TODO: Refactor terms: "design area", "well-architected" -->
+
+# <a name="design-areas-of-a-well-architected-landing-zone"></a>適切に設計したランディング ゾーンの設計領域
 
 各 Azure ランディング ゾーンの実装オプションとして、次の設計領域の実装に役立つデプロイ アプローチと定義された設計原則が用意されています。 実装オプションを選択する前に、この記事を参考にしてその設計領域について理解を深めてください。
 
@@ -23,7 +25,7 @@ ms.locfileid: "85077012"
 
 デプロイ オプションに関係なく、次の各事項を検討し、設計領域ごとに判断する必要があります。 これらの判断は、各ランディング ゾーンが依存するプラットフォームの基盤に影響を与えます。
 
-| 設計領域  | 目的  | 関連する方法 |
+| 設計領域 | 目的  | 関連する方法 |
 |---|---|---|
 | エンタープライズ登録 | Azure を契約している企業のお客様にとって、適切なテナントの作成と登録は重要な初期段階です。 | Ready |
 | ID | ID およびアクセス管理 (IAM) は、パブリック クラウドの主要なセキュリティ境界です。 セキュリティで保護された完全に準拠したアーキテクチャの基盤です。 | Ready |

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 92f42ff82b6ff944de13a360bd5135b31f7de372
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 19cb24e043b0afa434032728a8379d7e69fe0a64
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076339"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450460"
 ---
 <!-- cSpell:ignore CISO passwordless -->
 
@@ -47,18 +47,25 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 **成果物とサポートに関するガイダンス:**
 
 - **技術:** 最上位のリスクを軽減し、資産の可視性と制御を向上させるには、管理者向けのパスワードレス認証または多要素認証を有効にするか、クラウド リソースの脅威の防止を有効にします。
+
   - [管理者向けのパスワードレス認証または多要素認証](https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts#passwordless-or-multi-factor-authentication-for-admins)
   - [セキュリティ運用](https://docs.microsoft.com/azure/architecture/framework/security/security-operations)と [Azure Security Center での脅威の防止](https://docs.microsoft.com/azure/security-center/threat-protection)
+
 - **プロセス:** セキュリティ ロールと責任を割り当て、インシデント対応プロセスを確立することで、セキュリティに関する迅速な意思決定と継続的な改善を可能にします。
+
   - [責任の明確な線引き](https://docs.microsoft.com/azure/architecture/framework/security/governance#clear-lines-of-responsibility)、[環境を管理するための特権の割り当て](https://docs.microsoft.com/azure/architecture/framework/security/governance#assign-privileges-for-managing-the-environment)、セキュア スコアの運用化 <!-- TODO: Improve this and add link to AAF article -->
   - セキュリティ ロールと責任 <!-- TODO: add link to bookmark -->
   - [インシデント対応のリファレンス ガイド](https://aka.ms/irrg)
+
 - **ユーザー:** クラウド環境への移行時にデプロイおよび運用を適切に行うために必要な教育、ツール、アクセス権をセキュリティ チームに提供します。
+
   - クラウドとクラウド セキュリティの進化の**概念について、すべてのユーザーを対象に教育する**:
     - [脅威の環境、ロール、デジタル戦略の進化](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
     - [セキュリティ、戦略、ツール、脅威のトランスフォーメーション](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
   - 使用されるプラットフォームのクラウド セキュリティ機能に関する技術的な詳細について、**技術スタッフをトレーニング**します。 Microsoft では、広範な [Azure のセキュリティに関するドキュメント](https://docs.microsoft.com/azure/security)を提供しています。
+
 - **長期的なアーキテクチャに関する決定:** 適切な意思決定を行って、長期的な基盤を確立します。 これらを後で変更するのは難しく、コストがかかります。
+
   - [企業のセグメント化戦略を構築し、技術アーキテクチャをそれに合わせる (ネットワークのセグメント化や ID のセグメント化など)](https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
   - [単一のエンタープライズ ディレクトリ](https://docs.microsoft.com/azure/architecture/framework/security/identity#single-enterprise-directory)
   - [サービスの認証戦略](https://docs.microsoft.com/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
@@ -89,8 +96,10 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 説明と更新を容易にするために、戦略をプレゼンテーションに取り込むことをお勧めします。 このプレゼンテーションは、文化と選好に応じて、ドキュメントでサポートできます。
 
 - **戦略のプレゼンテーション:** 単一の戦略プレゼンテーションを用意することも、リーダー クラスの対象者向けの概要バージョンを作成することもできます。
+
   - **完全なプレゼンテーション:** メイン プレゼンテーションまたはオプションの参照スライドに、セキュリティ戦略の要素の完全なセットが含まれている必要があります。
   - **概要:** 上級管理者や取締役会役員向けに使用するバージョンには、リスク選好、最優先事項、許容リスクなど、役割に関連する重要な要素だけを含めます。
+
 - [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)で、動機、成果、業務上の正当な理由を記録することもできます。
 
 **セキュリティ戦略を構築するためのベスト プラクティス:**
@@ -98,6 +107,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 成功したプログラムでは、これらの要素がセキュリティ戦略プロセスに組み込まれています。
 
 - **ビジネス戦略に厳密に合わせる:** セキュリティの目的はビジネス価値を保護することです。 セキュリティのすべての取り組みをその目的に合わせ、内部抗争を最小限に抑えることが重要です。
+
   - ビジネス、IT、セキュリティの要件について**共通の理解を形成する**。
   - 回避可能なリスクによる土壇場の危機を回避するために、**初期段階でセキュリティをクラウド導入に組み込む**。
   - **アジャイル アプローチを使用**して最小限のセキュリティ要件を即座に確立し、長期にわたってセキュリティ保証を継続的に改善する。
@@ -106,6 +116,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
   詳細については、「[トランスフォーメーション、マインドセット、期待](../strategy/define-security-strategy.md#transformations-mindsets-and-expectations)」を参照してください。
 
 - **セキュリティ戦略を最新化する:** セキュリティ戦略には、最新のテクノロジ環境、現在の脅威の状況、セキュリティ コミュニティ リソースのあらゆる側面に関する考慮事項が含まれている必要があります。
+
   - クラウドの**共有責任モデルに適応する**。
   - **クラウドのすべての種類とマルチクラウド デプロイを含める**。
   - 不要で有害な摩擦を避けるために、**ネイティブ クラウド コントロールを優先する**。
@@ -114,8 +125,11 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 **追加コンテキストの関連リソース:**
 
 - [脅威の環境、ロール、デジタル戦略の進化](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
+
 - [セキュリティ、戦略、ツール、脅威のトランスフォーメーション](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
+
 - クラウド導入フレームワークの戦略に関する考慮事項:
+
   - [セキュリティ戦略を最新化する](../strategy/define-security-strategy.md#modernize-your-security-strategy)
   - [サイバーセキュリティの回復力](../strategy/define-security-strategy.md#cybersecurity-resilience)
   - [クラウドでのセキュリティの関係と責任の変化](../strategy/define-security-strategy.md#how-the-cloud-is-changing-security)
@@ -144,34 +158,49 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
   セキュリティ プランには、これらの要素がすべて含まれている必要があります。
 
   - **組織機能のプラン**。チームは、クラウドへの移行によって現在のセキュリティ ロールと責任がどのように変わるのかがわかります。
+
   - **セキュリティ スキルのプラン**。これは、テクノロジ、ロール、責任の重要な変更点を参照する際にチーム メンバーをサポートするためのものです。
+
   - **セキュリティ アーキテクチャと機能の技術的なロードマップ**。これは技術チームの指針となります。
-  Microsoft では、アーキテクチャとロードマップを構築する際に役立つ、次のようなリファレンス アーキテクチャとテクノロジ機能を提供しています。
+  
+    Microsoft では、アーキテクチャとロードマップを構築する際に役立つ、次のようなリファレンス アーキテクチャとテクノロジ機能を提供しています。
+
     - [Azure コンポーネントとリファレンス モデル](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)。これは、Azure セキュリティ ロールのプランの策定と設計を促進するためのものです。
 
       ![Azure 管理モデル](../_images/security/azure-administration-model.png)
 
       ![Azure RBAC モデル](../_images/security/azure-rbac-model.png)
+
     - [Microsoft サイバーセキュリティ リファレンス アーキテクチャ](https://aka.ms/mcra)。これは、オンプレミスとクラウドのリソースにまたがるハイブリッド エンタープライズ向けのサイバーセキュリティ アーキテクチャを構築するためのものです。
     - [セキュリティ オペレーション センター (SOC) リファレンス アーキテクチャ](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks#part-1-introduction---soc-learnings-strategies-and-technical-integration-2430)。これは、セキュリティの検出、対応、回復を最新化するためのものです。
     - [ゼロ トラスト ユーザー アクセス リファレンス アーキテクチャ](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3#part-5-zero-trust-user-access-reference-architecture-842)。これは、クラウドの生成用のアクセス制御アーキテクチャを最新化するためのものです。
     - [Azure Security Center](https://docs.microsoft.com/azure/security-center) と [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)。これは、クラウド資産をセキュリティで保護するためものです。
+
   - **セキュリティの意識と教育のプラン**: すべてのチームが、重要なセキュリティに関する基礎知識を身に付けます。
+
   - **資産の機密度のマーキング**: ビジネスへの影響に合わせた分類を使用して機密性の高い資産を指定します。 この分類は、ビジネス利害関係者、セキュリティ チーム、その他の関係者が共同で構築します。
 
-- **クラウド プランのセキュリティの変更**: クラウド導入プランの他のセクションを更新して、セキュリティ プランによってトリガーされた変更を反映させます。
+  - **クラウド プランのセキュリティの変更**: クラウド導入プランの他のセクションを更新して、セキュリティ プランによってトリガーされた変更を反映させます。
 
-**セキュリティ プランの策定に関するベスト プラクティス:** プランを策定する際に次のようなアプローチが採用されている場合、セキュリティ プランが成功する可能性が高くなります。
+**セキュリティ プランの策定に関するベスト プラクティス:**
+
+プランを策定する際に次のようなアプローチが採用されている場合、セキュリティ プランが成功する可能性が高くなります。
 
 - **ハイブリッド環境を想定する:** これには、SaaS (サービスとしてのソフトウェア) アプリケーションとオンプレミス環境が含まれます。 また、サービスとしてのクラウド インフラストラクチャ (IaaS) プロバイダーと、サービスとしてのプラットフォーム (PaaS) プロバイダーも複数含まれます (該当する場合)。
-- **アジャイル セキュリティを導入する:** 最初に最小限のセキュリティ要件を確立し、重要ではないすべての項目を、次の手順の優先順位付けされた一覧に移動します。
-これは、従来の 3 から 5 年の詳細なプランにしないでください。 クラウドと脅威環境の変化が速すぎるため、この種のプランは役に立ちません。 実際のプランでは、最初の手順と終了状態を策定することに重点を置く必要があります。
+
+- **アジャイル セキュリティを導入する:** 最初に最小限のセキュリティ要件を確立し、重要ではないすべての項目を、次の手順の優先順位付けされた一覧に移動します。 これは、従来の 3 から 5 年の詳細なプランにしないでください。 クラウドと脅威環境の変化が速すぎるため、この種のプランは役に立ちません。 実際のプランでは、最初の手順と終了状態を策定することに重点を置く必要があります。
+
   - 近い将来の**即効性のある成果**: 長期的なイニシアチブを開始する前に大きな効果が得られます。 組織の文化、標準的なプラクティス、その他の要因に応じて、時間枠は 3 から 12 か月になる可能性があります。
   - 目的の最終状態の**明確なビジョン**: これは、各チームの (達成するまでに数年かかる場合がある) プラン策定プロセスの指針となります。
+
 - **プランを広く共有する:** 利害関係者の意識を高め、フィードバックや同意を増やします。
+
 - **戦略成果に合わせる:** プランがセキュリティ戦略に記載されている戦略成果に合っており、その成果が得られるようにします。
+
 - **所有権、説明責任、期限を定める:** 確実に、各タスクの所有者が識別され、特定の期間内にそのタスクを完了することに取り組むようにします。
+
 - **セキュリティの人間的側面とのつながりを持つ:** 変革のこの期間に関係者を関与させ、新たな期待を持たせます。
+
   - **チーム メンバーの変革を積極的にサポートする:** 以下について明確に伝え、指導します。
     - 習得する必要があるスキル。
     - それらのスキルを習得する必要がある理由 (およびそのメリット)。
@@ -179,6 +208,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
   
     [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を使用して、プランを文書化できます。 また、チーム メンバーの教育に役立つ、[オンラインの Microsoft セキュリティ トレーニング](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction)を利用できます。
   - **セキュリティ意識を促す:** 関係者を組織の保護に純粋に関与させます。
+
 - **Microsoft ラーニングとガイダンスを確認する:** Microsoft では、組織がクラウドへの変革と最新のセキュリティ戦略を計画する際に役立つ、分析情報と展望を公開しています。 資料には、記録されたトレーニング、ドキュメント、セキュリティのベスト プラクティスと推奨される標準が含まれています。
   プランとアーキテクチャの策定に役立つ技術的なガイダンスについては、[Microsoft のセキュリティ ドキュメント](https://docs.microsoft.com/security)を参照してください。
 
@@ -211,6 +241,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
   - [戦略とアーキテクチャに関する Azure のセキュリティ標準](https://docs.microsoft.com/security/compass/compass): 環境のセキュリティ体制を形成するための戦略とアーキテクチャに関する推奨事項。
   - [Azure セキュリティ ベンチマーク](https://docs.microsoft.com/azure/security/benchmarks/introduction): Azure 環境をセキュリティで保護するための特定の構成に関する推奨事項。
   - [Azure セキュリティ ベースラインのトレーニング](https://docs.microsoft.com/learn/modules/create-security-baselines)。
+
 - **ガードレールを提供する:** 保護対策には、自動化されたポリシーの監査と適用を含める必要があります。 これらの新しい環境では、チームは組織のセキュリティ ベースラインの監査と適用の両方に努める必要があります。 これらの取り組みにより、ワークロードの開発時のセキュリティの問題を最小限に抑えることができるだけでなく、ワークロードの継続的インテグレーションと継続的配置 (CI/CD) も実現できます。
 
   Microsoft では、これを可能にするために Azure でいくつかのネイティブ機能を提供しています。
@@ -286,4 +317,4 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 - [Azure サービスの組み込みセキュリティ コントロール](https://docs.microsoft.com/azure/security/fundamentals/security-controls)に関する記事で、セキュリティ情報を確認します。
 - 「[Azure で利用できるセキュリティ サービスとテクノロジ](https://docs.microsoft.com/azure/security/azure-security-services-technologies)」で、Azure セキュリティ ツールとサービスを確認します。
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter/guidance/risk-assessment)を確認します。 ここには、規制コンプライアンス プロセスの一環としてリスク評価を行う際に役立つ広範なガイダンス、レポート、関連ドキュメントが含まれています。
-- セキュリティ要件を容易に満たすために使用できるサードパーティ ツールを確認します。 「[Azure Security Center でのセキュリティ ソリューションの統合](https://docs.microsoft.com/azure/security-center/security-center-partner-integration)」をご覧ください。
+- セキュリティ要件を容易に満たすために使用できるサードパーティ ツールを確認します。 詳細については、「[Azure Security Center でのセキュリティ ソリューションの統合](https://docs.microsoft.com/azure/security-center/security-center-partner-integration)」を参照してください。

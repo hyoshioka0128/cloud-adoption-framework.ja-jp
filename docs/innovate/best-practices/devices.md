@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 401acfb2a0689fe54d43c29a8ab32a8d6e218670
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7ac8fe1ffb7318b3e705b4586de300cd1ee6a58f
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219769"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449712"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Azure 上のデバイスと対話するためのツール
 
@@ -37,7 +37,7 @@ Azure では、上記のアンビエント ソリューションの各レベル�
 
 | カテゴリ | ツール |
 |---|---|
-| モバイル エクスペリエンス | <li> Azure App Service <li> PowerApps <li> Microsoft Flow <li> Intune |
+| モバイル エクスペリエンス | <li> Azure App Service <li> Power Apps <li> Power Automate <li> Intune |
 | 複合現実 | <li> Unity <li> Azure Spatial Anchors <li> HoloLens |
 | Integrated Reality | <li> Azure IoT Hub <li> Azure Sphere <li> Azure Kinect DK |
 | 調整された現実 | <li> IoT クラウドからデバイスへ <li> Azure Digital Twins と HoloLens |

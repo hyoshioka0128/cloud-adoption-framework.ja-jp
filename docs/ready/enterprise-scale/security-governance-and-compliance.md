@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4cb0baf0a5f64b2720ef9cf8c3a4b6dae6299688
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: a0543327e50ad50e4e3ada792999bc057c53e499
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235281"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479451"
 ---
 # <a name="caf-enterprise-scale-security-governance-and-compliance"></a>CAF エンタープライズ規模のセキュリティ、ガバナンス、およびコンプライアンス
 
@@ -180,6 +180,8 @@ Azure を採用する際には、健全なセキュリティ体制を維持す�
 - セキュリティ要件を Azure プラットフォームのロード マップに合わせて、新しくリリースされたセキュリティ コントロールを最新の状態に保ちます。
 
 - 必要に応じて、Azure プラットフォームにアクセスするためのゼロ信頼アプローチを実装します。
+
+<!-- docsTest:ignore "and conditional access" -->
 
 ## <a name="service-enablement-framework"></a>サービスの有効化フレームワーク
 
