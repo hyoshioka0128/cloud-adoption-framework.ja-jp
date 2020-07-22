@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbda37f60f3766062733e8dedfb0d8bd7969066f
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 6287cb0f1ea73032728c9394f2d1f74fcc81409a
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787454"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479664"
 ---
 # <a name="expand-your-landing-zone"></a>ランディング ゾーンを拡張する
 
@@ -23,6 +23,7 @@ ms.locfileid: "84787454"
 ランディングゾーンを拡張すると、次の原則をランディング ゾーンに埋め込み、さらに幅広くクラウド環境全体に埋め込むためのコードファースト アプローチを提供します。
 
 ![共有アーキテクチャの原則](../../_images/ready/shared-principles.png)
+_図 1: 共有アーキテクチャの原則。_
 
 これらの同じアーキテクチャ原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。
 
@@ -36,7 +37,7 @@ ms.locfileid: "84787454"
 - セキュリティの拡張: 機密データや重要なシステムの保護を強化するために**セキュリティ**構成を追加します。
 
 > [!WARNING]
-> (24 か月以内に) **クラウドに 1,000 以上の資産 (アプリ、インフラストラクチャ、データ資産) をホストする**中間目標を設定している導入チームは、自チームのクラウド導入体験において早期の段階でこれらの拡張について検討してください。 他のすべての導入パターンについては、ランディング ゾーンの拡張が並列イテレーションになる場合があり、早期のビジネスの成功につながります。
+> (24 か月以内に) **クラウドに 1,000 を超える資産 (アプリ、インフラストラクチャ、データ資産) をホストする**中間目標を設定している導入チームは、自チームのクラウド導入体験において早期の段階でこれらの拡張について検討してください。 他のすべての導入パターンについては、ランディング ゾーンの拡張が並列イテレーションになる場合があり、早期のビジネスの成功につながります。
 
 ## <a name="next-steps"></a>次のステップ
 
