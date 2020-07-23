@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: ce253be58fbd4e5a9ce7a394eb69c131a1948d75
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 2fc7c6a183da9fe87fdb6825f79720f1a804608b
+ms.sourcegitcommit: a6c9643986acf33524f17bbd01c71e3fccc03805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194801"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403479"
 ---
 <!-- cSpell:ignore CAF -->
 
@@ -68,7 +68,7 @@ _図 1: ランディング ゾーンの設計。_
 
 ## <a name="high-level-architecture"></a>大まかなアーキテクチャ
 
-[CAF のエンタープライズ規模のランディング ゾーン アーキテクチャ![](./media/ns-arch.png)](./media/ns-arch.png#lightbox)
+[CAF のエンタープライズ規模のランディング ゾーン アーキテクチャ![](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 _図 2: CAF のエンタープライズ規模ランディング ゾーン アーキテクチャ。_
 
 _このアーキテクチャ ダイアグラムを含む [Visio ファイル](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/enterprise-scale-architecture.vsdx)をダウンロードします。_
