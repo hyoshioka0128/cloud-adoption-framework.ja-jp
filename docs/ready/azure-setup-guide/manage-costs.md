@@ -9,24 +9,24 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0317869050564d2d22f0b47eae207d4c02209beb
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: e7d04e91c8ec5a97d302d47ed5c52e7d58e6aae5
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075109"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233139"
 ---
 <!-- cSpell:ignore dchimes -->
 
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Azure リソースのコストと課金を管理する
 
-コスト管理とは、ビジネスに関連するコストを効率的に計画して制御するプロセスです。 コストの管理タスクは、一般に、財務、管理、およびアプリのチームが実行します。 Azure Cost Management は、コストを考慮に入れて計画を立てる助けになります。 また、効果的にコストを分析し、クラウド支出を最適化する措置を取ることにも役立ちます。
+コスト管理とは、ビジネスに関連するコストを効率的に計画して制御するプロセスです。 コストの管理タスクは、一般に、財務、管理、およびアプリのチームが実行します。 Azure Cost Management および Billing を利用すると、コストを考慮して計画を立てることができます。 また、効果的にコストを分析し、クラウド支出を最適化する措置を取ることにも役立ちます。
 
 クラウド コスト管理プロセスを組織全体に統合することの詳細については、クラウド導入フレームワークの、[事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md)方法に関する記事を参照してください。
 
-## <a name="manage-your-costs-with-azure-cost-management"></a>Azure Cost Management でコストを管理する
+## <a name="manage-your-costs-with-azure-cost-management-and-billing"></a>Azure Cost Management および Billing でコストを管理する
 
-Azure Cost Management には、コストの予測と管理に役立ついくつかの方法が用意されています。
+Azure Cost Management および Billing には、コストの予測と管理に役立ついくつかの方法が用意されています。
 
 - **[クラウド コストの分析]** は、コストの調査と分析に役立ちます。 アカウントの集計されたコストを表示したり、時間の経過に沿って累積コストを表示することができます。
 - **[予算による監視]** では、予算を作成し、それを超えそうになったときに警告するアラートを構成することができます。

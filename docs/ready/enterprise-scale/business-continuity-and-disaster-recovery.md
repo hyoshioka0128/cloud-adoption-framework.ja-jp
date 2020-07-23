@@ -1,24 +1,24 @@
 ---
-title: 事業継続とディザスター リカバリー
-description: 事業継続とディザスター リカバリー。
+title: CAF のエンタープライズ規模の事業継続とディザスター リカバリー
+description: Azure 用の Microsoft クラウド導入フレームワークにおけるエンタープライズ規模の事業継続とディザスター リカバリーについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e20448cac2f08f895cc3fb1ff430156cb7a20f46
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 5e397ed17e9596933629c3d6375546df1e0d9a31
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076985"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194784"
 ---
-# <a name="business-continuity-and-disaster-recovery"></a>事業継続とディザスター リカバリー
+# <a name="caf-enterprise-scale-business-continuity-and-disaster-recovery"></a>CAF のエンタープライズ規模の事業継続とディザスター リカバリー
 
 ## <a name="planning-for-business-continuity-and-disaster-recovery"></a>事業継続とディザスター リカバリーの計画
 
-このセクションを参考にすると、顧客のディザスター リカバリー (DR) 要件をキャプチャし、特定の目標復旧時間 (RTO) と目標復旧時点 (RPO) の要件を満たすためにアプリケーションのワークロードに使用できる適切なプラットフォームレベルの機能を設計するために役立ちます。
+ディザスター リカバリー (DR) 要件を把握して、目標復旧時間 (RTO) と目標復旧時点 (RPO) の特定の要件を満たすためにアプリケーション ワークロードが使用できる適切なプラットフォームレベルの機能を設計します。
 
 **設計上の考慮事項:**
 
@@ -30,19 +30,19 @@ ms.locfileid: "85076985"
 
 - 停止が発生した際に機能の制限またはパフォーマンスの低下を伴うアプリケーション操作。
 
-- 可用性ゾーンまたは可用性セットに対するワークロードの適合性。
+- Availability Zones または可用性セットに対するワークロードの適合性。
 
   - ゾーン間のデータ共有と依存関係。
 
-  - 可用性セットと比較した、更新ドメインに対する可用性ゾーンの影響と、同時にメンテナンスできるワークロードの割合。
+  - 可用性セットと比較した、更新ドメインに対する Availability Zones の影響と、同時にメンテナンスできるワークロードの割合。
 
-  - 可用性ゾーンを備えた特定の仮想マシン (VM) の最小在庫管理単位のサポート。
+  - Availability Zones を使用する特定の仮想マシン (VM) の最小在庫管理単位のサポート。
 
-  - Microsoft Azure Ultra Disk Storage を使用する場合は、可用性ゾーンを使用する必要があります。
+  - Microsoft Azure Ultra Disk Storage を使用する場合は、Availability Zones を使用する必要があります。
 
 - アプリケーションとデータの一貫性のあるバックアップ。
 
-  - VM スナップショットと、Microsoft Azure Backup および Recovery Services コンテナーの使用。
+  - VM スナップショットと、Azure Backup および Recovery Services コンテナーの使用。
 
   - サブスクリプションによって、Recovery Services コンテナーの数と各コンテナーのサイズが制限されます。
 

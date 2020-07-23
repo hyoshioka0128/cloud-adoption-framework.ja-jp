@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ee7c32a075ffa633d6791b14a1b4c6f0c963073d
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 19392b3fc1027cec77b0111bcd46d86cd58d33a2
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787556"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373120"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "84787556"
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchy"></a>[Azure の管理グループと階層](#tab/AzureManagementGroupsAndHierarchy)
+## <a name="azure-management-groups-and-hierarchy"></a>[Azure の管理グループと階層](#tab/AzureManagementGroupsAndHierarchy)
 
 Azure には、管理グループ、サブスクリプション、リソース グループ、およびリソースという 4 つのレベルの管理スコープが用意されています。 次の図に、これらのレベルの関係を示します。
 
@@ -35,7 +35,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 - **リソース グループ:** リソース グループとは、Web アプリ、データベース、ストレージ アカウントなどの Azure リソースのデプロイと管理に使用する論理コンテナーです。
 - **リソース:** リソースは、仮想マシン、ストレージ、SQL データベースなど、ユーザーが作成するサービスのインスタンスです。
 
-## <a name="scope-of-management-settings"></a>管理の設定のスコープ
+### <a name="scope-of-management-settings"></a>管理の設定のスコープ
 
 どの管理レベルでも、ポリシーやロール ベースのアクセス制御などの管理設定を適用できます。 選択するレベルで、設定の適用範囲が決まります。 上位レベルの設定が下位レベルに継承されます。 たとえば、サブスクリプションにポリシーを適用すると、そのポリシーはそのサブスクリプション内のすべてのリソース グループとリソースにも適用されます。
 
@@ -47,25 +47,25 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ::: zone target="docs"
 
-## <a name="create-a-management-level"></a>管理レベルの作成
+### <a name="create-a-management-level"></a>管理レベルの作成
 
 管理グループ、追加のサブスクリプション、またはリソース グループを作成することができます。
 
-### <a name="create-a-management-group"></a>管理グループの作成
+#### <a name="create-a-management-group"></a>管理グループの作成
 
 管理グループの作成により、複数のサブスクリプションのアクセス、ポリシー、コンプライアンスを管理できます。
 
 1. [[管理グループ]](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade) に移動します。
 2. **[管理グループの追加]** を選択します。
 
-### <a name="create-a-subscription"></a>サブスクリプションの作成
+#### <a name="create-a-subscription"></a>サブスクリプションの作成
 
 サブスクリプションを使用すると、コストと、ユーザー、チーム、またはプロジェクトによって作成されるリソースを管理できます。
 
 1. [[サブスクリプション]](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) に移動します。
 1. **[追加]** を選択します。
 
-### <a name="create-a-resource-group"></a>リソース グループを作成する
+#### <a name="create-a-resource-group"></a>リソース グループを作成する
 
 リソース グループを作成して、Web アプリ、データベースなどのリソースや、同じライフサイクル、アクセス許可、ポリシーを共有するストレージ アカウントなどのリソースを保持します。
 
@@ -75,7 +75,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 1. **[リソース グループ]** の名前を入力します。
 1. リソース グループの場所の**リージョン**を選択します。
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 詳細については、次を参照してください。
 
@@ -91,7 +91,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ::: zone target="chromeless"
 
-## <a name="actions"></a>Actions
+### <a name="actions"></a>Actions
 
 **管理グループの作成:**
 
@@ -125,7 +125,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ::: zone-end
 
-# <a name="naming-standards"></a>[命名規則](#tab/NamingStandards)
+## <a name="naming-standards"></a>[命名規則](#tab/NamingStandards)
 
 適切な命名規則を使用することで、Azure portal、請求書、自動化スクリプト内でリソースを識別しやすくなります。 名前付け戦略には、リソース名のコンポーネントとして、ビジネスと運用の詳細を含める必要があります。
 
@@ -150,7 +150,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 | 可用性セット | Resource group | 1 ～ 80 | 大文字と小文字は区別されない | 英数字、アンダースコア、ハイフン | `<service-short-name>-<context>-As` | `profx-SQL-as` |
 | タグ | 関連付けられたエンティティ | 512 (名前)、256 (値) | 大文字と小文字は区別されない | 英数字 | `"Key" : "value"` | `"Department" : "Central IT"` |
 
-# <a name="resource-tags"></a>[リソース タグ](#tab/ResourceTags)
+## <a name="resource-tags"></a>[リソース タグ](#tab/ResourceTags)
 
 タグは、リソースとリソース グループをすばやく特定するのに役立ちます。 Azure リソースにタグを適用すると、カテゴリ別に論理的に整理できます。 各タグは名前と値で構成されます。 たとえば、運用環境のすべてのリソースには名前 "環境" と値 "運用" を適用できます。 タグには、リソースの関連するワークロードまたはアプリケーション、運用要件、および所有者情報に関するコンテキストを含める必要があります。
 
@@ -160,7 +160,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 - **メタデータとドキュメント:** 管理者は、`projectowner` などのタグを適用して、操作しているリソースに関する詳細を簡単に確認できます。
 - **自動化:** `shutdowntime` や `deprovisiondate` のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
-- **コストの最適化**: コストを担当するチームとリソースにリソースを割り当てることができます。 Azure Cost Management では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金を報告できます。
+- **コストの最適化**: コストを担当するチームとリソースにリソースを割り当てることができます。 Azure Cost Management および Billing では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金を報告できます。
 
 各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。
 
@@ -168,7 +168,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ::: zone target="docs"
 
-## <a name="apply-a-resource-tag"></a>リソース タグの適用
+### <a name="apply-a-resource-tag"></a>リソース タグの適用
 
 リソース グループにタグを適用するには:
 
@@ -177,7 +177,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 1. **[タグの割り当て]** を選択します。
 1. 新しい名前と値を入力するか、ドロップダウン リストを使用して既存の名前と値を選択します。
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 詳しくは、「[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)」をご覧ください。
 
@@ -185,7 +185,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>アクション
+### <a name="action"></a>アクション
 
 **リソース タグの適用:**
 

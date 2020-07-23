@@ -1,18 +1,18 @@
 ---
 title: 管理と監視
-description: 管理と監視。
+description: プラットフォーム レベルでの一元的な管理と監視によって、Microsoft Azure のエンタープライズ資産の運用を維持する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 46f98753dda7590daa725c5bd4c0c43a53190871
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 98f0cfccdaec32d00f3097f2f6b79f124c913aa6
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077118"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128228"
 ---
 # <a name="management-and-monitoring"></a>管理と監視
 
@@ -38,7 +38,7 @@ ms.locfileid: "85077118"
 
   - リソースの正常性イベント
 
-- セキュリティ監査のログ記録と、お客様の Azure 資産全体にわたる水平方向のセキュリティ レンズの実現:
+- セキュリティ監査ログと、組織の Azure 資産全体にわたる水平方向のセキュリティ レンズの実現:
 
   - オンプレミスのセキュリティ情報や、ServiceNow や ArcSight などのイベント管理 (SIEM) システムとの潜在的な統合
 
@@ -96,7 +96,7 @@ ms.locfileid: "85077118"
 
 ## <a name="planning-for-app-management-and-monitoring"></a>アプリの管理と監視の計画
 
-前のセクションをさらに詳しく説明するために、このセクションでは、お客様のアプリのワークロードのフェデレーション管理と監視について検討し、アプリケーション チームでこれらのワークロードを運用で保守する方法について説明します。
+前のセクションをさらに詳しく説明するために、このセクションでは、アプリ ワークロードのフェデレーション管理と監視について検討し、アプリケーション チームでこれらのワークロードの運用を維持する方法について説明します。
 
 **設計上の考慮事項:**
 

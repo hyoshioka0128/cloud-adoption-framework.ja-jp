@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 08090044ab0d97f8bdcf5258b0df0cbcb4c54bcd
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 27d633b20419b49e32ba1296318e67098d9a7ba9
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075771"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233359"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>作業を開始しましょう。クラウド運用チームを結成する
 
@@ -29,7 +29,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 **成果物:**
 
 - クラウド運用チームが必要かどうかを判断します。
-- `Org Alignment` ワークシートで、[RACI (実行責任、説明責任、助言、通知) テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)の意思決定者と責任者を文書化します。
+- "_実行責任、説明責任、助言、通知 (RACI)_ " の関係者を明確にするクロスチーム マトリックスを作成することにより、チーム間で責任を調整します。 [RACI テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)の `Org Alignment` ワークシートで、決定事項と責任者を文書化します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 

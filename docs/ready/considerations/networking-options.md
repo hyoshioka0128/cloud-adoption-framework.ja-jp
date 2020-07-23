@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cf33fabd3b3b7cfb6b1deadd127a8b8fb13b559d
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 8314433ae406bbc97ddc8ef998cfeb5d8cf49d20
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076083"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195039"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -50,7 +50,7 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 <!-- markdownlint-disable MD033 -->
 
-| **シナリオ** | **ネットワーク製品またはサービス** |
+| シナリオ | ネットワーク製品またはサービス |
 | --- | --- |
 | 仮想マシンから受信 VPN 接続までのすべてを接続するためのネットワーク インフラストラクチャが必要です。 | [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network) |
 | 受信および送信接続とアプリケーションまたはサービスへの要求のバランスをとる必要があります。 | [Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer) |
@@ -74,8 +74,8 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 次の表は、これらのパターンでサポートされる主なシナリオをまとめたものです。
 
-| **シナリオ**                                                                                                                                                                                                                                                                                                                                                          | **推奨されるネットワーク アーキテクチャ**                                                  |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| シナリオ  | 推奨されるネットワーク アーキテクチャ                                                  |
+| --- | --- |
 | ランディング ゾーンにデプロイされた Azure でホストされるワークロードはすべて完全に PaaS ベースであり、仮想ネットワークを必要とせず、また IaaS リソースを含むより広範囲なクラウド導入作業の一部でもありません。                                                                                                                                                          | [PaaS のみ](../../decision-guides/software-defined-network/paas-only.md)            |
 | Azure でホストされるワークロードは、仮想マシンなどの IaaS ベースのリソースをデプロイするか、そうでない場合は仮想ネットワークを必要としますが、オンプレミス環境への接続は必要ありません。                                                                                                                                                                            | [クラウドネイティブ](../../decision-guides/software-defined-network/cloud-native.md)      |
 | Azure でホストされるワークロードには、オンプレミス リソースへの制限付きアクセスが必要ですが、クラウド接続を信頼できないものとして扱う必要があります。                                                                                                                                                                                                                             | [クラウド DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |

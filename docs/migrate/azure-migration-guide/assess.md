@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b80acbe78ad8d4ad1cc50346db5a16ba20dbb38a
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 0a3288c992c09ebd4da7285225da7b295b1cc626
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787879"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373052"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>ワークロードを評価して計画を調整する
 
@@ -22,11 +22,11 @@ ms.locfileid: "84787879"
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="tools"></a>[ツール](#tab/Tools)
+## <a name="tools"></a>[ツール](#tab/Tools)
 
 上記のリンクのガイダンスに従っていない場合は、情報に基づく移行に関する意思決定を行うために、データと評価ツールが必要になる可能性があります。 Azure Migrate は、評価**および** Azure への移行を行うためのネイティブ ツールです。 新しいサーバー移行プロジェクトを作成し、必要なデータを収集するには、次の手順を使用します (まだ行っていない場合)。
 
-## <a name="azure-migrate"></a>Azure Migrate
+### <a name="azure-migrate"></a>Azure Migrate
 
 Azure Migrate では、Azure への移行についてオンプレミスのインフラストラクチャ、アプリケーション、データが評価されます。 このサービスは以下のことを行います。
 
@@ -38,7 +38,7 @@ Azure Migrate では、Azure への移行についてオンプレミスのイン
 
 ![Azure Migrate の概要](./media/assess/azure-migrate-overview-1.png)
 
-### <a name="create-a-new-server-migration-project"></a>新しいサーバー移行プロジェクトの作成
+#### <a name="create-a-new-server-migration-project"></a>新しいサーバー移行プロジェクトの作成
 
 以下の手順を使用して、Azure Migrate を使用したサーバーの移行評価を開始します。
 
@@ -48,10 +48,10 @@ Azure Migrate では、Azure への移行についてオンプレミスのイン
 1. **[サーバーの検出、評価、移行]** で、 **[ツールの追加]** を選択します。
 1. **[移行プロジェクト]** で、自分の Azure サブスクリプションを選択し、リソース グループがない場合は作成します。
 1. **[プロジェクトの詳細]** で、プロジェクト名と、プロジェクトを作成したい地域を指定し、 **[次へ]** を選択します。
-1. **[評価ツールの選択]** で、 **[今は評価ツールの追加をスキップします] > [次へ]** の順に選択します。
-1. **[移行ツールの選択]** で、次を選択します: **[Azure Migrate: サーバーの移行] > [次へ]** 。
-1. **[確認 + ツールの追加]** で設定を確認し、 **[Add tools]\(ツールの追加\)** を選択します。
-1. ツールは、追加されると、**Azure Migrate プロジェクト > [サーバー] > [移行ツール]** に表示されます。
+1. **[評価ツールの選択]** で、 **[今は評価ツールの追加をスキップします]**  >  **[次へ]** の順に選択します。
+1. **[移行ツールの選択]** で、次を選択します: **[Azure Migrate: Server Migration]**  >  **[次へ]** 。
+1. **[確認 + ツールの追加]** で設定を確認し、 **[ツールの追加]** を選択します。
+1. ツールを追加すると、**Azure Migrate プロジェクト** >  **[サーバー]**  >  **[移行ツール]** に表示されます。
 
 ::: zone target="chromeless"
 
@@ -61,7 +61,7 @@ Azure Migrate では、Azure への移行についてオンプレミスのイン
 
 ::: zone target="docs"
 
-### <a name="learn-more"></a>詳細情報
+#### <a name="learn-more"></a>詳細情報
 
 - [Azure Migrate の概要](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [物理サーバーまたは仮想化されたサーバーを Azure に移行する](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -69,13 +69,13 @@ Azure Migrate では、Azure への移行についてオンプレミスのイン
 
 ::: zone-end
 
-## <a name="service-map"></a>サービス マップ
+### <a name="service-map"></a>サービス マップ
 
 Service Map は自動的に Windows および Linux のシステム上のアプリケーション コンポーネントを検出し、サービス間の通信をマップします。 Service Map を使用すると、サーバーを重要なサービスを提供する相互接続されたシステムとして表示することができます。 Service Map は、TCP 接続アーキテクチャ全体におけるサーバー、プロセス、受信接続と送信接続の待機時間、ポートの間の接続を表示します。エージェントのインストール以外の構成は必要ありません。
 
-Azure Migrate では、Service Map を使用して、環境全体でレポート機能と依存関係が強化されます。 この統合の詳細については、「[依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)」を参照してください。 Azure Migration サービスを使用する場合は、Service Map を構成してそのベネフィットを得るために追加の手順を行う必要はありません。 以下の説明は、Service Map を他の目的またはプロジェクトに使用したい場合の参考用に提供されています。
+Azure Migrate では、Service Map を使用して、環境全体でレポート機能と依存関係が強化されます。 この統合の詳細については、「[依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)」を参照してください。 Azure Migrate サービスを使用する場合、Service Map を構成してその利点を得るために追加の手順は必要ありません。 以下の説明は、Service Map を他の目的またはプロジェクトに使用したい場合の参考用に提供されています。
 
-### <a name="enable-dependency-visualization-using-service-map"></a>Service Map を使用して依存関係の視覚化を有効にする
+#### <a name="enable-dependency-visualization-using-service-map"></a>Service Map を使用して依存関係の視覚化を有効にする
 
 依存関係の視覚化を使用するには、分析するオンプレミスの各マシンにエージェントをダウンロードしてインストールします。
 
@@ -85,12 +85,12 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="learn-more"></a>詳細情報
+#### <a name="learn-more"></a>詳細情報
 
 - [Azure での Service Map ソリューションの使用](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate と Service Map: 依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="challenge-assumptions"></a>[前提条件を吟味する](#tab/Challenge-Assumptions)
+## <a name="challenge-assumptions"></a>[前提条件を吟味する](#tab/Challenge-Assumptions)
 
 理想的な移行では、すべての資産 (インフラストラクチャ、アプリ、またはデータ) がクラウド プラットフォームと互換性があり、いつでも移行または最新化できる状態にあることでしょう。 実際には、すべてのワークロードをクラウドに移行する必要があるわけではありません。 すべての資産がクラウド プラットフォームと互換性があるわけではありません。 ワークロードをクラウドに移行する前に、各ワークロードとすべての依存資産 (インフラストラクチャ、アプリ、データ) を評価します。
 
@@ -98,15 +98,15 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 
 上記のリンクでは、前提条件は許容されることが示唆され、移行の計画段階では多くの場合推奨されています。 しかし、ここでは行動を起こしてみましょう。 これらの前提条件は、クラウドに移行する前にワークロードごとに吟味する必要があります。
 
-## <a name="two-steps-of-incremental-rationalization"></a>増分型の合理化の 2 つの手順
+### <a name="two-steps-of-incremental-rationalization"></a>増分型の合理化の 2 つの手順
 
 [増分型の合理化](../../digital-estate/rationalize.md#incremental-rationalization)を正しく実現するには、均等に重み付けされた 2 つの手順が必要です。 どちらの手順でも、データおよび環境の分析情報が必要です。 ただし、どちらのアプローチでも、移行作業を成功させるために必要な時間と詳細の粒度が尊重されます。
 
-- [10 のパワーのリリース計画](../../digital-estate/rationalize.md#release-planning):最初の合理化とリリース計画では、[合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md) のうち 1 つだけが評価で使用されます。 [クラウド導入戦略に関するドキュメント](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)で定義されている全体的な動機に最適な合理化オプションに基づいて、見積もりと計画を行います。
+- [10 のパワーのリリース計画](../../digital-estate/rationalize.md#release-planning):最初の合理化とリリース計画では、[合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md) のうち 1 つだけが評価で使用されます。 [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)で定義されている全体的な動機に最適な合理化オプションに基づいて、見積もりと計画を行います。
 
 - **各ワークロードの詳細な評価:** 10 のパワーのリリース計画に関連する前提条件は、計画を策定するには十分受け入れ可能です。 ただし、移行前に評価されていない場合は、これらの同じ前提条件によって重大な問題が発生する可能性があります。
 
-## <a name="challenge-assumptions-and-update-the-plan"></a>前提条件を吟味して計画を更新する
+### <a name="challenge-assumptions-and-update-the-plan"></a>前提条件を吟味して計画を更新する
 
 Azure Migrate または任意の評価ツールで評価データをよく確認します。 このデータにより、互換性の問題、修復要件、サイズの提案、およびその他の考慮事項に関する分析情報が得られます。
 
@@ -114,17 +114,17 @@ Azure Migrate または任意の評価ツールで評価データをよく確認
 
 これらの前提を吟味する最初の手順は、[合理化の 5 R すべてのレビュー](../../digital-estate/rationalize.md)です。
 
-    - 想定される合理化アプローチは、このワークロードに適していますか。 これは最適なアプローチですか。
-    - [レプリケーションの物理的性質](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)のいずれかが、このワークロードの移行に影響しますか。
-    - このワークロードでは、移行前に[修復アクティビティ](../migration-considerations/assess/evaluate.md)が必要ですか。
+- 想定される合理化アプローチは、このワークロードに適していますか。 これは最適なアプローチですか。
+- [レプリケーションの物理的性質](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)のいずれかが、このワークロードの移行に影響しますか。
+- このワークロードでは、移行前に[修復アクティビティ](../migration-considerations/assess/evaluate.md)が必要ですか。
 
 これらの種類の質問は、前提条件の吟味に役立ち、各ワークロードの最適なパスにつながります。
 
 前提条件を検証するための、詳細な質問のリストと定義されたプロセスについては、[評価プロセスの改善の概要](../migration-considerations/assess/index.md)に関する記事を参照してください。
 
-# <a name="scenarios-and-stakeholders"></a>[シナリオと利害関係者](#tab/Scenarios)
+## <a name="scenarios-and-stakeholders"></a>[シナリオと利害関係者](#tab/Scenarios)
 
-## <a name="scenarios"></a>シナリオ
+### <a name="scenarios"></a>シナリオ
 
 このガイドでは、次のシナリオについて説明します。
 
@@ -141,7 +141,7 @@ Azure Migrate または任意の評価ツールで評価データをよく確認
 
 クラウド移行作業のために組織を準備する方法の詳細については、クラウド導入フレームワークの「[初期の組織配置](../../plan/initial-org-alignment.md)」に関するガイドを参照してください。
 
-# <a name="timelines"></a>[タイムライン](#tab/Timelines)
+## <a name="timelines"></a>[タイムライン](#tab/Timelines)
 
 一般的に、このガイドで取り上げる移行シナリオは 1 か月から 6 か月で完了できるとお客様は理解します。
 
@@ -153,7 +153,7 @@ Azure Migrate または任意の評価ツールで評価データをよく確認
 - **変更管理:** 変更の実装および承認について、お客様のビジネスには特定の要件がありますか?
 - **セグメントの規制:** セグメントまたは業界の規制を遵守する必要がありますか?
 
-# <a name="cost-management"></a>[コスト管理](#tab/ManageCost)
+## <a name="cost-management"></a>[コスト管理](#tab/ManageCost)
 
 環境を評価することにより、コスト分析の手順を含めるよい機会が得られます。 評価活動によって収集されたデータを使用すれば、コストを分析して予測できるはずです。 このコスト予測では、1 回限りのコスト (データのイングレスの増加など) に加えて、従量課金サービスのコストも考慮する必要があります。
 

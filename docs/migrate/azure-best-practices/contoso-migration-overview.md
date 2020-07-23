@@ -1,112 +1,140 @@
 ---
 title: Azure へのアプリケーション移行例の概要
-description: Cloud Adoption Framework の移行セクションの一環として含まれている、アプリケーション移行例の概要を示します。
-author: givenscj
+description: クラウド導入フレームワークの移行方法の一環として含まれている、アプリケーション移行例の概要を説明します。
+author: deltadan
 ms.author: abuck
-ms.date: 04/02/2020
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2688faf21c6a42846db246172fba6aabc8eca56f
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 7f6789a390d38b902ec8b7d64ac20b51557f86ca
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815176"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233564"
 ---
-<!-- cSpell:ignore givenscj -->
+# <a name="overview-of-application-migration-examples-for-azure"></a>Azure へのアプリケーション移行例の概要
 
-# <a name="application-migration-patterns-and-examples"></a>アプリケーションの移行パターンと例
-
-Cloud Adoption Framework のこのセクションでは、一般的な移行シナリオの例をいくつか紹介し、オンプレミス インフラストラクチャを [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure) クラウドに移行するための方法を示します。
+クラウド導入フレームワークのこのセクションでは、一般的な移行シナリオの例をいくつか紹介し、オンプレミス インフラストラクチャを [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure) に移行する方法を示します。
 
 ## <a name="introduction"></a>はじめに
 
-Azure には、クラウド サービスの包括的なセットが用意されています。 開発者や IT プロフェッショナルは、これらのサービスを利用し、データセンターのグローバルなネットワークを通じて、さまざまなツールやフレームワークをベースにアプリケーションを構築、デプロイ、および管理することができます。 ビジネスはデジタル シフトに関連する課題に直面しているため、Azure クラウドはリソースや操作の最適化、お客様や従業員との連携、および製品の変換の方法を理解できるように支援します。
+Azure には、クラウド サービスの包括的なセットが用意されています。 開発者や IT プロフェッショナルは、これらのサービスを使用して、データセンターのグローバルなネットワークを通じて、さまざまなツールやフレームワークでアプリケーションを構築、デプロイ、管理できます。 ビジネスはデジタル シフトに関連する課題に直面しているため、Azure クラウドはリソースや操作の最適化、お客様や従業員との連携、および製品の変換の方法を理解できるように支援します。
 
-ただし、速度と柔軟性、最小限のコスト、パフォーマンス、および信頼性の面でのクラウドのすべての利点にもかかわらず、多くの組織ではまだしばらくの間、オンプレミス データセンターを実行する必要があることも認識しています。 クラウドの採用の障壁に対処するために、Azure では、オンプレミスのデータセンターと Azure パブリック クラウドの間に橋を構築するハイブリッド クラウド戦略を提供しています。 たとえば、Azure Backup などの Azure クラウド リソースを使用してオンプレミスのリソースを保護したり、Azure 分析を使用してオンプレミスのワークロードを把握したりすることができます。
+スピードと柔軟性、最小限のコスト、パフォーマンス、信頼性の面で、クラウドはあらゆる利点を備えていますが、多くの組織では、まだしばらくの間、オンプレミスのデータセンターを実行する必要があることも認識しています。 クラウド導入の障壁に対処するために、Azure では、オンプレミスのデータセンターと Azure パブリック クラウドの橋渡しをするハイブリッド クラウド戦略を提供しています (Azure Backup などの Azure クラウド リソースを使用したオンプレミス リソースの保護や、Azure Analytics を使用したオンプレミス ワークロードに関する分析情報の取得など)。
 
-ハイブリッド クラウド戦略の一環として、Azure ではオンプレミスのアプリやワークロードをクラウドに移行するためのソリューションを用意しています。 簡単な手順で、オンプレミス リソースを包括的に評価し、Azure クラウドではどのように実行されるかを把握することができます。 次に、入手した詳しい評価に基づき、自信を持ってリソースを Azure に移行することができます。 Azure でリソースを稼働させたら、リソースを最適化して、アクセス、柔軟性、セキュリティ、および信頼性を保持したり向上させたりすることができます。
+ハイブリッド クラウド戦略の一環として、Azure にはオンプレミスのアプリケーションやワークロードをクラウドに移行するための多数のソリューションが用意されています。 簡単な手順で、オンプレミス リソースを包括的に評価し、Azure クラウドではどのように実行されるかを把握することができます。 次に、入手した詳しい評価に基づき、自信を持ってリソースを Azure に移行することができます。 Azure でリソースを稼働させたら、リソースを最適化して、アクセス、柔軟性、セキュリティ、および信頼性を保持したり向上させたりすることができます。
 
 ## <a name="migration-patterns"></a>移行パターン
 
-クラウドへの移行戦略は、リホスト、リファクター、リアーキテクト、リビルドという 4 つの大きなパターンに分類できます。 採用する戦略は、ビジネスの主導者や移行の目標によって変わります。 複数のパターンを採用する場合もあります。 たとえば、単純なアプリやビジネス上重要でないアプリはリホストし、より複雑でビジネスに不可欠なアプリはリアーキテクトするという選択も可能です。 これらのパターンを確認しましょう。
+クラウドへの移行戦略は、リホスト、リファクター、リアーキテクト、リビルドという 4 つの大きなパターンに分類できます。 採用する戦略は、ビジネスの主導者や移行の目標によって変わります。 複数のパターンを採用する場合もあります。 たとえば、重要度の低いアプリケーションはリホストし、より複雑でビジネスに不可欠なアプリケーションはリアーキテクトすることができます。 これらのパターンを見てみましょう。
 
-<!-- markdownlint-disable MD033 -->
-
-**パターン** | **定義** | **いつ使用するか**
---- | --- | ---
-**リホスト** | 多くの場合、"_リフト アンド シフト_" 移行と呼ばれます。 このオプションでは、コードの変更を必要とせずに、既存のアプリを Azure にすばやく移行できます。 各アプリはそのままの状態で移行されるので、コード変更に伴うリスクとコストなしにクラウドのメリットを享受できます。 | アプリをクラウドにすばやく移動する必要がある場合。 <br><br> アプリを変更せずに移動したい場合。 <br><br> 移行後に [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas) のスケーラビリティを活かせるように、アプリが設計されている場合。 <br><br> ビジネスにとって重要なアプリであるが、アプリの機能をすぐに変更する必要がない場合。
-**リファクター** | 多くの場合、"再パッケージ化" と呼ばれます。リファクターを行うには、[Azure PaaS](https://azure.microsoft.com/overview/what-is-paas) に接続してクラウド サービスを使用できるように、アプリに最小限の変更を加える必要があります。 <br><br> たとえば、既存のアプリを Azure App Service または Azure Kubernetes Service (AKS) に移行できます。 <br><br> あるいは、リレーショナル データベースおよび非リレーショナル データベースを、Azure SQL Database Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB などのオプションにリファクターすることもできます。 | Azure で動作するようにアプリを簡単に再パッケージ化できる場合。 <br><br> Azure が提供する革新的な DevOps プラクティスを適用したい場合、またはワークロード向けのコンテナー戦略を使用した DevOps を検討している場合。 <br><br> リファクタリングでは、既存のコード ベースの移植性と使用可能な開発スキルを考慮する必要があります。
-**リアーキテクト** | 移行のためのリアーキテクトは、アプリのアーキテクチャを最適化してクラウドのスケーラビリティを活かすために、アプリの機能とコード ベースを変更、拡張することを中心とした作業となります。 <br><br> たとえば、モノリシック アプリケーションを、相互に連携し、簡単にスケーリングできるマイクロサービスのグループに分割できます。 <br><br> または、リレーショナル データベースと非リレーショナル データベースを、Azure SQL Database Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB など、フル マネージドのデータベース ソリューションにリアーキテクトすることもできます。 | アプリにメジャー リビジョンを施し、新機能を組み込んだり、クラウド プラットフォームで作業を効果的に行ったりする必要がある場合。 <br><br> 既存のアプリケーションへの投資を活かしたい場合、スケーラビリティ要件を満たしたい場合、革新的な DevOps プラクティスを適用したい場合、仮想マシンの使用を最小限に抑えたい場合。
-**リビルド** | リビルドでは、Azure のクラウド テクノロジを利用してアプリを最初からリビルドし、進化させることができます。 <br><br> たとえば、Azure Functions、Azure AI、Azure SQL Database Managed Instance、Azure Cosmos DB などの[クラウドネイティブ](https://azure.microsoft.com/overview/cloudnative) テクノロジを活用して、まったく新しいアプリを構築することができます。 | 開発は迅速に行いたいが、既存のアプリの機能と寿命が限られている場合。 <br><br> ビジネスのイノベーションの加速 (Azure が提供する DevOps のプラクティスを含む)、クラウドネイティブ テクノロジを活用した新しいアプリケーションの構築、AI、ブロックチェーン、IoT の進化の活用に対する準備が整っている場合。
-
-<!-- markdownlint-enable MD033 -->
+| Pattern | 定義 | 使用する場合 |
+| --- | --- | --- |
+| **リホスト** | 多くの場合、リフトアンドシフト移行と呼ばれます。 このオプションではコードの変更は不要であり、既存のアプリケーションを Azure に迅速に移行できます。 各アプリケーションはそのままの状態で移行されるので、コードの変更に関連するリスクやコストを伴わずにクラウドのメリットを享受できます。 | アプリケーションをクラウドに迅速に移行する必要がある場合。 <br><br> アプリケーションを変更せずに移行する場合。 <br><br> 移行後に [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas) のスケーラビリティを活用できるようにアプリケーションが設計されている場合。 <br><br> ビジネスにとって重要なアプリケーションではあるが、アプリケーションの機能をすぐに変更する必要がない場合。 |
+| **リファクター** | 多くの場合、"再パッケージ化" と呼ばれます。リファクタリングでは、[Azure PaaS](https://azure.microsoft.com/overview/what-is-paas) に接続してクラウド サービスを使用できるように、アプリケーションに最小限の変更を加える必要があります。 <br><br> たとえば、既存のアプリケーションを Azure App Service または Azure Kubernetes Service (AKS) に移行できます。 <br><br> または、リレーショナル データベースおよび非リレーショナル データベースを、Azure SQL Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB などのオプションにリファクターすることもできます。 | Azure で動作するようにアプリケーションを簡単に再パッケージ化できる場合。 <br><br> Azure で提供される革新的な DevOps プラクティスを適用する場合、またはワークロードにコンテナー戦略を使用する DevOps を検討している場合。 <br><br> リファクタリングでは、既存のコード ベースの移植性と使用可能な開発スキルを考慮する必要があります。 |
+| **リアーキテクト** | 移行のためのリアーキテクトでは、アプリケーション アーキテクチャをクラウドのスケーラビリティに最適化するために、アプリケーションの機能とコード ベースの変更および拡張に重点を置きます。 <br><br> たとえば、モノリシック アプリケーションを、相互に連携し、簡単にスケーリングできるマイクロサービスのグループに分割できます。 <br><br> また、リレーショナル データベースと非リレーショナル データベースを、フル マネージドのデータベース ソリューション (Azure SQL Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB など) にリアーキテクトすることもできます。 | 新機能を組み込んだり、クラウド プラットフォーム上で効果的に機能させたりするために、アプリケーションの大幅な改訂が必要な場合。 <br><br> 既存のアプリケーションへの投資を活かしたい場合、スケーラビリティ要件を満たしたい場合、革新的な DevOps プラクティスを適用したい場合、仮想マシンの使用を最小限に抑えたい場合。 |
+| **リビルド** | リビルドでは、Azure クラウド テクノロジを使用してアプリケーションを一から再構築することで進化させることができます。 <br><br> たとえば、Azure Functions、AI、SQL Managed Instance、Azure Cosmos DB などの[クラウドネイティブ](https://azure.microsoft.com/overview/cloudnative) テクノロジを使用して、新しいアプリケーションを構築できます。 | 既存のアプリケーションの機能と有効期間が限られており、開発を迅速に行いたい場合。 <br><br> ビジネスのイノベーションの加速 (Azure が提供する DevOps のプラクティスを含む)、クラウドネイティブ テクノロジを活用した新しいアプリケーションの構築、AI、ブロックチェーン、IoT の進化の活用に対する準備が整っている場合。 |
 
 ## <a name="migration-example-articles"></a>移行例に関する記事
 
 このセクションでは、いくつかの一般的な移行シナリオの例を紹介します。 各例では、背景情報や詳細なデプロイ シナリオについて説明すると共に、移行のインフラストラクチャを設定して移行のためのオンプレミス リソースの適合性を評価する方法を示しています。 このセクションには、今後も記事が追加される予定です。
 
-![一般的な移行/モダン化プロジェクト](./media/migration-patterns.png)
+"![移行および最新化プロジェクトのカテゴリ](./media/migration-patterns.png)
+_図 1: 移行および最新化プロジェクトの一般的なカテゴリ_
 
-"*一般的な移行およびモダン化プロジェクトのカテゴリ。* "
-
-シリーズ内の記事は、以下のように要約されます。
-
-- 各移行シナリオは、少しずつ異なるビジネス目標に沿って作成されています。このビジネス目標によって移行戦略が決まります。
-- 各デプロイ シナリオでは、ビジネス ドライバーと目標、提案されたアーキテクチャ、移行を実施するための手順、クリーンアップの推奨事項、移行完了後の次の手順についての情報が記載されています。
+このシリーズでは、移行戦略を決定する、わずかに異なるビジネス目標によって推進される、各移行シナリオに焦点を合わせています。 各デプロイ シナリオでは、ビジネス ドライバーと目標、提案されたアーキテクチャ、移行を実施するための手順、クリーンアップの推奨事項、移行完了後の次の手順についての情報が記載されています。
 
 ### <a name="assessment"></a>評価
 
-**記事** | **詳細**
---- | ---
-[Azure への移行の対象となるオンプレミスのリソースの評価](../../plan/contoso-migration-assessment.md) | この計画の方法論のベスト プラクティス記事では、VMware で実行されているオンプレミス アプリの評価を実行する方法について説明します。 この記事では、例の組織が Azure Migrate サービスを使用してアプリの VM を、また、Data Migration Assistant を使用してアプリの SQL Server データベースを評価します。
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [Azure への移行の対象となるオンプレミスのリソースの評価](../../plan/contoso-migration-assessment.md) | 計画方法のベスト プラクティスに関するこの記事では、VMware で実行されているオンプレミス アプリケーションの評価を実行する方法について説明します。 この記事では、架空の組織が Azure Migrate サービスを使用してアプリケーション VM を評価し、Data Migration Assistant を使用してアプリケーションの SQL Server データベースを評価します。 |
 
 ### <a name="infrastructure"></a>インフラストラクチャ
 
-**記事** | **詳細**
---- | ---
-[Azure インフラストラクチャをデプロイする](./contoso-migration-infrastructure.md) | この記事では、組織が移行に向けてオンプレミス インフラストラクチャと Azure インフラストラクチャを準備する方法を示します。 この記事で構築したインフラストラクチャの例は、このセクション内で紹介されている他のサンプルの中で参照されます。
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [Azure インフラストラクチャをデプロイする](./contoso-migration-infrastructure.md) | この記事では、組織が移行に向けてオンプレミス インフラストラクチャと Azure インフラストラクチャを準備する方法を示します。 この記事で構築したインフラストラクチャの例は、このセクション内で紹介されている他のサンプルの中で参照されます。 |
 
 ### <a name="windows-server-workloads"></a>Windows Server ワークロード
 
-**記事** | **詳細**
---- | ---
-[Azure VM でのアプリのリホスト](./contoso-migration-rehost-vm.md) | この記事では、Azure Migrate サービスを使用してオンプレミス アプリ VM を Azure VM に移行する例を示します。
-
-### <a name="linux-workloads"></a>Linux ワークロード
-
-**記事** | **詳細**
---- | ---
-[Azure VM および Azure Database for MySQL での Linux アプリのリホスト](./contoso-migration-rehost-linux-vm-mysql.md) | この記事では、Azure Migrate を使用して Linux でホストされているアプリを Azure VM に移行する例を示します。 アプリのデータベースを、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用して Azure Database for MySQL に移行します。
-[Linux アプリの Azure VM へのリホスト](./contoso-migration-rehost-linux-vm.md) | この例では、Azure Migrate サービスを使用して、Linux ベース アプリの Azure VM へのリフト アンド シフト移行を完了する方法を示します。
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [アプリケーションを Azure VM にリホストする](./contoso-migration-rehost-vm.md) | この記事では、Azure Migrate サービスを使用して、オンプレミスのアプリケーション VM を Azure VM に移行する例を示します。 |
 
 ### <a name="sql-server-workloads"></a>SQL Server ワークロード
 
-**記事** | **詳細**
---- | ---
-[Azure VM と Azure SQL Database Managed Instance でアプリをリホストする](./contoso-migration-rehost-vm-sql-managed-instance.md) | この記事では、オンプレミス アプリの Azure へのリフト アンド シフト移行の例を示します。 Azure Migrate を使用してアプリのフロントエンド VM を移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Database Managed Instance に移行します。
-[SQL Server AlwaysOn 可用性グループで Azure VM のアプリをリホストする](./contoso-migration-rehost-vm-sql-ag.md) | この例では、Azure にホストされている SQL Server VM を使用して、アプリとデータを移行する方法を示します。 Azure Migrate を使用してアプリの VM を移行し、Azure Database Migration Service を使用してアプリのデータベースを Always On 可用性グループで保護されている SQL Server クラスターに移行します。
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [SQL Server データベースを Azure に移行する](./contoso-migration-sql-server-db-to-azure.md) | この記事では、架空の会社である Contoso が、さまざまなオンプレミス SQL Server データベースの Azure への移行をどのように評価、計画し、実行したかについて説明します。 |
+| [アプリケーションを Azure VM と SQL Managed Instance にリホストする](./contoso-migration-rehost-vm-sql-managed-instance.md) | この記事では、オンプレミス アプリケーションの Azure へのリフトアンドシフト移行の例を示します。 Azure Migrate を使用してアプリケーションのフロントエンド VM を移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリケーション データベースを Azure SQL Managed Instance に移行します。 |
+| [SQL Server Always On 可用性グループを使用してアプリケーションを Azure VM にリホストする](./contoso-migration-rehost-vm-sql-ag.md) | この例では、Azure でホストされている SQL Server VM を使用して、アプリケーションとデータを移行する方法を示します。 Azure Migrate を使用してアプリケーション VM を移行し、Azure Database Migration Service を使用して、アプリケーション データベースを AlwaysOn 可用性グループによって保護されている SQL Server クラスターに移行します。 |
 
-### <a name="aspnet-php-and-java-apps"></a>ASP.NET、PHP、および Java アプリ
+### <a name="linux-and-open-source-databases"></a>Linux およびオープンソース データベース
 
-**記事** | **詳細**
---- | ---
-[Azure App Service と Azure SQL Database を使用して Windows アプリをリファクターする](./contoso-migration-refactor-web-app-sql.md) | この例では、オンプレミスの Windows ベース アプリを Azure Web アプリに移行し、また、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Server インスタンスに移行する方法を示します。
-[Azure App Service と SQL Managed Instance を使用して Windows アプリをリファクタリングする](./contoso-migration-refactor-web-app-sql-managed-instance.md) | この例では、オンプレミスの Windows ベース アプリを Azure Web アプリに移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用してアプリのデータベースを Azure SQL Managed Instance に移行する方法を示します。
-[Azure App Service、Azure Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリをリファクターする](./contoso-migration-refactor-linux-app-service-mysql.md) | この例では、Azure Traffic Manager を使用してオンプレミスの Linux ベース アプリを、継続的デリバリーのために GitHub に統合される複数の Azure リージョン上の Azure Web アプリに移行する方法を示します。 アプリのデータベースは Azure Database for MySQL インスタンスに移行されます。
-[Azure でのアプリのリビルド](./contoso-migration-rebuild.md) | この記事では、Azure のさまざまな機能とマネージド サービス (Azure App Service、Azure Kubernetes Service (AKS)、Azure Functions、Azure Cognitive Services、Azure Cosmos DB など) を使用してオンプレミス アプリをリビルドする例を示します。
-[Azure DevOps Services 上で Team Foundation Server をリファクターする](./contoso-migration-tfs-vsts.md) | この記事では、オンプレミスの Team Foundation Server のデプロイを Azure 内の Azure DevOps Services に移行する例を示します。
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [オープンソース データベースを Azure に移行する](./contoso-migration-oss-db-to-azure.md) | この記事では、架空の会社である Contoso が、さまざまなオンプレミス オープンソース データベースの Azure への移行をどのように評価、計画し、実行したかについて説明します。 |
+| [MySQL を Azure に移行する](./contoso-migration-mysql-to-azure.md) | この記事では、架空の会社である Contoso が、オンプレミスの MySQL オープンソース データベース プラットフォームの Azure への移行をどのように計画し、実行したかについて説明します。 |
+| [PostgreSQL を Azure に移行する](./contoso-migration-postgresql-to-azure.md) | この記事では、架空の会社である Contoso が、オンプレミスの PostgreSQL オープンソース データベース プラットフォームの Azure への移行をどのように計画し、実行したかについて説明します。 |
+| [MariaDB を Azure に移行する](./contoso-migration-mariadb-to-azure.md) | この記事では、架空の会社である Contoso が、オンプレミスの MariaDB オープンソース データベース プラットフォームの Azure への移行をどのように計画し、実行したかについて説明します。 |
+| [Linux アプリケーションを Azure VM と Azure Database for MySQL にリホストする](./contoso-migration-rehost-linux-vm-mysql.md) | この記事では、Azure Migrate を使用して、Linux でホストされているアプリケーションを Azure VM に移行する例を示します。 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用して、アプリケーション データベースを Azure Database for MySQL に移行します。 |
+| [Linux アプリケーションを Azure VM にリホストする](./contoso-migration-rehost-linux-vm.md) | この例では、Azure Migrate サービスを使用して、Linux ベースのアプリケーションの Azure VM へのリフトアンドシフト移行を実行する方法を示します。 |
+
+### <a name="devtest-workloads"></a>開発/テスト ワークロード
+
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [開発/テスト環境を Azure IaaS に移行する](./contoso-migration-devtest-to-iaas.md) | この記事では、Contoso が Azure VM への移行によって、VMware VM で実行されている 2 つのアプリケーションの開発/テスト環境をどのようにリホストしたかについて説明します。 |
+| [Azure DevTest Labs に移行する](./contoso-migration-devtest-to-labs.md) | この記事では、Contoso が DevTest Labs を使用して、開発/テスト ワークロードを Azure にどのように移行したかについて説明します。 |
+
+### <a name="aspnet-and-php-web-apps"></a>ASP.NET と PHP Web アプリ
+
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [Azure App Service と SQL Database を使用して Windows アプリケーションをリファクターする](./contoso-migration-refactor-web-app-sql.md) | この例では、オンプレミスの Windows ベースのアプリケーションを Azure Web アプリに移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用して、アプリケーション データベースを Azure SQL Server インスタンスに移行する方法を示します。 |
+| [Azure App Service と SQL Managed Instance を使用して Windows アプリケーションをリファクターする](./contoso-migration-refactor-web-app-sql-managed-instance.md) | この例では、オンプレミスの Windows ベースのアプリケーションを Azure Web アプリに移行し、[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) を使用して、アプリケーション データベースを Azure SQL Managed Instance に移行する方法を示します。 |
+| [Azure App Service、Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリケーションをリファクターする](./contoso-migration-refactor-linux-app-service-mysql.md) | この例では、オンプレミスの Linux ベースのアプリケーションを、複数の Azure リージョンの Azure Web アプリに移行し、継続的デリバリーを実現するために Azure Traffic Manager を使用して GitHub と統合する方法について説明します。 アプリケーション データベースは Azure Database for MySQL インスタンスに移行されます。 |
+| [アプリケーションを Azure にリビルドする](./contoso-migration-rebuild.md) | この記事では、Azure のさまざまな機能とマネージド サービス (Azure App Service、AKS、Azure Functions、Cognitive Services、Azure Cosmos DB など) を使用して、オンプレミス アプリケーションをリビルドする例を示します。 |
+| [Azure DevOps Services に Team Foundation Server をリファクターする](./contoso-migration-tfs-vsts.md) | この記事では、オンプレミスの Team Foundation Server のデプロイを Azure 内の Azure DevOps Services に移行する例を示します。 |
+
+### <a name="sap"></a>SAP
+
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [SAP 移行ガイド](https://azure.microsoft.com/resources/sap-on-azure-implementation-guide) | オンプレミスの SAP ワークロードをクラウドに移行するための実用的なガイダンスを提供します。 |
+| [SAP アプリケーションを Azure に移行する](https://azure.microsoft.com/resources/migrating-sap-applications-to-azure) | クラウドへの SAP の移行に関するホワイトペーパーとロードマップ。 |
+| [SAP on Azure の移行方法](https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure) | SAP アプリケーションを Azure に移行するためのさまざまな移行オプションの概要。 |
+
+### <a name="specialized-workloads"></a>特殊化されたワークロード
+
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [オンプレミスの VMware インフラストラクチャを Azure に移行する](./contoso-migration-vmware-to-azure.md) | この記事では、Azure VMware Solution を使用して、オンプレミスの VMware VM を Azure に移行する例を示します。 |
+| [Azure NetApp Files](https://azure.microsoft.com/services/netapp) | NetApp を利用したエンタープライズ ファイル ストレージ。 Linux および Windows ファイル ワークロードを Azure で実行します。 |
+| [Oracle on Azure](https://azure.microsoft.com/solutions/oracle) | Azure と Oracle Cloud で Oracle Database およびエンタープライズ アプリケーションを実行します。 |
+| [Azure における Cray](https://azure.microsoft.com/solutions/high-performance-computing/cray) | Azure の Cray によるハイ パフォーマンス コンピューティング。 仮想ネットワーク上の専用スーパーコンピューター。 |
+
+### <a name="vdi"></a>VDI
+
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [オンプレミスのリモート デスクトップ サービスを Azure の Windows Virtual Desktop に移行する](./contoso-migration-rds-to-wvd.md) | この記事では、オンプレミスのリモート デスクトップ サービスを Azure の Windows Virtual Desktop に移行する方法を説明します。 |
 
 ### <a name="migration-scaling"></a>移行のスケーリング
 
-**記事** | **詳細**
---- | ---
-[Azure への移行のスケーリング](./contoso-migration-scale.md) | この記事では、サンプル組織が Azure への完全な移行に対してスケーリングを行うための準備の方法を示します。
+| [アーティクル] | 詳細 |
+| --- | --- |
+| [Azure への移行のスケーリング](./contoso-migration-scale.md) | この記事では、サンプル組織が Azure への完全な移行に対してスケーリングを行うための準備の方法を示します。 |
 
-### <a name="demo-apps"></a>デモ アプリ
+### <a name="demo-applications"></a>デモ アプリケーション
 
-このセクションで紹介している記事の例では、2 つのデモ アプリを使用します。SmartHotel360 と osTicket です。
+<!-- docsTest:ignore SmartHotel360 osTicket -->
 
-- **SmartHotel360:** このアプリは、Azure を操作する際に使用できるテスト アプリとして Microsoft が開発したものです。 オープン ソースとして提供されており、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 これは、SQL Server データベースに接続されている ASP.NET アプリです。 上記の記事で取り上げられたシナリオでは、このアプリの現在のバージョンは Windows Server 2008 R2 および SQL Server 2008 R2 を実行している 2 つの VMware VM にデプロイされます。 これらのアプリの VM はオンプレミスでホストされ、vCenter Server によって管理されています。
-- **osTicket:** Linux 上で稼働する、オープン ソースのサービス デスク向け発券アプリです。 [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 上記の記事で取り上げられたシナリオでは、このアプリの現在のバージョンは Apache 2、PHP 7.0、および MySQL 5.7 を使用して、Ubuntu 16.04 LTS を実行している 2 つの VMware VM にオンプレミスでデプロイされます。
+このセクションで紹介している記事の例では、2 つのデモ アプリケーションを使用します。SmartHotel360 と osTicket です。
+
+**SmartHotel360:** このアプリケーションは、Azure を操作する際に使用できるテスト アプリケーションとして Microsoft が開発しました。 オープン ソースとして提供されており、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 これは、SQL Server データベースに接続されている ASP.NET アプリケーションです。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Windows Server 2008 R2 および SQL Server 2008 R2 を実行している 2 つの VMware VM にデプロイされます。 これらのアプリケーション VM はオンプレミスでホストされ、vCenter Server によって管理されています。
+
+**osTicket:** Linux 上で実行される、オープンソースのサービス デスク向け発券アプリケーションです。 [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Apache 2、PHP 7.0、および MySQL 5.7 を使用して、Ubuntu 16.04 LTS を実行している 2 つの VMware VM にオンプレミスでデプロイされます。

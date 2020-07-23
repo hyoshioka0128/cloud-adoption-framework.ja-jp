@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: c387b6e190e08259d8270f39a0f5626838394dfa
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 6a0090cee1237753748d1351109a0826168ed5e3
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755474"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194869"
 ---
 # <a name="function-of-cloud-data-security"></a>クラウド データ セキュリティの機能
 
@@ -42,4 +42,4 @@ ms.locfileid: "83755474"
 
 ## <a name="next-steps"></a>次のステップ
 
-[インフラストラクチャとエンドポイント セキュリティ](./cloud-security-infrastructure-endpoint.md) (COE) の機能を確認します。
+[クラウド インフラストラクチャとエンドポイント セキュリティ](./cloud-security-infrastructure-endpoint.md)の機能を確認します。

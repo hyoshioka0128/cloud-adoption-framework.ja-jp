@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: eedd956934022db81fbc8380db27a3831ab1b197
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 2dcb88103fcbfe28516802570aba8197f4b510c6
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077191"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194852"
 ---
 # <a name="cloud-migration-functions"></a>クラウド移行機能
 

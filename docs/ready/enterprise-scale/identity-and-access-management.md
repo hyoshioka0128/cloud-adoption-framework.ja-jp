@@ -1,26 +1,26 @@
 ---
 title: ID 管理とアクセス管理
-description: ID およびアクセス管理。
+description: エンタープライズ環境での ID およびアクセス管理に関連する設計上の考慮事項と推奨事項を検討します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62c1c9cd21d2fb3382fde876ef38a39e7c7aec20
-ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
+ms.openlocfilehash: 8c634942d867bdc55bba84b15ac0789a4abd27a0
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85335974"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194682"
 ---
 # <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 
 ID がセキュリティ保証の大部分の基礎を提供します。 クラウド サービスで ID の認証と承認の制御に基づいてアクセスを管理することで、データやリソースを保護し、どの要求を許可するかを決定します。
 
-ID およびアクセス管理 (IAM) はパブリック クラウドの境界セキュリティであり、セキュリティで保護され、完全に準拠したパブリック クラウド アーキテクチャの基盤として扱う必要があります。 Microsoft Azure には、サービス、ツール、リファレンス アーキテクチャの包括的なセットが用意されています。これにより、組織は安全性と運用効率に優れた環境を構築できます。ここでは、これらの概要について説明します。
+ID およびアクセス管理 (IAM) はパブリック クラウドの境界セキュリティであり、セキュリティで保護され、完全に準拠したパブリック クラウド アーキテクチャの基盤として扱う必要があります。 Microsoft Azure には、組織が安全性と運用効率に優れた環境を構築できるようにするための、サービス、ツール、リファレンス アーキテクチャの包括的なセットが用意されています。ここでは、これらの概要について説明します。
 
-このセクションでは、エンタープライズ環境の ID およびアクセス管理に関連する設計上の考慮事項と推奨事項を検討します。
+このセクションでは、エンタープライズ環境での ID およびアクセス管理に関連する設計上の考慮事項と推奨事項を検討します。
 
 ## <a name="why-we-need-identity-and-access-management"></a>ID とアクセスの管理が必要な理由
 
@@ -28,7 +28,7 @@ ID およびアクセス管理 (IAM) はパブリック クラウドの境界セ
 
 ### <a name="planning-for-identity-and-access-management"></a>ID およびアクセス管理の計画
 
-企業組織は、通常、操作のアクセスに対して最小限の特権のアプローチに従います。このモデルは、Azure AD のロールベースのアクセス制御 (RBAC) とカスタムのロール定義を考慮するように拡張する必要があります。 Azure 内のリソースに対するコントロールおよびデータ プレーン アクセスの管理方法を計画することが重要です。 IAM および RBAC のすべての設計が承認されるには、規制、セキュリティ、および運用の要件を満たしている必要があります。
+通常、エンタープライズ組織では、操作のアクセスに対して最小限の特権のアプローチに従います。 このモデルは、Azure AD のロールベースのアクセス制御 (RBAC) とカスタム ロール定義によって、Azure を考慮するように拡張する必要があります。 Azure 内のリソースに対するコントロールおよびデータ プレーン アクセスの管理方法を計画することが重要です。 IAM および RBAC のすべての設計が承認されるには、規制、セキュリティ、および運用の要件を満たしている必要があります。
 
 ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ認証のブロックや最新のパスワードの計画など、その他のセキュリティの考慮事項を含む、複数の手順からなるプロセスです。 ステージング計画には、企業間 (B2B) または企業と消費者間 (B2C) の ID およびアクセス管理の選択も含まれます。 これらの要件はさまざまですが、エンタープライズ ランディング ゾーンについて考慮すべき一般的な設計上の考慮事項と推奨事項があります。
 
@@ -59,7 +59,7 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 
 - Azure 環境への権限を持つすべてのユーザーに対して多要素認証を適用します。 これは多くのコンプライアンス フレームワークの要件であり、資格情報の盗難や不正アクセスのリスクが大幅に低減されます。
 
-- [Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) を使用して、ゼロ スタンディング アクセスと最小限の特権を確立します。 組織のロールを、必要な最小限レベルのアクセスにマップします。 Azure AD PIM は、既存のツールとプロセスの拡張機能にするか、前述のように Azure ネイティブ ツールを利用するか、必要に応じて両方を使用することができます。
+- [Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) を使用して、ゼロ スタンディング アクセスと最小限の特権を確立します。 組織のロールを、必要な最小限レベルのアクセスにマップします。 Azure AD PIM は、既存のツールとプロセスの拡張機能にするか、前述のように Azure ネイティブ ツールを利用するか、必要に応じてこの両方を使用することができます。
 
 - リソースへのアクセスを許可する場合は、Azure AD PIM の Azure コントロール プレーン リソースに Azure AD のみのグループを使用します。
 
@@ -91,7 +91,7 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 
 ### <a name="planning-for-authentication-inside-a-landing-zone"></a>ランディング ゾーン内の認証の計画
 
-企業組織が Azure を導入する際に下す必要がある重要な設計上の判断は、既存のオンプレミス ID ドメインを Azure に拡張するか、まったく新しいものを作成するかということです。 ランディング ゾーン内の認証の要件を十分に評価し、Windows Server、Azure AD Domain Services、またはその両方に Active Directory Domain Services (AD DS) をデプロイする計画に組み込む必要があります。 ほとんどの Azure 環境では、少なくとも Azure ファブリック認証および AD DS ローカル ホスト認証と、グループ ポリシー管理に Azure AD を使用します。
+企業組織が Azure を導入する際に下す必要がある重要な設計上の判断は、既存のオンプレミス ID ドメインを Azure に拡張するか、まったく新しいものを作成するかということです。 ランディング ゾーン内の認証の要件を十分に評価し、Windows Server 上の Active Directory Domain Services (AD DS)、Azure AD Domain Services、またはその両方をデプロイする計画に組み込む必要があります。 ほとんどの Azure 環境では、少なくとも Azure ファブリック認証および AD DS ローカル ホスト認証と、グループ ポリシー管理に Azure AD を使用します。
 
 **設計上の考慮事項:**
 
@@ -111,7 +111,7 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 
 - Windows Server 上の AD DS と Azure AD Domain Services のワークロードの互換性を評価します。
 
-- ローカル認証と管理で適切なドメイン コントローラーにアクセスできるように、Windows Server 上の AD DS を必要とするリソースがネットワーク設計で許可されていることを確認します。
+- ネットワーク設計では、ローカル認証と管理のために Windows Server 上の AD DS を必要とするリソースが、適切なドメイン コントローラーにアクセスできるようにします。
 
   - Windows Server 上の AD DS については、大規模な企業全体のネットワーク コンテキストでローカル認証とホスト管理を提供する共有サービス環境を検討します。
 

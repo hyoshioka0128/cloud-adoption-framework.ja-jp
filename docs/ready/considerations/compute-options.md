@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a995ac179320d8d1a2c81e3d64b3af3c048b5898
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: cd30fda724c94b3c0464267da83ea7e4dd033925
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994119"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195107"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 
@@ -48,7 +48,7 @@ ms.locfileid: "84994119"
 
 次の表は、いくつかの一般的な使用シナリオと、その処理に推奨されるコンピューティング サービスを示しています。
 
-| **シナリオ** | **コンピューティング サービス** |
+| シナリオ  | コンピューティング サービス |
 | --- | --- |
 | 選択した構成を使用して、Linux と Windows の仮想マシンを数秒でプロビジョニングする必要がある。 | [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) |
 | 自動スケーリングにより数分で数千台の VM を作成し、高可用性を実現する必要がある。 | [仮想マシン スケール セット](https://azure.microsoft.com/services/virtual-machine-scale-sets) |
@@ -78,6 +78,6 @@ Azure のグローバル インフラストラクチャの詳細については�
 
 ランディング ゾーン環境を準備するときに、各ユーザーがデプロイできるリソースを制限する制御を設定できます。 この制御は、開発者や IT チームがワークロードをサポートするために必要なリソースを引き続きデプロイおよび構成できるようにしながら、コストを管理し、セキュリティ リスクを制限するのに役立ちます。
 
-ランディング ゾーンの要件を特定して文書化したら、[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) を使用して、ユーザーに作成を許可するコンピューティング リソースを制御できます。 これらの制御は、[コンピューティング リソースの種類の作成を許可または拒否する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types)という形をとることができます。 たとえば、ユーザーが Azure App Service または Azure Functions リソースのみを作成するように制限することができます。 ポリシーを使用して、リソースの作成時に、[プロビジョニングできる仮想マシン SKU を制限する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage)、または[特定の VM イメージのみ許可する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images)など、指定可能なオプションを制御することもできます。
+ランディング ゾーンの要件を特定して文書化したら、[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) を使用して、ユーザーに作成を許可するコンピューティング リソースを制御できます。 これらの制御は、[コンピューティング リソースの種類の作成を許可または拒否する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types)という形をとることができます。 たとえば、ユーザーが Azure App Service または Azure Functions リソースのみを作成するように制限することができます。 ポリシーを使用して、リソースの作成時に、[プロビジョニングできる仮想マシン SKU を制限する](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#compute)、または[特定の VM イメージのみ許可する](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images)など、指定可能なオプションを制御することもできます。
 
 ポリシーは、リソース、リソース グループ、サブスクリプション、および管理グループにスコープを設定できます。 これらのポリシーを [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) の定義に含め、クラウド資産全体で繰り返し適用できます。

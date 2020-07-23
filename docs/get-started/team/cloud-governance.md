@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 1129098d5a99defd309c4a252991e31be623808f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ff5b2dba1cdb95cdcc007ba5cea52b86a902584d
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075855"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233326"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>作業を開始しましょう。クラウド ガバナンス チームを構築する
 
@@ -27,7 +27,7 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 **成果物:**
 
 - クラウド ガバナンス チームが必要かどうかを判断します。
-- `Org Alignment` ワークシートで、[RACI (実行責任、説明責任、助言、通知) テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)の意思決定者と責任者を文書化します。
+- "_実行責任、説明責任、助言、通知 (RACI)_ " の関係者を明確にするクロスチーム マトリックスを作成することにより、チーム間で責任を調整します。 [RACI テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)の `Org Alignment` ワークシートを使用して、決定事項と責任者を文書化します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 

@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 32ea202317ecddab49bed0944212f3f7be7e724c
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 1023b64d32018a1a9e7db35d11ec84568168aa40
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788185"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195022"
 ---
 # <a name="balance-the-portfolio"></a>ポートフォリオのバランスを取る
 

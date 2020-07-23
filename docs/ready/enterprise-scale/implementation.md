@@ -1,22 +1,22 @@
 ---
-title: Azure でエンタープライズ規模のランディング ゾーンを実装する
-description: エンタープライズ規模のアーキテクチャを実装するためのオプションを確認します。
+title: Azure で CAF のエンタープライズ規模のランディング ゾーンを実装する
+description: CAF のエンタープライズ規模のアーキテクチャを実装するためのオプションを確認します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b804810e23213dc6ebedbe94aa9ea7c1af91cc8e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 2b17a23a67ae4dde719710fdf2f7d70c42126f99
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076877"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128320"
 ---
-# <a name="implement-enterprise-scale-landing-zones-in-azure"></a>Azure でエンタープライズ規模のランディング ゾーンを実装する
+# <a name="implement-caf-enterprise-scale-landing-zones-in-azure"></a>Azure で CAF のエンタープライズ規模のランディング ゾーンを実装する
 
-ビジネス要件のため、最初からガバナンス、セキュリティ、運用が完全に統合されている高度なランディング ゾーンの初期実装が必要な場合は、このページで示すエンタープライズ規模の例のオプションを使用することをお勧めします。 このアプローチでは、Microsoft Azure portal またはコードとしてのインフラストラクチャを使用して、環境を設定および構成できます。 また、組織の準備が整ったら、ポータルとコードとしてのインフラストラクチャ (推奨) の間で切り替えることもできます。 Microsoft Azure の他のコードとしてのインフラストラクチャ アプローチと同様に、Azure Resource Manager テンプレートと GitHub のスキルが必要になります。
+ビジネス要件のため、最初からガバナンス、セキュリティ、運用が完全に統合された高度なランディング ゾーンの初期実装が必要な場合は、ここで示すエンタープライズ規模の例のオプションを使用してください。 このアプローチでは、Microsoft Azure portal またはコードとしてのインフラストラクチャを使用して、環境を設定および構成できます。 また、組織の準備が整ったら、ポータルとコードとしてのインフラストラクチャ (推奨) の間で切り替えることもできます。 Microsoft Azure の他のコードとしてのインフラストラクチャ アプローチと同様に、Azure Resource Manager テンプレートと GitHub のスキルが必要になります。
 
 ## <a name="example-implementation"></a>実装例
 

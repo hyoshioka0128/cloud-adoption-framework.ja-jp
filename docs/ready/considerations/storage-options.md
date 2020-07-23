@@ -7,14 +7,14 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bfb401486443aae9a086d98b9d93c80dea710074
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 1fe5e8efc4ea76a5716e671e3bf562de41db4f62
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994060"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194818"
 ---
-<!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
+<!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
 # <a name="review-your-storage-options"></a>ストレージ オプションを確認する
 
@@ -41,7 +41,7 @@ Azure Storage のデシジョン ツリーに基づいた意思決定に役立�
 - **クラウド ネイティブなファイル共有を提供する必要がありますか?** Azure には、クラウドでホストされたファイル共有を提供する Azure NetApp Files と Azure Files という 2 つのプライマリ サービスがあります。 [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) は、SAP などの一般的なエンタープライズ ワークロードに最適な高パフォーマンスの NFS 共有を提供します。 [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) は、SMB 3.0 および HTTPS 経由でアクセスできるファイル共有を提供します。
 - **オンプレミスのハイ パフォーマンス コンピューティング (HPC) ワークロード用にハイブリッド クラウド ストレージをサポートする必要はありますか。** [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) は、クラウド ベースのストレージを使用して、オンプレミスのストレージ機能を拡張するために使用できるハイブリッド キャッシュ ソリューションです。 Avere vFXT for Azure は、1,000 ～ 40,000 個の CPU コアのコンピューティング ファームを含む、読み取り負荷の高い HPC ワークロード向けに最適化されています。 Avere vFXT for Azure は、オンプレミスのハードウェア ネットワーク接続ストレージ (NAS)、Azure Blob Storage、またはその両方と統合できます。
 - **オンプレミスのデータのクラウドへの大規模なアーカイブや同期を実行する必要がありますか?** [Azure Data Box](https://docs.microsoft.com/azure/databox-family) 製品は、オンプレミス環境からクラウドへの大量のデータの移動に役立つように設計されています。 [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) は、オンプレミスに存在する仮想デバイスです。 Data Box Gateway は、クラウドへの大規模なデータ移行を管理するために役立ちます。 クラウドに移動する前にデータを分析、変換、またはフィルター処理する必要がある場合は、オンプレミス環境にデプロイされた AI 対応の物理エッジ コンピューティング デバイスである [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) を使用できます。 Data Box Edge は、データの処理と Azure への安全な転送を高速化します。
-- **クラウド ストレージを使用するように既存のオンプレミスのファイル共有を拡張したいと考えていますか?** [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide) では、オンプレミスの Windows Server コンピューターでホストされたファイル共有の拡張機能として Azure Files サービスを使用できます。 この同期サービスは、Windows Server を Azure ファイル共有の高速キャッシュに変換します。 これにより、共有にアクセスするオンプレミスのコンピューターは Windows Server で使用できる任意のプロトコルを使用できます。
+- **クラウド ストレージを使用するように既存のオンプレミスのファイル共有を拡張したいと考えていますか?** [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide) では、オンプレミスの Windows Server マシンでホストされているファイル共有の拡張機能として Azure Files サービスを使用できます。 この同期サービスにより、Windows Server が Azure ファイル共有の高速キャッシュに変わります。 これにより、共有にアクセスするオンプレミスのマシンは、Windows Server で使用可能な任意のプロトコルを使用できるようになります。
 
 ## <a name="common-storage-scenarios"></a>一般的なストレージ シナリオ
 
@@ -52,7 +52,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 <!-- docsTest:ignore M-series -->
 <!-- markdownlint-disable MD033 -->
 
-| **シナリオ** | **推奨される Azure サービス** | **推奨されるサービスに関する考慮事項** |
+| シナリオ  | 推奨される Azure サービス | 推奨されるサービスに関する考慮事項 |
 |---|---|---|
 | LOB アプリケーションを実行している直接接続ストレージを含むベア メタル サーバーまたは VM (Hyper-V または VMware) があります。 | [Azure Disk Storage (Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types#premium-ssd) | 運用サービスの場合、Premium SSD オプションは、高い IOPS とスループットと共に一貫した低待機時間を提供します。 |
 | Web およびモバイル アプリをホストするサーバーがあります。 | [Azure Disk Storage (Standard SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types#standard-ssd) | 運用環境の CPU に依存した Web およびアプリ サーバーには (Premium SSD より低コストの) Standard SSD の IOPS とスループットで十分である可能性があります。 |
@@ -62,17 +62,17 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | NoSQL クラスター (Cassandra や MongoDB など) があります。 | [Azure Disk Storage (Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types#premium-ssd) | Azure Disk Storage の Premium SSD オファリングは、高い IOPS とスループットと共に一貫した低待機時間を提供します。 |
 | 永続ボリュームを使用してコンテナーを実行しています。 | [Azure Files (Standard または Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure Disk Storage (Standard、Premium、または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | ファイル (RWX) およびブロック (RWO) ボリュームのドライバー オプションは、Azure Kubernetes Service (AKS) とカスタム Kubernetes の両方のデプロイに使用できます。 永続ボリュームは、Azure Disk Storage ディスクまたはマネージド Azure Files 共有のどちらかにマップできます。 永続ボリュームに対するワークロードの要件に基づいて、Premium または Standard オプションを選択します。 |
 | データ レイクがあります (HDFS データ用の Hadoop クラスターなど)。 | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br><br> [Azure Disk Storage (Standard または Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Azure Blob Storage の Data Lake Storage Gen 2 機能は、サーバー側の HDFS 互換性とペタバイト規模の並列分析を提供します。 また、HA と信頼性も提供されます。 Cloudera などのソフトウェアでは、必要に応じて、マスター/ワーカー ノード上で Premium または Standard SSD を使用できます。 |
-| SAP または SAP HANA の展開があります。 | [Azure Disk Storage (Premium または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD は、階層 1 の SAP ワークロードにミリ秒未満の待機時間を提供するように最適化されています。 Ultra SSD は現在、プレビュー段階です。 Premium SSD は M シリーズの VM と共に、一般提供 (GA) オプションを提供します。 |
+| SAP または SAP HANA の展開があります。 | [Azure Disk Storage (Premium または Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD は、階層 1 の SAP ワークロードにミリ秒未満の待機時間を提供するように最適化されています。 Ultra SSD は現在、プレビュー段階です。 M シリーズ VM と組み合わされた Premium SSD は、一般提供オプションを提供します。 |
 | プライマリ サーバーから同期する厳密な RPO/RTO を持つディザスター リカバリー サイトがあります。 | [Azure ページ BLOB](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Azure ページ BLOB は、フェールオーバーが発生するまでコンピューティング VM を必要とすることなく、Azure への低コストのレプリケーションを可能にするために、レプリケーション ソフトウェアによって使用されます。 詳細については、[Azure Disk Storage のドキュメント](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)をご覧ください。 **注:** ページ BLOB は最大 8TB をサポートします。 |
 
 ### <a name="file-and-object-storage-scenarios"></a>ファイルとオブジェクトのストレージ シナリオ
 
-| **シナリオ** | **推奨される Azure サービス** | **推奨されるサービスに関する考慮事項** |
+| シナリオ | 推奨される Azure サービス | 推奨されるサービスに関する考慮事項 |
 |---|---|---|
 | Windows ファイル サーバーを使用しています。 | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure File Sync を使用すると、めったに使用されないデータをクラウド ベースの Azure ファイル共有に格納し、使用頻度の高いファイルをオンプレミスでキャッシュして高速のローカル アクセスを実現できます。 マルチサイト同期を使用して、ファイルを複数のサーバー間の同期を維持することもできます。 ワークロードをクラウドのみのデプロイに移行する予定がある場合は、Azure Files で十分である可能性があります。 |
 | エンタープライズ NAS (Azure NetApp Files や Dell-EMC Isilon など) があります。 | [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) <br><br> [Azure Files (Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers) | NetApp のオンプレミス デプロイがある場合は、Azure NetApp Files を使用してデプロイを Azure に移行することを検討してください。 Windows または Linux サーバーを使用しているか、それらのサーバーに移行しようとしている場合や、基本的なファイル共有が必要な場合は、Azure Files を使用することを検討してください。 継続的なオンプレミス アクセスについては、クラウド階層化メカニズムを使用して、Azure File Sync で Azure ファイル共有をオンプレミスのファイル共有と同期させます。 |
 | ファイル共有 (SMB または NFS) があります。 | [Azure Files (Standard または Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure Files の Premium レベルと Standard レベルのどちらを選択するかは、IOPS、スループット、および待機時間の一貫性へのニーズによって異なります。 NetApp のオンプレミス デプロイがある場合は、Azure NetApp Files を使用することを検討してください。 アクセス制御リスト (ACL) とタイムスタンプをクラウドに移行する必要がある場合は、Azure File Sync により、これらのすべての設定を便利な移行パスとして Azure ファイル共有に移動できます。 |
-| 数ペタバイトのデータのためのオンプレミスのオブジェクト ストレージ システム (Dell-EMC ECS など) があります。 | [Azure BLOB Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) |  Azure Blob Storage には、ワークロードのパフォーマンスとコストのニーズに適合するように、Premium、ホット、クール、アーカイブの各層が用意されています。 |
+| 数ペタバイトのデータのためのオンプレミスのオブジェクト ストレージ システム (Dell-EMC ECS など) があります。 | [Azure BLOB Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) | Azure Blob Storage には、ワークロードのパフォーマンスとコストのニーズに適合するように、Premium、ホット、クール、アーカイブの各層が用意されています。 |
 | DFSR デプロイ、またはブランチ オフィスを処理するための別の方法があります。 | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | Azure File Sync では、クラウド内の複数のサーバーとネイティブ Azure ファイル共有間でファイルの同期を維持する、マルチサイト同期を提供します。 クラウド階層化を使用して、オンプレミスの固定のストレージ フットプリントに移動します。 クラウド階層化は、サーバーを関連するファイルのキャッシュに変換しながら、Azure ファイル共有内のコールド データをスケーリングします。 |
 | バックアップとディザスター リカバリー、または長期的なデータ保持のために、テープ ライブラリ (オンプレミスまたはオフサイト) を所有しています。 | [Azure Blob Storage (クールまたはアーカイブ層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) | Azure Blob Storage のアーカイブ層のコストは最低限に抑えられますが、オフライン データをクール、ホット、または Premium 層のストレージにコピーしてアクセス可能になるまでに数時間必要になることがあります。 クール層は、低コストでの瞬時のアクセスを提供します。 |
 | バックアップを受け取るように構成されたファイルまたはオブジェクト ストレージがあります。 | [Azure Blob Storage (クールまたはアーカイブ層)](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) <br> [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | 最もコストが低いストレージでの長期の保持のためにデータをバックアップするには、データを Azure Blob Storage に移動し、クールおよびアーカイブ層を使用します。 サーバー (オンプレミスまたは Azure VM に存在) 上のファイル データの高速ディザスター リカバリーを有効にするには、Azure File Sync を使用して、共有を個々の Azure ファイル共有と同期します。Azure ファイル共有スナップショットを使用すると、以前のバージョンを復元し、それを元の接続されたサーバーと同期したり、Azure ファイル共有でネイティブにアクセスしたりできます。 |
@@ -83,7 +83,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 
 ### <a name="plan-based-on-data-workloads"></a>データ ワークロードに基づいて計画する
 
-| **シナリオ** | **推奨される Azure サービス** | **推奨されるサービスに関する考慮事項** |
+| シナリオ | 推奨される Azure サービス | 推奨されるサービスに関する考慮事項 |
 |---|---|---|
 | 非構造化データを保持する必要がある新しいクラウド ネイティブ アプリケーションを開発したいと考えています。 | [Azure BLOB Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) | |
 | オンプレミスの NetApp インスタンスから Azure にデータを移行する必要があります。 | [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | |
@@ -92,7 +92,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | クラウドで計算が実行されている間オンプレミスに存在するデータ資産を含む NFS/SMB の読み取り負荷の高いファイル ベースのワークロードである "バースト コンピューティング" をサポートする必要があります。 | [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | IaaS スケールアウト NFS/SMB ファイル キャッシュ |
 | ローカル ディスクまたは iSCSI を使用するオンプレミスのアプリケーションを移動する必要があります。 | [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) | |
 | 永続ボリュームを持つコンテナー ベースのアプリケーションを移行する必要があります。 | [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) <br><br> [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) | |
-| Windows Server や NetApp ではないファイル共有をクラウドに移動する必要があります。 | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Protocol Support Regional Availability Performance Requirements Snapshot と Clone Capabilities Price Sensitivity |
+| Windows Server または NetApp ではないファイル共有をクラウドに移動する必要があります。 | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br><br> [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Protocol Support Regional Availability Performance Requirements Snapshot と Clone Capabilities Price Sensitivity |
 | 数テラバイトから数ペタバイトのデータをオンプレミスから Azure に転送する必要があります。 | [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | |
 | Azure に転送する前にデータを処理する必要があります。 | [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | |
 | ローカル キャッシュを使用して、自動化された方法で継続的なデータ インジェストをサポートする必要があります。 | [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) | |
@@ -101,7 +101,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 
 要件に最も適合する Azure ツールを特定したら、次の表でリンクされている詳細なドキュメントを使用して、これらのサービスに精通してください。
 
-| **サービス** | **説明** |
+| サービス  | 説明 |
 |---|---|
 | [Azure BLOB Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) | Azure Blob Storage は、Microsoft のクラウド用オブジェクト ストレージ ソリューションです。 Blob Storage は、テキスト データやバイナリ データなどの大量の非構造化データを格納するために最適化されています。 非構造化データは、特定のデータ モデルまたは定義に従っていないデータ (テキスト データやバイナリ データなど) です。 <br><br> Blob Storage は、次の用途に適しています。 <li> 画像またはドキュメントをブラウザーに直接配信する。 <li> 分散アクセス用にファイルを格納する。 <li> ビデオおよびオーディオをストリーミング配信する。 <li> ログ ファイルに書き込む。 <li> バックアップと復元、ディザスター リカバリー、アーカイブのためのデータを格納する。 <li> オンプレミス サービスまたは Azure ホステッド サービスで分析するデータを格納する。 |
 | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) | Blob Storage では、Microsoft のクラウド向けのエンタープライズ ビッグ データ分析ソリューションである Azure Data Lake Storage Gen2 がサポートされています。 Azure Data Lake Storage Gen2 では、階層型のファイル システムに加え、低コスト、階層型ストレージ、高可用性、強力な一貫性、ディザスター リカバリー機能を含む Blob Storage の利点が提供されます。 |
@@ -111,7 +111,9 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure NetApp Files サービスは、エンタープライズ クラスでハイパフォーマンスの従量制課金ファイル ストレージ サービスです。 Azure NetApp Files は、既定で高い可用性を備え、あらゆる種類のワークロードをサポートします。 サービス レベルとパフォーマンス レベルを選び、サービスを通じてスナップショットを設定することができます。 |
 | [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge は、Azure との間でデータを移動するオンプレミスのネットワーク デバイスです。 Data Box Edge は、アップロード中にデータを前処理するための AI 対応のエッジ コンピューティングを備えています。 Data Box Gateway は、仮想バージョンのデバイスですが、同じデータ転送機能を備えています。 |
 | [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) | Azure Data Box Gateway は、Azure にシームレスにデータを送信できるストレージ ソリューションです。 Data Box Gateway は、仮想化環境またはハイパーバイザーにプロビジョニングされた仮想マシンに基づく仮想デバイスです。 この仮想デバイスはオンプレミスに存在し、ユーザーは NFS および SMB プロトコルを使用してそこにデータを書き込みます。 このデバイスはその後、Azure ブロック BLOB、Azure ページ BLOB、または Azure Files にデータを転送します。 |
-| [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT for Azure は、データ集約型のハイ パフォーマンス コンピューティング (HPC) タスク向けのファイルシステム キャッシュ ソリューションです。 これを使用すると、クラウド コンピューティングのスケーラビリティを活かして、データがお客様のオンプレミス ハードウェアに格納されている場合であっても、必要なときに必要な場所でデータにアクセスできます。 |
+| [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT for Azure は、データ集約型のハイ パフォーマンス コンピューティング (HPC) タスク向けのファイルシステム キャッシュ ソリューションです。 データがお客様独自のオンプレミス ハードウェアに格納されている場合でも、クラウド コンピューティングのスケーラビリティを活かして、必要なときに必要な場所でデータにアクセスできます。 |
+
+<!-- markdownlint-enable MD033 -->
 
 ## <a name="data-redundancy-and-availability"></a>データの冗長性と可用性
 
@@ -121,7 +123,7 @@ Azure Storage には、ローカル冗長ストレージ (LRS)、ゾーン冗長
 
 Azure ディスクに適したソリューションの計画については、[Azure Disk Storage のバックアップとディザスター リカバリー](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)に関する記事をご覧ください。
 
-## <a name="security"></a>Security
+## <a name="security"></a>セキュリティ
 
 クラウド内のデータを保護するために、Azure Storage は、データのセキュリティと保存中および転送中のデータの暗号化に関するいくつかのベスト プラクティスを提供しています。 次のようにすることができます。
 
@@ -135,13 +137,13 @@ Azure ディスクに適したソリューションの計画については、[A
 
 [Storage Service Encryption](https://docs.microsoft.com/azure/storage/storage-service-encryption) は、保存時の暗号化を提供し、データを保護して組織のセキュリティとコンプライアンス コミットメントを満たします。 Storage Service Encryption は、すべての Azure リージョン内のすべてのマネージド ディスク、スナップショット、およびイメージに対して既定で有効になっています。 2017 年 6 月 10 日から、新しいマネージド ディスク、スナップショット、イメージ、および既存のマネージド ディスクに書き込まれた新しいデータはすべて、Microsoft によって管理されるキーを使用して保存時に自動的に暗号化されます。 詳細については、[マネージド ディスクの FAQ](https://docs.microsoft.com/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption) に関するページを参照してください。
 
-Azure Disk Encryption を使用すると、[Azure Key Vault](https://azure.microsoft.com/documentation/services/key-vault) に格納されているキーを使用して、OS ディスクおよびデータ ディスクとして IaaS VM に接続されたマネージド ディスクを、保存時および転送中に暗号化できます。 Windows の場合、ドライブは業界標準の [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 暗号化テクノロジを使用して暗号化されます。 Linux の場合、ディスクは [dm-crypt](https://wikipedia.org/wiki/Dm-crypt) サブシステムを使用して暗号化されます。 暗号化プロセスは Azure Key Vault と統合されているので、ディスクの暗号化キーを制御および管理できます。 詳細については、[Windows および Linux IaaS VM の Azure Disk Encryption](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss) に関する記事をご覧ください。
+Azure Disk Encryption を使用すると、[Azure Key Vault](https://azure.microsoft.com/documentation/services/key-vault) に格納されているキーを使用して、OS として IaaS VM に接続されたマネージド ディスクとデータ ディスクを保存時および転送中に暗号化できます。 Windows の場合、ドライブは業界標準の [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 暗号化テクノロジを使用して暗号化されます。 Linux の場合、ディスクは [dm-crypt](https://wikipedia.org/wiki/Dm-crypt) サブシステムを使用して暗号化されます。 暗号化プロセスは Azure Key Vault と統合されているので、ディスクの暗号化キーを制御および管理できます。 詳細については、「[Windows および Linux IaaS VM の Azure Disk Encryption](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss)」をご覧ください。
 
 ## <a name="regional-availability"></a>リージョン別の提供状況
 
 Azure を使用すると、顧客やパートナーが "**どのような場所にいても**"、そこに到達するために必要な規模でサービスを提供できます。 [マネージド ディスク](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks)と [Azure Storage](https://azure.microsoft.com/global-infrastructure/services/?products=storage) のリージョン別の提供状況のページには、これらのサービスが使用可能なリージョンが表示されています。 あるサービスのリージョン別の提供状況を事前に確認しておくと、ワークロードや顧客のニーズに関する適切な意思決定を行うために役立ちます。
 
-マネージド ディスクは、Premium SSD と Standard SSD のオファリングがあるすべての Azure リージョンで利用できます。 Ultra SSD は現在パブリック プレビュー段階ですが、1 つの可用性ゾーン (米国東部 2 リージョン) でのみ提供されます。 Ultra SSD を必要とするミッション クリティカルな最上位層のワークロードを計画する場合は、リージョン別の提供状況を確認してください。
+マネージド ディスクは、Premium SSD と Standard SSD のオファリングがあるすべての Azure リージョンで利用できます。 Ultra SSD は現在パブリック プレビュー段階ですが、1 つの可用性ゾーン (`East US 2` リージョン) でのみ提供されます。 Ultra SSD を必要とするミッション クリティカルな最上位層のワークロードを計画する場合は、リージョン別の提供状況を確認してください。
 
 ホットおよびクール Blob Storage、Data Lake Storage Gen2、Azure Files ストレージは、すべての Azure リージョンで利用できます。 アーカイブ Blob Storage、Premium ファイル共有、Premium ブロック BLOB ストレージは、特定のリージョンに制限されています。 リージョンのページを参照して、リージョン別の提供状況の最新の状態を確認することをお勧めします。
 

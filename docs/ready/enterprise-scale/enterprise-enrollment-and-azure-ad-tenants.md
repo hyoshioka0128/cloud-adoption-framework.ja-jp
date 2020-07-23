@@ -1,5 +1,5 @@
 ---
-title: エンタープライズ登録と Azure Active Directory テナント
+title: Enterprise Agreement 加入契約と Azure Active Directory テナント
 description: エンタープライズ登録と Azure Active Directory テナント。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,29 +7,29 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a5c9f562e521ec1e04b598b9c2c55deceb72e45e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: eee2f462490a8c69c0c772b11f8877380e790c7b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076975"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194699"
 ---
-# <a name="enterprise-enrollment-and-azure-active-directory-tenants"></a>エンタープライズ登録と Azure Active Directory テナント
+# <a name="enterprise-agreement-enrollment-and-azure-active-directory-tenants"></a>Enterprise Agreement 加入契約と Azure Active Directory テナント
 
 ## <a name="planning-for-enterprise-enrollment"></a>エンタープライズ登録の計画
 
-エンタープライズ登録は、エンタープライズ契約と呼ばれることも多く、Microsoft と、お客様が Azure を使用する方法との取引関係を表しています。 これは、すべてのお客様のサブスクリプションにわたる請求の基礎となり、お客様の資産管理に影響を及ぼします。 エンタープライズ登録は EA とも呼ばれ、Azure エンタープライズ ポータルを使用して管理されます。 Azure エンタープライズ登録は、多くの場合、部門、アカウント、サブスクリプションなど、組織の階層を表します。 この階層は、組織内のコスト登録グループを表します。
+Enterprise Agreement (EA) 加入契約は、Microsoft と、お客様の組織が Azure を使用する方法との取引関係を表しています。 これは、お客様のすべてのサブスクリプションにわたる請求の基礎となり、お客様のデジタル資産の管理に影響を及ぼします。 EA 加入契約は、Azure エンタープライズ ポータルを使用して管理されます。 多くの場合、加入契約は、部門、アカウント、サブスクリプションなど、組織の階層を表しています。 この階層は、組織内のコスト登録グループを表します。
 
 ![Azure EA の階層](./media/ea.png)
-_図 1: Azure エンタープライズ登録の階層。_
+_図 1: Azure EA 加入契約の階層_
 
 - 部門は、コストを論理的なグループに分け、部門レベルで予算またはクォータを設定するために役立ちます (注: クォータは強制されず、レポート目的で使用されます)。
 
 - アカウントは、Azure エンタープライズ ポータルの組織単位です。サブスクリプションの管理とレポートへのアクセスに使用できます。
 
-- サブスクリプションは、Azure エンタープライズ ポータルの最小単位です。 これらは、サービス管理者によって管理される Azure サービスのコンテナーです。 組織によって Azure サービスがデプロイされる場所です。
+- サブスクリプションは、Azure エンタープライズ ポータルの最小単位です。 これらは、サービス管理者によって管理される Azure サービスのコンテナーです。 これらは、組織が Azure サービスがデプロイする場所です。
 
-- エンタープライズ登録ロールによって、ユーザーは職務的なロールにリンクされます。 これらのロールは次のとおりです。
+- EA 加入契約のロールによって、ユーザーは職務的なロールに結び付けられます。 これらのロールは次のとおりです。
   - エンタープライズ管理者
   - 部門管理者
   - アカウント所有者
@@ -38,9 +38,9 @@ _図 1: Azure エンタープライズ登録の階層。_
 
 **設計上の考慮事項:**
 
-- 登録には、顧客サブスクリプションの管理を統制する階層的な組織構造があります。
+- 加入契約には、サブスクリプションの管理を統制する階層型の組織構造があります。
 
-- 複数の顧客環境を EA アカウント レベルで分離して、包括的な分離をサポートできます。
+- 複数の環境を EA アカウント レベルで分離して、包括的な分離をサポートできます。
 
 - 1 つの登録に複数の管理者を任命することができます。
 
@@ -60,7 +60,7 @@ _図 1: Azure エンタープライズ登録の階層。_
 
 - 各アカウントに予算を割り当て、予算に関連するアラートを設定します。
 
-- 組織は、職務、部門、地理、マトリックス、チーム構造など、さまざまな構造を持つことがあります。 組織構造を使用して、組織構造をエンタープライズ登録にマップします。
+- 組織は、職務、部門、地理、マトリックス、チーム構造など、さまざまな構造を持つことがあります。 組織構造を使用して、組織の構造を加入契約の階層にマップします。
 
 - 事業領域に独立した IT 機能がある場合は、IT の新しい部門を作成します。
 
@@ -80,17 +80,17 @@ _図 1: Azure エンタープライズ登録の階層。_
 
 Azure AD テナントによって ID とアクセス管理が提供されます。これはセキュリティ体制の重要な部分であり、認証および承認されたユーザーが、自身がアクセス許可を持つリソースのみにアクセスできるようにするものです。 Azure AD からは、Azure にデプロイされたアプリケーションやサービスだけでなく、Azure の外部にデプロイされたサービスやアプリケーション (オンプレミスやサードパーティのクラウド プロバイダーなど) にもこれらのサービスが提供されます。 Azure AD は、Microsoft 365 や Azure Marketplace などのサービスとしてのソフトウェア (SaaS) アプリケーションでも使用されます。 オンプレミスの Active Directory を既に使用している組織では、既存のインフラストラクチャを使用し、Azure AD と統合することで認証をクラウドに拡張できます。 各 Azure AD ディレクトリには 1 つ以上のドメインがあります。 ディレクトリには複数のサブスクリプションを関連付けることができますが、Azure AD テナントは 1 つだけです。
 
-Azure AD の設計段階では、組織で資格情報を管理する方法や、人、アプリケーション、プログラムによるアクセスを制御する方法など、基本的なセキュリティの質問を確認することが重要です。
+Azure AD の設計フェーズでは、組織で資格情報を管理する方法や、人、アプリケーション、プログラムによるアクセスを制御する方法など、基本的なセキュリティの質問をすることが重要です。
 
 **設計上の考慮事項:**
 
-- 1 つエンタープライズ登録で複数の Azure AD テナントを機能させることができます。
+- 1 つの加入契約で複数の Azure AD テナントを機能させることができます。
 
 **設計上の推奨事項:**
 
 - 選択した[計画トポロジ](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)に基づいて Azure AD のシームレスなシングル サインオンを使用します。
 
-- 組織に ID インフラストラクチャがない場合は、まず Azure AD のみの ID デプロイを実装します。 [Azure AD Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services) と [Microsoft エンタープライズ モビリティ + セキュリティ](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)を使用するこのようなデプロイによって、デバイスだけでなく SaaS とエンタープライズ アプリケーションのエンドツーエンドの保護を実現できます。
+- 組織に ID インフラストラクチャがない場合は、まず Azure AD のみの ID デプロイを実装します。 [Azure AD Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services) と [Microsoft Enterprise Mobility + Security](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) を使用するこのようなデプロイによって、SaaS アプリケーション、エンタープライズ アプリケーション、デバイスのエンドツーエンドの保護が実現されます。
 
 - 多要素認証を使用すると、セキュリティにもう 1 つの層を加え、認証の 2 つ目のバリアを提供することができます。 セキュリティを強化するために、すべての特権アカウントに[多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)と[条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)を適用します。
 

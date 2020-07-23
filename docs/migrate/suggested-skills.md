@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4e3c9b7e924f1285389430ea9aae93cdecffea89
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fc04c5fa27425ebdbaa82f5b98f8e526e4695f9a
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222013"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233275"
 ---
 <!-- cSpell:ignore Getting Started -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "83222013"
 
 ## <a name="prerequisites-skilling-resources"></a>前提条件のスキル リソース
 
-移行プロセスの実装は、移行の行程の「[計画](../strategy/suggested-skills.md)」と「[準備](../organize/suggested-skills.md)」のフェーズ中に習得したスキルに基づいて構築されます。
+移行手法のプロセスの実装は、移行の行程の[計画フェーズ](../strategy/suggested-skills.md)と[準備フェーズ](../organize/suggested-skills.md)中に習得したスキルに基づいて構築されます。
 
 ## <a name="assess-skilling-resources"></a>スキル リソースの評価
 
@@ -34,22 +34,22 @@ ms.locfileid: "83222013"
 - [業務上の正当な理由の構築](../strategy/cloud-migration-business-case.md):クラウド移行作業を推進する業務上の正当な理由を作成し理解します。
 - [デジタル資産の合理化](../digital-estate/rationalize.md):デジタル資産内の資産を合理化します。
 - [アプリケーション ポートフォリオの評価](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
-- [Assessing and Planning Microsoft Azure Migration (Microsoft Azure 移行の評価とプランニング)](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning):オンプレミスのワークロードの評価を支援するための Pluralsight コース。
+- [Microsoft Azure 移行の評価と計画](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): オンプレミスのワークロードの評価を支援するための Pluralsight コース。
 
-評価プロセス中、各ワークロードのソリューションをアーキテクトが設計します。 次のスキル習得リソースは、これらのタスクに備えてアーキテクトの準備を支援します。
+評価プロセス中、アーキテクトは各ワークロードのソリューションを設計します。 次のスキル習得リソースは、これらのタスクに備えてアーキテクトの準備を支援します。
 
-- [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations):適切な基本的ソリューションの設計を支援する Pluralsight コース。
-- [Microsoft Azure アーキテクチャ - 概要](https://www.pluralsight.com/courses/azure-architecture-getting-started):アーキテクトに Azure アーキテクチャの基礎知識を教える Pluralsight コース。
-- [Microsoft Azure 移行の設計](https://www.pluralsight.com/courses/microsoft-azure-migrations-designing):アーキテクトが移行ソリューションを設計するのに役立つ Pluralsight コース。
+- [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations): 適切な基本的ソリューションの設計を支援する Pluralsight コース。
+- [Microsoft Azure アーキテクチャ: 作業の開始](https://www.pluralsight.com/courses/azure-architecture-getting-started)アーキテクトに Azure アーキテクチャの基礎知識を教える Pluralsight コース。
+- [Microsoft Azure 移行の設計](https://www.pluralsight.com/courses/microsoft-azure-migrations-designing): アーキテクトが移行ソリューションを設計するのに役立つ Pluralsight コース。
 
 ## <a name="migrate-skilling-resources"></a>スキル リソースの移行
 
 次のチュートリアルでは、移行アクティビティのチームを準備できます。
 
 - [Azure への移行](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure):Azure Site Recovery を使用して VM を Azure に移行します。
-- [Rehost workloads to Azure (Azure へのワークロードのリホスト)](https://www.pluralsight.com/courses/microsoft-azure-workloads-rehosting):ワークロードを Azure にリホストする方法を視聴者に説明する Pluralsight コース。
-- [Migrating Physical and Virtual Servers to Microsoft Azure (Microsoft Azure への物理サーバーと仮想サーバーの移行)](https://www.pluralsight.com/courses/microsoft-azure-migrating-physical-virtual-servers):Azure へのサーバーの移行に関する Pluralsight コース。
-- [Import and Export Data to Microsoft Azure (Microsoft Azure へのデータのインポートとエクスポート)](https://www.pluralsight.com/courses/microsoft-azure-import-export-data):Azure との間のデータの移動に関する Pluralsight コース。
+- [Azure へのワークロードのリホスト](https://www.pluralsight.com/courses/microsoft-azure-workloads-rehosting): ワークロードを Azure にリホストする方法を視聴者に説明する Pluralsight コース。
+- [Azure への物理サーバーと仮想サーバーの移行](https://www.pluralsight.com/courses/microsoft-azure-migrating-physical-virtual-servers): Azure へのサーバーの移行に関する Pluralsight コース。
+- [Azure へのデータのインポートとエクスポート](https://www.pluralsight.com/courses/microsoft-azure-import-export-data): Azure との間のデータの移動に関する Pluralsight コース。
 
 ## <a name="optimize-and-promote-process-changes"></a>最適化および昇格プロセスの変更
 

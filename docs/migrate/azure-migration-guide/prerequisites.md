@@ -9,40 +9,30 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e8dbbb951f58f96333f5e806574608a3bfcd9bf6
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: ebffe5ecf08005c167f9e4a3a76087e785c3688e
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862672"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86372933"
 ---
-::: zone target="docs"
-
 # <a name="prerequisites-for-migrating-to-azure"></a>Azure に移行するための前提条件
-
-::: zone-end
-
-::: zone target="chromeless"
-
-# <a name="prerequisites"></a>前提条件
-
-::: zone-end
 
 このセクションのリソースは、Azure への移行のために現在の環境を準備するために役立ちます。
 
-# <a name="overview"></a>[概要](#tab/Overview)
+## <a name="overview"></a>[概要](#tab/Overview)
 
 Azure に移行する理由には、従来のハードウェアに関連したリスクの排除、資本支出の削減、データセンターの占有領域の解放、投資収益率 (ROI) の迅速な実現などがあります。
 
 - **従来のハードウェアの排除。** 提供またはサポートの終了が近い、オンプレミスまたはホスティング プロバイダーのインフラストラクチャでアプリケーションをホストしているかもしれません。 クラウドへの移行は、課題への魅力的なソリューションを提供します。"現状のまま" の移行が可能なため、チームは現在のインフラストラクチャ ライフサイクルの課題を迅速に解決した後、クラウドでのアプリケーション ライフサイクルと最適化のための長期計画に注意を向けることができます。
-- **ソフトウェアのサポート終了への対応。** サポート終了間近の他のソフトウェアまたはオペレーティング システムに依存しているアプリケーションがあるかもしれません。 Azure に移行すれば、これらの依存先に対する拡張サポート オプションや、アプリケーションを今後もサポートするためのリファクタリング要件を最小化するその他の移行オプションが提供される場合があります。 例については、[Windows Server 2008 と SQL Server 2008 の拡張サポート オプション](https://azure.microsoft.com/blog/announcing-new-options-for-sql-server-2008-and-windows-server-2008-end-of-support)に関する記事を参照してください。
+- **ソフトウェアのサポート終了への対応。** サポート終了間近の他のソフトウェアまたはオペレーティング システムに依存しているアプリケーションがあるかもしれません。 Azure に移行すれば、これらの依存先に対する拡張サポート オプションや、アプリケーションを今後もサポートするためのリファクタリング要件を最小化するその他の移行オプションが提供される場合があります。 例については、[Windows Server 2008 と SQL Server 2008 の延長サポート オプション](https://azure.microsoft.com/blog/announcing-new-options-for-sql-server-2008-and-windows-server-2008-end-of-support)に関する記事をご覧ください。
 - **資本支出の削減。** 独自のサーバー インフラストラクチャをホスティングするには、ハードウェア、ソフトウェア、電気代、および人員にかなりの投資が必要です。 クラウド ソリューションに移行すれば、資本支出の大幅な削減を実現できます。 最大限の資本支出削減を達成するためには、ソリューションの再設計が必要な場合があります。 ただし、"現状のまま" の移行が優れた第一歩です。
 - **データセンターの占有領域の解放。** データセンターのキャパシティを拡張するために Azure を選択することができます。 これを行う 1 つの方法は、オンプレミス機能の拡張としてクラウドを使用することです。
 - **投資収益率の迅速な実現。** クラウド支払いモデルは使用率に関する優れた洞察を提供し、投資収益率 (ROI) を実現するためのカルチャを促進するため、クラウド ソリューションを使用すれば ROI の達成がずっと容易になります。
 
 以上の各シナリオは、別の方法 (リホスト、リファクタリング、再設計、再構築、または置き換え) を使用してクラウドのフットプリントを拡張するためのエントリ ポイントになるかもしれません。
 
-## <a name="migration-characteristics"></a>移行の特性
+### <a name="migration-characteristics"></a>移行の特性
 
 このガイドでの想定として、この移行よりも前は、お客様のデジタル資産は主にオンプレミスのホスト型インフラストラクチャで構成されており、ビジネスに不可欠なホスト型アプリケーションが含まれる場合があります。 移行が成功した後、お客様のデータ資産はオンプレミスのときとあまり変わらないように見えるかもしれませんが、インフラストラクチャはクラウド リソースでホストされています。 または、お客様の現在のデータ資産のバリエーションが、理想的なデータ資産です。それは、オンプレミス インフラストラクチャの側面と同時に、クラウド プラットフォームを最適化して活用するようにリファクタリングされたコンポーネントを備えているからです。
 
@@ -58,7 +48,7 @@ Azure に移行する理由には、従来のハードウェアに関連した�
 > - [Windows Server 2008 および Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008)。
 > - [SQL Server 2008 および SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008)。
 
-# <a name="understand-migration-approaches"></a>[移行方法を理解する](#tab/Approach)
+## <a name="understand-migration-approaches"></a>[移行方法を理解する](#tab/Approach)
 
 アプリケーションを Azure に移行するために使用する戦略およびツールは、お客様のビジネスの動機、テクノロジの要件、およびタイムラインによって大きく異なり、移行する実際のワークロードと資産 (インフラストラクチャ、アプリ、データ) についての深い理解にも左右されます。
 
@@ -66,14 +56,14 @@ Azure に移行する理由には、従来のハードウェアに関連した�
 
 仮想マシン (VM) を使用して (関連するアプリケーションやデータと共に) サーバーをクラウドに再ホスティングする IaaS 中心の移行は、多くの場合、ワークロードをクラウドに移動するための最も簡単な方法です。 ただし、VM の構成、セキュリティ保護、メンテナンスを正しく行うためには、Azure で PaaS サービスを使用する場合よりも時間がかかり、IT に対する豊富な知識と経験が要求されることを考慮してください。 Azure Virtual Machines を選択する場合は必ず、VM 環境に対する修正プログラムの適用、更新、管理に伴って日々発生するメンテナンスの労力を考慮してください。
 
-移行のためにワークロードを評価するときは、Azure App Service などの PaaS テクノロジや Azure Kubernetes Service などのオーケストレーターを使用して実行するために大幅な変更を必要としないアプリケーションを識別します。 これらのアプリは、最新化とクラウド最適化の最初の候補になるはずです。
+移行のためにワークロードを評価するときは、Azure App Service などの PaaS テクノロジや Azure Kubernetes Service などのオーケストレーターを使用して実行するために大幅な変更を必要としないアプリケーションを識別します。 これらのアプリケーションは、最新化とクラウド最適化の最初の候補となります。
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 - [クラウド導入フレームワークの移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)
 - [合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklist"></a>[計画チェックリスト](#tab/Checklist)
+## <a name="planning-checklist"></a>[計画チェックリスト](#tab/Checklist)
 
 移行を開始する前に、いくつかの前提条件を満たす必要があります。 これらのアクティビティの正確な詳細は、移行する環境によって異なります。 一般に、以下のチェックリストが適用されます。
 
@@ -100,7 +90,7 @@ Azure に移行する理由には、従来のハードウェアに関連した�
 
 <!-- markdownlint-disable MD024 -->
 
-## <a name="learn-more"></a>詳細情報
+### <a name="learn-more"></a>詳細情報
 
 - [合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md)
 - [移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 712cbc1338f1dce6fce2d724383233f84477baf8
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 68f97138d3b2d6416b5718cbc611135bf9870335
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799978"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195175"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -47,7 +47,7 @@ _ハブ アンド スポーク_は、一般的な通信またはセキュリテ�
 - 信頼されていないネットワークからアクセスするサード パーティがスポーク内のワークロードにアクセスする前のユーザー認証に必要な Windows Server Active Directory インフラストラクチャ。 これには、関連する Active Directory フェデレーション サービス (AD FS) が含まれます。
 - オンプレミスおよびインターネット上のリソースにアクセスするための、スポーク内のワークロードの名前付けを解決する DNS サービス ([Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) が使用されていない場合)。
 - ワークロードにシングル サインオンを実装するための公開キー基盤 (PKI)。
-- スポーク ネットワーク ゾーンとインターネット間の TCP と UDP トラフィックのフロー制御。
+- スポーク ネットワーク ゾーンとインターネット間の TCP/UDP トラフィックのフロー制御。
 - スポークとオンプレミス間のフロー制御。
 - (必要に応じて) スポーク間のフロー制御。
 
