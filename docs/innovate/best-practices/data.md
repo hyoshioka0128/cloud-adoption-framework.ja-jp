@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 85b24ecd5045554181cd88aa9671ab8f85fcad25
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c29e32370fdb46fabb3157f33eff1dec0e0a0006
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193747"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449729"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Azure でデータを民主化するためのツール
 
@@ -46,8 +46,8 @@ Azure では、上記のフェーズでデジタル発明を加速するため�
 - [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql)
 - [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql)
 - [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb)
-- [Azure Database for PostgreSQL Hyperscale](https://docs.microsoft.com/azure/postgresql/concepts-hyperscale-nodes)
-- [Azure Data Lake](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
+- [Azure Database for PostgreSQL ハイパースケール](https://docs.microsoft.com/azure/postgresql/concepts-hyperscale-nodes)
+- [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure Database Migration Service](https://docs.microsoft.com/azure/dms)
 - [Azure SQL Database (Azure SQL Managed Instance あり、またはなし)](https://docs.microsoft.com/azure/sql-database)
 - [Azure Data Factory](https://docs.microsoft.com/azure/data-factory)

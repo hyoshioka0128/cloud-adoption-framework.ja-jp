@@ -1,5 +1,5 @@
 ---
-title: 健全な運用モデルで顧客の成功を実現する
+title: 健全な運用モデルと組織配置でお客様の成功を実現する
 description: 無料のセルフサービス クラウド導入フレームワークとその他のツールを使用して、お客様の成功を実現するクラウド導入の意思決定に役立てることができます。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,16 +7,23 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8eaded2f79ce16e2dfa0bc5730093abfd2e5ee32
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: ac6df9dafb43af14f41d94c8dde4416aceccf231
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786094"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450545"
 ---
-# <a name="enable-customer-success-with-a-sound-operating-model"></a>健全な運用モデルで顧客の成功を実現する
+# <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>健全な運用モデルと組織配置でお客様の成功を実現する
 
-多くの場合、クラウドの導入作業における顧客の成功は、技術的スキルや導入関連のプロジェクトにはほとんど関係ありません。 運用モデルによって、導入を可能にする機会や、場合によってはクラウドの導入が遅くなる可能性のある問題点が生じます。
+多くの場合、クラウドの導入作業におけるお客様の成功は、技術的スキルや導入関連のプロジェクトにはほとんど関係ありません。 運用モデルによって、導入を可能にする機会や、場合によってはクラウドの導入が遅くなる可能性のある問題点が生じます。
+
+## <a name="alignment"></a>Alignment
+
+特にイノベーションを推進する場合、ビジネス チームと技術チームの連携はソリューションの成功にとって最も重要です。
+
+- Microsoft では、ビジネスの利害関係者向けに、ビジネス戦略の開発をサポートし、ベスト プラクティスの例を提供する [Microsoft AI ビジネス スクール](https://www.microsoft.com/ai/ai-business-school)を作成しました。
+- 技術の利害関係者向けには、新しい AI スキルを身に付けることができる [Microsoft AI ラーニング パス](https://docs.microsoft.com/learn/)が用意されています。
 
 ## <a name="blockers"></a>問題点
 

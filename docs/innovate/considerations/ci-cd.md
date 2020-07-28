@@ -1,18 +1,18 @@
 ---
 title: デジタル発明で導入を強化する
-description: ベスト プラクティスを維持しつつ、イノベーションの方法論の成熟度モデルを使用して、導入を遅らせる障害を減らします。
+description: ベスト プラクティスを維持しつつ、イノベーションの方法論の成熟度モデルを使用して、導入を遅らせてしまう摩擦を減らします。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 54a2892ed657c08ee6c984798a61c1ff10716257
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6b0aebc9c565cb60a83d5b4b0cfc3054d79b7ed1
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219752"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478839"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -22,11 +22,11 @@ ms.locfileid: "83219752"
 
 ## <a name="reduce-friction-that-affects-adoption"></a>導入に影響する摩擦の軽減
 
-テクノロジとプロセスを組み合わせることによって最小限に抑えることができる、導入に対する重要な摩擦ポイントがいくつかあります。 継続的インテグレーション (CI) と継続的デプロイ (CD) または DevOps プロセスの知識がある読者の場合、以下の内容について理解していると思われるかもしれません。 この記事では、クラウド導入チームのために出発点を確立します。これにより、イノベーションとフィードバック ループが促進されます。 今後は、この出発点は、製品やチームが成熟するにつれて、より堅牢な CI/CD または DevOps アプローチに発展する可能性があります。
+導入において問題になる摩擦のポイントはいくつかあります。それらは、テクノロジとプロセスを組み合わせることによって、最小限に抑えることができます。 継続的インテグレーション (CI) と継続的デプロイ (CD) または DevOps プロセスの知識がある読者の場合、以下の内容について理解していると思われるかもしれません。 この記事では、クラウド導入チームのために出発点を確立します。これにより、イノベーションとフィードバック ループが促進されます。 今後は、この出発点は、製品やチームが成熟するにつれて、より堅牢な CI/CD または DevOps アプローチに発展する可能性があります。
 
 「[顧客への影響を測定する](./measure.md)」で説明するように、仮説の有益な検証には反復と決断が必要になります。 イノベーション サイクル中は、成功よりも失敗の方がはるかに多いでしょう。 これは予期されることです。 ただし、顧客のニーズ、仮説、ソリューションを大規模に調整すると、世界はすぐに変わります。 この記事は、イノベーションを失速させる[技術的スパイク](./build.md#reduce-complexity-and-delay-technical-spikes)を最小限に抑えながら、信頼性の高いベスト プラクティスを維持できるようにすることを目的としています。 これにより、チームは顧客の現在のニーズに対応しながら、将来の成功に向けて設計を行うことができます。
 
-## <a name="empower-adoption-the-maturity-model"></a>導入の強化: 成熟度モデル
+## <a name="empower-adoption-the-maturity-model"></a>導入の強化:成熟度モデル
 
 [イノベーションの方法論](./index.md)の主な目的は、顧客パートナーシップを構築し、フィードバック ループを加速させることです。これにより、市場のイノベーションが実現します。 次の図および以降のセクションでは、この方法論をサポートする初期実装について説明しています。
 
@@ -47,7 +47,7 @@ ms.locfileid: "83219752"
 
 イノベーションをスケーリングする場合、ソリューションの共有コード ベースほど有益なツールはありません。 残念ながら、どの反復または MVP の組み合わせが成功につながるのかを確実に予測する方法はありません。 このため、共有コード ベースまたはリポジトリはいつ確立しても早すぎるということはありません。 これは、遅滞すべきでない[技術的スパイク](./build.md#reduce-complexity-and-delay-technical-spikes)の 1 つです。 チームはさまざまな MVP ソリューションを反復するため、共有リポジトリによって共同作業がしやすくなり、迅速な開発が可能になります。 ソリューションの変更が学習メトリックに悪影響を及ぼす場合は、バージョン コントロールを使用して、以前のより効果的なバージョンのソリューションにロールバックできます。
 
-コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。これを使うと、いくつかの手順を実行するだけで共有コード リポジトリを作成できます。 また、Azure DevOps の [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 機能を使用して、[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) または [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) リポジトリを作成することもできます。
+コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。これを使うと、いくつかの手順を実行するだけで共有コード リポジトリを作成できます。 また、Azure DevOps の [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 機能を使用して、[Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) または [TFVC](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) リポジトリを作成することもできます。
 
 ## <a name="feedback-loops"></a>フィードバック ループ
 
@@ -63,8 +63,7 @@ ms.locfileid: "83219752"
 
 継続的インテグレーションでは、コードの変更がメイン ブランチに頻繁にマージされます。 自動化されたビルドおよびテスト プロセスにより、メイン ブランチのコードが常に運用品質であることが確認されます。 これにより、開発者が協力して、正確で信頼性の高いフィードバック ループを提供する共有ソリューションを開発できるようになります。
 
-Azure DevOps と [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) では、GitHub やその他のさまざまなリポジトリでいくつかの手順を実行するだけで継続的インテグレーション機能が提供されます。
-継続的インテグレーションの詳細については、[こちら](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)をご覧ください。または、[ハンズオン ラボ](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration)で詳細を確認してください。 [Azure DevOps を使用した CI/CD パイプライン](https://azure.microsoft.com/solutions/devops)の作成を高速化する、ソリューション アーキテクチャも提供されています。
+Azure DevOps と [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) では、GitHub やその他のさまざまなリポジトリでいくつかの手順を実行するだけで継続的インテグレーション機能が提供されます。 継続的インテグレーションの詳細については、[こちら](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)をご覧ください。または、[ハンズオン ラボ](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration)で詳細を確認してください。 [Azure DevOps 経由での CI/CD パイプライン](https://azure.microsoft.com/solutions/devops)の作成を高速化できるソリューション アーキテクチャが提供されています。
 
 ## <a name="reliable-testing"></a>信頼性の高いテスト
 

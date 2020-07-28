@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 257c02ae6ac6fcb878386ca64897ec44352b68ad
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 4830928bb0b7765ca05a11ceee7c859b2dc2608a
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373324"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478635"
 ---
 # <a name="prepare-for-customer-feedback"></a>カスタマー フィードバックの準備
 
@@ -25,7 +25,7 @@ ms.locfileid: "86373324"
 - **定量的 (テストからのフィードバック):** このフィードバックは、開発側が求めるアクションを評価します。
 - **定性的 (顧客からのフィードバック):** このフィードバックは、メトリックが意味することを顧客の声で伝えます。
 
-フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープン ソース ソフトウェアのホームです。 商用として開発されたアプリのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)の記事は、自分のリポジトリを開始する際に役立ちます。
+フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープン ソース ソフトウェアのホームです。 商用として開発されたアプリケーションのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)の記事は、自分のリポジトリを開始する際に役立ちます。
 
 Azure の次の各ツールは、GitHub でホストされているプロジェクトと統合されます (または互換性があります)。
 
@@ -54,7 +54,7 @@ Application Insights は、アプリケーションの使用状況に関する�
 
 ::: zone target="docs"
 
-アプリに関するデータを表示するには、[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents) に移動します。
+アプリケーションに関するデータを表示するには、[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents) に移動します。
 
 ::: zone-end
 
@@ -68,7 +68,7 @@ Application Insights は、アプリケーションの使用状況に関する�
 
 Connected Economy (つながる経済) が企業のイノベーションのあり方を変えつつあります。 市場や業界の混乱がこれまでになく加速しています。 混乱の形態はさまざまです。企業は、進行中のビジネス活動でつまずくことなく、変革をどのように先導するかという "_イノベーターのジレンマ_" に取り組まなければなりません。
 
-社外的には、企業は API を使用して顧客やパートナーとやり取りする方法を変えています。 社内的には、API を使用して、ビジネスの個々の部分をシームレスにつないでいます。 API 経済は、ソーシャル、モバイル、分析、クラウドという 4 つの構成要素で機能します。 短期間かつ費用効果の高い方法でアプリやサービスをつなぎ、価値提案を拡張します。
+社外的には、企業は API を使用して顧客やパートナーとやり取りする方法を変えています。 社内的には、API を使用して、ビジネスの個々の部分をシームレスにつないでいます。 API 経済は、ソーシャル、モバイル、分析、クラウドという 4 つの構成要素で機能します。 迅速かつ費用対効果の高い方法でアプリケーションやサービスをつなぎ、価値提案を拡大します。
 
 <!-- markdownlint-disable MD024 -->
 
@@ -90,7 +90,7 @@ API の定量的データを表示するには:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService]" submitText="Go to API Management services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService]" submitText="Go to API Management Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -114,7 +114,7 @@ API Management サービスを開くには、[Azure portal](https://portal.azure
 
 ### <a name="action"></a>アクション
 
-Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops) を使用して開始してください。
+Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops) を使用して開始してください。
 
 ::: zone-end
 
@@ -153,7 +153,7 @@ DevOps プロジェクトを作成するには:
 
 1. **[App Service]** に移動します。
 2. 一覧から目的のアプリケーションを選択します。
-3. [App Services] ペインの **[デプロイ]** セクションで、 **[デプロイ センター]** を選択します。
+3. **[App Services]** ペインの **[デプロイ]** セクションで、 **[デプロイ センター]** を選択します。
 
 ::: zone target="chromeless"
 
@@ -176,4 +176,4 @@ App Service でアプリケーションを表示するには、[Azure portal](ht
 デプロイ パイプラインの構築を始める際には、次の記事をご覧ください。
 
 - [最初のパイプラインを作成する](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2)
-- [GitHub リリース タスク](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)
+- [`GitHub Release` タスク](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 7008ba1cb2efbf154324598dc73f32fdbefff5bf
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 5cbb5e5cb68a8dd55beb13800a3d03a7d722b2fc
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812929"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450375"
 ---
 <!-- cSpell:ignore PDU -->
 
@@ -39,7 +39,7 @@ Azure は、Microsoft のパブリック クラウド プラットフォーム�
 
 たとえば、フロントエンドは、顧客の要求を処理するサービスをホストして、Azure リソース (たとえば、[仮想マシン](https://docs.microsoft.com/azure/virtual-machines)、[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) などのサービス) を割り当てます。 最初に、フロント エンドはユーザーを検証して、要求されたリソースを割り当てる権限がそのユーザーにあることを確認します。 権限がある場合、フロント エンドはデータベースを確認して十分な容量のあるサーバー ラックを検出し、そのラックのファブリック コントローラーにリソースを割り当てるよう命令します。
 
-そのため基本的に、Azure は膨大なサーバーおよびネットワーク ハードウェアのコレクションであり、これは、これらのサーバー上にある仮想化されたハードウェアおよびソフトウェアの構成および操作をうまく調整する分散アプリケーションの複雑なセットを実行します。 Azure を強化しているのは、この調整機能です。Azure がバックグラウンドでハードウェアの保守やアップグレードをすべて行うので、ユーザーは、これらを担う必要がなくなりました。
+そのため基本的に、Azure は膨大なサーバーおよびネットワーク ハードウェアのコレクションであり、これは、これらのサーバー上にある仮想化されたハードウェアおよびソフトウェアの構成および操作をうまく調整する分散アプリケーションの複雑なセットを実行します。 Azure が非常に強力なのは、この調整機能があるからです。なぜなら、ユーザーがハードウェアの保守やアップグレードを行う必要がなくなり、そのすべてが Azure によってバックグラウンドで実行されるためです。
 
 ## <a name="next-steps"></a>次のステップ
 

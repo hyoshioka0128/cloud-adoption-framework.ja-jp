@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 98a772a2c20aba6689ec66593bd15571c74cec33
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 0ac9256adda2b310592d69685a183b790790228a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373273"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449015"
 ---
 # <a name="democratize-data"></a>データの民主化
 
@@ -44,9 +44,9 @@ Azure Data Catalog は、データ コンシューマーによるデータ検出
 
 #### <a name="action"></a>アクション
 
-Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織のデータ カタログが既に作成されている場合、カタログを追加することはできません。
+Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織のカタログが既に作成されている場合、カタログを追加することはできません。
 
-組織の Azure Data Catalog を作成するには、次の手順に従います。
+組織のカタログを作成するには:
 
 1. **[Azure Data Catalog]** に移動します。
 2. **［作成］** を選択します
@@ -73,6 +73,7 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 > - データ共有に受信者を追加する。
 
 ::: zone target="docs"
+
 **[Azure Data Share のドキュメント](https://docs.microsoft.com/azure/data-share)に移動する**
 
 ::: zone-end

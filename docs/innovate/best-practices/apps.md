@@ -1,24 +1,24 @@
 ---
-title: アプリを使用して連携するためのイノベーション ツール
-description: クラウド導入フレームワークのイノベーションの方法論に合致したアプリの開発を促進する Azure ツールについて説明します。
+title: アプリケーションを使用して連携するためのイノベーション ツール
+description: クラウド導入フレームワークのイノベーションの方法論に合致したアプリケーションの開発を促進する Azure ツールについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe217a1fb6379522d8afccc9640bdd32409eb1cd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b92edee6919eebc9371e2f018e0bd2422634ca74
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219820"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449848"
 ---
-# <a name="tools-to-engage-via-apps-in-azure"></a>Azure のアプリを使用して連携するためのツール
+# <a name="tools-to-engage-via-applications-in-azure"></a>Azure でアプリケーションを使用して連携するためのツール
 
-[アプリを使用した連携](../considerations/apps.md)に関するページで説明されているように、アプリケーションは MVP ソリューションの重要な側面になることがあります。 多くの場合、アプリケーションは、仮説をテストするために必要です。 この記事は、それらのアプリケーションの開発を加速させるために、Azure が提供するツールを理解するために役立ちます。
+[アプリケーションを使用した連携](../considerations/apps.md)に関するページで説明されているように、アプリケーションは MVP ソリューションの重要な側面になることがあります。 多くの場合、アプリケーションは、仮説をテストするために必要です。 この記事は、それらのアプリケーションの開発を加速させるために、Azure が提供するツールを理解するために役立ちます。
 
-![アプリを使用して連携するためのクラウド導入フレームワーク アプローチ](../../_images/innovate/engage-via-apps.png)
+![アプリケーションを使用して連携するためのクラウド導入フレームワークのアプローチ](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="alignment-to-the-methodology"></a>方法論に足並みを揃える
 
@@ -42,8 +42,8 @@ ms.locfileid: "83219820"
 - Azure Kubernetes Service (AKS)
 - Azure Migrate
 - Azure Stack
-- PowerApps
-- Microsoft Flow
+- Power Apps
+- Power Automate
 - Power BI
 
 ## <a name="get-started"></a>はじめに

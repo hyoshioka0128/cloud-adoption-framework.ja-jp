@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 222008cde15fdd0aef0a46ac3937fadade7e6cc9
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 4e97a1140d80a201489e86b5652a15b11b508e60
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076729"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479876"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
 # <a name="perimeter-networks"></a>境界ネットワーク
 
-[境界ネットワーク][perimeter-network]により、クラウド ネットワークと物理的なオンプレミスのデータセンターのネットワークの間で安全な接続が可能になり、また、インターネットの双方向接続も可能になります。 これは非武装地帯 (DMZ) とも呼ばれています。
+[境界ネットワーク][perimeter-network]により、クラウド ネットワークと物理的なオンプレミスのデータセンターのネットワークの間で安全な接続が可能になり、また、インターネットの双方向接続も可能になります。 境界ネットワークは、スクリーン サブネットまたは DMZ と呼ばれることもあります。
 
 境界ネットワークを有効にするには、受信パケットは、バック エンド サーバーに到達する前に、セキュア サブネットでホストされているセキュリティ アプライアンスを通過する必要があります。 例としては、ファイアウォール、侵入検出システム、侵入防止システムなどがあります。 ワークロードからインターネットへのパケットも、ネットワークから送信される前に、境界ネットワーク内のセキュリティ アプライアンスを通過する必要があります。 このフローは、ポリシーの適用、検査、監査を目的としています。
 
@@ -37,12 +37,13 @@ ms.locfileid: "85076729"
 > [!NOTE]
 > Azure の参照アーキテクチャには、独自の境界ネットワークを実装するために使用できるサンプル テンプレートが含まれています。
 >
-> - [Azure とオンプレミス データセンター間に DMZ を実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
-> - [Azure とインターネットの間に DMZ を実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+> - [Azure とオンプレミス データセンター間に境界ネットワークを実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+> - [Azure とインターネット間に境界ネットワークを実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
 通常、中央 IT チームとセキュリティ チームは、境界ネットワークを運用するための要件定義を担当します。
 
 ![ハブ アンド スポーク ネットワーク トポロジの例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
+_図 1:ハブ アンド スポーク ネットワーク トポロジの例_
 
 上の図では、インターネットとオンプレミス ネットワークにアクセスする 2 つの境界の適用を実装する[ハブ アンド スポーク ネットワーク](./hub-spoke-network-topology.md)の例が示されています。 どちらの境界も DMZ ハブに存在します。 DMZ ハブでは、WAF と Azure Firewall インスタンスからなるファームを複数利用してスポーク仮想ネットワークを保護すると、多数の基幹業務をサポートするよう、インターネットへの境界ネットワークをスケールアップできます。 ハブは、必要に応じて VPN または Azure ExpressRoute 経由で接続することもできます。
 
@@ -106,7 +107,7 @@ Azure の一部の機能を使用して、インターネットからリソー�
 
 [Azure DDoS Protection Standard][DDoS] は、[Basic サービス][DDoS] レベルに加えて、特に Azure Virtual Network リソースに対してチューニングされた追加の軽減機能を提供します。 DDoS Protection Standard の有効化は簡単であり、アプリケーションの変更は不要です。
 
-保護ポリシーは、専用のトラフィック監視や機械学習アルゴリズムによってチューニングできます。 ポリシーは、仮想ネットワークにデプロイされたリソースに関連付けられているパブリック IP アドレスに適用されます。 リソースの例として、Azure Load Balancer、Azure Application Gateway、Azure Service Fabric のインスタンスがあります。
+保護ポリシーは、専用のトラフィック監視や機械学習アルゴリズムによってチューニングできます。 ポリシーは、仮想ネットワークにデプロイされたリソースに関連付けられているパブリック IP アドレスに適用されます。 例として、Azure Load Balancer、Application Gateway、および Service Fabric のインスタンスがあります。
 
 攻撃中および履歴目的の両方で使用するために、Azure Monitor ビューからリアルタイムのテレメトリを使用できます。 アプリケーション層の保護は、Azure Application Gateway の Web アプリケーション ファイアウォールを使用することによって追加できます。 IPv4 の Azure パブリック IP アドレスに対して保護が提供されます。
 

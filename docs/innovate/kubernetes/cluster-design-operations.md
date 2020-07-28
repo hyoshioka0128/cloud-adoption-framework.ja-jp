@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c13936beacf44700078fad59bd93f7754d8ddd99
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 6745e271700280b87800fbb76d603242bf561b19
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861771"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448760"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -37,7 +37,7 @@ ms.locfileid: "83861771"
 >
 > | チェック リスト  | リソース |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **ネットワーク設計に関する考慮事項を特定する。** クラスター ネットワークの設計上の考慮事項を理解して、ネットワーク モデルを比較し、ニーズに合った Kubernetes ネットワーク プラグインを選択します。    | [Kubernet と Azure Container Network Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br> [Azure Kubernetes Service (AKS) の独自の IP アドレス範囲で kubenet ネットワークを使用する](https://docs.microsoft.com/azure/aks/configure-kubenet) <br> [Azure Kubernetes Service (AKS) で Azure CNI ネットワークを構成する](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br> [AKS クラスターのセキュリティで保護されたネットワーク設計](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
+> | **ネットワーク設計に関する考慮事項を特定する。** クラスター ネットワークの設計上の考慮事項を理解して、ネットワーク モデルを比較し、ニーズに合った Kubernetes ネットワーク プラグインを選択します。    | [Kubernet と Azure Container Networking Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br> [Azure Kubernetes Service (AKS) の独自の IP アドレス範囲で kubenet ネットワークを使用する](https://docs.microsoft.com/azure/aks/configure-kubenet) <br> [Azure Kubernetes Service (AKS) で Azure CNI ネットワークを構成する](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br> [AKS クラスターのセキュリティで保護されたネットワーク設計](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
 > | **複数のノード プールを作成する。** コンピューティングまたはストレージのさまざまな要件があるアプリケーションをサポートするには、必要に応じて複数のノード プールでクラスターを構成します。 たとえば、追加のノード プールを使用して、コンピューティング集中型アプリケーションに GPU を提供したり、高パフォーマンスな SSD ストレージにアクセスを提供したりします。   | [Azure Kubernetes Service のクラスターで複数のノード プールを作成および管理する](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
 > | **可用性の要件を決定する。** アプリケーションにより高いレベルの可用性を提供するために、クラスターは可用性ゾーンにまたがって分散させることができます。 これらのゾーンは、特定のリージョン内の物理的に分離されたデータセンターです。 クラスター コンポーネントが複数のゾーンに分散されている場合、クラスターは、それらのゾーンのいずれかで障害が発生しても許容できます。 アプリケーションと管理操作は、1 つのデータセンター全体に問題がある場合でも継続して利用できます。   | [可用性ゾーンを使用する Azure Kubernetes Service (AKS) クラスターを作成する](https://docs.microsoft.com/azure/aks/availability-zones) |
 

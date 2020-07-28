@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 919291ade8c760429eb5df4d848f745014912eb6
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 4af9516fe50068a76c4b85ae64bbb907410ee7ab
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861992"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448811"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 

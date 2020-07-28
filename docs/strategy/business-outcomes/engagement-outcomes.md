@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 309132227df915f6673d1d5509a64f9d796af40c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b778ec6d71797d272155b1c72f82a0d50fd5a928
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218902"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450647"
 ---
 <!-- cSpell:ignore ExakTime -->
 
@@ -45,6 +45,12 @@ ms.locfileid: "83218902"
 > ソフトウェア開発担当副社長
 >
 > ExakTime 社
+
+## <a name="intelligent-contact-center"></a>インテリジェントなコンタクト センター
+
+お客様の満足度とエクスペリエンスは、成功する組織の中核にあります。 従業員が使える時間を増やし、より優れたカスタマー サービスに専念できるようにすると、お客様の忠誠心と定着率の向上に向けて取り組むことができるようになります。 現在利用できる AI テクノロジを使用すると、お客様の問い合わせを受けているときの多くの手順を自動化することができます。これにより、コンタクト センター エージェントはより優れたカスタマー サービスの提供に専念できるようになります。
+
+- **例:** ある保険会社は、Azure Bot Service ソリューションを構築して、Web サイトとモバイル アプリを通じてお客様の要求に迅速に対応できるデジタル エージェントを実装しました。 この保険会社は、強化されたカスタマー サービス エクスペリエンスをコンタクト センターにまで拡張し、ライブ通話の文字起こし、センチメント分析、キーフレーズ検出を実装して、コンタクト センター エージェントが次の推奨手順とフォーム処理を行えるようにしました。 その結果、お客様がコンタクト センターに電話をかける回数が減り、コンタクト センター エージェントは、管理や運用の作業を完了することではなく、優れたカスタマー エクスペリエンスを提供することに専念できるようになりました。
 
 ## <a name="next-steps"></a>次のステップ
 

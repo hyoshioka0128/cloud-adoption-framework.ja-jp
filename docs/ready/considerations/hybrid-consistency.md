@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 029c9a60887587188d04f60bb6f80232951711ee
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 9d0817b209dd8916fcef01e40ab5c429fdb8a531
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195056"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479706"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -70,4 +70,4 @@ Azure Stack には 2 つのデプロイ オプションが用意されていま�
 - Azure では、Azure の認定を受けているアプリケーションとサービスの多くが、Azure Stack で動作することが保証されています。 複数の ISV が、Azure Stack に向けて自社のソリューションを拡張しています。 ISV として、Bitnami、Docker、Kemp Technologies、Pivotal Cloud Foundry、Red Hat Enterprise Linux、SUSE Linux などが挙げられます。
 - Azure Stack は、フル マネージド サービスとして配信および運用することを選択できます。 間もなく、いくつかのパートナーから、Azure と Azure Stack にまたがるマネージド サービスのオファリングが提供される予定です。 パートナーとして、Tieto、Yourhosting、Revera、Pulsant、NTT などが挙げられます。 これらのパートナーにより、クラウド ソリューション プロバイダー (CSP) プログラムから Azure 用のマネージド サービスが提供されます。 ハイブリッド ソリューションを含むようにオファリングが拡張されています。
 - 完全なフル マネージド ハイブリッド クラウド ソリューションの 1 例が Avanade で、オールインワンのオファーが提供されます。 オファーには、クラウド変換サービス、ソフトウェア、インフラストラクチャ、設定と構成、継続的なマネージド サービスが含まれます。 これにより、お客様は、現在 Azure を利用しているのとまったく同じように Azure Stack を利用できます。
-- プロバイダーは、お客様のためにエンドツーエンドの Azure ソリューションを構築して、アプリケーション最新化の取り組みを推進することに貢献できます。 詳細な Azure のスキル セット、領域と業界の知識、DevOps などのプロセスの専門知識をもたらします。 プロバイダーにとっては、すべての Azure Stack クラウドが、ソリューションを設計し、システムのデプロイを先導して影響を与える機会となります。 プロバイダーは、含まれる機能をカスタマイズして運用作業を提供することもできます。 プロバイダーの例として、Avanade、DXC、Dell EMC Services、InFront Consulting Group、HPE Pointnext、PwC (旧称 PricewaterhouseCoopers) などが挙げられます。
+- プロバイダーは、お客様のためにエンドツーエンドの Azure ソリューションを構築して、アプリケーション最新化の取り組みを推進することに貢献できます。 各プロバイダーは、詳細な Azure のスキル セット、領域と業界の知識、DevOps などのプロセスの専門知識を提供します。 すべての Azure Stack の実装が、プロバイダーがソリューションを設計し、システムのデプロイを先導して影響を与える機会となります。 プロバイダーは、含まれる機能をカスタマイズして運用作業を提供することもできます。 プロバイダーの例として、Avanade、DXC、Dell EMC Services、InFront Consulting Group、HPE Pointnext、PwC (旧称 PricewaterhouseCoopers) などが挙げられます。

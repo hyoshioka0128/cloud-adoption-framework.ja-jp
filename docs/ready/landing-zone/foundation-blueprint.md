@@ -7,16 +7,16 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 672feabf0bb15d47ffdedbe85279bb7ff9228172
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ea53df3a8d349299e08ecc0681b4dd24dc71336a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075905"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448216"
 ---
 <!-- docsTest:ignore "CAF Foundation blueprint" -->
 
-# <a name="deploy-a-caf-foundation-blueprint"></a>CAF 基盤ブループリントをデプロイする
+# <a name="deploy-a-caf-foundation-blueprint-in-azure"></a>Azure に CAF 基盤ブループリントをデプロイする
 
 CAF 基盤ブループリントでは、ランディング ゾーンはデプロイされません。 代わりに、ガバナンス規範の開発を始めるためのガバナンス MVP (実用最小限の製品) の確立に必要なツールがデプロイされます。 このブループリントは、既存のランディング ゾーンに追加するように設計されており、1 回の操作で CAF 移行ランディング ゾーンのブループリントに適用できます。
 
@@ -33,7 +33,7 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 
 ### <a name="deployment-options"></a>デプロイ オプション
 
-この実装オプションでは、ガバナンス規範の基盤として機能する "_実用最小限の製品 (MVP)_ " がデプロイされます。 チームは、モジュール化されたリファクタリングベースのアプローチに従い、[ガバナンス手法](../../govern/index.md)を使用してガバナンス規範を成熟させます。
+この実装オプションでは、ガバナンス規範の基盤として機能する MVP がデプロイされます。 チームは、モジュール化されたリファクタリングベースのアプローチに従い、[ガバナンス手法](../../govern/index.md)を使用してガバナンス規範を成熟させます。
 
 ### <a name="enterprise-enrollment"></a>エンタープライズ登録
 
@@ -55,7 +55,7 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 
 この比較を導入サイクルの早い段階で支援するには、次の記事を検討する必要があります。
 
-- [Azure の初期サブスクリプション](../azure-best-practices/initial-subscriptions.md): 導入規模のこの段階では、運用モデルに必要なサブスクリプションは 2、3、4 つのいずれですか。
+- [Azure の初期サブスクリプション](../azure-best-practices/initial-subscriptions.md): 導入規模のこの段階で、運用モデルに必要なサブスクリプション数は 2 つ、3 つ、4 つのいずれですか。
 - [サブスクリプションのスケーリング](../azure-best-practices/scale-subscriptions.md): 導入の規模に応じて、サブスクリプションのスケーリングを促進するためにどのような基準が使用されますか。
 - [サブスクリプションの整理](../azure-best-practices/organize-subscriptions.md): スケーリングしたサブスクリプションをどのように整理しますか。
 - [タグ付けの標準](../azure-best-practices/naming-and-tagging.md#metadata-tags): サブスクリプションの設計を強化するために、タグで一貫してキャプチャする必要があるその他の基準はありますか。

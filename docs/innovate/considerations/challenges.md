@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4ad936390af2d1c869c424381b2f235ffb611a1c
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: dc11bbcedbfa346c0bc08d46d88da101a6a34e67
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993881"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449389"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>イノベーションに関する一般的な阻害要因と課題
 
@@ -58,7 +58,7 @@ ms.locfileid: "84993881"
 
 ## <a name="next-steps"></a>次のステップ
 
-構築-計測-学習モデルと成長思考について学んだ知識に基づいて、[イノベーションの方法論](./index.md)に沿って[デジタル発明を開発する](./invention.md)準備ができました。
+構築-計測-学習モデルと成長思考について学んだ知識を利用し、[イノベーションの方法論](./index.md)に沿って[デジタル発明を開発する](./invention.md)準備ができました。
 
 > [!div class="nextstepaction"]
 > [デジタル発明を開発する](./invention.md)

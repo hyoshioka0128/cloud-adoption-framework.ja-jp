@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a1b1838617c9d82c4e8cca239aa4abc9d853f3c
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 1e5105a9296ec3059c979bb0a7adc3b46aa99998
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799961"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479927"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Azure の初期サブスクリプションを作成する
 
@@ -26,6 +26,7 @@ ms.locfileid: "84799961"
 - より低価格の [Azure Dev/Test オファー](https://azure.microsoft.com/pricing/dev-test)を使用して、非運用 (開発/テスト) 環境として機能する 2 つ目のサブスクリプションを作成します。
 
 !["運用" と "非運用" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model.png)
+_図 1:"運用" と "非運用" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル_
 
 <!-- docsTest:ignore Dev/Test -->
 
@@ -43,12 +44,14 @@ ms.locfileid: "84799961"
 イノベーションに関する目標がクラウド導入戦略の一部となっている場合は、1 つ以上のサンドボックス サブスクリプションを作成することを検討してください。 セキュリティ ポリシーを適用して、これらのテスト サブスクリプションを運用環境および非運用環境から分離できます。 ユーザーは、これらの分離された環境で Azure の機能を簡単に試すことができます。 Azure Dev/Test オファーを使用して、これらのサブスクリプションを作成します。
 
 !["運用"、"非運用"、"サンドボックス" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model-with-sandboxes.png)
+_図 2:サンドボックス サブスクリプション付きサブスクリプション モデル_
 
 ## <a name="shared-services-subscription"></a>共有サービス サブスクリプション
 
 **24 か月以内にクラウドで 1,000 を超える VM またはコンピューティング インスタンス**をホストすることを計画している場合は、共有サービスをホストするために別の Azure サブスクリプションを作成してください。 これにより、最終状態のエンタープライズ アーキテクチャをサポートできる状態になります。
 
 !["運用" と "共有サービス" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model-with-shared-services.png)
+_図 3:共有サービス付きサブスクリプション モデル_
 
 ## <a name="next-steps"></a>次のステップ
 

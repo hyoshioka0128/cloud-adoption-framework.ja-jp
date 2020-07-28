@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a84856d4b734ba29333a03d476eafa05420eceb5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7a2a2684eb0b23c4a2f0c9b93665de1c52442050
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194563"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450936"
 ---
 # <a name="multiple-datacenters"></a>複数のデータセンター
 
@@ -39,13 +39,16 @@ ms.locfileid: "86194563"
 **データセンター間の依存関係の評価:** [Azure Migrate の依存関係視覚化ツール](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)は、依存関係の特定を支援できます。 通常、移行前にこのツールセットを使用するのがベスト プラクティスです。 ただし、グローバルな複雑さに対処する場合、これは評価プロセスで必要な手順になります。 [依存関係のグループ化](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)による視覚化は、ワークロードをサポートするために必要な資産の IP アドレスとポートを特定することを支援できます。
 
 > [!IMPORTANT]
-> 2 つの重要な注意点: まず、資産の配置と IP アドレス スキーマを理解している該当分野の専門家が、セカンダリ データセンターに存在している資産を識別する必要があります。 次に、視覚化された下流方向の依存関係とクライアントの両方を評価して、双方向の依存関係を理解することが重要です。
+>
+> - 資産の配置と IP アドレス スキーマを理解している該当分野の専門家が、セカンダリ データセンターに存在している資産を識別する必要があります。
+> - 視覚化された下流方向の依存関係とクライアントの両方を評価して、双方向の依存関係を理解します。
 
-## <a name="migrate-process-changes"></a>移行プロセスの変更
+
+## <a name="migration-process-changes"></a>移行プロセスの変更
 
 複数のデータセンターの移行は、データセンターの統合に似ています。 移行後は、クラウドが複数の資産の唯一のデータセンターになります。 移行プロセス中に発生する可能性がある範囲の拡大は、IP アドレスの検証と調整です。
 
-### <a name="suggested-action-during-the-migrate-process"></a>移行プロセスで推奨されるアクション
+### <a name="suggested-action-during-the-migration-process"></a>移行プロセス中に推奨されるアクション
 
 クラウドへの移行の成功に大きく影響するアクティビティは次のとおりです。
 

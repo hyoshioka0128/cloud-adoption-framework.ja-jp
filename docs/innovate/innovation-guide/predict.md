@@ -1,62 +1,110 @@
 ---
-title: Azure イノベーション:予測と影響
-description: お客様のニーズを予測し、お客様の行動に影響を与えるために予測をソリューションに統合するための Azure ソリューションについて説明します。
+title: Azure イノベーション:AI によるイノベーション
+description: お客様のニーズを予測し、ビジネス プロセスを自動化し、非構造化データに潜む情報を発見し、より優れたエクスペリエンスを提供する新しい方法でお客様と関わり合うための Azure ソリューションについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/17/2019
+ms.date: 06/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 97008960de4eecb7ff0dc4f756ad4ca11865c634
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 74db213a6d03eaf3df75f8eed88260bb1e457cee
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224053"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448862"
 ---
+<!-- cSpell:ignore ONNX -->
+
 ::: zone target="docs"
 
-# <a name="azure-innovation-guide-predict-and-influence"></a>Azure イノベーション ガイド:予測と影響
+# <a name="azure-innovation-guide-innovate-with-ai"></a>Azure イノベーション ガイド:AI によるイノベーション
 
 ::: zone-end
 
 ::: zone target="chromeless"
 
-# <a name="predict-and-influence"></a>予測と影響
+# <a name="innovate-with-ai"></a>AI によるイノベーション
 
 ::: zone-end
 
-イノベーターとして、会社には、顧客ベースのデータ、行動、ニーズに関する分析情報があります。 それらの分析情報を研究することで、場合によっては顧客自身がニーズを認識する前に、顧客のニーズを予測できます。 この記事では、予測ソリューションを提供するアプローチをいくつか紹介します。 最後のセクションでは、顧客の行動に影響を与えるために、予測をソリューションに統合するアプローチについて説明します。
+会社には、イノベーターとしてビジネスとお客様に関する豊富な情報があります。 会社で AI を使用すると、お客様のニーズを予測し、ビジネス プロセスを自動化し、非構造化データに潜む情報を発見し、より優れたエクスペリエンスを提供する新しい方法でお客様と関わり合うことができます。 この記事では、AI を使用した革新的なアプローチをいくつか紹介します。 次の表は、実装のニーズに基づいて最適なソリューションを見つけるうえで役立ちます。
 
-次の表は、実装のニーズに基づいて最適なソリューションを見つけるうえで役立ちます。
+| ソリューションのカテゴリ | 説明                                                                                                                              | 必要なスキル              |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| 機械学習            | **Azure Machine Learning** <br> 独自の機械学習モデルを構築、デプロイ、管理します。                                                       | データ サイエンティストと開発者 |
+| AI アプリケーションとエージェント             | **Azure Cognitive Services** <br> データを使用してカスタマイズできるビジョン、音声、言語、および意思決定にドメイン固有の AI モデルを使用します。 <br><br> **Azure Bot Service** <br> アプリケーションや Web サイトにボットを追加して、顧客エンゲージメントを向上させます。 | Developer                    |
+| ナレッジ マイニング            | **Azure Cognitive Search** <br> ドキュメント、契約、画像、その他のデータの種類を含め、コンテンツに潜む分析情報を明らかにします。      | Developer                    |
 
-| サービス | 事前構築済みのモデル | ビルドと実験 | Python でのトレーニングと構築 | 必要なスキル |
-|---|---|---|---|---|
-| Azure Cognitive Services | はい | いいえ | いいえ | API と開発者のスキル |
-| Azure Machine Learning Studio | はい | はい | いいえ | 予測アルゴリズムに関する一般的な知識 |
-| Azure Machine Learning サービス | はい | はい | はい | データ サイエンティスト |
+## <a name="machine-learning"></a>[機械学習](#tab/MachineLearning)
 
-## <a name="azure-cognitive-services"></a>[Azure Cognitive Services](#tab/CognitiveServices)
+Azure には高度な機械学習機能が用意されています。 Azure Machine Learning を使用すると、クラウドとエッジ全体で機械学習モデルをすばやく簡単に構築、トレーニング、デプロイすることができます。 自動機械学習を使用すると、モデルをより短時間で開発できます。 拘束されることなく、任意のツールとフレームワークを使用できます。
 
-顧客のニーズを最も迅速かつ簡単に予測できるのは、Azure Cognitive Services です。 Cognitive Services を使用すると、追加でトレーニングを行う必要なく、既存のモデルを使用して予測を行うことができます。 これらのサービスは、予測モデルをトレーニングするデータ サイエンティストがスタッフにいない場合に最適かつ効果的です。 一部のサービスでは、トレーニングは不要です。 最小限のトレーニングのみを必要とするサービスもあります。
+Azure Machine Learning の概要については、[Azure Machine Learning の概要](https://docs.microsoft.com/azure/machine-learning/overview-what-is-azure-ml)と[初めての機械学習実験の概要](https://docs.microsoft.com/azure/machine-learning/tutorial-1st-experiment-sdk-setup)に関するページを参照してください。 機械学習のオープン ソース モデルの形式とランタイムの詳細については、[ONNX Runtime](http://onnxruntime.ai) のドキュメントを参照してください。
 
-利用可能なサービスと必要と考えられるトレーニングの量の一覧については、「[Cognitive Services と機械学習](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model)」をご覧ください。
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="action"></a>アクション
 
-Cognitive Services API を使用するには、次の手順に従います。
+データ サイエンティストは、Azure Machine Learning を使用すると、Python や R などの高度な言語を使用し、ドラッグアンドドロップのビジュアル エクスペリエンスも使用してモデルをトレーニングおよび構築することができます。 Azure Machine Learning の使用を開始するには:
 
-1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts) で **[Cognitive Services]** に移動します。
-2. **[追加]** を選択して、Azure Marketplace で Cognitive Service API を探します。
-3. 以下のいずれかを実行します。
-   - 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** ボックスに名前を入力します。
-   - Cognitive Services APIs の一覧については、Cognitive Services の見出しの横の **[もっと見る]** リンクを選択します。
+1. Azure portal で **Machine Learning** を検索して選択します。
+
+1. **[追加]** を選択し、ポータルの手順に従ってワークスペースを作成します。
+
+1. 新しいワークスペースには、データ サイエンティストがモデルのトレーニング、構築、デプロイ、管理に使用できるロー コード型とコード駆動型の両方のアプローチが用意されています。
 
 ::: zone target="chromeless"
 
+<!-- markdownlint-disable DOCSMD001 -->
+
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces]" submitText="Go to Azure Machine Learning resources" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
+
+::: zone-end
+
+::: zone target="docs"
+
+[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces) で Azure Machine Learning リソースに直接進みます。
+
+::: zone-end
+
+## <a name="ai-applications-and-agents"></a>[AI アプリケーションとエージェント](#tab/AIAppsAndAgents)
+
+Azure には Cognitive Services という一連の事前構築済み AI サービスが用意されており、AI アプリケーションを簡単に構築できます。 さらに、Azure にはボット サービスが用意されており、開発者はお客様と従業員のエンゲージメントを向上させる会話型 AI エージェントを構築することができます。
+
+### <a name="ai-applications"></a>AI アプリケーション
+
+Cognitive Services を使用すると、予測モデルに追加のトレーニングを実行することなく、ビジョン、音声、言語、および意思決定の AI 機能をアプリケーションに組み込むことができます。 これらのサービスは、予測モデルをトレーニングするデータ サイエンティストがスタッフにいない場合に最適かつ効果的です。 サービスによっては、トレーニングが不要な場合と、最小限のトレーニングのみを必要とする場合があります。
+
+ビジョン、音声、言語、意思決定全体で利用可能なサービスの一覧と、必要となる可能性のあるトレーニングの量については、[Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model) のドキュメントを参照してください。
+
+#### <a name="action"></a>アクション
+
+Cognitive Services API の使用を開始するには:
+
+1. Azure portal で、**Cognitive Services** を検索して選択します。
+
+1. **[追加]** を選択して、Azure Marketplace で Cognitive Service API を探します。
+
+1. サービスを検索して選択します。
+
+    - 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** に名前を入力し、サービスを選択します。
+
+    - Cognitive Services API の一覧については、 **[Cognitive Services]** 見出しの横にある **[さらに参照する]** を選択し、サービスを選択します。
+
+1. **[作成]** を選択し、ポータルの手順に従ってサービスをプロビジョニングします。
+
+::: zone target="chromeless"
+
+<!-- markdownlint-disable DOCSMD001 -->
+
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts]" submitText="Go to Cognitive Services" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
 
@@ -66,26 +114,27 @@ Cognitive Services API を使用するには、次の手順に従います。
 
 ::: zone-end
 
-## <a name="azure-machine-learning-studio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
+### <a name="ai-agents"></a>AI エージェント
 
-Cognitive Services 内の既存のモデルが目的の予測に合わない場合は、データ サイエンティストの高いスキルがなくても、Azure Machine Learning Studio を使用して目的の予測を構築できます。
+Bot Framework と Azure Bot Service を利用した会話エクスペリエンスを通じて、お客様とより自然に対話し、顧客エンゲージメントを向上させます。 さらに、Language Understanding (LUIS)、QnA Maker、音声サービスなどの Cognitive Services API を使用して、お客様が一般的なタスクを自力で実行できるようにすることで、コール センターのエージェントはより繊細で高い価値のケースに集中できるようになります。
 
-<!-- markdownlint-disable MD024 -->
+ボットの構築方法の詳細については、[Azure Bot Service](https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service/) のラーニング パスに関するページを参照してください。
 
-### <a name="action"></a>アクション
+#### <a name="action"></a>アクション
 
-Azure Machine Learning Studio で、次の手順に従ってモデルを作成し、モデルを試すことができます。
+Azure Bot Service の使用を開始するには:
 
-1. [Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces) で、**Azure Machine Learning Studio** に直接移動します。
-2. **[Create Machine Learning Studio Workspace]\(Machine Learning Studio ワークスペースの作成\)** を選択し、プロンプトに従ってワークスペースを作成します。
+1. Azure portal で、**Bot Services** を検索して選択します。
 
-   新しいワークスペースには、詳細なトレーニングの代わりに、モデルを作成して試すためのドラッグ アンド ドロップ インターフェイスが用意されています。
+1. **[追加]** を選択し、 **[Web アプリ ボット]** または **[ボット チャンネル登録]** を選択します。
+
+1. **[作成]** を選択し、ポータルの手順に従ってサービスをプロビジョニングします。
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces]" submitText="Go to Azure Machine Learning Studio" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.BotService%2FBotServices]" submitText="Go to Azure Bot Service" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -93,27 +142,33 @@ Azure Machine Learning Studio で、次の手順に従ってモデルを作成�
 
 ::: zone target="docs"
 
-[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces) で Azure Machine Learning Studio に直接進みます。
+[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.BotService%2FBotServices) で Azure Bot Service に直接進みます。
 
 ::: zone-end
 
-## <a name="azure-machine-learning-service"></a>[Azure Machine Learning サービス](#tab/MachineLearningService)
+## <a name="knowledge-mining"></a>[ナレッジ マイニング](#tab/KnowledgeMining)
 
-Azure Machine Learning service では、顧客データ セットのより詳細なトレーニングに必要となる、詳細なコードベースのアプローチが提供されます。 データ サイエンティストは、Python などの言語を使用して、顧客のニーズを予測するアルゴリズムをトレーニングおよび構築できます。
+Azure Cognitive Search を使用すると、ドキュメント、画像、メディアなどのコンテンツに潜む分析情報を明らかにすることができます。 AI 機能が組み込まれたこの唯一のクラウド検索サービスを使用すると、コンテンツのパターンとリレーションシップを発見し、センチメントを理解し、キーフレーズを抽出することができます。
+
+<!-- docsTest:ignore "Azure Search" -->
+
+Azure Cognitive Search (旧称 Azure Search) には、Bing と Microsoft Office に 10 年以上にわたって使用されてきたものと同じ統合された Microsoft 自然言語スタックと、ビジョン、言語、および音声を対象とする AI サービスが使用されています。 イノベーションに時間をかけ、複雑なクラウド検索ソリューションの保守にかける時間を減らすことができます。
+
+詳細については、「[Azure Cognitive Search とは](https://docs.microsoft.com/azure/search/search-what-is-azure-search)」を参照してください。
 
 ### <a name="action"></a>アクション
 
-データ サイエンティストは、Azure Machine Learning service を使用して、Python などの高度な言語でモデルをトレーニングおよび構築できます。
+Azure Cognitive Search の使用を開始するには:
 
-1. **[Azure Machine Learning service]** に移動します。
-2. **[Create Machine Learning service workspaces]\(Machine Learning service ワークスペースの作成\)** を選択し、プロンプトに従ってワークスペースを作成します。
-3. 新しいワークスペースでは、データ サイエンティストが、顧客のニーズを正確に予測するためにより高度な分析を必要とするモデルをトレーニングおよび構築するためのコード駆動型のアプローチが提供されます。
+1. Azure portal で、**Azure Cognitive Search** を検索して選択します。
+
+1. ポータルの手順に従ってサービスをプロビジョニングします。
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces]" submitText="Go to Azure Machine Learning service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Search%2FSearchServices]" submitText="Go to Azure Cognitive Search" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -121,12 +176,8 @@ Azure Machine Learning service では、顧客データ セットのより詳細
 
 ::: zone target="docs"
 
-[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces) で Azure Machine Learning Studio に直接進みます。
+[Azure portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Search%2FSearchServices) で Azure Cognitive Search に直接進みます。
 
 ::: zone-end
 
-## <a name="influence"></a>影響
-
-前述のどのアプローチでも、予測モデルをアプリケーションに公開する API が生成されます。 ソリューション内でいずれかのアプローチを使用して、顧客から収集したデータを予測 API に提供します。 その後、推奨される次の手順として、結果をカスタマー エクスペリエンスに統合できます。
-
-それらの手順では、顧客の行動パターンを形成し、顧客の反応に影響を与えることができます。 推奨される次の手順は予測アルゴリズムに基づいているため、顧客の以前のニーズと利用可能なデータを使って、多くの場合、顧客自身がニーズの存在を認識する前に、顧客の将来のニーズを予測し、そのニーズを満たします。
+---

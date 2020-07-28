@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 52131e3d5fd93eb48ee0cbc941f5cffe48375daf
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 659dad6ad975fc19272348c6b5c3f148ea9f527b
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191554"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478022"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -77,7 +77,7 @@ IT チームは、2 つのデータセンターを廃止する CIO と CFO の�
 
 新しいベスト プラクティスを以下に示します。
 
-- **セキュアなハイブリッド仮想ネットワークのブループリント:** ハイブリッド ネットワークのオンプレミス側を、次のソリューションとオンプレミスの Active Directory サーバー間の通信を許可するように構成する必要があります。 このベスト プラクティスでは、DMZ でネットワーク境界を越えて Active Directory Domain Services を有効にする必要があります。
+- **セキュアなハイブリッド仮想ネットワークのブループリント:** ハイブリッド ネットワークのオンプレミス側を、次のソリューションとオンプレミスの Active Directory サーバー間の通信を許可するように構成する必要があります。 このベスト プラクティスでは、ネットワークの境界を越えて Active Directory Domain Services を有効にする境界ネットワークが必要になります。
 - **Azure Resource Manager テンプレート:**
     1. 外部トラフィックをブロックし、内部トラフィックを許可するように NSG を定義します。
     2. ゴールデン イメージに基づき、負荷分散ペアの 2 つの Active Directory 仮想マシンをデプロイします。 最初の起動時に、そのイメージで PowerShell スクリプトが実行され、ドメインへの参加とドメイン サービスへの登録が行われます。 詳細については、「[Extend Active Directory Domain Services (AD DS) to Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)」 (Azure への Active Directory Domain Services (AD DS) の拡張) を参照してください。
