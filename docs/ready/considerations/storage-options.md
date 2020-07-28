@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1fe5e8efc4ea76a5716e671e3bf562de41db4f62
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 693e1f7e625cfd05ba28190ecd75afff39b3ddc3
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194818"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479502"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -117,13 +117,13 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 
 ## <a name="data-redundancy-and-availability"></a>データの冗長性と可用性
 
-Azure Storage には、ローカル冗長ストレージ (LRS)、ゾーン冗長ストレージ (ZRS)、geo 冗長ストレージ (GRS)、読み取りアクセス geo 冗長ストレージ (RA-GRS) など、顧客のニーズに基づいて持続性と高可用性を確保するために役立つさまざまな冗長性オプションがあります。
+Azure Storage には、ローカル冗長ストレージ、ゾーン冗長ストレージ、geo 冗長ストレージ (GRS)、読み取りアクセス GRS (RA-GRS) など、顧客のニーズに基づいて持続性と高可用性を確保するために役立つさまざまな冗長性オプションがあります。
 
 これらの機能や、ユース ケースに最適な冗長性オプションを決定する方法の詳細については、「[Azure Storage の冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)」を参照してください。 また、ストレージ サービスのサービス レベル アグリーメント (SLA) では、財務的な裏付けのある保証も提供します。 詳細については、「[Managed Disks の SLA](https://azure.microsoft.com/support/legal/sla/managed-disks/v1_0)」、「[Virtual Machines の SLA](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_8)」、および「[ストレージ アカウントの SLA](https://azure.microsoft.com/support/legal/sla/storage/v1_4)」を参照してください。
 
 Azure ディスクに適したソリューションの計画については、[Azure Disk Storage のバックアップとディザスター リカバリー](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks)に関する記事をご覧ください。
 
-## <a name="security"></a>セキュリティ
+## <a name="security"></a>Security
 
 クラウド内のデータを保護するために、Azure Storage は、データのセキュリティと保存中および転送中のデータの暗号化に関するいくつかのベスト プラクティスを提供しています。 次のようにすることができます。
 

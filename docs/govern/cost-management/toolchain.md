@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2433e5bc74b059911575165df39f6ce3a1d1f8d8
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 6355c5f5a80e915a3b2b82b99c06c388e9e0f8d2
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193883"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450307"
 ---
 # <a name="cost-management-tools-in-azure"></a>Azure でのコスト管理ツール
 
@@ -29,7 +29,7 @@ ms.locfileid: "86193883"
 | 予算管理     | いいえ         | はい         | いいえ         | はい         |
 | 1 つのリソースでの支出の監視    | はい         | はい         | はい         | いいえ         |
 | 複数のリソースでの支出の監視    | いいえ         | はい        | はい         | いいえ         |
-| 1 つのリソースでの支出の管理     | はい - 手動でサイズ設定         | はい         | いいえ         | はい         |
+| 1 つのリソースでの支出の管理     | はい、手動でサイズ設定         | はい         | いいえ         | はい         |
 | 複数のリソースでの支出の適用    | いいえ         | はい         | いいえ         | はい         |
 | リソースへの会計メタデータの適用    | いいえ         | いいえ         | いいえ         | はい         |
 | 傾向の監視と検出     | はい          | はい        | はい         | いいえ         |

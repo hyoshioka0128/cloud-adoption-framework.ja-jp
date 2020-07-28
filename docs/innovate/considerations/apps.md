@@ -1,5 +1,5 @@
 ---
-title: デジタル発明のためにアプリを介して連携する
+title: デジタル発明のためのアプリケーションを介したエンゲージ
 description: データを形にし、顧客を引き付けてイノベーションをサポートするエクスペリエンスを生み出すアプリ ソリューションを作成する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,20 +7,20 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 822866cfd944cd47a3eff96a24a6e0f09a69634f
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 72f5a35bbf4fa248b82dce36fb345ee22a6b96f0
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993973"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449576"
 ---
-# <a name="engage-through-applications"></a>アプリケーションによる連携
+# <a name="engage-via-applications"></a>アプリケーションを介したエンゲージ
 
 「[データの民主化](./data.md)」で説明されているように、データは新しい "石油" です。 データは、デジタル経済のほとんどのイノベーションの燃料です。 この例えで言うと、アプリケーションは、必要とする人々に燃料を届けるために必要な給油所であり、インフラストラクチャもあります。
 
-場合によっては、データだけでも、変化を促し顧客のニーズを満たすには十分です。 しかし、一般的には、顧客のニーズに対するソリューションには、データを形にしてエクスペリエンスを生み出すアプリケーションが必要です。 アプリケーションはユーザーを引き付けるための方法です。 顧客トリガーに応答するために必要なプロセスのホームであり、 顧客にとっては、データを提供してガイダンスを受ける手段です。 この記事では、検証予定の仮説に基づいて適切なアプリケーション ソリューションを組み立てるのに役立つ、いくつかの原則をまとめます。
+場合によっては、データだけでも、変化を促し顧客のニーズを満たすには十分です。 しかし、一般的には、顧客のニーズに対するソリューションには、データを形にしてエクスペリエンスを生み出すアプリケーションが必要です。 アプリケーションはユーザーを引き入れるための方法であり、顧客のトリガーに応えるために必要なプロセスのホームです。 アプリケーションは、顧客がデータを提供し、ガイダンスを受け取る方法です。 この記事では、検証予定の仮説に基づいて適切なアプリケーション ソリューションを組み立てるのに役立つ、いくつかの原則をまとめます。
 
-![アプリを使用した連携](../../_images/innovate/engage-via-apps.png)
+![アプリケーションを介したエンゲージ](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="shared-code"></a>共有コード
 
@@ -28,21 +28,21 @@ ms.locfileid: "84993973"
 
 イノベーションに備えるために、すべてのアプリケーション開発を共有コード リポジトリから始める必要があります。 コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。このツールでは、共有コード リポジトリをすばやく作成できます。 または、[Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) は、コードの管理に使用できる Azure DevOps Services のバージョン管理ツールのセットです。 Azure Repos では、次の 2 種類のバージョン管理が提供されています。
 
-- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): 分散バージョン管理。
-- [Team Foundation バージョン管理 (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): 集中バージョン管理。
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git):分散バージョン管理。
+- [Team Foundation バージョン管理 (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc):集中バージョン管理。
 
 ## <a name="citizen-developers"></a>市民開発者
 
 プロ開発者はイノベーションに欠かせない存在です。 仮説が大筋で正しいことが証明されたら、大規模なソリューションを安定させて準備するためにプロ開発者が必要とされます。 この記事で述べる原則のほとんどには、プロ開発者のサポートが必要です。 残念ながら、現在のトレンドでは、開発者よりプロ開発者の需要が多いことが示されています。 さらに、プロフェッショナル開発が要求されれば、イノベーションのコストとペースはいっそう不十分になる可能性があります。 これらの課題に対し、市民開発者は、開発作業を拡大し、初期仮説の検証を迅速化する手段を提供します。
 
-アプリ インターフェイスのための [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder)、ワークフローのための [Microsoft Power Automate](https://docs.microsoft.com/power-automate)、データ利用のための [Power BI](https://docs.microsoft.com/power-bi) といったツールを使用して初期仮説を検証できる場合、市民開発者を利用することが可能で効果的な可能性があります。
+アプリケーション インターフェイスのための [Power Apps](https://docs.microsoft.com/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder)、ワークフローのための [Microsoft Power Automate](https://docs.microsoft.com/power-automate)、データ利用のための [Power BI](https://docs.microsoft.com/power-bi) といったツールを使用して初期仮説を検証できる場合、市民開発者を利用することが実用的で効果的な可能性があります。
 
 > [!NOTE]
 > 仮説のテストを市民開発者に頼るときは、プロ開発者がサポート、レビュー、ガイダンスを提供できるようにしておくことが推奨されます。 仮説が大筋で検証されたら、より堅牢なプログラミング モデルにアプリケーションを移行するプロセスによって、イノベーションの成果をさらに得られるようになります。 初期のプロセス定義にプロ開発者が関与すれば、後々の移行をよりクリーンにできる可能性があります。
 
 ## <a name="intelligent-experiences"></a>インテリジェントなエクスペリエンス
 
-インテリジェントなエクスペリエンスとは、最新 Web アプリケーションのスピードとスケールに、認識サービスやボットのインテリジェンスを融合したものです。 これらの各テクノロジ単独でも、顧客のニーズを満たすには十分かもしれません。 しかし、スマートに組み合わせれば、デジタル エクスペリエンスによって満たすことのできるニーズの範囲を広げながら、開発コストを抑えることができます。
+インテリジェントなエクスペリエンスとは、最新の Web アプリケーションのスピードとスケールに、Cognitive Services やボットのインテリジェンスを融合したものです。 これらの各テクノロジ単独でも、顧客のニーズを満たすには十分かもしれません。 しかし、スマートに組み合わせれば、デジタル エクスペリエンスによって満たすことのできるニーズの範囲を広げながら、開発コストを抑えることができます。
 
 ### <a name="modern-web-apps"></a>最新の Web アプリ
 
@@ -52,7 +52,7 @@ ms.locfileid: "84993973"
 
 機械学習と AI は、開発者にとってますます利用しやすくなっています。 予測機能を備えた共通 API を広く利用できるようになり、データや予測へのアクセスが広がったことで、開発者は、より良く顧客のニーズを満たすことができます。
 
-ソリューションにインテリジェンスを追加することで、音声テキスト変換、テキスト翻訳、コンピューター ビジョン、さらに画像検索が可能になります。 これらの拡張された機能によって、開発者はより簡単に、インテリジェンスを利用してインタラクティブな最新エクスペリエンスを提供するソリューションを構築できます。
+ソリューションにインテリジェンスを追加することで、音声テキスト変換、テキスト翻訳、Computer Vision、さらに画像検索が可能になります。 これらの拡張された機能によって、開発者はより簡単に、インテリジェンスを利用してインタラクティブな最新エクスペリエンスを提供するソリューションを構築できます。
 
 ### <a name="bots"></a>ボット
 
@@ -82,7 +82,7 @@ ms.locfileid: "84993973"
 
 - 既存のビジネス ロジックが既存の顧客ニーズを (ほぼ) 満たしている。
 - エクスペリエンスの改善によって、特定の顧客群のニーズ満足度が高まる。
-- 実用最小限の製品 (MVP) ソリューションに必要なビジネス ロジックが集中化されている。これは通常、[N 層](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)、Web サービス、API、または[マイクロサービス](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)設計によって実現されます。 このアプローチでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションをラップします。 Azure では、このソリューションは Azure App Service で運用される見込みです。
+- 実用最小限の製品 (MVP) ソリューションに必要なビジネス ロジックが集中化されている。これは通常、[n 層](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)、Web サービス、API、または[マイクロサービス](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)設計によって実現されます。 このアプローチでは、クラウドでホストされる新しいエクスペリエンスで既存のソリューションをラップします。 Azure では、このソリューションは Azure App Service で運用される見込みです。
 
 ### <a name="rebuild-an-existing-solution"></a>既存のソリューションを再構築する
 
@@ -93,7 +93,7 @@ ms.locfileid: "84993973"
 
 ## <a name="operating-model-innovations"></a>運用モデルのイノベーション
 
-アプリを作成するための最新の革新的なアプローチに加えて、アプリの運用においても注目すべきイノベーションがあります。 これらのアプローチによって、多くの組織に変化が生じました。 最も顕著なものの 1 つは、[クラウドのセンター オブ エクセレンス](../../organize/cloud-center-of-excellence.md)運用モデルです。 優れた人員が揃い、成熟したビジネス チームには、ソリューションに対して独自の運用サポートを提供するという選択肢があります。
+アプリケーションを作成するための最新の革新的なアプローチに加えて、アプリケーションの運用においても注目すべきイノベーションがあります。 これらのアプローチによって、多くの組織に変化が生じました。 最も顕著なものの 1 つは、[クラウドのセンター オブ エクセレンス](../../organize/cloud-center-of-excellence.md)運用モデルです。 優れた人員が揃い、成熟したビジネス チームには、ソリューションに対して独自の運用サポートを提供するという選択肢があります。
 
 クラウドのセンター オブ エクセレンスにみられる、このようなセルフサービス型の運用管理モデルでは、ソリューション環境内で制御を厳格化し、イテレーションを迅速化することができます。 これらの目標は、運用管理と説明責任をビジネス チームに移管することによって達成されます。
 
@@ -109,7 +109,7 @@ ms.locfileid: "84993973"
 
 ## <a name="next-steps"></a>次のステップ
 
-仮説とソリューションにもよりますが、この記事の原則は、MVP の定義を満たしてユーザーを引き付けるアプリの設計に役立てることができます。 次に紹介する[導入の強化](./ci-cd.md)の原則では、アプリケーションとデータをより速く効率的に顧客のもとに届ける方法を示します。
+仮説とソリューションにもよりますが、この記事の原則は、MVP の定義を満たしてユーザーを引き付けるアプリケーションの設計に役立てることができます。 次に紹介する[導入の強化](./ci-cd.md)の原則では、アプリケーションとデータをより速く効率的に顧客のもとに届ける方法を示します。
 
 > [!div class="nextstepaction"]
 > [導入の強化](./ci-cd.md)

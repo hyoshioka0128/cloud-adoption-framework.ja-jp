@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5e397ed17e9596933629c3d6375546df1e0d9a31
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7eab50562d334fbe3f763472fccbc65f4ba4a4b0
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194784"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86451055"
 ---
 # <a name="caf-enterprise-scale-business-continuity-and-disaster-recovery"></a>CAF のエンタープライズ規模の事業継続とディザスター リカバリー
 

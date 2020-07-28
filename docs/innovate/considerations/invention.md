@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4775659b1d9cf6dfbd133734c5a46f8339c2cc63
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 52518647e6d1a32c9c41a6a9dfe72a15d276624c
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993797"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449219"
 ---
 # <a name="develop-digital-inventions"></a>デジタル発明を開発する
 
@@ -25,7 +25,7 @@ ms.locfileid: "84993797"
 すべての規範で特定のケースごとにイノベーションが促進される必要はありません。 「[顧客の共感を構築する](./build.md)」のガイダンスに示されているように、すべてのイテレーションで仮説をテストすることが目標です。 各イテレーションの出力を[実用最低限の製品 (MVP)](../../govern/policy-compliance/index.md) として定義することで、含める規範の数を最小限に抑えられます。
 
 - **[データの民主化](./data.md):** 顧客、パートナー、従業員の手にデータを渡すことで、革新的な意見が促進されます。 データの取り込み、一元化、管理、および共有を行います。
-- **[アプリによる連携](./apps.md):** 人は、アプリとエクスペリエンスを通して、知識とつながります。 プロの開発者と市民開発者によるアプリの迅速な作成を支援します。
+- **[アプリケーションを介したエンゲージ](./apps.md):** ユーザーは、アプリケーションとエクスペリエンスを通して、知識とつながります。 プロフェッショナルな開発者と市民開発者によるアプリケーションの迅速な作成を支援します。
 - **[導入の強化](./ci-cd.md):** 導入とパートナーシップに対する抵抗を減らすことで、イノベーションを促進します。 可視性、コラボレーション、速度、およびフィードバックのループを設計します。
 - **[デバイスとの接触](./devices.md):** デジタルと物理の境界線は、複数のチャネルであいまいになっています。 デバイス、IoT、および複合現実によるエクスペリエンスを提供します。
 - **[予測と影響](./predict.md):** イノベーションをリードするために、未来に目を向けます。 現在のデータを見てエクスペリエンスに関する情報を提供し、予測ツールを使用して対話します。

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 27d633b20419b49e32ba1296318e67098d9a7ba9
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: ed6a3c8e0356b904a3114382b674aafbcc2f7dac
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233359"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450409"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>作業を開始しましょう。クラウド運用チームを結成する
 
@@ -22,7 +22,7 @@ ms.locfileid: "86233359"
 
 ## <a name="step-1-determine-whether-a-cloud-operations-team-is-needed"></a>手順 1:クラウド運用チームが必要かどうかを判断する
 
-ワークロードを運用環境にリリースする前に、[クラウド運用機能](../../organize/cloud-operations.md)の提供に関する説明責任について合意に達する必要があります。 ポートフォリオによっては、運用上の責任が DevOps チームとクラウド導入チームに残る場合があります。 その他の場合、クラウド運用の経験があるマネージド サービス プロバイダーが、進行中の運用業務を引き受けることがあります。
+ワークロードを運用環境にリリースする前に、[クラウド運用機能](../../organize/cloud-operations.md)の提供に関する説明責任について合意に達する必要があります。 ポートフォリオによっては、運用上の責任が DevOps チームとクラウド導入チームに帰属する場合があります。 その他の場合、クラウド運用の経験があるマネージド サービス プロバイダーが、進行中の運用業務を引き受けることがあります。
 
 DevOps またはサービス プロバイダーの運用上の合意がない場合は、運用環境のワークロードの管理に関して、IT 部門内のだれかが進行中の運用業務にコミットする必要があると考えて問題ありません。
 
@@ -93,7 +93,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 - 管理手法をサポートする方法論、アプローチ、および実装について理解します。
 
-**成果物の完遂をサポートするうえでのガイダンス:**
+**成果物の完成をサポートするためのガイダンス:**
 
 - [クラウド導入フレームワークの管理手法](../../manage/index.md)を確認します。
 
@@ -126,7 +126,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 - ビジネス利害関係者が期待していることを文書化します。
 - 特定のワークロードまたはプラットフォームに高度な運用が必要とされるかどうかを判断します。
 
-**成果物の完遂をサポートするうえでのガイダンス:**
+**成果物の完成をサポートするためのガイダンス:**
 
 - クラウド上で[ビジネス アラインメント](../../manage/considerations/business-alignment.md)を構築します。
 - [運用管理のブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で、ポートフォリオと運用に期待される内容を文書化します。
@@ -183,7 +183,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 - クラウド導入チームからのハンドオフを定期的に確認して受け入れます。
 
-**成果物の完遂をサポートするうえでのガイダンス:**
+**成果物の完成をサポートするためのガイダンス:**
 
 - [新しいワークロードとリソースをオンボードする](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)ためのプロセスを確立します。
 

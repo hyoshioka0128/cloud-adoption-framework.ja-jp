@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 08597bc09225c5444ee7ba2ac5cb867d9678cb64
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c085c3b197306b4774daa5fcc5d9f0501db30eef
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194033"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479485"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -70,7 +70,7 @@ DNS は、エンタープライズ規模のアーキテクチャ全体におい�
 
 - Azure とオンプレミスの間で名前解決が必要な環境では、少なくとも 2 つの Azure VM にデプロイされた既存の DNS インフラストラクチャ (たとえば Active Directory 統合 DNS) を使用し、それらの DNS サーバーを使用するように VNet で DNS の設定を構成します。
 
-  - Azure プライベート DNS ゾーンが VNet にリンクされていて、オンプレミスの DNS サーバーを使用したオンプレミスの DNS 名 (`onprem.contoso.com` など) への条件付き転送で、ハイブリッド リゾルバーとして DNS サーバーが使用されている場合は、Azure プライベート DNS を使用することもできます。 オンプレミスのサーバーでは、Azure プライベート DNS ゾーン (`azure.contoso.com` など) に対する Azure 内のリゾルバー VM への条件付きフォワーダーを構成できます。
+- Azure プライベート DNS ゾーンが VNet にリンクされていて、オンプレミスの DNS サーバーを使用したオンプレミスの DNS 名 (`onprem.contoso.com` など) への条件付き転送で、ハイブリッド リゾルバーとして DNS サーバーが使用されている場合は、Azure プライベート DNS を使用することもできます。 オンプレミスのサーバーでは、Azure プライベート DNS ゾーン (`azure.contoso.com` など) に対する Azure 内のリゾルバー VM への条件付きフォワーダーを構成できます。
 
 - 独自の DNS (Red Hat OpenShift など) をデプロイする必要がある特殊なワークロードでは、優先 DNS 解決を使用する必要があります。
 
@@ -97,7 +97,7 @@ _図 1: Virtual WAN のネットワーク トポロジ。_
 
 - [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) は Microsoft のマネージド ソリューションであり、エンド ツー エンドのグローバル トランジット接続が既定で提供されます。 Virtual WAN ハブにより、ネットワーク接続を手動で構成する必要がなくなります。 たとえば、お客様は、グローバル トランジット接続を有効にするために、ユーザー定義ルーティング (UDR) またはネットワーク仮想アプライアンス (NVA) を設定する必要はありません。
 
-- Virtual WAN を使用すると、次の図に示すように、何もしなくても複数の Azure リージョンとオンプレミスの場所にまたがる (Any-to-Any 接続) [ハブ アンド スポークのネットワーク アーキテクチャ](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-global-transit-network-architecture)が作成されるので、Azure とクロスプレミスでのエンド ツー エンドのネットワーク接続が大幅に簡素化されます。
+- Virtual WAN を使用すると、次の図に示すように、何もしなくても複数の Azure リージョンとオンプレミスの場所にまたがる (Any-to-Any 接続) [ハブ アンド スポークのネットワーク アーキテクチャ](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-global-transit-network-architecture)が作成されるので、Azure とクロスプレミスでのエンドツーエンドのネットワーク接続が大幅に簡素化されます。
 
 ![ネットワーク トポロジと接続](./media/global-transit.png)
 _図 2: Virtual WAN でのグローバル トランジット ネットワーク。_
@@ -181,7 +181,7 @@ _図 4: 従来の Azure ネットワーク トポロジ。_
 
 **設計上の考慮事項:**
 
-- 複数のランディング ゾーン VNet を接続するには、複数のネットワーク トポロジがあります。1 つの大きなフラット VNet、複数の ExpressRoute 回線または接続で接続された複数の VNet、ハブ アンド スポーク、フル メッシュ、ハイブリッドなどです。
+- さまざまなネットワーク トポロジは複数のランディング ゾーン VNet に接続できます。1 つの大きなフラット VNet、複数の ExpressRoute 回線または接続で接続された複数の VNet、ハブ アンド スポーク、フル メッシュ、ハイブリッドなどです。
 
 - VNet がサブスクリプションの境界を横断することはありませんが、仮想ネットワーク ピアリング、ExpressRoute 回線、または VPN ゲートウェイを使用することで、異なるサブスクリプションの VNet 間の接続を実現できます。
 
@@ -227,7 +227,7 @@ _図 4: 従来の Azure ネットワーク トポロジ。_
 
 - 次の図に示すように、リージョン デプロイの場合は、主にハブ アンド スポーク トポロジが使用され、ExpressRoute 経由のクロスプレミス接続、ブランチ接続用の VPN、NVA と UDR を介したスポーク間接続、NVA によるインターネット送信保護には、中央ハブ VNet への仮想ネットワーク ピアリングによるランディング ゾーン VNet 接続が使用されます。
 
-![ネットワーク トポロジと接続](./media/hub-and-spoke-topology.png)
+![ネットワーク トポロジと接続](./media/hub and spoke-topology.png)
 
 _図 5:ハブ アンド スポーク ネットワーク トポロジ。_
 
@@ -292,7 +292,7 @@ _図 7: ランディング ゾーンの接続の設計。_
 
 - サポートされている Azure リージョンに、ゾーン冗長 ExpressRoute ゲートウェイをデプロイします。
 
-- 10 Gbps より高い帯域幅または専用の 10/100 Gbps ポートを必要とするシナリオで は、ExpressRoute Direct を使用します。
+- 10 Gbps より高い帯域幅または専用の 10/100 Gbps ポートを必要とするシナリオでは、ExpressRoute Direct を使用します。
 
 - 待機時間を短くする必要がある場合、またはオンプレミスから Azure へのスループットを 10 Gbps より大きくする必要がある場合は、FastPath を有効にして、データ パスから ExpressRoute ゲートウェイをバイパスします。
 
@@ -378,13 +378,14 @@ _図 7: ランディング ゾーンの接続の設計。_
 
 - East-West および South-North のトラフィックの保護とフィルター処理のために、サードパーティの NVA が必要な場合:
 
-- Virtual WAN ネットワーク トポロジの場合は、別の VNet (NVA VNet など) に NVA をデプロイし、リージョンの Virtual WAN ハブと、NVA へのアクセスを必要とするランディング ゾーンに、それを接続します (こちらの[記事](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)を参照)。 Virtual WAN 以外のネットワーク トポロジの場合は、サードパーティの NVA を中央ハブの VNet にデプロイします。
+   - Virtual WAN ネットワーク トポロジの場合は、別の VNet (NVA VNet など) に NVA をデプロイし、リージョンの Virtual WAN ハブと、NVA へのアクセスを必要とするランディング ゾーンに、それを接続します (こちらの[記事](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)を参照)。
+   - Virtual WAN 以外のネットワーク トポロジの場合は、サードパーティの NVA を中央ハブの VNet にデプロイします。
 
 - 受信 HTTP/S 接続にサードパーティの NVA が必要な場合は、ランディング ゾーンの VNet 内に、保護してインターネットに公開するアプリと共に、これらをデプロイする必要があります。
 
 - [Azure DDoS Protection Standard 保護プラン](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)を使用して、お客様の VNet 内でホストされているすべてのパブリック エンドポイントを保護します。
 
-- オンプレミスの DMZ の概念とアーキテクチャを、Azure に複製しないでください。お客様は、オンプレミスと同様のセキュリティ機能を Azure で利用できますが、実装とアーキテクチャをクラウドに適合させる必要があります。
+- オンプレミスの境界ネットワークの概念とアーキテクチャを Azure に複製しないでください。 同様のセキュリティ機能を Azure で利用できますが、実装とアーキテクチャをクラウドに適合させる必要があります。
 
 ## <a name="planning-for-app-delivery"></a>アプリの配信の計画
 

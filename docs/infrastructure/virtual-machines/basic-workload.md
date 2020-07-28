@@ -7,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 92c0d9deb038e1c89d3db5ca5bfc72cace2d2ff9
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: da5a2de366d2bd2121a3ea12b480323cc1c84e74
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193730"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450018"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>基本的なワークロードを Azure にデプロイする
 
@@ -38,7 +38,7 @@ ms.locfileid: "86193730"
 基本的な Web アプリケーションの場合、[Azure App Service のドキュメント](https://docs.microsoft.com/azure/app-service)に記載されている 5 分間のクイック スタートのいずれかを選択し、その手順に従います。
 
 > [!NOTE]
-> 一部のクイック スタート ガイドでは、既定でリソース グループがデプロイされます。 その場合、明示的にリソース グループを作成する必要はありません。 それ以外の場合は、上記で作成したリソース グループに Web アプリケーションをデプロイします。
+> 一部のクイックスタート ガイドでは、既定でリソース グループがデプロイされます。 その場合、明示的にリソース グループを作成する必要はありません。 それ以外の場合は、上記で作成したリソース グループに Web アプリケーションをデプロイします。
 
 単純なワークロードをデプロイしたら、Azure への[基本的な Web アプリケーション](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app)のデプロイに関するベスト プラクティスの詳細を学習できます。
 

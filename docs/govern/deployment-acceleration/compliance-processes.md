@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4850fe8377c642ae7af2c763ee28c13d90f25b61
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3975afb6f81dda9c1b68070de8d251da741d55e9
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754985"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450273"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>デプロイ高速化ポリシーのコンプライアンス プロセス
 
@@ -55,7 +55,7 @@ ms.locfileid: "83754985"
 
 - **予期しない構成変更の検出。** リソースの構成が予期せず変更された場合は、IT スタッフおよびワークロード所有者と協力して、根本原因を特定し、修復プランを作成します。
 - **ポリシーに準拠していない新しいリソースの構成**。 DevOps チームおよびワークロード所有者と共に、プロジェクトの開始時にデプロイ高速化ポリシーを検討し、関係する全員が関連するポリシーの要件を理解するようにします。
-- **展開の障害または構成の問題によるプロジェクトのスケジュールの遅延**。 開発チームおよびワークロード所有者と協力して、一貫性と再現性のためにクラウドベースのリソースのデプロイを自動化する方法をチームが理解していることを確認します。 開発サイクルの早い段階で、完全に自動化されたデプロイが必要です。これを開発サイクルの後の方で行おうとすると、通常、予期しない問題や遅延が発生します。
+- **展開の障害または構成の問題によるプロジェクトのスケジュールの遅延**。 開発チームおよびワークロード所有者と協力して、一貫性と再現性のためにクラウドベースのリソースのデプロイを自動化する方法をチームが理解していることを確認します。 開発サイクルの早い段階で、完全に自動化されたデプロイが必要になります。 これを後で実行しようとすると、通常、予期しない問題と遅延が発生します。
 
 ## <a name="next-steps"></a>次のステップ
 

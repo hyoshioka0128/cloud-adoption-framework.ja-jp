@@ -1,18 +1,18 @@
 ---
 title: Terraform を使用してランディング ゾーンを構築する
-description: Terraform を使用してランディング ゾーンを構築する方法を説明します。
+description: HashiCorp の Terraform を使用してランディング ゾーンを構築する方法を説明します。
 author: arnaudlh
 ms.author: arnaul
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 36a73de789219591719df284ffaed5ba2c73ae1e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 36394895c88aecf0307ec46415d04fd974168b42
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195192"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479162"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -32,7 +32,8 @@ Terraform のクラウド導入フレームワークのファンデーション 
 
 最初のランディング ゾーンでは、サブスクリプションに次のコンポーネントがデプロイされます。
 
-![Terraform を使用した基本ランディング ゾーン](../../_images/ready/foundations-terraform-landing-zone.png)
+![Terraform を使用したファンデーション ランディング ゾーン](../../_images/ready/foundations-terraform-landing-zone.png)
+_図 1:Terraform を使用したファンデーション ランディング ゾーン。_
 
 ## <a name="capabilities"></a>機能
 
@@ -61,7 +62,7 @@ Terraform のクラウド導入フレームワークのファンデーション 
 - **サブスクリプションの制限**: この導入作業では、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えることはないと考えられます。 2 つの一般的な指標は、25,000 個の VM または 10,000 個の vCPU を超過することです。
 - **コンプライアンス:** このランディング ゾーンでは、サードパーティのコンプライアンス要件は必要ありません。
 - **アーキテクチャの複雑さ:** アーキテクチャの複雑さによって、追加の運用サブスクリプションが常に必要になるわけではありません。
-- **共有サービス:** このサブスクリプションをハブ アンド スポーク アーキテクチャのスポークのように扱うことを要求する既存の共有サービスは Azure にありません。
+- **共有サービス:** Azure の既存の共有サービスでは、このサブスクリプションをハブ アンド スポーク アーキテクチャのスポークのように扱うことを要求することはありません。
 
 これらの前提条件が現在の環境と一致する場合、このブループリントは、ランディング ゾーンの作成を行うための適切な開始点となる可能性があります。
 
@@ -203,10 +204,7 @@ security_center = {
 
 ## <a name="next-steps"></a>次のステップ
 
-ファンデーション ランディング ゾーンは、複雑な環境の基礎が分解して構築されます。 このエディションでは、次の方法で拡張できるシンプルな機能のセットが提供されています。
-
-- ブループリントに他のモジュールを追加します。
-- 上位に追加のランディング ゾーンを重ねます。
+ファンデーション ランディング ゾーンは、複雑な環境の基礎が分解して構築されます。 このエディションでは、ブループリントに他のモジュールを追加するか、その上に追加のランディング ゾーンを重ねることで拡張できるシンプルな機能のセットを提供します。
 
 ランディング ゾーンを重ねることは、システムを分離し、使用している各コンポーネントのバージョンを管理し、コード デプロイとしてのインフラストラクチャの迅速なイノベーションと安定を実現するための良い方法です。
 

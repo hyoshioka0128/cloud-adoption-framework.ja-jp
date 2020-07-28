@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cd30fda724c94b3c0464267da83ea7e4dd033925
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: e2f0eaf711cb52c400f63ae33131f295a66c9e84
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195107"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479740"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 
@@ -25,6 +25,7 @@ ms.locfileid: "86195107"
 ランディング ゾーン環境にデプロイする各アプリケーションまたはサービスに対しては、次のデシジョン ツリーを出発点として使用すると、コンピューティング サービスの要件を決定するのに役立ちます。
 
 ![Azure コンピューティング サービスのデシジョン ツリー](../../_images/ready/compute-decision-tree.png)
+_図 1:Azure コンピューティング サービスのデシジョン ツリー。_
 
 > [!NOTE]
 > 各アプリケーションまたはサービスのコンピューティング オプションを評価する方法の詳細については、Azure アプリケーション アーキテクチャ ガイドの「[Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)」を参照してください。
@@ -34,10 +35,10 @@ ms.locfileid: "86195107"
 ワークロードに関する次の質問に答えると、Azure コンピューティング サービスのデシジョン ツリーに基づいて意思決定を行うのに役立ちます。
 
 - **まったく新しいアプリケーションおよびサービスを構築していますか? それとも、既存のオンプレミスのワークロードから移行していますか?** クラウド導入作業の一環として新しいアプリケーションを開発すると、設計段階から最新のクラウド ベースのホスティング テクノロジを最大限に活用できます。
-- **既存のワークロードを移行する場合、それらは最新のクラウド テクノロジを利用できますか?** オンプレミスのワークロードを移行するには、次の分析が必要です。既存のアプリケーションとサービスを最新のクラウド テクノロジを利用するように簡単に最適化できますか? または、"_リフト アンド シフト_" 方式の方がワークロードに適していますか?
+- **既存のワークロードを移行する場合、それらは最新のクラウド テクノロジを利用できますか?** オンプレミスのワークロードを移行するには、次の分析が必要です。 既存のアプリケーションとサービスを最新のクラウド テクノロジを利用するように簡単に最適化できますか? または、リフト アンド シフト方式の方がワークロードに適していますか?
 - **アプリケーションやサービスはコンテナーを利用できますか?** アプリケーションが、コンテナー化されたホスティングに適している場合は、[Azure のコンテナー サービス](https://azure.microsoft.com/product-categories/containers)が提供するリソースの効率性、スケーラビリティ、およびオーケストレーション機能を利用できます。 [Azure マネージド ディスク](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)と [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) の両方を、コンテナー化されたアプリケーションで永続的ストレージとして使用できます。
-- **アプリケーションは Web ベースと API ベースのどちらですか? また、アプリケーションで PHP、ASP.NET、Node.js、あるいは類似のテクノロジを使用しますか?** Web アプリは [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) のマネージド インスタンスにデプロイできるため、ホスティングのために仮想マシンを維持する必要はありません。
-- **ワークロードの OS とホスティング環境を完全に制御する必要がありますか?** OS、ディスク、ローカルで実行されているソフトウェア、その他の構成など、ホスティング環境を制御する必要がある場合は、[Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) を使用してアプリケーションとサービスをホストすることができます。 仮想マシンのサイズとパフォーマンス レベルの選択に加えて、仮想ディスク ストレージに関する決定が、サービスとしてのインフラストラクチャ (IaaS) のワークロードに関連するパフォーマンスと SLA に影響します。 詳細については、[Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) のドキュメントをご覧ください。
+- **アプリケーションは Web ベースか API ベースのどちらですか? また、アプリケーションで PHP、ASP.NET、Node.js、あるいは類似のテクノロジを使用しますか?** Web アプリは [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) のマネージド インスタンスにデプロイできるため、ホスティングのために仮想マシンを維持する必要はありません。
+- **ワークロードの OS とホスティング環境を完全に制御する必要がありますか?** OS、ディスク、ローカルで実行されているソフトウェア、その他の構成など、ホスティング環境を制御する必要がある場合は、[Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) を使用してアプリケーションとサービスをホストすることができます。 仮想マシンのサイズとパフォーマンス レベルの選択に加えて、仮想ディスク ストレージに関する決定が、サービスとしてのインフラストラクチャのワークロードに関連するパフォーマンスと SLA に影響します。 詳細については、[Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) のドキュメントをご覧ください。
 - **ワークロードには、ハイパフォーマンス コンピューティング (HPC) 機能が含まれますか?** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) は、プラットフォーム サービスとしてコンピューティング リソースのジョブ スケジュール設定と自動スケール機能を備えているので、クラウドで大規模な並列アプリケーションや HPC アプリケーションを簡単に実行できます。
 - **アプリケーションでマイクロサービス アーキテクチャが使用されますか?** マイクロサービス ベースのアーキテクチャを使用するアプリケーションでは、いくつかの最適化されたコンピューティング テクノロジを利用できます。 自己完結型のイベント駆動型ワークロードは、[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) を使用して、インフラストラクチャを必要としないスケーラブルなサーバーレス アプリケーションを構築できます。 マイクロサービスが実行されている環境をより詳細に制御する必要があるアプリケーションでは、[Azure Container Instances](https://docs.microsoft.com/azure/container-instances/container-instances-overview)、[Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes)、[Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) などのコンテナー サービスを使用できます。
 
@@ -64,7 +65,7 @@ ms.locfileid: "86195107"
 
 Azure を利用すれば、**顧客やパートナーがいる場所を問わず**、彼らを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
 
-Azure App Service など、いくつかのコンピューティング オプションは、ほとんどの Azure リージョンで一般提供されています。 しかし、一部のコンピューティング サービスは、特定のリージョンでのみサポートされます。 一部の仮想マシンの種類とそれに関連付けられているストレージの種類は、利用可能なリージョンに制限があります。 どのリージョンにコンピューティング リソースをデプロイするかを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines)を参照して、リージョン別の提供状況の最新の状態を確認することをお勧めします。
+Azure App Service など、いくつかのコンピューティング オプションは、ほとんどの Azure リージョンで一般提供されていますが、特定のリージョンでのみサポートされているコンピューティング サービスもあります。 一部の仮想マシンの種類とそれに関連付けられているストレージの種類は、利用可能なリージョンに制限があります。 コンピューティング リソースをデプロイするリージョンを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines)を参照して、リージョン別の提供状況の最新の状態を確認することをお勧めします。
 
 Azure のグローバル インフラストラクチャの詳細については、[Azure リージョンのページ](https://azure.microsoft.com/global-infrastructure/regions)を参照してください。 また、各 Azure リージョンで利用可能なサービス全体の具体的な詳細については、[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all)に関するページで確認できます。
 

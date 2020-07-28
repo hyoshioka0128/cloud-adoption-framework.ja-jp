@@ -1,5 +1,5 @@
 ---
-title: スキル準備パス
+title: 移行の行程の準備フェーズ中のスキル準備パス
 description: Azure 向けのクラウド導入フレームワークを使用して、移行の工程を遂行するうえで必要なスキルの構築方法を学習します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0e89b1f19770e9a0f4225704287593447dc63305
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: dc08d48310b2b574f66c82d6cf14a19de34ce3a6
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195158"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478142"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
@@ -20,7 +20,7 @@ ms.locfileid: "86195158"
 
 ## <a name="organizational-readiness-learning-paths"></a>組織の準備のラーニング パス
 
-クラウド導入の取り組みに関連する動機とビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チーム (v チーム) を確立することが必要な場合もあります。 以下の記事は、望ましい結果に従ってこれらのチームを編成するために必要なスキルの開発に役立ちます。
+クラウド導入の取り組みに関連する動機とビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チームを確立することが必要な場合もあります。 以下の記事は、望ましい結果に従ってこれらのチームを編成するために必要なスキルの開発に役立ちます。
 
 - [初期の組織配置](./index.md):特定の目標を達成しやすくするための組織の配置とさまざまなチーム構造の概要です。
 - [サイロおよび封土の分析](../organize/fiefdoms-silos.md): 2 つの一般的な組織のアンチパターンと、生産性の高いコラボレーションにチームを導く方法を理解します。
@@ -72,7 +72,7 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 [データを Azure に保存する:](https://docs.microsoft.com/learn/paths/store-data-in-azure)Azure には、非構造化、アーカイブ、リレーショナルなどの、データを格納するためのさまざまな方法が用意されています。 Azure でのストレージ管理の基本、ストレージ アカウントの作成方法、クラウドに保存するデータに適したモデルの選択方法について説明します。
 
-[Azure で最適なソリューションを設計する](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure):すべての優れたアーキテクチャで見られる核となる原則を調べて、セキュリティで保護された、スケーラブルな高パフォーマンスのソリューションを Azure で設計して構築する方法について説明します。
+[Azure で最適なソリューションを設計する](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure):健全なアーキテクチャで見られる核となる原則を調べて、セキュリティで保護された、スケーラブルな高パフォーマンスのソリューションを Azure で設計して構築する方法について学びます。
 
 ## <a name="learn-more"></a>詳細情報
 

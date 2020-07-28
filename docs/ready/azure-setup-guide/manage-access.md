@@ -1,6 +1,6 @@
 ---
-title: Azure 環境へのアクセスを管理する
-description: ロールベースのアクセス制御 (RBAC) を使用して Azure 環境に対するアクセス制御を設定する方法について説明します。
+title: ロールベースのアクセス制御を使用して Azure 環境へのアクセスを管理する
+description: ロールベースのアクセス制御を使用して Azure 環境に対するアクセス制御を設定する方法について説明します。
 author: LijuKodicheraJayadevan
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 9d1684b7d8dbde2fc507fa41f99c22ebe42ea587
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7b05c894d326a49703b92d71590f0217349bc7fe
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194614"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450919"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -27,6 +27,7 @@ RBAC は、Azure 内のリソースの詳細なアクセス管理を実現しま
 アクセス制御戦略を計画する場合は、ユーザーの作業を実行するのに必要な最低限の特権をユーザーに付与します。 次の図は、RBAC 割り当てパターン例です。
 
 ![RBAC のロールを示す図](./media/manage-access/role-examples.png)
+_図 1:RBAC のロール。_
 
 アクセスと制御の方法を計画する場合は、組織内でセキュリティとコンプライアンス、IT 管理、およびエンタープライズ アーキテクトの役割を持つ人と協力することをお勧めします。
 
@@ -88,7 +89,7 @@ RBAC は、Azure 内のリソースの詳細なアクセス管理を実現しま
 
 詳細については、次を参照してください。
 
-- [ロールベースのアクセス制御 (RBAC) とは何か](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [ロールベースのアクセス制御 (Azure RBAC) とは](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [クラウド導入フレームワーク:ロールベースのアクセス制御の使用](../considerations/roles.md)
 
 ::: zone-end

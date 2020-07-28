@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f3b3987c016a5fbf76355a27eec720c5620cdc34
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 01d12f284d90c1d483c5b5044aafd683f2a674b6
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993769"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449134"
 ---
 # <a name="predict-and-influence"></a>予測と影響
 
@@ -28,17 +28,17 @@ ms.locfileid: "84993769"
 
 - **eコマース:** eコマース Web サイトでは、他の類似するコンシューマーが購入したものに基づいて、カートに追加するお勧めの製品が提案されます。
 - **Adjusted Reality (調整された現実):** IoT では、予測機能のより高度なインスタンスが提供されます。 たとえば、組み立てライン上の機器で、機器の温度の上昇が検知されます。 クラウドベースの予測モデルが、それに対する対応を決定します。 この予測に基づき、別のデバイスはマシンが冷えるまで組み立てラインを遅くします。
-- **消費者製品:** 携帯電話、スマート ホーム、また車でさえも、場所や時刻などの要素に基づいてユーザーに行動を提案するために活用される予測機能が使用されます。 予測と初期仮説が一致した場合、予測がアクションにつながります。 とても成熟した段階では、この一致により自動運転車のような製品が実現されます。
+- **消費者製品:** 携帯電話、スマート ホーム、また車でさえも、場所や時刻などの要素に基づいてユーザーに行動を提案するために分析を行う予測機能が使用されています。 予測と初期仮説が一致した場合、予測がアクションにつながります。 とても成熟した段階では、この一致により自動運転車のような製品が実現されます。
 
 ## <a name="develop-predictive-capabilities"></a>予測機能の開発
 
 常に正確な予測機能を提供するソリューションは、一般に次の 5 つの主要な特性を備えています。
 
-    - Data
-    - 洞察
-    - パターン
-    - 予測
-    - インタラクション
+- Data
+- 洞察
+- パターン
+- 予測
+- インタラクション
 
 予測機能の開発には、各側面が必要です。 すべての大きなイノベーション同様、予測機能の開発には[反復に対するコミットメント](./index.md#commitment-to-iteration)が必要です。 各反復では、次の 1 つ以上の特性が熟慮され、ますます複雑化する顧客の仮説が検証されます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "84993769"
 
 ## <a name="data"></a>Data
 
-データは、前述の特性で最も基本的なものです。 データは、デジタル発明を開発するための各規範によって生成されます。 当然ながら、そのデータが予測の開発に貢献します。 予測ソリューションにデータを取り込む方法について詳しくは、「[データの民主化](./data.md)」または[デバイスとの対話](./devices.md)に関する記事を参照してください。
+データは、前述の特性で最も基本的なものです。 データは、デジタル発明を開発するための各規範によって生成されます。 当然ながら、そのデータが予測の開発に貢献します。 予測ソリューションにデータを取り込む方法について詳しくは、「[データの民主化](./data.md)」または[デバイスの操作](./devices.md)に関する記事を参照してください。
 
 予測機能の提供には、さまざまなデータ ソースを使用できます。
 
@@ -65,7 +65,7 @@ ms.locfileid: "84993769"
 
 [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) は、お使いのデータを使用してモデルを構築およびトレーニングする、Azure 内のクラウドネイティブなサービスです。 このツールには、[機械学習アルゴリズムの開発を加速させるワークフロー](https://docs.microsoft.com/azure/machine-learning/service/concept-azure-machine-learning-architecture)も含まれます。 このワークフローを使用すると、ビジュアル インターフェイスまたは Python を通じてアルゴリズムを開発できます。
 
-より堅牢な機械学習モデルに、Apache Hadoop クラスター上に構築する機械学習プラットフォームである [Azure HDInsight の ML サービス](https://docs.microsoft.com/azure/hdinsight/r-server/r-server-overview)があります。 このアプローチでは、基になっているクラスター、ストレージ、コンピューティング ノードをより細かく制御できます。 また、Azure HDInsight では、統合および取り込まれたデータに基づく予測を、ScaleR や SparkR などのツールをより高度に統合して作成できます。これでは、ストリーミング データを使用することも可能です。 気象条件に基づく航空便の遅延の予測に使用される場合、これらの高度な機能はそれぞれ、[航空便遅延予測ソリューション](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)でデモンストレーションされています。 また、HDInsight ソリューションでは、データ セキュリティ、ネットワーク アクセス、パフォーマンス監視などのパターンでの操作を組織で制御できます。
+より堅牢な機械学習モデルを実現するために、[Azure HDInsight の ML サービス](https://docs.microsoft.com/azure/hdinsight/r-server/r-server-overview)では、Apache Hadoop クラスター上に構築された機械学習プラットフォームを提供します。 このアプローチでは、基になっているクラスター、ストレージ、コンピューティング ノードをより細かく制御できます。 また、Azure HDInsight では、統合および取り込まれたデータに基づく予測を、ScaleR や SparkR などのツールをより高度に統合して作成できます。これでは、ストリーミング データを使用することも可能です。 気象条件に基づく航空便の遅延の予測に使用される場合、これらの高度な機能はそれぞれ、[航空便遅延予測ソリューション](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)でデモンストレーションされています。 また、HDInsight ソリューションでは、データ セキュリティ、ネットワーク アクセス、パフォーマンス監視などのパターンでの操作を組織で制御できます。
 
 ## <a name="predictions"></a>予測
 
@@ -85,7 +85,7 @@ API を介して予測が利用可能になると、それを使用して顧客�
 
 ## <a name="next-steps"></a>次のステップ
 
-[発明の規範](./invention.md)と[イノベーションの方法論](./index.md)に習熟したので、[顧客の共感を構築する](./build.md)方法を学ぶ準備ができました。
+[発明の分野](./invention.md)と[イノベーションの方法論](./index.md)を理解したので、[顧客の共感を構築する](./build.md)方法について学ぶ準備ができました。
 
 > [!div class="nextstepaction"]
 > [共感での構築](./build.md)
