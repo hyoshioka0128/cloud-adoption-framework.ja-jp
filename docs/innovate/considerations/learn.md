@@ -7,15 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bdc4f36460acdb86e1bee55969044ad03b198285
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 861340fa1477f20a0af0a9794903e8a41f95e771
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224121"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478805"
 ---
-<!-- cSpell:ignore Satya Nadella Ries -->
-
 # <a name="learn-with-customers"></a>お客様による学習
 
 Microsoft のお客様は、最大の学習源となっています。 Microsoft と協力することで、お客様は[顧客の共感を構築](./build.md)して顧客のニーズに最適なソリューションを見つけることを支援します。 また、[顧客への影響を測定する](./measure.md)メトリックを生成することで、実用最小限の製品 (MVP) ソリューションの作成も支援します。 この記事では、顧客パートナーと共に、また顧客パートナーから学習する方法について説明します。

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f1dfc50e5512edc0e219dcdb86bae52d0626a038
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c0b07017a5392b910011c4dc0217b8359e367ba8
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195073"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479723"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -27,6 +27,7 @@ ms.locfileid: "86195073"
 ランディング ゾーン環境にデプロイする各アプリケーションまたはサービスに対しては、次のデシジョン ツリーを出発点として使用すると、適切なデータ ストア サービスを決定して使用するのに役立ちます。
 
 ![Azure データベース サービスのデシジョン ツリー](../../_images/ready/data-decision-tree.png)
+_図 1: Azure データベース サービスのデシジョン ツリー。_
 
 ### <a name="key-questions"></a>主な質問
 

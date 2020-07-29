@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6dc3ea82120c89181b6d4d2ecffaccb6d77e99f5
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: e398c486192f2f0606765fadf1079f7b62afe923
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86372896"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450800"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -130,7 +130,7 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 1. **[+ リソースの作成]** を選択し、マーケットプレースで **Azure Database Migration Service** を検索します。
 1. 移行サービスの作成ウィザードを完了し、 **[作成]** を選択します。
 
-これでサービスによって、サポートされているソース データベース (SQL Server、MySQL、PostgreSQL、MongoDB など) を移行する準備ができました。
+これでサービスによって、サポートされているソース データベースをターゲット プラットフォーム (SQL Server、MySQL、PostgreSQL、MongoDB など) に移行する準備ができました。
 
 ::: zone target="chromeless"
 
@@ -270,7 +270,7 @@ Microsoft では以下のプロジェクト管理ツールも用意しており�
 
 クラウド テクノロジへの移行は、DevOps や CI/CD に合わせて組織を再編するまたとない機会です。 組織で管理するのがインフラストラクチャだけの場合でも、インフラストラクチャをコードとして管理し、DevOps 向けの業界のパターンやプラクティスを使用するようになれば、CI/CD パイプラインによって機敏性の向上に着手し、変化、成長、リリース、さらには復旧の各シナリオにより迅速に適応できるようになります。
 
-Azure DevOps では、すべての必須機能と、Azure、オンプレミス環境、さらには他のクラウドとの統合を提供します。 詳細については、[Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops) に関するページをご覧ください。 ガイド付きトレーニングについては、「[Azure DevOps を使用した CI/CD のクイック スタート](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html)」をご覧ください。
+Azure DevOps では、必須機能が用意されているほか、Azure、オンプレミス環境、さらには他のクラウドとの統合が実現されます。 詳細については、[Azure DevOps](https://azure.microsoft.com/services/devops) のページをご覧ください。 ガイド付きトレーニングについては、[クイックスタート: Azure DevOps を使用した CI/CD](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html) に関するページを参照してください。
 
 ### <a name="suggested-skills"></a>推奨されるスキル
 

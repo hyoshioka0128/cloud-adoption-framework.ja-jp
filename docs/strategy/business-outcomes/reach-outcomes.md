@@ -7,13 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 774d910786a5458244298228669126410a78afd8
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 10c58651c21f4b220242fdf540202a87f6d151d4
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194971"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450953"
 ---
+<!-- cSpell:ignore Personalizer -->
 <!-- docsTest:ignore "global reach" -->
 
 # <a name="examples-of-global-reach-outcomes"></a>グローバルな展開の成果の例
@@ -29,6 +30,8 @@ Fortune 500 企業と、それより小規模の企業では、サービスと�
 新しい市場への進出は、変革時の最も重要なビジネス成果の 1 つです。 長い期間をかけずにリソースを市場に迅速にデプロイできるため、営業と運用のリーダーは過去には考えられていなかった選択肢を模索することができます。
 
 - **例:** ある化粧品メーカーが、トレンドを把握しました。 アジア太平洋地域で営業チームが運営されていないにもかかわらず、その地域にいくつかの製品が出荷されています。 リモートの営業チームが必要とする最低限のシステムは小規模なものですが、待機時間はリモート アクセス ソリューションを妨げることになります。 このトレンドから利益を得るために、営業担当副社長は日本および韓国の営業チームと実験をしたいと考えました。 この会社はクラウド移行を完了しているため、必要なシステムを日本と韓国の両方に数日でデプロイすることができました。 これにより、営業担当副社長はこの地域の収益を 3 か月間で _x%_ 増加させることができました。 これら 2 つの市場は世界の他の地域を上回り続け、地域全体の営業活動に繋がっています。
+
+- **例:** 製品をグローバルに出荷するオンライン小売業者は、Azure Bot Service ソリューションを、Translator、Language Understanding (LUIS)、QnA Maker、Text Analytics などの Cognitive Services と共に使用することで、複数のタイムゾーンや複数の言語にわたって顧客と連携することができます。 これにより、顧客は必要な情報を必要なときに、彼らが使用している言語で確実に取得することができます。 小売業者は [Personalizer](https://azure.microsoft.com/services/cognitive-services/personalizer/) サービスを使用して、顧客向けのエクスペリエンスおよびカタログ オファリングをさらにカスタマイズし、地理的なニーズ、好み、および在庫状況が確実に反映されるようにしています。
 
 ## <a name="data-sovereignty"></a>データの主権
 

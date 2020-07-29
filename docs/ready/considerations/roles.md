@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 5527ca51f08b3eaf6a5bb6d022ad5a8696f502b6
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: e88785c98dcf9d5b20ce7d28682541d6c4f9b61e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076107"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479553"
 ---
 # <a name="role-based-access-control"></a>ロールベースのアクセス制御
 
@@ -78,7 +78,7 @@ RBAC を使用すると、組織は大規模なクラウド資産内のさまざ
 | セキュリティ運用 | SecOps | 全般的なセキュリティ監視を行います。 <br> 保存時の暗号化などのセキュリティ ポリシーを確立して適用します。 <br><br> 暗号化キーを管理します。 <br><br> ファイアウォール規則を管理します。 |
 | ネットワーク運用担当者 | NetOps | ルートやピアリングなど、仮想ネットワーク内のネットワーク構成および運用を管理します。 |
 | システム運用担当者 | SysOps | コンピューティングおよびストレージ インフラストラクチャのオプションを指定し、デプロイ済みのリソースを保守します。 |
-| 開発、テスト、および運用担当者 | DevOps | ワークロード機能とアプリケーションを構築してデプロイします。 <br><br> サービスレベル アグリーメント (SLA) やその他の品質基準を満たすように機能およびアプリケーションを運用します。 |
+| 開発、テスト、および運用担当者 | DevOps | ワークロード機能とアプリケーションを構築してデプロイします。 <br><br> サービスレベル アグリーメントやその他の品質基準を満たすように機能およびアプリケーションを運用します。 |
 
 <!-- markdownlint-enable MD033 -->
 

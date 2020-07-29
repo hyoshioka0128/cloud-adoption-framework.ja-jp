@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f7e60e97a38b38351e8f90ac90caf3925225ac68
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ffdfd350247d2cb1c6ff3cd367fbaf12ab6585e3
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075073"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479631"
 ---
 # <a name="improve-landing-zone-operations"></a>ランディング ゾーンの運用の改善
 
@@ -39,6 +39,7 @@ ms.locfileid: "85075073"
 <!-- cSpell:ignore caf -->
 
 ![管理手法](../../_images/manage/caf-manage.png)
+_図 1: CAF 管理手法。_
 
 1. [管理ベースラインの確立](../../manage/azure-server-management/index.md):管理ベースラインは、運用管理の基礎となります。 初期の運用を改善するためには、この最初のステップの下にあるガイダンスがどのランディング ゾーンにも当てはまります。
 2. [ビジネス コミットメントの定義](../../manage/considerations/business-alignment.md):ランディング ゾーン内の各ワークロードの重要度と影響を理解することで、すべてのランディング ゾーンの継続的な管理の向上のための "完了の定義" が確立されます。 このプロセスでは、各ワークロードの信頼性、パフォーマンス、および運用の要件も特定されます。
@@ -50,6 +51,7 @@ ms.locfileid: "85075073"
 セキュリティの強化を始める前に、"完了の定義" とすべての "受け入れ基準" を理解しておくことが重要です。 詳細については、[ランディング ゾーンのテスト駆動開発](./test-driven-development.md)および [Azure でのテスト駆動開発](./azure-test-driven-development.md)に関する記事をご覧ください。
 
 ![クラウド ランディング ゾーンのテスト駆動開発プロセス](../../_images/ready/test-driven-development-process.png)
+_図 2: クラウド ランディング ゾーンのテスト駆動開発プロセス。_
 
 ## <a name="next-steps"></a>次のステップ
 

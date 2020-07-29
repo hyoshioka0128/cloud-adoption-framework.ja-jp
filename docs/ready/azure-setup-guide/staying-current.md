@@ -9,18 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 2761ce6e156a89c0f0bb5f4edb433cbeb1f7fda9
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: a97faee54c05f22c35dd674f74aa38d02456f526
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373035"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450681"
 ---
-<!-- cSpell:ignore jelledruyts andym endjin -->
+<!-- docsTest:ignore "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
+<!-- cSpell:ignore jelledruyts andym endjin AzAdvertizer -->
 
-# <a name="stay-current-with-microsoft-azure"></a>Microsoft Azure を最新の状態に保つ
+# <a name="stay-current-with-azure"></a>Azure を最新の状態に保つ
 
-Microsoft Azure のようなクラウド プラットフォームは、多くの組織がこれまで経験してきたものより早く変化します。 この変化のペースは、組織が人員とプロセスをこの新たなペースに適応させることが必要であることを意味しています。 組織がこの変化に対応するのに責任を負う担当者は、圧倒される思いがすることもあるでしょう。 このセクションで示されているリソースは、最新情報を入手するのに役立ちます。
+Azure のようなクラウド プラットフォームは、多くの組織がこれまで経験してきたものより早く変化します。 この変化のペースは、組織が人員とプロセスをこの新たなペースに適応させることが必要であることを意味しています。 組織がこの変化に対応するのに責任を負う担当者は、圧倒される思いがすることもあるでしょう。 このセクションで示されているリソースは、最新情報を入手するのに役立ちます。
 
 <!-- markdownlint-disable MD025 -->
 
@@ -30,20 +31,11 @@ Microsoft Azure のようなクラウド プラットフォームは、多くの
 
 次のリソースは、Azure に関する最新情報を入手するのに役立ちます。
 
-- [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview)
-  - Service Health アラートによって、進行中のサービス上の問題、計画的なメンテナンス、正常性の勧告についてのタイムリーな通知が提供されます。 このリソースには、Azure から削除される機能に関する情報も含まれます。
-- [Azure の更新情報](https://azure.microsoft.com/updates)
-  - Azure の更新情報をサブスクライブして、製品の更新に関するお知らせを受け取ります。 簡単な概要はより詳細な情報にリンクされているため、更新情報を簡単にフォローできます。
-  - [RSS](https://azurecomcdn.azureedge.net/updates/feed) 経由でサブスクライブします。
-- [Azure のブログ](https://azure.microsoft.com/blog)
-  - この Azure ブログでは、Azure プラットフォームに関する最も重要な発表が行われます。 このブログをフォローして、最新の重要情報を入手してください。
-  - [RSS](https://azurecomcdn.azureedge.net/blog/feed) 経由でサブスクライブします。
-- サービス固有のブログ
-  - Azure サービスごとにブログが発行されています。これらのサービスに依存している場合は、このブログをフォローすることをお勧めします。
-  - 数多くの Azure サービスのブログを利用できます。 Web 検索を使用して、興味のあるブログを見つけてください。
-- [Azure の情報ハブ](https://azureinfohub.azurewebsites.net)
-  - このサイトは、ここに記載されているリソースのほとんどを 1 つにまとめた非公式のリソースです。 個々のサービスへのリンクをフォローして、詳細情報を取得し、サービスに固有のブログを見つけましょう。
-  - [RSS](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure) 経由でサブスクライブします。
+- **Azure Service Health:** [Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) アラートによって、進行中のサービス上の問題、計画メンテナンス、正常性の勧告についてのタイムリーな通知が提供されます。 これらのアラートには、提供終了が予定されている Azure の機能に関する情報も含まれています。
+- **Azure の更新情報:** 製品の更新プログラムに関するお知らせについては、「[Azure の更新情報](https://azure.microsoft.com/updates)」を確認してください。 簡単な概要は追加の詳細にリンクされているため、更新情報を簡単にフォローできます。 [Azure の更新情報の RSS フィード](https://azurecomcdn.azureedge.net/updates/feed)を介してサブスクライブします。
+- **Azure ブログ:** この [Azure ブログ](https://azure.microsoft.com/blog)では、Azure プラットフォームに関する最も重要な発表が行われます。 このブログをフォローして、最新の重要情報を入手してください。 [Azure ブログの RSS フィード](https://azurecomcdn.azureedge.net/blog/feed)を介してサブスクライブします。
+- **サービス固有のブログ:**  個々のさまざまな Azure サービスでブログが発行されています。これらのサービスに依存している場合は、それらをフォローすることができます。 Web 検索で、関心のあるブログを見つけてください。
+- **Azure の情報ハブ:** 非公式の [Azure の情報ハブ](https://azureinfohub.azurewebsites.net)では、ここにリストされているほとんどのリソースがまとめられています。 個々のサービスへのリンクをフォローして、詳細情報を取得し、サービスに固有のブログを見つけましょう。 [Azure の情報ハブの RSS フィード](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure)を介してサブスクライブします。 \*
 
 <!-- markdownlint-disable MD025 -->
 
@@ -51,17 +43,12 @@ Microsoft Azure のようなクラウド プラットフォームは、多くの
 
 <!-- markdownlint-enable MD025 -->
 
-Azure に関する最新情報を入手するのに役立つより詳しいコンテンツについては、ここに記載されたリソースをご覧ください。
+Azure に関する最新情報を入手するのに役立つより詳しいコンテンツについては、次のリソースを確認してください。
 
-- [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
-  - 毎週発行の、Azure を構築しているエンジニアによる動画。 内容は、デモ、質問への回答、分析情報の共有などです。
-  - [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) 経由でサブスクライブします。
-- [Azure グラフ](https://azurecharts.com)*
-  - この視覚化では、過去 6 か月間に加えられたすべての Azure の更新が表示されます。 Azure の変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。
-- [AzAdvertizer](https://www.azadvertizer.net)*
-  - Azure Policy、ポリシー イニシアチブブ、ポリシー エイリアス、ロールベースのアクセス制御 (RBAC) などの Azure ガバナンス機能に関するリリースおよび変更の追跡。
+- [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday): 毎週発行の、Azure を構築しているエンジニアによる動画。 内容は、デモ、質問への回答、分析情報の共有などです。 [Azure Friday の RSS フィード](https://channel9.msdn.com/Shows/Azure-Friday/feed)を介してサブスクライブします。
+- [Azure グラフ](https://azurecharts.com): この視覚化では、過去 6 か月間に加えられたすべての Azure の更新が表示されます。 Azure の変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。 \*
+- [AzAdvertizer](https://www.azadvertizer.net): Azure Policy、ポリシー イニシアチブブ、ポリシー エイリアス、ロールベースのアクセス制御 (RBAC) などの Azure ガバナンス機能に関するリリースおよび変更の追跡。 \*
 - [Azure Weekly](https://azureweekly.info)*
-  - [endjin](https://endjin.com) が提供するこのニュースレターには、Microsoft Azure に関するその週のトップ ニュースの概要が含まれます。 また、興味深い歴史的なコンテンツも含まれています。
-  - [電子メール](https://azureweekly.info)経由でサブスクライブします。
+  - [endjin.com](https://endjin.com) が提供するこのニュースレターには、Microsoft Azure に関するその週のトップ ニュースの概要が含まれます。 また、興味深い歴史的なコンテンツも含まれています。 [Azure Weekly メール](https://azureweekly.info)を介してサブスクライブします。 \*
 
 \* _これらのリソースは、コミュニティによって提供されており、Microsoft が正式に管理するものではありません。_

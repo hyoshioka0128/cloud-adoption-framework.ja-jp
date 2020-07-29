@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8728d9c2dac9e5bea9a59cab01e3399c1ccd780c
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: bcc79f58eef7b455e6cbfee9c6e897af9c5d3b27
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194546"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450885"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure リージョンの決定ガイド
 
@@ -135,7 +135,9 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 **データセンター間の依存関係の評価:** [Azure Migrate の依存関係視覚化ツール](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)は、依存関係の特定を支援できます。 移行の前にこれらのツールを使用することをお勧めします。 グローバルな複雑さに対処する場合は、これは評価プロセスで実行する必要がある手順になります。 [依存関係のグループ化](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)による視覚化は、ワークロードをサポートするために必要な資産の IP アドレスとポートを特定することを支援できます。
 
 > [!IMPORTANT]
-> 2 つの重要な注意点: まず、資産の配置と IP アドレス スキーマを理解している該当分野の専門家が、セカンダリ データセンターに存在している資産を識別する必要があります。 次に、視覚化された下流方向の依存関係とクライアントの両方を評価して、双方向の依存関係を理解することが重要です。
+>
+> - 資産の配置と IP アドレス スキーマを理解している該当分野の専門家が、セカンダリ データセンターに存在している資産を識別する必要があります。
+> - 視覚化された下流方向の依存関係とクライアントの両方を評価して、双方向の依存関係を理解します。
 
 **グローバル ユーザーへの影響の特定:** 前提条件のユーザー プロファイル分析の結果から、グローバル ユーザー プロファイルに影響を受けるすべてのワークロードを特定する必要があります。 移行候補が影響を受けるワークロードの一覧に含まれる場合、移行を準備するアーキテクトは、ネットワークおよび運用の領域の専門家に問い合わせて、ネットワーク ルーティングとパフォーマンスの予想を検証する必要があります。 少なくとも、アーキテクチャには、最も近いネットワーク運用センター (NOC) と Azure 間の ExpressRoute 接続を含める必要があります。 [ExpressRoute 接続の参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)は、必要な接続の構成に役立つことがあります。
 
@@ -144,11 +146,11 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 > [!WARNING]
 > 上記のいずれかの参照アーキテクチャを使用する場合、データ主権要件を遵守するために、レプリケーション プロセスから特定のデータ要素を除外する必要があることがあります。 これにより、昇格プロセスに手順が追加されます。
 
-## <a name="migrate-process-changes"></a>移行プロセスの変更
+## <a name="migration-process-changes"></a>移行プロセスの変更
 
 複数のリージョンにデプロイする必要があるアプリケーションを移行する場合、クラウド導入チームが検討すべきいくつかの考慮事項があります。 これらの考慮事項には、Azure Site Recovery コンテナーの設計、構成/プロセス サーバーの設計、ネットワーク帯域幅の設計、データの同期が含まれます。
 
-### <a name="suggested-action-during-the-migrate-process"></a>移行プロセスで推奨されるアクション
+### <a name="suggested-action-during-the-migration-process"></a>移行プロセス中に推奨されるアクション
 
 **Azure Site Recovery コンテナーの設計:** Azure Site Recovery は、デジタル資産の Azure へのクラウドネイティブのレプリケーションと同期に推奨されるツールです。 Site Recovery では、特定のリージョンと Azure データセンター内の特定のサブスクリプションにバインドされている Site Recovery コンテナーに、資産に関するデータがレプリケートされます。 資産を 2 つ目のリージョンにレプリケートする場合は、2 つ目の Site Recovery コンテナーが必要になることがあります。
 

@@ -1,5 +1,5 @@
 ---
-title: 事業単位と環境をまたいでコストを追跡する
+title: 事業単位、環境、プロジェクトをまたいでコストを追跡する
 description: Azure 向けのクラウド導入フレームワークを使用して、追跡メカニズムを作成するための意思決定と実装の方法を理解します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,18 +7,19 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d838b2bf1e05152fc9273746b264d8f2da3b77e5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 91bc0fce8f22f897b0957eeca9bbbb8fdb714ee6
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194631"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479825"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
 [コスト志向の組織を構築する](../../organize/cost-conscious-organization.md)には、コスト関連データに対する可視性および適切に定義されたアクセス権 (スコープ) が必要です。 このベスト プラクティスに関する記事では、追跡メカニズムを作成するための意思決定と実装の方法について概説します。
 
 ![コスト志向のプロセスの概要](../../_images/ready/cost-optimization-process.png)
+_図 1: コスト志向のプロセスの概要。_
 
 ## <a name="establish-a-well-managed-environment-hierarchy"></a>適切に管理された環境の階層の確立
 
@@ -32,10 +33,7 @@ ms.locfileid: "86194631"
 
 タグ付けは、あらゆるコスト レポートのデータを理解するための主要な方法です。 これは、適切に管理された環境の基本要素です。 また、環境の適切なガバナンスを確立する最初の手順でもあります。
 
-事業単位、環境、およびプロジェクトをまたいでコスト情報を正確に追跡する最初の手順は、タグ付けの標準を定義することです。 2 番目の手順は、タグ付けの標準が確実に適用されていることを確認することです。 次の記事は、これらの各手順を完了するのに役立ちます。
-
-- [名前付けとタグ付けの標準を開発する](../azure-best-practices/naming-and-tagging.md)
-- [ガバナンス MVP を確立してタグ付けの標準を適用する](../../govern/guides/complex/index.md)
+事業単位、環境、およびプロジェクトをまたいでコスト情報を正確に追跡する最初の手順は、タグ付けの標準を定義することです。 2 番目の手順は、タグ付けの標準が確実に適用されていることを確認することです。 次の記事は、[名前付けとタグ付けの標準の作成](../azure-best-practices/naming-and-tagging.md)および[タグ付けの標準を適用するガバナンス MVP の確立](../../govern/guides/complex/index.md)に役立ちます。
 
 ### <a name="resource-organization"></a>リソースの編成
 
@@ -44,6 +42,7 @@ ms.locfileid: "86194631"
 大企業の場合は、次のモデルのように、管理グループ、サブスクリプション、およびリソース グループの階層を作成して、必要な職務を遂行できる適切な可視性レベルを各チームに提供できます。 企業で予算超過を防ぐためにコスト管理が必要な場合は、この構造内のサブスクリプションに Azure Blueprints や Azure Policy などのガバナンス ツールを適用して、将来のコスト エラーを迅速に食い止めることができます。
 
 ![大企業のリソース編成の図](../../_images/govern/large-enterprise-resource-organization.png)
+_図 2: 大企業のリソース編成。_
 
 上の図では、管理グループ階層のルートに各事業単位のノードがあります。 この例の多国籍企業では、地域の事業単位に可視性が必要であるため、階層内の各事業単位の下に地域のノードが作成されています。
 
@@ -66,8 +65,7 @@ ms.locfileid: "86194631"
 
 コストの管理はチームのアクティビティです。 クラウド導入フレームワークの組織の準備に関するセクションでは、少人数のコア チームを定義し、それらのチームによってサポートされるクラウド導入作業について説明しています。 この記事では、チームの定義について詳しく説明し、各チームにコスト管理データに対する適切なレベルの可視性が提供されるように、それぞれのメンバーに割り当てるスコープとロールを定義します。
 
-- "**ロール**" では、さまざまな資産に対してユーザーが実行できることを定義します。
-- "**スコープ**" では、ユーザーがこれらのことを実行できる資産 (ユーザー、グループ、サービス プリンシパル、またはマネージド ID) を定義します。
+"**ロール**" では、さまざまな資産に対してユーザーが実行できることを定義します。 "**スコープ**" では、ユーザーがこれらのことを実行できる資産 (ユーザー、グループ、サービス プリンシパル、またはマネージド ID) を定義します。
 
 一般的なベスト プラクティスとしては、さまざまなロールやスコープにユーザーを割り当てる、最小特権モデルをお勧めします。
 
@@ -128,7 +126,7 @@ Azure Cost Management と Billing の利用を開始するには、[Azure Cost M
 - [推奨に基づくコストの最適化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [コスト アラートを使用し、使用状況と支出を監視する](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
-<-- docsTest: "AWS のコストと使用状況" -->
+<!-- docsTest: "AWS Cost and Usage" -->
 
 ### <a name="use-azure-cost-management-and-billing-to-govern-aws-costs"></a>Azure Cost Management と Billing を使用して AWS のコストを管理する
 

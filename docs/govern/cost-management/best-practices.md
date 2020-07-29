@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6aa2780ba7b788701a71f366b03df4a1ccec32fc
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 1ee767432546a0b3ed5ff1a3a6530eb00fa6506b
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193849"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478312"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -96,7 +96,7 @@ Azure リソースの月額料金を予測するために、利用できるツ�
 
 | Type | 詳細 | 使用法 |
 |---|---|---|
-| **汎用目的** | CPU とメモリのバランスがとれています。 | テストと開発、小規模から中規模のデータベース、小規模から中規模のボリュームに適しています。 | トラフィック Web サーバー。 |
+| **汎用目的** | CPU とメモリのバランスがとれています。 | テストと開発、小規模から中規模のデータベース、トラフィック量が低 - 中程度の Web サーバーに適しています。 |
 | **コンピューティング最適化** | メモリに対する CPU の比が大きくなっています。 | トラフィック量が中程度の Web サーバー、ネットワーク アプライアンス、バッチ処理、アプリ サーバーに適しています。 |
 | **メモリ最適化** | 高いメモリ対 CPU。 | リレーショナル データベース、中から大規模のキャッシュ、インメモリ分析に適しています。 |
 | **ストレージの最適化** | 高いディスク スループットと I/O。 | ビッグ データ、SQL、および NoSQL のデータベースに適しています。 |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 00eefa3b865adf4230a77ed2062bef0a7cf0e854
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 553827517b7ef96c648e56e11287a688cd695af9
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753590"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478007"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>ソフトウェア定義ネットワーク:クラウド DMZ
 
@@ -21,7 +21,7 @@ ms.locfileid: "83753590"
 
 ![セキュリティ保護されたハイブリッド ネットワーク アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/images/dmz-private.png)
 
-このアーキテクチャは、組織がクラウド ベースのワークロードとオンプレミスのワークロードの統合を開始したいが、完全に成熟したクラウド セキュリティ ポリシーを持たない、または 2 つの環境の間でセキュリティで保護された専用の WAN 接続を取得していないシナリオをサポートするように設計されています。 その結果、オンプレミス サービスをセキュリティで確実に保護するために、クラウド ネットワークを非武装地帯のように扱う必要があります。
+このアーキテクチャは、組織がクラウド ベースのワークロードとオンプレミスのワークロードの統合を開始したいが、完全に成熟したクラウド セキュリティ ポリシーを持たない、または 2 つの環境の間でセキュリティで保護された専用の WAN 接続を取得していないシナリオをサポートするように設計されています。 その結果、オンプレミス サービスをセキュリティで確実に保護するために、クラウド ネットワークを DMZ のように扱う必要があります。
 
 DMZ は、ファイアウォールやパケット検査などのセキュリティ機能を実装するために、ネットワーク仮想アプライアンス (NVA) をデプロイします。 オンプレミスとクラウド ベースのアプリケーションまたはサービスとの間を通過するトラフィックは、監査できるように DMZ を通過する必要があります。 VPN 接続および DMZ ネットワークによって許可されるトラフィックを決定する規則は、IT セキュリティ チームが厳密に管理します。
 

@@ -1,5 +1,5 @@
 ---
-title: Azure イノベーション:アプリを使用した連携
+title: Azure イノベーション:アプリケーションを介したエンゲージメント
 description: 既存の Web アプリと API アプリを簡単に最新化し、クラウドネイティブ アプリを構築するのに役立つ Azure サービスについて説明します。
 author: billyclaymyersmsft
 ms.author: wimyers
@@ -9,22 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1ea314a40af6ce271a3563773acce783ac956201
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: c54ae037cef0486f27a4a7fc441e643a1678dd03
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373307"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478567"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
-# <a name="engage-customers-through-apps"></a>アプリを使用したカスタマー エンゲージメントの構築
+# <a name="engage-customers-through-applications"></a>アプリケーションを介したカスタマー エンゲージメント
 
-アプリによるイノベーションには、オンプレミスでホストされている既存のアプリの最新化と、コンテナーまたはサーバーレス テクノロジを使用したクラウドネイティブなアプリの構築の両方が含まれます。 Azure では、.NET、.NET Core、Java、Node.js、Ruby、Python、または PHP で記述された既存の Web アプリや API アプリを簡単に最新化して Azure にデプロイできるよう支援する PaaS サービス (Azure App Service など) が提供されます。
+アプリケーションによるイノベーションには、オンプレミスでホストされている既存のアプリケーションの最新化と、コンテナーまたはサーバーレス テクノロジを使用したクラウドネイティブなアプリケーションの構築の両方が含まれます。 Azure では、.NET、.NET Core、Java、Node.js、Ruby、Python、または PHP で記述された既存の Web アプリや API アプリを簡単に最新化して Azure にデプロイできるよう支援する PaaS サービス (Azure App Service など) が提供されます。
 
-オープン標準のコンテナー モデルにより、Azure Kubernetes Services、Azure Container Instances、Web App for Containers などのマネージド サービスを使用したマイクロサービスの構築、既存のアプリのコンテナー化、Azure へのそれらのデプロイが簡単になります。 Azure Functions や Azure Logic Apps などのサーバーレス テクノロジでは、従量課金モデル (使用した分だけ支払う) が使用され、インフラストラクチャのデプロイと管理ではなく、アプリケーションの構築に集中できます。
-
-<!-- markdownlint-disable MD025 -->
+オープン標準のコンテナー モデルにより、Azure Kubernetes Services、Azure Container Instances、Web App for Containers などのマネージド サービスを使用したマイクロサービスの構築、既存のアプリケーションのコンテナー化、Azure へのそれらのデプロイが簡単になります。 Azure Functions や Azure Logic Apps などのサーバーレス テクノロジでは、従量課金モデル (使用した分だけ支払う) が使用され、インフラストラクチャのデプロイと管理ではなく、アプリケーションの構築に集中できます。
 
 ## <a name="deliver-value-faster"></a>[より短期間で価値を届ける](#tab/DeliverValueFaster)
 
@@ -41,8 +39,8 @@ Azure App Service では、ASP.NET、ASP.NET Core、Java、Ruby、Node.js、PHP�
 Azure App Service のデプロイを構成または監視するには:
 
 1. **[App Service]** に移動します。
-2. 新しいサービスを構成する: **[追加]** を選択し、プロンプトに従います。
-3. 既存のサービスを管理する:ホストされているアプリケーションの一覧から目的のアプリを選択します。
+2. 新しいサービスを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存のサービスを管理する: ホストされているアプリケーションの一覧から目的のアプリケーションを選択します。
 
 ::: zone target="chromeless"
 
@@ -56,7 +54,7 @@ Azure App Service のデプロイを構成または監視するには:
 
 ### <a name="azure-cognitive-services"></a>Azure Cognitive Services
 
-Azure Cognitive Services では、Microsoft がサポートする AI と機械学習アルゴリズムを利用できる一連の API を介して、高度なインテリジェンスをアプリに直接取り込むことができます。
+Azure Cognitive Services では、Microsoft がサポートする AI と機械学習アルゴリズムを利用できる一連の API を介して、高度なインテリジェンスをアプリケーションに直接取り込むことができます。
 
 <!-- markdownlint-disable MD024 -->
 
@@ -65,8 +63,8 @@ Azure Cognitive Services では、Microsoft がサポートする AI と機械�
 Azure Cognitive Service デプロイを構成または監視するには、次の手順に従います。
 
 1. **[Cognitive Services]** に移動します。
-2. 新しいサービスを構成する: **[追加]** を選択し、プロンプトに従います。
-3. 既存のサービスを管理する:ホステッド サービスの一覧から目的のサービスを選択します。
+2. 新しいサービスを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存のサービスを管理する: ホストされているサービスの一覧から目的のサービスを選択します。
 
 ::: zone target="chromeless"
 
@@ -84,11 +82,11 @@ Azure Bot Service では、AI と機械学習を使用して、顧客と対話�
 
 #### <a name="action"></a>アクション
 
-Azure Bot Services デプロイを構成または監視するには:
+Azure Bot Service デプロイを構成または監視するには、次の手順に従います。
 
 1. **[Bot Services]** に移動します。
-2. 新しいサービスを構成する: **[追加]** を選択し、プロンプトに従います。
-3. 既存のサービスを管理する:ホステッド サービスの一覧から目的のボットを選択します。
+2. 新しいサービスを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存のサービスを管理する: ホストされているサービスの一覧から目的のボットを選択します。
 
 ::: zone target="chromeless"
 
@@ -108,7 +106,7 @@ Azure Bot Services デプロイを構成または監視するには:
 
 モバイル アプリの人気が上がり続ける中、さまざまな構成を持つ実際のデバイスでテストを自動化できるプラットフォームに対するニーズが増えています。 Visual Studio App Center は、iOS、Android、Windows、macOS をまたいでアプリケーションをテストできる場所だけでなく、Azure Application Insights を使用し、テレメトリをすばやく簡単に分析できる監視プラットフォームも提供します。 詳細については、[Visual Studio App Center](https://docs.microsoft.com/appcenter) に関するページを参照してください。
 
-Visual Studio App Center では、1 回の呼び出しによって複数のプラットフォームでアプリに通知を送信できる通知サービスも提供されます。各通知サービスに個別に連絡する必要はありません。 詳細については、「[Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push)」を参照してください。
+Visual Studio App Center からは通知サービスも提供されます。1 回の呼び出しでプラットフォームに関係なく通知をアプリケーションに送信できます。通知サービス別に連絡する必要がありません。 詳細については、「[Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push)」を参照してください。
 
 ### <a name="learn-more"></a>詳細情報
 
@@ -123,7 +121,7 @@ Visual Studio App Center では、1 回の呼び出しによって複数のプ�
 - [Azure SDK for Go のドキュメント](https://docs.microsoft.com/azure/go)
 - [DevOps ソリューション](https://azure.microsoft.com/solutions/devops)
 
-## <a name="create-cloud-native-apps"></a>[クラウドネイティブなアプリの作成](#tab/CloudNative)
+## <a name="create-cloud-native-applications"></a>[クラウドネイティブ アプリケーションの作成](#tab/CloudNative)
 
 ### <a name="what-are-cloud-native-applications"></a>クラウドネイティブ アプリケーションとは
 
@@ -135,7 +133,7 @@ Visual Studio App Center では、1 回の呼び出しによって複数のプ�
 
 ### <a name="microservices"></a>マイクロサービス
 
-マイクロサービスは、独立した小さなモジュールで構成されるアプリが、明確に定義された API コントラクトを使用して相互にやり取りするソフトウェア アーキテクチャ スタイルです。 サービスのモジュールは単一の機能を実装した小さなブロックであり、それぞれが高度に切り離されています。 マイクロサービスは次のことを支援します。
+マイクロサービスは、独立した小さなモジュールで構成されるアプリケーションが、明確に定義された API コントラクトを使用して相互にやり取りするソフトウェア アーキテクチャ スタイルです。 サービスのモジュールは単一の機能を実装した小さなブロックであり、それぞれが高度に切り離されています。 マイクロサービスは次のことを支援します。
 
 - サービスを個別に構築する。
 - サービスを個別にスケーリングする。
@@ -152,8 +150,8 @@ Visual Studio App Center では、1 回の呼び出しによって複数のプ�
 AKS サービスを構成または監視するには:
 
 1. **Azure Kubernetes Services** に移動します。
-2. 新しいサービスを構成する: **[追加]** を選択し、プロンプトに従います。
-3. 既存のサービスを管理する:一覧から目的の Kubernetes サービスを選択します。
+2. 新しいサービスを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存のサービスを管理する: 一覧から目的の Kubernetes サービスを選択します。
 
 ::: zone target="chromeless"
 
@@ -179,7 +177,7 @@ Azure Functions では、小さなコード単位 (関数) をクラウドで実
 
 Azure Functions ランタイムでは、C#、Java、JavaScript、Python など、さまざまな言語がサポートされています。 一覧については、「[Azure Functions でサポートされている言語](https://docs.microsoft.com/azure/azure-functions/supported-languages)」をご覧ください。
 
-関数のもう 1 つの利点は、HTTPTriggers、TimerTriggers、他の Azure サービス (Blob Storage、EventGrid、ServiceBus など) からのトリガーなど、さまざまなアクションやイベントによってトリガーできることです。 トリガーとバインドの詳細については、「[Azure Functions でのトリガーとバインドの概念](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)」を参照してください。
+関数のもう 1 つの利点は、HTTP トリガー、タイマー トリガー、他の Azure サービス (Blob Storage、Event Grid、Service Bus など) からのトリガーなど、さまざまなアクションやイベントによってトリガーできることです。 トリガーとバインドの詳細については、「[Azure Functions でのトリガーとバインドの概念](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)」を参照してください。
 
 #### <a name="action"></a>アクション
 
@@ -187,7 +185,7 @@ Azure Functions デプロイを構成または監視するには:
 
 1. **[Function App]** に移動します。
 2. 新しい関数アプリを構成します。 **[追加]** を選択し、プロンプトに従います。
-3. 既存の関数アプリを管理します。関数アプリの一覧から目的のアプリを選択します。
+3. 既存の関数アプリを管理します。一覧から目的の関数アプリを選択します。
 
 ::: zone target="chromeless"
 
@@ -201,11 +199,11 @@ Azure Functions デプロイを構成または監視するには:
 
 ### <a name="serverless-solutions-azure-logic-apps"></a>サーバーレス ソリューション:Azure Logic Apps
 
-異なるシステム間で必要になる複雑な統合コードを記述せずに、データとアプリを統合します。 Azure Logic Apps によりサーバーレス ワークフローを視覚的に作成し、独自の API やサーバーレス関数のほか、Salesforce、Microsoft Office 365、Dropbox など、すぐに使えるサービスとしてのソフトウェア (SaaS) コネクタを使用できます。
+異なるシステム間で必要になる複雑な統合コードを記述せずに、データとアプリケーションを統合します。 Azure Logic Apps によりサーバーレス ワークフローを視覚的に作成し、独自の API やサーバーレス関数のほか、Salesforce、Microsoft Office 365、Dropbox など、すぐに使えるサービスとしてのソフトウェア (SaaS) コネクタを使用できます。
 
 #### <a name="action"></a>アクション
 
-Azure Logic Apps を構成または監視するには、次の手順に従います。
+Azure Logic Apps を構成または監視するには:
 
 1. **[Logic Apps]** に移動します。
 2. 新しいロジック アプリを構成します。 **[追加]** を選択し、プロンプトに従います。
@@ -230,8 +228,8 @@ Azure Logic Apps を構成または監視するには、次の手順に従いま
 API Management サービスを構成または監視するには:
 
 1. **[API Management サービス]** に移動します。
-2. 新しいサービスを構成する: **[追加]** を選択し、プロンプトに従います。
-3. 既存のサービスを管理する:一覧から目的のサービスを選択します。
+2. 新しいサービスを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存のサービスを管理する: 一覧から目的のサービスを選択します。
 
 ::: zone target="chromeless"
 
@@ -245,19 +243,19 @@ API Management サービスを構成または監視するには:
 
 ### <a name="containers"></a>Containers
 
-アプリケーション ポートフォリオを最新化する場合、Azure には、既存のアプリをコンテナーに移行し、短期間でユーザーに価値を提供できるように、クラウドネイティブなマイクロサービス アプリを構築するためのさまざまなコンテナー サービスが用意されています。 エンドツーエンドの開発者向けツールと CI/CD ツールを利用し、コンテナー化されたアプリケーションを開発、更新、デプロイします。 Azure Active Directory と統合されるフル マネージド Kubernetes コンテナー オーケストレーション サービスを利用し、大規模にコンテナーを管理します。 アプリを最新化する過程のどの段階にあっても、セキュリティ要件を満たしながら、コンテナー化アプリケーションの開発を加速します。
+アプリケーション ポートフォリオを最新化する場合、Azure には、既存のアプリケーションをコンテナーに移行し、短期間でユーザーに価値を提供できるように、クラウドネイティブなマイクロサービス アプリケーションを構築するためのさまざまなコンテナー サービスが用意されています。 エンドツーエンドの開発者向けツールと CI/CD ツールを利用し、コンテナー化されたアプリケーションを開発、更新、デプロイします。 Azure Active Directory と統合されるフル マネージド Kubernetes コンテナー オーケストレーション サービスを利用し、大規模にコンテナーを管理します。 アプリケーションを最新化する過程のどの段階にあっても、セキュリティ要件を満たしながら、コンテナー化アプリケーションの開発を加速します。
 
 ### <a name="containers-azure-container-instances"></a>コンテナー: Azure Container Instances
 
-サーバーレスなマネージド Azure 環境内で Docker コンテナーをオンデマンドで実行します。 Azure Container Instances は、オーケストレーションを必要とせずに分離コンテナー内で運用できる、あらゆるシナリオに対応するソリューションです。 Container Instances でワークロードを実行すると、アプリケーションを実行するインフラストラクチャの管理ではなく、アプリケーションの設計と構築に集中できます。
+サーバーレスなマネージド Azure 環境内で Docker コンテナーをオンデマンドで実行します。 Azure Container Instances は、オーケストレーションを必要とせずに分離コンテナー内で運用できる、あらゆるシナリオに対応するソリューションです。 コンテナー インスタンスでワークロードを実行すると、アプリケーションを実行するインフラストラクチャの管理ではなく、アプリケーションの設計と構築に集中できます。
 
 #### <a name="action"></a>アクション
 
 コンテナー インスタンスを構成または監視するには、次の手順に従います。
 
 1. **[Container Instances]** に移動します。
-2. 新しいコンテナー インスタンスを構成する: **[追加]** を選択し、プロンプトに従います。
-3. 既存のコンテナー インスタンスを管理する:一覧から目的のコンテナー インスタンスを選択します。
+2. 新しいコンテナー インスタンスを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存のコンテナー インスタンスを管理する: 一覧から目的のコンテナー インスタンスを選択します。
 
 ::: zone target="chromeless"
 
@@ -287,11 +285,11 @@ Azure Front Door により、世界中にアプリケーションを配信する
 
 #### <a name="action"></a>アクション
 
-フロント ドアを構成または監視するには、次の手順に従います。
+Front Door インスタンスを構成または監視するには、次の手順に従います。
 
 1. **[フロント ドア]** に移動します。
-2. 新しいフロント ドアを構成する: **[追加]** を選択し、プロンプトに従います。
-3. 既存のフロント ドアを管理する: 一覧から目的のフロント ドアを選択します。
+2. 新しい Front Door インスタンスを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存の Front Door を管理する: 一覧から目的の Front Door インスタンスを選択します。
 
 ::: zone target="chromeless"
 
@@ -312,8 +310,8 @@ Traffic Manager では、さまざまなルールに基づいてルーティン�
 Traffic Manager プロファイルを構成または監視するには:
 
 1. **[Traffic Manager プロファイル]** に移動します。
-2. 新しいプロファイルを構成する: **[追加]** を選択し、プロンプトに従います。
-3. 既存のプロファイルを管理する:一覧から目的のプロファイルを選択します。
+2. 新しいプロファイルを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存のプロファイルを管理する: 一覧から目的のプロファイルを選択します。
 
 ::: zone target="chromeless"
 
@@ -334,8 +332,8 @@ Azure では、資産をユーザーの近くにキャッシュすることで�
 Azure CDN プロファイルを構成または監視するには:
 
 1. **[CDN プロファイル]** に移動します。
-2. 新しいプロファイルを構成する: **[追加]** を選択し、プロンプトに従います。
-3. 既存のプロファイルを管理する:一覧から目的のプロファイルを選択します。
+2. 新しいプロファイルを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存のプロファイルを管理する: 一覧から目的のプロファイルを選択します。
 
 ::: zone target="chromeless"
 
@@ -351,4 +349,4 @@ Azure CDN プロファイルを構成または監視するには:
 
 - [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
 - [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager)
-- [Content Delivery Network](https://docs.microsoft.com/azure/cdn)
+- [Azure Content Delivery Network](https://docs.microsoft.com/azure/cdn)

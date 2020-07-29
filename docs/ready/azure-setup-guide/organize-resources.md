@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 19392b3fc1027cec77b0111bcd46d86cd58d33a2
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 1dc3abc11ba3163934a5c9b58c0ed496ec0dbfd8
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373120"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450698"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
-# <a name="organize-your-azure-resources"></a>Azure リソースの整理
+# <a name="organize-your-azure-resources-effectively"></a>Azure リソースの効果的な整理
 
-クラウドベースのリソースを整理することは、ワークロードに関連するコストをセキュリティ保護、管理、および追跡するために不可欠です。 お使いのリソースを整理するには、管理グループ階層を定義し、十分に考慮された名前付け規則に従って、リソースのタグ付けを適用してください。
+クラウドベースのリソースを整理することは、ワークロードに関連するコストをセキュリティ保護、管理、および追跡するために不可欠です。 ご利用のリソースを整理するには、管理グループ階層を定義し、十分に考慮された名前付け規則に従って、リソースのタグ付けを適用してください。
 
 <!-- markdownlint-disable MD024 MD025 -->
 
@@ -28,7 +28,7 @@ ms.locfileid: "86373120"
 
 Azure には、管理グループ、サブスクリプション、リソース グループ、およびリソースという 4 つのレベルの管理スコープが用意されています。 次の図に、これらのレベルの関係を示します。
 
-   ![管理階層レベルの関係を示す図](./media/organize-resources/scope-levels.png)
+   ![管理階層レベルの関係を示す図](./media/organize-resources/scope-levels.png) _図 1: 4 つの管理スコープ レベルが相互にどのように関連しているか。_
 
 - **管理グループ:** これらのグループは、複数のサブスクリプションのアクセス、ポリシー、コンプライアンスを管理するのに役立つコンテナーです。 管理グループ内のすべてのサブスクリプションは、管理グループに適用された条件を自動的に継承します。
 - **サブスクリプション:** サブスクリプションでは、ユーザー アカウントと、それらのユーザー アカウントによって作成されたリソースが論理的に関連付けられます。 各サブスクリプションには、作成して使用できるリソース量に対する制限やクォータがあります。 組織では、ユーザー、チーム、またはプロジェクトによって作成されるリソースとコストを管理するためにサブスクリプションを使用できます。
@@ -63,7 +63,10 @@ Azure には、管理グループ、サブスクリプション、リソース �
 サブスクリプションを使用すると、コストと、ユーザー、チーム、またはプロジェクトによって作成されるリソースを管理できます。
 
 1. [[サブスクリプション]](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) に移動します。
-1. **[追加]** を選択します。
+2. **[追加]** を選択します。
+
+> [!NOTE]
+> サブスクリプションはプログラムで作成することもできます。 詳細については、[Azure サブスクリプションをプログラムで作成する方法](https://docs.microsoft.com/azure/azure-resource-manager/management/programmatically-create-subscription?tabs=azure-powershell)に関するページを参照してください。
 
 #### <a name="create-a-resource-group"></a>リソース グループを作成する
 
@@ -129,9 +132,9 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 適切な命名規則を使用することで、Azure portal、請求書、自動化スクリプト内でリソースを識別しやすくなります。 名前付け戦略には、リソース名のコンポーネントとして、ビジネスと運用の詳細を含める必要があります。
 
-- この戦略のビジネスに関連した面では、チームを識別するために必要な組織情報がリソース名に含まれるよう徹底する必要があります。 リソース コストを担当するビジネス オーナーと共にリソースを使用します。
+この戦略のビジネスに関連した面では、チームを識別するために必要な組織情報がリソース名に含まれるよう徹底する必要があります。 リソース コストを担当するビジネス オーナーと共にリソースを使用します。
 
-- 運用の面では、IT チームが必要とする情報が名前に含まれるよう徹底する必要があります。 ワークロード、アプリケーション、環境、重要度など、リソースの管理に役立つ情報を識別する情報を使用します。
+運用の面では、IT チームが必要とする情報が名前に含まれるよう徹底する必要があります。 ワークロード、アプリケーション、環境、重要度など、リソースの管理に役立つ情報を識別する情報を使用します。
 
 リソースの種類によって、[名前付け規則と制限事項](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)が異なります。 特に企業のクラウド導入作業をサポートすることを目的とする詳細と推奨事項については、クラウド導入フレームワークの[名前付けとタグ付けに関するガイダンス](../azure-best-practices/naming-and-tagging.md)を参照してください。
 

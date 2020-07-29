@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 81a6ca5f7b642cb2e8723e6861bf61afe8242003
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 5dca866a7d948caa59bba7981fc3569f7a10f47d
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077034"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479529"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>ランディング ゾーン用のテスト駆動開発 (TDD)
 
@@ -55,7 +55,7 @@ ms.locfileid: "85077034"
 - 提案されたネットワーク設計に合わせたネットワークのセグメント化。
 - デジタル資産の検出に合わせたワークロードをホストするための、コンピューティング、ストレージ、およびネットワーク リソースへのアクセス。
 - 使いやすさを向上させるためのスキーマの名前付けとタグ付け。
-- このような環境は、パブリック インターネットにアクセスできる "_非武装地帯 (DMZ)_ " として扱う必要があります。
+- このような環境は、パブリック インターネットにアクセスできる境界ネットワークとして扱う必要があります。
 - クラウド導入チームは、導入作業中に、サービス構成を変更するために環境に一時的にアクセスすることを希望しています。
 - 注意喚起: 運用リリースの前に、これらのワークロードには、運用管理の目的で継続的な ID とアクセスを管理するために、企業の ID プロバイダーとの統合が必要になります。 その時点で、クラウド導入チームのアクセス権を取り消す必要があります。
 

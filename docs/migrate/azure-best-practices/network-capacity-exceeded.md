@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2246b71dea7397b724b69b429827ffd9b0801e5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: af71b68e61eff8c8c6ce508f2d91a19fece06583
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194512"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450902"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "86194512"
 
 ## <a name="general-scope-expansion"></a>全般的な範囲の拡大
 
-この範囲の拡大によって要求される作業の大半は、移行の前提条件、アクセス、および移行プロセス中に発生します。
+この範囲の拡大によって要求される作業の多くは、移行の前提条件、アクセス、および移行フェーズ中に発生します。
 
 ## <a name="suggested-prerequisites"></a>推奨される前提条件
 
@@ -53,11 +53,11 @@ Azure への接続が利用できる場合、特にワークロードの移行�
 
 **ずれの分析:** オフラインで転送される各資産は、ストレージおよび構成のずれについて分析する必要があります。 ストレージのずれは、時間の経過での基盤となるストレージの変化量です。 構成のずれは、時間の経過での資産の構成における変化です。 ストレージがコピーされた時点から、資産が運用環境に昇格される時点まで、すべてのずれが失われる可能性があります。 移行した資産でそのずれを反映する必要がある場合、ローカル資産と移行した資産の間で、一部の形式の同期が必要になります。 これには、移行の実行中の考慮事項に関するフラグを設定する必要があります。
 
-## <a name="migrate-process-changes"></a>移行プロセスの変更
+## <a name="migration-process-changes"></a>移行プロセスの変更
 
 オフラインの転送メカニズムを使用する場合、[レプリケーション プロセス](../migration-considerations/migrate/replicate.md)はおそらく必要ではありません。 とはいえ、[同期プロセス](../migration-considerations/migrate/replicate.md)はまだ要件になっていることがあります。 評価プロセス中に完了したずれの分析結果を理解すると、資産がオフラインで転送されている場合、移行中に必要となるタスクがわかります。
 
-### <a name="suggested-action-during-the-migrate-process"></a>移行プロセスで推奨されるアクション
+### <a name="suggested-action-during-the-migration-process"></a>移行プロセス中に推奨されるアクション
 
 **ストレージのコピー:** このアプローチは、HDFS、バックアップ、アーカイブ、ファイル サーバー、またはアプリケーションのデータの転送に使用されることがあります。 既存の技術的なガイダンスでは、このアプローチを使用して、[HDFS ストア](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)から、または [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)、[データ コピー サービス](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)を使用してディスクから Data Box にデータを転送する方法について説明します。
 

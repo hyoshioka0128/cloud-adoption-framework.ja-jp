@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8314433ae406bbc97ddc8ef998cfeb5d8cf49d20
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 8c2312428c78691c1597e16083d11b493df90a41
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195039"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479570"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -27,6 +27,7 @@ Azure のネットワーク機能の設計と実装は、クラウド導入作�
 ランディング ゾーン環境にデプロイするアプリケーションまたはサービスごとに、使用するネットワーク ツールまたはサービスを決定するために役立つ開始点として次のデシジョン ツリーを使用してください。
 
 ![Azure ネットワーク サービスのデシジョン ツリー](../../_images/ready/network-decision-tree.png)
+_図 1: Azure ネットワーク サービスのデシジョン ツリー。_
 
 ### <a name="key-questions"></a>主な質問
 

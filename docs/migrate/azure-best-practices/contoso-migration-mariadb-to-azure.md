@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 84bd6cbef97428aacb81d4d6136439a1c9c1f3f6
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: a3ac7a38018f7ca44115fb1d46396e16961dfe3e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86199373"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478431"
 ---
 <!-- TODO: Verify GraphDBMS term -->
 <!-- cSpell:ignore ColumnStore GraphDBMS mysqldump Navicat phpMyAdmin -->
@@ -22,41 +22,44 @@ ms.locfileid: "86199373"
 
 この記事では、Contoso という架空の会社が、オンプレミスの MariaDB オープンソース データベース プラットフォームの Azure への移行をどのように計画し、実行したかについて説明します。
 
-Contoso は、多数のストレージ エンジン、キャッシュとインデックスのパフォーマンス、各機能でのオープンソースのサポート、拡張機能、分析用の ColumnStore のサポートにより、MariaDB over MySQL を使用しています。 移行の目標は、MariaDB をサポートするために必要な環境の管理について心配せずに、これを引き続き使用することです。
+Contoso では、次の理由により、MySQL ではなく MariaDB が使用されています。
+- 多数のストレージ エンジン。 
+- キャッシュとインデックスのパフォーマンス。
+- 機能と拡張機能によるオープンソースのサポート。
+- 分析用の ColumnStore のサポート。
+
+会社の移行の目標は、MariaDB をサポートするために必要な環境の管理について心配せずに、これを引き続き使用することです。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
-IT リーダーシップ チームは、ビジネス パートナーと密接に連絡を取り合い、彼らがこの移行で何を達成しようとしているのかを理解しました。
+IT リーダーシップ チームは、ビジネス パートナーと密接に連絡を取り合い、彼らがこの移行で何を達成しようとしているのかを理解しました。 目的は次のとおりです。
 
-- **可用性の向上。** Contoso は、オンプレミスの MariaDB 環境で可用性の問題を抱えていました。ビジネス部門は、このデータ ストアを使用するアプリケーションの信頼性を高めることを求めています。
-
+- **可用性の向上。** Contoso は、オンプレミスの MariaDB 環境で可用性の問題を抱えていました。 ビジネス部門は、このデータ ストアを使用するアプリケーションの信頼性を高めることを求めています。
 - **効率化。** Contoso では、不要な手順を排除し、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は、顧客の要求により迅速に対応するために、IT 部門に対して、時間やコストを無駄にせず、迅速に作業を行うことを求めています。
-
-- **機敏性の向上。**  Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済での成功を実現するために、市場の変化に遅れることなく迅速に対応できる必要があります。 ビジネスの妨げになったり、障害になったりしないようにする必要があります。
-
-- **スケール。** ビジネスが順調に成長していく中で、Contoso IT は、同じペースで拡張できるシステムを提供する必要があります。
+- **機敏性の向上。** Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済で成功を収めるために、市場の変化よりも迅速に対応する必要があります。 ビジネスの妨げや、障害にならないようにする必要があります。
+- **スケール。** ビジネスが順調に成長している中で、Contoso IT 部門は、同じペースで拡張するシステムを提供する必要があります。
 
 ## <a name="migration-goals"></a>移行の目標
 
-Contoso クラウド チームは、この移行の目標を明確にしました。それらを使用して最適な移行方法を決定します。
+Contoso クラウド チームは、この移行の目標を設定しました。 これらの目標を使用して、最良の移行方法を決定しました。
 
 | 必要条件 | 詳細 |
 | --- | --- |
 | **可用性** | 現在、社内スタッフは、MariaDB インスタンスのホスティング環境で苦労しています。 Contoso は、データベース レイヤーの可用性を 99.99% に近づけたいと考えています。 |
-| **スケーラビリティ** | オンプレミスのデータベース ホストの容量が急速に不足ししているため、Contoso は、現在の制限を超えてインスタンスをスケーリングする方法や、ビジネス環境が変化した場合にインスタンスをスケールダウンしてコストを節約する方法を必要としています。 |
+| **スケーラビリティ** | オンプレミスのデータベース ホストの容量が急速に減っています。 Contoso は、現在の制限を超えてインスタンスをスケーリングする方法や、ビジネス環境が変化した場合にインスタンスをスケールダウンしてコストを節約する方法を必要としています。 |
 | **パフォーマンス** | Contoso の人事 (HR) 部門には、毎日、毎週、および毎月実行される複数のレポートがあります。 これらのレポートを実行すると、従業員向けアプリケーションで重大なパフォーマンスの問題が発生することがわかりました。 アプリケーションのパフォーマンスに影響を与えずに、レポートを実行する必要があります。 |
 | **Security** | Contoso は、データベースに内部アプリケーションだけがアクセスでき、インターネット経由で表示およびアクセスできないことがわかっている必要があります。 |
-| **Monitoring** | 現在、Contoso では、ツールを使用して MariaDB のメトリックを監視し、CPU、メモリ、またはストレージに問題があるときに通知されるようにしています。 Azure でも、この同じ機能を利用したいと考えています。 |
-| **ビジネス継続性** | HR データ ストアは Contoso の日常業務の重要な部分であるため、破損したり、復元が必要になったりした場合に、ダウンタイムを最小限に抑える必要があります。 |
-| **Azure** | Contoso は、アプリケーションを VM で実行せずに Azure に移行することを望んでいます。 Contoso の要件には、データ層に Azure PaaS サービスを使用することが示されています。 |
+| **Monitoring** | 現在、Contoso では、ツールを使用して MariaDB データベースのメトリックを監視し、CPU、メモリ、またはストレージに問題があるときに通知されるようにしています。 会社は、Azure でもこの同じ機能を利用したいと考えています。 |
+| **ビジネス継続性** | HR データ ストアは Contoso の日常業務の重要な部分です。 破損したり、復元が必要になったりした場合に、ダウンタイムを最小限に抑える必要があります。 |
+| **Azure** | Contoso は、アプリケーションを VM で実行せずに Azure に移行することを望んでいます。 Contoso の要件には、データ層に Azure のサービスとしてのプラットフォーム (PaaS) サービスを使用することが示されています。 |
 
 ## <a name="solution-design"></a>ソリューション設計
 
-Contoso は、目標と要件を明確にした後、デプロイ ソリューションを設計およびレビューし、移行に使用するツールとサービスを含め、移行プロセスを確認します。
+Contoso は、目標と要件を明確にした後、デプロイ ソリューションを設計してレビューし、移行プロセスを確認します。 移行に使用するツールとサービスも識別されます。
 
 ### <a name="current-application"></a>現在のアプリケーション
 
-MariaDB は、会社の HR 部門のあらゆる側面に使用される従業員データをホストしています。 [LAMP ベース](https://wikipedia.org/wiki/LAMP_(software_bundle))のアプリケーションは、従業員の HR 要求を処理するフロントエンドとして使用されています。 Contoso は世界中に 100,000 人の従業員を抱えているので、データベースのアップタイムが非常に重要となります。
+MariaDB データベースでは、会社の HR 部門のあらゆる側面に使用される従業員データがホストされています。 [LAMP ベース](https://wikipedia.org/wiki/LAMP_(software_bundle))のアプリケーションは、従業員の HR 要求を処理するフロントエンドとして使用されています。 Contoso は世界中に 100,000 人の従業員を抱えているので、データベースのアップタイムが重要となります。
 
 ### <a name="proposed-solution"></a>提案されるソリューション
 
@@ -68,13 +71,13 @@ MariaDB は、会社の HR 部門のあらゆる側面に使用される従業�
 
 ソリューション設計プロセスの一環として、Contoso は MariaDB データベースをホストするための Azure の機能を確認しました。 Azure の使用を決定する際に、次の考慮事項が役立ちました。
 
-- Azure SQL と同様に、Azure Database for MariaDB では[ファイアウォール規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules)を使用できます。
+- Azure SQL Database と同様に、Azure Database for MariaDB では[ファイアウォール規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules)を使用できます。
 - インスタンスにパブリックにアクセスできないように、Azure Database for MariaDB を [Azure Virtual Network](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-vnet) で使用できます。
 - Azure Database for MariaDB には、Contoso が監査担当者のために満たす必要がある、必須のコンプライアンス認定とプライバシー認定があります。
 - 読み取りレプリカを使用すると、レポートおよびアプリケーション処理のパフォーマンスが向上します。
-- [Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) を使用して、サービスを内部ネットワーク トラフィックだけに公開できます (パブリック アクセスなし)。
+- [Azure Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) を使用して、サービスを内部ネットワーク トラフィックだけに公開できます (パブリック アクセスなし)。
 - Contoso では、将来、MariaDB ColumnStore および GraphDBMS データベース モデルを使用する可能性を検討しているため、Azure Database for MySQL に移行しないことを選択しました。
-- 選択されたゲートウェイ (ExpressRoute またはサイト間 VPN) に基づいて、アプリケーションからデータベースへの[帯域幅と待機時間](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)が十分に確保されます。
+- 選択されたゲートウェイ (Azure ExpressRoute またはサイト間 VPN) に基づいて、アプリケーションからデータベースへの[帯域幅と待機時間](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)が十分に確保されます。
 
 ### <a name="solution-review"></a>ソリューションのレビュー
 
@@ -87,7 +90,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 ## <a name="proposed-architecture"></a>提案されたアーキテクチャ
 
-![シナリオのアーキテクチャ](./media/contoso-migration-mariadb-to-azure/architecture.png)
+![シナリオのアーキテクチャを示す図。](./media/contoso-migration-mariadb-to-azure/architecture.png)
 _図 1: シナリオのアーキテクチャ_
 
 ### <a name="migration-process"></a>移行プロセス
@@ -98,30 +101,31 @@ MariaDB データベースを移行する前に、移行を成功させるため
 
 サポートされているバージョン:
 
-- MariaDB では、x.y.z の名前付けスキームを使用します。 x はメジャー バージョン、y はマイナー バージョン、z はパッチ バージョンです。
+- MariaDB では、x.y.z の名前付けスキームを使用します。 たとえば、x はメジャー バージョン、y はマイナー バージョン、z はパッチ バージョンです。
 - Azure では、現在、10.2.25 と 10.3.16 がサポートされています。
-- Azure では、パッチの更新プログラムのアップグレードが自動的に管理されます。 たとえば、10.2.21 から 10.2.23 などです。 マイナー バージョンとメジャー バージョンのアップグレードはサポートされていません。 たとえば、MariaDB 10.2 から MariaDB 10.3 へのアップグレードはサポートされていません。 10.2 から 10.3 にアップグレードする場合は、データベース ダンプを取得し、ターゲット エンジンのバージョンで作成されたサーバーにそれを復元します。
+- Azure では、パッチの更新プログラムのアップグレードが自動的に管理されます。 10.2.21 から 10.2.23 のような場合です。 マイナー バージョンとメジャー バージョンのアップグレードはサポートされていません。 たとえば、MariaDB 10.2 から MariaDB 10.3 へのアップグレードはサポートされていません。 10.2 から 10.3 にアップグレードする場合は、データベース ダンプを取得し、ターゲット エンジンのバージョンで作成されたサーバーにそれを復元します。
 
 ネットワーク:
 
-Contoso は、オンプレミス環境から、MariaDB データベースが配置されている仮想ネットワークへの仮想ネットワーク ゲートウェイ接続を設定する必要があります。 これにより、接続文字列が更新されたときに、オンプレミス アプリケーションはゲートウェイを介してデータベースにアクセスできるようになります。
+Contoso は、オンプレミス環境から、MariaDB データベースが配置されている仮想ネットワークへの仮想ネットワーク ゲートウェイ接続を設定する必要があります。 この接続より、接続文字列が更新されたときに、オンプレミス アプリケーションはゲートウェイを介してデータベースにアクセスできるようになります。
 
-  ![移行プロセス](./media/contoso-migration-mariadb-to-azure/migration-process.png) _図 2: 移行プロセス_
+  ![移行プロセスを示す図。](./media/contoso-migration-mariadb-to-azure/migration-process.png)
+  "_図 2:移行プロセス_
 
 #### <a name="migration"></a>移行
 
-MariaDB は MySQL によく似ているため、MySQL Workbench、mysqldump、Toad、Navicat などの同じ一般的なユーティリティとツールを使用して、Azure Database for MariaDB に接続し、データを移行できます。
+MariaDB は MySQL に似ているため、Contoso は MySQL Workbench、mysqldump、Toad、Navicat などの同じ一般的なユーティリティとツールを使用して、Azure Database for MariaDB に接続し、データを移行できます。
 
 Contoso では、次の手順を使用してデータベースを移行しました。
 
-- 次のコマンドを実行し、出力を確認して、オンプレミスの MariaDB バージョンを確認します。 ほとんどの場合、スキーマとデータ ダンプの観点から、バージョンはそれほど重要ではありません。 アプリケーション レベルで機能を使用する場合は、それらのアプリケーションが Azure のターゲット バージョンと互換性があることを確認する必要があります。
+- 次のコマンドを実行し、出力を確認して、オンプレミスの MariaDB バージョンを確認します。 ほとんどの場合、スキーマとデータ ダンプに関しては、バージョンはそれほど重要ではありません。 アプリケーション レベルで機能を使用する場合は、それらのアプリケーションが Azure のターゲット バージョンと互換性があることを確認します。
 
   ```cmd
     mysql -h localhost -u root -P
   ```
 
-  ![移行プロセス](./media/contoso-migration-mariadb-to-azure/mariadb_version.png)
-  _図 4: オンプレミスの MariaDB バージョンの確認_
+  ![オンプレミスの MariaDB のバージョンを確認する方法を示すスクリーンショット。](./media/contoso-migration-mariadb-to-azure/mariadb_version.png)
+  _図 3: オンプレミスの MariaDB バージョンの確認_
 
 - Azure で新しい MariaDB インスタンスを作成します。
 
@@ -129,19 +133,19 @@ Contoso では、次の手順を使用してデータベースを移行しまし
   - **[リソースの追加]** を選択します。
   - `MariaDB` を検索します。
 
-    ![移行プロセス](./media/contoso-migration-mariadb-to-azure/azure-mariadb-create.png)
+    ![Azure の新しい MariaDB インスタンスを示すスクリーンショット。](./media/contoso-migration-mariadb-to-azure/azure-mariadb-create.png)
     _図 4: Azure の新しい MariaDB インスタンス_
 
   - **［作成］** を選択します
   - サブスクリプションとリソース グループを選択します。
   - サーバー名と場所を選択します。
-  - ターゲット バージョン (10.2 または 10.3) を選択します。
+  - ターゲットのバージョン (10.2 または 10.3) を選択します。
   - コンピューティングとストレージを選択します。
   - 管理者のユーザー名とパスワードを入力します。
   - **[Review + create]\(レビュー + 作成\)** を選択します。
 
-    ![移行プロセス](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
-    _図 5: 確認と作成_
+    ![MariaDB サーバーの作成画面を示すスクリーンショット。](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
+    _図 5:確認と作成_
 
   - **［作成］** を選択します
   - サーバーのホスト名、ユーザー名、パスワードを記録します。
@@ -164,7 +168,7 @@ Contoso では、次の手順を使用してデータベースを移行しまし
   source employees.sql;
   ```
 
-- phpMyAdmin または同様のツール (MySQL Workbench、Toad、Navicat) を使用し、各テーブルのレコード数をチェックして復元を確認します。
+- phpMyAdmin または同様のツール (MySQL Workbench、Toad、Navicat など) を使用し、各テーブルのレコード数をチェックして復元を確認します。
 - 移行したデータベースを参照するように、すべてのアプリケーション接続文字列を更新します。
 - すべてのアプリケーションが正しく動作するかどうかをテストします。
 
@@ -174,29 +178,31 @@ Contoso は、移行が正常に完了したことを確認したら、保持の
 
 ## <a name="review-the-deployment"></a>デプロイを再調査する
 
-リソースを Azure に移行したら、新しいインフラストラクチャを完全に操作可能にして、セキュリティ保護する必要があります。
+リソースを Azure に移行したら、新しいインフラストラクチャを完全に操作可能にして、セキュリティで保護する必要があります。
 
 ### <a name="security"></a>セキュリティ
 
-- Contoso は、新しい Azure Database for MariaDB インスタンスとデータベースを確実にセキュリティで保護する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/mariadb/concepts-security)。
-- Contoso は、[ファイアウォール規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules)と仮想ネットワーク構成を確認して、接続を必要とするアプリケーションのみに接続が制限されていることを確認する必要があります。
+Contoso は次のことを行う必要があります。
+
+- 新しい Azure Database for MariaDB インスタンスとデータベースを確実にセキュリティで保護します。 詳細については、「[Azure Database for MariaDB のセキュリティ](https://docs.microsoft.com/azure/mariadb/concepts-security)」をご覧ください。
+- [ファイアウォール規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules)と仮想ネットワーク構成を確認して、接続を必要とするアプリケーションのみに接続が制限されていることを確認します。
 - MariaDB [ゲートウェイ IP アドレス](https://docs.microsoft.com/azure/mariadb/concepts-connectivity-architecture)への接続を許可するように、送信 IP 要件を構成します。
 - データベースへの [SSL 接続を要求する](https://docs.microsoft.com/azure/mariadb/concepts-ssl-connection-security)ように、すべてのアプリケーションを更新します。
 - [Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
 - [Azure Advanced Threat Protection (ATP)](https://docs.microsoft.com/azure/mariadb/concepts-data-access-and-security-threat-protection) を有効にします。
-- 対象のセキュリティおよびログ エントリを監視し、アラートを生成するように Log Analytics を構成します。
+- 対象のセキュリティおよびログ エントリを監視し、アラートを送信するように Log Analytics を構成します。
 
 ### <a name="backups"></a>バックアップ
 
-geo リストアを使用して、Azure Database for MariaDB データベースが確実にバックアップされるようにします。 これにより、リージョンの障害が発生した場合に、ペアのリージョンでバックアップを使用できるようになります。
+geo リストアを使用して、Azure Database for MariaDB データベースが確実にバックアップされるようにします。 これにより、リージョン規模の障害が発生した場合は、ペアのリージョンにあるバックアップを使用できます。
 
 > [!IMPORTANT]
-> Azure Database for MariaDB リソースが削除されないように、[リソース ロック](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources)が設定されていることを確認します。 削除されたサーバーは復元できません。
+> Azure Database for MariaDB リソースが削除されないように、[リソース ロック](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources)が設定されていることを確認します。 削除されたサーバーを復元することはできません。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
-- Azure Database for MariaDB はスケールアップまたはスケールダウンできるので、ニーズを満たすだけでなく、コストを最小限に抑えるためにも、サーバーとデータベースのパフォーマンスを監視することが重要です。
-- CPU とストレージはどちらもコストに関連します。 複数の価格レベルから選択できます。 データ ワークロードに適した価格プランが選択されていることを確認してください。
+- Azure Database for MariaDB は、スケールアップまたはスケールダウンすることができます。 サーバーとデータベースのパフォーマンスを監視することは、ニーズを満たすためだけではなく、コストを最小限に維持するためにも重要です。
+- CPU とストレージの両方がコストに関連します。 選択できる価格レベルはいくつかあります。 データ ワークロードに適した価格プランが選択されていることを確認してください。
 - 各読み取りレプリカは、選択されたコンピューティングとストレージに基づいて課金されます。
 - 予約容量を使用してコストを節約します。
 
