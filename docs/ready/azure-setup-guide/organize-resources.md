@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1dc3abc11ba3163934a5c9b58c0ed496ec0dbfd8
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 0f022693cdf8191a1c4e978a4545bfc117ed055f
+ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450698"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115088"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -149,8 +149,8 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 | Entity | Scope | 長さ | 大文字小文字の区別 | 有効な文字 | 提案されるパターン | 例 |
 | --- | --- | --- | --- | --- | --- | --- |
-| Resource group | サブスクリプション | 1-90 | 大文字と小文字は区別されない | 英数字、アンダースコア、かっこ、ハイフン、ピリオド (末尾を除く)、および Unicode 文字 | `<service short name>-<environment>-Rg` | `profx-prod-rg` |
-| 可用性セット | Resource group | 1 ～ 80 | 大文字と小文字は区別されない | 英数字、アンダースコア、ハイフン | `<service-short-name>-<context>-As` | `profx-SQL-as` |
+| Resource group | サブスクリプション | 1-90 | 大文字と小文字は区別されない | 英数字、アンダースコア、かっこ、ハイフン、ピリオド (末尾を除く)、および Unicode 文字 | `<service short name>-<environment>-rg` | `profx-prod-rg` |
+| 可用性セット | Resource group | 1 ～ 80 | 大文字と小文字は区別されない | 英数字、アンダースコア、ハイフン | `<service-short-name>-<context>-as` | `profx-SQL-as` |
 | タグ | 関連付けられたエンティティ | 512 (名前)、256 (値) | 大文字と小文字は区別されない | 英数字 | `"Key" : "value"` | `"Department" : "Central IT"` |
 
 ## <a name="resource-tags"></a>[リソース タグ](#tab/ResourceTags)
