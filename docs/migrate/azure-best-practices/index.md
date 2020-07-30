@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 6b717b100f8685157553e2735ae4f1e0600047ed
-ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
+ms.openlocfilehash: 86114f9a8a721d5475716d05f78c4cdc8a25637c
+ms.sourcegitcommit: bf0dac78ae25cc141408384399952622cc8f9cbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115064"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87412275"
 ---
-# <a name="azure-cloud-migration-migration-best-practices-checklist"></a>Azure クラウド移行のベスト プラクティスのチェックリスト
+# <a name="azure-cloud-migration-best-practices-checklist"></a>Azure クラウド移行のベスト プラクティスのチェックリスト
 
 Azure への移行に関心がある場合は、クラウド導入フレームワークの [Azure 移行ガイド](../azure-migration-guide/index.md)から始めてください。 このガイドでは、仮想マシンをクラウドに移行するための一連のツールおよび基本的なアプローチについて説明します。
 
