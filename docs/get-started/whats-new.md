@@ -3,16 +3,16 @@ title: 新機能
 description: Azure 向けの Microsoft クラウド導入フレームワークの最新情報について取り上げます。
 author: JanetCThomas
 ms.author: janet
-ms.date: 05/15/2020
+ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 72ba0190010412dd00fa4bdfd2013e99382cd9c5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 619709a29e5effc542662987864d4c755aeca496
+ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193866"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115068"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -21,6 +21,38 @@ ms.locfileid: "86193866"
 クラウド導入フレームワークに加えられた最近の変更の一覧を次に示します。
 
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームの連携を通して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携して Azure 向けのクラウド導入フレームワークを構築することをお勧めします。
+
+## <a name="july-17-2020"></a>2020 年 7 月 17 日
+このリリースでは、クラウドの導入を実行に移しやすくするために、新しいシナリオが多数追加されています。
+
+### <a name="migration-scenarios"></a>移行シナリオ
+
+新しい[移行シナリオ概要ページ](../scenarios/index.md)では、CAF 移行手法を基に、Azure の "#OneMigrate" ソリューションがいかに実現されているかを紹介しています。 ファースト パーティとサード パーティのさまざまなシナリオを Azure に移行するためのアプローチが紹介されています。 これには、次に示す 3 つの新しい移行シナリオが含まれます。
+
+| [アーティクル] | 説明 |
+|---|---|
+| [Windows Virtual Desktop](../scenarios/wvd/index.md) | このシナリオでは、生産性の向上を実現し、エンドユーザーのエクスペリエンスをサポートするためのさまざまなワークロードの移行を迅速化します。 |
+| [Azure Stack](../scenarios/azure-stack/index.md) | Azure Stack Hub を使用してデータセンターに Azure をデプロイする方法について説明します。 |
+
+### <a name="analytics-in-caf"></a>CAF での分析
+Microsoft クラウド導入フレームワークに分析ソリューションが追加されました。 ここでは、クラウドの導入過程で分析ソリューションに対応するうえでのベスト プラクティスについて取り上げた新しいトピックを紹介しています。
+
+| [アーティクル] | 説明 |
+|---|---|
+| [Teradata、Netezza、Exadata の分析ソリューション](../migrate/azure-best-practices/analytics/analytics-solutions-overview.md) | Teradata、Netezza、Exadata を含むオンプレミスのレガシ環境から最新の分析ソリューションへの移行について説明します。 |
+| [Azure Synapse の高可用性](../migrate/azure-best-practices/analytics/azure-synapse.md) | 最新のクラウドベース インフラストラクチャがもたらす主な利点の 1 つである組み込みの高可用性とディザスター リカバリーについて説明します。 |
+| [スキーマ移行のデータ定義言語 (DDL)](../migrate/azure-best-practices/analytics/schema-migration-ddl.md) | データベース オブジェクトについて説明すると共に、既存のデータを移行するにあたっての関連するプロセスについて説明します。 |
+
+### <a name="ai-in-caf"></a>CAF での AI
+Microsoft クラウド導入フレームワークに人工知能 (AI) ソリューションとベスト プラクティスが統合されました。 顧客ニーズの予測に関するイノベーションの促進、ビジネス プロセスの自動化、情報の発見、顧客との関係を深める新たな方法の模索、クラウド導入の取り組みにおけるエクスペリエンスの向上に、これらの AI ソリューションを活かすことができます。
+
+| [アーティクル] | 説明 |
+|---|---|
+| [責任ある AI](../strategy/responsible-ai.md) | AI ソリューションを導入する際に考慮すべき AI の原則について説明すると共に、責任ある AI の戦略をいかに確立するかについて説明します。 |
+| [Azure イノベーション ガイド: AI によるイノベーション](../innovate/innovation-guide/predict.md) | AI によってイノベーションを起こし、導入ニーズに応じて最良のソリューションを見つける方法について説明します。 |
+| [クラウド導入フレームワークにおける AI](../innovate/ai/index.md) | ツール、プログラム、コンテンツ (ベスト プラクティス、構成テンプレート、アーキテクチャ ガイダンス) を含む規範的なフレームワークをレビューして、大規模な AI とクラウド ネイティブ プラクティスの導入を簡略化します。 |
+| [Azure Machine Learning を使用した MLOps](../manage/mlops-machine-learning.md) | Machine Learning Operations (MLOps) のベスト プラクティスについて説明します。 |
+| [AI によるイノベーション](../innovate/best-practices/predict.md) | デジタル発明の促進につながる AI ソリューション (機械学習、AI アプリとエージェント、ナレッジ マイニング) とベスト プラクティスについて説明します。 | 
 
 ## <a name="june-15-2020"></a>2020 年 6 月 15 日
 

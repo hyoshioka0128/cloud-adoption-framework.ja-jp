@@ -1,6 +1,6 @@
 ---
 title: Azure にオンプレミスのアプリケーションをリビルドする
-description: Contoso が Azure App Service、Kubernetes サービス、Cosmos DB、Functions、および Cognitive Services を使用して Azure にアプリケーションをリビルドする方法について説明します。
+description: Contoso が Azure App Service、Azure Kubernetes Service (AKS)、Azure Cosmos DB、Azure Functions、Azure Cognitive Services を使用して Azure にアプリケーションをリビルドする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 7/1/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: a0592177a3a7bd08b8f29ad632a0bf61b6294e6a
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 373d4216eb9259bd49a85c4d1dd6466c4f33388d
+ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449542"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87255099"
 ---
 <!-- docsTest:ignore "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
 
@@ -21,13 +21,13 @@ ms.locfileid: "86449542"
 
 # <a name="rebuild-an-on-premises-application-in-azure"></a>Azure にオンプレミスのアプリケーションをリビルドする
 
-この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware VM 上で実行される 2 層の Windows .NET アプリケーションをリビルドする方法について説明します。 Contoso は、フロントエンド VM を、Azure App Service Web アプリに移行します。 アプリのバックエンドは、Azure Kubernetes Service (AKS) によって管理されるコンテナーにデプロイされたマイクロサービスを使用してビルドされます。 サイトは、ペットの写真の機能を提供する Azure Functions と対話します。
+この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware 仮想マシン (VM) 上で実行される 2 階層の Windows .NET アプリケーションをリビルドする方法を説明します。 Contoso は、フロントエンド VM を、Azure App Service Web アプリに移行します。 Contoso は、アプリケーションのバックエンドを、Azure Kubernetes Service (AKS) によって管理されるコンテナーにデプロイされたマイクロサービスを使用してビルドします。 サイトは、ペットの写真の機能を提供する Azure Functions と対話します。
 
 この例で使用される SmartHotel360 アプリケーションは、オープン ソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
-IT リーダーシップ チームは、ビジネス パートナーと密接に連絡を取り合い、彼らがこの移行で何を達成しようとしているのかを理解しました。
+Contoso の IT リーダーシップ チームは、ビジネス パートナーと密接に連絡を取り合い、彼らがこの移行で何を達成しようとしているのかを理解しました。
 
 - **ビジネスの成長への対応。** Contoso は成長を続けており、Contoso の Web サイトで、差別化されたエクスペリエンスを顧客に提供したいと考えています。
 - **機敏である。** Contoso は、グローバル経済で成功を収めるために、より迅速に市場の変化に対応できる必要があります。
@@ -38,13 +38,13 @@ IT リーダーシップ チームは、ビジネス パートナーと密接に
 
 Contoso クラウド チームは、この移行のためのアプリケーションの要件を設定しました。 これらの要件を使用して、最良の移行方法を決定しました。
 
-- このアプリケーションは、Azure でも現在と同じくクリティカルです。 優れたパフォーマンスを発揮し、容易にスケールできる必要があります。
-- このアプリケーションでは、IaaS コンポーネントを使用しません。 PaaS またはサーバーレス サービスを使用するようにすべてをビルドする必要があります。
+- このアプリケーションは、オンプレミスにおける現状と同様、Azure でもクリティカルなものとなります。 優れたパフォーマンスを発揮し、容易にスケールできる必要があります。
+- このアプリケーションでは、サービスとしてのインフラストラクチャ (IaaS) コンポーネントを使用しません。 サービスとしてのプラットフォーム (PaaS) またはサーバーレス サービスを使用するようにすべてをビルドする必要があります。
 - アプリケーションのビルドはクラウド サービスで実行する必要があり、コンテナーはクラウド内のプライベートなエンタープライズ規模のレジストリに存在する必要があります。
 - アプリケーションで下された決定がホテルで受け入れられる必要があるため、ペットの写真に使用される API サービスは正確かつ実世界で信頼できるものである必要があります。 アクセス権を付与されたペットは、ホテルでの滞在を許可されます。
 - DevOps パイプラインの要件を満たすために、Contoso ではソース コード管理に Azure Repos の Git リポジトリを使用します。 コードのビルドと Azure App Service、Azure Functions、および AKS へのデプロイには、自動ビルドとリリースが使用されます。
 - バックエンドのマイクロサービスと、フロントエンドの Web サイトに対して、別個の継続的インテグレーションと継続的デプロイ (CI/CD) パイプラインが必要です。
-- バックエンド サービスのリリース サイクルはフロントエンド Web アプリのリリース サイクルとは異なります。 この要件を満たすため、2 つの異なるパイプラインが展開されます。
+- バックエンド サービスとフロントエンド Web アプリとでは、リリース サイクルが異なります。 この要件を満たすため、Contoso は 2 つの異なるパイプラインをデプロイすることになります。
 - Contoso では、すべてのフロント エンド Web サイトのデプロイには上長の承認が必要であり、CI/CD パイプラインではこれを提供する必要があります。
 
 ## <a name="solution-design"></a>ソリューション設計
@@ -64,12 +64,13 @@ Contoso は目標と要件を決定した後、デプロイ ソリューショ�
 - アプリケーションのフロントエンドは、プライマリ Azure リージョンに Azure App Service の Web アプリとしてデプロイされます。
 - Azure 関数がペットの写真をアップロードし、サイトはこの機能と対話します。
 - ペットの写真の関数には、Azure Cosmos DB と共に Azure Cognitive Services の Computer Vision API が使用されています。
-- サイトのバックエンドは、マイクロ サービスを使用してビルドされます。 これらは、AKS で管理されるコンテナーにデプロイされます。
+- サイトのバックエンドは、マイクロ サービスを使用してビルドされます。 これらのマイクロサービスは、AKS で管理されるコンテナーにデプロイされます。
 - コンテナーは Azure DevOps を使用してビルドされ、Azure Container Registry にプッシュされます。
 - Contoso は当面、Visual Studio を使用して Web アプリと関数コードを手動でデプロイする予定です。
-- マイクロサービスは、Kubernetes コマンドライン ツールを呼び出す PowerShell script スクリプトを使用してデプロイされます。
+- マイクロサービスは、Kubernetes コマンドライン ツールを呼び出す PowerShell スクリプトを使用してデプロイします。
 
-    ![シナリオのアーキテクチャ](./media/contoso-migration-rebuild/architecture.png) _図 1:シナリオのアーキテクチャ。_
+    ![Azure への移行シナリオのアーキテクチャ図。](./media/contoso-migration-rebuild/architecture.png)  
+    "_図 1:シナリオのアーキテクチャ_
 
 ### <a name="solution-review"></a>ソリューションのレビュー
 
@@ -77,18 +78,19 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 | 考慮事項 | 詳細 |
 | --- | --- |
-| **長所** | Contoso はエンドツーエンドのデプロイに PaaS とサーバーレス ソリューションを使用することで、管理に要する時間を大幅に削減できます。 <br><br> マイクロサービス ベースのアーキテクチャへの移行により、Contoso は時間の経過と共にソリューションを容易に拡張できるようになります。 <br><br> 新しい機能は、既存のソリューションのコード ベースを妨げずにオンライン状態にすることができます。 <br><br> Web アプリは複数のインスタンスで構成されるため、単一障害点が発生しません。 <br><br> アプリケーションがさまざまなトラフィック量を処理できるように、自動スケールが有効化されます。 <br><br> PaaS サービスへの移行に伴い、Contoso は Windows Server 2008 R2 オペレーティング システム上で実行されている古いソリューションを廃止できます。 <br><br> Azure Cosmos DB にはフォールト トレランスが組み込まれており、Contoso による構成は必要ありません。 これは、データ層が単一のフェールオーバー ポイントでなくなることを意味します。 |
+| **長所** | Contoso はエンドツーエンドのデプロイに PaaS とサーバーレス ソリューションを使用することで、管理に要する時間を大幅に削減できます。 <br><br> マイクロサービス ベースのアーキテクチャへの移行により、Contoso は時間の経過と共にソリューションを容易に拡張できるようになります。 <br><br> 新しい機能は、既存のソリューションのコード ベースを妨げることなくオンライン状態にすることができます。 <br><br> Web アプリは複数のインスタンスで構成されるため、単一障害点は生まれません。 <br><br> アプリケーションがさまざまなトラフィック量を処理できるように、自動スケールが有効化されます。 <br><br> PaaS サービスへの移行に伴い、Contoso は Windows Server 2008 R2 オペレーティング システム上で実行されている古いソリューションを廃止できます。 <br><br> Azure Cosmos DB にはフォールト トレランスが組み込まれており、Contoso による構成は必要ありません。 これは、データ層が単一のフェールオーバー ポイントでなくなることを意味します。 |
 | **短所** | コンテナーは他の移行オプションより複雑です。 Contoso にとって、学習曲線が問題になる可能性があります。 この曲線にもかかわらず、Contoso は価値を提供する新しいレベルの複雑さを導入します。 <br><br> Azure、コンテナー、アプリケーションのマイクロサービスを理解し、サポートする Contoso の運用チームを立ち上げる必要があります。 <br><br> Contoso は、ソリューション全体の DevOps を完全に実装していません。 Contoso は、AKS、Azure Functions、および Azure App Service へのサービスのデプロイで、そのことを考慮する必要があります。 |
 
 ### <a name="migration-process"></a>移行プロセス
 
 1. Contoso では、Azure Container Registry、AKS、および Azure Cosmos DB をプロビジョニングします。
-2. デプロイのインフラストラクチャ (Azure App Service Web アプリ、ストレージ アカウント、関数、および API) をプロビジョニングします。
+2. デプロイ用のインフラストラクチャ (Azure App Service Web アプリ、ストレージ アカウント、関数、API を含む) をプロビジョニングします。
 3. インフラストラクチャの準備が整ったら、Azure DevOps を使用してマイクロサービスのコンテナー イメージをビルドし、コンテナー レジストリにプッシュします。
 4. Contoso は、PowerShell スクリプトを使用してこれらのマイクロサービスを AKS にデプロイします。
-5. 最後に、Azure 関数と Web アプリをデプロイします。
+5. 最後に、関数と Web アプリをデプロイします。
 
-    ![移行プロセス](./media/contoso-migration-rebuild/migration-process.png) _図 2:移行プロセス。_
+    ![移行プロセスの図 (準備からクラウドへのデプロイまで)。](./media/contoso-migration-rebuild/migration-process.png)  
+    "_図 2:移行プロセス_
 
 ### <a name="azure-services"></a>Azure サービス
 
@@ -97,7 +99,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 | [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Kubernetes の管理、デプロイ、操作を簡略化します。 完全に管理された Kubernetes コンテナー オーケストレーション サービスを提供します。 | AKS は無料サービスです。 VM と、関連するストレージおよびネットワーク リソースの使用した分に対してのみ料金が発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/kubernetes-service)。 |
 | [Azure Functions](https://azure.microsoft.com/services/functions) | イベント ドリブン型のサーバーレス コンピューティング エクスペリエンスにより、開発を高速化できます。 オンデマンドでスケールできます。 | 使用したリソースに対してのみ料金が発生します。 プランでは、1 秒あたりのリソースの使用量と実行回数に基づいて課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/functions)。 |
 | [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/container-registry)。 |
-| [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | あらゆるプラットフォームで稼働するエンタープライズグレードの Web アプリ、モバイル アプリ、API アプリをすばやくビルド、デプロイ、およびスケーリングできます。 | App Service プランは、1 秒単位で課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
+| [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | あらゆるプラットフォームで実行されるエンタープライズグレードの Web アプリ、モバイル アプリ、API アプリをすばやくビルド、デプロイ、スケーリングできます。 | App Service プランは、1 秒単位で課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -105,9 +107,9 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| Azure サブスクリプション | <li> Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <li> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <li> 既存のサブスクリプションを使用するが、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を自分に割り当ててもらう必要があります。 |
+| Azure サブスクリプション | <li> 前の記事で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <li> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <li> 既存のサブスクリプションを使用するものの、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を自分に割り当ててもらう必要があります。 |
 | Azure インフラストラクチャ | <li> [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。 |
-| 開発者の前提条件 | Contoso は、開発者用ワークステーションに次のツールをインストールする必要があります。 <li>  [Visual Studio Community 2017:バージョン 15.5](https://visualstudio.microsoft.com) <li> .NET ワークロードの有効化 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker Community Edition (Windows 10) または Docker Enterprise Edition (Windows Server)](https://docs.docker.com/docker-for-windows/install) が Windows コンテナーを使用するように設定済み。 |
+| 開発者の前提条件 | Contoso は、開発者用ワークステーションに次のツールをインストールする必要があります。 <li>  [Visual Studio Community 2017 バージョン 15.5](https://visualstudio.microsoft.com) <li> .NET ワークロードが有効 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker Community Edition (Windows 10) または Docker Enterprise Edition (Windows Server)](https://docs.docker.com/docker-for-windows/install) が Windows コンテナーを使用するように設定済み |
 
 ## <a name="scenario-steps"></a>シナリオのステップ
 
@@ -115,58 +117,65 @@ Contoso が移行を実行する方法を次に示します。
 
 > [!div class="checklist"]
 >
-> - **ステップ 1:AKS と Azure Container Registry をプロビジョニングする。** Contoso は PowerShell を使用して、管理対象の AKS クラスターとコンテナー レジストリをプロビジョニングします。
-> - **手順 2:Docker コンテナーをビルドする。** Azure DevOps を使用して Docker コンテナーの継続的インテグレーション (CI) を設定し、コンテナー レジストリにプッシュします。
-> - **ステップ 3:バックエンドのマイクロサービスをデプロイする。** バックエンドのマイクロサービスによって使用される、残りのインフラストラクチャをデプロイします。
-> - **手順 4:フロントエンドのインフラストラクチャをデプロイする。** フロントエンドのインフラストラクチャ (ペットの写真用の Blob Storage、Azure Cosmos DB、Computer Vision API を含む) をデプロイします。
-> - **手順 5:バックエンドを移行する。** マイクロサービスをデプロイして AKS 上で実行し、バックエンドを移行します。
-> - **手順 6:フロントエンドを公開する。** SmartHotel360 アプリケーションを、Azure App Service と、ペット サービスによって呼び出される関数アプリに公開します。
+> - **ステップ 1:AKS と Azure Container Registry をプロビジョニングする。** Contoso は PowerShell を使用して、マネージド AKS クラスターとコンテナー レジストリをプロビジョニングします。
+> - **手順 2:Docker コンテナーをビルドする。** Contoso は、Azure DevOps を使用して Docker コンテナーの継続的インテグレーション (CI) を設定し、それらのコンテナーをコンテナー レジストリにプッシュします。
+> - **ステップ 3:バックエンドのマイクロサービスをデプロイする。** Contoso は、バックエンドのマイクロサービスによって使用される、残りのインフラストラクチャをデプロイします。
+> - **手順 4:フロントエンドのインフラストラクチャをデプロイする。** Contoso は、フロントエンドのインフラストラクチャ (ペットの写真用の Blob Storage、Azure Cosmos DB、Computer Vision API を含む) をデプロイします。
+> - **手順 5:バックエンドを移行する。** Contoso は、マイクロサービスをデプロイして AKS 上で実行し、バックエンドを移行します。
+> - **手順 6:フロントエンドを公開する。** Contoso は、SmartHotel360 アプリケーションを、Azure App Service と、ペット サービスによって呼び出される関数アプリに公開します。
 
-## <a name="step-1-provision-back-end-resources"></a>手順 1:バックエンド リソースをプロビジョニングする
+## <a name="provision-back-end-resources"></a>バックエンド リソースをプロビジョニングする
 
 Contoso の管理者は、AKS と Azure Container Registry を使用して、マネージド Kubernetes クラスターを作成するデプロイ スクリプトを実行します。 このセクションの手順では、[SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend) GitHub リポジトリを使用します。 このリポジトリには、デプロイのこの部分のためのソフトウェアがすべて含まれています。
 
-### <a name="ensure-prerequisites"></a>前提条件を確認する
+### <a name="ensure-that-prerequisites-are-met"></a>前提条件が満たされていることを確認する
 
-Contoso の管理者は、開始する前に、デプロイに使用する開発用マシンにすべての前提条件ソフトウェアがインストールされていることを確認します。 Git を使用して、開発用マシンにリポジトリをローカルに複製します。
+Contoso の管理者は、開始する前に、デプロイに使用する開発用マシンにすべての前提条件ソフトウェアがインストールされていることを確認します。 Git を使用して、ローカルの開発用マシンにリポジトリをクローンします。
 
 `git clone https://github.com/Microsoft/SmartHotel360-Backend.git`
 
 ### <a name="provision-aks-and-azure-container-registry"></a>AKS と Azure Container Registry をプロビジョニングする
 
-Contoso の管理者は次のようにプロビジョニングします。
+Contoso の管理者は、AKS と Azure Container Registry を次のようにプロビジョニングします。
 
-1. Visual Studio Code を使用してフォルダーを開き、`/deploy/k8s` ディレクトリに移動します。ここに、スクリプト `gen-aks-env.ps1` が含まれています。
+1. Visual Studio Code でフォルダーを開き、スクリプト `gen-aks-env.ps1` が格納されている `/deploy/k8s` ディレクトリに移動します。
 
 2. AKS と Azure Container Registry を使用して、マネージド Kubernetes クラスターを作成するスクリプトを実行します。
 
-    ![AKS](./media/contoso-migration-rebuild/aks1.png) _図 3:マネージド Kubernetes クラスターの作成。_
+    ![Visual Studio Code での AKS スクリプトを示すスクリーンショット。](./media/contoso-migration-rebuild/aks1.png)  
+    "_図 3:マネージド Kubernetes クラスターの作成。_
 
 3. ファイルを開いた状態で $location パラメーターを `eastus2` に更新し、ファイルを保存します。
 
-    ![AKS](./media/contoso-migration-rebuild/aks2.png) _図 4:ファイルの保存。_
+    ![eastus2 に更新された AKS $location パラメーターを示すスクリーンショット。](./media/contoso-migration-rebuild/aks2.png)  
+    "_図 4:ファイルの保存。_
 
-4. **[表示]**  >  **[ターミナル]** を選択して、Visual Studio Code で統合ターミナルを開きます。
+4. **[表示]**  >  **[統合ターミナル]** を選択して、Visual Studio Code で統合ターミナルを開きます。
 
-    ![AKS](./media/contoso-migration-rebuild/aks3.png) _図 5:Visual Studio Code のターミナル。_
+    !["統合ターミナル" リンクを示すスクリーンショット。](./media/contoso-migration-rebuild/aks3.png)  
+    _図 5:Visual Studio Code のターミナル。_
 
 5. PowerShell 統合ターミナルで、`Connect-AzureRmAccount` コマンドを使用して Azure にサインインします。 詳細については、[PowerShell の使用開始](https://docs.microsoft.com/powershell/azure/get-started-azureps)に関するページを参照してください。
 
-    ![AKS](./media/contoso-migration-rebuild/aks4.png) _図 6:PowerShell 統合ターミナル。_
+    ![PowerShell 統合ターミナルのサインイン ウィンドウのスクリーンショット。](./media/contoso-migration-rebuild/aks4.png)  
+    _図 6:PowerShell 統合ターミナル。_
 
-6. `az login` コマンドを実行し、Web ブラウザーを使用した認証の手順に従って、Azure CLI の認証を行います。 Azure CLI でのログインの[詳細については、こちら](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest)を参照してください。
+6. `az login` コマンドを実行し、Web ブラウザーを使用した認証の手順に従って、Azure CLI の認証を行います。 Azure CLI でのログインの[詳細](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest)を参照してください。
 
-    ![AKS](./media/contoso-migration-rebuild/aks5.png) _図 7:Azure CLI の認証。_
+    ![Azure CLI の認証ウィンドウを示すスクリーンショット。](./media/contoso-migration-rebuild/aks5.png)  
+    _図 7:Azure CLI の認証。_
 
 7. 次のコマンドを、リソース グループ名 `ContosoRG`、AKS クラスター名 `smarthotel-aks-eus2`、および新しいレジストリ名を渡して実行します。
 
     `.\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2`
 
-    ![AKS](./media/contoso-migration-rebuild/aks6.png) _図 8:コマンドの実行。_
+    ![リソース グループ ペインでの smarthotel コマンドを示すスクリーンショット。](./media/contoso-migration-rebuild/aks6.png)  
+    _図 8:コマンドの実行。_
 
 8. Azure によって、AKS クラスターのリソースを含む別のリソース グループが作成されます。
 
-    ![AKS](./media/contoso-migration-rebuild/aks7.png) _図 9:Azure でのリソース グループの作成。_
+    ![リソース グループ作成のスクリーンショット。](./media/contoso-migration-rebuild/aks7.png)  
+    _図 9:Azure でのリソース グループの作成。_
 
 9. デプロイが完了したら、`kubectl` コマンドライン ツールをインストールします。 このツールは、Azure Cloud Shell では既にインストールされています。
 
@@ -174,7 +183,7 @@ Contoso の管理者は次のようにプロビジョニングします。
 
 10. `kubectl get nodes` コマンドを実行して、クラスターへの接続を確認します。 ノードは、自動的に作成されたリソース グループ内の VM と同じ名前です。
 
-    ![AKS](./media/contoso-migration-rebuild/aks8.png)
+    ![クラスターへの接続の確認を示すスクリーンショット。](./media/contoso-migration-rebuild/aks8.png)  
     _図 10:クラスターへの接続の確認。_
 
 11. 次のコマンドを実行して、Kubernetes ダッシュボードを起動します。
@@ -183,7 +192,7 @@ Contoso の管理者は次のようにプロビジョニングします。
 
 12. ブラウザー タブが開き、ダッシュボードが表示されます。 これは Azure CLI を使用したトンネル接続です。
 
-    ![AKS](./media/contoso-migration-rebuild/aks9.png)
+    ![トンネル接続を示すスクリーンショット。](./media/contoso-migration-rebuild/aks9.png)  
     _図 11:トンネル接続。_
 
 ## <a name="step-2-configure-the-back-end-pipeline"></a>手順 2:バックエンド パイプラインを構成する
@@ -196,86 +205,95 @@ Contoso は Azure DevOps プロジェクトを作成し、CI ビルドを構成�
 
 2. バージョン コントロールに **Git**、ワークフローに**アジャイル**を選択して、新しいプロジェクト (`SmartHotelBackend`) を作成します。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts1.png) _図 12:新しいプロジェクトの作成。_
+    ![Azure DevOps の [新しいプロジェクトの作成] ペインのスクリーンショット。](./media/contoso-migration-rebuild/vsts1.png)  
+    _図 12:新しいプロジェクトの作成。_
 
 3. [GitHub リポジトリ](https://github.com/Microsoft/SmartHotel360-Backend)をインポートします。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts2.png) _図 13:GitHub リポジトリのインポート。_
+    ![Azure DevOps の [Git リポジトリをインポートする] ペインのスクリーンショット。](./media/contoso-migration-rebuild/vsts2.png)  
+    _図 13:GitHub リポジトリのインポート。_
 
 4. **[パイプライン]** で、 **[ビルド]** を選択し、リポジトリから、Azure Repos Git をソースとして使用する新しいパイプラインを作成します。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts3.png) _図 14:新しいパイプラインの作成。_
+    ![新しいパイプラインを作成するための DevOps ペインのスクリーンショット。](./media/contoso-migration-rebuild/vsts3.png)  
+    _図 14:新しいパイプラインの作成。_
 
-5. 空のジョブでの開始を選択します。
+5. **[空のジョブ]** を選択します。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts4.png) _図 15:空のジョブの開始。_
+    ![Azure DevOps の [空のジョブ] リンクのスクリーンショット。](./media/contoso-migration-rebuild/vsts4.png)  
+    _図 15:空のジョブの開始。_
 
 6. ビルド パイプラインで **[Hosted Linux Preview]\(ホストされている Linux プレビュー\)** を選択します。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts5.png) _図 16:ビルド パイプラインの設定。_
+    ![Azure DevOps のビルド パイプライン設定画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts5.png)  
+    _図 16:ビルド パイプラインの設定。_
 
 7. **[Phase 1]\(フェーズ 1\)** で、 **[Docker Compose]** タスクを追加します。 このタスクでは、Docker Compose をビルドします。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts6.png) _図 17:Docker Compose のビルド。_
+    ![Azure DevOps で Docker Compose タスクをビルドする画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts6.png)  
+    _図 17:Docker Compose のビルド。_
 
 8. 手順を繰り返し、**Docker Compose** タスクをもう 1 つ追加します。 これにより、コンテナーがコンテナー レジストリにプッシュされます。
 
-     ![Azure DevOps](./media/contoso-migration-rebuild/vsts7.png) _図 18:別の Docker Compose タスクの追加。_
+     ![Azure DevOps でもう 1 つ Docker Compose タスクを追加する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts7.png)  
+    _図 18:別の Docker Compose タスクの追加。_
 
-9. 1 番目のタスク (ビルドの実行) を選択し、ビルドに Azure サブスクリプション、認可、およびコンテナー レジストリを構成します。
+9. 1 番目のタスク (ビルドの実行) を選択し、Azure サブスクリプション、承認、コンテナー レジストリを指定してビルドを作成、構成します。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts8.png) _図 19:ビルドの作成と構成。_
+    ![Azure DevOps でビルドの作成と構成を行う画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts8.png)  
+    _図 19:ビルドの作成と構成。_
 
-10. リポジトリの `src` フォルダーにある `docker-compose.yaml` ファイルのパスを指定します。 サービス イメージのビルドを選択し、最新のタグを含めます。 アクションが **[Build service images]\(サービス イメージのビルド\)** に変わると、Azure DevOps タスクの名前が **[Build services automatically]\(サービスを自動的にビルド\)** に変わります。
+10. リポジトリの *src* フォルダーにある `docker-compose.yaml` ファイルのパスを指定します。 サービス イメージのビルドを選択し、最新のタグを含めます。 アクションが **[Build service images]\(サービス イメージのビルド\)** に変わると、Azure DevOps タスクの名前が **[Build services automatically]\(サービスを自動的にビルド\)** に変わります。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts9.png)
+    ![Azure DevOps における各種タスクビルド指定のスクリーンショット。](./media/contoso-migration-rebuild/vsts9.png)  
     _図 20:タスクの詳細。_
 
 11. Contoso は次に、2 番目の Docker タスク (プッシュの実行) を構成します。 サブスクリプションとコンテナー レジストリ (`smarthotelacreus2`) を選択します。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts10.png)
+    ![Azure DevOps で 2 つ目の Docker タスクを構成する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts10.png)  
     _図 21:2 番目の Docker タスクの構成。_
 
-12. ファイルに `docker-compose.yaml` ファイルを入力し、 **[Push service images]\(サービス イメージのプッシュ\)** を選択して、最新のタグを含めます。 アクションが **[Push service images]\(サービス イメージのプッシュ\)** に変わると、Azure DevOps タスクの名前が **[Push services automatically]\(サービスを自動的にプッシュ\)** に変わります。
+12. *docker-compose.yaml* ファイル名を入力し、 **[Push service images]\(サービス イメージのプッシュ\)** を選択し、最新のタグを含めます。 アクションが **[Push service images]\(サービス イメージのプッシュ\)** に変わると、Azure DevOps タスクの名前が **[Push services automatically]\(サービスを自動的にプッシュ\)** に変わります。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts11.png)
+    ![Azure DevOps タスクの名前を変更する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts11.png)  
     _図 22:Azure DevOps タスクの名前の変更。_
 
 13. Azure DevOps タスクが構成されたので、Contoso はビルド パイプラインを保存し、ビルド プロセスを開始します。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts12.png)
+    ![Azure DevOps でビルド プロセスを開始する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts12.png)  
     _図 23:ビルド プロセスの開始。_
 
 14. ビルド ジョブを選択して、進行状況を確認します。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts13.png)
+    ![Azure DevOps でビルドの進行状況を確認する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts13.png)  
     _図 24:進行状況の確認。_
 
 15. ビルドが完了すると、コンテナー レジストリに、マイクロサービスによって使用されるコンテナーが設定された新しいリポジトリが表示されます。
 
-    ![Azure DevOps](./media/contoso-migration-rebuild/vsts14.png)
+    ![Azure DevOps でビルドの完了後に新しいリポジトリを表示する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts14.png)  
     _図 25:ビルドの終了後に新しいリポジトリを表示。_
 
 ### <a name="deploy-the-back-end-infrastructure"></a>バックエンド インフラストラクチャをデプロイする
 
-AKS クラスターを作成し、Docker イメージをビルドしたので、次に Contoso の管理者は、バックエンドのマイクロサービスによって使用される残りのインフラストラクチャをデプロイします。
-
-- このセクションの手順では、[SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend) リポジトリを使用します。
+AKS クラスターを作成し、Docker イメージをビルドしたので、次に Contoso の管理者は、バックエンドのマイクロサービスによって使用される残りのインフラストラクチャをデプロイします。 
+- このセクションの手順では、[SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend) リポジトリを使用します。 
 - `/deploy/k8s/arm` フォルダーに、すべての項目を作成する 1 つのスクリプトが含まれています。
 
-デプロイは次のように行います。
+管理者は、次のようにしてインフラストラクチャをデプロイします。
 
 1. 開発者コマンド プロンプトを開き、Azure サブスクリプションのコマンド `az login` を使用します。
 
-2. `deploy.cmd` ファイルを使用し、次のコマンドを入力して `ContosoRG` リソース グループと `East US 2` リージョンに Azure リソースをデプロイします。
+2. `deploy.cmd` ファイルを使用し、次のコマンドを入力して ContosoRG リソース グループと米国東部 2 リージョンに Azure リソースをデプロイします。
 
     `.\deploy.cmd azuredeploy ContosoRG -c eastus2`
 
-    ![バックエンドのデプロイ](./media/contoso-migration-rebuild/backend1.png) _図 26:バックエンドのデプロイ。_
+    ![バックエンドをデプロイする画面のスクリーンショット。](./media/contoso-migration-rebuild/backend1.png)  
+    _図 26: バックエンドのデプロイ。_
 
 3. Azure portal で、後で使用するために、各データベースの接続文字列をキャプチャします。
 
-    ![バックエンドのデプロイ](./media/contoso-migration-rebuild/backend2.png) _図 27:各データベースの接続文字列のキャプチャ。_
+    ![各データベースの接続文字列を示すスクリーンショット。](./media/contoso-migration-rebuild/backend2.png)  
+    _図 27: 各データベースの接続文字列のキャプチャ。_
 
 ### <a name="create-the-back-end-release-pipeline"></a>バックエンド リリース パイプラインを作成する
 
@@ -283,63 +301,72 @@ AKS クラスターを作成し、Docker イメージをビルドしたので、
 
 - サービスへの受信トラフィックを許可する NGINX イングレス コントローラーをデプロイします。
 - AKS クラスターにマイクロサービスを送ります。
-- 最初のステップとして、マイクロサービスへの接続文字列を Azure DevOps を使用して更新します。 次に、新しい Azure DevOps リリース パイプラインを構成して、マイクロサービスをデプロイします。
+- 最初のステップとして管理者は、マイクロサービスへの接続文字列を Azure DevOps を使用して更新します。 次に、新しい Azure DevOps リリース パイプラインを構成して、マイクロサービスをデプロイします。
 - このセクションの手順では、[SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend) リポジトリを使用します。
-- 一部の構成設定 (Active Directory B2C など) については、この記事では説明しません。 これらの設定の詳細については、上記のリポジトリを参照してください。
+- 一部の構成設定 (Active Directory B2C など) については、この記事では説明しません。 これらの設定の詳細については、先ほど触れた SmartHotel360-Backend リポジトリを参照してください。
 
-次のパイプラインを作成します。
+管理者は次のようにしてパイプラインを作成します。
 
-1. Visual Studio を使用して、前に説明したデータベース接続情報で `/deploy/k8s/config_local.yml` ファイルを更新します。
+1. Visual Studio で、前に説明したデータベース接続情報で */deploy/k8s/config_local.yml* ファイルを更新します。
 
-    ![データベース接続](./media/contoso-migration-rebuild/back-pipe1.png) _図 28:データベース接続。_
+    ![Visual Studio の [新しいパイプライン] ボタンを示すスクリーンショット。](./media/contoso-migration-rebuild/back-pipe1.png)  
+    _図 28: データベース接続。_
 
-2. Azure DevOps を開き、SmartHotel360 プロジェクトの **[リリース]** で **[+新しいパイプライン]** を選択します。
+2. Azure DevOps を開き、SmartHotel360 プロジェクトの **[リリース]** ペインで **[+ 新しいパイプライン]** を選択します。
 
-    ![新しいパイプライン](./media/contoso-migration-rebuild/back-pipe2.png) 図 29:新しいパイプライン。
+    ![Azure DevOps の [新しいパイプライン] ボタンを示すスクリーンショット。](./media/contoso-migration-rebuild/back-pipe2.png)  
+    _図 29: 新しいパイプラインの作成。_
 
 3. **[空のジョブ]** を選択し、テンプレートを使用せずにパイプラインを開始します。
 4. ステージとパイプラインの名前を付けます。
 
-      ![ステージ名](./media/contoso-migration-rebuild/back-pipe4.png) _図 30:ステージ名。_
+      ![Azure DevOps のステージ名の作成画面を示すスクリーンショット。](./media/contoso-migration-rebuild/back-pipe4.png)  
+        _図 30: ステージ名。_
 
-      ![パイプライン名](./media/contoso-migration-rebuild/back-pipe5.png) _図 31:パイプライン名。_
+      ![Azure DevOps のパイプライン名の作成画面を示すスクリーンショット。](./media/contoso-migration-rebuild/back-pipe5.png)  
+        _図 31: パイプライン名。_
 
 5. 成果物を追加します。
 
-     ![成果物の追加](./media/contoso-migration-rebuild/back-pipe6.png) _図 32:成果物の追加。_
+     ![Azure DevOps でアーティファクトを追加する画面のスクリーンショット。](./media/contoso-migration-rebuild/back-pipe6.png)  
+    _図 32: 成果物の追加。_
 
 6. ソース タイプとして **[Git]** を選択し、SmartHotel360 アプリケーションのプロジェクト、ソース、およびマスター ブランチを指定します。
 
-    ![成果物の設定](./media/contoso-migration-rebuild/back-pipe7.png) _図 33:成果物の設定。_
+    ![[成果物の追加] ペインのスクリーンショット (ソースの種類として Git を選択したところ)。](./media/contoso-migration-rebuild/back-pipe7.png)  
+    _図 33: [成果物の設定] ペイン。_
 
 7. タスクのリンクを選択します。
 
-    ![タスクのリンク](./media/contoso-migration-rebuild/back-pipe8.png) _図 34:タスクのリンク。_
+    ![Azure DevOps でタスク リンクが強調表示された画面のスクリーンショット。](./media/contoso-migration-rebuild/back-pipe8.png)  
+    _図 34: タスクのリンク。_
 
 8. PowerShell スクリプトを Azure 環境で実行できるように、新しい Azure PowerShell タスクを追加します。
 
-    ![Azure での PowerShell](./media/contoso-migration-rebuild/back-pipe9.png) _図 35:新しい PowerShell タスクの追加。_
+    ![Azure に新しい PowerShell タスクを追加する画面のスクリーンショット。](./media/contoso-migration-rebuild/back-pipe9.png)  
+    _図 35: 新しい PowerShell タスクの追加。_
 
 9. タスクの Azure サブスクリプションを選択し、Git レポジトリから `deploy.ps1` スクリプトを選択します。
 
-    ![スクリプトの実行](./media/contoso-migration-rebuild/back-pipe10.png) _図 36:スクリプトの実行。_
+    ![実行するスクリプトを Git リポジトリから選択する画面のスクリーンショット。](./media/contoso-migration-rebuild/back-pipe10.png)  
+    _図 36: スクリプトの実行。_
 
 10. スクリプトに引数を追加します。 このスクリプトでは、すべてのクラスター コンテンツ (**イングレス**および**イングレス コントローラー**を除く) が削除され、マイクロサービスがデプロイされます。
 
-    ![スクリプトの引数](./media/contoso-migration-rebuild/back-pipe11.png)
-    _図 37:スクリプトへの引数の追加。_
+    ![スクリプトに追加される引数を示すスクリーンショット。](./media/contoso-migration-rebuild/back-pipe11.png)  
+    _図 37: スクリプトへの引数の追加。_
 
-11. 指定の Azure PowerShell バージョンを最新に設定し、パイプラインを保存します。
+11. 指定の Azure PowerShell バージョンを最新バージョンに設定し、パイプラインを保存します。
 
-12. **リリース** ページに戻り、新しいリリースを手動で作成します。
+12. **[新しいリリースを作成する]** ペインに戻って、新しいリリースを手動で作成します。
 
-    ![新しいリリース](./media/contoso-migration-rebuild/back-pipe12.png)
-    _図 38:新しいリリースの手動作成。_
+    ![[新しいリリースを作成する] ペインのスクリーンショット。](./media/contoso-migration-rebuild/back-pipe12.png)  
+    _図 38: 新しいリリースの手動作成。_
 
-13. リリースを作成した後、それを選択し、 **[アクション]** の **[デプロイ]** を選択します。
+13. リリースの作成後、それを選択し、 **[アクション]** の **[デプロイ]** を選択します。
 
-      ![リリースのデプロイ](./media/contoso-migration-rebuild/back-pipe13.png)
-    _図 39:リリースのデプロイ。_
+      ![リリースをデプロイするための [デプロイ] ボタンが強調表示されている画面のスクリーンショット。](./media/contoso-migration-rebuild/back-pipe13.png)  
+    _図 39: リリースのデプロイ。_
 
 14. デプロイが完了したら、Azure Cloud Shell: `kubectl get services` を使用して、以下のコマンドを実行することでサービスの状態を確認します。
 
@@ -347,26 +374,29 @@ AKS クラスターを作成し、Docker イメージをビルドしたので、
 
 Contoso の管理者は、フロントエンド アプリケーションによって使用されるインフラストラクチャをデプロイする必要があります。 次のものを作成します。
 
-- ペットの画像を格納する BLOB ストレージ コンテナー
-- ペット情報を含むドキュメントを格納する Azure Cosmos DB データベース
+- ペットの画像を格納する Blob Storage コンテナー。
+- ペット情報を含むドキュメントを格納する Azure Cosmos DB データベース。
 - Web サイト用の Computer Vision API。
 
 このセクションの手順では、[SmartHotel360-Website](https://github.com/microsoft/smartHotel360-website) リポジトリを使用します。
 
 ### <a name="create-blob-storage-containers"></a>BLOB ストレージ コンテナーを作成する
 
-1. Azure portal で、作成済みのストレージ アカウントを開き、 **[BLOB]** をクリックします。
+1. Azure portal で管理者は、作成済みのストレージ アカウントを開き、 **[BLOB]** をクリックします。
 2. パブリック アクセス レベルをコンテナーに設定した新しいコンテナー (`Pets`) を作成します。 ユーザーは、ペットの写真をこのコンテナーにアップロードします。
 
-    ![ストレージ BLOB](./media/contoso-migration-rebuild/blob1.png) _図 40:新しいコンテナーの作成。_
+    ![Azure portal で新しいコンテナーを作成する画面のスクリーンショット。](./media/contoso-migration-rebuild/blob1.png)  
+    _図 40: 新しいコンテナーの作成。_
 
 3. `settings` という名前の 2 つ目のコンテナーを作成します。 このコンテナーに、フロントエンド アプリのすべての設定が含まれるファイルが配置されます。
 
-    ![ストレージ BLOB](./media/contoso-migration-rebuild/blob2.png) _図 41:2 つ目のコンテナーの作成。_
+    ![Azure portal で 2 つ目の新しいコンテナーを作成する画面のスクリーンショット。](./media/contoso-migration-rebuild/blob2.png)  
+    _図 41: 2 つ目のコンテナーの作成。_
 
 4. 後で参照できるように、ストレージ アカウントのアクセスの詳細をテキスト ファイルにキャプチャします。
 
-    ![ストレージ BLOB](./media/contoso-migration-rebuild/blob2.png) _図 42:アクセスの詳細をキャプチャするテキスト ファイル。_
+    ![アクセスの詳細をキャプチャするテキスト ファイルのスクリーンショット。](./media/contoso-migration-rebuild/blob2.png)  
+    _図 42: アクセスの詳細をキャプチャするテキスト ファイル。_
 
 ### <a name="provision-an-azure-cosmos-db-database"></a>Azure Cosmos DB のデータベースをプロビジョニングする
 
@@ -374,35 +404,42 @@ Contoso の管理者は、ペットの情報に使用する Azure Cosmos DB デ�
 
 1. Azure Marketplace で、**Azure Cosmos DB** データベースを作成します。
 
-    ![Azure Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png) _図 43:Azure Cosmos DB データベースの作成。_
+    ![Azure Marketplace で Azure Cosmos DB データベースを作成する画面のスクリーンショット。](./media/contoso-migration-rebuild/cosmos1.png)  
+    _図 43: Azure Cosmos DB データベースの作成。_
 
 2. 名前 (`contososmarthotel`) を指定し、SQL API を選択し、メイン リージョン (`East US 2`) の運用リソース グループ `ContosoRG` に配置します。
 
-    ![Azure Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png) _図 44:Azure Cosmos DB データベースの名前指定。_
+    ![Azure Cosmos DB データベースの名前とその他の設定のスクリーンショット。](./media/contoso-migration-rebuild/cosmos2.png)  
+    _図 44: Azure Cosmos DB データベースの名前指定。_
 
 3. 既定の容量およびスループットを指定した新しいコレクションをデータベースに追加します。
 
-    ![Azure Cosmos DB](./media/contoso-migration-rebuild/cosmos3.png) _図 45:データベースへのコレクションの追加。_
+    ![Azure Cosmos DB の [コレクションの追加] ペインのスクリーンショット。](./media/contoso-migration-rebuild/cosmos3.png)  
+    _図 45: データベースへのコレクションの追加。_
 
 4. 後で参照できるように、このデータベースの接続情報をメモします。
 
-    ![Azure Cosmos DB](./media/contoso-migration-rebuild/cosmos4.png) _図 46:データベースの接続情報。_
+    ![Azure Cosmos DB データベースの接続情報のスクリーンショット。](./media/contoso-migration-rebuild/cosmos4.png)  
+    _図 46: データベースの接続情報。_
 
 ### <a name="provision-the-computer-vision-api"></a>Computer Vision API をプロビジョニングする
 
 Contoso の管理者は、Computer Vision API をプロビジョニングします。 この API は、ユーザーによってアップロードされた写真を評価するために関数によって呼び出されます。
 
-1. Azure Marketplace で、**Computer Vision** インスタンスを作成します。
+1. 管理者が Azure Marketplace で、**Computer Vision** インスタンスを作成します。
 
-     ![Computer Vision](./media/contoso-migration-rebuild/vision1.png) _図 47:Azure Marketplace の新しいインスタンス。_
+     ![Azure Marketplace で新しい Computer Vision インスタンスを作成する画面のスクリーンショット。](./media/contoso-migration-rebuild/vision1.png)  
+    _図 47: Azure Marketplace での新しいインスタンス。_
 
 2. API (`smarthotelpets`) を運用リソース グループ `ContosoRG` のメイン リージョン (`East US 2`) にプロビジョニングします。
 
-    ![Computer Vision](./media/contoso-migration-rebuild/vision2.png) _図 48:運用リソースグループでの API のプロビジョニング。_
+    ![運用リソース グループに API を設定する画面のスクリーンショット。](./media/contoso-migration-rebuild/vision2.png)  
+    _図 48: 運用リソースグループでの API のプロビジョニング。_
 
 3. 後で参照できるように、この API の接続文字列をテキスト ファイルに保存します。
 
-     ![Computer Vision](./media/contoso-migration-rebuild/vision3.png) _図 49:API の接続の設定の保存。_
+     ![API の接続設定をテキスト ファイルに保存する画面のスクリーンショット。](./media/contoso-migration-rebuild/vision3.png)  
+    _図 49: API の接続の設定の保存。_
 
 ### <a name="provision-the-azure-web-app"></a>Azure Web アプリをプロビジョニングする
 
@@ -410,17 +447,20 @@ Contoso の管理者は、Azure portal を使用して Web アプリをプロビ
 
 1. ポータルで **[Web アプリ]** を選択します。
 
-    ![Web アプリ](./media/contoso-migration-rebuild/web-app1.png) _図 50:Web アプリの選択。_
+    ![Azure portal で Web アプリを選択する画面のスクリーンショット。](./media/contoso-migration-rebuild/web-app1.png)  
+    _図 50: Web アプリの選択。_
 
 2. Web アプリの名前 (`smarthotelcontoso`) を指定し、Windows 上で実行して、運用リソース グループ `ContosoRG` に配置します。 アプリケーションのモニタリング用に新しい Application Insights リソースを作成します。
 
-    ![Web アプリの名前](./media/contoso-migration-rebuild/web-app2.png) _図 51:Web アプリケーションの名前。_
+    ![Web アプリの名前やその他の詳細を指定する画面のスクリーンショット。](./media/contoso-migration-rebuild/web-app2.png)  
+    _図 51: Web アプリケーションの名前。_
 
-3. 完了したら、アプリケーションのアドレスを参照して、アプリが正常に作成されたことを確認します。
+3. 完了したら、管理者はブラウザーでアプリケーションのアドレスにアクセスし、アプリが正常に作成されたかどうかを確認します。
 
-4. Azure portal で、コードのステージング スロットを作成します。 パイプラインはこのスロットにデプロイされます。 これにより、管理者がリリースを実行するまで、コードは運用環境に移行されません。
+4. Azure portal で、コードのステージング スロットを作成します。 パイプラインはこのスロットにデプロイされます。 このアプローチにより、管理者がリリースを実行するまで、コードは運用環境に移行されません。
 
-    ![Web アプリのステージング スロット](./media/contoso-migration-rebuild/web-app3.png) _図 52:Web アプリのステージング スロット。_
+    ![Web アプリのステージング スロットを追加する画面のスクリーンショット。](./media/contoso-migration-rebuild/web-app3.png)  
+    _図 52: Web アプリのステージング スロットを追加する。_
 
 ### <a name="provision-the-function-app"></a>関数アプリをプロビジョニングする
 
@@ -428,13 +468,15 @@ Contoso の管理者は、Azure portal で関数アプリをプロビジョニ�
 
 1. **[Function App]** を選択します。
 
-    ![関数アプリ プロジェクトの作成](./media/contoso-migration-rebuild/function-app1.png) _図 53:関数アプリの選択。_
+    ![関数アプリを作成する画面のスクリーンショット。](./media/contoso-migration-rebuild/function-app1.png)  
+    _図 53: 関数アプリの選択。_
 
 2. 関数アプリ (`smarthotelpetchecker`) の名前を指定します。 運用リソース グループ (`ContosoRG`) に関数アプリを配置します。 ホスティングの場所を**従量課金プラン**に設定し、関数アプリを `East US 2` リージョンに配置します。 監視用の Application Insights インスタンスと共に新しいストレージ アカウントが作成されます。
 
-    ![関数アプリの設定](./media/contoso-migration-rebuild/function-app2.png) _図 54:関数アプリの設定。_
+    ![関数アプリの設定を示すスクリーンショット。](./media/contoso-migration-rebuild/function-app2.png)  
+    _図 54: 関数アプリの設定。_
 
-3. 関数アプリがデプロイされたら、そのアドレスを参照して、アプリが正常に作成されたことを確認します。
+3. 関数アプリをデプロイしたら、そのアドレスに管理者がブラウザーでアクセスして、アプリが正常に作成されたことを確認します。
 
 ## <a name="step-4-set-up-the-front-end-pipeline"></a>手順 4:フロントエンド パイプラインを設定する
 
@@ -442,7 +484,8 @@ Contoso 管理者は、フロントエンド サイトに 2 つの異なるプ�
 
 1. Azure DevOps で、プロジェクト `SmartHotelFrontend` を作成します。
 
-    ![フロントエンド プロジェクト](./media/contoso-migration-rebuild/function-app1.png) _図 55:フロントエンド プロジェクト。_
+    ![フロントエンド プロジェクトの作成画面のスクリーンショット。](./media/contoso-migration-rebuild/function-app1.png)  
+    _図 55: フロントエンド プロジェクトの作成。_
 
 2. [SmartHotel360 フロントエンド](https://github.com/Microsoft/SmartHotel360-Website) Git リポジトリを新しいプロジェクトにインポートします。
 
@@ -452,10 +495,11 @@ Contoso 管理者は、フロントエンド サイトに 2 つの異なるプ�
 
 次に、Contoso の管理者は Contoso リソースを使用するように Web アプリを構成します。
 
-1. Azure DevOps プロジェクトに接続し、リポジトリを開発用マシンにローカルに複製します。
+1. 管理者が Azure DevOps プロジェクトに接続し、開発用マシンのローカルにリポジトリをクローンします。
 2. Visual Studio でフォルダーを開いて、リポジトリ内のすべてのファイルを表示します。
 
-    ![リポジトリ ファイル](./media/contoso-migration-rebuild/configure-webapp1.png) _図 56:リポジトリ内のすべてのファイルを表示。_
+    ![リポジトリ内のすべてのファイルを含んだフォルダーを表示する Visual Studio のスクリーンショット。](./media/contoso-migration-rebuild/configure-webapp1.png)  
+    _図 56: リポジトリ内のすべてのファイルを表示。_
 
 3. 必要に応じて構成の変更を更新します。
 
@@ -470,188 +514,197 @@ Contoso 管理者は、フロントエンド サイトに 2 つの異なるプ�
     - URL は、Contoso が作成する新しい Web アプリの DNS 名と一致している必要があります。
     - Contoso の場合、これは `smarthotelcontoso.eastus2.cloudapp.azure.com` です。
 
-    ![JSON 設定](./media/contoso-migration-rebuild/configure-webapp2.png) _図 57: .json 設定。_
+    ![Visual Studio の .json 設定のスクリーンショット。](./media/contoso-migration-rebuild/configure-webapp2.png)  
+    _図 57: .json 設定。_
 
-5. ファイルが更新されたら、名前を `smarthotelsettingsurl` に変更し、前に作成した BLOB ストレージにアップロードします。
+5. ファイルの更新後、管理者は、その名前を `smarthotelsettingsurl` に変更して、あらかじめ作成しておいた Blob Storage にアップロードします。
 
-    ![名前の変更とアップロード](./media/contoso-migration-rebuild/configure-webapp3.png) _図 58:ファイルの名前変更とアップロード。_
+    ![.json ファイルの名前変更とアップロードを行う画面のスクリーンショット。](./media/contoso-migration-rebuild/configure-webapp3.png)  
+    _図 58: ファイルの名前変更とアップロード。_
 
 6. ファイルを選択肢て URL を取得します。 この URL は、アプリケーションが構成ファイルプル ダウンするときに使用されます。
 
-    ![アプリの URL](./media/contoso-migration-rebuild/configure-webapp4.png) _図 59:アプリケーションの URL。_
+    ![アプリケーションによって使用されるファイルの URL のスクリーンショット。](./media/contoso-migration-rebuild/configure-webapp4.png)  
+    _図 59: アプリケーションの URL。_
 
-7. `appsettings.Production.json` ファイルで、`SettingsURL` を新しいファイルの URL に更新します。
+7. *appsettings.Production.json* ファイルで、`SettingsURL` を、新しいファイルの URL に更新します。
 
-    ![URL の更新](./media/contoso-migration-rebuild/configure-webapp5.png) _図 60:新しいファイルへの URL の更新。_
+    ![新しいファイルに URL を更新する画面のスクリーンショット。](./media/contoso-migration-rebuild/configure-webapp5.png)  
+    _図 60: 新しいファイルへの URL の更新。_
 
 ### <a name="deploy-the-website-to-azure-app-service"></a>Azure App Service に Web サイトをデプロイする
 
 これで Contoso の管理者は Web サイトを公開できます。
 
-1. Azure DevOps を開き、`SmartHotelFrontend` プロジェクトの **[ビルドとリリース]** で **[+新しいパイプライン]** をクリックします。
+1. Azure DevOps を開き、`SmartHotelFrontend` プロジェクトの **[ビルドとリリース]** で **[+ 新しいパイプライン]** を選択します。
 2. **[Azure DevOps Git]** をソースとして選択します。
 3. **[ASP.NET Core]** テンプレートを選択します。
 4. パイプラインを確認し、 **[Web プロジェクトの発行]** と **[発行されたプロジェクトの zip 圧縮]** が選択されていることを確認します。
 
-    ![パイプラインの設定](./media/contoso-migration-rebuild/vsts-publish-front2.png) _図 61:パイプラインの設定。_
+    ![Web プロジェクトのパイプライン設定のスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front2.png)  
+    _図 61: パイプラインの設定。_
 
 5. **[トリガー]** で継続的インテグレーションを有効にして、マスター ブランチを追加します。 これにより、マスター ブランチにコミットされた新しいコードをソリューションが持つたびに、ビルド パイプラインが起動します。
 
-    ![継続的インテグレーション](./media/contoso-migration-rebuild/vsts-publish-front3.png) _図 62:継続的インテグレーション。_
+    ![継続的インテグレーションを有効にして、マスター ブランチを追加する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front3.png)  
+    _図 62: 継続的インテグレーションを有効にする。_
 
 6. **[保存してキューに登録]** を選択してビルドを開始します。
 7. ビルドが完了したら、**Azure App Service のデプロイ**を使用してリリース パイプラインを構成します。
 8. ステージ名 **Staging** を指定します。
 
-    ![環境名](./media/contoso-migration-rebuild/vsts-publish-front4.png) _図 63:環境の名前指定。_
+    ![環境のステージ名を指定する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front4.png)  
+    _図 63: 環境の名前指定。_
 
 9. 成果物を追加し、構成したビルドを選択します。
 
-    ![成果物の追加](./media/contoso-migration-rebuild/vsts-publish-front5.png) _図 64:成果物の追加。_
+    ![成果物の追加画面のスクリーンショット (ソースの種類として [ビルド] を選択したところ)。](./media/contoso-migration-rebuild/vsts-publish-front5.png)  
+    _図 64: 成果物の追加。_
 
-10. 成果物の上にある稲妻アイコンを選択して、継続的デプロイを有効にします。
+10. 成果物の稲妻アイコンを選択し、継続的デプロイを **[有効]** に設定します。
 
-    ![継続的なデプロイ](./media/contoso-migration-rebuild/vsts-publish-front6.png)
-    _図 65:継続的なデプロイの有効化。_
+    ![継続的デプロイを有効にする画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front6.png)  
+    _図 65: 継続的なデプロイの有効化。_
 
 11. **[環境]** の **[ステージング]** の下で **[1 job, 1 task]\(1 ジョブ、1 タスク\)** を選択します。
-12. サブスクリプションおよび Web アプリ名を選択した後、 **[Azure App Service のデプロイ]** タスクを開きます。 **ステージング** デプロイ スロットを使用するようにデプロイが構成されます。 これによって、このスロットでレビューと承認のコードが自動的にビルドされます。
+12. サブスクリプションおよび Web アプリ名を選択した後、管理者は **[Azure App Service のデプロイ]** タスクを開きます。 **ステージング** デプロイ スロットを使用するようにデプロイが構成されます。 これによって、このスロットでレビューと承認のコードが自動的にビルドされます。
 
-     ![スロット](./media/contoso-migration-rebuild/vsts-publish-front7.png)
-    _図 66:スロットの使用。_
+     ![Web アプリをスロットにデプロイする画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front7.png)  
+    _図 66: スロットへのデプロイ。_
 
 13. **[パイプライン]** で、新しいステージを追加します。
 
-    ![新しい環境](./media/contoso-migration-rebuild/vsts-publish-front8.png)
-    _図 67:新しいステージの追加。_
+    ![[パイプライン] タブと新しいステージの追加のスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front8.png)  
+    _図 67: 新しいステージの追加。_
 
 14. **[スロットを使用した Azure App Service の配置]** を選択し、環境名を **Prod** とします。
-15. **[1 job, 2 task]\(1 ジョブ、2 タスク\)** を選択し、次にサブスクリプション、アプリ サービス名、および**ステージング** スロットを選択します。
+15. **[1 job, 2 tasks]\(1 ジョブ、2 タスク\)** を選択し、次にサブスクリプション、アプリ サービス名、および**ステージング** スロットを選択します。
 
-    ![環境名](./media/contoso-migration-rebuild/vsts-publish-front10.png)
-    _図 68:環境名。_
+    ![環境の名前を指定する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front10.png)  
+    _図 68: 環境の名前指定。_
 
 16. 次に、パイプラインから **[Deploy Azure App Service to Slot]\(Azure App Service をスロットにデプロイ\)** をクリックします。 これは直前のステップからここに配置されています。
 
-    ![パイプラインからの削除](./media/contoso-migration-rebuild/vsts-publish-front11.png)
-    _図 69:パイプラインからのスロットの削除。_
+    ![パイプラインからスロットを削除する画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front11.png)  
+    _図 69: パイプラインからのスロットの削除。_
 
 17. パイプラインを保存します。 パイプラインで、 **[配置後の条件]** を選択します。
 
-    ![配置後](./media/contoso-migration-rebuild/vsts-publish-front12.png)
-    _図 70:配置後の条件。_
+    ![[配置後の条件] ボタンのスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front12.png)  
+    _図 70: 配置後の条件。_
 
-18. **[配置後承認]** を有効にし、承認者として開発リーダーを追加します。
+18. **[配置後の承認]** を有効にし、承認者として開発リーダーを追加します。
 
-    ![配置後承認](./media/contoso-migration-rebuild/vsts-publish-front13.png)
-    _図 71:承認者の追加。_
+    ![有効になった [配置後の承認] の承認者一覧のスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front13.png)  
+    _図 71: 承認者の追加。_
 
-19. ビルド パイプラインで、ビルドを手動でキックオフします。 これによって、サイトをステージング スロットにデプロイする新しいリリース パイプラインがトリガーされます。 Contoso については、このスロットの URL は `https://smarthotelcontoso-staging.azurewebsites.net/` です。
+19. ビルド パイプラインで、管理者がビルドを手動で開始します。 これによって、サイトをステージング スロットにデプロイする新しいリリース パイプラインがトリガーされます。 Contoso については、このスロットの URL は `https://smarthotelcontoso-staging.azurewebsites.net/` です。
 
 20. ビルドが完了すると、リリースがスロットにデプロイされ、Azure DevOps から承認のために開発リーダーにメールが送られます。
 
 21. 開発リーダーは **[承認の表示]** を選択し、Azure DevOps ポータルで要求を承認または拒否できます。
 
-    ![承認メール](./media/contoso-migration-rebuild/vsts-publish-front14.png)
-    _図 72:要求を承認する開発リーダー。_
+    ![配置後の承認の [承認または拒否] リンクのスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front14.png)  
+    _図 72: 保留中のリリース承認要求。_
 
-22. リーダーはコメントと承認を行います。 **ステージング**と **prod** スロットの交換が開始され、ビルドが運用環境に移行します。
+22. 開発リーダーがコメントを入力して承認します。 **ステージング**と **prod** スロットの交換が開始され、ビルドが運用環境に移行します。
 
-    ![承認とスワップ](./media/contoso-migration-rebuild/vsts-publish-front15.png)
-    _図 73:運用環境へのビルドの移行。_
+    ![配置後の承認とコメントのスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front15.png)  
+    _図 73: 運用環境へのビルドの移行。_
 
 23. パイプラインがスワップを完了します。
 
-    ![スワップの完了](./media/contoso-migration-rebuild/vsts-publish-front16.png)
-    _図 74:スワップの完了。_
+    ![ビルドのデプロイの状態を示すスクリーンショット。](./media/contoso-migration-rebuild/vsts-publish-front16.png)  
+    _図 74: スワップの完了。_
 
 24. チームは **prod** スロットをチェックして、`https://smarthotelcontoso.azurewebsites.net/` で Web アプリが運用環境にあることを確認します。
 
 ### <a name="deploy-the-petchecker-function-app"></a>PetChecker 関数アプリをデプロイする
 
-Contoso の管理者はアプリケーションを次のようにデプロイします。
+Contoso の管理者は次のようにしてアプリケーションをデプロイします。
 
 1. Azure DevOps プロジェクトに接続することで、リポジトリを開発用マシンにローカルに複製します。
 2. Visual Studio でフォルダーを開いて、リポジトリ内のすべてのファイルを表示します。
-3. `src/PetCheckerFunction/local.settings.json` ファイルを開き、ストレージ、Azure Cosmos DB データベース、および Computer Vision API 用のアプリ設定を追加します。
+3. *src/PetCheckerFunction/local.settings.json* ファイルを開き、ストレージ、Azure Cosmos DB データベース、および Computer Vision API 用のアプリ設定を追加します。
 
-    ![関数のデプロイ](./media/contoso-migration-rebuild/function5.png) _図 75:関数のデプロイ。_
+    ![.json ファイルに含まれるアプリ設定を Visual Studio で表示した画面のスクリーンショット。](./media/contoso-migration-rebuild/function5.png)  
+    _図 75: 関数のデプロイ。_
 
 4. コードをコミットし、Azure DevOps に同期して戻し、変更をプッシュします。
-5. 新しいビルド パイプラインを追加し、次にソースに **[Azure DevOps Git]** を選択します。
+5. 新しいビルド パイプラインを追加し、ソースに **[Azure DevOps Git]** を選択します。
 6. **[ASP.NET Core (.NET Framework)]** テンプレートを選択します。
 7. テンプレートの既定値をそのまま使用します。
-8. **[トリガー]** で、 **[継続的インテグレーションを有効にする]** を選択し、次に **[保存してキューに登録]** を選択してビルドを開始します。
+8. **[トリガー]** で、 **[継続的インテグレーションを有効にする]** を選択し、 **[保存してキューに登録]** を選択してビルドを開始します。
 9. ビルドが完了したら、 **[スロットを使用した Azure App Service の配置]** を追加してリリース パイプラインをビルドします。
 10. 環境に **Prod** という名前を付けて、サブスクリプションを選択します。 **[アプリの種類]** を **[関数アプリ]** に設定し、アプリサービス名を `smarthotelpetchecker` とします。
 
-    ![関数アプリ](./media/contoso-migration-rebuild/petchecker2.png)
-    _図 76:関数アプリ。_
+    ![アプリの種類とアプリ サービス名のスクリーンショット。](./media/contoso-migration-rebuild/petchecker2.png)  
+    _図 76: 関数アプリ。_
 
-11. 成果物 **ビルド** を追加します。
+11. 成果物 (**ビルド**) を追加します。
 
-    ![成果物の追加](./media/contoso-migration-rebuild/petchecker3.png)
-    _図 77:成果物の追加。_
+    ![成果物の追加画面のスクリーンショット (ソースの種類として [ビルド] を選択したところ)。](./media/contoso-migration-rebuild/petchecker3.png)  
+    _図 77: 成果物の追加。_
 
-12. **[継続的配置トリガー]** を有効にし、次に **[保存]** を選択します。
+12. **[継続的配置トリガー]** を有効にし、 **[保存]** を選択します。
 13. **[Queue new build]\(新しいビルドをキューに登録\)** を選択し、CI/CD パイプライン全体を実行します。
 14. 関数はデプロイされた後、Azure portal に **[実行中]** 状態で表示されます。
 
-    ![関数の状態の更新](./media/contoso-migration-rebuild/function6.png)
-    _図 78:関数の状態の更新。_
+    !["実行中" 状態で表示された関数アプリのスクリーンショット。](./media/contoso-migration-rebuild/function6.png)  
+    _図 78: 関数の状態の更新。_
 
-15. `http://smarthotel360public.azurewebsites.net/pets` で、Pet Checker アプリケーションを参照して、正常に動作していることを確認します。
+15. ブラウザーで `http://smarthotel360public.azurewebsites.net/pets` の Pet Checker アプリケーションにアクセスし、正常に動作していることを確認します。
 
 16. アバターをクリックして、写真をアップロードします。
 
-    ![アバターへの写真の割り当て](./media/contoso-migration-rebuild/function7.png)
-    _図 79:アバターへの写真の割り当て。_
+    ![アバターに画像を割り当てるペインのスクリーンショット。](./media/contoso-migration-rebuild/function7.png)  
+    _図 79: アバターへの写真の割り当て。_
 
 17. 最初に確認したい写真は、小さい犬の写真です。
 
-    ![写真の確認](./media/contoso-migration-rebuild/function8.png)
-    _図 80:写真の確認。_
+    ![犬の写真のスクリーンショット。](./media/contoso-migration-rebuild/function8.png)  
+    _図 80: 写真の確認。_
 
 18. アプリケーションによって受領のメッセージが返されます。
 
-    ![受領のメッセージ](./media/contoso-migration-rebuild/function9.png)
-    _図 81:受領のメッセージ。_
+    ![受領のメッセージのスクリーンショット。](./media/contoso-migration-rebuild/function9.png)  
+    _図 81: 受領のメッセージ。_
 
 ## <a name="review-the-deployment"></a>デプロイを再調査する
 
 リソースを Azure に移行したら、新しいインフラストラクチャを完全に操作可能にして、セキュリティ保護する必要があります。
 
-### <a name="security"></a>セキュリティ
+### <a name="security"></a>Security
 
-- Contoso は新しいデータベースが安全であることを確認する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso は新しいデータベースが安全であることを確認する必要があります。 詳細については、「[Azure SQL Database と SQL Managed Instance のセキュリティ機能の概要](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)」を参照してください。
 - アプリケーションは、SSL と証明書を使用するように更新する必要があります。 コンテナー インスタンスは 443 で応答するように再デプロイする必要があります。
-- Contoso は Key Vault を使用して、Service Fabric アプリケーションのシークレットを保護することを検討する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)。
+- Contoso は、Service Fabric アプリケーションのシークレットの保護に Azure Key Vault を役立てることを検討する必要があります。 詳細については、「[Service Fabric アプリケーションで暗号化されたシークレットを管理する](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)」を参照してください。
 
 ### <a name="backups-and-disaster-recovery"></a>バックアップとディザスター リカバリー
 
 - Contoso は、[Azure SQL Database のバックアップ要件](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)を確認する必要があります。
 - Contoso は、[データベースのリージョン内フェールオーバーを提供するように SQL フェールオーバー グループを実装](https://docs.microsoft.com/azure/sql-database/sql-database-auto-failover-group)することを検討する必要があります。
 - Contoso では、[Azure Container Registry Premium SKU の geo レプリケーション](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)を使用できます。
-- Azure Cosmos DB は自動的にバックアップされます。 Contoso は、このプロセスの詳細情報を[こちらで確認](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)できます。
+- Azure Cosmos DB は自動的にバックアップされます。 詳細については、「[Azure Cosmos DB でのオンライン バックアップとオンデマンドのデータ復元](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore)」を参照してください。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - すべてのリソースをデプロイした後、Contoso は[インフラストラクチャ計画](./contoso-migration-infrastructure.md#set-up-tagging)に基づいて Azure タグを割り当てる必要があります。
-- すべてのライセンスは、Contoso が使用している PaaS サービスのコストに組み込まれています。 これは EA から差し引かれます。
+- すべてのライセンスは、Contoso が使用している PaaS サービスのコストに組み込まれています。 これはマイクロソフト エンタープライズ契約から差し引かれます。
 - Contoso では、[Azure Cost Management と Billing](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理を支援します。
 
 ## <a name="conclusion"></a>まとめ
 
-この記事で、Contoso は SmartHotel360 アプリケーションを Azure にリビルドしました。 オンプレミス アプリケーションのフロントエンド VM は、Azure App Service Web アプリにリビルドされます。 アプリのバックエンドは、AKS によって管理されるコンテナーにデプロイされたマイクロサービスを使用してビルドされます。 Contoso は機能をペットの写真アプリケーションで強化しました。
+この記事で、Contoso は SmartHotel360 アプリケーションを Azure にリビルドしました。 オンプレミス アプリケーションのフロントエンド VM は、Azure App Service Web アプリにリビルドされます。 アプリケーションのバックエンドは、AKS によって管理されるコンテナーにデプロイされたマイクロサービスを使用してビルドされます。 Contoso は機能をペットの写真アプリケーションで強化しました。
 
 ## <a name="suggested-skills"></a>推奨されるスキル
 
-Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
+Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 Microsoft Learn では、ポイントを獲得し、レベルを積み重ねて、さらなる達成を目指すことができます。
 
-ここでは、Azure の Contoso SmartHotel360 アプリケーションに合わせてカスタマイズされた Microsoft Learn のラーニング パスの例をいくつか紹介します。
+ここでは、Azure の Contoso SmartHotel360 アプリケーションに合わせてカスタマイズされた Microsoft Learn のラーニング パスの例を 2 つ紹介します。
 
 <!--docsTest:ignore "Azure Cognitive Vision Services" -->
 
-- **[Azure App Service を使用して Azure に Web サイトをデプロイする](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service):** Azure 内の Web アプリを使用すると、基盤となるサーバー、ストレージ、ネットワーク アセットを操作しなくても簡単に Web サイトを公開して管理することができます。 代わりに、Web サイトの機能に焦点を当て、堅牢な Azure プラットフォームを使用して、サイトへの安全なアクセスを提供することができます。
+- **[Azure App Service を使用して Azure に Web サイトをデプロイする](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service)** : Azure に Web アプリを作成すれば、基盤となるサーバー、ストレージ、ネットワーク アセットを操作しなくても簡単に Web サイトを公開して管理することができます。 代わりに、Web サイトの機能に焦点を当て、堅牢な Azure プラットフォームを使用して、サイトへの安全なアクセスを提供することができます。
 
-- **[Azure Cognitive Vision サービスを使用してイメージを処理して分類する](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services):** Microsoft Cognitive Services では、ご利用のアプリケーションで Computer Vision 機能を有効にできる事前に作成した機能を提供します。 Cognitive Vision サービスを使用して、顔を検出し、イメージをタグ付けして分類し、オブジェクトを特定する方法について説明します。
+- **[Azure Cognitive Vision サービスを使用してイメージを処理して分類する](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services)** : Microsoft Cognitive Services では、ご利用のアプリケーションで Computer Vision 機能を有効にできる事前に作成した機能を提供します。 Cognitive Vision サービスを使用して、顔を検出し、イメージをタグ付けして分類し、オブジェクトを特定する方法について説明します。

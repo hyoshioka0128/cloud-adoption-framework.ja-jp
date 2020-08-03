@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44269a67e406abe6f67c2b5e233d4ea676f45163
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: e341378d4d363344a36cfabb3f9b5374262d9e6f
+ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86199461"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254944"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -57,7 +57,7 @@ Contoso のクラウド チームは、さまざまな移行の目標を設定�
 
 ## <a name="solution-design"></a>ソリューション設計
 
-Contoso では、[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) で [Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) 機能を使用して、自社のデジタル資産の[移行評価](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)を既に実行しました。
+Contoso では、[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) を使用して、自社のデジタル資産の[移行評価](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)を既に実行しました。
 
 この評価では、複数のワークロードを複数の部門に分散するという結果になりました。 移行プロジェクト全体のサイズからすると、コミュニケーション、リソース、スケジュールの計画の詳細を管理するために、完全なプロジェクト管理オフィス (PMO) が必要になります。
 
@@ -100,7 +100,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 #### <a name="step-1-discovery"></a>手順 1:探索
 
-Contoso では、Azure Migrate で Service Map を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate により、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Azure Migrate の Service Map 機能を使用して、Contoso サーバー間の接続、プロセス、受信および送信接続の待機時間、TCP 接続アーキテクチャ全体のポートを明らかにしました。 Contoso 側で必要な作業は、[Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) および [Microsoft Dependency](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) エージェントをインストールすることだけでした。
+Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate により、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Contoso サーバー間の接続、プロセス、インバウンド接続とアウトバウンド接続の待ち時間、TCP 接続アーキテクチャ全体のポートも Azure Migrate によって明らかになりました。
 
 また、Azure Migrate プロジェクトに Data Migration Assistant も追加しました。 このツールを選択することで、Azure への移行についてデータベースを評価できるようになります。
 
@@ -162,7 +162,7 @@ Contoso では、[ワークロードの準備状況のレビュー](https://docs
 
 #### <a name="step-5-test-migrations"></a>手順 5:移行のテスト
 
-移行準備の最初の部分には、セットアップ前の環境への各データベースのテスト移行が含まれていました。 時間を節約するために、移行のすべての操作をスクリプト化し、それぞれの時間を記録しました。 移行を高速化するために、同時に実行できる移行操作を特定しました。
+移行準備の最初の部分には、設定前の環境への各データベースのテスト移行が含まれていました。 時間を節約するために、移行のすべての操作をスクリプト化し、それぞれの時間を記録しました。 移行を高速化するために、同時に実行できる移行操作を特定しました。
 
 予期しないエラーが発生した場合のために、データベースの各ワークロードについてロールバック手順を特定しました。
 
@@ -193,14 +193,14 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 
 #### <a name="security"></a>セキュリティ
 
-- Contoso では、新しい Azure データベース ワークロードがセキュリティで保護されていることを確認する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso では、新しい Azure データベース ワークロードを確実にセキュリティで保護する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
 - 特に、ファイアウォールと仮想ネットワークの構成を確認する必要があります。
 - [Private Link](https://docs.microsoft.com/azure/azure-sql/database/private-endpoint-overview) をセットアップして、すべてのデータベース トラフィックが Azure とオンプレミスのネットワーク内に保持されるようにします。
 - Azure SQL Database のための [Azure Advanced Threat Protection](https://docs.microsoft.com/azure/azure-sql/database/threat-detection-overview) を有効にします。
 
 #### <a name="backups"></a>バックアップ
 
-- Azure データベースが geo リストアを使用してバックアップされていることを確認します。 これにより、リージョンで障害が発生した場合に、ペアのリージョンでバックアップを使用できるようになります。
+- geo リストアを使用して、Azure データベースが確実にバックアップされるようにします。 これにより、リージョンで障害が発生した場合に、ペアのリージョンでバックアップを使用できるようになります。
 - **重要:** Azure リソースが削除されないようにするため、[リソース ロック](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources)を保持していることを確認します。 削除したサーバーを復元することはできません。
 
 #### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化

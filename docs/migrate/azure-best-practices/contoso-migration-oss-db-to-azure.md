@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: b035b70e73fe976dff2944ec2988c351b67be83a
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: f259663be5e6572cfcdd0724daa62173769e4709
+ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478329"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254995"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>オープンソース データベースを Azure に移行する
 
@@ -50,7 +50,7 @@ Contoso のクラウド チームは、さまざまな移行の目標を設定�
 
 ## <a name="solution-design"></a>ソリューション設計
 
-Contoso では、[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) で [Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) 機能を使用して、自社のデジタル資産の[移行評価](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)を既に実行しました。
+Contoso では、[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) を使用して、自社のデジタル資産の[移行評価](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)を既に実行しました。
 
 ![移行プロセスを示す図。](./media/contoso-migration-oss-db-to-azure/migration-process.png)
 _図 1: 移行プロセス。_
@@ -92,9 +92,9 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 #### <a name="step-1-discovery"></a>手順 1:探索
 
-Contoso では、Azure Migrate で Service Map を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate によって、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Azure Migrate の Service Map 機能を使用して、会社は Contoso サーバー間の接続、プロセス、受信および送信接続の待機時間、TCP 接続アーキテクチャ全体のポートを明らかにしました。 Contoso で必要な作業は、[Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) および [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) をインストールすることだけでした。
+Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate によって、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Contoso サーバー間の接続、プロセス、インバウンド接続とアウトバウンド接続の待ち時間、TCP 接続アーキテクチャ全体のポートも Azure Migrate によって明らかになりました。 Contoso で必要な作業は、[Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) および [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) をインストールすることだけでした。
 
-Azure への移行では、Contoso によって、移行する必要がある 300 個を超えるデータベース インスタンスが特定されました。 これらのインスタンスのうち約 40% は、PaaS ベースのサービスに移行できます。 残りの 60% は、各データベース ソフトウェアを実行する VM を使用して、IaaS ベースのアプローチに移行する必要があります。
+Contoso によって、移行する必要がある 300 個を超えるデータベース インスタンスが特定されました。 これらのインスタンスのうち約 40% は、PaaS ベースのサービスに移行できます。 残りの 60% は、各データベース ソフトウェアを実行する VM を使用して、IaaS ベースのアプローチに移行する必要があります。
 
 #### <a name="step-2-application-assessment"></a>手順 2:アプリケーション評価
 

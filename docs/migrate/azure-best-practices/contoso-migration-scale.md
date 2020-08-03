@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 89f1f986bbe38162745e592e450ed13591936ad7
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: adde78f5eddf1229f6b73cdf0dfafb618843072f
+ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234192"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254978"
 ---
 <!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -162,7 +162,7 @@ Contoso はこの移行のスケールのために Azure Migrate を適切に使
 Contoso は Azure Migrate を次のように使用します。
 
 - vCenter で Contoso は VM をフォルダーに整理します。 これにより、特定のフォルダー内の VM に対して評価を実行するときに、焦点を絞りやすくなります。
-- Azure Migrate では Azure Service Map を使用してマシン間の依存関係を評価します。 そのためには、評価する対象の VM 上にエージェントをインストールする必要があります。
+- マシン間の依存関係を評価します。 そのためには、評価する対象の VM 上にエージェントをインストールする必要があります。
   - Contoso では、自動化されたスクリプトを使用して、必要な Windows または Linux エージェントをインストールします。
   - スクリプトを使用することで、Contoso は vCenter フォルダー内の VM にインストールをプッシュできます。
 
