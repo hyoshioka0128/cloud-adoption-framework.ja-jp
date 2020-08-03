@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 86114f9a8a721d5475716d05f78c4cdc8a25637c
-ms.sourcegitcommit: bf0dac78ae25cc141408384399952622cc8f9cbf
+ms.openlocfilehash: 81f5fe9bf3f67031ffc35caf960009f0c3491c2c
+ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87412275"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87472793"
 ---
 # <a name="azure-cloud-migration-best-practices-checklist"></a>Azure クラウド移行のベスト プラクティスのチェックリスト
 
@@ -28,9 +28,9 @@ Azure への移行に関心がある場合は、クラウド導入フレーム�
 
 ## <a name="migration-best-practices-for-technology-driven-scope-expansion"></a>テクノロジ主導のスコープ拡張に関する移行のベスト プラクティス
 
-- **[VMware の移行](./vmware-host.md):** VMware ホストを移行すると、移行プロセス全体を高速化できます。 移行された各 VMware ホストでは、リフトアンドシフト アプローチを使用して、複数のワークロードをクラウドに移動できます。 移行後は、これらの VM とワークロードを VMware に維持したり、最新のクラウド機能に移行したりすることができます。
-- **[SQL Server の移行](./sql-migration.md):** SQL Server を移行すると、移行プロセス全体を高速化できます。 移行された各 SQL Server では、複数のデータベースとサービスを移動できるため、複数のワークロードを加速させる可能性があります。
-- **[複数のデータセンター](./multiple-datacenters.md):** 複数のデータセンターの移行は、かなり複雑になります。 評価、移行、最適化、管理の各プロセスでは、より複雑な環境用に準備するために、追加の考慮事項について検討します。
+- **[VMware の移行](./vmware-host.md):** VMware ホストを移行すると、移行プロセス全体を高速化できます。 移行された各 VMware ホストでは、複数のワークロードをクラウドに移動できます。 移行後は、これらの VM とワークロードを VMware に維持したり、最新のクラウド機能に移行したりすることができます。
+- **[SQL Server の移行](./sql-migration.md):** SQL Server のインスタンスを移行すると、移行プロセス全体を高速化できます。 移行された各インスタンスでは、複数のデータベースとサービスを移動できるため、複数のワークロードを加速させる可能性があります。
+- **[複数のデータセンター](./multiple-datacenters.md):** 複数のデータセンターの移行は、かなり複雑になります。 移動の各プロセス (評価、移行、最適化、管理) では、より複雑な環境用に準備するために、追加の考慮事項について検討します。
 - **[データ要件がネットワーク容量を超える](./network-capacity-exceeded.md):** 企業がクラウドへの移行を選択する理由は、多くの場合、既存のデータセンターの容量、速度、または安定性に満足できなくなったためです。 残念ながら、こうした同じ制約によって移行プロセスが複雑になり、評価および移行プロセス段階で追加の計画が必要になります。
 - **[ガバナンスまたはコンプライアンスの戦略](./governance-or-compliance.md):** ガバナンスとコンプライアンスが移行の成功に不可欠な場合は、IT ガバナンス チームとクラウド導入チームの間で追加の調整が必要です。
 
@@ -43,7 +43,7 @@ Azure への移行に関心がある場合は、クラウド導入フレーム�
 
 ## <a name="next-steps"></a>次のステップ
 
-Azure 移行のベスト プラクティスを確認する際には、[複数のデータセンター](./multiple-datacenters.md)が良い開始点です。
+Azure 移行のベスト プラクティスを確認する際には、次が良い開始点です。
 
 > [!div class="nextstepaction"]
 > [複数のデータセンター](./multiple-datacenters.md)
