@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: adbfaceb51618d50e64e81e571038671533135c7
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: fef5e1ccd6ac928ccf870ffff2029d43aba78143
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450137"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524036"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>シンプルなワークロード向けガバナンス設計
 
@@ -111,11 +111,6 @@ Azure アカウントが作成されたら、組織の 1 人を Azure **アカ�
 サブスクリプションを作成し、これに Azure AD テナントを関連付けたので、最後に、[**ワークロード所有者**を、組み込みの**所有者**ロールを持つサブスクリプションに追加](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)します。
 
 ## <a name="next-steps"></a>次のステップ
-
-> [!div class="nextstepaction"]
-> [基本的なワークロードを Azure にデプロイする](../../infrastructure/virtual-machines/basic-workload.md)
-
-<!-- --->
 
 > [!div class="nextstepaction"]
 > [複数チーム向けリソース アクセスについて確認する](./governance-multiple-teams.md)

@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d09f6d6899501e18b22d5fe4c6b1b49411112ff2
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 9222f0cf5c61e0249e72675d3fe9eb46a0fe8f41
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86452715"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87523951"
 ---
 # <a name="ai-applications-and-agents"></a>AI アプリケーションとエージェント
 
@@ -65,9 +65,9 @@ AI ソリューションの以下の参照アーキテクチャを確認して�
 
 ## <a name="ai-agents"></a>AI エージェント
 
-Microsoft の Azure AI プラットフォームでは、開発者がプロジェクトを変革し推進できるように支援することを目的としています。 具体的には、会話型 AI のために、Azure では Azure Bot Service および Bot Framework SDK とツールが提供されており、開発者は豊富な会話エクスペリエンスを構築することが可能です。 さらに、開発者は Language Understanding (LUIS)、QnA Maker、および Speech サービスなどの Azure Cognitive Services (API として利用可能なドメイン固有の AI サービス) を使用して、エンド ユーザーの発話を理解して会話するチャットボットの機能を追加することが可能です。
+Microsoft の Azure AI プラットフォームでは、開発者がプロジェクトを変革し推進できるように支援することを目的としています。 具体的には、会話型 AI のために、Azure では Azure Bot Service および Bot Framework SDK とツールが用意されており、開発者はこれらを使用して豊富な会話エクスペリエンスを構築できます。 さらに、開発者は Language Understanding (LUIS)、QnA Maker、Speech サービスなどの Azure Cognitive Services (API として使用可能なドメイン固有の AI サービス) を使用して、チャットボットがエンド ユーザーの発話を理解して会話できるようにする機能を追加できます。
 
-会話型 AI やチャットボットのソリューションによる一般的なシナリオを、次に示します。
+会話 AI やチャットボットのソリューションが使用される一般的なシナリオを以下に示します。
 
 - 情報提供 Q&A チャットボット
 - カスタマー サービスまたはサポート チャットボット
@@ -83,28 +83,28 @@ Microsoft の Azure AI プラットフォームでは、開発者がプロジェ
 Azure Bot Service と Microsoft Bot Framework についての理解を深めます。
 
 - Bot Framework は、SDK (C#、JavaScript、Python、Java で使用可能) を提供するオープンソース オファリングであり、開発者によるボットの設計、構築、およびテストを支援します。 また、Bot Framework Composer での無料のビジュアル作成キャンバスと、Bot Framework Emulator でのテスト ツールも提供されています。
-- Azure Bot Service は Azure 内の専用サービスであり、開発者はこれを利用して、Azure でボットをホストまたは公開したり、人気のあるチャネルに接続したりできます。
+- Azure Bot Service は Azure 内の専用サービスで、これを使用することにより、お客様は Azure でボットをホストまたは公開したり、人気のあるチャネルに接続したりできます。
 
-- [Azure Bot Service と Bot Framework の概要を学習する](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
+- [Azure Bot Service と Bot Framework の概要を学習します](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
 - [ボット設計の原則](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
-- [Bot Framework SDK とツールの最新バージョンを確認する](https://docs.microsoft.com/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
+- [Bot Framework SDK とツールの最新バージョンを確認します](https://docs.microsoft.com/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
 
-作業を開始する最も簡単な方法の 1 つは、Azure Cognitive Services の一部である QnA Maker を使用することです。これにより、FAQ ドキュメントや Web サイトを数分で Q&A エクスペリエンスにインテリジェントに変換できます。
+作業を開始する最も簡単な方法の 1 つは、Azure Cognitive Services の一部である QnA Maker を使用することです。これを使用すると、FAQ ドキュメントや Web サイトをインテリジェントに変換して、Q&A エクスペリエンスを数分で作成できます。
 
-- [QnA Maker を使用して Q&A 機能を備えたボットを迅速に作成する方法を学習する](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-add-qna?view=azure-bot-service-4.0&tabs=csharp)
-- [QnA Maker サービスを直接試してみる](https://www.qnamaker.ai/)
+- [QnA Maker を使用して Q&A 機能を備えたボットをスピーディに作成する方法を学習します](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-add-qna?view=azure-bot-service-4.0&tabs=csharp)
+- [QnA Maker サービスを直接試してみます](https://www.qnamaker.ai/)
 
 ボット開発用の Bot Framework SDK とツールをダウンロードして使用する
 
 - [Bot Framework Composer の 5 分間のクイック スタート](https://docs.microsoft.com/composer/)
 - [Bot Framework SDK でボットを構築してテストする (C#、JavaScript、Python)](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)
 
-Cognitive Services を追加してボットをさらにインテリジェントにする方法を学習する
+Cognitive Services を追加してボットをさらにインテリジェントにする方法を学習します。
 
 - [AI アプリケーションを構築するための開発者ガイド](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/) (電子書籍)
-- [Cognitive Services の詳細情報](https://docs.microsoft.com/azure/cognitive-services/)
+- [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) の詳細を確認する
 
-Bot Framework ソリューション アクセラレータを使用して独自の仮想アシスタントを構築する方法と、カレンダー、電子メール、目的地 (POI)、To Do などの一般的なスキルのセットを選択する方法について学習します。
+Bot Framework ソリューション アクセラレータを使用して独自の仮想アシスタントを構築する方法と、カレンダー、電子メール、目的地、To Do などの一般的なスキルのセットを選択する方法について学習します。
 
 - [Bot Framework の仮想アシスタント ソリューション](https://microsoft.github.io/botframework-solutions/index)
 
