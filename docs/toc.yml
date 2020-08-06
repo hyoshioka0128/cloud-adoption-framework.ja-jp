@@ -193,7 +193,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: アーキテクチャ
+              - name: Architecture
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md
@@ -916,7 +916,7 @@ items:
                           - name: Azure におけるマイクロサービスの設計、構築、運用
                             href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: Azure Kubernetes Service (AKS) を使用したマイクロサービスの参照アーキテクチャ
-                            href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/aks?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices'
                           - name: 参照アーキテクチャ - サーバーレス マイクロサービスのサンプル
                             href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Containers
