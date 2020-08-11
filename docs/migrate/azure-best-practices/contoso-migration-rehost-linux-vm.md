@@ -76,7 +76,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 Contoso は、次のようにして移行プロセスを完了します。
 
 - 最初の手順として、Azure Migrate:Server Migration 用の Azure コンポーネントを準備および設定し、オンプレミスの VMware インフラストラクチャを準備します。
-- 同社には、[Azure インフラストラクチャ](./contoso-migration-infrastructure.md)が既に用意されているので、Azure Migrate を使用して VM のレプリケーションを構成するだけで済みます。サーバー移行ツール。
+- 同社には、[Azure インフラストラクチャ](./contoso-migration-infrastructure.md)が既に用意されているので、Azure Migrate: Server Migration ツールを使用して VM のレプリケーションを構成するだけで済みます。
 - すべての準備ができたら、VM のレプリケートを開始できます。
 - レプリケーションを有効にしたら、Azure へのフェールオーバーによって VM を移行します。
 
