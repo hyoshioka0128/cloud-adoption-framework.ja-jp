@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c085c3b197306b4774daa5fcc5d9f0501db30eef
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: d285b19349477dfe99780a4584956d13a5a4b361
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479485"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524019"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -332,7 +332,7 @@ _図 7: ランディング ゾーンの接続の設計。_
 
 - VNet に挿入された Azure PaaS サービスでは、パブリック IP アドレスを使用して管理プレーンの操作がまだ実行されます。 UDR と NSG を使用して、この通信が VNet 内にロックダウンされるようにします。
 
-- 使用可能な場合は、Private Link を共有 Azure PaaS サービスに対して使用します。 Private Link は、一部のサービスについては一般提供されており、多くのサービスではパブリック プレビュー段階です。 Private Link の使用可能性の詳細については、[こちら](https://docs.microsoft.com/azure/private-link/private-link-overview#availability)を参照してください。
+- 使用可能な場合は、Private Link を共有 Azure PaaS サービスに対して使用します。 Private Link は、一部のサービスについては一般提供されており、多くのサービスではパブリック プレビュー段階です。 詳細については、[Azure Private Link の提供状況](https://docs.microsoft.com/azure/private-link/private-link-overview#availability)に関する記事を参照してください。
 
 - ExpressRoute プライベート ピアリング経由でオンプレミスから Azure PaaS サービスにアクセスするには、専用の Azure サービスに対しては VNet インジェクションを使用し、使用可能な共有 Azure サービスに対しては Azure Private Link を使用します。 VNet インジェクションまたは Private Link を使用できない場合にオンプレミスから Azure PaaS サービスにアクセスするには、Microsoft ピアリングで ExpressRoute を使用します。 これにより、パブリック インターネット経由での推移を回避できます。
 
@@ -378,8 +378,8 @@ _図 7: ランディング ゾーンの接続の設計。_
 
 - East-West および South-North のトラフィックの保護とフィルター処理のために、サードパーティの NVA が必要な場合:
 
-   - Virtual WAN ネットワーク トポロジの場合は、別の VNet (NVA VNet など) に NVA をデプロイし、リージョンの Virtual WAN ハブと、NVA へのアクセスを必要とするランディング ゾーンに、それを接続します (こちらの[記事](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)を参照)。
-   - Virtual WAN 以外のネットワーク トポロジの場合は、サードパーティの NVA を中央ハブの VNet にデプロイします。
+  - Virtual WAN ネットワーク トポロジの場合は、別の VNet (NVA VNet など) に NVA をデプロイし、リージョンの Virtual WAN ハブと、NVA へのアクセスを必要とするランディング ゾーンに、それを接続します (こちらの[記事](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)を参照)。
+  - Virtual WAN 以外のネットワーク トポロジの場合は、サードパーティの NVA を中央ハブの VNet にデプロイします。
 
 - 受信 HTTP/S 接続にサードパーティの NVA が必要な場合は、ランディング ゾーンの VNet 内に、保護してインターネットに公開するアプリと共に、これらをデプロイする必要があります。
 

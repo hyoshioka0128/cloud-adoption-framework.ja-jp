@@ -7,19 +7,18 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c79c91f49b6ae88b22267cdbb60a35ee25e1cf7
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 9c92394b05b65534613f6e584e0d14f3c4d99903
+ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194665"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87473184"
 ---
 # <a name="vmware-host-migration-best-practices-for-azure"></a>Azure の VMware ホスト移行のベスト プラクティス
 
-VMware ホスト全体を Azure に移行すると、クラウド導入フレームワークで概説され、次の図に示す標準の移行手法が加速する可能性があります。
+VMware ホストを Azure に移行すると、クラウド導入フレームワークで概説されている標準的な手法 (下図を参照) を迅速化させることができます。
 
-![クラウド導入フレームワーク移行モデル](../../_images/migrate/methodology.png)
+![クラウド導入フレームワーク移行モデルの図。](../../_images/migrate/methodology.png)
+"*図 1*"
 
-## <a name="migration-best-practices"></a>移行のベスト プラクティス
-
-左側の目次は、複数の Microsoft Web プロパティにわたるベスト プラクティスを示しており、VMware ホストを Azure VMware Solution (AVS) に移行する際の実行ガイドとして利用できます。 このページをブックマークして、ベスト プラクティスの完全な一覧をすばやく参照できます。
+左側の目次は、複数の Microsoft Web 資産に関するベスト プラクティスの概要を示すものです。 これらのベスト プラクティスを利用することで、Azure VMware Solution への VMware ホストの移行を進めていくことができます。 ベスト プラクティスの完全な一覧をすばやく参照できるように、このページをブックマークしてください。

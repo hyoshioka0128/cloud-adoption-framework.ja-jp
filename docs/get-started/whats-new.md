@@ -7,12 +7,12 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 619709a29e5effc542662987864d4c755aeca496
-ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
+ms.openlocfilehash: a03c132a8e5dade32cfa7e8066ebe579fa8b1099
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115068"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87523968"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -84,7 +84,7 @@ Microsoft クラウド導入フレームワークに人工知能 (AI) ソリュ�
 | [アーティクル] | 説明 |
 |---|---|
 | [Azure 向けのクラウド導入フレームワーク](../index.yml) | クラウド導入の成功をサポートするガイダンス、ツール、学習モジュールとプログラムを簡単に見つけることができるように、クラウド導入フレームワークのランディング ページのデザインが変更されました。 |
-| [クラウド導入フレームワークの概要](./index.md) | ここから開始して、クラウドの導入目標に合わせてファースト ステップ ガイドを選択します。 これらの一般的なシナリオでは、Azure 向けの Microsoft クラウド導入フレームワークを使用したロードマップを提供します。|
+| [クラウド導入フレームワークの概要](./index.md) | ここから開始し、クラウドの導入目標に合ったファースト ステップ ガイドを選択します。 これらの一般的なシナリオでは、Azure 向けの Microsoft クラウド導入フレームワークを使用したロードマップを提供します。 |
 | [基本的なアラインメントに関する決定事項を理解し、文書化する](./cloud-concepts.md) | クラウドの導入に関与するすべてのチームが理解する必要がある最初の決定事項について学習します。 |
 | [ポートフォリオ階層を理解して整理する](../reference/fundamental-concepts/hosting-hierarchy.md) | ポートフォリオ階層で、ワークロードとサポート サービスがどのようにまとめられているかについて学習します。 |
 | [Azure 製品によるポートフォリオ階層のサポート方法](../reference/fundamental-concepts/hierarchy-azure-tools.md) | ポートフォリオ階層をサポートする Azure ツールとソリューションについて学習します。 |

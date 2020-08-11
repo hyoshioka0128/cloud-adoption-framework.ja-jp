@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 96f93ad2d7a73984a69ca36235a58557eac0d1a9
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: cb8942b451c750190975108d2b880a3f4e251908
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450494"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524053"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -261,7 +261,7 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
     - 各環境に関連付けられている各サブスクリプションのサブスクリプション所有者になる人。 これは、サブスクリプション **サービス管理者**に、各サブスクリプション/環境のリソース アクセス管理のタスクが割り当てられない場合にのみ必要です。
     - **ネットワーク操作ユーザー**になる人。
     - **ワークロード所有者**になる人。
-4. Azure アカウント管理者は、[Azure アカウント ポータル](https://account.azure.com/subscriptions)を使用して、次の 3 つのサブスクリプションを作成します。
+4. Azure アカウント管理者は、次の [3 つの Azure サブスクリプションを作成します](https://docs.microsoft.com/azure/cost-management-billing/manage/create-subscription)。
     - **共有インフラストラクチャ**環境のサブスクリプション。
     - **運用**環境のサブスクリプション。
     - **開発**環境のサブスクリプション。
@@ -277,8 +277,3 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
 ## <a name="related-resources"></a>関連リソース
 
 [Azure リソースの組み込みロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
-
-## <a name="next-steps"></a>次のステップ
-
-> [!div class="nextstepaction"]
-> [基本的なインフラストラクチャのデプロイについて確認する](../../infrastructure/virtual-machines/basic-workload.md)

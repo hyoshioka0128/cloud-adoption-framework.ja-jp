@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e8c464f7985dde96b3a2c09823c47266c104f58e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 8243189c2db4c49d8d1f69e09c459e716130e46e
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191809"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524002"
 ---
 # <a name="get-started-manage-cloud-costs"></a>作業を開始しましょう。クラウド コストを管理する
 
@@ -27,6 +27,8 @@ ms.locfileid: "86191809"
 ## <a name="step-1-optimize-enterprise-costs"></a>手順 1:エンタープライズ コストを最適化する
 
 クラウド ガバナンス チームは、パフォーマンスの監視、リソースのサイズ変更の削減、未使用のリソースの安全な終了を組み合わせることで、過剰な支出や予定外の支出を評価し、それに対処するための準備が十分に整っています。 エンタープライズ コストの最適化は、環境レベルでのコストに関する懸念に賢明に対処するために必要なツール、プロセス、依存関係についてチームで共通の認識を持つことから始まります。
+
+<!-- docsTest:ignore "your cost management policies" -->
 
 **成果物:**
 
@@ -57,7 +59,7 @@ ms.locfileid: "86191809"
 
 - コスト最適化のための効果的な変更を実装するには、ワークロード レベルでのトレードオフが必要になる場合があります。 [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/cost/tradeoffs) と [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) は、特定のワークロードの技術所有者との対話を導くのに役立ちます。
 - クラウド ガバナンスを初めて使用する場合は、ガバナンス手法を使用して、[ガバナンスのポリシー、プロセス、規範](../govern/index.md)を確立します。
-- コスト管理規範を初めて使用する場合は、[コスト管理の改善に関する記事](../govern/guides/complex/cost-management-improvement.md)に従って検討してください。特に、[実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)に関するセクションを重点的にお読みください。
+- コスト管理規範を初めて使用する場合は、[コスト管理規範の改善に関する記事](../govern/guides/complex/cost-management-improvement.md)に従うことを検討してください。特に、[実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)に関するセクションを重点的にお読みください。
 
 <!-- markdownlint-disable MD033 -->
 <br>

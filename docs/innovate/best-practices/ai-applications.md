@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e632b5e460c4a5a100b63a45032b75fcebd971e6
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 7d35679a95dd91cd563fd6fe4be45519895e0fd3
+ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86452691"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87400464"
 ---
 <!-- cSpell:ignore Personalizer -->
 
@@ -102,7 +102,7 @@ Cognitive Services には、CSA STAR Certification、FedRAMP Moderate、HIPAA BA
 
 コグニティブ サービスでは、ユーザーに対してトレーニング済みのモデルが提供されます。 これはデータとアルゴリズムを統合したもので、REST API や SDK から利用できます。 シナリオによっては、このサービスを数分で実装できます。 コグニティブ サービスでは、テキスト内のキー フレーズや画像内の項目識別といった一般的な問題が解決されます。
 
-機械学習は、通常、適切に実装するために長時間を要するプロセスです。 この時間は、コグニティブ サービスと同等の機能を実現するためのデータ収集、クリーニング、変換、アルゴリズムの選択、モデルのトレーニング、およびデプロイのために費やされます。 機械学習では、きわめて特殊な問題や具体的な問題を解決することが可能です。 機械学習の問題では、専門知識だけでなく、検討中の問題の特定の主題とデータについての理解が必要です。
+機械学習は、通常、適切に実装するために長時間を要するプロセスです。 この時間は、コグニティブ サービスと同等の機能を実現するためのデータ収集、クリーニング、変換、アルゴリズムの選択、モデルのトレーニング、およびデプロイのために費やされます。 機械学習では、きわめて特殊な問題や具体的な問題を解決することが可能です。 機械学習の問題では、専門知識だけでなく、検討対象の問題に固有のテーマやデータについての理解が必要です。
 
 ## <a name="next-steps"></a>次のステップ
 

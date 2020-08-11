@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbb7455347584b9b86ad4dcf3f9d923ffaa669af
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 5c77156723fe1b5b54a775250bf368f886c4d101
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479689"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87523985"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎の概念
 
@@ -60,7 +60,7 @@ Azure では、サブスクリプション、ID、リソースを管理するた
 - Azure ロールベース アクセス制御 (RBAC) ロール
 - Azure Active Directory (Azure AD) 管理者ロール
 
-Azure サブスクリプションのアカウント管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントに割り当てられます。 アカウント管理者はサブスクリプションの請求先所有者です。 アカウント管理者は、[Azure アカウント センター](https://account.azure.com/subscriptions)でサブスクリプションの詳細を管理できます。
+Azure サブスクリプションのアカウント管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントに割り当てられます。 アカウント管理者はサブスクリプションの請求先所有者です。 アカウント管理者は、Azure portal を介して[サブスクリプション管理者を管理する](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator)ことができます。
 
 既定では、サブスクリプションのサービス管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントにも割り当てられます。 サービス管理者には、サブスクリプションに関して、RBAC ベースの所有者ロールと同等の権限が与えられます。 サービス管理者には、Azure portal へのフル アクセス権も与えられます。 アカウント管理者は、サービス管理者を別のメール アカウントに変更できます。
 

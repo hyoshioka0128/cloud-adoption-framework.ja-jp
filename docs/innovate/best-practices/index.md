@@ -7,22 +7,22 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e43e0010398fcb9d297d7246cb95a1d1c1a2246a
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 758180e4f8771dab5502636eab3da8d9f9e0847a
+ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449679"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88040667"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>Azure でデジタル発明を開発する
 
-Azure は、デジタル発明の各分野の開発を加速化するのに役立ちます。 クラウド導入フレームワークのこのセクションは、[イノベーションの方法論](../considerations/index.md)に基づいています。 このセクションでは、Azure のサービスを組み合わせてデジタル発明向けのツールチェーンを作成する方法を紹介します。
+Azure は、デジタル発明の各分野の開発を加速化するのに役立ちます。 Azure のクラウド導入フレームワークのこのセクションは、[イノベーションの方法論](../considerations/index.md)に基づいています。 このセクションでは、Azure のサービスを組み合わせてデジタル発明向けのツールチェーンを作成する方法を紹介します。
 
 ## <a name="alignment-to-the-methodology"></a>方法論に足並みを揃える
 
 Azure 内には、デジタル発明とイノベーションのためのクラウドベース ツールの組み合わせが多数あります。 後続の記事シリーズでは、イノベーション方法論と密接に足並みを揃えるツールをいくつか取り上げます。 次の画像では、さまざまなツールが各種イノベーションにどのように対応しているかを示しています。
 
-![クラウド導入フレームワークのイノベーション ツールチェーン](../../_images/innovate/innovate-toolchain.png)
+![クラウド導入フレームワークのイノベーション ツールチェーンを示す図](../../_images/innovate/innovate-toolchain.png)
 
 ## <a name="toolchain"></a>ツールチェーン
 

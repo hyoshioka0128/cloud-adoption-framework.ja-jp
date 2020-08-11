@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cf0c2477375d6d59f6a0eefc7711f51c2512f99e
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: bb28cc9869500f26c2b981c8968a920bf5691ca6
+ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479893"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87473167"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>複数の Azure サブスクリプションの整理と管理
 
@@ -58,7 +58,7 @@ _図 2:管理グループ階層の例_
 
 管理グループを使用して、さまざまなワークロードを区別する基本的な例には、次のようなものがります。
 
-**運用環境と非運用環境のワークロード:** 管理グループを使用して、運用環境と非運用環境のサブスクリプション間でさまざまなロールとポリシーをより簡単に管理します。 たとえば、開発者が非運用環境のサブスクリプションでは共同作成者のアクセス権を持つが、非運用環境のサブスクリプションでは閲覧者のアクセス権のみを持つ場合などです。
+**運用環境と非運用環境のワークロード:** 管理グループを使用して、運用環境と非運用環境のサブスクリプション間でさまざまなロールとポリシーをより簡単に管理します。 たとえば、運用環境のサブスクリプションでは開発者に共同作成者のアクセス権を付与し、非運用環境のサブスクリプションでは閲覧者のアクセス権のみを付与します。
 
 **内部サービスと外部サービス:** 企業では、多くの場合、内部サービスと外部の顧客向けサービスで要件、ポリシー、ロールが異なります。
 
