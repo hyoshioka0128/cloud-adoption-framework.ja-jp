@@ -7,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8cecbdcf475f243533b9b7215729dd15de4a51e3
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: e02602545a229664f22b546a2ee39066c5fdc338
+ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785193"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805496"
 ---
 # <a name="establish-an-operational-fitness-review"></a>運用適合性レビューの確立
 
@@ -42,7 +42,7 @@ Microsoft が実施するプロセスが、この記事で概要を説明する�
 
 このプロセスで焦点を当てることが多いのは、サービスの機能、つまりサービスに実行させたい_機能的_要件のセットです。 たとえば、製品配送サービスでは、製品の出荷場所と配達先の場所を決定し、配送中の製品を追跡し、通知を顧客に送信する機能が必要です。
 
-これに対し、_非機能的_な要件は、サービスの[可用性](https://docs.microsoft.com/azure/architecture/checklist/availability)、[回復性](https://docs.microsoft.com/azure/architecture/resiliency)、[スケーラビリティ](https://docs.microsoft.com/azure/architecture/checklist/scalability)などの特性に関係します。 これらの特性は、サービスの特定の機能の最終的な動作に直接影響しないため、機能的要件とは異なります。 しかし、非機能的要件は、サービスのパフォーマンスや継続性に関係します。
+これに対し、_非機能的_な要件は、サービスの[可用性](https://docs.microsoft.com/azure/architecture/checklist/availability)、[回復性](https://docs.microsoft.com/azure/architecture/resiliency)、[スケーラビリティ](/azure/architecture/framework/scalability/performance-efficiency)などの特性に関係します。 これらの特性は、サービスの特定の機能の最終的な動作に直接影響しないため、機能的要件とは異なります。 しかし、非機能的要件は、サービスのパフォーマンスや継続性に関係します。
 
 一部の非機能的な要件は、サービス レベル アグリーメント (SLA) の観点で指定できます。 たとえば、サービスの継続性は、次のように可用性の割合として表すことができます: "99.99% の時間を使用可能"。 他の非機能的要件は、定義がさらに難しく、運用ニーズが発展すると変化することがあります。 たとえば、コンシューマー指向のサービスは、需要急増後に予期しないスループット要件に直面する可能性があります。
 
