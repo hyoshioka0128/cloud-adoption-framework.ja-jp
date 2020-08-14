@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1b4618809e5b6723f82accdb05fd44f6c100937f
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 016bca5abeaed55dadfec0bdadfd0ad4a4d4f251
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191265"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195414"
 ---
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>クラウドの企業 IT ポリシーを準備する
 
@@ -55,7 +55,7 @@ _図 1:コーポレート ガバナンスとガバナンスの規範_
 
 たとえば、高ビジネス インパクト (HBI) データを含まない 5 台の VM をデプロイする企業にとって、ビジネス リスクは小さなものです。 クラウド導入プロセスが進み、VM の台数が 1,000 台に達し、企業が HBI データの移行を開始すると、ビジネス リスクは大きくなります。
 
-ポリシーの MVP では、最初の _x_ 台の VM または _x_ 本のアプリケーションをデプロイするために必要なポリシーで要求される基礎を定義するように努めます。この _x_ は、導入される数こそ少ないものの、意味のある数量です。 このポリシー設定にはほとんど制約はありませんが、漸進的なクラウド導入努力を次の段階に迅速に進めるために必要な基礎的な面が含まれています。 このガバナンス戦略は、漸進的なポリシーの開発を通して、時の経過とともに成長していきます。 ポリシーの MVP は、ゆっくりとしたわずかな変化を経由して、ポリシーの見直しの成果を利用する機能パリティへと成長していきます。
+ポリシーの MVP では、最初の *x* 台の VM または *x* 本のアプリケーションをデプロイするために必要なポリシーで要求される基礎を定義するように努めます。この *x* は、導入される数こそ少ないものの、意味のある数量です。 このポリシー設定にはほとんど制約はありませんが、漸進的なクラウド導入努力を次の段階に迅速に進めるために必要な基礎的な面が含まれています。 このガバナンス戦略は、漸進的なポリシーの開発を通して、時の経過とともに成長していきます。 ポリシーの MVP は、ゆっくりとしたわずかな変化を経由して、ポリシーの見直しの成果を利用する機能パリティへと成長していきます。
 
 ## <a name="incremental-policy-growth"></a>漸進的なポリシーの拡張
 

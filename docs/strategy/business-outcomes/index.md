@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 48cbb33ed40286f1201f85b67d75809e487b83d4
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 85fe35eb9cc70af231989aa6d05b7a70df3c594b
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195005"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196255"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>変革の取り組みに関連するビジネス成果
 
@@ -20,7 +20,7 @@ ms.locfileid: "86195005"
 
 どのクラウド変換の間も、ビジネス成果の観点で話すことができるため、透明性や職能上の枠を超えたパートナーシップがサポートされます。 ビジネス成果フレームワークは、技術に詳しい個人が文書を作成し、合意を得る際に役立つシンプルなテンプレートから始まります。 このテンプレートを複数のビジネス利害関係者が使用することにより、各種のビジネス成果を収集できます。それぞれの成果は、企業の変革の取り組みの影響を受ける可能性があります。 自由にこのテンプレートを電子的に使用したり、さらにホワイトボードに書いたりして、ビジネス リーダーやビジネス利害関係者が成果に焦点を置いた議論を行うことができます。
 
-ビジネス成果およびビジネス成果テンプレートの詳細については、[ビジネス成果の文書化](./business-outcome-template.md)に関するページを参照するか、[ビジネス成果テンプレート](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx)をダウンロードしてください。
+ビジネス成果およびビジネス成果テンプレートの詳細については、[ビジネス成果の文書化](./business-outcome-template.md)に関するページを参照するか、[ビジネス成果テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/business-outcome-template.xlsx)をダウンロードしてください。
 
 ## <a name="prepare-for-conversations-with-different-personas"></a>さまざまな担当者との対話の準備
 
