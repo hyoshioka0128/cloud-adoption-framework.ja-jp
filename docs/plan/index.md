@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9b363ea7fc2febaccfd2df14596b025d52a943a2
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 0fab533dee7f5a256bb2a640611b647988f056ac
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787658"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194800"
 ---
 # <a name="develop-a-cloud-adoption-plan"></a>クラウド導入計画を作成する
 
@@ -29,4 +29,4 @@ ms.locfileid: "84787658"
 | <br> ![3](../_images/icons/3.png) | <br> [スキルの準備計画](./adapt-roles-skills-processes.md):スキルの準備不足に対処するための計画を立てる                                |
 | <br> ![4](../_images/icons/4.png) | <br> [クラウド導入計画](./plan-intro.md):デジタル資産、スキル、組織をまたいで変更を管理するクラウド導入計画を作成します。                        |
 
-[クラウド導入フレームワークの戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)をダウンロードし、クラウド導入戦略を構築しながら各演習の成果を記録します。 [クラウド合理化の 5 R](../digital-estate/5-rs-of-rationalization.md) について学習して、クラウド導入計画の立案に役立てます。
+[戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)をダウンロードし、クラウド導入戦略を構築しながら各演習の成果を記録します。 [クラウド合理化の 5 R](../digital-estate/5-rs-of-rationalization.md) について学習して、クラウド導入計画の立案に役立てます。
