@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 32a261bc94cc00fad8d44e0a7699b4bda27fbbee
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: e713fdc5e1fdd367115f7493519d9743ff4d73cd
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787167"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196365"
 ---
 # <a name="develop-a-cloud-adoption-strategy"></a>クラウド導入戦略を作成する
 
@@ -30,4 +30,4 @@ ms.locfileid: "84787167"
 | <br> ![3](../_images/icons/3.png) | <br> [ビジネス ケースを開発する](./cloud-migration-business-case.md): 動機や成果を支援する財務モデルを検証するためのビジネス ケースを開発します。                                |
 | <br> ![4](../_images/icons/4.png) | <br> [最初の適切なプロジェクトを選択する](./first-adoption-project.md): 最初のクラウド導入プロジェクトは、技術的な作業と動機の足並みを揃えるのに役立ちます。 この記事は、最初のプロジェクトを慎重に選択する際に役立ちます。 |
 
-[Microsoft クラウド導入計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)をダウンロードして、クラウド導入戦略を構築し、各演習の出力を追跡してください。
+[戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)をダウンロードして、クラウド導入戦略を構築し、上記で説明した各手順の成果を追跡します。

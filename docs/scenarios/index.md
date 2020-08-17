@@ -7,27 +7,25 @@ ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f8135b59ed583a2c790b1f78a6b1f940fe4a0acd
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 5d42febd3d8ad662edf17973d6f5285b448b0e27
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451489"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196528"
 ---
 <!-- docsTest:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
 
-# <a name="one-migration-approach-to-migrating-the-it-portfolio"></a>IT ポートフォリオを移行するための 1 つの移行アプローチ
+# <a name="the-one-migration-approach-to-migrating-the-it-portfolio"></a>IT ポートフォリオを移行するための 1 つの移行アプローチ
 
-Azure と Azure Migrate は、どちらも Microsoft テクノロジをホストすることでよく知られています。 しかし、Windows と SQL Server を超えた移行をサポートする Azure の機能については、あまりご存知でないかもしれません。 Migrate のメソドロジで取り込まれた移行シナリオでは、Microsoft とサードパーティの両方のテクノロジを移行するための一貫したガイドラインとプロセスの同じセットを示します。
+Azure と Azure Migrate は、どちらも Microsoft テクノロジをホストすることでよく知られています。 しかし、Windows と SQL Server を超えた移行をサポートする Azure の機能については、あまりご存知でないかもしれません。 Migrate の手法で取り込まれた "*1 つの移行*" シナリオでは、Microsoft とサードパーティの両方のテクノロジを移行するための一貫したガイドラインとプロセスの同じセットを示します。
 
 ## <a name="migration-scenarios"></a>移行シナリオ
 
-以下のイメージと一覧は、移行と最新化のための同じ反復的な方法を採用するいくつかの移行シナリオをまとめたものです。
+以下の図と表は、移行と最新化のための同じ反復的な Migrate の手法を採用するいくつかのシナリオをまとめたものです。
 
-![クラウド導入フレームワーク移行モデル](../_images/migrate/one-migrate.png)
-
-### <a name="links-to-migration-scenarios"></a>拡大移行シナリオへのリンク
+![クラウド導入フレームワーク移行モデルの図。](../_images/migrate/one-migrate.png)
 
 | | | | |
 |---------|---------|---------|---------|
@@ -37,16 +35,16 @@ Azure と Azure Migrate は、どちらも Microsoft テクノロジをホスト
 | **ハイブリッド** | [Azure Stack](./azure-stack/index.md) | [VMware](../migrate/azure-best-practices/vmware-host.md) | |
 | **その他のシナリオ** | [ワークロードをセキュリティで保護する](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [メインフレーム](../infrastructure/mainframe-migration/index.md) | NetApp と SAP HANA |
 
-## <a name="migrate-methodology"></a>移行手法
+## <a name="migration-methodology"></a>移行手法
 
-移行の各シナリオでは、同じ一貫したプロセスによって、既存のワークロードのクラウドへの移行作業が進められます。
+上記の各移行シナリオでは、次に示すように、既存のワークロードをクラウドに移行するときに、同じ基本的なプロセスに従って作業を進めます。
 
-![クラウド導入フレームワーク移行モデル](../_images/migrate/methodology.png)
+![クラウド導入フレームワーク移行モデルの図。](../_images/migrate/methodology.png)
 
-複数のワークロードのリリースをガイドするための移行を段階的に構築します。 計画および準備の手法を通じてクラウド導入計画と Azure ランディング ゾーンを確立すると、移行の段階に構造を追加するのに役立ちます。
+各シナリオで、複数のワークロードのリリースをガイドするための移行を段階的に構築します。 計画および準備の手法を通じてクラウド導入計画と Azure ランディング ゾーンを確立すると、移行の段階に構造を追加するのに役立ちます。
 
-各イテレーションでは、移行の方法に従って、ワークロードの評価、ワークロードのデプロイ、およびワークロードのリリースを行います。 特定のシナリオに合わせてこれらのプロセスを変更するには、上記の移行シナリオのいずれかをクリックします。
+各イテレーションでは、移行手法に従って、ワークロードの評価、デプロイ、およびリリースを行います。 特定のシナリオに合わせてこれらのプロセスを変更するには、上記の表に示された移行シナリオのいずれかを選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-特定のシナリオの移行でない場合は、まず [4 つの手順の CAF 移行プロセス](../migrate/index.md)に従ってください。
+特定のシナリオの移行でない場合は、まず [4 つの手順のクラウド導入フレームワーク移行プロセス](../migrate/index.md)に従ってください。

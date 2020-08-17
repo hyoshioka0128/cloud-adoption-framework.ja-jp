@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1947ed8ccadae4f2f2d289bc3c58e9206fbe533d
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 4b890af71bdf73ecafc28db152c719d9913dbd1f
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993683"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196098"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -78,7 +78,7 @@ Azure では、[リソース グループ](https://docs.microsoft.com/azure/azur
 
 ## <a name="next-steps"></a>次のステップ
 
-リソースの整合性は、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 [意思決定ガイドの概要](../index.md)を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
+リソースの整合性は、クラウド導入プロセスでのアーキテクチャに関する意思決定で要求されるコア インストラクチャ コンポーネントの 1 つにすぎません。 アーキテクチャの決定ガイドの概要を参照して、他の種類のインフラストラクチャの設計に関する決定を行うときに使用される代替パターンまたはモデルを確認してください。
 
 > [!div class="nextstepaction"]
 > [アーキテクチャの意思決定ガイド](../index.md)
