@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d70180eca7ffe7d291e1e30f2486ab6863a38ed5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: bb6a42562b061fef3176927b3e71641786d8467c
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193271"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88283621"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド管理
 
@@ -22,12 +22,10 @@ ms.locfileid: "86193271"
 
 クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークからは、次の演習が提案されます。
 
-| | |
-|---|---|
-| <br> ![1](../_images/icons/1.png) | <br> [管理ベースラインの確立](./azure-management-guide/index.md):運用管理に対する最小限のコミットメントを提供するために必要な重要度の分類、クラウド管理ツール、プロセスを定義します。                                |
-| <br> ![2](../_images/icons/2.png) | <br> [ビジネス コミットメントの定義](./considerations/business-alignment.md):サポートされているワークロードを文書化して、ビジネスに対する運用上のコミットメントを確立し、各ワークロードに対するクラウド管理への投資に同意します。                                |
-| <br> ![3](../_images/icons/3.png) | <br> [管理ベースラインの展開](./best-practices.md):ビジネス コミットメントと運用上の決定に基づいて、含まれているベスト プラクティスを活用し、必要なクラウド管理ツールを実装します。                                |
-| <br> ![4](../_images/icons/4.png) | <br> [高度な運用と設計の原則](./design-principles.md):より高いレベルのビジネス コミットメントを必要とするプラットフォームやワークロードでは、回復性と信頼性のコミットメントを提供するために、より深いアーキテクチャ レビューが必要になる場合があります。 |
+1. [管理ベースラインの確立](./azure-management-guide/index.md):運用管理に対する最小限のコミットメントを提供するために必要な重要度の分類、クラウド管理ツール、プロセスを定義します。
+2. [ビジネス コミットメントの定義](./considerations/business-alignment.md):サポートされているワークロードを文書化して、ビジネスに対する運用上のコミットメントを確立し、各ワークロードに対するクラウド管理への投資に同意します。
+3. [管理ベースラインの展開](./best-practices.md):ビジネス コミットメントと運用上の決定に基づいて、含まれているベスト プラクティスを活用し、必要なクラウド管理ツールを実装します。
+4. [高度な運用と設計の原則](./design-principles.md):より高いレベルのビジネス コミットメントを必要とするプラットフォームやワークロードでは、回復性と信頼性のコミットメントを提供するために、より深いアーキテクチャ レビューが必要になる場合があります。
 
 前の手順では、クラウド導入フレームワークの管理手法を実行するためのアクションにつながるアプローチを作成します。
 

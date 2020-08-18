@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f259663be5e6572cfcdd0724daa62173769e4709
-ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
+ms.openlocfilehash: 9169417f75434a176767fb20182a1bdd99a70bbf
+ms.sourcegitcommit: 452e09b543e7b84f943db5b02480ba2d18afd939
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254995"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866198"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>オープンソース データベースを Azure に移行する
 

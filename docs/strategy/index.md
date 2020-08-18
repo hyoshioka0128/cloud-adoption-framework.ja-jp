@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e713fdc5e1fdd367115f7493519d9743ff4d73cd
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: abe9f276d4c0b58c0a1aa9b266cd0ce1f713f999
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196365"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284556"
 ---
 # <a name="develop-a-cloud-adoption-strategy"></a>クラウド導入戦略を作成する
 
@@ -23,11 +23,9 @@ ms.locfileid: "88196365"
 <!-- docsTest:ignore _images images -->
 <!-- markdownlint-disable MD033 -->
 
-| | |
-|---|---|
-| <br> ![1](../_images/icons/1.png) | <br> [動機を定義して文書化する](./motivations.md): 主要な利害関係者とエグゼクティブに会い、クラウド導入の背後にある動機を記録します。                                |
-| <br> ![2](../_images/icons/2.png) | <br> [ビジネス成果を文書化する](./business-outcomes/index.md): 動機をもつ利害関係者やエグゼクティブに特定の事業成果を記録してもらいます。                                |
-| <br> ![3](../_images/icons/3.png) | <br> [ビジネス ケースを開発する](./cloud-migration-business-case.md): 動機や成果を支援する財務モデルを検証するためのビジネス ケースを開発します。                                |
-| <br> ![4](../_images/icons/4.png) | <br> [最初の適切なプロジェクトを選択する](./first-adoption-project.md): 最初のクラウド導入プロジェクトは、技術的な作業と動機の足並みを揃えるのに役立ちます。 この記事は、最初のプロジェクトを慎重に選択する際に役立ちます。 |
+1. [動機を定義して文書化する](./motivations.md): 主要な利害関係者とエグゼクティブに会い、クラウド導入の背後にある動機を記録します。
+2. [ビジネス成果を文書化する](./business-outcomes/index.md): 動機をもつ利害関係者やエグゼクティブに特定の事業成果を記録してもらいます。
+3. [ビジネス ケースを開発する](./cloud-migration-business-case.md): 動機や成果を支援する財務モデルを検証するためのビジネス ケースを開発します。
+4. [最初の適切なプロジェクトを選択する](./first-adoption-project.md): 最初のクラウド導入プロジェクトは、技術的な作業と動機の足並みを揃えるのに役立ちます。 この記事は、最初のプロジェクトを慎重に選択する際に役立ちます。
 
 [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)をダウンロードして、クラウド導入戦略を構築し、上記で説明した各手順の成果を追跡します。

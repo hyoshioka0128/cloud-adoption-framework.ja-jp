@@ -3,17 +3,17 @@ title: 'クラウド監視ガイド: アラート'
 description: Microsoft Azure で System Center Operations Manager や Azure Monitor をどのようなときに使用すべきかを、Azure 向けのクラウド導入フレームワークを使用して学習します。
 author: MGoedtel
 ms.author: magoedte
-ms.date: 06/26/2019
+ms.date: 08/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d072ed1ac5abaa4f0c5cf3051d6585b4b5b13b24
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 9eab764cf3c5ce1aa36a26a8b3608959cfa5ef04
+ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861397"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805479"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "83861397"
 
 監視構成のリリース後は、何が機能していて何が機能していないかについて多くのことを突き止めることができます。 量が多いアラート、監視では認識されていないがエンド ユーザーが気付いた問題、およびこの評価の一環として実行することが最善であった措置について考察してください。 継続的監視を改善する進行中のプロセスの一環として、サービスの提供を改善するための実装に対する変更を特定します。 アラート ノイズやアラートが発生しない状況について評価するだけでなく、ワークロードの監視方法の有効性についても評価します。 アラートのポリシー、プロセス、および改善が進んでいるかどうかを判断するための全体的訓練に関する有効性が、その対象です。
 
-System Center Operations Manager と Azure Monitor はどちらも、静的しきい値または動的しきい値に基づくアラートと、それらに基づいて設定されたアクションをサポートしています。 例として、メール、SMS、音声通話のアラートで簡単に通知を受け取れます。 これらのサービスはどちらも IT サービス管理 (ITSM) 統合もサポートしており、インシデント レコードの作成の自動化と、適切なサポート チーム、または Webhook を使用するその他のアラート管理システムへのエスカレートを行います。
+System Center Operations Manager と Azure Monitor はどちらも、静的しきい値または動的しきい値に基づくアラートと、それらに基づいて設定されたアクションをサポートしています。 例として、メール、SMS、音声通話のアラートで簡単に通知を受け取れます。 これらのサービスはどちらも IT Service Management (ITSM) 統合もサポートしており、インシデント レコードの作成の自動化と、適切なサポート チーム、または Webhook を使用するその他のアラート管理システムへのエスカレートを行います。
 
 可能なときには、いくつかのサービスのいずれかを使用して回復操作を自動化できます。 エラスティック ワークロードの場合は、System Center Orchestrator、Azure Automation、Azure Logic Apps、自動スケールが含まれます。 担当チームにアラートを通知することが最も一般的な操作ですが、是正措置を自動化することが適切な場合もあります。 この自動化は、インシデント管理プロセス全体の合理化に役立ちます。 これらの回復タスクを自動化すると、人的エラーのリスクも軽減できます。
 
@@ -50,11 +50,11 @@ Azure Monitor のみを使用している場合は、速度、コスト、およ
 
 - **Azure Monitor メトリック データベース:** 主に Azure Monitor プラットフォームのメトリックに使用される時系列データベースですが、Application Insights メトリック データも反映されています。 このデータベースに入力される情報は、最も速いアラート時間です。
 
-- **Application Insights ログ ストア:** ほとんどの Application Insights テレメトリをログ形式で格納するデータベース。
+- **Application Insights リソース:** ほとんどの Application Insights テレメトリをログ形式で格納するデータベース。
 
-- **Azure Monitor ログ ストア:** Azure ログデータのプライマリ ストア。 その他のツールで、データをルーティングし、Azure Monitor ログで分析することができます。 インジェストとインデックス作成のために、ログ アラート クエリの待機時間は長くなります。 この待機時間は通常 5 ～ 10 分ですが、状況によってはより長くなることがあります。
+- **Azure Monitor Log Analytics ワークスペース:** Azure ログデータのプライマリ ストア。 その他のツールで、データをルーティングし、Azure Monitor ログで分析することができます。 インジェストとインデックス作成のために、ログ アラート クエリの待機時間は長くなります。 この待機時間は通常 5 ～ 10 分ですが、状況によってはより長くなることがあります。
 
-- **アクティビティ ログ ストア:** すべてのアクティビティ ログとサービス正常性イベントに使用されます。 専用のアラートを使用できます。 サブスクリプション内のオブジェクトの外側から見て、それらのオブジェクトで発生するサブスクリプション レベルのイベントを保持します。 たとえば、ポリシーが設定されたり、リソースのアクセスや削除が行われたりしたときです。
+- **アクティビティ ログ:** すべてのアクティビティ ログとサービス正常性イベントに使用されます。 専用のアラートを使用できます。 サブスクリプション内のオブジェクトの外側から見て、それらのオブジェクトで発生するサブスクリプション レベルのイベントを保持します。 たとえば、ポリシーが設定されたり、リソースのアクセスや削除が行われたりしたときです。
 
 - **Azure Storage:** Azure Diagnostics やその他の監視ツールでサポートされている汎用ストレージ。 これは、監視テレメトリの長期保持に適した低コストの選択肢です。 このサービスに保存されているデータからのアラートはサポートされていません。
 
@@ -62,13 +62,13 @@ Azure Monitor のみを使用している場合は、速度、コスト、およ
 
 Azure Monitor には 4 種類のアラートがあり、それぞれ、データが保存されているリポジトリとある程度関連性があります。
 
-- [メトリック アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric):Azure Monitor メトリック データベース内のデータに関するアラート。 アラートは、監視対象の値がユーザー定義のしきい値を超えたとき、そしてその後、値が "通常" 状態に戻るときに発生します。
+- [メトリック アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric):Azure Monitor のメトリック データに関するアラート。 アラートは、監視対象の値がユーザー定義のしきい値を超えたとき、そしてその後、値が "通常" 状態に戻るときに発生します。
 
-- [ログ クエリ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query):Application Insights ストアまたは Azure ログ ストアのコンテンツに関するアラートに使用できます。 クロスワークスペース クエリに基づいて警告することもできます。
+- [ログ クエリ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query):Application Insights または Azure Monitor ログのログ データに関するアラートに使用できます。 クロスワークスペース クエリに基づいて警告することもできます。
 
-- [アクティビティ ログ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log):Azure Service Health データを除く、アクティビティ ログ ストア内の項目に関するアラート。
+- [アクティビティ ログ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log):Azure Service Health データを除く、アクティビティ ログ内の項目に関するアラート。
 
-- [Azure Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications):停止や予定されている計画メンテナンスなど、アクティビティ ログ ストアからの Azure Service Health の問題に対してのみ使用される特別な種類のアラートです。 この種類のアラートは、Azure Monitor するコンパニオン サービスである [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) を使用して構成されることに注意してください。
+- [Azure Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications):停止や予定されている計画メンテナンスなど、アクティビティ ログからの Azure Service Health の問題に対してのみ使用される特別な種類のアラートです。 この種類のアラートは、Azure Monitor するコンパニオン サービスである [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) を使用して構成されることに注意してください。
 
 ### <a name="enable-alerting-through-partner-tools"></a>パートナー ツールによるアラートを有効にする
 
@@ -78,14 +78,14 @@ Azure Monitor には、他の監視プラットフォームや、ServiceNow な�
 
 ### <a name="specialized-azure-monitoring-offerings"></a>特殊な Azure 監視オファリング
 
-[管理ソリューション](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory)は一般に、データを Azure ログ ストアに格納します。 2 つの例外は、Azure Monitor for VMs とコンテナーに対する Azure Monitor です。 次の表では、特定のデータ型とその格納場所に基づくアラートのエクスペリエンスについて説明します。
+[管理ソリューション](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory)は一般に、データを Azure Monitor ログに格納します。 2 つの例外は、Azure Monitor for VMs と Azure Monitor for Containers です。 次の表では、特定のデータ型とその格納場所に基づくアラートのエクスペリエンスについて説明します。
 
 | 解決策 | データ型 | アラート動作 |
 |---| ---| --- |
-| コンテナーに対する Azure Monitor | ノードとポッドの計算された平均パフォーマンス データは、メトリック ストアに書き込まれます。 | 一定期間にわたって集計される、使用量の測定済みパフォーマンスの変動に基づいてアラートを受け取る必要がある場合は、メトリック アラートを作成します。 |
-| | ノード、コントローラー、コンテナー、およびポッドからのパーセンタイルを使用する計算後のパフォーマンス データは、ログ ストアに書き込まれます。 コンテナー ログとインベントリ情報もログ ストアに書き込まれます。 | クラスターおよびコンテナーの測定済み使用量の変動に基づいてアラートを受け取る必要がある場合は、ログ クエリ アラートを作成します。 ログ クエリ アラートは、ポッドフェーズ数と状態ノード数に基づいて構成することもできます。 |
-| VM に対する Azure Monitor | 正常性基準は、メトリック ストアに書き込まれるメトリックです。 | 正常性状態が正常から異常に変化すると、アラートが生成されます。 このアラートは、SMS またはメール通知を送信するように構成されたアクション グループのみをサポートします。 |
-| | マップおよびゲスト オペレーティング システムのパフォーマンス ログ データはログ ストアに書き込まれます。 | ログ クエリ アラートを作成します。 |
+| コンテナーに対する Azure Monitor | ノードとポッドの計算された平均パフォーマンス データは、メトリック データベースに書き込まれます。 | 一定期間にわたって集計される、使用量の測定済みパフォーマンスの変動に基づいてアラートを受け取る必要がある場合は、メトリック アラートを作成します。 |
+| | ノード、コントローラー、コンテナー、およびポッドからのパーセンタイルを使用する計算後のパフォーマンス データは、ワークスペースに書き込まれます。 コンテナー ログとインベントリ情報もワークスペースに書き込まれます。 | クラスターおよびコンテナーの測定済み使用量の変動に基づいてアラートを受け取る必要がある場合は、ログ クエリ アラートを作成します。 ログ クエリ アラートは、ポッドフェーズ数と状態ノード数に基づいて構成することもできます。 |
+| VM に対する Azure Monitor | 正常性基準は、メトリック データベースに格納されているメトリックです。 | 正常性状態が正常から異常に変化すると、アラートが生成されます。 このアラートは、SMS またはメール通知を送信するように構成されたアクション グループのみをサポートします。 |
+| | マップおよびゲスト オペレーティング システムのパフォーマンス ログ データは Log Analytics ワークスペースに書き込まれます。 | ログ クエリ アラートを作成します。 |
 
 <!-- docsTest:ignore "speed driven by cost" -->
 
@@ -99,11 +99,11 @@ Azure Monitor には、他の監視プラットフォームや、ServiceNow な�
 
 - このデータに対してアラートを発する最速の方法は、それをカスタム メトリックとしてインポートすることです。 これは、Azure Diagnostics 拡張機能を使用し、次にメトリック アラートを使用することで行います。 ただし、カスタム メトリックは現在プレビュー段階であり、[他の選択肢よりもコストが高くなります](https://azure.microsoft.com/pricing/details/monitor)。
 
-- 最もコストが低く、最も低速なのは、Azure ログ Kusto ストアに送信する方法です。 VM 上で Log Analytics エージェントを実行することは、すべてのゲスト オペレーティング システムのメトリックとログ データをこのストアに取り込む方法として最適です。
+- 多少のインジェスト待機時間を伴うものの、最も安価なのは、Log Analytics ワークスペースに送信することです。 VM 上で Log Analytics エージェントを実行することは、すべてのゲスト オペレーティング システムのメトリックとログ データをワークスペースに取り込む方法として最適です。
 
-- 同じ VM 上で拡張機能とエージェントの両方を実行することで、両方のストアに送信できます。 その後は迅速にアラートを送信できますが、ゲスト オペレーティング システムのデータは、他のテレメトリと組み合わせると、より複雑な検索の一部としても使用することもできます。
+- 診断の拡張機能と Log Analytics エージェントの両方を同じ VM 上で実行すると、Azure Monitor でそれをメトリックとログしてストレージに送信できます。 その後はより迅速にアラートを送信できますが、ゲスト オペレーティング システムのデータは、他のテレメトリと組み合わせると、より複雑なクエリの一部としても使用することもできます。
 
-**オンプレミスのデータのインポート:** Azure とオンプレミスで実行されている複数のコンピューターにわたってクエリと監視を行おうとしている場合は、Log Analytics エージェントを使用してゲスト オペレーティング システムのデータを収集できます。 その後、"[ログからメトリックへ](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs)" と呼ばれる機能を使用して、メトリックを簡素化してメトリック ストアに送ることができます。 この方法では、Azure ログ ストアへのインジェスト プロセスの一部がバイパスされるため、より短時間のうちにデータをメトリック データベースで利用できるようになります。
+**オンプレミスのデータのインポート:** Azure とオンプレミスで実行されている複数のコンピューターにわたってクエリと監視を行おうとしている場合は、Log Analytics エージェントを使用してゲスト オペレーティング システムのデータを収集できます。 その後、Azure Monitor で "[ログからメトリックへ](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs)" と呼ばれる機能を使用して、メトリックとして収集して保存できます。 この方法によって、Azure Monitor ログへのインジェスト プロセスの一部がバイパスされるため、データがすぐに利用可能になります。
 
 ### <a name="minimize-alerts"></a>アラートを最小限に抑える
 
@@ -116,7 +116,7 @@ Azure Monitor for VMs を使用していない場合は、以下の機能につ�
 
 - [動的しきい値](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds):動的しきい値では、一定期間にわたってリソースのアクティビティを調べ、"通常動作" と見なすしきい値の上限と下限を作成します。 監視対象のメトリックがこれらのしきい値の範囲外になると、アラートを受け取ります。
 
-- [マルチシグナル アラート](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts):2 つの異なるリソースの種類からの 2 つの異なる入力の組み合わせを使用するメトリック アラートを作成できます。 たとえば、VM の CPU 使用率が 90 パーセントを超え、その VM をフィードしている特定の Azure Service Bus キュー内のメッセージ数が一定量を超えたときにアラートを生成する場合は、ログ クエリを作成せずにそれを実行できます。 この機能は、2 つのシグナルに対してのみ機能します。 より複雑なクエリがある場合は、メトリック データを Azure Monitor ログ ストアにフィードして、ログ クエリを使用します。
+- [マルチシグナル アラート](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts):2 つの異なるリソースの種類からの 2 つの異なる入力の組み合わせを使用するメトリック アラートを作成できます。 たとえば、VM の CPU 使用率が 90 パーセントを超え、その VM をフィードしている特定の Azure Service Bus キュー内のメッセージ数が一定量を超えたときにアラートを生成する場合は、ログ クエリを作成せずにそれを実行できます。 この機能は、2 つのシグナルに対してのみ機能します。 より複雑なクエリがある場合は、メトリック データを Log Analytics ワークスペースにフィードして、ログ クエリを使用します。
 
 - [マルチソース アラート](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts):Azure Monitor では、すべての VM リソースに適用される単一のメトリック アラート ルールを使用できます。 VM ごとに個別のアラートを作成する必要がないため、この機能によって時間を節約できます。 この種類のアラートのコストは同じです。 50 台の VM の CPU 使用率を監視するために 50 のアラートを作成する場合でも、50 台すべての VM の CPU 使用率を監視する 1 つのアラートを作成する場合でも、かかるコストは同じです。 動的しきい値と組み合わせてこれらの種類のアラートを使用することもできます。
 
