@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6355c5f5a80e915a3b2b82b99c06c388e9e0f8d2
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: e30cabbc88f257ec2fa516bd500b292852ee1b8c
+ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450307"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88075796"
 ---
 # <a name="cost-management-tools-in-azure"></a>Azure でのコスト管理ツール
 
@@ -23,9 +23,8 @@ ms.locfileid: "86450307"
 
 <!-- TODO: Content packs are deprecated. -->
 
-| ツール | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview)  | [Azure EA コンテンツ パック](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
+| ツール | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview)  | [Power BI Desktop コネクタ](https://docs.microsoft.com/power-bi/connect-data/desktop-connect-azure-cost-management) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
 |---------|---------|---------|---------|---------|
-| Enterprise Agreement が必要     | いいえ         | いいえ         | はい         | いいえ         |
 | 予算管理     | いいえ         | はい         | いいえ         | はい         |
 | 1 つのリソースでの支出の監視    | はい         | はい         | はい         | いいえ         |
 | 複数のリソースでの支出の監視    | いいえ         | はい        | はい         | いいえ         |
