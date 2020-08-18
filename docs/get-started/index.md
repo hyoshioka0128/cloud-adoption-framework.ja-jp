@@ -8,12 +8,12 @@ author: JanetCThomas
 ms.author: janet
 ms.date: 05/04/2020
 ms.subservice: overview
-ms.openlocfilehash: 94dc8b2761e537c7bef2e837db0d0d25bef8bef7
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: a461a79657e52680b137ba6cc78541092faf73b6
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399845"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88279099"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>クラウド導入フレームワークの概要
 
@@ -22,8 +22,8 @@ ms.locfileid: "83399845"
 <!-- markdownlint-disable MD033 -->
 <br>
 
-|                                                                                     |                                                                                                                                |
-|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| シナリオ | 説明 |
+|----------|-------------|
 | [クラウド導入に関する基本的な概念を理解する必要があります](./cloud-concepts.md) | クラウドを使用する場合は、理解しておくべき初期段階のいくつかの概念と、決定事項があります。 |
 | [既存のワークロードをクラウドに移行したいと考えています](./migrate.md)                   | このガイドは、オンプレミスのワークロードをクラウドに移行することに主に重点を置く場合に、最適な出発点となります。 |
 | [クラウドで新しい製品やサービスを構築したいと考えています](./innovate.md)             | このガイドは、革新的なソリューションをクラウドにデプロイするための準備に役立ちます。                                       |

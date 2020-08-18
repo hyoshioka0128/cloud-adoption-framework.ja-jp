@@ -7,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5d42febd3d8ad662edf17973d6f5285b448b0e27
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 088ee6b4582ef83255bcda6a5006dac3571e830a
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196528"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284590"
 ---
 <!-- docsTest:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
@@ -30,7 +30,7 @@ Azure と Azure Migrate は、どちらも Microsoft テクノロジをホスト
 | | | | |
 |---------|---------|---------|---------|
 | **仮想マシン** | [仮想マシン](../migrate/azure-best-practices/contoso-migration-rehost-vm.md) | [Linux サーバー](../migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md) | [仮想デスクトップ](./wvd/index.md) |
-| **アプリケーション** | [ASP.NET](../migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md) | [Java](https://docs.microsoft.com/azure/java/migration-overview?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) | [PHP](../migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md) |
+| **アプリケーション** | [ASP.NET](../migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md) | [Java](/azure/java/migration-overview?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) | [PHP](../migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md) |
 | **データ** | [SQL Server](../migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md) | [オープン ソース データベース](../migrate/azure-best-practices/sql-migration.md) | Analytics |
 | **ハイブリッド** | [Azure Stack](./azure-stack/index.md) | [VMware](../migrate/azure-best-practices/vmware-host.md) | |
 | **その他のシナリオ** | [ワークロードをセキュリティで保護する](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [メインフレーム](../infrastructure/mainframe-migration/index.md) | NetApp と SAP HANA |

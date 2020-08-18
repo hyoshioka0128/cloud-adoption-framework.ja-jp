@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ccd87b73976cb87069bf05463f05a1e22e2caf75
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 728531a3d46cc2f3a7d3d94f63cbf71b83b103cd
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196127"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278929"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -40,7 +40,7 @@ ms.locfileid: "88196127"
 
 ### <a name="cloud-native"></a>クラウドネイティブ
 
-現在、組織に確立されたログとレポートのシステムがない場合、または計画されたデプロイで既存のオンプレミスの監視システムまたは他の外部の監視システムとの統合が必要ない場合は、クラウド ネイティブの SaaS ソリューション ([Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) など) が最も簡単な選択です。
+現在、組織に確立されたログとレポートのシステムがない場合、または計画されたデプロイで既存のオンプレミスの監視システムまたは他の外部の監視システムとの統合が必要ない場合は、クラウド ネイティブの SaaS ソリューション ([Azure Monitor](/azure/azure-monitor/overview) など) が最も簡単な選択です。
 
 このシナリオでは、すべてのログ データが記録され、クラウドに格納されます。また、情報を処理して IT スタッフに表示するログ ツールとレポート ツールが、Azure プラットフォームと Azure Monitor から提供されます。
 
@@ -68,7 +68,7 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 
 ### <a name="gateway-aggregation"></a>ゲートウェイ集約
 
-クラウド ベースのテレメトリ データの量が大きい、または既存のオンプレミスの監視システムで、ログ データが処理できるように事前に変更する必要があるシナリオでは、ログ データの[ゲートウェイ集約](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation)サービスが必要になる場合があります。
+クラウド ベースのテレメトリ データの量が大きい、または既存のオンプレミスの監視システムで、ログ データが処理できるように事前に変更する必要があるシナリオでは、ログ データの[ゲートウェイ集約](/azure/architecture/patterns/gateway-aggregation)サービスが必要になる場合があります。
 
 ゲートウェイ サービスは、クラウド プロバイダーにデプロイされます。 次に、関連するアプリケーションとサービスは、既定のログ システムではなく、ゲートウェイにテレメトリ データが送信されるように構成されます。 ゲートウェイで集約、結合などのデータの処理ができるようになります。それ以外の場合は、取り込みと分析のために監視サービスにデータを送信する前に、データを書式設定できます。
 
@@ -114,12 +114,12 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 
 ## <a name="learn-more"></a>詳細情報
 
-[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) は Azure の既定のレポートと監視サービスです。 共有サービスには次のものが含まれています。
+[Azure Monitor](/azure/azure-monitor/overview) は Azure の既定のレポートと監視サービスです。 共有サービスには次のものが含まれています。
 
 - アプリのテレメトリ、ホストのテレメトリ (VM など)、コンテナー メトリック、Azure プラットフォームのメトリック、イベント ログを収集するための統合プラットフォーム。
 - 視覚化ツール、クエリ ツール、アラート ツール、分析ツール。 仮想マシン、ゲスト オペレーティング システム、仮想ネットワーク、およびワークロードのアプリケーション イベントの分析情報を提供できます。
-- 外部サービスとの統合および監視とアラート サービスの自動化のための [REST API](https://docs.microsoft.com/azure/azure-monitor/platform/rest-api-walkthrough)。
-- 多くの人気のあるサード パーティ ベンダーとの[統合](https://docs.microsoft.com/azure/azure-monitor/platform/partners)。
+- 外部サービスとの統合および監視とアラート サービスの自動化のための [REST API](/azure/azure-monitor/platform/rest-api-walkthrough)。
+- 多くの人気のあるサード パーティ ベンダーとの[統合](/azure/azure-monitor/platform/partners)。
 
 ## <a name="next-steps"></a>次のステップ
 

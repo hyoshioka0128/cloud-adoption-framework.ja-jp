@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6287cb0f1ea73032728c9394f2d1f74fcc81409a
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 6f61bdbd1843dea82ab645768465e1e1b3541f20
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479664"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278240"
 ---
 # <a name="expand-your-landing-zone"></a>ランディング ゾーンを拡張する
 
@@ -25,7 +25,7 @@ ms.locfileid: "86479664"
 ![共有アーキテクチャの原則](../../_images/ready/shared-principles.png)
 _図 1: 共有アーキテクチャの原則。_
 
-これらの同じアーキテクチャ原則は、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)、および [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)のソリューションで共有されます。
+これらの同じアーキテクチャ原則は、[Azure Advisor](/azure/advisor/advisor-overview)、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework)、および [Azure アーキテクチャ センター](/azure/architecture)のソリューションで共有されます。
 
 ## <a name="applying-these-principles-to-your-landing-zone-improvements"></a>これらの原則をランディング ゾーンの改善点に適用する
 

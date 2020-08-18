@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: aa4f565bafeafa0eea09ca940a4ca90a9ff46eed
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 69a27bd28fb22f7c7a15490ac65d8dc7053b5f63
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196174"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278946"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -63,7 +63,7 @@ Azure AD は、ユーザーとグループに Azure プラットフォーム上�
 多くの場合、既存のオンプレミス Active Directory インフラストラクチャを持つ組織においては、既存のユーザーとアクセス管理を保持すると同時に、クラウド リソースの管理に必要な IAM 機能を提供するためには、ディレクトリ同期が最適なソリューションです。 このプロセスでは、Azure AD とオンプレミスのディレクトリ サービスの間でディレクトリ情報を継続的にレプリケートし、ユーザーの共通資格情報と、一貫性のある ID、ロール、アクセス許可のシステムを組織全体で可能にします。
 
 > [!NOTE]
-> Office 365 を導入済みの組織では、オンプレミス Active Directory インフラストラクチャと Azure Active Directory の間に[ディレクトリ同期](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)を既に実装している場合があります。
+> Office 365 を導入済みの組織では、オンプレミス Active Directory インフラストラクチャと Azure Active Directory の間に[ディレクトリ同期](/office365/enterprise/set-up-directory-synchronization)を既に実装している場合があります。
 
 **ディレクトリ同期の前提条件:** 同期済み ID ソリューションを使用するには、次の事項が前提となります。
 
@@ -93,19 +93,19 @@ Kerberos や NTLM などの従来のプロトコルを使用する要求ベー�
 
 ID フェデレーションは、複数の ID 管理システムにわたって信頼関係を確立し、共通の認証機能と許可機能を可能にします。 これにより、組織内の複数のドメインや、お客様またはビジネス パートナーによって管理される ID システム全体でシングル サインオン機能をサポートできるようになります。
 
-Azure AD は、[Active Directory フェデレーション サービス (AD FS)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis) を使用するオンプレミスの Active Directory ドメインのフェデレーションをサポートします。 これを Azure に実装する方法の詳細については、「[AD FS を Azure に拡張する](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs)」を参照してください。
+Azure AD は、[Active Directory フェデレーション サービス (AD FS)](/azure/active-directory/hybrid/how-to-connect-fed-whatis) を使用するオンプレミスの Active Directory ドメインのフェデレーションをサポートします。 これを Azure に実装する方法の詳細については、「[AD FS を Azure に拡張する](/azure/architecture/reference-architectures/identity/adfs)」を参照してください。
 
 ## <a name="learn-more"></a>詳細情報
 
 Azure での ID サービスの詳細については、以下を参照してください。
 
-- **[Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)。** Azure AD は、クラウド ベースの ID サービスを提供します。 Azure リソースへのアクセスの管理と、ID 管理、デバイス登録、ユーザー プロビジョニング、アプリケーション アクセス制御、およびデータ保護の制御を可能にします。
-- **[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)。** Azure AD Connect ツールを使用すると、既存の ID 管理ソリューションを使用して Azure AD インスタンスに接続でき、クラウド上の既存ディレクトリの同期が可能になります。
-- **[ロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)。** Azure AD は、管理プレーン内のリソースへのアクセスを効果的かつ安全に管理するための RBAC を提供します。 ジョブと責任はロールに編成され、ユーザーにはこれらのロールが割り当てられます。 RBAC により、リソースへアクセス可能なユーザーと、そのリソースに実行可能なアクションを制御できます。
-- **[Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)。** PIM は、リソース アクセス特権の露出時間を短縮し、レポートとアラートを介して特権の使用への可視性を高めます。 「ジャスト イン タイム」 (JIT) での特権の取得や、短期間での特権の割り当て (割り当て後に自動的に特権が取り消される) により、ユーザーを制限します。
-- **[オンプレミスの Active Directory ドメインと Azure Active Directory を統合する](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)。** この参照アーキテクチャでは、オンプレミス Active Directory ドメインと Azure AD の間のディレクトリ同期の例を示します。
-- **[Active Directory Domain Services (AD DS) を Azure に拡張する](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)。** この参照アーキテクチャでは、ドメイン サービスをクラウドベース リソースに拡張するために AD DS サーバーをデプロイする例を示します。
-- **[Active Directory フェデレーション サービス (AD FS) を Azure に拡張する](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs)。** この参照アーキテクチャでは、Azure AD ディレクトリでのフェデレーション認証と許可を実行するために Active Directory フェデレーション サービス (AD FS) を構成する方法を示します。
+- **[Azure AD](/azure/active-directory/fundamentals/active-directory-whatis)。** Azure AD は、クラウド ベースの ID サービスを提供します。 Azure リソースへのアクセスの管理と、ID 管理、デバイス登録、ユーザー プロビジョニング、アプリケーション アクセス制御、およびデータ保護の制御を可能にします。
+- **[Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity)。** Azure AD Connect ツールを使用すると、既存の ID 管理ソリューションを使用して Azure AD インスタンスに接続でき、クラウド上の既存ディレクトリの同期が可能になります。
+- **[ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/overview)。** Azure AD は、管理プレーン内のリソースへのアクセスを効果的かつ安全に管理するための RBAC を提供します。 ジョブと責任はロールに編成され、ユーザーにはこれらのロールが割り当てられます。 RBAC により、リソースへアクセス可能なユーザーと、そのリソースに実行可能なアクションを制御できます。
+- **[Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure)。** PIM は、リソース アクセス特権の露出時間を短縮し、レポートとアラートを介して特権の使用への可視性を高めます。 「ジャスト イン タイム」 (JIT) での特権の取得や、短期間での特権の割り当て (割り当て後に自動的に特権が取り消される) により、ユーザーを制限します。
+- **[オンプレミスの Active Directory ドメインと Azure Active Directory を統合する](/azure/architecture/reference-architectures/identity/azure-ad)。** この参照アーキテクチャでは、オンプレミス Active Directory ドメインと Azure AD の間のディレクトリ同期の例を示します。
+- **[Active Directory Domain Services (AD DS) を Azure に拡張する](/azure/architecture/reference-architectures/identity/adds-extend-domain)。** この参照アーキテクチャでは、ドメイン サービスをクラウドベース リソースに拡張するために AD DS サーバーをデプロイする例を示します。
+- **[Active Directory フェデレーション サービス (AD FS) を Azure に拡張する](/azure/architecture/reference-architectures/identity/adfs)。** この参照アーキテクチャでは、Azure AD ディレクトリでのフェデレーション認証と許可を実行するために Active Directory フェデレーション サービス (AD FS) を構成する方法を示します。
 
 ## <a name="next-steps"></a>次のステップ
 

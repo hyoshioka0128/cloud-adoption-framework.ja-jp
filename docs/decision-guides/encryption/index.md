@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b43c20579bceb855c77adb3b4e7919254fa50d5a
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: f7d3add62dd4127f0a74537f57e75051b5fd72dd
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196142"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88279031"
 ---
 <!-- cSpell:ignore BYOK -->
 
@@ -123,9 +123,9 @@ BYOK アプローチでは、オンプレミス環境内の専用 HSM ハード�
 
 Azure での暗号化とキー管理の詳細については、以下を参照してください。
 
-- **[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview):** Azure で暗号化を使用して保存データと転送中のデータの両方が保護される方法について詳細に説明されています。
-- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview):** Key Vault は、Azure 内の暗号化キー、シークレット、証明書を格納および管理するための主要なキー管理システムです。
-- **[Azure のデータ セキュリティと暗号化のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)。** Azure のデータ セキュリティと暗号化のベスト プラクティスの説明。
+- **[Azure の暗号化の概要](/azure/security/fundamentals/encryption-overview):** Azure で暗号化を使用して保存データと転送中のデータの両方が保護される方法について詳細に説明されています。
+- **[Azure Key Vault](/azure/key-vault/general/overview):** Key Vault は、Azure 内の暗号化キー、シークレット、証明書を格納および管理するための主要なキー管理システムです。
+- **[Azure のデータ セキュリティと暗号化のベスト プラクティス](/azure/security/fundamentals/data-encryption-best-practices)。** Azure のデータ セキュリティと暗号化のベスト プラクティスの説明。
 - **[Azure におけるコンフィデンシャル コンピューティング](https://azure.microsoft.com/solutions/confidential-compute):** Azure の Confidential Computing イニシアチブでは、信頼できる実行環境または使用中のデータを保護するための他の暗号化メカニズムを作成するためのツールとテクノロジが提供されます。
 
 ## <a name="next-steps"></a>次のステップ

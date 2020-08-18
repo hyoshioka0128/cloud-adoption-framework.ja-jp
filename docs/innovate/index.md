@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fbe43c1769eed4b7ad0a032b7af11a0755d954cd
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 8b5c74387ea0d5cd16d93be222c546f301e8531f
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449151"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284454"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウドのイノベーション
 
@@ -24,12 +24,10 @@ ms.locfileid: "86449151"
 
 <!-- markdownlint-disable MD033 -->
 
-| | |
-|---|---|
-| <br> ![1](../_images/icons/1.png)     | <br> [事業価値における合意](./business-value.md):技術的なソリューションを決定する前に、新しいイノベーションによってビジネス価値がどのように促進されるかを特定します。 その価値を自分のクラウド戦略に対応付けます。 この段階的な手法では、ビジネス価値は仮定される顧客ニーズで表されます。                                |
-| <br> ![2](../_images/icons/2.png)     | <br> [Azure イノベーション ガイド](./innovation-guide/index.md):Azure には、革新的なソリューションのデプロイを加速させることができるクラウド ツールが用意されています。 仮説によっては、ツールのさまざまな組み合わせを検討する場合があります。 基本ツールを使用して実用最小限の製品 (MVP) を作成することが推奨されます。                                |
-| <br> ![3](../_images/icons/3.png)     | <br> [ベスト プラクティス](./best-practices/index.md):アーキテクチャに関する決定は、ツールチェーンの各ツールのベスト プラクティスに従う必要があります。 このようなガイダンスに準拠することで、ソリューションの開発を加速させ、確かなアーキテクチャの設計に関するリファレンスを提供しやすくなります。                                |
-| <br> ![4](../_images/icons/4.png)     | <br> [フィードバック ループ](./considerations/adoption.md): 繰り返すたびに、チームは、開発中のソリューションから顧客と共に学ぶことができます。 顧客による迅速かつ正確なフィードバック ループは、テスト、測定、習得を向上させ、最終的に製品化までの時間による影響を軽減するのに役立ちます。 Azure と GitHub がどのようにフィードバック ループを加速させるか学習できます。                        |
+- [事業価値における合意](./business-value.md):技術的なソリューションを決定する前に、新しいイノベーションによってビジネス価値がどのように促進されるかを特定します。 その価値を自分のクラウド戦略に対応付けます。 この段階的な手法では、ビジネス価値は仮定される顧客ニーズで表されます。
+- [Azure イノベーション ガイド](./innovation-guide/index.md):Azure には、革新的なソリューションのデプロイを加速させることができるクラウド ツールが用意されています。 仮説によっては、ツールのさまざまな組み合わせを検討する場合があります。 基本ツールを使用して実用最小限の製品 (MVP) を作成することが推奨されます。
+- [ベスト プラクティス](./best-practices/index.md):アーキテクチャに関する決定は、ツールチェーンの各ツールのベスト プラクティスに従う必要があります。 このようなガイダンスに準拠することで、ソリューションの開発を加速させ、確かなアーキテクチャの設計に関するリファレンスを提供しやすくなります。
+- [フィードバック ループ](./considerations/adoption.md): 繰り返すたびに、チームは、開発中のソリューションから顧客と共に学ぶことができます。 顧客による迅速かつ正確なフィードバック ループは、テスト、測定、習得を向上させ、最終的に製品化までの時間による影響を軽減するのに役立ちます。 Azure と GitHub がどのようにフィードバック ループを加速させるか学習できます。
 
 ## <a name="innovation-summary"></a>イノベーションの概要
 
@@ -43,8 +41,8 @@ ms.locfileid: "86449151"
 
 ここでは、クラウド導入フレームワークのイノベーション手法と一致する Microsoft Learn のロール固有のラーニング パスの例をいくつか示します。
 
-[Azure でコンテナーを管理する](https://docs.microsoft.com/learn/paths/administer-containers-in-azure)Azure Container Instances は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、Azure Container Instances を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
+[Azure でコンテナーを管理する](/learn/paths/administer-containers-in-azure)Azure Container Instances は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、Azure Container Instances を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
 
-[サーバーレス アプリケーションの作成](https://docs.microsoft.com/learn/paths/create-serverless-applications): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を使用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
+[サーバーレス アプリケーションの作成](/learn/paths/create-serverless-applications): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を使用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
 
-追加のラーニング パスについては、[Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+追加のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

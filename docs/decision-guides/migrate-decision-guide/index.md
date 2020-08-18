@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: a9d3cb085de5e35d8e4db85f67390d670d816410
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 566d1e586b2d110d2d2ae75ab2c04496876d6963
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786162"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278907"
 ---
 # <a name="migration-tools-decision-guide"></a>移行ツール決定ガイド
 
@@ -39,7 +39,7 @@ ms.locfileid: "84786162"
 
 ## <a name="learn-more"></a>詳細情報
 
-- **[ クラウドの基礎:Azure コンピューティング オプションの概要](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree):** Azure IaaS および PaaS コンピューティング オプションの機能について説明します。
-- **[ クラウドの基礎:適切なデータ ストアの選択](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview):** Azure プラットフォーム上で利用できる PaaS ストレージ オプションについて説明します。
+- **[ クラウドの基礎:Azure コンピューティング オプションの概要](/azure/architecture/guide/technology-choices/compute-decision-tree):** Azure IaaS および PaaS コンピューティング オプションの機能について説明します。
+- **[ クラウドの基礎:適切なデータ ストアの選択](/azure/architecture/guide/technology-choices/data-store-overview):** Azure プラットフォーム上で利用できる PaaS ストレージ オプションについて説明します。
 - **[移行のベスト プラクティス:移行作業中にデータ要件がネットワーク容量を超えている](../../migrate/azure-best-practices/network-capacity-exceeded.md):** 使用できるネットワーク帯域幅によってデータ移行が妨げられるシナリオの代替データ移行メカニズムについて説明します。
-- **[SQL Database:Azure で適切な SQL Server オプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines):** マネージド インフラストラクチャ (IaaS) またはマネージド サービス (PaaS) 環境で、SQL Server ワークロードをホストすることを選択する際のオプションとビジネス上の理由について説明します。
+- **[SQL Database:Azure で適切な SQL Server オプションを選択する](/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines):** マネージド インフラストラクチャ (IaaS) またはマネージド サービス (PaaS) 環境で、SQL Server ワークロードをホストすることを選択する際のオプションとビジネス上の理由について説明します。

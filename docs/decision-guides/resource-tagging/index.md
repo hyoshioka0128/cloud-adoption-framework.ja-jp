@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b5f613fb79fc30fe9ea2a5c3e817ff54174f4ded
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 817cc502f00cf6b8afece839719626653618c451
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196042"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278844"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -27,8 +27,8 @@ ms.locfileid: "88196042"
   - [クラウド会計モデル](../../strategy/cloud-accounting.md)
   - [ROI の計算](../../strategy/financial-models.md#return-on-investment)
   - [コスト管理](../../ready/azure-best-practices/track-costs.md)
-  - [予算](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
-  - [警告](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [予算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [警告](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
   - [定期的な支出の追跡とレポート](../../govern/cost-management/compliance-processes.md)
   - [実装後の最適化](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [コスト最適化戦術](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -55,7 +55,7 @@ ms.locfileid: "88196042"
 標準化された名前付け規則は、クラウドでホストされるリソースを編成するための開始点です。 適切な構造の名前付けシステムを作成すると、管理とアカウンティング両方の目的でリソースをすばやく識別できるようになります。 組織の他の部分に IT 名前付け規則が既にある場合は、クラウドの名前付け規則をそれらに揃えるかどうか、またはクラウドベースの標準を別に確立する必要があるかを検討します。
 
 > [!NOTE]
-> [名前付け規則と制限事項](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)は Azure リソースごとに変わります。 名前付け規則は、これらの規則に従っている必要があります。
+> [名前付け規則と制限事項](/azure/azure-resource-manager/management/resource-name-rules)は Azure リソースごとに変わります。 名前付け規則は、これらの規則に従っている必要があります。
 
 ## <a name="resource-tagging-patterns"></a>リソース タグ付けのパターン
 
@@ -91,7 +91,7 @@ ms.locfileid: "88196042"
 Azure での名前付けとタグ付けに関する詳細については、以下を参照してください。
 
 - [Azure リソースの名前付け規則](../../ready/azure-best-practices/naming-and-tagging.md)。 Azure リソースの推奨される名前付け規則については、次のガイダンスを参照してください。
-- [タグを使用して Azure リソースと整理階層を整理する](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。 Azure ではリソース グループと個々のリソースの両方のレベルでタグを適用でき、適用されたタグに基づいて柔軟な詳細さでアカウンティング レポートを作成できます。
+- [タグを使用して Azure リソースと整理階層を整理する](/azure/azure-resource-manager/management/tag-resources)。 Azure ではリソース グループと個々のリソースの両方のレベルでタグを適用でき、適用されたタグに基づいて柔軟な詳細さでアカウンティング レポートを作成できます。
 
 ## <a name="next-steps"></a>次のステップ
 

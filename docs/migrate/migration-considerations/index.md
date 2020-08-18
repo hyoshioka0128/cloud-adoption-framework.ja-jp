@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b62a27c0eda1940e32e06717c2c195e6565f9e30
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: dd3d7ccb2dab6baf0093e9ada857b4ccb74dd19a
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234941"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88285134"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>クラウド導入フレームワーク移行モデル
 
@@ -46,7 +46,7 @@ ms.locfileid: "86234941"
 
 クラウド導入フレームワーク移行モデルは、段階的なクラウド変換プロセスに基づいています。 組織は、初めての限られた範囲のクラウド移行作業 (ここでは、一般的に最初のワークロードと呼びます) から開始すると想定します。 運用チームが移行プロセスを洗練し、改善するにつれて、この作業はより多くのワークロードを含むように反復的に拡大されます。
 
-[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) などのクラウド移行ツールは、何万もの VM で構成されるデータセンター全体を移行できます。 ただし、ビジネスおよび既存の IT 運用では、このような速いペースで変化を処理することはほとんどありません。 そのため、多くの組織では移行作業を複数のイテレーションに分割し、イテレーションごとに 1 つのワークロード (またはワークロードのコレクション) を移行します。
+[Azure Site Recovery](/azure/site-recovery/site-recovery-overview) などのクラウド移行ツールは、何万もの VM で構成されるデータセンター全体を移行できます。 ただし、ビジネスおよび既存の IT 運用では、このような速いペースで変化を処理することはほとんどありません。 そのため、多くの組織では移行作業を複数のイテレーションに分割し、イテレーションごとに 1 つのワークロード (またはワークロードのコレクション) を移行します。
 
 この段階的なモデルの背後にある原則は、次のインフォグラフィックで示されているプロセスの実行と前提条件に基づいています。
 

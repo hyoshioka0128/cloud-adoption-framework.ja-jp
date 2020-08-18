@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a98a60937bf01eaa3fc4a9a7f7ba594e281a008e
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 6cc107d743516160917d863fa69d2aa5a5aaa4a7
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196058"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278606"
 ---
 # <a name="software-defined-networking-decision-guide"></a>ソフトウェア定義ネットワーク意思決定ガイド
 
@@ -62,8 +62,8 @@ VM の数が 1,000 未満の小さな単一リージョン デプロイでは、
 
 Azure でのソフトウェア定義ネットワークの詳細については、次の記事を参照してください。
 
-- [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)。 Azure では、コアの SDN 機能は、物理的なオンプレミスのネットワークに類似したクラウドとして機能する Azure Virtual Network によって提供されます。 仮想ネットワークはまた、プラットフォーム上のリソース間の既定の分離境界としても機能します。
-- [Azure のネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices)。 セキュリティの脆弱性を最小限に抑えるように仮想ネットワークを構成する方法に関する Azure セキュリティ チームからの推奨事項。
+- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview)。 Azure では、コアの SDN 機能は、物理的なオンプレミスのネットワークに類似したクラウドとして機能する Azure Virtual Network によって提供されます。 仮想ネットワークはまた、プラットフォーム上のリソース間の既定の分離境界としても機能します。
+- [Azure のネットワーク セキュリティのベスト プラクティス](/azure/security/fundamentals/network-best-practices)。 セキュリティの脆弱性を最小限に抑えるように仮想ネットワークを構成する方法に関する Azure セキュリティ チームからの推奨事項。
 
 ## <a name="next-steps"></a>次のステップ
 
