@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4fc258b8213842e0cc3428146f83cb9e31bb39df
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 38f0a66e9a5aa1b9adf0a232e3cb37f27ae96459
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214982"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574008"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>ソフトウェア定義ネットワーク:ハイブリッド ネットワーク
 
 ハイブリッド クラウドのネットワーク アーキテクチャでは、ExpressRoute やその他の接続方法など、ネットワークに直接接続する専用 WAN 接続を使用して、仮想ネットワークからオンプレミスのリソースやサービスにアクセスすること、およびその逆のことが可能です。
 
-![ハイブリッド ネットワーク](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/images/expressroute.png)
+![ハイブリッド ネットワーク](/azure/architecture/reference-architectures/hybrid-networking/images/expressroute.png)
 
 クラウド ネイティブ仮想ネットワーク アーキテクチャ上に構築されるハイブリッド仮想ネットワークは、作成当初は分離されています。 仮想ネットワーク内のリソースをターゲットとしている他の受信トラフィックはすべて明示的に許可される必要がありますが、オンプレミス環境への接続を追加することで、オンプレミス ネットワークとの間のアクセスを付与します。 アクセスを制限する仮想ファイアウォール デバイスとルーティング規則を使用して接続をセキュリティで保護できます。または、クラウド ネイティブのルーティング機能を使用するか、ネットワーク仮想アプライアンス (NVA) を配置してトラフィックを管理することで、2 つのネットワーク間でどのサービスがアクセス可能であるかを正確に指定することができます。
 
@@ -45,4 +45,4 @@ ms.locfileid: "83214982"
 
 Azure でのハイブリッド ネットワークの詳細については、次の記事を参照してください。
 
-- [ハイブリッド ネットワーク参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)。 Azure のハイブリッド仮想ネットワークでは、ExpressRoute 回線または Azure VPN のいずれかを使用して、Azure でホストされていない組織の既存の IT 資産に仮想ネットワークを接続します。 この記事では、Azure 内にハイブリッド ネットワークを作成するためのオプションについて説明しています。
+- [ハイブリッド ネットワーク参照アーキテクチャ](/azure/architecture/reference-architectures/hybrid-networking/expressroute)。 Azure のハイブリッド仮想ネットワークでは、ExpressRoute 回線または Azure VPN のいずれかを使用して、Azure でホストされていない組織の既存の IT 資産に仮想ネットワークを接続します。 この記事では、Azure 内にハイブリッド ネットワークを作成するためのオプションについて説明しています。

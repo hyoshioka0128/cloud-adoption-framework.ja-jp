@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72b2651b1b9b9332048f9f2f452feac039346d9c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3269f6a94f0aa151f2fbfb3a78e540fef710767c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755032"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573719"
 ---
 # <a name="cost-management-sample-policy-statements"></a>コスト管理のサンプル ポリシー ステートメント
 
@@ -39,7 +39,7 @@ ms.locfileid: "83755032"
 
 **ポリシー ステートメント:** 承認済み予算と予算制限のメカニズムを使用して、請求単位にクラウド デプロイを割り当てる必要があります。
 
-**設計オプション:** Azure では、[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/manage-budgets) を使用して予算を制御することができます。
+**設計オプション:** Azure では、[Azure Cost Management](/azure/cost-management/manage-budgets) を使用して予算を制御することができます。
 
 ## <a name="underutilization"></a>過小使用
 
@@ -49,7 +49,7 @@ ms.locfileid: "83755032"
 
 **設計オプション:**
 
-- Azure では、計画された支出と実際の支出を、[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis) を使用して管理することができます。
+- Azure では、計画された支出と実際の支出を、[Azure Cost Management](/azure/cost-management/quick-acm-cost-analysis) を使用して管理することができます。
 - 課金単位でリソースをグループ化するためのオプションがいくつかあります。 Azure で、ガバナンス チームと協力して、[リソースの整合性モデル](../../decision-guides/resource-consistency/index.md)を選択し、すべての資産に適用する必要があります。
 
 ## <a name="overprovisioned-assets"></a>オーバープロビジョニングの資産
@@ -60,7 +60,7 @@ ms.locfileid: "83755032"
 
 **設計オプション:**
 
-- Azure では、[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) により、最適化に関する推奨事項を提供することができます。
+- Azure では、[Azure Advisor](/azure/advisor/advisor-cost-recommendations) により、最適化に関する推奨事項を提供することができます。
 - 課金単位でリソースをグループ化するためのオプションがいくつかあります。 Azure で、ガバナンス チームと協力して、[リソースの整合性モデル](../../decision-guides/resource-consistency/index.md)を選択し、すべての資産に適用する必要があります。
 
 ## <a name="overoptimization"></a>過剰な最適化
@@ -71,7 +71,7 @@ ms.locfileid: "83755032"
 
 **設計オプション:**
 
-- Azure では、[Azure Monitor の Insights 機能](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-performance)が、システム利用率の分析に役立つ場合があります。
+- Azure では、[Azure Monitor の Insights 機能](/azure/azure-monitor/insights/vminsights-performance)が、システム利用率の分析に役立つ場合があります。
 - ロールに基づいて、リソースをグループ化およびタグ付けするためのオプションがいくつかあります。 Azure で、ガバナンス チームと協力して、[リソースの整合性モデル](../../decision-guides/resource-consistency/index.md)を選択し、すべての資産にこれを適用する必要があります。
 
 ## <a name="next-steps"></a>次のステップ

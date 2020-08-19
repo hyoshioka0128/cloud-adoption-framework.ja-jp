@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c54ae037cef0486f27a4a7fc441e643a1678dd03
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 0f4e8cc17d094efc490a16ea3f740435b97a20fe
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478567"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568092"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -100,25 +100,25 @@ Azure Bot Service デプロイを構成または監視するには、次の手�
 
 ### <a name="azure-devops"></a>Azure DevOps
 
-イノベーションの過程では、最終的に DevOps に向かって進むことになります。 Microsoft には長い間、Team Foundation Server (TFS) と呼ばれるオンプレミス製品がありました。 Microsoft は独自のイノベーションの過程で、リリースのさまざまな言語や目的に対応するビルド ツールとリリース ツールを提供するクラウドベースのサービスである Azure DevOps を開発しました。 詳細については、[Azure DevOps](https://docs.microsoft.com/azure/devops) のページをご覧ください。
+イノベーションの過程では、最終的に DevOps に向かって進むことになります。 Microsoft には長い間、Team Foundation Server (TFS) と呼ばれるオンプレミス製品がありました。 Microsoft は独自のイノベーションの過程で、リリースのさまざまな言語や目的に対応するビルド ツールとリリース ツールを提供するクラウドベースのサービスである Azure DevOps を開発しました。 詳細については、[Azure DevOps](/azure/devops) のページをご覧ください。
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-モバイル アプリの人気が上がり続ける中、さまざまな構成を持つ実際のデバイスでテストを自動化できるプラットフォームに対するニーズが増えています。 Visual Studio App Center は、iOS、Android、Windows、macOS をまたいでアプリケーションをテストできる場所だけでなく、Azure Application Insights を使用し、テレメトリをすばやく簡単に分析できる監視プラットフォームも提供します。 詳細については、[Visual Studio App Center](https://docs.microsoft.com/appcenter) に関するページを参照してください。
+モバイル アプリの人気が上がり続ける中、さまざまな構成を持つ実際のデバイスでテストを自動化できるプラットフォームに対するニーズが増えています。 Visual Studio App Center は、iOS、Android、Windows、macOS をまたいでアプリケーションをテストできる場所だけでなく、Azure Application Insights を使用し、テレメトリをすばやく簡単に分析できる監視プラットフォームも提供します。 詳細については、[Visual Studio App Center](/appcenter) に関するページを参照してください。
 
-Visual Studio App Center からは通知サービスも提供されます。1 回の呼び出しでプラットフォームに関係なく通知をアプリケーションに送信できます。通知サービス別に連絡する必要がありません。 詳細については、「[Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push)」を参照してください。
+Visual Studio App Center からは通知サービスも提供されます。1 回の呼び出しでプラットフォームに関係なく通知をアプリケーションに送信できます。通知サービス別に連絡する必要がありません。 詳細については、「[Visual Studio App Center Push (ACP)](/appcenter/push)」を参照してください。
 
 ### <a name="learn-more"></a>詳細情報
 
-- [App Service の概要](https://docs.microsoft.com/azure/app-service/overview)
-- [Web App for Containers: カスタム コンテナーの実行](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker)
-- [Azure Functions の概要](https://docs.microsoft.com/azure/azure-functions/functions-overview)
-- [.NET および .NET Core 開発者向けの Azure](https://docs.microsoft.com/dotnet/azure/?view=azure-dotnet)
-- [Azure SDK for Python のドキュメント](https://docs.microsoft.com/azure/python)
-- [Java クラウド開発者向けの Azure](https://docs.microsoft.com/azure/java/?view=azure-java-stable)
-- [Azure に PHP Web アプリを作成する](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-php)
-- [Azure SDK for JavaScript のドキュメント](https://docs.microsoft.com/azure/javascript)
-- [Azure SDK for Go のドキュメント](https://docs.microsoft.com/azure/go)
+- [App Service の概要](/azure/app-service/overview)
+- [Web App for Containers: カスタム コンテナーの実行](/azure/app-service/containers/quickstart-docker)
+- [Azure Functions の概要](/azure/azure-functions/functions-overview)
+- [.NET および .NET Core 開発者向けの Azure](/dotnet/azure/?view=azure-dotnet)
+- [Azure SDK for Python のドキュメント](/azure/python)
+- [Java クラウド開発者向けの Azure](/azure/java/?view=azure-java-stable)
+- [Azure に PHP Web アプリを作成する](/azure/app-service/app-service-web-get-started-php)
+- [Azure SDK for JavaScript のドキュメント](/azure/javascript)
+- [Azure SDK for Go のドキュメント](/azure/go)
 - [DevOps ソリューション](https://azure.microsoft.com/solutions/devops)
 
 ## <a name="create-cloud-native-applications"></a>[クラウドネイティブ アプリケーションの作成](#tab/CloudNative)
@@ -175,9 +175,9 @@ AKS サービスを構成または監視するには:
 
 Azure Functions では、小さなコード単位 (関数) をクラウドで実行するためのプラットフォームが提供されます。 コードをマイクロサービス アーキテクチャにリファクタリングするとき、Functions から始めることができます。
 
-Azure Functions ランタイムでは、C#、Java、JavaScript、Python など、さまざまな言語がサポートされています。 一覧については、「[Azure Functions でサポートされている言語](https://docs.microsoft.com/azure/azure-functions/supported-languages)」をご覧ください。
+Azure Functions ランタイムでは、C#、Java、JavaScript、Python など、さまざまな言語がサポートされています。 一覧については、「[Azure Functions でサポートされている言語](/azure/azure-functions/supported-languages)」をご覧ください。
 
-関数のもう 1 つの利点は、HTTP トリガー、タイマー トリガー、他の Azure サービス (Blob Storage、Event Grid、Service Bus など) からのトリガーなど、さまざまなアクションやイベントによってトリガーできることです。 トリガーとバインドの詳細については、「[Azure Functions でのトリガーとバインドの概念](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)」を参照してください。
+関数のもう 1 つの利点は、HTTP トリガー、タイマー トリガー、他の Azure サービス (Blob Storage、Event Grid、Service Bus など) からのトリガーなど、さまざまなアクションやイベントによってトリガーできることです。 トリガーとバインドの詳細については、「[Azure Functions でのトリガーとバインドの概念](/azure/azure-functions/functions-triggers-bindings)」を参照してください。
 
 #### <a name="action"></a>アクション
 
@@ -273,7 +273,7 @@ Azure Red Hat OpenShift では、フル マネージドの OpenShift クラス�
 
 #### <a name="learn-more"></a>詳細情報
 
-- [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)
+- [Azure Red Hat OpenShift](/azure/openshift/intro-openshift)
 
 ## <a name="isolate-points-of-failure"></a>[障害点を分離する](#tab/IsolatePointsOfFailure)
 
@@ -347,6 +347,6 @@ Azure CDN プロファイルを構成または監視するには:
 
 ### <a name="learn-more"></a>詳細情報
 
-- [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
-- [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager)
-- [Azure Content Delivery Network](https://docs.microsoft.com/azure/cdn)
+- [Azure Front Door](/azure/frontdoor/front-door-overview)
+- [Traffic Manager](/azure/traffic-manager)
+- [Azure Content Delivery Network](/azure/cdn)

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 74c304969760e5bc52e318aa33401af12704d55d
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 24fcb5842f6151ac6beba8820391078bd64d3050
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190738"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567531"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>クラウド管理のためのワークロードの特殊化
 
@@ -60,7 +60,7 @@ ms.locfileid: "86190738"
 1. **[+ 追加]** を選択して、ライブ Web アプリケーションを監視するための Application Insights リソースを作成します。
 1. 画面の指示に従います。
 
-監視用にアプリケーションを構成する方法については、[Azure Monitor Application Insights ハブ](https://docs.microsoft.com/azure/azure-monitor/azure-monitor-app-hub)のページを参照してください。
+監視用にアプリケーションを構成する方法については、[Azure Monitor Application Insights ハブ](/azure/azure-monitor/azure-monitor-app-hub)のページを参照してください。
 
 ::: zone target="chromeless"
 

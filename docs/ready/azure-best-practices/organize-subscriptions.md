@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bb28cc9869500f26c2b981c8968a920bf5691ca6
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 237dfb1dc054362b94f626b226727cee89f30537
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473167"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569894"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>複数の Azure サブスクリプションの整理と管理
 
@@ -66,9 +66,9 @@ _図 2:管理グループ階層の例_
 
 Azure リソースの整理と管理の詳細については、次のリソースを確認してください。
 
-- [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/governance/management-groups)
-- [Azure のすべてのサブスクリプションと管理グループを管理する目的でアクセス権限を昇格させる](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
-- [Azure リソースを別のリソース グループやサブスクリプションに移動する](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)
+- [Azure 管理グループでリソースを整理する](/azure/governance/management-groups)
+- [Azure のすべてのサブスクリプションと管理グループを管理する目的でアクセス権限を昇格させる](/azure/role-based-access-control/elevate-access-global-admin)
+- [Azure リソースを別のリソース グループやサブスクリプションに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 
 ## <a name="next-steps"></a>次のステップ
 

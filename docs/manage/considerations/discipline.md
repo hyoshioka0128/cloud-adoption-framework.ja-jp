@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9571de511bbe037a35703f4ee64ef00edbe1745f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bc9ae42f65f67d1f770de2ef53607937d811e735
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224002"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571611"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>クラウド管理の規範にわたる管理の平準化
 
@@ -32,7 +32,7 @@ IT ポートフォリオ内のワークロードは異なるため、1 つのレ
 - **ワークロードの特化:** 真にミッション クリティカルなこれらのワークロードについては、そのワークロードの管理に深くかかわる経費の正当化になる場合があります。 ワークロードの特殊化では、ワークロードの利用統計情報を適用して、日々の管理のためのより高度なアプローチを決定します。 その同じデータによって、運用管理だけでは実現できない、安定性、信頼性、回復性の向上につながるオートメーション、デプロイ、設計の改善点が見つかることもよくあります。
 - **サポート外:** サポートされていないまたは重要でないと分類されているワークロードについても、クラウド管理の規範では伝えられない一般的な管理プロセスを伝えることも同様に重要です。
 
-また、組織では、[これらの管理レベルの 1 つ以上に関連した機能をサービス プロバイダーに外部委託する](https://aka.ms/adopt/partneroffers)こともできます。 これらのサービス プロバイダーでは、[Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/overview) を使用して、より的確な精度と透明性を提供することができます。
+また、組織では、[これらの管理レベルの 1 つ以上に関連した機能をサービス プロバイダーに外部委託する](https://aka.ms/adopt/partneroffers)こともできます。 これらのサービス プロバイダーでは、[Azure Lighthouse](/azure/lighthouse/overview) を使用して、より的確な精度と透明性を提供することができます。
 
 このシリーズの残りの記事では、これらの各規範でよく見られるプロセスについて概説します。
 同時に、[Azure 管理ガイド](../azure-management-guide/index.md)では、これらの各プロセスをサポートできるツールを紹介します。 管理ベースラインの作成のサポートについては、まず Azure 管理ガイドから始めてください。 ベースラインを確立したら、この記事シリーズとそれに付随するベスト プラクティスは、そのベースラインを拡張して他のレベルの管理サポートを定義するのに役立ちます。

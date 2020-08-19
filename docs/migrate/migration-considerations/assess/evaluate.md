@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cfa7478224185ca5be1535a50f7cdfe785617a7
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 83859b5687c8342c8b09ccab36aaefb53a169cd6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235009"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570183"
 ---
 # <a name="evaluate-workload-readiness"></a>ワークロードの準備状況を評価する
 
@@ -26,16 +26,16 @@ ms.locfileid: "86235009"
 
 ## <a name="common-infrastructure-evaluation-activities"></a>一般的なインフラストラクチャ評価アクティビティ
 
-- VMware の要件: [VMware に対する Azure Site Recovery の要件を確認します](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix)。
-- Hyper-V の要件: [Hyper-V に対する Azure Site Recovery の要件を確認します](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix)。
+- VMware の要件: [VMware に対する Azure Site Recovery の要件を確認します](/azure/site-recovery/vmware-physical-azure-support-matrix)。
+- Hyper-V の要件: [Hyper-V に対する Azure Site Recovery の要件を確認します](/azure/site-recovery/hyper-v-azure-support-matrix)。
 
 ホスト構成、レプリケートされた VM 構成、ストレージ要件、またはネットワーク構成での不一致をすべて文書化するようにしてください。
 
 ## <a name="common-database-evaluation-activities"></a>一般的なデータベース評価アクティビティ
 
 - 現在のデータベース デプロイの目標復旧時点 (RPO) と目標復旧時間 (RTO) を文書化します。 これらは、意思決定を支援するために[アーキテクチャ アクティビティ](./architect.md)で使用されます。
-- 高可用性構成の要件をすべて文書化します。 SQL Server の要件を理解するには、[SQL Server 高可用性ソリューション ガイド](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server)に関するページを参照してください。
-- PaaS 互換性を評価します。 [Azure データ移行ガイド](https://datamigration.microsoft.com)では、オンプレミス データベースが [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)、[Azure SQL Database](https://docs.microsoft.com/azure/sql-database)、[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql)、[Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql)、[Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb) などの互換性のある Azure PaaS ソリューションにマップされています。
+- 高可用性構成の要件をすべて文書化します。 SQL Server の要件を理解するには、[SQL Server 高可用性ソリューション ガイド](/sql/sql-server/failover-clusters/high-availability-solutions-sql-server)に関するページを参照してください。
+- PaaS 互換性を評価します。 [Azure データ移行ガイド](https://datamigration.microsoft.com)では、オンプレミス データベースが [Azure Cosmos DB](/azure/cosmos-db)、[Azure SQL Database](/azure/sql-database)、[Azure Database for MySQL](/azure/mysql)、[Azure Database for PostgreSQL](/azure/postgresql)、[Azure Database for MariaDB](/azure/mariadb) などの互換性のある Azure PaaS ソリューションにマップされています。
 - PaaS 互換性がオプションであり、修復の必要がない場合は、[アーキテクチャ アクティビティ](./architect.md)を担当するチームに問い合わせてください。 PaaS 移行によって、大幅な時間短縮と、ほとんどのクラウド ソリューションの総保有コスト (TCO) の削減が生み出される可能性があります。
 - PaaS 互換性がオプションであるが、修復が必要な場合は、[アーキテクチャ アクティビティ](./architect.md)と[修復アクティビティ](../migrate/remediate.md)を担当するチームに問い合わせてください。 多くのシナリオでは、修復時間の増加よりデータベース ソリューションの PaaS 移行の利点の方が上回ります。
 - 移行されるデータベースごとに変更のサイズと比率を文書化します。

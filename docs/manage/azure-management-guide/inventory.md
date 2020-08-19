@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e3d8f8cf6a4406eae9bedc1ebc461613bb0fef84
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: e82727e6d8f90ecf3681ff8a85096088b4a6de70
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785550"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572189"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure のインベントリと可視性
 
@@ -84,7 +84,7 @@ Azure Service Health には以下が含まれます。
 
 ### <a name="learn-more"></a>詳細情報
 
-詳細については、「[Azure Service Health](https://docs.microsoft.com/azure/service-health)」を参照してください。
+詳細については、「[Azure Service Health](/azure/service-health)」を参照してください。
 
 ## <a name="log-analytics"></a>Log Analytics
 
@@ -95,7 +95,7 @@ Azure Service Health には以下が含まれます。
 
 ::: zone-end
 
-[Log Analytics ワークスペース](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)は、Azure Monitor ログ データの格納用の一意の環境です。 各ワークスペースには、独自のデータ リポジトリと構成があります。 データ ソースとソリューションは、特定のワークスペースにデータを格納するように構成されます。 Azure 監視ソリューションでは、すべてのサーバーをワークスペースに接続することで、それらのログ データを格納してアクセスできるようにする必要があります。
+[Log Analytics ワークスペース](/azure/azure-monitor/learn/quick-create-workspace)は、Azure Monitor ログ データの格納用の一意の環境です。 各ワークスペースには、独自のデータ リポジトリと構成があります。 データ ソースとソリューションは、特定のワークスペースにデータを格納するように構成されます。 Azure 監視ソリューションでは、すべてのサーバーをワークスペースに接続することで、それらのログ データを格納してアクセスできるようにする必要があります。
 
 ::: zone target="chromeless"
 
@@ -113,7 +113,7 @@ Azure Service Health には以下が含まれます。
 
 ### <a name="learn-more"></a>詳細情報
 
-詳細については、[Log Analytics ワークスペースの作成に関するドキュメント](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)を参照してください。
+詳細については、[Log Analytics ワークスペースの作成に関するドキュメント](/azure/azure-monitor/learn/quick-create-workspace)を参照してください。
 
 ## <a name="azure-monitor"></a>Azure Monitor
 
@@ -148,10 +148,10 @@ Azure Monitor では、Azure 内のすべての監視データと診断データ
 
  以下の監視を開始します。
 
-- [アプリケーション](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
-- [Containers](https://docs.microsoft.com/azure/monitoring/monitoring-container-overview)
-- [仮想マシン](https://docs.microsoft.com/azure/monitoring/monitoring-service-map)
-- [ネットワーク](https://docs.microsoft.com/azure/networking/network-monitoring-overview)
+- [アプリケーション](/azure/application-insights/app-insights-overview)
+- [Containers](/azure/monitoring/monitoring-container-overview)
+- [仮想マシン](/azure/monitoring/monitoring-service-map)
+- [ネットワーク](/azure/networking/network-monitoring-overview)
 
 その他のリソースを監視するには、Azure Marketplace で他のソリューションを探します。
 
@@ -159,7 +159,7 @@ Azure Monitor を調査するには、[Azure Portal](https://portal.azure.com/#b
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[Azure Monitor のドキュメント](https://docs.microsoft.com/azure/monitoring-and-diagnostics)」をご覧ください。
+詳しくは、「[Azure Monitor のドキュメント](/azure/monitoring-and-diagnostics)」をご覧ください。
 
 ## <a name="onboard-solutions"></a>ソリューションのオンボード
 

@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 64332dc7479c9c587fd9aaa4af7a58bb50060af6
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 363d36df75c6db1007409258f973966a2364c2a7
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478856"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195032"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
@@ -51,7 +51,7 @@ ms.locfileid: "86478856"
 
 中心となる想定が証明されたら、その後のイテレーションでは、共感テストに加えて成長テストに焦点を当てます。 共感の構築、テスト、検証が完了すると、大規模に対処可能な市場がわかるようになります。 これは、前に説明した標準的な仮説の定型を拡張することで実現できます。 使用可能なデータに基づいて、市場全体の規模 (潜在顧客数) を推定します。
 
-そこから、市場全体のうち、同様の課題が発生し、このソリューションに関心を持つ可能性がある割合を推定します。 これが対処可能な市場です。 次にテストする仮説は、提案したソリューションを使用してこの対処可能な課題を解決することで、顧客の生活の _x_% がどのように改善するかです。 顧客のわずかなサンプリングにより、関係する顧客のプールへの影響の割合を示す先行指標が明らかになります。
+そこから、市場全体のうち、同様の課題が発生し、このソリューションに関心を持つ可能性がある割合を推定します。 これが対処可能な市場です。 次にテストする仮説は、提案したソリューションを使用してこの対処可能な課題を解決することで、顧客の生活の *x%* がどのように改善するかです。 顧客のわずかなサンプリングにより、関係する顧客のプールへの影響の割合を示す先行指標が明らかになります。
 
 ### <a name="define-a-solution-to-test-the-hypothesis"></a>仮説をテストするソリューションを定義する
 

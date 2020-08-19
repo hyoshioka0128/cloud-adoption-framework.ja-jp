@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 659dad6ad975fc19272348c6b5c3f148ea9f527b
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 3582e2c940f37e5137b66bb430d09a3f1a200004
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478022"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573600"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -80,7 +80,7 @@ IT チームは、2 つのデータセンターを廃止する CIO と CFO の�
 - **セキュアなハイブリッド仮想ネットワークのブループリント:** ハイブリッド ネットワークのオンプレミス側を、次のソリューションとオンプレミスの Active Directory サーバー間の通信を許可するように構成する必要があります。 このベスト プラクティスでは、ネットワークの境界を越えて Active Directory Domain Services を有効にする境界ネットワークが必要になります。
 - **Azure Resource Manager テンプレート:**
     1. 外部トラフィックをブロックし、内部トラフィックを許可するように NSG を定義します。
-    2. ゴールデン イメージに基づき、負荷分散ペアの 2 つの Active Directory 仮想マシンをデプロイします。 最初の起動時に、そのイメージで PowerShell スクリプトが実行され、ドメインへの参加とドメイン サービスへの登録が行われます。 詳細については、「[Extend Active Directory Domain Services (AD DS) to Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain)」 (Azure への Active Directory Domain Services (AD DS) の拡張) を参照してください。
+    2. ゴールデン イメージに基づき、負荷分散ペアの 2 つの Active Directory 仮想マシンをデプロイします。 最初の起動時に、そのイメージで PowerShell スクリプトが実行され、ドメインへの参加とドメイン サービスへの登録が行われます。 詳細については、「[Extend Active Directory Domain Services (AD DS) to Azure](/azure/architecture/reference-architectures/identity/adds-extend-domain)」 (Azure への Active Directory Domain Services (AD DS) の拡張) を参照してください。
 - Azure Policy: すべてのリソースに NSG を適用します。
 - Azure のブループリント:
     1. `active-directory-virtual-machines` という名前のブループリントを作成します。

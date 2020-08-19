@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3fa30216fdd46efcdb953f43b3d85edbe61517c7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b051af0328adfb5d0cbd8ef37e3a98b8a89ed7c6
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220245"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195623"
 ---
 # <a name="deployment-acceleration-template"></a>デプロイ高速化テンプレート
 
@@ -24,7 +24,7 @@ ms.locfileid: "83220245"
 > [!IMPORTANT]
 > このテンプレートは、限定されたサンプルです。 このテンプレートを更新して実際の要件を反映させる前に、お使いのクラウド ガバナンス戦略の中で有効なデプロイ高速化の規範を定義するため、後続の手順を確認する必要があります。
 
-[デプロイ高速化規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx)
+[デプロイ高速化規範テンプレートをダウンロードする](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/deployment-acceleration-discipline-template.docx)
 
 ## <a name="next-steps"></a>次のステップ
 

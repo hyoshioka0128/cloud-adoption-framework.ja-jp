@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0a3288c992c09ebd4da7285225da7b295b1cc626
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 15c0b4f654607e2e150d547c52edd56e95c5fe89
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373052"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570506"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>ワークロードを評価して計画を調整する
 
@@ -63,8 +63,8 @@ Azure Migrate では、Azure への移行についてオンプレミスのイン
 
 #### <a name="learn-more"></a>詳細情報
 
-- [Azure Migrate の概要](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
-- [物理サーバーまたは仮想化されたサーバーを Azure に移行する](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate の概要](/azure/migrate/migrate-services-overview)
+- [物理サーバーまたは仮想化されたサーバーを Azure に移行する](/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Azure portal での Azure Migrate](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -73,22 +73,22 @@ Azure Migrate では、Azure への移行についてオンプレミスのイン
 
 Service Map は自動的に Windows および Linux のシステム上のアプリケーション コンポーネントを検出し、サービス間の通信をマップします。 Service Map を使用すると、サーバーを重要なサービスを提供する相互接続されたシステムとして表示することができます。 Service Map は、TCP 接続アーキテクチャ全体におけるサーバー、プロセス、受信接続と送信接続の待機時間、ポートの間の接続を表示します。エージェントのインストール以外の構成は必要ありません。
 
-Azure Migrate では、Service Map を使用して、環境全体でレポート機能と依存関係が強化されます。 この統合の詳細については、「[依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)」を参照してください。 Azure Migrate サービスを使用する場合、Service Map を構成してその利点を得るために追加の手順は必要ありません。 以下の説明は、Service Map を他の目的またはプロジェクトに使用したい場合の参考用に提供されています。
+Azure Migrate では、Service Map を使用して、環境全体でレポート機能と依存関係が強化されます。 この統合の詳細については、「[依存関係の視覚化](/azure/migrate/concepts-dependency-visualization)」を参照してください。 Azure Migrate サービスを使用する場合、Service Map を構成してその利点を得るために追加の手順は必要ありません。 以下の説明は、Service Map を他の目的またはプロジェクトに使用したい場合の参考用に提供されています。
 
 #### <a name="enable-dependency-visualization-using-service-map"></a>Service Map を使用して依存関係の視覚化を有効にする
 
 依存関係の視覚化を使用するには、分析するオンプレミスの各マシンにエージェントをダウンロードしてインストールします。
 
-- 各コンピューターに [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) をインストールする必要があります。
-- 各コンピューターに [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) をインストールする必要があります。
+- 各コンピューターに [Microsoft Monitoring Agent](/azure/log-analytics/log-analytics-agent-windows) をインストールする必要があります。
+- 各コンピューターに [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) をインストールする必要があります。
 - インターネットに接続されていないマシンがある場合、それらのマシンに Log Analytics ゲートウェイをダウンロードしてインストールする必要もあります。
 
 <!-- markdownlint-disable MD024 -->
 
 #### <a name="learn-more"></a>詳細情報
 
-- [Azure での Service Map ソリューションの使用](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
-- [Azure Migrate と Service Map: 依存関係の視覚化](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
+- [Azure での Service Map ソリューションの使用](/azure/azure-monitor/insights/service-map)
+- [Azure Migrate と Service Map: 依存関係の視覚化](/azure/migrate/concepts-dependency-visualization)
 
 ## <a name="challenge-assumptions"></a>[前提条件を吟味する](#tab/Challenge-Assumptions)
 
@@ -102,7 +102,7 @@ Azure Migrate では、Service Map を使用して、環境全体でレポート
 
 [増分型の合理化](../../digital-estate/rationalize.md#incremental-rationalization)を正しく実現するには、均等に重み付けされた 2 つの手順が必要です。 どちらの手順でも、データおよび環境の分析情報が必要です。 ただし、どちらのアプローチでも、移行作業を成功させるために必要な時間と詳細の粒度が尊重されます。
 
-- [10 のパワーのリリース計画](../../digital-estate/rationalize.md#release-planning):最初の合理化とリリース計画では、[合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md) のうち 1 つだけが評価で使用されます。 [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)で定義されている全体的な動機に最適な合理化オプションに基づいて、見積もりと計画を行います。
+- [10 のパワーのリリース計画](../../digital-estate/rationalize.md#release-planning):最初の合理化とリリース計画では、[合理化の 5 R](../../digital-estate/5-rs-of-rationalization.md) のうち 1 つだけが評価で使用されます。 [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)で定義されている全体的な動機に最適な合理化オプションに基づいて、見積もりと計画を行います。
 
 - **各ワークロードの詳細な評価:** 10 のパワーのリリース計画に関連する前提条件は、計画を策定するには十分受け入れ可能です。 ただし、移行前に評価されていない場合は、これらの同じ前提条件によって重大な問題が発生する可能性があります。
 

@@ -8,28 +8,28 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 550dd724ae6a8eedd34b5a8ffc2146425500bc59
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: ed31972eef3f0f4311ac8c4c112f4d287ae060c9
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400604"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573668"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>クラウド ガバナンスの 5 つの規範
 
 <!-- docsTest:ignore "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 <!-- markdownlint-disable MD033 -->
 
-| | |
-|---|---|
+|  |  |
+|--|--|
 | ビジネス プロセスまたは技術プラットフォームの変更にはリスクが伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、リスクを軽減し、導入やイノベーションの作業をできるだけ中断させないようにすることです。 <br><br> これらの意思決定の指針には、選択されているクラウド プラットフォームに関係なく、[企業ポリシーの策定](./corporate-policy.md)と[クラウド ガバナンスの 5 つの規範](#disciplines-of-cloud-governance)に重点が置かれた、クラウド導入フレームワーク ガバナンス モデルが使用されます。 [アクションにつながる設計ガイド](./guides/index.md)は、Azure サービスを使用してこのモデルを実証します。 以下では、クラウド導入フレームワーク ガバナンス モデルの規範について説明します。 | <br><br> [![クラウド導入フレームワーク ガバナンス モデルの図: 企業のポリシーとガバナンスの規範](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> "_図 1:企業ポリシーとクラウド ガバナンスの 5 つの規範。_ |
 
 ## <a name="disciplines-of-cloud-governance"></a>クラウド ガバナンスの規範
 
 どのようなクラウド プラットフォームにも、ポリシーを周知したりツールチェーンを調整したりするのに役立つ共通のガバナンス規範があります。 これらの規範は、クラウド プラットフォームの枠を超えた企業ポリシーの自動化と実施の適切なレベルに関する意思決定の指針です。
 
-| | |
-|---|---|
+|  |  |
+|--|--|
 | <br> ![Cost Management](../_images/govern/cost-management.png) | <br> [コスト管理](./cost-management/index.md):コストはクラウド ユーザーの最大の関心事です。 すべてのクラウド プラットフォームに対応した、コスト管理のためのポリシーを策定します。 |
 | <br> ![セキュリティ ベースライン](../_images/govern/security-baseline.png) | <br> [セキュリティ ベースライン](./security-baseline/index.md):セキュリティは複雑なテーマであり、会社ごとに独特です。 セキュリティ要件が確立されると、クラウド ガバナンスのポリシーと実施により、それらの要件がネットワーク、データ、資産の構成全体に適用されます。|
 | <br> ![ID ベースライン](../_images/govern/identity-baseline.png) | <br> [ID ベースライン](./identity-baseline/index.md):ID 要件の適用が一貫性を欠いた場合、侵害のリスクが高まるおそれがあります。 ID ベースラインの規範では、クラウド導入作業全体で ID が一貫して適用されることを保証することに焦点が当てられています。 |

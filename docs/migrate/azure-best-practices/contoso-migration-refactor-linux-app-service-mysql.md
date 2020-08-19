@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e22a33e3de09c3e1dfb9f4adc8bfed023ea1b821
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 5f8b0d2a1f834b82adf47ef7f965315caf8ae1b8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473133"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567769"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -88,8 +88,8 @@ Contoso は、次のようにして移行プロセスを完了します。
 | --- | --- | --- |
 | [Azure App Service](https://azure.microsoft.com/services/app-service) | このサービスでは、Web サイト向けの Azure PaaS (サービスとしてのプラットフォーム) サービスを使用してアプリケーションを実行およびスケーリングします。 | 価格は、インスタンスのサイズと必要な機能に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
 | [Azure の Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | ドメイン ネーム システム (DNS) を使用して、Azure、外部 Web サイト、またはサービスにユーザーを振り分けるロード バランサー。 | 価格は、受信した DNS クエリの数と監視対象のエンドポイントの数に基づきます。 | [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/traffic-manager)。 |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
-| [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | このデータベースは、オープン ソースの MySQL データベース エンジンに基づいています。 これは、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースであり、アプリケーションの開発とデプロイに使用できます。 | 価格は、コンピューティング、ストレージ、バックアップ要件に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/mysql)。 |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
+| [Azure Database for MySQL](/azure/mysql) | このデータベースは、オープン ソースの MySQL データベース エンジンに基づいています。 これは、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースであり、アプリケーションの開発とデプロイに使用できます。 | 価格は、コンピューティング、ストレージ、バックアップ要件に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/mysql)。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -136,8 +136,8 @@ Contoso 管理者は、Azure App Service を使用して 2 つの Web アプリ�
 
 **さらにサポートが必要な場合**
 
-- [Azure App Service Web アプリ](https://docs.microsoft.com/azure/app-service/overview)に関する記事を参照します。
-- 「[Azure App Service on Linux の概要](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro)」を参照します。
+- [Azure App Service Web アプリ](/azure/app-service/overview)に関する記事を参照します。
+- 「[Azure App Service on Linux の概要](/azure/app-service/containers/app-service-linux-intro)」を参照します。
 
 ## <a name="step-2-set-up-traffic-manager"></a>手順 2:Traffic Manager を設定する
 
@@ -157,8 +157,8 @@ Contoso 管理者は、インバウンド Web 要求を osTicket Web 層で実�
 
 **さらにサポートが必要な場合**
 
-- 「[Traffic Manager の概要](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)」を参照します。
-- [優先順位の高いエンドポイントへのトラフィックのルーティング](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-configure-priority-routing-method)に関する記事を参照します。
+- 「[Traffic Manager の概要](/azure/traffic-manager/traffic-manager-overview)」を参照します。
+- [優先順位の高いエンドポイントへのトラフィックのルーティング](/azure/traffic-manager/traffic-manager-configure-priority-routing-method)に関する記事を参照します。
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>手順 3:Azure Database for MySQL をプロビジョニングする
 
@@ -192,7 +192,7 @@ MySQL データベースは、次の方法で移動できます。 それぞれ�
 
 ### <a name="step-4a-migrate-the-database-via-azure-database-migration-service"></a>手順 4a: Azure Database Migration Service を使用してデータベースを移行する
 
-Contoso の管理者は、[ステップバイステップの移行チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)に従って、Azure Database Migration Service を使用してデータベースを移行します。 MySQL 5.6 または 5.7 を使用して、オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
+Contoso の管理者は、[ステップバイステップの移行チュートリアル](/azure/dms/tutorial-mysql-azure-mysql-online)に従って、Azure Database Migration Service を使用してデータベースを移行します。 MySQL 5.6 または 5.7 を使用して、オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
 
 > [!NOTE]
 > MySQL 8.0 は Azure Database for MySQL でサポートされていますが、Database Migration Service ツールではこのバージョンはまだサポートされていません。
@@ -202,9 +202,9 @@ Contoso が行う作業の概要は次のとおりです。
 - 移行の前提条件がすべて満たされていることを確認します。
   - MySQL データベース サーバー ソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL では、MySQL Community Edition および InnoDB ストレージ エンジンがサポートされていると共に、同じバージョンのソースとターゲット間の移行がサポートされています。  
   - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 これを行わないと、移行ウィザードで次のエラーが発生します。  
-      
+
     "バイナリ ログにエラーがあります。 変数 binlog_row_image の値が "minimal" です。 その値を "full" に変更してください。 詳細については、`https://go.microsoft.com/fwlink/?linkid=873009` をご覧ください。"
-    
+
   - ユーザーは `ReplicationAdmin` ロールを持っている必要があります。  
   - 外部キーとトリガーを使用せずにデータベース スキーマを移行します。  
 - ExpressRoute または仮想プライベート ネットワーク (VPN) を介してオンプレミス ネットワークに接続する VPN を作成します。  
@@ -347,7 +347,7 @@ Contoso 管理者は、新しいプライベート GitHub リポジトリを作�
     ![[デプロイ オプション] ペインのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app4.png)
 
 5. セカンダリ Web アプリ (osticket-cus) に対して、上記のステップを繰り返します。
-6. サイトが構成されたら、Traffic Manager プロファイルを使用してアクセスできます。 DNS 名は、osTicket アプリケーションの新しい場所になります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)。
+6. サイトが構成されたら、Traffic Manager プロファイルを使用してアクセスできます。 DNS 名は、osTicket アプリケーションの新しい場所になります。 [詳細については、こちらを参照してください](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)。
 
     ![DNS 名を表示する [Traffic Manager プロファイル] ペインのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
@@ -390,14 +390,14 @@ Contoso 管理者は、新しいプライベート GitHub リポジトリを作�
 
 ### <a name="security"></a>セキュリティ
 
-Contoso のセキュリティ チームは、アプリケーションの確認を行い、セキュリティの問題を特定します。 osTicket アプリケーションと MySQL データベース インスタンスの間の通信が SSL 用に構成されていないことを認識します。 データベース トラフィックをハッキングできないようにするのがその目的です。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/mysql/howto-configure-ssl)。
+Contoso のセキュリティ チームは、アプリケーションの確認を行い、セキュリティの問題を特定します。 osTicket アプリケーションと MySQL データベース インスタンスの間の通信が SSL 用に構成されていないことを認識します。 データベース トラフィックをハッキングできないようにするのがその目的です。 [詳細については、こちらを参照してください](/azure/mysql/howto-configure-ssl)。
 
 ### <a name="backups"></a>バックアップ
 
 - OsTicket web アプリには状態データが含まれていないため、バックアップは必要ありません。
-- Contoso チームは、データベースのバックアップを構成する必要はありません。 Azure Database for MySQL は、サーバーのバックアップを自動的に作成して保存します。 チームはデータベースのために geo 冗長性を使用することを選択したため、これは耐障害性があり、運用準備ができています。 バックアップを使用すると、サーバーを特定の時点に復元できます。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/mysql/concepts-backup)。
+- Contoso チームは、データベースのバックアップを構成する必要はありません。 Azure Database for MySQL は、サーバーのバックアップを自動的に作成して保存します。 チームはデータベースのために geo 冗長性を使用することを選択したため、これは耐障害性があり、運用準備ができています。 バックアップを使用すると、サーバーを特定の時点に復元できます。 [詳細については、こちらを参照してください](/azure/mysql/concepts-backup)。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - PaaS のデプロイにライセンスの問題はありません。
-- Contoso は [Azure Cost Management と Billing](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
+- Contoso は [Azure Cost Management と Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。

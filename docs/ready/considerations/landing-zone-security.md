@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f2c90b709495196a1d81459c6a09dc887efc7d62
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 4c3def16dacdcc24459547e5acfe4f4d81cc73a5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479587"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88566868"
 ---
 <!-- cSpell:ignore SIEM -->
 
@@ -24,13 +24,13 @@ ms.locfileid: "86479587"
 
 次の参照アーキテクチャとベスト プラクティスの一覧は、ランディングのセキュリティを向上させる方法の例を示しています。
 
-- [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-get-started?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json):Security Center にサブスクリプションをオンボードします。
-- [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-onboard?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json):Azure Sentinel をオンボードすると、**セキュリティ情報イベント管理 (SIEM)** および**セキュリティ オーケストレーション自動応答 (SOAR)** ソリューションが提供されます。
+- [Azure Security Center](/azure/security-center/security-center-get-started?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):Security Center にサブスクリプションをオンボードします。
+- [Azure Sentinel](/azure/sentinel/quickstart-onboard?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):Azure Sentinel をオンボードすると、**セキュリティ情報イベント管理 (SIEM)** および**セキュリティ オーケストレーション自動応答 (SOAR)** ソリューションが提供されます。
 - [ネットワーク境界のセキュリティ](../../reference/networking-vdc.md):ネットワーク境界をデータセンターで保護する方法に似た、ネットワークを開発するためのいくつかの参照パターン。
-- [セキュリティ保護されたネットワーク アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json):境界ネットワークとセキュリティで保護されたネットワーク アーキテクチャを実装するための参照アーキテクチャ。
-- [ID 管理とアクセス制御](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json):ID とアクセスを実装して Azure のランディング ゾーンをセキュリティで保護するための一連のベスト プラクティス。
-- [ネットワーク セキュリティのプラクティス](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json):ネットワークをセキュリティで保護するための追加のベスト プラクティスについて説明しています。
-- [運用可能なセキュリティ](https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)では、Azure で運用可能なセキュリティを強化するためのベスト プラクティスについて説明しています。
+- [セキュリティ保護されたネットワーク アーキテクチャ](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):境界ネットワークとセキュリティで保護されたネットワーク アーキテクチャを実装するための参照アーキテクチャ。
+- [ID 管理とアクセス制御](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):ID とアクセスを実装して Azure のランディング ゾーンをセキュリティで保護するための一連のベスト プラクティス。
+- [ネットワーク セキュリティのプラクティス](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):ネットワークをセキュリティで保護するための追加のベスト プラクティスについて説明しています。
+- [運用可能なセキュリティ](/azure/security/fundamentals/operational-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)では、Azure で運用可能なセキュリティを強化するためのベスト プラクティスについて説明しています。
 - [セキュリティ ベースライン規範](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-the-best-practices):セキュリティ要件を適用するためのガバナンス主導のセキュリティ ベースラインを作成する例。
 
 ## <a name="test-driven-development-cycle"></a>テスト駆動開発サイクル

@@ -7,18 +7,18 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bf67daa8466618aa79669811e62881a5c8b5a3c
-ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
+ms.openlocfilehash: d907e2234338fa2f00776c2d9df7a58e78986393
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88075813"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193985"
 ---
 <!-- cSpell:ignore Netezza Teradata Exadata Giga GigaOM MPP -->
 
 # <a name="azure-synapse-analytics-solutions"></a>Azure Synapse Analytics ソリューション
 
-現在の市場オファリングでは、増大する組織のニーズに対応できません。 Teradata、Netezza、Oracle Exadata などのレガシ オンプレミス環境は、コストが高く、イノベーションに時間がかかり、柔軟性がありません。 オンプレミス システムを使用している組織は、Azure のようなより新しい環境で革新的なクラウド、サービスとしてのインフラストラクチャ、サービスとしてのプラットフォームを利用することを検討しています。 
+現在の市場オファリングでは、増大する組織のニーズに対応できません。 Teradata、Netezza、Oracle Exadata などのレガシ オンプレミス環境は、コストが高く、イノベーションに時間がかかり、柔軟性がありません。 オンプレミス システムを使用している組織は、Azure のようなより新しい環境で革新的なクラウド、サービスとしてのインフラストラクチャ、サービスとしてのプラットフォームを利用することを検討しています。
 
 多くの組織は、インフラストラクチャのメンテナンスやプラットフォームの開発といった、コストのかかるタスクをクラウド プロバイダーに移行するための手順を実行する準備ができています。 Microsoft Azure では、組織は、サポート ツールと機能のエコシステムに Azure Synapse Analytics が組み込まれている、グローバルに使用できる、高度なセキュリティで保護されたスケーラブルなクラウド環境にアクセスできます。
 

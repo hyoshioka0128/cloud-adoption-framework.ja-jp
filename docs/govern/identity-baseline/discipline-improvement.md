@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1e991a83c79be3e829bce618a50243b74c2c90f
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 433c806c241b95600fcb840353c9c14e4d1aa8e1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400716"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573447"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -27,7 +27,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 
 "_図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。_
 
-1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、段階的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、ID ベースライン規範を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
+1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、漸進的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、ID ベースライン規範を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
 
 > [!CAUTION]
 > この記事で概要を説明する最小限のアクティビティと潜在的なアクティビティのどちらも、特定の企業ポリシーやサードパーティのコンプライアンス要件には整合していません。 このガイダンスは、両方の要件とクラウド ガバナンス モデルの整合に導く会話の促進に役立つように設計されています。
@@ -72,9 +72,9 @@ ID ベースライン規範では、アプリケーションまたはワーク�
   - フェデレーションの場合は、管理者アカウントに対するテナント制限を有効にします。
 - オンプレミス ディレクトリとクラウド ディレクトリを統合します。
 - 次のアクセス モデルの使用を検討します。
-  - [最小特権管理](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)アクセス モデル。
-  - [Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) アクセス モデル。
-- 統合前の詳細をすべて最終決定し、[ID 管理とアクセス制御セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)をレビューします。
+  - [最小特権管理](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)アクセス モデル。
+  - [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) アクセス モデル。
+- 統合前の詳細をすべて最終決定し、[ID 管理とアクセス制御セキュリティのベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)をレビューします。
   - 単一 ID のシングル サインオン (SSO) を有効にする (これはシームレス SSO とも呼ばれます)。
   - 管理者に対する多要素認証を構成する。
   - 必要な場合は、ID プロバイダーを整理または統合する。
@@ -103,7 +103,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - シングル サインオン (SSO) とシームレス SSO がアプリケーションで期待どおりに機能していることを検証します。
 - 代替 ID ストアの数を減らすか、削除します。
 - アプリ内またはデータベース内 ID ストアの必要性を綿密に検査します。 適切な ID プロバイダー (ファーストパーティまたはサードパーティ) から外れた ID は、アプリケーションやユーザーにとってリスクになる場合があります。
-- [オンプレミスのフェデレーション アプリケーション](https://docs.microsoft.com/azure/active-directory/devices/overview)への条件付きアクセスを有効にします。
+- [オンプレミスのフェデレーション アプリケーション](/azure/active-directory/devices/overview)への条件付きアクセスを有効にします。
 - ID を複数のハブ内のグローバル リージョンにわたって分散させ、リージョン間の同期を維持します。
 - 中央のロールベースのアクセス制御 (RBAC) フェデレーションを確立します。
 
@@ -134,7 +134,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - 開発セキュリティ運用 (DevSecOps) アプローチの実装を検討します。
 - 影響分析を実施して、コスト、セキュリティ、およびユーザー導入に関する結果を測定します。
 - システムによって作成されるメトリックの変化を示す影響レポートを定期的に生成し、[ハイブリッド ID 戦略](../../decision-guides/identity/index.md)のビジネスへの影響を推定します。
-- [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) によって推奨されている統合された監視を確立します。
+- [Azure Security Center](/azure/security-center/security-center-intro) によって推奨されている統合された監視を確立します。
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d7cd6222ec973177b1b7f2edeb2df451b17348a7
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 340e779abb1864a5644a96c9d1a4611b3a40415b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193594"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571985"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 
@@ -22,7 +22,7 @@ Azure サーバー管理サービスのデプロイの効率を向上させる�
 
 サンプル ファイルでは、Azure PowerShell コマンドレットを使用して次のタスクを自動化する方法が示されています。
 
-- [Log Analytics ワークスペース](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access)を作成します。 (または、要件を満たしている場合は既存のワークスペースを使用します。 詳細については、[ワークスペースの計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)に関するページを参照してください。
+- [Log Analytics ワークスペース](/azure/azure-monitor/platform/manage-access)を作成します。 (または、要件を満たしている場合は既存のワークスペースを使用します。 詳細については、[ワークスペースの計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)に関するページを参照してください。
 
 - Automation アカウントを作成するか、要件を満たしている既存のアカウントを使用します。 詳細については、「[ワークスペースの計画](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)」を参照してください。
 

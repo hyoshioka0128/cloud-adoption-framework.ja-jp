@@ -7,12 +7,12 @@ ms.date: 05/22/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c22cf44e9f03d900d6d8474a5c71cb2bdb0e8242
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 82bc64cace037fad5dd259e903d9e3a9a0e06e18
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040968"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196730"
 ---
 # <a name="data-democratization"></a>データの民主化
 
@@ -41,4 +41,3 @@ Azure Synapse Analytics は、シームレスなコラボレーションと分�
 業務を効率的に実行するには、前に説明したさまざまなスキルとロールに対するすべての種類のデータが必要です。 データ サイエンティストが機械学習モデルを構築するためのクレンジングされた生データが必要です。 データ ウェアハウスには、ビジネス アプリケーションとダッシュボードに信頼性の高いパフォーマンスを提供するためのクリーンで構造化されたデータが必要です。 最も重要なのは、生データからの分析情報の獲得を数日ではなく数分で実現できる必要があることです。
 
 Azure Synapse Analytics には、Power BI を備えたネイティブの組み込みビジネス インテリジェンス ツールがあります。 これにより、1 つのインターフェイス内で 1 つのサービスを使用することによって、生データから数分で分析情報を提供するダッシュボードにアクセスできるようになります。
-

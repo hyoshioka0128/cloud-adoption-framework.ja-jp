@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 0aa03d15992df64e43663c38d2199a8f38103bb7
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 3e550dafc582742a9cd0c4c83f0fbc416242bc8b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473099"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567395"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -58,7 +58,7 @@ Contoso は、その目標と要件を設定した後、デプロイ ソリュ�
 
 ### <a name="proposed-solution"></a>提案されるソリューション
 
-- このアプリケーションのデータベース層について、Contoso は「[機能の比較: Azure SQL Database と Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-features)」を参照して、Azure SQL Database と SQL Server を比較しました。 そして、いくつかの理由で Azure SQL Database を使用することにしました。
+- このアプリケーションのデータベース層について、Contoso は「[機能の比較: Azure SQL Database と Azure SQL Managed Instance](/azure/sql-database/sql-database-features)」を参照して、Azure SQL Database と SQL Server を比較しました。 そして、いくつかの理由で Azure SQL Database を使用することにしました。
   - Azure SQL Database は、マネージド リレーショナル データベース サービスです。 複数のサービス レベルで予測可能なパフォーマンスを実現します。管理作業はほぼゼロです。 利点としては、ダウンタイムのない動的スケーラビリティ、組み込みのインテリジェントな最適化、グローバルなスケーラビリティと可用性などがあります。
   - Contoso では軽量な Data Migration Assistant を利用して、Azure SQL へのオンプレミス データベースの移行を評価することができます。
   - Contoso では Azure Database Migration Service を利用して、Azure SQL にオンプレミス データベースを移行できます。
@@ -91,11 +91,11 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は SQL のソースとターゲット間で機能パリティを評価し、パフォーマンスと信頼性の向上箇所を推奨します。 | このツールは無料でダウンロードできます。 |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
-| [Azure SQL Database](https://docs.microsoft.com/azure/azure-sql/database/sql-database-paas-overview) | インテリジェントなフル マネージド リレーショナル クラウド データベース サービス。 | コストは、機能、スループット、サイズに基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
-| [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | フル マネージド プラットフォームを使用した強力なクラウド アプリケーションを作成できます。 | 価格は、サイズ、場所、使用時間に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
-| [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | 継続的インテグレーションと継続的配置 (CI/CD) パイプラインをアプリケーション開発に提供します。 パイプラインは、アプリケーション コードを管理するための Git リポジトリ、パッケージやその他のビルド成果物を生成するためのビルド システム、開発、テスト、および運用環境で変更をデプロイするためのリリース管理システムから始まります。 |
+| [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は SQL のソースとターゲット間で機能パリティを評価し、パフォーマンスと信頼性の向上箇所を推奨します。 | このツールは無料でダウンロードできます。 |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
+| [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview) | インテリジェントなフル マネージド リレーショナル クラウド データベース サービス。 | コストは、機能、スループット、サイズに基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
+| [Azure App Service](/azure/app-service/overview) | フル マネージド プラットフォームを使用した強力なクラウド アプリケーションを作成できます。 | 価格は、サイズ、場所、使用時間に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
+| [Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | 継続的インテグレーションと継続的配置 (CI/CD) パイプラインをアプリケーション開発に提供します。 パイプラインは、アプリケーション コードを管理するための Git リポジトリ、パッケージやその他のビルド成果物を生成するためのビルド システム、開発、テスト、および運用環境で変更をデプロイするためのリリース管理システムから始まります。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -148,12 +148,12 @@ Contoso が移行を実行する方法を次に示します。
 
 **さらにサポートが必要な場合**
 
-- SQL Database のプロビジョニングの[手順を参照](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)します。
-- [仮想コア リソースの制限](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)に関する説明を参照します。
+- SQL Database のプロビジョニングの[手順を参照](/azure/sql-database/sql-database-get-started-portal)します。
+- [仮想コア リソースの制限](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)に関する説明を参照します。
 
 ## <a name="step-2-assess-the-database"></a>手順 2:データベースを評価する
 
-Contoso の管理者は、Data Migration Assistant を使用してデータベースを評価した後、[ステップバイステップの移行チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)を参照し、Azure Database Migration Service を使用してそれを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
+Contoso の管理者は、Data Migration Assistant を使用してデータベースを評価した後、[ステップバイステップの移行チュートリアル](/azure/dms/tutorial-sql-server-azure-sql-online)を参照し、Azure Database Migration Service を使用してそれを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
 
 管理者が行う作業の概要は次のとおりです。
 
@@ -343,21 +343,21 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
 ### <a name="security"></a>セキュリティ
 
-- Contoso は新しい `SmartHotel-Registration` データベースのセキュリティ保護に努めます。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso は新しい `SmartHotel-Registration` データベースのセキュリティ保護に努めます。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-security-overview)。
 - 特に、Contoso は証明書で SSL を使用するように Web アプリを更新します。
 
 ### <a name="backups"></a>バックアップ
 
-- Contoso チームは、Azure SQL Database のバックアップ要件を確認します。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
-- また、SQL Database のバックアップと復元の管理について確認します。 自動バックアップについては、[こちら](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)をご覧ください。
-- データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループの実装を検討します。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso チームは、Azure SQL Database のバックアップ要件を確認します。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-automated-backups)。
+- また、SQL Database のバックアップと復元の管理について確認します。 自動バックアップについては、[こちら](/azure/sql-database/sql-database-automated-backups)をご覧ください。
+- データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループの実装を検討します。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-geo-replication-overview)。
 - 回復性を高めるために、メイン リージョン (`East US 2`) とセカンダリ リージョン (`Central US`) に Web アプリをデプロイすることを検討します。 チームはリージョンの障害が発生しても確実にフェールオーバーされるように Traffic Manager を構成することができます。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - すべてのリソースをデプロイした後、Contoso は[インフラストラクチャ計画](./contoso-migration-infrastructure.md#set-up-tagging)に基づいて Azure タグを割り当てます。
 - すべてのライセンスは、Contoso が使用している PaaS サービスのコストに組み込まれています。 このコストは Enterprise Agreement から差し引かれます。
-- Contoso は [Azure Cost Management と Billing](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
+- Contoso は [Azure Cost Management と Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
 
 ## <a name="conclusion"></a>まとめ
 

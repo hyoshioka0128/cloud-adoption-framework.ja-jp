@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: a3ac7a38018f7ca44115fb1d46396e16961dfe3e
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 4cc1aeed8df6c546722ac70977e08f6619f41f21
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478431"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570744"
 ---
 <!-- TODO: Verify GraphDBMS term -->
 <!-- cSpell:ignore ColumnStore GraphDBMS mysqldump Navicat phpMyAdmin -->
@@ -23,7 +23,8 @@ ms.locfileid: "86478431"
 この記事では、Contoso という架空の会社が、オンプレミスの MariaDB オープンソース データベース プラットフォームの Azure への移行をどのように計画し、実行したかについて説明します。
 
 Contoso では、次の理由により、MySQL ではなく MariaDB が使用されています。
-- 多数のストレージ エンジン。 
+
+- 多数のストレージ エンジン。
 - キャッシュとインデックスのパフォーマンス。
 - 機能と拡張機能によるオープンソースのサポート。
 - 分析用の ColumnStore のサポート。
@@ -71,13 +72,13 @@ MariaDB データベースでは、会社の HR 部門のあらゆる側面に�
 
 ソリューション設計プロセスの一環として、Contoso は MariaDB データベースをホストするための Azure の機能を確認しました。 Azure の使用を決定する際に、次の考慮事項が役立ちました。
 
-- Azure SQL Database と同様に、Azure Database for MariaDB では[ファイアウォール規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules)を使用できます。
-- インスタンスにパブリックにアクセスできないように、Azure Database for MariaDB を [Azure Virtual Network](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-vnet) で使用できます。
+- Azure SQL Database と同様に、Azure Database for MariaDB では[ファイアウォール規則](/azure/mariadb/concepts-firewall-rules)を使用できます。
+- インスタンスにパブリックにアクセスできないように、Azure Database for MariaDB を [Azure Virtual Network](/azure/mariadb/concepts-data-access-security-vnet) で使用できます。
 - Azure Database for MariaDB には、Contoso が監査担当者のために満たす必要がある、必須のコンプライアンス認定とプライバシー認定があります。
 - 読み取りレプリカを使用すると、レポートおよびアプリケーション処理のパフォーマンスが向上します。
-- [Azure Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) を使用して、サービスを内部ネットワーク トラフィックだけに公開できます (パブリック アクセスなし)。
+- [Azure Private Link](/azure/mariadb/concepts-data-access-security-private-link) を使用して、サービスを内部ネットワーク トラフィックだけに公開できます (パブリック アクセスなし)。
 - Contoso では、将来、MariaDB ColumnStore および GraphDBMS データベース モデルを使用する可能性を検討しているため、Azure Database for MySQL に移行しないことを選択しました。
-- 選択されたゲートウェイ (Azure ExpressRoute またはサイト間 VPN) に基づいて、アプリケーションからデータベースへの[帯域幅と待機時間](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)が十分に確保されます。
+- 選択されたゲートウェイ (Azure ExpressRoute またはサイト間 VPN) に基づいて、アプリケーションからデータベースへの[帯域幅と待機時間](/azure/vpn-gateway/vpn-gateway-about-vpngateways)が十分に確保されます。
 
 ### <a name="solution-review"></a>ソリューションのレビュー
 
@@ -85,8 +86,8 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 | 考慮事項 | 詳細 |
 | --- | --- |
-| **長所** | Azure Database for MariaDB は、金銭的な補償を伴う 99.99% のサービス レベル アグリーメント (SLA) で[高可用性](https://docs.microsoft.com/azure/mariadb/concepts-high-availability)を提供します。 <br><br> Azure では、四半期ごとの負荷のピーク時にスケールアップまたはスケールダウンする機能が提供されます。 Contoso は、[予約容量](https://docs.microsoft.com/azure/mariadb/concept-reserved-pricing)を購入することでさらに節約できます。 <br><br> Azure では、Azure Database for MariaDB のポイントインタイム リストア機能と geo リストア機能が提供されます。 <br><br> |
-| **短所** | Azure でサポートされている MariaDB リリース バージョン (現在、10.2 および 10.3) に限定されます。 <br><br> Azure Database for MariaDB には、ストレージのスケールダウンなどの[制限事項](https://docs.microsoft.com/azure/mariadb/concepts-limits)があります。 |
+| **長所** | Azure Database for MariaDB は、金銭的な補償を伴う 99.99% のサービス レベル アグリーメント (SLA) で[高可用性](/azure/mariadb/concepts-high-availability)を提供します。 <br><br> Azure では、四半期ごとの負荷のピーク時にスケールアップまたはスケールダウンする機能が提供されます。 Contoso は、[予約容量](/azure/mariadb/concept-reserved-pricing)を購入することでさらに節約できます。 <br><br> Azure では、Azure Database for MariaDB のポイントインタイム リストア機能と geo リストア機能が提供されます。 <br><br> |
+| **短所** | Azure でサポートされている MariaDB リリース バージョン (現在、10.2 および 10.3) に限定されます。 <br><br> Azure Database for MariaDB には、ストレージのスケールダウンなどの[制限事項](/azure/mariadb/concepts-limits)があります。 |
 
 ## <a name="proposed-architecture"></a>提案されたアーキテクチャ
 
@@ -184,12 +185,12 @@ Contoso は、移行が正常に完了したことを確認したら、保持の
 
 Contoso は次のことを行う必要があります。
 
-- 新しい Azure Database for MariaDB インスタンスとデータベースを確実にセキュリティで保護します。 詳細については、「[Azure Database for MariaDB のセキュリティ](https://docs.microsoft.com/azure/mariadb/concepts-security)」をご覧ください。
-- [ファイアウォール規則](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules)と仮想ネットワーク構成を確認して、接続を必要とするアプリケーションのみに接続が制限されていることを確認します。
-- MariaDB [ゲートウェイ IP アドレス](https://docs.microsoft.com/azure/mariadb/concepts-connectivity-architecture)への接続を許可するように、送信 IP 要件を構成します。
-- データベースへの [SSL 接続を要求する](https://docs.microsoft.com/azure/mariadb/concepts-ssl-connection-security)ように、すべてのアプリケーションを更新します。
-- [Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
-- [Azure Advanced Threat Protection (ATP)](https://docs.microsoft.com/azure/mariadb/concepts-data-access-and-security-threat-protection) を有効にします。
+- 新しい Azure Database for MariaDB インスタンスとデータベースを確実にセキュリティで保護します。 詳細については、「[Azure Database for MariaDB のセキュリティ](/azure/mariadb/concepts-security)」をご覧ください。
+- [ファイアウォール規則](/azure/mariadb/concepts-firewall-rules)と仮想ネットワーク構成を確認して、接続を必要とするアプリケーションのみに接続が制限されていることを確認します。
+- MariaDB [ゲートウェイ IP アドレス](/azure/mariadb/concepts-connectivity-architecture)への接続を許可するように、送信 IP 要件を構成します。
+- データベースへの [SSL 接続を要求する](/azure/mariadb/concepts-ssl-connection-security)ように、すべてのアプリケーションを更新します。
+- [Private Link](/azure/mariadb/concepts-data-access-security-private-link) を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
+- [Azure Advanced Threat Protection (ATP)](/azure/mariadb/concepts-data-access-and-security-threat-protection) を有効にします。
 - 対象のセキュリティおよびログ エントリを監視し、アラートを送信するように Log Analytics を構成します。
 
 ### <a name="backups"></a>バックアップ
@@ -197,7 +198,7 @@ Contoso は次のことを行う必要があります。
 geo リストアを使用して、Azure Database for MariaDB データベースが確実にバックアップされるようにします。 これにより、リージョン規模の障害が発生した場合は、ペアのリージョンにあるバックアップを使用できます。
 
 > [!IMPORTANT]
-> Azure Database for MariaDB リソースが削除されないように、[リソース ロック](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources)が設定されていることを確認します。 削除されたサーバーを復元することはできません。
+> Azure Database for MariaDB リソースが削除されないように、[リソース ロック](/azure/azure-resource-manager/management/lock-resources)が設定されていることを確認します。 削除されたサーバーを復元することはできません。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 

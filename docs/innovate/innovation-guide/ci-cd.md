@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a0ce99165ab62fbf40e36feaf9343f39f984485
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 6341f2e227b24416000479066e63a5ebf136927c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449042"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568075"
 ---
 # <a name="empower-adoption"></a>導入の強化
 
@@ -61,7 +61,7 @@ Azure DevOps は、すべての開発者にクラス最高のツールを提供�
 
 ::: zone target="docs"
 
-**[Azure DevOps のドキュメント](https://docs.microsoft.com/azure/devops/user-guide/?view=azure-devops)にアクセスする**
+**[Azure DevOps のドキュメント](/azure/devops/user-guide/?view=azure-devops)にアクセスする**
 
 ::: zone-end
 
@@ -101,7 +101,7 @@ DevOps プロジェクトを作成するには:
 ### <a name="learn-more"></a>詳細情報
 
 - [Azure のオープンソース](https://azure.microsoft.com/overview/choose-azure-opensource)
-- [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
+- [Microsoft Teams](/MicrosoftTeams/teams-overview)
 
 ## <a name="innovation-characteristics"></a>[イノベーションの特性](#tab/Characteristics)
 
@@ -135,8 +135,8 @@ LiveOps はデータに人間味を与えるうえでも役立ちます。 LiveO
 
 ### <a name="azure-playfab"></a>Azure PlayFab
 
-[Azure PlayFab](https://docs.microsoft.com/gaming/playfab/what-is-playfab) は、ライブ ゲーム用の完全なバックエンド プラットフォームであり、優れた LiveOps アプリケーション プラットフォームの一例です。 Azure PlayFab では、コードを継続的に監視し、リアルタイム分析を利用できます。また、リアルタイムの更新をリリースしてアプリケーションを最適化し、収益化を強化することもできます。 PlayFab の目的は、ゲーム用のインテリジェント クラウドを提供することで、開発者がプレーヤーのエンゲージメント、維持、収益化を強化できるようにすることです。
+[Azure PlayFab](/gaming/playfab/what-is-playfab) は、ライブ ゲーム用の完全なバックエンド プラットフォームであり、優れた LiveOps アプリケーション プラットフォームの一例です。 Azure PlayFab では、コードを継続的に監視し、リアルタイム分析を利用できます。また、リアルタイムの更新をリリースしてアプリケーションを最適化し、収益化を強化することもできます。 PlayFab の目的は、ゲーム用のインテリジェント クラウドを提供することで、開発者がプレーヤーのエンゲージメント、維持、収益化を強化できるようにすることです。
 
 PlayFab には、収益性を高め、ゲームの寿命を延ばす、独自のマージンの高い LiveOps ツールとサービスが用意されています。 デバイスやプラットフォームにまったく依存しない PlayFab は、Facebook や Steam などのソーシャル ID プロバイダー、商取引を調整するストア プラットフォーム、iOS、Android、Xbox、PlayStation などのデバイス プラットフォームと簡単に統合できます。 Azure のデータ資産により、PlayFab は、お客様がより良いゲームとより賢明な意思決定を行い、プレーヤーを獲得して維持し、より多くの実験と反復処理をより迅速に実行して迅速に学習できるようになるインテリジェント サービスを提供できます。
 
-**[Azure PlayFab のドキュメント](https://docs.microsoft.com/gaming/playfab)に移動する**
+**[Azure PlayFab のドキュメント](/gaming/playfab)に移動する**

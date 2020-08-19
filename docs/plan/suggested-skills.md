@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e12898f47ce75f6a42ba7f0379e197e266271588
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f9503d5d54605f2f02491747e414c19dbaa07519
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223441"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572971"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>スキル準備パスの開始
 
@@ -45,10 +45,10 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 <!-- docsTest:ignore "on premises" -->
 
-[DevOps のプラクティスを進化させる](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):DevOps とは、エンド ユーザーへの価値の継続的デリバリーを実現するために人、プロセス、製品をひとまとめにしたものです。 Azure DevOps は、そのために必要なツールを提供する一連のサービスです。 Azure DevOps を使用すると、クラウドまたはオンプレミスのどちらでも任意のアプリケーションをビルド、テスト、およびデプロイできます。
+[DevOps のプラクティスを進化させる](/learn/paths/evolve-your-devops-practices):DevOps とは、エンド ユーザーへの価値の継続的デリバリーを実現するために人、プロセス、製品をひとまとめにしたものです。 Azure DevOps は、そのために必要なツールを提供する一連のサービスです。 Azure DevOps を使用すると、クラウドまたはオンプレミスのどちらでも任意のアプリケーションをビルド、テスト、およびデプロイできます。
 
-[データ エンジニア向け Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):データの世界がどのように進化したか、クラウド テクノロジの出現によってビジネスが新しい機会をどのように検討できるようになったかを探ります。 使用できるさまざまなデータ プラットフォーム テクノロジと、データ エンジニアがこのテクノロジを組織の利益のために活用する方法を学習します。
+[データ エンジニア向け Azure](/learn/paths/azure-for-the-data-engineer):データの世界がどのように進化したか、クラウド テクノロジの出現によってビジネスが新しい機会をどのように検討できるようになったかを探ります。 使用できるさまざまなデータ プラットフォーム テクノロジと、データ エンジニアがこのテクノロジを組織の利益のために活用する方法を学習します。
 
 ## <a name="learn-more"></a>詳細情報
 
-追加のラーニング パスについては、[Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 [ロール] フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+追加のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 [ロール] フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

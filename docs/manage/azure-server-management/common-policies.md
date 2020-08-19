@@ -7,19 +7,19 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 492a1f58848c0889bc80d6e5b535019e785f5c34
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 9e4829581a642a3fab13d461c98e423a5f777f2b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785465"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567446"
 ---
 # <a name="common-azure-policy-examples"></a>Azure Policy の一般的な例
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) は、お使いのクラウド リソースにガバナンスを適用するのに役立ちます。 このサービスは、ガバナンス ポリシー要件への会社全体のコンプライアンスを確実にするためのガードレールを作成するのに役立ちます。 ポリシーを作成するには、Azure portal または PowerShell コマンドレットを使用します。 この記事では、PowerShell コマンドレットの例を紹介します。
+[Azure Policy](/azure/governance/policy/overview) は、お使いのクラウド リソースにガバナンスを適用するのに役立ちます。 このサービスは、ガバナンス ポリシー要件への会社全体のコンプライアンスを確実にするためのガードレールを作成するのに役立ちます。 ポリシーを作成するには、Azure portal または PowerShell コマンドレットを使用します。 この記事では、PowerShell コマンドレットの例を紹介します。
 
 > [!NOTE]
-> Azure Policy を使用した場合、強制ポリシー (`DeployIfNotExists`) が自動的に既存の VM にデプロイされることはありません。 VM のコンプライアンスを維持するには、修復が必要です。 詳細については、「[Azure Policy を使って準拠していないリソースを修復する](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources)」を参照してください。
+> Azure Policy を使用した場合、強制ポリシー (`DeployIfNotExists`) が自動的に既存の VM にデプロイされることはありません。 VM のコンプライアンスを維持するには、修復が必要です。 詳細については、「[Azure Policy を使って準拠していないリソースを修復する](/azure/governance/policy/how-to/remediate-resources)」を参照してください。
 
 ## <a name="common-policy-examples"></a>一般的なポリシーの例
 
@@ -36,7 +36,7 @@ Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn')
   -and ($_.Properties.displayName -like '*location*') }
 ```
 
-次のスクリプトでは、ポリシーの割り当て方法を示しています。 ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。
+次のスクリプトでは、ポリシーの割り当て方法を示しています。 ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。
 
 ```powershell
 # Specify the value for $SubscriptionID.
@@ -75,7 +75,7 @@ Azure では、さまざまなワークロードをサポートするための�
 
 ポリシーの GUID は `2835b622-407b-4114-9198-6f7064cbe0dc` です。
 
-次のスクリプトでは、ポリシーの割り当て方法を示しています。 スクリプトを使用するには、ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。
+次のスクリプトでは、ポリシーの割り当て方法を示しています。 スクリプトを使用するには、ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。
 
 ```powershell
 # Specify the value for $SubscriptionID.

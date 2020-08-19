@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d3418eeb2a2d141ac7c3b190b8706a404b1cfbc7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f405adb00918c4402e713f6b331a4c084c868ee0
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217984"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569180"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>リソースの整合性のサンプル ポリシー ステートメント
 
@@ -38,7 +38,7 @@ ms.locfileid: "83217984"
   - 環境
 - ガバナンス ツールでは、コスト、重要度、SLA、アプリケーション、環境に関連するタグ付けが検証される必要があります。 すべての値は、ガバナンス チームが管理する事前定義済みの値と整合している必要があります。
 
-**使用可能な設計オプション:** Azure では、[標準的な名前と値のメタデータ タグ](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)が、ほとんどのリソースの種類でサポートされています。 リソース作成の一部として特定のタグを適用するには、[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) を使用します。
+**使用可能な設計オプション:** Azure では、[標準的な名前と値のメタデータ タグ](/azure/azure-resource-manager/management/tag-resources)が、ほとんどのリソースの種類でサポートされています。 リソース作成の一部として特定のタグを適用するには、[Azure Policy](/azure/governance/policy/overview) を使用します。
 
 ## <a name="ungoverned-subscriptions"></a>管理されていないサブスクリプション
 
@@ -46,7 +46,7 @@ ms.locfileid: "83217984"
 
 **ポリシー ステートメント:** ミッション クリティカルなアプリケーションまたは保護対象データ向けに新しいサブスクリプションまたは管理グループを作成する場合、クラウド ガバナンス チームによるレビューを受ける必要があります。 承認された変更は、適切なブループリントの割り当てに統合されます。
 
-**使用可能な設計オプション:** 組織の [Azure 管理グループ](https://docs.microsoft.com/azure/governance/management-groups)への管理アクセスを、サブスクリプションの作成とアクセス制御プロセスを制御する承認されたガバナンス チームのメンバーのみにロックダウンします。
+**使用可能な設計オプション:** 組織の [Azure 管理グループ](/azure/governance/management-groups)への管理アクセスを、サブスクリプションの作成とアクセス制御プロセスを制御する承認されたガバナンス チームのメンバーのみにロックダウンします。
 
 ## <a name="manage-updates-to-virtual-machines"></a>仮想マシンに対する更新プログラムを管理する
 
@@ -54,7 +54,7 @@ ms.locfileid: "83217984"
 
 **ポリシー ステートメント:** ガバナンス ツールでは、すべてのデプロイ済み VM に対して自動更新が有効になるようにする必要があります。 違反は運用管理チームがレビューし、運用ポリシーに従って修復する必要があります。 自動的に更新されない資産は、IT 運用チームが担当するプロセスに含める必要があります。
 
-**使用可能な設計オプション:** Azure でホストされた VM では、[Azure Automation の Update Management ソリューション](https://docs.microsoft.com/azure/automation/automation-update-management)を使用して、一貫した更新プログラム管理を提供できます。
+**使用可能な設計オプション:** Azure でホストされた VM では、[Azure Automation の Update Management ソリューション](/azure/automation/automation-update-management)を使用して、一貫した更新プログラム管理を提供できます。
 
 ## <a name="deployment-compliance"></a>デプロイのコンプライアンス
 
@@ -65,7 +65,7 @@ ms.locfileid: "83217984"
 - デプロイされた資産の継続的なガバナンスを保証するために、デプロイ ツールはクラウド ガバナンス チームの承認を受ける必要があります。
 - デプロイ スクリプトのメンテナンスは、クラウド ガバナンス チームが定期的なレビューと監査のためにアクセスできる中央リポジトリで行われる必要があります。
 
-**使用可能な設計オプション:** [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints) を一貫して使用して自動化されたデプロイを管理すると、組織のガバナンス標準とポリシーに準拠している Azure リソースを一貫してデプロイできます。
+**使用可能な設計オプション:** [Azure Blueprints](/azure/governance/blueprints) を一貫して使用して自動化されたデプロイを管理すると、組織のガバナンス標準とポリシーに準拠している Azure リソースを一貫してデプロイできます。
 
 ## <a name="monitoring"></a>監視
 
@@ -76,7 +76,7 @@ ms.locfileid: "83217984"
 - ガバナンス ツールで、リソースの枯渇、セキュリティ、コンプライアンス、および最適化の監視にすべての資産が含まれていることを検証する必要があります。
 - ガバナンス ツールで、すべてのアプリケーションとデータに対して適切なレベルのログ データが収集されていることを検証する必要があります。
 
-**使用可能な設計オプション:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) は Azure での既定の監視サービスであり、リソースをデプロイするときに [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints) を介して一貫した監視を適用できます。
+**使用可能な設計オプション:** [Azure Monitor](/azure/azure-monitor/overview) は Azure での既定の監視サービスであり、リソースをデプロイするときに [Azure Blueprints](/azure/governance/blueprints) を介して一貫した監視を適用できます。
 
 ## <a name="disaster-recovery"></a>障害復旧
 
@@ -84,7 +84,7 @@ ms.locfileid: "83217984"
 
 **ポリシー ステートメント:** すべてのミッション クリティカルなアプリケーションおよび保護されたデータには、障害やシステム エラーのビジネスへの影響を最小限に抑えるため、バックアップと復旧のソリューションを実装する必要があります。
 
-**使用可能な設計オプション:** [Azure Site Recovery サービス](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)では事業継続とディザスター リカバリー (BCDR) のシナリオでの停止時間を最小限に抑えるバックアップ、復旧、およびレプリケーションの機能が提供されています。
+**使用可能な設計オプション:** [Azure Site Recovery サービス](/azure/site-recovery/site-recovery-overview)では事業継続とディザスター リカバリー (BCDR) のシナリオでの停止時間を最小限に抑えるバックアップ、復旧、およびレプリケーションの機能が提供されています。
 
 ## <a name="next-steps"></a>次のステップ
 

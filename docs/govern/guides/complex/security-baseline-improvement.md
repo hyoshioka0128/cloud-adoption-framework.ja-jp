@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8eab8688ee5afdc37ed4f740f4ebdc2215d4abb6
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 9d89f3a9330ed81ba6644be4d5ce3101775fbe91
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450222"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573583"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: セキュリティ ベースライン規範の改善
 
@@ -101,11 +101,11 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
 
 新しいベスト プラクティスは、コーポレート IT (ハブ) とクラウド導入 (スポーク) の 2 つのカテゴリに分類されます。
 
-**コーポレート IT ハブおよびスポーク サブスクリプションを確立してセキュリティ ベースラインを集中管理する:** このベスト プラクティスでは、[共有サービスを含むハブ スポーク トポロジ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)によって既存のガバナンス容量をラップし、クラウド ガバナンス チームの重要な役割をいくつか追加します。
+**コーポレート IT ハブおよびスポーク サブスクリプションを確立してセキュリティ ベースラインを集中管理する:** このベスト プラクティスでは、[共有サービスを含むハブ スポーク トポロジ](/azure/architecture/reference-architectures/hybrid-networking/shared-services)によって既存のガバナンス容量をラップし、クラウド ガバナンス チームの重要な役割をいくつか追加します。
 
 1. Azure DevOps リポジトリ。 Azure DevOps でリポジトリを作成し、関連するすべての Azure Resource Manager テンプレートおよびスクリプト化された構成を保存し、バージョン管理を行います
 2. ハブとスポークのテンプレート:
-    1. [共有サービスを含むハブ スポーク トポロジ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)の参照アーキテクチャのガイダンスを使用して、コーポレート IT ハブに必要な、資産用の Resource Manager テンプレートを生成できます。
+    1. [共有サービスを含むハブ スポーク トポロジ](/azure/architecture/reference-architectures/hybrid-networking/shared-services)の参照アーキテクチャのガイダンスを使用して、コーポレート IT ハブに必要な、資産用の Resource Manager テンプレートを生成できます。
     2. これらのテンプレートを使用することで、中央ガバナンス戦略の一環として、この構造を反復可能なものにすることができます。
     3. 現在の参照アーキテクチャに加えて、仮想ネットワークでファイアウォールをホストするための、ポートのブロックまたは許可リスト登録のすべての要件を取り入れたネットワーク セキュリティ グループ テンプレートを作成する必要があります。 このネットワーク セキュリティ グループは、仮想ネットワークへのパブリック トラフィックを許可する最初のネットワーク セキュリティ グループになるため、以前のグループとは異なります。
 3. Azure ポリシーを作成します。 `hub NSG enforcement` という名前のポリシーを作成して、このサブスクリプションで作成された任意の仮想ネットワークに割り当てられるネットワーク セキュリティ グループの構成を適用します。 ゲスト構成用の組み込みポリシーを次のように適用します。
@@ -130,11 +130,11 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
 ベスト プラクティスのこれまでの反復的な変更では、パブリック トラフィックをブロックし、内部トラフィックを許可リストに登録するネットワーク セキュリティ グループを定義していました。 さらに Azure ブループリントは、DMZ 機能と Active Directory 機能を一時的に作成していました。 このイテレーションでは、それらの資産を少し調整して、Azure ブループリントの新しいバージョンを作成します。
 
 1. ネットワーク ピアリング テンプレート。 このテンプレートは、各サブスクリプション内の仮想ネットワークを、コーポレート IT サブスクリプション内のハブ仮想ネットワークとピアリングします。
-    1. 前のセクションの参照アーキテクチャである[共有サービスを含むハブとスポークのトポロジ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)では、仮想ネットワークのピアリングを有効にするための Resource Manager テンプレートが生成されました。
+    1. 前のセクションの参照アーキテクチャである[共有サービスを含むハブとスポークのトポロジ](/azure/architecture/reference-architectures/hybrid-networking/shared-services)では、仮想ネットワークのピアリングを有効にするための Resource Manager テンプレートが生成されました。
     2. そのテンプレートは、以前のガバナンスのイテレーションの DMZ テンプレートを修正するためのガイドとして使用できます。
     3. ここでは、以前は VPN 経由でローカル エッジ デバイスに接続されていた DMZ 仮想ネットワークに、仮想ネットワーク ピアリングを追加しようとしています。
     4. コーポレート IT サブスクリプションおよびファイアウォール ソリューションを経由せずに、オンプレミスのデータセンターにトラフィックが直接ルーティングされることがないように、このテンプレートから VPN を削除する必要もあります。 ExpressRoute 回線の停止が発生した場合に備えて、この VPN をフェールオーバー回線として設定することもできます。
-    5. ホストされた VM に DSC を適用するため、Azure Automation によって追加の[ネットワーク構成](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning)が要求されます。
+    5. ホストされた VM に DSC を適用するため、Azure Automation によって追加の[ネットワーク構成](/azure/automation/automation-dsc-overview#network-planning)が要求されます。
 2. ネットワーク セキュリティ グループを修正します。 ネットワーク セキュリティ グループ内で、すべてのパブリック**および**直接のオンプレミス トラフィックをブロックします。 唯一の受信トラフィックが、コーポレート IT サブスクリプション内の仮想ネットワーク ピア経由で到着する必要があります。
     1. 以前のイテレーションでは、すべてのパブリック トラフィックをブロックし、すべての内部トラフィックを許可リストに登録するネットワーク セキュリティ グループを作成しました。 今度はこのネットワーク セキュリティ グループを少しシフトします。
     2. 新しいネットワーク セキュリティ グループ構成では、すべてのパブリック トラフィックと、ローカル データセンターからのすべてのトラフィックをブロックする必要があります。

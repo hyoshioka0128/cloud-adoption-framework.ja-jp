@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: f746b00773dc4a9fd3a6dc0fe38a8a0e56d94fcc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 701d4888ebe766603f1a7b33c4b77134867fb7c5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222914"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572563"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>クラウド移行の業務上の妥当性をまとめ
 
@@ -84,7 +84,7 @@ ms.locfileid: "83222914"
 - 一部のクラウド プロバイダーは、コスト差分計算ツールも提供しています。 Microsoft は、[Azure の総保有コスト (TCO) 計算ツール](https://azure.microsoft.com/pricing/tco/calculator)を提供しています。
 - より洗練されたコスト構造が対象であれば、[デジタル資産計画](../digital-estate/index.md)を実施することを検討してください。
 - 移行のコストを見積もります。
-- トレーニングの機会を設けることが予想される場合はコストを見積もります。 それらのコストを軽減するために、[Microsoft Learn](https://docs.microsoft.com/learn) が役立つ場合があります。
+- トレーニングの機会を設けることが予想される場合はコストを見積もります。 それらのコストを軽減するために、[Microsoft Learn](/learn) が役立つ場合があります。
 - 一部の企業では、既存のスタッフが費やす時間を初期コストに含める必要があります。 手引きについては、財務部門に問い合わせてください。
 - 確認のため、追加コストや負担コストがないか、財務部門に相談します。
 

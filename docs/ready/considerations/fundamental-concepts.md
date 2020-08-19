@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5c77156723fe1b5b54a775250bf368f886c4d101
-ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
+ms.openlocfilehash: e0d0019bd11bde0178f4cbcb0a99f2638edf43b2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87523985"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88566851"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎の概念
 
@@ -60,7 +60,7 @@ Azure では、サブスクリプション、ID、リソースを管理するた
 - Azure ロールベース アクセス制御 (RBAC) ロール
 - Azure Active Directory (Azure AD) 管理者ロール
 
-Azure サブスクリプションのアカウント管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントに割り当てられます。 アカウント管理者はサブスクリプションの請求先所有者です。 アカウント管理者は、Azure portal を介して[サブスクリプション管理者を管理する](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator)ことができます。
+Azure サブスクリプションのアカウント管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントに割り当てられます。 アカウント管理者はサブスクリプションの請求先所有者です。 アカウント管理者は、Azure portal を介して[サブスクリプション管理者を管理する](/azure/cost-management-billing/manage/add-change-subscription-administrator)ことができます。
 
 既定では、サブスクリプションのサービス管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントにも割り当てられます。 サービス管理者には、サブスクリプションに関して、RBAC ベースの所有者ロールと同等の権限が与えられます。 サービス管理者には、Azure portal へのフル アクセス権も与えられます。 アカウント管理者は、サービス管理者を別のメール アカウントに変更できます。
 
@@ -68,7 +68,7 @@ Azure サブスクリプションを作成するときに、それを既存の A
 
 メール アカウントは複数の Azure サブスクリプションに関連付けることができます。 アカウント管理者は、サブスクリプションを別のアカウントに譲渡できます。
 
-Azure で定義されているロールの詳細については、「[従来のサブスクリプション管理者ロール、Azure RBAC ロール、および Azure AD 管理者ロール](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles)」を参照してください。
+Azure で定義されているロールの詳細については、「[従来のサブスクリプション管理者ロール、Azure RBAC ロール、および Azure AD 管理者ロール](/azure/role-based-access-control/rbac-and-directory-admin-roles)」を参照してください。
 
 ## <a name="subscriptions-and-regions"></a>サブスクリプションとリージョン
 
@@ -85,16 +85,16 @@ Azure で定義されているロールの詳細については、「[従来の�
 
 - [Azure のしくみ](../../get-started/what-is-azure.md)
 - [Azure でのリソース アクセス管理](../../govern/resource-consistency/resource-access-management.md)
-- [Azure リソース マネージャーの概要](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
-- [Azure リソースのロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Azure Active Directory とは](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-- [Azure サブスクリプションを Azure Active Directory テナントに関連付けるまたは追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Azure AD Connect のトポロジ](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
-- [マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
+- [Azure リソース マネージャーの概要](/azure/azure-resource-manager/management/overview)
+- [Azure リソースのロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/overview)
+- [Azure Active Directory とは](/azure/active-directory/fundamentals/active-directory-whatis)
+- [Azure サブスクリプションを Azure Active Directory テナントに関連付けるまたは追加する](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Azure AD Connect のトポロジ](/azure/active-directory/hybrid/plan-connect-topologies)
+- [マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>次のステップ
 
-Azure の基本的な概念を理解したところで、[複数の Azure サブスクリプションで拡張する](../azure-best-practices/scale-subscriptions.md)方法について見ていきましょう。
+Azure の基本的な概念を理解したところで、複数の Azure サブスクリプションで拡張する方法について見ていきましょう。
 
 > [!div class="nextstepaction"]
 > [複数の Azure サブスクリプションでの拡張](../azure-best-practices/scale-subscriptions.md)

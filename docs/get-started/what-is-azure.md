@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 5cbb5e5cb68a8dd55beb13800a3d03a7d722b2fc
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 5fbe2d48bb3b4eeb71bb05fe53b72e6973d8a62d
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450375"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573770"
 ---
 <!-- cSpell:ignore PDU -->
 
@@ -37,13 +37,13 @@ Azure は、Microsoft のパブリック クラウド プラットフォーム�
 
 ファブリック コントローラーの各インスタンスは、通常は_フロント エンド_と呼ばれるクラウド オーケストレーション ソフトウェアを実行している別のサーバー セットに接続されます。 フロント エンドでは、Web サービス、RESTful API、およびクラウドが実行するすべての関数で使用される内部 Azure データベースをホストしています。
 
-たとえば、フロントエンドは、顧客の要求を処理するサービスをホストして、Azure リソース (たとえば、[仮想マシン](https://docs.microsoft.com/azure/virtual-machines)、[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) などのサービス) を割り当てます。 最初に、フロント エンドはユーザーを検証して、要求されたリソースを割り当てる権限がそのユーザーにあることを確認します。 権限がある場合、フロント エンドはデータベースを確認して十分な容量のあるサーバー ラックを検出し、そのラックのファブリック コントローラーにリソースを割り当てるよう命令します。
+たとえば、フロントエンドは、顧客の要求を処理するサービスをホストして、Azure リソース (たとえば、[仮想マシン](/azure/virtual-machines)、[Azure Cosmos DB](/azure/cosmos-db/introduction) などのサービス) を割り当てます。 最初に、フロント エンドはユーザーを検証して、要求されたリソースを割り当てる権限がそのユーザーにあることを確認します。 権限がある場合、フロント エンドはデータベースを確認して十分な容量のあるサーバー ラックを検出し、そのラックのファブリック コントローラーにリソースを割り当てるよう命令します。
 
 そのため基本的に、Azure は膨大なサーバーおよびネットワーク ハードウェアのコレクションであり、これは、これらのサーバー上にある仮想化されたハードウェアおよびソフトウェアの構成および操作をうまく調整する分散アプリケーションの複雑なセットを実行します。 Azure が非常に強力なのは、この調整機能があるからです。なぜなら、ユーザーがハードウェアの保守やアップグレードを行う必要がなくなり、そのすべてが Azure によってバックグラウンドで実行されるためです。
 
 ## <a name="next-steps"></a>次のステップ
 
-「[Azure 向けの Microsoft Cloud 導入フレームワーク](../index.yml)」でクラウド導入について学習します。
+「Azure 向けの Microsoft Cloud 導入フレームワーク」でクラウド導入について学習します。
 
 > [!div class="nextstepaction"]
 > [Azure 向けの Microsoft クラウド導入フレームワークについて](../index.yml)

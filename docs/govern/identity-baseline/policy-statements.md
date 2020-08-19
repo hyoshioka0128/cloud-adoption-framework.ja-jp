@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f688988e62cf7783f76cf67d90fdc5b024e4fef
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 598f2a6e8c79020d0e62825066cc8305461de87a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218579"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573328"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>ID ベースラインのサンプル ポリシー ステートメント
 
@@ -31,7 +31,7 @@ ms.locfileid: "83218579"
 
 **ポリシー ステートメント:** クラウドにデプロイされるすべての資産は、現在のガバナンス ポリシーによって承認された ID とロールを使用して制御する必要があります。
 
-**使用可能な設計オプション:** [Azure Active Directory の条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)は、Azure の既定のアクセス制御メカニズムです。
+**使用可能な設計オプション:** [Azure Active Directory の条件付きアクセス](/azure/active-directory/conditional-access/overview)は、Azure の既定のアクセス制御メカニズムです。
 
 ## <a name="overprovisioned-access"></a>オーバープロビジョニングのアクセス
 
@@ -42,7 +42,7 @@ ms.locfileid: "83218579"
 - ミッション クリティカルなアプリケーションまたは保護対象データに関わるあらゆるリソースに、最小特権アクセス モデルが適用されます。
 - アクセス許可の昇格は例外とするべきであり、クラウド ガバナンス チームはそのような例外をすべて記録する必要があります。 例外は定期的に監査されます。
 
-**使用可能な設計オプション:** [知る必要性](https://wikipedia.org/wiki/Need_to_know)と[最小特権セキュリティ](https://wikipedia.org/wiki/Principle_of_least_privilege)の各原則に基づいてアクセスを制限するロールベースのアクセス制御 (RBAC) 戦略を、[Azure Identity Management のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)を参考にして実装します。
+**使用可能な設計オプション:** [知る必要性](https://wikipedia.org/wiki/Need_to_know)と[最小特権セキュリティ](https://wikipedia.org/wiki/Principle_of_least_privilege)の各原則に基づいてアクセスを制限するロールベースのアクセス制御 (RBAC) 戦略を、[Azure Identity Management のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)を参考にして実装します。
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>オンプレミスとクラウドの間で共有される管理アカウントの欠如
 
@@ -58,7 +58,7 @@ ms.locfileid: "83218579"
 
 **ポリシー ステートメント:** すべてのアカウントは、セキュリティで保護されたリソースにサインインする際、多要素認証方式を使用する必要があります。
 
-**使用可能な設計オプション:** Azure Active Directory の場合、ユーザー承認プロセスの一部として [Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) を実装します。
+**使用可能な設計オプション:** Azure Active Directory の場合、ユーザー承認プロセスの一部として [Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks) を実装します。
 
 ## <a name="isolated-identity-providers"></a>孤立した ID プロバイダー
 
@@ -66,7 +66,7 @@ ms.locfileid: "83218579"
 
 **ポリシー ステートメント:** カスタマー認証が必要なアプリケーションをデプロイする場合、内部ユーザー用のプライマリ ID プロバイダーと互換性のある承認済み ID プロバイダーを使用する必要があります。
 
-**使用可能な設計オプション:** 内部および顧客の ID プロバイダーの間に [Azure Active Directory を使用したフェデレーション](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed)を実装するか、[Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b) を使用します
+**使用可能な設計オプション:** 内部および顧客の ID プロバイダーの間に [Azure Active Directory を使用したフェデレーション](/azure/active-directory/hybrid/whatis-fed)を実装するか、[Azure Active Directory B2B](/azure/active-directory/b2b/what-is-b2b) を使用します
 
 ## <a name="identity-reviews"></a>ID レビュー
 

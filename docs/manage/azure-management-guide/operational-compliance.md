@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cc3d8ddfc599a33e28874774e92915b964aa4e3c
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 9323dbd07f5de6ab4ed525b6f3a54db921ac0f7d
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190874"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572036"
 ---
 <!-- cSpell:ignore WSUS getting started -->
 
@@ -53,7 +53,7 @@ Update Management で管理されるコンピューターでは、評価と更�
 - Azure Automation の Hybrid Runbook Worker。
 - Microsoft Update または Windows Server Update Services (WSUS) (Windows コンピューターの場合)。
 
-詳細については、[Update Management ソリューション](https://docs.microsoft.com/azure/automation/automation-update-management)に関するページを参照してください。
+詳細については、[Update Management ソリューション](/azure/automation/automation-update-management)に関するページを参照してください。
 
 > [!WARNING]
 > Update Management を使用するには、あらかじめ仮想マシンまたはサブスクリプション全体を Log Analytics および Azure Automation にオンボードしておく必要があります。
@@ -126,8 +126,8 @@ Azure Policy ゲスト構成では、現在、マシン内の設定の監査の�
 
 詳細については、次を参照してください。
 
-- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
-- [Azure Policy: ゲスト構成](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)
+- [Azure Policy](/azure/azure-policy)
+- [Azure Policy: ゲスト構成](/azure/governance/policy/concepts/guest-configuration)
 - [クラウド導入フレームワーク:ポリシー適用の意思決定ガイド](../../decision-guides/policy-enforcement/index.md)
 
 ## <a name="azure-blueprints"></a>Azure Blueprint
@@ -214,8 +214,8 @@ Azure Blueprints を使用すると、開発チームは新しい環境を迅速
 
 詳細については、次を参照してください。
 
-- [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
+- [Azure Blueprint](/azure/governance/blueprints)
 - [クラウド導入フレームワーク:リソースの整合性の意思決定ガイド](../../decision-guides/resource-consistency/index.md)
-- [標準ベースのブループリント サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [標準ベースのブループリント サンプル](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end

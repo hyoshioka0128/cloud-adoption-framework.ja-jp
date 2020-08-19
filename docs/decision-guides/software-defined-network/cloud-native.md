@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a69c196d76db7f633acdfcf0aff6ad72a11872e5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6cdcc1b37b875f08d9221fe4ca855fc8b0bf7fa7
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215026"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574025"
 ---
 # <a name="software-defined-networking-cloud-native"></a>ソフトウェア定義ネットワーク:クラウドネイティブ
 
@@ -40,5 +40,5 @@ ms.locfileid: "83215026"
 
 Azure でのクラウドネイティブ仮想ネットワークの詳細については、以下を参照してください。
 
-- [Azure Virtual Network に関するガイド](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm):新しく作成される仮想ネットワークは、既定でクラウド ネイティブとなります。 これらのガイドを使用すると、仮想ネットワークの設計とデプロイの計画に役立ちます。
-- [Azure のネットワークの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits):各仮想ネットワークと、接続されたリソースは、単一サブスクリプションに存在します。 これらのリソースはサブスクリプションの制限によってバインドされています。
+- [Azure Virtual Network に関するガイド](/azure/virtual-network/virtual-network-vnet-plan-design-arm):新しく作成される仮想ネットワークは、既定でクラウド ネイティブとなります。 これらのガイドを使用すると、仮想ネットワークの設計とデプロイの計画に役立ちます。
+- [Azure のネットワークの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits):各仮想ネットワークと、接続されたリソースは、単一サブスクリプションに存在します。 これらのリソースはサブスクリプションの制限によってバインドされています。

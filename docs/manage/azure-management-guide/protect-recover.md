@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c25329eae0a7b416b9bcd11eab6599e2e28781fc
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: fdedf440bc947a2877cca6854b4745dd8482e493
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190704"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567752"
 ---
 <!-- cSpell:ignore siterecovery -->
 
@@ -64,7 +64,7 @@ Azure Backup では、ご自身のデータを Microsoft Cloud 内でバック�
 
 ::: zone target="docs"
 
-[概要](https://docs.microsoft.com/azure/backup/backup-overview)
+[概要](/azure/backup/backup-overview)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -116,5 +116,5 @@ Site Recovery では、プライマリ Azure リージョン内にホストさ�
 
 ### <a name="learn-more"></a>詳細情報
 
-- [Azure Site Recovery の概要](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
-- [Azure VM を別のリージョンにレプリケートする](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
+- [Azure Site Recovery の概要](/azure/site-recovery/site-recovery-overview)
+- [Azure VM を別のリージョンにレプリケートする](/azure/site-recovery/azure-to-azure-quickstart)

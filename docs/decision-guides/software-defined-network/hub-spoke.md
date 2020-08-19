@@ -8,30 +8,30 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c9fbde180874f530191c3d58a8cb86df9906fc10
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: cd1ecfe758fcab297440bc65dcda7da310c25ec5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190721"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573991"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>ソフトウェア定義ネットワーク:ハブ アンド スポーク
 
 ハブ アンド スポークのネットワーク モデルは、複数接続されている仮想ネットワークに、Azure ベースのクラウド ネットワーク インフラストラクチャを編成します。 このモデルを使用すると、一般的な通信やセキュリティの要件をより効率的に管理し、潜在的なサブスクリプションの制限に対処できます。
 
-ハブ アンド スポークのモデルで、_ハブ_は、外部接続を管理したり、複数のワークロードによって使用されるサービスをホストしたりするための中心的な場所として機能する仮想ネットワークです。 _スポーク_は、ワークロードをホストし、[仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を介して中央のハブに接続する仮想ネットワークです。
+ハブ アンド スポークのモデルで、_ハブ_は、外部接続を管理したり、複数のワークロードによって使用されるサービスをホストしたりするための中心的な場所として機能する仮想ネットワークです。 _スポーク_は、ワークロードをホストし、[仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を介して中央のハブに接続する仮想ネットワークです。
 
 ワークロード スポーク ネットワークを出入りするすべてのトラフィックは、ハブ ネットワークを介してルーティングされます。そのハブ ネットワークで、集中管理された IT 規則またはプロセスによってトラフィックをルーティング、検査、またはその他の方法で管理できます。
 
 このモデルは、次の問題に対処することを目的としています。
 
 - **コストの削減と管理の効率。** 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は複数のワークロードにわたって過剰なリソースと管理作業を最小限にすることができます。
-- **サブスクリプションの制限の克服。** 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure のネットワークの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits)に関するページをご覧ください。
+- **サブスクリプションの制限の克服。** 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure のネットワークの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits)に関するページをご覧ください。
 - **懸念事項の分離。** 中央の IT チームとワークロード チームの間で個々のワークロードをデプロイする機能。
 
 次の図は、集中管理されたハイブリッド接続を含むハブ アンド スポークのアーキテクチャの例を示しています。
 
-![ハブ アンド スポーク ネットワーク アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/images/hub-spoke.png)
+![ハブ アンド スポーク ネットワーク アーキテクチャ](/azure/architecture/reference-architectures/hybrid-networking/images/hub-spoke.png)
 
 ハブ アンド スポークのアーキテクチャは、ハイブリッド ネットワーク アーキテクチャと共によく使用され、複数のワークロード間で共有されるオンプレミス環境への集中管理された接続を提供します。 このシナリオでは、ワークロードとオンプレミスの間を移動するすべてのトラフィックはハブを通過します。そのハブで、トラフィックを管理および保護できます。
 
@@ -46,11 +46,11 @@ ms.locfileid: "86190721"
 
 ## <a name="global-hub-and-spoke"></a>グローバルなハブ アンド スポーク
 
-ハブ アンド スポークのアーキテクチャの実装は、通常、ネットワーク間の待機時間を最小限に抑えるために、同じ Azure リージョンにデプロイされた仮想ネットワークを使用して行われます。 世界規模で存在感を示している大規模組織では、可用性、ディザスター リカバリー、または規制の要件に対応するために、複数のリージョンにわたってワークロードをデプロイすることが必要な場合があります。 ハブ アンド スポーク モデルでは、Azure の[グローバル仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用して、集中管理と共有サービスをリージョン全体に拡張し、世界中に分散されたワークロードをサポートできます。
+ハブ アンド スポークのアーキテクチャの実装は、通常、ネットワーク間の待機時間を最小限に抑えるために、同じ Azure リージョンにデプロイされた仮想ネットワークを使用して行われます。 世界規模で存在感を示している大規模組織では、可用性、ディザスター リカバリー、または規制の要件に対応するために、複数のリージョンにわたってワークロードをデプロイすることが必要な場合があります。 ハブ アンド スポーク モデルでは、Azure の[グローバル仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を使用して、集中管理と共有サービスをリージョン全体に拡張し、世界中に分散されたワークロードをサポートできます。
 
 ## <a name="learn-more"></a>詳細情報
 
 Azure 上にハブとスポークのネットワークを実装する方法を示す参照アーキテクチャについては、以下を参照してください。
 
-- [ハブ アンド スポーク ネットワーク トポロジを Azure 上に実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-- [共有サービスを含むハブ アンド スポーク ネットワーク トポロジを Azure 上に実装する](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+- [ハブ アンド スポーク ネットワーク トポロジを Azure 上に実装する](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+- [共有サービスを含むハブ アンド スポーク ネットワーク トポロジを Azure 上に実装する](/azure/architecture/reference-architectures/hybrid-networking/shared-services)

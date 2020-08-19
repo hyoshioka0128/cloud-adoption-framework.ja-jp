@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4dda94a3ec0439fd30097fb5f9962d3cdb6eeeec
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3627dda9bbefbd969c7323fc4708eee509902d2c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218205"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573243"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>リソースの整合性の規範の改良
 
@@ -73,7 +73,7 @@ ms.locfileid: "83218205"
 - リソース間の依存関係を定義します。
 - 計画フェーズで定義された要件に合わせて自動リソース スケーリングを実装します。
 - アクセス パフォーマンスを実施して、利用したサービスの質を測定します。
-- 構成設定とリソース作成ルールを使用して SLA の適用を管理するための [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) のデプロイを検討します。
+- 構成設定とリソース作成ルールを使用して SLA の適用を管理するための [Azure Policy](/azure/governance/policy/overview) のデプロイを検討します。
 
 ## <a name="adopt-and-migrate"></a>導入と移行
 
@@ -82,7 +82,7 @@ ms.locfileid: "83218205"
 **最小限の推奨されるアクティビティ:**
 
 - [リソース整合性ツールチェーン](./toolchain.md)をデプロイ前準備から本稼働に移行します。
-- アーキテクチャ ガイドラインのドキュメントを更新し、主な利害関係者に配布します。
+- アーキテクチャ ガイドライン ドキュメントを更新し、主な利害関係者に配布します。
 - ユーザー導入の促進に役立つ教材やドキュメント、認識の伝達、インセンティブなどのプログラムを開発します。
 - 定義済みの SLA 要件をサポートする自動修復のためのスクリプトやツールが既にある場合は移行します。
 
@@ -122,7 +122,7 @@ ms.locfileid: "83218205"
 - クラウド導入チームとクラウド戦略チームがこれらの異常を理解して解決するのを手伝います。
 - 課金や SLA に関して "リソースの整合性" 規範に変更を加える必要があるかどうかを判断します。
 - ログ記録と監視のツールを評価し、自組織のオンプレミス、クラウド ゲートウェイ、またはハイブリッド ソリューションの調整が必要かどうかを判断します。
-- ビジネス ユニットや地理的に分散したグループについて、一元化したポリシーの適用と SLA 要件の達成のために、追加のクラウド管理機能 ([Azure 管理グループ](https://docs.microsoft.com/azure/governance/management-groups)など) の使用を検討すべきかどうかを判断します。
+- ビジネス ユニットや地理的に分散したグループについて、一元化したポリシーの適用と SLA 要件の達成のために、追加のクラウド管理機能 ([Azure 管理グループ](/azure/governance/management-groups)など) の使用を検討すべきかどうかを判断します。
 
 ## <a name="next-steps"></a>次のステップ
 

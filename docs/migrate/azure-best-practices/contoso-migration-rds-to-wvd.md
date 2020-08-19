@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 89f7d7986281a5e5a6409623905ebaaa6fe00fe1
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: be46b1d4d0848782ae2906498f38ba9bc45e180b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400532"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567327"
 ---
 <!-- cSpell:ignore benstegink msiexec Logix Lakeside SysTrack Robocopy UPD UPDs -->
 
@@ -23,7 +23,7 @@ Windows Virtual Desktop は、クラウドで実行される包括的なデス�
 
 | 移行オプション | 結果 |
 |--- | --- |
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | オンプレミスの RDS 環境を評価し、移行する。 <br><br> Azure で Windows Virtual Desktop を使用してワークロードを実行する。 <br><br> [Windows Virtual Desktop 管理 UX](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/wvd-management-ux) を使用して Windows Virtual Desktop を管理する。 |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | オンプレミスの RDS 環境を評価し、移行する。 <br><br> Azure で Windows Virtual Desktop を使用してワークロードを実行する。 <br><br> [Windows Virtual Desktop 管理 UX](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/wvd-management-ux) を使用して Windows Virtual Desktop を管理する。 |
 
 > [!NOTE]
 > この記事では、Azure の Windows Virtual Desktop を使用して、オンプレミスの RDS 環境を Azure に移行する方法について重点的に説明します。
@@ -117,12 +117,12 @@ Contoso は、`East US 2` Azure リージョンに Windows Virtual Desktop サ�
 1. ドメイン サービス (Active Directory または Azure Active Directory Domain Services のいずれか) が、Azure Active Directory (Azure AD) と同期されていることを確認します。 Windows Virtual Desktop がデプロイされる Azure サブスクリプションと仮想ネットワークから、このドメイン サービスにアクセスできることを確認してください。
 
     > [!NOTE]
-    > オンプレミスの Active Directory を Azure AD と同期するために、[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) の詳細を確認してください。
+    > オンプレミスの Active Directory を Azure AD と同期するために、[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-express) の詳細を確認してください。
 
     <!-- -->
 
     > [!NOTE]
-    > [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance) をプロビジョニングし、Azure AD を同期する方法を確認してください。
+    > [Azure Active Directory Domain Services](/azure/active-directory-domain-services/tutorial-create-instance) をプロビジョニングし、Azure AD を同期する方法を確認してください。
 
 1. 新しい Azure Migrate プロジェクトを作成します。
 
@@ -210,7 +210,7 @@ Contoso は、Azure portal を使用して、プールされたリソースに�
 
     > [!NOTE]
     > Contoso は、この手順で新しい仮想ネットワークを作成することはできません。 この手順に進む前に、Contoso では Active Directory にアクセスできる仮想ネットワークを作成しておく必要があります。
-    
+
    <!-- -->
 
     > [!NOTE]
@@ -295,16 +295,16 @@ Contoso の移行プロセスの次の手順では、永続仮想マシンを Wi
 
 Contoso セキュリティ チームは、Azure VM を調査して、セキュリティの問題を特定します。 アクセスを制御するために、VM のネットワーク セキュリティ グループ (NSG) を見直します。 NSG は、許可されたトラフィックだけがアプリケーションに到達できるようにするために使用されます。 チームは、Azure Disk Encryption と Azure Key Vault を使用して、ディスク上のデータをセキュリティで保護することも検討します。
 
-詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/iaas)」を参照してください。
+詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](/azure/security/fundamentals/iaas)」を参照してください。
 
 ## <a name="business-continuity-and-disaster-recovery"></a>事業継続とディザスター リカバリー
 
-事業継続とディザスター リカバリー (BCDR) のために、Contoso は Azure Backup を使用して VM 上のデータをバックアップすることでデータを保護します。 詳細については、「[Azure VM バックアップの概要](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction)」をご覧ください。
+事業継続とディザスター リカバリー (BCDR) のために、Contoso は Azure Backup を使用して VM 上のデータをバックアップすることでデータを保護します。 詳細については、「[Azure VM バックアップの概要](/azure/backup/backup-azure-vms-introduction)」をご覧ください。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - デスクトップ デプロイには、[Microsoft 365 ライセンス](https://azure.microsoft.com/pricing/details/virtual-desktop/)を使用します。
-- Contoso は、[Azure Cost Management および Billing](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理を支援します。
+- Contoso は、[Azure Cost Management および Billing](/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理を支援します。
 - Contoso には VM の既存のライセンスがあるため、アプリケーション サーバーの Azure ハイブリッド特典を利用します。 Contoso は、この特典を活用するために、既存の Azure VM を変換します。
 
 ## <a name="conclusion"></a>まとめ

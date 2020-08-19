@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 65f28f92e731eac11a337ab9b191b7d0bc09101b
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 2dc370df56042894903da00b14c9a37f06d17e1c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193067"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571016"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -24,16 +24,16 @@ ms.locfileid: "86193067"
 
 ## <a name="fundamentals"></a>基礎
 
-- [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) の概要では、Azure リソースの管理とデプロイの基本的な概念について説明しています。 企業全体の監視エクスペリエンスを管理する IT スタッフは、管理スコープ、ロールベースのアクセス制御 (RBAC)、 Azure Resource Manager テンプレートの使用、および Azure CLI と Azure PowerShell を使用したリソースの管理について理解する必要があります。
+- [Azure Resource Manager](/azure/azure-resource-manager/management/overview) の概要では、Azure リソースの管理とデプロイの基本的な概念について説明しています。 企業全体の監視エクスペリエンスを管理する IT スタッフは、管理スコープ、ロールベースのアクセス制御 (RBAC)、 Azure Resource Manager テンプレートの使用、および Azure CLI と Azure PowerShell を使用したリソースの管理について理解する必要があります。
 
-- [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) の概要では、Azure Policy を使用してポリシーを作成、割り当て、管理する方法について説明しています。 Azure Policy では、Azure Monitor エージェントのデプロイと構成、Azure Monitor for VMs と Azure Security Center を使用した監視の有効化、診断設定のデプロイ、ゲスト構成設定の監査などを行うことができます。
+- [Azure Policy](/azure/governance/policy/overview) の概要では、Azure Policy を使用してポリシーを作成、割り当て、管理する方法について説明しています。 Azure Policy では、Azure Monitor エージェントのデプロイと構成、Azure Monitor for VMs と Azure Security Center を使用した監視の有効化、診断設定のデプロイ、ゲスト構成設定の監査などを行うことができます。
 
-- [Azure コマンド ライン インターフェイス](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) (CLI) の概要。これは、Azure リソースを管理するためのクロスプラットフォーム コマンド ライン エクスペリエンスとなっています。 また、[Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1) の概要についても確認してください。 LinkedIn は、[Azure の管理ツールを学習する](https://www.linkedin.com/learning/learning-azure-management-tools)初級レベルのコースの一部として、Azure CLI と PowerShell プログラミング言語を対象としたセッションを提供しています。
+- [Azure コマンド ライン インターフェイス](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) (CLI) の概要。これは、Azure リソースを管理するためのクロスプラットフォーム コマンド ライン エクスペリエンスとなっています。 また、[Azure PowerShell](/powershell/azure/?view=azps-3.6.1) の概要についても確認してください。 LinkedIn は、[Azure の管理ツールを学習する](https://www.linkedin.com/learning/learning-azure-management-tools)初級レベルのコースの一部として、Azure CLI と PowerShell プログラミング言語を対象としたセッションを提供しています。
 
   - [Azure CLI を使用する](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
   - [Azure PowerShell の概要](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- ポリシー、ロールベースのアクセス制御、およびその他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソースのセキュリティを実装する](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security)」を参照してください。
+- ポリシー、ロールベースのアクセス制御、およびその他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソースのセキュリティを実装する](/learn/paths/implement-resource-mgmt-security)」を参照してください。
 
 - 「[Microsoft Azure リソースとワークロードの監視](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents)」では、Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスにあるリソースを監視する方法について学習できます。
 
@@ -49,11 +49,11 @@ ms.locfileid: "86193067"
 
 - 「[Monitoring Microsoft Azure Hybrid Cloud Networks (Microsoft Azure ハイブリッド クラウド ネットワークの監視)](https://www.pluralsight.com/courses/microsoft-azure-hybrid-cloud-networks-monitoring)」は、Azure 監視ツールを使用して、ハイブリッド クラウド実装の Azure 仮想ネットワークと仮想プライベート ネットワーク接続を視覚化、管理、最適化する方法を学習できる上級レベルのコースです。
 
-- [Azure Arc for servers](https://docs.microsoft.com/azure/azure-arc/servers/overview) に関する記事では、Azure の外部でホストされている Windows および Linux マシンをネイティブの Azure 仮想マシンと同じように管理できる方法について説明しています。
+- [Azure Arc for servers](/azure/azure-arc/servers/overview) に関する記事では、Azure の外部でホストされている Windows および Linux マシンをネイティブの Azure 仮想マシンと同じように管理できる方法について説明しています。
 
 ## <a name="application-monitoring"></a>アプリケーションの監視
 
-- [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) を使用して、アプリケーションとサービスの可用性とパフォーマンスを 1 か所で確認する方法についてご覧ください。 Pluralsight には、役に立つ次のコースが用意されています。
+- [Azure Monitor](/azure/azure-monitor/overview) を使用して、アプリケーションとサービスの可用性とパフォーマンスを 1 か所で確認する方法についてご覧ください。 Pluralsight には、役に立つ次のコースが用意されています。
 
   - 「[Microsoft Azure DevOps エンジニア:Optimize Feedback Mechanisms (Microsoft Azure DevOps エンジニア: フィードバック メカニズムの最適化)](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms)」は、Application Insights を含む Azure Monitor を使用して、Web アプリケーションの監視と最適化を準備する際に役立ちます。
 
@@ -67,7 +67,7 @@ ms.locfileid: "86193067"
 
 ## <a name="data-analysis"></a>データ分析
 
-- [Azure Monitor でログ クエリ](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
+- [Azure Monitor でログ クエリ](/azure/azure-monitor/log-query/get-started-queries)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
 
 - 「[Kusto Query Language (KQL) from Scratch (ゼロから始める Kusto クエリ言語 (KQL))](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)」は、Azure Monitor ログでのログ分析の幅広いユースケースと手法を示す詳細な例を含む包括的なコースです。
 
@@ -91,13 +91,13 @@ Azure に関する知識を [Azure 認定資格のトレーニングや試験](h
 
 詳細については、以下を参照してください。
 
-- [Azure DevOps を使用して作業を開始する](https://docs.microsoft.com/learn/modules/get-started-with-devops)
+- [Azure DevOps を使用して作業を開始する](/learn/modules/get-started-with-devops)
 
-- [DevOps 白帯道場の基礎について理解する](https://docs.microsoft.com/learn/paths/devops-dojo-white-belt-foundation)
+- [DevOps 白帯道場の基礎について理解する](/learn/paths/devops-dojo-white-belt-foundation)
 
-- [DevOps のプラクティスを進化させる](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
+- [DevOps のプラクティスを進化させる](/learn/paths/evolve-your-devops-practices)
 
-- [Azure DevOps を使用してデプロイを自動化する](https://docs.microsoft.com/learn/paths/automate-deployments-azure-devops)
+- [Azure DevOps を使用してデプロイを自動化する](/learn/paths/automate-deployments-azure-devops)
 
 ## <a name="other-considerations"></a>その他の考慮事項
 
@@ -107,4 +107,4 @@ Azure に関する知識を [Azure 認定資格のトレーニングや試験](h
 
 ## <a name="learn-more"></a>詳細情報
 
-追加のラーニング パスについては、[Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 [ロール] フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+追加のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 [ロール] フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

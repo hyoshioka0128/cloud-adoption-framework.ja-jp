@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dc0fa352d96f7d1194566006d3d9d1e98eb46b87
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 52bec9b36c1e0aba845647f4617fb0aca97695d0
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862638"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196192"
 ---
 # <a name="examples-of-performance-outcomes"></a>パフォーマンス結果の例
 
@@ -44,7 +44,7 @@ Azure Site Recovery では、Azure リージョン間でアプリケーション
 
 ## <a name="next-steps"></a>次のステップ
 
-[ビジネス成果テンプレートの使用方法](./business-outcome-template.md)について確認します。
+ビジネス成果テンプレートの使用方法について確認します。
 
 > [!div class="nextstepaction"]
 > [ビジネス成果テンプレートを使用する](./business-outcome-template.md)

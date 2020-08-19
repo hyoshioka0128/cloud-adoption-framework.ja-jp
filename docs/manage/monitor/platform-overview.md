@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: dcbc8d7906bd18a225b9fb2b116b4acc3bd0f395
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: d8ab1c31744d3e714d62018bccabd747136f454c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193135"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571203"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -81,7 +81,7 @@ Azure Monitor は、サービスとしてのソフトウェア (SaaS) サービ�
 
 #### <a name="agents"></a>エージェント
 
-Operations Manager では、[Windows コンピューター](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent)にインストールされたエージェントからのみ、データが直接収集されます。 Operations Manager SDK からのデータを受け入れることができますが、このアプローチは通常、監視データの収集ではなく、カスタム アプリケーションによって製品を拡張するパートナーのために使用されます。 [Linux コンピューター](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent)やネットワーク デバイスなどの他のソースからのデータ収集は、これらの他のデバイスにリモートからアクセスする Windows エージェントで実行される特別なモジュールを使用して行うことができます。
+Operations Manager では、[Windows コンピューター](/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent)にインストールされたエージェントからのみ、データが直接収集されます。 Operations Manager SDK からのデータを受け入れることができますが、このアプローチは通常、監視データの収集ではなく、カスタム アプリケーションによって製品を拡張するパートナーのために使用されます。 [Linux コンピューター](/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent)やネットワーク デバイスなどの他のソースからのデータ収集は、これらの他のデバイスにリモートからアクセスする Windows エージェントで実行される特別なモジュールを使用して行うことができます。
 
 ![Operations Manager エージェントの図](./media/monitoring-management-guidance-cloud-and-on-premises/data-collection-opsman-agents-optimized.svg)
 
@@ -89,7 +89,7 @@ Operations Manager エージェントでは、ローカル コンピューター
 
 #### <a name="management-packs"></a>管理パック
 
-Operations Manager は、ワークフロー (ルール、モニター、およびオブジェクト検出) を使用してすべての監視を実行します。 これらのワークフローは[管理パック](https://docs.microsoft.com/system-center/scom/manage-overview-management-pack?view=sc-om-2019)にパッケージ化されて、エージェントに配置されます。 管理パックは、事前定義されたルールとモニターを含むさまざまな製品やサービスで使用できます。 独自のアプリケーションやカスタム シナリオ用に独自の管理パックを作成することもできます。
+Operations Manager は、ワークフロー (ルール、モニター、およびオブジェクト検出) を使用してすべての監視を実行します。 これらのワークフローは[管理パック](/system-center/scom/manage-overview-management-pack?view=sc-om-2019)にパッケージ化されて、エージェントに配置されます。 管理パックは、事前定義されたルールとモニターを含むさまざまな製品やサービスで使用できます。 独自のアプリケーションやカスタム シナリオ用に独自の管理パックを作成することもできます。
 
 #### <a name="monitoring-configuration"></a>監視構成
 

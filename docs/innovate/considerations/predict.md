@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 01d12f284d90c1d483c5b5044aafd683f2a674b6
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 082f8cfcd3cb8d0e01a49bf5a1da32b77c4050fd
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449134"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568177"
 ---
 # <a name="predict-and-influence"></a>予測と影響
 
@@ -63,19 +63,19 @@ ms.locfileid: "86449134"
 
 機械学習では、分析情報を開始点として使用して、そのデータ内のパターンを利用する予測モデルを開発し、適用します。 トレーニング、テストおよび採用を何度も繰り返すことにより、それらのモデルやアルゴリズムは将来の結果を正確に予測できるようになります。
 
-[Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) は、お使いのデータを使用してモデルを構築およびトレーニングする、Azure 内のクラウドネイティブなサービスです。 このツールには、[機械学習アルゴリズムの開発を加速させるワークフロー](https://docs.microsoft.com/azure/machine-learning/service/concept-azure-machine-learning-architecture)も含まれます。 このワークフローを使用すると、ビジュアル インターフェイスまたは Python を通じてアルゴリズムを開発できます。
+[Azure Machine Learning](/azure/machine-learning/service/overview-what-is-azure-ml) は、お使いのデータを使用してモデルを構築およびトレーニングする、Azure 内のクラウドネイティブなサービスです。 このツールには、[機械学習アルゴリズムの開発を加速させるワークフロー](/azure/machine-learning/service/concept-azure-machine-learning-architecture)も含まれます。 このワークフローを使用すると、ビジュアル インターフェイスまたは Python を通じてアルゴリズムを開発できます。
 
-より堅牢な機械学習モデルを実現するために、[Azure HDInsight の ML サービス](https://docs.microsoft.com/azure/hdinsight/r-server/r-server-overview)では、Apache Hadoop クラスター上に構築された機械学習プラットフォームを提供します。 このアプローチでは、基になっているクラスター、ストレージ、コンピューティング ノードをより細かく制御できます。 また、Azure HDInsight では、統合および取り込まれたデータに基づく予測を、ScaleR や SparkR などのツールをより高度に統合して作成できます。これでは、ストリーミング データを使用することも可能です。 気象条件に基づく航空便の遅延の予測に使用される場合、これらの高度な機能はそれぞれ、[航空便遅延予測ソリューション](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)でデモンストレーションされています。 また、HDInsight ソリューションでは、データ セキュリティ、ネットワーク アクセス、パフォーマンス監視などのパターンでの操作を組織で制御できます。
+より堅牢な機械学習モデルを実現するために、[Azure HDInsight の ML サービス](/azure/hdinsight/r-server/r-server-overview)では、Apache Hadoop クラスター上に構築された機械学習プラットフォームを提供します。 このアプローチでは、基になっているクラスター、ストレージ、コンピューティング ノードをより細かく制御できます。 また、Azure HDInsight では、統合および取り込まれたデータに基づく予測を、ScaleR や SparkR などのツールをより高度に統合して作成できます。これでは、ストリーミング データを使用することも可能です。 気象条件に基づく航空便の遅延の予測に使用される場合、これらの高度な機能はそれぞれ、[航空便遅延予測ソリューション](/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)でデモンストレーションされています。 また、HDInsight ソリューションでは、データ セキュリティ、ネットワーク アクセス、パフォーマンス監視などのパターンでの操作を組織で制御できます。
 
 ## <a name="predictions"></a>予測
 
 パターンを構築してトレーニングした後、デジタル エクスペリエンスを提供している間に予測を行える API を使用して適用することができます。 これらの API の多くは、お使いのデータ内のパターンに基づく適切にトレーニングされたモデルから構築されています。 クラウドに日常的なワークロードをデプロイする顧客が増えるに従い、クラウド プロバイダーによって使用される予測 API により、これまでにないペースで採用が増加します。
 
-クラウド ベンダーが開発した予測 API の例に、[Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services) があります。 このサービスには、コンテンツ モデレーション、異常検出、およびコンテンツをカスタマイズするための提案用の予測 API が含まれています。 これらの API は、すぐに使用できるように準備され、Microsoft がモデルのトレーニングに使用した既知のコンテンツ パターンに基づいています。 これらの各 API は、ユーザーが API にフィードするデータに基づいて予測を行います。
+クラウド ベンダーが開発した予測 API の例に、[Azure Cognitive Services](/azure/cognitive-services) があります。 このサービスには、コンテンツ モデレーション、異常検出、およびコンテンツをカスタマイズするための提案用の予測 API が含まれています。 これらの API は、すぐに使用できるように準備され、Microsoft がモデルのトレーニングに使用した既知のコンテンツ パターンに基づいています。 これらの各 API は、ユーザーが API にフィードするデータに基づいて予測を行います。
 
-[Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning) では、ご自分のデータのみに基づいて作成およびトレーニングできる、カスタム作成したアルゴリズムをデプロイできます。 [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where) を使用した予測のデプロイの詳細を参照してください。
+[Azure Machine Learning](/azure/machine-learning) では、ご自分のデータのみに基づいて作成およびトレーニングできる、カスタム作成したアルゴリズムをデプロイできます。 [Azure Machine Learning](/azure/machine-learning/service/how-to-deploy-and-where) を使用した予測のデプロイの詳細を参照してください。
 
-[HDInsight クラスターの設定](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters)に関する記事では、Azure HDInsight 上の ML Services 用に開発された予測を公開するプロセスが説明されています。
+[HDInsight クラスターの設定](/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters)に関する記事では、Azure HDInsight 上の ML Services 用に開発された予測を公開するプロセスが説明されています。
 
 ## <a name="interactions"></a>インタラクション
 

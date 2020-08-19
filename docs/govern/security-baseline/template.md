@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7a76999130144b2ac67913f0c9f1974456e442c0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ae81ab5fa018c6739a6c52334b1bbc8ac444563f
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217712"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195203"
 ---
 # <a name="security-baseline-discipline-template"></a>セキュリティ ベースライン規範テンプレート
 
@@ -24,7 +24,7 @@ ms.locfileid: "83217712"
 > [!IMPORTANT]
 > このテンプレートは、限定されたサンプルです。 お客様の要件を反映するようにこのテンプレートを更新する前に、クラウド ガバナンス戦略内で有効なセキュリティ ベースライン規範を定義するための後続の手順を確認する必要があります。
 
-[セキュリティ ベースライン規範テンプレートをダウンロードする](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
+[セキュリティ ベースライン規範テンプレートをダウンロードする](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx)
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: dfa8275bb96fc075e099b19c9c4b9b81d1714131
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 022fee42f79a1a6329b340147e6a2663b43edc63
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755593"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570149"
 ---
 <!-- docsTest:ignore IS -->
 
@@ -40,7 +40,7 @@ ms.locfileid: "83755593"
 
 - [ガバナンスの方法論](../govern/index.md)を確認します。
 - [ガバナンス ベンチマーク評価](../govern/benchmark.md)を行います。
-- [Azure のセキュリティの概要](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure):クラウド内のインフラストラクチャとデータの保護に関する基本的な概念について学習します。 自分の役割と Azure によって自動的に処理されることについて理解します。
+- [Azure のセキュリティの概要](/learn/modules/intro-to-security-in-azure):クラウド内のインフラストラクチャとデータの保護に関する基本的な概念について学習します。 自分の役割と Azure によって自動的に処理されることについて理解します。
 - [コストを管理する](../organize/cost-conscious-organization.md)ためにグループ間で連携する方法について理解します。
 
 ## <a name="minimum-scope"></a>最小スコープ

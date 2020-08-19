@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9fe2d91971e13ded533747e079fc52063feaf70d
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: f240ca121f52d08d1a666c7a5f0ee5f396779c7c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862247"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569010"
 ---
 # <a name="security-baseline-discipline-improvement"></a>セキュリティ ベースライン規範の改良
 
@@ -68,7 +68,7 @@ ms.locfileid: "83862247"
 - クラウドでホストされたデータのための組織の[暗号化](../../decision-guides/encryption/index.md)戦略を決定します。
 - クラウド デプロイの [ID](../../decision-guides/identity/index.md) 戦略を評価します。 クラウド ベースの ID ソリューションがオンプレミスの ID プロバイダーと共存または統合する方法を決定します。
 - [ソフトウェア定義ネットワーク (SDN)](../../decision-guides/software-defined-network/index.md) 設計で仮想ネットワーク機能を確実にセキュリティで保護するためのネットワーク境界ポリシーを決定します。
-- 組織の[最小特権アクセス](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-delegate-by-task) ポリシーを評価し、タスク ベースのロールを使用して特定のリソースへのアクセスを提供します。
+- 組織の[最小特権アクセス](/azure/active-directory/users-groups-roles/roles-delegate-by-task) ポリシーを評価し、タスク ベースのロールを使用して特定のリソースへのアクセスを提供します。
 - すべてのクラウド サービスと仮想マシンにセキュリティおよび監視メカニズムを適用します。
 - 可能な場合は、[セキュリティ ポリシー](../../decision-guides/policy-enforcement/index.md)を自動化します。
 - セキュリティ ベースライン ポリシーをレビューし、[セキュリティ開発ライフサイクル](https://www.microsoft.com/sdl)で概要が説明されているようなベスト プラクティス ガイダンスに従って計画を変更する必要があるかどうかを判定します。
@@ -117,5 +117,5 @@ ms.locfileid: "83862247"
 
 > [!div class="nextstepaction"]
 > [Azure のセキュリティ ガイダンスについて](./azure-security-guidance.md)
-> [Azure セキュリティの概要](https://docs.microsoft.com/azure/security/fundamentals/overview)
+> [Azure セキュリティの概要](/azure/security/fundamentals/overview)
 > [ログ、レポート、および監視について](../../decision-guides/logging-and-reporting/index.md)

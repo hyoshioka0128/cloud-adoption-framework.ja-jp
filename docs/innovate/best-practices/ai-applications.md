@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d83ce295c46267d5e04eeab79ffbe715f4db40c5
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 076248ef6fbbf119d29e159aac54aadc56d6bbc0
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040764"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568534"
 ---
 <!-- cSpell:ignore Personalizer -->
 
@@ -34,50 +34,50 @@ Cognitive Services は、開発者が直接的な AI またはデータ サイ�
 
 | [サービス名] | サービスの説明 |
 | --- | --- |
-| [Computer Vision](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) | Computer Vision を使用すると、画像を処理して情報を返すための高度なアルゴリズムにアクセスできます。 |
-| [Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) | Custom Vision を使用すると、カスタム画像分類器を構築できます。 |
-| [Face](https://docs.microsoft.com/azure/cognitive-services/face/) | Face サービスを使用すると、顔属性を検出して認識する高度な顔アルゴリズムにアクセスできます。 |
-| [Form Recognizer](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/) (プレビュー) | Form Recognizer を使用すると、フォーム ドキュメントからキーと値のペアおよびテーブル データを識別して抽出できます。 その後、元のファイル内の関係を含む構造化データが出力されます。 |
-| [Ink Recognizer](https://docs.microsoft.com/azure/cognitive-services/ink-recognizer/) (プレビュー) | Ink Recognizer を使用すると、デジタル インク ストローク データ、シェイプ、および手書きのコンテンツを認識して分析し、認識されたすべてのエンティティを備えたドキュメント構造を出力できます。 |
-| [Video Indexer](https://docs.microsoft.com/azure/cognitive-services/video-indexer/video-indexer-overview) | Video Indexer では、ビデオから分析情報を抽出できます。 |
+| [Computer Vision](/azure/cognitive-services/computer-vision/) | Computer Vision を使用すると、画像を処理して情報を返すための高度なアルゴリズムにアクセスできます。 |
+| [Custom Vision](/azure/cognitive-services/custom-vision-service/home) | Custom Vision を使用すると、カスタム画像分類器を構築できます。 |
+| [Face](/azure/cognitive-services/face/) | Face サービスを使用すると、顔属性を検出して認識する高度な顔アルゴリズムにアクセスできます。 |
+| [Form Recognizer](/azure/cognitive-services/form-recognizer/) (プレビュー) | Form Recognizer を使用すると、フォーム ドキュメントからキーと値のペアおよびテーブル データを識別して抽出できます。 その後、元のファイル内の関係を含む構造化データが出力されます。 |
+| [Ink Recognizer](/azure/cognitive-services/ink-recognizer/) (プレビュー) | Ink Recognizer を使用すると、デジタル インク ストローク データ、シェイプ、および手書きのコンテンツを認識して分析し、認識されたすべてのエンティティを備えたドキュメント構造を出力できます。 |
+| [Video Indexer](/azure/cognitive-services/video-indexer/video-indexer-overview) | Video Indexer では、ビデオから分析情報を抽出できます。 |
 
 ### <a name="speech-apis"></a>Speech API
 
 | [サービス名] | サービスの説明 |
 | --- | --- |
-| [Speech](https://docs.microsoft.com/azure/cognitive-services/speech-service/) | Speech サービスは、音声対応の機能をアプリケーションに追加します。 |
-| [Speaker Recognition](https://docs.microsoft.com/azure/cognitive-services/speaker-recognition/home "Speaker Recognition API") (プレビュー) | Speaker Recognition API では、話者識別と検証のアルゴリズムが提供されます。 |
-| [Bing Speech](https://docs.microsoft.com/azure/cognitive-services/speech/home) (廃止) | Bing Speech API は、アプリケーションに音声対応の機能を作成する簡単な方法を提供します。 |
-| [Translator Speech](https://docs.microsoft.com/azure/cognitive-services/translator-speech/) (廃止) | Translator Speech は、機械翻訳サービスです。 |
+| [Speech](/azure/cognitive-services/speech-service/) | Speech サービスは、音声対応の機能をアプリケーションに追加します。 |
+| [Speaker Recognition](/azure/cognitive-services/speaker-recognition/home "Speaker Recognition API") (プレビュー) | Speaker Recognition API では、話者識別と検証のアルゴリズムが提供されます。 |
+| [Bing Speech](/azure/cognitive-services/speech/home) (廃止) | Bing Speech API は、アプリケーションに音声対応の機能を作成する簡単な方法を提供します。 |
+| [Translator Speech](/azure/cognitive-services/translator-speech/) (廃止) | Translator Speech は、機械翻訳サービスです。 |
 
 ### <a name="language-apis"></a>Language API
 
 | [サービス名] | サービスの説明 |
 | --- | -- |
-| [Language Understanding (LUIS)](https://docs.microsoft.com/azure/cognitive-services/luis/) | Language Understanding サービス (LUIS) を使用すると、アプリケーションで人の発話の意図を認識できるようになります。 |
-| [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/index "QnA Maker") | QnA Maker を使用すると、半構造化コンテンツから質疑応答サービスを構築できます。 |
-| [Text Analytics](https://docs.microsoft.com/azure/cognitive-services/text-analytics/) | Text Analytics によって、未加工のテキストに対して、感情分析、キー フレーズ抽出、および言語検出のための自然言語処理が提供されます。 |
-| [Translator](https://docs.microsoft.com/azure/cognitive-services/translator/) | Translator によって、ほぼリアルタイムでのマシン ベースのテキスト翻訳が提供されます。 |
+| [Language Understanding (LUIS)](/azure/cognitive-services/luis/) | Language Understanding サービス (LUIS) を使用すると、アプリケーションで人の発話の意図を認識できるようになります。 |
+| [QnA Maker](/azure/cognitive-services/qnamaker/index "QnA Maker") | QnA Maker を使用すると、半構造化コンテンツから質疑応答サービスを構築できます。 |
+| [Text Analytics](/azure/cognitive-services/text-analytics/) | Text Analytics によって、未加工のテキストに対して、感情分析、キー フレーズ抽出、および言語検出のための自然言語処理が提供されます。 |
+| [Translator](/azure/cognitive-services/translator/) | Translator によって、ほぼリアルタイムでのマシン ベースのテキスト翻訳が提供されます。 |
 
 ### <a name="decision-apis"></a>Decision API
 
 | [サービス名] | サービスの説明 |
 | --- | --- |
-| [Anomaly Detector](https://docs.microsoft.com/azure/cognitive-services/anomaly-detector/) (プレビュー) | Anomaly Detector では、時系列データを監視し、その中の異常を検出できます。 |
-| [Content Moderator](https://docs.microsoft.com/azure/cognitive-services/content-moderator/overview "Content Moderator") | Content Moderator は、不快感を与えたり、望ましくなかったり、危険であったりする可能性があるコンテンツを監視します。 |
-| [Personalizer](https://docs.microsoft.com/azure/cognitive-services/personalizer/) | Personalizer を使用すると、ユーザー向けの最もカスタマイズされたエクスペリエンスを選択するために、ユーザーのリアルタイムの行動から学習することができます。 |
+| [Anomaly Detector](/azure/cognitive-services/anomaly-detector/) (プレビュー) | Anomaly Detector では、時系列データを監視し、その中の異常を検出できます。 |
+| [Content Moderator](/azure/cognitive-services/content-moderator/overview "Content Moderator") | Content Moderator は、不快感を与えたり、望ましくなかったり、危険であったりする可能性があるコンテンツを監視します。 |
+| [Personalizer](/azure/cognitive-services/personalizer/) | Personalizer を使用すると、ユーザー向けの最もカスタマイズされたエクスペリエンスを選択するために、ユーザーのリアルタイムの行動から学習することができます。 |
 
 ### <a name="supported-cultural-languages"></a>サポートされる言語 (カルチャ)
 
-Cognitive Services では、さまざまなカルチャ言語がサービス レベルでサポートされています。 各 API で利用可能な言語は、[サポート対象の言語一覧](https://docs.microsoft.com/azure/cognitive-services/language-support)に関するページで検索できます。
+Cognitive Services では、さまざまなカルチャ言語がサービス レベルでサポートされています。 各 API で利用可能な言語は、[サポート対象の言語一覧](/azure/cognitive-services/language-support)に関するページで検索できます。
 
 ### <a name="secure-resources"></a>セキュリティで保護されたリソース
 
-Cognitive Services によって、Azure Active Directory の資格情報を使用した[認証](https://docs.microsoft.com/azure/cognitive-services/authentication)、有効なリソース キー、[Azure Virtual Network](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-virtual-networks) を含む多層型のセキュリティ モデルが提供されています。
+Cognitive Services によって、Azure Active Directory の資格情報を使用した[認証](/azure/cognitive-services/authentication)、有効なリソース キー、[Azure Virtual Network](/azure/cognitive-services/cognitive-services-virtual-networks) を含む多層型のセキュリティ モデルが提供されています。
 
 ### <a name="container-support"></a>コンテナー サポート
 
-Cognitive Services には、クラウドまたはオンプレミスへのデプロイ用にコンテナーが用意されています。 詳細については、[Cognitive Services のコンテナー](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support)に関するページを参照してください。
+Cognitive Services には、クラウドまたはオンプレミスへのデプロイ用にコンテナーが用意されています。 詳細については、[Cognitive Services のコンテナー](/azure/cognitive-services/cognitive-services-container-support)に関するページを参照してください。
 
 <!-- docsTest:ignore "HIPAA BAA" "CSA STAR" -->
 
@@ -104,5 +104,5 @@ Cognitive Services と Azure Machine Learning には、AI を適用してビジ�
 
 ## <a name="next-steps"></a>次の手順
 
-- [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) の詳細について確認します。
-- [AI アーキテクチャのベスト プラクティス](https://docs.microsoft.com/azure/architecture/solution-ideas/articles/ai-at-the-edge)を見つけます。
+- [Cognitive Services](/azure/cognitive-services/) の詳細について確認します。
+- [AI アーキテクチャのベスト プラクティス](/azure/architecture/solution-ideas/articles/ai-at-the-edge)を見つけます。

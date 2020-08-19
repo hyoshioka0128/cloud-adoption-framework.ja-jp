@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0f022693cdf8191a1c4e978a4545bfc117ed055f
-ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
+ms.openlocfilehash: e623658907c4f6e97574e1e8c0012933a6233e8f
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115088"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572903"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -66,7 +66,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 2. **[追加]** を選択します。
 
 > [!NOTE]
-> サブスクリプションはプログラムで作成することもできます。 詳細については、[Azure サブスクリプションをプログラムで作成する方法](https://docs.microsoft.com/azure/azure-resource-manager/management/programmatically-create-subscription?tabs=azure-powershell)に関するページを参照してください。
+> サブスクリプションはプログラムで作成することもできます。 詳細については、[Azure サブスクリプションをプログラムで作成する方法](/azure/azure-resource-manager/management/programmatically-create-subscription?tabs=azure-powershell)に関するページを参照してください。
 
 #### <a name="create-a-resource-group"></a>リソース グループを作成する
 
@@ -86,9 +86,9 @@ Azure には、管理グループ、サブスクリプション、リソース �
 - [初期サブスクリプションを作成する](../azure-best-practices/initial-subscriptions.md)
 - [追加の Azure サブスクリプションを作成して、Azure 環境をスケーリングする](../azure-best-practices/scale-subscriptions.md)
 - [Azure サブスクリプションを整理および管理する](../azure-best-practices/organize-subscriptions.md)
-- [Azure 管理グループでリソースを整理する](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Azure 管理グループでリソースを整理する](/azure/azure-resource-manager/management-groups-overview)
 - [Azure でのリソース アクセス管理について](../../govern/resource-consistency/resource-access-management.md)
-- [サブスクリプション サービスの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
+- [サブスクリプション サービスの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -136,7 +136,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 運用の面では、IT チームが必要とする情報が名前に含まれるよう徹底する必要があります。 ワークロード、アプリケーション、環境、重要度など、リソースの管理に役立つ情報を識別する情報を使用します。
 
-リソースの種類によって、[名前付け規則と制限事項](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)が異なります。 特に企業のクラウド導入作業をサポートすることを目的とする詳細と推奨事項については、クラウド導入フレームワークの[名前付けとタグ付けに関するガイダンス](../azure-best-practices/naming-and-tagging.md)を参照してください。
+リソースの種類によって、[名前付け規則と制限事項](/azure/azure-resource-manager/management/resource-name-rules)が異なります。 特に企業のクラウド導入作業をサポートすることを目的とする詳細と推奨事項については、クラウド導入フレームワークの[名前付けとタグ付けに関するガイダンス](../azure-best-practices/naming-and-tagging.md)を参照してください。
 
 次の表には、例としてのいくつかの Azure リソースの種類に対する名前付けパターンが含まれています。
 
@@ -182,7 +182,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)」をご覧ください。
+詳しくは、「[タグを使用した Azure リソースの整理](/azure/azure-resource-manager/management/tag-resources)」をご覧ください。
 
 ::: zone-end
 

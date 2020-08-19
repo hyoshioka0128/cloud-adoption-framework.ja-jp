@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0bb22264d0a03a9fe19030af4a0057118b71756f
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: d7c7f8438c8dc4a68d7e8e46678477119975d449
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448709"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571135"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -93,7 +93,7 @@ Azure Active Directory Domain Services などのテナント サービスから�
 
 ### <a name="collect-and-stream-monitoring-data-to-third-party-or-on-premises-tools"></a>監視データを収集してサード パーティ ツールまたはオンプレミス ツールにストリーミングする
 
-Azure インフラストラクチャおよびプラットフォームのリソースからメトリックとログを収集するには、それらのリソースを対象にした Azure 診断ログを有効にする必要があります。 さらに、Azure VM では、Azure Diagnostics の拡張機能を有効にすることで、ゲスト OS からメトリックとログを収集できます。 Azure リソースから生成された診断データを、オンプレミスのツールまたはマネージド サービス プロバイダーに転送するには、データをそれらにストリーミングするように [Event Hubs](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-stream-event-hubs) を構成します。
+Azure インフラストラクチャおよびプラットフォームのリソースからメトリックとログを収集するには、それらのリソースを対象にした Azure 診断ログを有効にする必要があります。 さらに、Azure VM では、Azure Diagnostics の拡張機能を有効にすることで、ゲスト OS からメトリックとログを収集できます。 Azure リソースから生成された診断データを、オンプレミスのツールまたはマネージド サービス プロバイダーに転送するには、データをそれらにストリーミングするように [Event Hubs](/azure/azure-monitor/platform/diagnostic-logs-stream-event-hubs) を構成します。
 
 ### <a name="monitor-with-system-center-operations-manager"></a>System Center Operations Manager を使用して監視する
 
@@ -119,7 +119,7 @@ Azure で実行されているワークロードを監視するには、次の�
 
 アプリケーション層では、Operations Manager は .NET および Java の一部のレガシ バージョンに対して基本的なアプリケーション パフォーマンス監視機能を提供します。 ハイブリッド クラウド環境内の特定のアプリケーションがオフラインまたはネットワーク分離モードで動作していて、パブリック クラウド サービスと通信できない場合、一部の限られたシナリオでは Operations Manager のアプリケーション パフォーマンスの監視 (APM) を使用できる場合があります。 レガシ プラットフォーム上で実行されていなくても、オンプレミスと、ファイアウォールを介して (直接またはプロキシ経由) Azure と通信できるパブリック クラウドの両方でホストされているアプリケーションの場合は、Azure Monitor Application Insights を使用します。 このサービスでは、ASP.NET、ASP.NET Core、Java、JavaScript、および Node.js が高度にサポートされる、詳細なコードレベルの監視が提供されます。
 
-外部から到達できる Web アプリケーションの場合は、[可用性の監視]( https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability)と呼ばれる代理トランザクションの種類を有効にする必要があります。 アプリケーション、またはアプリが依存しているクリティカルな HTTP/HTTPS エンドポイントが、利用可能で応答可能かどうかを把握していることが重要です。 Application Insights の可用性の監視を使用すると、複数の Azure データセンターからテストを実行し、グローバルな観点からアプリケーションの正常性についての分析情報を得ることができます。
+外部から到達できる Web アプリケーションの場合は、[可用性の監視](/azure/azure-monitor/app/monitor-web-app-availability)と呼ばれる代理トランザクションの種類を有効にする必要があります。 アプリケーション、またはアプリが依存しているクリティカルな HTTP/HTTPS エンドポイントが、利用可能で応答可能かどうかを把握していることが重要です。 Application Insights の可用性の監視を使用すると、複数の Azure データセンターからテストを実行し、グローバルな観点からアプリケーションの正常性についての分析情報を得ることができます。
 
 Operations Manager を使用して Azure でホストされているリソースを監視することはできますが、Azure Monitor を組み込むことにはいくつかの利点があります。その利点で Operations Manager の制限を克服し、最終的な移行をサポートする強力な基盤を確立できます。 ここでは、そのような長所と短所、およびハイブリッド監視戦略に Azure Monitor を含める場合の推奨事項について見ていきます。  
 
@@ -172,7 +172,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 System Center Operations Manager を使用して、Azure Stack の総合的な監視を実現できます。 具体的には、仮想マシン上のテナント (リソース レベル) で実行されているワークロード、および、Azure Stack をホストしているインフラストラクチャ (物理サーバーとネットワーク スイッチ) を監視できます。
 
-Azure Stack に含まれている[インフラストラクチャ監視機能](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health)を組み合わせて総合的な監視を実現することもできます。 これらの機能は、Azure Stack リージョンの正常性とアラート、および Azure Stack の [Azure Monitor サービス](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data)を表示するために役立ちます。後者は、基本レベルのインフラストラクチャ メトリックと、ほとんどのサービスのログを提供します。
+Azure Stack に含まれている[インフラストラクチャ監視機能](/azure/azure-stack/azure-stack-monitor-health)を組み合わせて総合的な監視を実現することもできます。 これらの機能は、Azure Stack リージョンの正常性とアラート、および Azure Stack の [Azure Monitor サービス](/azure/azure-stack/user/azure-stack-metrics-azure-data)を表示するために役立ちます。後者は、基本レベルのインフラストラクチャ メトリックと、ほとんどのサービスのログを提供します。
 
 Operations Manager に既に投資している場合は、Azure Stack 管理パックを使用して、リージョン、リソース プロバイダー、更新プログラム、更新プログラムの実行、スケール ユニット、ユニット ノード、インフラストラクチャのロール、それらのインスタンス (ハードウェア リソースで構成される論理エンティティ) など、Azure Stack デプロイの可用性と正常性の状態を監視します。 この管理パックでは、正常性および更新プログラムのリソース プロバイダーの REST API を使用して Azure Stack との通信が行われます。 物理サーバーとストレージ デバイスを監視するには、OEM ベンダーの管理パックを使用します (たとえば、Lenovo、Hewlett Packard、または Dell から提供されています)。 Operations Manager では、ネットワーク スイッチをネイティブに監視し、SNMP を使用して基本的な統計を収集することができます。 Azure 管理パックでは、2 つの基本的な手順に従ってテナント ワークロードを監視できます。 監視するサブスクリプションを構成してから、そのサブスクリプション用のモニターを追加します。
 

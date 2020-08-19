@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8243189c2db4c49d8d1f69e09c459e716130e46e
-ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
+ms.openlocfilehash: 7957cfedee535739b8d785a374e5133827b08968
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87524002"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569469"
 ---
 # <a name="get-started-manage-cloud-costs"></a>作業を開始しましょう。クラウド コストを管理する
 
@@ -47,7 +47,7 @@ ms.locfileid: "87524002"
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- すべてのワークロードとリソースが、[適切な名前付けおよびタグ付け規則](../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認します。 "コスト センター" と "技術所有者" のタグに特に重点を置いて、[Azure Policy を使用してタグ付け規則を適用](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)します。
+- すべてのワークロードとリソースが、[適切な名前付けおよびタグ付け規則](../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認します。 "コスト センター" と "技術所有者" のタグに特に重点を置いて、[Azure Policy を使用してタグ付け規則を適用](/azure/governance/policy/tutorials/govern-tags)します。
 - 企業全体での分析と改善の指針となる[コスト管理のベスト プラクティス](../govern/cost-management/best-practices.md)を定期的に確認して適用します。 最も影響力のあるガバナンス プラクティスの一部を次に示します。
 
   - [一般コストのベスト プラクティス](../govern/cost-management/best-practices.md)に従って、サイズ変更とコストを削減し、未使用のマシンを停止します。
@@ -55,9 +55,9 @@ ms.locfileid: "87524002"
   - [予約インスタンス](../govern/cost-management/best-practices.md#best-practice-use-azure-reserved-vm-instances)を調整して、リソース コストを削減します。
   - [リソース使用率を監視](../govern/cost-management/best-practices.md#best-practice-monitor-resource-utilization)して、リソースのパフォーマンスへの影響を最小限に抑えます。
   - 非運用環境を管理するポリシーを使用して、[非運用コストを削減](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs)します。
-  - [コストの最適化に関する推奨事項](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に従います。
+  - [コストの最適化に関する推奨事項](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)に従います。
 
-- コスト最適化のための効果的な変更を実装するには、ワークロード レベルでのトレードオフが必要になる場合があります。 [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/cost/tradeoffs) と [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) は、特定のワークロードの技術所有者との対話を導くのに役立ちます。
+- コスト最適化のための効果的な変更を実装するには、ワークロード レベルでのトレードオフが必要になる場合があります。 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs) と [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review) は、特定のワークロードの技術所有者との対話を導くのに役立ちます。
 - クラウド ガバナンスを初めて使用する場合は、ガバナンス手法を使用して、[ガバナンスのポリシー、プロセス、規範](../govern/index.md)を確立します。
 - コスト管理規範を初めて使用する場合は、[コスト管理規範の改善に関する記事](../govern/guides/complex/cost-management-improvement.md)に従うことを検討してください。特に、[実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)に関するセクションを重点的にお読みください。
 
@@ -78,7 +78,7 @@ ms.locfileid: "87524002"
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)に、動機、成果、業務上の正当な理由を記録します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)に、動機、成果、業務上の正当な理由を記録します。
 - Azure Cost Management を使用して最初の予算を作成します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
@@ -108,7 +108,7 @@ ms.locfileid: "87524002"
 - [インベントリの収集](../digital-estate/inventory.md)。 導入前に、デジタル資産を分析するためのデータ ソースを確立します。
 - [ベスト プラクティス:Azure Migrate](../plan/contoso-migration-assessment.md)。 Azure Migrate を使用してインベントリを収集します。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization)。 段階的な合理化では、予算を作成するために定量分析でクラウドの候補を特定します。
-- [コスト モデルと予測モデルの調整](../digital-estate/calculate.md)。 Azure Cost Management を使用して、[予算を作成](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コスト モデルと予測モデルを対応付けます。
+- [コスト モデルと予測モデルの調整](../digital-estate/calculate.md)。 Azure Cost Management を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)することにより、コスト モデルと予測モデルを対応付けます。
 - [クラウド導入計画の作成](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 実用的なワークロード、資産、タイムラインの詳細を含む計画を作成します。 この計画は、一定期間にわたる支出 (またはコスト予測) の基礎となります。 "_一定期間にわたる支出_" は、コスト管理ガバナンス規範内で、すべての実施可能な最適化分析のための最初のベースラインになります。
 
 <!-- markdownlint-disable MD033 -->
@@ -130,10 +130,10 @@ Azure 用の Microsoft クラウド導入フレームワークの準備手法で
 **成果物の完遂をサポートするうえでのガイダンス:**
 
 - [コストの追跡](../ready/azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access)。 適切に管理された環境階層を確立し、適切なレベルのコスト アクセスを提供し、各ランディング ゾーンで追加のコスト管理リソースを使用します。
-- [クラウドへの投資の最適化](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 投資を最適化するためのベスト プラクティスを理解します。
-- [予算の作成と管理](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 予算を作成し管理するためのベスト プラクティスを理解します。
-- [推奨事項に従ったコストの最適化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 コストを最適化する推奨事項を使用するためのベスト プラクティスを理解します。
-- [使用状況と支出の監視](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 ランディング ゾーン内の使用状況と支出を監視するためのベスト プラクティスを理解します。
+- [クラウドへの投資の最適化](/azure/cost-management-billing/costs/cost-mgt-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 投資を最適化するためのベスト プラクティスを理解します。
+- [予算の作成と管理](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 予算を作成し管理するためのベスト プラクティスを理解します。
+- [推奨事項に従ったコストの最適化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 コストを最適化する推奨事項を使用するためのベスト プラクティスを理解します。
+- [使用状況と支出の監視](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 ランディング ゾーン内の使用状況と支出を監視するためのベスト プラクティスを理解します。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -179,8 +179,8 @@ Azure 用の Microsoft クラウド導入フレームワークの準備手法で
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) を使用して、アーキテクチャに関する決定のバランスを把握します。
-- イノベーションでのコスト最適化に関する詳細なガイダンスについては、「[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)」をご覧ください。
+- [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review) を使用して、アーキテクチャに関する決定のバランスを把握します。
+- イノベーションでのコスト最適化に関する詳細なガイダンスについては、「[Microsoft Azure Well-Architected Framework](/azure/architecture/framework)」をご覧ください。
 
 <!-- markdownlint-disable MD033 -->
 <br>

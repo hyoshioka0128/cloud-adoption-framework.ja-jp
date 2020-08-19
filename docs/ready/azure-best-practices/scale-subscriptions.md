@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ec2cac2978047a95ef2199933286ec98e2e6d63f
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 29ae946d7ed18e84733e805d6d08dab3ea45bbd0
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479842"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569775"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>追加のサブスクリプションを作成して、Azure 環境をスケーリングする
 
@@ -26,7 +26,7 @@ ms.locfileid: "86479842"
 
 ## <a name="technical-considerations"></a>技術的な考慮事項
 
-**サブスクリプションの制限**: サブスクリプションでは、一部のリソースの種類に対して制限が定義されています。 たとえば、あるサブスクリプションでは仮想ネットワークの数に制限があります。 サブスクリプションがこれらの制限に近づいた場合は、別のサブスクリプションを作成し、そこに追加のリソースを置く必要があります。 詳細については、[Azure サブスクリプションとサービスの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#general-limits) に関する記事を参照してください。
+**サブスクリプションの制限**: サブスクリプションでは、一部のリソースの種類に対して制限が定義されています。 たとえば、あるサブスクリプションでは仮想ネットワークの数に制限があります。 サブスクリプションがこれらの制限に近づいた場合は、別のサブスクリプションを作成し、そこに追加のリソースを置く必要があります。 詳細については、[Azure サブスクリプションとサービスの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits#general-limits) に関する記事を参照してください。
 
 **クラシック モデルのリソース:** Azure を長期間使用している場合は、クラシック デプロイ モデルを使用して作成されたリソースが存在する可能性があります。 Azure のポリシー、ロールベースのアクセス制御、リソースのグループ化、およびタグは、クラシック モデルのリソースには適用できません。 これらのリソースは、クラシック モデルのリソースのみを含むサブスクリプションに移動する必要があります。
 
@@ -47,14 +47,14 @@ ms.locfileid: "86479842"
 
 ## <a name="moving-resources-between-subscriptions"></a>サブスクリプション間でのリソースの移動
 
-サブスクリプション モデルが大きくなると、一部のリソースを他のサブスクリプションに所属させることを決定する場合があります。 多くの種類のリソースをサブスクリプション間で移動できます。 また、自動デプロイを使用して、別のサブスクリプションでリソースを再作成することもできます。 詳細については、[別のリソース グループまたはサブスクリプションへの Azure リソースの移動](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)に関する記事をご覧ください。
+サブスクリプション モデルが大きくなると、一部のリソースを他のサブスクリプションに所属させることを決定する場合があります。 多くの種類のリソースをサブスクリプション間で移動できます。 また、自動デプロイを使用して、別のサブスクリプションでリソースを再作成することもできます。 詳細については、[別のリソース グループまたはサブスクリプションへの Azure リソースの移動](/azure/azure-resource-manager/management/move-resource-group-and-subscription)に関する記事をご覧ください。
 
 ## <a name="tips-for-creating-new-subscriptions"></a>新しいサブスクリプションを作成するためのヒント
 
 - サブスクリプションの新規作成の担当者を特定します。
 - サブスクリプションで既定で使用可能なリソースの種類を決定します。
 - すべての標準サブスクリプションの外観を決定します。 RBAC アクセス、ポリシー、タグ、インフラストラクチャ リソースなどの考慮事項があります。
-- 可能であれば、サービス プリンシパルを使用して[プログラムによって新しいサブスクリプションを作成します](https://docs.microsoft.com/azure/azure-resource-manager/management/programmatically-create-subscription)。 サブスクリプションを作成するには、[サービス プリンシパルにアクセス許可を付与する](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription)必要があります。 自動化されたワークフローを通じて新しいサブスクリプションを要求できるセキュリティ グループを定義します。
+- 可能であれば、サービス プリンシパルを使用して[プログラムによって新しいサブスクリプションを作成します](/azure/azure-resource-manager/management/programmatically-create-subscription)。 サブスクリプションを作成するには、[サービス プリンシパルにアクセス許可を付与する](/azure/azure-resource-manager/grant-access-to-create-subscription)必要があります。 自動化されたワークフローを通じて新しいサブスクリプションを要求できるセキュリティ グループを定義します。
 - エンタープライズ契約 (EA) をご利用のお客様は、組織で非 EA サブスクリプションの作成がブロックされるように Azure サポートにご依頼ください。
 
 ## <a name="next-steps"></a>次のステップ

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 73b49894ae375e5c5995e33057d29b48a61e57e2
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: d8674f04199a108dce424b81329697c3a25bfc03
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190755"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567786"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>クラウド管理のためのプラットフォームの特殊化
 
@@ -61,7 +61,7 @@ ms.locfileid: "86190755"
 
 システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、Azure 向けのクラウド導入フレームワーク全体で使用される環境ビューの範囲外です。
 
-このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。フレームワークの焦点は、アーキテクチャ エクセレンスの 5 つの要素の向上に当てられています。
+このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。フレームワークの焦点は、アーキテクチャ エクセレンスの 5 つの要素の向上に当てられています。
 
 - **コストの最適化**: もたらされる価値が最大になるようにコストを管理します。
 - **オペレーショナル エクセレンス:** 運用環境でのシステムの動作を維持するオペレーショナル プロセスに従います。
@@ -73,7 +73,7 @@ ms.locfileid: "86190755"
 
 次の **[自動修復]** タブでは、対処できない、または対処するべきではない技術的負債を修復する方法について説明します。
 
-システム設計の改善については、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) の詳細を確認してください。
+システム設計の改善については、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) の詳細を確認してください。
 
 システムの設計が向上したら、この記事に戻り、お使いの環境全体で改良を加え、スケーリングする新しい機会を見つけてください。
 
@@ -92,7 +92,7 @@ ms.locfileid: "86190755"
 
 技術的負債の解決が望ましいアプローチではない場合、通常は、自動修復が次の手順になります。 自動修復では、Azure Automation と Azure Monitor を使用して傾向を検出し、自動修復を提供することが最も一般的なアプローチです。
 
-自動修復に関するガイダンスについては、[Azure Automation とアラート](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook)に関する記事をご覧ください。
+自動修復に関するガイダンスについては、[Azure Automation とアラート](/azure/automation/automation-create-alert-triggered-runbook)に関する記事をご覧ください。
 
 ::: zone target="docs"
 
@@ -111,7 +111,7 @@ ms.locfileid: "86190755"
 
 最適化されたプラットフォームを最大限に導入し、メンテナンスのオーバーヘッドを最小限に抑えるには、そのプラットフォームを Azure サービス カタログに追加する必要があります。 カタログ内の各アプリケーションは、サービス カタログを介した内部使用のため、または外部の消費者向けのマーケットプレース オファリングとしてデプロイすることができます。
 
-サービス カタログに発行する手順については、[サービス カタログの発行](https://docs.microsoft.com/azure/managed-applications/publish-service-catalog-app)に関する一連の記事を参照してください。
+サービス カタログに発行する手順については、[サービス カタログの発行](/azure/managed-applications/publish-service-catalog-app)に関する一連の記事を参照してください。
 
 ### <a name="deploy-applications-from-the-service-catalog"></a>サービス カタログからアプリケーションをデプロイする
 
@@ -159,6 +159,6 @@ ms.locfileid: "86190755"
 
 コンテナーと SQL Server は、最も一般的な 2 つの一元管理プラットフォームです。 以下の記事は、これらのプラットフォームでの継続的な改善データ収集の開始に役立ちます。
 
-- [コンテナーのパフォーマンス](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-- [PaaS データベースのパフォーマンス](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
-- [IaaS データベースのパフォーマンス](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)
+- [コンテナーのパフォーマンス](/azure/azure-monitor/insights/container-insights-overview)
+- [PaaS データベースのパフォーマンス](/azure/azure-monitor/insights/azure-sql)
+- [IaaS データベースのパフォーマンス](/azure/azure-monitor/insights/sql-assessment)

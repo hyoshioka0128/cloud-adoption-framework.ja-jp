@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d1f6c4b5f0f672b9dd6b7fb9adc5b0fce4a54a6
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 72f793383bd525b48f3f8ae30cd6e0d470ddba64
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234822"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193281"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>移行の間のステージング アクティビティを理解する
 
@@ -29,7 +29,7 @@ ms.locfileid: "86234822"
 
 ## <a name="next-steps"></a>次のステップ
 
-ステージングされた資産がテストされ、文書化された後、[最適化アクティビティ](../optimize/index.md)に進むことができます。
+ステージングされた資産がテストされ、文書化された後、最適化アクティビティに進むことができます。
 
 > [!div class="nextstepaction"]
 > [移行されたワークロードの最適化](../optimize/index.md)

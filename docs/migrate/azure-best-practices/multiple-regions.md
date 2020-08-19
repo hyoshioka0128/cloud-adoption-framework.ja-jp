@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a7f7b3422b57ab2786f03b5c0b50d9e171a7107
-ms.sourcegitcommit: 452e09b543e7b84f943db5b02480ba2d18afd939
+ms.openlocfilehash: 9638e1a16c7e2acfecf2cdeebf5671c38af3c527
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866181"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570540"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure リージョンの決定ガイド
 
@@ -23,10 +23,10 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 - **容量:** 各リージョンには最大容量があります。 これは、どの種類のサブスクリプションでどの種類のサービスをどのような状況でデプロイできるかに影響する場合があります。 これは、サブスクリプション クォータとは異なります。 大規模なデータセンターを Azure に移行する計画をしている場合は、ご自分の地域の Azure フィールド チームまたはアカウント マネージャーに問い合わせて、必要な規模でデプロイできることを確認することをお勧めします。
 - **制約:** 特定のリージョンでのサービスのデプロイには、特定の制約が適用されます。 たとえば、一部のリージョンは、バックアップまたはフェールオーバーのターゲットとしてのみ使用できます。 注意が必要なその他の制約は、[データ主権要件](https://azure.microsoft.com/global-infrastructure/geographies)です。
 - **主権:** 特定のリージョンは、特定の主権エンティティ専用になっています。 すべてのリージョンは Azure リージョンですが、こうした主権リージョンは他の Azure から完全に分離されています。 これらは、必ずしも Microsoft によって管理されるわけではなく、特定の種類の顧客に制約される場合もあります。 このような主権リージョンは次のとおりです。
-    - [Azure China](https://azure.microsoft.com/global-infrastructure/china)
-    - [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany):Azure Germany は非推奨とされており、ドイツ国内の標準の非主権 Azure リージョンが推奨されています。
-    - [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
-    - [オーストラリア](https://azure.microsoft.com/global-infrastructure/australia)の 2 つのリージョンは Microsoft によって管理されていますが、これらはオーストラリア政府とその顧客および請負業者向けに提供されています。 そのため、これらのリージョンは、他のソブリン クラウドと似たクライアントの制約を受けます。
+  - [Azure China](https://azure.microsoft.com/global-infrastructure/china)
+  - [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany):Azure Germany は非推奨とされており、ドイツ国内の標準の非主権 Azure リージョンが推奨されています。
+  - [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
+  - [オーストラリア](https://azure.microsoft.com/global-infrastructure/australia)の 2 つのリージョンは Microsoft によって管理されていますが、これらはオーストラリア政府とその顧客および請負業者向けに提供されています。 そのため、これらのリージョンは、他のソブリン クラウドと似たクライアントの制約を受けます。
 
 ## <a name="operate-in-multiple-geographic-regions"></a>複数の地理的リージョンでの運用
 
@@ -43,19 +43,19 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 堅牢なクラウド デプロイには、Azure リージョンが考慮された、十分に考慮されたネットワークが必要です。 次のことを考慮する必要があります。
 
-- Azure リージョンはペアで配置されています。 リージョンで致命的な障害が発生した場合に備えて、同じ地理的境界内の別のリージョンがペア リージョンとして指定されています。 回復性の一次的および二次的戦略として、ペア リージョンに配置することを検討してください。 この方法の 1 つの例外は `Brazil South` です。これは、`South Central US` とペアになっています。 詳細については、「[Azure のペアになっているリージョン](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)」をご覧ください。
+- Azure リージョンはペアで配置されています。 リージョンで致命的な障害が発生した場合に備えて、同じ地理的境界内の別のリージョンがペア リージョンとして指定されています。 回復性の一次的および二次的戦略として、ペア リージョンに配置することを検討してください。 この方法の 1 つの例外は `Brazil South` です。これは、`South Central US` とペアになっています。 詳細については、「[Azure のペアになっているリージョン](/azure/best-practices-availability-paired-regions)」をご覧ください。
 
-  - Azure Storage は、[geo 冗長ストレージ (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) をサポートしています。 これは、お客様のデータの 3 つのコピーがプライマリ リージョンに格納され、ペア リージョンにも 3 つのコピーが追加で格納されることを意味します。 GRS のストレージ ペアリングを変更することはできません。
+  - Azure Storage は、[geo 冗長ストレージ (GRS)](/azure/storage/common/storage-redundancy-grs) をサポートしています。 これは、お客様のデータの 3 つのコピーがプライマリ リージョンに格納され、ペア リージョンにも 3 つのコピーが追加で格納されることを意味します。 GRS のストレージ ペアリングを変更することはできません。
   - Azure Storage GRS に依存するサービスでは、このペア リージョンの機能を利用できます。 そのためには、それをサポートするようにアプリケーションとネットワークを配置する必要があります。
   - リージョンの回復性のニーズに対応するために GRS を使用する予定がない場合は、セカンダリとしてペアになっているリージョンを使用しないでください。 リージョンで障害が発生した場合、リソースの移行時に、ペア リージョンのリソースに大きな負荷がかかります。 代替サイトに回復して、復旧時の速度を向上させることにより、このような負荷を回避できます。
   > [!WARNING]
-  > VM のバックアップまたは復旧には Azure GRS を使用しないでください。 代わりに、サービスとしてのインフラストラクチャ (IaaS) ワークロードの回復性をサポートするために、[Azure Backup](https://azure.microsoft.com/services/backup) と [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) を [Azure マネージド ディスク](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)と共に使用してください。
+  > VM のバックアップまたは復旧には Azure GRS を使用しないでください。 代わりに、サービスとしてのインフラストラクチャ (IaaS) ワークロードの回復性をサポートするために、[Azure Backup](https://azure.microsoft.com/services/backup) と [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) を [Azure マネージド ディスク](/azure/virtual-machines/windows/managed-disks-overview)と共に使用してください。
 
-- Azure Backup と Azure Site Recovery は、IaaS およびデータ バックアップのニーズに応じてネットワーク設計と連携して機能し、リージョンの回復性を高めます。 データ転送を Microsoft のバックボーンにとどめ、可能な場合は[仮想ネットワーク ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)を使用するように、ネットワークが最適化されていることを確認します。 グローバルにデプロイしている大規模な組織では、リージョン間のトラフィックをルーティングして、リージョンのエグレス料金を節約するために [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) を使用することがあります。
+- Azure Backup と Azure Site Recovery は、IaaS およびデータ バックアップのニーズに応じてネットワーク設計と連携して機能し、リージョンの回復性を高めます。 データ転送を Microsoft のバックボーンにとどめ、可能な場合は[仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を使用するように、ネットワークが最適化されていることを確認します。 グローバルにデプロイしている大規模な組織では、リージョン間のトラフィックをルーティングして、リージョンのエグレス料金を節約するために [ExpressRoute Premium](/azure/expressroute/expressroute-introduction) を使用することがあります。
 
 - Azure リソース グループは、リージョン固有のものです。 ただし、通常、リソース グループ内のリソースは複数のリージョンにまたがります。 リージョンの障害が発生した場合、そのリソース グループ内の他のリージョンのリソースは引き続き機能するのに、影響を受けるリージョンではリソース グループに対するコントロール プレーン操作が失敗することを考慮してください。 これは、ネットワークの設計とリソース グループの設計の両方に影響を与える可能性があります。
 
-- Azure 内の多くのサービスとしてのプラットフォーム (PaaS) サービスは、[サービス エンドポイント](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview)や [Azure Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview) をサポートしています。 これらのソリューションはいずれも、リージョンの回復性、移行、ガバナンスの点で、ネットワークに関する考慮事項に大きく影響します。
+- Azure 内の多くのサービスとしてのプラットフォーム (PaaS) サービスは、[サービス エンドポイント](/azure/virtual-network/virtual-network-service-endpoints-overview)や [Azure Private Link](/azure/private-link/private-link-overview) をサポートしています。 これらのソリューションはいずれも、リージョンの回復性、移行、ガバナンスの点で、ネットワークに関する考慮事項に大きく影響します。
 
 - 多くの PaaS サービスは、独自のリージョンの回復性ソリューションに依存しています。 たとえば、Azure SQL Database と Azure Cosmos DB のいずれからも、簡単に追加リージョンにレプリケートできます。 Azure DNS などのサービスには、リージョンの依存関係はありません。 導入プロセスで使用するサービスを検討する際には、各 Azure サービスで必要となる可能性があるフェールオーバー機能と復旧手順を明確に理解しておきます。
 
@@ -112,7 +112,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 次のアプローチでは、グローバルな移行の複雑さに対処するためのデータドリブン モデルを使用します。 移行の範囲に複数のリージョンが含まれる場合、クラウド導入チームは、次の準備に関する考慮事項を評価する必要があります。
 
-- データ主権によって、一部の資産のローカライズが必要な場合がありますが、多くの資産はそうしたコンプライアンスの制約の影響を受けない可能性があります。 ログ、レポート、ネットワーク ルーティング、ID、その他の中央 IT サービスは、複数のサブスクリプション、または複数のリージョンにまたがって共有サービスとしてホストされるのがふさわしいと考えられます。 クラウド導入チームは、[共有サービスを含むハブおよびスポーク トポロジの参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)の説明に従って、これらのサービスの共有サービス モデルを使用して評価する必要があります。
+- データ主権によって、一部の資産のローカライズが必要な場合がありますが、多くの資産はそうしたコンプライアンスの制約の影響を受けない可能性があります。 ログ、レポート、ネットワーク ルーティング、ID、その他の中央 IT サービスは、複数のサブスクリプション、または複数のリージョンにまたがって共有サービスとしてホストされるのがふさわしいと考えられます。 クラウド導入チームは、[共有サービスを含むハブおよびスポーク トポロジの参照アーキテクチャ](/azure/architecture/reference-architectures/hybrid-networking/shared-services)の説明に従って、これらのサービスの共有サービス モデルを使用して評価する必要があります。
 - 類似した環境の複数のインスタンスをデプロイする場合、環境ファクトリで整合性を作成し、ガバナンスを改善して、デプロイを加速させることができます。 [複雑な企業向けのガバナンス ガイド](../../govern/guides/complex/index.md)では、複数のリージョンにわたる規模の環境を作成するアプローチを確立しています。
 
 チームがベースライン アプローチに慣れ、準備が整ったら、データドリブンの前提条件についていくつか考慮する必要があります。
@@ -132,16 +132,16 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 ### <a name="suggested-action-during-the-assess-process"></a>評価プロセス中に推奨されるアクション
 
-**データセンターにまたがる依存関係の評価:** [Azure Migrate の依存関係視覚化ツール](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)は、依存関係の特定を支援できます。 移行の前にこれらのツールを使用することをお勧めします。 グローバルな複雑さに対処する場合は、これは評価プロセスで実行する必要がある手順になります。 [依存関係のグループ化](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)による視覚化は、ワークロードをサポートするために必要な資産の IP アドレスとポートを特定することを支援できます。
+**データセンターにまたがる依存関係の評価:** [Azure Migrate の依存関係視覚化ツール](/azure/migrate/concepts-dependency-visualization)は、依存関係の特定を支援できます。 移行の前にこれらのツールを使用することをお勧めします。 グローバルな複雑さに対処する場合は、これは評価プロセスで実行する必要がある手順になります。 [依存関係のグループ化](/azure/migrate/how-to-create-group-machine-dependencies)による視覚化は、ワークロードをサポートするために必要な資産の IP アドレスとポートを特定することを支援できます。
 
 > [!IMPORTANT]
 >
 > - 資産の配置と IP アドレス スキーマを理解している該当分野の専門家が、セカンダリ データセンターに存在している資産を識別する必要があります。
 > - 視覚化された下流方向の依存関係とクライアントの両方を評価して、双方向の依存関係を理解します。
 
-**グローバル ユーザーへの影響の特定:** 前提条件のユーザー プロファイル分析の結果から、グローバル ユーザー プロファイルに影響を受けるすべてのワークロードを特定する必要があります。 影響を受けるワークロードの一覧に移行候補が含まれる場合、移行を準備するアーキテクトは、ネットワークおよび運用の領域の専門家に問い合わせる必要があります。 これらの専門家は、ネットワーク ルーティングとパフォーマンスの予想を検証する点で助けになります。 少なくとも、アーキテクチャには、最も近いネットワーク運用センターと Azure との間の ExpressRoute 接続を含める必要があります。 [ExpressRoute 接続の参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)は、必要な接続の構成に役立ちます。
+**グローバル ユーザーへの影響の特定:** 前提条件のユーザー プロファイル分析の結果から、グローバル ユーザー プロファイルに影響を受けるすべてのワークロードを特定する必要があります。 影響を受けるワークロードの一覧に移行候補が含まれる場合、移行を準備するアーキテクトは、ネットワークおよび運用の領域の専門家に問い合わせる必要があります。 これらの専門家は、ネットワーク ルーティングとパフォーマンスの予想を検証する点で助けになります。 少なくとも、アーキテクチャには、最も近いネットワーク運用センターと Azure との間の ExpressRoute 接続を含める必要があります。 [ExpressRoute 接続の参照アーキテクチャ](/azure/architecture/reference-architectures/hybrid-networking/expressroute)は、必要な接続の構成に役立ちます。
 
-**コンプライアンスのための設計:** 前提条件のユーザー プロファイル分析の結果から、データ主権要件の影響を受けるすべてのワークロードを特定する必要があります。 評価プロセスのアーキテクチャ アクティビティ中に、担当のアーキテクトは、コンプライアンス領域の専門家に問い合わせる必要があります。 これらの専門家は、複数のリージョン間で移行とデプロイを実行するための要件を把握する点で助けになります。 このような要件は、設計戦略に大きく影響します。 [マルチリージョン Web アプリケーション](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region)と[マルチリー ジョン n 層アプリケーション](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)の参照アーキテクチャは、設計に役立ちます。
+**コンプライアンスのための設計:** 前提条件のユーザー プロファイル分析の結果から、データ主権要件の影響を受けるすべてのワークロードを特定する必要があります。 評価プロセスのアーキテクチャ アクティビティ中に、担当のアーキテクトは、コンプライアンス領域の専門家に問い合わせる必要があります。 これらの専門家は、複数のリージョン間で移行とデプロイを実行するための要件を把握する点で助けになります。 このような要件は、設計戦略に大きく影響します。 [マルチリージョン Web アプリケーション](/azure/architecture/reference-architectures/app-service-web-app/multi-region)と[マルチリー ジョン n 層アプリケーション](/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)の参照アーキテクチャは、設計に役立ちます。
 
 > [!WARNING]
 > 上記のいずれかの参照アーキテクチャを使用する場合、データ主権要件を遵守するために、レプリケーション プロセスから特定のデータ要素を除外することが必要になる場合があります。 これにより、昇格プロセスに手順が追加されます。
@@ -158,9 +158,9 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 **ネットワーク帯域幅の設計:** レプリケーションおよび継続的な同期時に、管理者は、ソース データセンターからターゲット Azure データセンター内の Site Recovery コンテナーに、バイナリ データをネットワーク経由で移動します。 このプロセスは帯域幅を消費します。 2 つ目のリージョンへのワークロードの複製により、消費される帯域幅の量が 2 倍になります。 帯域幅が制限されているか、ワークロードに大量の構成またはデータ ドリフトが含まれる場合、移行を完了するために必要な時間を妨げる可能性があります。 さらに重要なことに、ソース データセンターの帯域幅に引き続き依存しているユーザーやアプリケーションのエクスペリエンスに影響する可能性があります。
 
-**データの同期:** 最大帯域幅の浪費が、データ プラットフォームの同期に由来する場合がよくあります。 [マルチリージョン Web アプリケーション](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region)と[マルチリージョン n 層アプリケーション](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)の参照アーキテクチャで定義されているように、多くの場合にアプリケーションを一致させるために、データの同期が必要になります。 これがアプリケーションの望ましい運用状態である場合、ソース データ プラットフォームと各クラウド プラットフォーム間の同期を完了しておくことが賢明な場合があります。 これは、アプリケーションと中間層の資産を移行する前に行う必要があります。
+**データの同期:** 最大帯域幅の浪費が、データ プラットフォームの同期に由来する場合がよくあります。 [マルチリージョン Web アプリケーション](/azure/architecture/reference-architectures/app-service-web-app/multi-region)と[マルチリージョン n 層アプリケーション](/azure/architecture/reference-architectures/n-tier/multi-region-sql-server)の参照アーキテクチャで定義されているように、多くの場合にアプリケーションを一致させるために、データの同期が必要になります。 これがアプリケーションの望ましい運用状態である場合、ソース データ プラットフォームと各クラウド プラットフォーム間の同期を完了しておくことが賢明な場合があります。 これは、アプリケーションと中間層の資産を移行する前に行う必要があります。
 
-**Azure から Azure へのディザスター リカバリー:** 代替オプションにより、複雑さをさらに軽減できる場合があります。 タイムラインとデータ同期が 2 段階のデプロイを処理する場合、[Azure から Azure へのディザスター リカバリー](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-architecture)が許容可能な解決策になると考えられます。 このシナリオでは、単一の Site Recovery コンテナーと、構成またはプロセス サーバー設計を使用して、ワークロードを最初の Azure データセンターに移行します。 ワークロードをテストしたら、移行済みの資産から 2 つ目の Azure データセンターにそれを回復できます。 このアプローチでは、ソースデータセンター内のリソースに対する影響が減り、Azure データセンター間で利用可能な高速の転送速度と高い帯域幅制限を利用します。
+**Azure から Azure へのディザスター リカバリー:** 代替オプションにより、複雑さをさらに軽減できる場合があります。 タイムラインとデータ同期が 2 段階のデプロイを処理する場合、[Azure から Azure へのディザスター リカバリー](/azure/site-recovery/azure-to-azure-architecture)が許容可能な解決策になると考えられます。 このシナリオでは、単一の Site Recovery コンテナーと、構成またはプロセス サーバー設計を使用して、ワークロードを最初の Azure データセンターに移行します。 ワークロードをテストしたら、移行済みの資産から 2 つ目の Azure データセンターにそれを回復できます。 このアプローチでは、ソースデータセンター内のリソースに対する影響が減り、Azure データセンター間で利用可能な高速の転送速度と高い帯域幅制限を利用します。
 
 > [!NOTE]
 > このアプローチでは、エグレス帯域幅の料金が追加で発生して、短期的な移行コストは増加する場合があります。

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8c598af7e0f0cb1c5e008cceaea508cc157b1657
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: cafc53ed064db421c213534ce58f6c9581085dde
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473218"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570574"
 ---
 # <a name="multiple-datacenters"></a>複数のデータセンター
 
@@ -36,13 +36,12 @@ ms.locfileid: "87473218"
 
 ### <a name="suggested-action-during-the-assess-process"></a>評価プロセス中に推奨されるアクション
 
-**データセンターにまたがる依存関係の評価:** [Azure Migrate の依存関係視覚化ツール](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)は、依存関係の特定を支援できます。 通常、移行前にこのツールセットを使用するのがベスト プラクティスです。 ただし、グローバルな複雑さに対処する場合、これは評価プロセスで必要な手順になります。 [依存関係のグループ化](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)による視覚化は、ワークロードをサポートするために必要な資産の IP アドレスとポートを特定することを支援できます。
+**データセンターにまたがる依存関係の評価:** [Azure Migrate の依存関係視覚化ツール](/azure/migrate/concepts-dependency-visualization)は、依存関係の特定を支援できます。 通常、移行前にこのツールセットを使用するのがベスト プラクティスです。 ただし、グローバルな複雑さに対処する場合、これは評価プロセスで必要な手順になります。 [依存関係のグループ化](/azure/migrate/how-to-create-group-machine-dependencies)による視覚化は、ワークロードをサポートするために必要な資産の IP アドレスとポートを特定することを支援できます。
 
 > [!IMPORTANT]
 >
 > - 資産の配置と IP アドレス スキーマを理解している該当分野の専門家が、セカンダリ データセンターに存在している資産を識別する必要があります。
 > - 視覚化された下流方向の依存関係とクライアントの両方を評価して、双方向の依存関係を理解します。
-
 
 ## <a name="migration-process-changes"></a>移行プロセスの変更
 

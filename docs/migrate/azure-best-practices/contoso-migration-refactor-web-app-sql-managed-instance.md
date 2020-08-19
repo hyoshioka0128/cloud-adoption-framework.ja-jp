@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 16b0e1835f358eb4df98e06bb241f2ec0f7c5e8d
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 9bdf860480e75348d0d234f7b068d8762ccf0174
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473116"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567616"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -29,7 +29,7 @@ Contoso の IT リーダーシップ チームは、ビジネス パートナー
 
 - **ビジネスの成長への対応**。 Contoso は成長を続けており、オンプレミスのシステムとインフラストラクチャに負荷がかかっています。
 - **効率化**。 Contoso では、不要な手順を排除し、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は IT に対して、時間やコストを無駄にせず、迅速に作業を行ってもらう必要があります。これは、例えば、顧客の要求に素早く対応するためです。
-- **機敏性の強化**。  Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済での成功を実現するために、市場の変化に遅れることなく対応できる必要があります。 対応の遅さが障害となったり、ビジネスを阻害したりすることがあってはなりません。
+- **機敏性の強化**。 Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済での成功を実現するために、市場の変化に遅れることなく対応できる必要があります。 対応の遅さが障害となったり、ビジネスを阻害したりすることがあってはなりません。
 - **スケール**。 ビジネスが順調に成長していく中で、Contoso IT は、同じペースで拡張できるシステムを提供する必要があります。
 - **コストの削減**。 Contoso はライセンス コストを最小限に抑えたいと考えています。
 
@@ -97,10 +97,10 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)と [Azure Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
-| [Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | SQL Managed Instance は、Azure 内のフル マネージド SQL Server インスタンスを表すマネージド データベース サービスです。 最新バージョンの SQL Server データベース エンジンと同じコードを使用し、最新の機能、パフォーマンスの向上、およびセキュリティ更新プログラムが適用されています。 | Azure で実行されている SQL マネージド インスタンスを使用すると、容量に基づく料金がかかります。 詳細については、[SQL Managed Instance の価格](https://azure.microsoft.com/pricing/details/sql-database/managed)に関するページを参照してください。 |
-| [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | フル マネージド プラットフォームを使用した強力なクラウド アプリケーションを作成できます。 | 価格は、サイズ、場所、使用時間に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
-| [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | アプリケーション開発のための継続的インテグレーションと継続的デプロイ (CI/CD) パイプラインが用意されています。 パイプラインは、アプリケーション コードを管理するための Git リポジトリ、パッケージやその他のビルド成果物を生成するためのビルド システム、開発、テスト、および運用環境で変更をデプロイするためのリリース管理システムから始まります。 |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)と [Azure Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
+| [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance) | SQL Managed Instance は、Azure 内のフル マネージド SQL Server インスタンスを表すマネージド データベース サービスです。 最新バージョンの SQL Server データベース エンジンと同じコードを使用し、最新の機能、パフォーマンスの向上、およびセキュリティ更新プログラムが適用されています。 | Azure で実行されている SQL マネージド インスタンスを使用すると、容量に基づく料金がかかります。 詳細については、[SQL Managed Instance の価格](https://azure.microsoft.com/pricing/details/sql-database/managed)に関するページを参照してください。 |
+| [Azure App Service](/azure/app-service/overview) | フル マネージド プラットフォームを使用した強力なクラウド アプリケーションを作成できます。 | 価格は、サイズ、場所、使用時間に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
+| [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) | アプリケーション開発のための継続的インテグレーションと継続的デプロイ (CI/CD) パイプラインが用意されています。 パイプラインは、アプリケーション コードを管理するための Git リポジトリ、パッケージやその他のビルド成果物を生成するためのビルド システム、開発、テスト、および運用環境で変更をデプロイするためのリリース管理システムから始まります。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -132,10 +132,10 @@ Azure SQL マネージド インスタンスを設定するため、Contoso は�
 - マネージド インスタンスを作成した後、Contoso は、サブネットにリソースを追加することはできません。
 - サブネットにネットワーク セキュリティ グループを関連付けることはできません。
 - サブネットにはユーザー定義のルート テーブルが必要です。 割り当てられる唯一のルートが `0.0.0.0/0` の次ホップ インターネットである必要があります。
-- 仮想ネットワーク用に省略可能なカスタム DNS が指定されている場合、Azure 内の再帰的なリゾルバーの仮想 IP アドレス `168.63.129.16` をリストに追加する必要があります。 [Azure SQL マネージド インスタンスのカスタム DNS を構成する](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)方法を確認してください。
+- 仮想ネットワーク用に省略可能なカスタム DNS が指定されている場合、Azure 内の再帰的なリゾルバーの仮想 IP アドレス `168.63.129.16` をリストに追加する必要があります。 [Azure SQL マネージド インスタンスのカスタム DNS を構成する](/azure/sql-database/sql-database-managed-instance-custom-dns)方法を確認してください。
 - サブネットにサービス エンドポイント (ストレージまたは SQL) を関連付けることはできません。 仮想ネットワークではサービス エンドポイントを無効にする必要があります。
-- サブネットには 16 個以上の IP アドレスが必要です。 [マネージド インスタンス サブネットのサイズを指定する](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)方法を確認してください。
-- Contoso のハイブリッド環境では、カスタム DNS 設定が必要です。 Contoso は、自社の 1 つ以上の Azure DNS サーバーを使用するように DNS 設定を構成します。 [DNS のカスタマイズの詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns)。
+- サブネットには 16 個以上の IP アドレスが必要です。 [マネージド インスタンス サブネットのサイズを指定する](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)方法を確認してください。
+- Contoso のハイブリッド環境では、カスタム DNS 設定が必要です。 Contoso は、自社の 1 つ以上の Azure DNS サーバーを使用するように DNS 設定を構成します。 [DNS のカスタマイズの詳細については、こちらを参照してください](/azure/sql-database/sql-database-managed-instance-custom-dns)。
 
 ### <a name="set-up-a-virtual-network-for-the-managed-instance"></a>マネージド インスタンス用の仮想ネットワークを設定する
 
@@ -167,10 +167,10 @@ Contoso の管理者は仮想ネットワークを次のように設定します
 
 **さらにサポートが必要な場合**
 
-- [SQL Managed Instance の概要については、こちらをお読みください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)。
-- [SQL マネージド インスタンス用の仮想ネットワークを作成する](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)方法について参照してください。
-- [ピアリングを設定する方法については、こちらを参照してください](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering)。
-- [Azure Active Directory DNS 設定を更新する方法については、こちらを参照してください](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance)。
+- [SQL Managed Instance の概要については、こちらをお読みください](/azure/sql-database/sql-database-managed-instance)。
+- [SQL マネージド インスタンス用の仮想ネットワークを作成する](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)方法について参照してください。
+- [ピアリングを設定する方法については、こちらを参照してください](/azure/virtual-network/virtual-network-manage-peering)。
+- [Azure Active Directory DNS 設定を更新する方法については、こちらを参照してください](/azure/active-directory-domain-services/tutorial-create-instance)。
 
 ### <a name="set-up-routing"></a>ルーティングを設定する
 
@@ -199,7 +199,7 @@ Contoso の管理者は、次のようにしてルーティングを設定しま
 
 **さらにサポートが必要な場合**
 
-[マネージド インスタンス用のルートを設定する方法については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started)。
+[マネージド インスタンス用のルートを設定する方法については、こちらを参照してください](/azure/sql-database/sql-database-managed-instance-get-started)。
 
 ### <a name="create-a-managed-instance"></a>マネージド インスタンスを作成する
 
@@ -218,11 +218,11 @@ Contoso の管理者は、次のようにしてルーティングを設定しま
 
 **さらにサポートが必要な場合**
 
-[マネージド インスタンスをプロビジョニングする方法については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started)。
+[マネージド インスタンスをプロビジョニングする方法については、こちらを参照してください](/azure/sql-database/sql-database-managed-instance-get-started)。
 
 ## <a name="step-2-migrate-via-azure-database-migration-service"></a>手順 2:Azure Database Migration Service を使用して移行する
 
-Contoso の管理者は、[ステップバイステップの移行チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)の手順に従って、Azure Database Migration Service を使用してマネージド インスタンスを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
+Contoso の管理者は、[ステップバイステップの移行チュートリアル](/azure/dms/tutorial-sql-server-azure-sql-online)の手順に従って、Azure Database Migration Service を使用してマネージド インスタンスを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
 
 Contoso の管理者が行う作業の概要は次のとおりです。
 
@@ -411,21 +411,21 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
 ### <a name="security"></a>セキュリティ
 
-- Contoso は新しい `SmartHotel-Registration` データベースのセキュリティ保護に努めます。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso は新しい `SmartHotel-Registration` データベースのセキュリティ保護に努めます。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-security-overview)。
 - 特に、Contoso は証明書で SSL を使用するように Web アプリを更新します。
 
 ### <a name="backups"></a>バックアップ
 
-- Contoso チームは、Azure SQL Managed Instance のデータベースのバックアップ要件を確認します。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)。
-- また、SQL Database のバックアップと復元の管理について確認します。 自動バックアップについては、[こちら](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)をご覧ください。
-- データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループの実装を検討します。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso チームは、Azure SQL Managed Instance のデータベースのバックアップ要件を確認します。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-automated-backups)。
+- また、SQL Database のバックアップと復元の管理について確認します。 自動バックアップについては、[こちら](/azure/sql-database/sql-database-automated-backups)をご覧ください。
+- データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループの実装を検討します。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-geo-replication-overview)。
 - 回復性を高めるために、メイン リージョン (`East US 2`) とセカンダリ リージョン (`Central US`) に Web アプリをデプロイすることを検討します。 チームはリージョンの障害が発生しても確実にフェールオーバーされるように Traffic Manager を構成することができます。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - すべてのリソースをデプロイした後、Contoso は[インフラストラクチャ計画](./contoso-migration-infrastructure.md#set-up-tagging)に基づいて Azure タグを割り当てます。
 - すべてのライセンスは、Contoso が使用している PaaS サービスのコストに組み込まれています。 このコストは Enterprise Agreement から差し引かれます。
-- Contoso は [Azure Cost Management と Billing](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
+- Contoso は [Azure Cost Management と Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
 
 ## <a name="conclusion"></a>まとめ
 

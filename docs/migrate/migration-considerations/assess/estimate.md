@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 127a553b94f4432fe08bbf7772407b401339470b
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 8a76d0bec6958bbed8abac2f0defe50a8233a480
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235026"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570234"
 ---
 # <a name="estimate-cloud-costs"></a>クラウド コストを見積もる
 
@@ -22,7 +22,7 @@ ms.locfileid: "86235026"
 
 デジタル資産のサイズは、移行の意思決定に直接影響を与えます。 含まれている VM が 250 個未満の移行は、10,000 個を超える VM を含む移行よりはるかに容易に見積もることができます。 最初の移行には小さなワークロードを選択することを強くお勧めします。 これにより、チームはより大きく、かつより複雑なワークロード移行を見積もろうとする前に、単純な移行作業のコストを見積もる方法を学習する機会を得ることができます。
 
-ただし、小さな (1 つのワークロードの) 移行にも引き続き、さまざまな量のサポート資産が含まれる場合があることに注意してください。 移行に含まれる VM が 1,000 個未満の場合は、[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) などのツールで十分にインベントリに関するデータを収集し、コストを予測できる可能性があります。 その他のコスト見積もりツールのオプションは、[デジタル資産のコスト計算](../../../digital-estate/calculate.md)に関する記事で説明されています。
+ただし、小さな (1 つのワークロードの) 移行にも引き続き、さまざまな量のサポート資産が含まれる場合があることに注意してください。 移行に含まれる VM が 1,000 個未満の場合は、[Azure Migrate](/azure/migrate/migrate-services-overview) などのツールで十分にインベントリに関するデータを収集し、コストを予測できる可能性があります。 その他のコスト見積もりツールのオプションは、[デジタル資産のコスト計算](../../../digital-estate/calculate.md)に関する記事で説明されています。
 
 デジタル資産が 1,000 個を超える場合でも、引き続き見積もりを 4 つまたは 5 つの実行可能なイテレーションに分解して、見積もりプロセスを管理しやすくすることができます。 より大きな資産、またはより高い予測の精度が必要な場合は、クラウド導入フレームワークの[デジタル資産](../../../digital-estate/index.md)に関するセクションで概要が説明されているような、より包括的なアプローチが必要になる可能性があります。
 

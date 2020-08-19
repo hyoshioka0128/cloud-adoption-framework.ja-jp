@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 5fc14f4ae460e3f2543754c2f99b5e278ea87815
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 04f105ea9db34d1321056fc325324ed4be038f0b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450477"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569316"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>作業を開始しましょう。ポートフォリオ全体で一貫したパフォーマンスを確保する
 
@@ -63,7 +63,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- すべてのワークロードとリソースが、[適切な名前付けおよびタグ付け規則](../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認します。 "重要度" のタグに特に重点を置いて、[Azure Policy を使用してタグ付け規則を適用](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)します。
+- すべてのワークロードとリソースが、[適切な名前付けおよびタグ付け規則](../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認します。 "重要度" のタグに特に重点を置いて、[Azure Policy を使用してタグ付け規則を適用](/azure/governance/policy/tutorials/govern-tags)します。
 - クラウド ガバナンスを初めて使用する場合は、ガバナンス手法を使用して、[ガバナンスのポリシー、プロセス、規範](../govern/index.md)を確立します。
 - コスト管理ガバナンス規範を初めて使用する場合は、[コスト管理の改善に関する記事](../govern/guides/complex/cost-management-improvement.md)に従って検討してください。特に、[実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)に関するセクションを重点的にお読みください。
 
@@ -80,7 +80,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)に、動機、成果、業務上の正当な理由を記録します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)に、動機、成果、業務上の正当な理由を記録します。
 - 管理ベースラインによって、クラウド導入の戦略的な方向性に沿った運用サポートが確実に提供されるようにします。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
@@ -104,7 +104,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を更新して、デジタル資産分析によってもたらされた変更を反映します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を更新して、デジタル資産分析によってもたらされた変更を反映します。
 - クラウド運用チームと連携して、短期的および長期的な導入計画における各ワークロードの重要度とビジネスへの影響を明確に定義します。
 - クラウド運用チームと連携して、オペレーション レディネスのタイムラインを確立します。
 
@@ -113,7 +113,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 - [インベントリの収集](../digital-estate/inventory.md): 導入前に、デジタル資産を分析するためのデータ ソースを確立します。
 - [ベスト プラクティス:Azure Migrate](../plan/contoso-migration-assessment.md):Azure Migrate を使用してインベントリを収集します。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization):増分型の合理化を進める中で、定量分析を使用して、予算編成のためにクラウドの候補を特定します。
-- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management を使用して、[予算を作成](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コスト モデルと予測モデルを対応付けます。
+- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)することにより、コスト モデルと予測モデルを対応付けます。
 - [クラウド導入計画の作成](../plan/plan-intro.md#build-your-cloud-adoption-plan): 実用的なワークロード、資産、タイムラインの詳細を含む計画を作成します。
 
 <!-- markdownlint-disable MD033 -->

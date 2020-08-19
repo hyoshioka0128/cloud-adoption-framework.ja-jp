@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ecc0dd8b3a91461d5c5d1dd1ce4c062646d974fb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a015370bdbc90440606b8089a4c644cad3b853c1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430496"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571849"
 ---
 # <a name="set-up-basic-alerts"></a>基本アラートを設定する
 
@@ -20,7 +20,7 @@ ms.locfileid: "80430496"
 
 ## <a name="azure-monitor-alerts"></a>Azure Monitor アラート
 
-Azure Monitor には[アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview)機能があり、問題が発生したときにメールやメッセージで通知を受け取ることができます。 これらの機能は、サーバーやその他のリソースによって生成されるログやメトリックなどの共通データ監視プラットフォームに基づいています。 Azure Monitor の共通のツール セットを使用すると、複数のリソースから結合されたデータを分析し、それを使用してアラートをトリガーできます。 こうしたトリガーには次のものが含まれます。
+Azure Monitor には[アラート](/azure/azure-monitor/platform/alerts-overview)機能があり、問題が発生したときにメールやメッセージで通知を受け取ることができます。 これらの機能は、サーバーやその他のリソースによって生成されるログやメトリックなどの共通データ監視プラットフォームに基づいています。 Azure Monitor の共通のツール セットを使用すると、複数のリソースから結合されたデータを分析し、それを使用してアラートをトリガーできます。 こうしたトリガーには次のものが含まれます。
 
 - メトリックの値。
 - ログの検索クエリ。
@@ -28,9 +28,9 @@ Azure Monitor には[アラート](https://docs.microsoft.com/azure/azure-monito
 - 基になっている Azure プラットフォームの正常性。
 - Web サイトの可用性のテスト。
 
-このサービスによって収集される監視データの提供元の詳しい説明については、[Azure Monitor データ ソースの一覧](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources)に関するページを参照してください。
+このサービスによって収集される監視データの提供元の詳しい説明については、[Azure Monitor データ ソースの一覧](/azure/azure-monitor/platform/data-sources)に関するページを参照してください。
 
-Azure portal を使用して手動でアラートを作成および管理する方法の詳細については、[Azure Monitor のドキュメント](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric)を参照してください。
+Azure portal を使用して手動でアラートを作成および管理する方法の詳細については、[Azure Monitor のドキュメント](/azure/azure-monitor/platform/alerts-metric)を参照してください。
 
 ## <a name="automated-deployment-of-recommended-alerts"></a>推奨アラートの自動デプロイ
 

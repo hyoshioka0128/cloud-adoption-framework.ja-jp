@@ -7,18 +7,18 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e02602545a229664f22b546a2ee39066c5fdc338
-ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
+ms.openlocfilehash: eb0b5b529bd649ee398631f528ffaa7c79470bad
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805496"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570880"
 ---
 # <a name="establish-an-operational-fitness-review"></a>運用適合性レビューの確立
 
 企業が Azure でワークロードの運用を開始したら、次のステップは、これらのワークロードに対する_運用適合性レビュー_のプロセスを確立することです。 このプロセスでは、これらのワークロードに対する_非機能的な_要件を列挙し、実装して、繰り返し確認します。 非機能的要件は、サービスの予期される運用的な動作に関連します。
 
-非機能的要件には、[アーキテクチャ エクセレンスの要素](https://docs.microsoft.com/azure/architecture/framework)と呼ばれる 5 つの重要なカテゴリがあります。
+非機能的要件には、[アーキテクチャ エクセレンスの要素](/azure/architecture/framework)と呼ばれる 5 つの重要なカテゴリがあります。
 
 - コストの最適化
 - オペレーショナル エクセレンス
@@ -42,12 +42,12 @@ Microsoft が実施するプロセスが、この記事で概要を説明する�
 
 このプロセスで焦点を当てることが多いのは、サービスの機能、つまりサービスに実行させたい_機能的_要件のセットです。 たとえば、製品配送サービスでは、製品の出荷場所と配達先の場所を決定し、配送中の製品を追跡し、通知を顧客に送信する機能が必要です。
 
-これに対し、_非機能的_な要件は、サービスの[可用性](https://docs.microsoft.com/azure/architecture/checklist/availability)、[回復性](https://docs.microsoft.com/azure/architecture/resiliency)、[スケーラビリティ](/azure/architecture/framework/scalability/performance-efficiency)などの特性に関係します。 これらの特性は、サービスの特定の機能の最終的な動作に直接影響しないため、機能的要件とは異なります。 しかし、非機能的要件は、サービスのパフォーマンスや継続性に関係します。
+これに対し、_非機能的_な要件は、サービスの[可用性](/azure/architecture/checklist/availability)、[回復性](/azure/architecture/resiliency)、[スケーラビリティ](/azure/architecture/framework/scalability/performance-efficiency)などの特性に関係します。 これらの特性は、サービスの特定の機能の最終的な動作に直接影響しないため、機能的要件とは異なります。 しかし、非機能的要件は、サービスのパフォーマンスや継続性に関係します。
 
 一部の非機能的な要件は、サービス レベル アグリーメント (SLA) の観点で指定できます。 たとえば、サービスの継続性は、次のように可用性の割合として表すことができます: "99.99% の時間を使用可能"。 他の非機能的要件は、定義がさらに難しく、運用ニーズが発展すると変化することがあります。 たとえば、コンシューマー指向のサービスは、需要急増後に予期しないスループット要件に直面する可能性があります。
 
 > [!NOTE]
-> 回復性の要件の詳細については、[信頼性の高い Azure アプリケーションの設計](https://docs.microsoft.com/azure/architecture/reliability#define-requirements)に関するページを参照してください。 この記事には、目標復旧時点 (RPO)、目標復旧時間 (RTO)、SLA の概念の説明が含まれています。
+> 回復性の要件の詳細については、[信頼性の高い Azure アプリケーションの設計](/azure/architecture/reliability#define-requirements)に関するページを参照してください。 この記事には、目標復旧時点 (RPO)、目標復旧時間 (RTO)、SLA の概念の説明が含まれています。
 
 ## <a name="process-for-operational-fitness-review"></a>運用適合性レビューのプロセス
 
@@ -69,7 +69,7 @@ Microsoft が実施するプロセスが、この記事で概要を説明する�
 
 1. **サービスの依存関係を分析する**。 ほとんどのビジネス操作には、複数のサポート サービス間のオーケストレーションが必要です。 サービス間の依存関係と、これらのサービスを介したミッション クリティカルなトランザクションのフローについて理解しておくことが重要です。
 
-    オンプレミスのサービスと Azure サービスの間の依存関係についても考慮してください。 ショッピング カートの例では、在庫管理サービスがオンプレミスでホスティングされていて、実際の倉庫から従業員によって入力されたデータを取り込む場合があります。 一方で、[Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction) などの Azure サービスや、[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) などのデータベースにオフプレミスでデータを格納する場合もあります。
+    オンプレミスのサービスと Azure サービスの間の依存関係についても考慮してください。 ショッピング カートの例では、在庫管理サービスがオンプレミスでホスティングされていて、実際の倉庫から従業員によって入力されたデータを取り込む場合があります。 一方で、[Azure Storage](/azure/storage/common/storage-introduction) などの Azure サービスや、[Azure Cosmos DB](/azure/cosmos-db/introduction) などのデータベースにオフプレミスでデータを格納する場合もあります。
 
 これらのアクティビティからの出力は、サービス操作に対する_スコアカード メトリック_のセットです。 スコアカードは、可用性、スケーラビリティ、ディザスター リカバリーなどの基準を測定します。 スコアカードのメトリックは、サービスで満たすことを期待する運用基準を表します。 これらのメトリックは、サービス操作に適した任意の細分性レベルで表現できます。
 
@@ -121,17 +121,17 @@ Microsoft が実施するプロセスが、この記事で概要を説明する�
 
 ## <a name="recommended-resources"></a>推奨リソース
 
-- 「[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework)」: ワークロードの品質を向上させるための基本原則について説明します。 フレームワークは、優れたアーキテクチャの 5 つの柱で構成されています。
+- 「[Microsoft Azure Well-Architected Framework](/azure/architecture/framework)」: ワークロードの品質を向上させるための基本原則について説明します。 フレームワークは、優れたアーキテクチャの 5 つの柱で構成されています。
   - コストの最適化
   - オペレーショナル エクセレンス
   - パフォーマンス効率
   - [信頼性]
   - Security
-- 「[Azure アプリケーションの 10 の設計原則](https://docs.microsoft.com/azure/architecture/guide/design-principles)」。
+- 「[Azure アプリケーションの 10 の設計原則](/azure/architecture/guide/design-principles)」。
     次の設計原則に従って、アプリケーションのスケーラビリティを上げて、回復力や管理しやすさを強化します。
-- 「[回復性に優れた Azure 用アプリケーションの設計](https://docs.microsoft.com/azure/architecture/resiliency)」。
+- 「[回復性に優れた Azure 用アプリケーションの設計](/azure/architecture/resiliency)」。
     次に、設計、実装からデプロイ、運用までというアプリケーションの有効期間全体に体系的な方法を使用することで、信頼性の高いシステムを構築して維持します。
-- [クラウド設計パターン](https://docs.microsoft.com/azure/architecture/patterns)。
+- [クラウド設計パターン](/azure/architecture/patterns)。
     設計パターンを使用して、アーキテクチャ エクセレンスの要素に基づくアプリケーションを構築します。
-- [Azure Advisor](https://docs.microsoft.com/azure/advisor)。
+- [Azure Advisor](/azure/advisor)。
     Azure Advisor では、高可用性、セキュリティ、パフォーマンス、コストに関してリソースを最適化するのに役立つ、使用状況と構成に基づいてパーソナライズされたレコメンデーションが提供されます。

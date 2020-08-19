@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c7751291689fb269eb68514173d143eac85fa87d
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 8b0d8896e6805a90aed940262236a8a4a3949cb6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85074873"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571543"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>設計の原則と高度な運用の適用
 
@@ -77,7 +77,7 @@ CCoE における役割の自然な配置の概要を次に示します。
 
 システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、クラウド導入フレームワークを介して実行される環境ビューの範囲外です。
 
-このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。フレームワークの焦点は、アーキテクチャ エクセレンスの 5 つの要素の向上に当てられています。
+このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。フレームワークの焦点は、アーキテクチャ エクセレンスの 5 つの要素の向上に当てられています。
 
 - **コストの最適化**: もたらされる価値が最大になるようにコストを管理します。
 - **オペレーショナル エクセレンス:** 運用環境でのシステムの動作を維持するオペレーショナル プロセスに従います。
@@ -87,7 +87,7 @@ CCoE における役割の自然な配置の概要を次に示します。
 
 ほとんどのビジネス中断は、何らかの形の技術的負債が発生しているか、またはアーキテクチャに欠陥があることを意味します。 既存のデプロイの場合、システム設計の改善は、既存の技術的負債の返済と見なすことができます。 新しいデプロイの場合、システム設計の改善は、技術的負債の回避と見なすことができます。 次の「自動修復」では、対処できない、または対処する必要がない技術的負債に対処する方法について説明します。
 
-システムの設計を改善するには、[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) の詳細をご覧ください。 システム設計が改善されたら、この記事に戻り、改善を行って改善点を環境全体に拡張できる新たな機会を見つけてください。
+システムの設計を改善するには、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) の詳細をご覧ください。 システム設計が改善されたら、この記事に戻り、改善を行って改善点を環境全体に拡張できる新たな機会を見つけてください。
 
 ### <a name="automated-remediation"></a>自動修復
 
@@ -95,7 +95,7 @@ CCoE における役割の自然な配置の概要を次に示します。
 
 技術的負債の解決が望ましい方法ではない場合、通常は、自動修復が必要な次の手順になります。 自動修復では、Azure Automation と Azure Monitor を使用して傾向を検出し、自動修復を提供することが最も一般的なアプローチです。
 
-自動修復に関するガイダンスについては、[Azure Automation とアラート](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook)に関する記事をご覧ください。
+自動修復に関するガイダンスについては、[Azure Automation とアラート](/azure/automation/automation-create-alert-triggered-runbook)に関する記事をご覧ください。
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>サービス カタログを使用したソリューションのスケーリング
 
@@ -103,12 +103,12 @@ CCoE における役割の自然な配置の概要を次に示します。
 
 最適化されたプラットフォームを最大限に導入し、メンテナンスのオーバーヘッドを最小限に抑えるには、そのプラットフォームをサービス カタログに追加する必要があります。 カタログ内の各アプリケーションは、サービス カタログを介した内部使用のため、または外部の消費者向けのマーケットプレース オファリングとしてデプロイすることができます。
 
-サービス カタログに発行する方法については、[サービス カタログへの発行](https://docs.microsoft.com/azure/managed-applications/publish-service-catalog-app)に関する一連の記事をご覧ください。
+サービス カタログに発行する方法については、[サービス カタログへの発行](/azure/managed-applications/publish-service-catalog-app)に関する一連の記事をご覧ください。
 
 ### <a name="continuous-improvement"></a>継続的な改善
 
 プラットフォームの特化とプラットフォームの運用は共に、導入、プラットフォーム、自動化、および管理の各チーム間で作成される強力なフィードバック ループに依存します。 各チームは、データ内のこのフィードバック ループを基にすることで、より賢明な意思決定を行うことができます。 プラットフォームの運用で長期的なビジネス コミットメントを実現するには、一元化されたプラットフォームに固有の分析情報を利用することが重要です。 コンテナーと SQL Server は、最も一般的に使用されている 2 つの一元管理型プラットフォームであるため、以下の記事をよく調べ、改善データの継続的収集を始めることを検討してください。
 
-- [コンテナーのパフォーマンス](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-- [PaaS データベースのパフォーマンス](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
-- [IaaS データベースのパフォーマンス](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)
+- [コンテナーのパフォーマンス](/azure/azure-monitor/insights/container-insights-overview)
+- [PaaS データベースのパフォーマンス](/azure/azure-monitor/insights/azure-sql)
+- [IaaS データベースのパフォーマンス](/azure/azure-monitor/insights/sql-assessment)

@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 494fcfd4ec411c517fbbb84399b9208b1f29eef1
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 54a1b556edad27f04d5da442cca39299cec2f4b8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040798"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568636"
 ---
 # <a name="knowledge-mining"></a>ナレッジ マイニング
 
@@ -41,11 +41,11 @@ Azure Cognitive Search は、Web アプリケーション、モバイル アプ�
 
 - **その他のリソースを調べる:**
 
-  - [Azure Cognitive Search の概要](https://docs.microsoft.com/azure/search/search-what-is-azure-search)
-  - [インデックス作成中のテキストとイメージの処理用の組み込みのコグニティブ スキル](https://docs.microsoft.com/azure/search/cognitive-search-predefined-skills)
-  - [Azure Cognitive Search の AI エンリッチメントのドキュメント リソース](https://docs.microsoft.com/azure/search/cognitive-search-resources-documentation)
-  - [AI エンリッチメントに関する設計上のヒントとテクニック](https://docs.microsoft.com/azure/search/cognitive-search-concept-troubleshooting)
-  - [フルテキスト検索](https://docs.microsoft.com/azure/search/search-lucene-query-architecture)
+  - [Azure Cognitive Search の概要](/azure/search/search-what-is-azure-search)
+  - [インデックス作成中のテキストとイメージの処理用の組み込みのコグニティブ スキル](/azure/search/cognitive-search-predefined-skills)
+  - [Azure Cognitive Search の AI エンリッチメントのドキュメント リソース](/azure/search/cognitive-search-resources-documentation)
+  - [AI エンリッチメントに関する設計上のヒントとテクニック](/azure/search/cognitive-search-concept-troubleshooting)
+  - [フルテキスト検索](/azure/search/search-lucene-query-architecture)
 
 ## <a name="next-steps"></a>次のステップ
 

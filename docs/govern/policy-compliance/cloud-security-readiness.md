@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: aa579f628ccb6f0dfb28bfe23e782580330dd3c1
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 31d24872c3ed2f13d7c4bada472fb5a0b194e86c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786842"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573260"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -45,7 +45,7 @@ ms.locfileid: "84786842"
 - [セキュリティ開発ライフサイクル、内部監査](https://www.microsoft.com/sdl)
 - [必須のセキュリティ トレーニング、バックグラウンド チェック](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
 - [侵入テスト、不正侵入検出、DDoS、監査、ログ記録](https://www.microsoft.com/security/business/operations)
-- [最新のデータ センター](https://www.microsoft.com/cloud-platform/global-datacenters)、物理的なセキュリティ、[セキュリティで保護されたネットワーク](https://docs.microsoft.com/azure/security/security-network-overview)
+- [最新のデータ センター](https://www.microsoft.com/cloud-platform/global-datacenters)、物理的なセキュリティ、[セキュリティで保護されたネットワーク](/azure/security/security-network-overview)
 - [クラウドにおける Microsoft Azure のセキュリティ対応に関する資料 (PDF)](https://aka.ms/securityresponsepaper)
 
 **プライバシーと管理:**

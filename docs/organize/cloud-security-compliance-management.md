@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: a155bb9c084b49f0f2876e3166e44c1aab3c78df
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c2ace7de07c6c203e090a079375d9e02420eab9c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755492"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569962"
 ---
 # <a name="cloud-security-compliance-management-functions"></a>クラウド セキュリティのコンプライアンス管理機能
 
@@ -26,7 +26,7 @@ ms.locfileid: "83755492"
 - **クラウド前のガイダンス:** 多くの規制要件は、クラウド サービスの動的な性質を組み込むように更新されていますが、まだ含まれていないものもあります。 組織では、規制機関と協力して、これらを更新し、監査の実施中にこれらの違いについて説明できるようにする必要があります。
 - **リスクへのコンプライアンスのリンク:** 問題を修正するための適切なレベルの注意と資金を確保するため、組織においてコンプライアンスの違反と例外が組織のリスクに関連付けられていることを確認します。
 - **クラウドでの追跡とレポートの有効化:** この機能では、ソフトウェアによる定義というクラウドの特性を積極的に採用する必要があります。これにより、包括的なログ記録、構成データ、分析情報が提供され、コンプライアンスに関するレポートが従来のオンプレミスのアプローチより効率的になります。
-- この機能のオーバーヘッド コストを削減することができる [Microsoft Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-overview) など、**クラウドベースのコンプライアンス ツール** を使用して、法令順守のレポート作成を容易にできます。
+- この機能のオーバーヘッド コストを削減することができる [Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-overview) など、**クラウドベースのコンプライアンス ツール** を使用して、法令順守のレポート作成を容易にできます。
 
 ## <a name="team-composition-and-key-relationships"></a>チームの構成と重要な関係
 

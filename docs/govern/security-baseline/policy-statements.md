@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4521a164a0fa549f6789a93baf469d40a693b1d4
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 3853ee855f2cbfee3047264cf962797657dea119
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479077"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568908"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>セキュリティ ベースラインのサンプル ポリシー ステートメント
 
@@ -31,7 +31,7 @@ ms.locfileid: "86479077"
 
 **ポリシー ステートメント:** デプロイされたすべての資産を、重要性とデータ機密性によって分類する必要があります。 クラウド ガバナンス チームとアプリケーション所有者は、クラウドにデプロイする前に、分類をレビューする必要があります。
 
-**使用可能な設計オプション:** [リソースタグ付け標準](../../decision-guides/resource-tagging/index.md)を確立し、IT スタッフによってそれがデプロイされるすべてのリソースに [Azure リソース タグ](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)を使用して一貫して適用されるようにします。
+**使用可能な設計オプション:** [リソースタグ付け標準](../../decision-guides/resource-tagging/index.md)を確立し、IT スタッフによってそれがデプロイされるすべてのリソースに [Azure リソース タグ](/azure/azure-resource-manager/management/tag-resources)を使用して一貫して適用されるようにします。
 
 ## <a name="data-encryption"></a>データの暗号化
 
@@ -39,7 +39,7 @@ ms.locfileid: "86479077"
 
 **ポリシー ステートメント:** すべての保護対象データは暗号化した状態で保存される必要があります。
 
-**使用可能な設計オプション:** Azure プラットフォームで保存データの暗号化を行う方法については、「[Azure の暗号化の概要](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)」を参照してください。 アカウント データの暗号化やストレージ アカウント設定の変更方法の制御などのその他の制御も考慮する必要があります。
+**使用可能な設計オプション:** Azure プラットフォームで保存データの暗号化を行う方法については、「[Azure の暗号化の概要](/azure/security/fundamentals/encryption-overview)」を参照してください。 アカウント データの暗号化やストレージ アカウント設定の変更方法の制御などのその他の制御も考慮する必要があります。
 
 ## <a name="network-isolation"></a>ネットワークの分離
 
@@ -47,7 +47,7 @@ ms.locfileid: "86479077"
 
 **ポリシー ステートメント:** 保護対象データが含まれているネットワーク サブネットは、他のサブネットから分離する必要があります。 保護対象データ サブネット間のネットワーク トラフィックを定期的に監査します。
 
-**使用可能な設計オプション:** Azure では、ネットワークとサブネットの分離は [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) によって管理されます。
+**使用可能な設計オプション:** Azure では、ネットワークとサブネットの分離は [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) によって管理されます。
 
 ## <a name="secure-external-access"></a>セキュリティで保護された外部アクセス
 
@@ -55,7 +55,7 @@ ms.locfileid: "86479077"
 
 **ポリシー ステートメント:** 保護対象データが含まれているどのサブネットにも、パブリック インターネット経由で、またはデータセンターをまたいで直接アクセスすることはできません。 それらのサブネットへのアクセスは、中間サブネットを介してルーティングされる必要があります。 それらのサブネットへのアクセスはすべて、パケットのスキャンおよびブロック機能を実行できるファイアウォール ソリューション経由で行われる必要があります。
 
-**使用可能な設計オプション:** Azure では、[パブリック インターネットとクラウドベースのネットワークの間に境界ネットワーク](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)をデプロイすることで、パブリック エンドポイントをセキュリティ保護します。 [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) のデプロイ、構成、および自動化を検討してください。
+**使用可能な設計オプション:** Azure では、[パブリック インターネットとクラウドベースのネットワークの間に境界ネットワーク](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)をデプロイすることで、パブリック エンドポイントをセキュリティ保護します。 [Azure Firewall](/azure/firewall/overview) のデプロイ、構成、および自動化を検討してください。
 
 ## <a name="ddos-protection"></a>DDoS 保護
 
@@ -63,7 +63,7 @@ ms.locfileid: "86479077"
 
 **ポリシー ステートメント:** パブリックにアクセス可能なすべてのネットワーク エンドポイントに、自動化された DDoS リスク軽減メカニズムをデプロイします。 IaaS によってサポートされる一般向け Web サイトは、DDoS なしでインターネットに公開しないでください。
 
-**使用可能な設計オプション:** [Azure DDoS Protection Standard](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) を使用して、DDoS 攻撃による中断を最小限に抑えます。
+**使用可能な設計オプション:** [Azure DDoS Protection Standard](/azure/virtual-network/ddos-protection-overview) を使用して、DDoS 攻撃による中断を最小限に抑えます。
 
 ## <a name="secure-on-premises-connectivity"></a>オンプレミスの接続をセキュリティ保護する
 
@@ -79,7 +79,7 @@ ms.locfileid: "86479077"
 
 **ポリシー ステートメント:** ガバナンス ツールでは、セキュリティ ベースライン チームによって定義されたネットワーク構成要件を監査し、実施する必要があります。
 
-**使用可能な設計オプション:** Azure では、[Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview) を使用してネットワーク アクティビティを監視でき、[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-network-recommendations) はセキュリティの脆弱性を識別するのに役立ちます。 Azure Policy を使用すると、セキュリティ チームによって定義された制限に従って、ネットワーク リソースとリソース構成ポリシーを制限することができます。
+**使用可能な設計オプション:** Azure では、[Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview) を使用してネットワーク アクティビティを監視でき、[Azure Security Center](/azure/security-center/security-center-network-recommendations) はセキュリティの脆弱性を識別するのに役立ちます。 Azure Policy を使用すると、セキュリティ チームによって定義された制限に従って、ネットワーク リソースとリソース構成ポリシーを制限することができます。
 
 ## <a name="security-review"></a>セキュリティ レビュー
 
@@ -87,7 +87,7 @@ ms.locfileid: "86479077"
 
 **ポリシー ステートメント:** クラウドのデプロイに影響を及ぼす可能性があるトレンドおよび潜在的悪用をセキュリティ チームが定期的にレビューし、クラウドで使用されるセキュリティ ベースライン ツールの更新を提供する必要があります。
 
-**使用可能な設計オプション:** 関連する IT およびガバナンス チームのメンバーが参加するセキュリティ レビュー会議を定期的に行います。 既存のセキュリティ データとメトリックのレビューを行って、現在のポリシーとセキュリティ ベースライン ツールのギャップを確かめ、新しいリスクを修復するようにポリシーを更新します。 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) と [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) を使用して、実際のデプロイに固有の新しい脅威について、アクションにつながる分析情報を入手します。
+**使用可能な設計オプション:** 関連する IT およびガバナンス チームのメンバーが参加するセキュリティ レビュー会議を定期的に行います。 既存のセキュリティ データとメトリックのレビューを行って、現在のポリシーとセキュリティ ベースライン ツールのギャップを確かめ、新しいリスクを修復するようにポリシーを更新します。 [Azure Advisor](/azure/advisor/advisor-overview) と [Azure Security Center](/azure/security-center/security-center-intro) を使用して、実際のデプロイに固有の新しい脅威について、アクションにつながる分析情報を入手します。
 
 ## <a name="next-steps"></a>次のステップ
 

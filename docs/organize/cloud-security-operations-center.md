@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ffb7f04de4a9d4b8e6b3d379269dc60ca161113b
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 27113f5b989e972d83119187f34117bd07ec5e04
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194291"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569928"
 ---
 <!-- docsTest:ignore "Cyber Defense Operations Center" -->
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
@@ -41,8 +41,8 @@ SOC が成熟するにつれて、セキュリティ運用は次のようにな�
 
  詳細については、次を参照してください。
 
-- [戦略とアーキテクチャの標準&mdash;セキュリティ操作](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)
-- [CISO ワークショップ モジュール 4b: 脅威防止戦略](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-4b)
+- [戦略とアーキテクチャの標準&mdash;セキュリティ操作](/security/compass/security-operations-videos-and-decks)
+- [CISO ワークショップ モジュール 4b: 脅威防止戦略](/security/ciso-workshop/ciso-workshop-module-4b)
 - サイバー防御オペレーション センター (CDOC) ブログ シリーズ [パート 1](https://www.microsoft.com/security/blog/2019/02/21/lessons-learned-from-the-microsoft-soc-part-1-organization)、[パート 2a](https://www.microsoft.com/security/blog/2019/04/23/lessons-learned-microsoft-soc-part-2-organizing-people)、[パート 2b](https://www.microsoft.com/security/blog/2019/06/06/lessons-learned-from-the-microsoft-soc-part-2b-career-paths-and-readiness)、[パート 3a](https://www.microsoft.com/security/blog/2019/10/07/ciso-series-lessons-learned-from-the-microsoft-soc-part-3a-choosing-soc-tools)、[パート 3b](https://www.microsoft.com/security/blog/2019/12/23/ciso-series-lessons-learned-from-the-microsoft-soc-part-3b-a-day-in-the-life)
 - [NIST コンピューター セキュリティ インシデント処理ガイド](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf)
 - [サイバーセキュリティ イベント復旧のための NIST ガイド](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-184.pdf)

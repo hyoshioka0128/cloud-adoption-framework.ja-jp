@@ -7,12 +7,12 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d24987d13467742ab004f386a5acf4e173566ff
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2d3939eb72b66ab930afbcf44efea73262a66cb1
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221350"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196018"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>デジタル資産のインベントリ データを収集する
 

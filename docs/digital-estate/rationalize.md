@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: a167cce023fc4d69a2099af7cfa305a14393e446
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: e2a2016d07e95503cc73353a81065dc72ef845a5
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753282"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278487"
 ---
 # <a name="rationalize-the-digital-estate"></a>デジタル資産の合理化
 
@@ -27,9 +27,9 @@ ms.locfileid: "83753282"
 
 **定量分析:** デシジョン ツリーでは、定量的な質問によって、意思決定の最初のレイヤーが動かされます。 一般的な質問には、次のようなものがあります。
 
-    - その資産は今日使用中ですか。
-    - そうである場合、最適化されていて、適切なサイズになっていますか。
-    - 資産の間にどのような依存関係が存在しますか。 これらの質問は、インベントリの分類に不可欠です。
+- その資産は今日使用中ですか。
+- そうである場合、最適化されていて、適切なサイズになっていますか。
+- 資産の間にどのような依存関係が存在しますか。 これらの質問は、インベントリの分類に不可欠です。
 
 **定性分析:** 次の一連の決定では、定性分析の形式で、人の知性が必要とされます。 ここで説明する質問は、多くの場合ソリューションに固有のもので、回答できるのはビジネスの利害関係者とパワー ユーザーだけの場合があります。 通常、これらの決定はプロセスを遅らせ、物事のスピードが大幅に低下します。 この分析では、アプリケーションごとに FTE 時間が 40 ～ 80 時間かかります。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c4a3c3b7f093f226895bccede7efcfdba94cd002
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: cb1ec2e0a90fb1f41a85de7c5588ad32b5e4f7b3
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479350"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569384"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -30,7 +30,7 @@ _図 1: リソース。_
 
 ## <a name="what-is-an-azure-resource-group"></a>Azure リソース グループとは
 
-Azure の各リソースは、[リソース グループ](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups)に属している必要があります。 リソース グループは、"**ライフサイクルとセキュリティに基づいて**" 複数のリソースを単一のエンティティとして管理できるようにまとめる、論理コンストラクトに過ぎません。 たとえば、[n 層アプリケーション](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)のリソースなど、似たようなライフサイクルを共有するリソースを、グループとして作成または削除できます。 つまり、一緒に作成されたすべてのものは、一緒に管理し、一緒に廃止し、一緒にリソース グループに登録します。
+Azure の各リソースは、[リソース グループ](/azure/azure-resource-manager/management/overview#resource-groups)に属している必要があります。 リソース グループは、"**ライフサイクルとセキュリティに基づいて**" 複数のリソースを単一のエンティティとして管理できるようにまとめる、論理コンストラクトに過ぎません。 たとえば、[n 層アプリケーション](/azure/architecture/guide/architecture-styles/n-tier)のリソースなど、似たようなライフサイクルを共有するリソースを、グループとして作成または削除できます。 つまり、一緒に作成されたすべてのものは、一緒に管理し、一緒に廃止し、一緒にリソース グループに登録します。
 
 ![リソースを含むリソース グループの図](../../_images/govern/design/governance-1-10.png)
 _図 2: リソース グループにはリソースが含まれる。_
@@ -46,17 +46,17 @@ _図 3: Azure サブスクリプション。_
 
 ## <a name="what-is-azure-resource-manager"></a>Azure Resource Manager とは
 
-「[Azure のしくみ](../../get-started/what-is-azure.md)」では、Azure のすべての機能を調整する多数のサービスが Azure のフロントエンドに含まれていることを学習しました。 これらのサービスの 1 つが [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager) で、このサービスは、リソースを管理するために、クライアントによって使用される RESTful API をホストしています。
+「[Azure のしくみ](../../get-started/what-is-azure.md)」では、Azure のすべての機能を調整する多数のサービスが Azure のフロントエンドに含まれていることを学習しました。 これらのサービスの 1 つが [Azure Resource Manager](/azure/azure-resource-manager) で、このサービスは、リソースを管理するために、クライアントによって使用される RESTful API をホストしています。
 
 ![Azure Resource Manager の図](../../_images/govern/design/governance-1-12.png)
 _図 4: Azure Resource Manager。_
 
-次の図は、[PowerShell](https://docs.microsoft.com/powershell/azure/overview)、[Azure portal](https://portal.azure.com)、および [Azure CLI](https://docs.microsoft.com/cli/azure) という 3 つのクライアントを示しています。
+次の図は、[PowerShell](/powershell/azure/overview)、[Azure portal](https://portal.azure.com)、および [Azure CLI](/cli/azure) という 3 つのクライアントを示しています。
 
 ![Resource Manager REST API に接続する Azure クライアントの図](../../_images/govern/design/governance-1-13.png)
 _図 5:Azure クライアントが Resource Manager REST API に接続する。_
 
-これらのクライアントは、REST API を使用して Resource Manager に接続しますが、Resource Manager にはリソースを直接管理する機能が含まれていません。 代わりに、Azure ではリソースの種類のほとんどに、独自の[リソース プロバイダー](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#terminology)があります。
+これらのクライアントは、REST API を使用して Resource Manager に接続しますが、Resource Manager にはリソースを直接管理する機能が含まれていません。 代わりに、Azure ではリソースの種類のほとんどに、独自の[リソース プロバイダー](/azure/azure-resource-manager/management/overview#terminology)があります。
 
 ![Azure リソース プロバイダー](../../_images/govern/design/governance-1-14.png)
 _図 6: Azure リソース プロバイダー。_
@@ -70,7 +70,7 @@ Azure Resource Manager が、仮想マシン リソースを管理するため�
 
 Azure Resource Manager のしくみがわかったので、Azure サブスクリプションが、Azure Resource Manager によって使用される制御にどのように関連付けられるかという説明に戻りましょう。 Azure Resource Manager によってリソースの管理要求が実行される前に、一連の制御がチェックされます。
 
-最初の制御は、要求が必ず検証済みユーザーによって行われていることです。また、ユーザー ID 機能を提供するために、Azure Resource Manager は [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory) との間に信頼関係を確保します。
+最初の制御は、要求が必ず検証済みユーザーによって行われていることです。また、ユーザー ID 機能を提供するために、Azure Resource Manager は [Azure Active Directory (Azure AD)](/azure/active-directory) との間に信頼関係を確保します。
 
 ![Azure Active Directory](../../_images/govern/design/governance-1-16.png)
 _図 8: Azure Active Directory。_
@@ -82,19 +82,19 @@ _図 9: サブスクリプションと関連付けられている Azure AD テ�
 
 特定のサブスクリプションでリソースを管理するためのクライアント要求ごとに、関連付けられている Azure AD テナント内にユーザーがアカウントを持っている必要があります。
 
-次の制御では、要求を行うための十分なアクセス許可がユーザーにあることが確認されます。 [ロールベースのアクセス制御 (RBAC)](https://docs.microsoft.com/azure/role-based-access-control) を使用して、アクセス許可がユーザーに割り当てられます。
+次の制御では、要求を行うための十分なアクセス許可がユーザーにあることが確認されます。 [ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control) を使用して、アクセス許可がユーザーに割り当てられます。
 
 ![RBAC ロールに割り当てられたユーザー](../../_images/govern/design/governance-1-18.png)
 _図 10: テナントの各ユーザーに 1 つ以上の RBAC ロールが割り当てらている。_
 
-RBAC ロールでは、特定のリソースに対してユーザーが適用できる一連のアクセス許可が指定されます。 ロールがユーザーに割り当てられると、これらのアクセス許可が適用されます。 たとえば、[組み込みの `owner` ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)を使用すると、ユーザーはリソースに対して任意のアクションを実行できます。
+RBAC ロールでは、特定のリソースに対してユーザーが適用できる一連のアクセス許可が指定されます。 ロールがユーザーに割り当てられると、これらのアクセス許可が適用されます。 たとえば、[組み込みの `owner` ロール](/azure/role-based-access-control/built-in-roles#owner)を使用すると、ユーザーはリソースに対して任意のアクションを実行できます。
 
-次の制御は、[Azure リソース ポリシー](https://docs.microsoft.com/azure/governance/policy)に適うように指定されている設定で、要求が許可されることのチェックです。 Azure リソース ポリシーでは、特定のリソースに対して許可される操作が指定されます。 たとえば、Azure リソース ポリシーを使用して、ユーザーが特定の種類の仮想マシンのみデプロイできるように指定できます。
+次の制御は、[Azure リソース ポリシー](/azure/governance/policy)に適うように指定されている設定で、要求が許可されることのチェックです。 Azure リソース ポリシーでは、特定のリソースに対して許可される操作が指定されます。 たとえば、Azure リソース ポリシーを使用して、ユーザーが特定の種類の仮想マシンのみデプロイできるように指定できます。
 
 ![Azure リソース ポリシー](../../_images/govern/design/governance-1-19.png)
 _図 11: Azure リソース ポリシー。_
 
-次の制御は、要求が [Azure サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えていないことのチェックです。 たとえば、サブスクリプションあたりのリソース グループ数は、980 グループに制限されています。 追加のリソース グループをデプロイする要求を受け取ったときに、制限に達している場合、その要求は拒否されます。
+次の制御は、要求が [Azure サブスクリプションの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えていないことのチェックです。 たとえば、サブスクリプションあたりのリソース グループ数は、980 グループに制限されています。 追加のリソース グループをデプロイする要求を受け取ったときに、制限に達している場合、その要求は拒否されます。
 
 ![Azure リソース制限](../../_images/govern/design/governance-1-20.png)
 _図 12: Azure リソース制限。_

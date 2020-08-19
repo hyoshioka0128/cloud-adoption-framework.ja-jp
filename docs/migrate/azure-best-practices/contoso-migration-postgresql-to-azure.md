@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: b279577e4be2e841e0e2ae5700ec2833882cb56d
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: 4b3923936052cce1ae973f779bc53ac35a1ba0c1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400498"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567293"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental -->
 
@@ -68,7 +68,7 @@ PostgreSQL 9.6.7 は、Contoso データセンターの物理的な Linux マシ
 - 読み取りレプリカを使用して、処理のパフォーマンスを向上させることができます。
 - データ暗号化のための Bring Your Own Key (BYOK) のサポート。
 - Azure Private Link を使用して、サービスを内部ネットワーク トラフィックだけに公開できます (パブリック アクセスなし)。
-- 選択されたゲートウェイ (Azure ExpressRoute またはサイト間 VPN) に基づいて、アプリケーションからデータベースへの[帯域幅と待機時間](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)が十分に確保されます。
+- 選択されたゲートウェイ (Azure ExpressRoute またはサイト間 VPN) に基づいて、アプリケーションからデータベースへの[帯域幅と待機時間](/azure/vpn-gateway/vpn-gateway-about-vpngateways)が十分に確保されます。
 
 ### <a name="solution-review"></a>ソリューションのレビュー
 
@@ -97,7 +97,7 @@ Contoso は、PostgreSQL データベースを移行する前に、自社のイ�
 
 Microsoft では、Azure Database for PostgreSQL - 単一サーバーでの PostgreSQL エンジンの _n-2_ バージョンのサポートを予定しています。 バージョンは、Azure の現在のメジャー バージョン (_n_) とその前の 2 つのメジャー バージョン ( _-2_) です。
 
-サポートされているバージョンの最新情報については、「[サポートされる PostgreSQL のメジャー バージョン](https://docs.microsoft.com/azure/postgresql/concepts-supported-versions)」をご覧ください。
+サポートされているバージョンの最新情報については、「[サポートされる PostgreSQL のメジャー バージョン](/azure/postgresql/concepts-supported-versions)」をご覧ください。
 
 > [!NOTE]
 > メジャー バージョンの自動アップグレードはサポートされていません。 たとえば、PostgreSQL 9.5 から PostgreSQL 9.6 への自動アップグレードはありません。 次のメジャー バージョンにアップグレードするには、データベースをダンプし、ターゲット エンジンのバージョンで作成されたサーバーに復元します。
@@ -122,13 +122,13 @@ Contoso では、レプリケーションの問題について、現在のデー
 
 Contoso は、いくつかの方法で移行を実行できます。
 
-- [ダンプと復元](https://docs.microsoft.com/azure/postgresql/howto-migrate-using-dump-and-restore)
-- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)
-- [Import/Export](https://docs.microsoft.com/azure/postgresql/howto-migrate-using-export-and-import)
+- [ダンプと復元](/azure/postgresql/howto-migrate-using-dump-and-restore)
+- [Azure Database Migration Service](/azure/dms/tutorial-postgresql-azure-postgresql-online)
+- [Import/Export](/azure/postgresql/howto-migrate-using-export-and-import)
 
 Contoso は、メジャーからメジャーへのアップグレードを実行する必要があるときに移行プロジェクトを常に再利用できるように、Azure Database Migration Service を選択しました。 1 つの Database Migration Service アクティビティは最大 4 つのデータベースにしか対応しないため、Contoso は次の手順を使用して複数のジョブを設定します。
 
-準備するには、データベースにアクセスするための仮想ネットワークを設定します。 さまざまな方法で、[VPN ゲートウェイ](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)を使用して仮想ネットワーク接続を作成します。
+準備するには、データベースにアクセスするための仮想ネットワークを設定します。 さまざまな方法で、[VPN ゲートウェイ](/azure/vpn-gateway/vpn-gateway-about-vpngateways)を使用して仮想ネットワーク接続を作成します。
 
 <!-- docsTest:ignore "Azure Database Migration Services" -->
 
@@ -248,8 +248,8 @@ Contoso は、メジャーからメジャーへのアップグレードを実行
     _図 13:カットオーバーの完了。_
 
       > [!NOTE]
-      > 上記の Database Migration Service の手順は、[Azure CLI](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) を使用して実行することもできます。
-    
+      > 上記の Database Migration Service の手順は、[Azure CLI](/azure/dms/tutorial-postgresql-azure-postgresql-online) を使用して実行することもできます。
+
 1. データベース スキーマをインポートします (手順 2)。
 
       ```cmd
@@ -272,12 +272,12 @@ Contoso は、メジャーからメジャーへのアップグレードを実行
 
 Contoso は次のことを行う必要があります。
 
-- 新しい Azure Database for PostgreSQL インスタンスとデータベースを確実にセキュリティで保護します。 詳細については、「[Azure Database for PostgreSQL のセキュリティ - 単一サーバー](https://docs.microsoft.com/azure/postgresql/concepts-security)」をご覧ください。
-- [ファイアウォール規則](https://docs.microsoft.com/azure/postgresql/concepts-firewall-rules)と仮想ネットワーク構成を確認して、接続を必要とするアプリケーションのみに接続が制限されていることを確認します。
-- データの暗号化のために [BYOK](https://docs.microsoft.com/azure/postgresql/concepts-data-encryption-postgresql) を実装します。
-- データベースへの [SSL 接続を要求する](https://docs.microsoft.com/azure/postgresql/concepts-ssl-connection-security)ように、すべてのアプリケーションを更新します。
-- [Private Link](https://docs.microsoft.com/azure/postgresql/concepts-data-access-and-security-private-link) を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
-- [Azure Advanced Threat Protection (ATP)](https://docs.microsoft.com/azure/postgresql/concepts-data-access-and-security-threat-protection) を有効にします。
+- 新しい Azure Database for PostgreSQL インスタンスとデータベースを確実にセキュリティで保護します。 詳細については、「[Azure Database for PostgreSQL のセキュリティ - 単一サーバー](/azure/postgresql/concepts-security)」をご覧ください。
+- [ファイアウォール規則](/azure/postgresql/concepts-firewall-rules)と仮想ネットワーク構成を確認して、接続を必要とするアプリケーションのみに接続が制限されていることを確認します。
+- データの暗号化のために [BYOK](/azure/postgresql/concepts-data-encryption-postgresql) を実装します。
+- データベースへの [SSL 接続を要求する](/azure/postgresql/concepts-ssl-connection-security)ように、すべてのアプリケーションを更新します。
+- [Private Link](/azure/postgresql/concepts-data-access-and-security-private-link) を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
+- [Azure Advanced Threat Protection (ATP)](/azure/postgresql/concepts-data-access-and-security-threat-protection) を有効にします。
 - 対象のセキュリティおよびログ エントリを監視し、アラートを生成するように Log Analytics を構成します。
 
 ### <a name="backups"></a>バックアップ

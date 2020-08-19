@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f011bae35204c2acff3f8b9b48df61f9528499a3
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 29bb9f2e21049c00ae125a92d84f168f4261e88a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86372950"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570302"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
@@ -62,13 +62,13 @@ Azure Migrate では、移行前評価フェーズの一環として適切なサ
 
 ::: zone target="docs"
 
-- [Azure リソースに対する予約を管理する](https://docs.microsoft.com/azure/billing/billing-manage-reserved-vm-instance)
-- [Windows VM のサイズを変更する](https://docs.microsoft.com/azure/virtual-machines/windows/resize-vm)
-- [Azure CLI を使用して Linux 仮想マシンのサイズを変更する](https://docs.microsoft.com/azure/virtual-machines/linux/change-vm-size)
+- [Azure リソースに対する予約を管理する](/azure/billing/billing-manage-reserved-vm-instance)
+- [Windows VM のサイズを変更する](/azure/virtual-machines/windows/resize-vm)
+- [Azure CLI を使用して Linux 仮想マシンのサイズを変更する](/azure/virtual-machines/linux/change-vm-size)
 
 パートナーはパートナー センターを使用して使用状況を確認できます。
 
-- [最大限の予約使用に備えた Azure VM サイズ](https://docs.microsoft.com/partner-center/azure-usage)
+- [最大限の予約使用に備えた Azure VM サイズ](/partner-center/azure-usage)
 
 ::: zone-end
 
@@ -128,8 +128,8 @@ Azure Cost Management と Billing は Azure Advisor と連携して、コスト�
 
 ::: zone target="docs"
 
-- [チュートリアル:推奨事項に従ってコストを最適化する](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
-- [Azure の課金とコスト管理で予想外の料金を防ぐ](https://docs.microsoft.com/azure/billing/billing-getting-started)
-- [コスト分析を使用してコストを調査および分析する](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
+- [チュートリアル:推奨事項に従ってコストを最適化する](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [Azure の課金とコスト管理で予想外の料金を防ぐ](/azure/billing/billing-getting-started)
+- [コスト分析を使用してコストを調査および分析する](/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

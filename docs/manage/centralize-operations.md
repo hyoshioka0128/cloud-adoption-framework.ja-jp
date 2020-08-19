@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6d777a1c919e72c55d8c6202ef1c32f44d9444d9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8dbfd5324957b7175afc81801873eef8bf5242cf
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219480"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571832"
 ---
 <!-- cSpell:ignore jenhayes -->
 
@@ -27,7 +27,7 @@ ms.locfileid: "83219480"
 - 特定の法的要件またはコンプライアンス要件が該当する。
 - 他の組織の買収 (場合によっては、長期的なテナント統合戦略が定義されるまでの一時的な状況) がある。
 
-マルチテナント アーキテクチャが必要な場合は、[Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/overview) を使用して、管理操作を一元化し、合理化することができます。 複数のテナントからのサブスクリプションを [Azure 委任リソース管理](https://docs.microsoft.com/azure/lighthouse/concepts/azure-delegated-resource-management)のためにオンボードできます。 このオプションにより、管理側テナント内の指定されたユーザーが、一元化されたスケーラブルな方法で[テナント間管理機能](https://docs.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience)を実行できます。
+マルチテナント アーキテクチャが必要な場合は、[Azure Lighthouse](/azure/lighthouse/overview) を使用して、管理操作を一元化し、合理化することができます。 複数のテナントからのサブスクリプションを [Azure 委任リソース管理](/azure/lighthouse/concepts/azure-delegated-resource-management)のためにオンボードできます。 このオプションにより、管理側テナント内の指定されたユーザーが、一元化されたスケーラブルな方法で[テナント間管理機能](/azure/lighthouse/concepts/cross-tenant-management-experience)を実行できます。
 
 たとえば、組織に単一のテナント `Tenant A` があるとします。 その後、組織は 2 つの別のテナント (`Tenant B` と `Tenant C`) を取得します。これらを個別のテナントとして維持する必要があるビジネス上の理由があります。
 
@@ -35,4 +35,4 @@ ms.locfileid: "83219480"
 
 ![テナント A のユーザーによるテナント B とテナント C のリソースの管理](../_images/manage/enterprise-azure-lighthouse.jpg)
 
-詳しくは、「[エンタープライズ シナリオにおける Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/concepts/enterprise)」をご覧ください。
+詳しくは、「[エンタープライズ シナリオにおける Azure Lighthouse](/azure/lighthouse/concepts/enterprise)」をご覧ください。

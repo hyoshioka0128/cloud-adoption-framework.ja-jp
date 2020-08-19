@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7e8542a45cd9fa9517d4ddf9ed5789f8173a9897
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 2dbe690b10e21c06d348bf3196077fa812a043c9
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373206"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570268"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -42,7 +42,7 @@ Azure Monitor は、クラウドおよびオンプレミス環境の利用統計
 
 ### <a name="learn-more"></a>詳細情報
 
-- [Azure Monitor の概要](https://docs.microsoft.com/azure/azure-monitor/overview)。
+- [Azure Monitor の概要](/azure/azure-monitor/overview)。
 
 ::: zone-end
 
@@ -73,7 +73,7 @@ Azure Service Health には以下が含まれます。
 
 ### <a name="learn-more"></a>詳細情報
 
-詳細については、「[Azure Service Health](https://docs.microsoft.com/azure/service-health)」を参照してください。
+詳細については、「[Azure Service Health](/azure/service-health)」を参照してください。
 
 ::: zone-end
 
@@ -96,7 +96,7 @@ Azure Advisor は、ベスト プラクティスに従って Azure デプロイ�
 
 ### <a name="learn-more"></a>詳細情報
 
-[概要](https://docs.microsoft.com/azure/advisor/advisor-overview)。
+[概要](/azure/advisor/advisor-overview)。
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ Azure Security Center は、データセンターのセキュリティ体制を�
 
 ### <a name="learn-more"></a>詳細情報
 
-[概要](https://docs.microsoft.com/azure/security-center/security-center-intro)
+[概要](/azure/security-center/security-center-intro)
 
 ::: zone-end
 
@@ -145,7 +145,7 @@ Azure Backup は、Microsoft クラウド内のデータをバックアップ (�
 
 ::: zone target="docs"
 
-[概要](https://docs.microsoft.com/azure/backup/backup-overview)
+[概要](/azure/backup/backup-overview)
 
 ::: zone-end
 
@@ -195,7 +195,7 @@ Azure Site Recovery サービスを使用すると、プライマリ Azure リ�
 
 ### <a name="learn-more"></a>詳細情報
 
-- [Azure Site Recovery の概要](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
-- [Azure VM を別のリージョンにレプリケートする](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
+- [Azure Site Recovery の概要](/azure/site-recovery/site-recovery-overview)
+- [Azure VM を別のリージョンにレプリケートする](/azure/site-recovery/azure-to-azure-quickstart)
 
 ::: zone-end

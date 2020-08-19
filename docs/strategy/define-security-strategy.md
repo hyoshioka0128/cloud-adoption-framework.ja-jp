@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 531700838739c416819f5dfd329b1d0f6bac63a5
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 7f52dfb9c58e619a4d626960ac3115575985253a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451021"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572648"
 ---
 <!-- cSpell:ignore MarkSimos NIST CISO COVID -->
 
@@ -96,7 +96,7 @@ ms.locfileid: "86451021"
 
 [NIST サイバーセキュリティ フレームワーク](https://www.nist.gov/cyberframework)の機能は、回復力に関する戦略において、ID、保護、検出、対応、復旧の補完的な活動の間で投資のバランスを取る方法について、有益なガイドとして役立ちます。
 
-サイバー セキュリティの回復力とサイバーセキュリティ制御の最終的な目標の詳細については、「[組織のリスクを低く抑えたままにする方法](https://docs.microsoft.com/azure/architecture/framework/security/resilience)」で説明しています。
+サイバー セキュリティの回復力とサイバーセキュリティ制御の最終的な目標の詳細については、「[組織のリスクを低く抑えたままにする方法](/azure/architecture/framework/security/resilience)」で説明しています。
 
 ### <a name="how-the-cloud-is-changing-security"></a>クラウドによってセキュリティがどのように変化しているか
 
@@ -152,7 +152,7 @@ ms.locfileid: "86451021"
 
     これらのアプリケーションは重要なビジネス プロセスを実現し、重要なビジネス データを格納することが多いため、この権限を得ることが非常に重要です。
 
-  - **最新の境界:** 組織は、すべてのワークロードにわたってデータを保護するために、包括的なアプローチを備える必要があります。また、組織は一貫性があり、一元的に管理される ID 制御による最新の境界を確立し、データ、デバイス、アカウントを保護する必要があります。 これは、[CISO ワークショップのモジュール 3](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3) で詳細に説明されているゼロ トラスト戦略に大きく影響されています。
+  - **最新の境界:** 組織は、すべてのワークロードにわたってデータを保護するために、包括的なアプローチを備える必要があります。また、組織は一貫性があり、一元的に管理される ID 制御による最新の境界を確立し、データ、デバイス、アカウントを保護する必要があります。 これは、[CISO ワークショップのモジュール 3](/security/ciso-workshop/ciso-workshop-module-3) で詳細に説明されているゼロ トラスト戦略に大きく影響されています。
 
 ### <a name="security-and-trust"></a>セキュリティと信頼
 
@@ -240,7 +240,7 @@ ms.locfileid: "86451021"
 
   - **セキュリティ:** クラウド プロバイダーは、セキュリティに関する業界のベスト プラクティスに従っていますか。 独立した規制機関によって検証されていますか。
 
-    - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/risk-score) では、16,000 を超えるクラウド アプリの使用状況を検出できます。これらは 70 を超えるリスク要因に基づいてランク付けとスコア付けが行われ、クラウドの利用状況、シャドウ IT、シャドウ IT が組織に与えるリスクを継続的に確認することができます。
+    - [Microsoft Cloud App Security](/cloud-app-security/risk-score) では、16,000 を超えるクラウド アプリの使用状況を検出できます。これらは 70 を超えるリスク要因に基づいてランク付けとスコア付けが行われ、クラウドの利用状況、シャドウ IT、シャドウ IT が組織に与えるリスクを継続的に確認することができます。
     - [Microsoft Service Trust Portal](https://servicetrust.microsoft.com) では、規制コンプライアンスの認定、監査レポート、侵入テストなどをお客様に提供しています。 これらのドキュメントには、社内のセキュリティ実施状況に関する多くの詳細が含まれています (特に SOC 2 Type 2 レポートや FedRAMP Moderate のシステム セキュリティ計画)。
 
   - **ビジネス上の競合他社:** そのクラウド プロバイダーは、業界において重要なビジネス上の競合他社ですか。 クラウド サービス契約やその他の手段で、悪意のある可能性のあるアクションからビジネスを保護するために十分な保護が用意されていますか。

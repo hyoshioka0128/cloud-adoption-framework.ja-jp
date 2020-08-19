@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0ac9256adda2b310592d69685a183b790790228a
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: be3f5c774d91bf0e6e45a068311b35d35f328ba5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449015"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567888"
 ---
 # <a name="democratize-data"></a>データの民主化
 
@@ -36,7 +36,7 @@ Azure Data Catalog は、データ コンシューマーによるデータ検出
 
 ::: zone target="docs"
 
-**[Azure Data Catalog のドキュメント](https://docs.microsoft.com/azure/data-catalog)に移動する**
+**[Azure Data Catalog のドキュメント](/azure/data-catalog)に移動する**
 
 ::: zone-end
 
@@ -74,7 +74,7 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 
 ::: zone target="docs"
 
-**[Azure Data Share のドキュメント](https://docs.microsoft.com/azure/data-share)に移動する**
+**[Azure Data Share のドキュメント](/azure/data-share)に移動する**
 
 ::: zone-end
 
@@ -112,7 +112,7 @@ Azure Time Series Insights のデータ イノベーション機能は無限で�
 
 ::: zone target="docs"
 
-**[Azure Time Series Insights の概要](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-update-overview)に移動する**
+**[Azure Time Series Insights の概要](/azure/time-series-insights/time-series-insights-update-overview)に移動する**
 
 ::: zone-end
 

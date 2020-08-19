@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 6c138afdd5a60dafe21a523e608c714ba2b49070
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 48d6bb16956f31d5581ab3f6f11d51fd55e0ba49
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233683"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573889"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>作業を開始しましょう。クラウド導入チームを構築する
 
@@ -41,7 +41,7 @@ ms.locfileid: "86233683"
 
 - チームが移行手法とイノベーション手法のどちらにより適しているかを判定します。
 - 各手法には、その作業をうまくこなすために必要なツールとプロセスをチームが把握するのに役立つ、4 ステップのオンボーディング エクスペリエンスがあります。 チームとして最初の数ステップの実行に時間を注ぎ、初期の繰り返しで必要になる可能性が最も高いツールとシナリオを把握します。
-- "_実行責任、説明責任、助言、通知 (RACI)_ " の関係者を明確にするクロスチーム マトリックスを作成することにより、チーム間で責任を調整します。 会社の [RACI テンプレート](../../organize/raci-alignment.md)を更新して、チームのメンバーと、チームが重点的に実施する手法を他の人々が理解できるようにします。
+- "*実行責任、説明責任、助言、通知 (RACI)* " の関係者を明確にするクロスチーム マトリックスを作成することにより、チーム間で責任を調整します。 会社の [RACI テンプレート](../../organize/raci-alignment.md)を更新して、チームのメンバーと、チームが重点的に実施する手法を他の人々が理解できるようにします。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -51,7 +51,7 @@ ms.locfileid: "86233683"
 
 ## <a name="step-2-align-your-team-with-other-supporting-teams"></a>手順 2:自分のチームと他のサポート チームを連携させる
 
-会社のクラウド導入の取り組みがサポート チームを用意できるほど十分に成熟しているようであれば、一連のチームと各分野の専門家を自社バージョンの [RACI テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)で見つけられるかもしれません。たとえば、クラウド ガバナンス、クラウド運用、クラウドのセンター オブ エクセレンス、その他の類似のチームなどです。
+会社のクラウド導入の取り組みがサポート チームを用意できるほど十分に成熟しているようであれば、一連のチームと各分野の専門家を自社バージョンの [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)で見つけられるかもしれません。たとえば、クラウド ガバナンス、クラウド運用、クラウドのセンター オブ エクセレンス、その他の類似のチームなどです。
 
 **成果物:**
 

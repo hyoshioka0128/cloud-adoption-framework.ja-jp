@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6745e271700280b87800fbb76d603242bf561b19
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: d7351fc55f91645c79dd50e803ef8ca940beaa7c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448760"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572240"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -37,9 +37,9 @@ ms.locfileid: "86448760"
 >
 > | チェック リスト  | リソース |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **ネットワーク設計に関する考慮事項を特定する。** クラスター ネットワークの設計上の考慮事項を理解して、ネットワーク モデルを比較し、ニーズに合った Kubernetes ネットワーク プラグインを選択します。    | [Kubernet と Azure Container Networking Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br> [Azure Kubernetes Service (AKS) の独自の IP アドレス範囲で kubenet ネットワークを使用する](https://docs.microsoft.com/azure/aks/configure-kubenet) <br> [Azure Kubernetes Service (AKS) で Azure CNI ネットワークを構成する](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br> [AKS クラスターのセキュリティで保護されたネットワーク設計](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
-> | **複数のノード プールを作成する。** コンピューティングまたはストレージのさまざまな要件があるアプリケーションをサポートするには、必要に応じて複数のノード プールでクラスターを構成します。 たとえば、追加のノード プールを使用して、コンピューティング集中型アプリケーションに GPU を提供したり、高パフォーマンスな SSD ストレージにアクセスを提供したりします。   | [Azure Kubernetes Service のクラスターで複数のノード プールを作成および管理する](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
-> | **可用性の要件を決定する。** アプリケーションにより高いレベルの可用性を提供するために、クラスターは可用性ゾーンにまたがって分散させることができます。 これらのゾーンは、特定のリージョン内の物理的に分離されたデータセンターです。 クラスター コンポーネントが複数のゾーンに分散されている場合、クラスターは、それらのゾーンのいずれかで障害が発生しても許容できます。 アプリケーションと管理操作は、1 つのデータセンター全体に問題がある場合でも継続して利用できます。   | [可用性ゾーンを使用する Azure Kubernetes Service (AKS) クラスターを作成する](https://docs.microsoft.com/azure/aks/availability-zones) |
+> | **ネットワーク設計に関する考慮事項を特定する。** クラスター ネットワークの設計上の考慮事項を理解して、ネットワーク モデルを比較し、ニーズに合った Kubernetes ネットワーク プラグインを選択します。    | [Kubernet と Azure Container Networking Interface (CNI)](/azure/aks/concepts-network#azure-virtual-networks) <br> [Azure Kubernetes Service (AKS) の独自の IP アドレス範囲で kubenet ネットワークを使用する](/azure/aks/configure-kubenet) <br> [Azure Kubernetes Service (AKS) で Azure CNI ネットワークを構成する](/azure/aks/configure-azure-cni) <br> [AKS クラスターのセキュリティで保護されたネットワーク設計](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
+> | **複数のノード プールを作成する。** コンピューティングまたはストレージのさまざまな要件があるアプリケーションをサポートするには、必要に応じて複数のノード プールでクラスターを構成します。 たとえば、追加のノード プールを使用して、コンピューティング集中型アプリケーションに GPU を提供したり、高パフォーマンスな SSD ストレージにアクセスを提供したりします。   | [Azure Kubernetes Service のクラスターで複数のノード プールを作成および管理する](/azure/aks/use-multiple-node-pools) |
+> | **可用性の要件を決定する。** アプリケーションにより高いレベルの可用性を提供するために、クラスターは可用性ゾーンにまたがって分散させることができます。 これらのゾーンは、特定のリージョン内の物理的に分離されたデータセンターです。 クラスター コンポーネントが複数のゾーンに分散されている場合、クラスターは、それらのゾーンのいずれかで障害が発生しても許容できます。 アプリケーションと管理操作は、1 つのデータセンター全体に問題がある場合でも継続して利用できます。   | [可用性ゾーンを使用する Azure Kubernetes Service (AKS) クラスターを作成する](/azure/aks/availability-zones) |
 
 ## <a name="go-to-production-and-apply-best-practices"></a>運用環境へ移行してベスト プラクティスを適用する
 
@@ -56,9 +56,9 @@ ms.locfileid: "86448760"
 >
 > | チェック リスト  | リソース |
 > |---|---|
-> | **クラスターのプロビジョニングを自動化する。** コードとしてのインフラストラクチャを使用することで、インフラストラクチャのプロビジョニングを自動化して災害時の回復性を高め、必要に応じて迅速にインフラストラクチャを再デプロイする機敏性を得ることができます。 | [Terraform を使用して Azure Kubernetes Service で Kubernetes クラスターを作成する](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks) |
-> | **ポッド中断バジェットを使用して可用性を計画する。** アプリケーションの可用性を維持するには、ポッド中断バジェット (PDB) を定義して、ハードウェア障害またはクラスターのアップグレード中に最小限の数のポッドがクラスターで使用できるようにします。 | [ポッド中断バジェットを使用して可用性を計画する](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets) |
-> | **名前空間にリソース クォータを適用する。** 名前空間レベルでリソース クォータを計画して適用します。 クォータは、コンピューティング リソース、ストレージ リソース、およびオブジェクト数に設定できます。 | [リソース クォータを適用する](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas) |
+> | **クラスターのプロビジョニングを自動化する。** コードとしてのインフラストラクチャを使用することで、インフラストラクチャのプロビジョニングを自動化して災害時の回復性を高め、必要に応じて迅速にインフラストラクチャを再デプロイする機敏性を得ることができます。 | [Terraform を使用して Azure Kubernetes Service で Kubernetes クラスターを作成する](/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks) |
+> | **ポッド中断バジェットを使用して可用性を計画する。** アプリケーションの可用性を維持するには、ポッド中断バジェット (PDB) を定義して、ハードウェア障害またはクラスターのアップグレード中に最小限の数のポッドがクラスターで使用できるようにします。 | [ポッド中断バジェットを使用して可用性を計画する](/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets) |
+> | **名前空間にリソース クォータを適用する。** 名前空間レベルでリソース クォータを計画して適用します。 クォータは、コンピューティング リソース、ストレージ リソース、およびオブジェクト数に設定できます。 | [リソース クォータを適用する](/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas) |
 
 ## <a name="optimize-and-scale"></a>最適化とスケール
 
@@ -76,6 +76,6 @@ ms.locfileid: "86448760"
 >
 > | チェック リスト  | リソース |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **アプリケーションの需要を満たすためにクラスターを自動的にスケーリングする。** アプリケーションの需要に対応するには、クラスター オートスケーラーを使用してワークロードを自動的に実行するノードの数を調整することが必要な場合があります。 | [Kubernetes クラスター オートスケーラーを構成する](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
-> | **事業継続とディザスター リカバリーを計画する。** 複数リージョンのデプロイを計画して、ストレージ移行計画を作成し、コンテナー イメージの geo レプリケーションを有効にします。 | [リージョンのデプロイのベスト プラクティス](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region) <br> [Azure Container Registry の geo レプリケーション](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
-> | **大規模な監視およびトラブルシューティングを構成する。** Kubernetes でアプリケーションのアラートと監視を設定します。 既定の構成、より高度なメトリックを統合する方法、アプリケーションを確実に動作させるために独自のカスタム監視およびアラートを追加する方法について説明します。 | [Kubernetes の監視とアラートの概要 (ビデオ)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br> [コンテナーに対する Azure Monitor を使用してアラートを構成する](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br> [マスター コンポーネントの診断ログを確認する](https://docs.microsoft.com/azure/aks/view-master-logs) <br> [Azure Kubernetes Service (AKS) 診断](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |
+> | **アプリケーションの需要を満たすためにクラスターを自動的にスケーリングする。** アプリケーションの需要に対応するには、クラスター オートスケーラーを使用してワークロードを自動的に実行するノードの数を調整することが必要な場合があります。 | [Kubernetes クラスター オートスケーラーを構成する](/azure/aks/cluster-autoscaler)    |
+> | **事業継続とディザスター リカバリーを計画する。** 複数リージョンのデプロイを計画して、ストレージ移行計画を作成し、コンテナー イメージの geo レプリケーションを有効にします。 | [リージョンのデプロイのベスト プラクティス](/azure/aks/operator-best-practices-multi-region) <br> [Azure Container Registry の geo レプリケーション](/azure/container-registry/container-registry-geo-replication)  |
+> | **大規模な監視およびトラブルシューティングを構成する。** Kubernetes でアプリケーションのアラートと監視を設定します。 既定の構成、より高度なメトリックを統合する方法、アプリケーションを確実に動作させるために独自のカスタム監視およびアラートを追加する方法について説明します。 | [Kubernetes の監視とアラートの概要 (ビデオ)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br> [コンテナーに対する Azure Monitor を使用してアラートを構成する](/azure/azure-monitor/insights/container-insights-overview) <br> [マスター コンポーネントの診断ログを確認する](/azure/aks/view-master-logs) <br> [Azure Kubernetes Service (AKS) 診断](/azure/aks/concepts-diagnostics)    |

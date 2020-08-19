@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9169417f75434a176767fb20182a1bdd99a70bbf
-ms.sourcegitcommit: 452e09b543e7b84f943db5b02480ba2d18afd939
+ms.openlocfilehash: a897563fae2d50bfdc6b6aa00414b5c7d01660a5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866198"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570710"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>オープンソース データベースを Azure に移行する
 
@@ -50,7 +50,7 @@ Contoso のクラウド チームは、さまざまな移行の目標を設定�
 
 ## <a name="solution-design"></a>ソリューション設計
 
-Contoso では、[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) を使用して、自社のデジタル資産の[移行評価](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)を既に実行しました。
+Contoso では、[Azure Migrate](/azure/migrate/migrate-services-overview) を使用して、自社のデジタル資産の[移行評価](../..//plan/contoso-migration-assessment.md)を既に実行しました。
 
 ![移行プロセスを示す図。](./media/contoso-migration-oss-db-to-azure/migration-process.png)
 _図 1: 移行プロセス。_
@@ -68,9 +68,9 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 移行を実行する前に、ソリューションの管理と課金の側面をサポートするために、必要な Azure 構造を整える必要があります。
 
-管理要件については、組織の構造をサポートするために、いくつかの[管理グループ](https://docs.microsoft.com/azure/governance/management-groups/overview)が作成されました。
+管理要件については、組織の構造をサポートするために、いくつかの[管理グループ](/azure/governance/management-groups/overview)が作成されました。
 
-課金要件については、各 Azure リソースに、該当する課金タグが[タグ付け](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)されます。
+課金要件については、各 Azure リソースに、該当する課金タグが[タグ付け](/azure/azure-resource-manager/management/tag-resources)されます。
 
 ### <a name="migration-process"></a>移行プロセス
 
@@ -92,7 +92,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 #### <a name="step-1-discovery"></a>手順 1:探索
 
-Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate によって、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Contoso サーバー間の接続、プロセス、インバウンド接続とアウトバウンド接続の待ち時間、TCP 接続アーキテクチャ全体のポートも Azure Migrate によって明らかになりました。 Contoso で必要な作業は、[Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) および [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) をインストールすることだけでした。
+Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate によって、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Contoso サーバー間の接続、プロセス、インバウンド接続とアウトバウンド接続の待ち時間、TCP 接続アーキテクチャ全体のポートも Azure Migrate によって明らかになりました。 Contoso で必要な作業は、[Microsoft Monitoring Agent](/azure/log-analytics/log-analytics-agent-windows) および [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) をインストールすることだけでした。
 
 Contoso によって、移行する必要がある 300 個を超えるデータベース インスタンスが特定されました。 これらのインスタンスのうち約 40% は、PaaS ベースのサービスに移行できます。 残りの 60% は、各データベース ソフトウェアを実行する VM を使用して、IaaS ベースのアプローチに移行する必要があります。
 
@@ -110,15 +110,15 @@ Contoso によって、移行する必要がある 300 個を超えるデータ�
 
 | データベースの種類 | 詳細 | 移行先 | 移行ガイド |
 | --- | --- | --- | --- |
-| **MySQL** | サポートされているすべてのバージョンは、移行前にサポートされるバージョンにアップグレードされます | Azure Database for MySQL (PaaS) | [ガイド](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)
-| **PostgreSQL** | サポートされているすべてのバージョンは、移行前にサポートされるバージョンにアップグレードされます | Azure Database for PostgreSQL (PaaS) | [ガイド](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| **MySQL** | サポートされているすべてのバージョンは、移行前にサポートされるバージョンにアップグレードされます | Azure Database for MySQL (PaaS) | [ガイド](/azure/dms/tutorial-mysql-azure-mysql-online)
+| **PostgreSQL** | サポートされているすべてのバージョンは、移行前にサポートされるバージョンにアップグレードされます | Azure Database for PostgreSQL (PaaS) | [ガイド](/azure/dms/tutorial-postgresql-azure-postgresql-online) |
 | **MariaDB** | サポートされているすべてのバージョンは、移行前にサポートされるバージョンにアップグレードされます | Azure Database for MariaDB (PaaS) | [ガイド](https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?step=1) |
 
 #### <a name="step-4-migration-planning"></a>手順 4:移行の計画
 
-データベースの数が多いため、Contoso では、すべてのデータベース移行インスタンスを追跡するようにプロジェクト管理オフィスを設定しました。 各ビジネスおよびアプリケーション チームには、[説明責任と責任](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/)が割り当てられました。
+データベースの数が多いため、Contoso では、すべてのデータベース移行インスタンスを追跡するようにプロジェクト管理オフィスを設定しました。 各ビジネスおよびアプリケーション チームには、[説明責任と責任](../..//migrate/migration-considerations/assess/index.md)が割り当てられました。
 
-Contoso では、[ワークロードの準備状況のレビュー](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/evaluate)も実行しました。 このレビューでは、インフラストラクチャ、データベース、ネットワークのコンポーネントについて調査しました。
+Contoso では、[ワークロードの準備状況のレビュー](../..//migrate/migration-considerations/assess/evaluate.md)も実行しました。 このレビューでは、インフラストラクチャ、データベース、ネットワークのコンポーネントについて調査しました。
 
 #### <a name="step-5-test-migrations"></a>手順 5:テスト移行
 
@@ -128,7 +128,7 @@ Contoso では、[ワークロードの準備状況のレビュー](https://docs
 
 IaaS ベースのワークロードについては、必要なすべてのサードパーティ製ソフトウェアを事前に設定しました。
 
-テスト移行の後、Contoso ではさまざまな Azure [コスト見積もりツール](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/estimate)を使用して、移行の将来の運用コストをより正確に把握しました。
+テスト移行の後、Contoso ではさまざまな Azure [コスト見積もりツール](../..//migrate/migration-considerations/assess/estimate.md)を使用して、移行の将来の運用コストをより正確に把握しました。
 
 #### <a name="step-6-migration"></a>手順 6:移行
 
@@ -146,7 +146,7 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 
 Contoso は次のことを行う必要があります。
 
-- 新しい Azure データベース ワークロードがセキュリティで保護されていることを確認します。 詳細については、[Azure SQL Database と SQL Managed Instance のセキュリティ機能](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)に関するページを参照してください。
+- 新しい Azure データベース ワークロードがセキュリティで保護されていることを確認します。 詳細については、[Azure SQL Database と SQL Managed Instance のセキュリティ機能](/azure/sql-database/sql-database-security-overview)に関するページを参照してください。
 - ファイアウォールと仮想ネットワークの構成を確認します。
 - Azure Private Link を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
 - Azure Advanced Threat Protection を有効にします。
@@ -156,7 +156,7 @@ Contoso は次のことを行う必要があります。
 Azure データベースが geo リストアを使用してバックアップされていることを確認します。 これにより、リージョン規模の障害が発生した場合は、ペアのリージョンにあるバックアップを使用できます。
 
 > [!IMPORTANT]
->Azure リソースが削除されないようにするため、[リソース ロック](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources)が保持されていることを確認します。 削除されたサーバーを復元することはできません。
+>Azure リソースが削除されないようにするため、[リソース ロック](/azure/azure-resource-manager/management/lock-resources)が保持されていることを確認します。 削除されたサーバーを復元することはできません。
 
 #### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 

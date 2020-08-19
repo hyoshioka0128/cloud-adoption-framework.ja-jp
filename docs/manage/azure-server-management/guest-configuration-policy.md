@@ -7,16 +7,16 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 938934e1a45d8f8abebede6cca8dcd9987cfb7e0
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: d18a716ff7935c3759e4703994273f5a75f372f2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861465"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567174"
 ---
 # <a name="guest-configuration-policy"></a>ゲスト構成ポリシー
 
-Azure Policy の[ゲスト構成](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)拡張機能を使用して、仮想マシン内の構成設定を監査できます。 ゲスト構成は、現在 Azure VM 上でのみサポートされます。
+Azure Policy の[ゲスト構成](/azure/governance/policy/concepts/guest-configuration)拡張機能を使用して、仮想マシン内の構成設定を監査できます。 ゲスト構成は、現在 Azure VM 上でのみサポートされます。
 
 ゲスト構成ポリシーの一覧を見つけるには、Azure Policy ポータル ページで「ゲスト構成」を検索します。 または、PowerShell ウィンドウで次のコマンドレットを実行して、一覧を見つけます。
 
@@ -43,7 +43,7 @@ By default, we recommend that you enable the following policies:
 - Windows および Linux コンピューターのパスワード セキュリティ設定が正しく設定されていることを確認します。
 - Windows VM で証明書の有効期限が近づいていないことを確認します。
 
- このスクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。 スクリプトを実行するときに、ポリシーを適用するサブスクリプションの名前を指定する必要があります。
+ このスクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。 スクリプトを実行するときに、ポリシーを適用するサブスクリプションの名前を指定する必要があります。
 
 ```powershell
 

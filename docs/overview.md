@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 576c6d1fecc908011edeb447595e025819439cc7
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 9af04bd1c67c7db877552572d3fd2e7954ac5046
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194013"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570098"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークとは
 
@@ -29,9 +29,7 @@ Azure 向けの Microsoft クラウド導入フレームワークのベスト �
 
 クラウド導入フレームワークには、Microsoft の従業員、パートナー、顧客からのクラウド導入のベスト プラクティスがまとめられています。 お客様が導入作業中に目的のビジネス成果を推進できるように、テクノロジ、ビジネス、ユーザーに関する戦略の形成に役立つ一連のツール、ガイダンス、体験談が提供されます。 このガイダンスは、クラウド導入ライフサイクルの次のフェーズに対応しており、適切なタイミングで適切なガイダンスに簡単にアクセスできます。
 
-<!-- markdownlint-disable MD033 -->
-
-| | | | | |
+|  |  |  |  |  |
 |--|--|--|--|--|
 | <br> ![戦略アイコン](./_images/icons/strategy.png) | <br> [戦略](./strategy/index.md):業務上の&nbsp;正当な理由&nbsp;と導入による予想される結果を&nbsp;定義する&nbsp;。 | <br> ![計画アイコン](./_images/icons/plan.png) | <br> [計画](./plan/index.md):ビジネスの結果に合わせて実行可能な&nbsp;導入&nbsp;計画を&nbsp;調整する&nbsp;。 |
 | <br> ![準備完了アイコン](./_images/icons/ready.png)       | <br> [準備完了](./ready/index.md):計画された変更のためにクラウド環境を準備する。 | <br> ![移行アイコン](./_images/icons/adopt.png) | <br> [移行](./migrate/index.md):既存のワークロードを移行して最新化する。 |

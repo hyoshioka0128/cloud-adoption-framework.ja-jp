@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4830928bb0b7765ca05a11ceee7c859b2dc2608a
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 8d8e25dfaa7f39eb2c647fbe3a8a7c0f1d3d1fcd
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478635"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568126"
 ---
 # <a name="prepare-for-customer-feedback"></a>カスタマー フィードバックの準備
 
@@ -25,7 +25,7 @@ ms.locfileid: "86478635"
 - **定量的 (テストからのフィードバック):** このフィードバックは、開発側が求めるアクションを評価します。
 - **定性的 (顧客からのフィードバック):** このフィードバックは、メトリックが意味することを顧客の声で伝えます。
 
-フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープン ソース ソフトウェアのホームです。 商用として開発されたアプリケーションのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)の記事は、自分のリポジトリを開始する際に役立ちます。
+フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープン ソース ソフトウェアのホームです。 商用として開発されたアプリケーションのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops)の記事は、自分のリポジトリを開始する際に役立ちます。
 
 Azure の次の各ツールは、GitHub でホストされているプロジェクトと統合されます (または互換性があります)。
 
@@ -60,9 +60,9 @@ Application Insights は、アプリケーションの使用状況に関する�
 
 ### <a name="learn-more"></a>詳細情報
 
-- [Azure Monitor を設定する](https://docs.microsoft.com/azure/azure-monitor/learn/quick-monitor-portal)
-- [Azure Monitor Application Insights の概要](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
-- [利用統計情報ダッシュボードを作成する](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
+- [Azure Monitor を設定する](/azure/azure-monitor/learn/quick-monitor-portal)
+- [Azure Monitor Application Insights の概要](/azure/azure-monitor/learn/tutorial-users)
+- [利用統計情報ダッシュボードを作成する](/azure/azure-monitor/learn/tutorial-app-dashboards)
 
 ## <a name="quantitative-feedback-for-apis"></a>[API の定量的フィードバック](#tab/Quantitative-APIs)
 
@@ -104,7 +104,7 @@ API Management サービスを開くには、[Azure portal](https://portal.azure
 
 ### <a name="learn-more"></a>詳細情報
 
-- [Azure Monitor を使用して API に関するフィードバックを取得する](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
+- [Azure Monitor を使用して API に関するフィードバックを取得する](/azure/api-management/api-management-howto-use-azure-monitor)
 
 ## <a name="qualitative-feedback"></a>[定性的フィードバック](#tab/Qualitative)
 
@@ -114,7 +114,7 @@ API Management サービスを開くには、[Azure portal](https://portal.azure
 
 ### <a name="action"></a>アクション
 
-Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops) を使用して開始してください。
+Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops) を使用して開始してください。
 
 ::: zone-end
 
@@ -140,8 +140,8 @@ DevOps プロジェクトを作成するには:
 
 次の記事は、Azure Boards と GitHub を併用してフィードバックを一元化し、管理する際に役立ちます。
 
-- [Azure Boards の概要](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
-- [Azure Boards と GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards の概要](/azure/devops/boards/get-started/?view=azure-devops)
+- [Azure Boards と GitHub](/azure/devops/boards/github?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelines"></a>[パイプラインでループを閉じる](#tab/pipelines)
 
@@ -175,5 +175,5 @@ App Service でアプリケーションを表示するには、[Azure portal](ht
 
 デプロイ パイプラインの構築を始める際には、次の記事をご覧ください。
 
-- [最初のパイプラインを作成する](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2)
-- [`GitHub Release` タスク](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)
+- [最初のパイプラインを作成する](/azure/devops/pipelines/create-first-pipeline?tabs=tfs-2018-2&view=azure-devops)
+- [`GitHub Release` タスク](/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)

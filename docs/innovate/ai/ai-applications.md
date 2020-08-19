@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9222f0cf5c61e0249e72675d3fe9eb46a0fe8f41
-ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
+ms.openlocfilehash: bf54d25069aa96d6b9b92c50a9beeccefbb1de3c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87523951"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568704"
 ---
 # <a name="ai-applications-and-agents"></a>AI アプリケーションとエージェント
 
@@ -41,7 +41,7 @@ AI アプリケーションの一般的なシナリオには、以下が含ま�
 
 開始するには、最初に、Azure Cognitive Services 内のさまざまなカテゴリおよびサービスについて理解します。 製品ページを参照して詳細を確認し、デモを操作して視覚、音声、言語、意思決定など、利用可能な機能について詳しく把握します。 また、一般的なシナリオを紹介し、Cognitive Services を利用して最初のアプリケーションを作成する方法について示した電子書籍もあります。
 
-- [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/welcome)
+- [Cognitive Services](/azure/cognitive-services/welcome)
 - [製品/サービス全体の対話型デモのページ](https://azure.microsoft.com/services/cognitive-services/)
 - [コグニティブ API を使用してインテリジェントなアプリを構築する](https://azure.microsoft.com/resources/building-intelligent-apps-with-cognitive-apis/) (電子書籍)
 
@@ -51,17 +51,17 @@ AI アプリケーションの一般的なシナリオには、以下が含ま�
 
 また、インテリジェント キオスクをダウンロードし、これらのサービスを体験してデモ実行することもできます。
 
-- [Cognitive Services のドキュメント](https://docs.microsoft.com/azure/cognitive-services/)
+- [Cognitive Services のドキュメント](/azure/cognitive-services/)
 - [コグニティブ API を使用してインテリジェントなアプリを構築する](https://azure.microsoft.com/resources/building-intelligent-apps-with-cognitive-apis/) (電子書籍)
 - [インテリジェント キオスクをインストールして Cognitive Services 機能について理解する](https://github.com/Microsoft/Cognitive-Samples-IntelligentKiosk)
 
 詳細については、Azure Cognitive Services のコンテナー サポートに関する以下のページを参照してください。
 
-- [Azure Cognitive Services でのコンテナーのサポート](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support?tabs=luis)
+- [Azure Cognitive Services でのコンテナーのサポート](/azure/cognitive-services/cognitive-services-container-support?tabs=luis)
 
 AI ソリューションの以下の参照アーキテクチャを確認してください。
 
-- [AI + 機械学習](https://docs.microsoft.com/azure/architecture/browse/#ai--machine-learning)
+- [AI + 機械学習](/azure/architecture/browse/#ai--machine-learning)
 
 ## <a name="ai-agents"></a>AI エージェント
 
@@ -85,24 +85,24 @@ Azure Bot Service と Microsoft Bot Framework についての理解を深めま�
 - Bot Framework は、SDK (C#、JavaScript、Python、Java で使用可能) を提供するオープンソース オファリングであり、開発者によるボットの設計、構築、およびテストを支援します。 また、Bot Framework Composer での無料のビジュアル作成キャンバスと、Bot Framework Emulator でのテスト ツールも提供されています。
 - Azure Bot Service は Azure 内の専用サービスで、これを使用することにより、お客様は Azure でボットをホストまたは公開したり、人気のあるチャネルに接続したりできます。
 
-- [Azure Bot Service と Bot Framework の概要を学習します](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
-- [ボット設計の原則](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
-- [Bot Framework SDK とツールの最新バージョンを確認します](https://docs.microsoft.com/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
+- [Azure Bot Service と Bot Framework の概要を学習します](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
+- [ボット設計の原則](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
+- [Bot Framework SDK とツールの最新バージョンを確認します](/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
 
 作業を開始する最も簡単な方法の 1 つは、Azure Cognitive Services の一部である QnA Maker を使用することです。これを使用すると、FAQ ドキュメントや Web サイトをインテリジェントに変換して、Q&A エクスペリエンスを数分で作成できます。
 
-- [QnA Maker を使用して Q&A 機能を備えたボットをスピーディに作成する方法を学習します](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-add-qna?view=azure-bot-service-4.0&tabs=csharp)
+- [QnA Maker を使用して Q&A 機能を備えたボットをスピーディに作成する方法を学習します](/azure/bot-service/bot-builder-tutorial-add-qna?tabs=csharp&view=azure-bot-service-4.0)
 - [QnA Maker サービスを直接試してみます](https://www.qnamaker.ai/)
 
 ボット開発用の Bot Framework SDK とツールをダウンロードして使用する
 
-- [Bot Framework Composer の 5 分間のクイック スタート](https://docs.microsoft.com/composer/)
-- [Bot Framework SDK でボットを構築してテストする (C#、JavaScript、Python)](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)
+- [Bot Framework Composer の 5 分間のクイック スタート](/composer/)
+- [Bot Framework SDK でボットを構築してテストする (C#、JavaScript、Python)](/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)
 
 Cognitive Services を追加してボットをさらにインテリジェントにする方法を学習します。
 
 - [AI アプリケーションを構築するための開発者ガイド](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/) (電子書籍)
-- [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) の詳細を確認する
+- [Cognitive Services](/azure/cognitive-services/) の詳細を確認する
 
 Bot Framework ソリューション アクセラレータを使用して独自の仮想アシスタントを構築する方法と、カレンダー、電子メール、目的地、To Do などの一般的なスキルのセットを選択する方法について学習します。
 

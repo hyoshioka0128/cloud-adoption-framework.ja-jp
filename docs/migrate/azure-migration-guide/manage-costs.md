@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 33dc9a27eb04462f7195f537d8e2d4edacc36ca9
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 5e6034308a11a8347c3b5126756c6a87d3fe98c0
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373103"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570455"
 ---
 <!-- cSpell:ignore bandersmsft -->
 
@@ -72,7 +72,7 @@ Azure Migrate では、コレクターや Service Map によってキャプチ�
 
 ### <a name="additional-resources"></a>その他のリソース
 
-- [Azure Migrate を使用した評価の設定と確認](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- [Azure Migrate を使用した評価の設定と確認](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[コスト管理規範のガイダンス](../../govern/cost-management/index.md)と[コスト管理規範の改善](../../govern/guides/complex/cost-management-improvement.md)に関するページをご覧ください。
 
 ## <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[移行中および移行後に VM のコストを見積もり、最適化する](#tab/EstimateOptimize)
@@ -107,8 +107,8 @@ Azure Cost Management と Billing は、消費習慣のより総合的なビュ�
 ### <a name="additional-resources"></a>その他のリソース
 
 - 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[コスト管理規範](../../govern/cost-management/index.md)と[コスト管理規範の改善](../../govern/guides/complex/cost-management-improvement.md)に関するページをご覧ください。
-- Azure Advisor の詳細については、[Azure Advisor を使用したサービス コストの削減](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)に関するページを参照してください。
-- Azure Cost Management と Billing の詳細については、「[スコープを理解して使用する](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)」および「[コスト分析を使用してコストを調査および分析する](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)」を参照してください。
+- Azure Advisor の詳細については、[Azure Advisor を使用したサービス コストの削減](/azure/advisor/advisor-cost-recommendations)に関するページを参照してください。
+- Azure Cost Management と Billing の詳細については、「[スコープを理解して使用する](/azure/cost-management/understand-work-scopes)」および「[コスト分析を使用してコストを調査および分析する](/azure/cost-management/quick-acm-cost-analysis)」を参照してください。
 
 ## <a name="tips-and-tricks-to-optimize-costs"></a>[コストを最適化するためのヒントとコツ](#tab/TipsTricks)
 
@@ -132,7 +132,7 @@ Microsoft アカウント担当者と話をして、どのようにしたら現�
 
 ### <a name="azure-reservations"></a>Azure の予約
 
-[Azure の予約](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations)を使用すると、仮想マシンまたは SQL Database のコンピューティング容量の 1 年または 3 年分を前払いできます。 前払いでは、使用するリソースに関する割引を受けることができます。 予約では、仮想マシンまたは SQL Database のコンピューティング コストを大幅に削減できます (1 年または 3 年のどちらかの前払い契約の従量課金制の料金で最大 72%)。 予約は課金割引を提供するもので、仮想マシンまたは SQL Database の実行時の状態には影響しません。
+[Azure の予約](/azure/cost-management-billing/reservations/save-compute-costs-reservations)を使用すると、仮想マシンまたは SQL Database のコンピューティング容量の 1 年または 3 年分を前払いできます。 前払いでは、使用するリソースに関する割引を受けることができます。 予約では、仮想マシンまたは SQL Database のコンピューティング コストを大幅に削減できます (1 年または 3 年のどちらかの前払い契約の従量課金制の料金で最大 72%)。 予約は課金割引を提供するもので、仮想マシンまたは SQL Database の実行時の状態には影響しません。
 
 ### <a name="use-azure-hybrid-benefit"></a>Azure ハイブリッド特典を利用する
 
@@ -140,7 +140,7 @@ Microsoft アカウント担当者と話をして、どのようにしたら現�
 
 ### <a name="low-priority-vms-with-batch"></a>バッチを使用した優先順位の低い VM
 
-優先順位の低いバックグラウンド プロセスの場合、バッチは、バックグラウンド サービス VM を管理し、コストを削減するための手段を提供します。 ただし、この割引オプションを選択する前に、[バッチを使用した優先順位の低い VM](https://docs.microsoft.com/azure/batch/batch-low-pri-vms) のパフォーマンスへの影響を理解することが重要です。
+優先順位の低いバックグラウンド プロセスの場合、バッチは、バックグラウンド サービス VM を管理し、コストを削減するための手段を提供します。 ただし、この割引オプションを選択する前に、[バッチを使用した優先順位の低い VM](/azure/batch/batch-low-pri-vms) のパフォーマンスへの影響を理解することが重要です。
 
 ### <a name="additional-resources"></a>その他のリソース
 
