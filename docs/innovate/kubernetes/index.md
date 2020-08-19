@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 377226674d3a07d479d7b8f3e9f8c72e0dfd763e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 001689cb017e6e4c86d2e79ae880aef74f78cff5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284267"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572223"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 
@@ -26,10 +26,6 @@ ms.locfileid: "88284267"
 
 クラウド導入ライフサイクルのこのフェーズの準備として、次の演習を使用します。
 
-<!-- markdownlint-disable MD033 -->
-
 - [アプリケーションの開発とデプロイ](./application-development.md):アプリケーション開発のパターンとプラクティスを確認し、CI/CD パイプラインを構成し、サイト信頼性エンジニアリング (SRE) のベスト プラクティスを実装します。
 - [クラスターの設計と操作](./cluster-design-operations.md):クラスター構成とネットワーク設計を特定します。 インフラストラクチャのプロビジョニングを自動化することで、将来のスケーラビリティに対応します。 事業継続とディザスター リカバリーを計画することで、高可用性を維持します。
 - [クラスターとアプリケーションのセキュリティ](./cluster-application-security.md):Kubernetes のセキュリティの基本について理解を深めます。 クラスターのセキュリティ保護設定とアプリケーションのセキュリティに関するガイダンスを確認します。
-
-<!-- markdownlint-enable MD033 -->

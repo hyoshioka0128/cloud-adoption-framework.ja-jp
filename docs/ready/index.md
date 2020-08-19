@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 74eef6d3e619b9aa01343448e06b752db4c87e54
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 3dac2b3f604877651b9f70decf9c7712c201bfc8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285015"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574229"
 ---
 # <a name="ensure-the-environment-is-prepared-for-the-cloud-adoption-plan"></a>クラウド導入計画に合わせて環境を準備します
 
@@ -20,12 +20,11 @@ ms.locfileid: "88285015"
 
 次の演習は、クラウド導入を支援するランディング ゾーンの作成プロセスのガイダンスとして役立ちます。
 
-<!-- docsTest:ignore images "_images">
-<!-- markdownlint-disable MD033 -->
-
-1. [Azure セットアップ ガイド](./azure-setup-guide/index.md):Azure セットアップ ガイドでは、ランディング ゾーンの作成に必要なツールや手法を知ることができます。
-2. [Azure ランディング ゾーン](./landing-zone/index.md):環境に合わせてコードベースの開始点を確立するには、最も適切なランディング ゾーン オプションを選択します。
-3. [ランディング ゾーンの展開](./considerations/index.md):最初のランディング ゾーンを展開することで、クラウド導入計画のプラットフォーム要件を満たします。
-4. [ベスト プラクティス](./azure-best-practices/index.md):現在と将来のランディング ゾーンを正しく構成するために、ベスト プラクティスに照らしてランディング ゾーンの変更を検証します。
+|  |  |
+|--|--|
+| <br> ![1](../_images/icons/1.png) | <br> [Azure セットアップ ガイド](./azure-setup-guide/index.md):Azure セットアップ ガイドでは、ランディング ゾーンの作成に必要なツールや手法を知ることができます。 |
+| <br> ![2](../_images/icons/2.png) | <br> [Azure ランディング ゾーン](./landing-zone/index.md):環境に合わせてコードベースの開始点を確立するには、最も適切なランディング ゾーン オプションを選択します。 |
+| <br> ![3](../_images/icons/3.png) | <br> [ランディング ゾーンの展開](./considerations/index.md):最初のランディング ゾーンを展開することで、クラウド導入計画のプラットフォーム要件を満たします。 |
+| <br> ![4](../_images/icons/4.png) | <br> [ベスト プラクティス](./azure-best-practices/index.md):現在と将来のランディング ゾーンを正しく構成するために、ベスト プラクティスに照らしてランディング ゾーンの変更を検証します。 |
 
 最低でも、クラウド導入の準備をするには、[Azure セットアップ ガイド](./azure-setup-guide/index.md)を参照してください。

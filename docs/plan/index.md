@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: eca81105ca5f05367e692a7941b64970911b11a8
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 759ac124bed7bab6ed8bca6efff3278efbc0759d
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88281462"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574348"
 ---
 # <a name="develop-a-cloud-adoption-plan"></a>クラウド導入計画を作成する
 
@@ -20,11 +20,11 @@ ms.locfileid: "88281462"
 
 次の演習は、テクノロジ戦略の記録に役立ちます。 この手法では、タスクに優先順位を付けて導入を進めます。 その後、クラウドの導入計画は、クラウド導入戦略に定義されているメトリックと同期にマッピングされます。
 
-<!-- markdownlint-disable MD033 -->
-
-1. [デジタル資産](../digital-estate/rationalize.md):動機やビジネス成果に合わせた想定に基づき、デジタル資産の目録を作成し、合理化します。
-2. [初期の組織配置](./initial-org-alignment.md):導入計画を支援する最初の編成調整を計画します。
-3. [スキルの準備計画](./adapt-roles-skills-processes.md):スキルの準備不足に対処するための計画を立てる
-4. [クラウド導入計画](./plan-intro.md):デジタル資産、スキル、組織をまたいで変更を管理するクラウド導入計画を作成します。
+|  |  |
+|--|--|
+| <br> ![1](../_images/icons/1.png) | <br> [デジタル資産](../digital-estate/rationalize.md):動機やビジネス成果に合わせた想定に基づき、デジタル資産の目録を作成し、合理化します。 |
+| <br> ![2](../_images/icons/2.png) | <br> [初期の組織配置](./initial-org-alignment.md):導入計画を支援する最初の編成調整を計画します。 |
+| <br> ![3](../_images/icons/3.png) | <br> [スキルの準備計画](./adapt-roles-skills-processes.md):スキルの準備不足に対処するための計画を立てる |
+| <br> ![4](../_images/icons/4.png) | <br> [クラウド導入計画](./plan-intro.md):デジタル資産、スキル、組織をまたいで変更を管理するクラウド導入計画を作成します。 |
 
 [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)をダウンロードし、クラウド導入戦略を構築しながら各演習の成果を記録します。 [クラウド合理化の 5 R](../digital-estate/5-rs-of-rationalization.md) について学習して、クラウド導入計画の立案に役立てます。

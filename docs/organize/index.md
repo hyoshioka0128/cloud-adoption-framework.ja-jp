@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8526c4c8c975e17a0e3d344e1019bb24c591d143
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 92bcd305d963659ff53feca0f233c4a0c1fca312
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285287"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573107"
 ---
 # <a name="manage-organizational-alignment"></a>組織の配置を管理する
 
@@ -21,10 +21,12 @@ ms.locfileid: "88285287"
 
 次の演習は、クラウド導入を支援するランディング ゾーンの作成プロセスのガイダンスとして役立ちます。
 
-1. [構造の種類](#structure-type):実際の運用モデルに最も適した組織構造の種類を定義します。
-2. [クラウドの職務](#understand-required-cloud-functions):クラウドの導入と運用に必要なクラウドの職能について説明します。
-3. [チーム構造を成熟させる](./organization-structures.md):さまざまなクラウドの職務を遂行できるチームを定義します。
-4. [RACI マトリックス](./raci-alignment.md):明確に定義された役割は、どのような運用モデルにおいても重要な側面です。 提供されている RACI マトリックスを使用して、クラウド運用モデルのさまざまな機能について、実行責任、説明責任、協業、および報告の役割を各チームにマップします。
+|  |  |
+|--|--|
+| <br> ![1](../_images/icons/1.png) | <br> [構造の種類](#structure-type):実際の運用モデルに最も適した組織構造の種類を定義します。 |
+| <br> ![2](../_images/icons/2.png) | <br> [クラウドの職務](#understand-required-cloud-functions):クラウドの導入と運用に必要なクラウドの職能について説明します。 |
+| <br> ![3](../_images/icons/3.png) | <br> [チーム構造を成熟させる](./organization-structures.md):さまざまなクラウドの職務を遂行できるチームを定義します。 |
+| <br> ![4](../_images/icons/4.png) | <br> [RACI マトリックス](./raci-alignment.md):明確に定義された役割は、どのような運用モデルにおいても重要な側面です。 提供されている RACI マトリックスを使用して、クラウド運用モデルのさまざまな機能について、実行責任、説明責任、協業、および報告の役割を各チームにマップします。 |
 
 ## <a name="structure-type"></a>構造の種類
 

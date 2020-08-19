@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c749237029542e8757af75b9a83aaba8cd917055
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 6887955f64b7e878f578219f584a028df6bea8c5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279626"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568653"
 ---
 <!-- docsTest:ignore InterpretML FairLearn -->
 
@@ -25,8 +25,6 @@ ms.locfileid: "88279626"
 ## <a name="get-started"></a>はじめに
 
 クラウド導入ライフサイクルのこのフェーズの準備として、次の演習を使用します。
-
-<!-- markdownlint-disable MD033 -->
 
 - [機械学習モデルの開発、デプロイ、管理](https://azure.microsoft.com/overview/ai-platform/dev-resources/):MLOps、自動機械学習 (AutoML)、InterpretML や FairLearn などの責任ある ML の学習ツールを含む、独自の機械学習モデルを構築するためのパターンとプラクティスを確認します。
 - [ドメイン固有の AI モデルをアプリケーションに追加](https://www.oreilly.com/library/view/building-intelligent-apps/9781492058632/):Cognitive Services を使用して AI 機能をアプリケーションに追加するためのベスト プラクティスについて学びます。 また、これらのサービスで対処できる主要なシナリオについても学習します。
