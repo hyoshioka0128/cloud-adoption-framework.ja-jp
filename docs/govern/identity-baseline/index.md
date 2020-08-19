@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d246a5c00aff0bacc7b12f79c9f252f6956b2907
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f970429916347bf03d4357d85c164880e3bf749f
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754643"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88280493"
 ---
 # <a name="identity-baseline-discipline-overview"></a>ID ベースライン規範の概要
 
@@ -35,18 +35,16 @@ ID ベースラインは、[クラウド導入フレームワーク ガバナン
 
 ## <a name="develop-governance-policy-statements"></a>ガバナンス ポリシー ステートメントの策定
 
-次の 6 つの手順では、ID ベースライン性規範を開発する際の例と可能性のあるオプションを示します。 各手順は、ID に関連するリスクを管理するために必要なポリシーとプロセスを確立するためのクラウド ガバナンス チーム内での話し合いや、組織の影響を受けるビジネス チームや IT チームとの討議の中で、出発点として使用します。
+次のリソースでは、ID ベースライン規範を開発する際の例と可能性のあるオプションを示します。 各リソースは、ID に関連するリスクを管理するために必要なポリシーとプロセスを確立するためのクラウド ガバナンス チーム内での話し合いや、組織の影響を受けるビジネス チームや IT チームとの討議の中で、出発点として使用します。
 
 <!-- markdownlint-disable MD033 -->
 
-| | |
-|---|---|
-| <br> ![テンプレート アイコン](../../_images/govern/process-template.png)   | <br> [ID ベースライン規範テンプレート](./template.md):ID ベースライン規範を文書化するためのテンプレートをダウンロードします。 |
-| <br> ![リスク アイコン](../../_images/govern/process-risks.png)         | <br> [ビジネス リスク](./business-risks.md):一般的に ID ベースラインの規範に関係する動機およびリスクを理解できます。 |
-| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png)     | <br> [インジケーターとメトリック](./metrics-tolerance.md):ID ベースラインの規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
-| <br> ![準拠アイコン](../../_images/govern/process-enforce.png)   | <br> [ポリシー準拠プロセス](./compliance-processes.md):ID ベースラインの規範がポリシーに準拠するようにするための推奨の手順です。 |
-| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png)   | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
-| <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):ID ベースラインの規範をサポートするために実装できる Azure サービスです。 |
+- [ID ベースライン規範テンプレート](./template.md):ID ベースライン規範を文書化するためのテンプレートをダウンロードします。
+- [ビジネス リスク](./business-risks.md):一般的に ID ベースラインの規範に関係する動機およびリスクを理解できます。
+- [インジケーターとメトリック](./metrics-tolerance.md):ID ベースラインの規範に投資する最適なタイミングであるかどうかを知るインジケーターです。
+- [ポリシー準拠プロセス](./compliance-processes.md):ID ベースラインの規範がポリシーに準拠するようにするための推奨の手順です。
+- [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。
+- [ツールチェーン](./toolchain.md):ID ベースラインの規範をサポートするために実装できる Azure サービスです。
 
 <!-- markdownlint-enable MD033 -->
 
