@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 728531a3d46cc2f3a7d3d94f63cbf71b83b103cd
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: afd3b0ae34827a2b4d191a402a2a8a95d8ce4c10
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278929"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574161"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
@@ -110,6 +110,7 @@ Azure Monitor などのクラウドベースのログおよびレポート ソ�
 ### <a name="multicloud"></a>マルチクラウド
 
 ログとレポートの機能をマルチクラウド プラットフォーム全体に取り込むのは、複雑になる場合があります。 プラットフォーム間で提供されるサービスは多くの場合、直接比較することはできず、これらのサービスで提供されるログとテレメトリの機能も異なります。
+
 マルチクラウドのログのサポートでは多くの場合、ハイブリッドのログ記録ソリューションにデータを送信する前に、一般的な形式にログ データを処理するゲートウェイ サービスを使用する必要があります。
 
 ## <a name="learn-more"></a>詳細情報

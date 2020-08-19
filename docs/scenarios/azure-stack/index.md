@@ -7,16 +7,16 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb2bae4d7568fbeeae1c17b919e1a155ea0b4185
-ms.sourcegitcommit: 76edf563a08ff7dc81c3fc2dc6c8972ab3b4c55b
+ms.openlocfilehash: 9684ad72587b1132632a53d15385e2f396311536
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88237136"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575028"
 ---
 # <a name="azure-stack-a-strategic-option-for-running-azure-in-your-datacenter"></a>Azure Stack:データセンターで Azure を実行するための戦略的オプション
 
-Microsoft は、アプリケーションとデータ ストレージに対してクラウド優先のアプローチを採用しています。 アプリケーションとデータを 1 つ以上のハイパースケール クラウドに移動することが優先されます。これには、グローバルな Azure オプションや、ロケール固有のソブリン クラウド (Azure Germany や Azure Government など) が含まれます。 
+Microsoft は、アプリケーションとデータ ストレージに対してクラウド優先のアプローチを採用しています。 アプリケーションとデータを 1 つ以上のハイパースケール クラウドに移動することが優先されます。これには、グローバルな Azure オプションや、ロケール固有のソブリン クラウド (Azure Germany や Azure Government など) が含まれます。
 
 Azure Stack Hub は、ソブリン クラウドの別のインスタンスとして機能し、データセンター内の顧客によって操作される場合もあれば、クラウド サービス プロバイダーを通じて使用される場合もあります。 ただし、Azure Stack Hub はハイパースケールのクラウドではなく、Microsoft は、Azure Stack Hub のサービス レベル アグリーメントを公開することもサポートすることもありません。
 

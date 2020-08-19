@@ -1,7 +1,7 @@
 <!-- TEMPLATE FILE - DO NOT ADD METADATA -->
 <!-- markdownlint-disable MD002 MD041 -->
 > [!NOTE]
-> ビジネス要件が変化した場合は、Azure 管理グループにより、管理階層とサブスクリプション グループの割り当てを簡単に再編成できます。 ただし、管理グループに適用されるポリシーとロールの割り当ては、階層内のそのグループの下にあるすべてのサブスクリプションで継承されることに注意してください。 管理グループ間でサブスクリプションを再割り当てする場合は、ポリシーとロールの割り当てが変化する可能性があることを認識してください。 詳細については、[Azure 管理グループのドキュメント](https://docs.microsoft.com/azure/governance/management-groups)に関するページを参照してください。
+> ビジネス要件が変化した場合は、Azure 管理グループにより、管理階層とサブスクリプション グループの割り当てを簡単に再編成できます。 ただし、管理グループに適用されるポリシーとロールの割り当ては、階層内のそのグループの下にあるすべてのサブスクリプションで継承されることに注意してください。 管理グループ間でサブスクリプションを再割り当てする場合は、ポリシーとロールの割り当てが変化する可能性があることを認識してください。 詳細については、[Azure 管理グループのドキュメント](/azure/governance/management-groups)に関するページを参照してください。
 
 ### <a name="governance-of-resources"></a>リソースのガバナンス
 
@@ -23,11 +23,11 @@ Azure が提供するいくつかの組み込みのポリシーとロール定�
 2. すべてのリソースで次のタグを必須にします。*Department/Billing Unit*、_Geography_、_Data Classification_、_Criticality_、_SLA_、_Environment_、_Application Archetype_、_Application_、および _Application Owner_。 これは、`Require specified tag` 組み込み定義を使用して処理することができます。
 3. リソースの `Application` タグを、関連するリソース グループの名前と一致させる必要があります。 これは、"タグとその値が必要" の組み込みの定義を使用して処理することができます。
 
-カスタム ポリシーの定義については、[Azure Policy のドキュメント](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition)をご覧ください。 カスタム ポリシーのガイダンスおよび例については、[Azure Policy のサンプル サイトに関するページ](https://docs.microsoft.com/azure/governance/policy/samples)、および関連する[GitHub リポジトリに関するページ](https://github.com/azure/azure-policy)をご覧ください。
+カスタム ポリシーの定義については、[Azure Policy のドキュメント](/azure/governance/policy/tutorials/create-custom-policy-definition)をご覧ください。 カスタム ポリシーのガイダンスおよび例については、[Azure Policy のサンプル サイトに関するページ](/azure/governance/policy/samples)、および関連する[GitHub リポジトリに関するページ](https://github.com/azure/azure-policy)をご覧ください。
 
 #### <a name="assign-azure-policy-and-rbac-roles-using-azure-blueprints"></a>Azure Blueprints を使用して Azure Policy および RBAC ロールを割り当てる
 
-Azure ポリシーは、リソース グループ、サブスクリプション、管理グループのレベルに割り当てることができ、[Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) の定義に含めることができます。 このガバナンス MVP で定義されたポリシー要件は、現在のすべてのサブスクリプションに適用されますが、将来のデプロイでは、例外や代替のポリシーが高い確率で必要になります。 その結果、管理グループを使用してポリシーを割り当て、すべての子サブスクリプションがこれらの割り当てを継承した場合は、柔軟性が足りないために、これらのシナリオをサポートできない可能性があります。
+Azure ポリシーは、リソース グループ、サブスクリプション、管理グループのレベルに割り当てることができ、[Azure Blueprints](/azure/governance/blueprints/overview) の定義に含めることができます。 このガバナンス MVP で定義されたポリシー要件は、現在のすべてのサブスクリプションに適用されますが、将来のデプロイでは、例外や代替のポリシーが高い確率で必要になります。 その結果、管理グループを使用してポリシーを割り当て、すべての子サブスクリプションがこれらの割り当てを継承した場合は、柔軟性が足りないために、これらのシナリオをサポートできない可能性があります。
 
 Azure Blueprints を使用すると、複数のサブスクリプション全体で、ポリシーとロールを一貫した方法で割り当て、Resource Manager テンプレートを適用し、リソース グループをデプロイできます。 ポリシー定義と同様に、ブループリント定義は管理グループまたはサブスクリプションに保存されます。 ポリシー定義は、管理グループ階層内の任意の子が、継承を通じて利用できます。
 
@@ -41,7 +41,7 @@ Azure Blueprints を使用すると、複数のサブスクリプション全体
 3. ブループリント定義を公開します。
 4. `governance-baseline` ブループリント定義をすべてのサブスクリプションに割り当てます。
 
-ブループリント定義の作成および使用の詳細については、[Azure Blueprints ドキュメント](https://docs.microsoft.com/azure/governance/blueprints/overview)をご覧ください。
+ブループリント定義の作成および使用の詳細については、[Azure Blueprints ドキュメント](/azure/governance/blueprints/overview)をご覧ください。
 
 ### <a name="secure-hybrid-vnet"></a>ハイブリッド VNet をセキュリティで保護する
 
@@ -50,9 +50,9 @@ Azure Blueprints を使用すると、複数のサブスクリプション全体
 クラウド環境内で信頼が十分に確立されるまでは、オンプレミス環境とクラウド ワークロード間の許可された通信を厳重に制御および監視すること、およびクラウドベース リソースからの不正アクセスに対してオンプレミス ネットワークをセキュリティ保護することが重要です。 これらのシナリオをサポートするため、ガバナンス MVP では、次のベスト プラクティスが追加されています。
 
 1. クラウドのセキュリティで保護されたハイブリッド VNet を確立します。
-    1. [VPN 参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)で、Azure 内に VPN Gateway を作成するためのパターンとデプロイ モデルを確立します。
+    1. [VPN 参照アーキテクチャ](/azure/architecture/reference-architectures/hybrid-networking/vpn)で、Azure 内に VPN Gateway を作成するためのパターンとデプロイ モデルを確立します。
     2. オンプレミスのセキュリティとトラフィック管理メカニズムで、接続されているクラウド ネットワークが信頼できないものとして扱われることを検証します。 クラウドでホストされるリソースとサービスでは、許可されたオンプレミス サービスにのみアクセスできる必要があります。
-    3. オンプレミス データセンター内のローカル エッジ デバイスが [Azure VPN Gateway の要件](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)と互換性があり、パブリック インターネットにアクセスするように構成されていることを確認します。
+    3. オンプレミス データセンター内のローカル エッジ デバイスが [Azure VPN Gateway の要件](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)と互換性があり、パブリック インターネットにアクセスするように構成されていることを確認します。
     4. 最も単純なワークロードの場合を除き、VPN トンネルは運用に対応する回線と見なすべきではないことに注意してください。 オンプレミス接続を必要とする少数の単純なワークロードを超える場合は、Azure ExpressRoute を使用してください。
 1. ルート管理グループ内で、`secure-hybrid-vnet` という名前のブループリント定義をもう 1 つ作成します。
     1. VPN Gateway の Resource Manager テンプレートをブループリント定義にアーティファクトとして追加します。
