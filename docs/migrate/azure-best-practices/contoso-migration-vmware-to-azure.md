@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 237757b19f8289a6659d3a9c5a6275bbb4d4d7d4
-ms.sourcegitcommit: 9662234674e663bc7d4bc134d303520cb146bd95
+ms.openlocfilehash: 1cf17ea35f313c400b5a08cd91dd0b968da9ece1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87560476"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574875"
 ---
 <!-- docsTest:ignore "Bulk Migration" "Cold Migration" -->
 
@@ -23,7 +23,7 @@ Contoso という架空の会社がその VMware 仮想マシン (VM) をオン�
 
 | 移行オプション | 結果 |
 | --- | --- |
-| [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/) | <li>オンプレミスの VM を[評価](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware)し、[移行](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware)する。 <li>Azure IaaS (サービスとしてのインフラストラクチャ) を使用してワークロードを実行する。 <li>[Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/)を使用して VM を管理する。 |
+| [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/) | <li>オンプレミスの VM を[評価](/azure/migrate/tutorial-assess-vmware)し、[移行](/azure/migrate/tutorial-migrate-vmware)する。 <li>Azure IaaS (サービスとしてのインフラストラクチャ) を使用してワークロードを実行する。 <li>[Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/)を使用して VM を管理する。 |
 | [Azure VMware Solution](https://azure.microsoft.com/overview/azure-vmware) | <li>VMware Hybrid Cloud Extension (HCX) または vMotion を使用してオンプレミスの VM を移動する。 <li>Azure ベアメタル ハードウェアでネイティブの VMware ワークロードを実行する。 <li>vSphere を使用して VM を管理する。 |
 
 この記事では、Contoso が Azure VMware Solution を使用し、プライベート クラウドを Azure に作成することでワークロードを移行します。VMware vCenter など、VMware でサポートされるツールにネイティブでアクセスすることができます。 Azure VMware Solution は、VMware によってサポートされる、Microsoft のファースト パーティ サービスであることがわかっているので、Contoso は安心してそれを使用することができます。
@@ -76,8 +76,8 @@ Contoso の現在のアーキテクチャの特徴:
 
 提案されたアーキテクチャを受けて、Contoso は以下を行います。
 
-- [Azure VMware Solution のプライベート クラウド](https://docs.microsoft.com/azure/azure-vmware/concepts-private-clouds-clusters)を Azure の米国西部リージョンにデプロイする。
-- Global Reach を有効にした [ExpressRoute](https://docs.microsoft.com/azure/azure-vmware/concepts-networking) と仮想ネットワークを使用して、米国西部で実行されている Azure VMware Solution にオンプレミスのデータセンターを接続する。
+- [Azure VMware Solution のプライベート クラウド](/azure/azure-vmware/concepts-private-clouds-clusters)を Azure の米国西部リージョンにデプロイする。
+- Global Reach を有効にした [ExpressRoute](/azure/azure-vmware/concepts-networking) と仮想ネットワークを使用して、米国西部で実行されている Azure VMware Solution にオンプレミスのデータセンターを接続する。
 - [VMware Hybrid Cloud Extension (HCX)](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-D0CD0CC6-3802-42C9-9718-6DA5FEC246C6.html) を使用して、VM を専用の Azure VMware Solution に移行する。
 
 ![提案されたアーキテクチャの図。](./media/contoso-migration-vmware-to-azure/on-premises-stretched-network-expressroute.png)
@@ -123,16 +123,16 @@ Contoso は、Azure Virtual Network、およびオンプレミスと Azure の�
 
 この接続は Azure ExpressRoute を通じて提供されます。また、サービスを有効にするために、特定のネットワーク アドレス範囲とファイアウォール ポートが必要になります。 高帯域幅かつ低遅延のこの接続によって、Contoso は、Azure VMware Solution のプライベート クラウド環境から、Azure サブスクリプションで実行されているサービスにアクセスすることができます。
 
-Contoso は、その[仮想ネットワーク](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm)用に、重複していないアドレス空間を含む IP アドレス スキームを計画する必要があります。 同社は、[ExpressRoute ゲートウェイ](https://docs.microsoft.com/azure/expressroute/expressroute-about-virtual-network-gateways)のゲートウェイ サブネットを含める必要があります。
+Contoso は、その[仮想ネットワーク](/azure/virtual-network/virtual-network-vnet-plan-design-arm)用に、重複していないアドレス空間を含む IP アドレス スキームを計画する必要があります。 同社は、[ExpressRoute ゲートウェイ](/azure/expressroute/expressroute-about-virtual-network-gateways)のゲートウェイ サブネットを含める必要があります。
 
-Azure VMware Solution のプライベート クラウドは、もう 1 つの Azure ExpressRoute 接続を使用して Contoso の Azure 仮想ネットワークに接続されます。 ExpressRoute Global Reach を有効にすることで、Azure VMware Solution のプライベート クラウド上で実行される VM に対し、オンプレミスの VM から[直接接続](https://docs.microsoft.com/azure/azure-vmware/concepts-networking#on-premises-interconnectivity)することができます。 Global Reach を有効にするには、ExpressRoute Premium SKU が必要です。
+Azure VMware Solution のプライベート クラウドは、もう 1 つの Azure ExpressRoute 接続を使用して Contoso の Azure 仮想ネットワークに接続されます。 ExpressRoute Global Reach を有効にすることで、Azure VMware Solution のプライベート クラウド上で実行される VM に対し、オンプレミスの VM から[直接接続](/azure/azure-vmware/concepts-networking#on-premises-interconnectivity)することができます。 Global Reach を有効にするには、ExpressRoute Premium SKU が必要です。
 
 ![ExpressRoute Global Reach と Azure VMware Solution の図。](./media/contoso-migration-vmware-to-azure/adjacency-overview-drawing-double.png)
 
 Azure VMware Solution のプライベート クラウドでは、サブネット用に少なくとも `/22` の CIDR ネットワーク アドレス ブロックが必要です。 オンプレミス環境と仮想ネットワークに接続するには、これが重複していないネットワーク アドレス ブロックである必要があります。
 
 >[!NOTE]
-> Azure VMware Solution のネットワーク計画については、[Azure VMware Solution のネットワークのチェックリスト](https://docs.microsoft.com/azure/azure-vmware/tutorial-network-checklist/)に関するページを参照してください。
+> Azure VMware Solution のネットワーク計画については、[Azure VMware Solution のネットワークのチェックリスト](/azure/azure-vmware/tutorial-network-checklist/)に関するページを参照してください。
 
 ### <a name="step-2-create-an-azure-vmware-solution-private-cloud"></a>手順 2:Azure VMware Solution のプライベート クラウドを作成する
 
@@ -140,11 +140,11 @@ Contoso はネットワークと IP アドレスの計画を完了すると、�
 
 Azure VMware Solution のプライベート クラウドは、ESXi ホスト、vCenter、vSAN、NSX をサポートする分離された VMware ソフトウェア定義データセンターです。 このスタックは、Azure リージョン内の分離された専用のベアメタル ハードウェア ノードで実行されます。 Azure VMware Solution プライベート クラウドの初期デプロイ時の最小ホスト数は 3 つです。 追加のホストは、クラスターあたり最大 16 個まで一度に 1 つずつ追加できます。
 
-詳細については、[Azure VMware Solution プレビューのプライベート クラウドとクラスターの概念](https://docs.microsoft.com/azure/azure-vmware/concepts-private-clouds-clusters)に関するページを参照してください。
+詳細については、[Azure VMware Solution プレビューのプライベート クラウドとクラスターの概念](/azure/azure-vmware/concepts-private-clouds-clusters)に関するページを参照してください。
 
 Azure VMware Solution のプライベート クラウドは、Azure VMware Solution ポータルから管理します。 Contoso は自社の管理ドメインに自社の vCenter サーバーを所有します。
 
-Azure VMware Solution のプライベート クラウドを作成する方法については、[Azure VMware Solution のプライベート クラウドを Azure にデプロイする](https://docs.microsoft.com/azure/azure-vmware/tutorial-create-private-cloud)方法に関するページを参照してください。
+Azure VMware Solution のプライベート クラウドを作成する方法については、[Azure VMware Solution のプライベート クラウドを Azure にデプロイする](/azure/azure-vmware/tutorial-create-private-cloud)方法に関するページを参照してください。
 
 1. Contoso チームは、まず次のコマンドを実行して、Azure VMware Solution プロバイダーを Azure に登録します。
 
@@ -164,7 +164,7 @@ Azure VMware Solution のプライベート クラウドを作成する方法に
 
 Azure VMware Solution のプライベート クラウドには、仮想ネットワークが必要です。 Azure VMware Solution のプレビュー期間中はオンプレミスの vCenter がサポートされないため、Contoso のオンプレミス環境と統合するための手順が別途必要になります。 チームは、ExpressRoute 回線と仮想ネットワーク ゲートウェイを設定することにより、その仮想ネットワークを Azure VMware Solution のプライベート クラウドに接続します。
 
-詳細については、「[Azure で VMware プライベート クラウド用のネットワークを構成する](https://docs.microsoft.com/azure/azure-vmware/tutorial-configure-networking)」を参照してください。
+詳細については、「[Azure で VMware プライベート クラウド用のネットワークを構成する](/azure/azure-vmware/tutorial-configure-networking)」を参照してください。
 
 1. Contoso チームはまず、ゲートウェイ サブネットを含む仮想ネットワークを作成します。
 
@@ -183,7 +183,7 @@ Azure VMware Solution のプライベート クラウドには、仮想ネット
 
     ![ExpressRoute を仮想ネットワークに接続するための [接続の追加] ペインのスクリーンショット。](./media/contoso-migration-vmware-to-azure/add-connection.png)
 
-[Azure VMware Solution のプライベート クラウドにアクセスする方法](https://docs.microsoft.com/azure/azure-vmware/tutorial-access-private-cloud)に関するページを参照してください。
+[Azure VMware Solution のプライベート クラウドにアクセスする方法](/azure/azure-vmware/tutorial-access-private-cloud)に関するページを参照してください。
 
 ### <a name="step-4-migrate-by-using-vmware-hcx"></a>手順 4:VMware HCX を使用して移行する
 
@@ -192,13 +192,13 @@ HCX を使用して VMware VM を Azure に移行するには、Contoso チー�
 - VMware HCX をインストールして構成します。
 - HCX を使用して Azure への移行を実行します。
 
-詳細については、「[Azure VMware Solution 用の HCX をインストールする](https://docs.microsoft.com/azure/azure-vmware/hybrid-cloud-extension-installation)」を参照してください。
+詳細については、「[Azure VMware Solution 用の HCX をインストールする](/azure/azure-vmware/hybrid-cloud-extension-installation)」を参照してください。
 
 <!-- docsTest:ignore L2 -->
 
 #### <a name="install-and-configure-vmware-hcx-for-the-public-cloud"></a>パブリック クラウド用の VMware HCX をインストールして構成する
 
-[VMware HCX](https://cloud.vmware.com/vmware-hcx) は、Azure VMware Solution の既定のインストールに含まれる VMware 製品の一部です。 既定でインストールされているのは HCX Advanced ですが、追加の機能が必要な場合は HCX Enterprise にアップグレードすることができます。 
+[VMware HCX](https://cloud.vmware.com/vmware-hcx) は、Azure VMware Solution の既定のインストールに含まれる VMware 製品の一部です。 既定でインストールされているのは HCX Advanced ですが、追加の機能が必要な場合は HCX Enterprise にアップグレードすることができます。
 
 Azure VMware Solution では、HCX の Cloud Manager コンポーネントが自動化されます。 オンプレミス側とお客様の vCenter ドメインで構成する必要があるコネクタ HCX アプライアンスへのダウンロード リンクとカスタマー アクティブ化キーが提供されます。 これらの要素はさらに、お客様が移行や L2 ストレッチなどのサービスを利用できるよう、Azure VMware Solution クラウド アプライアンスとペアリングされます。
 
@@ -206,7 +206,7 @@ Azure VMware Solution では、HCX の Cloud Manager コンポーネントが自
 
    ![[OVF テンプレートのデプロイ] ウィンドウのスクリーンショット。](./media/contoso-migration-vmware-to-azure/configure-template.png)
 
-   Azure VMware Solution のプライベート クラウド用の HCX をインストールして構成する方法については、「[Azure VMware Solution 用の HCX をインストールする](https://docs.microsoft.com/azure/azure-vmware/hybrid-cloud-extension-installation)」を参照してください。
+   Azure VMware Solution のプライベート クラウド用の HCX をインストールして構成する方法については、「[Azure VMware Solution 用の HCX をインストールする](/azure/azure-vmware/hybrid-cloud-extension-installation)」を参照してください。
 
 - チームは HCX を構成する際に、移行やその他のオプション (ディザスター リカバリーなど) を有効にしました。
 
@@ -246,6 +246,8 @@ VMware クラウドと HCX を使用して、オンプレミスのデータセ�
 VMware HCX RAV は、VMware HCX 一括移行の利点 (並列操作、回復性、スケジューリング) と VMware HCX vMotion 移行の利点 (VM の状態を移行するときのダウンタイムがゼロなど) を兼ね備えています。
 
 ## <a name="additional-resources"></a>その他のリソース
+
 その他 VMware のテクニカル ドキュメントについては、以下を参照してください。
+
 - [VMware HCX のドキュメント](https://docs.vmware.com/en/VMware-HCX/index.html)
 - [VMware HCX を使用して仮想マシンを移行する](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-D0CD0CC6-3802-42C9-9718-6DA5FEC246C6.html?hWord=N4IghgNiBcIBIGEAaACAtgSwOYCcwBcMB7AOxAF8g)

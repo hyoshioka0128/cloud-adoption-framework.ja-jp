@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 65d1ac327bc5a36e1dca12ab121825751be3b53f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d494bad6c5a64972ba317411ca2fcc4ab92ef857
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214244"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574569"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>優先順位付けされたワークロードに合わせて資産を調整します
 
@@ -39,7 +39,7 @@ ms.locfileid: "83214244"
 
 Azure Migrate では、アプリケーション、VM、データ ソース、依存関係の集約を加速できる一連のグループ化関数が提供されます。 ワークロードが概念的に定義されると、依存関係マッピングに基づいて資産をグループ化するための基礎としてこれらのワークロードを使用できます。
 
-Azure Migrate のドキュメントでは、[依存関係に基づいてマシンをグループ化する方法](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies)に関するガイダンスが提供されます。
+Azure Migrate のドキュメントでは、[依存関係に基づいてマシンをグループ化する方法](/azure/migrate/how-to-create-group-machine-dependencies)に関するガイダンスが提供されます。
 
 ## <a name="configuration-management-database"></a>構成管理データベース
 

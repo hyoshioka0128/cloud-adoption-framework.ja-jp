@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c25ee0bfe2b435ae091d673226c8976da1bf1a25
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 8007f6c0be0d22fb68cdfaa392ddc3b9b124d0cd
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862536"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574195"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
 
@@ -54,16 +54,16 @@ ms.locfileid: "83862536"
 
 準備フェーズでは、技術スタッフは、クラウドに移行されたワークロードをホスト、運用、管理できる移行ランディング ゾーンを作成します。 これらのラーニング パスは、必要なスキルの開発に役立ちます。
 
-- [Azure アカウントの作成](https://docs.microsoft.com/learn/modules/create-an-azure-account)。 Azure を使用する最初の手順では、アカウントを作成します。 お使いのアカウントは、自身がプロビジョニングした Azure サービスを保持し、ID、課金、ユーザー設定などの個人設定を処理します。
-- [Azure Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal) Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
-- [Azure 入門](https://docs.microsoft.com/learn/modules/welcome-to-azure)。 Azure では最初に、クラウドの最初の仮想マシンを作成し構成します。
-- [Azure のセキュリティの概要](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure)。 クラウドで作業する場合のインフラストラクチャとデータの保護に関する基本的な概念について学習します。 自分にどのような責任があり、Azure が代わりに何を処理するかについて理解します。
-- [Azure でのリソースの管理](https://docs.microsoft.com/learn/paths/manage-resources-in-azure)。 Azure コマンド ラインと Web ポータルを使用してクラウド ベースのリソースを作成、管理、制御する方法について説明します。
-- [VM の作成](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure)。 Azure portal を使用して仮想マシンを作成します。
-- [Azure のネットワーク](https://docs.microsoft.com/learn/modules/intro-to-azure-networking)。 Azure のネットワークの基本と、Azure のネットワークが回復性の向上と待ち時間の短縮にどのように役立つかについて学習します。
-- [Azure のコンピューティング オプション](https://docs.microsoft.com/learn/modules/intro-to-azure-compute)。 Azure のコンピューティング サービスについて学習します。
-- [RBAC によるリソースのセキュリティ保護](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)。 RBAC を使用してリソースをセキュリティで保護します。
-- [データ ストレージ オプション](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure)。 Azure データ ストレージの利点について学習します。
+- [Azure アカウントの作成](/learn/modules/create-an-azure-account)。 Azure を使用する最初の手順では、アカウントを作成します。 お使いのアカウントは、自身がプロビジョニングした Azure サービスを保持し、ID、課金、ユーザー設定などの個人設定を処理します。
+- [Azure Portal](/learn/modules/tour-azure-portal) Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
+- [Azure 入門](/learn/modules/welcome-to-azure)。 Azure では最初に、クラウドの最初の仮想マシンを作成し構成します。
+- [Azure のセキュリティの概要](/learn/modules/intro-to-security-in-azure)。 クラウドで作業する場合のインフラストラクチャとデータの保護に関する基本的な概念について学習します。 自分にどのような責任があり、Azure が代わりに何を処理するかについて理解します。
+- [Azure でのリソースの管理](/learn/paths/manage-resources-in-azure)。 Azure コマンド ラインと Web ポータルを使用してクラウド ベースのリソースを作成、管理、制御する方法について説明します。
+- [VM の作成](/learn/modules/create-windows-virtual-machine-in-azure)。 Azure portal を使用して仮想マシンを作成します。
+- [Azure のネットワーク](/learn/modules/intro-to-azure-networking)。 Azure のネットワークの基本と、Azure のネットワークが回復性の向上と待ち時間の短縮にどのように役立つかについて学習します。
+- [Azure のコンピューティング オプション](/learn/modules/intro-to-azure-compute)。 Azure のコンピューティング サービスについて学習します。
+- [RBAC によるリソースのセキュリティ保護](/learn/modules/secure-azure-resources-with-rbac)。 RBAC を使用してリソースをセキュリティで保護します。
+- [データ ストレージ オプション](/learn/modules/intro-to-data-in-azure)。 Azure データ ストレージの利点について学習します。
 
 ## <a name="organizational-skills"></a>組織のスキル
 
@@ -90,8 +90,8 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 以下に、クラウド導入フレームワークの 戦略手法に合わせて調整された学習パスの例を示します。
 
-[Microsoft Azure のビジネス価値を学習する](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure):この学習エクスペリエンスでは、デジタル変革とクラウドの機能をビジネスの変革に利用する方法を紹介することから始めます。 ここでは、信頼できるクラウド プラットフォーム上で、Microsoft Azure クラウド サービスの機能を利用して組織を強化する方法について説明します。 最後に、まとめとして、組織でこのエクスペリエンスを実現する方法を説明します。
+[Microsoft Azure のビジネス価値を学習する](/learn/paths/learn-business-value-of-azure):この学習エクスペリエンスでは、デジタル変革とクラウドの機能をビジネスの変革に利用する方法を紹介することから始めます。 ここでは、信頼できるクラウド プラットフォーム上で、Microsoft Azure クラウド サービスの機能を利用して組織を強化する方法について説明します。 最後に、まとめとして、組織でこのエクスペリエンスを実現する方法を説明します。
 
 ## <a name="learn-more"></a>詳細情報
 
-追加のラーニング パスについては、[Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+追加のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

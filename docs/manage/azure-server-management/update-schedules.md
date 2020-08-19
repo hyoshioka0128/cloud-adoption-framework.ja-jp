@@ -7,20 +7,20 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 359282dc962c72334bd390324fab0ca66f62a65c
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: c418233559d93b59a468caa24fe43984184898ec
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023408"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574943"
 ---
 # <a name="create-update-schedules"></a>更新スケジュールの作成
 
 Azure portal または新しい PowerShell コマンドレット モジュールを使用して、更新スケジュールを管理できます。
 
-Azure portal を使用して更新スケジュールを作成するには、「[更新プログラムのデプロイをスケジュールする](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment)」をご覧ください。
+Azure portal を使用して更新スケジュールを作成するには、「[更新プログラムのデプロイをスケジュールする](/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment)」をご覧ください。
 
-Azure PowerShell を使用した更新管理の構成が `Az.Automation` モジュールで新たにサポートされました。 モジュールの[バージョン 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) では、[New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) コマンドレットのサポートが追加されました。 このコマンドレットを実行すると、タグ、場所、保存された検索を使用して、柔軟なグループのマシンの更新スケジュールを構成できます。
+Azure PowerShell を使用した更新管理の構成が `Az.Automation` モジュールで新たにサポートされました。 モジュールの[バージョン 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) では、[New-AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) コマンドレットのサポートが追加されました。 このコマンドレットを実行すると、タグ、場所、保存された検索を使用して、柔軟なグループのマシンの更新スケジュールを構成できます。
 
 ## <a name="example-script"></a>サンプル スクリプト
 
@@ -33,7 +33,7 @@ Azure PowerShell を使用した更新管理の構成が `Az.Automation` モジ�
   - `Production` タグが適用され、値が `true` に設定されている。
 - クエリ対象のマシンに更新スケジュールを適用し、2 時間の更新ウィンドウを設定します。
 
-サンプル スクリプトを実行する前に、[Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインする必要があります。 スクリプトを開始するときに、次の情報を指定します。
+サンプル スクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインする必要があります。 スクリプトを開始するときに、次の情報を指定します。
 
 - ターゲット サブスクリプション ID
 - ターゲット リソース グループ

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: b041a7cc996ac3606228f1231d2f4ecd9af51655
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 41abba9cadeca1951f6316e49a0d2d58c6ef6569
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450732"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574518"
 ---
 <!-- cSpell:ignore dchimes -->
 
@@ -68,7 +68,7 @@ Azure のお客様は、課金とサブスクリプションのサポートに�
 
 詳細については、次を参照してください。
 
-- [Azure の課金とコスト管理に関するドキュメント](https://docs.microsoft.com/azure/billing)
+- [Azure の課金とコスト管理に関するドキュメント](/azure/billing)
 - [クラウド導入フレームワーク:事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md)
 - [クラウド導入フレームワーク:Cost Management の規範](../../govern/cost-management/index.md)
 

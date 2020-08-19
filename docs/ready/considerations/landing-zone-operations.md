@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ffdfd350247d2cb1c6ff3cd367fbaf12ab6585e3
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 3cfd48a0a8dabb9b37004c2f15c23a8ae79aa6e9
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479631"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575164"
 ---
 # <a name="improve-landing-zone-operations"></a>ランディング ゾーンの運用の改善
 
@@ -27,10 +27,10 @@ ms.locfileid: "86479631"
 - [管理操作の一元化](../../manage/centralize-operations.md): Azure Lighthouse を使用して、複数の Azure テナントの運用管理を一元化します。
 - [運用適合性レビューの確立](../../manage/operational-fitness-review.md): 運用適合性について環境を再確認します。
 - ワークロード固有の運用に関するベスト プラクティス:
-  - [回復性のチェックリスト](https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
-  - [障害モードの分析](https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
-  - [リージョン全体でのサービスの中断から回復する](https://docs.microsoft.com/azure/architecture/resiliency/recovery-loss-azure-region?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
-  - [データの破損または偶発的な削除から復旧する](https://docs.microsoft.com/azure/architecture/framework/resiliency/data-management?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [回復性のチェックリスト](/azure/architecture/checklist/resiliency-per-service?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [障害モードの分析](/azure/architecture/resiliency/failure-mode-analysis?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [リージョン全体でのサービスの中断から回復する](/azure/architecture/resiliency/recovery-loss-azure-region?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [データの破損または偶発的な削除から復旧する](/azure/architecture/framework/resiliency/data-management?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
 
 ## <a name="four-steps-to-improve-operations-beyond-a-single-landing-zone"></a>1 つのランディング ゾーンを超えて運用を改善するための 4 つのステップ
 

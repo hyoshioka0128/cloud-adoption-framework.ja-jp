@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: ad28bd8bc6a8586daa3f272aa5fa4e7be1d22cac
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: b3843cf0f0de675eacea05fb261167bc37dc90d1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450749"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574450"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -46,7 +46,7 @@ Azure に移行する場合、企業内でクラウドを有効に活用する�
 エンタープライズ スキャフォールディングは、Azure 内の新しい各サブスクリプションの基盤として使用できます。 エンタープライズ スキャフォールディングにより、管理者は、ビジネス グループや開発者が各自の目標を速やかに達成するのを妨げることなく、組織のガバナンスの最小要件を満たすワークロードを実現できます。 私たちの経験から、これがパブリック クラウドの成長を妨げるものではなく、大いに加速させることは明らかです。
 
 > [!NOTE]
-> [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) と呼ばれる新機能がプレビューとしてリリースされました。これは、サブスクリプションや管理グループにまたがって、共通のイメージ、テンプレート、ポリシー、スクリプトの、パッケージ化、管理、およびデプロイを行えるようにするものです。 この機能は、参照モデルとしてのスキャフォールディングの目的と、企業へのモデルのデプロイの橋渡しをします。
+> [Azure Blueprints](/azure/governance/blueprints/overview) と呼ばれる新機能がプレビューとしてリリースされました。これは、サブスクリプションや管理グループにまたがって、共通のイメージ、テンプレート、ポリシー、スクリプトの、パッケージ化、管理、およびデプロイを行えるようにするものです。 この機能は、参照モデルとしてのスキャフォールディングの目的と、企業へのモデルのデプロイの橋渡しをします。
 >
 次の図は、スキャフォールディングのコンポーネントを示しています。 基礎は、管理階層とサブスクリプションの確かな計画に依存しています。 柱は、Resource Manager ポリシーと厳密な命名規則で構成されます。 スキャフォールディングの残りの部分は、安全で管理しやすい環境を実現して結び付ける Azure のコア機能です。
 
@@ -82,7 +82,7 @@ EA 加入契約には、次の 3 つの一般的なパターンがあります�
 
 ### <a name="azure-management-groups"></a>Azure 管理グループ
 
-Microsoft は階層をモデル化するための別の方法を提供しています。[Azure 管理グループ](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)という新しい方法をリリースしました。 管理グループは、部門とアカウントよりも柔軟性が非常に高く、最大で 6 レベルまで入れ子にすることができます。 管理グループを使用すると、課金階層とは別に、リソースの効率的な管理のみを目的として階層を作成できます。 管理グループは課金階層を正確に反映するように作成できます。多くの企業ではそのように開始しています。 ただし、管理グループが力を発揮するのは、それらを使用して組織をモデル化し、関連するサブスクリプションをまとめて (請求階層内の場所に関係なく) グループ化し、共通のロール、ポリシー、およびイニシアティブを割り当てる場合です。 次に例をいくつか示します。
+Microsoft は階層をモデル化するための別の方法を提供しています。[Azure 管理グループ](/azure/azure-resource-manager/management-groups-overview)という新しい方法をリリースしました。 管理グループは、部門とアカウントよりも柔軟性が非常に高く、最大で 6 レベルまで入れ子にすることができます。 管理グループを使用すると、課金階層とは別に、リソースの効率的な管理のみを目的として階層を作成できます。 管理グループは課金階層を正確に反映するように作成できます。多くの企業ではそのように開始しています。 ただし、管理グループが力を発揮するのは、それらを使用して組織をモデル化し、関連するサブスクリプションをまとめて (請求階層内の場所に関係なく) グループ化し、共通のロール、ポリシー、およびイニシアティブを割り当てる場合です。 次に例をいくつか示します。
 
 - **運用と非運用。** 一部の企業は、運用サブスクリプションと非運用サブスクリプションを識別するために管理グループを作成します。 このようなお客様は、管理グループによって、ロールとポリシーを簡単に管理できます。 たとえば、非運用サブスクリプションでは、開発者は、共同作成者としてアクセスできますが、運用環境では閲覧者としてのみアクセスできます。
 - **内部サービスと外部サービス。** 企業では、多くの場合、内部サービスと顧客向けサービスで要件、ポリシー、ロールが異なります。
@@ -127,7 +127,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 ### <a name="resource-tags"></a>リソース タグ
 
-リソース タグは命名規則と密接に関連しています。 リソースがサブスクリプションに追加されると、課金、管理、運用の目的から、論理的にリソースを分類することが非常に重要になります。 詳細については、[タグを使用した Azure リソースの整理](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)に関するページを参照してください。
+リソース タグは命名規則と密接に関連しています。 リソースがサブスクリプションに追加されると、課金、管理、運用の目的から、論理的にリソースを分類することが非常に重要になります。 詳細については、[タグを使用した Azure リソースの整理](/azure/azure-resource-manager/management/tag-resources)に関するページを参照してください。
 
 > [!IMPORTANT]
 > タグには個人情報が含まれる可能性があり、GDPR 規制の対象になる場合があります。 タグの管理は注意深く計画してください。 GDPR に関する全般情報については、[Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) の GDPR に関するセクションを参照してください。
@@ -136,7 +136,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 ## <a name="azure-policy-and-initiatives"></a>Azure のポリシーとイニシアティブ
 
-スキャフォールディングの第 2 の柱は、[Azure のポリシーとイニシアティブ](https://docs.microsoft.com/azure/azure-policy/azure-policy-introduction)を使用して、サブスクリプションのリソースとサービスに対して (効果的に) 規則を適用して、リスクを管理することです。 Azure のイニシアティブは、1 つの目標を達成するように設計されたポリシーのコレクションです。 その後、ポリシーとイニシアティブをリソース スコープに割り当てて、それらのポリシーの適用を開始します。
+スキャフォールディングの第 2 の柱は、[Azure のポリシーとイニシアティブ](/azure/azure-policy/azure-policy-introduction)を使用して、サブスクリプションのリソースとサービスに対して (効果的に) 規則を適用して、リスクを管理することです。 Azure のイニシアティブは、1 つの目標を達成するように設計されたポリシーのコレクションです。 その後、ポリシーとイニシアティブをリソース スコープに割り当てて、それらのポリシーの適用を開始します。
 
 ポリシーとイニシアティブは、前述した管理グループと一緒に使用するとさらに効果的です。 管理グループを使用すると、イニシアティブまたはポリシーをサブスクリプションのセット全体に割り当てられるようになります。
 
@@ -169,7 +169,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 パブリック クラウドの使用を開始するにあたり、最初に重要な質問として、「リソースにアクセスできる必要があるのはだれか」、 「このアクセスを制御するにはどうすればよいか」と自問しているかもしれません。 Azure portal とポータルでのリソースへのアクセス制御は、クラウド内の資産の長期的な安全性にとって不可欠です。
 
-リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは**ありません**。Azure AD テナントとは何か、加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
+リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは**ありません**。Azure AD テナントとは何か、加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
 
 ![AD アーキテクチャの図](../_images/reference/ad-architecture.png)
 
@@ -178,14 +178,14 @@ Azure が最初にリリースされたときには、サブスクリプショ�
 ロールベースのアクセスを実装するとき、次を強くお薦めします。
 
 - サブスクリプションの管理者/共同管理者を制御します。これらのロールは大きな権限を持っているためです。 Azure クラシック デプロイを管理する必要がある場合は、サブスクリプションの所有者を共同管理者として追加するだけです。
-- 管理グループを使用して、複数のサブスクリプションに[ロール](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview#management-group-access)を割り当て、サブスクリプション レベルでロールを管理する負荷を減らします。
+- 管理グループを使用して、複数のサブスクリプションに[ロール](/azure/azure-resource-manager/management-groups-overview#management-group-access)を割り当て、サブスクリプション レベルでロールを管理する負荷を減らします。
 - Azure ユーザーを Active Directory のグループ (アプリケーション X の所有者など) に追加します。 同期されたグループを使用して、アプリケーションが属するリソース グループを管理するための適切な権限をグループのメンバーに付与します。
 - 求められている作業を行うために必要な**最小限の特権**の付与の原則に従います。
 
 > [!IMPORTANT]
-> [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)、および[条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)機能の使用を検討してください。これらによって、セキュリティが強化され、Azure サブスクリプション全体の管理操作の可視性が向上します。 これらの機能は有効な Azure AD Premium ライセンスで使用でき (機能によって異なる)、アイデンティティをさらに保護して管理します。 Azure AD PIM により、承認ワークフローの "Just-in-Time" 管理アクセスと、管理者のアクティブ化とアクティビティの完全な監査が可能になります。 Azure Multi-Factor Authentication はもう 1 つの重要な機能であり、Azure portal へのサインインの 2 段階認証を有効にします。 条件付きアクセス制御と組み合わせると、セキュリティ侵害のリスクを効果的に管理できます。
+> [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted)、および[条件付きアクセス](/azure/active-directory/conditional-access/overview)機能の使用を検討してください。これらによって、セキュリティが強化され、Azure サブスクリプション全体の管理操作の可視性が向上します。 これらの機能は有効な Azure AD Premium ライセンスで使用でき (機能によって異なる)、アイデンティティをさらに保護して管理します。 Azure AD PIM により、承認ワークフローの "Just-in-Time" 管理アクセスと、管理者のアクティブ化とアクティビティの完全な監査が可能になります。 Azure Multi-Factor Authentication はもう 1 つの重要な機能であり、Azure portal へのサインインの 2 段階認証を有効にします。 条件付きアクセス制御と組み合わせると、セキュリティ侵害のリスクを効果的に管理できます。
 
-ID およびアクセス制御について計画を立てて準備すること、および [Azure Identity Management のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)に従うことは、採用できる最適なリスク軽減戦略の 1 つであり、すべてのデプロイにおいて必須と考える必要があります。
+ID およびアクセス制御について計画を立てて準備すること、および [Azure Identity Management のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)に従うことは、採用できる最適なリスク軽減戦略の 1 つであり、すべてのデプロイにおいて必須と考える必要があります。
 
 ## <a name="security"></a>セキュリティ
 
@@ -193,13 +193,13 @@ ID およびアクセス制御について計画を立てて準備すること�
 
 ### <a name="azure-security-center"></a>Azure Security Center
 
-[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) は、環境全体のリソースのセキュリティ状態についての統一されたビューと、脅威に対する高度な保護を提供します。 Azure Security Center はオープン プラットフォームです。Microsoft のパートナーは、プラグインして機能を強化するソフトウェアを作成できます。 Azure Security Center のベースライン機能 (Free レベル) によって、セキュリティの体制を強化する評価とレコメンデーションが提供されます。 有料レベルでは、Just-In-Time 管理アクセスや適応型アプリケーション制御 (許可リスト) など役に立つ追加機能が有効になります。
+[Azure Security Center](/azure/security-center/security-center-intro) は、環境全体のリソースのセキュリティ状態についての統一されたビューと、脅威に対する高度な保護を提供します。 Azure Security Center はオープン プラットフォームです。Microsoft のパートナーは、プラグインして機能を強化するソフトウェアを作成できます。 Azure Security Center のベースライン機能 (Free レベル) によって、セキュリティの体制を強化する評価とレコメンデーションが提供されます。 有料レベルでは、Just-In-Time 管理アクセスや適応型アプリケーション制御 (許可リスト) など役に立つ追加機能が有効になります。
 > [!TIP]
 > Azure Security Center は強力なツールであり、絶えず改善されており、脅威の検出や企業の保護に使用できる新しい機能を取り入れています。 Azure Security Center は常に有効化しておくことを強くお薦めします。
 
 ### <a name="locks-for-azure-resources"></a>Azure リソースのロック
 
-組織がサブスクリプションにコア サービスを追加すると、ビジネスの中断を回避することがますます重要になります。 一般的な中断の 1 つは、Azure サブスクリプションで実行されているスクリプトまたはツールがリソースを誤って削除したときに発生します。 [ロック](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources)によって、変更または削除したときに大きな影響を及ぼす価値の高いリソースに対する操作が制限されます。 ロックは、サブスクリプション、リソースグループ、または個々のリソースに適用できます。 仮想ネットワーク、ゲートウェイ、ネットワーク セキュリティ グループ、キー ストレージ アカウントなど、基盤となるリソースにロックを適用します。
+組織がサブスクリプションにコア サービスを追加すると、ビジネスの中断を回避することがますます重要になります。 一般的な中断の 1 つは、Azure サブスクリプションで実行されているスクリプトまたはツールがリソースを誤って削除したときに発生します。 [ロック](/azure/azure-resource-manager/resource-group-lock-resources)によって、変更または削除したときに大きな影響を及ぼす価値の高いリソースに対する操作が制限されます。 ロックは、サブスクリプション、リソースグループ、または個々のリソースに適用できます。 仮想ネットワーク、ゲートウェイ、ネットワーク セキュリティ グループ、キー ストレージ アカウントなど、基盤となるリソースにロックを適用します。
 
 ### <a name="secure-devops-kit-for-azure"></a>Secure DevOps Kit for Azure
 
@@ -218,7 +218,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 ### <a name="azure-update-management"></a>Azure Update Management
 
-環境の安全を保つためにできる重要なタスクの 1 つは、確実にサーバーに最新の更新プログラムが適用されるようにすることです。 これを実現するツールは多数ありますが、Azure が提供する [Azure Update Management](https://docs.microsoft.com/azure/automation/automation-update-management) ソリューションは、重要な OS パッチを識別してロールアウトします。 これは、このガイドの後半の「[自動化](#automate)」セクションで説明している Azure Automation を利用しています。
+環境の安全を保つためにできる重要なタスクの 1 つは、確実にサーバーに最新の更新プログラムが適用されるようにすることです。 これを実現するツールは多数ありますが、Azure が提供する [Azure Update Management](/azure/automation/automation-update-management) ソリューションは、重要な OS パッチを識別してロールアウトします。 これは、このガイドの後半の「[自動化](#automate)」セクションで説明している Azure Automation を利用しています。
 
 ## <a name="monitor-and-alerts"></a>監視とアラート
 
@@ -277,10 +277,10 @@ Microsoft では、コストの視覚化、追跡、および管理に役立つ�
 
 これらは、コストに関する即時性のある情報と、アクションを実行する機能を提供するツールです。
 
-- **サブスクリプション リソース コスト:** ポータルにある [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) ビューでは、コストをひとめで確認でき、リソースまたはリソース グループごとの毎日の支出に関する情報を得ることができます。
+- **サブスクリプション リソース コスト:** ポータルにある [Azure Cost Management](/azure/cost-management-billing/cost-management-billing-overview) ビューでは、コストをひとめで確認でき、リソースまたはリソース グループごとの毎日の支出に関する情報を得ることができます。
 - **Azure Cost Management:** これにより、Azure の支出額および他のパブリック クラウド プロバイダーでの支出を管理および分析することができます。 Free レベルと有料レベルの両方があり、豊富な機能があります。
 - **Azure Budgets とアクション グループ:** 何にコストがかかるか、それについて何をすべきかを把握するのは、最近まではほぼ手動で行っていました。 Azure Budgets とその API が導入されたことにより、コストがしきい値に達したときに[アクションを作成](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)できるようになりました。 たとえば、"test" リソース グループが予算の 100% に到達したら、シャットダウンできます。
-- **Azure Advisor:** 何にコストがかかるかを把握しても、戦いは半分しか終わっていません。もう半分は、その情報に対してどうすべきかを把握することです。 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) では、費用の節約、信頼性の向上、さらにはセキュリティの向上のための処置についてレコメンデーションが提供されます。
+- **Azure Advisor:** 何にコストがかかるかを把握しても、戦いは半分しか終わっていません。もう半分は、その情報に対してどうすべきかを把握することです。 [Azure Advisor](/azure/advisor/advisor-overview) では、費用の節約、信頼性の向上、さらにはセキュリティの向上のための処置についてレコメンデーションが提供されます。
 
 ### <a name="external-cost-management-tools"></a>外部のコスト管理ツール
 
@@ -288,7 +288,7 @@ Microsoft では、コストの視覚化、追跡、および管理に役立つ�
 
 - **Power BI Azure Consumption Insights:** 組織のために独自の視覚エフェクトを作成しますか。 その場合は、Power BI 用の Azure Consumption Insights コンテンツ パックをツールとして選択してください。 このコンテンツ パックと Power BI を使用すると、組織を表すためにカスタムの視覚エフェクトを作成し、コストについて詳しい分析を実行し、さらに充実させるために他のデータ ソースを追加することもできます。
 
-- **Azure Consumption API:** [Consumption API](https://docs.microsoft.com/rest/api/consumption) を使用すると、予算、予約インスタンス、マーケットプレース請求料金に関する情報に加えて、コストと使用状況のデータにプログラムからアクセスできます。 これらの API にアクセスできるのは、EA 加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest)こともできます。
+- **Azure Consumption API:** [Consumption API](/rest/api/consumption) を使用すると、予算、予約インスタンス、マーケットプレース請求料金に関する情報に加えて、コストと使用状況のデータにプログラムからアクセスできます。 これらの API にアクセスできるのは、EA 加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](/cli/azure/consumption?view=azure-cli-latest)こともできます。
 
 長期の熟練したクラウド ユーザーであるお客様は、特定のベスト プラクティスに従います。
 
@@ -305,9 +305,9 @@ Microsoft では、コストの視覚化、追跡、および管理に役立つ�
 
 Azure Automation、Event Grid、Azure CLI といった Microsoft 製ツールから、Terraform、Jenkins、Chef、Puppet などの多数のサード パーティ製ツールまで、この機能を構築するときに役立つツールがいくつかあります。 コア オートメーション ツールには、Azure Automation、Event Grid、Azure Cloud Shell などがあります。
 
-- **Azure Automation** はクラウドベースの機能です。これを使用して、(PowerShell または Python で) Runbook を作成し、プロセスのオートメーション、リソースの構成、さらにパッチの適用も実行することができます。 [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) には、デプロイに不可欠な広範なクロス プラットフォーム機能のセットが含まれますが、範囲が広すぎるためここで詳しく説明することはできません。
-- **Event Grid** は、Azure 環境内のイベントに対応することができるフル マネージドのイベント ルーティング システムです。 Azure Automation が成熟したクラウド編成の結合組織であるのと同様に、[Event Grid](https://docs.microsoft.com/azure/event-grid) は優れたオートメーションの結合組織です。 Event Grid を使用すると、新しいリソースが作成されるたびに管理者に電子メールを送信して、そのリソースをデータベースに記録する、単純なサーバーレス アクションを作成できます。 その同じ Event Grid が、リソースが削除されたときに通知し、アイテムをデータベースから削除することができます。
-- **Azure Cloud Shell** は、Azure でリソースを管理するための、ブラウザーベースのインタラクティブな[シェル](https://docs.microsoft.com/azure/cloud-shell/overview)です。 これは、PowerShell または Bash に最適な環境を提供します。必要に応じて起動 (および管理) されるため、スクリプトを実行するために一貫性のある環境を得ることができます。 Azure Cloud Shell では、環境のオートメーションを行うために、既にインストールされている他の重要なツールにアクセスできます。[Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) や [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) の他にも、コンテナー、データベース (sqlcmd) などを管理するための[ツール](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)がますます増加しています。
+- **Azure Automation** はクラウドベースの機能です。これを使用して、(PowerShell または Python で) Runbook を作成し、プロセスのオートメーション、リソースの構成、さらにパッチの適用も実行することができます。 [Azure Automation](/azure/automation/automation-intro) には、デプロイに不可欠な広範なクロス プラットフォーム機能のセットが含まれますが、範囲が広すぎるためここで詳しく説明することはできません。
+- **Event Grid** は、Azure 環境内のイベントに対応することができるフル マネージドのイベント ルーティング システムです。 Azure Automation が成熟したクラウド編成の結合組織であるのと同様に、[Event Grid](/azure/event-grid) は優れたオートメーションの結合組織です。 Event Grid を使用すると、新しいリソースが作成されるたびに管理者に電子メールを送信して、そのリソースをデータベースに記録する、単純なサーバーレス アクションを作成できます。 その同じ Event Grid が、リソースが削除されたときに通知し、アイテムをデータベースから削除することができます。
+- **Azure Cloud Shell** は、Azure でリソースを管理するための、ブラウザーベースのインタラクティブな[シェル](/azure/cloud-shell/overview)です。 これは、PowerShell または Bash に最適な環境を提供します。必要に応じて起動 (および管理) されるため、スクリプトを実行するために一貫性のある環境を得ることができます。 Azure Cloud Shell では、環境のオートメーションを行うために、既にインストールされている他の重要なツールにアクセスできます。[Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) や [Terraform](/azure/virtual-machines/linux/terraform-install-configure) の他にも、コンテナー、データベース (sqlcmd) などを管理するための[ツール](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)がますます増加しています。
 
 オートメーションはフルタイム ジョブであり、またたく間にクラウド チームにおける最も重要な運用タスクの 1 つになろうとしています。 "オートメーション ファースト" のアプローチを採用する組織は、 Azure を使用して大きな成功を収めます。
 
@@ -316,14 +316,14 @@ Azure Automation、Event Grid、Azure CLI といった Microsoft 製ツールか
 
 ## <a name="templates-and-devops"></a>テンプレートと DevOps
 
-「自動化」のセクションで強調したように、組織の目標は、ソース管理されたテンプレートとスクリプトを介してリソースをプロビジョニングすること、さらに対話型での環境の構成を最小限にすることです。 継続的なデプロイのための制御された DevOps プロセスと "infrastructure as code" アプローチを組み合わせると、一貫性を保証することができ、環境内での誤差を減らすことができます。 ほぼすべての Azure リソースは、[Azure Resource Manager JSON テンプレート](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy)を、PowerShell または Azure クロス プラットフォーム CLI や、HashiCorp の Terraform (最上のサポートと Azure Cloud Shell との統合が提供される) などのツールと組み合わせてデプロイできます。
+「自動化」のセクションで強調したように、組織の目標は、ソース管理されたテンプレートとスクリプトを介してリソースをプロビジョニングすること、さらに対話型での環境の構成を最小限にすることです。 継続的なデプロイのための制御された DevOps プロセスと "infrastructure as code" アプローチを組み合わせると、一貫性を保証することができ、環境内での誤差を減らすことができます。 ほぼすべての Azure リソースは、[Azure Resource Manager JSON テンプレート](/azure/azure-resource-manager/resource-group-template-deploy)を、PowerShell または Azure クロス プラットフォーム CLI や、HashiCorp の Terraform (最上のサポートと Azure Cloud Shell との統合が提供される) などのツールと組み合わせてデプロイできます。
 
-[Azure Resource Manager テンプレートを使用する場合のベスト プラクティス](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager)などの記事では、[Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) ツール チェーンを含む Azure Resource Manager テンプレートに DevOps アプローチを適用する場合について、ベスト プラクティスや実例から学んだ内容を説明しています。 特に運用環境と QA 環境に関しては、時間と労力を費やして、組織の要件に合うテンプレートのコア セットを開発し、DevOps ツール チェーン (Azure DevOps、Jenkins、Bamboo、TeamCity、Concourse など) を使用して継続的デリバリー パイプラインを開発してください。 [Azure クイックスタート テンプレート](https://github.com/azure/azure-quickstart-templates)の大規模なライブラリが GitHub 上にあり、テンプレートの作成を開始するときに役立ちます。また、Azure DevOps を使用するとクラウドベースの配信パイプラインを迅速に作成できます。
+[Azure Resource Manager テンプレートを使用する場合のベスト プラクティス](/archive/blogs/mvpawardprogram/azure-resource-manager)などの記事では、[Azure DevOps](/azure/devops/user-guide/?view=vsts) ツール チェーンを含む Azure Resource Manager テンプレートに DevOps アプローチを適用する場合について、ベスト プラクティスや実例から学んだ内容を説明しています。 特に運用環境と QA 環境に関しては、時間と労力を費やして、組織の要件に合うテンプレートのコア セットを開発し、DevOps ツール チェーン (Azure DevOps、Jenkins、Bamboo、TeamCity、Concourse など) を使用して継続的デリバリー パイプラインを開発してください。 [Azure クイックスタート テンプレート](https://github.com/azure/azure-quickstart-templates)の大規模なライブラリが GitHub 上にあり、テンプレートの作成を開始するときに役立ちます。また、Azure DevOps を使用するとクラウドベースの配信パイプラインを迅速に作成できます。
 
 運用サブスクリプションまたはリソース グループのベスト プラクティスとしては、RBAC セキュリティを使用して既定で対話型ユーザーを禁止することと、サービス プリンシパルに基づいて自動化された継続的デリバリー パイプラインを使用して、すべてのリソースをプロビジョニングし、すべてのアプリケーション コードを配信することが目標です。 管理者も開発者も Azure portal を使用してリソースを対話形式で構成する必要はありません。 このレベルの DevOps では協調が求められますが、Azure スキャフォールディングのすべての概念を使用して、組織の拡大縮小のニーズを満たす、一貫性を備えたセキュアな環境を提供します。
 
 > [!TIP]
-> 複雑な Azure Resource Manager テンプレートを設計および開発するときは、[リンクされたテンプレート](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-linked-templates)を使用して、モノリシック JSON ファイルから複雑なリソースの関係を編成してリファクタリングします。 これにより、リソースを個別に管理できるようになり、テンプレートの内容がわかりやすくなり、テストや再利用を行いやすくなります。
+> 複雑な Azure Resource Manager テンプレートを設計および開発するときは、[リンクされたテンプレート](/azure/azure-resource-manager/resource-group-linked-templates)を使用して、モノリシック JSON ファイルから複雑なリソースの関係を編成してリファクタリングします。 これにより、リソースを個別に管理できるようになり、テンプレートの内容がわかりやすくなり、テストや再利用を行いやすくなります。
 
 Azure は、ハイパースケール クラウド プロバイダーです。 組織がオンプレミス サーバーからクラウドに移るときに、クラウド プロバイダーと SaaS アプリケーションが使用するのと同じ概念を利用することで、組織がビジネスのニーズに対応する効率の大幅な向上に役立ちます。
 
@@ -335,7 +335,7 @@ Azure スキャフォールディング参照モデルの最後のコンポー�
 - **ユーザー定義ルート**を使用すると、サブネット内のルート テーブルを操作して、ネットワーク仮想アプライアンス経由でのトラフィックの送信、またはピアリングした仮想ネットワーク上のリモート ゲートウェイへのトラフィックの送信を行うことができます。
 - **仮想ネットワーク ピアリング**では、Azure の 2 つ以上の仮想ネットワークをシームレスに接続し、より複雑なハブとスポークの設計または共有サービス ネットワークを作成できます。
 - **サービス エンドポイント。** かつて、PaaS サービスはさまざまな方法に依存して、仮想ネットワークからそれらのリソースへのアクセスを保護していました。 サービス エンドポイントを使用すると、接続したエンドポイント**のみ**からの有効な PaaS サービスに対するアクセスを保護することができ、全体のセキュリティが向上します。
-- **セキュリティ グループ**は広範な規則のセットであり、これを使用すると、Azure リソースに対するインバウンドおよびアウトバウンド トラフィックを許可または拒否できるようになります。 [セキュリティ グループ](https://docs.microsoft.com/azure/virtual-network/security-overview)は、**サービス タグ** (Azure Key Vault、Azure SQL Database など一般的な Azure サービスを定義) と**アプリケーション セキュリティ グループ** (Web サーバーやアプリ サーバーなどのアプリケーション構造を定義) を使用して拡張できるセキュリティ規則で構成されます。
+- **セキュリティ グループ**は広範な規則のセットであり、これを使用すると、Azure リソースに対するインバウンドおよびアウトバウンド トラフィックを許可または拒否できるようになります。 [セキュリティ グループ](/azure/virtual-network/security-overview)は、**サービス タグ** (Azure Key Vault、Azure SQL Database など一般的な Azure サービスを定義) と**アプリケーション セキュリティ グループ** (Web サーバーやアプリ サーバーなどのアプリケーション構造を定義) を使用して拡張できるセキュリティ規則で構成されます。
 
 > [!TIP]
 > ネットワーク セキュリティ グループでサービス タグとアプリケーション セキュリティ グループを使用して、以下のことを行います。

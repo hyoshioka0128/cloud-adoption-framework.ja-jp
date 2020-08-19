@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7a9845d302289567d96c807e110520dc6cac497a
-ms.sourcegitcommit: 9662234674e663bc7d4bc134d303520cb146bd95
+ms.openlocfilehash: 6b3540a46e4f031056bffddb029d6723f14d0e93
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87560493"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575215"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -70,7 +70,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| **Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。 <br><br> より詳細なアクセス許可が必要な場合は、「[ロールベースのアクセス制御 (RBAC) を使用して Site Recovery のアクセスを管理する](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)」をご覧ください。 |
+| **Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。 <br><br> より詳細なアクセス許可が必要な場合は、「[ロールベースのアクセス制御 (RBAC) を使用して Site Recovery のアクセスを管理する](/azure/site-recovery/site-recovery-role-based-linked-access-control)」をご覧ください。 |
 | **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)に関する記事で説明されているように、Azure インフラストラクチャを設定します。 |
 | **オンプレミスの Team Foundation Server インスタンス** | オンプレミス インスタンスは、Team Foundation Server 2018 Upgrade 2 を稼働しているか、このプロセスの一環としてそのバージョンにアップグレードする必要があります。 |
 
@@ -94,8 +94,8 @@ Contoso は、次のようにして移行を完了します。
 
 **さらにサポートが必要な場合**
 
-- [Azure Storage の概要](https://docs.microsoft.com/azure/storage/common/storage-introduction)。
-- [ストレージ アカウントの作成](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)。
+- [Azure Storage の概要](/azure/storage/common/storage-introduction)。
+- [ストレージ アカウントの作成](/azure/storage/common/storage-create-storage-account)。
 
 <!-- docsTest:ignore "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
 
@@ -104,8 +104,8 @@ Contoso は、次のようにして移行を完了します。
 Contoso の管理者が Team Foundation Server インスタンスを Team Foundation Server 2018 Update 2 にアップグレードします。 始める前に次の作業を行います。
 
 - [Team Foundation Server 2018 Update 2](https://visualstudio.microsoft.com/downloads) をダウンロードします。
-- [ハードウェア要件](https://docs.microsoft.com/azure/devops/server/requirements)を確認します。
-- [リリース ノート](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes)と[アップグレードの注意事項](https://docs.microsoft.com/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)を読みます。
+- [ハードウェア要件](/azure/devops/server/requirements)を確認します。
+- [リリース ノート](/visualstudio/releasenotes/tfs2018-relnotes)と[アップグレードの注意事項](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)を読みます。
 
 次の手順でアップグレードします。
 
@@ -130,11 +130,11 @@ Contoso の管理者が Team Foundation Server インスタンスを Team Founda
      ![Team Foundation Server のインストールを確認するための [製品バックログ] ペインのスクリーンショット。](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 一部の Team Foundation Server アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts)。
+> 一部の Team Foundation Server アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細については、こちらを参照してください](/azure/devops/reference/configure-features-after-upgrade?utm_campaign=vstsdataimportguide&utm_medium=guide&utm_source=ms&view=vsts)。
 
 **さらにサポートが必要な場合**
 
-[Team Foundation Server のアップグレード](https://docs.microsoft.com/azure/devops/server/upgrade/get-started)に関するページを参照してください。
+[Team Foundation Server のアップグレード](/azure/devops/server/upgrade/get-started)に関するページを参照してください。
 
 ## <a name="step-3-validate-the-team-foundation-server-collection"></a>手順 3:Team Foundation Server コレクションを検証する
 
@@ -222,17 +222,17 @@ Contoso の管理者は、移行前に `contosodev` コレクション データ
 
 準備が完了したら、Contoso の管理者は移行に専念することができます。 移行を実行すると、バージョン管理には TFVC ではなく Git が使用されるようになります。
 
-管理者はまず開発チームと共にダウンタイムのスケジュールを設定します。そうすることで、移行に備えてコレクションをオフラインにするための計画を立てることができます。 
+管理者はまず開発チームと共にダウンタイムのスケジュールを設定します。そうすることで、移行に備えてコレクションをオフラインにするための計画を立てることができます。
 
 移行プロセスの手順は次のとおりです。
 
-1. **コレクションをデタッチする**。 コレクションの ID データは、コレクションがアタッチされ、オンラインのときは Team Foundation Server インスタンスの構成データベース内にあります。 
+1. **コレクションをデタッチする**。 コレクションの ID データは、コレクションがアタッチされ、オンラインのときは Team Foundation Server インスタンスの構成データベース内にあります。
 
-    コレクションが Team Foundation Server インスタンスからデタッチされると、その ID データのコピーが作成され、転送のためにコレクションと共にパッケージ化されます。 インポートの ID 部分を実行するには、このデータが必要です。 
+    コレクションが Team Foundation Server インスタンスからデタッチされると、その ID データのコピーが作成され、転送のためにコレクションと共にパッケージ化されます。 インポートの ID 部分を実行するには、このデータが必要です。
 
     インポートが完了するまではコレクションをデタッチしたままにすることをお勧めします。インポート中に発生した変更はインポートできません。
 
-1. **バックアップを生成する**。 次の手順は、Azure DevOps Services にインポートできるバックアップを生成することです。 データ層アプリケーション コンポーネント パッケージ (DACPAC) は、データベースの変更を単一のファイルにパッケージ化し、SQL の他のインスタンスにデプロイすることができる SQL Server の機能です。 
+1. **バックアップを生成する**。 次の手順は、Azure DevOps Services にインポートできるバックアップを生成することです。 データ層アプリケーション コンポーネント パッケージ (DACPAC) は、データベースの変更を単一のファイルにパッケージ化し、SQL の他のインスタンスにデプロイすることができる SQL Server の機能です。
 
     また、バックアップは、Azure DevOps Services に直接復元することもでき、コレクション データをクラウドに取り込むためのパッケージ化方法として使用されます。 Contoso は `sqlpackage.exe` ツールを使用して DACPAC を生成します。 このツールは、SQL Server Data Tools に含まれています。
 
@@ -347,7 +347,7 @@ Contoso の管理者は次のように DACPAC を生成します。
 Contoso の管理者はドライ ラン移行を実行し、すべてが想定どおりに動作していることを確認します。
 
 1. コマンド プロンプトを開き、`TfsMigrator` の場所 (`C:\TFSMigrator`) に移動します。
-1. ファイルの形式が正しいこと、SAS キーが正常に機能していることを確認する必要があります。 次のコマンドを実行して、インポート ファイルを検証します。 
+1. ファイルの形式が正しいこと、SAS キーが正常に機能していることを確認する必要があります。 次のコマンドを実行して、インポート ファイルを検証します。
 
     `TfsMigrator import /importFile:C:\TFSMigrator\import.json /validateonly`
 
@@ -479,13 +479,13 @@ Contoso の管理者はドライ ラン移行を実行し、すべてが想定�
 
 **さらにサポートが必要な場合**
 
-詳細については、「[TFVC から Git にリポジトリをインポートする](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts)」を参照してください。
+詳細については、「[TFVC から Git にリポジトリをインポートする](/azure/devops/repos/git/import-from-TFVC?view=vsts)」を参照してください。
 
 ## <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 
 移行が完了したら、Contoso チームは次のことを行う必要があります。
 
-- 追加のインポート アクティビティについては、[インポート後](https://docs.microsoft.com/azure/devops/articles/migration-post-import?view=vsts)に関する記事を参照してください。
+- 追加のインポート アクティビティについては、[インポート後](/azure/devops/articles/migration-post-import?view=vsts)に関する記事を参照してください。
 - TFVC リポジトリを削除するか、読み取り専用モードに設定します。 コード ベースは使用しないでください。ただし、その履歴を参照することはできます。
 
 ## <a name="post-migration-training"></a>移行後のトレーニング

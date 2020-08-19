@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3be996a02a42505e6bd8168c8d05649387bb3da1
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 294a165ac2aa7f70c5d47accf83abeb38713b28a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234890"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574654"
 ---
 # <a name="replication-options"></a>レプリケーション オプション
 
@@ -22,7 +22,7 @@ ms.locfileid: "86234890"
 
 ## <a name="azure-site-recovery-also-known-as-azure-migrate"></a>Azure Site Recovery (Azure Migrate とも呼ばれます)
 
-[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) では、Azure VM、オンプレミス VM、物理サーバーのディザスター リカバリーの調整と管理が行われます。 Site Recovery を使うと、オンプレミスおよび他のクラウド プロバイダーのマシンの Azure への移行を管理することもできます。 オンプレミスのマシンを Azure に、または Azure VM をセカンダリ リージョンにレプリケートします。 その後、VM をプライマリ サイトからセカンダリにフェールオーバーして、移行プロセスが完了します。 Azure Site Recovery では、さまざまな移行シナリオを実現できます。
+[Azure Site Recovery](/azure/site-recovery/site-recovery-overview) では、Azure VM、オンプレミス VM、物理サーバーのディザスター リカバリーの調整と管理が行われます。 Site Recovery を使うと、オンプレミスおよび他のクラウド プロバイダーのマシンの Azure への移行を管理することもできます。 オンプレミスのマシンを Azure に、または Azure VM をセカンダリ リージョンにレプリケートします。 その後、VM をプライマリ サイトからセカンダリにフェールオーバーして、移行プロセスが完了します。 Azure Site Recovery では、さまざまな移行シナリオを実現できます。
 
 - **オンプレミスから Azure への移行。** オンプレミスの VMware VM、Hyper-V VM、物理サーバーを Azure に移行します。 これを行うには、完全なディザスター リカバリーの場合とほぼ同じ手順を実行します。 Azure からオンプレミス サイトにマシンをフェールバックしないだけです。
 - **Azure リージョン間の移行。** Azure VM をある Azure リージョンから別のリージョンに移行します。 移行が完了した後、現在は移行先のセカンダリ リージョンにある Azure VM に対してディザスター リカバリーを構成します。
@@ -43,7 +43,7 @@ _図 1:資産を Azure または他のクラウドに移動している Azure Si
 
 ## <a name="azure-database-migration-service"></a>Azure Database Migration Service
 
-このサービスは、複数のツールではなく、1 つの包括的なサービスを使用することで、クラウド移行の複雑さを軽減するのに役立ちます。 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) は、オンプレミスの SQL Server データベースをクラウドに移行するためのシームレスなエンドツーエンドのソリューションとして設計されています。 それは、複数のデータベース ソースから Azure データ プラットフォームへのシームレスな移行を最小限のダウンタイムで実現できるように設計された、フル マネージドのサービスです。 既存のツールとサービスのいくつかの機能が統合されており、お客様に包括的で高可用性のソリューションが提供されます。
+このサービスは、複数のツールではなく、1 つの包括的なサービスを使用することで、クラウド移行の複雑さを軽減するのに役立ちます。 [Azure Database Migration Service](/azure/dms/dms-overview) は、オンプレミスの SQL Server データベースをクラウドに移行するためのシームレスなエンドツーエンドのソリューションとして設計されています。 それは、複数のデータベース ソースから Azure データ プラットフォームへのシームレスな移行を最小限のダウンタイムで実現できるように設計された、フル マネージドのサービスです。 既存のツールとサービスのいくつかの機能が統合されており、お客様に包括的で高可用性のソリューションが提供されます。
 
 このサービスでは、Data Migration Assistant を使用して評価レポートを生成します。評価レポートには、移行を実行する前に必要な変更について推奨される手順が記載されています。 必要な修正を実行するかどうかは、お客様の判断に委ねられます。 移行プロセスを開始する準備ができたら、Azure Database Migration Service によって、関連するすべての手順が実行されます。 プロセスは Microsoft によって決定されたベスト プラクティスを利用して実行されるので、お客様は安心して移行プロジェクトの完了を待つことができます。
 

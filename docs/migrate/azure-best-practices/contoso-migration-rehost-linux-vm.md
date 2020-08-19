@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8272bf9084095f5b5e7bd1cd4cf6193fd7bd81c8
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: e7da84f927955228b4ef9fb28fb66aa54324fa8f
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400515"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574926"
 ---
 <!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
 
@@ -68,8 +68,8 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 | 考慮事項 | 詳細 |
 | --- | --- |
-| **長所** | アプリケーション VM はどちらも変更なしで Azure に移されるので、移行が簡単になります。 <br><br> Contoso は両方のアプリケーション VM にリフトアンドシフト アプローチを使用するため、アプリケーション データベース用に特別な構成や移行ツールは不要です。 <br><br> Contoso は、Azure で引き続きアプリケーションの VM を完全に制御できます。 <br><br> アプリケーションの VM では、動作保証済みの Linux ディストリビューション Ubuntu 16.04-TLS が実行されています。 [Azure で動作保証済みの Linux ディストリビューション](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)の詳細をご覧ください。 |
-| **短所** | アプリケーションの Web 層とデータ層は、依然として単一フェールオーバー ポイントになります。 <br><br> Contoso は、Azure App Service や Azure Database for MySQL などのマネージド サービスに移行するのではなく、引き続き Azure VM としてアプリケーションをサポートする必要があります。 <br><br> Contoso は、リフトアンドシフトの VM 移行によって単純化すると、[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) の特長を最大限に活用できないことを認識しています。 これらの特長には、組み込みの高可用性、予測可能なパフォーマンス、単純なスケーリング、自動バックアップ、組み込みのセキュリティなどがあります。 |
+| **長所** | アプリケーション VM はどちらも変更なしで Azure に移されるので、移行が簡単になります。 <br><br> Contoso は両方のアプリケーション VM にリフトアンドシフト アプローチを使用するため、アプリケーション データベース用に特別な構成や移行ツールは不要です。 <br><br> Contoso は、Azure で引き続きアプリケーションの VM を完全に制御できます。 <br><br> アプリケーションの VM では、動作保証済みの Linux ディストリビューション Ubuntu 16.04-TLS が実行されています。 [Azure で動作保証済みの Linux ディストリビューション](/azure/virtual-machines/linux/endorsed-distros)の詳細をご覧ください。 |
+| **短所** | アプリケーションの Web 層とデータ層は、依然として単一フェールオーバー ポイントになります。 <br><br> Contoso は、Azure App Service や Azure Database for MySQL などのマネージド サービスに移行するのではなく、引き続き Azure VM としてアプリケーションをサポートする必要があります。 <br><br> Contoso は、リフトアンドシフトの VM 移行によって単純化すると、[Azure Database for MySQL](/azure/mysql/overview) の特長を最大限に活用できないことを認識しています。 これらの特長には、組み込みの高可用性、予測可能なパフォーマンス、単純なスケーリング、自動バックアップ、組み込みのセキュリティなどがあります。 |
 
 ### <a name="migration-process"></a>移行プロセス
 
@@ -86,7 +86,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Migrate: Server Migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | このサービスは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) または Google Cloud Platform (GCP) VM インスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われると、Azure VM が作成されて料金がかかります。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate)の詳細をご覧ください。 |
+| [Azure Migrate: Server Migration](/azure/migrate/contoso-migration-rehost-linux-vm) | このサービスは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) または Google Cloud Platform (GCP) VM インスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われると、Azure VM が作成されて料金がかかります。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate)の詳細をご覧ください。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -94,10 +94,10 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 必要条件 | 詳細 |
 | --- | --- |
-| **Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用する場合に、自分が管理者でないようであれば、管理者と連携して所有者または共同作成者のアクセス許可を自分に割り当てます。 <br><br> より詳細なアクセス許可が必要な場合は、[ロールベースのアクセス制御 (RBAC) を使用した Azure Site Recovery のアクセスの管理](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control)に関する記事をご覧ください。 |
+| **Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用する場合に、自分が管理者でないようであれば、管理者と連携して所有者または共同作成者のアクセス許可を自分に割り当てます。 <br><br> より詳細なアクセス許可が必要な場合は、[ロールベースのアクセス制御 (RBAC) を使用した Azure Site Recovery のアクセスの管理](/azure/site-recovery/site-recovery-role-based-linked-access-control)に関する記事をご覧ください。 |
 | **Azure インフラストラクチャ** | [Contoso が Azure インフラストラクチャをセットアップする](./contoso-migration-infrastructure.md)方法を確認します。 <br><br> 以下についての具体的な[前提条件](./contoso-migration-devtest-to-iaas.md#prerequisites)をご確認ください。Azure Migrate:Server Migration に関するエラーのトラブルシューティングに役立つ情報を提供しています。 |
 | **オンプレミスのサーバー** | オンプレミス vCenter Server では、バージョン 5.5、6.0、または 6.5 を実行している必要があります。 <br><br> バージョン 5.5、6.0、または 6.5 を実行している ESXi ホスト。 <br><br> ESXi ホスト上で実行している 1 つ以上の VMware VM。 |
-| **オンプレミスの VM** | Azure での実行が保証されている [Linux ディストリビューションを確認します](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。 |
+| **オンプレミスの VM** | Azure での実行が保証されている [Linux ディストリビューションを確認します](/azure/virtual-machines/linux/endorsed-distros)。 |
 
 ## <a name="scenario-steps"></a>シナリオのステップ
 
@@ -132,20 +132,20 @@ Contoso が VM を Azure に移行するには、以下の Azure コンポーネ
 
 **さらにサポートが必要な場合**
 
-[Azure Migrate: Server Migration ツール](https://docs.microsoft.com/azure/migrate)の設定についてご確認ください。
+[Azure Migrate: Server Migration ツール](/azure/migrate)の設定についてご確認ください。
 
 ## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>手順 2:Azure Migrate: Server Migration 用のオンプレミス VMware を準備するServer Migration
 
 Contoso は、Azure への移行後に、Azure 内のレプリケートされた VM に接続できることを望んでいます。 Contoso の管理者は次のことを行う必要があります。
 
 - Azure VM にインターネット経由でアクセスするには、移行前に、オンプレミス Linux VM 上で SSH を有効にします。 Ubuntu の場合、`sudo apt-get ssh install -y` コマンドを使用してこの手順を実行できます。
-- [Azure Linux エージェント](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux)をインストールします。
+- [Azure Linux エージェント](/azure/virtual-machines/extensions/agent-linux)をインストールします。
 - 移行を実行したら、**ブート診断**を調べて、VM のスクリーンショットを表示できます。
 - これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照する必要があります。
 
 **さらにサポートが必要な場合**
 
-[移行に向けて VM を準備する](https://docs.microsoft.com/azure/migrate/prepare-for-migration)方法をご覧ください。
+[移行に向けて VM を準備する](/azure/migrate/prepare-for-migration)方法をご覧ください。
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>手順 3:オンプレミスの VM をレプリケートする
 
@@ -179,7 +179,7 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
     - Azure ハイブリッド特典を適用しない場合は、 **[いいえ]** を選択します。 **[次へ]** を選択します。
     - アクティブなソフトウェア アシュアランスまたは Windows Server サブスクリプションの対象となっている Windows Server マシンがあり、移行するマシンに特典を適用する場合は、 **[はい]** を選択します。 **[次へ]** を選択します。
 
-8. **[コンピューティング]** で、VM の名前、サイズ、OS ディスクの種類、可用性セットを確認します。 VM は [Azure の要件](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)に準拠している必要があります。
+8. **[コンピューティング]** で、VM の名前、サイズ、OS ディスクの種類、可用性セットを確認します。 VM は [Azure の要件](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)に準拠している必要があります。
 
     - **VM サイズ:** 評価の推奨事項を使用している場合は、[VM サイズ] ドロップダウン リストに推奨サイズが表示されます。 それ以外の場合は、Azure Migrate によって、Azure サブスクリプション内の最も近いサイズが選択されます。 または、 **[Azure VM サイズ]** でサイズを手動で選択します。
     - **OS ディスク:** VM の OS (ブート) ディスクを指定します。 OS ディスクは、オペレーティング システムのブートローダーとインストーラーがあるディスクです。
@@ -262,8 +262,8 @@ Contoso の管理者は、ここで、移動を完了する完全移行を実行
 
 **さらにサポートが必要な場合**
 
-- [テスト移行を実行する](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)方法をご覧ください。
-- [VM を Azure に移行する](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)方法をご覧ください。
+- [テスト移行を実行する](/azure/migrate/tutorial-migrate-vmware#run-a-test-migration)方法をご覧ください。
+- [VM を Azure に移行する](/azure/migrate/tutorial-migrate-vmware#migrate-vms)方法をご覧ください。
 
 ## <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 
@@ -288,7 +288,7 @@ Contoso のセキュリティ チームは、OSTICKETWEB と OSTICKETMYSQL の V
 - アクセスを制御するために、VM のネットワーク セキュリティ グループ (NSG) を見直します。 NSG は、アプリケーションに対して許可されるトラフィックのみが通過できるようにするために使用されます。
 - チームは、Azure Disk Encryption と Azure Key Vault を使用して、VM ディスク上のデータをセキュリティで保護することも検討します。
 
-詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/iaas)」を参照してください。
+詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](/azure/security/fundamentals/iaas)」を参照してください。
 
 <!-- docsTest:ignore "Quickstart: Set" -->
 
@@ -296,11 +296,11 @@ Contoso のセキュリティ チームは、OSTICKETWEB と OSTICKETMYSQL の V
 
 事業継続とディザスター リカバリーのために、Contoso は次のアクションを実施します。
 
-- **データの安全性を確保する。** Contoso は、[Azure VM バックアップ](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction)を使用して VM 上のデータをバックアップします。
-- **アプリケーションの稼働を維持する。** Contoso は、Site Recovery を使用して、Azure 内のアプリケーション VM をセカンダリ リージョンにレプリケートします。 詳細については、「[クイック スタート: Azure VM のセカンダリ Azure リージョンへのディザスター リカバリーの設定](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)」を参照してください。
+- **データの安全性を確保する。** Contoso は、[Azure VM バックアップ](/azure/backup/backup-azure-vms-introduction)を使用して VM 上のデータをバックアップします。
+- **アプリケーションの稼働を維持する。** Contoso は、Site Recovery を使用して、Azure 内のアプリケーション VM をセカンダリ リージョンにレプリケートします。 詳細については、「[クイック スタート: Azure VM のセカンダリ Azure リージョンへのディザスター リカバリーの設定](/azure/site-recovery/azure-to-azure-quickstart)」を参照してください。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - Contoso は、リソースのデプロイ後、[Azure インフラストラクチャのデプロイ](./contoso-migration-infrastructure.md#set-up-tagging)中に定義されたとおりに Azure タグを割り当てます。
 - Contoso に、Ubuntu サーバーとのライセンスの問題はありません。
-- Contoso は [Azure Cost Management および Billing](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
+- Contoso は [Azure Cost Management および Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。

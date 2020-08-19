@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: bd98ff4e52faceea4c7dd48a2363efc5ebe87da2
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7942cc63341b3f15f770d6f23dca3e56bc606b65
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755470"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574739"
 ---
 # <a name="function-of-identity-and-key-management-in-the-cloud"></a>クラウドでの ID とキーの管理の機能
 
@@ -31,7 +31,7 @@ ID 管理を担当するセキュリティ チームの主な目的は、ユー�
   - 無秩序に拡大するサードパーティのディレクトリと ID 管理システムのセット。
   - アプリケーション ID 戦略の明確な標準化と所有権の欠如。
 - 資格情報の盗難攻撃には大きな影響があり、脅威が軽減される高い可能性があります。
-- サービス アカウントとアプリケーション アカウントは、上位の課題になりますが、解決が容易になります。 ID チームは、[Azure AD マネージド ID](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) のような、この問題の解決を開始するクラウド機能を積極的に採用する必要があります。
+- サービス アカウントとアプリケーション アカウントは、上位の課題になりますが、解決が容易になります。 ID チームは、[Azure AD マネージド ID](/azure/active-directory/managed-identities-azure-resources/overview) のような、この問題の解決を開始するクラウド機能を積極的に採用する必要があります。
 
 ## <a name="team-composition-and-key-relationships"></a>チームの構成と重要な関係
 

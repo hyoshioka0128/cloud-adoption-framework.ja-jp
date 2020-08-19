@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 666e74e440909901b51c9cfc580c879f3a85db75
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9e7980b54d46f96399904152884d6ed5fe4ac4bc
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755350"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574280"
 ---
 <!--docsTest:ignore TVM -->
 
@@ -31,7 +31,7 @@ ms.locfileid: "83755350"
 - **脅威と脆弱性の管理 (TVM)** では、組織の攻撃対象領域とリスクの全体像を確定させ、それを運用とエンジニアリングに関する意思決定に統合します。
 - **共有しているリスクの検出:** 承認されたクラウド サービスと承認されていないクラウド サービスの両方を対象に、企業の知的財産のデータ開示について判断します。
 - **クラウド セキュリティ体制の管理**では、クラウド インストルメンテーションを活用し、セキュリティの改善点を監視して優先度を付けます。
-- **技術的ポリシー:** 組織の標準およびポリシーの監査と適用を行うガードレールを技術的システムに適用します。 Azure Policy と [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) に関するページを参照してください。
+- **技術的ポリシー:** 組織の標準およびポリシーの監査と適用を行うガードレールを技術的システムに適用します。 Azure Policy と [Azure Blueprints](/azure/governance/blueprints/overview) に関するページを参照してください。
 - システムとアーキテクチャに加えて、特定アプリケーションについての**脅威のモデル化**。
 
 **新しい規範:** セキュリティ体制の管理では、これらの新機能を使用してセキュリティ組織の多くの規範を健全な方法で途絶させ、役割間で責任を移管させたり、新しい役割を作り出したりする可能性があります。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c2f030d594a3bdb3ef195252187ae3c033c06e27
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: a1e12ac1ca226d9605a1d5b296582636e9275303
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755826"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574297"
 ---
 # <a name="cloud-adoption-functions"></a>クラウド導入機能
 
@@ -35,10 +35,10 @@ ms.locfileid: "83755826"
 
 ## <a name="preparation"></a>準備
 
-- [Azure アカウントの作成](https://docs.microsoft.com/learn/modules/create-an-azure-account):Azure を使用する最初の手順では、アカウントを作成します。
-- [Azure ポータル](https://docs.microsoft.com/learn/modules/tour-azure-portal):Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
-- [Azure 入門](https://docs.microsoft.com/learn/modules/welcome-to-azure):Azure を使ってみましょう。 クラウドに最初の仮想マシンを作成して構成します。
-- [Azure の基礎](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer):クラウドの概念を学習し、利点を理解し、基本的な戦略を比較対照して、Azure で利用できる幅広いサービスを確認します。
+- [Azure アカウントの作成](/learn/modules/create-an-azure-account):Azure を使用する最初の手順では、アカウントを作成します。
+- [Azure ポータル](/learn/modules/tour-azure-portal):Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
+- [Azure 入門](/learn/modules/welcome-to-azure):Azure を使ってみましょう。 クラウドに最初の仮想マシンを作成して構成します。
+- [Azure の基礎](/learn/paths/azure-for-the-data-engineer):クラウドの概念を学習し、利点を理解し、基本的な戦略を比較対照して、Azure で利用できる幅広いサービスを確認します。
 - [移行手法](../migrate/index.md)を確認します。
 
 ## <a name="minimum-scope"></a>最小スコープ

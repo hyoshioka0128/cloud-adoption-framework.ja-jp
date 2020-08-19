@@ -10,7 +10,7 @@
 ID ベースラインは、すべてのガバナンスに対する基本的な開始ポイントです。 ガバナンスを適用する前に、ID を確立する必要があります。 その後、確立された ID 戦略が、ガバナンス ソリューションによって適用されます。
 このガバナンス ガイドでは、ID 管理チームが[ディレクトリ同期](~/decision-guides/identity/index.md#directory-synchronization)パターンを実装します。
 
-- RBAC は、ディレクトリ同期を使用するか、会社が Office 365 に移行するときに実装された "同一サインオン" を使用して、Azure Active Directory (Azure AD) によって提供されます。 実装のガイダンスについては、[Azure AD の統合の参照アーキテクチャ](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)に関する記事をご覧ください。
+- RBAC は、ディレクトリ同期を使用するか、会社が Office 365 に移行するときに実装された "同一サインオン" を使用して、Azure Active Directory (Azure AD) によって提供されます。 実装のガイダンスについては、[Azure AD の統合の参照アーキテクチャ](/azure/architecture/reference-architectures/identity/azure-ad)に関する記事をご覧ください。
 - Azure にデプロイされた資産に対する認証とアクセスも、Azure AD テナントによって管理されます。
 
 ガバナンス MVP では、ガバナンス チームが、この記事で後述するサブスクリプション ガバナンス ツールを使用して、レプリケートされたテナントの適用を強制します。 将来のイテレーションでは、ガバナンス チームは Azure AD の豊富なツールも強制して、この機能を拡張できます。
@@ -21,7 +21,7 @@ ID ベースラインは、すべてのガバナンスに対する基本的な�
 
 要件がない場合は、IT セキュリティがそれを安全に実施し、[クラウド DMZ](~/decision-guides/software-defined-network/cloud-dmz.md) パターンを要求します。 つまり、Azure のデプロイ自体のガバナンスは非常に軽量になります。
 
-- Azure サブスクリプションでは、VPN 経由で既存のデータセンターに接続できますが、保護されたリソースへの境界ネットワークの接続に関する、オンプレミスの既存のすべての IT ガバナンス ポリシーに従う必要があります。 VPN 接続に関する実装ガイダンスについては、「[VPN ゲートウェイを使用して Azure に接続されたオンプレミス ネットワーク](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn)」を参照してください。
+- Azure サブスクリプションでは、VPN 経由で既存のデータセンターに接続できますが、保護されたリソースへの境界ネットワークの接続に関する、オンプレミスの既存のすべての IT ガバナンス ポリシーに従う必要があります。 VPN 接続に関する実装ガイダンスについては、「[VPN ゲートウェイを使用して Azure に接続されたオンプレミス ネットワーク](/azure/architecture/reference-architectures/hybrid-networking/vpn)」を参照してください。
 - サブネット、ファイアウォール、およびルーティングに関する決定は、現在、各アプリケーション/ワークロードのリーダーに委ねられています。
 - 保護されたデータやミッション クリティカルなワークロードをリリースする前に、追加の分析が必要になります。
 

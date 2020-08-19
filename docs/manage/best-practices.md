@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cc3c7dc19eae0ba6b2aa38c40062e5da2421a770
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 54c6e5d3dc292e3380fe0b51b265165b8fed3f28
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84992948"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574892"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>クラウドでの運用管理プラクティスの確立
 
@@ -43,6 +43,6 @@ ms.locfileid: "84992948"
 - **プラットフォームの運用:** すべての IT 環境には、一連のよく使用されるプラットフォームが含まれます。 これらのプラットフォームには、SQL Server や Azure HDInsights などのデータ ストアを含めることができます。 その他の一般的なプラットフォームには、Azure Kubernetes Service (AKS) などのコンテナー ソリューションを含めることができます。 プラットフォームに関係なく、プラットフォームの運用の成熟度では、一般的なプラットフォームがワークロードによってどのようにデプロイ、構成、および使用されるかに基づいた運用のカスタマイズに注目します。
 - **ワークロードの運用:** 運用の成熟度の最も高いレベルでは、クラウド運用チームは重要なワークロードの運用を調整することができます。 そのようなワークロードの場合、使用可能なデータが、ワークロードをその使用に基づいて自動修復、サイズ変更、または保護するのに役立ちます。
 
-[設計レビュー フレームワーク (コードネーム: クラウド設計原則)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview) などのその他のガイダンスは、個々のワークロードに関して、前述の規範を守りつつ、詳細なアーキテクチャ上の決定を下すために役立ちます。
+[設計レビュー フレームワーク (コードネーム: クラウド設計原則)](/azure/architecture/framework/resiliency/overview) などのその他のガイダンスは、個々のワークロードに関して、前述の規範を守りつつ、詳細なアーキテクチャ上の決定を下すために役立ちます。
 
 クラウド導入フレームワークのこのセクションは、前出の各トピックに基づいた内容であり、組織内のクラウド運用を成熟させるために役立ちます。

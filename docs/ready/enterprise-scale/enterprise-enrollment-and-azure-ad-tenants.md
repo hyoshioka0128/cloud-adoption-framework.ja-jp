@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3e09a40f5f2066f6cbbf3c375784a27615395a4a
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 8deee8d727fea6fd1f8f1ee43027cf72919871d2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040560"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574688"
 ---
 # <a name="enterprise-agreement-enrollment-and-azure-active-directory-tenants"></a>Enterprise Agreement 加入契約と Azure Active Directory テナント
 
@@ -72,10 +72,10 @@ Azure AD は、Microsoft 365 や Azure Marketplace などの、サービスと�
 
 **設計上の推奨事項:**
 
-- 選択した[計画トポロジ](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)に基づいて Azure AD のシームレスなシングル サインオンを使用します。
-- 組織に ID インフラストラクチャがない場合は、まず Azure AD のみの ID デプロイを実装します。 [Azure AD Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services) と [Microsoft Enterprise Mobility + Security](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) を使用するこのようなデプロイによって、SaaS アプリケーション、エンタープライズ アプリケーション、デバイスのエンドツーエンドの保護が実現されます。
-- 多要素認証を使用すると、セキュリティにもう 1 つの層を加え、認証の 2 つ目のバリアを提供することができます。 セキュリティを強化するために、すべての特権アカウントに[多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)と[条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)を適用します。
-- テナント全体でアカウントがロックアウトされないように、[緊急アクセス用](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)または非常用のアカウントを計画して実装します。
-- ID とアクセスの管理には、[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) を使用します。
+- 選択した[計画トポロジ](/azure/active-directory/hybrid/plan-connect-topologies)に基づいて Azure AD のシームレスなシングル サインオンを使用します。
+- 組織に ID インフラストラクチャがない場合は、まず Azure AD のみの ID デプロイを実装します。 [Azure AD Domain Services](/azure/active-directory-domain-services) と [Microsoft Enterprise Mobility + Security](/mem/intune/fundamentals/what-is-intune) を使用するこのようなデプロイによって、SaaS アプリケーション、エンタープライズ アプリケーション、デバイスのエンドツーエンドの保護が実現されます。
+- 多要素認証を使用すると、セキュリティにもう 1 つの層を加え、認証の 2 つ目のバリアを提供することができます。 セキュリティを強化するために、すべての特権アカウントに[多要素認証](/azure/active-directory/authentication/concept-mfa-howitworks)と[条件付きアクセス ポリシー](/azure/active-directory/conditional-access/overview)を適用します。
+- テナント全体でアカウントがロックアウトされないように、[緊急アクセス用](/azure/active-directory/users-groups-roles/directory-emergency-access)または非常用のアカウントを計画して実装します。
+- ID とアクセスの管理には、[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) を使用します。
 - Dev/Test 環境と運用環境が ID の観点では分離された環境になる場合は、複数のテナントを使用してテナント レベルでそれらを分離します。
 - 強力な ID とアクセス管理の理由があり、プロセスが既に整っている場合を除き、新しい Azure AD テナントの作成は避けてください。

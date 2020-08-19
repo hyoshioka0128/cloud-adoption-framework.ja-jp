@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0aaa503df3394faa51ec24eeec054ae7ffaac4a8
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 6e83c1deceed6e6c49e197d88d60ea641b00b1c5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450766"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575232"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -95,9 +95,9 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 
 詳細については、次を参照してください。
 
-- [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
+- [Azure Blueprint](/azure/governance/blueprints)
 - [クラウド導入フレームワーク:リソースの整合性の意思決定ガイド](../../decision-guides/resource-consistency/index.md)
-- [標準ベースのブループリント サンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [標準ベースのブループリント サンプル](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -135,7 +135,7 @@ Azure Policy は、ポリシーの作成、割り当て、および管理に使�
 
 詳細については、次を参照してください。
 
-- [Azure Policy](https://docs.microsoft.com/azure/governance/policy)
+- [Azure Policy](/azure/governance/policy)
 - [クラウド導入フレームワーク:ポリシー適用の意思決定ガイド](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -162,8 +162,8 @@ Azure Security Center について調べるには、[Azure portal](https://porta
 
 詳細については、次を参照してください。
 
-- [Azure Security Center](https://docs.microsoft.com/azure/security-center)
-- [Just In Time VM アクセス](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure Security Center](/azure/security-center)
+- [Just In Time VM アクセス](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Security Center の価格レベル](https://azure.microsoft.com/pricing/details/security-center)
 - [クラウド導入フレームワーク:セキュリティ ベースライン規範](../../govern/security-baseline/index.md)
 

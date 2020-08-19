@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d3f772ec4bec79b3f9473d2a0ee6b2a2035f145b
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 45ebaec6b6d0abe665fc4a038892b7f1c3a053ff
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194172"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574603"
 ---
 # <a name="build-technical-skills"></a>技術スキルの構築
 
@@ -32,16 +32,16 @@ ms.locfileid: "86194172"
 
 準備フェーズでは、技術スタッフは、クラウドに移行するワークロードをホスト、運用、管理するための移行ランディング ゾーンを作成する必要があります。 必要なスキルの開発を加速させるには、次のパスを使用してください。
 
-- [Azure アカウントの作成](https://docs.microsoft.com/learn/modules/create-an-azure-account):Azure を使用する最初の手順では、アカウントを作成します。 お使いのアカウントは、自身がプロビジョニングした Azure サービスを保持し、ID、課金、ユーザー設定などの個人設定を処理します。
-- [Azure ポータル](https://docs.microsoft.com/learn/modules/tour-azure-portal):Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
-- [Azure 入門](https://docs.microsoft.com/learn/modules/welcome-to-azure):Azure を使ってみましょう。 クラウドに最初の仮想マシンを作成して構成します。
-- [Azure のセキュリティの概要](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure):クラウド内のインフラストラクチャとデータの保護に関する基本的な概念について学習します。 自分の役割と Azure で処理される内容について理解します。
-- [Azure でのリソースの管理](https://docs.microsoft.com/learn/paths/manage-resources-in-azure):Azure CLI と Web ポータルを介してクラウドベースのリソースを作成、管理、制御する方法について学習します。
-- [VM の作成](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure):Azure portal を使用して仮想マシンを作成します。
-- [Azure のネットワーク サービス](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
-- [Azure のコンピューティング オプション](https://docs.microsoft.com/learn/modules/intro-to-azure-compute): Azure のコンピューティング サービスを確認します。
-- [RBAC によるリソースのセキュリティ保護](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac):ロールベースのアクセス制御 (RBAC) を使用してリソースをセキュリティで保護します。
-- [Azure のストレージ オプション](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure): Azure データ ストレージの利点について学習します。
+- [Azure アカウントの作成](/learn/modules/create-an-azure-account):Azure を使用する最初の手順では、アカウントを作成します。 お使いのアカウントは、自身がプロビジョニングした Azure サービスを保持し、ID、課金、ユーザー設定などの個人設定を処理します。
+- [Azure ポータル](/learn/modules/tour-azure-portal):Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
+- [Azure 入門](/learn/modules/welcome-to-azure):Azure を使ってみましょう。 クラウドに最初の仮想マシンを作成して構成します。
+- [Azure のセキュリティの概要](/learn/modules/intro-to-security-in-azure):クラウド内のインフラストラクチャとデータの保護に関する基本的な概念について学習します。 自分の役割と Azure で処理される内容について理解します。
+- [Azure でのリソースの管理](/learn/paths/manage-resources-in-azure):Azure CLI と Web ポータルを介してクラウドベースのリソースを作成、管理、制御する方法について学習します。
+- [VM の作成](/learn/modules/create-windows-virtual-machine-in-azure):Azure portal を使用して仮想マシンを作成します。
+- [Azure のネットワーク サービス](/learn/modules/intro-to-azure-networking): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
+- [Azure のコンピューティング オプション](/learn/modules/intro-to-azure-compute): Azure のコンピューティング サービスを確認します。
+- [RBAC によるリソースのセキュリティ保護](/learn/modules/secure-azure-resources-with-rbac):ロールベースのアクセス制御 (RBAC) を使用してリソースをセキュリティで保護します。
+- [Azure のストレージ オプション](/learn/modules/intro-to-data-in-azure): Azure データ ストレージの利点について学習します。
 
 この準備フェーズでは、アーキテクトは、すべての Azure 環境にまたがるソリューションを設計する必要があります。 次のリソースでは、これらのタスクに向けた準備を行うことができます。
 
@@ -67,14 +67,14 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 Microsoft Learn のロール固有のラーニング パスのいくつかの例を以下に示します。
 
-- [ビジネス ユーザー](https://docs.microsoft.com/learn/browse/?roles=business-user)は、クラウドベースのテクノロジの計画、テスト、導入を支援するときに短期間で多くのことを習得できる場合があります。 Microsoft Learn のモジュールは、クラウドベースのサービスを通じてビジネスを管理しやすくするためのクラウド モデルおよびツールの導入に重点を置いています。
+- [ビジネス ユーザー](/learn/browse/?roles=business-user)は、クラウドベースのテクノロジの計画、テスト、導入を支援するときに短期間で多くのことを習得できる場合があります。 Microsoft Learn のモジュールは、クラウドベースのサービスを通じてビジネスを管理しやすくするためのクラウド モデルおよびツールの導入に重点を置いています。
 
-- [ソリューション アーキテクト](https://docs.microsoft.com/learn/browse/?roles=solution-architect)は、何百ものモジュールとラーニング パスにアクセスできます。 利用できるトピックの範囲は、コア インストラクチャ サービスから高度なデータ変換に及びます。
+- [ソリューション アーキテクト](/learn/browse/?roles=solution-architect)は、何百ものモジュールとラーニング パスにアクセスできます。 利用できるトピックの範囲は、コア インストラクチャ サービスから高度なデータ変換に及びます。
 
-- [管理者](https://docs.microsoft.com/learn/browse/?roles=administrator)は、Azure の基礎やコンテナーの構成、さらにはクラウドでの高度な管理に重点を置いたモジュールにアクセスできます。
+- [管理者](/learn/browse/?roles=administrator)は、Azure の基礎やコンテナーの構成、さらにはクラウドでの高度な管理に重点を置いたモジュールにアクセスできます。
 
-- [開発者](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure)は、アーキテクチャ、ガバナンス、最新化アクティビティで役に立てるように Microsoft Learn のリソースを使用します。
+- [開発者](/learn/browse/?roles=developer&term=infrastructure)は、アーキテクチャ、ガバナンス、最新化アクティビティで役に立てるように Microsoft Learn のリソースを使用します。
 
 ## <a name="learn-more"></a>詳細情報
 
-その他のラーニング パスについては、[Microsoft Learn のカタログ](https://docs.microsoft.com/learn/browse)を参照してください。 ロール フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+その他のラーニング パスについては、[Microsoft Learn のカタログ](/learn/browse)を参照してください。 ロール フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

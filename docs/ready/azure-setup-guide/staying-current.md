@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a97faee54c05f22c35dd674f74aa38d02456f526
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 0c1dd56f5d7c5216693b726de9cb6fbf15a59b8f
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450681"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574467"
 ---
 <!-- docsTest:ignore "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
 <!-- cSpell:ignore jelledruyts andym endjin AzAdvertizer -->
@@ -31,10 +31,10 @@ Azure のようなクラウド プラットフォームは、多くの組織が�
 
 次のリソースは、Azure に関する最新情報を入手するのに役立ちます。
 
-- **Azure Service Health:** [Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) アラートによって、進行中のサービス上の問題、計画メンテナンス、正常性の勧告についてのタイムリーな通知が提供されます。 これらのアラートには、提供終了が予定されている Azure の機能に関する情報も含まれています。
+- **Azure Service Health:** [Service Health](/azure/service-health/service-health-overview) アラートによって、進行中のサービス上の問題、計画メンテナンス、正常性の勧告についてのタイムリーな通知が提供されます。 これらのアラートには、提供終了が予定されている Azure の機能に関する情報も含まれています。
 - **Azure の更新情報:** 製品の更新プログラムに関するお知らせについては、「[Azure の更新情報](https://azure.microsoft.com/updates)」を確認してください。 簡単な概要は追加の詳細にリンクされているため、更新情報を簡単にフォローできます。 [Azure の更新情報の RSS フィード](https://azurecomcdn.azureedge.net/updates/feed)を介してサブスクライブします。
 - **Azure ブログ:** この [Azure ブログ](https://azure.microsoft.com/blog)では、Azure プラットフォームに関する最も重要な発表が行われます。 このブログをフォローして、最新の重要情報を入手してください。 [Azure ブログの RSS フィード](https://azurecomcdn.azureedge.net/blog/feed)を介してサブスクライブします。
-- **サービス固有のブログ:**  個々のさまざまな Azure サービスでブログが発行されています。これらのサービスに依存している場合は、それらをフォローすることができます。 Web 検索で、関心のあるブログを見つけてください。
+- **サービス固有のブログ:** 個々のさまざまな Azure サービスでブログが発行されています。これらのサービスに依存している場合は、それらをフォローすることができます。 Web 検索で、関心のあるブログを見つけてください。
 - **Azure の情報ハブ:** 非公式の [Azure の情報ハブ](https://azureinfohub.azurewebsites.net)では、ここにリストされているほとんどのリソースがまとめられています。 個々のサービスへのリンクをフォローして、詳細情報を取得し、サービスに固有のブログを見つけましょう。 [Azure の情報ハブの RSS フィード](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure)を介してサブスクライブします。 \*
 
 <!-- markdownlint-disable MD025 -->

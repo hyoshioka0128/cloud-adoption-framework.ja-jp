@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1894872688948e3f4b80d8e52095cf15b40f8f50
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 434f4df0d49ab6ca5085518242da684a1bcb3060
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86372865"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574501"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -36,10 +36,10 @@ Azure Monitor では、Azure 内のすべての監視データと診断データ
 
  以下の監視を開始します。
 
-- [アプリケーション](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
-- [Containers](https://docs.microsoft.com/azure/monitoring/monitoring-container-overview)
-- [仮想マシン](https://docs.microsoft.com/azure/monitoring/monitoring-service-map)
-- [ネットワーク](https://docs.microsoft.com/azure/networking/network-monitoring-overview)
+- [アプリケーション](/azure/application-insights/app-insights-overview)
+- [Containers](/azure/monitoring/monitoring-container-overview)
+- [仮想マシン](/azure/monitoring/monitoring-service-map)
+- [ネットワーク](/azure/networking/network-monitoring-overview)
 
 その他のリソースを監視するには、Azure Marketplace で他のソリューションを探します。
 
@@ -47,7 +47,7 @@ Azure Monitor を調査するには、[Azure Portal](https://portal.azure.com/#b
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[Azure Monitor のドキュメント](https://docs.microsoft.com/azure/monitoring-and-diagnostics)」をご覧ください。
+詳しくは、「[Azure Monitor のドキュメント](/azure/monitoring-and-diagnostics)」をご覧ください。
 
 ::: zone-end
 
@@ -95,7 +95,7 @@ Azure Service Health アラートを設定するには、[Azure portal](https://
 
 ### <a name="learn-more"></a>詳細情報
 
-詳細については、「[Azure Service Health](https://docs.microsoft.com/azure/service-health)」を参照してください。
+詳細については、「[Azure Service Health](/azure/service-health)」を参照してください。
 
 ::: zone-end
 
@@ -125,7 +125,7 @@ Azure Advisor を調査するには、[Azure Portal](https://portal.azure.com/#b
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[Azure Advisor のドキュメント](https://docs.microsoft.com/azure/advisor)」をご覧ください。
+詳しくは、「[Azure Advisor のドキュメント](/azure/advisor)」をご覧ください。
 
 ::: zone-end
 
@@ -155,6 +155,6 @@ Azure Security Center について調べるには、[Azure portal](https://porta
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[Azure Security Center のドキュメント](https://docs.microsoft.com/azure/security-center)」をご覧ください。
+詳しくは、「[Azure Security Center のドキュメント](/azure/security-center)」をご覧ください。
 
 ::: zone-end

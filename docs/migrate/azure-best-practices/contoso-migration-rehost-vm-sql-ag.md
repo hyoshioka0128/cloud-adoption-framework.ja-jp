@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: fe6ce9e2406901779f963fb7c6eb6f0aa29c662e
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: b36bdae38b7814618cd8cf68c8b279ed2d84d990
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400549"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575011"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -92,8 +92,8 @@ Contoso は、長所と短所の一覧をまとめて、提案された設計を
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability)と [Azure Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso は、Azure Migrate を使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | Azure Migrate は、追加料金なしで利用できます。 評価と移行に使用することにしたツール (ファーストパーティまたは独立系ソフトウェア ベンダー) によっては料金が発生する場合があります。 [Azure Migrate の価格](https://azure.microsoft.com/pricing/details/azure-migrate)について、詳しくはこちらを参照してください。 |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)と [Azure Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
+| [Azure Migrate](/azure/migrate/migrate-overview) | Contoso は、Azure Migrate を使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | Azure Migrate は、追加料金なしで利用できます。 評価と移行に使用することにしたツール (ファーストパーティまたは独立系ソフトウェア ベンダー) によっては料金が発生する場合があります。 [Azure Migrate の価格](https://azure.microsoft.com/pricing/details/azure-migrate)について、詳しくはこちらを参照してください。 |
 
 ## <a name="migration-process"></a>移行プロセス
 
@@ -119,7 +119,7 @@ Contoso の管理者は、アプリケーション VM を Azure に移行しま�
 | **Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを既に作成しています。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用する場合に、自分が管理者でないようであれば、管理者と連携して所有者または共同作成者のアクセス許可を自分に割り当てます。 <br><br> |
 | **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。 <br><br> Azure Migrate: Server Migration の具体的な[前提条件](./contoso-migration-devtest-to-iaas.md#prerequisites)の要件の詳細について確認してください。Server Migration に関するエラーのトラブルシューティングに役立つ情報を提供しています。 |
 | **オンプレミスのサーバー** | オンプレミスの vCenter Server では、バージョン 5.5、6.0、6.5、または 6.7 が実行されている必要があります。 <br><br> バージョン 5.5、6.0、6.5、または 6.7 が実行されている ESXi ホスト。 <br><br> ESXi ホスト上で実行している 1 つ以上の VMware VM。 |
-| **オンプレミスの VM** | Azure での実行が保証されている [Linux マシンを確認します](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros)。 |
+| **オンプレミスの VM** | Azure での実行が保証されている [Linux マシンを確認します](/azure/virtual-machines/linux/endorsed-distros)。 |
 
 ## <a name="scenario-steps"></a>シナリオのステップ
 
@@ -167,8 +167,8 @@ Contoso が移行を実行する方法を次に示します。
 
 **さらにサポートが必要な場合**
 
-- [SQL Server VM をプロビジョニングする](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings)方法に関するヘルプを参照してください。
-- [さまざまな SQL Server SKU の VM を構成する](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)方法をご覧ください。
+- [SQL Server VM をプロビジョニングする](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings)方法に関するヘルプを参照してください。
+- [さまざまな SQL Server SKU の VM を構成する](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)方法をご覧ください。
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>手順 2:クラスターをデプロイして設定する
 
@@ -242,8 +242,8 @@ Always On 可用性グループが有効になると、Contoso は SmartHotel360
 
 **さらにサポートが必要な場合**
 
-- [クラウド監視とそのストレージ アカウントの設定](https://docs.microsoft.com/windows-server/failover-clustering/deploy-cloud-witness)に関する記事をご覧ください。
-- [クラスターの設定と可用性グループの作成](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial)の手順を参照してください。
+- [クラウド監視とそのストレージ アカウントの設定](/windows-server/failover-clustering/deploy-cloud-witness)に関する記事をご覧ください。
+- [クラスターの設定と可用性グループの作成](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial)の手順を参照してください。
 
 ## <a name="step-3-deploy-azure-load-balancer"></a>手順 3:Azure Load Balancer をデプロイする
 
@@ -301,8 +301,8 @@ Contoso の管理者は正常性プローブを作成して、ロード バラ�
 
 **さらにサポートが必要な場合**
 
-- [Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) の概要をご覧ください。
-- [ロード バランサーを作成する](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)方法をご覧ください。
+- [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) の概要をご覧ください。
+- [ロード バランサーを作成する](/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)方法をご覧ください。
 
 ## <a name="step-4-prepare-azure-for-azure-migrate"></a>手順 4:Azure Migrate 用に Azure を準備する
 
@@ -360,8 +360,8 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
 
 1. Azure エージェントをインストールします。
 
-    - [Azure Linux エージェント](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux)
-    - [Azure Windows エージェント](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-windows)
+    - [Azure Linux エージェント](/azure/virtual-machines/extensions/agent-linux)
+    - [Azure Windows エージェント](/azure/virtual-machines/extensions/agent-windows)
 
 1. その他
 
@@ -370,7 +370,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
 
 **さらにサポートが必要な場合**
 
-[移行に向けて VM を準備する](https://docs.microsoft.com/azure/migrate/prepare-for-migration)方法をご覧ください。
+[移行に向けて VM を準備する](/azure/migrate/prepare-for-migration)方法をご覧ください。
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure"></a>手順 6:オンプレミスの VM を Azure にレプリケートする
 
@@ -404,7 +404,7 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
     - Azure ハイブリッド特典を適用しない場合は、 **[いいえ]** を選択します。 次に、 **[次へ]** を選択します。
     - アクティブなソフトウェア アシュアランスまたは Windows Server サブスクリプションの対象となっている Windows Server マシンがあり、移行するマシンに特典を適用する場合は、 **[はい]** を選択します。 次に、 **[次へ]** を選択します。
 
-1. **[コンピューティング]** で、VM の名前、サイズ、OS ディスクの種類、可用性セットを確認します。 VM は [Azure の要件](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)に準拠している必要があります。
+1. **[コンピューティング]** で、VM の名前、サイズ、OS ディスクの種類、可用性セットを確認します。 VM は [Azure の要件](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)に準拠している必要があります。
 
     - **VM サイズ:** 評価の推奨事項を使用している場合は、[VM サイズ] ドロップダウン リストに推奨サイズが表示されます。 それ以外の場合は、Azure Migrate によって、Azure サブスクリプション内の最も近いサイズが選択されます。 または、 **[Azure VM サイズ]** でサイズを手動で選択することもできます。
     - **OS ディスク:** VM の OS (ブート) ディスクを指定します。 OS ディスクは、オペレーティング システムのブートローダーとインストーラーがあるディスクです。
@@ -421,7 +421,7 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
 
 ## <a name="step-7-migrate-the-database-via-azure-database-migration-service"></a>手順 7: Azure Database Migration Service を使用してデータベースを移行する
 
-Contoso の管理者は、[ステップバイステップの移行チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)に従って、Azure Database Migration Service を使用してデータベースを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
+Contoso の管理者は、[ステップバイステップの移行チュートリアル](/azure/dms/tutorial-sql-server-azure-sql-online)に従って、Azure Database Migration Service を使用してデータベースを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
 
 まとめると、次の作業を行う必要があります。
 
@@ -480,9 +480,9 @@ SQL デプロイを設定する最後の手順として、Contoso の管理者�
 
 **さらにサポートが必要な場合**
 
-- [可用性グループ](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group)と[リスナー](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)を作成する方法をご覧ください。
-- 手動で[クラスターがロード バランサーの IP アドレスを使用するように設定](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)します。
-- [SAS を作成して使用する](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)方法の詳細をご覧ください。
+- [可用性グループ](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group)と[リスナー](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener)を作成する方法をご覧ください。
+- 手動で[クラスターがロード バランサーの IP アドレスを使用するように設定](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address)します。
+- [SAS を作成して使用する](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)方法の詳細をご覧ください。
 
 ## <a name="step-9-migrate-the-vm-with-azure-migrate"></a>手順 9:Azure Migrate で VM を移行する
 
@@ -534,9 +534,9 @@ Contoso の管理者は、移行プロセスの最後の手順として、`SHAOG
 
 **さらにサポートが必要な場合**
 
-- [テスト フェールオーバーを実行する](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure)方法をご覧ください。
-- [復旧計画を作成する方法については、こちらを参照してください](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans)。
-- [Azure へのフェールオーバー](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)に関する説明を参照します。
+- [テスト フェールオーバーを実行する](/azure/site-recovery/tutorial-dr-drill-azure)方法をご覧ください。
+- [復旧計画を作成する方法については、こちらを参照してください](/azure/site-recovery/site-recovery-create-recovery-plans)。
+- [Azure へのフェールオーバー](/azure/site-recovery/site-recovery-failover)に関する説明を参照します。
 
 ### <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 
@@ -560,22 +560,22 @@ Contoso のセキュリティ チームは、`WEBVM`、`SQLAOG1`、`SQLAOG2` の
 
 - VM がアクセスを制御するためのネットワーク セキュリティ グループ (NSG) を見直します。 NSG は、アプリケーションに対して許可されるトラフィックのみが通過できるようにするために使用されます。
 - Azure Disk Encryption と Azure Key Vault を使用して、ディスク上のデータをセキュリティで保護することを検討します。
-- Transparent Data Encryption を評価します。 その後、新しい Always On 可用性グループで実行されている SmartHotel360 データベースでそれを有効にします。 [Transparent Data Encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) の詳細をご覧ください。
+- Transparent Data Encryption を評価します。 その後、新しい Always On 可用性グループで実行されている SmartHotel360 データベースでそれを有効にします。 [Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) の詳細をご覧ください。
 
-詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/iaas)」を参照してください。
+詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](/azure/security/fundamentals/iaas)」を参照してください。
 
 ## <a name="business-continuity-and-disaster-recovery"></a>事業継続とディザスター リカバリー
 
 事業継続とディザスター リカバリーのために、Contoso は次のアクションを実施します。
 
-- データの安全性を確保するために、Contoso は、[Azure VM Backup](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction) を介して `WEBVM`、`SQLAOG1`、`SQLAOG2` の各 VM 上のデータをバックアップします。
-- また、Contoso は、Azure Storage を使用して SQL Server を Azure Blob Storage に直接バックアップする方法について確認します。 [Azure Storage を使用した SQL Server のバックアップと復元](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)の方法の詳細をご覧ください。
-- アプリケーションの稼働状態を維持するために、Contoso は Site Recovery を使用して、Azure 内のアプリケーション VM をセカンダリ リージョンにレプリケートします。 [Azure VM のセカンダリ Azure リージョンへのディザスター リカバリーを設定する](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)方法の詳細をご覧ください。
+- データの安全性を確保するために、Contoso は、[Azure VM Backup](/azure/backup/backup-azure-vms-introduction) を介して `WEBVM`、`SQLAOG1`、`SQLAOG2` の各 VM 上のデータをバックアップします。
+- また、Contoso は、Azure Storage を使用して SQL Server を Azure Blob Storage に直接バックアップする方法について確認します。 [Azure Storage を使用した SQL Server のバックアップと復元](/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)の方法の詳細をご覧ください。
+- アプリケーションの稼働状態を維持するために、Contoso は Site Recovery を使用して、Azure 内のアプリケーション VM をセカンダリ リージョンにレプリケートします。 [Azure VM のセカンダリ Azure リージョンへのディザスター リカバリーを設定する](/azure/site-recovery/azure-to-azure-quickstart)方法の詳細をご覧ください。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - Contoso は WEBVM の既存のライセンスを所有しているので、Azure ハイブリッド特典を活用します。 Contoso は、この特典を活用するために、既存の Azure VM を変換します。
-- Contoso は [Azure Cost Management および Billing](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
+- Contoso は [Azure Cost Management および Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
 
 ## <a name="conclusion"></a>まとめ
 

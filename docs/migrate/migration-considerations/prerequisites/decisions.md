@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 07c9024d1d2af4a19fb1be9a53de6b5da78edd0c
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 46cc58d9f347987624d0cf3ebb1f9cf02740e87c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235400"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575249"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -46,7 +46,7 @@ ms.locfileid: "86235400"
 
 ## <a name="effort"></a>作業
 
-移行作業は、含まれるワークロードのサイズや複雑さによって大きく異なる場合があります。 数百の仮想マシン (VM) を含む小さなワークロード移行は戦術的なプロセスであり、[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) などの自動ツールを使用して実装される可能性があります。 逆に、数万のワークロードの大規模なエンタープライズ移行には高度に戦略的なプロセスが必要であり、サービスとしてのプラットフォーム (PaaS) およびサービスとしてのソフトウェア (SaaS) 機能を統合した既存のアプリケーションの広範囲にわたるリファクタリング、再構築、および置き換えが含まれる場合があります。 計画的な移行の[スコープを識別してバランスを取ること](../../../strategy/balance-the-portfolio.md)は重要です。
+移行作業は、含まれるワークロードのサイズや複雑さによって大きく異なる場合があります。 数百の仮想マシン (VM) を含む小さなワークロード移行は戦術的なプロセスであり、[Azure Migrate](/azure/migrate/migrate-services-overview) などの自動ツールを使用して実装される可能性があります。 逆に、数万のワークロードの大規模なエンタープライズ移行には高度に戦略的なプロセスが必要であり、サービスとしてのプラットフォーム (PaaS) およびサービスとしてのソフトウェア (SaaS) 機能を統合した既存のアプリケーションの広範囲にわたるリファクタリング、再構築、および置き換えが含まれる場合があります。 計画的な移行の[スコープを識別してバランスを取ること](../../../strategy/balance-the-portfolio.md)は重要です。
 
 現在の移行プログラムに長期的に影響を与える可能性がある何らかの決定を行う前に、次の意思決定に関する合意を作成することがきわめて重要です。
 
@@ -77,7 +77,7 @@ ms.locfileid: "86235400"
 先に進む前に、次の前提条件を文書化し、それをクラウド戦略チームおよびクラウド導入チームと共有してください。
 
 - ビジネス成果。
-- ロール。_評価_、_移行_、_最適化_、_セキュリティ保護と管理_の各移行プロセスに対して文書化および改良されます。
+- ロール。*評価*、*移行*、*最適化*、*セキュリティ保護と管理*の各移行プロセスに対して文書化および改良されます。
 - これらの移行プロセス別に定義される完了、文書化、改良。
 - 作業の種類。
 - 作業のスケール。

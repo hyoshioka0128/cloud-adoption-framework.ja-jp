@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b22f93d4251f03c87ecdeb6dbef8ea932f48476f
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 65bc254466009e0e5efbb458c6e4426fdad8a96b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473252"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574705"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -65,9 +65,9 @@ ms.locfileid: "87473252"
 **詳細情報:**
 
 - Azure 料金計算ツールを[使用](https://azure.microsoft.com/pricing/calculator)します。
-- [Azure Migrate の概要](https://docs.microsoft.com/azure/migrate/migrate-services-overview)を確認します。
-- Azure Migrate の評価[についてのページを読みます](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation)。
-- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) の詳細について確認します。
+- [Azure Migrate の概要](/azure/migrate/migrate-services-overview)を確認します。
+- Azure Migrate の評価[についてのページを読みます](/azure/migrate/concepts-assessment-calculation)。
+- [Azure Database Migration Service](/azure/dms/dms-overview) の詳細について確認します。
 
 ## <a name="best-practice-right-size-vms"></a>ベスト プラクティス:適切なサイズの VM
 
@@ -88,9 +88,9 @@ ms.locfileid: "87473252"
 
 **詳細情報:**
 
-- [VM の種類とサイズ設定](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)、およびサイズの種類へのマップに関する詳細を確認します。
-- [VM インスタンスのサイズ](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs)を計画します。
-- [架空の Contoso 社の評価サンプル](https://docs.microsoft.com/azure/migrate/contoso-migration-assessment)を確認します。
+- [VM の種類とサイズ設定](/azure/virtual-machines/windows/sizes)、およびサイズの種類へのマップに関する詳細を確認します。
+- [VM インスタンスのサイズ](/azure/cloud-services/cloud-services-sizes-specs)を計画します。
+- [架空の Contoso 社の評価サンプル](/azure/migrate/contoso-migration-assessment)を確認します。
 
 ## <a name="best-practice-select-the-right-storage"></a>ベスト プラクティス:適切なストレージを選択する
 
@@ -147,12 +147,12 @@ Azure では、さまざまな種類のストレージ アカウントとパフ�
 **詳細情報:**
 
 - [Azure Storage の料金](https://azure.microsoft.com/pricing/details/storage)を確認します。
-- [Azure Import/Export](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) の詳細を確認します。
-- [BLOB、ファイル、ディスク ストレージのデータの種類](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks)を比較します。
-- [アクセス レベル](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)の詳細を確認します。
-- [さまざまな種類のストレージ アカウント](https://docs.microsoft.com/azure/storage/common/storage-account-overview)を確認します。
-- LRS、ZRS、GRS、読み取りアクセス GRS など、[Azure Storage の冗長性](https://docs.microsoft.com/azure/storage/common/storage-redundancy)について説明します。
-- [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) の詳細を確認します。
+- [Azure Import/Export](/azure/storage/common/storage-import-export-service) の詳細を確認します。
+- [BLOB、ファイル、ディスク ストレージのデータの種類](/azure/storage/common/storage-decide-blobs-files-disks)を比較します。
+- [アクセス レベル](/azure/storage/blobs/storage-blob-storage-tiers)の詳細を確認します。
+- [さまざまな種類のストレージ アカウント](/azure/storage/common/storage-account-overview)を確認します。
+- LRS、ZRS、GRS、読み取りアクセス GRS など、[Azure Storage の冗長性](/azure/storage/common/storage-redundancy)について説明します。
+- [Azure Files](/azure/storage/files/storage-files-introduction) の詳細を確認します。
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>ベスト プラクティス:Azure ハイブリッド特典を活用する
 
@@ -162,7 +162,7 @@ Azure では、さまざまな種類のストレージ アカウントとパフ�
 
 - Azure ハイブリッド特典の節約額計算ツールを[見てみます](https://azure.microsoft.com/pricing/hybrid-benefit)。
 - [Windows Server 向けの Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit)の詳細を確認します。
-- [SQL Server Azure VM の料金ガイダンス](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)を確認します。
+- [SQL Server Azure VM の料金ガイダンス](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)を確認します。
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>ベスト プラクティス:予約 VM インスタンスを使用する
 
@@ -180,9 +180,9 @@ Azure Reserved Virtual Machine Instances を使用している場合は、VM イ
 
 **詳細情報:**
 
-- [Azure Reservations](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations) の詳細を確認します。
+- [Azure Reservations](/azure/cost-management-billing/reservations/save-compute-costs-reservations) の詳細を確認します。
 - [Azure Reserved VM Instances のよくある質問](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq)ページをご覧ください。
-- 「[Azure VM 上の SQL Server の料金ガイダンス](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)」を参照してください。
+- 「[Azure VM 上の SQL Server の料金ガイダンス](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance)」を参照してください。
 
 ## <a name="best-practice-aggregate-cloud-spending-across-subscriptions"></a>ベスト プラクティス:すべてのサブスクリプションのクラウド支出を集計する
 
@@ -192,9 +192,9 @@ Azure Reserved Virtual Machine Instances を使用している場合は、VM イ
 
 **詳細情報:**
 
-- [Azure Consumption API の概要](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview)を確認します。
-- [Power BI Desktop で Azure Consumption Insights に接続する](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights)方法を確認します。
-- [ロールベースのアクセス制御 (RBAC) を使用して、Azure の課金情報へのアクセスを管理する](https://docs.microsoft.com/azure/billing/billing-manage-access)方法を確認します。
+- [Azure Consumption API の概要](/azure/billing/billing-consumption-api-overview)を確認します。
+- [Power BI Desktop で Azure Consumption Insights に接続する](/power-bi/desktop-connect-azure-consumption-insights)方法を確認します。
+- [ロールベースのアクセス制御 (RBAC) を使用して、Azure の課金情報へのアクセスを管理する](/azure/billing/billing-manage-access)方法を確認します。
 
 ## <a name="after-migration"></a>移行後
 
@@ -233,11 +233,11 @@ Azure Cost Management と Billing では、次のことができます。
 
 **詳細情報:**
 
-- [Azure Cost Management と Billing の概要](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview)を確認します。
-- [Azure Cost Management と Billing でクラウド投資を最適化する](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices)方法を確認します。
-- [Azure Cost Management と Billing のレポート](https://docs.microsoft.com/azure/cost-management/use-reports)を確認します。
-- [推奨事項に従ってコストを最適化する](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)ことに関するチュートリアルを表示します。
-- [Azure Consumption API](https://docs.microsoft.com/rest/api/consumption/budgets) について確認します。
+- [Azure Cost Management と Billing の概要](/azure/cost-management-billing/cost-management-billing-overview)を確認します。
+- [Azure Cost Management と Billing でクラウド投資を最適化する](/azure/cost-management-billing/costs/cost-mgt-best-practices)方法を確認します。
+- [Azure Cost Management と Billing のレポート](/azure/cost-management/use-reports)を確認します。
+- [推奨事項に従ってコストを最適化する](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)ことに関するチュートリアルを表示します。
+- [Azure Consumption API](/rest/api/consumption/budgets) について確認します。
 
 ## <a name="best-practice-monitor-resource-utilization"></a>ベスト プラクティス:リソースの使用率を監視する
 
@@ -252,9 +252,9 @@ Azure Cost Management と Billing、Azure Monitor、Azure Advisor などの Micr
 
 **詳細情報:**
 
-- [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) と [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) の概要を確認します。
-- [Azure Advisor のコストに関する推奨事項](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations)を確認します。
-- [推奨事項に従ってコストを最適化](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)し、[予期しない料金を防ぐ](https://docs.microsoft.com/azure/billing/billing-getting-started)方法を学びます。
+- [Azure Monitor](/azure/azure-monitor/overview) と [Azure Advisor](/azure/advisor/advisor-overview) の概要を確認します。
+- [Azure Advisor のコストに関する推奨事項](/azure/advisor/advisor-cost-recommendations)を確認します。
+- [推奨事項に従ってコストを最適化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)し、[予期しない料金を防ぐ](/azure/billing/billing-getting-started)方法を学びます。
 - [Azure Resource Optimization (ARO) ツールキット](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)について学びます。
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>ベスト プラクティス:リソース グループの予算を実施する
@@ -263,8 +263,8 @@ Azure Cost Management と Billing、Azure Monitor、Azure Advisor などの Micr
 
 **詳細情報:**
 
-- [Azure Budgets でコストを管理する](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)方法を学びます。
-- [Azure の予算の作成と管理](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)に関するチュートリアルを確認します。
+- [Azure Budgets でコストを管理する](/azure/billing/billing-cost-management-budget-scenario)方法を学びます。
+- [Azure の予算の作成と管理](/azure/cost-management-billing/costs/tutorial-acm-create-budgets)に関するチュートリアルを確認します。
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>ベスト プラクティス:Azure Monitor の保持期間を最適化する
 
@@ -278,7 +278,7 @@ Azure にリソースを移動し、それらの診断ログを有効にする�
 
 **詳細情報:**
 
-- [使用量と推定コストの監視](https://docs.microsoft.com/azure/azure-monitor/platform/usage-estimated-costs)について学びます。
+- [使用量と推定コストの監視](/azure/azure-monitor/platform/usage-estimated-costs)について学びます。
 
 ## <a name="best-practice-optimize-storage"></a>ベスト プラクティス:ストレージを最適化する
 
@@ -291,8 +291,8 @@ Azure にリソースを移動し、それらの診断ログを有効にする�
 
 **詳細情報:**
 
-- [アクセス レベル](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)の詳細を確認します。
-- [StorSimple の概要](https://docs.microsoft.com/azure/azure-monitor/overview)を確認します。
+- [アクセス レベル](/azure/storage/blobs/storage-blob-storage-tiers)の詳細を確認します。
+- [StorSimple の概要](/azure/azure-monitor/overview)を確認します。
 - [StorSimple の価格](https://azure.microsoft.com/pricing/details/storsimple)を確認します。
 
 ## <a name="best-practice-automate-vm-optimization"></a>ベスト プラクティス:VM の最適化を自動化する
@@ -303,10 +303,10 @@ VM は、Azure Automation、仮想マシン スケール セット、自動シ�
 
 **詳細情報:**
 
-- [垂直方向の自動スケーリング](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision)について学びます。
+- [垂直方向の自動スケーリング](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision)について学びます。
 - [VM の自動開始をスケジュールします](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start)。
-- [Azure Automation で業務時間外の VM を開始または停止する](https://docs.microsoft.com/azure/automation/automation-solution-vm-management)方法を確認します。
-- [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) と [Azure Resource Optimization (ARO) ツールキット](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)に関する詳細情報を表示します。
+- [Azure Automation で業務時間外の VM を開始または停止する](/azure/automation/automation-solution-vm-management)方法を確認します。
+- [Azure Advisor](/azure/advisor/advisor-overview) と [Azure Resource Optimization (ARO) ツールキット](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)に関する詳細情報を表示します。
 
 ## <a name="best-practices-use-azure-logic-apps-and-runbooks-with-budgets-api"></a>ベスト プラクティス:Budgets API と共に Logic Apps と Runbook を使用する
 
@@ -316,8 +316,8 @@ Azure Resource Usage API と Azure Resource RateCard API は、コストを正�
 
 **詳細情報:**
 
-- [Azure Budgets API](https://docs.microsoft.com/rest/api/consumption/budgets) を確認します。
-- [Azure Billing API シリーズ](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview) を使用して使用状況の分析情報を取得します。
+- [Azure Budgets API](/rest/api/consumption/budgets) を確認します。
+- [Azure Billing API シリーズ](/azure/billing/billing-usage-rate-card-overview) を使用して使用状況の分析情報を取得します。
 
 ## <a name="best-practice-implement-serverless-technologies"></a>ベスト プラクティス:サーバーレス テクノロジを実装する
 
