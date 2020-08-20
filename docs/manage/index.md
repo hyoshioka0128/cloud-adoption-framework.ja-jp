@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: bb6a42562b061fef3176927b3e71641786d8467c
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: cf4cc33734b33e0b0c71ca33973bb81397f1f8f2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283621"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571424"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド管理
 
@@ -22,10 +22,12 @@ ms.locfileid: "88283621"
 
 クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークからは、次の演習が提案されます。
 
-1. [管理ベースラインの確立](./azure-management-guide/index.md):運用管理に対する最小限のコミットメントを提供するために必要な重要度の分類、クラウド管理ツール、プロセスを定義します。
-2. [ビジネス コミットメントの定義](./considerations/business-alignment.md):サポートされているワークロードを文書化して、ビジネスに対する運用上のコミットメントを確立し、各ワークロードに対するクラウド管理への投資に同意します。
-3. [管理ベースラインの展開](./best-practices.md):ビジネス コミットメントと運用上の決定に基づいて、含まれているベスト プラクティスを活用し、必要なクラウド管理ツールを実装します。
-4. [高度な運用と設計の原則](./design-principles.md):より高いレベルのビジネス コミットメントを必要とするプラットフォームやワークロードでは、回復性と信頼性のコミットメントを提供するために、より深いアーキテクチャ レビューが必要になる場合があります。
+|  |  |
+|--|--|
+| <br> ![1](../_images/icons/1.png) | <br> [管理ベースラインの確立](./azure-management-guide/index.md):運用管理に対する最小限のコミットメントを提供するために必要な重要度の分類、クラウド管理ツール、プロセスを定義します。 |
+| <br> ![2](../_images/icons/2.png) | <br> [ビジネス コミットメントの定義](./considerations/business-alignment.md):サポートされているワークロードを文書化して、ビジネスに対する運用上のコミットメントを確立し、各ワークロードに対するクラウド管理への投資に同意します。 |
+| <br> ![3](../_images/icons/3.png) | <br> [管理ベースラインの展開](./best-practices.md):ビジネス コミットメントと運用上の決定に基づいて、含まれているベスト プラクティスを活用し、必要なクラウド管理ツールを実装します。 |
+| <br> ![4](../_images/icons/4.png) | <br> [高度な運用と設計の原則](./design-principles.md):より高いレベルのビジネス コミットメントを必要とするプラットフォームやワークロードでは、回復性と信頼性のコミットメントを提供するために、より深いアーキテクチャ レビューが必要になる場合があります。 |
 
 前の手順では、クラウド導入フレームワークの管理手法を実行するためのアクションにつながるアプローチを作成します。
 

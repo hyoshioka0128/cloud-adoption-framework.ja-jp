@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99d4a5a47829c6a8f016d6c796f9d0b3bd23f1f5
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: dd6490f3f0898b404201dfabef06a74d77e86d38
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280170"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569282"
 ---
 # <a name="resource-consistency-discipline-overview"></a>リソースの整合性の規範の概要
 
@@ -35,16 +35,16 @@ ms.locfileid: "88280170"
 
 ## <a name="develop-governance-policy-statements"></a>ガバナンス ポリシー ステートメントの策定
 
-次の情報は、リソースの整合性規範を開発する際の例と可能性のあるオプションを示しています。 各リソースは、リソースの整合性規範のリスクを管理するのに必要なポリシーやプロセスを確立するためのクラウド ガバナンス チーム内での話し合いや、組織の影響を受けるビジネスおよび IT チームとの討議の中で、出発点として使用します。
+次の手順では、リソースの整合性規範を開発する際の例と考えられるオプションを示します。 各手順は、リソースの整合性規範のリスクを管理するのに必要なポリシーやプロセスを確立するためのクラウド ガバナンス チーム内での話し合いや、組織の影響を受けるビジネスおよび IT チームとの討議の中で、出発点として使用します。
 
-<!-- markdownlint-disable MD033 -->
-
-- [リソースの整合性規範テンプレート](./template.md):リソースの整合性規範を文書化するためのテンプレートをダウンロードできます。
-- [ビジネス リスク](./business-risks.md):リソースの整合性の規範に通常関係する、動機およびリスクを理解できます。
-- [インジケーターとメトリック](./metrics-tolerance.md):リソースの整合性の規範に投資する最適なタイミングであるかどうかを知るインジケーターです。
-- [ポリシー準拠プロセス](./compliance-processes.md):リソースの整合性の規範がポリシーに準拠するようにするための推奨の手順です。
-- [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。
-- [ツールチェーン](./toolchain.md):リソースの整合性の規範をサポートするために実装できる Azure サービスです。
+|  |  |
+|--|--|
+| <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [リソースの整合性規範テンプレート](./template.md):リソースの整合性規範を文書化するためのテンプレートをダウンロードできます。 |
+| <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):リソースの整合性の規範に通常関係する、動機およびリスクを理解できます。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md):リソースの整合性の規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
+| <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | <br> [ポリシー準拠プロセス](./compliance-processes.md):リソースの整合性の規範がポリシーに準拠するようにするための推奨の手順です。 |
+| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。  |
+| <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):リソースの整合性の規範をサポートするために実装できる Azure サービスです。 |
 
 ## <a name="next-steps"></a>次のステップ
 

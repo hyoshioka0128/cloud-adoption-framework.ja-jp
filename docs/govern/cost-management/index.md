@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 89e57eba7e5f48c396dd537299529b010e612506
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 229ce28994c241d2631d5271577a566ceb0b7ed6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88280969"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573753"
 ---
 # <a name="cost-management-discipline-overview"></a>Cost Management の規範の概要
 
@@ -33,16 +33,16 @@ Cost Management 規範は、[クラウド導入フレームワーク ガバナ�
 
 ## <a name="develop-governance-policy-statements"></a>ガバナンス ポリシー ステートメントの策定
 
-次の情報を使用して、環境内でコストを管理するためのガバナンス ポリシーを定義できます。
+次の手順を使用して、環境内でコストを管理するためのガバナンス ポリシーを定義できます。
 
-<!-- markdownlint-disable MD033 -->
-
-- [Cost Management 規範テンプレート](./template.md):Cost Management 規範を文書化するテンプレートをダウンロードします。
-- [ビジネス リスク](./business-risks.md):一般的に Cost Management の規範に関係する動機およびリスクを理解できます。
-- [インジケーターとメトリック](./metrics-tolerance.md):Cost Management の規範に投資する最適なタイミングであるかどうかを知るインジケーターです。
-- [ポリシー準拠プロセス](./compliance-processes.md):Cost Management の規範でのポリシー準拠を確保するための推奨の手順です。
-- [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。
-- [ツールチェーン](./toolchain.md):Cost Management の規範をサポートするために実装できる Azure サービスです。
+|  |  |
+|--|--|
+| <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [Cost Management 規範テンプレート](./template.md):Cost Management 規範を文書化するテンプレートをダウンロードします。 |
+| <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):一般的に Cost Management の規範に関係する動機およびリスクを理解できます。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md):Cost Management の規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
+| <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | <br> [ポリシー準拠プロセス](./compliance-processes.md):Cost Management の規範でのポリシー準拠を確保するための推奨の手順です。 |
+| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
+| <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):Cost Management の規範をサポートするために実装できる Azure サービスです。 |
 
 ## <a name="next-steps"></a>次のステップ
 
@@ -50,5 +50,3 @@ Cost Management 規範は、[クラウド導入フレームワーク ガバナ�
 
 > [!div class="nextstepaction"]
 > [ビジネス リスクを理解する](./business-risks.md)
-
-<!-- markdownlint-enable MD033 -->

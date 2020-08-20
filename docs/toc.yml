@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: はじめに
+  - name: 作業開始
     items:
       - name: 概要
         href: get-started/index.md
@@ -23,8 +23,6 @@ items:
             href: reference/fundamental-concepts/hosting-hierarchy.md
           - name: Azure 階層のサポート
             href: reference/fundamental-concepts/hierarchy-azure-tools.md
-          - name: 運用モデルの用語
-            href: operating-model/terms.md
       - name: 移行を促進する
         href: get-started/migrate.md
       - name: 新しい製品とサービスを構築する
@@ -179,6 +177,16 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: Azure を最新の状態に保つ
             href: ready/azure-setup-guide/staying-current.md
+      - name: 運用モデル
+        items:
+          - name: 概要
+            href: operating-model/index.md
+          - name: 運用モデルを定義する
+            href: operating-model/define.md
+          - name: 一般的なクラウドの運用モデルを比較する
+            href: operating-model/compare.md
+          - name: 一般的な運用モデルの用語
+            href: operating-model/terms.md
       - name: Azure ランディング ゾーン
         items:
           - name: ランディング ゾーンとは
@@ -193,7 +201,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: Architecture
+              - name: アーキテクチャ
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md
@@ -880,7 +888,7 @@ items:
                           - name: Web アプリのリファレンス ソリューション
                             href: /azure/architecture/solution-ideas/articles/scalable-ecommerce-web-app?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: Azure SQL Database を使用した .NET Core アプリの作成
-                            href: /azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                            href: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
                           - name: Azure SQL Database を使用した .NET アプリの作成
                             href: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: MySQL を使用した PHP アプリの作成
