@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: 作業開始
+  - name: はじめに
     items:
       - name: 概要
         href: get-started/index.md
@@ -201,7 +201,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: アーキテクチャ
+              - name: Architecture
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md
@@ -272,7 +272,9 @@ items:
                   - name: Azure のネットワーク セキュリティに関するベスト プラクティス
                     href: /azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                   - name: Azure で運用可能なセキュリティに関するベスト プラクティス
-                    href: /azure/security/fundamentals/operational-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: パートナー ランディング ゾーン
+            href: ready/landing-zone/partner-landing-zone.md
           - name: コードとしてのインフラストラクチャ理論
             items:
               - name: ランディング ゾーンのリファクター

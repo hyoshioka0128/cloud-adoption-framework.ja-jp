@@ -8,12 +8,12 @@ author: JanetCThomas
 ms.author: janet
 ms.date: 05/04/2020
 ms.subservice: overview
-ms.openlocfilehash: a461a79657e52680b137ba6cc78541092faf73b6
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 63eb1694e24f1ef8041d2e08e2328314b273915c
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279099"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662119"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>クラウド導入フレームワークの概要
 
@@ -34,7 +34,7 @@ ms.locfileid: "88279099"
 | [信頼性を向上させるために適切なコントロールを適用する必要があります](./reliability.md)                   | このファースト ステップ ガイドに従うと、構成、リソース組織、セキュリティ ベースライン、またはリソース保護ポリシーの不整合に関連する中断を最小限に抑えることができます。 |
 | [企業全体のパフォーマンスを確保する必要があります](./performance.md)                               | このファースト ステップ ガイドは、企業全体のパフォーマンスを維持するためのプロセスを確立するのに役立ちます。                               |
 | [組織を調整する必要があります](./org-alignment.md)                               | このファースト ステップ ガイドは、適切に編成された組織の構造を確立するのに役立ちます。                               |
-| [クラウド戦略チームの構築を検討しています](./team/cloud-strategy.md)     | このガイドは、戦略チームが必要かどうかを判断するために役立ちます。また、そのチームの作業内容の概要を示します。                                |
+| [クラウド戦略チームの構築を検討しています](./team/cloud-strategy.md)     | このガイドは、戦略チームが必要かどうか判断するために役立ちます。また、そのチームの作業内容の概要を示します。                                |
 | [クラウド導入チームの構築を検討しています](./team/cloud-adoption.md)     | このガイドでは、ニーズに適した種類の導入チームを判断するために役立つ手順について説明します。              |
 | [クラウド ガバナンス チームの構築を検討しています&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](./team/cloud-governance.md) | このガイドは、リスクとリスクの許容範囲を評価および管理するガバナンス チームを構築するのに役立ちます。                                         |
 | [クラウド運用チームの構築を検討しています](./team/cloud-operations.md) | このガイドは、従来の IT 運用と資産に関連する問題の監視、解決、および修復に焦点を当てるチームを確立するために役立ちます。 |
