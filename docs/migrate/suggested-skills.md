@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5da9fffe5d3367e32e5acc2d47accf2c6903c263
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 188719f2edf173d3d03ee81cdb62f582db1140b7
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450970"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572988"
 ---
 <!-- cSpell:ignore Getting Started -->
 
@@ -33,7 +33,7 @@ ms.locfileid: "86450970"
 - [ポートフォリオのバランスを取る](../strategy/balance-the-portfolio.md):アプリケーション ポートフォリオ全体での残高および適切な投資配分を確保します。
 - [業務上の正当な理由の構築](../strategy/cloud-migration-business-case.md):クラウド移行作業を推進する業務上の正当な理由を作成し理解します。
 - [デジタル資産の合理化](../digital-estate/rationalize.md):デジタル資産内の資産を合理化します。
-- [アプリケーション ポートフォリオの評価](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
+- [アプリケーション ポートフォリオの評価](/learn/modules/app-and-infra-migration-and-modernization):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
 - [Microsoft Azure 移行の評価と計画](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning):オンプレミスのワークロードの評価を支援するための Pluralsight コース。
 
 評価プロセス中、アーキテクトは各ワークロードのソリューションを設計します。 次のスキル習得リソースは、これらのタスクに備えてアーキテクトの準備を支援します。
@@ -46,7 +46,7 @@ ms.locfileid: "86450970"
 
 次のチュートリアルでは、移行アクティビティのチームを準備できます。
 
-- [Azure への移行](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure):Azure Site Recovery を使用して VM を Azure に移行します。
+- [Azure への移行](/azure/site-recovery/migrate-tutorial-on-premises-azure):VM の Azure への移行を目的とした Azure Migrate の使用。
 - [Azure へのワークロードのリホスト](https://www.pluralsight.com/courses/microsoft-azure-workloads-rehosting):ワークロードを Azure にリホストする方法を視聴者に説明する Pluralsight コース。
 - [Azure への物理サーバーと仮想サーバーの移行](https://www.pluralsight.com/courses/microsoft-azure-migrating-physical-virtual-servers):Azure へのサーバーの移行に関する Pluralsight コース。
 - [Azure へのデータのインポートとエクスポート](https://www.pluralsight.com/courses/microsoft-azure-import-export-data):Azure との間のデータの移動に関する Pluralsight コース。

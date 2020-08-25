@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: da60b9a2844c612f5c712f23cacabd30fbc06655
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: d0822a927afc5d316b97d227b5a2a9afec60e224
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194954"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88566681"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -76,6 +76,14 @@ Azure Expert マネージド サービス プロバイダー (MSP) では、よ�
 
 [Azure 移行プログラム (AMP)](https://azure.microsoft.com/migration/migration-program) では、技術的なスキルの構築、ステップバイステップのガイダンス、無料の移行ツール、および移行コストを削減するためのプランの組み合わせが提供されます。
 このプログラムでは、移行中の顧客の成功を改善するために、FastTrack for Azure と Azure ソリューション プロバイダーが利用されます。
+
+この短い動画を観ると、Azure 移行プログラムでできることがわかります。
+
+<!-- markdownlint-disable MD034 -->
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D1vH]
+
+<!-- markdownlint-enable MD034 -->
 
 ### <a name="azure-support"></a>Azure サポート
 

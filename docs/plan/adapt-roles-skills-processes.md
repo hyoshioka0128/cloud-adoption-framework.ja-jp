@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: bc53a552a082a2a355c07842b44f7964710d60d5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f6a9fbb151b6ed850e5e309c902b4f1b88784a70
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216352"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194906"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>既存の役割、スキル、プロセスをクラウド向けに調整する
 
@@ -53,7 +53,7 @@ IT スタッフ メンバーは、クラウド ソリューションをサポー
 
 ## <a name="next-steps"></a>次のステップ
 
-変換された役割の適切なサポートの確保はチームの作業です。 このガイダンスに従って行動するには、適切なチーム構造と参加者を特定する[組織の準備状況の概要](../organize/index.md)を確認します。
+変換された役割の適切なサポートの確保はチームの作業です。 このガイダンスに従って行動するには、適切なチーム構造と参加者を特定する組織の準備状況の概要を確認します。
 
 > [!div class="nextstepaction"]
 > [適切なチームの構造の特定](../organize/index.md)

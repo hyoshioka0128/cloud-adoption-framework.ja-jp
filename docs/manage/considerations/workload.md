@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ba2a227f0ee12322d7d306b1bad2ff3c1a325e26
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 94a4fd17a9c9307afb40b35f033c44ff6102b091
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785244"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571526"
 ---
 # <a name="workload-operations-in-cloud-management"></a>クラウド管理におけるワークロードの運用
 
@@ -94,11 +94,11 @@ ms.locfileid: "84785244"
 - **管理:** 運用環境でシステムを継続的に動作させる運用プロセスです。
 - **セキュリティ:** 脅威からアプリケーションとデータを保護することです。
 
-[Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) では、全体的な運用の改善を支援するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 プラットフォームの運用とワークロードの運用の両方に、重要な要素を適用します。
+[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、全体的な運用の改善を支援するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 プラットフォームの運用とワークロードの運用の両方に、重要な要素を適用します。
 
 ## <a name="next-steps"></a>次のステップ
 
-クラウド導入フレームワーク内の管理手法を十分に理解できたので、クラウド管理の原則を実装できるようになりました。 運用環境でこの手法を実行可能にするガイダンスについては、導入ライフサイクルの「[クラウド導入フレームワークにおけるクラウド管理](../index.md)」を参照してください。
+クラウド導入フレームワーク内の管理手法を十分に理解できたので、クラウド管理の原則を実装できるようになりました。 運用環境内でこの手法を実行可能にする方法について説明します。
 
 > [!div class="nextstepaction"]
 > [この手法を適用する](../index.md)

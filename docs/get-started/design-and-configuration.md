@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a4777d30c6719842d6d866879ac7d87bc67050df
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: cddaf19da87112c43ae9834aa21736488c51abb4
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076571"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196015"
 ---
 # <a name="get-started-design-and-configuration"></a>作業を開始しましょう。設計と構成
 
@@ -30,7 +30,7 @@ ms.locfileid: "85076571"
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を使用して、動機、ビジネス成果目標、業務上の正当な理由の概要を記録します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を使用して、動機、ビジネス成果目標、業務上の正当な理由の概要を記録します。
 
 **成果物の完成をサポートするためのガイダンス:**
 
@@ -56,7 +56,7 @@ ms.locfileid: "85076571"
 - 既存インベントリの生データ。
 - 業務上の正当な根拠を練り上げるための既存インベントリの定量分析。
 - 最初の 10 個のワークロードの定性分析。
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)内の業務上の正当な理由を更新。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)内の業務上の正当な理由を更新。
 
 **成果物の完成をサポートするためのガイダンス:**
 
@@ -72,7 +72,7 @@ ms.locfileid: "85076571"
 
 ## <a name="step-3-create-a-cloud-adoption-plan"></a>手順 3:クラウド導入計画を作成する
 
-クラウド導入計画テンプレートは、プロジェクトのバックログをすばやく作成できるようになっています。 このバックログを編集して、評価結果、合理化、必要なスキル、パートナー契約を反映することができます。
+クラウド導入計画は、プロジェクトのバックログをすばやく作成できるようになっています。 このバックログを編集して、評価結果、合理化、必要なスキル、パートナー契約を反映することができます。
 
 短期的なクラウド導入計画とバックログを確認することで、クラウド プラットフォーム チームは、今後数か月間の環境のニーズを把握できます。 このバックグラウンドにより、最初のいくつかのランディング ゾーンの "完了の定義" を強化できます。
 
@@ -87,7 +87,7 @@ ms.locfileid: "85076571"
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- [クラウド導入計画のテンプレート](../plan/template.md): 基本テンプレートをデプロイします。
+- [クラウド導入計画](../plan/template.md):基本テンプレートを使用して計画を定義します。
 - [ワークロードの調整](../plan/workloads.md): バックログにワークロードを定義します。
 - [作業の調整](../plan/assets.md):バックログの資産とワークロードを調整して、優先度の高いワークロードの作業を明確に定義します。
 - [メンバーと時間の調整](../plan/iteration-paths.md): 移行するワークロードのイテレーション、ベロシティ、リリースを確立します。

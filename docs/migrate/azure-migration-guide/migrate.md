@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e398c486192f2f0606765fadf1079f7b62afe923
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: d8283cc541a98ee3b6d840e405162cff012b01e6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450800"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570285"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -46,12 +46,12 @@ Azure Migrate を使用して移行を実行するには、次の手順に従い
 1. **[すべてのサービス]** で Azure Migrate を検索します。 **[Azure Migrate]** を選択して続行します。
 1. **[ツールの追加]** を選択して移行プロジェクトを開始します。
 1. 移行をホストするサブスクリプション、リソース グループ、および地域を選択します。
-1. 次を選択します: **[評価ツールの選択]**  >  **[Azure Migrate:Server Assessment]**  >   **[次へ]** 。
+1. 次を選択します: **[評価ツールの選択]**  >  **[Azure Migrate:Server Assessment]**  >  **[次へ]** 。
 1. **[ツールの確認と追加]** を選択し、構成を確認します。 **[ツールの追加]** を選択して、移行プロジェクトの作成と選択したソリューションの登録のジョブを開始します。
 
 #### <a name="learn-more"></a>詳細情報
 
-- [Azure Migrate のチュートリアル - 物理または仮想サーバーを Azure に移行する](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate のチュートリアル - 物理または仮想サーバーを Azure に移行する](/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
 ### <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -60,7 +60,7 @@ Azure Site Recovery サービスは、オンプレミス リソースの Azure �
 以下の手順は、Site Recovery を使用して移行するプロセスの概要です。
 
 > [!TIP]
-> シナリオによっては、以下の手順は若干異なる場合があります。 詳細については、[オンプレミスのマシンの Azure への移行](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)に関する記事をご覧ください。
+> シナリオによっては、以下の手順は若干異なる場合があります。 詳細については、[オンプレミスのマシンの Azure への移行](/azure/site-recovery/migrate-tutorial-on-premises-azure)に関する記事をご覧ください。
 
 #### <a name="prepare-azure-site-recovery-service"></a>Azure Site Recovery サービスを準備する
 
@@ -103,7 +103,7 @@ Azure Site Recovery サービスは、オンプレミス リソースの Azure �
 
 詳細については、次を参照してください。
 
-- [オンプレミスのマシンを Azure に移行する](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)
+- [オンプレミスのマシンを Azure に移行する](/azure/site-recovery/migrate-tutorial-on-premises-azure)
 
 ::: zone-end
 
@@ -142,8 +142,8 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 
 詳細については、次を参照してください。
 
-- [Azure Database Migration Service の概要](https://docs.microsoft.com/azure/dms/dms-overview)
-- [Azure Database Migration Service のインスタンスを作成する](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
+- [Azure Database Migration Service の概要](/azure/dms/dms-overview)
+- [Azure Database Migration Service のインスタンスを作成する](/azure/dms/quickstart-create-data-migration-service-portal)
 - [Azure portal での Azure Migrate](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
 - [Azure portal: 移行プロジェクトを作成する](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
@@ -167,21 +167,21 @@ Data Migration Assistant は、SQL Server または Azure SQL Database の新し
 1. **[次へ]** を選択して評価を開始します。
 1. Data Migration Assistant で結果を表示します。
 
-企業では、「[DMA で企業を評価し評価レポートを統合する](https://docs.microsoft.com/sql/dma/dma-consolidatereports)」で説明されている方法に従って、複数のサーバーを評価し、レポートを結合した後、提供された Power BI レポートを使用して結果を分析することをお勧めします。
+企業では、「[DMA で企業を評価し評価レポートを統合する](/sql/dma/dma-consolidatereports)」で説明されている方法に従って、複数のサーバーを評価し、レポートを結合した後、提供された Power BI レポートを使用して結果を分析することをお勧めします。
 
 詳しい使用手順などの詳細については、以下を参照してください。
 
-- [Data Migration Assistant の概要](https://docs.microsoft.com/sql/dma/dma-overview)
-- [DMA で企業を評価し評価レポートを統合する](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
-- [Data Migration Assistant によって作成された統合評価レポートを Power BI で分析する](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport)
+- [Data Migration Assistant の概要](/sql/dma/dma-overview)
+- [DMA で企業を評価し評価レポートを統合する](/sql/dma/dma-consolidatereports)
+- [Data Migration Assistant によって作成された統合評価レポートを Power BI で分析する](/sql/dma/dma-powerbiassesreport)
 
 ### <a name="sql-server-migration-assistant"></a>SQL Server Migration Assistant
 
-Microsoft SQL Server Migration Assistant (SSMA) は、Microsoft Access、DB2、MySQL、Oracle、SAP ASE から SQL Server へのデータベース移行を自動化することを目的としたツールです。 一般的な概念は、これらのツールを使用して収集、評価、レビューを行うことですが、ソース システムごとにプロセスが異なるため、詳細な [SQL Server Migration Assistant のドキュメント](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)を確認することをお勧めします。
+Microsoft SQL Server Migration Assistant (SSMA) は、Microsoft Access、DB2、MySQL、Oracle、SAP ASE から SQL Server へのデータベース移行を自動化することを目的としたツールです。 一般的な概念は、これらのツールを使用して収集、評価、レビューを行うことですが、ソース システムごとにプロセスが異なるため、詳細な [SQL Server Migration Assistant のドキュメント](/sql/ssma/sql-server-migration-assistant)を確認することをお勧めします。
 
 詳細については、次を参照してください。
 
-- [SQL Server Migration Assistant の概要](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)
+- [SQL Server Migration Assistant の概要](/sql/ssma/sql-server-migration-assistant)
 
 ### <a name="database-experimentation-assistant"></a>Database Experimentation Assistant
 
@@ -195,7 +195,7 @@ Database Experimentation Assistant には、次のワークフロー アクテ�
 
 詳細については、次を参照してください。
 
-- [Database Experimentation Assistant の概要](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
+- [Database Experimentation Assistant の概要](/sql/dea/database-experimentation-assistant-overview)
 
 ### <a name="azure-cosmos-db-data-migration-tool"></a>Azure Cosmos DB データ移行ツール
 
@@ -203,7 +203,7 @@ Azure Cosmos DB データ移行ツールでは、さまざまなソースから 
 
 詳細については、次を参照してください。
 
-- [Azure Cosmos DB データ移行ツール](https://docs.microsoft.com/azure/cosmos-db/import-data)
+- [Azure Cosmos DB データ移行ツール](/azure/cosmos-db/import-data)
 
 <!-- markdownlint-disable MD025 -->
 
@@ -245,7 +245,7 @@ Movere は、クラウド移行の計画と IT 環境の継続的な最適化、
 
 NoSQL データベースの要件に合わせて Azure Cosmos DB の移行をサポートするために、多様で経験豊富なシステム インテグレーターのパートナーやツールから選択できます。
 
-[詳細情報](https://docs.microsoft.com/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+[詳細情報](/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
 [Azure Migration Center](https://azure.microsoft.com/migration/support) では、移行シナリオに合わせてすぐに使えるパートナー テクノロジ ソリューションを提供する組織を見つけたり、サード パーティのその他の移行ツールやサポート サービスの詳細を確認したりできます。
 
@@ -255,14 +255,14 @@ NoSQL データベースの要件に合わせて Azure Cosmos DB の移行をサ
 
 追跡も管理もされていないプロジェクトでは、問題が発生しやすくなります。 確実に成功を収めるためには、お客様がプロジェクト管理ツールを使用することが重要であると Microsoft では考えています。 利用可能なさまざまなツールがあり、組織のプロジェクト マネージャーが気に入っているツールが既にあるかもしれません。
 
-Azure DevOps は、クラウド移行時のプロジェクト管理に推奨されるツールです。 Azure DevOps の使用を高速化するために、クラウド導入フレームワークには、プロジェクト テンプレートを自動的にデプロイするためのツールが含まれています。 このテンプレートには、移行作業中に一般的に実行されるタスクが含まれています。 [クラウド導入プランと Azure DevOps](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template) の手順に従って、テンプレートをデプロイします。 これで、移行する[ワークロード](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads)と[資産](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets)を反映するようにテンプレートを変更できるようになります。
+Azure DevOps は、クラウド移行時のプロジェクト管理に推奨されるツールです。 Azure DevOps の使用を高速化するために、クラウド導入フレームワークには、プロジェクト テンプレートを自動的にデプロイするためのツールが含まれています。 このテンプレートには、移行作業中に一般的に実行されるタスクが含まれています。 [クラウド導入プランと Azure DevOps](/azure/architecture/cloud-adoption/plan/template) の手順に従って、テンプレートをデプロイします。 これで、移行する[ワークロード](/azure/architecture/cloud-adoption/plan/workloads)と[資産](/azure/architecture/cloud-adoption/plan/assets)を反映するようにテンプレートを変更できるようになります。
 
 Microsoft では以下のプロジェクト管理ツールも用意しており、これらを併用してより広範な機能を提供できます。
 
 - [Microsoft Planner](https://tasks.office.com): チームワークを組織化するためのシンプルで視覚的な方法。
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software):プロジェクトおよびポートフォリオ管理、リソース容量管理、財務管理、タイムシートおよびスケジュール管理。
 - [Microsoft Teams](https://products.office.com/microsoft-teams): チームのコラボレーションとコミュニケーションのためのツール。 Teams を Planner や他のツールと統合して、コラボレーションを強化することもできます。
-- [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops):Azure DevOps を使用するために、クラウド導入フレームワークの計画テンプレートは必要ありません。 テンプレートを使用せずにサービスを使用して、コードとしてインフラストラクチャを管理することや、作業項目とボードを使用してプロジェクト管理を実行することができます。 発展に合わせて、組織で CI/CD 機能を利用できます。
+- [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops):Azure DevOps を使用するために、クラウド導入フレームワークの計画テンプレートは必要ありません。 テンプレートを使用せずにサービスを使用して、コードとしてインフラストラクチャを管理することや、作業項目とボードを使用してプロジェクト管理を実行することができます。 発展に合わせて、組織で CI/CD 機能を利用できます。
 
 利用可能なツールはこれらに限られません。 他にも多くのサード パーティ製ツールが、プロジェクト管理コミュニティで広く使用されています。
 
@@ -278,7 +278,7 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 ここでは、クラウド導入フレームワークにおける DevOps ガイダンスのセットアップを補完する Microsoft Learn のカスタマイズされたラーニング パスの例を示します。
 
-[Azure DevOps でアプリケーションを構築する](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops):Azure Pipelines と GitHub を使って、他の人と共同でアプリケーションを構築します。 パイプラインで自動テストを実行して、コードの品質を検証します。 潜在的な脆弱性がないかどうかソース コードとサードパーティ コンポーネントをスキャンします。 アプリケーションを構築するために連携させる複数のパイプラインを定義します。 Microsoft がホストするエージェントと独自のビルド エージェントの両方を使用して、アプリケーションを構築します。
+[Azure DevOps でアプリケーションを構築する](/learn/paths/build-applications-with-azure-devops):Azure Pipelines と GitHub を使って、他の人と共同でアプリケーションを構築します。 パイプラインで自動テストを実行して、コードの品質を検証します。 潜在的な脆弱性がないかどうかソース コードとサードパーティ コンポーネントをスキャンします。 アプリケーションを構築するために連携させる複数のパイプラインを定義します。 Microsoft がホストするエージェントと独自のビルド エージェントの両方を使用して、アプリケーションを構築します。
 
 ## <a name="cost-management"></a>[コスト管理](#tab/ManageCost)
 

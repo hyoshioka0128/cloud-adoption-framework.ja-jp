@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1b1821a40df2f221855642c168e3a7bf13c56492
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: c85aec77b5d2e264ba6bc06fcce135125f82573e
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479213"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574365"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>Azure で移行ランディング ゾーンをデプロイする
 
@@ -20,10 +20,10 @@ ms.locfileid: "86479213"
 
 ## <a name="deploy-the-blueprint"></a>ブループリントをデプロイする
 
-クラウド導入フレームワークで CAF 移行ランディング ゾーン ブループリントを使用する前に、次の設計原則、前提条件、決定事項、実装ガイダンスを確認してください。 このガイダンスが目的のクラウド導入計画と整合している場合は、[デプロイ手順][deploy-sample]を使用して [CAF 移行ランディング ゾーン ブループリント](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone)をデプロイできます。
+クラウド導入フレームワークで CAF 移行ランディング ゾーン ブループリントを使用する前に、次の設計原則、前提条件、決定事項、実装ガイダンスを確認してください。 このガイダンスが目的のクラウド導入計画と整合している場合は、デプロイ手順を使用して、[CAF 移行ランディング ゾーン ブループリント](/azure/governance/blueprints/samples/caf-migrate-landing-zone)をデプロイできます。
 
 > [!div class="nextstepaction"]
-> [ブループリント サンプルをデプロイする][deploy-sample]
+> [ブループリント サンプルをデプロイする](/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy)
 
 ## <a name="design-principles"></a>設計原則
 
@@ -41,17 +41,17 @@ ms.locfileid: "86479213"
 
 ### <a name="identity"></a>ID
 
-この実装オプションでは、[ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に従って、ターゲット サブスクリプションが既に Azure Active Directory インスタンスに関連付けられている必要があります
+この実装オプションでは、[ID 管理のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)に従って、ターゲット サブスクリプションが既に Azure Active Directory インスタンスに関連付けられている必要があります
 
 ### <a name="network-topology-and-connectivity"></a>ネットワーク トポロジと接続
 
-この実装オプションでは、ゲートウェイ、ファイアウォール、ジャンプボックス、ランディング ゾーンのサブネットを使用して仮想ネットワークが作成されます。 次のステップの繰り返しとして、チームは[ネットワーク関連の意思決定ガイド](../considerations/networking-options.md)に従い、[ネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に沿って、ゲートウェイ サブネットと他のネットワークとの間に適切な形式の接続を実装します。
+この実装オプションでは、ゲートウェイ、ファイアウォール、ジャンプボックス、ランディング ゾーンのサブネットを使用して仮想ネットワークが作成されます。 次のステップの繰り返しとして、チームは[ネットワーク関連の意思決定ガイド](../considerations/networking-options.md)に従い、[ネットワーク セキュリティのベスト プラクティス](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)に沿って、ゲートウェイ サブネットと他のネットワークとの間に適切な形式の接続を実装します。
 
 ### <a name="resource-organization"></a>リソースの編成
 
 この実装オプションでは、特定のリソース グループによって定義されたワークロードに合わせてリソースが編成される、単一のランディング ゾーンが作成されます。 リソース編成に対するこのミニマリスト アプローチを選択すると、チームのクラウド運用モデルがより明確に定義されるまで、リソース編成の技術的な決定が延期されます。
 
-このアプローチは、クラウド導入作業が[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えることがないという前提に基づいています。 また、このオプションは、このランディング ゾーン内でのアーキテクチャの複雑さとセキュリティ要件が限定的であることも前提となっていいます。
+このアプローチは、クラウド導入作業が[サブスクリプションの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えることがないという前提に基づいています。 また、このオプションは、このランディング ゾーン内でのアーキテクチャの複雑さとセキュリティ要件が限定的であることも前提となっていいます。
 
 クラウド導入計画の過程でこれが変化する場合は、[ガバナンス手法](../../govern/index.md)のガイダンスを使用して、リソース組織をリファクタリングすることが必要になる場合があります。
 
@@ -62,7 +62,7 @@ ms.locfileid: "86479213"
 ガバナンスの規範の並列開発の時間を短縮するには、[ガバナンス手法](../../govern/index.md)を確認し、CAF 移行ランディング ゾーン ブループリントに加えて、[CAF 基盤ブループリント](./foundation-blueprint.md)をデプロイすることを検討します。
 
 > [!WARNING]
-> ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)ことが必要になる場合があります。
+> ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)ことが必要になる場合があります。
 
 ### <a name="operations-baseline"></a>運用ベースライン
 
@@ -71,7 +71,7 @@ ms.locfileid: "86479213"
 運用ベースラインの並列開発の時間を短縮するには、[ガバナンス手法](../../manage/index.md)を確認し、[Azure サーバー管理ガイド](../../manage/azure-server-management/index.md)をデプロイすることを検討します。
 
 > [!WARNING]
-> 運用ベースラインが開発されると、リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)ことが必要になる場合があります。
+> 運用ベースラインが開発されると、リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)ことが必要になる場合があります。
 
 ### <a name="business-continuity-and-disaster-recovery-bcdr"></a>ビジネス継続性とディザスター リカバリー (BCDR)
 
@@ -81,7 +81,7 @@ ms.locfileid: "86479213"
 
 この初期ランディング ゾーンには、次の前提条件または制約が含まれています。 これらの前提条件がご自分の環境の制約と一致する場合、このブループリントを使用して最初のランディング ゾーンを作成することができます。 このブループリントは、固有の制約を満たすランディング ゾーン ブループリントを作成するために拡張することもできます。
 
-- **サブスクリプションの制限**: この導入の取り組みでは、[サブスクリプションの制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えることは予想されていません。
+- **サブスクリプションの制限**: この導入の取り組みでは、[サブスクリプションの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits)を超えることは予想されていません。
 - **コンプライアンス:** このランディング ゾーンではサード パーティのコンプライアンス要件は必要ありません。
 - **アーキテクチャの複雑さ:** アーキテクチャの複雑さによって、追加の運用サブスクリプションが常に必要になるわけではありません。
 - **共有サービス:** Azure の既存の共有サービスでは、このサブスクリプションをハブ アンド スポーク アーキテクチャのスポークのように扱うことを要求することはありません。
@@ -98,12 +98,12 @@ ms.locfileid: "86479213"
 | 移行ツール              | Azure Site Recovery がデプロイされ、Azure Migrate プロジェクトが作成されます。                | [移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | ログ記録と監視       | Operational Insights ワークスペースと診断ストレージ アカウントがプロビジョニングされます。                |                                                                                                                                                                                                                                                                                       |
 | ネットワーク                      | ゲートウェイ、ファイアウォール、ジャンプボックス、ランディング ゾーンのサブネットを持つ仮想ネットワークが作成されます。  | [ネットワーク関連の意思決定](../considerations/networking-options.md)                                                                                                                                                                                                                       |
-| ID                     | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。 | [ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
+| ID                     | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。 | [ID 管理のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) |
 | ポリシー                       | このブループリントでは現在、Azure ポリシーを適用しないことを想定しています。                        |                                                                                                                                                                                                                                                                                       |
 | サブスクリプション デザイン          | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [初期サブスクリプションを作成する](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | リソース グループ              | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [サブスクリプションのスケーリング](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
 | 管理グループ            | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [サブスクリプションを整理および管理する](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
-| Data                         | 該当なし                                                                                               | [Azure で正しい SQL Server のオプションを選択する](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)および [Azure データ ストア ガイダンス](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                       |
+| Data                         | 該当なし                                                                                               | [Azure で正しい SQL Server のオプションを選択する](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)および [Azure データ ストア ガイダンス](/azure/architecture/guide/technology-choices/data-store-overview)                       |
 | ストレージ                      | 該当なし                                                                                               | [Azure Storage ガイダンス](../considerations/storage-options.md)                                                                                                                                                                                                                        |
 | 名前付けとタグ付けの標準 | 該当なし                                                                                               | [名前付けとタグ付けのベスト プラクティス](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
 | コスト管理              | 該当なし                                                                                               | [コストの追跡](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
@@ -111,20 +111,16 @@ ms.locfileid: "86479213"
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>ランディング ゾーンをカスタマイズまたはデプロイする
 
-デプロイまたはカスタマイズの詳細については、[Azure Blueprints サンプル][deploy-sample]のページで、CAF 移行ランディング ゾーン ブループリントの参照サンプルを参照し、ダウンロードしてください。
+デプロイまたはカスタマイズの詳細については、Azure Blueprint サンプルで、CAF 移行ランディング ゾーン ブループリントの参照サンプルを参照し、ダウンロードしてください。
 
 > [!div class="nextstepaction"]
-> [ブループリント サンプルをデプロイする][deploy-sample]
+> [ブループリント サンプルをデプロイする](/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy)
 
 このブループリントに対して行うカスタマイズまたは結果として得られるランディング ゾーンのガイダンスについては、「[ランディング ゾーンに関する考慮事項](../considerations/index.md)」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 
-最初のランディング ゾーンをデプロイしたら、[ランディング ゾーンを拡張する](../considerations/index.md)ことができます
+最初のランディング ゾーンをデプロイしたら、ランディング ゾーンを拡張することができます。
 
 > [!div class="nextstepaction"]
 > [ランディング ゾーンを展開する](../considerations/index.md)
-
-<!-- links -->
-
-[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy

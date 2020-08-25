@@ -1,5 +1,5 @@
 ---
-title: 'クラウド監視ガイド: アラート'
+title: クラウドの監視とアラート
 description: Microsoft Azure で System Center Operations Manager や Azure Monitor をどのようなときに使用すべきかを、Azure 向けのクラウド導入フレームワークを使用して学習します。
 author: MGoedtel
 ms.author: magoedte
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 9eab764cf3c5ce1aa36a26a8b3608959cfa5ef04
-ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
+ms.openlocfilehash: b0f631a91523117e8acfa4a95ba446a5f87d493a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805479"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571152"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -62,13 +62,13 @@ Azure Monitor のみを使用している場合は、速度、コスト、およ
 
 Azure Monitor には 4 種類のアラートがあり、それぞれ、データが保存されているリポジトリとある程度関連性があります。
 
-- [メトリック アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric):Azure Monitor のメトリック データに関するアラート。 アラートは、監視対象の値がユーザー定義のしきい値を超えたとき、そしてその後、値が "通常" 状態に戻るときに発生します。
+- [メトリック アラート](/azure/azure-monitor/platform/alerts-metric):Azure Monitor のメトリック データに関するアラート。 アラートは、監視対象の値がユーザー定義のしきい値を超えたとき、そしてその後、値が "通常" 状態に戻るときに発生します。
 
-- [ログ クエリ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query):Application Insights または Azure Monitor ログのログ データに関するアラートに使用できます。 クロスワークスペース クエリに基づいて警告することもできます。
+- [ログ クエリ アラート](/azure/azure-monitor/platform/alerts-log-query):Application Insights または Azure Monitor ログのログ データに関するアラートに使用できます。 クロスワークスペース クエリに基づいて警告することもできます。
 
-- [アクティビティ ログ アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log):Azure Service Health データを除く、アクティビティ ログ内の項目に関するアラート。
+- [アクティビティ ログ アラート](/azure/azure-monitor/platform/alerts-activity-log):Azure Service Health データを除く、アクティビティ ログ内の項目に関するアラート。
 
-- [Azure Service Health アラート](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications):停止や予定されている計画メンテナンスなど、アクティビティ ログからの Azure Service Health の問題に対してのみ使用される特別な種類のアラートです。 この種類のアラートは、Azure Monitor するコンパニオン サービスである [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) を使用して構成されることに注意してください。
+- [Azure Service Health アラート](/azure/azure-monitor/platform/alerts-activity-log-service-notifications):停止や予定されている計画メンテナンスなど、アクティビティ ログからの Azure Service Health の問題に対してのみ使用される特別な種類のアラートです。 この種類のアラートは、Azure Monitor するコンパニオン サービスである [Azure Service Health](/azure/service-health/service-health-overview) を使用して構成されることに注意してください。
 
 ### <a name="enable-alerting-through-partner-tools"></a>パートナー ツールによるアラートを有効にする
 
@@ -78,7 +78,7 @@ Azure Monitor には、他の監視プラットフォームや、ServiceNow な�
 
 ### <a name="specialized-azure-monitoring-offerings"></a>特殊な Azure 監視オファリング
 
-[管理ソリューション](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory)は一般に、データを Azure Monitor ログに格納します。 2 つの例外は、Azure Monitor for VMs と Azure Monitor for Containers です。 次の表では、特定のデータ型とその格納場所に基づくアラートのエクスペリエンスについて説明します。
+[管理ソリューション](/azure/azure-monitor/insights/solutions-inventory)は一般に、データを Azure Monitor ログに格納します。 2 つの例外は、Azure Monitor for VMs と Azure Monitor for Containers です。 次の表では、特定のデータ型とその格納場所に基づくアラートのエクスペリエンスについて説明します。
 
 | 解決策 | データ型 | アラート動作 |
 |---| ---| --- |
@@ -103,7 +103,7 @@ Azure Monitor には、他の監視プラットフォームや、ServiceNow な�
 
 - 診断の拡張機能と Log Analytics エージェントの両方を同じ VM 上で実行すると、Azure Monitor でそれをメトリックとログしてストレージに送信できます。 その後はより迅速にアラートを送信できますが、ゲスト オペレーティング システムのデータは、他のテレメトリと組み合わせると、より複雑なクエリの一部としても使用することもできます。
 
-**オンプレミスのデータのインポート:** Azure とオンプレミスで実行されている複数のコンピューターにわたってクエリと監視を行おうとしている場合は、Log Analytics エージェントを使用してゲスト オペレーティング システムのデータを収集できます。 その後、Azure Monitor で "[ログからメトリックへ](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs)" と呼ばれる機能を使用して、メトリックとして収集して保存できます。 この方法によって、Azure Monitor ログへのインジェスト プロセスの一部がバイパスされるため、データがすぐに利用可能になります。
+**オンプレミスのデータのインポート:** Azure とオンプレミスで実行されている複数のコンピューターにわたってクエリと監視を行おうとしている場合は、Log Analytics エージェントを使用してゲスト オペレーティング システムのデータを収集できます。 その後、Azure Monitor で "[ログからメトリックへ](/azure/azure-monitor/platform/alerts-metric-logs)" と呼ばれる機能を使用して、メトリックとして収集して保存できます。 この方法によって、Azure Monitor ログへのインジェスト プロセスの一部がバイパスされるため、データがすぐに利用可能になります。
 
 ### <a name="minimize-alerts"></a>アラートを最小限に抑える
 
@@ -114,7 +114,7 @@ Azure Monitor for VMs を使用していない場合は、以下の機能につ�
 > [!NOTE]
 > これらの機能は、メトリック アラート、つまり Azure Monitor のメトリック データベースに送信されるデータに基づくアラートにのみ適用されます。 他の種類のアラートには機能は適用されません。 前述のように、メトリック アラートの主な目的は速度です。 5 分未満でアラートを受け取ることが主な関心事でなければ、代わりにログ クエリ アラートを使用できます。
 
-- [動的しきい値](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds):動的しきい値では、一定期間にわたってリソースのアクティビティを調べ、"通常動作" と見なすしきい値の上限と下限を作成します。 監視対象のメトリックがこれらのしきい値の範囲外になると、アラートを受け取ります。
+- [動的しきい値](/azure/azure-monitor/platform/alerts-dynamic-thresholds):動的しきい値では、一定期間にわたってリソースのアクティビティを調べ、"通常動作" と見なすしきい値の上限と下限を作成します。 監視対象のメトリックがこれらのしきい値の範囲外になると、アラートを受け取ります。
 
 - [マルチシグナル アラート](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts):2 つの異なるリソースの種類からの 2 つの異なる入力の組み合わせを使用するメトリック アラートを作成できます。 たとえば、VM の CPU 使用率が 90 パーセントを超え、その VM をフィードしている特定の Azure Service Bus キュー内のメッセージ数が一定量を超えたときにアラートを生成する場合は、ログ クエリを作成せずにそれを実行できます。 この機能は、2 つのシグナルに対してのみ機能します。 より複雑なクエリがある場合は、メトリック データを Log Analytics ワークスペースにフィードして、ログ クエリを使用します。
 
@@ -124,7 +124,7 @@ Azure Monitor for VMs を使用していない場合は、以下の機能につ�
 
 ### <a name="limits-on-alerts"></a>アラートに関する限度
 
-[作成できるアラート数の限度](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-monitor-limits)に注意してください。 一部の限度 (すべてではありません) は、サポートに連絡して高めることができます。
+[作成できるアラート数の限度](/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-monitor-limits)に注意してください。 一部の限度 (すべてではありません) は、サポートに連絡して高めることができます。
 
 ### <a name="best-query-experience"></a>最適なクエリ エクスペリエンス
 

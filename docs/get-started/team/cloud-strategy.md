@@ -1,18 +1,18 @@
 ---
 title: 作業を開始しましょう。クラウド戦略チームを結成する
-description: ビジネス成果と合致するようにクラウド導入の取り組みを進行させ、その成功に向けて備えをするクラウド戦略チームを結成します。
+description: ビジネス成果と合致するようにクラウド導入の取り組みを進行させ、その成功に向けて準備を行うクラウド戦略チームを結成します。
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 5e9ac42087394f532e508e5d1be6a1119c3f8b9e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 9c103dc269de19880d179c07ecc6ca633388d3c8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075626"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573821"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>作業を開始しましょう。クラウド戦略チームを結成する
 
@@ -25,7 +25,7 @@ ms.locfileid: "85075626"
 ![クラウド戦略チームの結成に着手する](../../_images/get-started/strategy-team-map.png)
 
 > [!NOTE]
-> この記事では、クラウド導入プロセスにおいて主要な役割を担う "_戦略ファシリテーター_" について説明します。 この役割は、一般に、プログラム マネージャー、アーキテクト、コンサルタントが担います。 クラウド戦略チームが結成されて取り組みを開始すると、戦略ファシリテーターは、アラインメントを作成し、チームがビジネス目標に沿って取り組みを進めているかについて、一時的に説明責任を負います。 多くの場合、クラウド導入の取り組みの成功について最も詳しく状況を把握している人物が戦略ファシリテーターです。
+> この記事では、クラウド導入プロセスにおいて主要な役割を担う "*戦略ファシリテーター*" について説明します。 この役割は、一般に、プログラム マネージャー、アーキテクト、コンサルタントが担います。 クラウド戦略チームが結成されて取り組みを開始すると、戦略ファシリテーターは、アラインメントを作成し、チームがビジネス目標に沿って取り組みを進めているかについて、一時的に説明責任を負います。 多くの場合、クラウド導入の取り組みの成功について最も詳しく状況を把握している人物が戦略ファシリテーターです。
 
 ## <a name="step-1-determine-whether-a-cloud-strategy-team-is-needed"></a>手順 1:クラウド戦略チームが必要かどうかを判断する
 
@@ -55,7 +55,7 @@ ms.locfileid: "85075626"
 
 ## <a name="what-if-i-dont-need-a-cloud-strategy-team"></a>クラウド戦略チームが不要だったらどうするか
 
-クラウド戦略のニーズを満たすために必要な[クラウド戦略機能](../../organize/cloud-strategy.md)を改めて確認しましょう。 組織によっては、戦略的なニーズを満たすために専任のチームまたは仮想チーム (v チーム) は必要ありません。 [RACI (実行責任、説明責任、助言、通知) テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)で戦略の主要な責任を列挙し、それぞれチーム内のだれが担当するかを確認します。 そのすべての説明責任を 1 人の担当者が負う場合は単に、RACI テンプレート内の "クラウド戦略" をその人物の名前に置き換えてください。
+クラウド戦略のニーズを満たすために必要な[クラウド戦略機能](../../organize/cloud-strategy.md)を改めて確認しましょう。 組織によっては、戦略的なニーズを満たすために専任のチームまたは仮想チーム (v チーム) は必要ありません。 [RACI (実行責任、説明責任、助言、通知) テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)で戦略の主要な責任を列挙し、それぞれチーム内のだれが担当するかを確認します。 そのすべての説明責任を 1 人の担当者が負う場合は単に、RACI テンプレート内の "クラウド戦略" をその人物の名前に置き換えてください。
 
 ## <a name="step-2-establish-the-cloud-strategy-team"></a>手順 2:クラウド戦略チームを結成する
 
@@ -71,7 +71,7 @@ ms.locfileid: "85075626"
 - だれが適任かについては、「[クラウド戦略機能](../../organize/cloud-strategy.md)」を参照してください。
 - 想定される関係者それぞれの整合性と労力的余地を検証するには、この機能の[最小スコープ](../../organize/cloud-strategy.md#minimum-scope)と[成果物](../../organize/cloud-strategy.md#deliverable)を確認します。
 - 現在のチーム構造に基づいて適切な RACI チャートを作成するには、さまざまな [RACI の構成例](../../organize/raci-alignment.md#strategic-alignment)を確認するか、RACI テンプレートの下部にあるタブ例のいずれか 1 つを選択します。
-- その結果を [RACI テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)の `Org Alignment` ワークシートで文書化します。
+- その結果を [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)の `Org Alignment` ワークシートで文書化します。
 
 **説明責任を担う人物またはチーム:**
 
@@ -107,7 +107,7 @@ ms.locfileid: "85075626"
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)に動機を記録します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)に動機を記録します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -136,7 +136,7 @@ ms.locfileid: "85075626"
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)にビジネス成果を記録します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)にビジネス成果を記録します。
 - [ビジネス成果](../../strategy/business-outcomes/index.md):一部の財政上の成果では、コストが極端に重視される傾向があります。 目標とする成果が財務メトリックと対応関係にある場合は、極力早い段階で Cost Management のガバナンス規範に投資するのが賢明でしょう。
 - ビジネス成果と導入の技術的な取り組みとの間に存在するギャップは、[学習メトリック](../../strategy/learning-metrics.md)を利用して埋めることができます。
 
@@ -195,4 +195,4 @@ ms.locfileid: "85075626"
 
 クラウド導入機能を担当する導入チーム (または個人) と連携して、戦略と[クラウド導入機能](../../organize/cloud-adoption.md)との整合性を確保します。
 
-RACI の各パーティを明確にするクロスチーム マトリックスを作成することで、チーム間での責任を調整する方法を確認します。 [RACI スプレッドシート テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)をダウンロードして編集してください。
+RACI の各パーティを明確にするクロスチーム マトリックスを作成することで、チーム間での責任を調整する方法を確認します。 [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)をダウンロードして変更してください。

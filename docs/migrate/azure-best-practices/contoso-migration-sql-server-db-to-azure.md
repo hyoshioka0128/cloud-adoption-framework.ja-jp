@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: e341378d4d363344a36cfabb3f9b5374262d9e6f
-ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
+ms.openlocfilehash: f4d8e485ad75cf3d5401025031fce21865bbb722
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254944"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574824"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -57,7 +57,7 @@ Contoso のクラウド チームは、さまざまな移行の目標を設定�
 
 ## <a name="solution-design"></a>ソリューション設計
 
-Contoso では、[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) を使用して、自社のデジタル資産の[移行評価](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment)を既に実行しました。
+Contoso では、[Azure Migrate](/azure/migrate/migrate-services-overview) を使用して、自社のデジタル資産の[移行評価](../..//plan/contoso-migration-assessment.md)を既に実行しました。
 
 この評価では、複数のワークロードを複数の部門に分散するという結果になりました。 移行プロジェクト全体のサイズからすると、コミュニケーション、リソース、スケジュールの計画の詳細を管理するために、完全なプロジェクト管理オフィス (PMO) が必要になります。
 
@@ -76,9 +76,9 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 移行を実行する前に、ソリューションの管理と課金の側面をサポートするために、必要な Azure 構造を整える必要があります。
 
-管理要件については、組織の構造をサポートするために、いくつかの[管理グループ](https://docs.microsoft.com/azure/governance/management-groups/overview)を作成しました。
+管理要件については、組織の構造をサポートするために、いくつかの[管理グループ](/azure/governance/management-groups/overview)を作成しました。
 
-課金要件については、各 Azure リソースに、該当する課金タグを[タグ付け](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)します。
+課金要件については、各 Azure リソースに、該当する課金タグを[タグ付け](/azure/azure-resource-manager/management/tag-resources)します。
 
 ### <a name="migration-process"></a>移行プロセス
 
@@ -131,7 +131,7 @@ Contoso では、次の手順に従ってデータベースを評価し、結果
 
 DMA からは、ターゲット環境のパフォーマンスと信頼性を向上させるための推奨事項が提供されます。これにより、スキーマ、データ、包含されていないオブジェクトをソース サーバーからターゲット サーバーに移動できます。
 
-[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-assesssqlonprem?view=sql-server-2017) に関する詳細情報をご覧ください
+[Data Migration Assistant](/sql/dma/dma-assesssqlonprem?view=sql-server-2017) に関する詳細情報をご覧ください
 
 Contoso では、DMA を使用して評価を実行し、Azure Migrate にデータを直接アップロードしました。
 
@@ -152,13 +152,13 @@ Contoso では、この情報を参考に、次のガイドラインを使用し
 
 | 移行先 | データベースの使用状況 | 詳細 | オンライン移行 | オフライン移行 | 最大サイズ | 移行ガイド |
 | --- | --- | --- | --- | ---| --- | --- |
-| Azure SQL Database (PaaS) | SQL Server (データのみ) | これらのデータベースでは、単純に、基本的なテーブル、列、ストアド プロシージャ、関数を使用します | [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)、[トランザクション レプリケーション](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15) | 1 TiB | [リンク](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
-| Azure SQL Managed Instance | SQL Server (高度な機能) | これらのデータベースでは、トリガーおよびその他の[高度な概念](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker) (カスタム .NET 型、サービス ブローカーなど) が使用されます。 | [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)、[トランザクション レプリケーション](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15)、[ネイティブのバックアップと復元](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started-restore) | 2 TiB - 8 TiB | [リンク](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online) |
-| Azure Virtual Machines 上の SQL Server (IaaS) | SQL Server (サードパーティによる統合) | データベースのアクティビティをサポートするため、SQL Server には、[サポートされていない SQL Managed Instance 機能](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker) (インスタンス間のサービス ブローカー、暗号化プロバイダー、バッファー プール、100 未満の互換性レベル、データベース ミラーリング、FILESTREAM、PolyBase、ファイル共有や外部スクリプトや拡張ストアド プロシージャへのアクセスが必要な機能、その他)、またはサードパーティ製ソフトウェアがインストールされている必要があります。 | [トランザクション レプリケーション](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15)、[スナップショット レプリケーション](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication)、[ネイティブのバックアップと復元](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started-restore)、物理マシンから VM への変換 | 4 GiB - 64 TiB | [リンク](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql) |
+| Azure SQL Database (PaaS) | SQL Server (データのみ) | これらのデータベースでは、単純に、基本的なテーブル、列、ストアド プロシージャ、関数を使用します | [Data Migration Assistant](/sql/dma/dma-overview)、[トランザクション レプリケーション](/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](/sql/tools/bcp-utility?view=sql-server-ver15) | 1 TiB | [リンク](/azure/dms/tutorial-sql-server-to-azure-sql) |
+| Azure SQL Managed Instance | SQL Server (高度な機能) | これらのデータベースでは、トリガーおよびその他の[高度な概念](/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker) (カスタム .NET 型、サービス ブローカーなど) が使用されます。 | [Data Migration Assistant](/sql/dma/dma-overview)、[トランザクション レプリケーション](/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](/sql/tools/bcp-utility?view=sql-server-ver15)、[ネイティブのバックアップと復元](/azure/sql-database/sql-database-managed-instance-get-started-restore) | 2 TiB - 8 TiB | [リンク](/azure/dms/tutorial-sql-server-managed-instance-online) |
+| Azure Virtual Machines 上の SQL Server (IaaS) | SQL Server (サードパーティによる統合) | データベースのアクティビティをサポートするため、SQL Server には、[サポートされていない SQL Managed Instance 機能](/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker) (インスタンス間のサービス ブローカー、暗号化プロバイダー、バッファー プール、100 未満の互換性レベル、データベース ミラーリング、FILESTREAM、PolyBase、ファイル共有や外部スクリプトや拡張ストアド プロシージャへのアクセスが必要な機能、その他)、またはサードパーティ製ソフトウェアがインストールされている必要があります。 | [トランザクション レプリケーション](/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](/sql/tools/bcp-utility?view=sql-server-ver15)、[スナップショット レプリケーション](/azure/sql-database/sql-database-managed-instance-transactional-replication)、[ネイティブのバックアップと復元](/azure/sql-database/sql-database-managed-instance-get-started-restore)、物理マシンから VM への変換 | 4 GiB - 64 TiB | [リンク](/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql) |
 
-データベースの数が多いため、Contoso ではプロジェクト管理オフィス (PMO) を作成して、すべてのデータベース移行インスタンスを追跡しました。 各ビジネスおよびアプリケーション チームには、[説明責任と責任](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/)が割り当てられました。
+データベースの数が多いため、Contoso ではプロジェクト管理オフィス (PMO) を作成して、すべてのデータベース移行インスタンスを追跡しました。 各ビジネスおよびアプリケーション チームには、[説明責任と責任](../..//migrate/migration-considerations/assess/index.md)が割り当てられました。
 
-Contoso では、[ワークロードの準備状況のレビュー](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/evaluate)も実行しました。 このレビューでは、インフラストラクチャ、データベース、ネットワークのコンポーネントについて調査しました。
+Contoso では、[ワークロードの準備状況のレビュー](../..//migrate/migration-considerations/assess/evaluate.md)も実行しました。 このレビューでは、インフラストラクチャ、データベース、ネットワークのコンポーネントについて調査しました。
 
 #### <a name="step-5-test-migrations"></a>手順 5:移行のテスト
 
@@ -168,7 +168,7 @@ Contoso では、[ワークロードの準備状況のレビュー](https://docs
 
 IaaS ベースのワークロードについては、必要なすべてのサードパーティ製ソフトウェアを事前に設定しました。
 
-テスト移行の後、Contoso ではさまざまな Azure [コスト見積もりツール](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/estimate)を使用して、移行の将来の運用コストをより正確に把握することができました。
+テスト移行の後、Contoso ではさまざまな Azure [コスト見積もりツール](../..//migrate/migration-considerations/assess/estimate.md)を使用して、移行の将来の運用コストをより正確に把握することができました。
 
 #### <a name="step-6-migration"></a>手順 6:移行
 
@@ -193,21 +193,21 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 
 #### <a name="security"></a>セキュリティ
 
-- Contoso では、新しい Azure データベース ワークロードを確実にセキュリティで保護する必要があります。 [詳細については、こちらを参照してください](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)。
+- Contoso では、新しい Azure データベース ワークロードを確実にセキュリティで保護する必要があります。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-security-overview)。
 - 特に、ファイアウォールと仮想ネットワークの構成を確認する必要があります。
-- [Private Link](https://docs.microsoft.com/azure/azure-sql/database/private-endpoint-overview) をセットアップして、すべてのデータベース トラフィックが Azure とオンプレミスのネットワーク内に保持されるようにします。
-- Azure SQL Database のための [Azure Advanced Threat Protection](https://docs.microsoft.com/azure/azure-sql/database/threat-detection-overview) を有効にします。
+- [Private Link](/azure/azure-sql/database/private-endpoint-overview) をセットアップして、すべてのデータベース トラフィックが Azure とオンプレミスのネットワーク内に保持されるようにします。
+- Azure SQL Database のための [Azure Advanced Threat Protection](/azure/azure-sql/database/threat-detection-overview) を有効にします。
 
 #### <a name="backups"></a>バックアップ
 
 - geo リストアを使用して、Azure データベースが確実にバックアップされるようにします。 これにより、リージョンで障害が発生した場合に、ペアのリージョンでバックアップを使用できるようになります。
-- **重要:** Azure リソースが削除されないようにするため、[リソース ロック](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources)を保持していることを確認します。 削除したサーバーを復元することはできません。
+- **重要:** Azure リソースが削除されないようにするため、[リソース ロック](/azure/azure-resource-manager/management/lock-resources)を保持していることを確認します。 削除したサーバーを復元することはできません。
 
 #### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - 多くの Azure データベース ワークロードはスケールアップまたはスケールダウンできるので、ニーズを満たすだけでなく、コストを最小限に抑えるために、サーバーとデータベースのパフォーマンスを監視することが重要です。
 - CPU とストレージの両方にコストが関連付けられています。 選択できる価格レベルはいくつかあります。 データ ワークロードに適した価格プランが選択されていることを確認してください。
-- [エラスティック プール](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers-dtu)は、互換性のあるリソース使用状況パターンを持つデータベースに対して実装されます。
+- [エラスティック プール](/azure/sql-database/sql-database-service-tiers-dtu)は、互換性のあるリソース使用状況パターンを持つデータベースに対して実装されます。
 - 各読み取りレプリカは、選択されたコンピューティングとストレージに基づいて課金されます
 - 予約容量を使用してコストを節約します。
 

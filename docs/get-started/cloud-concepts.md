@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 16d808b09b0631f95445288dcf856c8aca0a0965
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 619dd5197bcea95d83b27c166e0f4238abd1a988
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753007"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573940"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>作業を開始しましょう。基本的なアラインメントに関する決定事項を理解し、文書化する
 
@@ -50,7 +50,7 @@ Azure は、Azure を実装する場合の技術戦略で深く話し合われ�
 - [基本概念](../ready/considerations/fundamental-concepts.md)は、クラウドの導入を開始する前に、Azure の主要なトピックについて理解するのに役立ちます。
 - [運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)とビジネス アラインメント アプローチは、クラウド運用チームに移されたワークロードと資産を理解するのに役立ちます。
 - [クラウド導入計画](../plan/plan-intro.md)では、クラウドに導入予定のワークロードと資産のバックログが提供されます。
-- [デジタル資産分析](../digital-estate/approach.md)は、クラウドに導入予定の既存のワークロードと資産を文書化するためのアプローチです。 Azure では、デジタル資産は [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-support-matrix) と呼ばれるツールで最も適切に表現されます。
+- [デジタル資産分析](../digital-estate/approach.md)は、クラウドに導入予定の既存のワークロードと資産を文書化するためのアプローチです。 Azure では、デジタル資産は [Azure Migrate](/azure/migrate/migrate-support-matrix) と呼ばれるツールで最も適切に表現されます。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -89,9 +89,9 @@ Azure は、Azure を実装する場合の技術戦略で深く話し合われ�
 **成果物の完遂をサポートするうえでのガイダンス:**
 
 - [名前付けとタグ付けの標準](../ready/azure-best-practices/naming-and-tagging.md)を作成します。
-- 意思決定を追跡できるよう、[名前付けおよびタグ付け規則のブック](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx)に入力します。
-- [Azure の既存のタグを確認して更新します](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)。
-- [Azure にタグ付けポリシーを適用します](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-policies)。
+- 決定事項を追跡するために、[名前付けおよびタグ付け規則の追跡テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/naming-and-tagging-conventions-tracking-template.xlsx)に入力します。
+- [Azure の既存のタグを確認して更新します](/azure/azure-resource-manager/management/tag-resources)。
+- [Azure にタグ付けポリシーを適用します](/azure/azure-resource-manager/management/tag-policies)。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -118,7 +118,7 @@ Azure は、Azure を実装する場合の技術戦略で深く話し合われ�
 - [仕様では 2 つのサブスクリプション](../ready/azure-best-practices/initial-subscriptions.md)から開始します。 共有サービスやサンドボックス サブスクリプションなどの一般的なエンタープライズ ニーズに対応するために、基本サブスクリプションの設計を追加します。
 - クラウド導入計画をサポートするために追加のサブスクリプションが必要な場合は、[複数のサブスクリプションを管理](../ready/azure-best-practices/organize-subscriptions.md)します。
 - [ポートフォリオ階層に基づいて明確な境界](../reference/fundamental-concepts/hierarchy-azure-tools.md#organizing-the-hierarchy-in-azure)を確立します。
-- 組織の戦略に準拠するように、必要に応じて[サブスクリプション間でリソース グループと資産を移動](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)します。
+- 組織の戦略に準拠するように、必要に応じて[サブスクリプション間でリソース グループと資産を移動](/azure/azure-resource-manager/management/move-resource-group-and-subscription)します。
 
 <!-- markdownlint-disable MD033 -->
 <br>

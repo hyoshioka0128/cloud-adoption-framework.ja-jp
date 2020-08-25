@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: de561a28e1b6b0bf6253bcb082ded110e84572c3
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 7e8ba47fdd221ea11cca385730e25b961c0bd10f
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788151"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194656"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>ビジネス成果テンプレートの使用方法
 
 [ビジネスの成果の概要](./index.md)で説明したように、ビジネス上の会話と技術的な会話の間のギャップを埋めることが困難な場合があります。 この簡単なテンプレートは、チームが後でお客様の変革体験戦略の開発において使うことになるビジネスの成果を一様に把握するために役立つように設計されています。
 
-[ビジネス成果テンプレート スプレッドシート](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx)をダウンロードし、ビジネスの成果のブレインストーミングと追跡を開始します。 引き続き、テンプレートの使用方法について説明します。 エグゼクティブの会話で上る可能性のある潜在的なビジネスの成果に関する意見については、[ビジネスの成果のセクション](./index.md)を確認してください。
+[ビジネス成果テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/business-outcome-template.xlsx)をダウンロードし、ビジネスの成果のブレインストーミングと追跡を開始します。 引き続き、テンプレートの使用方法について説明します。 エグゼクティブの会話で上る可能性のある潜在的なビジネスの成果に関する意見については、[ビジネスの成果のセクション](./index.md)を確認してください。
 
 ## <a name="use-the-business-outcome-template"></a>ビジネス成果テンプレートを使用する
 
@@ -60,7 +60,7 @@ ms.locfileid: "84788151"
 
 ## <a name="next-steps"></a>次のステップ
 
-意味のあるラーニング メトリックと[技術的な取り組みの整合](../learning-metrics.md)を確認する。
+意味のあるラーニング メトリックと技術的な取り組みの整合を確認する。
 
 > [!div class="nextstepaction"]
 > [技術的な取り組みの整合](../learning-metrics.md)

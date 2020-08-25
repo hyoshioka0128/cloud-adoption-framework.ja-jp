@@ -1,18 +1,18 @@
 ---
 title: 作業を開始しましょう。クラウド運用チームの構築
-description: このガイドは、クラウド運用チームが自分たちの担当するスコープ、成果物、機能を理解するのに役立ちます。
+description: このガイドは、クラウド運用チームが、自ら担当するスコープ、成果物、機能を理解するのに役立ちます。
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ed6a3c8e0356b904a3114382b674aafbcc2f7dac
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: b609163e6e6239cc0b346842358ab83799630b02
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450409"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573855"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>作業を開始しましょう。クラウド運用チームを結成する
 
@@ -29,7 +29,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 **成果物:**
 
 - クラウド運用チームが必要かどうかを判断します。
-- "_実行責任、説明責任、助言、通知 (RACI)_ " の関係者を明確にするクロスチーム マトリックスを作成することにより、チーム間で責任を調整します。 [RACI テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)の `Org Alignment` ワークシートで、決定事項と責任者を文書化します。
+- "*実行責任、説明責任、助言、通知 (RACI)* " の関係者を明確にするクロスチーム マトリックスを作成することにより、チーム間で責任を調整します。 [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)の `Org Alignment` ワークシートで、決定事項と責任者を文書化します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -54,8 +54,8 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- クラウド戦略チームのメンバーと共に会社の[戦略と計画テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を確認して、チームの動機、メトリック、戦略を把握します。
-- クラウド導入チームのメンバーと共に会社の[クラウド導入計画テンプレート](../../plan/template.md)を確認して、タイムラインと優先順位を把握します。
+- クラウド戦略チームのメンバーと共に会社の[戦略と計画テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を確認して、チームの動機、メトリック、戦略を把握します。
+- タイムラインと優先順位を把握するには、クラウド導入チームのメンバーと共に会社の[クラウド導入計画](../../plan/template.md)を確認します。
 - [運用管理のブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)の開発を開始して、チームがビジネスで確立している運用の要件とコミットメントを把握します。
 
 <!-- markdownlint-disable MD033 -->
@@ -63,7 +63,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
-| <li>  クラウド運用チーム | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
+| <li> クラウド運用チーム | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウド ガバナンス チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
 
 ## <a name="step-3-establish-a-cadence-with-other-teams"></a>手順 3:他のチームとのミーティングの頻度を確立する
 
@@ -185,7 +185,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 **成果物の完成をサポートするためのガイダンス:**
 
-- [新しいワークロードとリソースをオンボードする](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)ためのプロセスを確立します。
+- [新しいワークロードとリソースをオンボードする](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)ためのプロセスを確立します。
 
 <!-- markdownlint-disable MD033 -->
 
@@ -202,4 +202,4 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 - [クラウドのセンター オブ エクセレンス機能](../../organize/cloud-center-of-excellence.md)
 - [組織のアンチパターン: サイロと封土](../../organize/fiefdoms-silos.md)
 
-RACI の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整します。 [RACI スプレッドシート テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)をダウンロードして編集してください。
+RACI の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整します。 [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)をダウンロードして変更してください。

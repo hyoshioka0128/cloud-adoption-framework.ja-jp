@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7315046a8ddb1d314c11a7a2ef17ea636270e73d
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 5eeb8bb94ff0de3c1d684bdfd7523657678f9d4b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193645"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572070"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -36,7 +36,7 @@ Azure サーバー管理サービスをサーバーにオンボードするに�
 
 [Azure 管理ツールとサービス](./tools-services.md)に関する記事で説明されているすべての管理ソリューションでは、Log Analytics エージェントが Azure 仮想マシンとオンプレミスのサーバーにインストールする必要があります。 Azure Policy を使用すると Azure VM を大規模にオンボードできます。 エージェントがお使いの Azure VM にインストールされ、適切な Log Analytics ワークスペースに接続されるようにポリシーを割り当てます。
 
-Azure Policy には、Log Analytics エージェントと [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) を含む[組み込みのポリシー イニシアチブ](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives)があります。これは Azure Monitor for VMs に必要です。
+Azure Policy には、Log Analytics エージェントと [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) を含む[組み込みのポリシー イニシアチブ](/azure/governance/policy/concepts/definition-structure#initiatives)があります。これは Azure Monitor for VMs に必要です。
 
 <!-- TODOBACKLOG: Add these when available.
 **Preview:** Enable Azure Monitor for virtual machine scale sets.
@@ -44,7 +44,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
  -->
 
 > [!NOTE]
-> Azure 監視用のさまざまなエージェントについて詳しくは、「[Azure 監視エージェントの概要](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview)」をご覧ください。
+> Azure 監視用のさまざまなエージェントについて詳しくは、「[Azure 監視エージェントの概要](/azure/azure-monitor/platform/agents-overview)」をご覧ください。
 
 ### <a name="assign-policies"></a>ポリシーの割り当て
 
@@ -54,7 +54,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
     ![ポータルのポリシー インターフェイスのスクリーン ショット](./media/onboarding-at-scale1.png)
 
-2. **[ポリシーの割り当て]** ページで、省略記号 (…) を選択した後、管理グループまたはサブスクリプションを選択して **[スコープ]** を設定します。 任意でリソース グループを選択します。 次に、 **[スコープ]** ページの下部にある **[選択]** を選択します。 スコープによって、ポリシーの割り当て先のリソースまたはリソース グループが決まります。
+2. **[ポリシーの割り当て]** ページで、省略記号 (…) を選択した後、管理グループまたはサブスクリプションを選択して、 **[スコープ]** を設定します。 任意でリソース グループを選択します。 次に、 **[スコープ]** ページの下部にある **[選択]** を選択します。 スコープによって、ポリシーの割り当て先のリソースまたはリソース グループが決まります。
 
 3. **[ポリシー定義]** の横にある省略記号 **[...]** を選択して、使用可能な定義の一覧を開きます。 イニシアティブ定義をフィルター処理するには、 **[検索]** ボックスに「**Azure Monitor**」と入力します。
 
@@ -66,7 +66,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
     ![ポータルのポリシー インターフェイスのスクリーン ショット](./media/onboarding-at-scale3.png)
 
-6. **[マネージド ID の場所]** チェック ボックスを選択します。 このポリシーの種類が [`DeployIfNotExists`](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists) である場合、このポリシーをデプロイするにはマネージド ID が必要になります。 ポータルでは、チェック ボックスの選択で指示されたとおりにアカウントが作成されます。
+6. **[マネージド ID の場所]** チェック ボックスを選択します。 このポリシーの種類が [`DeployIfNotExists`](/azure/governance/policy/concepts/effects#deployifnotexists) である場合、このポリシーをデプロイするにはマネージド ID が必要になります。 ポータルでは、チェック ボックスの選択で指示されたとおりにアカウントが作成されます。
 
 7. **[割り当て]** を選択します。
 
@@ -77,7 +77,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 > [!NOTE]
 > Azure サーバー管理サービスをサーバーにオンボードする前に、必須の [Log Analytics ワークスペースと Azure Automation アカウント](./prerequisites.md#create-a-workspace-and-automation-account)を作成します。
 
-オンプレミスのサーバーの場合、[Log Analytics エージェントと Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) を手動でダウンロードしてインストールし、適切なワークスペースに接続するようにそれらを構成する必要があります。 ワークスペース ID とキー情報を指定する必要があります。 この情報を取得するには、Azure portal で Log Analytics ワークスペースに移動し、 **[設定]**  >  **[詳細設定]** を選択します。
+オンプレミスのサーバーの場合、[Log Analytics エージェントと Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) を手動でダウンロードしてインストールし、適切なワークスペースに接続するようにそれらを構成する必要があります。 ワークスペース ID とキー情報を指定する必要があります。 この情報を取得するには、Azure portal で Log Analytics ワークスペースに移動し、 **[設定]**  >  **[詳細設定]** を選択します。
 
 ![Azure portal 内の Log Analytics ワークスペース詳細設定のスクリーンショット](./media/onboarding-on-premises.png)
 
@@ -87,9 +87,9 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
 ### <a name="update-management"></a>更新管理
 
-Update Management、Change Tracking、および Inventory ソリューションには、Log Analytics ワークスペースと Automation アカウントの両方が必要です。 これらのリソースが正しく構成されるように、Automation アカウントを使用してオンボードすることをお勧めします。 詳しくは、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account)」をご覧ください。
+Update Management、Change Tracking、および Inventory ソリューションには、Log Analytics ワークスペースと Automation アカウントの両方が必要です。 これらのリソースが正しく構成されるように、Automation アカウントを使用してオンボードすることをお勧めします。 詳しくは、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](/azure/automation/automation-onboard-solutions-from-automation-account)」をご覧ください。
 
-すべてのサーバーに対して Update Management ソリューションを有効にすることをお勧めします。 Azure VM とオンプレミスのサーバーでは Update Management が無料です。 Automation アカウントから Update Management を有効にした場合、ワークスペース内に[スコープ構成](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration)が作成されます。 Update Management サービスの対象マシンを含むように、スコープを手動で更新します。
+すべてのサーバーに対して Update Management ソリューションを有効にすることをお勧めします。 Azure VM とオンプレミスのサーバーでは Update Management が無料です。 Automation アカウントから Update Management を有効にした場合、ワークスペース内に[スコープ構成](/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration)が作成されます。 Update Management サービスの対象マシンを含むように、スコープを手動で更新します。
 
 既存のサーバーと今後のサーバーを対象にするには、スコープ構成を削除する必要があります。 これを行うには、Azure portal で Automation アカウントを表示します。 **[Update Management]**  >  **[コンピューターの管理]**  >  **[使用可能なマシンと今後のマシンすべてで有効にします]** を選択します。 この設定によって、ワークスペースに接続されているすべての Azure VM で Update Management を使用できます。
 
@@ -97,7 +97,7 @@ Update Management、Change Tracking、および Inventory ソリューション�
 
 ### <a name="change-tracking-and-inventory-solutions"></a>Change Tracking と Inventory のソリューション
 
-Change Tracking と Inventory のソリューションをオンボードするには、Update Management の場合と同じ手順に従います。 Automation アカウントからこれらのソリューションをオンボードする方法の詳細については、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account)」をご覧ください。
+Change Tracking と Inventory のソリューションをオンボードするには、Update Management の場合と同じ手順に従います。 Automation アカウントからこれらのソリューションをオンボードする方法の詳細については、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](/azure/automation/automation-onboard-solutions-from-automation-account)」をご覧ください。
 
 Change Tracking ソリューションは、Azure VM では無料で、オンプレミスのサーバーでは 1 か月あたりノードごとに 6 ドルかかります。 このコストには、Change Tracking、Inventory、Desired State Configuration が含まれます。 特定のオンプレミス サーバーのみを登録する場合は、それらのサーバーをオプトインできます。 すべての運用サーバーをオンボードすることをお勧めします。
 
@@ -138,7 +138,7 @@ Change Tracking ソリューションは、Azure VM では無料で、オンプ�
 
 ### <a name="azure-activity-log"></a>[Azure Activity Log (Azure アクティビティ ログ)]
 
-[[Azure アクティビティ ログ]](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) も Azure Monitor の一部です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
+[[Azure アクティビティ ログ]](/azure/azure-monitor/platform/activity-logs-overview) も Azure Monitor の一部です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
 
 このソリューションを実行するには:
 
@@ -181,11 +181,11 @@ Antimalware Assessment ソリューションは、マルウェアに感染して
 
 ### <a name="azure-monitor-for-vms"></a>VM に対する Azure Monitor
 
-「[評価のために単一の VM 上の管理サービスを有効にする](./onboard-single-vm.md)」で説明されているように、VM インスタンスのビュー ページを通して [Azure Monitor for VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) を有効にすることができます。 この記事で説明されている他のソリューションに対して行ったように **[ソリューション]** ページからソリューションを直接有効にすることはしないでください。 大規模なデプロイの場合、[自動化](./onboarding-automation.md)を使用してワークスペース内で適切なソリューションを有効にする方が簡単な場合があります。
+「[評価のために単一の VM 上の管理サービスを有効にする](./onboard-single-vm.md)」で説明されているように、VM インスタンスのビュー ページを通して [Azure Monitor for VMs](/azure/azure-monitor/insights/vminsights-overview) を有効にすることができます。 この記事で説明されている他のソリューションに対して行ったように **[ソリューション]** ページからソリューションを直接有効にすることはしないでください。 大規模なデプロイの場合、[自動化](./onboarding-automation.md)を使用してワークスペース内で適切なソリューションを有効にする方が簡単な場合があります。
 
 ### <a name="azure-security-center"></a>Azure Security Center
 
-すべてのサーバーを少なくとも Azure Security Center の Free レベルにオンボードすることをお勧めします。 このオプションでは、基本的なセキュリティ評価と、環境に関する実行可能なセキュリティの推奨事項が提供されます。 Standard レベルにはさらに多くの利点があります。 詳細については、[Azure Security Center の価格](https://docs.microsoft.com/azure/security-center/security-center-pricing)に関する記事をご覧ください。
+すべてのサーバーを少なくとも Azure Security Center の Free レベルにオンボードすることをお勧めします。 このオプションでは、基本的なセキュリティ評価と、環境に関する実行可能なセキュリティの推奨事項が提供されます。 Standard レベルにはさらに多くの利点があります。 詳細については、[Azure Security Center の価格](/azure/security-center/security-center-pricing)に関する記事をご覧ください。
 
 Azure Security Center の Free レベルを有効にするには、次の手順に従います。
 

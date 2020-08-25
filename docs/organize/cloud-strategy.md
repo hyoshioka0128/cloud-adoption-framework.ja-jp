@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.openlocfilehash: 5b97c1efba9a0efc976404bea9680cf2baaa0d94
-ms.sourcegitcommit: 7ff5c7a12412b1af0090b8eebd25b024f7830a57
+ms.openlocfilehash: a776c93023eb0b3f5ca9c8ad4fc26d3723b8997d
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814355"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574620"
 ---
 # <a name="cloud-strategy-functions"></a>クラウド戦略の職務
 
@@ -36,10 +36,10 @@ ms.locfileid: "85814355"
 
 ## <a name="preparation"></a>準備
 
-- [Microsoft Azure のビジネス価値を学習します](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure)。
-- ビジネス、人材、テクノロジの戦略を調整するためにどのように役立つかについて、[クラウド導入フレームワークを学習します](https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure)。
+- [Microsoft Azure のビジネス価値を学習します](/learn/paths/learn-business-value-of-azure)。
+- ビジネス、人材、テクノロジの戦略を調整するためにどのように役立つかについて、[クラウド導入フレームワークを学習します](/learn/modules/microsoft-cloud-adoption-framework-for-azure)。
 - [クラウドの導入戦略](../strategy/index.md)プロセスを確認します。
-- [戦略およびプラン テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)をダウンロードします。
+- [戦略およびプラン テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)をダウンロードします。
 
 ## <a name="minimum-scope"></a>最小スコープ
 
@@ -93,4 +93,4 @@ ms.locfileid: "85814355"
 
 - [クラウド戦略チーム](../get-started/team/cloud-strategy.md)を結成する
 - 連携する[クラウド導入チーム](../get-started/team/cloud-adoption.md)を結成して、戦略を[クラウド導入の職務](./cloud-adoption.md)に合わせます。
-- [RACI スプレッドシート テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)を使用して、チーム間の責任を調整します。
+- [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)を使用して、チーム間の責任を調整します。

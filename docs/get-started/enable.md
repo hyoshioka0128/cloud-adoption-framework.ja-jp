@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 67b9fe7952523932fe712215b88a1c5dcdcbeb5a
-ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
+ms.openlocfilehash: 61f1f1959e9a3e0d934e56498dd13462391d0a49
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805455"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569588"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>健全な運用モデルと組織配置でお客様の成功を実現する
 
@@ -23,7 +23,7 @@ ms.locfileid: "87805455"
 イノベーションを推進する場合、ビジネス チームと技術チームの連携はソリューションの成功にとって最も重要です。
 
 - Microsoft では、ビジネスの利害関係者向けに、ビジネス戦略の開発をサポートし、ベスト プラクティスの例を提供する [Microsoft AI ビジネス スクール](https://www.microsoft.com/ai/ai-business-school)を作成しました。
-- 技術の利害関係者向けには、新しい AI スキルを身に付けることができる [Microsoft AI ラーニング パス](https://docs.microsoft.com/learn/)が用意されています。
+- 技術の利害関係者向けには、新しい AI スキルを身に付けることができる [Microsoft AI ラーニング パス](/learn/)が用意されています。
 
 ## <a name="blockers"></a>問題点
 
@@ -54,7 +54,7 @@ ms.locfileid: "87805455"
 
 これらの原則は、Azure Advisor、Microsoft Azure Well-Architected Framework、および Azure アーキテクチャ センターのソリューションで共有されます。
 
-- [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) では、ソリューション、ワークロード、および完全なポートフォリオにわたる個々の資産の原則が評価されます。
-- [Azure アーキテクチャ センター](https://docs.microsoft.com/azure/architecture)では、特定の技術的なソリューションを開発および管理するために、これらの原則が適用されます。
-- [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) では、アーキテクチャの決定を導くために、ワークロード全体でこれらの原則のバランスをとることができます。
+- [Azure Advisor](/azure/advisor/advisor-overview) では、ソリューション、ワークロード、および完全なポートフォリオにわたる個々の資産の原則が評価されます。
+- [Azure アーキテクチャ センター](/azure/architecture/)では、特定の技術的なソリューションを開発および管理するために、これらの原則が適用されます。
+- [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) では、アーキテクチャの決定を導くために、ワークロード全体でこれらの原則のバランスをとることができます。
 - [クラウド導入フレームワーク](../index.yml)を使用すると、ポートフォリオ全体にわたって原則が確実にスケーリングされ、適切に管理された環境で導入チームが有効になります。

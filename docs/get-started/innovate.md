@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 94c66af70be7c3683e459719eb6e2a73e74e66d9
-ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
+ms.openlocfilehash: 9567b09ef527e59be2c1206cc6933c2f88bc9834
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805454"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569486"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>作業を開始しましょう。クラウドで新しい製品とサービスのイノベーションを促進する
 
@@ -28,7 +28,7 @@ ms.locfileid: "87805454"
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を使用して、動機および目標となるビジネス成果を記録します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を使用して、動機および目標となるビジネス成果を記録します。
 
 <!-- docsTest:ignore "Get started: Accelerate migration" -->
 
@@ -51,7 +51,7 @@ ms.locfileid: "87805454"
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を使用して業務上の正当な理由を記録します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を使用して業務上の正当な理由を記録します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -76,11 +76,11 @@ ms.locfileid: "87805454"
   - 計画されたイノベーションをサポートするうえで必要な関連インベントリの定量分析。
   - イノベーションを実現するうえで必要な関連ワークロードの定性分析。
 - イノベーションに向けた取り組みをサポートするうえで必要な新しいインベントリのコストを計算します。
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)内の業務上の正当な理由を厳密な計算で更新します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)内の業務上の正当な理由を厳密な計算で更新します。
 
 **成果物の完成をサポートするためのガイダンス:**
 
-検出と評価により、より深いレベルで技術的な整合性を確保できます。 その後、計画されたイノベーションに必要な依存ワークロードを移行するためのアクション プランを作成できます。 このシナリオがよく見られるのは、会社が所有する既存のデータ ソース、一元化されたアプリケーション、サービス レイヤーが、その企業の他のコンテキストでイノベーションを生み出すために必要になるケースです。 
+検出と評価により、より深いレベルで技術的な整合性を確保できます。 その後、計画されたイノベーションに必要な依存ワークロードを移行するためのアクション プランを作成できます。 このシナリオがよく見られるのは、会社が所有する既存のデータ ソース、一元化されたアプリケーション、サービス レイヤーが、その企業の他のコンテキストでイノベーションを生み出すために必要になるケースです。
 
 依存システムがある場合は、検出と評価のガイドとして次の記事を参照してください。
 
@@ -96,7 +96,7 @@ ms.locfileid: "87805454"
 
 ## <a name="step-4-plan-for-migration-of-dependent-assets"></a>手順 4:依存資産の移行を計画する
 
-新しいイノベーションが既存のワークロードや既存の資産に依存する場合でも、クラウド導入計画テンプレートは、プロジェクトのバックログをすばやく作成できるようになっています。 このバックログを編集して、検出結果、合理化、必要なスキル、パートナー契約を反映することができます。
+新しいイノベーションが既存のワークロードや既存の資産に依存する場合でも、クラウド導入計画は、プロジェクトのバックログをすばやく作成できるようになっています。 このバックログを編集して、検出結果、合理化、必要なスキル、パートナー契約を反映することができます。
 
 **成果物:**
 
@@ -109,7 +109,7 @@ ms.locfileid: "87805454"
 
 **成果物の完成をサポートするためのガイダンス:**
 
-- [クラウド導入計画のテンプレート](../plan/template.md): 基本テンプレートをデプロイします。
+- [クラウド導入計画](../plan/template.md):基本テンプレートを使用して計画を定義します。
 - [ワークロードの調整](../plan/workloads.md): バックログにワークロードを定義します。
 - [作業の調整](../plan/assets.md): バックログの資産とワークロードを調整して、優先度の高いワークロードの作業を明確に定義します。
 - [メンバーと時間の調整](../plan/iteration-paths.md): ワークロードのイテレーション、ベロシティ、リリースを確立します。
@@ -150,7 +150,7 @@ ms.locfileid: "87805454"
 
 **成果物:**
 
-- [Microsoft Azure Architecture Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) に必要事項を記入して、さまざまなアーキテクチャと運用の意思決定を評価します。
+- [Microsoft Azure Architecture Review](/assessments/?id=azure-architecture-review) に必要事項を記入して、さまざまなアーキテクチャと運用の意思決定を評価します。
 - 高度な運用が必要であれば、[運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を調整して反映します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
@@ -168,7 +168,7 @@ ms.locfileid: "87805454"
 
 ## <a name="step-7-deploy-an-aligned-landing-zone"></a>手順 7:調整済みのランディング ゾーンをデプロイする
 
-クラウドでホストされるすべての資産は、ランディング ゾーンに置かれます。 ランディング ゾーンは、ガバナンス、セキュリティ、運用についての明示的な要件を有している場合もあれば、 他のチームからのサポートがない新しいサブスクリプションである場合もあります。 どちらのシナリオでも、大切なことは、最初からガバナンスと運用上の要件に沿ったランディング ゾーンをまず用意することです。 
+クラウドでホストされるすべての資産は、ランディング ゾーンに置かれます。 ランディング ゾーンは、ガバナンス、セキュリティ、運用についての明示的な要件を有している場合もあれば、 他のチームからのサポートがない新しいサブスクリプションである場合もあります。 どちらのシナリオでも、大切なことは、最初からガバナンスと運用上の要件に沿ったランディング ゾーンをまず用意することです。
 
 承認済みのランディング ゾーンを最初から使用することで、チームは、ソリューションが運用環境にリリースされたときではなく、開発の早い段階でポリシー違反を発見しやすくなります。 早期の発見は、チームが阻害要因を排除するのに役立つだけでなく、変更を実施するための十分な時間を導入チームとガバナンス チームにもたらします。
 
@@ -215,7 +215,7 @@ ms.locfileid: "87805454"
 
 ## <a name="step-9-assess-the-innovation-maturity-of-your-organization"></a>手順 9:組織のイノベーションの成熟度を評価する
 
-イノベーション戦略の開発をサポートする AI 成熟度モデルは、AI ベースのシステムを作成および所有する能力を組織自身で評価するのに役立つ無料のツールです。 成熟度には、基礎、アプローチ、意欲、成熟の 4 つのレベルがあります。 各レベルには、お客様の組織について、特定の種類の AI ソリューションを採用し、関連するリスクを軽減し、戦略を実装する能力を判断するのに役立つ特定の特性セットが含まれています。 
+イノベーション戦略の開発をサポートする AI 成熟度モデルは、AI ベースのシステムを作成および所有する能力を組織自身で評価するのに役立つ無料のツールです。 成熟度には、基礎、アプローチ、意欲、成熟の 4 つのレベルがあります。 各レベルには、お客様の組織について、特定の種類の AI ソリューションを採用し、関連するリスクを軽減し、戦略を実装する能力を判断するのに役立つ特定の特性セットが含まれています。
 
 評価には 5 分から 10 分かかり、4 つのカテゴリ (戦略、カルチャ、組織の特性、機能) にわたってお客様の組織の能力が測定されます。 これらのカテゴリを測定することで、AI 成熟度モデルは、お客様の組織のスコアを計算し、曲線上に AI イノベーションの成熟度の推定値を示すことができます。
 
@@ -240,7 +240,7 @@ ms.locfileid: "87805454"
 
 ## <a name="next-steps"></a>次のステップ
 
-クラウド導入フレームワークはライフサイクル ソリューションです。 これは、イノベーションの取り組みを開始するのに役立ちます。 これは、組織がイノベーションの取り組みを開始し、イノベーション作業をサポートするチームの成熟度を高めるのにも役立ちます。 
+クラウド導入フレームワークはライフサイクル ソリューションです。 これは、イノベーションの取り組みを開始するのに役立ちます。 これは、組織がイノベーションの取り組みを開始し、イノベーション作業をサポートするチームの成熟度を高めるのにも役立ちます。
 
 以下に示したチームは、後続の手順を使用して、その作業の成熟度を引き続き高めていくことができます。 これらは並行して行うプロセスであって直線的なものではなく、また阻害要因と考えるべきではありません。 それぞれが会社の全体的なクラウド対応を成熟させる効果を持った、並行したバリュー ストリームなのです。
 

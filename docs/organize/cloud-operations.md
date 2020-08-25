@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: a8ff734e8f29d3cfcc848fc99270aae16b73c8c5
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5762688ddd367e6f01e7276d9d9079aaf27f56da
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755572"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569979"
 ---
 # <a name="cloud-operations-functions"></a>クラウド運用機能
 
@@ -28,10 +28,13 @@ ms.locfileid: "83755572"
 - ビジネス アプリケーションの運用チーム
 - DevOps チーム
 
+> [!IMPORTANT]
+> クラウド運用について説明責任を持つ個人またはチームは、通常、修復時に構成に対して加えられるリアクティブな変更について実行責任を持ちます。 また、運用の中断を最小限に抑えるために、構成の事前変更について実行責任を持つ場合もあります。 組織のクラウド運用モデルによっては、これらの変更は、コードとしてのインフラストラクチャ、Azure Pipelines、またはポータルでの直接構成を通じて提供される可能性があります。 運用チームは高度なアクセス許可を持つことがあるので、この役割を担うユーザーは、意図しないアクセスや運用上の変更を最小限に抑えるために、[ID およびアクセス制御のベスト プラクティス](/azure/security/benchmarks/security-control-identity-access-control)に従うことが非常に重要です。
+
 ## <a name="preparation"></a>準備
 
-- [Azure でのリソースの管理](https://docs.microsoft.com/learn/paths/manage-resources-in-azure):Azure CLI と Web ポータルを介してクラウドベースのリソースを作成、管理、制御する方法について学習します。
-- [Azure のネットワーク サービス](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
+- [Azure でのリソースの管理](/learn/paths/manage-resources-in-azure/):Azure CLI と Web ポータルを介してクラウドベースのリソースを作成、管理、制御する方法について学習します。
+- [Azure のネットワーク サービス](/learn/modules/intro-to-azure-networking/): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
 
 次の項目を確認してください。
 
@@ -77,4 +80,4 @@ ms.locfileid: "83755572"
 - [クラウドのセンター オブ エクセレンス](../organize/cloud-center-of-excellence.md)の機能。
 - [組織のアンチパターン: サイロと封土](../organize/fiefdoms-silos.md)
 
-"実行責任、説明責任、助言、通知" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 [RACI スプレッドシート テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)をダウンロードして編集してください。
+"実行責任、説明責任、助言、通知" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)をダウンロードして変更してください。

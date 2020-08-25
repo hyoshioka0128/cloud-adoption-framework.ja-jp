@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ff5b2dba1cdb95cdcc007ba5cea52b86a902584d
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 9c611e196b9bf5777181b99ef184759eb4d56bb6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233326"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573872"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>作業を開始しましょう。クラウド ガバナンス チームを構築する
 
@@ -27,7 +27,7 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 **成果物:**
 
 - クラウド ガバナンス チームが必要かどうかを判断します。
-- "_実行責任、説明責任、助言、通知 (RACI)_ " の関係者を明確にするクロスチーム マトリックスを作成することにより、チーム間で責任を調整します。 [RACI テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)の `Org Alignment` ワークシートを使用して、決定事項と責任者を文書化します。
+- "*実行責任、説明責任、助言、通知 (RACI)* " の関係者を明確にするクロスチーム マトリックスを作成することにより、チーム間で責任を調整します。 [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)の `Org Alignment` ワークシートを使用して、決定事項と責任者を文書化します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -53,8 +53,8 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- クラウド戦略チームのメンバーと共に会社の[戦略と計画テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を確認して、動機、メトリック、戦略を把握します。
-- クラウド導入チームのメンバーと共に会社の[クラウド導入計画テンプレート](../../plan/template.md)を確認して、タイムラインと優先順位を把握します。
+- クラウド戦略チームのメンバーと共に会社の[戦略と計画テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を確認して、動機、メトリック、戦略を把握します。
+- クラウド導入チームのメンバーと共に会社の[クラウド導入計画](../../plan/template.md)を確認して、タイムラインと優先順位を把握します。
 - 運用チームの[運用管理ワークブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を確認して、ビジネスで確立されている運用要件とコミットメントを把握します。
 
 <!-- markdownlint-disable MD033 -->
@@ -174,7 +174,7 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- [新しいワークロードとリソースをオンボードする](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)ためのプロセスを確立します。
+- [新しいワークロードとリソースをオンボードする](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)ためのプロセスを確立します。
 
 <!-- markdownlint-disable MD033 -->
 <br>

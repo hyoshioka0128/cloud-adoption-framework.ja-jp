@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ea53df3a8d349299e08ecc0681b4dd24dc71336a
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: b4e8202eb06ff3e15990a71563747036430ad459
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448216"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574399"
 ---
 <!-- docsTest:ignore "CAF Foundation blueprint" -->
 
@@ -22,10 +22,10 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 
 ## <a name="deploy-the-blueprint"></a>ブループリントをデプロイする
 
-クラウド導入フレームワークで CAF 基盤ブループリントを使用する前に、次の設計原則、前提条件、決定事項、実装ガイダンスを確認してください。 このガイダンスが目的のクラウド導入計画と整合している場合は、[デプロイ手順][deploy-sample]を使用して [CAF 基盤ブループリント](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-foundation)をデプロイできます。
+クラウド導入フレームワークで CAF 基盤ブループリントを使用する前に、次の設計原則、前提条件、決定事項、実装ガイダンスを確認してください。 このガイダンスが目的のクラウド導入計画と整合している場合は、デプロイ手順を使用して、[CAF 基盤ブループリント](/azure/governance/blueprints/samples/caf-foundation)をデプロイできます。
 
 > [!div class="nextstepaction"]
-> [ブループリント サンプルをデプロイする][deploy-sample]
+> [ブループリント サンプルをデプロイする](/azure/governance/blueprints/samples/caf-foundation/deploy)
 
 ## <a name="design-principles"></a>設計原則
 
@@ -41,11 +41,11 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 
 ### <a name="identity"></a>ID
 
-この実装オプションでは、[ID 管理のベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に従って、ターゲット サブスクリプションが既に Azure Active Directory インスタンスに関連付けられている必要があります。
+この実装オプションでは、[ID 管理のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)に従って、ターゲット サブスクリプションが既に Azure Active Directory インスタンスに関連付けられている必要があります。
 
 ### <a name="network-topology-and-connectivity"></a>ネットワーク トポロジと接続
 
-この実装オプションでは、[ネットワーク セキュリティのベスト プラクティス](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に従って定義されたネットワーク トポロジが、ランディング ゾーンに既にあるものと想定されています。
+この実装オプションでは、[ネットワーク セキュリティのベスト プラクティス](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)に従って定義されたネットワーク トポロジが、ランディング ゾーンに既にあるものと想定されています。
 
 ### <a name="resource-organization"></a>リソースの編成
 
@@ -69,7 +69,7 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 他のガバナンス規範の並列開発を高速化するには、[ガバナンス手法](../../govern/index.md)を確認します。 ガバナンスの Cost Management 規範の成熟を続けるには、[Cost Management 規範のガイダンス](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)に関するページを参照してください。
 
 > [!WARNING]
-> ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)ことが必要になる場合があります。
+> ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)ことが必要になる場合があります。
 
 ### <a name="operations-baseline"></a>運用ベースライン
 
@@ -78,7 +78,7 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 運用ベースラインの並列開発の時間を短縮するには、[ガバナンス手法](../../manage/index.md)を確認し、[Azure サーバー管理ガイド](../../manage/azure-server-management/index.md)をデプロイすることを検討します。
 
 > [!WARNING]
-> 運用ベースラインが開発されると、リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)ことが必要になる場合があります。
+> 運用ベースラインが開発されると、リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)ことが必要になる場合があります。
 
 ### <a name="business-continuity-and-disaster-recovery-bcdr"></a>ビジネス継続性とディザスター リカバリー (BCDR)
 
@@ -95,18 +95,14 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 
 ## <a name="customize-or-deploy-this-blueprint"></a>このブループリントをカスタマイズまたはデプロイする
 
-デプロイまたはカスタマイズの詳細については、[Azure ブループリント サンプル][deploy-sample]のページで、CAF 基盤ブループリントの参照サンプルを参照し、ダウンロードしてください。
+デプロイまたはカスタマイズの詳細については、Azure Blueprint サンプルで、CAF 基盤ブループリントの参照サンプルを参照し、ダウンロードしてください。
 
 > [!div class="nextstepaction"]
-> [ブループリント サンプルをデプロイする][deploy-sample]
+> [ブループリント サンプルをデプロイする](/azure/governance/blueprints/samples/caf-foundation/deploy)
 
 ## <a name="next-steps"></a>次のステップ
 
-最初のランディング ゾーンをデプロイしたら、[ランディング ゾーンを拡張する](../considerations/index.md)ことができます。
+最初のランディング ゾーンをデプロイしたら、ランディング ゾーンを拡張することができます。
 
 > [!div class="nextstepaction"]
 > [ランディング ゾーンを展開する](../considerations/index.md)
-
-<!-- links -->
-
-[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-foundation/deploy

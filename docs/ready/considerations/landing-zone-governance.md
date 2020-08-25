@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 620a146d3ae45703f9ed3884bd425a3a4164e726
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: e55267973f7118fe90687abbd640c15eaa6be5f6
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479604"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194688"
 ---
 # <a name="improve-landing-zone-governance"></a>ランディング ゾーンのガバナンスの改善
 
@@ -37,7 +37,7 @@ ms.locfileid: "86479604"
 
 ## <a name="next-steps"></a>次のステップ
 
-クラウドの導入は、新しいワークロードの各ウェーブまたはリリースで引き続き展開されます。 これらの要件を事前に把握しておくために、クラウド プラットフォーム チームには、定期的に[追加のランディング ゾーンのベスト プラクティスを確認する](../azure-best-practices/index.md)ことをお勧めします。
+クラウドの導入は、新しいワークロードの各ウェーブまたはリリースで引き続き展開されます。 これらの要件を事前に把握しておくために、クラウド プラットフォーム チームには、定期的に追加のランディング ゾーンのベスト プラクティスを確認することをお勧めします。
 
 > [!div class="nextstepaction"]
 > [追加のランディング ゾーンのベスト プラクティスを確認する](../azure-best-practices/index.md)

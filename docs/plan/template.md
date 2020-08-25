@@ -1,24 +1,24 @@
 ---
 title: Azure DevOps へのクラウド導入計画のデプロイ
-description: クラウド導入計画テンプレートを使用してクラウド導入の取り組みを標準プロセスに適合させ、Azure DevOps にすばやくバックログをデプロイする方法について説明します。
+description: テンプレートを使用してクラウド導入の取り組みを標準プロセスに適合させ、Azure DevOps にすばやくバックログをデプロイする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c25279222a0a1dbd9531ffe6e941e1ffc1046051
-ms.sourcegitcommit: b94dab2545384e44650136b17dc9f708ccdc3c7d
+ms.openlocfilehash: 178217ef4cb3e4dc744a1c6d297ad4c8a993bcd5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85195098"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572920"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>クラウド導入計画と Azure DevOps
 
 Azure DevOps は、反復的なプロジェクトを管理する Azure のお客様向けの、クラウドベースのツールのセットです。 これにはデプロイ パイプラインと DevOps の他の重要な側面を管理するためのツールも含まれています。
 
-この記事では、クラウド導入計画テンプレートを使用して Azure DevOps にバックログをすばやくデプロイする方法について説明します。 このテンプレートは、クラウド導入フレームワークのガイダンスに基づき、クラウド導入作業を標準化されたプロセスに合わせます。
+この記事では、テンプレートを使用して Azure DevOps にバックログをすばやくデプロイする方法について説明します。 このテンプレートは、クラウド導入フレームワークのガイダンスに基づき、クラウド導入作業を標準化されたプロセスに合わせます。
 
 ## <a name="create-your-cloud-adoption-plan"></a>クラウド導入計画を作成する
 
@@ -27,20 +27,20 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 1. **[選択したテンプレート]** フィールドが **[Cloud Adoption Plan]\(クラウド導入計画\)** に設定されていることを確認します。 そうでない場合は、 **[テンプレートの選択]** を選択して適切なテンプレートを選択します。
 2. **[組織の選択]** ドロップダウン リスト ボックスから、対象の Azure DevOps 組織を選択します。
 3. 新しいプロジェクトの名前を入力します。 このクラウド導入計画は、対象の Azure DevOps テナントにデプロイされると、この名前が設定されます。
-4. **[プロジェクトの作成]** を選択して、計画テンプレートに基づいた新しいプロジェクトをお使いのテナント内に作成します。 進行状況バーに、プロジェクトをデプロイするまでの進捗が示されます。
+4. **[プロジェクトの作成]** を選択して、戦略と計画のテンプレートに基づき、新しいプロジェクトをお使いのテナント内に作成します。 進行状況バーに、プロジェクトをデプロイするまでの進捗が示されます。
 5. デプロイが完了したら、 **[プロジェクトに移動]** を選択して新しいプロジェクトを表示します。
 
 プロジェクトの作成が完了したら、この一連の記事を読み進めて、実際のクラウド導入計画に合わせてこのテンプレートを変更する方法を確認してください。
 
-このツールに関するその他のサポートとガイダンスについては、[Azure DevOps Services Demo Generator](https://docs.microsoft.com/azure/devops/demo-gen) に関する記事をご覧ください。
+このツールに関するその他のサポートとガイダンスについては、[Azure DevOps Services Demo Generator](/azure/devops/demo-gen) に関する記事をご覧ください。
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>クラウド導入計画を一括編集する
 
 計画プロジェクトがデプロイされたら、Microsoft Excel を使用してそれを変更できます。 Microsoft Excel を使用すると、Azure DevOps ブラウザー エクスペリエンスを使用するよりもはるかに簡単に計画内に新しいワークロードまたは資産を作成できます。
 
-一括編集を行うためにワークステーションを準備するには、[Microsoft Excel を使用した作業項目の一括追加または変更](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)に関する記事をご覧ください。
+一括編集を行うためにワークステーションを準備するには、[Microsoft Excel を使用した作業項目の一括追加または変更](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)に関する記事をご覧ください。
 
-ユーザーは、プロジェクトを使用してタスクを追跡し、バックログを作成して、リソースを割り当てることができます。 [プロジェクトを Azure DevOps に接続する](https://docs.microsoft.com/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)手順を次に示します。
+ユーザーは、プロジェクトを使用してタスクを追跡し、バックログを作成して、リソースを割り当てることができます。 [プロジェクトを Azure DevOps に接続する](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)手順を次に示します。
 
 ## <a name="use-the-cloud-adoption-plan"></a>クラウド導入計画を使用する
 
@@ -53,14 +53,14 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 
 各レイヤーでは、依存関係に基づいてアクティビティが順序付けされます。 アクティビティは、目下の目標またはタスクを明確にするために、クラウド導入フレームワーク内の記事にリンクされています。
 
-クラウド導入計画の最もわかりやすいビューは、**エピック** バックログ ビューです。 **エピック** バックログ ビューへの変更については、[バックログの表示](https://docs.microsoft.com/azure/devops/boards/backlogs/define-features-epics?view=azure-devops#view-a-backlog-or-portfolio-backlog)に関する記事を参照してください。 このビューからは簡単に、導入ライフサイクルの現在のフェーズを完了するために必要な作業を計画および管理できます。
+クラウド導入計画の最もわかりやすいビューは、**エピック** バックログ ビューです。 **エピック** バックログ ビューへの変更については、[バックログの表示](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops#view-a-backlog-or-portfolio-backlog)に関する記事を参照してください。 このビューからは簡単に、導入ライフサイクルの現在のフェーズを完了するために必要な作業を計画および管理できます。
 
 > [!NOTE]
 > クラウド導入計画の現在の状態は、移行作業に重点を置いています。 ガバナンス、イノベーション、または操作に関連したタスクは、手動で設定する必要があります。
 
 ## <a name="align-the-cloud-adoption-plan"></a>クラウド導入計画を調整する
 
-クラウド導入ライフサイクルの戦略と計画の段階の概要ページはそれぞれ、[クラウド導入フレームワークの戦略と計画に関するテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を参照します。 このテンプレートでは、クラウド導入計画のテンプレートを導入用の特定の計画に合わせて調整するための決定事項およびデータ ポイントが整理されています。 まだ行ってない場合は、新しいプロジェクトを調整する前に、[戦略](../strategy/index.md)と[計画](../plan/index.md)に関連した演習を完了することをお勧めします。
+クラウド導入ライフサイクルの戦略と計画の段階の概要ページはそれぞれ、[戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を参照します。 このテンプレートでは、クラウド導入計画のテンプレートを導入用の特定の計画に合わせて調整するための決定事項およびデータ ポイントが整理されています。 まだ行ってない場合は、新しいプロジェクトを調整する前に、[戦略](../strategy/index.md)と[計画](../plan/index.md)に関連した演習を完了することをお勧めします。
 
 次の記事では、クラウド導入計画の調整がサポートされています。
 

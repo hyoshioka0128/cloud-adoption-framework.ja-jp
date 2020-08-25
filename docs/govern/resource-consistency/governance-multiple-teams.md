@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cb8942b451c750190975108d2b880a3f4e251908
-ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
+ms.openlocfilehash: 33817a6f0afc10e0415ed666855ff5818efdddf1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87524053"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573634"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -31,7 +31,7 @@ ms.locfileid: "87524053"
   - **ワークロード**の管理を担当する、ご自身の組織内の個人 (2 人)。
 - 複数の**環境**のサポート。 環境とは、仮想マシン、仮想ネットワーク、ネットワーク トラフィックのルーティング サービスなど、リソースの論理的グループのことです。 これらのリソース グループは、管理およびセキュリティ要件が類似しており、通常は、テストや運用などの特定の目的で使用されます。 この例では、要件は次の 4 つの環境に対応しています。
   - **共有インフラストラクチャ環境**: 他の環境のワークロードによって共有されるリソースが含まれます。 オンプレミスへの接続性を提供するゲートウェイ サブネットを含む仮想ネットワークなど。
-  - **運用環境**: 最も制限の厳しいセキュリティ ポリシーが適用されます。 内部または外部に接続されるワークロードを含めることができます。
+  - **運用環境**: 最も制限の厳しいセキュリティ ポリシーが適用されます。 内部または外部に接続されるワークロードが含まれます。
   - 開発とテストの作業のための**非運用環境**。 この環境のセキュリティ、コンプライアンス、およびコストの各ポリシーは、運用環境のものとは異なります。 Azure では、これは Enterprise Dev/Test サブスクリプションの形式になります。
   - 概念実証と教育を目的とした**サンドボックス環境**。 通常、この環境は開発アクティビティに参加している従業員ごとに割り当てられます。また、企業データのここに配置することを禁止するための厳格な手続きおよび運用上のセキュリティ制御があります。 Azure では、Visual Studio サブスクリプションの形式が使用されます。 また、これらのサブスクリプションは企業の Azure Active Directory に "_関連付けない_" でください。
 - **最小限の特権のアクセス許可モデル**。既定では、アクセス許可がユーザーに付与されていません。 このモデルは以下をサポートする必要があります。
@@ -39,7 +39,7 @@ ms.locfileid: "87524053"
   - リソースへの各ワークロード所有者によるアクセスが既定で拒否されている。 リソース アクセス権が、リソース グループ スコープの 1 人の信頼されたユーザーによって明示的に付与されている。
   - 共有インフラストラクチャ リソースへの管理アクセスが、インフラストラクチャ所有者に制限されている。
   - 各ワークロードの管理アクセスが運用環境のワークロード所有者に制限され、さまざまなデプロイ環境 (開発、テスト、ステージング、運用) に開発が進むにつれて制御のレベルが上がります。
-  - この企業は 3 つの主要環境それぞれで個別にロールを管理しなければならない状況を望んでいないため、Azure のロールベースのアクセス制御 (RBAC) で使用できる[組み込みロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)のみを使用する必要がある。 エンタープライズにカスタム RBAC ロールが必要な場合は、3 つの環境間でカスタム ロールを同期するために追加のプロセスが必要になります。
+  - この企業は 3 つの主要環境それぞれで個別にロールを管理しなければならない状況を望んでいないため、Azure のロールベースのアクセス制御 (RBAC) で使用できる[組み込みロール](/azure/role-based-access-control/built-in-roles)のみを使用する必要がある。 エンタープライズにカスタム RBAC ロールが必要な場合は、3 つの環境間でカスタム ロールを同期するために追加のプロセスが必要になります。
 - ワークロード所有者名、環境、またはその両方でコストを追跡。
 
 ## <a name="identity-management"></a>ID 管理
@@ -78,7 +78,7 @@ _図 2:Azure AD グローバル管理者は必要なユーザー アカウント
 
 また、ワークロード所有者が自身の所有していない他のワークロードに管理アクセスできないように、各ワークロードに関連付けられているリソースがそれぞれ互いに分離されていなければならないというもう 1 つの要件があります。 さらに、Azure ロールベースのアクセス制御の組み込みロールのみを使用してこのモデルを実装するという要件もあります。
 
-それぞれの RBAC ロールが、**サブスクリプション**、**リソース グループ**、個別の**リソース**の 3 つのスコープのいずれかで適用されます。 ロールは下位のスコープに継承されます。 たとえば、ユーザーに[組み込み所有者ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)がサブスクリプション レベルで割り当てられている場合、そのロールは、オーバーライドされない限り、リソース グループおよび個別のリソース レベルでもそのユーザーに割り当てられます。
+それぞれの RBAC ロールが、**サブスクリプション**、**リソース グループ**、個別の**リソース**の 3 つのスコープのいずれかで適用されます。 ロールは下位のスコープに継承されます。 たとえば、ユーザーに[組み込み所有者ロール](/azure/role-based-access-control/built-in-roles#owner)がサブスクリプション レベルで割り当てられている場合、そのロールは、オーバーライドされない限り、リソース グループおよび個別のリソース レベルでもそのユーザーに割り当てられます。
 
 そのため、最小特権アクセスのモデルを作成するには、特定の種類のユーザーがこれらの 3 つの各スコープで実行を許可されるアクションを決定する必要があります。 たとえば、ここでは、ワークロード所有者には、自身のワークロードに関連付けられているリソースのみに対する管理アクセス許可を付与し、他のリソースは管理できないようにする必要があります。 組み込み所有者ロールをサブスクリプション スコープで割り当てると、各ワークロード所有者はすべてのワークロードへの管理アクセス権を持つことになります。
 
@@ -95,11 +95,11 @@ _図 3:組み込み所有者ロールが割り当てられたサービス管理�
     ![ワークロード所有者がリソース グループ A の作成を要求する](../../_images/govern/design/governance-2-2.png)
 2. **サービス管理者**はその要求を確認し、**リソース グループ A** を作成します。この時点では、まだ**ワークロード所有者 A** にはアクセス許可がないため、何もできません。
     ![サービス管理者がリソース グループ A を作成する](../../_images/govern/design/governance-2-3.png)
-3. **サービス管理者**は**ワークロード所有者 A** を**リソース グループ A** に追加し、[組み込み共同作成者ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)を割り当てます。 共同作成者ロールによって、**リソース グループ A** には、アクセス管理を除くすべてのアクセス許可が付与されます。
+3. **サービス管理者**は**ワークロード所有者 A** を**リソース グループ A** に追加し、[組み込み共同作成者ロール](/azure/role-based-access-control/built-in-roles#contributor)を割り当てます。 共同作成者ロールによって、**リソース グループ A** には、アクセス管理を除くすべてのアクセス許可が付与されます。
     ![サービス管理者がワークロード所有者 A をリソース グループ A に追加する](../../_images/govern/design/governance-2-4.png)
 4. **ワークロード所有者 A** は、ワークロードの容量計画の一環として、2 人のチーム メンバーが CPU とネットワーク トラフィック監視データを確認できるようにする必要があるとします。 **ワークロード所有者 A** には共同作成者ロールが割り当てられているため、ユーザーを**リソース グループ A** に追加するアクセス許可はありません。そこで、この要求を**サービス管理者**に送信する必要があります。
     ![ワークロード所有者が、リソース グループへのワークロード共同作成者の追加を要求する](../../_images/govern/design/governance-2-5.png)
-5. **サービス管理者**は要求を確認し、2 人の**ワークロードの共同作成者**ユーザーを**リソース グループ A** に追加します。この 2 人のユーザーには、リソース管理のためのアクセス許可は必要ありません。したがって、[組み込み閲覧者ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)が割り当てられます。
+5. **サービス管理者**は要求を確認し、2 人の**ワークロードの共同作成者**ユーザーを**リソース グループ A** に追加します。この 2 人のユーザーには、リソース管理のためのアクセス許可は必要ありません。したがって、[組み込み閲覧者ロール](/azure/role-based-access-control/built-in-roles#contributor)が割り当てられます。
     ![サービス管理者がワークロード共同作成者をリソース グループ A に追加する](../../_images/govern/design/governance-2-6.png)
 6. さらに、**ワークロード所有者 B** も、自身のワークロードに対するリソースをリソース グループに追加する必要があります。 **ワークロード所有者 A** と同様、**ワークロード所有者 B** にも、サブスクリプション スコープでアクションを実行するためのアクセス許可が最初は付与されていません。そこで、ワークロード所有者 B も**サービス管理者**に要求を送信する必要があります。
     ![ワークロード所有者 B がリソース グループ B の作成を要求する](../../_images/govern/design/governance-2-7.png)
@@ -174,7 +174,7 @@ _図 7:Azure アカウント所有者は、**サブスクリプション所有�
     ![リソース グループの作成](../../_images/govern/design/governance-3-0d.png)
 2. **サブスクリプション所有者**アカウントで、**ネットワーク操作ユーザー** アカウントをそのリソース グループに追加し、**共同作成者**ロールを割り当てます。
     ![ネットワーク操作ユーザーの追加](../../_images/govern/design/governance-3-0e.png)
-3. **ネットワーク操作ユーザー**は、[VPN ゲートウェイ](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)を作成し、オンプレミス VPN アプライアンスに接続するように構成します。 また、**ネットワーク操作ユーザー**は、[タグ](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)のペア (`environment:shared` と `managedBy:netOps`) を各リソースに適用します。 **サブスクリプション サービス管理者**がコスト レポートをエクスポートすると、それぞれのタグに合わせてコストが調整されます。 これにより、**サブスクリプション サービス管理者**は、`environment` タグと `managedBy` タグを使用してコストをピボットできます。 図の右上にある**リソース制限**カウンターをご覧ください。 各 Azure サブスクリプションに[サービス制限](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)があります。これらの制限の影響について理解しやすいように、ここでは各サブスクリプションの仮想ネットワークの制限を追跡します。 サブスクリプションあたりの仮想ネットワークの制限は 1,000 です。1 つ目の仮想ネットワークがデプロイされたため、現在 999 の仮想ネットワークが使用可能です。
+3. **ネットワーク操作ユーザー**は、[VPN ゲートウェイ](/azure/vpn-gateway/vpn-gateway-about-vpngateways)を作成し、オンプレミス VPN アプライアンスに接続するように構成します。 また、**ネットワーク操作ユーザー**は、[タグ](/azure/azure-resource-manager/management/tag-resources)のペア (`environment:shared` と `managedBy:netOps`) を各リソースに適用します。 **サブスクリプション サービス管理者**がコスト レポートをエクスポートすると、それぞれのタグに合わせてコストが調整されます。 これにより、**サブスクリプション サービス管理者**は、`environment` タグと `managedBy` タグを使用してコストをピボットできます。 図の右上にある**リソース制限**カウンターをご覧ください。 各 Azure サブスクリプションに[サービス制限](/azure/azure-resource-manager/management/azure-subscription-service-limits)があります。これらの制限の影響について理解しやすいように、ここでは各サブスクリプションの仮想ネットワークの制限を追跡します。 サブスクリプションあたりの仮想ネットワークの制限は 1,000 です。1 つ目の仮想ネットワークがデプロイされたため、現在 999 の仮想ネットワークが使用可能です。
     ![VPN ゲートウェイの作成](../../_images/govern/design/governance-3-1.png)
 4. さらに 2 つのリソース グループがデプロイされます。 1 つ目の名前は `prod-rg` です。 このリソース グループは運用環境と連携します。 2 つ目の名前は `dev-rg` で、開発環境と連携します。 運用ワークロードに関連付けられているリソースはすべて、運用環境にデプロイされ、開発ワークロードに関連付けられているリソースはすべて、開発環境にデプロイされます。 この例では、この 2 つの環境それぞれにデプロイするワークロードは 2 つだけなので、Azure サブスクリプション サービスの制限に達することはありません。 リソース数の上限がリソース グループあたり 800 であることを考慮してください。 各リソース グループにワークロードを追加し続けると、最終的にこの上限に達します。
     ![リソース グループの作成](../../_images/govern/design/governance-3-2.png)
@@ -240,15 +240,15 @@ _図 7:Azure アカウント所有者は、**サブスクリプション所有�
 Azure リソースへのアクセスを管理するためのモデルをいくつか取り上げて説明しました。 ここでは、設計ガイドの**共有インフラストラクチャ**環境、**運用**環境、**開発**環境それぞれに、1 つのサブスクリプションが含まれるリソース管理モデルを実装する手順を説明します。 この 3 つの環境すべてで 1 つの**サブスクリプション所有者**アカウントを持っています。 ワークロードはそれぞれ、**共同作成者**ロールと共に追加された**ワークロード所有者**を含む**リソース グループ**に分離されます。
 
 > [!NOTE]
-> Azure アカウントとサブスクリプション間のリレーションシップの詳細については、[Azure 内のリソース アクセス](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles)に関するページを参照してください。
+> Azure アカウントとサブスクリプション間のリレーションシップの詳細については、[Azure 内のリソース アクセス](/azure/role-based-access-control/rbac-and-directory-admin-roles)に関するページを参照してください。
 
 次の手順に従います。
 
-1. [Azure アカウント](https://docs.microsoft.com/azure/active-directory/sign-up-organization)を作成します (まだ組織にない場合)。 Azure アカウントにサインアップしたユーザーは、Azure アカウント管理者になります。また、組織の指導者は、このロールを担う個人を選択する必要があります。 この個人は、次を担当します。
+1. [Azure アカウント](/azure/active-directory/sign-up-organization)を作成します (まだ組織にない場合)。 Azure アカウントにサインアップしたユーザーは、Azure アカウント管理者になります。また、組織の指導者は、このロールを担う個人を選択する必要があります。 この個人は、次を担当します。
     - サブスクリプションの作成。
-    - これらのサブスクリプションのユーザー ID を格納する [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) テナントの作成および管理。
+    - これらのサブスクリプションのユーザー ID を格納する [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) テナントの作成および管理。
 2. 組織の指導チームが、次の作業の担当者を決定します。
-    - ユーザー ID の管理。ご自身の組織の Azure アカウントの作成時に [Azure AD テナント](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)が既定で作成されます。アカウント管理者は、[Azure AD グローバル管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)として既定で追加されます。 ご自身の組織がユーザー ID 管理の担当者として別のユーザーを選択するには、[そのユーザーに Azure AD グローバル管理者ロールを割り当て](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)ます。
+    - ユーザー ID の管理。ご自身の組織の Azure アカウントの作成時に [Azure AD テナント](/azure/active-directory/develop/active-directory-howto-tenant)が既定で作成されます。アカウント管理者は、[Azure AD グローバル管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)として既定で追加されます。 ご自身の組織がユーザー ID 管理の担当者として別のユーザーを選択するには、[そのユーザーに Azure AD グローバル管理者ロールを割り当て](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)ます。
     - サブスクリプション。これらのユーザーは次を行います。
         - そのサブスクリプション内のリソース使用状況に関連付けられたコストを管理します。
         - リソース アクセスのための最小アクセス許可モデルを実装および維持します。
@@ -257,23 +257,23 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
         - オンプレミスから Azure ネットワークへの接続。
         - Azure 内での仮想ネットワーク ピアリング経由のネットワーク接続の所有権。
     - ワークロード所有者。
-3. Azure AD グローバル管理者は、次に対する[ユーザー アカウントを新しく作成](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)します。
+3. Azure AD グローバル管理者は、次に対する[ユーザー アカウントを新しく作成](/azure/active-directory/add-users-azure-active-directory)します。
     - 各環境に関連付けられている各サブスクリプションのサブスクリプション所有者になる人。 これは、サブスクリプション **サービス管理者**に、各サブスクリプション/環境のリソース アクセス管理のタスクが割り当てられない場合にのみ必要です。
     - **ネットワーク操作ユーザー**になる人。
     - **ワークロード所有者**になる人。
-4. Azure アカウント管理者は、次の [3 つの Azure サブスクリプションを作成します](https://docs.microsoft.com/azure/cost-management-billing/manage/create-subscription)。
+4. Azure アカウント管理者は、次の [3 つの Azure サブスクリプションを作成します](/azure/cost-management-billing/manage/create-subscription)。
     - **共有インフラストラクチャ**環境のサブスクリプション。
     - **運用**環境のサブスクリプション。
     - **開発**環境のサブスクリプション。
-5. Azure アカウント管理者は、[サブスクリプション サービス所有者を各サブスクリプションに追加](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)します。
+5. Azure アカウント管理者は、[サブスクリプション サービス所有者を各サブスクリプションに追加](/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)します。
 6. **ワークロード所有者**の承認プロセスを作成して、リソース グループの作成を要求します。 承認プロセスは、さまざまな方法で実装できます。たとえば、電子メールや、[SharePoint ワークフロー](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3)などのプロセス管理ツールを使用できます。 承認プロセスでは、次の手順に従うことができます。
     - **ワークロード所有者**は、**開発**環境、**運用**環境、またはその両方で、必要な Azure リソースの部品表を準備して、**サブスクリプション所有者**に送信します。
-    - **サブスクリプション所有者**は部品表を確認し、要求されたリソースを検証して、そのリソースが計画的な使用に適していることを確かめます。たとえば、要求された[仮想マシンのサイズ](https://docs.microsoft.com/azure/virtual-machines/windows/sizes)が正しいことをチェックします。
-    - 要求が承認されなかった場合は、**ワークロード所有者**に通知されます。 要求が承認された場合、**サブスクリプション所有者**は、自分の組織の[名前付け規則](../../ready/azure-best-practices/naming-and-tagging.md)に従って[要求されたリソース グループを作成](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)し、[**共同作成者**ロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)と共に[**ワークロード所有者**を追加](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)して、リソース グループが作成されたことを**ワークロード所有者**に通知します。
+    - **サブスクリプション所有者**は部品表を確認し、要求されたリソースを検証して、そのリソースが計画的な使用に適していることを確かめます。たとえば、要求された[仮想マシンのサイズ](/azure/virtual-machines/windows/sizes)が正しいことをチェックします。
+    - 要求が承認されなかった場合は、**ワークロード所有者**に通知されます。 要求が承認された場合、**サブスクリプション所有者**は、自分の組織の[名前付け規則](../../ready/azure-best-practices/naming-and-tagging.md)に従って[要求されたリソース グループを作成](/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)し、[**共同作成者**ロール](/azure/role-based-access-control/built-in-roles#contributor)と共に[**ワークロード所有者**を追加](/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)して、リソース グループが作成されたことを**ワークロード所有者**に通知します。
 7. ワークロード所有者の承認プロセスを作成して、仮想ネットワーク ピアリング接続を共有インフラストラクチャ所有者に要求します。 前の手順と同様に、この承認プロセスは、電子メールまたはプロセス管理ツールを使用して実装できます。
 
 ガバナンス モデルが実装されたので、共有インフラストラクチャ サービスをデプロイできます。
 
 ## <a name="related-resources"></a>関連リソース
 
-[Azure リソースの組み込みロール](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
+[Azure リソースの組み込みロール](/azure/role-based-access-control/built-in-roles)

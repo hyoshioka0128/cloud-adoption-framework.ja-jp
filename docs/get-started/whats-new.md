@@ -7,12 +7,12 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a03c132a8e5dade32cfa7e8066ebe579fa8b1099
-ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
+ms.openlocfilehash: 998a9a5069190e710723d637b22392a03701969e
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87523968"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195694"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -23,6 +23,7 @@ ms.locfileid: "87523968"
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームの連携を通して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携して Azure 向けのクラウド導入フレームワークを構築することをお勧めします。
 
 ## <a name="july-17-2020"></a>2020 年 7 月 17 日
+
 このリリースでは、クラウドの導入を実行に移しやすくするために、新しいシナリオが多数追加されています。
 
 ### <a name="migration-scenarios"></a>移行シナリオ
@@ -35,6 +36,7 @@ ms.locfileid: "87523968"
 | [Azure Stack](../scenarios/azure-stack/index.md) | Azure Stack Hub を使用してデータセンターに Azure をデプロイする方法について説明します。 |
 
 ### <a name="analytics-in-caf"></a>CAF での分析
+
 Microsoft クラウド導入フレームワークに分析ソリューションが追加されました。 ここでは、クラウドの導入過程で分析ソリューションに対応するうえでのベスト プラクティスについて取り上げた新しいトピックを紹介しています。
 
 | [アーティクル] | 説明 |
@@ -44,6 +46,7 @@ Microsoft クラウド導入フレームワークに分析ソリューション�
 | [スキーマ移行のデータ定義言語 (DDL)](../migrate/azure-best-practices/analytics/schema-migration-ddl.md) | データベース オブジェクトについて説明すると共に、既存のデータを移行するにあたっての関連するプロセスについて説明します。 |
 
 ### <a name="ai-in-caf"></a>CAF での AI
+
 Microsoft クラウド導入フレームワークに人工知能 (AI) ソリューションとベスト プラクティスが統合されました。 顧客ニーズの予測に関するイノベーションの促進、ビジネス プロセスの自動化、情報の発見、顧客との関係を深める新たな方法の模索、クラウド導入の取り組みにおけるエクスペリエンスの向上に、これらの AI ソリューションを活かすことができます。
 
 | [アーティクル] | 説明 |
@@ -52,7 +55,7 @@ Microsoft クラウド導入フレームワークに人工知能 (AI) ソリュ�
 | [Azure イノベーション ガイド: AI によるイノベーション](../innovate/innovation-guide/predict.md) | AI によってイノベーションを起こし、導入ニーズに応じて最良のソリューションを見つける方法について説明します。 |
 | [クラウド導入フレームワークにおける AI](../innovate/ai/index.md) | ツール、プログラム、コンテンツ (ベスト プラクティス、構成テンプレート、アーキテクチャ ガイダンス) を含む規範的なフレームワークをレビューして、大規模な AI とクラウド ネイティブ プラクティスの導入を簡略化します。 |
 | [Azure Machine Learning を使用した MLOps](../manage/mlops-machine-learning.md) | Machine Learning Operations (MLOps) のベスト プラクティスについて説明します。 |
-| [AI によるイノベーション](../innovate/best-practices/predict.md) | デジタル発明の促進につながる AI ソリューション (機械学習、AI アプリとエージェント、ナレッジ マイニング) とベスト プラクティスについて説明します。 | 
+| [AI によるイノベーション](../innovate/best-practices/predict.md) | デジタル発明の促進につながる AI ソリューション (機械学習、AI アプリとエージェント、ナレッジ マイニング) とベスト プラクティスについて説明します。 |
 
 ## <a name="june-15-2020"></a>2020 年 6 月 15 日
 

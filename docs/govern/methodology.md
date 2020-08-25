@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 3f5273750025f3dea6f10ccc070896f95f42db6a
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 8fee6b827beec0311054f1cdf5514f8c4910f3a7
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993257"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195519"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>クラウドのガバナンス手法
 
@@ -62,7 +62,7 @@ ms.locfileid: "84993257"
 
 ## <a name="next-steps"></a>次のステップ
 
-クラウド導入フレームワークの[ガバナンス ベンチマーク ツール](https://cafbaseline.com)を使用して、変革の過程を評価し、フレームワーク内で定義されている 6 つの重要な領域における組織内のギャップを特定できます。
+クラウド導入フレームワークのガバナンス ベンチマーク ツールを使用して変革の過程を評価し、フレームワーク内で定義されている 6 つの重要な領域における組織内のギャップを特定する方法を学習します。
 
 > [!div class="nextstepaction"]
 > [変革の過程の評価](./benchmark.md)

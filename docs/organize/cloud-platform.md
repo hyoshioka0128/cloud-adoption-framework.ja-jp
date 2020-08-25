@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: d5aa6f9625f3841890669c3ee4c5d769bd4a9d84
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f6fafc8ed679ae068fd24d0897d4983dad06ae97
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755546"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569996"
 ---
 # <a name="cloud-platform-functions"></a>クラウド プラットフォームの機能
 
@@ -36,7 +36,7 @@ ms.locfileid: "83755546"
 
 - [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations): 適切な基本的ソリューションの設計を支援する Pluralsight コース。
 - [Microsoft Azure アーキテクチャ](https://www.pluralsight.com/courses/cloud-architecture-foundations): アーキテクトに Azure アーキテクチャの基礎を教える Pluralsight コース。
-- [Azure のネットワーク サービス](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
+- [Azure のネットワーク サービス](/learn/modules/intro-to-azure-networking): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
 
 **以下のことを確認してください。**
 
@@ -76,4 +76,4 @@ ms.locfileid: "83755546"
 
 クラウド プラットフォームがより適切に定義されるようになるにつれて、[クラウド自動化機能](./cloud-automation.md)を調整することで導入を推進できます。 これは、ビジネス リスクや技術的なリスクを軽減しつつベスト プラクティスを確立することにも役立ちます。
 
-"実行責任、説明責任、助言、通知" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 [RACI スプレッドシート テンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)をダウンロードして編集してください。
+"実行責任、説明責任、助言、通知" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)をダウンロードして変更してください。

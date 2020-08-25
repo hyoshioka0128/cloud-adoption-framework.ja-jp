@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 28a06749f9681f42ede11813c1477754418236b1
-ms.sourcegitcommit: 452e09b543e7b84f943db5b02480ba2d18afd939
+ms.openlocfilehash: d742d6528f4128ef8609a97620b6bcb9703aa60c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866215"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570557"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -26,13 +26,13 @@ ms.locfileid: "87866215"
 
 ## <a name="suggested-prerequisites"></a>推奨される前提条件
 
-**ネットワーク容量のリスクの検証:** [デジタル資産の合理化](../../digital-estate/rationalize.md)は、特に使用可能なネットワーク容量への過負荷に関する問題がある場合に、強く推奨される前提条件です。 デジタル資産の合理化中に、[デジタル資産のインベントリ](../../digital-estate/inventory.md)を収集します。 そのインベントリには、デジタル資産全体の既存のストレージ要件を含める必要があります。 
+**ネットワーク容量のリスクの検証:** [デジタル資産の合理化](../../digital-estate/rationalize.md)は、特に使用可能なネットワーク容量への過負荷に関する問題がある場合に、強く推奨される前提条件です。 デジタル資産の合理化中に、[デジタル資産のインベントリ](../../digital-estate/inventory.md)を収集します。 そのインベントリには、デジタル資産全体の既存のストレージ要件を含める必要があります。
 
 「[レプリケーションのリスク - レプリケーションの物理的特性](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication)」で説明しているように、そのインベントリは、移行データの合計サイズを評価するために使用できます。これは、利用可能な移行帯域幅の合計と比較できます。 その比較がビジネスの変更までの必要な時間に整合しない場合、この記事は、移行速度を速めて、データセンターを移行するために必要な時間を短縮する場合に役立ちます。
 
 **独立したデータ ストアのオフライン転送:** 次の図は、Azure Data Box とのオンラインおよびオフラインの両方のデータ転送の例を示しています。 これらのアプローチは、ワークロードの移行の前にクラウドへ大量のデータを移送するために使用できます。 オフラインのデータ転送では、ソース データをコピーした Azure Data Box が、Azure Storage アカウントにファイルまたは BLOB として転送するために物理的に Microsoft に発送されます。 他の移行作業の前に、このプロセスを使用して、特定のワークロードに直接関連付けられていないデータを移送できます。 こうすることで、ネットワーク経由で移送する必要のあるデータの量が減少し、ネットワークの制約内での移行の完了がサポートされます。
 
-このアプローチは、HDFS、バックアップ、アーカイブ、ファイル サーバー、アプリケーションなどからのデータ転送に使用することができます。 既存の技術的なガイダンスでは、このアプローチを使用して、[HDFS ストア](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)から、または [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)、[データ コピー サービス](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)を使用してディスクから Data Box にデータを転送する方法について説明しています。
+このアプローチは、HDFS、バックアップ、アーカイブ、ファイル サーバー、アプリケーションなどからのデータ転送に使用することができます。 既存の技術的なガイダンスでは、このアプローチを使用して、[HDFS ストア](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)から、または [SMB](/azure/databox/data-box-deploy-copy-data)、[NFS](/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](/azure/databox/data-box-deploy-copy-data-via-rest)、[データ コピー サービス](/azure/databox/data-box-deploy-copy-data-via-copy-service)を使用してディスクから Data Box にデータを転送する方法について説明しています。
 
 また、移行のために Azure Data Box を使用するサードパーティのパートナー ソリューションもあります。 これらのソリューションでは、大量のデータをオフライン転送を介して移動しますが、後からネットワーク経由でより低いスケールで同期します。
 
@@ -63,13 +63,13 @@ Azure への接続が利用できる場合、特にワークロードの移行�
 
 ### <a name="suggested-action-during-the-migration-process"></a>移行プロセス中に推奨されるアクション
 
-**ストレージのコピー:** このアプローチは、HDFS、バックアップ、アーカイブ、ファイル サーバー、またはアプリケーションのデータの転送に使用することができます。 既存の技術的なガイダンスでは、このアプローチを使用して、[HDFS ストア](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)から、または [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data)、[NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)、[データ コピー サービス](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service)を使用してディスクから Data Box にデータを転送する方法について説明しています。
+**ストレージのコピー:** このアプローチは、HDFS、バックアップ、アーカイブ、ファイル サーバー、またはアプリケーションのデータの転送に使用することができます。 既存の技術的なガイダンスでは、このアプローチを使用して、[HDFS ストア](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster)から、または [SMB](/azure/databox/data-box-deploy-copy-data)、[NFS](/azure/databox/data-box-deploy-copy-data-via-nfs)、[REST](/azure/databox/data-box-deploy-copy-data-via-rest)、[データ コピー サービス](/azure/databox/data-box-deploy-copy-data-via-copy-service)を使用してディスクから Data Box にデータを転送する方法について説明しています。
 
 また、移行のために Azure Data Box を使用するサードパーティのパートナー ソリューションもあります。 これらのソリューションでは、大量のデータをオフライン転送を介して移動しますが、後からネットワーク経由でより低いスケールで同期します。
 
-**デバイスの配布:** データをコピーした後、[デバイスを Microsoft に発送する](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up)ことができます。 データは、受信およびインポートされた後、Azure Storage アカウントで使用できます。
+**デバイスの配布:** データをコピーした後、[デバイスを Microsoft に発送する](/azure/databox/data-box-deploy-picked-up)ことができます。 データは、受信およびインポートされた後、Azure Storage アカウントで使用できます。
 
-**資産の復元:** ストレージ アカウントで[データが使用できることを確認](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure)します。 そうであれば、データを BLOB として、または Azure Files で使用できます。 データが VHD または VHDX ファイルの場合は、ファイルをマネージド ディスクに変換できます。 これらのマネージド ディスクは続いて、仮想マシンをインスタンス化するために使用でき、この仮想マシンが元のオンプレミス資産のレプリカを作成します。
+**資産の復元:** ストレージ アカウントで[データが使用できることを確認](/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure)します。 そうであれば、データを BLOB として、または Azure Files で使用できます。 データが VHD または VHDX ファイルの場合は、ファイルをマネージド ディスクに変換できます。 これらのマネージド ディスクは続いて、仮想マシンをインスタンス化するために使用でき、この仮想マシンが元のオンプレミス資産のレプリカを作成します。
 
 **同期:** ずれの同期が移行した資産の要件である場合、資産が復元されるまで、ファイルの同期にいずれかのサードパーティ パートナー ソリューションを使用できます。
 

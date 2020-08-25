@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a21b41583789d25f00d8dfb81ac1e9b8943af004
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: bf320d60ca9b53d72a063e17b24c498272aa19d8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449780"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568449"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>既存のデータ ソースの移行と最新化によってデータを収集する
 
@@ -26,9 +26,9 @@ ms.locfileid: "86449780"
 
 ## <a name="primary-toolset"></a>プライマリ ツールセット
 
-オンプレミスのデータを移行して最新化する場合、最も一般的な Azure ツールの選択肢は [Azure Database Migration Service](https://docs.microsoft.com/azure/dms) です。 このサービスは、より広範な [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) ツールチェーンの一部です。 既存の SQL Server データ ソースについては、[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview) を使用して、少数のデータ構造の評価と移行を行うことができます。
+オンプレミスのデータを移行して最新化する場合、最も一般的な Azure ツールの選択肢は [Azure Database Migration Service](/azure/dms) です。 このサービスは、より広範な [Azure Migrate](/azure/migrate/migrate-services-overview) ツールチェーンの一部です。 既存の SQL Server データ ソースについては、[Data Migration Assistant](/sql/dma/dma-overview) を使用して、少数のデータ構造の評価と移行を行うことができます。
 
-Oracle と NoSQL の移行をサポートするために、特定の種類のソース データベースのターゲット データベースへの移行に対して、[Database Migration Service](https://docs.microsoft.com/azure/dms) を使用することもできます。 例として、Oracle データベースを PostgreSQL に、または MongoDB データベースを Azure Cosmos DB に移行する場合などがあります。 一般的に、導入チームは、パートナー ツールまたはカスタム スクリプトを使用して、Azure Cosmos DB、Azure HDInsight、またはサービスとしてのインフラストラクチャ (IaaS) に基づく仮想マシンのオプションに移行します。
+Oracle と NoSQL の移行をサポートするために、特定の種類のソース データベースのターゲット データベースへの移行に対して、[Database Migration Service](/azure/dms) を使用することもできます。 例として、Oracle データベースを PostgreSQL に、または MongoDB データベースを Azure Cosmos DB に移行する場合などがあります。 一般的に、導入チームは、パートナー ツールまたはカスタム スクリプトを使用して、Azure Cosmos DB、Azure HDInsight、またはサービスとしてのインフラストラクチャ (IaaS) に基づく仮想マシンのオプションに移行します。
 
 ## <a name="considerations-and-guidance"></a>考慮事項とガイダンス
 
@@ -48,12 +48,12 @@ Oracle と NoSQL の移行をサポートするために、特定の種類のソ
 
 | source  | 移行先  | ツール  | 移行の種類 | ガイダンス |
 |---|---|---|---|---|
-| SQL Server | Azure SQL データベース | Database Migration Service | オフライン | [チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
-| SQL Server | Azure SQL データベース | Database Migration Service | オンライン | [チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online) |
-| SQL Server | Azure SQL Managed Instance | Database Migration Service | オフライン | [チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance) |
-| SQL Server | Azure SQL Managed Instance | Database Migration Service | オンライン | [チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online) |
-| RDS SQL Server | Azure SQL Database または Azure SQL Managed Instance | Database Migration Service | オンライン | [チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |
-| MySQL | Azure Database for MySQL | Database Migration Service | オンライン | [チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online) |
-| PostgreSQL | Azure Database for PostgreSQL | Database Migration Service | オンライン | [チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
-| MongoDB | Azure Cosmos DB の MongoDB 用 API | Database Migration Service | オフライン | [チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db) |
-| MongoDB | Azure Cosmos DB の MongoDB 用 API | Database Migration Service | オンライン | [チュートリアル](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online) |
+| SQL Server | Azure SQL データベース | Database Migration Service | オフライン | [チュートリアル](/azure/dms/tutorial-sql-server-to-azure-sql) |
+| SQL Server | Azure SQL データベース | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-sql-server-azure-sql-online) |
+| SQL Server | Azure SQL Managed Instance | Database Migration Service | オフライン | [チュートリアル](/azure/dms/tutorial-sql-server-to-managed-instance) |
+| SQL Server | Azure SQL Managed Instance | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-sql-server-managed-instance-online) |
+| RDS SQL Server | Azure SQL Database または Azure SQL Managed Instance | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |
+| MySQL | Azure Database for MySQL | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-mysql-azure-mysql-online) |
+| PostgreSQL | Azure Database for PostgreSQL | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| MongoDB | Azure Cosmos DB の MongoDB 用 API | Database Migration Service | オフライン | [チュートリアル](/azure/dms/tutorial-mongodb-cosmos-db) |
+| MongoDB | Azure Cosmos DB の MongoDB 用 API | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-mongodb-cosmos-db-online) |

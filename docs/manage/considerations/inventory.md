@@ -1,5 +1,5 @@
 ---
-title: Azure のインベントリと可視性
+title: Azure クラウド管理のインベントリと可視性
 description: 管理対象のもの (インベントリ) とそれらの管理対象のワークロードと資産の経時変化 (可視性) について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b3998f05afa4bd0b8e0fe972674d84318ff63ac4
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: c4103fac5729e0ae757ca89ce6ae1574119af927
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075370"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571577"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>クラウド管理のインベントリと可視性
 
@@ -110,9 +110,9 @@ ms.locfileid: "85075370"
 
 多くの場合、ビジネス上の関係者へのコミットメントに関するオフライン プロセスとコミュニケーションには、レポートが必要です。 セルフサービス レポートまたは定期的なレポートは、強化された管理ベースラインの必須のコンポーネントです。
 
-### <a name="it-service-management-itsm-integration"></a>IT サービス マネジメント (ITSM) の統合
+### <a name="it-service-management-itsm-integration"></a>IT サービスマネジメント (ITSM) の統合
 
-ITSM の統合は、多くの場合、インベントリと可視性に基づいた行動の最初の例です。 想定されるパフォーマンス パターンからの逸脱が発生すると、ITSM の統合では、クラウド プラットフォームからのアラートを使用して個別のサービス管理ツールでチケットをトリガーし、修復アクティビティをトリガーします。 一部の運用モデルでは、強化された管理ベースラインの一部として ITSM の統合が必要になる場合があります。
+ITSM の統合は、多くの場合、インベントリと可視性に基づいた行動の最初の例です。 想定されるパフォーマンス パターンからの逸脱が発生すると、ITSM の統合では、クラウド プラットフォームからのアラートを使用して個別の IT サービス管理ツールでチケットをトリガーし、修復アクティビティをトリガーします。 一部の運用モデルでは、強化された管理ベースラインの一部として ITSM の統合が必要になる場合があります。
 
 ### <a name="data-centralization"></a>データの一元化
 

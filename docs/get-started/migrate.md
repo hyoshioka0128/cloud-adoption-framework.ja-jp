@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 2e20b63bed8ef337f89546049632dd2c8babf539
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 95c6932660e578273bab70e70ffac00bfb8cfc61
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233547"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569367"
 ---
 # <a name="get-started-accelerate-migration"></a>作業を開始しましょう。移行を促進する
 
@@ -29,7 +29,7 @@ ms.locfileid: "86233547"
 
 ![Azure における移行の概要](../_images/get-started/migration-map.png)
 
-標準的な移行シナリオであれば、[SMART (Strategic Migration And Readiness Tool) 評価](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)を使用して貴社の移行の準備状況を示すパーソナライズされた評価を入手することができます。 現在のニーズに最適なガイダンスを特定するために使用します。
+標準的な移行シナリオであれば、[SMART (Strategic Migration And Readiness Tool) 評価](/assessments/?id=strategic-migration-assessment)を使用して貴社の移行の準備状況を示すパーソナライズされた評価を入手することができます。 現在のニーズに最適なガイダンスを特定するために使用します。
 
 ## <a name="get-started"></a>はじめに
 
@@ -46,7 +46,7 @@ ms.locfileid: "86233547"
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を使用して、動機および目標となるビジネス成果を記録します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を使用して、動機および目標となるビジネス成果を記録します。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -64,7 +64,7 @@ ms.locfileid: "86233547"
 **成果物:**
 
 - サポート パートナーに協力を要請する前に、使用条件など契約上の合意を確立します。
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)で認定パートナーを見つけます。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)で認定パートナーを見つけます。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -85,7 +85,7 @@ ms.locfileid: "86233547"
 - 既存インベントリの生データ。
 - 業務上の正当な理由を練り上げるための既存インベントリの定量分析。
 - 最初の 10 個のワークロードの定性分析。
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)内の業務上の正当な理由を更新します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)内の業務上の正当な理由を更新します。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -102,7 +102,7 @@ ms.locfileid: "86233547"
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)を使用して業務上の正当な理由を記録します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を使用して業務上の正当な理由を記録します。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -113,9 +113,9 @@ ms.locfileid: "86233547"
 
 ## <a name="step-5-create-a-migration-plan"></a>手順 5:移行計画を作成する
 
-クラウド導入計画テンプレートは、プロジェクトのバックログをすばやく作成できるようになっています。 このバックログを編集して、検出結果、合理化、必要なスキル、パートナー契約を反映することができます。
+クラウド導入計画は、プロジェクトのバックログをすばやく作成できるようになっています。 このバックログを編集して、検出結果、合理化、必要なスキル、パートナー契約を反映することができます。
 
-- [クラウド導入計画のテンプレート](../plan/template.md): 基本テンプレートをデプロイします。
+- [クラウド導入計画](../plan/template.md):基本テンプレートを使用してクラウド導入計画を定義します。
 - [ワークロードの調整](../plan/workloads.md): バックログにワークロードを定義します。
 - [作業の調整](../plan/assets.md): バックログの資産とワークロードを調整して、優先度の高いワークロードの作業を明確に定義します。
 - [メンバーと時間の調整](../plan/iteration-paths.md): 移行するワークロードのイテレーション、ベロシティ (メンバーの時間)、リリースを定めます。
@@ -144,7 +144,7 @@ ms.locfileid: "86233547"
 
 **成果物:**
 
-- [戦略と計画のテンプレート](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx)にスキルの準備計画を追加します。
+- [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)にスキルの準備計画を追加します。
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -262,4 +262,4 @@ ms.locfileid: "86233547"
 | クラウド&nbsp;ガバナンス&nbsp;チーム | [ガバナンスの方法論](../govern/index.md)を使用して、ガバナンスのプロセス、ポリシー、規範を引き続き改善します。 |
 | クラウド&nbsp;運用&nbsp;チーム | [管理の方法論](../manage/index.md)に基づいて、より充実した運用を Azure で実現します。 |
 
-標準的な移行シナリオであれば、[SMART (Strategic Migration And Readiness Tool) 評価](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment)を使用して貴社の移行の準備状況を示すパーソナライズされた評価を入手することができます。 評価の過程で入力した回答に基づいて、現在のニーズに合った最適な指針を見出すことができます。
+標準的な移行シナリオであれば、[SMART (Strategic Migration And Readiness Tool) 評価](/assessments/?id=strategic-migration-assessment)を使用して貴社の移行の準備状況を示すパーソナライズされた評価を入手することができます。 評価の過程で入力した回答に基づいて、現在のニーズに合った最適な指針を見出すことができます。
