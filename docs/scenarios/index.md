@@ -3,16 +3,16 @@ title: Azure 導入の 1 つの移行アプローチ
 description: Azure Migrate の 1 つの移行アプローチに従って、IT ポートフォリオ全体を移行し、最新化します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1fcc9914a2ba517598972c52dc9e286933d122d2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ad7a3f6af9d57c4d2ebd557c23ec5c08fa222b0a
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572631"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88847821"
 ---
 <!-- docsTest:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
@@ -30,8 +30,8 @@ Azure と Azure Migrate は、どちらも Microsoft テクノロジをホスト
 | | | | |
 |---------|---------|---------|---------|
 | **仮想マシン** | [仮想マシン](../migrate/azure-best-practices/contoso-migration-rehost-vm.md) | [Linux サーバー](../migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md) | [仮想デスクトップ](./wvd/index.md) |
-| **アプリケーション** | [ASP.NET](../migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md) | [Java](/azure/java/migration-overview?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) | [PHP](../migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md) |
-| **データ** | [SQL Server](../migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md) | [オープン ソース データベース](../migrate/azure-best-practices/sql-migration.md) | Analytics |
+| **アプリケーション** | [ASP.NET](../migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md) | [Java](/azure/java/migration-overview?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) | [PHP](../migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md) |
+| **データ** | [SQL Server](../migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md) | [オープン ソース データベース](../migrate/azure-best-practices/sql-migration.md) | [Analytics](../migrate/azure-best-practices/analytics/analytics-solutions-overview.md) |
 | **ハイブリッド** | [Azure Stack](./azure-stack/index.md) | [VMware](../migrate/azure-best-practices/vmware-host.md) | |
 | **その他のシナリオ** | [ワークロードをセキュリティで保護する](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [メインフレーム](../infrastructure/mainframe-migration/index.md) | NetApp と SAP HANA |
 
