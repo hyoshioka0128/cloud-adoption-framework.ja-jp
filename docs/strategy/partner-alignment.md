@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d0822a927afc5d316b97d227b5a2a9afec60e224
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 42e57362a0b4f6dff45995b81352baab5ef358a0
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566681"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662355"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -59,9 +59,11 @@ ms.locfileid: "88566681"
 ### <a name="azure-solution-providers"></a>Azure ソリューション プロバイダー
 
 Microsoft 認定ソリューション プロバイダーは、Microsoft のテクノロジに基づく最新の カスタマー ソリューションを世界中に提供することを専門としています。 経験豊富なパートナーのサポートでクラウドでのビジネスを最適化します。
+
 **[Cloud Solution Provider (CSP) を見つける](https://www.microsoft.com/solution-providers/home)。** 認定 CSP は、クラウド導入のビジネス目標を評価し、ビジネス ニーズを満たして、ビジネスの機敏性と効率性の向上に役立つ最適なクラウド ソリューションを特定して、クラウドを最大限に活用する支援ができます。
 
 Azure Expert マネージド サービス プロバイダー (MSP) では、より高いレベルの機能を検証するためにサードパーティの監査が実施され、認定スタッフの人数、顧客リファレンス、大規模な Azure の年間使用量などの条件によって示されています。
+
 **[マネージド サービス パートナーを見つける](https://www.microsoft.com/solution-providers/search?cacheid=16a3b49b-fef2-449d-bdf0-628008114cca)。** Azure マネージド サービス パートナー (MSP) は、クラウド体験のあらゆる側面をガイドして、Azure へのビジネス転換を支援します。 移行および運用管理のコンサルティングから、クラウド MSP はクラウド導入に伴うあらゆる利点をお客様に紹介します。 また、一般的なサポート、プロビジョニング、課金エクスペリエンスのワンストップ ショップとしての役割も持ちます。すべてが柔軟な従量課金制ビジネス モデルで提供されます。
 
 クラウド導入戦略の開発と並行して、クラウド戦略チームは、ビジネス目標の提供で連携できるソリューション プロバイダーの特定を開始する必要があります。

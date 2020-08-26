@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7cf77a1d6b8335d11a7e4c116ecb5463d5aee312
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0a605d987715aee0b12c846472a6fddd1060087c
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575130"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662474"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -315,7 +315,7 @@ Azure Monitor には、次の 2 つの基本的な種類のログがあります
 Azure Monitor はさまざまなソースからデータを収集できます。 ご自分のアプリケーション、オペレーティング システム、およびそれが依存するサービスから、Azure プラットフォーム自体に至るまで、アプリケーションのさまざまな階層のデータ監視を検討することができます。 Azure Monitor は、以下のそれぞれの層からデータを収集します。
 
 - **アプリケーション監視データ:** プラットフォームを問わず、記述したコードのパフォーマンスと機能に関するデータ。
-- ゲスト OS の監視データ:アプリケーションが実行されているオペレーティング システムに関するデータ。 この OS は Azure、別のクラウド、またはオンプレミスで実行できます。
+- **ゲスト OS 監視データ:** アプリケーションが実行されているオペレーティング システムに関するデータ。 この OS は Azure、別のクラウド、またはオンプレミスで実行できます。
 - **Azure リソース監視データ:** Azure リソースの操作に関するデータ。
 - **Azure サブスクリプション監視データ:** Azure サブスクリプションの操作および管理に関するデータと、Azure 自体の正常性および操作に関するデータ。
 - **Azure テナントの監視データ:** Azure Active Directory など、テナント レベルの Azure サービスの操作に関するデータ。

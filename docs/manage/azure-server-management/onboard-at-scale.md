@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5eeb8bb94ff0de3c1d684bdfd7523657678f9d4b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c178c8814238829ef3904917e47c7990170f0bb1
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572070"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848212"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -37,11 +37,6 @@ Azure サーバー管理サービスをサーバーにオンボードするに�
 [Azure 管理ツールとサービス](./tools-services.md)に関する記事で説明されているすべての管理ソリューションでは、Log Analytics エージェントが Azure 仮想マシンとオンプレミスのサーバーにインストールする必要があります。 Azure Policy を使用すると Azure VM を大規模にオンボードできます。 エージェントがお使いの Azure VM にインストールされ、適切な Log Analytics ワークスペースに接続されるようにポリシーを割り当てます。
 
 Azure Policy には、Log Analytics エージェントと [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) を含む[組み込みのポリシー イニシアチブ](/azure/governance/policy/concepts/definition-structure#initiatives)があります。これは Azure Monitor for VMs に必要です。
-
-<!-- TODOBACKLOG: Add these when available.
-**Preview:** Enable Azure Monitor for virtual machine scale sets.
-**Preview:** Enable Azure Monitor for VMs.
- -->
 
 > [!NOTE]
 > Azure 監視用のさまざまなエージェントについて詳しくは、「[Azure 監視エージェントの概要](/azure/azure-monitor/platform/agents-overview)」をご覧ください。
