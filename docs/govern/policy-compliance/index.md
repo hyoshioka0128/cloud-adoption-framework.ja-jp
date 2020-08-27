@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 016bca5abeaed55dadfec0bdadfd0ad4a4d4f251
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 249a5bcd3fcbefc1378fd2ee0cf8757a5b85b76e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195414"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879797"
 ---
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>クラウドの企業 IT ポリシーを準備する
 
@@ -30,7 +30,7 @@ Microsoft のクラウド導入フレームワークの違いは、購入サイ�
 従来のガバナンスと斬新的なガバナンスでは、企業ポリシーによって、ガバナンスの実用的な定義を作成します。 ほとんどの IT ガバナンス アクションでは、企業ポリシーの監視、適用、運用、および自動化を行うテクノロジを実装するように努力しています。 クラウド ガバナンスも同様の概念に基づいています。
 
 ![コーポレート ガバナンスとガバナンスの規範](../../_images/operational-transformation-govern-large.png)
-_図 1:コーポレート ガバナンスとガバナンスの規範_
+*図 1:コーポレート ガバナンスとガバナンスの規範*
 
 上の図は、ガバナンス戦略を作成するための、ビジネス リスク、ポリシーとコンプライアンス、および監視と適用の間の相互関係を示しています。 ご自身の戦略を実現するには、クラウド ガバナンスの 5 つの規範に従います。
 

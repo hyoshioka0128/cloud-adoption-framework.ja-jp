@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 08a7b2dd69e9c2d5dc05a56415aa8bc1faa787ef
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e84bba82e088c1326ecabf420866fe3ed3240660
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570421"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885968"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -31,7 +31,7 @@ ms.locfileid: "88570421"
 
 移行手法と上記の手順は、次の前提に基づいています。
 
-<!-- docsTest:ignore "plan, ready, and Adopt methodologies" -->
+<!-- docsTest:casing "Plan, Ready, and Adopt methodologies" -->
 
 - 移行スプリントを管理する手法は移行のウェーブまたはリリースに収まり、計画、準備、リリースの手法を使用して定義されます。 各移行スプリント内で、ワークロードのバッチがクラウドに移行されます。
 - ワークロードを移行する前に、短期的なクラウド導入計画のニーズを満たすために、少なくとも 1 つの[ランディング ゾーン](../ready/index.md)が識別、構成、およびデプロイされています。

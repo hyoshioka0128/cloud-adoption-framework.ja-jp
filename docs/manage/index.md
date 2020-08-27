@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 08b75f151806d3d03441845a4acb53e17d3a748d
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 8867c16325b936b847355aba1ace2a99306bf173
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662100"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877740"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド管理
 
@@ -30,8 +30,6 @@ ms.locfileid: "88662100"
 | <br> ![4](../_images/icons/4.png) | <br> [高度な運用と設計の原則](./design-principles.md):より高いレベルのビジネス コミットメントを必要とするプラットフォームやワークロードでは、回復性と信頼性のコミットメントを提供するために、より深いアーキテクチャ レビューが必要になる場合があります。 |
 
 前の手順では、クラウド導入フレームワークの管理手法を実行するためのアクションにつながるアプローチを作成します。
-
-<!-- cSpell:ignore CAF -->
 
 ![クラウド導入フレームワークの管理手法](../_images/manage/caf-manage.png)
 

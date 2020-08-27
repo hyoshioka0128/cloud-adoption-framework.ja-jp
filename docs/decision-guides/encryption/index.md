@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cc7810de1100d9ab4f33973d8993824cc95beb43
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a6e8a7c5b4929c590a4e33784b9ff1f297ec31d0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574144"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881854"
 ---
-<!-- cSpell:ignore BYOK -->
-
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 
 データを暗号化すると、データが不正アクセスから保護されます。 暗号化ポリシーを適切に実装すると、クラウドベースのワークロードにセキュリティのレイヤーが追加され、組織やネットワークの内外両方からの攻撃者や他の承認されていないユーザーに対する保護が提供されます。

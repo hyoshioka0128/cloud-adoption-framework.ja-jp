@@ -7,14 +7,16 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 888f31f26afcbe920fe088fb513ab2f0428d7d09
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 393d91ee283646537a1a2aea59dbe0455a3ac6c6
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195217"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884574"
 ---
-<!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+<!-- docsTest:casing "BMC Control-M" ASSGN DLBL EXTENT LIBDEF EXEC -->
+<!-- docsTest:ignore JOB -->
+<!-- cSpell:ignore dbspaces dbextents ASSGN DLBL EXTENT LIBDEF EXEC IPLs VSAM RACF LPARs -->
 
 # <a name="mainframe-migration-overview"></a>メインフレーム移行の概要
 
@@ -65,9 +67,6 @@ IBM システムでは、CICS などのトランザクション モニターを�
 メインフレームの一般的な操作:
 
 - **オンライン:** ワークロードには、トランザクション処理、データベース管理、接続があります。 それらは多くの場合、IBM DB2、CICS、z/OS コネクタで実装されます。
-
-<!-- docsTest:ignore "BMC Control-M" -->
-<!-- cSpell:ignore JOB ASSGN DLBL EXTENT LIBDEF EXEC -->
 
 - **バッチ:** ジョブはユーザーの介入なしで実行されます。通常、平日の毎朝などの、定期的なスケジュールで行われます。 バッチ ジョブは、Micro Focus Enterprise Server や BMC Control-M ソフトウェアなど、JCL エミュレーターを利用し、Windows または Linux ベースのシステム上で実行できます。
 

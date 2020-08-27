@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0dfc5ce90a6955e36477a51a286bc3c37b01687a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8318e2a6633221b6b94408f997b78bbca58b9595
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574076"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884591"
 ---
-<!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
-
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 
 デプロイが単純なものでない限り、クラウドベースのリソースの整理は IT 部門にとって重要なタスクです。 次の目的のために、名前付けとタグ付けの標準を使用してリソースを整理します。
@@ -27,8 +25,8 @@ ms.locfileid: "88574076"
   - [クラウド会計モデル](../../strategy/cloud-accounting.md)
   - [ROI の計算](../../strategy/financial-models.md#return-on-investment)
   - [コスト管理](../../ready/azure-best-practices/track-costs.md)
-  - [予算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
-  - [警告](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [予算](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [警告](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [定期的な支出の追跡とレポート](../../govern/cost-management/compliance-processes.md)
   - [実装後の最適化](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [コスト最適化戦術](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -72,19 +70,15 @@ ms.locfileid: "88574076"
 
 次に示す一般的なタグ付けパターンは、タグ付けを使用してクラウド資産を整理する方法の例を示しています。 これらのパターンは、1 つだけ使用する必要はなく、いくつかを同時に使用でき、会社のニーズに基づいて複数の方法で資産を整理できます。
 
-<!-- markdownlint-disable MD033 -->
-<!-- docsTest:disable -->
+<!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 | タグの種類 | 例 | 説明 |
-|-----|-----|-----|
+|--|--|--|
 | 機能 | `app` = `catalogsearch1` <br> `tier` = `web` <br> `webserver` = `apache` <br> `env` = `prod` <br> `env` = `staging` <br> `env` = `dev` | ワークロード内での目的との関連、デプロイされている環境、または他の機能および運用に関する詳細で、リソースを分類します。 |
 | 分類 | `confidentiality` = `private` <br> `SLA` = `24hours` | 使用方法および適用されるポリシーによって、リソースを分類します。 |
 | 会計 | `department` = `finance` <br> `program` = `business-initiative` <br> `region` = `northamerica` | 課金を目的として、組織内の特定のグループにリソースを関連付けることができます。 |
 | パートナーシップ | `owner` = `jsmith` <br> `contactalias` = `catsearchowners` <br> `stakeholders` = `user1;user2;user3` | リソースに関連のある、またはそれ以外でリソースによって影響を受けるユーザー (IT 外) に関する情報を提供します。 |
 | 目的 | `businessprocess` = `support` <br> `businessimpact` = `moderate` <br> `revenueimpact` = `high` | 投資に関する決定のサポートを向上させるため、リソースをビジネス機能と一致させます。 |
-
-<!-- docsTest:enable -->
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="learn-more"></a>詳細情報
 
