@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 9567b09ef527e59be2c1206cc6933c2f88bc9834
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 83086286d620f33aa2f92b2f13aa9a0e4c7b1dd2
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569486"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662168"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>作業を開始しましょう。クラウドで新しい製品とサービスのイノベーションを促進する
 
-クラウドで新しい製品やサービスを作成するには、移行に必要なアプローチとは異なるアプローチが必要です。 Azure 向けのクラウド導入フレームワークにおけるイノベーションの方法論では、新しい製品とサービスの開発をガイドするアプローチが確立されます。
+クラウドで新しい製品やサービスを作成するには、移行に必要なアプローチとは異なるアプローチが必要です。 Azure 向けのクラウド導入フレームワークにおけるイノベーション手法により、新しい製品およびサービスの開発をガイドするアプローチが確立されます。
 
 このガイドでは、次の図で強調表示されているクラウド導入フレームワークの各セクションを使用します。 イノベーションは、標準的な移行と比べて予測しづらいものの、広義のクラウド導入計画のコンテキストには当てはまります。 このガイドは、企業がイノベーションに必要なサポートを提供すると共に、クラウド導入全体でバランスの取れたポートフォリオを作成するための構造を提供するうえで役立ちます。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 33817a6f0afc10e0415ed666855ff5818efdddf1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f4ed4d8d3c07827124d038bac88a2401819c078f
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573634"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848229"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -53,12 +53,12 @@ ms.locfileid: "88573634"
 
 ID に関して Azure が信頼するサービスは Azure Active Directory (Azure AD) の 1 つだけです。 ここではユーザーを Azure AD に追加し、前に示したすべての領域に対して使用しますが、 Azure AD の構成方法を見る前に、これらのサービスへのアクセスの管理に使用される特権アカウントについて理解しておくことが重要です。
 
-ご自身の組織が Azure アカウントにサインアップしたときに、少なくとも 1 つの Azure **アカウント所有者**が割り当てられています。 また、既存のテナントが、ご自身の組織で使用している他の Microsoft サービス (Office 365 など) にまだ関連付けられていなかった場合は、Azure AD **テナント**が作成されています。 Azure AD テナントに対する完全なアクセス許可を持つ**グローバル管理者**が、そのテナントの作成時に関連付けられました。
+ご自身の組織が Azure アカウントにサインアップしたときに、少なくとも 1 つの Azure **アカウント所有者**が割り当てられています。 また、既存のテナントが、組織で使用している他の Microsoft サービス (Microsoft 365 など) にまだ関連付けられていなかった場合は、Azure AD **テナント**が作成されています。 Azure AD テナントに対する完全なアクセス許可を持つ**グローバル管理者**が、そのテナントの作成時に関連付けられました。
 
 Azure アカウント所有者と Azure AD グローバル管理者の両方のユーザー ID が、Microsoft によって管理されている安全性の高い ID システムに格納されています。 Azure アカウント所有者には、サブスクリプションを作成、更新、および削除する権限があります。 Azure AD グローバル管理者が Azure AD で許可されているアクションは多数ありますが、この設計ガイドでは、ユーザー ID の作成と削除に注目します。
 
 > [!NOTE]
-> お使いのアカウントに既存の Office 365、Intune、または Dynamics 365 ライセンスが関連付けられている場合は、ご自身の組織に Azure AD テナントが既に存在することがあります。
+> お使いのアカウントに既存の Microsoft 365、Intune、または Dynamics 365 ライセンスが関連付けられている場合は、ご自身の組織に Azure AD テナントが既に存在することがあります。
 
 Azure アカウント所有者には、サブスクリプションを作成、更新、および削除するアクセス許可が付与されています。
 

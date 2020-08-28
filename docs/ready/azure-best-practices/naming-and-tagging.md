@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 57d0ea8b033a3a043d9243f1b9ecbcae5e9b9391
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6112658b38a8889475ed21af13aa234fa16bd5d5
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569877"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848246"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -243,6 +243,15 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | サブスクリプション                    | アカウント/ <br> Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001 |
 | Resource group                  | サブスクリプション                       | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-acctlookupsvc-share-001 <li> rg-ad-dir-services-shared-001 |
 | API 管理サービス インスタンス | グローバル                             | apim-\<App or service name\>                                | apim-navigator-prod                                                                                                     |
+
+> [!NOTE]
+> 上記を含め、このドキュメント内にある名前の例では、3 桁の埋め込み (\<\#\#\#\>) が示されています。 つまり、  mktg-prod-*001*
+>
+> 資産が構成管理データベース (CMDB)、IT 資産管理ツール、または従来のアカウンティング ツールで管理されている場合、埋め込みにより、人間が読みやすくなり、並べ替えるのに役立ちます。 デプロイされた資産が IT 資産の大規模なインベントリまたはポートフォリオの一部として一元的に管理されている場合、埋め込みアプローチは、インベントリの名前付けを管理するためにこれらのシステムで使用されるインターフェイスと適合します。
+>
+> 残念ながら、従来の資産埋め込みアプローチは、非埋め込み数値に基づいて資産を反復処理する場合のある、コードとしてのインフラストラクチャのアプローチでは問題が発生する可能性があります。 このアプローチは、デプロイまたは自動構成管理のタスクにおいて一般的です。 これらのスクリプトでは、埋め込みを定期的に削除し、埋め込まれた数値を実数に変換する必要があります。これにより、スクリプトの開発と実行時間が遅くなります。
+>
+> どちらのアプローチを実装するかは、個人的な判断です。 この記事での埋め込みの意図は、インベントリの番号付けに対して一貫したアプローチを使用することの重要性を示すことであり、どちらのアプローチが優れているかを示すものではありません。 数値スキーマ (埋め込みあり、またはなし) を決定する前に、CMDB/資産管理ソリューションとコードベースのインベントリ管理のうち、どちらの方が長期的な操作に大きな影響を与えるかを評価します。 その後、運用ニーズに最適な埋め込みオプションを採用します。 
 
 ### <a name="example-names-networking"></a>名前の例:ネットワーク
 

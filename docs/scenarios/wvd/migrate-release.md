@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 301afe5e901685b5069ec73937c86674a1eb17d1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2fedb2769fec0179f24c2e4e8528d20c22efb4a5
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574994"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848263"
 ---
 # <a name="windows-virtual-desktop-post-deployment"></a>Windows Virtual Desktop のデプロイ後
 
@@ -30,7 +30,7 @@ Windows Virtual Desktop インスタンスの移行またはデプロイに向�
 
 リリースが完了したら、[Windows Virtual Desktop をより適切に操作するため、ログ記録と診断](/azure/virtual-desktop/diagnostics-log-analytics#push-diagnostics-data-to-your-workspace)を追加するのが一般的です。 また、一般的に、運用チームはプールされたホストとデスクトップ仮想マシンを [Azure サーバー管理のベスト プラクティス](../../manage/azure-server-management/index.md)にオンボードして、レポート、修正プログラム、および事業継続とディザスター リカバリーの構成を管理します。
 
-このリリース プロセスはこの移行シナリオの対象外ではありますが、以後移行を繰り返していく中で、追加のワークロードを Azure に移行する必要性がこのプロセスによって明らかになる場合があります。 Office 365 または Azure Active Directory を構成していない場合、クラウド導入チームは、デスクトップ シナリオのリリース時にこれらのサービスにオンボードできます。 ハイブリッド運用モデルでは、運用チームは、Intune、System Center、または他の構成管理ツールを統合して、運用、コンプライアンス、セキュリティを向上させることもできます。
+このリリース プロセスはこの移行シナリオの対象外ではありますが、以後移行を繰り返していく中で、追加のワークロードを Azure に移行する必要性がこのプロセスによって明らかになる場合があります。 Microsoft 365 または Azure Active Directory を構成していない場合、クラウド導入チームは、デスクトップ シナリオのリリース時にこれらのサービスにオンボードできます。 ハイブリッド運用モデルでは、運用チームは、Intune、System Center、または他の構成管理ツールを統合して、運用、コンプライアンス、セキュリティを向上させることもできます。
 
 ## <a name="next-steps"></a>次のステップ
 

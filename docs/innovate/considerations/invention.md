@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 52518647e6d1a32c9c41a6a9dfe72a15d276624c
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 3770f7ac19b48ade74b1d32ca08e7a9b9496a301
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449219"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662287"
 ---
 # <a name="develop-digital-inventions"></a>デジタル発明を開発する
 
 「[デジタル経済のイノベーション](./index.md)」で説明されているように、イノベーションでは発明と採用の間のバランスが求められます。 導入を促進するには、顧客のフィードバックとパートナーシップが必要です。 次のセクションで説明する規範では、導入と顧客の共感を念頭に置きながら、デジタル発明を発展させるための一連のアプローチが定義されています。 この後、各規範について簡単に説明し、各プロセスの詳細にアクセスするためのリンクを示します。
 
-![クラウド導入フレームワーク: イノベーションの方法論](../../_images/innovate/innovate-methodology.png)
+![クラウド導入フレームワークのイノベーション手法](../../_images/innovate/innovate-methodology.png)
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>デジタル発明の各規範の概要
 

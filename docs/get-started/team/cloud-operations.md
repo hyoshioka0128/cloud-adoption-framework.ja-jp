@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: b609163e6e6239cc0b346842358ab83799630b02
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: eb9c57c8ddc91821eb6dcde48279cd08fbd5c3db
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573855"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661947"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>作業を開始しましょう。クラウド運用チームを結成する
 
@@ -87,13 +87,13 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 ## <a name="step-4-review-the-methodology"></a>手順 4:手法を確認する
 
-クラウド導入フレームワークの管理手法を確認して、運用管理の将来のビジョンと、そのビジョンを実現するための実用的なアプローチを確立するのに役立てます。
+運用管理の将来のビジョンと、そのビジョンを実現するための実用的なアプローチを確立できるように、クラウド導入フレームワークの管理手法を確認します。
 
 **成果物:**
 
 - 管理手法をサポートする方法論、アプローチ、および実装について理解します。
 
-**成果物の完成をサポートするためのガイダンス:**
+**成果物の完遂をサポートするうえでのガイダンス:**
 
 - [クラウド導入フレームワークの管理手法](../../manage/index.md)を確認します。
 
@@ -126,7 +126,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 - ビジネス利害関係者が期待していることを文書化します。
 - 特定のワークロードまたはプラットフォームに高度な運用が必要とされるかどうかを判断します。
 
-**成果物の完成をサポートするためのガイダンス:**
+**成果物の完遂をサポートするうえでのガイダンス:**
 
 - クラウド上で[ビジネス アラインメント](../../manage/considerations/business-alignment.md)を構築します。
 - [運用管理のブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で、ポートフォリオと運用に期待される内容を文書化します。
@@ -183,7 +183,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 - クラウド導入チームからのハンドオフを定期的に確認して受け入れます。
 
-**成果物の完成をサポートするためのガイダンス:**
+**成果物の完遂をサポートするうえでのガイダンス:**
 
 - [新しいワークロードとリソースをオンボードする](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)ためのプロセスを確立します。
 

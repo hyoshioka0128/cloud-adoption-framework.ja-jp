@@ -7,13 +7,14 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 998a9a5069190e710723d637b22392a03701969e
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 4d29e1512578cc3312a0f4eda32629368fb5927d
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195694"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661964"
 ---
+<!-- cSpell:ignore MSPs -->
 <!-- markdownlint-disable MD024 -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークの最新情報
@@ -78,7 +79,7 @@ Microsoft クラウド導入フレームワークに人工知能 (AI) ソリュ�
 | [エンタープライズ規模の設計のガイドライン](../ready/enterprise-scale/design-guidelines.md) | Azure ランディング ゾーンの共通設計領域を実現するためにエンタープライズ規模のガイドラインを評価します |
 | [実装ガイドライン](../ready/enterprise-scale/implementation-guidelines.md) | デプロイの前に、エンタープライズ規模の実装に必要なアクティビティを確認します |
 
-パートナーは、クラウド導入を成功させるための重要な要素です。 クラウド導入フレームワークのガイダンスの全体を通して、パートナーの重要な役割と、お客様がパートナーをより適切に活用するための方法を示すリファレンスが追加されています。 検証済みの CAF パートナーの一覧については、[CAF 対応のパートナー オファー](https://aka.ms/adopt/partneroffers)、[Azure エキスパート MSP パートナー](https://www.microsoft.com/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e)、[上級スペシャリスト パートナー](https://www.microsoft.com/azure/partners/advspec)に関するページをご覧ください。
+パートナーは、クラウド導入を成功させるための重要な要素です。 クラウド導入フレームワークのガイダンスの全体を通して、パートナーが果たす重要な役割と、お客様がより適切にパートナーと関わる方法を示すリファレンスが追加されています。 検証済みの CAF パートナーの一覧については、[CAF 対応のパートナー オファー](https://aka.ms/adopt/partneroffers)、[Azure Expert マネージド サービス プロバイダー (MSP)](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all)、[上級スペシャリスト パートナー](https://www.microsoft.com/azure/partners/advspec)に関するページをご覧ください。
 
 ## <a name="may-15-2020"></a>2020 年 5 月 15 日
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cd5e3d69709dc2fbbf9b79fcca3bf0efc63b021b
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: f5b066eed95a2fbe3ac17cb0b2e00cbdf5263a04
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787029"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880613"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準的な企業のガバナンス ガイド
 
@@ -24,7 +24,7 @@ ms.locfileid: "84787029"
 すぐに始められるように、この概要では、ベスト プラクティスに基づくガバナンスのための実用最小限の製品 (MVP) が定義されています。 また、新しいビジネスや技術的リスクが登場したときにベスト プラクティスをさらに追加するいくつかのガバナンス改善へのリンクも提供されています。
 
 > [!WARNING]
-> この MVP は、一連の想定に基づくベースラインの起点です。 この最小限の一連のベスト プラクティスも、独自のビジネス リスクとリスク許容範囲によってもたらされる企業のポリシーに基づいています。 これらの想定が自分にも当てはまるかどうかを確認するには、この記事の後にある[長い物語](./narrative.md)を読んでください。
+> この MVP は、一連の想定に基づくベースラインの起点です。 この最小限の一連のベスト プラクティスも、独自のビジネス リスクとリスク許容範囲によってもたらされる企業のポリシーに基づいています。 これらの想定がご自身にも当てはまるかどうかを確認するには、この記事に続く[長文の物語](./narrative.md)をお読みください。
 
 ### <a name="governance-best-practices"></a>ガバナンスのベスト プラクティス
 

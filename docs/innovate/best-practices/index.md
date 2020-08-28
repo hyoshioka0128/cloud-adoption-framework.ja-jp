@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 758180e4f8771dab5502636eab3da8d9f9e0847a
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 01410f4ae4728681bb8d349e5f87ec8d1442e3ba
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040667"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878556"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>Azure でデジタル発明を開発する
 
@@ -22,7 +22,7 @@ Azure は、デジタル発明の各分野の開発を加速化するのに役�
 
 Azure 内には、デジタル発明とイノベーションのためのクラウドベース ツールの組み合わせが多数あります。 後続の記事シリーズでは、イノベーション方法論と密接に足並みを揃えるツールをいくつか取り上げます。 次の画像では、さまざまなツールが各種イノベーションにどのように対応しているかを示しています。
 
-![クラウド導入フレームワークのイノベーション ツールチェーンを示す図](../../_images/innovate/innovate-toolchain.png)
+![クラウド導入フレームワークのイノベーション ツールチェーンを示す図。](../../_images/innovate/innovate-toolchain.png)
 
 ## <a name="toolchain"></a>ツールチェーン
 

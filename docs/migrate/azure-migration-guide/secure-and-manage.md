@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2dbe690b10e21c06d348bf3196077fa812a043c9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: afde995e27d37114727fafa540f0f1232c49e8b3
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570268"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848127"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -151,7 +151,7 @@ Azure Backup は、Microsoft クラウド内のデータをバックアップ (�
 
 ## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
-このガイドの前の方で、移行の実行の一部として Azure Site Recovery を使用する方法について説明しました。 ただし、それにより、移行が完了した後のディザスター リカバリー戦略の重要なコンポーネントも形成されます。
+Azure Site Recovery は、移行が完了した後のディザスター リカバリー戦略の重要な要素を形成します。
 
 Azure Site Recovery サービスを使用すると、プライマリ Azure リージョンでホストされた仮想マシンとワークロードを、セカンダリ リージョンでホストされたコピーにレプリケートできます。 プライマリ リージョンで障害が発生した場合は、セカンダリ リージョンで実行されているコピーにフェールオーバーし、そこから引き続きアプリケーションやサービスにアクセスできます。 仮想マシンのプライマリ コピーの停止が再び稼働状態になったら、そこにフェールバックできます。
 

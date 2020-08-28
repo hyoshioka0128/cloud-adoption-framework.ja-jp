@@ -1,25 +1,23 @@
 ---
 title: クラウド導入フレームワークの概要
 description: 一般的なシナリオと、クラウド導入フレームワークを通じてそのシナリオに最も近い方法で対応する過程を探ります。
-services: cloud-adoption-framework
-ms.service: cloud-adoption-framework
-ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
 ms.date: 05/04/2020
+ms.topic: conceptual
+ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 63eb1694e24f1ef8041d2e08e2328314b273915c
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 457f0e57813cbc68a755d35b4eb3fdf639a419de
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662119"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884353"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>クラウド導入フレームワークの概要
 
 これらの一般的なシナリオでは、Azure 向けの Microsoft クラウド導入フレームワークを使用したロードマップを提供します。 これにより、アジャイル アプローチを使用して、最小限の実行可能なソリューションから始めることで、スピード、イノベーション、制御のバランスを取ることができます。 時間の経過と共にそのソリューションを反復し、改善することができます。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | シナリオ | 説明 |

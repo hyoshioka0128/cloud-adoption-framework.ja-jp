@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a731afb2dc97384a4156f5781a7e13be40f54000
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c1beda856259190adbfb6035d9c6bafd7d93d0d1
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191333"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848178"
 ---
 <!-- cSpell:ignore CDO's CIO's -->
 
@@ -44,7 +44,7 @@ CIO は会社に役立つ可能性のある革新的な考えを持っていま�
 - IT 部門は、世界中で 20 を超える社有のデータセンターを運営しています。
 - 組織の成長や複数の地域のために、特定の地域内で運営する単一の事業単位に影響する独特のデータ主権およびコンプライアンス要件を持ついくつかの IT チームがあります。
 - 各データセンターは、一連の地域専用回線で接続されており、疎結合のグローバル WAN を構成しています。
-- IT 部門は、エンドユーザーのすべての電子メール アカウントを Office 365 に移行することからクラウドを始めました。 この移行は 6 か月以上前に完了しました。 それ以来、クラウドにはごくわずかな IT 資産しか導入されていません。
+- IT 部門は、エンドユーザーのすべての電子メール アカウントを Microsoft 365 に移行することからクラウドを始めました。 この移行は 6 か月以上前に完了しました。 それ以来、クラウドにはごくわずかな IT 資産しか導入されていません。
 - CDO の主な開発チームは、クラウドネイティブ機能について学ぶために開発/テストの予算内で取り組んでいます。
 - ある事業部門は、クラウド内でビッグ データを実験しています。 IT 部門内の BI チームがその取り組みに参加しています。
 - 既存の IT ガバナンス ポリシーでは、顧客の個人データと財務データは、会社が直接所有する資産でホストされる必要があると規定されています。 このポリシーがあるため、ミッションクリティカル アプリケーションや保護されたデータにクラウドを導入できません。

@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d8283cc541a98ee3b6d840e405162cff012b01e6
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5c8ea1dd6f6ad7d3824264b58bbef87b174d727a
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570285"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848195"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
-このフェーズでは、評価フェーズの出力を使用して環境の移行を開始します。 このガイドは、ネイティブ ツール、サード パーティ製ツール、プロジェクト管理ツールなど、完了状態に到達するための適切なツールを識別するのに役立ちます。
+このフェーズでは、評価フェーズの出力を使用して環境の移行を開始します。 このガイドは、完了状態に至るための適切なツールの特定に役立ちます。 ネイティブ ツール、サードパーティ製ツール、およびプロジェクト管理ツールについて確認します。
 
 <!-- markdownlint-disable MD025 -->
 
@@ -32,14 +32,17 @@ ms.locfileid: "88570285"
 
 Azure Migrate では、統合型の拡張可能な移行エクスペリエンスが提供されます。 Azure Migrate は、評価と Azure への移行の各フェーズにわたって移行の道のりを追跡するための、ワンストップの専用エクスペリエンスを提供します。 好みのツールを使用し、これらのツール間で移行の進行状況を追跡するためのオプションを提供します。
 
-Azure Migrate は以下の機能を提供します。
+Azure Migrate は、オンプレミスのサーバー、インフラストラクチャ、アプリケーション、およびデータの評価と Azure への移行を行うための一元的なハブです。 WCF インターセプターには、次の機能があります。
 
-1. 強化された評価および移行機能:
-    - Hyper-V 評価。
-    - 改良された VMware 評価。
+- 評価、移行、および進行状況の追跡の機能を備えた統合プラットフォーム。
+- 強化された評価および移行機能:
+    - Hyper-V と VMware を備えたオンプレミスのサーバー。
     - VMware 仮想マシンの Azure へのエージェントレス移行。
-1. 評価、移行、進捗状況を統合的に追跡。
-1. ISV 統合 (Cloudamize など) による拡張可能なアプローチ。
+    - Azure SQL Database または SQL Managed Instance へのデータベースの移行
+    - Web アプリケーション
+    - Azure の Windows Virtual Desktop に対する仮想デスクトップ インフラストラクチャ (VDI)
+    - Azure Data Box 製品を使用した大規模なデータ収集
+- ISV 統合 (Cloudamize など) による拡張可能なアプローチ。
 
 Azure Migrate を使用して移行を実行するには、次の手順に従います。
 
@@ -49,63 +52,14 @@ Azure Migrate を使用して移行を実行するには、次の手順に従い
 1. 次を選択します: **[評価ツールの選択]**  >  **[Azure Migrate:Server Assessment]**  >  **[次へ]** 。
 1. **[ツールの確認と追加]** を選択し、構成を確認します。 **[ツールの追加]** を選択して、移行プロジェクトの作成と選択したソリューションの登録のジョブを開始します。
 
+> [!NOTE]
+> 特定のシナリオに固有のガイダンスについては、チュートリアルと Azure Migrate の [ドキュメント](/azure/migrate/migrate-services-overview)を参照してください。
+>
+
 #### <a name="learn-more"></a>詳細情報
 
+- [Azure Migrate について](/azure/migrate/migrate-services-overview)
 - [Azure Migrate のチュートリアル - 物理または仮想サーバーを Azure に移行する](/azure/migrate/tutorial-migrate-physical-virtual-machines)
-
-### <a name="azure-site-recovery"></a>Azure Site Recovery
-
-Azure Site Recovery サービスは、オンプレミス リソースの Azure への移行を管理できます。 また、オンプレミス マシンと Azure VM のディザスター リカバリーを管理および調整して、事業継続とディザスター リカバリー (BCDR) の目的を達成することもできます。
-
-以下の手順は、Site Recovery を使用して移行するプロセスの概要です。
-
-> [!TIP]
-> シナリオによっては、以下の手順は若干異なる場合があります。 詳細については、[オンプレミスのマシンの Azure への移行](/azure/site-recovery/migrate-tutorial-on-premises-azure)に関する記事をご覧ください。
-
-#### <a name="prepare-azure-site-recovery-service"></a>Azure Site Recovery サービスを準備する
-
-1. Azure portal で、 **[+ リソースの作成]**  >  **[管理ツール]**  >  **[Backup and Site Recovery]** の順に選択します。
-1. まだ復旧コンテナーを作成していない場合は、ウィザードを完了して **Recovery Services コンテナー** リソースを作成します。
-1. **[リソース]** メニューで、 **[Site Recovery]**  >  **[インフラストラクチャの準備]**  >  **[保護の目標]** の順に選択します。
-1. **[保護の目標]** で、何を移行するかを選択します。
-    1. **VMware:** **[To Azure]\(Azure へ\)**  >  **[Yes, with VMware vSphere Hypervisor]\(はい、VMware vSphere ハイパーバイザーを使用する\)** の順に選択します。
-    1. **物理マシン:** **[To Azure]\(Azure へ\)**  >  **[非仮想化/その他]** の順に選択します。
-    1. **Hyper-V:** **[To Azure]\(Azure へ\)**  >  **[Yes, with Hyper-V]\(はい、Hyper-V を使用する\)** の順に選択します。 Hyper-V VM が VMM で管理される場合は **[はい]** を選択します。
-
-#### <a name="configure-migration-settings"></a>移行の設定の構成
-
-1. ソース環境を適宜設定します。
-1. ターゲット環境を設定します。
-    1. **[インフラストラクチャの準備]**  >  **[ターゲット]** の順に選択し、使用する Azure サブスクリプションを選択します。
-    1. Resource Manager デプロイ モデルを指定します。
-    1. Site Recovery によって、互換性のある Azure Storage アカウントとネットワークが 1 つ以上あるかどうかが確認されます。
-1. レプリケーション ポリシーを設定します。
-1. レプリケーションを有効にします。
-1. テスト移行 (テスト フェールオーバー) を実行します。
-
-#### <a name="migrate-to-azure-using-failover"></a>フェールオーバーを使用して Azure に移行する
-
-1. **[設定]**  >  **[レプリケートされたアイテム]** で、マシンを選択し、 **[フェールオーバー]** を選択します。
-1. **[フェールオーバー]** で、フェールオーバー先の**復旧ポイント**を選択します。 最新の復旧ポイントを選択します。
-1. 必要に応じて、暗号化キーの設定を構成します。
-1. **[フェールオーバーを開始する前にマシンをシャットダウンします]** を選択します。 Site Recoverty は、仮想マシンのシャットダウンを試行してからフェールオーバーをトリガーします。 仮にシャットダウンが失敗したとしても、フェールオーバーは続行されます。 フェールオーバーの進行状況は [ジョブ] ページで確認できます。
-1. 想定どおりに Azure VM が Azure に表示されることを確認します。
-1. **[レプリケートされたアイテム]** で VM を選択したまま (または右クリックし)、 **[移行の完了]** を選択します。
-1. 必要に応じて、移行後の手順を実行します (このガイドの関連情報を参照)。
-
-::: zone target="chromeless"
-
-::: form action="Create[#create/Microsoft.RecoveryServices]" submitText="Create a Recovery Services vault" :::
-
-::: zone-end
-
-::: zone target="docs"
-
-詳細については、次を参照してください。
-
-- [オンプレミスのマシンを Azure に移行する](/azure/site-recovery/migrate-tutorial-on-premises-azure)
-
-::: zone-end
 
 ### <a name="azure-database-migration-service"></a>Azure Database Migration Service
 
@@ -151,7 +105,9 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 
 ### <a name="data-migration-assistant"></a>Data Migration Assistant
 
-Data Migration Assistant は、SQL Server または Azure SQL Database の新しいバージョンでデータベース機能に影響する可能性のある互換性の問題を検出することによって、最新のデータ プラットフォームへのアップグレードを支援します。 DMA は、ターゲット環境のパフォーマンスと信頼性を高めるための推奨事項を提案し、スキーマ、データ、非コンテナー化オブジェクトをソース サーバーからターゲット サーバーに移動できるようにします。
+Data Migration Assistant (DMA) を使用すると、SQL Server または Azure SQL Database の新しいバージョンでデータベースの機能に影響する可能性がある互換性の問題を検出することで、最新のデータ プラットフォームへのアップグレードを支援します。 DMA は、ターゲット環境のパフォーマンスと信頼性を高めるための推奨事項を提案し、スキーマ、データ、非コンテナー化オブジェクトをソース サーバーからターゲット サーバーに移動できるようにします。
+
+Data Migration Assistant は Azure Migrate と統合されているため、Azure Migrate ダッシュボードですべての評価の進行状況を追跡できます。 Azure Migrate: Database Assessment ツールを追加して Azure Migrate から DMA を起動し、DMA の [Azure Migrate にアップロードする] ボタンを選択してデータベース評価を Azure Migrate に追加します。
 
 > [!NOTE]
 > (データベースの数とサイズの観点から) 大規模な移行の場合、データベースを大規模に移行できる Azure Database Migration Service を使用することをお勧めします。
@@ -264,7 +220,7 @@ Microsoft では以下のプロジェクト管理ツールも用意しており�
 - [Microsoft Teams](https://products.office.com/microsoft-teams): チームのコラボレーションとコミュニケーションのためのツール。 Teams を Planner や他のツールと統合して、コラボレーションを強化することもできます。
 - [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops):Azure DevOps を使用するために、クラウド導入フレームワークの計画テンプレートは必要ありません。 テンプレートを使用せずにサービスを使用して、コードとしてインフラストラクチャを管理することや、作業項目とボードを使用してプロジェクト管理を実行することができます。 発展に合わせて、組織で CI/CD 機能を利用できます。
 
-利用可能なツールはこれらに限られません。 他にも多くのサード パーティ製ツールが、プロジェクト管理コミュニティで広く使用されています。
+使用可能なプロジェクト管理ツールはこれらのツールに限られません。 他にも多くのサード パーティ製ツールが、プロジェクト管理コミュニティで広く使用されています。
 
 ### <a name="set-up-for-devops"></a>DevOps 用の設定
 
@@ -282,4 +238,4 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 ## <a name="cost-management"></a>[コスト管理](#tab/ManageCost)
 
-リソースをクラウド環境に移行するときは、定期的なコスト分析を実行することが重要です。 移行プロセスによって追加の使用量要件がサービスに適用される可能性があるため、想定外の使用量料金をこれにより回避できます。 コストとワークロードのバランスを取るために、必要に応じてリソースのサイズを変更することもできます。詳細については、[最適化と変換](./optimize-and-transform.md)に関するセクションをご覧ください。
+リソースをクラウド環境に移行するときは、定期的なコスト分析を実行することが重要です。 移行プロセスによって追加の使用量要件がサービスに適用される場合があるため、定期的なコスト分析により想定外の使用料金の発生を回避できます。 コストとワークロードのバランスを取るために、必要に応じてリソースのサイズを変更することもできます。詳細については、[最適化と変換](./optimize-and-transform.md)に関するセクションをご覧ください。

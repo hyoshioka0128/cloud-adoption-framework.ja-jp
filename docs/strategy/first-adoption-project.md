@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 35df4edd8437cea20f0bc397be901443c21015a5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 39d83a2caa61178404a87fa33abe6bef66f502ff
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194648"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848331"
 ---
 # <a name="first-cloud-adoption-project"></a>最初のクラウド導入プロジェクト
 
@@ -46,7 +46,7 @@ Azure のクラウド導入フレームワークは、クラウド導入のプ�
 
 前の条件に対応するために、各動機カテゴリーの最初のプロジェクトの例を以下に示します。
 
-- **重要なビジネス イベント:** 重要なビジネス イベントが主な動機であるときは、[Azure Site Recovery](../migrate/azure-migration-guide/migrate.md#azure-site-recovery) のようなツールの実装が最初のプロジェクトとして適切であると考えられます。 移行中に、このツールを使用してデータセンターの資産を迅速に移行できます。 ただし、最初のプロジェクトで、これを純粋にディザスター リカバリー ツールとして使用することで、データセンター内のディザスター リカバリー資産への依存度を減らすことができる可能性があります。
+- **重要なビジネス イベント:** 重要なビジネス イベントが主な動機であるときは、[Azure Site Recovery](../migrate/azure-migration-guide/secure-and-manage.md#replicate-an-azure-vm-to-another-region-with-site-recovery-service) のようなツールの実装が最初のプロジェクトとして適切であると考えられます。 移行時、データセンターの資産を迅速に移行するために [Azure Migrate](../migrate/azure-migration-guide/migrate.md#azure-migrate) などのツールを利用します。 ただし、最初のプロジェクトのときは、まずディザスター リカバリー ツールとして Azure Site Recovery を使用できます。 プログラムで移行を計画する前に、データセンター内のディザスター リカバリー資産への依存度を減らします。
 
 - **移行の動機:** 移行が主な動機である場合、重要でないワークロードの移行から始めるのが賢明です。 [Azure セットアップ ガイド](../ready/azure-setup-guide/index.md)と [Azure 移行ガイド](../migrate/azure-migration-guide/index.md)は、最初のワークロードの移行のための手引きとして使用できます。
 

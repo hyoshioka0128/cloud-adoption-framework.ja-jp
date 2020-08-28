@@ -1,18 +1,18 @@
 ---
 title: ランディング ゾーンのリファクター
-description: ランディング ゾーンのリファクタリングのプロセス。
+description: ランディング ゾーンのリファクタリングのプロセスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5a00526d5dcac1e7da49e9d0a8af1a6468e0026c
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 7f4982669209f52f597411c036ad4d669afcb98f
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196758"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661862"
 ---
 # <a name="refactor-landing-zones"></a>ランディング ゾーンのリファクター
 

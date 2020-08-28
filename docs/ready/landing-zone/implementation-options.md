@@ -3,16 +3,16 @@ title: ランディング ゾーンの実装オプション
 description: 要件に最も適したランディング ゾーンの実装オプションを決定します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 06/15/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fada3a1485c470e04562365fe4f0a038c121708c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6a5aad81f1ea855434160c2bc8aefd313fca7335
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569656"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662202"
 ---
 # <a name="landing-zone-implementation-options"></a>ランディング ゾーンの実装オプション
 
@@ -34,12 +34,13 @@ ms.locfileid: "88569656"
 
 | 実装オプション | 説明 | デプロイの速度 | より深い設計原則 | デプロイの手順 |
 |---|---|---|---|---|
-| [クラウド導入フレームワークの移行ランディング ゾーンのブループリント](./migrate-landing-zone.md) | 危険度の低い資産を移行するための基本的な基盤をデプロイします。 | 小規模から始める | [設計原則](./migrate-landing-zone.md#design-principles) | [デプロイする](./migrate-landing-zone.md) |
-| [クラウド導入フレームワーク基盤ブループリント](./foundation-blueprint.md) | ガバナンス戦略の開発を始めるために必要な最小限のツールが追加されます。 | 小規模から始める | [設計原則](./foundation-blueprint.md#design-principles) | [デプロイする](./foundation-blueprint.md) |
-| [クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン](../enterprise-scale/index.md) | エンタープライズ対応のプラットフォーム基盤と、完全な IT ポートフォリオをサポートするために必要なすべての共有サービスがデプロイされます。 | エンタープライズ規模 | [設計原則](../enterprise-scale/design-principles.md) | [デプロイする](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
-| [クラウド導入フレームワークの Terraform モジュール](./terraform-landing-zone.md) | マルチクラウド運用モデルに対するサードパーティのパス。 このパスでは、Azure ファーストの運用モデルを制限できます。 | 小規模から始める | [設計原則](./terraform-landing-zone.md#design-decisions) | [デプロイする](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
+| [CAF 移行ランディング ゾーンのブループリント](./migrate-landing-zone.md) | 危険度の低い資産を移行するための基本的な基盤をデプロイします。 | 小規模から始める | [設計原則](./migrate-landing-zone.md#design-principles) | [デプロイする](./migrate-landing-zone.md) |
+| [CAF 基盤ブループリント](./foundation-blueprint.md) | ガバナンス戦略の開発を始めるために必要な最小限のツールが追加されます。 | 小規模から始める | [設計原則](./foundation-blueprint.md#design-principles) | [デプロイする](./foundation-blueprint.md) |
+| [CAF エンタープライズ規模のランディング ゾーン](../enterprise-scale/index.md) | エンタープライズ対応のプラットフォーム基盤と、完全な IT ポートフォリオをサポートするために必要なすべての共有サービスがデプロイされます。 | エンタープライズ規模 | [設計原則](../enterprise-scale/design-principles.md) | [デプロイする](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
+| [CAF Terraform モジュール](./terraform-landing-zone.md) | マルチクラウド運用モデルに対するサードパーティのパス。 このパスでは、Azure ファーストの運用モデルを制限できます。 | 小規模から始める | [設計原則](./terraform-landing-zone.md#design-decisions) | [デプロイする](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
+| [パートナー ランディング ゾーン](./partner-landing-zone.md) | クラウド導入フレームワークの準備手法に合ったオファリングを提供するパートナーは、独自のカスタマイズされた実装オプションを提供できます。 | 変数 | [設計原則](./partner-landing-zone.md) | [パートナーを見つける](https://www.microsoft.com/azure/partners/adopt?filters=ready) |
 
-次の表では、より技術的な意志決定プロセスをガイドするために、若干異なる視点から同じ実装オプションを示します。
+次の表では、より技術的な意志決定プロセスをガイドするために、若干異なる視点からこれらの実装オプションをいくつか示します。
 
 | 実装オプション | ハブ | スポーク | デプロイ テクノロジ | デプロイの手順 |
 |---|---|---|---|---|

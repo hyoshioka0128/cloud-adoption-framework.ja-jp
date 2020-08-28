@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: fd045661c68f928321c39907b5c3877bcbe87fd8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 137a19423a5dd780abc552feb2a68ef11d8a11d5
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88576029"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662270"
 ---
 # <a name="compare-common-cloud-operating-models"></a>一般的なクラウド運用モデルを比較する
 

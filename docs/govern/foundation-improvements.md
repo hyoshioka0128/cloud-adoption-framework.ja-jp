@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e06a96c7e7397680e26b326f02a055013ec29ee
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 2b8de6fb4979621b70857a3cfd3dc0cec9e9f7f7
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191792"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661981"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の改善
 
@@ -37,7 +37,7 @@ ms.locfileid: "86191792"
 
 ## <a name="next-steps"></a>次のステップ
 
-ベスト プラクティスの適用に加えて、クラウド導入フレームワークのガバナンス 手法をビジネス上の固有の制約に合わせてカスタマイズすることもできます。 適切な推奨事項に従った後、[企業ポリシーを評価して追加のカスタマイズ要件を把握](./corporate-policy.md)します。
+ベスト プラクティスの適用に加えて、クラウド導入フレームワークのガバナンス手法をビジネス上の固有の制約に合わせてカスタマイズすることもできます。 適切な推奨事項に従った後、[企業ポリシーを評価して追加のカスタマイズ要件を把握](./corporate-policy.md)します。
 
 > [!div class="nextstepaction"]
 > [企業ポリシーの評価](./corporate-policy.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dfbde6cb7008ce33a77afde238b2b550ec397d23
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 688c9c11e1366621769baaccdcdb335275e4712a
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754706"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88847872"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
 
@@ -38,7 +38,7 @@ ms.locfileid: "83754706"
 この会社の IT およびクラウド運用の現在の状態は次のとおりです。
 
 - IT 部門は 2 つのホスト型インフラストラクチャ環境を運用しています。 1 つ目の環境には運用資産が含まれています。 2 つ目の環境にはディザスター リカバリーと一部の開発/テスト資産が含まれています。 これらの環境は、2 つの異なるプロバイダーによってホストされます。 IT 部門は、これら 2 つのデータセンターをそれぞれ Prod と DR と呼びます。
-- IT 部門は、エンドユーザーのすべての電子メール アカウントを Office 365 に移行することからクラウドを始めました。 この移行は 6 か月前に完了しました。 他の IT 資産は、クラウドにはほとんどデプロイされていません。
+- IT 部門は、エンドユーザーのすべての電子メール アカウントを Microsoft 365 に移行することからクラウドを始めました。 この移行は 6 か月前に完了しました。 他の IT 資産は、クラウドにはほとんどデプロイされていません。
 - アプリケーション開発チームは、クラウドのネイティブ機能について学ぶために開発/テストの予算内で取り組んでいます。
 - ビジネス インテリジェンス (BI) チームは、クラウド内のビッグ データと新しいプラットフォーム上のデータのキュレーションを実験しています。
 - この会社には、顧客の個人データと財務データをクラウドでホストすることはできないという、あいまいに定義されたポリシーがあります。これにより、現在のデプロイでミッションクリティカル アプリケーションが制限されています。

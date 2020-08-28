@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d7c7f8438c8dc4a68d7e8e46678477119975d449
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ea6d0f9a3f3864315f3daed8011aa5e73901dea1
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571135"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848093"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -97,7 +97,7 @@ Azure インフラストラクチャおよびプラットフォームのリソ�
 
 ### <a name="monitor-with-system-center-operations-manager"></a>System Center Operations Manager を使用して監視する
 
-System Center Operations Manager は、元々、IT 環境で実行されているアプリケーション、ワークロード、インフラストラクチャ コンポーネント全体で監視するオンプレミス ソリューションとして設計されましたが、クラウド監視機能を含むように進化しています。 Azure、Office 365、およびアマゾン ウェブ サービス (AWS) と統合されています。 このような多様な環境をサポートするように設計および更新されている管理パックを使用して、それらを監視できます。  
+System Center Operations Manager は、元々、IT 環境で実行されているアプリケーション、ワークロード、インフラストラクチャ コンポーネント全体で監視するオンプレミス ソリューションとして設計されましたが、クラウド監視機能を含むように進化しています。 Azure、Microsoft 365、およびアマゾン ウェブ サービス (AWS) と統合されています。 このような多様な環境をサポートするように設計および更新されている管理パックを使用して、それらを監視できます。  
 
 IT サービス マネジメント プロセスおよびツールと緊密に統合された包括的な監視を実現するために Operations Manager に多額の投資を行ってきたお客様や、Azure を初めて使用するお客様であれば、次のような疑問を持っても当然です。
 

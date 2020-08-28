@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 249424c9aea50df96c94f479c06e3ae28a0d522b
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: d64873d414656da8caadc6a60a2ddd08f850cf38
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196272"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662304"
 ---
 <!-- docsTest:ignore InterpretML FairLearn -->
 
@@ -24,12 +24,12 @@ Microsoft は、人を第一に考える倫理原則に基づいて、AI の発�
 
 AI ソリューションを実装する際、ソリューションで次の AI の原則を考慮することをお勧めします。
 
-- 公平性:AI システムでは、すべてのユーザーを公平に扱う必要があります。
-- 信頼性と安全性:AI システムを確実かつ安全に実行する必要があります。
-- プライバシーとセキュリティ:AI システムは安全で、プライバシーを尊重する必要があります。
-- 包括性:AI システムはすべての人を支援し、ユーザーを関与させる必要があります。
-- 透明性: AI システムは理解可能である必要があります。
-- 説明責任:すべてのユーザーが AI システムについて責任を持ちます。
+- **公平性:** AI システムでは、すべてのユーザーを公平に扱う必要があります。
+- **信頼性と安全性:** AI システムを確実かつ安全に実行する必要があります。
+- **プライバシーとセキュリティ:** AI システムは安全で、プライバシーを尊重する必要があります。
+- **包括性:** AI システムはすべての人を支援し、ユーザーを関与させる必要があります。
+- **透明性:** AI システムは理解可能である必要があります。
+- **アカウンタビリティ:** すべてのユーザーが AI システムについて責任を持ちます。
 
 ## <a name="establish-a-responsible-ai-strategy"></a>責任ある AI 戦略を確立する
 

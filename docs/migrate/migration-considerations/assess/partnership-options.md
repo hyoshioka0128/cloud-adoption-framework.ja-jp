@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6ed3f2231350ecf93a561600946e13419f630735
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1b436a38dddff3aa4451854f8d3d2c58de31fd77
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575266"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662236"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -93,8 +93,8 @@ Microsoft 認定ソリューション プロバイダーは、Microsoft のテ�
 
 既製の Azure ソリューションまたはカスタム Azure ソリューションを提供するパートナー、また、それらのソリューションをデプロイし、管理するうえでの支援を提供するパートナーからサポートを得られます。
 
-- **[クラウド ソリューション パートナーを見つける](https://www.microsoft.com/solution-providers/home)。** 認定 CSP は、クラウド導入のビジネス目標を評価し、ビジネス ニーズを満たして、ビジネスの機敏性と効率性の向上に役立つ最適なクラウド ソリューションを特定して、クラウドを最大限に活用する支援ができます。
-- **[マネージド サービス パートナーを見つける](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)。** Azure マネージド サービス パートナー (MSP) は、クラウド体験のあらゆる側面をガイドして、Azure へのビジネス転換を支援します。 移行および運用管理のコンサルティングから、クラウド MSP はクラウド導入に伴うあらゆる利点をお客様に紹介します。 また、一般的なサポート、プロビジョニング、課金エクスペリエンスのワンストップ ショップとしての役割も持ちます。すべてが柔軟な従量課金制ビジネス モデルで提供されます。
+- [クラウド ソリューション パートナーを見つける](https://www.microsoft.com/solution-providers/home)。 認定 CSP は、クラウド導入のビジネス目標を評価し、ビジネス ニーズを満たして、ビジネスの機敏性と効率性の向上に役立つ最適なクラウド ソリューションを特定して、クラウドを最大限に活用する支援ができます。
+- [Azure Expert マネージド サービス プロバイダー (MSP) を見つける](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all)。 MSP は、クラウド導入作業のあらゆる側面をガイドして、ビジネスの Azure への移行を支援します。 移行および運用管理のコンサルティングから、クラウド MSP はクラウド導入に伴うあらゆる利点をお客様に紹介します。 また、一般的なサポート、プロビジョニング、課金エクスペリエンスのワンストップ ショップとしての役割も持ちます。すべてが柔軟な従量課金制ビジネス モデルで提供されます。
 
 ## <a name="next-steps"></a>次のステップ
 

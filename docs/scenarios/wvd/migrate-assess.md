@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 50bb778d07a3f963272ca1f716a9f76ace5bbc60
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d313641025bd5cc768c3e4f99feedb768880f396
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569622"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848280"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows Virtual Desktop の評価
 
@@ -68,7 +68,7 @@ Windows Virtual Desktop 評価ごとに、ユーザーのペルソナ、仮想�
 Movere と Lakeside による現在のオンプレミス環境のスキャンにより、エンドユーザーのデスクトップで実行されているアプリケーションに関するデータが提供されます。 そのデータを使用すると、各ペルソナで必要になるすべてのアプリケーションの一覧を作成できます。 必要なアプリケーションそれぞれについて、以下の質問の答えにより、デプロイの繰り返しを計画できます。
 
 - ペルソナがこのデスクトップを使用するために、インストールする必要のあるアプリケーションはありますか? ペルソナが、完全に Web ベースのソフトウェアをサービス アプリケーションとして使用するのでない限り、各ペルソナに対して[カスタムのマスター VHD イメージを構成](/azure/virtual-desktop/set-up-customize-master-image)して、そのマスター イメージに必要なアプリケーションをインストールすることが必要になるでしょう。
-- このペルソナは、Office 365 アプリケーションを必要としますか? そうであるなら、[カスタマイズされたマスター VHD イメージに Office 365 を追加する](/azure/virtual-desktop/install-office-on-wvd-master-image)必要があります。
+- このペルソナは、Microsoft 365 アプリケーションを必要としますか? そうであるなら、[カスタマイズされたマスター VHD イメージに Microsoft 365 を追加する](/azure/virtual-desktop/install-office-on-wvd-master-image)必要があります。
 - このアプリケーションは、Windows&nbsp;10 マルチセッションと互換性がありますか? アプリケーションに互換性が無い場合、カスタムの VHD イメージを実行するために[個人用プール](/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type)が必要になることがあります。 アプリケーションと Windows Virtual Desktop の互換性の問題については、[Desktop Application Assure](/fasttrack/win-10-app-assure-assistance-offered) サービスを参照してください。
 - ミッションクリティカルなアプリケーションは、Windows Virtual Desktop インスタンスと任意のバックエンド システムとの間の待機時間から影響を受ける可能性がありますか? その場合、アプリケーションをサポートしているそのバックエンド システムを Azure に移行することの検討をお勧めします。
 

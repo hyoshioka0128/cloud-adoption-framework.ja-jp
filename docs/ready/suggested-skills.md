@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c4f8e3cb34f901699ebfa5506fe9e657a71dde6c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a45b0db36d2c587dbe126f47859e67418c3fe707
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575096"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661709"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 

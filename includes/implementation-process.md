@@ -10,7 +10,7 @@
 ID ベースラインは、すべてのガバナンスに対する基本的な開始ポイントです。 ガバナンスを適用する前に、ID を確立する必要があります。 その後、確立された ID 戦略が、ガバナンス ソリューションによって適用されます。
 このガバナンス ガイドでは、ID 管理チームが[ディレクトリ同期](~/decision-guides/identity/index.md#directory-synchronization)パターンを実装します。
 
-- RBAC は、ディレクトリ同期を使用するか、会社が Office 365 に移行するときに実装された "同一サインオン" を使用して、Azure Active Directory (Azure AD) によって提供されます。 実装のガイダンスについては、[Azure AD の統合の参照アーキテクチャ](/azure/architecture/reference-architectures/identity/azure-ad)に関する記事をご覧ください。
+- RBAC は、ディレクトリ同期を使用するか、会社が Microsoft 365 に移行するときに実装された "同一サインオン" を使用して、Azure Active Directory (Azure AD) によって提供されます。 実装のガイダンスについては、[Azure AD の統合の参照アーキテクチャ](/azure/architecture/reference-architectures/identity/azure-ad)に関する記事をご覧ください。
 - Azure にデプロイされた資産に対する認証とアクセスも、Azure AD テナントによって管理されます。
 
 ガバナンス MVP では、ガバナンス チームが、この記事で後述するサブスクリプション ガバナンス ツールを使用して、レプリケートされたテナントの適用を強制します。 将来のイテレーションでは、ガバナンス チームは Azure AD の豊富なツールも強制して、この機能を拡張できます。

@@ -1,18 +1,18 @@
 ---
 title: Azure へのアプリケーション移行例の概要
-description: クラウド導入フレームワークの移行方法の一環として含まれている、アプリケーション移行例の概要を説明します。
+description: クラウド導入フレームワークの移行手法の一環として含まれている、アプリケーション移行例の概要を説明します。
 author: deltadan
 ms.author: abuck
 ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: afae06e0a9bd432a2901e245b28917c37efe6e9a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c9dcdb9c3ce42a0221adeb6d418f4329f471eb5d
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567089"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661930"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Azure へのアプリケーション移行例の概要
 

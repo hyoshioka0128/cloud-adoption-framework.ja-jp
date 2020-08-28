@@ -1,6 +1,6 @@
 ---
 title: デプロイ高速化の規範の概要
-description: Azure のクラウド導入フレームワークを使用して、クラウド ガバナンスに関連するデプロイ高速化について説明します。
+description: Azure のクラウド導入フレームワークを使用して、クラウド ガバナンスに関連するデプロイ高速化の規範について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d7fa7682a5671e4d7ebd865fc36b45a17cfe05f7
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d255fd0b4b7727ea72ee7219673fb91632f03568
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573736"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883537"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>デプロイ高速化の規範の概要
 
@@ -41,7 +41,7 @@ ms.locfileid: "88573736"
 |--|--|
 | <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [デプロイ高速化規範テンプレート](./template.md):デプロイ高速化の規範を文書化するためのテンプレートをダウンロードします。 |
 | <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):一般的にデプロイ高速化の規範に関係する動機およびリスクを理解できます。|
-| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md):デプロイ高速化の規範に投資する最適なタイミングであるかどうかを知るインジケーターです。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md):デプロイ高速化の規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
 | <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | <br> [ポリシー準拠プロセス](./compliance-processes.md):デプロイ高速化の規範でのポリシー準拠を確保するための推奨の手順です。 |
 | <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。|
 | <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):デプロイ高速化の規範をサポートするために実装できる Azure サービスです。 |
@@ -52,5 +52,3 @@ ms.locfileid: "88573736"
 
 > [!div class="nextstepaction"]
 > [ビジネス リスクを理解する](./business-risks.md)
-
-<!-- markdownlint-enable MD033 -->

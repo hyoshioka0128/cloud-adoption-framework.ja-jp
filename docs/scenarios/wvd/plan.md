@@ -7,18 +7,18 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d3da947c4b9c22501b21e2cd96f7ca9647f7c205
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: f2c609be969dc39a61a00ccccab6b897110a731f
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196398"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662398"
 ---
 # <a name="windows-virtual-desktop-planning"></a>Windows Virtual Desktop の計画
 
 Windows Virtual Desktop とデプロイ シナリオでは、他の移行作業と同じ移行手法に従います。 一貫性のあるこの手法により、移行ファクトリや既存の移行チームは、非技術要件をほとんど変更せずにこのプロセスを採用できます。
 
-![クラウド導入フレームワーク移行手法の図。](../../_images/migrate/methodology.png)
+![クラウド導入フレームワークの移行手法。](../../_images/migrate/methodology.png)
 
 ## <a name="plan-your-migration"></a>移行を計画する
 

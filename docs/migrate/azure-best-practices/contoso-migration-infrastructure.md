@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 5db2ac236aee2a710f01d2d45a1d6477f554796c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1927536ece343905d9371755d9af8e693b5fb9cf
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571390"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848348"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -123,7 +123,7 @@ Azure ハイブリッド特典では、コスト効果の高い移行方法が�
 
 ID およびアクセス管理によってユーザーが Azure リソースにアクセスできるようにして、アクセスを制御することは、Azure インフラストラクチャをまとめ上げるための重要なステップです。
 
-Contoso では、Azure に新しい別個のシステムを構築するのではなく、オンプレミスの Active Directory をクラウドに拡張することに決めています。 Contoso は Office 365 をまだ使用していないため、Azure AD インスタンスをプロビジョニングする必要があります。 Contoso が Office 365 を使用していれば、既存の Azure AD テナントおよびディレクトリが既にあるので、これをプライマリ Azure AD インスタンスとして使用できます。
+Contoso では、Azure に新しい別個のシステムを構築するのではなく、オンプレミスの Active Directory をクラウドに拡張することに決めています。 Contoso は Microsoft 365 をまだ使用していないため、Azure AD インスタンスをプロビジョニングする必要があります。 Contoso が Microsoft 365 を使用していれば、既存の Azure AD テナントおよびディレクトリが既にあるので、これをプライマリ Azure AD インスタンスとして使用できます。
 
 [Microsoft 365 ID モデルと Azure Active Directory](/office365/enterprise/about-office-365-identity) の詳細を確認します。 [Azure サブスクリプションを Azure Active Directory テナントに関連付けるか、追加する](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)方法も確認してください。
 
@@ -207,7 +207,7 @@ _図 7:オンプレミスの Active Directory セキュリティ グループ_
 
 ### <a name="synchronize-active-directory"></a>Active Directory を同期する
 
-Contoso は、オンプレミスとクラウドのリソースへのアクセスに共通の ID を提供することを望んでいます。 そのためには、オンプレミスの Active Directory インスタンスと Azure AD を統合します。 このモデルでは、ユーザーと組織は単一の ID を利用して、オンプレミスのアプリケーションと、Office 365 などのクラウド サービスやインターネット上の何千もの他のサイトにアクセスできます。 管理者は、Active Directory 内のグループを使用して、Azure で[ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/role-assignments-portal) を実装できます。
+Contoso は、オンプレミスとクラウドのリソースへのアクセスに共通の ID を提供することを望んでいます。 そのためには、オンプレミスの Active Directory インスタンスと Azure AD を統合します。 このモデルでは、ユーザーと組織は単一の ID を利用して、オンプレミスのアプリケーションと、Microsoft 365 などのクラウド サービスやインターネット上の何千もの他のサイトにアクセスできます。 管理者は、Active Directory 内のグループを使用して、Azure で[ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/role-assignments-portal) を実装できます。
 
 統合を容易にするため、Contoso は [Azure AD Connect ツール](/azure/active-directory/connect/active-directory-aadconnect)を使います。 このツールをドメイン コントローラーにインストールして構成すると、オンプレミスの Active Directory ID が Azure AD に同期されます。
 
