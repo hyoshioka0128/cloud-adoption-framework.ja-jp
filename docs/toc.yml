@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: はじめに
+  - name: 作業開始
     items:
       - name: 概要
         href: get-started/index.md
@@ -23,34 +23,40 @@ items:
             href: reference/fundamental-concepts/hosting-hierarchy.md
           - name: Azure 階層のサポート
             href: reference/fundamental-concepts/hierarchy-azure-tools.md
-      - name: 移行を促進する
-        href: get-started/migrate.md
-      - name: 新しい製品とサービスを構築する
-        href: get-started/innovate.md
-      - name: 環境の設計と構成の阻害要素を取り除く
-        href: get-started/design-and-configuration.md
-      - name: 顧客の成功を支援する
-        href: get-started/enable.md
-      - name: オペレーショナル エクセレンスを実現する
-        href: get-started/operational-excellence.md
-      - name: クラウド コストを管理する
-        href: get-started/manage-costs.md
-      - name: 企業環境をセキュリティで保護する
-        href: get-started/security.md
-      - name: 信頼性を向上させる
-        href: get-started/reliability.md
-      - name: 一貫したパフォーマンスを確保する
-        href: get-started/performance.md
-      - name: 組織の足並みを揃える
-        href: get-started/org-alignment.md
-      - name: クラウド戦略チームを結成する
-        href: get-started/team/cloud-strategy.md
-      - name: クラウド導入チームを結成する
-        href: get-started/team/cloud-adoption.md
-      - name: クラウド ガバナンス チームを結成する
-        href: get-started/team/cloud-governance.md
-      - name: クラウド運用チームを結成する
-        href: get-started/team/cloud-operations.md
+      - name: 導入を加速する
+        items:
+          - name: 移行を促進する
+            href: get-started/migrate.md
+          - name: 新しい製品とサービスを構築する
+            href: get-started/innovate.md
+          - name: 環境の設計と構成の阻害要素を取り除く
+            href: get-started/design-and-configuration.md
+      - name: コントロールを改善する
+        items:
+          - name: 顧客の成功を支援する
+            href: get-started/enable.md
+          - name: オペレーショナル エクセレンスを実現する
+            href: get-started/operational-excellence.md
+          - name: クラウド コストを管理する
+            href: get-started/manage-costs.md
+          - name: 企業環境をセキュリティで保護する
+            href: get-started/security.md
+          - name: 信頼性を向上させる
+            href: get-started/reliability.md
+          - name: 一貫したパフォーマンスを確保する
+            href: get-started/performance.md
+      - name: チームの確立
+        items:
+          - name: 組織の足並みを揃える
+            href: get-started/org-alignment.md
+          - name: クラウド戦略チームを結成する
+            href: get-started/team/cloud-strategy.md
+          - name: クラウド導入チームを結成する
+            href: get-started/team/cloud-adoption.md
+          - name: クラウド ガバナンス チームを結成する
+            href: get-started/team/cloud-governance.md
+          - name: クラウド運用チームを結成する
+            href: get-started/team/cloud-operations.md
   - name: 戦略
     items:
       - name: 概要
@@ -201,7 +207,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: Architecture
+              - name: アーキテクチャ
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md
