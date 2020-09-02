@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f08e1c0bdb516edea017da27baa531e0d422bd42
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 0177a577ef34165fd593da1a3e2716fac3de3ab9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815023"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879393"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>リソースの整合性ポリシーのコンプライアンス プロセス
 

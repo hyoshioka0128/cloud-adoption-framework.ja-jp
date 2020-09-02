@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bf320d60ca9b53d72a063e17b24c498272aa19d8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f3d2663bdb3c057f5031eeacc79e2068c729cb89
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568449"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884489"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>既存のデータ ソースの移行と最新化によってデータを収集する
 
@@ -46,8 +46,8 @@ Oracle と NoSQL の移行をサポートするために、特定の種類のソ
 
 許容できるビジネスのダウンタイムを決定し、オフライン移行をテストすることをお勧めします。 これを行って、復元時間が許容されるダウンタイムを満たしているかどうかを確認します。 復元時間を許容できない場合は、オンライン移行を実行します。
 
-| source  | 移行先  | ツール  | 移行の種類 | ガイダンス |
-|---|---|---|---|---|
+| source | 移行先 | ツール | 移行の種類 | ガイダンス |
+|--|--|--|--|--|
 | SQL Server | Azure SQL データベース | Database Migration Service | オフライン | [チュートリアル](/azure/dms/tutorial-sql-server-to-azure-sql) |
 | SQL Server | Azure SQL データベース | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-sql-server-azure-sql-online) |
 | SQL Server | Azure SQL Managed Instance | Database Migration Service | オフライン | [チュートリアル](/azure/dms/tutorial-sql-server-to-managed-instance) |

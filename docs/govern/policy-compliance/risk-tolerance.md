@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: f5fb46adeb01ddf71db61c5f0555b81a147c725a
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 0c9f6ff5b576a189d20bcb7819d4f9ee30c18dd8
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191163"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879525"
 ---
 # <a name="evaluate-risk-tolerance"></a>リスク許容度の評価
 

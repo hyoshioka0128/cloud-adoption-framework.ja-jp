@@ -7,15 +7,13 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 1f759debd007ffdf03cee1802a564a8b11927964
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6e3cbf834111b1ce6e68354070e8266a3d1f0d9a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575079"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885560"
 ---
-<!-- cSpell:ignore Terraform's -->
-
 # <a name="tools-and-templates"></a>ツールとテンプレート
 
 クラウド導入フレームワークには、技術的変更をすばやく実装するのに役立つツールが含まれています。 これらのツール、テンプレート、評価を使用して、クラウドの導入を促進します。 以下のリソースは、導入の各フェーズで役立つ可能性があります。 一部のツールとテンプレートは、複数のフェーズで使用できます。

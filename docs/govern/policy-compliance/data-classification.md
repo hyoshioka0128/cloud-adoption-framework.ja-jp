@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 719bd1ada85fb67b29ba0dc3f93b4dbf7a243a8c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0593b15558665d7b500d6505fd3d5e5ff4bbea42
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573226"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879831"
 ---
 # <a name="what-is-data-classification"></a>データ分類とは
 
@@ -52,4 +52,4 @@ Microsoft が使用する分類の一覧を以下に示します。 業界や既
 機密データのセキュリティ保護に関する記事を確認して、この記事シリーズの学習を続けます。 次の記事では、機密情報または機密性の高い情報として分類されるデータを扱う場合に適用できる分析情報について説明します。
 
 > [!div class="nextstepaction"]
-> [機密データをセキュリティで保護する](/azure/architecture/data-guide/scenarios/securing-data-solutions?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+> [機密データをセキュリティで保護する](/azure/architecture/data-guide/scenarios/securing-data-solutions?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)

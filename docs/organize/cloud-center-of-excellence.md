@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7db178d6a17786e89d1cf273300147f54aeb1ef4
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 2c7bf4e4703df1c524f2a7d34bf55e47cb69699b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077216"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881582"
 ---
-<!-- cSpell:ignore ccoe deprioritize -->
-
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>クラウドのセンター オブ エクセレンス (CCoE) 機能
 
 ビジネスと技術の機敏性は、ほとんどの IT 組織の中核となる目標です。 クラウドのセンター オブ エクセレンス (CCoE) は、速度と安定性のバランスを取る機能です。

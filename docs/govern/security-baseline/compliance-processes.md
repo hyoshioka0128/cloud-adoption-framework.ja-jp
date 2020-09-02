@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f30e906d7dee61ca98e88398ed16f1dc1828adb3
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9f0116d99e13135cb5a71388d52c9bc9236a6c38
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755848"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879015"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>セキュリティ ベースライン ポリシーのコンプライアンス プロセス
 

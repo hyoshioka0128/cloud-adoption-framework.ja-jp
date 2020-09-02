@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 55ffac53041f961757909ec80b7118d2e2118f2a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 55238bee14d03883e94c87612f8819f92d981d01
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568993"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879134"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure のリソース整合性ツール
 
 [リソースの整合性](./index.md)は、[5 つのクラウド ガバナンス規範](../governance-disciplines.md)のうちの 1 つです。 これは、環境、アプリケーションまたはワークロードの運用管理に関係するポリシーを規定する方法に関する規範です。 クラウド ガバナンスの 5 つの規範のうち、"リソースの整合性" の規範にアプリケーション、ワークロード、および資産のパフォーマンスの監視が必要です。 これには、スケール要求の充足、パフォーマンスの SLA 違反の修復、および自動修復によるパフォーマンス SLA 違反の事前回避を行うために必要なタスクも含まれています。
 
-<!-- docsTest:ignore "conditional access to resources" -->
+<!-- docutune:casing "conditional access to resources" -->
 
 この規範をサポートするポリシーとプロセスを成熟させるのに役立つ Azure ツールの一覧を次に示します。
 

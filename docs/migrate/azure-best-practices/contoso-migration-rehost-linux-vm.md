@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: e7da84f927955228b4ef9fb28fb66aa54324fa8f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 862786173dead6832c44b5b8ecb8ba4a2b4ff4da
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574926"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877757"
 ---
-<!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
+<!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
 
 # <a name="rehost-an-on-premises-linux-application-to-azure-vms"></a>オンプレミスの Linux アプリケーションを Azure VM にリホストする
 
@@ -289,8 +289,6 @@ Contoso のセキュリティ チームは、OSTICKETWEB と OSTICKETMYSQL の V
 - チームは、Azure Disk Encryption と Azure Key Vault を使用して、VM ディスク上のデータをセキュリティで保護することも検討します。
 
 詳細については、「[Azure における IaaS ワークロードのセキュリティに関するベスト プラクティス](/azure/security/fundamentals/iaas)」を参照してください。
-
-<!-- docsTest:ignore "Quickstart: Set" -->
 
 ### <a name="business-continuity-and-disaster-recovery"></a>事業継続とディザスター リカバリー
 

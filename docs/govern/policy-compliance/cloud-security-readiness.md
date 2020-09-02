@@ -7,15 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 31d24872c3ed2f13d7c4bada472fb5a0b194e86c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fe5bcc293d5d3e555c03e954487e3cc7e4c395de
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573260"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879916"
 ---
-<!-- cSpell:ignore CISO -->
-
 # <a name="ciso-cloud-readiness-guide"></a>CISO のクラウド準備状況に関するガイド
 
 クラウド導入フレームワークなどの Microsoftによるガイダンスは、このドキュメントのサポート対象である何千社もの企業に特有のセキュリティ制約を、特定したり左右したりするように位置付けられていません。 クラウドに移行する場合、最高情報セキュリティ責任者や最高情報セキュリティ オフィス (CISO) の役割は、クラウド テクノロジに取って代わられるものではありません。 まったく逆に、CISO と CISO オフィスは、よりしっかりと根付いた、統合された存在となります。 このガイドは、読者が CISO のプロセスに精通しており、クラウド変革を実現するためにそれらのプロセスを最新化しようとしていることを前提としています。
@@ -38,7 +36,7 @@ ms.locfileid: "88573260"
 
 成長の思考様式で[ポリシー レビュー](./cloud-policy-review.md)に取り掛かるためには、クラウドに関する知識が必須です。 以下のリソースは、CISO が Microsoft の Azure プラットフォームのセキュリティ体制をより深く理解するのに役立ちます。
 
-<!-- docsTest:ignore "Security Response in the Cloud" -->
+<!-- docutune:casing "Security Response in the Cloud" -->
 
 **セキュリティ プラットフォームのリソース:**
 
@@ -56,7 +54,7 @@ ms.locfileid: "88573260"
 - [法執行機関への対応](https://www.microsoft.com/trust-center/privacy)
 - [厳格なプライバシー基準](https://www.microsoft.com/trust-center/privacy)
 
-<!-- docsTest:ignore "Cloud Services Due Diligence Checklist" -->
+<!-- docutune:casing "Cloud Services Due Diligence Checklist" -->
 
 **コンプライアンス:**
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 701d4888ebe766603f1a7b33c4b77134867fb7c5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: dea15cfe0abfcfbb8a7771149a4a734dd0d278d9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572563"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884812"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>クラウド移行の業務上の妥当性をまとめ
 

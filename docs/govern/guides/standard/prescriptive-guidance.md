@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: db398eeb461e4fa069af54be4b45e9d75effab3b
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 44aa46e91059f461a761f56ea3f69dbfcf3383bd
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786995"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882840"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準的な企業のガバナンス ガイド:ベスト プラクティスの説明
 
@@ -25,7 +25,7 @@ ms.locfileid: "84786995"
 
 いくつかのシンプルな原則とクラウド ベースの管理ツールにより、ガバナンスと企業ポリシーの迅速な導入を実現できます。 これらは、あらゆるガバナンス プロセスでのアプローチに対する最初の 3 つの規範です。 それぞれの規範について、この記事でさらに説明します。
 
-<!--docsTest:ignore "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
+<!-- docutune:casing "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
 
 開始点を確立するため、この記事では、すべての導入に対する基盤となるガバナンス MVP を作成するために必要な ID ベースライン、セキュリティ ベースライン、デプロイ高速化規範の背後にある高レベルの戦略について説明します。
 

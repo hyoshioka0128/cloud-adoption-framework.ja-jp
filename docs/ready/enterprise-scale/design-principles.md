@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 25d11e5fafbf864790ae900154ca39f8b0569150
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: f2746c47b99204bff629efdf60e8a9e1436168de
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040628"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885084"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-design-principles"></a>クラウド導入フレームワークのエンタープライズ規模の設計原則
 
@@ -27,8 +27,6 @@ ms.locfileid: "88040628"
 ガードレールを提供し、組織のプラットフォームとそこにデプロイされたアプリケーションの継続的なコンプライアンスを確保するために、Azure Policy を使用する必要があります。 また、Azure Policy は、クラウドに対する十分な自由度と、セキュリティで保護された制約のないパスをアプリケーション所有者に提供します。
 
 ## <a name="single-control-and-management-plane"></a>単一のコントロールおよび管理プレーン
-
-<!-- cSpell:ignore AppOps -->
 
 エンタープライズ規模のアーキテクチャでは、抽象化レイヤー (お客様が開発したポータルやツールなど) を考慮する必要はありません。 AppOps (一元管理された運用チーム) と DevOps (専任のアプリケーション運用チーム) の両方に一貫したエクスペリエンスを提供する必要があります。 Azure では、ロールベースのアクセス制御とポリシー主導の制御の対象となるすべての Azure リソースとプロビジョニング チャネルにわたって、統一された一貫したコントロール プレーンが提供されます。 Azure を使用することにより、エンタープライズ資産全体を管理するためのポリシーと制御の標準化されたセットを確立できます。
 

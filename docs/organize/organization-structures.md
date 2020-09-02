@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 6d9c8d509abbc5516a3070fe03116a588ddeacbf
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a370a4aa58c176ccb1dc58a777a10f2f91ca7370
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573073"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884931"
 ---
-<!-- cSpell:ignore ccoe -->
-
 # <a name="mature-team-structures"></a>チーム構造を成熟させる
 
 すべてのクラウドの機能は、クラウド導入作業のたびにだれかによって提供されます。 こうした役割分担やチーム構造は有機的に発展する場合もあれば、定義されたチーム構造に合わせて意図的に設計される場合もあります。

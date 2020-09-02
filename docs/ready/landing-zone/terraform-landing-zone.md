@@ -7,14 +7,14 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 47a6503b369bc5d575f68358101c2bd04c7fa9c8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 25bb59e5f79609536a7a1a6711c94c5ff25fdbd5
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575113"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884795"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
+<!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Terraform を使用してランディング ゾーンを構築する
 
@@ -39,8 +39,6 @@ _図 1:Terraform を使用したファンデーション ランディング ゾ�
 
 デプロイされるコンポーネントとその目的は次のとおりです。
 
-<!-- markdownlint-disable MD033 -->
-
 | コンポーネント | 担当 |
 |---|---|
 | リソース グループ | ファンデーションに必要なコア リソース グループ |
@@ -48,8 +46,6 @@ _図 1:Terraform を使用したファンデーション ランディング ゾ�
 | 診断ログ | すべての操作ログは、特定の日数だけ保持されます。 <li> ストレージ アカウント <li> Event Hubs |
 | Log Analytics | 操作ログを格納します。 詳細なアプリケーションのベスト プラクティスのレビューのための一般的なソリューションのデプロイ: <li> NetworkMonitoring <li> AdAssessment <li> AdReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure Security Center | セキュリティ検疫メトリックおよびメールと電話番号に送信されるアラート |
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="use-this-blueprint"></a>このブループリントを使用する
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75b912d908789349fa6479f21cda6ebeed3f02ca
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 64c3b510f07f7bee7648a00615f0dc45947cb9df
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786400"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880800"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雑な企業向けのガバナンス ガイド: ベスト プラクティスの説明
 
@@ -25,7 +25,7 @@ ms.locfileid: "84786400"
 
 いくつかのシンプルな原則とクラウド ベースの管理ツールにより、ガバナンスと企業ポリシーの迅速な導入を実現できます。 これらは、ガバナンス プロセスでのアプローチに対する 3 つのガバナンス規範の最初のものです。 この記事では、各規範についてさらに詳しく説明します。
 
-<!--docsTest:ignore "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
+<!-- docutune:casing "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
 
 開始点を確立するため、この記事では、すべての導入に対する基盤となるガバナンス MVP を作成するために必要な ID ベースライン、セキュリティ ベースライン、デプロイ高速化規範の背後にある高レベルの戦略について説明します。
 
@@ -54,13 +54,14 @@ ms.locfileid: "84786400"
 
 使用するサブスクリプション デザインを決めると、サブスクリプションを構造化する方法と、Azure 管理グループを使用してこれらのサブスクリプションのアクセス、ポリシー、およびコンプライアンスを効率的に管理する方法が決まります。 ここでは、ガバナンス チームは[混合サブスクリプション戦略](../../../decision-guides/subscriptions/index.md#mix-subscription-strategies)を選択しました。
 
-- Azure リソースに対する新しい要求が発生したら、各運用地域で主な事業単位ごとに_部門_を設ける必要があります。 各部門内に、アプリケーション アーキタイプごとの_サブスクリプション_を作成する必要があります。
+- Azure リソースに対する新しい要求が発生したら、各運用地域で主な事業単位ごとに*部門*を設ける必要があります。 各部門内に、アプリケーション アーキタイプごとの*サブスクリプション*を作成する必要があります。
 - アプリケーション アーキタイプは、同様のニーズを持つアプリケーションをグループ化する手段です。 たとえば、次のような場合です。
   - 保護されたデータを使用するアプリケーション、管理されたアプリケーション (HIPAA や FedRAMP など)。
   - 低リスク アプリケーション。
   - オンプレミスに依存するアプリケーション。
   - Azure 内の SAP などのメインフレーム アプリケーション。
   - オンプレミスの SAP やメインフレーム アプリケーションを拡張するアプリケーション。
+
   各組織には、データの分類と、ビジネスをサポートするアプリケーションの種類に基づき、固有のニーズがあります。 デジタル資産の依存関係のマッピングは、組織でのアプリケーション アーキタイプの定義に役立つ場合があります。
 - 上記のことに基づき、サブスクリプション デザインの一部として、共通の名前付け規則を採用する必要があります。
 

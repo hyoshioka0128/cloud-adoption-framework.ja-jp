@@ -7,16 +7,16 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a6ff92199521fdc93ae7e57c7208a990b1476a97
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d81b17fb8429fe058856f049c7ab491e7cab504f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572733"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884761"
 ---
 # <a name="enterprise-scale-security-governance-and-compliance"></a>エンタープライズ規模のセキュリティ ガバナンスとコンプライアンス
 
-この記事では、暗号化とキー管理の定義、ガバナンスの計画、セキュリティの監視と監査ポリシーの定義、プラットフォーム セキュリティの計画について説明します。 記事の最後に、Azure サービスのエンタープライズ セキュリティの準備状況を評価するためのフレームワークについて説明した表を掲載します。 
+この記事では、暗号化とキー管理の定義、ガバナンスの計画、セキュリティの監視と監査ポリシーの定義、プラットフォーム セキュリティの計画について説明します。 記事の最後に、Azure サービスのエンタープライズ セキュリティの準備状況を評価するためのフレームワークについて説明した表を掲載します。
 
 ## <a name="define-encryption-and-key-management"></a>暗号化とキー管理を定義する
 

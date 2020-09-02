@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a55838413812f29069b39cee7f49391eb4ac2ec3
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 4d47a5681a2c36bdaabe508e8d62c7437ebe1c87
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570812"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882534"
 ---
 <!-- cSpell:ignore Netezza Informatica Talend InMon zonemap CBTs Attunity Wherescape nzlua CBT NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -31,8 +31,6 @@ Netezza と Azure Synapse は、いずれも大量のデータに対する高い
 この記事では、Azure Synapse で移行した Netezza データ ウェアハウスおよびデータ マートについて同等以上のパフォーマンスを得るために、ビューを使用してスキーマを移行する方法について説明します。 既存の Netezza 環境からの移行に特に適用される考慮事項について検討します。
 
 大まかに言えば、移行プロセスには次の表に示す手順が含まれています。
-
-<!-- markdownlint-disable MD033 -->
 
 | 準備        | 移行                             | 移行後 |
 | :----------------- | :----------------------------- | :---------------- |
@@ -93,7 +91,7 @@ Azure Synapse 環境にあるデータベースは 1 つです。 スキーマ�
 
 ただし、インデックスなどのパフォーマンス最適化が移行元環境のどこで使用されていたかを把握しておくことは、新しい環境でパフォーマンスを最適化できる場所を示すのに役立ちます。 たとえば、移行元の Netezza 環境のクエリでゾーン マップが頻繁に使用されている場合は、移行先の Azure Synapse 環境で非クラスター化インデックスを作成すると有益である、またはテーブル レプリケーションのような他のネイティブなパフォーマンス最適化手法を使用する方が、既存のものと同じインデックスを作成するより適している、という結論になる可能性があります。
 
-<!-- docsTest:ignore "NZ Toolkit" -->
+<!-- docsTest:casing "NZ Toolkit" -->
 
 ### <a name="unsupported-netezza-database-object-types"></a>サポートされていない Netezza データベース オブジェクトの種類
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7e8ba47fdd221ea11cca385730e25b961c0bd10f
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 57e0fc471a3f3d115f08383318fda789bef579d5
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88194656"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885220"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>ビジネス成果テンプレートの使用方法
 
@@ -30,7 +30,7 @@ ms.locfileid: "88194656"
 
 ![技術的機能の上にビジネスの成果、その上に利害関係者がある家として視覚化されたビジネスの成果](../../_images/strategy/business-outcome-house.png)
 
-"_図 1:技術的機能の上にビジネスの成果、その上に利害関係者がある家として視覚化されたビジネスの成果。_
+"*図 1:技術的機能の上にビジネスの成果、その上に利害関係者がある家として視覚化されたビジネスの成果。*
 
 ビジネス成果テンプレートは、技術的ソリューションに深入りしすぎずに、利害関係者を速やかにエンゲージできる簡単な会話に焦点を合わせています。 利害関係者にとって重要な主要業績評価指標 (KPI) とビジネス推進力の迅速な理解と調整により、チームが実装の詳細に取りかかる前に大まかなアプローチと変革について考えることができます。
 
@@ -38,7 +38,7 @@ ms.locfileid: "88194656"
 
 ![ビジネス成果テンプレートの例](../../_images/strategy/business-outcome-template.png)
 
-"_図 2:ビジネス成果テンプレートの例。_
+"*図 2:ビジネス成果テンプレートの例。*
 
 ## <a name="why-is-this-template-relevant"></a>このテンプレートが関連する理由
 
@@ -46,7 +46,7 @@ ms.locfileid: "88194656"
 
 ![探索で重視する 5 つの領域: 利害関係者、成果、推進者、KPI、機能](../../_images/strategy/business-outcome-focus-areas.png)
 
-"_図 3:探索で重視する 5 つの領域: 利害関係者、成果、推進者、KPI、機能。_
+"*図 3:探索で重視する 5 つの領域: 利害関係者、成果、推進者、KPI、機能。*
 
 **利害関係者:** 特定のビジネスの成果に最大の価値が見られる可能性があるのは組織内の誰でしょうか。 特に困難なことが多く、時間がかかる場合に、この変革をサポートする可能性が最も高いのは誰でしょうか。 この変革の成功で最大の利益が得られるのは誰ですか。 その人が潜在的な利害関係者です。
 

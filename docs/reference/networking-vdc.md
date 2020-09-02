@@ -9,15 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 0a605d987715aee0b12c846472a6fddd1060087c
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: fed40e3b4d6c5c2aeeb63f70dcd41733e48b519e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662474"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885679"
 ---
 <!-- docsTest:disable TODO -->
-<!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
+<!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->
 
 # <a name="the-virtual-datacenter-a-network-perspective"></a>仮想データセンター:ネットワーク パースペクティブ
 
@@ -416,8 +416,6 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 
 このドキュメントで説明した Azure の機能の詳細をご覧ください。
 
-<!-- markdownlint-disable MD033 -->
-
 :::row:::
     :::column:::
         **ネットワーク機能** <br>
@@ -492,8 +490,6 @@ Azure データセンターは世界中の多数のリージョンに存在し�
         [Azure Machine Learning][machine-learning]
     :::column-end:::
 :::row-end:::
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="next-steps"></a>次のステップ
 

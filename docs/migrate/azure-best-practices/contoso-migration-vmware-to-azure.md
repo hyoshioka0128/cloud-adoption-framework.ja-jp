@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1cf17ea35f313c400b5a08cd91dd0b968da9ece1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3472f1695f8f5405842e2d35ff86265bfbfefec1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574875"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877315"
 ---
-<!-- docsTest:ignore "Bulk Migration" "Cold Migration" -->
+<!-- docsTest:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
 # <a name="move-on-premises-vmware-infrastructure-to-azure"></a>オンプレミスの VMware インフラストラクチャを Azure に移行する
 
@@ -194,7 +194,7 @@ HCX を使用して VMware VM を Azure に移行するには、Contoso チー�
 
 詳細については、「[Azure VMware Solution 用の HCX をインストールする](/azure/azure-vmware/hybrid-cloud-extension-installation)」を参照してください。
 
-<!-- docsTest:ignore L2 -->
+<!-- docsTest:casing L2 -->
 
 #### <a name="install-and-configure-vmware-hcx-for-the-public-cloud"></a>パブリック クラウド用の VMware HCX をインストールして構成する
 

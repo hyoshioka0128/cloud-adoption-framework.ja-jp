@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: b0f631a91523117e8acfa4a95ba446a5f87d493a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 48a9d309e644f7232e014201781f52edbb359c1f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571152"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877689"
 ---
-<!-- cSpell:ignore kusto multiresource multisignal -->
+<!-- cSpell:ignore multisignal -->
 
 # <a name="cloud-monitoring-guide-alerting"></a>クラウド監視ガイド: アラート
 
@@ -86,8 +86,6 @@ Azure Monitor には、他の監視プラットフォームや、ServiceNow な�
 | | ノード、コントローラー、コンテナー、およびポッドからのパーセンタイルを使用する計算後のパフォーマンス データは、ワークスペースに書き込まれます。 コンテナー ログとインベントリ情報もワークスペースに書き込まれます。 | クラスターおよびコンテナーの測定済み使用量の変動に基づいてアラートを受け取る必要がある場合は、ログ クエリ アラートを作成します。 ログ クエリ アラートは、ポッドフェーズ数と状態ノード数に基づいて構成することもできます。 |
 | VM に対する Azure Monitor | 正常性基準は、メトリック データベースに格納されているメトリックです。 | 正常性状態が正常から異常に変化すると、アラートが生成されます。 このアラートは、SMS またはメール通知を送信するように構成されたアクション グループのみをサポートします。 |
 | | マップおよびゲスト オペレーティング システムのパフォーマンス ログ データは Log Analytics ワークスペースに書き込まれます。 | ログ クエリ アラートを作成します。 |
-
-<!-- docsTest:ignore "speed driven by cost" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>コストによる最高速度
 

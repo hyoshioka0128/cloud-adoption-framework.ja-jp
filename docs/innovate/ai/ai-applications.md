@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bf54d25069aa96d6b9b92c50a9beeccefbb1de3c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9e331bc698467926e496b6a1e8c29e7fb0caf097
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568704"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882636"
 ---
 # <a name="ai-applications-and-agents"></a>AI アプリケーションとエージェント
 
@@ -47,7 +47,7 @@ AI アプリケーションの一般的なシナリオには、以下が含ま�
 
 視覚、言語、音声、意思決定、または Web 検索全体に使用するサービスを選択します。 REST API または SDK のどちらを使用する場合でも、ページの各カテゴリでは、一連のクイック スタート、チュートリアル、攻略ガイドが提供されています。
 
-<!-- docsTest:ignore "Intelligent Kiosk" -->
+<!-- docsTest:casing "Intelligent Kiosk" -->
 
 また、インテリジェント キオスクをダウンロードし、これらのサービスを体験してデモ実行することもできます。
 

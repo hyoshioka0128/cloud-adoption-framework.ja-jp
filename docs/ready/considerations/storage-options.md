@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a5eec2f4e4b14253bba435e1acf873d38127975d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 28c7005a7208301e89a0a4d27c9ee1bb0d84af1e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574433"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885117"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -50,9 +50,8 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 ### <a name="block-storage-scenarios"></a>ブロック ストレージのシナリオ
 
 <!-- docsTest:ignore M-series -->
-<!-- markdownlint-disable MD033 -->
 
-| シナリオ  | 推奨される Azure サービス | 推奨されるサービスに関する考慮事項 |
+| シナリオ | 推奨される Azure サービス | 推奨されるサービスに関する考慮事項 |
 |---|---|---|
 | LOB アプリケーションを実行している直接接続ストレージを含むベア メタル サーバーまたは VM (Hyper-V または VMware) があります。 | [Azure Disk Storage (Premium SSD)](/azure/virtual-machines/windows/disks-types#premium-ssd) | 運用サービスの場合、Premium SSD オプションは、高い IOPS とスループットと共に一貫した低待機時間を提供します。 |
 | Web およびモバイル アプリをホストするサーバーがあります。 | [Azure Disk Storage (Standard SSD)](/azure/virtual-machines/windows/disks-types#standard-ssd) | 運用環境の CPU に依存した Web およびアプリ サーバーには (Premium SSD より低コストの) Standard SSD の IOPS とスループットで十分である可能性があります。 |
@@ -112,8 +111,6 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | [Azure Data Box Edge](/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge は、Azure との間でデータを移動するオンプレミスのネットワーク デバイスです。 Data Box Edge は、アップロード中にデータを前処理するための AI 対応のエッジ コンピューティングを備えています。 Data Box Gateway は、仮想バージョンのデバイスですが、同じデータ転送機能を備えています。 |
 | [Azure Data Box Gateway](/azure/databox-online/data-box-gateway-overview) | Azure Data Box Gateway は、Azure にシームレスにデータを送信できるストレージ ソリューションです。 Data Box Gateway は、仮想化環境またはハイパーバイザーにプロビジョニングされた仮想マシンに基づく仮想デバイスです。 この仮想デバイスはオンプレミスに存在し、ユーザーは NFS および SMB プロトコルを使用してそこにデータを書き込みます。 このデバイスはその後、Azure ブロック BLOB、Azure ページ BLOB、または Azure Files にデータを転送します。 |
 | [Avere vFXT for Azure](/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT for Azure は、データ集約型のハイ パフォーマンス コンピューティング (HPC) タスク向けのファイルシステム キャッシュ ソリューションです。 データがお客様独自のオンプレミス ハードウェアに格納されている場合でも、クラウド コンピューティングのスケーラビリティを活かして、必要なときに必要な場所でデータにアクセスできます。 |
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="data-redundancy-and-availability"></a>データの冗長性と可用性
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 775dea2eb2bb91a1434714b151710fbb3c96ea8d
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: a99f8ec96609c02e1bb46bd26d57aaf0ed594736
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190483"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881429"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 
@@ -21,7 +21,7 @@ ms.locfileid: "86190483"
 
 ## <a name="rationalization-context"></a>合理化のコンテキスト
 
-この記事に記載されている "_合理化の 5 R_" は、クラウドの候補と見なされるすべてのワークロードの将来見込まれる状態を分類するための優れた方法です。 この分類プロセスは、環境の合理化を試みる前の適切なコンテキスト内に配置する必要があります。 そのコンテキストを用意するために、次の根拠のない説を見直してください。
+この記事に記載されている "*合理化の 5 R*" は、クラウドの候補と見なされるすべてのワークロードの将来見込まれる状態を分類するための優れた方法です。 この分類プロセスは、環境の合理化を試みる前の適切なコンテキスト内に配置する必要があります。 そのコンテキストを用意するために、次の根拠のない説を見直してください。
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>通説:プロセスの早い段階で合理化に関する決定を下すことは容易である
 
@@ -43,7 +43,7 @@ ms.locfileid: "86190483"
 
 ## <a name="rehost"></a>リホスト
 
-リホストの取り組みは、"_リフト アンド シフト_" 移行とも呼ばれ、アーキテクチャ全体への変更を最小限に抑えて、現在の状態の資産を選択されたクラウド プロバイダーに移動します。
+リホストの取り組みは、"*リフト アンド シフト*" 移行とも呼ばれ、アーキテクチャ全体への変更を最小限に抑えて、現在の状態の資産を選択されたクラウド プロバイダーに移動します。
 
 一般的な促進要因には、次のものが含まれます。
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c9dcdb9c3ce42a0221adeb6d418f4329f471eb5d
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 0df83ebf912a171a95572df3b6be554c9db544b0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661930"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881990"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Azure へのアプリケーション移行例の概要
 
@@ -140,7 +140,7 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 ### <a name="demo-applications"></a>デモ アプリケーション
 
-<!-- docsTest:ignore SmartHotel360 osTicket -->
+<!-- docsTest:casing SmartHotel360 osTicket -->
 
 このセクションで紹介している記事の例では、2 つのデモ アプリケーションを使用します。SmartHotel360 と osTicket です。
 

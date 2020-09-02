@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cb974cd5ed319dfd72a1c9342b92e9eb60a35f77
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: e6643c4116f48f11e2a07b19c44014bfc40f8677
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754374"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879729"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>クラウド ガバナンス設計ガイドと企業ポリシーの合致
 
@@ -23,8 +23,6 @@ ms.locfileid: "83754374"
 リスク分析とポリシー ステートメントは、ある程度クラウド プラットフォームに依存しない場合もありますが、設計ガイドでは、IT および開発チームがクラウドベースのワークロードの作成と開発時に使用できるプラットフォーム固有の実装の詳細を提供する必要があります。 設計上の決定を下し、ガイダンスを提供するときには、選択したプラットフォームのアーキテクチャ、ツール、および、機能に焦点を合わせます。
 
 クラウド設計ガイドでは、各インフラストラクチャ コンポーネントに関連する技術的詳細の一部を考慮に入れる必要がありますが、ガイドは広範囲にわたる技術ドキュメントや仕様書となるものではありません。 ガイドでは、ポリシー ステートメントを取り上げ、スタッフが容易に理解して参照できる形式で、設計の決定内容が明確に書かれていることを確認します。
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="use-the-actionable-governance-guides"></a>実践的なガバナンス ガイドを使用する
 

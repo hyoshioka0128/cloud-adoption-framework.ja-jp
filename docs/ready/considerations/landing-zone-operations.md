@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3cfd48a0a8dabb9b37004c2f15c23a8ae79aa6e9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 15271c7e74881f671715d832eb4f07e63de23063
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575164"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884829"
 ---
 # <a name="improve-landing-zone-operations"></a>ランディング ゾーンの運用の改善
 
@@ -35,8 +35,6 @@ ms.locfileid: "88575164"
 ## <a name="four-steps-to-improve-operations-beyond-a-single-landing-zone"></a>1 つのランディング ゾーンを超えて運用を改善するための 4 つのステップ
 
 [管理手法](../../manage/index.md)では、運用管理能力を構築するための全体的なガイダンスを提供します。[管理手法](../../manage/index.md)に関するページを参照してください。 この手法の基本構造と、その手法の次の手順を使用して、ランディング ゾーンの運用とすべてのランディング ゾーンでの運用を改善します。
-
-<!-- cSpell:ignore caf -->
 
 ![管理手法](../../_images/manage/caf-manage.png)
 _図 1: CAF 管理手法。_

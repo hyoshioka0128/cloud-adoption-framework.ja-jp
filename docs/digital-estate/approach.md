@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: e60d7810e1ddf8cf63f3ded16ba990f08e4ac63f
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 38ce12c8fa09800a3cede67b9725ce4fe899bd00
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814700"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881412"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>デジタル資産計画の手法
 

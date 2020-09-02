@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1df64e7777e045f0e52871ac04b243e4c3b3902d
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: adf762a9c813b68905f0930670111a949565d55a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88194535"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885237"
 ---
 # <a name="examples-of-agility-outcomes"></a>機敏性の成果の例
 
@@ -34,7 +34,7 @@ ms.locfileid: "88194535"
 
 - **例 2:** ある物流会社が未開拓の市場を発見しましたが、その市場のマーケット シェアを獲得するには、自社の最重要アプリケーションの新しいバージョンが必要です。 大手の競合他社も、同じ発見を行っています。 この会社は、クラウド対応アプリケーションの導入の取り組みを通して顧客を囲い込み、DevOps 駆動型開発アプローチによる *x* か月の先行によって、対応が遅かった長年の競争相手を出し抜きました。 この迅速な市場への参入によって、顧客基盤が確保されました。
 
-<!-- docsTest:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
+<!-- docutune:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 
 ### <a name="aurora-health-care"></a>Aurora Health Care 社
 

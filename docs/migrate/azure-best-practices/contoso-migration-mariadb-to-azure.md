@@ -8,15 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4cc1aeed8df6c546722ac70977e08f6619f41f21
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8c3d172c2b86ea37cc9c4f9f431c833afa60cf82
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570744"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882126"
 ---
-<!-- TODO: Verify GraphDBMS term -->
-<!-- cSpell:ignore ColumnStore GraphDBMS mysqldump Navicat phpMyAdmin -->
+<!-- cSpell:ignore  mysqldump Navicat phpMyAdmin -->
 
 # <a name="migrate-mariadb-databases-to-azure"></a>MariaDB データベースを Azure に移行する
 

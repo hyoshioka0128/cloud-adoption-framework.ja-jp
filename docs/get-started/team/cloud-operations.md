@@ -3,16 +3,16 @@ title: 作業を開始しましょう。クラウド運用チームの構築
 description: このガイドは、クラウド運用チームが、自ら担当するスコープ、成果物、機能を理解するのに役立ちます。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: eb9c57c8ddc91821eb6dcde48279cd08fbd5c3db
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 4d1ecbe31f7469cb992ab7e983a9ff4a34ef437f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661947"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884064"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>作業を開始しましょう。クラウド運用チームを結成する
 
@@ -36,7 +36,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 - [クラウド運用機能](../../organize/cloud-operations.md)が既に複数の個人またはチームに分散している場合があります。 クラウド運用チームが必要かどうかを判断します。 運用環境のワークロードには、なんらかのレベルの運用が常に必要になります。
 - 企業の長期的なクラウド導入戦略を 1 つのクラウド環境の 1 つのランディング ゾーンから遂行できる場合は、ガバナンスと運用に関わる作業が、1 人または 1 つのチームが担うことができるほど少ないことがあります。 そのチームは、多くの機能を担うため、クラウド運用チームと呼ばれることはほとんどありません。 その個人またはチームにとって、この重要な作業を確実にやり遂げるうえで、次のガイダンスが役立ちます。
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
@@ -58,7 +58,6 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 - タイムラインと優先順位を把握するには、クラウド導入チームのメンバーと共に会社の[クラウド導入計画](../../plan/template.md)を確認します。
 - [運用管理のブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)の開発を開始して、チームがビジネスで確立している運用の要件とコミットメントを把握します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -78,7 +77,6 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 - ミーティングの頻度に関するその他のガイダンスについては、「[クラウド運用機能](../../organize/cloud-operations.md#deliverables)」の「成果物」セクションを参照してください。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -169,7 +167,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 - [リソースの整合性の改善のためのガバナンス ガイド](../../govern/guides/complex/resource-consistency-improvement.md)を参照してください。
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |
@@ -187,7 +185,7 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 
 - [新しいワークロードとリソースをオンボードする](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)ためのプロセスを確立します。
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
 | --- | --- |

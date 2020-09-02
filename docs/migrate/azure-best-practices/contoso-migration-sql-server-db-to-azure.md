@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f4d8e485ad75cf3d5401025031fce21865bbb722
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ba0d366ddd36fa8f57c0d57ca8343590fe39e124
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574824"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877451"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -108,7 +108,7 @@ Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存�
 
 #### <a name="step-2-application-assessment"></a>手順 2:アプリケーション評価
 
-<!-- docsTest:ignore "mainly .NET-based" "non-.NET-based" -->
+<!-- docsTest:casing "mainly .NET-based" "non-.NET-based" -->
 
 この評価の結果として、Contoso が主として利用しているのが .NET ベースのアプリケーションであることがわかりました。ただし、年月の経過とともにさまざまなプロジェクトで PHP や Node.js などの他のテクノロジが使用されるようになりました。 ベンダーが購入したシステムでも、非 .NET ベースのアプリケーションが導入されました。 次のものを特定しました。
 
@@ -144,7 +144,7 @@ Contoso では、DMA を使用して評価を実行し、Azure Migrate にデー
 > [!NOTE]
 > 評価フェーズの一環として、Contoso ではさまざまなオープンソース データベースを検出しました。 これらについては、別途、[このガイド](./contoso-migration-oss-db-to-azure.md)に従って移行計画を立てました。
 
-<!-- docsTest:ignore "custom .NET" -->
+<!-- docsTest:casing "custom .NET" -->
 
 #### <a name="step-4-migration-planning"></a>手順 4:移行の計画
 

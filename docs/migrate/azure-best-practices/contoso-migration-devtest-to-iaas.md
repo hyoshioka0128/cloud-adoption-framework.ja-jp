@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: d307e29cbe6e3d9e28ab93bab3b70a331661e542
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3dcb63b9b5f80fd36450630629023ad0972a76df
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571033"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882296"
 ---
-<!-- docsTest:ignore SmartHotel360 -->
+<!-- docsTest:casing SmartHotel360 -->
 <!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless osTicket WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
 
 # <a name="rehost-an-on-premises-devtest-environment-on-azure-virtual-machines-via-azure-migrate"></a>Azure Migrate を使用してオンプレミスの Dev/Test 環境を Azure Virtual Machines にリホストする

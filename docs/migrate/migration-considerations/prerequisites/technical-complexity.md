@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4e607d9374e2b8bffb209cbb3bddecca337ad8af
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: dace1543a65eefe68d6f4c01923784bdc40dc250
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574637"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885934"
 ---
-<!-- cSpell:ignore ITSM TOGAF -->
-
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>技術的な複雑さに備える: アジャイル変更管理
 
 1 行のコードでデータセンター全体のプロビジョニング解除と再作成が可能な場合、従来のプロセスを保持するのは容易ではありません。 クラウド導入フレームワーク全体のガイダンスは、IT サービス マネジメント (ITSM) や The Open Group Architecture Framework (TOGAF) などのプラクティスに基づいています。 しかし、ビジネスの変化に対する機敏性と応答性を確保するために、このフレームワークではアジャイル方法論と DevOps アプローチに合わせて、これらのプラクティスを変更します。

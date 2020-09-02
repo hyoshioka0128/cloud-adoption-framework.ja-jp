@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d403a16abd441c7698fb4f6ec66328d37641d806
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: b7dca2e21c1cff0361451e25dbc56ba9a02bdf59
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786196"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885832"
 ---
 # <a name="how-can-we-align-efforts-to-meaningful-learning-metrics"></a>有意義な学習メトリックに取り組みを整合させる方法
 

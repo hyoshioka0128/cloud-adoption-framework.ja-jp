@@ -7,15 +7,13 @@ ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: c09124d6a09ee3350fb6a1b605c493a51d15bb4a
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 02fd0d70cef736aa20b7aa37c777b2ca070015ae
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813252"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885628"
 ---
-<!-- cSpell:ignore rodend -->
-
 # <a name="azure-enterprise-scaffold-is-now-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure エンタープライズ スキャフォールディングは Azure 向けの Microsoft Cloud Adoption Framework になりました
 
 Azure エンタープライズ スキャフォールディングは、Azure 向けの Microsoft Cloud Adoption Framework に統合されています。 エンタープライズ スキャフォールディングの目標は、クラウド導入フレームワークの[準備手法](../ready/index.md)で対処できるようになりました。 エンタープライズ スキャフォールディングのコンテンツは非推奨となりました。

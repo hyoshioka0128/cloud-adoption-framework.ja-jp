@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9e69c9728d5ba8664a4a3bec2fc4e742662a2c5a
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 7082380e7b64160071f4304bc5ca3a4d341df24b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787777"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884676"
 ---
-<!-- cSpell:ignore CISO -->
-
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>移行済みのリソースを実稼働に昇格させるために何が必要か
 
 実稼働への昇格により、クラウドへのワークロードの移行が完了します。 資産とそのすべての依存関係が昇格した後、実稼働トラフィックが再ルーティングされます。 トラフィックを再ルーティングすると、オンプレミス資産は古いものになり、使用停止にできるようになります。

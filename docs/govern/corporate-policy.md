@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 79d4813051191c257d08ce2699630f907acf3dd3
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d5ff1d8e1df03a2a022e614132ef53498a9198d7
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573804"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884098"
 ---
 # <a name="evaluate-corporate-policy"></a>企業ポリシーの評価
 
 |  |  |
 |--|--|
-| ビジネス プロセスやテクノロジ プラットフォームに対するすべての変更は、ビジネス上のリスクを伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、導入やイノベーションの取り組みをできるだけ途切れさせずに、こうしたリスクを軽減することです。 <br><br> ただし、クラウド ガバナンスには、技術的な実装以上のことが求められます。 企業のナラティブや企業ポリシーの些細な変更により、導入の取り組みに大幅な影響が及ぼされる場合があります。 実装の前に、企業ポリシーの定義において IT の今後を見据えることが重要です。 | [![クラウド導入フレームワーク ガバナンス モデルの図: 企業のポリシーとガバナンスの規範](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> "_図 1:企業ポリシーとクラウド ガバナンスの 5 つの規範。_ |
+| ビジネス プロセスやテクノロジ プラットフォームに対するすべての変更は、ビジネス上のリスクを伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、導入やイノベーションの取り組みをできるだけ途切れさせずに、こうしたリスクを軽減することです。 <br><br> ただし、クラウド ガバナンスには、技術的な実装以上のことが求められます。 企業のナラティブや企業ポリシーの些細な変更により、導入の取り組みに大幅な影響が及ぼされる場合があります。 実装の前に、企業ポリシーの定義において IT の今後を見据えることが重要です。 | [![クラウド導入フレームワーク ガバナンス モデルの図: 企業のポリシーとガバナンスの規範](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> "*図 1:企業ポリシーとクラウド ガバナンスの 5 つの規範。* |
 
 ## <a name="define-corporate-policy"></a>企業ポリシーの定義
 
