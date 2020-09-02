@@ -9,18 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 15c0b4f654607e2e150d547c52edd56e95c5fe89
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c37a7b51de815169e450f72e0bbf99cf8fee49cf
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570506"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884642"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>ワークロードを評価して計画を調整する
 
 このガイドのリソースは、各ワークロードを評価し、各ワークロードの移行に対する適合性についての前提条件を吟味し、移行オプションに関するアーキテクチャ上の決定を確定するのに役立ちます。
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="tools"></a>[ツール](#tab/Tools)
 

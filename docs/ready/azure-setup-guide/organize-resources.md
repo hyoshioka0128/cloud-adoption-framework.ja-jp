@@ -9,20 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e623658907c4f6e97574e1e8c0012933a6233e8f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d5c1bd2c96b7154956f37960c345d2a2009fa4bc
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572903"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885951"
 ---
-<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+<!-- cSpell:ignore profx fsubscriptions fresource -->
 
 # <a name="organize-your-azure-resources-effectively"></a>Azure リソースの効果的な整理
 
 クラウドベースのリソースを整理することは、ワークロードに関連するコストをセキュリティ保護、管理、および追跡するために不可欠です。 ご利用のリソースを整理するには、管理グループ階層を定義し、十分に考慮された名前付け規則に従って、リソースのタグ付けを適用してください。
 
-<!-- markdownlint-disable MD024 MD025 -->
+<!-- markdownlint-disable MD024 -->
 
 ## <a name="azure-management-groups-and-hierarchy"></a>[Azure の管理グループと階層](#tab/AzureManagementGroupsAndHierarchy)
 
@@ -161,8 +161,8 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 その他の多くの要素にもタグを使用できます。 一般的な用途は次のとおりです。
 
-- **メタデータとドキュメント:** 管理者は、`projectowner` などのタグを適用して、操作しているリソースに関する詳細を簡単に確認できます。
-- **自動化:** `shutdowntime` や `deprovisiondate` のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
+- **メタデータとドキュメント:** 管理者は、`ProjectOwner` などのタグを適用して、操作しているリソースに関する詳細を簡単に確認できます。
+- **自動化:** `ShutdownTime` や `DeprovisionDate` のようなタグ値に基づいてアクションを実行できるスクリプトを定期的に実行することが考えられます。
 - **コストの最適化**: コストを担当するチームとリソースにリソースを割り当てることができます。 Azure Cost Management および Billing では、コスト センター タグをフィルターとして適用して、チームまたは部門の使用量に基づいて料金を報告できます。
 
 各リソースまたはリソース グループには、最大で 50 個のタグ名とタグ値のペアを付けることができます。 この制限は、リソース グループまたはリソースに直接適用されたタグにのみ適用されます。

@@ -7,14 +7,14 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0c3df76de11883153d128fe419825a8800bc8d57
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a42f2b52d53ece4677efc240baaa9185a76614c2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566749"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884693"
 ---
-<!-- cSpell:ignore paas NVAs VPNs -->
+<!-- cSpell:ignore NVAs VPNs -->
 
 # <a name="review-your-network-options"></a>ネットワーク オプションを確認する
 
@@ -49,8 +49,6 @@ Azure ネットワーク サービスのデシジョン ツリーに基づいた
 
 Azure ネットワークは、さまざまなネットワーク機能を提供する複数の製品およびサービスで構成されています。 ネットワーク設計プロセスの一部として、ワークロードの要件を次の表のネットワーク シナリオと比較することにより、これらのネットワーク機能を提供するために使用できる Azure ツールまたはサービスを特定できます。
 
-<!-- markdownlint-disable MD033 -->
-
 | シナリオ | ネットワーク製品またはサービス |
 | --- | --- |
 | 仮想マシンから受信 VPN 接続までのすべてを接続するためのネットワーク インフラストラクチャが必要です。 | [Azure Virtual Network](/azure/virtual-network) |
@@ -66,8 +64,6 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 | 組み込みの高可用性、無制限のクラウド スケーラビリティ、およびメンテナンス不要を備えたネイティブなファイアウォール機能が必要です。 | [Azure Firewall](/azure/firewall/overview) |
 | ビジネス オフィス、小売の場所、およびサイトを安全に接続する必要があります。 | [Azure Virtual WAN](/azure/virtual-wan) |
 | グローバルなマイクロサービス ベースの Web アプリケーションのためのスケーラブルで、かつセキュリティが強化された配信ポイントが必要です。 | [Azure Front Door](/azure/frontdoor) |
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="choose-a-networking-architecture"></a>ネットワーク アーキテクチャを選択する
 
@@ -85,7 +81,7 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 | 互いに接続したり、Azure に接続したりする必要のある多数のブランチ オフィスがあります。                                                                                                                                                                                                                                                                                         | [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) |
 
 <!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- docsTest:casing "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 

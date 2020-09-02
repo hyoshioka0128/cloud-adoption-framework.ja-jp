@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cddaf19da87112c43ae9834aa21736488c51abb4
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 526fe646f41f76985c7a4d3ba47cd2df474949c1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196015"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881259"
 ---
 # <a name="get-started-design-and-configuration"></a>作業を開始しましょう。設計と構成
 
@@ -38,7 +38,6 @@ ms.locfileid: "88196015"
 - [ビジネス成果](../strategy/business-outcomes/index.md):動機のすり合わせが済めば、目標となるビジネス成果が見えてきます。 この情報から、変革全体の測定に使用できる明確なメトリックが得られます。
 - [クラウド移行のビジネス ケースの作成](../strategy/cloud-migration-business-case.md):業務上の正当な理由を示す際に役立つ数式やツールに関する明確なガイダンスに基づいて、移行のビジネス ケースの開発を開始できます。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム | 情報チーム |
@@ -63,7 +62,6 @@ ms.locfileid: "88196015"
 - [既存システムのインベントリ](../digital-estate/inventory.md):プログラムを用いたデータドリブン アプローチで現在の状態を把握することが最初の手順です。 すべての評価アクティビティを可能にするデータを検索して収集します。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization):すべての資産の定性分析に重点を置いて取り組む (場合によってはビジネス ケースまでサポートする) ために、評価作業を効率化します。 そのうえで、移行する最初の 10 個のワークロードの詳細な定性分析を追加します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム | 情報チーム |
@@ -92,7 +90,6 @@ ms.locfileid: "88196015"
 - [作業の調整](../plan/assets.md):バックログの資産とワークロードを調整して、優先度の高いワークロードの作業を明確に定義します。
 - [メンバーと時間の調整](../plan/iteration-paths.md): 移行するワークロードのイテレーション、ベロシティ、リリースを確立します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム | 情報チーム |
@@ -115,7 +112,6 @@ ms.locfileid: "88196015"
 - [ランディング ゾーンの選択](../ready/landing-zone/index.md): このセクションを使用して、短期間の導入計画に基づいてランディング ゾーンをデプロイするための適切なアプローチを見つけます。 次に、その標準化されたコード ベースをデプロイします。
 - [ランディング ゾーンを拡張する](../ready/considerations/index.md): 短期的な導入計画のサポートが必要な場合を除き、ガバナンス、セキュリティ、または運用に関する長期的な制約にはまだ対応しようとしないでください。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -141,7 +137,6 @@ ms.locfileid: "88196015"
 - [ガバナンス ベンチマーク ツール](../govern/benchmark.md):現在の状態のギャップを見つけて、将来に向けた計画を立てることができるようにします。
 - [ガバナンスを始めるための基礎](../govern/guides/complex/prescriptive-guidance.md): ガバナンスの実用最小限の製品 (MVP) の作成に必要な ID ベースラインの規範、セキュリティ ベースラインの規範、デプロイ高速化の規範を理解します。これらは、すべての導入の基盤となります。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム | 助言を行うチーム |
@@ -170,7 +165,6 @@ ms.locfileid: "88196015"
 - [管理ベースラインの拡張](../manage/best-practices.md)
 - [高度な運用で特定の機能を利用する](../manage/design-principles.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム | 助言を行うチーム |
@@ -196,7 +190,6 @@ ms.locfileid: "88196015"
 - [ランディング ゾーンの運用の拡大](../ready/considerations/landing-zone-operations.md)
 - [ランディング ゾーンのセキュリティの向上](../ready/considerations/landing-zone-security.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |

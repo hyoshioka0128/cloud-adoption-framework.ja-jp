@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e5407f2f78942d22c5fa07b277f600d5440ddc04
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 04cfd35b56fb345474d3d4dd5f554f5bb3eb6f5c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214023"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884710"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>クラウド導入計画のタイムライン
 
@@ -30,6 +30,6 @@ ms.locfileid: "83214023"
 
 ## <a name="delivery-plans-in-azure-devops"></a>Azure DevOps でのデリバリー計画
 
-<!-- docsTest:ignore "Microsoft Delivery Plans" -->
+<!-- docsTest:casing "Microsoft Delivery Plans" -->
 
 Azure DevOps を使用してクラウド導入計画を管理している場合は、[Microsoft Delivery Plans 拡張機能](https://marketplace.visualstudio.com/items?itemname=ms.vss-plans)の使用を検討してください。 この拡張機能を使用すると、イテレーションとリリースの割り当てに基づくタイムラインをすばやく視覚的に表現できます。

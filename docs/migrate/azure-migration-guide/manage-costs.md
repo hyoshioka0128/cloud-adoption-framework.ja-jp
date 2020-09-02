@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5e6034308a11a8347c3b5126756c6a87d3fe98c0
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7af9971a74c33ae6994e3fde3d3496c2f2698499
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570455"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885016"
 ---
-<!-- cSpell:ignore bandersmsft -->
-
 # <a name="migration-focused-cost-control-mechanisms"></a>移行に重点を置いたコスト管理のメカニズム
 
 クラウドでは、テクノロジ チームでの役割には関係なく、作業方法にいくつかのシフトが導入されます。 コストは、このシフトの格好の例です。 以前には、IT 資産 (インフラストラクチャ、アプリ、およびデータ) のコストに関心があったのは財務および IT リーダーシップだけでした。 クラウドは IT のすべてのメンバーの能力を高めて、エンド ユーザーをより適切にサポートする意思決定を行い、それに基づいて行動できるようにします。 ただし、その能力には、これらの意思決定を行うときにコストを意識する必要があるという責任が付属します。
@@ -34,7 +32,7 @@ ms.locfileid: "88570455"
 
 この記事で説明されているプロセスにはまた、IT マネージャー、財務、または基幹業務アプリケーションの所有者とのパートナーシップが必要になる場合もあります。
 
-<!-- markdownlint-disable MD024 MD025 -->
+<!-- markdownlint-disable MD024 -->
 
 ## <a name="estimate-vm-costs-prior-to-migration"></a>[移行の前に VM のコストを見積もる](#tab/EstimateVMCosts)
 

@@ -7,15 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 076248ef6fbbf119d29e159aac54aadc56d6bbc0
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 71022fd795e2cecff34c238a2e0978d3242cb037
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568534"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884557"
 ---
-<!-- cSpell:ignore Personalizer -->
-
 # <a name="what-are-ai-applications"></a>AI アプリケーションとは
 
 Azure では、任意のツールおよびテクノロジと組み込みの AI を使用して、インテリジェントなアプリケーションをより短時間でビルドできます。
@@ -53,7 +51,7 @@ Cognitive Services は、開発者が直接的な AI またはデータ サイ�
 ### <a name="language-apis"></a>Language API
 
 | [サービス名] | サービスの説明 |
-| --- | -- |
+|--|--|
 | [Language Understanding (LUIS)](/azure/cognitive-services/luis/) | Language Understanding サービス (LUIS) を使用すると、アプリケーションで人の発話の意図を認識できるようになります。 |
 | [QnA Maker](/azure/cognitive-services/qnamaker/index "QnA Maker") | QnA Maker を使用すると、半構造化コンテンツから質疑応答サービスを構築できます。 |
 | [Text Analytics](/azure/cognitive-services/text-analytics/) | Text Analytics によって、未加工のテキストに対して、感情分析、キー フレーズ抽出、および言語検出のための自然言語処理が提供されます。 |
@@ -79,7 +77,7 @@ Cognitive Services によって、Azure Active Directory の資格情報を使�
 
 Cognitive Services には、クラウドまたはオンプレミスへのデプロイ用にコンテナーが用意されています。 詳細については、[Cognitive Services のコンテナー](/azure/cognitive-services/cognitive-services-container-support)に関するページを参照してください。
 
-<!-- docsTest:ignore "HIPAA BAA" "CSA STAR" -->
+<!-- docsTest:casing "HIPAA BAA" "CSA STAR" -->
 
 ### <a name="certifications-and-compliance"></a>認定資格とコンプライアンス
 

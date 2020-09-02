@@ -7,14 +7,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 9e7980b54d46f96399904152884d6ed5fe4ac4bc
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3f36b60a37a8e7d86ead4c0171e109f350bf0ecc
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574280"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877128"
 ---
-<!--docsTest:ignore TVM -->
+<!--docsTest:casing TVM -->
 
 # <a name="function-of-cloud-security-posture-management"></a>クラウド セキュリティ体制の管理の機能
 

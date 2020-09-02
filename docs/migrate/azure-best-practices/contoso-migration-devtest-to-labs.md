@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: e5fd5e1a0ef81e9d6c32fdc13959ced387ee3166
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5a9d266e6836540fdfc7e971fd1fde19c6219230
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571288"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882449"
 ---
-<!-- cSpell:ignore vcenter -->
-
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>Dev/Test 環境を Azure DevTest Labs に移行する
 
 この記事では、Contoso という架空の会社が、Dev/Test 環境を Azure DevTest Labs に移行する方法について説明します。

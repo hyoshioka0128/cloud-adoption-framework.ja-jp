@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 434f4df0d49ab6ca5085518242da684a1bcb3060
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 192120d7c909c9907a649a66c93c660693d41de8
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574501"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877247"
 ---
-<!-- cSpell:ignore timleyden tileyden -->
-
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 内での監視とレポート
 
 Azure が提供する多数のサービスを組み合わせると、アプリケーションやそれらを支える Azure リソースからテレメトリを収集、分析し、それに基づいて対処するための包括的なソリューションが提供されます。 さらに、これらのサービスを拡張して、オンプレミスの重要なリソースを監視して、ハイブリッド監視環境を構築することもできます。

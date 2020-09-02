@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7ed27553a052d7fb236e8c6780d34b8f9b973f5f
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 82e2621b1959c9d2645cb6161bb4c66eec6c33f1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195600"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880120"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>ID ベースラインのメトリック、インジケーター、およびリスク許容度
 

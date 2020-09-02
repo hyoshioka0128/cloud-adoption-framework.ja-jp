@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 58cc1aba7775bd32ce23327e6da7ff17cd9f519c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: dca1d095eccc473445c602f679f475f44c19f1b5
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570761"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882330"
 ---
 <!-- cSpell:ignore DATEADD DATEDIFF Attunity Teradata Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" "Attunity Replicate" -->
 
@@ -31,8 +31,6 @@ Teradata と Azure Synapse は、両者とも、大量のデータで高いク�
 この記事では、Azure Synapse で移行した Teradata データ ウェアハウスおよびデータ マートについて同等以上のパフォーマンスを得ることを目的として、スキーマの移行について説明します。 既存の Teradata 環境からの移行に特に適用される考慮事項について検討します。
 
 大まかに言えば、移行プロセスには次の表に示す手順が含まれています。
-
-<!-- markdownlint-disable MD033 -->
 
 | 準備        | 移行                             | 移行後 |
 | :----------------- | :----------------------------- | :---------------- |

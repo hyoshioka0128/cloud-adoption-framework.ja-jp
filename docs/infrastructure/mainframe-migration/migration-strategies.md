@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cc968a5434518ada3d809fb8e22bec4c4e0e0dc2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 276555cd06e751e82744a6b5d172e2cf9ce0acfe
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568772"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882823"
 ---
-<!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+<!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>メインフレームから Azure に切り替える
 
@@ -24,9 +24,9 @@ Azure は、従来のメインフレーム アプリケーションを実行す�
 
 ![メインフレームと Azure](../../_images/mainframe-migration/make-the-switch.png)
 
-<!-- docsTest:ignore "vs. vCPUs" -->
+<!-- docsTest:casing vCPUs -->
 
-## <a name="mips-and-vcpus"></a>MIPS と vCPU
+## <a name="mips-vs-vcpus"></a>MIPS と vCPU
 
 メインフレームのワークロードを実行するために必要な仮想中央処理装置 (vCPU) の数を決定するための汎用のマッピング式はありません。 ただし、100万命令毎秒 (MIPS) のメトリックは、多くの場合、Azure 上の vCPU にマップされます。 MIPS では、特定のマシンの 1 秒あたりのサイクル数を一定の値にすることで、メインフレームの全体的なコンピューティング能力を測定します。
 

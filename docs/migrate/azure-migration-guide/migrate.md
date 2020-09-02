@@ -9,20 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5c8ea1dd6f6ad7d3824264b58bbef87b174d727a
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 7363c62aa5bd6ed13fcd5db8fca92ed51ecf18f9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848195"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885033"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
 このフェーズでは、評価フェーズの出力を使用して環境の移行を開始します。 このガイドは、完了状態に至るための適切なツールの特定に役立ちます。 ネイティブ ツール、サードパーティ製ツール、およびプロジェクト管理ツールについて確認します。
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="native-migration-tools"></a>[ネイティブ移行ツール](#tab/Tools)
 
@@ -160,8 +158,6 @@ Azure Cosmos DB データ移行ツールでは、さまざまなソースから 
 詳細については、次を参照してください。
 
 - [Azure Cosmos DB データ移行ツール](/azure/cosmos-db/import-data)
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="third-party-migration-tools"></a>[サード パーティの移行ツール](#tab/third-party-tools)
 

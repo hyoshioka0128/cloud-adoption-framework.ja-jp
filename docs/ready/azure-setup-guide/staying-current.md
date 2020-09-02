@@ -9,25 +9,21 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0c1dd56f5d7c5216693b726de9cb6fbf15a59b8f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8af5a34e368d6ffe0774e7437e2fc62e21fa3453
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574467"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885900"
 ---
-<!-- docsTest:ignore "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
-<!-- cSpell:ignore jelledruyts andym endjin AzAdvertizer -->
+<!-- docsTest:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
+<!-- cSpell:ignore endjin AzAdvertizer -->
 
 # <a name="stay-current-with-azure"></a>Azure を最新の状態に保つ
 
 Azure のようなクラウド プラットフォームは、多くの組織がこれまで経験してきたものより早く変化します。 この変化のペースは、組織が人員とプロセスをこの新たなペースに適応させることが必要であることを意味しています。 組織がこの変化に対応するのに責任を負う担当者は、圧倒される思いがすることもあるでしょう。 このセクションで示されているリソースは、最新情報を入手するのに役立ちます。
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="top-resources"></a>[上位のリソース](#tab/TopResources)
-
-<!-- markdownlint-enable MD025 -->
 
 次のリソースは、Azure に関する最新情報を入手するのに役立ちます。
 
@@ -37,11 +33,7 @@ Azure のようなクラウド プラットフォームは、多くの組織が�
 - **サービス固有のブログ:** 個々のさまざまな Azure サービスでブログが発行されています。これらのサービスに依存している場合は、それらをフォローすることができます。 Web 検索で、関心のあるブログを見つけてください。
 - **Azure の情報ハブ:** 非公式の [Azure の情報ハブ](https://azureinfohub.azurewebsites.net)では、ここにリストされているほとんどのリソースがまとめられています。 個々のサービスへのリンクをフォローして、詳細情報を取得し、サービスに固有のブログを見つけましょう。 [Azure の情報ハブの RSS フィード](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure)を介してサブスクライブします。 \*
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="additional-resources"></a>[その他のリソース](#tab/AdditionalResources)
-
-<!-- markdownlint-enable MD025 -->
 
 Azure に関する最新情報を入手するのに役立つより詳しいコンテンツについては、次のリソースを確認してください。
 
