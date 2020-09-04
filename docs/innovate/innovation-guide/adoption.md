@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8d8e25dfaa7f39eb2c647fbe3a8a7c0f1d3d1fcd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 462b365101d90688d6a3e4eb9b4be9cd4d9aa275
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568126"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883180"
 ---
 # <a name="prepare-for-customer-feedback"></a>カスタマー フィードバックの準備
 
@@ -38,7 +38,7 @@ Application Insights は、アプリケーションの使用状況に関する�
 アプリケーションの定量的データを表示するには:
 
 1. **Application Insights** に移動します。
-   - 目的のアプリケーションが一覧に表示されない場合は、 **[追加]** を選択し、プロンプトに従って App Insights の構成を開始します。
+   - 目的のアプリケーションが一覧に表示されない場合は、 **[追加]** を選択し、プロンプトに従って Application Insights の構成を開始します。
    - 目的のアプリケーションが一覧にある場合はそれを選択します。
 1. **[概要]** ウィンドウには、アプリケーションに関するいくつかの統計情報があります。 仮説との関連性の高いデータを表示するカスタム ダッシュボードを作成するには、 **[アプリケーション ダッシュボード]** を選択します。
 
@@ -66,7 +66,7 @@ Application Insights は、アプリケーションの使用状況に関する�
 
 ## <a name="quantitative-feedback-for-apis"></a>[API の定量的フィードバック](#tab/Quantitative-APIs)
 
-Connected Economy (つながる経済) が企業のイノベーションのあり方を変えつつあります。 市場や業界の混乱がこれまでになく加速しています。 混乱の形態はさまざまです。企業は、進行中のビジネス活動でつまずくことなく、変革をどのように先導するかという "_イノベーターのジレンマ_" に取り組まなければなりません。
+Connected Economy (つながる経済) が企業のイノベーションのあり方を変えつつあります。 市場や業界の混乱がこれまでになく加速しています。 混乱の形態はさまざまです。企業は、進行中のビジネス活動でつまずくことなく、変革をどのように先導するかという "*イノベーターのジレンマ*" に取り組まなければなりません。
 
 社外的には、企業は API を使用して顧客やパートナーとやり取りする方法を変えています。 社内的には、API を使用して、ビジネスの個々の部分をシームレスにつないでいます。 API 経済は、ソーシャル、モバイル、分析、クラウドという 4 つの構成要素で機能します。 迅速かつ費用対効果の高い方法でアプリケーションやサービスをつなぎ、価値提案を拡大します。
 
@@ -114,7 +114,7 @@ API Management サービスを開くには、[Azure portal](https://portal.azure
 
 ### <a name="action"></a>アクション
 
-Azure Board と Azure Pipelines には、GitHub および Azure とは別のポータルが必要です。 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops) を使用して開始してください。
+Azure Board と Azure Pipelines には、GitHub や Azure とは別のポータルが必要です。 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops) を使用して開始してください。
 
 ::: zone-end
 
@@ -151,7 +151,7 @@ DevOps プロジェクトを作成するには:
 
 パイプラインにある現在のデプロイを表示するには:
 
-1. **[App Service]** に移動します。
+1. **[App Services]** に移動します。
 2. 一覧から目的のアプリケーションを選択します。
 3. **[App Services]** ペインの **[デプロイ]** セクションで、 **[デプロイ センター]** を選択します。
 

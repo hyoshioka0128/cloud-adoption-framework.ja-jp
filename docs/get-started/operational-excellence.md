@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 39c19414011a55a5583a215332c699ee4d3f3b16
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2c18dbcc59d8be0f1002000e6286b2617ed81be8
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569333"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884302"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>作業を開始しましょう。デジタル変革におけるオペレーショナル エクセレンスを実現する
 
@@ -48,7 +48,6 @@ ms.locfileid: "88569333"
 - [業務上の正当な理由](../strategy/cloud-migration-business-case.md): 業務上の正当な理由は、クラウド導入の財務計画全体の概要を示します。 これは、最初の予算編成に役立つ情報源となる可能性があります。
 - [メトリックの学習](../strategy/learning-metrics.md):包括的なビジネス戦略とより戦術的な変更管理計画の整合性を維持するために、学習メトリックを確立します。 これらのメトリックは、計画に向けて反復的かつ段階的な進捗状況を示すように設計する必要があります。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -73,10 +72,9 @@ ms.locfileid: "88569333"
 - [インベントリの収集](../digital-estate/inventory.md): 導入前に、デジタル資産を分析するためのデータ ソースを確立します。
 - [ベスト プラクティス:Azure Migrate](../plan/contoso-migration-assessment.md): Azure Migrate を使用してインベントリを収集します。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization):増分型の合理化を進める中で、定量分析によって、予算編成のためにクラウドの候補が特定されます。
-- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)することにより、コスト モデルと予測モデルを対応付けます。
+- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management と Billing を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コストおよび予測のモデルを対応付けます。
 - [クラウド導入計画の作成](../plan/plan-intro.md#build-your-cloud-adoption-plan): 実用的なワークロード、資産、タイムラインの詳細を含む計画を作成します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -102,7 +100,6 @@ ms.locfileid: "88569333"
 - [ワークロードの評価](../migrate/azure-migration-guide/assess.md?tabs=challenge-assumptions): 最新の一連の移行優先順位を評価し、それに基づいて行動するためのクラウド導入チームの取り組み。
 - [ビジネス価値の合意](../innovate/business-value.md): 新しいイノベーションの各リリースでビジネス価値を確実に一致させるためのクラウド導入チームの取り組み。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -121,5 +118,5 @@ ms.locfileid: "88569333"
 
 - **コストの最適化**: [エンタープライズ コストの管理](./manage-costs.md)に関する入門ガイドを使用して、運用コストを継続的に最適化します。
 - **セキュリティ:** [ポートフォリオ全体でのセキュリティの実装](./security.md)に関する入門ガイドを使用して、ポートフォリオ全体のエンタープライズ セキュリティを統合することでリスクを軽減します。
-- **パフォーマンス管理:** [企業全体のパフォーマンス管理](./performance.md)に関する入門ガイドを使用して、IT 資産のパフォーマンスがビジネス プロセスをサポートできるようにします。
-- **信頼性:** [信頼性を創出する制御の実装](./reliability.md)に関する入門ガイドを使用して、信頼性を高め、ビジネスの中断を削減します。
+- **パフォーマンス管理:** [エンタープライズ全体でのパフォーマンス管理](./performance.md)に関する入門ガイドを使用して、IT 資産のパフォーマンスがビジネス プロセスをサポートできるようにします。
+- **信頼性:** [信頼性を創出する制御の実装](./reliability.md)に関する入門ガイドを使用して、信頼性を向上させ、ビジネスの中断を削減します。

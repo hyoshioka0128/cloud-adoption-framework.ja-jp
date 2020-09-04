@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 38e66e353b0757ca34d9b0b61639ce36739d5f05
-ms.sourcegitcommit: 76edf563a08ff7dc81c3fc2dc6c8972ab3b4c55b
+ms.openlocfilehash: 5bd33e4e61dbef039b8d993606596fb707d66085
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88237204"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885390"
 ---
 # <a name="ready-your-cloud-environment-for-azure-stack-hub-migration"></a>Azure Stack Hub 移行のためのクラウド環境を準備する
 
@@ -31,7 +31,7 @@ ms.locfileid: "88237204"
 
 **ランディング ゾーンとクラウド プラットフォーム接続**:そのプロセスの中で、現在のデータセンターと Azure 間に安定したネットワーク接続を確保します。 ネットワーク接続が確立されたら、Azure への接続の待機時間、帯域幅、信頼性をテストします。
 
-**ガバナンスと操作**:両方のクラウドに移行する場合には、環境に影響を与えるいくつかの初期の意思決定を行う必要があります。 ベスト プラクティスを適用することで、パブリック クラウド内で実行されるクラウド ネイティブの操作とガバナンス ツールの上に構築します。 このアプローチによって、データセンター内で高価なシステムを実行するコストや、Azure Stack Hub 上で容量を消費する負荷が軽減されます。 いずれかの形式のクラウドに移行するとき、運用、ガバナンス、変更管理のために、ベスト プラクティスに従うか、既存のシステムの使用を継続する必要があります。
+**ガバナンスと操作**:両方のクラウドに移行する場合には、環境に影響を与えるいくつかの初期の意思決定を行う必要があります。 ベスト プラクティスを適用することで、パブリック クラウド内で実行されるクラウド ネイティブの操作とガバナンス ツールの上に構築します。 このアプローチによって、データセンター内での高価なシステムの実行や Azure Stack Hub 上の容量の消費で生じるコストが軽減されます。 いずれかの形式のクラウドに移行するとき、運用、ガバナンス、変更管理のために、ベスト プラクティスに従うか、既存のシステムの使用を継続する必要があります。
 
 ## <a name="private-cloud-environment"></a>プライベート クラウド環境
 

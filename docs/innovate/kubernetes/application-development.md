@@ -7,14 +7,14 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8da625c6805c31dc2c07c2d31815851ca7e8b3a7
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ea215de1bb9c41536c5bf666d20b6f1b41bb5871
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572291"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882857"
 ---
-<!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
+<!-- cSpell:ignore autoscaler Istio Linkerd -->
 
 # <a name="application-development-and-deployment"></a>アプリケーションの開発とデプロイ
 
@@ -30,7 +30,7 @@ ms.locfileid: "88572291"
 > - Kubernetes アプリケーションの開発をサポートするためのプロジェクト フォルダーの構造はどのようにしますか?
 > - アプリケーションの状態、構成、およびストレージの要件を特定しましたか?
 
-<!-- docsTest:ignore "AAD Pod Identity -->
+<!-- docsTest:casing "AAD Pod Identity -->
 
 > [!div class="tdCol2BreakAll"]
 >
@@ -74,12 +74,12 @@ ms.locfileid: "88572291"
 > - 横断的なアプリケーションの問題はアプリケーションから抽象化されていますか?
 > - 新しい機能やバージョンを繰り返し適用する一方で、システムとアプリケーションの信頼性を維持できますか?
 
-<!-- docsTest:ignore Consul -->
+<!-- docsTest:casing Consul -->
 
 > [!div class="tdCol2BreakAll"]
 >
 > | チェック リスト  | リソース                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **API ゲートウェイをデプロイする。** マイクロサービスへのエントリ ポイントとして機能する API ゲートウェイにより、マイクロサービスからクライアントが分離され、セキュリティ レイヤーが追加され、横断的問題を処理する負担を排除することでマイクロサービスの複雑さが軽減されます。     | [Azure Kubernetes Service にデプロイされたマイクロサービスで Azure API Management を使用する](/azure/api-management/api-management-kubernetes) |
-> | **サービス メッシュをデプロイする。** サービス メッシュは、ワークロードに対するトラフィック管理、回復性、ポリシー、セキュリティ、強力な ID、可観測性などの機能を提供します。 アプリケーションはこれらの運用上の機能から切り離され、サービス メッシュがそれらをアプリケーション レイヤーからインフラストラクチャ レイヤーに移動します。     | [Kubernetes でのサービス メッシュのしくみ (ビデオ)](https://www.youtube.com/watch?v=izVWk7rYqWI&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=15&t=0s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> [サービス メッシュの詳細](/azure/aks/servicemesh-about) <br> [Azure Kubernetes Service での Istio の使用](/azure/aks/servicemesh-istio-about) <br> [Azure Kubernetes Service での Linkerd の使用](/azure/aks/servicemesh-linkerd-about) <br> [Azure Kubernetes Service での Consul の使用](/azure/aks/servicemesh-consul-about) |
+> | **サービス メッシュをデプロイする。** サービス メッシュは、ワークロードに対するトラフィック管理、回復性、ポリシー、セキュリティ、強力な ID、可観測性などの機能を提供します。 アプリケーションはこれらの運用上の機能から切り離され、サービス メッシュがそれらをアプリケーション レイヤーからインフラストラクチャ レイヤーに移動します。 | [Kubernetes でのサービス メッシュのしくみ (ビデオ)](https://www.youtube.com/watch?v=izVWk7rYqWI&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=15&t=0s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> [サービス メッシュの詳細](/azure/aks/servicemesh-about) <br> [Azure Kubernetes Service での Istio の使用](/azure/aks/servicemesh-istio-about) <br> [Azure Kubernetes Service での Linkerd の使用](/azure/aks/servicemesh-linkerd-about) <br> [Azure Kubernetes Service での Consul の使用](/azure/aks/servicemesh-consul-about) |
 > | **サイト信頼性エンジニアリング (SRE) のプラクティスを実施する。** サイト信頼性エンジニアリング (SRE) は、マーケットプレースで要求される速度で反復を行う一方で、重要なシステムとアプリケーションの信頼性を維持できる実証済みの手法です。   | [サイト信頼性エンジニアリング (SRE) の概要](/learn/modules/intro-to-site-reliability-engineering) <br> [Microsoft での DevOps:ゲーム ストリーミングの SRE](https://azure.microsoft.com/resources/devops-at-microsoft-game-streaming-sre) |

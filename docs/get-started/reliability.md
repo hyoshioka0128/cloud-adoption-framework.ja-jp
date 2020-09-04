@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 385bfcaefd7fcb5dab78e9dd80478a0fe2c7d644
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 448e98d06a79f9683996a8db946bf52b0c8e8cdd
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569265"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884234"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>作業を開始しましょう。適切な管理によって信頼性を向上させる
 
@@ -53,7 +53,6 @@ ms.locfileid: "88569265"
 - [高度な運用](../manage/design-principles.md): [ビジネス アラインメント](../manage/considerations/business-alignment.md)に関する会話の基盤として、管理ベースラインを使用します。 [重要度](../manage/considerations/criticality.md)、[ビジネスへの影響](../manage/considerations/impact.md)、[運用上のコミットメント](../manage/considerations/commitment.md)について明確に説明するのに役立ちます。 ビジネス アラインメントを通じて、[ベースラインの改善](../manage/azure-management-guide/enhanced-baseline.md)、特定の[テクノロジ プラットフォーム](../manage/azure-management-guide/workload-specialization.md)の管理、[ワークロード固有の運用](../manage/azure-management-guide/platform-specialization.md)への要求を定量化して検証することができます。
 - **アーキテクチャ レビューのガイド:** 運用上の要件を満たすために、ワークロード レベルでのアーキテクチャの変更が必要になる場合があります。 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs) と [Microsoft Azure Well-Architected Review](/assessments?id=azure-architecture-review) は、特定のワークロードの技術所有者との対話を導くのに役立ちます。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -73,12 +72,11 @@ ms.locfileid: "88569265"
 
 - すべてのワークロードとリソースが[適切な名前付けおよびタグ付け規則](../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認します。 [Azure Policy を使用してタグ付け規則を適用](/azure/governance/policy/tutorials/govern-tags)し、重要度のタグを特に強調します。
 - クラウド ガバナンスを初めて使用する方は、ガバナンスの方法論を使用して、[ガバナンスのポリシー、プロセス、規範](../govern/index.md)を確立してください。
-- Cost Management 規範を初めて使用する方は、[コスト管理の改善](../govern/guides/complex/cost-management-improvement.md)に関する記事に記載されているガイダンスに従ってください。 [実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)のセクションに注目します。
+- コスト管理規範を初めて使用する方は、[コスト管理の規範の改善](../govern/guides/complex/cost-management-improvement.md)に関する記事に記載されているガイダンスに従ってください。 [実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)のセクションに注目します。
 
 > [!NOTE]
 > **信頼性の実現に向けた他のチームとの連携に着手する手順:** クラウド導入ライフサイクル全体におけるさまざまな判断が信頼性に直接影響します。 以降の手順では、IT ポートフォリオ全体で一貫した信頼性を実現するために必要な連携と支援について概説します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -100,7 +98,6 @@ ms.locfileid: "88569265"
 - [ビジネス成果](../strategy/business-outcomes/index.md):一部の財政上の成果では、コストが極端に重視される傾向があります。 目的の成果を財務上のメトリックに対応付ける場合は、初期段階でコスト管理ガバナンス規範に投資してください。
 - [業務上の正当な理由](../strategy/cloud-migration-business-case.md): 業務上の正当な理由は、クラウド導入の財務計画全体の概要を示します。 これは、最初の予算作成に役立つ情報源となる可能性があります。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -128,10 +125,9 @@ ms.locfileid: "88569265"
 - [インベントリの収集](../digital-estate/inventory.md): 導入前に、デジタル資産を分析するためのデータ ソースを確立します。
 - [ベスト プラクティス:Azure Migrate](../plan/contoso-migration-assessment.md):Azure Migrate を使用してインベントリを収集します。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization):増分型の合理化の間は、定量分析により予算を作成するためにクラウドの候補を特定することができます。
-- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)することにより、コスト モデルと予測モデルを対応付けます。
+- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management と Billing を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コストおよび予測のモデルを対応付けます。
 - [クラウド導入計画の作成](../plan/plan-intro.md#build-your-cloud-adoption-plan): 実用的なワークロード、資産、タイムラインの詳細を含む計画を作成します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -151,7 +147,6 @@ Azure のクラウド導入フレームワークの準備方法では、クラ�
 
 - [ランディング ゾーンの運用の改善](../ready/considerations/landing-zone-operations.md): 特定のランディング ゾーン内の運用を強化するためのベストプラクティスが紹介されています。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -174,7 +169,6 @@ Azure のクラウド導入フレームワークの準備方法では、クラ�
 - [昇格前のチェックリスト](../migrate/migration-considerations/optimize/ready.md)
 - [運用リリースのチェックリスト](../migrate/migration-considerations/optimize/promote.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |

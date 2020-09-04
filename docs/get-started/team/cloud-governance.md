@@ -3,16 +3,16 @@ title: 作業を開始しましょう。クラウド ガバナンス チーム�
 description: ガバナンス チームのスコープ、成果物、機能を確立して、クラウド ガバナンスの成功に向けて準備します。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 346b4feabfbb7fefd8632ac4b3f5f81473815843
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 1df9bf9b6352f3aee42154aa5f1271fd0fb5be4d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661998"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884183"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>作業を開始しましょう。クラウド ガバナンス チームを構築する
 
@@ -32,9 +32,8 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 **成果物の完遂をサポートするうえでのガイダンス:**
 
 - [クラウド ガバナンス機能](../../organize/cloud-governance.md)が、既に複数の個人またはチームに分散している場合があります。 "クラウド ガバナンス チーム" という名前のチームを持つことは重要ではありませんが、責任を負う関係者またはチームが必要な能力を備えている必要があります。
-- 企業の長期的なクラウド導入戦略を 1 つのクラウド環境の 1 つのランディング ゾーンから遂行できる場合、ガバナンスと運用の作業は、1 人の担当者または 1 つのチームが対応できる量である可能性があります。 そのようなチームはクラウド ガバナンス以外にも多くの機能を果たしているため、クラウド ガバナンスと呼ばれることはほとんどありません。 そのようなチームにとっても、このスタート ガイドは、この重要なガバナンスの機能を確実に遂行できるようにするうえで役立ちます。
+- 企業の長期的なクラウド導入戦略を 1 つのクラウド環境の 1 つのランディング ゾーンから遂行できる場合、ガバナンスと運用の作業は、1 人の担当者または 1 つのチームが対応できる量である可能性があります。 そのようなチームはクラウド ガバナンス以外にも多くの機能を果たしているため、クラウド ガバナンスと呼ばれることはほとんどありません。 そのようなチームにとっても、このファースト ステップ ガイドは、この重要なガバナンスの機能を確実に遂行できるようにするうえで役立ちます。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -57,7 +56,6 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 - クラウド導入チームのメンバーと共に会社の[クラウド導入計画](../../plan/template.md)を確認して、タイムラインと優先順位を把握します。
 - 運用チームの[運用管理ワークブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を確認して、ビジネスで確立されている運用要件とコミットメントを把握します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -77,7 +75,6 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 
 - ミーティングの頻度に関するその他のガイダンスについては、[クラウド ガバナンス機能](../../organize/cloud-governance.md#deliverable)に関するセクションをご覧ください。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -176,7 +173,6 @@ Azure 向けクラウド導入フレームワークの公式ガイダンスは�
 
 - [新しいワークロードとリソースをオンボードする](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding)ためのプロセスを確立します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |

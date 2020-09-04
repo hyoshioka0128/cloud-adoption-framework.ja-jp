@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 95c6932660e578273bab70e70ffac00bfb8cfc61
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7fe5177de0ea21132e9c05846544e355047b7c72
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569367"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275394"
 ---
 # <a name="get-started-accelerate-migration"></a>作業を開始しましょう。移行を促進する
 
@@ -48,7 +48,6 @@ ms.locfileid: "88569367"
 
 - [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を使用して、動機および目標となるビジネス成果を記録します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -66,7 +65,6 @@ ms.locfileid: "88569367"
 - サポート パートナーに協力を要請する前に、使用条件など契約上の合意を確立します。
 - [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)で認定パートナーを見つけます。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -87,7 +85,6 @@ ms.locfileid: "88569367"
 - 最初の 10 個のワークロードの定性分析。
 - [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)内の業務上の正当な理由を更新します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -104,7 +101,6 @@ ms.locfileid: "88569367"
 
 - [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を使用して業務上の正当な理由を記録します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -129,7 +125,6 @@ ms.locfileid: "88569367"
   - Azure DevOps を使い慣れていないと、このデプロイ プロセスに時間がかかる可能性があります。
   - 各ワークロードで使用できる複雑さとデータも、タイムラインに影響を与える可能性があります。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -146,7 +141,6 @@ ms.locfileid: "88569367"
 
 - [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)にスキルの準備計画を追加します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -168,7 +162,6 @@ ms.locfileid: "88569367"
   - 最初の 10 個のワークロードでは、ガバナンス、運用、セキュリティの要件によって、このプロセスに時間がかかることがあります。
   - 最初のランディング ゾーンと後続のランディング ゾーンの実際のリファクタリングは長い時間がかかりますが、移行作業と並行して行う必要があります。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -194,7 +187,6 @@ ms.locfileid: "88569367"
 
 ワークロードを移行する導入チームの能力が継続的に改善されます。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -207,6 +199,7 @@ ms.locfileid: "88569367"
 
 - [ガバナンスのアプローチ](../govern/index.md): 企業のポリシーとプロセスについて検討するためのプロセスを概説しています。 そのうえで、クラウド エンタープライズ導入作業全体でガバナンスを実現するために必要な規範を構築することができます。
 - [ガバナンスを始めるための基礎](../govern/guides/complex/prescriptive-guidance.md): ガバナンスの実用最小限の製品 (MVP) の作成に必要な ID ベースラインの規範、セキュリティ ベースラインの規範、デプロイ高速化の規範を理解します。これらは、すべての導入の基盤となります。
+- [ガバナンス ベンチマーク](https://aka.ms/adopt/assess/govern):組織のガバナンスの現在の状態におけるギャップを特定します。 個人用に設定されたベンチマーク レポートと、使用開始方法に関するキュレーションされたガイダンスを入手します。
 
 **成果物:**
 
@@ -214,7 +207,6 @@ ms.locfileid: "88569367"
 - 今後の改善を計画するために、ガバナンス ベンチマークを完成させます。
 - タイムライン リスク: ポリシーの改善とガバナンスの実装は、1 つの規範につき 1 週間から 4 週間かかる場合があります。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -239,7 +231,6 @@ ms.locfileid: "88569367"
   - ブックを確認する: アプリケーション所有者ごとに 1 時間を見積もります。
   - Microsoft Azure Well-Architected Review の評価を完了する: アプリケーションごとに 1 時間を見積もります。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |

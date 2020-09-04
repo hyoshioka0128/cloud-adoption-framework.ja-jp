@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2e8a4b21fa23eef21d0330c1f89e56fd7d56814a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 200fb15bf84ce24a88a25e0c39c35859bd8363b7
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567837"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882874"
 ---
 <!-- cSpell:ignore ONNX -->
 
@@ -91,7 +91,7 @@ Cognitive Services API の使用を開始するには:
 
     - 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** に名前を入力します。 次に、サービスを選択します。
 
-    - Cognitive Services API の一覧については、 **[Cognitive Services]** 見出しの横にある **[さらに参照する]** を選択します。 次に、サービスを選択します。
+    - Cognitive Services APIs の一覧については、 **[Cognitive Services]** 見出しの横にある **[さらに参照する]** を選択します。 次に、サービスを選択します。
 
 1. **[作成]** を選択し、ポータルの手順に従ってサービスをプロビジョニングします。
 

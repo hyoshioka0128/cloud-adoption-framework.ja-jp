@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 433c806c241b95600fcb840353c9c14e4d1aa8e1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a2c9f0fe0376358aa8b56bccac1f5f671ded858d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573447"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880222"
 ---
-<!-- cSpell:ignore offboarding preintegration -->
-
 # <a name="identity-baseline-discipline-improvement"></a>ID ベースライン規範の改良
 
 ID ベースライン規範では、アプリケーションまたはワークロードをホストするクラウド プロバイダーには関係なく、ユーザー ID の一貫性と継続性を保証するポリシーを確立する方法に重点を置いています。 クラウド ガバナンスの 5 つの規範のうち、ID ベースライン規範には、[ハイブリッド ID 戦略](../../decision-guides/identity/index.md)、ID リポジトリの評価および拡張、シングル サインオン (同じサインオン) の実装、承認されていない使用や悪意のあるアクターに対する監査と監視に関する意思決定が含まれます。 場合によっては、複数の ID プロバイダーを最新化、整理、または統合するための意思決定も含まれる可能性があります。
@@ -25,7 +23,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 
 ![導入の 4 つのフェーズ](../../_images/govern/adoption-phases.png)
 
-"_図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。_
+"*図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。*
 
 1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、漸進的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、ID ベースライン規範を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
 
@@ -63,7 +61,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - 早期導入者プログラムの確立、および制限された数のユーザーへのロールアウトを検討します。
 - アーキテクチャ ガイドラインによって最も影響を受ける人びとやチームを引き続き教育します。
 
-<!-- docsTest:ignore "seamless SSO" -->
+<!-- docutune:casing "seamless SSO" -->
 
 **潜在的なアクティビティ:**
 

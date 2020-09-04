@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3ce9fd30d23bfc72121f1dffc9dbf8edd6b228b6
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 1fda18a8f99c6e89c270f8724564eb0ac470d124
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786509"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879423"
 ---
 # <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>リソースの整合性規範の同期とビジネス上のリスク
 

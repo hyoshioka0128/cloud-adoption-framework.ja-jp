@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fdedf440bc947a2877cca6854b4745dd8482e493
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7ad8077c96d8083d77acbaa72749077cae8c2a8b
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567752"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176516"
 ---
-<!-- cSpell:ignore siterecovery -->
-
 # <a name="protect-and-recover-in-azure"></a>Azure での保護と復旧
 
 "_保護と復旧_" は、すべてのクラウド管理ベースラインにおいて 3 つ目の、そして最後の分野です。
@@ -46,9 +44,13 @@ ms.locfileid: "88567752"
 
 Azure Backup では、ご自身のデータを Microsoft Cloud 内でバックアップ、保護、および復旧できます。 Azure Backup によって、既存のオンプレミスまたはオフサイトのバックアップ ソリューションがクラウドベースのソリューションに置き換えられます。 この新しいソリューションは、信頼性が高く、セキュリティで保護され、コスト競争力を備えています。 Azure Backup では、1 つの一貫したソリューションを通じてオンプレミスの資産を保護および復旧することもできます。
 
+Azure に存在するデータに対して、Azure Backup にはさまざまなレベルの保護が用意されています。 例:Azure Virtual Machines や Azure Files などのクラウド インフラストラクチャの重要な要素をバックアップするために、[Azure 仮想マシンのバックアップ](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction)と[Azure ファイルのバックアップ](https://docs.microsoft.com/azure/backup/azure-file-share-backup-overview)が提供されています。 Azure Virtual Machines で実行されるデータベースなど、より重要なコンポーネントの場合は、[MS SQL](https://docs.microsoft.com/azure/backup/backup-azure-sql-database) や [SAP HANA](https://docs.microsoft.com/azure/backup/sap-hana-db-about) 向けの専用バックアップ ソリューションが大幅に低い RPO で提供されます。
+
+Azure Backup でバックアップを有効にすることがいかに簡単であるかを知るには、以下のセクションを参照して、Azure Virtual Machines のバックアップを有効にします
+
 ### <a name="enable-backup-for-an-azure-vm"></a>Azure VM のバックアップを有効にする
 
-1. Azure portal で、 **[仮想マシン]** を選択し、レプリケートする VM を選択します。
+1. Azure portal で、 **[仮想マシン]** を選択し、バックアップする VM を選択します。
 1. **[操作]** ペインで、 **[バックアップ]** を選択します。
 1. Azure Recovery Services コンテナーを作成するか、または既存のコンテナーを選択します。
 1. **[Create (or edit) a new policy]\(新しいポリシーを作成 (または編集) する)** を選択します。
@@ -64,7 +66,7 @@ Azure Backup では、ご自身のデータを Microsoft Cloud 内でバック�
 
 ::: zone target="docs"
 
-[概要](/azure/backup/backup-overview)
+Azure Backup の詳細とさまざまなオファリングについては、こちらの[概要](/azure/backup/backup-overview)に関するセクションを参照してください。
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 

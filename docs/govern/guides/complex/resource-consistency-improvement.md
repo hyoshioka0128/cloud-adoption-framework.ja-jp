@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b5bb646fd658f3b0c4393b0f68c5d449ee53db08
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 894485d38dc14d6619375c12a5154021f14f50f9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219973"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880681"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>複雑な企業向けのガバナンス ガイド: リソースの整合性の規範の改善
 
@@ -76,7 +76,7 @@ ms.locfileid: "83219973"
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>ベスト プラクティスの段階的な改善
 
-記事のこのセクションでは、ガバナンス MVP の設計を改善して、新しい Azure ポリシーと Azure Cost Management の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
+記事のこのセクションでは、ガバナンス MVP の設計を改善して、新しい Azure ポリシーおよび Azure Cost Management と Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
 この架空の例の体験では、保護されたデータの変化が既に発生していることが前提となります。 そのベスト プラクティスに基づき、次の項目によって運用監視の要件が追加され、ミッション クリティカルなアプリケーションのサブスクリプションが準備されます。
 

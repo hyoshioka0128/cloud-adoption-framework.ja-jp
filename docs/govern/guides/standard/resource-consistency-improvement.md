@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b8875b8393499a55004eb37cec78fc3db0370237
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 542ab82fc0b7031dc9cf294daf631cff1ed65d0e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193832"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880358"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-resource-consistency-discipline"></a>標準的な企業のガバナンス ガイド:リソースの整合性の規範の改善
 
@@ -80,7 +80,7 @@ Azure のデプロイを本番の業務プロセスで使用するには、ク�
 
 ## <a name="incremental-improvement-of-governance-practices"></a>ガバナンス プラクティスの段階的な改善
 
-記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーと Azure Cost Management の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
+記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーおよび Azure Cost Management と Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
 1. クラウド運用チームは、運用監視と自動修復に使用するツールを定義します。 クラウド ガバナンス チームは、これらの検出プロセスをサポートします。 このユース ケースでは、クラウド運用チームは Azure Monitor をミッション クリティカルなアプリケーションの監視の主要ツールとして選択しました。
 2. Azure DevOps でリポジトリを作成し、関連するすべての Resource Manager テンプレートとスクリプト化された構成をここに保存してバージョン管理を行います。

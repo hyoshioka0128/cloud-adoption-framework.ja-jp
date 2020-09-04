@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d89f3a9330ed81ba6644be4d5ce3101775fbe91
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 41c81cd14235933e09462470cc2c93f83f79b9fb
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573583"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880647"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: セキュリティ ベースライン規範の改善
 
@@ -97,7 +97,7 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>ベスト プラクティスの段階的な改善
 
-このセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーと Azure Cost Management の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
+このセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーおよび Azure Cost Management と Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
 新しいベスト プラクティスは、コーポレート IT (ハブ) とクラウド導入 (スポーク) の 2 つのカテゴリに分類されます。
 

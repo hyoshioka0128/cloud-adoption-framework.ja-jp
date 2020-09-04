@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44e3cb4488833b2c47d101ed6b5600872d4ccf62
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 496065642e8bbd212cc9cf5a24597e489b24a6ca
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754764"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880511"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準的な企業のガバナンス ガイド:コスト管理の規範の改善
 
 この記事では、ガバナンス MVP にコスト制御を追加することで物語を進めます。
 
 ## <a name="advancing-the-narrative"></a>物語を進める
-
-<!-- docsTest:ignore DR -->
 
 導入は、ガバナンス MVP で定義されているコストの許容範囲指標を以上に拡大しました。 これは "ディザスター リカバリー" 用データ センターからの移行に対応しているため、良いことです。 今回は支出の増加が、クラウド ガバナンス チームが時間をかける理由となっています。
 
@@ -38,7 +36,7 @@ ms.locfileid: "83754764"
 
 ### <a name="incrementally-improve-the-future-state"></a>将来の状態を段階的に改善する
 
-コストの監視およびレポートが、クラウド ソリューションに追加されます。 現在も IT 部門がコスト情報センターとしての役割を果たしています。 これは、クラウド サービスの支払いが、引き続き IT 調達に分類されることを意味します。 レポートでは、クラウド コストを消費している機能に直接運営費を関連付ける必要があります。 このモデルは、_ショーバック_ クラウド会計モデルと呼ばれています。
+コストの監視およびレポートが、クラウド ソリューションに追加されます。 現在も IT 部門がコスト情報センターとしての役割を果たしています。 これは、クラウド サービスの支払いが、引き続き IT 調達に分類されることを意味します。 レポートでは、クラウド コストを消費している機能に直接運営費を関連付ける必要があります。 このモデルは、*ショーバック* クラウド会計モデルと呼ばれています。
 
 現在や将来の状態が変わると、新しいリスクが現れるため、新しいポリシー ステートメントが必要になります。
 
@@ -65,13 +63,13 @@ ms.locfileid: "83754764"
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>ベスト プラクティスの段階的な改善
 
-記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーと Azure Cost Management の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
+記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーおよび Azure Cost Management と Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
-1. Azure Cost Management を実装します。
+1. Azure Cost Management と Billing を実装します。
     1. サブスクリプション パターンとリソース整合性の規範に合致する適切なアクセス スコープを確立します。 以前の記事で定義したガバナンス MVP と整合させることを前提にすると、このためには、高レベルのレポート作成を実行するクラウド ガバナンスチームのために、**登録アカウントのスコープ**へのアクセスが必要です。 ガバナンスの外部にあるその他のチームには、**リソース グループのスコープ**へのアクセスが必要な場合があります。
-    1. Azure Cost Management で予算を編成します。
+    1. Azure Cost Management と Billing で予算を編成します。
     1. 初期の推奨事項を確認して対応します。 レポート作成をサポートするための繰り返しのプロセスを用意します。
-    1. 初期用と繰り返し用の両方について、Azure Cost Management のレポートを構成して実行します。
+    1. 初期用と繰り返し用の両方について、Azure Cost Management と Billing のレポートを構成して実行します。
 2. Azure Policy を更新します
     1. タグ付け、管理グループ、サブスクリプション、およびリソース グループの値を監査して、差異がないか特定します。
     1. SKU サイズ オプションを確定して、デプロイ計画ドキュメントに記載されている SKU にデプロイを制限します。

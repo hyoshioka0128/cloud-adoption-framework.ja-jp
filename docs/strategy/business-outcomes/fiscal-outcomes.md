@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: fdbea736019042c192a011213c908fdec589565a
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: b10d9f8a777b1adfa6dbfe2bd1b977b94d675e5d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88194482"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884999"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財務上の結果の例
 
@@ -56,7 +56,7 @@ ms.locfileid: "88194482"
 - **例 #2:** ある持ち株会社は、最近、新しい会社を買収しました。 この買収では、条件により、6 か月以内に現在のデータセンターから新しいエンティティを削除する必要があります。 これに従わない場合は、この持ち株会社に毎月 100 万米国ドルの罰金が生じます。 クラウドへの移行でデジタル資産をクラウドに移行すれば、古い資産の使用を迅速に停止することができます。
 - **例 3:** 消費者を対象としたある所得税対応の会社では、年間収益の 70% が年初の 3 か月間に発生します。 その年の残りの期間では、大規模な IT 投資は比較的休止状態となります。 クラウドへの移行により、IT 部門は、その 3 か月の間に必要なコンピューティング/ホスティングのキャパシティをデプロイすることができます。 残りの 9 か月間は、コンピューティングのフットプリントを縮小することによって、IaaS のコストを大幅に削減できます。
 
-<!-- docsTest:ignore "Ryan Sorensen" "Director of Application Development and Enterprise Architecture" 1M -->
+<!-- docutune:ignore "Ryan Sorensen" "Director of Application Development and Enterprise Architecture" 1M -->
 <!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>例:Coverdell

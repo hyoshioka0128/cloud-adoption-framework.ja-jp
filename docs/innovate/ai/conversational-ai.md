@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 47d69db490f22f5c6513f5b6e26b559026b33728
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 835092c436f442dd9126009aee64ab54424f3e79
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568687"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878709"
 ---
 # <a name="conversational-ai"></a>会話型 AI
 
@@ -53,7 +53,7 @@ Azure Bot Service と Microsoft Bot Framework についての理解を深めま�
 Cognitive Services を追加してボットをさらにインテリジェントにする方法を学習します。
 
 - [AI アプリケーションを構築するための開発者ガイド](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/) (電子書籍)
-- [Cognitive Services の詳細情報](/azure/cognitive-services/)
+- [Cognitive Services](/azure/cognitive-services/) の詳細を確認する
 
 Bot Framework ソリューション アクセラレータを使用して独自の仮想アシスタントを構築する方法と、カレンダー、電子メール、目的地、To Do などの一般的なスキルのセットを選択する方法について学習します。
 

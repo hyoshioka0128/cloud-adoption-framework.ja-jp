@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2406e3671e6b4945a8fb87eb7ed29dbbbc0584ba
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3c3284f9f04a57e8532c0371197e1af7802e4fca
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566579"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275367"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "88566579"
 | リソースの編成 | クラウド導入の規模が拡大するにつれて、サブスクリプションの設計と管理グループの階層に関する考慮事項は、ガバナンス、運用管理、導入パターンに影響を与えます。 | ガバナンス |
 | ガバナンスの規範 | セキュリティ、ガバナンス、コンプライアンス ポリシーの監査と適用を自動化します。 | ガバナンス |
 | 運用ベースライン | クラウドで安定して継続的な運用を行うには、可視性、運用コンプライアンス、保護および復旧機能を提供する運用ベースラインが必要です。 | 管理する |
-| ビジネス継続性とディザスター リカバリー (BCDR) | BCDR には、信頼性と迅速な復旧の基盤が用意されています。 | 管理する |
+| ビジネス継続性とディザスター リカバリー (BCDR) | 回復性は、アプリケーションを円滑に機能させるための鍵となります。 BCDR は回復性の重要な要素です。 BCDR は、バックアップによるデータの保護と、ディザスター リカバリーによる障害からのアプリケーションの保護に関係します。 | 管理する |
 | デプロイ オプション | 最適なツールとテンプレートを配置し、ランディング ゾーンとサポート リソースをデプロイします。 | Ready |
 
 ## <a name="next-steps"></a>次のステップ

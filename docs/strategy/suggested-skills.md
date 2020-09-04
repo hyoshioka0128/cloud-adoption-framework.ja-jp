@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 910ccff4708ef57fe6e652bb59fa34e0d0ea74e3
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 375dcdbb63241d3bc3b1c29f9308bccbe698844c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662321"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885764"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
 
@@ -67,7 +67,7 @@ ms.locfileid: "88662321"
 
 ## <a name="organizational-skills"></a>組織のスキル
 
-クラウド導入の取り組みの動機と目的のビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チーム (v チーム) を確立することが必要になる場合もあります。 これらの記事は、望ましい結果を得られるようにこれらのチームを編成するために必要なスキルの開発に役立ちます。
+クラウド導入の取り組みの動機と目的のビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チームを確立することが必要になる場合もあります。 これらの記事は、望ましい結果を得られるようにこれらのチームを編成するために必要なスキルの開発に役立ちます。
 
 - [初期の組織配置](../organize/index.md)。 特定の目標を達成しやすくするための組織の配置とさまざまなチーム構造の概要です。
 - [サイロおよび封土の分析](../organize/fiefdoms-silos.md)。 2 つの一般的な組織のアンチパターンと、生産性の高いコラボレーションにチームを導く方法を理解します。

@@ -7,18 +7,18 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0278ef7006deec80580a6f457863049452c5069d
-ms.sourcegitcommit: 76edf563a08ff7dc81c3fc2dc6c8972ab3b4c55b
+ms.openlocfilehash: 195b630b994a83a39026374f27de297b010ae024
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88237000"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885475"
 ---
 # <a name="assess-workloads-for-azure-stack-hub-migration"></a>Azure Stack Hub 移行のワークロードを評価する
 
 この記事では、[クラウド戦略への Azure Stack の組み入れ](./index.md)を決定し、[Azure Stack Hub 移行用の計画](./plan.md)を作成し、[お使いの環境で移行の準備ができている](./ready.md)ことを前提としています。
 
-計画手法の中で組織のデジタル資産を合理化する場合に、各ワークロードが検出されてインベントリされ、最初の意思決定が定量的データに基づいて行われました。 各ワークロードをデプロイする前に、データおよび定性的データによる意思決定を検証することが重要です。
+計画手法の中で組織のデジタル資産を合理化する間に、各ワークロードが検出されてインベントリされ、最初の意思決定が定量的データに基づいて行われました。 各ワークロードをデプロイする前に、データおよび定性的データによる意思決定を検証することが重要です。
 
 ## <a name="placement"></a>配置
 

@@ -7,18 +7,18 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 9672d7ba47c18202e685c18372ed1773674be069
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2cb7faca74334538f48b1a57e3bd6b70f3983e43
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575062"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885526"
 ---
 # <a name="govern-an-azure-instance-in-your-datacenter"></a>データセンターで Azure のガバナンスを実行する
 
 パブリックおよびプライベートのクラウド プラットフォームにまたがるハイブリッド ソリューションのガバナンスは複雑な作業です。 Azure Stack Hub は、データセンターで実行されている Azure のユーザー独自のプライベート インスタンスであるため、そのような複雑さはもともと削減されています。
 
-とはいえ、クラウド導入フレームワークの[ガバナンスの方法](../../govern/index.md)で概説されているビジネス プロセス、規範、およびベスト プラクティスの多くは、Azure Stack Hub を使用したハイブリッド ガバナンスにも適用できます。 Azure のパブリック クラウド バージョンで使用されるクラウドネイティブ ツールの多くは、Azure Stack Hub でも使用できます。
+とはいえ、クラウド導入フレームワークの[ガバナンス手法](../../govern/index.md)で概説されているビジネス プロセス、規範、および多くのベスト プラクティスは、Azure Stack Hub を使用したハイブリッド ガバナンスにも適用できます。 Azure のパブリック クラウド バージョンで使用されるクラウドネイティブ ツールの多くは、Azure Stack Hub でも使用できます。
 
 ## <a name="azure-stack-hub-governance-considerations"></a>Azure Stack Hub のガバナンスに関する考慮事項
 

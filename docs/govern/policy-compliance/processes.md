@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fac64038c805eed0566554dd42551b32f4294900
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 4eb41f087e999538dc7c5fc9366b6173926c924a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786230"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879678"
 ---
 # <a name="establish-policy-adherence-processes"></a>ポリシー順守プロセスを確立する
 
@@ -74,13 +74,13 @@ ms.locfileid: "84786230"
 
 違反のトリガーとアクションの例:
 
-<!-- docsTest:ignore "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
+<!-- docutune:casing "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
-| クラウド ガバナンスの分野 | サンプル トリガー | サンプル アクション |
+| ガバナンス規範 | サンプル トリガー | サンプル アクション |
 |-----------------------------|----------------|---------------|
-| Cost Management | 月間のクラウド支出が予想より 20% 以上多い。 | リソース利用状況のレビューを開始する請求部署のリーダーに通知する。 |
-| セキュリティ ベースライン | 不審なユーザー アクティビティを検出する。 | IT セキュリティ チームに通知し、疑わしいユーザー アカウントを無効にする。 |
-| リソースの整合性 | ワークロードの CPU 使用率が 90% を超えている。 | IT 運用チームに通知し、追加のリソースをスケールアウトして負荷を処理する。 |
+| **Cost Management** | 月間のクラウド支出が予想より 20% 以上多い。 | リソース利用状況のレビューを開始する請求部署のリーダーに通知する。 |
+| **セキュリティ ベースライン** | 不審なユーザー アクティビティを検出する。 | IT セキュリティ チームに通知し、疑わしいユーザー アカウントを無効にする。 |
+| **リソースの整合性** | ワークロードの CPU 使用率が 90% を超えている。 | IT 運用チームに通知し、追加のリソースをスケールアウトして負荷を処理する。 |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>監視とコンプライアンスの自動化
 

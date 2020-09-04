@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83086286d620f33aa2f92b2f13aa9a0e4c7b1dd2
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 2a3aaf0b2d6e77ecc652315526e6aeb56969289e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662168"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884370"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>作業を開始しましょう。クラウドで新しい製品とサービスのイノベーションを促進する
 
@@ -30,15 +30,12 @@ ms.locfileid: "88662168"
 
 - [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を使用して、動機および目標となるビジネス成果を記録します。
 
-<!-- docsTest:ignore "Get started: Accelerate migration" -->
-
 **成果物の完遂をサポートするうえでのガイダンス:**
 
 - [動機](../strategy/motivations.md): 戦略的なすり合わせの第一歩は、イノベーション作業を推進する動機について合意を得ることです。 ビジネスと IT 分野の利害関係者の動機と共通テーマを把握し、分類することから始めます。
 - [ビジネス成果](../strategy/business-outcomes/index.md):動機のすり合わせが済めば、目標となるビジネス成果が見えてきます。 この情報から、変革全体の測定に使用できる明確なメトリックが得られます。
 - [ポートフォリオのバランス調整:](../strategy/balance-the-portfolio.md)イノベーションは、すべてのワークロードに適した導入パスではありません。 この導入手法は、アーキテクチャの見直しや完全な再構築が*要求*される新しいカスタムビルドのアプリケーションやワークロードに適しています。 すべてのワークロードについてイノベーションに大きく動機が傾いている場合、それらの投資で確実に適切な投資収益率が得られるよう、ポートフォリオを評価することが大切です。 特定のリソースのモダン化や小規模な再構築作業を革新的なものにすることはできますが、その場合は、「[作業の開始: 移行を促進する](./migrate.md)」に従うことをお勧めします。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -58,7 +55,6 @@ ms.locfileid: "88662168"
 - [業務上の正当な理由](../strategy/cloud-migration-business-case.md): クラウドにおけるイノベーションの機会をそれぞれ評価する前に、業務上の正当な理由の大枠を完成させて、全体的な導入計画についての利害関係者の認識を一致させる必要があります。
 - [事業価値における合意](../innovate/business-value.md):プロセスの初期段階では、イノベーションの価値を定量化するのが難しい場合があります。 この記事で取り上げる作業は、イノベーションに向けた特定の取り組みのビジネス価値についての共通認識を評価するうえで役立ちます。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -87,7 +83,6 @@ ms.locfileid: "88662168"
 - [既存システムのインベントリ](../digital-estate/inventory.md): プログラムを用いたデータドリブン アプローチで現在の状態を把握することが最初の手順です。 データを検出、収集することによって、あらゆる評価アクティビティが可能となります。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization):すべての資産の定性分析に重点を置いて取り組む (場合によってはビジネス ケースまでサポートする) ために、評価作業を効率化します。 そのうえで、最初の 10 個のワークロードの詳細な定性分析を追加します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -114,7 +109,6 @@ ms.locfileid: "88662168"
 - [作業の調整](../plan/assets.md): バックログの資産とワークロードを調整して、優先度の高いワークロードの作業を明確に定義します。
 - [メンバーと時間の調整](../plan/iteration-paths.md): ワークロードのイテレーション、ベロシティ、リリースを確立します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -137,7 +131,6 @@ ms.locfileid: "88662168"
 - [ガバナンスのアプローチ](../govern/index.md): 企業のポリシーとプロセスについて検討するためのプロセスを概説しています。 そのうえで、クラウド エンタープライズ作業全体でガバナンスを実現するために必要な規範を構築することができます。
 - [企業ポリシーの定義](../govern/corporate-policy.md):ビジネス上のリスクを突き止めて軽減します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -159,7 +152,6 @@ ms.locfileid: "88662168"
 - [高度な運用についての詳細を把握する](../manage/design-principles.md): 管理ベースラインの範囲を超える運用方法を紹介します。
 - 実際の運用ニーズに対応するために高度な運用が要求される場合、[ビジネス コミットメント](../manage/considerations/business-alignment.md)を評価して、両方のチームに対する運用上の責任を明らかにします。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -184,7 +176,6 @@ ms.locfileid: "88662168"
 - [ランディング ゾーンの選択](../ready/landing-zone/index.md): このセクションを使用して、実際の導入パターンに基づいてランディング ゾーンをデプロイするための適切なアプローチを見つけます。 次に、その標準化されたコード ベースをデプロイします。
 - [ランディング ゾーンを拡張する](../ready/considerations/index.md): 出発点に関係なく、デプロイされたランディング ゾーンに不足しているものを見極め、リソース編成、セキュリティ、ガバナンス、コンプライアンス、運用に必要なコンポーネントを追加します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -227,7 +218,6 @@ ms.locfileid: "88662168"
 
 - 評価が完了すると、AI イノベーションがどの程度成熟した状態であるかを推定したスコアがツールの出力に表示されます。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |

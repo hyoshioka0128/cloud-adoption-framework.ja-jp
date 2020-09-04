@@ -7,14 +7,14 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f2dc11ac5145dea0fbf65aea65e74e5f2b8fe69c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 04921b668f77e00b5e8172527ca57864b2fe9a51
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572257"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877162"
 ---
-<!-- cSpell:ignore asabbour sabbour kured -->
+<!-- cSpell:ignore kured -->
 
 # <a name="cluster-and-application-security"></a>クラスターとアプリケーションのセキュリティ
 
@@ -28,9 +28,6 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 >
 > - Kubernetes クラスターのセキュリティと脅威モデルを確認しましたか?
 > - クラスターでロールベースのアクセス制御が有効になっていますか?
-
-<!-- markdownlint-disable MD033 -->
-
 > [!div class="tdCol2BreakAll"]
 >
 > | チェック リスト  | リソース |
@@ -48,9 +45,6 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > - イングレス、エグレス、およびポッド間通信のためのネットワーク セキュリティ規則を構成しましたか?
 > - クラスターは、ノードのセキュリティ更新プログラムを自動的に適用するように構成されていますか?
 > - クラスターとコンテナーのワークロードに対してセキュリティ スキャン ソリューションを実行していますか?
-
-<!-- markdownlint-disable MD033 -->
-
 > [!div class="tdCol2BreakAll"]
 >
 > | チェック リスト  | リソース |
@@ -71,9 +65,6 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > [!div class="checklist"]
 >
 > - ガバナンスとクラスターのポリシーを大規模に適用できますか?
-
-<!-- markdownlint-disable MD033 -->
-
 > [!div class="tdCol2BreakAll"]
 >
 > | チェック リスト  | リソース |

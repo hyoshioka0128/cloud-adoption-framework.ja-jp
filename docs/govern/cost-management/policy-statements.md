@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3269f6a94f0aa151f2fbfb3a78e540fef710767c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f0031c5e239dc7d11760eee3a36597fa86c0db66
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573719"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883690"
 ---
 # <a name="cost-management-sample-policy-statements"></a>コスト管理のサンプル ポリシー ステートメント
 
@@ -39,7 +39,7 @@ ms.locfileid: "88573719"
 
 **ポリシー ステートメント:** 承認済み予算と予算制限のメカニズムを使用して、請求単位にクラウド デプロイを割り当てる必要があります。
 
-**設計オプション:** Azure では、[Azure Cost Management](/azure/cost-management/manage-budgets) を使用して予算を制御することができます。
+**設計オプション:** Azure では、[Azure Cost Management と Billing](/azure/cost-management/manage-budgets) を使用して予算を制御することができます。
 
 ## <a name="underutilization"></a>過小使用
 
@@ -49,7 +49,7 @@ ms.locfileid: "88573719"
 
 **設計オプション:**
 
-- Azure では、計画された支出と実際の支出を、[Azure Cost Management](/azure/cost-management/quick-acm-cost-analysis) を使用して管理することができます。
+- Azure では、計画された支出と実際の支出を、[Azure Cost Management と Billing](/azure/cost-management/quick-acm-cost-analysis) を使用して管理することができます。
 - 課金単位でリソースをグループ化するためのオプションがいくつかあります。 Azure で、ガバナンス チームと協力して、[リソースの整合性モデル](../../decision-guides/resource-consistency/index.md)を選択し、すべての資産に適用する必要があります。
 
 ## <a name="overprovisioned-assets"></a>オーバープロビジョニングの資産

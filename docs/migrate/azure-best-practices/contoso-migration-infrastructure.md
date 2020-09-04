@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1927536ece343905d9371755d9af8e693b5fb9cf
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: b4189711fcc062e54afb673b8a4b6973687935f2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848348"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882738"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -424,7 +424,7 @@ Contoso は、ハブ アンド スポーク モデル内で、オンプレミス
 
 ネットワークとルーティング トポロジが決まると、Contoso は Azure ネットワークとサブネットを設定できるようになります。
 
-<!-- docsTest:ignore "class B" -->
+<!-- docsTest:casing "class-A" "class-B" -->
 
 - Contoso は、クラス A のプライベート ネットワークを Azure に実装します (`10.0.0.0/8`)。 これが有効なのはオンプレミスであるためです。現在は、クラス B のプライベート アドレス空間 (`172.160.0.0/16`) が割り当てられています。 アドレス範囲の重複がないことは確実です。
 - Contoso は、プライマリ リージョンとセカンダリ リージョンの両方に仮想ネットワークをデプロイします。
@@ -591,8 +591,6 @@ _図 26: ピアリングされた直接接続の作成_
 仮想ネットワークにリソースを展開するときは、ドメイン名の解決に 2 つの選択肢があります。 Azure によって提供される名前解決を使用することも、解決用に DNS サーバーを提供することもできます。 どちらの名前解決方法を使用するかは、リソースが互いに通信するために必要な方法によって決まります。 Azure DNS サービスについての[詳細をご覧ください](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution)。
 
 Contoso の管理者は、Azure DNS サービスはハイブリッド環境に適した選択ではないと判断しました。 代わりに、オンプレミスの DNS サーバーを使用します。 これらについて詳しく説明します。
-
-<!-- docsTest:ignore "on premises" -->
 
 - これはハイブリッド ネットワークであるため、オンプレミスと Azure のすべての VM は、正常に機能するために名前を解決できる必要があります。 つまり、すべての仮想ネットワークにカスタム DNS の設定を適用する必要があります。
 - Contoso は現在、Contoso データセンターとブランチ オフィスにドメイン コントローラー (DC) をデプロイしています。 プライマリ DNS サーバーは、`contosodc1` (`172.16.0.10`) と `contosodc2` (`172.16.0.1`) です。

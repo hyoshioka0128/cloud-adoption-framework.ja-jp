@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5a874c26835b17e2aa30a2230af3afe79dfd6628
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: b58c0b36f954ad20c2e642e11bef35fd169e2ca1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848144"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883129"
 ---
-<!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
-
 # <a name="engage-customers-through-applications"></a>アプリケーションを介したカスタマー エンゲージメント
 
 アプリケーションによるイノベーションには、オンプレミスでホストされている既存のアプリケーションの最新化と、コンテナーまたはサーバーレス テクノロジを使用したクラウドネイティブなアプリケーションの構築の両方が含まれます。 Azure では、.NET、.NET Core、Java、Node.js、Ruby、Python、または PHP で記述された既存の Web アプリや API アプリを簡単に最新化して Azure にデプロイできるよう支援する PaaS サービス (Azure App Service など) が提供されます。
@@ -184,8 +182,8 @@ Azure Functions ランタイムでは、C#、Java、JavaScript、Python など�
 Azure Functions デプロイを構成または監視するには:
 
 1. **[Function App]** に移動します。
-2. 新しい関数アプリを構成します。 **[追加]** を選択し、プロンプトに従います。
-3. 既存の関数アプリを管理します。一覧から目的の関数アプリを選択します。
+2. 新しい関数アプリを構成する: **[追加]** を選択してプロンプトに従います。
+3. 既存の関数アプリを管理する: 一覧から目的の関数アプリを選択します。
 
 ::: zone target="chromeless"
 
@@ -206,8 +204,8 @@ Azure Functions デプロイを構成または監視するには:
 Azure Logic Apps を構成または監視するには:
 
 1. **[Logic Apps]** に移動します。
-2. 新しいロジック アプリを構成します。 **[追加]** を選択し、プロンプトに従います。
-3. 既存のロジック アプリを管理します。一覧で目的のロジック アプリを選択します。
+2. 新しいロジック アプリを構成する: **[追加]** を選択し、画面の指示に従います。
+3. 既存のロジック アプリを管理する: 一覧で目的のロジック アプリを選択します。
 
 ::: zone target="chromeless"
 
@@ -219,7 +217,7 @@ Azure Logic Apps を構成または監視するには:
 
 ::: zone-end
 
-### <a name="serverless-solutions-api-management"></a>サーバーレス ソリューション:API 管理
+### <a name="serverless-solutions-api-management"></a>サーバーレス ソリューション:API Management
 
 サーバーレス アプリケーションに自然に適合するように設計および実装された使用モデルを提供するフル マネージド サービスである Azure API Management を使用して、API の発行、セキュリティ保護、変換、メンテナンス、監視を行います。
 

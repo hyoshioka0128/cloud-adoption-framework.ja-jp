@@ -3,16 +3,16 @@ title: クラウド監視のためのスキルの準備
 description: クラウド監視のためのスキルの準備
 author: BrianBlanchard
 ms.author: magoedte
-ms.date: 05/19/2020
+ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2dc370df56042894903da00b14c9a37f06d17e1c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 85f3104f20f969e83f960e8ba3125b0ee56ed41e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571016"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877553"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -35,7 +35,9 @@ ms.locfileid: "88571016"
 
 - ポリシー、ロールベースのアクセス制御、およびその他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソースのセキュリティを実装する](/learn/paths/implement-resource-mgmt-security)」を参照してください。
 
-- 「[Microsoft Azure リソースとワークロードの監視](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents)」では、Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスにあるリソースを監視する方法について学習できます。
+- 「[Microsoft Azure リソースとワークロードの監視](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring-update)」では、Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスにあるリソースを監視する方法について学習できます。
+
+- 監視のデプロイの計画と設計については、「[Azure Monitor best practices and recommendations (Azure Monitor のベスト プラクティスと推奨事項)](https://www.youtube.com/watch?v=IWkqqahX_Ck&list=PLLasX02E8BPCDMuesOy2C0_TMFsoZWe_0&index=6)」をご覧ください。
 
 ## <a name="infrastructure-monitoring"></a>インフラストラクチャ監視
 
@@ -51,13 +53,15 @@ ms.locfileid: "88571016"
 
 - [Azure Arc for servers](/azure/azure-arc/servers/overview) に関する記事では、Azure の外部でホストされている Windows および Linux マシンをネイティブの Azure 仮想マシンと同じように管理できる方法について説明しています。
 
+- [VM の監視方法](https://www.youtube.com/watch?v=O7scXPrsM_0&list=PLLasX02E8BPCDMuesOy2C0_TMFsoZWe_0&index=6&t=0s)に関する動画では、Azure Monitor for VMs を使用して、ハイブリッド マシンまたはサーバー、および Azure VM または仮想マシン スケール セットを監視する方法について理解を深めるための中級レベルの詳細情報を提供します。
+
 ## <a name="application-monitoring"></a>アプリケーションの監視
 
 - [Azure Monitor](/azure/azure-monitor/overview) を使用して、アプリケーションとサービスの可用性とパフォーマンスを 1 か所で確認する方法についてご覧ください。 Pluralsight には、役に立つ次のコースが用意されています。
 
   - 「[Microsoft Azure DevOps エンジニア:Optimize Feedback Mechanisms (Microsoft Azure DevOps エンジニア: フィードバック メカニズムの最適化)](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms)」は、Application Insights を含む Azure Monitor を使用して、Web アプリケーションの監視と最適化を準備する際に役立ちます。
 
-  - [Microsoft Azure Developer: Monitoring Performance (Microsoft Azure 開発者: パフォーマンスの監視)](https://app.pluralsight.com/library/courses/microsoft-azure-performance-monitoring)。 Azure Monitor Application Insights を使用して、Azure で実行されているアプリケーション コンポーネントのエンド ツー エンドの監視を実現する場合は、このコースから始めます。
+  - 「[Azure Web アプリでのページの読み込み時間をキャプチャして表示する](https://docs.microsoft.com/learn/modules/capture-page-load-times-application-insights/)」。 Azure Monitor Application Insights を使用して、Azure で実行されているアプリケーション コンポーネントのエンド ツー エンドの監視を実現する場合は、このコースから始めます。
   
   - 「[Microsoft Azure のデータベース監視に関するプレイブック](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring)」では、Azure SQL Database、Azure SQL Data Warehouse、および Azure Cosmos DB の監視を実装して使用する方法について学習できます。
 
@@ -67,7 +71,7 @@ ms.locfileid: "88571016"
 
 ## <a name="data-analysis"></a>データ分析
 
-- [Azure Monitor でログ クエリ](/azure/azure-monitor/log-query/get-started-queries)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
+- [Azure Monitor でログ クエリ](https://docs.microsoft.com/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
 
 - 「[Kusto Query Language (KQL) from Scratch (ゼロから始める Kusto クエリ言語 (KQL))](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)」は、Azure Monitor ログでのログ分析の幅広いユースケースと手法を示す詳細な例を含む包括的なコースです。
 

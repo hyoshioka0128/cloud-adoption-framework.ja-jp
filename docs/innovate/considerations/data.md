@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 65290eba15bcb3a957fc4339247051c89e39c590
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5f94aed91d62007ce5b9a9555902c8e2d3c8c481
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572410"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878284"
 ---
 # <a name="democratize-data-with-digital-invention"></a>デジタル発明によるデータの民主化
 
@@ -67,7 +67,7 @@ IT 環境でデータが中断されると、イノベーションの機会が�
 
 ### <a name="collect-data"></a>データを収集する
 
-顧客のニーズに対応するためにデータを一元化する必要がある場合は、さまざまなソースからデータを収集し、一元化されたデータ ストアに移動することも必要になる可能性が高くなります。 2 つの主なデータ収集の形式として、_統合_と_インジェスト_があります。
+顧客のニーズに対応するためにデータを一元化する必要がある場合は、さまざまなソースからデータを収集し、一元化されたデータ ストアに移動することも必要になる可能性が高くなります。 2 つの主なデータ収集の形式として、*統合*と*インジェスト*があります。
 
 **統合:** 既存のデータ ストアに存在するデータは、従来のデータ移動手法を使用して一元化されたデータ ストアに統合できます。 これは、マルチクラウド データ ストレージを必要とするシナリオでは特に一般的です。 これらの手法では、既存のデータ ストアからデータを抽出し、中央のデータ ストアに読み込みます。 このプロセスのある時点で、通常、データは中央ストア内でより使いやすい適切な形式に変換されます。
 

@@ -1,6 +1,6 @@
 ---
 title: デプロイ高速化ポリシーのコンプライアンス プロセス
-description: Azure 向けクラウド導入フレームワークを使用して、デプロイ管理規範をサポートするプロセスを作成する方法について説明します。
+description: Azure 向けクラウド導入フレームワークを使用して、デプロイ高速化規範をサポートするプロセスを作成する方法について説明します。
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3975afb6f81dda9c1b68070de8d251da741d55e9
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 2deace1535c08247beec5ecc59c0c7827eb8cbaf
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450273"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883520"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>デプロイ高速化ポリシーのコンプライアンス プロセス
 

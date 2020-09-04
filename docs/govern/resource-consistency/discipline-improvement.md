@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3627dda9bbefbd969c7323fc4708eee509902d2c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 21f760fb9550f540b4b88f2f7ec098be7cf4307e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573243"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879405"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>リソースの整合性の規範の改良
 
@@ -23,7 +23,7 @@ ms.locfileid: "88573243"
 
 ![導入の 4 つのフェーズ](../../_images/govern/adoption-phases.png)
 
-"_図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。_
+"*図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。*
 
 1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、段階的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、"リソースの整合性" 規範を向上させるためにこれらのアクティビティにどれだけ投資するかを決定する必要があります。
 

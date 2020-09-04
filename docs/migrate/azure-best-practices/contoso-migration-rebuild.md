@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d5b4f0638c5d21dc6bd973c650699130ba30d241
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fba3a8a7bcc9de98f9ea41e3468e5acf9ca4dc3c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568364"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883112"
 ---
-<!-- docsTest:ignore "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
+<!-- docsTest:casing "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
 
-<!-- cSpell:ignore givenscj SQLVM WEBVM contosohost vcenter contosodc smarthotel contososmarthotel smarthotelcontoso smarthotelpetchecker petchecker smarthotelakseus smarthotelacreus smarthotelpets kubectl contosodevops visualstudio azuredeploy cloudapp smarthotelsettingsurl appsettings -->
+<!-- cSpell:ignore SQLVM WEBVM contosohost vcenter contosodc smarthotel contososmarthotel smarthotelcontoso smarthotelpetchecker petchecker smarthotelakseus smarthotelacreus smarthotelpets kubectl contosodevops visualstudio azuredeploy cloudapp smarthotelsettingsurl appsettings -->
 
 # <a name="rebuild-an-on-premises-application-in-azure"></a>Azure にオンプレミスのアプリケーションをリビルドする
 
@@ -704,7 +704,7 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 ここでは、Azure の Contoso SmartHotel360 アプリケーションに合わせてカスタマイズされた Microsoft Learn のラーニング パスの例を 2 つ紹介します。
 
-<!--docsTest:ignore "Azure Cognitive Vision Services" -->
+<!--docsTest:casing "with the Azure Cognitive Vision Services" -->
 
 - **[Azure App Service を使用して Azure に Web サイトをデプロイする](/learn/paths/deploy-a-website-with-azure-app-service)** : Azure に Web アプリを作成すれば、基盤となるサーバー、ストレージ、ネットワーク アセットを操作しなくても簡単に Web サイトを公開して管理することができます。 代わりに、Web サイトの機能に焦点を当て、堅牢な Azure プラットフォームを使用して、サイトへの安全なアクセスを提供することができます。
 

@@ -7,13 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 277d208ccdb2dda3e25994893f07c542cb3e87bf
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1cdf730339c30f681fc1dc39cad85fcd9c8a909f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573175"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884523"
 ---
+<!-- docsTest:casing "natural language understanding" -->
 <!-- cSpell:ignore Twilio -->
 
 # <a name="what-are-ai-agents"></a>AI エージェントとは
@@ -32,8 +33,6 @@ ms.locfileid: "88573175"
 Azure Bot Service および Bot Framework は、このプロセスを支援するために、統合された一連のツールとサービスを提供します。 ご自身の好みの開発環境やコマンド ライン ツールを選んで、ボットを作成できます。 C#、JavaScript、TypeScript、および Python 用の SDK が存在します。 Java 用の SDK は開発中です。 ボット開発のさまざまなステージ用にツールが用意されており、ボットの設計と構築に役立てることができます。
 
 ![ボット開発のさまざまな段階向けのツールを示す図。](../../_images/ai-bot-dev-tools.png)
-
-<!-- docsTest:ignore "natural language understanding" -->
 
 ### <a name="plan"></a>プラン
 
@@ -90,13 +89,11 @@ Azure Bot Service および Bot Framework の一環として、ボットの機�
 
 Azure portal で収集されたデータを使用し、ボットの機能とパフォーマンスを強化する機会を特定します。 トラフィック、待ち時間、統合などのサービス レベルのデータやインストルメンテーション データを取得できます。 Analytics によって、ユーザー、メッセージ、チャネル データに関する会話レベルのレポートも提供されます。 詳しくは、[分析情報の収集方法](/azure/bot-service/bot-service-manage-analytics?view=azure-bot-service-4.0)に関するページをご覧ください。
 
-<!-- docsTest:ignore "John Doe" "Jane Doe" -->
-
 ### <a name="patterns-for-common-use-cases"></a>一般的なユースケースのパターン
 
 会話型 AI アプリケーションの実装に使用される一般的なパターンは次のとおりです。
 
-- **サポート技術情報:** 事実上あらゆる主題に関する情報を提供するナレッジ ボットを設計できます。 たとえば、1 つのナレッジ ボットでイベントに関する質問に回答できます。たとえば、"このカンファレンスではどんなボット イベントがありますか?" または"次のレゲエのショーはいつ?" などです。 別のボットで、"オペレーティング システムの更新方法を教えて" といった IT 関連の質問にも回答できます。 また別のボットでは、"John Doe とは誰ですか?" または "Jane Doe のメール アドレスは?" のような連絡先についての質問にも答えます。
+- **サポート技術情報:** 事実上あらゆる主題に関する情報を提供するナレッジ ボットを設計できます。 たとえば、1 つのナレッジ ボットでイベントに関する質問に回答できます。たとえば、"このカンファレンスではどんなボット イベントがありますか?" または "次のレゲエのショーはいつ?" などです。 別のボットで、"オペレーティング システムを更新するにはどうすればよいか?" といった IT 関連の質問にも回答できます。 また別のボットでは、"john doe とは誰ですか?" または "jane doe のメール アドレスは?" のような連絡先についての質問にも答えます。
 
    ナレッジ ボットの設計要素の詳細については、「[ナレッジ ボットを設計する](/azure/bot-service/bot-service-design-pattern-knowledge-base?view=azure-bot-service-4.0)」を参照してください。
 

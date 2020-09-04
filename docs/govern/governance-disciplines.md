@@ -1,6 +1,6 @@
 ---
 title: クラウド ガバナンスの 5 つの規範
-description: Azure 向けクラウド導入フレームワークを使用して、Cost Management、デプロイ高速化、ID ベースライン、リソースの整合性、およびセキュリティ ベースラインについて学習します。
+description: Azure 向けクラウド導入フレームワークを使用して、コスト管理、デプロイ高速化、ID ベースライン、リソースの整合性、およびセキュリティ ベースラインの各規範について学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,21 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed31972eef3f0f4311ac8c4c112f4d287ae060c9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 15da317061924f0c631877a7a7a0430d8e336038
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573668"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881140"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>クラウド ガバナンスの 5 つの規範
 
-<!-- docsTest:ignore "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
-<!-- markdownlint-disable MD033 -->
+<!-- docutune:casing "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
 |  |  |
 |--|--|
-| ビジネス プロセスまたは技術プラットフォームの変更にはリスクが伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、リスクを軽減し、導入やイノベーションの作業をできるだけ中断させないようにすることです。 <br><br> これらの意思決定の指針には、選択されているクラウド プラットフォームに関係なく、[企業ポリシーの策定](./corporate-policy.md)と[クラウド ガバナンスの 5 つの規範](#disciplines-of-cloud-governance)に重点が置かれた、クラウド導入フレームワーク ガバナンス モデルが使用されます。 [アクションにつながる設計ガイド](./guides/index.md)は、Azure サービスを使用してこのモデルを実証します。 以下では、クラウド導入フレームワーク ガバナンス モデルの規範について説明します。 | <br><br> [![クラウド導入フレームワーク ガバナンス モデルの図: 企業のポリシーとガバナンスの規範](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> "_図 1:企業ポリシーとクラウド ガバナンスの 5 つの規範。_ |
+| ビジネス プロセスまたは技術プラットフォームの変更にはリスクが伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、リスクを軽減し、導入やイノベーションの作業をできるだけ中断させないようにすることです。 <br><br> これらの意思決定の指針には、選択されているクラウド プラットフォームに関係なく、[企業ポリシーの策定](./corporate-policy.md)と[クラウド ガバナンスの 5 つの規範](#disciplines-of-cloud-governance)に重点が置かれた、クラウド導入フレームワーク ガバナンス モデルが使用されます。 [アクションにつながる設計ガイド](./guides/index.md)は、Azure サービスを使用してこのモデルを実証します。 以下では、クラウド導入フレームワーク ガバナンス モデルの規範について説明します。 | <br><br> [![クラウド導入フレームワーク ガバナンス モデルの図: 企業のポリシーとガバナンスの規範](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> "*図 1:企業ポリシーとクラウド ガバナンスの 5 つの規範。* |
 
 ## <a name="disciplines-of-cloud-governance"></a>クラウド ガバナンスの規範
 

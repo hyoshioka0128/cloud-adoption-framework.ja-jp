@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 52f6c15f2f116c8ef972e38e0123cd8d57985cd5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b0e6800c468c2b07afdee2eff6baa9fcc58f6f22
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220092"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880851"
 ---
-<!-- cSpell:ignore MPLS -->
-
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雑な企業向けのガバナンス ガイド: マルチクラウドの改善
 
 ## <a name="advancing-the-narrative"></a>物語を進める
@@ -61,7 +59,7 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>ベスト プラクティスの段階的な改善
 
-記事のこのセクションでは、ガバナンス MVP の設計を改善して、新しい Azure ポリシーと Azure Cost Management の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
+記事のこのセクションでは、ガバナンス MVP の設計を改善して、新しい Azure ポリシーおよび Azure Cost Management と Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
 1. ネットワークを接続する。 ガバナンスでサポートされているネットワークと IT セキュリティによって実行されます。
     1. MPLS または専用回線のプロバイダーから新しいクラウドに接続を追加することにより、ネットワークが統合されます。 ルーティング テーブルとファイアウォールの構成を追加することにより、環境の間のアクセスとトラフィックを管理します。
@@ -71,9 +69,9 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 3. Azure Site Recovery に資産を追加する。
     1. Azure Site Recovery は、最初からハイブリッド クラウドおよびマルチクラウドのツールとして構築されました。
     2. セカンダリ クラウド内の仮想マシンは、オンプレミスの資産の保護に使用されているのと同じ Azure Site Recovery プロセスによって保護できる場合があります。
-4. Azure Cost Management に資産を追加します。
-    1. Azure Cost Management は、最初からマルチクラウド ツールとして構築されました。
-    2. セカンダリ クラウド内の仮想マシンは、一部のクラウド プロバイダーの Azure Cost Management と互換性がある場合があります。 追加コストが適用される場合があります。
+4. Azure Cost Management と Billing に資産を追加します。
+    1. Azure Cost Management と Billing は、最初からマルチクラウド ツールとして構築されました。
+    2. セカンダリ クラウド内の仮想マシンは、一部のクラウド プロバイダーの Azure Cost Management と Billing と互換性がある場合があります。 追加コストが適用される場合があります。
 5. Azure Monitor に資産を追加する。
     1. Azure Monitor は、最初からハイブリッド クラウド ツールとして構築されました。
     2. セカンダリ クラウド内の仮想マシンは、Azure Monitor エージェントと互換性があり、運用監視のために Azure Monitor に含めることができる場合があります。

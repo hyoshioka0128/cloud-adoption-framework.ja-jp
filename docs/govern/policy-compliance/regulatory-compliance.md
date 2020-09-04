@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 927c42b216ff22aa3b721c5f741e49fe089e2923
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2e749ea3b5a1b70e0cf4cbe497ded83b857200d1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755973"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879627"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>規制コンプライアンスの概要
 
@@ -27,18 +27,18 @@ ms.locfileid: "83755973"
 
 以下では、さまざまな業界や地域でのコンプライアンスに関する規制について説明します。
 
-<!-- docsTest:ignore PHI "Health Information Portability and Accountability Act" -->
+<!-- docutune:casing PHI "Health Information Portability and Accountability Act" -->
 
 ## <a name="hipaa"></a>HIPAA
 
 保護医療情報 (PHI) を処理する医療アプリケーションは、Health Information Portability and Accountability Act (HIPAA) に含まれるプライバシー規則とセキュリティ規則の両方の対象となっています。 少なくとも、HIPAA では、受け取るか作成された PHI が保護されていることを保証する書面を、医療機関がクラウド プロバイダーから受け取ることが要求されている場合があります。
 
+<!-- docutune:ignore Discover -->
 <!-- cSpell:ignore Visa Mastercard -->
-<!-- docsTest:ignore "American Express" Discover JCB QSA ISA ROC SAQ DPO GRC -->
 
 ## <a name="pci"></a>PCI
 
-Payment Card Industry Data Security Standard (PCI DSS) は、Visa、MasterCard、American Express、Discover、JCB などの主要なカード スキームからのブランド付きクレジット カードを処理する組織に向けた、機密情報セキュリティ標準です。 PCI 標準はカード ブランドによって要求されており、Payment Card Industry Security Standards Council によって管理されています。 この標準は、カード所有者データに関する管理を強化してクレジット カード不正を減らすために作成されました。 コンプライアンスの検証は、大量のトランザクションを処理する組織のために準拠報告 (ROC) を作成する外部の認定セキュリティ評価機関 (QSA) や企業固有の内部セキュリティ評価部門 (ISA) によって、または企業用の自己評価アンケート (SAQ) によって毎年実行されます。
+Payment Card Industry Data Security Standard (PCI DSS) は、Visa、MasterCard、American Express、Discover、JCB などの主要なカード支払いシステムからのブランド付きクレジット カードを処理する組織に向けた、機密情報セキュリティ標準です。 PCI 標準はカード ブランドによって要求されており、Payment Card Industry Security Standards Council によって管理されています。 この標準は、カード所有者データに関する管理を強化してクレジット カード不正を減らすために作成されました。 コンプライアンスの検証は、大量のトランザクションを処理する組織のために準拠報告 (ROC) を作成する外部の認定セキュリティ評価機関 (QSA) や企業固有の内部セキュリティ評価部門 (ISA) によって、または企業用の自己評価アンケート (SAQ) によって毎年実行されます。
 
 ## <a name="personal-data"></a>個人データ
 
@@ -46,7 +46,7 @@ Payment Card Industry Data Security Standard (PCI DSS) は、Visa、MasterCard�
 
 ## <a name="gdpr"></a>GDPR
 
-この分野で最も重要な進展の 1 つは、欧州連合内の個人に対するデータ保護を強化するために設計された、一般データ保護規則 (GDPR) です。 GDPR では、個人に関するデータ (名前、自宅の住所、写真、メール アドレス、銀行の詳細、ソーシャル ネットワーキング Web サイトへの投稿、医療情報、コンピューターの IP アドレスなど) を EU 内のサーバーで管理し、EU 外に転送してはならないことが要求されています。 また、企業に対し、データ侵害があった場合は個人に通知することと、データ保護担当者 (DPO) を置くことが、要求されています。 他の国でも、同様の規制が制定済みまたは制定中です。
+この分野で最も重要な開発の 1 つは、欧州連合内の個人のデータ保護を強化するように設計された一般データ保護規則 (GDPR) です。 GDPR では、個人に関するデータ ("名前、自宅の住所、写真、メール アドレス、銀行の詳細、ソーシャル ネットワーキング Web サイトへの投稿、医療情報、コンピューターの IP アドレス" など) を、EU 内のサーバーの保持し、EU 外に転送してはならないことが、要求されています。 また、企業に対し、データ侵害があった場合は個人に通知することと、データ保護担当者 (DPO) を置くことが、要求されています。 他の国でも、同様の規制が制定済みまたは制定中です。
 
 ## <a name="compliant-foundation-in-azure"></a>Azure での準拠の基盤
 

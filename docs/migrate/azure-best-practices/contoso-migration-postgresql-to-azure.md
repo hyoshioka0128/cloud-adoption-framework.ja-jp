@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4b3923936052cce1ae973f779bc53ac35a1ba0c1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 35fdbcf69fc4e86f4f785bd871082b974b1f6203
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567293"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882143"
 ---
-<!-- cSpell:ignore BYOK postgres psql dvdrental -->
+<!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
 # <a name="migrate-postgresql-databases-to-microsoft-azure"></a>PostgreSQL データベースを Microsoft Azure に移行する
 
@@ -129,8 +129,6 @@ Contoso は、いくつかの方法で移行を実行できます。
 Contoso は、メジャーからメジャーへのアップグレードを実行する必要があるときに移行プロジェクトを常に再利用できるように、Azure Database Migration Service を選択しました。 1 つの Database Migration Service アクティビティは最大 4 つのデータベースにしか対応しないため、Contoso は次の手順を使用して複数のジョブを設定します。
 
 準備するには、データベースにアクセスするための仮想ネットワークを設定します。 さまざまな方法で、[VPN ゲートウェイ](/azure/vpn-gateway/vpn-gateway-about-vpngateways)を使用して仮想ネットワーク接続を作成します。
-
-<!-- docsTest:ignore "Azure Database Migration Services" -->
 
 ### <a name="create-an-azure-database-migration-service-instance"></a>Azure Database Migration Service インスタンスを作成する
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4f1e4d10efa8e45ea552037f55d6775b72e831b2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f1caae91280f2782a4bd4e5a3c4a8ad331dd9a03
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573311"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880052"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -39,7 +39,7 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 
 **Azure AD パススルー認証:** 1 つ以上のオンプレミス サーバーで実行されているソフトウェア エージェントを使用して、Azure AD 認証サービスに永続的なパスワード検証を提供します。
 
-<!-- docsTest:ignore "the pass-through authentication method" -->
+<!-- docutune:casing "the pass-through authentication method" -->
 
 > [!NOTE]
 > オンプレミスのユーザー アカウントの状態、パスワード ポリシー、およびサインイン時間をすぐに適用するセキュリティ要件のある企業では、パススルー認証方法を検討してください。
@@ -48,12 +48,11 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 
 この方法を選択した場合、Azure AD では、別の信頼された認証システム (オンプレミスの Active Directory フェデレーション サービス (AD FS) や信頼できるサード パーティのフェデレーション プロバイダーなど) に、ユーザーのパスワードを検証する認証プロセスが渡されます。
 
-[Azure Active Directory 用の適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn)に関する記事には、組織に最適なソリューションを選択するためのデシジョン ツリーが含まれています。
+組織に最適なソリューションの選択に役立つデシジョン ツリーについては、[Azure Active Directory 用の適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn)に関する記事を参照してください。
 
 次の表は、この規範をサポートするポリシーとプロセスを成熟させるのに役立つネイティブ ツールの一覧です。
 
-<!-- markdownlint-disable MD033 -->
-<!-- docsTest:ignore UserPrincipalName SamAccountName "conditional access options" -->
+<!-- docutune:casing UserPrincipalName SamAccountName "conditional access options" -->
 
 | 考慮事項 | パスワード ハッシュ同期 + シームレス SSO | パススルー認証 + シームレス SSO | AD FS とのフェデレーション |
 | --- | --- | --- | --- |
@@ -65,14 +64,12 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 | 会社のネットワーク内のドメインに参加しているデバイスからクラウドのリソースへのユーザーのシングル サインオン | [シームレス SSO](/azure/active-directory/hybrid/how-to-connect-sso) を使用して実行 | [シームレス SSO](/azure/active-directory/hybrid/how-to-connect-sso) を使用して実行 | はい |
 | サポートされているサインインの種類 | UserPrincipalName + パスワード <br><br> [シームレス SSO](/azure/active-directory/hybrid/how-to-connect-sso) による統合 Windows 認証 <br><br> [代替ログイン ID](/azure/active-directory/hybrid/how-to-connect-install-custom) | UserPrincipalName + パスワード <br><br> [シームレス SSO](/azure/active-directory/hybrid/how-to-connect-sso) による統合 Windows 認証 <br><br> [代替ログイン ID](/azure/active-directory/hybrid/how-to-connect-pta-faq) | UserPrincipalName + パスワード <br><br> SamAccountName とパスワード <br><br> 統合 Windows 認証 <br><br> [証明書とスマート カード認証](/windows-server/identity/ad-fs/operations/configure-user-certificate-authentication) <br><br> [代替ログイン ID](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) |
 | Windows Hello for Business のサポート | [キー信頼モデル](/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Intune での証明書信頼モデル](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [キー信頼モデル](/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Intune での証明書信頼モデル](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [キー信頼モデル](/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [証明書信頼モデル](/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs) |
-| 多要素認証のオプション | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [条件付きアクセスを使用するカスタム コントロール*](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [条件付きアクセスを使用するカスタム コントロール*](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Azure Multi-Factor Authentication サーバー](/azure/active-directory/authentication/howto-mfaserver-deploy) <br><br> [サードパーティの多要素認証](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs) <br><br> [条件付きアクセスを使用するカスタム コントロール](/azure/active-directory/conditional-access/controls#custom-controls-preview) |
+| 多要素認証のオプション | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Azure AD 条件付きアクセスを使用するカスタム コントロール*](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Azure AD 条件付きアクセスを使用したカスタム コントロール*](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Azure Multi-Factor Authentication サーバー](/azure/active-directory/authentication/howto-mfaserver-deploy) <br><br> [サードパーティの多要素認証](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs) <br><br> [Azure AD アクセスを使用したカスタム コントロール](/azure/active-directory/conditional-access/controls#custom-controls-preview) |
 | サポートされるユーザー アカウントの状態 | 無効なアカウント <br> (最大 30 分の遅延) | 無効なアカウント <br><br> アカウントのロックアウト <br><br> アカウント期限切れ <br><br> パスワード期限切れ <br><br> サインイン時間 | 無効なアカウント <br><br> アカウントのロックアウト <br><br> アカウント期限切れ <br><br> パスワード期限切れ <br><br> サインイン時間 |
-| 条件付きアクセスのオプション | [Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/overview) | [Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/overview) | [Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/overview) <br><br> [AD FS の要求規則](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) |
-| サポートされる従来のプロトコルのブロック | [あり](/azure/active-directory/conditional-access/concept-baseline-protection) | [あり](/azure/active-directory/conditional-access/concept-baseline-protection) | [あり](/windows-server/identity/ad-fs/operations/access-control-policies-w2k12) |
+| Azure AD 条件付きアクセスのオプション | [Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/overview) | [Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/overview) | [Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/overview) <br><br> [AD FS の要求規則](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) |
+| サポートされる従来のプロトコルのブロック | [はい](/azure/active-directory/conditional-access/concept-baseline-protection) | [はい](/azure/active-directory/conditional-access/concept-baseline-protection) | [はい](/windows-server/identity/ad-fs/operations/access-control-policies-w2k12) |
 | サインイン ページのロゴ、イメージ、説明のカスタマイズ可能性 | [Azure AD Premium を使用して可能](/azure/active-directory/customize-branding) | [Azure AD Premium を使用して可能](/azure/active-directory/customize-branding) | [はい](/azure/active-directory/connect/active-directory-aadconnect-federation-management#customlogo) |
 | サポートされる高度なシナリオ | [Smart Password Lockout](/azure/active-directory/authentication/concept-sspr-howitworks) <br><br> [漏洩した資格情報レポート](/azure/active-directory/reports-monitoring/concept-risk-events) | [Smart Password Lockout](/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication-smart-lockout) | 複数サイトの低待機時間の認証システム <br><br> [AD FS エクストラネットのロックアウト](/windows-server/identity/ad-fs/operations/configure-ad-fs-extranet-soft-lockout-protection) <br><br> [サード パーティの ID システムとの統合](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) |
-
-<!-- markdownlint-enable MD033 -->
 
 > [!NOTE]
 > Azure AD の条件付きアクセスでのカスタム コントロールは、現時点ではデバイスの登録をサポートしていません。
@@ -81,7 +78,7 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 
 <!-- TODO: The download button for this whitepaper returns 404. -->
 
-<!-- docsTest:ignore "Hybrid Identity Digital Transformation Framework" -->
+<!-- docutune:casing "Hybrid Identity Digital Transformation Framework" -->
 
 [ハイブリッド ID デジタル変換フレームワークに関するホワイトペーパー](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html)では、これらの各コンポーネントを選択および統合するための組み合わせとソリューションについて説明しています。
 

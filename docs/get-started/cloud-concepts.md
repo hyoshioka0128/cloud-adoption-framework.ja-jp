@@ -7,19 +7,25 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 619dd5197bcea95d83b27c166e0f4238abd1a988
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e9106a89d19d06bc8c1c14290c65d9ed2387e097
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573940"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176499"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>作業を開始しましょう。基本的なアラインメントに関する決定事項を理解し、文書化する
 
-クラウド導入の取り組みにより、ビジネス、技術、組織は多くのメリットを得ることができます。 何を達成しようとしているかにかかわらず、ご自分の取り組みにクラウドが関係する場合、最初のいくつかの決定事項を、関係するすべてのチームが理解している必要があります。 このガイドに取り組む際に、[最初の決定事項テンプレート](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)を使用して、それらの決定を記録してください。 このテンプレートを使用することにより、クラウドの導入ライフサイクルに加わるチーム メンバーに、すばやく参加してもらうことが可能になります。
+クラウド導入の取り組みにより、ビジネス、技術、組織は多くのメリットを得ることができます。 何を達成しようとしているかにかかわらず、ご自分の取り組みにクラウドが関係する場合、最初のいくつかの決定事項を、関係するすべてのチームが理解している必要があります。 
 
 > [!NOTE]
 > 以下のリンクを選択すると、Azure 向けの Microsoft クラウド導入フレームワークの目次が表示されます。後でチームが関連するガイドダンスを実装するときに役立つさまざまな基本概念を検索してください。 このチェックリストに頻繁に戻るには、このページにブックマークします。
+
+## <a name="before-your-begin"></a>作業を開始する前に
+
+このガイドに取り組む際に、[最初の意思決定テンプレート](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)を使用して、基本的な決定事項を記録します。 このテンプレートを使用することにより、お使いのクラウド環境がどのように構成されているか、およびその理由を明確にすることで、クラウドの導入ライフサイクルに加わるチーム メンバーを迅速にオンボードできます。
+
+Azure で実行されている環境が既にある場合は、[CAF Governance Vizualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) を使用すると、素早くドキュメント化できます。 ポリシー、RBAC、ブループリント、サブスクリプションなどに関する分析情報を得ます。 収集されたデータから、このツールは階層マップに対する可視性を提供し、テナントの概要を作成し、管理グループとサブスクリプションに関する詳細なスコープの分析情報を作成します。 このツールは、クラウド導入フレームワークの関連するソース コード リポジトリ (https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer ) にあります。 
 
 ## <a name="step-1-understand-how-azure-works"></a>手順 1:Azure のしくみを理解する
 
@@ -52,7 +58,6 @@ Azure は、Azure を実装する場合の技術戦略で深く話し合われ�
 - [クラウド導入計画](../plan/plan-intro.md)では、クラウドに導入予定のワークロードと資産のバックログが提供されます。
 - [デジタル資産分析](../digital-estate/approach.md)は、クラウドに導入予定の既存のワークロードと資産を文書化するためのアプローチです。 Azure では、デジタル資産は [Azure Migrate](/azure/migrate/migrate-support-matrix) と呼ばれるツールで最も適切に表現されます。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -71,7 +76,6 @@ Azure は、Azure を実装する場合の技術戦略で深く話し合われ�
 
 - 基本的な用語を揃えるために[ポートフォリオ階層](../reference/fundamental-concepts/hosting-hierarchy.md)のレベルについて理解します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -93,7 +97,6 @@ Azure は、Azure を実装する場合の技術戦略で深く話し合われ�
 - [Azure の既存のタグを確認して更新します](/azure/azure-resource-manager/management/tag-resources)。
 - [Azure にタグ付けポリシーを適用します](/azure/azure-resource-manager/management/tag-policies)。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -120,7 +123,6 @@ Azure は、Azure を実装する場合の技術戦略で深く話し合われ�
 - [ポートフォリオ階層に基づいて明確な境界](../reference/fundamental-concepts/hierarchy-azure-tools.md#organizing-the-hierarchy-in-azure)を確立します。
 - 組織の戦略に準拠するように、必要に応じて[サブスクリプション間でリソース グループと資産を移動](/azure/azure-resource-manager/management/move-resource-group-and-subscription)します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -135,14 +137,11 @@ Azure は、Azure を実装する場合の技術戦略で深く話し合われ�
 
 - これらの概念に基づき組織の足並みをそろえるために、ファースト ステップ ガイドを完了してください。
 
-<!-- docsTest:ignore "Get started: Align your organization" -->
-
 **成果物の完遂をサポートするうえでのガイダンス:**
 
 - 前のステップを指針として使用し、[ポートフォリオ階層のアカウンタビリティ ガイダンス](../reference/fundamental-concepts/hosting-hierarchy.md#hierarchy-accountability-and-guidance)を評価します。 専用の組織、または仮想チームが提供する必要がある機能を決定します。
 - 「[作業を開始しましょう: 組織の足並みを揃える](./org-alignment.md)」を使用して、ポートフォリオ階層のアカウンタビリティ ガイダンスを RACI (実行責任、説明責任、助言、通知) 図に適用します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |

@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d313641025bd5cc768c3e4f99feedb768880f396
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 3d388b1196bf103812f723ef060cc890e632760f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848280"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885373"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows Virtual Desktop の評価
 
@@ -28,20 +28,20 @@ Windows Virtual Desktop 評価ごとに、ユーザーのペルソナ、仮想�
 
 データ収集ツールとして [Movere](/azure/migrate/migrate-services-overview#movere) を使用する場合は、他の移行シナリオと同じように、[Azure Migrate](/azure/migrate) のデータを使用して、ペルソナの作成とこれらの質問に答えるのに必要なデータを入手することができるでしょう。
 
-このセクションのすべての質問に答えるのに必要なデータがない場合は、お持ちのデータを補うための別の検出プロセスが、他のサードパーティ ソフトウェア ベンダーから提供されている可能性があります。 ベンダーの [Lakeside](/azure/migrate/migrate-services-overview#isv-integration) も仮想デスク トップ インフラストラクチャ移行を目標とするセクションで Azure Migrate と統合されています。 このベンダーは、ペルソナ、ホスト プール、アプリケーション、ユーザー プロファイルを含む Windows Virtual Desktop デプロイ計画を立てる場合に役立ちます。
+このセクションのすべての質問に答えるのに必要なデータがない場合は、お持ちのデータを補うための別の検出プロセスが、他のサードパーティ ソフトウェア ベンダーから提供されている可能性があります。 ベンダーの [Lakeside](/azure/migrate/migrate-services-overview#isv-integration) も仮想デスク トップ インフラストラクチャ移行を目標とするセクション内で Azure Migrate と統合されています。 このベンダーは、ペルソナ、ホスト プール、アプリケーション、ユーザー プロファイルを含む Windows Virtual Desktop デプロイ計画を立てる場合に役立ちます。
 
 ### <a name="user-personas"></a>ユーザーのペルソナ
 
 この移行シナリオに含まれるすべてのユーザーをサポートするには、どれくらいの数の別個のペルソナが必要になるでしょうか? 以下の条件に基づいてユーザーをバケット化するとペルソナを定義することができます。
 
 - **個人用プール:** 特定のユーザーのグループは、プールではなく専用のデスクトップを必要としますか? たとえば、セキュリティ、コンプライアンス、ハイ パフォーマンス、ノイジーネイバーといった要件が理由で、一部のユーザーはプール戦略に含まれていない専用のデスクトップで実行することになります。 この情報を入力するには、[Windows Virtual Desktop のホスト プールのデプロイ中に、ホスト プールの種類として個人用を指定します](/azure/virtual-desktop/create-host-pools-azure-marketplace#begin-the-host-pool-setup-process)。
-- **密度**: 特定のユーザーのグループは、密度の低いデスクトップ エクスペリエンスを必要としますか? たとえば、密度が高くなると、仮想中央処理ユニット (vCPU) あたり 6 ユーザーというライト ユーザーの想定ではなく、vCPU あたり 2 ユーザーにすることが必要な場合があります。 密度情報は、[ Windows Virtual Desktop ホスト プール デプロイのプール設定](/azure/virtual-desktop/create-host-pools-azure-marketplace#begin-the-host-pool-setup-process)に入力します。
-- **パフォーマンス**: 特定のユーザーのグループは、ハイ パフォーマンスのデスクトップ エクスペリエンスを必要としますか? たとえば、一部のユーザーは、想定されている vCPU あたり 4&nbsp;ギガバイト (GB) の RAM を超える vCPU あたりのメモリを必要としています。 VM のサイズは、[Windows Virtual Desktop のホスト プールのデプロイでの仮想マシンの詳細](/azure/virtual-desktop/create-host-pools-azure-marketplace#virtual-machine-details)で入力します。
-- **グラフィック処理 (GPU)** : 特定のユーザーのグループには、より高いグラフィック性能の要件がありますか? たとえば、この [GPU VM の構成ガイド](/azure/virtual-desktop/configure-vm-gpu)で説明されているように、一部のユーザーは Azure で GPU ベースの VM を必要とします。
-- **Azure リージョン**: 特定のグループの OS ユーザーは、さまざまな地理的リージョンから操作しますか? たとえば、お客様がホスト プールを構成する前に、各リージョンのユーザーは[見積りツール](https://azure.microsoft.com/services/virtual-desktop/assessment/#estimation-tool)を使用して Azure までの待機時間をテストする必要があります。 テスト ユーザーは、待機時間が最小の Azure リージョンと、上位 3 つの Azure リージョンの待機時間 (ミリ秒) を共有する必要があります。
-- **ビジネス機能**: 特定のユーザーのグループ化で、部署、請求コード、ビジネス機能ごとにバケット化できますか? このようなグループ化は、運用の後の段階で会社のコストを調整するのに役立ちます。
-- **ユーザー数**: それぞれのペルソナには、どれくらいのユーザーがいますか?
-- **最大セッション数**: 地域と運用の時間に基づいて、最大負荷時に想定される各ペルソナの同時ユーザー数はどれくらいですか?
+- **密度:** 特定のユーザーのグループは、密度の低いデスクトップ エクスペリエンスを必要としますか? たとえば、密度が高くなると、仮想中央処理ユニット (vCPU) あたり 6 ユーザーというライト ユーザーの想定ではなく、vCPU あたり 2 ユーザーにすることが必要な場合があります。 密度情報は、[ Windows Virtual Desktop ホスト プール デプロイのプール設定](/azure/virtual-desktop/create-host-pools-azure-marketplace#begin-the-host-pool-setup-process)に入力します。
+- **パフォーマンス:** 特定のユーザーのグループは、ハイ パフォーマンスのデスクトップ エクスペリエンスを必要としますか? たとえば、一部のユーザーは、想定されている vCPU あたり 4&nbsp;ギガバイト (GB) の RAM を超える vCPU あたりのメモリを必要としています。 VM のサイズは、[Windows Virtual Desktop のホスト プールのデプロイでの仮想マシンの詳細](/azure/virtual-desktop/create-host-pools-azure-marketplace#virtual-machine-details)で入力します。
+- **グラフィック処理 (GPU):** 特定のユーザーのグループには、より高いグラフィック性能の要件がありますか? たとえば、この [GPU VM の構成ガイド](/azure/virtual-desktop/configure-vm-gpu)で説明されているように、一部のユーザーは Azure で GPU ベースの VM を必要とします。
+- **Azure リージョン:** 特定のグループの OS ユーザーは、さまざまな地理的リージョンから操作しますか? たとえば、お客様がホスト プールを構成する前に、各リージョンのユーザーは[見積りツール](https://azure.microsoft.com/services/virtual-desktop/assessment/#estimation-tool)を使用して Azure までの待機時間をテストする必要があります。 テスト ユーザーは、待機時間が最小の Azure リージョンと、上位 3 つの Azure リージョンの待機時間 (ミリ秒) を共有する必要があります。
+- **ビジネス機能:** 特定のユーザーのグループ化で、部署、請求コード、ビジネス機能ごとにバケット化できますか? このようなグループ化は、運用の後の段階で会社のコストを調整するのに役立ちます。
+- **ユーザー数:** それぞれのペルソナには、どれくらいのユーザーがいますか?
+- **最大セッション数:** 地域と運用の時間に基づいて、最大負荷時に想定される各ペルソナの同時ユーザー数はどれくらいですか?
 
 前述の各質問に基づいて、ビジネス機能、コスト センター、地理的リージョン、技術要件ごとにユーザーのペルソナの描写を始めることができます。 次の表は、回答を記録して、評価を完成させたり設計ドキュメントを作成したりするのに役立ちます。
 
@@ -65,7 +65,7 @@ Windows Virtual Desktop 評価ごとに、ユーザーのペルソナ、仮想�
 
 ### <a name="application-groups"></a>アプリケーション グループ
 
-Movere と Lakeside による現在のオンプレミス環境のスキャンにより、エンドユーザーのデスクトップで実行されているアプリケーションに関するデータが提供されます。 そのデータを使用すると、各ペルソナで必要になるすべてのアプリケーションの一覧を作成できます。 必要なアプリケーションそれぞれについて、以下の質問の答えにより、デプロイの繰り返しを計画できます。
+Movere と Lakeside の両方による現在のオンプレミス環境のスキャンにより、エンドユーザーのデスクトップで実行されているアプリケーションに関するデータが提供されます。 そのデータを使用すると、各ペルソナで必要になるすべてのアプリケーションの一覧を作成できます。 必要なアプリケーションそれぞれについて、以下の質問の答えにより、デプロイの繰り返しを計画できます。
 
 - ペルソナがこのデスクトップを使用するために、インストールする必要のあるアプリケーションはありますか? ペルソナが、完全に Web ベースのソフトウェアをサービス アプリケーションとして使用するのでない限り、各ペルソナに対して[カスタムのマスター VHD イメージを構成](/azure/virtual-desktop/set-up-customize-master-image)して、そのマスター イメージに必要なアプリケーションをインストールすることが必要になるでしょう。
 - このペルソナは、Microsoft 365 アプリケーションを必要としますか? そうであるなら、[カスタマイズされたマスター VHD イメージに Microsoft 365 を追加する](/azure/virtual-desktop/install-office-on-wvd-master-image)必要があります。

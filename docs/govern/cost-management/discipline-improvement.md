@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 45b750b6d99bf858eaefa635aa6b16464158f412
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 86dd5776e72d4fa0d4e6ea9c3fbf510f8d0db4ad
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220636"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883792"
 ---
 # <a name="cost-management-discipline-improvement"></a>コスト管理規範の改善
 
@@ -23,7 +23,7 @@ ms.locfileid: "83220636"
 
 ![導入の 4 つのフェーズ](../../_images/govern/adoption-phases.png)
 
-"_図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。_
+"*図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。*
 
 1 つのドキュメントですべてのビジネスの要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、段階的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、Cost Management の規範の機能を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
 
@@ -107,7 +107,7 @@ ms.locfileid: "83220636"
 
 ## <a name="next-steps"></a>次のステップ
 
-クラウド コストのガバナンスの概念を理解したので、[コスト管理のベスト プラクティス](./best-practices.md)を確認し、全体的な支出を削減する方法を見つけます。
+クラウド コストのガバナンスの概念を理解したので、[コスト管理の規範のベスト プラクティス](./best-practices.md)を確認し、全体的な支出を削減する方法を見つけます。
 
 > [!div class="nextstepaction"]
 > [コスト管理のベスト プラクティス](./best-practices.md)

@@ -7,16 +7,17 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a7aff09f017bea41591028eee06f8936359388a4
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a5221713e9e6125aa134e958b2baca2e99dcadec
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568500"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884540"
 ---
 <!-- cSpell:ignore Lucene -->
 
-<!-- docsTest:ignore "Azure Search" "JFK Files" -->
+<!-- docsTest:casing "JFK Files" -->
+<!-- docsTest:ignore "Azure Search" -->
 
 # <a name="what-is-azure-cognitive-search"></a>Azure Cognitive Search とは
 
@@ -65,7 +66,7 @@ Azure Cognitive Search は、次のアプリケーション シナリオに適�
 
 ### <a name="step-4-search"></a>手順 4:検索
 
-インデックスを入力したら、[REST API](/rest/api/searchservice/Search-Documents) または [.NET SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations?view=azure-dotnet) で簡単な HTTP 要求を使用して、サービス エンドポイントに[検索クエリを発行](/azure/search/search-query-overview)できます。 [最初の検索アプリケーションの作成](/azure/search/tutorial-csharp-create-first-app)の手順に従って、ユーザー入力を収集して結果を処理する Web ページをビルドして拡張します。 [対話型 REST 向けの Postman](/azure/search/search-get-started-postman) 呼び出しや Azure portal の組み込みの[検索エクスプローラー](/azure/search/search-explorer)を使用して、既存のインデックスに対するクエリを実行することもできます。
+インデックスを入力したら、[REST API](/rest/api/searchservice/search-documents) または [.NET SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations?view=azure-dotnet) で簡単な HTTP 要求を使用して、サービス エンドポイントに[検索クエリを発行](/azure/search/search-query-overview)できます。 [最初の検索アプリケーションの作成](/azure/search/tutorial-csharp-create-first-app)の手順に従って、ユーザー入力を収集して結果を処理する Web ページをビルドして拡張します。 [対話型 REST 向けの Postman](/azure/search/search-get-started-postman) 呼び出しや Azure portal の組み込みの[検索エクスプローラー](/azure/search/search-explorer)を使用して、既存のインデックスに対するクエリを実行することもできます。
 
 ## <a name="next-steps"></a>次の手順
 

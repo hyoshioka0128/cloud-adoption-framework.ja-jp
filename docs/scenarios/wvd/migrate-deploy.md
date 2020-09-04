@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 50fea7acb50b2f14cabea51bdc9a53fecdaf1595
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b84533bb565e43a0ddb52930f33eba21f35c8ed9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572579"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885356"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 
@@ -58,15 +58,15 @@ Windows Virtual Desktop インスタンスのデプロイは、[概念実証](./
 
 [ユーザー プロファイルをホストするために Azure NetApp Files](/azure/virtual-desktop/create-fslogix-profile-container) を使用できます。 それを行うには、次を含むいくつかの追加のステップがスコープで必要になります。
 
-- **NetApp インスタンスごと**: NetApp ファイル、ボリューム、Active Directory 接続を構成する。
-- **ホストまたはペルソナごと**: セッション ホスト仮想マシンでの FSLogix の構成。
-- **ユーザーごと**: ホスト セッションへのユーザーの割り当て。
+- **NetApp インスタンスごと:** NetApp ファイル、ボリューム、Active Directory 接続を構成する。
+- **ホストまたはペルソナごと:** セッション ホスト仮想マシンでの FSLogix の構成。
+- **ユーザーごと:** ホスト セッションへのユーザーの割り当て。
 
 [Azure Files を使用して、ユーザー プロファイルをホストする](/azure/virtual-desktop/create-file-share)こともできます。 それを行うには、次を含むいくつかの追加のステップがスコープで必要になります。
 
-- **Azure Files インスタンスごと**: ストレージ アカウント、ディスクの種類、Active Directory 接続 ([Active Directory Domain Services (AD DS) もサポートされています](/azure/virtual-desktop/create-profile-container-adds)) を構成し、Active Directory ユーザー グループにロールベースのアクセス制御アクセスを割り当て、New Technology File System のアクセス許可を適用し、ストレージ アカウントのアクセスキーを取得する。
-- **ホストまたはペルソナごと**: セッション ホスト仮想マシンでの FSLogix の構成。
-- **ユーザーごと**: ホスト セッションへのユーザーの割り当て。
+- **Azure Files インスタンスごと:** ストレージ アカウント、ディスクの種類、Active Directory 接続 ([Active Directory Domain Services (AD DS) もサポートされています](/azure/virtual-desktop/create-profile-container-adds)) を構成し、Active Directory ユーザー グループにロールベースのアクセス制御アクセスを割り当て、ニュー テクノロジ ファイル システムのアクセス許可を適用し、ストレージ アカウントのアクセスキーを取得する。
+- **ホストまたはペルソナごと:** セッション ホスト仮想マシンでの FSLogix の構成。
+- **ユーザーごと:** ホスト セッションへのユーザーの割り当て。
 
 一部のペルソナまたはユーザーのユーザー プロファイルでも、データの移行作業が必要になることがあります。その場合、ローカルの Active Directory または個々のユーザー デスクトップ内でユーザー プロファイルが修正できるようになるまで、特定のペルソナの移行が遅延する可能性があります。 この遅延は、Windows Virtual Desktop のシナリオ以外では、スコープに大きな影響を与える可能性があります。 修正が完了したら、初期のスコープと上記のアプローチを再開することができます。
 

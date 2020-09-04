@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 04652c401adc8b0742ee3366cbdb30f7abb9d057
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: fedfdf9df8e1a1da03b3e689976ac996d1e20e44
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88847770"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879117"
 ---
-<!-- cSpell:ignore DPIAs -->
+<!-- cSpell:ignore DPIAs inexhaustive -->
 
 # <a name="microsoft-security-guidance"></a>Microsoft セキュリティ ガイダンス
 

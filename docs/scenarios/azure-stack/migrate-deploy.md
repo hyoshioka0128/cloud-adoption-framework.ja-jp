@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 86c1d4b7eaea3c7de15dfd4417a6bcc21d956ea8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9b1cf8600bd0160f02de9bfd4532c189008b5322
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569639"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885441"
 ---
 # <a name="deploy-workloads-to-azure-stack-hub"></a>Azure Stack Hub にワークロードをデプロイする
 
@@ -24,7 +24,7 @@ Azure Stack を使用すると、組織は独自の Azure インスタンスを�
 
 ## <a name="infrastructure-as-a-service-deployment"></a>サービスとしてのインフラストラクチャのデプロイ
 
-サービスとしてのインフラストラクチャ (IaaS) をデプロイする理由が何であれ、Azure Stack Hub へのデプロイは、他の IaaS のデプロイと似ています。 IaaS は仮想マシン (VM) にすぎないと考える人が多くいますが、IaaS はそれだけではありません。 Azure または Azure Stack に VM をデプロイする場合、マシンには、ドメイン ネーム システム、パブリック IP、ファイアウォール規則 (ネットワーク セキュリティ グループとも呼ばれます) を含むソフトウェアによるネットワークと、それ以外の多くの機能が含まれることになります。 VM をデプロイすると、Azure Blob Storage を使用して、VM のためのディスクがソフトウェアによるストレージ上に作成されます。
+サービスとしてのインフラストラクチャ (IaaS) をデプロイする理由が何であれ、Azure Stack Hub へのデプロイは、他の IaaS のデプロイと似ています。 IaaS は仮想マシン (VM) にすぎないと考える人が多くいますが、IaaS はそれだけではありません。 Azure または Azure Stack に VM をデプロイすると、マシンには、ドメイン ネーム システム、パブリック IP、ファイアウォール規則 (ネットワーク セキュリティ グループとも呼ばれます) を含むソフトウェアによるネットワークと、その他の多くの機能が含まれることになります。 VM をデプロイすると、Azure Blob Storage を使用して、VM のためのディスクがソフトウェアによるストレージ上に作成されます。
 
 VM の Azure Stack へのデプロイに関する詳細なガイダンスについては、[Azure Stack のコンピューティングの概要](/azure-stack/user/azure-stack-compute-overview?view=azs-2002)に関する記事を参照してください。
 
@@ -37,8 +37,6 @@ VM の Azure Stack へのデプロイに関する詳細なガイダンスにつ�
 ## <a name="deploy-workloads"></a>ワークロードのデプロイ
 
 Azure Stack Hub の管理者がスタック インスタンスを適切に構成したら、他のほとんどの Azure 移行の作業と同じ方法で移行を継続できます。 Azure Stack を使用すると、チームは次のいずれかの種類の移行を実行できます。
-
-<!-- cSpell:ignore howto -->
 
 - [Ethereum ブロックチェーン ネットワーク](/azure-stack/user/azure-stack-ethereum?view=azs-2002)
 - [AKS エンジン](/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2002)

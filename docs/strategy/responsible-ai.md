@@ -7,14 +7,14 @@ ms.date: 06/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d64873d414656da8caadc6a60a2ddd08f850cf38
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: dba0ab6db022d4d2a18dc0734e37d59501eb6738
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662304"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885781"
 ---
-<!-- docsTest:ignore InterpretML FairLearn -->
+<!-- docutune:ignore InterpretML FairLearn -->
 
 # <a name="responsible-ai"></a>責任ある AI
 
@@ -52,9 +52,9 @@ AI ソリューションを実装する際、ソリューションで次の AI �
 
 開発者やデータ サイエンティストが AI システムを理解、保護、および制御するのに役立つツールが用意されています。 これらのツールは、Azure Machine Learning、オープンソース プロジェクト、調査など、さまざまなソースから入手できます。
 
-- **理解**:AI システムは、さまざまな理由で予期しない動作が発生する可能性があります。 ソフトウェア ツールは、AI システムの動作を理解し、ニーズに合わせて調整するのに役立ちます。 この種のツールの例には、InterpretML や Fairlearn などがあります。
-- **保護**:AI システムはデータに依存しています。 ソフトウェア ツールは、プライバシーを守り、機密性を保証することで、データを保護するのに役立ちます。 この種のツールの例には、機械学習用の機密コンピューティング、WhiteNoise の差分プライバシー、SEAL の準同型暗号、Presidio などがあります。
-- **制御**:責任ある AI は、開発サイクルを通じてガバナンスと制御が必要です。 Azure Machine Learning を使用すると、追跡、系統、および制御を向上させるために監査証跡を有効にして、規制要件を満たすことができます。 例には、監査証跡や追跡可能性などがあります。
+- **理解:** AI システムは、さまざまな理由で予期しない動作が発生する可能性があります。 ソフトウェア ツールは、AI システムの動作を理解し、ニーズに合わせて調整するのに役立ちます。 この種のツールの例には、InterpretML や Fairlearn などがあります。
+- **保護:** AI システムはデータに依存しています。 ソフトウェア ツールは、プライバシーを守り、機密性を保証することで、データを保護するのに役立ちます。 この種のツールの例には、機械学習用の機密コンピューティング、WhiteNoise の差分プライバシー、SEAL の準同型暗号、Presidio などがあります。
+- **制御:** 責任ある AI は、開発サイクルを通じてガバナンスと制御が必要です。 Azure Machine Learning を使用すると、追跡、系統、および制御を向上させるために監査証跡を有効にして、規制要件を満たすことができます。 例には、監査証跡や追跡可能性などがあります。
 
 ## <a name="next-steps"></a>次の手順
 

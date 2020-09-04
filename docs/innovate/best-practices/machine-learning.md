@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f6ba299ad4eddd9a299aac151ad85ed31ac7a0f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 904fd950a7d19f33d7589cc0ccff69e56026660b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568381"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878522"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -99,7 +99,7 @@ AI システムの開発と使用を通して、信頼をその中心にする�
 
 ## <a name="integration-with-other-services"></a>他のサービスとの統合
 
-Azure Machine Learning は、Azure プラットフォーム上の他のサービスとの連携に加え、Git や MLFlow といったオープン ソース ツールとの統合にも対応します。
+Azure Machine Learning は、Azure プラットフォーム上の他のサービスとの連携に加え、Git や MLflow といったオープン ソース ツールとの統合にも対応します。
 
 - コンピューティング先 (Azure Kubernetes Service、Azure Container Instances、Azure Databricks、Azure Data Lake Analytics、Azure HDInsight など)。 コンピューティング先の詳細については、[コンピューティング先の概要](/azure/machine-learning/concept-compute-target)に関するページを参照してください。
 - Azure Event Grid。 詳細については、[Azure Machine Learning イベントを使用する方法](/azure/machine-learning/how-to-use-event-grid)に関するページを参照してください。
@@ -108,11 +108,11 @@ Azure Machine Learning は、Azure プラットフォーム上の他のサービ
 - Azure Virtual Network。 詳細については、[仮想ネットワークでの実験と推論の安全な実行](/azure/machine-learning/how-to-enable-virtual-network)に関するページを参照してください。
 - Azure Pipelines 詳細については、「[機械学習モデルのトレーニングとデプロイ](/azure/devops/pipelines/targets/azure-machine-learning?tabs=yaml&view=azure-devops)」を参照してください。
 - Git リポジトリのログ。 詳細については、「[Git 統合](/azure/machine-learning/concept-train-model-git-integration)」を参照してください。
-- MLFlow。 詳細については、[メトリックを追跡し、モデルをデプロイするための MLflow](/azure/machine-learning/how-to-use-mlflow) に関するページを参照してください。
+- MLflow。 詳細については、[メトリックを追跡し、モデルをデプロイするための MLflow](/azure/machine-learning/how-to-use-mlflow) に関するページを参照してください。
 - Kubeflow。 詳細については、[エンド ツー エンドのワークフロー パイプラインの構築](https://www.kubeflow.org/docs/azure/)に関するページを参照してください。
 - セキュリティで保護された通信。 Azure Storage アカウントやコンピューティング先などのリソースは、仮想ネットワーク内で安全に使用してモデルをトレーニングし、推論を実行することができます。 詳細については、[仮想ネットワークでの実験と推論の安全な実行](/azure/machine-learning/how-to-enable-virtual-network)に関するページを参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 
-- 機械学習に関するホワイトペーパーと、[Machine Learning Studio](https://azure.microsoft.com/resources/whitepapers/search/?service=machine-learning-studio) と [Machine Learning service](https://azure.microsoft.com/resources/whitepapers/search/?service=machine-learning-service) に関する電子書籍を確認します。
+- [Machine Learning Studio](https://azure.microsoft.com/resources/whitepapers/search/?service=machine-learning-studio) と [Machine Learning service](https://azure.microsoft.com/resources/whitepapers/search/?service=machine-learning-service) に関する機械学習のホワイト ペーパーおよび電子書籍を確認します。
 - [AI + 機械学習アーキテクチャ](/azure/architecture/browse/)について確認します。

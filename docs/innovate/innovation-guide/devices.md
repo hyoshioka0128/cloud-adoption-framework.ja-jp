@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: aba505bea5b8bafc8a8d49a04c2a0086363d9cc4
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b0536b627d9039f348f1c069bb1ae5ed4e4e74a6
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567871"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882993"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -34,11 +34,7 @@ Azure のお客様は、(ユーザー、データ、またはその両方に近�
 > - [Azure SQL Edge](/azure/azure-sql-edge/overview)
 > - [IoT プラグ アンド プレイ](/azure/iot-pnp/overview-iot-plug-and-play)
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="global-scale-iot-service"></a>[グローバルな規模の IoT サービス](#tab/IoTHub)
-
-<!-- markdownlint-enable MD025 -->
 
 数十億台規模の IoT デバイスとの双方向通信を実行するソリューションを設計します。 既定の device-to-cloud 利用統計情報を使用して、デバイスの状態を把握し、構成のみで他の Azure サービスへのメッセージ ルートを定義できます。 cloud-to-device メッセージを利用することにより、接続されたデバイスにコマンドや通知を信頼性の高い方法で送信できます。また、受信確認メッセージを使用してメッセージの配信を追跡できます。 また、断続的な接続に対応するため、必要に応じてデバイス メッセージを自動で再送信します。
 
@@ -92,8 +88,6 @@ Azure IoT Hub Device Provisioning Service を作成するには:
 
 ::: zone-end
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 現実世界とデジタル世界の垣根を越えてストリーミング データをリンクする、再利用可能でスケーラビリティが高く、空間認識性を備えたエクスペリエンスを構築します。 物理環境の包括的なモデルを使用して、顧客エンゲージメントを強化します。 人、場所、デバイスの間の関係と相互作用をモデル化する空間インテリジェンス グラフを生成します。 雑多なセンサーのデータではなく、物理空間のデータを照会できます。
@@ -128,8 +122,6 @@ Azure Digital Twins を作成するには:
 <!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="location-intelligence"></a>[位置情報インテリジェンス](#tab/AzureMaps)
 

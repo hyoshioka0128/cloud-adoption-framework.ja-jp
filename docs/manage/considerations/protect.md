@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 423c87fd351f3220710ab35ffe0bc4e6beac3a1d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7b924c02fa1028d7df6206a021c2c7e4a6bb8a4f
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223900"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176465"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>クラウド管理における保護と回復
 
@@ -67,6 +67,8 @@ IT 環境の大部分のワークロードでは、特定のビジネス プロ�
 これらの仮想マシンで発生するダウンタイムは、収益の損失や収益性の低下を引き起こす可能性があります。 VM のダウンタイムがビジネスの財政上の業績に直接影響する場合は、RTO が非常に重要です。 仮想マシンは、セカンダリ サイトへのレプリケーションと自動復旧を使用すると、より迅速に復旧できます。このモデルは、ホット ウォーム復旧モデルと呼ばれます。 復旧の最高の状態で、仮想マシンを完全に機能するセカンダリ サイトにレプリケートできます。 このコストの高いアプローチは、高可用性またはホット ホット復旧モデルと呼ばれます。
 
 上記の各モデルを利用すると RTO が削減され、ビジネス プロセス機能をより迅速に復元できるようになります。 ただし、各モデルでは、クラウド管理コストも大幅に増加します。
+
+また、高可用性のためのレプリケーションとは別に、誤削除、データの破損、ランサムウェア攻撃などのシナリオのためにバックアップを有効にする必要があります。
 
 この思考プロセスの詳細については、[ワークロード運用の規範](./workload.md)に関する記事を参照してください。
 

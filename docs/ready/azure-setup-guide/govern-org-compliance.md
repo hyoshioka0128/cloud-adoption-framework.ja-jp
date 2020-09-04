@@ -9,17 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 6e83c1deceed6e6c49e197d88d60ea641b00b1c5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d6b4e20d484bb055beaf6998e9aca6f97437217c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575232"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884472"
 ---
-<!-- cSpell:ignore tvuylsteke >
-
-<!-- markdownlint-disable MD024 MD025 -->
-
 # <a name="governance-security-and-compliance-in-azure"></a>Azure でのガバナンス、セキュリティ、コンプライアンス
 
 企業のポリシーを確立し、ガバナンス戦略を策定するときに、Azure Policy、Azure Blueprints、Azure Security Center などのツールとサービスを使用して、組織のガバナンスに関する意思決定を実施したり自動化したりすることができます。 ガバナンスの計画を開始する前に、[ガバナンス ベンチマーク ツール](https://cafbaseline.com)を使用して、組織のクラウド ガバナンスへのアプローチにおける可能性のあるギャップを特定します。 ガバナンス プロセスの開発に関する詳細については、[管理方法](../../govern/index.md)に関するページを参照してください。
@@ -54,9 +50,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 
 ::: zone target="docs"
 
-<!-- docsTest:ignore "Next : Artifacts" "Blueprints: Get started" "Blueprints: Blueprint definitions" -->
-
-1. [[Blueprints:はじめに]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted) に移動します。
+1. Azure portal で [[ブループリント: はじめに]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted) に移動します。
 1. **[ブループリントの作成]** セクションで、 **[作成]** を選択します。
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
 1. **ブループリントの名前**を入力し、適切な**定義の場所**を選択します。
@@ -82,7 +76,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 
 ::: zone target="docs"
 
-1. [[Blueprints:ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
+1. Azure portal で [[ブループリント: ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
 1. 前の手順で作成したブループリントの定義を選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
 1. **[バージョン]** (_1.0_ など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。

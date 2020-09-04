@@ -7,14 +7,14 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d7351fc55f91645c79dd50e803ef8ca940beaa7c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1b11a4f0cdc50fe97a44b2dce707f055293332db
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572240"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882602"
 ---
-<!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
+<!-- cSpell:ignore autoscaler PDBs -->
 
 # <a name="cluster-design-and-operations"></a>クラスターの設計と操作
 
@@ -23,8 +23,6 @@ ms.locfileid: "88572240"
 ## <a name="plan-train-and-proof"></a>計画、トレーニング、および証明
 
 開始時に、以下のチェックリストとリソースを使用するとクラスターの設計の計画に役立ちます。 次の質問に答えてください。
-
-<!-- markdownlint-disable MD033 -->
 
 > [!div class="checklist"]
 >

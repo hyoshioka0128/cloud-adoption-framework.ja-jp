@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 37fbe933ce03a4d0ad600033aaff522a279cd005
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5c3d79966bf3d3477ff7b9a62f23e9bab9d7f5a8
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571815"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176448"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure サーバー管理ツールおよびサービス
 
@@ -43,7 +43,7 @@ ms.locfileid: "88571815"
 
 最も基本的なデータ保護はバックアップです。 サーバーが失われた場合の回復プロセスを高速化するには、データだけでなくサーバー構成もバックアップします。 バックアップは、偶発的なデータ削除やランサムウェア攻撃に対応するための効果的なメカニズムです。 [Azure Backup](/azure/backup) では、Windows または Linux を実行している Azure サーバーおよびオンプレミス サーバー上のデータを保護できます。 Backup でできることの詳細とハウツーガイドについては、[Azure Backup サービスの概要](/azure/backup/backup-overview)ページを参照してください。
 
-バックアップによる復旧には時間がかかります。 業界の標準では通常、1 日です。 ハードウェア障害やデータ センター停止が発生したときのビジネス継続性がワークロードに必要である場合は、データ レプリケーションの使用を検討します。 [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) は VM の継続的なレプリケーションを可能にします。これはデータ損失を最小限に抑えるソリューションです。 Site Recovery では、レプリケーションなど、いくつかのレプリケーション シナリオもサポートされます。
+ハードウェア障害やデータ センター停止の発生時に、リアルタイムのビジネス継続性がワークロードに必要である場合は、データ レプリケーションの使用を検討します。 [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) は VM の継続的なレプリケーションを可能にします。これはデータ損失を最小限に抑えるソリューションです。 Site Recovery では、レプリケーションなど、いくつかのレプリケーション シナリオもサポートされます。
 
 - 2 つの Azure リージョン間の Azure VM。
 - オンプレミスのサーバー間。

@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 2ad4273261015dac06ef8ec9b1aa4836a3874f09
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 00755767c560285d48626b829023b44001b21c63
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040951"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885152"
 ---
 # <a name="data-innovations"></a>データの刷新
 
@@ -79,7 +79,7 @@ ETL 処理を拡大して、任意の種類のデータを Azure Data Lake Stora
 - オンプレミス ハードウェアのストレージとデータベース ソフトウェア ライセンスを使用する高価なデータ マートのビルドを回避できます。 代わりに、Azure Synapse Analytics でそれらをビルドできます。 これは、データ マートの需要が増加することがよくある、データ ウェアハウスがデータ コンテナー設計の場合に特に役立ちます。
 - オンプレミスのハードウェアで、大量のデータを高速に分析して保存するコストを回避できます。 たとえば、データ ウェアハウス内のクリック ストリームやストリーミング IoT データなどのリアルタイムのマシン生成データを分析する必要がある場合は、Azure Synapse Analytics を使用できます。
 - データ ウェアハウスの拡大に伴い、データセンターの高価なウェアハウス ハードウェアにデータを保存するための割増料金を支払うことを回避できます。 Azure Synapse Analytics では、低コストでデータをクラウド ストレージに保存することができます。
-  
+
 ## <a name="next-steps"></a>次のステップ
 
 <!-- TODO: More detail needed here. -->

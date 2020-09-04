@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0882b34dc9b83d6da5926b350db35ab7ecb28495
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 52f6a6d23ea324b7a1764807e2f87bef68de4ee4
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754577"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880205"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>ID ベースライン ポリシーのコンプライアンス プロセス
 

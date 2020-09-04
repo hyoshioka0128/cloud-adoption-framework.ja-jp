@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cd1ecfe758fcab297440bc65dcda7da310c25ec5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: aa0ebef4cb01fed6e55a18b215ea26add4bf93e2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573991"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881565"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>ソフトウェア定義ネットワーク:ハブ アンド スポーク
 
 ハブ アンド スポークのネットワーク モデルは、複数接続されている仮想ネットワークに、Azure ベースのクラウド ネットワーク インフラストラクチャを編成します。 このモデルを使用すると、一般的な通信やセキュリティの要件をより効率的に管理し、潜在的なサブスクリプションの制限に対処できます。
 
-ハブ アンド スポークのモデルで、_ハブ_は、外部接続を管理したり、複数のワークロードによって使用されるサービスをホストしたりするための中心的な場所として機能する仮想ネットワークです。 _スポーク_は、ワークロードをホストし、[仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を介して中央のハブに接続する仮想ネットワークです。
+ハブ アンド スポークのモデルで、*ハブ*は、外部接続を管理したり、複数のワークロードによって使用されるサービスをホストしたりするための中心的な場所として機能する仮想ネットワークです。 *スポーク*は、ワークロードをホストし、[仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を介して中央のハブに接続する仮想ネットワークです。
 
 ワークロード スポーク ネットワークを出入りするすべてのトラフィックは、ハブ ネットワークを介してルーティングされます。そのハブ ネットワークで、集中管理された IT 規則またはプロセスによってトラフィックをルーティング、検査、またはその他の方法で管理できます。
 

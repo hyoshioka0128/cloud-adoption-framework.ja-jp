@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 61f1f1959e9a3e0d934e56498dd13462391d0a49
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e79ba73affd92a932e95bdf6ed4aff5bcae0be73
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569588"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884421"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>健全な運用モデルと組織配置でお客様の成功を実現する
 
@@ -42,7 +42,7 @@ ms.locfileid: "88569588"
 | [クラウド変換中に優れた機能を提供するにはどうすればよいですか。](./operational-excellence.md)                   | このガイドの手順は、戦略チームが組織の変更管理を主導して、オペレーショナル エクセレンスを一貫して確保するのに役立ちます。 |
 | [エンタープライズ コストを管理するにはどうすればよいですか。](./manage-costs.md)                                          | エンタープライズ コストの最適化を開始し、環境全体のコストを管理します。                                                                           |
 | [エンタープライズ クラウド環境を常にセキュリティで保護するにはどうすればよいですか。](./security.md)             | このファースト ステップ ガイドは、侵害のリスクを最小限に抑え、侵害が発生した場合の回復を促進するために、企業全体に適切なセキュリティ要件を確実に適用するのに役立ちます。                                       |
-| [信頼性を向上させるために適切なコントロールを適用するにはどうすればよいですか。](./reliability.md)                   | このファースト ステップ ガイドは、構成、リソース組織、セキュリティ ベースライン、またはリソース保護ポリシーの不整合に関連する中断を最小限に抑えるのに役立ちます。 |
+| [信頼性を向上させるために適切なコントロールを適用するにはどうすればよいですか。](./reliability.md)                   | このファースト ステップ ガイドに従うと、構成、リソース組織、セキュリティ ベースライン、またはリソース保護ポリシーの不整合に関連する中断を最小限に抑えることができます。 |
 | [企業全体のパフォーマンスを確保するにはどうすればよいですか。](./performance.md)                               | このファースト ステップ ガイドは、企業全体のパフォーマンスを維持するためのプロセスを確立するのに役立ちます。                               |
 | [どのようにして組織を調整しますか。](./org-alignment.md)                               | このファースト ステップ ガイドは、適切に編成された組織の構造を確立するのに役立ちます。                               |
 

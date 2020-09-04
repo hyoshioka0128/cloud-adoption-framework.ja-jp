@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5a193c9b54bac12023130b6e365f866dc8f3ca36
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: b77cfb5982a06e9a3d182817010423fa01fcf2b0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191656"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880970"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雑な企業向けのガバナンス ガイド: コスト管理の規範の改善
 
@@ -31,7 +31,7 @@ ms.locfileid: "86191656"
 
 その後、以下に示すように、ガバナンスに影響を与えるいくつかの変化がありました。
 
-- 廃止のフラグが設定された 2 つのデータセンターから 5,000 個の資産が削除されました。 調達と IT セキュリティ チームは現在、残りの物理的な資産をプロビジョニング解除しています。
+- 廃止のフラグが設定された 2 つのデータ センターから 5,000 個の資産が削除されました。 調達と IT セキュリティ チームは現在、残りの物理的な資産をプロビジョニング解除しています。
 - アプリケーション開発チームは、カスタマー エクスペリエンスに大きな影響を与える、複数のクラウドネイティブ アプリケーションをデプロイする CI/CD パイプラインを実装しました。
 - BI チームは、集計、キュレーション、洞察、および予測の各プロセスを作成して、事業運営に目に見える利益をもたらしました。 これらの予測により、独創的な新しい製品やサービスの創出が強化されるようになりました。
 
@@ -62,14 +62,14 @@ ms.locfileid: "86191656"
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>ベスト プラクティスの段階的な改善
 
-記事のこのセクションでは、ガバナンス MVP の設計を改善して、新しい Azure ポリシーと Azure Cost Management の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
+記事のこのセクションでは、ガバナンス MVP の設計を改善して、新しい Azure ポリシーおよび Azure Cost Management と Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
 1. Azure エンタープライズ ポータルで、カナダのデプロイについて部門管理者に請求するように変更します。
-2. Azure Cost Management を実装します。
+2. Azure Cost Management と Billing を実装します。
     1. サブスクリプション パターンとリソース グループ化のパターンに合わせて適切なレベルのアクセス スコープを設定します。 以前の記事で定義したガバナンス MVP との整合を前提にすると、これには、高レベルのレポート作成を実行するクラウド ガバナンスチームの**登録アカウントのスコープ**のアクセスが必要になります。 ガバナンス以外のその他のチーム (カナダの調達チームなど) には、**リソース グループのスコープ**のアクセスが必要になります。
-    2. Azure Cost Management で予算を編成します。
+    2. Azure Cost Management と Billing で予算を編成します。
     3. 初期の推奨事項を確認して対応します。 レポート プロセスをサポートするために定期プロセスを作成します。
-    4. 初期用と繰り返し用の両方について、Azure Cost Management のレポートを構成して実行します。
+    4. 初期用と繰り返し用の両方について、Azure Cost Management と Billing のレポートを構成して実行します。
 3. Azure Policy を更新します。
     1. 偏差を識別するために、タグ付け、管理グループ、サブスクリプション、およびリソース グループの値を監査します。
     2. SKU サイズ オプションを確定して、デプロイ計画ドキュメントに記載されている SKU にデプロイを制限します。

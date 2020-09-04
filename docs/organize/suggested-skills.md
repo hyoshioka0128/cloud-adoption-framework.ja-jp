@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 45ebaec6b6d0abe665fc4a038892b7f1c3a053ff
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: de3a0ef01cf3e0144a348318cbf562c60149cebb
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574603"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884846"
 ---
 # <a name="build-technical-skills"></a>技術スキルの構築
 
@@ -21,7 +21,7 @@ ms.locfileid: "88574603"
 
 ## <a name="organizational-readiness-learning-paths"></a>組織の準備のラーニング パス
 
-クラウド導入作業に関連付けられている動機とビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チーム (v チーム) を確立することが必要になる場合もあります。 以下の記事は、望ましい成果を達成するようこれらのチームを編成するために必要なスキルを組織が開発するのに役立ちます。
+クラウド導入作業に関連付けられている動機とビジネス成果に応じて、リーダーはさまざまな機能を促進するために新しい組織構造または仮想チームを確立することが必要になる場合もあります。 以下の記事は、望ましい成果を達成するようこれらのチームを編成するために必要なスキルを組織が開発するのに役立ちます。
 
 - [組織の調整](../get-started/org-alignment.md):適切な組織構造を確立するアプローチを発見します。
 - [組織の配置の演習](./index.md):特定の目標を達成するのに役立つ配置とチーム構造の概要を把握します。

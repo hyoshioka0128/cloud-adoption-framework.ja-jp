@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d694ede067b5881bf4a35742c2a3b0e0756a89ad
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 876465ac626d99e8a975f284f0db02ac131ea2be
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661760"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885611"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 
@@ -60,7 +60,7 @@ ms.locfileid: "88661760"
 責任者チームがポートフォリオ階層の各レイヤーを管理します。 次の図は、責任チームと、そのビジネス上の決定、技術的な決定、技術的な実装をサポートするためのガイダンスとの対応関係を示しています。
 
 > [!NOTE]
-> 次のリストで説明するチームは、仮想チーム (v チーム) や個人である場合があります。 この階層の一部のバリエーションでは、以下でアカウンタビリティのバリエーションで説明するときに、いくつかの責任チームが折りたたまれていることがあります。
+> 次のリストで説明するチームは、仮想チームや個人である場合があります。 この階層の一部のバリエーションでは、以下でアカウンタビリティのバリエーションで説明するときに、いくつかの責任チームが折りたたまれていることがあります。
 
 ![階層に整合されたアカウンタビリティ](../../_images/ready/hierarchy-with-roles.png)
 

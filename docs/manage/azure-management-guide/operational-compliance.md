@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9323dbd07f5de6ab4ed525b6f3a54db921ac0f7d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 96d3c5280152a9baee6b327b46262c0ebaf5b69c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572036"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882619"
 ---
-<!-- cSpell:ignore WSUS getting started -->
+<!-- cSpell:ignore WSUS -->
 
 # <a name="operational-compliance-in-azure"></a>Azure における運用のコンプライアンス
 
@@ -201,7 +201,7 @@ Azure Blueprints を使用すると、開発チームは新しい環境を迅速
 
 ::: zone target="docs"
 
-1. [[Blueprints:ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
+1. Azure portal で [[ブループリント: ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
 1. 前の手順で作成したブループリントを選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
 1. **[Version]\(バージョン\)** ボックスに「1.0」のようなバージョンを入力します。

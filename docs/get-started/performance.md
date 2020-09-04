@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 04f105ea9db34d1321056fc325324ed4be038f0b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a27d3c6a889da10a4f5e1045a15921741c712c7e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569316"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884268"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>作業を開始しましょう。ポートフォリオ全体で一貫したパフォーマンスを確保する
 
@@ -34,7 +34,7 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 - パフォーマンスの期待値からの逸脱に関連した自動修復タスクを含むように管理ベースラインを改善します。
 - パフォーマンス要件を満たすために、ワークロード固有のデータ パターンやアーキテクチャの変更が必要な場合、ワークロード固有の運用によって、より優れたパフォーマンス管理が可能となります。
-- [運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で、IT ポートフォリオ全体にわたる運用上の決定事項を文書化します。 **[Baseline]\(ベースライン\)** タブの **[Operational Compliance]\(運用のコンプライアンス\)** セクションに、パフォーマンスの自動化に関する決定事項を含めることに重点を置きます。
+- [運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)で、IT ポートフォリオ全体にわたる運用上の決定事項を文書化します。 `Operational Compliance` タブの `Baseline` セクションに、パフォーマンスの自動化に関する決定事項を含めることに重点を置きます。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -45,7 +45,6 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 > [!NOTE]
 > クラウド導入ライフサイクル全体におけるさまざまな判断がパフォーマンスに直接影響します。 以降の手順では、IT ポートフォリオ全体でパフォーマンスを上げるために必要な連携と支援について概説します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -65,9 +64,8 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 - すべてのワークロードとリソースが、[適切な名前付けおよびタグ付け規則](../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認します。 "重要度" のタグに特に重点を置いて、[Azure Policy を使用してタグ付け規則を適用](/azure/governance/policy/tutorials/govern-tags)します。
 - クラウド ガバナンスを初めて使用する場合は、ガバナンス手法を使用して、[ガバナンスのポリシー、プロセス、規範](../govern/index.md)を確立します。
-- コスト管理ガバナンス規範を初めて使用する場合は、[コスト管理の改善に関する記事](../govern/guides/complex/cost-management-improvement.md)に従って検討してください。特に、[実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)に関するセクションを重点的にお読みください。
+- コスト管理ガバナンス規範を初めて使用する場合は、[コスト管理規範の改善に関する記事](../govern/guides/complex/cost-management-improvement.md)に従って検討してください。特に、[実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)に関するセクションを重点的にお読みください。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -85,11 +83,10 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
-- [動機を把握する](../strategy/motivations.md): 重要なビジネス イベントや、移行の動機によっては、コストが重視される傾向があり、後のすべての作業でコスト管理の重要性が高まります。 一方、イノベーションまたは移行による成長に関連した未来志向の動機の場合、営業収益がより重視されます。 動機を把握することで、コスト管理にどの程度の優先度を置くべきかが理解しやすくなります。
+- [動機を把握する](../strategy/motivations.md): 重要なビジネス イベントや、移行の動機によっては、コストが重視される傾向があり、後のすべての作業でコスト管理の重要性が高まります。 一方、イノベーションまたは移行による成長に関連した未来志向の動機の場合、営業収益がより重視されます。 動機を把握すると、コスト管理の優先度付けの判断に役立てることができます。
 - [ビジネス成果](../strategy/business-outcomes/index.md):一部の財政上の成果では、コストが極端に重視される傾向があります。 目的の成果を財務メトリックに対応付ける場合は、初期段階でコスト管理ガバナンス規範に投資してください。
 - [業務上の正当な理由](../strategy/cloud-migration-business-case.md): 業務上の正当な理由は、クラウド導入の財務計画の概要を示します。 これは、最初の予算作成に役立つ情報源となる可能性があります。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -113,10 +110,9 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 - [インベントリの収集](../digital-estate/inventory.md): 導入前に、デジタル資産を分析するためのデータ ソースを確立します。
 - [ベスト プラクティス:Azure Migrate](../plan/contoso-migration-assessment.md):Azure Migrate を使用してインベントリを収集します。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization):増分型の合理化を進める中で、定量分析を使用して、予算編成のためにクラウドの候補を特定します。
-- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)することにより、コスト モデルと予測モデルを対応付けます。
+- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management と Billing を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コストおよび予測のモデルを対応付けます。
 - [クラウド導入計画の作成](../plan/plan-intro.md#build-your-cloud-adoption-plan): 実用的なワークロード、資産、タイムラインの詳細を含む計画を作成します。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -138,7 +134,6 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 
 - [ランディング ゾーンの運用を改善する](../ready/considerations/landing-zone-operations.md): ランディング ゾーン内での運用を改善するためのベスト プラクティス。
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |
@@ -161,7 +156,6 @@ Azure 用の Microsoft クラウド導入フレームワークにまとめられ
 - [昇格前のチェックリスト](../migrate/migration-considerations/optimize/ready.md)
 - [運用リリースのチェックリスト](../migrate/migration-considerations/optimize/promote.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | 説明責任チーム | 実行責任チームとサポート チーム |

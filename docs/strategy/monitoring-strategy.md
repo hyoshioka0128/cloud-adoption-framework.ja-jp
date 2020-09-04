@@ -1,19 +1,19 @@
 ---
 title: クラウド監視戦略
 description: 効果的なクラウド監視戦略を定義する方法について理解を深めます。
+services: azure-monitor
 author: mgoedtel
 ms.author: magoedte
 ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-services: azure-monitor
-ms.openlocfilehash: 021f3c9913a09bf0b32dd5913b54cbd839ff380e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7849dde3a64d0f788941aa7544525e61d60e697c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574212"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885849"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -191,7 +191,7 @@ Azure Monitor では、運用をサポートし、ビジネス上の意思決定
 
 ![監視と制御の戦略](./media/monitoring-strategy/monitoring-and-control-strategy.png)
 
-<!-- docsTest:ignore "Data to Information, Knowledge, and Wisdom" -->
+<!-- docutune:ignore "Data to Information, Knowledge, and Wisdom" -->
 
 <Sup>1</Sup> DIKW モデルはナレッジ管理に基づいており、アクションと意思決定の構成要素でデータから情報、知識、知恵へと移行する方法を説明するためによく使用される方法です。
 
@@ -234,7 +234,7 @@ Azure Monitor では、運用をサポートし、ビジネス上の意思決定
 | 正常性と状態の監視 | サービスまたはコンポーネントの長期的な保証 (サービス レベル: 可用性、容量、パフォーマンス、セキュリティ、コンプライアンスなど) をまとめて総合的に監視、測定、学習、改善します。 正常なシステム、サービス、またはコンポーネントがオンラインになっており、安全で、準拠しています。 正常性の監視にはログが含まれており、リアルタイムの正常性状態とメトリックに関してステートフルです。 また、サービスの使用量に重点を置いたトレンド レポート、分析情報、傾向も含まれています。 |
 | 実用性の監視 | システムが価値を提供する方法の品質または定性的な側面を観察、測定、学習、改善します。 ユーザー エクスペリエンスは、監視ユース ケースの一種です。 |
 | セキュリティの監視 | サイバーセキュリティ戦略と、セキュリティ操作、ID とアクセス、情報保護、プライバシー、脅威管理、コンプライアンスなどの機能のサポートにより、保護を監視、測定、学習、改善します。 Azure Security Center と Azure Sentinel、および Microsoft 365 を使用して監視します。 |
-| コストの監視 | 新しい主要な目標として、Azure Monitor と Azure Cost Management および Billing を使用して使用量を監視し、コストを見積もります。 Cost Management API では、多次元分析を使用してコストと使用状況データを探索する機能が提供されます。 |
+| コストの監視 | 新しい主要な目標として、Azure Monitor と Azure Cost Management および Billing を使用して使用量を監視し、コストを見積もります。 Azure Cost Management API では、多次元分析を使用してコストと使用状況データを探索する機能が提供されます。 |
 
 | 三次目標 | 目標と結果 |
 |---------------------|------------------|

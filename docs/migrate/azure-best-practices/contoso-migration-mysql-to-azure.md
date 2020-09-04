@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 39b9d4781b5caabed5524577be9819e4544ec665
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a7fb9e0887cb5cd60ba48783b152d20f0213ba71
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567157"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882041"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -59,7 +59,7 @@ Azure Database Migration Service を使用して、データベースを Azure D
 ### <a name="database-considerations"></a>データベースの考慮事項
 
 <!-- TODO: Verify GraphDBMS term -->
-<!-- docsTest:ignore ColumnStore GraphDBMS -->
+<!-- docsTest:casing ColumnStore "Graph DBMS" -->
 
 ソリューションの設計プロセスの一環として、Contoso では MySQL データをホストするための Azure の機能を確認しました。 Azure の使用を決定する際に、次の考慮事項が役立ちました。
 
@@ -68,7 +68,7 @@ Azure Database Migration Service を使用して、データベースを Azure D
 - Azure Database for MySQL には、Contoso が監査担当者のために満たす必要がある、必須のコンプライアンス認定とプライバシー認定があります。
 - 読み取りレプリカを使用すると、レポートおよびアプリケーション処理のパフォーマンスが向上します。
 - [Azure Private Link](/azure/mysql/concepts-data-access-security-private-link) を使用して、サービスを内部ネットワーク トラフィックだけに公開できます (パブリック アクセスなし)。
-- Contoso では、将来、MariaDB ColumnStore および GraphDBMS データベース モデルを使用する可能性を検討しているため、Azure Database for MySQL に移行しないことを選択しました。
+- Contoso では、将来、MariaDB ColumnStore および Graph DBMS データベース モデルを使用する可能性を検討しているため、Azure Database for MySQL に移行しないことを選択しました。
 - MySQL の機能は別として、Contoso は真のオープンソース プロジェクトを支持しており、MySQL を使用しないことを選択しました。
 - 選択されたゲートウェイ (Azure ExpressRoute またはサイト間 VPN) に基づいて、アプリケーションからデータベースへの[帯域幅と待機時間](/azure/vpn-gateway/vpn-gateway-about-vpngateways)が十分に確保されます。
 
