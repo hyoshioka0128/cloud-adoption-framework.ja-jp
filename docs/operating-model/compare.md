@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 137a19423a5dd780abc552feb2a68ef11d8a11d5
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: aac174a109954c04fa192e4d2d62926433d95dfc
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662270"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510585"
 ---
 # <a name="compare-common-cloud-operating-models"></a>一般的なクラウド運用モデルを比較する
 
@@ -54,11 +54,11 @@ ms.locfileid: "88662270"
 
 ||非集中型の運用 |集中型の運用  |エンタープライズ型の運用          |分散型の運用|
 |---------              |---------      |---------    |---------          |---------|
-|ビジネスの整合|[ワークロード チーム](../organize/cloud-adoption.md)|[中央のクラウド戦略](../organize/cloud-strategy.md)|[CCoE](../organize/cloud-center-of-excellence.md)|可変 - [幅広いクラウド戦略チームを編成?](../get-started/team/cloud-strategy.md)|
-|[クラウド運用](../organize/cloud-operations.md)|[ワークロード チーム](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|ポートフォリオ分析に基づく - [ビジネス アラインメント](../manage/considerations/business-alignment.md)と[ビジネス コミットメント](../manage/considerations/commitment.md)に関するページを参照|
-|[クラウド ガバナンス](../organize/cloud-governance.md)|[ワークロード チーム](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|[複数レイヤーのガバナンス](../govern/guides/complex/multiple-layers-of-governance.md)|
-|[クラウドのセキュリティ](../organize/cloud-security.md)|[ワークロード チーム](../organize/cloud-adoption.md)|[セキュリティ オペレーション センター (SOC)](../organize/cloud-security-operations-center.md)|[CCoE](../organize/cloud-center-of-excellence.md) + [SOC](../organize/cloud-security-operations-center.md)|混合 - 「[セキュリティ戦略を定義する](../strategy/define-security-strategy.md)」を参照|
-|[クラウドの自動化と DevOps](../organize/cloud-automation.md)|[ワークロード チーム](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md) または該当なし|[CCoE](../organize/cloud-center-of-excellence.md)|ポートフォリオ分析に基づく - [ビジネス アラインメント](../manage/considerations/business-alignment.md)と[ビジネス コミットメント](../manage/considerations/commitment.md)に関するページを参照|
+|**ビジネスの整合**|[ワークロード チーム](../organize/cloud-adoption.md)|[中央のクラウド戦略](../organize/cloud-strategy.md)|[CCoE](../organize/cloud-center-of-excellence.md)|可変 - [幅広いクラウド戦略チームを編成?](../get-started/team/cloud-strategy.md)|
+|**[クラウド運用](../organize/cloud-operations.md)**|[ワークロード チーム](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|ポートフォリオ分析に基づく - [ビジネス アラインメント](../manage/considerations/business-alignment.md)と[ビジネス コミットメント](../manage/considerations/commitment.md)に関するページを参照|
+|**[クラウド ガバナンス](../organize/cloud-governance.md)**|[ワークロード チーム](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|[複数レイヤーのガバナンス](../govern/guides/complex/multiple-layers-of-governance.md)|
+|**[クラウドのセキュリティ](../organize/cloud-security.md)**|[ワークロード チーム](../organize/cloud-adoption.md)|[セキュリティ オペレーション センター (SOC)](../organize/cloud-security-operations-center.md)|[CCoE](../organize/cloud-center-of-excellence.md) + [SOC](../organize/cloud-security-operations-center.md)|混合 - 「[セキュリティ戦略を定義する](../strategy/define-security-strategy.md)」を参照|
+|**[クラウドの自動化と DevOps](../organize/cloud-automation.md)**|[ワークロード チーム](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md) または該当なし|[CCoE](../organize/cloud-center-of-excellence.md)|ポートフォリオ分析に基づく - [ビジネス アラインメント](../manage/considerations/business-alignment.md)と[ビジネス コミットメント](../manage/considerations/commitment.md)に関するページを参照|
 
 ### <a name="accelerate-operating-model-implementation-in-azure"></a>Azure での運用モデル実装の加速
 

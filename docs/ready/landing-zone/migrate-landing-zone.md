@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c85aec77b5d2e264ba6bc06fcce135125f82573e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3777dd0cfebba040dd42db3229a925856971947e
+ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574365"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427826"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>Azure で移行ランディング ゾーンをデプロイする
 
@@ -62,7 +62,7 @@ ms.locfileid: "88574365"
 ガバナンスの規範の並列開発の時間を短縮するには、[ガバナンス手法](../../govern/index.md)を確認し、CAF 移行ランディング ゾーン ブループリントに加えて、[CAF 基盤ブループリント](./foundation-blueprint.md)をデプロイすることを検討します。
 
 > [!WARNING]
-> ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)ことが必要になる場合があります。
+> ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)ことが必要になる場合があります。
 
 ### <a name="operations-baseline"></a>運用ベースライン
 
