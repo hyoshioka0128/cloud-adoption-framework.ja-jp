@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 84ec7f75ca3d6a1ab38fd82db6725a7d9aae4e97
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4a0e0a00a644d1034593752bafe453ecbba07815
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885883"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510568"
 ---
 # <a name="develop-a-cloud-adoption-strategy"></a>クラウド導入戦略を作成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "88885883"
 
 以下の手順は、事業戦略の効率的な記録に役立ちます。 この手法は、部門連係モデルで目標とする事業価値を得る導入を進めるために役立ちます。 その後、クラウド導入戦略を特定のクラウド機能とビジネス戦略に対応付けることにより、変革の目的の状態に達することができます。
 
-|  |  |
+| <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [動機を定義して文書化する](./motivations.md): 主要な利害関係者とエグゼクティブに会い、クラウド導入の背後にある動機を記録します。 |
 | <br> ![2](../_images/icons/2.png) | <br> [ビジネス成果を文書化する](./business-outcomes/index.md): 動機をもつ利害関係者やエグゼクティブに特定の事業成果を記録してもらいます。 |

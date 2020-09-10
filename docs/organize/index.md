@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 6b942705282204adaa9cdb7949091341392a121a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c6f0c69b37f2f1409d0812701cb089092ae8af2d
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884914"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510534"
 ---
 # <a name="manage-organizational-alignment"></a>組織の配置を管理する
 
@@ -21,7 +21,7 @@ ms.locfileid: "88884914"
 
 次の演習は、クラウド導入を支援するランディング ゾーンの作成プロセスのガイダンスとして役立ちます。
 
-|  |  |
+| <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [構造の種類](#structure-type):実際の運用モデルに最も適した組織構造の種類を定義します。 |
 | <br> ![2](../_images/icons/2.png) | <br> [クラウドの職務](#understand-required-cloud-functions):クラウドの導入と運用に必要なクラウドの職能について説明します。 |

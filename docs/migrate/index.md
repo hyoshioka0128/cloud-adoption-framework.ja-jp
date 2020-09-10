@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: e84bba82e088c1326ecabf420866fe3ed3240660
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 56052fb7f9e4837d821637e5b7525521a7737bdb
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885968"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510347"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -22,7 +22,7 @@ ms.locfileid: "88885968"
 
 クラウド導入ライフサイクルのこのフェーズを準備するために、以下が推奨されます。
 
-|  |  |
+| <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [最初のワークロードを移行する](./azure-migration-guide/index.md):「Azure 移行ガイド」を使用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。 |
 | <br> ![2](../_images/icons/2.png) | <br> [移行シナリオ](./azure-best-practices/index.md):追加の移行ツールとアプローチを使用して、その他の移行シナリオに対処します。 |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17b40a610bae3cd8af6b35dd8f95797c720b473f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d9267c51eb0237e92ed838979090926c82e69971
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879100"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510381"
 ---
 # <a name="security-baseline-discipline-overview"></a>セキュリティ ベースライン規範の概要
 
@@ -37,7 +37,7 @@ ms.locfileid: "88879100"
 
 次の手順では、セキュリティ ベースライン規範を開発する際の例と可能性のあるオプションを示します。 各手順は、セキュリティに関連するリスクを管理するのに必要なポリシーやプロセスを確立するためのクラウド ガバナンス チーム内での話し合いや、組織の影響を受けるビジネス、IT、およびセキュリティ チームとの討議の中で、出発点として使用します。
 
-|  |  |
+| <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
 | <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [セキュリティ ベースライン規範テンプレート](./template.md):セキュリティ ベースライン規範を文書化するテンプレートをダウンロードします。 |
 | <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):一般的にセキュリティ ベースラインの規範に関係する動機およびリスクを理解できます。 |

@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 759ac124bed7bab6ed8bca6efff3278efbc0759d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 74cee491548c833924ce3439b86757dc203fd0a6
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574348"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510466"
 ---
 # <a name="develop-a-cloud-adoption-plan"></a>クラウド導入計画を作成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "88574348"
 
 次の演習は、テクノロジ戦略の記録に役立ちます。 この手法では、タスクに優先順位を付けて導入を進めます。 その後、クラウドの導入計画は、クラウド導入戦略に定義されているメトリックと同期にマッピングされます。
 
-|  |  |
+| <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [デジタル資産](../digital-estate/rationalize.md):動機やビジネス成果に合わせた想定に基づき、デジタル資産の目録を作成し、合理化します。 |
 | <br> ![2](../_images/icons/2.png) | <br> [初期の組織配置](./initial-org-alignment.md):導入計画を支援する最初の編成調整を計画します。 |

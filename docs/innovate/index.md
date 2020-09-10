@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4c037670f19a8a448f3a8632929bca5f81e92d2b
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: ecb15716089ac4e94bc671e99442170f4f8b184f
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662372"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510517"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウドのイノベーション
 
@@ -22,7 +22,7 @@ ms.locfileid: "88662372"
 
 クラウド導入ライフサイクルのこのフェーズの準備として、フレームワークからは、次の演習が提案されます。
 
-|  |  |
+| <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [事業価値における合意](./business-value.md):技術的なソリューションを決定する前に、新しいイノベーションによってビジネス価値がどのように促進されるかを特定します。 その価値を自分のクラウド戦略に対応付けます。 この段階的な手法では、ビジネス価値は仮定される顧客ニーズで表されます。 |
 | <br> ![2](../_images/icons/2.png) | <br> [Azure イノベーション ガイド](./innovation-guide/index.md):Azure には、革新的なソリューションのデプロイを加速させることができるクラウド ツールが用意されています。 仮説によっては、ツールのさまざまな組み合わせを検討する場合があります。 基本ツールを使用して実用最小限の製品 (MVP) を作成することが推奨されます。 |

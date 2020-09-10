@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3dac2b3f604877651b9f70decf9c7712c201bfc8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 08386cc2dfbfffb73e93a97ceec8f0a075d00066
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574229"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510551"
 ---
 # <a name="ensure-the-environment-is-prepared-for-the-cloud-adoption-plan"></a>クラウド導入計画に合わせて環境を準備します
 
@@ -20,7 +20,7 @@ ms.locfileid: "88574229"
 
 次の演習は、クラウド導入を支援するランディング ゾーンの作成プロセスのガイダンスとして役立ちます。
 
-|  |  |
+| <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [Azure セットアップ ガイド](./azure-setup-guide/index.md):Azure セットアップ ガイドでは、ランディング ゾーンの作成に必要なツールや手法を知ることができます。 |
 | <br> ![2](../_images/icons/2.png) | <br> [Azure ランディング ゾーン](./landing-zone/index.md):環境に合わせてコードベースの開始点を確立するには、最も適切なランディング ゾーン オプションを選択します。 |

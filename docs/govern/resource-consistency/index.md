@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba59b5e67a9cd7a64b116852190a1428503174ee
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4affc50cbe431b8bff780e81487f9d3611e9ecd8
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879474"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510415"
 ---
 # <a name="resource-consistency-discipline-overview"></a>リソースの整合性の規範の概要
 
@@ -37,7 +37,7 @@ ms.locfileid: "88879474"
 
 次の手順では、リソースの整合性規範を開発する際の例と考えられるオプションを示します。 各手順は、リソースの整合性規範のリスクを管理するのに必要なポリシーやプロセスを確立するためのクラウド ガバナンス チーム内での話し合いや、組織の影響を受けるビジネスおよび IT チームとの討議の中で、出発点として使用します。
 
-|  |  |
+| <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
 | <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [リソースの整合性規範テンプレート](./template.md):リソースの整合性規範を文書化するためのテンプレートをダウンロードできます。 |
 | <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):リソースの整合性の規範に通常関係する、動機およびリスクを理解できます。 |
