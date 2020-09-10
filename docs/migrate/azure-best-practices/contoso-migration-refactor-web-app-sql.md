@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 3e550dafc582742a9cd0c4c83f0fbc416242bc8b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 31e8c22d12d851c0b72e9821defdf1268d3c8110
+ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567395"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427843"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -91,6 +91,7 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
+| [Azure App Service Migration Assistant](/learn/paths/migrate-dotnet-apps-azure/) | コードをほとんど変更することなく、オンプレミスからクラウドに .NET Web アプリをシームレスに移行するための、無料のシンプルなパスです。 | このツールは無料でダウンロードできます。 |
 | [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は SQL のソースとターゲット間で機能パリティを評価し、パフォーマンスと信頼性の向上箇所を推奨します。 | このツールは無料でダウンロードできます。 |
 | [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
 | [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview) | インテリジェントなフル マネージド リレーショナル クラウド データベース サービス。 | コストは、機能、スループット、サイズに基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/sql-database/managed)。 |
@@ -112,14 +113,24 @@ Contoso が移行を実行する方法を次に示します。
 
 > [!div class="checklist"]
 >
-> - **ステップ 1:Azure SQL Database にデータベースをプロビジョニングする**。 Contoso が Azure SQL データベース インスタンスをプロビジョニングします。 アプリケーションの Web サイトが Azure に移行されると、WCF サービス Web アプリはこのインスタンスを指します。
-> - **手順 2:データベースを評価する**。 Contoso は、移行するデータベースを Data Migration Assistant を使用して評価し、Azure Database Migration Service を使用してそのデータベースを移行します。
-> - **ステップ 3:Web アプリをプロビジョニングする**。 Contoso は 2 つの Web アプリをプロビジョニングします。
+> - **ステップ 1:Web アプリの評価と移行**。 Contoso では、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、移行前互換性チェックを実行し、Web アプリを Azure App Service に移行します。
+> - **手順 2:Azure SQL Database にデータベースをプロビジョニングする**。 Contoso が Azure SQL データベース インスタンスをプロビジョニングします。 アプリケーションの Web サイトが Azure に移行されると、WCF サービス Web アプリはこのインスタンスを指します。
+> - **ステップ 3:データベースを評価する**。 Contoso は、移行するデータベースを Data Migration Assistant を使用して評価し、Azure Database Migration Service を使用してそのデータベースを移行します。
 > - **手順 4:Azure DevOps を設定する**。 Contoso は新しい Azure DevOps プロジェクトを作成し、Git リポジトリをインポートします。
 > - **手順 5:接続文字列を構成する**。 Contoso は Web 層 Web アプリ、WCF サービス Web アプリ、および SQL インスタンスが通信できるように接続文字列を構成します。
 > - **手順 6:ビルドとリリース パイプラインを Azure DevOps で設定する**。 最後の手順として、Contoso はアプリケーションを作成するためのビルドとリリース パイプラインを Azure DevOps で設定し、それらを 2 つの個別の Web アプリにデプロイします。
 
-## <a name="step-1-provision-a-database-in-azure-sql-database"></a>手順 1:Azure SQL Database にデータベースをプロビジョニングする
+## <a name="step-1-assess-and-migrate-the-web-apps"></a>手順 1:Web アプリの評価と移行
+
+Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、Web アプリを評価し、移行します。 このプロセスでは、[の Microsoft ラーニング パス](/learn/paths/migrate-dotnet-apps-azure/)をガイドとして使用します。 簡単に言えば、管理者は次の操作を実行します。
+
+- Azure [App Service 移行評価](https://appmigration.microsoft.com/assessment/)ツールを使用して、Web アプリ間の依存関係を評価し、オンプレミスの Web アプリと Azure App Service でサポートされているものの間に非互換性がないかどうかを判断します。
+
+- Azure App Service Migration Assistant をダウンロードし、Azure アカウントにサインインします。
+
+- サブスクリプション、リソース グループ、Web サイトのドメイン名を選択します。
+
+## <a name="step-2-provision-a-database-in-azure-sql-database"></a>手順 2:Azure SQL Database にデータベースをプロビジョニングする
 
 1. Contoso 管理者は、Azure SQL データベース インスタンスの作成を決めます。
 
@@ -151,7 +162,7 @@ Contoso が移行を実行する方法を次に示します。
 - SQL Database のプロビジョニングの[手順を参照](/azure/sql-database/sql-database-get-started-portal)します。
 - [仮想コア リソースの制限](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools)に関する説明を参照します。
 
-## <a name="step-2-assess-the-database"></a>手順 2:データベースを評価する
+## <a name="step-3-assess-the-database"></a>手順 3:データベースを評価する
 
 Contoso の管理者は、Data Migration Assistant を使用してデータベースを評価した後、[ステップバイステップの移行チュートリアル](/azure/dms/tutorial-sql-server-azure-sql-online)を参照し、Azure Database Migration Service を使用してそれを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
 
@@ -169,24 +180,6 @@ Contoso の管理者は、Data Migration Assistant を使用してデータベ�
   - レプリケーション を開始します。
   - すべてのエラーを解決します。
   - 最終的なカットオーバーを実行します。
-
-## <a name="step-3-provision-web-apps"></a>手順 3:Web アプリをプロビジョニングする
-
-データベースの移行が完了し、Contoso 管理者は 2 つの Web アプリをプロビジョニングできるようになりました。
-
-1. Azure portal で、 **[Web App]** を選択します。
-
-    ![Azure portal の [Web App] リンクのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/web-app1.png)
-
-1. Web アプリの名前 (**SHWEB-EUS2**) を指定し、Windows 上で実行し、運用リソース グループ **ContosoRG** に配置します。 新しい Web アプリと Azure App Service プランを作成します。
-
-    ![米国東部 2 の場所を表示する [Web App] ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/web-app2.png)
-
-1. Web アプリがプロビジョニングされた後、WCF サービス (**SHWCF-EUS2**) 用に Web アプリを作成するプロセスを繰り返します。
-
-    ![WCF サービスを表示する [Web App] ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/web-app3.png)
-
-1. アプリケーションのアドレスにアクセスして、アプリケーションが正常に作成されたことを確認します。
 
 ## <a name="step-4-set-up-azure-devops"></a>手順 4:Azure DevOps を設定する
 

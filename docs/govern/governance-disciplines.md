@@ -8,26 +8,31 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 15da317061924f0c631877a7a7a0430d8e336038
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 176d9bfac74890d80dd5a36d4a3b6fc51863e027
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881140"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510432"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>クラウド ガバナンスの 5 つの規範
 
 <!-- docutune:casing "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
-|  |  |
-|--|--|
-| ビジネス プロセスまたは技術プラットフォームの変更にはリスクが伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、リスクを軽減し、導入やイノベーションの作業をできるだけ中断させないようにすることです。 <br><br> これらの意思決定の指針には、選択されているクラウド プラットフォームに関係なく、[企業ポリシーの策定](./corporate-policy.md)と[クラウド ガバナンスの 5 つの規範](#disciplines-of-cloud-governance)に重点が置かれた、クラウド導入フレームワーク ガバナンス モデルが使用されます。 [アクションにつながる設計ガイド](./guides/index.md)は、Azure サービスを使用してこのモデルを実証します。 以下では、クラウド導入フレームワーク ガバナンス モデルの規範について説明します。 | <br><br> [![クラウド導入フレームワーク ガバナンス モデルの図: 企業のポリシーとガバナンスの規範](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> "*図 1:企業ポリシーとクラウド ガバナンスの 5 つの規範。* |
+:::row:::
+    :::column:::
+        ビジネス プロセスまたは技術プラットフォームの変更にはリスクが伴います。 クラウド カストディアンと呼ばれることもあるメンバーで構成されるクラウド ガバナンス チームの任務は、リスクを軽減し、導入やイノベーションの作業をできるだけ中断させないようにすることです。 <br><br> これらの意思決定の指針には、選択されているクラウド プラットフォームに関係なく、[企業ポリシーの策定](./corporate-policy.md)と[クラウド ガバナンスの 5 つの規範](#disciplines-of-cloud-governance)に重点が置かれた、クラウド導入フレームワーク ガバナンス モデルが使用されます。 [アクションにつながる設計ガイド](./guides/index.md)は、Azure サービスを使用してこのモデルを実証します。 以下では、クラウド導入フレームワーク ガバナンス モデルの規範について説明します。
+    :::column-end:::
+    :::column:::
+        [![クラウド導入フレームワーク ガバナンス モデルの図: 企業のポリシーとガバナンスの規範](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> "*図 1:企業ポリシーとクラウド ガバナンスの 5 つの規範。*
+    :::column-end:::
+:::row-end:::
 
 ## <a name="disciplines-of-cloud-governance"></a>クラウド ガバナンスの規範
 
 どのようなクラウド プラットフォームにも、ポリシーを周知したりツールチェーンを調整したりするのに役立つ共通のガバナンス規範があります。 これらの規範は、クラウド プラットフォームの枠を超えた企業ポリシーの自動化と実施の適切なレベルに関する意思決定の指針です。
 
-|  |  |
+| <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
 | <br> ![Cost Management](../_images/govern/cost-management.png) | <br> [コスト管理](./cost-management/index.md):コストはクラウド ユーザーの最大の関心事です。 すべてのクラウド プラットフォームに対応した、コスト管理のためのポリシーを策定します。 |
 | <br> ![セキュリティ ベースライン](../_images/govern/security-baseline.png) | <br> [セキュリティ ベースライン](./security-baseline/index.md):セキュリティは複雑なテーマであり、会社ごとに独特です。 セキュリティ要件が確立されると、クラウド ガバナンスのポリシーと実施により、それらの要件がネットワーク、データ、資産の構成全体に適用されます。|

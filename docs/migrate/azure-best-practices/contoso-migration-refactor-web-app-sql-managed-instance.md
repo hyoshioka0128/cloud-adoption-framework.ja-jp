@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9fef7d751818a897e94225a88e6cecb6dcb36a1c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3d95604d9b12a5452853550a655a6c42034d8f23
+ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882466"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427860"
 ---
 <!-- cSpell:ignore contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -97,6 +97,7 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
+| [Azure App Service Migration Assistant](/learn/paths/migrate-dotnet-apps-azure/) | コードをほとんど変更することなく、オンプレミスからクラウドに .NET Web アプリをシームレスに移行するための、無料のシンプルなパスです。 | このツールは無料でダウンロードできます。 |
 | [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)と [Azure Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
 | [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance) | SQL Managed Instance は、Azure 内のフル マネージド SQL Server インスタンスを表すマネージド データベース サービスです。 最新バージョンの SQL Server データベース エンジンと同じコードを使用し、最新の機能、パフォーマンスの向上、およびセキュリティ更新プログラムが適用されています。 | Azure で実行されている SQL マネージド インスタンスを使用すると、容量に基づく料金がかかります。 詳細については、[SQL Managed Instance の価格](https://azure.microsoft.com/pricing/details/sql-database/managed)に関するページを参照してください。 |
 | [Azure App Service](/azure/app-service/overview) | フル マネージド プラットフォームを使用した強力なクラウド アプリケーションを作成できます。 | 価格は、サイズ、場所、使用時間に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
@@ -117,14 +118,24 @@ Contoso が移行を実行する方法を次に示します。
 
 > [!div class="checklist"]
 >
-> - **ステップ 1:SQL マネージド インスタンスを設定する**。 Contoso では、オンプレミス SQL Server データベースの移行先となる既存のマネージド インスタンスが必要です。
-> - **手順 2:Azure Database Migration Service を使用して移行する**。 Contoso は Azure Database Migration Service を使用してアプリケーション データベースを移行します。
-> - **ステップ 3:Web アプリをプロビジョニングする**。 Contoso は 2 つの Web アプリをプロビジョニングします。
+> - **ステップ 1:Web アプリの評価と移行**。 Contoso では、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、移行前互換性チェックを実行し、Web アプリを Azure App Service に移行します。
+> - **手順 2:SQL マネージド インスタンスを設定する**。 Contoso では、オンプレミス SQL Server データベースの移行先となる既存のマネージド インスタンスが必要です。
+> - **ステップ 3:Azure Database Migration Service を使用して移行する**。 Contoso は Azure Database Migration Service を使用してアプリケーション データベースを移行します。
 > - **手順 4:Azure DevOps を設定する**。 Contoso は新しい Azure DevOps プロジェクトを作成し、Git リポジトリをインポートします。
 > - **手順 5:接続文字列を構成する**。 Contoso は Web 層 Web アプリ、WCF サービス Web アプリ、SQL マネージド インスタンスが通信できるように接続文字列を構成します。
 > - **手順 6:ビルドとリリース パイプラインを Azure DevOps で設定する**。 最後の手順として、Contoso はアプリケーションを作成するためのビルドとリリース パイプラインを Azure DevOps で設定します。 その後、それらのパイプラインを 2 つの個別の Web アプリにデプロイします。
 
-## <a name="step-1-set-up-a-sql-managed-instance"></a>手順 1:SQL マネージド インスタンスを設定する
+## <a name="step-1-assess-and-migrate-the-web-apps"></a>手順 1:Web アプリの評価と移行
+
+Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、Web アプリを評価し、移行します。 このプロセスでは、[の Microsoft ラーニング パス](/learn/paths/migrate-dotnet-apps-azure/)をガイドとして使用します。 簡単に言えば、管理者は次の操作を実行します。
+
+- Azure [App Service 移行評価](https://appmigration.microsoft.com/assessment/)ツールを使用して、Web アプリ間の依存関係を評価し、オンプレミスの Web アプリと Azure App Service でサポートされているものの間に非互換性がないかどうかを判断します。
+
+- Azure App Service Migration Assistant をダウンロードし、Azure アカウントにサインインします。
+
+- サブスクリプション、リソース グループ、Web サイトのドメイン名を選択します。
+
+## <a name="step-2-set-up-a-sql-managed-instance"></a>手順 2:SQL マネージド インスタンスを設定する
 
 Azure SQL マネージド インスタンスを設定するため、Contoso は次の要件を満たすサブネットを必要としています。
 
@@ -144,7 +155,7 @@ Contoso の管理者は仮想ネットワークを次のように設定します
 1. プライマリ リージョン (米国東部 2) に新しい仮想ネットワーク (VNET-SQLMI-EU2) を作成します。 その仮想ネットワークを ContosoNetworkingRG リソース グループに追加します。
 1. **10.235.0.0/24** のアドレス空間を割り当てます。 その範囲がエンタープライズ内の他のどのネットワークとも重複しないことを確認します。
 1. ネットワークに以下の 2 つのサブネットを追加します。
-    - `SQLMI-DS-EUS2` (`10.235.0.0/25`)。
+    - `SQLMI-DS-EUS2` (`10.235.0.0/25`).
     - `SQLMI-SAW-EUS2` (`10.235.0.128/29`). このサブネットは、マネージド インスタンスにディレクトリを接続するために使用されます。
 
       ![マネージド インスタンスの [仮想ネットワークの作成] ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
@@ -168,7 +179,7 @@ Contoso の管理者は仮想ネットワークを次のように設定します
 **さらにサポートが必要な場合**
 
 - [SQL Managed Instance の概要については、こちらをお読みください](/azure/sql-database/sql-database-managed-instance)。
-- [SQL マネージド インスタンス用の仮想ネットワークを作成する](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)方法について参照してください。
+- [SQL マネージド インスタンス用の仮想ネットワークを作成する](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)方法をご覧ください。
 - [ピアリングを設定する方法については、こちらを参照してください](/azure/virtual-network/virtual-network-manage-peering)。
 - [Azure Active Directory DNS 設定を更新する方法については、こちらを参照してください](/azure/active-directory-domain-services/tutorial-create-instance)。
 
@@ -220,7 +231,7 @@ Contoso の管理者は、次のようにしてルーティングを設定しま
 
 [マネージド インスタンスをプロビジョニングする方法については、こちらを参照してください](/azure/sql-database/sql-database-managed-instance-get-started)。
 
-## <a name="step-2-migrate-via-azure-database-migration-service"></a>手順 2:Azure Database Migration Service を使用して移行する
+## <a name="step-3-migrate-via-azure-database-migration-service"></a>手順 3:Azure Database Migration Service を使用して移行する
 
 Contoso の管理者は、[ステップバイステップの移行チュートリアル](/azure/dms/tutorial-sql-server-azure-sql-online)の手順に従って、Azure Database Migration Service を使用してマネージド インスタンスを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
 
@@ -237,24 +248,6 @@ Contoso の管理者が行う作業の概要は次のとおりです。
   - レプリケーション を開始します。
   - すべてのエラーを解決します。
   - 最終的なカットオーバーを実行します。
-
-## <a name="step-3-provision-web-apps"></a>手順 3:Web アプリをプロビジョニングする
-
-データベースの移行が完了し、Contoso 管理者は 2 つの Web アプリをプロビジョニングできるようになりました。
-
-1. Azure portal で、 **[Web App]** を選択します。
-
-    ![[Web App] リンクのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/web-app1.png)
-
-1. Web アプリの名前 (**SHWEB-EUS2**) を指定し、Windows 上で実行し、運用リソース グループ **ContosoRG** に配置します。 新しい Web アプリと Azure App Service プランを作成します。
-
-    ![1 つ目の Web アプリを作成するための [Web App] ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/web-app2.png)
-
-1. Web アプリがプロビジョニングされた後、管理者は、WCF サービス (`SHWCF-EUS2`) 用に Web アプリを作成するプロセスを繰り返します。
-
-    ![2 つ目の Web アプリを作成するための [Web App] ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/web-app3.png)
-
-1. 管理者がアプリケーションのアドレスにアクセスして、Web アプリが正常に作成されたことを確認します。
 
 ## <a name="step-4-set-up-azure-devops"></a>手順 4:Azure DevOps を設定する
 

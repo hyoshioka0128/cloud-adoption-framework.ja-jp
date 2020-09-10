@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 6e3cbf834111b1ce6e68354070e8266a3d1f0d9a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 01e95d7d2b8126903b4fe0bd8bbdbaa34f6fd5c6
+ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885560"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427809"
 ---
 # <a name="tools-and-templates"></a>ツールとテンプレート
 
@@ -56,6 +56,8 @@ ms.locfileid: "88885560"
 | [ID ベースライン規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | ID の要件に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [リソースの整合性規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | リソースの整合性に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [セキュリティ ベースライン規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | セキュリティ ベースラインに重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
+| [Azure Governance Vizualizer - AzGovViz](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | AzGovViz は、Azure テナントの管理グループ階層をサブスクリプション レベルまで反復処理する PowerShell スクリプトです。 Azure Policy、RBAC、ブループリントなど、最も関連する Azure のガバナンス機能をキャプチャします。 収集されたデータから、AzGovViz は階層マップを可視化し、テナントの概要を作成し、管理グループとサブスクリプションに関する詳細なスコープの分析情報を作成します。 |
+
 
 ## <a name="manage"></a>管理する
 

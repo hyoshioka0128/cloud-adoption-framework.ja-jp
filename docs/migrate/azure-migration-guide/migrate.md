@@ -3,18 +3,18 @@ title: 資産の移行
 description: ネイティブ ツール、サードパーティ製ツール、プロジェクト管理ツールなど、使用する適切なツールを特定して、Azure への移行を開始します。
 author: matticusau
 ms.author: mlavery
-ms.date: 08/08/2019
+ms.date: 09/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7363c62aa5bd6ed13fcd5db8fca92ed51ecf18f9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cd4f4c579aa2edfece69e05feb44bcd344380bf7
+ms.sourcegitcommit: ba6747b5571b342cb3c4bfaf5b96da0946ebba31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885033"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89557045"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -100,6 +100,36 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 - [Azure portal: 移行プロジェクトを作成する](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
 ::: zone-end
+
+### <a name="azure-app-service-migration-assistant"></a>Azure App Service Migration Assistant
+
+Azure App Service Migration Assistant は、組織のクラウドへの移行を支援する[大規模なアプリケーション スイート](https://azure.microsoft.com/services/azure-migrate/)の一部です。 Migration Assistant には、2 つのタスクを実行する、ウィザードに似たユーザー エクスペリエンスが用意されています。
+
+1. Web アプリの移行前互換性チェックを実行して、Windows Server にインストールされている特定の Web アプリの評価を実行し、Web アプリに変更を加えることなく Azure App Service に移行できるかどうかを判断します。
+1. この評価によって、Web アプリが移行可能であることが証明された場合、Migration Assistant により移行が行われます。 Azure アカウントへのアクセスを Migration Assistant に提供し、使用するリソース グループを選択して、Web アプリの名前を選び、その他の同様の詳細を指定する必要があります。
+または、Migration Assistant によって、より自動化された反復可能な方法で Web アプリを移行するために使用できる Azure Resource Manager テンプレートが生成されます。
+
+#### <a name="migrate-a-web-app-to-azure-app-service"></a>Web アプリを Azure App Service に移行する
+
+Migration Assistant では、Azure アカウントに関する重要な詳細情報を収集することから移行プロセスが開始され、移行が実行されます。
+
+まず、Azure アカウントにサインインし、一意のコードを使用して Migration Assistant セッションをアカウントに関連付けます。 次に、サブスクリプション、リソース グループ、Web サイトのドメイン名を選択します。 新しい Azure App Service プランを作成してアプリをホストするか、既存のプランを選択するかを選択できます。 その選択は、アプリがホストされる地理的なリージョンに影響します。 さらに、この移行作業を既存の Azure Migrate プロジェクトに関連付けることもできます 最後に、データベースのセットアップをスキップするか、ハイブリッド接続を設定してデータベース接続を有効にするかを選択できます。
+
+Migration Assistant によって選択内容が収集および検証されると、選択したリージョンとリソース グループに必要な Azure App Service リソースが作成されます。 Web アプリのソース ファイルが zip され、Azure App Service のデプロイ API を使用してデプロイされます。 最後に、ハイブリッド接続の設定の支援など、オプションの移行手順が実行されます。
+
+移行が正常に完了したら、移行後のタスクを実行する必要があります。 たとえば、次のようなものがあります。
+
+- web.config ファイル内のアプリケーションの設定と接続文字列を Azure App Service に手動で移動する。
+- オンプレミスの SQL Server インスタンスから Azure SQL データベースにデータを移行する。
+- SSL 証明書を設定する。
+- カスタム ドメイン名を設定する。
+- Azure Active Directory でアクセス許可を設定する。
+
+また、Azure App Service のホスティング プランや、自動スケールやデプロイ スロットなどのその他の設定を変更することもできます。
+
+詳細情報 
+
+[ASP.NET アプリを Azure に移行する](/learn/paths/migrate-dotnet-apps-azure)
 
 ### <a name="data-migration-assistant"></a>Data Migration Assistant
 
