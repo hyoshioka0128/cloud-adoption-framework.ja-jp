@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 01410f4ae4728681bb8d349e5f87ec8d1442e3ba
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 655b7f3445af7a4d65aa759648c5acae854cd4cf
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878556"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604547"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>Azure でデジタル発明を開発する
 
-Azure は、デジタル発明の各分野の開発を加速化するのに役立ちます。 Azure のクラウド導入フレームワークのこのセクションは、[イノベーションの方法論](../considerations/index.md)に基づいています。 このセクションでは、Azure のサービスを組み合わせてデジタル発明向けのツールチェーンを作成する方法を紹介します。
+Azure は、デジタル発明の各分野の開発を加速化するのに役立ちます。 クラウド導入フレームワークのこのセクションは、[イノベーションの方法論](../considerations/index.md)に基づいています。 このセクションでは、Azure のサービスを組み合わせてデジタル発明向けのツールチェーンを作成する方法を紹介します。
 
 ## <a name="alignment-to-the-methodology"></a>方法論に足並みを揃える
 
