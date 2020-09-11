@@ -1,18 +1,18 @@
 ---
 title: Azure サーバー管理サービスの概要
-description: お使いの環境でサーバー管理サービスをデプロイするために、Azure のクラウド導入フレームワークのこのセクションで提供される規範的な計画について説明します。
+description: お使いの環境でサーバー管理サービスをデプロイするために提供される、クラウド導入フレームワークの規範的な計画について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e39f1e1589374b438009f423aadf0195837e5cb
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: d39d31dd5c8a8a280deb23be9962835bdaa318b6
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785448"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604127"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Azure サーバー管理サービスの概要
 

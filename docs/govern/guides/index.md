@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f06cc7fed7db0cf4fafb792accc1077ea84e7a7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a39440dff04e267a80fa085dfdf6c565d33762cb
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880596"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604846"
 ---
 # <a name="cloud-governance-guides"></a>クラウド ガバナンス ガイド
 
@@ -41,14 +41,9 @@ ms.locfileid: "88880596"
 
 ガバナンス体験を始めるには、次の 2 つのオプションのいずれかを選択します。 オプションは、架空の顧客経験に基づいています。 ナビゲーションを容易にするため、タイトルは企業の複雑さに基づいています。 決定はより複雑になる可能性があります。 次の表では、2 つのオプションの違いの概要を示します。
 
-<!-- TODO: Refactor VDC content below. -->
-<!-- docutune:casing "Azure Virtual Datacenter" -->
-
 > [!WARNING]
-> より堅牢なガバナンスの開始点が必要になることがあります。 そのような場合は、[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)を検討してください。 CAF エンタープライズ規模のランディング ゾーンのアプローチは、1,000 を超える資産 (インフラストラクチャ、アプリ、またはデータ資産) をクラウドでホストするという中期目標 (24 か月以内) を設けている導入チームに焦点を当てています。 CAF エンタープライズ規模のランディング ゾーンは、このような大規模なクラウド導入の取り組みにおける複雑なガバナンス シナリオの事実上の選択となります。
-
-<!-- markdownlint-disable MD028 -->
-
+> より堅牢なガバナンスの開始点が必要になることがあります。 そのような場合は、[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)を検討してください。 このアプローチは、1,000 を超える資産 (インフラストラクチャ、アプリ、またはデータ) をクラウドでホストするという中期目標 (24 か月以内) を設けている導入チームに焦点を当てています。 CAF エンタープライズ規模のランディング ゾーンは、大規模なクラウド導入の取り組みにおける複雑なガバナンス シナリオの典型的な選択です。
+<!-- -->
 > [!NOTE]
 > どちらのガイドも、ユーザーの実際の状況と完全には一致していない可能性があります。 どちらか近い方のガイドを選択し、開始点として使用してください。 ガイド全体を通して、特定の条件を満たすよう決定をカスタマイズするのに役立つ追加情報が提供されます。
 
@@ -69,11 +64,13 @@ ms.locfileid: "88880596"
 | ネットワーク | WAN なし、または 1 &ndash; 2 つの WAN プロバイダー | 複雑なネットワークまたはグローバル WAN |
 | ID | 単一フォレスト、単一ドメイン。 | 複雑、複数フォレスト、複数ドメイン。 |
 
+<!-- docutune:casing "Cost Management" "Security Baseline" -->
+
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>クラウド ガバナンスを段階的に改善した後の求められる将来の状態
 
 | State | 標準的な組織 | 複雑な企業 |
 |---|---|---|
-| コスト管理: クラウド アカウンティング | ショーバック モデル。 課金は IT で集中管理される。 | チャージバック モデル。 課金は、IT 調達全体に分散できる。 |
+| Cost Management: クラウド アカウンティング | ショーバック モデル。 課金は IT で集中管理される。 | チャージバック モデル。 課金は、IT 調達全体に分散できる。 |
 | セキュリティ ベースライン: 保護されたデータ | 会社の財務データと IP。 制限された顧客データ。 サード パーティのコンプライアンス要件はない。 | 顧客の財務と個人データの複数のコレクション。 サード パーティのコンプライアンスの考慮が必要な場合がある。 |
 
 ## <a name="caf-enterprise-scale-landing-zone"></a>CAF エンタープライズ規模のランディング ゾーン

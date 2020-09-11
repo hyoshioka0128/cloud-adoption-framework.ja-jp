@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f5b066eed95a2fbe3ac17cb0b2e00cbdf5263a04
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0b7f0baee83afa1e0765a7855b44d9da1c17eec8
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880613"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604826"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準的な企業のガバナンス ガイド
 
@@ -71,9 +71,9 @@ MVP では、企業ポリシーを迅速に適用するために、[デプロイ
 
 このガバナンス MVP は、時間をかけたガバナンス プラクティスの改善に使用されます。 導入が進むと、ビジネス上のリスクが増大します。 それらのリスクを管理するため、クラウド導入フレームワーク ガバナンス モデル内のさまざまな規範が変化します。 このシリーズの以降の記事では、架空の企業に影響を与える企業ポリシーの段階的な改善について説明します。 これらの改善は、3 つの規範で発生します。
 
-- コスト管理: 導入が拡大するとき。
-- セキュリティ ベースライン: 保護されたデータがデプロイされるとき。
-- リソースの整合性: IT 運用でミッション クリティカルなワークロードのサポートが始まるとき。
+- Cost Management 規範: 導入がスケーリングするとき。
+- セキュリティ ベースライン規範: 保護されたデータがデプロイされるとき。
+- リソースの整合性規範: IT 運用でミッション クリティカルなワークロードのサポートが始まるとき。
 
 ![増分ガバナンス MVP の例](../../../_images/govern/governance-improvement.png)
 

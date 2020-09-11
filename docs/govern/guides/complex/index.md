@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 963e38ac80d67c1319486bc9cc7e15d9417806a7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0bf289a8c5c4bfc91fe8858c7da8045fd28ce3be
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880987"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604941"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>複雑な企業向けのガバナンス ガイド
 
@@ -75,10 +75,10 @@ MVP では、企業ポリシーを迅速に適用するために、[デプロイ
 
 このガバナンス MVP は、時間をかけたガバナンス プラクティスの段階的な改善に使用されます。 導入が進むと、ビジネス上のリスクが増大します。 それらのリスクを管理するため、クラウド導入フレームワーク ガバナンス モデル内のさまざまな規範が変化します。 このシリーズの以降の記事では、架空の企業に影響を与える企業ポリシーの変化について説明します。 これらの変化は、4 つの分野で発生します。
 
-- ID ベースライン: 物語で移行の依存関係が変化するとき。
-- コスト管理: 導入が拡大するとき。
-- セキュリティ ベースライン: 保護されたデータがデプロイされるとき。
-- リソースの整合性: IT 運用でミッション クリティカルなワークロードのサポートが始まるとき。
+- ID ベースライン規範: 物語で移行の依存関係が変化するとき。
+- Cost Management 規範: 導入がスケーリングするとき。
+- セキュリティ ベースライン規範: 保護されたデータがデプロイされるとき。
+- リソースの整合性規範: IT 運用でミッション クリティカルなワークロードのサポートが始まるとき。
 
 ![増分ガバナンス MVP の例](../../../_images/govern/governance-improvement-large.png)
 
