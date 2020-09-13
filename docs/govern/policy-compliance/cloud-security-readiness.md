@@ -58,7 +58,7 @@ ms.locfileid: "88879916"
 
 **コンプライアンス:**
 
-- [Microsoft セキュリティ センター](https://www.microsoft.com/trust-center)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center)
 - [共通管理ハブ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [クラウド サービス デュー デリジェンス チェック リスト](https://www.microsoft.com/trust-center/compliance/due-diligence-checklist)
 - [地域と国のコンプライアンス](https://www.microsoft.com/trust-center/compliance/regional-country-compliance)
