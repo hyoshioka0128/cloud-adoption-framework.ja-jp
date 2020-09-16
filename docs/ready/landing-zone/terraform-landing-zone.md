@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 25bb59e5f79609536a7a1a6711c94c5ff25fdbd5
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: dd16185c53aaa678f885508e47ef897118a5d7f3
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884795"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605174"
 ---
 <!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -194,7 +194,7 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>はじめに
+## <a name="take-action"></a>アクションの実行
 
 構成を確認した後、Terraform 環境をデプロイする場合と同様に、構成をデプロイできます。 rover を使用することをお勧めします。これは、Windows、Linux、または macOS からデプロイできる Docker コンテナーです。 [ランディング ゾーン](https://github.com/azure/caf-terraform-landingzones)の使用を開始できます。
 

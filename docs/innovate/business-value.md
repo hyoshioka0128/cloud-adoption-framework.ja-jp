@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 712da48bc19fa7db436b3e6fbd29fc549633ec69
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 72435c49c195c7972da348080136ab02ed2e5375
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878539"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604441"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>イノベーションのビジネス価値の合意を築く
 
@@ -43,7 +43,7 @@ ms.locfileid: "88878539"
 
 いずれかのチームが 30 分以内に 4 つの質問すべてに回答できなかった場合は、連携と次のセクションの考慮事項が、この取り組みや他の取り組みに大きな影響を与える可能性があります。 次の各セクションに細心の注意を払ってください。
 
-<!-- docsTest:casing "Strategy, Plan, Ready, and Adopt" -->
+<!-- docutune:casing "Strategy, Plan, Ready, and Adopt" -->
 
 ## <a name="address-the-big-picture-first"></a>最初に大局的見地に対処する
 

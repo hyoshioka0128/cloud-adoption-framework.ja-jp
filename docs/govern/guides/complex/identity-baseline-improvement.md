@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 333130bd1af49833dd396351bc7feb0e7f12e48b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5d2bfab7d5a7cea52d249d0bd2ed386e0dbcdae4
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880919"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604923"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善
 
@@ -24,7 +24,7 @@ ms.locfileid: "88880919"
 2 つのデータセンターのクラウドへの移行に関する業務上の正当な理由は、CFO によって承認されました。 技術的実現可能性の調査時に、いくつかの障害が検出されました。
 
 - 保護されたデータおよびミッション クリティカルなアプリケーションについては、2 つのデータセンターのワークロードが 25% と示されています。 機微な個人データとミッション クリティカルなアプリケーションに関する現在のガバナンス ポリシーが最新化されるまで、いずれも除去できません。
-- これらのデータセンター内の 7% の資産がクラウドと互換性がありません。 これらは、データセンターの契約が終了する前に、代替データセンターに移動されます。
+- これらのデータセンター内の資産の 7% はクラウドと互換性はありません。 これらは、データセンターの契約が終了する前に、代替データセンターに移動されます。
 - データセンター内の資産の 15% (750 台の仮想マシン) は、レガシ認証またはサード パーティの多要素認証に依存しています。
 - 既存のデータセンターと Azure を接続する VPN 接続では、2 年のタイムライン内で大量の資産を移行し、データセンターを廃止するために十分なデータ転送速度や待機時間は提供されません。
 

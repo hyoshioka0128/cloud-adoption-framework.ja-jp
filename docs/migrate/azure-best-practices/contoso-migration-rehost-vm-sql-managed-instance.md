@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 25457c039c6542f1d1767839cfb7a04195c347a0
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: da6c543bf16434bf0228df3a1bcac163ef1fe4ab
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877978"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602589"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 

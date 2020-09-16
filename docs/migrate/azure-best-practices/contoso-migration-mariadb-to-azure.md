@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 8c3d172c2b86ea37cc9c4f9f431c833afa60cf82
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 650b41a6f27c4343422f0d185f2f3255b5f7a42d
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882126"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605026"
 ---
 <!-- cSpell:ignore  mysqldump Navicat phpMyAdmin -->
 

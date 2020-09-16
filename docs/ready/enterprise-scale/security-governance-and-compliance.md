@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d81b17fb8429fe058856f049c7ab491e7cab504f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4aedbeddc5b8376871f73862ef4121302e2696a1
+ms.sourcegitcommit: 34346be9ec66c64d6d7ae24651adbbec1fdbf985
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884761"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90534189"
 ---
 # <a name="enterprise-scale-security-governance-and-compliance"></a>エンタープライズ規模のセキュリティ ガバナンスとコンプライアンス
 
@@ -184,6 +184,15 @@ Azure を採用する場合には、正常なセキュリティ体制を維持�
 - 必要に応じて、Azure プラットフォームにアクセスするためのゼロ信頼アプローチを実装します。
 
 <!-- docsTest:ignore "and conditional access" -->
+
+## <a name="azure-security-benchmarks"></a>Azure セキュリティ ベンチマーク
+
+Azure セキュリティ ベンチマークには、Azure で使用するほとんどのサービスをセキュリティで保護するために使用できる、影響力の高いセキュリティに関する推奨事項のコレクションが含まれています。 これらの推奨事項は、ほとんどの Azure サービスに適用できるため、"一般的" または "組織的" と考えることができます。 Azure セキュリティ ベンチマークの推奨事項は Azure サービスごとにカスタマイズされ、このカスタマイズされたガイダンスがサービスの推奨事項に関する記事に含まれています。
+
+Azure セキュリティ ベンチマークのドキュメントでは、セキュリティ コトロールとサービスに関するレコメンデーションを規定しています。
+
+- [セキュリティ コントロール](https://docs.microsoft.com/azure/security/benchmarks/overview): Azure セキュリティ ベンチマークの推奨事項は、セキュリティ コントロール別に分類されています。 セキュリティ コントロールは、ネットワーク セキュリティやデータ保護など、ベンダーに依存しない高度なセキュリティ要件を表します。 各セキュリティ コントロールには、これらのレコメンデーションを有効にするための一連のセキュリティに関する推奨事項と指示内容があります。
+- [サービスの推奨事項](https://docs.microsoft.com/azure/security/benchmarks/security-baselines-overview)Azure サービスに対するベンチマークのレコメンデーションが利用できる場合、そこにはサービスに合わせて調整された Azure セキュリティ ベンチマークの推奨事項と、特定のサービスに固有のその他の推奨事項が含まれます。
 
 ## <a name="service-enablement-framework"></a>サービスの有効化フレームワーク
 

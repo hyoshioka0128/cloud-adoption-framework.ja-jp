@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea215de1bb9c41536c5bf666d20b6f1b41bb5871
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5ebf8106cee793e674070e88c8c4f36e77858079
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882857"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604237"
 ---
 <!-- cSpell:ignore autoscaler Istio Linkerd -->
 
@@ -30,7 +30,7 @@ ms.locfileid: "88882857"
 > - Kubernetes アプリケーションの開発をサポートするためのプロジェクト フォルダーの構造はどのようにしますか?
 > - アプリケーションの状態、構成、およびストレージの要件を特定しましたか?
 
-<!-- docsTest:casing "AAD Pod Identity -->
+<!-- docutune:casing "AAD Pod Identity" -->
 
 > [!div class="tdCol2BreakAll"]
 >
@@ -74,7 +74,7 @@ ms.locfileid: "88882857"
 > - 横断的なアプリケーションの問題はアプリケーションから抽象化されていますか?
 > - 新しい機能やバージョンを繰り返し適用する一方で、システムとアプリケーションの信頼性を維持できますか?
 
-<!-- docsTest:casing Consul -->
+<!-- docutune:casing Consul -->
 
 > [!div class="tdCol2BreakAll"]
 >

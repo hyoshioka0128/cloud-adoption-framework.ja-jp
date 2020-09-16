@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 200fb15bf84ce24a88a25e0c39c35859bd8363b7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5fe9338002a8a1223ad64b81f884d70de9191161
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882874"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604298"
 ---
 <!-- cSpell:ignore ONNX -->
 
@@ -147,7 +147,7 @@ Azure Bot Service の使用を開始するには:
 
 Azure Cognitive Search を使用すると、ドキュメント、画像、メディアなどのコンテンツに潜む分析情報を明らかにすることができます。 コンテンツに含まれるパターンや関係を発見したり、センチメントを理解したり、キー フレーズを抽出したりできます。
 
-<!-- docsTest:ignore "Azure Search" -->
+<!-- docutune:ignore "Azure Search" -->
 
 Azure Cognitive Search では、Bing や Microsoft Office で使用されているものと同じ自然言語スタックが使用されます。 イノベーションに時間をかけ、複雑なクラウド検索ソリューションの保守にかける時間を減らすことができます。
 

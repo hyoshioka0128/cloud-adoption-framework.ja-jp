@@ -1,19 +1,18 @@
 ---
 title: クラウド監視戦略
 description: 効果的なクラウド監視戦略を定義する方法について理解を深めます。
-services: azure-monitor
 author: mgoedtel
 ms.author: magoedte
 ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7849dde3a64d0f788941aa7544525e61d60e697c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 04f051e141ebb849bc3981d0bdf5027092a583bd
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885849"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603660"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -193,7 +192,7 @@ Azure Monitor では、運用をサポートし、ビジネス上の意思決定
 
 <!-- docutune:ignore "Data to Information, Knowledge, and Wisdom" -->
 
-<Sup>1</Sup> DIKW モデルはナレッジ管理に基づいており、アクションと意思決定の構成要素でデータから情報、知識、知恵へと移行する方法を説明するためによく使用される方法です。
+<Sup>1</sup> DIKW モデルはナレッジ管理に基づいており、アクションと意思決定の構成要素でデータから情報、知識、知恵へと移行する方法を説明するためによく使用される方法です。
 
 監視は、Azure で構築するサービスの基礎となります。 戦略では、最新の監視に関する 4 つの規範に対処できます。これにより、実行可能な最小の監視を定義し、手順の信頼性を高めることができます。 ただし、機能をリアクティブからプロアクティブに移行し、その範囲をエンドユーザーに拡張することは、1 つの目標です。
 

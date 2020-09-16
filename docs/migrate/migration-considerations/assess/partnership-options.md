@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1b436a38dddff3aa4451854f8d3d2c58de31fd77
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 711ad79f89cda5364daae00a7721d492dbe52a66
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662236"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605070"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
-# <a name="understand-partnership-options"></a>パートナーシップのオプションを理解する
+# <a name="understand-partnership-and-support-options"></a>パートナーシップとサポート オプションを理解する
 
 移行の間に、クラウド導入チームは実際にクラウドへのワークロードの移行を行います。 [デジタル資産](../../../digital-estate/index.md)を定義したりコア クラウド インフラストラクチャを構築したりするときの共同作業タスクや問題解決タスクとは異なり、移行では一連のタスクを繰り返し実行する傾向があります。 反復的側面が過ぎると、テストやチューニングのような選択したクラウド プロバイダーについて深い知識を必要とする作業があります。 このプロセスの反復的な性質は、パートナーによる作業が最適な場合があり、フルタイム スタッフの負担が軽減されます。 さらに、パートナーであれば、反復的プロセスの実行で異常が発生したときでも、技術的な専門知識を適合させることができる可能性があります。
 

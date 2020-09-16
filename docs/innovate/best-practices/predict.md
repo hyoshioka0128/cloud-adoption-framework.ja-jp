@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c900c19f6d2472ca9166ed8ab856e25f9e328eee
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 34c23f025cb12564338c2c00a5926c27a54c3a5e
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040611"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604496"
 ---
 # <a name="use-innovation-tools-to-predict-and-influence"></a>予測して影響を与えるためのイノベーション ツールの使用
 
@@ -29,4 +29,4 @@ ms.locfileid: "88040611"
 このページの左側の目次に、さまざまな記事がまとめられています。 これらの記事は、各ソリューション領域の使用を開始する際に役立ちます。
 
 > [!NOTE]
-> 一部のリンクでは、Azure 向けのクラウド導入フレームワークの範囲を超えた理解を得る助けとなるよう、このフレームワークには含まれないものも説明されている場合があります。
+> 一部のリンクは、このフレームワークの範囲を超えるために、クラウド導入フレームワークの範囲外になるものもあります。

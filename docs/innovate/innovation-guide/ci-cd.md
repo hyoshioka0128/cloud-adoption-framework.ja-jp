@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bd0ab336f865828a5bca971a76c3c49a8c45243a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 98d5647062e440abbc54da1fc20d99640c9e63a5
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883027"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604321"
 ---
 # <a name="empower-adoption"></a>導入の強化
 
@@ -112,7 +112,7 @@ Azure を利用すると、開発者は最新の標準的なアプリケーシ�
 
 カスタマー エクスペリエンスと基幹業務アプリケーションの活気のあるイノベーションは、すべてのビジネス リーダーにとって最優先事項となっています。 Web、モバイル、IoT、複合現実のどのエクスペリエンスを構築する場合でも、イノベーションは組織の将来の成功の鍵となります。 イノベーションを拡大するには、パートナーと従業員が共有価値の創出に簡単かつ効率的に参加できるように、組織は独自のビジネス価値を構成可能なサービスとしてパッケージ化し、出荷することに注力する必要があります。
 
-<!-- docsTest:casing "spark and scale innovation" -->
+<!-- docutune:casing "spark and scale innovation" -->
 
 Azure には、組織内のイノベーションを活気づかせ、拡大するための独自のオファリングが用意されています。 より多くのイノベーションを促進するために、現在のプロフェッショナルな開発者は、組織内の他の専門家が信頼できる基盤でアプリケーションを構築できるよう、アプリケーションと構成要素を作成できます。 Azure を使用すると、エキスパートのチームが支える徹底的なセキュリティと、エンタープライズ、政府機関、スタートアップから信頼されるプロアクティブなコンプライアンスが手に入ります。
 
