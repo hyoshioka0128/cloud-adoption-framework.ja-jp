@@ -18,7 +18,7 @@ ms.locfileid: "89602848"
 
 # <a name="refactor-an-on-premises-application-to-an-azure-app-service-web-app-and-a-sql-managed-instance"></a>オンプレミス アプリケーションを Azure App Service Web アプリと SQL マネージド インスタンスにリファクターする
 
-この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware 仮想マシン (VM) 上で実行される 2 階層の Windows .NET アプリケーションをリファクターする方法を説明します。 Contoso チームは、アプリケーションのフロントエンド VM を、Azure App Service の Web アプリに移行します。 また、Contoso がアプリケーション データベースを Azure SQL マネージド インスタンスに移行する方法についても説明します。
+この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware 仮想マシン (VM) 上で実行される 2 階層の Windows .NET アプリケーションをリファクターする方法を説明します。 Contoso チームは、アプリケーションのフロントエンド VM を、Azure App Service の Web アプリに移行します。 また、Contoso がアプリケーション データベースを Azure SQL Managed Instance に移行する方法についても説明します。
 
 この例で使用する SmartHotel360 アプリケーションは、オープンソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
 
@@ -87,7 +87,7 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 ### <a name="migration-process"></a>移行プロセス
 
-1. Contoso は、Azure SQL マネージド インスタンスをプロビジョニングし、Azure Database Migration Service を使用して SmartHotel360 データベースをそれに移行します。
+1. Contoso は、Azure SQL Managed Instance をプロビジョニングし、Azure Database Migration Service を使用して SmartHotel360 データベースをそれに移行します。
 1. Contoso では Web アプリをプロビジョニングして構成し、それらに SmartHotel360 アプリケーションをデプロイします。
 
     ![移行プロセスの図。](./media/contoso-migration-refactor-web-app-sql-managed-instance/migration-process.png)
@@ -136,13 +136,13 @@ Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.mic
 
 ## <a name="step-2-set-up-a-sql-managed-instance"></a>手順 2:SQL マネージド インスタンスを設定する
 
-Azure SQL マネージド インスタンスを設定するため、Contoso は次の要件を満たすサブネットを必要としています。
+Azure SQL Managed Instance を設定するため、Contoso は次の要件を満たすサブネットを必要としています。
 
 - サブネットは専用でなければなりません。 また、サブネットは空で他のクラウド サービスを含んでいない必要があります。 サブネットはゲートウェイ サブネットであってはなりません。
 - マネージド インスタンスを作成した後、Contoso は、サブネットにリソースを追加することはできません。
 - サブネットにネットワーク セキュリティ グループを関連付けることはできません。
 - サブネットにはユーザー定義のルート テーブルが必要です。 割り当てられる唯一のルートが `0.0.0.0/0` の次ホップ インターネットである必要があります。
-- 仮想ネットワーク用に省略可能なカスタム DNS が指定されている場合、Azure 内の再帰的なリゾルバーの仮想 IP アドレス `168.63.129.16` をリストに追加する必要があります。 [Azure SQL マネージド インスタンスのカスタム DNS を構成する](/azure/sql-database/sql-database-managed-instance-custom-dns)方法を確認してください。
+- 仮想ネットワーク用に省略可能なカスタム DNS が指定されている場合、Azure 内の再帰的なリゾルバーの仮想 IP アドレス `168.63.129.16` をリストに追加する必要があります。 [Azure SQL Managed Instance のカスタム DNS を構成する](/azure/sql-database/sql-database-managed-instance-custom-dns)方法を確認してください。
 - サブネットにサービス エンドポイント (ストレージまたは SQL) を関連付けることはできません。 仮想ネットワークではサービス エンドポイントを無効にする必要があります。
 - サブネットには 16 個以上の IP アドレスが必要です。 [マネージド インスタンス サブネットのサイズを指定する](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)方法を確認してください。
 - Contoso のハイブリッド環境では、カスタム DNS 設定が必要です。 Contoso は、自社の 1 つ以上の Azure DNS サーバーを使用するように DNS 設定を構成します。 [DNS のカスタマイズの詳細については、こちらを参照してください](/azure/sql-database/sql-database-managed-instance-custom-dns)。
@@ -421,4 +421,4 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
 ## <a name="conclusion"></a>まとめ
 
-この記事の中で、Contoso は、アプリケーションのフロントエンド VM を 2 つの Azure App Service Web アプリに移行して、Azure に SmartHotel360 アプリケーションをリファクターしました。 アプリケーション データベースが Azure SQL マネージド インスタンスに移行されました。
+この記事の中で、Contoso は、アプリケーションのフロントエンド VM を 2 つの Azure App Service Web アプリに移行して、Azure に SmartHotel360 アプリケーションをリファクターしました。 アプリケーション データベースが Azure SQL Managed Instance に移行されました。
