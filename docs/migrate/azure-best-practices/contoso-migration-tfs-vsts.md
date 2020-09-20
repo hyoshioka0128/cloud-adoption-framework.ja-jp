@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Services に Team Foundation Server の展開をリファクターする
+title: Team Foundation Server のデプロイを Azure DevOps Services にリファクタリングする
 description: Azure 向けのクラウド導入フレームワークを使用し、オンプレミスの Team Foundation Server デプロイを Azure の Azure DevOps Services に移行してリファクターする方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -16,7 +16,7 @@ ms.locfileid: "89602989"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
-# <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Azure DevOps Services に Team Foundation Server の展開をリファクターする
+# <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Team Foundation Server のデプロイを Azure DevOps Services にリファクタリングする
 
 この記事では、架空の会社である Contoso がオンプレミスの Visual Studio Team Foundation Server のデプロイを、Azure の Azure DevOps Services に移行することでリファクターする方法について説明します。 Contoso の開発チームは、過去 5 年間、チームのコラボレーションとソース管理に Team Foundation Server を使用してきました。 現在は、クラウドベースのソリューションに移行して、開発やテストの作業とソース管理を行いたいと考えています。 Contoso チームが Azure DevOps モデルに移行し、新しいクラウドネイティブ アプリケーションを開発する際に、Azure DevOps Services が役立ちます。
 
