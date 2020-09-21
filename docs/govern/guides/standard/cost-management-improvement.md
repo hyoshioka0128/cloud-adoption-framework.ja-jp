@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 496065642e8bbd212cc9cf5a24597e489b24a6ca
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c6a53233fa469bcb75d2c2478614acf9487dd2fb
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880511"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604804"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準的な企業のガバナンス ガイド:コスト管理の規範の改善
 
@@ -21,7 +21,7 @@ ms.locfileid: "88880511"
 
 ## <a name="advancing-the-narrative"></a>物語を進める
 
-導入は、ガバナンス MVP で定義されているコストの許容範囲指標を以上に拡大しました。 これは "ディザスター リカバリー" 用データ センターからの移行に対応しているため、良いことです。 今回は支出の増加が、クラウド ガバナンス チームが時間をかける理由となっています。
+導入は、ガバナンス MVP で定義されているコストの許容範囲指標を以上に拡大しました。 これは、ディザスター リカバリー用データ センターからの移行に対応しているため、良いことです。 今回は支出の増加が、クラウド ガバナンス チームが時間をかける理由となっています。
 
 ### <a name="changes-in-the-current-state"></a>現在の状態の変化
 

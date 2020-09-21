@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bf5a02b6996c5ff71d4c12041142655223c5cce8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ebd9decfb10f4ff0917d1c7020569a2f63777018
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884965"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605069"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -129,7 +129,7 @@ Azure Cost Management と Billing は Azure Advisor と連携して、コスト�
 ::: zone target="docs"
 
 - [チュートリアル:推奨事項に従ってコストを最適化する](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
-- [Azure の課金とコスト管理で予想外の料金を防ぐ](/azure/billing/billing-getting-started)
+- [Azure Cost Management と Billing で予想外の料金を防ぐ](/azure/billing/billing-getting-started)
 - [コスト分析を使用してコストを調査および分析する](/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

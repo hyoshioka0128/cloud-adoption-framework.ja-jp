@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 64c3b510f07f7bee7648a00615f0dc45947cb9df
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 8d3562e210461882e363707ec708275e85926a4b
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880800"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604878"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雑な企業向けのガバナンス ガイド: ベスト プラクティスの説明
 
@@ -25,9 +25,7 @@ ms.locfileid: "88880800"
 
 いくつかのシンプルな原則とクラウド ベースの管理ツールにより、ガバナンスと企業ポリシーの迅速な導入を実現できます。 これらは、ガバナンス プロセスでのアプローチに対する 3 つのガバナンス規範の最初のものです。 この記事では、各規範についてさらに詳しく説明します。
 
-<!-- docutune:casing "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
-
-開始点を確立するため、この記事では、すべての導入に対する基盤となるガバナンス MVP を作成するために必要な ID ベースライン、セキュリティ ベースライン、デプロイ高速化規範の背後にある高レベルの戦略について説明します。
+開始点を確立するため、この記事では、ガバナンス MVP を作成するために必要なセキュリティ ベースライン、ID ベースライン、デプロイ高速化規範の背後にある高レベルの戦略について説明します。 MVP は、すべてのクラウド導入の基盤として機能します。
 
 ![増分ガバナンス MVP の例](../../../_images/govern/governance-mvp.png)
 

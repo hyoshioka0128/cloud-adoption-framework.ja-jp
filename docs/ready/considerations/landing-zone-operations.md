@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 15271c7e74881f671715d832eb4f07e63de23063
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 46c56b2518578261396588e8f142521fe8159a53
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884829"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603975"
 ---
 # <a name="improve-landing-zone-operations"></a>ランディング ゾーンの運用の改善
 
@@ -37,7 +37,7 @@ ms.locfileid: "88884829"
 [管理手法](../../manage/index.md)では、運用管理能力を構築するための全体的なガイダンスを提供します。[管理手法](../../manage/index.md)に関するページを参照してください。 この手法の基本構造と、その手法の次の手順を使用して、ランディング ゾーンの運用とすべてのランディング ゾーンでの運用を改善します。
 
 ![管理手法](../../_images/manage/caf-manage.png)
-_図 1: CAF 管理手法。_
+_図 1: クラウド導入フレームワークの管理手法。_
 
 1. [管理ベースラインの確立](../../manage/azure-server-management/index.md):管理ベースラインは、運用管理の基礎となります。 初期の運用を改善するためには、この最初のステップの下にあるガイダンスがどのランディング ゾーンにも当てはまります。
 2. [ビジネス コミットメントの定義](../../manage/considerations/business-alignment.md):ランディング ゾーン内の各ワークロードの重要度と影響を理解することで、すべてのランディング ゾーンの継続的な管理の向上のための "完了の定義" が確立されます。 このプロセスでは、各ワークロードの信頼性、パフォーマンス、および運用の要件も特定されます。

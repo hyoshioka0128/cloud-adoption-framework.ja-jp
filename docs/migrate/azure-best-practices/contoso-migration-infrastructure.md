@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: b4189711fcc062e54afb673b8a4b6973687935f2
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b044c86618ccafbfe69106a5f3c7e7d53db68fce
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882738"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605225"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -21,7 +20,7 @@ ms.locfileid: "88882738"
 
 この記事では、架空の会社 Contoso がそのオンプレミス インフラストラクチャを移行のために準備し、移行に備えて Azure インフラストラクチャを設定した後、ハイブリッド環境でビジネスを実行する方法を示します。
 
-この例を参考に貴社独自のインフラストラクチャの移行作業を計画される場合は、記載されているサンプル アーキテクチャが Contoso に固有のものであることに注意してください。 サブスクリプション設計またはネットワーク アーキテクチャに関するインフラストラクチャの重要な決定を行う場合は、ご自身の組織のビジネス ニーズ、構造、技術的な要件を確認してください。
+この例を参考に貴社独自のインフラストラクチャの移行作業を計画される場合は、記載されているサンプル アーキテクチャが Contoso に固有のものであることに注意してください。 サブスクリプション設計またはネットワーク アーキテクチャに関するインフラストラクチャの重要な決定を行う場合は、組織のビジネス ニーズ、構造、技術的な要件を確認してください。
 
 この記事で説明されている要素がすべて必要かどうかは移行戦略によって異なります。 たとえば、Azure でクラウドネイティブ アプリケーションだけを構築する場合は、それほど複雑なネットワーク構造は必要ありません。
 

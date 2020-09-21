@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL データベースを Microsoft Azure に移行する
+title: PostgreSQL データベースを Azure に移行する
 description: Contoso が、オンプレミスの PostgreSQL データベースを Azure にどのように移行したかについて説明します。
 author: deltadan
 ms.author: abuck
@@ -7,17 +7,16 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 35fdbcf69fc4e86f4f785bd871082b974b1f6203
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 9f9dfee1aca21acbbf0f840b79d61501ad90c73a
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882143"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603870"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
-# <a name="migrate-postgresql-databases-to-microsoft-azure"></a>PostgreSQL データベースを Microsoft Azure に移行する
+# <a name="migrate-postgresql-databases-to-azure"></a>PostgreSQL データベースを Azure に移行する
 
 この記事では、Contoso という架空の会社が、オンプレミスの PostgreSQL オープンソース データベース プラットフォームの Azure への移行をどのように計画し、実行したかについて説明します。
 

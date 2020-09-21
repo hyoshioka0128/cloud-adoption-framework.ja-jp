@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c6351e1e6de0db3247b584d914ea3b5c5e842e68
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 54d35e4b895961eb290de9ab151fa1332bb0bc8d
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884336"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603323"
 ---
 # <a name="get-started-manage-cloud-costs"></a>作業を開始しましょう。クラウド コストを管理する
 
@@ -201,4 +201,4 @@ Azure 用の Microsoft クラウド導入フレームワークの準備手法で
 
 ## <a name="value-statement"></a>バリュー ステートメント
 
-これらの手順に従うことで、[コスト志向の組織を構築する](../organize/cost-conscious-organization.md)ことができます。 組織が共有所有権を使用し、適切なタイミングで適切なチームと共同作業を行う場合に、コスト最適化を実装しやすくなります。
+これらの手順に従うことで、[コスト意識の高い組織を構築する](../organize/cost-conscious-organization.md)ことができます。 共有所有権を使用し、適切なタイミングで適切なチームとのコラボレーションを促進することにより、コストの最適化を簡素化します。

@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5e5988e2a75c5cc83f7145abb91feb3492bbe4dd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1f315f1c07ce381043b5f338fd7602678908cb63
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575181"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602239"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -84,7 +84,13 @@ ms.locfileid: "88575181"
 
 ネットワーク トポロジは、アプリケーションの相互通信方法が定義されているため、エンタープライズ規模のアーキテクチャの重要な要素です。 このセクションでは、エンタープライズ Azure デプロイのためのテクノロジとトポロジのアプローチについて説明します。 2 つの主要なアプローチである、Azure Virtual WAN に基づくトポロジと従来のトポロジに焦点を当てます。
 
-Azure Virtual WAN に基づくネットワーク トポロジは、大規模なマルチリージョンのデプロイに適したエンタープライズ規模のアプローチであり、グローバルに広がる拠点を Azure とオンプレミスの両方に接続する必要がある組織にお勧めです。 Azure と完全に統合されたソフトウェアによる WAN (SD-WAN) のデプロイを組織で使用するときは常に、Virtual WAN のネットワーク トポロジも使用する必要があります。 Virtual WAN は、大規模な相互接続の要件を満たすために使用されます。 Microsoft の管理サービスであるため、ネットワークの全体的な複雑さが軽減され、組織のネットワークの近代化にも役立ちます。
+次のいずれかに該当する場合は、Azure Virtual WAN に基づくネットワーク トポロジを使用します。
+
+- 組織は、複数の Azure リージョンにリソースをデプロイすることを予定しており、Azure とオンプレミスの両方にグローバルな場所から接続する必要がある。
+- 組織は、Azure と完全に統合されたソフトウェアによる WAN (SD-WAN) デプロイを使用することを予定している。
+- 1 つの Azure Virtual WAN ハブに接続されたすべての VNet で最大 2,000 の仮想マシン ワークロードをデプロイすることを予定している。
+
+Virtual WAN は、大規模な相互接続の要件を満たすために使用されます。 Microsoft の管理サービスであるため、ネットワークの全体的な複雑さが軽減され、組織のネットワークの近代化にも役立ちます。
 
 次のいずれかに該当する場合は、従来の Azure ネットワーク トポロジを使用します。
 
@@ -128,6 +134,8 @@ Azure Virtual WAN に基づくネットワーク トポロジは、大規模な�
 
 - すべての仮想ハブにはルーターが存在するため、Standard Virtual WAN の仮想ネットワーク間でトランジット接続が有効になります。 各仮想ハブ ルーターは、最大 50 Gbps の集約スループットをサポートしています。
 
+- すべての VNet で最大 2,000 の VM ワークロードを 1 つの Virtual WAN ハブに接続できます。
+
 - Virtual WAN は、さまざまな [SD-WAN プロバイダー](/azure/virtual-wan/virtual-wan-locations-partners)と統合されています。
 
 - 多くの管理サービス プロバイダーから、Virtual WAN 向けの[管理サービス](/azure/networking/networking-partners-msp)が提供されています。
@@ -142,7 +150,7 @@ Azure Virtual WAN に基づくネットワーク トポロジは、大規模な�
 
 **設計上の推奨事項:**
 
-- Azure における新しい大規模なネットワーク デプロイまたはグローバルなネットワーク デプロイで、Azure リージョンとオンプレミスの場所の間でのグローバルなトランジット接続が必要な場合は、Virtual WAN を強くお勧めします。 そのようにすると、Azure ネットワークに対して推移的なルーティングを手動で設定する必要がありません。
+- Azure リージョンとオンプレミスの場所にわたってグローバルなトランジット接続を必要とする、Azure での新しく大規模な、またはグローバルなネットワーク デプロイには Virtual WAN をお勧めします。 そのようにすると、Azure ネットワークに対して推移的なルーティングを手動で設定する必要がありません。
 
   次の図では、ヨーロッパと米国にデータセンターが分散している、グローバルなエンタープライズのデプロイの例を示します。 そのデプロイでは、両方のリージョンに多数のブランチ オフィスもあります。 環境は、Virtual WAN と ExpressRoute Global Reach によってグローバルに接続されています。
 
@@ -175,6 +183,8 @@ Azure Virtual WAN に基づくネットワーク トポロジは、大規模な�
 - 接続サブスクリプション内に Azure Virtual WAN リソースと Azure Firewall リソースを作成します。
 
 - Virtual WAN の仮想ハブごとに、500 より多くの仮想ネットワーク接続を作成しないでください。
+
+- デプロイを慎重に計画し、ネットワーク アーキテクチャが [Azure Virtual WAN の制限](/azure/azure-resource-manager/management/azure-subscription-service-limits#virtual-wan-limits)内であることを確認します。
 
 ## <a name="traditional-azure-networking-topology"></a>従来の Azure ネットワーク トポロジ
 
@@ -288,7 +298,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 **設計上の考慮事項:**
 
-- Azure ExpressRoute では、オンプレミスの場所から Microsoft Azure のサービスとしてのインフラストラクチャ (IaaS) 機能およびサービスとしてのプラットフォーム (PaaS) 機能に対する専用のプライベート接続が提供されています。
+- Azure ExpressRoute は、オンプレミスの場所から Azure のサービスとしてのインフラストラクチャ (IaaS) およびサービスとしてのプラットフォーム (PaaS) 機能への専用プライベート接続を提供します。
 
 - Private Link を使用して、プライベート ピアリングによる ExpressRoute 経由で PaaS サービスへの接続を確立できます。
 
@@ -301,11 +311,11 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 - ExpressRoute Direct では、ExpressRoute Direct のポート容量 (10 Gbps または 100 Gbps) まで、追加コストなしで複数の ExpressRoute 回線を作成することができます。 また、Microsoft の ExpressRoute ルーターに直接接続することもできます。 100 Gbps SKU の場合、最小の回線帯域幅は 5 Gbps です。 10 Gbps SKU の場合、最小の回線帯域幅は 1 Gbps です。
 
 <!-- cSpell:ignore prepending -->
-<!-- docsTest:ignore "AS PATH prepending -->
+<!-- docsTest:ignore "AS PATH prepending" -->
 
 **設計上の推奨事項:**
 
-- オンプレミス ネットワークを Microsoft Azure に接続するためのプライマリ接続チャネルとして、ExpressRoute を使用します。 VPN をバックアップ接続のソースとして使用して、接続の回復性を高めることができます。
+- オンプレミス ネットワークを Azure に接続するためのプライマリ接続チャネルとして、ExpressRoute を使用します。 VPN をバックアップ接続のソースとして使用して、接続の回復性を高めることができます。
 
 - オンプレミスの場所を Azure の仮想ネットワークに接続するときは、異なるピアリングの場所からのデュアル ExpressRoute 回線を使用します。 このようにセットアップすると、オンプレミスと Azure の間に単一障害点がなくなり、Azure への冗長なパスが確保されます。
 

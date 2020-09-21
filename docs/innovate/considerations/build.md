@@ -7,14 +7,14 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 50c1963289ca28618501407d583e47ee40604f4a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 71bb643a71f984fc9eb6b6b872f7ad6cd8890a54
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878318"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604359"
 ---
-<!--docsTest:casing "Oxford English Dictionary" -->
+<!-- docutune:casing "Oxford English Dictionary" -->
 
 # <a name="build-with-customer-empathy"></a>顧客の共感を構築する
 
@@ -26,7 +26,7 @@ ms.locfileid: "88878318"
 
 ## <a name="how-to-build-with-empathy"></a>共感を構築する方法
 
-計画は、本質的に想定を定義する際の演習です。 計画を多く立てるほど、優れたアイデアの基盤となる想定が増えます。 想定は、自己への共感から生まれる傾向にあります。 言い換えると、"自分がこの立場だったら、何を望むだろうか" ということです。 構築フェーズから開始すると、想定がソリューションに入り込む期間が最短になります。 また、このアプローチでは、実際の顧客とのフィードバック ループが加速され、早期に共感を学んで研ぎ澄ませる機会のきっかけになります。
+想定を定義することは、計画の基本部分です。 計画を多く立てるほど、優れたアイデアの基盤となる想定が増えます。 通常、想定は自己への共感から生まれます。 言い換えると、"_自分がこの立場だったら、何を望むだろうか_" ということです。 構築フェーズから開始すると、想定がソリューションに入り込む期間が最短になります。 また、このアプローチでは、実際の顧客とのフィードバック ループが加速され、早期に共感を学んで研ぎ澄ませる機会のきっかけになります。
 
 > [!CAUTION]
 > 構築対象を適切に定義することは難しい場合があるため、何らかの演習が必要です。 あまりにも短時間で構築すると、顧客のニーズを反映していない可能性があります。 初期の顧客のニーズとソリューションの要件を理解するために時間がかかりすぎると、何かを構築する機会を得る前に、市場によってそれらが満たされるかもしれません。 いずれのシナリオでも、学ぶ機会は大幅に遅れるか、減る可能性があります。 場合によっては、データが破損する可能性もあります。

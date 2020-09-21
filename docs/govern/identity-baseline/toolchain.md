@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1caae91280f2782a4bd4e5a3c4a8ad331dd9a03
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 835cb15479de8cc0303a7dd4c1298ab5f8e606a2
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880052"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604710"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -48,7 +48,7 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 
 この方法を選択した場合、Azure AD では、別の信頼された認証システム (オンプレミスの Active Directory フェデレーション サービス (AD FS) や信頼できるサード パーティのフェデレーション プロバイダーなど) に、ユーザーのパスワードを検証する認証プロセスが渡されます。
 
-組織に最適なソリューションの選択に役立つデシジョン ツリーについては、[Azure Active Directory 用の適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn)に関する記事を参照してください。
+組織にとって最適なソリューションの選択に役立つデシジョン ツリーについては、[Azure Active Directory 用の適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn)に関する記事を参照してください。
 
 次の表は、この規範をサポートするポリシーとプロセスを成熟させるのに役立つネイティブ ツールの一覧です。
 

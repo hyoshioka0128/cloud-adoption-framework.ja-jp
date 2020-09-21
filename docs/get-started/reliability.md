@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 448e98d06a79f9683996a8db946bf52b0c8e8cdd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e276ce6c1fd03afadb757f68471684df48f6d310
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884234"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603175"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>作業を開始しましょう。適切な管理によって信頼性を向上させる
 
@@ -136,7 +136,7 @@ ms.locfileid: "88884234"
 
 ## <a name="step-5-implement-landing-zone-best-practices"></a>手順 5:ランディング ゾーンのベスト プラクティスを導入する
 
-Azure のクラウド導入フレームワークの準備方法では、クラウドでワークロードをホストするランディング ゾーンの開発に重点を置いています。 ランディング ゾーンの導入中は、運用に影響を及ぼすさまざまな意思決定が生じます。 ランディング ゾーンを見直して、よりよい運用を実現するために、クラウド運用チームに助言を求めます。 また、ランディング ゾーンの設計に影響を及ぼす可能性のあるリソースの整合性ポリシーと設計ガイダンスに対する理解を深めるために、クラウド ガバナンス チームにも助言を求めます。
+クラウド導入フレームワークの "準備" 手法では、クラウドでワークロードをホストするランディングゾーンの開発に重点を置いています。 ランディング ゾーンの導入中は、運用に影響を及ぼすさまざまな意思決定が生じます。 ランディング ゾーンを見直して、よりよい運用を実現するために、クラウド運用チームに助言を求めます。 また、ランディング ゾーンの設計に影響を及ぼす可能性のあるリソースの整合性ポリシーと設計ガイダンスに対する理解を深めるために、クラウド ガバナンス チームにも助言を求めます。
 
 **成果物:**
 

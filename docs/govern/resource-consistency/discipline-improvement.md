@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 21f760fb9550f540b4b88f2f7ec098be7cf4307e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7ed4d7cf129cf3e8938288edc558f82bcc2bdf61
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879405"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604693"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>リソースの整合性の規範の改良
 
@@ -21,9 +21,9 @@ ms.locfileid: "88879405"
 
 この記事では、会社の "リソースの整合性" 規範をより適切に発展させ成熟させていくために取り入れることができる、タスクの候補の概要を示します。 これらのタスクは、クラウド ソリューション実装の計画、構築、導入、および運用フェーズに分類できます。これらのフェーズは繰り返され、[クラウド ガバナンスへの増分アプローチ](../guides/index.md#an-incremental-approach-to-cloud-governance)を開発できるようになります。
 
-![導入の 4 つのフェーズ](../../_images/govern/adoption-phases.png)
+![クラウド ガバナンスに対する増分型アプローチのフェーズ](../../_images/govern/adoption-phases.png)
 
-"*図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。*
+"*図 1:クラウド ガバナンスに対する増分型アプローチのフェーズ。* "
 
 1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、段階的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、"リソースの整合性" 規範を向上させるためにこれらのアクティビティにどれだけ投資するかを決定する必要があります。
 

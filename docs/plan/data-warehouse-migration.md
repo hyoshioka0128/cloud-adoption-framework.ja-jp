@@ -7,12 +7,12 @@ ms.date: 06/24/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 24251d19a94af8a53c2fbd2e8ae2e5116d9812f3
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 3dc4b921e8c2ffc1dd020274b9f6dbe53e700507
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86452736"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605217"
 ---
 <!-- cSpell:ignore Informatica gzipped Attunity -->
 
@@ -88,7 +88,7 @@ ms.locfileid: "86452736"
 
 - Azure Blob Storage への AzCopy。
 - 圧縮されたデータを Azure に直接転送するための Microsoft Azure ExpressRoute。
-- Microsoft Azure Data Box へのファイルのエクスポート。
+- Azure Data Box へのファイルのエクスポート。
 
 これらのオプションの選択に影響を与える主な要因は、データ ボリュームのサイズ (テラバイト) とネットワーク速度 (Mbps) です。 ネットワーク経由でデータを移行するのにかかる時間を決定するには計算が必要です。そのとき、データがデータ ウェアハウスでは圧縮されていて、エクスポート時には圧縮されなくなる可能性があることを考慮します。 このような状況では、データ転送が遅くなることがあります。 上記のいずれかの方法でデータを移動するときに、gzip を使用してデータを再圧縮します。 PolyBase では、gzip で圧縮されたデータを直接処理できます。
 データ ボリュームが多く、データの移動に時間がかかりすぎる場合は、Azure Data Box 経由で移行する場合があります。

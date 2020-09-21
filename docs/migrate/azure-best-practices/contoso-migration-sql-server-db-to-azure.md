@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: ba0d366ddd36fa8f57c0d57ca8343590fe39e124
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a9cc63ee3c47ddb347948aa55b49212ff0775344
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877451"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602228"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 

@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 34c8ca965ff323595b7ac0f38814168b646b3ed3
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 6a7d911677e9496119e1abcfbc97d13bd660c941
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776416"
 ---
 # <a name="start-with-cloud-adoption-framework-enterprise-scale-landing-zones"></a>クラウド導入フレームワークのエンタープライズ規模ランディング ゾーンから開始する
 
@@ -42,7 +42,7 @@ ms.locfileid: "88040815"
 
 ## <a name="community"></a>コミュニティ
 
-<!-- docsTest:ignore "Cloud Solutions Unit" -->
+<!-- docutune:ignore "Cloud Solutions Unit" -->
 
 このガイドは、主に Microsoft のアーキテクト、および幅広いクラウド ソリューション ユニットのテクニカル コミュニティによって開発されています。 このコミュニティでは、このガイドを積極的に展開して、エンタープライズ規模の導入作業で学んだ教訓を共有しています。
 

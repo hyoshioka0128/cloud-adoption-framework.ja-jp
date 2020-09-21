@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5dca866a7d948caa59bba7981fc3569f7a10f47d
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 7a939f9c6df449421685e8eb38c81cf2c57006b4
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479529"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603914"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>ランディング ゾーン用のテスト駆動開発 (TDD)
 
@@ -71,7 +71,7 @@ ms.locfileid: "86479529"
 - [運用の展開](../../govern/guides/complex/resource-consistency-improvement.md#incremental-improvement-of-the-policy-statements): 基本的な運用管理の要件を満たすための企業ポリシーの管理 ("完了の定義") の例。
 - [コストの展開](../../govern/guides/complex/cost-management-improvement.md#changes-to-the-policy-statements): コスト管理の要件を満たすための企業ポリシーの管理 ("完了の定義") の例。
 
-上の例は、ランディング ゾーンの "定義の完了" を開発するのに役立つ基本的なサンプルです。 それぞれの[クラウド ガバナンスの規範](../../govern/governance-disciplines.md)の下で、追加のサンプル ポリシーを利用できます。
+上の例は、ランディング ゾーンの "定義の完了" を開発するのに役立つ基本的なサンプルです。 [クラウド ガバナンスの 5 つの規範](../../govern/governance-disciplines.md)のそれぞれについて、追加のサンプル ポリシーを利用できます。
 
 ## <a name="next-steps"></a>次のステップ
 

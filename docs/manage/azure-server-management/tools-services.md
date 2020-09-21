@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5c3d79966bf3d3477ff7b9a62f23e9bab9d7f5a8
-ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
+ms.openlocfilehash: d9c59cf935d122581465fa5d96ffd05bc4e39dd8
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176448"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604030"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure サーバー管理ツールおよびサービス
 
@@ -80,7 +80,7 @@ ms.locfileid: "89176448"
 
 ## <a name="govern"></a>ガバナンス
 
-クラウドを導入して移行すると、新しい管理の課題が生じます。 運用管理の負担から監視とガバナンスに移行する際には、異なる考え方が必要です。 Azure 向けクラウド導入フレームワークは[ガバナンス](../../govern/index.md)から始まります。 このフレームワークでは、クラウドへの移行方法、移行過程、移行に関与する人について説明します。
+クラウドを導入して移行すると、新しい管理の課題が生じます。 運用管理の負担から監視とガバナンスに移行する際には、異なる考え方が必要です。 クラウド導入フレームワークは[ガバナンス](../../govern/index.md)から始まります。 このフレームワークでは、クラウドへの移行方法、移行過程、移行に関与する人について説明します。
 
 一般に、標準的な組織と複雑な企業ではガバナンス設計が異なります。 標準的な組織を対象としたガバナンスのベスト プラクティスの詳細については、[標準的なエンタープライズ ガバナンス ガイド](../../govern/guides/standard/index.md)に関する記事を参照してください。 複雑な企業を対象としたガバナンスのベスト プラクティスの詳細については、「[複雑な企業向けのガバナンス ガイド](../../govern/guides/complex/index.md)」を参照してください。
 

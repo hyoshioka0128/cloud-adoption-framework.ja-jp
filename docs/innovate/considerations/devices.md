@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 02448762796ad54ae49e8e411a5a21edf002aeb3
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 52a00570873d4cccba052fee33845b8ad8653bbf
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878182"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604421"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>アンビエント エクスペリエンス:デバイスの操作
 
@@ -64,13 +64,13 @@ Azure App Service はこのアプローチの好例です。 初期の反復の�
 
 このエクスペリエンスは、顧客のニーズが発生する環境内に何らかの形態のデバイスが常に存在する場合に最適です。 一般的なシナリオとして、工場の生産現場、エレベーター、乗用車などがあります。 このような種類の大型デバイスには計算処理能力が既に組み込まれています。 また、デバイス自体からのデータを使用して顧客の行動を検出し、それらの行動をクラウドに送信することもできます。 顧客の行動データをこのように自動的にキャプチャすることで、顧客がデータを入力する必要性が劇的に減ります。 さらに、Web、モバイル、または VR エクスペリエンスは、統合現実ソリューションから得た情報を共有するためのフィードバック ループとして機能することもできます。
 
-<!-- docsTest:casing "advanced computer vision" -->
+<!-- docutune:casing "advanced computer vision" -->
 
 Azure の Integrated Reality の例として含まれるもの:
 
 - [Azure モノのインターネット (IoT) ソリューション](/azure/iot-fundamentals):デバイスと、そのデバイスからクラウドに流れ、エンド ユーザーに戻されるデータのフローの管理を支援する一連の Azure サービス。
 - [Azure Sphere](/azure-sphere):デバイスと Azure IoT ソリューションの間でデータを安全に送信することを既存のデバイスで可能にする本質的に安全な方法を提供するハードウェアとソフトウェアの組み合わせ。
-- [Azure Kinect DK](/azure/Kinect-dk): 高度な Computer Vision と音声モデルを備えた AI センサー。 これらのセンサーでは、周囲の環境から映像データや音声データを収集し、それらの入力データをソリューションに提供できます。
+- [Azure Kinect DK](/azure/kinect-dk): 高度な Computer Vision と音声モデルを備えた AI センサー。 これらのセンサーでは、周囲の環境から映像データや音声データを収集し、それらの入力データをソリューションに提供できます。
 
 この 3 つのツールをすべて使用することで、顧客のニーズが発生した時点で、周囲の自然な環境からデータを収集できます。 ソリューションでは、データ入力に応答し、ニーズを解決できます。そのニーズのトリガーが発生したことに顧客が気付く前にニーズが解決されることもあります。
 

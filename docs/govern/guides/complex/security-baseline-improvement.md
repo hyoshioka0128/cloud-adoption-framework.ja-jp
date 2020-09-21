@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 41c81cd14235933e09462470cc2c93f83f79b9fb
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f872d4cf6389efe6f956c3a8990aea818fc2c32b
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880647"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604858"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: セキュリティ ベースライン規範の改善
 
@@ -33,7 +33,7 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
 
 ### <a name="changes-in-the-current-state"></a>現在の状態の変化
 
-この物語の前のフェーズで、会社は 2 つのデータセンターを廃止するプロセスを開始しました。 この継続的な取り組みには、従来の認証要件がある一部アプリケーションの移行が含まれていることから、[以前の記事](./identity-baseline-improvement.md)で説明した ID ベースラインの段階的な改善が必要とされていました。
+この物語の前のフェーズで、会社は 2 つのデータセンターを廃止するプロセスを開始しました。 この継続的な取り組みには、従来の認証要件がある一部アプリケーションの移行が含まれていることから、[以前の記事](./identity-baseline-improvement.md)で説明した ID ベースライン規範の段階的な改善が必要とされていました。
 
 その後、以下に示すように、ガバナンスに影響を与えるいくつかの変化がありました。
 
@@ -170,7 +170,7 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
 
 ## <a name="next-steps"></a>次のステップ
 
-クラウド導入が継続し、ビジネス価値が高まる一方で、リスクやクラウド ガバナンスのニーズも変わります。 このガイドの架空の企業の次なるステップは、ミッション クリティカルなワークロードのサポートです。 この時点で、リソース整合性のコントロールが必要になります。
+クラウド導入が継続し、ビジネス価値が高まる一方で、リスクやクラウド ガバナンスのニーズも変わります。 このガイドの架空の企業の次なるステップは、ミッション クリティカルなワークロードのサポートです。 この段階で、リソース整合性のコントロールが必要になります。
 
 > [!div class="nextstepaction"]
 > [リソースの整合性の規範の改善](./resource-consistency-improvement.md)

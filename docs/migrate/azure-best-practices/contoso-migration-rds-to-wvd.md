@@ -7,15 +7,15 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: da555c34bec26cbfb6e3edf5ac078568a8ba0ccd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6c4259f112c74d6f5fb7c24a0ca409e25ff68268
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882160"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602656"
 ---
-<!-- cSpell:ignore msiexec Logix Lakeside SysTrack Robocopy UPD UPDs -->
+<!-- docutune:casing Lakeside SysTrack -->
+<!-- cSpell:ignore msiexec Logix Robocopy UPDs -->
 
 # <a name="move-on-premises-remote-desktop-services-to-azure-windows-virtual-desktop-scenario"></a>オンプレミスのリモート デスクトップ サービスを Azure の Windows Virtual Desktop に移行するシナリオ
 
@@ -210,11 +210,9 @@ Contoso は、Azure portal を使用して、プールされたリソースに�
 
     > [!NOTE]
     > Contoso は、この手順で新しい仮想ネットワークを作成することはできません。 この手順に進む前に、Contoso では Active Directory にアクセスできる仮想ネットワークを作成しておく必要があります。
-
-   <!-- -->
-
+    <!-- -->
     > [!NOTE]
-    > Contoso は、この手順では、多要素認証を必要とするユーザー アカウントを使用できません。 ユーザーに多要素認証を使用する予定である場合は、この目的のためにサービス プリンシパルを作成する必要があります。
+    > Contoso は、多要素認証を必要とするユーザー アカウントをこの手順で使用することはできません。 ユーザーに多要素認証を使用する予定である場合は、この目的のためにサービス プリンシパルを作成する必要があります。
 
 1. Contoso は、Windows Virtual Desktop 設定についてもう 1 つの検証を実行し、プールされた Windows Virtual Desktop 仮想マシンという新しい環境を作成します。
 

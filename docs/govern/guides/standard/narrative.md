@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9fadb677bdf1cee392ae7f7ad8dbf4c1605ca551
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 78468928e666d7c9db87f6b28d51fa1376fbd990
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880392"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604774"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
 
@@ -39,7 +39,7 @@ ms.locfileid: "88880392"
 
 この会社の IT およびクラウド運用の現在の状態は次のとおりです。
 
-- IT 部門は 2 つのホスト型インフラストラクチャ環境を運用しています。 1 つ目の環境には運用資産が含まれています。 2 つ目の環境にはディザスター リカバリーと一部の開発/テスト資産が含まれています。 これらの環境は、2 つの異なるプロバイダーによってホストされます。 IT 部門は、これら 2 つのデータセンターをそれぞれ Prod と DR と呼びます。
+- IT 部門は 2 つのホスト型インフラストラクチャ環境を運用しています。 1 つ目の環境には運用資産が含まれています。 2 つ目の環境にはディザスター リカバリーと一部の開発/テスト資産が含まれています。 これらの環境は、2 つの異なるプロバイダーによってホストされます。 IT 部門では、これら 2 つのデータセンターをそれぞれ _Prod_ と _DR_ と呼んでいます。
 
 - IT 部門は、エンドユーザーのすべての電子メール アカウントを Microsoft 365 に移行することからクラウドを始めました。 この移行は 6 か月前に完了しました。 他の IT 資産は、クラウドにはほとんどデプロイされていません。
 

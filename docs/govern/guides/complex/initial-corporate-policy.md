@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a6d1c25a189ec09255da929c21e87c7b6304bd83
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cf811e2cb16b599027bbf965005f29877c85d703
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880902"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604904"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雑な企業向けのガバナンス ガイド: ガバナンス戦略の背景にある初期の企業ポリシー
 
@@ -34,10 +34,10 @@ CIO は最近、個人データとミッションクリティカル ポリシー
 
 現在、リスク許容度は高く、クラウド ガバナンスへの投資意欲は低い状態です。 このように、許容度指標は、時間とエネルギーの投資を誘発する早期警告システムとして機能します。 以下の指標が観測された場合、ガバナンス戦略を前進させることが賢明です。
 
-- **コスト管理:** クラウドへのデプロイ規模が 1,000 資産を超えている、または毎月の支出が 10,000 米ドルを超えている。
-- **ID ベースライン:** レガシまたはサード パーティの多要素認証要件を持つアプリケーションが含まれている。
-- **セキュリティ ベースライン:** 定義したクラウド導入計画に保護対象データが含まれている。
-- **リソースの整合性:** 定義したクラウド導入計画にミッションクリティカルなアプリケーションが含まれている。
+- **コスト管理規範:** クラウドへのデプロイ規模が 1,000 資産を超えている、または毎月の支出が 10,000 米ドルを超えている。
+- **ID ベースライン規範:** レガシまたはサード パーティの多要素認証要件を持つアプリケーションが含まれている。
+- **セキュリティ ベースライン規範:** 定義したクラウド導入計画に保護対象データが含まれている。
+- **リソースの整合性規範:** 定義したクラウド導入計画にミッションクリティカルなアプリケーションが含まれている。
 
 [!INCLUDE [policy-statements](../../../../includes/policy-statements.md)]
 

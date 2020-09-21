@@ -1,6 +1,6 @@
 ---
 title: クラウド ガバナンスの 5 つの規範
-description: Azure 向けクラウド導入フレームワークを使用して、コスト管理、デプロイ高速化、ID ベースライン、リソースの整合性、およびセキュリティ ベースラインの各規範について学習します。
+description: Azure 向けクラウド導入フレームワークを使用して、コスト管理、セキュリティ ベースライン、ID ベースライン、リソースの整合性、デプロイ高速化の各規範について学習します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 176d9bfac74890d80dd5a36d4a3b6fc51863e027
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: daf25b3027d0eb5becff23c96fa9bd2f6f30476d
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510432"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605003"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>クラウド ガバナンスの 5 つの規範
 
-<!-- docutune:casing "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
+<!-- docutune:casing "Disciplines of Cloud Governance" "Cost Management" "Security Baseline" "Identity Baseline" "Resource Consistency" "Deployment Acceleration" -->
 
 :::row:::
     :::column:::

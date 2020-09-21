@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1df9bf9b6352f3aee42154aa5f1271fd0fb5be4d
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e3683c652ef69b9cd327164a992966cff1ce4868
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884183"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603045"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>作業を開始しましょう。クラウド ガバナンス チームを構築する
 
@@ -22,7 +22,7 @@ ms.locfileid: "88884183"
 
 ## <a name="step-1-determine-whether-a-cloud-governance-team-is-needed"></a>手順 1:クラウド ガバナンス チームが必要かどうかを判断する
 
-Azure 向けクラウド導入フレームワークの公式ガイダンスは、"常にクラウド ガバナンス チームを編成する" ことです。 当初、チームの規模は非常に小さいかもしれません。 規模に関係なく、その役割が重要であることがわかるようになります。 チームが不要な場合は、既存の導入チームのグループまたは個人が、[クラウド ガバナンス機能](../../organize/cloud-governance.md)に関連する責任を果たすことに同意する必要があります。
+クラウド導入フレームワークの公式ガイダンスは、"常にクラウド ガバナンス チームを編成する" ことです。 当初、チームの規模は非常に小さいかもしれません。 規模に関係なく、その役割は重要です。 チームが不要な場合は、既存の導入チームのグループまたは個人が、[クラウド ガバナンス機能](../../organize/cloud-governance.md)に関連する責任を果たすことに同意する必要があります。
 
 **成果物:**
 

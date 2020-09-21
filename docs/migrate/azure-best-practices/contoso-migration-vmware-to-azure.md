@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 3472f1695f8f5405842e2d35ff86265bfbfefec1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7921c16e54e3684e5f2ba43555b54b68cd12c37f
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877315"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605153"
 ---
 <!-- docsTest:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -96,7 +95,7 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 ## <a name="migration-process"></a>移行プロセス
 
-Contoso は、VMware HCX ツールを使用して、その VM を Azure VMware Solution に移動することになります。 その VM は、Azure VMware Solution のプライベート クラウド内で実行されます。 [VMware HCX の移行方法](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-8A31731C-AA28-4714-9C23-D9E924DBB666.html)には、一括移行やコールド移行があります。 vMotion や Replication Assisted vMotion (RAV) は、ライブ マイグレーションによって実行されるワークロード用に予約された方法です。
+Contoso は、VMware HCX ツールを使用して、その VM を Azure VMware Solution に移動することになります。 その VM は、Azure VMware Solution のプライベート クラウド内で実行されます。 [VMware HCX の移行方法](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-8A31731C-AA28-4714-9C23-D9E924DBB666.html)には、一括移行やコールド移行があります。 VMware vMotion や Replication Assisted vMotion (RAV) は、ライブ マイグレーションによって実行されるワークロード用に予約された方法です。
 
 プロセスを遂行するために、Contoso チームは以下を行います。
 

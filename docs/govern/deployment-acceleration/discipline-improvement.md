@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 05cb93bcb4620029bc84916e585f2e3576b6d448
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: caaf3d029ad1a1738561eb94343a39a9471cc882
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883503"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604961"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>デプロイ加速規範の改良
 
@@ -21,9 +21,9 @@ ms.locfileid: "88883503"
 
 この記事では、会社がデプロイ加速規範を適切に開発し、成熟させるために実行できるいくつかの潜在的なタスクの概要について説明します。 これらのタスクは、クラウド ソリューション実装の計画、構築、導入、および運用フェーズに分類できます。これらのフェーズは繰り返され、[クラウド ガバナンスへの増分アプローチ](../guides/index.md#an-incremental-approach-to-cloud-governance)を開発できるようになります。
 
-![導入の 4 つのフェーズ](../../_images/govern/adoption-phases.png)
+![クラウド ガバナンスに対する増分型アプローチのフェーズ](../../_images/govern/adoption-phases.png)
 
-"*図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。*
+"*図 1:クラウド ガバナンスに対する増分型アプローチのフェーズ。* "
 
 1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、漸進的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、ID ベースライン規範を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
 

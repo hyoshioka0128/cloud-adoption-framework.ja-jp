@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e4829581a642a3fab13d461c98e423a5f777f2b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0b82f70aa7d7e2e0e9553f586b66a6dd8673b1c5
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567446"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604073"
 ---
 # <a name="common-azure-policy-examples"></a>Azure Policy の一般的な例
 
@@ -71,7 +71,7 @@ Azure では、さまざまなワークロードをサポートするための�
 
 ### <a name="deploy-antimalware"></a>マルウェア対策のデプロイ
 
-このポリシーを使用すると、マルウェア対策で保護されていない VM に、既定の構成を使用した Microsoft _IaaSAntimalware_ 拡張機能をデプロイすることができます。
+このポリシーを使用すると、マルウェア対策で保護されていない VM に、既定の構成を使用した Microsoft Antimalware 拡張機能をデプロイすることができます。
 
 ポリシーの GUID は `2835b622-407b-4114-9198-6f7064cbe0dc` です。
 

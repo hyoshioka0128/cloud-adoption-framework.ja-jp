@@ -7,12 +7,12 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 71fa4ce0af8b1a33b223001e4244fe35a086358a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6ff7dad3524f00119b161dfc87aaa1a70a2b4e19
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881616"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602182"
 ---
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>Microsoft パートナーの Azure ランディング ゾーンを評価する
 

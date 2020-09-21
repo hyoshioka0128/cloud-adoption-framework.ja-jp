@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3eee0e1b6b7e2ceb64f180fe97984e4c39a8ea7a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 35e6806fe93607e4797bdcd20302fec09032778e
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884863"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605205"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Azure の初期サブスクリプションを作成する
 
@@ -23,12 +23,10 @@ ms.locfileid: "88884863"
 最初に、次の 2 つのサブスクリプションを作成します。
 
 - 運用環境のワークロードを格納するための Azure サブスクリプションを 1 つ作成します。
-- より低価格の [Azure Dev/Test オファー](https://azure.microsoft.com/pricing/dev-test)を使用して、非運用 (開発/テスト) 環境として機能する 2 つ目のサブスクリプションを作成します。
+- より低価格の [Azure Dev/Test オファー](https://azure.microsoft.com/pricing/dev-test)を使用して、非運用環境として機能する 2 つ目のサブスクリプションを作成します。
 
 !["運用" と "非運用" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model.png)
 _図 1:"運用" と "非運用" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル_
-
-<!-- docsTest:casing Dev/Test -->
 
 この方法には多くの利点があります。
 

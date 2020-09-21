@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 86dd5776e72d4fa0d4e6ea9c3fbf510f8d0db4ad
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: dac79c954a72aeb72002a5583dce64c85a065fb1
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883792"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604984"
 ---
 # <a name="cost-management-discipline-improvement"></a>コスト管理規範の改善
 
@@ -21,9 +21,9 @@ ms.locfileid: "88883792"
 
 この記事では、コスト管理規範を作成し、成熟させるために会社が実行できる可能性があるタスクについて概要を説明します。 これらのタスクは、クラウド ソリューションの実装の、計画、構築、導入、および運用のフェーズに分類できます。 その後は、[クラウド ガバナンスへの増分型アプローチ](../guides/index.md#an-incremental-approach-to-cloud-governance)を開発できるようにタスクを繰り返します。
 
-![導入の 4 つのフェーズ](../../_images/govern/adoption-phases.png)
+![クラウド ガバナンスに対する増分型アプローチのフェーズ。](../../_images/govern/adoption-phases.png)
 
-"*図 1:クラウド ガバナンスへの増分型アプローチの導入の各フェーズ。*
+"_図 1:クラウド ガバナンスに対する増分型アプローチのフェーズ。_ "
 
 1 つのドキュメントですべてのビジネスの要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、段階的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、Cost Management の規範の機能を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
 
@@ -107,7 +107,7 @@ ms.locfileid: "88883792"
 
 ## <a name="next-steps"></a>次のステップ
 
-クラウド コストのガバナンスの概念を理解したので、[コスト管理の規範のベスト プラクティス](./best-practices.md)を確認し、全体的な支出を削減する方法を見つけます。
+クラウド コストのガバナンスの概念を理解したので、コスト管理の規範のベスト プラクティスを確認し、全体的な支出を削減する方法を見つけます。
 
 > [!div class="nextstepaction"]
-> [コスト管理のベスト プラクティス](./best-practices.md)
+> [コスト管理規範のベスト プラクティス](./best-practices.md)
