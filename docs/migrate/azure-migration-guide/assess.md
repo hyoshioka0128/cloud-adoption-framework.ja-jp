@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c37a7b51de815169e450f72e0bbf99cf8fee49cf
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f8805746d1ae06978c179db076d0312fac89311c
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884642"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605291"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>ワークロードを評価して計画を調整する
 
