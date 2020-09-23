@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1312ad4cac826084613ae41a8e2e61471efb876f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2a9f188a49becd5c9f0d8156488a3456aa93fee8
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878828"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775804"
 ---
 <!-- docutune:casing GDGs -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
@@ -177,7 +177,7 @@ Azure では、この目的に別の VM を使用することの方が一般的�
 
 Azure では、メインフレームで現在実行されているシステムに対し、実績があり高可用性でスケーラブルなインフラストラクチャが提供されます。 一部のワークロードは、比較的簡単に移行できます。 CICS や IMS のように従来のシステム ソフトウェアに依存する他のワークロードは、パートナー ソリューションを使用して再ホストし、時間をかけて Azure に移行することができます。 何を選択しても、Microsoft とそのパートナーが、メインフレーム システムのソフトウェアの機能を維持しながら、Azure に対する最適化を支援します。
 
-<!-- docsTest:casing "IBM DB2 pureScale" -->
+<!-- docutune:casing "IBM DB2 pureScale" -->
 
 ## <a name="learn-more"></a>詳細情報
 

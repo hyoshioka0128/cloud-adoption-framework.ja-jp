@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 87edd4c65ff3dd79dd6e0fc778b9c6b9419b5ba9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 25467593af277cf5955fc9656e23f9d01fa8926b
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572750"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776433"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "88572750"
 
 エンタープライズ規模のアーキテクチャを実装するには、次のカテゴリのアクティビティの観点から考える必要があります。
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 1. **エンタープライズ規模のアーキテクチャに該当するもの:** 初期構成を確立するために Azure および Azure Active Directory (Azure AD) の管理者が実行する必要があるアクティビティが含まれます。 これらのアクティビティは本質的にシーケンシャルであり、主に 1 回限りのアクティビティです。
 
@@ -30,7 +30,7 @@ ms.locfileid: "88572750"
 
 3. **新しいランディング ゾーンをデプロイする ([ファイル]、[新規]、[Landing Zone]\(ランディング ゾーン\)):** これらは、新しいランディング ゾーンのインスタンスを作成するために必要な定期的なアクティビティです。
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->
 
 大規模に運用するには、これらのアクティビティがコードとしてのインフラストラクチャ (IaC) の原則に従っている必要があり、デプロイ パイプラインを使用して自動化される必要があります。
 
@@ -185,11 +185,11 @@ ms.locfileid: "88572750"
 |--------------------------|----------------------------------------------------------------------------------------|
 | [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | このポリシーにより、仮想ハブ、Azure Firewall、ゲートウェイ (VPN または ExpressRoute) がデプロイされます。 また、Azure Firewall への接続された仮想ネットワークのデフォルト ルートも構成されます。 |
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 ## <a name="file--new--landing-zone-for-applications-and-workloads"></a>アプリケーションおよびワークロード用の [ファイル] > [新規] > [Landing zone]\(ランディング ゾーン\)
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->
 
 1. サブスクリプションを作成し、`Landing Zones` 管理グループのスコープの下に移動します。
 

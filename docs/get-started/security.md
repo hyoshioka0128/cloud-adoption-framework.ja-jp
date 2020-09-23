@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b46c3e7247cbfcae5de8b60ad77f0e727250ac52
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1c9a2faf35a2137e5dd04c23a8cb49c6dd02f5b5
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603118"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681008"
 ---
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>作業を開始しましょう。企業環境全体へのセキュリティの実装
 
@@ -65,7 +65,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 - **長期的なアーキテクチャに関する決定:** 適切な意思決定を行って、長期的な基盤を確立します。 これらを後で変更するのは難しく、コストがかかります。
 
   - [企業のセグメント化戦略を構築し、技術アーキテクチャをそれに合わせる (ネットワークのセグメント化や ID のセグメント化など)](/azure/architecture/framework/security/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
-  - [単一のエンタープライズ ディレクトリ](/azure/architecture/framework/security/identity#single-enterprise-directory)
+  - [単一のエンタープライズ ディレクトリ](/azure/architecture/framework/security/design-identity#use-a-single-enterprise-directory)
   - [サービスの認証戦略](/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
   - [アクセス許可の割り当て戦略](/azure/architecture/framework/security/critical-impact-accounts#avoid-granular-and-custom-permissions)
 

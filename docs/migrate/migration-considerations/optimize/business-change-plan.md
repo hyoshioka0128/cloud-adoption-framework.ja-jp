@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 58b10b2f800e7292f3f107a3fc307cb971c5809b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 76edfc3f78c5f1a42306d761a82ea82f30dcf015
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884625"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774376"
 ---
 <!-- cSpell:ignore Eason -->
 
-<!-- docsTest:casing "Eason Matrix" -->
+<!-- docutune:casing "Eason Matrix" -->
 
 # <a name="business-change-plan"></a>ビジネス変更プラン
 
@@ -69,8 +69,8 @@ _図:ユーザー導入の種類の Eason Matrix。_
 
 ## <a name="references"></a>References
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 - Eason, K.(1988) _Information Technology and Organizational Change_ (情報技術と組織の変化)、ニューヨーク:Taylor と Francis
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->

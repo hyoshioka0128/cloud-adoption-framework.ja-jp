@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4aedbeddc5b8376871f73862ef4121302e2696a1
-ms.sourcegitcommit: 34346be9ec66c64d6d7ae24651adbbec1fdbf985
+ms.openlocfilehash: b7bd069dbb75b1cdaabd2aacdace68010610c12a
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90534189"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776586"
 ---
 # <a name="enterprise-scale-security-governance-and-compliance"></a>エンタープライズ規模のセキュリティ ガバナンスとコンプライアンス
 
@@ -183,7 +183,7 @@ Azure を採用する場合には、正常なセキュリティ体制を維持�
 
 - 必要に応じて、Azure プラットフォームにアクセスするためのゼロ信頼アプローチを実装します。
 
-<!-- docsTest:ignore "and conditional access" -->
+<!-- docutune:ignore "and conditional access" -->
 
 ## <a name="azure-security-benchmarks"></a>Azure セキュリティ ベンチマーク
 
@@ -200,7 +200,7 @@ Azure セキュリティ ベンチマークのドキュメントでは、セキ�
 
 | 評価                    | カテゴリ                                                              | 条件                                                                                                                                     |
 |------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| セキュリティ                     | ネットワーク エンドポイント                                                      | サービスには、仮想ネットワークの外部からアクセスできるパブリック エンドポイントがありますか。                                                                |
+| Security                     | ネットワーク エンドポイント                                                      | サービスには、仮想ネットワークの外部からアクセスできるパブリック エンドポイントがありますか。                                                                |
 |                              |                                                                       | 仮想ネットワーク サービス エンドポイントをサポートしていますか。                                                                                                      |
 |                              |                                                                       | Azure サービスとサービス エンドポイントは直接対話できますか。                                                                              |
 |                              |                                                                       | Azure Private Link エンドポイントをサポートしていますか?                                                                                                           |

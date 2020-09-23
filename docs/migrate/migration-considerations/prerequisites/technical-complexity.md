@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dace1543a65eefe68d6f4c01923784bdc40dc250
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4f3f8971cded5008c75a3a619c330a6e35840623
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885934"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776229"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>技術的な複雑さに備える: アジャイル変更管理
 
@@ -20,7 +20,7 @@ ms.locfileid: "88885934"
 
 柔軟性とイテレーションが重視されるアジャイル モデルに移行する場合、技術的な複雑さと変更管理は、線形の一連の移行手順に重点を置く従来のウォーターフォール モデルとは異なる方法で処理されます。 この記事では、アジャイルベースの移行作業での変更管理に対するアプローチの概要について説明します。 この記事の最後には、変更管理のレベルと段階的な移行アプローチに関するドキュメント化を全般的に理解しているはずです。 その理解に基づいてアジャイル プラクティスを選択して実装するには、トレーニングと意思決定がさらに必要になります。 この記事の目的は、このアプローチでの変更管理の一般概念を説明するために、プロジェクト管理と円滑に会話できるクラウド アーキテクトを準備することです。
 
-<!-- docsTest:ignore INVEST -->
+<!-- docutune:ignore INVEST -->
 
 ## <a name="address-technical-complexity"></a>技術的な複雑さに対処する
 

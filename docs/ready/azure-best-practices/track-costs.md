@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5bfabc441eb3669ed2f2681c66f48db77c1c0077
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f8f7cc11e89be655f736bbc50865c8e46caab48b
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884506"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776518"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -71,7 +71,7 @@ _図 2: 大企業のリソース編成。_
 
 ### <a name="roles"></a>ロール
 
-<!-- docsTest:casing Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
+<!-- docutune:casing Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
 Azure Cost Management と Billing では、各スコープに対して次の組み込みロールがサポートされています。
 
@@ -126,7 +126,7 @@ Azure Cost Management と Billing の利用を開始するには、[Azure Cost M
 - [推奨に基づくコストの最適化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [コスト アラートを使用し、使用状況と支出を監視する](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
-<!-- docsTest: "AWS Cost and Usage" -->
+<!-- docutune: "AWS Cost and Usage" -->
 
 ### <a name="use-azure-cost-management-and-billing-to-govern-aws-costs"></a>Azure Cost Management と Billing を使用して AWS のコストを管理する
 

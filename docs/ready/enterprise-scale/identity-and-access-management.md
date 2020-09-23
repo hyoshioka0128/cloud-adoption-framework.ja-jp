@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 32c479c8e512512f7e2b1817838ab65d9be95b53
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2b8866d90e93ace8ada24da7162f2c665a02abaa
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885577"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776450"
 ---
 # <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 
@@ -45,7 +45,7 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
   - 共有リソース、またはネットワークなどのセキュリティ境界を実装または適用する環境の側面は、一元的に管理する必要があります。 この要件は、多くの規制フレームワークに含まれています。 これは、機密または重要なビジネス リソースへのアクセスを許可または拒否するすべての組織にとって、標準的な方法です。
   - セキュリティ境界や、セキュリティとコンプライアンスの維持に必要なその他の側面に違反していないアプリケーション リソースの管理は、アプリケーション チームに委任することができます。 安全に管理された環境内でユーザーがリソースをプロビジョニングできるようにすると、組織ではクラウドのアジャイルな性質を活用し、さらに重要なセキュリティやガバナンスの境界の違反を防ぐことができます。
 
-<!-- docsTest:ignore Azure-AD-only Azure-AD-managed -->
+<!-- docutune:ignore Azure-AD-only Azure-AD-managed -->
 
 **設計上の推奨事項:**
 

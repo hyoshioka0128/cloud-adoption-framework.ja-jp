@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 986d4d98bf663c171279f6b5bb83db1b91daf7be
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e57bcae8f5b7b779544d6000e1fe299bf70eb4d7
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776535"
 ---
 # <a name="perimeter-networks"></a>境界ネットワーク
 
@@ -91,7 +91,7 @@ Azure Front Door サービスから、リージョナル/スタンプ メンテ�
 
 [Azure Application Gateway][appgw] とは、マネージド アプリケーション配信コントローラーを提供する専用の仮想アプライアンスです。 これは、レイヤー 7 のさまざまな負荷分散機能をお客様のアプリケーションに提供します。
 
-<!-- docsTest:casing "the application gateway" "single application gateway" -->
+<!-- docutune:casing "the application gateway" "single application gateway" -->
 
 CPU 負荷の高い SSL ターミネーションを Azure Application Gateway にオフロードすることによって、Web ファームの生産性を最大限に高めることができます。 また、着信トラフィックのラウンド ロビン分散、Cookie ベースのセッション アフィニティ、URL パス ベースのルーティング、単一のアプリケーション ゲートウェイの背後で複数の Web サイトをホストする機能など、レイヤー 7 のその他のルーティング機能も用意されています。
 

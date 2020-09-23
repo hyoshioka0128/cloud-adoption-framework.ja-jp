@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d9cddbe2c43339428235d580004ba5ffd232074e
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: f76231e6ecbe657d07eedaa7eb6a8b803af8fbc5
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602126"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681331"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>動機:クラウドに移行する理由
 
@@ -26,7 +26,7 @@ ms.locfileid: "89602126"
 
 | 重要なビジネス イベント | 移行 | 革新 |
 |---|---|---|
-| データセンターの閉鎖 <br><br> 合併、買収、売却 <br><br> 資本支出の削減 <br><br> ミッション クリティカルなテクノロジのサポートの終了 <br><br> 規制コンプライアンスの変更への対応 <br><br> 新しいデータ主権要件 <br><br> 中断の減少と IT の安定性の向上 <br><br> <br><br> | コスト削減 <br><br> ベンダーまたは技術的な複雑さの減少 <br><br> 内部運用の最適化 <br><br> ビジネスの機敏性の向上 <br><br> 新しい技術機能に対する準備 <br><br> 市場需要に合わせたスケーリング <br><br> 地理的需要に合わせたスケーリング <br><br> 複雑な IT ポートフォリオの統合 <br><br> | 新しい技術機能に対する準備 <br><br> 新しい技術機能の構築 <br><br> 市場需要に合わせたスケーリング <br><br> 地理的需要に合わせたスケーリング <br><br> カスタマー エクスペリエンスとエンゲージメントの向上 <br><br> 製品またはサービスの変革 <br><br> 新しい製品またはサービスによる市場の混乱 <br><br> 民主化とセルフサービス環境 |
+| データセンターの閉鎖 <br><br> 合併、買収、売却 <br><br> 資本支出の削減 <br><br> ミッション クリティカルなテクノロジのサポートの終了 <br><br> 規制コンプライアンスの変更への対応 <br><br> 新しいデータ主権要件 <br><br> 中断の削減と IT の安定性の向上 <br><br> <br><br> | コスト削減 <br><br> ベンダーまたは技術的な複雑さの減少 <br><br> 内部運用の最適化 <br><br> ビジネスの機敏性の向上 <br><br> 新しい技術機能に対する準備 <br><br> 市場需要に合わせたスケーリング <br><br> 地理的需要に合わせたスケーリング <br><br> 複雑な IT ポートフォリオの統合 <br><br> | 新しい技術機能に対する準備 <br><br> 新しい技術機能の構築 <br><br> 市場需要に合わせたスケーリング <br><br> 地理的需要に合わせたスケーリング <br><br> カスタマー エクスペリエンスとエンゲージメントの向上 <br><br> 製品またはサービスの変革 <br><br> 新しい製品またはサービスによる市場の混乱 <br><br> 民主化とセルフサービス環境 |
 
 ## <a name="classify-your-motivations"></a>動機の分類
 

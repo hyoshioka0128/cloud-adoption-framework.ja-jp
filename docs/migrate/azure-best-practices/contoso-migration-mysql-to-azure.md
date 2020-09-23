@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 79bc8027a035d38b9a9048a0aaba15f9cb66d3e0
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1a331e02dcf51123fbf0c0977cf75e9dfd4bae81
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603733"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775872"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -58,7 +58,7 @@ Azure Database Migration Service を使用して、データベースを Azure D
 ### <a name="database-considerations"></a>データベースの考慮事項
 
 <!-- TODO: Verify GraphDBMS term -->
-<!-- docsTest:casing ColumnStore "Graph DBMS" -->
+<!-- docutune:casing ColumnStore "Graph DBMS" -->
 
 ソリューションの設計プロセスの一環として、Contoso では MySQL データをホストするための Azure の機能を確認しました。 Azure の使用を決定する際に、次の考慮事項が役立ちました。
 

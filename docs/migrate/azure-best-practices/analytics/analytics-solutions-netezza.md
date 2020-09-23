@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4d47a5681a2c36bdaabe508e8d62c7437ebe1c87
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f69eac9136a43dbc5790c969fc10e3b0d8057d5a
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775940"
 ---
 <!-- cSpell:ignore Netezza Informatica Talend InMon zonemap CBTs Attunity Wherescape nzlua CBT NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -91,7 +91,7 @@ Azure Synapse 環境にあるデータベースは 1 つです。 スキーマ�
 
 ただし、インデックスなどのパフォーマンス最適化が移行元環境のどこで使用されていたかを把握しておくことは、新しい環境でパフォーマンスを最適化できる場所を示すのに役立ちます。 たとえば、移行元の Netezza 環境のクエリでゾーン マップが頻繁に使用されている場合は、移行先の Azure Synapse 環境で非クラスター化インデックスを作成すると有益である、またはテーブル レプリケーションのような他のネイティブなパフォーマンス最適化手法を使用する方が、既存のものと同じインデックスを作成するより適している、という結論になる可能性があります。
 
-<!-- docsTest:casing "NZ Toolkit" -->
+<!-- docutune:casing "NZ Toolkit" -->
 
 ### <a name="unsupported-netezza-database-object-types"></a>サポートされていない Netezza データベース オブジェクトの種類
 

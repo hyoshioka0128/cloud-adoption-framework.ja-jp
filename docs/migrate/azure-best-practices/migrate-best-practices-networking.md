@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1062228afd3eb4bc4892d9a2fb2e100f2af2a9af
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1771e61b884cd53480fdb2d47c2805b502735d86
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885696"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776076"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -292,7 +292,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
 - [ネットワーク セキュリティのベスト プラクティスの概要](/azure/security/fundamentals/network-best-practices)を読む。
 - [セキュリティで保護されたネットワークを設計する](/azure/virtual-network/virtual-network-vnet-plan-design-arm#security)方法を学習する。
 
-<!-- docsTest:casing "IDS/IPS" -->
+<!-- docutune:casing "IDS/IPS" -->
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>ベスト プラクティス:Azure 境界ネットワークを実装する
 

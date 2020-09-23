@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b581b9f041c82ce7cfdda28ed7351c903fd548df
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 754653d7e15eec16aa59db834851767e8d763008
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885169"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776569"
 ---
-<!-- docsTest:casing ARO -->
+<!-- docutune:casing ARO -->
 
 # <a name="best-practices-to-cost-and-size-workloads-migrated-to-azure"></a>Azure に移行するワークロードのコストとサイズ設定のベスト プラクティス
 

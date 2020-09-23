@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f9503d5d54605f2f02491747e414c19dbaa07519
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b4464f127dc2df83b951940f35807fe8a1441f32
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776110"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>スキル準備パスの開始
 
@@ -43,7 +43,7 @@ _図 1:クラウドでホストされる環境内の IT の役割へのスキル
 Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
 クラウド導入フレームワークの計画手法に合わせてカスタマイズされた、Microsoft Learn のラーニング パスの例を次に示します。
 
-<!-- docsTest:ignore "on premises" -->
+<!-- docutune:ignore "on premises" -->
 
 [DevOps のプラクティスを進化させる](/learn/paths/evolve-your-devops-practices):DevOps とは、エンド ユーザーへの価値の継続的デリバリーを実現するために人、プロセス、製品をひとまとめにしたものです。 Azure DevOps は、そのために必要なツールを提供する一連のサービスです。 Azure DevOps を使用すると、クラウドまたはオンプレミスのどちらでも任意のアプリケーションをビルド、テスト、およびデプロイできます。
 

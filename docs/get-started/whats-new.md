@@ -7,12 +7,12 @@ ms.date: 08/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 4330efe1602869e9feef8ccc7120276b17eb5373
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a8f3afe5e08e415fc4fb08e1036dd559a66747ba
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602919"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775583"
 ---
 <!-- docutune:casing "internal Microsoft teams" OneMigrate -->
 <!-- cSpell:ignore MSPs Teradata Netezza Exadata mlops -->
@@ -217,4 +217,4 @@ Azure の導入時に作成する必要がある初期サブスクリプショ�
 | [評価の概要](../migrate/migration-considerations/assess/index.md) | 特定のワークロードとその関連資産の技術的な適合性を評価することがこのフェーズにおける評価のねらいであることを示すように更新しました。 |
 | [計画チェックリスト](../migrate/migration-considerations/prerequisites/planning-checklist.md) | 移行後のワークロードの管理を徹底するために、移行作業に向けた計画段階で運用の整合を取っておくことの重要性を明確にするように更新しました。 |
 
-<!-- docsTest:ignoreNextStep -->
+<!-- docutune:ignoreNextStep -->

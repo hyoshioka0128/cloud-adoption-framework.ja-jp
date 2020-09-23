@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6c4259f112c74d6f5fb7c24a0ca409e25ff68268
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 30340f9dfcacfb3aafe2dfeee5cbad21b6f75110
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602656"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775838"
 ---
 <!-- docutune:casing Lakeside SysTrack -->
 <!-- cSpell:ignore msiexec Logix Robocopy UPDs -->
@@ -223,7 +223,7 @@ Contoso は、Azure portal を使用して、プールされたリソースに�
 
 Windows Virtual Desktop ではユーザー プロファイル ディスク (UPD) がサポートされていないため、Contoso は [FSLogixMigration PowerShell モジュール](https://aka.ms/FSLogixMigrationPreviewModule)を使用して、すべての UPD を FSLogix に変換する必要があります。
 
-<!-- docsTest:casing FSLogixMigration -->
+<!-- docutune:casing FSLogixMigration -->
 
 FSLogixMigration モジュールをインポートしたら、次の PowerShell コマンドレットを実行して、UPD から FSLogix に移行します。
 

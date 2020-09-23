@@ -1531,6 +1531,8 @@ items:
         items:
           - name: クラウド運用モデル
             href: reference/cloud-operating-model.md
+          - name: Azure のセキュリティに関するベスト プラクティス
+            href: ./security/security-top-10.md
           - name: Azure エンタープライズ スキャフォールディング
             href: reference/azure-scaffold.md
           - name: 仮想データセンター (VDC)

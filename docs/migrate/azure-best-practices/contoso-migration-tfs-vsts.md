@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cd92a5a089507fde1d770308f93d9547452389e
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c91b6a66d176f19a24779561026fd6bd075b5dea
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602989"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775549"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -96,7 +96,7 @@ Contoso は、次のようにして移行を完了します。
 - [Azure Storage の概要](/azure/storage/common/storage-introduction)。
 - [ストレージ アカウントの作成](/azure/storage/common/storage-create-storage-account)。
 
-<!-- docsTest:casing "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
+<!-- docutune:casing "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
 
 ## <a name="step-2-upgrade-team-foundation-server"></a>手順 2:Team Foundation Server をアップグレードする
 
@@ -240,7 +240,7 @@ Contoso の管理者は、移行前に `contosodev` コレクション データ
 1. **ドライラン インポートを実行する**。 ドライラン インポートは、コレクションの移行をテストするのに役立ちます。 ドライ ランは保存期間が限られているため、運用環境の移行が実行される前に削除されます。 それらは、設定期間が経過すると、自動的に削除されます。 ドライ ランが削除される時期を Contoso に知らせる注意は、インポートが完了した後に送信される成功メールに記載されています。 チームは注意を確認し、それに応じて計画を立てます。
 1. **運用環境の移行を完了する**。 ドライランによる移行が完了したら、Contoso の管理者は `import.json` ファイルを更新し、インポートを再実行して、最終的な移行を実行します。
 
-<!-- docsTest:casing "Team Foundation Server Administration Console" -->
+<!-- docutune:casing "Team Foundation Server Administration Console" -->
 
 ### <a name="detach-the-collection"></a>コレクションをデタッチする
 

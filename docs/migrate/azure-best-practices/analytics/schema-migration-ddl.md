@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d48135d3ba0a47df9adc6099585a66fca887b738
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 8652d3b67e42da037dc620f74af707f05a9fdcce
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775923"
 ---
 <!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo Teradata Netezza Wherescape DMVs multinode equi Datometry -->
 
@@ -123,7 +123,7 @@ Azure Synapse Analytics などの比較的安価でスケーラブルな超並�
 
 <!-- TODO: Review format of this list. Are the arguments necessary for this list? -->
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 - `bigint`
 - `binary [ (n) ]`
@@ -150,7 +150,7 @@ Azure Synapse Analytics などの比較的安価でスケーラブルな超並�
 - `varbinary [ (n | MAX) ]`
 - `varchar [ (n | MAX) ]`
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->
 
 次の表には、現在サポートされていない一般的なデータ型が一覧表示されており、それらを Azure Synapse Analytics に格納するために推奨される方法も示されています。 Teradata や Netezza などの特定の環境の詳細については、関連するドキュメントを参照してください。
 

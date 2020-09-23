@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: fed40e3b4d6c5c2aeeb63f70dcd41733e48b519e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4a2cdbf6ca0a5cc0ab43af0d677aa9af1c4e4381
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885679"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776042"
 ---
-<!-- docsTest:disable TODO -->
+<!-- docutune:disable TODO -->
 <!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->
 
 # <a name="the-virtual-datacenter-a-network-perspective"></a>仮想データセンター:ネットワーク パースペクティブ
