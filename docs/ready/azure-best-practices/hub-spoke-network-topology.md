@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 2fa4f8651be0d4ee29c8bac4fcfb95326e4201c2
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 9aa123f458258a8fbb666345006661332701f12d
+ms.sourcegitcommit: 014fe718162573f02d41bdc151a7302f02ca777b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884727"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832894"
 ---
 # <a name="hub-and-spoke-network-topology"></a>ハブ アンド スポーク ネットワーク トポロジ
 
@@ -34,8 +34,8 @@ ms.locfileid: "88884727"
 
 ## <a name="overview"></a>概要
 
-![ハブ アンド スポーク ネットワーク トポロジの例](../../_images/azure-best-practices/network-hub-spoke-high-level.png)
-_図 1: ハブ アンド スポーク ネットワーク トポロジの例。_
+![ハブ アンド スポーク ネットワーク トポロジの例](../../_images/azure-best-practices/network-hub-spoke-high-level.png)  
+"_図 1:ハブ アンド スポーク ネットワーク トポロジの例。_
 
 図に示したように、Azure では 2 種類のハブおよびスポーク設計がサポートされます。 通信、共有リソース、一元的セキュリティ ポリシーをサポートするか (図では `VNet hub` というラベルが付いています)、ブランチとブランチの間またはブランチと Azure の間の大規模な通信用に Azure Virtual WAN に基づく設計をサポートします (図では `Virtual WAN` というラベルが付いています)。
 
@@ -64,8 +64,8 @@ Azure では、種類に関係なく、すべてのコンポーネントが Azur
 
 制限が問題になる可能性がある場合は、単一のハブアンドスポークからハブアンドスポークのクラスターにモデルを拡張することによって、アーキテクチャをさらにスケールアップできます。 仮想ネットワーク ピアリング、Azure ExpressRoute、Azure Virtual WAN、またはサイト間 VPN を使用して、1 つ以上の Azure リージョン内の複数のハブを相互接続できます。
 
-![ハブとスポークのクラスター](../../_images/azure-best-practices/network-hub-spokes-cluster.png)
-_図 2: ハブとスポークのクラスター。_
+![ハブとスポークのクラスター](../../_images/azure-best-practices/network-hub-spokes-cluster.png)  
+"_図 2:ハブとスポークのクラスター。_
 
 複数のハブを導入すると、システムのコストと管理のオーバーヘッドが増加します。 これが妥当なのは、ユーザーのパフォーマンスやディザスター リカバリーのために、スケーラビリティ、システムの制限、または冗長性やリージョン レプリケーションが必要な場合だけです。 複数のハブが必要なシナリオでは、運用を容易にするため、すべてのハブで同じサービスのセットを提供する必要があります。
 
@@ -77,7 +77,7 @@ _図 2: ハブとスポークのクラスター。_
 
 このシナリオの一般的な例は、アプリケーション処理サーバーが 1 つのスポーク (仮想ネットワーク) にあるケースです。 データベースは別のスポーク (仮想ネットワーク) にデプロイされています。 この場合、仮想ネットワーク ピアリングでスポークを相互接続することによって、ハブの通過を簡単に回避できます。 ハブをバイパスすることで、ハブにしか存在しない重要なセキュリティ ポイントや監査ポイントがバイパスされることがないように、アーキテクチャとセキュリティを慎重に見直すことが解決策となります。
 
-![スポークの相互接続とハブへの接続](../../_images/azure-best-practices/network-spoke-to-spoke.png)
-_図 3: スポークの相互接続とハブへの接続。_
+![スポークの相互接続とハブへの接続](../../_images/azure-best-practices/network-spoke-to-spoke.png)  
+"_図 3:スポークの相互接続とハブへの接続。_
 
 スポークは、ハブとして機能するスポークに相互接続することもできます。 この方法では 2 レベルの階層が作成され、上位レベル (レベル 0) のスポークが、階層の下位レベル (レベル 1) のスポークのハブになります。 ハブ アンド スポーク実装のスポークは、トラフィックがオンプレミス ネットワークまたはパブリック インターネットのいずれかで送信先に到達できるように、中央のハブにトラフィックを転送する必要があります。 2 レベルのハブのアーキテクチャでは複雑なルーティングが導入され、シンプルなハブおよびスポーク関係のメリットが失われます。
