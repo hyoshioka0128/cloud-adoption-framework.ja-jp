@@ -178,7 +178,7 @@ SQL Managed Instance を設定するには、次の要件を満たすサブネ�
 **さらにサポートが必要な場合**
 
 - [SQL Managed Instance の概要については、こちらをお読みください](/azure/sql-database/sql-database-managed-instance)。
-- [SQL マネージド インスタンス用の仮想ネットワークを作成する](/azure/sql-database/sql-database-managed-instance-vnet-configuration)方法をご覧ください。
+- [SQL Managed Instance 用の仮想ネットワークを作成する](/azure/sql-database/sql-database-managed-instance-vnet-configuration)方法をご覧ください。
 - [ピアリングを設定する方法については、こちらを参照してください](/azure/virtual-network/virtual-network-manage-peering)。
 - [Azure Active Directory DNS 設定を更新する方法については、こちらを参照してください](/azure/active-directory-domain-services/tutorial-create-instance)。
 
@@ -222,7 +222,7 @@ Contoso は以下の点を考慮します。
 
 1. マネージド インスタンスをデプロイすると、`ContosoRG` リソース グループ内に 2 つの新しいリソースが表示されます。
 
-    - 新しい SQL マネージド インスタンス。
+    - 新しい SQL Managed Instance。
     - Contoso に複数のマネージド インスタンスがある場合の仮想クラスター。
 
       ![2 つの新しいリソースを示すスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
