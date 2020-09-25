@@ -81,7 +81,7 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 ### <a name="migration-process"></a>移行プロセス
 
-1. Contoso は、Azure SQL マネージド インスタンスをプロビジョニングし、Azure Database Migration Service を使用して SmartHotel360 データベースをそれに移行します。
+1. Contoso は、Azure SQL Managed Instance をプロビジョニングし、Azure Database Migration Service を使用して SmartHotel360 データベースをそれに移行します。
 1. Contoso では Web アプリをプロビジョニングして構成し、そこに SmartHotel360 アプリケーションをデプロイします。
 
     ![移行プロセスの図。](./media/contoso-migration-refactor-web-app-sql/migration-process.png)
