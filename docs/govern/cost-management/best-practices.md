@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dbce6299f2a676f0ef5d529c66f95d49dcb33b05
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a53c0ae2673abb7aee07a4ff15b7d60adbb479a9
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775566"
 ---
 <!-- docutune:casing ARO "standard HDD" -->
 
@@ -184,7 +184,7 @@ Azure では、さまざまな種類のストレージ アカウントとパフ�
 - データを分析して、Azure のリソース グループとリソースについての予算ベースラインを生成します。
 - サイズを減らし、リソースを停止または一時停止することで、さらにコストを削減できる使用パターンを特定します。
 
-このセクションのベスト プラクティスには、Azure ハイブリッド特典と Azure Reserved VM Instances の使用、複数のサブスクリプションにわたるクラウドの支出の削減、コストの予算管理と分析での Azure Cost Management と Billing の使用、リソースの監視とリソース グループ予算の実施、および監視、ストレージ、VM の最適化が含まれます。
+このセクションのベスト プラクティスには、Azure ハイブリッド特典と Azure Reserved VM Instances の使用、複数のサブスクリプションにわたるクラウド支出の削減、コストの予算管理と分析での Azure Cost Management + Billing の使用、リソースの監視とリソース グループ予算の実施、および監視、ストレージ、VM の最適化が含まれます。
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>ベスト プラクティス:Azure ハイブリッド特典を活用する
 
@@ -222,7 +222,7 @@ Azure Reserved VM Instances を使用すると、予約インスタンスの 1 �
 
 最終的に複数の Azure サブスクリプションを利用することになるのは避けられません。 たとえば、開発と運用の境界を分けるために追加のサブスクリプションが必要な場合があります。また、クライアントごとに別個のサブスクリプションを必要とするプラットフォームがある場合もあります。 すべてのサブスクリプションにわたってデータのレポート作成を 1 つのプラットフォームに集約する機能があるのは、有用な特徴です。
 
-これを行うために、Azure Cost Management および Billing の API を使用できます。 その後、Azure SQL Database などの 1 つのソースにデータを集約したら、Power BI などのツールを使用して、集約されたデータを明示できます。 集約されたサブスクリプション レポートや、きめ細かなレポートを作成できます。 たとえば、コスト管理に関する事前対応のための分析情報が必要なユーザーのために、部門、リソース グループ、またはその他の情報に基づいて、コストに関する特定のビューを作成できます。 彼らに Azure の課金データへのフル アクセスを提供する必要はありません。
+これを行うために、Azure Cost Management + Billing の API を使用できます。 その後、Azure SQL Database などの 1 つのソースにデータを集約したら、Power BI などのツールを使用して、集約されたデータを明示できます。 集約されたサブスクリプション レポートや、きめ細かなレポートを作成できます。 たとえば、コスト管理に関する事前対応のための分析情報が必要なユーザーのために、部門、リソース グループ、またはその他の情報に基づいて、コストに関する特定のビューを作成できます。 彼らに Azure の課金データへのフル アクセスを提供する必要はありません。
 
 **詳細情報:**
 
@@ -238,7 +238,7 @@ Azure では、リソースが消費されたときに使用した分だけ支�
 - たとえば、月曜日から金曜日の午前 8 時から午後 6 時まではワークロードの用頻度が高く、それ以外の時間帯はほとんど使用されない場合は、ピーク時間帯以外はVM をダウングレードできます。 これは、VM のサイズを変更すること、または仮想マシン スケール セットを使用して VM の上下の自動スケーリングを行うことを意味する場合もあります。
 - 一部の企業は、いつ使用可能な必要があり、いつ必要でないかを指定するカレンダーに VM を置くことで、VM を "眠らせ" ます。
 - VM の監視に加えて、利用不足や使いすぎが起きていないか、ExpressRoute や仮想ネットワーク ゲートウェイなどの他のネットワーク リソースを監視する必要があります。
-- Azure Cost Management と Billing、Azure Monitor、Azure Advisor などの Microsoft ツールを使用して VM の使用状況を監視できます。 サードパーティ製のツールも使用できます。
+- Azure Cost Management + Billing、Azure Monitor、Azure Advisor などの Microsoft ツールを使用して VM の使用を監視できます。 サードパーティ製のツールも使用できます。
 
 **詳細情報:**
 
@@ -262,9 +262,9 @@ Azure では、リソースが消費されたときに使用した分だけ支�
 - [VM の自動シャットダウン](/azure/cost-management-billing/manage/getting-started#consider-cost-cutting-features-like-auto-shutdown-for-vms)により、VM の終了時間を夜間に設定します。 この機能を使用すると、非運用 VM が毎晩停止されるため、開発を再開する準備ができたら、開発者はこれらの VM を再起動する必要があります。
 - 開発チームは、[Azure DevTest Labs](/azure/lab-services/devtest-lab-overview) を使用して独自のコスト管理アプローチを確立し、前のステップの標準の自動シャットダウンのタイミングの影響を回避することをお勧めします。
 
-## <a name="best-practice-use-azure-cost-management-and-billing"></a>ベスト プラクティス:Azure Cost Management と Billing の使用
+## <a name="best-practice-use-azure-cost-management--billing"></a>ベスト プラクティス:Azure Cost Management + Billing を使用する
 
-Microsoft では、支出を追跡する助けとなる Azure Cost Management と Billing を提供しています。
+Microsoft では、支出を追跡する助けとなる Azure Cost Management + Billing を提供しています。
 
 - Azure の支出の監視と管理を行い、リソースの使用を最適化する助けになります。
 - サブスクリプション全体と、そのすべてのリソースが見直されて、推奨事項が示されます。
@@ -272,7 +272,7 @@ Microsoft では、支出を追跡する助けとなる Azure Cost Management �
 - リソースの使用状況を追跡し、1 つの統一されたビューでクラウドのコストを管理します。
 - 情報に基づいた決定を下しやすいように、運用と財務に関する豊富な分析情報が提供されます。
 
-Azure Cost Management と Billing では、次のことができます。
+Azure Cost Management + Billing では、次のことができます。
 
 - **予算を作成する:** 財務上の説明責任のために予算を作成します。
   - 特定の期間 (月単位、四半期単位、年単位) と範囲 (サブスクリプション/リソース グループ) について、使用またはサブスクライブしているサービスを計算に入れることができます。 たとえば、月、四半期、または年の期間の Azure サブスクリプション予算を作成できます。
@@ -280,24 +280,24 @@ Azure Cost Management と Billing では、次のことができます。
   - 予算がしきい値に達したときに電子メールの通知を送信できます。
   - コスト管理データは、分析のために Azure Storage にエクスポートできます。
 
-    ![Azure Cost Management と Billing で予算を表示する](../../migrate/azure-best-practices/media/migrate-best-practices-costs/budget.png)
-    *Azure Cost Management と Billing の予算。*
+    ![Azure Cost Management + Billing で予算を表示する](../../migrate/azure-best-practices/media/migrate-best-practices-costs/budget.png)
+    *Azure Cost Management + Billing の予算。*
 
 - **コスト分析を行う:** コスト分析を取得し、組織のコストを探って分析すれば、コストがどのように生じるかを理解し、支出の傾向を識別する助けになります。
   - EA ユーザーがコスト分析を使用できます。
   - 部門、アカウント、サブスクリプション、リソース グループを含む多様な範囲別に、コスト分析データを表示できます。
   - 現在の月の総コストと、毎日の累積コストを表示するコスト分析を取得できます。
 
-    ![Azure Cost Management と Billingの分析](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
-    *図: Azure Cost Management と Billing の分析。*
+    ![Azure Cost Management + Billing の分析](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
+    *図: Azure Cost Management + Billing の分析。*
 
 - **推奨事項を取得する:** 最適化と効率向上が可能な方法を示す Advisor の推奨事項を取得します。
 
 **詳細情報:**
 
-- [Azure Cost Management と Billing の概要](/azure/cost-management/overview)を確認します。
-- [Azure Cost Management と Billing でクラウド投資を最適化する](/azure/cost-management-billing/costs/cost-mgt-best-practices)方法を確認します。
-- [Azure Cost Management と Billing のレポート](/azure/cost-management/use-reports)の使用方法を確認します。
+- [Azure Cost Management + Billing の概要](/azure/cost-management/overview)を確認します。
+- [Azure Cost Management + Billing でクラウド投資を最適化する](/azure/cost-management-billing/costs/cost-mgt-best-practices)方法を確認します。
+- [Azure Cost Management + Billing のレポート](/azure/cost-management/use-reports)の使用方法を確認します。
 - [推奨事項に従ってコストを最適化する](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)ことに関するチュートリアルを確認します。
 - [Azure Consumption API](/rest/api/consumption/budgets) について確認します。
 
