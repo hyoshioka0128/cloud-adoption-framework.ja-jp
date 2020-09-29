@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 01e95d7d2b8126903b4fe0bd8bbdbaa34f6fd5c6
-ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
+ms.openlocfilehash: 5fadef56e97fa51450e6f6b80aca0ab84038b020
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776025"
 ---
 # <a name="tools-and-templates"></a>ツールとテンプレート
 
@@ -37,9 +37,9 @@ ms.locfileid: "89427809"
 
 | リソース | 説明 |
 |----------|-------------|
-| [適合性チェックリスト](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | このチェックリストを使用して、導入のために、最初の移行ランディング ゾーンの準備、ブループリントのカスタマイズ、その拡張などの環境の準備を行います。 |
+| [準備&nbsp;チェックリスト](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | このチェックリストを使用して、導入のために、最初の移行ランディング ゾーンの準備、ブループリントのカスタマイズ、その拡張などの環境の準備を行います。 |
 | [名前付けおよびタグ付け規則の追跡テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/naming-and-tagging-conventions-tracking-template.xlsx) | 一貫性を確保し、オンボードする時間を短縮するために、名前付けとタグ付けの基準に関する決定事項を文書化します。 |
-| [CAF&nbsp;基盤&nbsp;ブループリント](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | 最初のガバナンス基盤となる軽量な実装を利用して、Azure でガバナンス ツールの実際の経験を提供します。 |
+| [CAF 基盤ブループリント](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | 最初のガバナンス基盤となる軽量な実装を利用して、Azure でガバナンス ツールの実際の経験を提供します。 |
 | [CAF 移行ランディング ゾーンのブループリント](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone) | オンプレミス環境から Azure に移行されるワークロードをホストするためのプロビジョニングと準備を行います。 このブループリントの詳細については、「[移行ランディング ゾーンをデプロイする](../ready/landing-zone/migrate-landing-zone.md)」を参照してください。 |
 | [Terraform モジュール](../ready/landing-zone/terraform-landing-zone.md) | Terraform バージョンの CAF ランディング ゾーン用のオープンソース コード ベース。 |
 | [Terraform レジストリ](https://registry.terraform.io/search?q=aztfmod) | Terraform のレジストリ Web サイト。フィルター処理されて、Terraform でランディング ゾーンを作成するために必要なすべてのクラウド導入フレームワーク モジュールが一覧表示されます。 |
@@ -49,15 +49,20 @@ ms.locfileid: "89427809"
 | リソース | 説明 |
 |----------|-------------|
 | [ガバナンス ベンチマーク評価](https://cafbaseline.com) | 現在の状態と、ビジネス上の優先事項との間のギャップを特定し、それらのギャップに対処するのに役立つ適切なリソースを取得します。 |
-| [CAF&nbsp;基盤&nbsp;ブループリント](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Azure でガバナンス ツールに関する実際の経験を提供するための、最初のガバナンス基盤となる軽量な実装。 |
-| [ガバナンス規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/governance-discipline-template.docx) | ガバナンスの各規範を適用するために使用される、ガバナンス プロセスの基本セットを定義します。 |
+| [CAF 基盤ブループリント](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Azure でガバナンス ツールに関する実際の経験を提供するための、最初のガバナンス基盤となる軽量な実装。 |
+| [ガバナンス&nbsp;規範&nbsp;テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/governance-discipline-template.docx) | ガバナンスの各規範を適用するために使用される、ガバナンス プロセスの基本セットを定義します。 |
 | [Cost Management 規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/cost-management-discipline-template.docx) | コスト管理に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [デプロイ高速化規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/deployment-acceleration-discipline-template.docx) | デプロイの高速化に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [ID ベースライン規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | ID の要件に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [リソースの整合性規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | リソースの整合性に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [セキュリティ ベースライン規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | セキュリティ ベースラインに重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
-| [Azure Governance Vizualizer - AzGovViz](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | AzGovViz は、Azure テナントの管理グループ階層をサブスクリプション レベルまで反復処理する PowerShell スクリプトです。 Azure Policy、RBAC、ブループリントなど、最も関連する Azure のガバナンス機能をキャプチャします。 収集されたデータから、AzGovViz は階層マップを可視化し、テナントの概要を作成し、管理グループとサブスクリプションに関する詳細なスコープの分析情報を作成します。 |
+| [Azure のガバナンス ビジュアライザー](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure のガバナンス ビジュアライザーは、Azure テナントの管理グループ階層をサブスクリプション レベルまで反復処理する PowerShell スクリプトです。 Azure Policy、ロールベースのアクセス制御 (RBAC)、Azure Blueprints など、特に関連性の高い Azure のガバナンス機能からデータをキャプチャします。 このビジュアライザーは、収集されたデータから階層マップを表示し、テナントの概要を作成し、管理グループとサブスクリプションに関する詳細なスコープの分析情報を作成します。 |
 
+## <a name="migrate"></a>移行
+
+| リソース | 説明 |
+|----------|-------------|
+| [データセンターの移行の検出チェックリスト](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/migrate/datacenter-migration-discovery-checklist.docx) | このチェックリストで、データセンター内のワークロード、サーバー、その他の資産を特定するのに役立つ情報を確認してください。 この情報を使用すると、移行の計画に役立ちます。
 
 ## <a name="manage"></a>管理する
 

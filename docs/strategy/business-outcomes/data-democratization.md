@@ -7,12 +7,12 @@ ms.date: 05/22/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cb5ab9afdb8164aff0fb36c3494a40a2cc6529e0
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 81beb5d31a39b6c61c4d9c26649cd55a9c86b16b
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774257"
 ---
 # <a name="data-democratization"></a>データの民主化
 

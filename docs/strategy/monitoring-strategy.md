@@ -7,12 +7,12 @@ ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 04f051e141ebb849bc3981d0bdf5027092a583bd
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 86bc5245ba358d8f13e232f8342937b47588c7f7
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603660"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776263"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -60,7 +60,7 @@ ms.locfileid: "89603660"
 
 ## <a name="high-level-modeling"></a>高レベルのモデリング
 
-移行するサービスを決定するときは、リソースに慎重に投資する必要があります。 オンプレミスでは、監視についてすべての責任を所有し、大量の投資を行っています。 たとえば、SaaS サービスに移行する場合は、監視責任はなくなりません。 アクセスを必要とするユーザー、アラートを受け取るユーザー、少なくとも分析へのアクセスが必要なユーザーを決定します。 [Azure Monitor](/azure/azure-monitor/) と [Azure Arc](https://azure.microsoft.com/services/azure-arc/) は、Azure 内のリソースだけでなく、4 つのクラウド モデルすべてについて監視シナリオに対応できる柔軟性を備えた Azure サービスです。 次に示すように、一般的なクラウド モデルを超えて考える必要があります。 組織内の [Microsoft 365](/microsoft-365/?view=o365-worldwide) サービスによって配信される Microsoft Office アプリを使用している場合は、[Azure Security Center](/azure/security-center/) に加えて、Microsoft 365 を使用したセキュリティとコンプライアンスの監視も含める必要があります。 これには、企業ネットワークの外部にある ID、エンドポイント管理、デバイスの監視が含まれます。
+移行するサービスを決定するときは、リソースに慎重に投資する必要があります。 オンプレミスでは、監視についてすべての責任を所有し、大量の投資を行っています。 たとえば、SaaS サービスに移行する場合は、監視責任はなくなりません。 アクセスを必要とするユーザー、アラートを受け取るユーザー、少なくとも分析へのアクセスが必要なユーザーを決定します。 [Azure Monitor](/azure/azure-monitor/) と [Azure Arc](https://azure.microsoft.com/services/azure-arc/) は、Azure 内のリソースだけでなく、4 つのクラウド モデルすべてについて監視シナリオに対応できる柔軟性を備えた Azure サービスです。 次に示すように、一般的なクラウド モデルを超えて考える必要があります。 組織内の [Microsoft 365](/microsoft-365/?view=o365-worldwide) サービスによって配信される Microsoft Office アプリケーションを使用している場合は、[Azure Security Center](/azure/security-center/) に加えて、Microsoft 365 を使用したセキュリティとコンプライアンスの監視も含める必要があります。 これには、企業ネットワークの外部にある ID、エンドポイント管理、デバイスの監視が含まれます。
 
 ![クラウド モデルの図](./media/monitoring-strategy/cloud-models.png)
 
@@ -233,7 +233,7 @@ Azure Monitor では、運用をサポートし、ビジネス上の意思決定
 | 正常性と状態の監視 | サービスまたはコンポーネントの長期的な保証 (サービス レベル: 可用性、容量、パフォーマンス、セキュリティ、コンプライアンスなど) をまとめて総合的に監視、測定、学習、改善します。 正常なシステム、サービス、またはコンポーネントがオンラインになっており、安全で、準拠しています。 正常性の監視にはログが含まれており、リアルタイムの正常性状態とメトリックに関してステートフルです。 また、サービスの使用量に重点を置いたトレンド レポート、分析情報、傾向も含まれています。 |
 | 実用性の監視 | システムが価値を提供する方法の品質または定性的な側面を観察、測定、学習、改善します。 ユーザー エクスペリエンスは、監視ユース ケースの一種です。 |
 | セキュリティの監視 | サイバーセキュリティ戦略と、セキュリティ操作、ID とアクセス、情報保護、プライバシー、脅威管理、コンプライアンスなどの機能のサポートにより、保護を監視、測定、学習、改善します。 Azure Security Center と Azure Sentinel、および Microsoft 365 を使用して監視します。 |
-| コストの監視 | 新しい主要な目標として、Azure Monitor と Azure Cost Management および Billing を使用して使用量を監視し、コストを見積もります。 Azure Cost Management API では、多次元分析を使用してコストと使用状況データを探索する機能が提供されます。 |
+| コストの監視 | 新しい主要な目標として、Azure Monitor と Azure Cost Management + Billing を使用して使用を監視し、コストを見積もります。 Azure Cost Management + Billing の API では、多次元分析を使用してコストと使用データを探索する機能が提供されます。 |
 
 | 三次目標 | 目標と結果 |
 |---------------------|------------------|

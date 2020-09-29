@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 1b33489f16990d7b2677e1cb128c9c2dcce0c6aa
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7c24e03b2727e31a673675ba62fc76a90c117e03
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885713"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681274"
 ---
 # <a name="cloud-security-functions"></a>クラウド セキュリティ機能
 
@@ -29,14 +29,14 @@ ms.locfileid: "88885713"
 次の各記事では、各機能に関する情報を提供します。 各記事では、目標の概要、脅威環境やクラウド テクノロジの変化によって機能がどのように進化するか、およびその成功に不可欠な関係と依存関係について説明します。
 
 - [ポリシーと標準](./cloud-security-policy-standards.md)
-- [セキュリティ オペレーション センター (SOC)](./cloud-security-operations-center.md)
+- [セキュリティ運用](./cloud-security-operations-center.md)
 - [セキュリティのアーキテクチャ](./cloud-security-architecture.md)
 - [セキュリティ コンプライアンス管理](./cloud-security-compliance-management.md)
 - [人のセキュリティ](./cloud-security-people.md)
 - [アプリケーションのセキュリティと DevSecOps](./cloud-security-application-security-devsecops.md)
 - [データのセキュリティ](./cloud-security-data-security.md)
 - [インフラストラクチャとエンドポイント セキュリティ](./cloud-security-infrastructure-endpoint.md)
-- [ID とキー](./cloud-security-identity-keys.md)
+- [ID およびキー管理](./cloud-security-identity-keys.md)
 - [脅威インテリジェンス](./cloud-security-threat-intelligence.md)
 - [体制管理](./cloud-security-posture-management.md)
 - [インシデントの準備](./cloud-security-incident-preparation.md)

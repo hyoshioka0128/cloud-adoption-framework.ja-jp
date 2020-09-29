@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 11ec84ecf3cebed0f70cc23898984d7e362e1dc9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4f274de1e47699319ca366b13ab3f812a47fe96c
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881089"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775328"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure のデプロイ高速化ツール
 
@@ -23,7 +23,7 @@ ms.locfileid: "88881089"
 
 この規範をサポートするポリシーとプロセスを成熟させるのに役立つ Azure ツールの一覧を次に示します。
 
-|  | [Azure Policy](/azure/governance/policy/overview) | [Azure 管理グループ](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure Blueprint](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure Cost Management および Billing](/azure/cost-management) |
+|  | [Azure Policy](/azure/governance/policy/overview) | [Azure 管理グループ](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure Blueprint](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure Cost Management + Billing](/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 | **企業ポリシーを実装する**     | はい | いいえ  | いいえ  | いいえ | いいえ | いいえ |
 | **サブスクリプション間でポリシーを適用する**     | 必須 | はい  | いいえ  | いいえ | いいえ | いいえ |

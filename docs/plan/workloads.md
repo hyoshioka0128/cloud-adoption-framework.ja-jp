@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8a163d17a0c50d8482f3e311a4ae240f071b36c9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 10780fef6f7df67b98d72e7cbe522565ed0c1f08
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574314"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681343"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>クラウド導入計画のワークロードを定義し、優先順位を付ける
 
@@ -69,6 +69,9 @@ ms.locfileid: "88574314"
 | ワークロードの説明 | このワークロードが何をするかを一文で入力 |         |
 | 導入の動機 | このワークロードによって影響を受けるクラウド導入の動機 |         |
 | 主要スポンサー | 影響を受ける利害関係者のうち、前述の動機を要求している主要スポンサー |         |
+| 事業影響度 | このワークロードが受けるビジネス上の影響|         |
+| アプリケーションの影響 | このアプリケーションがビジネス プロセスに与える影響|         |
+| データの影響 | このデータがビジネスに与える影響|         |
 | 事業単位 | このワークロードのコストに責任を負う事業単位 |         |
 | ビジネス プロセス | ワークロードの変更によって影響を受ける業務プロセス |         |
 | ビジネス チーム | 変更によって影響を受けるビジネス チーム |         |

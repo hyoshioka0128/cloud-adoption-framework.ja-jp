@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 178217ef4cb3e4dc744a1c6d297ad4c8a993bcd5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8c5dd7d7e1b40172c6dc996bc865d72ac532f50c
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572920"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681414"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>クラウド導入計画と Azure DevOps
 
@@ -60,12 +60,12 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 
 ## <a name="align-the-cloud-adoption-plan"></a>クラウド導入計画を調整する
 
-クラウド導入ライフサイクルの戦略と計画の段階の概要ページはそれぞれ、[戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を参照します。 このテンプレートでは、クラウド導入計画のテンプレートを導入用の特定の計画に合わせて調整するための決定事項およびデータ ポイントが整理されています。 まだ行ってない場合は、新しいプロジェクトを調整する前に、[戦略](../strategy/index.md)と[計画](../plan/index.md)に関連した演習を完了することをお勧めします。
+戦略の手法と計画の手法の概要ページは、それぞれ[戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)を参照しています。 このテンプレートでは、クラウド導入計画のテンプレートを導入用の特定の計画に合わせて調整するための決定事項およびデータ ポイントが整理されています。 新しいプロジェクトを配置する前に、[戦略の手法](../strategy/index.md)と[計画の手法](../plan/index.md)の演習を完了することを検討してください。
 
 次の記事では、クラウド導入計画の調整がサポートされています。
 
 - [ワークロード](./workloads.md):移行または最新化の対象となる各ワークロードを取り込むために、クラウド移行エピック内の機能を調整します。 これらの機能を追加して変更することで、上位 10 個のワークロードを移行する作業を取り込みます。
-- [資産](./assets.md):各資産 (VM、アプリケーション、またはデータ) は、各ワークロードの下のユーザー ストーリーで表現されます。 これらのユーザー ストーリーを追加し、デジタル資産に合うように変更します。
+- [資産](./assets.md):各資産 (仮想マシン、アプリケーション、またはデータ) は、各ワークロードの下のユーザー ストーリーで表現されます。 これらのユーザー ストーリーを追加し、デジタル資産に合うように変更します。
 - [合理化](./review-rationalization.md):各ワークロードが定義されると、そのワークロードに関する初期の想定に疑問が生じる場合があります。 この結果、各資産のタスクが変更されることがあります。
 - [リリース計画を作成する](./iteration-paths.md):イテレーション パスは、作業を各種リリースやイテレーションに合わせることでリリース計画を確立します。
 - [タイムラインを確立する](./timelines.md):各イテレーションの開始日と終了日を定義すると、プロジェクト全体を管理するタイムラインが作成されます。

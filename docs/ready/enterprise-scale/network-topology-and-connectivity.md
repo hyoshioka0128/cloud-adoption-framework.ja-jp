@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1f315f1c07ce381043b5f338fd7602678908cb63
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 9592e0007e2d9d6be5ad675573184b193bd1b9f9
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602239"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776382"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -174,9 +174,9 @@ Virtual WAN は、大規模な相互接続の要件を満たすために使用�
 
 - パートナーのネットワーク テクノロジと NVA をデプロイするときは、パートナー ベンダーのガイダンスに従って、Azure ネットワークと競合する構成がないようにします。
 
-- Azure Virtual WAN 上にトランジット ネットワークを構築しないでください。 パートナー NVA を使用する機能など、推移的ネットワーク トポロジのすべての要件は、Virtual WAN によって満たされます。
+- Azure Virtual WAN 上にトランジット ネットワークを構築しないでください。 サードパーティの NVA を使用する機能など、推移的ネットワーク トポロジのすべての要件は、Virtual WAN によって満たされます。 Azure Virtual WAN 上に転送ネットワークを構築すると、冗長性が向上し、複雑さも増します。 
 
-- Azure リージョン間の Azure リソースの接続には、Multiprotocol Label Switching (MPLS) などの既存のオンプレミス ネットワークを使用しないでください。 Azure のネットワーク テクノロジでは、Microsoft のバックボーンを通じて複数のリージョンにわたる Azure リソースの相互接続がサポートされています。
+- Azure のネットワーク テクノロジでは、Microsoft のバックボーンを通じて複数のリージョンにわたる Azure リソースの相互接続がサポートされているため、Azure リージョン間の Azure リソースの接続には、Multiprotocol Label Switching (MPLS) などの既存のオンプレミス ネットワークを使用しないでください。 これは、Microsoft バックボーンのパフォーマンスとアップタイムの特性、およびルーティングの簡単さによるものです。 この提案は、Microsoft バックボーンのパフォーマンスとアップタイムの特性に対応しています。 また、簡単なルーティングも推奨されます。
 
 - Virtual WAN に基づいていないハブ アンド スポーク ネットワーク トポロジから移行するブラウンフィールドのシナリオについては、「[Azure Virtual WAN に移行する](/azure/virtual-wan/migrate-from-hub-spoke-topology)」を参照してください。
 
@@ -246,7 +246,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
   - 集中型 NVA と複雑できめ細かいルーティングに大きく依存する。
 
-- リージョン デプロイの場合は、主にハブ アンド スポーク トポロジが使用されます。 ExpressRoute 経由のクロスプレミス接続、ブランチ接続用の VPN、NVA と UDR を介したスポーク間接続、NVA によるインターネット送信保護には、中央ハブ仮想ネットワークに対して仮想ネットワーク ピアリングで接続する、ランディング ゾーン仮想ネットワークを使用します。 次の図はこのワークフローを示したものです。
+- リージョン デプロイの場合は、主にハブ アンド スポーク トポロジが使用されます。 ExpressRoute 経由のクロスプレミス接続、ブランチ接続用の VPN、NVA と UDR を介したスポーク間接続、NVA によるインターネット送信保護には、中央ハブ仮想ネットワークに対して仮想ネットワーク ピアリングで接続する、ランディング ゾーン仮想ネットワークを使用します。 次の図はこのワークフローを示したものです。  これにより、適切なトラフィック制御によって、セグメント化と検査のためのほとんどの要件を満たすことができます。
 
   ![ハブ アンド スポーク ネットワーク トポロジを示す図。](./media/hub-and-spoke-topology.png)
 
@@ -288,7 +288,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - お客様の組織が、2 つを超える Azure リージョン間でのハブ アンド スポーク ネットワーク アーキテクチャを必要としており、Azure リージョンをまたぐランディング ゾーン仮想ネットワーク間でグローバルなトランジット接続が必要な場合。 グローバル仮想ネットワーク ピアリングで中央ハブ仮想ネットワークを相互に接続し、UDR と NVA を使用してグローバル トランジット ルーティングを有効にすることで、このアーキテクチャを実装できます。 複雑さと管理オーバーヘッドが高いため、Virtual WAN を使用してグローバル トランジット ネットワーク アーキテクチャをデプロイすることをお勧めします。
 
-- Azure 上のネットワークのエンド ツー エンドの状態を監視するには、[Azure Monitor ネットワーク分析情報](/azure/azure-monitor/insights/network-insights-overview) (現在プレビュー段階) を使用します。
+- Azure 上のネットワークのエンドツーエンドの状態を監視するには、[Azure Monitor for Networks (プレビュー)](/azure/azure-monitor/insights/network-insights-overview) を使用します。
 
 - 中央ハブ仮想ネットワークあたり 200 個より多くのピアリング接続を作成しないでください。 仮想ネットワークでは最大 500 個のピアリング接続がサポートされていますが、プライベート ピアリングを使用する ExpressRoute では、Azure からオンプレミスへのアドバタイズに対してサポートされるプレフィックスが最大 200 個です。
 
@@ -309,9 +309,6 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 - ExpressRoute Global Reach は、多くの [ExpressRoute ピアリングの場所](/azure/expressroute/expressroute-global-reach#availability)で利用できます。
 
 - ExpressRoute Direct では、ExpressRoute Direct のポート容量 (10 Gbps または 100 Gbps) まで、追加コストなしで複数の ExpressRoute 回線を作成することができます。 また、Microsoft の ExpressRoute ルーターに直接接続することもできます。 100 Gbps SKU の場合、最小の回線帯域幅は 5 Gbps です。 10 Gbps SKU の場合、最小の回線帯域幅は 1 Gbps です。
-
-<!-- cSpell:ignore prepending -->
-<!-- docsTest:ignore "AS PATH prepending" -->
 
 **設計上の推奨事項:**
 
@@ -527,7 +524,7 @@ _図 8:暗号化のフロー。_
 
 **設計上の考慮事項:**
 
-<!-- docsTest:ignore TAP -->
+<!-- docutune:ignore TAP -->
 
 - [Azure 仮想ネットワーク ターミナル アクセス ポイント (TAP)](/azure/virtual-network/virtual-network-tap-overview) はプレビュー段階です。 可用性の詳細については、`azurevnettap@microsoft.com` にお問い合わせください。
 

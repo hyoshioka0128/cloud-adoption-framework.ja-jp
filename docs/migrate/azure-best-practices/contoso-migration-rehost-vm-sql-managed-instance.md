@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: da6c543bf16434bf0228df3a1bcac163ef1fe4ab
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 546c5103489ce15f066d9856078abadc6440cef2
+ms.sourcegitcommit: 8d3a8e7211ceb94ba351914a622f293f72286039
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602589"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90988892"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -87,7 +87,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 | 考慮事項 | 詳細 |
 | --- | --- |
-| **長所** | `WEBVM` は変更なしで Azure に移されるので、移行が簡単になります。 <br><br> SQL Managed Instance では、Contoso の技術面の要件と目標がサポートされています。 <br><br> SQL Managed Instance では、SQL Server 2008 R2 から移行するときに、Contoso の現在のデプロイとの完全な互換性が提供されます。 <br><br> Contoso はソフトウェア アシュアランスへの投資を活用し、SQL Server および Windows Server 向け Azure ハイブリッド特典を使用できます。 <br><br> Contoso は、将来の移行で Azure Database Migration Service を再利用できます。 <br><br> SQL Managed Instance には、Contoso が構成する必要のないフォールト トレランスが組み込まれています。 この機能により、データ層が単一フェールオーバー ポイントではなくなります。 |
+| **長所** | `WEBVM` は変更なしで Azure に移されるので、移行が簡単になります。 <br><br> SQL Managed Instance では、Contoso の技術面の要件と目標がサポートされています。 <br><br> SQL Managed Instance では、SQL Server 2008 R2 から移行するときに、Contoso の現在のデプロイとの完全な互換性が提供されます。 <br><br> Contoso はソフトウェア アシュアランスへの投資を活用し、SQL Server および Windows Server 向け Azure ハイブリッド特典を使用できます。 <br><br> Contoso は、将来の移行で Azure Database Migration Service を再利用できます。 <br><br> SQL Managed Instance には、Contoso が構成する必要のないフォールト トレランスが組み込まれています。 この機能により、データ層が単一障害点ではなくなります。 |
 | **短所** | `WEBVM` では、Windows Server 2008 R2 が実行されています。 このオペレーティング システムは Azure でサポートされていますが、サポート対象のプラットフォームではなくなりました。 詳細については、[Microsoft SQL Server 製品のサポート ポリシー](https://support.microsoft.com/help/956893)に関するページをご覧ください。 <br><br> `WEBVM` だけがサービスを提供しているので、Web 層はまだ単一のフェールオーバー ポイントです。 <br><br> Contoso は、Azure App Service などのマネージド サービスに移行するのではなく、アプリケーション Web 層を VM として引き続きサポートする必要があります。 <br><br> データ層については、Contoso がオペレーティング システムまたはデータベース サーバーをカスタマイズする場合や、SQL Server と共にサードパーティ アプリケーションを実行する場合、SQL Managed Instance は最適なソリューションではない可能性があります。 IaaS VM で SQL Server を実行すると、このような柔軟性が提供されます。 |
 
 ### <a name="migration-process"></a>移行プロセス

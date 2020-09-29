@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 01e9be8d8dde337dd732933b42b61f881bc2c474
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: e35ec6e6db843e352f05dc6904cd1245ea5bd822
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774224"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 
@@ -25,7 +25,7 @@ ms.locfileid: "89603775"
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>通説:プロセスの早い段階で合理化に関する決定を下すことは容易である
 
- 的確に合理化するには、ワークロードと関連する資産 (アプリ、インフラストラクチャ、データ) の深い知識が必要です。 最も重要なのは、的確に合理化するための意思決定には時間がかかることです。 [増分型の合理化プロセス](./rationalize.md#incremental-rationalization)の使用をお勧めします。
+ 的確に合理化するには、ワークロードと関連する資産 (アプリケーション、インフラストラクチャ、データ) の深い知識が必要です。 最も重要なのは、的確に合理化するための意思決定には時間がかかることです。 [増分型の合理化プロセス](./rationalize.md#incremental-rationalization)の使用をお勧めします。
 
 ### <a name="myth-cloud-adoption-has-to-wait-for-all-workloads-to-be-rationalized"></a>通説:クラウドの導入はすべてのワークロードが合理化されるまで待つべきである
 

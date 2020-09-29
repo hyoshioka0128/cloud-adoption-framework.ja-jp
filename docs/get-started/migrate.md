@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c806816f8d85e71f1b310dab0e89013e9946bc03
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a82428e522e263a7e4610ed1b202a8bada19456e
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603318"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775668"
 ---
 # <a name="get-started-accelerate-migration"></a>作業を開始しましょう。移行を促進する
 
@@ -178,7 +178,7 @@ ms.locfileid: "89603318"
 
 反復するたびに、クラウド導入チームのワークロード移行スキルが上達していきます。 これらの手順は、技術チームの能力を成熟させるのに役立ちます。
 
-1. [Azure 移行ガイド](../migrate/azure-migration-guide/index.md)で紹介されているツールを使用して、純粋なサービスとしての情報 (IaaS) アプローチとして最初のワークロードを移行します。
+1. [Azure 移行ガイド](../migrate/azure-migration-guide/index.md)で紹介されているツールを使用して、純粋なサービスとしてのインフラストラクチャ (IaaS) アプローチとして最初のワークロードを移行します。
 2. [移行の例](../migrate/azure-best-practices/contoso-migration-overview.md)に関するページを使用して、移行と最新化を使用するようにツール オプションを拡張します。
 3. [Azure クラウド移行のベスト プラクティス](../migrate/azure-best-practices/index.md)で紹介されている、より幅広いアプローチを使用して、技術的戦略を作成します。
 4. [移行プロセスの改善](../migrate/migration-considerations/index.md)に関する記事で紹介されている効率的な移行ファクトリ アプローチによって、一貫性、信頼性、パフォーマンスを向上させます。
@@ -239,7 +239,7 @@ ms.locfileid: "89603318"
 
 ## <a name="value-statement"></a>バリュー ステートメント
 
-これらの手順に従うと、利害関係者の意見のすり合わせと変更管理が向上し、チームの移行作業が促進されます。 これらの手順を実行すると、プロセスに時間がかかる可能性があります。 また、これらの手順により、一般的な阻害要因が取り除かれ、ビジネス価値がより迅速に実現されます。
+これらの手順に従うと、利害関係者の意見のすり合わせと変更管理が向上し、チームの移行作業が促進されます。 また、これらの手順により、一般的な阻害要因が取り除かれ、ビジネス価値がより迅速に実現されます。
 
 ## <a name="next-steps"></a>次のステップ
 

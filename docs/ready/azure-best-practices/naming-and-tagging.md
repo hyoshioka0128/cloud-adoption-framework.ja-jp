@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 01920086c75c235662b098a76afa2e8a4afc5a02
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 45848c9291fe64398f096761d62556cf50eff106
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877196"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776552"
 ---
-<!-- docsTest:disable -->
-<!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
+<!-- docutune:disable -->
+<!-- cSpell:ignore cdnp cdne westeurope usgovia accountlookup messagequery -->
 
 # <a name="recommended-naming-and-tagging-conventions"></a>推奨される名前付けおよびタグ付け規則
 
@@ -83,6 +83,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 
 | 資産の種類                      | 名前のプレフィックス |
 |---------------------------------|-------------|
+| 管理グループ                | mg-         |
 | Resource group                  | rg-         |
 | ポリシー定義               | policy-     |
 | API 管理サービス インスタンス | apim-       |
@@ -93,6 +94,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 |----------------------------------|-------------|
 | 仮想ネットワーク                  | vnet-       |
 | Subnet                           | snet-       |
+| 仮想ネットワーク ピアリング          | peer-       |
 | ネットワーク インターフェイス (NIC)          | nic-        |
 | パブリック IP アドレス                | pip-        |
 | ロード バランサー (内部)         | lbi-        |
@@ -104,7 +106,11 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | VPN 接続                   | cn-         |
 | Application gateway              | agw-        |
 | ルート テーブル                      | route-      |
+| ユーザー定義ルート (UDR)         | udr-        |
 | Traffic Manager プロファイル          | traf-       |
+| フロント ドア                       | fd-         |
+| CDN プロファイル                      | cdnp-       |
+| CDN エンドポイント                     | cdne-       |
 
 ### <a name="compute-and-web"></a>コンピューティングと Web
 
@@ -115,7 +121,8 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | 可用性セット            | avail-      |
 | VM ストレージ アカウント          | stvm        |
 | Azure Arc に接続されたコンピューター | arcm-       |
-| コンテナー インスタンス          | aci-        |
+| コンテナー レジストリ          | cr-         |
+| コンテナー インスタンス          | ci-         |
 | AKS クラスター                 | aks-        |
 | Service Fabric クラスター      | sf-         |
 | App Service 環境     | ase-        |
@@ -159,7 +166,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 
 | 資産の種類                      | 名前のプレフィックス |
 |---------------------------------|-------------|
-| Azure Analysis Services サーバー  | as-         |
+| Azure Analysis Services サーバー  | as          |
 | Azure Databricks ワークスペース      | dbw-        |
 | Azure Stream Analytics          | asa-        |
 | Azure Data Factory              | adf-        |
@@ -238,11 +245,12 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 
 ### <a name="example-names-general"></a>名前の例:全般
 
-| 資産の種類                      | Scope                              | Format                                                      | 例                                                                                                                |
-|---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| サブスクリプション                    | アカウント/ <br> Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001 |
-| Resource group                  | サブスクリプション                       | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-acctlookupsvc-share-001 <li> rg-ad-dir-services-shared-001 |
-| API 管理サービス インスタンス | グローバル                             | apim-\<App or service name\>                                | apim-navigator-prod                                                                                                     |
+| 資産の種類                      | Scope                                 | Format                                                      | 例                                                                                           |
+|---------------------------------|---------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| 管理グループ                | 事業単位または環境の種類 | mg-\<Business Unit\>\[-\<Environment type\>\]               | <li> mg-mktg <li> mg-hr <li> mg-corp-prod <li> mg-fin-client                                       |
+| サブスクリプション                    | アカウント/ <br> Enterprise Agreement    | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001                                        |
+| Resource group                  | サブスクリプション                          | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-acctlookupsvc-share-001 <li> rg-ad-dir-services-shared-001 |
+| API 管理サービス インスタンス | グローバル                                | apim-\<App or service name\>                                | apim-navigator-prod                                                                                |
 
 > [!NOTE]
 > 上記を含め、このドキュメント内にある名前の例では、3 桁の埋め込み (\<\#\#\#\>) が示されています。 つまり、  mktg-prod-*001*

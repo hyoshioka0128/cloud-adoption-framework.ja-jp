@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 54d35e4b895961eb290de9ab151fa1332bb0bc8d
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: bb1c7ff3de8fae692decd61c0f939ddd21239163
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775685"
 ---
 # <a name="get-started-manage-cloud-costs"></a>作業を開始しましょう。クラウド コストを管理する
 
@@ -76,7 +76,7 @@ ms.locfileid: "89603323"
 **成果物:**
 
 - [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)に、動機、成果、業務上の正当な理由を記録します。
-- Azure Cost Management と Billing を使用して最初の予算を作成します。
+- Azure Cost Management + Billing を使用して最初の予算を作成します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 
@@ -104,7 +104,7 @@ ms.locfileid: "89603323"
 - [インベントリの収集](../digital-estate/inventory.md)。 導入前に、デジタル資産を分析するためのデータ ソースを確立します。
 - [ベスト プラクティス:Azure Migrate](../plan/contoso-migration-assessment.md)。 Azure Migrate を使用してインベントリを収集します。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization)。 段階的な合理化では、予算を作成するために定量分析でクラウドの候補を特定します。
-- [コスト モデルと予測モデルの調整](../digital-estate/calculate.md)。 Azure Cost Management と Billing を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コストおよび予測のモデルを対応付けます。
+- [コスト モデルと予測モデルの調整](../digital-estate/calculate.md)。 Azure Cost Management + Billing を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コストと予測モデルを対応付けます。
 - [クラウド導入計画の作成](../plan/plan-intro.md#build-your-cloud-adoption-plan)。 実用的なワークロード、資産、タイムラインの詳細を含む計画を作成します。 この計画は、一定期間にわたる支出 (またはコスト予測) の基礎となります。 "*一定期間にわたる支出*" は、コスト管理ガバナンス規範内で、すべての実施可能な最適化分析のための最初のベースラインになります。
 
 <br>

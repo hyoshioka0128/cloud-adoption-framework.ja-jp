@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e276ce6c1fd03afadb757f68471684df48f6d310
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 7ef09f13acdcc29e3314e2684a307efba788120c
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775600"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>作業を開始しましょう。適切な管理によって信頼性を向上させる
 
@@ -125,7 +125,7 @@ ms.locfileid: "89603175"
 - [インベントリの収集](../digital-estate/inventory.md): 導入前に、デジタル資産を分析するためのデータ ソースを確立します。
 - [ベスト プラクティス:Azure Migrate](../plan/contoso-migration-assessment.md):Azure Migrate を使用してインベントリを収集します。
 - [増分型の合理化](../digital-estate/rationalize.md#incremental-rationalization):増分型の合理化の間は、定量分析により予算を作成するためにクラウドの候補を特定することができます。
-- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management と Billing を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コストおよび予測のモデルを対応付けます。
+- [コスト モデルと予測モデルの対応付け](../digital-estate/calculate.md): Azure Cost Management + Billing を使用して、[予算を作成](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)することにより、コストと予測モデルを対応付けます。
 - [クラウド導入計画の作成](../plan/plan-intro.md#build-your-cloud-adoption-plan): 実用的なワークロード、資産、タイムラインの詳細を含む計画を作成します。
 
 <br>

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 399f6e4d6506539c59d17670ba6f55f2df82a0c5
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 013c21eaf964d09f07122c9b6deb1b1539558541
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775753"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -121,7 +121,8 @@ Contoso が移行を実行する方法を次に示します。
 
 ## <a name="step-1-assess-and-migrate-the-web-apps"></a>手順 1:Web アプリの評価と移行
 
-Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、Web アプリを評価し、移行します。 このプロセスでは、[の Microsoft ラーニング パス](/learn/paths/migrate-dotnet-apps-azure/)をガイドとして使用します。 簡単に言えば、管理者は次の操作を実行します。
+Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、Web アプリを評価し、移行します。 このプロセスでは、[ASP.NET アプリを Azure に移行するラーニング パス](/learn/paths/migrate-dotnet-apps-azure/)をガイドとして使用します。
+管理者は、次のアクションを実行します。
 
 - Azure [App Service 移行評価](https://appmigration.microsoft.com/assessment/)ツールを使用して、Web アプリ間の依存関係を評価し、オンプレミスの Web アプリと Azure App Service でサポートされているものの間に非互換性がないかどうかを判断します。
 

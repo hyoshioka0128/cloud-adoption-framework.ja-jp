@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 355b6fbb79f4e00333f5b09cae4f8d66cc57e532
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2f0aa5860ab3ca61a068ad160f7045c5318d084e
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774189"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>コスト モデルをデジタル資産に対応付けて、クラウドのコストを予測します
 
@@ -27,4 +27,4 @@ Azure の料金計算ツールを使用すると、透明性と正確性を確�
 
 - [Azure 料金計算ツール](https://azure.microsoft.com/pricing/calculator):料金計算ツールを使用して、予想される毎月の請求額を見積もります。 課金ポータルを使用して、いつでも実際のアカウントの使用状況と課金を追跡できます。 設定した金額を超えたときに通知を希望する場合は、自動電子メール課金アラートを設定します。
 
-- [Azure Cost Management と Billing](/azure/cost-management-billing/cost-management-billing-overview):Azure Cost Management と Billing は、Azure や他のクラウド リソースを効果的に使用および管理するのに役立つコスト管理ソリューションです。 アプリケーション プログラム インターフェイス (API) を使用して、Azure、アマゾン ウェブ サービス、および Google Cloud Platform からクラウドの利用状況と課金データを収集します。 このデータを用いて、クラウド プラットフォーム全体でのリソースの使用量やコストを、一元化されたビューで完全に把握できます。 クラウドの使用量とクラウドの傾向を継続的に監視します。 予算を基準にして実際のクラウド支出を追跡し、予算オーバーを回避します。 通常とは異なる支出や、非効率的な使用を検知します。 履歴データを利用すれば、クラウドの使用状況や支出に対する予測の正確性が高まります。
+- [Azure Cost Management および Billing](/azure/cost-management-billing/cost-management-billing-overview):Azure Cost Management + Billing は、Azure や他のクラウド リソースを効果的に使用および管理するのに役立つコスト管理ソリューションです。 アプリケーション プログラム インターフェイス (API) を使用して、Azure、アマゾン ウェブ サービス、および Google Cloud Platform からクラウドの利用状況と課金データを収集します。 このデータを用いて、クラウド プラットフォーム全体でのリソースの使用量やコストを、一元化されたビューで完全に把握できます。 クラウドの使用量とクラウドの傾向を継続的に監視します。 予算を基準にして実際のクラウド支出を追跡し、予算オーバーを回避します。 通常とは異なる支出や、非効率的な使用を検知します。 履歴データを利用すれば、クラウドの使用状況や支出に対する予測の正確性が高まります。

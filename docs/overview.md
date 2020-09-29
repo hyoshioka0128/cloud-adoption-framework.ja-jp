@@ -1,6 +1,6 @@
 ---
 title: Azure 向けの Microsoft クラウド導入フレームワークのドキュメント
-description: クラウド導入ライフサイクルのすべてのフェーズで戦略を策定し、目的のビジネス成果を推進するためのツール、ガイダンス、体験談を入手できます。
+description: クラウド導入ライフサイクルで戦略を策定し、目的のビジネス成果を推進するためのツール、ガイダンス、体験談を入手できます。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 1e2c1cb95e80ba5aa4926807ef505d748013e060
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: d0f6c6348a7204d7991fb2be1a739addf4afe137
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604205"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776127"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークとは
 
@@ -27,7 +27,7 @@ Azure 向けの Microsoft クラウド導入フレームワークのベスト �
 
 <!-- markdownlint-enable MD034 -->
 
-クラウド導入フレームワークには、Microsoft の従業員、パートナー、顧客からのクラウド導入のベスト プラクティスがまとめられています。 お客様が導入作業中に目的のビジネス成果を推進できるように、テクノロジ、ビジネス、ユーザーに関する戦略の形成に役立つ一連のツール、ガイダンス、体験談が提供されます。 このガイダンスは、クラウド導入ライフサイクルの次のフェーズに対応しており、適切なタイミングで適切なガイダンスに簡単にアクセスできます。
+クラウド導入フレームワークには、Microsoft の従業員、パートナー、顧客からのクラウド導入のベスト プラクティスがまとめられています。 お客様がクラウドの導入作業中に目的のビジネス成果を推進できるように、テクノロジ、ビジネス、ユーザーに関する戦略の形成に役立つ一連のツール、ガイダンス、体験談が提供されます。 以下の各手法のガイダンスを確認すると、適切なタイミングで適切なガイダンスに簡単にアクセスできます。
 
 | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|--|--|
@@ -62,7 +62,7 @@ Azure 向けの Microsoft クラウド導入フレームワークのベスト �
 
 企業が Azure を初めて使用する場合は、[基本的な調整の決定について理解し、文書化する](./get-started/cloud-concepts.md)ことから始めます。 企業のデジタル変革にクラウドが含まれている場合、これらの基本的な概念を理解することで、プロセスの各手順の実行に役立ちます。
 
-<!-- docsTest:ignoreNextStep -->
+<!-- docutune:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
 > [開始するには](./get-started/index.md)

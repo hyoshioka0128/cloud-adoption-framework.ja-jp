@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 337e02f787c8ebcc18f206b4dfa87a894059262a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0d04ff202450bdc47eb80006ba58395a78dd329f
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884200"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775617"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>作業を開始しましょう。クラウド導入チームを構築する
 
@@ -21,6 +21,8 @@ ms.locfileid: "88884200"
 クラウド移行だけに専念しているクラウド導入チームもあれば、クラウド テクノロジを利用したイノベーションに注力しているクラウド導入チームもあります。 データセンターの完全な移行など、大規模な導入作業を完了するために必要な幅広い技術的専門知識を持つチームもあれば、技術的な焦点を絞ったチームもあります。
 
 特定の目標を達成するために、小規模のチームがプロジェクト間を移動する場合もあります。 たとえば、データ プラットフォーム スペシャリストのチームが、SQL Database 仮想マシン (VM) から SQL PaaS インスタンスへの変換の支援に注力することがあります。
+
+クラウド導入が広がると、お客様は[クラウド プラットフォーム機能](../../organize/cloud-platform.md)専用のチームからベネフィットが得られます。 このチームは、自動化されたデプロイとコードの再利用により、導入の成功を促進します。 クラウド プラットフォーム機能を重視するユーザーは、インフラストラクチャ、アプリケーションパターン、ガバナンス、その他のサポート資産を実装することで、さらなる効率性と一貫性を高め、組織内にクラウドの原則を定着させることができます。 小規模な組織や小規模の導入チームには、そのような専用のクラウド プラットフォーム チームがありません。 この重要なクラウドの構築を開始するには、導入チームに自動化機能を確立することをお勧めします。
 
 ![クラウド導入チームの構築を開始する](../../_images/get-started/adoption-team-map.png)
 
