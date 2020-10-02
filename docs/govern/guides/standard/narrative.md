@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 78468928e666d7c9db87f6b28d51fa1376fbd990
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 84df4aac039fdd0cde7c7c06fb72bd7cd918b39b
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604774"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108049"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
 
@@ -59,7 +59,9 @@ ms.locfileid: "89604774"
 
 - アプリケーション開発チームと BI チームは、顧客エンゲージメントと新製品のビジョンに基づいて、今後 24 か月間でクラウドベースのソリューションを運用環境にリリースしたいと考えています。
 
-- 今年、IT チームは、2,000 個の VM をクラウドに移行することで、DR データセンターのディザスター リカバリー ワークロードを廃止する予定です。 これにより、今後 5 年間で推定 2,500 万米国ドルのコスト削減が見込まれます。 ![今後 5 年間で 2,500 万米国ドルのコスト削減を示すオンプレミスのコストと Azure のコストの比較](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+- 今年、IT チームは、2,000 個の VM をクラウドに移行することで、DR データセンターのディザスター リカバリー ワークロードを廃止する予定です。 これにより、今後 5 年間で推定 2,500 万米国ドルのコスト削減が見込まれます。
+
+  ![今後 5 年間で 2,500 万米国ドルのコスト削減を示すオンプレミスのコストと Azure のコストの比較](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 
 - この会社は、割り当てられている資本コストを IT 部門内の運営費として再配分することで、IT 投資の方法を変えることを計画しています。 この変更により、コスト管理が強化され、IT 部門は他の計画されている作業を加速できます。
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a82428e522e263a7e4610ed1b202a8bada19456e
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 3df2987e8580b283766b672f2377c3388923fe21
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775668"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108256"
 ---
 # <a name="get-started-accelerate-migration"></a>作業を開始しましょう。移行を促進する
 
@@ -205,7 +205,8 @@ ms.locfileid: "90775668"
 
 - 初期のガバナンス基盤をデプロイします。
 - 今後の改善を計画するために、ガバナンス ベンチマークを完成させます。
-- タイムライン リスク: ポリシーの改善とガバナンスの実装は、1 つの規範につき 1 週間から 4 週間かかる場合があります。
+- タイムラインのリスク:
+  - ポリシーの改善とガバナンスの実装には、1 つの規範につき 1 から 4 週間かかる場合があります。
 
 <br>
 
