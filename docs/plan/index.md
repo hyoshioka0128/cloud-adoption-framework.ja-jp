@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 74cee491548c833924ce3439b86757dc203fd0a6
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: 1c137ac9519c7e35cebdf69ff5a7f6d7d8a1302a
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510466"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621554"
 ---
 # <a name="develop-a-cloud-adoption-plan"></a>クラウド導入計画を作成する
 
@@ -22,9 +22,9 @@ ms.locfileid: "89510466"
 
 | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
-| <br> ![1](../_images/icons/1.png) | <br> [デジタル資産](../digital-estate/rationalize.md):動機やビジネス成果に合わせた想定に基づき、デジタル資産の目録を作成し、合理化します。 |
-| <br> ![2](../_images/icons/2.png) | <br> [初期の組織配置](./initial-org-alignment.md):導入計画を支援する最初の編成調整を計画します。 |
-| <br> ![3](../_images/icons/3.png) | <br> [スキルの準備計画](./adapt-roles-skills-processes.md):スキルの準備不足に対処するための計画を立てる |
-| <br> ![4](../_images/icons/4.png) | <br> [クラウド導入計画](./plan-intro.md):デジタル資産、スキル、組織をまたいで変更を管理するクラウド導入計画を作成します。 |
+| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [デジタル資産](../digital-estate/rationalize.md):動機やビジネス成果に合わせた想定に基づき、デジタル資産の目録を作成し、合理化します。 |
+| <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [初期の組織配置](./initial-org-alignment.md):導入計画を支援する最初の編成調整を計画します。 |
+| <br> :::image type="icon" source="../_images/icons/3.png"::: | <br> [スキルの準備計画](./adapt-roles-skills-processes.md):スキルの準備不足に対処するための計画を立てる |
+| <br> :::image type="icon" source="../_images/icons/4.png"::: | <br> [クラウド導入計画](./plan-intro.md):デジタル資産、スキル、組織をまたいで変更を管理するクラウド導入計画を作成します。 |
 
 [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)をダウンロードし、クラウド導入戦略を構築しながら各演習の成果を記録します。 [クラウド合理化の 5 R](../digital-estate/5-rs-of-rationalization.md) について学習して、クラウド導入計画の立案に役立てます。

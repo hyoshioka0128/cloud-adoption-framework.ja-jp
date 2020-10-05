@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8318e2a6633221b6b94408f997b78bbca58b9595
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f9ca594839cbd1e5d5ff641c81b083d30cd4481b
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884591"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91620840"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 
@@ -29,7 +29,7 @@ ms.locfileid: "88884591"
   - [警告](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [定期的な支出の追跡とレポート](../../govern/cost-management/compliance-processes.md)
   - [実装後の最適化](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
-  - [コスト最適化戦術](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
+  - [コスト最適化戦術](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)
 - **運用管理:** 運用管理チームにとって、ビジネス コミットメントや SLA に対する可視性は、継続的な運用を行ううえで重要な側面です。 適切に管理するためには、[ミッション クリティカル度](../../manage/considerations/criticality.md)のタグ付けが必要です。
 - **セキュリティ:** データとセキュリティへの影響を分類することは、違反や他のセキュリティの問題が発生したときに、チームにとって重要なデータ ポイントです。 安全に運用するには、[データ分類](../../govern/policy-compliance/data-classification.md)のタグ付けが必要です。
 - **ガバナンスと規制に対するコンプライアンス:** リソース間の一貫性を維持することで、取り決められたポリシーとのずれを特定するのに役立ちます。 [このガバナンスの基礎に関する記事](../../govern/guides/complex/prescriptive-guidance.md#resource-tagging)では、ガバナンス プラクティスを展開するときに以下のいずれかのパターンがどのように役立つかを示します。 タグを使用して規制コンプライアンスを評価するのに類似のパターンを利用できます。

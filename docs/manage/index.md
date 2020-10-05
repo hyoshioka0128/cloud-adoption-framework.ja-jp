@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: be3c9b3781ac252e965a394e9fb35b2e91fca592
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: 589a8aab2baeb84acf0a6f942321fde49bf61b07
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510500"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621333"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド管理
 
@@ -24,10 +24,10 @@ ms.locfileid: "89510500"
 
 | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
-| <br> ![1](../_images/icons/1.png) | <br> [管理ベースラインの確立](./azure-management-guide/index.md):運用管理に対する最小限のコミットメントを提供するために必要な重要度の分類、クラウド管理ツール、プロセスを定義します。 |
-| <br> ![2](../_images/icons/2.png) | <br> [ビジネス コミットメントの定義](./considerations/business-alignment.md):サポートされているワークロードを文書化して、ビジネスに対する運用上のコミットメントを確立し、各ワークロードに対するクラウド管理への投資に同意します。 |
-| <br> ![3](../_images/icons/3.png) | <br> [管理ベースラインの展開](./best-practices.md):ビジネス コミットメントと運用上の決定に基づいて、含まれているベスト プラクティスを活用し、必要なクラウド管理ツールを実装します。 |
-| <br> ![4](../_images/icons/4.png) | <br> [高度な運用と設計の原則](./design-principles.md):より高いレベルのビジネス コミットメントを必要とするプラットフォームやワークロードでは、回復性と信頼性のコミットメントを提供するために、より深いアーキテクチャ レビューが必要になる場合があります。 |
+| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [管理ベースラインの確立](./azure-management-guide/index.md):運用管理に対する最小限のコミットメントを提供するために必要な重要度の分類、クラウド管理ツール、プロセスを定義します。 |
+| <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [ビジネス コミットメントの定義](./considerations/business-alignment.md):サポートされているワークロードを文書化して、ビジネスに対する運用上のコミットメントを確立し、各ワークロードに対するクラウド管理への投資に同意します。 |
+| <br> :::image type="icon" source="../_images/icons/3.png"::: | <br> [管理ベースラインの展開](./best-practices.md):ビジネス コミットメントと運用上の決定に基づいて、含まれているベスト プラクティスを活用し、必要なクラウド管理ツールを実装します。 |
+| <br> :::image type="icon" source="../_images/icons/4.png"::: | <br> [高度な運用と設計の原則](./design-principles.md):より高いレベルのビジネス コミットメントを必要とするプラットフォームやワークロードでは、回復性と信頼性のコミットメントを提供するために、より深いアーキテクチャ レビューが必要になる場合があります。 |
 
 前の手順では、クラウド導入フレームワークの管理手法を実行するためのアクションにつながるアプローチを作成します。
 

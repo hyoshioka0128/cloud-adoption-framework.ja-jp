@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 4a0e0a00a644d1034593752bafe453ecbba07815
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: 2f00f46c7b3ccf0c716d01353e5ffa61437c7188
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510568"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621401"
 ---
 # <a name="develop-a-cloud-adoption-strategy"></a>クラウド導入戦略を作成する
 
@@ -22,9 +22,9 @@ ms.locfileid: "89510568"
 
 | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
-| <br> ![1](../_images/icons/1.png) | <br> [動機を定義して文書化する](./motivations.md): 主要な利害関係者とエグゼクティブに会い、クラウド導入の背後にある動機を記録します。 |
-| <br> ![2](../_images/icons/2.png) | <br> [ビジネス成果を文書化する](./business-outcomes/index.md): 動機をもつ利害関係者やエグゼクティブに特定の事業成果を記録してもらいます。 |
-| <br> ![3](../_images/icons/3.png) | <br> [ビジネス ケースを開発する](./cloud-migration-business-case.md): 動機や成果を支援する財務モデルを検証するためのビジネス ケースを開発します。 |
-| <br> ![4](../_images/icons/4.png) | <br> [最初の適切なプロジェクトを選択する](./first-adoption-project.md): 最初のクラウド導入プロジェクトは、技術的な作業と動機の足並みを揃えるのに役立ちます。 この記事は、最初のプロジェクトを慎重に選択する際に役立ちます。 |
+| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [動機を定義して文書化する](./motivations.md): 主要な利害関係者とエグゼクティブに会い、クラウド導入の背後にある動機を記録します。 |
+| <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [ビジネス成果を文書化する](./business-outcomes/index.md): 動機をもつ利害関係者やエグゼクティブに特定の事業成果を記録してもらいます。 |
+| <br> :::image type="icon" source="../_images/icons/3.png"::: | <br> [ビジネス ケースを開発する](./cloud-migration-business-case.md): 動機や成果を支援する財務モデルを検証するためのビジネス ケースを開発します。 |
+| <br> :::image type="icon" source="../_images/icons/4.png"::: | <br> [最初の適切なプロジェクトを選択する](./first-adoption-project.md): 最初のクラウド導入プロジェクトは、技術的な作業と動機の足並みを揃えるのに役立ちます。 この記事は、最初のプロジェクトを慎重に選択する際に役立ちます。 |
 
 [戦略と計画のテンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)をダウンロードして、クラウド導入戦略を構築し、上記で説明した各手順の成果を追跡します。

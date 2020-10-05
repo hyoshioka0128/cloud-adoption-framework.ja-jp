@@ -7,12 +7,12 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: caa399f50742978f20cca49fc8a8fc9f3f10b425
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cb923e88d1bcbea21c3e38ecba7d9eda7999eff6
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885458"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621486"
 ---
 <!-- docutune:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
@@ -25,7 +25,7 @@ Azure と Azure Migrate は、どちらも Microsoft テクノロジをホスト
 
 以下の図と表は、移行と最新化のための同じ反復的な Migrate の手法を採用するいくつかのシナリオをまとめたものです。
 
-![クラウド導入フレームワーク移行モデルの図。](../_images/migrate/one-migrate.png)
+![必要とされる VM、アプリ、データ、およびハイブリッド リソースを示すクラウド導入フレームワーク移行モデルの図。](../_images/migrate/one-migrate.png)
 
 | | | | |
 |---------|---------|---------|---------|
@@ -39,7 +39,7 @@ Azure と Azure Migrate は、どちらも Microsoft テクノロジをホスト
 
 上記の各移行シナリオでは、次に示すように、既存のワークロードをクラウドに移行するときに、同じ基本的なプロセスに従って作業を進めます。
 
-![クラウド導入フレームワーク移行モデルの図。](../_images/migrate/methodology.png)
+![移行の段階と移行作業を示すクラウド導入フレームワーク移行モデルの図。](../_images/migrate/methodology.png)
 
 各シナリオで、複数のワークロードのリリースをガイドするための移行を段階的に構築します。 計画および準備の手法を通じてクラウド導入計画と Azure ランディング ゾーンを確立すると、移行の段階に構造を追加するのに役立ちます。
 

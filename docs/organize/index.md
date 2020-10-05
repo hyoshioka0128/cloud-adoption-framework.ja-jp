@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c6f0c69b37f2f1409d0812701cb089092ae8af2d
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: 4cceead66e21442458f277b7ac0debbd2742ddfd
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510534"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621537"
 ---
 # <a name="manage-organizational-alignment"></a>組織の配置を管理する
 
@@ -23,10 +23,10 @@ ms.locfileid: "89510534"
 
 | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
-| <br> ![1](../_images/icons/1.png) | <br> [構造の種類](#structure-type):実際の運用モデルに最も適した組織構造の種類を定義します。 |
-| <br> ![2](../_images/icons/2.png) | <br> [クラウドの職務](#understand-required-cloud-functions):クラウドの導入と運用に必要なクラウドの職能について説明します。 |
-| <br> ![3](../_images/icons/3.png) | <br> [チーム構造を成熟させる](./organization-structures.md):さまざまなクラウドの職務を遂行できるチームを定義します。 |
-| <br> ![4](../_images/icons/4.png) | <br> [RACI マトリックス](./raci-alignment.md):明確に定義された役割は、どのような運用モデルにおいても重要な側面です。 提供されている RACI マトリックスを使用して、クラウド運用モデルのさまざまな機能について、実行責任、説明責任、協業、および報告の役割を各チームにマップします。 |
+| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [構造の種類](#structure-type):実際の運用モデルに最も適した組織構造の種類を定義します。 |
+| <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [クラウドの職務](#understand-required-cloud-functions):クラウドの導入と運用に必要なクラウドの職能について説明します。 |
+| <br> :::image type="icon" source="../_images/icons/3.png"::: | <br> [チーム構造を成熟させる](./organization-structures.md):さまざまなクラウドの職務を遂行できるチームを定義します。 |
+| <br> :::image type="icon" source="../_images/icons/4.png"::: | <br> [RACI マトリックス](./raci-alignment.md):明確に定義された役割は、どのような運用モデルにおいても重要な側面です。 提供されている RACI マトリックスを使用して、クラウド運用モデルのさまざまな機能について、実行責任、説明責任、協業、および報告の役割を各チームにマップします。 |
 
 ## <a name="structure-type"></a>構造の種類
 

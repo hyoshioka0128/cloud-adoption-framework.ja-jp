@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 5c4762e71a88f06520081ba9bcb4b382e7e1bd74
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 21fd1e6f0803ee8be10ec8dc928bb95120e3bb03
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776059"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621418"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -24,10 +24,10 @@ ms.locfileid: "90776059"
 
 | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
-| <br> ![1](../_images/icons/1.png) | <br> [最初のワークロードを移行する](./azure-migration-guide/index.md):「Azure 移行ガイド」を使用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。 |
-| <br> ![2](../_images/icons/2.png) | <br> [移行シナリオ](./azure-best-practices/index.md):追加の移行ツールとアプローチを使用して、その他の移行シナリオに対処します。 |
-| <br> ![3](../_images/icons/3.png) | <br> [ベスト プラクティス](./azure-best-practices/index.md):一貫したベスト プラクティスの適用によって、移行の一般的なニーズに対処します。 |
-| <br> ![4](../_images/icons/4.png) | <br> [プロセス改善](./migration-considerations/index.md):移行はプロセス負荷の高い行為です。 移行作業の増加に応じて、これらのプロセス改善を使用して、移行のさまざまな側面を評価し、成熟させてください。 |
+| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [最初のワークロードを移行する](./azure-migration-guide/index.md):「Azure 移行ガイド」を使用して、Azure のネイティブ ツールと移行アプローチについて理解を深めてください。 |
+| <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [移行シナリオ](./azure-best-practices/index.md):追加の移行ツールとアプローチを使用して、その他の移行シナリオに対処します。 |
+| <br> :::image type="icon" source="../_images/icons/3.png"::: | <br> [ベスト プラクティス](./azure-best-practices/index.md):一貫したベスト プラクティスの適用によって、移行の一般的なニーズに対処します。 |
+| <br> :::image type="icon" source="../_images/icons/4.png"::: | <br> [プロセス改善](./migration-considerations/index.md):移行はプロセス負荷の高い行為です。 移行作業の増加に応じて、これらのプロセス改善を使用して、移行のさまざまな側面を評価し、成熟させてください。 |
 
 移行手法と上記の手順は、次の前提に基づいています。
 

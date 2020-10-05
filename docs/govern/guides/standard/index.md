@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0b7f0baee83afa1e0765a7855b44d9da1c17eec8
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: dd8b8e0c900b9e7332b4ecd25b163b25f9019e6d
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604826"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91620738"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準的な企業のガバナンス ガイド
 
@@ -65,7 +65,7 @@ ms.locfileid: "89604826"
 
 MVP では、企業ポリシーを迅速に適用するために、[デプロイ高速化規範](../../deployment-acceleration/index.md)のプラクティスとツールが確立されます。 具体的には、MVP では、Azure Blueprints、Azure Policy、Azure 管理グループを使用して、この架空の会社の物語で定義されているいくつかの基本的な企業ポリシーが適用されます。 それらの企業ポリシーが Resource Manager テンプレートと Azure ポリシーを使用して適用されて、ID とセキュリティのための小さいベースラインが確立されます。
 
-![増分ガバナンス MVP の例](../../../_images/govern/governance-mvp.png)
+![増分ガバナンス MVP の例を示す図。](../../../_images/govern/governance-mvp.png)
 
 ## <a name="incremental-improvement-of-governance-practices"></a>ガバナンス プラクティスの段階的な改善
 
@@ -75,7 +75,7 @@ MVP では、企業ポリシーを迅速に適用するために、[デプロイ
 - セキュリティ ベースライン規範: 保護されたデータがデプロイされるとき。
 - リソースの整合性規範: IT 運用でミッション クリティカルなワークロードのサポートが始まるとき。
 
-![増分ガバナンス MVP の例](../../../_images/govern/governance-improvement.png)
+![ガバナンス プラクティスの段階的な改善の例を示す図。](../../../_images/govern/governance-improvement.png)
 
 ## <a name="next-steps"></a>次のステップ
 
