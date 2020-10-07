@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c43b0b563292a0bafb3e4ac63ad6f757c519bf76
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 4809b00f7cd195646619d5ace8d7924a78e0b625
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775821"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91107838"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
 
-この記事では、保護対象データのクラウドへの移動をサポートするセキュリティ コントロールを追加することによって、[ガバナンス戦略の物語](narrative.md)を進めます。
+この記事では、保護対象データのクラウドへの移動をサポートするセキュリティ コントロールを追加することによって、[ガバナンス戦略の物語](./narrative.md)を進めます。
 
 ## <a name="advancing-the-narrative"></a>物語を進める
 
@@ -31,7 +31,7 @@ IT およびビジネス部門のリーダーたちは、IT、アプリケーシ
 
 ### <a name="changes-in-the-current-state"></a>現在の状態の変化
 
-この物語の開始時には、アプリケーション開発チームはまだ開発/テストの容量に関する作業をしていて、BI チームはまだ実験フェーズにいました。 IT 部門は、Prod と DR と呼ばれる 2 つのホスト型インフラストラクチャ環境を運用していました。
+この物語の開始時には、アプリケーション開発チームはまだ開発/テストの容量に関する作業をしていて、BI チームはまだ実験フェーズにいました。 IT 部門は、`Prod` と `DR` と呼ばれる 2 つのホスト型インフラストラクチャ環境を運用していました。
 
 その後、以下に示すように、ガバナンスに影響を与えるいくつかの変化がありました。
 
@@ -128,8 +128,8 @@ IT およびビジネス部門のリーダーたちは、IT、アプリケーシ
   - 必要なセキュリティ要件を満たす Azure Firewall の構成を特定します。 または、Azure と互換性があるサードパーティ製互換アプライアンスを特定します。
   - Resource Manager テンプレートを作成し、必須の構成を持つファイアウォールをデプロイします。
 - Azure Blueprints:
-  - protected-data という名前で新しいブループリントを作成します。
-  - ファイアウォール、Azure Security Center テンプレート、Azure Recovery Services コンテナーのテンプレートをブループリントに追加します。
+  - `protected-data` という名前で新しいブループリントを作成します。
+  - Azure Firewall テンプレート、Azure Security Center テンプレート、Azure Recovery Services コンテナーのテンプレートをブループリントに追加します。
   - 保護対象データのサブスクリプション用の新しいポリシーを追加します。
   - ホスティングに関する現在の計画でデータを保護していたすべての管理グループに、ブループリントを発行します。
   - 影響を受ける各サブスクリプションに、既存のブループリントと共に新しいブループリントを適用します。

@@ -1,18 +1,18 @@
 ---
 title: Windows Virtual Desktop を Azure にデプロイする
-description: Azure 向けクラウド導入フレームワークを使用する、Windows Virtual Desktop の移行のベスト プラクティスについて説明します。これにより、複雑さを軽減し、移行プロセスを標準化することができます。
+description: Azure 向けクラウド導入フレームワークを使用し、複雑さを軽減し、移行プロセスを標準化するベストプラクティスを使用して Windows Virtual Desktop をデプロイします。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b84533bb565e43a0ddb52930f33eba21f35c8ed9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 99f7bc2f33e3aa5eec08ca0d5b9cca5f85e55063
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885356"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108388"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 

@@ -1,18 +1,18 @@
 ---
 title: Windows Virtual Desktop の概念実証
-description: Azure 向けクラウド導入フレームワークを使用する、Windows Virtual Desktop の移行のベスト プラクティスについて説明します。これにより、複雑さを軽減し、移行プロセスを標準化することができます。
+description: Windows Virtual Desktop の概念実証を完了およびテストするためのベスト プラクティスについては、クラウド導入フレームワークを使用してください。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b17c1703bd50f49e747a690ff9379a687a5543cf
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4b88bd7d9954b332b3881e06afc95ab8406bbe6b
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605052"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108286"
 ---
 <!-- cSpell:ignore FSLogix onboards remoteapp macos -->
 

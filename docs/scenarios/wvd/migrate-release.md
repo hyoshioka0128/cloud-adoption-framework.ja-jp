@@ -1,18 +1,18 @@
 ---
 title: Windows Virtual Desktop のデプロイ後とリリースのプロセス
-description: Azure 向けクラウド導入フレームワークを使用する、Windows Virtual Desktop の移行のベスト プラクティスについて説明します。これにより、複雑さを軽減し、移行プロセスを標準化することができます。
+description: クラウド導入フレームワークのベスト プラクティスを使用して、Windows Virtual Desktop のインスタンスの移行またはデプロイのリリース プロセスについて学習します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9389d3ec80422a5e17cfb6dd5a7692e2fd932fda
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3a1602e308b8ca2ec10a23efb054e2c84088c803
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885339"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108364"
 ---
 # <a name="windows-virtual-desktop-post-deployment"></a>Windows Virtual Desktop のデプロイ後
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1c9a2faf35a2137e5dd04c23a8cb49c6dd02f5b5
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 4e5521c2f3b699584d7785a80e3c92b3db24e347
+ms.sourcegitcommit: 899fcd5314ce2748e98c69e27c7f2e318ab27ac5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681008"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91206213"
 ---
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>作業を開始しましょう。企業環境全体へのセキュリティの実装
 
@@ -38,44 +38,33 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 ## <a name="step-1-establish-essential-security-practices"></a>手順 1:重要なセキュリティ プラクティスを確立する
 
-クラウドにおけるセキュリティは、確実なプラクティスから始まります。 既にクラウドで運用している場合でも、将来の導入を計画している場合でも、重要なセキュリティ プラクティスを迅速に確立することが重要です。
+クラウドのセキュリティは、最も重要なセキュリティ プラクティスをシステムのユーザー、プロセス、テクノロジの各要素に適用することから始まります。 また、アーキテクチャに関するいくつかの決定が基本であり、後で変更するのは非常に困難なので、慎重に適用する必要があります。 
 
-明示的な規制コンプライアンス要件を満たすことに加え、ほとんどの組織がクラウドに移行する際に直面するセキュリティの最大の課題に対処するために次の手順が推奨されます。
+既にクラウドで運用している場合でも、将来の導入を計画している場合でも、これら 11 の重要なセキュリティ プラクティスに従うことをお勧めします (明示的な規制遵守要件を満たすことは必須です)。
 
-**成果物とサポートに関するガイダンス:**
+**ユーザー:**
 
-- **技術:** 最上位のリスクを軽減し、資産の可視性と制御を向上させるには、管理者向けのパスワードレス認証または多要素認証を有効にするか、クラウド リソースの脅威の防止を有効にします。
+1. [クラウド セキュリティのための移行の過程についてチームを教育する](../security/security-top-10.md#1-people-educate-teams-about-the-cloud-security-journey)
+2. [クラウド セキュリティ テクノロジについてチームを教育する](../security/security-top-10.md#2-people-educate-teams-on-cloud-security-technology) 
 
-  - [管理者向けのパスワードレス認証または多要素認証](/azure/architecture/framework/security/critical-impact-accounts#passwordless-or-multi-factor-authentication-for-admins)
-  - [セキュリティ運用](/azure/architecture/framework/security/security-operations)と [Azure Security Center での脅威の防止](/azure/security-center/threat-protection)
+**プロセス:**
 
-- **プロセス:** セキュリティ ロールと責任を割り当て、インシデント対応プロセスを確立することで、セキュリティに関する迅速な意思決定と継続的な改善を可能にします。
+3. [クラウドのセキュリティに関する意思決定のアカウンタビリティを割り当てる](../security/security-top-10.md#3-process-assign-accountability-for-cloud-security-decisions)
+4. [クラウドのインシデント対応 (IR) プロセスを更新する](../security/security-top-10.md#4-process-update-incident-response-ir-processes-for-cloud)
+5. [セキュリティ態勢管理を確立する](../security/security-top-10.md#5-process-establish-security-posture-management)
 
-  - [責任の明確な線引き](/azure/architecture/framework/security/governance#clear-lines-of-responsibility)、[環境を管理するための特権の割り当て](/azure/architecture/framework/security/governance#assign-privileges-for-managing-the-environment)、セキュア スコアの運用化 <!-- TODO: Improve this and add link to AAF article -->
-  - セキュリティ ロールと責任 <!-- TODO: add link to bookmark -->
-  - [インシデント対応のリファレンス ガイド](https://aka.ms/irrg)
+**テクノロジ:**
 
-- **ユーザー:** クラウド環境への移行時にデプロイおよび運用を適切に行うために必要な教育、ツール、アクセス権をセキュリティ チームに提供します。
+6. [パスワードレス認証または多要素認証 (MFA) を必須にする](../security/security-top-10.md#6-technology-require-passwordless-or-multi-factor-authentication-mfa)
+7. [ネイティブ ファイアウォールとネットワーク セキュリティを統合する](../security/security-top-10.md#7-technology-integrate-native-firewall-and-network-security)
+8. [ネイティブ脅威検出を統合する](../security/security-top-10.md#8-technology-integrate-native-threat-detection)
 
-  - クラウドとクラウド セキュリティの進化の**概念について、すべてのユーザーを対象に教育する**:
-    - [脅威の環境、ロール、デジタル戦略の進化](/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
-    - [セキュリティ、戦略、ツール、脅威のトランスフォーメーション](/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
-  - 使用されるプラットフォームのクラウド セキュリティ機能に関する技術的な詳細について、**技術スタッフをトレーニング**します。 Microsoft では、広範な [Azure のセキュリティに関するドキュメント](/azure/security)を提供しています。
+**基本アーキテクチャの決定:**
 
-- **長期的なアーキテクチャに関する決定:** 適切な意思決定を行って、長期的な基盤を確立します。 これらを後で変更するのは難しく、コストがかかります。
+9. [単一のディレクトリと ID で標準化する](../security/security-top-10.md#9-architecture-standardize-on-a-single-directory-and-identity)
+10. [(キーではなく) ID ベースのアクセス制御を使用する](../security/security-top-10.md#10-architecture-use-identity-based-access-control-instead-of-keys)
+11. [単一の統合セキュリティ戦略を確立する](../security/security-top-10.md#11-architecture-establish-a-single-unified-security-strategy)
 
-  - [企業のセグメント化戦略を構築し、技術アーキテクチャをそれに合わせる (ネットワークのセグメント化や ID のセグメント化など)](/azure/architecture/framework/security/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
-  - [単一のエンタープライズ ディレクトリ](/azure/architecture/framework/security/design-identity#use-a-single-enterprise-directory)
-  - [サービスの認証戦略](/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
-  - [アクセス許可の割り当て戦略](/azure/architecture/framework/security/critical-impact-accounts#avoid-granular-and-custom-permissions)
-
-<br>
-
-| 説明責任チーム | 実行責任チームとサポート チーム |
-| --- | --- |
-| <li> クラウド セキュリティ チーム <br><br><br> | <li> クラウド戦略チーム <li> クラウド導入チーム <li> クラウドのセンター オブ エクセレンスまたは中央 IT チーム |
-
-この最初の手順では、ガバナンス チームは、環境間で監視、管理、適用できるセキュリティ ベースラインの作成の調整を開始する必要もあります。 これを構築するための追加のガイダンスについては、手順 4 で後述します。
 
 > [!NOTE]
 > 各組織では、独自の最低限の基準を定義する必要があります。 リスク体制とそのリスクに対するその後の許容度は、業界、文化、その他の要因によって大きく異なる可能性があります。 たとえば、銀行では、テスト システムに対する軽微な攻撃であっても、評判を損なう可能性のあるものは許容されない場合があります。 デジタル変革が 3 から 6 か月早まるのなら、その同じリスクを喜んで受け入れる組織もあります。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 077f6f36fba1b8267fecf6ce3926aa2dd9ae8e1b
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 8ab66a82b7677beb44fae256fade1ed1afd1173e
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786876"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108012"
 ---
 # <a name="conduct-a-cloud-policy-review"></a>クラウド ポリシーの確認を実施する
 
@@ -45,7 +45,7 @@ ms.locfileid: "84786876"
 確認プロセスは、これらの規範ごとに次の手順に従います。
 
 1. 特定の規範に関連する既存のオンプレミス ポリシーを確認し、2 つの主要なデータ ポイント (レガシの依存、識別されたビジネス上のリスク) を探します。
-2. 次の簡単な質問を行ってビジネス上の各リスクを評価します: "クラウド モデルにビジネス上のリスクがまだ存在しますか?"
+2. 次の簡単な質問を行ってビジネス上の各リスクを評価します: クラウド モデルにビジネス上のリスクがまだ存在しますか?
 3. リスクが依然として存在する場合は、技術的なソリューションではなく、必要なビジネスの軽減策を文書化することでポリシーを書き換えます。
 4. 更新されたポリシーをクラウド導入チームと共に確認して、必要な軽減策に対する可能な技術ソリューションを理解します。
 

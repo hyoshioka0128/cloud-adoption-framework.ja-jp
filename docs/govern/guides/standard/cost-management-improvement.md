@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c6a53233fa469bcb75d2c2478614acf9487dd2fb
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 046507bea45c8a53d97d05ff9b566a3d1fb7c888
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604804"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91107949"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準的な企業のガバナンス ガイド:コスト管理の規範の改善
 
@@ -61,15 +61,15 @@ ms.locfileid: "89604804"
 - デプロイの計画時には、運用ワークロードのホスティングに関連付けられている必須のクラウド リソースがあれば、それを文書化する必要があります。 このドキュメントは、予算の精度を高め、より高価なオプションの使用を防ぐ追加の自動化を準備するのに役立ちます。 このプロセス中には、予約インスタンスやライセンス コストの削減など、クラウド プロバイダーが提供するさまざまな割引ツールについて検討する必要があります。
 - すべてのアプリケーション所有者は、クラウド コストをより適切に管理するために、ワークロードの最適化実習のトレーニングに参加する必要があります。
 
-## <a name="incremental-improvement-of-the-best-practices"></a>ベスト プラクティスの段階的な改善
+## <a name="incremental-improvement-of-best-practices"></a>ベスト プラクティスの段階的な改善
 
-記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーおよび Azure Cost Management と Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
+記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーと Azure Cost Management + Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
-1. Azure Cost Management と Billing を実装します。
+1. Azure Cost Management + Billing を実装します。
     1. サブスクリプション パターンとリソース整合性の規範に合致する適切なアクセス スコープを確立します。 以前の記事で定義したガバナンス MVP と整合させることを前提にすると、このためには、高レベルのレポート作成を実行するクラウド ガバナンスチームのために、**登録アカウントのスコープ**へのアクセスが必要です。 ガバナンスの外部にあるその他のチームには、**リソース グループのスコープ**へのアクセスが必要な場合があります。
-    1. Azure Cost Management と Billing で予算を編成します。
+    1. Azure Cost Management + Billing で予算を編成します。
     1. 初期の推奨事項を確認して対応します。 レポート作成をサポートするための繰り返しのプロセスを用意します。
-    1. 初期用と繰り返し用の両方について、Azure Cost Management と Billing のレポートを構成して実行します。
+    1. 初期用と繰り返し用の両方について、Azure Cost Management + Billing のレポートを構成して実行します。
 2. Azure Policy を更新します
     1. タグ付け、管理グループ、サブスクリプション、およびリソース グループの値を監査して、差異がないか特定します。
     1. SKU サイズ オプションを確定して、デプロイ計画ドキュメントに記載されている SKU にデプロイを制限します。

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 754653d7e15eec16aa59db834851767e8d763008
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 636de72aa1dc6b58f80c1804dfd20a1c4aefc78b
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776569"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108398"
 ---
 <!-- docutune:casing ARO -->
 
@@ -188,7 +188,7 @@ Azure Reserved Virtual Machine Instances を使用している場合は、VM イ
 
 多くの場合、最終的には複数の Azure サブスクリプションを利用することになります。 たとえば、開発と運用の境界を分けるために追加のサブスクリプションが必要な場合があります。また、クライアントごとに別個のサブスクリプションを必要とするプラットフォームがある場合もあります。 すべてのサブスクリプションにわたってデータのレポート作成を 1 つのプラットフォームに集約する機能があるのは、有用な特徴です。
 
-これを行うために、Azure Cost Management および Billing の API を使用できます。 その後、Azure SQL などの 1 つのソースにデータを集約したら、Power BI などのツールを使用して、集約されたデータを明示できます。 集約されたサブスクリプション レポートや、きめ細かなレポートを作成できます。 たとえば、コスト管理に関する事前対応のための分析情報が必要なユーザーのために、部門、リソース グループ、またはその他の情報に基づいて、コストに関する特定のビューを作成できます。 彼らに Azure の課金データへのフル アクセスを提供する必要はありません。
+これを行うために、Azure Cost Management + Billing の API を使用できます。 その後、Azure SQL Database などの 1 つのソースにデータを集約したら、Power BI などのツールを使用して、集約されたデータを明示できます。 集約されたサブスクリプション レポートや、きめ細かなレポートを作成できます。 たとえば、コスト管理に関する事前対応のための分析情報が必要なユーザーのために、部門、リソース グループ、またはその他の情報に基づいて、コストに関する特定のビューを作成できます。 彼らに Azure の課金データへのフル アクセスを提供する必要はありません。
 
 **詳細情報:**
 
@@ -200,9 +200,9 @@ Azure Reserved Virtual Machine Instances を使用している場合は、VM イ
 
 ワークロードの移行を成功させてから、数週間にわたって消費データを収集すると、リソースのコストについて明確な認識が得られます。 データを分析するときに、Azure のリソース グループとリソースについての予算ベースラインの生成を開始できます。 その後、クラウドの予算が費やされようとしている場所を理解したら、コストをさらに削減する方法を分析できます。
 
-## <a name="best-practice-use-azure-cost-management-and-billing"></a>ベスト プラクティス:Azure Cost Management と Billing の使用
+## <a name="best-practice-use-azure-cost-management--billing"></a>ベスト プラクティス:Azure Cost Management + Billing を使用する
 
-Microsoft では、支出を追跡する助けとなる Azure Cost Management と Billing を提供しています。 このサービスは以下のことを行います。
+Microsoft では、支出を追跡する助けとなる Azure Cost Management + Billing を提供しています。 このサービスは以下のことを行います。
 
 - Azure の支出の監視と管理を行い、リソースの使用を最適化する助けになります。
 - サブスクリプション全体と、そのすべてのリソースが見直されて、推奨事項が示されます。
@@ -210,7 +210,7 @@ Microsoft では、支出を追跡する助けとなる Azure Cost Management �
 - リソースの使用状況を追跡し、1 つの統一されたビューでクラウドのコストを管理するうえで役立ちます。
 - 情報に基づいた決定を下しやすいように、運用と財務に関する豊富な分析情報が提供されます。
 
-Azure Cost Management と Billing では、次のことができます。
+Azure Cost Management + Billing では、次のことができます。
 
 - 財務上の説明責任のために予算を作成します。
   - 特定の期間 (月単位、四半期単位、年単位) と範囲 (サブスクリプションまたはリソース グループ) について、使用またはサブスクライブしているサービスを計算に入れることができます。 たとえば、月、四半期、または年の期間の Azure サブスクリプション予算を作成できます。
@@ -219,7 +219,7 @@ Azure Cost Management と Billing では、次のことができます。
   - コスト管理データは、分析のために Azure Storage にエクスポートできます。
 
   ![Cost Management の予算のスクリーンショット。](./media/migrate-best-practices-costs/budget.png)
-  "_図 4: Azure Cost Management と Billing の予算。_ "
+  "_図 4: Azure Cost Management + Billing の予算。_
 
 - コスト分析を実行し、組織のコストを探って分析すれば、コストがどのように生じるかを理解し、支出の傾向を特定する助けになります。
   - コスト分析は、Enterprise Agreement ユーザーが利用できます。
@@ -227,15 +227,15 @@ Azure Cost Management と Billing では、次のことができます。
   - 現在の月の総コストと、毎日の累積コストを表示するコスト分析を取得できます。
 
   ![Azure Cost Management の分析のスクリーンショット](./media/migrate-best-practices-costs/analysis.png)
-  "_図 5: Azure Cost Management と Billing の分析。_
+  "_図 5: Azure Cost Management + Billing の分析。_
 
 - 最適化と効率向上が可能な方法を示す Advisor の推奨事項を取得します。
 
 **詳細情報:**
 
-- [Azure Cost Management と Billing の概要](/azure/cost-management-billing/cost-management-billing-overview)を確認します。
-- [Azure Cost Management と Billing でクラウド投資を最適化する](/azure/cost-management-billing/costs/cost-mgt-best-practices)方法を確認します。
-- [Azure Cost Management と Billing のレポート](/azure/cost-management/use-reports)を確認します。
+- [Azure Cost Management + Billing の概要](/azure/cost-management-billing/cost-management-billing-overview)を確認します。
+- [Azure Cost Management + Billing でクラウド投資を最適化する](/azure/cost-management-billing/costs/cost-mgt-best-practices)方法を確認します。
+- [Azure Cost Management + Billing のレポート](/azure/cost-management/use-reports)を確認します。
 - [推奨事項に従ってコストを最適化する](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)ことに関するチュートリアルを表示します。
 - [Azure Consumption API](/rest/api/consumption/budgets) について確認します。
 
@@ -243,9 +243,9 @@ Azure Cost Management と Billing では、次のことができます。
 
 Azure では、リソースが消費されたときに使用した分だけ支払いを行います。そうでないときに支払いはしません。 VM の場合、VM が割り当てられているときに課金が発生し、VM の割り当てが解除された後は課金されません。 これを念頭に置いて使用中の VM を監視し、VM のサイズ設定を確認します。
 
-ベースラインを特定するために、継続的に VM のワークロードを評価します。 たとえば、月曜日から金曜日の午前 8 時から午後 6 時まではワークロードの用頻度が高く、それ以外の時間帯はほとんど使用されない場合は、ピーク時間帯以外は VM をダウングレードできます。 これは、VM のサイズを変更すること、または仮想マシン スケール セットを使用して VM の上下の自動スケーリングを行うことを意味する場合もあります。 一部の企業では、いつ使用できる必要があり、いつ必要がないかを指定するカレンダー上に VM を配置することで、VM を "一時停止" させています。
+ベースラインを特定するために、継続的に VM のワークロードを評価します。 たとえば、月曜日から金曜日の午前 8 時から午後 6 時まではワークロードの用頻度が高く、それ以外の時間帯はほとんど使用されない場合は、ピーク時間帯以外は VM をダウングレードできます。 これは、VM のサイズを変更すること、または仮想マシン スケール セットを使用して VM の上下の自動スケーリングを行うことを意味する場合もあります。 一部の企業では、いつ使用できる必要があり、いつ必要がないかを指定するカレンダーから VM を「一時停止」させています。
 
-Azure Cost Management と Billing、Azure Monitor、Azure Advisor などの Microsoft ツールを使用して VM の使用状況を監視できます。 サードパーティ製のツールも使用できます。
+Azure Cost Management + Billing、Azure Monitor、Azure Advisor などの Microsoft ツールを使用して VM の使用を監視できます。 サードパーティ製のツールも使用できます。
 
 > [!NOTE]
 > VM の監視に加えて、Azure ExpressRoute や仮想ネットワーク ゲートウェイなどの他のネットワーク リソースで、過小使用や過多使用が起きてないかを監視する必要があります。
@@ -323,7 +323,7 @@ Azure Resource Usage API と Azure Resource RateCard API は、コストを正�
 
 VM ワークロードは、多くの場合、ダウンタイムを回避するために "現状のまま" で移行されます。 VM は、多くの場合、間欠的なタスク、実行期間が短いタスク、または長時間かかるタスクをホストしていることがあります。 たとえば、Windows タスク スケジューラや PowerShell スクリプトなどの、スケジュールされたタスクを実行する VM です。 これらのタスクが実行中でないときには、それにもかかわらず VM とディスク ストレージのコストが費やされています。
 
-移行後に、これらの種類のタスクを徹底して見直したら、それを Azure Functions や Azure Batch ジョブなどのサーバーレス テクノロジに移行することを検討します。 これらのソリューションを使用することでコストを削減することができ、VM の管理と保守を行う必要がなくなります。
+移行後に、これらの種類のタスクを徹底して見直したら、それを Azure Functions や Azure Batch のジョブなどのサーバーレス テクノロジに移行することを検討します。 これらのソリューションを使用することでコストを削減することができ、VM の管理と保守を行う必要がなくなります。
 
 **詳細情報:**
 
@@ -334,5 +334,5 @@ VM ワークロードは、多くの場合、ダウンタイムを回避する�
 
 他のベスト プラクティスを確認します。
 
-- 移行後のセキュリティと管理の[ベスト プラクティス](./migrate-best-practices-security-management.md)。
-- 移行後のネットワークの[ベスト プラクティス](./migrate-best-practices-networking.md)。
+- 移行後の[セキュリティと管理のベスト プラクティス](./migrate-best-practices-security-management.md)。
+- 移行後の[ネットワークのベスト プラクティス](./migrate-best-practices-networking.md)。

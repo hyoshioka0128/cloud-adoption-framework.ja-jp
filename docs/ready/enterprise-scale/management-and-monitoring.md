@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 475db193a4d712720dd5c2402eb3be43a80ac0db
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: cf4a7d9b708f211c6b848a2ddd7672af143adc34
+ms.sourcegitcommit: 44fb6deee30fd6ffc80b5d2e66544a50e8405c73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776399"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91492708"
 ---
 # <a name="management-and-monitoring"></a>管理と監視
 
@@ -34,7 +34,7 @@ ms.locfileid: "90776399"
   - オペレーティング システムのログ (インターネット インフォメーション サービス、Windows イベント トレーシング、Syslog など)
   - リソースの正常性イベント
 - セキュリティ監査ログと、組織の Azure 資産全体にわたる水平方向のセキュリティ レンズの実現:
-  - qRadar や ArcSight などのオンプレミスのセキュリティ情報イベント管理 (SIEM) システムとの潜在的な統合
+  - オンプレミスのセキュリティ情報や、ServiceNow、ArcSight、Onapsis セキュリティ プラットフォームなどのイベント管理 (SIEM) システムとの潜在的な統合
   - Azure アクティビティ ログ
   - Azure Active Directory (Azure AD) 監査レポート
   - Azure の診断サービス、ログ、およびメトリック、Azure Key Vault 監査イベント、ネットワーク セキュリティ グループ (NSG) フロー ログ、およびイベント ログ

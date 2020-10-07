@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a53c0ae2673abb7aee07a4ff15b7d60adbb479a9
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: ef357abfec7180ad484c783a86341f26f66b7a59
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775566"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108243"
 ---
 <!-- docutune:casing ARO "standard HDD" -->
 
@@ -105,7 +105,7 @@ Azure リソースの月額料金を予測するために、利用できるツ�
 
 - これらの VM 間の価格の違いと、長期的な予算への影響を理解しておくことが重要です。
 - 種類ごとに、内部にいくつかの VM シリーズがあります。
-- さらに、あるシリーズ内の VM を選択すると、そのシリーズ内の VM のみをスケールアップまたはスケールダウンできます。 たとえば、`DS2_v2` インスタンスは `DS4_v2` にスケールアップできますが、`F2S_v2` インスタンスなどの異なるシリーズには変更できません。
+- さらに、あるシリーズ内の VM を選択すると、そのシリーズ内の VM のみをスケールアップまたはスケールダウンできます。 たとえば、`DS2_v2` インスタンスは `DS4_v2` にスケールアップできますが、`F2S_v2` インスタンスなどの異なるシリーズのインスタンスには変更できません。
 
 **詳細情報:**
 
@@ -289,7 +289,7 @@ Azure Cost Management + Billing では、次のことができます。
   - 現在の月の総コストと、毎日の累積コストを表示するコスト分析を取得できます。
 
     ![Azure Cost Management + Billing の分析](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
-    *図: Azure Cost Management + Billing の分析。*
+    *図:Azure Cost Management + Billing の分析。*
 
 - **推奨事項を取得する:** 最適化と効率向上が可能な方法を示す Advisor の推奨事項を取得します。
 

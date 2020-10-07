@@ -1,18 +1,18 @@
 ---
 title: Azure 向け Windows Virtual Desktop の評価
-description: Azure 向けクラウド導入フレームワークを使用する、Windows Virtual Desktop の移行のベスト プラクティスについて説明します。これは、複雑さを軽減し、移行プロセスを標準化するのに役立ちます。
+description: Azure 向けクラウド導入フレームワークを使用し、移行プロセスまたはデプロイ プロセスを加速するベストプラクティスを使用して Windows Virtual Desktop の移行シナリオを評価します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d388b1196bf103812f723ef060cc890e632760f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b85900e887122b20c7dc776ac74deb12dad93220
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885373"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108414"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows Virtual Desktop の評価
 

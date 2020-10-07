@@ -1,18 +1,18 @@
 ---
 title: Windows Virtual Desktop インスタンスの Azure ランディング ゾーン
-description: Azure 向けのクラウド導入フレームワークを使用して、複雑さの軽減と移行プロセスの標準化に向けた仮想デスクトップ移行のベスト プラクティスについて説明します。
+description: Azure 向けクラウド導入フレームワークを使用し、複雑さを軽減し、移行プロセスを標準化するベストプラクティスを使用して仮想デスクトップの移行環境を準備します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4d554fa61572e26e880b437154d504a17b727772
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f7aeba65ddd357ea7a65c6e902d7403f0c403a20
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885271"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108295"
 ---
 # <a name="windows-virtual-desktop-azure-landing-zone-review"></a>Windows Virtual Desktop の Azure ランディング ゾーンの確認
 
