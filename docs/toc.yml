@@ -133,6 +133,12 @@ items:
             href: digital-estate/calculate.md
       - name: 初期の組織配置
         href: plan/initial-org-alignment.md
+      - name: スキルの準備計画
+        items:
+          - name: 準備計画の構築
+            href: plan/adapt-roles-skills-processes.md
+          - name: ロールとスキルの関連付け
+            href: plan/suggested-skills.md
       - name: クラウド導入計画
         items:
           - name: 概要
@@ -151,12 +157,6 @@ items:
             href: plan/iteration-paths.md
           - name: タイムラインの見積もり
             href: plan/timelines.md
-      - name: スキルの準備計画
-        items:
-          - name: 準備計画の構築
-            href: plan/adapt-roles-skills-processes.md
-          - name: ロールとスキルの関連付け
-            href: plan/suggested-skills.md
       - name: ベスト プラクティス
         items:
           - name: Azure でのデジタル資産の評価
@@ -207,7 +207,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: アーキテクチャ
+              - name: Architecture
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md
@@ -1481,6 +1481,8 @@ items:
     items:
       - name: ツールとテンプレート
         href: reference/tools-templates.md
+      - name: Azure のセキュリティに関するベスト プラクティス
+        href: ./security/security-top-10.md
       - name: 意思決定ガイド
         items:
           - name: 概要
@@ -1531,8 +1533,6 @@ items:
         items:
           - name: クラウド運用モデル
             href: reference/cloud-operating-model.md
-          - name: Azure のセキュリティに関するベスト プラクティス
-            href: ./security/security-top-10.md
           - name: Azure エンタープライズ スキャフォールディング
             href: reference/azure-scaffold.md
           - name: 仮想データセンター (VDC)

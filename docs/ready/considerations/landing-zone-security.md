@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d28f849d4d264af36db8ffaf1b4c72cadc6677c0
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 28b9271cee8f0314155bcd34d736332a5e10c1a2
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885662"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621503"
 ---
 # <a name="improve-landing-zone-security"></a>ランディング ゾーンのセキュリティの向上
 
@@ -29,7 +29,7 @@ ms.locfileid: "88885662"
 - [ID 管理とアクセス制御](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):ID とアクセスを実装して Azure のランディング ゾーンをセキュリティで保護するための一連のベスト プラクティス。
 - [ネットワーク セキュリティのプラクティス](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):ネットワークをセキュリティで保護するための追加のベスト プラクティスについて説明しています。
 - [運用可能なセキュリティ](/azure/security/fundamentals/operational-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)では、Azure で運用可能なセキュリティを強化するためのベスト プラクティスについて説明しています。
-- [セキュリティ ベースライン規範](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-the-best-practices):セキュリティ要件を適用するためのガバナンス主導のセキュリティ ベースラインを作成する例。
+- [セキュリティ ベースライン規範](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-best-practices):セキュリティ要件を適用するためのガバナンス主導のセキュリティ ベースラインを作成する例。
 
 ## <a name="test-driven-development-cycle"></a>テスト駆動開発サイクル
 

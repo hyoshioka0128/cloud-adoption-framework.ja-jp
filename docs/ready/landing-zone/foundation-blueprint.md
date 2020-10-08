@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 46ed8211a9206c7eed07760a0452ed97df2e5901
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: af577cea51714b43d43d7956a69422a2316aef11
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776314"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621316"
 ---
 <!-- docutune:ignore "CAF Foundation blueprint" -->
 
@@ -66,7 +66,7 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 
 この実装では、ガバナンス手法の Cost Management 規範における成熟度に対する 1 つのアプローチが示されています。 具体的には、Azure Policy を使用して特定の SKU の許可リストを作成する方法が示されています。 ランディング ゾーンにデプロイできるリソースの種類とサイズを制限することで、過剰な出費のリスクが軽減されます。
 
-他のガバナンス規範の並列開発を高速化するには、[ガバナンス手法](../../govern/index.md)を確認します。 ガバナンスの Cost Management 規範の成熟を続けるには、[Cost Management 規範のガイダンス](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)に関するページを参照してください。
+他のガバナンス規範の並列開発を高速化するには、[ガバナンス手法](../../govern/index.md)を確認します。 ガバナンスの Cost Management 規範の成熟を続けるには、[Cost Management 規範のガイダンス](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)に関するページを参照してください。
 
 > [!WARNING]
 > ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)ことが必要になる場合があります。

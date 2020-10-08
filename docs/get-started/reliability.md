@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7ef09f13acdcc29e3314e2684a307efba788120c
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 07f9cc356aa3307898f9be94988b75781be8509b
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775600"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91620789"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>作業を開始しましょう。適切な管理によって信頼性を向上させる
 
@@ -72,7 +72,7 @@ ms.locfileid: "90775600"
 
 - すべてのワークロードとリソースが[適切な名前付けおよびタグ付け規則](../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認します。 [Azure Policy を使用してタグ付け規則を適用](/azure/governance/policy/tutorials/govern-tags)し、重要度のタグを特に強調します。
 - クラウド ガバナンスを初めて使用する方は、ガバナンスの方法論を使用して、[ガバナンスのポリシー、プロセス、規範](../govern/index.md)を確立してください。
-- コスト管理規範を初めて使用する方は、[コスト管理の規範の改善](../govern/guides/complex/cost-management-improvement.md)に関する記事に記載されているガイダンスに従ってください。 [実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)のセクションに注目します。
+- コスト管理規範を初めて使用する方は、[コスト管理の規範の改善](../govern/guides/complex/cost-management-improvement.md)に関する記事に記載されているガイダンスに従ってください。 [実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)のセクションに注目します。
 
 > [!NOTE]
 > **信頼性の実現に向けた他のチームとの連携に着手する手順:** クラウド導入ライフサイクル全体におけるさまざまな判断が信頼性に直接影響します。 以降の手順では、IT ポートフォリオ全体で一貫した信頼性を実現するために必要な連携と支援について概説します。
