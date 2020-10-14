@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b3c32b6d6afa9b640dd379230865728fbd53c925
-ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
+ms.openlocfilehash: 7f479d4262e276162d2e55fdb8405f77cfc40bf1
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176482"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898206"
 ---
 # <a name="automate-onboarding"></a>オンボーディングの自動化
 
@@ -32,7 +32,7 @@ Azure サーバー管理サービスのデプロイの効率を向上させる�
 
 - Azure Policy を使用して Azure VM をオンボードします。 ポリシーによって Log Analytics エージェントと Microsoft Dependency Agent が Azure VM にインストールされます。
 
-- [Azure Policy](https://docs.microsoft.com/azure/backup/backup-azure-auto-enable-backup) を使用して、VM に対する Azure Backup を自動的に有効にします。
+- [Azure Policy](/azure/backup/backup-azure-auto-enable-backup) を使用して、VM に対する Azure Backup を自動的に有効にします。
 
 - Log Analytics エージェントをオンプレミス サーバーにインストールすることで、それらのサーバーをオンボードします。
 

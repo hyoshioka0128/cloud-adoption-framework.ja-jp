@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 85f3104f20f969e83f960e8ba3125b0ee56ed41e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2dda4bc3feaf207e2aca63b008f40beabc223bec
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877553"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898116"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -61,7 +61,7 @@ ms.locfileid: "88877553"
 
   - 「[Microsoft Azure DevOps エンジニア:Optimize Feedback Mechanisms (Microsoft Azure DevOps エンジニア: フィードバック メカニズムの最適化)](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms)」は、Application Insights を含む Azure Monitor を使用して、Web アプリケーションの監視と最適化を準備する際に役立ちます。
 
-  - 「[Azure Web アプリでのページの読み込み時間をキャプチャして表示する](https://docs.microsoft.com/learn/modules/capture-page-load-times-application-insights/)」。 Azure Monitor Application Insights を使用して、Azure で実行されているアプリケーション コンポーネントのエンド ツー エンドの監視を実現する場合は、このコースから始めます。
+  - 「[Azure Web アプリでのページの読み込み時間をキャプチャして表示する](/learn/modules/capture-page-load-times-application-insights/)」。 Azure Monitor Application Insights を使用して、Azure で実行されているアプリケーション コンポーネントのエンド ツー エンドの監視を実現する場合は、このコースから始めます。
   
   - 「[Microsoft Azure のデータベース監視に関するプレイブック](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring)」では、Azure SQL Database、Azure SQL Data Warehouse、および Azure Cosmos DB の監視を実装して使用する方法について学習できます。
 
@@ -71,7 +71,7 @@ ms.locfileid: "88877553"
 
 ## <a name="data-analysis"></a>データ分析
 
-- [Azure Monitor でログ クエリ](https://docs.microsoft.com/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
+- [Azure Monitor でログ クエリ](/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
 
 - 「[Kusto Query Language (KQL) from Scratch (ゼロから始める Kusto クエリ言語 (KQL))](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)」は、Azure Monitor ログでのログ分析の幅広いユースケースと手法を示す詳細な例を含む包括的なコースです。
 

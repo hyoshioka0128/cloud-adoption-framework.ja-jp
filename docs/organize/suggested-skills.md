@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: de3a0ef01cf3e0144a348318cbf562c60149cebb
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5b67a8a4d268a254e41549114d861bc205121b48
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884846"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898286"
 ---
 # <a name="build-technical-skills"></a>技術スキルの構築
 
@@ -25,7 +25,7 @@ ms.locfileid: "88884846"
 
 - [組織の調整](../get-started/org-alignment.md):適切な組織構造を確立するアプローチを発見します。
 - [組織の配置の演習](./index.md):特定の目標を達成するのに役立つ配置とチーム構造の概要を把握します。
-- [チームの確立](../get-started/help.md#establish-teams):クラウド機能の提供を担当する組織内のチームを確立する方法について学習します。
+- [チームの確立](../get-started/index.md#establish-teams):クラウド機能の提供を担当する組織内のチームを確立する方法について学習します。
 - [サイロおよび封土の分析](./fiefdoms-silos.md): 2 つの一般的な組織のアンチパターンと、生産性の高いコラボレーションにチームを導く方法について学習します。
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>環境 (技術) の準備のラーニング パス

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5d2bfab7d5a7cea52d249d0bd2ed386e0dbcdae4
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1df1e0ae58572beac799f43304018672c9231c47
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604923"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108147"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: ID ベースライン規範の改善
 
@@ -69,7 +69,7 @@ IT チームは、2 つのデータセンターを廃止する CIO と CFO の�
 - クラウド プロバイダーをデータセンターのグローバル ネットワークに接続し、クラウド プロバイダーと会社の電気通信プロバイダー間で高速プライベート接続を確立する必要があります。
 - 十分なセキュリティ要件が確立されるまで、インバウンド パブリック トラフィックでは、クラウド内でホストされている会社の資産にアクセスできません。 グローバル WAN 外のソースからすべてのポートがブロックされます。
 
-## <a name="incremental-improvement-of-the-best-practices"></a>ベスト プラクティスの段階的な改善
+## <a name="incremental-improvement-of-best-practices"></a>ベスト プラクティスの段階的な改善
 
 ガバナンス MVP 設定は、新しい Azure ポリシーと、仮想マシンでの Active Directory の実装を含めるために変化します。 これら 2 つの設計変更を組み合わせることで、新しい企業ポリシー ステートメントを満たします。
 
@@ -80,7 +80,7 @@ IT チームは、2 つのデータセンターを廃止する CIO と CFO の�
     1. 外部トラフィックをブロックし、内部トラフィックを許可するように NSG を定義します。
     2. ゴールデン イメージに基づき、負荷分散ペアの 2 つの Active Directory 仮想マシンをデプロイします。 最初の起動時に、そのイメージで PowerShell スクリプトが実行され、ドメインへの参加とドメイン サービスへの登録が行われます。 詳細については、「[Extend Active Directory Domain Services (AD DS) to Azure](/azure/architecture/reference-architectures/identity/adds-extend-domain)」 (Azure への Active Directory Domain Services (AD DS) の拡張) を参照してください。
 - Azure Policy: すべてのリソースに NSG を適用します。
-- Azure のブループリント:
+- Azure Blueprints:
     1. `active-directory-virtual-machines` という名前のブループリントを作成します。
     2. ブループリントに、Active Directory テンプレートおよびポリシーをそれぞれ追加します。
     3. 適用可能な管理グループにブループリントを公開します。
