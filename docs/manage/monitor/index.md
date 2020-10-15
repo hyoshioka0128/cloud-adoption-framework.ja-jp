@@ -7,12 +7,12 @@ ms.date: 10/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a1f474f1146afe21508571c402a0da91ac256062
-ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
+ms.openlocfilehash: 1c59389754f8c109158ca8ac6aca54fe8cd92a1a
+ms.sourcegitcommit: d81a822575820115d9814b0fc6c05ae33e535825
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91898167"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92058769"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>クラウド監視ガイド: はじめに
 
@@ -56,12 +56,12 @@ Azure Monitor と System Center Operations Manager に精通していない場�
 Azure、お客様の企業ネットワーク、その他のクラウド プロバイダーでホストされているさまざまなリソースを監視、管理するためのいくつかのソフトウェアとサービスを利用できます。 これらは次のとおりです。
 
 - [System Center Operations Manager](/system-center/scom/welcome)
-- [Azure Monitor](/azure-monitor/overview) (Log Analytics と Application Insights を含む)
-- [Azure Policy](/governance/policy/overview) と [Azure Blueprints](/governance/blueprints/overview)
-- [Azure Arc](/azure-arc/overview)
-- [Azure Automation](/automation/automation-intro)
-- [Azure Logic Apps](/logic-apps/logic-apps-overview)
-- [Azure Event Hubs](/event-hubs/event-hubs-about)
+- [Azure Monitor](/azure/azure-monitor/overview) (Log Analytics と Application Insights を含む)
+- [Azure Policy](/azure/governance/policy/overview) と [Azure Blueprints](/azure/governance/blueprints/overview)
+- [Azure Arc](/azure/azure-arc/)
+- [Azure Automation](/azure/automation/automation-intro)
+- [Azure Logic Apps](/azure/logic-apps/logic-apps-overview)
+- [Azure Event Hubs](/azure/event-hubs/event-hubs-about)
 
 このガイドの最初のバージョンでは、現在の監視プラットフォームについて説明します。Azure Monitor と System Center Operations Manager。 また、各クラウド デプロイ モデルを監視するための推奨される戦略についても概説します。 また、データ収集とアラートをはじめとする、監視に関する推奨事項の最初のセットも含まれています。
 
