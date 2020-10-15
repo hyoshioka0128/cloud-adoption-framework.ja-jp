@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a45b0db36d2c587dbe126f47859e67418c3fe707
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 6e16c72b6703c3ddaa3db1a7f5d712571a62063f
+ms.sourcegitcommit: becf7868250fe159be940aa93f6f8f84bdbc27c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661709"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92003917"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
@@ -64,9 +64,9 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 次の例で、クラウド導入フレームワークの準備手法に合わせてカスタマイズされた、Microsoft Learn のいくつかのラーニング パスを示します。
 
-[Azure の基礎](/learn/paths/azure-for-the-data-engineer):高可用性、拡張性、弾力性、機敏性、フォールト トレランス、ディザスター リカバリーなどのクラウドの概念について説明します。 Azure でのクラウド コンピューティングの利点と、それによって時間とコストを節約する方法について理解します。 Azure クラウドに移行するための基本的な戦略を比較対照します。 コンピューティング、ネットワーク、ストレージ、セキュリティなど、Azure で利用できる広範なサービスを調査します。
+[Azure の基礎](/learn/paths/azure-fundamentals):高可用性、拡張性、弾力性、機敏性、フォールト トレランス、ディザスター リカバリーなどのクラウドの概念について説明します。 Azure でのクラウド コンピューティングの利点と、それによって時間とコストを節約する方法について理解します。 Azure クラウドに移行するための基本的な戦略を比較対照します。 コンピューティング、ネットワーク、ストレージ、セキュリティなど、Azure で利用できる広範なサービスを調査します。
 
-[Azure でのリソースの管理](/learn/paths/azure-for-the-data-engineer):Azure コマンド ラインと Web ポータルを使用してクラウド ベースのリソースを作成、管理、制御する方法について説明します。
+[Azure でのリソースの管理](/learn/paths/control-and-organize-with-azure-resource-manager):Azure コマンド ラインと Web ポータルを使用してクラウド ベースのリソースを作成、管理、制御する方法について説明します。
 
 [Azureでのインフラストラクチャ リソースの管理](/learn/paths/administer-infrastructure-resources-in-azure):仮想マシンのリソースを作成、管理、セキュリティ保護、およびスケーリングする方法について説明します。
 
