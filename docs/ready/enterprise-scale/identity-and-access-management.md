@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2b8866d90e93ace8ada24da7162f2c665a02abaa
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: ae81d4fa9c484ec3d5e06c27deb4a9826ebfea70
+ms.sourcegitcommit: 44fb6deee30fd6ffc80b5d2e66544a50e8405c73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776450"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91492725"
 ---
 # <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 
@@ -62,7 +62,7 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 
 | Role | 使用法 | Actions | アクションなし |
 |---|---|---|---|
-| Azure プラットフォーム所有者               | 管理グループとサブスクリプションのライフサイクル管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
+| Azure プラットフォーム所有者 (つまり、組み込みの所有者ロール)               | 管理グループとサブスクリプションのライフサイクル管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | ネットワーク管理 (NetOps)        | プラットフォーム全体のグローバル接続管理:仮想ネットワーク、UDR、NSG、NVA、VPN、Azure ExpressRoute など            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
 | セキュリティ操作 (SecOps)       | Azure 資産と Azure Key Vault の消去ポリシー全体の水平方向のビューを持つセキュリティ管理者ロール | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
 | サブスクリプションの所有者                 | サブスクリプション所有者のロールから派生したサブスクリプション所有者の委任されたロール                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 45848c9291fe64398f096761d62556cf50eff106
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 3885de0ac0ce8340162173806a1686a4bc409ecb
+ms.sourcegitcommit: 65b2476d07d4c224d279ac59f7e7f2868bba219c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776552"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136353"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore cdnp cdne westeurope usgovia accountlookup messagequery -->
@@ -21,6 +21,8 @@ ms.locfileid: "90776552"
 # <a name="recommended-naming-and-tagging-conventions"></a>推奨される名前付けおよびタグ付け規則
 
 運用管理要件と会計処理要件をサポートするようにクラウド資産を整理します。 明確に定義された名前付け規則とメタデータのタグ付け規則を使用すると、リソースをすばやく見つけて管理するのに役立ちます。 これらの規則は、チャージバックとショーバックという会計処理を使用して、クラウドの使用コストをビジネス チームに関連付けるためにも役立ちます。
+
+リソースの正確な表現と名前付けは、セキュリティ保護のために不可欠です。 セキュリティ インシデントが発生した場合、影響を受けるシステム、それらのシステムのビジネスへの潜在的な影響、およびそれらが使用されている対象を迅速に特定することが、適切なリスク決定を行うために重要です。 [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction) や [Azure Sentinel](https://docs.microsoft.com/azure/sentinel) などのセキュリティ サービスは、リソースと、リソース名によって関連付けられているログおよびアラート情報を参照します。
 
 Azure では、[Azure リソースの名前付け規則と制限事項](/azure/azure-resource-manager/management/resource-name-rules)が定義されています。 このガイダンスでは、エンタープライズ クラウドの導入作業を支援するための詳細な推奨事項について説明します。
 
@@ -65,11 +67,11 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 
 | 名前付けコンポーネント            | 説明                                                                                                                                                                                                      | 例                                         |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| 事業単位               | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 小規模な組織では、このコンポーネントは 1 つの会社の最上位の組織要素を表す可能性があります。 | `fin`、`mktg`、`product`、`it`、`corp`           |
-| サブスクリプションの種類           | リソースが含まれているサブスクリプションの目的に関する概要の説明。 多くの場合は、デプロイ環境の種類または特定のワークロードによって分類されます。                                                       | `prod`、`shared`、`client`                       |
-| アプリケーションまたはサービス名 | リソースが属しているアプリケーション、ワークロード、またはサービスの名前。                                                                                                                                    | `navigator`、`emissions`、`sharepoint`, `hadoop` |
-| デプロイ環境      | リソースによってサポートされているワークロードの開発ライフサイクルのステージ。                                                                                                                              | `prod`、`dev`、`qa`、`stage`、`test`             |
-| リージョン                      | リソースがデプロイされている Azure リージョン。                                                                                                                                                                 | `westus`、`eastus2`、`westeurope`, `usgovia`     |
+| 事業単位               | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 小規模な組織では、このコンポーネントは 1 つの会社の最上位の組織要素を表す可能性があります。 | `fin`, `mktg`, `product`, `it`, `corp`           |
+| サブスクリプションの種類           | リソースが含まれているサブスクリプションの目的に関する概要の説明。 多くの場合は、デプロイ環境の種類または特定のワークロードによって分類されます。                                                       | `prod`, `shared`, `client`                       |
+| アプリケーションまたはサービス名 | リソースが属しているアプリケーション、ワークロード、またはサービスの名前。                                                                                                                                    | `navigator`, `emissions`, `sharepoint`, `hadoop` |
+| デプロイ環境      | リソースによってサポートされているワークロードの開発ライフサイクルのステージ。                                                                                                                              | `prod`, `dev`, `qa`, `stage`, `test`             |
+| リージョン                      | リソースがデプロイされている Azure リージョン。                                                                                                                                                                 | `westus`, `eastus2`, `westeurope`, `usgovia`     |
 
 ### <a name="recommended-resource-type-prefixes"></a>推奨されるリソースの種類のプレフィックス
 
@@ -87,6 +89,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | Resource group                  | rg-         |
 | ポリシー定義               | policy-     |
 | API 管理サービス インスタンス | apim-       |
+| マネージド ID                | id-         |
 
 ### <a name="networking"></a>ネットワーク
 
@@ -149,10 +152,11 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 
 ### <a name="storage"></a>ストレージ
 
-| 資産の種類       | 名前のプレフィックス |
-|------------------|-------------|
-| ストレージ アカウント  | st          |
-| Azure StorSimple | ssimp       |
+| 資産の種類               | 名前のプレフィックス |
+|--------------------------|-------------|
+| ストレージ アカウント          | st          |
+| Azure StorSimple         | ssimp       |
+| Azure Container Registry | acr         |
 
 ### <a name="ai-and-machine-learning"></a>AI および機械学習
 
@@ -251,6 +255,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | サブスクリプション                    | アカウント/ <br> Enterprise Agreement    | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> corp-shared-001 <li> fin-client-001                                        |
 | Resource group                  | サブスクリプション                          | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-acctlookupsvc-share-001 <li> rg-ad-dir-services-shared-001 |
 | API 管理サービス インスタンス | グローバル                                | apim-\<App or service name\>                                | apim-navigator-prod                                                                                |
+| マネージド ID                | Resource group                        | id-\<App or service name\>                                  | id-appcn-keda-prod-eus-001                                                                         |
 
 > [!NOTE]
 > 上記を含め、このドキュメント内にある名前の例では、3 桁の埋め込み (\<\#\#\#\>) が示されています。 つまり、  mktg-prod-*001*
@@ -310,6 +315,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | ストレージ アカウント (全般)     | グローバル | st\<storage name\>\<\#\#\#\>                                                  | <li> stnavigatordata001 <li> stemissionsoutput001 |
 | Storage アカウント (診断ログ) | グローバル | stdiag\<first 2 letters of subscription name and number\>\<region\>\<\#\#\#\> | <li> stdiagsh001eastus2001 <li> stdiagsh001westus001 |
 | Azure StorSimple                  | グローバル | ssimp\<App Name\>\<Environment\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionsdev |
+| Azure Container Registry          | グローバル | acr\<App Name\>\<Environment\>\<\#\#\#\>                                      | <li> acrnavigatorprod001 |
 
 ### <a name="example-names-ai-and-machine-learning"></a>名前の例:AI と機械学習
 

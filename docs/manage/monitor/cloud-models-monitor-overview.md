@@ -3,16 +3,16 @@ title: クラウド デプロイ モデルの監視戦略
 description: Azure 向けのクラウド導入フレームワークを使用して、採用すべきクラウド管理の監視戦略について学習します。
 author: MGoedtel
 ms.author: magoedte
-ms.date: 10/04/2019
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 84f285a04c599254358bd15288f29b96bfb9de05
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: ca376b204b7c6decc7e75a50d5438c6e41905317
+ms.sourcegitcommit: d81a822575820115d9814b0fc6c05ae33e535825
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603991"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92058786"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -46,10 +46,10 @@ Azure Active Directory Domain Services などのテナント サービスから�
 |---|---|---|---|
 | Application | Azure VM、Azure App Service、Azure Service Fabric、Azure Functions、および Azure Cloud Service 上の .NET、.NET Core、Java、JavaScript、および Node.js プラットフォームで実行されている Web ベースのアプリケーション。 | ライブ Web アプリケーションを監視して、パフォーマンスの異常を自動検出し、コードの例外と問題を識別し、ユーザー動作の分析を収集します。 | Application Insights (Azure Monitor の機能)。 |
 | Azure リソース - サービスとしてのプラットフォーム (PaaS) | Azure Database サービス (SQL、MySQL など)。 | Azure Database for SQL のパフォーマンス メトリック。 | 診断ログで SQL データを Azure Monitor ログにストリーミングできるようにします。 |
-| Azure リソース - サービスとしてのインフラストラクチャ (IaaS) | 1.Azure Storage <br> 2.Azure Application Gateway <br> 3.ネットワーク セキュリティ グループ <br> 4.Azure の Traffic Manager <br> 5.Azure Virtual Machines <br> 6.Azure Kubernetes Service/Azure Container Instances | 1.容量、可用性、およびパフォーマンス。 <br> 2.パフォーマンス ログと診断ログ (アクティビティ、アクセス、パフォーマンス、ファイアウォール)。 <br> 3.ルールが適用されたときのイベントと、拒否または許可を行うためにルールが適用された回数を示すルール カウンターを監視します。 <br> 4.エンドポイントの状態の可用性を監視します。 <br> 5.ゲスト VM オペレーティング システム (OS) での容量、可用性、パフォーマンスを監視します。 各 VM 上でホストされているアプリの依存関係をマップします。これには、サーバー間のアクティブなネットワーク接続の可視性、受信接続および送信接続の待機時間、任意の TCP 接続アーキテクチャでのポートなどが含まれます。 <br> 6.コンテナーおよびコンテナー インスタンス上で実行されるワークロードの容量、可用性、およびパフォーマンスを監視します。 | 1.Blob Storage のストレージ メトリック。 <br> 2.診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 <br> 3.ネットワーク セキュリティ グループの診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 <br> 4.Traffic Manager エンドポイントの診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 <br> 5.Azure Monitor for VMs を有効にします。 <br> 6.Azure Monitor for containers を有効にします。 |
+| Azure リソース - サービスとしてのインフラストラクチャ (IaaS) | 1.Azure Storage <br> 2.Azure の[負荷分散サービス](/azure/architecture/guide/technology-choices/load-balancing-overview#azure-load-balancing-services) <br> 3.ネットワーク セキュリティ グループ <br> 4.Azure Virtual Machines <br> 5.Azure Kubernetes Service/Azure Container Instances | 1.容量、可用性、およびパフォーマンス。 <br> 2.パフォーマンス ログと診断ログ (アクティビティ、アクセス、パフォーマンス、ファイアウォール)。 <br> 3.ルールが適用されたときのイベントと、拒否または許可を行うためにルールが適用された回数を示すルール カウンターを監視します。 <br> 4.ゲスト VM オペレーティング システム (OS) での容量、可用性、パフォーマンスを監視します。 各 VM 上でホストされているアプリの依存関係をマップします。これには、サーバー間のアクティブなネットワーク接続の可視性、受信接続および送信接続の待機時間、任意の TCP 接続アーキテクチャでのポートなどが含まれます。 <br> 5.コンテナーおよびコンテナー インスタンス上で実行されるワークロードの容量、可用性、およびパフォーマンスを監視します。 | 最初の列の項目 1 ～ 5 では、プラットフォーム メトリックとアクティビティ ログが自動的に収集され、分析とアラートのために Azure Monitor で使用できるようになります。 <br> リソース ログを Azure Monitor ログに転送するように診断設定を構成します。 <br> [Azure Monitor for VMs](/azure/azure-monitor/insights/vminsights-overview) を有効にします。 <br> [Azure Monitor for containers](/azure/azure-monitor/insights/container-insights-overview) を有効にします。 |
 | ネットワーク | ご利用の仮想マシンと 1 つまたは複数のエンドポイント (別の VM、完全修飾ドメイン名、Uniform Resource Identifier、または IPv4 アドレス) との間の通信です。 | VM とエンドポイントの間で発生する到達可能性、待機時間、およびネットワーク トポロジ変更を監視します。 | Azure Network Watcher。 |
-| Azure サブスクリプション | Azure Service Health と基本的なリソースの正常性。 | <li> サービスまたはリソースに対して実行された管理操作。 <li> 低下状態または利用不可状態である、Azure サービスのサービス正常性。 <li> Azure サービスの観点から Azure リソースで検出された正常性の問題。 <li> 失敗または例外を示す Azure の自動スケーリングを使用して実行された操作。 <li> 許可または拒否操作が発生したことを示す Azure Policy を使用して実行された操作。 <li> Azure Security Center によって生成されたアラートのレコード。 | Azure Resource Manager を使用して監視およびアラート通知用のアクティビティ ログで提供されます。 |
-| Azure テナント | Azure Active Directory | 診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 |
+| Azure サブスクリプション | Azure サービスの観点からの Azure Service Health と基本的なリソース正常性。 | <li> サービスまたはリソースに対して実行された管理操作。 <li> 低下状態または利用不可状態である、Azure サービスのサービス正常性。 <li> Azure サービスの観点から Azure リソースで検出された正常性の問題。 <li> 失敗または例外を示す Azure の自動スケーリングを使用して実行された操作。 <li> 許可または拒否操作が発生したことを示す Azure Policy を使用して実行された操作。 <li> Azure Security Center によって生成されたアラートのレコード。 | Azure Monitor を使用して、監視およびアラート用にアクティビティ ログで提供されます。 |
+| Azure テナント | Azure Active Directory | Azure AD 監査ログとサインイン ログ。 | 診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 |
 
 ## <a name="hybrid-cloud-monitoring"></a>ハイブリッド クラウドの監視
 
@@ -70,22 +70,22 @@ Azure Active Directory Domain Services などのテナント サービスから�
 | 要件 | Azure Monitor | Operations Manager |
 |---|---|---|
 | インフラストラクチャの要件 | いいえ | はい <br><br> 少なくとも 1 つの管理サーバーと、オペレーション データベースとレポート データ ウェアハウス データベースをホストする 1 つの SQL Server が必要です。 高可用性とディザスター リカバリーが必要で、複数のサイト、信頼されていないシステム、およびその他の複雑な設計上の考慮事項がある場合は、複雑さが増します。 |
-| 接続の制限 - インターネットまたは分離ネットワークなし | × | はい |
+| 接続の制限 - インターネットまたは分離ネットワークなし | いいえ | はい |
 | 接続の制限 - 制御されたインターネット アクセス | はい | はい |
-| 接続の制限 - 頻繁に切断 | [はい] | はい |
-| 構成可能な正常性の監視 | いいえ | ○ |
+| 接続の制限 - 頻繁に切断 | はい | はい |
+| 構成可能な正常性の監視 | いいえ | はい |
 | Web アプリの可用性テスト (分離されたネットワーク) | はい、制限あり <br><br> この領域では Azure Monitor のサポートが制限されており、カスタム ファイアウォールの例外が必要です。 | はい |
-| Web アプリの可用性テスト (グローバル分散) | いいえ | ○ |
+| Web アプリの可用性テスト (グローバル分散) | いいえ | はい |
 | VM ワークロードの監視 | はい、制限あり <br><br> IIS および SQL Server のエラー ログ、Windows イベント、およびパフォーマンス カウンターを収集できます。 カスタム クエリ、アラート、および視覚化の作成が必要です。 | はい <br><br> 利用可能な管理パックを使用して、ほとんどのサーバー ワークロードの監視をサポートします。 VM 上に Log Analytics Windows エージェントまたは Operations Manager エージェントのいずれかを必要とし、企業ネットワーク上の管理グループに報告します。 |
-| Azure IaaS の監視 | [はい] | はい <br><br> 企業ネットワークからの大部分のインフラストラクチャの監視をサポートします。 Azure 管理パックを使用して、Azure VM、SQL、およびストレージの可用性の状態、メトリック、およびアラートを追跡します。 |
+| Azure IaaS の監視 | はい | はい <br><br> 企業ネットワークからの大部分のインフラストラクチャの監視をサポートします。 Azure 管理パックを使用して、Azure VM、SQL、およびストレージの可用性の状態、メトリック、およびアラートを追跡します。 |
 | Azure PaaS の監視 | はい | はい、制限あり <br><br> Azure 管理パックでサポートされている内容に基づいています。 |
-| Azure サービスの監視 | [はい] | はい <br><br> 現在、管理パックでは Azure Service Health のネイティブな監視は提供されていませんが、カスタム ワークフローを作成して、Service Health アラートのクエリを実行できます。 Azure REST API を使用し、既存の通知を介してアラートを取得します。 |
-| 最新の Web アプリケーションの監視 | ○ | × |
+| Azure サービスの監視 | はい | はい <br><br> 現在、管理パックでは Azure Service Health のネイティブな監視は提供されていませんが、カスタム ワークフローを作成して、Service Health アラートのクエリを実行できます。 Azure REST API を使用し、既存の通知を介してアラートを取得します。 |
+| 最新の Web アプリケーションの監視 | はい | いいえ |
 | レガシ Web アプリケーションの監視 | はい、制限あり、SDK によって異なります <br><br> .NET および Java Web アプリケーションのより古いバージョンの監視をサポートします。 | はい、制限あり |
-| Azure Kubernetes Service コンテナーを監視する | ○ | × |
-| Docker または Windows コンテナーを監視する | ○ | いいえ |
-| ネットワーク パフォーマンスの監視 | はい | はい、制限あり <br><br> 可用性チェックがサポートされ、簡易ネットワーク管理プロトコル (SNMP) プロトコルを使用して企業ネットワークのネットワーク デバイスから基本的な統計情報が収集されます。 |
-| 対話型データ分析 | ○ | いいえ <br><br> SQL Server Reporting Services のあらかじめ準備されたレポートまたはカスタムのレポート、サードパーティの視覚化ソリューション、またはカスタムの Power BI 実装に依存しています。 Operations Manager データ ウェアハウスには、スケールとパフォーマンスの制限があります。 データ集約要件に対する代替手段として Azure Monitor ログと統合します。 Log Analytics コネクタを構成することにより、統合を実現します。 |
+| Azure Kubernetes Service コンテナーを監視する | はい | いいえ |
+| Docker または Windows コンテナーを監視する | ○ | × |
+| ネットワーク パフォーマンスの監視 | ○ | はい、制限あり <br><br> 可用性チェックがサポートされ、簡易ネットワーク管理プロトコル (SNMP) プロトコルを使用して企業ネットワークのネットワーク デバイスから基本的な統計情報が収集されます。 |
+| 対話型データ分析 | はい | いいえ <br><br> SQL Server Reporting Services のあらかじめ準備されたレポートまたはカスタムのレポート、サードパーティの視覚化ソリューション、またはカスタムの Power BI 実装に依存しています。 Operations Manager データ ウェアハウスには、スケールとパフォーマンスの制限があります。 データ集約要件に対する代替手段として Azure Monitor ログと統合します。 Log Analytics コネクタを構成することにより、統合を実現します。 |
 | エンドツーエンドの診断、根本原因の分析、および適切なタイミングでのトラブルシューティング | はい | はい、制限あり <br><br> エンドツーエンドの診断とトラブルシューティングは、オンプレミスのインフラストラクチャとアプリケーションに対してのみサポートされます。 他の System Center コンポーネントまたはパートナー ソリューションを使用します。 |
 | 対話的な視覚化 (ダッシュボード) | はい | はい、制限あり <br><br> HTML5 Web コンソール、または Squared Up や Savision などのパートナー ソリューションの高度なエクスペリエンスで、基本的なダッシュボードが提供されます。 |
 | IT または DevOps ツールとの統合 | はい | はい、制限あり |
@@ -132,13 +132,13 @@ Operations Manager を使用して Azure でホストされているリソース
 
 - Azure Monitor は、Operations Manager の制限を回避する手段です。 重要なパフォーマンスおよびログ データを収集することで、Operations Manager データ ウェアハウス データベースを補完します。 Operations Manager のデータ ウェアハウスより、Azure Monitor の方が、分析、パフォーマンス (大量のデータのクエリを行うとき)、保有の点で優れています。
 
-  Azure Monitor のクエリ言語を使用すると、いっそう複雑で高度なクエリを作成できます。 テラバイト単位のデータに対するクエリを、数秒で実行できます。 ご利用のデータを円グラフ、タイム チャート、およびその他のさまざまな視覚化にすばやく変換することができます。 このデータを分析する方法が、SQL Server Reporting Services、カスタム SQL クエリ、または他の回避策に基づく Operations Manager レポートだけに制約されることはなくなりました。
+  Azure Monitor ログのクエリ言語を使用すると、いっそう複雑で高度なクエリを作成できます。 テラバイト単位のデータに対するクエリを、数秒で実行できます。 ご利用のデータを円グラフ、タイム チャート、およびその他のさまざまな視覚化にすばやく変換することができます。 このデータを分析する方法が、SQL Server Reporting Services、カスタム SQL クエリ、または他の回避策に基づく Operations Manager レポートだけに制約されることはなくなりました。
 
-- Azure Monitor Alert Management ソリューションを実装することで、改善されたアラート エクスペリエンスを提供できます。 Operations Manager 管理グループで生成されたアラートを、Azure Monitor Log Analytics ワークスペースに転送することができます。 特定のアラートのみを転送するように、Operations Manager から Azure Monitor ログへのアラートの転送を行うサブスクリプションを構成できます。 たとえば、クエリの基準を満たすアラートのみを転送することで、傾向の問題管理や、エラーまたは問題の根本原因の調査を 1 つの画面で行いやすくなります。 さらに、Application Insights または他のソースからの他のログ データを関連付けることで、ユーザー エクスペリエンスの向上、稼働時間の増加、およびインシデントの解決時間の短縮に役立つ分析情報を得ることができます。
+- Azure Monitor Alert Management ソリューションを実装することで、改善されたアラート エクスペリエンスを提供できます。 Operations Manager 管理グループで生成されたアラートは、Azure Monitor Log Analytics ワークスペースに転送できます。 特定のアラートのみを転送するように、Operations Manager から Azure Monitor ログへのアラートの転送を行うサブスクリプションを構成できます。 たとえば、クエリの基準を満たすアラートのみを転送することで、傾向の問題管理や、エラーまたは問題の根本原因の調査を 1 つの画面で行いやすくなります。 さらに、Application Insights または他のソースからの他のログ データを関連付けることで、ユーザー エクスペリエンスの向上、稼働時間の増加、およびインシデントの解決時間の短縮に役立つ分析情報を得ることができます。
 
-- Azure のシンプルなアーキテクチャまたは多層アーキテクチャから、クラウドネイティブのインフラストラクチャとアプリケーションを監視し、Operations Manager を使用してオンプレミスのインフラストラクチャを監視することができます。 この監視には、1 つまたは複数の VM、可用性セットまたは仮想マシン スケール セットに配置された複数の VM、または Windows Server または Linux コンテナー上で実行されている Azure Kubernetes Service (AKS) にデプロイされたコンテナー化アプリケーションが含まれます。
+- Azure Monitor を使用して Azure 内の単一または多層のアーキテクチャから、クラウドネイティブのインフラストラクチャとアプリケーションを監視し、Operations Manager を使用してオンプレミスのインフラストラクチャを監視できます。 この監視には、1 つまたは複数の VM、可用性セットまたは仮想マシン スケール セットに配置された複数の VM、または Windows Server または Linux コンテナー上で実行されている Azure Kubernetes Service (AKS) にデプロイされたコンテナー化アプリケーションが含まれます。
 
-- System Center Operations Manager Health Check ソリューションを使用して、System Center Operations Manager 管理グループのリスクと正常性を前もって定期的に評価できます。 このソリューションにより、管理グループに追加したカスタム機能を置き換えたり、補完したりできます。
+    Azure VM で実行されている Microsoft またはサードパーティのワークロードを包括的に監視する必要があり、ログまたはパフォーマンス データのみに基づいて評価できない高度なシナリオがある場合は、System Center Operations Manager を使用します。 その管理パックでは、ワークロードの運用の正常性を判断するための高度なロジック (サービスおよび正常性のモデルを含む) が提供されます。
 
 - Azure Monitor for VMs のマップ機能を使用すると、Azure VM とオンプレミス VM の間のネットワーク接続からの標準的な接続メトリックを監視できます。 これらのメトリックとして、応答時間、1 分あたりの要求数、トラフィックのスループット、リンクがあります。 失敗した接続の識別、トラブルシューティング、移行の検証の実施、セキュリティ分析の実行、サービスの全体的なアーキテクチャの検証ができます。 マップは、Windows および Linux システムのアプリケーション コンポーネントを自動的に検出したり、サービス間の通信をマップしたりできます。 この自動化は、認識していなかった接続および依存関係の識別、Azure への移行の計画および検証、インシデント解決時の推論の最小化に役立ちます。
 
@@ -147,7 +147,7 @@ Operations Manager を使用して Azure でホストされているリソース
   - ミッション クリティカルな多層アプリケーションとマイクロサービス。
   - ユーザーの場所と Web ベースのアプリケーション (HTTP/HTTPS)。
 
-この戦略で、SNMP を必要としないネットワーク レイヤーの可視性が実現します。 対話型のトポロジ マップに、送信元と宛先のエンドポイント間の経路のホップバイホップ トポロジを表示することもできます。 Operations Manager のネットワーク監視や現在の環境で使用されているその他のネットワーク監視ツールを使用して同じ結果を得ようとするよりも、こちらの方が適切な選択です。
+    この戦略で、SNMP を必要としないネットワーク レイヤーの可視性が実現します。 対話型のトポロジ マップに、送信元と宛先のエンドポイント間の経路のホップバイホップ トポロジを表示することもできます。 Operations Manager のネットワーク監視や現在の環境で使用されているその他のネットワーク監視ツールを使用して同じ結果を得ようとするよりも、こちらの方が適切な選択です。
 
 ### <a name="monitor-with-azure-monitor"></a>Azure Monitor による監視
 
