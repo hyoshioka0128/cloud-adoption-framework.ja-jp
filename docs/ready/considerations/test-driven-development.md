@@ -4,15 +4,15 @@ description: ランディング ゾーン用のテスト駆動開発。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7a939f9c6df449421685e8eb38c81cf2c57006b4
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: e28124e8480d8b8a427ce69010f4d40278564a37
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603914"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92690007"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>ランディング ゾーン用のテスト駆動開発 (TDD)
 

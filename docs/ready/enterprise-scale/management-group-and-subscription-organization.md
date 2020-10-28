@@ -7,18 +7,18 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3f72d69220d30ac319ffa5c0aa1d266a8b568a3
-ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
+ms.openlocfilehash: 1f7b046abd13df1d4d16d6deb7315b6e620ac3c3
+ms.sourcegitcommit: 84696bcaf2fa7187b7db0ee38b83b9fdd78cee07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92253437"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92494186"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理グループとサブスクリプションの組織
 
 ![管理グループの階層を示す図。](./media/sub-org.png)
 
-"_図 1:管理グループの階層。_
+" _図 1:管理グループの階層。_
 
 ## <a name="define-a-management-group-hierarchy"></a>管理グループの階層を定義する
 
@@ -38,7 +38,7 @@ Azure Active Directory (Azure AD) テナント内の管理グループの構造�
 - ルート レベルの管理グループの下に管理グループを作成して、ホストするワークロード (アーキタイプ) の種類と、セキュリティ、コンプライアンス、接続性、機能のニーズに基づくワークロードの種類を表します。 このグループ化構造により、セキュリティ、コンプライアンス、接続、機能について同じ設定を必要とするすべてのワークロードに対し、管理グループ レベルで適用される一連の Azure ポリシーを使用できます。
 - Azure Policy で適用または追加できるリソース タグを使用して、管理グループ階層全体のクエリと階層間の水平移動を行うことができます。 これにより、複雑な管理グループ階層を使用しなくても、検索のニーズに合わせてリソースをグループ化できます。
 - ユーザーが Azure をすぐに試すことができるように、最上位レベルのサンドボックス管理グループを作成します。 次にユーザーは、運用環境でまだ許可されていない可能性があるリソースを試すことができます。 サンドボックスは、開発、テスト、運用の各環境から分離されています。
-  - 最上位レベルのサンドボックス管理グループの詳細なガイダンスについては、[実装ガイドライン](/docs/ready/enterprise-scale/implementation-guidelines.md)をご覧ください。
+  - 最上位レベルのサンドボックス管理グループの詳細なガイダンスについては、[実装ガイドライン](./implementation-guidelines.md#sandbox-governance-guidance)をご覧ください。
 - 管理グループ管理操作、サブスクリプション管理操作、ロールの割り当てを実行するには、専用のサービス プリンシパル名 (SPN) を使用します。 SPN を使用することは、昇格された権利を持つユーザーの数が減り、最小特権ガイドラインに従うということになります。
 - 上記の SPN にルート レベルでのアクセス権を付与するには、ルート管理グループのスコープ (`/`) で `User Access Administrator` Azure ロールベースのアクセス制御 (RBAC) ロールを割り当てます。 SPN にアクセス許可を付与した後は、`User Access Administrator` ロールを安全に削除できます。 これにより、SPN のみが `User Access Administrator` ロールの一部となります。
 - ルート管理グループのスコープ (`/`) で、前述の SPN に `Contributor` アクセス許可を割り当てると、テナント レベルの操作が可能になります。 このアクセス許可レベルでは、その SPN を使用して、組織内の任意のサブスクリプションに対するリソースのデプロイと管理を確実に行うことができます。

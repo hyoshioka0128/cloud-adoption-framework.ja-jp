@@ -4,15 +4,15 @@ description: ランディング ゾーンのセキュリティを向上させま
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 28b9271cee8f0314155bcd34d736332a5e10c1a2
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: f2cd1f500b248f4568e572eac4ea82cce11af285
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621503"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92689981"
 ---
 # <a name="improve-landing-zone-security"></a>ランディング ゾーンのセキュリティの向上
 
@@ -23,7 +23,7 @@ ms.locfileid: "91621503"
 次の参照アーキテクチャとベスト プラクティスの一覧は、ランディングのセキュリティを向上させる方法の例を示しています。
 
 - [Azure Security Center](/azure/security-center/security-center-get-started?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):Security Center にサブスクリプションをオンボードします。
-- [Azure Sentinel](/azure/sentinel/quickstart-onboard?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):Azure Sentinel をオンボードすると、**セキュリティ情報イベント管理 (SIEM)** および**セキュリティ オーケストレーション自動応答 (SOAR)** ソリューションが提供されます。
+- [Azure Sentinel](/azure/sentinel/quickstart-onboard?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):Azure Sentinel をオンボードすると、 **セキュリティ情報イベント管理 (SIEM)** および **セキュリティ オーケストレーション自動応答 (SOAR)** ソリューションが提供されます。
 - [ネットワーク境界のセキュリティ](../../reference/networking-vdc.md):ネットワーク境界をデータセンターで保護する方法に似た、ネットワークを開発するためのいくつかの参照パターン。
 - [セキュリティ保護されたネットワーク アーキテクチャ](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):境界ネットワークとセキュリティで保護されたネットワーク アーキテクチャを実装するための参照アーキテクチャ。
 - [ID 管理とアクセス制御](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json):ID とアクセスを実装して Azure のランディング ゾーンをセキュリティで保護するための一連のベスト プラクティス。

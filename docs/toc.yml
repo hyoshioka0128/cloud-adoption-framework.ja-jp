@@ -207,7 +207,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: Architecture
+              - name: アーキテクチャ
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md
@@ -633,6 +633,8 @@ items:
                     href: scenarios/azure-stack/migrate-deploy.md
                   - name: ガバナンス
                     href: scenarios/azure-stack/govern.md
+                  - name: 管理する
+                    href: scenarios/azure-stack/manage.md
               - name: Analytics のソリューション
                 items:
                   - name: 概要

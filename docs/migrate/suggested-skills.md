@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 635fed255982b7e25fcf8755380ab4a10de9d8e4
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0595d0ce6573d9dabed538aa39999ed6803e5842
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885866"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334886"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>クラウド移行のためのスキルの準備
 
@@ -31,8 +31,8 @@ ms.locfileid: "88885866"
 - [ポートフォリオのバランスを取る](../strategy/balance-the-portfolio.md):アプリケーション ポートフォリオ全体での残高および適切な投資配分を確保します。
 - [業務上の正当な理由の構築](../strategy/cloud-migration-business-case.md):クラウド移行作業を推進する業務上の正当な理由を作成し理解します。
 - [デジタル資産の合理化](../digital-estate/rationalize.md):デジタル資産内の資産を合理化します。
-- [アプリケーション ポートフォリオの評価](/learn/modules/app-and-infra-migration-and-modernization):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
-- [Microsoft Azure 移行の評価と計画](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning):オンプレミスのワークロードの評価を支援するための Pluralsight コース。
+- [アプリケーション ポートフォリオの評価](/learn/modules/app-and-infra-migration-and-modernization/):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
+- [Microsoft Azure 移行の評価と計画](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning-update):オンプレミスのワークロードの評価を支援するための Pluralsight コース。
 
 評価プロセス中、アーキテクトは各ワークロードのソリューションを設計します。 次のスキル習得リソースは、これらのタスクに備えてアーキテクトの準備を支援します。
 
