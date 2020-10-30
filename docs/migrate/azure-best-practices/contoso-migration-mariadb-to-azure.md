@@ -1,20 +1,20 @@
 ---
 title: MariaDB データベースを Azure に移行する
-description: Contoso が、オンプレミスの MariaDB データベースを Azure にどのように移行したかについて説明します。
+description: Contoso がオンプレミスの MariaDB データベースを Azure にどのように移行したかについて説明します。
 author: deltadan
 ms.author: abuck
 ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 650b41a6f27c4343422f0d185f2f3255b5f7a42d
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a96c4afaa31a7cc399cee0e249e04348623e847d
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605026"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334682"
 ---
-<!-- cSpell:ignore  mysqldump Navicat phpMyAdmin -->
+<!-- cSpell:ignore mysqldump -->
 
 # <a name="migrate-mariadb-databases-to-azure"></a>MariaDB データベースを Azure に移行する
 
@@ -22,10 +22,10 @@ ms.locfileid: "89605026"
 
 Contoso では、次の理由により、MySQL ではなく MariaDB が使用されています。
 
-- 多数のストレージ エンジン。
+- 多数のストレージ エンジン オプション。
 - キャッシュとインデックスのパフォーマンス。
 - 機能と拡張機能によるオープンソースのサポート。
-- 分析用の ColumnStore のサポート。
+- 分析ワークロード用の ColumnStore ストレージ エンジン。
 
 会社の移行の目標は、MariaDB をサポートするために必要な環境の管理について心配せずに、これを引き続き使用することです。
 
@@ -75,7 +75,7 @@ MariaDB データベースでは、会社の HR 部門のあらゆる側面に�
 - Azure Database for MariaDB には、Contoso が監査担当者のために満たす必要がある、必須のコンプライアンス認定とプライバシー認定があります。
 - 読み取りレプリカを使用すると、レポートおよびアプリケーション処理のパフォーマンスが向上します。
 - [Azure Private Link](/azure/mariadb/concepts-data-access-security-private-link) を使用して、サービスを内部ネットワーク トラフィックだけに公開できます (パブリック アクセスなし)。
-- Contoso では、将来、MariaDB ColumnStore および GraphDBMS データベース モデルを使用する可能性を検討しているため、Azure Database for MySQL に移行しないことを選択しました。
+- Contoso では、将来、MariaDB ColumnStore およびグラフ データベース モデルを使用する可能性を検討しているため、Azure Database for MySQL に移行しないことを選択しました。
 - 選択されたゲートウェイ (Azure ExpressRoute またはサイト間 VPN) に基づいて、アプリケーションからデータベースへの[帯域幅と待機時間](/azure/vpn-gateway/vpn-gateway-about-vpngateways)が十分に確保されます。
 
 ### <a name="solution-review"></a>ソリューションのレビュー
@@ -109,7 +109,7 @@ MariaDB データベースを移行する前に、移行を成功させるため
 Contoso は、オンプレミス環境から、MariaDB データベースが配置されている仮想ネットワークへの仮想ネットワーク ゲートウェイ接続を設定する必要があります。 この接続より、接続文字列が更新されたときに、オンプレミス アプリケーションはゲートウェイを介してデータベースにアクセスできるようになります。
 
   ![移行プロセスを示す図。](./media/contoso-migration-mariadb-to-azure/migration-process.png)
-  "_図 2:移行プロセス_
+  " _図 2:移行プロセス_
 
 #### <a name="migration"></a>移行
 
@@ -193,10 +193,10 @@ Contoso は次のことを行う必要があります。
 
 ### <a name="backups"></a>バックアップ
 
-geo リストアを使用して、Azure Database for MariaDB データベースが確実にバックアップされるようにします。 これにより、リージョン規模の障害が発生した場合は、ペアのリージョンにあるバックアップを使用できます。
+geo リストアを使用して、Azure Database for MariaDB インスタンスが確実にバックアップされるようにします。 これにより、リージョン規模の障害が発生した場合は、ペアのリージョンにあるバックアップを使用できます。
 
 > [!IMPORTANT]
-> Azure Database for MariaDB リソースが削除されないように、[リソース ロック](/azure/azure-resource-manager/management/lock-resources)が設定されていることを確認します。 削除されたサーバーを復元することはできません。
+> Azure Database for MariaDB インスタンスに[リソース ロック](/azure/azure-resource-manager/management/lock-resources)が確実に設定されるようにして、削除されないようにしてください。 削除されたサーバーを復元することはできません。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f9dfee1aca21acbbf0f840b79d61501ad90c73a
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 6dca1ce7cbd13630207ba04a8298769263145e67
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603870"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334648"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
@@ -48,7 +48,7 @@ Contoso は、目標と要件を明確にした後、デプロイ ソリュー�
 
 ### <a name="current-environment"></a>現在の環境
 
-PostgreSQL 9.6.7 は、Contoso データセンターの物理的な Linux マシン (`sql-pg-01.contoso.com`) で実行されています。 Contoso には、オンプレミスのデータセンター ネットワークへのサイト間仮想ネットワーク ゲートウェイを含む Azure サブスクリプションが既にあります。
+PostgreSQL 9.6.7 は、Contoso データセンターの物理的な Linux マシン (`sql-pg-01.contoso.com`) で実行されています。 Contoso には、オンプレミスのデータセンター ネットワークへのサイト間 VPN ゲートウェイを含む Azure サブスクリプションが既にあります。
 
 ### <a name="proposed-solution"></a>提案されるソリューション
 
@@ -82,7 +82,7 @@ Contoso は、長所と短所の一覧をまとめて、提案された設計を
 
 ![シナリオ アーキテクチャの図。](./media/contoso-migration-postgresql-to-azure/architecture.png)
 
-"_図 1:シナリオのアーキテクチャ_
+" _図 1:シナリオのアーキテクチャ_
 
 ### <a name="migration-process"></a>移行プロセス
 
@@ -94,7 +94,7 @@ Contoso は、PostgreSQL データベースを移行する前に、自社のイ�
 
 同じバージョンまたはそれ以降のバージョンへの移行のみがサポートされます。 PostgreSQL 9.5 から Azure Database for PostgreSQL 9.6 または 10 への移行はサポートされますが、PostgreSQL 11 から PostgreSQL 9.6 への移行はサポートされません。
 
-Microsoft では、Azure Database for PostgreSQL - 単一サーバーでの PostgreSQL エンジンの _n-2_ バージョンのサポートを予定しています。 バージョンは、Azure の現在のメジャー バージョン (_n_) とその前の 2 つのメジャー バージョン ( _-2_) です。
+Microsoft では、Azure Database for PostgreSQL - 単一サーバーでの PostgreSQL エンジンの _n-2_ バージョンのサポートを予定しています。 バージョンは、Azure の現在のメジャー バージョン ( _n_ ) とその前の 2 つのメジャー バージョン ( _-2_ ) です。
 
 サポートされているバージョンの最新情報については、「[サポートされる PostgreSQL のメジャー バージョン](/azure/postgresql/concepts-supported-versions)」をご覧ください。
 
@@ -129,6 +129,8 @@ Contoso は、メジャーからメジャーへのアップグレードを実行
 
 準備するには、データベースにアクセスするための仮想ネットワークを設定します。 さまざまな方法で、[VPN ゲートウェイ](/azure/vpn-gateway/vpn-gateway-about-vpngateways)を使用して仮想ネットワーク接続を作成します。
 
+<!-- docutune:ignore "Azure Database Migration Services" -->
+
 ### <a name="create-an-azure-database-migration-service-instance"></a>Azure Database Migration Service インスタンスを作成する
 
 1. [Azure portal](https://portal.azure.com) で、 **[リソースの追加]** を選択します。
@@ -142,7 +144,7 @@ Contoso は、メジャーからメジャーへのアップグレードを実行
 1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
     ![[移行サービスの作成] 画面のスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_create.png)
-    "_図 3:確認と作成_
+    " _図 3:確認と作成_
 
 1. **［作成］** を選択します
 
@@ -191,7 +193,7 @@ Contoso は、メジャーからメジャーへのアップグレードを実行
 
     ![[新しい移行プロジェクト] オプションが強調表示されているスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_new_project.png)
 
-    "_図 4:新しい移行の開始。_
+    " _図 4:新しい移行の開始。_
 
 1. **[新しいアクティビティ]**  >  **[オンライン データの移行]** の順に選択します。
 1. 名前を入力します。

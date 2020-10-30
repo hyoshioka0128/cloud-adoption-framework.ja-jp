@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6579a5f4f699b3a5880076cb125b3faaea5b0c4b
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1dcff70eaf185d59592682bdb61d777bf7dd0795
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603682"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334614"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>オープンソース データベースを Azure に移行する
 
@@ -60,7 +60,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 | 考慮事項 | 詳細 |
 | --- | --- |
-| **長所** | Azure では、データベース ワークロードを一元的に確認できます。 <br><br> コストは、Azure Cost Management および Billing によって監視されます。 <br><br> ビジネスのチャージバック課金は、Azure Billing API シリーズを使用して簡単に実行できます。 <br><br> サーバーとソフトウェアのメンテナンスは、IaaS ベースの環境のみに限定されます。 |
+| **長所** | Azure では、データベース ワークロードを一元的に確認できます。 <br><br> コストは Azure Cost Management + Billing によって監視されます。 <br><br> ビジネスのチャージバック課金は、Azure Billing API シリーズを使用して簡単に実行できます。 <br><br> サーバーとソフトウェアのメンテナンスは、IaaS ベースの環境のみに限定されます。 |
 | **短所** | IaaS ベースの VM の要件により、これらのコンピューター上では引き続きソフトウェアを管理する必要があります。 |
 
 ### <a name="budget-and-management"></a>予算と管理
@@ -91,7 +91,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 #### <a name="step-1-discovery"></a>手順 1:探索
 
-Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate によって、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Contoso サーバー間の接続、プロセス、インバウンド接続とアウトバウンド接続の待ち時間、TCP 接続アーキテクチャ全体のポートも Azure Migrate によって明らかになりました。 Contoso で必要な作業は、[Microsoft Monitoring Agent](/azure/log-analytics/log-analytics-agent-windows) および [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) をインストールすることだけでした。
+Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate によって、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Contoso サーバー間の接続、プロセス、インバウンド接続とアウトバウンド接続の待ち時間、TCP 接続アーキテクチャ全体のポートも Azure Migrate によって明らかになりました。 Contoso で必要な作業は、[Microsoft Monitoring Agent](/azure/azure-monitor/platform/agent-windows) および [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid#install-the-dependency-agent-on-windows) をインストールすることだけでした。
 
 Contoso によって、移行する必要がある 300 個を超えるデータベース インスタンスが特定されました。 これらのインスタンスのうち約 40% は、PaaS ベースのサービスに移行できます。 残りの 60% は、各データベース ソフトウェアを実行する VM を使用して、IaaS ベースのアプローチに移行する必要があります。
 
@@ -145,7 +145,7 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 
 Contoso は次のことを行う必要があります。
 
-- 新しい Azure データベース ワークロードがセキュリティで保護されていることを確認します。 詳細については、[Azure SQL Database と SQL Managed Instance のセキュリティ機能](/azure/sql-database/sql-database-security-overview)に関するページを参照してください。
+- 新しい Azure データベース ワークロードがセキュリティで保護されていることを確認します。 詳細については、[Azure SQL Database と SQL Managed Instance のセキュリティ機能](/azure/azure-sql/database/security-overview)に関するページを参照してください。
 - ファイアウォールと仮想ネットワークの構成を確認します。
 - Azure Private Link を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
 - Azure Advanced Threat Protection を有効にします。
@@ -155,7 +155,7 @@ Contoso は次のことを行う必要があります。
 Azure データベースが geo リストアを使用してバックアップされていることを確認します。 これにより、リージョン規模の障害が発生した場合は、ペアのリージョンにあるバックアップを使用できます。
 
 > [!IMPORTANT]
->Azure リソースが削除されないようにするため、[リソース ロック](/azure/azure-resource-manager/management/lock-resources)が保持されていることを確認します。 削除されたサーバーを復元することはできません。
+> Azure リソースが削除されないようにするため、[リソース ロック](/azure/azure-resource-manager/management/lock-resources)が保持されていることを確認します。 削除されたサーバーを復元することはできません。
 
 #### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 

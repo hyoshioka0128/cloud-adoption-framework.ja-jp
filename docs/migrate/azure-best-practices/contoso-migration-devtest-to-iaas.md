@@ -7,15 +7,14 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7dd81b5d1fed63d0c77d7eeaf8ec9c1edffcfe08
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 96175c54a3121252cf2e4d1b2649f1de46775988
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775974"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334699"
 ---
-<!-- docutune:casing SmartHotel360 -->
-<!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless osTicket WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
+<!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
 
 # <a name="rehost-an-on-premises-devtest-environment-on-azure-virtual-machines-via-azure-migrate"></a>Azure Migrate を使用してオンプレミスの Dev/Test 環境を Azure Virtual Machines にリホストする
 
@@ -29,7 +28,7 @@ Contoso には、Dev/Test 環境を Azure に移行するときに使用でき�
 
 | 移行オプション | 結果 |
 | --- | --- |
-| [Azure Migrate](/azure/migrate/migrate-services-overview) | オンプレミスの VM を[評価](/azure/migrate/tutorial-assess-vmware)し、[移行](/azure/migrate/tutorial-migrate-vmware)する。 <br><br> Azure のサービスとしてのインフラストラクチャ (IaaS) を使用して、開発およびテスト サーバーを実行する。 <br><br> [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager) を使用して VM を管理する。 |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | オンプレミスの VM を[評価](/azure/migrate/tutorial-assess-vmware-azure-vm)し、[移行](/azure/migrate/tutorial-migrate-vmware)する。 <br><br> Azure のサービスとしてのインフラストラクチャ (IaaS) を使用して、開発およびテスト サーバーを実行する。 <br><br> [Azure Resource Manager](/azure/azure-resource-manager/management/overview) を使用して VM を管理する。 |
 | [Azure DevTest Labs](/azure/devtest-labs/devtest-lab-overview) | 開発およびテスト環境を迅速にプロビジョニングします。 <br><br> クォータとポリシーを使用して無駄を最小限に抑える。 <br><br> 自動シャットダウンを設定してコストを最小限に抑える。 <br><br> Windows および Linux 環境を構築する。 |
 
 > [!NOTE]
@@ -40,7 +39,7 @@ Contoso には、Dev/Test 環境を Azure に移行するときに使用でき�
 開発リーダーシップ チームは、この移行で達成したいことを簡単にまとめました。 チームは、Dev/Test 機能をオンプレミスのデータセンターから迅速に移行し、ソフトウェアを開発するためのハードウェアを今後は購入しないことを目指しています。 また、IT 部門が関与しなくても、開発者が各自の環境を作成して実行できるようにしたいと考えています。
 
 > [!NOTE]
-> Contoso は、[開発テスト用の従量課金制サブスクリプション プラン](https://azure.microsoft.com/offers/ms-azr-0023p)を環境で使用します。 チームのアクティブな各 Visual Studio サブスクライバーは、サブスクリプションの仮想マシンに含まれている Microsoft ソフトウェアを、追加料金なしで Dev/Test に使用できます。 Contoso は、実行する VM の Linux 料金だけを支払います。 それには、通常であればさらに高い料金がかかる SQL Server、SharePoint Server、その他のソフトウェアの VM が含まれます。
+> Contoso は、[開発テスト用の従量課金制サブスクリプション プラン](https://azure.microsoft.com/offers/ms-azr-0023p/)を環境で使用します。 チームのアクティブな各 Visual Studio サブスクライバーは、サブスクリプションの仮想マシンに含まれている Microsoft ソフトウェアを、追加料金なしで Dev/Test に使用できます。 Contoso は、実行する VM の Linux 料金だけを支払います。 それには、通常であればさらに高い料金がかかる SQL Server、SharePoint Server、その他のソフトウェアの VM が含まれます。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -70,8 +69,8 @@ Contoso は、目標と要件を明確にした後、デプロイ ソリュー�
 - Contoso データセンター内のオンプレミス VM は、移行が行われた後に使用停止にされます。
 
   ![オンプレミスと仮想マシンに関して提案されたシナリオ アーキテクチャの図。](./media/contoso-migration-devtest-to-iaas/architecture.png)
-  
-  "_図 1:提案されたアーキテクチャ_
+
+  " _図 1:提案されたアーキテクチャ_
 
 ### <a name="database-considerations"></a>データベースの考慮事項
 
@@ -105,13 +104,13 @@ Contoso では、Azure Migrate のエージェントレスの方法を使用し�
 
 ![移行プロセスの図。](./media/contoso-migration-devtest-to-iaas/migration-process-az-migrate.png)
 
-"_図 2:移行プロセスの概要_
+" _図 2:移行プロセスの概要_
 
 ### <a name="azure-services"></a>Azure サービス
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Migrate: Server Migration](/azure/migrate) | このサービスは、オンプレミスのアプリケーションとワークロード、および AWS または GCP VM インスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われ、VM が Azure で実行されると、Azure VM が作成され、料金が発生します。 料金と価格について[詳しくはこちら](https://azure.microsoft.com/pricing/details/azure-migrate)をご覧ください。 |
+| [Azure Migrate: Server Migration](/azure/migrate/) | このサービスは、オンプレミスのアプリケーションとワークロード、および AWS または GCP VM インスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われ、VM が Azure で実行されると、Azure VM が作成され、料金が発生します。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate/)の詳細をご覧ください。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -119,7 +118,7 @@ Contoso では、Azure Migrate のエージェントレスの方法を使用し�
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| **Azure Dev/Test サブスクリプション** | Contoso は、[Azure Dev/Test サブスクリプション](https://azure.microsoft.com/offers/ms-azr-0023p)を作成して、最大 80% のコスト削減を活用します。 <br><br> Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成した場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用し、管理者ではない場合は、管理者と協力して所有者または共同作成者のアクセス許可を割り当てます。 <br><br> より詳細なアクセス許可が必要な場合は、「[ロールベースのアクセス制御 (RBAC) を使用して Site Recovery のアクセスを管理する](/azure/site-recovery/site-recovery-role-based-linked-access-control)」をご覧ください。 |
+| **Azure Dev/Test サブスクリプション** | Contoso は、[Azure Dev/Test サブスクリプション](https://azure.microsoft.com/offers/ms-azr-0023p/)を作成して、最大 80% のコスト削減を活用します。 <br><br> Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free/)を作成してください。 <br><br> 無料アカウントを作成した場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用し、管理者ではない場合は、管理者と協力して所有者または共同作成者のアクセス許可を割り当てます。 <br><br> より詳細なアクセス許可が必要な場合は、「[ロールベースのアクセス制御 (RBAC) を使用して Site Recovery のアクセスを管理する](/azure/site-recovery/site-recovery-role-based-linked-access-control)」をご覧ください。 |
 | **Azure インフラストラクチャ** | Contoso が [Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認します。 <br><br> 以下についての具体的な[前提条件](#prerequisites)をご確認ください。Azure Migrate:Server Migration に関するエラーのトラブルシューティングに役立つ情報を提供しています。 |
 | **オンプレミスのサーバー** | オンプレミスの vCenter Server は、バージョン 5.5、6.0、6.5、または 6.7 を実行している必要があります。 <br><br> ESXi ホストは、バージョン 5.5、6.0、6.5、または 6.7 を実行している必要があります。 <br><br> ESXi ホスト上で 1 つ以上の VMware VM が実行されている必要があります。 |
 
@@ -140,7 +139,7 @@ Contoso では、Azure Migrate:Server Migration ツールによって Azure VM �
 
 1. ネットワークをセットアップする: Contoso は、[Azure インフラストラクチャのデプロイ](./contoso-migration-infrastructure.md)を行ったときに、Azure Migrate: Server Migration に使用できるネットワークを既にセットアップしています。
 
-    - 移行する VM は開発に使用されます。 これらは、米国東部 2 プライマリ リージョンの Azure 開発用仮想ネットワーク (`VNET-DEV-EUS2`) に移行されます。
+    - 移行する VM は開発に使用されます。 これらは、`East US 2` プライマリ リージョンの Azure 開発用仮想ネットワーク (`VNET-DEV-EUS2`) に移行されます。
     - どちらの VM も、開発リソースに使用される `ContosoDevRG` リソース グループに配置されます。
     - アプリケーション フロントエンド VM (`WEBVMDEV` と `OSTICKETWEBDEV`) は、開発用仮想ネットワークのフロントエンド サブネット (`DEV-FE-EUS2`) に移行されます。
     - アプリケーション データベース VM (`SQLVMDEV` と `OSTICKETMYSQLDEV`) は、開発用仮想ネットワークのデータベース サブネット (`DEV-DB-EUS2`) に移行されます。
@@ -151,7 +150,7 @@ Contoso では、Azure Migrate:Server Migration ツールによって Azure VM �
 
        ![.OVA ファイルをダウンロードする画面のスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-download-ova.png)
 
-       "_図 3:.OVA file ファイルのダウンロード_
+       " _図 3:.OVA file ファイルのダウンロード_
 
     1. インポートしたイメージを起動し、次のステップを含めてツールを構成します。
 
@@ -159,7 +158,7 @@ Contoso では、Azure Migrate:Server Migration ツールによって Azure VM �
 
          ![前提条件を設定するためのセクションのスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-setup-prerequisites.png)
 
-         "_図 4:前提条件の設定_
+         " _図 4:前提条件の設定_
 
        - ツールを Azure サブスクリプションにポイントします。
 
@@ -183,7 +182,7 @@ Contoso では、Azure Migrate:Server Migration ツールによって Azure VM �
 
 **さらにサポートが必要な場合**
 
-[Azure Migrate: Server Migration ツール](/azure/migrate)の設定についてご確認ください。
+[Azure Migrate: Server Migration ツール](/azure/migrate/)の設定についてご確認ください。
 
 ### <a name="prepare-on-premises-vms"></a>オンプレミスの VM を準備する
 
@@ -196,7 +195,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
     - オペレーティング システムのファイアウォールで RDP または SSH が許可されていることを確認します。
     - `sudo apt-get ssh install -y` コマンドを使用して SSH をインストールします。
 
-2. サイト間 VPN でアクセスする場合:
+2. サイト間 VPN 経由でアクセスする場合:
 
     - 移行前に、オンプレミス VM で RDP または SSH を有効にします。
     - オペレーティング システムのファイアウォールで RDP または SSH が許可されていることを確認します。
@@ -204,7 +203,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
 
 3. [Azure Windows エージェント](/azure/virtual-machines/extensions/agent-windows)と [Azure Linux エージェント](/azure/virtual-machines/extensions/agent-linux)をインストールします。
 
-Windows の場合、移行をトリガーするときに、VM 上に保留中の Windows 更新プログラムが存在しないようにする必要があります。 ある場合、管理者は更新が完了するまで、VM にログインすることはできません。 移行後、管理者は**ブート診断**を調べて、VM のスクリーンショットを確認できます。 これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照してください。
+Windows の場合、移行をトリガーするときに、VM 上に保留中の Windows 更新プログラムが存在しないようにする必要があります。 ある場合、管理者は更新が完了するまで、VM にログインすることはできません。 移行後、管理者は **ブート診断** を調べて、VM のスクリーンショットを確認できます。 これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照してください。
 
 **さらにサポートが必要な場合**
 
@@ -239,12 +238,12 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
 
 5. **[仮想マシン]** で、必要に応じて VM を検索し、移行する各 VM を確認します。 次に、 **[次のステップ: ターゲット設定]** をクリックします。
 
-6. **[ターゲット設定]** で、移行先のサブスクリプションとターゲット リージョンを選択します。 次に、移行後に Azure VM が属するリソース グループを指定します。 **[仮想ネットワーク]** で、移行後に Azure VM の参加先となる Azure 仮想ネットワークまたはサブネットを選択します。
+6. **[ターゲット設定]** で、移行先のサブスクリプションとターゲット リージョンを選択します。 次に、移行後に Azure VM が属するリソース グループを指定します。 **[仮想ネットワーク]** で、移行後に Azure VM の参加先となる仮想ネットワークまたはサブネットを選択します。
 
 7. **[Azure ハイブリッド特典]** で、Azure ハイブリッド特典を適用しない場合は、 **[いいえ]** を選択します。 **[次へ]** を選択します。 アクティブなソフトウェア アシュアランスまたは Windows Server サブスクリプションの対象となっている Windows Server マシンがあり、移行するマシンに特典を適用する場合は、 **[はい]** を選択します。 **[次へ]** を選択します。
 
       > [!NOTE]
-      > Contoso の場合、これは Azure Dev/Test サブスクリプションであるため、管理者は Azure ハイブリッド特典に対して **[いいえ]** を選択します。 これにより、コンピューティングにのみ課金されます。 [Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit)は、ソフトウェア アシュアランスの特典が適用された運用システムにのみ使用します。
+      > Contoso の場合、これは Azure Dev/Test サブスクリプションであるため、管理者は Azure ハイブリッド特典に対して **[いいえ]** を選択します。 これにより、コンピューティングにのみ課金されます。 [Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit/)は、ソフトウェア アシュアランスの特典が適用された運用システムにのみ使用します。
 
 8. **[コンピューティング]** で、VM の名前、サイズ、OS ディスクの種類、可用性セットを確認します。 VM は [Azure の要件](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements)に準拠している必要があります。
 
@@ -277,8 +276,8 @@ Contoso の管理者は、クイック テスト移行を実行し、その後�
 
     _図 12:移行のテスト_
 
-3. **[テスト移行]** で、移行後に Azure VM が配置される Azure 仮想ネットワークを選択します。 非運用環境の仮想ネットワークを使用することをお勧めします。
-4. **テスト移行**ジョブが開始されます。 ポータルの通知でジョブを監視します。
+3. **[テスト移行]** で、移行後に Azure VM が配置される仮想ネットワークを選択します。 非運用環境の仮想ネットワークを使用することをお勧めします。
+4. **テスト移行** ジョブが開始されます。 ポータルの通知でジョブを監視します。
 5. 移行の完了後、Azure portal の **[仮想マシン]** で、移行された Azure VM を確認します。 マシン名には、 **-Test** サフィックスが含まれています。
 6. テストが完了したら、 **[マシンのレプリケート]** で Azure VM を選択したまま (または右クリックし)、 **[テスト移行をクリーンアップ]** を選択します。
 
@@ -333,7 +332,7 @@ Contoso セキュリティ チームは、Azure VM を調査して、セキュ�
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
-Contoso は、すべての Azure 開発リソースがこの Dev/Test サブスクリプションを使用して作成されるようにすることで、コストを 80% 削減できます。 管理者は、[Azure Cost Management および Billing](/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理を支援します。
+Contoso は、すべての Azure 開発リソースがこの Dev/Test サブスクリプションを使用して作成されるようにすることで、コストを 80% 削減できます。 管理者は、[Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理を支援します。
 
 ## <a name="conclusion"></a>まとめ
 

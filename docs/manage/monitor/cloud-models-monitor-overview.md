@@ -3,16 +3,16 @@ title: クラウド デプロイ モデルの監視戦略
 description: Azure 向けのクラウド導入フレームワークを使用して、採用すべきクラウド管理の監視戦略について学習します。
 author: MGoedtel
 ms.author: magoedte
-ms.date: 10/09/2020
+ms.date: 10/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ca376b204b7c6decc7e75a50d5438c6e41905317
-ms.sourcegitcommit: d81a822575820115d9814b0fc6c05ae33e535825
+ms.openlocfilehash: e33e3e8129229229bfd3737d85032af8b33ae09a
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92058786"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334393"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -46,10 +46,10 @@ Azure Active Directory Domain Services などのテナント サービスから�
 |---|---|---|---|
 | Application | Azure VM、Azure App Service、Azure Service Fabric、Azure Functions、および Azure Cloud Service 上の .NET、.NET Core、Java、JavaScript、および Node.js プラットフォームで実行されている Web ベースのアプリケーション。 | ライブ Web アプリケーションを監視して、パフォーマンスの異常を自動検出し、コードの例外と問題を識別し、ユーザー動作の分析を収集します。 | Application Insights (Azure Monitor の機能)。 |
 | Azure リソース - サービスとしてのプラットフォーム (PaaS) | Azure Database サービス (SQL、MySQL など)。 | Azure Database for SQL のパフォーマンス メトリック。 | 診断ログで SQL データを Azure Monitor ログにストリーミングできるようにします。 |
-| Azure リソース - サービスとしてのインフラストラクチャ (IaaS) | 1.Azure Storage <br> 2.Azure の[負荷分散サービス](/azure/architecture/guide/technology-choices/load-balancing-overview#azure-load-balancing-services) <br> 3.ネットワーク セキュリティ グループ <br> 4.Azure Virtual Machines <br> 5.Azure Kubernetes Service/Azure Container Instances | 1.容量、可用性、およびパフォーマンス。 <br> 2.パフォーマンス ログと診断ログ (アクティビティ、アクセス、パフォーマンス、ファイアウォール)。 <br> 3.ルールが適用されたときのイベントと、拒否または許可を行うためにルールが適用された回数を示すルール カウンターを監視します。 <br> 4.ゲスト VM オペレーティング システム (OS) での容量、可用性、パフォーマンスを監視します。 各 VM 上でホストされているアプリの依存関係をマップします。これには、サーバー間のアクティブなネットワーク接続の可視性、受信接続および送信接続の待機時間、任意の TCP 接続アーキテクチャでのポートなどが含まれます。 <br> 5.コンテナーおよびコンテナー インスタンス上で実行されるワークロードの容量、可用性、およびパフォーマンスを監視します。 | 最初の列の項目 1 ～ 5 では、プラットフォーム メトリックとアクティビティ ログが自動的に収集され、分析とアラートのために Azure Monitor で使用できるようになります。 <br> リソース ログを Azure Monitor ログに転送するように診断設定を構成します。 <br> [Azure Monitor for VMs](/azure/azure-monitor/insights/vminsights-overview) を有効にします。 <br> [Azure Monitor for containers](/azure/azure-monitor/insights/container-insights-overview) を有効にします。 |
+| Azure リソース - サービスとしてのインフラストラクチャ (IaaS) | 1.Azure Storage <br> 2.Azure の[負荷分散サービス](/azure/architecture/guide/technology-choices/load-balancing-overview#azure-load-balancing-services) <br> 3.ネットワーク セキュリティ グループ <br> 4.Azure Virtual Machines <br> 5.[Azure Kubernetes Service](/azure/aks/intro-kubernetes)/[Azure Container Instances](/azure/container-instances/) | 1.容量、可用性、およびパフォーマンス。 <br> 2.パフォーマンス ログと診断ログ (アクティビティ、アクセス、パフォーマンス、ファイアウォール)。 <br> 3.ルールが適用されたときのイベントと、拒否または許可を行うためにルールが適用された回数を示すルール カウンターを監視します。 <br> 4.ゲスト VM オペレーティング システム (OS) での容量、可用性、パフォーマンスを監視します。 各 VM 上でホストされているアプリの依存関係をマップします。これには、サーバー間のアクティブなネットワーク接続の可視性、受信接続および送信接続の待機時間、任意の TCP 接続アーキテクチャでのポートなどが含まれます。 <br> 5.コンテナーおよびコンテナー インスタンス上で実行されるワークロードの容量、可用性、およびパフォーマンスを監視します。 | 最初の列の項目 1 ～ 5 では、プラットフォーム メトリックとアクティビティ ログが自動的に収集され、分析とアラートのために Azure Monitor で使用できるようになります。 <br> リソース ログを Azure Monitor ログに転送するように診断設定を構成します。 <br> 4.[Azure Monitor for VMs](/azure/azure-monitor/insights/vminsights-overview) を有効にします。 <br> 5.[Azure Monitor for containers](/azure/azure-monitor/insights/container-insights-overview) を有効にします。 |
 | ネットワーク | ご利用の仮想マシンと 1 つまたは複数のエンドポイント (別の VM、完全修飾ドメイン名、Uniform Resource Identifier、または IPv4 アドレス) との間の通信です。 | VM とエンドポイントの間で発生する到達可能性、待機時間、およびネットワーク トポロジ変更を監視します。 | Azure Network Watcher。 |
-| Azure サブスクリプション | Azure サービスの観点からの Azure Service Health と基本的なリソース正常性。 | <li> サービスまたはリソースに対して実行された管理操作。 <li> 低下状態または利用不可状態である、Azure サービスのサービス正常性。 <li> Azure サービスの観点から Azure リソースで検出された正常性の問題。 <li> 失敗または例外を示す Azure の自動スケーリングを使用して実行された操作。 <li> 許可または拒否操作が発生したことを示す Azure Policy を使用して実行された操作。 <li> Azure Security Center によって生成されたアラートのレコード。 | Azure Monitor を使用して、監視およびアラート用にアクティビティ ログで提供されます。 |
-| Azure テナント | Azure Active Directory | Azure AD 監査ログとサインイン ログ。 | 診断ログを有効にし、Azure Monitor ログへのストリーミングを構成します。 |
+| Azure サブスクリプション | Azure サービスの観点からの [Azure Service Health](/azure/service-health/overview) と基本的なリソース正常性。 | <li> サービスまたはリソースに対して実行された管理操作。 <li> 低下状態または利用不可状態である、Azure サービスのサービス正常性。 <li> Azure サービスの観点から Azure リソースで検出された正常性の問題。 <li> 失敗または例外を示す Azure の自動スケーリングを使用して実行された操作。 <li> 許可または拒否操作が発生したことを示す Azure Policy を使用して実行された操作。 <li> Azure Security Center によって生成されたアラートのレコード。 | Azure Monitor を使用して、監視およびアラート用にアクティビティ ログで提供されます。 |
+| Azure テナント | Azure Active Directory | Azure AD 監査ログとサインイン ログ。 | [診断ログ](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)を有効にし、Azure Monitor ログへのストリーミングを構成します。 |
 
 ## <a name="hybrid-cloud-monitoring"></a>ハイブリッド クラウドの監視
 
@@ -154,6 +154,8 @@ Operations Manager を使用して Azure でホストされているリソース
 クラウドへの移行には多くの課題がありますが、好機にもなります。 組織は、1 つ以上のオンプレミスのエンタープライズ監視ツールから移行し、資本投資と運用コストを削減できる可能性があるだけでなく、Azure Monitor などのクラウド監視プラットフォームがクラウド規模で提供する利点も得られます。 監視とアラートの要件、既存の監視ツールの構成、クラウドに移行するワークロードを確認します。 計画が完成したら、Azure Monitor を構成します。
 
 - シンプルなアーキテクチャから、または Azure、他のクラウド プロバイダー、および企業ネットワーク間でコンポーネントがホストされている多層アーキテクチャから、ハイブリッド インフラストラクチャとアプリケーションを監視します。 コンポーネントには、1 つまたは複数の VM、可用性セットまたは仮想マシン スケール セットに配置された複数の VM、または Windows Server または Linux コンテナー上で実行されている Azure Kubernetes Service (AKS) にデプロイされたコンテナー化アプリケーションが含まれる場合があります。
+
+- [Azure Arc](/azure-arc/overview) を使用して、サーバー、仮想マシン、Kubernetes クラスター、およびデータベースが Azure で実行されているかのように管理するためにそれらを環境全体で準備します。 Azure Arc では、使い慣れた Azure サービスおよび管理機能と共に、一貫したインベントリ、管理、ガバナンス、およびセキュリティが提供されます。
 
 - Azure Monitor for VMs、Azure Monitor for containers、および Application Insights を有効にして、インフラストラクチャとアプリケーションの問題を検出および診断します。 アプリケーションをサポートする複数のコンポーネントまたは依存関係から収集されたデータのさらに詳細な分析と相関関係には、Azure Monitor ログを使用する必要があります。
 

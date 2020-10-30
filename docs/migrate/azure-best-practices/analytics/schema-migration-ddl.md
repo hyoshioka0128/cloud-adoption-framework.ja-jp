@@ -1,20 +1,20 @@
 ---
 title: スキーマ移行のデータ定義言語
-description: Azure Synapse Analytics の機能を使用して、高可用性とディザスター リカバリーの要件に対処します。
+description: Azure Synapse Analytics にスキーマを移行する場合の、データ定義言語 (DDL) の設計上の考慮事項とパフォーマンス オプションについて説明します。
 author: v-hanki
 ms.author: brblanch
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8652d3b67e42da037dc620f74af707f05a9fdcce
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: eebd659ad0dc0455c481e0f5b82a84fafa960c9e
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775923"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334750"
 ---
-<!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo Teradata Netezza Wherescape DMVs multinode equi Datometry -->
+<!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo DMVs multinode equi Datometry -->
 
 # <a name="data-definition-languages-for-schema-migration"></a>スキーマ移行のデータ定義言語
 
@@ -79,7 +79,7 @@ Azure Synapse Analytics で使用するデータの圧縮率やインデック�
 
 これらの方法や同様の方法を使用できる場合、移行するテーブルの数が減ります。 一部のプロセスは簡略化または除外される可能性があるため、移行ワークロードも減ります。 これらの方法を適用できるかどうかは、個々のユース ケースによって異なります。 しかし、一般的な原則は、移行ワークロードを減らし、コスト効率の高いターゲット環境を構築するために、可能な限り、Azure エコシステムの特性と機能を活用することを検討することです。 これは、バックアップまたは復元、ワークフローの管理や監視などの他の機能にも当てはまります。
 
-Microsoft パートナーから提供されている製品やサービスが、データ ウェアハウスの移行や、場合によってはプロセスの一部の自動化に役立ちます。 既存のシステムにサードパーティの ETL 製品が組み込まれている場合、ターゲット環境として Azure Synapse Analytics が既にサポートされている可能性があります。 既存の ETL ワークフローは、新しいターゲットの Azure SQL Data Warehouse にリダイレクトできます。
+Microsoft パートナーから提供されている製品やサービスが、データ ウェアハウスの移行や、場合によってはプロセスの一部の自動化に役立ちます。 既存のシステムにサードパーティの ETL 製品が組み込まれている場合、ターゲット環境として Azure Synapse Analytics が既にサポートされている可能性があります。 既存の ETL ワークフローは、新しいターゲットのデータ ウェアハウスにリダイレクトできます。
 
 ### <a name="data-marts-physical-or-virtual"></a>データ マート:物理データ マートと仮想データ マート
 
@@ -156,17 +156,17 @@ Azure Synapse Analytics などの比較的安価でスケーラブルな超並�
 
 | サポートされていないデータ型 | 回避策 |
 |--|--|
-| `geometry`              | `varbinary`                                                       |
-| `geography`             | `varbinary`                                                       |
-| `hierarchyid`           | `nvarchar(4000)`                                                  |
-| `image`                 | `varbinary`                                                       |
-| `text`                  | `varchar`                                                         |
-| `ntext`                 | `nvarchar`                                                        |
-| `sql_variant`           | 列を厳密に型指定された複数の列に分割                |
-| `table`                 | 一時テーブルに変換                                     |
-| `timestamp`             | `datetime2` と `CURRENT_TIMESTAMP` 関数を使用するようにコードを再作成 |
-| `xml`                   | `varchar`                                                         |
-| ユーザー定義型     | 可能な場合は、ネイティブ データ型に戻す              |
+| `geometry` | `varbinary` |
+| `geography` | `varbinary` |
+| `hierarchyid` | `nvarchar(4000)` |
+| `image` | `varbinary` |
+| `text` | `varchar` |
+| `ntext` | `nvarchar` |
+| `sql_variant` | 列を厳密に型指定された複数の列に分割 |
+| `table` | 一時テーブルに変換 |
+| `timestamp` | `datetime2` と `CURRENT_TIMESTAMP` 関数を使用するようにコードを再作成 |
+| `xml` | `varchar` |
+| ユーザー定義型 | 可能な場合は、ネイティブ データ型に戻す |
 
 #### <a name="potential-data-issues"></a>潜在的なデータの問題
 
@@ -183,7 +183,7 @@ Azure Synapse Analytics などの比較的安価でスケーラブルな超並�
 
 移行の演習時に、現在のデータ定義を確認し、合理化することをお勧めします。 これらのタスクは、SQL クエリを使用してデータ フィールド内の最大の数値や文字長を検索し、その結果をデータ型と比較することによって自動化できます。
 
-一般的には、テーブルに対して定義されている行の長さの合計を最小限に抑えることをお勧めします。 最適なクエリ パフォーマンスを得るために、前述のように、列ごとに最小のデータ型を使用ですることができます。 Azure Synapse Analytics で外部テーブルからデータを読み込む場合は、PolyBase ユーティリティを使用することをお勧めします。このユーティリティによって、定義される行の最大長として 1 メガバイト (MB) がサポートされています。 1 MB より長い行を含むテーブルは、PolyBase によって読み込まれません。代わりに、一括コピー プログラムを使用する必要があります。
+一般的には、テーブルに対して定義されている行の長さの合計を最小限に抑えることをお勧めします。 最適なクエリ パフォーマンスを得るために、前述のように、列ごとに最小のデータ型を使用ですることができます。 Azure Synapse Analytics で外部テーブルからデータを読み込む場合は、PolyBase ユーティリティを使用することをお勧めします。このユーティリティによって、定義される行の最大長として 1 メガバイト (MB) がサポートされています。 1 MB より長い行を含むテーブルは、PolyBase によって読み込まれません。代わりに [bcp](/sql/tools/bcp-utility?view=sql-server-ver15) を使用する必要があります。
 
 結合を最も効率的に実行するには、結合の両側の列を同じデータ型として定義します。 ディメンション テーブルのキーが `SMALLINT` として定義されている場合は、そのディメンションを使用するファクト テーブルの対応する参照列も `SMALLINT` として定義する必要があります。
 
@@ -273,7 +273,7 @@ Azure Synapse Analytics には、レコードを取得するのに必要なリ�
 
 #### <a name="clustered-columnstore-index"></a>クラスター化列ストア インデックス
 
-クラスター化列ストア インデックスは、Azure Synapse Analytics 内の既定のインデックス作成オプションです。 大きなテーブルに対して最適な圧縮とクエリのパフォーマンスが提供されます。 6,000 万行未満の小さなテーブルでは、これらのインデックスは効率的ではないため、HEAP オプションを使用する必要があります。 同様に、テーブル内のデータが一時的なもので、ETL または ELT プロセスの一部である場合は、ヒープまたは一時テーブルの方が効率的である可能性があります。
+クラスター化列ストア インデックスは、Azure Synapse Analytics 内の既定のインデックス作成オプションです。 大きなテーブルに対して最適な圧縮とクエリのパフォーマンスが提供されます。 6,000 万行未満の小さなテーブルでは、これらのインデックスは効率的ではないため、`HEAP` オプションを使用する必要があります。 同様に、テーブル内のデータが一時的なもので、ETL または ELT プロセスの一部である場合は、ヒープまたは一時テーブルの方が効率的である可能性があります。
 
 #### <a name="clustered-index"></a>クラスター化インデックス
 

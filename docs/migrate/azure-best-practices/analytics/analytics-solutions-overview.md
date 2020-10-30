@@ -7,14 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d907e2234338fa2f00776c2d9df7a58e78986393
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 86a9c5e6af016ea6cc907a3f08b372c780e8bc31
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88193985"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334835"
 ---
-<!-- cSpell:ignore Netezza Teradata Exadata Giga GigaOM MPP -->
+<!-- cSpell:ignore Giga -->
 
 # <a name="azure-synapse-analytics-solutions"></a>Azure Synapse Analytics ソリューション
 
@@ -24,9 +24,9 @@ ms.locfileid: "88193985"
 
 ![Teradata の移行の設計とパフォーマンス](../../../_images/analytics/analytics-solutions-overview.png)
 
-Azure Synapse Analytics では、超並列処理や自動メモリ内キャッシュなどの手法を通じて、クラス最高レベルのリレーショナル データベース パフォーマンスを実現しています。 このアプローチの結果は、独立したベンチマークで確認することができます。たとえば、[GigaOM](https://gigaom.com) によって最近実施されたでは、Azure Synapse が他の一般的なクラウド データ ウェアハウス サービスと比較されています。
+Azure Synapse Analytics では、超並列処理や自動メモリ内キャッシュなどの手法を通じて、クラス最高レベルのリレーショナル データベース パフォーマンスを実現しています。 このアプローチの結果は、独立したベンチマークで確認できます。たとえば、[GigaOm](https://gigaom.com) によって最近実施されたものでは、Azure Synapse が他の一般的なクラウド データ ウェアハウス オファリングと比較されています。
 
-Synapse Analytics に既に移行している組織では、次のような多くの利点が確認されています。
+Azure Synapse Analytics に既に移行している組織では、次のような多くの利点が確認されています。
 
 - パフォーマンスと費用対効果の向上。
 - 機敏性の向上と価値実現までの時間の短縮。

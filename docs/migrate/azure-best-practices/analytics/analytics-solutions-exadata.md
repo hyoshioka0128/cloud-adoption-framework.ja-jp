@@ -7,22 +7,22 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0c89967ac5cb815ad771e6a9ee70cad2f97056db
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6498aa455b196a8648902f42c22131c146ef48d6
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570829"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334852"
 ---
 <!-- cSpell:ignore Exadata SSMA -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-an-oracle-data-warehouse"></a>Azure Synapse Analytics ソリューションと Oracle データ ウェアハウスの移行
 
-Oracle データウェア ハウス スキーマは、いくつかの点で Azure Synapse Analytics とは異なります。 相違点として、Azure Synapse でサポートされていないデータベース、データ型、およびさまざまな Oracle データベース オブジェクトの種類などがあります。
+Oracle データウェア ハウス スキーマは、いくつかの点で Azure Synapse Analytics とは異なります。 相違点として、Azure Synapse でサポートされていないデータベース、データ型、およびさまざまな Oracle Database オブジェクトの種類などがあります。
 
 他のデータベース管理システムと同様に、Oracle データ ウェアハウスを Azure Synapse に移行すると、Oracle には複数の個別のデータベースが存在し、Azure Synapse には 1 つのデータベースしか存在しないことがわかります。 Oracle データ ウェアハウスのステージング データベース、運用データベース、データ マート データベースのテーブルとビューを Azure Synapse に移行するために、新しい名前付け規則 (Oracle スキーマとテーブル名の連結など) を使用することが必要な場合があります。
 
-Azure Synapse では、いくつかの Oracle データベース オブジェクトがサポートされていません。 Azure Synapse でサポートされていないデータベース オブジェクトとしては、Oracle ビットマップ インデックス、関数ベースのインデックス、ドメイン インデックス、Oracle のクラスター化テーブル、行レベルのトリガー、ユーザー定義のデータ型、PL/SQL ストアド プロシージャなどがあります。 これらのオブジェクトを特定するには、さまざまな Oracle システム カタログのテーブルとビューに対してクエリを実行します。 場合によっては、回避策を使用できます。 たとえば、Azure Synapse でパーティション分割または他のインデックスの種類を使用して、サポートされていない Oracle のインデックスの種類を回避することができます。 Oracle のクラスター化されたテーブルではなく、具体化されたビューを使用できる場合があります。また、SQL Server Migration Assistant (SSMA) for Oracle などの移行ツールを使用して、少なくとも一部の PL/SQL を変換することができます。
+Azure Synapse では、いくつかの Oracle Database オブジェクトがサポートされていません。 Azure Synapse でサポートされていないデータベース オブジェクトとしては、Oracle ビットマップ インデックス、関数ベースのインデックス、ドメイン インデックス、Oracle のクラスター化テーブル、行レベルのトリガー、ユーザー定義のデータ型、PL/SQL ストアド プロシージャなどがあります。 これらのオブジェクトを特定するには、さまざまな Oracle システム カタログのテーブルとビューに対してクエリを実行します。 場合によっては、回避策を使用できます。 たとえば、Azure Synapse でパーティション分割または他のインデックスの種類を使用して、サポートされていない Oracle のインデックスの種類を回避することができます。 Oracle のクラスター化されたテーブルではなく、具体化されたビューを使用できる場合があります。また、SQL Server Migration Assistant (SSMA) for Oracle などの移行ツールを使用して、少なくとも一部の PL/SQL を変換することができます。
 
 Oracle データ ウェアハウス スキーマを移行する場合は、列上のデータ型の違いも考慮する必要があります。 Azure Synapse のデータ型にマッピングされないデータ型を持つ Oracle データ ウェアハウスおよびデータ マート スキーマ内の列を見つけるには、Oracle カタログに対してクエリを実行します。 これらのインスタンスのいくつかについては、回避策を使用できます。
 

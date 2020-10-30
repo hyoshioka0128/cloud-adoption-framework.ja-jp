@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1a331e02dcf51123fbf0c0977cf75e9dfd4bae81
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 76e323de345cdb9d1c03edaedbbf72b5fa441da1
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775872"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334665"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -57,9 +57,6 @@ Azure Database Migration Service を使用して、データベースを Azure D
 
 ### <a name="database-considerations"></a>データベースの考慮事項
 
-<!-- TODO: Verify GraphDBMS term -->
-<!-- docutune:casing ColumnStore "Graph DBMS" -->
-
 ソリューションの設計プロセスの一環として、Contoso では MySQL データをホストするための Azure の機能を確認しました。 Azure の使用を決定する際に、次の考慮事項が役立ちました。
 
 - Azure SQL Database と同様に、Azure Database for MySQL では[ファイアウォール規則](/azure/mysql/concepts-firewall-rules)を使用できます。
@@ -67,7 +64,7 @@ Azure Database Migration Service を使用して、データベースを Azure D
 - Azure Database for MySQL には、Contoso が監査担当者のために満たす必要がある、必須のコンプライアンス認定とプライバシー認定があります。
 - 読み取りレプリカを使用すると、レポートおよびアプリケーション処理のパフォーマンスが向上します。
 - [Azure Private Link](/azure/mysql/concepts-data-access-security-private-link) を使用して、サービスを内部ネットワーク トラフィックだけに公開できます (パブリック アクセスなし)。
-- Contoso では、将来、MariaDB ColumnStore および Graph DBMS データベース モデルを使用する可能性を検討しているため、Azure Database for MySQL に移行しないことを選択しました。
+- Contoso では、将来、MariaDB ColumnStore およびグラフ データベース モデルの使用を検討しているため、Azure Database for MySQL に移行しないことを選択しました。
 - MySQL の機能は別として、Contoso は真のオープンソース プロジェクトを支持しており、MySQL を使用しないことを選択しました。
 - 選択されたゲートウェイ (Azure ExpressRoute またはサイト間 VPN) に基づいて、アプリケーションからデータベースへの[帯域幅と待機時間](/azure/vpn-gateway/vpn-gateway-about-vpngateways)が十分に確保されます。
 
@@ -93,9 +90,9 @@ MySQL データベースを移行する前に、移行を成功させるため�
 
 #### <a name="supported-versions"></a>サポートされているバージョン
 
-MySQL では、X.Y.Z のバージョン管理スキームを使用します。 たとえば、X はメジャー バージョン、Y はマイナー バージョン、Z はパッチ バージョンです。
+MySQL では、 _x.y.z_ バージョン管理スキームが使用されています。ここで、 _x_ はメジャー バージョン、 _y_ はマイナー バージョン、 _z_ はパッチ バージョンです。
 
-Azure では、現在、10.2.25 と 10.3.16 がサポートされています。
+Azure では現在、MySQL バージョン10.2.25 と 10.3.16 がサポートされています。
 
 Azure では、パッチの更新プログラムのアップグレードが自動的に管理されます。 10.2.21 から 10.2.23 のような場合です。 マイナー バージョンとメジャー バージョンのアップグレードはサポートされていません。 たとえば、MySQL 10.2 から MySQL 10.3 へのアップグレードはサポートされていません。 10.2 から 10.3 にアップグレードする場合は、ダンプを取得し、新しいエンジンのバージョンで作成されたサーバーにそれを復元します。
 
@@ -117,7 +114,7 @@ Contoso の管理者は、Azure Database Migration Service を使用し、[ス�
 
 - 次のすべての移行の前提条件が満たされていることを確認します。
   - MySQL データベース サーバー ソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL では、MySQL Community Edition および InnoDB ストレージ エンジンがサポートされていると共に、同じバージョンのソースとターゲット間の移行がサポートされています。
-  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 バイナリ ログを有効にしないと、移行ウィザードで以下のエラーが発生します。"バイナリ ログにエラーがあります。 変数 binlog_row_image の値が 'minimal' です。 その値を 'full' に変更してください。"詳細については、[MySQL の Web サイト](https://go.microsoft.com/fwlink/?linkid=873009`)を参照してください。
+  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 バイナリ ログを有効にしないと、移行ウィザードで次のエラーが発生します。"バイナリ ログにエラーがあります。 変数 binlog_row_image の値が 'minimal' です。 これを "full" に変更してください。"詳細については、[MySQL のドキュメント](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)を参照してください。
   - ユーザーは `ReplicationAdmin` ロールを持っている必要があります。
   - 外部キーとトリガーを使用せずにデータベース スキーマを移行します。
 - ExpressRoute または VPN を介してオンプレミス ネットワークに接続する仮想ネットワークを作成します。
@@ -159,7 +156,7 @@ Contoso は次のことを行う必要があります。
 
 ### <a name="backups"></a>バックアップ
 
-geo リストアを使用して、Azure Database for MySQL インスタンスが確実にバックアップされるようにします。 これにより、リージョン規模の障害が発生した場合は、ペアのリージョンにあるバックアップを使用できます。
+geo リストアを使用して、Azure Database for MySQL インスタンスが確実にバックアップされるようにします。これにより、リージョンの障害が発生した場合に、ペアのリージョンでバックアップを使用できます。
 
 > [!IMPORTANT]
 > Azure Database for MySQL リソースが削除されないように、リソース ロックが設定されていることを確認します。 削除されたサーバーを復元することはできません。

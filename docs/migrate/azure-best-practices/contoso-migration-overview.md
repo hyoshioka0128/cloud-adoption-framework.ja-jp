@@ -7,20 +7,20 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b790b9c8f99fb3f2a7bf55757792d019b3dfdb3
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 5490fe413db98fcccab94905e70d0ac601da9f5e
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775362"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334631"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Azure へのアプリケーション移行例の概要
 
-Azure のクラウド導入フレームワークのこのセクションでは、一般的な移行シナリオの例をいくつか紹介し、オンプレミス インフラストラクチャを [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure) に移行する方法を示します。
+Azure のクラウド導入フレームワークのこのセクションでは、一般的な移行シナリオの例をいくつか紹介し、オンプレミス インフラストラクチャを [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/) に移行する方法を示します。
 
 ## <a name="introduction"></a>はじめに
 
-Azure には、クラウド サービスの包括的なセットが用意されています。 開発者や IT プロフェッショナルは、これらのサービスを使用して、データセンターのグローバルなネットワークを通じて、さまざまなツールやフレームワークでアプリケーションを構築、デプロイ、管理できます。 デジタル シフトに関連する課題に直面している企業にとって、Azure プラットフォームは次の方法を理解するうえで役立ちます。
+Azure には、クラウド サービスの包括的なセットが用意されています。 開発者や IT プロフェッショナルは、これらのサービスを使用して、データセンターのグローバルなネットワークを通じて、さまざまなツールやフレームワークでアプリケーションを構築、デプロイ、管理できます。 企業がデジタル シフトに関連する課題に直面しているときに、Azure プラットフォームは次の方法を理解するのに役立ちます。
 
 - リソースと操作を最適化する。
 - お客様や従業員と連携する。
@@ -36,17 +36,17 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 | Pattern | 定義 | 使用する場合 |
 | --- | --- | --- |
-| **リホスト** | このオプションは、リフトアンドシフト移行とも呼ばれ、コードを変更する必要がありません。 これを使用すると、既存のアプリケーションを Azure にすばやく移行できます。 各アプリケーションはそのままの状態で移行されるので、コード変更に関連するリスクやコストを伴わずにクラウドのメリットを享受できます。 | アプリケーションをクラウドに迅速に移行する必要がある場合。 <br><br> アプリケーションを変更せずに移行する場合。 <br><br> 移行後に [Azure IaaS (サービスとしてのインフラストラクチャ)](https://azure.microsoft.com/overview/what-is-iaas) のスケーラビリティを活用できるようにアプリケーションが設計されている場合。 <br><br> ビジネスにとって重要なアプリケーションではあるが、アプリケーションの機能をすぐに変更する必要がない場合。 |
-| **リファクター** | 多くの場合、"再パッケージ化" と呼ばれます。リファクタリングでは、[Azure PaaS (サービスとしてのプラットフォーム)](https://azure.microsoft.com/overview/what-is-paas) に接続してクラウド サービスを使用できるように、アプリケーションに最小限の変更を加える必要があります。 <br><br> たとえば、既存のアプリケーションを Azure App Service または Azure Kubernetes Service (AKS) に移行できます。 <br><br> または、リレーショナル データベースおよび非リレーショナル データベースを、Azure SQL Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB などのオプションにリファクターすることもできます。 | Azure で動作するようにアプリケーションを簡単に再パッケージ化できる場合。 <br><br> Azure で提供される革新的な DevOps プラクティスを適用する場合、またはワークロードにコンテナー戦略を使用する DevOps を検討している場合。 <br><br> リファクタリングでは、既存のコード ベースの移植性と使用可能な開発スキルを考慮する必要があります。 |
+| **リホスト** | このオプションは、リフトアンドシフト移行とも呼ばれ、コードを変更する必要がありません。 これを使用すると、既存のアプリケーションを Azure にすばやく移行できます。 各アプリケーションはそのままの状態で移行されるので、コード変更に関連するリスクやコストを伴わずにクラウドのメリットを享受できます。 | アプリケーションをクラウドに迅速に移行する必要がある場合。 <br><br> アプリケーションを変更せずに移行する場合。 <br><br> 移行後に [Azure IaaS (サービスとしてのインフラストラクチャ)](https://azure.microsoft.com/overview/what-is-iaas/) のスケーラビリティを活用できるようにアプリケーションが設計されている場合。 <br><br> ビジネスにとって重要なアプリケーションではあるが、アプリケーションの機能をすぐに変更する必要がない場合。 |
+| **リファクター** | 多くの場合、"再パッケージ化" と呼ばれます。リファクタリングでは、[Azure PaaS (サービスとしてのプラットフォーム)](https://azure.microsoft.com/overview/what-is-paas/) に接続してクラウド サービスを使用できるように、アプリケーションに最小限の変更を加える必要があります。 <br><br> たとえば、既存のアプリケーションを Azure App Service または Azure Kubernetes Service (AKS) に移行できます。 <br><br> または、リレーショナル データベースおよび非リレーショナル データベースを、Azure SQL Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB などのオプションにリファクターすることもできます。 | Azure で動作するようにアプリケーションを簡単に再パッケージ化できる場合。 <br><br> Azure で提供される革新的な DevOps プラクティスを適用する場合、またはワークロードにコンテナー戦略を使用する DevOps を検討している場合。 <br><br> リファクタリングでは、既存のコード ベースの移植性と使用可能な開発スキルを考慮する必要があります。 |
 | **リアーキテクト** | 移行のためのリアーキテクトでは、アプリケーション アーキテクチャをクラウドのスケーラビリティに最適化するために、アプリケーションの機能とコード ベースの変更および拡張に重点を置きます。 <br><br> たとえば、モノリシック アプリケーションを、相互に連携し、簡単にスケーリングできるマイクロサービスのグループに分割できます。 <br><br> また、リレーショナル データベースと非リレーショナル データベースを、フル マネージドのデータベース ソリューション (SQL Managed Instance、Azure Database for MySQL、Azure Database for PostgreSQL、Azure Cosmos DB など) にリアーキテクトすることもできます。 | 新機能を組み込んだり、クラウド プラットフォーム上で効果的に機能させたりするために、アプリケーションの大幅な改訂が必要な場合。 <br><br> 既存のアプリケーションへの投資を活かしたい場合、スケーラビリティ要件を満たしたい場合、革新的な DevOps プラクティスを適用したい場合、仮想マシンの使用を最小限に抑えたい場合。 |
-| **リビルド** | リビルドでは、Azure クラウド テクノロジを使用してアプリケーションを一から再構築することで進化させることができます。 <br><br> たとえば、Azure Functions、AI、SQL Managed Instance、Azure Cosmos DB などの[クラウドネイティブ](https://azure.microsoft.com/overview/cloudnative) テクノロジを使用して、新しいアプリケーションを構築できます。 | 既存のアプリケーションの機能と有効期間が限られており、開発を迅速に行いたい場合。 <br><br> ビジネスのイノベーションの加速 (Azure が提供する DevOps のプラクティスを含む)、クラウドネイティブ テクノロジを活用した新しいアプリケーションの構築、AI、ブロックチェーン、IoT の進化の活用に対する準備が整っている場合。 |
+| **リビルド** | リビルドでは、Azure クラウド テクノロジを使用してアプリケーションを一から再構築することで進化させることができます。 <br><br> たとえば、Azure Functions、AI、SQL Managed Instance、Azure Cosmos DB などの[クラウドネイティブ](https://azure.microsoft.com/overview/cloudnative/) テクノロジを使用して、新しいアプリケーションを構築できます。 | 既存のアプリケーションの機能と有効期間が限られており、開発を迅速に行いたい場合。 <br><br> ビジネスのイノベーションの加速 (Azure が提供する DevOps のプラクティスを含む)、クラウドネイティブ テクノロジを活用した新しいアプリケーションの構築、AI、ブロックチェーン、IoT の進化の活用に対する準備が整っている場合。 |
 
 ## <a name="migration-example-articles"></a>移行例に関する記事
 
 このセクションでは、いくつかの一般的な移行シナリオの例を紹介します。 各例では、背景情報や詳細なデプロイ シナリオについて説明すると共に、移行のインフラストラクチャを設定して移行のためのオンプレミス リソースの適合性を評価する方法を示しています。 このセクションには、今後も記事が追加される予定です。
 
 ![移行および最新化プロジェクトのカテゴリの図。](./media/migration-patterns.png)
-"_図 1: 移行および最新化プロジェクトの一般的なカテゴリ_
+" _図 1: 移行および最新化プロジェクトの一般的なカテゴリ_
 
 このシリーズでは、移行戦略を決定付ける、わずかに異なるビジネス目標によって推進される、各移行シナリオに焦点を合わせています。 デプロイ シナリオごとに、次の情報を示します。
 
@@ -103,28 +103,28 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 | [アーティクル] | 詳細 |
 | --- | --- |
-| [App Service と SQL Database を使用して Windows アプリケーションをリファクターする](./contoso-migration-refactor-web-app-sql.md) | この例では、オンプレミスの Windows ベースのアプリケーションを Azure Web アプリに移行し、[Database Migration Service](/azure/dms/dms-overview) を使用して、アプリケーション データベースを Azure SQL Server インスタンスに移行する方法を示します。 |
+| [App Service と SQL Database を使用して Windows アプリケーションをリファクターする](./contoso-migration-refactor-web-app-sql.md) | この例では、オンプレミスの Windows ベースのアプリケーションを Azure Web アプリに移行し、[Database Migration Service](/azure/dms/dms-overview) を使用して、アプリケーション データベースを Azure SQL Database サーバー インスタンスに移行する方法を示します。 |
 | [App Service と SQL Managed Instance を使用して Windows アプリケーションをリファクターする](./contoso-migration-refactor-web-app-sql-managed-instance.md) | この例では、オンプレミスの Windows ベースのアプリケーションを Azure Web アプリに移行し、[Database Migration Service](/azure/dms/dms-overview) を使用して、アプリケーション データベースを SQL Managed Instance に移行する方法を示します。 |
 | [App Service、Azure Traffic Manager、および Azure Database for MySQL を使用して複数のリージョンに Linux アプリケーションをリファクターする](./contoso-migration-refactor-linux-app-service-mysql.md) | この例では、Traffic Manager を使用してオンプレミスの Linux ベースのアプリケーションを複数の Azure リージョンの Azure Web アプリに移行し、継続的デリバリーを実現できるように GitHub と統合する方法について説明します。 アプリケーション データベースは Azure Database for MySQL インスタンスに移行されます。 |
-| [アプリケーションを Azure にリビルドする](./contoso-migration-rebuild.md) | この記事では、Azure の一連の機能と管理サービスを使用して、オンプレミスのアプリケーションをリビルドする例を示します。 これらの機能とサービスには、App Service、AKS、Functions、Azure Cognitive Services、Azure Cosmos DB が含まれます。 |
+| [アプリケーションを Azure にリビルドする](./contoso-migration-rebuild.md) | この記事では、Azure の一連の機能と管理サービスを使用して、オンプレミスのアプリケーションをリビルドする例を示します。 これらの機能とサービスには、App Service、AKS、Azure Functions、Azure Cognitive Services、Azure Cosmos DB が含まれます。 |
 | [Azure DevOps Services に Team Foundation Server をリファクターする](./contoso-migration-tfs-vsts.md) | この記事では、オンプレミスの Team Foundation Server のデプロイを Azure 内の Azure DevOps Services に移行する例を示します。 |
 
 ### <a name="sap"></a>SAP
 
 | [アーティクル] | 詳細 |
 | --- | --- |
-| [SAP 移行ガイド](https://azure.microsoft.com/resources/sap-on-azure-implementation-guide) | オンプレミスの SAP ワークロードをクラウドに移行するための実用的なガイダンスを提供します。 |
-| [SAP アプリケーションを Azure に移行する](https://azure.microsoft.com/resources/migrating-sap-applications-to-azure) | クラウドへの SAP の移行に関するホワイト ペーパーとロードマップ。 |
-| [SAP on Azure の移行方法](https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure) | SAP アプリケーションを Azure に移行するためのさまざまな移行オプションの概要。 |
+| [SAP 移行ガイド](https://azure.microsoft.com/resources/sap-on-azure-implementation-guide/) | オンプレミスの SAP ワークロードをクラウドに移行するための実用的なガイダンスを提供します。 |
+| [SAP アプリケーションを Azure に移行する](https://azure.microsoft.com/resources/migrating-sap-applications-to-azure/) | クラウドへの SAP の移行に関するホワイト ペーパーとロードマップ。 |
+| [SAP on Azure の移行方法](https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure/) | SAP アプリケーションを Azure に移行するためのさまざまな移行オプションの概要。 |
 
 ### <a name="specialized-workloads"></a>特殊化されたワークロード
 
 | [アーティクル] | 詳細 |
 | --- | --- |
 | [オンプレミスの VMware インフラストラクチャを Azure に移行する](./contoso-migration-vmware-to-azure.md) | この記事では、Azure VMware Solution を使用して、オンプレミスの VMware VM を Azure に移動する例を示します。 |
-| [Azure NetApp Files](https://azure.microsoft.com/services/netapp) | NetApp を利用したエンタープライズ ファイル ストレージ。 Linux および Windows ファイル ワークロードを Azure で実行します。 |
-| [Oracle on Azure](https://azure.microsoft.com/solutions/oracle) | Azure と Oracle Cloud で Oracle Database およびエンタープライズ アプリケーションを実行します。 |
-| [Azure における Cray](https://azure.microsoft.com/solutions/high-performance-computing/cray) | Azure での Cray によるハイ パフォーマンス コンピューティング。 仮想ネットワーク上の専用スーパーコンピューター。 |
+| [Azure NetApp Files](https://azure.microsoft.com/services/netapp/) | NetApp を利用したエンタープライズ ファイル ストレージ。 Linux および Windows ファイル ワークロードを Azure で実行します。 |
+| [Oracle on Azure](https://azure.microsoft.com/solutions/oracle/) | Azure と Oracle Cloud Infrastructure で Oracle データベースおよびエンタープライズ アプリケーションを実行します。 |
+| [Azure における Cray](https://azure.microsoft.com/solutions/high-performance-computing/cray/) | Azure での Cray によるハイ パフォーマンス コンピューティング。 仮想ネットワーク上の専用スーパーコンピューター。 |
 
 ### <a name="vdi"></a>VDI
 
@@ -140,10 +140,8 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 ### <a name="demo-applications"></a>デモ アプリケーション
 
-<!-- docutune:casing SmartHotel360 osTicket -->
-
 このセクションで紹介している記事の例では、2 つのデモ アプリケーションを使用します。SmartHotel360 と osTicket です。
 
-**SmartHotel360**: このテスト アプリケーションは、Azure を操作するときに使用できるように、Microsoft によって開発されました。 オープン ソースとして提供されており、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 これは、SQL Server データベースに接続されている ASP.NET アプリケーションです。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Windows Server 2008 R2 および SQL Server 2008 R2 を実行している 2 つの VMware VM にデプロイされます。 これらのアプリケーション VM はオンプレミスでホストされ、vCenter Server によって管理されています。
+**SmartHotel360** : このテスト アプリケーションは、Azure を操作するときに使用できるように、Microsoft によって開発されました。 これはオープン ソース ライセンスの下で提供されており、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 これは、SQL Server データベースに接続されている ASP.NET アプリケーションです。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Windows Server 2008 R2 および SQL Server 2008 R2 を実行している 2 つの VMware VM にデプロイされます。 これらのアプリケーション VM はオンプレミスでホストされ、vCenter Server によって管理されています。
 
-**osTicket**: このオープンソースのサービス デスク向け発券アプリケーションは、Linux 上で実行されます。 [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Apache 2、PHP 7.0、および MySQL 5.7 を使用して、Ubuntu 16.04 LTS を実行している 2 つの VMware VM にオンプレミスでデプロイされます。
+**osTicket** : このオープンソースのサービス デスク向け発券アプリケーションは、Linux 上で実行されます。 [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Apache 2、PHP 7.0、および MySQL 5.7 を使用して、Ubuntu 16.04 LTS を実行している 2 つの VMware VM にオンプレミスでデプロイされます。

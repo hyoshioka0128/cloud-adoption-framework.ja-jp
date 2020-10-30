@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ef357abfec7180ad484c783a86341f26f66b7a59
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: 4ba4d1affb073b987c87886a119849b9772e2f2c
+ms.sourcegitcommit: f7c7ffedcb1fcddb932d56c48e87776394dc75a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108243"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92437044"
 ---
 <!-- docutune:casing ARO "standard HDD" -->
 
@@ -36,7 +36,7 @@ ms.locfileid: "91108243"
 
 次のベスト プラクティスは、通常、修正プログラムやその他のスケジュールされたメンテナンス プロセスに従って、クラウド ガバナンスまたはクラウド運用チームのメンバーによって実行されます。 これらのベスト プラクティスは、この記事の後半で、実行可能なガイダンスにマップされます。
 
-- **タグ付けはすべてのガバナンスにとって重要:** すべてのワークロードとリソースが[適切な名前付けおよびタグ付け規則](../../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認し、[Azure Policy を使用してタグ付け規則を適用します](/azure/governance/policy/tutorials/govern-tags)。
+- **タグ付けはすべてのガバナンスにとって重要:** すべてのワークロードとリソースが [適切な名前付けおよびタグ付け規則](../../ready/azure-best-practices/naming-and-tagging.md)に従っていることを確認し、 [Azure Policy を使用してタグ付け規則を適用します](/azure/governance/policy/tutorials/govern-tags)。
 - **適切なサイズの機会の特定:** 環境全体の現在のリソース使用率とパフォーマンスの要件を確認して、一定期間 (通常は 90 日以上) にわたって使用されているリソースを特定します。
 - **適切なサイズにプロビジョニングされた SKU:** 使用率が低いリソースを、各リソースのパフォーマンス要件をサポートできる最小のインスタンスまたは SKU を使用するように変更します。
 - **VM の自動シャットダウン:** VM が継続的に使用されていない場合は、シャットダウンの自動化を検討してください。 VM は削除も使用停止もされませんが、再び有効になるまでコンピューティングとメモリのコストの消費を停止します。
@@ -254,12 +254,14 @@ Azure では、リソースが消費されたときに使用した分だけ支�
 また、非運用環境では、一般コストを削減することを検討してください。
 
 - 低コストの B シリーズ VM と標準ストレージを使用するために、非運用環境のリソースを削減します。
+- スポット VM を使用して、非運用環境のコンピューティング コストを削減します。
 - Azure ポリシーを適用して、非運用リソースのリソース レベルのコスト削減を要求します。
 
 **詳細情報:**
 
 - [タグを使用](/azure/azure-resource-manager/management/tag-resources)して、サイズ変更や終了のための開発、テスト、または QA のターゲットを特定します。
 - [VM の自動シャットダウン](/azure/cost-management-billing/manage/getting-started#consider-cost-cutting-features-like-auto-shutdown-for-vms)により、VM の終了時間を夜間に設定します。 この機能を使用すると、非運用 VM が毎晩停止されるため、開発を再開する準備ができたら、開発者はこれらの VM を再起動する必要があります。
+- [スポット VM](/azure/virtual-machines/spot-vms) を使用すると、かなりのコストを削減して未使用の Azure 容量を利用できます。 ただし、Azure で容量の回復が必要になると常に、Azure インフラストラクチャによってスポット VM は削除されます。
 - 開発チームは、[Azure DevTest Labs](/azure/lab-services/devtest-lab-overview) を使用して独自のコスト管理アプローチを確立し、前のステップの標準の自動シャットダウンのタイミングの影響を回避することをお勧めします。
 
 ## <a name="best-practice-use-azure-cost-management--billing"></a>ベスト プラクティス:Azure Cost Management + Billing を使用する

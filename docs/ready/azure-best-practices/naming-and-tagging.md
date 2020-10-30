@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 3885de0ac0ce8340162173806a1686a4bc409ecb
-ms.sourcegitcommit: 65b2476d07d4c224d279ac59f7e7f2868bba219c
+ms.openlocfilehash: 18551e264163ebc8342da9c92c7a438fd1163cf9
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136353"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334869"
 ---
 <!-- docutune:disable -->
-<!-- cSpell:ignore cdnp cdne westeurope usgovia accountlookup messagequery -->
+<!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
 
 # <a name="recommended-naming-and-tagging-conventions"></a>推奨される名前付けおよびタグ付け規則
 
@@ -107,6 +107,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | ローカル ネットワーク ゲートウェイ            | lgw-        |
 | 仮想ネットワーク ゲートウェイ          | vgw-        |
 | VPN 接続                   | cn-         |
+| ExpressRoute 回線             | erc-        |
 | Application gateway              | agw-        |
 | ルート テーブル                      | route-      |
 | ユーザー定義ルート (UDR)         | udr-        |
@@ -117,24 +118,27 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 
 ### <a name="compute-and-web"></a>コンピューティングと Web
 
-| 資産の種類                  | 名前のプレフィックス |
-|-----------------------------|-------------|
-| 仮想マシン             | vm          |
-| 仮想マシン スケール セット   | vmss-       |
-| 可用性セット            | avail-      |
-| VM ストレージ アカウント          | stvm        |
-| Azure Arc に接続されたコンピューター | arcm-       |
-| コンテナー レジストリ          | cr-         |
-| コンテナー インスタンス          | ci-         |
-| AKS クラスター                 | aks-        |
-| Service Fabric クラスター      | sf-         |
-| App Service 環境     | ase-        |
-| App Service プラン            | plan-       |
-| Web アプリ                     | app-        |
-| 関数アプリ                | func-       |
-| クラウド サービス               | cld-        |
-| Notification Hubs           | ntf-        |
-| Notification Hubs 名前空間 | ntfns-      |
+| 資産の種類 | 名前のプレフィックス |
+|--|--|
+| 仮想マシン | vm |
+| 仮想マシン スケール セット | vmss- |
+| 可用性セット | avail- |
+| マネージド ディスク (OS) | osdisk |
+| マネージド ディスク (データ) | disk |
+| VM ストレージ アカウント | stvm |
+| Azure Arc 対応サーバー | arcs- |
+| Azure Arc 対応 Kubernetes クラスター | arck |
+| コンテナー レジストリ | cr |
+| コンテナー インスタンス | ci- |
+| AKS クラスター | aks- |
+| Service Fabric クラスター | sf- |
+| App Service 環境 | ase- |
+| App Service プラン | plan- |
+| Web アプリ | app- |
+| 関数アプリ | func- |
+| クラウド サービス | cld- |
+| Notification Hubs | ntf- |
+| Notification Hubs 名前空間 | ntfns- |
 
 ### <a name="databases"></a>データベース
 
@@ -168,43 +172,36 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 
 ### <a name="analytics-and-iot"></a>Analytics と IoT
 
-| 資産の種類                      | 名前のプレフィックス |
-|---------------------------------|-------------|
-| Azure Analysis Services サーバー  | as          |
-| Azure Databricks ワークスペース      | dbw-        |
-| Azure Stream Analytics          | asa-        |
-| Azure Data Factory              | adf-        |
-| Data Lake Store アカウント         | dls         |
-| Data Lake Analytics アカウント     | dla         |
-| イベント ハブ                       | evh-        |
-| HDInsight - Hadoop クラスター      | hadoop-     |
-| HDInsight - HBase クラスター       | hbase-      |
-| HDInsight - Kafka クラスター       | kafka-      |
-| HDInsight - Spark クラスター       | spark-      |
-| HDInsight - Storm クラスター       | storm-      |
-| HDInsight - ML Services クラスター | mls-        |
-| IoT ハブ                         | iot-        |
-| Power BI Embedded               | pbi-        |
+| 資産の種類                       | 名前のプレフィックス | |---------------------------------_|-------------| | Azure Analysis Services サーバー | as          | | Azure Databricks ワークスペース  | dbw-        | | Azure Stream Analytics           | asa-        | | Azure Data Explorer クラスター   | dec         | | Azure Data Factory               | adf-        | | Data Lake Store アカウント       | dls         | | Data Lake Analytics アカウント   | dla         | | イベント ハブ                    | evh-        | | HDInsight - Hadoop クラスター    | hadoop-     | | HDInsight - HBase クラスター     | hbase-      | | HDInsight - Kafka クラスター     | kafka-      | | HDInsight - Spark クラスター     | spark-      | | HDInsight - Storm クラスター     | storm-      | | HDInsight - ML Services クラスター | mls-        | | IoT ハブ                         | iot-        | | Power BI Embedded                | pbi-        | | Time Series Insights 環境        | tsi-        |
+
+### <a name="developer-tools"></a>開発者用ツール
+
+| 資産の種類 | 名前のプレフィックス |
+|---|---|
+| App Configuration ストア | appcs- |
 
 ### <a name="integration"></a>統合
 
-| 資産の種類        | 名前のプレフィックス |
-|-------------------|-------------|
-| ロジック アプリ        | logic-      |
-| Service Bus       | sb-         |
-| Service Bus キュー | sbq-        |
-| Service Bus トピック | sbt-        |
+| 資産の種類          | 名前のプレフィックス |
+|---------------------|-------------|
+| 統合アカウント | ia-         |
+| ロジック アプリ          | logic-      |
+| Service Bus         | sb-         |
+| Service Bus キュー   | sbq-        |
+| Service Bus トピック   | sbt-        |
 
 ### <a name="management-and-governance"></a>管理とガバナンス
 
-| 資産の種類              | 名前のプレフィックス |
-|-------------------------|-------------|
-| ブループリント               | bp-         |
-| ブループリント割り当て    | bpa-        |
-| Key Vault               | kv-         |
-| Log Analytics ワークスペース | log-        |
-| Application Insights    | appi-       |
-| Recovery Services コンテナー | rsv-        |
+| 資産の種類 | 名前のプレフィックス |
+|--|--|
+| Automation アカウント | aa- |
+| Azure Monitor アクション グループ | ag- |
+| ブループリント | bp- |
+| ブループリント割り当て | bpa- |
+| Key Vault | kv- |
+| Log Analytics ワークスペース | log- |
+| Application Insights | appi- |
+| Recovery Services コンテナー | rsv- |
 
 ### <a name="migration"></a>移行
 
@@ -227,14 +224,14 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | アプリケーション名          | リソースが関連付けられているアプリケーション、サービス、またはワークロードの名前。                                                                                                                                       | _ApplicationName_ | _{アプリケーション名}_                                               |
 | 承認者名             | このリソースに関連したコストの承認を担当する人物。                                                                                                                                                     | _Approver_        | _{email}_                                                  |
 | 必要な予算/承認された予算  | このアプリケーション、サービス、またはワークロードに割り当てられた金額。                                                                                                                                                          | _BudgetAmount_    | _{\$}_                                                     |
-| 事業単位             | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 小規模な組織では、このタグは 1 つの会社の、または共有された最上位の組織要素を表す可能性があります。 | _BusinessUnit_    | _FINANCE_、_MARKETING_、 _{Product Name}_ 、_CORP_、_SHARED_ |
+| 事業単位             | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 小規模な組織では、このタグは 1 つの会社の、または共有された最上位の組織要素を表す可能性があります。 | _BusinessUnit_    | _FINANCE_ 、 _MARKETING_ 、 _{Product Name}_ 、 _CORP_ 、 _SHARED_ |
 | コスト センター               | このリソースに関連付けられたアカウンティング コスト センター。                                                                                                                                                                | _CostCenter_      | _{number}_                                                 |
-| 障害復旧         | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。                                                                                                                                                       | _DR_              | _Mission-critical_、_Critical_、_Essential_                |
+| 障害復旧         | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。                                                                                                                                                       | _DR_              | _Mission-critical_ 、 _Critical_ 、 _Essential_                |
 | プロジェクトの終了日   | アプリケーション、ワークロード、またはサービスの使用停止がスケジュールされている日付。                                                                                                                                         | _EndDate_         | _{date}_                                                   |
-| 環境               | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                                                                                                                                     | _Env_             | _Prod_、_Dev_、_QA_、_Stage_、_Test_                       |
+| 環境               | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                                                                                                                                     | _Env_             | _Prod_ 、 _Dev_ 、 _QA_ 、 _Stage_ 、 _Test_                       |
 | 所有者名                | このアプリケーション、ワークロード、またはサービスの所有者。                                                                                                                                                                      | _所有者_           | _{email}_                                                  |
 | 要求者名            | このアプリケーションの作成を要求したユーザー。                                                                                                                                                                 | _要求者_       | _{email}_                                                  |
-| サービス クラス             | アプリケーション、ワークロード、またはサービスのサービス レベル アグリーメント レベル。                                                                                                                                              | _ServiceClass_    | _Dev_、_Bronze_、_Silver_、_Gold_                          |
+| サービス クラス             | アプリケーション、ワークロード、またはサービスのサービス レベル アグリーメント レベル。                                                                                                                                              | _ServiceClass_    | _Dev_ 、 _Bronze_ 、 _Silver_ 、 _Gold_                          |
 | プロジェクトの開始日 | アプリケーション、ワークロード、またはサービスが最初にデプロイされた日付。                                                                                                                                                  | _StartDate_       | _{date}_                                                   |
 
 ## <a name="example-names"></a>名前の例
@@ -243,7 +240,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 
 <!-- TODO: Use tick marks for names. -->
 
-<!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
+<!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus appcn keda acrnavigatorprod -->
 
 <!-- markdownlint-disable MD024 -->
 
@@ -258,7 +255,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | マネージド ID                | Resource group                        | id-\<App or service name\>                                  | id-appcn-keda-prod-eus-001                                                                         |
 
 > [!NOTE]
-> 上記を含め、このドキュメント内にある名前の例では、3 桁の埋め込み (\<\#\#\#\>) が示されています。 つまり、  mktg-prod-*001*
+> 上記を含め、このドキュメント内にある名前の例では、3 桁の埋め込み (\<\#\#\#\>) が示されています。 つまり、  mktg-prod- *001*
 >
 > 構成管理データベース (CMDB)、IT 資産管理ツール、または従来のアカウンティング ツールで資産が管理されている場合、埋め込みにより、人間が読みやすくなり、並べ替えるのに役立ちます。 デプロイされた資産が IT 資産の大規模なインベントリまたはポートフォリオの一部として一元的に管理されている場合、埋め込みアプローチは、インベントリの名前付けを管理するためにこれらのシステムで使用されるインターフェイスと適合します。
 >
