@@ -131,6 +131,8 @@ items:
             href: digital-estate/rationalize.md
           - name: コストを予測するコスト モデルの配置
             href: digital-estate/calculate.md
+          - name: AppDynamics を使用してビジネス成果を測定する
+            href: digital-estate/app-dynamics.md
       - name: 初期の組織配置
         href: plan/initial-org-alignment.md
       - name: スキルの準備計画
