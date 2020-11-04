@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cd4f4c579aa2edfece69e05feb44bcd344380bf7
-ms.sourcegitcommit: ba6747b5571b342cb3c4bfaf5b96da0946ebba31
+ms.openlocfilehash: 1a52864576b7965a10a2fb7a4f3ea773cd4979c9
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89557045"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282935"
 ---
-<!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
-
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
 このフェーズでは、評価フェーズの出力を使用して環境の移行を開始します。 このガイドは、完了状態に至るための適切なツールの特定に役立ちます。 ネイティブ ツール、サードパーティ製ツール、およびプロジェクト管理ツールについて確認します。
@@ -69,7 +67,7 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 
 1. **[すべてのサービス]**  >  **[サブスクリプション]** の順に選択し、ターゲット サブスクリプションを選択します。
 1. **[リソース プロバイダー]** を選択します。
-1. `migration` を検索し、**Microsoft.DataMigration** の右側にある **[登録]** を選択します。
+1. `migration` を検索し、 **Microsoft.DataMigration** の右側にある **[登録]** を選択します。
 
 ::: zone target="chromeless"
 

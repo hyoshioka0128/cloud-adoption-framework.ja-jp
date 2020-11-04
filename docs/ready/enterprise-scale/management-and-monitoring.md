@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cf4a7d9b708f211c6b848a2ddd7672af143adc34
-ms.sourcegitcommit: 44fb6deee30fd6ffc80b5d2e66544a50e8405c73
+ms.openlocfilehash: 605b0041ed4cfab683b031b46a5f8f3a769063b2
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91492708"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024557"
 ---
 # <a name="management-and-monitoring"></a>管理と監視
 
@@ -22,7 +22,7 @@ ms.locfileid: "91492708"
 
 ![管理と監視を示す図。](./media/management-and-monitoring.png)
 
-"_図 1:プラットフォームの管理と監視。_
+" _図 1:プラットフォームの管理と監視。_
 
 <!-- cSpell:ignore syslogs SIEM -->
 
@@ -61,12 +61,12 @@ ms.locfileid: "91492708"
 - ログの保持期間の要件が 2 年を超える場合は、ログを Azure Storage にエクスポートします。 1 回の書き込みと多数回の読み取りのポリシーで不変ストレージを使用して、ユーザーが指定した間隔でデータを消去不可および変更不可にします。
 - アクセス制御とコンプライアンス レポートには Azure Policy を使用します。 Azure Policy には、組織全体の設定を適用して、一貫したポリシーの準拠と迅速な違反検出を確実に行う機能があります。 詳細については、「[Azure Policy の効果について](/azure/governance/policy/concepts/effects)」を参照してください。
 - Azure Policy を使用して、ゲスト仮想マシン (VM) の構成内のドリフトを監視します。 ポリシーを使用して[ゲスト構成](/azure/governance/policy/concepts/guest-configuration)監査機能を有効にすると、ほとんど苦労することなく、アプリ チームのワークロードで、すぐに機能を使用できるようになります。
-- Windows VM と Linux VM の両方の長期的なパッチ適用メカニズムとして、[Azure Automation の更新管理](/azure/automation/automation-update-management)を使用します。 ポリシーを使用して更新管理の構成を適用すると、すべての VM はパッチ管理処理に確実に含まれるようになり、アプリケーション チームには VM のパッチ デプロイを管理する機能が提供されます。 また、すべての VM にわたり、可視性と適用に関する機能が中央 IT チームに提供されます。
+- Windows VM と Linux VM の両方の長期的なパッチ適用メカニズムとして、[Azure Automation の更新管理](/azure/automation/update-management/overview)を使用します。 ポリシーを使用して更新管理の構成を適用すると、すべての VM はパッチ管理処理に確実に含まれるようになり、アプリケーション チームには VM のパッチ デプロイを管理する機能が提供されます。 また、すべての VM にわたり、可視性と適用に関する機能が中央 IT チームに提供されます。
 - Network Watcher を使用して、トラフィック フローを [Network Watcher NSG フロー ログ v2](/azure/network-watcher/network-watcher-nsg-flow-logging-overview) 経由で予防的に監視します。 [Traffic Analytics](/azure/network-watcher/traffic-analytics) を使用すると、NSG のフロー ログを分析し、仮想ネットワーク内の IP トラフィックに関する詳細な分析情報を収集して、効果的な管理と監視のための重要な情報を得ることができます。 Traffic Analytics を使用すると、通信量の多いホストやアプリのプロトコル、会話が多いホスト ペア、許可またはブロックされたトラフィック、受信または送信トラフィック、開いているインターネット ポート、ブロックの多いルール、Azure データ センター、仮想ネットワーク、サブネット、または承認されていないネットワークごとのトラフィック分布などの情報を得ることができます。
 - 重要な共有サービスが誤って削除されないように、リソース ロックを使用します。
-- Azure AD RBAC の割り当てを補うために、[拒否ポリシー](/azure/governance/policy/concepts/effects#deny)を使用します。 拒否ポリシーを使用すると、要求がリソース プロバイダーに送信されないようにすることで、定義された標準に一致しないリソースのデプロイと構成を防ぐことができます。 拒否ポリシーと RBAC の割り当てを組み合わせることで、適切なガードレールが確実に配置され、リソースのデプロイと構成を行うことができるのは "*だれ*" で、その人物がデプロイおよび構成できるリソースは "*何*" であるかが適用されます。
+- Azure AD RBAC の割り当てを補うために、[拒否ポリシー](/azure/governance/policy/concepts/effects#deny)を使用します。 拒否ポリシーを使用すると、要求がリソース プロバイダーに送信されないようにすることで、定義された標準に一致しないリソースのデプロイと構成を防ぐことができます。 拒否ポリシーと RBAC の割り当てを組み合わせることで、適切なガードレールが確実に配置され、リソースのデプロイと構成を行うことができるのは " *だれ* " で、その人物がデプロイおよび構成できるリソースは " *何* " であるかが適用されます。
 - プラットフォーム監視ソリューション全体の一部として、[サービス](/azure/service-health/service-health-overview)と[リソース](/azure/service-health/resource-health-overview)の正常性イベントを含めます。 プラットフォームの観点からサービスとリソースの正常性を追跡することは、Azure のリソース管理の重要なコンポーネントです。
-- 生のログ エントリをオンプレミスの監視システムに送信しないでください。 代わりに、"*Azure で生まれたデータは Azure に保持する*" という原則を採用します。 オンプレミスの SIEM 統合が必要な場合は、ログではなく[重要なアラートを送信](/azure/security-center/continuous-export)します。
+- 生のログ エントリをオンプレミスの監視システムに送信しないでください。 代わりに、" *Azure で生まれたデータは Azure に保持する* " という原則を採用します。 オンプレミスの SIEM 統合が必要な場合は、ログではなく[重要なアラートを送信](/azure/security-center/continuous-export)します。
 
 ## <a name="plan-for-app-management-and-monitoring"></a>アプリの管理と監視を計画する
 

@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 96d3c5280152a9baee6b327b46262c0ebaf5b69c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2064586262b4a0023b21fa63115245d24f346cf1
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882619"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024506"
 ---
 <!-- cSpell:ignore WSUS -->
 
 # <a name="operational-compliance-in-azure"></a>Azure における運用のコンプライアンス
 
-"_運用のコンプライアンス_" は、すべてのクラウド管理ベースラインにおける 2 つ目の規範です。
+" _運用のコンプライアンス_ " は、すべてのクラウド管理ベースラインにおける 2 つ目の規範です。
 
 ![クラウド管理ベースライン](../../_images/manage/management-baseline.png)
 
@@ -53,7 +53,7 @@ Update Management で管理されるコンピューターでは、評価と更�
 - Azure Automation の Hybrid Runbook Worker。
 - Microsoft Update または Windows Server Update Services (WSUS) (Windows コンピューターの場合)。
 
-詳細については、[Update Management ソリューション](/azure/automation/automation-update-management)に関するページを参照してください。
+詳細については、[Update Management ソリューション](/azure/automation/update-management/overview)に関するページを参照してください。
 
 > [!WARNING]
 > Update Management を使用するには、あらかじめ仮想マシンまたはサブスクリプション全体を Log Analytics および Azure Automation にオンボードしておく必要があります。

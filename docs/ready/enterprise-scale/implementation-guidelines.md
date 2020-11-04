@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e93f231d0b5749edc6216cf0338fd66931410673
-ms.sourcegitcommit: 523d3b21cab320294f54b661abf85874af9f5e9a
+ms.openlocfilehash: 078ac0e661b946d9fb493dff0b1d2ee087777726
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92178968"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024608"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -82,9 +82,9 @@ ms.locfileid: "92178968"
 
   | 名前                  |     説明                                                                                     | 割り当てに関する注釈 |
   |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deny-VNET-Peering-Cross-Subscription.parameters.json) | サブスクリプションの外部にある他の VNET への VNET ピアリング接続が作成されないようにします。 | このポリシーがサンドボックス管理グループ階層のスコープ レベルにのみ割り当てられるようにしてください。 |
-  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | サンドボックス サブスクリプションでの作成が拒否されるリソース。 これにより、ハイブリッド接続のリソース (*VPN/ExpressRoute/VirtualWAN* など) が作成されなくなります。 | このポリシーを割り当てるときは、次のリソースを選択して、その作成を拒否します。VPN ゲートウェイ: `microsoft.network/vpngateways`、P2S ゲートウェイ: `microsoft.network/p2svpngateways`、仮想 WAN: `microsoft.network/virtualwans`、仮想 WAN ハブ: `microsoft.network/virtualhubs`、ExpressRoute 回線: `microsoft.network/expressroutecircuits`、ExpressRoute ゲートウェイ: `microsoft.network/expressroutegateways`、ExpressRoute ポート: `microsoft.network/expressrouteports`、ExpressRoute 交差接続: `microsoft.network/expressroutecrossconnections` およびローカル ネットワーク ゲートウェイ: `microsoft.network/localnetworkgateways`。 | 
-  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Budget-Sandbox.parameters.json) | 各サンドボックス サブスクリプションに対して、電子メール アラートが有効になっている予算が確実に存在するようにします。 この予算は、各サブスクリプションで `default-sandbox-budget` という名前になります。 | ポリシーの割り当て時に、パラメーターが既定値から変更されていない場合、予算 (`default-sandbox-budget`) は 1000 通貨しきい値の制限付きで作成され、サブスクリプションの所有者と共同作成者 (RBAC ロールの割り当てに基づきます) に、予算しきい値の 90% と 100% で電子メール アラートが送信されます。 |
+  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | サブスクリプションの外部にある他の VNET への VNET ピアリング接続が作成されないようにします。 | このポリシーがサンドボックス管理グループ階層のスコープ レベルにのみ割り当てられるようにしてください。 |
+  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | サンドボックス サブスクリプションでの作成が拒否されるリソース。 これにより、ハイブリッド接続のリソース ( *VPN/ExpressRoute/VirtualWAN* など) が作成されなくなります。 | このポリシーを割り当てるときは、次のリソースを選択して、その作成を拒否します。VPN ゲートウェイ: `microsoft.network/vpngateways`、P2S ゲートウェイ: `microsoft.network/p2svpngateways`、仮想 WAN: `microsoft.network/virtualwans`、仮想 WAN ハブ: `microsoft.network/virtualhubs`、ExpressRoute 回線: `microsoft.network/expressroutecircuits`、ExpressRoute ゲートウェイ: `microsoft.network/expressroutegateways`、ExpressRoute ポート: `microsoft.network/expressrouteports`、ExpressRoute 交差接続: `microsoft.network/expressroutecrossconnections` およびローカル ネットワーク ゲートウェイ: `microsoft.network/localnetworkgateways`。 | 
+  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | 各サンドボックス サブスクリプションに対して、電子メール アラートが有効になっている予算が確実に存在するようにします。 この予算は、各サブスクリプションで `default-sandbox-budget` という名前になります。 | ポリシーの割り当て時に、パラメーターが既定値から変更されていない場合、予算 (`default-sandbox-budget`) は 1000 通貨しきい値の制限付きで作成され、サブスクリプションの所有者と共同作成者 (RBAC ロールの割り当てに基づきます) に、予算しきい値の 90% と 100% で電子メール アラートが送信されます。 |
 
 ### <a name="global-networking-and-connectivity"></a>グローバル ネットワークと接続性
 

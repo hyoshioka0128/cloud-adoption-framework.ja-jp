@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 904fd950a7d19f33d7589cc0ccff69e56026660b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 90ef5b895e8ac6f9674de3b4c15edf238d789a4b
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878522"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283011"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -62,7 +62,7 @@ Machine Learning 操作 (MLOps) は、ワークフローの効率を向上させ
 - 実稼働環境へのモデルのより迅速なデプロイ
 - 品質保証
 
-適切なモデルがあれば、Web サービス、IoT デバイス、または Power BI で簡単に使用できます。 詳細については、[デプロイする方法と場所](/azure/machine-learning/how-to-deploy-and-where)に関する記事を参照してください。
+適切なモデルがあれば、Web サービス、IoT デバイス、または Power BI で簡単に使用できます。 詳細については、「[Azure Machine Learning を使用してモデルをデプロイする](/azure/machine-learning/how-to-deploy-and-where)」を参照してください。
 
 デプロイされたモデルは、[Azure Machine Learning SDK for Python](/python/api/overview/azure/ml/?view=azure-ml-py)、[Azure Machine Learning Studio (classic)](https://ml.azure.com/)、または [Machine Learning CLI](/azure/machine-learning/reference-azure-machine-learning-cli) を使用して管理できます。
 

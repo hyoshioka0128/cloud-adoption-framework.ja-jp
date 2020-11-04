@@ -7,12 +7,12 @@ ms.date: 10/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e33e3e8129229229bfd3737d85032af8b33ae09a
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 1a5e1db58b3818b4b17e67ebd6465e956eade0d8
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334393"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024489"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -155,7 +155,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 - シンプルなアーキテクチャから、または Azure、他のクラウド プロバイダー、および企業ネットワーク間でコンポーネントがホストされている多層アーキテクチャから、ハイブリッド インフラストラクチャとアプリケーションを監視します。 コンポーネントには、1 つまたは複数の VM、可用性セットまたは仮想マシン スケール セットに配置された複数の VM、または Windows Server または Linux コンテナー上で実行されている Azure Kubernetes Service (AKS) にデプロイされたコンテナー化アプリケーションが含まれる場合があります。
 
-- [Azure Arc](/azure-arc/overview) を使用して、サーバー、仮想マシン、Kubernetes クラスター、およびデータベースが Azure で実行されているかのように管理するためにそれらを環境全体で準備します。 Azure Arc では、使い慣れた Azure サービスおよび管理機能と共に、一貫したインベントリ、管理、ガバナンス、およびセキュリティが提供されます。
+- [Azure Arc](/azure/azure-arc/overview) を使用して、サーバー、仮想マシン、Kubernetes クラスター、およびデータベースが Azure で実行されているかのように管理するためにそれらを環境全体で準備します。 Azure Arc では、使い慣れた Azure サービスおよび管理機能と共に、一貫したインベントリ、管理、ガバナンス、およびセキュリティが提供されます。
 
 - Azure Monitor for VMs、Azure Monitor for containers、および Application Insights を有効にして、インフラストラクチャとアプリケーションの問題を検出および診断します。 アプリケーションをサポートする複数のコンポーネントまたは依存関係から収集されたデータのさらに詳細な分析と相関関係には、Azure Monitor ログを使用する必要があります。
 

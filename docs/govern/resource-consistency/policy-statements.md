@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3bdf4656df0845636e6065e88085dbb03d7c7f00
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c8fd183115c17f1f26087af99dd5c8578885845a
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879253"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024438"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>リソースの整合性のサンプル ポリシー ステートメント
 
@@ -38,7 +38,7 @@ ms.locfileid: "88879253"
   - 環境
 - ガバナンス ツールでは、コスト、重要度、SLA、アプリケーション、環境に関連するタグ付けが検証される必要があります。 すべての値は、ガバナンス チームが管理する事前定義済みの値と整合している必要があります。
 
-**使用可能な設計オプション:** Azure では、[標準的な名前と値のメタデータ タグ](/azure/azure-resource-manager/management/tag-resources)が、ほとんどのリソースの種類でサポートされています。 リソース作成の一部として特定のタグを適用するには、[Azure Policy](/azure/governance/policy/overview) を使用します。
+**使用可能な設計オプション:** Azure では、 [標準的な名前と値のメタデータ タグ](/azure/azure-resource-manager/management/tag-resources)が、ほとんどのリソースの種類でサポートされています。 リソース作成の一部として特定のタグを適用するには、[Azure Policy](/azure/governance/policy/overview) を使用します。
 
 ## <a name="ungoverned-subscriptions"></a>管理されていないサブスクリプション
 
@@ -54,7 +54,7 @@ ms.locfileid: "88879253"
 
 **ポリシー ステートメント:** ガバナンス ツールでは、すべてのデプロイ済み VM に対して自動更新が有効になるようにする必要があります。 違反は運用管理チームがレビューし、運用ポリシーに従って修復する必要があります。 自動的に更新されない資産は、IT 運用チームが担当するプロセスに含める必要があります。
 
-**使用可能な設計オプション:** Azure でホストされた VM では、[Azure Automation の Update Management ソリューション](/azure/automation/automation-update-management)を使用して、一貫した更新プログラム管理を提供できます。
+**使用可能な設計オプション:** Azure でホストされた VM では、 [Azure Automation の Update Management ソリューション](/azure/automation/update-management/overview)を使用して、一貫した更新プログラム管理を提供できます。
 
 ## <a name="deployment-compliance"></a>デプロイのコンプライアンス
 
