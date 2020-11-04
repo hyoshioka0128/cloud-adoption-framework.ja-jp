@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: はじめに
+  - name: 作業開始
     items:
       - name: 概要
         href: get-started/index.md
@@ -1530,7 +1530,7 @@ items:
           - name: ワークロード アーキテクチャ向けの Microsoft Azure Well-Architected Framework
             href: /azure/architecture/framework
           - name: 製品を実装するためのドキュメント
-            href: null
+            href: /
           - name: スキルを開発するための学習
             href: /learn
           - name: ガイダンスをカスタマイズするための評価
