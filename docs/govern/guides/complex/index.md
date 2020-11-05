@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a6bd3dc0ae4f5a2a0ef9236992cd4f5b7b186f8
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: f67a88860bb7532f37e110fdda8da9af6adbabb3
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621095"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283216"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>複雑な企業向けのガバナンス ガイド
 
@@ -44,7 +44,7 @@ ms.locfileid: "91621095"
 
 1. このグループ階層の各レベルで、[一貫性のある用語体系](../../../ready/azure-best-practices/naming-and-tagging.md)を適用します。
 
-1. リソース グループは、そのコンテンツのライフサイクルを考慮した形でデプロイする必要があります。 同時に開発され、まとめて管理され、同時に廃止されるリソースは、同じリソース グループに属します。 リソース グループの使用に関するベスト プラクティスの詳細については、[こちらを参照](../../../decision-guides/resource-consistency/index.md)してください。
+1. リソース グループは、そのコンテンツのライフサイクルを考慮した形でデプロイする必要があります。 同時に開発され、まとめて管理され、同時に廃止されるリソースは、同じリソース グループに属します。 リソース グループの使用に関するベスト プラクティスの詳細については、「[リソースの整合性の意思決定ガイド](../../../decision-guides/resource-consistency/index.md)」を参照してください。
 
 1. [リージョンの選択](../../../migrate/azure-best-practices/multiple-regions.md)は非常に重要であり、ネットワーク、監視、監査をフェールオーバー/フェールバック用に配置できるように考慮し、[必要な SKU を優先リージョンで使用できる](https://azure.microsoft.com/global-infrastructure/services)ことを確認する必要があります。
 

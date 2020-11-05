@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f9ca594839cbd1e5d5ff641c81b083d30cd4481b
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: 9c5d0b90513f5bfedef2dfdb030cf58cb166ae86
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91620840"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283130"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 
@@ -32,7 +32,7 @@ ms.locfileid: "91620840"
   - [コスト最適化戦術](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)
 - **運用管理:** 運用管理チームにとって、ビジネス コミットメントや SLA に対する可視性は、継続的な運用を行ううえで重要な側面です。 適切に管理するためには、[ミッション クリティカル度](../../manage/considerations/criticality.md)のタグ付けが必要です。
 - **セキュリティ:** データとセキュリティへの影響を分類することは、違反や他のセキュリティの問題が発生したときに、チームにとって重要なデータ ポイントです。 安全に運用するには、[データ分類](../../govern/policy-compliance/data-classification.md)のタグ付けが必要です。
-- **ガバナンスと規制に対するコンプライアンス:** リソース間の一貫性を維持することで、取り決められたポリシーとのずれを特定するのに役立ちます。 [このガバナンスの基礎に関する記事](../../govern/guides/complex/prescriptive-guidance.md#resource-tagging)では、ガバナンス プラクティスを展開するときに以下のいずれかのパターンがどのように役立つかを示します。 タグを使用して規制コンプライアンスを評価するのに類似のパターンを利用できます。
+- **ガバナンスと規制に対するコンプライアンス:** リソース間の一貫性を維持することで、取り決められたポリシーとのずれを特定するのに役立ちます。 [リソースのタグ付けに関する規範的なガイダンス](../../govern/guides/complex/prescriptive-guidance.md#resource-tagging)では、ガバナンス プラクティスを展開するときに以下のいずれかのパターンがどのように役立つかを示します。 タグを使用して規制コンプライアンスを評価するのに類似のパターンを利用できます。
 - **自動化:** 適切な方法で編成すると、IT 部門によるリソースの管理が簡単になるだけでなく、リソースの作成、運用の監視、および DevOps プロセスの作成の一部としてオートメーションを利用できるようになります。
 - **ワークロードの最適化:** タグ付けは、パターンを特定し、広範な問題を解決するのに役立ちます。 また、タグは 1 つのワークロードをサポートするのに必要な資産を特定するのにも役立ちます。 各ワークロードに関連付けられているすべての資産にタグを付けることで、ミッション クリティカルなワークロードをより詳しく分析して、適切なアーキテクチャを決めることができます。
 
