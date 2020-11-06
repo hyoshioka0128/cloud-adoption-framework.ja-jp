@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aba1b915bf1cff47e26407940c871496cd640be
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 3f531866d23bf684a7127df0bf8777c0d23add59
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334937"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283420"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -143,7 +143,7 @@ Contoso は、Azure サブスクリプションに含まれる Azure AD Free エ
 
 ### <a name="add-the-domain-name"></a>ドメイン名を追加する
 
-標準のドメイン名を使用するには、Contoso の管理者がそれをカスタム ドメイン名として Azure AD に追加する必要があります。 この方法を使うと、管理者は使い慣れたユーザー名を割り当てることができます。 たとえば、ユーザーは `billg@contosomigration.microsoft.com` ではなく、メール アドレス `billg@contoso.com` でサインインできます。
+標準のドメイン名を使用するには、Contoso の管理者がそれをカスタム ドメイン名として Azure AD に追加する必要があります。 この方法を使うと、管理者は使い慣れたユーザー名を割り当てることができます。 たとえば、ユーザーは `billg@contosomigration.onmicrosoft.com` ではなく、メール アドレス `billg@contoso.com` でサインインできます。
 
 カスタム ドメイン名を設定するには、管理者がディレクトリにカスタム ドメイン名を追加し、DNS エントリを追加して、Azure AD で名前を確認します。
 
@@ -708,7 +708,7 @@ Contoso は ID とアクセスの制御を構成しているので、ガバナ�
 
 Azure Policy サービスは、ポリシー定義に準拠していないリソースをスキャンすることによって、リソースを評価します。 たとえば、特定の種類の VM だけを許可するポリシーや、リソースに特定のタグを付けることを要求するポリシーを使用できます。
 
-ポリシーはポリシー定義を指定し、ポリシー割り当てはポリシーが適用される範囲を指定します。 範囲は、管理グループからリソース グループまでです。 ポリシーの作成と管理の[詳細をご覧ください](/azure/governance/policy/tutorials/create-and-manage)。
+ポリシーはポリシー定義を指定し、ポリシー割り当てはポリシーが適用される範囲を指定します。 範囲は、管理グループからリソース グループまでです。 [ポリシーを作成して管理する](/azure/governance/policy/tutorials/create-and-manage)方法をご確認ください。
 
 Contoso は、2 つのポリシーを開始したいと考えています。 これには、リソースを `East US 2` リージョンと `Central US` リージョンにのみ確実にデプロイできるようにするポリシーが必要です。 また、承認された SKU だけに VM SKU を制限するポリシーも必要となります。 目的は、高価な VM SKU が使われないようにすることです。
 
@@ -744,7 +744,6 @@ _図 40: ポリシー SKU_
 ポリシーはすぐに有効になり、Contoso はリソースのコンプライアンス状況を確認できます。 Azure Portal で、 **[コンプライアンス]** リンクを選択します。 コンプライアンス ダッシュボードが表示されます。 ドリルダウンして詳細を表示することができます。
 
 ![コンプライアンス ダッシュボードを示すスクリーンショット。](./media/contoso-migration-infrastructure/policy-compliance.png)
-
 
 _図 41: ポリシーへの準拠_
 

@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 444fe8d597c895aa969a966cb4d659673451198c
-ms.sourcegitcommit: 9d8165354a38f84d0b271b2ce4928f7042e24163
+ms.openlocfilehash: 49af307d23c997692def763772eb87d37f5b5c70
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91851700"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283387"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -105,7 +105,7 @@ Virtual WAN は、大規模な相互接続の要件を満たすために使用�
 
 ![Virtual WAN ネットワーク トポロジを示す図。](./media/virtual-wan-topology.png)
 
-"_図 1:Virtual WAN のネットワーク トポロジ。_
+" _図 1:Virtual WAN のネットワーク トポロジ。_
 
 **設計上の考慮事項:**
 
@@ -115,7 +115,7 @@ Virtual WAN は、大規模な相互接続の要件を満たすために使用�
 
   ![Virtual WAN でのグローバル トランジット ネットワークを示す図。](./media/global-transit.png)
   
-  "_図 2:Virtual WAN でのグローバル トランジット ネットワーク。_
+  " _図 2:Virtual WAN でのグローバル トランジット ネットワーク。_
 
 - Virtual WAN の Any-to-Any の推移的な接続では、(同じリージョン内およびリージョン間での) 次のパスがサポートされています。
 
@@ -156,7 +156,7 @@ Virtual WAN は、大規模な相互接続の要件を満たすために使用�
 
   ![ネットワーク トポロジの例の図。](./media/global-reach-topology.png)
   
-  "_図 3:ネットワーク トポロジのサンプル。_
+  " _図 3:ネットワーク トポロジのサンプル。_
 
 - グローバル接続リソースとしては Virtual WAN を使用します。 Azure リージョンごとに Virtual WAN ハブを使用し、ローカルな Virtual WAN ハブを介して Azure リージョン間で複数のランディング ゾーンを接続します。
 
@@ -176,7 +176,7 @@ Virtual WAN は、大規模な相互接続の要件を満たすために使用�
 
 - パートナーのネットワーク テクノロジと NVA をデプロイするときは、パートナー ベンダーのガイダンスに従って、Azure ネットワークと競合する構成がないようにします。
 
-- Azure Virtual WAN 上にトランジット ネットワークを構築しないでください。 Virtual WAN は、サードパーティの NVA を使用する機能など、推移的ネットワーク トポロジの要件を満たしています。 Azure Virtual WAN 上に転送ネットワークを構築すると、冗長性が向上し、複雑さも増します。 
+- Azure Virtual WAN 上にトランジット ネットワークを構築しないでください。 Virtual WAN は、サードパーティの NVA を使用する機能など、推移的ネットワーク トポロジの要件を満たしています。 Azure Virtual WAN 上に転送ネットワークを構築すると、冗長性が向上し、複雑さも増します。
 
 - Azure のネットワーク テクノロジでは、Microsoft のバックボーンを通じて複数のリージョンにわたる Azure リソースの相互接続がサポートされているため、Azure リージョン間の Azure リソースの接続には、Multiprotocol Label Switching (MPLS) などの既存のオンプレミス ネットワークを使用しないでください。 これは、Microsoft バックボーンのパフォーマンスとアップタイムの特性、およびルーティングの簡単さによるものです。 この提案は、Microsoft バックボーンのパフォーマンスとアップタイムの特性に対応しています。 また、簡単なルーティングも推奨されます。
 
@@ -202,7 +202,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 ![従来の Azure ネットワーク トポロジを示す図。](./media/customer-managed-topology.png)
 
-"_図 4:従来の Azure ネットワーク トポロジ。_
+" _図 4:従来の Azure ネットワーク トポロジ。_
 
 **設計上の考慮事項:**
 
@@ -501,9 +501,11 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - プライベート ピアリングで ExpressRoute を使用する場合、現在は、トラフィックは暗号化されません。
 
+- ExpressRoute プライベート ピアリング経由のサイト間 VPN 接続の構成は現在、[プレビュー段階](https://docs.microsoft.com/azure/vpn-gateway/site-to-site-vpn-private-peering)です。
+
 - [Media Access Control Security (MACsec)](/azure/expressroute/expressroute-howto-MACsec) 暗号化を ExpressRoute Direct に適用して、ネットワーク暗号化を実現できます。
 
-- 現在、Azure ではグローバル仮想ネットワーク ピアリングに対するネイティブ暗号化は提供されていません。 Azure リージョン間の暗号化が必要な場合は、グローバル仮想ネットワーク ピアリングではなく、VPN ゲートウェイを使用して仮想ネットワークを接続することができます。
+- Azure のトラフィックが (Microsoft または Microsoft の代理によって制御されていない、物理的な境界の外部で) データセンター間を移動する場合、基盤となるネットワーク ハードウェア上では [MACsec データリンク層の暗号化](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit)が使用されます。 これは、VNet ピアリング トラフィックに適用されます。
 
 **設計上の推奨事項:**
 
@@ -515,14 +517,15 @@ _図 8:暗号化のフロー。_
 
 - ExpressRoute Direct を使用するときは、組織のルーターと MSEE の間のレイヤー 2 レベルでトラフィックを暗号化するために、[MACsec](/azure/expressroute/expressroute-howto-MACsec) を構成します。 図では、フロー `B` でこの暗号化が示されています。
 
-- MACsec がオプションではない (たとえば、ExpressRoute Direct を使用していない) Virtual WAN のシナリオでは、Virtual WAN VPN ゲートウェイを使用して、ExpressRoute プライベート ピアリング経由で IPsec トンネルを確立します。 図では、フロー `C` でこの暗号化が示されています。
+- MACsec がオプションではない (たとえば、ExpressRoute Direct を使用していない) Virtual WAN のシナリオでは、Virtual WAN VPN ゲートウェイを使用して、[ExpressRoute プライベート ピアリング経由で IPsec トンネル](https://docs.microsoft.com/azure/virtual-wan/vpn-over-expressroute)を確立します。 図では、フロー `C` でこの暗号化が示されています。
 
 - Virtual WAN 以外のシナリオで、MACsec がオプションではない場合 (たとえば、ExpressRoute Direct を使用していない場合)、オプションは以下のものだけです。
   
   - パートナーの NVA を使用して、ExpressRoute プライベート ピアリング経由で IPsec トンネルを確立します。
   - Microsoft ピアリングを使用して ExpressRoute 経由で VPN トンネルを確立します。
+  - ExpressRoute プライベート ピアリング経由のサイト間 VPN 接続を構成する ([プレビュー](https://docs.microsoft.com/azure/vpn-gateway/site-to-site-vpn-private-peering)) 機能を評価します。
 
-- Azure リージョン間のトラフィックを暗号化する必要がある場合は、VPN ゲートウェイを使用してリージョン間で仮想ネットワークを接続します。
+- Azure リージョン間のトラフィックを暗号化する必要がある場合は、グローバル VNet ピアリングを使用してリージョン間で仮想ネットワークを接続します。
 
 - Azure のネイティブ ソリューション (図のフロー `B` と `C` で示されているもの) で要件が満たされない場合は、Azure でパートナーの NVA を使用して、ExpressRoute プライベート ピアリング経由でトラフィックを暗号化します。
 

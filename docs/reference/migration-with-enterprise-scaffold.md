@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: ff6f659e66d843b2c0abed5c04e07f8db6e32cdd
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 29c4ed2fa786d9c697ba14adcc92c73e93bb4b73
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776348"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024574"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -66,19 +66,19 @@ Azure サブスクリプションは、すべてのリソースが含まれる�
 
 EA 加入契約には、次の 3 つの一般的なパターンがあります。
 
-- **機能**パターン:
+- **機能** パターン:
 
   ![機能パターン](../_images/reference/functional.png)
 
-- **部署**パターン:
+- **部署** パターン:
 
   ![部署パターン](../_images/reference/business.png)
 
-- **地域**パターン:
+- **地域** パターン:
 
   ![地域パターン](../_images/reference/geographic.png)
 
-これらのパターンのそれぞれに役割がありますが、**部署**パターンが使用されることが増えています。企業のコスト モデルをモデル化する際や、統制範囲を反映する際に柔軟性が高いためです。 Microsoft Core Engineering and Operations グループによって、**連邦**、**州**、および**地方**に関してモデル化された**部署**パターンの効果的なサブセットが作成されました。 詳細については、[サブスクリプションとリソース グループの整理](../ready/azure-best-practices/organize-subscriptions.md)に関するページを参照してください。
+これらのパターンのそれぞれに役割がありますが、 **部署** パターンが使用されることが増えています。企業のコスト モデルをモデル化する際や、統制範囲を反映する際に柔軟性が高いためです。 Microsoft Core Engineering and Operations グループによって、 **連邦** 、 **州** 、および **地方** に関してモデル化された **部署** パターンの効果的なサブセットが作成されました。 詳細については、[サブスクリプションとリソース グループの整理](../ready/azure-best-practices/organize-subscriptions.md)に関するページを参照してください。
 
 ### <a name="azure-management-groups"></a>Azure 管理グループ
 
@@ -169,7 +169,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 パブリック クラウドの使用を開始するにあたり、最初に重要な質問として、「リソースにアクセスできる必要があるのはだれか」、 「このアクセスを制御するにはどうすればよいか」と自問しているかもしれません。 Azure portal とポータルでのリソースへのアクセス制御は、クラウド内の資産の長期的な安全性にとって不可欠です。
 
-リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは**ありません**。Azure AD テナントとは何か、加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
+リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは **ありません** 。Azure AD テナントとは何か、加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
 
 ![AD アーキテクチャの図](../_images/reference/ad-architecture.png)
 
@@ -180,7 +180,7 @@ Azure が最初にリリースされたときには、サブスクリプショ�
 - サブスクリプションの管理者/共同管理者を制御します。これらのロールは大きな権限を持っているためです。 Azure クラシック デプロイを管理する必要がある場合は、サブスクリプションの所有者を共同管理者として追加するだけです。
 - 管理グループを使用して、複数のサブスクリプションに[ロール](/azure/azure-resource-manager/management-groups-overview#management-group-access)を割り当て、サブスクリプション レベルでロールを管理する負荷を減らします。
 - Azure ユーザーを Active Directory のグループ (アプリケーション X の所有者など) に追加します。 同期されたグループを使用して、アプリケーションが属するリソース グループを管理するための適切な権限をグループのメンバーに付与します。
-- 求められている作業を行うために必要な**最小限の特権**の付与の原則に従います。
+- 求められている作業を行うために必要な **最小限の特権** の付与の原則に従います。
 
 > [!IMPORTANT]
 > [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)、Azure [Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted)、および[条件付きアクセス](/azure/active-directory/conditional-access/overview)機能の使用を検討してください。これらによって、セキュリティが強化され、Azure サブスクリプション全体の管理操作の可視性が向上します。 これらの機能は有効な Azure AD Premium ライセンスで使用でき (機能によって異なる)、アイデンティティをさらに保護して管理します。 Azure AD PIM により、承認ワークフローの "Just-in-Time" 管理アクセスと、管理者のアクティブ化とアクティビティの完全な監査が可能になります。 Azure Multi-Factor Authentication はもう 1 つの重要な機能であり、Azure portal へのサインインの 2 段階認証を有効にします。 条件付きアクセス制御と組み合わせると、セキュリティ侵害のリスクを効果的に管理できます。
@@ -218,19 +218,19 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 ### <a name="azure-update-management"></a>Azure Update Management
 
-環境の安全を保つためにできる重要なタスクの 1 つは、確実にサーバーに最新の更新プログラムが適用されるようにすることです。 これを実現するツールは多数ありますが、Azure が提供する [Azure Update Management](/azure/automation/automation-update-management) ソリューションは、重要な OS パッチを識別してロールアウトします。 これは、このガイドの後半の「[自動化](#automate)」セクションで説明している Azure Automation を利用しています。
+環境の安全を保つためにできる重要なタスクの 1 つは、確実にサーバーに最新の更新プログラムが適用されるようにすることです。 これを実現するツールは多数ありますが、Azure が提供する [Azure Update Management](/azure/automation/update-management/overview) ソリューションは、重要な OS パッチを識別してロールアウトします。 これは、このガイドの後半の「[自動化](#automate)」セクションで説明している Azure Automation を利用しています。
 
 ## <a name="monitor-and-alerts"></a>監視とアラート
 
 テレメトリの収集と分析は、Azure サブスクリプションで使用しているサービスの、アクティビティ、パフォーマンス メトリック、正常性と可用性に関する見通しを得ることができ、アプリケーションとインフラストラクチャを積極的に管理するために不可欠です。また、すべての Azure サブスクリプションの根本的なニーズです。 すべての Azure サービスは、テレメトリをアクティビティ ログ、メトリック、診断ログの形式で出力します。
 
-- **アクティビティ ログ**には、サブスクリプションのリソースに対して実行されたすべての操作が示されています。
-- **メトリック**は、リソースから生成される数値情報であり、リソースのパフォーマンスと正常性を示します。
-- **診断ログ**は、Azure サービスから出力され、そのサービスの操作に関する豊富なデータを提供します。
+- **アクティビティ ログ** には、サブスクリプションのリソースに対して実行されたすべての操作が示されています。
+- **メトリック** は、リソースから生成される数値情報であり、リソースのパフォーマンスと正常性を示します。
+- **診断ログ** は、Azure サービスから出力され、そのサービスの操作に関する豊富なデータを提供します。
 
-これらの情報は複数のレベルで表示して対処することができ、常に改善されています。 Azure では、下の図に示すように Azure リソースの**共有**、**コア**、**詳細**の監視機能を提供しています。
+これらの情報は複数のレベルで表示して対処することができ、常に改善されています。 Azure では、下の図に示すように Azure リソースの **共有** 、 **コア** 、 **詳細** の監視機能を提供しています。
 
-![監視](../_images/reference/monitoring.png)
+![詳細なアプリケーション監視、詳細なインフラストラクチャ監視、コア監視、および共有機能を示す図。](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>共有機能
 
@@ -248,7 +248,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 - **Azure Service Health:** Azure Service Health では、アプリケーションに影響を及ぼす可能性がある Azure サービスの問題を特定します。これは、予定メンテナンス期間を計画する際に役立ちます。
 
-- **アクティビティ ログ:** アクティビティ ログには、サブスクリプションのリソースに対するすべての操作が示されています。 提供される監査証跡によって、リソースに対する作成、更新、削除のすべての操作について、_何を_、_だれが_、_いつ_を特定できます。 アクティビティ ログ イベントがプラットフォームに保存され、クエリで使用できる期間は 90 日です。 アクティビティ ログを Log Analytics に取り込むと、長期間保存することができ、複数のリソースに対して詳細なクエリと分析を行うことができます。
+- **アクティビティ ログ:** アクティビティ ログには、サブスクリプションのリソースに対するすべての操作が示されています。 提供される監査証跡によって、リソースに対する作成、更新、削除のすべての操作について、 _何を_ 、 _だれが_ 、 _いつ_ を特定できます。 アクティビティ ログ イベントがプラットフォームに保存され、クエリで使用できる期間は 90 日です。 アクティビティ ログを Log Analytics に取り込むと、長期間保存することができ、複数のリソースに対して詳細なクエリと分析を行うことができます。
 
 ### <a name="deep-application-monitoring"></a>詳細なアプリケーション監視
 
@@ -307,7 +307,7 @@ Azure Automation、Event Grid、Azure CLI といった Microsoft 製ツールか
 
 - **Azure Automation** はクラウドベースの機能です。これを使用して、(PowerShell または Python で) Runbook を作成し、プロセスのオートメーション、リソースの構成、さらにパッチの適用も実行することができます。 [Azure Automation](/azure/automation/automation-intro) には、デプロイに不可欠な広範なクロス プラットフォーム機能のセットが含まれますが、範囲が広すぎるためここで詳しく説明することはできません。
 - **Event Grid** は、Azure 環境内のイベントに対応することができるフル マネージドのイベント ルーティング システムです。 Azure Automation が成熟したクラウド編成の結合組織であるのと同様に、[Event Grid](/azure/event-grid) は優れたオートメーションの結合組織です。 Event Grid を使用すると、新しいリソースが作成されるたびに管理者に電子メールを送信して、そのリソースをデータベースに記録する、単純なサーバーレス アクションを作成できます。 その同じ Event Grid が、リソースが削除されたときに通知し、アイテムをデータベースから削除することができます。
-- **Azure Cloud Shell** は、Azure でリソースを管理するための、ブラウザーベースのインタラクティブな[シェル](/azure/cloud-shell/overview)です。 これは、PowerShell または Bash に最適な環境を提供します。必要に応じて起動 (および管理) されるため、スクリプトを実行するために一貫性のある環境を得ることができます。 Azure Cloud Shell では、環境のオートメーションを行うために、既にインストールされている他の重要なツールにアクセスできます。[Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) や [Terraform](/azure/virtual-machines/linux/terraform-install-configure) の他にも、コンテナー、データベース (sqlcmd) などを管理するための[ツール](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)がますます増加しています。
+- **Azure Cloud Shell** は、Azure でリソースを管理するための、ブラウザーベースのインタラクティブな [シェル](/azure/cloud-shell/overview)です。 これは、PowerShell または Bash に最適な環境を提供します。必要に応じて起動 (および管理) されるため、スクリプトを実行するために一貫性のある環境を得ることができます。 Azure Cloud Shell では、環境のオートメーションを行うために、既にインストールされている他の重要なツールにアクセスできます。[Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) や [Terraform](/azure/virtual-machines/linux/terraform-install-configure) の他にも、コンテナー、データベース (sqlcmd) などを管理するための[ツール](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)がますます増加しています。
 
 オートメーションはフルタイム ジョブであり、またたく間にクラウド チームにおける最も重要な運用タスクの 1 つになろうとしています。 "オートメーション ファースト" のアプローチを採用する組織は、 Azure を使用して大きな成功を収めます。
 
@@ -331,11 +331,11 @@ Azure は、ハイパースケール クラウド プロバイダーです。 �
 
 Azure スキャフォールディング参照モデルの最後のコンポーネントは、組織がどうやって安全に Azure にアクセスするかという点で重要です。 リソースへのアクセスは内部 (企業のネットワーク内) の場合もあれば、外部 (インターネット経由) の場合もあります。 組織のユーザーは誤って不適切な場所にリソースを配置しがちであり、リソースが悪意のあるアクセスにさらされる可能性があります。 オンプレミスのデバイスと同様に、企業は Azure ユーザーが正しく判断できるように適切な制御を追加する必要があります。 Microsoft では、サブスクリプション ガバナンスのために、基本的なアクセス制御を提供するコア リソースを特定しました。 コア リソースは以下で構成されます。
 
-- **仮想ネットワーク**は、サブネットのコンテナー オブジェクトです。 必須ではありませんが、多くの場合、アプリケーションを内部の企業リソースに接続するときに使用されます。
-- **ユーザー定義ルート**を使用すると、サブネット内のルート テーブルを操作して、ネットワーク仮想アプライアンス経由でのトラフィックの送信、またはピアリングした仮想ネットワーク上のリモート ゲートウェイへのトラフィックの送信を行うことができます。
-- **仮想ネットワーク ピアリング**では、Azure の 2 つ以上の仮想ネットワークをシームレスに接続し、より複雑なハブとスポークの設計または共有サービス ネットワークを作成できます。
-- **サービス エンドポイント。** かつて、PaaS サービスはさまざまな方法に依存して、仮想ネットワークからそれらのリソースへのアクセスを保護していました。 サービス エンドポイントを使用すると、接続したエンドポイント**のみ**からの有効な PaaS サービスに対するアクセスを保護することができ、全体のセキュリティが向上します。
-- **セキュリティ グループ**は広範な規則のセットであり、これを使用すると、Azure リソースに対するインバウンドおよびアウトバウンド トラフィックを許可または拒否できるようになります。 [セキュリティ グループ](/azure/virtual-network/security-overview)は、**サービス タグ** (Azure Key Vault、Azure SQL Database など一般的な Azure サービスを定義) と**アプリケーション セキュリティ グループ** (Web サーバーやアプリ サーバーなどのアプリケーション構造を定義) を使用して拡張できるセキュリティ規則で構成されます。
+- **仮想ネットワーク** は、サブネットのコンテナー オブジェクトです。 必須ではありませんが、多くの場合、アプリケーションを内部の企業リソースに接続するときに使用されます。
+- **ユーザー定義ルート** を使用すると、サブネット内のルート テーブルを操作して、ネットワーク仮想アプライアンス経由でのトラフィックの送信、またはピアリングした仮想ネットワーク上のリモート ゲートウェイへのトラフィックの送信を行うことができます。
+- **仮想ネットワーク ピアリング** では、Azure の 2 つ以上の仮想ネットワークをシームレスに接続し、より複雑なハブとスポークの設計または共有サービス ネットワークを作成できます。
+- **サービス エンドポイント。** かつて、PaaS サービスはさまざまな方法に依存して、仮想ネットワークからそれらのリソースへのアクセスを保護していました。 サービス エンドポイントを使用すると、接続したエンドポイント **のみ** からの有効な PaaS サービスに対するアクセスを保護することができ、全体のセキュリティが向上します。
+- **セキュリティ グループ** は広範な規則のセットであり、これを使用すると、Azure リソースに対するインバウンドおよびアウトバウンド トラフィックを許可または拒否できるようになります。 [セキュリティ グループ](/azure/virtual-network/security-overview)は、 **サービス タグ** (Azure Key Vault、Azure SQL Database など一般的な Azure サービスを定義) と **アプリケーション セキュリティ グループ** (Web サーバーやアプリ サーバーなどのアプリケーション構造を定義) を使用して拡張できるセキュリティ規則で構成されます。
 
 > [!TIP]
 > ネットワーク セキュリティ グループでサービス タグとアプリケーション セキュリティ グループを使用して、以下のことを行います。

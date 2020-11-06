@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c178c8814238829ef3904917e47c7990170f0bb1
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 114c366cd01ae28a60e9d9a7fa25f1cfe9f83b72
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848212"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024540"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -47,19 +47,19 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
 1. Azure portal で、 **[ポリシー]** 、 **[割り当て]** 、 **[イニシアチブの割り当て]** の順に移動します。
 
-    ![ポータルのポリシー インターフェイスのスクリーン ショット](./media/onboarding-at-scale1.png)
+    ![[割り当て] オプションと [イニシアチブの割り当て] オプションが強調表示された、ポータルのポリシー インターフェイスのスクリーンショット。](./media/onboarding-at-scale1.png)
 
 2. **[ポリシーの割り当て]** ページで、省略記号 (…) を選択した後、管理グループまたはサブスクリプションを選択して、 **[スコープ]** を設定します。 任意でリソース グループを選択します。 次に、 **[スコープ]** ページの下部にある **[選択]** を選択します。 スコープによって、ポリシーの割り当て先のリソースまたはリソース グループが決まります。
 
-3. **[ポリシー定義]** の横にある省略記号 **[...]** を選択して、使用可能な定義の一覧を開きます。 イニシアティブ定義をフィルター処理するには、 **[検索]** ボックスに「**Azure Monitor**」と入力します。
+3. **[ポリシー定義]** の横にある省略記号 **[...]** を選択して、使用可能な定義の一覧を開きます。 イニシアティブ定義をフィルター処理するには、 **[検索]** ボックスに「 **Azure Monitor** 」と入力します。
 
-    ![ポータルのポリシー インターフェイスのスクリーン ショット](./media/onboarding-at-scale2.png)
+    ![イニシアチブ定義に対する Azure Monitor for VMs の有効化のスクリーンショット。](./media/onboarding-at-scale2.png)
 
 4. **[割り当て名]** には選択したポリシー名が自動的に設定されますが、これを変更することはできません。 また、省略可能な説明を追加して、このポリシーの割り当ての詳細情報を提供することもできます。 **[割り当て担当者]** フィールドは、サインイン ユーザーに基づいて自動的に入力されます。 このフィールドは省略可能であり、カスタム値がサポートされています。
 
 5. このポリシーについて、関連付ける Log Analytics エージェントの **[Log Analytics ワークスペース]** を選択します。
 
-    ![ポータルのポリシー インターフェイスのスクリーン ショット](./media/onboarding-at-scale3.png)
+    ![[Log Analytics ワークスペース] オプションのスクリーンショット。](./media/onboarding-at-scale3.png)
 
 6. **[マネージド ID の場所]** チェック ボックスを選択します。 このポリシーの種類が [`DeployIfNotExists`](/azure/governance/policy/concepts/effects#deployifnotexists) である場合、このポリシーをデプロイするにはマネージド ID が必要になります。 ポータルでは、チェック ボックスの選択で指示されたとおりにアカウントが作成されます。
 
@@ -82,9 +82,9 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
 ### <a name="update-management"></a>更新管理
 
-Update Management、Change Tracking、および Inventory ソリューションには、Log Analytics ワークスペースと Automation アカウントの両方が必要です。 これらのリソースが正しく構成されるように、Automation アカウントを使用してオンボードすることをお勧めします。 詳しくは、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](/azure/automation/automation-onboard-solutions-from-automation-account)」をご覧ください。
+Update Management、Change Tracking、および Inventory ソリューションには、Log Analytics ワークスペースと Automation アカウントの両方が必要です。 これらのリソースが正しく構成されるように、Automation アカウントを使用してオンボードすることをお勧めします。 詳しくは、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](/azure/automation/change-tracking/manage-change-tracking)」をご覧ください。
 
-すべてのサーバーに対して Update Management ソリューションを有効にすることをお勧めします。 Azure VM とオンプレミスのサーバーでは Update Management が無料です。 Automation アカウントから Update Management を有効にした場合、ワークスペース内に[スコープ構成](/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration)が作成されます。 Update Management サービスの対象マシンを含むように、スコープを手動で更新します。
+すべてのサーバーに対して Update Management ソリューションを有効にすることをお勧めします。 Azure VM とオンプレミスのサーバーでは Update Management が無料です。 Automation アカウントから Update Management を有効にした場合、ワークスペース内に[スコープ構成](/azure/automation/change-tracking/manage-change-tracking)が作成されます。 Update Management サービスの対象マシンを含むように、スコープを手動で更新します。
 
 既存のサーバーと今後のサーバーを対象にするには、スコープ構成を削除する必要があります。 これを行うには、Azure portal で Automation アカウントを表示します。 **[Update Management]**  >  **[コンピューターの管理]**  >  **[使用可能なマシンと今後のマシンすべてで有効にします]** を選択します。 この設定によって、ワークスペースに接続されているすべての Azure VM で Update Management を使用できます。
 
@@ -92,7 +92,7 @@ Update Management、Change Tracking、および Inventory ソリューション�
 
 ### <a name="change-tracking-and-inventory-solutions"></a>Change Tracking と Inventory のソリューション
 
-Change Tracking と Inventory のソリューションをオンボードするには、Update Management の場合と同じ手順に従います。 Automation アカウントからこれらのソリューションをオンボードする方法の詳細については、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](/azure/automation/automation-onboard-solutions-from-automation-account)」をご覧ください。
+Change Tracking と Inventory のソリューションをオンボードするには、Update Management の場合と同じ手順に従います。 Automation アカウントからこれらのソリューションをオンボードする方法の詳細については、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](/azure/automation/change-tracking/manage-change-tracking)」をご覧ください。
 
 Change Tracking ソリューションは、Azure VM では無料で、オンプレミスのサーバーでは 1 か月あたりノードごとに 6 ドルかかります。 このコストには、Change Tracking、Inventory、Desired State Configuration が含まれます。 特定のオンプレミス サーバーのみを登録する場合は、それらのサーバーをオプトインできます。 すべての運用サーバーをオンボードすることをお勧めします。
 
@@ -116,7 +116,7 @@ Change Tracking ソリューションは、Azure VM では無料で、オンプ�
 
 1. **[全般]** の下の **[保存された検索]** を選択します。
 
-1. **[フィルター]** ボックスに、「**Change Tracking**」と入力して、保存された検索の一覧をフィルター処理します。 結果内の **[MicrosoftDefaultComputerGroup]** を選択します。
+1. **[フィルター]** ボックスに、「 **Change Tracking** 」と入力して、保存された検索の一覧をフィルター処理します。 結果内の **[MicrosoftDefaultComputerGroup]** を選択します。
 
 1. Change Tracking にオプトインするコンピューターを含めるためにコンピューター名または VMUUID を入力します。
 
@@ -142,7 +142,7 @@ Change Tracking ソリューションは、Azure VM では無料で、オンプ�
 3. **[Activity Log Analytics]** を検索して選択します。
 4. **［作成］** を選択します
 
-前のセクションで作成した、ソリューションが有効になっているワークスペースの**ワークスペース名**を指定する必要があります。
+前のセクションで作成した、ソリューションが有効になっているワークスペースの **ワークスペース名** を指定する必要があります。
 
 ### <a name="azure-log-analytics-agent-health"></a>Azure Log Analytics の Agent Health
 
@@ -155,9 +155,9 @@ Azure Log Analytics の Agent Health ソリューションでは、Windows お�
 3. **[Azure Log Analytics の Agent Health]** を検索して選択します。
 4. **［作成］** を選択します
 
-前のセクションで作成した、ソリューションが有効になっているワークスペースの**ワークスペース名**を指定する必要があります。
+前のセクションで作成した、ソリューションが有効になっているワークスペースの **ワークスペース名** を指定する必要があります。
 
-作成が完了した後、 **[表示]**  >  **[ソリューション]** を選択すると、ワークスペース リソース インスタンスに "**AgentHealthAssessment**" が表示されます。
+作成が完了した後、 **[表示]**  >  **[ソリューション]** を選択すると、ワークスペース リソース インスタンスに " **AgentHealthAssessment** " が表示されます。
 
 ### <a name="antimalware-assessment"></a>マルウェア対策評価
 
@@ -170,9 +170,9 @@ Antimalware Assessment ソリューションは、マルウェアに感染して
 3. **[Antimalware Assessment]** を検索して選択します。
 4. **［作成］** を選択します
 
-前のセクションで作成した、ソリューションが有効になっているワークスペースの**ワークスペース名**を指定する必要があります。
+前のセクションで作成した、ソリューションが有効になっているワークスペースの **ワークスペース名** を指定する必要があります。
 
-作成が完了した後、 **[表示]**  >  **[ソリューション]** を選択すると、ワークスペース リソース インスタンスに "**AntiMalware**" が表示されます。
+作成が完了した後、 **[表示]**  >  **[ソリューション]** を選択すると、ワークスペース リソース インスタンスに " **AntiMalware** " が表示されます。
 
 ### <a name="azure-monitor-for-vms"></a>VM に対する Azure Monitor
 

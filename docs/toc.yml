@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: 作業開始
+  - name: はじめに
     items:
       - name: 概要
         href: get-started/index.md
@@ -81,10 +81,14 @@ items:
             href: strategy/business-outcomes/engagement-outcomes.md
           - name: パフォーマンス成果
             href: strategy/business-outcomes/performance-outcomes.md
+          - name: 持続可能性の成果
+            href: strategy/business-outcomes/sustainability.md
           - name: ビジネス成果テンプレート
             href: strategy/business-outcomes/business-outcome-template.md
           - name: 学習メトリックに合わせて取り組みを調整する
             href: strategy/learning-metrics.md
+          - name: 目標と主要な結果
+            href: strategy/business-outcomes/okr.md
       - name: 業務の妥当性
         items:
           - name: 業務上の正当な理由の構築
@@ -209,7 +213,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: アーキテクチャ
+              - name: Architecture
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md

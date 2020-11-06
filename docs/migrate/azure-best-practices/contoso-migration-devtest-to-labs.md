@@ -7,12 +7,12 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba0d19a7c6dd050e5580c1ef701cc63ed0debda4
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 68941187e45d393ac21e00027a7b54998625597a
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334767"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283367"
 ---
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>Dev/Test 環境を Azure DevTest Labs に移行する
 
@@ -45,7 +45,7 @@ Contoso には、Dev/Test 環境を Azure に移行するときに使用でき�
 <!-- -->
 
 > [!NOTE]
-> Enterprise Agreement を締結している Azure のお客様は、[Azure Dev/Test サブスクリプション プラン](https://azure.microsoft.com/offers/ms-azr-0148p/)からもメリットが得られます。 詳細については、Enterprise Agreement ポータルを使用した Azure Dev/Test サブスクリプションの作成に関するこちらの[ビデオ](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal)をご覧ください。
+> Enterprise Agreement を締結している Azure のお客様は、[Azure Dev/Test サブスクリプション プラン](https://azure.microsoft.com/offers/ms-azr-0148p/)からもメリットが得られます。 詳細については、[EA ポータルを使用した EA Dev/Test サブスクリプションの有効化と作成](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal)に関するビデオを参照してください。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -113,8 +113,8 @@ Contoso は、DevTest Labs を使用して、開発アプリケーションお�
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| **Azure Dev/Test サブスクリプション** | Contoso は、コストが最大 80% 削減される [Azure Dev/Test サブスクリプション](https://azure.microsoft.com/offers/ms-azr-0023p/)を作成します。 <br><br> Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free/)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用する場合、自分が管理者ではないなら、管理者と協力して自分に所有者または共同作成者のアクセス許可を割り当てます。 <br><br> さらに詳細なアクセス許可が必要な場合は、[こちらの記事](/azure/site-recovery/site-recovery-role-based-linked-access-control)をご覧ください。 |
-| **Azure インフラストラクチャ** | [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。 |
+| **Azure Dev/Test サブスクリプション** | Contoso は、コストが最大 80% 削減される [Azure Dev/Test サブスクリプション](https://azure.microsoft.com/offers/ms-azr-0023p/)を作成します。 <br><br> Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free/)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用する場合、自分が管理者ではないなら、管理者と協力して自分に所有者または共同作成者のアクセス許可を割り当てます。 <br><br> より詳細なアクセス許可が必要な場合は、[Azure のロールベースのアクセス制御を使用した Site Recovery のアクセス管理](/azure/site-recovery/site-recovery-role-based-linked-access-control)に関するページを参照してください。 |
+| **Azure インフラストラクチャ** | Contoso が [Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認します。 |
 
 ## <a name="scenario-steps"></a>シナリオのステップ
 

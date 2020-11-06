@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 071e6d8f33ea299dac78136f71f5bbce7badb95d
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: fc9be8cfc1f51e35e0eb2dbb7270c818276c7767
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775226"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283249"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -141,7 +141,7 @@ Contoso では、DMA を使用して評価を実行し、Azure Migrate にデー
 データ ソースで DMA を実行できなかった場合は、次のガイドラインに従ってデータベースを移行しました。
 
 > [!NOTE]
-> 評価フェーズの一環として、Contoso ではさまざまなオープンソース データベースを検出しました。 これらについては、別途、[このガイド](./contoso-migration-oss-db-to-azure.md)に従って移行計画を立てました。
+> 評価フェーズの一環として、Contoso ではさまざまなオープンソース データベースを検出しました。 これとは別に、同社は移行計画のために、「[オープンソース データベースを Azure に移行する](./contoso-migration-oss-db-to-azure.md)」に従いました。
 
 <!-- docutune:casing "custom .NET" -->
 
@@ -200,7 +200,7 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 #### <a name="backups"></a>バックアップ
 
 - geo リストアを使用して、Azure データベースが確実にバックアップされるようにします。 これにより、リージョンで障害が発生した場合に、ペアのリージョンでバックアップを使用できるようになります。
-- **重要:** Azure リソースが削除されないようにするため、[リソース ロック](/azure/azure-resource-manager/management/lock-resources)を保持していることを確認します。 削除したサーバーを復元することはできません。
+- **重要:** Azure リソースが削除されないようにするため、 [リソース ロック](/azure/azure-resource-manager/management/lock-resources)を保持していることを確認します。 削除したサーバーを復元することはできません。
 
 #### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 

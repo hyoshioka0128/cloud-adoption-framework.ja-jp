@@ -3,16 +3,16 @@ title: 変換の取り組みによるビジネス成果
 description: Azure のクラウド導入フレームワークを使用して、クラウド変換に関連するビジネスの成果を理解します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 03/27/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d0c057d690fd5824346e5b7e0188d8d1fe83f8c3
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 88cdc53fcc9fafc42c09a6cec7d509307c4fb73e
+ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884982"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344042"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>変革の取り組みに関連するビジネス成果
 
@@ -30,6 +30,7 @@ ms.locfileid: "88884982"
 - **マーケティング担当者:** 顧客の獲得および維持、評判の確立。
 - **営業担当者:** 販売を加速し、顧客の生涯価値を向上させる。
 - **人事:** 従業員を維持、採用、および強化する。
+- **経営陣のリーダーシップ:** 市場成長の要件と環境の持続可能性のメトリックを満たします。
 
 ## <a name="sample-outcomes-by-category"></a>カテゴリ別のサンプル成果
 
@@ -68,6 +69,12 @@ ms.locfileid: "88884982"
 パフォーマンスと信頼性が前提となっています。 いずれかが低下すると、評判が損なわれ、その状態が長く続く可能性があります。
 
 詳細については、[パフォーマンスの成果に関するページ](./performance-outcomes.md)をご覧ください。
+
+### <a name="sustainability-goals"></a>持続可能性の目標
+
+組織は、環境に関する目標と持続可能性のターゲットについてますます取り組むようになっています。
+
+[持続可能性の目標](./sustainability.md)の詳細について参照してください。
 
 上記のカテゴリに示したビジネス成果はそれぞれ、ビジネスや技術チームのメンバー間で焦点を絞った会話を促進するのに役立ちます。 ただし、会話をこれらの汎用サンプルに限定しないようにしてください。 お客様自身のビジネスの独特のニーズを理解し、それに対応した成果を出すと、クラウド変革の価値が最大限に大きくなります。
 

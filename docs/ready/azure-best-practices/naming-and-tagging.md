@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 18551e264163ebc8342da9c92c7a438fd1163cf9
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 87dfb5ed9a579d85b4ab26b92ad67ad145df8258
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334869"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024625"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
@@ -93,28 +93,29 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 
 ### <a name="networking"></a>ネットワーク
 
-| 資産の種類                       | 名前のプレフィックス |
-|----------------------------------|-------------|
-| 仮想ネットワーク                  | vnet-       |
-| Subnet                           | snet-       |
-| 仮想ネットワーク ピアリング          | peer-       |
-| ネットワーク インターフェイス (NIC)          | nic-        |
-| パブリック IP アドレス                | pip-        |
-| ロード バランサー (内部)         | lbi-        |
-| ロード バランサー (外部)         | lbe-        |
-| ネットワーク セキュリティ グループ (NSG)     | nsg-        |
-| アプリケーション セキュリティ グループ (ASG) | asg-        |
-| ローカル ネットワーク ゲートウェイ            | lgw-        |
-| 仮想ネットワーク ゲートウェイ          | vgw-        |
-| VPN 接続                   | cn-         |
-| ExpressRoute 回線             | erc-        |
-| Application gateway              | agw-        |
-| ルート テーブル                      | route-      |
-| ユーザー定義ルート (UDR)         | udr-        |
-| Traffic Manager プロファイル          | traf-       |
-| フロント ドア                       | fd-         |
-| CDN プロファイル                      | cdnp-       |
-| CDN エンドポイント                     | cdne-       |
+| 資産の種類                            | 名前のプレフィックス |
+|---------------------------------------|-------------|
+| 仮想ネットワーク                       | vnet-       |
+| Subnet                                | snet-       |
+| 仮想ネットワーク ピアリング               | peer-       |
+| ネットワーク インターフェイス (NIC)               | nic-        |
+| パブリック IP アドレス                     | pip-        |
+| ロード バランサー (内部)              | lbi-        |
+| ロード バランサー (外部)              | lbe-        |
+| ネットワーク セキュリティ グループ (NSG)          | nsg-        |
+| アプリケーション セキュリティ グループ (ASG)      | asg-        |
+| ローカル ネットワーク ゲートウェイ                 | lgw-        |
+| 仮想ネットワーク ゲートウェイ               | vgw-        |
+| VPN 接続                        | cn-         |
+| ExpressRoute 回線                  | erc-        |
+| Application gateway                   | agw-        |
+| ルート テーブル                           | route-      |
+| ユーザー定義ルート (UDR)              | udr-        |
+| Traffic Manager プロファイル               | traf-       |
+| フロント ドア                            | fd-         |
+| CDN プロファイル                           | cdnp-       |
+| CDN エンドポイント                          | cdne-       |
+| Web アプリケーション ファイアウォール (WAF) ポリシー | waf         |
 
 ### <a name="compute-and-web"></a>コンピューティングと Web
 
@@ -153,6 +154,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | Azure SQL Data Warehouse       | sqldw-      |
 | Azure Synapse Analytics        | syn-        |
 | SQL Server Stretch Database    | sqlstrdb-   |
+| SQL Managed Instance           | sqlmi-      |
 
 ### <a name="storage"></a>ストレージ
 

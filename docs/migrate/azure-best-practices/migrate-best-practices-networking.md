@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1771e61b884cd53480fdb2d47c2805b502735d86
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: ceb8fcff6417754f27d9d1c9f32469f58f88f4aa
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776076"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283351"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -69,7 +69,7 @@ Azure では、次の機能を備えた仮想ネットワークが提供され�
 - ハブアンドスポーク仮想ネットワークは異なるリソース グループに実装でき、異なるサブスクリプションに実装することさえできます。 異なるサブスクリプションに属する仮想ネットワークをピアリングする場合、サブスクリプションを同じまたは異なる Azure Active Directory (Azure AD) テナントに関連付けることができます。 これにより、各ワークロードを分散管理しながら、ハブ ネットワークで維持されているサービスを共有できます。
 
 ![ハブアンドスポーク トポロジの図](./media/migrate-best-practices-networking/hub-spoke.png)
-"_図 1: ハブアンドスポーク トポロジ。_ "
+" _図 1: ハブアンドスポーク トポロジ。_ "
 
 **詳細情報:**
 
@@ -101,7 +101,7 @@ Azure では、次の機能を備えた仮想ネットワークが提供され�
 **詳細情報:**
 
 - [サブネットの設計](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)について学習する。
-- 架空の会社 (Contoso) が自社のネットワーク インフラストラクチャを移行するために準備した[方法を学習する](/azure/migrate/contoso-migration-infrastructure)。
+- 架空の会社の Contoso が[移行用に自社のネットワーク インフラストラクチャを準備した](/azure/migrate/contoso-migration-infrastructure)方法を学習する。
 
 ## <a name="best-practice-set-up-a-dns-server"></a>ベスト プラクティス:DNS サーバーをセットアップする
 
@@ -117,7 +117,7 @@ Azure では、次の機能を備えた仮想ネットワークが提供され�
 - Azure Resource Manager では、仮想ネットワークとネットワーク インターフェイスに対して DNS サーバーを指定できますが、仮想ネットワークでのみ設定を使用するのがベスト プラクティスです。
 
     ![仮想ネットワークの DNS サーバーのスクリーンショット。](./media/migrate-best-practices-networking/dns2.png)
-    "_図 2:仮想ネットワークの DNS サーバー。_ "
+    " _図 2:仮想ネットワークの DNS サーバー。_ "
 
 **詳細情報:**
 
@@ -136,14 +136,14 @@ Availability Zones を設定する際に注意する必要があるいくつか�
 
     ![Azure リージョン内の Availability Zones の図。](./media/migrate-best-practices-networking/availability-zone.png)
 
-    "_図 3:Availability Zones。_ "
+    " _図 3:Availability Zones。_ "
 
 - コンピューティング、ストレージ、ネットワーク、およびデータ リソースを 1 つのゾーン内に併置し、他のゾーンにレプリケートすることによって、高可用性を計画し、移行アーキテクチャに組み込むことができます。 Availability Zones をサポートしている Azure サービスは、次の 2 つのカテゴリに分類されます。
   - **ゾーン ベース サービス:** リソースは、VM、マネージド ディスク、IP アドレスなどの特定のゾーンに関連付けます。
   - **ゾーン冗長サービス:** リソースは、ゾーン冗長ストレージや Azure SQL Database などのゾーン間で自動的にレプリケートされます。
 - ゾーン ベースのフォールト トレランスを提供するために、インターネットに接続されたワークロードまたはアプリケーション層を備える標準の Azure ロード バランサーをデプロイできます。
 
-    ![標準の Azure ロード バランサーの図](./media/migrate-best-practices-networking/load-balancer.png)"_図 4: ロード バランサー。_ "
+    ![標準の Azure ロード バランサーの図](./media/migrate-best-practices-networking/load-balancer.png)" _図 4: ロード バランサー。_ "
 
 **詳細情報:**
 
@@ -153,7 +153,7 @@ Availability Zones を設定する際に注意する必要があるいくつか�
 
 移行を成功させるには、オンプレミスの企業ネットワークを Azure に接続することが重要です。 これによりハイブリッド クラウド ネットワークと呼ばれる常時接続が作成されて、Azure クラウドから企業ユーザーにサービスが提供されます。 この種のネットワークを作成するには 2 つのオプションがあります。
 
-- **サイト間 VPN**:互換性のあるオンプレミスの VPN デバイスと、仮想ネットワークにデプロイされた Azure VPN ゲートウェイの間に、サイト間接続を確立します。 承認されたオンプレミスのリソースはすべて、仮想ネットワークにアクセスできます。 サイト間通信は、インターネット経由で暗号化されたトンネルを通して送信されます。
+- **サイト間 VPN** :互換性のあるオンプレミスの VPN デバイスと、仮想ネットワークにデプロイされた Azure VPN ゲートウェイの間に、サイト間接続を確立します。 承認されたオンプレミスのリソースはすべて、仮想ネットワークにアクセスできます。 サイト間通信は、インターネット経由で暗号化されたトンネルを通して送信されます。
 - **Azure ExpressRoute:** ExpressRoute パートナーを介して、オンプレミス ネットワークと Azure の間に、Azure ExpressRoute 接続を確立します。 この接続は非公開であり、トラフィックはインターネットを経由しません。
 
 **詳細情報:**
@@ -188,7 +188,7 @@ Availability Zones を設定する際に注意する必要があるいくつか�
 - ボーダー ゲートウェイ プロトコル (BGP) はオプション機能です。 これを Azure ExpressRoute とルートベースの VPN ゲートウェイで使用して、対象のオンプレミス BGP ルートを仮想ネットワークに伝達できます。
 
 ![サイト間 VPN の図](./media/migrate-best-practices-networking/vpn.png)
-"_図 5: サイト間 VPN。_ "
+" _図 5: サイト間 VPN。_ "
 
 **詳細情報:**
 
@@ -252,7 +252,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
 - オフィスは WAN で接続されています。WAN は、自社のバックボーン ネットワークでも、サービス プロバイダーの IP VPN でもかまいません。
 - また ExpressRoute 回線が 2 つ存在します。1 つは `West US` に、もう 1 つは `East US` にあり、それらも WAN に接続されています。 オフィスから Microsoft のネットワークには、明らかに 2 とおりの接続経路があります。
 
-**問題**:
+**問題** :
 
 ここで、`West US` と `East US` の両方に Azure のデプロイ (Azure App Service など) があるとします。
 
@@ -264,7 +264,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
   - WAN ネットワークでは、両方のプレフィックスが `West US` より `East US` に近いものと見なすことができるため、両方のオフィスのユーザーが `East US` の ExpressRoute 回線にルーティングされます。 これにより、ロサンゼルス オフィスのユーザーのエクスペリエンスが悪くなります。
 
 ![間違った回線を経由するルート パスが設定された VPN の図](./media/migrate-best-practices-networking/bgp1.png)
-"_図 6: BGP コミュニティの最適化されていない接続。_ "
+" _図 6: BGP コミュニティの最適化されていない接続。_ "
 
 **解決方法:**
 
@@ -277,7 +277,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
 - この構成により、Microsoft に対して両方のパスを使用できる場合、ロサンゼルスのユーザーは西部の回線を使用して `West US` リージョンに接続し、ニューヨークのユーザーは東部の回線を使用して `East US` リージョンに接続します。
 
 ![正しい回線を経由するルート パスが設定された VPN の図](./media/migrate-best-practices-networking/bgp2.png)
-"_図 7: BGP コミュニティの最適化された接続。_ "
+" _図 7: BGP コミュニティの最適化された接続。_ "
 
 **詳細情報:**
 
@@ -309,7 +309,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 2 つのセキュリティ境界がある企業ネットワークにおける単一のサブネット境界ネットワークの例を次に示します。
 
 ![Azure Virtual Network 境界ネットワークのデプロイの図。](./media/migrate-best-practices-networking/perimeter.png)
-"_図 8: 境界ネットワークのデプロイ。_ "
+" _図 8: 境界ネットワークのデプロイ。_ "
 
 **詳細情報:**
 
@@ -343,13 +343,13 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 - サービス タグに関連付けられているアドレス プレフィックスの管理は Microsoft が行い、アドレスが変化するとサービス タグは自動的に更新されます。
 - 独自のサービス タグを作成したり、タグに含まれる IP アドレスを指定したりすることはできません。
 
-サービス タグを使用すると、Azure サービスのグループに規則を割り当てるときの手作業がなくなります。 たとえば、Web サーバーが含まれるサブネットに Azure SQL Database へのアクセスを許可する場合は、ポート 1433 に対するアウトバウンド規則を作成して、**Sql** サービス タグを使用できます。
+サービス タグを使用すると、Azure サービスのグループに規則を割り当てるときの手作業がなくなります。 たとえば、Web サーバーが含まれるサブネットに Azure SQL Database へのアクセスを許可する場合は、ポート 1433 に対するアウトバウンド規則を作成して、 **Sql** サービス タグを使用できます。
 
 - この **Sql** タグは、Azure SQL Database サービスおよび Azure SQL Data Warehouse サービスのアドレス プレフィックスを表します。
 - 値として **Sql** を指定した場合、SQL へのトラフィックが許可または拒否されます。
 - 特定のリージョンの **Sql** へのアクセスのみを許可する場合は、そのリージョンを指定することができます。 たとえば、米国東部リージョンの Azure SQL Database へのアクセスのみを許可する場合は、サービス タグに **Sql.EastUS** と指定できます。
 - タグはサービスだけを表し、サービスの特定のインスタンスは表しません。 たとえば、タグは Azure SQL Database サービスを表しますが、特定の SQL データベースやサーバーは表しません。
-- このタグで表されるすべてのアドレス プレフィックスは、**Internet** タグでも表されます。
+- このタグで表されるすべてのアドレス プレフィックスは、 **Internet** タグでも表されます。
 
 **詳細情報:**
 
@@ -367,7 +367,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 **例:**
 
 ![アプリケーション セキュリティ グループの図](./media/migrate-best-practices-networking/asg.png)
-"_図 9: アプリケーション セキュリティ グループの例。_ "
+" _図 9: アプリケーション セキュリティ グループの例。_ "
 
 | ネットワーク インターフェイス | アプリケーション セキュリティ グループ |
 | --- | --- |
@@ -399,7 +399,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 - 対象の仮想ネットワークでサービス エンドポイントを有効にした後は、Azure サービス リソースに仮想ネットワーク規則を追加することで、このサービス リソースをセキュリティで保護できます。 こうして、リソースへのパブリック インターネット アクセスを完全に排除し、仮想ネットワークからのトラフィックのみを許可することにより、セキュリティが強化されます。
 
 ![サービス エンドポイントの図。](./media/migrate-best-practices-networking/endpoint.png)
-"_図 10: サービス エンドポイント。_ "
+" _図 10: サービス エンドポイント。_ "
 
 **詳細情報:**
 
@@ -431,7 +431,7 @@ Azure には、Azure Firewall、Web Application Firewall、Network Watcher な�
 Azure Firewall は、お使いの仮想ネットワーク リソースを保護するのに役立つ、クラウドベースのマネージド ネットワーク セキュリティ サービスです。 これは、組み込みの高可用性とクラウドによる無制限のスケーラビリティを備えた、完全にステートフルなマネージド ファイアウォールです。
 
 ![Azure Firewall の図。](./media/migrate-best-practices-networking/firewall.png)
-"_図 11: Azure Firewall。_ "
+" _図 11: Azure Firewall。_ "
 
 このサービスをデプロイする場合は、次のいくつかの点に注意してください。
 
@@ -473,7 +473,7 @@ WAF についての追加の注意事項を次に示します。
 Azure Network Watcher には、Azure 仮想ネットワーク内のリソースと通信を監視するためのツールが用意されています。 たとえば、VM とエンドポイント (別の VM や FQDN など) との間の通信を監視できます。 また、仮想ネットワーク内のリソースやリソースの関係を表示したり、ネットワーク トラフィックの問題を診断したりすることもできます。
 
 ![Network Watcher のスクリーンショット。](./media/migrate-best-practices-networking/network-watcher.png)
-"_図 12: Network Watcher。_ "
+" _図 12: Network Watcher。_ "
 
 追加の詳細情報を以下にいくつか示します。
 
