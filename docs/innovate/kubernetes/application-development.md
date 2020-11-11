@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5ebf8106cee793e674070e88c8c4f36e77858079
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 78ee8c9daae963c12b3c88e499e21b38e01142bb
+ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604237"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94333602"
 ---
 <!-- cSpell:ignore autoscaler Istio Linkerd -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "89604237"
 > | **開発環境を準備する。** コンテナーの作成と開発ワークフローの設定に必要なツールを使用して、環境を構成します。 | [Visual Studio Code での Docker の操作](https://code.visualstudio.com/docs/azure/docker) <br> [Visual Studio Code での Kubernetes の操作](https://code.visualstudio.com/docs/azure/kubernetes) <br> [Azure Dev Spaces の概要](/azure/dev-spaces/about) |
 > | **アプリケーションをコンテナー化する。** アプリケーション スキャフォールディング、内部ループのワークフロー、アプリケーション管理フレームワーク、CI/CD パイプライン、ログの集計、監視、アプリケーション メトリックなど、エンドツーエンドの Kubernetes 開発エクスペリエンスについてよく理解します。 | [Docker と Kubernetes でアプリケーションをコンテナーに入れる (電子書籍)](https://azure.microsoft.com/resources/containerize-your-apps-with-docker-and-kubernetes) <br> [Azure でのエンドツーエンドの Kubernetes 開発エクスペリエンス (ウェビナー)](https://info.microsoft.com/AU-AzureApp-WBNR-FY20-11Nov-12-ContainerizeYourApplicationswithKubernetesonAzure-SRDEM10557_LP02OnDemandRegistration-ForminBody.html) |
 > | **一般的な Kubernetes シナリオを確認する。** Kubernetes はマイクロサービスを提供するためのプラットフォームと見なされることが多いですが、はるかに広範なプラットフォームになりつつあります。 バッチ分析やワークフローなどの一般的な Kubernetes シナリオについては、こちらのビデオをご覧ください。    | [Kubernetes を使用する一般的なシナリオ (ビデオ)](https://www.youtube.com/watch?v=zd8vYhrFXp4&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-> | **Kubernetes 用にアプリケーションを準備する。** Kubernetes 用にアプリケーションのファイル システム レイアウトを準備し、週単位または日単位のリリース用に整理します。 Kubernetes のデプロイ プロセスによって、信頼性のあるゼロダウンタイムのアップグレードがどのように実現されるか理解します。 | [Kubernetes アプリケーションを成功させるためのプロジェクトの設計とレイアウト (ウェビナー)](https://info.microsoft.com/ww-OnDemandRegistration-successful-kubernetes-applications-webinar.html) <br> [Kubernetes デプロイのしくみ (ビデオ)](https://www.youtube.com/watch?v=mNK14yXIZF4&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=3) <br> [AKS ワークショップの詳細](https://aka.ms/learn/aksworkshop) |
+> | **Kubernetes 用にアプリケーションを準備する。** Kubernetes 用にアプリケーションのファイル システム レイアウトを準備し、週単位または日単位のリリース用に整理します。 Kubernetes のデプロイ プロセスによって、信頼性のあるゼロダウンタイムのアップグレードがどのように実現されるか理解します。 | [Kubernetes アプリケーションを成功させるためのプロジェクトの設計とレイアウト (ウェビナー)](https://info.microsoft.com/ww-OnDemandRegistration-successful-kubernetes-applications-webinar.html) <br> [Kubernetes デプロイのしくみ (ビデオ)](https://www.youtube.com/watch?v=mNK14yXIZF4&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=3) <br> [AKS ワークショップの詳細](/learn/modules/aks-workshop/) |
 > | **アプリケーション ストレージを管理する。** 適切なストレージ オプションを提供できるように、パフォーマンスのニーズとポッドのアクセス方法を理解します。 接続されたストレージをバックアップし、その復元プロセスをテストする方法を計画する必要もあります。 | [Kubernetes のステートフル アプリケーションの基本 (ビデオ)](https://www.youtube.com/watch?v=GieXzb91I40&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=9) <br> [Docker アプリケーションの状態とデータ](/dotnet/architecture/microservices/architect-microservice-container-applications/docker-application-state-data) <br> [Azure Kubernetes Service のストレージ オプション](/azure/aks/operator-best-practices-storage) |
 > | **アプリケーション シークレットを管理する。** アプリケーション コードに資格情報を保存しないでください。 キーと資格情報を保存および取得するには、キー コンテナーを使用する必要があります。  | [Kubernetes と構成管理のしくみ (ビデオ)](https://www.youtube.com/watch?v=vRcQOZLnKUk&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=11) <br> [Kubernetes でのシークレット管理について (ビデオ)](https://www.youtube.com/watch?v=KmhM33j5WYk&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=10) <br> [Kubernetes での Azure Key Vault の使用](https://github.com/azure/kubernetes-keyvault-flexvol) <br> [Azure AD ポッド ID を使用した Azure リソースの認証とアクセス](https://github.com/azure/aad-pod-identity) |
 

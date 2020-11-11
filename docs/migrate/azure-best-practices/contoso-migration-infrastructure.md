@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3f531866d23bf684a7127df0bf8777c0d23add59
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: d239d3bab6e2c799f7b896c4a9f38584d75bb783
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283420"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432739"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -524,7 +524,7 @@ _図 21:ペア リージョン内のハブ アンド スポーク モデル_
 | `IB-TrustZone` | `10.250.1.0/24` | 251 |
 | `OB-UntrustZone` | `10.250.2.0/24` | 251 |
 | `OB-TrustZone` | `10.250.3.0/24` | 251 |
-| `GatewaySubnet` | `10.250.2.0/24` | 251 |
+| `GatewaySubnet` | `10.250.10.0/24` | 251 |
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>`Central US` の運用ネットワーク (`VNET-PROD-CUS`) のサブネット
 

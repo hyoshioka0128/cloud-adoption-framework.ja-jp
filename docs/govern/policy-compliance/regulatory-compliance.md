@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e749ea3b5a1b70e0cf4cbe497ded83b857200d1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d6f5aa596b1012732669224a03472c40e07d347d
+ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879627"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94333578"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>規制コンプライアンスの概要
 
-これは規制コンプライアンスについての入門記事であり、したがってコンプライアンス戦略の実装については触れられていません。 [Azure のコンプライアンス認証](https://aka.ms/allcompliance)の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trust-center) をご覧ください。 さらに、Azure の特定のお客様は、[Microsoft Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
+これは規制コンプライアンスについての入門記事であり、したがってコンプライアンス戦略の実装については触れられていません。 [Azure のコンプライアンス認証](/microsoft-365/compliance/offering-home)の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trust-center) をご覧ください。 さらに、Azure の特定のお客様は、[Microsoft Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
 
 規制コンプライアンスとは、地域の行政機関によって施行される法律、または自主的に採択された業界標準で要求されている規則に企業が従うことを保証するための規範とプロセスのことです。 IT 規制コンプライアンスの場合、ユーザーやプロセスが企業システムを監視し、これらの準拠法、規制、標準によって確立されたポリシーや手順への違反を検出して防ぎます。 これはさらに、幅広い監視と強制のプロセスに適用されます。 業界や地域によっては、長くて複雑なプロセスになることがあります。
 
