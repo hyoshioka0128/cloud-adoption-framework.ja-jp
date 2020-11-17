@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 543a119bb6f89db76bf1fb68197721a3efe5b0fc
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: ded26770595abe0d416f55923f59a70a8568bff7
+ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283028"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94378887"
 ---
 # <a name="transition-existing-azure-environments-to-enterprise-scale"></a>既存の Azure 環境をエンタープライズ規模に移行する
 
@@ -34,7 +34,7 @@ Azure の一部のリソースは作成後に移動できます。スコープ�
 
 ## <a name="subscription-move"></a>サブスクリプションの移動
 
-サブスクリプションを移動する一般的なユースケースは、主に 1) 管理グループにサブスクリプションを整理するためと、2) 新しい Azure Active Directory テナントにサブスクリプションを転送するためです。 新しいテナントへの移動は主に[課金所有権を譲渡](https://docs.microsoft.com/azure/cost-management-billing/manage/billing-subscription-transfer)するためであるので、このセクションでは管理グループへのサブスクリプションの移動に焦点を当てます。
+サブスクリプションを移動する一般的なユース ケースは、サブスクリプションを管理グループに整理することと、サブスクリプションを新しい Azure Active Directory テナントに移転することです。 エンタープライズ規模でのサブスクリプションの移動では、サブスクリプションを管理グループに移動することに重点が置かれます。 サブスクリプションを新しいテナントに移動するのは、主に[課金所有権を移転する](https://docs.microsoft.com/azure/cost-management-billing/manage/billing-subscription-transfer)ためです。 
 
 ### <a name="rbac-requirements"></a>RBAC の要件
 

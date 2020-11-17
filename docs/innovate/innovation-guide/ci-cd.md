@@ -1,20 +1,20 @@
 ---
 title: Azure イノベーション:導入の強化
 description: 開発者チームが生産性を高めると共に、セキュリティで保護されたグローバル コラボレーションを促進し、Azure でイノベーションを拡大する障壁を取り除くことができます。
-author: absheik
-ms.author: absheik
+author: BrianBlanchard
+ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 98d5647062e440abbc54da1fc20d99640c9e63a5
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 9faf59eff7bba1a8c82abbfc263fa160aa593086
+ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604321"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94378870"
 ---
 # <a name="empower-adoption"></a>導入の強化
 
@@ -95,6 +95,7 @@ DevOps プロジェクトを作成するには:
 
 ### <a name="learn-more"></a>詳細情報
 
+- [GitHub で始めるオープンソース](https://azure.microsoft.com/en-in/products/github/)
 - [Azure のオープンソース](https://azure.microsoft.com/overview/choose-azure-opensource)
 - [Microsoft Teams](/MicrosoftTeams/teams-overview)
 

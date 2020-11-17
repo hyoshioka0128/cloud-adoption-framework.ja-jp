@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: c23bfed62f42e5f6a6d811f0c962d1ace846665b
-ms.sourcegitcommit: c8979feb0efeb54dcef7a0b5e4084ae37016020a
+ms.openlocfilehash: 276556467a2741cfb12d2c79049c33b31e5a421f
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93066610"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432705"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン アーキテクチャ
 
@@ -33,7 +33,7 @@ Azure ランディング ゾーンは、スケール、セキュリティ、ガ�
 
 ![ランディング ゾーンの設計を示す図。](./media/lz-design.png)
 
-" _図 1:ランディング ゾーンの設計。_
+"_図 1:ランディング ゾーンの設計。_
 
 ## <a name="high-level-architecture"></a>高レベル アーキテクチャ
 
@@ -41,11 +41,11 @@ Azure ランディング ゾーンは、スケール、セキュリティ、ガ�
 
 [![Azure Virtual WAN ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャを示す図。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
-" _図 2:Azure Virtual WAN ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ。_ "
+"_図 2:Azure Virtual WAN ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ。接続サブスクリプションは VWAN ハブを使用することに注意してください。_
 
 [![クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャを示す図。](./media/ns-arch-cust-inline.png)](./media/ns-arch-cust-expanded.png#lightbox)
 
-" _図 3:従来の Azure ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ。_ "
+"_図 3:従来の Azure ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ。接続サブスクリプションはハブ VNet を使用することに注意してください。_
 
 エンタープライズ規模のアーキテクチャ図 ([Virtual WAN](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) ネットワーク トポロジに基づくもの、または[ハブおよびスポーク](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf)のアーキテクチャを基にした従来の Azure ネットワーク トポロジに基づくもの) を含む PDF ファイルをダウンロードします。
 

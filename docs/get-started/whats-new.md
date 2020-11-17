@@ -3,25 +3,51 @@ title: 新機能
 description: Azure 向けの Microsoft クラウド導入フレームワークの最新情報について取り上げます。
 author: JanetCThomas
 ms.author: janet
-ms.date: 08/25/2020
+ms.date: 10/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a8f3afe5e08e415fc4fb08e1036dd559a66747ba
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 8303e9e10f96360f5db48d9248d518c6d397802d
+ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775583"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344059"
 ---
-<!-- docutune:casing "internal Microsoft teams" OneMigrate -->
-<!-- cSpell:ignore MSPs Teradata Netezza Exadata mlops -->
+<!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークの最新情報
 
 クラウド導入フレームワークに加えられた最近の変更の一覧を次に示します。
 
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームと協力して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携してクラウド導入フレームワークを構築することをお勧めします。
+
+## <a name="october-2020"></a>2020 年 10 月
+
+今月の更新には、クラウド導入フレームワーク全体の段階的な改善と Web アセットのサポートが含まれます。
+
+Microsoft は、クラウド導入フレームワークの適用を促進する Microsoft Learn モジュールを構築することに注力し、最大限の投資をしてきました。 今月、以下に示すモジュールをリリースしました。 作業の開始モジュールでは、業界に合わせた最初のガイダンスが提供されることにご注意ください。ここでは、小売の顧客 (Tailwind Traders) が、次のすべての主要な手法モジュールについて説明します。
+
+| モジュール | 説明 |
+|---|---|
+| [概要モジュール](/learn/modules/microsoft-cloud-adoption-framework-for-azure/) | フレームワークに関するエントリレベルの概要。 |
+| [作業の開始モジュール](/learn/modules/cloud-adoption-framework-getting-started/) | 作業の開始の概要では、適切な手法の適用を促進し、特定の阻害要因を克服する方法について説明します。 |
+| [Azure ランディング ゾーン](/learn/modules/cloud-adoption-framework-ready/) | クラウド環境を構築する前に、運用要件を把握し、作業を開始する最適な Azure ランディング ゾーン製品を選択します。 |
+| [エンタープライズ規模のアーキテクチャを作成する](/learn/paths/enterprise-scale-architecture/) | 一連のエンタープライズ規模の設計原則、参照アーキテクチャ、参照実装に従って、規模に応じたランディング ゾーンを作成します。 4 つのモジュールで、成功のための単一のラーニング パスを作成する方法を学びます。 |
+
+また、ビジネスの成果を広げることにより、さまざまな一般的なビジネスの動機と、COVID 後の市場で発展し続けるアプローチを共有できるようになりました。
+
+| [アーティクル] | 説明 |
+|---|---|
+| [持続可能性の成果の例](../strategy/business-outcomes/sustainability.md) | クラウド コンピューティングが、二酸化炭素排出量の削減、資源の効率的な使用、環境フットプリントの削減にどのように役立つかについて説明します。 |
+| [目標と成果指標 (OKR) を使用してビジネスの成果を測定する](../strategy/business-outcomes/okr.md) | OKR を使用してビジネスの成果を測定する方法について説明します。 |
+| [AppDynamics を使用してビジネス成果を測定する](../digital-estate/app-dynamics.md) | アプリケーションのパフォーマンスおよびユーザー エクスペリエンスを把握することは、ビジネスの成果を測定するための鍵です。 AppDynamics が、ほとんどのユース ケースに対してビジネスの分析情報を提供する方法をご確認ください。 |
+| [コスト管理の更新:スポット VM](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs) | 非運用環境でスポット VM を使用することは、これらの既存の環境でのコストをさらに削減するために急速に普及してきている手法です。 「私は既に作業環境があります。 エンタープライズ規模の設計原則を適用するにはどうすればよいですか。」 エンタープライズ規模への移行に関する新しい記事が役立ちます。 |
+
+| [アーティクル] | 説明 |
+|---|---|
+| [既存の Azure 環境をエンタープライズ規模に移行する](../ready/enterprise-scale/transition.md) | この記事は、組織が、既存の Azure 環境に基づいてエンタープライズ規模への移行を適切に進めることができるように支援します。 |
+| [クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン アーキテクチャ](../ready/enterprise-scale/architecture.md) | この記事は、ハブ アンド スポーク ネットワーク トポロジに基づいた、エンタープライズ規模のランディング ゾーン アーキテクチャの概要図を含むように更新されました。また、エンタープライズ規模のランディング ゾーン アーキテクチャの重要な設計領域について説明し、相互参照を行うように更新されます。 |
 
 ## <a name="august-25-2020"></a>2020 年 8 月 25 日
 
@@ -88,7 +114,7 @@ Microsoft クラウド導入フレームワークに AI ソリューションと
 
 ## <a name="june-15-2020"></a>2020 年 6 月 15 日
 
-クラウド環境を適切に構成することは、多くの場合、クラウドの導入における最初の最も一般的な技術的障害です。 このリリースでは、クラウド環境のデプロイを迅速化するガイダンスに大きな重点が置かれています。 この一般的な障害を克服するために、クラウド導入フレームワークには**Azure ランディング ゾーン**が導入されています。
+クラウド環境を適切に構成することは、多くの場合、クラウドの導入における最初の最も一般的な技術的障害です。 このリリースでは、クラウド環境のデプロイを迅速化するガイダンスに大きな重点が置かれています。 この一般的な障害を克服するために、クラウド導入フレームワークには **Azure ランディング ゾーン** が導入されています。
 
 | [アーティクル] | 説明 |
 |--|--|
@@ -96,7 +122,7 @@ Microsoft クラウド導入フレームワークに AI ソリューションと
 | [Azure ランディング ゾーン:設計領域](../ready/landing-zone/design-areas.md) | すべての Azure ランディング ゾーンでは、8 つの設計領域の共通セットが共有されています。 Azure ランディング ゾーンをデプロイする前に、お客様はこれらの各設計を検討し、重要な決定を行う必要があります。 |
 | [Azure ランディング ゾーン:実装オプション](../ready/landing-zone/implementation-options.md) | クラウド導入計画とクラウド運用モデルに応じて、Azure ランディングゾーンの最適な実装オプションを選択します。 |
 
-既存の CAF ブループリント定義と CAF Terraform モジュールは、Azure ランディング ゾーンの実装の出発点となります。 しかしながら、エンタープライズ規模のクラウド導入計画の需要に対応できる、より高度な実装オプションを必要とされるお客様もいます。 このリリースでは、そのようなニーズに応えるため、Azure ランディング ゾーンの実装オプションに **CAF エンタープライズ規模**が追加されています。 以下では、CAF エンタープライズ規模のアーキテクチャとリファレンス実装の概要を理解するための記事をいくつか示します。
+既存の CAF ブループリント定義と CAF Terraform モジュールは、Azure ランディング ゾーンの実装の出発点となります。 しかしながら、エンタープライズ規模のクラウド導入計画の需要に対応できる、より高度な実装オプションを必要とされるお客様もいます。 このリリースでは、そのようなニーズに応えるため、Azure ランディング ゾーンの実装オプションに **CAF エンタープライズ規模** が追加されています。 以下では、CAF エンタープライズ規模のアーキテクチャとリファレンス実装の概要を理解するための記事をいくつか示します。
 
 | [アーティクル] | 説明 |
 |--|--|

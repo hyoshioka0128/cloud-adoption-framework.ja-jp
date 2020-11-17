@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ae81d4fa9c484ec3d5e06c27deb4a9826ebfea70
-ms.sourcegitcommit: 44fb6deee30fd6ffc80b5d2e66544a50e8405c73
+ms.openlocfilehash: e3876da051b363db5bc674a0b1159c525828fc71
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91492725"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432671"
 ---
 # <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 
@@ -66,12 +66,12 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 | ネットワーク管理 (NetOps)        | プラットフォーム全体のグローバル接続管理:仮想ネットワーク、UDR、NSG、NVA、VPN、Azure ExpressRoute など            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
 | セキュリティ操作 (SecOps)       | Azure 資産と Azure Key Vault の消去ポリシー全体の水平方向のビューを持つセキュリティ管理者ロール | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
 | サブスクリプションの所有者                 | サブスクリプション所有者のロールから派生したサブスクリプション所有者の委任されたロール                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
-| アプリケーションの所有者 (DevOps/AppOps) | リソース グループ レベルでアプリケーションおよび運用チームに付与される共同作成者ロール                                 |                                                                                                                                                                                                                    | `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
+| アプリケーションの所有者 (DevOps/AppOps) | リソース グループ レベルでアプリケーションおよび運用チームに付与される共同作成者ロール                                 | `*`                                                                                                                                                                                                                   | `Microsoft.Authorization/*/write`, `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
 
 - Azure Security Center の Just-In-Time アクセスをすべてのサービスとしてのインフラストラクチャ (IaaS) リソースに使用して、IaaS 仮想マシンへの一時的なユーザー アクセスに対してネットワークレベルの保護を有効にします。
 - Azure リソースに Azure AD のマネージド ID を使用して、ユーザー名とパスワードに基づく認証を回避します。 パブリック クラウド リソースのセキュリティ違反の多くは、コードまたはその他のテキスト ソースに埋め込まれた資格情報の盗難に起因しているため、プログラムによるアクセスにマネージド ID を適用することで、資格情報の盗難のリスクを大幅に減らすことができます。
 - 管理者特権でのアクセス許可を必要とする Automation Runbook に特権 ID を使用します。 重要なセキュリティ境界に違反する自動ワークフローは、同等の特権を持つユーザーと同じツールとポリシーで管理する必要があります。
-- ユーザーを Azure リソース スコープに直接追加しないでください。 このように一元管理がないと、制限されたデータに対する不正アクセスを防ぐために必要な管理が大幅に増加します。
+- ユーザーを Azure リソース スコープに直接追加しないでください。 代わりに、定義済みのロールにユーザーを追加して、それをリソース スコープに割り当てます。 直接ユーザー割り当てでは一元管理が難しくなり、制限されたデータに対する未承認のアクセスを防ぐために必要な管理が大幅に増加します。
 
 ### <a name="plan-for-authentication-inside-a-landing-zone"></a>ランディング ゾーン内の認証の計画
 

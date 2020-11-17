@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9789d598d32647fc772cb0dadf0ed50e12bbfec6
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 8102fbe541a69da1b2e43dd73fd981d67e9e1688
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879083"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432620"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>クラウド ネイティブなセキュリティ ベースライン ポリシー
 
-[セキュリティ ベースライン規範](./index.md)は、[クラウド ガバナンスの 5 つの規範](../governance-disciplines.md)のうちの 1 つです。 この規範は、ネットワーク、デジタル資産、およびデータの保護を含む一般的なセキュリティ トピックに的を絞っています。 [ポリシー レビュー ガイド](../policy-compliance/cloud-policy-review.md)で説明しているように、クラウド導入フレームワークには、それぞれの規範に対応した 3 つのレベルのサンプル ポリシー (クラウド ネイティブ、エンタープライズ、クラウド設計原則準拠) が含まれています。 この記事では、セキュリティ ベースライン規範のためのクラウド ネイティブなサンプル ポリシーについて説明します。
+[セキュリティ ベースライン規範](./index.md)は、[クラウド ガバナンスの 5 つの規範](../governance-disciplines.md)のうちの 1 つです。 この規範は、ネットワーク、デジタル資産、およびデータの保護を含む一般的なセキュリティ トピックに的を絞っています。 この記事では、セキュリティ ベースライン規範のためのクラウドネイティブなサンプル ポリシーについて説明します。
 
 > [!NOTE]
 > Microsoft は、企業ポリシーや IT ポリシーを規定する立場にありません。 この記事は、内部ポリシーのレビューを準備するために役立ちます。 このサンプル ポリシーは、使用を試みる前に、企業ポリシーを基準とした拡張、検証、テストが行われると想定されています。 このサンプル ポリシーの現状のままでの使用はお勧めできません。

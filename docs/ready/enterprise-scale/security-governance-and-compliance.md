@@ -1,5 +1,5 @@
 ---
-title: エンタープライズ規模のセキュリティ ガバナンスとコンプライアンス
+title: エンタープライズ規模のセキュリティ、ガバナンス、コンプライアンス
 description: Azure 向けの Microsoft クラウド導入フレームワークにおけるエンタープライズ規模のセキュリティ、ガバナンス、およびコンプライアンスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,14 +7,14 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0bb3f450e91aa9963fc13b6e90a460321a8a55b4
-ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
+ms.openlocfilehash: 9143a4df4de8e720529f3bf88d835f9e507e245f
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91898223"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432654"
 ---
-# <a name="enterprise-scale-security-governance-and-compliance"></a>エンタープライズ規模のセキュリティ ガバナンスとコンプライアンス
+# <a name="enterprise-scale-security-governance-and-compliance"></a>エンタープライズ規模のセキュリティ、ガバナンス、コンプライアンス
 
 この記事では、暗号化とキー管理の定義、ガバナンスの計画、セキュリティの監視と監査ポリシーの定義、プラットフォーム セキュリティの計画について説明します。 記事の最後に、Azure サービスのエンタープライズ セキュリティの準備状況を評価するためのフレームワークについて説明した表を掲載します。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 87dfb5ed9a579d85b4ab26b92ad67ad145df8258
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 9c1377bfed389d435403f9f72dd6ac4e48ed8ee8
+ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024625"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94378938"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
@@ -226,14 +226,14 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | アプリケーション名          | リソースが関連付けられているアプリケーション、サービス、またはワークロードの名前。                                                                                                                                       | _ApplicationName_ | _{アプリケーション名}_                                               |
 | 承認者名             | このリソースに関連したコストの承認を担当する人物。                                                                                                                                                     | _Approver_        | _{email}_                                                  |
 | 必要な予算/承認された予算  | このアプリケーション、サービス、またはワークロードに割り当てられた金額。                                                                                                                                                          | _BudgetAmount_    | _{\$}_                                                     |
-| 事業単位             | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 小規模な組織では、このタグは 1 つの会社の、または共有された最上位の組織要素を表す可能性があります。 | _BusinessUnit_    | _FINANCE_ 、 _MARKETING_ 、 _{Product Name}_ 、 _CORP_ 、 _SHARED_ |
+| 事業単位             | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 小規模な組織では、このタグは 1 つの会社の、または共有された最上位の組織要素を表す可能性があります。 | _BusinessUnit_    | _FINANCE_、_MARKETING_、 _{Product Name}_ 、_CORP_、_SHARED_ |
 | コスト センター               | このリソースに関連付けられたアカウンティング コスト センター。                                                                                                                                                                | _CostCenter_      | _{number}_                                                 |
-| 障害復旧         | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。                                                                                                                                                       | _DR_              | _Mission-critical_ 、 _Critical_ 、 _Essential_                |
+| 障害復旧         | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。                                                                                                                                                       | _DR_              | _Mission-critical_、_Critical_、_Essential_                |
 | プロジェクトの終了日   | アプリケーション、ワークロード、またはサービスの使用停止がスケジュールされている日付。                                                                                                                                         | _EndDate_         | _{date}_                                                   |
-| 環境               | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                                                                                                                                     | _Env_             | _Prod_ 、 _Dev_ 、 _QA_ 、 _Stage_ 、 _Test_                       |
+| 環境               | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                                                                                                                                     | _Env_             | _Prod_、_Dev_、_QA_、_Stage_、_Test_                       |
 | 所有者名                | このアプリケーション、ワークロード、またはサービスの所有者。                                                                                                                                                                      | _所有者_           | _{email}_                                                  |
 | 要求者名            | このアプリケーションの作成を要求したユーザー。                                                                                                                                                                 | _要求者_       | _{email}_                                                  |
-| サービス クラス             | アプリケーション、ワークロード、またはサービスのサービス レベル アグリーメント レベル。                                                                                                                                              | _ServiceClass_    | _Dev_ 、 _Bronze_ 、 _Silver_ 、 _Gold_                          |
+| サービス クラス             | アプリケーション、ワークロード、またはサービスのサービス レベル アグリーメント レベル。                                                                                                                                              | _ServiceClass_    | _Dev_、_Bronze_、_Silver_、_Gold_                          |
 | プロジェクトの開始日 | アプリケーション、ワークロード、またはサービスが最初にデプロイされた日付。                                                                                                                                                  | _StartDate_       | _{date}_                                                   |
 
 ## <a name="example-names"></a>名前の例
@@ -257,7 +257,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | マネージド ID                | Resource group                        | id-\<App or service name\>                                  | id-appcn-keda-prod-eus-001                                                                         |
 
 > [!NOTE]
-> 上記を含め、このドキュメント内にある名前の例では、3 桁の埋め込み (\<\#\#\#\>) が示されています。 つまり、  mktg-prod- *001*
+> 上記を含め、このドキュメント内にある名前の例では、3 桁の埋め込み (\<\#\#\#\>) が示されています。 つまり、  mktg-prod-*001*
 >
 > 構成管理データベース (CMDB)、IT 資産管理ツール、または従来のアカウンティング ツールで資産が管理されている場合、埋め込みにより、人間が読みやすくなり、並べ替えるのに役立ちます。 デプロイされた資産が IT 資産の大規模なインベントリまたはポートフォリオの一部として一元的に管理されている場合、埋め込みアプローチは、インベントリの名前付けを管理するためにこれらのシステムで使用されるインターフェイスと適合します。
 >
@@ -271,7 +271,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | 仮想ネットワーク              | Resource group  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-shared-eastus2-001 <li> vnet-prod-westus-001 <li> vnet-client-eastus2-001 |
 | Subnet                       | 仮想ネットワーク | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <li> snet-shared-eastus2-001 <li> snet-prod-westus-001 <li> snet-client-eastus2-001 |
-| ネットワーク インターフェイス (NIC)      | Resource group  | nic-\<\#\#\>-\<vm name\>-\<subscription\>\<\#\#\#\>                   | <li> nic-01-dc1-shared-001 <li> nic-02-vmhadoop1-prod-001 <li> nic-02-vmtest1-client-001 |
+| ネットワーク インターフェイス (NIC)      | Resource group  | nic-\<\#\#\>-\<vm name\>-\<subscription\>-\<\#\#\#\>                   | <li> nic-01-dc1-shared-001 <li> nic-02-vmhadoop1-prod-001 <li> nic-02-vmtest1-client-001 |
 | パブリック IP アドレス            | Resource group  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <li> pip-dc1-shared-eastus2-001 <li> pip-hadoop-prod-westus-001 |
 | Load Balancer                | Resource group  | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                     | <li> lb-navigator-prod-001 <li> lb-sharepoint-dev-001 |
 | ネットワーク セキュリティ グループ (NSG) | サブネットまたは NIC   | nsg-\<policy name or app name\>-\<\#\#\#\>                           | <li> nsg-weballow-001 <li> nsg-rdpallow-001 <li> nsg-sqlallow-001 <li> nsg-dnsblocked-001 |
