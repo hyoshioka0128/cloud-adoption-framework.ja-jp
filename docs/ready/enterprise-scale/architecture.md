@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 276556467a2741cfb12d2c79049c33b31e5a421f
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: 44276ffabbae39cd5a75c0ea2de501aefd0c42f0
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432705"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713056"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン アーキテクチャ
 
@@ -37,7 +37,7 @@ Azure ランディング ゾーンは、スケール、セキュリティ、ガ�
 
 ## <a name="high-level-architecture"></a>高レベル アーキテクチャ
 
-エンタープライズ規模のアーキテクチャは、8 つの[重要な設計領域](./design-guidelines.md)にわたる設計上の考慮事項と推奨事項のセットで定義され、2 つのネットワーク トポロジが推奨されています。具体的には、(図2 に示す) Azure Virtual WAN ネットワーク トポロジに基づく、または (図3 に示す) ハブおよびスポークのアーキテクチャを基にした従来の Azure ネットワーク トポロジ に基づくエンタープライズ規模のアーキテクチャです。   
+エンタープライズ規模のアーキテクチャは、8 つの[重要な設計領域](./design-guidelines.md)にわたる設計上の考慮事項と推奨事項のセットで定義され、2 つのネットワーク トポロジが推奨されています。具体的には、(図2 に示す) Azure Virtual WAN ネットワーク トポロジに基づく、または (図3 に示す) ハブおよびスポークのアーキテクチャを基にした従来の Azure ネットワーク トポロジ に基づくエンタープライズ規模のアーキテクチャです。
 
 [![Azure Virtual WAN ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャを示す図。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d239d3bab6e2c799f7b896c4a9f38584d75bb783
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: af6ed897f86978058f83e5c6c6dc600f10fd7072
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432739"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713617"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -52,7 +52,7 @@ Contoso が Azure への移行を実施するには、その前に Azure イン�
 
 ![Contoso のアーキテクチャの図。](./media/contoso-migration-infrastructure/contoso-architecture.png)
 
-" _図 1:Contoso のオンプレミス アーキテクチャ_
+"_図 1:Contoso のオンプレミス アーキテクチャ_
 
 - Contoso は、米国東部のニューヨーク市に 1 つのメイン データセンターを配置しています。
 - Contoso は、米国の地方に 3 つの支店を配置しています。
@@ -81,7 +81,7 @@ Contoso は、[マイクロソフト エンタープライズ契約](https://azu
 
 Azure の料金を支払った後、Contoso は Azure サブスクリプションを管理する方法を決める必要があります。 Contoso は EA を利用しているので、作成できる Azure サブスクリプションの数に制限はありません。 Azure Enterprise Agreement 加入契約では、企業が Azure サービスを構成して使用する方法と、中心となるガバナンス構造が定義されています。
 
-最初の手順として、Contoso は、加入契約のための " _エンタープライズ スキャフォールディング_ " と呼ばれる構造を定義しました。 Contoso は、[Azure エンタープライズ スキャフォールディングのガイダンス](/azure/cloud-adoption-framework/reference/azure-scaffold)を使用して、スキャフォールディングの理解と設計に役立てました。
+最初の手順として、Contoso は、加入契約のための "_エンタープライズ スキャフォールディング_" と呼ばれる構造を定義しました。 Contoso は、[Azure エンタープライズ スキャフォールディングのガイダンス](/azure/cloud-adoption-framework/reference/azure-scaffold)を使用して、スキャフォールディングの理解と設計に役立てました。
 
 ここでは、Contoso は機能的アプローチを使用してサブスクリプションを管理することを決定しました。
 
@@ -92,7 +92,7 @@ Azure の料金を支払った後、Contoso は Azure サブスクリプショ�
 
 ![エンタープライズ階層の図。](./media/contoso-migration-infrastructure/enterprise-structure.png)
 
-" _図 2:エンタープライズ階層_
+"_図 2:エンタープライズ階層_
 
 ### <a name="examine-licensing"></a>ライセンスを調べる
 
@@ -114,7 +114,7 @@ Azure ハイブリッド特典では、コスト効果の高い移行方法が�
 
 ![Azure Reserved Virtual Machine Instances の図。](./media/contoso-migration-infrastructure/reserved-instance.png)
 
-" _図 3:Azure Reserved Virtual Machine Instances_
+"_図 3:Azure Reserved Virtual Machine Instances_
 
 長時間維持する必要がある特定の VM インスタンスに対して予約インスタンスを使用する見返りに、Contoso は割引と優先容量の両方を得ることができます。 [Azure Reserved Virtual Machine Instances](https://azure.microsoft.com/pricing/reserved-vm-instances/) を Azure ハイブリッド特典と組み合わせて使用することで、Contoso は通常の従量課金制料金を最大 82% 節約できます (2018 年 4 月現在)。
 
@@ -136,7 +136,7 @@ Contoso は、Azure サブスクリプションに含まれる Azure AD Free エ
 
    ![Azure AD ディレクトリを作成するための選択項目のスクリーンショット。](./media/contoso-migration-infrastructure/azure-ad-create.png)
 
-   " _図 4:Azure AD Directory の作成_
+   "_図 4:Azure AD Directory の作成_
 
 > [!NOTE]
 > 作成したディレクトリの初期ドメイン名は、`domain-name.onmicrosoft.com` という形式になります。 この名前を変更または削除することはできません。 代わりに、管理者は、登録されたドメイン名を Azure AD に追加する必要があります。
@@ -233,7 +233,7 @@ Contoso は、オンプレミスとクラウドのリソースへのアクセス
 
     ![Azure AD Connect ウィザードの [AD DS に接続] ページを示すスクリーンショット。](./media/contoso-migration-infrastructure/ad-connect-wiz3.png)
 
-    _図 11:Azure AD Connect ウィザード:AD DS に接続_ "
+    _図 11:Azure AD Connect ウィザード:AD DS に接続_"
 
 5. **[構成の準備完了]** で、 **[構成が完了したら、同期プロセスを開始してください]** を選択して直ちに同期を開始します。 その後インストールします。
 
@@ -262,7 +262,7 @@ Contoso の管理者は、オンプレミスから同期した Active Directory 
 1. `ControlCobRG` リソース グループで、 **[アクセス制御 (IAM)]**  >  **[ロールの割り当ての追加]** を選択します。
 2. **[ロールの割り当ての追加]**  >  **[ロール]**  >  **[共同作成者]** で、一覧から `ContosoCobRG` セキュリティ グループを選択します。 グループが **[選択したメンバー]** の一覧に表示されます。
 3. 他のリソース グループ (`ContosoAzureAdmins` を除く) に対して、同じアクセス許可を使用してこれを繰り返します。つまり、そのリソース グループに対応するセキュリティ グループに **共同作成者** のアクセス許可を追加します。
-4. `ContosoAzureAdmins` セキュリティ グループには、 **所有者** ロールを割り当てます。
+4. `ContosoAzureAdmins` セキュリティ グループには、**所有者** ロールを割り当てます。
 
     ![オンプレミスの Azure Active Directory グループを示すスクリーンショット。](./media/contoso-migration-infrastructure/on-premises-ad-groups.png)
 
@@ -439,6 +439,7 @@ Contoso は、ハブ アンド スポーク モデル内で、オンプレミス
   - `VNET-DEV-EUS2`. この仮想ネットワークは、開発プロジェクト用の完全に機能するネットワークを Dev/Test チームに提供します。 運用パイロット領域として動作し、運用インフラストラクチャを利用して機能します。
 
   - `VNET-PROD-EUS2`. Azure IaaS 運用コンポーネントは、このネットワークに配置されます。
+
   各仮想ネットワークは、重複のない独自の一意のアドレス空間を使用します。 Contoso はネットワーク アドレス変換 (NAT) が必要ないようにルーティングを構成する予定です。
 
 - **サブネット:** 各アプリケーション層の各ネットワークにサブネットがあります。 運用ネットワークの各サブネットには、開発用仮想ネットワークに対応するサブネットがあります。 運用ネットワークには、ドメイン コントローラー用のサブネットがあります。

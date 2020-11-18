@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 07/14/2020
-ms.openlocfilehash: 5f1dd3f63adabd18185e9e07fd0046019f220bb7
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1ded8b088d866bcb8d00f14dbe6286266313f63e
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574773"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712325"
 ---
 # <a name="cloud-data-functions"></a>クラウド データ機能
 
@@ -57,7 +57,7 @@ Azure Synapse Analytics を使用すると、IT プロフェッショナルは�
 
 ## <a name="business-analysts"></a>ビジネス アナリスト
 
-このチームは、ダッシュボード、レポート、その他の形式のデータの可視化を構築および利用し、運用に必要な迅速な分析情報を得ます。 多くの場合、基幹業務部門には、特化されたアプリケーションから情報や分析を収集してパッケージ化する専任のビジネス アナリストが存在します。 これらの特化されたアプリには、クレジットカード、リテール バンキング、商業銀行、財務、マーケティング、およびその他の組織向けのものがあります。  
+このチームは、ダッシュボード、レポート、その他の形式のデータの可視化を構築および利用し、運用に必要な迅速な分析情報を得ます。 多くの場合、基幹業務部門には、特化されたアプリケーションから情報や分析を収集してパッケージ化する専任のビジネス アナリストが存在します。 これらの特化されたアプリには、クレジットカード、リテール バンキング、商業銀行、財務、マーケティング、およびその他の組織向けのものがあります。
 
 ビジネス アナリストは、Azure Synapse Analytics を使用することで、データセットに安全にアクセスしたり、Power BI を使用してダッシュボードを構築したりできます。 また、Azure Data Share を通じて組織内外のデータを安全に共有することもできます。
 

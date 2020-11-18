@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0ebab543a39440190d530b6e7e68b441e49ff017
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 6895f8a68b76c378bec14b49896dec8bd0320ca8
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776178"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713821"
 ---
 <!-- cSpell:ignore NVAs VPNs -->
 
@@ -85,7 +85,7 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 ### <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
-これらのアーキテクチャ パターンのいずれかの使用に加えて、エンタープライズ IT グループが大規模なクラウド環境を管理する場合は、「[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)」を参照することを検討してください。 Azure ベースのクラウド インフラストラクチャを設計するとき、**クラウドで 1,000 を超える資産 (アプリ、インフラストラクチャ、またはデータ資産) をホストする**中期的目標 (24 か月以内) がある場合は、CAF エンタープライズ規模のランディング ゾーンによって、ネットワーク、セキュリティ、管理、インフラストラクチャが組み合わされたアプローチが提供されます。
+これらのアーキテクチャ パターンのいずれかの使用に加えて、エンタープライズ IT グループが大規模なクラウド環境を管理する場合は、「[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)」を参照することを検討してください。 Azure ベースのクラウド インフラストラクチャを設計するとき、**クラウドで 1,000 を超える資産 (アプリ、インフラストラクチャ、またはデータ資産) をホストする** 中期的目標 (24 か月以内) がある場合は、CAF エンタープライズ規模のランディング ゾーンによって、ネットワーク、セキュリティ、管理、インフラストラクチャが組み合わされたアプローチが提供されます。
 
 次の条件を満たす組織については、[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)で開始することが適切である場合があります。
 
@@ -98,6 +98,6 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 ネットワーク設計プロセスの一部として、次の記事を参照してください。
 
-- [仮想ネットワークの計画](/azure/virtual-network/virtual-network-vnet-plan-design-arm?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 分離、接続、場所の要件に基づいて仮想ネットワークを計画する方法について説明します。
-- [Azure のネットワーク セキュリティのベスト プラクティス](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 ネットワーク セキュリティの強化に役立つ Azure のベスト プラクティスについて説明します。
-- [Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス](/azure/migrate/migrate-best-practices-networking?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)。 IaaS ベースおよび PaaS ベースのワークロードをサポートするために Azure のネットワークを実装する方法に関する追加のガイダンスを入手します。
+- [仮想ネットワークの計画](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 分離、接続、場所の要件に基づいて仮想ネットワークを計画する方法について説明します。
+- [Azure のネットワーク セキュリティのベスト プラクティス](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 ネットワーク セキュリティの強化に役立つ Azure のベスト プラクティスについて説明します。
+- [Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス](/azure/migrate/migrate-best-practices-networking?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 IaaS ベースおよび PaaS ベースのワークロードをサポートするために Azure のネットワークを実装する方法に関する追加のガイダンスを入手します。

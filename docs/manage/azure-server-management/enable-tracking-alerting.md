@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a8826b82e9ec3aa503e79e0aa5345a3a494a2bef
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7a37a812964bb595e426341d002a0e326d86013e
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567548"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712053"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -39,7 +39,7 @@ hosts ファイルに対してファイル コンテンツの追跡を有効に�
 ![Azure portal の Log Analytics クエリ エディターのスクリーンショット](./media/change-tracking2.png)
 
 このクエリでは、パスに "hosts" という単語が含まれているファイルの内容に対する変更を検索します。 パス パラメーターを変更して、特定のファイルを検索することもできます (例: `FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`)。
-  
+
 クエリから結果が返されたら、 **[新しいアラート ルール]** を選択してアラート ルール エディターを開きます。 このエディターは、Azure portal の Azure Monitor から開くこともできます。
 
 アラート ルール エディターで、クエリを確認し、必要に応じてアラートのロジックを変更します。 この場合、環境に含まれるいずれかのマシンで変更が検出された場合にアラートが生成されるようにします。

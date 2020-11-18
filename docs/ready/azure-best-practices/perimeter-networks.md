@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: e57bcae8f5b7b779544d6000e1fe299bf70eb4d7
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: ae5506d6d09289b2c41cd5ece887b2ec5692c267
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776535"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712852"
 ---
 # <a name="perimeter-networks"></a>境界ネットワーク
 
@@ -36,7 +36,7 @@ ms.locfileid: "90776535"
 > Azure の参照アーキテクチャには、独自の境界ネットワークを実装するために使用できるサンプル テンプレートが含まれています。
 >
 > - [Azure とオンプレミス データセンター間に境界ネットワークを実装する](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
-> - [Azure とインターネット間に境界ネットワークを実装する](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+> - [Azure とインターネット間に境界ネットワークを実装する](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
 通常、中央 IT チームとセキュリティ チームは、境界ネットワークを運用するための要件定義を担当します。
 

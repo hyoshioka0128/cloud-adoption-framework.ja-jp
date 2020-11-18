@@ -7,12 +7,12 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7fd16db11e5fb36179961a9febb719e162aa094d
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 228601766d4c580b73df2e78540833c05ff00924
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602613"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713549"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -30,11 +30,11 @@ Microsoft は 2000 年に Microsoft Operations Manager 2000 で運用管理の�
 
 ## <a name="the-story-of-azure-monitor"></a>Azure Monitor のストーリー
 
-2010 年に Azure がリリースされた時点では、クラウド サービスの監視は Azure Diagnostics エージェントによって提供されていました。これは、Azure リソースから診断データを収集する方法を提供するものでした。 この機能は、エンタープライズクラスの監視プラットフォームではなく、一般的な監視ツールと見なされていました。  
+2010 年に Azure がリリースされた時点では、クラウド サービスの監視は Azure Diagnostics エージェントによって提供されていました。これは、Azure リソースから診断データを収集する方法を提供するものでした。 この機能は、エンタープライズクラスの監視プラットフォームではなく、一般的な監視ツールと見なされていました。
 
 Application Insights は、クラウド、モバイル、IoT デバイスが急増する業界の変化と DevOps プラクティスの導入に合わせて移行するために導入されました。 Operations Manager でのアプリケーション パフォーマンス監視から Azure のサービスに拡大し、さまざまな言語で記述された Web アプリケーションの監視機能を豊富に提供します。 2015 年、Visual Studio 向けの Application Insights のプレビューが発表され、これは後に、単に Application Insights と呼ばれるようになりました。 このサービスでは、アプリケーションのパフォーマンス、要求と例外、トレースに関する詳細が収集されます。
 
-2015 年には、Azure Operational Insights が一般公開されました。 これが Azure、オンプレミス、またはその他のクラウド環境にあるコンピューターのデータを収集して検索する Log Analytics 分析サービスを提供し、System Center Operations Manager に接続しました。 セキュリティ監査、正常性評価、アラート管理などのシナリオ用に、クエリおよび分析ロジック、視覚化、データ収集ルールのコレクションが含まれているインテリジェンス パックが提供され、あらかじめパッケージ化されたさまざまな管理および監視の構成が用意されました。 その後、Azure Operational Insights は Log Analytics と呼ばれるようになりました。  
+2015 年には、Azure Operational Insights が一般公開されました。 これが Azure、オンプレミス、またはその他のクラウド環境にあるコンピューターのデータを収集して検索する Log Analytics 分析サービスを提供し、System Center Operations Manager に接続しました。 セキュリティ監査、正常性評価、アラート管理などのシナリオ用に、クエリおよび分析ロジック、視覚化、データ収集ルールのコレクションが含まれているインテリジェンス パックが提供され、あらかじめパッケージ化されたさまざまな管理および監視の構成が用意されました。 その後、Azure Operational Insights は Log Analytics と呼ばれるようになりました。
 
 2016 年、Azure Monitor のプレビューが Microsoft Ignite カンファレンスで発表されました。 それにより、フレームワークの使用を開始した任意の Azure サービスからプラットフォームのメトリック、リソース診断ログ、サブスクリプションレベルのアクティビティ ログ イベントを収集するための共通フレームワークが提供されました。 以前は、各 Azure サービスに独自の監視方法がありました。
 
@@ -43,7 +43,8 @@ Application Insights は、クラウド、モバイル、IoT デバイスが急�
 - Azure プラットフォームのリソースのみを対象に、プラットフォームのメトリック、リソース診断ログ、およびアクティビティ ログを収集する、オリジナルの **Azure Monitor**。
 - アプリケーション監視のための **Application Insights**。
 - ログ データの収集と分析のための主要な場所である **Log Analytics**。
-- 前に説明した他の各サービスのアラート メカニズムを統合した新しい**統合アラート サービス**。  
+- 前に説明した他の各サービスのアラート メカニズムを統合した新しい **統合アラート サービス**。
+
 - 仮想ネットワーク内のリソースの監視、診断、メトリック表示のための **Azure Network Watcher**。
 
 ## <a name="the-story-of-operations-management-suite-oms"></a>Operations Management Suite (OMS) のストーリー
@@ -68,7 +69,7 @@ Operations Manager には、管理グループをサポートするための重�
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor は、サービスとしてのソフトウェア (SaaS) サービスです。そのため、それをサポートするインフラストラクチャは Azure で実行され、Microsoft によって管理されています。 これは、大規模に監視、分析、および診断を実行します。 すべての各国クラウドで利用できます。 Azure Monitor をサポートするインフラストラクチャのコア部分 (コレクター、メトリックとログ ストア、分析) は、Microsoft によってメンテナンスされます。  
+Azure Monitor は、サービスとしてのソフトウェア (SaaS) サービスです。そのため、それをサポートするインフラストラクチャは Azure で実行され、Microsoft によって管理されています。 これは、大規模に監視、分析、および診断を実行します。 すべての各国クラウドで利用できます。 Azure Monitor をサポートするインフラストラクチャのコア部分 (コレクター、メトリックとログ ストア、分析) は、Microsoft によってメンテナンスされます。
 
 ![Azure Monitor の図](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 

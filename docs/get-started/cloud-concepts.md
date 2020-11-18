@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 04b34a0914ec0be193c670be005af269d0aa2d14
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: c8006f3b83fa4dd07f25c49b02294084c435d13a
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775719"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713787"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>作業を開始しましょう。基本的なアラインメントに関する決定事項を理解し、文書化する
 
@@ -25,7 +25,7 @@ ms.locfileid: "90775719"
 
 このガイドに取り組む際に、[最初の意思決定テンプレート](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx)を使用して、基本的な決定事項を記録します。 このテンプレートを使用することにより、お使いのクラウド環境がどのように構成されているか、およびその理由を明確にすることで、クラウドの導入ライフサイクルに加わるチーム メンバーを迅速にオンボードできます。
 
-Azure で実行されている環境が既にある場合は、[Azure のガバナンス ビジュアライザー](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer)を使用すると、素早くドキュメント化できます。 ポリシー、ロールベースのアクセス制御 (RBAC)、Azure Blueprints、サブスクリプションなどに関する分析情報を得ることができます。 収集されたデータから、このツールは階層マップに対する可視性を提供し、テナントの概要を作成し、管理グループとサブスクリプションに関する詳細なスコープの分析情報を作成します。 
+Azure で実行されている環境が既にある場合は、[Azure のガバナンス ビジュアライザー](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer)を使用すると、素早くドキュメント化できます。 ポリシー、ロールベースのアクセス制御 (RBAC)、Azure Blueprints、サブスクリプションなどに関する分析情報を得ることができます。 収集されたデータから、このツールは階層マップに対する可視性を提供し、テナントの概要を作成し、管理グループとサブスクリプションに関する詳細なスコープの分析情報を作成します。
 
 ## <a name="step-1-understand-how-azure-works"></a>手順 1:Azure のしくみを理解する
 

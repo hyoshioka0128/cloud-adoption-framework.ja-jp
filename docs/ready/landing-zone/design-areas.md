@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3c3284f9f04a57e8532c0371197e1af7802e4fca
-ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
+ms.openlocfilehash: c5b98dd3259ed69ead71bd1d0a49f4f4384cfdb4
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89275367"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713906"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "89275367"
 各 Azure ランディング ゾーンの実装オプションからは、デプロイ アプローチと定義された設計原則が提供されます。 実装オプションを選択する前に、この記事を参考にし、次の表にある設計領域について理解を深めてください。
 
 > [!NOTE]
-> このような設計領域は、ランディング ゾーンをデプロイする前に検討すべき内容を表します。 単純な参照として使用します。 設計原則とデプロイの実用的手順については、[ランディング ゾーンの実装オプション](./implementation-options.md)を参照してください。  
+> このような設計領域は、ランディング ゾーンをデプロイする前に検討すべき内容を表します。 単純な参照として使用します。 設計原則とデプロイの実用的手順については、[ランディング ゾーンの実装オプション](./implementation-options.md)を参照してください。
 
 ## <a name="design-areas"></a>設計領域
 

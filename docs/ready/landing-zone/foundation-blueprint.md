@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: af577cea51714b43d43d7956a69422a2316aef11
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: bb8d2a7d77bb4ad6cc8ab0f3a391e7aeaa1a4fdd
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621316"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713872"
 ---
 <!-- docutune:ignore "CAF Foundation blueprint" -->
 
@@ -41,11 +41,11 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 
 ### <a name="identity"></a>ID
 
-この実装オプションでは、[ID 管理のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)に従って、ターゲット サブスクリプションが既に Azure Active Directory インスタンスに関連付けられている必要があります。
+この実装オプションでは、[ID 管理のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に従って、ターゲット サブスクリプションが既に Azure Active Directory インスタンスに関連付けられている必要があります。
 
 ### <a name="network-topology-and-connectivity"></a>ネットワーク トポロジと接続
 
-この実装オプションでは、[ネットワーク セキュリティのベスト プラクティス](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)に従って定義されたネットワーク トポロジが、ランディング ゾーンに既にあるものと想定されています。
+この実装オプションでは、[ネットワーク セキュリティのベスト プラクティス](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に従って定義されたネットワーク トポロジが、ランディング ゾーンに既にあるものと想定されています。
 
 ### <a name="resource-organization"></a>リソースの編成
 
@@ -69,7 +69,7 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 他のガバナンス規範の並列開発を高速化するには、[ガバナンス手法](../../govern/index.md)を確認します。 ガバナンスの Cost Management 規範の成熟を続けるには、[Cost Management 規範のガイダンス](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)に関するページを参照してください。
 
 > [!WARNING]
-> ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)ことが必要になる場合があります。
+> ガバナンスの規範が成熟すると、リファクタリングが必要になる場合があります。 リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)ことが必要になる場合があります。
 
 ### <a name="operations-baseline"></a>運用ベースライン
 
@@ -78,7 +78,7 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 運用ベースラインの並列開発の時間を短縮するには、[ガバナンス手法](../../manage/index.md)を確認し、[Azure サーバー管理ガイド](../../manage/azure-server-management/index.md)をデプロイすることを検討します。
 
 > [!WARNING]
-> 運用ベースラインが開発されると、リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)ことが必要になる場合があります。
+> 運用ベースラインが開発されると、リファクタリングが必要になる場合があります。 具体的には、後でリソースを[新しいサブスクリプションまたはリソース グループに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)ことが必要になる場合があります。
 
 ### <a name="business-continuity-and-disaster-recovery-bcdr"></a>ビジネス継続性とディザスター リカバリー (BCDR)
 

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: cbf362a0a4230a3a882b60883bbf9e457bcdfef9
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 15a288751d42bc230824fa31fa78a2a335647c28
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776161"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712291"
 ---
 # <a name="function-of-cloud-security-incident-preparation"></a>クラウド セキュリティのインシデント準備の機能
 
@@ -29,7 +29,7 @@ ms.locfileid: "90776161"
 - **技術チーム メンバー**: インシデントの調査と修復のため。
 - **ビジネス継続性の統合**: 危機管理、ディザスター リカバリー、ビジネス継続性計画を所有する組織の機能と。
 
-<!-- docutune:casing "Incident Response Reference Guide (IRRG)" -->
+<!-- docutune:casing "Incident Response Reference Guide" "IRRG" -->
 <!-- cSpell:ignore IRRG -->
 
 Microsoft では、[インシデント対応リファレンス ガイド (IRRG)](https://aka.ms/IRRG) で教訓と推奨事項を公開しています。

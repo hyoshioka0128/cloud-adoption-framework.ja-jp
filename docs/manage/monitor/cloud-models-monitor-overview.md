@@ -7,12 +7,12 @@ ms.date: 10/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1a5e1db58b3818b4b17e67ebd6465e956eade0d8
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: d4cc0d02eda6c22164496295b57519be50c507a3
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024489"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711713"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -96,7 +96,7 @@ Azure インフラストラクチャおよびプラットフォームのリソ�
 
 ### <a name="monitor-with-system-center-operations-manager"></a>System Center Operations Manager を使用して監視する
 
-System Center Operations Manager は、元々、IT 環境で実行されているアプリケーション、ワークロード、インフラストラクチャ コンポーネント全体で監視するオンプレミス ソリューションとして設計されましたが、クラウド監視機能を含むように進化しています。 Azure、Microsoft 365、およびアマゾン ウェブ サービス (AWS) と統合されています。 このような多様な環境をサポートするように設計および更新されている管理パックを使用して、それらを監視できます。  
+System Center Operations Manager は、元々、IT 環境で実行されているアプリケーション、ワークロード、インフラストラクチャ コンポーネント全体で監視するオンプレミス ソリューションとして設計されましたが、クラウド監視機能を含むように進化しています。 Azure、Microsoft 365、およびアマゾン ウェブ サービス (AWS) と統合されています。 このような多様な環境をサポートするように設計および更新されている管理パックを使用して、それらを監視できます。
 
 IT サービス マネジメント プロセスおよびツールと緊密に統合された包括的な監視を実現するために Operations Manager に多額の投資を行ってきたお客様や、Azure を初めて使用するお客様であれば、次のような疑問を持っても当然です。
 
@@ -120,7 +120,7 @@ Azure で実行されているワークロードを監視するには、次の�
 
 外部から到達できる Web アプリケーションの場合は、[可用性の監視](/azure/azure-monitor/app/monitor-web-app-availability)と呼ばれる代理トランザクションの種類を有効にする必要があります。 アプリケーション、またはアプリが依存しているクリティカルな HTTP/HTTPS エンドポイントが、利用可能で応答可能かどうかを把握していることが重要です。 Application Insights の可用性の監視を使用すると、複数の Azure データセンターからテストを実行し、グローバルな観点からアプリケーションの正常性についての分析情報を得ることができます。
 
-Operations Manager を使用して Azure でホストされているリソースを監視することはできますが、Azure Monitor を組み込むことにはいくつかの利点があります。その利点で Operations Manager の制限を克服し、最終的な移行をサポートする強力な基盤を確立できます。 ここでは、そのような長所と短所、およびハイブリッド監視戦略に Azure Monitor を含める場合の推奨事項について見ていきます。  
+Operations Manager を使用して Azure でホストされているリソースを監視することはできますが、Azure Monitor を組み込むことにはいくつかの利点があります。その利点で Operations Manager の制限を克服し、最終的な移行をサポートする強力な基盤を確立できます。 ここでは、そのような長所と短所、およびハイブリッド監視戦略に Azure Monitor を含める場合の推奨事項について見ていきます。
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Operations Manager を単独で使用する場合の欠点
 
@@ -163,7 +163,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 - IT 組織内のさまざまなペルソナの要件をサポートするために、クエリとダッシュボードのライブラリを定義します。
 
-- ハイブリッドおよびクラウド リソース全体の監視、各リソースの監視基準、アラートのしきい値などを有効にするための標準と方法を定義します。  
+- ハイブリッドおよびクラウド リソース全体の監視、各リソースの監視基準、アラートのしきい値などを有効にするための標準と方法を定義します。
 
 - ロールベースのアクセス制御 (RBAC) を構成して、ユーザーとグループに対し、管理対象のリソースからのデータを監視するために必要なアクセス権のみを付与します。
 

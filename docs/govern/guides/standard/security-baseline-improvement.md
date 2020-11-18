@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fb16286bdab9bedc4d9f14670060ebbe5c19ac0f
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: eb9b071490580123a7358d2215907ab4c106d7a3
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282936"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712810"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
 
@@ -125,7 +125,7 @@ IT およびビジネス部門のリーダーたちは、IT、アプリケーシ
     - Linux マシンと Windows マシン内でパスワード セキュリティ設定が適切に設定されていることを監査します。
   - Azure Recovery Services コンテナーがサブスクリプションに存在することを監査して適用します。
 - ファイアウォールの構成:
-  - 必要なセキュリティ要件を満たす Azure Firewall の構成を特定します。 または、Azure と互換性があるサードパーティ製互換アプライアンスを特定します。 Azure セキュリティ ベンチマークは、[ネットワーク セキュリティ戦略](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-5-define-network-security-strategy)と[セキュリティ戦略をサポートするためのファイアウォール構成](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-network-security#ns-4-protect-applications-and-services-from-external-network-attacks)に関する追加情報を提供します。
+  - 必要なセキュリティ要件を満たす Azure Firewall の構成を特定します。 または、Azure と互換性があるサードパーティ製互換アプライアンスを特定します。 Azure セキュリティ ベンチマークは、[ネットワーク セキュリティ戦略](/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-5-define-network-security-strategy)と[セキュリティ戦略をサポートするためのファイアウォール構成](/azure/security/benchmarks/security-controls-v2-network-security#ns-4-protect-applications-and-services-from-external-network-attacks)に関する追加情報を提供します。
   - Resource Manager テンプレートを作成し、必須の構成を持つファイアウォールをデプロイします。
 - Azure Blueprints:
   - `protected-data` という名前で新しいブループリントを作成します。

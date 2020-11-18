@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: bc9ae42f65f67d1f770de2ef53607937d811e735
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ff95510b54d8c82036f7cae5ec5f70809489672d
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571611"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713566"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>クラウド管理の規範にわたる管理の平準化
 
@@ -34,8 +34,7 @@ IT ポートフォリオ内のワークロードは異なるため、1 つのレ
 
 また、組織では、[これらの管理レベルの 1 つ以上に関連した機能をサービス プロバイダーに外部委託する](https://aka.ms/adopt/partneroffers)こともできます。 これらのサービス プロバイダーでは、[Azure Lighthouse](/azure/lighthouse/overview) を使用して、より的確な精度と透明性を提供することができます。
 
-このシリーズの残りの記事では、これらの各規範でよく見られるプロセスについて概説します。
-同時に、[Azure 管理ガイド](../azure-management-guide/index.md)では、これらの各プロセスをサポートできるツールを紹介します。 管理ベースラインの作成のサポートについては、まず Azure 管理ガイドから始めてください。 ベースラインを確立したら、この記事シリーズとそれに付随するベスト プラクティスは、そのベースラインを拡張して他のレベルの管理サポートを定義するのに役立ちます。
+このシリーズの残りの記事では、これらの各規範でよく見られるプロセスについて概説します。 同時に、[Azure 管理ガイド](../azure-management-guide/index.md)では、これらの各プロセスをサポートできるツールを紹介します。 管理ベースラインの作成のサポートについては、まず Azure 管理ガイドから始めてください。 ベースラインを確立したら、この記事シリーズとそれに付随するベスト プラクティスは、そのベースラインを拡張して他のレベルの管理サポートを定義するのに役立ちます。
 
 ## <a name="cloud-management-disciplines"></a>クラウド管理の規範
 
