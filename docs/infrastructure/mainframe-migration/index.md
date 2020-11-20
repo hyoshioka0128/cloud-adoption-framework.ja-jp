@@ -7,22 +7,22 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b8471417e115f1f5c6f6c9bc4ccfe8187d5c41eb
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: cf30852204f3ce6b5911787e79beb99a072b6ba3
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775787"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712597"
 ---
-<!-- docutune:casing "BMC Control-M" ASSGN DLBL EXTENT LIBDEF EXEC -->
-<!-- docutune:ignore JOB -->
+<!-- docutune:casing "BMC Control-M" ASSGN DLBL EXTENT LIBDEF EXEC TWS-OPC CA-SAR IMS/TM IMS/DC "IMS/Data Communications" "Micro Focus Server Enterprise Edition" VSE -->
+<!-- docutune:ignore JOB Natural SPOOL -->
 <!-- cSpell:ignore dbspaces dbextents ASSGN DLBL EXTENT LIBDEF EXEC IPLs VSAM RACF LPARs -->
 
 # <a name="mainframe-migration-overview"></a>メインフレーム移行の概要
 
 メインフレームのワークロード、アプリケーション、データベースの全部または一部をクラウドに移行することで多くの会社や組織が効果を上げています。 Azure はメインフレームのような機能をクラウド機能で提供しますが、メインフレームに付き物の多くの欠点がありません。
 
-メインフレームという言葉は一般的に大型のコンピューター システムを意味しますが、近年配備されているメインフレームの大半は IBM System Z サーバーか、MVS、DOS、VSE、OS/390、z/OS を実行している IBM プラグ互換システムです。 メインフレーム システムは、重要な情報システムを実行する目的で、今後もさまざまな産業で利用されます。大量の処理が集中する IT 環境など、特定のシナリオで役目が与えられています。
+"_メインフレーム_" という言葉は一般的に大型のコンピューター システムを意味しますが、近年配備されているメインフレームの大半は IBM System z サーバーか、MVS、DOS、VSE、OS/390、z/OS を実行している IBM プラグ互換システムです。 メインフレーム システムは、重要な情報システムを実行する目的で、今後もさまざまな産業で利用されます。大量の処理が集中する IT 環境など、特定のシナリオで役目が与えられています。
 
 クラウドに移行することで企業はそのインフラストラクチャを最新式にすることができます。 クラウド サービスを利用すれば、メインフレームのアプリケーションとそれが与える価値を、組織がそれを必要とするときに、ワークロードとして利用できます。 ワークロードの多くは、データベースの名前を更新するなど、コードを少し変更するだけで Azure に転送できます。 段階的な手法を利用すれば、もっと複雑なワークロードを移行できます。
 
@@ -50,7 +50,7 @@ IT 環境のオプションとして移行またはクラウド サービスの�
 
 - **コード:** メインフレームで使用されるプログラミング言語には、COBOL、Fortran、PL/I、Natural があります。 ジョブ制御言語 (JCL) は z/OS と併用されます。
 
-- **データベース層:** z/OS で一般的なリレーショナル データベース管理システム (DBMS) は IBM DD2 です。 これにより _dbspaces_ と呼ばれているデータ構造が管理されますが、この構造には 1 つまたは複数のテーブルが含まれ、_dbextents_ と呼ばれている物理データ セットのストレージ プールに割り当てられます。 データベースには重要な構成要素が 2 つあり、それはストレージ プールでデータの場所を特定するディレクトリと、データベース上で実行された操作が記録されるログです。 さまざまなフラットファイル データ形式がサポートされています。 z/OS 向け DB2 では通常、データの保管に仮想ストレージ アクセス メソッド (VSAM) データセットが使用されます。
+- **データベース層:** z/OS で一般的なリレーショナル データベース管理システム (DBMS) は IBM DB2 です。 これにより _dbspaces_ と呼ばれているデータ構造が管理されますが、この構造には 1 つまたは複数のテーブルが含まれ、_dbextents_ と呼ばれている物理データ セットのストレージ プールに割り当てられます。 データベースには重要な構成要素が 2 つあり、それはストレージ プールでデータの場所を特定するディレクトリと、データベース上で実行された操作が記録されるログです。 さまざまなフラットファイル データ形式がサポートされています。 z/OS 向け DB2 では通常、データの保管に Virtual Storage Access Method (VSAM) データセットが使用されます。
 
 - **管理層:** IBM メインフレームには、TWS-OPC など、スケジュール作成ソフトウェア、CA-SAR や SPOOL など、印刷と出力管理のためのツール、コードのソース管理システムが含まれます。 z/OS のセキュリティで保護されたアクセス制御は RACF (Resource Access Control Facility) によって処理されます。 データベース マネージャーからはデータベース内のデータにアクセスできます。また、データベース マネージャーは z/OS 環境内の専用パーティションで実行されます。
 
@@ -60,7 +60,7 @@ IT 環境のオプションとして移行またはクラウド サービスの�
 
 IBM システムでは、CICS などのトランザクション モニターを使用し、ビジネス トランザクションのあらゆる面を追跡記録し、管理します。 CICS では、リソースの共有、データの整合性、実行の優先順位が管理されます。 CICS によってユーザーが認証され、リソースが割り当てられ、アプリケーションからのデータベース要求が IBM DB2 などのデータベース マネージャーに渡されます。
 
-もっと精密な調整が必要であれば、一般的に CICS と IMS/TM (以前の IMS/Data Communications または IMS/DC) が併用されます。 IMS は、データの 1 つのコピーを維持することでデータの重複を減らすように設計されています。 プロセス全体で状態を維持し、データ ストアにビジネス機能を記録することでトランザクション モニターとして CICS を補完します。
+もっと精密な調整が必要であれば、一般的に CICS と IMS/TM (以前の IMS/Data Communications (IMS/DC)) が併用されます。 IMS は、データの 1 つのコピーを維持することでデータの重複を減らすように設計されています。 プロセス全体で状態を維持し、データ ストアにビジネス機能を記録することでトランザクション モニターとして CICS を補完します。
 
 ## <a name="mainframe-operations"></a>メインフレームの操作
 
@@ -68,7 +68,7 @@ IBM システムでは、CICS などのトランザクション モニターを�
 
 - **オンライン:** ワークロードには、トランザクション処理、データベース管理、接続があります。 それらは多くの場合、IBM DB2、CICS、z/OS コネクタで実装されます。
 
-- **バッチ:** ジョブはユーザーの介入なしで実行されます。通常、平日の毎朝などの、定期的なスケジュールで行われます。 バッチ ジョブは、Micro Focus Enterprise Server や BMC Control-M ソフトウェアなど、JCL エミュレーターを利用し、Windows または Linux ベースのシステム上で実行できます。
+- **バッチ:** ジョブはユーザーの介入なしで実行されます。通常、平日の毎朝などの、定期的なスケジュールで行われます。 バッチ ジョブは、Micro Focus Server Enterprise Edition や BMC Control-M ソフトウェアなど、JCL エミュレーターを利用し、Windows または Linux ベースのシステム上で実行できます。
 
 - **ジョブ制御言語 (JCL):** バッチ ジョブの処理に必要なリソースを指定します。 JCL は一連のジョブ制御ステートメントを介してこの情報を z/OS に伝えます。 基本の JCL には、JOB、ASSGN、DLBL、EXTENT、LIBDEF、EXEC という 6 種類のステートメントがあります。 1 つのジョブには複数の EXEC ステートメント (手順) を含めることができます。各手順には、複数の LIBDEF、ASSGN、DLBL、EXTENT ステートメントを与えることができます。
 

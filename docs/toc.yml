@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: 作業開始
+  - name: はじめに
     items:
       - name: 概要
         href: get-started/index.md
@@ -411,6 +411,24 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
                   - name: Azure VM および Azure Database for MySQL で Linux アプリをリホストする
                     href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
+              - name: オープンソース プラットフォーム
+                items:
+                  - name: Moodle の移行
+                    items:
+                      - name: 概要
+                        href: scenarios/lamp/moodle/index.md
+                      - name: 前提条件
+                        href: scenarios/lamp/moodle/migration-pre.md
+                      - name: アーキテクチャとテンプレート
+                        href: scenarios/lamp/moodle/migration-arch.md
+                      - name: リソースの説明
+                        href: scenarios/lamp/moodle/migration-resources.md
+                      - name: 移行の手順
+                        href: scenarios/lamp/moodle/migration-start.md
+                      - name: Azure インフラストラクチャの構成
+                        href: scenarios/lamp/moodle/azure-infra-config.md
+                      - name: 移行後
+                        href: scenarios/lamp/moodle/migration-post.md
               - name: 開発/テスト ワークロード
                 items:
                   - name: 開発/テスト環境を Azure IaaS に移行する
