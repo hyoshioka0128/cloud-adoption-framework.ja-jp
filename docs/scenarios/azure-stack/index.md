@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0e6732c79fc08b22765f67907f8ee8fec9659616
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3158a14c5fd71af6b342242f774b9e525f93d87c
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885509"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997031"
 ---
 # <a name="azure-stack-a-strategic-option-for-running-azure-in-your-datacenter"></a>Azure Stack:データセンターで Azure を実行するための戦略的オプション
 
@@ -28,7 +28,7 @@ Azure Stack Hub は、ソブリン クラウドの別のインスタンスとし
 
 ## <a name="azure-stack-hub-in-your-strategy"></a>戦略における Azure Stack Hub
 
-Azure Stack Hub では、物理サーバーまたは既存の仮想化プラットフォームで実行される既存のアプリケーションを移行するための別の方法が提供されます。 これらのワークロードを Azure Stack Hub の IaaS 環境に移行することで、チームは、スムーズな運用、セルフサービス デプロイ、標準化されたハードウェア構成、Azure 整合性の恩恵を受けることができます。 Azure Stack Hub を使用して最新化やイノベーションのサポートを行うことにより、チームはクラウドを最大限に活用できるようにアプリケーションとワークロードを準備できます。
+Azure Stack Hub では、物理サーバーまたは既存の仮想化プラットフォームで実行される既存のアプリケーションを移行するための別の方法が提供されます。 これらのワークロードを Azure Stack Hub デプロイの IaaS 環境に移行することで、チームは、スムーズな運用、セルフサービス デプロイ、標準化されたハードウェア構成、Azure 整合性の恩恵を受けることができます。 Azure Stack Hub を使用して最新化やイノベーションのサポートを行うことにより、チームはクラウドを最大限に活用できるようにアプリケーションとワークロードを準備できます。
 
 Azure と Azure Stack Hub でのクラウド導入に関する一貫したプラクティスに従うことにより、同じガバナンスと運用のモデルを、パブリック クラウドまたは独自のデータセンターの資産に適用できます。 Azure Stack Hub では、Azure と同じ Azure Resource Manager モデルを使用して、ソリューションを単一のウィンドウで表示できるようにします。
 
@@ -38,7 +38,7 @@ Azure と Azure Stack Hub にはいくつかの違いがあります。 いく�
 
 - Azure では、ほぼ無制限の容量が提供されます。 Azure Stack Hub は、データセンターの物理ハードウェア上に構築されるため、容量の制限につながります。
 - Azure と Azure Stack Hub では、API のバージョンと認証メカニズムが多少異なる場合があります。
-- Azure Stack Hub では、クラウドを "*誰が*" 操作するかが異なります。これはワークロード操作のレベルに影響を与えます。
+- Azure Stack Hub では、クラウドを "_誰が_" 操作するかが異なります。これはワークロード操作のレベルに影響を与えます。
 - 顧客がサービスの PaaS またはソフトウェアとしてのサービス (SaaS) のどちらを呼び出すかが決定されるため、Azure Stack Hub サービスのどの部分を Azure Stack Hub オペレーターが実行するかを検討する必要があります。
 
 その他の違いについては、クラウドの導入ライフサイクルのさまざまなポイントで、他の Azure Stack Hub の記事で紹介します。

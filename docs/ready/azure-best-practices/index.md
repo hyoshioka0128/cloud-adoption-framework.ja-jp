@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 474795bae8a185915ad1b3983ea0d1cf28c99e89
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 160bda1bc1c77f871cc8c9b21ccb092001e2d930
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712036"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997405"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 対応性のベスト プラクティス
 
@@ -61,8 +61,8 @@ Azure 環境でアセットを整理およびデプロイします。
 ## <a name="cost-management"></a>コスト管理
 
 - [事業単位、環境、プロジェクトをまたいでコストを追跡する](./track-costs.md)。 正しいコスト追跡メカニズムを構築するためのベスト プラクティスについて説明します。
-- [Azure Cost Management と Billing でクラウド投資を最適化する方法](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) コスト管理戦略を実装し、コスト関連の問題に対処するためのツールについて学習します。
-- [予算の作成と管理](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Cost Management と Billing を使用して予算を作成して管理する方法を説明します。
-- [コスト データのエクスポート](/azure/cost-management-billing/costs/tutorial-export-acm-data?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Cost Management と Billing を使用してコスト データをエクスポートする方法について説明します。
-- [推奨に基づくコストの最適化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Cost Management と Billing および Azure Advisor を使用して、十分活用されていないリソースを特定し、コストを減らす方法について説明します。
-- [コスト アラートを使用し、使用状況と支出を監視する](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Cost Management と Billing のアラートを使用し、Azure の使用状況と支出を監視する方法について説明します。
+- [Azure Cost Management + Billing でクラウド投資を最適化する方法](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 コスト管理戦略を実装し、コスト関連の問題に対処するためのツールについて学習します。
+- [予算の作成と管理](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Cost Management + Billing を使用して予算を作成して管理する方法を説明します。
+- [コスト データのエクスポート](/azure/cost-management-billing/costs/tutorial-export-acm-data?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Cost Management + Billing を使用してコスト データをエクスポートする方法について説明します。
+- [推奨に基づくコストの最適化](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Cost Management + Billing および Azure Advisor を使用して、十分活用されていないリソースを特定し、コストを減らす方法について説明します。
+- [コスト アラートを使用し、使用状況と支出を監視する](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure Cost Management + Billing のアラートを使用し、Azure の使用状況と支出を監視する方法について説明します。

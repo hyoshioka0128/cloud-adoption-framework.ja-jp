@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 22da52f3cdec09d3337c320875076c579bb5bb61
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: e3f90d704d89bb7d3693738a62515809a234c199
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373154"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996011"
 ---
 # <a name="azure-migration-guide-overview"></a>Azure 移行ガイドの概要
 
@@ -45,7 +45,7 @@ ms.locfileid: "86373154"
 
 ## <a name="when-to-use-this-guide"></a>[このガイドを使用する状況](#tab/WhenToUseThisGuide)
 
-このガイドで説明されているツールはさまざまな移行シナリオをサポートしていますが、このガイドでは、_複雑さが最小限_の限られた範囲の作業に焦点を当てます。 この移行ガイドがご自分のプロジェクトに適しているかどうかを判断するには、次の条件がご自身の状況に該当するかどうかを検討してください。
+このガイドで説明されているツールはさまざまな移行シナリオをサポートしていますが、このガイドでは、_複雑さが最小限_ の限られた範囲の作業に焦点を当てます。 この移行ガイドがご自分のプロジェクトに適しているかどうかを判断するには、次の条件がご自身の状況に該当するかどうかを検討してください。
 
 - 初期移行のワークロードはミッション クリティカルではなく、機密データも含まれていない。
 - 同種環境を移行する。
@@ -54,6 +54,8 @@ ms.locfileid: "86373154"
 - 少数のサーバーを移行する。
 - 移行するコンポーネントの依存関係のマップは定義が簡単である。
 - 業界には、この移行に関連する最小限の規制要件がある。
+
+<!-- docutune:casing "our Microsoft teams" -->
 
 ご自身の状況に、これらの条件のいずれも該当しない場合は、代わりにほかの[クラウド移行のベスト プラクティス](../azure-best-practices/index.md)を検討してください。 また、より複雑な移行を実行するには、Microsoft チームまたはパートナーのいずれかにサポートを依頼することをお勧めします。 Microsoft または認定パートナーと契約しているお客様には、このようなシナリオでさらにお勧めします。 サポートの依頼の詳細情報は、このガイドに記載されています。
 
