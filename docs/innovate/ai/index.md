@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b138145f7cc513d3d039438a5a4318c19c30d7b4
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 75e2e1cd11f41f44cdb2327f3ce9022c0e642888
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604643"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881012"
 ---
 <!-- docutune:casing InterpretML FairLearn -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "89604643"
 
 クラウド導入ライフサイクルのこのフェーズの準備として、次の演習を使用します。
 
-- [機械学習モデルの開発、デプロイ、管理](https://azure.microsoft.com/overview/ai-platform/dev-resources/):MLOps、自動機械学習 (AutoML)、InterpretML や FairLearn などの責任ある ML の学習ツールを含む、独自の機械学習モデルを構築するためのパターンとプラクティスを確認します。
+- [機械学習モデルの開発、デプロイ、管理](https://azure.microsoft.com/overview/ai-platform/dev-resources/):機械学習の運用 (MLOps)、自動機械学習 (AutoML)、InterpretML や FairLearn などの責任ある ML の学習ツールを含む、独自の機械学習モデルを構築するためのパターンとプラクティスを確認します。
 - [ドメイン固有の AI モデルをアプリケーションに追加](https://www.oreilly.com/library/view/building-intelligent-apps/9781492058632/):Cognitive Services を使用して AI 機能をアプリケーションに追加するためのベスト プラクティスについて学びます。 また、これらのサービスで対処できる主要なシナリオについても学習します。
 - [独自の会話 AI ソリューションを構築](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/):独自の仮想アシスタントを構築する方法について学びます。これは、言語と音声を理解し、膨大な量の情報を認識し、インテリジェントに応答できる、会話型の AI アプリケーションです。
 - [AI 主導型のナレッジ マイニング ソリューションを構築](https://azure.microsoft.com/resources/a-developers-guide-to-building-ai-driven-knowledge-mining-solutions/):ナレッジ マイニングを使用して、構造化されていないコンテンツから構造化データを抽出し、組織のデータ全体で実用的な情報を検出する方法について学びます。
