@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f8f7cc11e89be655f736bbc50865c8e46caab48b
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 91a3b4b81bfa9e0847e5f44736e918e145d97d22
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776518"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712954"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
@@ -71,7 +71,7 @@ _図 2: 大企業のリソース編成。_
 
 ### <a name="roles"></a>ロール
 
-<!-- docutune:casing Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
+<!-- docutune:casing Owner Contributor Reader -->
 
 Azure Cost Management と Billing では、各スコープに対して次の組み込みロールがサポートされています。
 
@@ -117,7 +117,7 @@ Azure Cost Management と Billing は、予算を設定し、Azure や AWS の�
 
 ### <a name="get-started-with-azure-cost-management-and-billing"></a>Azure Cost Management と Billing の利用を開始する
 
-Azure Cost Management と Billing の利用を開始するには、[Azure Cost Management と Billing を使用してクラウドへの投資を最適化する方法](/azure/cost-management-billing/costs/cost-mgt-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)に関するページを参照してください。
+Azure Cost Management と Billing の利用を開始するには、[Azure Cost Management と Billing を使用してクラウドへの投資を最適化する方法](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)に関するページを参照してください。
 
 ### <a name="use-azure-cost-management-and-billing"></a>Azure Cost Management と Billing の使用
 

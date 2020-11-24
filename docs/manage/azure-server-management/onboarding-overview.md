@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: de26df188d2e6e240b07abde8c284bf57cb232db
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: c77548023e11be6984051c1d002d5198b0649a42
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84992853"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711798"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>フェーズ 2:Azure サーバー管理サービスへのオンボード
 
@@ -25,9 +25,9 @@ Azure 管理サービスに関連する[ツール](./tools-services.md)と[計�
 
 ガイドのこのセクションでは、Azure 仮想マシンとオンプレミス サーバーの両方を対象に、次のオンボーディング プロセスについて説明します。
 
-- **ポータルを使用して評価のために単一の VM 上の管理サービスを有効にします**。 このプロセスを使用して、Azure サーバー管理サービスを理解します。
-- **ポータルを使用してサブスクリプション用の管理サービスを構成します**。 このプロセスは、プロビジョニングされた新しい VM によって管理サービスが自動的に使用されるように Azure 環境を構成するのに役立ちます。 スクリプトやコマンド ラインより Azure portal のエクスペリエンスを好む場合は、このアプローチを使用します。
-- **Azure Automation を使用してサブスクリプション用の管理サービスを構成します**。 このプロセスは完全に自動化されます。 サブスクリプションの作成だけ行います。新しくプロビジョニングされた VM に対して管理サービスを使用する環境はスクリプトによって構成されます。 このアプローチは、PowerShell スクリプトと Azure Resource Manager テンプレートに精通しているか、それらの使い方を学習したい場合に使用します。
+- **ポータルを使用して評価のために単一の VM 上の管理サービスを有効にします。** このプロセスを使用して、Azure サーバー管理サービスを理解します。
+- **ポータルを使用してサブスクリプション用の管理サービスを構成します。** このプロセスは、プロビジョニングされた新しい VM によって管理サービスが自動的に使用されるように Azure 環境を構成するのに役立ちます。 スクリプトやコマンド ラインより Azure portal のエクスペリエンスを好む場合は、このアプローチを使用します。
+- **Azure Automation を使用してサブスクリプション用の管理サービスを構成します。** このプロセスは完全に自動化されます。 サブスクリプションの作成だけ行います。新しくプロビジョニングされた VM に対して管理サービスを使用する環境はスクリプトによって構成されます。 このアプローチは、PowerShell スクリプトと Azure Resource Manager テンプレートに精通しているか、それらの使い方を学習したい場合に使用します。
 
 これらのアプローチの手順はそれぞれ異なります。
 

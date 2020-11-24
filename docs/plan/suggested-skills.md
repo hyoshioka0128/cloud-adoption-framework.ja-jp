@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: b4464f127dc2df83b951940f35807fe8a1441f32
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 448de153e3c696ef3b0a988095da1760014d66c3
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776110"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712070"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>スキル準備パスの開始
 
@@ -41,6 +41,7 @@ _図 1:クラウドでホストされる環境内の IT の役割へのスキル
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
+
 クラウド導入フレームワークの計画手法に合わせてカスタマイズされた、Microsoft Learn のラーニング パスの例を次に示します。
 
 <!-- docutune:ignore "on premises" -->

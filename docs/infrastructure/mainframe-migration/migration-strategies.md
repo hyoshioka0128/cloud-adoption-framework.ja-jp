@@ -1,5 +1,5 @@
 ---
-title: メインフレームから Azure にアプリを移行する
+title: メインフレームから Azure にアプリケーションを移行する
 description: メインフレーム プラットフォームから、高可用性環境内の Azure ハイパースケールのコンピューティングとストレージに切り替えるための技術的なガイダンスを提供します。
 author: njray
 ms.author: v-nanra
@@ -7,13 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 29e2e0c50fd201dd1bc0bd4498fd8351257dae02
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 609bbc646858368ee22b0a0aba00850dd659a00e
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775770"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712614"
 ---
+<!-- docutune:casing "Table 4" "Parallel Sysplex" CF Assembler "Demystifying Mainframe-to-Azure Migration" "ROSCOE Programming Facility" "RPF" "CA Librarian" CA-Panvalet -->
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>メインフレームから Azure に切り替える
@@ -32,7 +33,7 @@ Azure は、従来のメインフレーム アプリケーションを実行す�
 
 小規模な組織では 500 MIPS 未満で済みますが、大規模な組織は通常 5,000 MIPS を超えます。 1 MIPS あたり 1,000 ドルの場合、大規模な組織では 5,000 MIPS のインフラストラクチャをデプロイするために年間約 500 万ドルを費やします。 この規模の一般的な Azure デプロイの年間コスト見積もりは、MIPS インフラストラクチャのコストの約 1/10 です。 詳細については、ホワイト ペーパー「[Demystifying Mainframe-to-Azure Migration (メインフレームから Azure への移行の解明)](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration)」の表 4 を参照してください。
 
-Azure による vCPU への MIPS の正確な計算は、vCPU の種類と実行している正確なワークロードによって変わります。 ただし、ベンチマーク調査は、必要となる vCPU の数と種類を見積もるための優れた基盤となります。 最近の HPE zREF ベンチマークは、以下の見積もりを提供しています。
+Azure による vCPU への MIPS の正確な計算は、vCPU の種類と実行している正確なワークロードによって変わります。 ただし、ベンチマーク調査は、必要となる vCPU の数と種類を見積もるための優れた基盤となります。 最近の HPE zRef ベンチマークは、以下の見積もりを提供しています。
 
 - オンライン (CICS) ジョブの場合、HP Proliant サーバー上で実行される Intel ベース コアあたり 288 MIPS。
 
@@ -51,7 +52,7 @@ Azure による vCPU への MIPS の正確な計算は、vCPU の種類と実行
 
 Azure は、ローカルでも他の地域内でも、複数のストレージ デバイスからデータをレプリケートすることで可用性を向上します。 Azure ベースの障害が発生した場合、コンピューティング リソースはローカルまたはリージョン レベルでレプリケートされたデータにアクセスできます。
 
-[Azure SQL Database](/azure/sql-database/sql-database-technical-overview) や [Azure Cosmos Database](/azure/cosmos-db/introduction) などの Azure のサービスとしてのプラットフォーム (PaaS) リソースを使用すると、Azure で自動的にフェールオーバーを処理できます。 Azure サービスとしてのインフラストラクチャ (IaaS) を使用する場合、フェールオーバーは、SQL Server の Always On 機能、フェールオーバー クラスタリング インスタンス、可用性グループなどの特定のシステム機能に依存します。
+[Azure SQL Database](/azure/sql-database/sql-database-technical-overview) や [Azure Cosmos DB](/azure/cosmos-db/introduction) などの Azure のサービスとしてのプラットフォーム (PaaS) リソースを使用すると、Azure で自動的にフェールオーバーを処理できます。 Azure サービスとしてのインフラストラクチャ (IaaS) を使用する場合、フェールオーバーは、SQL Server の Always On 機能、フェールオーバー クラスタリング インスタンス、可用性グループなどの特定のシステム機能に依存します。
 
 ## <a name="scalability"></a>スケーラビリティ
 

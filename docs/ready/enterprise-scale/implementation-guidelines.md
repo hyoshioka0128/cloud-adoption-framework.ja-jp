@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 078ac0e661b946d9fb493dff0b1d2ee087777726
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: cb053e2a62bb1451b2044291f6851fc20d4e1333
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024608"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713668"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -74,7 +74,7 @@ ms.locfileid: "93024608"
 
 [「管理グループとサブスクリプションの組織」の重要な設計領域](./management-group-and-subscription-organization.md)で詳しく説明したように、サンドボックス管理グループ階層内に配置されたサブスクリプションには、より制限の緩いポリシー手法を取る必要があります。 これらのサブスクリプションは、業務内でユーザーが Azure の製品やサービスを試してそれらによるイノベーションを行うために使用する必要があるため、正式な開発環境に移行する前に、そのアイデアや概念が機能するかどうかを検証することは、ランディング ゾーン階層ではまだ許可されていない可能性があります。
 
-ただし、サンドボックス管理グループ階層内のこれらのサブスクリプションでは、正しい方法 (イノベーションの場合は、新しい Azure サービス/製品/機能の試用と、観念化の検証など) でのみ使用されるように、いくつかのガードレールが適用されていることが依然として必要です。 
+ただし、サンドボックス管理グループ階層内のこれらのサブスクリプションにおいても、適切に使用される (イノベーションのための、新しい Azure サービスと機能の実験と、観念化の検証など) ように、いくつかのガードレールが必要です。
 
 **そのため、次のことをお勧めします。**
 
@@ -83,7 +83,7 @@ ms.locfileid: "93024608"
   | 名前                  |     説明                                                                                     | 割り当てに関する注釈 |
   |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
   | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | サブスクリプションの外部にある他の VNET への VNET ピアリング接続が作成されないようにします。 | このポリシーがサンドボックス管理グループ階層のスコープ レベルにのみ割り当てられるようにしてください。 |
-  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | サンドボックス サブスクリプションでの作成が拒否されるリソース。 これにより、ハイブリッド接続のリソース ( *VPN/ExpressRoute/VirtualWAN* など) が作成されなくなります。 | このポリシーを割り当てるときは、次のリソースを選択して、その作成を拒否します。VPN ゲートウェイ: `microsoft.network/vpngateways`、P2S ゲートウェイ: `microsoft.network/p2svpngateways`、仮想 WAN: `microsoft.network/virtualwans`、仮想 WAN ハブ: `microsoft.network/virtualhubs`、ExpressRoute 回線: `microsoft.network/expressroutecircuits`、ExpressRoute ゲートウェイ: `microsoft.network/expressroutegateways`、ExpressRoute ポート: `microsoft.network/expressrouteports`、ExpressRoute 交差接続: `microsoft.network/expressroutecrossconnections` およびローカル ネットワーク ゲートウェイ: `microsoft.network/localnetworkgateways`。 | 
+  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | サンドボックス サブスクリプションでの作成が拒否されるリソース。 これにより、ハイブリッド接続のリソース (*VPN/ExpressRoute/VirtualWAN* など) が作成されなくなります。 | このポリシーを割り当てるときは、次のリソースを選択して、その作成を拒否します。VPN ゲートウェイ: `microsoft.network/vpngateways`、P2S ゲートウェイ: `microsoft.network/p2svpngateways`、仮想 WAN: `microsoft.network/virtualwans`、仮想 WAN ハブ: `microsoft.network/virtualhubs`、ExpressRoute 回線: `microsoft.network/expressroutecircuits`、ExpressRoute ゲートウェイ: `microsoft.network/expressroutegateways`、ExpressRoute ポート: `microsoft.network/expressrouteports`、ExpressRoute 交差接続: `microsoft.network/expressroutecrossconnections` およびローカル ネットワーク ゲートウェイ: `microsoft.network/localnetworkgateways`。 |
   | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | 各サンドボックス サブスクリプションに対して、電子メール アラートが有効になっている予算が確実に存在するようにします。 この予算は、各サブスクリプションで `default-sandbox-budget` という名前になります。 | ポリシーの割り当て時に、パラメーターが既定値から変更されていない場合、予算 (`default-sandbox-budget`) は 1000 通貨しきい値の制限付きで作成され、サブスクリプションの所有者と共同作成者 (RBAC ロールの割り当てに基づきます) に、予算しきい値の 90% と 100% で電子メール アラートが送信されます。 |
 
 ### <a name="global-networking-and-connectivity"></a>グローバル ネットワークと接続性

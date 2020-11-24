@@ -1,5 +1,5 @@
 ---
-title: メインフレーム アプリの移行戦略
+title: メインフレーム アプリケーションの移行戦略
 description: メインフレーム環境から Azure に移行するアプリケーションの再ホスト、削除、再構築、または置換などの戦略について説明します。
 author: njray
 ms.author: v-nanra
@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2a9f188a49becd5c9f0d8156488a3456aa93fee8
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 5c76356277f6ae911b2994dac0d6bcb66bcdd112
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775804"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712641"
 ---
-<!-- docutune:casing GDGs -->
+<!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
 
 # <a name="mainframe-application-migration"></a>メインフレーム アプリケーションの移行
@@ -31,7 +31,7 @@ ms.locfileid: "90775804"
 
 - **再構築:** 最新の手法を使用してプログラムを全面的に書き直す組織もあります。 このアプローチはコストと複雑さが追加されるため、リフト アンド シフト アプローチほど一般的ではありません。 多くの場合、この種の移行の後では、コード変換エンジンを使用してモジュールとたコードの置き換えを始めるのが理にかなっています。
 
-- **置換:** このアプローチでは、メインフレームの機能を、クラウドの同等の機能で置き換えます。 1 つのオプションであるサービスとしてのソフトウェア (SaaS) では、財務、人事、製造、エンタープライズ リソース プランニングなど、企業の関心事のために特に作成されたソリューションが使用されます。 さらに、以前はカスタム メインフレーム ソリューションを使用して解決されていた問題を、今では多くの業界固有アプリを使用して解決できるようになっています。
+- **置換:** このアプローチでは、メインフレームの機能を、クラウドの同等の機能で置き換えます。 1 つのオプションであるサービスとしてのソフトウェア (SaaS) では、財務、人事、製造、エンタープライズ リソース プランニングなど、企業の関心事のために特に作成されたソリューションが使用されます。 さらに、以前はカスタム メインフレーム ソリューションを使用して解決されていた問題を、今では多くの業界固有アプリケーションを使用して解決できるようになっています。
 
 最初に移行する必要があるワークロードを計画した後、、関連するアプリケーション、レガシ コード ベース、データベースを移動するための要件を決定することを、検討する必要があります。
 
@@ -69,9 +69,9 @@ Azure では、TP マネージャーと JCL を用いたバッチ ジョブを�
 
 画面処理とフォーム入力の機能は一般に Web サーバーを使用して実装され、データ アクセスおよびトランザクションには ADO、ODBC、JDBC などのデータベース API と組み合わせることができます。 使用する Azure IaaS コンポーネントの正確なラインナップは、選択するオペレーティング システムによって異なります。 次に例を示します。
 
-- Windows ベースの VM の場合:画面処理とビジネス ロジック用にはインターネット インフォメーション サービス (IIS) と ASP.NET。 データ アクセスとトランザクションには ADO.NET を使用します。
+- **Windows ベースの VM の場合:** 画面処理とビジネス ロジック用にはインターネット インフォメーション サービス (IIS) と ASP.NET。 データ アクセスとトランザクションには ADO.NET を使用します。
 
-- Linux ベースの VM の場合:使用可能な Java ベースのアプリケーション サーバー。たとえば、画面処理と Java ベースのビジネス機能用の Apache Tomcat など。 データ アクセスとトランザクションには JDBC を使用します。
+- **Linux ベースの VM の場合:** 使用可能な Java ベースのアプリケーション サーバー。たとえば、画面処理と Java ベースのビジネス機能用の Apache Tomcat など。 データ アクセスとトランザクションには JDBC を使用します。
 
 ## <a name="migrate-batch-workloads-to-azure"></a>バッチ ワークロードを Azure に移行する
 
@@ -99,7 +99,7 @@ Azure を使用するバッチ処理のパフォーマンスを最適化する�
 
 - ストレージ サイズあたりの IOPS を上げるために複数のディスクによるストライピング。
 
-- 複数の Azure ストレージ デバイスに IO を分散させるためのストレージのパーティション分割。
+- 複数の Azure Storage デバイスに IO を分散させるためのストレージのパーティション分割。
 
 ### <a name="networking"></a>ネットワーク
 
@@ -115,14 +115,14 @@ Azure を使用するバッチ処理のパフォーマンスを最適化する�
 
 | コンポーネント        | Azure のオプション                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| z/OS             | Windows、Linux、UNIX                                                                                                                      |
+| z/OS             | Windows、Linux、または Unix                                                                                                                      |
 | CICS             | Micro Focus、Oracle、GT Software (Fujitsu)、TmaxSoft、Raincode、NTT Data によって提供される Azure サービス、または Kubernetes を使用した書き換え |
 | IMS              | Micro Focus と Oracle によって提供される Azure サービス                                                                                  |
 | アセンブラー        | Raincode と TmaxSoft からの Azure サービス、COBOL、C、Java、またはオペレーティング システムの機能へのマップ               |
 | JCL              | JCL、PowerShell、または他のスクリプト ツール                                                                                                   |
 | COBOL            | COBOL、C、または Java                                                                                                                            |
 | Natural          | Natural、COBOL、C、または Java                                                                                                                  |
-| FORTRAN と PL/I | FORTRAN、PL/I、COBOL、C、また Java                                                                                                           |
+| Fortran と PL/I | Fortran、PL/I、COBOL、C、また Java                                                                                                           |
 | REXX と PL/I    | REXX、PowerShell、または他のスクリプト ツール                                                                                                  |
 
 ## <a name="migrate-databases-and-data"></a>データベースとデータを移行する
@@ -133,7 +133,7 @@ Azure を使用するバッチ処理のパフォーマンスを最適化する�
 
 - IBM DB2 または IMS データベース。Azure で Azure SQL Database、SQL Server、DB2 LUW、または Oracle Database を使用します。
 
-- VSAM および他のフラット ファイル。Azure SQL、SQL Server、DB2 LUW、または Oracle で ISAM (Indexed Sequential Access Method: 索引順次アクセス方式) を使用します。
+- VSAM および他のフラット ファイル。Azure SQL Database、SQL Server、DB2 LUW、または Oracle で ISAM (Indexed Sequential Access Method: 索引順次アクセス方式) を使用します。
 
 - Generation Data Group (GDG)。Azure では、同様の機能を GDG に提供する名前付け規則とファイル名拡張子を使用するファイルに移行します。
 
@@ -153,7 +153,7 @@ IBM のデータ層には、やはり移行する必要がある複数の主要�
 
 一般に、メインフレームはスケールアップし、クラウドはスケールアウトします。Azure で実行されるメインフレーム スタイルのアプリケーションのスケールとスループットを最適化するには、メインフレームでアプリケーションが分割および分離される方法を理解することが重要です。 z/OS メインフレームでは、1 つのインスタンス上で特定のアプリケーションに対するリソースを分離して管理するために、論理パーティション (LPAR) と呼ばれる機能が使用されます。
 
-たとえば、メインフレームでは CICS 領域と関連する COBOL プログラム用に 1 つの論理パーティション (LPAR)、DB2 用に別の LPAR が使用される場合があります。 開発、テスト、およびステージング環境用に追加の LPAR が使用されることがよくあります。
+たとえば、メインフレームでは、関連付けられた COBOL プログラムを含む CICS 領域のために 1 つの LPAR が、DB2 のために別の LPAR が使用されることがあります。 開発、テスト、およびステージング環境用に追加の LPAR が使用されることがよくあります。
 
 Azure では、この目的に別の VM を使用することの方が一般的です。 通常、Azure のアーキテクチャでは、アプリケーション層、データ層、開発用などにそれぞれ異なる VM のセットがデプロイされます。 処理の各階層は、その環境に最も適した種類の VM と機能を使用して最適化できます。
 
@@ -169,15 +169,13 @@ Azure では、この目的に別の VM を使用することの方が一般的�
 
 一般的なシナリオでは、アプリケーションを Azure に移動し、アプリケーションによって使用されるデータはメインフレームで維持します。 Azure 上のアプリケーションがメインフレーム上のデータにアクセスできるようにするには、特定のソフトウェアが使用されます。 さいわい、広範なソリューションでは、Azure と既存のメインフレーム環境間の統合、ハイブリッド シナリオのサポート、および時間をかけた移行が提供されています。 Microsoft パートナー、独立系ソフトウェア ベンダー、およびシステム インテグレーターがユーザーの作業を支援できます。
 
-1 つのオプションとして [Microsoft Host Integration Server](/host-integration-server) があります。これは、メインフレームに残っている DB2 のデータにアクセスするために Azure のアプリケーションに必要な分散リレーショナル データベース アーキテクチャ (DRDA) を提供するソリューションです。 メインフレームと Azure の統合に対する他のオプションとしては、IBM、Attunity、Codit、他のベンダーからのソリューション、およびオープン ソースのオプションがあります。
+1 つのオプションとして [Microsoft Host Integration Server](/host-integration-server) があります。これは、メインフレームに残っている DB2 のデータにアクセスするために Azure のアプリケーションに必要な分散リレーショナル データベース アーキテクチャ (DRDA) を提供するソリューションです。 メインフレームと Azure の統合に対する他のオプションとしては、IBM、Attunity、Codit、他のベンダーからのソリューション、およびオープンソースのオプションがあります。
 
 ## <a name="partner-solutions"></a>パートナー ソリューション
 
 メインフレームの移行を検討している場合は、パートナー エコシステムが役に立ちます。
 
 Azure では、メインフレームで現在実行されているシステムに対し、実績があり高可用性でスケーラブルなインフラストラクチャが提供されます。 一部のワークロードは、比較的簡単に移行できます。 CICS や IMS のように従来のシステム ソフトウェアに依存する他のワークロードは、パートナー ソリューションを使用して再ホストし、時間をかけて Azure に移行することができます。 何を選択しても、Microsoft とそのパートナーが、メインフレーム システムのソフトウェアの機能を維持しながら、Azure に対する最適化を支援します。
-
-<!-- docutune:casing "IBM DB2 pureScale" -->
 
 ## <a name="learn-more"></a>詳細情報
 

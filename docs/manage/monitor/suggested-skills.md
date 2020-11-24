@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ab6b3c853f02154ea38a1c0a4a7d642ea7e8eb75
-ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
+ms.openlocfilehash: 2040be11d1c64e002ee304e8638ced855d7973e5
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94333645"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713498"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "94333645"
 
 移行の行程の計画フェーズでの目標は、実装をガイドするために必要な計画を作成することです。 また、これらのワークロードを運用環境に移行またはリリースする前に (後ではない)、これらのワークロードを操作する方法を計画に含める必要があります。 ビジネス上の利害関係者は有益かつ中断しないサービスを期待しています。 IT スタッフ メンバーは、統合された Azure サービスを自信を持って使用し、Azure とハイブリッド環境のリソースを効率的に監視するために、新しいスキルを習得して順応する必要があるということを認識しています。
 
-次のラーニング パスを使用して、必要なスキルの開発を加速することができます。 これらは、基礎の学習から始めるように構成されており、インフラストラクチャ、アプリケーション、データ分析の 3 つの主要分野に分かれています。  
+次のラーニング パスを使用して、必要なスキルの開発を加速することができます。 これらは、基礎の学習から始めるように構成されており、インフラストラクチャ、アプリケーション、データ分析の 3 つの主要分野に分かれています。
 
 ## <a name="fundamentals"></a>基礎
 
@@ -62,7 +62,7 @@ ms.locfileid: "94333645"
   - 「[Microsoft Azure DevOps エンジニア:Optimize Feedback Mechanisms (Microsoft Azure DevOps エンジニア: フィードバック メカニズムの最適化)](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms)」は、Application Insights を含む Azure Monitor を使用して、Web アプリケーションの監視と最適化を準備する際に役立ちます。
 
   - 「[Azure Web アプリでのページの読み込み時間をキャプチャして表示する](/learn/modules/capture-page-load-times-application-insights/)」。 Azure Monitor Application Insights を使用して、Azure で実行されているアプリケーション コンポーネントのエンド ツー エンドの監視を実現する場合は、このコースから始めます。
-  
+
   - 「[Microsoft Azure のデータベース監視に関するプレイブック](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring)」では、Azure SQL Database、Azure SQL Data Warehouse、および Azure Cosmos DB の監視を実装して使用する方法について学習できます。
 
   - 「[Azure Monitor Application Insights を使用したアプリケーションのインストルメント化](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument)」では、Application Insights SDK を使用して、Angular と Node.js コンポーネントを使用するアプリからテレメトリとイベントを収集する方法について詳しく説明します。

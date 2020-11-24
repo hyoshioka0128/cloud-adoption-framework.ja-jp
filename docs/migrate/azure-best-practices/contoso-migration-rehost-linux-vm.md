@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e18fabf06701de03b2ec012cbe85e658071fda5e
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4738ff138df700047cffb478518d40a8aa6d4ff0
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602454"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713260"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
 
@@ -85,7 +85,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Migrate: Server Migration](/azure/migrate/contoso-migration-rehost-linux-vm) | このサービスは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) または Google Cloud Platform (GCP) VM インスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われると、Azure VM が作成されて料金がかかります。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate)の詳細をご覧ください。 |
+| [Azure Migrate: Server Migration](/azure/migrate/contoso-migration-rehost-linux-vm) | このサービスは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) と Google Cloud Platform (GCP) VM のインスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われると、Azure VM が作成されて料金がかかります。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate)の詳細をご覧ください。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -139,7 +139,7 @@ Contoso は、Azure への移行後に、Azure 内のレプリケートされた
 
 - Azure VM にインターネット経由でアクセスするには、移行前に、オンプレミス Linux VM 上で SSH を有効にします。 Ubuntu の場合、`sudo apt-get ssh install -y` コマンドを使用してこの手順を実行できます。
 - [Azure Linux エージェント](/azure/virtual-machines/extensions/agent-linux)をインストールします。
-- 移行を実行したら、**ブート診断**を調べて、VM のスクリーンショットを表示できます。
+- 移行を実行したら、**ブート診断** を調べて、VM のスクリーンショットを表示できます。
 - これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照する必要があります。
 
 **さらにサポートが必要な場合**
@@ -208,7 +208,7 @@ Contoso の管理者は、クイック テスト移行を実行した後、移�
     ![[テスト移行] 項目を示すスクリーンショット。](./media/contoso-migration-rehost-linux-vm/test-migrate.png)
 
 1. **[テスト移行]** で、移行後に Azure VM が配置される Azure 仮想ネットワークを選択します。 非運用環境の仮想ネットワークを使用することをお勧めします。
-1. **テスト移行**ジョブが開始されます。 ポータルの通知でジョブを監視します。
+1. **テスト移行** ジョブが開始されます。 ポータルの通知でジョブを監視します。
 1. 移行の完了後、Azure portal の **[仮想マシン]** で、移行された Azure VM を確認します。 マシン名には、サフィックス **-Test** が含まれています。
 1. テストが完了したら、 **[マシンのレプリケート]** で Azure VM を選択したままにします (または右クリックします)。 次に、 **[テスト移行をクリーンアップ]** を選択します。
 

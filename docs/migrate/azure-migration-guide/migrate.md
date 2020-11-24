@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1a52864576b7965a10a2fb7a4f3ea773cd4979c9
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 2abab02b5d73bd69b33c8124fb4500129e97e545
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282935"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712427"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
@@ -32,12 +32,12 @@ Azure Migrate は、オンプレミスのサーバー、インフラストラク
 
 - 評価、移行、および進行状況の追跡の機能を備えた統合プラットフォーム。
 - 強化された評価および移行機能:
-    - Hyper-V と VMware を備えたオンプレミスのサーバー。
-    - VMware 仮想マシンの Azure へのエージェントレス移行。
-    - Azure SQL Database または SQL Managed Instance へのデータベースの移行
-    - Web アプリケーション
-    - Azure の Windows Virtual Desktop に対する仮想デスクトップ インフラストラクチャ (VDI)
-    - Azure Data Box 製品を使用した大規模なデータ収集
+  - Hyper-V と VMware を含むオンプレミスのサーバー。
+  - VMware 仮想マシンの Azure へのエージェントレス移行。
+  - Azure SQL Database または SQL Managed Instance へのデータベースの移行
+  - Web アプリケーション
+  - Azure の Windows Virtual Desktop に対する仮想デスクトップ インフラストラクチャ (VDI)
+  - Azure Data Box 製品を使用した大規模なデータ収集
 - ISV 統合 (Cloudamize など) による拡張可能なアプローチ。
 
 Azure Migrate を使用して移行を実行するには、次の手順に従います。
@@ -67,7 +67,7 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 
 1. **[すべてのサービス]**  >  **[サブスクリプション]** の順に選択し、ターゲット サブスクリプションを選択します。
 1. **[リソース プロバイダー]** を選択します。
-1. `migration` を検索し、 **Microsoft.DataMigration** の右側にある **[登録]** を選択します。
+1. `migration` を検索し、**Microsoft.DataMigration** の右側にある **[登録]** を選択します。
 
 ::: zone target="chromeless"
 
@@ -105,6 +105,7 @@ Azure App Service Migration Assistant は、組織のクラウドへの移行を
 
 1. Web アプリの移行前互換性チェックを実行して、Windows Server にインストールされている特定の Web アプリの評価を実行し、Web アプリに変更を加えることなく Azure App Service に移行できるかどうかを判断します。
 1. この評価によって、Web アプリが移行可能であることが証明された場合、Migration Assistant により移行が行われます。 Azure アカウントへのアクセスを Migration Assistant に提供し、使用するリソース グループを選択して、Web アプリの名前を選び、その他の同様の詳細を指定する必要があります。
+
 または、Migration Assistant によって、より自動化された反復可能な方法で Web アプリを移行するために使用できる Azure Resource Manager テンプレートが生成されます。
 
 #### <a name="migrate-a-web-app-to-azure-app-service"></a>Web アプリを Azure App Service に移行する
@@ -125,7 +126,7 @@ Migration Assistant によって選択内容が収集および検証されると
 
 また、Azure App Service のホスティング プランや、自動スケールやデプロイ スロットなどのその他の設定を変更することもできます。
 
-詳細情報 
+詳細情報
 
 [ASP.NET アプリを Azure に移行する](/learn/paths/migrate-dotnet-apps-azure)
 

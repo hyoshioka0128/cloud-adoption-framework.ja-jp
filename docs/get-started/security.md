@@ -7,13 +7,15 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 4e5521c2f3b699584d7785a80e3c92b3db24e347
-ms.sourcegitcommit: 899fcd5314ce2748e98c69e27c7f2e318ab27ac5
+ms.openlocfilehash: e22f93f7a375431684002904ade30982ab460b23
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91206213"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713770"
 ---
+<!-- docutune:casing IR -->
+
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>作業を開始しましょう。企業環境全体へのセキュリティの実装
 
 セキュリティにより、ビジネスの機密性、整合性、可用性を保証できるようになります。 セキュリティの取り組みでは、内部と外部の悪意のある意図しない行為に起因する運用への潜在的な影響からの保護に特に重点を置いています。
@@ -38,14 +40,16 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 ## <a name="step-1-establish-essential-security-practices"></a>手順 1:重要なセキュリティ プラクティスを確立する
 
-クラウドのセキュリティは、最も重要なセキュリティ プラクティスをシステムのユーザー、プロセス、テクノロジの各要素に適用することから始まります。 また、アーキテクチャに関するいくつかの決定が基本であり、後で変更するのは非常に困難なので、慎重に適用する必要があります。 
+クラウドのセキュリティは、最も重要なセキュリティ プラクティスをシステムのユーザー、プロセス、テクノロジの各要素に適用することから始まります。 また、アーキテクチャに関するいくつかの決定が基本であり、後で変更するのは非常に困難なので、慎重に適用する必要があります。
 
 既にクラウドで運用している場合でも、将来の導入を計画している場合でも、これら 11 の重要なセキュリティ プラクティスに従うことをお勧めします (明示的な規制遵守要件を満たすことは必須です)。
+
+<!-- markdownlint-disable MD029 -->
 
 **ユーザー:**
 
 1. [クラウド セキュリティのための移行の過程についてチームを教育する](../security/security-top-10.md#1-people-educate-teams-about-the-cloud-security-journey)
-2. [クラウド セキュリティ テクノロジについてチームを教育する](../security/security-top-10.md#2-people-educate-teams-on-cloud-security-technology) 
+2. [クラウド セキュリティ テクノロジについてチームを教育する](../security/security-top-10.md#2-people-educate-teams-on-cloud-security-technology)
 
 **プロセス:**
 
@@ -55,7 +59,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 **テクノロジ:**
 
-6. [パスワードレス認証または多要素認証 (MFA) を必須にする](../security/security-top-10.md#6-technology-require-passwordless-or-multi-factor-authentication-mfa)
+6. [パスワードレス認証または多要素認証を必須にする](../security/security-top-10.md#6-technology-require-passwordless-or-multi-factor-authentication-mfa)
 7. [ネイティブ ファイアウォールとネットワーク セキュリティを統合する](../security/security-top-10.md#7-technology-integrate-native-firewall-and-network-security)
 8. [ネイティブ脅威検出を統合する](../security/security-top-10.md#8-technology-integrate-native-threat-detection)
 
@@ -65,6 +69,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 10. [(キーではなく) ID ベースのアクセス制御を使用する](../security/security-top-10.md#10-architecture-use-identity-based-access-control-instead-of-keys)
 11. [単一の統合セキュリティ戦略を確立する](../security/security-top-10.md#11-architecture-establish-a-single-unified-security-strategy)
 
+<!-- markdownlint-enable MD029 -->
 
 > [!NOTE]
 > 各組織では、独自の最低限の基準を定義する必要があります。 リスク体制とそのリスクに対するその後の許容度は、業界、文化、その他の要因によって大きく異なる可能性があります。 たとえば、銀行では、テスト システムに対する軽微な攻撃であっても、評判を損なう可能性のあるものは許容されない場合があります。 デジタル変革が 3 から 6 か月早まるのなら、その同じリスクを喜んで受け入れる組織もあります。
@@ -94,9 +99,9 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 - **ビジネス戦略に厳密に合わせる:** セキュリティの目的はビジネス価値を保護することです。 セキュリティのすべての取り組みをその目的に合わせ、内部抗争を最小限に抑えることが重要です。
 
-  - ビジネス、IT、セキュリティの要件について**共通の理解を形成する**。
+  - ビジネス、IT、セキュリティの要件について **共通の理解を形成する**。
   - 回避可能なリスクによる土壇場の危機を回避するために、**初期段階でセキュリティをクラウド導入に組み込む**。
-  - **アジャイル アプローチを使用**して最小限のセキュリティ要件を即座に確立し、長期にわたってセキュリティ保証を継続的に改善する。
+  - **アジャイル アプローチを使用** して最小限のセキュリティ要件を即座に確立し、長期にわたってセキュリティ保証を継続的に改善する。
   - 意図的な事前対応型のリーダーシップ アクションによって、**セキュリティ文化の変化を促進する**。
 
   詳細については、「[トランスフォーメーション、マインドセット、期待](../strategy/define-security-strategy.md#transformations-mindsets-and-expectations)」を参照してください。
@@ -178,8 +183,8 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 - **アジャイル セキュリティを導入する:** 最初に最小限のセキュリティ要件を確立し、重要ではないすべての項目を、次の手順の優先順位付けされた一覧に移動します。 これは、従来の 3 から 5 年の詳細なプランにしないでください。 クラウドと脅威環境の変化が速すぎるため、この種のプランは役に立ちません。 実際のプランでは、最初の手順と終了状態を策定することに重点を置く必要があります。
 
-  - 近い将来の**即効性のある成果**: 長期的なイニシアチブを開始する前に大きな効果が得られます。 組織の文化、標準的なプラクティス、その他の要因に応じて、時間枠は 3 から 12 か月になる可能性があります。
-  - 目的の最終状態の**明確なビジョン**: これは、各チームの (達成するまでに数年かかる場合がある) プラン策定プロセスの指針となります。
+  - 近い将来の **即効性のある成果**: 長期的なイニシアチブを開始する前に大きな効果が得られます。 組織の文化、標準的なプラクティス、その他の要因に応じて、時間枠は 3 から 12 か月になる可能性があります。
+  - 目的の最終状態の **明確なビジョン**: これは、各チームの (達成するまでに数年かかる場合がある) プラン策定プロセスの指針となります。
 
 - **プランを広く共有する:** 利害関係者の意識を高め、フィードバックや同意を増やします。
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2bb9a42a911e1a635c3b0c1e6d1b1585feb8cc5b
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 7662a72505d34db4f488b64dd18374eead09ceb6
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775243"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713090"
 ---
 <!-- docutune:casing Hanu Scalr ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -162,8 +162,8 @@ Contoso は Azure Migrate を次のように使用します。
 
 - vCenter で、VM をフォルダーに整理します。 これにより、管理者は特定のフォルダー内の VM に対して評価を実行する際に焦点を絞りやすくなります。
 - マシン間の依存関係を評価します。 そのためには、評価する対象の VM 上にエージェントをインストールする必要があります。
-  
-  Contoso では、自動化されたスクリプトを使用して、必要な Windows または Linux エージェントをインストールします。 スクリプトを使用することで、Contoso は vCenter フォルダー内の VM にインストールをプッシュできます。
+
+Contoso では、自動化されたスクリプトを使用して、必要な Windows または Linux エージェントをインストールします。 スクリプトを使用することで、Contoso は vCenter フォルダー内の VM にインストールをプッシュできます。
 
 #### <a name="database-tools"></a>データベース ツール
 
@@ -329,7 +329,7 @@ Contoso は、ハイブリッド クラウド ワークロード全体にわた�
 
 Security Center により、Azure のクラウド アプリケーションのセキュリティを完全に可視化し、制御することができます。 適応型脅威保護を有効にすることにより、Contoso は脅威をすばやく検出して対策を講じ、脅威にさらされる危険性を抑えることができます。
 
-Security Center の[詳細を確認](https://azure.microsoft.com/services/security-center)してください。
+[Security Center](https://azure.microsoft.com/services/security-center) の詳細を確認してください。
 
 ### <a name="monitoring"></a>監視
 

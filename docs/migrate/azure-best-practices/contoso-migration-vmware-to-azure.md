@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4fb22a8ac71dd7decb6111a3ad196d1e97957abe
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: f68fe3adc1807926ab97ebbcf0b47f5eab960f8f
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775345"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713296"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -31,11 +31,11 @@ Contoso という架空の会社がその VMware 仮想マシン (VM) をオン�
 
 Contoso IT チームは、ビジネス パートナーと緊密に連携して、Azure への VMware の移行に関するビジネス ドライバーを定義します。 これらのドライバーには、次のようなものがあります。
 
-- **データセンターの廃止またはシャットダウン**: 既存のデータセンターを統合または廃止する場合、VMware ベースのワークロードをシームレスに移動します。
-- **ディザスター リカバリーと事業継続**: Azure にデプロイされた VMware スタックを、オンプレミスのデータセンター インフラストラクチャ用のプライマリまたはセカンダリ オンデマンド ディザスター リカバリー サイトとして使用します。
-- **アプリケーションの最新化**: Azure エコシステムを利用して Contoso のアプリケーションを最新化するため、VMware ベースの環境を再構築する必要がありません。
-- **DevOps の実装**: Azure DevOps ツール チェーンを VMware 環境に統合し、それぞれのペースでアプリケーションを最新化できます。
-- **運用の継続性の確保**: ハイパーバイザー変換とアプリケーションのリファクタリングを回避しながら、vSphere ベースのアプリケーションを再デプロイします。 Windows および SQL Server を実行するレガシ アプリケーションのサポートを拡張します。
+- **データセンターの廃止またはシャットダウン:** 既存のデータセンターを統合または廃止する場合、VMware ベースのワークロードをシームレスに移動します。
+- **ディザスター リカバリーと事業継続:** Azure にデプロイされた VMware スタックを、オンプレミスのデータセンター インフラストラクチャ用のプライマリまたはセカンダリ オンデマンド ディザスター リカバリー サイトとして使用します。
+- **アプリケーションの最新化:** Azure エコシステムを利用して Contoso のアプリケーションを最新化するため、VMware ベースの環境を再構築する必要がありません。
+- **DevOps の実装:** Azure DevOps ツール チェーンを VMware 環境に統合し、それぞれのペースでアプリケーションを最新化できます。
+- **運用の継続性の確保:** ハイパーバイザー変換とアプリケーションのリファクタリングを回避しながら、vSphere ベースのアプリケーションを再デプロイします。 Windows および SQL Server を実行するレガシ アプリケーションのサポートを拡張します。
 
 ## <a name="goals-for-migrating-vmware-on-premises-to-vmware-in-the-cloud"></a>オンプレミスの VMware からクラウド内の VMware への移行の目標
 

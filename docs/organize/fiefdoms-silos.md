@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2165eecbbe58f11bfa76438806b8bafa27f602c7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 58167ace28964504758e9705c344b9af320146fb
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885135"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712257"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>組織のアンチパターン:サイロと封土
 
@@ -67,7 +67,7 @@ IT サイロ内のチーム メンバーは、おそらく、少数の IT ベン
 
 IT サイロには、以下のアプローチを通じて対処できます。 最適なアプローチは、抵抗の根本原因によって異なります。
 
-**仮想チームを作成する:** クラウド導入フレームワークの[組織の準備状況](./index.md)のセクションでは、4 つの仮想チームを正しく統合および定義するための多層構造について説明しています。 この構造の 1 つのメリットは、組織間の可視性と組み入れです。 [クラウドのセンター オブ エクセレンス](./cloud-center-of-excellence.md)を導入すると、トップ エンジニアが参加を希望する人目を引く意欲的なチームが作成されます。 これは、組織図の制約に拘束されない新しいクロスソリューション アライメントの作成に役立ち、IT サイロによって保護されてきたトップ エンジニアの組み入れが推進されます。
+**仮想チームを作成する:** クラウド導入フレームワークの [組織の準備状況](./index.md)のセクションでは、4 つの仮想チームを正しく統合および定義するための多層構造について説明しています。 この構造の 1 つのメリットは、組織間の可視性と組み入れです。 [クラウドのセンター オブ エクセレンス](./cloud-center-of-excellence.md)を導入すると、トップ エンジニアが参加を希望する人目を引く意欲的なチームが作成されます。 これは、組織図の制約に拘束されない新しいクロスソリューション アライメントの作成に役立ち、IT サイロによって保護されてきたトップ エンジニアの組み入れが推進されます。
 
 [クラウド戦略チーム](./cloud-strategy.md)の導入により、クラウド導入作業に関する IT 部門の寄与の可視性が即時に作成されます。 IT サイロが分離を求めて奮闘する場合、この可視性は、抵抗するチーム メンバーを適切に支援する動機を IT 部門とビジネスのリーダーに与えるのに役立ちます。 このプロセスは、利害関係者のエンゲージメントとサポートへの近道です。
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47ccbee2a3f140a4abc1471896496b83c6de8f43
-ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
+ms.openlocfilehash: addfab1821faadae120fc5dbd2e1af1caabe15d2
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94333680"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713532"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -26,11 +26,11 @@ ms.locfileid: "94333680"
 
 Contoso の IT リーダーシップ チームは、ビジネス パートナーと密接に連絡を取り合い、彼らがこの移行で何を達成しようとしているのかを理解しました。
 
-- **ビジネスの成長への対応** 。 Contoso は成長を続けており、オンプレミスのシステムとインフラストラクチャに負荷がかかっています。
-- **効率化** 。 Contoso では、不要な手順を排除し、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は IT に対して、時間やコストを無駄にせず、迅速に作業を行ってもらう必要があります。これは、例えば、顧客の要求に素早く対応するためです。
-- **機敏性の強化** 。 Contoso IT は、グローバル経済における成功を実現するために、ビジネス部門の要求に対して、対応力を向上させる必要があります。 市場の変化に対して、より迅速に対応できなければなりません。 IT がビジネスの妨げになったり、ビジネスの機会を壊すようなことがあってはなりません。
-- **スケール** 。 ビジネスが順調に成長していく中で、Contoso IT は、同じペースで拡張できるシステムを提供する必要があります。
-- **コストの削減** 。 Contoso はライセンス コストを最小限に抑えたいと考えています。
+- **ビジネスの成長への対応。** Contoso は成長を続けており、オンプレミスのシステムとインフラストラクチャに負荷がかかっています。
+- **効率化。** Contoso では、不要な手順を排除し、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は IT に対して、時間やコストを無駄にせず、迅速に作業を行ってもらう必要があります。これは、例えば、顧客の要求に素早く対応するためです。
+- **機敏性の向上。** Contoso IT は、グローバル経済における成功を実現するために、ビジネス部門の要求に対して、対応力を向上させる必要があります。 市場の変化に対して、より迅速に対応できなければなりません。 IT がビジネスの妨げになったり、ビジネスの機会を壊すようなことがあってはなりません。
+- **スケール。** ビジネスが順調に成長していく中で、Contoso IT は、同じペースで拡張できるシステムを提供する必要があります。
+- **コストを削減する。** Contoso はライセンス コストを最小限に抑えたいと考えています。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -112,17 +112,16 @@ Contoso が移行を実行する方法を次に示します。
 
 > [!div class="checklist"]
 >
-> - **ステップ 1:Web アプリの評価と移行** 。 Contoso では、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、移行前互換性チェックを実行し、Web アプリを Azure App Service に移行します。
-> - **手順 2:Azure SQL Database にデータベースをプロビジョニングする** 。 Contoso が Azure SQL データベース インスタンスをプロビジョニングします。 アプリケーションの Web サイトが Azure に移行されると、WCF サービス Web アプリはこのインスタンスを指します。
-> - **ステップ 3:データベースを評価する** 。 Contoso は、移行するデータベースを Data Migration Assistant を使用して評価し、Azure Database Migration Service を使用してそのデータベースを移行します。
-> - **手順 4:Azure DevOps を設定する** 。 Contoso は新しい Azure DevOps プロジェクトを作成し、Git リポジトリをインポートします。
-> - **手順 5:接続文字列を構成する** 。 Contoso は Web 層 Web アプリ、WCF サービス Web アプリ、および SQL インスタンスが通信できるように接続文字列を構成します。
-> - **手順 6:ビルドとリリース パイプラインを Azure DevOps で設定する** 。 最後の手順として、Contoso はアプリケーションを作成するためのビルドとリリース パイプラインを Azure DevOps で設定し、それらを 2 つの個別の Web アプリにデプロイします。
+> - **ステップ 1:Web アプリの評価と移行**。 Contoso では、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、移行前互換性チェックを実行し、Web アプリを Azure App Service に移行します。
+> - **手順 2:Azure SQL Database にデータベースをプロビジョニングする**。 Contoso が Azure SQL データベース インスタンスをプロビジョニングします。 アプリケーションの Web サイトが Azure に移行されると、WCF サービス Web アプリはこのインスタンスを指します。
+> - **ステップ 3:データベースを評価する**。 Contoso は、移行するデータベースを Data Migration Assistant を使用して評価し、Azure Database Migration Service を使用してそのデータベースを移行します。
+> - **手順 4:Azure DevOps を設定する**。 Contoso は新しい Azure DevOps プロジェクトを作成し、Git リポジトリをインポートします。
+> - **手順 5:接続文字列を構成する**。 Contoso は Web 層 Web アプリ、WCF サービス Web アプリ、および SQL インスタンスが通信できるように接続文字列を構成します。
+> - **手順 6:ビルドとリリース パイプラインを Azure DevOps で設定する**。 最後の手順として、Contoso はアプリケーションを作成するためのビルドとリリース パイプラインを Azure DevOps で設定し、それらを 2 つの個別の Web アプリにデプロイします。
 
 ## <a name="step-1-assess-and-migrate-the-web-apps"></a>手順 1:Web アプリの評価と移行
 
-Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、Web アプリを評価し、移行します。 このプロセスでは、[ASP.NET アプリを Azure に移行するラーニング パス](/learn/paths/migrate-dotnet-apps-azure/)をガイドとして使用します。
-管理者は、次のアクションを実行します。
+Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、Web アプリを評価し、移行します。 このプロセスでは、[ASP.NET アプリを Azure に移行するラーニング パス](/learn/paths/migrate-dotnet-apps-azure/)をガイドとして使用します。 管理者は、次のアクションを実行します。
 
 - Azure [App Service 移行評価](https://appmigration.microsoft.com/assessment/)ツールを使用して、Web アプリ間の依存関係を評価し、オンプレミスの Web アプリと Azure App Service でサポートされているものの間に非互換性がないかどうかを判断します。
 
@@ -140,7 +139,7 @@ Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.mic
 
     ![SQL データベース インスタンスの詳細を示すスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/provision-sql2.png)
 
-1. プライマリ リージョンに新しい SQL Server インスタンス ( **sql-smarthotel-eus2** ) を設定します。
+1. プライマリ リージョンに新しい SQL Server インスタンス (**sql-smarthotel-eus2**) を設定します。
 
     ![新しい SQL Server インスタンスのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/provision-sql3.png)
 
@@ -185,7 +184,7 @@ Contoso の管理者は、Data Migration Assistant を使用してデータベ�
 
 Contoso は、アプリケーションのために DevOps インフラストラクチャとパイプラインを構築する必要があります。 これを行うために、Contoso 管理者は新しい DevOps プロジェクトを作成し、コードをインポートしてから、ビルドとリリース パイプラインを設定します。
 
-1. Contoso Azure DevOps アカウントで、新しいプロジェクト ( **ContosoSmartHotelRefactor** ) を作成し、バージョン コントロールに **[Git]** を選択します。
+1. Contoso Azure DevOps アカウントで、新しいプロジェクト (**ContosoSmartHotelRefactor**) を作成し、バージョン コントロールに **[Git]** を選択します。
 
     ![Azure DevOps で新しいプロジェクトを作成する画面のスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/vsts1.png)
 
@@ -205,7 +204,7 @@ Contoso は、アプリケーションのために DevOps インフラストラ�
 
 Contoso の管理者は、Web アプリとデータベースが互いに通信できるようにします。 そのために、コードと Web アプリで接続文字列を構成します。
 
-1. WCF サービス (`SHWCF-EUS2`) の Web アプリで、 **[設定]**  >  **[アプリケーションの設定]** の順に選択し、 **DefaultConnection** という名前の新しい接続文字列を追加します。
+1. WCF サービス (`SHWCF-EUS2`) の Web アプリで、 **[設定]**  >  **[アプリケーションの設定]** の順に選択し、**DefaultConnection** という名前の新しい接続文字列を追加します。
 1. 接続文字列は SmartHotel-Registration データベースからプルし、正しい資格情報を使用して更新します。
 
     ![接続文字列の設定ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/string1.png)
@@ -244,7 +243,7 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
     ![[ビルド] ページとビルド結果を確認するための [成果物] リンクのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
 
-    **[成果物エクスプローラー]** ペインが開き、 **drop** フォルダーにビルド結果が表示されます。
+    **[成果物エクスプローラー]** ペインが開き、**drop** フォルダーにビルド結果が表示されます。
 
     - 2 つの .zip ファイルは、アプリケーションが格納されているパッケージです。
     - これらの .zip ファイルは、Azure App Service にデプロイするためにリリース パイプライン内で使用されます。
@@ -259,7 +258,7 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
     ![Azure App Service のデプロイ テンプレートのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/pipeline8.png)
 
-1. リリース パイプラインに **ContosoSmartHotel360Refactor** という名前を付け、 **[ステージ名]** ボックスに、WCF Web アプリの名前として「 **SHWCF-EUS2** 」を指定します。
+1. リリース パイプラインに **ContosoSmartHotel360Refactor** という名前を付け、 **[ステージ名]** ボックスに、WCF Web アプリの名前として「**SHWCF-EUS2**」を指定します。
 
     ![WCF Web アプリのステージ名のスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/pipeline9.png)
 
@@ -271,7 +270,7 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
      ![App Service の名前を選択する画面のスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/pipeline11.png)
 
-1. パイプライン > **[成果物]** で、 **[Add an artifact]\(成果物の追加\)** を選択し、 **ContosoSmarthotel360Refactor** パイプラインを使用してビルドするように選択します。
+1. パイプライン > **[成果物]** で、 **[Add an artifact]\(成果物の追加\)** を選択し、**ContosoSmarthotel360Refactor** パイプラインを使用してビルドするように選択します。
 
      ![[Add an artifact]\(成果物の追加\) ペインの [ビルド] ボタンのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
@@ -342,7 +341,7 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 ### <a name="backups"></a>バックアップ
 
 - Contoso チームは、Azure SQL Database のバックアップ要件を確認します。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-automated-backups)。
-- また、SQL Database のバックアップと復元の管理について確認します。 自動バックアップについては、[こちら](/azure/sql-database/sql-database-automated-backups)をご覧ください。
+- また、SQL Database のバックアップと復元の管理について確認します。 [自動バックアップ](/azure/sql-database/sql-database-automated-backups)の詳細をご覧ください。
 - データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループの実装を検討します。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-geo-replication-overview)。
 - 回復性を高めるために、メイン リージョン (`East US 2`) とセカンダリ リージョン (`Central US`) に Web アプリをデプロイすることを検討します。 チームはリージョンの障害が発生しても確実にフェールオーバーされるように Traffic Manager を構成することができます。
 

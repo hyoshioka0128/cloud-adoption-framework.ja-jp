@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c91b6a66d176f19a24779561026fd6bd075b5dea
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: df88116b3e3041e68a183fa1586dede6e36ac63c
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775549"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713515"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -24,9 +24,9 @@ ms.locfileid: "90775549"
 
 Contoso の IT リーダーシップ チームは、ビジネス パートナーと密接に協力して将来の目標を明らかにしました。 パートナーは、開発ツールやテクノロジにあまり関心がありませんが、チームはこれらの点を把握しています。
 
-- **ソフトウェア**: 中心の業務にかかわらず、Contoso を含め、すべての企業がソフトウェア企業になりました。 企業の上層部は、IT 部門がユーザーの新しい業務慣行や顧客の新しいエクスペリエンスを利用して業務を改善する方法に関心を持っています。
-- **効率化**: Contoso はそのプロセスを合理化し、開発者とユーザーにとって不要な手順を取り除く必要があります。 そうすることで、顧客の要件により効率的に対応できるようになります。 IT 部門には、時間やお金を無駄にせず、迅速に行動できることが求められています。
-- **機敏性**: Contoso の IT 部門は、グローバル経済における成功を実現するために、ビジネス ニーズに対しての対応力を向上させる必要があります。 市場の変化に対して、より迅速に対応できなければなりません。 IT がビジネスの妨げになったり、ビジネスの機会を壊すようなことがあってはなりません。
+- **ソフトウェア:** 中心の業務にかかわらず、Contoso を含め、すべての企業がソフトウェア企業になりました。 企業の上層部は、IT 部門がユーザーの新しい業務慣行や顧客の新しいエクスペリエンスを利用して業務を改善する方法に関心を持っています。
+- **効率化:** Contoso はそのプロセスを合理化し、開発者とユーザーにとって不要な手順を取り除く必要があります。 そうすることで、顧客の要件により効率的に対応できるようになります。 IT 部門には、時間やお金を無駄にせず、迅速に行動できることが求められています。
+- **機敏性:** Contoso の IT 部門は、グローバル経済における成功を実現するために、ビジネス ニーズに対しての対応力を向上させる必要があります。 市場の変化に対して、より迅速に対応できなければなりません。 IT がビジネスの妨げになったり、ビジネスの機会を壊すようなことがあってはなりません。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -129,7 +129,7 @@ Contoso の管理者が Team Foundation Server インスタンスを Team Founda
      ![Team Foundation Server のインストールを確認するための [製品バックログ] ペインのスクリーンショット。](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 一部の Team Foundation Server アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細については、こちらを参照してください](/azure/devops/reference/configure-features-after-upgrade?utm_campaign=vstsdataimportguide&utm_medium=guide&utm_source=ms&view=vsts)。
+> 一部の Team Foundation Server アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細については、こちらを参照してください](/azure/devops/reference/configure-features-after-upgrade?view=vsts)。
 
 **さらにサポートが必要な場合**
 
@@ -192,7 +192,7 @@ Contoso の管理者は、移行前に `contosodev` コレクション データ
 
 1. Azure AD のサインイン画面が表示されたら、管理者が全体管理者の資格情報を入力します。
 
-    ![管理者資格情報が入力された Azure AD サインイン ウィンドウのスクリーンショット。](./media/contoso-migration-tfs-vsts/prep2.png)
+    ![ユーザー テキスト ボックスに管理者資格情報が入力された Azure AD サインイン画面のスクリーンショット。](./media/contoso-migration-tfs-vsts/prep2.png)
 
 1. 準備が完了すると、インポート ファイルが正常に生成されたことがレポートされます。
 
@@ -335,9 +335,9 @@ Contoso の管理者は次のように DACPAC を生成します。
 
 *import.json* ファイルを開き、次のフィールドに入力します。
 
-- **[場所]** :上記で生成された SAS キーの場所を入力します。
-- **Dacpac**: 先ほどストレージ アカウントにアップロードした DACPAC ファイルの名前を入力します。拡張子 *.dacpac* を含める必要があります。
-- **ImportType**: ここでは「**DryRun**」を入力します。
+- **[場所]:** 上記で生成された SAS キーの場所を入力します。
+- **DACPAC:** 先ほどストレージ アカウントにアップロードした DACPAC ファイルの名前を入力します。拡張子 *.dacpac* を含める必要があります。
+- **ImportType:** ここでは「**DryRun**」を入力します。
 
 ![フィールドの入力が済んだ "import.json" ファイルのスクリーンショット。](./media/contoso-migration-tfs-vsts/import1.png)
 
@@ -419,7 +419,7 @@ Contoso の管理者はドライ ラン移行を実行し、すべてが想定�
 
 1. Azure AD のサインイン ウィンドウで、Contoso 管理者のサインイン情報を指定します。
 
-    ![Visual Studio の Azure AD サインイン ウィンドウのスクリーンショット。](./media/contoso-migration-tfs-vsts/full3.png)
+    ![Visual Studio の Azure AD サインイン画面のスクリーンショット。](./media/contoso-migration-tfs-vsts/full3.png)
 
     インポートが正常に開始されたというメッセージが表示されます。
 

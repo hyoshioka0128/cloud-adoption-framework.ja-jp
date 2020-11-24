@@ -7,18 +7,18 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1f7b046abd13df1d4d16d6deb7315b6e620ac3c3
-ms.sourcegitcommit: 84696bcaf2fa7187b7db0ee38b83b9fdd78cee07
+ms.openlocfilehash: 8d40df91ae7eb3fc9ed3c651859ecc01b62f5afc
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92494186"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713940"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理グループとサブスクリプションの組織
 
 ![管理グループの階層を示す図。](./media/sub-org.png)
 
-" _図 1:管理グループの階層。_
+"_図 1:管理グループの階層。_
 
 ## <a name="define-a-management-group-hierarchy"></a>管理グループの階層を定義する
 

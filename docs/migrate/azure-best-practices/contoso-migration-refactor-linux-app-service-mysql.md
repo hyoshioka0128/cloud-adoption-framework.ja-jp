@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5f8b0d2a1f834b82adf47ef7f965315caf8ae1b8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: df3ca412e1cf405a0927e13e5c030da66f4a0e53
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567769"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713634"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -26,9 +26,9 @@ ms.locfileid: "88567769"
 
 IT リーダーシップ チームは、ビジネス パートナーと緊密に連携して、彼らが何を達成したいと望んでいるかを理解しています。
 
-- **ビジネスの成長への対応**。 Contoso は成長し続けており、新しい市場に進出しつつあります。 そのため顧客サービス担当者を追加する必要があります。
-- **スケール**。 Contoso は、事業規模が拡大したときに、顧客サービス担当者を追加できるように、ソリューションを構築する必要があります。
-- **回復性の向上**。 過去にシステムで発生した問題は、内部ユーザーのみに影響していました。 新しいビジネス モデルでは、外部ユーザーも影響を受けるため、Contoso は、アプリケーションを常時稼働させる必要があります。
+- **ビジネスの成長への対応。** Contoso は成長し続けており、新しい市場に進出しつつあります。 そのため顧客サービス担当者を追加する必要があります。
+- **スケール。** Contoso は、事業規模が拡大したときに、顧客サービス担当者を追加できるように、ソリューションを構築する必要があります。
+- **回復性を向上させる。** 過去にシステムで発生した問題は、内部ユーザーのみに影響していました。 新しいビジネス モデルでは、外部ユーザーも影響を受けるため、Contoso は、アプリケーションを常時稼働させる必要があります。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -130,7 +130,7 @@ Contoso 管理者は、Azure App Service を使用して 2 つの Web アプリ�
 
     ![Linux OS、米国東部 2 という場所、PHP 7.0 が選択された [Web App] ペインのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app3.png)
 
-5. **米国中部**で、2 つ目の Web アプリ (**osticket-cus**) と Azure App Service プランを作成します。
+5. **米国中部** で、2 つ目の Web アプリ (**osticket-cus**) と Azure App Service プランを作成します。
 
     ![Linux OS、米国中部リージョン、PHP 7.0 が選択された [Web App] ペインのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app4.png)
 
@@ -173,7 +173,7 @@ Contoso の管理者は、MySQL データベース インスタンスを、プ�
 
     ![バージョン 5.7 が選択された [MySQL サーバー] ペインのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/mysql-2.png)
 
-4. **バックアップ冗長オプション**には **[geo 冗長]** を選択します。 このオプションでは、障害が発生した場合、セカンダリ リージョン (米国中部) でデータベースを復元できます。 このオプションは、データベースをプロビジョニングするときにのみ構成できます。
+4. **バックアップ冗長オプション** には **[geo 冗長]** を選択します。 このオプションでは、障害が発生した場合、セカンダリ リージョン (米国中部) でデータベースを復元できます。 このオプションは、データベースをプロビジョニングするときにのみ構成できます。
 
     ![[geo 冗長] オプションを選択した [バックアップ冗長オプション] ペインのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/db-redundancy.png)
 
@@ -200,17 +200,23 @@ Contoso の管理者は、[ステップバイステップの移行チュート�
 Contoso が行う作業の概要は次のとおりです。
 
 - 移行の前提条件がすべて満たされていることを確認します。
-  - MySQL データベース サーバー ソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL では、MySQL Community Edition および InnoDB ストレージ エンジンがサポートされていると共に、同じバージョンのソースとターゲット間の移行がサポートされています。  
-  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 これを行わないと、移行ウィザードで次のエラーが発生します。  
+  - MySQL データベース サーバー ソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL では、MySQL Community Edition および InnoDB ストレージ エンジンがサポートされていると共に、同じバージョンのソースとターゲット間の移行がサポートされています。
+
+  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 これを行わないと、移行ウィザードで次のエラーが発生します。
 
     "バイナリ ログにエラーがあります。 変数 binlog_row_image の値が "minimal" です。 その値を "full" に変更してください。 詳細については、`https://go.microsoft.com/fwlink/?linkid=873009` をご覧ください。"
 
-  - ユーザーは `ReplicationAdmin` ロールを持っている必要があります。  
-  - 外部キーとトリガーを使用せずにデータベース スキーマを移行します。  
-- ExpressRoute または仮想プライベート ネットワーク (VPN) を介してオンプレミス ネットワークに接続する VPN を作成します。  
-- 仮想ネットワークに接続されている Premium SKU を使用して、Azure Database Migration Service インスタンスを作成します。  
-- Azure Database Migration Service が仮想ネットワーク経由で MySQL データベースに確実にアクセスできるようにします。 これには、仮想ネットワーク レベル、ネットワーク VPN、および MySQL をホストするマシンで、Azure から MySQL にすべての受信ポートが許可されていることの確認が伴います。  
-- Database Migration Service ツールを実行し、次の作業を行います。  
+  - ユーザーは `ReplicationAdmin` ロールを持っている必要があります。
+
+  - 外部キーとトリガーを使用せずにデータベース スキーマを移行します。
+
+- ExpressRoute または仮想プライベート ネットワーク (VPN) を介してオンプレミス ネットワークに接続する VPN を作成します。
+
+- 仮想ネットワークに接続されている Premium SKU を使用して、Azure Database Migration Service インスタンスを作成します。
+
+- Azure Database Migration Service が仮想ネットワーク経由で MySQL データベースに確実にアクセスできるようにします。 これには、仮想ネットワーク レベル、ネットワーク VPN、および MySQL をホストするマシンで、Azure から MySQL にすべての受信ポートが許可されていることの確認が伴います。
+
+- Database Migration Service ツールを実行し、次の作業を行います。
 
   a. Premium SKU に基づいて移行プロジェクトを作成します。
 
@@ -276,7 +282,7 @@ Contoso が行う作業の概要は次のとおりです。
 
     ![復元されたデータを表示する Azure portal のスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench5.png)
 
-    ![復元されたデータを表示する Azure portal のスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench6.png)
+    ![osticket データベースを指す矢印が付いた MySQL データベース ブレードのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench6.png)
 
 8. 管理者が Web アプリ上のデータベース情報を更新します。 MySQL インスタンスで、 **[接続文字列]** を開きます。
 
@@ -322,7 +328,7 @@ Contoso 管理者は、新しいプライベート GitHub リポジトリを作�
 
     ![Azure portal の [アプリケーションの設定] リンクを強調表示した画面のスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/github6.png)
 
-7. `osticket` という名前で接続文字列を入力し、メモ帳から**領域の値**に文字列をコピーします。 文字列の横のドロップダウン リストから **[MySQL]** を選択し、設定を保存します。
+7. `osticket` という名前で接続文字列を入力し、メモ帳から **領域の値** に文字列をコピーします。 文字列の横のドロップダウン リストから **[MySQL]** を選択し、設定を保存します。
 
     ![osTicket の接続文字列が強調表示されている [接続文字列] ペインのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/github7.png)
 
