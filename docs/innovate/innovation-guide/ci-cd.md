@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9faf59eff7bba1a8c82abbfc263fa160aa593086
-ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
+ms.openlocfilehash: 3f77b3f9667661f2e554f0e94050ee4bc29f0c3d
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94378870"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880825"
 ---
 # <a name="empower-adoption"></a>導入の強化
 
@@ -93,9 +93,11 @@ DevOps プロジェクトを作成するには:
 
 イノベーションを実現するために、多くの開発者がオープンソース コードを利用しています。 新しいアプリケーション開発の 80 から 90% が、オープンソース コードから始まっています。 オープンソースは単なるコードではありません。 相互に接続された世界中のコミュニティと開発者が協力して構築することでもあります。 チームは、GitHub でオープンな開発モデルを使用して、イノベーションとコラボレーションを行い、セキュリティの脆弱性を早期に特定し、専門家を見つけることができます。 エンタープライズ開発チームは、GitHub リポジトリと Microsoft Teams および Azure を統合できます。 Teams は、Microsoft Office アプリケーション、会議、ビジネス プロセス ワークフローの機能を持つチャット、音声、コラボレーションをすべて単一のユーザー エクスペリエンスにまとめる唯一のソリューションです。 これは、チームワークとイノベーションのためのハブです。
 
+<!-- docutune:ignore "Open source starts" "Open source on Azure" -->
+
 ### <a name="learn-more"></a>詳細情報
 
-- [GitHub で始めるオープンソース](https://azure.microsoft.com/en-in/products/github/)
+- [GitHub で始めるオープンソース](https://azure.microsoft.com/products/github/)
 - [Azure のオープンソース](https://azure.microsoft.com/overview/choose-azure-opensource)
 - [Microsoft Teams](/MicrosoftTeams/teams-overview)
 

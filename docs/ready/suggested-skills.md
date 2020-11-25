@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d1c30e7d2fdc98aedb61e6c7abd403fd482c74f4
-ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
+ms.openlocfilehash: 582552df4f571f4f6976f8ae6585238600c5d5b5
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92253431"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997048"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
@@ -42,7 +42,7 @@ ms.locfileid: "92253431"
 
 準備フェーズでは、アーキテクトは、すべての Azure 環境にまたがるソリューションを設計するよう求められます。 アーキテクトは、次のスキル構築リソースを使用して、これらのタスクに対して準備できます。
 
-- [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations): 適切な基本的ソリューションの設計を支援する Pluralsight コース。
+- [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations):適切な基本的ソリューションの設計を支援する Pluralsight コース。
 - [Microsoft Azure アーキテクチャ](https://www.pluralsight.com/courses/cloud-architecture-foundations): アーキテクトに Azure アーキテクチャの基礎を教える Pluralsight コース。
 - [Microsoft Azure 移行の設計](https://www.pluralsight.com/courses/cloud-architecture-foundations): アーキテクトが移行ソリューションを設計するのに役立つ Pluralsight コース。
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f38e8de88c38ef27ca6148bd5ff61c1dfdbc1b7e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8449ccec7252e35f0ed113c3d9c7cb29de792716
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574807"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996181"
 ---
 # <a name="governance-or-compliance-strategy"></a>ガバナンスまたはコンプライアンスの戦略
 
@@ -30,7 +30,7 @@ ms.locfileid: "88574807"
 
 **国際標準化機構 (ISO) 27001 コンプライアンスのブループリント:** 組織が ISO コンプライアンス標準に準拠する必要がある場合は、[ISO 27001 共有サービス ブループリント サンプル](/azure/governance/blueprints/samples/iso27001-shared)が、より効果的な MVP として役立つことがあります。 このブループリントを使用すると、反復的プロセスの早い段階で、より豊富なガバナンス制約を生成できます。 [ISO 27001 App Service Environment/SQL Database ワークロード ブループリント サンプル](/azure/governance/blueprints/samples/iso27001-ase-sql-workload)を使用すると、共有サービス ブループリントを拡張してコントロールをマップし、アプリケーション環境用の共通アーキテクチャをデプロイできます。
 
-**クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン テンプレート:** より堅牢なガバナンスの出発点が必要になることがあります。 その場合は、[クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン](../../ready/enterprise-scale/index.md)を検討してください。 クラウド導入フレームワークのエンタープライズ規模のランディング ゾーンのアプローチは、1,000 を超える資産 (アプリケーション、インフラストラクチャ、またはデータ資産) をクラウドでホストするという中期目標 (24 か月以内) を設けている導入チームに焦点を当てています。 クラウド導入フレームワークのエンタープライズ規模のランディング ゾーンは、このような大規模なクラウド導入の取り組みにおける複雑なガバナンス シナリオの "*事実上の*" 選択肢となります。
+**クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン テンプレート:** より堅牢なガバナンスの出発点が必要になることがあります。 その場合は、[クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン](../../ready/enterprise-scale/index.md)を検討してください。 クラウド導入フレームワークのエンタープライズ規模のランディング ゾーンのアプローチは、1,000 を超える資産 (アプリケーション、インフラストラクチャ、またはデータ資産) をクラウドでホストするという中期目標 (24 か月以内) を設けている導入チームに焦点を当てています。 クラウド導入フレームワークのエンタープライズ規模のランディング ゾーンは、このような大規模なクラウド導入の取り組みにおける複雑なガバナンス シナリオの "事実上の" 選択肢となります。
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>前提条件を完了するためのパートナーシップ オプション
 

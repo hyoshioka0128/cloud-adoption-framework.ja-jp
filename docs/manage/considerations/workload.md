@@ -7,20 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 683f551ca61da0acbd80dd8e670fd4bb0a620ee6
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: a79c9e158bddacacce13730b017352c9f2e027a9
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775957"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996351"
 ---
 # <a name="workload-operations-in-cloud-management"></a>クラウド管理におけるワークロードの運用
 
 ワークロードには、ビジネスの成功に不可欠なものもあります。 このようなワークロードの場合、管理ベースラインは、クラウド管理に必要なビジネス コミットメントを満たすのに十分ではありません。 プラットフォーム運用でさえ、ビジネス コミットメントを満たすには不十分な場合があります。 このような重要性の高いワークロードのサブセットでは、ワークロードが機能するしくみとそれがサポートされるしくみに特に注目する必要があります。
 
 その結果、ワークロードの運用への投資によって、パフォーマンスの向上、業務が中断するリスクの低減、システム障害発生時の迅速な復旧が可能になります。 この記事では、このような優先度の高いワークロードの継続的な運用に投資して、ビジネス コミットメントの改善を促進する方法について説明します。
-
-<!-- docutune:disable Pareto -->
 
 ## <a name="when-to-invest-in-workload-operations"></a>ワークロードの運用に投資するタイミング
 

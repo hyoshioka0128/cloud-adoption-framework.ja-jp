@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f268e1a91f70b3cfb114e8769ef6cea66077eee3
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank
+ms.openlocfilehash: f3174a439376cbb23f1446a1bdca30f77e613363
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604561"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446829"
 ---
 <!-- docutune:casing "natural language understanding" -->
 <!-- cSpell:ignore Twilio -->

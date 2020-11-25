@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5af45a28a2047d05fa48ca76bbc7468816cfd610
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank
+ms.openlocfilehash: 88799ab1cadd5274b778f6eef6886b9bdff1778c
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604599"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446846"
 ---
 <!-- cSpell:ignore Lucene -->
 

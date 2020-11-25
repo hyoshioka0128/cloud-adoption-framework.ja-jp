@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: adf762a9c813b68905f0930670111a949565d55a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 183c2a8ef8df5f72c51820c7a8ac7d593805f866
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885237"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994396"
 ---
 # <a name="examples-of-agility-outcomes"></a>機敏性の成果の例
 
@@ -32,7 +32,7 @@ ms.locfileid: "88885237"
 
 - **例 1:** 米国を拠点とするある企業のヨーロッパ支部は、イギリス国内での運用がサポートされるデータベースで顧客データを保護することによって、GDPR 規制を順守する必要があります。 SQL Server の既存のバージョンでは、この行レベルのセキュリティはサポートされていません。 インプレース アップグレードは破壊的すぎます。 この顧客は、Azure SQL Database を使用したデータベースのレプリケーションとアップグレードによって、必要なコンプライアンス対策をほんの数週間で追加しています。
 
-- **例 2:** ある物流会社が未開拓の市場を発見しましたが、その市場のマーケット シェアを獲得するには、自社の最重要アプリケーションの新しいバージョンが必要です。 大手の競合他社も、同じ発見を行っています。 この会社は、クラウド対応アプリケーションの導入の取り組みを通して顧客を囲い込み、DevOps 駆動型開発アプローチによる *x* か月の先行によって、対応が遅かった長年の競争相手を出し抜きました。 この迅速な市場への参入によって、顧客基盤が確保されました。
+- **例 2:** ある物流会社が未開拓の市場を発見しましたが、その市場のマーケット シェアを獲得するには、自社の最重要アプリケーションの新しいバージョンが必要です。 大手の競合他社も、同じ発見を行っています。 この会社は、クラウド対応アプリケーションの導入の取り組みを通して顧客を囲い込み、DevOps 駆動型開発アプローチによる _x_ か月の先行によって、対応が遅かった長年の競争相手を出し抜きました。 この迅速な市場への参入によって、顧客基盤が確保されました。
 
 <!-- docutune:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68fe3adc1807926ab97ebbcf0b47f5eab960f8f
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 4c2e35b3401d4a4eaeb534befee9e33c4b1a83df
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713296"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996420"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -155,7 +155,7 @@ Azure VMware Solution のプライベート クラウドを作成する方法に
 
     ![Azure VMware Solution のプライベート クラウドを作成するための Azure portal ペインのスクリーンショット。](./media/contoso-migration-vmware-to-azure/create-private-cloud.png)
 
-1. チームは Azure VMware Solution のプライベート クラウドのデプロイが完了したことを確認するために、リソース グループに移動して、プライベート クラウドのリソースを選択します。 状態が "*成功*" として表示されます。
+1. チームは Azure VMware Solution のプライベート クラウドのデプロイが完了したことを確認するために、リソース グループに移動して、プライベート クラウドのリソースを選択します。 状態が "**成功**" として表示されます。
 
     ![デプロイが成功したことを示す Contoso Azure VMware Solution のプライベート クラウド ページのスクリーンショット。](./media/contoso-migration-vmware-to-azure/validate-deployment.png)
 
@@ -168,7 +168,7 @@ Azure VMware Solution のプライベート クラウドには、仮想ネット
 1. Contoso チームはまず、ゲートウェイ サブネットを含む仮想ネットワークを作成します。
 
     > [!IMPORTANT]
-    > プライベート クラウドを作成したときに使用したアドレス空間と重複 "*していない*" アドレス空間を使用する必要があります。
+    > プライベート クラウドを作成したときに使用したアドレス空間と重複 "_していない_" アドレス空間を使用する必要があります。
 
 1. ExpressRoute VPN ゲートウェイを作成します。適切な SKU を選択し、 **[確認と作成]** を選択する必要があります。
 

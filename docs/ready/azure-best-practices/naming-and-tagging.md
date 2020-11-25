@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 9c1377bfed389d435403f9f72dd6ac4e48ed8ee8
-ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
+ms.openlocfilehash: 48e429673c3921a91e441abde7d14c3d9df7400f
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94378938"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997388"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
@@ -22,7 +22,7 @@ ms.locfileid: "94378938"
 
 運用管理要件と会計処理要件をサポートするようにクラウド資産を整理します。 明確に定義された名前付け規則とメタデータのタグ付け規則を使用すると、リソースをすばやく見つけて管理するのに役立ちます。 これらの規則は、チャージバックとショーバックという会計処理を使用して、クラウドの使用コストをビジネス チームに関連付けるためにも役立ちます。
 
-リソースの正確な表現と名前付けは、セキュリティ保護のために不可欠です。 セキュリティ インシデントが発生した場合、影響を受けるシステム、それらのシステムのビジネスへの潜在的な影響、およびそれらが使用されている対象を迅速に特定することが、適切なリスク決定を行うために重要です。 [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction) や [Azure Sentinel](https://docs.microsoft.com/azure/sentinel) などのセキュリティ サービスは、リソースと、リソース名によって関連付けられているログおよびアラート情報を参照します。
+リソースの正確な表現と名前付けは、セキュリティ保護のために不可欠です。 セキュリティ インシデントが発生した場合、影響を受けるシステム、それらのシステムのビジネスへの潜在的な影響、およびそれらが使用されている対象を迅速に特定することが、適切なリスク決定を行うために重要です。 [Azure Security Center](/azure/security-center/security-center-introduction) や [Azure Sentinel](/azure/sentinel) などのセキュリティ サービスは、リソースと、リソース名によって関連付けられているログおよびアラート情報を参照します。
 
 Azure では、[Azure リソースの名前付け規則と制限事項](/azure/azure-resource-manager/management/resource-name-rules)が定義されています。 このガイダンスでは、エンタープライズ クラウドの導入作業を支援するための詳細な推奨事項について説明します。
 
@@ -257,7 +257,7 @@ Azure では、[Azure リソースの名前付け規則と制限事項](/azure/a
 | マネージド ID                | Resource group                        | id-\<App or service name\>                                  | id-appcn-keda-prod-eus-001                                                                         |
 
 > [!NOTE]
-> 上記を含め、このドキュメント内にある名前の例では、3 桁の埋め込み (\<\#\#\#\>) が示されています。 つまり、  mktg-prod-*001*
+> 上記を含め、このドキュメント内にある名前の例では、3 桁の埋め込み (\<\#\#\#\>) が示されています。 つまり、 mktg-prod-*001*
 >
 > 構成管理データベース (CMDB)、IT 資産管理ツール、または従来のアカウンティング ツールで資産が管理されている場合、埋め込みにより、人間が読みやすくなり、並べ替えるのに役立ちます。 デプロイされた資産が IT 資産の大規模なインベントリまたはポートフォリオの一部として一元的に管理されている場合、埋め込みアプローチは、インベントリの名前付けを管理するためにこれらのシステムで使用されるインターフェイスと適合します。
 >

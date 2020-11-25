@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: aac174a109954c04fa192e4d2d62926433d95dfc
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: f4942f91b5ac265679a8cfb6545be9b81d459550
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510585"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995926"
 ---
 # <a name="compare-common-cloud-operating-models"></a>一般的なクラウド運用モデルを比較する
 
-運用モデルは、サポートする対象のビジネスに特定かつ固有であり、それらの現在の要件と制約に基づいています。 しかし、このような独自性は、運用モデルに "*2 つと同じものがない*" ことを示唆するものではありません。 お客様の運用モデルには、いくつかの一般的なパターンがあります。 この記事では、最も一般的な 4 つのパターンについて説明します。
+運用モデルは、サポートする対象のビジネスに特定かつ固有であり、それらの現在の要件と制約に基づいています。 しかし、このような独自性は、運用モデルに "_2 つと同じものがない_" ことを示唆するものではありません。 お客様の運用モデルには、いくつかの一般的なパターンがあります。 この記事では、最も一般的な 4 つのパターンについて説明します。
 
 ## <a name="operating-model-comparison"></a>運用モデルの比較
 
@@ -41,7 +41,7 @@ ms.locfileid: "89510585"
 | **基本ユーティリティ** | 該当なし | 該当なし、または少ないサポート | 集中化された、より多くのサポート | 最も多いサポート |
 | **クラウド基盤** | 該当なし | 該当なし | ハイブリッド、プロバイダー固有、または地域の基盤 | 分散型と同期 |
 
-- **戦略上の優先事項または[動機](../strategy/motivations.md):** 各運用モデルは、一般的な[クラウド導入の戦略的動機](../strategy/motivations.md)に対応できます。 ただし、一部の運用モデルでは、特定の動機を簡単に実現できます。
+- **戦略上の優先事項または [動機](../strategy/motivations.md):** 各運用モデルは、一般的な [クラウド導入の戦略的動機](../strategy/motivations.md)に対応できます。 ただし、一部の運用モデルでは、特定の動機を簡単に実現できます。
 
 - **[ポートフォリオのスコープ](../reference/fundamental-concepts/hosting-hierarchy.md):** 下のポートフォリオ スコープの行は、特定の運用モデルがサポートするように設計されている最大のスコープを示しています。 たとえば、集中型の運用は、少数のランディング ゾーン向けに設計されています。 しかし、その運用モデルに決定した場合、多数のランディング ゾーンや複雑さが変化するランディング ゾーンの設計が必要とされる、大規模で複雑なポートフォリオを管理しようとしている組織に運用上のリスクが発生する可能性があります。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f24f29b9d910c97da2dc1109db8b186c0dfef0bd
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: 372dc33a6088f2a5ccf1421abd40eb2b71448975
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432637"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996028"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure リージョンの決定ガイド
 
@@ -23,7 +23,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 - **容量:** 各リージョンには最大容量があります。 これは、どの種類のサブスクリプションでどの種類のサービスをどのような状況でデプロイできるかに影響する場合があります。 これは、サブスクリプション クォータとは異なります。 大規模なデータセンターを Azure に移行する計画をしている場合は、ご自分の地域の Azure フィールド チームまたはアカウント マネージャーに問い合わせて、必要な規模でデプロイできることを確認することをお勧めします。
 - **制約:** 特定のリージョンでのサービスのデプロイには、特定の制約が適用されます。 たとえば、一部のリージョンは、バックアップまたはフェールオーバーのターゲットとしてのみ使用できます。 注意が必要なその他の制約は、[データ主権要件](https://azure.microsoft.com/global-infrastructure/geographies)です。
 - **主権:** 特定のリージョンは、特定の主権エンティティ専用になっています。 すべてのリージョンは Azure リージョンですが、こうした主権リージョンは他の Azure から完全に分離されています。 これらは、必ずしも Microsoft によって管理されるわけではなく、特定の種類の顧客に制約される場合もあります。 このような主権リージョンは次のとおりです。
-  - [Azure China](https://azure.microsoft.com/global-infrastructure/china)
+  - [Azure China 21Vianet](https://azure.microsoft.com/global-infrastructure/china)
   - [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany):Azure Germany は非推奨とされており、ドイツ国内の標準の非主権 Azure リージョンが推奨されています。
   - [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
   - [オーストラリア](https://azure.microsoft.com/global-infrastructure/australia)の 2 つのリージョンは Microsoft によって管理されていますが、これらはオーストラリア政府とその顧客および請負業者向けに提供されています。 そのため、これらのリージョンは、他のソブリン クラウドと似たクライアントの制約を受けます。
@@ -117,7 +117,7 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 チームがベースライン アプローチに慣れ、準備が整ったら、データドリブンの前提条件についていくつか考慮する必要があります。
 
-- **全般的な探索:** 「 [ドキュメントの複雑さ](#document-complexity)」の表を完成させます。
+- **全般的な探索:** 「[ドキュメントの複雑さ](#document-complexity)」の表を完成させます。
 - **影響を受ける各国でユーザー プロファイル分析を実行する:** 全般的なエンド ユーザー ルーティングを移行プロセスの早期に理解しておくことが重要です。 グローバル専用回線を変更し、ExpressRoute のような接続をクラウド データセンターに追加することは、数か月のネットワークの遅延が必要になることがあります。 できる限りプロセスの早い段階でこれに対処します。
 - **初期デジタル資産の合理化:** 移行戦略が複雑になったときは、常に初期デジタル資産の合理化を完了する必要があります。 [デジタル資産の合理化](../../digital-estate/index.md)に関するガイダンスを参照してください。
   - **デジタル資産の追加要件:** データ主権要件の影響を受けるすべてのワークロードを識別するためのタグ付けポリシーを確立します。 必要なタグは、デジタル資産の合理化で始まり、移行済みの資産まで運ばれる必要があります。

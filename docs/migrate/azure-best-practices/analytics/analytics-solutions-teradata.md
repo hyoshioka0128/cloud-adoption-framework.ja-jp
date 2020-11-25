@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ed45f10e54ddfb4bac090dd9815e61b503b6003
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: f81930fc3fd90a83cfb3a175d744639cdd0290dd
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713379"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996300"
 ---
 <!-- cSpell:ignore DATEADD DATEDIFF Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" Attunity "Qlik Replicate" -->
 
@@ -221,7 +221,7 @@ Teradata 環境からデータと ETL を移行するプロセスの詳細につ
 
   大きなテーブル同士の結合の場合、一方または両方 (理想的には両方) のテーブルの結合列にハッシュを分散すると、結合するデータ行が同じ処理ノードに既に併置されているので、結合処理をローカルで確実に実行するのに役立ちます。
 
-  Azure Synapse によって、小さいテーブルと大きいテーブルの結合でローカル結合を実現するための追加の方法が提供されます (これは、多くの場合、スター スキーマ モデルで "*ディメンション テーブルとファクト テーブルの結合*" と呼ばれます)。 小さいディメンション テーブルがすべてのノードにレプリケートされると、大きいテーブルの結合キーのすべての値に対して、一致するディメンション行をローカル環境で確実に使用できるようになります。 ディメンション テーブルが大きくない場合、テーブルをレプリケートする場合のオーバーヘッドは比較的低くなります。 この場合、前に説明したハッシュ分散アプローチを使用することが推奨されます。
+  Azure Synapse によって、小さいテーブルと大きいテーブルの結合でローカル結合を実現するための追加の方法が提供されます (これは、多くの場合、スター スキーマ モデルで "_ディメンション テーブルとファクト テーブルの結合_" と呼ばれます)。 小さいディメンション テーブルがすべてのノードにレプリケートされると、大きいテーブルの結合キーのすべての値に対して、一致するディメンション行をローカル環境で確実に使用できるようになります。 ディメンション テーブルが大きくない場合、テーブルをレプリケートする場合のオーバーヘッドは比較的低くなります。 この場合、前に説明したハッシュ分散アプローチを使用することが推奨されます。
 
 - **データのインデックス作成:** Azure Synapse により、さまざまなインデックス作成オプションが提供されますが、これらのオプションの動作と使用は Teradata のインデックス作成オプションとは異なります。 Azure Synapse でのインデックス作成オプションについては、[Azure Synapse プールでのテーブルの設計](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview)に関するページを参照してください。
 

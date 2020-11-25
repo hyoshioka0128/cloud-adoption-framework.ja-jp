@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a370a4aa58c176ccb1dc58a777a10f2f91ca7370
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 31aeba36eaedef0956aacd21647c518afc1b6222
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884931"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995484"
 ---
 # <a name="mature-team-structures"></a>チーム構造を成熟させる
 
@@ -40,7 +40,7 @@ ms.locfileid: "88884931"
 5. [運用での連携](#operational-alignment)
 6. [クラウドのセンター オブ エクセレンス (CCoE)](#cloud-center-of-excellence)
 
-ほとんどの企業は、"*クラウド導入チーム*" 程度の規模からスタートします。 しかし、[MVP のベスト プラクティス](#best-practice-minimum-viable-product-mvp)構造により近い組織構造を確立する方法をお勧めします。
+ほとんどの企業は、"_クラウド導入チーム_" 程度の規模からスタートします。 しかし、[MVP のベスト プラクティス](#best-practice-minimum-viable-product-mvp)構造により近い組織構造を確立する方法をお勧めします。
 
 ## <a name="cloud-adoption-team-only"></a>クラウド導入チームのみ
 
@@ -51,7 +51,7 @@ ms.locfileid: "88884931"
 小規模または早期の導入作業の場合、このチームはメンバーが 1 人だけのこともあります。 大規模な作業または後半のステージの作業では、6 人程度のエンジニアで構成されるクラウド導入チームが複数存在することも一般的です。 規模やタスクにかかわらず、どのクラウド導入チームにも共通しているのは、クラウドにソリューションをオンボードするための手段を提供するということです。 組織によっては、この組織構造で十分という場合もあります。 [クラウド導入チーム](./cloud-adoption.md)に関する記事では、クラウド導入チームの構造、構成、役割について、さらに深い分析情報を得ることができます。
 
 > [!WARNING]
-> クラウド導入チーム (1 つまたは複数) **だけ**で活動することは、アンチパターンと見なされ、避ける必要があります。 少なくとも、[MVP のベスト プラクティス](#best-practice-minimum-viable-product-mvp)を検討してください。
+> クラウド導入チーム (1 つまたは複数) **だけ** で活動することは、アンチパターンと見なされ、避ける必要があります。 少なくとも、[MVP のベスト プラクティス](#best-practice-minimum-viable-product-mvp)を検討してください。
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>ベスト プラクティス:実用最小限の製品 (MVP)
 

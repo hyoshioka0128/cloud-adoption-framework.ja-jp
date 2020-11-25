@@ -7,12 +7,13 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 171fdfc896ec0669a010be9a9afb33175b5210a6
-ms.sourcegitcommit: c8979feb0efeb54dcef7a0b5e4084ae37016020a
+ms.custom: think-tank
+ms.openlocfilehash: 502dba2d970f46d8e929755a9c05be270724f501
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93122100"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447100"
 ---
 <!-- docutune:casing "Movie Tickets Online" -->
 
@@ -38,7 +39,7 @@ AppDynamics はほとんどのユース ケースに対してビジネスの分�
 
 ![AppDynamics のフロー マップ](./media/app-dynamics-flow-map.jpg)
 
-" _図 1:AppDynamics のフロー マップ。_ "
+"_図 1:AppDynamics のフロー マップ。_ "
 
 ## <a name="appdynamics-identifies-business-metrics"></a>AppDynamics でビジネス メトリックを特定する
 
@@ -70,7 +71,7 @@ AppDynamics を使用すると、アプリケーションのビジネス価値�
 
 ![AppDynamics のビジネスへの影響ダッシュボード](./media/app-dynamics-business-impact-dashboard.jpg)
 
-" _図 2:AppDynamics のビジネスへの影響ダッシュボード。_ "
+"_図 2:AppDynamics のビジネスへの影響ダッシュボード。_ "
 
 ## <a name="resources-to-help-identify-business-metrics"></a>ビジネス メトリックの特定に役立つリソース
 
@@ -92,7 +93,7 @@ AppDynamics がビジネスおよびアプリケーションのメトリック�
 
 ![AppDynamics の移行の比較](./media/app-dynamics-migration-comparison.jpg)
 
-" _図 3:AppDynamics の移行の比較。_ "
+"_図 3:AppDynamics の移行の比較。_ "
 
 ## <a name="next-steps"></a>次のステップ
 

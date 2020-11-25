@@ -7,13 +7,15 @@ ms.date: 10/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8af689a8929f5936a09e1205d3186a59a25e6d43
-ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
+ms.custom: think-tank
+ms.openlocfilehash: 1e1a9ba6b40baab411c8ddb0d88711c86fb31be3
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93352135"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447163"
 ---
+<!-- docutune:casing AGL WSP -->
 <!-- cSpell:ignore AGL Bee'ah WSP -->
 
 # <a name="sustainability-outcomes-and-benefits-for-business"></a>ビジネスにおける持続可能性の成果と利点

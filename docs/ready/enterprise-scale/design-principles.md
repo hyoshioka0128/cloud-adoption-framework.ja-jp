@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f2746c47b99204bff629efdf60e8a9e1436168de
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: think-tank
+ms.openlocfilehash: 0e1d7d0ef9c58836e57a6d3e325087e15676bf2d
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885084"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447185"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-design-principles"></a>クラウド導入フレームワークのエンタープライズ規模の設計原則
 

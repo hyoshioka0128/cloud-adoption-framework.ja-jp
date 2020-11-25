@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3d799dd4d5d1821a8d914ad5ad4daae631d65df6
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank
+ms.openlocfilehash: 6909c0c6f5b60694ebb7dc6d98d794e484f11efe
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604621"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446642"
 ---
 # <a name="what-are-ai-applications"></a>AI アプリケーションとは
 

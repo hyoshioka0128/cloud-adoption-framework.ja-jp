@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9b1cf8600bd0160f02de9bfd4532c189008b5322
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 8bd22bbdfd3f0d15a11bb6212e5b745a6aaa6bec
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885441"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994685"
 ---
 # <a name="deploy-workloads-to-azure-stack-hub"></a>Azure Stack Hub にワークロードをデプロイする
 
@@ -24,7 +24,7 @@ Azure Stack を使用すると、組織は独自の Azure インスタンスを�
 
 ## <a name="infrastructure-as-a-service-deployment"></a>サービスとしてのインフラストラクチャのデプロイ
 
-サービスとしてのインフラストラクチャ (IaaS) をデプロイする理由が何であれ、Azure Stack Hub へのデプロイは、他の IaaS のデプロイと似ています。 IaaS は仮想マシン (VM) にすぎないと考える人が多くいますが、IaaS はそれだけではありません。 Azure または Azure Stack に VM をデプロイすると、マシンには、ドメイン ネーム システム、パブリック IP、ファイアウォール規則 (ネットワーク セキュリティ グループとも呼ばれます) を含むソフトウェアによるネットワークと、その他の多くの機能が含まれることになります。 VM をデプロイすると、Azure Blob Storage を使用して、VM のためのディスクがソフトウェアによるストレージ上に作成されます。
+サービスとしてのインフラストラクチャ (IaaS) をデプロイする理由が何であれ、Azure Stack Hub へのデプロイは、他の IaaS のデプロイと似ています。 IaaS は仮想マシン (VM) にすぎないと考える人が多くいますが、IaaS はそれだけではありません。 Azure または Azure Stack に VM をデプロイする場合、マシンには、ドメイン ネーム システム、パブリック IP、ファイアウォール規則 (ネットワーク セキュリティ グループとも呼ばれます) を含むソフトウェアによるネットワークと、それ以外の多くの機能が含まれることになります。 VM をデプロイすると、Azure Blob Storage を使用して、VM のためのディスクがソフトウェアによるストレージ上に作成されます。
 
 VM の Azure Stack へのデプロイに関する詳細なガイダンスについては、[Azure Stack のコンピューティングの概要](/azure-stack/user/azure-stack-compute-overview?view=azs-2002)に関する記事を参照してください。
 

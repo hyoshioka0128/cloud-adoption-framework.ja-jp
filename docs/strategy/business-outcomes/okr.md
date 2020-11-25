@@ -7,14 +7,15 @@ ms.date: 10/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 92e193bd14969ad45cb717f22a5ffd10a5dca661
-ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
+ms.custom: think-tank
+ms.openlocfilehash: 0be8841fb83d2c00fb10a86bb103880ee59b7e7a
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93352136"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447202"
 ---
-<!--docutune:casing WorkBoard -->
+<!-- docutune:casing WorkBoard -->
 
 # <a name="measure-business-outcomes-using-objectives-and-key-results-okrs"></a>目標と成果指標 (OKR) を使用してビジネスの成果を測定する
 
@@ -102,7 +103,7 @@ OKR の例を次に示します。
 
 **手順 5:改善:** 組織全体をさらに関与させる方法について、継続的に改善、再検討、見直しを行います。 スプレッドシートで OKR を管理することもできますが、組織の利益が最大になるのは、全員が目標達成に寄与し、整合性の取れたデータから分析情報を得られる場合です。
 
-[WorkBoard](https://appsource.microsoft.com/en-us/marketplace/co-sell/SOL-31525-NGJ?debug=true%2F%3FignoreAutoSignIn%3Dtrue&tab=Overview) に問い合わせ、始めましょう。
+[WorkBoard](https://appsource.microsoft.com/en-us/marketplace/co-sell/SOL-31525-NGJ) に問い合わせ、始めましょう。
 
 > [!div class="nextstepaction"]
 > [学習メトリックに合わせて取り組みを調整する](../learning-metrics.md)
