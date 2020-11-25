@@ -416,7 +416,7 @@ items:
                   - name: Moodle の移行
                     items:
                       - name: 概要
-                        href: scenarios/lamp/moodle/index.md
+                        href: scenarios/lamp/moodle/migration-overview.md
                       - name: 前提条件
                         href: scenarios/lamp/moodle/migration-pre.md
                       - name: アーキテクチャとテンプレート
