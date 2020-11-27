@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: はじめに
+  - name: 作業開始
     items:
       - name: 概要
         href: get-started/index.md
@@ -417,17 +417,19 @@ items:
                     items:
                       - name: 概要
                         href: scenarios/lamp/moodle/migration-overview.md
-                      - name: 前提条件
+                      - name: Moodle の移行を準備
                         href: scenarios/lamp/moodle/migration-pre.md
                       - name: アーキテクチャとテンプレート
                         href: scenarios/lamp/moodle/migration-arch.md
-                      - name: リソースの説明
+                      - name: Moodle 移行のリソース
                         href: scenarios/lamp/moodle/migration-resources.md
+                      - name: 仮想ネットワーク ゲートウェイ接続
+                        href: scenarios/lamp/moodle/vpn-gateway.md
                       - name: 移行の手順
                         href: scenarios/lamp/moodle/migration-start.md
-                      - name: Azure インフラストラクチャの構成
+                      - name: Moodle ワーカー ノードの設定
                         href: scenarios/lamp/moodle/azure-infra-config.md
-                      - name: 移行後
+                      - name: Moodle の移行をフォローアップ
                         href: scenarios/lamp/moodle/migration-post.md
               - name: 開発/テスト ワークロード
                 items:
