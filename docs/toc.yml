@@ -878,7 +878,7 @@ items:
                   - name: データの管理
                     items:
                       - name: データの分類
-                        href: govern/policy-compliance/data-classification.md
+                        href: innovate/best-practices/data-classification.md
                       - name: データのセキュリティ保護
                         href: /azure/architecture/data-guide/scenarios/securing-data-solutions?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                       - name: Data Catalog を使用してデータに注釈を付ける
