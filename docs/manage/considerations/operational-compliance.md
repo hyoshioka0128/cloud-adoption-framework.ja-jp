@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dc22c00d9470209f4442f1b9c4a194b8b1fdb417
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5e2bdbc808b6360691c39f4d124cd3dd7ede6c75
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223934"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879737"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>クラウド管理における運用のコンプライアンス
 
@@ -30,7 +30,7 @@ ms.locfileid: "83223934"
 
 ### <a name="resource-consistency"></a>リソースの整合性
 
-クラウド管理チームが運用上のコンプライアンスに向けて実行できる最も効果的な手順は、リソース編成とタグ付けの整合性を確立することです。 リソースが一貫して編成され、タグ付けされていると、他のすべての運用タスクが簡単になります。 リソースの整合性に関する詳細なガイダンスについては、[ガバナンスの方法論](../../govern/index.md)に関するページを参照してください。 具体的には、[初期ガバナンス基盤に関する記事](../../govern/initial-foundation.md)を読んで、リソースの整合性の開発を始める方法を学習します。
+クラウド管理チームが運用上のコンプライアンスに向けて実行できる最も効果的な手順は、リソース編成とタグ付けの整合性を確立することです。 リソースが一貫して編成され、タグ付けされていると、他のすべての運用タスクが簡単になります。 リソースの整合性に関する詳細なガイダンスについては、[ガバナンス手法](../../govern/index.md)に関する記事をご覧ください。 具体的には、[初期ガバナンス基盤に関する記事](../../govern/initial-foundation.md)を読んで、リソースの整合性の開発を始める方法を学習します。
 
 ### <a name="environment-consistency"></a>環境の整合性
 
@@ -45,6 +45,8 @@ ms.locfileid: "83223934"
 ### <a name="update-consistency"></a>更新の整合性
 
 アプローチの安定性は、より安定した運用につながります。 ただし、クラウド管理プロセス内でいくつかの変更が必要になります。 特に、中断を削減し、コストを制御するには、通常の修正プログラムとパフォーマンスの変更が不可欠です。
+
+<!-- docutune:ignore "a cloud management methodology" -->
 
 成熟したクラウド管理手法の多くの価値の 1 つは、必要な変更の安定化と制御に重点を置くことです。
 

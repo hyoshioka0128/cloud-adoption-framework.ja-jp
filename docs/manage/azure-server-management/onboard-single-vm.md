@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1b8389e4869383be2ed03600e904a2f982d8a237
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 5af275b0309008c1ebcab8c1f3ff9edba2789b2e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024523"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880366"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>評価のために単一の VM 上のサーバー管理サービスを有効にする
 
@@ -21,7 +21,7 @@ ms.locfileid: "93024523"
 > [!NOTE]
 > VM 上に Azure 管理サービスを実装する前に、必須の [Log Analytics ワークスペースと Azure Automation アカウント](./prerequisites.md#create-a-workspace-and-automation-account)を作成します。
 
-Azure portal で、個々の仮想マシンを Azure サーバー管理サービスにオンボードするだけです。 これらのサービスをオンボードする前に、それらに慣れてしておくことができます。 VM インスタンスを選択すると、 [管理ツールとサービス](./tools-services.md)の一覧のすべてのソリューションが、 **[操作]** メニューまたは **[監視]** メニューに表示されます。 ソリューションを選択し、ウィザードの指示に従ってオンボードできます。
+Azure portal で、個々の仮想マシンを Azure サーバー管理サービスにオンボードするだけです。 これらのサービスをオンボードする前に、それらに慣れてしておくことができます。 VM インスタンスを選択すると、[管理ツールとサービス](./tools-services.md)の一覧のすべてのソリューションが、 **[操作]** メニューまたは **[監視]** メニューに表示されます。 ソリューションを選択し、ウィザードの指示に従ってオンボードできます。
 
 ![Azure portal 内の仮想マシン設定のスクリーンショット](./media/onboarding-single-vm.png)
 
@@ -29,8 +29,8 @@ Azure portal で、個々の仮想マシンを Azure サーバー管理サービ
 
 これらのソリューションを個々の VM にオンボードする方法の詳細については、以下を参照してください。
 
-- [Azure 仮想マシンから Update Management、Change Tracking、および Inventory ソリューションをオンボードする](/azure/automation/change-tracking/manage-inventory-vms)
-- [Azure Monitoring for VMs をオンボードする](/azure/azure-monitor/insights/vminsights-enable-single-vm)
+- [Azure の VM の Update Management ソリューションおよび変更履歴とインベントリ ソリューションをオンボードする](/azure/automation/change-tracking/manage-inventory-vms)
+- [Azure Monitor for VMs の配布準備をする](/azure/azure-monitor/insights/vminsights-enable-single-vm)
 
 ## <a name="next-steps"></a>次のステップ
 

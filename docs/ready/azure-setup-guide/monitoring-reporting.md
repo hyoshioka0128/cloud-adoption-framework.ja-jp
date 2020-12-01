@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 192120d7c909c9907a649a66c93c660693d41de8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 056ad4ff6386634efd3022919f023533590d05d4
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877247"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997320"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 内での監視とレポート
 
@@ -102,7 +102,7 @@ Azure Service Health アラートを設定するには、[Azure portal](https://
 Azure Advisor は、Azure デプロイのベスト プラクティスをフォローして実装するのに役立つ個人用に設定された無料のクラウド コンサルタントです。 リソースの構成と使用状況テレメトリが分析され、環境を最適化に役立つソリューションが推奨されます。 推奨事項は、次のカテゴリに分割されています。
 
 - **高可用性:** ビジネスに不可欠なアプリケーションの継続性を向上させることができます。 推奨事項には、可用性セットへの仮想マシンの追加や geo 冗長エンドポイントの追加などがあります。
-- **セキュリティ:** セキュリティ侵害に至る可能性がある脅威と脆弱性を検出します。 推奨事項には、Azure ディスク暗号化の適用やネットワーク セキュリティ グループの有効化などがあります。
+- **セキュリティ:** セキュリティ侵害に至る可能性がある脅威と脆弱性を検出します。 推奨事項には、Azure Disk Encryption の適用やネットワーク セキュリティ グループの有効化などがあります。
 - **パフォーマンス:** アプリケーションの速度を向上させます。 推奨事項には、インデックスの作成または Traffic Manager の設定の再構成による SQL クエリのパフォーマンスの向上などが含まれます。
 - **コスト:** Azure の全体的な支出を最適化し、削減します。 推奨事項には、使用頻度の低い仮想マシンのサイズ変更またはシャットダウンや、総保有コストを削減するための Azure Reservations への切り替えなどが含まれます。
 - **オペレーショナル エクセレンス:** プロセスとワークフローの効率性と管理性を向上させます。 推奨事項としては、Azure Policy ルールの設定と適用、無効なログ アラート ルールの修復、Azure Service Health アラートの構成などが含まれる場合があります。

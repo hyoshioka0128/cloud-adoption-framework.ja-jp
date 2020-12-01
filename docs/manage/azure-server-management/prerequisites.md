@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3a591c3f8419c11cb8077a897fb05784407a2d52
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 1fe1b40d904163992fe95635310d29ce89cb289e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024591"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880281"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>フェーズ 1:Azure サーバー管理サービスの前提条件となる計画
 
@@ -39,7 +39,7 @@ Azure 管理サービスをオンボードするために使用する多くの�
 
 以下の Azure サーバー管理サービスでは、リンクされた Log Analytics ワークスペースと Automation アカウントが必要です。
 
-- [Azure Update Management](/azure/automation/update-management/overview)
+- [更新管理](/azure/automation/update-management/overview)
 - [変更履歴とインベントリ](/azure/automation/change-tracking)
 - [Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker)
 - [Desired State Configuration](/azure/virtual-machines/extensions/dsc-overview)
@@ -52,15 +52,15 @@ Azure 管理サービスをオンボードするために使用する多くの�
 
 管理サービスのオンボードに必要なワークスペースとアカウントを準備するときは、次の問題を考慮します。
 
-- **Azure の地域と規制遵守:** Azure リージョンは " _地域_ " に分かれています。 [Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies)では、データの保存場所、主権、コンプライアンス、回復性に関する要件が地域的な境界内で確実に遵守されます。 ワークロードがデータ主権またはその他のコンプライアンス要件の対象となる場合、ワークスペースと Automation アカウントは、それらがサポートするワークロード リソースと同じ Azure の地域内のリージョンにデプロイされる必要があります。
+- **Azure の地域と規制遵守:** Azure リージョンは "_地域_" に分かれています。 [Azure の地域](https://azure.microsoft.com/global-infrastructure/geographies)では、データの保存場所、主権、コンプライアンス、回復性に関する要件が地域的な境界内で確実に遵守されます。 ワークロードがデータ主権またはその他のコンプライアンス要件の対象となる場合、ワークスペースと Automation アカウントは、それらがサポートするワークロード リソースと同じ Azure の地域内のリージョンにデプロイされる必要があります。
 - **ワークスペースの数:** 原則として、Azure の地域ごとに必要な最も少ない数のワークスペースを作成します。 コンピューティング リソースやストレージ リソースが配置される Azure の地域ごとに少なくとも 1 つのワークスペースを作成することをお勧めします。 この初期の配置により、今後データを異なる地域に移行する場合に規制の問題を回避しやすくなります。
-- **データ保持とキャッピング:** ワークスペースや Automation アカウントを作成するとき、データ保持ポリシーまたはデータ キャッピングの要件も考慮に入れることが必要な場合もあります。 ワークスペースを計画するときこれらの原則およびその他の考慮事項の詳細については、[Azure Monitor でログ データとワークスペースを管理する](/azure/azure-monitor/platform/manage-access)についての記事を参照してください。
+- **データ保持とキャッピング:** ワークスペースや Automation アカウントを作成するときに、データ保持ポリシーまたはデータ キャッピング要件を考慮に入れることが必要な場合もあります。 ワークスペースを計画するときこれらの原則およびその他の考慮事項の詳細については、[Azure Monitor でログ データとワークスペースを管理する](/azure/azure-monitor/platform/manage-access)についての記事を参照してください。
 - **リージョン マッピング:** Log Analytics ワークスペースと Azure Automation アカウントのリンクは特定の Azure リージョン間でのみサポートされます。 たとえば、Log Analytics ワークスペースが `East US` リージョンにホストされている場合、リンクされる Automation アカウントは、管理サービスと一緒に使用される `East US 2` リージョン内に作成する必要があります。 他のリージョン内に作成した Automation アカウントを `East US` 内のワークスペースにリンクすることはできません。 デプロイ リージョンの選択は、Azure の地域要件に大きく影響する可能性があります。 ワークスペースと Automation アカウントをホストするリージョンを決定する際は、[リージョン マッピング テーブル](/azure/automation/how-to/region-mappings)を参照してください。
 - **ワークスペース マルチホーム:** Azure Log Analytics エージェントは一部のシナリオでマルチホームをサポートしますが、この構成で実行すると、エージェントはいくつかの制限事項や課題に直面します。 特定のシナリオに対してマイクロソフトが推奨する場合を除き、Log Analytics エージェント上にマルチホームを構成しないでください。
 
 ## <a name="resource-placement-examples"></a>リソースの配置例
 
-Log Analytics ワークスペースと Automation アカウントの配置先となるサブスクリプションの選択には、複数の異なるモデルがあります。 つまり、ワークスペースと Automation アカウントは、Update Management サービスと Change Tracking および Inventory サービスの実装を担当するチームが所有するサブスクリプションに配置します。
+Log Analytics ワークスペースと Automation アカウントの配置先となるサブスクリプションの選択には、複数の異なるモデルがあります。 つまり、ワークスペースと Automation アカウントは、Update Management ソリューションおよび変更履歴とインベントリ サービスの実装を担当するチームが所有するサブスクリプションに配置します。
 
 ワークスペースと Automation アカウントを配置するいくつかの方法の例を次に示します。
 
@@ -95,7 +95,7 @@ Log Analytics ワークスペースと Automation アカウントの配置先と
 Azure portal を使用して Log Analytics ワークスペースを作成するには、「[ワークスペースを作成する](/azure/azure-monitor/learn/quick-create-workspace#create-a-workspace)」を参照してください。 次に、「[Azure Automation アカウントを作成する](/azure/automation/automation-quickstart-create-account)」の手順に従って、各ワークスペースに対応する Automation アカウントを作成します。
 
 > [!NOTE]
-> Azure portal を使用して Automation アカウントを作成すると、ポータルの既定では、Azure Resource Manager とクラシック デプロイ モデル リソースの両方の実行アカウントの作成が試行されます。 環境内にクラシック仮想マシンが備わっておらず、サブスクリプションの共同管理者でない場合、ポータルでは Resource Manager の実行アカウントが作成されますが、クラシック実行アカウントをデプロイするときにエラーが生成されます。 クラシック リソースをサポートする予定がない場合は、このエラーを無視することができます。
+> Azure portal を使用して Automation アカウントを作成すると、ポータルの既定では、Azure Resource Manager とクラシック デプロイ モデル リソースの両方の実行アカウントの作成が試行されます。 環境内にクラシック仮想マシンがなく、サブスクリプションの共同管理者でない場合、ポータルでは Resource Manager の実行アカウントが作成されますが、クラシック実行アカウントをデプロイするときにエラーが生成されます。 クラシック リソースをサポートする予定がない場合は、このエラーを無視することができます。
 >
 > [PowerShell](/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell) を使用して実行アカウントを作成することもできます。
 

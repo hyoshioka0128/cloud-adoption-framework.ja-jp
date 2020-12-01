@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 82a6071b7c181acb7717333fcaaf97dcff174326
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 05a4ede5be2a69854da68071602571ae0367bad0
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662440"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996674"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "88662440"
 
 ### <a name="microsoft-support"></a>Microsoft サポート
 
-Microsoft では、Azure のすべてのお客様に基本サポート プランを提供しています。 課金およびサブスクリプション サポート、オンライン セルフヘルプ、ドキュメント、ホワイトペーパー、サポート フォーラムに 24 時間 365 日アクセスできます。
+Microsoft では、Azure のすべてのお客様に基本サポート プランを提供しています。 課金およびサブスクリプション サポート、オンライン セルフヘルプ、ドキュメント、ホワイト ペーパー、サポート フォーラムに 24 時間 365 日アクセスできます。
 
 Azure の使用中に Microsoft サポートによるサポートが必要な場合は、次の手順に従ってサポート リクエストを作成します。
 
@@ -102,4 +102,4 @@ Microsoft 認定ソリューション プロバイダーは、Microsoft のテ�
 既製の Azure ソリューションまたはカスタム Azure ソリューションを提供するパートナー、また、それらのソリューションをデプロイし、管理するうえでの支援を提供するパートナーからサポートを得られます。
 
 - [Cloud Solution Provider (CSP) を見つける](https://www.microsoft.com/solution-providers/home)。 認定 CSP は、クラウド導入のビジネス目標を評価し、ビジネス ニーズを満たして、ビジネスの機敏性と効率性の向上に役立つ最適なクラウド ソリューションを特定して、クラウドを最大限に活用する支援ができます。
-- [Azure Expert マネージド サービス プロバイダー (MSP) を見つける](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all)。 MSP は、クラウド導入作業のあらゆる側面をガイドして、組織の Azure への移行を支援します。 移行および運用管理のコンサルティングから、クラウド MSP はクラウド導入に伴うあらゆる利点をお客様に紹介します。 また、一般的なサポート、プロビジョニング、課金エクスペリエンスのワンストップ ショップとしての役割も持ちます &mdash; すべてが柔軟な従量課金制ビジネス モデルで提供されます。
+- [Azure Expert マネージド サービス プロバイダー (MSP) を見つける](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all)。 MSP は、クラウド導入作業のあらゆる側面をガイドして、組織の Azure への移行を支援します。 移行および運用管理のコンサルティングから、クラウド MSP はクラウド導入に伴うあらゆる利点をお客様に紹介します。 また、一般的なサポート、プロビジョニング、課金エクスペリエンスのワンストップ ショップとしての役割も持ちます。すべてが柔軟な従量課金制ビジネス モデルで提供されます。

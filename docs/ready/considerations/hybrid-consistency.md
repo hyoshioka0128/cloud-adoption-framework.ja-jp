@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dee8a0552db02a070d4832a0da885469a02ecf11
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 53a958fad2f4cbbdd8184fc13c5102fd0ca6041d
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776195"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997269"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -41,13 +41,13 @@ Azure の観点から見たこれらのコンポーネントの例を以下に�
 - Azure Active Directory (Azure AD) はオンプレミスの Active Directory と連携し、すべてのユーザーに共通の ID が提供されます。 オンプレミスとクラウドにわたる SSO によって、必要なアプリケーションと資産にユーザーが安全にアクセスすることが簡単になっています。 管理者は、セキュリティとガバナンス制御を管理でき、ユーザー エクスペリエンスに影響を与えずに、アクセス許可を柔軟に調整することもできます。
 - Azure では、クラウドとオンプレミス インフラストラクチャの両方に対して、統合された管理とセキュリティのサービスが提供されます。 これのサービスには、ハイブリッド クラウドの監視、構成、保護に使われる統合ツール セットが含まれます。 管理に対するこのエンドツーエンドのアプローチは、とりわけ、ハイブリッド クラウド ソリューションを検討している組織が直面する実世界の課題に対処するものです。
 - Azure のハイブリッド クラウドには、すべてのデータへのセキュリティで保護されたアクセスが、シームレスかつ効率的に行われるようにする一般的なツールが用意されています。 Azure データ サービスは Microsoft SQL Server と 一体になり、一貫性のあるデータ プラットフォームを作り出します。 一貫性のあるハイブリッド クラウド モデルでは、ユーザーは運用と分析の両方のデータを操作できます。 オンプレミスとクラウドで、データ ウェアハウス、データ分析、データ視覚化のために、同じサービスが提供されます。
-- Azure クラウド サービスは Azure Stack オンプレミスと結合され、統合された開発と DevOps が提供されます。 クラウドとオンプレミス間の一貫性は、DevOps チームが、いずれかの環境で実行され、適切な場所に簡単にデプロイできるアプリケーションを構築できることを意味します。 ハイブリッド ソリューション間でテンプレートを再利用することもでき、それによってさらに DevOps プロセスを簡略化できます。
+- Azure Cloud Services とオンプレミスの Azure Stack を組み合せることで、統合された開発と DevOps が提供されます。 クラウドとオンプレミス間の一貫性は、DevOps チームが、いずれかの環境で実行され、適切な場所に簡単にデプロイできるアプリケーションを構築できることを意味します。 ハイブリッド ソリューション間でテンプレートを再利用することもでき、それによってさらに DevOps プロセスを簡略化できます。
 
 ## <a name="azure-stack-in-a-hybrid-cloud-environment"></a>ハイブリッド クラウド環境での Azure Stack
 
 Azure Stack は、一貫性のある Azure サービスを、組織が自社のデータセンターで実行できるハイブリッド クラウド ソリューションです。 Azure のパブリック クラウド サービスとの一貫性が保たれた、シンプルな開発、管理、セキュリティのエクスペリエンスが提供されます。 Azure Stack は Azure の拡張機能です。 この機能を使用して、オンプレミス環境から Azure サービスを実行でき、その後、必要な場合は Azure クラウドに移動することができます。
 
-Azure Stack では、同じツールを使用して IaaS と PaaS の両方をデプロイおよび運用でき、Azure パブリック クラウドと同じエクスペリエンスが提供されます。 Azure Stack の管理は、Web UI ポータルからであるか PowerShell からであるかを問わず、Azure の IT 管理者およびエンド ユーザーのための一貫性のあるルック アンド フィールを備えています。
+Azure Stack では、同じツールを使用して IaaS と PaaS の両方をデプロイおよび運用でき、Azure パブリック クラウドと同じエクスペリエンスが提供されます。 Azure Stack の管理は、Web UI ポータルからであるか PowerShell からであるかを問わず、Azure の IT 管理者およびエンドユーザーにとって一貫性のあるルック アンド フィールを持っています。
 
 Azure と Azure Stack によって、顧客向けアプリケーションと社内の基幹業務アプリケーションのどちらにも対応する、新しいハイブリッドのユース ケースが実現されます。
 
@@ -64,10 +64,10 @@ Azure Stack には 2 つのデプロイ オプションが用意されていま�
 
 完全な Azure エコシステムを使用して、Azure Stack の取り組みをスピードアップできます。
 
-<!-- docutune:casing "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
-<!-- cSpell:ignore ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers -->
+<!-- docutune:casing ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers Tieto NTT "Kemp Technologies" "Pivotal Cloud Foundry" -->
+<!-- cSpell:ignore ISVs Bitnami Infront Kemp Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Tieto -->
 
-- Azure では、Azure の認定を受けているアプリケーションとサービスの多くが、Azure Stack で動作することが保証されています。 複数の ISV が、Azure Stack に向けて自社のソリューションを拡張しています。 ISV として、Bitnami、Docker、Kemp Technologies、Pivotal Cloud Foundry、Red Hat Enterprise Linux、SUSE Linux などが挙げられます。
-- Azure Stack は、フル マネージド サービスとして配信および運用することを選択できます。 間もなく、いくつかのパートナーから、Azure と Azure Stack にまたがるマネージド サービスのオファリングが提供される予定です。 パートナーとして、Tieto、Yourhosting、Revera、Pulsant、NTT などが挙げられます。 これらのパートナーにより、クラウド ソリューション プロバイダー (CSP) プログラムから Azure 用のマネージド サービスが提供されます。 ハイブリッド ソリューションを含むようにオファリングが拡張されています。
+- Azure では、Azure の認定を受けているアプリケーションとサービスの多くが、Azure Stack で動作することが保証されています。 複数の ISV が、Azure Stack に向けて自社のソリューションを拡張しています。 Bitnami、Docker、Kemp Technologies、Pivotal Cloud Foundry、Red Hat Enterprise Linux、SUSE Linux などの ISV があります。
+- Azure Stack は、フル マネージド サービスとして配信および運用することを選択できます。 間もなく、いくつかのパートナーから、Azure と Azure Stack にまたがるマネージド サービスのオファリングが提供される予定です。 Tieto、Yourhosting、Revera、Pulsant、NTT などのパートナーがあります。 これらのパートナーにより、クラウド ソリューション プロバイダー (CSP) プログラムから Azure 用のマネージド サービスが提供されます。 ハイブリッド ソリューションを含むようにオファリングが拡張されています。
 - 完全なフル マネージド ハイブリッド クラウド ソリューションの 1 例が Avanade で、オールインワンのオファーが提供されます。 オファーには、クラウド変換サービス、ソフトウェア、インフラストラクチャ、設定と構成、継続的なマネージド サービスが含まれます。 これにより、お客様は、現在 Azure を利用しているのとまったく同じように Azure Stack を利用できます。
 - プロバイダーは、お客様のためにエンドツーエンドの Azure ソリューションを構築して、アプリケーション最新化の取り組みを推進することに貢献できます。 各プロバイダーは、詳細な Azure のスキル セット、領域と業界の知識、DevOps などのプロセスの専門知識を提供します。 すべての Azure Stack の実装が、プロバイダーがソリューションを設計し、システムのデプロイを先導して影響を与える機会となります。 プロバイダーは、含まれる機能をカスタマイズして運用作業を提供することもできます。 プロバイダーの例として、Avanade、DXC、Dell EMC Services、InFront Consulting Group、HPE Pointnext、PwC (旧称 PricewaterhouseCoopers) などが挙げられます。

@@ -7,12 +7,12 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 14cd74e53a0b007c59b26abe4044111ee2add7d5
-ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
+ms.openlocfilehash: 980d714bc5394161dd064032fae4b3fa6ea579d6
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92253385"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997116"
 ---
 # <a name="landing-zone-implementation-options"></a>ランディング ゾーンの実装オプション
 
@@ -36,8 +36,8 @@ ms.locfileid: "92253385"
 |---|---|---|---|---|
 | [CAF 移行ランディング ゾーンのブループリント](./migrate-landing-zone.md) | 危険度の低い資産を移行するための基本的な基盤をデプロイします。 | 小規模から始める | [設計原則](./migrate-landing-zone.md#design-principles) | [デプロイする](./migrate-landing-zone.md) |
 | [CAF 基盤ブループリント](./foundation-blueprint.md) | ガバナンス戦略の開発を始めるために必要な最小限のツールが追加されます。 | 小規模から始める | [設計原則](./foundation-blueprint.md#design-principles) | [デプロイする](./foundation-blueprint.md) |
-| [CAF エンタープライズ規模のランディング ゾーン (vWan を使用したハイブリッド接続)](../enterprise-scale/index.md) | sエンタープライズ対応のプラットフォーム基盤と、完全な IT ポートフォリオをサポートするために必要なすべての共有サービス (ハイブリッド接続 (VWAN) を含む) がデプロイされます。 | エンタープライズ規模 | [設計原則](../enterprise-scale/design-principles.md) | [デプロイする](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
-| [CAF エンタープライズ規模のランディングゾーン (ハブおよびスポークを使用したハイブリッド接続)](../enterprise-scale/index.md) | エンタープライズ対応のプラットフォーム基盤と、完全な IT ポートフォリオをサポートするために必要なすべての共有サービス (ハイブリッド接続 (ハブおよびスポーク) を含む) がデプロイされます。 | エンタープライズ規模 | [設計原則](../enterprise-scale/design-principles.md) | [デプロイする](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md) |
+| [CAF エンタープライズ規模のランディング ゾーン (Virtual WAN を使用したハイブリッド接続)](../enterprise-scale/index.md) | エンタープライズ対応のプラットフォーム基盤と、完全な IT ポートフォリオをサポートするために必要なすべての共有サービス (ハイブリッド接続 (Virtual WAN) を含む) がデプロイされます。 | エンタープライズ規模 | [設計原則](../enterprise-scale/design-principles.md) | [デプロイする](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
+| [CAF エンタープライズ規模のランディング ゾーン (ハブおよびスポークを使用したハイブリッド接続)](../enterprise-scale/index.md) | エンタープライズ対応のプラットフォーム基盤と、完全な IT ポートフォリオをサポートするために必要なすべての共有サービス (ハイブリッド接続 (ハブおよびスポーク) を含む) がデプロイされます。 | エンタープライズ規模 | [設計原則](../enterprise-scale/design-principles.md) | [デプロイする](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md) |
 | [CAF エンタープライズ規模のランディング ゾーン](../enterprise-scale/index.md) | エンタープライズ対応のプラットフォーム基盤と、完全な IT ポートフォリオをサポートするために必要なすべての共有サービスがデプロイされます。接続は、必要に応じて後で追加できます。 | エンタープライズ規模 | [設計原則](../enterprise-scale/design-principles.md) | [デプロイする](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md) |
 | [CAF Terraform モジュール](./terraform-landing-zone.md) | マルチクラウド運用モデルに対するサードパーティのパス。 このパスでは、Azure ファーストの運用モデルを制限できます。 | 小規模から始める | [設計原則](./terraform-landing-zone.md#design-decisions) | [デプロイする](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 | [パートナー ランディング ゾーン](./partner-landing-zone.md) | クラウド導入フレームワークの準備手法に合ったオファリングを提供するパートナーは、独自のカスタマイズされた実装オプションを提供できます。 | 変数 | [設計原則](./partner-landing-zone.md) | [パートナーを見つける](https://www.microsoft.com/azure/partners/adopt?filters=ready) |
@@ -47,8 +47,8 @@ ms.locfileid: "92253385"
 | 実装オプション | ハブ | スポーク | デプロイ テクノロジ | デプロイの手順 |
 |---|---|---|---|---|
 | [クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン](../enterprise-scale/index.md) | Included  | Included | Azure Resource Manager テンプレート、Azure portal、Azure Policy、GitHub | [デプロイする](../enterprise-scale/implementation-guidelines.md) |
-| [クラウド導入フレームワークの移行ランディング ゾーンのブループリント](./migrate-landing-zone.md) | リファクタリングが必要 | Included | Azure Resource Manager テンプレート、Azure portal、Azure Blueprints | [デプロイする](./migrate-landing-zone.md) |
-| [クラウド導入フレームワークの Terraform モジュール](./terraform-landing-zone.md)  | 仮想データセンター モジュールに含まれます | Included | Terraform | [デプロイする](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
+| [CAF 移行ランディング ゾーンのブループリント](./migrate-landing-zone.md) | リファクタリングが必要 | Included | Azure Resource Manager テンプレート、Azure portal、Azure Blueprints | [デプロイする](./migrate-landing-zone.md) |
+| [CAF Terraform モジュール](./terraform-landing-zone.md)  | 仮想データセンター モジュールに含まれます | Included | Terraform | [デプロイする](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 
 ## <a name="next-steps"></a>次のステップ
 

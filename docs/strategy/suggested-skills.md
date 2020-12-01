@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 375dcdbb63241d3bc3b1c29f9308bccbe698844c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a091490fda2148093965bf8826858a0f52c9d412
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885764"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996810"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
 
@@ -90,7 +90,7 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 クラウド導入フレームワークの戦略手法に合わせて調整されたラーニング パスの例を次に示します。
 
-[Microsoft Azure のビジネス価値を学習する](/learn/paths/learn-business-value-of-azure):この学習エクスペリエンスでは、デジタル変革とクラウドの機能をビジネスの変革に利用する方法を紹介することから始めます。 ここでは、信頼できるクラウド プラットフォーム上で、Microsoft Azure クラウド サービスの機能を利用して組織を強化する方法について説明します。 最後に、まとめとして、組織でこのエクスペリエンスを実現する方法を説明します。
+[Microsoft Azure のビジネス価値を学習する](/learn/paths/learn-business-value-of-azure):この学習エクスペリエンスでは、デジタル変革とクラウドの機能をビジネスの変革に利用する方法を紹介することから始めます。 信頼できるクラウド プラットフォーム上で、Microsoft Azure Cloud Services によって組織を強化する方法について説明します。 最後に、まとめとして、組織でこのエクスペリエンスを実現する方法を説明します。
 
 ## <a name="learn-more"></a>詳細情報
 

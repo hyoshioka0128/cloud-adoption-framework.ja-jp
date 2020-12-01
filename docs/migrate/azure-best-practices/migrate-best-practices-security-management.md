@@ -7,13 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2e020b1284fedf8ea6fdf45d46ab2d14fa8ea49d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 35f078aeb04c6fda78470e33e27f332f67bdaeee
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712716"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997473"
 ---
+<!-- docutune:casing "Update Management" -->
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
 # <a name="best-practices-to-secure-and-manage-workloads-migrated-to-azure"></a>Azure に移行されたワークロードのセキュリティ保護と管理のためのベスト プラクティス
@@ -99,14 +100,14 @@ Azure Security Center には、評価と推奨事項に加え、特定のリソ�
 - [Windows VM 用の Azure Disk Encryption ](/azure/virtual-machines/windows/disk-encryption-overview)を有効にする。
 - [保存データに対する Azure Storage 暗号化](/azure/storage/common/storage-service-encryption)について学習する。
 - [Always Encrypted の概要](/azure/sql-database/sql-database-always-encrypted-azure-key-vault)を読む。
-- [SQL Database および Azure Synapse の透過的なデータ暗号化](/azure/sql-database/transparent-data-encryption-azure-sql)について確認する。
-- [カスタマー マネージド キーを使用した Azure SQL Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-byok-azure-sql)について学習する。
+- [SQL Database および Azure Synapse の Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-azure-sql) に関する記事を読む。
+- [カスタマー マネージド キーを使用した Azure SQL Database Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-byok-azure-sql) について学習する。
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>ベスト プラクティス:マルウェア対策で VM を保護する
 
 特に、Azure に移行された古い VM には、適切なレベルのマルウェア対策がインストールされていない可能性があります。 Azure では、ウイルス、スパイウェア、その他のマルウェアからの VM の保護に役立つ無料のエンドポイント ソリューションが提供されています。
 
-- Azure Cloud Services と Virtual Machines 向けの Microsoft Antimalware では、既知の悪意のあるソフトウェアや望ましくないソフトウェアがそれ自体をインストールしようとしたときにアラートが生成されます。
+- Azure Cloud Services と仮想マシン向けの Microsoft Antimalware では、既知の悪意のあるソフトウェアや望ましくないソフトウェアが自身をインストールしようとしたときにアラートが生成されます。
 - これは、ユーザーの介入なしにバックグラウンドで実行される単一のエージェント ソリューションです。
 - Azure Security Center では、エンドポイントの保護が実行されていない VM を簡単に識別し、必要に応じて Microsoft マルウェア対策をインストールできます。
 
@@ -237,7 +238,7 @@ Azure AD Connect を使用してオンプレミスの Active Directory を Azure
 サブスクリプションの所有者は、サブスクリプション内に存在するすべてのリソース グループとリソースにアクセスできます。
 
 - この重要な割り当てにユーザーを追加するときは慎重に行います。 この種のアクセス許可の予期しない影響を理解することは、環境の安全と安定を維持するために重要なことです。
-- リソースを配置するリソース グループが適切であることを確認します。
+- リソースを適切なリソース グループに必ず配置します。
   - ライフサイクルが似ているリソースをまとめます。 リソース グループ全体を削除する必要があるときに、リソースを移動する必要がないようにするのが理想的です。
   - 機能またはワークロードをサポートするリソースは、管理を簡略化するために一緒に配置する必要があります。
 
@@ -322,7 +323,7 @@ Azure Policy ではリソースが評価されて、ポリシーに準拠して�
 
 ## <a name="best-practice-implement-a-bcdr-strategy"></a>ベスト プラクティス:BCDR 戦略を実装する
 
-事業継続とディザスター リカバリー (BCDR) の計画は、Azure への移行計画プロセスの一環として完了する必要がある重要な作業です。 法律的には、台風や地震などの大きな力が発生した場合に、責務が免除される "*不可抗力*" 条項を契約に含めることができます。 しかし、災害が発生したときは、サービスを継続的に実行し、必要に応じて復旧を行うことを可能な範囲で保証する義務もあります。 これを行う能力は、会社の未来を左右する可能性があります。
+事業継続とディザスター リカバリー (BCDR) の計画は、Azure への移行計画プロセスの一環として完了する必要がある重要な作業です。 法律的には、台風や地震などの大きな力が発生した場合に、責務が免除される "_不可抗力_" 条項を契約に含めることができます。 しかし、災害が発生したときは、サービスを継続的に実行し、必要に応じて復旧を行うことを可能な範囲で保証する義務もあります。 これを行う能力は、会社の未来を左右する可能性があります。
 
 一般に、BCDR 戦略では以下のことを検討する必要があります。
 
@@ -347,13 +348,13 @@ Azure IaaS VM で実行されるワークロードについては、以下のバ
 
 #### <a name="azure-backup"></a>Azure Backup
 
-Azure Backup では、Azure Storage に格納されているデータの復旧ポイントが作成されます。 Azure Backup では、Azure VM のディスクと Azure Files (プレビュー) をバックアップできます。 Azure Files では、サーバー メッセージ ブロック経由でアクセスできるクラウド内のファイル共有が提供されます。
+Azure Backup では、Azure Storage に格納されているデータの復旧ポイントが作成されます。 Azure Backup では、Azure VM のディスクと Azure Files (プレビュー) をバックアップできます。 Azure Files では、サーバー メッセージ ブロック (SMB) 経由でアクセスできる、クラウド内のファイル共有が提供されます。
 
 Azure Backup を使用すると、次の方法で VM をバックアップすることができます。
 
-- **VM の設定からの直接バックアップ。** Azure portal の VM オプションから直接、Azure Backup で VM をバックアップできます。 1 日に 1 回 VM をバックアップし、必要に応じて VM ディスクを復元できます。 Azure Backup ではアプリに対応したデータのスナップショットが取得されます。VM にエージェントはインストールされません。
-- **Recovery Services コンテナーでの直接バックアップ。** Azure Backup Recovery Services コンテナーをデプロイすることにより、IaaS VM をバックアップできます。 これにより、1 か所でバックアップを追跡して管理でき、バックアップと復元のきめ細かいオプションが提供されます。 バックアップは、ファイルおよびフォルダー レベルで 1 日に 3 回まで実行できます。 これはアプリ対応ではなく、Linux はサポートされていません。 この方法を使用して、バックアップ対象の VM ごとに Microsoft Azure Recovery Services (MARS) エージェントをインストールします。
-- **Azure Backup Server に対して VM を保護する。** Azure Backup Server は、Azure Backup で無料提供されます。 VM は、ローカルの Azure Backup Server ストレージにバックアップされます。 その後、Azure Backup Server をコンテナー内の Azure にバックアップします。 バックアップはアプリ対応であり、バックアップの頻度と保持に関して完全な細分性を備えています。 バックアップはアプリケーション レベルで実行できます。たとえば、SQL Server や SharePoint でバックアップできます。
+- **VM の設定からの直接バックアップ。** Azure portal の VM オプションから直接、Azure Backup で VM をバックアップできます。 1 日に 1 回 VM をバックアップし、必要に応じて VM ディスクを復元できます。 Azure Backup では、アプリケーション対応のデータ スナップショットが取得されます。VM にエージェントはインストールされません。
+- **Recovery Services コンテナーでの直接バックアップ。** Azure Backup Recovery Services コンテナーをデプロイすることにより、IaaS VM をバックアップできます。 これにより、1 か所でバックアップを追跡して管理でき、バックアップと復元のきめ細かいオプションが提供されます。 バックアップは、ファイルおよびフォルダー レベルで 1 日に 3 回まで実行できます。 これはアプリケーション対応ではなく、Linux はサポートされていません。 この方法を使用して、バックアップ対象の各 VM に Microsoft Azure Recovery Services (MARS) エージェントをインストールします。
+- **Azure Backup Server に対して VM を保護する。** Azure Backup Server は、Azure Backup で無料提供されます。 VM は、ローカルの Azure Backup Server ストレージにバックアップされます。 その後、Azure Backup Server をコンテナー内の Azure にバックアップします。 バックアップはアプリケーション対応であり、バックアップの頻度と保持に関して完全な細分性を備えています。 バックアップはアプリケーション レベルで実行できます。たとえば、SQL Server や SharePoint でバックアップできます。
 
 セキュリティ上の理由により、Azure Backup では AES-256 を使用して送信中のデータが暗号化されます。 これは HTTPS 経由で Azure に送信されます。 Azure に保存されているバックアップ データは、[Azure Storage 暗号化](/azure/storage/common/storage-service-encryption)を使用して暗号化されます。
 
@@ -429,7 +430,7 @@ Azure の優れたスケーリング機能が目的で、Azure にワークロ�
 
 これら 2 つのケースの解決策は異なりますが、どちらの場合も、使用状況とパフォーマンスを監視して、何が起きているかについて分析情報を得る必要があります。
 
-- Azure Monitor は、これらのメトリックを明らかにし、アラート、自動スケーリング、イベント ハブ、ロジック アプリによる応答を提供するのに役立ちます。
+- Azure Monitor を使用すると、これらのメトリックを明らかにし、アラート、自動スケーリング、Event Hubs、Logic Apps による応答を提供できます。
 - サード パーティ製の SIEM アプリケーションを統合して、Azure ログで監査とパフォーマンスのイベントを監視することもできます。
 
   ![Azure Monitor のスクリーンショット。](./media/migrate-best-practices-security-management/monitor.png)
@@ -507,9 +508,9 @@ Azure portal は Web ベースの統合コンソールで、簡単な Web アプ
 
 Azure VM をオペレーティング システムとソフトウェアの最新の更新プログラムで常に更新しておくことは、大変手間のかかる作業です。 すべての VM を把握し、それらに必要な更新プログラムを明らかにして、それらの更新プログラムを自動的にプッシュする機能は、非常に価値があります。
 
-- Azure Automation の更新管理を使用すると、オペレーティング システムの更新プログラムを管理できます。 これは、Azure、オンプレミス、および他のクラウド プロバイダーにデプロイされている Windows コンピューターと Linux コンピューターを実行するマシンに適用されます。
+- Azure Automation の Update Management を使用して、オペレーティング システムの更新プログラムを管理できます。 これは、Azure、オンプレミス、および他のクラウド プロバイダーにデプロイされている Windows コンピューターと Linux コンピューターを実行するマシンに適用されます。
 - Update Management を使用すると、すべてのエージェント コンピューターで利用可能な更新プログラムの状態をすばやく評価し、更新プログラムのインストールを管理できます。
-- VM の更新の管理は、Azure Automation アカウントから直接有効にすることができます。 Azure portal の VM のページから 1 つの VM を更新することもできます。
+- VM の Update Management は、Azure Automation アカウントから直接有効にすることができます。 Azure portal の VM のページから 1 つの VM を更新することもできます。
 - さらに、Azure VM を System Center Configuration Manager に登録できます。 そうすると、Configuration Manager のワークロードを Azure に移行して、単一の Web インターフェイスからレポートの作成やソフトウェアの更新を行うことができます。
 
   ![VM の更新の図。](./media/migrate-best-practices-security-management/updates.png)
@@ -517,8 +518,8 @@ Azure VM をオペレーティング システムとソフトウェアの最新�
 
 **詳細情報:**
 
-- [Azure での更新プログラムの管理](/azure/automation/update-management/overview)について学習する。
-- [Configuration Manager と Update Management](/azure/automation/oms-solution-updatemgmt-sccmintegration) を統合する方法を学習する。
+- [Azure の Update Management](/azure/automation/update-management/overview) について学習する。
+- [Configuration Manager と Update Management を統合する](/azure/automation/oms-solution-updatemgmt-sccmintegration)方法を学習する。
 - Azure での Configuration Manager について[よく寄せられる質問](/sccm/core/understand/configuration-manager-on-azure)。
 
 ## <a name="implement-a-change-management-process"></a>変更管理プロセスを実装する

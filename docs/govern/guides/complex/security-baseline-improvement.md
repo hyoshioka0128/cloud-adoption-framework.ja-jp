@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4384d404142ccd87587f693804e6b1ec37c734df
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: cf14c3149f197878f32d1779590183b3e5baaf71
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432569"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879159"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>複雑な企業向けのガバナンス ガイド: セキュリティ ベースライン規範の改善
 
@@ -99,7 +99,7 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
 
 新しいベスト プラクティスは、コーポレート IT (ハブ) とクラウド導入 (スポーク) の 2 つのカテゴリに分類されます。
 
-**コーポレート IT ハブおよびスポーク サブスクリプションを確立してセキュリティ ベースラインを集中管理する:** このベスト プラクティスでは、 [共有サービスを含むハブ スポーク トポロジ](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)によって既存のガバナンス容量をラップし、クラウド ガバナンス チームの重要な役割をいくつか追加します。
+**コーポレート IT ハブおよびスポーク サブスクリプションを確立してセキュリティ ベースラインを集中管理する:** このベスト プラクティスでは、[共有サービスを含むハブ スポーク トポロジ](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)によって既存のガバナンス容量をラップし、クラウド ガバナンス チームの重要な役割をいくつか追加します。
 
 1. Azure DevOps リポジトリ。 Azure DevOps でリポジトリを作成し、関連するすべての Azure Resource Manager テンプレートおよびスクリプト化された構成を保存し、バージョン管理を行います
 1. ハブとスポークのテンプレート:
@@ -120,7 +120,7 @@ CIO は同僚や会社の法務スタッフとの共同作業に数か月を費�
     1. これにより、各リージョンのビジネス ユニットごとにハブが確立されます。 注: 各リージョンのビジネス ユニット間でハブを共有することによって、さらなるコスト削減を達成できます。
 1. 望ましい状態への構成 (DSC: Desired State Configuration) を通じてグループ ポリシー オブジェクト (GPO) を統合します:
     1. GPO を DSC に変換します。 GitHub の [Microsoft Baseline Management プロジェクト](https://github.com/microsoft/baselinemanagement)でこの取り組みを加速させることができます。 必ず、Resource Manager テンプレートと並行して DSC をリポジトリに保存してください。
-    1. Azure Automation の状態の構成を、コーポレート IT サブスクリプションの任意のインスタンスにデプロイします。 Azure Automation を使用して、管理グループ内のサポートされているサブスクリプションにデプロイされている VM に DSC を適用できます。
+    1. Azure Automation State Configuration を、コーポレート IT サブスクリプションの任意のインスタンスにデプロイします。 Azure Automation を使用して、管理グループ内のサポートされているサブスクリプションにデプロイされている VM に DSC を適用できます。
     1. 現在のロードマップでは、カスタムのゲスト構成ポリシーを有効にすることが目標とされています。 その機能がリリースされれば、このベスト プラクティスで Azure Automation を使用する必要はなくなります。
 
 **クラウド導入サブスクリプション (スポーク) に追加のガバナンスを適用する:** `corporate IT subscription` をベースに、アプリケーション アーキタイプのサポートに特化した各サブスクリプションに適用されるガバナンス MVP をわずかに変更することで、急激な改善を生み出すことができます。

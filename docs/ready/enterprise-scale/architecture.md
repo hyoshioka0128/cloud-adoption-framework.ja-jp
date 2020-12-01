@@ -7,13 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: csu
-ms.openlocfilehash: 44276ffabbae39cd5a75c0ea2de501aefd0c42f0
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: csu, think-tank
+ms.openlocfilehash: a86439fe71235542a9e5b8f9ce66a364db5004a7
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713056"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447338"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン アーキテクチャ
 
@@ -37,21 +37,21 @@ Azure ランディング ゾーンは、スケール、セキュリティ、ガ�
 
 ## <a name="high-level-architecture"></a>高レベル アーキテクチャ
 
-エンタープライズ規模のアーキテクチャは、8 つの[重要な設計領域](./design-guidelines.md)にわたる設計上の考慮事項と推奨事項のセットで定義され、2 つのネットワーク トポロジが推奨されています。具体的には、(図2 に示す) Azure Virtual WAN ネットワーク トポロジに基づく、または (図3 に示す) ハブおよびスポークのアーキテクチャを基にした従来の Azure ネットワーク トポロジ に基づくエンタープライズ規模のアーキテクチャです。
+エンタープライズ規模のアーキテクチャは、8 つの[重要な設計領域](./design-guidelines.md)にわたる設計上の考慮事項と推奨事項のセットで定義され、2 つのネットワーク トポロジが推奨されています。エンタープライズ規模のアーキテクチャは、(図2 に示す) Azure Virtual WAN ネットワーク トポロジ、または (図3 に示す) ハブおよびスポーク アーキテクチャ ベースの従来の Azure ネットワーク トポロジに基づいています。
 
 [![Azure Virtual WAN ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャを示す図。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
-"_図 2:Azure Virtual WAN ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ。接続サブスクリプションは VWAN ハブを使用することに注意してください。_
+"_図 2:Azure Virtual WAN ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ。接続サブスクリプションでは、Virtual WAN ハブを使用します。_ "
 
 [![クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャを示す図。](./media/ns-arch-cust-inline.png)](./media/ns-arch-cust-expanded.png#lightbox)
 
-"_図 3:従来の Azure ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ。接続サブスクリプションはハブ VNet を使用することに注意してください。_
+"_図 3:従来の Azure ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ。接続サブスクリプションでは、ハブ VNet を使用します。_ "
 
-エンタープライズ規模のアーキテクチャ図 ([Virtual WAN](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) ネットワーク トポロジに基づくもの、または[ハブおよびスポーク](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf)のアーキテクチャを基にした従来の Azure ネットワーク トポロジに基づくもの) を含む PDF ファイルをダウンロードします。
+[Virtual WAN (PDF)](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) ネットワーク トポロジ、または[ハブおよびスポーク (PDF)](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf) アーキテクチャ ベースの従来の Azure ネットワーク トポロジに基づくエンタープライズ規模のアーキテクチャ図を含む PDF または Visio ファイルをダウンロードします。 Virtual WAN とハブおよびスポークの両方のアーキテクチャ図を含む Visio ファイルは、[Visio 図 (VSDX)](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture.vsdx) としてダウンロードできます。
 
 図 2 と 3 には、エンタープライズ規模の重要な設計領域への参照があります。これらは A から I の文字で示されています。
 
-![文字 A](./media/a.png) [Enterprise Agreement (EA) 加入契約と Azure Active Directory テナント](./enterprise-enrollment-and-azure-ad-tenants.md)。 Enterprise Agreement (EA) 加入契約は、Microsoft と、お客様の組織が Azure を使用する方法との取引関係を表しています。 これは、お客様のすべてのサブスクリプションにわたる請求の基礎となり、お客様のデジタル資産の管理に影響を及ぼします。 EA 加入契約は、Azure エンタープライズ ポータルを使用して管理されます。 多くの場合、加入契約は組織の階層を表します。これには、部門、アカウント、サブスクリプションなどが含まれます。 Azure AD テナントによって ID とアクセス管理が提供されます。これはセキュリティ態勢の重要な部分です。 Azure AD テナントは、認証および許可されたユーザーが、自身がアクセス許可を持つリソースのみにアクセスできるようにするものです。
+![文字 A](./media/a.png) [Enterprise Agreement (EA) 加入契約と Azure Active Directory テナント](./enterprise-enrollment-and-azure-ad-tenants.md)。 Enterprise Agreement (EA) 加入契約は、Microsoft と、お客様の組織が Azure を使用する方法との取引関係を表しています。 これは、お客様のすべてのサブスクリプションにわたる請求の基礎となり、お客様のデジタル資産の管理に影響を及ぼします。 EA 加入契約は、Azure EA ポータルを使用して管理されます。 多くの場合、加入契約は組織の階層を表します。これには、部門、アカウント、サブスクリプションなどが含まれます。 Azure AD テナントによって ID とアクセス管理が提供されます。これはセキュリティ態勢の重要な部分です。 Azure AD テナントは、認証および許可されたユーザーが、自身がアクセス許可を持つリソースのみにアクセスできるようにするものです。
 
 ![文字 B](./media/b.png) [ID およびアクセス管理](./identity-and-access-management.md)。 サーバーとユーザーの両方の認証を確実に行うために、Azure Active Directory の設計と統合を構築する必要があります。 リソースベースのアクセス制御 (RBAC) をモデル化してデプロイし、プラットフォームの運用と管理の職務と必要なエンタイトルメントの分離を適用する必要があります。 リソースに対するセキュリティで保護されたアクセスを確保し、ローテーションや復旧などの操作をサポートするために、キー管理を設計およびデプロイする必要があります。 最終的に、アクセス ロールがコントロールおよびデータ プレーンのアプリケーション所有者に割り当てられ、リソースが自律的に作成および管理されます。
 

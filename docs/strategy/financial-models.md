@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 42e1e6ef830aa0f5bdc9eadf6346f2a360c19e53
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5280611c88caa3aa2ebb70f615eae8e7b5ff73e4
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877060"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994447"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>クラウド変革のための財務モデルを作成する
 

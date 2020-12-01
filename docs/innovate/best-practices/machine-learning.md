@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fd31fa49a623f3eccec460f2d6f04dedfc86f9ac
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: 60c3acb0528e85f652b6c1513a77a991ab31496e
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712019"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446778"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -56,7 +57,7 @@ Azure Machine Learning の [Python SDK](/python/api/overview/azure/ml/?view=azur
 
 ## <a name="mlops-deploy-and-lifecycle-management"></a>MLOps:デプロイとライフサイクル管理
 
-Machine Learning 操作 (MLOps) は、ワークフローの効率を向上させる [DevOps](https://azure.microsoft.com/overview/what-is-devops/) の原則と実践に基づいています。 たとえば、継続的インテグレーション、配信、デプロイです。 MLOps では、次のことを目標に、これらの原則を機械学習プロセスに適用します。
+機械学習の運用 (MLOps) は、ワークフローの効率を向上させる [DevOps](https://azure.microsoft.com/overview/what-is-devops/) の原則と実践に基づいています。 たとえば、継続的インテグレーション、配信、デプロイです。 MLOps では、次のことを目標に、これらの原則を機械学習プロセスに適用します。
 
 - モデルのより迅速な実験と開発
 - 実稼働環境へのモデルのより迅速なデプロイ

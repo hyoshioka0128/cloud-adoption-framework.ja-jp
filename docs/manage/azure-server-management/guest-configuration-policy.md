@@ -1,5 +1,5 @@
 ---
-title: ゲスト構成ポリシー
+title: Azure Policy ゲスト構成拡張機能
 description: Azure Policy のゲスト構成拡張機能を使用して Azure VM 内の構成設定を監査する方法を、Azure 向けのクラウド導入フレームワークを使用して学習します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 63e50e0cec7066d92474362cec249a0536b002a6
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: fa9fde30b2c2a015f090523a7cc92b3337afd47a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848110"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880485"
 ---
-# <a name="guest-configuration-policy"></a>ゲスト構成ポリシー
+# <a name="azure-policy-guest-configuration-extension"></a>Azure Policy ゲスト構成拡張機能
 
-Azure Policy の[ゲスト構成](/azure/governance/policy/concepts/guest-configuration)拡張機能を使用して、仮想マシン内の構成設定を監査できます。 ゲスト構成は、現在 Azure VM 上でのみサポートされます。
+[Azure Policy ゲスト構成拡張機能](/azure/governance/policy/concepts/guest-configuration)を使用して、仮想マシン内の構成設定を監査できます。 ゲスト構成は、現在 Azure VM 上でのみサポートされています。
 
-ゲスト構成ポリシーの一覧を見つけるには、Azure Policy ポータル ページで「ゲスト構成」を検索します。 または、PowerShell ウィンドウで次のコマンドレットを実行して、一覧を見つけます。
+ゲスト構成ポリシーの一覧を見つけるには、Azure Policy ポータル ページで「**ゲスト構成**」を検索するか、PowerShell ウィンドウで次のコマンドレットを実行して一覧を見つけます。
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}

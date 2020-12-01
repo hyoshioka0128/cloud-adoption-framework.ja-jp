@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fc9be8cfc1f51e35e0eb2dbb7270c818276c7767
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 733216e9e8a4bca165c1bc73a1fd1870ecba8d3a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283249"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879227"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -200,7 +200,7 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 #### <a name="backups"></a>バックアップ
 
 - geo リストアを使用して、Azure データベースが確実にバックアップされるようにします。 これにより、リージョンで障害が発生した場合に、ペアのリージョンでバックアップを使用できるようになります。
-- **重要:** Azure リソースが削除されないようにするため、 [リソース ロック](/azure/azure-resource-manager/management/lock-resources)を保持していることを確認します。 削除したサーバーを復元することはできません。
+- **重要:** Azure リソースが削除されないようにするため、[リソース ロック](/azure/azure-resource-manager/management/lock-resources)を保持していることを確認します。 削除したサーバーを復元することはできません。
 
 #### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
@@ -212,4 +212,5 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 
 ## <a name="conclusion"></a>まとめ
 
-この記事では、Contoso が、Microsoft SQL Server ワークロードの Azure への移行を評価し、計画し、実行しました。
+この記事では、Contoso が、Microsoft SQL Server ワークロードの Azure への移行を評価し、計画し、実行しました。  
+SQL 移行の過程で利用する Azure DevOps プロジェクトが開発されました。 このプロジェクトは、クラウド導入フレームワークに合わせています。 このプロジェクトが示す手順に従って、必要となる重要な決定を行うことができます。Azure DevOps プロジェクトに移動するには、[こちらをクリック](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration)してください。 

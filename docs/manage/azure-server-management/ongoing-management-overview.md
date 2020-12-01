@@ -7,22 +7,22 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: adeda043b1631caf19975163c3433f7aa9bef12a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e3dc658ec7ba94d44420521d031bcd5bfa90c5c7
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571883"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880230"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>フェーズ 3: 継続中の管理とセキュリティ
 
 Azure サーバー管理サービスをオンボードした後、進行中の操作をサポートする操作とセキュリティ構成に重点を置く必要があります。 ここではまず、Azure Security Center を確認して環境を保護します。 そのうえで、サーバーのコンプライアンスを維持するポリシーを構成し、一般的なタスクを自動化します。 このセクションは、次のトピックで構成されています。
 
-- **[セキュリティに関する推奨事項に対処する。](#address-security-recommendations)** Azure Security Center から、ご利用の環境のセキュリティを強化するための推奨事項が得られます。 これらの推奨事項を実践すると、セキュリティ スコアにその効果が反映されます。
-- **[ゲスト構成ポリシーを有効にします。](./guest-configuration-policy.md)** Azure Policy のゲスト構成機能を使用して、仮想マシンの設定を監査します。 たとえば、いずれかの証明書の期限が切れそうになっているかどうかを確認できます。
-- **[重要な変更を追跡し、警告します。](./enable-tracking-alerting.md)** トラブルシューティング時に、考慮すべき最初の質問は、"何が変更されたか" です。 この記事では、変更を追跡し、重要なコンポーネントを予防的に監視するアラートを作成する方法を示します。
-- **[更新スケジュールを作成します。](./update-schedules.md)** 更新プログラムのインストールをスケジュールして、すべてのサーバーに最新の更新プログラムが存在するようにします。
-- **[Azure Policy の一般的な例。](./common-policies.md)** この記事では、一般的な管理ポリシーの例を示します。
+- [セキュリティに関する推奨事項に対処する](#address-security-recommendations): Azure Security Center から、ご利用の環境のセキュリティを強化するための推奨事項が得られます。 これらの推奨事項を実践すると、セキュリティ スコアにその効果が反映されます。
+- [ゲスト構成ポリシーを有効にする](./guest-configuration-policy.md): Azure Policy のゲスト構成機能を使用して、仮想マシンの設定を監査します。 たとえば、いずれかの証明書の期限が切れそうになっているかどうかを確認できます。
+- [重要な変更を追跡し、アラートを表示する](./enable-tracking-alerting.md): トラブルシューティング時に、考慮すべき最初の質問は、"何が変更されたか" です。 この記事では、変更を追跡し、重要なコンポーネントを予防的に監視するアラートを作成する方法を示します。
+- [更新スケジュールを作成する](./update-schedules.md): 更新プログラムのインストールをスケジュールして、すべてのサーバーに最新の更新プログラムが存在するようにします。
+- [Azure Policy の一般的な例](./common-policies.md): この記事では、一般的な管理ポリシーの例を示します。
 
 ## <a name="address-security-recommendations"></a>セキュリティに関する推奨事項に対処する
 

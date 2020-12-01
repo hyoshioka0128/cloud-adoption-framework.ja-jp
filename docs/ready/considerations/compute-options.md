@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4c1b598eb8e027947a218ef558c1827878fa5f68
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d70160082c0c195167272cb9623cc619fde1ee63
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574246"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995212"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 
@@ -54,12 +54,12 @@ _図 1:Azure コンピューティング サービスのデシジョン ツリ�
 | 選択した構成を使用して、Linux と Windows の仮想マシンを数秒でプロビジョニングする必要がある。 | [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) |
 | 自動スケーリングにより数分で数千台の VM を作成し、高可用性を実現する必要がある。 | [仮想マシン スケール セット](https://azure.microsoft.com/services/virtual-machine-scale-sets) |
 | Kubernetes のデプロイ、管理、操作を簡略化したい。 | [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service) |
-| イベント駆動のサーバーレス アーキテクチャを使用してアプリ開発を加速する必要がある。 | [Azure Functions](https://azure.microsoft.com/services/functions) |
+| イベント ドリブンのサーバーレス アーキテクチャを使用してアプリケーション開発を加速する必要がある。 | [Azure Functions](https://azure.microsoft.com/services/functions) |
 | Windows と Linux でマイクロサービスを開発し、コンテナーを調整する必要がある。 | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
-| フル マネージド プラットフォームを使用して、Web とモバイル向けのクラウド アプリをすばやく作成したい。 | [Azure App Service](https://azure.microsoft.com/services/app-service) |
-| 1 つのコマンドを使用して、アプリをコンテナー化し、簡単にコンテナーを実行したい。 | [Azure Container Instances](https://azure.microsoft.com/services/container-instances) |
+| フル マネージド プラットフォームを使用して、Web およびモバイル向けのクラウド アプリケーションをすばやく作成したい。 | [Azure App Service](https://azure.microsoft.com/services/app-service) |
+| 1 つのコマンドを使用して、アプリケーションをコンテナー化し、コンテナーを簡単に実行したい。 | [Azure Container Instances](https://azure.microsoft.com/services/container-instances) |
 | 仮想マシンを数十、数百から数千台にスケーリング可能な、クラウド規模のジョブ スケジューリングとコンピューティング管理を可能にする必要がある。 | [Azure Batch](https://azure.microsoft.com/services/batch) |
-| 可用性が高くスケーラブルなクラウド アプリケーションと API を作成し、ハードウェアではなくアプリに集中できるようにする必要がある。 | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
+| ハードウェアではなくアプリケーションに集中できるように、スケーラブルな高可用性クラウド アプリケーションと API を作成する必要がある。 | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
 
 ## <a name="regional-availability"></a>リージョン別の提供状況
 

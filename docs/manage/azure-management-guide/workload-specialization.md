@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 24fcb5842f6151ac6beba8820391078bd64d3050
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2c36c8cb1b82d0e0228486aa3d748de7db36d56c
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567531"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880570"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>クラウド管理のためのワークロードの特殊化
 
-ワークロードの特殊化は、[プラットフォームの特殊化](./platform-specialization.md)の記事に記載されている概念に基づいています。
+ワークロードの特殊化は、[プラットフォームの特殊化](./platform-specialization.md)に関する記事に記載されている概念に基づいています。
 
 ![クラウド管理ベースラインを越えるもの](../../_images/manage/beyond-the-baseline.png)
 
@@ -28,7 +28,7 @@ ms.locfileid: "88567531"
 
 ## <a name="high-level-process"></a>プロセスの概要
 
-ワークロードの特殊化は、反復的なアプローチで次の 4 つのプロセスの規範的な実行で構成されます。 各プロセスの詳細については、[プラットフォームの特殊化](./platform-specialization.md)に関する記事を参照してください。
+ワークロードの特殊化は、反復的なアプローチで次の 4 つのプロセスの規範的な実行で構成されます。 各プロセスの詳細については、[プラットフォームの特殊化](./platform-specialization.md)に関する記事をご覧ください。
 
 - **システム設計を改善する:** 中断を効果的に最小限に抑えるために、特定のワークロードの設計を改善します。
 - **修復を自動化する:** 一部の改善は費用効果が高くありません。 このような場合、修復を自動化し、中断の影響を抑える方が合理的です。
@@ -51,7 +51,7 @@ ms.locfileid: "88567531"
 
 | 要件                          | ツール                 | 目的                                                                                |
 | ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------- |
-| アプリケーションの監視               | Application Insights | アプリの監視と診断                                                    |
+| アプリケーションの監視               | Application Insights | アプリケーションの監視と診断                                                    |
 | パフォーマンス、可用性、使用状況 | Application Insights | アプリケーション ダッシュボード、複合マップ、使用状況、トレースを使用した高度なアプリケーション監視 |
 
 ### <a name="deploy-application-insights"></a>Application Insights のデプロイ

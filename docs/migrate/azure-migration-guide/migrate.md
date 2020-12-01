@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2abab02b5d73bd69b33c8124fb4500129e97e545
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 63f9d6997f1ab8c554a89fd6927408fc2b76a7b1
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712427"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995960"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
@@ -75,6 +75,7 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 
 ::: zone-end
 
+<!-- docutune:casing "Create Migration Service wizard" -->
 リソース プロバイダーを登録した後は、Azure Database Migration Service のインスタンスを作成できます。
 
 1. **[+ リソースの作成]** を選択し、マーケットプレースで **Azure Database Migration Service** を検索します。
@@ -112,29 +113,29 @@ Azure App Service Migration Assistant は、組織のクラウドへの移行を
 
 Migration Assistant では、Azure アカウントに関する重要な詳細情報を収集することから移行プロセスが開始され、移行が実行されます。
 
-まず、Azure アカウントにサインインし、一意のコードを使用して Migration Assistant セッションをアカウントに関連付けます。 次に、サブスクリプション、リソース グループ、Web サイトのドメイン名を選択します。 新しい Azure App Service プランを作成してアプリをホストするか、既存のプランを選択するかを選択できます。 その選択は、アプリがホストされる地理的なリージョンに影響します。 さらに、この移行作業を既存の Azure Migrate プロジェクトに関連付けることもできます 最後に、データベースのセットアップをスキップするか、ハイブリッド接続を設定してデータベース接続を有効にするかを選択できます。
+まず、Azure アカウントにサインインし、一意のコードを使用して Migration Assistant セッションをアカウントに関連付けます。 次に、サブスクリプション、リソース グループ、Web サイトのドメイン名を選択します。 Web アプリをホストするための新しい Azure App Service プランを作成するか、既存のプランを選択するかを選ぶことができます。 この選択は、Web アプリがホストされる地理的リージョンに影響します。 さらに、この移行作業を既存の Azure Migrate プロジェクトに関連付けることもできます 最後に、データベースのセットアップをスキップするか、ハイブリッド接続を設定してデータベース接続を有効にするかを選択できます。
 
 Migration Assistant によって選択内容が収集および検証されると、選択したリージョンとリソース グループに必要な Azure App Service リソースが作成されます。 Web アプリのソース ファイルが zip され、Azure App Service のデプロイ API を使用してデプロイされます。 最後に、ハイブリッド接続の設定の支援など、オプションの移行手順が実行されます。
 
 移行が正常に完了したら、移行後のタスクを実行する必要があります。 たとえば、次のようなものがあります。
 
 - web.config ファイル内のアプリケーションの設定と接続文字列を Azure App Service に手動で移動する。
-- オンプレミスの SQL Server インスタンスから Azure SQL データベースにデータを移行する。
+- オンプレミスの SQL Server インスタンスから Azure SQL Database インスタンスにデータを移行する。
 - SSL 証明書を設定する。
 - カスタム ドメイン名を設定する。
 - Azure Active Directory でアクセス許可を設定する。
 
 また、Azure App Service のホスティング プランや、自動スケールやデプロイ スロットなどのその他の設定を変更することもできます。
 
-詳細情報
+詳細については次を参照してください:
 
-[ASP.NET アプリを Azure に移行する](/learn/paths/migrate-dotnet-apps-azure)
+[ASP.NET アプリケーションを Azure に移行する](/learn/paths/migrate-dotnet-apps-azure)
 
 ### <a name="data-migration-assistant"></a>Data Migration Assistant
 
 Data Migration Assistant (DMA) を使用すると、SQL Server または Azure SQL Database の新しいバージョンでデータベースの機能に影響する可能性がある互換性の問題を検出することで、最新のデータ プラットフォームへのアップグレードを支援します。 DMA は、ターゲット環境のパフォーマンスと信頼性を高めるための推奨事項を提案し、スキーマ、データ、非コンテナー化オブジェクトをソース サーバーからターゲット サーバーに移動できるようにします。
 
-Data Migration Assistant は Azure Migrate と統合されているため、Azure Migrate ダッシュボードですべての評価の進行状況を追跡できます。 Azure Migrate: Database Assessment ツールを追加して Azure Migrate から DMA を起動し、DMA の [Azure Migrate にアップロードする] ボタンを選択してデータベース評価を Azure Migrate に追加します。
+Data Migration Assistant は Azure Migrate と統合されているため、Azure Migrate ダッシュボードですべての評価の進行状況を追跡できます。 Azure Migrate: Database Assessment ツールを追加して Azure Migrate から DMA を起動し、DMA の **[Azure Migrate にアップロードする]** ボタンを選択して、データベース評価を Azure Migrate に追加します。
 
 > [!NOTE]
 > (データベースの数とサイズの観点から) 大規模な移行の場合、データベースを大規模に移行できる Azure Database Migration Service を使用することをお勧めします。
@@ -160,7 +161,7 @@ Data Migration Assistant は Azure Migrate と統合されているため、Azur
 
 ### <a name="sql-server-migration-assistant"></a>SQL Server Migration Assistant
 
-Microsoft SQL Server Migration Assistant (SSMA) は、Microsoft Access、DB2、MySQL、Oracle、SAP ASE から SQL Server へのデータベース移行を自動化することを目的としたツールです。 一般的な概念は、これらのツールを使用して収集、評価、レビューを行うことですが、ソース システムごとにプロセスが異なるため、詳細な [SQL Server Migration Assistant のドキュメント](/sql/ssma/sql-server-migration-assistant)を確認することをお勧めします。
+Microsoft SQL Server Migration Assistant (SSMA) は、Microsoft Access、DB2、MySQL、Oracle、SAP ASE から SQL Server へのデータベース移行を自動化することを目的としたツールです。 一般的な概念は、これらのツールを使用して収集、評価、その後レビューを行うというものですが、それぞれのソース システムでプロセスに違いがあるため、詳細な [SQL Server Migration Assistant のドキュメント](/sql/ssma/sql-server-migration-assistant)を確認することをお勧めします。
 
 詳細については、次を参照してください。
 
@@ -168,7 +169,7 @@ Microsoft SQL Server Migration Assistant (SSMA) は、Microsoft Access、DB2、M
 
 ### <a name="database-experimentation-assistant"></a>Database Experimentation Assistant
 
-Database Experimentation Assistant (DEA) は、SQL Server アップグレード用の新しい A/B テスト ソリューションです。 特定のワークロード用の SQL のターゲット バージョンを評価する際に役立ちます。 SQL Server の以前のバージョン (SQL Server 2005 以降) から SQL Server の新しいバージョンにアップグレードするお客様は、これらの分析メトリックを使用できます。
+Database Experimentation Assistant (DEA) は、SQL Server アップグレード用の新しい A/B テストソリューションです。 特定のワークロード用の SQL のターゲット バージョンを評価する際に役立ちます。 SQL Server の以前のバージョン (SQL Server 2005 以降) から SQL Server の新しいバージョンにアップグレードするお客様は、これらの分析メトリックを使用できます。
 
 Database Experimentation Assistant には、次のワークフロー アクティビティが含まれています。
 
@@ -242,7 +243,7 @@ Microsoft では以下のプロジェクト管理ツールも用意しており�
 
 - [Microsoft Planner](https://tasks.office.com): チームワークを組織化するためのシンプルで視覚的な方法。
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software):プロジェクトおよびポートフォリオ管理、リソース容量管理、財務管理、タイムシートおよびスケジュール管理。
-- [Microsoft Teams](https://products.office.com/microsoft-teams): チームのコラボレーションとコミュニケーションのためのツール。 Teams を Planner や他のツールと統合して、コラボレーションを強化することもできます。
+- [Microsoft Teams](https://products.office.com/microsoft-teams):チームのコラボレーションとコミュニケーションのためのツール。 Teams を Planner や他のツールと統合して、コラボレーションを強化することもできます。
 - [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops):Azure DevOps を使用するために、クラウド導入フレームワークの計画テンプレートは必要ありません。 テンプレートを使用せずにサービスを使用して、コードとしてインフラストラクチャを管理することや、作業項目とボードを使用してプロジェクト管理を実行することができます。 発展に合わせて、組織で CI/CD 機能を利用できます。
 
 使用可能なプロジェクト管理ツールはこれらのツールに限られません。 他にも多くのサード パーティ製ツールが、プロジェクト管理コミュニティで広く使用されています。

@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5c76356277f6ae911b2994dac0d6bcb66bcdd112
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 53587e37babffe0dc7e6c722643d4bafda646ff3
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712641"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881046"
 ---
 <!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
@@ -37,7 +37,7 @@ ms.locfileid: "94712641"
 
 ## <a name="mainframe-emulation-in-azure"></a>Azure でのメインフレームのエミュレーション
 
-Azure クラウド サービスでは従来のメインフレーム環境をエミュレートでき、メインフレームの既存のコードとアプリケーションを再利用できます。 エミュレートできる一般的なサーバー コンポーネントとしては、オンライン トランザクション処理 (OLTP) システム、バッチ システム、データ インジェスト システムなどがあります。
+Azure サービスでは、従来のメインフレーム環境をエミュレートできるため、メインフレームの既存のコードやアプリケーションを再利用できます。 エミュレートできる一般的なサーバー コンポーネントとしては、オンライン トランザクション処理 (OLTP) システム、バッチ システム、データ インジェスト システムなどがあります。
 
 ### <a name="oltp-systems"></a>OLTP システム
 

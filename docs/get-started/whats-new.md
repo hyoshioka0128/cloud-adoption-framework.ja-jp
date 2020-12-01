@@ -7,12 +7,12 @@ ms.date: 10/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8303e9e10f96360f5db48d9248d518c6d397802d
-ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
+ms.openlocfilehash: e6889705a455de067c5af6a18adc7a8c00b81e11
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344059"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879091"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
@@ -109,8 +109,8 @@ Microsoft クラウド導入フレームワークに AI ソリューションと
 | [責任ある AI](../strategy/responsible-ai.md) | AI ソリューションを導入する際に考慮すべき AI の原則について説明すると共に、責任ある AI の戦略をいかに確立するかについて説明します。 |
 | [Azure イノベーション ガイド: AI によるイノベーション](../innovate/innovation-guide/predict.md) | AI によってイノベーションを起こし、導入ニーズに応じて最良のソリューションを見つける方法について説明します。 |
 | [クラウド導入フレームワークにおける AI](../innovate/ai/index.md) | ツール、プログラム、コンテンツ (ベスト プラクティス、構成テンプレート、アーキテクチャ ガイダンス) を含む規範的なフレームワークをレビューして、大規模な AI とクラウド ネイティブ プラクティスの導入を簡略化します。 |
-| [Azure Machine Learning を使用した MLOps](../manage/mlops-machine-learning.md) | Machine Learning の運用 (MLOps) のベスト プラクティスについて説明します。 |
-| [AI によるイノベーション](../innovate/best-practices/predict.md) | デジタル発明の促進につながる AI ソリューション (Machine Learning、AI アプリケーションとエージェント、ナレッジ マイニング) とベスト プラクティスについて説明します。 |
+| [Azure Machine Learning を使用した MLOps](../manage/mlops-machine-learning.md) | 機械学習の運用 (MLOps) のベスト プラクティスについて説明します。 |
+| [AI によるイノベーション](../innovate/best-practices/predict.md) | デジタル発明の促進につながる AI ソリューション (機械学習、AI アプリケーションとエージェント、ナレッジ マイニング) とベスト プラクティスについて説明します。 |
 
 ## <a name="june-15-2020"></a>2020 年 6 月 15 日
 

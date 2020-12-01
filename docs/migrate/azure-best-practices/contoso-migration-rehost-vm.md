@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ada5194d581384ee6d1632e6d6088fb3f8f03fd4
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 1275997c3ca3e2da4947dff20e063e18cd907e9f
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713226"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879448"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -308,3 +308,4 @@ Contoso は、[Azure Cost Management および Billing](/azure/cost-management-b
 ## <a name="conclusion"></a>まとめ
 
 この記事では、Contoso が SmartHotel360 アプリケーションを Azure にリホストしました。 管理者は、Azure Migrate を使用して、アプリケーション VM を Azure VM に移行しました。サーバー移行ツール。
+ご使用の環境で同様のプロジェクトを完了するためのガイダンスについては、[サーバー移行プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)の AzureDevOps プロジェクト テンプレートを確認してください。 

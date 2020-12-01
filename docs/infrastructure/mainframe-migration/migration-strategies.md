@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 609bbc646858368ee22b0a0aba00850dd659a00e
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 11c95d186383db736f87010db821e3fd0e2340a7
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712614"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881029"
 ---
 <!-- docutune:casing "Table 4" "Parallel Sysplex" CF Assembler "Demystifying Mainframe-to-Azure Migration" "ROSCOE Programming Facility" "RPF" "CA Librarian" CA-Panvalet -->
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
@@ -35,7 +35,7 @@ Azure は、従来のメインフレーム アプリケーションを実行す�
 
 Azure による vCPU への MIPS の正確な計算は、vCPU の種類と実行している正確なワークロードによって変わります。 ただし、ベンチマーク調査は、必要となる vCPU の数と種類を見積もるための優れた基盤となります。 最近の HPE zRef ベンチマークは、以下の見積もりを提供しています。
 
-- オンライン (CICS) ジョブの場合、HP Proliant サーバー上で実行される Intel ベース コアあたり 288 MIPS。
+- オンライン (CICS) ジョブの場合、HPE ProLiant サーバー上で実行される Intel ベースのコアあたり 288 MIPS。
 
 - COBOL バッチ ジョブの場合、Intel コアあたり 170 MIPS。
 

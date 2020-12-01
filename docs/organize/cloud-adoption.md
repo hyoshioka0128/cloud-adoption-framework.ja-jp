@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a1e12ac1ca226d9605a1d5b296582636e9275303
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7afed36939d3d143934ad962aa87e3921535ed06
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574297"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996538"
 ---
 # <a name="cloud-adoption-functions"></a>クラウド導入機能
 
@@ -31,7 +31,7 @@ ms.locfileid: "88574297"
 - データ サイエンティスト
 - データまたはアプリケーション プラットフォームのスペシャ リスト
 
-最適なコラボレーションと効率を確保するために、クラウド導入チームは平均 6 人のチームで編成することをお勧めします。 これらのチームは、技術的な実行の観点から自己組織化する必要があります。 アジャイルやスクラムといった反復モデルの豊富な経験に基づくプロジェクト管理のノウハウを含めることも強くお勧めします。 このチームは、フラットな構造で管理される場合に最も効果的です。
+最適なコラボレーションと効率を確保するために、クラウド導入チームは平均 6 人のチームで編成することをお勧めします。 これらのチームは、技術的な実行の観点から自己組織化する必要があります。 アジャイルやスクラムなどの反復モデルの豊富な経験に基づくプロジェクト管理のノウハウも含めることを強くお勧めします。 このチームは、フラットな構造で管理される場合に最も効果的です。
 
 ## <a name="preparation"></a>準備
 

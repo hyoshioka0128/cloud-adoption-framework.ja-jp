@@ -9,18 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2064586262b4a0023b21fa63115245d24f346cf1
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 2ea6f481fbbd8cea4f6ebc1c9c930a34eb840c04
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024506"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880706"
 ---
+<!-- docutune:casing "Update Management" "Guest Configuration" "Blueprints: Getting started" "Blueprints: Blueprint definitions" MMA -->
 <!-- cSpell:ignore WSUS -->
 
 # <a name="operational-compliance-in-azure"></a>Azure における運用のコンプライアンス
 
-" _運用のコンプライアンス_ " は、すべてのクラウド管理ベースラインにおける 2 つ目の規範です。
+"_運用のコンプライアンス_" は、すべてのクラウド管理ベースラインにおける 2 つ目の規範です。
 
 ![クラウド管理ベースライン](../../_images/manage/management-baseline.png)
 
@@ -30,7 +31,7 @@ ms.locfileid: "93024506"
 
 | Process | ツール | 目的 |
 |---|---|---|
-| 更新プログラムの管理 | 更新管理 | 更新プログラムの管理とスケジューリング |
+| 更新プログラムの管理 | Azure Automation の Update Management | 更新プログラムの管理とスケジューリング |
 | ポリシーの適用 | Azure Policy | 環境とゲストのコンプライアンスを確保するためのポリシーの適用 |
 | 環境の構成 | Azure Blueprint | コア サービスの自動化されたコンプライアンス |
 | リソース構成 | 必要な状態の構成 | ゲスト OS と環境のいくつかの側面の自動構成 |
@@ -46,14 +47,14 @@ ms.locfileid: "93024506"
 
 ::: zone-end
 
-Update Management で管理されるコンピューターでは、評価と更新プログラムのデプロイに次の構成が使用されます。
+Azure Automation の Update Management ソリューションによって管理されるコンピューターでは、次の構成を使用して評価と更新プログラムのデプロイが実行されます。
 
 - Windows または Linux 用の Microsoft Monitoring Agent (MMA)。
 - PowerShell Desired State Configuration (DSC) (Linux の場合)。
 - Azure Automation の Hybrid Runbook Worker。
 - Microsoft Update または Windows Server Update Services (WSUS) (Windows コンピューターの場合)。
 
-詳細については、[Update Management ソリューション](/azure/automation/update-management/overview)に関するページを参照してください。
+詳細については、[Azure Automation の Update Management ソリューション](/azure/automation/update-management/overview)に関する記事をご覧ください。
 
 > [!WARNING]
 > Update Management を使用するには、あらかじめ仮想マシンまたはサブスクリプション全体を Log Analytics および Azure Automation にオンボードしておく必要があります。
@@ -163,7 +164,7 @@ Azure Blueprints を使用すると、開発チームは新しい環境を迅速
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
 1. **ブループリントの名前** ボックスに、ブループリントの名前を入力します。
 1. **[定義の場所]** を選択し、適切な場所を選択します。
-1. **[次へ :アーティファクト >>]** をクリックし、ブループリントに含まれるアーティファクトを確認します。
+1. **[次へ :アーティファクト]** を選択し、ブループリントに含まれるアーティファクトを確認します。
 1. **[下書きの保存]** を選択します。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
@@ -177,7 +178,7 @@ Azure Blueprints を使用すると、開発チームは新しい環境を迅速
 1. ブループリントの一覧をフィルター処理して、適切なブループリントを選択します。
 1. **ブループリントの名前** ボックスに、ブループリントの名前を入力します。
 1. **[定義の場所]** を選択し、適切な場所を選択します。
-1. **[次へ :アーティファクト >>]** をクリックし、ブループリントに含まれるアーティファクトを確認します。
+1. **[次へ :アーティファクト]** を選択し、ブループリントに含まれるアーティファクトを確認します。
 1. **[下書きの保存]** を選択します。
 
 ::: zone-end

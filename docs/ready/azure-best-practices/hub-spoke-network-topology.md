@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 234662ed55a71c11512b2ed9c25903158a090e95
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: c37cc134ff40f1b0d158498db9d3c7375ac320a9
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712121"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995378"
 ---
 # <a name="hub-and-spoke-network-topology"></a>ハブ アンド スポーク ネットワーク トポロジ
 
@@ -22,7 +22,7 @@ ms.locfileid: "94712121"
 
 - **コストの削減と管理の効率。** 複数のワークロードで共有できるサービス (ネットワーク仮想アプライアンス (NVA) や DNS サーバーなど) を 1 か所に集めることで、IT は過剰なリソースと管理作業を最小限にすることができます。
 - **サブスクリプションの制限の克服。** 大規模なクラウドベースのワークロードでは、単一の Azure サブスクリプション内で許可されるリソースよりも多くのリソースの使用が求められる場合があります。 さまざまなサブスクリプションから中央のハブへのワークロード仮想ネットワークのピアリングで、こうした制限を克服できます。 詳細については、[Azure サブスクリプションの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits)に関するページを参照してください。
-- **懸念事項の分離。** 中央の IT チームとワークロード チームの間で個々のワークロードをデプロイすることができます。
+- **懸念事項の分離。** 中央の IT チームとワークロード チームの間で個々 のワークロードをデプロイすることができます。
 
 小さなクラウド資産は、このモデルによって追加で提供される構造と機能の恩恵を受けない場合があります。 しかし、大規模なクラウド導入作業で、上記のいずれかの懸念事項が 1 つでもあれば、ハブおよびスポーク ネットワーク アーキテクチャの実装を検討してください。
 

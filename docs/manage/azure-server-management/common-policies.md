@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0b82f70aa7d7e2e0e9553f586b66a6dd8673b1c5
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c2abae951b90703a5b2f0da3cea0e3ed069375fe
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604073"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880519"
 ---
 # <a name="common-azure-policy-examples"></a>Azure Policy の一般的な例
 
@@ -63,7 +63,7 @@ New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations 
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*allowed resource types") }
 ```
 
-使用するポリシーを識別した後、「[リソースのリージョンの制限](#restrict-resource-regions)」セクションにある PowerShell サンプルを変更して、このポリシーを割り当てることができます。
+使用するポリシーを特定したら、「[リソースのリージョンの制限](#restrict-resource-regions)」にある PowerShell サンプルを変更して、このポリシーを割り当てることができます。
 
 ### <a name="restrict-vm-size"></a>VM サイズの制限
 
@@ -71,7 +71,7 @@ Azure では、さまざまなワークロードをサポートするための�
 
 ### <a name="deploy-antimalware"></a>マルウェア対策のデプロイ
 
-このポリシーを使用すると、マルウェア対策で保護されていない VM に、既定の構成を使用した Microsoft Antimalware 拡張機能をデプロイすることができます。
+このポリシーを使用すると、マルウェア対策で保護されていない VM に、既定の構成を使用した Microsoft Antimalware 拡張機能をデプロイできます。
 
 ポリシーの GUID は `2835b622-407b-4114-9198-6f7064cbe0dc` です。
 

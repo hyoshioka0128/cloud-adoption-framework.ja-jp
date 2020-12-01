@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8b0d8896e6805a90aed940262236a8a4a3949cb6
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e271f4da4b4cb5f4dc93f5e67793d0c0531957b6
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571543"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879550"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>設計の原則と高度な運用の適用
 
@@ -62,7 +62,7 @@ CCoE における役割の自然な配置の概要を次に示します。
 - クラウド管理は、管理ベースラインを一元的に提供し、サービス カタログの使用をサポートするのに役立ちます。
 - しかし、ビジネス ユニット (ビジネス DevOps チームまたはクラウド導入チームの形式) には、ワークロード、パイプライン、またはパフォーマンスの日常的な運用に対する責任があります。
 
-管理領域を配置する場合、中央 IT チーム モデルと CCoE モデルでは、通常、プラットフォームの特化を実現できるので、文化的な変化は最小限に抑えられます。 中央 IT チームでは、ワークロードの特化の実現が複雑になる可能性があります。
+管理領域の配置に関して、中央 IT チーム モデルと CCoE モデルでは、通常、文化的な変化を最小限に抑えて、プラットフォームの特化を実現できます。 中央 IT チームでは、ワークロードの特化の実現が複雑になる可能性があります。
 
 ## <a name="management-specialization-processes"></a>管理のための特化プロセス
 
@@ -77,7 +77,7 @@ CCoE における役割の自然な配置の概要を次に示します。
 
 システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、クラウド導入フレームワークを介して実行される環境ビューの範囲外です。
 
-このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。フレームワークの焦点は、アーキテクチャ エクセレンスの 5 つの要素の向上に当てられています。
+このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。 フレームワークでは、アーキテクチャ エクセレンスの 5 つの要素の向上に重点を置いています。
 
 - **コストの最適化**: もたらされる価値が最大になるようにコストを管理します。
 - **オペレーショナル エクセレンス:** 運用環境でのシステムの動作を維持するオペレーショナル プロセスに従います。

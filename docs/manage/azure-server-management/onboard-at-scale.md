@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: daa24a986e768187f02799d9abe6c5c7ce2e6799
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: d12f568fe12b82b7a1a89cf0663e88ba2a107bb4
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711815"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880502"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -34,12 +34,12 @@ Azure サーバー管理サービスをサーバーにオンボードするに�
 
 ## <a name="use-azure-policy-to-deploy-extensions-to-azure-vms"></a>Azure Policy を使用して拡張機能を Azure VM にデプロイする
 
-[Azure 管理ツールとサービス](./tools-services.md)に関する記事で説明されているすべての管理ソリューションでは、Log Analytics エージェントが Azure 仮想マシンとオンプレミスのサーバーにインストールする必要があります。 Azure Policy を使用すると Azure VM を大規模にオンボードできます。 エージェントがお使いの Azure VM にインストールされ、適切な Log Analytics ワークスペースに接続されるようにポリシーを割り当てます。
+[Azure 管理ツールとサービス](./tools-services.md)に関する記事で説明するすべての管理ソリューションでは、Azure の仮想マシンとオンプレミスのサーバーに Log Analytics エージェントをインストールする必要があります。 Azure Policy を使用すると Azure VM を大規模にオンボードできます。 エージェントがお使いの Azure VM にインストールされ、適切な Log Analytics ワークスペースに接続されるようにポリシーを割り当てます。
 
 Azure Policy には、Log Analytics エージェントと [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) を含む[組み込みのポリシー イニシアチブ](/azure/governance/policy/concepts/definition-structure#initiatives)があります。これは Azure Monitor for VMs に必要です。
 
 > [!NOTE]
-> Azure 監視用のさまざまなエージェントについて詳しくは、「[Azure 監視エージェントの概要](/azure/azure-monitor/platform/agents-overview)」をご覧ください。
+> Azure を監視するためのさまざまなエージェントの詳細については、[Azure 監視エージェントの概要](/azure/azure-monitor/platform/agents-overview)に関する記事をご覧ください。
 
 ### <a name="assign-policies"></a>ポリシーの割り当て
 
@@ -49,7 +49,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
     ![[割り当て] オプションと [イニシアチブの割り当て] オプションが強調表示された、ポータルのポリシー インターフェイスのスクリーンショット。](./media/onboarding-at-scale1.png)
 
-2. **[ポリシーの割り当て]** ページで、省略記号 (…) を選択した後、管理グループまたはサブスクリプションを選択して、 **[スコープ]** を設定します。 任意でリソース グループを選択します。 次に、 **[スコープ]** ページの下部にある **[選択]** を選択します。 スコープによって、ポリシーの割り当て先のリソースまたはリソース グループが決まります。
+2. **[ポリシーの割り当て]** ページで、省略記号 ( **[...]** ) を選択し、管理グループまたはサブスクリプションを選択して、 **[スコープ]** を設定します。 任意でリソース グループを選択します。 次に、 **[スコープ]** ページの下部にある **[選択]** を選択します。 スコープによって、ポリシーの割り当て先のリソースまたはリソース グループが決まります。
 
 3. **[ポリシー定義]** の横にある省略記号 **[...]** を選択して、使用可能な定義の一覧を開きます。 イニシアティブ定義をフィルター処理するには、 **[検索]** ボックスに「**Azure Monitor**」と入力します。
 
@@ -82,9 +82,9 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
 ### <a name="update-management"></a>更新管理
 
-Update Management、Change Tracking、および Inventory ソリューションには、Log Analytics ワークスペースと Automation アカウントの両方が必要です。 これらのリソースが正しく構成されるように、Automation アカウントを使用してオンボードすることをお勧めします。 詳しくは、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](/azure/automation/change-tracking/manage-change-tracking)」をご覧ください。
+Update Management ソリューションおよび変更履歴とインベントリ ソリューションには、Log Analytics ワークスペースと Azure Automation アカウントの両方が必要です。 これらのリソースが正しく構成されるように、Automation アカウントを使用してオンボードすることをお勧めします。 詳細については、[Update Management ソリューションおよび変更履歴とインベントリ ソリューションのオンボード](/azure/automation/change-tracking/manage-change-tracking)に関する記事をご覧ください。
 
-すべてのサーバーに対して Update Management ソリューションを有効にすることをお勧めします。 Azure VM とオンプレミスのサーバーでは Update Management が無料です。 Automation アカウントから Update Management を有効にした場合、ワークスペース内に[スコープ構成](/azure/automation/change-tracking/manage-change-tracking)が作成されます。 Update Management サービスの対象マシンを含むように、スコープを手動で更新します。
+すべてのサーバーに対して Update Management ソリューションを有効にすることをお勧めします。 Azure VM とオンプレミスのサーバーでは Update Management が無料です。 Automation アカウントから Update Management を有効にした場合、ワークスペース内に[スコープ構成](/azure/automation/change-tracking/manage-change-tracking)が作成されます。 Update Management ソリューションの対象となるマシンを含むように、スコープを手動で更新します。
 
 既存のサーバーと今後のサーバーを対象にするには、スコープ構成を削除する必要があります。 これを行うには、Azure portal で Automation アカウントを表示します。 **[Update Management]**  >  **[コンピューターの管理]**  >  **[使用可能なマシンと今後のマシンすべてで有効にします]** を選択します。 この設定によって、ワークスペースに接続されているすべての Azure VM で Update Management を使用できます。
 
@@ -92,9 +92,9 @@ Update Management、Change Tracking、および Inventory ソリューション�
 
 ### <a name="change-tracking-and-inventory-solutions"></a>Change Tracking と Inventory のソリューション
 
-Change Tracking と Inventory のソリューションをオンボードするには、Update Management の場合と同じ手順に従います。 Automation アカウントからこれらのソリューションをオンボードする方法の詳細については、「[Update Management、Change Tracking、および Inventory ソリューションの配布準備](/azure/automation/change-tracking/manage-change-tracking)」をご覧ください。
+Change Tracking と Inventory のソリューションをオンボードするには、Update Management の場合と同じ手順に従います。 Automation アカウントからこれらのソリューションをオンボードする方法の詳細については、[Update Management ソリューションおよび変更履歴とインベントリ ソリューションのオンボード](/azure/automation/change-tracking/manage-change-tracking)に関する記事をご覧ください。
 
-Change Tracking ソリューションは、Azure VM では無料で、オンプレミスのサーバーでは 1 か月あたりノードごとに 6 ドルかかります。 このコストには、Change Tracking、Inventory、Desired State Configuration が含まれます。 特定のオンプレミス サーバーのみを登録する場合は、それらのサーバーをオプトインできます。 すべての運用サーバーをオンボードすることをお勧めします。
+変更履歴とインベントリ ソリューションは、Azure VM では無料ですが、オンプレミスのサーバーでは 1 か月あたりノードごとに 6 ドルかかります。 このコストには、変更履歴、インベントリ、Desired State Configuration が含まれます。 特定のオンプレミス サーバーのみを登録する場合は、それらのサーバーをオプトインできます。 すべての運用サーバーをオンボードすることをお勧めします。
 
 #### <a name="opt-in-via-the-azure-portal"></a>Azure portal を介したオプトイン
 
@@ -118,7 +118,7 @@ Change Tracking ソリューションは、Azure VM では無料で、オンプ�
 
 1. **[フィルター]** ボックスに、「**Change Tracking**」と入力して、保存された検索の一覧をフィルター処理します。 結果内の **[MicrosoftDefaultComputerGroup]** を選択します。
 
-1. Change Tracking にオプトインするコンピューターを含めるためにコンピューター名または VMUUID を入力します。
+1. コンピューター名または VMUUID を入力して、変更履歴とインベントリにオプトインするコンピューターを含めます。
 
   ```kusto
   Heartbeat
@@ -131,9 +131,9 @@ Change Tracking ソリューションは、Azure VM では無料で、オンプ�
 
 1. **[保存]** を選択します。 既定では、スコープ構成は保存された検索 **MicrosoftDefaultComputerGroup** にリンクされます。 それは自動的に更新されます。
 
-### <a name="azure-activity-log"></a>[Azure Activity Log (Azure アクティビティ ログ)]
+### <a name="azure-activity-log"></a>Azure activity log
 
-[[Azure アクティビティ ログ]](/azure/azure-monitor/platform/activity-logs-overview) も Azure Monitor の一部です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
+[Azure アクティビティ ログ](/azure/azure-monitor/platform/activity-logs-overview)も Azure Monitor の一部です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
 
 このソリューションを実行するには:
 
@@ -161,7 +161,7 @@ Azure Log Analytics の Agent Health ソリューションでは、Windows お�
 
 ### <a name="antimalware-assessment"></a>マルウェア対策評価
 
-Antimalware Assessment ソリューションは、マルウェアに感染しているか感染のリスクが高まっているサーバーの識別に役立ちます。
+Antimalware Assessment ソリューションは、マルウェアに感染しているか感染のリスクが高まっているサーバーの特定に役立ちます。
 
 このソリューションを実行するには:
 

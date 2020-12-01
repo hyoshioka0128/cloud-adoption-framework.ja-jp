@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7e913c5143b7f276c3457deb7a92cc7bfeeff11d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: b57eb90f5cee020b2eb58026a886f4082c992fa6
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713583"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880604"
 ---
+<!-- docutune:ignore "provide advanced threat protection" -->
+
 # <a name="protect-and-recover-in-azure"></a>Azure での保護と復旧
 
 "_保護と復旧_" は、すべてのクラウド管理ベースラインにおいて 3 つ目の、そして最後の分野です。
@@ -44,9 +46,9 @@ ms.locfileid: "94713583"
 
 Azure Backup では、ご自身のデータを Microsoft Cloud 内でバックアップ、保護、および復旧できます。 Azure Backup によって、既存のオンプレミスまたはオフサイトのバックアップ ソリューションがクラウドベースのソリューションに置き換えられます。 この新しいソリューションは、信頼性が高く、セキュリティで保護され、コスト競争力を備えています。 Azure Backup では、1 つの一貫したソリューションを通じてオンプレミスの資産を保護および復旧することもできます。
 
-Azure に存在するデータに対して、Azure Backup にはさまざまなレベルの保護が用意されています。 例:Azure Virtual Machines や Azure Files などのクラウド インフラストラクチャの重要な要素をバックアップするために、[Azure 仮想マシンのバックアップ](/azure/backup/backup-azure-vms-introduction)と[Azure ファイルのバックアップ](/azure/backup/azure-file-share-backup-overview)が提供されています。 Azure Virtual Machines で実行されるデータベースなど、より重要なコンポーネントの場合は、[MS SQL](/azure/backup/backup-azure-sql-database) や [SAP HANA](/azure/backup/sap-hana-db-about) 向けの専用バックアップ ソリューションが大幅に低い RPO で提供されます。
+Azure に存在するデータに対して、Azure Backup にはさまざまなレベルの保護が用意されています。 たとえば、Azure Virtual Machines や Azure Files など、クラウド インフラストラクチャの重要な要素をバックアップする場合は、[Azure Virtual Machines バックアップ](/azure/backup/backup-azure-vms-introduction)と [Azure Files バックアップ](/azure/backup/azure-file-share-backup-overview)が提供されます。 Azure Virtual Machines で実行されるデータベースなど、より重要なコンポーネントの場合は、[MS SQL](/azure/backup/backup-azure-sql-database) および [SAP HANA](/azure/backup/sap-hana-db-about) 専用のデータベース バックアップ ソリューションが大幅に低い RPO で提供されます。
 
-Azure Backup でバックアップを有効にすることがいかに簡単であるかを知るには、以下のセクションを参照して、Azure Virtual Machines のバックアップを有効にします
+Azure Backup でバックアップを有効にすることがいかに簡単であるかを知るために、次のセクションを参照して、Azure Virtual Machines のバックアップを有効にします。
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Azure VM のバックアップを有効にする
 
@@ -66,7 +68,7 @@ Azure Backup でバックアップを有効にすることがいかに簡単で�
 
 ::: zone target="docs"
 
-Azure Backup の詳細とさまざまなオファリングについては、こちらの[概要](/azure/backup/backup-overview)に関するセクションを参照してください。
+Azure Backup の詳細については、[Azure Backup の概要](/azure/backup/backup-overview)に関する記事をご覧ください。
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 

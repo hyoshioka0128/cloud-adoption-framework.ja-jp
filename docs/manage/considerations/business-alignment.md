@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1c1a2bbdb6665246563f9514b55784f48114dee9
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 9b2d610942615c3f86e9e5cc0dbbb194d8192293
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84992840"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879992"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>クラウド管理でのビジネス アラインメントの構築
 
@@ -29,7 +29,7 @@ ms.locfileid: "84992840"
 - **[コミットメント](./commitment.md):** ビジネスとの契約を作成および文書化することによって、真のパートナーシップを構築します。
 
 > [!NOTE]
-> これらの用語の基礎となるのは、SLA、RTO、RPO などの従来の IT 用語です。 特定のビジネス用語と IT 用語のマッピングについては、[コミットメント](./commitment.md)に関する記事を参照してください。
+> これらの用語の基礎となるのは、SLA、RTO、RPO などの従来の IT 用語です。 特定のビジネス用語と IT 用語のマッピングの詳細については、「[クラウド管理におけるビジネス コミットメント](./commitment.md)」をご覧ください。
 
 ## <a name="operations-management-workbook"></a>運用管理ブック
 

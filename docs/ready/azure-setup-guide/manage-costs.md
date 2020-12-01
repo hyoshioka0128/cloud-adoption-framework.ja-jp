@@ -9,22 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 230d5d4927033fe93650b19c152b8db3ab4b70f8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d072897e93cb0f368a2c61c69d9fd7d8822389fe
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884404"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997337"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Azure リソースのコストと課金を管理する
 
-コスト管理とは、ビジネスに関連するコストを効率的に計画して制御するプロセスです。 コストの管理タスクは、一般に、財務、管理、およびアプリのチームが実行します。 Azure Cost Management および Billing を利用すると、コストを考慮して計画を立てることができます。 また、効果的にコストを分析し、クラウド支出を最適化する措置を取ることにも役立ちます。
+コスト管理とは、ビジネスに関連するコストを効率的に計画して制御するプロセスです。 通常、コスト管理タスクは、財務、管理、アプリケーションの各チームが実行します。 Azure Cost Management + Billing を使用すると、コストを考慮して計画を立てることができます。 また、効果的にコストを分析し、クラウド支出を最適化する措置を取ることにも役立ちます。
 
 クラウド コスト管理プロセスを組織全体に統合することの詳細については、クラウド導入フレームワークの、[事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md)方法に関する記事を参照してください。
 
-## <a name="manage-your-costs-with-azure-cost-management-and-billing"></a>Azure Cost Management および Billing でコストを管理する
+## <a name="manage-your-costs-with-azure-cost-management--billing"></a>Azure Cost Management + Billing でコストを管理する
 
-Azure Cost Management および Billing には、コストの予測と管理に役立ついくつかの方法が用意されています。
+Azure Cost Management + Billing には、コストの予測と管理に役立ついくつかの方法が用意されています。
 
 - **[クラウド コストの分析]** は、コストの調査と分析に役立ちます。 アカウントの集計されたコストを表示したり、時間の経過に沿って累積コストを表示することができます。
 - **[予算による監視]** では、予算を作成し、それを超えそうになったときに警告するアラートを構成することができます。
@@ -42,7 +42,7 @@ Azure Cost Management および Billing には、コストの予測と管理に�
 ### <a name="manage-invoices-and-payment-methods"></a>請求書と支払い方法の管理
 
 1. [[コストの管理と請求]](https://portal.azure.com/#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview) に移動します。
-1. 左ウィンドウの**課金**のセクションから、 **[請求書]** または **[支払い方法]** を選択します。
+1. 左ウィンドウの **課金** のセクションから、 **[請求書]** または **[支払い方法]** を選択します。
 
 ## <a name="billing-and-subscription-support"></a>課金とサブスクリプションのサポート
 
@@ -66,7 +66,7 @@ Azure のお客様は、課金とサブスクリプションのサポートに�
 
 詳細については、次を参照してください。
 
-- [Azure Cost Management と Billing のドキュメント](/azure/billing)
+- [Azure Cost Management および Billing のドキュメント](/azure/billing)
 - [クラウド導入フレームワーク:事業単位、環境、プロジェクトをまたいでコストを追跡する](../azure-best-practices/track-costs.md)
 - [クラウド導入フレームワーク:Cost Management の規範](../../govern/cost-management/index.md)
 
@@ -84,7 +84,7 @@ Azure のお客様は、課金とサブスクリプションのサポートに�
 **請求書と支払い方法の管理**
 
 1. **[コストの管理と請求]** に移動します。
-1. 左ウィンドウの**課金**のセクションから、 **[請求書]** または **[支払い方法]** を選択します。
+1. 左ウィンドウの **課金** のセクションから、 **[請求書]** または **[支払い方法]** を選択します。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview]" submitText="Go to Cost Management + Billing" ::: form-end
 
@@ -99,7 +99,7 @@ Azure のお客様は、課金とサブスクリプションのサポートに�
 1. **[ヘルプとサポート]** に移動します。
 2. **[新しいサポート リクエスト]** を選択します。
 
-**サポート リクエストの表示**サポート リクエストとその状態を表示するには:
+**サポート リクエストの表示** サポート リクエストとその状態を表示するには:
 
 1. **[ヘルプとサポート]** に移動します。
 2. **[すべてのサポート リクエスト]** を選択します。

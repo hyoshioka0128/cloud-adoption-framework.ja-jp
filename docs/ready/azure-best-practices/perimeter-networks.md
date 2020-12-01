@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: ae5506d6d09289b2c41cd5ece887b2ec5692c267
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 3071c65925a4d96740be8f7314538b60b0559142
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712852"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997371"
 ---
 # <a name="perimeter-networks"></a>境界ネットワーク
 
@@ -38,7 +38,7 @@ ms.locfileid: "94712852"
 > - [Azure とオンプレミス データセンター間に境界ネットワークを実装する](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [Azure とインターネット間に境界ネットワークを実装する](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
-通常、中央 IT チームとセキュリティ チームは、境界ネットワークを運用するための要件定義を担当します。
+通常、中央 IT チームとセキュリティ チームは、境界ネットワークを運用するための要件の定義を担当します。
 
 ![ハブ アンド スポーク ネットワーク トポロジの例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 _図 1:ハブ アンド スポーク ネットワーク トポロジの例_

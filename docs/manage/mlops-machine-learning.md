@@ -1,22 +1,22 @@
 ---
 title: Azure Machine Learning を使用した MLOps
-description: 継続的な統合、配信、デプロイなど、ワークフローの効率を向上させる機械学習の運用 (MLOps) の原則と実践について説明します。
+description: 継続的インテグレーション、継続的デリバリー、継続的デプロイなど、ワークフローの効率を向上させる機械学習の運用 (MLOps) の原則と実践について説明します。
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ab0841311b1f532b9a79269f1fd91650de5c6378
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: aa4a7983868af3250ac85cb700ce828cec3fe008
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711730"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879482"
 ---
 # <a name="machine-learning-operations-with-azure-machine-learning"></a>Azure Machine Learning を使用した機械学習の運用
 
-機械学習の運用 (MLOps) は、継続的な統合、配信、デプロイなど、ワークフローの効率を向上させる DevOps の原則と実践に基づいています。 MLOps では、次を行うために、これらの原則を機械学習プロセスに適用します。
+機械学習の運用 (MLOps) は、継続的インテグレーション、継続的デリバリー、継続的デプロイなど、ワークフローの効率を向上させる DevOps の原則と実践に基づいています。 MLOps では、次を行うために、これらの原則を機械学習プロセスに適用します。
 
 - より迅速にモデルの実験と開発を行います。
 - より迅速にモデルのデプロイと運用を行います。
@@ -39,10 +39,10 @@ Azure Machine Learning で提供される MLOps 機能は次のとおりです�
 Azure で MLOps を使用すると、次の場合に役立ちます。
 
 - 再現可能なモデルと再利用可能なトレーニング パイプラインを作成します。
-- 品質管理や A/B テストに向けたモデルのパッケージ化、検証、デプロイを簡略化する。
+- 品質管理や A/B テストに向けたモデルのパッケージ化、検証、デプロイを簡素化する。
 - モデルの動作を説明および観察し、再トレーニング プロセスを自動化する。
 
-MLOps によって、機械学習ソリューションの品質と一貫性が向上します。 Azure Machine Learning を使用して、モデルのライフサイクルを管理する方法の詳細については、「[MLOps: Azure Machine Learning を使用したモデル管理、デプロイ、および監視](/azure/machine-learning/concept-model-management-and-deployment)」を参照してください。
+MLOps によって、機械学習ソリューションの品質と一貫性が向上します。 Azure Machine Learning を使用して、モデルのライフサイクルを管理する方法の詳細については、「[MLOps: Azure Machine Learning を使用したモデル管理、デプロイ、および監視](/azure/machine-learning/concept-model-management-and-deployment)」をご覧ください。
 
 ## <a name="next-steps"></a>次のステップ
 
@@ -50,7 +50,7 @@ MLOps によって、機械学習ソリューションの品質と一貫性が�
 
 - [MLOps: Azure Machine Learning を使用したモデル管理、デプロイ、および監視](/azure/machine-learning/concept-model-management-and-deployment)
 - [Azure Machine Learning を使用したモデルのデプロイ](/azure/machine-learning/how-to-deploy-and-where)方法とデプロイ先
-- チュートリアル: [ACI に画像分類モデルをデプロイする](/azure/machine-learning/tutorial-deploy-models-with-aml)
+- チュートリアル: [Azure Container Instances に画像分類モデルをデプロイする](/azure/machine-learning/tutorial-deploy-models-with-aml)
 - [エンドツーエンドの MLOps サンプル リポジトリ](https://github.com/microsoft/MLOps)
 - [Azure Pipelines を使用した機械学習モデルの CI/CD](/azure/devops/pipelines/targets/azure-machine-learning?tabs=yaml&view=azure-devops)
 - [デプロイされたモデルを利用する](/azure/machine-learning/how-to-consume-web-service)クライアントを作成する

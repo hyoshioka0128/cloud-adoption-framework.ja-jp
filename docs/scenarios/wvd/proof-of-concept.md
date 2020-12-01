@@ -7,12 +7,12 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4b88bd7d9954b332b3881e06afc95ab8406bbe6b
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: d43eafcc0ce5a0d85488c38e31b79c48d74de613
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108286"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996997"
 ---
 <!-- cSpell:ignore FSLogix onboards remoteapp macos -->
 
@@ -23,7 +23,7 @@ Contoso のクラウド導入チームでは、エンド ユーザーのデス�
 移行プロセスの以下のアプローチは、概念実証の実装の概要を示すために簡略化されています。
 
 1. **評価**: チームは、既定の仮想マシン (VM) のサイズを使用して、ホスト プールをデプロイします。 評価データは、予想される同時ユーザー セッションの数と、それらの同時セッションをサポートするために必要な VM の数をチームが特定するのに役立ちます。
-2. **デプロイ**: チームは、Azure Marketplace の Windows 10 ギャラリー イメージとその評価手順 1 のサイズ設定を使用して、プールされたデスクトップの[ホスト プールを作成](/azure/virtual-desktop/create-host-pools-azure-marketplace)します。
+2. **デプロイ**: チームは、Azure Marketplace の Windows 10 ギャラリー イメージとその評価手順 1 のサイズ設定を使用して、プールされたデスクトップの [ホスト プールを作成](/azure/virtual-desktop/create-host-pools-azure-marketplace)します。
 3. **デプロイ**: チームは、既に移行されているワークロードについて [RemoteApp アプリケーション グループを作成](/azure/virtual-desktop/manage-app-groups#create-a-remoteapp-group)します。
 4. **デプロイ**: チームは、ユーザー プロファイルを格納するために、[FSLogix プロファイル コンテナーを作成](/azure/virtual-desktop/create-host-pools-user-profile)します。
 5. **リリース**: チームは、ユーザーのサンプリングについて、アプリケーション グループとデプロイされたデスクトップのパフォーマンスと待機時間をテストします。
@@ -40,7 +40,7 @@ Windows Virtual Desktop のすべてのエンタープライズ移行に関し�
 - すべてのユーザーが、Azure Marketplace から Windows&nbsp;10 Enterprise マルチセッション イメージを使用できる。
 - すべてのユーザー プロファイルが、Azure Files、Azure NetApp Files、FSLogix プロファイル コンテナーの VM ベースのストレージ サービスのいずれかに移行される。
 - すべてのユーザーが、[VM のサイズに関する推奨事項に従い](/windows-server/remote/remote-desktop-services/virtual-machine-recs#multi-session-recommendations)、仮想中央処理装置 (vCPU) ごと、および 4&nbsp;GB の RAM ごとにユーザーが 6 人という密度で、一般的なペルソナによって説明できる。
-- すべてのワークロードが、Windows&nbsp;10 マルチセッションと互換性がある。
+- すべてのワークロードが、Windows&nbsp;10 Enterprise マルチセッションと互換性がある。
 - 運用環境での使用で、仮想デスクトップとアプリケーション グループ間の待機時間を受け入れられる。
 
 概念実証の構成参照に基づいて Windows Virtual Desktop シナリオのコストを計算するために、チームでは、[米国東部](https://azure.com/e/448606254c9a44f88798892bb8e0ef3c)、[西ヨーロッパ](https://azure.com/e/61a376d5f5a641e8ac31d1884ade9e55)、または[東南アジア](https://azure.com/e/7cf555068922461587d0aa99a476f926)の料金計算ツールを使用します。

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dd16185c53aaa678f885508e47ef897118a5d7f3
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1aeb06a9e103365ad5cbcfd9e23055fa47f00eb7
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605174"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994787"
 ---
 <!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -34,6 +34,8 @@ Terraform のクラウド導入フレームワークのファンデーション 
 
 ![Terraform を使用したファンデーション ランディング ゾーン](../../_images/ready/foundations-terraform-landing-zone.png)
 _図 1:Terraform を使用したファンデーション ランディング ゾーン。_
+
+<!-- docutune:casing NetworkMonitoring AdAssessment AdReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 ## <a name="capabilities"></a>機能
 
@@ -149,7 +151,7 @@ tags_hub = {
 }
 ```
 
-次に、デプロイの分析に使用される Log Analytics ワークスペース名とソリューションのセットを指定します。 ここでは、ネットワーク監視、Active Directory Assessment と Replication、DNS Analytics、および Key Vault Analytics を保持しました。
+次に、デプロイの分析に使用される Log Analytics ワークスペース名とソリューションのセットを指定します。 ここでは、ネットワーク監視、Active Directory Assessment と Replication、DNS Analytics、Key Vault Analytics を保持しました。
 
 ```hcl
 

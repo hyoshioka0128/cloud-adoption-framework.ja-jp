@@ -7,13 +7,17 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9143a4df4de8e720529f3bf88d835f9e507e245f
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.custom: think-tank
+ms.openlocfilehash: d05426ff488c726c6f152eb9a8fe6e5e5d1dfbe4
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432654"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447118"
 ---
+<!-- cSpell:ignore FIPS SIEM majeure NSGs -->
+<!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
+
 # <a name="enterprise-scale-security-governance-and-compliance"></a>エンタープライズ規模のセキュリティ、ガバナンス、コンプライアンス
 
 この記事では、暗号化とキー管理の定義、ガバナンスの計画、セキュリティの監視と監査ポリシーの定義、プラットフォーム セキュリティの計画について説明します。 記事の最後に、Azure サービスのエンタープライズ セキュリティの準備状況を評価するためのフレームワークについて説明した表を掲載します。
@@ -30,9 +34,7 @@ ms.locfileid: "94432654"
 
 - 必要に応じて、アプリケーション固有とワークロード固有のシークレットと共有シークレットを分離できます ([アクセス制御](/azure/key-vault/general/best-practices))。
 
-<!-- cSpell:ignore FIPS -->
-
-- ハードウェア セキュリティ モジュールで保護されたキーが必要な場合は、Premium SKU を最適化できます。 基となるハードウェア セキュリティ モジュール (HSM) は、FIPS 140-2 レベル 2 に準拠しています。 サポートされているシナリオを考慮して、FIPS 140-2 レベル 3 に準拠するように Azure 専用 HSM を管理します。
+- ハードウェア セキュリティ モジュールで保護されたキーが必要な場合は、Premium SKU を最適化できます。 基になるハードウェア セキュリティ モジュール (HSM) は、FIPS 140-2 レベル 2 に準拠しています。 サポートされているシナリオを考慮して、FIPS 140-2 レベル 3 に準拠するように Azure 専用 HSM を管理します。
 
 - キーのローテーションとシークレットの有効期限。
 
@@ -95,7 +97,7 @@ ms.locfileid: "94432654"
 
 - Azure Policy には、特定のスコープでの定義の制限など、制限があることを理解します ([ポリシーの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits))。
 
-- 規制コンプライアンス ポリシーを理解します。 これらには、健康保険の携帯性と説明責任に関する法律、クレジット カード業界、データ セキュリティ基準、サービス組織制御信頼サービス プリンシパルおよび基準などが含まれます。
+- 規制コンプライアンス ポリシーを理解します。 これには、HIPAA、PCI DSS、SOC2 Trust Service Principles and Criteria などが含まれます。
 
 ### <a name="design-recommendations"></a>設計の推奨事項
 
@@ -111,7 +113,7 @@ ms.locfileid: "94432654"
 
 - 可能な場合は組み込みポリシーを使用して、運用上のオーバーヘッドを最小限に抑えます。
 
-- 組み込みのポリシー共同作成者ロールを特定のスコープに割り当てて、アプリケーションレベルのガバナンスを有効にします。
+- 特定のスコープで組み込みのポリシー共同作成者ロールを割り当てて、アプリケーションレベルのガバナンスを有効にします。
 
 - 継承されたスコープでの除外による管理を回避するために、ルート管理グループ スコープで行われる Azure Policy 割り当ての数を制限します。
 
@@ -141,11 +143,11 @@ ms.locfileid: "94432654"
 
 - Azure AD レポート機能を使用してアクセス制御の監査レポートを生成します。
 
-- 長期間にわたるデータ保持のために、Azure アクティビティ ログを Azure Monitor ログにエクスポートします。 必要に応じて、2 年以上の長期間保存する場合は、Azure Storage にエクスポートします。
+- 長期的なデータ保持のために、Azure アクティビティ ログを Azure Monitor ログにエクスポートします。 必要に応じて、2 年以上の長期間保存する場合は、Azure Storage にエクスポートします。
 
 - すべてのサブスクリプションに対して Security Center Standard を有効にし、Azure Policy を使用してコンプライアンスを確保します。
 
-- Azure Monitor ログと Azure Security Center を介して基本オペレーティング システムのパッチ ドリフトを監視します。
+- Azure Monitor ログと Azure Security Center を使用して、基本オペレーティング システムのパッチ ドリフトを監視します。
 
 - Azure ポリシーを使用して、VM 拡張機能を介してソフトウェア構成を自動的にデプロイし、準拠するベースライン VM 構成を適用します。
 
@@ -185,14 +187,14 @@ Azure を採用する場合には、正常なセキュリティ体制を維持�
 
 <!-- docutune:ignore "and conditional access" -->
 
-## <a name="azure-security-benchmarks"></a>Azure セキュリティ ベンチマーク
+## <a name="azure-security-benchmark"></a>Azure セキュリティ ベンチマーク
 
 Azure セキュリティ ベンチマークには、Azure で使用するほとんどのサービスをセキュリティで保護するために使用できる、影響力の高いセキュリティに関する推奨事項のコレクションが含まれています。 これらの推奨事項は、ほとんどの Azure サービスに適用できるため、"一般的" または "組織的" と考えることができます。 Azure セキュリティ ベンチマークの推奨事項は Azure サービスごとにカスタマイズされ、このカスタマイズされたガイダンスがサービスの推奨事項に関する記事に含まれています。
 
 Azure セキュリティ ベンチマークのドキュメントでは、セキュリティ コトロールとサービスに関するレコメンデーションを規定しています。
 
-- [セキュリティ コントロール](/azure/security/benchmarks/overview): Azure セキュリティ ベンチマークの推奨事項は、セキュリティ コントロール別に分類されています。 セキュリティ コントロールは、ネットワーク セキュリティやデータ保護など、ベンダーに依存しない高度なセキュリティ要件を表します。 各セキュリティ コントロールには、これらのレコメンデーションを有効にするための一連のセキュリティに関する推奨事項と指示内容があります。
-- [サービスの推奨事項](/azure/security/benchmarks/security-baselines-overview)Azure サービスに対するベンチマークのレコメンデーションが利用できる場合、そこにはサービスに合わせて調整された Azure セキュリティ ベンチマークの推奨事項と、特定のサービスに固有のその他の推奨事項が含まれます。
+- [セキュリティ制御](/azure/security/benchmarks/overview): Azure セキュリティ ベンチマークの推奨事項は、セキュリティ コントロール別に分類されています。 セキュリティ コントロールは、ネットワーク セキュリティやデータ保護など、ベンダーに依存しない高度なセキュリティ要件を表します。 各セキュリティ コントロールには、これらのレコメンデーションを有効にするための一連のセキュリティに関する推奨事項と指示内容があります。
+- [サービスの推奨事項](/azure/security/benchmarks/security-baselines-overview): Azure サービスに対するベンチマークのレコメンデーションが利用できる場合、そこにはサービスに合わせて調整された Azure セキュリティ ベンチマークの推奨事項と、特定のサービスに固有のその他の推奨事項が含まれます。
 
 ## <a name="service-enablement-framework"></a>サービスの有効化フレームワーク
 

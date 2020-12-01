@@ -1,6 +1,6 @@
 ---
 title: Azure イノベーション:アプリケーションを介したエンゲージメント
-description: 既存の Web アプリと API アプリを簡単に最新化し、クラウドネイティブ アプリを構築するのに役立つ Azure サービスについて説明します。
+description: 既存の Web アプリと API アプリを簡単に最新化し、クラウドネイティブ アプリケーションを構築するのに役立つ Azure サービスについて説明します。
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b58c0b36f954ad20c2e642e11bef35fd169e2ca1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 922a123fe13b268548e2b51ffcc9d42c05d9c64a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883129"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880842"
 ---
 # <a name="engage-customers-through-applications"></a>アプリケーションを介したカスタマー エンゲージメント
 
@@ -163,7 +163,7 @@ AKS サービスを構成または監視するには:
 
 ### <a name="serverless-solutions"></a>サーバーレス ソリューション
 
-スケーリング、可用性、パフォーマンスが自動的に処理されるフル マネージド プラットフォームを使用して、インフラストラクチャのプロビジョニングや管理を行わずに、クラウドネイティブなアプリを構築します。 Azure サーバーレス ソリューションの利点:
+スケーリング、可用性、パフォーマンスが自動的に処理されるフル マネージド プラットフォームを使用して、インフラストラクチャのプロビジョニングや管理を行わずに、クラウドネイティブ アプリケーションを構築します。 Azure サーバーレス ソリューションの利点:
 
 - 開発者のベロシティを高める。
 - チームのパフォーマンスを向上させる。

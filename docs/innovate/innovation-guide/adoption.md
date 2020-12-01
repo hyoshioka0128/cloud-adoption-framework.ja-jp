@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 462b365101d90688d6a3e4eb9b4be9cd4d9aa275
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 24b31b27bf660229187caeea15881fe99722202a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883180"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880859"
 ---
 # <a name="prepare-for-customer-feedback"></a>カスタマー フィードバックの準備
 
@@ -25,7 +25,7 @@ ms.locfileid: "88883180"
 - **定量的 (テストからのフィードバック):** このフィードバックは、開発側が求めるアクションを評価します。
 - **定性的 (顧客からのフィードバック):** このフィードバックは、メトリックが意味することを顧客の声で伝えます。
 
-フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープン ソース ソフトウェアのホームです。 商用として開発されたアプリケーションのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops)の記事は、自分のリポジトリを開始する際に役立ちます。
+フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープンソース ソフトウェアのホームです。 商用として開発されたアプリケーションのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops)の記事は、自分のリポジトリを開始する際に役立ちます。
 
 Azure の次の各ツールは、GitHub でホストされているプロジェクトと統合されます (または互換性があります)。
 

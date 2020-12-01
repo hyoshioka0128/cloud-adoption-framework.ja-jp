@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b30aa8ab692f9cb88302075d42d70af405c4dd94
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fa57d16b874c32fda3fc874e82d32c0e1a42c708
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572274"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880893"
 ---
-<!-- cSpell:ignore ITSMC -->
-
 # <a name="enhanced-management-baseline-in-azure"></a>Azure の管理ベースラインの改善
 
 最初の 3 つのクラウド管理規範では、管理ベースラインについて説明しています。 このガイドの前の記事では、管理ベースラインと呼ばれるクラウド管理サービスの MVP (実用最小限の製品: Minimum Viable Product) について説明しました。 この記事では、そのベースラインに対する一般的な改善をいくつか概説します。
@@ -45,16 +43,18 @@ ms.locfileid: "88572274"
 
 ワークロードの運用とプラットフォームの運用の両方で、設計とアーキテクチャの原則を変更する必要があります。 これらの変更には時間がかかる可能性があり、運用経費が増加する場合があります。 このような投資を必要とするワークロードの数を削減するために、管理ベースラインを拡張することにより、ビジネス コミットメントを十分に高められる可能性があります。
 
+<!-- docutune:casing "IT Service Management" "IT Service Management Connector" ITSMC "Free and Standard" -->
+
 次の表では、改善された顧客の管理ベースラインに共通するプロセス、ツール、および考えられる影響の概要を示します。
 
 | 規範  | Process  | ツール | 潜在的な影響 | 詳細情報 |
 |---|---|---|---|---|
 | インベントリと可視性 | サービスの変更の追跡 | Azure Resource Graph | Azure のサービスに対する変更が視認しやすくなると、負の影響をより迅速に検出したり、より迅速に修復できる場合がある。 | [Azure Resource Graph の概要](/azure/governance/resource-graph/overview) |
-| インベントリと可視性 | IT サービスマネジメント (ITSM) の統合 | IT Service Management Connector | ITSM に自動接続されることにより、認識が早くなる。 | [IT Service Management Connector (ITSMC)](/azure/azure-monitor/platform/itsmc-overview) |
+| インベントリと可視性 | IT サービス マネジメント (ITSM) の統合 | IT Service Management Connector | ITSM に自動接続されることにより、認識が早くなる。 | [IT Service Management Connector (ITSMC)](/azure/azure-monitor/platform/itsmc-overview) |
 | 運用のコンプライアンス | 操作の自動化 | Azure Automation | 変更により迅速および正確に対応するために運用のコンプライアンスを自動化する。 | 次のセクションを参照 |
 | 運用のコンプライアンス | パフォーマンスの自動化 | Azure Automation | リソース固有のスケーリングやサイズ変更に関する一般的な問題を解決するために、パフォーマンスの予測によって運用のコンプライアンスを自動化します。 | 次のセクションを参照 |
 | 運用のコンプライアンス | マルチクラウド操作 | Azure Automation の Hybrid Runbook Worker | 複数のクラウド間での操作を自動化する。 | [Hybrid Runbook Worker の概要](/azure/automation/automation-hybrid-runbook-worker) |
-| 運用のコンプライアンス | ゲストの自動化 |  Desired State Configuration (DSC) | エラーと構成のずれを減らすためのゲスト オペレーティング システムのコードベースの構成。 | [DSC の概要](/powershell/scripting/dsc/overview/overview) |
+| 運用のコンプライアンス | ゲストの自動化 | Desired State Configuration (DSC) | エラーと構成のずれを減らすためのゲスト オペレーティング システムのコードベースの構成。 | [DSC の概要](/powershell/scripting/dsc/overview/overview) |
 | 保護と復旧 | 侵害通知 | Azure Security Center | セキュリティ違反復旧トリガーを含むよう保護を改善。 | 次のセクションを参照 |
 
 ::: zone target="docs"

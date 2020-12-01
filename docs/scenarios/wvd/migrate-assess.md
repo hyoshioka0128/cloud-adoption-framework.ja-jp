@@ -7,12 +7,12 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b85900e887122b20c7dc776ac74deb12dad93220
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: f489c9230a26c149c7d44b9eb0ba0631a757c0ef
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108414"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997014"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows Virtual Desktop の評価
 
@@ -52,7 +52,7 @@ Windows Virtual Desktop 評価ごとに、ユーザーのペルソナ、仮想�
 | パフォーマンス | 低 | 高メモリ消費量 | 低 |
 | GPU | 該当なし | 必須 | なし |
 | Azure リージョン | 北米 | 西ヨーロッパ | 北米 |
-| ユーザー数 | 1000 | 50 | 20 |
+| ユーザー数 | 1,000 | 50 | 20 |
 | セッション数 | 200 | 50 | 10 |
 
 各ペルソナ、またはビジネス機能と技術要件が異なる各ユーザー グループには、特定のホストプール構成が必要になります。
@@ -69,7 +69,7 @@ Movere と Lakeside の両方による現在のオンプレミス環境のスキ
 
 - ペルソナがこのデスクトップを使用するために、インストールする必要のあるアプリケーションはありますか? ペルソナが、完全に Web ベースのソフトウェアをサービス アプリケーションとして使用するのでない限り、各ペルソナに対して[カスタムのマスター VHD イメージを構成](/azure/virtual-desktop/set-up-customize-master-image)して、そのマスター イメージに必要なアプリケーションをインストールすることが必要になるでしょう。
 - このペルソナは、Microsoft 365 アプリケーションを必要としますか? そうであるなら、[カスタマイズされたマスター VHD イメージに Microsoft 365 を追加する](/azure/virtual-desktop/install-office-on-wvd-master-image)必要があります。
-- このアプリケーションは、Windows&nbsp;10 マルチセッションと互換性がありますか? アプリケーションに互換性が無い場合、カスタムの VHD イメージを実行するために[個人用プール](/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type)が必要になることがあります。 アプリケーションと Windows Virtual Desktop の互換性の問題については、[Desktop Application Assure](/fasttrack/win-10-app-assure-assistance-offered) サービスを参照してください。
+- このアプリケーションは、Windows&nbsp;10 Enterprise マルチセッションと互換性がありますか? アプリケーションに互換性が無い場合、カスタムの VHD イメージを実行するために[個人用プール](/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type)が必要になることがあります。 アプリケーションと Windows Virtual Desktop の互換性の問題については、[Desktop Application Assure](/fasttrack/win-10-app-assure-assistance-offered) サービスを参照してください。
 - ミッションクリティカルなアプリケーションは、Windows Virtual Desktop インスタンスと任意のバックエンド システムとの間の待機時間から影響を受ける可能性がありますか? その場合、アプリケーションをサポートしているそのバックエンド システムを Azure に移行することの検討をお勧めします。
 
 これらの質問の答えによっては、デスクトップの移行またはデプロイに先立って、デスクトップ イメージまたはサポートしているアプリケーション コンポーネントに対する修復を計画に含める必要があるかもしれません。

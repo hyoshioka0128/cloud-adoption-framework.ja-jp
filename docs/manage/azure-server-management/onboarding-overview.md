@@ -1,18 +1,18 @@
 ---
 title: Azure サーバー管理サービスのオンボード
-description: Azure 仮想マシンとオンプレミス サーバーの情報を使用して Azure サーバー管理サービスをオンボードします。
+description: Azure の仮想マシンとオンプレミスのサーバーの情報を使用して、Azure サーバー管理サービスをオンボードします。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c77548023e11be6984051c1d002d5198b0649a42
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 0b3fc5f2e6d1cf32155ac954ef34b411c00239a4
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711798"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880332"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>フェーズ 2:Azure サーバー管理サービスへのオンボード
 
@@ -23,7 +23,7 @@ Azure 管理サービスに関連する[ツール](./tools-services.md)と[計�
 
 ## <a name="onboarding-processes"></a>オンボード プロセス
 
-ガイドのこのセクションでは、Azure 仮想マシンとオンプレミス サーバーの両方を対象に、次のオンボーディング プロセスについて説明します。
+ガイダンスのこのセクションでは、Azure の仮想マシンとオンプレミスのサーバーの両方を対象に、次のオンボード プロセスについて説明します。
 
 - **ポータルを使用して評価のために単一の VM 上の管理サービスを有効にします。** このプロセスを使用して、Azure サーバー管理サービスを理解します。
 - **ポータルを使用してサブスクリプション用の管理サービスを構成します。** このプロセスは、プロビジョニングされた新しい VM によって管理サービスが自動的に使用されるように Azure 環境を構成するのに役立ちます。 スクリプトやコマンド ラインより Azure portal のエクスペリエンスを好む場合は、このアプローチを使用します。

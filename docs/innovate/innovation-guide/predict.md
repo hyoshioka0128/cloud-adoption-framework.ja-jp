@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5fe9338002a8a1223ad64b81f884d70de9191161
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 2e7e13ee2fe02d0f720d5992a8d9d2881d0a28e4
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604298"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880791"
 ---
 <!-- cSpell:ignore ONNX -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "89604298"
 
 Azure には高度な機械学習機能が用意されています。 Azure Machine Learning を使用すると、クラウドとエッジ全体で機械学習モデルを構築、トレーニング、デプロイできます。 自動機械学習を使用すると、モデルを短時間で開発できます。 拘束されることなく、任意のツールとフレームワークを使用できます。
 
-詳細については、[Azure Machine Learning の概要](/azure/machine-learning/overview-what-is-azure-ml)と[初めての機械学習実験の概要](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)に関するページを参照してください。 機械学習のオープン ソース モデルの形式とランタイムの詳細については、[ONNX Runtime](http://onnxruntime.ai) を参照してください。
+詳細については、[Azure Machine Learning の概要](/azure/machine-learning/overview-what-is-azure-ml)と[初めての機械学習実験の概要](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)に関するページを参照してください。 機械学習のオープンソース モデルの形式とランタイムの詳細については、[ONNX Runtime](http://onnxruntime.ai) を参照してください。
 
 <!-- markdownlint-disable MD024 -->
 

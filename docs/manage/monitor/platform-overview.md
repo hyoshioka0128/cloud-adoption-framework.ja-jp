@@ -7,13 +7,14 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 228601766d4c580b73df2e78540833c05ff00924
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 635c313fe61f801ff453ef4a3a1d5e38cb3a014e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713549"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879278"
 ---
+<!-- docutune:casing "Squared Up" -->
 <!-- cSpell:ignore opsman ITSM -->
 
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>クラウド監視ガイド: 監視プラットフォームの概要
@@ -26,15 +27,15 @@ Microsoft では、2 つの製品からさまざまな監視機能を提供し�
 
 ## <a name="the-story-of-system-center-operations-manager"></a>System Center Operations Manager のストーリー
 
-Microsoft は 2000 年に Microsoft Operations Manager 2000 で運用管理の分野に参入しました。 2007 年には、その製品のリエンジニア バージョンである System Center Operations Manager を導入しました。 これは、Windows サーバーの単純な監視にとどまらず、異種プラットフォーム、ネットワーク デバイス、その他のアプリケーションやサービスの依存関係を含むサービスおよびアプリケーションの、堅牢なエンドツーエンドの監視に注力したものでした。 これは、業界において IBM Tivoli や HP Operations Manager と同じクラスに属する、確立されたエンタープライズ レベルのオンプレミス環境向け監視プラットフォームでした。 それが、Azure、アマゾン ウェブ サービス (AWS)、およびその他のクラウド プロバイダーで実行されているコンピューティングとプラットフォームのリソースの監視をサポートするように拡大してきました。
+Microsoft は 2000 年に Microsoft Operations Manager 2000 で運用管理の分野に参入しました。 2007 年には、その製品のリエンジニア バージョンである System Center Operations Manager を導入しました。 これは、Windows サーバーの単純な監視にとどまらず、異種プラットフォーム、ネットワーク デバイス、他のアプリケーションやサービスの依存関係など、サービスとアプリケーションの堅牢なエンド ツー エンドの監視に注力したものでした。 これは、業界において IBM Tivoli や HP Operations Manager と同じクラスに属する、確立されたエンタープライズ レベルのオンプレミス環境向け監視プラットフォームでした。 それが、Azure、アマゾン ウェブ サービス (AWS)、およびその他のクラウド プロバイダーで実行されているコンピューティングとプラットフォームのリソースの監視をサポートするように拡大してきました。
 
 ## <a name="the-story-of-azure-monitor"></a>Azure Monitor のストーリー
 
 2010 年に Azure がリリースされた時点では、クラウド サービスの監視は Azure Diagnostics エージェントによって提供されていました。これは、Azure リソースから診断データを収集する方法を提供するものでした。 この機能は、エンタープライズクラスの監視プラットフォームではなく、一般的な監視ツールと見なされていました。
 
-Application Insights は、クラウド、モバイル、IoT デバイスが急増する業界の変化と DevOps プラクティスの導入に合わせて移行するために導入されました。 Operations Manager でのアプリケーション パフォーマンス監視から Azure のサービスに拡大し、さまざまな言語で記述された Web アプリケーションの監視機能を豊富に提供します。 2015 年、Visual Studio 向けの Application Insights のプレビューが発表され、これは後に、単に Application Insights と呼ばれるようになりました。 このサービスでは、アプリケーションのパフォーマンス、要求と例外、トレースに関する詳細が収集されます。
+Application Insights は、クラウド、モバイル、IoT デバイスが急増する業界の変化と DevOps プラクティスの導入に合わせて移行するために導入されました。 Operations Manager でのアプリケーション パフォーマンス監視から、さまざまな言語で記述された Web アプリケーションの豊富な監視機能を提供する Azure のサービスへと拡大されました。 2015 年、Visual Studio 向けの Application Insights のプレビューが発表され、これは後に、単に Application Insights と呼ばれるようになりました。 このサービスでは、アプリケーションのパフォーマンス、要求と例外、トレースに関する詳細が収集されます。
 
-2015 年には、Azure Operational Insights が一般公開されました。 これが Azure、オンプレミス、またはその他のクラウド環境にあるコンピューターのデータを収集して検索する Log Analytics 分析サービスを提供し、System Center Operations Manager に接続しました。 セキュリティ監査、正常性評価、アラート管理などのシナリオ用に、クエリおよび分析ロジック、視覚化、データ収集ルールのコレクションが含まれているインテリジェンス パックが提供され、あらかじめパッケージ化されたさまざまな管理および監視の構成が用意されました。 その後、Azure Operational Insights は Log Analytics と呼ばれるようになりました。
+2015 年には、Azure Operational Insights が一般公開されました。 Azure、オンプレミス、または他のクラウド環境のマシンからデータを収集して検索し、System Center Operations Manager に接続する Log Analytics サービスが提供されました。 セキュリティ監査、正常性評価、アラート管理などのシナリオ用に、クエリおよび分析ロジック、視覚化、データ収集ルールのコレクションが含まれているインテリジェンス パックが提供され、あらかじめパッケージ化されたさまざまな管理および監視の構成が用意されました。 その後、Azure Operational Insights は Log Analytics と呼ばれるようになりました。
 
 2016 年、Azure Monitor のプレビューが Microsoft Ignite カンファレンスで発表されました。 それにより、フレームワークの使用を開始した任意の Azure サービスからプラットフォームのメトリック、リソース診断ログ、サブスクリプションレベルのアクティビティ ログ イベントを収集するための共通フレームワークが提供されました。 以前は、各 Azure サービスに独自の監視方法がありました。
 
@@ -47,9 +48,11 @@ Application Insights は、クラウド、モバイル、IoT デバイスが急�
 
 - 仮想ネットワーク内のリソースの監視、診断、メトリック表示のための **Azure Network Watcher**。
 
+<!-- docutune:casing "Operational Insights" -->
+
 ## <a name="the-story-of-operations-management-suite-oms"></a>Operations Management Suite (OMS) のストーリー
 
-2015 年から 2018 年 4 月まで、Operations Management Suite (OMS) は、ライセンス目的で以下の Azure 管理サービスをバンドルしたものでした。
+2015 年から 2018 年 4 月まで、Operations Management Suite (OMS) には、ライセンス目的で次の Azure 管理サービスがバンドルされていました。
 
 - Application Insights
 - Azure Automation
@@ -105,7 +108,7 @@ Operations Manager は、ワークフロー (ルール、モニター、およ�
 
 #### <a name="data-sources"></a>データ ソース
 
-Azure Monitor では、Azure のインフラストラクチャとプラットフォームのリソース、Windows コンピューターと Linux コンピューター上のエージェント、Azure ストレージ内に収集された監視データなど、さまざまなソースからデータが収集されます。 任意の REST クライアントで API を使用して Azure Monitor にログ データを書き込むことができ、お使いの Web アプリケーション用にカスタム メトリックを定義できます。 一部のメトリックデータは、その用途に応じて異なる場所にルーティングできます。 たとえば、データを "可能な限り迅速な" アラートに使用したり、他のログ データと組み合わせた長期的な傾向分析検索に使用したりできます。
+Azure Monitor では、Azure のインフラストラクチャおよびプラットフォーム リソース、Windows および Linux コンピューター上のエージェント、Azure Storage 内で収集された監視データなど、さまざまなソースからデータが収集されます。 任意の REST クライアントで API を使用して Azure Monitor にログ データを書き込むことができ、お使いの Web アプリケーション用にカスタム メトリックを定義できます。 一部のメトリックデータは、その用途に応じて異なる場所にルーティングできます。 たとえば、データを "可能な限り迅速な" アラートに使用したり、他のログ データと組み合わせた長期的な傾向分析検索に使用したりできます。
 
 #### <a name="monitoring-solutions-and-insights"></a>監視ソリューションと分析情報
 
@@ -135,7 +138,7 @@ Azure Monitor では、サービス コンポーネントの現在の正常性�
 
 - **Azure Monitor for VMs:** Windows および Linux の仮想マシンを監視するときに、Operations Manager と同様の正常性監視エクスペリエンスがゲスト Azure VM に対して提供されます。 可用性とパフォーマンスの観点から、主なオペレーティング システム コンポーネントの正常性が評価され、現在の正常性状態が判断されます。 ゲスト VM で、リソース使用率、ディスク領域の容量、またはオペレーティング システムのコア機能に関連する問題が継続的に発生していると判断されると、この状態について注意を促すためのアラートが生成されます。
 
-- **コンテナーに対する Azure Monitor:** Azure Kubernetes Service または Azure Container Instances のパフォーマンスと正常性が監視されます。 この機能により、Kubernetes で使用可能なコントローラー、ノード、およびコンテナーから、メモリやプロセッサのメトリックが Metrics API 経由で収集されます。 コンテナー ログ、コンテナーに関するインベントリ データ、それらのイメージも収集されます。 収集されたパフォーマンス データに基づく事前定義済みの正常性基準は、リソースのボトルネックや容量の問題が存在するかどうかを特定するのに役立ちます。 全体的なパフォーマンスや、特定の種類の Kubernetes オブジェクト (ポッド、ノード、コントローラー、またはコンテナー) のパフォーマンスを理解することもできます。
+- **コンテナーに対する Azure Monitor:** Azure Kubernetes Service または Azure Container Instances のパフォーマンスと正常性が監視されます。 メトリック API を使用して、Kubernetes で使用可能なコントローラー、ノード、コンテナーから、メモリやプロセッサのメトリックが収集されます。 コンテナー ログ、コンテナーに関するインベントリ データ、それらのイメージも収集されます。 収集されたパフォーマンス データに基づく事前定義済みの正常性基準は、リソースのボトルネックや容量の問題が存在するかどうかを特定するのに役立ちます。 全体的なパフォーマンスや、特定の種類の Kubernetes オブジェクト (ポッド、ノード、コントローラー、またはコンテナー) のパフォーマンスを理解することもできます。
 
 ## <a name="analyze-data"></a>データを分析する
 
@@ -191,7 +194,7 @@ Operations Manager SDK を使用すると、Operations Manager をサードパ�
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor では、構成をほとんどしないかまったくしなくても、Azure リソースからメトリックとログが収集されます。 監視ソリューションによって、アプリケーションまたはサービスを監視するためのロジックが追加されますが、それらのソリューションは Monitor の標準のログ クエリおよびビュー内で引き続き使用できます。 Application Insights や Azure Monitor for VMs などの情報分析ツールでは、データの収集と処理に Monitor プラットフォームが使用されます。 データを視覚化して分析するための追加のツールも用意されています。 ログ クエリやアラートなどの Monitor のコア機能を使用して、情報分析ツールによって収集されたデータを他のデータと組み合わせることができます。
+Azure Monitor では、構成をほとんどしないかまったくしなくても、Azure リソースからメトリックとログが収集されます。 監視ソリューションは、アプリケーションまたはサービスを監視するためのロジックを追加しますが、Azure Monitor の標準のログ クエリおよびビュー内で引き続き機能します。 Application Insights や Azure Monitor for VMs などの情報分析ツールでは、データの収集と処理に Azure Monitor プラットフォームが使用されます。 データを視覚化して分析するための追加のツールも用意されています。 ログ クエリやアラートなどの Azure Monitor のコア機能を使用して、分析情報によって収集されたデータを他のデータと組み合わせることができます。
 
 Monitor では、Azure または外部リソースから監視データや管理データを収集する方法がいくつかサポートされています。 その後、メトリック ストアまたはログ ストアからデータを抽出し、ITSM または監視ツールに転送することができます。 Azure Monitor REST API を使用して管理タスクを実行することもできます。
 

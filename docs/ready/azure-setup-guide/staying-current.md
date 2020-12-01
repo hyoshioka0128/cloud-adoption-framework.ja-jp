@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0a09216a3194e9b9d3719da8699c22dd0898a070
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 066e9029c10a6a46ae29e00389a530b0da0cadef
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776212"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997303"
 ---
 <!-- docutune:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
 <!-- cSpell:ignore endjin AzAdvertizer -->
@@ -27,7 +27,7 @@ Azure のようなクラウド プラットフォームは、多くの組織が�
 
 次のリソースは、Azure に関する最新情報を入手するのに役立ちます。
 
-- **Azure Service Health:** [Service Health](/azure/service-health/service-health-overview) アラートによって、進行中のサービス上の問題、計画メンテナンス、正常性の勧告についてのタイムリーな通知が提供されます。 これらのアラートには、提供終了が予定されている Azure の機能に関する情報も含まれています。
+- **Azure Service Health:** [Service Health アラート](/azure/service-health/service-health-overview)により、進行中のサービスの問題、計画メンテナンス、正常性の勧告についてのタイムリーな通知が提供されます。 これらのアラートには、提供終了が予定されている Azure の機能に関する情報も含まれています。
 - **Azure の更新情報:** 製品の更新プログラムに関するお知らせについては、「[Azure の更新情報](https://azure.microsoft.com/updates)」を確認してください。 簡単な概要は追加の詳細にリンクされているため、更新情報を簡単にフォローできます。 [Azure の更新情報の RSS フィード](https://azurecomcdn.azureedge.net/updates/feed)を介してサブスクライブします。
 - **Azure ブログ:** この [Azure ブログ](https://azure.microsoft.com/blog)では、Azure プラットフォームに関する最も重要な発表が行われます。 このブログをフォローして、最新の重要情報を入手してください。 [Azure ブログの RSS フィード](https://azurecomcdn.azureedge.net/blog/feed)を介してサブスクライブします。
 - **サービス固有のブログ:** 個々のさまざまな Azure サービスでブログが発行されています。これらのサービスに依存している場合は、それらをフォローすることができます。 Web 検索で、関心のあるブログを見つけてください。
@@ -37,7 +37,7 @@ Azure のようなクラウド プラットフォームは、多くの組織が�
 
 Azure に関する最新情報を入手するのに役立つより詳しいコンテンツについては、次のリソースを確認してください。
 
-- [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday): 毎週発行の、Azure を構築しているエンジニアによる動画。 内容は、デモ、質問への回答、分析情報の共有などです。 [Azure Friday の RSS フィード](https://channel9.msdn.com/Shows/Azure-Friday/feed)を介してサブスクライブします。
+- [Azure Friday](https://channel9.msdn.com/shows/Azure-Friday): 毎週発行の、Azure を構築しているエンジニアによる動画。 内容は、デモ、質問への回答、分析情報の共有などです。 [Azure Friday の RSS フィード](https://channel9.msdn.com/Shows/Azure-Friday/feed)を介してサブスクライブします。
 - [Azure グラフ](https://azurecharts.com): この視覚化では、過去 6 か月間に加えられたすべての Azure の更新が表示されます。 Azure の変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。 \*
 - [AzAdvertizer](https://www.azadvertizer.net): Azure Policy、ポリシー イニシアチブブ、ポリシー エイリアス、ロールベースのアクセス制御 (RBAC) などの Azure ガバナンス機能に関するリリースおよび変更の追跡。 \*
 - [Azure Weekly](https://azureweekly.info)*

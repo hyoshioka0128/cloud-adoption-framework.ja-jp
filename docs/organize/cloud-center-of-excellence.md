@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8e4e1b48d98abb456b3adb68c6fd5aa556fc1b7d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 77a93fb7bfca7fd368d2496602c735757ace624b
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712461"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996504"
 ---
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>クラウドのセンター オブ エクセレンス (CCoE) 機能
 
@@ -119,7 +119,7 @@ CCoE 作業は、ビジネス利害関係者からサポートによって加速
 
 CCoE 作業の最初の 6 から 9 か月は、ビジネス利害関係者が IT リーダーシップと CCoE との会議を行う時間を毎月割り当てることをお勧めします。 このような会議に正式な儀礼はほとんど不要です。 CCoE メンバーとそのリーダーに、このプログラムの重要性を再認識させるだけで、CCoE の成功を推進することができます。
 
-さらに、ビジネス利害関係者には進捗状況と CCoE チームが経験した阻害要因を常に通知することをお勧めします。 その作業の多くは、技術的な細かいことのように見えます。 しかし、チームが活力を失ったときや他の優先事項に気を取られているときに関与できるように、ビジネス利害関係者が計画の進行状況を理解することが重要なのです。
+さらに、ビジネス利害関係者には進捗状況と CCoE チームが経験した阻害要因を常に通知することをお勧めします。 その作業の多くは、技術的な細かいことのように見えます。 しかし、チームが活力を失ったときや他の優先事項に気を取られているときに関与できるように、ビジネス利害関係者が計画の進行状況を理解することが重要です。
 
 ### <a name="it-stakeholder-support"></a>IT 利害関係者のサポート
 

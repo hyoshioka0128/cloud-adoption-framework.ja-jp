@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a015370bdbc90440606b8089a4c644cad3b853c1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9e096fce40e00f66ce02bf2a98ff50f324f80b8b
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571849"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880196"
 ---
 # <a name="set-up-basic-alerts"></a>基本アラートを設定する
 
@@ -34,7 +34,9 @@ Azure portal を使用して手動でアラートを作成および管理する�
 
 ## <a name="automated-deployment-of-recommended-alerts"></a>推奨アラートの自動デプロイ
 
-このガイドでは、基本的なインフラストラクチャを監視する 15 種類のアラートを作成することをお勧めします。 デプロイ スクリプトは、[Azure Alert Toolkit の GitHub リポジトリ](https://github.com/Microsoft/manageability-toolkits)にあります。
+<!-- docutune:casing "Alert Toolkit" -->
+
+このガイドでは、基本的なインフラストラクチャを監視する 15 種類のアラートを作成することをお勧めします。 デプロイ スクリプトは、[Alert Toolkit](https://github.com/Microsoft/manageability-toolkits) GitHub リポジトリにあります。
 
 このパッケージでは、次のアラートが作成されます。
 
@@ -45,7 +47,7 @@ Azure portal を使用して手動でアラートを作成および管理する�
 - 破損したファイル システム
 - 一般的なハードウェア障害
 
-このパッケージでは、例として HP サーバー ハードウェアが使用されています。 関連付けられている構成ファイルの設定を、お使いの OEM ハードウェアを反映するように変更します。 構成ファイルに、パフォーマンス カウンターをさらに追加することもできます。 パッケージをデプロイするには、New-CoreAlerts.ps1 ファイルを実行します。
+このパッケージでは、例として HPE サーバー ハードウェアが使用されています。 関連付けられている構成ファイルの設定を、お使いの OEM ハードウェアを反映するように変更します。 構成ファイルに、パフォーマンス カウンターをさらに追加することもできます。 パッケージをデプロイするには、`New-CoreAlerts.ps1` ファイルを実行します。
 
 ## <a name="next-steps"></a>次のステップ
 

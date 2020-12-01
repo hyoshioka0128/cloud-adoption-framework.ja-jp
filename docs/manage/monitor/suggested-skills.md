@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2040be11d1c64e002ee304e8638ced855d7973e5
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 7d878cfa4e8fd9234c01fb4647a5b037857bfada
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713498"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879193"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -28,12 +28,12 @@ ms.locfileid: "94713498"
 
 - [Azure Policy](/azure/governance/policy/overview) の概要では、Azure Policy を使用してポリシーを作成、割り当て、管理する方法について説明しています。 Azure Policy では、Azure Monitor エージェントのデプロイと構成、Azure Monitor for VMs と Azure Security Center を使用した監視の有効化、診断設定のデプロイ、ゲスト構成設定の監査などを行うことができます。
 
-- [Azure コマンド ライン インターフェイス](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) (CLI) の概要。これは、Azure リソースを管理するためのクロスプラットフォーム コマンド ライン エクスペリエンスとなっています。 また、[Azure PowerShell](/powershell/azure/?view=azps-3.6.1) の概要についても確認してください。 [Azure の管理ツールを学習する](https://www.linkedin.com/learning/learning-azure-management-tools)初級レベルのコースの一部として、LinkedIn で Azure CLI と PowerShell プログラミング言語を対象としたセッションが提供されています。
+- [Azure コマンド ライン インターフェイス](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) (CLI) の概要。これは、Azure リソースを管理するためのクロスプラットフォーム コマンド ライン エクスペリエンスとなっています。 また、[Azure PowerShell](/powershell/azure/?view=azps-3.6.1) の概要についても確認してください。 [Azure の管理ツールを学習する](https://www.linkedin.com/learning/learning-azure-management-tools)初級レベルのコースの一部として、Azure CLI および PowerShell プログラミング言語を対象としたセッションが LinkedIn で提供されています。
 
   - [Azure CLI を使用する](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
   - [Azure PowerShell の概要](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- ポリシー、ロールベースのアクセス制御、およびその他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソースのセキュリティを実装する](/learn/paths/implement-resource-mgmt-security)」を参照してください。
+- ポリシー、ロールベースのアクセス制御、その他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソース管理のセキュリティを実装する](/learn/paths/implement-resource-mgmt-security)」をご覧ください。
 
 - 「[Microsoft Azure リソースとワークロードの監視](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring-update)」では、Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスにあるリソースを監視する方法について学習できます。
 
@@ -49,9 +49,9 @@ ms.locfileid: "94713498"
 
 - 「[Microsoft Azure Database Monitoring Playbook (Microsoft Azure のデータベース監視プレイブック)](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring)」では、Azure SQL Database、Azure SQL Data Warehouse、Azure Cosmos DB で分析情報を得るために使用できる主な監視機能と実施可能な手順について説明します。
 
-- 「[Monitoring Microsoft Azure Hybrid Cloud Networks (Microsoft Azure ハイブリッド クラウド ネットワークの監視)](https://www.pluralsight.com/courses/microsoft-azure-hybrid-cloud-networks-monitoring)」は、Azure 監視ツールを使用して、ハイブリッド クラウド実装の Azure 仮想ネットワークと仮想プライベート ネットワーク接続を視覚化、管理、最適化する方法を学習できる上級レベルのコースです。
+- 「[Monitoring Microsoft Azure Hybrid Cloud Networks (Microsoft Azure ハイブリッド クラウド ネットワークの監視)](https://www.pluralsight.com/courses/microsoft-azure-hybrid-cloud-networks-monitoring)」は、Azure 監視ツールを使用して、ハイブリッド クラウド実装の仮想ネットワークと仮想プライベート ネットワーク接続を視覚化、管理、最適化する方法を学習できる上級レベルのコースです。
 
-- [Azure Arc for servers](/azure/azure-arc/servers/overview) に関する記事では、Azure の外部でホストされている Windows および Linux マシンをネイティブの Azure 仮想マシンと同じように管理できる方法について説明しています。
+- [Azure Arc for servers](/azure/azure-arc/servers/overview) に関する記事では、Azure で実行されている仮想マシンと同様に、Azure の外部でホストされている Windows および Linux マシンを管理する方法について説明しています。
 
 - [VM の監視方法](https://www.youtube.com/watch?v=O7scXPrsM_0&list=PLLasX02E8BPCDMuesOy2C0_TMFsoZWe_0&index=6&t=0s)に関する動画では、Azure Monitor for VMs を使用して、ハイブリッド マシンまたはサーバー、および Azure VM または仮想マシン スケール セットを監視する方法について理解を深めるための中級レベルの詳細情報を提供します。
 
@@ -65,13 +65,15 @@ ms.locfileid: "94713498"
 
   - 「[Microsoft Azure のデータベース監視に関するプレイブック](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring)」では、Azure SQL Database、Azure SQL Data Warehouse、および Azure Cosmos DB の監視を実装して使用する方法について学習できます。
 
-  - 「[Azure Monitor Application Insights を使用したアプリケーションのインストルメント化](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument)」では、Application Insights SDK を使用して、Angular と Node.js コンポーネントを使用するアプリからテレメトリとイベントを収集する方法について詳しく説明します。
+  - 「[Instrument applications with Azure Monitor Application Insights (Azure Monitor Application Insights を使用したアプリケーションのインストルメント化)](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument)」では、Application Insights SDK を使用して、Angular と Node.js コンポーネントを使用するアプリケーションからテレメトリとイベントを収集する方法について詳しく説明します。
 
   - 「[Application Debugging and Profiling (アプリケーションのデバッグとプロファイリング)](https://www.pluralsight.com/courses/devintersection-azureai-session-31)」は、Azure Monitor Application Insights のスナップショット デバッガーとプロファイラーによって提供されるデータの使用と解釈について、Microsoft カンファレンスのセッションから記録したものです。
 
+<!-- docutune:ignore "from Scratch" -->
+
 ## <a name="data-analysis"></a>データ分析
 
-- [Azure Monitor でログ クエリ](/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを作成するための主要リソースです。Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析するためにログ クエリを作成します。
+- [Azure Monitor でログ クエリ](/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)を作成する方法をご確認ください。 Kusto クエリ言語は、Azure Monitor ログ クエリを記述するための主要リソースです。クエリでは、Azure から収集されたデータとハイブリッド リソース アプリケーション (ライブ アプリケーションなど) の依存関係の間で、ログ データを探索して分析します。
 
 - 「[Kusto Query Language (KQL) from Scratch (ゼロから始める Kusto クエリ言語 (KQL))](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)」は、Azure Monitor ログでのログ分析の幅広いユースケースと手法を示す詳細な例を含む包括的なコースです。
 
@@ -107,7 +109,9 @@ Azure に関する知識を [Azure 認定資格のトレーニングや試験](h
 
 多くの場合、顧客は、IT によって提供されるサービスについて、予想されるビジネス上の (および IT 組織に対する) 成果を管理、維持、および提供しようと努力します。 監視は、インフラストラクチャとビジネスを管理するための中核と見なされており、サービスとカスタマー エクスペリエンスの品質の測定に重点が置かれます。 これらの目標を達成するために、ITSM を DevOps と組み合わせて使用して基礎を作ります。これにより、監視チームは、監視サービスを管理、提供、およびサポートする方法を成熟させることができます。 ITSM フレームワークを導入することで、監視チームは、組織の戦略目標とニーズに合わせて、プロバイダーとして機能でき、信頼されたビジネス イネーブラーとして認識されるようになります。
 
-以下を確認して、最も人気のある ITSM フレームワークである [ITIL v4 とクラウド コンピューティングのホワイトペーパー](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud)に加えられた更新を理解してください。これは、既存の ITIL ガイダンスを DevOps、アジャイル、および Lean のベスト プラクティスと結合することに重点を置いています。 また、プロセスに依存しないフレームワークを使用して IT を変換する方法について別のブループリントを提供する、[IT4IT 参照アーキテクチャ](https://www.opengroup.org/it4it)についても検討してください。
+<!-- docutune:casing "ITIL 4 and the Cloud" -->
+
+以下を確認して、最もよく使用されている ITSM フレームワークである [ITIL 4 とクラウドに関するホワイト ペーパー](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud)に加えられた更新を理解してください。これは、既存の ITIL ガイダンスを、DevOps、アジャイル、Lean の各アプローチのベスト プラクティスと結合することに重点を置いています。 また、プロセスに依存しないフレームワークを使用して IT を変換する方法について別のブループリントを提供する、[IT4IT 参照アーキテクチャ](https://www.opengroup.org/it4it)についても検討してください。
 
 ## <a name="learn-more"></a>詳細情報
 

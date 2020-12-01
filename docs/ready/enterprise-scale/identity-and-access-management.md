@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e3876da051b363db5bc674a0b1159c525828fc71
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.custom: think-tank
+ms.openlocfilehash: 464e20686a9e61157f350491c97396345fe9ad95
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432671"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447355"
 ---
 # <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 
@@ -51,7 +52,7 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 
 - 可能な限り、Azure AD [RBAC](/azure/role-based-access-control/overview) を使用してリソースへのデータ プレーン アクセスを管理します。 例として、Azure Key Vault、ストレージ アカウント、SQL データベースなどがあります。
 - Azure 環境への権限を持つすべてのユーザーに対して Azure AD 条件付きアクセス ポリシーをデプロイします。 こうすることで、管理対象の Azure 環境を不正アクセスから保護するためのもう 1 つのメカニズムが実現します。
-- Azure 環境への権限を持つすべてのユーザーに対して多要素認証 (MFA) を適用します。 MFA の適用は、多くのコンプライアンス フレームワークの要件です。 これにより、資格情報の盗難や未承認のアクセスのリスクが大幅に低減されます。
+- Azure 環境への権限を持つすべてのユーザーに対して多要素認証を適用します。 多要素認証の適用は、多くのコンプライアンス フレームワークの要件です。 これにより、資格情報の盗難や未承認のアクセスのリスクが大幅に低減されます。
 - [Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) を使用して、ゼロ スタンディング アクセスと最小限の特権を確立します。 組織のロールを、必要な最小限レベルのアクセスにマップします。 Azure AD PIM は、既存のツールとプロセスの拡張機能にするか、説明したように Azure ネイティブ ツールを利用するか、必要に応じてこの両方を使用することができます。
 - リソースへのアクセスを許可する場合は、Azure AD PIM の Azure コントロール プレーン リソースに Azure AD のみのグループを使用します。
   - グループ管理システムが既に配置されている場合は、オンプレミス グループを Azure AD のみのグループに追加します。
@@ -62,10 +63,10 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 
 | Role | 使用法 | Actions | アクションなし |
 |---|---|---|---|
-| Azure プラットフォーム所有者 (つまり、組み込みの所有者ロール)               | 管理グループとサブスクリプションのライフサイクル管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
-| ネットワーク管理 (NetOps)        | プラットフォーム全体のグローバル接続管理:仮想ネットワーク、UDR、NSG、NVA、VPN、Azure ExpressRoute など            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
+| Azure プラットフォーム所有者 (組み込みの所有者ロールなど)               | 管理グループとサブスクリプションのライフサイクル管理                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
+| ネットワーク管理 (NetOps)        | プラットフォーム全体のグローバル接続管理: 仮想ネットワーク、UDR、NSG、NVA、VPN、Azure ExpressRoute など            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
 | セキュリティ操作 (SecOps)       | Azure 資産と Azure Key Vault の消去ポリシー全体の水平方向のビューを持つセキュリティ管理者ロール | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
-| サブスクリプションの所有者                 | サブスクリプション所有者のロールから派生したサブスクリプション所有者の委任されたロール                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
+| サブスクリプションの所有者                 | サブスクリプションの所有者ロールから派生したサブスクリプション所有者の委任されたロール                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
 | アプリケーションの所有者 (DevOps/AppOps) | リソース グループ レベルでアプリケーションおよび運用チームに付与される共同作成者ロール                                 | `*`                                                                                                                                                                                                                   | `Microsoft.Authorization/*/write`, `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
 
 - Azure Security Center の Just-In-Time アクセスをすべてのサービスとしてのインフラストラクチャ (IaaS) リソースに使用して、IaaS 仮想マシンへの一時的なユーザー アクセスに対してネットワークレベルの保護を有効にします。
@@ -75,7 +76,7 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 
 ### <a name="plan-for-authentication-inside-a-landing-zone"></a>ランディング ゾーン内の認証の計画
 
-企業組織が Azure を導入する際に下す必要がある重要な設計上の判断は、既存のオンプレミス ID ドメインを Azure に拡張するか、まったく新しいものを作成するかということです。 ランディング ゾーン内の認証の要件を十分に評価し、Windows Server 上の Active Directory Domain Services (AD DS)、Azure AD Domain Services (Azure AD DS)、またはその両方をデプロイする計画に組み込む必要があります。 ほとんどの Azure 環境では、少なくとも Azure ファブリック認証および AD DS ローカル ホスト認証と、グループ ポリシー管理に Azure AD を使用します。
+企業組織が Azure を導入する際に下す必要がある重要な設計上の判断は、既存のオンプレミス ID ドメインを Azure に拡張するか、まったく新しいものを作成するかということです。 ランディング ゾーン内の認証の要件を十分に評価し、Windows Server、Azure AD Domain Services (Azure AD DS)、またはその両方で、Active Directory Domain Services (AD DS) を展開するための計画に組み込む必要があります。 ほとんどの Azure 環境では、少なくとも Azure ファブリック認証および AD DS ローカル ホスト認証と、グループ ポリシー管理に Azure AD を使用します。
 
 **設計上の考慮事項:**
 
@@ -87,9 +88,9 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 - 一元化され、委任された責任を使用して、ロールとセキュリティの要件に基づいて、ランディング ゾーン内にデプロイされたリソースを管理します。
 - サービス プリンシパル オブジェクトの作成、Azure AD へのアプリケーションの登録、証明書またはワイルドカード証明書の取得と処理などの特権操作には、特別なアクセス許可が必要です。 そのような要求を処理するユーザーと、必要な注意を払ってアカウントをセキュリティで保護および監視する方法を検討してください。
 - 統合 Windows 認証を使用するアプリケーションに Azure AD 経由でリモート アクセスする必要があるシナリオが組織にある場合は、[Azure AD アプリケーション プロキシ](/azure/active-directory/manage-apps/application-proxy)の使用を検討します。
-- Azure AD、Azure AD DS、および Windows Server 上で実行されている AD DS には違いがあります。 アプリケーションのニーズを評価し、それぞれに使用される認証プロバイダーを理解してドキュメント化します。 すべてのアプリケーションに応じて計画を立てます。
-- Windows Server 上の AD DS と Azure AD DS のワークロードの互換性を評価します。
-- ネットワーク設計では、ローカル認証と管理のために Windows Server 上の AD DS を必要とするリソースが、適切なドメイン コントローラーにアクセスできるようにします。
+- Azure AD、Azure AD DS、Windows Server 上で実行されている AD DS には違いがあります。 アプリケーションのニーズを評価し、それぞれに使用される認証プロバイダーを理解してドキュメント化します。 すべてのアプリケーションに応じて計画を立てます。
+- Windows Server 上の AD DS と Azure AD DS に対するワークロードの互換性を評価します。
+- ローカル認証と管理で適切なドメイン コントローラーにアクセスできるように、Windows Server 上の AD DS を必要とするリソースがネットワーク設計で許可されていることを確認します。
   - Windows Server 上の AD DS については、大規模な企業全体のネットワーク コンテキストでローカル認証とホスト管理を提供する共有サービス環境を検討します。
 - このサービスは 1 つのサブスクリプションにのみ投影できるため、プライマリ リージョン内に Azure AD DS をデプロイします。
 - Azure サービスに対する認証には、サービス プリンシパルではなくマネージド ID を使用します。 この方法を使用すると、資格情報の盗難の危険性が軽減します。

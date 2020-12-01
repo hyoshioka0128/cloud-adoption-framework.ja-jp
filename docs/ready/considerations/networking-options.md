@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6895f8a68b76c378bec14b49896dec8bd0320ca8
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: eb7c57457ed49ff31cca71127fb1f27bde2046a0
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713821"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995042"
 ---
 <!-- cSpell:ignore NVAs VPNs -->
 
@@ -35,7 +35,7 @@ Azure ネットワーク サービスのデシジョン ツリーに基づいた
 
 - **ワークロードには仮想ネットワークが必要ですか?** マネージド PaaS (サービスとしてのプラットフォーム) のリソースの種類では、必ずしも仮想ネットワークを必要としない基になるプラットフォーム ネットワーク機能を使用します。 ワークロードが高度なネットワーク機能を必要とせず、サービスとしてのインフラストラクチャ (IaaS) リソースをデプロイする必要がない場合は、既定の [PaaS リソースによって提供されるネイティブなネットワーク機能](../../decision-guides/software-defined-network/paas-only.md)がワークロード接続とトラフィック管理の要件を満たす可能性があります。
 - **ワークロードには仮想ネットワークとオンプレミスのデータセンターの間の接続が必要ですか?** Azure には、ハイブリッド ネットワーク機能を確立するためのソリューションとして Azure VPN Gateway と Azure ExpressRoute の 2 つが用意されています。 [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) は、リモート ブランチ オフィスを設定してそこに接続する場合と同様に、サイト間 VPN 経由でオンプレミス ネットワークを Azure に接続します。 VPN Gateway は 10 Gbps の最大帯域幅を備えています。 [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) は、Azure とオンプレミス インフラストラクチャの間のプライベート接続を使用して、より高い信頼性とより短い待機時間を提供します。 ExpressRoute の帯域幅オプションは 50 Mbps ～ 100 Gbps です。
-- **オンプレミスのネットワーク デバイスを使用して送信トラフィックを検査および監査する必要がありますか?** クラウドネイティブなワークロードの場合は、[Azure Firewall](/azure/firewall/overview) またはクラウドでホストされたサードパーティの[ネットワーク仮想アプライアンス (NVA)](https://azure.microsoft.com/solutions/network-appliances) を使用して、パブリック インターネットとやりとりするトラフィックを検査および監査できます。 しかし、多くのエンタープライズ IT セキュリティ ポリシーでは、インターネットへの送信トラフィックが組織のオンプレミス環境内の一元管理されたデバイスを通過する必要があります。 [強制トンネリング](/azure/virtual-network/virtual-networks-udr-overview)は、これらのシナリオをサポートします。 すべてのマネージド サービスが強制トンネリングをサポートしているわけではありません。 [Azure App Service 内の App Service Environment](/azure/app-service/environment/intro)、[Azure API Management](/azure/api-management/api-management-key-concepts)、[Azure Kubernetes Service (AKS)](/azure/aks/intro-kubernetes)、[Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-index)、[Azure Databricks](/azure/azure-databricks/what-is-azure-databricks)、[Azure HDInsight](/azure/hdinsight) などのサービスおよび機能は、そのサービスまたは機能が仮想ネットワーク内にデプロイされている場合にこの構成をサポートします。
+- **オンプレミスのネットワーク デバイスを使用して送信トラフィックを検査および監査する必要がありますか?** クラウドネイティブなワークロードの場合は、[Azure Firewall](/azure/firewall/overview) またはクラウドでホストされたサードパーティの[ネットワーク仮想アプライアンス (NVA)](https://azure.microsoft.com/solutions/network-appliances) を使用して、パブリック インターネットとやりとりするトラフィックを検査および監査できます。 しかし、多くのエンタープライズ IT セキュリティ ポリシーでは、インターネットへの送信トラフィックが組織のオンプレミス環境内の一元管理されたデバイスを通過する必要があります。 [強制トンネリング](/azure/virtual-network/virtual-networks-udr-overview)は、これらのシナリオをサポートします。 すべてのマネージド サービスが強制トンネリングをサポートしているわけではありません。 [Azure App Service 内の App Service Environment](/azure/app-service/environment/intro)、[Azure API Management](/azure/api-management/api-management-key-concepts)、[Azure Kubernetes Service (AKS)](/azure/aks/intro-kubernetes)、[Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-index)、[Azure Databricks](/azure/azure-databricks/what-is-azure-databricks)、[Azure HDInsight](/azure/hdinsight) などのサービスおよび機能では、そのサービスまたは機能が仮想ネットワーク内にデプロイされている場合にこの構成がサポートされます。
 - **複数の仮想ネットワークを接続する必要がありますか?** [仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を使用して、[Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) の複数のインスタンスを接続できます。 ピアリングはサブスクリプション間およびリージョン間の接続をサポートできます。 複数のサブスクリプション間で共有されるサービスを提供するか、または多数のネットワーク ピアリングを管理する必要があるシナリオの場合は、[ハブ アンド スポーク ネットワーク アーキテクチャ](../../decision-guides/software-defined-network/hub-spoke.md)を導入するか、または [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) を使用することを検討してください。 仮想ネットワーク ピアリングは、2 つのピアリングされたネットワーク間の接続のみを提供します。 既定では、複数のピアリングにまたがる推移的な接続は提供されません。
 - **インターネット経由でワークロードにアクセスできますか?** Azure には、アプリケーションやサービスへの外部アクセスの管理およびセキュリティ保護に役立つように設計された次のサービスが用意されています。
   - [Azure Firewall](/azure/firewall/overview)
@@ -85,7 +85,7 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 ### <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
-これらのアーキテクチャ パターンのいずれかの使用に加えて、エンタープライズ IT グループが大規模なクラウド環境を管理する場合は、「[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)」を参照することを検討してください。 Azure ベースのクラウド インフラストラクチャを設計するとき、**クラウドで 1,000 を超える資産 (アプリ、インフラストラクチャ、またはデータ資産) をホストする** 中期的目標 (24 か月以内) がある場合は、CAF エンタープライズ規模のランディング ゾーンによって、ネットワーク、セキュリティ、管理、インフラストラクチャが組み合わされたアプローチが提供されます。
+これらのアーキテクチャ パターンのいずれかの使用に加えて、エンタープライズ IT グループが大規模なクラウド環境を管理する場合は、「[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)」を参照することを検討してください。 Azure ベースのクラウド インフラストラクチャを設計するときに、**クラウドで 1,000 を超える資産 (アプリケーション、インフラストラクチャ、またはデータ資産) をホストする** という中期目標 (24 か月以内) がある場合は、CAF エンタープライズ規模のランディング ゾーンによって、ネットワーク、セキュリティ、管理、インフラストラクチャが組み合わされたアプローチが提供されます。
 
 次の条件を満たす組織については、[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)で開始することが適切である場合があります。
 

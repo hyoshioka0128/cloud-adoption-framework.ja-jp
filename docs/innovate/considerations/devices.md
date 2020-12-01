@@ -1,18 +1,18 @@
 ---
 title: デジタル発明を介したデバイスとの対話
-description: アプリではなく、アンビエント エクスペリエンスやデバイスとの顧客の対話を通じてイノベーションの労力を減らす高度なアプローチについて説明します。
+description: アプリケーションではなく、アンビエント エクスペリエンスやデバイスとの顧客の対話を通じてイノベーションの労力を減らす高度なアプローチについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 52a00570873d4cccba052fee33845b8ad8653bbf
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a29dd4b3c23299e8666172cf974a200bffba3ba6
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604421"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880876"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>アンビエント エクスペリエンス:デバイスの操作
 

@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bb9c39784714dfab8233598d5180d5b770b9402c
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 2b575e6a6606f5d0a32695e2deb3b4f833ca6466
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604194"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880638"
 ---
+<!-- docutune:casing "SQL Server Health Check" -->
+
 # <a name="platform-specialization-for-cloud-management"></a>クラウド管理のためのプラットフォームの特殊化
 
 強化された管理ベースラインと同様に、プラットフォームの特殊化は標準の管理ベースラインを越える拡張機能です。 次の画像およびリストでは、管理ベースラインを拡張する方法を示しています。 この記事では、プラットフォームの特殊化のオプションについて説明します。
@@ -61,7 +63,7 @@ ms.locfileid: "89604194"
 
 システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、クラウド導入フレームワーク全体にわたって取られている環境的見解の範囲外です。
 
-このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。フレームワークの焦点は、アーキテクチャ エクセレンスの 5 つの要素の向上に当てられています。
+このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。 フレームワークでは、アーキテクチャ エクセレンスの 5 つの要素の向上に重点を置いています。
 
 - **コストの最適化**: もたらされる価値が最大になるようにコストを管理します。
 - **オペレーショナル エクセレンス:** 運用環境でのシステムの動作を維持するオペレーショナル プロセスに従います。

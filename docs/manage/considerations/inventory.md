@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4103fac5729e0ae757ca89ce6ae1574119af927
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e28906443deddf21b4058a07ff4af7c66f5bed3f
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571577"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879771"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>クラウド管理のインベントリと可視性
 
@@ -76,6 +76,8 @@ ms.locfileid: "88571577"
 
 ネットワーク、DNS、オペレーティング システム、および環境のその他の基本的な側面の継続的な正常性と運用は、あらゆるワークロードの全体的な正常性を考慮する上で重要なデータ ポイントです。
 
+<!-- docutune:ignore "cloud management methodology" "service management integration" -->
+
 ## <a name="processes"></a>処理
 
 おそらく、クラウド管理プラットフォームの機能よりも重要なのは、クラウド管理プロセスがビジネスとの運用コミットメントを実現することです。 クラウド管理の方法論には、少なくとも次のプロセスを含める必要があります。
@@ -104,7 +106,7 @@ ms.locfileid: "88571577"
 
 ### <a name="share-visibility"></a>共有の可視性
 
-アクションのないデータから得られるものはほとんどありません。 クラウド管理は、クラウドネイティブのツールとプロセス以外にも拡大する可能性があります。 より広範なプロセスに対応するには、クラウド管理ベースラインを拡張し、レポート、IT サービス マネジメントの統合、またはデータの一元化を含める必要があります。 クラウド管理では、運用の成熟度のさまざまな段階で、以下の 1 つ以上を含める必要があります。
+アクションのないデータから得られるものはほとんどありません。 クラウド管理は、クラウドネイティブのツールとプロセス以外にも拡大する可能性があります。 より広範なプロセスに対応するには、クラウド管理ベースラインを拡張して、レポート、IT サービス マネジメントの統合、またはデータの一元化を含める必要があります。 クラウド管理では、運用の成熟度のさまざまな段階で、以下の 1 つ以上を含める必要があります。
 
 ### <a name="report"></a>レポート
 

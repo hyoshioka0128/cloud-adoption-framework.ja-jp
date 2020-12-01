@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fb28e0f68a5eddaff094a3f16640689cad48769
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: think-tank
+ms.openlocfilehash: 8b2cb606ded625dfcfecc5e8168f38d45ac01c2d
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568551"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446727"
 ---
 <!-- cSpell:ignore scikit RLlib ONNX Jupyter -->
 
@@ -35,7 +36,7 @@ Azure には、高度な機械学習機能が用意されています。 Azure M
 
 ## <a name="checklist"></a>チェック リスト
 
-- **まず、Machine Learning についての理解を深め**てから、最初に作成するエクスペリエンスを選択します。 Python を使用した Jupyter Notebook、ビジュアル ドラッグ アンド ドロップ エクスペリエンス、自動機械学習 (AutoML) を使用する手順に従うことができます。
+- **まず、Machine Learning についての理解を深め** てから、最初に作成するエクスペリエンスを選択します。 Python を使用した Jupyter Notebook、ビジュアル ドラッグ アンド ドロップ エクスペリエンス、自動機械学習 (AutoML) を使用する手順に従うことができます。
 
   - [Machine Learning の概要](/azure/machine-learning/overview-what-is-azure-ml)
   - [Python で Jupyter Notebook を使用して初めての機械学習の実験を作成する](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)
@@ -43,13 +44,13 @@ Azure には、高度な機械学習機能が用意されています。 Azure M
   - [AutoML UI を使用する](/azure/machine-learning/tutorial-first-experiment-automated-ml)
   - [開発環境を構成する](/azure/machine-learning/how-to-configure-environment)
 
-- **より高度なチュートリアル**で、タクシー料金の予測、イメージの分類、バッチ スコアリング用パイプラインの構築を実験します。
+- **より高度なチュートリアル** で、タクシー料金の予測、イメージの分類、バッチ スコアリング用パイプラインの構築を実験します。
 
   - [AutoML を使用してタクシー料金を予測する](/azure/machine-learning/tutorial-auto-train-models)
   - [scikit-learn を使用してイメージを分類する](/azure/machine-learning/tutorial-train-models-with-aml)
   - [バッチ スコアリング用の Machine Learning パイプラインを構築する](/azure/machine-learning/tutorial-pipeline-batch-scoring-classification)
 
-- **ビデオ チュートリアルに従う**ことで、コード不要のモデル構築、MLOps、ONNX Runtime、モデルの解釈可能性と透過性など、Machine Learning のさまざまな利点の詳細について知ることができます。
+- **ビデオ チュートリアルに従って**、コード不要のモデル構築、機械学習の運用 (MLOps)、ONNX Runtime、モデルの解釈可能性と透過性など、Machine Learning の利点の詳細を学びます。
 
   - [Machine Learning の新機能](https://channel9.msdn.com/Shows/AI-Show/Allup-Azure-ML)
   - [AutoML を使用してモデルを構築する](https://aka.ms/automlvideo)

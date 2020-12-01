@@ -7,12 +7,12 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 99f7bc2f33e3aa5eec08ca0d5b9cca5f85e55063
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: b6034f20eb29473217fca39aff18fe96476b8fcb
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108388"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994379"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 
@@ -46,7 +46,7 @@ Windows Virtual Desktop インスタンスのデプロイは、[概念実証](./
 
 ### <a name="application-and-desktop-considerations"></a>アプリケーションとデスクトップに関する考慮事項
 
-一部のペルソナは、Windows&nbsp;10 マルチセッションと互換性のない従来のソリューションに依存している可能性があります。 そのような場合、一部のペルソナでは専用のデスクトップが必要になる場合があります。 この依存関係は、デプロイとテストを行うまでわからないことがあります。
+一部のペルソナは、Windows&nbsp;10 Enterprise マルチセッションと互換性のない従来のソリューションに依存している可能性があります。 そのような場合、一部のペルソナでは専用のデスクトップが必要になる場合があります。 この依存関係は、デプロイとテストを行うまでわからないことがあります。
 
 プロセスの後の方で発覚した場合、レガシ アプリケーションのモダナイゼーションまたは移行に対して将来的な繰り返しを割り当てる必要があります。 これにより、デスクトップ エクスペリエンスの長期的なコストが削減されます。 このような将来的な繰り返しは、モダン化にかかる価格の全体的な影響と専用デスクトップに関連する余分なコストを比較することにより、優先度付けして実施する必要があります。 パイプラインの中断を回避し、ビジネスの成果を実現するには、この優先順位付けが現在の繰り返しに影響を与えないようにする必要があります。
 

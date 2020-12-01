@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 6a0090cee1237753748d1351109a0826168ed5e3
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7be2796c2c8033b92e47578eed30611f596df094
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194869"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995569"
 ---
 # <a name="function-of-cloud-data-security"></a>クラウド データ セキュリティの機能
 
@@ -24,7 +24,7 @@ ms.locfileid: "86194869"
 
 - **データの増加:** 機密データは、ユーザーがクリエイティブに共同作業するほぼ無制限に多様なデバイスとクラウド サービスで生成され、保存されています。
 - **新しいモデル:** クラウドでは、"ドアを出る前にキャッチする" 従来のデータ損失防止 (DLP) モデルを補足し、置き換える "家に電話してキーを取得する" 新しいモデルが使用されるようになっています
-- 一般データ保護規則 (GDPR) のような**規制**では、プライベート データと、アプリケーションでのその使用方法の厳密な追跡が、組織に要求されます。
+- 一般データ保護規則 (GDPR) のような **規制** では、プライベート データと、アプリケーションでのその使用方法の厳密な追跡が組織に要求されます。
 
 ## <a name="team-composition-and-key-relationships"></a>チームの構成と重要な関係
 

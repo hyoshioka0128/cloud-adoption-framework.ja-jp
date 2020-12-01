@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4acfe75b2499d782946a89471e9ae61c4c868dbc
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: ee6f351f35914f326dc1864bd92114ef9edf917e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024472"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880145"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure サーバー管理ツールおよびサービス
 
@@ -41,7 +41,7 @@ ms.locfileid: "93024472"
 
 データ保護戦略を構築する場合、最初にワークロード アプリケーションを異なる層に分割することを検討します。 通常、各層には独自の保護計画が必要なため、このアプローチは役立ちます。 回復性に優れたアプリケーションの設計に関する詳細については、[回復性に優れた Azure 用アプリケーションの設計](/azure/architecture/resiliency)に関するページを参照してください。
 
-最も基本的なデータ保護はバックアップです。 サーバーが失われた場合の回復プロセスを高速化するには、データだけでなくサーバー構成もバックアップします。 バックアップは、偶発的なデータ削除やランサムウェア攻撃に対応するための効果的なメカニズムです。 [Azure Backup](/azure/backup) では、Windows または Linux を実行している Azure サーバーおよびオンプレミス サーバー上のデータを保護できます。 Backup でできることの詳細とハウツーガイドについては、[Azure Backup サービスの概要](/azure/backup/backup-overview)ページを参照してください。
+最も基本的なデータ保護はバックアップです。 サーバーが失われた場合の回復プロセスを高速化するには、データだけでなくサーバー構成もバックアップします。 バックアップは、偶発的なデータ削除やランサムウェア攻撃に対応するための効果的なメカニズムです。 [Azure Backup](/azure/backup) では、Windows または Linux を実行している Azure サーバーおよびオンプレミス サーバー上のデータを保護できます。 Azure Backup でできることの詳細と攻略ガイドについては、[Azure Backup サービスの概要](/azure/backup/backup-overview)に関する記事をご覧ください。
 
 ハードウェア障害やデータ センター停止の発生時に、リアルタイムのビジネス継続性がワークロードに必要である場合は、データ レプリケーションの使用を検討します。 [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) は VM の継続的なレプリケーションを可能にします。これはデータ損失を最小限に抑えるソリューションです。 Site Recovery では、レプリケーションなど、いくつかのレプリケーション シナリオもサポートされます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "93024472"
 
 - [Update Management](/azure/automation/update-management/overview) では、Azure の外部で実行されているオペレーティング システム インスタンスへのデプロイを含め、環境全体で修正プログラムのデプロイを自動化できます。 Windows と Linux の両方のオペレーティング システムに対応し、OS の主な脆弱性と、修正プログラムの適用漏れに起因する不適合を追跡します。
 - [Change Tracking および Inventory](/azure/automation/change-tracking) では、環境内で実行されているソフトウェアに関する分析情報を得られるほか、発生した変更を強調表示することができます。
-- [Azure Automation](/azure/automation/automation-intro) では、Python と PowerShell のスクリプトまたは Runbook を実行して環境全体でタスクを自動化できます。 Automation と [Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker) を併用すれば、Runbook をオンプレミスのリソースにも実行できます。
+- [Azure Automation](/azure/automation/automation-intro) では、Python と PowerShell のスクリプトまたは Runbook を実行して環境全体でタスクを自動化できます。 Azure Automation と [Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker) を併用すると、Runbook をオンプレミスのリソースにも拡張できます。
 - [Azure Automation State Configuration](/azure/automation/automation-dsc-overview) では、PowerShell Desired State Configuration (DSC) 構成を Azure から直接プッシュできます。 DSC を使うと、ゲスト オペレーティング システムとワークロードの構成を監視し、保存することもできます。
 
 ## <a name="govern"></a>ガバナンス
@@ -98,12 +98,12 @@ Azure 管理サービスの価格の詳細については、次のページを�
 
 - 次を含む [Azure Automation](https://azure.microsoft.com/pricing/details/automation)。
   - 必要な状態の構成
-  - Azure Update Management サービス
-  - Azure Change Tracking および Inventory サービス
+  - Update Management ソリューション
+  - 変更履歴とインベントリ ソリューション
 
 - [Azure Policy](https://azure.microsoft.com/pricing/details/azure-policy)
 
 - [Azure File Sync サービス](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Azure Update Management ソリューションは無料ですが、データ インジェストに関連する多少の費用が発生します。 経験則として、1 か月あたりのデータ インジェストの最初の 5 ギガバイト (GB) は無料です。 一般に、各マシンは 1 か月あたり約 25 MB を使うことがわかっています。 この場合、無料の対象となるマシンは 1 か月に約 200 台となります。 その他のサーバーについては、追加サーバーの数に月あたり 25 MB を掛けます。 次に、必要な追加ストレージのストレージ価格を結果に掛けます。 コストの詳細については、「[Azure Storage の価格の概要](https://azure.microsoft.com/pricing/details/storage)」を参照してください。 通常、サーバーを追加するごとに、コストにわずかな影響があります。
+> Azure Update Management ソリューションは無料ですが、データ インジェストに関連する多少の費用が発生します。 経験則として、1 か月あたりのデータ インジェストの最初の 5 ギガバイト (GB) は無料です。 一般に、各マシンは 1 か月あたり約 25 MB を使うことがわかっています。 この場合、無料の対象となるマシンは 1 か月に約 200 台となります。 その他のサーバーについては、追加サーバーの数に月あたり 25 MB を掛けます。 次に、必要な追加ストレージのストレージ価格を結果に掛けます。 コストについては、[Azure Storage の価格](https://azure.microsoft.com/pricing/details/storage)に関するページをご覧ください。 通常、サーバーを追加するごとに、コストにわずかな影響があります。

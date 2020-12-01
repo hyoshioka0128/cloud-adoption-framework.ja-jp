@@ -7,13 +7,15 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 838ef802195d5d3dc56d7df415db8a58486e83e0
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: 81ab318f69a67baa00a9e55c230e8fb443354ae7
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713685"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446863"
 ---
+<!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
 # <a name="network-topology-and-connectivity"></a>ネットワーク トポロジと接続
@@ -68,7 +70,7 @@ ms.locfileid: "94713685"
 
 - Azure での名前解決だけが必要な環境の場合は、解決のための Azure プライベート DNS を使用します。 名前解決用にデリゲートされたゾーンを作成します (`azure.contoso.com` など)。
 
-- Azure とオンプレミスの間で名前解決が必要な環境では、少なくとも 2 つの Azure 仮想マシン (VM) にデプロイされた既存の DNS インフラストラクチャ (たとえば Active Directory 統合 DNS) を使用します。 それらの DNS サーバーを使用するように、仮想ネットワークで DNS の設定を構成します。
+- Azure とオンプレミスの間で名前解決が必要な環境では、少なくとも 2 つの仮想マシン (VM) にデプロイされた既存の DNS インフラストラクチャ (Active Directory 統合 DNS など) を使用します。 それらの DNS サーバーを使用するように、仮想ネットワークで DNS の設定を構成します。
 
 - その場合でも、Azure プライベート DNS ゾーンを仮想ネットワークにリンクし、オンプレミスの DNS サーバーを使用することで、オンプレミスの DNS 名 (`onprem.contoso.com` など) への条件付き転送によるハイブリッド リゾルバーとして、DNS サーバーを使用することができます。 Azure プライベート DNS ゾーン (`azure.contoso.com` など) に対する Azure 内のリゾルバー VM への条件付きフォワーダーを使用して、オンプレミスのサーバーを構成できます。
 
@@ -122,15 +124,15 @@ _図 1:Virtual WAN のネットワーク トポロジ。_
   - ブランチから仮想ネットワーク
   - ブランチからブランチ
 
-- Virtual WAN ハブはロックダウンされています。 お客様がその中にデプロイできるリソースは、仮想ネットワーク ゲートウェイ (ポイント対サイト VPN、サイト間 VPN、Azure ExpressRoute)、Firewall Manager を介した Azure Firewall、ルート テーブルだけです。
+- Virtual WAN ハブはロックダウンされています。 その中にデプロイできるリソースは、仮想ネットワーク ゲートウェイ (ポイント対サイト VPN、サイト間 VPN、Azure ExpressRoute)、Firewall Manager を介した Azure Firewall、ルート テーブルだけです。
 
-- Virtual WAN では、ExpressRoute プライベート ピアリングを介して Azure からオンプレミスにアドバタイズされるプレフィックスに対する最大 200 の制限が、Virtual WAN ハブあたり 10,000 プレフィックスに増えます。 10,000 万プレフィックスの制限には、サイト間 VPN とポイント対サイト VPN も含まれます。
+- Virtual WAN では、ExpressRoute プライベート ピアリングを介して Azure からオンプレミスにアドバタイズされるプレフィックスに対する最大 200 の制限が、Virtual WAN ハブあたり 10,000 プレフィックスに増えます。 10,000 プレフィックスの制限には、サイト間 VPN とポイント対サイト VPN も含まれます。
 
-- ネットワーク間の推移的な接続 (リージョン内およびリージョン間) は、現在一般提供 (GA) されています。
+- ネットワーク間の推移的な接続 (リージョン内およびリージョン間) は、現在一般提供されています。
 
-- Virtual WAN のハブ間接続は現在一般提供されています。
+- Virtual WAN のハブ間接続は、現在一般提供されています。
 
-- すべての仮想ハブにはルーターが存在するため、Standard Virtual WAN の仮想ネットワーク間でトランジット接続が有効になります。 各仮想ハブ ルーターは、最大 50 Gbps の集約スループットをサポートしています。
+- すべての仮想ハブにルーターが存在するため、Standard Virtual WAN の仮想ネットワーク間のトランジット接続が有効になります。 各仮想ハブ ルーターは、最大 50 Gbps の集約スループットをサポートしています。
 
 - すべての VNet で最大 2,000 の VM ワークロードを 1 つの Virtual WAN ハブに接続できます。
 
@@ -161,7 +163,7 @@ _図 1:Virtual WAN のネットワーク トポロジ。_
 
 - DNS サーバーなど、必要な共有サービスを専用のランディング ゾーンにデプロイします。 必要な共有リソースを Virtual WAN ハブにデプロイすることはできません。
 
-- サイト間 VPN を介してブランチとリモートの場所を最も近い Virtual WAN ハブに接続するか、SD-WAN パートナー ソリューションを使用してブランチを Virtual WAN に接続できるようにします。
+- サイト間 VPN を介してブランチとリモート拠点を最も近い Virtual WAN ハブに接続するか、SD-WAN パートナー ソリューションを使用してブランチを Virtual WAN に接続できるようにします。
 
 - ポイント対サイト VPN を使用して、ユーザーを Virtual WAN ハブに接続します。
 
@@ -213,13 +215,13 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - ExpressRoute 回線を使用すると、同じ地政学的地域内の仮想ネットワーク間の接続や、Premium アドオンを使用して異なる地政学的地域間の接続を確立することができます。 次の点に留意してください。
 
-  - ネットワーク間のトラフィックでは、Microsoft エンタープライズ エッジ (MSEE) ルーターでトラフィックが折り返す必要があるため、待機時間が長くなる可能性があります。
+  - ネットワーク間のトラフィックでは、Microsoft Enterprise Edge (MSEE) ルーターでトラフィックが折り返す必要があるため、待機時間が長くなる可能性があります。
 
   - 帯域幅は、ExpressRoute ゲートウェイの SKU に制限されます。
 
   - 仮想ネットワーク間のトラフィックの検査やログ記録が必要な場合は、やはり UDR をデプロイして管理する必要があります。
 
-- Border Gateway Protocol (BGP) を使用する VPN ゲートウェイは、Azure 内およびオンプレミス内では推移的ですが、ExpressRoute ゲートウェイ間では推移されません。
+- Border Gateway Protocol (BGP) を使用する VPN ゲートウェイは、Azure 内とオンプレミスでは推移的ですが、ExpressRoute ゲートウェイ間では推移しません。
 
 - 複数の ExpressRoute 回線が同じ仮想ネットワークに接続されている場合は、接続の重みと BGP 手法を使用して、オンプレミスと Azure の間のトラフィックに最適なパスになるようにします。 詳細については、「[ExpressRoute ルーティングの最適化](/azure/expressroute/expressroute-optimize-routing)」を参照してください。
 
@@ -229,7 +231,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - 仮想ネットワークあたりの仮想ネットワーク ピアリング接続の最大数は 500 ですが、ExpressRoute プライベート ピアリング経由で Azure からオンプレミスにアドバタイズできるルートの最大数は 200 です。
 
-- VPN ゲートウェイの最大集約スループットは 10 Gbps です。 最大で 30 個のサイト間トンネルまたはネットワーク間トンネルがサポートされます。
+- VPN ゲートウェイの最大集約スループットは 10 Gbps です。 最大 30 個のサイト間トンネルまたはネットワーク間トンネルがサポートされます。
 
 **設計上の推奨事項:**
 
@@ -290,7 +292,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - お客様の組織が、2 つを超える Azure リージョン間でのハブ アンド スポーク ネットワーク アーキテクチャを必要としており、Azure リージョンをまたぐランディング ゾーン仮想ネットワーク間でグローバルなトランジット接続が必要な場合。 グローバル仮想ネットワーク ピアリングで中央ハブ仮想ネットワークを相互に接続し、UDR と NVA を使用してグローバル トランジット ルーティングを有効にすることで、このアーキテクチャを実装できます。 複雑度と管理オーバーヘッドが高いため、Virtual WAN を使用したグローバル トランジット ネットワーク アーキテクチャを評価することをお勧めします。
 
-- Azure 上のネットワークのエンドツーエンドの状態を監視するには、[Azure Monitor for Networks (プレビュー)](/azure/azure-monitor/insights/network-insights-overview) を使用します。
+- Azure 上のネットワークのエンド ツー エンドの状態を監視するには、[Azure Monitor for Networks (プレビュー)](/azure/azure-monitor/insights/network-insights-overview) を使用します。
 
 - 中央ハブ仮想ネットワークあたり 200 個より多くのピアリング接続を作成しないでください。 仮想ネットワークでは最大 500 個のピアリング接続がサポートされていますが、プライベート ピアリングを使用する ExpressRoute では、Azure からオンプレミスへのアドバタイズに対してサポートされるプレフィックスが最大 200 個です。
 
@@ -350,7 +352,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
   - 仮想ネットワーク インジェクションでは、サポートされるサービスに対する専用のプライベート デプロイが提供されます。 ただし、管理プレーンのトラフィックは、パブリック IP アドレスを通して流れます。
 
-  - [Private Link](/azure/private-link/private-endpoint-overview#private-link-resource) では、Azure PaaS インスタンスに対するプライベート IP アドレスを使用した専用アクセス、または Azure Load Balancer Standard の内側にあるカスタム サービスへの専用アクセスが提供されます。
+  - [Private Link](/azure/private-link/private-endpoint-overview#private-link-resource) では、プライベート IP アドレスを使用して、Azure PaaS インスタンス、または Azure Load Balancer Standard レベルの内側にあるカスタム サービスへの専用アクセスが提供されます。
 
   - 仮想ネットワーク サービス エンドポイントでは、選択されたサブネットから選択された PaaS サービスへのサービス レベルのアクセスが提供されます。
 
@@ -382,7 +384,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 **設計上の考慮事項:**
 
-- Azure Firewall、Azure Application Gateway 上の Azure Web アプリケーション ファイアウォール (WAF)、Azure Front Door Service などの Azure ネイティブ ネットワーク セキュリティ サービスは、フル マネージド サービスです。 そのため、大規模な場合は複雑になる可能性のある、インフラストラクチャのデプロイに関連する運用コストと管理コストが発生することはありません。
+- Azure Firewall、Azure Application Gateway 上の Azure Web Application Firewall (WAF)、Azure Front Door などの Azure ネイティブのネットワーク セキュリティ サービスは、フル マネージド サービスです。 そのため、大規模な場合は複雑になる可能性のある、インフラストラクチャのデプロイに関連する運用コストと管理コストが発生することはありません。
 
 - 組織が NVA の使用を望む場合や、ネイティブ サービスでは組織に固有の要件が満たされない場合、エンタープライズ規模のアーキテクチャは、パートナーの NVA と完全に互換性があります。
 
@@ -396,7 +398,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
   - East/West トラフィックのフィルター処理 (組織で必要な場合)。
 
-- Virtual WAN ハブ間またはハブ仮想ネットワーク内に Azure Firewall をデプロイして管理するには、Firewall Manager と Virtual WAN を使用します。 Firewall Manager は、現在、Virtual WAN と通常の仮想ネットワークの両方について GA です。
+- Virtual WAN ハブ間またはハブ仮想ネットワーク内に Azure Firewall をデプロイして管理するには、Firewall Manager と Virtual WAN を使用します。 Firewall Manager は、Virtual WAN と通常の仮想ネットワークの両方で、現在一般提供されています。
 
 - グローバル ネットワーク環境全体でセキュリティ体制を管理するには、グローバル Azure Firewall ポリシーを作成して、すべての Azure Firewall インスタンスに割り当てます。 ロールベースのアクセス制御を使用してローカル セキュリティ チームに増分ファイアウォール ポリシーをデリゲートすることにより、特定のリージョンの要件を満たすきめ細かいポリシーを設定できます。
 
@@ -404,9 +406,9 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - インターネットからの受信 HTTP/S トラフィックを保護するには、ランディング ゾーンの仮想ネットワーク内で WAF を使用します。
 
-- Azure リージョン間でランディング ゾーンへの受信 HTTP/S 接続に対するグローバルな保護を提供するには、Azure Front Door Service と WAF ポリシーを使用します。
+- Azure リージョン間でランディング ゾーンへの受信 HTTP/S 接続に対するグローバルな保護を提供するには、Azure Front Door と WAF ポリシーを使用します。
 
-- Azure Front Door Service と Azure Application Gateway を使用して HTTP/S アプリを保護する場合は、Azure Front Door Service で WAF ポリシーを使用します。 Azure Application Gateway をロックダウンして、Azure Front Door Service からのトラフィックのみを受信するようにします。
+- Azure Front Door と Azure Application Gateway を使用して HTTP/S アプリを保護する場合は、Azure Front Door で WAF ポリシーを使用します。 Azure Application Gateway をロックダウンして、Azure Front Door からのトラフィックのみを受信します。
 
 - East/West または South/North のトラフィックの保護とフィルター処理のために、パートナーの NVA が必要な場合:
 
@@ -429,7 +431,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - Azure Application Gateway を使用すると、リージョン レベルで HTTP/S アプリを安全に配信できます。
 
-- Azure Front Door Service を使用すると、Azure リージョン間で高可用性の HTTP/S アプリを安全に配信できます。
+- Front Door を使用すると、Azure リージョン間で高可用性 HTTP/S アプリを安全に配信できます。
 
 - Azure Traffic Manager を使用すると、グローバル アプリを配信できます。
 
@@ -445,9 +447,9 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - ランディング ゾーン内のすべてのパブリック IP アドレスに対し、DDoS Standard 保護プランを使用します。
 
-- 複数の Azure リージョンにまたがるグローバル HTTP/S アプリの配信と保護には、Azure Front Door Service と WAF ポリシーを使用します。
+- 複数の Azure リージョンにまたがるグローバル HTTP/S アプリを配信し、保護するには、Azure Front Door と WAF ポリシーを使用します。
 
-- Azure Front Door Service と Application Gateway を使用して HTTP/S アプリを保護する場合は、Azure Front Door Service で WAF ポリシーを使用します。 Application Gateway をロックダウンして、Azure Front Door Service からのトラフィックのみを受信するようにします。
+- Front Door と Application Gateway を使用して HTTP/S アプリを保護する場合は、Front Door で WAF ポリシーを使用します。 Application Gateway をロックダウンして、Front Door からのトラフィックのみを受信します。
 
 - HTTP/S 以外のプロトコルにまたがるグローバル アプリを配信するには、Traffic Manager を使用します。
 
@@ -463,19 +465,19 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - ネットワーク セキュリティ グループでは、Azure サービス タグを使用して、Azure PaaS サービスへの接続を容易にすることができます。
 
-- アプリのセキュリティ グループでは、仮想ネットワークをまたがって保護が提供されることはありません。
+- アプリケーション セキュリティ グループでは、仮想ネットワークをまたがって保護が提供されることはありません。
 
 - NSG フロー ログは、Azure Resource Manager テンプレートを使用してサポートされるようになりました。
 
 **設計上の推奨事項:**
 
-- サブネットの作成をランディング ゾーンの所有者にデリゲートします。 これにより、サブネットをまたいでワークロードをセグメント化する方法を定義できます (たとえば、1 つの大きいサブネット、多層アプリ、ネットワークに挿入されたアプリなど)。 プラットフォーム チームは、Azure Policy を使用して、特定の規則 (インターネットからの受信 SSH または RDP を拒否する、ランディング ゾーンをまたぐトラフィックを許可またはブロックする、など) が設定された NSG を、拒否のみのポリシーを持つサブネットと常に関連付けることができます。
+- サブネットの作成をランディング ゾーンの所有者にデリゲートします。 これにより、サブネットをまたいでワークロードをセグメント化する方法を定義できます (1 つの大きなサブネット、多層アプリケーション、ネットワークに挿入されたアプリケーションなど)。 プラットフォーム チームは、Azure Policy を使用して、特定の規則 (インターネットからの受信 SSH または RDP を拒否する、ランディング ゾーンをまたぐトラフィックを許可またはブロックする、など) が設定された NSG を、拒否のみのポリシーを持つサブネットと常に関連付けることができます。
 
 - サブネット間のトラフィックおよびプラットフォームを横断する East/West トラフィック (ランディング ゾーン間のトラフィック) を保護するには、NSG を使用します。
 
-- アプリ チームは、サブネット レベルの NSG でアプリ セキュリティ グループを使用して、ランディング ゾーン内の多層 VM を保護する必要があります。
+- アプリケーション チームは、サブネット レベルの NSG でアプリケーション セキュリティ グループを使用して、ランディング ゾーン内の多層 VM を保護する必要があります。
 
-- ランディング ゾーン内のマイクロセグメント トラフィックには NSG とアプリ セキュリティ グループを使用し、中央の NVA を使用してトラフィック フローをフィルター処理しないようにします。
+- NSG とアプリケーション セキュリティ グループを使用して、ランディング ゾーン内のトラフィックをマイクロセグメント化し、中央の NVA を使用してトラフィック フローをフィルター処理しないようにします。
 
 - NSG フロー ログを有効にし、それらを Traffic Analytics にフィードして、内部および外部のトラフィック フローに関する分析情報を取得します。
 
@@ -495,11 +497,11 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - プライベート ピアリングで ExpressRoute を使用する場合、現在は、トラフィックは暗号化されません。
 
-- ExpressRoute プライベート ピアリング経由のサイト間 VPN 接続の構成は現在、[プレビュー段階](/azure/vpn-gateway/site-to-site-vpn-private-peering)です。
+- ExpressRoute プライベート ピアリング経由のサイト間 VPN 接続の構成は、現在[プレビュー段階](/azure/vpn-gateway/site-to-site-vpn-private-peering)です。
 
 - [Media Access Control Security (MACsec)](/azure/expressroute/expressroute-howto-MACsec) 暗号化を ExpressRoute Direct に適用して、ネットワーク暗号化を実現できます。
 
-- Azure のトラフィックが (Microsoft または Microsoft の代理によって制御されていない、物理的な境界の外部で) データセンター間を移動する場合、基盤となるネットワーク ハードウェア上では [MACsec データリンク層の暗号化](/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit)が使用されます。 これは、VNet ピアリング トラフィックに適用されます。
+- Azure のトラフィックが (Microsoft または Microsoft の代理によって制御されていない物理的境界の外部で) データセンター間を移動する場合、基になるネットワーク ハードウェア上では [MACsec データリンク層暗号化](/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit)が使用されます。 これは、VNet ピアリング トラフィックに適用されます。
 
 **設計上の推奨事項:**
 

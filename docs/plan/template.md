@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8c5dd7d7e1b40172c6dc996bc865d72ac532f50c
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 0a4329dbb8c13e4778f791e5055d15d9783d2554
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681414"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997422"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>クラウド導入計画と Azure DevOps
 
@@ -40,7 +40,7 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 
 一括編集を行うためにワークステーションを準備するには、[Microsoft Excel を使用した作業項目の一括追加または変更](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)に関する記事をご覧ください。
 
-ユーザーは、プロジェクトを使用してタスクを追跡し、バックログを作成して、リソースを割り当てることができます。 [プロジェクトを Azure DevOps に接続する](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)手順を次に示します。
+ユーザーは Microsoft Project を使用して、タスクの追跡、バックログの作成、リソースの割り当てを行うこともできます。 [Microsoft Project を Azure DevOps に接続する](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)手順を参照してください。
 
 ## <a name="use-the-cloud-adoption-plan"></a>クラウド導入計画を使用する
 

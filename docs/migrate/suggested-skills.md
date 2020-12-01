@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0595d0ce6573d9dabed538aa39999ed6803e5842
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 66cde14dd786fc0f203725802b3ea49295b35148
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334886"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879108"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>クラウド移行のためのスキルの準備
 
@@ -32,12 +32,12 @@ ms.locfileid: "92334886"
 - [業務上の正当な理由の構築](../strategy/cloud-migration-business-case.md):クラウド移行作業を推進する業務上の正当な理由を作成し理解します。
 - [デジタル資産の合理化](../digital-estate/rationalize.md):デジタル資産内の資産を合理化します。
 - [アプリケーション ポートフォリオの評価](/learn/modules/app-and-infra-migration-and-modernization/):アプリケーション ポートフォリオ内の移行や刷新のオプションに関する決定を行うための条件。
-- [Microsoft Azure 移行の評価と計画](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning-update):オンプレミスのワークロードの評価を支援するための Pluralsight コース。
+- [Assessing and Planning Microsoft Azure Migration (Microsoft Azure 移行の評価とプランニング)](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning-update):オンプレミスのワークロードの評価を支援するための Pluralsight コース。
 
 評価プロセス中、アーキテクトは各ワークロードのソリューションを設計します。 次のスキル習得リソースは、これらのタスクに備えてアーキテクトの準備を支援します。
 
-- [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations): 適切な基本的ソリューションの設計を支援する Pluralsight コース。
-- [Microsoft Azure アーキテクチャ:作業の開始](https://www.pluralsight.com/courses/azure-architecture-getting-started):アーキテクトに Azure アーキテクチャの基礎知識を教える Pluralsight コース。
+- [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations):適切な基本的ソリューションの設計を支援する Pluralsight コース。
+- [Microsoft Azure アーキテクチャ: 作業の開始](https://www.pluralsight.com/courses/azure-architecture-getting-started): アーキテクトに Azure アーキテクチャの基礎知識を教える Pluralsight コース。
 - [Microsoft Azure 移行の設計](https://www.pluralsight.com/courses/microsoft-azure-migrations-designing): アーキテクトが移行ソリューションを設計するのに役立つ Pluralsight コース。
 
 ## <a name="migrate-skilling-resources"></a>スキル リソースの移行
@@ -45,7 +45,7 @@ ms.locfileid: "92334886"
 次のチュートリアルでは、移行アクティビティのチームを準備できます。
 
 - [Azure への移行](/azure/site-recovery/migrate-tutorial-on-premises-azure):VM の Azure への移行を目的とした Azure Migrate の使用。
-- [Azure へのワークロードのリホスト](https://www.pluralsight.com/courses/microsoft-azure-workloads-rehosting):ワークロードを Azure にリホストする方法を視聴者に説明する Pluralsight コース。
+- [Rehost workloads to Azure (Azure へのワークロードのリホスト)](https://www.pluralsight.com/courses/microsoft-azure-workloads-rehosting):ワークロードを Azure にリホストする方法を視聴者に説明する Pluralsight コース。
 - [Azure への物理サーバーと仮想サーバーの移行](https://www.pluralsight.com/courses/microsoft-azure-migrating-physical-virtual-servers):Azure へのサーバーの移行に関する Pluralsight コース。
 - [Azure へのデータのインポートとエクスポート](https://www.pluralsight.com/courses/microsoft-azure-import-export-data):Azure との間のデータの移動に関する Pluralsight コース。
 

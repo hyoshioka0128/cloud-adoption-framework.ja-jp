@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 5fadef56e97fa51450e6f6b80aca0ab84038b020
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 975a848cbc2afe9ded2d0dea56b69717f796c5d3
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776025"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879176"
 ---
 # <a name="tools-and-templates"></a>ツールとテンプレート
 
@@ -32,6 +32,8 @@ ms.locfileid: "90776025"
 | [クラウド導入過程トラッカー](/assessments/?id=cloud-journey-tracker&mode=pre-assessment) | ビジネスのニーズに基づいてクラウド導入パスを特定します。 |
 | [戦略&nbsp;と&nbsp;計画&nbsp;テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) | クラウド導入の戦略と計画を実行するときの決定事項を文書化します。 |
 | [クラウド導入計画ジェネレーター](../plan/template.md) | テンプレートを使用して [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) にバックログをデプロイすることで、プロセスを標準化します。 |
+| [Strategy-Plan-Ready-Govern ADO テンプレートの使用](https://azuredevopsdemogenerator.azurewebsites.net/?name=strategyplan) | テンプレートを使用して [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) にバックログをデプロイすることで、プロセスを標準化します。 |  
+
 
 ## <a name="ready"></a>Ready
 
@@ -63,6 +65,7 @@ ms.locfileid: "90776025"
 | リソース | 説明 |
 |----------|-------------|
 | [データセンターの移行の検出チェックリスト](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/migrate/datacenter-migration-discovery-checklist.docx) | このチェックリストで、データセンター内のワークロード、サーバー、その他の資産を特定するのに役立つ情報を確認してください。 この情報を使用すると、移行の計画に役立ちます。
+| [移行テンプレート](https://aka.ms/adopt/plan/generator) | Azure DevOps ジェネレーターでは、プロジェクトを効率化するために使用できる多数のテンプレートが作成されました。 [WVD](https://azuredevopsdemogenerator.azurewebsites.net/?name=wvdmigration)、[サーバー移行](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)、[SQL 移行](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration)、[AKS デプロイ](https://azuredevopsdemogenerator.azurewebsites.net/?name=cafaks)用のテンプレートが作成されています。
 
 ## <a name="manage"></a>管理する
 

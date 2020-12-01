@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9ad7787dd44314e0c83b55d5d799a111de021f6c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5008cd58cc8c15291671a02b269891b6278d0470
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885067"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997286"
 ---
 # <a name="review-your-data-options"></a>データ オプションを確認する
 
@@ -38,7 +38,7 @@ _図 1: Azure データベース サービスのデシジョン ツリー。_
 - **ワークロードでドキュメントまたはグラフ データを使用しますか?** [Azure Cosmos DB](/azure/cosmos-db/introduction) は、さまざまなデータ型と API をサポートするマルチモデル データベース サービスです。 Azure Cosmos DB には、ドキュメントおよびグラフ データベースの機能もあります。
 - **ワークロードで列ファミリ データを使用しますか?** [Azure HDInsight の Apache HBase](/azure/hdinsight/hbase/apache-hbase-overview) は、Apache Hadoop 上に構築されています。 列ファミリ別に編成された、スキーマレス データベース内の大量の非構造化データおよび半構造化データがサポートされています。
 - **ワークロードに大容量のデータ分析機能が必要ですか?** [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) を使用すると、構造化されたペタバイト規模のデータを効率的に格納し、クエリを実行できます。 非構造化ビッグ データ ワークロードの場合、[Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) を使用すると、ペタバイト規模のファイルと数兆個のオブジェクトを保存して分析できます。
-- **ワークロードに検索エンジンの機能が必要ですか?** [Azure Search](/azure/search/search-what-is-azure-search) を使用すると、アプリケーションに統合できる、AI で強化されたクラウドベースの検索インデックスを作成できます。
+- **ワークロードに検索エンジンの機能が必要ですか?** [Azure Cognitive Search](/azure/search/search-what-is-azure-search) を使用すると、アプリケーションに統合できる、AI で強化されたクラウドベースの検索インデックスを作成できます。
 - **ワークロードには時系列データを使用しますか?** [Azure Time Series Insights](/azure/time-series-insights/time-series-insights-overview) は、IoT デバイスによって生成されたデータなどの大量の時系列データの格納、視覚化、クエリ実行のために構築されています。
 
 > [!NOTE]
@@ -54,7 +54,7 @@ _図 1: Azure データベース サービスのデシジョン ツリー。_
 | 迅速なプロビジョニングと即座のスケーリングが可能な、インテリジェンスとセキュリティを組み込んだ、フル マネージド リレーショナル データベースが必要です。 | [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) |
 | 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな MySQL リレーショナル データベースが必要です。 | [Azure Database for MySQL](/azure/mysql/overview) |
 | 高可用性とセキュリティを追加料金なしで組み込んだ、フル マネージドかつスケーラブルな PostgreSQL リレーショナル データベースが必要です。 | [Azure Database for PostgreSQL](/azure/postgresql/overview) |
-| クラウドでエンタープライズ SQL Server アプリをホストし、サーバー OS を完全に制御する予定です。 | [SQL Server on Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
+| クラウドでエンタープライズ SQL Server アプリケーションをホストし、サーバー OS を完全に制御する予定です。 | [SQL Server on Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
 | 広範なセキュリティが追加料金なしであらゆるレベルに組み込まれた、フル マネージドのエラスティック データ ウェアハウスが必要です。 | [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
 | Hadoop クラスターまたは HDFS データをサポートするデータ レイク用のストレージ リソースが必要です。 | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) |
 | 高速でスケーラブルなアプリケーションをサポートするために、高スループットで、一貫性があり、待機時間の短いデータ アクセスが必要です。 | [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview) |
@@ -62,7 +62,7 @@ _図 1: Azure データベース サービスのデシジョン ツリー。_
 
 ## <a name="regional-availability"></a>リージョン別の提供状況
 
-Azure を利用すれば、**場所を問わず**顧客とパートナーを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
+Azure を利用すれば、**場所を問わず** 顧客とパートナーを獲得するために必要なスケールでサービスを提供できます。 クラウドのデプロイを計画する際の重要な要素として、ワークロード リソースをホストする Azure リージョンの決定があります。
 
 ほとんどのデータベース サービスは、ほとんどの Azure リージョンで一般提供されています。 しかし、これらの製品のサブセットのみをサポートするリージョンもいくつかあります (ほとんどの場合は政府機関の顧客が対象となります)。 どのリージョンにデータベース リソースをデプロイするかを決定する前に、[リージョン ページ](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database)を参照して、利用可能なリージョンの最新の状態を確認することをお勧めします。
 

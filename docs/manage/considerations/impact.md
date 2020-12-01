@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 42a4dc16a7249ab7211da1e1574511479a566011
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: e97f09727cb383f0092b1a23a170d963c7a16305
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815244"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879873"
 ---
 # <a name="business-impact-in-cloud-management"></a>クラウド管理におけるビジネスへの影響
 
@@ -26,7 +26,7 @@ ms.locfileid: "83815244"
 
 ## <a name="start-with-estimates"></a>見積もりの開始
 
-現在の運用モデルでは、正確な影響を判断することが困難な場合があります。 しかし、高度に正確な損失計算を必要とするシステムはほとんどありません。 前の手順の "_重要度の分類_" では、すべてのワークロードを既定の_中度の重要度_から始めることを提案しました。 中程度の重要度のワークロードでは、通常、運用コストへの影響が比較的少ない標準レベルの管理サポートが提供されます。 ワークロードに追加の運用管理リソースが必要な場合にのみ、財政的な影響を正確に測る必要があります。
+現在の運用モデルでは、正確な影響を判断することが困難な場合があります。 しかし、高度に正確な損失計算を必要とするシステムはほとんどありません。 前の手順の "_重要度の分類_" では、すべてのワークロードを既定の _中度の重要度_ から始めることを提案しました。 中程度の重要度のワークロードでは、通常、運用コストへの影響が比較的少ない標準レベルの管理サポートが提供されます。 ワークロードに追加の運用管理リソースが必要な場合にのみ、財政的な影響を正確に測る必要があります。
 
 すべての標準化されたワークロードでは、停止時にシステムを復旧するときに、ビジネスへの影響が優先順位付け変数として機能します。 そうした限られた状況以外には、ビジネスへの影響によって運用管理エクスペリエンスが変更されることはまったくない、あるいはほぼありません。
 
@@ -52,7 +52,7 @@ ms.locfileid: "83815244"
 
 ## <a name="use-the-template"></a>テンプレートを使用する
 
-[運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理を計画している場合は、次の手順を実行することを検討してください。
+[運用管理ブック](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx)を使用してクラウド管理を計画している場合は、次の作業を行うことを検討してください。
 
 - 各業務では、`Example` ワークシートまたは `Clean Template` ワークシートの各ワークロードと、各ワークロードの `Time/Value Impact` を更新する必要があります。 既定では、`Time/Value Impact` は、ワークロードの停止に関連する 1 時間あたりの予測される損失を表します。
 

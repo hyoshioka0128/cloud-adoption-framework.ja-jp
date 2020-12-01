@@ -7,12 +7,12 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 1977d66b5bfc387e94b33106087ddf1df0c2ee20
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 7031a8feb3b034b394e7c437e58f5aca3189a23f
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712869"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996980"
 ---
 # <a name="azure-security-best-practices"></a>Azure のセキュリティに関するベスト プラクティス
 
@@ -22,7 +22,7 @@ ms.locfileid: "94712869"
 
 ## <a name="1-people-educate-teams-about-the-cloud-security-journey"></a>1.ユーザー: クラウド セキュリティのための移行の過程についてチームを教育する
 
-"*チームは、自分たちが進む移行の過程を理解している必要があります。* "
+"_チームは、自分たちが進む移行の過程を理解している必要があります。_ "
 
 **内容**: セキュリティ担当および IT 担当チームに、クラウド セキュリティのための移行の過程と、対処することになる次のような変化について教育します。
 
@@ -49,7 +49,7 @@ Azure セキュリティ ベンチマーク「[GS-3: 組織の役割、責任、
 
 ## <a name="2-people-educate-teams-on-cloud-security-technology"></a>2.ユーザー: クラウド セキュリティ テクノロジについてチームに教育する
 
-"*どこに向かっているのかを皆が理解する必要があります。* "
+"_どこに向かっているのかを皆が理解する必要があります。_ "
 
 **内容**: 次のようなクラウド リソースのセキュリティ保護に関する技術教育のために、チームの時間を確保します。
 
@@ -92,7 +92,7 @@ Azure セキュリティ ベンチマーク「[GS-3: 組織の役割、責任、
 
 **内容**: エンタープライズ Azure 環境に対して各種類のセキュリティ上の意思決定を行う担当者を指定します。
 
-**理由**: セキュリティに関する意思決定の担当者を明確にすると、クラウドの導入スピードがアップし、"*かつ*" セキュリティが向上します。 だれも意思決定を行う権限を実感しておらず、だれに意思決定を求めるべきかが不明で、情報に基づいた意思決定を調べる動機がないため、通常、欠如によって摩擦が生じます。 この摩擦によって、ビジネス目標、開発者のタイムライン、IT の目標、セキュリティの保証が頻繁に妨げられ、次のような結果になります。
+**理由**: セキュリティに関する意思決定の担当者を明確にすると、クラウドの導入スピードがアップし、"**かつ**" セキュリティが向上します。 だれも意思決定を行う権限を実感しておらず、だれに意思決定を求めるべきかが不明であり、情報に基づく意思決定を調べる動機がないため、通常、欠如によって摩擦が生じます。 この摩擦によって、ビジネス目標、開発者のタイムライン、IT の目標、セキュリティの保証が頻繁に妨げられ、次のような結果になります。
 
 - セキュリティ承認待ちによるプロジェクトの停滞
 - セキュリティの承認を待つことができなかった安全でないデプロイ
@@ -107,12 +107,12 @@ Azure セキュリティ ベンチマーク「[GS-3: 組織の役割、責任、
 
 | 決定         | 説明           | 一般的なチーム  |
 | ------------- |-------------| -----|
-| ネットワークのセキュリティ | Azure Firewall、ネットワーク仮想アプライアンス (および関連するルーティング)、WAF、NSG、ASG などの構成とメンテナンス。 |    "*通常は、ネットワーク セキュリティに焦点を絞った [インフラストラクチャとエンドポイントのセキュリティ](../organize/cloud-security-infrastructure-endpoint.md) チーム*"  |
-| ネットワーク管理 | 企業全体の仮想ネットワークとサブネットの割り当て  | "*通常は、[中央 IT 運用](../organize/central-it.md)部門の既存のネットワーク運用チーム*" |
-| サーバー エンドポイントのセキュリティ | サーバー セキュリティ (修正プログラムの適用、構成、エンドポイントのセキュリティなど) の監視と修復  | "*通常は、[中央 IT 運用](../organize/central-it.md)と [インフラストラクチャとエンドポイントのセキュリティ](../organize/cloud-security-infrastructure-endpoint.md)の担当チームが共同で行う*" |
-| インシデントの監視と対応 | SIEM またはソース コンソール (Azure Security Center、Azure AD Identity Protection など) でセキュリティ インシデントを調査して修復する | "*通常は [セキュリティ運用](../organize/cloud-security-operations-center.md)チーム*" |
-| ポリシー管理 | ロールベースのアクセス制御 (RBAC)、Azure Security Center、管理者保護戦略、および Azure リソースを管理するための Azure Policy の使用についての指針を定める | "*通常は、[ポリシーと標準](../organize/cloud-security-policy-standards.md) + [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)の担当チームが共同で行う*" |
-| ID に関するセキュリティと標準 | Azure AD のディレクトリ、PIM/PAM の使用、MFA、パスワードまたは同期の構成、アプリケーション ID 標準についての指針を定める | "*通常は、[ID とキーの管理](../organize/cloud-security-identity-keys.md) + [ポリシーと標準](../organize/cloud-security-policy-standards.md) + [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)の担当チームが共同で行う*"  |
+| ネットワークのセキュリティ | Azure Firewall、ネットワーク仮想アプライアンス (および関連するルーティング)、WAF、NSG、ASG などの構成とメンテナンス。 | "_通常は、ネットワーク セキュリティに焦点を絞った [インフラストラクチャとエンドポイントのセキュリティ](../organize/cloud-security-infrastructure-endpoint.md) チーム_"  |
+| ネットワーク管理 | 企業全体の仮想ネットワークとサブネットの割り当て  | "_通常は、[中央 IT 運用](../organize/central-it.md)部門の既存のネットワーク運用チーム_" |
+| サーバー エンドポイントのセキュリティ | サーバー セキュリティ (修正プログラムの適用、構成、エンドポイントのセキュリティなど) の監視と修復  | "_通常は、[中央 IT 運用](../organize/central-it.md)と [インフラストラクチャとエンドポイントのセキュリティ](../organize/cloud-security-infrastructure-endpoint.md)の担当チームが共同で行う_" |
+| インシデントの監視と対応 | SIEM またはソース コンソール (Azure Security Center、Azure AD Identity Protection など) でセキュリティ インシデントを調査して修復する | "_通常は [セキュリティ運用](../organize/cloud-security-operations-center.md)チーム_" |
+| ポリシー管理 | ロールベースのアクセス制御 (RBAC)、Azure Security Center、管理者保護戦略、および Azure リソースを管理するための Azure Policy の使用についての指針を定める | "_通常は、[ポリシーと標準](../organize/cloud-security-policy-standards.md) + [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)の担当チームが共同で行う_" |
+| ID に関するセキュリティと標準 | Azure AD のディレクトリ、PIM/PAM の使用、MFA、パスワードまたは同期の構成、アプリケーション ID 標準についての指針を定める | "_通常は、[ID とキーの管理](../organize/cloud-security-identity-keys.md) + [ポリシーと標準](../organize/cloud-security-policy-standards.md) + [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)の担当チームが共同で行う_"  |
 
 > [!NOTE]
 >
@@ -121,9 +121,9 @@ Azure セキュリティ ベンチマーク「[GS-3: 組織の役割、責任、
 
 Azure セキュリティ ベンチマーク「[GS-3: 組織の役割、責任、責務の整合](/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-3-align-organization-roles-responsibilities-and-accountabilities)」も参照してください。
 
-## <a name="4-process-update-incident-response-ir-processes-for-cloud"></a>4.プロセス:クラウドのインシデント対応 (IR) プロセスを更新する
+## <a name="4-process-update-incident-response-processes-for-cloud"></a>4. プロセス:クラウドのインシデント対応プロセスを更新する
 
-"*緊急時に緊急時の計画を立てる時間はありません。* "
+"_緊急時に緊急時の計画を立てる時間はありません。_ "
 
 **内容**: プロセスを更新し、Azure クラウド プラットフォーム上のセキュリティ インシデントに対応するためにアナリストを準備します (導入済みの [ネイティブ脅威検出ツール](../get-started/security.md#step-1-establish-essential-security-practices)を含む)。 プロセスを更新し、チームを準備して、インシデント調査、修復、脅威ハンティング時に最大限のパフォーマンスを発揮できるように、シミュレートされた攻撃を使用して練習します。
 
@@ -133,8 +133,8 @@ Azure セキュリティ ベンチマーク「[GS-3: 組織の役割、責任、
 
 **対象者**: IR プロセスの最新化は、通常、他のグループからの知識と専門知識をサポートする [セキュリティ運用](../organize/cloud-security-operations-center.md)部門によって主導されます。
 
-- "*スポンサー*" - このプロセス最新化は、通常、セキュリティ運用担当部長 (または同等のスポンサー) によって後援されます。
-- "*実行*" - 既存のプロセスを適合させる (または、初めて作成する) ことは、次のことを含む共同作業です。
+- **スポンサー:** このプロセス最新化は、通常、セキュリティ運用担当部長 (または同等のスポンサー) が支援します。
+- **実行:** 既存のプロセスを適合させる (または、初めて作成する) ことは、次のことを含む共同作業です。
 
   - **[セキュリティ運用](../organize/cloud-security-operations-center.md)** インシデント管理チームまたはリーダー – プロセスに対する更新と、法律担当およびコミュニケーションや広報担当のチームを含む主要な外部関係者の統合を主導する
   - **[セキュリティ運用](../organize/cloud-security-operations-center.md)** セキュリティ アナリスト – 技術的なインシデント調査とトリアージに関する専門知識を提供する
@@ -235,8 +235,8 @@ Azure セキュリティ ベンチマーク「[GS-2: セキュリティ態勢管
 
 **対象者**: パスワードと多要素の取り組みは、通常、[ID とキーの管理](../organize/cloud-security-identity-keys.md)または [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)あるいはその両方によって主導されます。
 
-- "*スポンサー*" - これは通常、CISO、CIO、または ID 担当部長によって後援されます
-- "*実行*" - これは次のことを含む共同作業です
+- **スポンサー:** 通常、これは CISO、CIO、または ID 担当部長が支援します。
+- **実行:** これは次のことを含む共同作業です。
   - [ポリシーと標準](../organize/cloud-security-policy-standards.md)担当チームが明確な要件を確立
   - [ID とキーの管理](../organize/cloud-security-identity-keys.md)または[中央 IT 運用](../organize/central-it.md)によるポリシーの実装
   - コンプライアンスを確保するための[セキュリティ コンプライアンス管理](../organize/cloud-security-compliance-management.md)による監視
@@ -267,8 +267,8 @@ Azure セキュリティ ベンチマーク「[ID-4: すべての Azure Active D
 
 **対象者**:
 
-- "*スポンサー*": このネットワーク セキュリティ戦略の更新は、通常、セキュリティ リーダーまたは IT リーダーあるいはその両方によって後援されます。
-- *実行*:これらをクラウド ネットワークのセキュリティ戦略に統合することは、次のことを含む共同作業です。
+- **スポンサー:** このネットワーク セキュリティ戦略の更新は、通常、セキュリティ リーダーまたは IT リーダーあるいはその両方によって後援されます。
+- **実行:** これらをクラウド ネットワークのセキュリティ戦略に統合することは、次のことを含む共同作業です。
 
   - **[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)** - クラウド ネットワークおよびクラウド ネットワーク セキュリティのリーダーとのクラウド ネットワーク セキュリティ アーキテクチャを確立します。
   - **クラウド ネットワークのリーダー** ([中央 IT 運用](../organize/central-it.md)) + **クラウド ネットワーク セキュリティのリーダー** ([インフラストラクチャ セキュリティ チーム](../organize/cloud-security-infrastructure-endpoint.md))
@@ -335,8 +335,8 @@ Azure セキュリティ ベンチマーク「[LT-1: Azure リソースの脅威
 
 **対象者**: これは、多くの場合、[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)または [ID とキー管理](../organize/cloud-security-identity-keys.md)の担当チームによって行われる、チーム間の作業です。
 
-- "*スポンサー*" - これは通常、[ID とキー管理](../organize/cloud-security-identity-keys.md)および [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)部門によって後援されます (ただし、一部の組織では、CISO または CIO による後援が必要になる場合があります)。
-- "*実行*" – これは次のことを含む共同作業です。
+- **スポンサー:** 通常、これは [ID とキー管理](../organize/cloud-security-identity-keys.md)および[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)部門が支援します (ただし、一部の組織では、CISO または CIO による支援が必要になる場合があります)。
+- **実行:** これは次のことを含む共同作業です。
   - **[セキュリティのアーキテクチャ](../organize/cloud-security-architecture.md):** セキュリティと IT アーキテクチャのドキュメントと図に組み込む
   - **[ポリシーと標準](../organize/cloud-security-policy-standards.md):** ポリシーを文書化し、コンプライアンスを監視する
   - **[ID とキーの管理](../organize/cloud-security-identity-keys.md)** または **[中央 IT 運用](../organize/central-it.md)** 部門が、機能を有効にし、アカウントや教育などを提供して開発者をサポートすることによって、ポリシーを実装
@@ -372,8 +372,8 @@ ID ベースの認証は、秘密のローテーション、ライフサイク�
 
 **対象者**: これは、多くの場合、[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)または [ID とキー管理](../organize/cloud-security-identity-keys.md)の担当チームによって行われる、チーム間の作業です。
 
-- "*スポンサー*" - これは通常、[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)または [ID とキー管理](../organize/cloud-security-identity-keys.md) (ただし、一部の組織では CISO または CIO による後援が必要になる場合があります)。
-- "*実行*" – これは次のことを含む共同作業です。
+- **スポンサー:** 通常、これは[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)または [ID とキー管理](../organize/cloud-security-identity-keys.md)部門が支援します (ただし、一部の組織では CISO または CIO による支援が必要になる場合があります)。
+- **実行:** これは次のことを含む共同作業です。
   - **[セキュリティのアーキテクチャ](../organize/cloud-security-architecture.md):** セキュリティおよび IT アーキテクチャの図とドキュメントに組み込まれています。
   - **[ポリシーと標準](../organize/cloud-security-policy-standards.md):** ポリシーを文書化し、コンプライアンスを監視する。
   - **[ID とキーの管理](../organize/cloud-security-identity-keys.md)** または **[中央 IT 運用](../organize/central-it.md)** 部門が、機能を有効にし、アカウントや教育などを提供して開発者をサポートすることによって、ポリシーを実装
@@ -390,7 +390,7 @@ ID ベースの認証は、秘密のローテーション、ライフサイク�
 
 **テクノロジ:** サービスやオートメーションなどの人間以外のアカウントには、[マネージド ID](/azure/active-directory/managed-identities-azure-resources/overview) を使用します。 Azure マネージド ID によって、Azure AD 認証をサポートする Azure のサービスとリソースに対して認証を行うことができます。 認証は事前に定義されたアクセス許可規則によって有効になり、ソース コードまたは構成ファイル内でハードコーディングされた資格情報を使用せずに済みます。
 
-マネージド ID をサポートしていないサービスに対しては、Azure AD を使用して、リソース レベルでアクセス許可が制限された[サービス プリンシパル](/azure/active-directory/develop/app-objects-and-service-principals)を代わりに作成します。 証明書の資格情報を使用してサービス プリンシパルを構成し、クライアント シークレットにフォールバックすることをお勧めしました。 どちらの場合も、[Azure Key Vault](/azure/key-vault/general/overview) を Azure マネージド ID と組み合わせて使用し、ランタイム環境 (Azure 関数など) でキー コンテナーから資格情報を取得できるようにすることができます。
+マネージド ID をサポートしていないサービスの場合、Azure AD を使用して、リソース レベルでアクセス許可が制限された[サービス プリンシパル](/azure/active-directory/develop/app-objects-and-service-principals)を代わりに作成します。 証明書の資格情報を使用してサービス プリンシパルを構成し、クライアント シークレットにフォールバックすることをお勧めしました。 どちらの場合も、[Azure Key Vault](/azure/key-vault/general/overview) を Azure マネージド ID と組み合わせて使用し、ランタイム環境 (Azure 関数など) でキー コンテナーから資格情報を取得できるようにすることができます。
 
 Azure セキュリティ ベンチマーク「[ID-2: アプリケーション ID を安全かつ自動的に管理する](/azure/security/benchmarks/security-controls-v2-identity-management#id-2-manage-application-identities-securely-and-automatically)」も参照してください。
 
@@ -405,18 +405,18 @@ Azure セキュリティ ベンチマーク「[ID-2: アプリケーション ID
 多くの組織でこれが一貫して実施されている例の 1 つは、資産のセグメント化です。
 
 - "_ネットワーク セキュリティ チーム_" は、"_フラット ネットワーク_" をセグメント化してセキュリティを強化する戦略を (多くの場合、物理サイト、割り当てられた IP アドレスや範囲などに基づいて) 策定します。
-- それとは別に "*ID チーム*" は、組織についての理解と知識に基づいて、グループおよび Active Directory 組織単位 (OU) に関する戦略を策定しました。
-- "*アプリケーション チーム*" は、これらのシステムは使用するのが難しいと感じていることがよくあります。ビジネスの運用、目標、リスクについてのインプットと理解が制限された状態で設計されているためです。
+- それとは別に、"_ID チーム_" は、組織についての理解と知識に基づいて、グループおよび Active Directory 組織単位 (OU) に関する戦略を策定しました。
+- "_アプリケーション チーム_" は、これらのシステムは使用するのが難しいと感じていることがよくあります。ビジネスの運用、目標、リスクについてのインプットと理解が制限された状態で設計されているためです。
 
 このような状況が発生した組織では、チームに頻繁にファイアウォールの例外についての競合が発生し、それによる悪影響がセキュリティ (例外は通常承認される) と生産性 (ビジネスに必要なアプリケーション機能のデプロイが遅くなる) の両方に生じます。
 
-セキュリティで批判的思考を強制することで健全な摩擦を発生させることができますが、この競合で発生するのは、目標を妨げる異常な摩擦だけです。 詳細については、[セキュリティ戦略ガイダンス](../strategy/define-security-strategy.md#modernize-your-security-strategy)に関するページにある「*適切なレベルのセキュリティ上の摩擦*」を参照してください。
+セキュリティで批判的思考を強制することで健全な摩擦を発生させることができますが、この競合で発生するのは、目標を妨げる異常な摩擦だけです。 詳細については、セキュリティ戦略ガイダンスの「[適切なレベルのセキュリティ上の摩擦](../strategy/define-security-strategy.md#modernize-your-security-strategy)」をご覧ください。
 
 **対象者**:
 
-- "*スポンサー*" - 統合戦略は通常、CIO、CISO、CTO (多くの場合、一部の高レベルの要素に対するビジネス リーダーのサポートを伴う) によって共同で後援され、各チームの代表者によって支持されます。
-- "*実行*" – セキュリティ戦略は全員が実装する必要があるため、チーム全体からのインプットを統合して、所有権、賛同、成功の可能性を高める必要があります。
-  - **[セキュリティのアーキテクチャ](../organize/cloud-security-architecture.md):** セキュリティ戦略と結果のアーキテクチャを構築し、チームからのフィードバックを積極的に収集して、さまざまなユーザーのためにプレゼンテーション、ドキュメント、図で文書化します。
+- **スポンサー:** 通常、統合戦略は CIO、CISO、CTO が共同で支援し (多くの場合、一部の高レベルの要素に対するビジネス リーダーのサポートを伴います)、各チームの代表者によって支持されます。
+- **実行:** セキュリティ戦略は全員が実装する必要があるため、チーム全体からのインプットを統合して、所有権、賛同、成功の可能性を高める必要があります。
+  - **[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md):** セキュリティ戦略と結果のアーキテクチャを構築し、チームからのフィードバックを積極的に収集して、さまざまなユーザーのためにプレゼンテーション、ドキュメント、図で文書化します。
   - **[ポリシーと標準](../organize/cloud-security-policy-standards.md):** 適切な要素を標準およびポリシーに取り入れ、コンプライアンスを監視します。
   - **すべてのテクニカル IT 担当およびセキュリティ担当チーム:** インプットの要件を指定し、エンタープライズ戦略に整合するように実装します。
   - **アプリケーションの所有者と開発者:** 適用される戦略に関するドキュメント (理想的には、各自のロールに合わせて調整したガイダンス) を読み、理解します。
@@ -427,14 +427,14 @@ Azure セキュリティ ベンチマーク「[ID-2: アプリケーション ID
 
 - **チームからの積極的なインプット:** 通常、組織内のユーザーが賛成しない戦略は失敗します。 理想的には、すべてのチームを同じ部屋に集めて、戦略を共同で構築します。 私たちがお客様と一緒に実施しているワークショップでは、多くの場合、組織が事実上縦割りで運用されていることが判明し、それらの会議で互いに初めて顔を合わせることがよくあります。 また、包括性が必要とされることもわかりました。 一部のチームが招待されていない場合は、通常、すべての参加者が参加するまで (またはプロジェクトが先に進むまで)、この会議を繰り返す必要があります。
 - **文書化されていて明確に伝わる:** すべてのチームは、セキュリティを統合する理由、セキュリティで重要なこと、セキュリティの成功がどのように見えるかなど、セキュリティ戦略 (理想的にはテクノロジ戦略全体のセキュリティ コンポーネント) を認識している必要があります。 これには、アプリケーション チームと開発チームに固有のガイダンスが含まれている必要があります。そうすることで、ガイダンスの関連性のない部分を読む必要がない、明確な優先順位が示されたガイダンスを手に入れることができます。
-- **安定していながら柔軟である:** 戦略は比較的一貫した安定した状態に保つ必要がありますが、アーキテクチャとドキュメントは、明確にするため、また、クラウドの動的な特性に対応するために、変更が必要になる場合があります。 たとえば、使用しているサードパーティの次世代ファイアウォールから Azure ファイアウォールに移行した場合でも、悪意のある外部トラフィックをフィルターで除外し、その方法についての図やガイダンスを調整することは、戦略的に一貫して不可欠です。
+- **安定していながら柔軟である:** 戦略は比較的一貫した安定した状態に保つ必要がありますが、アーキテクチャとドキュメントは、明確にするため、また、クラウドの動的な特性に対応するために、変更が必要になる場合があります。 たとえば、使用しているサードパーティの次世代ファイアウォールから Azure Firewall に移行し、その方法に関する図やガイダンスを調整した場合でも、悪意のある外部トラフィックをフィルターで除外することは、戦略的な必須事項として一貫性を保ちます。
 - **セグメンテーションから開始する:** クラウド導入の過程で、チームは大小さまざまな戦略トピックに取り組みますが、どこかから始める必要があります。 セキュリティ戦略は、後で変更するのが難しく、ビジネスのインプットと多数の技術チームの両方を必要とする基本的な決定であるため、エンタープライズ資産のセグメンテーションから開始することをお勧めします。
 
-Microsoft では、[このビデオ](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)と、[エンタープライズ セグメンテーション](/security/compass/governance#enterprise-segmentation-strategy)と[それに対するネットワーク セキュリティの整合](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)に関するドキュメントで、Azure へのセグメンテーション戦略の適用についてのガイダンスを公開しています。
+Microsoft では、[セグメント化戦略の Azure への適用](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151)に関するビデオ ガイダンス、および[企業のセグメント化](/security/compass/governance#enterprise-segmentation-strategy)と[それに合わせたネットワーク セキュリティ](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)に関するドキュメントを公開しています。
 
 クラウド導入フレームワークには、次のことを行うチームを支援するためのガイダンスが含まれています。
 
 - **[クラウド戦略チームを結成する](../get-started/team/cloud-strategy.md):** 理想的には、既存のクラウド戦略にセキュリティを統合する必要があります。
 - **[セキュリティ戦略を構築または最新化する](../strategy/define-security-strategy.md):** クラウド サービスと最新の脅威の現代におけるビジネスおよびセキュリティの目標を達成します。
 
-Azure セキュリティ ベンチマークの[ガバナンスと戦略](/azure/security/benchmarks/security-controls-v2-governance-strategy)に関するページも参照してください。
+[Azure セキュリティ ベンチマークのガバナンスと戦略](/azure/security/benchmarks/security-controls-v2-governance-strategy)に関する記事もご覧ください。

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2aa6cd6c81dfa7f4d6719851622c75ab462031f4
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 8640ea8c6e9e346502382c329f506ab5b933b609
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713838"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997235"
 ---
 # <a name="improve-landing-zone-security"></a>ランディング ゾーンのセキュリティの向上
 
@@ -20,7 +20,7 @@ ms.locfileid: "94713838"
 
 ## <a name="landing-zone-security-best-practices"></a>ランディング ゾーンのセキュリティに関するベスト プラクティス
 
-次の参照アーキテクチャとベスト プラクティスの一覧は、ランディングのセキュリティを向上させる方法の例を示しています。
+次のリファレンス アーキテクチャとベスト プラクティスの一覧は、ランディング ゾーンのセキュリティを向上させる方法の例を示しています。
 
 - [Azure Security Center](/azure/security-center/security-center-get-started?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json):Security Center にサブスクリプションをオンボードします。
 - [Azure Sentinel](/azure/sentinel/quickstart-onboard?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json):Azure Sentinel をオンボードすると、**セキュリティ情報イベント管理 (SIEM)** および **セキュリティ オーケストレーション自動応答 (SOAR)** ソリューションが提供されます。

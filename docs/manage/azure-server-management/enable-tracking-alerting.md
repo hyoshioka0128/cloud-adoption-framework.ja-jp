@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7a37a812964bb595e426341d002a0e326d86013e
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: a94062dad8e600431319b976fef4d728be290f8b
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712053"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880587"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -20,17 +20,17 @@ ms.locfileid: "94712053"
 
 Azure Change Tracking と Inventory では、ハイブリッド環境の構成の状態およびその環境に対する変更に関するアラートが表示されます。 デプロイしたサーバーに影響する可能性がある重要なファイル、サービス、ソフトウェア、レジストリの変更を報告できます。
 
-既定では、Azure Automation インベントリ サービスはファイルやレジストリの設定は監視しません。 このソリューションでは、監視対象として推奨されるレジストリ キーの一覧が提供されます。 この一覧を表示するには、Azure portal でお使いの Automation アカウントに移動し、次に **[インベントリ]** 、 **[設定の編集]** の順に選択します。
+既定では、Azure Automation インベントリ サービスはファイルやレジストリの設定は監視しません。 このソリューションでは、監視対象として推奨されるレジストリ キーの一覧が提供されます。 この一覧を表示するには、Azure portal でお使いの Azure Automation アカウントに移動し、 **[インベントリ]**  >  **[設定の編集]** の順に選択します。
 
 ![Azure portal の Azure Automation [インベントリ] ビューのスクリーンショット](./media/change-tracking1.png)
 
 各レジストリ キーの詳細については、「[レジストリ キーの変更追跡](/azure/automation/automation-change-tracking#registry-key-change-tracking)」を参照してください。 評価するキーを選択し、それを有効にします。 この設定は、現在のワークスペースで有効になっているすべての VM に適用されます。
 
-サービスを使用して、重要なファイルの変更を追跡することもできます。 たとえば、C:\windows\system32\drivers\etc\hosts ファイルを追跡できます。OS がホスト名を IP アドレスにマップするために使用されるためです。 このファイルを変更すると、接続の問題が発生したり、トラフィックが危険な Web サイトにリダイレクトされたりする可能性があります。
+サービスを使用して、重要なファイルの変更を追跡することもできます。 たとえば、`C:\windows\system32\drivers\etc\hosts` ファイルは、OS がホスト名を IP アドレスにマップするために使用されるため、これを追跡できます。 このファイルを変更すると、接続の問題が発生したり、トラフィックが危険な Web サイトにリダイレクトされたりする可能性があります。
 
 hosts ファイルに対してファイル コンテンツの追跡を有効にするには、「[ファイル コンテンツの追跡の有効化](/azure/automation/change-tracking-file-contents#enable-file-content-tracking)」の手順に従ってください。
 
-追跡中のファイルに加えられた変更に対するアラートを追加することもできます。 たとえば、hosts ファイルに加えられた変更に対してアラートを設定するとします。 コマンド バーまたはリンクされた Log Analytics ワークスペースのログ検索で **[Log Analytics]** を選択します。 Log Analytics で、次のクエリを使用して、hosts ファイルに対する変更を検索します。
+追跡中のファイルに加えられた変更に対するアラートを追加することもできます。 たとえば、hosts ファイルの変更に対してアラートを設定するとします。 これを行うには、リンクされた Log Analytics ワークスペースのコマンド バーまたは **[ログ検索]** で **[Log Analytics]** を選択します。 Log Analytics で、次のクエリを使用して、hosts ファイルに対する変更を検索します。
 
   ```kusto
   ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"

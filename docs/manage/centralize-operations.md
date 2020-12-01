@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: fce6da886e8b4336a1c9d61a8ed2e4455ac6200b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6814fb5ecfb91068979226ebf0163ea6d54ec3eb
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877808"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880043"
 ---
 # <a name="centralize-management-operations"></a>管理操作の一元化
 
@@ -29,7 +29,7 @@ ms.locfileid: "88877808"
 
 たとえば、組織に単一のテナント `Tenant A` があるとします。 その後、組織は 2 つの別のテナント (`Tenant B` と `Tenant C`) を取得します。これらを個別のテナントとして維持する必要があるビジネス上の理由があります。
 
-組織では、すべてのテナントで同じポリシー定義、バックアップ方法、およびセキュリティ プロセスを使用する必要があります。 テナント A 内でこれらのタスクの実行を担当するユーザー (ユーザー グループとサービス プリンシパルを含む) が既に存在するため、テナント A 内の同じユーザーがこれらのタスクを実行できるように、テナント B とテナント C 内のすべてのサブスクリプションをオンボードできます。 テナント A は、テナント B とテナント C の管理テナントになります。
+組織では、すべてのテナントで同じポリシー定義、バックアップ方法、およびセキュリティ プロセスを使用する必要があります。 `Tenant A` 内でこれらのタスクの実行を担当するユーザー (ユーザー グループとサービス プリンシパルを含む) が既に存在するため、`Tenant A` 内の同じユーザーがこれらのタスクを実行できるように、`Tenant B` と `Tenant C` 内のすべてのサブスクリプションをオンボードできます。 `Tenant A` は、`Tenant B` と `Tenant C` の管理テナントになります。
 
 ![テナント A のユーザーによるテナント B とテナント C のリソースの管理](../_images/manage/enterprise-azure-lighthouse.jpg)
 

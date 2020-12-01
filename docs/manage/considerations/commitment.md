@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 54096b19fe5e72083818cb69a74c1d30694803ae
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d6abda70a359a464d213888989425893d88e9b72
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571645"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879975"
 ---
 # <a name="business-commitment-in-cloud-management"></a>クラウド管理におけるビジネス コミットメント
 
@@ -114,7 +114,7 @@ ms.locfileid: "88571645"
 
 ### <a name="estimate-outage-hours-per-year"></a>推定停止時間 (年間の時間)
 
-複合 SLA は、ワークロード内の各資産のデプロイに基づくサービス レベル アグリーメントです。 このフィールドによって、"_推定停止時間_" (ブックのラベルは `Est. Outage`) が変わります。 ブックを使用せずに年間の推定停止時間を計算するには、次の式を適用します。
+複合 SLA は、ワークロード内の各資産のデプロイに基づくサービス レベル アグリーメントです。 このフィールドによって、"_推定停止時間_" (ブックのラベルは `Est.Outage`) が変わります。 ブックを使用せずに年間の推定停止時間を計算するには、次の式を適用します。
 
 > _推定停止時間 = (1 - 複合 SLA のパーセンテージ) &#215; 1 年間の時間数_
 

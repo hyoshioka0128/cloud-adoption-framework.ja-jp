@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ea11a54dcf3fe9d60dea4fd980f82b608bed3a0a
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 597a972a6dc4fb56d3c045ee497918342f43e5c2
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024455"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880111"
 ---
 # <a name="create-update-schedules"></a>更新スケジュールの作成
 
@@ -20,7 +20,7 @@ Azure portal または新しい PowerShell コマンドレット モジュール
 
 Azure portal を使用して更新スケジュールを作成するには、「[更新プログラムのデプロイをスケジュールする](/azure/automation/update-management/deploy-updates#schedule-an-update-deployment)」をご覧ください。
 
-Azure PowerShell を使用した更新管理の構成が `Az.Automation` モジュールで新たにサポートされました。 モジュールの[バージョン 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) では、[New-AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) コマンドレットのサポートが追加されました。 このコマンドレットを実行すると、タグ、場所、保存された検索を使用して、柔軟なグループのマシンの更新スケジュールを構成できます。
+`Az.Automation` モジュールで、Azure PowerShell を使用した Update Management の構成がサポートされるようになりました。 モジュールの[バージョン 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) では、[New-AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) コマンドレットのサポートが追加されました。 このコマンドレットを実行すると、タグ、場所、保存された検索を使用して、柔軟なグループのマシンの更新スケジュールを構成できます。
 
 ## <a name="example-script"></a>サンプル スクリプト
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ebd9decfb10f4ff0917d1c7020569a2f63777018
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c5cd50b0f0dbaaa215f4c7c88e6f482d57027243
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605069"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996640"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -102,7 +102,7 @@ Azure Migrate では、移行前評価フェーズの一環として適切なサ
 
 継続的なコスト分析とレビューを実行することが重要です。 この作業は、コストとワークロードのバランスを取るために必要な場合に、リソースのサイズを変更する機会になります。
 
-Azure Cost Management と Billing は Azure Advisor と連携して、コストの最適化に関する推奨事項を提供します。 Azure Advisor を使用すると、活動休止状態のリソースや十分に活用されていないリソースを特定することで効率性を最適化し、改善することができます。
+Azure Cost Management + Billing は、Azure Advisor と連携してコストの最適化に関する推奨事項を提供します。 Azure Advisor を使用すると、活動休止状態のリソースや十分に活用されていないリソースを特定することで効率性を最適化し、改善することができます。
 
 1. **[コストの管理と請求]** を選択します。
 1. **[アドバイザーの推奨事項]** 、 **[コスト]** タブの順に選択します。

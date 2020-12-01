@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7af9971a74c33ae6994e3fde3d3496c2f2698499
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1625157c39a3a1cb158f4fae7cc849081a3b10fb
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885016"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996691"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>移行に重点を置いたコスト管理のメカニズム
 
@@ -27,7 +27,7 @@ ms.locfileid: "88885016"
 > - Azure Migrate
 > - Azure 料金計算ツール
 > - Azure TCO 計算ツール
-> - Azure Cost Management と Billing
+> - Azure Cost Management および Billing
 > - Azure Advisor
 
 この記事で説明されているプロセスにはまた、IT マネージャー、財務、または基幹業務アプリケーションの所有者とのパートナーシップが必要になる場合もあります。
@@ -87,13 +87,13 @@ Azure Migrate では、コレクターや Service Map によってキャプチ�
 2. Advisor ダッシュボードには、選択したすべてのサブスクリプションの推奨事項の概要が表示されます。 サブスクリプション フィルター ドロップダウンを使用して、推奨事項を表示するサブスクリプションを選択できます。
 3. コストに関する推奨事項を表示するには、 **[コスト]** タブを選択します。
 
-### <a name="azure-cost-management-and-billing"></a>Azure Cost Management と Billing
+### <a name="azure-cost-management--billing"></a>Azure Cost Management および Billing
 
-Azure Cost Management と Billing は、消費習慣のより総合的なビュー (コストの詳細ビューや一定期間にわたる消費傾向を含む) を提供できます。 大規模な移行や複雑な移行の場合は、このビューにより、コスト管理に関する広範囲にわたる意思決定を行うために必要な分析情報が提供される可能性があります。
+Azure Cost Management + Billing は、消費習慣のより総合的なビュー (コストと一定期間にわたる消費傾向の詳細ビューなど) を提供できます。 大規模な移行や複雑な移行の場合は、このビューにより、コスト管理に関する広範囲にわたる意思決定を行うために必要な分析情報が提供される可能性があります。
 
-**前提条件:** このタブの残りでは、読者が Azure セットアップ ガイドの完了中に Azure Cost Management と Billing の設定を完了していることを前提にしています。 Azure Cost Management と Billing の構成の詳細については、Azure セットアップ ガイドの「[Azure リソースのコストと課金を管理する](../../ready/azure-setup-guide/manage-costs.md)」を参照してください。 データが入力されたら、次のいくつかの手順に従って、収集されたデータに基づいて毎月のコストを見積もります。
+**前提条件:** このタブの残りの部分は、読者が Azure セットアップ ガイドの実行時に Azure Cost Management + Billing の設定を完了していることを前提としています。 Azure Cost Management + Billing の構成の詳細については、Azure セットアップ ガイドの「[Azure リソースのコストと課金を管理する](../../ready/azure-setup-guide/manage-costs.md)」をご覧ください。 データが入力されたら、次のいくつかの手順に従って、収集されたデータに基づいて毎月のコストを見積もります。
 
-次の手順では、サブスクリプションに対する Azure Cost Management と Billing のコスト分析データを読み込みます。
+次の手順では、サブスクリプションに対する Azure Cost Management + Billing のコスト分析データを読み込みます。
 
 1. ポータルで **[コストの管理と請求]** に移動します。 左側のウィンドウに **[コストの管理と請求]** が表示されない場合は、 **[すべてのサービス]** を選択します。 サービス メニュー ウィンドウで、 **[Monitoring and Management]\(監視と管理\)** の **[コストの管理と請求]** を選択します。
 2. **[コストの管理と請求]** で、左側のナビゲーション ウィンドウの **[コスト管理]** を選択して、クラウド コストの分析と最適化を開始します。
@@ -106,7 +106,7 @@ Azure Cost Management と Billing は、消費習慣のより総合的なビュ�
 
 - 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[コスト管理規範](../../govern/cost-management/index.md)と[コスト管理規範の改善](../../govern/guides/complex/cost-management-improvement.md)に関するページをご覧ください。
 - Azure Advisor の詳細については、[Azure Advisor を使用したサービス コストの削減](/azure/advisor/advisor-cost-recommendations)に関するページを参照してください。
-- Azure Cost Management と Billing の詳細については、「[スコープを理解して使用する](/azure/cost-management/understand-work-scopes)」および「[コスト分析を使用してコストを調査および分析する](/azure/cost-management/quick-acm-cost-analysis)」を参照してください。
+- Azure Cost Management + Billing の詳細については、「[スコープを理解して使用する](/azure/cost-management/understand-work-scopes)」および「[コスト分析を使用してコストを調査および分析する](/azure/cost-management/quick-acm-cost-analysis)」をご覧ください。
 
 ## <a name="tips-and-tricks-to-optimize-costs"></a>[コストを最適化するためのヒントとコツ](#tab/TipsTricks)
 
@@ -134,7 +134,7 @@ Microsoft アカウント担当者と話をして、どのようにしたら現�
 
 ### <a name="use-azure-hybrid-benefit"></a>Azure ハイブリッド特典を利用する
 
-オンプレミス デプロイで既に Windows Server または SQL Server のライセンスを持っている場合は、[Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit)プログラムを使用して Azure で節約できます。 Windows Server を利用した場合、各ライセンスに OS のコストが含まれ (最大 2 台の仮想マシンが対象)、お客様が支払うのは基本的なコンピューティング コストのみとなります。 既存の SQL Server ライセンスを使用すれば、仮想コアベースの SQL Database オプションで最大 55% の節約となります。 オプションには、Azure 仮想マシン内の SQL Server と、SQL Server 統合サービスが含まれます。
+オンプレミス デプロイで既に Windows Server または SQL Server のライセンスを持っている場合は、[Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit)プログラムを使用して Azure で節約できます。 Windows Server を利用した場合、各ライセンスに OS のコストが含まれ (最大 2 台の仮想マシンが対象)、お客様が支払うのは基本的なコンピューティング コストのみとなります。 既存の SQL Server ライセンスを使用すれば、仮想コアベースの SQL Database オプションで最大 55% の節約となります。 オプションには、Azure 仮想マシン内の SQL Server と、SQL Server Integration Services が含まれます。
 
 ### <a name="low-priority-vms-with-batch"></a>バッチを使用した優先順位の低い VM
 
