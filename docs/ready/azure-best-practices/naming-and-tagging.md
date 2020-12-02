@@ -3,21 +3,18 @@ title: 推奨される名前付けおよびタグ付け規則
 description: この記事では、エンタープライズ クラウド導入作業のサポートを明確に対象にした、リソースの名前付けとタグ付けに関する詳細な推奨事項について説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 03/05/2020
+ms.date: 11/12/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 48e429673c3921a91e441abde7d14c3d9df7400f
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.openlocfilehash: c96e043cd483600a54da3b8e1174458d2ce01b45
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997388"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327816"
 ---
-<!-- docutune:disable -->
-<!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
-
 # <a name="recommended-naming-and-tagging-conventions"></a>推奨される名前付けおよびタグ付け規則
 
 運用管理要件と会計処理要件をサポートするようにクラウド資産を整理します。 明確に定義された名前付け規則とメタデータのタグ付け規則を使用すると、リソースをすばやく見つけて管理するのに役立ちます。 これらの規則は、チャージバックとショーバックという会計処理を使用して、クラウドの使用コストをビジネス チームに関連付けるためにも役立ちます。
