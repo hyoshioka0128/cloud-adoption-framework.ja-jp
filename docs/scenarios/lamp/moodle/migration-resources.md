@@ -1,71 +1,75 @@
 ---
 title: Moodle 移行のリソース
-description: Moodle 移行のリソースについて説明します。
+description: Moodle 移行によって Azure 内に作成されるリソースについて説明します。 たとえば、Azure Virtual Network、ネットワーク セキュリティ グループ、サブネットなどがあります。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/06/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a4b57c31e1b8d3fd489498eb36cf36f259c8e560
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: cffcac0ca8b06608971637ed75aac1ba9cb3eff3
+ms.sourcegitcommit: 1d7b16eb710bed397280fb8f862912c78f2254ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94714911"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95812153"
 ---
 # <a name="moodle-migration-resources"></a>Moodle 移行のリソース
 
-Azure Resource Manager テンプレートを使用すると、Azure 内に次のリソースが作成されます。
+Azure Resource Manager (ARM) テンプレートを使用して Moodle を移行すると、デプロイによって Azure 内にリソースが作成されます。 このデプロイ プロセスの一環として、子テンプレートを使用して追加のデプロイが自動的に実行されます。 以下のセクションでは、これらのデプロイと、そのデプロイによって作成されるリソースについて説明します。
 
-- **ネットワーク テンプレート:** ネットワーク テンプレートによって、仮想ネットワーク、ネットワーク セキュリティ グループ、ネットワーク インターフェイス、サブネット、パブリック IP アドレス、Azure Load Balancer/Application Gateway、Redis キャッシュなどが作成されます。
+## <a name="network-template"></a>ネットワーク テンプレート
 
-また、ネットワーク テンプレートは、名前、apiVersion、場所、DNS サーバー名という文字列を含む仮想ネットワークを作成します。 `AddressSpace` には、サブネットで使用できる IP アドレスの範囲が含まれています。
+ネットワーク テンプレートのデプロイによって、次のようなリソースが作成されます。
 
-- **仮想ネットワーク:** Azure Virtual Network は、クラウド内のユーザー独自のネットワークを表したものです。 これは、特にサブスクリプション専用に Azure クラウドを論理的に分離したものです。 仮想ネットワークを作成すると、ご使用のサービスとその内部の仮想マシンは、クラウド内で直接かつ安全に通信することができます。 詳細については、 [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview)に関するページを参照してください。
+- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview): クラウド内のユーザー独自のネットワークの表現。 Virtual Network は、ご使用のサブスクリプション専用の Azure クラウドを論理的に分離したものです。 仮想ネットワークを作成すると、ご使用のサービスとその内部の仮想マシンは、クラウド内で直接かつ安全に通信することができます。 ネットワーク テンプレートによって作成される仮想ネットワークには、仮想ネットワーク名、API バージョン、場所、DNS サーバー名、および AddressSpace が含まれます。 AddressSpace には、サブネットが使用できる IP アドレスの範囲が含まれています。
 
-- **ネットワーク セキュリティ グループ:** ネットワーク セキュリティ グループ (NSG) は、Azure Virtual Network に接続されているリソースへのネットワーク トラフィックを許可または拒否するセキュリティ規則の一覧を含むネットワーク フィルター (ファイアウォール) です。 詳細については、「[ネットワーク セキュリティ グループ](/azure/virtual-network/network-security-groups-overview)」を参照してください。
+- [ネットワーク セキュリティ グループ (NSG)](/azure/virtual-network/network-security-groups-overview):セキュリティ規則の一覧を含むネットワーク フィルター (ファイアウォール)。 これらの規則によって、仮想ネットワークに接続されているリソースへのネットワーク トラフィックが許可または拒否されます。
 
-- **ネットワーク インターフェイス:** ネットワーク インターフェイスは、Azure Virtual Machine がインターネット、Azure、およびオンプレミスのリソースと通信できるようにします。 詳細については、[ネットワーク インターフェイス](/azure/virtual-network/virtual-network-network-interface)に関するページを参照してください。
+- [ネットワーク インターフェイス](/azure/virtual-network/virtual-network-network-interface): Azure 仮想マシンがインターネット、Azure、およびオンプレミスのリソースと通信するときに使用できるインターフェイス。
 
-- **サブネット:** サブネット (サブネットワーク) は、大規模なネットワーク内の小規模なネットワークです。 既定では、サブネット内の IP は、仮想ネットワーク内の他のすべての IP と通信できます。 詳細については、[サブネット](/azure/virtual-network/virtual-network-manage-subnet)に関するページを参照してください。
+- [サブネット](/azure/virtual-network/virtual-network-manage-subnet):大規模なネットワーク内の小規模なネットワーク。 サブネットはサブネットワークとも呼ばれます。 既定では、サブネット内の IP アドレスは、仮想ネットワーク内の他のすべての IP アドレスと通信できます。
 
-- **パブリック IP:** パブリック IP アドレスは、Azure リソースをインターネットに伝達するために使用されます。 このアドレスは、Azure リソース専用です。 詳細については、[パブリック IP](/azure/virtual-network/public-ip-addresses#:~:text=Public%20IP%20addresses%20enable%20Azure,IP%20assigned%20can%20communicate%20outbound) に関するページを参照してください。
+- [[パブリック IP アドレス]](/azure/virtual-network/public-ip-addresses#:~:text=Public%20IP%20addresses%20enable%20Azure,IP%20assigned%20can%20communicate%20outbound): Azure リソースがインターネット通信に使用する IP アドレス。 このアドレスは、Azure リソース専用です。
 
-- **Azure Load Balancer:** サーバー ファーム内の複数のサーバー間でのネットワークまたはアプリケーションのトラフィックの効率的な分散。 オンラインのサーバーにのみ要求を送信することによって、高可用性と信頼性を確保します。 詳細については、[Azure Load Balancer](/azure/virtual-machines/windows/tutorial-load-balancer#:~:text=An%20Azure%20load%20balancer%20is,traffic%20to%20an%20operational%20VM) に関するページを参照してください。
+- [Azure Load Balancer](/azure/virtual-machines/windows/tutorial-load-balancer#:~:text=An%20Azure%20load%20balancer%20is,traffic%20to%20an%20operational%20VM):サーバー ファーム内の複数のサーバーにわたり、ネットワークまたはアプリケーションのトラフィックを効率的に分散するロード バランサー。 Load Balancer は、オンラインのサーバーにのみ要求を送信することで、高可用性と信頼性を確保します。
 
-4 つの定義済みテンプレートのいずれでも Azure Load Balancer がデプロイされます。 完全に構成可能なデプロイでは、ユーザーは Load Balancer ではなく Azure Application Gateway を選択できます。
+- [Azure Application Gateway](/azure/application-gateway/overview):Load Balancer の代替手段。 4 つすべての定義済み ARM テンプレートによって Load Balancer がデプロイされます。 ARM テンプレートの代わりに完全に構成可能なデプロイを使用すると、Load Balancer ではなく Application Gateway を選択できます。 Application Gateway は、Web アプリケーションへのトラフィック管理に使用できる Web トラフィック ロード バランサーです。 Application Gateway によるルーティングの決定は、URI パス、ホスト ヘッダーのような HTTP 要求の追加属性に基づいて行うことができます。
 
-- **Azure Application Gateway:** Web アプリケーションへのトラフィックを管理できるようにする Web トラフィックの Azure Load Balancer です。 Application Gateway では、URI パスやホスト ヘッダーのような、HTTP 要求の追加属性に基づいてルーティングを決定できます。 詳細については、[Azure Application Gateway](/azure/application-gateway/overview) に関するページを参照してください。
+- [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview):オープンソース ソフトウェア Redis に基づくインメモリ データ ストア。 Redis は、バックエンド データを大量に格納するアプリケーションのパフォーマンスとスケーラビリティを高めます。 大量のアプリケーション要求を処理するために、サーバーのメモリ内にアクセス頻度の高いデータが維持されます。 このデータは、高速で読み書きすることができます。
 
-- **Redis キャッシュ:** Azure Cache for Redis は、オープンソース ソフトウェア Redis を基にしたインメモリ データ ストアを提供します。 Redis は、バックエンド データを大量に格納するアプリケーションのパフォーマンスとスケーラビリティを高めます。 サーバーのメモリ内にアクセス頻度の高いデータを維持し、このデータを高速に読み書きできるようにすることで、大量のアプリケーション要求を処理することができます。 詳細については、[Redis キャッシュ](/azure/azure-cache-for-redis/cache-overview)に関するページを参照してください。
+## <a name="storage-template"></a>ストレージ テンプレート
 
-- **ストレージ テンプレート:** ストレージ アカウント テンプレートでは、種類が FileStorage で Premium のローカル冗長ストレージ (LRS) レプリケーション (1 テラバイト (TB)) を使用してストレージ アカウントを作成します。 定義済みのテンプレートに従って、Azure Files を使用するストレージ アカウントではファイル共有が作成されます。
+ストレージ アカウント テンプレートのデプロイにより、種類が FileStorage の Azure ストレージ アカウントが作成されます。 アカウントには、Premium パフォーマンス、ローカル冗長ストレージ (LRS) レプリケーション、および 1 テラバイト (TB) のストレージが含まれます。 定義済みテンプレートが構成されるため、Azure Files を使用するストレージ アカウントによってファイル共有が作成されます。
 
-Azure ストレージ アカウントには、BLOB、ファイル、キュー、テーブル、およびディスクが含まれており、これらはすべて Azure Storage データ オブジェクトです。 このストレージ アカウントでは、世界中のどこからでも HTTP または HTTPS 経由でアクセスできる Azure Storage データ用の一意の名前空間が提供されます。 Azure ストレージ アカウントの種類は、汎用 v1、汎用 v2、BlockBlobStorage、FileStorage、および Blob ストレージです。 レプリケーションの種類は、LRS とゾーン冗長または geo 冗長ストレージです。 パフォーマンスの種類は Standard と Premium で、個々のストレージ アカウントは、他の Azure サービスと同様に最大 500 TB のデータを格納できます。
+[Azure ストレージ アカウント](/azure/storage/common/storage-account-overview)には、BLOB、ファイル、キュー、テーブル、ディスクなどの Azure Storage データ オブジェクトが含まれています。 このストレージ アカウントでは、世界中のどこからでも HTTP または HTTPS 経由でアクセスできる Azure Storage データ用の一意の名前空間が提供されます。 使用可能な Azure ストレージ アカウントの種類は、汎用 v1、汎用 v2、BlockBlobStorage、FileStorage、および Blob ストレージです。 レプリケーションの種類は、geo 冗長ストレージまたは LRS、およびゾーン冗長または geo 冗長ストレージです。 パフォーマンスの種類は Standard と Premium で、個々のストレージ アカウントは、他の Azure サービスと同様に最大 500 TB のデータを格納できます。
 
-次のストレージ アカウントの種類には、Azure Resource Manager テンプレートのサポートが含まれています。
+ARM テンプレートは、次のストレージ アカウントの種類をサポートしています。
 
-- NFS:ネットワーク ファイル システム (NFS) を使用すると、リモート ホストはネットワーク経由でファイル システムをマウントし、ローカルにマウントされている場合と同じようにこれらのファイル システムとやり取りできます。 これにより、システム管理者は、ネットワーク上の集中管理されたサーバーにリソースを統合することができます。 詳細については、[NFS](/windows-server/storage/nfs/nfs-overview) に関するページを参照してください。
+- [Network File System (NFS)](/windows-server/storage/nfs/nfs-overview): リモート ホストがネットワーク経由でファイル システムをマウントするときに使用できるアカウントの種類。 リモート ホストは、ローカルにマウントされている場合と同じように、これらのファイル システムとやり取りできます。 この設計により、システム管理者は、ネットワーク上の集中管理されているサーバーにリソースを統合することができます。
 
-- GluserFS:複数のペタバイト単位のデータを格納するために、構成要素方式でスケールアウトできるオープンソースの分散ファイル システム。 詳細については、[Gluster FS](/azure/virtual-machines/workloads/sap/high-availability-guide-rhel-glusterfs) に関するページを参照してください。
+- [GlusterFS](/azure/virtual-machines/workloads/sap/high-availability-guide-rhel-glusterfs): 複数のペタバイト単位のデータを格納するために、構成要素方式でスケールアウトできるオープンソースの分散ファイル システム。
 
-- Azure Files:パフォーマンスと互換性のためにオンプレミスでのキャッシュも可能な、セキュリティで保護された SMB ベースのフル マネージド型のクラウド ファイル共有を提供する唯一のパブリック クラウド ファイル ストレージ。 詳細については、[Azure Files](/azure/storage/files/storage-files-introduction) に関するページを参照してください。 NFS と glusterFS の場合、レプリケーションは Standard LRS であり、ストレージの種類は汎用 v1 です。 Azure Files の場合、レプリケーションは Premium ローカル冗長ストレージ (LRS) であり、種類は FileStorage です。
+- [Azure ファイル](/azure/storage/files/storage-files-introduction):パフォーマンスと互換性のためにオンプレミスでのキャッシュも可能な、セキュリティで保護された SMB ベースのフル マネージド型のクラウド ファイル共有を提供する唯一のパブリック クラウド ファイル ストレージ。 NFS および GlusterFS の場合、レプリケーションは Standard LRS で、ストレージの種類は汎用 v1 です。 Azure Files の場合、レプリケーションは Premium LRS で、種類は FileStorage です。
 
-これらのストレージ メカニズムは選択されたデプロイによって異なります。 NFS と glusterFS ではコンテナーが作成され、Azure Files ではファイル共有が作成されます。 最小および小規模から中規模の場合、テンプレートで NFS がサポートされ、大規模および最大の場合、テンプレートで Azure Files がサポートされます。 コンテナーとファイル共有にアクセスするには、ポータルに移動し、リソース グループ内のストレージ アカウントを選択します。
+これらのストレージ メカニズムは、選択するデプロイによって異なります。 NFS と GlusterFS によりコンテナーが作成され、Azure Files によりファイル共有が作成されます。 最小および小規模から中規模の場合、テンプレートにより NFS がサポートされます。 大規模および最大規模の場合は、テンプレートにより Azure Files がサポートされます。 コンテナーとファイル共有にアクセスするには、Azure portal に移動し、リソース グループ内のストレージ アカウントを選択します。
 
-![ストレージ アカウントです。](images/storage-account.png)
+![Azure portal のスクリーンショット。 ストレージ アカウントのページが表示され、コンテナーとファイル共有にアクセスするためのボタンを使用できます。](./images/storage-account.png)
 
-ストレージ アカウントの詳細については、[ストレージ アカウント](/azure/storage/common/storage-account-overview)に関するページを参照してください。
+## <a name="database-template"></a> データベース テンプレート
 
-- **データベース テンプレート:** データベース テンプレートでは [Azure Database for MySQL サーバー](/azure/mysql/)が作成されます。 Azure Database for MySQL サーバーは簡単にセットアップ、管理、およびスケーリングできます。 これにより、定期的な更新、バックアップ、セキュリティなど、インフラストラクチャとデータベース サーバーの管理とメンテナンスが自動化されます。 バージョン 5.6、5.7、8.0 など、MySQL の最新のコミュニティ エディションを使用してビルドします。 作成されたデータベース サーバーにアクセスするには、デプロイ時に提供された **リソース グループ** に移動し、**Azure Database for MySQL サーバー** に移動します。 データベース サーバーには、サーバー名、サーバー管理者のログイン名、MySQL のバージョン、およびパフォーマンス構成が含まれます。
+データベース テンプレートのデプロイにより、[Azure Database for MySQL](/azure/mysql/) サーバーが作成されます。 Azure Database for MySQL は簡単にセットアップ、管理、およびスケーリングできます。 これにより、定期的な更新、バックアップ、セキュリティなど、インフラストラクチャとデータベース サーバーの管理とメンテナンスが自動化されます。 Azure Database for MySQL は、バージョン 5.6、5.7、8.0 など、MySQL の最新のコミュニティ エディションを使用してビルドされます。 テンプレートによって作成されたデータベース サーバーにアクセスするには、Azure portal に移動し、デプロイ プロセスによって提供されたリソース グループを開きます。 次に、**Azure Database for MySQL サーバー** に移動します。 データベース サーバーには、テンプレートによってサーバー名、サーバー管理者のログイン名、MySQL のバージョン、およびパフォーマンス構成が設定されます。
 
-- **仮想マシン テンプレート:** このテンプレートでは、仮想マシンがコントローラー仮想マシンとして区別されます。 コントローラー仮想マシンのオペレーティング システムは Ubuntu 18.04 です。
+## <a name="virtual-machine-template"></a>仮想マシン テンプレート
 
-- **仮想マシン拡張機能:** 仮想マシン拡張機能は、[Azure Virtual Machines](/azure/virtual-machines/extensions/overview) でのデプロイ後の構成と自動タスクを提供する複数の小さなアプリケーションです。 仮想マシン拡張機能では、コントローラー仮想マシンに Moodle をインストールしてログ ファイルをキャプチャするシェル スクリプト ファイルが実行されます。 ログファイル `stderr` と `stdout` は `/var/lib/waagent/custom-script/download/0/` に作成され、ユーザーはそれらをルート ユーザーとして表示できます。
+仮想マシン テンプレートのデプロイによって、仮想マシンがコントローラー仮想マシンとして指定されます。 コントローラー仮想マシンのオペレーティング システムは Ubuntu 18.04 です。
 
-- **スケール セット テンプレート:** このテンプレートでは[仮想マシン スケール セット](/azure/virtual-machine-scale-sets/overview)が作成されます。 仮想マシン スケール セットを使用すると、自動スケールの仮想マシンのセットをデプロイおよび管理できます。 スケール セット内の仮想マシンの数を手動で拡張したり、CPU などのリソースの使用率、メモリの需要、またはネットワーク トラフィックに基づいて自動的にスケールする規則を定義したりすることができます。 仮想マシン インスタンスの自動スケールは [CPU 使用率](/visualstudio/profiling/average-cpu-utilization)に依存します。 インスタンスをスケールアップすると、仮想マシンがデプロイされ、シェル スクリプトが実行されて Moodle の前提条件および設定用 Cron ジョブをインストールします。 仮想マシン インスタンスにはプライベート IP があります。 プライベート IP を使用してスケール セット上の仮想マシンに接続するには、「[仮想ネットワーク ゲートウェイを作成してプライベート IP 経由で接続する方法](./vpn-gateway.md)」の手順に従ってください。
+仮想マシン拡張機能は、[Azure Virtual Machines](/azure/virtual-machines/extensions/overview) でのデプロイ後の構成と自動タスクを提供する複数の小さなアプリケーションです。 仮想マシン拡張機能を使用すると、シェル スクリプトが実行されます。このシェル スクリプトによって、コントローラー仮想マシンに Moodle がインストールされ、ログ ファイルがキャプチャされます。 これにより `stderr` ログ ファイルと `stdout` ログ ファイルが `/var/lib/waagent/custom-script/download/0/` フォルダーに作成されます。 これらのファイルは、ルート ユーザーとして表示できます。
+
+## <a name="scale-set-template"></a>スケール セット テンプレート
+
+スケール セット テンプレートのデプロイによって、[仮想マシン スケール セット](/azure/virtual-machine-scale-sets/overview)が作成されます。 仮想マシン スケール セットを使用すると、自動スケールの仮想マシンのセットをデプロイおよび管理できます。 スケール セット内の仮想マシンの数を手動で拡張したり、[CPU](/visualstudio/profiling/average-cpu-utilization) などのリソースの使用率、メモリの需要、またはネットワーク トラフィックに基づいて自動的にスケールする規則を定義したりすることができます。 インスタンスがスケールアップすると、これにより仮想マシンがデプロイされます。 その後、シェル スクリプトが実行され、このシェル スクリプトによって、Moodle の前提条件がインストールされ、cron ジョブが設定されます。 スケール セットの仮想マシンには、プライベート IP アドレスがあります。 プライベート IP アドレスを使用してスケール セット上の仮想マシンに接続するには、「[仮想ネットワーク ゲートウェイを作成してプライベート IP 経由で接続する方法](./vpn-gateway.md)」の手順に従ってください。
 
 ## <a name="next-steps"></a>次のステップ
 
-Moodle の移行プロセスの詳細については、「[仮想ネットワーク ゲートウェイを作成してプライベート IP 経由で接続する方法](./vpn-gateway.md)」を続行してください。
+「[仮想ネットワーク ゲートウェイを作成してプライベート IP 経由で接続する方法](./vpn-gateway.md)」に進みます。

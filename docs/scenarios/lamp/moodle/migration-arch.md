@@ -1,77 +1,97 @@
 ---
-title: Moodle の移行タスク、アーキテクチャ、テンプレート
-description: Moodle の移行に関連するタスクとアーキテクチャ、およびテンプレートについて説明します。
+title: Moodle 移行のアーキテクチャとテンプレート
+description: Moodle Azure インフラストラクチャのデプロイ用 Azure Resource Manager (ARM) テンプレートの概要と、そのテンプレートをデプロイまたは編集する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/06/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f3e5d88e894289e615ac0573d6c640832b8ed028
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 9d49871341d58d6a9198c9751ed5ed3541b97cca
+ms.sourcegitcommit: 1d7b16eb710bed397280fb8f862912c78f2254ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94714934"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95812348"
 ---
-# <a name="moodle-migration-tasks-architecture-and-template"></a>Moodle の移行タスク、アーキテクチャ、テンプレート
+# <a name="moodle-migration-architecture-and-templates"></a>Moodle 移行のアーキテクチャとテンプレート
 
-## <a name="moodle-migration-task-outline"></a>Moodle の移行タスクの概要
+Moodle 移行には、次のタスクが含まれます。
 
-Moodle の移行には、次のタスクが含まれます。
+1. Azure Resource Manager (ARM) テンプレートを使用して Azure インフラストラクチャをデプロイする。
+1. [AzCopy をダウンロードしてインストールする](migration-start.md#download-and-install-azcopy-on-the-controller-vm)。
+1. Azure Resource Manager デプロイ内で [Moodle のバックアップ アーカイブをコントローラー仮想マシン インスタンスにコピーする](migration-start.md#copy-the-archive-to-the-controller-vm)。
+1. [Moodle アプリケーションと構成を移行する](migration-start.md#import-the-moodle-database-to-azure)。
+1. [Moodle コントローラー インスタンスとワーカー ノードを設定する](azure-infra-config.md)。
+1. [PHP と Web サーバーを構成する](azure-infra-config.md)。
 
-- Azure Resource Manager テンプレートを使用して Azure インフラストラクチャをデプロイします。
-- AzCopy をダウンロードしてインストールします。
-- バックアップ アーカイブを Azure Resource Manager デプロイからコントローラー仮想マシン インスタンスにコピーします。
-- Moodle アプリケーションと構成の移行。
-- Moodle コントローラー インスタンスとワーカー ノードを設定します。
-- PHP と Web サーバーの構成。
+この記事では、Moodle Azure インフラストラクチャのオプションと、選択した ARM テンプレートを使用して、必要な Azure リソースをデプロイする方法について説明します。
 
-## <a name="deploy-azure-infrastructure-with-azure-resource-manager-templates"></a>Azure Resource Manager テンプレートを使用して Azure インフラストラクチャをデプロイする
+## <a name="azure-infrastructure"></a>Azure インフラストラクチャ
 
-- Azure Resource Manager テンプレートを使用して Azure にインフラストラクチャをデプロイする場合、いくつかのオプションを使用できます。 次の図は、インフラストラクチャ リソースの概要を示しています。
+次の図は、Azure Moodle インフラストラクチャ リソースの概要を示しています。
 
-![Azure インフラストラクチャ リソース。](images/architecture.png)
+![Azure インフラストラクチャ リソースを示す図。](images/architecture.png)
 
-完全に構成可能なデプロイでは、さらに柔軟にデプロイを選択できます。 定義済みのデプロイ サイズでは、4 つの定義済み Moodle サイズのいずれかが使用されます。 定義済みの 4 つのテンプレート オプションは、最小、小規模から中規模、大規模、最大で、これらは [Moodle GitHub リポジトリ](https://github.com/Azure/Moodle)で入手できます。
+## <a name="arm-template-options"></a>ARM テンプレート オプション
 
-- [最小](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-minimal.json):このデプロイでは、NFS、MySQL、および小規模な自動スケール Web フロントエンド仮想マシン sku (1 つの仮想コア) を使用します。これにより、デプロイ時間が短縮され (30 分未満)、現時点では Azure 無料試用版サブスクリプションに対応する 2 つの仮想マシンのみが必要になります。
+Moodle リソースを Azure にデプロイするには、完全に構成可能な ARM テンプレートまたは複数の定義済み ARM テンプレートのうち 1 つを使用できます。 完全に構成可能なデプロイを使用すると、最も柔軟にデプロイを選択できます。 完全に構成可能なテンプレートと定義済みテンプレートは、[Moodle GitHub リポジトリ](https://github.com/Azure/Moodle)で見つかります。
 
-- [小規模から中規模](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-small2mid-noha.json):最大 1,000 の同時ユーザーをサポートします。 このデプロイでは、エラスティック検索や Redis キャッシュなどの他のオプションを使用せずに、NFS (高可用性なし) と MySQL (8 つの仮想コア) を使用します。
+定義済みのデプロイ テンプレートによって使用される定義済み Moodle サイズは、最小、小規模から中規模、大規模、最大の 4 つのいずれかです。
 
-- [大規模 (高可用性)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-large-ha.json):2,000 を超える同時ユーザーをサポートします。 このデプロイでは、エラスティック検索などの他のオプションを使用せずに、Azure Files、MySQL (16 の仮想コア)、Redis キャッシュを使用します。
+- "*最小のデプロイ*" には 2 つの仮想マシン (VM) のみが必要であるため、これは Azure 無料試用版サブスクリプションで機能します。 このデプロイで使用されているのは、ネットワーク ファイル システム (NFS)、MySQL、および、より小規模な自動スケール Web フロントエンド VM SKU (1 つの仮想コア) です。 このテンプレートを使用すると、デプロイ時間が短くなります (30 分未満)。
+  
+  [![最小 Moodle デプロイ ARM テンプレートを起動するボタン。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-minimal.json)
 
-- [Maximum](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-maximal.json): この最大のデプロイでは、Azure Files、最大の SKU を備えた MySQL、Redis キャッシュ、エラスティック検索 (3 つの仮想マシン)、大規模ストレージ サイズ (データ ディスクとデータベースの両方) を使用します。
+- *小規模から中規模* は、最大 1000 人の同時ユーザーをサポートします。 このデプロイで使用されているのは NFS (高可用性なし) と MySQL (8 つの仮想コア) です。 このデプロイには、Elasticsearch、Redis キャッシュなどのオプションが含まれていません。
+  
+  [![小規模から中規模 Moodle デプロイ ARM テンプレートを起動するボタン。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-small2mid-noha.json)
 
-**[Launch] \(起動\)** を選択して、定義済みのテンプレートをデプロイします。 これにより Azure portal に移動します。ここで、 **[サブスクリプション]** 、 **[リソース グループ]** 、[ **[SSH キー]**](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)、 **[リージョン]** などの必須フィールドに入力する必要があります。
+- *大規模 (高可用性) デプロイ* は、2000 人を超える同時ユーザーをサポートします。 このデプロイで使用されているのは、Azure Files、MySQL (16 の仮想コア)、および Redis キャッシュです。Elasticsearch などの他のオプションはありません。
+  
+  [![大規模 (高可用性) Moodle デプロイ ARM テンプレートを起動するボタン。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-large-ha.json)
 
-![カスタム デプロイ:カスタム テンプレートからのデプロイ。](images/custom-deployment.png)
+- *最大* デプロイで使用されているのは、Azure Files、最大の SKU を備えた MySQL、Redis キャッシュ、3 つの VM 上の Elasticsearch、およびデータ ディスクとデータベースの両方を対象とした大規模ストレージ サイズです。
+  
+  [![最大 Moodle デプロイ ARM テンプレートを起動するボタン。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-maximal.json)
 
-前述の定義済みテンプレートでは、既定のバージョンがデプロイされます。
+## <a name="deploy-the-template"></a>テンプレートのデプロイ
 
-```bash
-Ubuntu: 18.04-LTS
-PHP: 7.4
-Moodle: 3.8
-```
+定義済み ARM テンプレートのいずれかをデプロイするには:
 
-オンプレミスの PHP と Moodle のバージョンが古い場合は、次の手順でバージョンを更新します。
+1. 前のセクションで、必要なデプロイの **[Azure へのデプロイ]** ボタンを選択します。 この操作により、Azure portal に移動します。
+   
+1. Azure portal 内の **[カスタム デプロイ]** ページで、必須フィールドである **[サブスクリプション]** 、 **[リソース グループ]** 、 **[リージョン]** 、 **[SSH 公開キー]** に入力します。 SSH キーを追加する方法の詳細については、「[新しい SSH キーを生成して ssh-agent に追加する](https://docs.github.com/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)」を参照してください。
+   
+   :::image type="content" source="images/custom-deployment.png" alt-text="Moodle デプロイ ARM テンプレートの Azure カスタム デプロイ画面を示すスクリーンショット。" border="false":::
+   
+1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
-- **[カスタム デプロイ]** ページで **[テンプレートの編集]** を選択します。
+### <a name="edit-the-template"></a>テンプレートの編集
 
-![テンプレートの編集:Azure Resource Manager テンプレートの編集。](images/edit-template.png)
+定義済みの ARM テンプレートによって、次の既定のソフトウェア バージョンがデプロイされます。
 
-- **Resources** セクションで、Moodle および PHP のバージョンを **Parameters** ブロックに追加します。
+- Ubuntu:18.04 LTS
+- PHP:7.4
+- Moodle: 3.8
 
-    ```json
-    "phpVersion":       { "value": "7.2" },
-    "moodleVersion":    { "value": "MOODLE_38_STABLE"}
-    ```
+オンプレミスの PHP と Moodle のバージョンが上記の前の値と異なる場合は、次の手順に従って、テンプレートのバージョンを更新します。
 
-- Moodle 3.9 の場合、値は `MOODLE_39_STABLE` になります。
+1. Azure portal 内の ARM テンプレートの **[カスタム デプロイ]** ページで、 **[テンプレートの編集]** を選択します。
+   
+1. テンプレートの **[リソース]** セクションで、 **[パラメーター]** の下に Moodle と PHP のバージョンのパラメーターを追加します。
 
-- **[保存]** を選択して変更を保存します。
+   ```json
+   "phpVersion":       { "value": "7.2" },
+   "moodleVersion":    { "value": "MOODLE_38_STABLE"}
+   ```
+   
+   たとえば、Moodle 3.9 の場合、`moodleVersion` 値は `MOODLE_39_STABLE` になります。
+   
+   :::image type="content" source="images/edit-template.png" alt-text="Moodle デプロイ ARM テンプレートの [テンプレートの編集] ページを示すスクリーンショット。" border="false":::
+   
+1. **[保存]** を選択します。
 
 ## <a name="next-steps"></a>次のステップ
 
-Moodle 移行プロセスの詳細については、「[Moodle 移行のリソース](./migration-resources.md)」に進みます。
+「[Moodle 移行のリソース](migration-resources.md)」に進み、ARM テンプレートが Azure にデプロイするリソースを確認します。
