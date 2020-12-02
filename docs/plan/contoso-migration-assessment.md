@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 9e52a468b2a032c70bace6a89e8aa963e6a629de
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605319"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96038683"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
@@ -212,7 +212,7 @@ VM の検出には、次のプロパティを持つ、vCenter Server の読み�
 - **ユーザーの種類:** 少なくとも読み取り専用ユーザーが必要です。
 - **権限:** データセンター オブジェクトの場合は、**子オブジェクトに伝達** チェック ボックスをオンにします。 **[ロール]** では、 **[読み取り専用]** を選択します。
 - **[詳細]:** ユーザーはデータセンター レベルで割り当てられ、データセンター内のすべてのオブジェクトにアクセスできます。
-- アクセスを制限するには、**子オブジェクトへの伝達**特権を持つ**アクセスなし**ロールを子オブジェクト (vSphere ホスト、データ ストア、VM、ネットワーク) に割り当てます。
+- アクセスを制限するには、**子オブジェクトへの伝達** 特権を持つ **アクセスなし** ロールを子オブジェクト (vSphere ホスト、データ ストア、VM、ネットワーク) に割り当てます。
 
 ### <a name="verify-permissions-to-create-a-vm"></a>VM を作成するためのアクセス許可を確認する
 
@@ -320,7 +320,7 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
 
     ![Azure Migrate Collector:前提条件を確認する](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-5. Azure アカウントにサインインし、サブスクリプションと先ほど作成した移行プロジェクトを選択します。 また、**アプライアンス**の名前を入力して、Azure portal で識別できるようにします。
+5. Azure アカウントにサインインし、サブスクリプションと先ほど作成した移行プロジェクトを選択します。 また、**アプライアンス** の名前を入力して、Azure portal で識別できるようにします。
 
 6. **[vCenter Server の詳細を指定する]** で、vCenter Server インスタンスの名前 (FQDN) または IP アドレスと、検出に使用する読み取り専用の資格情報を指定します。
 
@@ -478,7 +478,7 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 
 - 信頼度レーティングは、評価の計算に必要なデータ ポイントの可用性に基づいて、評価に割り当てられます。
 - レーティングは、Azure Migrate による推奨サイズの信頼性を見積もるために役立ちます。
-- 信頼度レーティングは、_パフォーマンス ベースのサイズ設定_を行う場合に役に立ちます。 Azure Migrate には、使用率ベースのサイズ設定を行うために十分なデータ ポイントがない場合があります。 _[オンプレミス]_ のサイズ設定の場合、Azure Migrate には VM のサイズ変更に必要なすべてのデータ ポイントがあるため、信頼度レーティングは常に 5 つ星になります。
+- 信頼度レーティングは、_パフォーマンス ベースのサイズ設定_ を行う場合に役に立ちます。 Azure Migrate には、使用率ベースのサイズ設定を行うために十分なデータ ポイントがない場合があります。 _[オンプレミス]_ のサイズ設定の場合、Azure Migrate には VM のサイズ変更に必要なすべてのデータ ポイントがあるため、信頼度レーティングは常に 5 つ星になります。
 - 次のように、使用可能なデータ ポイントの割合に応じて、評価の信頼度レーティングが決まります。
 
     | データ ポイントの可用性 | 信頼度レーティング |
