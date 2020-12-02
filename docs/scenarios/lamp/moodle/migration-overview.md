@@ -3,16 +3,16 @@ title: 手動による Moodle 移行の概要
 description: Moodle をオンプレミス環境から Azure に手動で移行するための前提条件と全体的な手順を確認します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/17/2020
+ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3c08eb7786834fbe773168e9d420217a1706b32a
-ms.sourcegitcommit: 1d7b16eb710bed397280fb8f862912c78f2254ee
+ms.openlocfilehash: e3d34cfec94f42873ab109a4ab9cbdc4f3acfc8b
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95820090"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327799"
 ---
 # <a name="overview-of-moodle-manual-migration"></a>手動による Moodle 移行の概要
 
@@ -43,6 +43,6 @@ Azure への Moodle 移行の手順は、次の 3 段階に分かれています
 1. [アプリケーションの移行](migration-start.md)
 1. [移行後](migration-post.md)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 「[Moodle 移行のための準備を行う方法](./migration-pre.md)」に進みます。

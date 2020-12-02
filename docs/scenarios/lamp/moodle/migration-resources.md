@@ -3,16 +3,16 @@ title: Moodle 移行のリソース
 description: Moodle 移行によって Azure 内に作成されるリソースについて説明します。 たとえば、Azure Virtual Network、ネットワーク セキュリティ グループ、サブネットなどがあります。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/06/2020
+ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: cffcac0ca8b06608971637ed75aac1ba9cb3eff3
-ms.sourcegitcommit: 1d7b16eb710bed397280fb8f862912c78f2254ee
+ms.openlocfilehash: b42253b69dfaca4ca411e2de20b2527d58cb81ff
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95812153"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327833"
 ---
 # <a name="moodle-migration-resources"></a>Moodle 移行のリソース
 
@@ -70,6 +70,6 @@ ARM テンプレートは、次のストレージ アカウントの種類をサ
 
 スケール セット テンプレートのデプロイによって、[仮想マシン スケール セット](/azure/virtual-machine-scale-sets/overview)が作成されます。 仮想マシン スケール セットを使用すると、自動スケールの仮想マシンのセットをデプロイおよび管理できます。 スケール セット内の仮想マシンの数を手動で拡張したり、[CPU](/visualstudio/profiling/average-cpu-utilization) などのリソースの使用率、メモリの需要、またはネットワーク トラフィックに基づいて自動的にスケールする規則を定義したりすることができます。 インスタンスがスケールアップすると、これにより仮想マシンがデプロイされます。 その後、シェル スクリプトが実行され、このシェル スクリプトによって、Moodle の前提条件がインストールされ、cron ジョブが設定されます。 スケール セットの仮想マシンには、プライベート IP アドレスがあります。 プライベート IP アドレスを使用してスケール セット上の仮想マシンに接続するには、「[仮想ネットワーク ゲートウェイを作成してプライベート IP 経由で接続する方法](./vpn-gateway.md)」の手順に従ってください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 「[仮想ネットワーク ゲートウェイを作成してプライベート IP 経由で接続する方法](./vpn-gateway.md)」に進みます。
