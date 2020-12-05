@@ -1,19 +1,19 @@
 ---
 title: ソフトウェア定義ネットワーク意思決定ガイド
 description: Azure のクラウド導入フレームワークを使用して、ソフトウェア定義ネットワークによってどのようにソフトウェアによって一元的に管理された仮想化ネットワークが提供されるのかを学びます。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bab6a87a845074f7a1beac7d24baeea0f043b9f8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5ba9e035a8bf81a7dc80e4847922ea16fac103de
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881514"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605576"
 ---
 # <a name="software-defined-networking-decision-guide"></a>ソフトウェア定義ネットワーク意思決定ガイド
 

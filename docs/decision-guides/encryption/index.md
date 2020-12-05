@@ -1,19 +1,19 @@
 ---
 title: 暗号化決定ガイド
 description: Azure 移行のコア サービスである暗号化ポリシーを実装し、クラウド ベースのワークロードとデータのセキュリティ層を追加します。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7a36de5c776aecf947dbca6954a1d79c838c2b18
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 7917768760eec85e4992bda3e11c892b275f9652
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90774104"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605508"
 ---
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 

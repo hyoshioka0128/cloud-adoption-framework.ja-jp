@@ -1,19 +1,19 @@
 ---
 title: アーキテクチャの決定ガイド
 description: 以下のコアとなるクラウド デプロイ インフラストラクチャのコンポーネント パターンとモデルを使用して、特定のクラウド展開シナリオをサポートします。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7c9a0e9aaf9f2c2956e29643f5ef8ff3893f6583
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 3c0ea34fae2eb46eda498d01ed4e31e88b62df2c
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603465"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605457"
 ---
 # <a name="architectural-decision-guides"></a>アーキテクチャの決定ガイド
 

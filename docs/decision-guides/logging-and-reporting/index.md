@@ -1,19 +1,19 @@
 ---
 title: ログとレポートの意思決定ガイド
 description: 中心となるログ、レポート、および監視の戦略を策定して、組織がアップタイム、セキュリティ、ポリシーのコンプライアンスの各目標を達成できるようにします。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 83487c086061cde929b318d44e4ad399d43ed8d6
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 354425583022ca5bea49d23da8768bb40212033c
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881786"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605542"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>ログとレポートの意思決定ガイド
 
