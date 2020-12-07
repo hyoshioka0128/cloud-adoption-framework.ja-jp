@@ -311,6 +311,12 @@ items:
                 href: ready/azure-best-practices/organize-subscriptions.md
               - name: 名前付けとタグ付け
                 href: ready/azure-best-practices/naming-and-tagging.md
+              - name: 名前付け規則を定義する
+                href: ready/azure-best-practices/resource-naming.md
+              - name: リソースの種類の省略形
+                href: ready/azure-best-practices/resource-abbreviations.md
+              - name: タグ付けの戦略を定義する
+                href: ready/azure-best-practices/resource-tagging.md
               - name: リソースの移動
                 href: /azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
           - name: ネットワーク
