@@ -1,246 +1,296 @@
 ---
 title: Moodle 移行後のフォローアップ方法
-description: Moodle 移行後のフォローアップ方法について説明します。
+description: Moodle 移行後のフォローアップ方法について説明します。 ログのパスを更新する方法、サーバーを再起動する方法、および移行を完了するために必要なその他の手順を実行する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/06/2020
+ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8594919772cfccf3dd02769a14d62f64cb1ad995
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 4691a170d9eba47e9e4c0f581801d3561b8b93c8
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94714906"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327782"
 ---
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>Moodle 移行後のフォローアップ方法
 
 ## <a name="post-migration-tasks"></a>移行後のタスク
 
-移行後のタスクは最終的なアプリケーション構成で、ログ出力先、SSL 証明書、およびスケジュールされたタスク/cron ジョブの設定などがあります。 このタスクの範囲は次のとおりです。
+Moodle に移行した後、移行後のタスクを実行して構成を完了する必要があります。 次のようなタスクがあります。
 
-- アプリケーションの構成。
-- 仮想マシン スケール セット インスタンス内のログのパスの更新。
+- 仮想マシン スケール セット インスタンスのログのパスの更新。
 - 仮想マシン スケール セット インスタンスのサーバーの再起動。
 - 証明書の更新。
 - 証明書の場所の更新。
 - HTML ローカル コピーの更新。
 - PHP および nginx のサーバーの再起動。
-- Azure Load Balancer IP への DNS 名のマッピング。
+- Azure Load Balancer の IP アドレスへの DNS 名のマッピング。
 
 ## <a name="controller-virtual-machine-scale-set"></a>コントローラー仮想マシン スケール セット
 
-### <a name="log-paths"></a>ログのパス
+仮想マシン スケール セットの構成を完了するには、次の手順を実行します。
 
-オンプレミスには、Azure ログのパスで更新する必要がある様々なログのパスの場所が存在する場合があります。 たとえば、/var/log/syslogs/moodle/access.log や /var/log/syslogs/moodle/error.log があります。
+### <a name="update-log-paths"></a>ログのパスを更新する
 
-- ログ ファイルの場所を更新します。 このコマンドによって、構成ファイルが開きます。
+オンプレミス環境と Azure で、ログ ファイルの格納場所が異なる場合があります。 たとえば、次のログのパスの更新が必要になる場合があります。
 
-  ```bash
-  nano /etc/nginx/nginx.conf
-  ```
+- `/var/log/syslogs/moodle/access.log`
+- `/var/log/syslogs/moodle/error.log`
 
-- ログのパスの場所を変更します。
+ログ ファイルの場所を更新するには、次の手順のようにします。
 
-- `access_log` と `error_log` を見つけて、ログのパスを更新します。
+1. 次のコマンドを入力して、構成ファイルを開きます。
 
-- `CTRL+O` を押して保存し、`CTRL+X` で終了します。
+   ```bash
+   nano /etc/nginx/nginx.conf
+   ```
+
+2. `access_log` と `error_log` を見つけて、ログのパスを更新します。
+
+3. Ctrl + O キーを押して変更を保存し、Ctrl + X キーを押してファイルを閉じます。
 
 ### <a name="restart-servers"></a>サーバーを再起動する
 
-nginx サーバーと php-fpm サーバーを再起動します。
+次のコマンドを入力して、nginx および php-fpm サーバーを再起動します。
 
-  ```bash
-  sudo systemctl restart nginx
-  sudo systemctl restart php<phpVersion>-fpm
-  ```
+```bash
+sudo systemctl restart nginx
+sudo systemctl restart php<php version>-fpm
+```
 
 ## <a name="controller-virtual-machine"></a>コントローラー仮想マシン
 
-### <a name="certificates"></a>証明書
+コントローラー仮想マシンの構成を完了するには、次の手順のようにします。
 
-- 証明書にアクセスするには、コントローラー仮想マシンにログインします。
+### <a name="update-security-certificates"></a>セキュリティ証明書を更新する
 
-- Moodle アプリケーションの証明書は /moodle/certs に存在します。
+1. コントローラー仮想マシンにサインインします。 Moodle アプリケーションの証明書は、`/moodle/certs` フォルダーにあります。
 
-- .crt および .key の各ファイルを /moodle/certs/ にコピーします。 構成されている nginx サーバーで認識されるようにするには、ファイル名を nginx.crt および nginx.key に変更する必要があります。 ローカル環境によっては、ユーティリティ SCP や WinSCP などのツールを使用して、これらのファイルをコントローラー仮想マシンにコピーすることもできます。
+1. `.crt` と `.key` ファイルを `/moodle/certs/` にコピーします。 構成された nginx サーバーによって認識されるように、ファイル名をそれぞれ `nginx.crt` と `nginx.key` に変更します。 ローカル環境で SCP ユーティリティまたは WinSCP などのツールがサポートされている場合は、これらのツールを使用して、これらのファイルをコントローラー仮想マシンにコピーできます。 それ以外の場合は、次のコマンドを使用します。
 
-- 証明書の名前を変更するコマンド。
+   ```bash
+   cd /<path to certs location>
+   mv /<path to certs location>/*.key /moodle/certs/nginx.key
+   mv /<path to certs location>/*.crt /moodle/certs/nginx.crt
+   ```
 
-  ```bash
-  cd /path/to/certs/location
-  mv /path/to/certs/location/*.key /moodle/certs/nginx.key
-  mv /path/to/certs/location/*.crt /moodle/certs/nginx.crt
-  ```
+   ファイルをコピーする代わりに、次のコマンドを使用して自己署名証明書を生成します。
 
-- 自己署名証明書を生成することもできます。これは、テストにのみ役立ちます。
-
-  ```bash
-  openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-  -keyout /moodle/certs/nginx.key \
+   ```bash
+   openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+   -keyout /moodle/certs/nginx.key \
    -out /moodle/certs/nginx.crt \
-  -subj "/C=US/ST=WA/L=Redmond/O=IT/CN=mydomain.com"
-  ```
+   -subj "/C=US/ST=WA/L=Redmond/O=IT/CN=mydomain.com"
+   ```
 
-- 証明書ファイルを所有者に対して読み取り専用にし、これらのファイルが `www-data:www-data` によって所有されるようにすることをお勧めします。
+   自己署名証明書はテストにのみ使用できます。
 
-  ```bash
-  chown www-data:www-data /moodle/certs/nginx.*
+1. 証明書ファイルは `www-data:www-data` で所有し、所有者には読み取り専用にすることをお勧めします。 それらの変更を行うには、次のコマンドを入力します。
+
+   ```bash
+   chown www-data:www-data /moodle/certs/nginx.*
    chmod 400 /moodle/certs/nginx.*
-  ```
+   ```
 
-- 証明書の場所を更新し、構成ファイルを開くには、次のようにします。
+1. 次の手順のようにして、証明書の場所を更新します。
 
-  ```bash
-  nano /etc/nginx/sites-enabled/*.conf
-  ```
+   1. 次のコマンドを入力して、構成ファイルを開きます。
 
-- 証明書のパスの場所を変更するには、`ssl_certificate` を見つけます。 下のようにして証明書のパスを更新します。
+      ```bash
+      nano /etc/nginx/sites-enabled/*.conf
+      ```
 
-```bash
-   /moodle/certs/moodle/certs/nginx.crt;
-   /moodle/certs/nginx.key;
-```
+   1. ファイルで `ssl_certificate` を見つけます。
 
-- `CTRL+O` を押してファイルを保存し、`CTRL+X` で終了します。
+   1. 証明書のパスを次の値に置き換えます。
+
+      ```bash
+      /moodle/certs/moodle/certs/nginx.crt;
+      /moodle/certs/nginx.key;
+      ```
+
+    1. Ctrl + O キーを押して変更を保存し、Ctrl + X キーを押してファイルを閉じます。
 
 ### <a name="update-the-local-html-copy"></a>ローカル HTML コピーを更新する
 
-Moodle html サイト (`/moodle/html/moodle`) のコンテンツのローカル コピーが、`/var/www/html/moodle` の仮想マシン スケール セット内に作成されます。 このローカル コピーは、タイムスタンプに更新がある場合にのみ更新されます。 コントローラー仮想マシンから次のコマンドを実行して、タイムスタンプを更新します。
+Moodle HTML サイト `/moodle/html/moodle` の内容のローカル コピーが、仮想マシン スケール セットのフォルダー `/var/www/html/moodle` に作成されます。 ローカル コピーは、タイムスタンプが変更された場合にのみ更新されます。 タイムスタンプを更新するには、コントローラー仮想マシンで次のコマンドを入力します。
 
-  ```bash
-  sudo -s
-  /usr/local/bin/update_last_modified_time.moodle_on_azure.sh
-  ```
+```bash
+sudo -s
+/usr/local/bin/update_last_modified_time.moodle_on_azure.sh
+```
 
-- 最後に変更されたタイムスタンプ ファイル (`/moodle/html/moodle/last_modified_time.moodle_on_azure`) のスクリプトが実行されるたびに、`/moodle/html/moodle` ディレクトリの内容がローカル コピー (`/var/www/html`) 内で更新されます。
+最後に変更されたタイムスタンプ ファイル `/moodle/html/moodle/last_modified_time.moodle_on_azure` に、スクリプトが含まれています。 スクリプトを実行するたびに、`/moodle/html/moodle` ディレクトリの内容がローカル コピー `/var/www/html` で更新されます。
 
 ### <a name="restart-servers"></a>サーバーを再起動する
 
-- `nginx` と `php-fpm` のサーバーを再起動します。
+次のコマンドを入力して、`nginx` および `php-fpm` サーバーを再起動します。
 
-  ```bash
-  sudo systemctl restart nginx
-  sudo systemctl restart php<phpVersion>-fpm
-  ```
+```bash
+sudo systemctl restart nginx
+sudo systemctl restart php<php version>-fpm
+```
 
-### <a name="map-the-dns-name-to-the-azure-load-balancer-ip"></a>DNS 名を Azure Load Balancer IP にマップする
+### <a name="map-the-dns-name-to-the-azure-load-balancer-ip-address"></a>Azure Load Balancer の IP アドレスに DNS 名をマップする
 
-- Azure Load Balancer IP への DNS 名のマッピングは、ホスティング プロバイダー レベルで行う必要があります。
+ホスティング プロバイダー レベルで次の手順のようにして、DNS 名を Azure Load Balancer の IP にマップします。
 
-- Moodle Web サイトで **メンテナンス モード** を無効にします。
+1. コントローラー仮想マシンで次のコマンドを入力し、Moodle Web サイトでメンテナンス モードをオフにします。
 
-- コントローラー仮想マシンで、次のコマンドを実行します。
 
-  ```bash
-  sudo /usr/bin/php admin/cli/maintenance.php --disable
-  ```
+   ```bash
+   sudo /usr/bin/php admin/cli/maintenance.php --disable
+   ```
 
-- Moodle サイトの状態を確認するには、次のコマンドを実行します。
+1. 次のコマンドを入力して、Moodle サイトの状態を確認します。
 
-  ```bash
-  sudo /usr/bin/php admin/cli/maintenance.php
-  ```
+   ```bash
+   sudo /usr/bin/php admin/cli/maintenance.php
+   ```
 
-- DNS 名を入力すると、移行された Moodle Web ページが表示されます。
+1. DNS 名に移動すると、移行された Moodle Web ページが表示されます。
 
 ## <a name="frequently-asked-questions-and-troubleshooting"></a>よく寄せられる質問とトラブルシューティング
 
-1. エラー:データベース接続が失敗しました:"_データベース接続が失敗しました_" または "_指定したデータベースに接続できませんでした_" などのエラーについては、次のようないくつかの原因と解決策が考えられます。
+Moodle の移行について不明な点がある場合は、以下の情報を参照してください。 問題のトラブルシューティングには、これらのログ ファイルも役に立ちます。
 
-    - データベース サーバーがインストールされていないか、実行されていません。 このことを MySQL で確認するには、次のコマンドを入力してみてください。
+- Syslog ファイル:
 
-      ```bash
-      $telnet database_host_name 3306
-      ```
+  - ユーザーが Web ページに移動するたびに、システムによってエラー ログまたはアクセス ログが生成されます。
+  - それらは次のフォルダーにあります: `/var/log/nginx/`。
 
-    - MySQL サーバーのバージョン番号を含む、暗号のような応答が返されます。
+- Cron ログ ファイル:
+  - Cron ジョブを実行すると、ログ ファイルのローカル コピーが更新されます。
+  - そのファイルは次のフォルダーにあります: `/var/log/sitelogs/moodle/cron.log`。
 
-    - 異なるポートで Moodle の 2 つのインスタンスを実行しようとしている場合は、 `$CFG->dbhost` 設定で (localhost ではなく) ホストの IP アドレスを使用します。たとえば、`$CFG->dbhost = 127.0.0.1:3308` のようにします。
+### <a name="database-connection-failure"></a>データベース接続エラー
 
-    - Moodle データベースが作成されていないか、これにアクセスするための適切な特権を持つユーザーが割り当てられていません。
+"*データベース接続が失敗しました*" または "*指定したデータベースに接続できませんでした*" などのエラーについては、次のようないくつかの原因と解決策が考えられます。
 
-    - Moodle データベースの設定が正しくありません。 Moodle 構成ファイル `config.php` 内のデータベース名、データベース ユーザー、またはデータベース ユーザー パスワードが正しくありません。
+- データベース サーバーがインストールされていないか、実行されていません。 MySQL でこの状況を確認するには、次のコマンドを入力します。
 
-    - MySQL のユーザー名またはパスワードにアポストロフィや英字以外の文字がないことを確認します。
+  ```bash
+  $telnet database_host_name 3306
+  ```
 
-2. エラー:"_500 - 内部サーバー エラー_" :このエラーには、次のような複数の原因が考えられます。 まず、Web サーバーのエラー ログを確認します。より詳しい説明があるはずです。 次に既知の可能性をいくつか示します。
+  データベースが実行されている場合は、MySQL サーバーのバージョン番号を含む応答が返されます。
 
-    - `.htaccess` または `httpd.conf` ファイルに構文エラーがあります。 ディレクティブの書き込み方法は、使用しているファイルによって異なります。 次のコマンドを使用して、nginx ファイルの構成エラーをテストできます。
+- ホスト アドレスが正しく構成されていません。 異なるポートで Moodle の 2 つのインスタンスを実行している場合は、`localhost` ではなくホストの IP アドレスを、`$CFG->dbhost` の設定で使用します。 たとえば、次のようなサービスを使います。
 
-      `nginx -t`
+  `$CFG->dbhost = 127.0.0.1:3308`
 
-    - Web サーバーはユーザー自身のユーザー名で実行され、すべてのファイルのアクセス許可レベルは最大の 755 です。 Moodle ディレクトリにこれが設定されていることをコントロール パネルで確認するか、シェルにアクセスできる場合はこちらのコマンドを使用します。
+- Moodle データベースが作成されていません。 または、データベースにアクセスするための適切なアクセス許可が割り当てられていません。 データベースと、付与したアクセス許可を確認します。
 
-      ```bash
-      chmod -R 755 moodle
-      ```
+- Moodle データベースの設定が正しくありません。 たとえば、Moodle 構成ファイル `config.php` のデータベース名、ユーザー名、またはパスワードが正しくありません。 MySQL のユーザー名とパスワードに、アポストロフィまたは英数字以外の文字が含まれていないことを確認します。
 
-3. エラー:_403:Forbidden_。
+### <a name="internal-server-error"></a>内部サーバー エラー
 
-    このエラーは、PHP の memory_limit 値が PHP スクリプトに対して十分ではないことを意味します。 memory_limit 値は許可されているメモリ サイズで、上記の例では `64M` です (67108864 バイト/1024 = 65536 KB。 65536 KB / 1024 = 64 MB)。 このメッセージが表示されなくなるまで、PHP memory_limit の値を増やす必要があります。 これを行うには、次の 2 つの方法があります。
+次のエラーには、複数の原因が考えられます: "*500: 内部サーバー エラー*"。 まず、Web サーバーのエラー ログを確認します。詳細な説明が含まれているはずです。 次のような可能性があります。
 
-    方法 1:ホストされているインストールの場合は、これを行う方法をホストのサポートに問い合わせてください。 多くの場合、`.htaccess` ファイルが許可されます。 これに該当する場合は、次の行を `.htaccess` ファイルに追加するか、まだ存在しない場合は Moodle ディレクトリにこれを作成します。
+- `.htaccess` または `httpd.conf` ファイルに構文エラーがあります。 ディレクティブの正しい構文は、使用しているファイルによって異なります。 次のコマンドを使用して、nginx ファイルの構成エラーをテストします。
 
-      ```bash
-      php_value memory_limit <value>M
-      Example: php_value memory_limit 40M
-      ```
+  ```bash
+  `nginx -t`
+  ```
 
-    方法 2:シェルにアクセスできる独自のサーバーがある場合は、`php.ini` ファイルを編集します。 `phpinfo` の出力をチェックして、正しいものであることを確認します。
+- Web サーバーがユーザー自身のユーザー名で実行されていて、アクセス許可が正しくありません。 この場合、すべてのファイルに最大のアクセス許可レベル 755 が必要です。 コントロール パネルで、Moodle ディレクトリにこのレベルが設定されていることを確認します。 または、シェルにアクセスできる場合は、次のコマンドを使用してレベルを設定します。
 
-      ```bash
-      memory_limit <value>M
-      Example: memory_limit 40M
-      ```
+  ```bash
+  chmod -R 755 moodle
+  ```
 
-    `php.ini` への変更を有効にするには、Web サーバーを再起動する必要があることに注意してください。 別の方法として、コマンド 'memory_limit 0' を使用して `memory_limit` を無効にすることもできます。
+### <a name="memory-limit-error"></a>メモリ制限エラー
 
-4. ログインできない。ログイン画面から進まない。
+"*403: 許可されていません*" エラーが発生するときは、PHP の `memory_limit` の値が PHP スクリプトに十分な大きさではありません。 `memory_limit` の値は、許可されているメモリ サイズです。 メッセージが表示されなくなるまで、PHP の `memory_limit` の値を少しずつ増やします。 次のいずれかの方法を使います。
 
-    これは、次が表示される場合にも該当します。"_Your session has timed out. \(セッションがタイムアウトしました。\)Please log in again. \(ログインし直してください。\)_ " または "_A server error that affects your login session was detected. \(ログイン セッションに影響を与えるサーバー エラーが検出されました。\)Please log in again or restart your browser. \(もう一度ログインするか、ブラウザーを再起動してください。\)_ " 次に、考えられる原因と、これを解決するために実行できる対処法を示します。
+- ホストされたインストールの場合は、値を増やす方法をホストのサポートに問い合わせます。 多くの環境では、`.htaccess` ファイルが使用されます。 お使いのインストールがそうである場合は、`.htaccess` ファイルに次の行を追加します。
 
-    - まず、メインの管理者アカウント (もう 1 つの手動アカウント) にも問題があるか確認します。 ユーザーが外部の認証方法 (LDAP など) を使用している場合は、これが問題になる可能性があります。 原因を特定し、それが Moodle によるものであることを確認してから、先に進んでください。
+  ```bash
+  php_value memory_limit <value>M
+  ```
 
-    - ハード ディスクがいっぱいになっていないこと、サーバーが共有ホスティングを使用していること、およびディスク領域のクォータに達していないことを確認してください。 これに該当する場合、新しいセッションが作成されなくなり、誰もログインできなくなります。
+  たとえば、値を 40 メガバイトに増やすには、次のように入力します。
 
-    - `moodledata` 領域のアクセス許可を慎重に確認してください。 Web サーバーは、`sessions` サブディレクトリに書き込むことができる必要があります。
+  `php_value memory_limit 40M`
 
-5. 致命的なエラー: " _$CFG->dataroot is not writable. \($CFG-> データルートは書き込み可能ではありません。\)The admin has to fix directory permissions! \(管理者はディレクトリのアクセス許可を修正する必要があります。\)Exiting. \(終了します。\)_ "
+  `.htaccess` ファイルが存在しない場合は、その行を含むものを Moodle ディレクトリに作成します。
 
-    - Moodle と moodledata のアクセス許可が www-data:www-data のみであることを確認します。 それ以外の場合は、グループと所有権のアクセス許可を変更します。 次のコマンドで、アクセス許可が更新されます。
+- シェルにアクセスできる独自のサーバーがある場合は、`php.ini` ファイルを編集します。 その後、Web サーバーを再起動し、`php.ini` で行った変更を適用します。 値が正しく更新されたことを確認するには、次のコマンドを入力します。
 
-      ```bash
-      sudo chown -R /moodle/moodledata
-      ```
+  ```bash
+  `phpinfo`
+  ```
 
-6. Couldn't find a top-level course. \(トップレベル コースが見つからない。\)
+  `phpinfo` からの出力に、次のような行が含まれている必要があります。
 
-    - Moodle をインストールしようとした直後にこれが表示される場合は、インストールが完了していない可能性があります。 インストールが完了する場合、終了する直前に、管理者プロファイルと、サイトを指定することが求められます。 ログでエラーを確認してから、データベースを削除して再度開始します。 Web ベースのインストーラーを使用していた場合は、コマンド ラインのものを使用してください。
+  ```bash
+  memory_limit <value>M
+  ```
 
-7. ログイン リンクがログイン時に変更されない。 ログインしていますが、自由に移動できません。 `$CFG->wwwroot` 設定の URL が、サイトへのアクセスに実際に使用しているものとまったく同じであることを確認します。
+  たとえば、次のような行が含まれる場合があります。
 
-8. ファイルのアップロード中のエラー:
+  `memory_limit 40M`
 
-    - ファイルのアップロード時に "_File not found \(ファイルが見つかりません\)_ ” というエラーが表示される場合は、スラッシュ引数が Web サーバーで有効になっていないことを示します。 これを有効にしてみてください。
+`memory_limit` の値を増やす以外の方法としては、次のコマンドを入力してメモリ制限を無効にします。
 
-    - Web サーバーがスラッシュ引数をサポートしていない場合は、[Administration]\(管理\) > [Site administration]\(サイト管理\) > [Server]\(サーバー\) > [HTTP] の **[Use slash arguments]\(スラッシュ引数を使用する\)** チェックボックスをオフにすると、Moodle でこれを無効にできます。
+  ```bash
+memory_limit 0
+```
 
-      > [!WARNING]
-      > スラッシュ引数を無効にすると、SCORM パッケージが動作しなくなり、スラッシュ引数の警告が表示されます。
+### <a name="sign-in-errors"></a>サインイン エラー
 
-9. サイトが **メンテナンス モード** でスタックしている。 場合によっては、無効にしようとしたときに Moodle が **メンテナンス モード** でスタックし、"_This site is undergoing maintenance and is currently unavailable \(このサイトはメンテナンス中のため現在使用できません\)_ " というメッセージが表示されることがあります。 Moodle を **メンテナンス モード** にすると、サイト ファイルのディレクトリである `moodledata/maintenance.html` に `maintenance.html` ファイルが作成されます。 これを解決するには、次を実行します。
+サインインできない場合、または次のいずれかのメッセージが表示される場合があります。
 
-    - Web サーバー ユーザーが moodledata ディレクトリに対する書き込みアクセス許可を持っていることを確認します。
-    - `maintenance.html` ファイルを手動で削除します。
+- "*セッションがタイムアウトしました。Please log in again. \(ログインし直してください。\)* "
 
-10. ログの場所:
+- "*A server error that affects your login session was detected. (ログイン セッションに影響を与えるサーバー エラーが検出されました。) Please log in again or restart your browser. \(もう一度ログインするか、ブラウザーを再起動してください。\)* "
 
-    - Syslog:
-      - 他のユーザーがページにアクセスしている間に、エラーまたはアクセスのログが生成されます。
-      - これらは場所 `/var/log/nginx/` でキャプチャされます。
+認証方法に問題がある可能性があります (特に、LDAP などの外部の方法を使用してユーザーを認証している場合)。 メインの管理者アカウントなど、別の手動アカウントにサインインしてみてください。 サインインできない場合は、認証を確認します。 他のアカウントにはサインインできる場合は、Moodle サインインの問題の考えられる原因と解決策を次に示します。
 
-    - Cron ログ:
-      - Cron ジョブが実行され、インスタンス内のローカル コピーが更新されます。
-      - パスは `/var/log/sitelogs/moodle/cron.log` です。
+- ハード ディスクに空きがない可能性があります。 この場合、Moodle で新しいセッションを作成できず、ユーザーはサインインできません。 ハード ディスクがいっぱいになっていないこと、サーバーが共有ホスティングを使用していること、およびディスク領域のクォータに達していないことを確認してください。
+
+- Web サーバーが `sessions` サブディレクトリに書き込むことができません。 `moodledata` 領域のアクセス許可を慎重に確認してください。
+
+### <a name="fatal-errors"></a>致命的なエラー
+
+次のエラーが表示される場合は、Moodle と moodledata のアクセス許可が正しくない可能性があります。"*Fatal error: $CFG->dataroot is not writable. (致命的なエラー: $CFG-> データルートは書き込み可能ではありません。) The admin has to fix directory permissions! \(管理者はディレクトリのアクセス許可を修正する必要があります。\)Exiting. \(終了します。\)* "
+
+これらのアクセス許可が `www-data:www-data` のみであることを確認します。 アクセス許可のレベルが異なる場合は、次のコマンドを使用して、グループと所有権のアクセス許可を変更します。
+
+```bash
+sudo chown -R /moodle/moodledata
+```
+
+### <a name="top-level-course-errors"></a>トップレベル コースのエラー
+
+Moodle をインストールした直後にトップレベルのコースが見つからない場合は、インストールが完了しなかった可能性があります。 インストールが完了する直前に、Moodle によって管理者プロファイルが要求され、サイトの名前の指定を求められます。 これらの手順がなかった場合は、ログでエラーを確認します。 その後、データベースを再起動します。 Web ベースのインストーラーを使用した場合は、コマンド ラインを使用して Moodle をもう一度インストールします。
+
+### <a name="navigation-errors"></a>ナビゲーション エラー
+
+サインインした後で Moodle 内を自由に移動できない場合は、URL の構成が正しくない可能性があります。 `$CFG->wwwroot` の設定の URL が、サイトへのアクセスに使用したものと同じであることを確認します。
+
+### <a name="file-upload-errors"></a>ファイルのアップロード エラー
+
+ファイルをアップロードするときに "*ファイルが見つからない*" というエラーが発生する場合は、Web サーバーでスラッシュ引数が有効になっていない可能性があります。
+
+- お使いの Web サーバーでスラッシュ引数がサポートされている場合は、それをオンにします。
+
+- Web サーバーでスラッシュ引数がサポートされていない場合は、 **[Administration]\(管理\)**  >  **[Site administration]\(サイト管理\)**  >  **[Server]\(サーバー\)**  >  **[HTTP]** で **[Use slash arguments]\(スラッシュ引数を使用する\)** チェック ボックスをオフにして、Moodle でそれを無効にします。 このメッセージが表示される場合があります。
+
+  > [!WARNING]
+  > スラッシュ引数を無効にすると、SCORM パッケージが動作しなくなり、スラッシュ引数の警告が表示されます。
+
+### <a name="maintenance-mode-errors"></a>メンテナンス モード エラー
+
+Moodle がメンテナンス モードになっていて、そのモードを終了しようとすると、次のメッセージが表示されることがあります。*This site is undergoing maintenance and is currently unavailable* (このサイトはメンテナンス中のため現在使用できません)。 この状況は、Moodle がメンテナンス モードになるときに `moodledata` フォルダーに作成される `maintenance.html` ファイルに問題がある場合に発生します。 この場合は、次の手順のようにします。
+
+- Web サーバー ユーザーが `moodledata` ディレクトリへの書き込みアクセス許可を持っていることを確認します。
+- `maintenance.html` ファイルを手動で削除します。
+
+## <a name="next-steps"></a>次のステップ
+
+- [Azure Database for MySQL のドキュメント](https://docs.microsoft.com/azure/mysql/)
+- [仮想マシン スケール セットとは](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview)
+- [ストレージ アカウントの概要](https://docs.microsoft.com/azure/storage/common/storage-account-overview)

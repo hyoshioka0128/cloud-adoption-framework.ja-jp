@@ -1,258 +1,296 @@
 ---
 title: Moodle 移行のための準備を行う方法
-description: Moodle 移行のための準備を行う方法について説明します。
+description: Moodle 移行のための準備を行う方法について説明します。 Moodle ファイルをバックアップし、移行に必要なリソースを作成する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/06/2020
+ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 71990470e04f68f78b0bfffc2b1d837c7f0f29ad
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: b0f2c719e73248d9b6ae2936cb5162a38aa2b8e8
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94714946"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327884"
 ---
 # <a name="how-to-prepare-for-a-moodle-migration"></a>Moodle 移行のための準備を行う方法
 
-## <a name="pre-migration-tasks"></a>移行前のタスク
-
-オンプレミスから Azure にデータをエクスポートするには、次のタスクを実行する必要があります。
-
-- Azure CLI をインストールします。
-- サブスクリプションの作成。
-- リソース グループを作成します。
-- ストレージ アカウントを作成します。
-- オンプレミスのデータをバックアップします。
-- AzCopy をダウンロードしてインストールします。
-- アーカイブされたファイルを Azure Blob にコピーします。
+Moodle アプリケーションをオンプレミス環境から Azure に移行する前に、データをエクスポートする必要があります。 このガイドでは、エクスポート プロセスの手順について説明します。
 
 ## <a name="install-the-azure-cli"></a>Azure CLI のインストール
 
-- Azure 関連のすべてのタスクのために、オンプレミスのインフラストラクチャ内のホストに Azure CLI をインストールします。
+次の手順のようにして、オンプレミス環境で Azure CLI を設定します。
 
-  ```bash
+1. Azure タスクに使用できるホストで、次のコマンドを入力して Azure CLI をインストールします。
+
+   ```bash
    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-  ```
+   ```
 
-- Azure アカウントにログインします。
+1. Azure CLI で、次のコマンドを入力して Azure アカウントにサインインします。
 
-  ```bash
-  az login
-  ```
+   ```bash
+   az login -u <username> -p <password>
+   ```
 
-- az login コマンド:Azure CLI によって、既定の Web ブラウザー内でインスタンスまたはタブが起動され、Microsoft アカウントを使用して Azure にログインするように求められる可能性があります。 ブラウザーが起動されない場合は、[https://aka.ms/devicelogin](https://aka.ms/devicelogin) で新しいページを開き、お使いの端末に表示されている認証コードを入力します。
-
-- コマンド ラインを使用するには、次のコマンドを入力します。
-
-  ```bash
-  az login -u <username> -p <password>
-  ```
+1. Azure CLI によってブラウザーのウィンドウまたはタブが開かれる場合は、Microsoft アカウントを使用して Azure にサインインします。 ブラウザーのウィンドウが開かれない場合は、[https://aka.ms/devicelogin](https://aka.ms/devicelogin) にアクセスし、ターミナルに表示されている認証コードを入力します。
 
 ## <a name="create-a-subscription"></a>サブスクリプションの作成
 
-サブスクリプションを持っている場合は、この手順をスキップします。 サブスクリプションを持っていない場合は、[Azure portal 内で作成する](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)か、[従量課金制](https://azure.microsoft.com/offers/ms-azr-0003p/) サブスクリプションを選択することができます。
+既に Azure サブスクリプションがある場合は、このステップをスキップできます。
 
-- Azure portal を使用してサブスクリプションを作成するには、 **[ホーム]** セクションの **[サブスクリプション]** に移動します。
+Azure サブスクリプションがない場合は、[無料で作成する](https://azure.microsoft.com/free/)ことができます。 また、[従量課金制サブスクリプション](https://azure.microsoft.com/offers/ms-azr-0003p/)を設定するか、Azure でサブスクリプションを作成することもできます。
 
-  ![Azure サブスクリプション。](./images/subscriptions.png)
+- Azure portal を使用してサブスクリプションを作成するには、[[サブスクリプション]](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) を開き、 **[追加]** を選択して、必要な情報を入力します。
 
-- このコマンドにより、サブスクリプションが設定されます。
+  ![Azure portal の [サブスクリプション] ページのスクリーンショット。](./images/azure-subscriptions-page.png)
 
-  ```bash
-  az account set --subscription "Subscription Name"
+- Azure CLI を使用してサブスクリプションを作成するには、次のコマンドを入力します。
 
-  Example: az account set --subscription "ComputePM LibrarySub"
+  ```azurecli
+  az account set --subscription '<subscription name>'
   ```
+
+  たとえば、次のように入力します。
+
+  `az account set --subscription 'ComputePM LibrarySub'`
 
 ## <a name="create-a-resource-group"></a>リソース グループを作成する
 
-サブスクリプションがセットアップされたら、リソース グループを作成する必要があります。 1 つの選択肢として、Azure portal を使用して作成する方法があります。 **[ホーム]** セクションに移動し、 **[リソース グループ]** を検索して選択し、必須フィールドに入力して、 **[作成]** を選択します。
+サブスクリプションがセットアップされたら、Azure でリソース グループを作成します。 Azure portal または CLI を使用して、グループを作成できます。
 
-![リソース グループ:リソース グループを作成します。](./images/resource-group.png)
+- Azure portal を使用する場合は、次の手順のようにします。
 
-また、Azure CLI を使用して、リソース グループを作成することもできます。
+  1. [[リソース グループ]](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) を開き、 **[追加]** を選択します。
+  
+  1. サブスクリプション名、リソース グループ名、リージョンを入力します。 利用可能なリージョンの一覧については、「[Azure でのデータ所在地](https://azure.microsoft.com/global-infrastructure/data-residency/)」を参照してください。 後の手順で使用できるように、入力したリソース グループの名前を記録しておきます。
+  
+  1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
-- 前の手順と同じ既定の場所を指定します。
+  ![Azure portal の [リソース グループの作成] ページのスクリーンショット。サブスクリプション、リソース グループ、リージョンの各ボックスと、[確認および作成] ボタンがある。](./images/resource-group.png)
 
-  ```bash
-  az group create -l location -n name -s Subscription_NAME_OR_ID
+- Azure CLI を使用してリソース グループを作成するには、次のコマンドを入力します。
+
+  ```azurecli
+  az group create -l <region> -n <resource group name> -s '<subscription name>'
   ```
 
-- サンプル テスト アカウントを使用して、スクリーンショットとサブスクリプション名を更新します。
+  たとえば、次のように入力します。
 
-  例: `az group create -l eastus -n manual_migration -s ComputePM LibrarySub`
+  `az group create -l eastus -n manual_migration -s 'ComputePM LibrarySub'`
 
-- 前の手順では、リソース グループが "manual_migration" として作成されました。 追加の手順でも、同じリソース グループを使用します。
+  `-l` パラメーターの値では、既定の場所を指定します。 前の手順で使用したものと同じ場所を使用します。 作成したリソース グループの名前を記録しておき、後の手順でその名前を使用します。
 
-詳細については、[Azure での場所](https://azure.microsoft.com/global-infrastructure/data-residency/)に関するページを参照してください。
+## <a name="create-a-storage-account"></a>ストレージ アカウントを作成する
 
-## <a name="create-a-storage-account"></a>ストレージ アカウントの作成
+次に、作成したリソース グループ内にストレージ アカウントを作成します。 このストレージ アカウントを使用して、オンプレミスの Moodle データをバックアップします。
 
-次の手順では、作成したリソース グループ内に[ストレージ アカウントを作成します](https://ms.portal.azure.com/#create/Microsoft.StorageAccount)。 ストレージ アカウントは、Azure portal または Azure CLI を使用して作成できます。
+Azure portal または Azure CLI を使用して、ストレージ アカウントを作成できます。
 
-- portal で作成するには、そちらに移動し、ストレージ アカウントを検索して、 **[追加]** ボタンを選択します。 必須フィールドに入力したら、 **[作成]** を選択します。
+- Azure portal を使用する場合は、次の手順のようにします。
 
-  ![ストレージ アカウントの作成。](./images/create-storage-account.png)
+  1. [[ストレージ アカウントの作成]](https://ms.portal.azure.com/#create/Microsoft.StorageAccount) を開きます。
 
-- 別の方法として、Azure CLI を使用することもできます。
+  1. 次の情報を入力します。
 
-  ```bash
-  az storage account create -n storageAccountName -g resourceGroupName --sku Standard_LRS --kind BlobStorage -l location
+     - お使いのサブスクリプション名
+     - 先ほど作成したリソース グループの名前
+     - ストレージ アカウント名
+     - 自分のリージョン
+   
+  1. **[アカウントの種類]** には、 **[BlobStorage]** を入力します。
+  
+  1. **[レプリケーション]** には、 **[読み取りアクセス地理冗長ストレージ (RA-GRS)]** を入力します。
+
+  1. **[Review + create]\(レビュー + 作成\)** を選択します。
+
+  ![複数の入力ボックスと [確認および作成] ボタンがある、Azure portal の [ストレージ アカウントの作成] ページのスクリーンショット。](./images/create-storage-account.png)
+
+- Azure CLI を使用してストレージ アカウントを作成するには、次のコマンドを入力します。
+
+  ```azurecli
+  az storage account create -n <storage account name> -g <resource group name> --sku <storage account SKU> --kind <storage account type> -l <region>
   ```
 
-  例: `az storage account create -n onpremisesstorage -g manual_migration --sku Standard_LRS --kind BlobStorage -l eastus`
+  たとえば、次のように入力します。
 
-- 前のコマンドの `--kind` は、ストレージ アカウントの種類を示しています。 `onpremisesstorage` アカウントが作成されると、それがオンプレミスのバックアップ先になります。
+  `az storage account create -n onpremisesstorage -g manual_migration --sku Standard_LRS --kind BlobStorage -l eastus`
+
+  `--kind` パラメーターでは、ストレージ アカウントの種類を指定します。
 
 ## <a name="back-up-on-premises-data"></a>オンプレミスのデータをバックアップする
 
-- オンプレミスのデータをバックアップする前に、Moodle サイトの **メンテナンス モード** を有効にします。 オンプレミスの仮想マシンから次のコマンドを実行します。
+オンプレミスの Moodle データをバックアップする前に、次の手順のようにして、Moodle の Web サイトで **メンテナンス モード** を有効にします。
 
-  ```bash
-  sudo /usr/bin/php admin/cli/maintenance.php --enable
-  ```
+1. オンプレミスの仮想マシンで、次のコマンドを入力します。
 
-- Moodle サイトの状態を確認するには、次のコマンドを実行します。
+   ```bash
+   sudo /usr/bin/php admin/cli/maintenance.php --enable
+   ```
 
-  ```bash
-  sudo /usr/bin/php admin/cli/maintenance.php
-  ```
+2. Moodle Web サイトの状態を確認するには、次のコマンドを入力します。
 
-- オンプレミスの Moodle と moodledata のファイル、構成、およびデータベースをバックアップする場合は、1 つのディレクトリにバックアップします。 次の図に、この概要を示します。
+   ```bash
+   sudo /usr/bin/php admin/cli/maintenance.php
+   ```
 
-  ![Moodle バックアップ ディレクトリ構造。](./images/directory-structure.png)
+オンプレミスの Moodle と moodledata のファイル、構成、およびデータベースをバックアップする場合は、1 つのディレクトリにバックアップします。 次の図は、この概念をまとめたものです。
 
-- すべてのデータをコピーするには、目的の場所に空のストレージ ディレクトリを作成します。
+![Moodle のバックアップ ストレージ ディレクトリの構造を示す図。](./images/directory-structure.png)
+
+### <a name="create-a-storage-directory"></a>ストレージ ディレクトリを作成する
+
+データをコピーする前に、コピー先の場所に空のストレージ ディレクトリを作成します。 たとえば、場所が `/home/azureadmin` である場合は、次のコマンドを入力します。
 
   ```bash
   sudo -s
-  ```
-
-  たとえば、場所は `/home/azureadmin` です。
-
-  ```bash
   cd /home/azureadmin
   mkdir storage
   ```
 
-### <a name="back-up-moodle-and-moodledata"></a>Moodle と moodledata をバックアップする
+### <a name="back-up-moodle-directories"></a>Moodle のディレクトリをバックアップする
 
-- Moodle ディレクトリは、サイトの HTML コンテンツで構成されています。 Moodledata にはMoodle サイト データが含まれています。
+オンプレミス環境の `moodle` ディレクトリには、Web サイトの HTML コンテンツが含まれています。 `moodledata` ディレクトリには、Moodle Web サイトのデータが含まれています。
 
-- Moodle と moodledata をコピーするコマンドは次のとおりです。
+次のコマンドを入力して、`moodle` および `moodledata` ディレクトリからストレージ ディレクトリにファイルをコピーします。
 
   ```bash
   cp -R /var/www/html/moodle /home/azureadmin/storage/
   cp -R /var/moodledata /home/azureadmin/storage/
   ```
 
-### <a name="backup-php-and-web-server-configurations"></a>PHP と Web サーバーの構成をバックアップする
+### <a name="back-up-php-and-web-server-configurations"></a>PHP と Web サーバーの構成をバックアップする
 
-- `php-fpm.conf`、`php.ini`、`pool.d`、`conf.d` ディレクトリなどの PHP 構成ファイルを `configuration` ディレクトリの下の `phpconfig` ディレクトリにコピーします。
+構成ファイルをバックアップするには、次の手順のようにします。
 
-- `nginx.conf` や `sites-enabled/dns.conf` などの ngnix 構成を `configuration` ディレクトリの下の `nginxconfig` ディレクトリにコピーします。
+1. 次のコマンドを入力して、ストレージ ディレクトリに新しいディレクトリを作成します。
 
-  ```bash
-  cd /home/azureadmin/storage mkdir configuration
-  ```
+   ```bash
+   cd /home/azureadmin/storage
+   mkdir configuration
+   ```
 
-- nginx と PHP の構成をコピーするコマンドは次のとおりです。
+2. 次のコマンドを入力して、PHP と nginx の構成ファイルをコピーします。
 
-  ```bash
-  cp -R /etc/nginx /home/azureadmin/storage/configuration/nginx
-  cp -R /etc/php /home/azureadmin/storage/configuration/php
-  ```
+   ```bash
+   cp -R /etc/php /home/azureadmin/storage/configuration/
+   cp -R /etc/nginx /home/azureadmin/storage/configuration/
+   ```
 
-### <a name="create-a-backup-of-the-database"></a>データベースのバックアップを作成する
+   `php` ディレクトリには、`php-fpm.conf`、`php.ini`、`pool.d`、`conf.d` などの PHP の構成ファイルが格納されています。 `nginx` ディレクトリには、`nginx.conf` や `sites-enabled/dns.conf` などの ngnix の構成ファイルが格納されています。
 
-- mysql-client が既にインストールされている場合は、これをインストールする手順をスキップします。 mysql-client がインストールされていない場合は、ここでインストールします。
+### <a name="back-up-the-database"></a>データベースをバックアップする
 
-  ```bash
-  sudo -s
-  ```
+データベースをバックアップするには、次の手順のようにします。
 
-- mysql-client がインストールされているかどうかを確認するには、次のコマンドを実行します。
+1. 次のコマンドを入力して、mysql-client がインストールされているかどうかを確認します。
 
-  ```bash
-  mysql -V
-  ```
+   ```bash
+   sudo -s
+   mysql -V
+   ```
 
-- mysql-client がインストールされていない場合は、次のコマンドを実行します。
+2. mysql-client がインストールされている場合は、このステップをスキップします。 それ以外の場合は、次のコマンドを入力して mysql-client をインストールします。
 
-  ```bash
-  sudo apt-get install mysql-client
-  ```
+   ```bash
+   sudo apt-get install mysql-client
+   ```
 
-- このコマンドでは、データベースをバックアップできます。
+3. 次のコマンドを入力して、データベースをバックアップします。
 
-  ```bash
-  mysqldump -h dbServerName -u dbUserId -pdbPassword dbName > /home/azureadmin/storage/database.sql
-  ```
+   ```bash
+   mysqldump -h <database server name> -u <database user ID> -p<database password> <database name> > /home/azureadmin/storage/database.sql
+   ```
 
-- dbServerName、dbUserId、dbPassword、dbName をオンプレミス データベースの詳細に置き換えます。
+   `<database server name>`、`<database user ID>`、`<database password>`、`<database name>` については、オンプレミスのデータベースで使用されている値を使用します。
 
-- バックアップ ディレクトリのアーカイブ `storage.tar.gz` ファイルを作成します。
+### <a name="create-an-archive"></a>アーカイブを作成する
 
-  ```bash
-  cd /home/azureadmin/ tar -zcvf storage.tar.gz storage
-  ```
+次のコマンドを入力して、バックアップ ディレクトリにアーカイブ ファイル `storage.tar.gz` を作成します。
+
+```bash
+cd /home/azureadmin/ tar -zcvf storage.tar.gz storage
+```
 
 ## <a name="download-and-install-azcopy"></a>AzCopy のダウンロードとインストール
 
-次のコマンドを実行して AzCopy をインストールします。
+次のコマンドを入力して、AzCopy をインストールします。
+
+```bash
+sudo -s
+wget https://aka.ms/downloadazcopy-v10-linux
+tar -xvf downloadazcopy-v10-linux
+sudo rm /usr/bin/azcopy
+sudo cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
+```
+
+## <a name="copy-archived-files-to-azure-blob-storage"></a>アーカイブされたファイルを Azure Blob Storage にコピーする
+
+以下の手順に従い、AzCopy を使用して、アーカイブされたオンプレミスのファイルを Azure Blob Storage にコピーします。
+
+### <a name="generate-a-security-token"></a>セキュリティ トークンを生成する
+
+AzCopy 用の Shared Access Signature (SAS) トークンを生成するには、次の手順のようにします。
+
+1. Azure portal で、前に作成したストレージ アカウントのページに移動します。
+
+1. 左側のパネルで、 **[Shared Access Signature]** を選択します。
+
+   ![左側のパネルで Shared Access Signature が強調表示されている、Azure portal でのストレージ アカウントのページのスクリーンショット。](./images/new-storage-account-page.png)
+
+1. **[使用できるリソースの種類]** で、 **[コンテナー]** を選択します。
+
+1. **[開始日時と有効期限の日時]** で、SAS トークンの開始と終了の日時を入力します。
+
+1. **[SAS と接続文字列を生成する]** を選択します。
+
+   ![ストレージ アカウントの Shared Access Signature のページが表示されている Azure portal のスクリーンショット。](./images/shared-access-signature-page.png)
+
+1. 後の手順で使用するため、SAS トークンのコピーを作成します。
+
+### <a name="create-a-container"></a>コンテナーを作成する
+
+ストレージ アカウントにコンテナーを作成します。 このステップでは、Azure CLI または Azure portal を使用できます。
+
+- Azure CLI を使用する場合は、次のコマンドを入力します。
 
   ```bash
-  sudo -s
-  wget https://aka.ms/downloadazcopy-v10-linux
-  tar -xvf downloadazcopy-v10-linux
-  sudo rm /usr/bin/azcopy
-  sudo cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
+  az storage container create --account-name <storage account name> --name <container name> --auth-mode login
   ```
 
-## <a name="copy-archived-files-to-azure-blob"></a>アーカイブされたファイルを Azure Blob にコピーする
+  たとえば、次のように入力します。
 
-AzCopy を使用して、アーカイブされたオンプレミス ファイルを Azure Blob にコピーします。
+  `az storage container create --account-name onpremisesstorage --name migration --auth-mode login`
 
-- AzCopy を使用するには、最初に SAS トークンを生成します。 作成した **ストレージ アカウント リソース** に移動し、左側のパネルの **[Shared access signature]** に移動します。
+  `--auth-mode` パラメーターを使用して値 `login` を指定すると、Azure で認証にユーザーの資格情報が使用された後、コンテナーが作成されます。
 
-  ![ストレージ アカウントのサンプル。](./images/storage-account-created.png)
+- Azure portal を使用してコンテナーを作成する場合は、次の手順のようにします。
 
-- **[コンテナー]** とチェックボックスをオンにし、SAS トークンの開始日と有効期限を設定します。 **[SAS と接続文字列を生成する]** を選択します。
+  1. ポータルで、前に作成したストレージ アカウントのページに移動します。
 
-  ![アクセス トークンの生成。](images/SAS-token-generation.png)
+  1. **[コンテナー]** を選択して、 **[追加]** を選択します。
 
-- 将来使用するために SAS トークンをコピーして保存します。
+  1. コンテナーの名前を入力して、 **[作成]** を選択します。
 
-- ストレージ アカウントにコンテナーを作成するためのコマンド:
+     ![[名前] ボックスと [作成] ボタンがある、Azure portal の新規コンテナー作成ダイアログ ボックスのスクリーンショット。](./images/new-container.png)
 
-  ```bash
-  az storage container create --account-name <storageAccountName> --name <containerName> --auth-mode login
-  ```
+### <a name="copy-the-archive-file-to-azure-blob-storage"></a>アーカイブ ファイルを Azure Blob Storage にコピーする
 
-  例: `az storage container create --account-name onpremisesstorage --name migration --auth-mode login`
+次のコマンドを入力して、Blob Storage に作成したコンテナーにアーカイブ ファイルをコピーします。
 
-  `--auth-mode login` は、ログイン時の認証モードを意味します。 ログインすると、コンテナーが作成されます。
+```bash
+sudo azcopy copy /home/azureadmin/storage.tar.gz 'https://<storage account name>.blob.core.windows.net/<container name>/<SAS token>'
+```
 
-- Azure portal を使用してコンテナーを作成することもできます。 作成された同じストレージ アカウントを選択し、コンテナーを選択し、 **[追加]** ボタンを選択します。
+たとえば、次のように入力します。
 
-- 必須のコンテナー名を入力したら、 **[作成]** ボタンを選択します。
+`azcopy copy /home/azureadmin/storage.tar.gz 'https://onpremisesstorage.blob.core.windows.net/migration/?sv=2019-12-12&ss='`
 
-  ![新しいコンテナー。](images/new-container.png)
+これで、Blob Storage アカウントにアーカイブのコピーが含まれるようになります。
 
-- アーカイブ ファイルを Azure Blob アカウントにコピーするためのコマンド:
+![Blob Storage アカウントを示す Azure portal のページのスクリーンショット。 ストレージ ディレクトリの圧縮された tar ファイルが表示されます。](./images/archive-in-blob-storage.png)
 
-  ```bash
-  sudo azcopy copy /home/azureadmin/storage.tar.gz 'https://<storageAccountName>.blob.core.windows.net/<containerName>/<SAStoken>'
-  ```
+## <a name="next-steps"></a>次の手順
 
-  例: `azcopy copy /home/azureadmin/storage.tar.gz 'https://onpremisesstorage.blob.core.windows.net/migration/?sv=2019-12-12&ss='`
-
-  ![Azure Blob でのアーカイブ。](images/archive-in-blob.png)
-
-- これで、Azure Blob アカウント内にアーカイブのコピーがあるはずです。
-
-## <a name="next-steps"></a>次のステップ
-
-Moodle 移行プロセスの詳細については、「[Moodle の移行タスク、アーキテクチャ、テンプレート](./migration-arch.md)」に進みます。
+引き続き、「[Moodle 移行のアーキテクチャとテンプレート](./migration-arch.md)」を参照してください。
