@@ -1,19 +1,19 @@
 ---
 title: ソフトウェア定義ネットワーク:クラウド DMZ
 description: VPN を使用してオンプレミスとクラウドベースのネットワーク間の制限付きアクセスを可能にするクラウド DMZ ネットワーク アーキテクチャについて説明します。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: db4d90e01a5564374cbd715f4cd6b94967224495
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e2e22fc5b77aec9e0d07bb84d514ea940b1723ba
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884387"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605644"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>ソフトウェア定義ネットワーク:クラウド DMZ
 

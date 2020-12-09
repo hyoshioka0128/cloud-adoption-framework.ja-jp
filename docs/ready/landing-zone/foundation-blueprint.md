@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bb8d2a7d77bb4ad6cc8ab0f3a391e7aeaa1a4fdd
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: ca41e563d3a1be57d8d8e27b15179dfe7a37b6b8
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713872"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605831"
 ---
 <!-- docutune:ignore "CAF Foundation blueprint" -->
 
@@ -58,7 +58,7 @@ CAF 基盤ブループリントでは、ランディング ゾーンはデプロ
 - [Azure の初期サブスクリプション](../azure-best-practices/initial-subscriptions.md): 導入規模のこの段階で、運用モデルに必要なサブスクリプション数は 2 つ、3 つ、4 つのいずれですか。
 - [サブスクリプションのスケーリング](../azure-best-practices/scale-subscriptions.md): 導入の規模に応じて、サブスクリプションのスケーリングを促進するためにどのような基準が使用されますか。
 - [サブスクリプションの整理](../azure-best-practices/organize-subscriptions.md): スケーリングしたサブスクリプションをどのように整理しますか。
-- [タグ付けの標準](../azure-best-practices/naming-and-tagging.md#metadata-tags): サブスクリプションの設計を強化するために、タグで一貫してキャプチャする必要があるその他の基準はありますか。
+- [タグ付けの標準](../azure-best-practices/resource-tagging.md): サブスクリプションの設計を強化するために、タグで一貫してキャプチャする必要があるその他の基準はありますか。
 
 チームがクラウド導入を進めるときにこの比較を役立てるには、[ガバナンス ガイドの規範的なガイダンス](../../govern/guides/complex/prescriptive-guidance.md#application-of-governance-defined-patterns)に関する記事のガバナンス パターンに関するセクションを参照してください。 規範的なガイダンスのこのセクションでは、具体的な例と運用モデルに基づく一連のパターンが示されます。 そのガイダンスには、考慮する必要がある他のパターンへのリンクも含まれています。
 

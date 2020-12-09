@@ -1,25 +1,25 @@
 ---
 title: ソフトウェア定義ネットワーク:ハブ アンド スポーク
 description: Azure 向けクラウド導入フレームワークを使用して、ハブとスポークのネットワークで、ネットワーク インフラストラクチャを、接続された複数の仮想ネットワークに編成する方法を学習します。
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9b564c5e73afe2968b928c78a3cc1dd4b9ea3028
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: 83cd8eb9f67a5fc390132baae67a2fb239414a9d
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432586"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605610"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>ソフトウェア定義ネットワーク:ハブ アンド スポーク
 
 ハブ アンド スポークのネットワーク モデルは、複数接続されている仮想ネットワークに、Azure ベースのクラウド ネットワーク インフラストラクチャを編成します。 このモデルを使用すると、一般的な通信やセキュリティの要件をより効率的に管理し、潜在的なサブスクリプションの制限に対処できます。
 
-ハブ アンド スポークのモデルで、 *ハブ* は、外部接続を管理したり、複数のワークロードによって使用されるサービスをホストしたりするための中心的な場所として機能する仮想ネットワークです。 *スポーク* は、ワークロードをホストし、 [仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を介して中央のハブに接続する仮想ネットワークです。
+ハブ アンド スポークのモデルで、*ハブ* は、外部接続を管理したり、複数のワークロードによって使用されるサービスをホストしたりするための中心的な場所として機能する仮想ネットワークです。 *スポーク* は、ワークロードをホストし、[仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を介して中央のハブに接続する仮想ネットワークです。
 
 ワークロード スポーク ネットワークを出入りするすべてのトラフィックは、ハブ ネットワークを介してルーティングされます。そのハブ ネットワークで、集中管理された IT 規則またはプロセスによってトラフィックをルーティング、検査、またはその他の方法で管理できます。
 

@@ -7,13 +7,13 @@ ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ROBOTS: NOINDEX
-ms.openlocfilehash: 29c4ed2fa786d9c697ba14adcc92c73e93bb4b73
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ROBOTS: NOINDEX,NOFOLLOW
+ms.openlocfilehash: ba49dee351be0476bc8224da933a7f0372c2bc61
+ms.sourcegitcommit: 78d54d02a863eaf498260f406edc4af81fea7c93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024574"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96557571"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -78,7 +78,7 @@ EA 加入契約には、次の 3 つの一般的なパターンがあります�
 
   ![地域パターン](../_images/reference/geographic.png)
 
-これらのパターンのそれぞれに役割がありますが、 **部署** パターンが使用されることが増えています。企業のコスト モデルをモデル化する際や、統制範囲を反映する際に柔軟性が高いためです。 Microsoft Core Engineering and Operations グループによって、 **連邦** 、 **州** 、および **地方** に関してモデル化された **部署** パターンの効果的なサブセットが作成されました。 詳細については、[サブスクリプションとリソース グループの整理](../ready/azure-best-practices/organize-subscriptions.md)に関するページを参照してください。
+これらのパターンのそれぞれに役割がありますが、**部署** パターンが使用されることが増えています。企業のコスト モデルをモデル化する際や、統制範囲を反映する際に柔軟性が高いためです。 Microsoft Core Engineering and Operations グループによって、**連邦**、**州**、および **地方** に関してモデル化された **部署** パターンの効果的なサブセットが作成されました。 詳細については、[サブスクリプションとリソース グループの整理](../ready/azure-best-practices/organize-subscriptions.md)に関するページを参照してください。
 
 ### <a name="azure-management-groups"></a>Azure 管理グループ
 
@@ -169,7 +169,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 パブリック クラウドの使用を開始するにあたり、最初に重要な質問として、「リソースにアクセスできる必要があるのはだれか」、 「このアクセスを制御するにはどうすればよいか」と自問しているかもしれません。 Azure portal とポータルでのリソースへのアクセス制御は、クラウド内の資産の長期的な安全性にとって不可欠です。
 
-リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは **ありません** 。Azure AD テナントとは何か、加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
+リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは **ありません**。Azure AD テナントとは何か、加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
 
 ![AD アーキテクチャの図](../_images/reference/ad-architecture.png)
 
@@ -228,7 +228,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 - **メトリック** は、リソースから生成される数値情報であり、リソースのパフォーマンスと正常性を示します。
 - **診断ログ** は、Azure サービスから出力され、そのサービスの操作に関する豊富なデータを提供します。
 
-これらの情報は複数のレベルで表示して対処することができ、常に改善されています。 Azure では、下の図に示すように Azure リソースの **共有** 、 **コア** 、 **詳細** の監視機能を提供しています。
+これらの情報は複数のレベルで表示して対処することができ、常に改善されています。 Azure では、下の図に示すように Azure リソースの **共有**、**コア**、**詳細** の監視機能を提供しています。
 
 ![詳細なアプリケーション監視、詳細なインフラストラクチャ監視、コア監視、および共有機能を示す図。](../_images/reference/monitoring.png)
 
@@ -248,7 +248,7 @@ AzSK は、Azure ガバナンス プラン全体の重要な部分を占める�
 
 - **Azure Service Health:** Azure Service Health では、アプリケーションに影響を及ぼす可能性がある Azure サービスの問題を特定します。これは、予定メンテナンス期間を計画する際に役立ちます。
 
-- **アクティビティ ログ:** アクティビティ ログには、サブスクリプションのリソースに対するすべての操作が示されています。 提供される監査証跡によって、リソースに対する作成、更新、削除のすべての操作について、 _何を_ 、 _だれが_ 、 _いつ_ を特定できます。 アクティビティ ログ イベントがプラットフォームに保存され、クエリで使用できる期間は 90 日です。 アクティビティ ログを Log Analytics に取り込むと、長期間保存することができ、複数のリソースに対して詳細なクエリと分析を行うことができます。
+- **アクティビティ ログ:** アクティビティ ログには、サブスクリプションのリソースに対するすべての操作が示されています。 提供される監査証跡によって、リソースに対する作成、更新、削除のすべての操作について、_何を_、_だれが_、_いつ_ を特定できます。 アクティビティ ログ イベントがプラットフォームに保存され、クエリで使用できる期間は 90 日です。 アクティビティ ログを Log Analytics に取り込むと、長期間保存することができ、複数のリソースに対して詳細なクエリと分析を行うことができます。
 
 ### <a name="deep-application-monitoring"></a>詳細なアプリケーション監視
 
@@ -335,7 +335,7 @@ Azure スキャフォールディング参照モデルの最後のコンポー�
 - **ユーザー定義ルート** を使用すると、サブネット内のルート テーブルを操作して、ネットワーク仮想アプライアンス経由でのトラフィックの送信、またはピアリングした仮想ネットワーク上のリモート ゲートウェイへのトラフィックの送信を行うことができます。
 - **仮想ネットワーク ピアリング** では、Azure の 2 つ以上の仮想ネットワークをシームレスに接続し、より複雑なハブとスポークの設計または共有サービス ネットワークを作成できます。
 - **サービス エンドポイント。** かつて、PaaS サービスはさまざまな方法に依存して、仮想ネットワークからそれらのリソースへのアクセスを保護していました。 サービス エンドポイントを使用すると、接続したエンドポイント **のみ** からの有効な PaaS サービスに対するアクセスを保護することができ、全体のセキュリティが向上します。
-- **セキュリティ グループ** は広範な規則のセットであり、これを使用すると、Azure リソースに対するインバウンドおよびアウトバウンド トラフィックを許可または拒否できるようになります。 [セキュリティ グループ](/azure/virtual-network/security-overview)は、 **サービス タグ** (Azure Key Vault、Azure SQL Database など一般的な Azure サービスを定義) と **アプリケーション セキュリティ グループ** (Web サーバーやアプリ サーバーなどのアプリケーション構造を定義) を使用して拡張できるセキュリティ規則で構成されます。
+- **セキュリティ グループ** は広範な規則のセットであり、これを使用すると、Azure リソースに対するインバウンドおよびアウトバウンド トラフィックを許可または拒否できるようになります。 [セキュリティ グループ](/azure/virtual-network/security-overview)は、**サービス タグ** (Azure Key Vault、Azure SQL Database など一般的な Azure サービスを定義) と **アプリケーション セキュリティ グループ** (Web サーバーやアプリ サーバーなどのアプリケーション構造を定義) を使用して拡張できるセキュリティ規則で構成されます。
 
 > [!TIP]
 > ネットワーク セキュリティ グループでサービス タグとアプリケーション セキュリティ グループを使用して、以下のことを行います。
