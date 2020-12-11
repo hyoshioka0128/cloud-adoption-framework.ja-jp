@@ -1,5 +1,5 @@
 ---
-title: 新機能
+title: Microsoft クラウド導入フレームワークの最新情報
 description: Azure 向けの Microsoft クラウド導入フレームワークの最新情報について取り上げます。
 author: JanetCThomas
 ms.author: janet
@@ -7,12 +7,12 @@ ms.date: 10/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e6889705a455de067c5af6a18adc7a8c00b81e11
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.openlocfilehash: 7c8dab21fbe934fef666035853178c0d83dd82cb
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879091"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605559"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
@@ -22,6 +22,15 @@ ms.locfileid: "94879091"
 
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームと協力して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携してクラウド導入フレームワークを構築することをお勧めします。
 
+## <a name="december-2020"></a>2020 年 12 月
+
+名前付けとタグ付けの戦略に関するガイダンスを修正し、Moodle の移行シナリオに関するガイダンスを追加しました。
+
+| [アーティクル] | 説明 |
+|--|--|
+| [Azure リソースの名前付けとタグ付けの戦略を作成する&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](../ready/azure-best-practices/naming-and-tagging.md) | 名前付けとタグ付けの戦略の定義に関するガイダンスを改善しました。 概要に加えて、このガイダンスをこれらのトピックを扱う複数の記事に分けました。 <br><br> <li> [名前付け規則を定義する](../ready/azure-best-practices/resource-naming.md) <li> [さまざまな Azure リソースの種類に推奨される省略形](../ready/azure-best-practices/resource-abbreviations.md) <li> [タグ付けの戦略を定義する](../ready/azure-best-practices/resource-tagging.md) |
+| [Moodle デプロイを Azure に移行する](../scenarios/lamp/moodle/migration-overview.md) | Moodle のオープンソースのラーニング管理システムのデプロイをオンプレミス環境から Azure に移行する方法について説明します。 デプロイに Azure portal または Azure CLI を使用するための手順が用意されています。 |
+
 ## <a name="october-2020"></a>2020 年 10 月
 
 今月の更新には、クラウド導入フレームワーク全体の段階的な改善と Web アセットのサポートが含まれます。
@@ -29,7 +38,7 @@ ms.locfileid: "94879091"
 Microsoft は、クラウド導入フレームワークの適用を促進する Microsoft Learn モジュールを構築することに注力し、最大限の投資をしてきました。 今月、以下に示すモジュールをリリースしました。 作業の開始モジュールでは、業界に合わせた最初のガイダンスが提供されることにご注意ください。ここでは、小売の顧客 (Tailwind Traders) が、次のすべての主要な手法モジュールについて説明します。
 
 | モジュール | 説明 |
-|---|---|
+|--|--|
 | [概要モジュール](/learn/modules/microsoft-cloud-adoption-framework-for-azure/) | フレームワークに関するエントリレベルの概要。 |
 | [作業の開始モジュール](/learn/modules/cloud-adoption-framework-getting-started/) | 作業の開始の概要では、適切な手法の適用を促進し、特定の阻害要因を克服する方法について説明します。 |
 | [Azure ランディング ゾーン](/learn/modules/cloud-adoption-framework-ready/) | クラウド環境を構築する前に、運用要件を把握し、作業を開始する最適な Azure ランディング ゾーン製品を選択します。 |
@@ -38,14 +47,14 @@ Microsoft は、クラウド導入フレームワークの適用を促進する 
 また、ビジネスの成果を広げることにより、さまざまな一般的なビジネスの動機と、COVID 後の市場で発展し続けるアプローチを共有できるようになりました。
 
 | [アーティクル] | 説明 |
-|---|---|
+|--|--|
 | [持続可能性の成果の例](../strategy/business-outcomes/sustainability.md) | クラウド コンピューティングが、二酸化炭素排出量の削減、資源の効率的な使用、環境フットプリントの削減にどのように役立つかについて説明します。 |
 | [目標と成果指標 (OKR) を使用してビジネスの成果を測定する](../strategy/business-outcomes/okr.md) | OKR を使用してビジネスの成果を測定する方法について説明します。 |
 | [AppDynamics を使用してビジネス成果を測定する](../digital-estate/app-dynamics.md) | アプリケーションのパフォーマンスおよびユーザー エクスペリエンスを把握することは、ビジネスの成果を測定するための鍵です。 AppDynamics が、ほとんどのユース ケースに対してビジネスの分析情報を提供する方法をご確認ください。 |
 | [コスト管理の更新:スポット VM](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs) | 非運用環境でスポット VM を使用することは、これらの既存の環境でのコストをさらに削減するために急速に普及してきている手法です。 「私は既に作業環境があります。 エンタープライズ規模の設計原則を適用するにはどうすればよいですか。」 エンタープライズ規模への移行に関する新しい記事が役立ちます。 |
 
 | [アーティクル] | 説明 |
-|---|---|
+|--|--|
 | [既存の Azure 環境をエンタープライズ規模に移行する](../ready/enterprise-scale/transition.md) | この記事は、組織が、既存の Azure 環境に基づいてエンタープライズ規模への移行を適切に進めることができるように支援します。 |
 | [クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン アーキテクチャ](../ready/enterprise-scale/architecture.md) | この記事は、ハブ アンド スポーク ネットワーク トポロジに基づいた、エンタープライズ規模のランディング ゾーン アーキテクチャの概要図を含むように更新されました。また、エンタープライズ規模のランディング ゾーン アーキテクチャの重要な設計領域について説明し、相互参照を行うように更新されます。 |
 
@@ -58,7 +67,7 @@ Microsoft は、クラウド導入フレームワークの適用を促進する 
 ランディング ゾーンの設計と実装で最も重要な考慮事項の 1 つは、運用モデルです。 クラウドでどのように運用する必要があるかが、実装するアーキテクチャと制御に直接影響します。 次の記事は、ターゲットの運用モデルを、クラウドで一般的ないくつかのモデルと整合させるために役立ちます。 次に、これらを最適な実装にマップして開始します。
 
 | [アーティクル] | 説明 |
-|---|---|
+|--|--|
 | [一般的な運用モデルを比較する](../operating-model/compare.md) | この記事は、運用モデルを比較して一連の作業を選択するための主要なガイドです。 |
 | [クラウド運用モデルを理解する](../operating-model/index.md) | 運用モデルに関するインポートの決定を行うための入門書。 |
 | [CAF を使用して運用モデルを定義する](../operating-model/define.md) | クラウド導入フレームワークは、環境を構築し、選択した運用モデル内にクラウドを導入するための段階的なガイドです。 この記事は、さまざまな手法によって運用モデルの開発がどのようにサポートされるかを理解するための枠組みをもたらします。 |
@@ -69,7 +78,7 @@ Microsoft は、クラウド導入フレームワークの適用を促進する 
 Azure ランディング ゾーンの背後にある概念と実装オプションは、主要な Microsoft パートナーと共に構築されました。 このリリースでは、これらの パートナーがクラウド導入を促進するために使用する既存の知的所有権 (IP) が認められています。
 
 | [アーティクル] | 説明 |
-|---|---|
+|--|--|
 | [パートナー ランディング ゾーン](../ready/landing-zone/partner-landing-zone.md) | パートナーの Azure ランディング ゾーンのオファーを確認し、比較します。 |
 | [実装オプション](../ready/landing-zone/implementation-options.md) | 既存の Azure ランディング ゾーンの実装オプションにパートナー ランディング ゾーンのオプションを追加するよう更新されました。 |
 | [エンタープライズ規模の参照実装](../ready/enterprise-scale/implementation.md) | エンタープライズ規模の参照実装にハブスポーク参照実装が追加されました。 |

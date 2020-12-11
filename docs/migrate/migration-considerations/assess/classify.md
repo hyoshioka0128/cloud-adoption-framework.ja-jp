@@ -7,18 +7,18 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6ea44ec9861e92b6fda60be99c1b2aab0b413b47
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: c24f745d8be027d5284ab6c0d982c75f9e7d1107
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235060"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605848"
 ---
 # <a name="workload-classification-before-migration"></a>移行前のワークロードの分類
 
 移行プロセスを反復するごとに、少なくとも 1 つのワークロードが移行され、運用環境に昇格されることになります。 こうしたいずれかの移行アクティビティの前に、各ワークロードを分類しておくことが大切です。 分類は、ガバナンスやセキュリティ、運用、データ管理に関する要件を明らかにするのに役立ちます。
 
-以下のガイダンスは、[名前付けとタグ付けの基準に関する記事](../../../ready/azure-best-practices/naming-and-tagging.md#metadata-tags)の中で推奨されているタグ付け要件の概要を基に、[運用](../../../manage/considerations/criticality.md#criticality-scale)と[ガバナンス](../../../govern/guides/complex/prescriptive-guidance.md#resource-tagging)の重要な要素を追加して作成したものです。
+次のガイダンスは、「[タグ付けの戦略を定義する](../../../ready/azure-best-practices/resource-tagging.md)」に記載されている推奨されるタグ付け要件を基に、[運用](../../../manage/considerations/criticality.md#criticality-scale)と[ガバナンス](../../../govern/guides/complex/prescriptive-guidance.md#resource-tagging)の重要な要素を追加して作成したものです。
 
 この記事では、既存のタグ付け基準に重要度とデータ機密度を追加することを具体的に提案しています。 そうした個々のデータ ポイントにより、特別な注意やサポートが必要となる可能性のあるワークロードを他のチームが把握しやすくなります。
 

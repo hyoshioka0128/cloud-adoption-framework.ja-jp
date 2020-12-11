@@ -7,12 +7,12 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6ff7dad3524f00119b161dfc87aaa1a70a2b4e19
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: af2fbf5bde312fdc6f1230e5ee5138d28212f3b1
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602182"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605406"
 ---
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>Microsoft パートナーの Azure ランディング ゾーンを評価する
 
@@ -91,9 +91,9 @@ ID はおそらく、パートナー ソリューションの評価において�
 
 **パートナーに対する質問:** パートナーのランディング ゾーン設計には、次のリソース編成の実践に関する考慮事項は含まれていますか。
 
-- **名前付け規則:** このオファリングではどのような[名前付け規則](../azure-best-practices/naming-and-tagging.md)を使用していますか。また、その規則はポリシーによって自動的に適用されますか。
-- **タグ付けの規則:** ランディング ゾーン構成では、[資産にタグ付けするための特定の規則](../azure-best-practices/naming-and-tagging.md#metadata-tags)が適用されますか。
-- **サブスクリプションの設計:** パートナーのオファーではどのような[サブスクリプションの設計戦略](../../decision-guides/subscriptions/index.md)がサポートされていますか。
+- **名前付け規則:** このオファリングではどのような [名前付け規則](../azure-best-practices/naming-and-tagging.md)を使用していますか。また、その規則はポリシーによって自動的に適用されますか。
+- **タグ付けの規則:** ランディング ゾーン構成では、[資産にタグ付けするための特定の標準](../azure-best-practices/resource-tagging.md)が適用されますか。
+- **サブスクリプションの設計:** パートナーのオファーではどのような [サブスクリプションの設計戦略](../../decision-guides/subscriptions/index.md)がサポートされていますか。
 - **管理グループの設計:** パートナーのオファーでは、[Azure 管理グループ階層](../azure-best-practices/organize-subscriptions.md)の定義済みパターンに従ってサブスクリプションを編成していますか。
 - **リソース グループの調整:** クラウドにデプロイされた資産をグループ化するためにリソース グループはどのように使用されますか。 パートナーのオファーでは、リソース グループは、資産をワークロード、デプロイ パッケージ、またはその他の組織標準にグループ化するために使用されますか。
 

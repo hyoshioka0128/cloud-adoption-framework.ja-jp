@@ -7,16 +7,16 @@ ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e3d34cfec94f42873ab109a4ab9cbdc4f3acfc8b
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.openlocfilehash: 659c1a151bd1f6d908737c6be5ab0177f361b2f1
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96327799"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605423"
 ---
 # <a name="overview-of-moodle-manual-migration"></a>手動による Moodle 移行の概要
 
-[Moodle](https://moodle.org/) は、PHP で記述された無料のオープンソースの学習管理システムです。 このガイドでは、Moodle アプリケーションをオンプレミス環境から Azure に移行する方法について説明します。 このガイドで紹介するのは 2 つのアプローチの手順で、Azure portal または Azure コマンド ライン インターフェイス (Azure CLI) のいずれかが使用されます。
+[Moodle](https://moodle.org/) は、PHP で記述された無料のオープンソースの学習管理システムです。 このガイドでは、Moodle デプロイをオンプレミス環境から Azure に移行する方法について説明します。 このガイドで紹介するのは 2 つのアプローチの手順で、Azure portal または Azure コマンド ライン インターフェイス (Azure CLI) のいずれかが使用されます。
 
 ## <a name="prerequisites"></a>前提条件
 
