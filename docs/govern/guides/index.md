@@ -7,13 +7,13 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: a39440dff04e267a80fa085dfdf6c565d33762cb
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 3a854dd2b326fb9681cb62b06e80c2ba2467609d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604846"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020915"
 ---
 # <a name="cloud-governance-guides"></a>クラウド ガバナンス ガイド
 
@@ -87,7 +87,7 @@ CAF エンタープライズ規模のランディング ゾーンは、ガバナ
 
 小規模なチームでも CAF エンタープライズ規模のランディング ゾーンで提供されるアーキテクチャと推奨事項からメリットを得ることができます。 Microsoft が目標とするのは、CAF エンタープライズ規模のランディング ゾーンの実装を継続的に合理化し、小規模なチームにとってより使いやすいものにすることです。 現在、このアプローチは、大規模なクラウド環境を管理する中央の IT チームをガイドするように設計されています。
 
-[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)のアプローチは、**1,000 を超える資産 (アプリケーション、インフラストラクチャ、またはデータ資産) をクラウドでホストする**という中期目標 (24 か月以内) を設けている導入チームに焦点を当てています。
+[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)のアプローチは、**1,000 を超える資産 (アプリケーション、インフラストラクチャ、またはデータ資産) をクラウドでホストする** という中期目標 (24 か月以内) を設けている導入チームに焦点を当てています。
 
 次の条件を満たす組織については、[CAF エンタープライズ規模のランディング ゾーン](../../ready/enterprise-scale/index.md)で開始することが適切である場合があります。
 

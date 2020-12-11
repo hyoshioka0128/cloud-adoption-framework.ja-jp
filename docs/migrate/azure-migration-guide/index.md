@@ -2,19 +2,19 @@
 title: Azure 移行ガイドの概要
 description: Azure のクラウド導入フレームワークを使用して、組織のサービスを効果的に Azure に移行する方法について学習します。
 author: matticusau
-ms.author: mlavery
+ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e3f90d704d89bb7d3693738a62515809a234c199
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, fasttrack-new, AQC
+ms.openlocfilehash: 303d09b9c65c19ab9f30fb4c27f55e8ea1116529
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996011"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025386"
 ---
 # <a name="azure-migration-guide-overview"></a>Azure 移行ガイドの概要
 

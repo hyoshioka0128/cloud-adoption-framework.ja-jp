@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: 作業開始
+  - name: はじめに
     items:
       - name: 概要
         href: get-started/index.md

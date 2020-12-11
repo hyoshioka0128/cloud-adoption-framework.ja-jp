@@ -7,13 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: f67a88860bb7532f37e110fdda8da9af6adbabb3
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.custom: internal
+ms.openlocfilehash: 537d1879a23cf86c303200eb359d5d75aa02741a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283216"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97021289"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>複雑な企業向けのガバナンス ガイド
 
