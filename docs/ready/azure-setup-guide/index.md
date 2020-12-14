@@ -1,20 +1,20 @@
 ---
-title: Azure セットアップ ガイド:開始する前に
-description: 手順付きのガイダンスを利用して、組織で効果的に Azure を設定する方法を学習します。
+title: Azure セットアップ ガイドの概要
+description: Azure セットアップ ガイドの概要を確認します。 このガイドでは、組織で効果的に Azure を設定する方法を、手順付きのガイダンスで説明します。
 author: timleyden
-ms.author: kfollis
+ms.author: brblanch
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4ebb8dc70a373d2dd458c074689bf201d4a05f60
-ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
+ms.custom: think-tank, fasttrack-edit, AQC, setup
+ms.openlocfilehash: 7b8fd3f67e06ed839892d4e6fadfc8f7073a3f3b
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89275591"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026083"
 ---
 # <a name="azure-setup-guide-overview"></a>Azure セットアップ ガイドの概要
 

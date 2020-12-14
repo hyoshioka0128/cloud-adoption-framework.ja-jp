@@ -7,13 +7,13 @@ ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.custom: governance
-ms.openlocfilehash: 7917768760eec85e4992bda3e11c892b275f9652
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal
+ms.openlocfilehash: 434c7ab67bfbbefdc123297e70d14bbac011da03
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605508"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023567"
 ---
 # <a name="encryption-decision-guide"></a>暗号化決定ガイド
 
@@ -81,7 +81,7 @@ BYOK アプローチでは、オンプレミス環境内の専用 HSM ハード�
 
 ### <a name="data-in-transit"></a>転送中のデータ
 
-転送中のデータとは、内部のリソース間、データ センター間や外部のネットワーク間、またはインターネット上を移動しているデータです。
+転送中のデータは、内部ネットワーク上のリソース間、データセンターや外部ネットワーク間、またはインターネット上を移動しているデータです。
 
 転送中のデータは通常、ネットワーク トラフィックに対して SSL/TLS プロトコルを要求することにより暗号化されます。 クラウドでホストされるリソースと外部ネットワークまたはパブリック インターネット間のトラフィックは、常に暗号化してください。 既定では、PaaS リソースは通常 SSL/TLS 暗号化を強制します。 クラウド導入チームとワークロード所有者は、仮想ネットワーク内でホストされている IaaS リソース間のトラフィックに対して暗号化を強制することを検討する必要があります。
 
