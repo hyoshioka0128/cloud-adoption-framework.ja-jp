@@ -7,12 +7,13 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f49d96af36176b08e4de93ab81439b4cd17d8fc2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.custom: internal
+ms.openlocfilehash: 149162962ac8aa2e8871280bb90d7136bb3f8792
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428121"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026270"
 ---
 # <a name="establish-iterations-and-release-plans"></a>イテレーション計画とリリース計画の確立
 

@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 218b7ce544d74f46aa178d2e1315d7b5cb63d5a1
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.custom: internal
+ms.openlocfilehash: 91cb4c04b21cc0965e1fc2b679dae67ebda95855
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196702"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025964"
 ---
 <!-- cSpell:ignore ITIL -->
 

@@ -3,16 +3,17 @@ title: クラウド データ機能について
 description: 機能のソース、スコープ、成果物を含むクラウド データ機能を理解します。
 author: v-hanki
 ms.author: janet
+ms.date: 07/14/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 07/14/2020
-ms.openlocfilehash: a0231d05fdb05a89499f253fa4564faf286ca1ef
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 4a3fe521c09f15fae623cebcd8b138316ed4a6ce
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995654"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026525"
 ---
 # <a name="cloud-data-functions"></a>クラウド データ機能
 

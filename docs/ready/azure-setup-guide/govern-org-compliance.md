@@ -2,19 +2,19 @@
 title: Azure でのガバナンス、セキュリティ、コンプライアンス
 description: Azure 向けのクラウド導入フレームワークを使用して、Azure 環境のガバナンス、セキュリティ、コンプライアンスを設定する方法について学習します。
 author: tvuylsteke
-ms.author: kfollis
+ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 68b85c0269fb5ecc4f042e2e73ebe1aecfe8058f
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, fasttrack-edit, AQC, setup
+ms.openlocfilehash: c4ceb3f9404bb210580006f3cfec06ba1a67f65c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995297"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024281"
 ---
 <!-- docutune:casing "Blueprints: Blueprint definitions" "Blueprints: Get started" -->
 

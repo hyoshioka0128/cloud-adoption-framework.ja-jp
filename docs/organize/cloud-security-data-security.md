@@ -3,16 +3,17 @@ title: クラウド データ セキュリティの機能
 description: クラウド データ セキュリティの機能について説明します。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 7be2796c2c8033b92e47578eed30611f596df094
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 9a3fb0062db9b9570c2be5d1b1aff370c524933a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995569"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026457"
 ---
 # <a name="function-of-cloud-data-security"></a>クラウド データ セキュリティの機能
 

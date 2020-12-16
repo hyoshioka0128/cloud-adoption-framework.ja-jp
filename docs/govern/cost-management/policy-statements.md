@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 1b2cbbcbb56a66daa67be455d8b7df2f7222c831
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: 7a5f69d397096a78125e5e158cb894683e06c535
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775515"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97021748"
 ---
 # <a name="cost-management-sample-policy-statements"></a>コスト管理のサンプル ポリシー ステートメント
 
@@ -31,7 +31,7 @@ ms.locfileid: "90775515"
 
 **ポリシー ステートメント:** クラウドにデプロイされたすべての資産を課金単位およびアプリケーション/ワークロードに関連付ける必要があります。 このポリシーにより、Cost Management 規範の効果が高まります。
 
-**設計オプション:** 将来性のある基礎を確立する方法については、クラウド導入フレームワーク ガイダンスの一部として含まれている[使用可能な設計ガイド](../guides/index.md)に関するページにあるガバナンス MVP の作成に関連した説明を参照してください。
+**設計オプション:** 将来性のある基礎を確立する方法については、クラウド導入フレームワーク ガイダンスの一部として含まれている [使用可能な設計ガイド](../guides/index.md)に関するページにあるガバナンス MVP の作成に関連した説明を参照してください。
 
 ## <a name="budget-overruns"></a>予算超過
 

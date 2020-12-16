@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15ab13f8d5797921e125c3b397b44213afcde249
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.custom: internal
+ms.openlocfilehash: ba4d3deb27dd5023b928b6371b029c417d7c4dd3
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432373"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026610"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>移行時のビジネス テスト (UAT) のガイダンス
 

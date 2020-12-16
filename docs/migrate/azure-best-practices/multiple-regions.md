@@ -7,13 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.custom: governance
-ms.openlocfilehash: 372dc33a6088f2a5ccf1421abd40eb2b71448975
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 2fd34ffd8293645ac3035e54e0ace76ffbd5dde3
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996028"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025896"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure リージョンの決定ガイド
 

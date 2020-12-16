@@ -2,19 +2,19 @@
 title: Azure リソースの効果的な整理
 description: Azure リソースを効果的に整理してリソース管理を簡素化するためのベスト プラクティスについて説明します。
 author: laraaleite
-ms.author: kfollis
+ms.author: brblanch
 ms.date: 04/09/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 61c4185a3b41f3e821100e95467920cceda26138
-ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
+ms.custom: think-tank, fasttrack-edit, AQC, setup
+ms.openlocfilehash: 783244673596e58d422f209eff92ff972044bf28
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96038376"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024247"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 

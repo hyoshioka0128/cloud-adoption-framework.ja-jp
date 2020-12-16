@@ -2,17 +2,18 @@
 title: クラウド セキュリティの機能
 description: 企業で情報セキュリティ リスクを管理するために必要な組織の機能の概要
 author: MarkSimos
-ms.author: mas
+ms.author: brblanch
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 7c24e03b2727e31a673675ba62fc76a90c117e03
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.custom: think-tank
+ms.openlocfilehash: 8ef347bf444bdbcadcdc51054d833febf06b5987
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681274"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024604"
 ---
 # <a name="cloud-security-functions"></a>クラウド セキュリティ機能
 

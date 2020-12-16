@@ -2,19 +2,19 @@
 title: Azure を最新の状態に保つ
 description: Azure 向けのクラウド導入フレームワークを使用して、現在のクラウド パターンを常に最新の状態に保ち、変更を管理する方法について学習します。
 author: jelledruyts
-ms.author: andym
+ms.author: brblanch
 ms.date: 04/09/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 066e9029c10a6a46ae29e00389a530b0da0cadef
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, fasttrack-new, AQC, setup
+ms.openlocfilehash: 8bbe9cd6f5283f24684b56e2198eb6b75eba7c38
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997303"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025998"
 ---
 <!-- docutune:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
 <!-- cSpell:ignore endjin AzAdvertizer -->

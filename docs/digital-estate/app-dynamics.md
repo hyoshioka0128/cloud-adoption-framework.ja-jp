@@ -1,19 +1,19 @@
 ---
 title: AppDynamics を使用してビジネス成果を測定する
 description: AppDynamics を使用して、アプリケーションのパフォーマンスおよびユーザー エクスペリエンスがビジネス成果にどのように影響するかを把握します。
-author: BrianBlanchard
-ms.author: wayneme
+author: wayneme75
+ms.author: brblanch
 ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 502dba2d970f46d8e929755a9c05be270724f501
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 306375d0d399b078cd7257d88c8d74e04bf9ebd5
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447100"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023023"
 ---
 <!-- docutune:casing "Movie Tickets Online" -->
 

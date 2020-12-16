@@ -3,16 +3,17 @@ title: クラウド ガバナンス機能を理解する
 description: クラウド ガバナンス チームの機能について、ソース、スコープ、成果物を含めて理解します。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: e0072ca4e2c1606024c992088fe38618498b2625
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: 93017b233340492a397f0cd15d815e73d72c04d7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712308"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024757"
 ---
 <!-- docutune:ignore IS -->
 

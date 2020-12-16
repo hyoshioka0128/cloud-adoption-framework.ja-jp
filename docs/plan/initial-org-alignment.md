@@ -7,12 +7,13 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 2780347386db755cab9cc2c0a69549a75463c820
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.custom: internal
+ms.openlocfilehash: 332a4b29888ba576a2614d4d3f14fa528de31a10
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862553"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024502"
 ---
 # <a name="initial-organization-alignment"></a>初期の組織配置
 

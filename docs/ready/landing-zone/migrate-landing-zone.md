@@ -7,12 +7,13 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0b4fff1154a9bae0525991ee5051677d22b08c8b
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 2bbaf3c56bdf82824c6577bd64e2cee93a9e2e0e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997082"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026627"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>Azure で移行ランディング ゾーンをデプロイする
 

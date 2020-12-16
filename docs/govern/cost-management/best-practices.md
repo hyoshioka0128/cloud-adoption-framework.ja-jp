@@ -7,14 +7,15 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c66359beb3da2c18743de13cb1d9761d12b05a8
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: 3d527d623bfd6fb7ed12910366fa7e4ddbf131e4
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713753"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022054"
 ---
-<!-- docutune:casing ARO "standard HDD" -->
+<!-- docutune:casing ARO -->
 
 # <a name="best-practices-for-costing-and-sizing-resources-hosted-in-azure"></a>Azure でホストされるリソースの料金計算とサイズ設定のベスト プラクティス
 

@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 438cd468ce8f6a55314b1fdf9edcadf3919afbcd
-ms.sourcegitcommit: 80c4b36ca931c75643b102aebe3d2b611e5bfebf
+ms.custom: internal
+ms.openlocfilehash: ccc8f2d86a9e99544a1022e8864523e56f226d7f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91768805"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022615"
 ---
 # <a name="get-started-manage-cloud-costs"></a>作業を開始しましょう。クラウド コストを管理する
 

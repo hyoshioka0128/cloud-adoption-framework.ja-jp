@@ -3,16 +3,17 @@ title: クラウド移行機能について理解する
 description: クラウド移行機能について理解する
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: e4b5a3d16c1515e123146c46c199134222795a11
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 00f326bdecbb02760cf485c375d5987600168b9e
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995620"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026508"
 ---
 # <a name="cloud-migration-functions"></a>クラウド移行機能
 

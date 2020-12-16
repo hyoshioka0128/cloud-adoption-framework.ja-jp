@@ -3,16 +3,17 @@ title: クラウド セキュリティ体制の管理の機能
 description: クラウドセキュリティ体制の管理の機能について説明します。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 96bb73571c0f876f90f2e3132cb8751232bae653
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 77ad129f12e859c0530aaedf351df0374f8b96ec
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996317"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024570"
 ---
 <!-- docsTest:casing TVM -->
 

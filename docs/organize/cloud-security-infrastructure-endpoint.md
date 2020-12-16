@@ -3,16 +3,17 @@ title: クラウド インフラストラクチャとエンドポイント セ�
 description: クラウド インフラストラクチャとエンドポイント セキュリティの機能について説明します。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: b981d434e6874265511aec109afecab666c43e2a
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 437576b84ee6c96b0d6b3be74c55359f80a3d7ef
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996368"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024672"
 ---
 # <a name="function-of-cloud-infrastructure-and-endpoint-security"></a>クラウド インフラストラクチャとエンドポイント セキュリティの機能
 

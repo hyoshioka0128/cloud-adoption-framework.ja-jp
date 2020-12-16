@@ -3,16 +3,17 @@ title: クラウド セキュリティのコンプライアンス管理機能
 description: クラウド セキュリティのコンプライアンス管理に必要な機能について説明します。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: c2ace7de07c6c203e090a079375d9e02420eab9c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal
+ms.openlocfilehash: 90b080b8d599f49f0222abfd0d86f95d14811229
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569962"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024706"
 ---
 # <a name="cloud-security-compliance-management-functions"></a>クラウド セキュリティのコンプライアンス管理機能
 
@@ -22,7 +23,7 @@ ms.locfileid: "88569962"
 
 クラウドでは、セキュリティ コンプライアンスに次のような変更が導入されます。
 
-- 規制要件に応じて、クラウド プロバイダーのコンプライアンス状態を**検証する要件**。 これは共同責任です。クラウドの種類で責任がどのように異なるかについては、共同責任モデルの導入を参照してください。
+- 規制要件に応じて、クラウド プロバイダーのコンプライアンス状態を **検証する要件**。 これは共同責任です。クラウドの種類で責任がどのように異なるかについては、共同責任モデルの導入を参照してください。
 - **クラウド前のガイダンス:** 多くの規制要件は、クラウド サービスの動的な性質を組み込むように更新されていますが、まだ含まれていないものもあります。 組織では、規制機関と協力して、これらを更新し、監査の実施中にこれらの違いについて説明できるようにする必要があります。
 - **リスクへのコンプライアンスのリンク:** 問題を修正するための適切なレベルの注意と資金を確保するため、組織においてコンプライアンスの違反と例外が組織のリスクに関連付けられていることを確認します。
 - **クラウドでの追跡とレポートの有効化:** この機能では、ソフトウェアによる定義というクラウドの特性を積極的に採用する必要があります。これにより、包括的なログ記録、構成データ、分析情報が提供され、コンプライアンスに関するレポートが従来のオンプレミスのアプローチより効率的になります。

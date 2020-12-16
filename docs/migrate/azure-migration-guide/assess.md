@@ -2,19 +2,19 @@
 title: 各ワークロードを評価し、計画を調整する
 description: Azure 向けのクラウド導入フレームワークを使用して、ご利用の環境の移行に対する適合性と検討すべき方法を評価します。
 author: matticusau
-ms.author: mlavery
+ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f8805746d1ae06978c179db076d0312fac89311c
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank, fasttrack-new, AQC
+ms.openlocfilehash: 25a6564e9c52e507411fde54d02c27af8b948446
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605291"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025420"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>ワークロードを評価して計画を調整する
 
@@ -22,7 +22,7 @@ ms.locfileid: "89605291"
 
 ## <a name="tools"></a>[ツール](#tab/Tools)
 
-上記のリンクのガイダンスに従っていない場合は、情報に基づく移行に関する意思決定を行うために、データと評価ツールが必要になる可能性があります。 Azure Migrate は、評価**および** Azure への移行を行うためのネイティブ ツールです。 新しいサーバー移行プロジェクトを作成し、必要なデータを収集するには、次の手順を使用します (まだ行っていない場合)。
+上記のリンクのガイダンスに従っていない場合は、情報に基づく移行に関する意思決定を行うために、データと評価ツールが必要になる可能性があります。 Azure Migrate は、評価 **および** Azure への移行を行うためのネイティブ ツールです。 新しいサーバー移行プロジェクトを作成し、必要なデータを収集するには、次の手順を使用します (まだ行っていない場合)。
 
 ### <a name="azure-migrate"></a>Azure Migrate
 

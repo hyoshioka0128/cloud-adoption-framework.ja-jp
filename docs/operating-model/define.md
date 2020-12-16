@@ -7,13 +7,13 @@ ms.date: 08/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.custom: operating-model
-ms.openlocfilehash: 0a92752d339cd59253ad47b10b8ae949090b5b0a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal, operating-model
+ms.openlocfilehash: 7204b4ee6b1a3f86278295d198cde52caa71bcf8
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88576026"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024842"
 ---
 # <a name="define-your-cloud-operating-model"></a>クラウド運用モデルを定義する
 

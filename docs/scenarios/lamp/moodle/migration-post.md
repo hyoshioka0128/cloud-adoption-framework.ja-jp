@@ -1,18 +1,19 @@
 ---
 title: Moodle 移行後のフォローアップ方法
 description: Moodle 移行後のフォローアップ方法について説明します。 ログのパスを更新する方法、サーバーを再起動する方法、および移行を完了するために必要なその他の手順を実行する方法について説明します。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4691a170d9eba47e9e4c0f581801d3561b8b93c8
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: 05ad1f31a2ac8e04abb7aa2942d0b564748f870b
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96327782"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025709"
 ---
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>Moodle 移行後のフォローアップ方法
 
@@ -53,7 +54,7 @@ Moodle に移行した後、移行後のタスクを実行して構成を完了�
 
 ### <a name="restart-servers"></a>サーバーを再起動する
 
-次のコマンドを入力して、nginx および php-fpm サーバーを再起動します。
+次のコマンドを入力して、`nginx` および `php-fpm` サーバーを再起動します。
 
 ```bash
 sudo systemctl restart nginx
@@ -111,7 +112,7 @@ sudo systemctl restart php<php version>-fpm
       /moodle/certs/nginx.key;
       ```
 
-    1. Ctrl + O キーを押して変更を保存し、Ctrl + X キーを押してファイルを閉じます。
+   1. Ctrl + O キーを押して変更を保存し、Ctrl + X キーを押してファイルを閉じます。
 
 ### <a name="update-the-local-html-copy"></a>ローカル HTML コピーを更新する
 
@@ -138,7 +139,6 @@ sudo systemctl restart php<php version>-fpm
 ホスティング プロバイダー レベルで次の手順のようにして、DNS 名を Azure Load Balancer の IP にマップします。
 
 1. コントローラー仮想マシンで次のコマンドを入力し、Moodle Web サイトでメンテナンス モードをオフにします。
-
 
    ```bash
    sudo /usr/bin/php admin/cli/maintenance.php --disable
@@ -291,6 +291,6 @@ Moodle がメンテナンス モードになっていて、そのモードを終
 
 ## <a name="next-steps"></a>次のステップ
 
-- [Azure Database for MySQL のドキュメント](https://docs.microsoft.com/azure/mysql/)
-- [仮想マシン スケール セットとは](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview)
-- [ストレージ アカウントの概要](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [Azure Database for MySQL のドキュメント](/azure/mysql/)
+- [仮想マシン スケール セットとは](/azure/virtual-machine-scale-sets/overview)
+- [ストレージ アカウントの概要](/azure/storage/common/storage-account-overview)

@@ -1,18 +1,19 @@
 ---
 title: Moodle 移行のリソース
 description: Moodle 移行によって Azure 内に作成されるリソースについて説明します。 たとえば、Azure Virtual Network、ネットワーク セキュリティ グループ、サブネットなどがあります。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: b42253b69dfaca4ca411e2de20b2527d58cb81ff
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: 6f52d10991db528da083120f60106c0a074a9540
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96327833"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025692"
 ---
 # <a name="moodle-migration-resources"></a>Moodle 移行のリソース
 

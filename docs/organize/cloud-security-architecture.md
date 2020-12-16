@@ -3,16 +3,17 @@ title: クラウドセキュリティアーキテクチャの機能
 description: クラウド セキュリティ アーキテクチャの機能について
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 66fe29103adc8314627edb16617b3b558d51fe69
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.custom: internal
+ms.openlocfilehash: 5d7165376a100bca6a80b16e3f0ac2a5732b4d15
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194886"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026474"
 ---
 # <a name="cloud-security-architecture-functions"></a>クラウドセキュリティアーキテクチャの機能
 
@@ -26,7 +27,7 @@ ms.locfileid: "86194886"
 - **クラウドからのセキュリティ:** クラウドからのセキュリティ機能を組み込むことで、有効化の時間と継続的なメンテナンス コスト (ハードウェア、ソフトウェア、時間、労力) を削減できます。
 - **クラウドのセキュリティ:** サービスとしてのソフトウェア (SaaS) アプリケーション、サービスとしてのインフラストラクチャ (IaaS) VM、サービスとしてのプラットフォーム (PaaS) アプリケーションおよびサービスなど、すべてのクラウド資産がカバーされるようにします。 これには、認可されたサービスと認可されていないサービスの両方の検出とセキュリティが含まれます。
 - **ID の統合:** セキュリティ アーキテクトは、ID チームと密接に連携して、生産性向上とセキュリティ保証という 2 つの目標を組織が満たせるようにする必要があります。
-- 体制管理からのコンテキストとセキュリティ オペレーション センター (SOC) によって調査されたインシデントなど、セキュリティ設計における**内部コンテキストの統合**。 これには、ユーザー アカウントとデバイスの相対的なリスク スコア、データの機密性、および積極的に防御するための主要なセキュリティ分離境界などの要素を含める必要があります。
+- 体制管理からのコンテキストとセキュリティ オペレーション センター (SOC) によって調査されたインシデントなど、セキュリティ設計における **内部コンテキストの統合**。 これには、ユーザー アカウントとデバイスの相対的なリスク スコア、データの機密性、および積極的に防御するための主要なセキュリティ分離境界などの要素を含める必要があります。
 
 ## <a name="team-composition-and-key-relationships"></a>チームの構成と重要な関係
 

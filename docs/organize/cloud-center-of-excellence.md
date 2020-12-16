@@ -7,13 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: 77a93fb7bfca7fd368d2496602c735757ace624b
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 94753e80ed7597a1e6ec97177a9c35c201466afe
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996504"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024774"
 ---
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>クラウドのセンター オブ エクセレンス (CCoE) 機能
 

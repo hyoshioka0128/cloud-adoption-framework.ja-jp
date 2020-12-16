@@ -1,18 +1,19 @@
 ---
 title: Moodle 移行のための準備を行う方法
 description: Moodle 移行のための準備を行う方法について説明します。 Moodle ファイルをバックアップし、移行に必要なリソースを作成する方法について説明します。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: b0f2c719e73248d9b6ae2936cb5162a38aa2b8e8
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: eaed30fb982f10e51de85951a48b89a790549c3a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96327884"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025624"
 ---
 # <a name="how-to-prepare-for-a-moodle-migration"></a>Moodle 移行のための準備を行う方法
 
@@ -63,9 +64,9 @@ Azure サブスクリプションがない場合は、[無料で作成する](ht
 - Azure portal を使用する場合は、次の手順のようにします。
 
   1. [[リソース グループ]](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) を開き、 **[追加]** を選択します。
-  
+
   1. サブスクリプション名、リソース グループ名、リージョンを入力します。 利用可能なリージョンの一覧については、「[Azure でのデータ所在地](https://azure.microsoft.com/global-infrastructure/data-residency/)」を参照してください。 後の手順で使用できるように、入力したリソース グループの名前を記録しておきます。
-  
+
   1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
   ![Azure portal の [リソース グループの作成] ページのスクリーンショット。サブスクリプション、リソース グループ、リージョンの各ボックスと、[確認および作成] ボタンがある。](./images/resource-group.png)
@@ -98,9 +99,9 @@ Azure portal または Azure CLI を使用して、ストレージ アカウン�
      - 先ほど作成したリソース グループの名前
      - ストレージ アカウント名
      - 自分のリージョン
-   
+
   1. **[アカウントの種類]** には、 **[BlobStorage]** を入力します。
-  
+
   1. **[レプリケーション]** には、 **[読み取りアクセス地理冗長ストレージ (RA-GRS)]** を入力します。
 
   1. **[Review + create]\(レビュー + 作成\)** を選択します。

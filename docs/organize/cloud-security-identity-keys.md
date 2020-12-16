@@ -3,16 +3,17 @@ title: クラウドでの ID とキーの管理の機能
 description: クラウドでの ID とキーの管理の機能について説明します。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 7942cc63341b3f15f770d6f23dca3e56bc606b65
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal
+ms.openlocfilehash: 5a1c603cd118c93679b30104eae6c962b12d1a09
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574739"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024689"
 ---
 # <a name="function-of-identity-and-key-management-in-the-cloud"></a>クラウドでの ID とキーの管理の機能
 

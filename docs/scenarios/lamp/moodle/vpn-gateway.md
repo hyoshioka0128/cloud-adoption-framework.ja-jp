@@ -1,18 +1,19 @@
 ---
 title: 仮想ネットワーク ゲートウェイを作成して VM に接続する
 description: 仮想ネットワーク ゲートウェイ、証明書、VPN を作成し、プライベート IP アドレスとパスワードを使用して SSH で仮想マシン スケール セット インスタンスに接続します。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: db82bc164af0cc6b34235d307bbcb36db2f53939
-ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
+ms.custom: internal
+ms.openlocfilehash: 0853343e96436c257ae9c621942a2843d5323cd1
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96327918"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025675"
 ---
 # <a name="create-a-virtual-network-gateway-and-connect-to-vms"></a>仮想ネットワーク ゲートウェイを作成して VM に接続する
 
@@ -25,17 +26,17 @@ Azure Moodle リソースをデプロイした後は、プライベート IP ア
 [Azure ポータル](https://portal.azure.com)で次の操作を行います。
 
 1. **[仮想ネットワーク ゲートウェイ]** を見つけて選択します。
-   
+
 1. **[仮想ネットワーク ゲートウェイの作成]** を選択します。
-   
+
 1. **[仮想ネットワーク ゲートウェイの作成]** ページで、次のフィールドに入力します。
    - **サブスクリプション** を選択します。
    - ゲートウェイの **[名前]** を入力します。
    - Moodle Azure Resource Manager (ARM) テンプレートによってデプロイされた **[仮想ネットワーク]** を選択します。
    - **[パブリック IP アドレス名]** を入力します。
-   
+
 1. それ以外のフィールドは、既定の入力値をそのまま使用します。
-   
+
 1. **[確認および作成]** を選択し、検証で問題がなければ、 **[作成]** を選択します。
 
 ![Azure portal の [仮想ネットワーク ゲートウェイの作成] 画面を示すスクリーンショット。](images/vpn-gateway.png)
@@ -74,10 +75,8 @@ az network vnet-gateway create -g <moodle resource group> -n <new virtual networ
 システムに証明書をインストールするには、それをエクスポートします。
 
 1. Windows の [スタート] メニューから **[ファイル名を指定して実行]** を選択し、「**mmc**」と入力します。
-   
-1. Microsoft 管理コンソールの左側のナビゲーション ペインで、 **[個人用]** フォルダーの下にある **[証明書]** を選択します。
-   
-**P2SRootCert** および **P2SChildCert** 証明書を検索します。
+
+1. Microsoft 管理コンソールの左側のナビゲーション ペインで、 **[個人用]** フォルダーの下にある **[証明書]** を選択します。 **P2SRootCert** および **P2SChildCert** 証明書を検索します。
 
 ルート証明書をエクスポートするには:
 
@@ -130,32 +129,32 @@ VPN ゲートウェイ接続を確立するには:
 コントローラー仮想マシン (VM) からパスワード認証を構成するには:
 
 1. 編集のために `sshd` 構成ファイルを開きます。
-   
+
    ```bash
    sudo vi /etc/ssh/sshd_config
    ```
-   
+
 1. 次のパラメーターを更新します。
-   
+
    - `PasswordAuthentication` を `no` から `yes` に変更します。
    - コメント化された `UseLogin` を見つけて、`#` を削除し、値を `yes` に変更します。
-   
+
 1. Esc キーを押して「`:wq!`」と入力し、変更を保存します。
-   
+
 1. 次のコマンドを実行して `sshd` を再起動します。
-   
+
    ```bash
    sudo systemctl restart sshd
    ```
-   
+
 1. 次のコマンドを実行してパスワードを設定します。
-   
+
    ```bash
    sudo passwd <username>
    ```
-   
-   たとえば、コマンド `sudo passwd azureadmin` を実行すると、ユーザー `azureadmin` のパスワードが設定されます。
-   
+
+たとえば、コマンド `sudo passwd azureadmin` を実行すると、ユーザー `azureadmin` のパスワードが設定されます。
+
 1. プロンプトで、パスワードを入力して再入力します。
 
 ## <a name="sign-in-to-vms-from-the-controller-vm"></a>コントローラー VM から VM にサインインする
@@ -163,15 +162,15 @@ VPN ゲートウェイ接続を確立するには:
 SSH 経由でプライベート IP アドレスを使用して、スケール セットの VM にサインインします。
 
 1. コントローラー VM にサインインします。
-   
+
 1. 次のコマンドを実行して、プライベート VM に接続します。
-   
+
    ```bash
    sudo ssh <username>@<private IP address>
    ```
-   
-   例: `sudo ssh azureadmin@102.xx.xx.xx`
-   
+
+例: `sudo ssh azureadmin@102.xx.xx.xx`
+
 1. プロンプトでパスワードを入力します。
 
 ## <a name="next-steps"></a>次のステップ

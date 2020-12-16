@@ -3,16 +3,17 @@ title: クラウドの脅威インテリジェンスの機能
 description: クラウドの脅威インテリジェンスの機能を理解します。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: bab307f1a9476de3f53710c3798d77365cc2c3dc
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: fec4d1b2fe0a970674ccffef1af596a487b08405
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712223"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026372"
 ---
 # <a name="function-of-cloud-threat-intelligence"></a>クラウドの脅威インテリジェンスの機能
 

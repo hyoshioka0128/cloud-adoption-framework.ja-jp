@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 8e6e052c86964ae11d32a491c36d5ee4e1457e0d
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: c4153a612c1ddf7e0e3c2bfc185157bd4e49677d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447270"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026712"
 ---
 <!-- docutune:casing PlatformOps AppDevOps AppDataOps AppSecOps -->
 
@@ -27,7 +27,7 @@ ms.locfileid: "95447270"
 
 従来の IT 運用モデルの多くはクラウドと互換性がなく、組織はエンタープライズ移行ターゲットに対して提供するために運用と組織の変革を実現する必要があります。 アプリケーション チームと中央チームの両方に DevOps アプローチを使用する必要があります。
 
-### <a name="design-considerations"></a>設計上の考慮事項
+**設計上の考慮事項:**
 
 - 中央チームに関しては、継続的インテグレーションと継続的配置のためにパイプラインを使用する必要があります。 パイプラインを使用して、ポリシー定義、ロール定義、ポリシー割り当て、管理グループ階層、およびサブスクリプションを管理します。 これらのパイプラインは、必要な状態に準拠しながら、複数のサブスクリプションを運用管理できるようにするのに役立ちます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "95447270"
 
 <!-- cSpell:ignore PlatformOps SecOps NetOps AppDevOps AppDataOps AppSecOps -->
 
-### <a name="design-recommendations"></a>設計の推奨事項
+**設計上の推奨事項:**
 
 エンタープライズ規模のアーキテクチャを構築、管理、維持するために、クロス機能の DevOps プラットフォーム チームを設けます。 このチームには、企業のあらゆる部分が代表されるように、中央 IT チーム、セキュリティ、コンプライアンス、部署のメンバーが含まれている必要があります。 次の一覧では、中央プラットフォーム チームに推奨される DevOps ロールのセットを示します。
 
@@ -101,11 +101,11 @@ ms.locfileid: "95447270"
 
 中央 IT チームとアプリケーション チーム間での役割、責任、信頼の分散は、組織がクラウドを大規模に導入するときに必要となる運用の変革において最も重要です。
 
-### <a name="design-considerations"></a>設計上の考慮事項
+**設計上の考慮事項:**
 
 中央チームは完全な制御を維持することを目指し、アプリケーション所有者は機敏性を最大限に高めようとしています。 これらの目標の間のバランスは、移行の成功に大きく影響する可能性があります。
 
-### <a name="design-recommendations"></a>設計の推奨事項
+**設計上の推奨事項:**
 
 次の一覧に、中央 IT チームとアプリケーション チームの間での責任の推奨される分担を示します。 中央への依存を最小限に抑えて、移行と変換のアクティビティを強化することに努めています。 同時に、資産全体のセキュリティと運用性の集中的ガバナンスをサポートする必要があります。
 

@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7082380e7b64160071f4304bc5ca3a4d341df24b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 1b93b3c3e500c9ae7291c8d0632ea14f9344241b
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884676"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024995"
 ---
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>移行済みのリソースを実稼働に昇格させるために何が必要か
 

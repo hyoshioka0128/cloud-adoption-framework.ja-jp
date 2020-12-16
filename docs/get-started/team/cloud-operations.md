@@ -7,12 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 4d1ecbe31f7469cb992ab7e983a9ff4a34ef437f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 82bc4a4b70e03e3beeb850a3d82c6e7e0556fdf0
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884064"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97022241"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>作業を開始しましょう。クラウド運用チームを結成する
 

@@ -3,16 +3,17 @@ title: クラウド セキュリティ ポリシーと標準の機能
 description: クラウド セキュリティ ポリシーと標準の機能について説明します。
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: c9a141575b8978eb5f16b51b7c5139801bb0fb66
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.custom: internal
+ms.openlocfilehash: a001704126e5433a4bfcfa52cc091cc259d8dc84
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848297"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026389"
 ---
 # <a name="function-of-cloud-security-policy-and-standards"></a>クラウド セキュリティ ポリシーと標準の機能
 
@@ -23,7 +24,7 @@ ms.locfileid: "88848297"
 - 組織のさまざまなチームによる意思決定に役立つよう十分に詳細に、組織のセキュリティ戦略が反映されています
 - 組織全体の生産性を向上させると同時に、組織のビジネスおよびミッションのリスクを軽減します
 
-**セキュリティ ポリシー**には、組織のセキュリティ戦略とリスクの許容範囲に合致した、長期的に持続可能な目標が反映されている必要があります。 ポリシーでは常に以下に対応する必要があります。
+**セキュリティ ポリシー** には、組織のセキュリティ戦略とリスクの許容範囲に合致した、長期的に持続可能な目標が反映されている必要があります。 ポリシーでは常に以下に対応する必要があります。
 
 - 規制遵守要件と現在のコンプライアンス対応状態 (要件が満たされている、リスクが許容されるなど)
 - 現在の状態のアーキテクチャ評価と、技術的に可能な設計、実装、適用
@@ -31,7 +32,7 @@ ms.locfileid: "88848297"
 - 業界のベスト プラクティス
 - 他のリスクやビジネスの結果を担当する適切なビジネス利害関係者に割り当てられたセキュリティ リスクのアカウンタビリティ。
 
-**セキュリティ標準**では、セキュリティ ポリシーの実行をサポートするプロセスとルールを定義します。
+**セキュリティ標準** では、セキュリティ ポリシーの実行をサポートするプロセスとルールを定義します。
 
 ## <a name="modernization"></a>最新化
 

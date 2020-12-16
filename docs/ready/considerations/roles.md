@@ -2,19 +2,19 @@
 title: 推奨されるロールベースのアクセス制御
 description: チーム内の職務を分離し、ロールベースのアクセス制御を付与して、ユーザーとグループがその職務を遂行できるようにする方法について説明します。
 author: alexbuckgit
+manager: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/28/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-manager: BrianBlanchard
-ms.custom: virtual-network
-ms.openlocfilehash: c28fabb1f8514c0eee3ac2a6b9c21535775c2787
-ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
+ms.custom: internal, virtual-network
+ms.openlocfilehash: 7a425da0ff7378d7da501b4e6ff85d0efe80fd10
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96605304"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024128"
 ---
 # <a name="role-based-access-control"></a>ロールベースのアクセス制御
 

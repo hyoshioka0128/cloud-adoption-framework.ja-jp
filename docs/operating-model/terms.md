@@ -7,13 +7,13 @@ ms.date: 08/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.custom: operating-model
-ms.openlocfilehash: 4546e00d46d0d6d985e623ff0692e55abe46547e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: internal, operating-model
+ms.openlocfilehash: f2f34ace60d983d3c1244cdd356faaf563b873ca
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570166"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024808"
 ---
 # <a name="operating-model-terminology"></a>運用モデルの用語
 

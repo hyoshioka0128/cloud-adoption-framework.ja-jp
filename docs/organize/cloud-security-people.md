@@ -3,16 +3,17 @@ title: クラウドのユーザー セキュリティ機能
 description: クラウドのユーザー セキュリティ機能について
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 275be63f3b39d1236132b945fd9698482e33b18f
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.custom: internal
+ms.openlocfilehash: 50c51398899887be7e8d1364986a7cff923de139
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194274"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97024621"
 ---
 # <a name="people-security-functions-in-the-cloud"></a>クラウドのユーザー セキュリティ機能
 
@@ -22,7 +23,7 @@ ms.locfileid: "86194274"
 
 この機能の最新化には次のものが含まれます。
 
-- 従来の "引っかけと懲罰" のソリューションのような否定的な強化アプローチのみに依存するのではなく、ゲーミフィケーションと肯定的な強化および教育を使用して、ユーザーとの**肯定的なエンゲージメントを向上させます**。
+- 従来の "引っかけと懲罰" のソリューションのような否定的な強化アプローチのみに依存するのではなく、ゲーミフィケーションと肯定的な強化および教育を使用して、ユーザーとの **肯定的なエンゲージメントを向上させます**。
 - **高品質なヒューマン エンゲージメント:** セキュリティに対応したコミュニケーションとトレーニングは、従業員や組織の任務の人間的側面とのつながりを高めるために共感と感情的なエンゲージメントを推進する高品質の成果である必要があります。
 - **現実的な期待:** ユーザーは時にフィッシング メールを開いてしまうことがあることを認め、開くことを 100% 防ぐことではなく、その割合を減らすことに成功の基準を置きます。
 - **組織の文化の変更:** 組織のリーダーは、意図的に文化の変化を推進し、組織の各メンバーにとってセキュリティが優先事項になるようにする必要があります。

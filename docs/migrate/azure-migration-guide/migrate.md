@@ -2,19 +2,19 @@
 title: 資産の移行
 description: ネイティブ ツール、サードパーティ製ツール、プロジェクト管理ツールなど、使用する適切なツールを特定して、Azure への移行を開始します。
 author: matticusau
-ms.author: mlavery
+ms.author: brblanch
 ms.date: 09/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 63f9d6997f1ab8c554a89fd6927408fc2b76a7b1
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank, fasttrack-new, AQC
+ms.openlocfilehash: c6bf840e7cb10051ade264738ab09c42c9213fe4
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995960"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025369"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
@@ -76,6 +76,7 @@ Azure Database Migration Service を初めて使用する場合は、Azure サ�
 ::: zone-end
 
 <!-- docutune:casing "Create Migration Service wizard" -->
+
 リソース プロバイダーを登録した後は、Azure Database Migration Service のインスタンスを作成できます。
 
 1. **[+ リソースの作成]** を選択し、マーケットプレースで **Azure Database Migration Service** を検索します。

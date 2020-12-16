@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2b71028c33fcab389bff9925f0ffc93f85fbff64
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.custom: internal
+ms.openlocfilehash: 568f865589aa94dcc48d33bfde40c857ffdd4379
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283395"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025981"
 ---
 <!-- docutune:casing ARO -->
 
@@ -49,7 +50,7 @@ ms.locfileid: "93283395"
 - **Azure 料金計算ツール:** VM やストレージなど、見積もり対象の製品を選択します。 次に、計算ツールにコストを入力し、見積もりを作成します。
 
   ![Azure 料金計算ツール メニューのスクリーンショット。](./media/migrate-best-practices-costs/pricing.png)
-    " _図 1:Azure 料金計算ツール。_ "
+    "_図 1:Azure 料金計算ツール。_ "
 
 - **Azure Migrate:** コストを見積もるには、Azure でワークロードを実行するために必要なすべてのリソースを確認し、それらを計上します。 このデータを取得するには、サーバー、VM、データベース、ストレージを含む資産のインベントリを作成します。 この情報は、Azure Migrate を使用して収集できます。
 
@@ -60,7 +61,7 @@ ms.locfileid: "93283395"
     - **ストレージ コスト:** Azure Migrate は、評価に含まれるすべての VM のストレージ コストを集計して、月間ストレージ コストの合計を計算します。 特定のマシンの月間ストレージ コストは、そのマシンに接続されているすべてのディスクの月間コストを集計することで計算できます。
 
     ![Azure Migrate のスクリーンショット。](./media/migrate-best-practices-costs/assess.png)
-    " _図 2: Azure Migrate の評価。_ "
+    "_図 2: Azure Migrate の評価。_ "
 
 **詳細情報:**
 
@@ -176,7 +177,7 @@ Azure Reserved Virtual Machine Instances を使用している場合は、VM イ
 - 予約インスタンスはキャンセルできます。
 
 ![従量課金制と Azure ハイブリッド特典や予約インスタンスを比較したスクリーンショット。](./media/migrate-best-practices-costs/reserve.png)
-" _図 3: Azure Reserved VM Instances。_ "
+"_図 3: Azure Reserved VM Instances。_ "
 
 **詳細情報:**
 
@@ -219,7 +220,7 @@ Azure Cost Management + Billing では、次のことができます。
   - コスト管理データは、分析のために Azure Storage にエクスポートできます。
 
   ![Cost Management の予算のスクリーンショット。](./media/migrate-best-practices-costs/budget.png)
-  " _図 4: Azure Cost Management + Billing の予算。_
+  "_図 4: Azure Cost Management + Billing の予算。_
 
 - コスト分析を実行し、組織のコストを探って分析すれば、コストがどのように生じるかを理解し、支出の傾向を特定する助けになります。
   - コスト分析は、Enterprise Agreement ユーザーが利用できます。
@@ -227,7 +228,7 @@ Azure Cost Management + Billing では、次のことができます。
   - 現在の月の総コストと、毎日の累積コストを表示するコスト分析を取得できます。
 
   ![Azure Cost Management の分析のスクリーンショット](./media/migrate-best-practices-costs/analysis.png)
-  " _図 5: Azure Cost Management + Billing の分析。_
+  "_図 5: Azure Cost Management + Billing の分析。_
 
 - 最適化と効率向上が可能な方法を示す Advisor の推奨事項を取得します。
 

@@ -7,12 +7,13 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 35e6806fe93607e4797bdcd20302fec09032778e
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 7cdfc50b10507ec1407d46af9e14cfc9e812708d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605205"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97026236"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Azure の初期サブスクリプションを作成する
 
@@ -46,7 +47,7 @@ _図 2:サンドボックス サブスクリプション付きサブスクリプ
 
 ## <a name="shared-services-subscription"></a>共有サービス サブスクリプション
 
-**24 か月以内にクラウドで 1,000 を超える VM またはコンピューティング インスタンス**をホストすることを計画している場合は、共有サービスをホストするために別の Azure サブスクリプションを作成してください。 これにより、最終状態のエンタープライズ アーキテクチャをサポートできる状態になります。
+**24 か月以内にクラウドで 1,000 を超える VM またはコンピューティング インスタンス** をホストすることを計画している場合は、共有サービスをホストするために別の Azure サブスクリプションを作成してください。 これにより、最終状態のエンタープライズ アーキテクチャをサポートできる状態になります。
 
 !["運用" と "共有サービス" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model-with-shared-services.png)
 _図 3:共有サービス付きサブスクリプション モデル_

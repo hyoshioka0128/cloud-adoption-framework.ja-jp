@@ -7,12 +7,13 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 1890956d6672be0c6d91fa41e784dd491e5b8f28
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 294829da8d89e21bd30b2afdfd7baa550a5b75b7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885407"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97025556"
 ---
 # <a name="plan-your-azure-stack-hub-migration"></a>Azure Stack Hub 移行の計画
 
