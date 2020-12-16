@@ -2,17 +2,18 @@
 title: メインフレームの移行に関する通説と事実
 description: メインフレームに関する通説と事実を区別し、Azure に最も適しているメインフレーム ワークロードを評価する方法について説明します。
 author: njray
-ms.author: v-nanra
+ms.author: brblanch
 ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8ed2f71a7d397873446690f69167ae45cdf4b344
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: db3949faf5f4cd954bbc2fd1fc7977a9ffa09172
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712563"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018739"
 ---
 <!-- cSpell:ignore chargebacks IPLs -->
 

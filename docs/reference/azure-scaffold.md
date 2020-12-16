@@ -2,18 +2,19 @@
 title: Azure エンタープライズ スキャフォールディングは Azure 向けのクラウド導入フレームワークになりました。
 description: Azure エンタープライズ スキャフォールディングは、Azure 向けの Microsoft Cloud Adoption Framework に統合されています。
 author: rdendtler
-ms.author: rodend
+ms.author: brblanch
 ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
+ms.custom: think-tank
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: e0b5341e3220633b5a7066ef5899334dd034ac0b
-ms.sourcegitcommit: 78d54d02a863eaf498260f406edc4af81fea7c93
+ms.openlocfilehash: 83f85513fa3710628a47c59ec40261022abdeec2
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96557537"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012585"
 ---
 # <a name="azure-enterprise-scaffold-is-now-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure エンタープライズ スキャフォールディングは Azure 向けの Microsoft Cloud Adoption Framework になりました
 

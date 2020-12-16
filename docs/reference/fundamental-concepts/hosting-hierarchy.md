@@ -7,12 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 78cde026204d7996a18acbb8eb5da5796f2b3686
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: internal
+ms.openlocfilehash: 35c86d52d7bfdf1a4f1ccb1b546918eaf3ff6f64
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776467"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012534"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 

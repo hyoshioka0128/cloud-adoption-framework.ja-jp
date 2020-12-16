@@ -7,12 +7,13 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d70160082c0c195167272cb9623cc619fde1ee63
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 030015caea60edbd2342342e1de60058a5fa013d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94995212"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013622"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 

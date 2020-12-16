@@ -7,12 +7,13 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 68941187e45d393ac21e00027a7b54998625597a
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.custom: think-tank
+ms.openlocfilehash: 4ee7606522b967849eff4805ddaebbb48021cf2f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283367"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015492"
 ---
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>Dev/Test 環境を Azure DevTest Labs に移行する
 
@@ -76,7 +77,7 @@ Contoso は、目標と要件を明確にした後、デプロイ ソリュー�
 
 ![シナリオ アーキテクチャの図。](./media/contoso-migration-devtest-to-labs/architecture.png)
 
-" _図 1:シナリオのアーキテクチャ_
+"_図 1:シナリオのアーキテクチャ_
 
 ### <a name="database-considerations"></a>データベースの考慮事項
 
@@ -105,7 +106,7 @@ Contoso は、DevTest Labs を使用して、開発アプリケーションお�
 
 ![移行プロセスを示す図。](./media/contoso-migration-devtest-to-labs/migration-process-devtest-labs.png)
 
-" _図 2:移行プロセス_
+"_図 2:移行プロセス_
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -137,13 +138,13 @@ Contoso の管理者は、まず、Azure Dev/Test プランを使用して新し
 
 ![開発テスト用の従量課金制プランのオファーのスクリーンショット ([有効化する] ボタンが表示されている)。](./media/contoso-migration-devtest-to-labs/devtest-subscription.png)
 
-" _図 3:Azure Dev/Test サブスクリプション プラン_
+"_図 3:Azure Dev/Test サブスクリプション プラン_
 
 新しいサブスクリプションのプロビジョニングが完了したら、Contoso の管理者は、Azure portal を使用して新しい DevTest Labs インスタンスを作成します。 この新しいラボは、`ContosoDevRG` リソース グループに作成されます。
 
 ![ポータル上の DevTest Labs の [作成] ボタンのスクリーンショット。](./media/contoso-migration-devtest-to-labs/new-lab.png)
 
-" _図 4:新しい DevTest Labs インスタンスの作成_
+"_図 4:新しい DevTest Labs インスタンスの作成_
 
 ## <a name="step-2-configure-the-development-virtual-network-assign-a-resource-group-and-set-policies"></a>手順 2:開発用仮想ネットワークを構成し、リソース グループを割り当て、ポリシーを設定する
 
@@ -236,7 +237,7 @@ DevTest Labs が構成され、リモート開発者のワークステーショ�
 
 1. Contoso は、アプリケーションとデータベース VM の数式 (再利用可能なベース) を作成し、その数式を使用してアプリケーションとデータベース VM をプロビジョニングします。
 
-   Contoso は、 **[数式]**  >  **[+ 追加]** の順に選択し、 **Windows Server 2012 R2 Datacenter** ベースを選択します。
+   Contoso は、 **[数式]**  >  **[+ 追加]** の順に選択し、**Windows Server 2012 R2 Datacenter** ベースを選択します。
 
    ![Windows 2012 R2 ベースの選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/windows-2012-base.png)
 
@@ -252,7 +253,7 @@ DevTest Labs が構成され、リモート開発者のワークステーショ�
 
    ![SQL Server 2012 R2 ベースの選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/sql-2012-base.png)
 
-   _図 18:SQL Server 2012 イメージ_ "
+   _図 18:SQL Server 2012 イメージ_"
 
 1. Contoso は、サイズと成果物を指定して数式を構成します。 成果物には、このデータベース開発 VM の数式に必要な SQL Server Management Studio が含まれています。
 

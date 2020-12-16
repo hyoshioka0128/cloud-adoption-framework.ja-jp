@@ -2,17 +2,18 @@
 title: クラウド監視プラットフォームの概要
 description: 2 つの監視プラットフォームの概要を確認し、それぞれがコア監視機能を提供するしくみを理解できるようにします。
 author: mgoedtel
-ms.author: magoedte
+ms.author: brblanch
 ms.date: 07/31/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 635c313fe61f801ff453ef4a3a1d5e38cb3a014e
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: c7ba2e6771069e494568a5dbe5d29a4f2cac2f97
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879278"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015798"
 ---
 <!-- docutune:casing "Squared Up" -->
 <!-- cSpell:ignore opsman ITSM -->

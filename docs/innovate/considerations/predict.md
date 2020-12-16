@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 10ff8691285bdb6db157fd1d55428167f81c1be2
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 5f9af6346280ce68be7f36c79322d003e545f3de
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883265"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017872"
 ---
 # <a name="predict-and-influence"></a>予測と影響
 

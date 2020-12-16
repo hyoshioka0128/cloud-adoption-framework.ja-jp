@@ -2,17 +2,18 @@
 title: メインフレーム アプリケーションの移行戦略
 description: メインフレーム環境から Azure に移行するアプリケーションの再ホスト、削除、再構築、または置換などの戦略について説明します。
 author: njray
-ms.author: v-nanra
+ms.author: brblanch
 ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 53587e37babffe0dc7e6c722643d4bafda646ff3
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: 3f3b9f4ab6c35b62a35120e4fcc9ae9f8352253a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94881046"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018892"
 ---
 <!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->

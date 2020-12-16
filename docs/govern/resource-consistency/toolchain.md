@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 55238bee14d03883e94c87612f8819f92d981d01
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: b9f47d30ec02a3fe1bb45a734abc15a2c7a68242
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879134"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019283"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure のリソース整合性ツール
 
@@ -41,18 +41,18 @@ ms.locfileid: "88879134"
 | Azure Policy の規則を割り当てる                    | はい | はい | はい | いいえ  | いいえ  | いいえ | いいえ |
 | 自動修復を適用する                  | いいえ  | いいえ  | いいえ  | はい | いいえ  | いいえ | いいえ |
 | 請求の管理                               | はい | いいえ  | いいえ  | いいえ  | いいえ  | いいえ | いいえ |
-| ディザスター リカバリーのためにリソースを計画する         | はい | はい | はい | いいえ  | いいえ  | はい | はい |
-| 障害発生時または SLA 違反時にデータを復旧する     | いいえ | いいえ  | いいえ  | いいえ  | いいえ  | はい | はい |
-| 障害発生時または SLA 違反時にアプリケーションとデータを復旧する     | いいえ | いいえ  | いいえ  | いいえ  | いいえ  | はい | はい |
+| ディザスター リカバリーのためにリソースを計画する         | はい | ○ | ○ | いいえ  | いいえ  | ○ | はい |
+| 障害発生時または SLA 違反時にデータを復旧する     | いいえ | いいえ  | いいえ  | いいえ  | いいえ  | ○ | はい |
+| 障害発生時または SLA 違反時にアプリケーションとデータを復旧する     | いいえ | いいえ  | いいえ  | いいえ  | いいえ  | ○ | はい |
 
 リソースの整合性に関するこれらのツールおよび機能と共に、デプロイされたリソースのパフォーマンスと正常性の問題を監視する必要があります。 [Azure Monitor](/azure/azure-monitor/overview) は Azure の既定の監視およびレポート ソリューションです。 Azure Monitor には、ご利用のクラウド リソースを監視するための機能が用意されています。 次の一覧に、一般的な監視要件に対応する機能を示します。
 
 | ツール | [Azure Portal](https://azure.microsoft.com/features/azure-portal) | [Application Insights](/azure/application-insights/app-insights-overview) | [Log Analytics](/azure/azure-monitor/log-query/log-query-overview) | [Azure 監視 REST API](/rest/api/monitor) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
-| 仮想マシンの利用統計情報をログに記録する                 | いいえ           | いいえ                   | はい           | いいえ                     |
-| 仮想ネットワークの利用統計情報をログに記録する              | いいえ           | いいえ                   | はい           | いいえ                     |
-| PaaS サービスの利用統計情報をログに記録する                   | いいえ           | いいえ                   | はい           | いいえ                     |
-| アプリケーションの利用統計情報をログに記録する                     | いいえ           | はい                  | いいえ            | いいえ                     |
+| 仮想マシンの利用統計情報をログに記録する                 | いいえ           | いいえ                   | ○           | いいえ                     |
+| 仮想ネットワークの利用統計情報をログに記録する              | いいえ           | いいえ                   | ○           | いいえ                     |
+| PaaS サービスの利用統計情報をログに記録する                   | いいえ           | いいえ                   | ○           | いいえ                     |
+| アプリケーションの利用統計情報をログに記録する                     | いいえ           | ○                  | いいえ            | いいえ                     |
 | レポートとアラートを構成する                       | はい          | いいえ                   | いいえ            | はい                    |
 | 定期的なレポートまたはカスタム分析をスケジュールする        | いいえ           | いいえ                   | いいえ            | いいえ                     |
 | ログとパフォーマンス データを視覚化および分析する     | はい          | いいえ                   | いいえ            | いいえ                     |

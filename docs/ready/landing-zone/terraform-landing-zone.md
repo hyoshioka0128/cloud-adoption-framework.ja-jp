@@ -2,17 +2,18 @@
 title: Terraform を使用してランディング ゾーンを構築する
 description: HashiCorp の Terraform を使用してランディング ゾーンを構築する方法を説明します。
 author: arnaudlh
-ms.author: arnaul
+ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1aeb06a9e103365ad5cbcfd9e23055fa47f00eb7
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: a1e2de16aea7af82795c4227675c5dc72ccf523c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994787"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012517"
 ---
 <!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 

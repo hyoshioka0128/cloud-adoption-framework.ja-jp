@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 546c5103489ce15f066d9856078abadc6440cef2
-ms.sourcegitcommit: 8d3a8e7211ceb94ba351914a622f293f72286039
+ms.custom: think-tank
+ms.openlocfilehash: 5dfb82b25f4e864ee3126ac70eb5c7c23dd36065
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90988892"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014319"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -118,7 +119,7 @@ Contoso と他のユーザーは、このシナリオの次の前提条件を満
 | **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)に関する記事で説明されているように、Azure インフラストラクチャを設定します。 |
 | **オンプレミスのサーバー** | オンプレミス vCenter Server では、バージョン 5.5、6.0、または 6.5 を実行している必要があります。 <br><br> ESXi ホストでは、バージョン 5.5、6.0、または 6.5 を実行している必要があります。 <br><br> ESXi ホスト上で 1 つ以上の VMware VM が実行されている必要があります。 |
 | **オンプレミスの VM** | Azure での実行が保証されている [Linux マシンを確認します](/azure/virtual-machines/linux/endorsed-distros)。 |
-| **Database Migration Service** | Azure Database Migration Service には、[互換性のあるオンプレミスの VPN デバイス](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)が必要です。 <br><br> オンプレミスの VPN デバイスを構成できる必要があります。 外部に接続するパブリック IPv4 アドレスが必要です。 このアドレスを NAT デバイスの内側に割り当てることはできません。 <br><br> オンプレミスの SQL Server データベースにアクセスできることを確認します。 <br><br> Windows ファイアウォールは、ソース データベース エンジンにアクセスできる必要があります。 [データベース エンジン アクセス用の Windows Firewall を構成する](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)方法を確認してください。 <br><br> データベース マシンの前面にファイアウォールがある場合は、SMB ポート 445 経由でのデータベースおよびファイルへのアクセスを許可する規則を追加します。 <br><br> ソース SQL Server インスタンスへの接続に使用される資格情報と、SQL Managed Instance をターゲットとする資格情報は、sysadmin サーバー ロールのメンバーである必要があります。 <br><br> Azure Database Migration Service がソース データベースをバックアップするために使用できるネットワーク共有が、オンプレミスのデータベースに存在する必要があります。 <br><br> ソース SQL Server インスタンスを実行しているサービス アカウントに、ネットワーク共有に対する書き込みアクセス許可があることを確認します。 <br><br> ネットワーク共有に対するフル コントロールのアクセス許可を持つ、Windows ユーザーとパスワードをメモしておきます。 Azure Database Migration Service では、これらのユーザーの資格情報を偽装して、Azure Storage コンテナーにバックアップ ファイルがアップロードされます。 <br><br> SQL Server Express のインストール プロセスでは、TCP/IP プロトコルが既定で**無効化**されます。 これが有効になっていることを確認します。 |
+| **Database Migration Service** | Azure Database Migration Service には、[互換性のあるオンプレミスの VPN デバイス](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)が必要です。 <br><br> オンプレミスの VPN デバイスを構成できる必要があります。 外部に接続するパブリック IPv4 アドレスが必要です。 このアドレスを NAT デバイスの内側に割り当てることはできません。 <br><br> オンプレミスの SQL Server データベースにアクセスできることを確認します。 <br><br> Windows ファイアウォールは、ソース データベース エンジンにアクセスできる必要があります。 [データベース エンジン アクセス用の Windows Firewall を構成する](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)方法を確認してください。 <br><br> データベース マシンの前面にファイアウォールがある場合は、SMB ポート 445 経由でのデータベースおよびファイルへのアクセスを許可する規則を追加します。 <br><br> ソース SQL Server インスタンスへの接続に使用される資格情報と、SQL Managed Instance をターゲットとする資格情報は、sysadmin サーバー ロールのメンバーである必要があります。 <br><br> Azure Database Migration Service がソース データベースをバックアップするために使用できるネットワーク共有が、オンプレミスのデータベースに存在する必要があります。 <br><br> ソース SQL Server インスタンスを実行しているサービス アカウントに、ネットワーク共有に対する書き込みアクセス許可があることを確認します。 <br><br> ネットワーク共有に対するフル コントロールのアクセス許可を持つ、Windows ユーザーとパスワードをメモしておきます。 Azure Database Migration Service では、これらのユーザーの資格情報を偽装して、Azure Storage コンテナーにバックアップ ファイルがアップロードされます。 <br><br> SQL Server Express のインストール プロセスでは、TCP/IP プロトコルが既定で **無効化** されます。 これが有効になっていることを確認します。 |
 
 ## <a name="scenario-steps"></a>シナリオのステップ
 
@@ -348,7 +349,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
 1. その他の考慮事項
 
    - Windows の場合、移行をトリガーするときに、VM 上に保留中の Windows 更新プログラムがあってはいけません。 ある場合は、更新が完了するまで、VM にログインすることはできません。
-   - 移行後、**ブート診断**を調べて、VM のスクリーンショットを確認できます。 これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照してください。
+   - 移行後、**ブート診断** を調べて、VM のスクリーンショットを確認できます。 これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照してください。
 
 **さらにサポートが必要な場合**
 
@@ -461,7 +462,7 @@ Contoso の管理者はクイック テスト移行を実行し、VM が正常�
     ![[テスト移行] 項目を示すスクリーンショット。](./media/contoso-migration-rehost-linux-vm/test-migrate.png)
 
 1. **[テスト移行]** で、移行後に Azure VM が配置される Azure 仮想ネットワークを選択します。 非運用環境の仮想ネットワークを使用することをお勧めします。
-1. **テスト移行**ジョブが開始されます。 ポータルの通知でジョブを監視します。
+1. **テスト移行** ジョブが開始されます。 ポータルの通知でジョブを監視します。
 1. 移行が完了したら、Azure portal の **[仮想マシン]** で、移行された Azure VM を確認します。 マシン名には、サフィックス **-Test** が含まれています。
 1. テストが完了したら、 **[マシンのレプリケート]** で Azure VM を選択したまま (または右クリックし)、 **[テスト移行をクリーンアップ]** を選択します。
 

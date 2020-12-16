@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 952462547953c1ade7e426d6369f941484185162
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.custom: think-tank
+ms.openlocfilehash: 2f549617ca5f6bb164d58a6cacf803fce9ac17a5
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776144"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014200"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -221,7 +222,7 @@ Contoso の管理者は、クラスターを設定する前に、各マシン上
 
 ### <a name="configure-the-cloud-witness"></a>クラウド監視を構成する
 
-1. Contoso の管理者は、フェールオーバー クラスター マネージャーの**クォーラム構成ウィザード**を使用してクラウド監視を構成します。
+1. Contoso の管理者は、フェールオーバー クラスター マネージャーの **クォーラム構成ウィザード** を使用してクラウド監視を構成します。
 1. ウィザードで、ストレージ アカウントでクラウド監視を作成することを選択します。
 1. クラウド監視が構成されると、フェールオーバー クラスター マネージャー スナップインに表示されます。
 
@@ -231,7 +232,7 @@ Contoso の管理者は、クラスターを設定する前に、各マシン上
 
 これで、Contoso の管理者は Always On 可用性グループを有効にすることができます。
 
-1. SQL Server 構成マネージャーで、**SQL Server (MSSQLSERVER)** サービスについて **Always On 可用性グループ**を有効にします。
+1. SQL Server 構成マネージャーで、**SQL Server (MSSQLSERVER)** サービスについて **Always On 可用性グループ** を有効にします。
 
     ![[Always On 可用性グループを有効にする] チェック ボックスを示すスクリーンショット。](./media/contoso-migration-rehost-vm-sql-ag/enable-always-on.png)
 
@@ -365,7 +366,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
 1. その他
 
    - Windows の場合、移行をトリガーするときに、VM 上に保留中の Windows 更新プログラムがあってはいけません。 ある場合、Contoso の管理者は更新が完了するまで VM にサインインすることはできません。
-   - 移行後、**ブート診断**を調べて、VM のスクリーンショットを確認できます。 これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照する必要があります。
+   - 移行後、**ブート診断** を調べて、VM のスクリーンショットを確認できます。 これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照する必要があります。
 
 **さらにサポートが必要な場合**
 
@@ -442,7 +443,7 @@ Contoso の管理者は、[ステップバイステップの移行チュート�
 
 ### <a name="create-an-always-on-availability-group"></a>Always On 可用性グループを作成する
 
-1. SQL Server Management Studio で、 **[Always On 高可用性]** を選択したまま (または右クリックして)、**新しい可用性グループ ウィザード**を開始します。
+1. SQL Server Management Studio で、 **[Always On 高可用性]** を選択したまま (または右クリックして)、**新しい可用性グループ ウィザード** を開始します。
 1. **[オプションの指定]** で、可用性グループ `SHAOG` を指定します。 **[データベースの選択]** で、`SmartHotel360` データベースを選択します。
 
     ![[データベースの選択] ペインを示すスクリーンショット。](./media/contoso-migration-rehost-vm-sql-ag/aog-1.png)

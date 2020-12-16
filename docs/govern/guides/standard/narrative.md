@@ -7,13 +7,13 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 84df4aac039fdd0cde7c7c06fb72bd7cd918b39b
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.custom: internal
+ms.openlocfilehash: 2031d327b4cc33be9a3c200de2e83be8e4606510
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108049"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020694"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
 

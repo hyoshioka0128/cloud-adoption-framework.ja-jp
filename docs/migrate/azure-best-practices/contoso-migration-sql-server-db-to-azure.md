@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 733216e9e8a4bca165c1bc73a1fd1870ecba8d3a
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: b95cbdd7dda23366eccd66c8f1ac7265da225e4a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879227"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013826"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -212,5 +213,6 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 
 ## <a name="conclusion"></a>まとめ
 
-この記事では、Contoso が、Microsoft SQL Server ワークロードの Azure への移行を評価し、計画し、実行しました。  
-SQL 移行の過程で利用する Azure DevOps プロジェクトが開発されました。 このプロジェクトは、クラウド導入フレームワークに合わせています。 このプロジェクトが示す手順に従って、必要となる重要な決定を行うことができます。Azure DevOps プロジェクトに移動するには、[こちらをクリック](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration)してください。 
+この記事では、Contoso が、Microsoft SQL Server ワークロードの Azure への移行を評価し、計画し、実行しました。
+
+SQL 移行の過程で利用する Azure DevOps プロジェクトが開発されました。 このプロジェクトは、クラウド導入フレームワークに合わせています。 このプロジェクトが示す手順に従って、必要となる重要な決定を行うことができます。Azure DevOps プロジェクトに移動するには、[こちらをクリック](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration)してください。

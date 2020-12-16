@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 589ba9877b8cbc29b81a529120911557d3a222f4
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.custom: internal
+ms.openlocfilehash: dae5df4aed892e197211887350b506c5ff220183
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195583"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020303"
 ---
 # <a name="identity-baseline-discipline-template"></a>ID ベースライン規範テンプレート
 

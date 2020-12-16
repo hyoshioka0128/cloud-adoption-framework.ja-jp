@@ -2,17 +2,18 @@
 title: クラウド監視のためのスキルの準備
 description: クラウド監視のためのスキルの準備
 author: BrianBlanchard
-ms.author: magoedte
+ms.author: brblanch
 ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7d878cfa4e8fd9234c01fb4647a5b037857bfada
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: e0d099cab106d950f4135b8a935a8cac8c24f46d
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879193"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015713"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 

@@ -2,17 +2,18 @@
 title: クラウド監視戦略
 description: 効果的なクラウド監視戦略を定義する方法について理解を深めます。
 author: mgoedtel
-ms.author: magoedte
+ms.author: brblanch
 ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8b940ff5e1ffa4eeb07ffb7011faa09d24079676
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: 9391f3188ef609df1b5063fd5f5de48b60eb7eb3
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996827"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012687"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 

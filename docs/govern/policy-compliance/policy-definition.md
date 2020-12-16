@@ -7,12 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: dd869d0d7dc60337ab69f8b35778a90cc444e4bc
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: a148e80e11ee54d14e7741a01830717dfb57e745
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879780"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019912"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>クラウド ガバナンスのための企業ポリシーを定義する
 

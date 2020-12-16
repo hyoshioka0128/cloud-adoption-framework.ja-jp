@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a96c4afaa31a7cc399cee0e249e04348623e847d
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: think-tank
+ms.openlocfilehash: 1e21ad6985b6790676005836590a91be1fd50adf
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334682"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015170"
 ---
 <!-- cSpell:ignore mysqldump -->
 
@@ -109,7 +110,7 @@ MariaDB データベースを移行する前に、移行を成功させるため
 Contoso は、オンプレミス環境から、MariaDB データベースが配置されている仮想ネットワークへの仮想ネットワーク ゲートウェイ接続を設定する必要があります。 この接続より、接続文字列が更新されたときに、オンプレミス アプリケーションはゲートウェイを介してデータベースにアクセスできるようになります。
 
   ![移行プロセスを示す図。](./media/contoso-migration-mariadb-to-azure/migration-process.png)
-  " _図 2:移行プロセス_
+  "_図 2:移行プロセス_
 
 #### <a name="migration"></a>移行
 

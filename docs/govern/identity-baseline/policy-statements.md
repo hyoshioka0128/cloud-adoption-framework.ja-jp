@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: dc239f34d54e49310620cd7245abfdaec4019356
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: fd260d898dbc5fa39e17b3ad245b6410101059a6
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880137"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020320"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>ID ベースラインのサンプル ポリシー ステートメント
 
@@ -42,7 +42,7 @@ ms.locfileid: "88880137"
 - ミッション クリティカルなアプリケーションまたは保護対象データに関わるあらゆるリソースに、最小特権アクセス モデルが適用されます。
 - アクセス許可の昇格は例外とするべきであり、クラウド ガバナンス チームはそのような例外をすべて記録する必要があります。 例外は定期的に監査されます。
 
-**使用可能な設計オプション:** [知る必要性](https://wikipedia.org/wiki/Need_to_know)と[最小特権セキュリティ](https://wikipedia.org/wiki/Principle_of_least_privilege)の各原則に基づいてアクセスを制限するロールベースのアクセス制御 (RBAC) 戦略を、[Azure Identity Management のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)を参考にして実装します。
+**使用可能な設計オプション:** [知る必要性](https://wikipedia.org/wiki/Need_to_know)と [最小特権セキュリティ](https://wikipedia.org/wiki/Principle_of_least_privilege)の各原則に基づいてアクセスを制限するロールベースのアクセス制御 (RBAC) 戦略を、[Azure Identity Management のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)を参考にして実装します。
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>オンプレミスとクラウドの間で共有される管理アカウントの欠如
 

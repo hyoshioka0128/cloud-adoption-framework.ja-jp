@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: aa4a7983868af3250ac85cb700ce828cec3fe008
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: 49aafe3f20e238cb9322472168f465cd98843067
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879482"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016019"
 ---
 # <a name="machine-learning-operations-with-azure-machine-learning"></a>Azure Machine Learning を使用した機械学習の運用
 

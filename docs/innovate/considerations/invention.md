@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3770f7ac19b48ade74b1d32ca08e7a9b9496a301
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.custom: internal
+ms.openlocfilehash: eaa5f2eb62ad501c9686caa03b7ad050ffce0777
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662287"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018110"
 ---
 # <a name="develop-digital-inventions"></a>デジタル発明を開発する
 

@@ -2,17 +2,18 @@
 title: クラスターの設計と操作
 description: クラスターの設計と操作用のクラウド導入フレームワークにおける Kubernetes について説明します。
 author: sabbour
-ms.author: asabbour
+ms.author: brblanch
 ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 87761112f0722f46c6b60233145638715287737b
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: ea00548855af6049508d680edb38456bc099df0f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94994362"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017515"
 ---
 <!-- cSpell:ignore autoscaler PDBs -->
 

@@ -2,19 +2,19 @@
 title: Azure イノベーション:デバイスを使用した対話
 description: 接続された知覚機能を備えたエッジ デバイスを介して、イマーシブで効果的なビジネス ソリューションを構築するためのフレームワークを Azure でどのように提供しているかについて説明します。
 author: umarmohamedusman
-ms.author: umarm
+ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b0536b627d9039f348f1c069bb1ae5ed4e4e74a6
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: think-tank, fasttrack-new, AQC
+ms.openlocfilehash: bc0ebac1dd6dd0b0120dc4babd736ef691db7338
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882993"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017770"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -40,10 +40,10 @@ Azure のお客様は、(ユーザー、データ、またはその両方に近�
 
 次のような機能が用意されています。
 
-- **セキュリティが強化された通信チャネル**で IoT デバイスとの間でデータを送受信する。
-- **ビルトイン デバイス管理**とプロビジョニングで大規模な IoT デバイスに接続して管理する。
-- **Event Grid との完全な統合**とサーバーレス コンピューティングによって、IoT アプリケーション開発を簡略化する。
-- **Azure IoT Edge との互換性**を活かして、ハイブリッド IoT アプリケーションを構築する。
+- **セキュリティが強化された通信チャネル** で IoT デバイスとの間でデータを送受信する。
+- **ビルトイン デバイス管理** とプロビジョニングで大規模な IoT デバイスに接続して管理する。
+- **Event Grid との完全な統合** とサーバーレス コンピューティングによって、IoT アプリケーション開発を簡略化する。
+- **Azure IoT Edge との互換性** を活かして、ハイブリッド IoT アプリケーションを構築する。
 
 ::: zone target="docs"
 
@@ -147,7 +147,7 @@ Azure Maps サービスでは、近傍、トラフィック、ルート指定な
 
 位置情報インテリジェンスを使用するには:
 
-1. **Azure Maps アカウント**に移動します。
+1. **Azure Maps アカウント** に移動します。
 2. **[Create Azure Maps accounts]\(Azure Maps アカウントの作成\)** を選択します。
 
 <!-- markdownlint-disable DOCSMD001 -->
@@ -184,7 +184,7 @@ Azure Spatial Anchors は、サポート対象のデバイス プラットフォ
 
 Azure Spatial Anchors を使用するには:
 
-1. **Spatial Anchors アカウント**に移動します。
+1. **Spatial Anchors アカウント** に移動します。
 2. **[Create spatial anchors accounts]\(Spatial Anchors アカウントの作成\)** を選択します。
 
 <!-- markdownlint-disable DOCSMD001 -->
@@ -216,7 +216,7 @@ Azure Spatial Anchors を使用するには:
 
 Azure Remote Rendering を使用するには:
 
-1. **Batch アカウント**に移動します。
+1. **Batch アカウント** に移動します。
 2. **[Create batch accounts]\(Batch アカウントの作成\)** を選択します。
 
 <!-- markdownlint-disable DOCSMD001 -->

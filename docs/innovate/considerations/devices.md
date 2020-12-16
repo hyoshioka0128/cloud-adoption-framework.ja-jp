@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a29dd4b3c23299e8666172cf974a200bffba3ba6
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 30cdc27e87cdc273df576db03f6db980b6b4f776
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880876"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018144"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>アンビエント エクスペリエンス:デバイスの操作
 

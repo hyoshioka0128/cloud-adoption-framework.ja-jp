@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3102bbef6c856dd5fdb7a814b74f03dc40b1363a
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: think-tank
+ms.openlocfilehash: 6cd6c05e390275bf52f4b39dc3f2d901117cdb46
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334716"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014642"
 ---
 <!-- docutune:casing Lakeside SysTrack -->
 <!-- cSpell:ignore msiexec Logix Robocopy UPDs -->
@@ -77,7 +78,7 @@ RDS は、オンプレミスのデータセンターにデプロイされてい�
 - ユーザー プロファイル ディスク (UPD) を FSLogix プロファイル コンテナーに変換します。
 
   ![提案されたアーキテクチャを示す図。](./media/contoso-migration-rds-to-wvd/proposed-architecture.png)
-  " _図 1: 提案されたアーキテクチャ_
+  "_図 1: 提案されたアーキテクチャ_
 
 ## <a name="solution-review"></a>ソリューションのレビュー
 
@@ -127,18 +128,18 @@ Contoso は、`East US 2` Azure リージョンに Windows Virtual Desktop サ�
 1. 新しい Azure Migrate プロジェクトを作成します。
 
    ![新しい Azure Migrate プロジェクトの作成を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/new-azure-migrate.png)
-   " _図 3: 新しい Azure Migrate プロジェクトの作成_
+   "_図 3: 新しい Azure Migrate プロジェクトの作成_
 
-1. サーバーを評価して移行するオプションを選択し、 **VDI** を選択して、ツールを追加します。
+1. サーバーを評価して移行するオプションを選択し、**VDI** を選択して、ツールを追加します。
 
    ![VDI に関する Azure Migrate の目標を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/azure-migrate-goals-vdi.png)
 
-   " _図 4:_ ターゲットの Azure Migrate の目標
+   "_図 4:_ ターゲットの Azure Migrate の目標
 
 1. 移行ジョブ データのサブスクリプション、リソース グループ、プロジェクト名、地域を設定します。
 
    ![Azure Migrate プロジェクトにジョブ データを追加する方法を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/add-a-tool.png)
-   " _図 5: 移行へのジョブ データの追加_
+   "_図 5: 移行へのジョブ データの追加_
 
     > [!IMPORTANT]
     > この場所は、新しい Windows Virtual Desktop 環境がデプロイされる場所ではありません。 ここには、Azure Migrate プロジェクトの関連データのみが格納されます。
@@ -150,7 +151,7 @@ Contoso は、`East US 2` Azure リージョンに Windows Virtual Desktop サ�
 1. これらのツールを移行プロジェクトに追加します。
 
    ![プロジェクトにツールを追加する方法を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/add-tools.png)
-   " _図 6: 移行へのツールの追加_
+   "_図 6: 移行へのツールの追加_
 
 1. Lakeside ツールで **[Azure Migrate への登録]** を選択して、現在の環境についての評価を開始します。
 
@@ -161,12 +162,12 @@ Contoso は、`East US 2` Azure リージョンに Windows Virtual Desktop サ�
 1. Contoso は、Azure Migrate と Lakeside を接続し、要求されたアクセス許可を受け入れます。
 
    ![Azure と Lakeside を接続するためのサインインを示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/lakeside-login.png)
-   " _図 8: Lakeside への Azure の接続_ "
+   "_図 8: Lakeside への Azure の接続_"
 
 1. Contoso は、引き続き Lakeside ツールを使用して新しいテナントを作成し、現在のオンプレミス RDS 環境の評価を開始します。 ダッシュボードから、デプロイ ガイドにアクセスし、評価クライアントをダウンロードして現在の環境に展開します。これらのエージェントから収集されたデータを確認できます。
 
    ![スクリーンショットは、Lakeside ダッシュボードを示しています。](./media/contoso-migration-rds-to-wvd/lakeside-new-tenant-dashboard.png)
-   " _図 9: Lakeside ダッシュボード_
+   "_図 9: Lakeside ダッシュボード_
 1. 十分な量のデータを取得したら、Contoso は評価データを確認して最適な移行パスを決定します。 この評価データには、デスクトップ データからの生の評価データと、さまざまなユーザー ペルソナに分割されたデータが含まれています。 この情報には、次の内容が含まれます。
 
 - 各ペルソナのユーザー数。
@@ -192,12 +193,12 @@ Contoso は、Azure portal を使用して、プールされたリソースに�
 1. 適切なサブスクリプションを選択し、新しい Windows Virtual Desktop ホスト プールを作成します。
 
    ![Windows Virtual Desktop ホスト プールのプロビジョニングを示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/wvd-new-host-pool.png)
-  " _図 11: 新しい Windows Virtual Desktop ホスト プール_
+  "_図 11: 新しい Windows Virtual Desktop ホスト プール_
 
 1. サブスクリプション、リソース グループ、リージョンを指定します。 次に、ホスト プールの名前、デスクトップの種類、既定のデスクトップ ユーザーを選択します。 Contoso は一部のユーザー向けの新しい共有環境から開始するため、デスクトップの種類は **[プール済み]** に設定されています。 既定のデスクトップ ユーザーは空白のままでもかまいません。 仮想マシンの構成に進みます。
 
    ![仮想マシンを構成するための前提条件を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/wvd-new-host-pool-basics-alt.png)
-   " _図 12: 仮想マシンを構成するための前提条件_
+   "_図 12: 仮想マシンを構成するための前提条件_
 
    - Contoso は VM を構成し、 **[サイズの変更]** を選択してカスタム サイズを選ぶか、既定値を使用します。
    - これらのプールされたデスクトップの VM 名のプレフィックスとして、Windows Virtual Desktop が選択されています。
@@ -206,7 +207,7 @@ Contoso は、Azure portal を使用して、プールされたリソースに�
    - 他の設定として、ディスクの種類、AD ドメイン参加UPN フィールド、管理者パスワード、マシンの追加先の OU パス (省略可能)、仮想ネットワーク、サーバーを追加するためのサブネットなどがあります。
 
    ![仮想マシンの構成を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/wvd-new-host-pool-configure-virtual-machines-alt.png)
-   " _図 13: 仮想マシンの構成_
+   "_図 13: 仮想マシンの構成_
 
     > [!NOTE]
     > Contoso は、この手順で新しい仮想ネットワークを作成することはできません。 この手順に進む前に、Contoso では Active Directory にアクセスできる仮想ネットワークを作成しておく必要があります。
@@ -217,7 +218,7 @@ Contoso は、Azure portal を使用して、プールされたリソースに�
 1. Contoso は、Windows Virtual Desktop 設定についてもう 1 つの検証を実行し、プールされた Windows Virtual Desktop 仮想マシンという新しい環境を作成します。
 
    ![仮想マシンの確認と作成を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/wvd-new-host-pool-review-create.png)
-   " _図 14: 仮想マシンの確認と作成_
+   "_図 14: 仮想マシンの確認と作成_
 
 ## <a name="step-3-convert-the-upds-to-fslogix-profile-containers"></a>手順 3:UPD を FSLogix プロファイル コンテナーに変換する
 
@@ -253,17 +254,17 @@ Contoso の移行プロセスの次の手順では、永続仮想マシンを Wi
 1. まず、Azure Migrate: Server Migration ツールで **[検出]** を選択します。
 
    ![Azure Migrate: Server Migration の [検出] オプションを示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/wvd-persistent-discover.png)
-   " _図 15: サーバー移行の検出_
+   "_図 15: サーバー移行の検出_
 
 1. Windows Virtual Desktop へのマシンのレプリケーションを管理する環境で、アプライアンスを変換します。 ターゲット リージョンが、Windows Virtual Desktop 環境が作成された `East US 2` に設定されていることを確認します。
 
    ![レプリケーションを管理するためのアプライアンスの作成を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/wvd-persistent-appliance.png)
-   " _図 16: アプライアンスの変換_
+   "_図 16: アプライアンスの変換_
 
 1. Azure へのレプリケーションを開始するために、レプリケーション プロバイダーがダウンロードされ、インストールされて、Azure Migrate プロジェクトに登録されます。
 
    ![レプリケーションのダウンロードと構成を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/wvd-persistent-replication.png)
-   " _図 17: Azure にレプリケートするための前提条件_
+   "_図 17: Azure にレプリケートするための前提条件_
 
 1. これで、Azure BLOB ストレージへのホストのレプリケーションが開始されます。 Contoso は、VM をテストして運用環境に移行する準備が整うまで、レプリケーションを継続できます。
    - Azure でマシンの実行が開始されたら、Contoso は各マシンに [Windows Virtual Desktop VM エージェント](https://aka.ms/WVDVMAgent)をインストールする必要があります。
@@ -281,7 +282,7 @@ Contoso の移行プロセスの次の手順では、永続仮想マシンを Wi
 1. 最終的な移行前の最後の手順として、Contoso は Azure Windows Virtual Desktop 設定の **[ユーザー]** の項目を選択し、サーバーをそれぞれのユーザーとグループにマップします。
 
    ![Windows Virtual Desktop リソースをユーザーとグループに割り当てる方法を示すスクリーンショット。](./media/contoso-migration-rds-to-wvd/wvd-persistent-user-mapping.png)
-   " _図 18: 最終的な移行の前の最後の手順_
+   "_図 18: 最終的な移行の前の最後の手順_
 
 ホスト プールがユーザーに割り当てられたら、Contoso はそれらのマシンの移行の最終処理を実行し、引き続き、残りのオンプレミス VDI ホストを Azure に徐々に移行します。
 

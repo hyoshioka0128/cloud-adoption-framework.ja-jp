@@ -7,12 +7,13 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 21124dcb5d51d47c6698f83c47ea7124db6cd2a5
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: 5c20b16ecad33f2a20212342a5da04fab92c9023
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605288"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012840"
 ---
 <!-- cSpell:ignore MSPs -->
 

@@ -2,19 +2,19 @@
 title: 仮想データセンター:ネットワーク パースペクティブ
 description: Azure を使用してインフラストラクチャをクラウドにシームレスに拡張し、多層アーキテクチャを構築する方法を理解するために、Azure のクラウド導入フレームワークを利用します。
 author: tracsman
-ms.author: jonor
+manager: rossort
+ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-manager: rossort
-ms.custom: virtual-network
-ms.openlocfilehash: 08eb791a18fa5252bc0e6ba69a07980f8ef73be7
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank, virtual-network
+ms.openlocfilehash: 83a71125116e6239265f03819386f2f0ca6a6771
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713702"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012568"
 ---
 <!-- docutune:disable TODO -->
 <!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->

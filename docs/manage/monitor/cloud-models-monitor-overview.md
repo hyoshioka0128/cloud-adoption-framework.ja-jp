@@ -2,17 +2,18 @@
 title: クラウド デプロイ モデルの監視戦略
 description: Azure 向けのクラウド導入フレームワークを使用して、採用すべきクラウド管理の監視戦略について学習します。
 author: MGoedtel
-ms.author: magoedte
+ms.author: brblanch
 ms.date: 10/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f20625d6672560660bd29d02da135c07b4ea9a5e
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: 199bb384fcdd67c0f6099823daf6d7714aad4843
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879363"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015900"
 ---
 <!-- docutune:casing "Squared Up" Savision APM -->
 <!-- cSpell:ignore Savision -->

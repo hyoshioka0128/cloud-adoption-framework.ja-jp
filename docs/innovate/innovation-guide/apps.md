@@ -2,19 +2,19 @@
 title: Azure イノベーション:アプリケーションを介したエンゲージメント
 description: 既存の Web アプリと API アプリを簡単に最新化し、クラウドネイティブ アプリケーションを構築するのに役立つ Azure サービスについて説明します。
 author: billyclaymyersmsft
-ms.author: wimyers
+ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 922a123fe13b268548e2b51ffcc9d42c05d9c64a
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank, fasttrack-edit, AQC
+ms.openlocfilehash: fb47f30f0e5a04b5f45b5558827a278f1e9493fc
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94880842"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97017821"
 ---
 # <a name="engage-customers-through-applications"></a>アプリケーションを介したカスタマー エンゲージメント
 

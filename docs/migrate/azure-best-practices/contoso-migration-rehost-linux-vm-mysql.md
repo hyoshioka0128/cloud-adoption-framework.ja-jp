@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: db5e966a778ca9ba78a0b664e2968efda3dd3f57
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank
+ms.openlocfilehash: aa9ffb44e1cd67047b4a489266674236b6a72380
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602937"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014370"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
@@ -153,7 +154,7 @@ Contoso が VM を Azure に移行するには、以下の Azure コンポーネ
 Contoso は、Azure への移行後に、Azure 内のレプリケートされた VM に接続できることを望んでいます。 Contoso の管理者は次のことを行う必要があります。
 
 - Azure VM にアクセスするには、移行前に、オンプレミスの Linux VM で SSH を有効にします。 Ubuntu の場合、`sudo apt-get ssh install -y` コマンドを使用してこの手順を実行できます。
-- 移行の実行後、**ブート診断**を調べて、VM のスクリーンショットを表示できます。
+- 移行の実行後、**ブート診断** を調べて、VM のスクリーンショットを表示できます。
 - これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照する必要があります。
 - [Azure Linux エージェント](/azure/virtual-machines/extensions/agent-linux)をインストールします。
 
@@ -222,7 +223,7 @@ Contoso の管理者は、クイック テスト移行を実行した後、完�
     ![[テスト移行] 項目を示すスクリーンショット。](./media/contoso-migration-rehost-linux-vm/test-migrate.png)
 
 1. **[テスト移行]** で、移行後に Azure VM が配置される Azure 仮想ネットワークを選択します。 非運用環境の仮想ネットワークを使用することをお勧めします。
-1. **テスト移行**ジョブが開始されます。 ポータルの通知でジョブを監視します。
+1. **テスト移行** ジョブが開始されます。 ポータルの通知でジョブを監視します。
 1. 移行の完了後、Azure portal の **[仮想マシン]** で、移行された Azure VM を確認します。 マシン名には、サフィックス **-Test** が含まれています。
 1. テストが完了したら、 **[マシンのレプリケート]** で Azure VM を選択したままにします (または右クリックします)。 次に、 **[テスト移行をクリーンアップ]** を選択します。
 

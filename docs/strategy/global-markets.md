@@ -7,12 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7fe9f32320348cae396e1b671b33066408cc300a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: d01e7333d6e5e85576287248073562fc2f2b181f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884744"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012857"
 ---
 # <a name="how-will-global-market-decisions-affect-the-transformation-journey"></a>グローバル マーケットの決定が変革過程に与える影響
 
@@ -32,7 +33,7 @@ ms.locfileid: "88884744"
 
 ユーザーと同じ国でホストされていないアプリケーションにグローバル ユーザーがアクセスする方法を理解しておくことが重要です。 グローバル ワイド エリア ネットワーク (WAN) ではユーザーは既存のネットワーク契約に基づいてルーティングされます。 従来のオンプレミスの世界では、いくつかの制約によって WAN の設計は制限されています。 これらの制約のため、クラウド導入前に十分に理解していない場合、不適切なユーザー エクスペリエンスにつながります。
 
-クラウド モデルでは、商品インターネットにより多くの新しいオプションが開かれます。 複数の地域に広がる従業員の通信は、クラウド導入チームが、優れたユーザー エクスペリエンスを作成し、**かつ**ネットワーク コスト削減の可能性がある WAN ソリューションを設計するのに役立ちます。
+クラウド モデルでは、商品インターネットにより多くの新しいオプションが開かれます。 複数の地域に広がる従業員の通信は、クラウド導入チームが、優れたユーザー エクスペリエンスを作成し、**かつ** ネットワーク コスト削減の可能性がある WAN ソリューションを設計するのに役立ちます。
 
 ## <a name="external-user-usage-patterns"></a>外部ユーザーの使用パターン
 

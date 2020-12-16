@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 757c4ee78b862bf913290d8e2d645b3e0972d427
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: fc3cec59d43d9d1e526c854ac26a8a0fdadf4621
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713719"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020269"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Azure での ID ベースライン ツール
 
@@ -67,7 +67,7 @@ ID は IT セキュリティのコントロール プレーンです。 した�
 | 多要素認証のオプション | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Azure AD 条件付きアクセスを使用したカスタム コントロール*](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Azure AD 条件付きアクセスを使用したカスタム コントロール*](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Azure Multi-Factor Authentication サーバー](/azure/active-directory/authentication/howto-mfaserver-deploy) <br><br> [サードパーティの多要素認証](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs) <br><br> [Azure AD アクセスを使用したカスタム コントロール](/azure/active-directory/conditional-access/controls#custom-controls-preview) |
 | サポートされるユーザー アカウントの状態 | 無効なアカウント <br> (最大 30 分の遅延) | 無効なアカウント <br><br> アカウントのロックアウト <br><br> アカウント期限切れ <br><br> パスワード期限切れ <br><br> サインイン時間 | 無効なアカウント <br><br> アカウントのロックアウト <br><br> アカウント期限切れ <br><br> パスワード期限切れ <br><br> サインイン時間 |
 | Azure AD の条件付きアクセスのオプション | [Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/overview) | [Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/overview) | [Azure AD 条件付きアクセス](/azure/active-directory/conditional-access/overview) <br><br> [AD FS の要求規則](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) |
-| サポートされる従来のプロトコルのブロック | [あり](/azure/active-directory/conditional-access/concept-baseline-protection) | [あり](/azure/active-directory/conditional-access/concept-baseline-protection) | [あり](/windows-server/identity/ad-fs/operations/access-control-policies-w2k12) |
+| サポートされる従来のプロトコルのブロック | [はい](/azure/active-directory/conditional-access/concept-baseline-protection) | [はい](/azure/active-directory/conditional-access/concept-baseline-protection) | [はい](/windows-server/identity/ad-fs/operations/access-control-policies-w2k12) |
 | サインイン ページのロゴ、イメージ、説明のカスタマイズ可能性 | [Azure AD Premium を使用して可能](/azure/active-directory/customize-branding) | [Azure AD Premium を使用して可能](/azure/active-directory/customize-branding) | [はい](/azure/active-directory/connect/active-directory-aadconnect-federation-management#customlogo) |
 | サポートされる高度なシナリオ | [Smart Password Lockout](/azure/active-directory/authentication/concept-sspr-howitworks) <br><br> [漏洩した資格情報レポート](/azure/active-directory/reports-monitoring/concept-risk-events) | [Smart Password Lockout](/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication-smart-lockout) | 複数サイトの低待機時間の認証システム <br><br> [AD FS エクストラネットのロックアウト](/windows-server/identity/ad-fs/operations/configure-ad-fs-extranet-soft-lockout-protection) <br><br> [サード パーティの ID システムとの統合](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) |
 

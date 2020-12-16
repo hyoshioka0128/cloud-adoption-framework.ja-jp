@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5490fe413db98fcccab94905e70d0ac601da9f5e
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: think-tank
+ms.openlocfilehash: 7e549cb26a56602a957866ae6173341c19777d99
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334631"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97014846"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Azure へのアプリケーション移行例の概要
 
@@ -46,7 +47,7 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 このセクションでは、いくつかの一般的な移行シナリオの例を紹介します。 各例では、背景情報や詳細なデプロイ シナリオについて説明すると共に、移行のインフラストラクチャを設定して移行のためのオンプレミス リソースの適合性を評価する方法を示しています。 このセクションには、今後も記事が追加される予定です。
 
 ![移行および最新化プロジェクトのカテゴリの図。](./media/migration-patterns.png)
-" _図 1: 移行および最新化プロジェクトの一般的なカテゴリ_
+"_図 1: 移行および最新化プロジェクトの一般的なカテゴリ_
 
 このシリーズでは、移行戦略を決定付ける、わずかに異なるビジネス目標によって推進される、各移行シナリオに焦点を合わせています。 デプロイ シナリオごとに、次の情報を示します。
 
@@ -142,6 +143,6 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 
 このセクションで紹介している記事の例では、2 つのデモ アプリケーションを使用します。SmartHotel360 と osTicket です。
 
-**SmartHotel360** : このテスト アプリケーションは、Azure を操作するときに使用できるように、Microsoft によって開発されました。 これはオープン ソース ライセンスの下で提供されており、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 これは、SQL Server データベースに接続されている ASP.NET アプリケーションです。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Windows Server 2008 R2 および SQL Server 2008 R2 を実行している 2 つの VMware VM にデプロイされます。 これらのアプリケーション VM はオンプレミスでホストされ、vCenter Server によって管理されています。
+**SmartHotel360**: このテスト アプリケーションは、Azure を操作するときに使用できるように、Microsoft によって開発されました。 これはオープン ソース ライセンスの下で提供されており、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 これは、SQL Server データベースに接続されている ASP.NET アプリケーションです。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Windows Server 2008 R2 および SQL Server 2008 R2 を実行している 2 つの VMware VM にデプロイされます。 これらのアプリケーション VM はオンプレミスでホストされ、vCenter Server によって管理されています。
 
-**osTicket** : このオープンソースのサービス デスク向け発券アプリケーションは、Linux 上で実行されます。 [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Apache 2、PHP 7.0、および MySQL 5.7 を使用して、Ubuntu 16.04 LTS を実行している 2 つの VMware VM にオンプレミスでデプロイされます。
+**osTicket**: このオープンソースのサービス デスク向け発券アプリケーションは、Linux 上で実行されます。 [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 上記の記事で説明するシナリオでは、このアプリケーションの現在のバージョンが、Apache 2、PHP 7.0、および MySQL 5.7 を使用して、Ubuntu 16.04 LTS を実行している 2 つの VMware VM にオンプレミスでデプロイされます。

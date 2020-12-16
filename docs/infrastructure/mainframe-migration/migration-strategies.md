@@ -2,17 +2,18 @@
 title: メインフレームから Azure にアプリケーションを移行する
 description: メインフレーム プラットフォームから、高可用性環境内の Azure ハイパースケールのコンピューティングとストレージに切り替えるための技術的なガイダンスを提供します。
 author: njray
-ms.author: v-nanra
+ms.author: brblanch
 ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 11c95d186383db736f87010db821e3fd0e2340a7
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: 2f4f407df1716008604bfb5b20695f38c48ee114
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94881029"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018807"
 ---
 <!-- docutune:casing "Table 4" "Parallel Sysplex" CF Assembler "Demystifying Mainframe-to-Azure Migration" "ROSCOE Programming Facility" "RPF" "CA Librarian" CA-Panvalet -->
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->

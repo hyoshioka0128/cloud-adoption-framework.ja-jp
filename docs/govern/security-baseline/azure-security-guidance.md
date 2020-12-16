@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: fedfdf9df8e1a1da03b3e689976ac996d1e20e44
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 787a3fb046e4bebdd25b6fbd40b4b8139e91bd32
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879117"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019266"
 ---
 <!-- cSpell:ignore DPIAs inexhaustive -->
 
@@ -46,7 +46,7 @@ ms.locfileid: "88879117"
   - **データ主体要求:** GDPR は、個人 (またはデータ主体) に自分の個人データの処理に関する特定の権利を付与します。 これらの権利には、不正確なデータの修正、データの消去、または処理の制限を行うための権利のほか、データを受信し、そのデータを別のコントローラーに転送する要求を実現するための権利が含まれます。
   - **データ侵害:** GDPR では、個人データの侵害が発生した場合のデータ コントローラーおよびプロセッサに関する通知要件が規定されています。 Microsoft Service Trust Portal では、Microsoft によりどのように侵害が阻止され、侵害がどのように検出され、侵害が発生した場合にどのように対応されて、データ コントローラーであるお客様に通知されるかに関する情報が提供されます。
   - **データ保護影響評価:** Microsoft は、コントローラーが GDPR データ保護影響評価 (DPIA) を完了するのを支援します。 GDPR では、DPIA を実行する必要があるケースの網羅的でない一覧が提供されます。これには、プロファイリングや同様のアクティビティの目的のための自動処理、個人データの特殊なカテゴリの大規模な処理、パブリックにアクセス可能な領域の大規模な系統的監視などがあります。
-  - **その他のリソース**上のセクションで説明したツール ガイダンスに加えて、Microsoft Service Trust ポータルでは、リージョナル コンプライアンスを含むその他のリソース、セキュリティ/コンプライアンス センターに関する追加のリソース、Microsoft Service Trust ポータル、Compliance Manager、プライバシー、および GDPR に関してよく寄せられる質問も提供されます。
+  - **その他のリソース** 上のセクションで説明したツール ガイダンスに加えて、Microsoft Service Trust ポータルでは、リージョナル コンプライアンスを含むその他のリソース、セキュリティ/コンプライアンス センターに関する追加のリソース、Microsoft Service Trust ポータル、Compliance Manager、プライバシー、および GDPR に関してよく寄せられる質問も提供されます。
 - **リージョナル コンプライアンス:** Microsoft Service Trust ポータルでは、チェコ共和国、ポーランド、ルーマニアを含むさまざまなリージョンのコンプライアンス要件を満たすための、Microsoft オンライン サービスに関する多数のコンプライアンス ドキュメントおよびガイダンスが提供されます。
 
 ## <a name="unique-intelligent-insights"></a>他にはないインテリジェントな分析情報

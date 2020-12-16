@@ -2,17 +2,18 @@
 title: Azure のセキュリティに関するベスト プラクティス
 description: Microsoft が Azure のセキュリティに関するベスト プラクティスとして推奨していることについて説明します。
 author: JanetCThomas
-ms.author: mas
+ms.author: brblanch
 ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 7031a8feb3b034b394e7c437e58f5aca3189a23f
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: internal
+ms.openlocfilehash: 254975d16c19626881dcc872517b1af58a2998fd
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996980"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013282"
 ---
 # <a name="azure-security-best-practices"></a>Azure のセキュリティに関するベスト プラクティス
 
@@ -335,7 +336,7 @@ Azure セキュリティ ベンチマーク「[LT-1: Azure リソースの脅威
 
 **対象者**: これは、多くの場合、[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)または [ID とキー管理](../organize/cloud-security-identity-keys.md)の担当チームによって行われる、チーム間の作業です。
 
-- **スポンサー:** 通常、これは [ID とキー管理](../organize/cloud-security-identity-keys.md)および[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)部門が支援します (ただし、一部の組織では、CISO または CIO による支援が必要になる場合があります)。
+- **スポンサー:** 通常、これは [ID とキー管理](../organize/cloud-security-identity-keys.md)および [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)部門が支援します (ただし、一部の組織では、CISO または CIO による支援が必要になる場合があります)。
 - **実行:** これは次のことを含む共同作業です。
   - **[セキュリティのアーキテクチャ](../organize/cloud-security-architecture.md):** セキュリティと IT アーキテクチャのドキュメントと図に組み込む
   - **[ポリシーと標準](../organize/cloud-security-policy-standards.md):** ポリシーを文書化し、コンプライアンスを監視する
@@ -372,7 +373,7 @@ ID ベースの認証は、秘密のローテーション、ライフサイク�
 
 **対象者**: これは、多くの場合、[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)または [ID とキー管理](../organize/cloud-security-identity-keys.md)の担当チームによって行われる、チーム間の作業です。
 
-- **スポンサー:** 通常、これは[セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)または [ID とキー管理](../organize/cloud-security-identity-keys.md)部門が支援します (ただし、一部の組織では CISO または CIO による支援が必要になる場合があります)。
+- **スポンサー:** 通常、これは [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)または [ID とキー管理](../organize/cloud-security-identity-keys.md)部門が支援します (ただし、一部の組織では CISO または CIO による支援が必要になる場合があります)。
 - **実行:** これは次のことを含む共同作業です。
   - **[セキュリティのアーキテクチャ](../organize/cloud-security-architecture.md):** セキュリティおよび IT アーキテクチャの図とドキュメントに組み込まれています。
   - **[ポリシーと標準](../organize/cloud-security-policy-standards.md):** ポリシーを文書化し、コンプライアンスを監視する。

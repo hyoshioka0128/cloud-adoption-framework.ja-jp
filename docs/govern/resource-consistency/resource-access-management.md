@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 93c5e61124a4045aef7bad6bca6838650288de22
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: dc2a86cbdac8b3acb8cc62eff197af93b79f75e6
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879440"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019402"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -23,7 +23,7 @@ ms.locfileid: "88879440"
 
 ## <a name="what-is-an-azure-resource"></a>Azure リソースとは
 
-Azure では、*リソース*という用語は、Azure によって管理されるエンティティを指します。 たとえば、仮想マシン、仮想ネットワーク、およびストレージ アカウントはすべて、Azure リソースと呼ばれます。
+Azure では、*リソース* という用語は、Azure によって管理されるエンティティを指します。 たとえば、仮想マシン、仮想ネットワーク、およびストレージ アカウントはすべて、Azure リソースと呼ばれます。
 
 ![リソースの図](../../_images/govern/design/governance-1-9.png)
 *図 1: リソース。*

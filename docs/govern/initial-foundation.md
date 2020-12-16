@@ -7,19 +7,19 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: b06017819e84bf24d4e82f916baddf4949112f6d
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: cdbba0f9047a351af9240712f69e4886ea4750d6
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880001"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020116"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の確立
 
 クラウド ガバナンスの確立は、広範な反復作業です。 特にクラウド導入における初期の方法論の実行中は、スピードとコントロールのバランスを効果的に取ることは困難です。 クラウド導入フレームワーク内のガバナンスのガイダンスは、導入へのアジャイルなアプローチを通じてそのバランスを実現するのに役立ちます。
 
-この記事では、初期のガバナンス基盤を確立するための 2 つのオプションを示します。 どちらのオプションでも、導入計画が実装され、要件がより明確に定義されるので、確実にガバナンス制約をスケーリングおよび展開できます。 既定では、初期基盤により分離とコントロールの位置が想定されます。 また、リソースのガバナンスよりもリソース編成に重点が置かれます。 この軽量の開始点は、ガバナンスに対する*実用最小限の製品 (MVP)* と呼ばれます。 MVP の目的は、ガバナンスの初期位置の確立に対する障壁を削減して、具体的な各種リスクに対処するソリューションの迅速な成熟化を可能にすることです。
+この記事では、初期のガバナンス基盤を確立するための 2 つのオプションを示します。 どちらのオプションでも、導入計画が実装され、要件がより明確に定義されるので、確実にガバナンス制約をスケーリングおよび展開できます。 既定では、初期基盤により分離とコントロールの位置が想定されます。 また、リソースのガバナンスよりもリソース編成に重点が置かれます。 この軽量の開始点は、ガバナンスに対する *実用最小限の製品 (MVP)* と呼ばれます。 MVP の目的は、ガバナンスの初期位置の確立に対する障壁を削減して、具体的な各種リスクに対処するソリューションの迅速な成熟化を可能にすることです。
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>クラウド導入フレームワークを既に使用
 

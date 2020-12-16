@@ -4,15 +4,16 @@ description: クラウドの導入を促進するのに役立つ、クラウド�
 author: JanetCThomas
 ms.author: janet
 ms.date: 04/14/2020
+ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.topic: article
-ms.openlocfilehash: 975a848cbc2afe9ded2d0dea56b69717f796c5d3
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 3cf80c711a207f19f00cd5e6d4ea37f36d92b721
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879176"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012313"
 ---
 # <a name="tools-and-templates"></a>ツールとテンプレート
 
@@ -32,8 +33,7 @@ ms.locfileid: "94879176"
 | [クラウド導入過程トラッカー](/assessments/?id=cloud-journey-tracker&mode=pre-assessment) | ビジネスのニーズに基づいてクラウド導入パスを特定します。 |
 | [戦略&nbsp;と&nbsp;計画&nbsp;テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) | クラウド導入の戦略と計画を実行するときの決定事項を文書化します。 |
 | [クラウド導入計画ジェネレーター](../plan/template.md) | テンプレートを使用して [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) にバックログをデプロイすることで、プロセスを標準化します。 |
-| [Strategy-Plan-Ready-Govern ADO テンプレートの使用](https://azuredevopsdemogenerator.azurewebsites.net/?name=strategyplan) | テンプレートを使用して [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) にバックログをデプロイすることで、プロセスを標準化します。 |  
-
+| [Strategy-Plan-Ready-Govern ADO テンプレートの使用](https://azuredevopsdemogenerator.azurewebsites.net/?name=strategyplan) | テンプレートを使用して [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) にバックログをデプロイすることで、プロセスを標準化します。 |
 
 ## <a name="ready"></a>Ready
 

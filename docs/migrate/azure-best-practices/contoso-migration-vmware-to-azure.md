@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c2e35b3401d4a4eaeb534befee9e33c4b1a83df
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.custom: think-tank
+ms.openlocfilehash: f41366beaef98e9f53082f43d4c45d662ffdb0ed
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94996420"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013860"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 

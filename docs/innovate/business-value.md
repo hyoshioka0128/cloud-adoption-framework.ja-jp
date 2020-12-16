@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 72435c49c195c7972da348080136ab02ed2e5375
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: dc0f644439fad82558dfe22501ff700f54709c46
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604441"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018416"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>イノベーションのビジネス価値の合意を築く
 
@@ -30,7 +31,7 @@ ms.locfileid: "89604441"
 4 つのすべての質問に対する回答が十分にドキュメント化されている場合、この演習の残りの部分を完了する必要はない可能性があります。 さいわいなことに、どのドキュメントも簡単にテストできます。 2 つの短いミーティングを設定して、ドキュメントと組織の内部連携の両方をテストします。 コミットされたビジネスの利害関係者を 1 つのミーティングに招待し、参加している開発チームとの別のミーティングをセットアップします。 各グループに上記の 4 つの質問をして、結果を比較します。
 
 > [!NOTE]
-> 既存のドキュメントは、どちらのチームともミーティングの前には共有**しないでください**。 真の連携が存在する場合は、各グループのメンバーが、指針となる仮説に言及するか、列挙することもあるはずです。
+> 既存のドキュメントは、どちらのチームともミーティングの前には共有 **しないでください**。 真の連携が存在する場合は、各グループのメンバーが、指針となる仮説に言及するか、列挙することもあるはずです。
 
 <!-- -->
 

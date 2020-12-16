@@ -2,18 +2,19 @@
 title: Azure エンタープライズ スキャフォールディング
 description: Azure エンタープライズ スキャフォールディングは Azure 向けの Microsoft Cloud Adoption Framework になりました。 ガバナンスのニーズに対処し、機敏性のニーズとのバランスを取る方法について説明します。
 author: rdendtler
-ms.author: rodend
+ms.author: brblanch
 ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
+ms.custom: think-tank
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: ba49dee351be0476bc8224da933a7f0372c2bc61
-ms.sourcegitcommit: 78d54d02a863eaf498260f406edc4af81fea7c93
+ms.openlocfilehash: 641e457707037ec8807df13f7c6dcef6372c6fe1
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96557571"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97012449"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->

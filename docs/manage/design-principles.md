@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e271f4da4b4cb5f4dc93f5e67793d0c0531957b6
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: b89f54d380bf8a9e6a828c951d5720f464f2d888
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879550"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97016155"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>設計の原則と高度な運用の適用
 

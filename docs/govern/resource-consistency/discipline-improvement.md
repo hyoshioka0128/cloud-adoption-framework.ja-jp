@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 7ed4d7cf129cf3e8938288edc558f82bcc2bdf61
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: df9df8cdc1dec1b9388e01c2d82d3f4ec54bf935
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604693"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019555"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>リソースの整合性の規範の改良
 
@@ -82,7 +82,7 @@ ms.locfileid: "89604693"
 **最小限の推奨されるアクティビティ:**
 
 - [リソース整合性ツールチェーン](./toolchain.md)をデプロイ前準備から本稼働に移行します。
-- アーキテクチャ ガイドライン ドキュメントを更新し、主な利害関係者に配布します。
+- アーキテクチャ ガイドラインのドキュメントを更新し、主な利害関係者に配布します。
 - ユーザー導入の促進に役立つ教材やドキュメント、認識の伝達、インセンティブなどのプログラムを開発します。
 - 定義済みの SLA 要件をサポートする自動修復のためのスクリプトやツールが既にある場合は移行します。
 

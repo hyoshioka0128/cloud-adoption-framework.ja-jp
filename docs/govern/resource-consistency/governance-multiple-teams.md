@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 0ef7c38fe9deedd45f0c8c9c902e852d671f8cf8
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: internal
+ms.openlocfilehash: 0d9f84b8d3f657aa3981cc44c681315252126d42
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94881114"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020167"
 ---
 <!-- TODO: Rationalize name formats. -->
 

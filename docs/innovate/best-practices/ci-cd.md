@@ -7,12 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e5187346baf700eb2166008c1501825bfd54c0b4
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.custom: internal
+ms.openlocfilehash: 65f105ab86343613ee85809859b5865a8c04019c
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449831"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97018620"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Azure での導入を強化するツール
 

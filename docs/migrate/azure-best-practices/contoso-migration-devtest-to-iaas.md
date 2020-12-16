@@ -7,12 +7,13 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96175c54a3121252cf2e4d1b2649f1de46775988
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.custom: think-tank
+ms.openlocfilehash: 4bbfbd34ba9ad727692b6b25c400bd2eb8675bbf
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334699"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015322"
 ---
 <!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
 
@@ -70,7 +71,7 @@ Contoso は、目標と要件を明確にした後、デプロイ ソリュー�
 
   ![オンプレミスと仮想マシンに関して提案されたシナリオ アーキテクチャの図。](./media/contoso-migration-devtest-to-iaas/architecture.png)
 
-  " _図 1:提案されたアーキテクチャ_
+  "_図 1:提案されたアーキテクチャ_
 
 ### <a name="database-considerations"></a>データベースの考慮事項
 
@@ -104,7 +105,7 @@ Contoso では、Azure Migrate のエージェントレスの方法を使用し�
 
 ![移行プロセスの図。](./media/contoso-migration-devtest-to-iaas/migration-process-az-migrate.png)
 
-" _図 2:移行プロセスの概要_
+"_図 2:移行プロセスの概要_
 
 ### <a name="azure-services"></a>Azure サービス
 
@@ -150,7 +151,7 @@ Contoso では、Azure Migrate:Server Migration ツールによって Azure VM �
 
        ![.OVA ファイルをダウンロードする画面のスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-download-ova.png)
 
-       " _図 3:.OVA file ファイルのダウンロード_
+       "_図 3:.OVA file ファイルのダウンロード_
 
     1. インポートしたイメージを起動し、次のステップを含めてツールを構成します。
 
@@ -158,7 +159,7 @@ Contoso では、Azure Migrate:Server Migration ツールによって Azure VM �
 
          ![前提条件を設定するためのセクションのスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-setup-prerequisites.png)
 
-         " _図 4:前提条件の設定_
+         "_図 4:前提条件の設定_
 
        - ツールを Azure サブスクリプションにポイントします。
 

@@ -7,13 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 7cb649e28f0449e5f06ae14277eb137fad4f6135
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: internal
+ms.openlocfilehash: ca690c8137a8059febbd8f444f7397ad061c650a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712750"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97019657"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>規制コンプライアンスの概要
 
