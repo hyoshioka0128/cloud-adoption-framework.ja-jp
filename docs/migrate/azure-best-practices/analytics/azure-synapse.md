@@ -1,18 +1,19 @@
 ---
 title: Azure Synapse Analytics の高可用性
-description: Azure Synapse Analytics の機能を使用して、高可用性とディザスター リカバリーの要件に対処します。
+description: Azure Synapse Analytics の機能を使用して、高可用性とディザスター リカバリーの要件に対処する方法について説明します。
 author: v-hanki
 ms.author: brblanch
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 93b7a66a1c30ec4975a2cef092b54f56023eed0a
-ms.sourcegitcommit: 163e703d9cbf90b26d96087c836a9cbd94fc7e35
+ms.custom: think-tank
+ms.openlocfilehash: d63d656864b55ebabfef8913f021ed0d8d1435b1
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87963283"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97015305"
 ---
 # <a name="high-availability-for-azure-synapse-analytics"></a>Azure Synapse Analytics の高可用性
 

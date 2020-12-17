@@ -1,19 +1,19 @@
 ---
 title: 複雑な企業のガバナンス:コスト管理の規範の改善
-description: Azure 向けクラウド導入フレームワークを使用して、ガバナンスの実用最小限の製品 (MVP) へのコスト制御の追加について説明します。
+description: Azure 向けクラウド導入フレームワークを使用して、複雑なガバナンスの実用最小限の製品 (MVP) へのコスト制御の追加について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: b77cfb5982a06e9a3d182817010423fa01fcf2b0
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: c16202cb85d4447a75aeabb621604cf883f20d4a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880970"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97021255"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>複雑な企業向けのガバナンス ガイド: コスト管理の規範の改善
 
@@ -60,16 +60,16 @@ ms.locfileid: "88880970"
 - デプロイの計画時には、運用ワークロードのホスティングに関連付けられている必須のクラウド リソースがあれば、それを文書化する必要があります。 このドキュメントは、予算の精度を高め、より高価なオプションの使用を防ぐ追加の自動化ツールを準備するのに役立ちます。 このプロセス中には、Azure Reserved Virtual Machine Instances やライセンス コストの削減など、クラウド プロバイダーが提供するさまざまな割引ツールについて検討する必要があります。
 - すべてのアプリケーション所有者は、クラウド コストをより適切に管理するために、ワークロードの最適化実習のトレーニングに参加する必要があります。
 
-## <a name="incremental-improvement-of-the-best-practices"></a>ベスト プラクティスの段階的な改善
+## <a name="incremental-improvement-of-best-practices"></a>ベスト プラクティスの段階的な改善
 
-記事のこのセクションでは、ガバナンス MVP の設計を改善して、新しい Azure ポリシーおよび Azure Cost Management と Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
+記事のこのセクションでは、ガバナンス MVP の設計を改善して、新しい Azure ポリシーと Azure Cost Management + Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
-1. Azure エンタープライズ ポータルで、カナダのデプロイについて部門管理者に請求するように変更します。
-2. Azure Cost Management と Billing を実装します。
-    1. サブスクリプション パターンとリソース グループ化のパターンに合わせて適切なレベルのアクセス スコープを設定します。 以前の記事で定義したガバナンス MVP との整合を前提にすると、これには、高レベルのレポート作成を実行するクラウド ガバナンスチームの**登録アカウントのスコープ**のアクセスが必要になります。 ガバナンス以外のその他のチーム (カナダの調達チームなど) には、**リソース グループのスコープ**のアクセスが必要になります。
-    2. Azure Cost Management と Billing で予算を編成します。
+1. Azure EA ポータルで、カナダのデプロイについて部門管理者に請求するように変更します。
+2. Azure Cost Management + Billing を実装します。
+    1. サブスクリプション パターンとリソース グループ化のパターンに合わせて適切なレベルのアクセス スコープを設定します。 以前の記事で定義したガバナンス MVP との整合を前提にすると、これには、高レベルのレポート作成を実行するクラウド ガバナンスチームの **登録アカウントのスコープ** のアクセスが必要になります。 ガバナンス以外のその他のチーム (カナダの調達チームなど) には、**リソース グループのスコープ** のアクセスが必要になります。
+    2. Azure Cost Management + Billing で予算を編成します。
     3. 初期の推奨事項を確認して対応します。 レポート プロセスをサポートするために定期プロセスを作成します。
-    4. 初期用と繰り返し用の両方について、Azure Cost Management と Billing のレポートを構成して実行します。
+    4. 初期用と繰り返し用の両方について、Azure Cost Management + Billing のレポートを構成して実行します。
 3. Azure Policy を更新します。
     1. 偏差を識別するために、タグ付け、管理グループ、サブスクリプション、およびリソース グループの値を監査します。
     2. SKU サイズ オプションを確定して、デプロイ計画ドキュメントに記載されている SKU にデプロイを制限します。

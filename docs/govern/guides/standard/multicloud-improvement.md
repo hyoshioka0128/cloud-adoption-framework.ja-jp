@@ -7,13 +7,13 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 125a356f619c447366a32b8ba7d680ed5513b4ca
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.custom: internal
+ms.openlocfilehash: 24a6bb40601f40df0fff9f6b21c225413f796b90
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880375"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020660"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>標準的な企業のガバナンス ガイド:マルチクラウドの改善
 
@@ -61,7 +61,7 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 
 ## <a name="incremental-improvement-of-governance-practices"></a>ガバナンス プラクティスの段階的な改善
 
-記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーおよび Azure Cost Management と Billing の実装を含めます。 これらの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
+記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーと Azure Cost Management + Billing の実装を含めます。 これらの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
 1. ネットワークを接続する。 この手順は、クラウド ガバナンス チームの支援を受け、ネットワーク チームと IT セキュリティ チームが実行します。 MPLS/専用回線のプロバイダーから新しいクラウドに接続を追加することにより、ネットワークが統合されます。 ルーティング テーブルとファイアウォールの構成を追加することにより、環境の間のアクセスとトラフィックを管理します。
 2. ID プロバイダーを統合する。 セカンダリ クラウドでホストされているワークロードに応じて、ID プロバイダーの統合に対してさまざまな選択肢があります。 以下に例を示します。
@@ -70,9 +70,9 @@ Microsoft では、お客様が特定の目的で複数のクラウドを採用�
 3. Azure Site Recovery に資産を追加する。
     1. Azure Site Recovery は、最初からハイブリッドまたはマルチクラウド ツールとして設計されました。
     2. セカンダリ クラウド内の VM は、オンプレミスの資産の保護に使用されているのと同じ Azure Site Recovery プロセスによって保護できる場合があります。
-4. Azure Cost Management と Billing に資産を追加します。
-    1. Azure Cost Management と Billing は、最初からマルチクラウド ツールとして設計されました。
-    2. セカンダリ クラウド内の仮想マシンは、一部のクラウド プロバイダーの Azure Cost Management と Billing と互換性がある場合があります。 追加コストが適用される場合があります。
+4. Azure Cost Management + Billing に資産を追加します。
+    1. Azure Cost Management + Billing は、最初からマルチクラウド ツールとして設計されました。
+    2. セカンダリ クラウド内の仮想マシンは、一部のクラウド プロバイダーの Azure Cost Management + Billing と互換性がある場合があります。 追加コストが適用される場合があります。
 5. Azure Monitor に資産を追加する。
     1. Azure Monitor は、最初からハイブリッド クラウド ツールとして設計されました。
     2. セカンダリ クラウド内の仮想マシンは、Azure Monitor エージェントと互換性があり、運用監視のために Azure Monitor に含めることができる場合があります。

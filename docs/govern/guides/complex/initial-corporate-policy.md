@@ -1,19 +1,19 @@
 ---
 title: 複雑な企業のガバナンス:初期の企業ポリシー
-description: Azure 向けクラウド導入フレームワークを使用して、初期のガバナンスの位置、初期段階のリスク、初期のポリシー ステートメント、および初期の適用プロセスを定義します。
+description: Azure 向けのクラウド導入フレームワークを使用して、初期の複雑なガバナンスの位置、初期段階のリスク、初期のポリシー ステートメント、および初期の適用プロセスを定義します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: cf811e2cb16b599027bbf965005f29877c85d703
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: a3448401a6f26e5c425015fdcc33c7da05808a61
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604904"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97021221"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>複雑な企業向けのガバナンス ガイド: ガバナンス戦略の背景にある初期の企業ポリシー
 
@@ -26,7 +26,7 @@ ms.locfileid: "89604904"
 
 CIO は最近、個人データとミッションクリティカル ポリシーの歴史を理解し、それらのポリシーを変更した場合の影響をレビューするために、IT ガバナンス チームとの会議を開きました。 IT と企業にとってのクラウドの可能性全般についても議論しました。
 
-会議後、IT ガバナンス チームの 2 人のメンバーが、クラウド計画の取り組みを調査およびサポートするための許可を求めました。 ガバナンスの必要性とシャドウ IT を制限する機会を認識していた IT ガバナンス責任者はこのアイデアを支持しました。 このような経緯で、クラウド ガバナンス チームが誕生しました。 このチームはこれから数か月間、クラウドの検証過程で経験する多くの失敗について、ガバナンスの観点からクリーンアップを継承していきます。 これにより*クラウド管理人*の呼び名を得ることになります。 今後のイテレーションの中で、このガイドにおけるチームの役割は刻々と変わっていきます。
+会議後、IT ガバナンス チームの 2 人のメンバーが、クラウド計画の取り組みを調査およびサポートするための許可を求めました。 ガバナンスの必要性とシャドウ IT を制限する機会を認識していた IT ガバナンス責任者はこのアイデアを支持しました。 このような経緯で、クラウド ガバナンス チームが誕生しました。 このチームはこれから数か月間、クラウドの検証過程で経験する多くの失敗について、ガバナンスの観点からクリーンアップを継承していきます。 これにより *クラウド管理人* の呼び名を得ることになります。 今後のイテレーションの中で、このガイドにおけるチームの役割は刻々と変わっていきます。
 
 [!INCLUDE [business-risk](../../../../includes/business-risks.md)]
 

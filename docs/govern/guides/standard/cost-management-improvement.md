@@ -1,19 +1,19 @@
 ---
 title: 標準的な企業のガバナンス:コスト管理の規範の改善
-description: Azure 向けクラウド導入フレームワークを使用して、ガバナンスの実用最小限の製品 (MVP) へのコスト制御の追加について説明します。
+description: Azure 向けクラウド導入フレームワークを使用して、シンプルなガバナンスの実用最小限の製品 (MVP) へのコスト制御の追加について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 046507bea45c8a53d97d05ff9b566a3d1fb7c888
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.custom: internal
+ms.openlocfilehash: b7d2d5d142646d38b0ef6f69706dc25c485e734a
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91107949"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020836"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>標準的な企業のガバナンス ガイド:コスト管理の規範の改善
 
@@ -66,7 +66,7 @@ ms.locfileid: "91107949"
 記事のこのセクションでは、ガバナンス MVP の設計を変更して、新しい Azure ポリシーと Azure Cost Management + Billing の実装を含めます。 これら 2 つの設計変更を組み合わせることで、会社の新しいポリシー ステートメントを実現します。
 
 1. Azure Cost Management + Billing を実装します。
-    1. サブスクリプション パターンとリソース整合性の規範に合致する適切なアクセス スコープを確立します。 以前の記事で定義したガバナンス MVP と整合させることを前提にすると、このためには、高レベルのレポート作成を実行するクラウド ガバナンスチームのために、**登録アカウントのスコープ**へのアクセスが必要です。 ガバナンスの外部にあるその他のチームには、**リソース グループのスコープ**へのアクセスが必要な場合があります。
+    1. サブスクリプション パターンとリソース整合性の規範に合致する適切なアクセス スコープを確立します。 以前の記事で定義したガバナンス MVP と整合させることを前提にすると、このためには、高レベルのレポート作成を実行するクラウド ガバナンスチームのために、**登録アカウントのスコープ** へのアクセスが必要です。 ガバナンスの外部にあるその他のチームには、**リソース グループのスコープ** へのアクセスが必要な場合があります。
     1. Azure Cost Management + Billing で予算を編成します。
     1. 初期の推奨事項を確認して対応します。 レポート作成をサポートするための繰り返しのプロセスを用意します。
     1. 初期用と繰り返し用の両方について、Azure Cost Management + Billing のレポートを構成して実行します。

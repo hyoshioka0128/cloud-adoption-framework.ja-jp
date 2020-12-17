@@ -7,12 +7,13 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1275997c3ca3e2da4947dff20e063e18cd907e9f
-ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
+ms.custom: think-tank
+ms.openlocfilehash: cfba0681dd1a07a787c24561d5ca23e0dbef5bc7
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94879448"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97013996"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -91,7 +92,7 @@ Contoso は、Azure Migrate のエージェントレス方式を使用して、�
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Migrate: Server Migration](/azure/migrate/contoso-migration-rehost-vm) | このサービスは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) と Google Cloud Platform (GCP) VM のインスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われ、VM が Azure で実行されている場合、Azure VM が作成され、料金が発生します。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate)の詳細をご覧ください。  |
+| [Azure Migrate: Server Migration](/azure/migrate/contoso-migration-rehost-vm) | このサービスでは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) と Google Cloud Platform (GCP) VM のインスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われ、VM が Azure で実行されている場合、Azure VM が作成され、料金が発生します。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate)の詳細をご覧ください。  |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -307,5 +308,4 @@ Contoso は、[Azure Cost Management および Billing](/azure/cost-management-b
 
 ## <a name="conclusion"></a>まとめ
 
-この記事では、Contoso が SmartHotel360 アプリケーションを Azure にリホストしました。 管理者は、Azure Migrate を使用して、アプリケーション VM を Azure VM に移行しました。サーバー移行ツール。
-ご使用の環境で同様のプロジェクトを完了するためのガイダンスについては、[サーバー移行プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)の AzureDevOps プロジェクト テンプレートを確認してください。 
+この記事では、Contoso が SmartHotel360 アプリケーションを Azure にリホストしました。 管理者は、Azure Migrate を使用して、アプリケーション VM を Azure VM に移行しました。サーバー移行ツール。 ご使用の環境で同様のプロジェクトを完了するためのガイダンスについては、[サーバー移行プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)の AzureDevOps プロジェクト テンプレートを確認してください。 

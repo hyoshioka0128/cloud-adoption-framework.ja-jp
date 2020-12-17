@@ -7,13 +7,13 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 986c2398b1bf0b00b88d853d8cec072287bd4010
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: a71340b92f0290e94855030393118dcbd5d4e8dc
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604781"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97020711"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>標準的な企業のガバナンス ガイド:ベスト プラクティスの説明
 
@@ -27,13 +27,13 @@ ms.locfileid: "89604781"
 
 開始点を確立するため、この記事では、すべての導入に対する基盤となるガバナンス MVP を作成するために必要なセキュリティ ベースライン、ID ベースライン、デプロイ高速化規範の背後にある高レベルの戦略について説明します。
 
-![増分ガバナンス MVP の例](../../../_images/govern/governance-mvp.png)
+![増分ガバナンス MVP の例を示す図。](../../../_images/govern/governance-mvp.png)
 
 ## <a name="implementation-process"></a>実装プロセス
 
 ガバナンス MVP の実装には、ID、セキュリティ、およびネットワークに対する依存関係があります。 依存関係を解決した後、クラウド管理チームは、ガバナンスのいくつかの側面を決定します。 クラウド ガバナンス チームおよびサポート チームによる決定は、適用資産の 1 つのパッケージによって実装されます。
 
-![増分ガバナンス MVP の例](../../../_images/govern/governance-mvp-implementation-flow.png)
+![ガバナンス MVP の実装プロセスを示す図。](../../../_images/govern/governance-mvp-implementation-flow.png)
 
 この実装は、簡単なチェックリストを使用して記述することもできます。
 

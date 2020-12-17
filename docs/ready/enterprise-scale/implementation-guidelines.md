@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 9e8b1c93cd64f7e5ea6b7b93a17e286d9469e6c4
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: a3d36d29614335bfa758679bbe72e5ed518186e5
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447133"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97023907"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -65,11 +65,11 @@ ms.locfileid: "95447133"
 
 6. ランディング ゾーンに対して、次の表の Azure Policy 割り当てを作成します。
 
-  | 名前                  |     説明                                                                                     |
-  |-----------------------|-----------------------------------------------------------------------------------------------|
-  | [`Deny-PublicEndpoints`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.json) | すべてのランディング ゾーンでパブリック エンドポイントを使用したサービスの作成を拒否します。 |
-  | [`Deploy-VM-Backup`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/Landing%20Zones%20(landingzones)/.AzState/Microsoft.Authorization_policyAssignments-Deploy-VM-Backup.parameters.json) | バックアップが構成され、ランディング ゾーン内のすべての VM に配置されるようにします。 |
-  | [`Deploy-VNet`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | すべてのランディング ゾーンに仮想ネットワークがデプロイされ、リージョンの仮想ハブにピアリングされるようにします。 |
+   | 名前 | 説明 |
+   |--|--|
+   | [`Deny-PublicEndpoints`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.json) | すべてのランディング ゾーンでパブリック エンドポイントを使用したサービスの作成を拒否します。 |
+   | [`Deploy-VM-Backup`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /Landing%20Zones%20(landingzones) /.AzState/Microsoft.Authorization_policyAssignments-Deploy-VM-Backup.parameters.json) | バックアップが構成され、ランディング ゾーン内のすべての VM に配置されるようにします。 |
+   | [`Deploy-VNet`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | すべてのランディング ゾーンに仮想ネットワークがデプロイされ、リージョンの仮想ハブにピアリングされるようにします。 |
 
 #### <a name="sandbox-governance-guidance"></a>サンドボックス ガバナンスのガイダンス
 
@@ -83,9 +83,9 @@ ms.locfileid: "95447133"
 
   | 名前                  |     説明                                                                                     | 割り当てに関する注釈 |
   |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | サブスクリプションの外部にある他の VNET への VNET ピアリング接続が作成されないようにします。 | このポリシーがサンドボックス管理グループ階層のスコープ レベルにのみ割り当てられるようにしてください。 |
-  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | サンドボックス サブスクリプションでの作成が拒否されるリソース。 これにより、ハイブリッド接続リソース (_VPN、ExpressRoute、Virtual WAN_ など) が作成されなくなります。 | このポリシーを割り当てるときは、次のリソースを選択して、その作成を拒否します。VPN ゲートウェイ: `microsoft.network/vpngateways`、P2S ゲートウェイ: `microsoft.network/p2svpngateways`、仮想 WAN: `microsoft.network/virtualwans`、仮想 WAN ハブ: `microsoft.network/virtualhubs`、ExpressRoute 回線: `microsoft.network/expressroutecircuits`、ExpressRoute ゲートウェイ: `microsoft.network/expressroutegateways`、ExpressRoute ポート: `microsoft.network/expressrouteports`、ExpressRoute 交差接続: `microsoft.network/expressroutecrossconnections` およびローカル ネットワーク ゲートウェイ: `microsoft.network/localnetworkgateways`。 |
-  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | 各サンドボックス サブスクリプションに対して、電子メール アラートが有効になっている予算が確実に存在するようにします。 この予算は、各サブスクリプションで `default-sandbox-budget` という名前になります。 | ポリシーの割り当て時に、パラメーターが既定値から変更されていない場合、予算 (`default-sandbox-budget`) は 1000 通貨しきい値の制限付きで作成され、サブスクリプションの所有者と共同作成者 (RBAC ロールの割り当てに基づきます) に、予算しきい値の 90% と 100% で電子メール アラートが送信されます。 |
+  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState) | サブスクリプションの外部にある他の VNET への VNET ピアリング接続が作成されないようにします。 | このポリシーがサンドボックス管理グループ階層のスコープ レベルにのみ割り当てられるようにしてください。 |
+  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json) | サンドボックス サブスクリプションでの作成が拒否されるリソース。 これにより、ハイブリッド接続リソース (*VPN、ExpressRoute、Virtual WAN* など) が作成されなくなります。 | このポリシーを割り当てるときは、次のリソースを選択して、その作成を拒否します。VPN ゲートウェイ: `microsoft.network/vpngateways`、P2S ゲートウェイ: `microsoft.network/p2svpngateways`、仮想 WAN: `microsoft.network/virtualwans`、仮想 WAN ハブ: `microsoft.network/virtualhubs`、ExpressRoute 回線: `microsoft.network/expressroutecircuits`、ExpressRoute ゲートウェイ: `microsoft.network/expressroutegateways`、ExpressRoute ポート: `microsoft.network/expressrouteports`、ExpressRoute 交差接続: `microsoft.network/expressroutecrossconnections` およびローカル ネットワーク ゲートウェイ: `microsoft.network/localnetworkgateways`。 |
+  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState) | 各サンドボックス サブスクリプションに対して、電子メール アラートが有効になっている予算が確実に存在するようにします。 この予算は、各サブスクリプションで `default-sandbox-budget` という名前になります。 | ポリシーの割り当て時に、パラメーターが既定値から変更されていない場合、予算 (`default-sandbox-budget`) は 1000 通貨しきい値の制限付きで作成され、サブスクリプションの所有者と共同作成者 (RBAC ロールの割り当てに基づきます) に、予算しきい値の 90% と 100% で電子メール アラートが送信されます。 |
 
 ### <a name="global-networking-and-connectivity"></a>グローバル ネットワークと接続性
 
@@ -116,9 +116,9 @@ ms.locfileid: "95447133"
 
 | 名前                     | 説明                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
-| [`Deploy-FirewallPolicy`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json) | ファイアウォール ポリシーを作成します。 |
-| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | このポリシーにより、仮想ハブ、Azure Firewall、および VPN または ExpressRoute ゲートウェイがデプロイされます。 また、Azure Firewall への接続された仮想ネットワークのデフォルト ルートも構成されます。 |
-| [`Deploy-VWAN`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vWAN.parameters.json)| 仮想 WAN をデプロイします。 |
+| [`Deploy-FirewallPolicy`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json) | ファイアウォール ポリシーを作成します。 |
+| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | このポリシーにより、仮想ハブ、Azure Firewall、および VPN または ExpressRoute ゲートウェイがデプロイされます。 また、Azure Firewall への接続された仮想ネットワークのデフォルト ルートも構成されます。 |
+| [`Deploy-VWAN`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vWAN.parameters.json) | 仮想 WAN をデプロイします。 |
 
 ### <a name="security-governance-and-compliance"></a>セキュリティ、ガバナンス、およびコンプライアンス
 
@@ -140,19 +140,19 @@ ms.locfileid: "95447133"
 
 | 名前                       | 説明                                                        |
 |----------------------------|--------------------------------------------------------------------|
-| [`Allowed-ResourceLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Allowed-ResourceLocation.parameters.json)   | リソースをデプロイできる許可されたリージョンを指定します |
-| [`Allowed-RGLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Allowed-RGLocation.parameters.json)         | リソース グループをデプロイできる許可されたリージョンを指定します。 |
-| [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | 会社に対して拒否されているリソース。 |
-| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.json)     | Azure Web アプリケーション ファイアウォールを有効にしてデプロイされたアプリケーション ゲートウェイを許可します。 |
-| [`Deny-IP-Forwarding`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Deny-IP-Forwarding.parameters.json)         | IP 転送を拒否します。 |
-| [`Deny-RDP-From-Internet`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Deny-RDP-From-Internet.parameters.json)     | インターネットからの RDP 接続を拒否します。 |
-| [`Deny-Subnet-Without-Nsg`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.json)    | NSG を使用しないサブネットの作成を拒否します。 |
-| [`Deploy-ASC-CE`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.json)              | Log Analytics ワークスペースへの Azure Security Center 連続エクスポートを設定します。 |
-| [`Deploy-ASC-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Deploy-ASC-Monitoring.parameters.json)      | Security Center での監視を有効にします。 |
-| [`Deploy-ASC-Standard`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.json)        | サブスクリプションで Security Center Standard が確実に有効であるようにします。 |
-| [`Deploy-Diag-ActivityLog`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-ActivityLog.parameters.json) | 診断アクティビティ ログを有効にし、Log Analytics に転送します。 |
-| [`Deploy-Diag-LogAnalytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | |
-| [`Deploy-VM-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-VM.parameters.json) | VM の監視が確実に有効であるようにします。 |
+| [`Allowed-ResourceLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyAssignments-Allowed-ResourceLocation.parameters.json)   | リソースをデプロイできる許可されたリージョンを指定します |
+| [`Allowed-RGLocation`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyAssignments-Allowed-RGLocation.parameters.json)         | リソース グループをデプロイできる許可されたリージョンを指定します。 |
+| [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | 会社に対して拒否されているリソース。 |
+| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.json)     | Azure Web アプリケーション ファイアウォールを有効にしてデプロイされたアプリケーション ゲートウェイを許可します。 |
+| [`Deny-IP-Forwarding`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyAssignments-Deny-IP-Forwarding.parameters.json)         | IP 転送を拒否します。 |
+| [`Deny-RDP-From-Internet`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyAssignments-Deny-RDP-From-Internet.parameters.json)     | インターネットからの RDP 接続を拒否します。 |
+| [`Deny-Subnet-Without-Nsg`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.json)    | NSG を使用しないサブネットの作成を拒否します。 |
+| [`Deploy-ASC-CE`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.json)              | Log Analytics ワークスペースへの Azure Security Center 連続エクスポートを設定します。 |
+| [`Deploy-ASC-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyAssignments-Deploy-ASC-Monitoring.parameters.json)      | Security Center での監視を有効にします。 |
+| [`Deploy-ASC-Standard`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.json)        | サブスクリプションで Security Center Standard が確実に有効であるようにします。 |
+| [`Deploy-Diag-ActivityLog`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-ActivityLog.parameters.json) | 診断アクティビティ ログを有効にし、Log Analytics に転送します。 |
+| [`Deploy-Diag-LogAnalytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | |
+| [`Deploy-VM-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-VM.parameters.json) | VM の監視が確実に有効であるようにします。 |
 
 ### <a name="platform-identity"></a>プラットフォーム ID
 
@@ -164,8 +164,8 @@ ms.locfileid: "95447133"
 
 | 名前                         | 説明                                                               |
 |------------------------------|---------------------------------------------------------------------------|
-| [`DataProtectionSecurityCenter`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/) | Security Center によって自動的に作成されたデータ保護。 |
-| [`Deploy-VNet-Identity`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | ホストへの ID サブスクリプション (DC など) に仮想ネットワークをデプロイします。 |
+| [`DataProtectionSecurityCenter`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/) | Security Center によって自動的に作成されたデータ保護。 |
+| [`Deploy-VNet-Identity`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | ホストへの ID サブスクリプション (DC など) に仮想ネットワークをデプロイします。 |
 
 ### <a name="platform-management-and-monitoring"></a>プラットフォームの管理と監視
 
@@ -181,8 +181,8 @@ ms.locfileid: "95447133"
 
 | 名前                   | 説明                                                                            |
 |------------------------|----------------------------------------------------------------------------------------|
-| [`Deploy-LA-Config`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.json) | Log Analytics ワークスペースの構成。 |
-| [`Deploy-Log-Analytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | Log Analytics ワークスペースをデプロイします。 |
+| [`Deploy-LA-Config`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.json) | Log Analytics ワークスペースの構成。 |
+| [`Deploy-Log-Analytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | Log Analytics ワークスペースをデプロイします。 |
 
 ## <a name="file--new--region"></a>[ファイル] > [新規] > [リージョン]
 
@@ -200,7 +200,7 @@ ms.locfileid: "95447133"
 
 | 名前                     | 説明                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
-| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | このポリシーにより、仮想ハブ、Azure Firewall、ゲートウェイ (VPN または ExpressRoute) がデプロイされます。 また、Azure Firewall への接続された仮想ネットワークのデフォルト ルートも構成されます。 |
+| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | このポリシーにより、仮想ハブ、Azure Firewall、ゲートウェイ (VPN または ExpressRoute) がデプロイされます。 また、Azure Firewall への接続された仮想ネットワークのデフォルト ルートも構成されます。 |
 
 <!-- docutune:disable -->
 

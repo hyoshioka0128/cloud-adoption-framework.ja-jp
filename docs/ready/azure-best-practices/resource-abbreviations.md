@@ -7,13 +7,13 @@ ms.date: 12/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: readiness, fasttrack-edit, internal
-ms.openlocfilehash: 1c93f83a1a5a7f55d13d8486e03c12a7954ddddd
-ms.sourcegitcommit: 5df186dd1fe56852126bab3d18c7d8b7864c08ce
+ms.custom: internal, readiness, fasttrack-edit
+ms.openlocfilehash: af3f214209911c5aad8f31f11cdb88c7886c3f51
+ms.sourcegitcommit: 17743480a4b1d0516d61f1045380597203ec1de0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96772465"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97521757"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure リソースの種類に推奨される省略形
 
@@ -159,6 +159,7 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 |--|--|
 | Automation アカウント | `aa-` |
 | Azure Monitor アクション グループ | `ag-` |
+| Azure Purview インスタンス | `pview-` |
 | ブループリント | `bp-` |
 | ブループリント割り当て | `bpa-` |
 | Key Vault | `kv-` |

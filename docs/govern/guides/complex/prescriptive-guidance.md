@@ -7,13 +7,13 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: governance
-ms.openlocfilehash: 8d3562e210461882e363707ec708275e85926a4b
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: internal
+ms.openlocfilehash: bc4f7dec5c3de109b36ad2f62aa1ba2cb644a27f
+ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604878"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97021051"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>複雑な企業向けのガバナンス ガイド: ベスト プラクティスの説明
 
@@ -27,13 +27,13 @@ ms.locfileid: "89604878"
 
 開始点を確立するため、この記事では、ガバナンス MVP を作成するために必要なセキュリティ ベースライン、ID ベースライン、デプロイ高速化規範の背後にある高レベルの戦略について説明します。 MVP は、すべてのクラウド導入の基盤として機能します。
 
-![増分ガバナンス MVP の例](../../../_images/govern/governance-mvp.png)
+![増分ガバナンス MVP の例を示す図。](../../../_images/govern/governance-mvp.png)
 
 ## <a name="implementation-process"></a>実装プロセス
 
 ガバナンス MVP の実装には、ID、セキュリティ、およびネットワークに対する依存関係があります。 依存関係を解決した後、クラウド管理チームは、ガバナンスのいくつかの側面を決定します。 クラウド ガバナンス チームおよびサポート チームによる決定は、適用資産の 1 つのパッケージによって実装されます。
 
-![増分ガバナンス MVP の例](../../../_images/govern/governance-mvp-implementation-flow.png)
+![ガバナンス MVP の実装プロセスを示す図。](../../../_images/govern/governance-mvp-implementation-flow.png)
 
 この実装は、簡単なチェックリストを使用して記述することもできます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "89604878"
 
 使用するサブスクリプション デザインを決めると、サブスクリプションを構造化する方法と、Azure 管理グループを使用してこれらのサブスクリプションのアクセス、ポリシー、およびコンプライアンスを効率的に管理する方法が決まります。 ここでは、ガバナンス チームは[混合サブスクリプション戦略](../../../decision-guides/subscriptions/index.md#mix-subscription-strategies)を選択しました。
 
-- Azure リソースに対する新しい要求が発生したら、各運用地域で主な事業単位ごとに*部門*を設ける必要があります。 各部門内に、アプリケーション アーキタイプごとの*サブスクリプション*を作成する必要があります。
+- Azure リソースに対する新しい要求が発生したら、各運用地域で主な事業単位ごとに *部門* を設ける必要があります。 各部門内に、アプリケーション アーキタイプごとの *サブスクリプション* を作成する必要があります。
 - アプリケーション アーキタイプは、同様のニーズを持つアプリケーションをグループ化する手段です。 たとえば、次のような場合です。
   - 保護されたデータを使用するアプリケーション、管理されたアプリケーション (HIPAA や FedRAMP など)。
   - 低リスク アプリケーション。
