@@ -1,19 +1,18 @@
 ---
 title: Moodle ワーカー ノードを設定する方法
 description: Moodle 用の仮想マシン スケール セットを構成する方法について説明します。 プライベート IP アドレスを使用してコントローラーからスケール セットにアクセスする方法を説明します。
-author: UmakanthOS
+author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: internal
-ms.openlocfilehash: c0b3a01440b907dfd31eadda27d727d9a2afd587
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 902c7b93e88725ec7c37ddaac09f92db8287af49
+ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025726"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97687637"
 ---
 # <a name="how-to-set-up-moodle-worker-nodes"></a>Moodle ワーカー ノードを設定する方法
 
@@ -26,12 +25,6 @@ ms.locfileid: "97025726"
 ### <a name="access-the-virtual-machine-scale-set"></a>仮想マシン スケール セットにアクセスする
 
 仮想マシン スケール セットにアクセスするには、次の手順のようにします。
-
-1. ゲートウェイで仮想マシン スケール セットのインスタンスをプライベート IP アドレスに接続できるようにします。
-
-1. ゲートウェイを使用して仮想マシン スケール セットのインスタンスにアクセスするには、「[仮想ネットワーク ゲートウェイを作成してプライベート IP 経由で接続する方法](./vpn-gateway.md)」の手順に従います。
-
-1. 仮想マシン スケール セットをパスワード対応に設定します。
 
 1. Azure で仮想マシン スケール セットのインスタンスに使用されるプライベート IP アドレスを特定します。
 
@@ -68,7 +61,6 @@ mkdir -p backup/moodle
 ```
 
 ### <a name="configure-the-php-and-web-server"></a>PHP と Web サーバーを構成する
-
 PHP と Web サーバーを構成するには、次の手順のようにします。
 
 1. PHP のバージョンを変数に設定します。

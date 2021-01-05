@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: 作業開始
+  - name: はじめに
     items:
       - name: 概要
         href: get-started/index.md
@@ -213,7 +213,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: アーキテクチャ
+              - name: Architecture
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md
@@ -263,7 +263,7 @@ items:
                     href: ready/considerations/storage-options.md
                   - name: データ オプションの確認
                     href: ready/considerations/data-options.md
-                  - name: ロールベースのアクセス制御
+                  - name: Azure ロールベースのアクセス制御
                     href: ready/considerations/roles.md
                   - name: 一貫性のあるハイブリッド クラウドの作成
                     href: ready/considerations/hybrid-consistency.md
@@ -429,8 +429,6 @@ items:
                         href: scenarios/lamp/moodle/migration-arch.md
                       - name: Moodle 移行のリソース
                         href: scenarios/lamp/moodle/migration-resources.md
-                      - name: 仮想ネットワーク ゲートウェイ接続
-                        href: scenarios/lamp/moodle/vpn-gateway.md
                       - name: 移行の手順
                         href: scenarios/lamp/moodle/migration-start.md
                       - name: Moodle ワーカー ノードの設定
