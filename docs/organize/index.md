@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 751c04935e6a1de490c8792e221a15c7bd4f9011
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 767de31ef0fea9355482894748636ba0a44f1e22
+ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024655"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97909482"
 ---
 # <a name="manage-organizational-alignment"></a>組織の配置を管理する
 
@@ -50,6 +50,7 @@ ms.locfileid: "97024655"
 - [クラウドのセンター オブ エクセレンス](./cloud-center-of-excellence.md):導入の品質、速度、回復性を向上させます。
 - [クラウド プラットフォーム](./cloud-platform.md):プラットフォームを運用し、成熟させます。
 - [クラウド自動化](./cloud-automation.md):導入とイノベーションを促進します。
+- [クラウド データ](./cloud-data.md):データを管理し、分析ソリューションを有効にします。
 - [クラウド セキュリティ](./cloud-security.md):情報セキュリティ リスクを管理します。
 
 これらの各職務は、明示的に、または定義されたチーム構造に従って、ある程度まで、クラウド導入のあらゆる作業で遂行されます。

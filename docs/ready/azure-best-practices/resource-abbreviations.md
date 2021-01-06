@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: af3f214209911c5aad8f31f11cdb88c7886c3f51
-ms.sourcegitcommit: 17743480a4b1d0516d61f1045380597203ec1de0
+ms.openlocfilehash: 33aaf69ecb9712415ee862d3e8e8e4c77abd4d28
+ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97521757"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97909397"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure リソースの種類に推奨される省略形
 
@@ -165,6 +165,7 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 | Key Vault | `kv-` |
 | Log Analytics ワークスペース | `log-` |
 | Application Insights | `appi-` |
+| Azure Purview | `pvw-` |
 
 ## <a name="migration"></a>移行
 
