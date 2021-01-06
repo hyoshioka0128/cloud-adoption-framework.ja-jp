@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 86d4e01e4c5cffa81d7109b30fdac2efc014a351
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4a6c468f17e398286152aa44ea8043cef2881e6d
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023601"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712146"
 ---
 # <a name="identity-decision-guide"></a>ID 決定ガイド
 
@@ -99,7 +99,7 @@ Azure での ID サービスの詳細については、以下を参照してく�
 
 - **[Azure AD](/azure/active-directory/fundamentals/active-directory-whatis)。** Azure AD は、クラウド ベースの ID サービスを提供します。 Azure リソースへのアクセスの管理と、ID 管理、デバイス登録、ユーザー プロビジョニング、アプリケーション アクセス制御、およびデータ保護の制御を可能にします。
 - **[Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity)。** Azure AD Connect ツールを使用すると、既存の ID 管理ソリューションを使用して Azure AD インスタンスに接続でき、クラウド上の既存ディレクトリの同期が可能になります。
-- **[ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/overview)。** Azure AD は、管理プレーン内のリソースへのアクセスを効果的かつ安全に管理するための RBAC を提供します。 ジョブと責任はロールに編成され、ユーザーにはこれらのロールが割り当てられます。 RBAC により、リソースへアクセス可能なユーザーと、そのリソースに実行可能なアクションを制御できます。
+- **[Azure ロールベースのアクセス制御 (Azure RBAC)](/azure/role-based-access-control/overview)。** Azure RBAC では、管理プレーン内のリソースへのアクセスを効果的かつ安全に管理します。 ジョブと責任はロールに編成され、ユーザーにはこれらのロールが割り当てられます。 Azure RBAC により、リソースへアクセス可能なユーザーと、そのリソースに実行可能なアクションを制御できます。
 - **[Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure)。** PIM は、リソース アクセス特権の露出時間を短縮し、レポートとアラートを介して特権の使用への可視性を高めます。 「ジャスト イン タイム」 (JIT) での特権の取得や、短期間での特権の割り当て (割り当て後に自動的に特権が取り消される) により、ユーザーを制限します。
 - **[オンプレミスの Active Directory ドメインと Azure Active Directory を統合する](/azure/architecture/reference-architectures/identity/azure-ad)。** この参照アーキテクチャでは、オンプレミス Active Directory ドメインと Azure AD の間のディレクトリ同期の例を示します。
 - **[Active Directory Domain Services (AD DS) を Azure に拡張する](/azure/architecture/reference-architectures/identity/adds-extend-domain)。** この参照アーキテクチャでは、ドメイン サービスをクラウドベース リソースに拡張するために AD DS サーバーをデプロイする例を示します。

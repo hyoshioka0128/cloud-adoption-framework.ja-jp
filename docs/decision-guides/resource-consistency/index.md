@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: ae48eb9bcbd60244441d7dbe22002b9b4111852f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f88b4b68fe0fde661d611ecaf1b63d0d603741bd
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023312"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712129"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -31,7 +31,7 @@ Azure の[サブスクリプション設計](../subscriptions/index.md)では、
 
 Azure では、[リソース グループ](/azure/azure-resource-manager/management/overview#resource-groups)はサブスクリプション内でリソースを論理的にグループ化するリソース編成のコア メカニズムです。
 
-リソース グループは、共通のライフサイクルのほか、ポリシーやロールベースのアクセス制御 (RBAC) の要件などの共有管理の制約があるリソースのコンテナーとして機能します。 リソース グループに別のリソース グループを入れ子にすることはできません。また、リソースは 1 つのリソース グループにのみ属することができます。 すべてのコントロール プレーン アクションは、リソース グループ内のすべてのリソースに作用します。 たとえば、リソース グループを削除すると、そのグループ内のすべてのリソースも削除されます。 リソース グループの管理には、次のようなパターンを使用することをお勧めします。
+リソース グループは、共通のライフサイクルのほか、ポリシーや Azure ロールベースのアクセス制御 (Azure RBAC) の要件などの共有管理の制約があるリソースのコンテナーとして機能します。 リソース グループに別のリソース グループを入れ子にすることはできません。また、リソースは 1 つのリソース グループにのみ属することができます。 すべてのコントロール プレーン アクションは、リソース グループ内のすべてのリソースに作用します。 たとえば、リソース グループを削除すると、そのグループ内のすべてのリソースも削除されます。 リソース グループの管理には、次のようなパターンを使用することをお勧めします。
 
 1. リソース グループのコンテンツは一緒に開発されますか。
 1. リソース グループのコンテンツは、同じ担当者またはチームによってまとめて管理、更新、および監視されていますか。

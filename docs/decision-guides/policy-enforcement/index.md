@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 5f814fae4919fe23c624d52af5e35ef873bee111
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e9fa4ef47cf7e98779a2e09bff8c6afbc6da7da2
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023465"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712112"
 ---
 # <a name="policy-enforcement-decision-guide"></a>ポリシー適用の意思決定ガイド
 
@@ -36,7 +36,7 @@ ms.locfileid: "97023465"
 - [デプロイ テンプレート](../resource-consistency/index.md)を使用すると、標準化された構造と構成を持つリソースをプロビジョニングできます。
 - [タグ付けと名前付けの標準](../resource-tagging/index.md)を導入すると、オペレーションを組織化し、会計とビジネス上の要件を支える助けになります。
 - トラフィック管理とネットワーク制限を、[ソフトウェア定義ネットワーク](../software-defined-network/index.md)を通して実装できます。
-- [ロール ベースのアクセス制御](../identity/index.md)では、クラウド リソースをセキュリティで保護し、分離することができます。
+- [Azure ロール ベースのアクセス制御](../identity/index.md)では、クラウド リソースをセキュリティで保護し、分離することができます。
 
 これらのガイド全体で説明されている標準的なパターンのアプリケーションが、どのように組織の要件を満たす助けになるかを調べることで、クラウド ポリシーの適用計画を開始します。
 

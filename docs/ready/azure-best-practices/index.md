@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: f8749091754f883b30ed81c104dcafb81538d17e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 39e94b661964ab2ac22f485d09aad93331220b40
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024417"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713700"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 対応性のベスト プラクティス
 
@@ -45,7 +45,7 @@ Azure 環境でアセットを整理およびデプロイします。
 ワークロードのセキュリティと管理の効率性を改善するために、ID とアクセスの制御のインフラストラクチャを設計します。
 
 - [Azure の ID 管理とアクセス制御セキュリティのベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure の組み込み機能を利用した ID 管理とアクセス制御に関するベスト プラクティスについて説明します。
-- [ロールベースのアクセス制御のベスト プラクティス](../considerations/roles.md)。 ユーザー ロールごとに整理されているリソースの詳細なグループベース アクセスを管理できます。
+- [Azure ロールベースのアクセス制御のベスト プラクティス](../considerations/roles.md)。 ユーザー ロールごとに整理されているリソースの詳細なグループベース アクセスを管理できます。
 - [Azure Active Directory でのハイブリッドおよびクラウド デプロイ用の特権アクセスをセキュリティで保護する](/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 クラウドとオンプレミスの環境全体で組織の管理者アクセスと特権アカウントをセキュリティで保護します。
 
 ## <a name="storage"></a>ストレージ
