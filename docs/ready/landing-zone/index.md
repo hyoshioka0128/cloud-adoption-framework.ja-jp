@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: dd1d597f3d58b76540c315976578bd4130755689
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 58c32203c997e9a975f8dca1c4f5e62a69a35e63
+ms.sourcegitcommit: db4595764b8ec22629ea982f4511f0eab95dc6c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013350"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951975"
 ---
 <!-- cSpell:ignore multisubscription -->
 
 # <a name="what-is-an-azure-landing-zone"></a>Azure ランディング ゾーンとは
 
 Azure ランディング ゾーンは、スケール、セキュリティ、ガバナンス、ネットワーク、および ID を考慮したマルチサブスクリプション Azure 環境の出力です。 Azure ランディング ゾーンは、Azure のエンタープライズ規模でのアプリケーションの移行とグリーンフィールド開発を可能にします。 これらのゾーンでは、顧客のアプリケーション ポートフォリオをサポートするために必要なすべてのプラットフォーム リソースが考慮され、サービスとしてのインフラストラクチャとサービスとしてのプラットフォームを区別しないようにします。
+
+ランディング ゾーンは、コードを使用して事前プロビジョニングされたワークロードをホストするための環境です。 詳細については、次のビデオをご覧ください。  
 
 <!-- markdownlint-disable MD034 -->
 
