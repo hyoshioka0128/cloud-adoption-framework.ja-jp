@@ -1,6 +1,6 @@
 ---
-title: 適切に設計したランディング ゾーンの設計領域
-description: 適切に設計したランディング ゾーンの設計領域。
+title: Azure ランディング ゾーンの設計領域
+description: すべての Azure ランディング ゾーンを定義するために使用される一連の標準的な考慮事項を評価します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 298d55794939233e3ee16c2d982c5ea6f70e97f2
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 29a7bd79511f1a7ae7722ef7746f18dac1c75918
+ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026644"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97909380"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
-# <a name="design-areas-of-a-well-architected-landing-zone"></a>適切に設計したランディング ゾーンの設計領域
+# <a name="azure-landing-zone-design-areas"></a>Azure ランディング ゾーンの設計領域
 
 各 Azure ランディング ゾーンの実装オプションからは、デプロイ アプローチと定義された設計原則が提供されます。 実装オプションを選択する前に、この記事を参考にし、次の表にある設計領域について理解を深めてください。
 

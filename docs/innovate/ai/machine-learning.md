@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 8b2cb606ded625dfcfecc5e8168f38d45ac01c2d
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 8518fdb8702b92575069e22c8994e65ef862ea40
+ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446727"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97909414"
 ---
 <!-- cSpell:ignore scikit RLlib ONNX Jupyter -->
 
