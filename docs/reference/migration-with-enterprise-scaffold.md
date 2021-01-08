@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 641e457707037ec8807df13f7c6dcef6372c6fe1
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0c68c14b78238af248034ef14a27ad1323483a74
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012449"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713863"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -174,9 +174,9 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 ![AD アーキテクチャの図](../_images/reference/ad-architecture.png)
 
-Azure が最初にリリースされたときには、サブスクリプションに対するアクセス制御が基本でした (管理者または共同管理者)。 クラシック モデルでのサブスクリプションへのアクセスは、ポータルでのすべてのリソースへのアクセスを意味していました。 きめ細かく制御することができなかったため、加入契約に一定レベルの妥当なアクセスの制御を提供するためにサブスクリプションが急増しました。 このようにサブスクリプションを急増させる必要はなくなりました。 ロールベースのアクセス制御 (RBAC) では、"所有者"、"共同作成者"、"閲覧者" など一般的なアクセス権を提供する標準ロールをユーザーに割り当てることができます。独自のロールを作成することもできます。
+Azure が最初にリリースされたときには、サブスクリプションに対するアクセス制御が基本でした (管理者または共同管理者)。 クラシック モデルでのサブスクリプションへのアクセスは、ポータルでのすべてのリソースへのアクセスを意味していました。 きめ細かく制御することができなかったため、加入契約に一定レベルの妥当なアクセスの制御を提供するためにサブスクリプションが急増しました。 このようにサブスクリプションを急増させる必要はなくなりました。 Azure ロールベースのアクセス制御 (Azure RBAC) では、"所有者"、"共同作成者"、"閲覧者" など一般的なアクセス権を提供する標準ロールをユーザーに割り当てることができます。独自のロールを作成することもできます。
 
-ロールベースのアクセスを実装するとき、次を強くお薦めします。
+Azure ロールベースのアクセス制御を実装するとき、次を強くお薦めします。
 
 - サブスクリプションの管理者/共同管理者を制御します。これらのロールは大きな権限を持っているためです。 Azure クラシック デプロイを管理する必要がある場合は、サブスクリプションの所有者を共同管理者として追加するだけです。
 - 管理グループを使用して、複数のサブスクリプションに[ロール](/azure/azure-resource-manager/management-groups-overview#management-group-access)を割り当て、サブスクリプション レベルでロールを管理する負荷を減らします。
@@ -321,7 +321,7 @@ Azure Automation、Event Grid、Azure CLI といった Microsoft 製ツールか
 
 [Azure Resource Manager テンプレートを使用する場合のベスト プラクティス](/archive/blogs/mvpawardprogram/azure-resource-manager)などの記事では、[Azure DevOps](/azure/devops/user-guide/?view=vsts) ツール チェーンを含む Azure Resource Manager テンプレートに DevOps アプローチを適用する場合について、ベスト プラクティスや実例から学んだ内容を説明しています。 特に運用環境と QA 環境に関しては、時間と労力を費やして、組織の要件に合うテンプレートのコア セットを開発し、DevOps ツール チェーン (Azure DevOps、Jenkins、Bamboo、TeamCity、Concourse など) を使用して継続的デリバリー パイプラインを開発してください。 [Azure クイックスタート テンプレート](https://github.com/azure/azure-quickstart-templates)の大規模なライブラリが GitHub 上にあり、テンプレートの作成を開始するときに役立ちます。また、Azure DevOps を使用するとクラウドベースの配信パイプラインを迅速に作成できます。
 
-運用サブスクリプションまたはリソース グループのベスト プラクティスとしては、RBAC セキュリティを使用して既定で対話型ユーザーを禁止することと、サービス プリンシパルに基づいて自動化された継続的デリバリー パイプラインを使用して、すべてのリソースをプロビジョニングし、すべてのアプリケーション コードを配信することが目標です。 管理者も開発者も Azure portal を使用してリソースを対話形式で構成する必要はありません。 このレベルの DevOps では協調が求められますが、Azure スキャフォールディングのすべての概念を使用して、組織の拡大縮小のニーズを満たす、一貫性を備えたセキュアな環境を提供します。
+運用サブスクリプションまたはリソース グループのベスト プラクティスとしては、Azure RBAC セキュリティを使用して既定で対話型ユーザーを禁止することと、サービス プリンシパルに基づいて自動化された継続的デリバリー パイプラインを使用して、すべてのリソースをプロビジョニングし、すべてのアプリケーション コードを配信することが目標です。 管理者も開発者も Azure portal を使用してリソースを対話形式で構成する必要はありません。 このレベルの DevOps では協調が求められますが、Azure スキャフォールディングのすべての概念を使用して、組織の拡大縮小のニーズを満たす、一貫性を備えたセキュアな環境を提供します。
 
 > [!TIP]
 > 複雑な Azure Resource Manager テンプレートを設計および開発するときは、[リンクされたテンプレート](/azure/azure-resource-manager/resource-group-linked-templates)を使用して、モノリシック JSON ファイルから複雑なリソースの関係を編成してリファクタリングします。 これにより、リソースを個別に管理できるようになり、テンプレートの内容がわかりやすくなり、テストや再利用を行いやすくなります。

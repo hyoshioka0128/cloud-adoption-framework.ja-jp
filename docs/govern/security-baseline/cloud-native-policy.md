@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 572835ca2416ef50d4fbe9175a1eb34adf33188b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c4db0589f250c88b77b21e994f35356ada877d3a
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019232"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712520"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>クラウド ネイティブなセキュリティ ベースライン ポリシー
 
@@ -40,7 +40,7 @@ ID は、セキュリティの新しい境界制御面となりつつあり、�
 
 クラウドおよびオンプレミス ディレクトリにまたがる ID のためのサンプルのクラウド ネイティブなポリシーには、次のような要件が含まれることがあります。
 
-- ロールベースのアクセス制御 (RBAC)、多要素認証、およびシングル サインオン (SSO) を使用した、リソースへの承認されたアクセス。
+- Azure ロールベースのアクセス制御 (Azure RBAC)、多要素認証、およびシングル サインオン (SSO) を使用した、リソースへの承認されたアクセス。
 - 漏洩が疑われるユーザー ID の迅速な軽減。
 - 過剰な特権が与えられた管理者資格情報の公開を制限するための、タスクごとに付与されるジャストインタイム (JIT) の必要十分なアクセス。
 - Azure Active Directory を使用した、複数の環境にまたがるポリシーへの拡張されたユーザー ID とアクセス。

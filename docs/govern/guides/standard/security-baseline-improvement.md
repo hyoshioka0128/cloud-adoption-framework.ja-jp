@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 6014ee89b7aada82c3d8c398deaadf87b89d224b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 96a88744a401251f6c4863cf514a43fe75b62e69
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020575"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712997"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>標準的な企業のガバナンス ガイド:セキュリティ ベースライン規範の改善
 
@@ -115,7 +115,7 @@ IT およびビジネス部門のリーダーたちは、IT、アプリケーシ
   - 保護対象データの分類が含まれるすべてのサブスクリプションを識別するために、すべての管理グループとサブスクリプションにわたってデータの重大性とデータ分類を監査し、実施します。
   - 承認されたイメージだけを使用することを監査し、実施します。
 - 保護対象データの分類が含まれるすべてのサブスクリプションについて、Azure のポリシーを更新します。
-  - 標準の Azure RBAC ロールのみの使用を監査し、実施します。
+  - 標準の Azure ロールのみの使用を監査し、実施します。
   - 個々のノードのすべてのストレージ アカウントと保存中のファイルに対する暗号化を監査し、実施します。
   - 1 つの NSG をすべての NIC とサブネットに適用することを監査し、強制します。 ネットワーク チームと IT セキュリティ チームは NSG を定義します。
   - ネットワーク インターフェイスごとに、承認されたネットワーク サブネットおよび仮想ネットワークの使用を監査し、強制します。

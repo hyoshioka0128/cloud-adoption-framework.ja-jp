@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 801d24aaec9a381e2b60eb8874a1a70cea2054b5
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6729ff48934cd4e0471ff0ade338b3a10f94e6c4
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015764"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712741"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -206,7 +206,7 @@ _図 7:オンプレミスの Active Directory セキュリティ グループ_
 
 ### <a name="synchronize-active-directory"></a>Active Directory を同期する
 
-Contoso は、オンプレミスとクラウドのリソースへのアクセスに共通の ID を提供することを望んでいます。 そのためには、オンプレミスの Active Directory インスタンスと Azure AD を統合します。 このモデルでは、ユーザーと組織は単一の ID を利用して、オンプレミスのアプリケーションと、Microsoft 365 などのクラウド サービスやインターネット上の何千もの他のサイトにアクセスできます。 管理者は、Active Directory 内のグループを使用して、Azure で[ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/role-assignments-portal) を実装できます。
+Contoso は、オンプレミスとクラウドのリソースへのアクセスに共通の ID を提供することを望んでいます。 そのためには、オンプレミスの Active Directory インスタンスと Azure AD を統合します。 このモデルでは、ユーザーと組織は単一の ID を利用して、オンプレミスのアプリケーションと、Microsoft 365 などのクラウド サービスやインターネット上の何千もの他のサイトにアクセスできます。 管理者は、Active Directory 内のグループを使用して、[Azure ロールベースのアクセス制御 (Azure RBAC)](/azure/role-based-access-control/role-assignments-portal) を実装できます。
 
 統合を容易にするため、Contoso は [Azure AD Connect ツール](/azure/active-directory/hybrid/whatis-hybrid-identity)を使います。 このツールをドメイン コントローラーにインストールして構成すると、オンプレミスの Active Directory ID が Azure AD に同期されます。
 
@@ -254,9 +254,9 @@ Contoso は、オンプレミスとクラウドのリソースへのアクセス
 
       _図 13:グループ メンバーシップ_
 
-### <a name="set-up-rbac"></a>RBAC を設定する
+### <a name="set-up-azure-rbac"></a>Azure RBAC をセットアップする
 
-Azure [RBAC](/azure/role-based-access-control/role-assignments-portal) を使用すると、Azure のきめ細かいアクセス管理が可能になります。 RBAC を使用することで、タスクの実行に必要な範囲のアクセス権だけをユーザーに付与することができます。 適切な RBAC ロールをユーザー、グループ、およびアプリケーションにスコープ レベルで割り当てます。 ロール割り当てのスコープには、サブスクリプション、リソース グループ、または単独のリソースを指定できます。
+[Azure RBAC](/azure/role-based-access-control/role-assignments-portal) を使用すると、Azure のきめ細かいアクセス管理が可能になります。 Azure RBAC を使用すると、タスクの実行に必要な範囲のアクセス権だけをユーザーに付与することができます。 適切な Azure ロールをユーザー、グループ、およびアプリケーションにスコープ レベルで割り当てます。 ロール割り当てのスコープには、サブスクリプション、リソース グループ、または単独のリソースを指定できます。
 
 Contoso の管理者は、オンプレミスから同期した Active Directory グループにロールを割り当てます。
 

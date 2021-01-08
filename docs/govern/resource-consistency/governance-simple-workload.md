@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 72e27d6ac48a6cccc5c35805374f80de309d08b6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 32b46648f28afef63e37e4e3e8c50c532984d331
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019691"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712809"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>シンプルなワークロード向けガバナンス設計
 
@@ -70,7 +70,7 @@ Azure AD のグローバル管理者が、ワークロード所有者を表す *
 ![Azure アカウント所有者が**ワークロード所有者**をサブスクリプションに追加する](../../_images/govern/design/governance-1-5.png)
 *図 5: Azure アカウント所有者がワークロード所有者をサブスクリプションに追加する。*
 
-Azure **アカウント所有者** は、[ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control) ロールを割り当てることで、**ワークロード所有者** にアクセス許可を付与します。 RBAC ロールにより、個々のリソースの種類または一連のリソースの種類に対して **ワークロード所有者** が持つ一連のアクセス許可が指定されます。
+Azure **アカウント所有者** は、[Azure ロール](/azure/role-based-access-control)を割り当てることで、**ワークロード所有者** にアクセス許可を付与します。 Azure ロールにより、個々のリソースの種類または一連のリソースの種類に対して **ワークロード所有者** が持つ一連のアクセス許可が指定されます。
 
 この例では、**アカウント所有者** は、[組み込みの **所有者** ロール](/azure/role-based-access-control/built-in-roles#owner)を割り当てました。
 

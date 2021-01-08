@@ -1,19 +1,18 @@
 ---
 title: Moodle 移行のリソース
 description: Moodle 移行によって Azure 内に作成されるリソースについて説明します。 たとえば、Azure Virtual Network、ネットワーク セキュリティ グループ、サブネットなどがあります。
-author: UmakanthOS
+author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: internal
-ms.openlocfilehash: 6f52d10991db528da083120f60106c0a074a9540
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1ff3f1036e039328733061392b498de44c0706d6
+ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025692"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97687664"
 ---
 # <a name="moodle-migration-resources"></a>Moodle 移行のリソース
 
@@ -69,8 +68,8 @@ ARM テンプレートは、次のストレージ アカウントの種類をサ
 
 ## <a name="scale-set-template"></a>スケール セット テンプレート
 
-スケール セット テンプレートのデプロイによって、[仮想マシン スケール セット](/azure/virtual-machine-scale-sets/overview)が作成されます。 仮想マシン スケール セットを使用すると、自動スケールの仮想マシンのセットをデプロイおよび管理できます。 スケール セット内の仮想マシンの数を手動で拡張したり、[CPU](/visualstudio/profiling/average-cpu-utilization) などのリソースの使用率、メモリの需要、またはネットワーク トラフィックに基づいて自動的にスケールする規則を定義したりすることができます。 インスタンスがスケールアップすると、これにより仮想マシンがデプロイされます。 その後、シェル スクリプトが実行され、このシェル スクリプトによって、Moodle の前提条件がインストールされ、cron ジョブが設定されます。 スケール セットの仮想マシンには、プライベート IP アドレスがあります。 プライベート IP アドレスを使用してスケール セット上の仮想マシンに接続するには、「[仮想ネットワーク ゲートウェイを作成してプライベート IP 経由で接続する方法](./vpn-gateway.md)」の手順に従ってください。
+スケール セット テンプレートのデプロイによって、[仮想マシン スケール セット](/azure/virtual-machine-scale-sets/overview)が作成されます。 仮想マシン スケール セットを使用すると、自動スケールの仮想マシンのセットをデプロイおよび管理できます。 スケール セット内の仮想マシンの数を手動で拡張したり、[CPU](/visualstudio/profiling/average-cpu-utilization) などのリソースの使用率、メモリの需要、またはネットワーク トラフィックに基づいて自動的にスケールする規則を定義したりすることができます。 インスタンスがスケールアップすると、これにより仮想マシンがデプロイされます。 その後、シェル スクリプトが実行され、このシェル スクリプトによって、Moodle の前提条件がインストールされ、cron ジョブが設定されます。 スケール セットの仮想マシンには、プライベート IP アドレスがあります。 スケールセット内の仮想マシン インスタンスの表示に関する詳細と、これらのインスタンスにアクセスする方法については、[仮想マシン スケール セットのドキュメント](/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli#view-the-vm-instances-in-a-scale-set)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
-「[仮想ネットワーク ゲートウェイを作成してプライベート IP 経由で接続する方法](./vpn-gateway.md)」に進みます。
+Moodle 移行プロセスの次の手順として、[Moodle 手動移行手順](migration-start.md)を続けます。

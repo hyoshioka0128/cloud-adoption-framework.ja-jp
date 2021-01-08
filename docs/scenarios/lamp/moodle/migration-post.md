@@ -1,19 +1,18 @@
 ---
 title: Moodle 移行後のフォローアップ方法
 description: Moodle 移行後のフォローアップ方法について説明します。 ログのパスを更新する方法、サーバーを再起動する方法、および移行を完了するために必要なその他の手順を実行する方法について説明します。
-author: UmakanthOS
+author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: internal
-ms.openlocfilehash: 05ad1f31a2ac8e04abb7aa2942d0b564748f870b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4975037dc30aa95bcb4bc58d69914970769e3183
+ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025709"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97687747"
 ---
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>Moodle 移行後のフォローアップ方法
 
@@ -31,7 +30,7 @@ Moodle に移行した後、移行後のタスクを実行して構成を完了�
 
 ## <a name="controller-virtual-machine-scale-set"></a>コントローラー仮想マシン スケール セット
 
-仮想マシン スケール セットの構成を完了するには、次の手順を実行します。
+仮想マシン スケール セットの構成を完了するには、次の手順を実行します。 「[仮想マシン スケール セットにアクセスする](azure-infra-config.md#access-the-virtual-machine-scale-set)」の説明に従って、プライベート IP アドレスを使用して仮想マシン スケール セットのインスタンスに SSH 接続する必要があります。
 
 ### <a name="update-log-paths"></a>ログのパスを更新する
 
@@ -54,7 +53,7 @@ Moodle に移行した後、移行後のタスクを実行して構成を完了�
 
 ### <a name="restart-servers"></a>サーバーを再起動する
 
-次のコマンドを入力して、`nginx` および `php-fpm` サーバーを再起動します。
+次のコマンドを入力して、nginx および php-fpm サーバーを再起動します。
 
 ```bash
 sudo systemctl restart nginx
@@ -112,9 +111,9 @@ sudo systemctl restart php<php version>-fpm
       /moodle/certs/nginx.key;
       ```
 
-   1. Ctrl + O キーを押して変更を保存し、Ctrl + X キーを押してファイルを閉じます。
+    1. Ctrl + O キーを押して変更を保存し、Ctrl + X キーを押してファイルを閉じます。
 
-### <a name="update-the-local-html-copy"></a>ローカル HTML コピーを更新する
+### <a name="update-local-html-copy"></a>ローカル HTML コピーを更新する
 
 Moodle HTML サイト `/moodle/html/moodle` の内容のローカル コピーが、仮想マシン スケール セットのフォルダー `/var/www/html/moodle` に作成されます。 ローカル コピーは、タイムスタンプが変更された場合にのみ更新されます。 タイムスタンプを更新するには、コントローラー仮想マシンで次のコマンドを入力します。
 
@@ -139,6 +138,7 @@ sudo systemctl restart php<php version>-fpm
 ホスティング プロバイダー レベルで次の手順のようにして、DNS 名を Azure Load Balancer の IP にマップします。
 
 1. コントローラー仮想マシンで次のコマンドを入力し、Moodle Web サイトでメンテナンス モードをオフにします。
+
 
    ```bash
    sudo /usr/bin/php admin/cli/maintenance.php --disable

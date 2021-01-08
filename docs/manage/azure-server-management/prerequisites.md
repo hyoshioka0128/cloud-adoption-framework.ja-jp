@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 0262cebac478fd6c6736ea5c30ed2b5bd1cfd055
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6ccfcd565a48f597671af0f8106e8094a51108b8
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016921"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712622"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>フェーズ 1:Azure サーバー管理サービスの前提条件となる計画
 
@@ -71,7 +71,7 @@ Log Analytics ワークスペースと Automation アカウントの配置先と
 
 各リソース グループには、ワークスペースと Azure Automation アカウントを 1 つのペアとして作成できます。 次に、対応する地域のペアを仮想マシンに配置します。
 
-あるいは、データ コンプライアンス ポリシーでリソースを特定のリージョンに置くことが規定されていない場合、1 つのペアを作成してすべての仮想マシンを管理できます。 また、より細かいロールベースのアクセス制御 (RBAC) を行うために、ワークスペースと Automation アカウントのペアを別々のリソース グループに配置することも推奨されます。
+あるいは、データ コンプライアンス ポリシーでリソースを特定のリージョンに置くことが規定されていない場合、1 つのペアを作成してすべての仮想マシンを管理できます。 また、より細かい Azure ロールベースのアクセス制御 (Azure RBAC) を行うために、ワークスペースと Automation アカウントのペアを別々のリソース グループに配置することも推奨されます。
 
 次の図に示した例では、それぞれ異なる地域に配置される 2 つのリソース グループを持つ 1 つのサブスクリプションを使用します。
 

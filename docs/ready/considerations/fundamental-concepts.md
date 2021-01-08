@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: db862e0329769f4093e1cd71f302e31f2aad01af
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 378836786bf0d35f26dccbbf25b59fb4f02332f6
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013520"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713405"
 ---
 # <a name="azure-fundamental-concepts"></a>Azure 基礎の概念
 
@@ -41,7 +41,7 @@ Azure サブスクリプションにはいくつかの目的があります。 A
 - **法的契約。** 各サブスクリプションは、無料試用版や従量課金制などの [Azure プラン](https://azure.microsoft.com/support/legal/offer-details)に関連付けられます。 各プランには固有の料金プラン、特典、使用条件が設定されています。 Azure プランはサブスクリプションを作成するときに選択します。
 - **支払い契約。** サブスクリプションを作成するときに、そのサブスクリプションの支払い情報 (クレジット カード番号など) を指定します。 そのサブスクリプションにデプロイされたリソースにかかる費用が毎月計算され、指定した支払い方法で請求されます。
 - **スケールの境界。** サブスクリプションに対してスケール制限が定義されます。 サブスクリプションのリソースは、設定されたスケール制限を超えることはできません。 たとえば、1 つのサブスクリプションで作成できる仮想マシンの数には制限があります。
-- **管理上の境界。** サブスクリプションは、管理、セキュリティ、ポリシーの境界として機能します。 Azure では、これらのニーズに対応するその他のメカニズムも提供しています (管理グループ、リソース グループ、ロールベースのアクセス制御など)。
+- **管理上の境界。** サブスクリプションは、管理、セキュリティ、ポリシーの境界として機能します。 Azure では、これらのニーズに対応するその他のメカニズムも提供しています (管理グループ、リソース グループ、Azure ロールベースのアクセス制御など)。
 
 ## <a name="azure-subscription-considerations"></a>Azure サブスクリプションに関する考慮事項
 
@@ -58,18 +58,18 @@ Azure サブスクリプションを作成するときに、サブスクリプ�
 Azure では、サブスクリプション、ID、リソースを管理するための 3 種類のロールが定義されています。
 
 - 従来のサブスクリプション管理者ロール
-- Azure ロールベース アクセス制御 (RBAC) ロール
-- Azure Active Directory (Azure AD) 管理者ロール
+- Azure ロール
+- Azure Active Directory (Azure AD) ロール
 
 Azure サブスクリプションのアカウント管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントに割り当てられます。 アカウント管理者はサブスクリプションの請求先所有者です。 アカウント管理者は、Azure portal を介して[サブスクリプション管理者を管理する](/azure/cost-management-billing/manage/add-change-subscription-administrator)ことができます。
 
-既定では、サブスクリプションのサービス管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントにも割り当てられます。 サービス管理者には、サブスクリプションに対して、RBAC ベースの所有者ロールと同等のアクセス許可が与えられます。 サービス管理者には、Azure portal へのフル アクセス権も与えられます。 アカウント管理者は、サービス管理者を別のメール アカウントに変更できます。
+既定では、サブスクリプションのサービス管理者ロールは、Azure サブスクリプションの作成に使用されるメール アカウントにも割り当てられます。 サービス管理者には、サブスクリプションに対して、Azure RBAC ベースの所有者ロールと同等のアクセス許可が与えられます。 サービス管理者には、Azure portal へのフル アクセス権も与えられます。 アカウント管理者は、サービス管理者を別のメール アカウントに変更できます。
 
 Azure サブスクリプションを作成するときに、それを既存の Azure AD テナントに関連付けることができます。 これを行わなかった場合、新しい Azure AD テナントが関連するディレクトリと共に作成されます。 Azure AD ディレクトリのグローバル管理者ロールは、Azure AD サブスクリプションの作成に使用されるメール アカウントに割り当てられます。
 
 メール アカウントは複数の Azure サブスクリプションに関連付けることができます。 アカウント管理者は、サブスクリプションを別のアカウントに譲渡できます。
 
-Azure で定義されているロールの詳細については、「[従来のサブスクリプション管理者ロール、Azure RBAC ロール、および Azure AD 管理者ロール](/azure/role-based-access-control/rbac-and-directory-admin-roles)」を参照してください。
+Azure で定義されているロールの詳細については、「[従来のサブスクリプション管理者ロール、Azure ロール、および Azure AD ロール](/azure/role-based-access-control/rbac-and-directory-admin-roles)」を参照してください。
 
 ## <a name="subscriptions-and-regions"></a>サブスクリプションとリージョン
 
@@ -87,7 +87,7 @@ Azure で定義されているロールの詳細については、「[従来の�
 - [Azure のしくみ](../../get-started/what-is-azure.md)
 - [Azure でのリソース アクセス管理](../../govern/resource-consistency/resource-access-management.md)
 - [Azure リソース マネージャーの概要](/azure/azure-resource-manager/management/overview)
-- [Azure リソースのロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control/overview)
+- [Azure ロールベースのアクセス制御 (Azure RBAC)](/azure/role-based-access-control/overview)
 - [Azure Active Directory とは](/azure/active-directory/fundamentals/active-directory-whatis)
 - [Azure サブスクリプションを Azure Active Directory テナントに関連付けるまたは追加する](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 - [Azure AD Connect のトポロジ](/azure/active-directory/hybrid/plan-connect-topologies)

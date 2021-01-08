@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 6f9a14c2373d7420207ea0f4e849d5d89d6f62c1
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9ef641892ec564e42557a0fb8ad91ff18507c722
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024111"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713337"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -105,7 +105,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 |---|---|
 | [Azure BLOB Storage](/azure/storage/blobs/storage-blobs-introduction) | Azure Blob Storage は、Microsoft のクラウド用オブジェクト ストレージ ソリューションです。 Blob Storage は、テキスト データやバイナリ データなどの大量の非構造化データを格納するために最適化されています。 非構造化データは、特定のデータ モデルまたは定義に従っていないデータ (テキスト データやバイナリ データなど) です。 <br><br> Blob Storage は、次の用途に適しています。 <li> 画像またはドキュメントをブラウザーに直接配信する。 <li> 分散アクセス用にファイルを格納する。 <li> ビデオおよびオーディオをストリーミング配信する。 <li> ログ ファイルに書き込む。 <li> バックアップと復元、ディザスター リカバリー、アーカイブのためのデータを格納する。 <li> オンプレミス サービスまたは Azure ホステッド サービスで分析するデータを格納する。 |
 | [Azure Data Lake Storage Gen 2](/azure/storage/blobs/data-lake-storage-introduction) | Blob Storage では、Microsoft のクラウド向けのエンタープライズ ビッグ データ分析ソリューションである Azure Data Lake Storage Gen2 がサポートされています。 Azure Data Lake Storage Gen2 では、階層型のファイル システムに加え、低コスト、階層型ストレージ、高可用性、強力な一貫性、ディザスター リカバリー機能を含む Blob Storage の利点が提供されます。 |
-| [Azure Disk Storage](/azure/virtual-machines/windows/managed-disks-overview) | Azure Disk Storage は、Azure 仮想マシンを機能強化するための永続的で高パフォーマンスのブロック ストレージを提供します。 Azure ディスクは持続性が高く、セキュリティで保護されており、[Premium または Ultra SSD](/azure/virtual-machines/windows/disks-types) を使用する VM のための業界で唯一の単一インスタンス SLA を提供します。 Azure ディスクは、Azure 仮想マシンの障害ドメインにマップされる可用性セットと Availability Zones によって高可用性を提供します。 さらに、Azure ディスクは Azure の最上位リソースとして管理されます。 既定では、ロールベースのアクセス制御 (RBAC)、ポリシー、タグ付けなどの Azure Resource Manager 機能が提供されます。 |
+| [Azure Disk Storage](/azure/virtual-machines/windows/managed-disks-overview) | Azure Disk Storage は、Azure 仮想マシンを機能強化するための永続的で高パフォーマンスのブロック ストレージを提供します。 Azure ディスクは持続性が高く、セキュリティで保護されており、[Premium または Ultra SSD](/azure/virtual-machines/windows/disks-types) を使用する VM のための業界で唯一の単一インスタンス SLA を提供します。 Azure ディスクは、Azure 仮想マシンの障害ドメインにマップされる可用性セットと Availability Zones によって高可用性を提供します。 さらに、Azure ディスクは Azure の最上位リソースとして管理されます。 既定では、Azure ロールベースのアクセス制御 (Azure RBAC)、ポリシー、タグ付けなどの Azure Resource Manager 機能が提供されます。 |
 | [Azure Files](/azure/storage/files/storage-files-planning) | Azure Files では、フル マネージドのネイティブな SMB ファイル共有が提供され、VM を実行する必要がありません。 Azure Files 共有をネットワーク ドライブとして任意の Azure VM またはオンプレミス マシンにマウントできます。 |
 | [Azure File Sync](/azure/storage/files/storage-sync-files-planning) | Azure File Sync を使用すると、オンプレミスのファイル サーバーの柔軟性、パフォーマンス、互換性を維持したまま、Azure Files 内の組織のファイル共有を一元化できます。 Azure File Sync により、ご利用の Windows Server が Azure ファイル共有の高速キャッシュに変わります。 |
 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure NetApp Files サービスは、エンタープライズ クラスでハイパフォーマンスの従量制課金ファイル ストレージ サービスです。 Azure NetApp Files は、既定で高い可用性を備え、あらゆる種類のワークロードをサポートします。 サービス レベルとパフォーマンス レベルを選び、サービスを通じてスナップショットを設定することができます。 |
@@ -125,7 +125,7 @@ Azure ディスクに適したソリューションの計画については、[A
 
 クラウド内のデータを保護するために、Azure Storage は、データのセキュリティと保存中および転送中のデータの暗号化に関するいくつかのベスト プラクティスを提供しています。 次のようにすることができます。
 
-- RBAC と Azure AD を使用して、ストレージ アカウントをセキュリティで保護します。
+- Azure RBAC と Azure AD を使用して、ストレージ アカウントをセキュリティで保護します。
 - アプリケーションと Azure の間で送信されるデータを、クライアント側暗号化、HTTPS、または SMB 3.0 を使って、セキュリティで保護できます。
 - Azure Storage 暗号化を使用して Azure Storage に書き込まれたら自動的に暗号化されるようにデータを設定します。
 - Shared Access Signature を使って、Azure Storage 内のデータ オブジェクトに対する委任されたアクセス権を付与できます。

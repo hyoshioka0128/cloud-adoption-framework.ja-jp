@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: ece24278ca31bffabaabcd930ca924390c6f39b1
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a91294046e6a36f92929f4bc1afa2f7a365eb3d4
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024587"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713761"
 ---
 # <a name="build-a-cost-conscious-organization"></a>コスト志向の組織を構築する
 
@@ -30,7 +30,7 @@ _図 1: コスト志向の組織の概要_
   - 適切なレポート範囲。
   - 適切なリソース組織 (管理グループ、リソース グループ、サブスクリプション)。
   - 明確なタグ付け戦略。
-  - 適切なアクセス制御 (RBAC)。
+  - 適切なアクセス制御 (Azure RBAC)。
 
 - **アカウンタビリティ:** アカウンタビリティは、可視性と同様に重要です。 アカウンタビリティは導入作業に対する明確な予算から始まります。 予算は、適切に確立され、明確に伝達され、現実的な期待事項に基づいている必要があります。 アカウンタビリティには、適切なレベルのアカウンタビリティを推進するための反復的なプロセスと成長の思考様式が必要です。
 

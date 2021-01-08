@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 249babef5e9be8c8a9bcc1bda417b911073633ad
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ef16aa18163f5631f1b0d310e53605c58535caf9
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012602"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713049"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
@@ -38,7 +38,7 @@ ms.locfileid: "97012602"
 - [VM の作成](/learn/modules/create-windows-virtual-machine-in-azure):Azure portal を使用して仮想マシンを作成します。
 - [Azure のネットワーク](/learn/modules/intro-to-azure-networking): Azure のネットワークの基本の一部と、Azure のネットワークが回復性の向上と待機時間の短縮にどのように役立つかについて説明します。
 - [Azure のコンピューティング オプション](/learn/modules/intro-to-azure-compute): Azure のコンピューティング サービスを確認します。
-- [ロールベースのアクセス制御 (RBAC) を使用したリソースのセキュリティ保護](/learn/modules/secure-azure-resources-with-rbac): RBAC を使用してリソースをセキュリティで保護します。
+- [Azure ロールベースのアクセス制御 (Azure RBAC) でリソースをセキュリティ保護する](/learn/modules/secure-azure-resources-with-rbac):Azure RBAC を使用してリソースをセキュリティで保護します。
 - [データ ストレージ オプション](/learn/modules/intro-to-data-in-azure): Azure データ ストレージの利点。
 
 準備フェーズでは、アーキテクトは、すべての Azure 環境にまたがるソリューションを設計するよう求められます。 アーキテクトは、次のスキル構築リソースを使用して、これらのタスクに対して準備できます。

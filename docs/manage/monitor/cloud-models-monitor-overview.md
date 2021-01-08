@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 199bb384fcdd67c0f6099823daf6d7714aad4843
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2de0e52a1dd6b4e503bdad4e2702ddd2a805011c
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015900"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712486"
 ---
 <!-- docutune:casing "Squared Up" Savision APM -->
 <!-- cSpell:ignore Savision -->
@@ -167,7 +167,7 @@ Operations Manager を使用して Azure でホストされているリソース
 
 - ハイブリッドおよびクラウド リソース全体の監視、各リソースの監視基準、アラートのしきい値などを有効にするための標準と方法を定義します。
 
-- ロールベースのアクセス制御 (RBAC) を構成して、ユーザーとグループに対し、管理対象のリソースからのデータを監視するために必要なアクセス権のみを付与します。
+- Azure ロールベースのアクセス制御 (Azure RBAC) を構成して、ユーザーとグループに対し、管理対象のリソースからのデータを監視するために必要なアクセス権のみを付与します。
 
 - 各チームが必要に応じて監視とアラートの構成を作成、有効化、および調整できるように、自動化とセルフサービスを含めます。
 

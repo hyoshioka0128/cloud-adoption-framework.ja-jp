@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: e0d099cab106d950f4135b8a935a8cac8c24f46d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: dc365b6498c94656fbda65d2693c724c5520f9b8
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015713"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712265"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "97015713"
 
 ## <a name="fundamentals"></a>基礎
 
-- [Azure Resource Manager](/azure/azure-resource-manager/management/overview) の概要では、Azure リソースの管理とデプロイの基本的な概念について説明しています。 企業全体の監視エクスペリエンスを管理する IT スタッフは、管理スコープ、ロールベースのアクセス制御 (RBAC)、 Azure Resource Manager テンプレートの使用、および Azure CLI と Azure PowerShell を使用したリソースの管理について理解する必要があります。
+- [Azure Resource Manager](/azure/azure-resource-manager/management/overview) の概要では、Azure リソースの管理とデプロイの基本的な概念について説明しています。 企業全体の監視エクスペリエンスを管理する IT スタッフは、管理スコープ、Azure ロールベースのアクセス制御 (Azure RBAC)、 Azure Resource Manager テンプレートの使用、および Azure CLI と Azure PowerShell を使用したリソースの管理について理解する必要があります。
 
 - [Azure Policy](/azure/governance/policy/overview) の概要では、Azure Policy を使用してポリシーを作成、割り当て、管理する方法について説明しています。 Azure Policy では、Azure Monitor エージェントのデプロイと構成、Azure Monitor for VMs と Azure Security Center を使用した監視の有効化、診断設定のデプロイ、ゲスト構成設定の監査などを行うことができます。
 
@@ -34,7 +34,7 @@ ms.locfileid: "97015713"
   - [Azure CLI を使用する](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
   - [Azure PowerShell の概要](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- ポリシー、ロールベースのアクセス制御、その他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソース管理のセキュリティを実装する](/learn/paths/implement-resource-mgmt-security)」をご覧ください。
+- ポリシー、Azure ロールベースのアクセス制御、その他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソース管理のセキュリティを実装する](/learn/paths/implement-resource-mgmt-security)」をご覧ください。
 
 - 「[Microsoft Azure リソースとワークロードの監視](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring-update)」では、Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスにあるリソースを監視する方法について学習できます。
 

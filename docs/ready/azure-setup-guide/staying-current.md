@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC, setup
-ms.openlocfilehash: 8bbe9cd6f5283f24684b56e2198eb6b75eba7c38
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a921919768187a18afeaf02ccd2dae5dbf11c0ee
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025998"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713642"
 ---
 <!-- docutune:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
 <!-- cSpell:ignore endjin AzAdvertizer -->
@@ -39,7 +39,7 @@ Azure に関する最新情報を入手するのに役立つより詳しいコ�
 
 - [Azure Friday](https://channel9.msdn.com/shows/Azure-Friday): 毎週発行の、Azure を構築しているエンジニアによる動画。 内容は、デモ、質問への回答、分析情報の共有などです。 [Azure Friday の RSS フィード](https://channel9.msdn.com/Shows/Azure-Friday/feed)を介してサブスクライブします。
 - [Azure グラフ](https://azurecharts.com): この視覚化では、過去 6 か月間に加えられたすべての Azure の更新が表示されます。 Azure の変更を追跡するのに役立つその他の便利なグラフやユーティリティが含まれています。 \*
-- [AzAdvertizer](https://www.azadvertizer.net): Azure Policy、ポリシー イニシアチブブ、ポリシー エイリアス、ロールベースのアクセス制御 (RBAC) などの Azure ガバナンス機能に関するリリースおよび変更の追跡。 \*
+- [AzAdvertizer](https://www.azadvertizer.net): Azure Policy、ポリシー イニシアチブ、ポリシー エイリアス、Azure ロールベースのアクセス制御 (Azure RBAC) などの Azure ガバナンス機能に関するリリースおよび変更の追跡。 \*
 - [Azure Weekly](https://azureweekly.info)*
   - [endjin.com](https://endjin.com) が提供するこのニュースレターには、Microsoft Azure に関するその週のトップ ニュースの概要が含まれます。 また、興味深い歴史的なコンテンツも含まれています。 [Azure Weekly メール](https://azureweekly.info)を介してサブスクライブします。 \*
 

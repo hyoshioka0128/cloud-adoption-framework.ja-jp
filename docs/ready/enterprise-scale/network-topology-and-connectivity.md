@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 81ab318f69a67baa00a9e55c230e8fb443354ae7
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 002d62e1369e0e310e2f12e1b7530a46d6b9050f
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446863"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713538"
 ---
 <!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
@@ -400,7 +400,7 @@ Virtual WAN では幅広い強力な機能が提供されていますが、従�
 
 - Virtual WAN ハブ間またはハブ仮想ネットワーク内に Azure Firewall をデプロイして管理するには、Firewall Manager と Virtual WAN を使用します。 Firewall Manager は、Virtual WAN と通常の仮想ネットワークの両方で、現在一般提供されています。
 
-- グローバル ネットワーク環境全体でセキュリティ体制を管理するには、グローバル Azure Firewall ポリシーを作成して、すべての Azure Firewall インスタンスに割り当てます。 ロールベースのアクセス制御を使用してローカル セキュリティ チームに増分ファイアウォール ポリシーをデリゲートすることにより、特定のリージョンの要件を満たすきめ細かいポリシーを設定できます。
+- グローバル ネットワーク環境全体でセキュリティ体制を管理するには、グローバル Azure Firewall ポリシーを作成して、すべての Azure Firewall インスタンスに割り当てます。 Azure ロールベースのアクセス制御を使用してローカル セキュリティ チームに増分ファイアウォール ポリシーをデリゲートすることにより、特定のリージョンの要件を満たすきめ細かいポリシーを設定できます。
 
 - 組織のご希望に応じて、サポートされているパートナーの SaaS セキュリティ プロバイダーを Firewall Manager 内で構成し、そのようなソリューションを使用して送信接続を保護できます。
 

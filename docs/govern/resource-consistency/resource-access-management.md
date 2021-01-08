@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: dc2a86cbdac8b3acb8cc62eff197af93b79f75e6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 88f91656ad0443db4e6cf150b299dc36f38b2a86
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019402"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712859"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -82,12 +82,12 @@ Azure AD では、ユーザーがテナントにセグメント化されてい�
 
 特定のサブスクリプションでリソースを管理するためのクライアント要求ごとに、関連付けられている Azure AD テナント内にユーザーがアカウントを持っている必要があります。
 
-次の制御では、要求を行うための十分なアクセス許可がユーザーにあることが確認されます。 [ロールベースのアクセス制御 (RBAC)](/azure/role-based-access-control) を使用して、アクセス許可がユーザーに割り当てられます。
+次の制御では、要求を行うための十分なアクセス許可がユーザーにあることが確認されます。 [Azure ロールベースのアクセス制御 (Azure RBAC)](/azure/role-based-access-control) を使用して、アクセス許可がユーザーに割り当てられます。
 
-![RBAC ロールに割り当てられたユーザー](../../_images/govern/design/governance-1-18.png)
-*図 10: テナントの各ユーザーに 1 つ以上の RBAC ロールが割り当てらている。*
+![Azure ロールに割り当てられたユーザー](../../_images/govern/design/governance-1-18.png)
+*図 10:テナントの各ユーザーに 1 つ以上の Azure ロールが割り当てられている。*
 
-RBAC ロールでは、特定のリソースに対してユーザーが適用できる一連のアクセス許可が指定されます。 ロールがユーザーに割り当てられると、これらのアクセス許可が適用されます。 たとえば、[組み込みの `owner` ロール](/azure/role-based-access-control/built-in-roles#owner)を使用すると、ユーザーはリソースに対して任意のアクションを実行できます。
+Azure ロールでは、特定のリソースに対してユーザーが取得できる一連のアクセス許可が指定されます。 ロールがユーザーに割り当てられると、これらのアクセス許可が適用されます。 たとえば、[組み込みの `owner` ロール](/azure/role-based-access-control/built-in-roles#owner)を使用すると、ユーザーはリソースに対して任意のアクションを実行できます。
 
 次の制御は、[Azure リソース ポリシー](/azure/governance/policy)に適うように指定されている設定で、要求が許可されることのチェックです。 Azure リソース ポリシーでは、特定のリソースに対して許可される操作が指定されます。 たとえば、Azure リソース ポリシーを使用して、ユーザーが特定の種類の仮想マシンのみデプロイできるように指定できます。
 

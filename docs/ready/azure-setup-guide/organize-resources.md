@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: 783244673596e58d422f209eff92ff972044bf28
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 95ca26aaa53625578fec9b4b4d169551d9c0f0d6
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024247"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713659"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 
@@ -37,7 +37,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 
 ### <a name="scope-of-management-settings"></a>管理の設定のスコープ
 
-どの管理レベルでも、ポリシーやロール ベースのアクセス制御などの管理設定を適用できます。 選択するレベルで、設定の適用範囲が決まります。 上位レベルの設定が下位レベルに継承されます。 たとえば、サブスクリプションにポリシーを適用すると、そのポリシーはそのサブスクリプション内のすべてのリソース グループとリソースにも適用されます。
+どの管理レベルでも、ポリシーや Azure ロールベースのアクセス制御などの管理設定を適用できます。 選択するレベルで、設定の適用範囲が決まります。 上位レベルの設定が下位レベルに継承されます。 たとえば、サブスクリプションにポリシーを適用すると、そのポリシーはそのサブスクリプション内のすべてのリソース グループとリソースにも適用されます。
 
 通常、より高位のレベルで重要な設定を適用し、より低位のレベルでプロジェクト固有の要件を適用することをお勧めします。 たとえば、組織のすべてのリソースを確実に特定のリージョンに配置したい場合などがあります。 これを行うには、許可された場所を指定するポリシーをサブスクリプションに適用します。 組織内の他のユーザーが新しいリソース グループとリソースを追加すると、許可された場所が自動的に適用されます。 ポリシーについて詳しくは、このガイドのガバナンス、セキュリティ、およびコンプライアンスのセクションをご覧ください。
 

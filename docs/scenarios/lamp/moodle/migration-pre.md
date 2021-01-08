@@ -1,19 +1,18 @@
 ---
 title: Moodle 移行のための準備を行う方法
 description: Moodle 移行のための準備を行う方法について説明します。 Moodle ファイルをバックアップし、移行に必要なリソースを作成する方法について説明します。
-author: UmakanthOS
+author: BrianBlanchard
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: internal
-ms.openlocfilehash: eaed30fb982f10e51de85951a48b89a790549c3a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4a4a3ce829263aaac9806f03ee7b743f0e225016
+ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025624"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97687702"
 ---
 # <a name="how-to-prepare-for-a-moodle-migration"></a>Moodle 移行のための準備を行う方法
 
@@ -41,7 +40,7 @@ Moodle アプリケーションをオンプレミス環境から Azure に移行
 
 既に Azure サブスクリプションがある場合は、このステップをスキップできます。
 
-Azure サブスクリプションがない場合は、[無料で作成する](https://azure.microsoft.com/free/)ことができます。 また、[従量課金制サブスクリプション](https://azure.microsoft.com/offers/ms-azr-0003p/)を設定するか、Azure でサブスクリプションを作成することもできます。
+Azure サブスクリプションがない場合は、[無料で作成する](https://azure.microsoft.com/free/)ことができます。 また、[従量課金制サブスクリプション](https://azure.microsoft.com/offers/ms-azr-0003p/)を設定するか、Azure portal でサブスクリプションを作成することもできます。
 
 - Azure portal を使用してサブスクリプションを作成するには、[[サブスクリプション]](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) を開き、 **[追加]** を選択して、必要な情報を入力します。
 
@@ -53,20 +52,20 @@ Azure サブスクリプションがない場合は、[無料で作成する](ht
   az account set --subscription '<subscription name>'
   ```
 
-  たとえば、次のように入力します。
+ 次にコマンドの例を示します。
 
   `az account set --subscription 'ComputePM LibrarySub'`
 
 ## <a name="create-a-resource-group"></a>リソース グループを作成する
 
-サブスクリプションがセットアップされたら、Azure でリソース グループを作成します。 Azure portal または CLI を使用して、グループを作成できます。
+Azure サブスクリプションの設定が終わったら、Azure にリソース グループを作成します。 Azure portal **または** Azure CLI のいずれかを使用して、リソース グループを作成できます。
 
 - Azure portal を使用する場合は、次の手順のようにします。
 
   1. [[リソース グループ]](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) を開き、 **[追加]** を選択します。
-
+  
   1. サブスクリプション名、リソース グループ名、リージョンを入力します。 利用可能なリージョンの一覧については、「[Azure でのデータ所在地](https://azure.microsoft.com/global-infrastructure/data-residency/)」を参照してください。 後の手順で使用できるように、入力したリソース グループの名前を記録しておきます。
-
+  
   1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
   ![Azure portal の [リソース グループの作成] ページのスクリーンショット。サブスクリプション、リソース グループ、リージョンの各ボックスと、[確認および作成] ボタンがある。](./images/resource-group.png)
@@ -87,7 +86,7 @@ Azure サブスクリプションがない場合は、[無料で作成する](ht
 
 次に、作成したリソース グループ内にストレージ アカウントを作成します。 このストレージ アカウントを使用して、オンプレミスの Moodle データをバックアップします。
 
-Azure portal または Azure CLI を使用して、ストレージ アカウントを作成できます。
+Azure portal **または** Azure CLI のいずれかを使用して、ストレージ アカウントを作成できます。
 
 - Azure portal を使用する場合は、次の手順のようにします。
 
@@ -95,14 +94,14 @@ Azure portal または Azure CLI を使用して、ストレージ アカウン�
 
   1. 次の情報を入力します。
 
-     - お使いのサブスクリプション名
+     - お使いの Azure サブスクリプション名
      - 先ほど作成したリソース グループの名前
      - ストレージ アカウント名
      - 自分のリージョン
-
-  1. **[アカウントの種類]** には、 **[BlobStorage]** を入力します。
-
-  1. **[レプリケーション]** には、 **[読み取りアクセス地理冗長ストレージ (RA-GRS)]** を入力します。
+   
+  1. **[アカウントの種類]** については、ドロップダウン リストから **[BlobStorage]** を選択します。
+  
+  1. **[レプリケーション]** については、ドロップダウン リストから **[読み取りアクセス geo 冗長ストレージ (RA-GRS)]** を選択します。
 
   1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
@@ -114,7 +113,7 @@ Azure portal または Azure CLI を使用して、ストレージ アカウン�
   az storage account create -n <storage account name> -g <resource group name> --sku <storage account SKU> --kind <storage account type> -l <region>
   ```
 
-  たとえば、次のように入力します。
+  次にコマンドの例を示します。
 
   `az storage account create -n onpremisesstorage -g manual_migration --sku Standard_LRS --kind BlobStorage -l eastus`
 
@@ -124,7 +123,7 @@ Azure portal または Azure CLI を使用して、ストレージ アカウン�
 
 オンプレミスの Moodle データをバックアップする前に、次の手順のようにして、Moodle の Web サイトで **メンテナンス モード** を有効にします。
 
-1. オンプレミスの仮想マシンで、次のコマンドを入力します。
+1. オンプレミス環境の Moodle インスタンスから、次のコマンドを入力します。
 
    ```bash
    sudo /usr/bin/php admin/cli/maintenance.php --enable
@@ -136,7 +135,7 @@ Azure portal または Azure CLI を使用して、ストレージ アカウン�
    sudo /usr/bin/php admin/cli/maintenance.php
    ```
 
-オンプレミスの Moodle と moodledata のファイル、構成、およびデータベースをバックアップする場合は、1 つのディレクトリにバックアップします。 次の図は、この概念をまとめたものです。
+オンプレミスの Moodle および moodledata ファイル、構成、データベースをバックアップする場合は、これらのリソースを 1 つのディレクトリにバックアップすることをお勧めします。 次の図は、この概念をまとめたものです。
 
 ![Moodle のバックアップ ストレージ ディレクトリの構造を示す図。](./images/directory-structure.png)
 
@@ -260,7 +259,7 @@ AzCopy 用の Shared Access Signature (SAS) トークンを生成するには、
   az storage container create --account-name <storage account name> --name <container name> --auth-mode login
   ```
 
-  たとえば、次のように入力します。
+  次にコマンドの例を示します。
 
   `az storage container create --account-name onpremisesstorage --name migration --auth-mode login`
 
@@ -284,7 +283,7 @@ AzCopy 用の Shared Access Signature (SAS) トークンを生成するには、
 sudo azcopy copy /home/azureadmin/storage.tar.gz 'https://<storage account name>.blob.core.windows.net/<container name>/<SAS token>'
 ```
 
-たとえば、次のように入力します。
+次にコマンドの例を示します。
 
 `azcopy copy /home/azureadmin/storage.tar.gz 'https://onpremisesstorage.blob.core.windows.net/migration/?sv=2019-12-12&ss='`
 

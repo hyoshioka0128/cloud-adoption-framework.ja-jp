@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 4e76a3299db2962b46bb6f68c76b5aa829fef2d4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9f86a97665d3a6fc4e14165b6f6eed4ac9ffa936
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023584"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713234"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 <!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
@@ -83,7 +83,7 @@ ms.locfileid: "97023584"
 
 ## <a name="plan-for-governance"></a>ガバナンスを計画する
 
-ガバナンスは、Azure のアプリケーションとリソースに対するコントロールを維持するメカニズムとプロセスを提供します。 Azure ポリシーは、企業の技術資産内のセキュリティとコンプライアンスを確保するために不可欠です。 Azure プラットフォーム サービス全体に重要な管理とセキュリティの規則を適用でき、承認されたユーザーが実行できるアクションを制御するロールベースのアクセス制御 (RBAC) を補うことができます。
+ガバナンスは、Azure のアプリケーションとリソースに対するコントロールを維持するメカニズムとプロセスを提供します。 Azure ポリシーは、企業の技術資産内のセキュリティとコンプライアンスを確保するために不可欠です。 Azure プラットフォーム サービス全体に重要な管理とセキュリティの規則を適用でき、承認されたユーザーが実行できるアクションを制御する Azure ロールベースのアクセス制御 (Azure RBAC) を補うことができます。
 
 **設計上の考慮事項:**
 
@@ -103,7 +103,7 @@ ms.locfileid: "97023584"
 
 - 必要な Azure タグを特定し、追加ポリシー モードを使用して使用法を適用します。
 
-- 規制およびコンプライアンスの要件を、Azure Policy 定義と Azure AD RBAC の割り当てにマッピングします。
+- 規制およびコンプライアンスの要件を、Azure Policy 定義と Azure ロールの割り当てにマッピングします。
 
 - 継承されたスコープで割り当てることができるように、最上位レベルのルート管理グループで Azure Policy 定義を確立します。
 

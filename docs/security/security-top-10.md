@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: 254975d16c19626881dcc872517b1af58a2998fd
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0c5fed524999b0aa083d81af90de40084b497eae
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013282"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713032"
 ---
 # <a name="azure-security-best-practices"></a>Azure のセキュリティに関するベスト プラクティス
 
@@ -112,7 +112,7 @@ Azure セキュリティ ベンチマーク「[GS-3: 組織の役割、責任、
 | ネットワーク管理 | 企業全体の仮想ネットワークとサブネットの割り当て  | "_通常は、[中央 IT 運用](../organize/central-it.md)部門の既存のネットワーク運用チーム_" |
 | サーバー エンドポイントのセキュリティ | サーバー セキュリティ (修正プログラムの適用、構成、エンドポイントのセキュリティなど) の監視と修復  | "_通常は、[中央 IT 運用](../organize/central-it.md)と [インフラストラクチャとエンドポイントのセキュリティ](../organize/cloud-security-infrastructure-endpoint.md)の担当チームが共同で行う_" |
 | インシデントの監視と対応 | SIEM またはソース コンソール (Azure Security Center、Azure AD Identity Protection など) でセキュリティ インシデントを調査して修復する | "_通常は [セキュリティ運用](../organize/cloud-security-operations-center.md)チーム_" |
-| ポリシー管理 | ロールベースのアクセス制御 (RBAC)、Azure Security Center、管理者保護戦略、および Azure リソースを管理するための Azure Policy の使用についての指針を定める | "_通常は、[ポリシーと標準](../organize/cloud-security-policy-standards.md) + [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)の担当チームが共同で行う_" |
+| ポリシー管理 | Azure ロールベースのアクセス制御 (Azure RBAC)、Azure Security Center、管理者保護戦略、および Azure リソースを管理するための Azure Policy の使用についての指針を定める | "_通常は、[ポリシーと標準](../organize/cloud-security-policy-standards.md) + [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)の担当チームが共同で行う_" |
 | ID に関するセキュリティと標準 | Azure AD のディレクトリ、PIM/PAM の使用、MFA、パスワードまたは同期の構成、アプリケーション ID 標準についての指針を定める | "_通常は、[ID とキーの管理](../organize/cloud-security-identity-keys.md) + [ポリシーと標準](../organize/cloud-security-policy-standards.md) + [セキュリティ アーキテクチャ](../organize/cloud-security-architecture.md)の担当チームが共同で行う_"  |
 
 > [!NOTE]

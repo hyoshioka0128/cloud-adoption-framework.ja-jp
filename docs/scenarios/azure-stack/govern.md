@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 4c61cab444c4452f6dc7ee3a9bed50ff743c956d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 885278cb4ebf0faaf5686a16687bef7ccd7fe684
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025573"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713812"
 ---
 # <a name="govern-an-azure-instance-in-your-datacenter"></a>データセンターで Azure のガバナンスを実行する
 
@@ -25,7 +25,7 @@ ms.locfileid: "97025573"
 
 次の一連のブログでは、組織で Azure Stack Hub にクラウド ガバナンスの概念を実装する方法について説明しています。
 
-- [組織向けサービス](https://azure.microsoft.com/blog/azure-stack-iaas-part-seven/): リソース グループ、ロールベースのアクセス制御 (RBAC)、変更の監査、ロック、タグなど。
+- [組織向けサービス](https://azure.microsoft.com/blog/azure-stack-iaas-part-seven/): リソース グループ、Azure ロールベースのアクセス制御 (Azure RBAC)、変更の監査、ロック、タグなど。
 - [セキュリティ サービス](https://azure.microsoft.com/blog/azure-stack-iaas-part-four/): 既定のファイアウォール、制限、VM の更新と修正プログラムの管理、マルウェアの状態など。
 - [DevOps オプション](https://azure.microsoft.com/blog/azure-stack-iaas-part-seven-2/): コードとしてのインフラストラクチャ、PowerShell およびコマンドライン インターフェイスを使用したポータル、Azure Application Insights、Azure DevOps および Jenkins との統合など。
 
@@ -36,7 +36,7 @@ ms.locfileid: "97025573"
 - [Azure Resource Manager テンプレートと Desired State Configuration](/azure-stack/user/azure-stack-arm-templates?view=azs-2002)
 - [PowerShell](/azure-stack/user/azure-stack-powershell-overview?view=azs-2002)
 - [Azure Policy](/azure-stack/user/azure-stack-policy-module?view=azs-2002)
-- [役割ベースのアクセス制御](/azure-stack/user/azure-stack-manage-permissions?view=azs-2002)
+- [Azure ロールベースのアクセス制御](/azure-stack/user/azure-stack-manage-permissions?view=azs-2002)
 
 ## <a name="next-steps"></a>次のステップ
 

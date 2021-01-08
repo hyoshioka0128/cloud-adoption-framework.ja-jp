@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: 3cf80c711a207f19f00cd5e6d4ea37f36d92b721
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d256e830e2da3428d3e5177aab00439d3c1d426d
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012313"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713829"
 ---
 # <a name="tools-and-templates"></a>ツールとテンプレート
 
@@ -58,7 +58,7 @@ ms.locfileid: "97012313"
 | [ID ベースライン規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | ID の要件に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [リソースの整合性規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | リソースの整合性に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [セキュリティ ベースライン規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | セキュリティ ベースラインに重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
-| [Azure のガバナンス ビジュアライザー](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure のガバナンス ビジュアライザーは、Azure テナントの管理グループ階層をサブスクリプション レベルまで反復処理する PowerShell スクリプトです。 Azure Policy、ロールベースのアクセス制御 (RBAC)、Azure Blueprints など、特に関連性の高い Azure のガバナンス機能からデータをキャプチャします。 このビジュアライザーは、収集されたデータから階層マップを表示し、テナントの概要を作成し、管理グループとサブスクリプションに関する詳細なスコープの分析情報を作成します。 |
+| [Azure のガバナンス ビジュアライザー](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure のガバナンス ビジュアライザーは、Azure テナントの管理グループ階層をサブスクリプション レベルまで反復処理する PowerShell スクリプトです。 Azure Policy、Azure ロールベースのアクセス制御 (Azure RBAC)、Azure Blueprints など、特に関連性の高い Azure のガバナンス機能からデータをキャプチャします。 このビジュアライザーは、収集されたデータから階層マップを表示し、テナントの概要を作成し、管理グループとサブスクリプションに関する詳細なスコープの分析情報を作成します。 |
 
 ## <a name="migrate"></a>移行
 

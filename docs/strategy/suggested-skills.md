@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: f9afb3f71a05f57c735cd416ce47b56ba8551669
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: bd095d6474c5469fdc930b30a4a6d3ed0a901125
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012806"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713015"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
 
@@ -63,7 +63,7 @@ ms.locfileid: "97012806"
 - [VM の作成](/learn/modules/create-windows-virtual-machine-in-azure)。 Azure portal を使用して仮想マシンを作成します。
 - [Azure のネットワーク](/learn/modules/intro-to-azure-networking)。 Azure のネットワークの基本と、Azure のネットワークが回復性の向上と待ち時間の短縮にどのように役立つかについて学習します。
 - [Azure のコンピューティング オプション](/learn/modules/intro-to-azure-compute)。 Azure のコンピューティング サービスについて学習します。
-- [RBAC によるリソースのセキュリティ保護](/learn/modules/secure-azure-resources-with-rbac)。 RBAC を使用してリソースをセキュリティで保護します。
+- [Azure RBAC によるリソースのセキュリティ保護](/learn/modules/secure-azure-resources-with-rbac)。 Azure RBAC を使用してリソースをセキュリティで保護します。
 - [データ ストレージ オプション](/learn/modules/intro-to-data-in-azure)。 Azure データ ストレージの利点について学習します。
 
 ## <a name="organizational-skills"></a>組織のスキル

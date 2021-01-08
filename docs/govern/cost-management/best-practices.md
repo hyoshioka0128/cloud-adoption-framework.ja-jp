@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 3d527d623bfd6fb7ed12910366fa7e4ddbf131e4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5927992123c9d509b2a38b2e943e60bf3981faa8
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022054"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713132"
 ---
 <!-- docutune:casing ARO -->
 
@@ -230,7 +230,7 @@ Azure Reserved VM Instances を使用すると、予約インスタンスの 1 �
 
 - [Azure Consumption API の概要](/azure/billing/billing-consumption-api-overview)を確認します。
 - [Power BI Desktop で Azure Consumption Insights に接続する方法](/power-bi/desktop-connect-azure-consumption-insights)を確認します。
-- [ロール ベースのアクセス制御 (RBAC) を使用して、Azure の課金情報へのアクセスを管理する](/azure/billing/billing-manage-access)方法について学びます。
+- [Azure ロールベースのアクセス制御 (Azure RBAC) を使用して Azure の課金情報へのアクセスを管理する](/azure/billing/billing-manage-access)を確認します。
 
 ## <a name="best-practice-monitor-resource-utilization"></a>ベスト プラクティス:リソースの使用率を監視する
 

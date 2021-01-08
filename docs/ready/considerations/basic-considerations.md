@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 4743187cbec0e6030642a065bae772248cbe26d7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0285115c91b280479091ce69c84c6e6500709392
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026049"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713422"
 ---
 # <a name="landing-zone-considerations"></a>ランディング ゾーンに関する考慮事項
 
@@ -48,6 +48,6 @@ _図 1: ランディング ゾーンに関する考慮事項。_
 
 - **コスト要件。** 組織のクラウド導入に対する動機付けとその環境に関して行われた運用上のコミットメントに基づき、このランディング ゾーンに対して、さまざまなコスト管理構成を場合によっては変更する必要があります。
 - **監視関連の意思決定。** ランディング ゾーンの運用要件によっては、さまざまな監視ツールをデプロイできます。 監視関連の意思決定に関する記事は、デプロイするために最適なツールの決定に役立ちます。
-- **ロールベースのアクセス制御**。 Azure [ロールベースのアクセス制御 (RBAC)](../considerations/roles.md) では、ユーザー ロールごとに整理されているリソースのグループベース アクセスを詳細に管理できます。
+- **Azure ロールベースのアクセス制御。** [Azure ロールベースのアクセス制御 (Azure RBAC)](../considerations/roles.md) では、ユーザー ロールごとに整理されているリソースのグループベース アクセスを詳細に管理できます。
 - **ポリシー関連の意思決定**。 [Azure Blueprints サンプル](/azure/governance/blueprints/samples)に、事前作成されたコンプライアンス ブループリントが用意されており、各ブループリントには、ポリシー イニシアティブが事前定義されています。 ポリシー関連の意思決定は、自身の要件と制約に基づいて、最良のブループリントまたはポリシー イニシアティブを選択するのに役立ちます。
 - **一貫性のあるハイブリッド クラウド [の作成](./hybrid-consistency.md)。** オンプレミス管理のさまざまな利便性を維持しながら、組織にクラウド イノベーションの利点を提供するハイブリッド クラウド ソリューションを作成します。

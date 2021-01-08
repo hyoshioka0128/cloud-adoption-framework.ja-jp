@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 568f865589aa94dcc48d33bfde40c857ffdd4379
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d357b3c3f38100c684f97920d320ceb7ea8effc2
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025981"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713149"
 ---
 <!-- docutune:casing ARO -->
 
@@ -195,7 +195,7 @@ Azure Reserved Virtual Machine Instances を使用している場合は、VM イ
 
 - [Azure Consumption API の概要](/azure/billing/billing-consumption-api-overview)を確認します。
 - [Power BI Desktop で Azure Consumption Insights に接続する](/power-bi/desktop-connect-azure-consumption-insights)方法を確認します。
-- [ロールベースのアクセス制御 (RBAC) を使用して、Azure の課金情報へのアクセスを管理する](/azure/billing/billing-manage-access)方法を確認します。
+- [Azure ロールベースのアクセス制御 (Azure RBAC) を使用して Azure の課金情報へのアクセスを管理する](/azure/billing/billing-manage-access)方法を確認します。
 
 ## <a name="after-migration"></a>移行後
 

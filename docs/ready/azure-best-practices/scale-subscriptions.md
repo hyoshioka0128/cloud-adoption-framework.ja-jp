@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 4d089b89d3bc7fe08cfa07b3573084c7b2cf342e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 64bffce5f637f9903385df2fae143195f97a4b31
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024349"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713676"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>追加のサブスクリプションを作成して、Azure 環境をスケーリングする
 
@@ -29,7 +29,7 @@ ms.locfileid: "97024349"
 
 **サブスクリプションの制限**: サブスクリプションでは、一部のリソースの種類に対して制限が定義されています。 たとえば、あるサブスクリプションでは仮想ネットワークの数に制限があります。 サブスクリプションがこれらの制限に近づいた場合は、別のサブスクリプションを作成し、そこに追加のリソースを置く必要があります。 詳細については、[Azure サブスクリプションとサービスの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits#general-limits) に関する記事を参照してください。
 
-**クラシック モデルのリソース:** Azure を長期間使用している場合は、クラシック デプロイ モデルを使用して作成されたリソースが存在する可能性があります。 Azure のポリシー、ロールベースのアクセス制御、リソースのグループ化、およびタグは、クラシック モデルのリソースには適用できません。 これらのリソースは、クラシック モデルのリソースのみを含むサブスクリプションに移動する必要があります。
+**クラシック モデルのリソース:** Azure を長期間使用している場合は、クラシック デプロイ モデルを使用して作成されたリソースが存在する可能性があります。 Azure のポリシー、Azure ロールベースのアクセス制御、リソースのグループ化、およびタグは、クラシック モデルのリソースには適用できません。 これらのリソースは、クラシック モデルのリソースのみを含むサブスクリプションに移動する必要があります。
 
 **コスト:** サブスクリプション間のデータのイングレスとエグレスに対して追加コストが発生することがあります。
 
@@ -54,7 +54,7 @@ ms.locfileid: "97024349"
 
 - サブスクリプションの新規作成の担当者を特定します。
 - サブスクリプションで既定で使用可能なリソースの種類を決定します。
-- すべての標準サブスクリプションの外観を決定します。 RBAC アクセス、ポリシー、タグ、インフラストラクチャ リソースなどの考慮事項があります。
+- すべての標準サブスクリプションの外観を決定します。 Azure RBAC アクセス、ポリシー、タグ、インフラストラクチャ リソースなどの考慮事項があります。
 - 可能であれば、サービス プリンシパルを使用して[プログラムによって新しいサブスクリプションを作成します](/azure/cost-management-billing/manage/programmatically-create-subscription-preview)。 サブスクリプションを作成するには、[サービス プリンシパルにアクセス許可を付与する](/azure/azure-resource-manager/grant-access-to-create-subscription)必要があります。 自動化されたワークフローを通じて新しいサブスクリプションを要求できるセキュリティ グループを定義します。
 - エンタープライズ契約 (EA) をご利用のお客様は、組織で非 EA サブスクリプションの作成がブロックされるように Azure サポートにご依頼ください。
 

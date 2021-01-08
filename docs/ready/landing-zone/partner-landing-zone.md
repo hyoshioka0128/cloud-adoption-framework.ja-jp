@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 965a021ba2c70a75ef056cc9099c851ce9bc8bf2
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d8aa2e29baa730f6e47a2418477d5e7e146cb1b9
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013333"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97713846"
 ---
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>Microsoft パートナーの Azure ランディング ゾーンを評価する
 
@@ -71,7 +71,7 @@ ID はおそらく、パートナー ソリューションの評価において�
 
 **パートナーに対する質問:** 次のうち、パートナー ソリューションでサポートされている ID 管理オプションはどれですか。
 
-- **Azure AD:** ベスト プラクティスとして、Azure AD とロールベースのアクセス制御を使用して、Azure で ID とアクセスを管理することをお勧めします。
+- **Azure AD:** ベスト プラクティスとして、Azure AD と Azure ロールベースのアクセス制御を使用して、Azure で ID とアクセスを管理することをお勧めします。
 - **Active Directory:** 必要な場合、パートナーのソリューションでは、Active Directory をサービスとしてのインフラストラクチャ ソリューションとしてデプロイするオプションは提供されますか。
 - **サードパーティの ID プロバイダー:** 会社でサードパーティの ID ソリューションが使用されている場合は、パートナーの Azure ランディング ゾーンとサードパーティのソリューションが統合されるかどうか、およびその方法を確認します。
 

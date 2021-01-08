@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: fd260d898dbc5fa39e17b3ad245b6410101059a6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3036bdff7300db9a84cf48a033aa73715ca225ab
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020320"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712775"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>ID ベースラインのサンプル ポリシー ステートメント
 
@@ -42,15 +42,15 @@ ms.locfileid: "97020320"
 - ミッション クリティカルなアプリケーションまたは保護対象データに関わるあらゆるリソースに、最小特権アクセス モデルが適用されます。
 - アクセス許可の昇格は例外とするべきであり、クラウド ガバナンス チームはそのような例外をすべて記録する必要があります。 例外は定期的に監査されます。
 
-**使用可能な設計オプション:** [知る必要性](https://wikipedia.org/wiki/Need_to_know)と [最小特権セキュリティ](https://wikipedia.org/wiki/Principle_of_least_privilege)の各原則に基づいてアクセスを制限するロールベースのアクセス制御 (RBAC) 戦略を、[Azure Identity Management のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)を参考にして実装します。
+**使用可能な設計オプション:** [知る必要性](https://wikipedia.org/wiki/Need_to_know)と[最小特権セキュリティ](https://wikipedia.org/wiki/Principle_of_least_privilege)の各原則に基づいてアクセスを制限する Azure ロールベースのアクセス制御 (Azure RBAC) 戦略を、[Azure の ID 管理のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)を参考にして実装します。
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>オンプレミスとクラウドの間で共有される管理アカウントの欠如
 
 **技術的なリスク:** オンプレミスの Active Directory にアカウントを持つ IT 管理スタッフが、クラウド リソースへの十分なアクセス権限を持たないことにより、運用またはセキュリティの問題を効率的に解決できない場合があります。
 
-**ポリシー ステートメント:** オンプレミスの Active Directory インフラストラクチャ内にあり、昇格された特権を持つすべてのグループを、承認済みの RBAC ロールにマップする必要があります。
+**ポリシー ステートメント:** オンプレミスの Active Directory インフラストラクチャ内にあり、昇格された特権を持つすべてのグループを、承認済みの Azure ロールにマップする必要があります。
 
-**使用可能な設計オプション:** クラウド ベースの Azure Active Directory とオンプレミスの Active Directory の間でハイブリッド ID ソリューションを実装し、必要なオンプレミス グループを、各自の作業を行うために必要な RBAC ロールに追加します。
+**使用可能な設計オプション:** クラウド ベースの Azure Active Directory とオンプレミスの Active Directory の間でハイブリッド ID ソリューションを実装し、必要なオンプレミス グループを、各自の作業を行うために必要な Azure ロールに追加します。
 
 ## <a name="weak-authentication-mechanisms"></a>弱い認証メカニズム
 

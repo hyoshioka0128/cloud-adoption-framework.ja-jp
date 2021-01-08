@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: aae5e8b7fcd8b1c0cad29f795f494c4f0ccaac26
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b7f40bd5a4eca62b3712c0a9b6073512edbdb374
+ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020405"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97712846"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>ID ベースライン規範の改良
 
@@ -103,7 +103,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - アプリ内またはデータベース内 ID ストアの必要性を綿密に検査します。 適切な ID プロバイダー (ファーストパーティまたはサードパーティ) から外れた ID は、アプリケーションやユーザーにとってリスクになる場合があります。
 - [オンプレミスのフェデレーション アプリケーション](/azure/active-directory/devices/overview)への条件付きアクセスを有効にします。
 - ID を複数のハブ内のグローバル リージョンにわたって分散させ、リージョン間の同期を維持します。
-- 中央のロールベースのアクセス制御 (RBAC) フェデレーションを確立します。
+- 中央の Azure ロールベースのアクセス制御 (Azure RBAC) フェデレーションを確立します。
 
 ## <a name="operate-and-post-implementation"></a>運用と実装後
 
