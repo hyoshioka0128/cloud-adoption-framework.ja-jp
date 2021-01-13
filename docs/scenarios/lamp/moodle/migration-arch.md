@@ -1,18 +1,19 @@
 ---
 title: Moodle 移行のアーキテクチャとテンプレート
 description: Moodle Azure インフラストラクチャのデプロイ用 Azure Resource Manager (ARM) テンプレートの概要と、そのテンプレートをデプロイまたは編集する方法について説明します。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4f2f943faa97651e7c860fd2e5286037c4a76fd7
-ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
+ms.custom: think-tank
+ms.openlocfilehash: bff94f48705d5e080607d5f41017acf421e394ac
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97687775"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123512"
 ---
 # <a name="moodle-migration-architecture-and-templates"></a>Moodle 移行のアーキテクチャとテンプレート
 

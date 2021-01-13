@@ -1,18 +1,19 @@
 ---
 title: Moodle 移行後のフォローアップ方法
 description: Moodle 移行後のフォローアップ方法について説明します。 ログのパスを更新する方法、サーバーを再起動する方法、および移行を完了するために必要なその他の手順を実行する方法について説明します。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4975037dc30aa95bcb4bc58d69914970769e3183
-ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
+ms.custom: think-tank
+ms.openlocfilehash: d36b6cd1fae07156c604c9ebf560ecd2b4873d35
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97687747"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123444"
 ---
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>Moodle 移行後のフォローアップ方法
 

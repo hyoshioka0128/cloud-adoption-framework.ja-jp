@@ -1,18 +1,19 @@
 ---
 title: 手動による Moodle 移行の手順
 description: 以下の手順に従って、Moodle のオンプレミスのバックアップ アーカイブを Azure リソースにインポートし、Moodle アプリケーションを構成します。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 07c8853fa2e843d18c9ab818e19dc65ca93c0849
-ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
+ms.custom: think-tank
+ms.openlocfilehash: 729131cf4245dbda7c48e7067cf224fbff927c67
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97687694"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123546"
 ---
 # <a name="moodle-manual-migration-steps"></a>手動による Moodle 移行の手順
 

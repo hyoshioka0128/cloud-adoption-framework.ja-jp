@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 3af7be5e571b7f107f43d900bb1391465894ff5e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5af4696254d2934eebe343d9ea096f978f7d5434
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013843"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123529"
 ---
 <!-- docutune:casing Hanu Scalr ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -316,7 +316,7 @@ Contoso は、Runbook とスケジュールがあらかじめ構成された Azu
 
 ### <a name="partner-optimization-tools"></a>パートナーの最適化ツール
 
-Contoso は、[Hanu](https://hanu.com/insight) や [Scalr](https://www.scalr.com/cost-optimization) などのパートナーのツールを使用できます。
+Contoso は、[Hanu](https://hanu.com/insight) や [Scalr](https://scalr.com/pricing/) などのパートナーのツールを使用できます。
 
 ## <a name="phase-4-secure-and-manage"></a>フェーズ 4: セキュリティ保護と管理
 

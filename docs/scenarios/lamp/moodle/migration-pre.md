@@ -1,18 +1,19 @@
 ---
 title: Moodle 移行のための準備を行う方法
 description: Moodle 移行のための準備を行う方法について説明します。 Moodle ファイルをバックアップし、移行に必要なリソースを作成する方法について説明します。
-author: BrianBlanchard
+author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4a4a3ce829263aaac9806f03ee7b743f0e225016
-ms.sourcegitcommit: 32e8e7a835a688eea602f2af1074aa926ab150c3
+ms.custom: think-tank
+ms.openlocfilehash: 5b82b1c440a8a7bd311098906d3baf902bfd6327
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97687702"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123614"
 ---
 # <a name="how-to-prepare-for-a-moodle-migration"></a>Moodle 移行のための準備を行う方法
 
