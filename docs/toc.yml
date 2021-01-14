@@ -115,6 +115,8 @@ items:
             href: strategy/monitoring-strategy.md
           - name: 責任ある AI
             href: strategy/responsible-ai.md
+          - name: GitHub によるクラウド導入の促進
+            href: scenarios/github-velocity/index.md
       - name: 戦略に関連するスキル
         href: strategy/suggested-skills.md
   - name: プラン
