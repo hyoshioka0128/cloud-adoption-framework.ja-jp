@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: ce8eab394356b594349268c0717d8daf38043faf
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a4ce8d96d650a971c90bcaa9b85a14502d094b25
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024910"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174031"
 ---
 # <a name="prerequisites-for-migration"></a>移行の前提条件
 
@@ -45,7 +45,7 @@ ms.locfileid: "97024910"
 
 ## <a name="accountability-during-prerequisites"></a>前提条件の段階での説明責任
 
-前提条件の段階では、2 つのチームが対応性の責任を負います。
+前提条件を満たす段階では、2 つのチームが対応性の責任を負います。
 
 - **クラウド戦略チーム:** このチームは、移行候補となる最初の 2 つまたは 3 つのワークロードを特定し、優先順位を付ける担当です。
 - **クラウド導入チーム:** このチームは、技術的な環境の対応性と提案されたワークロードの移行の実現可能性を検証する担当です。

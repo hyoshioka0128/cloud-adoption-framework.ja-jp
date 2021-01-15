@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal, seo-azure-migrate
-ms.openlocfilehash: 6909b8a1aa3d5eeb8b2f8595c81e01b2960b13ff
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: fa3fde433d7506d5a5bb88e5befaaa252d09f22a
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025352"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174745"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド移行
 
@@ -38,7 +38,7 @@ ms.locfileid: "97025352"
 
 ## <a name="migration-effort"></a>移行作業
 
-ワークロードを移行するために必要な作業は、一般に各ワークロードにつき、ワークロードの評価、ワークロードのデプロイ、ワークロードのリリースの 3 種類の作業に分類されます。 クラウド導入フレームワークのこのセクションでは、ワークロードを運用環境に移行するために必要な各フェーズからのリターンを最大化する方法について説明します。
+ワークロードを移行するために必要なアクションは、一般に各ワークロードにつき、ワークロードの評価、ワークロードのデプロイ、ワークロードのリリースの 3 つの作業 (フェーズ) に分類されます。 クラウド導入フレームワークのこのセクションでは、ワークロードを運用環境に移行するために必要な各フェーズからのリターンを最大化する方法について説明します。
 
 2 週間かかる標準のイテレーションの中で、経験豊富な移行チームは、2 つから 5 つの複雑さが低いまたは中程度のワークロードについて、このプロセスを完了できます。 SAP などのより複雑なワークロードでは、1 つのワークロードの移行作業の 3 つのフェーズすべてを完了するのに、2 週間のイテレーションが複数回必要になる場合があります。 経験と複雑さは両方とも、タイムラインと移行速度に大きな影響を与えます。
 
