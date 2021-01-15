@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 36239c846de012165467c7fc3ed3cfc78d360101
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 1fc58ed9f74d37eb641fce1d3571add71c3b5526
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713066"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123478"
 ---
 <!-- docutune:casing resourceType resourceTypes resourceId resourceIds -->
 
@@ -29,8 +29,8 @@ Azure の一部のリソースは作成後に移動できます。スコープ�
 
 | Scope | 到着地 | 長所 | 短所 |
 |--|--|--|--|
-| リソース グループ内のリソース | 同一または異なるサブスクリプションの新しいリソース グループに移動できる  | デプロイ後にリソース グループ内のリソース構成を変更できる | - すべての resourceType でサポートされているわけではない <br> - 一部の resourceType には特定の制限または要件がある <br> - resourceId が更新されるため、既存の監視、アラート、コントロール プレーンの操作に影響を及ぼす <br> - 移動期間中、リソース グループがロックされる <br> - 移動操作の前後にポリシーと Azure RBAC を評価する必要がある |
-| テナント内のサブスクリプション  | 異なる管理グループと異なるテナントに移動できる | resourceId 値は変更されないため、サブスクリプション内の既存のリソースへの影響はない | 移動操作の前後にポリシーと Azure RBAC を評価する必要がある |
+| リソース グループ内のリソース | 同一または異なるサブスクリプションの新しいリソース グループに移動できる  | デプロイ後にリソース グループ内のリソース構成を変更できる | - すべての resourceType でサポートされているわけではない <br> - 一部の resourceType には特定の制限または要件がある <br> - resourceId が更新されるため、既存の監視、アラート、コントロール プレーンの操作に影響を及ぼす <br> - 移動期間中、リソース グループがロックされる <br> - 移動操作の前後にポリシーと RBAC を評価する必要がある |
+| テナント内のサブスクリプション  | 異なる管理グループに移動できる | resourceId 値は変更されないため、サブスクリプション内の既存のリソースへの影響はない | 移動操作の前後にポリシーと RBAC を評価する必要がある |
 
 どちらの移動方法を使用すべきかを理解するために、両方の例を紹介します。
 

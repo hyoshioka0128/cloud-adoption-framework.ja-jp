@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 4d4ca4be94afeae4e019da935726ca0708097c64
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 2cc997cde2a35595f980f03703e09ac3710271f3
+ms.sourcegitcommit: 4e1b3dd61686712727a2b74203646cf679940e76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713354"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069391"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン アーキテクチャ
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: ea6cf417488fff80e37a7366d7d44b6fabde8989
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 97b6c45011bd9d317c0d059a2d2a0a7b1f45e548
+ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713457"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98123597"
 ---
 # <a name="management-group-and-subscription-organization"></a>管理グループとサブスクリプションの組織
 
@@ -45,8 +45,8 @@ Azure Active Directory (Azure AD) テナント内の管理グループの構造�
 - ルート管理グループのスコープ (`/`) で、前述の SPN に `Contributor` アクセス許可を割り当てると、テナント レベルの操作が可能になります。 このアクセス許可レベルでは、その SPN を使用して、組織内の任意のサブスクリプションに対するリソースのデプロイと管理を確実に行うことができます。
 - 共通プラットフォーム ポリシーと Azure ロールの割り当てをサポートするには、ルート管理グループの下に `Platform` 管理グループを作成します。 このグループ化構造では、Azure 基盤に使用されるサブスクリプションにさまざまなポリシーを確実に適用できます。 また、共通リソースの課金が、1 つの基盤サブスクリプション セットで確実に集中管理されます。
 - ルート管理グループのスコープ (`/`) で行われる Azure Policy の割り当ての数を制限します。 この制限により、下位レベルの管理グループで継承されるポリシーのデバッグが最小限に抑えられます。
-- 管理グループの階層設定で Azure RBAC 認可を有効にして、特権のあるユーザーのみがテナントの管理グループを操作できるようにします。
-- 新しいサブスクリプションに対して既定の専用管理グループを構成して、ルート管理グループの下にサブスクリプションが配置されないようにします。
+- 管理グループの[階層設定](/azure/governance/management-groups/how-to/protect-resource-hierarchy#setting---require-authorization)で Azure RBAC 承認を有効にすることにより、特権のあるユーザーのみがテナントの管理グループを操作できるようにします (既定では、すべてのユーザーがルート管理グループの下に独自の管理グループを作成することが承認されています)。
+- 新しいサブスクリプションに対して既定の専用管理グループを[構成](/azure/governance/management-groups/how-to/protect-resource-hierarchy#setting---default-management-group)して、ルート管理グループの下にサブスクリプションが配置されないようにします。 これは、MSDN または Visual Studio の特典とサブスクリプションの対象ユーザーがいる場合に特に重要です。 このような管理グループの候補としては、`Sandbox` 管理グループがあります。
 
 ## <a name="subscription-organization-and-governance"></a>サブスクリプションの編成とガバナンス
 
