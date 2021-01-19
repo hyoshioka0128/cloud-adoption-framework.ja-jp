@@ -694,7 +694,7 @@ items:
               - name: マルチテナント移行
                 items:
                   - name: 移行をスケーリングするための Azure Lighthouse
-                    href: 'https://docs.microsoft.com/azure/lighthouse/how-to/migration-at-scale?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json'
+                    href: /azure/lighthouse/how-to/migration-at-scale?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
               - name: メインフレーム
                 items:
                   - name: 概要
