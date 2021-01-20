@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 6729ff48934cd4e0471ff0ade338b3a10f94e6c4
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 3d65538ed9fa3c45563bb99d85c93ade1e11f1a4
+ms.sourcegitcommit: 30837e99289338b0cc0f9efb2a5e07aca052e2e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712741"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560750"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -82,7 +82,7 @@ Contoso は、[マイクロソフト エンタープライズ契約](https://azu
 
 Azure の料金を支払った後、Contoso は Azure サブスクリプションを管理する方法を決める必要があります。 Contoso は EA を利用しているので、作成できる Azure サブスクリプションの数に制限はありません。 Azure Enterprise Agreement 加入契約では、企業が Azure サービスを構成して使用する方法と、中心となるガバナンス構造が定義されています。
 
-最初の手順として、Contoso は、加入契約のための "_エンタープライズ スキャフォールディング_" と呼ばれる構造を定義しました。 Contoso は、[Azure エンタープライズ スキャフォールディングのガイダンス](/azure/cloud-adoption-framework/reference/azure-scaffold)を使用して、スキャフォールディングの理解と設計に役立てました。
+最初の手順として、Contoso は、加入契約のための "_エンタープライズ スキャフォールディング_" と呼ばれる構造を定義しました。 Contoso は、[Azure エンタープライズ スキャフォールディングのガイダンス](../../reference/azure-scaffold.md)を使用して、スキャフォールディングの理解と設計に役立てました。
 
 ここでは、Contoso は機能的アプローチを使用してサブスクリプションを管理することを決定しました。
 

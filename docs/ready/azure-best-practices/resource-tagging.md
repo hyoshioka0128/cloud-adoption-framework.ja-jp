@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: b20ec4bc4cf6d1c5fde40e0bf9f83be150697fbb
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2f889349e9ae296a416bfb4956dfd4810121576c
+ms.sourcegitcommit: 003c04cf21c184be272102c9476f27dd675357bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026134"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98571925"
 ---
 # <a name="define-your-tagging-strategy"></a>タグ付けの戦略を定義する
 
@@ -45,12 +45,12 @@ Azure リソースの使用状況の可視性が向上させるために Azure �
 | **必要な予算/承認された予算** | このアプリケーション、サービス、またはワークロードに割り当てられた金額。 | _BudgetAmount_ <br><br> <li> `$200,000` |
 | **コスト センター** | このリソースに関連付けられたアカウンティング コスト センター。 | _CostCenter_ <br><br> <li> `55332` |
 | **ディザスター リカバリー** | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。 | _DR_ <br><br> <li> `Mission-critical` <li> `Critical` <li> `Essential` |
-| **プロジェクトの終了日** | アプリケーション、ワークロード、またはサービスの使用停止がスケジュールされている日付。 | _EndDate_ <br><br> <li> `10/15/2023` |
+| **プロジェクトの終了日** | アプリケーション、ワークロード、またはサービスの使用停止がスケジュールされている日付。 | _EndDate_ <br><br> <li> `2023-10-15` |
 | **環境** | アプリケーション、ワークロード、またはサービスのデプロイ環境。 | _Env_ <br><br> <li> `Prod` <li> `Dev` <li> `QA` <li> `Stage` <li> `Test` |
 | **所有者名** | このアプリケーション、ワークロード、またはサービスの所有者。 | _所有者_ <br><br> <li> `jane@contoso.com` |
 | **要求者名** | このアプリケーションの作成を要求したユーザー。 | _要求者_ <br><br> <li> `john@contoso.com` |
 | **サービス クラス** | アプリケーション、ワークロード、またはサービスのサービス レベル アグリーメント レベル。 | _ServiceClass_ <br><br> <li> `Dev` <li> `Bronze` <li> `Silver` <li> `Gold` |
-| **プロジェクトの開始日** | アプリケーション、ワークロード、またはサービスが最初にデプロイされた日付。 | _StartDate_ <br><br> <li> `10/15/2020` |
+| **プロジェクトの開始日** | アプリケーション、ワークロード、またはサービスが最初にデプロイされた日付。 | _StartDate_ <br><br> <li> `2020-10-15` |
 
 ## <a name="take-action"></a>アクションの実行
 
