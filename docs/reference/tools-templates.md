@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: d256e830e2da3428d3e5177aab00439d3c1d426d
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 3803165a69bfb0dd0d9b510cc0bdffbc21da31d2
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713829"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98173997"
 ---
 # <a name="tools-and-templates"></a>ツールとテンプレート
 
@@ -66,6 +66,14 @@ ms.locfileid: "97713829"
 |----------|-------------|
 | [データセンターの移行の検出チェックリスト](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/migrate/datacenter-migration-discovery-checklist.docx) | このチェックリストで、データセンター内のワークロード、サーバー、その他の資産を特定するのに役立つ情報を確認してください。 この情報を使用すると、移行の計画に役立ちます。
 | [移行テンプレート](https://aka.ms/adopt/plan/generator) | Azure DevOps ジェネレーターでは、プロジェクトを効率化するために使用できる多数のテンプレートが作成されました。 [WVD](https://azuredevopsdemogenerator.azurewebsites.net/?name=wvdmigration)、[サーバー移行](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)、[SQL 移行](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration)、[AKS デプロイ](https://azuredevopsdemogenerator.azurewebsites.net/?name=cafaks)用のテンプレートが作成されています。
+
+
+## <a name="innovate"></a>イノベーション
+
+| リソース | 説明 |
+|----------|-------------|
+| [デプロイ テンプレート](https://aka.ms/adopt/plan/generator) | [ナレッジ マイニング](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine) テンプレートには、構造化および非構造化データに潜む分析情報を明らかにするための体系的なアプローチが用意されています。 .
+
 
 ## <a name="manage"></a>管理する
 

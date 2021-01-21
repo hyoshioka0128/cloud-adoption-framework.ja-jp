@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: 25a6564e9c52e507411fde54d02c27af8b948446
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 53eb1e6f6597e87125266ac46285dce6513e8e13
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025420"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174762"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>ワークロードを評価して計画を調整する
 
@@ -32,7 +32,7 @@ Azure Migrate では、Azure への移行についてオンプレミスのイン
 - パフォーマンスベースのサイズ設定を実行します。
 - オンプレミスの資産を Azure で実行する場合のコスト見積もりを提供します。
 
-リフト アンド シフトのアプローチを検討している場合、または移行の初期評価段階にある場合に、このサービスは適しています。 評価が完了したら、Azure Migrate を使用して移行を実行します。
+リフトアンドシフトのアプローチを検討している場合、または移行の初期評価段階にある場合に、このサービスは適しています。 評価が完了したら、Azure Migrate を使用して移行を実行します。
 
 ![Azure Migrate の概要](./media/assess/azure-migrate-overview-1.png)
 

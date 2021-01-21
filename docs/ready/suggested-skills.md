@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: ef16aa18163f5631f1b0d310e53605c58535caf9
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 656588a187446214d2f62e0ae99ffdf5a9c889c1
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713049"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174966"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
+# <a name="skills-readiness-path-during-the-readiness-phase-of-a-migration-journey"></a>移行の行程の準備フェーズ中のスキル準備パス
 
 移行の行程の準備フェーズの目標は、今後の行程の準備をすることです。 このフェーズは、主に組織の準備と環境 (技術) の準備の 2 つの分野で実現されます。 どちらの分野でも、技術的および非技術的な共同作成者の両方に対して新しいスキルが必要になる場合があります。 以降のセクションでは、必要なスキルを習得するのに役立ついくつかのオプションについて説明します。
 
@@ -49,7 +49,7 @@ ms.locfileid: "97713049"
 
 ## <a name="deeper-skills-exploration"></a>より詳細なスキル調査
 
-スキルを伸ばすためのこれらの初期のオプション以外に、さまざまな学習オプションを利用できます。
+スキルを伸ばすために、これらの初期のオプション以外にさまざまな学習オプションを利用できます。
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>クラウド IT の役割の典型的なマッピング
 

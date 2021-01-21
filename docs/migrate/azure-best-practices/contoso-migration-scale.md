@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 5af4696254d2934eebe343d9ea096f978f7d5434
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: 85d198c6721516ee4d9078c54efac53d1b324c1a
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123529"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174150"
 ---
 <!-- docutune:casing Hanu Scalr ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -178,7 +178,7 @@ Contoso には、Database Migration Service に加えて、SQL Server データ�
 
 Contoso が Azure への移行対象のオンプレミス環境を評価する際に役立つ、その他のパートナー ツールがいくつかあります。 [Azure 移行パートナー](https://azure.microsoft.com/migration/partners)についてご確認ください。
 
-## <a name="phase-2-migrate"></a>フェーズ 2:移行
+## <a name="step-2-migrate"></a>手順 2:移行
 
 評価が完了したら、Contoso はアプリケーション、データ、インフラストラクチャを Azure に移行するためのツールを特定する必要があります。
 
@@ -318,9 +318,9 @@ Contoso は、Runbook とスケジュールがあらかじめ構成された Azu
 
 Contoso は、[Hanu](https://hanu.com/insight) や [Scalr](https://scalr.com/pricing/) などのパートナーのツールを使用できます。
 
-## <a name="phase-4-secure-and-manage"></a>フェーズ 4: セキュリティ保護と管理
+## <a name="step-4-secure-and-manage"></a>手順 4:セキュリティ保護と管理
 
-このフェーズでは、Contoso は Azure のセキュリティおよび管理リソースを使用して、Azure のクラウド アプリケーションの管理、セキュリティ保護、監視を行います。 これらのリソースは、組織が Azure portal で利用できる製品を使用しながら、適切に管理された安全な環境を運用するのに役立ちます。
+この手順では、Contoso は Azure のセキュリティおよび管理リソースを使用して、Azure のクラウド アプリケーションの管理、セキュリティ保護、監視を行います。 これらのリソースは、組織が Azure portal で利用できる製品を使用しながら、適切に管理された安全な環境を運用するのに役立ちます。
 
 Contoso は、移行中にこれらのサービスの利用を開始します。 Azure のハイブリッド サポートにより、それらのサービスの多くはハイブリッド クラウドでも引き続き利用でき、変わらないエクスペリエンスが得られます。
 

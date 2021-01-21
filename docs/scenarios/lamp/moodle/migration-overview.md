@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 659c32793a036e1fa7c60a4d16f4d4f5ab771728
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: 1893b6625ad6bf3614e0a444a9ae83055edf5cd2
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123580"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175187"
 ---
 # <a name="overview-of-moodle-manual-migration"></a>手動による Moodle 移行の概要
 
@@ -25,7 +25,7 @@ ms.locfileid: "98123580"
 
 - オンプレミスのソフトウェアが更新され、次のバージョンに修正プログラムが適用されている。
   - Ubuntu 18.04 LTS
-  - Nginx 1.14
+  - NGINX 1.14
   - MySQL 5.6、5.7、または 8.0 データベース サーバー。 このガイドで使用されているのは Azure Database for MySQL です。
   - PHP 7.2、7.3、または 7.4
   - Moodle 3.8 または 3

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: dc0f644439fad82558dfe22501ff700f54709c46
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3d0a1fb138d526f1f666ae8ac2545e67f967bf61
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018416"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174320"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>イノベーションのビジネス価値の合意を築く
 
@@ -48,7 +48,7 @@ ms.locfileid: "97018416"
 
 ## <a name="address-the-big-picture-first"></a>最初に大局的見地に対処する
 
-クラウド導入フレームワークは 4 つのフェーズを経て所定の経路をたどります。戦略、計画、準備、導入です。 クラウド イノベーションは、このプロセスの導入フェーズに含まれています。 [見極めの質問](#qualifying-questions) 3 と 4 に対する回答は、成果と動機に関連します。 これらの回答が一致していない場合は、クラウド導入ライフサイクルの戦略フェーズ中に組織によって何かが見落とされたことを示しています。 次のシナリオのいくつかが効果を現す可能性があります。
+クラウド導入フレームワークは、戦略、計画、準備、導入の 4 つのフェーズを通して規定されたパスに従います。 クラウド イノベーションは、このプロセスの導入フェーズに含まれています。 [見極めの質問](#qualifying-questions) 3 と 4 に対する回答は、成果と動機に関連します。 これらの回答が一致していない場合は、クラウド導入ライフサイクルの戦略フェーズ中に組織によって何かが見落とされたことを示しています。 次のシナリオのいくつかが効果を現す可能性があります。
 
 - **連携の機会:** ビジネスの利害関係者がクラウド イノベーションの取り組みに関連する動機やビジネス成果に合意できない場合、それはより大きな課題の兆候です。 [戦略手法](../strategy/index.md)の演習は、ビジネスの利害関係者間の連携を発展させるのに役立ちます。 また、同じ利害関係者が定期的にミーティングを行う[クラウド戦略チーム](../organize/cloud-strategy.md)を形成することを強くお勧めします。
 

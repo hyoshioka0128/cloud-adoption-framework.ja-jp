@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 281132c0668f6556520be15540c084376c05e8ae
-ms.sourcegitcommit: 17743480a4b1d0516d61f1045380597203ec1de0
+ms.openlocfilehash: 3c1daeaf7b772b12d82ccfe5d9a01b72816a80e9
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97521867"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175170"
 ---
 <!-- docutune:casing "Enable .NET" SmartHotel360-Backend Pet.Checker "contoso-datacenter" PetCheckerFunction -->
 
@@ -244,7 +244,7 @@ Contoso は Azure DevOps プロジェクトを作成し、CI ビルドを構成�
 
     _図 16:ビルド パイプラインの設定。_
 
-7. **[Phase 1]\(フェーズ 1\)** で、 **[Docker Compose]** タスクを追加します。 このタスクでは、Docker Compose をビルドします。
+7. **[Step 1]\(ステップ 1\)** で、 **[Docker Compose]** タスクを追加します。 このタスクでは、Docker Compose をビルドします。
 
     ![Azure DevOps で Docker Compose タスクをビルドする画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts6.png)
 

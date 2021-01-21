@@ -1,6 +1,6 @@
 ---
 title: Moodle 移行のリソース
-description: Moodle 移行によって Azure 内に作成されるリソースについて説明します。 たとえば、Azure Virtual Network、ネットワーク セキュリティ グループ、サブネットなどがあります。
+description: Azure 仮想ネットワーク、ネットワーク セキュリティ グループ、サブネットなど、Azure での Moodle 移行によって作成されるリソースについて説明します。
 author: UmakanthOS
 ms.author: brblanch
 ms.date: 11/30/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: f50a908070a7909f02f00f6f96477cae0117fdc7
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: 677b8c4a582688599a868ae5af9b9f43d8b0cdca
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123495"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175136"
 ---
 # <a name="moodle-migration-resources"></a>Moodle 移行のリソース
 
@@ -23,7 +23,7 @@ Azure Resource Manager (ARM) テンプレートを使用して Moodle を移行�
 
 ネットワーク テンプレートのデプロイによって、次のようなリソースが作成されます。
 
-- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview): クラウド内のユーザー独自のネットワークの表現。 Virtual Network は、ご使用のサブスクリプション専用の Azure クラウドを論理的に分離したものです。 仮想ネットワークを作成すると、ご使用のサービスとその内部の仮想マシンは、クラウド内で直接かつ安全に通信することができます。 ネットワーク テンプレートによって作成される仮想ネットワークには、仮想ネットワーク名、API バージョン、場所、DNS サーバー名、および AddressSpace が含まれます。 AddressSpace には、サブネットが使用できる IP アドレスの範囲が含まれています。
+- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview): クラウド内のユーザー独自のネットワークの表現。 仮想ネットワークは、ご使用のサブスクリプション専用の Azure クラウドを論理的に分離したものです。 仮想ネットワークを作成すると、ご使用のサービスとその内部の仮想マシンは、クラウド内で直接かつ安全に通信することができます。 ネットワーク テンプレートによって作成される仮想ネットワークには、仮想ネットワーク名、API バージョン、場所、DNS サーバー名、アドレス空間が含まれます。 アドレス空間には、サブネットが使用できる IP アドレスの範囲が含まれています。
 
 - [ネットワーク セキュリティ グループ (NSG)](/azure/virtual-network/network-security-groups-overview):セキュリティ規則の一覧を含むネットワーク フィルター (ファイアウォール)。 これらの規則によって、仮想ネットワークに接続されているリソースへのネットワーク トラフィックが許可または拒否されます。
 
@@ -31,9 +31,9 @@ Azure Resource Manager (ARM) テンプレートを使用して Moodle を移行�
 
 - [サブネット](/azure/virtual-network/virtual-network-manage-subnet):大規模なネットワーク内の小規模なネットワーク。 サブネットはサブネットワークとも呼ばれます。 既定では、サブネット内の IP アドレスは、仮想ネットワーク内の他のすべての IP アドレスと通信できます。
 
-- [[パブリック IP アドレス]](/azure/virtual-network/public-ip-addresses#:~:text=Public%20IP%20addresses%20enable%20Azure,IP%20assigned%20can%20communicate%20outbound): Azure リソースがインターネット通信に使用する IP アドレス。 このアドレスは、Azure リソース専用です。
+- [[パブリック IP アドレス]](/azure/virtual-network/public-ip-addresses#:~:text=public%20ip%20addresses%20enable%20azure,IP%20assigned%20can%20communicate%20outbound): Azure リソースがインターネット通信に使用する IP アドレス。 このアドレスは、Azure リソース専用です。
 
-- [Azure Load Balancer](/azure/virtual-machines/windows/tutorial-load-balancer#:~:text=An%20Azure%20load%20balancer%20is,traffic%20to%20an%20operational%20VM):サーバー ファーム内の複数のサーバーにわたり、ネットワークまたはアプリケーションのトラフィックを効率的に分散するロード バランサー。 Load Balancer は、オンラインのサーバーにのみ要求を送信することで、高可用性と信頼性を確保します。
+- [Azure Load Balancer](/azure/virtual-machines/windows/tutorial-load-balancer#:~:text=an%20azure%20load%20balancer%20is,traffic%20to%20an%20operational%20vm):サーバー ファーム内の複数のサーバーにわたり、ネットワークまたはアプリケーションのトラフィックを効率的に分散するロード バランサー。 Load Balancer は、オンラインのサーバーにのみ要求を送信することで、高可用性と信頼性を確保します。
 
 - [Azure Application Gateway](/azure/application-gateway/overview):Load Balancer の代替手段。 4 つすべての定義済み ARM テンプレートによって Load Balancer がデプロイされます。 ARM テンプレートの代わりに完全に構成可能なデプロイを使用すると、Load Balancer ではなく Application Gateway を選択できます。 Application Gateway は、Web アプリケーションへのトラフィック管理に使用できる Web トラフィック ロード バランサーです。 Application Gateway によるルーティングの決定は、URI パス、ホスト ヘッダーのような HTTP 要求の追加属性に基づいて行うことができます。
 
@@ -47,7 +47,7 @@ Azure Resource Manager (ARM) テンプレートを使用して Moodle を移行�
 
 ARM テンプレートは、次のストレージ アカウントの種類をサポートしています。
 
-- [Network File System (NFS)](/windows-server/storage/nfs/nfs-overview): リモート ホストがネットワーク経由でファイル システムをマウントするときに使用できるアカウントの種類。 リモート ホストは、ローカルにマウントされている場合と同じように、これらのファイル システムとやり取りできます。 この設計により、システム管理者は、ネットワーク上の集中管理されているサーバーにリソースを統合することができます。
+- [Network File System (NFS)](/windows-server/storage/nfs/nfs-overview):リモート ホストがネットワーク経由でファイル システムをマウントするときに使用できるアカウントの種類。 リモート ホストは、ローカルにマウントされている場合と同じように、これらのファイル システムとやり取りできます。 この設計により、システム管理者は、ネットワーク上の集中管理されているサーバーにリソースを統合することができます。
 
 - [GlusterFS](/azure/virtual-machines/workloads/sap/high-availability-guide-rhel-glusterfs): 複数のペタバイト単位のデータを格納するために、構成要素方式でスケールアウトできるオープンソースの分散ファイル システム。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 5dcd54f2db94ab52b72eb4bef344ed3d20c85aa3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e36fb243716808df82bf71a46135734f322ef805
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024825"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175272"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>クラウド移行のためのスキルの準備
 
@@ -23,7 +23,7 @@ ms.locfileid: "97024825"
 
 ## <a name="prerequisites-skilling-resources"></a>前提条件のスキル リソース
 
-移行手法の実装は、移行の行程の[計画フェーズ](../strategy/suggested-skills.md)と[準備フェーズ](../organize/suggested-skills.md)中に習得したスキルに基づいて構築されます。
+移行手法の実装は、移行の行程の[計画](../strategy/suggested-skills.md)および[準備](../organize/suggested-skills.md)中に習得したスキルに基づいて構築されます。
 
 ## <a name="assess-skilling-resources"></a>スキル リソースの評価
 

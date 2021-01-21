@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: d01e7333d6e5e85576287248073562fc2f2b181f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9e1483139aa0ff7bbcee8fbde897cfbe2e9e9b2a
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012857"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175068"
 ---
 # <a name="how-will-global-market-decisions-affect-the-transformation-journey"></a>グローバル マーケットの決定が変革過程に与える影響
 

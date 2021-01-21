@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: df9df8cdc1dec1b9388e01c2d82d3f4ec54bf935
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 80fa19f514e425bf11fee61a6f245290d49bb3d3
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019555"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174473"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>リソースの整合性の規範の改良
 
@@ -71,7 +71,7 @@ ms.locfileid: "97019555"
 - 最小特権アクセス許可モデルを確立します。このモデルでは、既定ではユーザーに何もアクセス許可を与えません。
 - 組織内の誰が各ワークロードとアカウントを所有し、誰がこれらのリソースを保守または変更するためのアクセス権を必要とするかを特定します。 クラウドでのロールと責任を、これらのニーズに合わせて定義し、このロールをアクセス制御の基礎として使用します。
 - リソース間の依存関係を定義します。
-- 計画フェーズで定義された要件に合わせて自動リソース スケーリングを実装します。
+- 計画フェーズ中に定義された要件に合わせて自動リソース スケーリングを実装します。
 - アクセス パフォーマンスを実施して、利用したサービスの質を測定します。
 - 構成設定とリソース作成ルールを使用して SLA の適用を管理するための [Azure Policy](/azure/governance/policy/overview) のデプロイを検討します。
 

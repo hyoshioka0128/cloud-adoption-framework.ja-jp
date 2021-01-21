@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: ef6af215d67a5e2c12792e6f54e4e74d915da381
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: 744bdf4b3e348f522a90941102521d5ffe83ccd8
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123427"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175238"
 ---
 # <a name="how-to-set-up-moodle-worker-nodes"></a>Moodle ワーカー ノードを設定する方法
 
@@ -62,6 +62,7 @@ mkdir -p backup/moodle
 ```
 
 ### <a name="configure-the-php-and-web-server"></a>PHP と Web サーバーを構成する
+
 PHP と Web サーバーを構成するには、次の手順のようにします。
 
 1. PHP のバージョンを変数に設定します。
@@ -95,7 +96,26 @@ PHP と Web サーバーを構成するには、次の手順のようにしま�
    php -m
    ```
 
-1. Azure Resource Manager テンプレートを使用して、次の PHP 拡張機能をインストールします: fpm、cli、curl、zip、pear、mbstring、dev、mcrypt、soap、json、redis、bcmath、gd、mysql、xmlrpc、intl、xml、bz2。
+1. Azure Resource Manager テンプレートを使用して、次の PGH 拡張機能をインストールします。
+
+    - `fpm`
+    - `cli`
+    - `curl`
+    - `zip`
+    - `pear`
+    - `mbstring`
+    - `dev`
+    - `mcrypt`
+    - `soap`
+    - `json`
+    - `redis`
+    - `bcmath`
+    - `gd`
+    - `mysql`
+    - `xmlrpc`
+    - `intl`
+    - `xml`
+    - `bz2`
 
 1. オンプレミスの Moodle アプリケーションに、コントローラー仮想マシンにない追加の PHP 拡張機能がある場合は、次のコマンドを使用して手動でインストールします。
 

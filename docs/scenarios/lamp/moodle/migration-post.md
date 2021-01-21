@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: d36b6cd1fae07156c604c9ebf560ecd2b4873d35
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: 18fca8720f3391e5c1ea595552c839efe5cc6b29
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123444"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175153"
 ---
+<!--docutune:casing SCP WinSCP SCORM -->
+
 # <a name="how-to-follow-up-after-a-moodle-migration"></a>Moodle 移行後のフォローアップ方法
 
 ## <a name="post-migration-tasks"></a>移行後のタスク
@@ -26,7 +28,7 @@ Moodle に移行した後、移行後のタスクを実行して構成を完了�
 - 証明書の更新。
 - 証明書の場所の更新。
 - HTML ローカル コピーの更新。
-- PHP および nginx のサーバーの再起動。
+- PHP および NGINX のサーバーの再起動。
 - Azure Load Balancer の IP アドレスへの DNS 名のマッピング。
 
 ## <a name="controller-virtual-machine-scale-set"></a>コントローラー仮想マシン スケール セット
@@ -54,7 +56,7 @@ Moodle に移行した後、移行後のタスクを実行して構成を完了�
 
 ### <a name="restart-servers"></a>サーバーを再起動する
 
-次のコマンドを入力して、nginx および php-fpm サーバーを再起動します。
+次のコマンドを入力して、`nginx` および `php-fpm` サーバーを再起動します。
 
 ```bash
 sudo systemctl restart nginx
@@ -69,7 +71,7 @@ sudo systemctl restart php<php version>-fpm
 
 1. コントローラー仮想マシンにサインインします。 Moodle アプリケーションの証明書は、`/moodle/certs` フォルダーにあります。
 
-1. `.crt` と `.key` ファイルを `/moodle/certs/` にコピーします。 構成された nginx サーバーによって認識されるように、ファイル名をそれぞれ `nginx.crt` と `nginx.key` に変更します。 ローカル環境で SCP ユーティリティまたは WinSCP などのツールがサポートされている場合は、これらのツールを使用して、これらのファイルをコントローラー仮想マシンにコピーできます。 それ以外の場合は、次のコマンドを使用します。
+1. `.crt` と `.key` ファイルを `/moodle/certs/` にコピーします。 構成された NGINX サーバーによって認識されるように、ファイル名をそれぞれ `nginx.crt` と `nginx.key` に変更します。 ローカル環境で SCP ユーティリティまたは WinSCP などのツールがサポートされている場合は、これらのツールを使用して、これらのファイルをコントローラー仮想マシンにコピーできます。 それ以外の場合は、次のコマンドを使用します。
 
    ```bash
    cd /<path to certs location>
@@ -112,7 +114,7 @@ sudo systemctl restart php<php version>-fpm
       /moodle/certs/nginx.key;
       ```
 
-    1. Ctrl + O キーを押して変更を保存し、Ctrl + X キーを押してファイルを閉じます。
+   1. Ctrl + O キーを押して変更を保存し、Ctrl + X キーを押してファイルを閉じます。
 
 ### <a name="update-local-html-copy"></a>ローカル HTML コピーを更新する
 
@@ -139,7 +141,6 @@ sudo systemctl restart php<php version>-fpm
 ホスティング プロバイダー レベルで次の手順のようにして、DNS 名を Azure Load Balancer の IP にマップします。
 
 1. コントローラー仮想マシンで次のコマンドを入力し、Moodle Web サイトでメンテナンス モードをオフにします。
-
 
    ```bash
    sudo /usr/bin/php admin/cli/maintenance.php --disable
@@ -190,7 +191,7 @@ Moodle の移行について不明な点がある場合は、以下の情報を�
 
 次のエラーには、複数の原因が考えられます: "*500: 内部サーバー エラー*"。 まず、Web サーバーのエラー ログを確認します。詳細な説明が含まれているはずです。 次のような可能性があります。
 
-- `.htaccess` または `httpd.conf` ファイルに構文エラーがあります。 ディレクティブの正しい構文は、使用しているファイルによって異なります。 次のコマンドを使用して、nginx ファイルの構成エラーをテストします。
+- `.htaccess` または `httpd.conf` ファイルに構文エラーがあります。 ディレクティブの正しい構文は、使用しているファイルによって異なります。 次のコマンドを使用して、NGINX ファイルの構成エラーをテストします。
 
   ```bash
   `nginx -t`
@@ -244,9 +245,9 @@ memory_limit 0
 
 サインインできない場合、または次のいずれかのメッセージが表示される場合があります。
 
-- "*セッションがタイムアウトしました。Please log in again. \(ログインし直してください。\)* "
+- `Your session has timed out. Please log in again.`
 
-- "*A server error that affects your login session was detected. (ログイン セッションに影響を与えるサーバー エラーが検出されました。) Please log in again or restart your browser. \(もう一度ログインするか、ブラウザーを再起動してください。\)* "
+- `A server error that affects your login session was detected. Please log in again or restart your browser.`
 
 認証方法に問題がある可能性があります (特に、LDAP などの外部の方法を使用してユーザーを認証している場合)。 メインの管理者アカウントなど、別の手動アカウントにサインインしてみてください。 サインインできない場合は、認証を確認します。 他のアカウントにはサインインできる場合は、Moodle サインインの問題の考えられる原因と解決策を次に示します。
 
@@ -256,7 +257,7 @@ memory_limit 0
 
 ### <a name="fatal-errors"></a>致命的なエラー
 
-次のエラーが表示される場合は、Moodle と moodledata のアクセス許可が正しくない可能性があります。"*Fatal error: $CFG->dataroot is not writable. (致命的なエラー: $CFG-> データルートは書き込み可能ではありません。) The admin has to fix directory permissions! \(管理者はディレクトリのアクセス許可を修正する必要があります。\)Exiting. \(終了します。\)* "
+次のエラーが表示される場合は、Moodle と moodledata のアクセス許可が正しくない可能性があります。"`fatal error: $cfg->dataroot is not writable. The admin has to fix directory permissions! Exiting.` "
 
 これらのアクセス許可が `www-data:www-data` のみであることを確認します。 アクセス許可のレベルが異なる場合は、次のコマンドを使用して、グループと所有権のアクセス許可を変更します。
 

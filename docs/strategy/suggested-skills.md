@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: bd095d6474c5469fdc930b30a4a6d3ed0a901125
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: d1c1242f57bc97f1cc934c78e5ca5604a7e5c6ae
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713015"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174949"
 ---
-# <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
+# <a name="skills-readiness-path-during-the-planning-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
 
 移行の行程の計画フェーズにおける目標は、移行の実装をガイドするために必要な計画を作成することです。 このフェーズには、次のように、重要なスキルがいくつか必要です。
 
@@ -75,7 +75,7 @@ ms.locfileid: "97713015"
 
 ## <a name="deeper-skills-exploration"></a>より詳細なスキル調査
 
-スキルを伸ばすためのこれらの初期のオプション以外に、さまざまな学習オプションを利用できます。
+スキルを伸ばすために、これらの初期のオプション以外にさまざまな学習オプションを利用できます。
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>クラウド IT の役割の典型的なマッピング
 

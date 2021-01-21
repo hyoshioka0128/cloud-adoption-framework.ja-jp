@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 2efdd3c7d32c12120f9424d159acb7be27441a4f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c652db52eea25ce0557d0588e92ce7d42f01b00d
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025148"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175255"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>昇格モデル:シングル ステップ、段階的、またはフライト
 

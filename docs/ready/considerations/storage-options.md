@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 9ef641892ec564e42557a0fb8ad91ff18507c722
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 752fd6a3eeb803c7767574b2f8502dd869520a39
+ms.sourcegitcommit: 003c04cf21c184be272102c9476f27dd675357bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713337"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98571959"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -70,7 +70,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 | シナリオ | 推奨される Azure サービス | 推奨されるサービスに関する考慮事項 |
 |---|---|---|
 | Windows ファイル サーバーを使用しています。 | [Azure Files](/azure/storage/files/storage-files-planning) <br><br> [Azure File Sync](/azure/storage/files/storage-sync-files-planning) | Azure File Sync を使用すると、めったに使用されないデータをクラウド ベースの Azure ファイル共有に格納しながら、最もよく使用されるファイルをオンプレミスでキャッシュして高速なローカル アクセスを実現できます。 マルチサイト同期を使用して、ファイルを複数のサーバー間の同期を維持することもできます。 ワークロードをクラウドのみのデプロイに移行する予定がある場合は、Azure Files で十分である可能性があります。 |
-| エンタープライズ NAS (Azure NetApp Files や Dell-EMC Isilon など) があります。 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) <br><br> [Azure Files (Premium)](/azure/storage/files/storage-files-planning#storage-tiers) | NetApp のオンプレミス デプロイがある場合は、Azure NetApp Files を使用してデプロイを Azure に移行することを検討してください。 Windows または Linux サーバーを使用しているか、それらのサーバーに移行しようとしている場合や、基本的なファイル共有が必要な場合は、Azure Files を使用することを検討してください。 継続的なオンプレミス アクセスについては、クラウド階層化メカニズムを使用して、Azure File Sync で Azure ファイル共有をオンプレミスのファイル共有と同期させます。 |
+| エンタープライズ NAS (NetApp や Dell-EMC Isilon など) があります。 | [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) <br><br> [Azure Files (Premium)](/azure/storage/files/storage-files-planning#storage-tiers) | NetApp のオンプレミス デプロイがある場合は、Azure NetApp Files を使用してデプロイを Azure に移行することを検討してください。 Windows または Linux サーバーを使用しているか、それらのサーバーに移行しようとしている場合や、基本的なファイル共有が必要な場合は、Azure Files を使用することを検討してください。 継続的なオンプレミス アクセスについては、クラウド階層化メカニズムを使用して、Azure File Sync で Azure ファイル共有をオンプレミスのファイル共有と同期させます。 |
 | ファイル共有 (SMB または NFS) があります。 | [Azure Files (Standard または Premium)](/azure/storage/files/storage-files-planning) <br><br> [Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction) | Azure Files の Premium レベルと Standard レベルのどちらを選択するかは、IOPS、スループット、および待機時間の一貫性へのニーズによって異なります。 NetApp のオンプレミス デプロイがある場合は、Azure NetApp Files を使用することを検討してください。 アクセス制御リスト (ACL) とタイムスタンプをクラウドに移行する必要がある場合は、Azure File Sync が、これらのすべての設定を便利な移行パスとして Azure ファイル共有に移動することができます。 |
 | 数ペタバイトのデータのためのオンプレミスのオブジェクト ストレージ システム (Dell-EMC ECS など) があります。 | [Azure BLOB Storage](/azure/storage/blobs/storage-blobs-introduction) | Azure Blob Storage には、ワークロードのパフォーマンスとコストのニーズに適合するように、Premium、ホット、クール、アーカイブの各層が用意されています。 |
 | DFSR デプロイ、またはブランチ オフィスを処理するための別の方法があります。 | [Azure Files](/azure/storage/files/storage-files-planning) <br><br> [Azure File Sync](/azure/storage/files/storage-sync-files-planning) | Azure File Sync はマルチサイト同期を提供し、クラウド内の複数のサーバーとネイティブ Azure ファイル共有間でファイルの同期を維持します。 クラウド階層化を使用して、オンプレミスの固定のストレージ フットプリントに移動します。 クラウド階層化は、サーバーを関連するファイルのキャッシュに変換しながら、Azure ファイル共有内のコールド データをスケーリングします。 |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 21c0881738e4e83ef7943cf99a13eac5b14f0fbd
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a1ac602ebebaed55b7487489bdb162e095eb466c
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013214"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174779"
 ---
 # <a name="balance-the-portfolio"></a>ポートフォリオのバランスを取る
 

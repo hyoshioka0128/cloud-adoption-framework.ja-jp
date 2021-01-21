@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: f3174a439376cbb23f1446a1bdca30f77e613363
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 61673e47f274c2e1fc59cb8810e3c1b274685f79
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446829"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174354"
 ---
 <!-- docutune:casing "natural language understanding" -->
 <!-- cSpell:ignore Twilio -->
@@ -39,7 +39,7 @@ Azure Bot Service および Bot Framework は、このプロセスを支援す�
 
 目標、プロセス、およびユーザーのニーズを完全に理解することが、成功するボットを作成するプロセスにとって重要です。 コードを書く前に、ボットの[デザイン ガイドライン](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)でベスト プラクティスを確認し、作成するボットに必要な事柄を見極めてください。 単純なボットを作成することも、音声、自然言語の解釈、質問への応答などの高度な機能を含めることもできます。
 
-計画フェーズでボットを設計する場合は、次の点を考慮してください。
+計画フェーズ中にボットを設計する場合は、次の点を考慮してください。
 
 - ボットのペルソナの定義:
   - ボットの外観は?

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 1b8c21889f381436d4e9126c580ab13a9b3338c8
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b098d1f1b03c83a40249f34d48e07c589eaea507
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022972"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174456"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 

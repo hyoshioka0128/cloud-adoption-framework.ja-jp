@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: b66a9258eeab8ddf3be16d6b71d360a2da77cf93
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 77fe35a487858a240e7b3dc8879acd67e28afa8d
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026219"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175119"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>スキル準備パスの開始
 
@@ -37,7 +37,7 @@ _図 1:クラウドでホストされる環境内の IT の役割へのスキル
   - **管理:** クラウド環境を管理するために必要なスキルを習得します。
   - **[監視](../manage/monitor/suggested-skills.md):** クラウド環境を監視するために必要なスキルを習得します。
 
-これまでの各ラーニング パスでは、知識の獲得を最大化するために複数の種類のメディアで機会が共有されます。
+これまでの各ラーニング パスでは、知識の獲得を最大化するために複数の種類のメディアで機会が共有されます。 ラーニング パスを発展させるときには、従業員や学習者がどのように認定を受ける必要があるかを把握します。 次のリソースは、使用可能なポートフォリオの理解から認定の概要、推奨される手順や認定に必要なトレーニングまで、認定のパスを計画するのに役立ちます。 [Azure 認定デッキ](https://aka.ms/azuretraincertdeck) 
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 

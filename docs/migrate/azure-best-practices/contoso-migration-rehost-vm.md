@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: cfba0681dd1a07a787c24561d5ca23e0dbef5bc7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6a05051287765528ea34774b4a5cbfb12e575639
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013996"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174405"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -308,4 +308,5 @@ Contoso は、[Azure Cost Management および Billing](/azure/cost-management-b
 
 ## <a name="conclusion"></a>まとめ
 
-この記事では、Contoso が SmartHotel360 アプリケーションを Azure にリホストしました。 管理者は、Azure Migrate を使用して、アプリケーション VM を Azure VM に移行しました。サーバー移行ツール。 ご使用の環境で同様のプロジェクトを完了するためのガイダンスについては、[サーバー移行プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)の AzureDevOps プロジェクト テンプレートを確認してください。 
+この記事では、Contoso が SmartHotel360 アプリケーションを Azure にリホストしました。 管理者は、Azure Migrate を使用して、アプリケーション VM を Azure VM に移行しました。サーバー移行ツール。
+また、[DevOps ジェネレーター](https://aka.ms/adopt/plan/generator)で公開されている Azure DevOps プロジェクトを参照することもできます。 ジェネレーターで、クラウド導入フレームワークのナビゲーションの下にある[サーバー移行プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)をダウンロードします。 

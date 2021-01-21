@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 8209ade18c3396189b9617aeccece3970e470091
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6e7b37b5ff6b299027bc89ab18974a10e5dc4083
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016257"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174252"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>クラウド管理における運用のコンプライアンス
 
@@ -35,7 +35,7 @@ ms.locfileid: "97016257"
 
 ### <a name="environment-consistency"></a>環境の整合性
 
-整合性のある環境 (ランディング ゾーン) を確立することは、運用上のコンプライアンスに向けた次の最も重要な手順です。 ランディング ゾーンが一貫しており、自動化ツールによって適用される場合、運用上の問題を診断して解決するための複雑さは大幅に軽減されます。 環境の整合性に関する詳細なガイダンスについては、クラウド導入ライフサイクルの[準備フェーズ](../../ready/index.md)を参照してください。 そのフェーズの演習では、クラウドベースの環境の開発に向けた一貫したコード優先アプローチを定義し、成熟させるための繰り返し可能なプロセスを構築することができます。
+整合性のある環境 (ランディング ゾーン) を確立することは、運用上のコンプライアンスに向けた次の最も重要な手順です。 ランディング ゾーンが一貫しており、自動化ツールによって適用される場合、運用上の問題を診断して解決するための複雑さは大幅に軽減されます。 環境の整合性に関する詳細なガイダンスについては、クラウド導入ライフサイクルの[準備フェーズ](../../ready/index.md)を参照してください。 このフェーズの演習では、クラウドベースの環境の開発に向けた一貫したコード優先アプローチを定義し、成熟させるための繰り返し可能なプロセスを構築することができます。
 
 ### <a name="resource-configuration-consistency"></a>リソース構成の整合性
 

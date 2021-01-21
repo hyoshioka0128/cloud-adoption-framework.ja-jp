@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: b95cbdd7dda23366eccd66c8f1ac7265da225e4a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 22cc5f779cbdbac94ac7de0e661b11d40f9c24de
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013826"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174133"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -142,7 +142,7 @@ Contoso では、DMA を使用して評価を実行し、Azure Migrate にデー
 データ ソースで DMA を実行できなかった場合は、次のガイドラインに従ってデータベースを移行しました。
 
 > [!NOTE]
-> 評価フェーズの一環として、Contoso ではさまざまなオープンソース データベースを検出しました。 これとは別に、同社は移行計画のために、「[オープンソース データベースを Azure に移行する](./contoso-migration-oss-db-to-azure.md)」に従いました。
+> 評価フェーズにおいて、Contoso ではさまざまなオープンソース データベースを検出しました。 これとは別に、同社は移行計画のために、「[オープンソース データベースを Azure に移行する](./contoso-migration-oss-db-to-azure.md)」に従いました。
 
 <!-- docutune:casing "custom .NET" -->
 
@@ -214,5 +214,5 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 ## <a name="conclusion"></a>まとめ
 
 この記事では、Contoso が、Microsoft SQL Server ワークロードの Azure への移行を評価し、計画し、実行しました。
-
-SQL 移行の過程で利用する Azure DevOps プロジェクトが開発されました。 このプロジェクトは、クラウド導入フレームワークに合わせています。 このプロジェクトが示す手順に従って、必要となる重要な決定を行うことができます。Azure DevOps プロジェクトに移動するには、[こちらをクリック](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration)してください。
+ 
+SQL 移行の過程における学習用に Azure DevOps プロジェクトが開発されており、これはクラウド導入フレームワークに合わせています。 このプロジェクトに従って、必要となる重要な決定を行うことができます。 Azure DevOps プロジェクトに移動するには、[このリンクを選択](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration)してください。

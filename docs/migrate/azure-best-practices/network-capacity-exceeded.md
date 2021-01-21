@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 2595aa2cd9ee5865934e27946092e8cf22047a0f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1a493c8624d1cbcd4fbf9d4c9a4a6fb559b5d4c1
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025947"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98174813"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "97025947"
 
 ## <a name="general-scope-expansion"></a>全般的な範囲の拡大
 
-この範囲の拡大に必要な作業のほとんどは、移行の前提条件、評価、および移行フェーズ中に発生します。
+この範囲の拡大に必要な作業のほとんどは、移行の前提条件の計画、評価、および移行フェーズ中に発生します。
 
 ## <a name="suggested-prerequisites"></a>推奨される前提条件
 

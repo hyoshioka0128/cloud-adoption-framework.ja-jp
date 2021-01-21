@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 5b82b1c440a8a7bd311098906d3baf902bfd6327
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: c5d8319f1f181848e70d303c7315403a5b52f7c0
+ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123614"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98175204"
 ---
 # <a name="how-to-prepare-for-a-moodle-migration"></a>Moodle 移行のための準備を行う方法
 
@@ -43,7 +43,7 @@ Moodle アプリケーションをオンプレミス環境から Azure に移行
 
 Azure サブスクリプションがない場合は、[無料で作成する](https://azure.microsoft.com/free/)ことができます。 また、[従量課金制サブスクリプション](https://azure.microsoft.com/offers/ms-azr-0003p/)を設定するか、Azure portal でサブスクリプションを作成することもできます。
 
-- Azure portal を使用してサブスクリプションを作成するには、[[サブスクリプション]](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) を開き、 **[追加]** を選択して、必要な情報を入力します。
+- Azure portal を使用してサブスクリプションを作成するには、[ **[サブスクリプション]**](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) を開き、 **[追加]** を選択して、必要な情報を入力します。
 
   ![Azure portal の [サブスクリプション] ページのスクリーンショット。](./images/azure-subscriptions-page.png)
 
@@ -59,14 +59,14 @@ Azure サブスクリプションがない場合は、[無料で作成する](ht
 
 ## <a name="create-a-resource-group"></a>リソース グループを作成する
 
-Azure サブスクリプションの設定が終わったら、Azure にリソース グループを作成します。 Azure portal **または** Azure CLI のいずれかを使用して、リソース グループを作成できます。
+Azure サブスクリプションの設定が終わったら、Azure portal または Azure CLI を使用して、Azure にリソース グループを作成します。
 
 - Azure portal を使用する場合は、次の手順のようにします。
 
-  1. [[リソース グループ]](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) を開き、 **[追加]** を選択します。
-  
+  1. [ **[リソース グループ]**](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) を開き、 **[追加]** を選択します。
+
   1. サブスクリプション名、リソース グループ名、リージョンを入力します。 利用可能なリージョンの一覧については、「[Azure でのデータ所在地](https://azure.microsoft.com/global-infrastructure/data-residency/)」を参照してください。 後の手順で使用できるように、入力したリソース グループの名前を記録しておきます。
-  
+
   1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
   ![Azure portal の [リソース グループの作成] ページのスクリーンショット。サブスクリプション、リソース グループ、リージョンの各ボックスと、[確認および作成] ボタンがある。](./images/resource-group.png)
@@ -87,11 +87,11 @@ Azure サブスクリプションの設定が終わったら、Azure にリソ�
 
 次に、作成したリソース グループ内にストレージ アカウントを作成します。 このストレージ アカウントを使用して、オンプレミスの Moodle データをバックアップします。
 
-Azure portal **または** Azure CLI のいずれかを使用して、ストレージ アカウントを作成できます。
+Azure portal または Azure CLI のいずれかを使用して、ストレージ アカウントを作成できます。
 
 - Azure portal を使用する場合は、次の手順のようにします。
 
-  1. [[ストレージ アカウントの作成]](https://ms.portal.azure.com/#create/Microsoft.StorageAccount) を開きます。
+  1. [ **[ストレージ アカウントの作成]** ](https://ms.portal.azure.com/#create/Microsoft.StorageAccount) に移動します。
 
   1. 次の情報を入力します。
 
@@ -99,9 +99,9 @@ Azure portal **または** Azure CLI のいずれかを使用して、ストレ�
      - 先ほど作成したリソース グループの名前
      - ストレージ アカウント名
      - 自分のリージョン
-   
+
   1. **[アカウントの種類]** については、ドロップダウン リストから **[BlobStorage]** を選択します。
-  
+
   1. **[レプリケーション]** については、ドロップダウン リストから **[読み取りアクセス geo 冗長ストレージ (RA-GRS)]** を選択します。
 
   1. **[Review + create]\(レビュー + 作成\)** を選択します。
@@ -136,7 +136,7 @@ Azure portal **または** Azure CLI のいずれかを使用して、ストレ�
    sudo /usr/bin/php admin/cli/maintenance.php
    ```
 
-オンプレミスの Moodle および moodledata ファイル、構成、データベースをバックアップする場合は、これらのリソースを 1 つのディレクトリにバックアップすることをお勧めします。 次の図は、この概念をまとめたものです。
+オンプレミスの Moodle と moodledata のファイル、構成、およびデータベースを 1 つのディレクトリにバックアップする必要があります。 次の図は、この推奨事項をまとめたものです。
 
 ![Moodle のバックアップ ストレージ ディレクトリの構造を示す図。](./images/directory-structure.png)
 
@@ -172,7 +172,7 @@ Azure portal **または** Azure CLI のいずれかを使用して、ストレ�
    mkdir configuration
    ```
 
-2. 次のコマンドを入力して、PHP と nginx の構成ファイルをコピーします。
+2. 次のコマンドを入力して、PHP と NGINX の構成ファイルをコピーします。
 
    ```bash
    cp -R /etc/php /home/azureadmin/storage/configuration/
