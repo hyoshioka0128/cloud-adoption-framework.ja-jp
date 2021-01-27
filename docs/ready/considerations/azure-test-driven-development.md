@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 8529745bb200361247fbcff04f43e74c861379ee
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ea86e455a3fb6bc52e5a6ee359cd84ae75df7b65
+ms.sourcegitcommit: 9f5b94ff2a57f17541c9bd706245ae23883ad22c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024230"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98625771"
 ---
 # <a name="test-driven-development-for-landing-zones-in-azure"></a>Azure のランディング ゾーン用のテスト駆動開発
 
@@ -22,7 +22,8 @@ ms.locfileid: "97024230"
 ## <a name="azure-tools-to-support-landing-zone-tdd-cycles"></a>ランディング ゾーンの TDD サイクルをサポートするための Azure ツール
 
 ![Azure のテスト駆動開発ツール](../../_images/ready/azure-tdd-tools.png)
-_図 1: Azure のテスト駆動開発ツール。_
+
+"_図 1:Azure のテスト駆動開発ツール。_
 
 Azure ネイティブのガバナンス製品とサービスのツールチェーンは、ランディング ゾーンを作成するために、テスト駆動開発に簡単に統合できます。 これらの各ツールは特定の目的に対応しているため、TDD サイクルに合わせてランディング ゾーンを簡単に開発、テスト、デプロイできます。
 
