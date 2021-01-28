@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 030015caea60edbd2342342e1de60058a5fa013d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d5a4f593e62772dbd45fa9aea3eebfb6360fbcf4
+ms.sourcegitcommit: 9f5b94ff2a57f17541c9bd706245ae23883ad22c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013622"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98625720"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 
@@ -25,8 +25,16 @@ ms.locfileid: "97013622"
 
 ランディング ゾーン環境にデプロイする各アプリケーションまたはサービスに対しては、次のデシジョン ツリーを出発点として使用すると、コンピューティング サービスの要件を決定するのに役立ちます。
 
-![Azure コンピューティング サービスのデシジョン ツリー](../../_images/ready/compute-decision-tree.png)
-_図 1:Azure コンピューティング サービスのデシジョン ツリー。_
+![Azure コンピューティング サービスのデシジョン ツリーの図。](../../_images/ready/compute-decision-tree.png)
+
+"_図 1:Azure コンピューティング サービスのデシジョン ツリー。_
+
+定義:
+
+- "リフト アンド シフト" は、アプリケーションの再設計やコード変更なしで、ワークロードをクラウドに移行する戦略です。 "リホスト" とも呼ばれます。 詳細については、「Azure Migration Center」を参照してください。
+- "クラウド用に最適化" はアプリケーションをリファクタリングすることでクラウドネイティブの機能を利用して、クラウドに移行する戦略です。
+
+このフローチャートの結果は、検討の開始点です。 次に、サービスのより詳細な評価を実行し、ニーズを満たすかどうかを確認します。
 
 > [!NOTE]
 > 各アプリケーションまたはサービスのコンピューティング オプションを評価する方法の詳細については、Azure アプリケーション アーキテクチャ ガイドの「[Azure コンピューティング オプションの概要](/azure/architecture/guide/technology-choices/compute-decision-tree)」を参照してください。
