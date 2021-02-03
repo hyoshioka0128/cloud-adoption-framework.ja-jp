@@ -8,23 +8,23 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 0cef3da5be2430c79411600e9caa1e51bd107991
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 1106e7e4ffbda0d93c6e141cd9743221eb14aace
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175221"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227049"
 ---
 # <a name="moodle-migration-architecture-and-templates"></a>Moodle 移行のアーキテクチャとテンプレート
 
 Moodle の Azure への移行には、次のタスクが含まれます。
 
 1. Azure Resource Manager (ARM) テンプレートを使用して Azure インフラストラクチャをデプロイする。
-1. [AzCopy をダウンロードしてインストールする](migration-start.md#download-and-install-azcopy-on-the-controller-vm)。
-1. Azure Resource Manager デプロイ内で [Moodle のバックアップ アーカイブをコントローラー仮想マシン インスタンスにコピーする](migration-start.md#copy-the-moodle-archive-to-the-controller-vm)。
-1. [Moodle アプリケーションと構成を移行する](migration-start.md#import-the-moodle-database-to-azure)。
-1. [Moodle コントローラー インスタンスとワーカー ノードを設定する](azure-infra-config.md)。
-1. [PHP と Web サーバーを構成する](azure-infra-config.md)。
+1. [AzCopy をダウンロードしてインストールする](./migration-start.md#download-and-install-azcopy-on-the-controller-vm)。
+1. Azure Resource Manager デプロイ内で [Moodle のバックアップ アーカイブをコントローラー仮想マシン インスタンスにコピーする](./migration-start.md#copy-the-moodle-archive-to-the-controller-vm)。
+1. [Moodle アプリケーションと構成を移行する](./migration-start.md#import-the-moodle-database-to-azure)。
+1. [Moodle コントローラー インスタンスとワーカー ノードを設定する](./azure-infra-config.md)。
+1. [PHP と Web サーバーを構成する](./azure-infra-config.md)。
 
 この記事では、Moodle Azure インフラストラクチャのオプションと、選択した Azure 機能を提供する ARM テンプレートを使用して Azure リソースをデプロイする方法について説明します。
 
@@ -32,7 +32,7 @@ Moodle の Azure への移行には、次のタスクが含まれます。
 
 次の図は、Azure Moodle インフラストラクチャ リソースの概要を示しています。
 
-![Azure インフラストラクチャ リソースを示す図。](images/architecture.png)
+![Azure インフラストラクチャ リソースを示す図。](./images/architecture.png)
 
 ## <a name="arm-template-options"></a>ARM テンプレート オプション
 
@@ -42,19 +42,19 @@ Moodle リソースを Azure にデプロイするには、完全に構成可能
 
 - "*最小のデプロイ*" には 2 つの仮想マシン (VM) のみが必要であるため、これは Azure 無料試用版サブスクリプションで機能します。 このデプロイで使用されているのは、ネットワーク ファイル システム (NFS)、MySQL、および、より小規模な自動スケール Web フロントエンド VM SKU (1 つの仮想コア) です。 このテンプレートを使用すると、デプロイ時間が短くなります (30 分未満)。
 
-  [![最小 Moodle デプロイ ARM テンプレートを起動するボタン。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-minimal.json)
+  [![最小 Moodle デプロイ ARM テンプレートを起動するボタン。](./images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-minimal.json)
 
 - *小規模から中規模* は、最大 1000 人の同時ユーザーをサポートします。 このデプロイで使用されているのは NFS (高可用性なし) と MySQL (8 つの仮想コア) です。 このデプロイには、Elasticsearch や Azure Cache for Redis などのオプションが含まれていません。
 
-  [![小規模から中規模 Moodle デプロイ ARM テンプレートを起動するボタン。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-small2mid-noha.json)
+  [![小規模から中規模 Moodle デプロイ ARM テンプレートを起動するボタン。](./images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-small2mid-noha.json)
 
 - *大規模 (高可用性) デプロイ* は、2000 人を超える同時ユーザーをサポートします。 このデプロイで使用されているのは、Azure Files、MySQL (16 個の仮想コア)、Azure Cache for Redis です。Elasticsearch など、その他のオプションはありません。
 
-  [![大規模 (高可用性) Moodle デプロイ ARM テンプレートを起動するボタン。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-large-ha.json)
+  [![大規模 (高可用性) Moodle デプロイ ARM テンプレートを起動するボタン。](./images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-large-ha.json)
 
 - "*最大*" デプロイで使用されているのは、Azure Files、最大の SKU を備えた MySQL、Azure Cache for Redis、3 台の VM 上の Elasticsearch、およびデータ ディスクとデータベースの両方を対象とした大規模ストレージ サイズです。
 
-  [![最大 Moodle デプロイ ARM テンプレートを起動するボタン。](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-maximal.json)
+  [![最大 Moodle デプロイ ARM テンプレートを起動するボタン。](./images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-maximal.json)
 
 ## <a name="deploy-the-template"></a>テンプレートのデプロイ
 
@@ -95,4 +95,4 @@ Moodle リソースを Azure にデプロイするには、完全に構成可能
 
 ## <a name="next-steps"></a>次のステップ
 
-「[Moodle 移行のリソース](migration-resources.md)」に進み、ARM テンプレートが Azure にデプロイするリソースを確認します。
+「[Moodle 移行のリソース](./migration-resources.md)」に進み、ARM テンプレートが Azure にデプロイするリソースを確認します。

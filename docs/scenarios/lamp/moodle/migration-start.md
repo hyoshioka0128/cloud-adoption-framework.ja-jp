@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 5cf783fc9ab303cac14f647a7d9b2493f5d51801
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 6b47b937630097efa0201313447640de6ac97207
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175000"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227100"
 ---
 # <a name="moodle-manual-migration-steps"></a>手動による Moodle 移行の手順
 
@@ -21,16 +21,16 @@ ms.locfileid: "98175000"
 
 このプロセスを開始する前に、次の記事に記載されているすべての手順を確実に完了してください。
 
-- [Moodle 移行のための準備を行う方法](migration-pre.md)
-- [Moodle 移行のアーキテクチャとテンプレート](migration-arch.md)
+- [Moodle 移行のための準備を行う方法](./migration-pre.md)
+- [Moodle 移行のアーキテクチャとテンプレート](./migration-arch.md)
 
 Azure Resource Manager (ARM) テンプレートのデプロイが完了したら、[Azure portal](https://portal.azure.com/) にサインインし、デプロイ プロセスの一環として作成したリソース グループに移動します。 新しく作成されたインフラストラクチャ リソースの一覧を確認します。 作成されたリソースは、デプロイに使用した ARM テンプレートにもよりますが、次の図のようになります。
 
-![Moodle 移行リソース グループに作成されたインフラストラクチャ リソースを示すスクリーンショット。](images/resource-creation-overview.png)
+![Moodle 移行リソース グループに作成されたインフラストラクチャ リソースを示すスクリーンショット。](./images/resource-creation-overview.png)
 
 ## <a name="copy-the-moodle-archive"></a>Moodle アーカイブをコピーする
 
-移行プロセスの最初の手順では、Moodle バックアップ アーカイブを Azure Blob Storage から Moodle デプロイのコントローラー仮想マシン (VM) にコピーします。 これは、[アーカイブの作成](migration-pre.md#create-an-archive)で作成したのと同じアーカイブです。
+移行プロセスの最初の手順では、Moodle バックアップ アーカイブを Azure Blob Storage から Moodle デプロイのコントローラー仮想マシン (VM) にコピーします。 これは、[アーカイブの作成](./migration-pre.md#create-an-archive)で作成したのと同じアーカイブです。
 
 ### <a name="sign-in-to-the-controller-virtual-machine"></a>コントローラー仮想マシンにサインインする
 
@@ -40,13 +40,13 @@ Azure Resource Manager (ARM) テンプレートのデプロイが完了したら
 
 1. 左側のナビゲーションで、 **[SSH]** を展開します。
 
-   ![[PuTTY Configuration]\(PuTTY の構成\) ページのスクリーンショット。](images/putty-configuration.png)
+   ![[PuTTY Configuration]\(PuTTY の構成\) ページのスクリーンショット。](./images/putty-configuration.png)
 
 1. **[Auth]\(認証\)** を選択し、ARM テンプレートを使用して Azure インフラストラクチャをデプロイしたときに使用した SSH キー ファイルを見つけます。
 
 1. **[Open]** を選択します。 ユーザー名として「**azureadmin**」と入力します (これがテンプレートにハードコーディングされているため)。
 
-   ![SSH 認証設定を示す PuTTY 構成ページのスクリーンショット。](images/putty-ssh-key.png)
+   ![SSH 認証設定を示す PuTTY 構成ページのスクリーンショット。](./images/putty-ssh-key.png)
 
 PuTTY の詳細については、[PuTTY の一般的な FAQ/トラブルシューティングの質問](https://documentation.help/PuTTY/faq.html)に関するページをご覧ください。
 
@@ -134,11 +134,11 @@ az mysql server firewall-rule create --resource-group <myresourcegroup> --server
 
 ここで、許可されている IP アドレスを追加し、ファイアウォール規則を構成できます。 規則を作成した後、 **[保存]** を選択します。
 
-![Azure Database for MySQL サーバーの [接続セキュリティ] ウィンドウのスクリーンショット。](images/database-connection-security.png)
+![Azure Database for MySQL サーバーの [接続セキュリティ] ウィンドウのスクリーンショット。](./images/database-connection-security.png)
 
 これで、[`mysql`](https://dev.mysql.com/doc/refman/8.0/en/mysql.html) コマンド ライン ツールまたは [MySQL Workbench](https://dev.mysql.com/doc/workbench/en/) を使用して MySQL サーバーに接続できます。
 
-![MySQL Workbench の [Setup New Connection]\(新しい接続の設定\) 画面のスクリーンショット。](images/database-connection.png)
+![MySQL Workbench の [Setup New Connection]\(新しい接続の設定\) 画面のスクリーンショット。](./images/database-connection.png)
 
 接続情報を取得するには、Azure portal の MySQL サーバーの **[概要]** ページに移動します。 各フィールドの横のコピー アイコンを使用して、**サーバー名** と **サーバー管理者ログイン名** をコピーします。
 
@@ -343,4 +343,4 @@ cp /etc/php/$_PHPVER/fpm/pool.d/www.conf /moodle/config/php
 
 ## <a name="next-steps"></a>次の手順
 
-[Moodle コントローラー インスタンスとワーカー ノードの設定](azure-infra-config.md)に関するページに進み、Moodle 移行プロセスの次の手順を実行します。
+[Moodle コントローラー インスタンスとワーカー ノードの設定](./azure-infra-config.md)に関するページに進み、Moodle 移行プロセスの次の手順を実行します。

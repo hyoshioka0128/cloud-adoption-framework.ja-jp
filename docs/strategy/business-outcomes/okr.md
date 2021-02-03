@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: c9da763c77ace61575bee488f6dbdef6a813463d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: def676cd47056ea7d3dd7a0ccb5f775023c6f62e
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012330"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99226965"
 ---
 <!-- docutune:casing WorkBoard -->
 
@@ -53,7 +53,7 @@ OKR は個人のパフォーマンスに対してチームの成果の測定に�
 
 OKR は、組織内で整合性を取り、説明責任を明確にするのに役立ちます。
 
-![OKR が組織内の整合性と説明責任を向上し、よりすばやく目標を達成できるようにする仕組み。](../../_images/strategy/OKR.jpg)
+![OKR が組織内の整合性と説明責任を向上し、よりすばやく目標を達成できるようにする仕組み。](../../_images/strategy/okr.jpg)
 
 "_図 1:OKR が組織内の整合性と説明責任を向上し、よりすばやく目標を達成できるようにする仕組み。_
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal, operating-model
-ms.openlocfilehash: 7204b4ee6b1a3f86278295d198cde52caa71bcf8
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: de79b75fae4bdfb6e9b9e27defbcf1451453dc14
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024842"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99226990"
 ---
 # <a name="define-your-cloud-operating-model"></a>クラウド運用モデルを定義する
 
@@ -23,7 +23,7 @@ ms.locfileid: "97024842"
 
 ビジネスでクラウド運用モデルを定義するのに役立つように、クラウド導入フレームワークでは、運用モデルの各側面が手法として分類されます。 各手法および関連する実行可能な実践は、今後の状態操作を定義するうえで役立つように作成されています。
 
-![クラウド導入フレームワークの手法](../_images/CAF-overview-new.png)
+![クラウド導入フレームワークの手法](../_images/caf-overview-new.png)
 
 ### <a name="support-to-develop-your-operating-model"></a>運用モデルの開発をサポートする
 

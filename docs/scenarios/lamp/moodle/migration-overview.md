@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 1893b6625ad6bf3614e0a444a9ae83055edf5cd2
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 06db48a1c64d15a256a0ae6c5ff85895d98b2407
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175187"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227083"
 ---
 # <a name="overview-of-moodle-manual-migration"></a>手動による Moodle 移行の概要
 
@@ -30,9 +30,9 @@ ms.locfileid: "98175187"
   - PHP 7.2、7.3、または 7.4
   - Moodle 3.8 または 3
 - お使いの Moodle Web サイトが **メンテナンス モード** に設定されている。
-- オンプレミスのインフラストラクチャにアクセスできる (データベース構成を含め、[Moodle のデプロイと構成のバックアップ](migration-pre.md#back-up-on-premises-data)が必要な場合)。
-- [Azure CLI](migration-pre.md#install-the-azure-cli) および [AzCopy](migration-pre.md#download-and-install-azcopy) がオンプレミスにインストールされている。
-- [Azure サブスクリプション](migration-pre.md#create-a-subscription)および [Azure Blob Storage アカウント](migration-pre.md#create-a-storage-account)が作成されている。
+- オンプレミスのインフラストラクチャにアクセスできる (データベース構成を含め、[Moodle のデプロイと構成のバックアップ](./migration-pre.md#back-up-on-premises-data)が必要な場合)。
+- [Azure CLI](./migration-pre.md#install-the-azure-cli) および [AzCopy](./migration-pre.md#download-and-install-azcopy) がオンプレミスにインストールされている。
+- [Azure サブスクリプション](./migration-pre.md#create-a-subscription)および [Azure Blob Storage アカウント](./migration-pre.md#create-a-storage-account)が作成されている。
 
 ## <a name="moodle-migration-process"></a>Moodle 移行プロセス
 
@@ -40,9 +40,9 @@ Azure Resource Manager (ARM) テンプレートを使用して Moodle を移行�
 
 Azure への Moodle 移行の手順は、次の 3 段階に分かれています。
 
-1. [移行前](migration-pre.md)
-1. [アプリケーションの移行](migration-start.md)
-1. [移行後](migration-post.md)
+1. [移行前](./migration-pre.md)
+1. [アプリケーションの移行](./migration-start.md)
+1. [移行後](./migration-post.md)
 
 ## <a name="next-steps"></a>次の手順
 

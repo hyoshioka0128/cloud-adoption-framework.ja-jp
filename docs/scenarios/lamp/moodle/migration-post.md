@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 18fca8720f3391e5c1ea595552c839efe5cc6b29
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 6f36af5aef4c3673b3a529b487ad3e0e7d74d310
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175153"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99226931"
 ---
 <!--docutune:casing SCP WinSCP SCORM -->
 
@@ -33,7 +33,7 @@ Moodle に移行した後、移行後のタスクを実行して構成を完了�
 
 ## <a name="controller-virtual-machine-scale-set"></a>コントローラー仮想マシン スケール セット
 
-仮想マシン スケール セットの構成を完了するには、次の手順を実行します。 「[仮想マシン スケール セットにアクセスする](azure-infra-config.md#access-the-virtual-machine-scale-set)」の説明に従って、プライベート IP アドレスを使用して仮想マシン スケール セットのインスタンスに SSH 接続する必要があります。
+仮想マシン スケール セットの構成を完了するには、次の手順を実行します。 「[仮想マシン スケール セットにアクセスする](./azure-infra-config.md#access-the-virtual-machine-scale-set)」の説明に従って、プライベート IP アドレスを使用して仮想マシン スケール セットのインスタンスに SSH 接続する必要があります。
 
 ### <a name="update-log-paths"></a>ログのパスを更新する
 
