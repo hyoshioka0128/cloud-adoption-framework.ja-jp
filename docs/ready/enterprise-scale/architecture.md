@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 2cc997cde2a35595f980f03703e09ac3710271f3
-ms.sourcegitcommit: 4e1b3dd61686712727a2b74203646cf679940e76
+ms.openlocfilehash: 258b93dda665fe56a09e31831e5e769a4787d3ed
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069391"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227066"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン アーキテクチャ
 
@@ -37,7 +37,7 @@ Azure ランディング ゾーンは、スケール、セキュリティ、ガ�
 
 ## <a name="high-level-architecture"></a>高レベル アーキテクチャ
 
-エンタープライズ規模のアーキテクチャは、8 つの[重要な設計領域](./design-guidelines.md)にわたる設計上の考慮事項と推奨事項のセットで定義され、2 つのネットワーク トポロジが推奨されています。エンタープライズ規模のアーキテクチャは、(図2 に示す) Azure Virtual WAN ネットワーク トポロジ、または (図3 に示す) ハブおよびスポーク アーキテクチャ ベースの従来の Azure ネットワーク トポロジに基づいています。
+エンタープライズ規模のアーキテクチャは、8 つの[重要な設計領域](./design-guidelines.md)にわたる設計上の考慮事項と推奨事項のセットで定義され、2 つのネットワーク トポロジが推奨されています。エンタープライズ規模のアーキテクチャは、(図 2 に示す) Azure Virtual WAN ネットワーク トポロジ、または (図 3 に示す) ハブおよびスポーク アーキテクチャ ベースの従来の Azure ネットワーク トポロジに基づいています。
 
 [![Azure Virtual WAN ネットワーク トポロジに基づく、クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャを示す図。](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
@@ -63,7 +63,7 @@ Azure ランディング ゾーンは、スケール、セキュリティ、ガ�
 
 ![文字 F](./media/f.png)、![文字 G](./media/g.png)、![文字 H](./media/h.png) [事業継続とディザスター リカバリー](./business-continuity-and-disaster-recovery.md)と[セキュリティ、ガバナンス、およびコンプライアンス](./security-governance-and-compliance.md)。 包括的でランディングゾーン固有のポリシーを特定し、記述し、構築し、ターゲットの Azure プラットフォームにデプロイして、企業、規制、および基幹業務の管理が確実に行われるようにする必要があります。 最終的には、ポリシーを使用して、抽象化のプロビジョニングや管理機能なしで、アプリケーションと基になるリソースのコンプライアンスを保証します。
 
-![文字 I](./media/i.png) [プラットフォームの自動化と DevOps](platform-automation-and-devops.md)。 堅牢なソフトウェア開発ライフサイクル プラクティスによるエンドツーエンドの DevOps エクスペリエンスを設計、構築、およびデプロイして、コードの成果物としてのインフラストラクチャの安全かつ再現可能で一貫した配布を保証する必要があります。 このような成果物は、強力なソース管理とトレーサビリティを備えた専用の統合、リリース、デプロイのパイプラインを使用することにより、開発、テスト、デプロイが行われます。
+![文字 I](./media/i.png) [プラットフォームの自動化と DevOps](./platform-automation-and-devops.md)。 堅牢なソフトウェア開発ライフサイクル プラクティスによるエンドツーエンドの DevOps エクスペリエンスを設計、構築、およびデプロイして、コードの成果物としてのインフラストラクチャの安全かつ再現可能で一貫した配布を保証する必要があります。 このような成果物は、強力なソース管理とトレーサビリティを備えた専用の統合、リリース、デプロイのパイプラインを使用することにより、開発、テスト、デプロイが行われます。
 
 ## <a name="next-steps"></a>次の手順
 

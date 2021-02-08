@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: 33aaf69ecb9712415ee862d3e8e8e4c77abd4d28
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
+ms.openlocfilehash: 3f41f6dda926e4b51de5f8026983b9c383fd6403
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909397"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99226914"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure リソースの種類に推奨される省略形
 
@@ -79,6 +79,7 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 | App Service 環境 | `ase-` |
 | App Service プラン | `plan-` |
 | Web アプリ | `app-` |
+| 静的 Web アプリ | `stapp` |
 | 関数アプリ | `func-` |
 | クラウド サービス | `cld-` |
 | Notification Hubs | `ntf-` |
@@ -126,7 +127,10 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 | Azure Data Factory | `adf-` |
 | Data Lake Store アカウント | `dls` |
 | Data Lake Analytics アカウント | `dla` |
+| Event Hubs 名前空間 | `evhns` |
 | イベント ハブ | `evh-` |
+| Event Grid ドメイン | `evgd-` |
+| Event Grid トピック | `evgt-` |
 | HDInsight - Hadoop クラスター | `hadoop-` |
 | HDInsight - HBase クラスター | `hbase-` |
 | HDInsight - Kafka クラスター | `kafka-` |
@@ -165,7 +169,6 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 | Key Vault | `kv-` |
 | Log Analytics ワークスペース | `log-` |
 | Application Insights | `appi-` |
-| Azure Purview | `pvw-` |
 
 ## <a name="migration"></a>移行
 

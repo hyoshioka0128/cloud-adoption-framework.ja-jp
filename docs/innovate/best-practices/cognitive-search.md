@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 88799ab1cadd5274b778f6eef6886b9bdff1778c
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 82679ff7da2c3c7ec64a9f869633958ec1121789
+ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446846"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99227117"
 ---
 <!-- cSpell:ignore Lucene -->
 
@@ -35,8 +35,8 @@ Azure Cognitive Search (旧称 Azure Search) は、Web アプリケーション�
 Azure Cognitive Search は、次のアプリケーション シナリオに適しています。
 
 - 異種のコンテンツ タイプのプライベートな単一の検索可能なインデックスへの統合。 クエリは、常に自分で作成してドキュメントと共に読み込むインデックスに対して実行されます。 インデックスは、常に Azure Cognitive Search インスタンスのクラウドに配置されます。 任意のソースまたはプラットフォームの JSON ドキュメントのストリームからインデックスを作成できます。 または、Azure をソースとするコンテンツの場合、インデクサーを使用してデータをインデックスにプルできます。 インデックスの定義と管理および所有権が、Azure Cognitive Search を使用する主な理由です。
-- 生のコンテンツは、Azure Blob Storage や Azure Cosmos DB などの Azure データ ソース上の Microsoft Office コンテンツ タイプなど、区分されていない大きなテキスト、画像ファイル、またはアプリケーション ファイルです。 インデックス作成中にコグニティブ スキルを適用して、構造を追加したり、画像ファイルとアプリケーション ファイルから意味を抽出したりすることができます。
-- 検索に関連する機能の簡単な実装。 Azure Cognitive Search API を使用すると、クエリの構築、ファセット ナビゲーション、フィルター (地理空間検索を含む)、シノニム マッピング、先行入力クエリ、および関連性チューニングを簡素化できます。 組み込みの機能を使用して、商用 Web 検索エンジンと同様の検索体験に対するエンドユーザーの期待に応えることができます。
+- 生のコンテンツには、Azure Blob Storage や Azure Cosmos DB などの Azure データ ソース内の Microsoft Office コンテンツ タイプなど、区分されていない大きなテキスト、画像ファイル、またはアプリケーション ファイルが含まれます。 インデックス作成中にコグニティブ スキルを適用して、構造を追加したり、画像ファイルとアプリケーション ファイルから意味を抽出したりすることができます。
+- 検索に関連する機能の簡単な実装。 Azure Cognitive Search API を使用すると、クエリの構築、ファセット ナビゲーション、フィルター (地理空間検索を含む)、シノニム マッピング、先行入力クエリ、および関連性チューニングを簡素化できます。 組み込みの機能を使用して、商用 Web 検索エンジンと同様の検索体験に対するユーザーの期待に応えることができます。
 - 非構造化テキストのインデックス作成、または画像ファイルからのテキストと情報の抽出。 Azure Cognitive Search の [AI エンリッチメント](/azure/search/cognitive-search-concept-intro)機能により、AI 処理がインデックス作成パイプラインに追加されます。 一般的なユース ケースには、スキャンされたドキュメントに対する OCR、大きなドキュメントに対するエンティティ認識とキー フレーズ抽出、言語検出とテキスト翻訳、感情分析などがあります。
 - Azure Cognitive Search のカスタムおよび言語アナライザーを使用して満たされる言語要件。 英語以外のコンテンツがある場合、Azure Cognitive Search では、Lucene アナライザーと Microsoft の自然言語プロセッサの両方がサポートされます。 また、特定の生コンテンツ (分音記号のフィルター処理など) の特殊な処理を実現するようにアナライザーを構成することもできます。
 
@@ -67,7 +67,7 @@ Azure Cognitive Search は、次のアプリケーション シナリオに適�
 
 ### <a name="step-4-search"></a>手順 4:検索
 
-インデックスを入力したら、[REST API](/rest/api/searchservice/search-documents) または [.NET SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations?view=azure-dotnet) で簡単な HTTP 要求を使用して、サービス エンドポイントに[検索クエリを発行](/azure/search/search-query-overview)できます。 [最初の検索アプリケーションの作成](/azure/search/tutorial-csharp-create-first-app)の手順に従って、ユーザー入力を収集して結果を処理する Web ページをビルドして拡張します。 [対話型 REST 向けの Postman](/azure/search/search-get-started-postman) 呼び出しや Azure portal の組み込みの[検索エクスプローラー](/azure/search/search-explorer)を使用して、既存のインデックスに対するクエリを実行することもできます。
+インデックスを入力したら、[REST API](/rest/api/searchservice/search-documents) または [.NET SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations) で簡単な HTTP 要求を使用して、サービス エンドポイントに[検索クエリを発行](/azure/search/search-query-overview)できます。 [最初の検索アプリケーションの作成](/azure/search/tutorial-csharp-create-first-app)の手順に従って、ユーザー入力を収集して結果を処理する Web ページをビルドして拡張します。 [対話型 REST 向けの Postman](/azure/search/search-get-started-rest) 呼び出しや Azure portal の組み込みの[検索エクスプローラー](/azure/search/search-explorer)を使用して、既存のインデックスに対するクエリを実行することもできます。
 
 ## <a name="next-steps"></a>次の手順
 
