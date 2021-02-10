@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: fce5e1d0de6574df44194a3697eb76d07e6dfd23
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 74f0166a50a88bda3ec4e786c52a5b7db4cfee2c
+ms.sourcegitcommit: 4b525fc72f00bb57fff65998083320b7015ad7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022649"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100008657"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>作業を開始しましょう。クラウドで新しい製品とサービスのイノベーションを促進する
 
@@ -213,7 +213,7 @@ ms.locfileid: "97022649"
 
 **成果物:**
 
-- [AI 成熟度モデル ツール](https://aiready.microsoft.com)を使用することで、組織の AI 成熟度を評価して、AI ベースのシステムを作成します。
+- [AI 成熟度モデル ツール](https://www.gartner.com/en/documents/3982174/artificial-intelligence-maturity-model)を使用することで、組織の AI 成熟度を評価して、AI ベースのシステムを作成します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 

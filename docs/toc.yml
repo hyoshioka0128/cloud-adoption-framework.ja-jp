@@ -7,7 +7,7 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: はじめに
+  - name: 作業開始
     items:
       - name: 概要
         href: get-started/index.md
@@ -207,6 +207,8 @@ items:
             href: ready/landing-zone/index.md
           - name: 設計領域
             href: ready/landing-zone/design-areas.md
+          - name: ランディング ゾーンの選択オプション
+            href: ready/landing-zone/choose-landing-zone-option.md
           - name: 実装オプション
             href: ready/landing-zone/implementation-options.md
           - name: エンタープライズ スケールから始める

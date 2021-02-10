@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: 3f41f6dda926e4b51de5f8026983b9c383fd6403
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: d1c8e2067c405fa26f18ffe2806ad013524a9852
+ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99226914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839070"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure リソースの種類に推奨される省略形
 
@@ -127,7 +127,7 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 | Azure Data Factory | `adf-` |
 | Data Lake Store アカウント | `dls` |
 | Data Lake Analytics アカウント | `dla` |
-| Event Hubs 名前空間 | `evhns` |
+| Event Hubs 名前空間 | `evhns-` |
 | イベント ハブ | `evh-` |
 | Event Grid ドメイン | `evgd-` |
 | Event Grid トピック | `evgt-` |
