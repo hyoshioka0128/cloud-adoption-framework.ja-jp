@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 1548ce843dfb1c8522dd000e9f44afddd6eb55dc
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: da9c9b4ba21f328f2f5d256a854b0993be6a3356
+ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838814"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
@@ -22,6 +22,16 @@ ms.locfileid: "97022088"
 クラウド導入フレームワークに加えられた最近の変更の一覧を次に示します。
 
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームと協力して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携してクラウド導入フレームワークを構築することをお勧めします。
+
+## <a name="january-2021"></a>2021 年 1 月
+
+導入とイノベーションを促進するため、GitHub の使用に関する新しい情報を追加し、機械学習のベスト プラクティスを更新しました。 また、最適なランディング ゾーンを選択するのに役立つ新しい記事と動画も公開しました。
+
+| [アーティクル] | 説明 |
+|--|--|
+| [GitHub&nbsp; による&nbsp;クラウド&nbsp;導入&nbsp;の促進](../scenarios/github-velocity/index.md) | この記事では、クラウドの導入を促進するために、オープンソース アセット、共同開発環境、自動化およびセキュリティ機能を持つ GitHub を活用する利点について説明します。 |
+| 新しい[機械&nbsp;学習](../innovate/best-practices/machine-learning.md)のベスト プラクティスのガイダンス | Machine Learning のベスト プラクティスのガイダンスを更新して拡張しました。 ベスト プラクティスには次のものが含まれます。 <br><br> <li> [機械学習運用のアプローチ方法](../innovate/best-practices/how-to-approach-mlops.md)および [MLOps プロセス](../innovate/best-practices/mlops-process.md) <li> [機械学習のセキュリティ](../innovate/best-practices/ml-security.md) <li> [機械学習推論とデプロイ](../innovate/best-practices/ml-deployment-inference.md) <li> [モデルに合ったコンピューティング インスタンスの決定](../innovate/best-practices/dev-train-comp-instances-for-ml.md) <li> [機械学習ワークスペースの設定](../innovate/best-practices/set-up-ml-workspaces.md) <li> [責任ある信頼された AI](../innovate/best-practices/trusted-ai.md) |
+| [ランディング&nbsp; &nbsp;ゾーンの&nbsp;オプションを&nbsp;選択する](../ready/landing-zone/choose-landing-zone-option.md) | Microsoft では、ランディング ゾーンを実装する 2 つのオプションを提供しています。*小規模から始めて拡張する* と *エンタープライズ規模* です。 この新しい記事を使用して、両方のオプションを確認し、組織に適したアプローチを選択します。 |
 
 ## <a name="december-2020"></a>2020 年 12 月
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: ce0f66a8c21a7c154bcdec4f54a3564ad733bc13
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0b2dad61c2524dc5d381b9c0057d7a5f8dbee319
+ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838875"
 ---
 # <a name="landing-zone-implementation-options"></a>ランディング ゾーンの実装オプション
 
