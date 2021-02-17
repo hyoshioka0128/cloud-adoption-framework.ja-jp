@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 3c8f77364f109d8f72d8e7158f44662cd9dda2ee
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1c5f49ff4ea88826b5e2022e7a5a85ffcb65b71f
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017413"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492342"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure のインベントリと可視性
 
@@ -28,14 +28,14 @@ _インベントリと可視性_ は、クラウド管理ベースラインの 3
 
 | Process | ツール | 目的 |
 |---|---|---|
-| Azure サービスの正常性の監視 | Azure Service Health | Azure で実行されているサービスの正常性、パフォーマンス、診断 |
-| ログの一元化 | Log Analytics | すべての可視性のための一元的なログ |
-| 監視の一元化 | Azure Monitor | 運用データと傾向の一元的な監視 |
-| 仮想マシンのインベントリと変更の追跡 | 変更履歴とインベントリ | ゲスト OS レベルの VM のインベントリと変更の監視 |
-| サブスクリプションの監視 | Azure activity log | サブスクリプション レベルの変更の監視 |
-| ゲスト OS の監視 | VM に対する Azure Monitor | VM の変更とパフォーマンスの監視 |
-| ネットワーク監視 | Azure Network Watcher | ネットワークの変更とパフォーマンスの監視 |
-| DNS の監視 | DNS Analytics | DNS のセキュリティ、パフォーマンス、操作 |
+| Azure サービスの正常性の監視 | [Azure Service Health](/azure/service-health/service-health-overview) | Azure で実行されているサービスの正常性、パフォーマンス、診断 |
+| ログの一元化 | [Log Analytics](/azure-monitor/log-query/log-analytics-overview) | すべての可視性のための一元的なログ |
+| 監視の一元化 | [Azure Monitor](/azure/azure-monitor/overview) | 運用データと傾向の一元的な監視 |
+| 仮想マシンのインベントリと変更の追跡 | [変更履歴とインベントリ](/azure/automation/change-tracking/overview) | ゲスト OS レベルの VM のインベントリと変更の監視 |
+| サブスクリプションの監視 | [Azure アクティビティ ログ](/azure/azure-monitor/platform/activity-log) | サブスクリプション レベルの変更の監視 |
+| ゲスト OS の監視 | [Azure Monitor for VMs](/azure/azure-monitor/insights/vminsights-overview) | VM の変更とパフォーマンスの監視 |
+| ネットワーク監視 | [Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview) | ネットワークの変更とパフォーマンスの監視 |
+| DNS の監視 | [DNS Analytics](/azure/azure-monitor/insights/dns-analytics) | DNS のセキュリティ、パフォーマンス、操作 |
 
 ::: zone target="docs"
 

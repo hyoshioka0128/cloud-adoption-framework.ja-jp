@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 77fe35a487858a240e7b3dc8879acd67e28afa8d
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: cd2a5dbc347030fa4daa36e5efdc5244f37192a7
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175119"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492359"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>スキル準備パスの開始
 
@@ -53,4 +53,4 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 ## <a name="learn-more"></a>詳細情報
 
-追加のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 [ロール] フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+追加のラーニング パスについては、[Microsoft Learn のカタログ](/learn/browse)を参照してください。 ロール フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

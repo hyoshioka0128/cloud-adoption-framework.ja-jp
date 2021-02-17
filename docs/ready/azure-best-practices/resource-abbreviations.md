@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: d1c8e2067c405fa26f18ffe2806ad013524a9852
-ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
+ms.openlocfilehash: bc0aae28551efd126e7dc0ff37978a63649cf717
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839070"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492257"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure リソースの種類に推奨される省略形
 
@@ -146,6 +146,7 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 | 資産の種類 | 省略形 |
 |---|---|
 | App Configuration ストア | `appcs-` |
+| Azure Static Web Apps | `stap-` |
 
 ## <a name="integration"></a>統合
 

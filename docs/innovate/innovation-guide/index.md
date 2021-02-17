@@ -1,33 +1,34 @@
 ---
-title: Azure イノベーション:開始する前に
-description: 顧客を引きつけ、ソリューションを構築し、導入を推進するのに役立つ Azure 機能を使用して、クラウド イノベーションのために環境を準備します。
+title: 革新的なソリューションのガイド
+description: 開始する前に、クラウド導入フレームワークを使用した革新的なソリューションのためのこのガイドをご覧ください。 顧客を引き込み、導入を促進するのに役立つクラウド イノベーションを実現します。
 author: matticusau
 ms.author: brblanch
-ms.date: 10/17/2019
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: think-tank, fasttrack-edit, AQC
-ms.openlocfilehash: c76181620d8d465c4244ccc043500f3b39983eb9
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.custom: think-tank, fasttrack-edit, AQC, sep-caf-innovate
+keywords: 革新的なソリューション, クラウド導入フレームワーク, イノベーション ソリューション
+ms.openlocfilehash: 068205e9806664ca4156e64db96a0d4d2839bbd3
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017736"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525842"
 ---
-# <a name="azure-innovation-guide-overview"></a>Azure イノベーション ガイドの概要
+# <a name="azure-innovative-solutions-guide-overview"></a>Azure の革新的なソリューションのガイドの概要
 
 ::: zone target="docs"
 
 > [!NOTE]
-> クラウド導入フレームワークでイノベーションを導くとき、このガイドが開始点となります。 これは [Azure クイック スタート センター](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)でも利用できます。
+> クラウド導入フレームワークでイノベーションを導くとき、この革新的なソリューションのガイドが開始点となります。 これは [Azure クイック スタート センター](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade)でも利用できます。
 
 ::: zone-end
 
-Azure サービスを使用して革新的ソリューションの開発を始める前に、お使いの環境を整える必要があります。これには、顧客フィードバック ループの管理への準備が含まれます。 このガイドでは、顧客の取り込み、ソリューションの構築、導入の促進に役立つ機能を紹介します。 詳細、ベスト プラクティス、クラウド環境の準備に関連する考慮事項については、[クラウド導入フレームワークのイノベーション セクション](../index.md)に関するページを参照してください。
+Azure サービスを使用して革新的ソリューションの開発を始める前に、お使いの環境を整える必要があります。これには、顧客フィードバック ループの管理への準備が含まれます。 このガイドでは、顧客の引き込み、革新的なソリューションの構築、導入の促進に役立つ機能を紹介します。 詳細、ベスト プラクティス、クラウド環境の準備に関連する考慮事項については、[クラウド導入フレームワークのイノベーション セクション](../index.md)に関するページを参照してください。
 
-このガイドでは、以下の方法について説明します。
+このイノベーション ガイドでは、次の方法について説明します。
 
 > [!div class="checklist"]
 >
