@@ -1,19 +1,20 @@
 ---
 title: Azure Cognitive Search とは
-description: Azure Cognitive Search (旧称 Azure Search) を使用すると、インデックス作成中に AI プロセスを適用できます。
+description: Azure Cognitive Search (旧称 Azure Search) は、インデックスの作成中に AI プロセスを適用するために役立つコグニティブな検索エンジンです。 Azure Cognitive Services の詳細について説明します。
 author: v-hanki
 ms.author: janet
-ms.date: 07/14/2020
+ms.date: 01/26/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: think-tank
-ms.openlocfilehash: 82679ff7da2c3c7ec64a9f869633958ec1121789
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.custom: think-tank, seo-caf-innovate
+keywords: Cognitive Search, Azure Cognitive Services, コグニティブな検索エンジン, コグニティブとは何か, Azure Search
+ms.openlocfilehash: 715dd65e072e09fe8046908ccc0a4a660a2c4328
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99227117"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100526053"
 ---
 <!-- cSpell:ignore Lucene -->
 
@@ -22,9 +23,11 @@ ms.locfileid: "99227117"
 
 # <a name="what-is-azure-cognitive-search"></a>Azure Cognitive Search とは
 
-Azure Cognitive Search (旧称 Azure Search) は、Web アプリケーション、モバイル アプリケーション、エンタープライズ アプリケーションのプライベートな異種コンテンツに対する豊富な検索機能を追加するための API とツールを開発者に提供するマネージド クラウド ソリューションです。 コードまたはツールでデータ インジェスト (インデックス作成) を呼び出し、インデックスを作成して読み込みます。 必要に応じて、インデックス作成中に AI プロセスを適用するコグニティブ スキルを追加できます。 これにより、検索やその他のシナリオに役立つ新しい情報と構造を追加できます。
+Azure Cognitive Search (旧称 Azure Search) は、Web アプリケーション、モバイル アプリケーション、エンタープライズ アプリケーションのプライベートな異種コンテンツに対する豊富な検索機能を追加するための API とツールを開発者に提供するマネージド クラウド ソリューションです。 コードまたはツールでデータ インジェスト (インデックス作成) を呼び出し、インデックスを作成して読み込みます。 必要に応じて、インデックス作成中に AI プロセスを適用するコグニティブ スキルを追加できます。 Azure Cognitive Services を使用すると、検索やその他のシナリオに役立つ新しい情報と構造を追加できます。
 
 サービスの他の面では、アプリケーション コードを使用して、クエリ要求を発行し、応答を処理します。 検索エクスペリエンスは、Azure Cognitive Search の機能を使用してクライアント内で定義します。クエリは、自分で作成および所有し、サービスに保存する永続化されたインデックスに対して実行します。
+
+Cognitive Search は、アプリケーションにおける重要な機能です。 関連のあるデータをすばやく見つける機能は、エンド ユーザー エクスペリエンスと結果の向上に不可欠です。 コグニティブな検索エンジンでは、より人間らしい方法でアプリケーションが機能するように支援する AI 機能を使用しているため、単なるキーワード一致を超えた関連付けを実現できます。 Azure Cognitive Services は、エンド ユーザーが知る必要のあるものを、より迅速に見つけるために役立ちます。
 
 ![Azure Cognitive Search を示す図。](../../_images/ai-cognitive-search.png)
 
@@ -67,7 +70,9 @@ Azure Cognitive Search は、次のアプリケーション シナリオに適�
 
 ### <a name="step-4-search"></a>手順 4:検索
 
-インデックスを入力したら、[REST API](/rest/api/searchservice/search-documents) または [.NET SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations) で簡単な HTTP 要求を使用して、サービス エンドポイントに[検索クエリを発行](/azure/search/search-query-overview)できます。 [最初の検索アプリケーションの作成](/azure/search/tutorial-csharp-create-first-app)の手順に従って、ユーザー入力を収集して結果を処理する Web ページをビルドして拡張します。 [対話型 REST 向けの Postman](/azure/search/search-get-started-rest) 呼び出しや Azure portal の組み込みの[検索エクスプローラー](/azure/search/search-explorer)を使用して、既存のインデックスに対するクエリを実行することもできます。
+
+インデックスを入力したら、[REST API](/rest/api/searchservice/search-documents) または [.NET SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations?view=azure-dotnet&preserve-view=true) で簡単な HTTP 要求を使用して、サービス エンドポイントに[検索クエリを発行](/azure/search/search-query-overview)できます。 [最初の検索アプリケーションの作成](/azure/search/tutorial-csharp-create-first-app)の手順に従って、ユーザー入力を収集して結果を処理する Web ページをビルドして拡張します。 [対話型 REST 向けの Postman](/azure/search/search-get-started-postman) 呼び出しや Azure portal の組み込みの[検索エクスプローラー](/azure/search/search-explorer)を使用して、既存のインデックスに対するクエリを実行することもできます。
+
 
 ## <a name="next-steps"></a>次の手順
 

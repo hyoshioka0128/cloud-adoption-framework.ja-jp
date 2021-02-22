@@ -8,16 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: cc328ed78a7ad7f349f41fe3cbc67bc0c83e1506
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0c1a4bca2ef0ba15a5046e57606a5b835e8c6e56
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018756"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100526070"
 ---
 # <a name="tools-to-engage-via-applications-in-azure"></a>Azure でアプリケーションを使用して連携するためのツール
 
-[アプリケーションを使用した連携](../considerations/apps.md)に関するページで説明されているように、アプリケーションは MVP ソリューションの重要な側面になることがあります。 多くの場合、アプリケーションは、仮説をテストするために必要です。 この記事は、それらのアプリケーションの開発を加速させるために、Azure が提供するツールを理解するために役立ちます。
+クラウドネイティブ アプリを構築すると、新しい方法で顧客とつながることができます。 クラウドネイティブ アプリケーションは一から構築され、クラウドの規模やパフォーマンスに合わせて最適化されます。 クラウドネイティブ アプリは、マイクロサービスのアーキテクチャに基づいており、マネージド サービスを使用します。また、継続的デリバリーを利用して高い信頼性を実現し、市場投入までの時間を短縮します。
+
+[アプリケーションを使用した連携](../considerations/apps.md)に関するページで説明されているように、アプリケーションは実用最小限の製品 (MVP) ソリューションの重要な側面になることがあります。 多くの場合、アプリケーションは、仮説をテストするために必要です。 この記事は、それらのアプリケーションの開発を加速させるために、Azure が提供するツールを理解するために役立ちます。
 
 ![アプリケーションを使用して連携するためのクラウド導入フレームワークのアプローチ](../../_images/innovate/engage-via-apps.png)
 

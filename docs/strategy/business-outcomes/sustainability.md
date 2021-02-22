@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: 1ef8346bd63fe9d0f47dd1351f088f47e529bbaa
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c4dc771a9e5d72b2c552f93c08b7cb70ac205f95
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012891"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492716"
 ---
 <!-- docutune:casing AGL WSP -->
 <!-- cSpell:ignore AGL Bee'ah WSP -->
@@ -21,6 +21,10 @@ ms.locfileid: "97012891"
 # <a name="sustainability-outcomes-and-benefits-for-business"></a>ビジネスにおける持続可能性の成果と利点
 
 クラウドの影響と利点は、従来、財務と効率性のメトリックで測定されてきました。しかし、一般的になってきていることとして、顧客は、持続可能性と環境の目標を達成するためにクラウドがどのように役立つかを理解しようと努めています。 クラウド コンピューティングを使用すると、二酸化炭素排出量の削減、資源の効率的な使用、環境フットプリントの削減を実現できます。
+
+次のビデオから、持続可能性に関する詳細と、クラウド移行によって、地球に優しく、会社に優しい、持続可能なソリューションへの扉を開く方法についてご覧ください。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWx4po]
 
 Microsoft は、これらの分野の多くで主要な役割を担ってきました。 2012 年以降、弊社はカーボン ニュートラルであり、2030 年までに二酸化炭素の収支をマイナスにすることに取り組んでいます。 [クラウド コンピューティングが二酸化炭素に関してもたらす利点](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)について、WSP と協力して行っている Microsoft クラウドの研究で示されています。これは、オンプレミス データセンターから Microsoft クラウドへの移行によって、どのようにカーボン フットプリントが大幅に削減されるかに関する調査に寄与しています。
 

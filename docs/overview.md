@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal, homepage
-ms.openlocfilehash: 76580f373adc5cd1a2edb10c8db4cbb2e3006700
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: eaee9ce834161df01b38bc759b393b54f523d794
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024638"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492733"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>Azure 向けの Microsoft クラウド導入フレームワークとは
 
@@ -31,10 +31,10 @@ Azure 向けの Microsoft クラウド導入フレームワークのベスト �
 
 | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|--|--|
-| <br> ![戦略アイコン](./_images/icons/strategy.png) | <br> [戦略](./strategy/index.md):業務上の&nbsp;正当な理由&nbsp;と導入による予想される結果を&nbsp;定義する&nbsp;。 | <br> ![計画アイコン](./_images/icons/plan.png) | <br> [計画](./plan/index.md):ビジネスの結果に合わせて実行可能な&nbsp;導入&nbsp;計画を&nbsp;調整する&nbsp;。 |
+| <br> ![戦略アイコン](./_images/icons/strategy.png) | <br> [戦略](./strategy/index.md):&nbsp;業務上の正当な理由と導入による予想される結果を定義する。&nbsp;&nbsp;&nbsp; | <br> ![計画アイコン](./_images/icons/plan.png) | <br> [計画](./plan/index.md):&nbsp;ビジネスの結果に合わせて実行可能な導入計画を調整する。&nbsp;&nbsp;&nbsp; |
 | <br> ![準備完了アイコン](./_images/icons/ready.png)       | <br> [準備完了](./ready/index.md):計画された変更のためにクラウド環境を準備する。 | <br> ![移行アイコン](./_images/icons/adopt.png) | <br> [移行](./migrate/index.md):既存のワークロードを移行して最新化する。 |
 | <br> ![イノベーション アイコン](./_images/icons/innovate.png) | <br> [イノベーション](./innovate/index.md):新しいクラウド ネイティブ ソリューションまたはハイブリッド ソリューションを開発する。 | <br> ![ガバナンス アイコン](./_images/icons/govern.png) | <br> [ガバナンス](./govern/index.md):環境とワークロードを管理する。 |
-| <br> ![管理アイコン](./_images/icons/manage.png)     | <br> [管理](./manage/index.md):クラウド ソリューションおよびハイブリッド ソリューションのための運用管理。 | <br> ![整理アイコン](./_images/icons/organize.png) | <br> [整理](./organize/index.md):環境とワークロードを管理する。 |
+| <br> ![管理アイコン](./_images/icons/manage.png)     | <br> [管理](./manage/index.md):クラウド ソリューションおよびハイブリッド ソリューションのための運用管理。 | <br> ![整理アイコン](./_images/icons/organize.png) | <br> [整理](./organize/index.md):組織のクラウド導入作業をサポートするチームと役割を連携させます。 |
 
 ## <a name="understand-the-lifecycle"></a>ライフサイクルについて
 

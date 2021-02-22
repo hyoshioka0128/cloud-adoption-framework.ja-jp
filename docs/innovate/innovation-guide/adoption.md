@@ -1,20 +1,21 @@
 ---
-title: Azure イノベーション:フィードバックの準備
+title: 定性的および定量的データ フィードバック
 description: Azure のツールを使用して、GitHub でホストされている Web アプリと API に関する定量的で定性的なフィードバックを収集する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/17/2019
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: f390dd74a04ac423a98c17a4a6e7cce4cfedecd7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
+keywords: 定量的データ, 定量的フィードバック, 定性的フィードバック, テスト フィードバック, カスタマー フィードバック
+ms.openlocfilehash: 39ba4ba8d7a1137846cb54187140e847161b8448
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017855"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525934"
 ---
 # <a name="prepare-for-customer-feedback"></a>カスタマー フィードバックの準備
 
@@ -25,7 +26,9 @@ ms.locfileid: "97017855"
 - **定量的 (テストからのフィードバック):** このフィードバックは、開発側が求めるアクションを評価します。
 - **定性的 (顧客からのフィードバック):** このフィードバックは、メトリックが意味することを顧客の声で伝えます。
 
-フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープンソース ソフトウェアのホームです。 商用として開発されたアプリケーションのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops)の記事は、自分のリポジトリを開始する際に役立ちます。
+定量的データは、定量化可能な測定プロセスを使用した数値ベースのデータです。 定量的フィードバックでは、顧客から大量の回答をすばやく収集する場合に役立つ、データに対する数値的な分析情報が得られます。 定量的フィードバックの例には、複数の選択肢のある質問や数字で表したユーザー エンゲージメント データがあります。 定性的フィードバックでは、さらに深く、顧客の考えや意見に対するより幅広い種類の回答や分析情報が得られます。 定性的フィードバックの例には、自由回答形式の質問を含む顧客アンケートがあります。 どちらの方法のカスタマー フィードバックからも、お客様の会社の製品とサービスを向上させるための貴重な分析情報が提供されます。  
+
+フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープンソース ソフトウェアのホームです。 商用として開発されたアプリケーションのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops&preserve-view=true)の記事は、自分のリポジトリを開始する際に役立ちます。
 
 Azure の次の各ツールは、GitHub でホストされているプロジェクトと統合されます (または互換性があります)。
 
@@ -140,8 +143,8 @@ DevOps プロジェクトを作成するには:
 
 次の記事は、Azure Boards と GitHub を併用してフィードバックを一元化し、管理する際に役立ちます。
 
-- [Azure Boards の概要](/azure/devops/boards/get-started/?view=azure-devops)
-- [Azure Boards と GitHub](/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards の概要](/azure/devops/boards/get-started/?view=azure-devops&preserve-view=true)
+- [Azure Boards と GitHub](/azure/devops/boards/github?view=azure-devops&preserve-view=true)
 
 ## <a name="close-the-loop-with-pipelines"></a>[パイプラインでループを閉じる](#tab/pipelines)
 
@@ -175,5 +178,5 @@ App Service でアプリケーションを表示するには、[Azure portal](ht
 
 デプロイ パイプラインの構築を始める際には、次の記事をご覧ください。
 
-- [最初のパイプラインを作成する](/azure/devops/pipelines/create-first-pipeline?tabs=tfs-2018-2&view=azure-devops)
-- [`GitHub Release` タスク](/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)
+- [最初のパイプラインを作成する](/azure/devops/pipelines/create-first-pipeline?tabs=tfs-2018-2&view=azure-devops&preserve-view=true)
+- [`GitHub Release` タスク](/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops&preserve-view=true)

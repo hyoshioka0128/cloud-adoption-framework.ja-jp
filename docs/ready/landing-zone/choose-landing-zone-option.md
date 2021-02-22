@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 57baebddb2dfc4c6209c54a75c7c017f86766fd2
-ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
+ms.openlocfilehash: 5a4f5de75d3550db5446302eccb3d621cf8bc012
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971965"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492274"
 ---
 # <a name="choose-the-landing-zone-for-your-organization"></a>組織に適したランディング ゾーンを選択する
 
@@ -23,6 +23,10 @@ Microsoft では、ランディング ゾーンを実装する 2 つのオプシ
 
 - 小規模から始めて拡張する
 - エンタープライズ規模
+
+次の 15 分のビデオから、お客様のニーズに最適な Azure ランディング ゾーンの実装オプションを選ぶ方法についてご覧ください。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwZeg]
 
 また、サードパーティの実装を採用することも検討することもできます。 Microsoft のパートナーは、そのサービスを通じて多くの実装を提供しています。 詳細については、「[Microsoft パートナーの Azure ランディング ゾーンを評価する](/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone)」を参照してください。
 

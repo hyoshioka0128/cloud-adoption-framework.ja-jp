@@ -1,33 +1,34 @@
 ---
-title: Azure イノベーション:AI によるイノベーション
-description: お客様のニーズを予測し、ビジネス プロセスを自動化し、非構造化データに潜む情報を発見し、より優れたエクスペリエンスを提供する新しい方法でお客様と関わり合うための Azure ソリューションについて説明します。
+title: AI イノベーション、機械学習、その他
+description: 顧客のニーズを予測し、ビジネス プロセスを自動化するための Azure ソリューションについて説明します。 ナレッジ マイニング、機械学習、AI を使用して、より良いカスタマー エクスペリエンスを実現します。
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 06/26/2020
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 00d4b08788461a7c1bd519c9f177908b36f6116e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
+keywords: ビジネス プロセスの自動化, AI イノベーション, 機械学習, ナレッジ マイニング
+ms.openlocfilehash: 4dc6905d10da1e9ec343fe793acafa06a9d6a57f
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017685"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525798"
 ---
 <!-- cSpell:ignore ONNX -->
 
 # <a name="innovate-with-ai"></a>AI によるイノベーション
 
-会社には、イノベーターとしてビジネスとお客様に関する豊富な情報があります。 AI を使用することで、会社は次のことができます。
+会社には、イノベーターとしてビジネスとお客様に関する豊富な情報があります。 AI イノベーションを利用すると、お客様の会社は:
 
 - 顧客のニーズに関して予測できます。
 - ビジネス プロセスを自動化できます。
 - 構造化されていないデータに隠れている情報を発見できます。
 - 新しい方法で顧客と交流し、より良い体験を提供できます。
 
- この記事では、AI を使用した革新的なアプローチをいくつか紹介します。 次の表は、実装のニーズに最適なソリューションを見つけるうえで役立ちます。
+ この記事では、AI を使用した革新的なアプローチをいくつか紹介します。 イノベーションにより、お客様の会社のビジネス分析情報を既存のデータにまで拡張できます。 次の表は、実装のニーズに最適なソリューションを見つけるうえで役立ちます。
 
 | ソリューションのカテゴリ | 説明                                                                                                                              | 必要なスキル              |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
@@ -145,7 +146,7 @@ Azure Bot Service の使用を開始するには:
 
 ## <a name="knowledge-mining"></a>ナレッジ マイニング
 
-Azure Cognitive Search を使用すると、ドキュメント、画像、メディアなどのコンテンツに潜む分析情報を明らかにすることができます。 コンテンツに含まれるパターンや関係を発見したり、センチメントを理解したり、キー フレーズを抽出したりできます。
+ナレッジ マイニングでは、人工知能 (AI) を使用して、膨大な量の非構造化、半構造化、構造化情報に対するコンテンツの解釈を促進します。 Azure Cognitive Search を使用すると、ドキュメント、画像、メディアなどのコンテンツに潜む分析情報を明らかにすることができます。 コンテンツに含まれるパターンや関係を発見したり、センチメントを理解したり、キー フレーズを抽出したりできます。
 
 <!-- docutune:ignore "Azure Search" -->
 

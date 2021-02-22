@@ -1,24 +1,27 @@
 ---
-title: Azure イノベーション:データの民主化
-description: データの見つけやすさと理解を強化する Azure Data Catalog、Azure Data Share、およびその他のツールについて説明します。
+title: データの民主化
+description: データの見つけやすさと解釈を強化するための Azure Data Catalog、Azure Data Share、およびその他のツールによるデータの民主化について説明します。
 author: absheik
 ms.author: absheik
-ms.date: 10/17/2019
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: internal, fasttrack-new, AQC
-ms.openlocfilehash: 1a72507853cf2221ff1b2e4a537e000eddd6e883
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.custom: internal, fasttrack-new, AQC, seo-caf-innovate
+keywords: 民主化, データを民主化する, データ民主化, データの民主化, 民主化された
+ms.openlocfilehash: a60948ea705b42cf44c664615ef81f2d3f6461df
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017787"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525900"
 ---
 # <a name="democratize-data"></a>データの民主化
 
-データの民主化の最初の一歩として、データを見つけやすくすることが挙げられます。 データ共有のカタログ化と管理は、企業が既存の情報資産から最大の価値を得るために役立ちます。 データ カタログにより、データを管理しているユーザーはデータ ソースの検出と把握が容易になります。 Azure Data Catalog により、企業内部での管理が可能となり、Azure Data Share により、企業外部での管理と共有が可能になります。
+データの民主化とは、情報システムの平均的な非技術ユーザーが、データにアクセスするために情報管理者や外部からの支援を必要とせずにデジタル情報にアクセスできるようにすることです。 データの民主化は、生産性を邪魔するボトルネックを生まずに、重要なデータにユーザーが自由にアクセスするために役立ちます。
+
+データの民主化の最初の一歩として、データを見つけやすくすることが挙げられます。 データ共有のカタログ化と管理は、企業が既存の情報資産から最大の価値を得るために役立ちます。 データ カタログの民主化により、データを管理しているユーザーはデータ ソースを容易に検出し、解釈できるようになります。 Azure Data Catalog により、企業内部での管理が可能となり、Azure Data Share により、企業外部での管理と共有が可能になります。
 
 Azure Time Series Insights や Stream Analytics など、データを処理する Azure サービスも、イノベーションのニーズに対応するためにお客様やパートナーが使用し、成果を上げている機能です。
 

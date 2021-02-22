@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: e0ed0b0407b29ad04fa942231858203b0af4a923
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 57d15fdb0ec445415688c47ddebeb1d3d804d671
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174575"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492665"
 ---
 # <a name="build-technical-skills"></a>技術スキルの構築
 
@@ -55,7 +55,11 @@ ms.locfileid: "98174575"
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>クラウド IT の役割の典型的なマッピング
 
-Microsoft とそのパートナーは、あらゆるお客様を対象に、Azure サービスを使用するためのスキルの向上に役立つオプションを提供しています。 Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)を使用して公認のものにすることをお勧めします。
+Microsoft とパートナーは、あらゆるお客様を対象に、Azure サービスに関連したスキルを開発するためのさまざまなオプションを提供しています。
+
+- [ロールとスキルの関連付け](/azure/cloud-adoption-framework/plan/suggested-skills):クラウドのキャリア パスを関連付けるためのリソース。 クラウドでの役割と推奨されるスキルについて説明しています。 ご自分のペースで学習カリキュラムを進めて、価値ある存在であり続けるために最も必要なスキルを磨くことができます。
+
+- Azure に関する公式の知識認定を受けるため、[Azure 認定資格のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)をご覧ください。
 
 ### <a name="microsoft-learn"></a>Microsoft Learn
 

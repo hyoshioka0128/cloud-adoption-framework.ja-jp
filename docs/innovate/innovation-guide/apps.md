@@ -1,22 +1,25 @@
 ---
-title: Azure イノベーション:アプリケーションを介したエンゲージメント
-description: 既存の Web アプリと API アプリを簡単に最新化し、クラウドネイティブ アプリケーションを構築するのに役立つ Azure サービスについて説明します。
+title: App Services を使用したアプリの構築とエンゲージメント
+description: クラウドネイティブ アプリを構築し、既存の Web および API アプリを簡単に最新化します。 Azure App Service、Azure DevOps、Visual Studio App Center について説明します。
 author: billyclaymyersmsft
 ms.author: brblanch
-ms.date: 10/17/2019
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.localizationpriority: high
-ms.custom: think-tank, fasttrack-edit, AQC
-ms.openlocfilehash: fb47f30f0e5a04b5f45b5558827a278f1e9493fc
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.custom: think-tank, fasttrack-edit, AQC, seo-caf-innovate
+keywords: Azure App Service, App Service Azure, App Service, アプリの構築, クラウドネイティブ アプリ, クラウドネイティブ アプリケーション
+ms.openlocfilehash: 5bd48a4d659f4bdf47b2151fe4ec6d0ab2e366e4
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017821"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525951"
 ---
 # <a name="engage-customers-through-applications"></a>アプリケーションを介したカスタマー エンゲージメント
+
+クラウドネイティブ アプリを構築すると、新しい方法で顧客とつながることができます。 クラウドネイティブ アプリケーションは一から構築され、クラウドの規模やパフォーマンスに合わせて最適化されます。 クラウドネイティブ アプリは、マイクロサービスのアーキテクチャに基づいており、マネージド サービスを使用します。また、継続的デリバリーを利用して高い信頼性を実現し、市場投入までの時間を短縮します。
 
 アプリケーションによるイノベーションには、オンプレミスでホストされている既存のアプリケーションの最新化と、コンテナーまたはサーバーレス テクノロジを使用したクラウドネイティブなアプリケーションの構築の両方が含まれます。 Azure では、.NET、.NET Core、Java、Node.js、Ruby、Python、または PHP で記述された既存の Web アプリや API アプリを簡単に最新化して Azure にデプロイできるよう支援する PaaS サービス (Azure App Service など) が提供されます。
 
@@ -102,7 +105,7 @@ Azure Bot Service デプロイを構成または監視するには、次の手�
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-モバイル アプリの人気が上がり続ける中、さまざまな構成を持つ実際のデバイスでテストを自動化できるプラットフォームに対するニーズが増えています。 Visual Studio App Center は、iOS、Android、Windows、macOS をまたいでアプリケーションをテストできる場所だけでなく、Azure Application Insights を使用し、テレメトリをすばやく簡単に分析できる監視プラットフォームも提供します。 詳細については、[Visual Studio App Center](/appcenter) に関するページを参照してください。
+モバイル アプリの人気が上がり続ける中、さまざまな構成を持つ実際のデバイスでテストを自動化できるプラットフォームに対するニーズが増えています。 Visual Studio App Center は、iOS、Android、Windows、macOS をまたいでクラウドネイティブ アプリケーションをテストできる場所だけでなく、Azure Application Insights を使用してテレメトリをすばやく簡単に分析できる監視プラットフォームも提供します。 詳細については、[Visual Studio App Center](/appcenter) に関するページを参照してください。
 
 Visual Studio App Center からは通知サービスも提供されます。1 回の呼び出しでプラットフォームに関係なく通知をアプリケーションに送信できます。通知サービス別に連絡する必要がありません。 詳細については、「[Visual Studio App Center Push (ACP)](/appcenter/push)」を参照してください。
 
@@ -111,9 +114,9 @@ Visual Studio App Center からは通知サービスも提供されます。1 �
 - [App Service の概要](/azure/app-service/overview)
 - [Web App for Containers: カスタム コンテナーの実行](/azure/app-service/containers/quickstart-docker)
 - [Azure Functions の概要](/azure/azure-functions/functions-overview)
-- [.NET および .NET Core 開発者向けの Azure](/dotnet/azure/?view=azure-dotnet)
+- [.NET および .NET Core 開発者向けの Azure](/dotnet/azure/?view=azure-dotnet&preserve-view=true)
 - [Azure SDK for Python のドキュメント](/azure/python)
-- [Java クラウド開発者向けの Azure](/azure/java/?view=azure-java-stable)
+- [Java クラウド開発者向けの Azure](/azure/java/?view=azure-java-stable&preserve-view=true)
 - [Azure に PHP Web アプリを作成する](/azure/app-service/app-service-web-get-started-php)
 - [Azure SDK for JavaScript のドキュメント](/azure/javascript)
 - [Azure SDK for Go のドキュメント](/azure/go)

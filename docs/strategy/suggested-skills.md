@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: d1c1242f57bc97f1cc934c78e5ca5604a7e5c6ae
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: fafe587ad0a264af89d355644382853f54525c97
+ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174949"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100492648"
 ---
 # <a name="skills-readiness-path-during-the-planning-phase-of-a-migration-journey"></a>移行の行程の計画フェーズ中のスキル準備パス
 
@@ -79,13 +79,13 @@ ms.locfileid: "98174949"
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>クラウド IT の役割の典型的なマッピング
 
-Microsoft とパートナーは、あらゆるお客様を対象に、Azure サービスに関連したスキルの向上に役立つさまざまなオプションを提供しています。
+Microsoft とパートナーは、あらゆるお客様を対象に、Azure サービスに関連したスキルを開発するためのさまざまなオプションを提供しています。
 
-- [Microsoft IT Pro Center](https://www.microsoft.com/itpro)。 クラウドのキャリア パスをマッピングするのに役立つ無料のオンライン リソースとして機能します。 業界の専門家がクラウド ロールについて行う提案、および提案を実現するためのスキルについて学習してください。 関係を保つために最も必要なスキルを磨くように、学習カリキュラムをご自分のペースで進められます。
+- [ロールとスキルの関連付け](/azure/cloud-adoption-framework/plan/suggested-skills):クラウドのキャリア パスを関連付けるためのリソース。 クラウドでの役割と推奨されるスキルについて説明しています。 ご自分のペースで学習カリキュラムを進めて、価値ある存在であり続けるために最も必要なスキルを磨くことができます。
 
-Azure に関する知識を [Microsoft Azure 認定のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)によって公認のものにすることをお勧めします。
+- Azure に関する公式の知識認定を受けるため、[Azure 認定資格のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)をご覧ください。
 
-## <a name="microsoft-learn"></a>Microsoft Learn
+### <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn は学習に対する新しいアプローチです。 クラウド導入に伴う新たな責任に対する準備は容易にできるものではありません。 Microsoft Learn では、目標を早く達成するのに役立つ、実践的な学習に対するより価値あるアプローチを提供します。 ポイントとレベルを獲得し、さらなる達成を目指しましょう。
 
@@ -95,4 +95,4 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 ## <a name="learn-more"></a>詳細情報
 
-追加のラーニング パスについては、[Learn のカタログ](/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+追加のラーニング パスについては、[Microsoft Learn のカタログ](/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

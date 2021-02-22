@@ -1,21 +1,24 @@
 ---
 title: AI アプリケーションとは
-description: Azure Cognitive Services を使用して AI の機能とブレークスルーをアプリケーションに統合する方法について説明します。
+description: AI アプリケーションとは Azure Cognitive Services を使用して AI のアプリケーションと機能をアプリに統合する方法について説明します。
 author: v-hanki
 ms.author: janet
-ms.date: 07/14/2020
+ms.date: 01/26/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: think-tank
-ms.openlocfilehash: 6909c0c6f5b60694ebb7dc6d98d794e484f11efe
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.custom: think-tank, seo-caf-innovate
+keywords: AI アプリケーション, AI アプリケーションとは何か, Speech Recognition API, Computer Vision API, Decision Logic API
+ms.openlocfilehash: 39d664452d14b13514f7e1b0ff78c0cf66e59468
+ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446642"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100526019"
 ---
 # <a name="what-are-ai-applications"></a>AI アプリケーションとは
+
+AI アプリケーションとは、Speech Recognition API、Computer Vision API、Decision Logic API、および人間の理性を模倣するその他の種類のインテリジェント システムなどのことをいいます。 AI アプリケーションは、より自然な方法でエンド ユーザーとやり取りすることができ、より優れたユーザー エクスペリエンスに貢献できるため、現在の市場における多くのソフトウェア製品に不可欠な機能となっています。 Azure を使用すると、AI アプリケーションをどこへでもロールアウトできるため、お客様やお客様のチームが時間を節約するのに役立ちます。
 
 Azure では、任意のツールおよびテクノロジと組み込みの AI を使用して、インテリジェントなアプリケーションをより短時間でビルドできます。
 
@@ -29,18 +32,18 @@ Azure Cognitive Services を使用すると、数行のシンプルなコード�
 
 Cognitive Services は、開発者が直接的な AI またはデータ サイエンスのスキルや知識がなくてもインテリジェントなアプリケーションを構築するために使用できる API、SDK、サービスで構成されています。 Cognitive Services によって、開発者は簡単にアプリケーションにコグニティブ機能を追加できます。 Cognitive Services に含まれるサービスのカタログは、視覚、音声、言語、Web 検索、意思決定という 5 つの主要な部分に分類できます。
 
-### <a name="vision-apis"></a>Vision API
+### <a name="computer-vision-apis"></a>Computer Vision API
 
 | [サービス名] | サービスの説明 |
 | --- | --- |
-| [Computer Vision](/azure/cognitive-services/computer-vision/) | Computer Vision を使用すると、画像を処理して情報を返すための高度なアルゴリズムにアクセスできます。 |
+| [Computer Vision](/azure/cognitive-services/computer-vision/) | Computer Vision API を使用すると、画像を処理して情報を返すための高度なアルゴリズムにアクセスできます。 |
 | [Custom Vision](/azure/cognitive-services/custom-vision-service/home) | Custom Vision を使用すると、カスタム画像分類器を構築できます。 |
 | [Face](/azure/cognitive-services/face/) | Face サービスを使用すると、顔属性を検出して認識する高度な顔アルゴリズムにアクセスできます。 |
 | [Form Recognizer](/azure/cognitive-services/form-recognizer/) (プレビュー) | Form Recognizer を使用すると、フォーム ドキュメントからキーと値のペアおよびテーブル データを識別して抽出できます。 その後、元のファイル内の関係を含む構造化データが出力されます。 |
 | [Ink Recognizer](/azure/cognitive-services/ink-recognizer/) (プレビュー) | Ink Recognizer を使用すると、デジタル インク ストローク データ、シェイプ、および手書きのコンテンツを認識して分析し、認識されたすべてのエンティティを備えたドキュメント構造を出力できます。 |
 | [Video Indexer](/azure/cognitive-services/video-indexer/video-indexer-overview) | Video Indexer では、ビデオから分析情報を抽出できます。 |
 
-### <a name="speech-apis"></a>Speech API
+### <a name="speech-recognition-apis"></a>Speech Recognition API
 
 | [サービス名] | サービスの説明 |
 | --- | --- |
@@ -58,7 +61,7 @@ Cognitive Services は、開発者が直接的な AI またはデータ サイ�
 | [Text Analytics](/azure/cognitive-services/text-analytics/) | Text Analytics によって、未加工のテキストに対して、感情分析、キー フレーズ抽出、および言語検出のための自然言語処理が提供されます。 |
 | [Translator](/azure/cognitive-services/translator/) | Translator によって、ほぼリアルタイムでのマシン ベースのテキスト翻訳が提供されます。 |
 
-### <a name="decision-apis"></a>Decision API
+### <a name="decision-logic-apis"></a>Decision Logic API
 
 | [サービス名] | サービスの説明 |
 | --- | --- |
