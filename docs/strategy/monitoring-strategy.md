@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: a0b0df8710f3c82d02ff93bd2989229ad58b95d6
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 310d967796a0a1896492d68711edbde6d920e185
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174983"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632547"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -61,7 +61,7 @@ ms.locfileid: "98174983"
 
 ## <a name="high-level-modeling"></a>高レベルのモデリング
 
-移行するサービスを決定するときは、リソースに慎重に投資する必要があります。 オンプレミスでは、監視についてすべての責任を所有し、大量の投資を行っています。 たとえば、SaaS サービスに移行する場合は、監視責任はなくなりません。 アクセスを必要とするユーザー、アラートを受け取るユーザー、少なくとも分析へのアクセスが必要なユーザーを決定します。 [Azure Monitor](/azure/azure-monitor/) と [Azure Arc](https://azure.microsoft.com/services/azure-arc/) は、Azure 内のリソースだけでなく、4 つのクラウド モデルすべてについて監視シナリオに対応できる柔軟性を備えた Azure サービスです。 次に示すように、一般的なクラウド モデルを超えて考える必要があります。 組織内の [Microsoft 365](/microsoft-365/?view=o365-worldwide) サービスによって配信される Microsoft Office アプリケーションを使用している場合は、[Azure Security Center](/azure/security-center/) に加えて、Microsoft 365 を使用したセキュリティとコンプライアンスの監視も含める必要があります。 これには、企業ネットワークの外部にある ID、エンドポイント管理、デバイスの監視が含まれます。
+移行するサービスを決定するときは、リソースに慎重に投資する必要があります。 オンプレミスでは、監視についてすべての責任を所有し、大量の投資を行っています。 たとえば、SaaS サービスに移行する場合は、監視責任はなくなりません。 アクセスを必要とするユーザー、アラートを受け取るユーザー、少なくとも分析へのアクセスが必要なユーザーを決定します。 [Azure Monitor](/azure/azure-monitor/) と [Azure Arc](https://azure.microsoft.com/services/azure-arc/) は、Azure 内のリソースだけでなく、4 つのクラウド モデルすべてについて監視シナリオに対応できる柔軟性を備えた Azure サービスです。 次に示すように、一般的なクラウド モデルを超えて考える必要があります。 組織内の [Microsoft 365](/microsoft-365/) サービスによって配信される Microsoft Office アプリケーションを使用している場合は、[Azure Security Center](/azure/security-center/) に加えて、Microsoft 365 を使用したセキュリティとコンプライアンスの監視も含める必要があります。 これには、企業ネットワークの外部にある ID、エンドポイント管理、デバイスの監視が含まれます。
 
 ![クラウド モデルの図](./media/monitoring-strategy/cloud-models.png)
 
@@ -115,7 +115,7 @@ ms.locfileid: "98174983"
 
 - サービス資産から始まり、スタック (インフラストラクチャ、IoT デバイス、モバイル デバイスなどによって生成されるメトリックとログ データ) に至るデータフロー アプローチ。 すべての項目が管理から監視までのツール (中間層) の対象ですか? 上方外側 (ITSM ツール、グローバル監視、セキュリティ情報とイベント管理 (SIEM)、カスタム アラート強化など) に移動します。
 
-- [Systems Center Operations Manager](/system-center/scom/welcome?view=sc-om-2019) または他の監視ツールを引き続き使用するかどうか。
+- [Systems Center Operations Manager](/system-center/scom/welcome) または他の監視ツールを引き続き使用するかどうか。
 
 - 経済コスト。
 

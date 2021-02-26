@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: e0e2c099901a6c63f259877e57c5467e9e9cd220
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 7a5149b49e2a50590da2dbbda14f4e6c40ffdc16
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015101"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631493"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -115,7 +115,7 @@ Contoso の管理者は、Azure Database Migration Service を使用し、[ス�
 
 - 次のすべての移行の前提条件が満たされていることを確認します。
   - MySQL データベース サーバー ソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL では、MySQL Community Edition および InnoDB ストレージ エンジンがサポートされていると共に、同じバージョンのソースとターゲット間の移行がサポートされています。
-  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 バイナリ ログを有効にしないと、移行ウィザードで次のエラーが発生します。"バイナリ ログにエラーがあります。 変数 binlog_row_image の値が 'minimal' です。 これを "full" に変更してください。"詳細については、[MySQL のドキュメント](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)を参照してください。
+  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 バイナリ ログを有効にしないと、移行ウィザードで次のエラーが発生します: `Error in binary logging. Variable binlog_row_image has value 'minimal.' please change it to 'full'.`。詳細については、[MySQL のドキュメント](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)を参照してください。
   - ユーザーは `ReplicationAdmin` ロールを持っている必要があります。
   - 外部キーとトリガーを使用せずにデータベース スキーマを移行します。
 - ExpressRoute または VPN を介してオンプレミス ネットワークに接続する仮想ネットワークを作成します。

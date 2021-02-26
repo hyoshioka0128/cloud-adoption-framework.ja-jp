@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: c7ba2e6771069e494568a5dbe5d29a4f2cac2f97
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5b5b5318baed959387540b65580d69d1877ccad2
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015798"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631731"
 ---
 <!-- docutune:casing "Squared Up" -->
 <!-- cSpell:ignore opsman ITSM -->
@@ -85,7 +85,7 @@ Azure Monitor は、サービスとしてのソフトウェア (SaaS) サービ�
 
 #### <a name="agents"></a>エージェント
 
-Operations Manager では、[Windows コンピューター](/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent)にインストールされたエージェントからのみ、データが直接収集されます。 Operations Manager SDK からのデータを受け入れることができますが、このアプローチは通常、監視データの収集ではなく、カスタム アプリケーションによって製品を拡張するパートナーのために使用されます。 [Linux コンピューター](/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent)やネットワーク デバイスなどの他のソースからのデータ収集は、これらの他のデバイスにリモートからアクセスする Windows エージェントで実行される特別なモジュールを使用して行うことができます。
+Operations Manager では、[Windows コンピューター](/system-center/scom/plan-planning-agent-deployment#windows-agent)にインストールされたエージェントからのみ、データが直接収集されます。 Operations Manager SDK からのデータを受け入れることができますが、このアプローチは通常、監視データの収集ではなく、カスタム アプリケーションによって製品を拡張するパートナーのために使用されます。 [Linux コンピューター](/system-center/scom/plan-planning-agent-deployment#linuxunix-agent)やネットワーク デバイスなどの他のソースからのデータ収集は、これらの他のデバイスにリモートからアクセスする Windows エージェントで実行される特別なモジュールを使用して行うことができます。
 
 ![Operations Manager エージェントの図](./media/monitoring-management-guidance-cloud-and-on-premises/data-collection-opsman-agents-optimized.svg)
 
@@ -93,7 +93,7 @@ Operations Manager エージェントでは、ローカル コンピューター
 
 #### <a name="management-packs"></a>管理パック
 
-Operations Manager は、ワークフロー (ルール、モニター、およびオブジェクト検出) を使用してすべての監視を実行します。 これらのワークフローは[管理パック](/system-center/scom/manage-overview-management-pack?view=sc-om-2019)にパッケージ化されて、エージェントに配置されます。 管理パックは、事前定義されたルールとモニターを含むさまざまな製品やサービスで使用できます。 独自のアプリケーションやカスタム シナリオ用に独自の管理パックを作成することもできます。
+Operations Manager は、ワークフロー (ルール、モニター、およびオブジェクト検出) を使用してすべての監視を実行します。 これらのワークフローは[管理パック](/system-center/scom/manage-overview-management-pack)にパッケージ化されて、エージェントに配置されます。 管理パックは、事前定義されたルールとモニターを含むさまざまな製品やサービスで使用できます。 独自のアプリケーションやカスタム シナリオ用に独自の管理パックを作成することもできます。
 
 #### <a name="monitoring-configuration"></a>監視構成
 
@@ -109,7 +109,7 @@ Operations Manager は、ワークフロー (ルール、モニター、およ�
 
 #### <a name="data-sources"></a>データ ソース
 
-Azure Monitor では、Azure のインフラストラクチャおよびプラットフォーム リソース、Windows および Linux コンピューター上のエージェント、Azure Storage 内で収集された監視データなど、さまざまなソースからデータが収集されます。 任意の REST クライアントで API を使用して Azure Monitor にログ データを書き込むことができ、お使いの Web アプリケーション用にカスタム メトリックを定義できます。 一部のメトリックデータは、その用途に応じて異なる場所にルーティングできます。 たとえば、データを "可能な限り迅速な" アラートに使用したり、他のログ データと組み合わせた長期的な傾向分析検索に使用したりできます。
+Azure Monitor では、Azure のインフラストラクチャとプラットフォームのリソース、Windows コンピューターと Linux コンピューター上のエージェント、Azure ストレージ内に収集された監視データなど、さまざまなソースからデータが収集されます。 任意の REST クライアントで API を使用して Azure Monitor にログ データを書き込むことができ、お使いの Web アプリケーション用にカスタム メトリックを定義できます。 一部のメトリックデータは、その用途に応じて異なる場所にルーティングできます。 たとえば、データを "可能な限り迅速な" アラートに使用したり、他のログ データと組み合わせた長期的な傾向分析検索に使用したりできます。
 
 #### <a name="monitoring-solutions-and-insights"></a>監視ソリューションと分析情報
 

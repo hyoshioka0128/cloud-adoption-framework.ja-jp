@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, csu
-ms.openlocfilehash: 1fc58ed9f74d37eb641fce1d3571add71c3b5526
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: fba46a86e0b1d71d37e9bfe5ceb25afde8043b87
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123478"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632343"
 ---
 <!-- docutune:casing resourceType resourceTypes resourceId resourceIds -->
 

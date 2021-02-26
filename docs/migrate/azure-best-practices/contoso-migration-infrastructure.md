@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 3d65538ed9fa3c45563bb99d85c93ade1e11f1a4
-ms.sourcegitcommit: 30837e99289338b0cc0f9efb2a5e07aca052e2e8
+ms.openlocfilehash: f086849ad56e3cced9ac1de89fd109781772526f
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560750"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631986"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -82,7 +82,7 @@ Contoso は、[マイクロソフト エンタープライズ契約](https://azu
 
 Azure の料金を支払った後、Contoso は Azure サブスクリプションを管理する方法を決める必要があります。 Contoso は EA を利用しているので、作成できる Azure サブスクリプションの数に制限はありません。 Azure Enterprise Agreement 加入契約では、企業が Azure サービスを構成して使用する方法と、中心となるガバナンス構造が定義されています。
 
-最初の手順として、Contoso は、加入契約のための "_エンタープライズ スキャフォールディング_" と呼ばれる構造を定義しました。 Contoso は、[Azure エンタープライズ スキャフォールディングのガイダンス](../../reference/azure-scaffold.md)を使用して、スキャフォールディングの理解と設計に役立てました。
+最初の手順として、Contoso は、加入契約のための "*エンタープライズ スキャフォールディング*" と呼ばれる構造を定義しました。 Contoso は、[Azure エンタープライズ スキャフォールディングのガイダンス](../../reference/azure-scaffold.md)を使用して、スキャフォールディングの理解と設計に役立てました。
 
 ここでは、Contoso は機能的アプローチを使用してサブスクリプションを管理することを決定しました。
 
@@ -125,7 +125,7 @@ ID およびアクセス管理によってユーザーが Azure リソースに�
 
 Contoso では、Azure に新しい別個のシステムを構築するのではなく、オンプレミスの Active Directory をクラウドに拡張することに決めています。 Contoso は Microsoft 365 をまだ使用していないため、Azure AD インスタンスをプロビジョニングする必要があります。 Contoso が Microsoft 365 を使用していれば、既存の Azure AD テナントおよびディレクトリが既にあるので、これをプライマリ Azure AD インスタンスとして使用できます。
 
-[Microsoft 365 ID モデルと Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity?view=o365-worldwide) の詳細を確認します。 [Azure サブスクリプションを Azure Active Directory テナントに関連付けるか、追加する](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)方法も確認してください。
+[Microsoft 365 ID モデルと Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity) の詳細を確認します。 [Azure サブスクリプションを Azure Active Directory テナントに関連付けるか、追加する](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)方法も確認してください。
 
 ### <a name="create-an-azure-ad-directory"></a>Azure AD Directory を作成する
 
@@ -152,7 +152,7 @@ Contoso は、Azure サブスクリプションに含まれる Azure AD Free エ
 2. Azure で DNS エントリを使うには、ドメイン レジストラーに DNS エントリを登録する必要があります。
 
     - **[カスタム ドメイン名]** の一覧で、名前の DNS 情報を記録します。 MX レコードを使用しています。
-    - ネーム サーバーにアクセスする必要があります。 `contoso.com` ドメインにログインし、メモしておいた詳細情報を使用して、Azure AD によって提供された DNS エントリの新しい MX レコードを作成します。
+    - ネーム サーバーにアクセスする必要があります。 `contoso.com` ドメインにサインインし、メモしておいた詳細情報を使用して、Azure AD によって提供された DNS エントリの新しい MX レコードを作成します。
 
 3. DNS レコードが伝播されたら、 **[検証]** を選択して、ドメインの詳細でカスタム ドメイン名を確認します。
 

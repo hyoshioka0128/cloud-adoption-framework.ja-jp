@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 1e21ad6985b6790676005836590a91be1fd50adf
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a2ccca8bc86fe344690ec74ba3d567d045cbb6ee
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015170"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631544"
 ---
 <!-- cSpell:ignore mysqldump -->
 
@@ -144,8 +144,8 @@ Contoso では、次の手順を使用してデータベースを移行しまし
   - 管理者のユーザー名とパスワードを入力します。
   - **[Review + create]\(レビュー + 作成\)** を選択します。
 
-    ![MariaDB サーバーの作成画面を示すスクリーンショット。](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
-    _図 5:確認と作成_
+    ![**[Create MariaDB Server]\(MariaDB サーバーの作成\)** ページのスクリーンショット。](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
+    _図 5: レビューと作成_
 
   - **［作成］** を選択します
   - サーバーのホスト名、ユーザー名、パスワードを記録します。

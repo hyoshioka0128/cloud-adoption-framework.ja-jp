@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 29a7bd79511f1a7ae7722ef7746f18dac1c75918
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
+ms.openlocfilehash: 88eb52e410c9f7a1caf2c3c8f4bfc45bbb743ce0
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909380"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632530"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 

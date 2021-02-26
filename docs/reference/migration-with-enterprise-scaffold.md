@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 0c68c14b78238af248034ef14a27ad1323483a74
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: cfd2587c3b45de7021755916c8913b26bd6a13f3
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713863"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632581"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -289,7 +289,7 @@ Microsoft では、コストの視覚化、追跡、および管理に役立つ�
 
 - **Power BI Azure Consumption Insights:** 組織のために独自の視覚エフェクトを作成しますか。 その場合は、Power BI 用の Azure Consumption Insights コンテンツ パックをツールとして選択してください。 このコンテンツ パックと Power BI を使用すると、組織を表すためにカスタムの視覚エフェクトを作成し、コストについて詳しい分析を実行し、さらに充実させるために他のデータ ソースを追加することもできます。
 
-- **Azure Consumption API:** [Consumption API](/rest/api/consumption) を使用すると、予算、予約インスタンス、マーケットプレース請求料金に関する情報に加えて、コストと使用状況のデータにプログラムからアクセスできます。 これらの API にアクセスできるのは、EA 加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](/cli/azure/consumption?view=azure-cli-latest)こともできます。
+- **Azure Consumption API:** [Consumption API](/rest/api/consumption) を使用すると、予算、予約インスタンス、マーケットプレース請求料金に関する情報に加えて、コストと使用状況のデータにプログラムからアクセスできます。 これらの API にアクセスできるのは、EA 加入契約と一部の Web Direct サブスクリプションのみです。ただし、これらにより、コスト データを独自のツールとデータ ウェアハウスに統合することができるようになります。 また、[Azure CLI を使用してこれらの API にアクセスする](/cli/azure/consumption)こともできます。
 
 長期の熟練したクラウド ユーザーであるお客様は、特定のベスト プラクティスに従います。
 
@@ -308,7 +308,7 @@ Azure Automation、Event Grid、Azure CLI といった Microsoft 製ツールか
 
 - **Azure Automation** はクラウドベースの機能です。これを使用して、(PowerShell または Python で) Runbook を作成し、プロセスのオートメーション、リソースの構成、さらにパッチの適用も実行することができます。 [Azure Automation](/azure/automation/automation-intro) には、デプロイに不可欠な広範なクロス プラットフォーム機能のセットが含まれますが、範囲が広すぎるためここで詳しく説明することはできません。
 - **Event Grid** は、Azure 環境内のイベントに対応することができるフル マネージドのイベント ルーティング システムです。 Azure Automation が成熟したクラウド編成の結合組織であるのと同様に、[Event Grid](/azure/event-grid) は優れたオートメーションの結合組織です。 Event Grid を使用すると、新しいリソースが作成されるたびに管理者に電子メールを送信して、そのリソースをデータベースに記録する、単純なサーバーレス アクションを作成できます。 その同じ Event Grid が、リソースが削除されたときに通知し、アイテムをデータベースから削除することができます。
-- **Azure Cloud Shell** は、Azure でリソースを管理するための、ブラウザーベースのインタラクティブな [シェル](/azure/cloud-shell/overview)です。 これは、PowerShell または Bash に最適な環境を提供します。必要に応じて起動 (および管理) されるため、スクリプトを実行するために一貫性のある環境を得ることができます。 Azure Cloud Shell では、環境のオートメーションを行うために、既にインストールされている他の重要なツールにアクセスできます。[Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) や [Terraform](/azure/virtual-machines/linux/terraform-install-configure) の他にも、コンテナー、データベース (sqlcmd) などを管理するための[ツール](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)がますます増加しています。
+- **Azure Cloud Shell** は、Azure でリソースを管理するための、ブラウザーベースのインタラクティブな [シェル](/azure/cloud-shell/overview)です。 これは、PowerShell または Bash に最適な環境を提供します。必要に応じて起動 (および管理) されるため、スクリプトを実行するために一貫性のある環境を得ることができます。 Azure Cloud Shell では、環境のオートメーションを行うために、既にインストールされている他の重要なツールにアクセスできます。[Azure CLI](/cli/azure/get-started-with-azure-cli) や [Terraform](/azure/virtual-machines/linux/terraform-install-configure) の他にも、コンテナー、データベース (sqlcmd) などを管理するための[ツール](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection)がますます増加しています。
 
 オートメーションはフルタイム ジョブであり、またたく間にクラウド チームにおける最も重要な運用タスクの 1 つになろうとしています。 "オートメーション ファースト" のアプローチを採用する組織は、 Azure を使用して大きな成功を収めます。
 
@@ -319,7 +319,7 @@ Azure Automation、Event Grid、Azure CLI といった Microsoft 製ツールか
 
 「自動化」のセクションで強調したように、組織の目標は、ソース管理されたテンプレートとスクリプトを介してリソースをプロビジョニングすること、さらに対話型での環境の構成を最小限にすることです。 継続的なデプロイのための制御された DevOps プロセスと "infrastructure as code" アプローチを組み合わせると、一貫性を保証することができ、環境内での誤差を減らすことができます。 ほぼすべての Azure リソースは、[Azure Resource Manager JSON テンプレート](/azure/azure-resource-manager/resource-group-template-deploy)を、PowerShell または Azure クロス プラットフォーム CLI や、HashiCorp の Terraform (最上のサポートと Azure Cloud Shell との統合が提供される) などのツールと組み合わせてデプロイできます。
 
-[Azure Resource Manager テンプレートを使用する場合のベスト プラクティス](/archive/blogs/mvpawardprogram/azure-resource-manager)などの記事では、[Azure DevOps](/azure/devops/user-guide/?view=vsts) ツール チェーンを含む Azure Resource Manager テンプレートに DevOps アプローチを適用する場合について、ベスト プラクティスや実例から学んだ内容を説明しています。 特に運用環境と QA 環境に関しては、時間と労力を費やして、組織の要件に合うテンプレートのコア セットを開発し、DevOps ツール チェーン (Azure DevOps、Jenkins、Bamboo、TeamCity、Concourse など) を使用して継続的デリバリー パイプラインを開発してください。 [Azure クイックスタート テンプレート](https://github.com/azure/azure-quickstart-templates)の大規模なライブラリが GitHub 上にあり、テンプレートの作成を開始するときに役立ちます。また、Azure DevOps を使用するとクラウドベースの配信パイプラインを迅速に作成できます。
+[Azure Resource Manager テンプレートを使用する場合のベスト プラクティス](/archive/blogs/mvpawardprogram/azure-resource-manager)などの記事では、[Azure DevOps](/azure/devops/user-guide) ツール チェーンを含む Azure Resource Manager テンプレートに DevOps アプローチを適用する場合について、ベスト プラクティスや実例から学んだ内容を説明しています。 特に運用環境と QA 環境に関しては、時間と労力を費やして、組織の要件に合うテンプレートのコア セットを開発し、DevOps ツール チェーン (Azure DevOps、Jenkins、Bamboo、TeamCity、Concourse など) を使用して継続的デリバリー パイプラインを開発してください。 [Azure クイックスタート テンプレート](https://github.com/azure/azure-quickstart-templates)の大規模なライブラリが GitHub 上にあり、テンプレートの作成を開始するときに役立ちます。また、Azure DevOps を使用するとクラウドベースの配信パイプラインを迅速に作成できます。
 
 運用サブスクリプションまたはリソース グループのベスト プラクティスとしては、Azure RBAC セキュリティを使用して既定で対話型ユーザーを禁止することと、サービス プリンシパルに基づいて自動化された継続的デリバリー パイプラインを使用して、すべてのリソースをプロビジョニングし、すべてのアプリケーション コードを配信することが目標です。 管理者も開発者も Azure portal を使用してリソースを対話形式で構成する必要はありません。 このレベルの DevOps では協調が求められますが、Azure スキャフォールディングのすべての概念を使用して、組織の拡大縮小のニーズを満たす、一貫性を備えたセキュアな環境を提供します。
 

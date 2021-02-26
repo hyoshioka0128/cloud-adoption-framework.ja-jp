@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: ccb8ae667235166194520abc841c4eb7e3eeab4b
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 685282288f7cd313492c4c0509ae3177958cd2f6
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174728"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632513"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
@@ -130,7 +130,7 @@ Migration Assistant によって選択内容が収集および検証されると
 
 詳細については次を参照してください:
 
-[ASP.NET アプリケーションを Azure に移行する](/learn/paths/migrate-dotnet-apps-azure)
+[ASP.NET アプリを Azure に移行する](/learn/paths/migrate-dotnet-apps-azure/)
 
 ### <a name="data-migration-assistant"></a>Data Migration Assistant
 
@@ -158,7 +158,7 @@ Data Migration Assistant は Azure Migrate と統合されているため、Azur
 
 - [Data Migration Assistant の概要](/sql/dma/dma-overview)
 - [DMA で企業を評価し評価レポートを統合する](/sql/dma/dma-consolidatereports)
-- [Data Migration Assistant によって作成された統合評価レポートを Power BI で分析する](/sql/dma/dma-powerbiassesreport)
+- [Data Migration Assistant によって作成された統合評価レポートを Power BI で分析する](/sql/dma/dma-consolidatereports)
 
 ### <a name="sql-server-migration-assistant"></a>SQL Server Migration Assistant
 
@@ -230,7 +230,7 @@ NoSQL データベースの要件に合わせて Azure Cosmos DB の移行をサ
 
 [詳細情報](/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
-[Azure Migration Center](https://azure.microsoft.com/migration/support) では、移行シナリオに合わせてすぐに使えるパートナー テクノロジ ソリューションを提供する組織を見つけたり、サード パーティのその他の移行ツールやサポート サービスの詳細を確認したりできます。
+[Azure Migration Center](https://azure.microsoft.com/migration/migration-partners/) では、移行シナリオに合わせてすぐに使えるパートナー テクノロジ ソリューションを提供する組織を見つけたり、サード パーティのその他の移行ツールやサポート サービスの詳細を確認したりできます。
 
 さまざまなデータベース移行オプションと、ネイティブおよびパートナーとのステップバイステップ ガイダンスについては、「[Azure データベース移行ガイド](https://datamigration.microsoft.com)」を参照してください。
 
@@ -238,14 +238,14 @@ NoSQL データベースの要件に合わせて Azure Cosmos DB の移行をサ
 
 追跡も管理もされていないプロジェクトでは、問題が発生しやすくなります。 確実に成功を収めるためには、お客様がプロジェクト管理ツールを使用することが重要であると Microsoft では考えています。 利用可能なさまざまなツールがあり、組織のプロジェクト マネージャーが気に入っているツールが既にあるかもしれません。
 
-Azure DevOps は、クラウド移行時のプロジェクト管理に推奨されるツールです。 Azure DevOps の使用を高速化するために、クラウド導入フレームワークには、プロジェクト テンプレートを自動的にデプロイするためのツールが含まれています。 このテンプレートには、移行作業中に一般的に実行されるタスクが含まれています。 [クラウド導入プランと Azure DevOps](/azure/architecture/cloud-adoption/plan/template) の手順に従って、テンプレートをデプロイします。 これで、移行する[ワークロード](/azure/architecture/cloud-adoption/plan/workloads)と[資産](/azure/architecture/cloud-adoption/plan/assets)を反映するようにテンプレートを変更できるようになります。
+Azure DevOps は、クラウド移行時のプロジェクト管理に推奨されるツールです。 Azure DevOps の使用を高速化するために、クラウド導入フレームワークには、プロジェクト テンプレートを自動的にデプロイするためのツールが含まれています。 このテンプレートには、移行作業中に一般的に実行されるタスクが含まれています。 [クラウド導入プランと Azure DevOps](/azure/cloud-adoption-framework/plan/template) の手順に従って、テンプレートをデプロイします。 これで、移行する[ワークロード](/azure/cloud-adoption-framework/plan/workloads)と[資産](/azure/cloud-adoption-framework/plan/assets)を反映するようにテンプレートを変更できるようになります。
 
 Microsoft では以下のプロジェクト管理ツールも用意しており、これらを併用してより広範な機能を提供できます。
 
 - [Microsoft Planner](https://tasks.office.com): チームワークを組織化するためのシンプルで視覚的な方法。
-- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software):プロジェクトおよびポートフォリオ管理、リソース容量管理、財務管理、タイムシートおよびスケジュール管理。
-- [Microsoft Teams](https://products.office.com/microsoft-teams):チームのコラボレーションとコミュニケーションのためのツール。 Teams を Planner や他のツールと統合して、コラボレーションを強化することもできます。
-- [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops):Azure DevOps を使用するために、クラウド導入フレームワークの計画テンプレートは必要ありません。 テンプレートを使用せずにサービスを使用して、コードとしてインフラストラクチャを管理することや、作業項目とボードを使用してプロジェクト管理を実行することができます。 発展に合わせて、組織で CI/CD 機能を利用できます。
+- [Microsoft Project](https://www.microsoft.com/microsoft-365/project/project-management-software):プロジェクトおよびポートフォリオ管理、リソース容量管理、財務管理、タイムシートおよびスケジュール管理。
+- [Microsoft Teams](https://www.microsoft.com/microsoft-teams/group-chat-software):チームのコラボレーションとコミュニケーションのためのツール。 Teams を Planner や他のツールと統合して、コラボレーションを強化することもできます。
+- [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops):Azure DevOps を使用するために、クラウド導入フレームワークの計画テンプレートは必要ありません。 テンプレートを使用せずにサービスを使用して、コードとしてインフラストラクチャを管理することや、作業項目とボードを使用してプロジェクト管理を実行することができます。 発展に合わせて、組織で CI/CD 機能を利用できます。
 
 使用可能なプロジェクト管理ツールはこれらのツールに限られません。 他にも多くのサード パーティ製ツールが、プロジェクト管理コミュニティで広く使用されています。
 
@@ -253,7 +253,7 @@ Microsoft では以下のプロジェクト管理ツールも用意しており�
 
 クラウド テクノロジへの移行は、DevOps や CI/CD に合わせて組織を再編するまたとない機会です。 組織で管理するのがインフラストラクチャだけの場合でも、インフラストラクチャをコードとして管理し、DevOps 向けの業界のパターンやプラクティスを使用するようになれば、CI/CD パイプラインによって機敏性の向上に着手し、変化、成長、リリース、さらには復旧の各シナリオにより迅速に適応できるようになります。
 
-Azure DevOps では、必須機能が用意されているほか、Azure、オンプレミス環境、さらには他のクラウドとの統合が実現されます。 詳細については、[Azure DevOps](https://azure.microsoft.com/services/devops) のページをご覧ください。 ガイド付きトレーニングについては、[クイックスタート: Azure DevOps を使用した CI/CD](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html) に関するページを参照してください。
+Azure DevOps では、必須機能が用意されているほか、Azure、オンプレミス環境、さらには他のクラウドとの統合が実現されます。 詳細については、[Azure DevOps](https://azure.microsoft.com/services/devops/) のページをご覧ください。 ガイド付きトレーニングについては、[クイックスタート: Azure DevOps を使用した CI/CD](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html) に関するページを参照してください。
 
 ### <a name="suggested-skills"></a>推奨されるスキル
 
@@ -261,7 +261,7 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 ここでは、クラウド導入フレームワークにおける DevOps ガイダンスのセットアップを補完する Microsoft Learn のカスタマイズされたラーニング パスの例を示します。
 
-[Azure DevOps でアプリケーションを構築する](/learn/paths/build-applications-with-azure-devops):Azure Pipelines と GitHub を使って、他の人と共同でアプリケーションを構築します。 パイプラインで自動テストを実行して、コードの品質を検証します。 潜在的な脆弱性がないかどうかソース コードとサードパーティ コンポーネントをスキャンします。 アプリケーションを構築するために連携させる複数のパイプラインを定義します。 Microsoft がホストするエージェントと独自のビルド エージェントの両方を使用して、アプリケーションを構築します。
+[Azure DevOps でアプリケーションを構築する](/learn/paths/build-applications-with-azure-devops/):Azure Pipelines と GitHub を使って、他の人と共同でアプリケーションを構築します。 パイプラインで自動テストを実行して、コードの品質を検証します。 潜在的な脆弱性がないかどうかソース コードとサードパーティ コンポーネントをスキャンします。 アプリケーションを構築するために連携させる複数のパイプラインを定義します。 Microsoft がホストするエージェントと独自のビルド エージェントの両方を使用して、アプリケーションを構築します。
 
 ## <a name="cost-management"></a>[コスト管理](#tab/ManageCost)
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 6256de325aff36a6a9788722a2689cdf7af71657
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 24b29df57baf21d6d0d96dd605bcec4ba1cafb1f
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712436"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631833"
 ---
 <!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
 
@@ -149,7 +149,7 @@ Contoso では、Azure Migrate:Server Migration ツールによって Azure VM �
 
     1. Azure Migrate から、.OVA イメージをダウンロードし、VMware にインポートします。
 
-       ![.OVA ファイルをダウンロードする画面のスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-download-ova.png)
+       ![.OVA ファイルのダウンロードを示すスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-download-ova.png)
 
        "_図 3:.OVA file ファイルのダウンロード_
 
@@ -204,7 +204,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
 
 3. [Azure Windows エージェント](/azure/virtual-machines/extensions/agent-windows)と [Azure Linux エージェント](/azure/virtual-machines/extensions/agent-linux)をインストールします。
 
-Windows の場合、移行をトリガーするときに、VM 上に保留中の Windows 更新プログラムが存在しないようにする必要があります。 ある場合、管理者は更新が完了するまで、VM にログインすることはできません。 移行後、管理者は **ブート診断** を調べて、VM のスクリーンショットを確認できます。 これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照してください。
+Windows の場合、移行をトリガーするときに、VM 上に保留中の Windows 更新プログラムが存在しないようにする必要があります。 ある場合、管理者は更新が完了するまで、VM にサインインすることはできません。 移行後、管理者は **ブート診断** を調べて、VM のスクリーンショットを確認できます。 これが機能しない場合は、VM が実行中であることを確認し、こちらの[トラブルシューティングのヒント](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx)を参照してください。
 
 **さらにサポートが必要な場合**
 

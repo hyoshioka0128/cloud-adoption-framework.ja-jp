@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 49aafe3f20e238cb9322472168f465cd98843067
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5dd750bcff3e2db84c709db2f4eaf853811d345a
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016019"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631714"
 ---
 # <a name="machine-learning-operations-with-azure-machine-learning"></a>Azure Machine Learning を使用した機械学習の運用
 
@@ -53,7 +53,7 @@ MLOps によって、機械学習ソリューションの品質と一貫性が�
 - [Azure Machine Learning を使用したモデルのデプロイ](/azure/machine-learning/how-to-deploy-and-where)方法とデプロイ先
 - チュートリアル: [Azure Container Instances に画像分類モデルをデプロイする](/azure/machine-learning/tutorial-deploy-models-with-aml)
 - [エンドツーエンドの MLOps サンプル リポジトリ](https://github.com/microsoft/MLOps)
-- [Azure Pipelines を使用した機械学習モデルの CI/CD](/azure/devops/pipelines/targets/azure-machine-learning?tabs=yaml&view=azure-devops)
+- [Azure Pipelines を使用した機械学習モデルの CI/CD](/azure/devops/pipelines/targets/azure-machine-learning)
 - [デプロイされたモデルを利用する](/azure/machine-learning/how-to-consume-web-service)クライアントを作成する
 - [大規模な機械学習](/azure/architecture/data-guide/big-data/machine-learning-at-scale)
 - [Azure AI リファレンス アーキテクチャとベスト プラクティスのリポジトリ](https://github.com/microsoft/AI)

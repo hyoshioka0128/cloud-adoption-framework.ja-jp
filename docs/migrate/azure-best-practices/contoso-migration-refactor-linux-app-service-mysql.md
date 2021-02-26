@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 0755b0e3aa4d2fdad1aab0ff68c7db9fde0af34b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 75961a8b57273c84449f5fa3c95b232859434a45
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97014812"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631816"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -87,10 +87,10 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure App Service](https://azure.microsoft.com/services/app-service) | このサービスでは、Web サイト向けの Azure PaaS (サービスとしてのプラットフォーム) サービスを使用してアプリケーションを実行およびスケーリングします。 | 価格は、インスタンスのサイズと必要な機能に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
-| [Azure の Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | ドメイン ネーム システム (DNS) を使用して、Azure、外部 Web サイト、またはサービスにユーザーを振り分けるロード バランサー。 | 価格は、受信した DNS クエリの数と監視対象のエンドポイントの数に基づきます。 | [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/traffic-manager)。 |
-| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
-| [Azure Database for MySQL](/azure/mysql) | このデータベースは、オープン ソースの MySQL データベース エンジンに基づいています。 これは、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースであり、アプリケーションの開発とデプロイに使用できます。 | 価格は、コンピューティング、ストレージ、バックアップ要件に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/mysql)。 |
+| [Azure App Service](https://azure.microsoft.com/services/app-service/) | このサービスでは、Web サイト向けの Azure PaaS (サービスとしてのプラットフォーム) サービスを使用してアプリケーションを実行およびスケーリングします。 | 価格は、インスタンスのサイズと必要な機能に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows/)。 |
+| [Azure の Traffic Manager](https://azure.microsoft.com/services/traffic-manager/) | ドメイン ネーム システム (DNS) を使用して、Azure、外部 Web サイト、またはサービスにユーザーを振り分けるロード バランサー。 | 価格は、受信した DNS クエリの数と監視対象のエンドポイントの数に基づきます。 | [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/traffic-manager/)。 |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration/)に関する情報をご覧ください。 |
+| [Azure Database for MySQL](/azure/mysql/) | このデータベースは、オープン ソースの MySQL データベース エンジンに基づいています。 これは、フルマネージドのエンタープライズ対応コミュニティ MySQL データベースであり、アプリケーションの開発とデプロイに使用できます。 | 価格は、コンピューティング、ストレージ、バックアップ要件に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/mysql/server/)。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -98,7 +98,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| **Azure サブスクリプション** | Contoso は、この記事シリーズの前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。 |
+| **Azure サブスクリプション** | Contoso は、この記事シリーズの前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free/)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。 |
 | **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。 |
 
 ## <a name="scenario-steps"></a>シナリオのステップ
@@ -138,7 +138,7 @@ Contoso 管理者は、Azure App Service を使用して 2 つの Web アプリ�
 **さらにサポートが必要な場合**
 
 - [Azure App Service Web アプリ](/azure/app-service/overview)に関する記事を参照します。
-- 「[Azure App Service on Linux の概要](/azure/app-service/containers/app-service-linux-intro)」を参照します。
+- 「[Azure App Service on Linux の概要](/azure/app-service/overview#app-service-on-linux)」を参照します。
 
 ## <a name="step-2-set-up-traffic-manager"></a>手順 2:Traffic Manager を設定する
 
@@ -201,11 +201,8 @@ Contoso の管理者は、[ステップバイステップの移行チュート�
 Contoso が行う作業の概要は次のとおりです。
 
 - 移行の前提条件がすべて満たされていることを確認します。
-  - MySQL データベース サーバー ソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL では、MySQL Community Edition および InnoDB ストレージ エンジンがサポートされていると共に、同じバージョンのソースとターゲット間の移行がサポートされています。
-
-  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 これを行わないと、移行ウィザードで次のエラーが発生します。
-
-    "バイナリ ログにエラーがあります。 変数 binlog_row_image の値が "minimal" です。 その値を "full" に変更してください。 詳細については、`https://go.microsoft.com/fwlink/?linkid=873009` をご覧ください。"
+  - MySQL データベース サーバー ソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL では、MySQL Community Edition および InnoDB ストレージ エンジンがサポートされていると共に、同じバージョンのソースとターゲット間の移行がサポートされています。  
+  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 この操作を行わないと、移行ウィザードで次のエラーが発生します: `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'.`。詳細については、[MySQL のドキュメント](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)を参照してください。
 
   - ユーザーは `ReplicationAdmin` ロールを持っている必要があります。
 
@@ -297,9 +294,9 @@ Contoso が行う作業の概要は次のとおりです。
 
     ![メモ帳ファイルに貼り付けた接続文字列のスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench9.png)
 
-11. Azure portal で MySQL インスタンスの **[概要]** ペインからサーバー名とログインを確認できます。
+11. Azure portal で MySQL インスタンスの **[概要]** ペインからサーバー名とサインインを確認できます。
 
-    ![サーバー名とサーバー管理者ログイン名が表示されたリソース グループ ペインのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench10.png)
+    ![サーバー名とサーバー管理者アカウント名が表示されたリソース グループ ペインのスクリーンショット。](./media/contoso-migration-refactor-linux-app-service-mysql/workbench10.png)
 
 ## <a name="step-5-set-up-github"></a>手順 5:GitHub を設定する
 

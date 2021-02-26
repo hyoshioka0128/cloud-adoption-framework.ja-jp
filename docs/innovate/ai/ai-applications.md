@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: a222333c16e29656b3ffb25b0b33a7973b6a29b5
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: 8b4cb93b832205307e07aa2432989cfbcada67b3
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95446999"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632228"
 ---
 # <a name="ai-applications-and-agents"></a>AI アプリケーションとエージェント
 
@@ -58,7 +58,7 @@ AI アプリケーションの一般的なシナリオには、以下が含ま�
 
 詳細については、Azure Cognitive Services のコンテナー サポートに関する以下のページを参照してください。
 
-- [Azure Cognitive Services でのコンテナーのサポート](/azure/cognitive-services/cognitive-services-container-support?tabs=luis)
+- [Azure Cognitive Services でのコンテナーのサポート](/azure/cognitive-services/cognitive-services-container-support)
 
 AI ソリューションの以下の参照アーキテクチャを確認してください。
 
@@ -86,19 +86,19 @@ Azure Bot Service と Microsoft Bot Framework についての理解を深めま�
 - Bot Framework は、SDK (C#、JavaScript、Python、Java で使用可能) を提供するオープンソース オファリングであり、開発者によるボットの設計、構築、およびテストを支援します。 また、Bot Framework Composer での無料のビジュアル作成キャンバスと、Bot Framework Emulator でのテスト ツールも提供されています。
 - Azure Bot Service は Azure 内の専用サービスで、これを使用することにより、お客様は Azure でボットをホストまたは公開したり、人気のあるチャネルに接続したりできます。
 
-- [Azure Bot Service と Bot Framework の概要](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)を読む
-- [ボット設計の原則](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)について確認する
-- [Bot Framework SDK とツールの最新バージョン](/azure/bot-service/what-is-new?view=azure-bot-service-4.0)を入手する
+- [Azure Bot Service と Bot Framework の概要](/azure/bot-service/bot-service-overview-introduction)を読む
+- [ボット設計の原則](/azure/bot-service/bot-service-design-principles)について確認する
+- [Bot Framework SDK とツールの最新バージョン](/azure/bot-service/what-is-new)を入手する
 
 作業を開始する最も簡単な方法の 1 つは、Azure Cognitive Services の一部である QnA Maker を使用することです。これを使用すると、FAQ ドキュメントや Web サイトをインテリジェントに変換して、Q&A エクスペリエンスを数分で作成できます。
 
-- [QnA Maker を使用して Q&A 機能を備えたボットを迅速に作成する](/azure/bot-service/bot-builder-tutorial-add-qna?tabs=csharp&view=azure-bot-service-4.0)
+- [QnA Maker を使用して Q&A 機能を備えたボットを迅速に作成する](/azure/bot-service/bot-builder-tutorial-add-qna)
 - [QnA Maker サービス](https://www.qnamaker.ai/)をテストする
 
 ボット開発用の Bot Framework SDK とツールをダウンロードして使用します。
 
 - [Bot Framework Composer の 5 分間のクイック スタート](/composer/)
-- [Bot Framework SDK でボットを構築してテストする (C#、JavaScript、Python)](/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)
+- [Bot Framework SDK でボットを構築してテストする (C#、JavaScript、Python)](/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart)
 
 Cognitive Services を追加してボットをさらにインテリジェントにする方法を学習します。
 

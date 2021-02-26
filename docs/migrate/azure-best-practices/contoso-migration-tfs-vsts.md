@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 078c5500fddc61c4f4fef6aad61ac7fcc2803510
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 0a679af5d8b7d73cc48accb4cb08932905bce763
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712926"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631748"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -130,7 +130,7 @@ Contoso の管理者が Team Foundation Server インスタンスを Team Founda
      ![Team Foundation Server のインストールを確認するための [製品バックログ] ペインのスクリーンショット。](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 一部の Team Foundation Server アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細については、こちらを参照してください](/azure/devops/reference/configure-features-after-upgrade?view=vsts)。
+> 一部の Team Foundation Server アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細については、こちらを参照してください](/azure/devops/reference/configure-features-after-upgrade?view=vsts&preserve-view=true)。
 
 **さらにサポートが必要な場合**
 
@@ -479,13 +479,13 @@ Contoso の管理者はドライ ラン移行を実行し、すべてが想定�
 
 **さらにサポートが必要な場合**
 
-詳細については、「[TFVC から Git にリポジトリをインポートする](/azure/devops/repos/git/import-from-TFVC?view=vsts)」を参照してください。
+詳細については、「[TFVC から Git にリポジトリをインポートする](/azure/devops/repos/git/import-from-TFVC?view=vsts&preserve-view=true)」を参照してください。
 
 ## <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 
 移行が完了したら、Contoso チームは次のことを行う必要があります。
 
-- 追加のインポート アクティビティについては、[インポート後](/azure/devops/articles/migration-post-import?view=vsts)に関する記事を参照してください。
+- 追加のインポート アクティビティについては、[インポート後](/azure/devops/articles/migration-post-import?view=vsts&preserve-view=true)に関する記事を参照してください。
 - TFVC リポジトリを削除するか、読み取り専用モードに設定します。 コード ベースは使用しないでください。ただし、その履歴を参照することはできます。
 
 ## <a name="post-migration-training"></a>移行後のトレーニング

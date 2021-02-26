@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: cbcf8501788944a51f1dcae99f21e8dbad1dc931
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0ccf17d2b5abe76fd28c24b3317c2ff1f0e13510
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013435"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632496"
 ---
 # <a name="refactor-landing-zones"></a>ランディング ゾーンのリファクター
 
@@ -104,7 +104,7 @@ _図 4:ランディング ゾーンの並列の繰り返し_
 
 ## <a name="meeting-long-term-requirements-while-refactoring"></a>リファクタリング時に長期的な要件に対応する
 
-ランディング ゾーンの拡張に関する準備手法のセクションは、長期的な要件に向けた移行の助けとなります。 クラウド導入チームが導入計画に基づいて作業を進めるときに、さまざまなチームの発展する要件を満たすための意思決定とリファクタリングに役立つガイダンスについては、「[ランディング ゾーンを拡張する](../considerations/index.md)」をご覧ください。
+ランディング ゾーンの拡張に関する準備手法のセクションは、長期的な要件に向けた移行の助けとなります。 クラウド導入チームが導入計画に基づいて作業を進めるときに、さまざまなチームの発展する要件を満たすように決定を下し、リファクターするのに役立つガイダンスについて、「[ランディング ゾーンを拡張する](../considerations/index.md)」をご覧ください。
 
 ![ランディング ゾーンの並列の繰り返し](../../_images/ready/refactor-methodologies.png)
 _図 5:ランディング ゾーンの並列の繰り返しを支援するより深い手法_

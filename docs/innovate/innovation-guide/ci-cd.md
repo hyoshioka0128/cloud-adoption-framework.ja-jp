@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-new, AQC, seo-caf-innovate
 keywords: デジタル トランスフォーメーション, デジタル トランスフォーメーション サービス, クラウド導入
-ms.openlocfilehash: e826788b35cadf5be928075aa7c0b54fac5f4c85
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: 69044c6d7f1a66b7d2cd47dc0cadd1181ae388e4
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525866"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632071"
 ---
 # <a name="empower-cloud-adoption"></a>クラウド導入の強化
 
@@ -62,7 +62,7 @@ Azure DevOps は、すべての開発者にクラス最高のツールを提供�
 
 ::: zone target="docs"
 
-**[Azure DevOps のドキュメント](/azure/devops/user-guide/?view=azure-devops&preserve-view=true)にアクセスする**
+**[Azure DevOps のドキュメント](/azure/devops/get-started/)にアクセスする**
 
 ::: zone-end
 
@@ -99,7 +99,7 @@ DevOps プロジェクトを作成するには:
 ### <a name="learn-more"></a>詳細情報
 
 - [GitHub で始めるオープンソース](https://azure.microsoft.com/products/github/)
-- [Azure のオープンソース](https://azure.microsoft.com/overview/choose-azure-opensource)
+- [Azure のオープンソース](https://azure.microsoft.com/overview/choose-azure-opensource/)
 - [Microsoft Teams](/MicrosoftTeams/teams-overview)
 
 ## <a name="innovation-characteristics"></a>[イノベーションの特性](#tab/Characteristics)
@@ -140,4 +140,4 @@ LiveOps はデータに人間味を与えるうえでも役立ちます。 LiveO
 
 PlayFab には、収益性を高め、ゲームの寿命を延ばす、独自のマージンの高い LiveOps ツールとサービスが用意されています。 デバイスやプラットフォームにまったく依存しない PlayFab は、Facebook や Steam などのソーシャル ID プロバイダー、商取引を調整するストア プラットフォーム、iOS、Android、Xbox、PlayStation などのデバイス プラットフォームと簡単に統合できます。 Azure のデータ資産により、PlayFab は、お客様がより良いゲームとより賢明な意思決定を行い、プレーヤーを獲得して維持し、より多くの実験と反復処理をより迅速に実行して迅速に学習できるようになるインテリジェント サービスを提供できます。
 
-**[Azure PlayFab のドキュメント](/gaming/playfab)に移動する**
+**[Azure PlayFab のドキュメント](/gaming/playfab/)に移動する**

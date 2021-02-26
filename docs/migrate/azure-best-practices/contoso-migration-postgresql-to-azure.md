@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 8e87f0ac16a4a5c942c20deb1bddecb090e88c58
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 030c036b41532c1cc55321ebcfe4c352a66e9775
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97014744"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631527"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
@@ -144,7 +144,7 @@ Contoso は、メジャーからメジャーへのアップグレードを実行
 1. 価格レベルを選択します。
 1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
-    ![[移行サービスの作成] 画面のスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_create.png)
+    ![**[移行サービスの作成]** ページのスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_create.png)
     "_図 3:確認と作成_
 
 1. **［作成］** を選択します

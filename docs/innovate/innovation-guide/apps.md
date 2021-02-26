@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, seo-caf-innovate
 keywords: Azure App Service, App Service Azure, App Service, アプリの構築, クラウドネイティブ アプリ, クラウドネイティブ アプリケーション
-ms.openlocfilehash: 5bd48a4d659f4bdf47b2151fe4ec6d0ab2e366e4
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: e1fe2fb351fed0e092e2d669d2aa7c9384dce2e5
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525951"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632105"
 ---
 # <a name="engage-customers-through-applications"></a>アプリケーションを介したカスタマー エンゲージメント
 
@@ -114,9 +114,9 @@ Visual Studio App Center からは通知サービスも提供されます。1 �
 - [App Service の概要](/azure/app-service/overview)
 - [Web App for Containers: カスタム コンテナーの実行](/azure/app-service/containers/quickstart-docker)
 - [Azure Functions の概要](/azure/azure-functions/functions-overview)
-- [.NET および .NET Core 開発者向けの Azure](/dotnet/azure/?view=azure-dotnet&preserve-view=true)
+- [.NET および .NET Core 開発者向けの Azure](/dotnet/azure)
 - [Azure SDK for Python のドキュメント](/azure/python)
-- [Java クラウド開発者向けの Azure](/azure/java/?view=azure-java-stable&preserve-view=true)
+- [Java クラウド開発者向けの Azure](/azure/developer/java)
 - [Azure に PHP Web アプリを作成する](/azure/app-service/app-service-web-get-started-php)
 - [Azure SDK for JavaScript のドキュメント](/azure/javascript)
 - [Azure SDK for Go のドキュメント](/azure/go)

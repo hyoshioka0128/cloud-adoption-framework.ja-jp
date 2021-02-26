@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 3c1daeaf7b772b12d82ccfe5d9a01b72816a80e9
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 52211e45aea8533a462f7052eae0c1ec2fe22911
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98175170"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632020"
 ---
 <!-- docutune:casing "Enable .NET" SmartHotel360-Backend Pet.Checker "contoso-datacenter" PetCheckerFunction -->
 
@@ -98,10 +98,10 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 | サービス | 説明 | コスト |
 |---|---|---|
-| [AKS](/sql/dma/dma-overview?view=ssdt-18vs2017) | Kubernetes の管理、デプロイ、操作を簡略化します。 完全に管理された Kubernetes コンテナー オーケストレーション サービスを提供します。 | AKS は無料サービスです。 VM と、関連するストレージおよびネットワーク リソースの使用した分に対してのみ料金が発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/kubernetes-service)。 |
-| [Azure Functions](https://azure.microsoft.com/services/functions) | イベント ドリブン型のサーバーレス コンピューティング エクスペリエンスにより、開発を高速化できます。 オンデマンドでスケールできます。 | 使用したリソースに対してのみ料金が発生します。 プランでは、1 秒あたりのリソースの使用量と実行回数に基づいて課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/functions)。 |
-| [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/container-registry)。 |
-| [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | あらゆるプラットフォームで実行されるエンタープライズグレードの Web アプリ、モバイル アプリ、API アプリをすばやくビルド、デプロイ、スケーリングできます。 | App Service プランは、1 秒単位で課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
+| [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) | Kubernetes の管理、デプロイ、操作を簡略化します。 完全に管理された Kubernetes コンテナー オーケストレーション サービスを提供します。 | AKS は無料サービスです。 VM と、関連するストレージおよびネットワーク リソースの使用した分に対してのみ料金が発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/kubernetes-service/)。 |
+| [Azure Functions](https://azure.microsoft.com/services/functions/) | イベント ドリブン型のサーバーレス コンピューティング エクスペリエンスにより、開発を高速化できます。 オンデマンドでスケールできます。 | 使用したリソースに対してのみ料金が発生します。 プランでは、1 秒あたりのリソースの使用量と実行回数に基づいて課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/functions/)。 |
+| [Azure Container Registry](https://azure.microsoft.com/services/container-registry/) | あらゆる種類のコンテナー デプロイのイメージを保存します。 | コストは機能、ストレージ、使用期間に基づいて発生します。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/container-registry/)。 |
+| [Azure App Service](https://azure.microsoft.com/services/app-service) | あらゆるプラットフォームで実行されるエンタープライズグレードの Web アプリ、モバイル アプリ、API アプリをすばやくビルド、デプロイ、スケーリングできます。 | App Service プランは、1 秒単位で課金されます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows/)。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -109,9 +109,9 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| Azure サブスクリプション | <li> 前の記事で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <li> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <li> 既存のサブスクリプションを使用するものの、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を自分に割り当ててもらう必要があります。 |
+| Azure サブスクリプション | <li> 前の記事で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free/)を作成してください。 <li> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <li> 既存のサブスクリプションを使用するものの、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を自分に割り当ててもらう必要があります。 |
 | Azure インフラストラクチャ | <li> [Contoso で Azure インフラストラクチャを設定する方法](./contoso-migration-infrastructure.md)を確認してください。 |
-| 開発者の前提条件 | Contoso は、開発者用ワークステーションに次のツールをインストールする必要があります。 <li> [Visual Studio Community 2017 バージョン 15.5](https://visualstudio.microsoft.com) <li> .NET ワークロードが有効 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker Community Edition (Windows 10) または Docker Enterprise Edition (Windows Server)](https://docs.docker.com/docker-for-windows/install) が Windows コンテナーを使用するように設定済み |
+| 開発者の前提条件 | Contoso は、開発者用ワークステーションに次のツールをインストールする必要があります。 <li> [Visual Studio Community 2017 バージョン 15.5](https://visualstudio.microsoft.com/vs/community/) <li> .NET ワークロードが有効 <li> [Git](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads/) <li> [Azure CLI](/cli/azure/install-azure-cli) <li> [Docker Community Edition (Windows 10) または Docker Enterprise Edition (Windows Server)](https://docs.docker.com/docker-for-windows/install/) が Windows コンテナーを使用するように設定済み |
 
 ## <a name="scenario-steps"></a>シナリオのステップ
 
@@ -166,7 +166,7 @@ Contoso の管理者は、AKS と Azure Container Registry を次のようにプ
 
     _図 6:PowerShell 統合ターミナル。_
 
-6. `az login` コマンドを実行し、Web ブラウザーを使用した認証の手順に従って、Azure CLI の認証を行います。 [Azure CLI でのログイン](/cli/azure/authenticate-azure-cli?view=azure-cli-latest)に関する詳細を確認してください。
+6. `az login` コマンドを実行し、Web ブラウザーを使用した認証の手順に従って、Azure CLI の認証を行います。 [Azure CLI でのサインイン](/cli/azure/authenticate-azure-cli)に関する詳細を確認してください。
 
     ![Azure CLI の認証ウィンドウを示すスクリーンショット。](./media/contoso-migration-rebuild/aks5.png)
 
@@ -761,16 +761,16 @@ Contoso の管理者は次のようにしてアプリケーションをデプロ
 
 リソースを Azure に移行したら、新しいインフラストラクチャを完全に操作可能にして、セキュリティ保護する必要があります。
 
-### <a name="security"></a>Security
+### <a name="security"></a>セキュリティ
 
-- Contoso は新しいデータベースが安全であることを確認する必要があります。 詳細については、「[Azure SQL Database と SQL Managed Instance のセキュリティ機能の概要](/azure/sql-database/sql-database-security-overview)」を参照してください。
+- Contoso は新しいデータベースが安全であることを確認する必要があります。 詳細については、「[Azure SQL Database と SQL Managed Instance のセキュリティ機能の概要](/azure/azure-sql/database/security-overview)」を参照してください。
 - アプリケーションは、SSL と証明書を使用するように更新する必要があります。 コンテナー インスタンスは 443 で応答するように再デプロイする必要があります。
 - Contoso は、Service Fabric アプリケーションのシークレットの保護に Azure Key Vault を役立てることを検討する必要があります。 詳細については、「[Service Fabric アプリケーションで暗号化されたシークレットを管理する](/azure/service-fabric/service-fabric-application-secret-management)」を参照してください。
 
 ### <a name="backups-and-disaster-recovery"></a>バックアップとディザスター リカバリー
 
-- Contoso は、[Azure SQL Database のバックアップ要件](/azure/sql-database/sql-database-automated-backups)を確認する必要があります。
-- Contoso は、[データベースのリージョン内フェールオーバーを提供するように SQL フェールオーバー グループを実装](/azure/sql-database/sql-database-auto-failover-group)することを検討する必要があります。
+- Contoso は、[Azure SQL Database のバックアップ要件](/azure/azure-sql/database/automated-backups-overview)を確認する必要があります。
+- Contoso は、[データベースのリージョン内フェールオーバーを提供するように SQL フェールオーバー グループを実装](/azure/azure-sql/database/auto-failover-group-overview)することを検討する必要があります。
 - Contoso では、[Azure Container Registry Premium SKU の geo レプリケーション](/azure/container-registry/container-registry-geo-replication)を使用できます。
 - Azure Cosmos DB は自動的にバックアップされます。 詳細については、「[Azure Cosmos DB でのオンライン バックアップとオンデマンドのデータ復元](/azure/cosmos-db/online-backup-and-restore)」を参照してください。
 
@@ -792,6 +792,6 @@ Microsoft Learn は学習に対する新しいアプローチです。 クラウ
 
 <!-- docsTest:casing "with the Azure Cognitive Vision Services" "computer vision functionality" -->
 
-- **[Azure App Service を使用して Azure に Web サイトをデプロイする](/learn/paths/deploy-a-website-with-azure-app-service):** Azure に Web アプリを作成すれば、基盤となるサーバー、ストレージ、ネットワーク アセットを操作しなくても簡単に Web サイトを公開して管理することができます。 代わりに、Web サイトの機能に焦点を当て、堅牢な Azure プラットフォームを使用して、サイトへの安全なアクセスを提供することができます。
+- **[Azure App Service を使用して Azure に Web サイトをデプロイする](/learn/paths/deploy-a-website-with-azure-app-service/):** Azure に Web アプリを作成すれば、基盤となるサーバー、ストレージ、ネットワーク アセットを操作しなくても簡単に Web サイトを公開して管理することができます。 代わりに、Web サイトの機能に焦点を当て、堅牢な Azure プラットフォームを使用して、サイトへの安全なアクセスを提供することができます。
 
-- **[Azure Cognitive Vision サービスを使用してイメージを処理して分類する](/learn/paths/classify-images-with-vision-services):** Microsoft Cognitive Services では、ご利用のアプリケーションで Computer Vision 機能を有効にできる事前に作成した機能を提供します。 Azure Cognitive Vision Services を使用して、顔を検出し、イメージをタグ付けして分類し、オブジェクトを特定する方法について学習します。
+- **[Azure Cognitive Vision サービスを使用してイメージを処理して分類する](/learn/paths/process-classify-images-with-azure-cognitive-vision-services/):** Microsoft Cognitive Services では、ご利用のアプリケーションで Computer Vision 機能を有効にできる事前に作成した機能を提供します。 Azure Cognitive Vision Services を使用して、顔を検出し、イメージをタグ付けして分類し、オブジェクトを特定する方法について学習します。

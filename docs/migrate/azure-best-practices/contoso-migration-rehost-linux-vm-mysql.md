@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: a4f78228dad4ad2be191d7515824b1855ee9f690
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: b82eaf9e330e8f59e542d43ea07f3593afa1ffab
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712673"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631646"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
@@ -35,7 +35,7 @@ IT リーダーシップ チームは、ビジネス パートナーと緊密に
 
 Contoso クラウド チームは、最適な移行方法を決定するために、この移行の目標を明確にしました。
 
-- 移行後、Azure 内のアプリケーションは、現在のオンプレミスの VMware 環境内と同じパフォーマンスを発揮できる必要があります。 このアプリケーションは、オンプレミスにあるときと同様に、クラウド内でも非常に重要であり続けます。
+- 移行後、Azure 内のアプリケーションは、現在のオンプレミスの VMware 環境内と同じパフォーマンスを発揮できる必要があります。 このアプリケーションは、オンプレミスにあるときと同様に、クラウドでも引き続き非常に重要です。
 - Contoso は、このアプリケーションに投資することは望んでいません。 これはビジネスにとって重要なものですが、現状のまま確実にクラウドに移すことだけを望んでいます。
 - Windows アプリケーションの移行をいくつか完了した後、Contoso は Azure で Linux ベースのインフラストラクチャを使用する方法を学びたいと考えています。
 - Contoso は、アプリケーションがクラウドに移された後、データベース管理タスクを最小限にしたいと考えています。
@@ -81,9 +81,9 @@ Web VM を移行するには:
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate を使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate) は、追加料金なしで利用できます。 評価と移行に使用することにしたツール (ファーストパーティまたは ISV) によっては料金が発生する場合があります。 |
-| [Azure Database Migration Service](/azure/dms/dms-overview) | Database Migration Service を使用すると、ダウンタイムを最小限に抑えながら、複数のデータベース ソースから Azure データ プラットフォームにシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
-| [Azure Database for MySQL](/azure/mysql) | このデータベースは、オープン ソースの MySQL データベース エンジンに基づいています。 フルマネージドのエンタープライズ対応コミュニティ MySQL データベースが提供され、アプリケーションの開発とデプロイに使用できます。 | Azure Database for MySQL の[価格](https://azure.microsoft.com/pricing/details/mysql)とスケーラビリティのオプションに関する情報をご覧ください。 |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate を使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate/) は、追加料金なしで利用できます。 評価と移行に使用することにしたツール (ファーストパーティまたは ISV) によっては料金が発生する場合があります。 |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Database Migration Service を使用すると、ダウンタイムを最小限に抑えながら、複数のデータベース ソースから Azure データ プラットフォームにシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)に関する情報と、[Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration/)に関する情報をご覧ください。 |
+| [Azure Database for MySQL](/azure/mysql/) | このデータベースは、オープン ソースの MySQL データベース エンジンに基づいています。 フルマネージドのエンタープライズ対応コミュニティ MySQL データベースが提供され、アプリケーションの開発とデプロイに使用できます。 | Azure Database for MySQL の[価格](https://azure.microsoft.com/pricing/details/mysql/server/)とスケーラビリティのオプションに関する情報をご覧ください。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -91,7 +91,7 @@ Web VM を移行するには:
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| **Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用する場合に、自分が管理者でないようであれば、管理者と連携して所有者または共同作成者のアクセス許可を自分に割り当てます。 <br><br> より詳細なアクセス許可が必要な場合は、「[Azure のロールベースのアクセス制御 (Azure RBAC) を使用して Site Recovery のアクセスを管理する](/azure/site-recovery/site-recovery-role-based-linked-access-control)」をご覧ください。 |
+| **Azure サブスクリプション** | Contoso は前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free/)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用する場合に、自分が管理者でないようであれば、管理者と連携して所有者または共同作成者のアクセス許可を自分に割り当てます。 <br><br> より詳細なアクセス許可が必要な場合は、[ロールベースのアクセス制御 (RBAC) を使用した Azure Site Recovery のアクセスの管理](/azure/site-recovery/site-recovery-role-based-linked-access-control)に関する記事をご覧ください。 |
 | **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。 |
 | **オンプレミスのサーバー** | オンプレミスの vCenter Server では、バージョン 5.5、6.0、6.5、または 6.7 が実行されている必要があります。 <br><br> バージョン 5.5、6.0、6.5、または 6.7 が実行されている ESXi ホスト。 <br><br> ESXi ホスト上で実行している 1 つ以上の VMware VM。 |
 | **オンプレミスの VM** | Azure での実行が保証されている [Linux マシンを確認します](/azure/virtual-machines/linux/endorsed-distros)。 |
@@ -129,11 +129,11 @@ Contoso が VM を Azure に移行するには、以下の Azure コンポーネ
 
        1. 前提条件を設定します。
 
-          ![[前提条件のセットアップ] 画面を示すスクリーンショット。](./media/contoso-migration-rehost-vm/migration-setup-prerequisites.png)
+          ![**[前提条件のセットアップ]** ページのスクリーンショット。](./media/contoso-migration-rehost-vm/migration-setup-prerequisites.png)
 
        1. ツールを Azure サブスクリプションにポイントします。
 
-          ![サブスクリプションの構成を示すスクリーンショット](./media/contoso-migration-rehost-vm/migration-register-azure.png)
+          ![サブスクリプションの構成のスクリーンショット。](./media/contoso-migration-rehost-vm/migration-register-azure.png)
 
        1. VMware vCenter の資格情報を設定します。
 
@@ -287,7 +287,7 @@ Contoso の管理者は、[ステップバイステップの移行チュート�
 
 - 次のすべての移行の前提条件が満たされていることを確認します。
   - MySQL サーバーのデータベース ソースは、Azure Database for MySQL でサポートされているバージョンと一致する必要があります。 Azure Database for MySQL では、MySQL Community Edition、InnoDB ストレージ エンジン、同じバージョンのソースとターゲット間の移行がサポートされています。
-  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 これを行わないと、移行ウィザードで次のエラーが発生します。"バイナリ ログにエラーがあります。 変数 binlog_row_image の値が 'minimal' です。 その値を 'full' に変更してください。" 詳細については、[MySQL の Web サイト](https://go.microsoft.com/fwlink/?linkid=873009`)を参照してください。
+  - `my.ini` (Windows) または `my.cnf` (Unix) でバイナリ ログを有効にします。 このようにしないと、移行ウィザードで次のエラーが発生します: `Error in binary logging. Variable binlog_row_image has value 'minimal.' Please change it to 'full.'`。詳細については、[MySQL のドキュメント](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html)を参照してください。
   - ユーザーは `ReplicationAdmin` ロールを持っている必要があります。
   - 外部キーとトリガーを使用せずにデータベース スキーマを移行します。
 - Azure ExpressRoute または VPN を介してオンプレミス ネットワークに接続する仮想ネットワークを作成します。
@@ -347,7 +347,7 @@ Contoso の管理者は、MySQL ツールでバックアップと復元を使用
 
 1. データベースを `osticket` として、ローカルの自己完結型ファイルにエクスポートします。
 
-    ![[データ エクスポート] 画面を示すスクリーンショット。](./media/contoso-migration-rehost-linux-vm-mysql/workbench2.png)
+    ![**[データのエクスポート]** ページのスクリーンショット。](./media/contoso-migration-rehost-linux-vm-mysql/workbench2.png)
 
 1. データベースがローカルにバックアップされたら、Azure Database for MySQL インスタンスへの接続を作成します。
 

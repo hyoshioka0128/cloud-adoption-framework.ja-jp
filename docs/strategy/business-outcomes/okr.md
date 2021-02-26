@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: def676cd47056ea7d3dd7a0ccb5f775023c6f62e
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: c38f725f7a2f7f138594d6167c0c823d04118166
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99226965"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632479"
 ---
 <!-- docutune:casing WorkBoard -->
 
@@ -103,7 +103,7 @@ OKR の例を次に示します。
 
 **手順 5:改善:** 組織全体をさらに関与させる方法について、継続的に改善、再検討、見直しを行います。 スプレッドシートで OKR を管理することもできますが、組織の利益が最大になるのは、全員が目標達成に寄与し、整合性の取れたデータから分析情報を得られる場合です。
 
-[WorkBoard](https://appsource.microsoft.com/en-us/marketplace/co-sell/SOL-31525-NGJ) に問い合わせ、始めましょう。
+[WorkBoard](https://appsource.microsoft.com/product/office/WA104381599) に問い合わせ、始めましょう。
 
 > [!div class="nextstepaction"]
 > [学習メトリックに合わせて取り組みを調整する](../learning-metrics.md)

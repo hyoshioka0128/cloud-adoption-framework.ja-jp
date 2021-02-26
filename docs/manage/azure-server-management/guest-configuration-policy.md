@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 66e93f25101f29890cdcc367560e2ab8d996353e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: cc67a0d31b32522a32c331e9fcd798e259b17e11
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017073"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631918"
 ---
 # <a name="azure-policy-guest-configuration-extension"></a>Azure Policy ゲスト構成拡張機能
 
@@ -35,7 +35,7 @@ Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "G
 - Windows および Linux コンピューターのパスワード セキュリティ設定が正しく設定されていることを確認します。
 - Windows VM で証明書の有効期限が近づいていないことを確認します。
 
- このスクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。 スクリプトを実行するときに、ポリシーを適用するサブスクリプションの名前を指定する必要があります。
+ このスクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount) コマンドレットを使用してサインインします。 スクリプトを実行するときに、ポリシーを適用するサブスクリプションの名前を指定する必要があります。
 
 ```powershell
 

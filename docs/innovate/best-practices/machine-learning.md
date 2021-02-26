@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: 機械学習とは何か, Azure Machine Learning, 機械学習ツール, MLOPS, 自動機械学習
-ms.openlocfilehash: 8726613bd5291a2f99a32db4b63d1ee832fd6667
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: 82120b386c9d3eb6d97b9642a2202402c7014596
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525883"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632139"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -41,7 +41,7 @@ Azure Machine Learning には、次のような、開発者やデータ科学者
 
 ## <a name="build-machine-learning-models-in-python-or-r"></a>Python または R で機械学習モデルを構築する
 
-Azure Machine Learning の [Python SDK](/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) または [R SDK](https://azure.github.io/azureml-sdk-for-r/reference/index.html) を使用してローカル コンピューターでトレーニングを開始します。 その後、クラウドにスケールアウトすることができます。 クラウドのパワーと、Azure Machine Learning コンピューティングや [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks) などの利用可能な多数の[コンピューティング先](/azure/machine-learning/how-to-set-up-training-targets)と[高度なハイパーパラメーター調整サービス](/azure/machine-learning/how-to-tune-hyperparameters)を活用することで、高品質のモデルを手早く構築できます。 SDK を使用して、[モデルのトレーニングと調整を自動化](/azure/machine-learning/tutorial-auto-train-models)することもできます。
+Azure Machine Learning の [Python SDK](/python/api/overview/azure/ml) または [R SDK](https://azure.github.io/azureml-sdk-for-r/reference/index.html) を使用してローカル コンピューターでトレーニングを開始します。 その後、クラウドにスケールアウトすることができます。 クラウドのパワーと、Azure Machine Learning コンピューティングや [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks) などの利用可能な多数の[コンピューティング先](/azure/machine-learning/how-to-set-up-training-targets)と[高度なハイパーパラメーター調整サービス](/azure/machine-learning/how-to-tune-hyperparameters)を活用することで、高品質のモデルを手早く構築できます。 SDK を使用して、[モデルのトレーニングと調整を自動化](/azure/machine-learning/tutorial-auto-train-models)することもできます。
 
 ## <a name="build-machine-learning-models-with-no-code-tools"></a>ノーコード ツールを使用して機械学習モデルを構築する
 
@@ -66,7 +66,7 @@ Azure Machine Learning の [Python SDK](/python/api/overview/azure/ml/?view=azur
 
 適切なモデルがあれば、Web サービス、IoT デバイス、または Power BI で簡単に使用できます。 詳細については、「[Azure Machine Learning を使用してモデルをデプロイする](/azure/machine-learning/how-to-deploy-and-where)」を参照してください。
 
-デプロイされたモデルは、[Azure Machine Learning SDK for Python](/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true)、[Azure Machine Learning Studio (classic)](https://ml.azure.com/)、または [Machine Learning CLI](/azure/machine-learning/reference-azure-machine-learning-cli) を使用して管理できます。
+デプロイされたモデルは、[Azure Machine Learning SDK for Python](/python/api/overview/azure/ml/)、[Azure Machine Learning Studio (classic)](https://ml.azure.com/)、または [Machine Learning CLI](/azure/machine-learning/reference-azure-machine-learning-cli) を使用して管理できます。
 
 これらのモデルを使用して、[リアルタイム](/azure/machine-learning/how-to-consume-web-service)で予測を返したり、データが大量の場合は[非同期](/azure/machine-learning/how-to-use-parallel-run-step)で予測を返したりすることができます。
 
@@ -108,7 +108,7 @@ Azure Machine Learning は、Azure プラットフォーム上の他のサービ
 - Azure Monitor。 詳細については、「[Azure Machine Learning の監視](/azure/machine-learning/monitor-azure-machine-learning)」を参照してください。
 - データ ストア (Azure Storage アカウント、Azure Data Lake Storage、Azure SQL Database、Azure Database for PostgreSQL、Azure Open Datasets など)。 詳細については、[Azure Storage サービスのデータへのアクセス](/azure/machine-learning/how-to-access-data)に関する記事と「[Azure Open Datasets を使用してデータセットを作成する](/azure/machine-learning/how-to-create-register-datasets#create-datasets-with-azure-open-datasets)」を参照してください。
 - Azure Virtual Network。 詳細については、[仮想ネットワークでの実験と推論の安全な実行](/azure/machine-learning/how-to-enable-virtual-network)に関するページを参照してください。
-- Azure Pipelines 詳細については、「[機械学習モデルのトレーニングとデプロイ](/azure/devops/pipelines/targets/azure-machine-learning?tabs=yaml&view=azure-devops&preserve-view=true)」を参照してください。
+- Azure Pipelines 詳細については、「[機械学習モデルのトレーニングとデプロイ](/azure/devops/pipelines/targets/azure-machine-learning)」を参照してください。
 - Git リポジトリのログ。 詳細については、「[Git 統合](/azure/machine-learning/concept-train-model-git-integration)」を参照してください。
 - MLflow。 詳細については、[メトリックを追跡し、モデルをデプロイするための MLflow](/azure/machine-learning/how-to-use-mlflow) に関するページを参照してください。
 - Kubeflow。 詳細については、[エンド ツー エンドのワークフロー パイプラインの構築](https://www.kubeflow.org/docs/azure/)に関するページを参照してください。

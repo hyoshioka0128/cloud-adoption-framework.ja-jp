@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: 95ca26aaa53625578fec9b4b4d169551d9c0f0d6
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 4da0e4598c91c971a0ed5112b2a3767e272c07a5
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713659"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632428"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 
@@ -66,7 +66,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 2. **[追加]** を選択します。
 
 > [!NOTE]
-> サブスクリプションはプログラムで作成することもできます。 詳細については、[Azure サブスクリプションをプログラムで作成する方法](/azure/cost-management-billing/manage/programmatically-create-subscription-preview?tabs=azure-powershell)に関するページを参照してください。
+> サブスクリプションはプログラムで作成することもできます。 詳細については、[Azure サブスクリプションをプログラムで作成する方法](/azure/cost-management-billing/manage/programmatically-create-subscription)に関するページを参照してください。
 
 #### <a name="create-a-resource-group"></a>リソース グループを作成する
 

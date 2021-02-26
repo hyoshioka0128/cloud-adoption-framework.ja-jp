@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 46d5cc077730610bc6bb9bdb3785609880a77c64
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1859cd42cdfa5487dd2a14d766debf75739576e3
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017141"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631952"
 ---
 # <a name="common-azure-policy-examples"></a>Azure Policy の一般的な例
 
@@ -37,7 +37,7 @@ Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn')
   -and ($_.Properties.displayName -like '*location*') }
 ```
 
-次のスクリプトでは、ポリシーの割り当て方法を示しています。 ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。
+次のスクリプトでは、ポリシーの割り当て方法を示しています。 ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount) コマンドレットを使用してサインインします。
 
 ```powershell
 # Specify the value for $SubscriptionID.
@@ -76,7 +76,7 @@ Azure では、さまざまなワークロードをサポートするための�
 
 ポリシーの GUID は `2835b622-407b-4114-9198-6f7064cbe0dc` です。
 
-次のスクリプトでは、ポリシーの割り当て方法を示しています。 スクリプトを使用するには、ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) コマンドレットを使用してサインインします。
+次のスクリプトでは、ポリシーの割り当て方法を示しています。 スクリプトを使用するには、ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount) コマンドレットを使用してサインインします。
 
 ```powershell
 # Specify the value for $SubscriptionID.

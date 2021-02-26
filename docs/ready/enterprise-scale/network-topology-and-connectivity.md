@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 15f72f6899ba9ae3cf5a9bf9a804c7e0e1363d9c
-ms.sourcegitcommit: 32a958d1dd2d688cb112e9d1be1706bd1e59c505
+ms.openlocfilehash: dbbd458530d3507cf7247a3579bf5f41237e7e52
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98123563"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632564"
 ---
 <!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
@@ -508,7 +508,7 @@ _図 8:暗号化のフロー。_
 
   - パートナーの NVA を使用して、ExpressRoute プライベート ピアリング経由で IPsec トンネルを確立します。
   - Microsoft ピアリングを使用して ExpressRoute 経由で VPN トンネルを確立します。
-  - ExpressRoute プライベート ピアリング経由のサイト間 VPN 接続を構成する ([プレビュー](/azure/vpn-gateway/site-to-site-vpn-private-peering)) 機能を評価します。
+  - [ExpressRoute プライベート ピアリング経由のサイト間 VPN 接続を構成する (プレビュー)](/azure/vpn-gateway/site-to-site-vpn-private-peering) 機能を評価します。
 
 - Azure リージョン間のトラフィックを暗号化する必要がある場合は、グローバル VNet ピアリングを使用してリージョン間で仮想ネットワークを接続します。
 

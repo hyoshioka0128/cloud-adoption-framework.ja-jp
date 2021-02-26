@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: ab07b197f220e355fb6029cfccec1f670ad4bd49
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 350c8787e25b1709a79b1bbcd521572d41e7a51a
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017329"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100632003"
 ---
 <!-- docutune:casing "SQL Server Health Check" -->
 
@@ -63,7 +63,7 @@ ms.locfileid: "97017329"
 
 システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、クラウド導入フレームワーク全体にわたって取られている環境的見解の範囲外です。
 
-このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。 フレームワークでは、アーキテクチャ エクセレンスの 5 つの要素の向上に重点を置いています。
+このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。 フレームワークでは、アーキテクチャ エクセレンスの 5 つの要素の向上に重点を置いています。
 
 - **コストの最適化**: もたらされる価値が最大になるようにコストを管理します。
 - **オペレーショナル エクセレンス:** 運用環境でのシステムの動作を維持するオペレーショナル プロセスに従います。
@@ -75,7 +75,7 @@ ms.locfileid: "97017329"
 
 次の **[自動修復]** タブでは、対処できない、または対処するべきではない技術的負債を修復する方法について説明します。
 
-システム設計の改善については、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) の詳細を確認してください。
+システム設計の改善については、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) の詳細を確認してください。
 
 システムの設計が向上したら、この記事に戻り、お使いの環境全体で改良を加え、スケーリングする新しい機会を見つけてください。
 
@@ -113,7 +113,7 @@ ms.locfileid: "97017329"
 
 最適化されたプラットフォームを最大限に導入し、メンテナンスのオーバーヘッドを最小限に抑えるには、そのプラットフォームを Azure サービス カタログに追加する必要があります。 カタログ内の各アプリケーションは、サービス カタログを介した内部使用のため、または外部の消費者向けのマーケットプレース オファリングとしてデプロイすることができます。
 
-サービス カタログに発行する手順については、[サービス カタログの発行](/azure/managed-applications/publish-service-catalog-app)に関する一連の記事を参照してください。
+サービス カタログに発行する手順については、[サービス カタログの発行](/azure/azure-resource-manager/managed-applications/publish-service-catalog-app)に関する一連の記事を参照してください。
 
 ### <a name="deploy-applications-from-the-service-catalog"></a>サービス カタログからアプリケーションをデプロイする
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: ce33a87fa98774e0fcd01079d6ebc0c8a5a7cbcd
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.openlocfilehash: dffd1534d461d443a80f20b3f7cd65392dbe9acc
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492325"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631391"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -29,7 +29,7 @@ ms.locfileid: "100492325"
 
 - [Azure Policy](/azure/governance/policy/overview) の概要では、Azure Policy を使用してポリシーを作成、割り当て、管理する方法について説明しています。 Azure Policy では、Azure Monitor エージェントのデプロイと構成、Azure Monitor for VMs と Azure Security Center を使用した監視の有効化、診断設定のデプロイ、ゲスト構成設定の監査などを行うことができます。
 
-- [Azure コマンド ライン インターフェイス](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) (CLI) の概要。これは、Azure リソースを管理するためのクロスプラットフォーム コマンド ライン エクスペリエンスとなっています。 また、[Azure PowerShell](/powershell/azure/?view=azps-3.6.1) の概要についても確認してください。 [Azure の管理ツールを学習する](https://www.linkedin.com/learning/learning-azure-management-tools)初級レベルのコースの一部として、Azure CLI および PowerShell プログラミング言語を対象としたセッションが LinkedIn で提供されています。
+- [Azure コマンド ライン インターフェイス](/cli/azure/get-started-with-azure-cli) (CLI) の概要。これは、Azure リソースを管理するためのクロスプラットフォーム コマンド ライン エクスペリエンスとなっています。 また、[Azure PowerShell](/powershell/azure/) の概要についても確認してください。 [Azure の管理ツールを学習する](https://www.linkedin.com/learning/learning-azure-management-tools)初級レベルのコースの一部として、Azure CLI および PowerShell プログラミング言語を対象としたセッションが LinkedIn で提供されています。
 
   - [Azure CLI を使用する](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
   - [Azure PowerShell の概要](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)

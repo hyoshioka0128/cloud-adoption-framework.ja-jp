@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 5d52a66bab0313eb5b347b7668caee18ecb80987
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0264f875fde9ec2f4d3407232b5eba7de7f3acef
+ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97014574"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100631697"
 ---
 <!-- cSpell:ignore contoso's contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -98,9 +98,9 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 | サービス | 説明 | コスト |
 | --- | --- | --- |
 | [Azure App Service Migration Assistant](/learn/paths/migrate-dotnet-apps-azure/) | コードをほとんど変更することなく、オンプレミスからクラウドに .NET Web アプリをシームレスに移行するための、無料のシンプルなパスです。 | このツールは無料でダウンロードできます。 |
-| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)と [Azure Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration)に関する情報をご覧ください。 |
-| [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance) | SQL Managed Instance は、Azure 内のフル マネージド SQL Server インスタンスを表すマネージド データベース サービスです。 最新バージョンの SQL Server データベース エンジンと同じコードを使用し、最新の機能、パフォーマンスの向上、およびセキュリティ更新プログラムが適用されています。 | Azure で実行されている SQL マネージド インスタンスを使用すると、容量に基づく料金がかかります。 詳細については、[SQL Managed Instance の価格](https://azure.microsoft.com/pricing/details/sql-database/managed)に関するページを参照してください。 |
-| [Azure App Service](/azure/app-service/overview) | フル マネージド プラットフォームを使用した強力なクラウド アプリケーションを作成できます。 | 価格は、サイズ、場所、使用時間に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows)。 |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service を使用すると、複数のデータベース ソースから Azure データ プラットフォームに、ダウンタイムを最小限に抑えながらシームレスに移行できます。 | [サポートされているリージョン](/azure/dms/dms-overview#regional-availability)と [Azure Database Migration Service の価格](https://azure.microsoft.com/pricing/details/database-migration/)に関する情報をご覧ください。 |
+| [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview) | SQL Managed Instance は、Azure 内のフル マネージド SQL Server インスタンスを表すマネージド データベース サービスです。 最新バージョンの SQL Server データベース エンジンと同じコードを使用し、最新の機能、パフォーマンスの向上、およびセキュリティ更新プログラムが適用されています。 | Azure で実行されている SQL マネージド インスタンスを使用すると、容量に基づく料金がかかります。 詳細については、[SQL Managed Instance の価格](https://azure.microsoft.com/pricing/details/azure-sql/sql-managed-instance/single/)に関するページを参照してください。 |
+| [Azure App Service](/azure/app-service/overview) | フル マネージド プラットフォームを使用した強力なクラウド アプリケーションを作成できます。 | 価格は、サイズ、場所、使用時間に基づきます。 [詳細については、こちらを参照してください](https://azure.microsoft.com/pricing/details/app-service/windows/)。 |
 | [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) | アプリケーション開発のための継続的インテグレーションと継続的デプロイ (CI/CD) パイプラインが用意されています。 パイプラインは、アプリケーション コードを管理するための Git リポジトリ、パッケージやその他のビルド成果物を生成するためのビルド システム、開発、テスト、および運用環境で変更をデプロイするためのリリース管理システムから始まります。 |
 
 ## <a name="prerequisites"></a>前提条件
@@ -109,7 +109,7 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| **Azure サブスクリプション** | Contoso は、この記事シリーズの前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。 |
+| **Azure サブスクリプション** | Contoso は、この記事シリーズの前の記事でサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free/)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用しており、管理者でない場合は、管理者に依頼して所有者アクセス許可または共同作成者アクセス許可を割り当ててもらう必要があります。 |
 | **Azure インフラストラクチャ** | Contoso は、[移行のための Azure インフラストラクチャ](./contoso-migration-infrastructure.md)についての記事で説明されているように、Azure インフラストラクチャを設定します。 |
 
 ## <a name="scenario-steps"></a>シナリオのステップ
@@ -129,7 +129,7 @@ Contoso が移行を実行する方法を次に示します。
 
 Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、Web アプリを評価し、移行します。 このプロセスでは、[の Microsoft ラーニング パス](/learn/paths/migrate-dotnet-apps-azure/)をガイドとして使用します。 簡単に言えば、管理者は次の操作を実行します。
 
-- Azure [App Service 移行評価](https://appmigration.microsoft.com/assessment/)ツールを使用して、Web アプリ間の依存関係を評価し、オンプレミスの Web アプリと Azure App Service でサポートされているものの間に非互換性がないかどうかを判断します。
+- Azure [App Service 移行評価](https://azure.microsoft.com/services/app-service/migration-assistant/)ツールを使用して、Web アプリ間の依存関係を評価し、オンプレミスの Web アプリと Azure App Service でサポートされているものの間に非互換性がないかどうかを判断します。
 
 - Azure App Service Migration Assistant をダウンロードし、Azure アカウントにサインインします。
 
@@ -143,10 +143,10 @@ Azure SQL マネージド インスタンスを設定するため、Contoso は�
 - マネージド インスタンスを作成した後、Contoso は、サブネットにリソースを追加することはできません。
 - サブネットにネットワーク セキュリティ グループを関連付けることはできません。
 - サブネットにはユーザー定義のルート テーブルが必要です。 割り当てられる唯一のルートが `0.0.0.0/0` の次ホップ インターネットである必要があります。
-- 仮想ネットワーク用に省略可能なカスタム DNS が指定されている場合、Azure 内の再帰的なリゾルバーの仮想 IP アドレス `168.63.129.16` をリストに追加する必要があります。 [Azure SQL マネージド インスタンスのカスタム DNS を構成する](/azure/sql-database/sql-database-managed-instance-custom-dns)方法を確認してください。
+- 仮想ネットワーク用に省略可能なカスタム DNS が指定されている場合、Azure 内の再帰的なリゾルバーの仮想 IP アドレス `168.63.129.16` をリストに追加する必要があります。 [Azure SQL マネージド インスタンスのカスタム DNS を構成する](/azure/azure-sql/managed-instance/custom-dns-configure)方法を確認してください。
 - サブネットにサービス エンドポイント (ストレージまたは SQL) を関連付けることはできません。 仮想ネットワークではサービス エンドポイントを無効にする必要があります。
-- サブネットには 16 個以上の IP アドレスが必要です。 [マネージド インスタンス サブネットのサイズを指定する](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)方法を確認してください。
-- Contoso のハイブリッド環境では、カスタム DNS 設定が必要です。 Contoso は、自社の 1 つ以上の Azure DNS サーバーを使用するように DNS 設定を構成します。 [DNS のカスタマイズの詳細については、こちらを参照してください](/azure/sql-database/sql-database-managed-instance-custom-dns)。
+- サブネットには 16 個以上の IP アドレスが必要です。 [マネージド インスタンス サブネットのサイズを指定する](/azure/azure-sql/managed-instance/vnet-existing-add-subnet)方法を確認してください。
+- Contoso のハイブリッド環境では、カスタム DNS 設定が必要です。 Contoso は、自社の 1 つ以上の Azure DNS サーバーを使用するように DNS 設定を構成します。 [DNS のカスタマイズの詳細については、こちらを参照してください](/azure/azure-sql/managed-instance/custom-dns-configure)。
 
 ### <a name="set-up-a-virtual-network-for-the-managed-instance"></a>マネージド インスタンス用の仮想ネットワークを設定する
 
@@ -182,8 +182,8 @@ Contoso の管理者は仮想ネットワークを次のように設定します
 
 **さらにサポートが必要な場合**
 
-- [SQL Managed Instance の概要については、こちらをお読みください](/azure/sql-database/sql-database-managed-instance)。
-- [SQL マネージド インスタンス用の仮想ネットワークを作成する](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet)方法をご覧ください。
+- [SQL Managed Instance の概要については、こちらをお読みください](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview)。
+- [SQL マネージド インスタンス用の仮想ネットワークを作成する](/azure/azure-sql/managed-instance/vnet-existing-add-subnet)方法をご覧ください。
 - [ピアリングを設定する方法については、こちらを参照してください](/azure/virtual-network/virtual-network-manage-peering)。
 - [Azure Active Directory DNS 設定を更新する方法については、こちらを参照してください](/azure/active-directory-domain-services/tutorial-create-instance)。
 
@@ -214,14 +214,14 @@ Contoso の管理者は、次のようにしてルーティングを設定しま
 
 **さらにサポートが必要な場合**
 
-[マネージド インスタンス用のルートを設定する方法については、こちらを参照してください](/azure/sql-database/sql-database-managed-instance-get-started)。
+[マネージド インスタンス用のルートを設定する方法については、こちらを参照してください](/azure/azure-sql/managed-instance/instance-create-quickstart)。
 
 ### <a name="create-a-managed-instance"></a>マネージド インスタンスを作成する
 
 これで、Contoso の管理者は、次のようにして SQL マネージド インスタンスをプロビジョニングできます。
 
 1. マネージド インスタンスにより、ビジネス アプリケーションにサービスが提供されるため、管理者は、会社のプライマリ リージョン (米国東部 2) にマネージド インスタンスをデプロイします。 そのマネージド インスタンスを ContosoRG リソース グループに追加します。
-1. 価格レベルを選択し、インスタンスのコンピューティングとストレージのサイズを設定します。 詳細については、[SQL Managed Instance の価格](https://azure.microsoft.com/pricing/details/sql-database/managed)に関するページを参照してください。
+1. 価格レベルを選択し、インスタンスのコンピューティングとストレージのサイズを設定します。 詳細については、[SQL Managed Instance の価格](https://azure.microsoft.com/pricing/details/azure-sql/sql-managed-instance/single/)に関するページを参照してください。
 
     ![[SQL Managed Instance] ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
 
@@ -234,7 +234,7 @@ Contoso の管理者は、次のようにしてルーティングを設定しま
 
 **さらにサポートが必要な場合**
 
-[マネージド インスタンスをプロビジョニングする方法については、こちらを参照してください](/azure/sql-database/sql-database-managed-instance-get-started)。
+[マネージド インスタンスをプロビジョニングする方法については、こちらを参照してください](/azure/azure-sql/managed-instance/instance-create-quickstart)。
 
 ## <a name="step-3-migrate-via-azure-database-migration-service"></a>手順 3:Azure Database Migration Service を使用して移行する
 
@@ -409,14 +409,14 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
 ### <a name="security"></a>セキュリティ
 
-- Contoso は新しい `SmartHotel-Registration` データベースのセキュリティ保護に努めます。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-security-overview)。
+- Contoso は新しい `SmartHotel-Registration` データベースのセキュリティ保護に努めます。 [詳細については、こちらを参照してください](/azure/azure-sql/database/security-overview)。
 - 特に、Contoso は証明書で SSL を使用するように Web アプリを更新します。
 
 ### <a name="backups"></a>バックアップ
 
-- Contoso チームは、Azure SQL Managed Instance のデータベースのバックアップ要件を確認します。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-automated-backups)。
-- また、SQL Database のバックアップと復元の管理について確認します。 [自動バックアップ](/azure/sql-database/sql-database-automated-backups)の詳細をご覧ください。
-- データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループの実装を検討します。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-geo-replication-overview)。
+- Contoso チームは、Azure SQL Managed Instance のデータベースのバックアップ要件を確認します。 [詳細については、こちらを参照してください](/azure/azure-sql/database/automated-backups-overview)。
+- また、SQL Database のバックアップと復元の管理について確認します。 自動バックアップについては、[こちら](/azure/azure-sql/database/automated-backups-overview)をご覧ください。
+- データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループの実装を検討します。 [詳細については、こちらを参照してください](/azure/azure-sql/database/auto-failover-group-overview)。
 - 回復性を高めるために、メイン リージョン (`East US 2`) とセカンダリ リージョン (`Central US`) に Web アプリをデプロイすることを検討します。 チームはリージョンの障害が発生しても確実にフェールオーバーされるように Traffic Manager を構成することができます。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
