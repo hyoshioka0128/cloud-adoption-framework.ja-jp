@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: fdade53cdc4ebbbe437c5a6242cb51d6174124d1
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 47ae0478c8e9a793e0d669fb4c938f621042422b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026185"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115409"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>複数の Azure サブスクリプションの整理と管理
 
@@ -23,7 +23,7 @@ ms.locfileid: "97026185"
 
 Azure 管理グループを使用すると、サブスクリプションのアクセス、ポリシー、コンプライアンスを効率的に管理できます。 各管理グループは、1 つ以上のサブスクリプションのコンテナーです。
 
-管理グループは 1 つの階層に配置されます。 組織の構造やニーズに合わせるために、この階層は Azure Active Directory (Azure AD) テナントで定義します。 最上位のレベルは _ルート管理グループ_ と呼ばれます。 階層には、最大 6 レベルの管理グループを定義できます。 各サブスクリプションは 1 つの管理グループだけに属します。
+管理グループは 1 つの階層に配置されます。 組織の構造やニーズに合わせるために、この階層は Azure Active Directory (Azure AD) テナントで定義します。 最上位のレベルは *ルート管理グループ* と呼ばれます。 階層には、最大 6 レベルの管理グループを定義できます。 各サブスクリプションは 1 つの管理グループだけに属します。
 
 Azure には、次の 4 つのレベルの管理スコープがあります。
 
@@ -40,7 +40,7 @@ Azure には、次の 4 つのレベルの管理スコープがあります。
 この継承モデルを使用すると、各サブスクリプションが適切なポリシーやセキュリティ コントロールに準拠するように、階層内にサブスクリプションを配置できます。
 
 ![Azure リソースを整理するための 4 つのスコープ レベル](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
-_図 1:Azure リソースを整理するための 4 つのスコープ レベル_
+*図 1:Azure リソースを整理するための 4 つのスコープ レベル*
 
 ルート管理グループに割り当てられたアクセス権やポリシーは、ディレクトリ内のすべてのリソースに適用されます。 このスコープで定義する項目は慎重に検討してください。 割り当ては必要なものだけを含めてください。
 
@@ -53,7 +53,7 @@ _図 1:Azure リソースを整理するための 4 つのスコープ レベル
 Azure 環境が拡張されることが予想される場合は、運用環境と非運用環境用の管理グループをここで作成し、管理グループ レベルで適切なポリシーとアクセス制御を適用する必要があります。 新しいサブスクリプションが各管理グループに追加されるときには、適切な制御が継承されます。
 
 ![管理グループ階層の例](../../_images/ready/management-group-hierarchy-v2.png)
-_図 2:管理グループ階層の例_
+*図 2:管理グループ階層の例*
 
 ## <a name="example-use-cases"></a>ユース ケースの例
 
@@ -67,7 +67,7 @@ _図 2:管理グループ階層の例_
 
 Azure リソースの整理と管理の詳細については、次のリソースを確認してください。
 
-- [Azure 管理グループでリソースを整理する](/azure/governance/management-groups)
+- [Azure 管理グループでリソースを整理する](/azure/governance/management-groups/)
 - [Azure のすべてのサブスクリプションと管理グループを管理する目的でアクセス権限を昇格させる](/azure/role-based-access-control/elevate-access-global-admin)
 - [Azure リソースを別のリソース グループやサブスクリプションに移動する](/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 

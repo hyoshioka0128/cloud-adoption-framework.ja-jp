@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: f35c579c3816b61a0dff3650a6322a2807d8f721
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: ba0f6a8c3c05ddfc2c265c028f13dcdae04c224f
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632445"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115698"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>追加のサブスクリプションを作成して、Azure 環境をスケーリングする
 
@@ -55,7 +55,7 @@ ms.locfileid: "100632445"
 - サブスクリプションの新規作成の担当者を特定します。
 - サブスクリプションで既定で使用可能なリソースの種類を決定します。
 - すべての標準サブスクリプションの外観を決定します。 Azure RBAC アクセス、ポリシー、タグ、インフラストラクチャ リソースなどの考慮事項があります。
-- 可能であれば、サービス プリンシパルを使用して[プログラムによって新しいサブスクリプションを作成します](/azure/cost-management-billing/manage/programmatically-create-subscription)。 サブスクリプションを作成するには、[サービス プリンシパルにアクセス許可を付与する](/azure/azure-resource-manager/grant-access-to-create-subscription)必要があります。 自動化されたワークフローを通じて新しいサブスクリプションを要求できるセキュリティ グループを定義します。
+- 可能であれば、サービス プリンシパルを使用して[プログラムによって新しいサブスクリプションを作成します](/azure/cost-management-billing/manage/programmatically-create-subscription)。 サブスクリプションを作成するには、[サービス プリンシパルにアクセス許可を付与する](/azure/cost-management-billing/manage/grant-access-to-create-subscription)必要があります。 自動化されたワークフローを通じて新しいサブスクリプションを要求できるセキュリティ グループを定義します。
 - エンタープライズ契約 (EA) をご利用のお客様は、組織で非 EA サブスクリプションの作成がブロックされるように Azure サポートにご依頼ください。
 
 ## <a name="next-steps"></a>次のステップ

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: c4ceb3f9404bb210580006f3cfec06ba1a67f65c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 54fd40f34d987c187f5354638af4fcb51f41661a
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024281"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115681"
 ---
 <!-- docutune:casing "Blueprints: Blueprint definitions" "Blueprints: Get started" -->
 
@@ -70,7 +70,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 1. **[Blueprints:ブループリントの定義]** に移動します。
 1. 前の手順で作成したブループリントを選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
-1. **[バージョン]** (_1.0_ など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
+1. **[バージョン]** (`1.0` など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -81,7 +81,7 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 1. Azure portal で [[ブループリント: ブループリントの定義]](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints) に移動します。
 1. 前の手順で作成したブループリントの定義を選択します。
 1. ブループリントの定義を確認し、 **[ブループリントを発行する]** を選択します。
-1. **[バージョン]** (_1.0_ など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
+1. **[バージョン]** (`1.0` など) と **[変更に関するメモ]** を入力し、 **[発行]** を選択します。
 
 ::: zone-end
 
@@ -91,9 +91,9 @@ Azure Blueprints によってクラウド アーキテクトや中央の情報�
 
 詳細については、次を参照してください。
 
-- [Azure Blueprint](/azure/governance/blueprints)
+- [Azure Blueprint](/azure/governance/blueprints/)
 - [クラウド導入フレームワーク:リソースの整合性の意思決定ガイド](../../decision-guides/resource-consistency/index.md)
-- [標準ベースのブループリント サンプル](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [標準ベースのブループリント サンプル](/azure/governance/blueprints/samples/#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -131,7 +131,7 @@ Azure Policy は、ポリシーの作成、割り当て、および管理に使�
 
 詳細については、次を参照してください。
 
-- [Azure Policy](/azure/governance/policy)
+- [Azure Policy](/azure/governance/policy/)
 - [クラウド導入フレームワーク:ポリシー適用の意思決定ガイド](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -158,9 +158,9 @@ Azure Security Center について調べるには、[Azure portal](https://porta
 
 詳細については、次を参照してください。
 
-- [Azure Security Center](/azure/security-center)
+- [Azure Security Center](/azure/security-center/)
 - [Just In Time VM アクセス](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
-- [Security Center の価格レベル](https://azure.microsoft.com/pricing/details/security-center)
+- [Security Center の価格レベル](https://azure.microsoft.com/pricing/details/security-center/)
 - [クラウド導入フレームワーク:セキュリティ ベースライン規範](../../govern/security-baseline/index.md)
 
 ::: zone-end

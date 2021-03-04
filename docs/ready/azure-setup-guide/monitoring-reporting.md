@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: c205ecde13f39a35cb5027ee4d855729a9b31493
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ad428f1aa4c25e08ede9715ddabb5961143712f4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026015"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115375"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Azure 内での監視とレポート
 
@@ -34,9 +34,9 @@ Azure Monitor では、Azure 内のすべての監視データと診断データ
 
  以下の監視を開始します。
 
-- [アプリケーション](/azure/application-insights/app-insights-overview)
-- [Containers](/azure/monitoring/monitoring-container-overview)
-- [仮想マシン](/azure/monitoring/monitoring-service-map)
+- [アプリケーション](/azure/azure-monitor/app/app-insights-overview)
+- [Containers](/azure/azure-monitor/containers/container-insights-overview)
+- [仮想マシン](/azure/azure-monitor/vm/service-map)
 - [ネットワーク](/azure/networking/network-monitoring-overview)
 
 その他のリソースを監視するには、Azure Marketplace で他のソリューションを探します。
@@ -45,7 +45,7 @@ Azure Monitor を調査するには、[Azure Portal](https://portal.azure.com/#b
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[Azure Monitor のドキュメント](/azure/monitoring-and-diagnostics)」をご覧ください。
+詳しくは、「[Azure Monitor のドキュメント](/azure/azure-monitor/)」をご覧ください。
 
 ::: zone-end
 
@@ -93,7 +93,7 @@ Azure Service Health アラートを設定するには、[Azure portal](https://
 
 ### <a name="learn-more"></a>詳細情報
 
-詳細については、「[Azure Service Health](/azure/service-health)」を参照してください。
+詳細については、「[Azure Service Health](/azure/service-health/)」を参照してください。
 
 ::: zone-end
 
@@ -123,7 +123,7 @@ Azure Advisor を調査するには、[Azure Portal](https://portal.azure.com/#b
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[Azure Advisor のドキュメント](/azure/advisor)」をご覧ください。
+詳しくは、「[Azure Advisor のドキュメント](/azure/advisor/)」をご覧ください。
 
 ::: zone-end
 
@@ -153,6 +153,6 @@ Azure Security Center について調べるには、[Azure portal](https://porta
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[Azure Security Center のドキュメント](/azure/security-center)」をご覧ください。
+詳しくは、「[Azure Security Center のドキュメント](/azure/security-center/)」をご覧ください。
 
 ::: zone-end

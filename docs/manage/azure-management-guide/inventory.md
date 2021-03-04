@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 633c54091e8fb8f9dd68c80c0492245e91be7e2a
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 1df00dd75d5a19488271daae19979473dc95f0b3
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790444"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114848"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure のインベントリと可視性
 
@@ -29,7 +29,7 @@ ms.locfileid: "101790444"
 | Process | ツール | 目的 |
 |---|---|---|
 | Azure サービスの正常性の監視 | [Azure Service Health](/azure/service-health/service-health-overview) | Azure で実行されているサービスの正常性、パフォーマンス、診断 |
-| ログの一元化 | [Log Analytics](/azure/azure-monitor/log-query/log-analytics-overview) | すべての可視性のための一元的なログ |
+| ログの一元化 | [Log Analytics](/azure/azure-monitor/logs/log-analytics-overview) | すべての可視性のための一元的なログ |
 | 監視の一元化 | [Azure Monitor](/azure/azure-monitor/overview) | 運用データと傾向の一元的な監視 |
 | 仮想マシンのインベントリと変更の追跡 | [変更履歴とインベントリ](/azure/automation/change-tracking/overview) | ゲスト OS レベルの VM のインベントリと変更の監視 |
 | サブスクリプションの監視 | [Azure activity log](/azure/azure-monitor/essentials/activity-log) | サブスクリプション レベルの変更の監視 |

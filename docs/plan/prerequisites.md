@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: b8cddcfe51eebcfa36b4f4325687ddf5a1ab9688
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: edd1f389fdf9419f9b81abcb41ec296db11af270
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026253"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116038"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>効果的なクラウド導入計画の前提条件
 
-計画は、そこに入力されたデータと同じだけの効果しかありません。 クラウド導入計画を効果的にするために、"_戦略的_" 入力および "_戦術的_" 入力という 2 つの入力カテゴリがあります。 次のセクションでは、各カテゴリに必要な最小限のデータ ポイントの概要を示します。
+計画は、そこに入力されたデータと同じだけの効果しかありません。 クラウド導入計画を効果的にするために、"*戦略的*" 入力および "*戦術的*" 入力という 2 つの入力カテゴリがあります。 次のセクションでは、各カテゴリに必要な最小限のデータ ポイントの概要を示します。
 
 ## <a name="strategic-inputs"></a>戦略的入力
 

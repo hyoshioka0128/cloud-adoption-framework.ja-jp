@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 98d10cf0b27381bf24c0283843df0a7cc3907980
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 18de31c4e09090cf1670d5cd37d3c4afcaaeed8e
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024451"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116021"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>クラウド導入計画と Azure DevOps
 
@@ -33,13 +33,13 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 
 プロジェクトの作成が完了したら、この一連の記事を読み進めて、実際のクラウド導入計画に合わせてこのテンプレートを変更する方法を確認してください。
 
-このツールに関するその他のサポートとガイダンスについては、[Azure DevOps Services Demo Generator](/azure/devops/demo-gen) に関する記事をご覧ください。
+このツールに関するその他のサポートとガイダンスについては、[Azure DevOps Services Demo Generator](/azure/devops/demo-gen/) に関する記事をご覧ください。
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>クラウド導入計画を一括編集する
 
 計画プロジェクトがデプロイされたら、Microsoft Excel を使用してそれを変更できます。 Microsoft Excel を使用すると、Azure DevOps ブラウザー エクスペリエンスを使用するよりもはるかに簡単に計画内に新しいワークロードまたは資産を作成できます。
 
-一括編集を行うためにワークステーションを準備するには、[Microsoft Excel を使用した作業項目の一括追加または変更](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops)に関する記事をご覧ください。
+一括編集を行うためにワークステーションを準備するには、[Microsoft Excel を使用した作業項目の一括追加または変更](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)に関する記事をご覧ください。
 
 ユーザーは Microsoft Project を使用して、タスクの追跡、バックログの作成、リソースの割り当てを行うこともできます。 [Microsoft Project を Azure DevOps に接続する](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018)手順を参照してください。
 
@@ -47,14 +47,14 @@ Azure DevOps は、反復的なプロジェクトを管理する Azure のお客
 
 クラウド導入計画では、アクティビティがアクティビティの種類ごとに整理されています。
 
-- **エピック:** "_エピック_" は、クラウド導入ライフサイクルの全体的なフェーズを表します。
+- **エピック:** "*エピック*" は、クラウド導入ライフサイクルの全体的なフェーズを表します。
 - **機能:** 機能は、各フェーズ内での具体的な目標の整理に使用されます。 たとえば、特定のワークロードの移行は 1 つの機能になります。
 - **ユーザー ストーリー:** ユーザー ストーリーは、特定の目標に基づくアクティビティの論理的なコレクションに作業をグループ化します。
 - **タスク:** タスクは、実際に実行する必要がある作業です。
 
 各レイヤーでは、依存関係に基づいてアクティビティが順序付けされます。 アクティビティは、目下の目標またはタスクを明確にするために、クラウド導入フレームワーク内の記事にリンクされています。
 
-クラウド導入計画の最もわかりやすいビューは、**エピック** バックログ ビューです。 **エピック** バックログ ビューへの変更については、[バックログの表示](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops#view-a-backlog-or-portfolio-backlog)に関する記事を参照してください。 このビューからは簡単に、導入ライフサイクルの現在のフェーズを完了するために必要な作業を計画および管理できます。
+クラウド導入計画の最もわかりやすいビューは、**エピック** バックログ ビューです。 **エピック** バックログ ビューへの変更については、[バックログの表示](/azure/devops/boards/backlogs/define-features-epics#view-a-backlog-or-portfolio-backlog)に関する記事を参照してください。 このビューからは簡単に、導入ライフサイクルの現在のフェーズを完了するために必要な作業を計画および管理できます。
 
 > [!NOTE]
 > クラウド導入計画の現在の状態は、移行作業に重点を置いています。 ガバナンス、イノベーション、または操作に関連したタスクは、手動で設定する必要があります。

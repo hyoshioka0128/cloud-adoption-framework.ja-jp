@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 65f00331e7358466b05f25ed8d48775d251c8aed
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d0a0b6b425b3f1c3ca6c5d2f2a8fc7d4819b8a11
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024485"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116089"
 ---
 # <a name="plan-for-cloud-adoption"></a>クラウド導入のための計画
 
@@ -39,7 +39,7 @@ ms.locfileid: "97024485"
 2. **ワークロードを定義し、優先順位を付ける:** 最初の導入バックログを設定するために、最初の 10 個のワークロードに優先順位を付けます。
 3. **ワークロードに合わせて資産を調整する:** 優先順位付けされたワークロードに対応するために必要な資産 (提案されたものか既存のもの) を特定します。
 4. **合理化決定を見直す:** 合理化決定を見直し、移行またはイノベーションの導入パスの決定を微調整します。
-5. **イテレーション計画とリリース計画の確立:** "_イテレーション_" は、作業を実行するために割り当てられた時間ブロックです。 "_リリース_" は、生産プロセスへの変更をトリガーする前に行うべき作業の定義です。
+5. **イテレーション計画とリリース計画の確立:** "*イテレーション*" は、作業を実行するために割り当てられた時間ブロックです。 "*リリース*" は、生産プロセスへの変更をトリガーする前に行うべき作業の定義です。
 6. **タイムラインを見積もる:** 最初の見積もりに基づいて、リリース計画のための大まかなタイムラインを設定します。
 
 ## <a name="next-steps"></a>次のステップ

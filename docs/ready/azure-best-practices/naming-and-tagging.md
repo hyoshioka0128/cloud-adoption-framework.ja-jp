@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: 29b6f4d8528e3f8ecd531f33fce791d07cb9f26c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 027504b257fc05e58c42329b78c1e4c8fe91f50b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024366"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115783"
 ---
 # <a name="develop-your-naming-and-tagging-strategy-for-azure-resources"></a>Azure リソースの名前付けおよびタグ付けの戦略を作成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "97024366"
 
 ## <a name="purpose-of-naming-and-tagging"></a>名前付けおよびタグ付けの目的
 
-セキュリティ上の理由から、リソースを正確に表現し、名前を付けることは不可欠です。 セキュリティ インシデントが発生した場合に、影響を受けるシステム、それらのシステムがサポートする機能、およびビジネスへの影響の可能性を迅速に特定することが非常に重要です。 [Azure Security Center](/azure/security-center/security-center-introduction) や [Azure Sentinel](/azure/sentinel) などのセキュリティ サービスは、リソースと、リソース名によって関連付けられているログおよびアラート情報を参照します。
+セキュリティ上の理由から、リソースを正確に表現し、名前を付けることは不可欠です。 セキュリティ インシデントが発生した場合に、影響を受けるシステム、それらのシステムがサポートする機能、およびビジネスへの影響の可能性を迅速に特定することが非常に重要です。 [Azure Security Center](/azure/security-center/security-center-introduction) や [Azure Sentinel](/azure/sentinel/) などのセキュリティ サービスは、リソースと、リソース名によって関連付けられているログおよびアラート情報を参照します。
 
 Azure では、[Azure リソースの名前付け規則と制限事項](/azure/azure-resource-manager/management/resource-name-rules)が定義されています。 このガイダンスでは、エンタープライズ クラウドの導入作業を支援するための詳細な推奨事項について説明します。
 

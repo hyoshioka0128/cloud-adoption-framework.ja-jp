@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 3bd66ccd89a150b2719732b558ffa4879162b099
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: fdb560227db780e02f5b822685610a594a5fcea4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016546"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114712"
 ---
 # <a name="business-criticality-in-cloud-management"></a>クラウド管理におけるビジネスの重要度
 
@@ -54,7 +54,7 @@ IT ポートフォリオ内の各ワークロードの重要度を理解する�
 
 ポートフォリオ内のすべてのワークロードの最初のレビューには時間がかかる場合があります。 この取り組みが、より広範なクラウド戦略の妨げにならないように、すべてのワークロードに適用する既定の重要度についてチームが合意することをお勧めします。
 
-前述の重要度スケールの表に基づいて、重要度 "_中_" を既定値として採用することをお勧めします。 そうすることで、クラウド戦略チームは、より高いレベルの重要度を必要とするワークロードをすばやく特定できます。
+前述の重要度スケールの表に基づいて、重要度 "*中*" を既定値として採用することをお勧めします。 そうすることで、クラウド戦略チームは、より高いレベルの重要度を必要とするワークロードをすばやく特定できます。
 
 ## <a name="use-the-template"></a>テンプレートを使用する
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, setup
-ms.openlocfilehash: 4da0e4598c91c971a0ed5112b2a3767e272c07a5
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: c577c5c0b0362ff1c8dcc51e38d97d17450bd5bf
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632428"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115426"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 
@@ -28,7 +28,7 @@ ms.locfileid: "100632428"
 
 Azure には、管理グループ、サブスクリプション、リソース グループ、およびリソースという 4 つのレベルの管理スコープが用意されています。 次の図に、これらのレベルの関係を示します。
 
-   ![管理階層レベルの関係を示す図](./media/organize-resources/scope-levels.png) _図 1: 4 つの管理スコープ レベルが相互にどのように関連しているか。_
+   ![管理階層レベルの関係を示す図](./media/organize-resources/scope-levels.png) *図 1: 4 つの管理スコープ レベルが相互にどのように関連しているか。*
 
 - **管理グループ:** これらのグループは、複数のサブスクリプションのアクセス、ポリシー、コンプライアンスを管理するのに役立つコンテナーです。 管理グループ内のすべてのサブスクリプションは、管理グループに適用された条件を自動的に継承します。
 - **サブスクリプション:** サブスクリプションでは、ユーザー アカウントと、それらのユーザー アカウントによって作成されたリソースが論理的に関連付けられます。 各サブスクリプションには、作成して使用できるリソース量に対する制限やクォータがあります。 組織では、ユーザー、チーム、またはプロジェクトによって作成されるリソースとコストを管理するためにサブスクリプションを使用できます。
@@ -86,7 +86,7 @@ Azure には、管理グループ、サブスクリプション、リソース �
 - [初期サブスクリプションを作成する](../azure-best-practices/initial-subscriptions.md)
 - [追加の Azure サブスクリプションを作成して、Azure 環境をスケーリングする](../azure-best-practices/scale-subscriptions.md)
 - [Azure サブスクリプションを整理および管理する](../azure-best-practices/organize-subscriptions.md)
-- [Azure 管理グループでリソースを整理する](/azure/azure-resource-manager/management-groups-overview)
+- [Azure 管理グループでリソースを整理する](/azure/governance/management-groups/overview)
 - [Azure でのリソース アクセス管理について](../../govern/resource-consistency/resource-access-management.md)
 - [サブスクリプション サービスの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits)
 

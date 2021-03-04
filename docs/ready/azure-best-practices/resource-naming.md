@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: b7ddc0641e1aaecf2828e74234c0daf5c9b1216b
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 5250b4b3876516bbc3239477435cc08adc59494e
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101786177"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115749"
 ---
 # <a name="define-your-naming-convention"></a>名前付け規則を定義する
 
@@ -21,7 +21,7 @@ ms.locfileid: "101786177"
 
 ![Azure リソース名のコンポーネント](../../_images/ready/resource-naming.png)
 
-_図 1:Azure リソース名のコンポーネント。_
+*図 1:Azure リソース名のコンポーネント。*
 
 ## <a name="naming-scope"></a>名前付けスコープ
 
@@ -33,7 +33,7 @@ _図 1:Azure リソース名のコンポーネント。_
 
 ![Azure リソース名のスコープ レベル](../../_images/ready/resource-naming-scope.png)
 
-_図 2:Azure リソース名のスコープ レベル。_
+*図 2:Azure リソース名のスコープ レベル。*
 
 リソース名には長さの制限があります。 名前付け規則を作成するときに、名前に埋め込まれるコンテキストと、そのスコープおよび長さの制限のバランスをとることが重要です。 詳細については、「[Azure リソースの名前付け規則と制限事項](/azure/azure-resource-manager/management/resource-name-rules)」を参照してください。
 
@@ -76,93 +76,93 @@ _図 2:Azure リソース名のスコープ レベル。_
 
 | 資産の種類 | Scope | 形式と例 |
 |--|--|--|
-| **管理グループ** | 事業単位および/または <br> 環境の種類 | _mg-\<business unit>[-\<environment type>]_ <br><br> <li> `mg-mktg` <li> `mg-hr` <li> `mg-corp-prod` <li> `mg-fin-client` |
-| **サブスクリプション** | アカウント/エンタープライズ契約 | _\<business&nbsp;unit>-\<subscription&nbsp;type>-\<###>_ <br><br> <li> `mktg-prod-001` <li> `corp-shared-001` <li> `fin-client-001` |
-| **リソース グループ** | サブスクリプション | _rg-\<app&nbsp;or&nbsp;service&nbsp;name>-<subscription&nbsp;type>-\<###>_ <br><br> <li> `rg-mktgsharepoint-prod-001` <li> `rg-acctlookupsvc-shared-001` <li> `rg-ad-dir-services-shared-001` |
-| **API 管理サービス インスタンス** | グローバル | _apim-\<app&nbsp;or&nbsp;service&nbsp;name>_ <br><br> `apim-navigator-prod` |
-| **管理対象 ID** | リソース グループ | _id-\<app&nbsp;or&nbsp;service&nbsp;name>_ <br><br> <li> `id-appcn-keda-prod-eastus2-001` |
+| **管理グループ** | 事業単位および/または <br> 環境の種類 | *mg-\<business unit>[-\<environment type>]* <br><br> <li> `mg-mktg` <li> `mg-hr` <li> `mg-corp-prod` <li> `mg-fin-client` |
+| **サブスクリプション** | アカウント/エンタープライズ契約 | *\<business&nbsp;unit>-\<subscription&nbsp;type>-\<###>* <br><br> <li> `mktg-prod-001` <li> `corp-shared-001` <li> `fin-client-001` |
+| **リソース グループ** | サブスクリプション | *rg-\<app&nbsp;or&nbsp;service&nbsp;name>-<subscription&nbsp;type>-\<###>* <br><br> <li> `rg-mktgsharepoint-prod-001` <li> `rg-acctlookupsvc-shared-001` <li> `rg-ad-dir-services-shared-001` |
+| **API 管理サービス インスタンス** | グローバル | *apim-\<app&nbsp;or&nbsp;service&nbsp;name>* <br><br> `apim-navigator-prod` |
+| **管理対象 ID** | リソース グループ | *id-\<app&nbsp;or&nbsp;service&nbsp;name>* <br><br> <li> `id-appcn-keda-prod-eastus2-001` |
 
 ## <a name="example-names-networking"></a>名前の例:ネットワーク
 
 | 資産の種類 | Scope | 形式と例 |
 |--|--|--|
-| **仮想ネットワーク** | リソース グループ | _vnet-\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `vnet-shared-eastus2-001` <li> `vnet-prod-westus-001` <li> `vnet-client-eastus2-001` |
-| **サブネット** | 仮想ネットワーク | _snet-\<subscription>-\<region>-\<###>_ <br><br> <li> `snet-shared-eastus2-001` <li> `snet-prod-westus-001` <li> `snet-client-eastus2-001` |
-| **ネットワーク インターフェイス (NIC)** | リソース グループ | _nic-<##>-\<vm&nbsp;name>-\<subscription>-\<###>_ <br><br> <li> `nic-01-dc1-shared-001` <li> `nic-02-vmhadoop1-prod-001` <li> `nic-02-vmtest1-client-001` |
-| **パブリック IP アドレス** | リソース グループ | _pip-\<vm&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<environment>-\<region>-\<###>_ <br><br> <li> `pip-dc1-shared-eastus2-001` <li> `pip-hadoop-prod-westus-001` |
-| **Load Balancer** | リソース グループ | _lb-\<app&nbsp;name&nbsp;or&nbsp;role>-<environment>-\<###>_ <br><br> <li> `lb-navigator-prod-001` <li> `lb-sharepoint-dev-001` |
-| **ネットワーク セキュリティ グループ (NSG)** | サブネットまたは NIC | _nsg-\<policy&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<###>_ <br><br> <li> `nsg-weballow-001` <li> `nsg-rdpallow-001` <li> `nsg-sqlallow-001` <li> `nsg-dnsblocked-001` |
-| **ローカル ネットワーク ゲートウェイ** | 仮想ゲートウェイ | _lgw-\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `lgw-shared-eastus2-001` <li> `lgw-prod-westus-001` <li> `lgw-client-eastus2-001` |
-| **仮想ネットワーク ゲートウェイ** | 仮想ネットワーク | _vgw-\<subscription&nbsp;type>-\<region>-\<###>_ <br><br> <li> `vgw-shared-eastus2-001` <li> `vgw-prod-westus-001` <li> `vgw-client-eastus2-001` |
-| **サイト間接続** | リソース グループ | _cn-\<local&nbsp;gateway&nbsp;name>-to-\<virtual&nbsp;gateway&nbsp;name>_ <br><br> <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001` <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-westus-001` |
-| **VPN 接続** | リソース グループ | _cn-\<subscription1>-\<region1>-to-\<subscription2>-\<region2>-_ <br><br> <li> `cn-shared-eastus2-to-shared-westus` <li> `cn-prod-eastus2-to-prod-westus` |
-| **ルート テーブル** | リソース グループ | _route-\<route&nbsp;table&nbsp;name>_ <br><br> <li> `route-navigator` <li> `route-sharepoint` |
-| **DNS ラベル** | グローバル | _\<DNS&nbsp;A&nbsp;record&nbsp;for&nbsp;VM>.\<region>.cloudapp.azure.com_ <br><br> <li> `dc1.westus.cloudapp.azure.com` <li> `web1.eastus2.cloudapp.azure.com` |
+| **仮想ネットワーク** | リソース グループ | *vnet-\<subscription&nbsp;type>-\<region>-\<###>* <br><br> <li> `vnet-shared-eastus2-001` <li> `vnet-prod-westus-001` <li> `vnet-client-eastus2-001` |
+| **サブネット** | 仮想ネットワーク | *snet-\<subscription>-\<region>-\<###>* <br><br> <li> `snet-shared-eastus2-001` <li> `snet-prod-westus-001` <li> `snet-client-eastus2-001` |
+| **ネットワーク インターフェイス (NIC)** | リソース グループ | *nic-<##>-\<vm&nbsp;name>-\<subscription>-\<###>* <br><br> <li> `nic-01-dc1-shared-001` <li> `nic-02-vmhadoop1-prod-001` <li> `nic-02-vmtest1-client-001` |
+| **パブリック IP アドレス** | リソース グループ | *pip-\<vm&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<environment>-\<region>-\<###>* <br><br> <li> `pip-dc1-shared-eastus2-001` <li> `pip-hadoop-prod-westus-001` |
+| **Load Balancer** | リソース グループ | *lb-\<app&nbsp;name&nbsp;or&nbsp;role>-<environment>-\<###>* <br><br> <li> `lb-navigator-prod-001` <li> `lb-sharepoint-dev-001` |
+| **ネットワーク セキュリティ グループ (NSG)** | サブネットまたは NIC | *nsg-\<policy&nbsp;name&nbsp;or&nbsp;app&nbsp;name>-\<###>* <br><br> <li> `nsg-weballow-001` <li> `nsg-rdpallow-001` <li> `nsg-sqlallow-001` <li> `nsg-dnsblocked-001` |
+| **ローカル ネットワーク ゲートウェイ** | 仮想ゲートウェイ | *lgw-\<subscription&nbsp;type>-\<region>-\<###>* <br><br> <li> `lgw-shared-eastus2-001` <li> `lgw-prod-westus-001` <li> `lgw-client-eastus2-001` |
+| **仮想ネットワーク ゲートウェイ** | 仮想ネットワーク | *vgw-\<subscription&nbsp;type>-\<region>-\<###>* <br><br> <li> `vgw-shared-eastus2-001` <li> `vgw-prod-westus-001` <li> `vgw-client-eastus2-001` |
+| **サイト間接続** | リソース グループ | *cn-\<local&nbsp;gateway&nbsp;name>-to-\<virtual&nbsp;gateway&nbsp;name>* <br><br> <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001` <li> `cn-lgw-shared-eastus2-001-to-vgw-shared-westus-001` |
+| **VPN 接続** | リソース グループ | *cn-\<subscription1>-\<region1>-to-\<subscription2>-\<region2>-* <br><br> <li> `cn-shared-eastus2-to-shared-westus` <li> `cn-prod-eastus2-to-prod-westus` |
+| **ルート テーブル** | リソース グループ | *route-\<route&nbsp;table&nbsp;name>* <br><br> <li> `route-navigator` <li> `route-sharepoint` |
+| **DNS ラベル** | グローバル | *\<DNS&nbsp;A&nbsp;record&nbsp;for&nbsp;VM>.\<region>.cloudapp.azure.com* <br><br> <li> `dc1.westus.cloudapp.azure.com` <li> `web1.eastus2.cloudapp.azure.com` |
 
 ## <a name="example-names-compute-and-web"></a>名前の例:コンピューティングと Web
 
 | 資産の種類 | Scope | 形式と例 |
 |--|--|--|
-| **仮想マシン** | リソース グループ | _vm\<policy name or app name>\<###>_ <br><br> <li> `vmnavigator001` <li> `vmsharepoint001` <li> `vmsqlnode001` <li> `vmhadoop001` |
-| **VM ストレージ アカウント** | グローバル | _stvm\<performance type>\<app name or prod name>\<region>\<###>_ <br><br> <li> `stvmstcoreeastus2001` <li> `stvmpmcoreeastus2001` <li> `stvmstplmeastus2001` <li> `stvmsthadoopeastus2001` |
-| **Web アプリ** | グローバル | _app-\<app name>-\<environment>-\<###>.azurewebsites.net_ <br><br> <li> `app-navigator-prod-001.azurewebsites.net` <li> `app-accountlookup-dev-001.azurewebsites.net` |
-| **関数アプリ** | グローバル | _func-\<app name>-\<environment>-\<###>.azurewebsites.net_ <br><br> <li> `func-navigator-prod-001.azurewebsites.net` <li> `func-accountlookup-dev-001.azurewebsites.net` |
-| **クラウド サービス** | グローバル | _cld-\<app name>-\<environment>-\<###>.cloudapp.net}_ <br><br> <li> `cld-navigator-prod-001.azurewebsites.net` <li> `cld-accountlookup-dev-001.azurewebsites.net` |
-| **Notification Hubs 名前空間** | グローバル | _ntfns-\<app name>-\<environment>_ <br><br> <li> `ntfns-navigator-prod` <li> `ntfns-emissions-dev` |
-| **通知ハブ** | Notification Hubs 名前空間 | _ntf-\<app name>-\<environment>_ <br><br> <li> `ntf-navigator-prod` <li> `ntf-emissions-dev` |
+| **仮想マシン** | リソース グループ | *vm\<policy name or app name>\<###>* <br><br> <li> `vmnavigator001` <li> `vmsharepoint001` <li> `vmsqlnode001` <li> `vmhadoop001` |
+| **VM ストレージ アカウント** | グローバル | *stvm\<performance type>\<app name or prod name>\<region>\<###>* <br><br> <li> `stvmstcoreeastus2001` <li> `stvmpmcoreeastus2001` <li> `stvmstplmeastus2001` <li> `stvmsthadoopeastus2001` |
+| **Web アプリ** | グローバル | *app-\<app name>-\<environment>-\<###>.azurewebsites.net* <br><br> <li> `app-navigator-prod-001.azurewebsites.net` <li> `app-accountlookup-dev-001.azurewebsites.net` |
+| **関数アプリ** | グローバル | *func-\<app name>-\<environment>-\<###>.azurewebsites.net* <br><br> <li> `func-navigator-prod-001.azurewebsites.net` <li> `func-accountlookup-dev-001.azurewebsites.net` |
+| **クラウド サービス** | グローバル | *cld-\<app name>-\<environment>-\<###>.cloudapp.net}* <br><br> <li> `cld-navigator-prod-001.azurewebsites.net` <li> `cld-accountlookup-dev-001.azurewebsites.net` |
+| **Notification Hubs 名前空間** | グローバル | *ntfns-\<app name>-\<environment>* <br><br> <li> `ntfns-navigator-prod` <li> `ntfns-emissions-dev` |
+| **通知ハブ** | Notification Hubs 名前空間 | *ntf-\<app name>-\<environment>* <br><br> <li> `ntf-navigator-prod` <li> `ntf-emissions-dev` |
 
 ## <a name="example-names-databases"></a>名前の例:データベース
 
 | 資産の種類 | Scope | 形式と例 |
 |--|--|--|
-| **Azure SQL Database サーバー** | グローバル | _sql-\<app name>-\<environment>_ <br><br> <li> `sql-navigator-prod` <li> `sql-emissions-dev` |
-| **Azure SQL データベース** | Azure SQL Database | _sqldb-\<database name>-\<environment>_ <br><br> <li> `sqldb-users-prod` <li> `sqldb-users-dev` |
-| **Azure Cosmos DB データベース** | グローバル | _cosmos-\<app name>-\<environment>_ <br><br> <li> `cosmos-navigator-prod` <li> `cosmos-emissions-dev` |
-| **Azure Cache for Redis インスタンス** | グローバル | _redis-\<app name>-\<environment>_ <br><br> <li> `redis-navigator-prod` <li> `redis-emissions-dev` |
-| **MySQL データベース** | グローバル | _mysql-\<app name>-\<environment>_ <br><br> <li> `mysql-navigator-prod` <li> `mysql-emissions-dev` |
-| **PostgreSQL データベース** | グローバル | _psql-\<app name>-\<environment>_ <br><br> <li> `psql-navigator-prod` <li> `psql-emissions-dev` |
-| **Azure SQL Data Warehouse** | グローバル | _sqldw-\<app name>-\<environment>_ <br><br> <li> `sqldw-navigator-prod` <li> `sqldw-emissions-dev` |
-| **SQL Server Stretch Database** | Azure SQL Database | _sqlstrdb-\<app name>-\<environment>_ <br><br> <li> `sqlstrdb-navigator-prod` <li> `sqlstrdb-emissions-dev` |
+| **Azure SQL Database サーバー** | グローバル | *sql-\<app name>-\<environment>* <br><br> <li> `sql-navigator-prod` <li> `sql-emissions-dev` |
+| **Azure SQL データベース** | Azure SQL Database | *sqldb-\<database name>-\<environment>* <br><br> <li> `sqldb-users-prod` <li> `sqldb-users-dev` |
+| **Azure Cosmos DB データベース** | グローバル | *cosmos-\<app name>-\<environment>* <br><br> <li> `cosmos-navigator-prod` <li> `cosmos-emissions-dev` |
+| **Azure Cache for Redis インスタンス** | グローバル | *redis-\<app name>-\<environment>* <br><br> <li> `redis-navigator-prod` <li> `redis-emissions-dev` |
+| **MySQL データベース** | グローバル | *mysql-\<app name>-\<environment>* <br><br> <li> `mysql-navigator-prod` <li> `mysql-emissions-dev` |
+| **PostgreSQL データベース** | グローバル | *psql-\<app name>-\<environment>* <br><br> <li> `psql-navigator-prod` <li> `psql-emissions-dev` |
+| **Azure SQL Data Warehouse** | グローバル | *sqldw-\<app name>-\<environment>* <br><br> <li> `sqldw-navigator-prod` <li> `sqldw-emissions-dev` |
+| **SQL Server Stretch Database** | Azure SQL Database | *sqlstrdb-\<app name>-\<environment>* <br><br> <li> `sqlstrdb-navigator-prod` <li> `sqlstrdb-emissions-dev` |
 
 ## <a name="example-names-storage"></a>名前の例:ストレージ
 
 | 資産の種類 | Scope | 形式と例 |
 |--|--|--|
-| **ストレージ アカウント (全般)** | グローバル | _st\<storage name>\<###>_ <br><br> <li> `stnavigatordata001` <li> `stemissionsoutput001` |
-| **Storage アカウント (診断ログ)** | グローバル | _stdiag\<first 2 letters of subscription name and number>\<region>\<###>_ <br><br> <li> `stdiagsh001eastus2001` <li> `stdiagsh001westus001` |
-| **Azure StorSimple** | グローバル | _ssimp\<app name>-\<environment>_ <br><br> <li> `ssimpnavigatorprod` <li> `ssimpemissionsdev` |
-| **Azure Container Registry** | グローバル | _acr\<app name>\<environment>\<###>_ <br><br> <li> `acrnavigatorprod001` |
+| **ストレージ アカウント (全般)** | グローバル | *st\<storage name>\<###>* <br><br> <li> `stnavigatordata001` <li> `stemissionsoutput001` |
+| **Storage アカウント (診断ログ)** | グローバル | *stdiag\<first 2 letters of subscription name and number>\<region>\<###>* <br><br> <li> `stdiagsh001eastus2001` <li> `stdiagsh001westus001` |
+| **Azure StorSimple** | グローバル | *ssimp\<app name>-\<environment>* <br><br> <li> `ssimpnavigatorprod` <li> `ssimpemissionsdev` |
+| **Azure Container Registry** | グローバル | *acr\<app name>\<environment>\<###>* <br><br> <li> `acrnavigatorprod001` |
 
 ## <a name="example-names-ai-and-machine-learning"></a>名前の例:AI と機械学習
 
 | 資産の種類 | Scope | 形式と例 |
 |--|--|--|
-| **Azure Cognitive Search** | グローバル | _srch-\<app name>-\<environment>_ <br><br> <li> `srch-navigator-prod` <li> `srch-emissions-dev` |
-| **Azure Cognitive Services** | リソース グループ | _cog-\<app name>-\<environment>_ <br><br> <li> `cog-navigator-prod` <li> `cog-emissions-dev` |
-| **Azure Machine Learning ワークスペース** | リソース グループ | _mlw-\<app name>-\<environment>_ <br><br> <li> `mlw-navigator-prod` <li> `mlw-emissions-dev` |
+| **Azure Cognitive Search** | グローバル | *srch-\<app name>-\<environment>* <br><br> <li> `srch-navigator-prod` <li> `srch-emissions-dev` |
+| **Azure Cognitive Services** | リソース グループ | *cog-\<app name>-\<environment>* <br><br> <li> `cog-navigator-prod` <li> `cog-emissions-dev` |
+| **Azure Machine Learning ワークスペース** | リソース グループ | *mlw-\<app name>-\<environment>* <br><br> <li> `mlw-navigator-prod` <li> `mlw-emissions-dev` |
 
 ## <a name="example-names-analytics-and-iot"></a>名前の例:Analytics と IoT
 
 | 資産の種類 | Scope | 形式と例 |
 |--|--|--|
-| **Azure Data Factory** | グローバル | _adf-\<app name>\<environment>_ <br><br> <li> `adf-navigator-prod` <li> `adf-emissions-dev` |
-| **Azure Stream Analytics** | リソース グループ | _asa-\<app name>-\<environment>_ <br><br> <li> `asa-navigator-prod` <li> `asa-emissions-dev` |
-| **Data Lake Analytics アカウント** | グローバル | _dla\<app name>\<environment>_ <br><br> <li> `dlanavigatorprod` <li> `dlanavigatorprod` |
-| **Data Lake Storage アカウント** | グローバル | _dls\<app name>\<environment>_ <br><br> <li> `dlsnavigatorprod` <li> `dlsemissionsdev` |
-| **イベント ハブ** | グローバル | _evh-\<app name>-\<environment>_ <br><br> <li> `evh-navigator-prod` <li> `evh-emissions-dev` |
-| **HDInsight - HBase クラスター** | グローバル | _hbase-\<app name>-\<environment>_ <br><br> <li> `hbase-navigator-prod` <li> `hbase-emissions-dev` |
-| **HDInsight - Hadoop クラスター** | グローバル | _hadoop-\<app name>-\<environment>_ <br><br> <li> `hadoop-navigator-prod` <li> `hadoop-emissions-dev` |
-| **HDInsight - Spark クラスター** | グローバル | _spark-\<app name>-\<environment>_ <br><br> <li> `spark-navigator-prod` <li> `spark-emissions-dev` |
-| **IoT ハブ** | グローバル | _iot-\<app name>-\<environment>_ <br><br> <li> `iot-navigator-prod` <li> `iot-emissions-dev` |
-| **Power BI Embedded** | グローバル | _pbi-\<app name>-\<environment>_ <br><br> <li> `pbi-navigator-prod` <li> `pbi-emissions-dev` |
+| **Azure Data Factory** | グローバル | *adf-\<app name>\<environment>* <br><br> <li> `adf-navigator-prod` <li> `adf-emissions-dev` |
+| **Azure Stream Analytics** | リソース グループ | *asa-\<app name>-\<environment>* <br><br> <li> `asa-navigator-prod` <li> `asa-emissions-dev` |
+| **Data Lake Analytics アカウント** | グローバル | *dla\<app name>\<environment>* <br><br> <li> `dlanavigatorprod` <li> `dlanavigatorprod` |
+| **Data Lake Storage アカウント** | グローバル | *dls\<app name>\<environment>* <br><br> <li> `dlsnavigatorprod` <li> `dlsemissionsdev` |
+| **イベント ハブ** | グローバル | *evh-\<app name>-\<environment>* <br><br> <li> `evh-navigator-prod` <li> `evh-emissions-dev` |
+| **HDInsight - HBase クラスター** | グローバル | *hbase-\<app name>-\<environment>* <br><br> <li> `hbase-navigator-prod` <li> `hbase-emissions-dev` |
+| **HDInsight - Hadoop クラスター** | グローバル | *hadoop-\<app name>-\<environment>* <br><br> <li> `hadoop-navigator-prod` <li> `hadoop-emissions-dev` |
+| **HDInsight - Spark クラスター** | グローバル | *spark-\<app name>-\<environment>* <br><br> <li> `spark-navigator-prod` <li> `spark-emissions-dev` |
+| **IoT ハブ** | グローバル | *iot-\<app name>-\<environment>* <br><br> <li> `iot-navigator-prod` <li> `iot-emissions-dev` |
+| **Power BI Embedded** | グローバル | *pbi-\<app name>-\<environment>* <br><br> <li> `pbi-navigator-prod` <li> `pbi-emissions-dev` |
 
 ## <a name="example-names-integration"></a>名前の例:統合
 
 | 資産の種類 | Scope | 形式と例|
 |--|--|--|
-| **Service Bus** | グローバル | _sb-\<app name>-\<environment>.servicebus.windows.net_ <br><br> <li> `sb-navigator-prod` <li> `sb-emissions-dev` |
-| **Service Bus キュー** | Service Bus | _sbq-\<query descriptor>_ <br><br> <li> `sbq-messagequery` |
-| **Service Bus トピック** | Service Bus | _sbt-\<query descriptor>_ <br><br> <li> `sbt-messagequery` |
+| **Service Bus** | グローバル | *sb-\<app name>-\<environment>.servicebus.windows.net* <br><br> <li> `sb-navigator-prod` <li> `sb-emissions-dev` |
+| **Service Bus キュー** | Service Bus | *sbq-\<query descriptor>* <br><br> <li> `sbq-messagequery` |
+| **Service Bus トピック** | Service Bus | *sbt-\<query descriptor>* <br><br> <li> `sbt-messagequery` |
 
 ## <a name="next-steps"></a>次のステップ
 

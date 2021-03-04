@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 332a4b29888ba576a2614d4d3f14fa528de31a10
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e440d87481221067c790aaba79e10cc45a182356
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024502"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116140"
 ---
 # <a name="initial-organization-alignment"></a>初期の組織配置
 
@@ -25,7 +25,7 @@ ms.locfileid: "97024502"
 
 ## <a name="initial-best-practice-structure"></a>初期のベスト プラクティス構造
 
-スピードとコントロールのバランスを取るために Microsoft は、クラウド導入時に少なくとも、"_クラウド導入_" と "_クラウド ガバナンス_" に対して説明責任を持つ人材を用意することを推奨しています。 これは、それぞれの領域 ("_機能_") について責任を共有する人々から成る 1 つのチームとすることができます。 また、結果と作業の両方に責任を持つ個人とすることもできます。 どちらのシナリオでも、クラウド導入とクラウド ガバナンスは、迅速な移行とリスクの軽減との間で自然な摩擦を伴う 2 つの機能です。 次の図は、2 つのチームがどのような関係になるかを示しています。
+スピードとコントロールのバランスを取るために Microsoft は、クラウド導入時に少なくとも、"*クラウド導入*" と "*クラウド ガバナンス*" に対して説明責任を持つ人材を用意することを推奨しています。 これは、それぞれの領域 ("*機能*") について責任を共有する人々から成る 1 つのチームとすることができます。 また、結果と作業の両方に責任を持つ個人とすることもできます。 どちらのシナリオでも、クラウド導入とクラウド ガバナンスは、迅速な移行とリスクの軽減との間で自然な摩擦を伴う 2 つの機能です。 次の図は、2 つのチームがどのような関係になるかを示しています。
 
 ![クラウドのセンター オブ エクセレンスによるクラウド導入](../_images/ready/org-ready-best-practice.png)
 
