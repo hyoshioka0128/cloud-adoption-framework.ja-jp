@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 171264fae5d3d90f944b0726bcf90a60ab973247
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.openlocfilehash: e2594818c6498c23ba7a1ec9ba551ce2d515fc26
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492699"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787656"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウドのイノベーション
 
@@ -42,8 +42,8 @@ ms.locfileid: "100492699"
 
 ここでは、クラウド導入フレームワークのイノベーション手法と一致する Microsoft Learn のロール固有のラーニング パスの例をいくつか示します。
 
-[Azure でコンテナーを管理する](/learn/paths/administer-containers-in-azure)Azure Container Instances は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、Azure Container Instances を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
+[Azure でコンテナーを管理する](/learn/paths/administer-containers-in-azure/)Azure Container Instances は、Azure でコンテナーを実行する最も迅速かつ簡単な方法です。 このラーニング パスでは、コンテナーを作成および管理する方法と、Azure Container Instances を使用して Kubernetes に柔軟なスケールを提供する方法について説明します。
 
-[サーバーレス アプリケーションの作成](/learn/paths/create-serverless-applications): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を使用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
+[サーバーレス アプリケーションの作成](/learn/paths/create-serverless-applications/): Azure Functions によって、さまざまな外部イベントによってトリガーされるイベントドリブンのコンピューティングオンデマンドシステムの作成が可能になります。 関数を使用してサーバー側のロジックを実行し、サーバーレス アーキテクチャを構築する方法について説明します。
 
-追加のラーニング パスについては、[Microsoft Learn のカタログ](/learn/browse)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+追加のラーニング パスについては、[Microsoft Learn のカタログ](/learn/browse/)を参照してください。 **[ロール]** フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

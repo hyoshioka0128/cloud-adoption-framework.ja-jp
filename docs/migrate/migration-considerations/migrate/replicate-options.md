@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: b455cfe253aecd8187e026bac88d902422650cc7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 858ae7a6c9ebfa63af0148088bd51de3bd04334a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025131"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788438"
 ---
 # <a name="replication-options"></a>レプリケーション オプション
 
@@ -30,7 +30,7 @@ ms.locfileid: "97025131"
 - **他のクラウドから Azure への移行。** 他のクラウド プロバイダーでプロビジョニングされたコンピューティング インスタンスを Azure VM に移行できます。 Site Recovery では、それらのインスタンスは移行目的の物理サーバーとして扱われます。
 
 ![Azure Site Recovery](../../../_images/migrate/asr-replication-image.png)
-_図 1:資産を Azure または他のクラウドに移動している Azure Site Recovery。_
+*図 1:資産を Azure または他のクラウドに移動している Azure Site Recovery。*
 
 移行についてオンプレミスおよびクラウドのインフラストラクチャを評価した後は、移行戦略でオンプレミス マシンをレプリケートするときに Azure Site Recovery が役に立ちます。 次の簡単な手順で、オンプレミス VM、物理サーバー、クラウド VM インスタンスの Azure への移行を設定できます。
 

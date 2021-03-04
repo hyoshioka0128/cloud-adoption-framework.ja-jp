@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: eb8ef62a66210842d3329e4ad0606a3fc66ec1dd
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: feebe11b48b028c17a1a179a9c4af162c882ccb6
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024944"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788353"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>文化的な複雑さに備える:役割と責任の整合
 
@@ -50,7 +50,7 @@ ms.locfileid: "97024944"
 |---------|---------|---------|---------|
 | 前提条件 | デジタル資産 | ビジネス成果に基づいて、基本的な前提条件に既存のインベントリを整合させます。 | クラウド戦略チーム |
 | 前提条件 | 移行バックログ | 移行される一連のワークロードに優先順位を付けます。 | クラウド戦略チーム |
-| アクセス | アーキテクチャ | 使用状況メトリックに基づいてターゲット アーキテクチャを定義するために、初期の前提条件を見直します。 | クラウド導入チーム |
+| アクセス | Architecture | 使用状況メトリックに基づいてターゲット アーキテクチャを定義するために、初期の前提条件を見直します。 | クラウド導入チーム |
 | アクセス | 承認 | 提案されたアーキテクチャを承認します。 | クラウド戦略チーム |
 | 移行 | レプリケーションへのアクセス | レプリケーション プロセスを確立するために、既存のオンプレミス ホストと資産にアクセスします。 | クラウド導入チーム |
 | 最適化 | Ready | 昇格の前に、システムがパフォーマンスとコストの要件を満たすことを検証します。 | クラウド導入チーム |

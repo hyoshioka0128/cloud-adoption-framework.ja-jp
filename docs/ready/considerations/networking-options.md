@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: f800b897070f363559b4314e8a067e802e0abcec
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 150ca96f40f6a2d068f837402f50f6e617e3ef5a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024145"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788693"
 ---
 <!-- cSpell:ignore NVAs VPNs -->
 
@@ -72,7 +72,7 @@ Azure ネットワークは、さまざまなネットワーク機能を提供�
 
 次の表は、これらのパターンでサポートされる主なシナリオをまとめたものです。
 
-| シナリオ  | 推奨されるネットワーク アーキテクチャ                                                  |
+| シナリオ | 推奨されるネットワーク アーキテクチャ |
 | --- | --- |
 | ランディング ゾーンにデプロイされた Azure でホストされるワークロードはすべて完全に PaaS ベースであり、仮想ネットワークを必要とせず、また IaaS リソースを含むより広範囲なクラウド導入作業の一部でもありません。                                                                                                                                                          | [PaaS のみ](../../decision-guides/software-defined-network/paas-only.md)            |
 | Azure でホストされるワークロードは、仮想マシンなどの IaaS ベースのリソースをデプロイするか、そうでない場合は仮想ネットワークを必要としますが、オンプレミス環境への接続は必要ありません。                                                                                                                                                                            | [クラウドネイティブ](../../decision-guides/software-defined-network/cloud-native.md)      |

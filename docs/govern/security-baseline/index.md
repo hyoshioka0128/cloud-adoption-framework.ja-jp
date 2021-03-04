@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 116498f442aae4b3e028ecc1c84d3dbee0bd1f20
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b244492009e80ad2505eb7519c6bf4247971561e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019079"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789373"
 ---
 # <a name="security-baseline-discipline-overview"></a>セキュリティ ベースライン規範の概要
 
@@ -24,7 +24,7 @@ ms.locfileid: "97019079"
 
 この記事では、クラウド ガバナンス戦略の一環としてセキュリティ ベースライン規範を開発する方法について概要を説明します。 このガイドの主な対象読者は、お客様の組織のクラウド アーキテクトおよびお客様のクラウド ガバナンス チームのその他のメンバーです。 この規範から出てくる決定、ポリシー、プロセスには、IT およびセキュリティ チームの該当メンバー (特にネットワーク、暗号化、および ID サービスの実装を担当する技術リーダー) が関与して、議論する必要があります。
 
-適切なセキュリティの決定を下すことは、クラウド デプロイの成功と幅広いビジネスの成功にとって重要です。 お客様の組織内にサイバーセキュリティのエキスパートがいない場合は、この規範の一環として外部のセキュリティ コンサルタントを雇用することを検討してください。 また、この規範に関連する懸案事項を相談するために、[Microsoft コンサルティング サービス](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) クラウド導入サービス、または外部のその他のクラウド導入のエキスパートを雇用することを検討してください。
+適切なセキュリティの決定を下すことは、クラウド デプロイの成功と幅広いビジネスの成功にとって重要です。 お客様の組織内にサイバーセキュリティのエキスパートがいない場合は、この規範の一環として外部のセキュリティ コンサルタントを雇用することを検討してください。 また、この規範に関連する懸案事項を相談するために、[Microsoft コンサルティング サービス](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack/) クラウド導入サービス、または外部のその他のクラウド導入のエキスパートを雇用することを検討してください。
 
 ## <a name="policy-statements"></a>ポリシー ステートメント
 

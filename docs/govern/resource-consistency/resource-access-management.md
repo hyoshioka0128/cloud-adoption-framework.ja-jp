@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 88f91656ad0443db4e6cf150b299dc36f38b2a86
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: bda70153046a2d6f122a5e970a27f724c646c3a6
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712859"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787758"
 ---
 # <a name="resource-access-management-in-azure"></a>Azure でのリソース アクセス管理
 
@@ -46,12 +46,12 @@ Azure "*サブスクリプション*" は、リソース グループとその�
 
 ## <a name="what-is-azure-resource-manager"></a>Azure Resource Manager とは
 
-「[Azure のしくみ](../../get-started/what-is-azure.md)」では、Azure のすべての機能を調整する多数のサービスが Azure のフロントエンドに含まれていることを学習しました。 これらのサービスの 1 つが [Azure Resource Manager](/azure/azure-resource-manager) で、このサービスは、リソースを管理するために、クライアントによって使用される RESTful API をホストしています。
+「[Azure のしくみ](../../get-started/what-is-azure.md)」では、Azure のすべての機能を調整する多数のサービスが Azure のフロントエンドに含まれていることを学習しました。 これらのサービスの 1 つが [Azure Resource Manager](/azure/azure-resource-manager/) で、このサービスは、リソースを管理するために、クライアントによって使用される RESTful API をホストしています。
 
 ![Azure Resource Manager の図](../../_images/govern/design/governance-1-12.png)
 *図 4: Azure Resource Manager。*
 
-次の図は、[PowerShell](/powershell/azure/overview)、[Azure portal](https://portal.azure.com)、および [Azure CLI](/cli/azure) という 3 つのクライアントを示しています。
+次の図は、[PowerShell](/powershell/azure/)、[Azure portal](https://portal.azure.com)、および [Azure CLI](/cli/azure/) という 3 つのクライアントを示しています。
 
 ![Resource Manager REST API に接続する Azure クライアントの図](../../_images/govern/design/governance-1-13.png)
 *図 5:Azure クライアントが Resource Manager REST API に接続する。*
@@ -70,7 +70,7 @@ Azure Resource Manager が、仮想マシン リソースを管理するため�
 
 Azure Resource Manager のしくみがわかったので、Azure サブスクリプションが、Azure Resource Manager によって使用される制御にどのように関連付けられるかという説明に戻りましょう。 Azure Resource Manager によってリソースの管理要求が実行される前に、一連の制御がチェックされます。
 
-最初の制御は、要求が必ず検証済みユーザーによって行われていることです。また、ユーザー ID 機能を提供するために、Azure Resource Manager は [Azure Active Directory (Azure AD)](/azure/active-directory) との間に信頼関係を確保します。
+最初の制御は、要求が必ず検証済みユーザーによって行われていることです。また、ユーザー ID 機能を提供するために、Azure Resource Manager は [Azure Active Directory (Azure AD)](/azure/active-directory/) との間に信頼関係を確保します。
 
 ![Azure Active Directory](../../_images/govern/design/governance-1-16.png)
 *図 8: Azure Active Directory。*
@@ -82,14 +82,14 @@ Azure AD では、ユーザーがテナントにセグメント化されてい�
 
 特定のサブスクリプションでリソースを管理するためのクライアント要求ごとに、関連付けられている Azure AD テナント内にユーザーがアカウントを持っている必要があります。
 
-次の制御では、要求を行うための十分なアクセス許可がユーザーにあることが確認されます。 [Azure ロールベースのアクセス制御 (Azure RBAC)](/azure/role-based-access-control) を使用して、アクセス許可がユーザーに割り当てられます。
+次の制御では、要求を行うための十分なアクセス許可がユーザーにあることが確認されます。 [Azure ロールベースのアクセス制御 (Azure RBAC)](/azure/role-based-access-control/) を使用して、アクセス許可がユーザーに割り当てられます。
 
 ![Azure ロールに割り当てられたユーザー](../../_images/govern/design/governance-1-18.png)
 *図 10:テナントの各ユーザーに 1 つ以上の Azure ロールが割り当てられている。*
 
 Azure ロールでは、特定のリソースに対してユーザーが取得できる一連のアクセス許可が指定されます。 ロールがユーザーに割り当てられると、これらのアクセス許可が適用されます。 たとえば、[組み込みの `owner` ロール](/azure/role-based-access-control/built-in-roles#owner)を使用すると、ユーザーはリソースに対して任意のアクションを実行できます。
 
-次の制御は、[Azure リソース ポリシー](/azure/governance/policy)に適うように指定されている設定で、要求が許可されることのチェックです。 Azure リソース ポリシーでは、特定のリソースに対して許可される操作が指定されます。 たとえば、Azure リソース ポリシーを使用して、ユーザーが特定の種類の仮想マシンのみデプロイできるように指定できます。
+次の制御は、[Azure リソース ポリシー](/azure/governance/policy/)に適うように指定されている設定で、要求が許可されることのチェックです。 Azure リソース ポリシーでは、特定のリソースに対して許可される操作が指定されます。 たとえば、Azure リソース ポリシーを使用して、ユーザーが特定の種類の仮想マシンのみデプロイできるように指定できます。
 
 ![Azure リソース ポリシー](../../_images/govern/design/governance-1-19.png)
 *図 11: Azure リソース ポリシー。*

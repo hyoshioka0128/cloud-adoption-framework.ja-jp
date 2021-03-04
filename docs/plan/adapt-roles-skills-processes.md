@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: 95d15d8de70d512e4f00868c0be05fc4612fe88d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d1417ad692727afa0c1e509d73bcad29f0cfb198
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026304"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788234"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>既存の役割、スキル、プロセスをクラウド向けに調整する
 
@@ -37,7 +37,7 @@ IT スタッフ メンバーは、クラウド ソリューションをサポー
 
 ## <a name="identify-gaps"></a>ギャップを特定する
 
-組織の準備のもう 1 つの重要な側面は、ギャップの識別です。 "_ギャップ_" とは、デジタル変革に必要である一方で現在は社内に存在しない役割、スキル、またはプロセスです。
+組織の準備のもう 1 つの重要な側面は、ギャップの識別です。 "*ギャップ*" とは、デジタル変革に必要である一方で現在は社内に存在しない役割、スキル、またはプロセスです。
 
 1. デジタル変革に伴う責務を列挙します。 新しい責務と撤廃すべき既存の責務を強調します。
 1. 各責務に即した分野を特定します。 新しい責務ごとに、その分野にどの程度即しているかを確認します。 責務によっては複数の分野にまたがる場合があります。 このまたがる部分は、より適切な調整が求められる機会を表すもので、懸念事項として文書化する必要があります。 責務と見なされる分野がない場合は、このギャップを文書化します。

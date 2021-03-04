@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 57d15fdb0ec445415688c47ddebeb1d3d804d671
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.openlocfilehash: c82b4c5588173e0de1022a81e5b778288a3af61e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492665"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788268"
 ---
 # <a name="build-technical-skills"></a>技術スキルの構築
 
@@ -32,16 +32,16 @@ ms.locfileid: "100492665"
 
 準備フェーズでは、技術スタッフは、クラウドに移行するワークロードをホスト、運用、管理するための移行ランディング ゾーンを作成する必要があります。 必要なスキルの開発を加速させるには、次のパスを使用してください。
 
-- [Azure アカウントの作成](/learn/modules/create-an-azure-account):Azure を使用する最初の手順では、アカウントを作成します。 お使いのアカウントは、自身がプロビジョニングした Azure サービスを保持し、ID、課金、ユーザー設定などの個人設定を処理します。
-- [Azure ポータル](/learn/modules/tour-azure-portal):Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
-- [Azure 入門](/learn/modules/welcome-to-azure):Azure を使ってみましょう。 クラウドに最初の仮想マシンを作成して構成します。
-- [Azure のセキュリティの概要](/learn/modules/intro-to-security-in-azure):クラウド内のインフラストラクチャとデータの保護に関する基本的な概念について学習します。 自分の役割と Azure で処理される内容について理解します。
-- [Azure でのリソースの管理](/learn/paths/manage-resources-in-azure):Azure CLI と Web ポータルを介してクラウドベースのリソースを作成、管理、制御する方法について学習します。
-- [VM の作成](/learn/modules/create-windows-virtual-machine-in-azure):Azure portal を使用して仮想マシンを作成します。
-- [Azure のネットワーク サービス](/learn/modules/intro-to-azure-networking): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
-- [Azure のコンピューティング オプション](/learn/modules/intro-to-azure-compute): Azure のコンピューティング サービスを確認します。
-- [Azure RBAC によるリソースのセキュリティ保護](/learn/modules/secure-azure-resources-with-rbac):Azure ロールベースのアクセス制御 (Azure RBAC) を使用してリソースをセキュリティで保護します。
-- [Azure のストレージ オプション](/learn/modules/intro-to-data-in-azure): Azure データ ストレージの利点について学習します。
+- [Azure アカウントの作成](/learn/modules/create-an-azure-account/):Azure を使用する最初の手順では、アカウントを作成します。 お使いのアカウントは、自身がプロビジョニングした Azure サービスを保持し、ID、課金、ユーザー設定などの個人設定を処理します。
+- [Azure ポータル](/learn/modules/tour-azure-portal/):Azure portal の機能とサービスのツアーを実行し、ポータルをカスタマイズします。
+- [Azure 入門](/learn/modules/intro-to-azure-fundamentals/):Azure を使ってみましょう。 クラウドに最初の仮想マシンを作成して構成します。
+- [Azure のセキュリティの概要](/learn/modules/protect-against-security-threats-azure/):クラウド内のインフラストラクチャとデータの保護に関する基本的な概念について学習します。 自分の役割と Azure で処理される内容について理解します。
+- [Azure でのリソースの管理](/learn/paths/manage-resources-in-azure/):Azure CLI と Web ポータルを介してクラウドベースのリソースを作成、管理、制御する方法について学習します。
+- [VM の作成](/learn/modules/create-windows-virtual-machine-in-azure/):Azure portal を使用して仮想マシンを作成します。
+- [Azure のネットワーク サービス](/learn/modules/azure-networking-fundamentals/): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
+- [Azure のコンピューティング オプション](/learn/modules/azure-compute-fundamentals/): Azure のコンピューティング サービスを確認します。
+- [Azure RBAC によるリソースのセキュリティ保護](/learn/modules/secure-azure-resources-with-rbac/):Azure ロールベースのアクセス制御 (Azure RBAC) を使用してリソースをセキュリティで保護します。
+- [Azure のストレージ オプション](/learn/modules/azure-database-fundamentals/): Azure データ ストレージの利点について学習します。
 
 この準備フェーズでは、アーキテクトは、すべての Azure 環境にまたがるソリューションを設計する必要があります。 次のリソースでは、これらのタスクに向けた準備を行うことができます。
 
@@ -57,9 +57,9 @@ ms.locfileid: "100492665"
 
 Microsoft とパートナーは、あらゆるお客様を対象に、Azure サービスに関連したスキルを開発するためのさまざまなオプションを提供しています。
 
-- [ロールとスキルの関連付け](/azure/cloud-adoption-framework/plan/suggested-skills):クラウドのキャリア パスを関連付けるためのリソース。 クラウドでの役割と推奨されるスキルについて説明しています。 ご自分のペースで学習カリキュラムを進めて、価値ある存在であり続けるために最も必要なスキルを磨くことができます。
+- [ロールとスキルの関連付け](../plan/suggested-skills.md):クラウドのキャリア パスを関連付けるためのリソース。 クラウドでの役割と推奨されるスキルについて説明しています。 ご自分のペースで学習カリキュラムを進めて、価値ある存在であり続けるために最も必要なスキルを磨くことができます。
 
-- Azure に関する公式の知識認定を受けるため、[Azure 認定資格のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)をご覧ください。
+- Azure に関する公式の知識認定を受けるため、[Azure 認定資格のトレーニングや試験](/learn/certifications/)をご覧ください。
 
 ### <a name="microsoft-learn"></a>Microsoft Learn
 
@@ -77,4 +77,4 @@ Microsoft Learn のロール固有のラーニング パスのいくつかの例
 
 ## <a name="learn-more"></a>詳細情報
 
-その他のラーニング パスについては、[Microsoft Learn のカタログ](/learn/browse)を参照してください。 ロール フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+その他のラーニング パスについては、[Microsoft Learn のカタログ](/learn/browse/)を参照してください。 ロール フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

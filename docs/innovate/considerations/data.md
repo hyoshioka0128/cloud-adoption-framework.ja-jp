@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: a146c08eeb645de42cdc06e8a0d7c214e1ca845c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: edd037792a03669f0d2ce8e2ebbf1d62d38bb47a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018178"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789068"
 ---
 # <a name="democratize-data-with-digital-invention"></a>デジタル発明によるデータの民主化
 
@@ -35,7 +35,7 @@ ms.locfileid: "97018178"
 
 成功したイノベーションの多くは、顧客に代わって手動のデータドリブン プロセスを提供する、実用最小限の製品 (MVP) として開始されました。 このコンシェルジュ モデルでは、従業員がデータ コンシューマーです。 その従業員は、データを使用して顧客を支援します。 顧客が手動サポートに関与するたびに、仮説をテストして検証することができます。 多くの場合、このアプローチは、統合ソリューションに多大な投資を行う前に、顧客に重点を置いた仮説をテストするというコスト効率の高い方法です。
 
-データをデータ コンシューマーと直接共有するための主要なツールには、[Power BI](/power-bi) などのツールを使用したセルフサービス レポートや他のエクスペリエンスへのデータの埋め込みなどが含まれます。
+データをデータ コンシューマーと直接共有するための主要なツールには、[Power BI](/power-bi/) などのツールを使用したセルフサービス レポートや他のエクスペリエンスへのデータの埋め込みなどが含まれます。
 
 > [!NOTE]
 > データを共有する前に、以下のセクションを必ずお読みください。 データを共有する場合、共有データを保護するためのガバナンスが必要になることがあります。 また、そのデータが複数のクラウドに分散している可能性があるので、一元化が必要になる場合があります。 データの多くはアプリケーション内に存在する可能性もあります。この場合、データを共有するには、データを収集しておく必要があります。
@@ -61,7 +61,7 @@ IT 環境でデータが中断されると、イノベーションの機会が�
 
 データの一元化が必要な場合は、まず、一元化されたデータの適切なデータ ストアを定義する必要があります。 クラウドにデータ ウェアハウスを確立することをお勧めします。 このスケーラブルなオプションでは、すべてのデータのための中央の場所が提供されます。 この種のソリューションは、オンライン分析処理 (OLAP) オプションまたはビッグ データ オプションで使用できます。
 
-[OLAP](/azure/architecture/data-guide/relational-data/online-analytical-processing) ソリューションおよび[ビッグ データ](/azure/architecture/data-guide/big-data) ソリューションのリファレンス アーキテクチャは、Azure で最適なソリューションを選択するのに役立ちます。 ハイブリッド ソリューションが必要な場合は、[オンプレミスのデータを拡張](/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud)するためのリファレンス アーキテクチャも、ソリューション開発の加速化に役立ちます。
+[OLAP](/azure/architecture/data-guide/relational-data/online-analytical-processing) ソリューションおよび[ビッグ データ](/azure/architecture/data-guide/big-data/) ソリューションのリファレンス アーキテクチャは、Azure で最適なソリューションを選択するのに役立ちます。 ハイブリッド ソリューションが必要な場合は、[オンプレミスのデータを拡張](/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud)するためのリファレンス アーキテクチャも、ソリューション開発の加速化に役立ちます。
 
 > [!IMPORTANT]
 > 顧客のニーズと調整されたソリューションによっては、よりシンプルなアプローチで十分な場合があります。 クラウド アーキテクトは、特に開発の初期段階で、顧客の仮説の検証が迅速化される可能性のある低コストのソリューションを検討するようチームに要求する必要があります。 データの収集に関する次のセクションでは、状況に合わせて別のソリューションが推奨される可能性のあるシナリオについて説明します。

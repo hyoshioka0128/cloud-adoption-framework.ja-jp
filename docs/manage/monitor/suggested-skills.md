@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: dffd1534d461d443a80f20b3f7cd65392dbe9acc
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: f89da567e6869e77999eb55b9388fabf6f91daca
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631391"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788574"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -86,7 +86,7 @@ ms.locfileid: "100631391"
 
 Microsoft とパートナーは、あらゆるお客様を対象に、Azure サービスに関連したスキルを開発するためのさまざまなオプションを提供しています。
 
-- [ロールとスキルの関連付け](/azure/cloud-adoption-framework/plan/suggested-skills):クラウドのキャリア パスを関連付けるためのリソース。 クラウドでの役割と推奨されるスキルについて説明しています。 ご自分のペースで学習カリキュラムを進めて、価値ある存在であり続けるために最も必要なスキルを磨くことができます。
+- [ロールとスキルの関連付け](../../plan/suggested-skills.md):クラウドのキャリア パスを関連付けるためのリソース。 クラウドでの役割と推奨されるスキルについて説明しています。 ご自分のペースで学習カリキュラムを進めて、価値ある存在であり続けるために最も必要なスキルを磨くことができます。
 
 - Azure に関する公式の知識認定を受けるため、[Azure 認定資格のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)をご覧ください。
 

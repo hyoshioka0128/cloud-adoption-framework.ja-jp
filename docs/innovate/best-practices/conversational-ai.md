@@ -9,15 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: ai エージェント, ai エージェント, bot フレームワーク, 会話インターフェイス, ボットのビルド, azure bot service
-ms.openlocfilehash: 7a00096dd2330088c7ac2b39e40497ff99629d87
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 716419e5579641e99a3c73efb7a2cd65275192df
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632156"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789118"
 ---
-<!-- docutune:casing "natural language understanding" -->
-<!-- cSpell:ignore Twilio -->
+<!-- docutune:ignore "natural language understanding" -->
 
 # <a name="what-are-ai-agents"></a>AI エージェントとは
 

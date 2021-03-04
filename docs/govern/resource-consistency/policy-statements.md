@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: cb6938f6d4c9214c7dbdb5fb035abafdd5c0f51f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 67adf7d5d6d930116acbbcf7d826c2bed3281dc7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019334"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787673"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>リソースの整合性のサンプル ポリシー ステートメント
 
@@ -46,7 +46,7 @@ ms.locfileid: "97019334"
 
 **ポリシー ステートメント:** ミッション クリティカルなアプリケーションまたは保護対象データ向けに新しいサブスクリプションまたは管理グループを作成する場合、クラウド ガバナンス チームによるレビューを受ける必要があります。 承認された変更は、適切なブループリントの割り当てに統合されます。
 
-**使用可能な設計オプション:** 組織の [Azure 管理グループ](/azure/governance/management-groups)への管理アクセスを、サブスクリプションの作成とアクセス制御プロセスを制御する承認されたガバナンス チームのメンバーのみにロックダウンします。
+**使用可能な設計オプション:** 組織の [Azure 管理グループ](/azure/governance/management-groups/)への管理アクセスを、サブスクリプションの作成とアクセス制御プロセスを制御する承認されたガバナンス チームのメンバーのみにロックダウンします。
 
 ## <a name="manage-updates-to-virtual-machines"></a>仮想マシンに対する更新プログラムを管理する
 
@@ -67,7 +67,7 @@ ms.locfileid: "97019334"
 - デプロイされた資産の継続的なガバナンスを保証するために、デプロイ ツールはクラウド ガバナンス チームの承認を受ける必要があります。
 - デプロイ スクリプトのメンテナンスは、クラウド ガバナンス チームが定期的なレビューと監査のためにアクセスできる中央リポジトリで行われる必要があります。
 
-**使用可能な設計オプション:** [Azure Blueprints](/azure/governance/blueprints) を一貫して使用して自動化されたデプロイを管理すると、組織のガバナンス標準とポリシーに準拠している Azure リソースを一貫してデプロイできます。
+**使用可能な設計オプション:** [Azure Blueprints](/azure/governance/blueprints/) を一貫して使用して自動化されたデプロイを管理すると、組織のガバナンス標準とポリシーに準拠している Azure リソースを一貫してデプロイできます。
 
 ## <a name="monitoring"></a>監視
 
@@ -78,7 +78,7 @@ ms.locfileid: "97019334"
 - ガバナンス ツールで、リソースの枯渇、セキュリティ、コンプライアンス、および最適化の監視にすべての資産が含まれていることを検証する必要があります。
 - ガバナンス ツールで、すべてのアプリケーションとデータに対して適切なレベルのログ データが収集されていることを検証する必要があります。
 
-**使用可能な設計オプション:** [Azure Monitor](/azure/azure-monitor/overview) は Azure での既定の監視サービスであり、リソースをデプロイするときに [Azure Blueprints](/azure/governance/blueprints) を介して一貫した監視を適用できます。
+**使用可能な設計オプション:** [Azure Monitor](/azure/azure-monitor/overview) は Azure での既定の監視サービスであり、リソースをデプロイするときに [Azure Blueprints](/azure/governance/blueprints/) を介して一貫した監視を適用できます。
 
 ## <a name="disaster-recovery"></a>障害復旧
 

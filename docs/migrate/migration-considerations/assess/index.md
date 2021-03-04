@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: e1fed38d02d85b748aafaed17b3a83fe3fb25576
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5107d58f66a959ce1cbb6f15ea54ae301289b89d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025216"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788880"
 ---
 # <a name="assess-workloads-and-validate-assumptions-before-migration"></a>移行前にワークロードを評価して前提条件を検証する
 
@@ -21,7 +21,7 @@ ms.locfileid: "97025216"
 
 その結果、ワークロードをクラウドに移行する前に、ワークロードに関連付けられている個々の資産を評価して、移行に適しているかどうかを確認することが重要です。 この評価では、クラウド導入チームが、技術的な互換性、必要なアーキテクチャ、期待されるパフォーマンス/サイズ、および依存関係を評価して、移行されたワークロードをクラウドに効率的にデプロイできることを確認する必要があります。
 
-この "_評価_" プロセスは、イテレーション中に発生する 4 つの積み上げアクティビティの最初のアクティビティです。 [技術的な複雑さと変更管理](../prerequisites/technical-complexity.md)に関する前提条件の記事で説明したように、このフェーズの実行方法を判断する前に、意思決定を行っておく必要があります。 具体的には、実際の移行作業と同じスプリント中にクラウド導入チームが評価を完了するのか? または、別のイテレーションで、ウェイブまたはファクトリ モデルを使用して評価を完了するのか? この基本的なプロセスの質問に対して、チームの全メンバーから回答を得ることができない場合は、[前提条件](../prerequisites/index.md)に関するセクションに戻ることをお勧めします。
+この "*評価*" プロセスは、イテレーション中に発生する 4 つの積み上げアクティビティの最初のアクティビティです。 [技術的な複雑さと変更管理](../prerequisites/technical-complexity.md)に関する前提条件の記事で説明したように、このフェーズの実行方法を判断する前に、意思決定を行っておく必要があります。 具体的には、実際の移行作業と同じスプリント中にクラウド導入チームが評価を完了するのか? または、別のイテレーションで、ウェイブまたはファクトリ モデルを使用して評価を完了するのか? この基本的なプロセスの質問に対して、チームの全メンバーから回答を得ることができない場合は、[前提条件](../prerequisites/index.md)に関するセクションに戻ることをお勧めします。
 
 ## <a name="objective"></a>目的
 

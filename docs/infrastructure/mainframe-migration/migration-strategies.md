@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 2f4f407df1716008604bfb5b20695f38c48ee114
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a4dbde07ff53efcfa00a15d92916bae856dedeaf
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018807"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789322"
 ---
 <!-- docutune:casing "Table 4" "Parallel Sysplex" CF Assembler "Demystifying Mainframe-to-Azure Migration" "ROSCOE Programming Facility" "RPF" "CA Librarian" CA-Panvalet -->
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
@@ -32,7 +32,7 @@ Azure は、従来のメインフレーム アプリケーションを実行す�
 
 メインフレームのワークロードを実行するために必要な仮想中央処理装置 (vCPU) の数を決定するための汎用のマッピング式はありません。 ただし、100万命令毎秒 (MIPS) のメトリックは、多くの場合、Azure 上の vCPU にマップされます。 MIPS では、特定のマシンの 1 秒あたりのサイクル数を一定の値にすることで、メインフレームの全体的なコンピューティング能力を測定します。
 
-小規模な組織では 500 MIPS 未満で済みますが、大規模な組織は通常 5,000 MIPS を超えます。 1 MIPS あたり 1,000 ドルの場合、大規模な組織では 5,000 MIPS のインフラストラクチャをデプロイするために年間約 500 万ドルを費やします。 この規模の一般的な Azure デプロイの年間コスト見積もりは、MIPS インフラストラクチャのコストの約 1/10 です。 詳細については、ホワイト ペーパー「[Demystifying Mainframe-to-Azure Migration (メインフレームから Azure への移行の解明)](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration)」の表 4 を参照してください。
+小規模な組織では 500 MIPS 未満で済みますが、大規模な組織は通常 5,000 MIPS を超えます。 1 MIPS あたり 1,000 ドルの場合、大規模な組織では 5,000 MIPS のインフラストラクチャをデプロイするために年間約 500 万ドルを費やします。 この規模の一般的な Azure デプロイの年間コスト見積もりは、MIPS インフラストラクチャのコストの約 1/10 です。 詳細については、ホワイト ペーパー「[Demystifying Mainframe-to-Azure Migration (メインフレームから Azure への移行の解明)](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration/)」の表 4 を参照してください。
 
 Azure による vCPU への MIPS の正確な計算は、vCPU の種類と実行している正確なワークロードによって変わります。 ただし、ベンチマーク調査は、必要となる vCPU の数と種類を見積もるための優れた基盤となります。 最近の HPE zRef ベンチマークは、以下の見積もりを提供しています。
 
@@ -53,7 +53,7 @@ Azure による vCPU への MIPS の正確な計算は、vCPU の種類と実行
 
 Azure は、ローカルでも他の地域内でも、複数のストレージ デバイスからデータをレプリケートすることで可用性を向上します。 Azure ベースの障害が発生した場合、コンピューティング リソースはローカルまたはリージョン レベルでレプリケートされたデータにアクセスできます。
 
-[Azure SQL Database](/azure/sql-database/sql-database-technical-overview) や [Azure Cosmos DB](/azure/cosmos-db/introduction) などの Azure のサービスとしてのプラットフォーム (PaaS) リソースを使用すると、Azure で自動的にフェールオーバーを処理できます。 Azure サービスとしてのインフラストラクチャ (IaaS) を使用する場合、フェールオーバーは、SQL Server の Always On 機能、フェールオーバー クラスタリング インスタンス、可用性グループなどの特定のシステム機能に依存します。
+[Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview) や [Azure Cosmos DB](/azure/cosmos-db/introduction) などの Azure のサービスとしてのプラットフォーム (PaaS) リソースを使用すると、Azure で自動的にフェールオーバーを処理できます。 Azure サービスとしてのインフラストラクチャ (IaaS) を使用する場合、フェールオーバーは、SQL Server の Always On 機能、フェールオーバー クラスタリング インスタンス、可用性グループなどの特定のシステム機能に依存します。
 
 ## <a name="scalability"></a>スケーラビリティ
 
@@ -86,7 +86,7 @@ Azure は、ローカルでも他の地域内でも、複数のストレージ �
 
 一般的に、メインフレームには、QA やステージング LPAR など、開発用とテスト用に別の論理パーティション (LPAR) があります。 メインフレーム開発ソリューションには、コンパイラ (COBOL、PL/I、アセンブラー) とエディターが含まれます。 最も一般的なものは、IBM メインフレーム上で稼働する z/OS オペレーティング システム用の対話式システム生産性向上機能 (ISPF) です。 その他には、ROSCOE Programming Facility (RPF) や、CA Librarian や CA-Panvalet などの Computer Associates ツールがあります。
 
-エミュレーション環境とコンパイラは x86 プラットフォーム上で使用できるので、一般的に開発とテストはメインフレームから Azure に移行する最初のワークロードになる可能性があります。 [Azure の DevOps ツール](https://azure.microsoft.com/solutions/devops)の可用性と普及により、開発環境とテスト環境の移行が加速しています。
+エミュレーション環境とコンパイラは x86 プラットフォーム上で使用できるので、一般的に開発とテストはメインフレームから Azure に移行する最初のワークロードになる可能性があります。 [Azure の DevOps ツール](https://azure.microsoft.com/solutions/devops/)の可用性と普及により、開発環境とテスト環境の移行が加速しています。
 
 ソリューションを Azure 上で開発およびテストし、メインフレームへの展開の準備が整ったら、コードをメインフレームにコピーしてそこでコンパイルする必要があります。
 

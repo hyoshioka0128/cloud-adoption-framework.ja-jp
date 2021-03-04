@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 19db2f286b6b8753a5b9f6f438daf8caa3135a42
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 40199cd5dc33ceb9fc9896a6d47d1d8444a658c1
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024893"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788676"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>移行環境の計画チェックリスト:移行前に環境の対応性を検証する
 
@@ -23,7 +23,7 @@ ms.locfileid: "97024893"
 
 ## <a name="effort-type-assumption"></a>作業の種類の前提
 
-この記事とチェックリストでは、クラウド移行に対する _再ホスト_ または _クラウドの切り替え_ を想定しています。
+この記事とチェックリストでは、クラウド移行に対する *再ホスト* または *クラウドの切り替え* を想定しています。
 
 ## <a name="governance-alignment"></a>ガバナンスの整合
 

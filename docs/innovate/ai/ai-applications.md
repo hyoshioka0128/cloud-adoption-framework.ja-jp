@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 8b4cb93b832205307e07aa2432989cfbcada67b3
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: a147a8b5eef8c5cc5b80310e6555c80b95d10c15
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632228"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789288"
 ---
 # <a name="ai-applications-and-agents"></a>AI アプリケーションとエージェント
 
@@ -42,7 +42,7 @@ AI アプリケーションの一般的なシナリオには、以下が含ま�
 
 開始するには、最初に、Azure Cognitive Services 内のさまざまなカテゴリおよびサービスについて理解します。 製品ページを参照して詳細を確認し、デモを操作して視覚、音声、言語、意思決定など、利用可能な機能について詳しく把握します。 また、一般的なシナリオを紹介し、Cognitive Services を利用して最初のアプリケーションを作成する方法について示した電子書籍もあります。
 
-- [Cognitive Services](/azure/cognitive-services/welcome)
+- [Cognitive Services](/azure/cognitive-services/what-are-cognitive-services)
 - [製品/サービス全体の対話型デモのページ](https://azure.microsoft.com/services/cognitive-services/)
 - [コグニティブ API を使用してインテリジェントなアプリを構築する](https://azure.microsoft.com/resources/building-intelligent-apps-with-cognitive-apis/) (電子書籍)
 

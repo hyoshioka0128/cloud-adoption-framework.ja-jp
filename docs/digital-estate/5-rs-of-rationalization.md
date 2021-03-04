@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: internal
-ms.openlocfilehash: b098d1f1b03c83a40249f34d48e07c589eaea507
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 3885cda1a320b52c3f66e780a1f9bca5e84a8adb
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174456"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787741"
 ---
 # <a name="cloud-rationalization"></a>クラウドの合理化
 
@@ -118,7 +118,7 @@ ms.locfileid: "98174456"
 
 ## <a name="rebuild"></a>[再構築]
 
-一部のシナリオでは、アプリケーションを引き継ぐために克服する必要のある差分が大きすぎて、それ以上の投資を正当化できない場合があります。 ビジネスのニーズは満たしていても、現在サポートされていない、または現在のビジネス プロセスと整合していないアプリケーションには特にこのことが当てはまります。 この場合は、[クラウド ネイティブな](https://azure.microsoft.com/overview/cloudnative)アプローチに整合させるための新しいコード ベースが作成されます。
+一部のシナリオでは、アプリケーションを引き継ぐために克服する必要のある差分が大きすぎて、それ以上の投資を正当化できない場合があります。 ビジネスのニーズは満たしていても、現在サポートされていない、または現在のビジネス プロセスと整合していないアプリケーションには特にこのことが当てはまります。 この場合は、[クラウド ネイティブな](https://azure.microsoft.com/overview/cloudnative/)アプローチに整合させるための新しいコード ベースが作成されます。
 
 一般的な促進要因には、次のものが含まれます。
 

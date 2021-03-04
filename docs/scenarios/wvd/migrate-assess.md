@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 57bfdfa758d35a3e55119f975aa3953452b0a9f9
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: cb9e7c1b58643a94416c4026a1256d21becb56e7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025658"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787928"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Windows Virtual Desktop の評価
 
@@ -46,9 +46,9 @@ Windows Virtual Desktop 評価ごとに、ユーザーのペルソナ、仮想�
 
 前述の各質問に基づいて、ビジネス機能、コスト センター、地理的リージョン、技術要件ごとにユーザーのペルソナの描写を始めることができます。 次の表は、回答を記録して、評価を完成させたり設計ドキュメントを作成したりするのに役立ちます。
 
-| 条件  | ペルソナ グループ&nbsp; 1  | ペルソナ グループ&nbsp; 2  | ペルソナ グループ&nbsp; 3  |
+| 条件 | ペルソナ グループ&nbsp; 1 | ペルソナ グループ&nbsp; 2 | ペルソナ グループ&nbsp; 3 |
 |---------|---------|---------|---------|
-| プール  | プール | プール | 専用 (セキュリティ上の懸念) |
+| プール | プール | プール | 専用 (セキュリティ上の懸念) |
 | 密度 | ライト (6&nbsp; ユーザー/vCPU) | ヘビー (2&nbsp; ユーザー/vCPU) | 専用 (1&nbsp; ユーザー/vCPU) |
 | パフォーマンス | 低 | 高メモリ消費量 | 低 |
 | GPU | 該当なし | 必須 | なし |
