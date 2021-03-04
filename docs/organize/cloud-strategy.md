@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 1d9f3f82c928ce8855a54a72eabc131d8b6bc937
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9c7d69ced18631d476523788014669d276d56d00
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026338"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789747"
 ---
 # <a name="cloud-strategy-functions"></a>クラウド戦略の職務
 
@@ -37,8 +37,8 @@ ms.locfileid: "97026338"
 
 ## <a name="preparation"></a>準備
 
-- [Microsoft Azure のビジネス価値を学習します](/learn/paths/learn-business-value-of-azure)。
-- ビジネス、人材、テクノロジの戦略を調整するためにどのように役立つかについて、[クラウド導入フレームワークを学習します](/learn/modules/microsoft-cloud-adoption-framework-for-azure)。
+- [Microsoft Azure のビジネス価値を学習します](/learn/paths/learn-business-value-of-azure/)。
+- ビジネス、人材、テクノロジの戦略を調整するためにどのように役立つかについて、[クラウド導入フレームワークを学習します](/learn/modules/microsoft-cloud-adoption-framework-for-azure/)。
 - [クラウドの導入戦略](../strategy/index.md)プロセスを確認します。
 - [戦略およびプラン テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx)をダウンロードします。
 

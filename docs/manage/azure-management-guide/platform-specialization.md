@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 350c8787e25b1709a79b1bbcd521572d41e7a51a
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 4c2499dab8bde464d28da5337834cb4a96b6f7f0
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632003"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792042"
 ---
 <!-- docutune:casing "SQL Server Health Check" -->
 
@@ -161,6 +161,6 @@ ms.locfileid: "100632003"
 
 コンテナーと SQL Server は、最も一般的な 2 つの一元管理プラットフォームです。 以下の記事は、これらのプラットフォームでの継続的な改善データ収集の開始に役立ちます。
 
-- [コンテナーのパフォーマンス](/azure/azure-monitor/insights/container-insights-overview)
+- [コンテナーのパフォーマンス](/azure/azure-monitor/containers/container-insights-overview)
 - [PaaS データベースのパフォーマンス](/azure/azure-monitor/insights/azure-sql)
 - [IaaS データベースのパフォーマンス](/azure/azure-monitor/insights/sql-assessment)

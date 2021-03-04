@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: ca7e8adc580f1ec751e00db0bcc34d2bf81bf2ba
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c5b545ffcd3b1bf9cf7c82cac58eaa3ae7291fe5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019589"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790733"
 ---
 # <a name="resource-consistency-discipline-overview"></a>リソースの整合性の規範の概要
 
@@ -24,7 +24,7 @@ ms.locfileid: "97019589"
 
 クラウド導入フレームワーク のこのセクションでは、お客様のクラウド ガバナンス戦略の一環として、リソースの整合性の規範を開発する方法を説明します。 このガイドの主な対象読者は、お客様の組織のクラウド アーキテクトおよびお客様のクラウド ガバナンス チームのその他のメンバーです。 この規範を使用した決定、ポリシーおよびプロセスには、お客様の組織のリソースの整合性ソリューションを導入および管理する責任のある IT チームの該当メンバーが関与して、議論する必要があります。
 
-お客様の社内にリソースの整合性の専門家がいない場合、この規範の一環として外部コンサルタントを雇用することを検討してください。 また、ご利用のクラウドベースの資産を最善の方法で整理、トラッキングおよび最適化する相談のために、[Microsoft コンサルティング サービス](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) クラウド導入サービス、または外部のその他のクラウド導入のエキスパートを雇用することを検討してください。
+お客様の社内にリソースの整合性の専門家がいない場合、この規範の一環として外部コンサルタントを雇用することを検討してください。 また、ご利用のクラウドベースの資産を最善の方法で整理、トラッキングおよび最適化する相談のために、[Microsoft コンサルティング サービス](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack/) クラウド導入サービス、または外部のその他のクラウド導入のエキスパートを雇用することを検討してください。
 
 ## <a name="policy-statements"></a>ポリシー ステートメント
 

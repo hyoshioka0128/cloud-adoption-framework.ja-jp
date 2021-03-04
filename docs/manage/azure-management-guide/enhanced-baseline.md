@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 4ad9cc8fa155153becb036f2be678b4e292004ae
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: deebdc2b6858bada6411ea78a98e7bcfa6c48654
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017447"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790478"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Azure の管理ベースラインの改善
 
@@ -47,10 +47,10 @@ ms.locfileid: "97017447"
 
 次の表では、改善された顧客の管理ベースラインに共通するプロセス、ツール、および考えられる影響の概要を示します。
 
-| 規範  | Process  | ツール | 潜在的な影響 | 詳細情報 |
+| 規範 | Process | ツール | 潜在的な影響 | 詳細情報 |
 |---|---|---|---|---|
 | インベントリと可視性 | サービスの変更の追跡 | Azure Resource Graph | Azure のサービスに対する変更が視認しやすくなると、負の影響をより迅速に検出したり、より迅速に修復できる場合がある。 | [Azure Resource Graph の概要](/azure/governance/resource-graph/overview) |
-| インベントリと可視性 | IT サービス マネジメント (ITSM) の統合 | IT Service Management Connector | ITSM に自動接続されることにより、認識が早くなる。 | [IT Service Management Connector (ITSMC)](/azure/azure-monitor/platform/itsmc-overview) |
+| インベントリと可視性 | IT サービス マネジメント (ITSM) の統合 | IT Service Management Connector | ITSM に自動接続されることにより、認識が早くなる。 | [IT Service Management Connector (ITSMC)](/azure/azure-monitor/alerts/itsmc-overview) |
 | 運用のコンプライアンス | 操作の自動化 | Azure Automation | 変更により迅速および正確に対応するために運用のコンプライアンスを自動化する。 | 次のセクションを参照 |
 | 運用のコンプライアンス | パフォーマンスの自動化 | Azure Automation | リソース固有のスケーリングやサイズ変更に関する一般的な問題を解決するために、パフォーマンスの予測によって運用のコンプライアンスを自動化します。 | 次のセクションを参照 |
 | 運用のコンプライアンス | マルチクラウド操作 | Azure Automation の Hybrid Runbook Worker | 複数のクラウド間での操作を自動化する。 | [Hybrid Runbook Worker の概要](/azure/automation/automation-hybrid-runbook-worker) |
@@ -129,6 +129,6 @@ Azure Security Center について調べるには、[Azure portal](https://porta
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[Azure Security Center のドキュメント](/azure/security-center)」をご覧ください。
+詳しくは、「[Azure Security Center のドキュメント](/azure/security-center/)」をご覧ください。
 
 ::: zone-end

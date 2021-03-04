@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 5dce13da4babb6289d25d0c363715e6c9f59ea66
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 986fe990af7d04b5ebdfcfdf1876c536d6585e21
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712639"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792008"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Azure のリソース整合性ツール
 
@@ -23,7 +23,7 @@ ms.locfileid: "97712639"
 
 この規範をサポートするポリシーとプロセスを成熟させるのに役立つ Azure ツールの一覧を次に示します。
 
-| ツール | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](/azure/azure-resource-manager/management/overview)  | [Azure Blueprint](/azure/governance/blueprints/overview) | [Azure Automation](/azure/automation/automation-intro) | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](/azure/backup/backup-overview) | [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) |
+| ツール | [Azure Portal](https://azure.microsoft.com/features/azure-portal/) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure Blueprint](/azure/governance/blueprints/overview) | [Azure Automation](/azure/automation/automation-intro) | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](/azure/backup/backup-overview) | [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | リソースのデプロイ                             | はい | はい | はい | はい | いいえ  | いいえ | いいえ |
 | リソースの管理                             | はい | はい | はい | はい | いいえ  | いいえ | いいえ |
@@ -47,7 +47,7 @@ ms.locfileid: "97712639"
 
 リソースの整合性に関するこれらのツールおよび機能と共に、デプロイされたリソースのパフォーマンスと正常性の問題を監視する必要があります。 [Azure Monitor](/azure/azure-monitor/overview) は Azure の既定の監視およびレポート ソリューションです。 Azure Monitor には、ご利用のクラウド リソースを監視するための機能が用意されています。 次の一覧に、一般的な監視要件に対応する機能を示します。
 
-| ツール | [Azure Portal](https://azure.microsoft.com/features/azure-portal) | [Application Insights](/azure/application-insights/app-insights-overview) | [Log Analytics](/azure/azure-monitor/log-query/log-query-overview) | [Azure 監視 REST API](/rest/api/monitor) |
+| ツール | [Azure Portal](https://azure.microsoft.com/features/azure-portal/) | [Application Insights](/azure/azure-monitor/app/app-insights-overview) | [Log Analytics](/azure/azure-monitor/logs/log-query-overview) | [Azure 監視 REST API](/rest/api/monitor/) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
 | 仮想マシンの利用統計情報をログに記録する                 | いいえ           | いいえ                   | はい           | いいえ                     |
 | 仮想ネットワークの利用統計情報をログに記録する              | いいえ           | いいえ                   | はい           | いいえ                     |
@@ -61,8 +61,8 @@ ms.locfileid: "97712639"
 デプロイを計画するときには、ログ データの格納場所と、クラウド ベースの[レポート サービスと監視サービス](../../decision-guides/logging-and-reporting/index.md)を既存のプロセスとツールに統合する方法を検討する必要があります。
 
 > [!NOTE]
-> 組織では、ワークロードとリソースの監視にサード パーティ製の DevOps ツールも使用します。 詳細については、「[DevOps ツールの統合](https://azure.microsoft.com/products/devops-tool-integrations)」を参照してください。
+> 組織では、ワークロードとリソースの監視にサード パーティ製の DevOps ツールも使用します。 詳細については、「[DevOps ツールの統合](https://azure.microsoft.com/products/devops-tool-integrations/)」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 
-Azure で[ポリシー定義](/azure/governance/policy)の作成、割り当て、管理を行う方法を確認します。
+Azure で[ポリシー定義](/azure/governance/policy/)の作成、割り当て、管理を行う方法を確認します。

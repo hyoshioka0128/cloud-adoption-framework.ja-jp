@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: b713b0003e4530ba9fff08ef9f746c85e7c028d0
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 26648b7f2bfcc7a033b83ed0a07ed533c8c40669
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024723"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789798"
 ---
 # <a name="application-security-and-devsecops-functions"></a>アプリケーションのセキュリティと DevSecOps の機能
 
@@ -29,7 +29,7 @@ ms.locfileid: "97024723"
 
 - **セキュリティが外部承認ではなく統合される:** アプリケーション開発の変化の速度が速いため、従来の範囲の "スキャンとレポート" のアプローチは古くなります。 これらの従来のアプローチでは、開発を中断させたり、市場投入の遅れ、開発者の不十分な活用、問題のバックログの増加を発生させたりすることなく、リリースのペースを維持することはできません。
   - アプリケーション開発プロセスの早期にセキュリティを組み込むための **シフト レフト**。問題を早く解決するほど、コストが安く、高速で、効果的になります。 アプリケーションが完成するまで待つと、形を変えるのが難しくなります。
-  - **ネイティブ統合:** 開発ワークフローおよび継続的インテグレーションと継続的配置 (CI/CD) プロセスでの異常な摩擦を避けるため、セキュリティ プラクティスをシームレスに統合する必要があります。 GitHub 手法の詳細については、「[Securing software, together](https://github.blog/2019-09-18-securing-software-together)」 (ソフトウェアをまとめて保護する) を参照してください。
+  - **ネイティブ統合:** 開発ワークフローおよび継続的インテグレーションと継続的配置 (CI/CD) プロセスでの異常な摩擦を避けるため、セキュリティ プラクティスをシームレスに統合する必要があります。 GitHub 手法の詳細については、「[Securing software, together](https://github.blog/2019-09-18-securing-software-together/)」 (ソフトウェアをまとめて保護する) を参照してください。
   - **高品質のセキュリティ:** セキュリティでは、開発者が問題を迅速に修正でき、誤検知によって開発者の時間を無駄にしないように、高品質の情報とガイダンスを提供する必要があります。
   - **集中型カルチャ:** セキュリティ、開発、運用のロールは、共有カルチャ、共有価値、および共有目標と責務に重要な要素を寄与する必要があります。
 - **アジャイル セキュリティ:** "完全なものの出荷" アプローチから、継続的かつ増分的に改善されるアプリケーション (およびそれらを開発するためのプロセス) に対する最小限実行可能なセキュリティで開始するアジャイル アプローチに、セキュリティをシフトします。

@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: a0c706b457b26bc887a2995fc7f98d64c14b61dd
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9f4375001036453070865ddf1443b0ca62661706
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023482"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791668"
 ---
 # <a name="migration-tools-decision-guide"></a>移行ツール決定ガイド
 
 アプリケーションを Azure に移行するために使用する戦略およびツールは、お客様のビジネスの動機、テクノロジ戦略、およびタイムラインによって大きく異なり、移行する実際のワークロードと資産 (インフラストラクチャ、アプリ、データ) についての深い理解にも左右されます。 次のデシジョン ツリーは、移行の決定事項に基づいて使用するために最適なツールを選択する際に高レベルのガイダンスとして役立ちます。 このデシジョン ツリーを出発点として利用します。
 
-サービスとしてのプラットフォーム (PaaS) またはインフラストラクチャとしてのサービス (IaaS) のテクノロジを使用して移行するための選択肢は、コスト、時間、既存の技術的な負債、および長期的な利益のバランスによって決まります。 多くの場合、IaaS は最も迅速にクラウドに移行できる方法であり、ワークロードに対する変更が必要最小限で済みます。 PaaS の場合、データ構造やソース コードの修正が必要になる可能性はありますが、運用コストの削減と技術的な柔軟性の向上という形で、大きなそして長期的な利益を生み出します。 次の図で、_最新化_ という用語は、移行段階で資産を最新化し、その最新化された資産を PaaS プラットフォームに移行するという決定事項を反映するために使用されています。
+サービスとしてのプラットフォーム (PaaS) またはインフラストラクチャとしてのサービス (IaaS) のテクノロジを使用して移行するための選択肢は、コスト、時間、既存の技術的な負債、および長期的な利益のバランスによって決まります。 多くの場合、IaaS は最も迅速にクラウドに移行できる方法であり、ワークロードに対する変更が必要最小限で済みます。 PaaS の場合、データ構造やソース コードの修正が必要になる可能性はありますが、運用コストの削減と技術的な柔軟性の向上という形で、大きなそして長期的な利益を生み出します。 次の図で、*最新化* という用語は、移行段階で資産を最新化し、その最新化された資産を PaaS プラットフォームに移行するという決定事項を反映するために使用されています。
 
 ![移行ツールのデシジョン ツリーの例。](../../_images/migrate/migration-tools-decision-tree.png)
 
@@ -43,4 +43,4 @@ ms.locfileid: "97023482"
 - **[ クラウドの基礎:Azure コンピューティング オプションの概要](/azure/architecture/guide/technology-choices/compute-decision-tree):** Azure IaaS および PaaS コンピューティング オプションの機能について説明します。
 - **[ クラウドの基礎:適切なデータ ストアの選択](/azure/architecture/guide/technology-choices/data-store-overview):** Azure プラットフォーム上で利用できる PaaS ストレージ オプションについて説明します。
 - **[移行のベスト プラクティス:移行作業中にデータ要件がネットワーク容量を超えている](../../migrate/azure-best-practices/network-capacity-exceeded.md):** 使用できるネットワーク帯域幅によってデータ移行が妨げられるシナリオの代替データ移行メカニズムについて説明します。
-- **[SQL Database:Azure で適切な SQL Server オプションを選択する](/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines):** マネージド インフラストラクチャ (IaaS) またはマネージド サービス (PaaS) 環境で、SQL Server ワークロードをホストすることを選択する際のオプションとビジネス上の理由について説明します。
+- **[SQL Database:Azure で適切な SQL Server オプションを選択する](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines):** マネージド インフラストラクチャ (IaaS) またはマネージド サービス (PaaS) 環境で、SQL Server ワークロードをホストすることを選択する際のオプションとビジネス上の理由について説明します。

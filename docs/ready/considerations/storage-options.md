@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 752fd6a3eeb803c7767574b2f8502dd869520a39
-ms.sourcegitcommit: 003c04cf21c184be272102c9476f27dd675357bf
+ms.openlocfilehash: 2cab73984d1d90df6629dfe6f52e46a71398e27c
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98571959"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789645"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -101,7 +101,7 @@ Azure には、さまざまなストレージ機能のための複数の製品�
 
 要件に最も適合する Azure ツールを特定したら、次の表でリンクされている詳細なドキュメントを使用して、これらのサービスに精通してください。
 
-| サービス  | 説明 |
+| サービス | 説明 |
 |---|---|
 | [Azure BLOB Storage](/azure/storage/blobs/storage-blobs-introduction) | Azure Blob Storage は、Microsoft のクラウド用オブジェクト ストレージ ソリューションです。 Blob Storage は、テキスト データやバイナリ データなどの大量の非構造化データを格納するために最適化されています。 非構造化データは、特定のデータ モデルまたは定義に従っていないデータ (テキスト データやバイナリ データなど) です。 <br><br> Blob Storage は、次の用途に適しています。 <li> 画像またはドキュメントをブラウザーに直接配信する。 <li> 分散アクセス用にファイルを格納する。 <li> ビデオおよびオーディオをストリーミング配信する。 <li> ログ ファイルに書き込む。 <li> バックアップと復元、ディザスター リカバリー、アーカイブのためのデータを格納する。 <li> オンプレミス サービスまたは Azure ホステッド サービスで分析するデータを格納する。 |
 | [Azure Data Lake Storage Gen 2](/azure/storage/blobs/data-lake-storage-introduction) | Blob Storage では、Microsoft のクラウド向けのエンタープライズ ビッグ データ分析ソリューションである Azure Data Lake Storage Gen2 がサポートされています。 Azure Data Lake Storage Gen2 では、階層型のファイル システムに加え、低コスト、階層型ストレージ、高可用性、強力な一貫性、ディザスター リカバリー機能を含む Blob Storage の利点が提供されます。 |

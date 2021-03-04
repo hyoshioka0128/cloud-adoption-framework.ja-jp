@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 1c5f49ff4ea88826b5e2022e7a5a85ffcb65b71f
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.openlocfilehash: 633c54091e8fb8f9dd68c80c0492245e91be7e2a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492342"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790444"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Azure のインベントリと可視性
 
-_インベントリと可視性_ は、クラウド管理ベースラインの 3 つの原則の 1 つ目です。
+*インベントリと可視性* は、クラウド管理ベースラインの 3 つの原則の 1 つ目です。
 
 ![クラウド管理ベースライン](../../_images/manage/management-baseline.png)
 
@@ -29,11 +29,11 @@ _インベントリと可視性_ は、クラウド管理ベースラインの 3
 | Process | ツール | 目的 |
 |---|---|---|
 | Azure サービスの正常性の監視 | [Azure Service Health](/azure/service-health/service-health-overview) | Azure で実行されているサービスの正常性、パフォーマンス、診断 |
-| ログの一元化 | [Log Analytics](/azure-monitor/log-query/log-analytics-overview) | すべての可視性のための一元的なログ |
+| ログの一元化 | [Log Analytics](/azure/azure-monitor/log-query/log-analytics-overview) | すべての可視性のための一元的なログ |
 | 監視の一元化 | [Azure Monitor](/azure/azure-monitor/overview) | 運用データと傾向の一元的な監視 |
 | 仮想マシンのインベントリと変更の追跡 | [変更履歴とインベントリ](/azure/automation/change-tracking/overview) | ゲスト OS レベルの VM のインベントリと変更の監視 |
-| サブスクリプションの監視 | [Azure アクティビティ ログ](/azure/azure-monitor/platform/activity-log) | サブスクリプション レベルの変更の監視 |
-| ゲスト OS の監視 | [Azure Monitor for VMs](/azure/azure-monitor/insights/vminsights-overview) | VM の変更とパフォーマンスの監視 |
+| サブスクリプションの監視 | [Azure activity log](/azure/azure-monitor/essentials/activity-log) | サブスクリプション レベルの変更の監視 |
+| ゲスト OS の監視 | [Azure Monitor for VMs](/azure/azure-monitor/vm/vminsights-overview) | VM の変更とパフォーマンスの監視 |
 | ネットワーク監視 | [Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview) | ネットワークの変更とパフォーマンスの監視 |
 | DNS の監視 | [DNS Analytics](/azure/azure-monitor/insights/dns-analytics) | DNS のセキュリティ、パフォーマンス、操作 |
 
@@ -84,7 +84,7 @@ Azure Service Health には以下が含まれます。
 
 ### <a name="learn-more"></a>詳細情報
 
-詳細については、「[Azure Service Health](/azure/service-health)」を参照してください。
+詳細については、「[Azure Service Health](/azure/service-health/)」を参照してください。
 
 ## <a name="log-analytics"></a>Log Analytics
 
@@ -95,7 +95,7 @@ Azure Service Health には以下が含まれます。
 
 ::: zone-end
 
-[Log Analytics ワークスペース](/azure/azure-monitor/learn/quick-create-workspace)は、Azure Monitor ログ データの格納用の一意の環境です。 各ワークスペースには、独自のデータ リポジトリと構成があります。 データ ソースとソリューションは、特定のワークスペースにデータを格納するように構成されます。 Azure 監視ソリューションでは、すべてのサーバーをワークスペースに接続することで、それらのログ データを格納してアクセスできるようにする必要があります。
+[Log Analytics ワークスペース](/azure/azure-monitor/logs/quick-create-workspace)は、Azure Monitor ログ データの格納用の一意の環境です。 各ワークスペースには、独自のデータ リポジトリと構成があります。 データ ソースとソリューションは、特定のワークスペースにデータを格納するように構成されます。 Azure 監視ソリューションでは、すべてのサーバーをワークスペースに接続することで、それらのログ データを格納してアクセスできるようにする必要があります。
 
 ::: zone target="chromeless"
 
@@ -113,7 +113,7 @@ Azure Service Health には以下が含まれます。
 
 ### <a name="learn-more"></a>詳細情報
 
-詳細については、[Log Analytics ワークスペースの作成に関するドキュメント](/azure/azure-monitor/learn/quick-create-workspace)を参照してください。
+詳細については、[Log Analytics ワークスペースの作成に関するドキュメント](/azure/azure-monitor/logs/quick-create-workspace)を参照してください。
 
 ## <a name="azure-monitor"></a>Azure Monitor
 
@@ -148,9 +148,9 @@ Azure Monitor では、Azure 内のすべての監視データと診断データ
 
  以下の監視を開始します。
 
-- [アプリケーション](/azure/application-insights/app-insights-overview)
-- [Containers](/azure/monitoring/monitoring-container-overview)
-- [仮想マシン](/azure/monitoring/monitoring-service-map)
+- [アプリケーション](/azure/azure-monitor/app/app-insights-overview)
+- [Containers](/azure/azure-monitor/containers/container-insights-overview)
+- [仮想マシン](/azure/azure-monitor/vm/service-map)
 - [ネットワーク](/azure/networking/network-monitoring-overview)
 
 その他のリソースを監視するには、Azure Marketplace で他のソリューションを探します。
@@ -159,7 +159,7 @@ Azure Monitor を調査するには、[Azure Portal](https://portal.azure.com/#b
 
 ### <a name="learn-more"></a>詳細情報
 
-詳しくは、「[Azure Monitor のドキュメント](/azure/monitoring-and-diagnostics)」をご覧ください。
+詳しくは、「[Azure Monitor のドキュメント](/azure/azure-monitor/)」をご覧ください。
 
 ## <a name="onboard-solutions"></a>ソリューションのオンボード
 

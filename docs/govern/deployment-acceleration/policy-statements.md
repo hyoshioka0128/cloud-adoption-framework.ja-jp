@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: bb19bfa0cf8d521b33e570288774128830e9515b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 915af4a7f8e7c410916965b272bc3830901c4021
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021459"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791396"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>デプロイ高速化のサンプル ポリシー ステートメント
 
@@ -31,7 +31,7 @@ ms.locfileid: "97021459"
 
 **ポリシー ステートメント:** クラウドにデプロイされるすべての資産は、可能な限りテンプレートまたは自動化スクリプトを使用してデプロイする必要があります。
 
-**使用可能な設計オプション:** [Azure Resource Manager テンプレート](/azure/azure-resource-manager/templates/overview)を使用すると、コードとしてのインフラストラクチャを利用し、リソースを Azure にデプロイできるようになります。 整合性のあるオンプレミスおよびクラウドベースのデプロイ ツールとして [Terraform](/azure/terraform/terraform-overview) を使用することもできます。
+**使用可能な設計オプション:** [Azure Resource Manager テンプレート](/azure/azure-resource-manager/templates/overview)を使用すると、コードとしてのインフラストラクチャを利用し、リソースを Azure にデプロイできるようになります。 整合性のあるオンプレミスおよびクラウドベースのデプロイ ツールとして [Terraform](/azure/developer/terraform/overview) を使用することもできます。
 
 ## <a name="lack-of-visibility-into-system-issues"></a>システムの問題の可視化の欠如
 
@@ -42,7 +42,7 @@ ms.locfileid: "97021459"
 - 主要なメトリックと診断方法がすべての実稼働システムとコンポーネントに対して識別されます。また、監視ツールと診断ツールがそれらのシステムに適用され、運用担当者によって定期的に監視されます。
 - 運用では、ステージングや QA などの非運用環境で監視ツールと診断ツールを使用して、運用環境でシステムの問題が発生する前にそれらの問題を識別することを検討します。
 
-**使用可能な設計オプション:** Log Analytics と Application Insights を含む [Azure Monitor](/azure/azure-monitor) では、テレメトリを収集して分析するためのツールが提供されます。これは、アプリケーションの実行状況を把握し、それらのアプリケーションに影響を与える問題と、それらのアプリケーションが依存するリソースを事前に識別するのに役立ちます。 さらに、[Azure アクティビティ ログ](/azure/azure-monitor/platform/activity-logs-overview)では、プラットフォーム レベルで行われ、準拠していない変更について監視および監査する必要があるすべての変更がレポートされます。
+**使用可能な設計オプション:** Log Analytics と Application Insights を含む [Azure Monitor](/azure/azure-monitor/) では、テレメトリを収集して分析するためのツールが提供されます。これは、アプリケーションの実行状況を把握し、それらのアプリケーションに影響を与える問題と、それらのアプリケーションが依存するリソースを事前に識別するのに役立ちます。 さらに、[Azure アクティビティ ログ](/azure/azure-monitor/essentials/platform-logs-overview)では、プラットフォーム レベルで行われ、準拠していない変更について監視および監査する必要があるすべての変更がレポートされます。
 
 ## <a name="configuration-security-reviews"></a>構成セキュリティ のレビュー
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 3ee819abbc2ceec10af1826ebf36668c36d320c2
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3e0f1ad5cf9c0fc402b456ad2a781302bc554c9a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020456"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790750"
 ---
 # <a name="identity-baseline-discipline-overview"></a>ID ベースライン規範の概要
 
@@ -24,7 +24,7 @@ ID ベースラインは、[クラウド導入フレームワーク ガバナン
 
 クラウド導入フレームワークのこのセクションでは、クラウド ガバナンス戦略の一環として ID ベースライン規範を策定する方法について、概要を説明します。 このガイドの主な対象読者は、お客様の組織のクラウド アーキテクトおよびお客様のクラウド ガバナンス チームのその他のメンバーです。 この規範に基づく決定、ポリシー、およびプロセスには、組織の ID 管理ソリューションの実装と管理を担当する IT チームの該当メンバーが関与して、議論する必要があります。
 
-社内に ID とセキュリティの専門家がいない場合、この規範の一環として外部コンサルタントを雇用することを検討してください。 また、この規範に関連する懸案事項を相談するために、[Microsoft コンサルティング サービス](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) クラウド導入サービス、または外部のその他のクラウド導入パートナーを雇用することを検討してください。
+社内に ID とセキュリティの専門家がいない場合、この規範の一環として外部コンサルタントを雇用することを検討してください。 また、この規範に関連する懸案事項を相談するために、[Microsoft コンサルティング サービス](https://www.microsoft.com/industry/services/consulting)、[Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack/) クラウド導入サービス、または外部のその他のクラウド導入パートナーを雇用することを検討してください。
 
 ## <a name="policy-statements"></a>ポリシー ステートメント
 

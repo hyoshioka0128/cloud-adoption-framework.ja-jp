@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 4b06c3bf6187d3536af57b772980af76d0b443c3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b355ef12e5a4ac58c6c2a5131816afc28ab0dbe3
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024978"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789934"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>移行したアプリケーションの実稼働への昇格を準備する
 
@@ -30,7 +30,7 @@ ms.locfileid: "97024978"
 
 ## <a name="final-technical-readiness-tests"></a>最終的な技術的準備テスト
 
-_準備完了_ は、実稼働リリース前の最後のステップです。 つまり、ワークロードをテストする最後のチャンスでもあります。 次に、このフェーズ中に推奨されるいくつかのテストを示します。
+*準備完了* は、実稼働リリース前の最後のステップです。 つまり、ワークロードをテストする最後のチャンスでもあります。 次に、このフェーズ中に推奨されるいくつかのテストを示します。
 
 - **ネットワーク分離のテスト。** ネットワーク トラフィックをテストし、監視して、適切な分離と、予期しないネットワークの脆弱性がないことを確認します。 また、切り替え時に切断されるネットワーク ルーティングで予期しないトラフィックが発生していないことも検証します。
 - **依存関係のテスト。** すべてのワークロード アプリケーションの依存関係が移行され、移行済みの資産からアクセス可能であることを確認します。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 3d0a1fb138d526f1f666ae8ac2545e67f967bf61
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: ad9f7ba3c9cc0479d0cb0a665d8335ccc6882136
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174320"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790665"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>イノベーションのビジネス価値の合意を築く
 
@@ -68,9 +68,9 @@ ms.locfileid: "98174320"
 - **仮説の機会:** さまざまな利害関係者や開発チームには、ソリューションに対する期待が多すぎることはよくあることです。 非現実的な期待は、仮説があいまいすぎるという兆候である場合があります。 より明確な仮説を構築するには、「[顧客の共感を構築する](./considerations/build.md)」のガイドに従ってください。
 - **構築の機会:** 顧客のニーズを解決する方法で意見が一致しないため、チームが連携していない場合があります。 通常、このような意見の相違は、チームが[早期の技術的スパイクによって遅れている](./considerations/build.md#reduce-complexity-and-delay-technical-spikes)ことを示します。 チームが顧客に集中できるようにするには、最初のイテレーションを開始し、小さな実用最小限の製品 (MVP) を構築して仮説の一部に対処します。 チームの前進に役立つ詳細なガイダンスについては、「[デジタル発明の発展](./considerations/invention.md)」を参照してください。
 - **トレーニングの機会:** 複雑な技術面の要件や広範な機能要件が必要になるために、どちらかのチームが連携していない可能性があります。 このニーズは、アジャイル手法でトレーニングを行う機会につながる可能性があります。 チームの文化がアジャイル プロセスに対応できない場合は、イノベーションを行い、市場に遅れを取らないことが困難になる可能性があります。 DevOps とアジャイル プラクティスに関するトレーニング用のリソースについては、以下を参照してください。
-  - [DevOps のプラクティスを進化させる](/learn/paths/evolve-your-devops-practices)
-  - [Azure DevOps でアプリケーションを構築する](/learn/paths/build-applications-with-azure-devops)
-  - [Azure DevOps でアプリケーションをデプロイする](/learn/paths/deploy-applications-with-azure-devops)
+  - [DevOps のプラクティスを進化させる](/learn/paths/evolve-your-devops-practices/)
+  - [Azure DevOps でアプリケーションを構築する](/learn/paths/build-applications-with-azure-devops/)
+  - [Azure DevOps でアプリケーションをデプロイする](/learn/paths/deploy-applications-with-azure-devops/)
 
 この記事の各セクションの手法とバックログ管理ツールに従うと、ソリューションを一致させるのに役立ちます。
 

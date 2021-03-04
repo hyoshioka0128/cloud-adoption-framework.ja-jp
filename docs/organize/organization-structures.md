@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 7178eede5459350b20c0d50a8b334948cb0737a5
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 332273c7e1400b850cfeea6a67cad431d41d9e52
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026423"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789696"
 ---
 # <a name="mature-team-structures"></a>チーム構造を成熟させる
 
@@ -40,7 +40,7 @@ ms.locfileid: "97026423"
 5. [運用での連携](#operational-alignment)
 6. [クラウドのセンター オブ エクセレンス (CCoE)](#cloud-center-of-excellence)
 
-ほとんどの企業は、"_クラウド導入チーム_" 程度の規模からスタートします。 しかし、[MVP のベスト プラクティス](#best-practice-minimum-viable-product-mvp)構造により近い組織構造を確立する方法をお勧めします。
+ほとんどの企業は、"*クラウド導入チーム*" 程度の規模からスタートします。 しかし、[MVP のベスト プラクティス](#best-practice-minimum-viable-product-mvp)構造により近い組織構造を確立する方法をお勧めします。
 
 ## <a name="cloud-adoption-team-only"></a>クラウド導入チームのみ
 

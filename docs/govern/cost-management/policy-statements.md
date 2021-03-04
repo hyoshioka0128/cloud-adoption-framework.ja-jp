@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 7a5f69d397096a78125e5e158cb894683e06c535
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3a528339c88a5ec70381580fefdcd358d9b60c93
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021748"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789526"
 ---
 # <a name="cost-management-sample-policy-statements"></a>コスト管理のサンプル ポリシー ステートメント
 
@@ -39,7 +39,7 @@ ms.locfileid: "97021748"
 
 **ポリシー ステートメント:** 承認済み予算と予算制限のメカニズムを使用して、請求単位にクラウド デプロイを割り当てる必要があります。
 
-**設計オプション:** Azure では、[Azure Cost Management + Billing](/azure/cost-management/manage-budgets) を使用して予算を制御することができます。
+**設計オプション:** Azure では、[Azure Cost Management + Billing](/azure/cost-management-billing/cloudyn/manage-budgets) を使用して予算を制御することができます。
 
 ## <a name="underutilization"></a>過小使用
 
@@ -49,7 +49,7 @@ ms.locfileid: "97021748"
 
 **設計オプション:**
 
-- Azure では、計画された支出と実際の支出を、[Azure Cost Management + Billing](/azure/cost-management/quick-acm-cost-analysis) を使用して管理することができます。
+- Azure では、計画された支出と実際の支出を、[Azure Cost Management + Billing](/azure/cost-management-billing/costs/quick-acm-cost-analysis) を使用して管理することができます。
 - 課金単位でリソースをグループ化するためのオプションがいくつかあります。 Azure で、ガバナンス チームと協力して、[リソースの整合性モデル](../../decision-guides/resource-consistency/index.md)を選択し、すべての資産に適用する必要があります。
 
 ## <a name="overprovisioned-assets"></a>オーバープロビジョニングの資産
@@ -71,7 +71,7 @@ ms.locfileid: "97021748"
 
 **設計オプション:**
 
-- Azure では、[Azure Monitor の Insights 機能](/azure/azure-monitor/insights/vminsights-performance)が、システム利用率の分析に役立つ場合があります。
+- Azure では、[Azure Monitor の Insights 機能](/azure/azure-monitor/vm/vminsights-performance)が、システム利用率の分析に役立つ場合があります。
 - ロールに基づいて、リソースをグループ化およびタグ付けするためのオプションがいくつかあります。 Azure で、ガバナンス チームと協力して、[リソースの整合性モデル](../../decision-guides/resource-consistency/index.md)を選択し、すべての資産にこれを適用する必要があります。
 
 ## <a name="next-steps"></a>次のステップ

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 03604898788528fd3167cee62b24c68d080b0a5a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 956c7edde94b1564ebadd690ef140575c30524bc
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018195"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790580"
 ---
 # <a name="empower-adoption-with-digital-invention"></a>デジタル発明で導入を強化する
 
@@ -38,7 +38,7 @@ ms.locfileid: "97018195"
 - [ソリューションのデプロイ](#solution-deployment): チームが変更を顧客と速やかに共有できるように、ソリューションをデプロイします。
 - [統合された測定](#integrated-measurements): 完全なチームによる明確な分析のために、学習メトリックをフィードバック ループに追加します。
 
-技術的スパイクを最小限に抑えるために、これらの各原則において最初は成熟度が低いと仮定します。 ただし、仮説がより詳細になるにつれて、スケーリングが可能なツールやプロセスに合わせて調整を行って、事前に明確に計画を立てます。 Azure では、[GitHub](https://guides.github.com) と [Azure DevOps](/azure/devops) により、小規模なチームが摩擦をほとんど生じさせずに作業を開始できます。 これらのチームは、何千人もの開発者がスケーリング ソリューションで共同作業を行い、何百もの顧客の仮説をテストする規模に発展する可能性があります。 この記事の残りの部分では、これらの各原則にわたって導入を強化するための、"大きく計画し、小さく始める" というアプローチについて説明します。
+技術的スパイクを最小限に抑えるために、これらの各原則において最初は成熟度が低いと仮定します。 ただし、仮説がより詳細になるにつれて、スケーリングが可能なツールやプロセスに合わせて調整を行って、事前に明確に計画を立てます。 Azure では、[GitHub](https://guides.github.com) と [Azure DevOps](/azure/devops/) により、小規模なチームが摩擦をほとんど生じさせずに作業を開始できます。 これらのチームは、何千人もの開発者がスケーリング ソリューションで共同作業を行い、何百もの顧客の仮説をテストする規模に発展する可能性があります。 この記事の残りの部分では、これらの各原則にわたって導入を強化するための、"大きく計画し、小さく始める" というアプローチについて説明します。
 
 ## <a name="shared-solution"></a>共有ソリューション
 
@@ -54,7 +54,7 @@ ms.locfileid: "97018195"
 
 すべてのフィードバック ポイントは、顧客のニーズに対する解決策となる可能性を秘めています。 さらに重要なこととして、顧客から直接得られるすべてのフィードバックは、パートナーシップを改善する機会となります。 フィードバックが MVP ソリューションに取り入れられたら、顧客と喜びを分かち合います。 フィードバックが実用的ではない場合でも、そのフィードバックの優先度を下げるという決定を明らかにすることで、[成長思考](./learn.md#growth-mindset)と[継続的な学習](./learn.md#continuous-learning)の重視を示します。
 
-[Azure DevOps](/azure/devops) には、[フィードバックの要求、提供、管理を行う](/azure/devops/project/feedback)ための方法が含まれています。 これらの各ツールにより、フィードバックを 1 か所にまとめることができるため、チームは透明性のあるフィードバック ループに対応するためのアクションを実行し、フォローアップを提供できます。
+[Azure DevOps](/azure/devops/) には、[フィードバックの要求、提供、管理を行う](/azure/devops/project/feedback/)ための方法が含まれています。 これらの各ツールにより、フィードバックを 1 か所にまとめることができるため、チームは透明性のあるフィードバック ループに対応するためのアクションを実行し、フォローアップを提供できます。
 
 ## <a name="continuous-integration"></a>継続的インテグレーション
 
@@ -62,7 +62,7 @@ ms.locfileid: "97018195"
 
 継続的インテグレーションでは、コードの変更がメイン ブランチに頻繁にマージされます。 自動化されたビルドおよびテスト プロセスにより、メイン ブランチのコードが常に運用品質であることが確認されます。 これにより、開発者が協力して、正確で信頼性の高いフィードバック ループを提供する共有ソリューションを開発できるようになります。
 
-Azure DevOps と [Azure Pipelines](/azure/devops/pipelines) では、GitHub やその他のさまざまなリポジトリでいくつかの手順を実行するだけで継続的インテグレーション機能が提供されます。 継続的インテグレーションの詳細については、[こちら](/azure/devops/learn/what-is-continuous-integration)をご覧ください。または、[ハンズオン ラボ](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration)で詳細を確認してください。 [Azure DevOps 経由での CI/CD パイプライン](https://azure.microsoft.com/solutions/devops)の作成を高速化できるソリューション アーキテクチャが提供されています。
+Azure DevOps と [Azure Pipelines](/azure/devops/pipelines/) では、GitHub やその他のさまざまなリポジトリでいくつかの手順を実行するだけで継続的インテグレーション機能が提供されます。 継続的インテグレーションの詳細については、[こちら](/azure/devops/learn/what-is-continuous-integration)をご覧ください。または、[ハンズオン ラボ](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration/)で詳細を確認してください。 [Azure DevOps 経由での CI/CD パイプライン](https://azure.microsoft.com/solutions/devops/)の作成を高速化できるソリューション アーキテクチャが提供されています。
 
 ## <a name="reliable-testing"></a>信頼性の高いテスト
 
@@ -86,13 +86,13 @@ MVP ソリューションの初期の反復期間には、欠陥が想定され�
 
 早期の投資は、時間損失につながる可能性があります。 さらに重要なことは、リリース パイプラインの依存関係を作成すると、チームが初期の方向転換に対して耐性を持てるようになります。 最初の数回の反復を終えた後、または顧客からのフィードバックが成功の可能性を示しているときは、より高度なデプロイ モデルを早急に導入する必要があります。
 
-仮説の検証のどの段階でも、Azure DevOps と [Azure Pipelines](/azure/devops/pipelines) は、継続的デリバリー機能と継続的デプロイ機能を提供します。 継続的デリバリーの詳細については、[こちら](/azure/devops/learn/what-is-continuous-delivery)をご覧ください。または、[ハンズオン ラボ](https://www.azuredevopslabs.com/labs/azuredevops/continuousdeployment)を参照してください。 ソリューション アーキテクチャにより、[Azure DevOps を使用した CI/CD パイプライン](https://azure.microsoft.com/solutions/devops)の作成を高速化することもできます。
+仮説の検証のどの段階でも、Azure DevOps と [Azure Pipelines](/azure/devops/pipelines/) は、継続的デリバリー機能と継続的デプロイ機能を提供します。 継続的デリバリーの詳細については、[こちら](/azure/devops/learn/what-is-continuous-delivery)をご覧ください。または、[ハンズオン ラボ](https://www.azuredevopslabs.com/labs/azuredevops/continuousdeployment/)を参照してください。 ソリューション アーキテクチャにより、[Azure DevOps を使用した CI/CD パイプライン](https://azure.microsoft.com/solutions/devops/)の作成を高速化することもできます。
 
 ## <a name="integrated-measurements"></a>統合された測定
 
 [顧客への影響を測定する](./measure.md)ときは、ソリューションの変更に対する顧客の反応を理解することが重要です。 "*テレメトリ*" と呼ばれるこのデータでは、ユーザー (またはユーザーのコーホート) がソリューションの使用時に行ったアクションに関する分析情報が提供されます。 このデータから、仮説の定量的な検証を簡単に取得できます。 これらのメトリックを使用して、ソリューションを調整し、より詳細な仮説を生成できます。 これらの微妙な変更により、初期ソリューションがその後の反復でさらに成熟し、最終的に大規模な導入を繰り返すことができます。
 
-Azure では、[Azure Monitor](/azure/azure-monitor/overview) に、カスタマー エクスペリエンスからデータを収集して確認するためのツールとインターフェイスが用意されています。 これらの観測と分析情報を適用して、[Azure Boards](/azure/devops/boards) でバックログを調整できます。
+Azure では、[Azure Monitor](/azure/azure-monitor/overview) に、カスタマー エクスペリエンスからデータを収集して確認するためのツールとインターフェイスが用意されています。 これらの観測と分析情報を適用して、[Azure Boards](/azure/devops/boards/) でバックログを調整できます。
 
 ## <a name="next-steps"></a>次のステップ
 

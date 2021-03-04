@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 53e2f872383c23398001ec85320a27d6ec99e6d3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ac9ece45ffc0a0fb1f0ef65385dd7f4372d6e73e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021714"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790835"
 ---
 # <a name="cost-management-tools-in-azure"></a>Azure でのコスト管理ツール
 
@@ -21,7 +21,7 @@ ms.locfileid: "97021714"
 
 この規範をサポートするポリシーとプロセスを成熟させるのに役立つ Azure ネイティブ ツールの一覧を次に示します。
 
-| ツール | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview)  | [Power BI Desktop コネクタ](/power-bi/connect-data/desktop-connect-azure-cost-management) | [Azure Policy](/azure/governance/policy/overview) |
+| ツール | [Azure Portal](https://azure.microsoft.com/features/azure-portal/) | [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) | [Power BI Desktop コネクタ](/power-bi/connect-data/desktop-connect-azure-cost-management) | [Azure Policy](/azure/governance/policy/overview) |
 |---------|---------|---------|---------|---------|
 | 予算管理     | いいえ         | はい         | いいえ         | はい         |
 | 1 つのリソースでの支出の監視    | はい         | はい         | はい         | いいえ         |

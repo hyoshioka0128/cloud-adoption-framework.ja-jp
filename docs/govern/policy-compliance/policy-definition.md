@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: a148e80e11ee54d14e7741a01830717dfb57e745
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ff6a3836280dc213e63719b2c25ed4be5c2ea104
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019912"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791362"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>クラウド ガバナンスのための企業ポリシーを定義する
 
@@ -24,8 +24,7 @@ ms.locfileid: "97019912"
 従来のガバナンスと斬新的なガバナンスでは、企業ポリシーによって、ガバナンスの実用的な定義を作成します。 ほとんどの IT ガバナンス アクションでは、企業ポリシーの監視、適用、運用、および自動化を行うテクノロジを実装するように努力しています。 クラウド ガバナンスも同様の概念に基づいています。
 
 ![コーポレート ガバナンスとガバナンスの規範](../../_images/operational-transformation-govern-large.png)
-
-"*図 1:コーポレート ガバナンスとガバナンスの規範*
+*図 1:コーポレート ガバナンスとガバナンスの規範*
 
 上の図は、ガバナンス戦略の一部としてやりとりする必要があるビジネス リスク、ポリシーとコンプライアンス、および監視と適用のメカニズム間の関係を示しています。 クラウド ガバナンスの 5 つの規範により、これらのやりとりを管理し、戦略を実現することができます。
 

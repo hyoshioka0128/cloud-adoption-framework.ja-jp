@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 8f7f2b5ec27d852bbe4adfffe79671446c898205
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 68545b97525eca19ddfb67179744458ea97ad594
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018586"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792076"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Azure でデータを民主化するためのツール
 
@@ -40,26 +40,26 @@ ms.locfileid: "97018586"
 
 Azure では、上記のフェーズでデジタル発明を加速するために、一般的に次のツールが使用されます。
 
-- [Power BI](/power-bi)
-- [Azure Data Catalog](/azure/data-catalog)
-- [Azure Synapse Analytics](/azure/synapse-analytics)
-- [Azure Cosmos DB](/azure/cosmos-db)
-- [Azure Database for PostgreSQL](/azure/postgresql)
-- [Azure Database for MySQL](/azure/mysql)
-- [Azure Database for MariaDB](/azure/mariadb)
+- [Power BI](/power-bi/)
+- [Azure Data Catalog](/azure/data-catalog/)
+- [Azure Synapse Analytics](/azure/synapse-analytics/)
+- [Azure Cosmos DB](/azure/cosmos-db/)
+- [Azure Database for PostgreSQL](/azure/postgresql/)
+- [Azure Database for MySQL](/azure/mysql/)
+- [Azure Database for MariaDB](/azure/mariadb/)
 - [Azure Database for PostgreSQL ハイパースケール](/azure/postgresql/concepts-hyperscale-nodes)
 - [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction)
-- [Azure Database Migration Service](/azure/dms)
-- [Azure SQL Database (Azure SQL Managed Instance あり、またはなし)](/azure/sql-database)
-- [Azure Data Factory](/azure/data-factory)
-- [Azure Stream Analytics](/azure/stream-analytics)
-- [SQL Server Integration Services](/sql/integration-services)
-- [Azure Stack](/azure-stack)
-- [SQL Server Stretch Database](/sql/sql-server/stretch-database)
-- [Azure StorSimple](/azure/storsimple)
-- [Azure Files](/azure/storage/files)
+- [Azure Database Migration Service](/azure/dms/)
+- [Azure SQL Database (Azure SQL Managed Instance あり、またはなし)](/azure/azure-sql/)
+- [Azure Data Factory](/azure/data-factory/)
+- [Azure Stream Analytics](/azure/stream-analytics/)
+- [SQL Server Integration Services](/sql/integration-services/sql-server-integration-services)
+- [Azure Stack](/azure-stack/)
+- [SQL Server Stretch Database](/sql/sql-server/stretch-database/stretch-database)
+- [Azure StorSimple](/azure/storsimple/)
+- [Azure Files](/azure/storage/files/)
 - [Azure File Sync](/azure/storage/files/storage-sync-files-planning)
-- [PolyBase](/sql/relational-databases/polybase)
+- [PolyBase](/sql/relational-databases/polybase/polybase-guide)
 
 発明が大規模な導入に近づくにつれて、各ソリューションの側面に改良と技術的な成熟が必要です。 そのような場合は、これらのサービスのより多くが必要になる可能性があります。 仮説のテスト プロセスに関連する Azure ツールのガイダンスについては、このページの左側の目次を使用してください。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 4a6c468f17e398286152aa44ea8043cef2881e6d
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 4b6d59db89765c75c7ad2b5dbc93eadab8d28f53
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712146"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791039"
 ---
 # <a name="identity-decision-guide"></a>ID 決定ガイド
 
@@ -61,7 +61,7 @@ Azure AD は、ユーザーとグループに Azure プラットフォーム上�
 多くの場合、既存のオンプレミス Active Directory インフラストラクチャを持つ組織においては、既存のユーザーとアクセス管理を保持すると同時に、クラウド リソースの管理に必要な IAM 機能を提供するためには、ディレクトリ同期が最適なソリューションです。 このプロセスでは、Azure AD とオンプレミスのディレクトリ サービスの間でディレクトリ情報を継続的にレプリケートし、ユーザーの共通資格情報と、一貫性のある ID、ロール、アクセス許可のシステムを組織全体で可能にします。
 
 > [!NOTE]
-> Microsoft 365 を導入済みの組織では、オンプレミス Active Directory インフラストラクチャと Azure Active Directory の間に[ディレクトリ同期](/office365/enterprise/set-up-directory-synchronization)を既に実装している場合があります。
+> Microsoft 365 を導入済みの組織では、オンプレミス Active Directory インフラストラクチャと Azure Active Directory の間に[ディレクトリ同期](/microsoft-365/enterprise/set-up-directory-synchronization)を既に実装している場合があります。
 
 **ディレクトリ同期の前提条件:** 同期済み ID ソリューションを使用するには、次の事項が前提となります。
 

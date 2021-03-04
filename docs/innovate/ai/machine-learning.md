@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 8518fdb8702b92575069e22c8994e65ef862ea40
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
+ms.openlocfilehash: acbb9fd8744b720848ad5043cbd71080dba4c8fb
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909414"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791090"
 ---
 <!-- cSpell:ignore scikit RLlib ONNX Jupyter -->
 
@@ -23,7 +23,7 @@ Azure には、高度な機械学習機能が用意されています。 Azure M
 
 ローカル コンピューターでトレーニングを開始し、その後、クラウドにスケールアウトすることもできます。 また、このサービスは、PyTorch、TensorFlow、scikit-learn、Ray および RLlib など、ディープ ラーニングや強化のための一般的なオープンソース ツールと連携します。
 
-[Machine Learning](/azure/machine-learning/) を開始します。 [機械学習の実験の開始](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)方法についてのチュートリアルも用意されています。 機械学習のオープンソース モデル形式とランタイムの詳細については、[ONNX Runtime](http://onnxruntime.ai) を参照してください。
+[Machine Learning](/azure/machine-learning/) を開始します。 [機械学習の実験の開始](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)方法についてのチュートリアルも用意されています。 機械学習のオープンソース モデル形式とランタイムの詳細については、[ONNX Runtime](https://www.onnxruntime.ai/) を参照してください。
 
 機械学習ソリューションを使用する一般的なシナリオを以下に示します。
 

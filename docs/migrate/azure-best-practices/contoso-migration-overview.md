@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 7e549cb26a56602a957866ae6173341c19777d99
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: fe416b568b2133d9ff1cd27c5694c98f2925cfce
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97014846"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789968"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Azure へのアプリケーション移行例の概要
 
@@ -47,7 +47,7 @@ Azure には、クラウド サービスの包括的なセットが用意され�
 このセクションでは、いくつかの一般的な移行シナリオの例を紹介します。 各例では、背景情報や詳細なデプロイ シナリオについて説明すると共に、移行のインフラストラクチャを設定して移行のためのオンプレミス リソースの適合性を評価する方法を示しています。 このセクションには、今後も記事が追加される予定です。
 
 ![移行および最新化プロジェクトのカテゴリの図。](./media/migration-patterns.png)
-"_図 1: 移行および最新化プロジェクトの一般的なカテゴリ_
+"*図 1: 移行および最新化プロジェクトの一般的なカテゴリ*
 
 このシリーズでは、移行戦略を決定付ける、わずかに異なるビジネス目標によって推進される、各移行シナリオに焦点を合わせています。 デプロイ シナリオごとに、次の情報を示します。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 01c742497359eef2d610fe5a8357f1262614d782
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: bc6989d607f97fae847f712db96428e52ffa0de0
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018569"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790682"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>既存のデータ ソースの移行と最新化によってデータを収集する
 
@@ -27,9 +27,9 @@ ms.locfileid: "97018569"
 
 ## <a name="primary-toolset"></a>プライマリ ツールセット
 
-オンプレミスのデータを移行して最新化する場合、最も一般的な Azure ツールの選択肢は [Azure Database Migration Service](/azure/dms) です。 このサービスは、より広範な [Azure Migrate](/azure/migrate/migrate-services-overview) ツールチェーンの一部です。 既存の SQL Server データ ソースについては、[Data Migration Assistant](/sql/dma/dma-overview) を使用して、少数のデータ構造の評価と移行を行うことができます。
+オンプレミスのデータを移行して最新化する場合、最も一般的な Azure ツールの選択肢は [Azure Database Migration Service](/azure/dms/) です。 このサービスは、より広範な [Azure Migrate](/azure/migrate/migrate-services-overview) ツールチェーンの一部です。 既存の SQL Server データ ソースについては、[Data Migration Assistant](/sql/dma/dma-overview) を使用して、少数のデータ構造の評価と移行を行うことができます。
 
-Oracle と NoSQL の移行をサポートするために、特定の種類のソース データベースのターゲット データベースへの移行に対して、[Database Migration Service](/azure/dms) を使用することもできます。 例として、Oracle データベースを PostgreSQL に、または MongoDB データベースを Azure Cosmos DB に移行する場合などがあります。 一般的に、導入チームは、パートナー ツールまたはカスタム スクリプトを使用して、Azure Cosmos DB、Azure HDInsight、またはサービスとしてのインフラストラクチャ (IaaS) に基づく仮想マシンのオプションに移行します。
+Oracle と NoSQL の移行をサポートするために、特定の種類のソース データベースのターゲット データベースへの移行に対して、[Database Migration Service](/azure/dms/) を使用することもできます。 例として、Oracle データベースを PostgreSQL に、または MongoDB データベースを Azure Cosmos DB に移行する場合などがあります。 一般的に、導入チームは、パートナー ツールまたはカスタム スクリプトを使用して、Azure Cosmos DB、Azure HDInsight、またはサービスとしてのインフラストラクチャ (IaaS) に基づく仮想マシンのオプションに移行します。
 
 ## <a name="considerations-and-guidance"></a>考慮事項とガイダンス
 
@@ -50,7 +50,7 @@ Oracle と NoSQL の移行をサポートするために、特定の種類のソ
 | source | 移行先 | ツール | 移行の種類 | ガイダンス |
 |--|--|--|--|--|
 | SQL Server | Azure SQL データベース | Database Migration Service | オフライン | [チュートリアル](/azure/dms/tutorial-sql-server-to-azure-sql) |
-| SQL Server | Azure SQL データベース | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-sql-server-azure-sql-online) |
+| SQL Server | Azure SQL データベース | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-sql-server-to-azure-sql) |
 | SQL Server | Azure SQL Managed Instance | Database Migration Service | オフライン | [チュートリアル](/azure/dms/tutorial-sql-server-to-managed-instance) |
 | SQL Server | Azure SQL Managed Instance | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-sql-server-managed-instance-online) |
 | RDS SQL Server | Azure SQL Database または Azure SQL Managed Instance | Database Migration Service | オンライン | [チュートリアル](/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |
