@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 0e31ec9f19f504afead27744919d4c34f700dd1e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f89f34227e26657a80ef2e9eacb9bdf7397b1649
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019963"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792841"
 ---
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>クラウドの企業 IT ポリシーを準備する
 
@@ -50,8 +50,6 @@ Microsoft のクラウド導入フレームワークの違いは、購入サイ�
 ## <a name="minimum-viable-product-mvp-for-policy"></a>ポリシーの MVP (Minimum Viable Product: 実用最小限の製品)
 
 クラウド ガバナンス チームと導入チームの間にパートナーシップを築くための最初の手順は、ポリシーの MVP に関する合意です。 クラウド ガバナンスの MVP では、ビジネス リスクは最初は小さくても、時間の経過と共に組織に導入されるクラウド サービスが増えていくにつれて、リスクも大きくなる可能性があることを認識する必要があります。
-
-<!-- cSpell:ignore HBI -->
 
 たとえば、高ビジネス インパクト (HBI) データを含まない 5 台の VM をデプロイする企業にとって、ビジネス リスクは小さなものです。 クラウド導入プロセスが進み、VM の台数が 1,000 台に達し、企業が HBI データの移行を開始すると、ビジネス リスクは大きくなります。
 

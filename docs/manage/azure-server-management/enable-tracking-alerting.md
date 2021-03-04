@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: eb784eb557c6296e454e1f79bc8151152645dd0c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2fc89b406c05c294ea57d917a2cd2d5a6e05c2d1
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017158"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792603"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -25,11 +25,11 @@ Azure Change Tracking と Inventory では、ハイブリッド環境の構成�
 
 ![Azure portal の Azure Automation [インベントリ] ビューのスクリーンショット](./media/change-tracking1.png)
 
-各レジストリ キーの詳細については、「[レジストリ キーの変更追跡](/azure/automation/automation-change-tracking#registry-key-change-tracking)」を参照してください。 評価するキーを選択し、それを有効にします。 この設定は、現在のワークスペースで有効になっているすべての VM に適用されます。
+各レジストリ キーの詳細については、「[レジストリ キーの変更追跡](/azure/automation/change-tracking/overview#registry-key-change-tracking)」を参照してください。 評価するキーを選択し、それを有効にします。 この設定は、現在のワークスペースで有効になっているすべての VM に適用されます。
 
 サービスを使用して、重要なファイルの変更を追跡することもできます。 たとえば、`C:\windows\system32\drivers\etc\hosts` ファイルは、OS がホスト名を IP アドレスにマップするために使用されるため、これを追跡できます。 このファイルを変更すると、接続の問題が発生したり、トラフィックが危険な Web サイトにリダイレクトされたりする可能性があります。
 
-hosts ファイルに対してファイル コンテンツの追跡を有効にするには、「[ファイル コンテンツの追跡の有効化](/azure/automation/change-tracking-file-contents#enable-file-content-tracking)」の手順に従ってください。
+hosts ファイルに対してファイル コンテンツの追跡を有効にするには、「[ファイル コンテンツの追跡の有効化](/azure/automation/change-tracking/manage-change-tracking#enable-file-content-tracking)」の手順に従ってください。
 
 追跡中のファイルに加えられた変更に対するアラートを追加することもできます。 たとえば、hosts ファイルの変更に対してアラートを設定するとします。 これを行うには、リンクされた Log Analytics ワークスペースのコマンド バーまたは **[ログ検索]** で **[Log Analytics]** を選択します。 Log Analytics で、次のクエリを使用して、hosts ファイルに対する変更を検索します。
 

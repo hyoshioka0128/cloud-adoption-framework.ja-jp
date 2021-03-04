@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 1252507023f98e4b0998f83e08480da1c41d493b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 50267dd2dd1456392cdb547949ec1296c78f0e31
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020808"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792093"
 ---
 # <a name="standard-enterprise-governance-guide"></a>標準的な企業のガバナンス ガイド
 
@@ -42,7 +42,7 @@ ms.locfileid: "97020808"
 2. 2 つのサブスクリプション (運用環境ワークロード用に 1 つと非運用環境ワークロード用に 1 つ)。
 3. このグループ階層の各レベルで、[一貫性のある用語体系](../../../ready/azure-best-practices/naming-and-tagging.md)を適用する必要があります。
 4. リソース グループは、コンテンツのライフサイクルを考慮した方法でデプロイする必要があります。つまり、一緒に開発されたものはすべて、一緒に管理し、一緒に廃止します。 リソース グループのベスト プラクティスの詳細については、「[リソースの整合性の意思決定ガイド](../../../decision-guides/resource-consistency/index.md)」を参照してください。
-5. [リージョンの選択](../../../migrate/azure-best-practices/multiple-regions.md)は非常に重要であり、ネットワーク、監視、監査をフェールオーバー/フェールバック用に配置できるように考慮し、[必要な SKU を優先リージョンで使用できる](https://azure.microsoft.com/global-infrastructure/services)ことを確認する必要があります。
+5. [リージョンの選択](../../../migrate/azure-best-practices/multiple-regions.md)は非常に重要であり、ネットワーク、監視、監査をフェールオーバー/フェールバック用に配置できるように考慮し、[必要な SKU を優先リージョンで使用できる](https://azure.microsoft.com/global-infrastructure/services/)ことを確認する必要があります。
 
 このパターンの使用例を次に示します。
 

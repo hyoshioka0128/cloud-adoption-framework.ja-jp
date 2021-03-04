@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 30cdc27e87cdc273df576db03f6db980b6b4f776
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e720f26b4189c30dd8f0a5fb0b37c7fac4535549
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018144"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792722"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>アンビエント エクスペリエンス:デバイスの操作
 
@@ -46,7 +46,7 @@ ms.locfileid: "97018144"
 
 顧客が活動的で場所を頻繁に変える場合は、これが特定のソリューションでのアンビエント エクスペリエンスの最適な形態になる可能性があります。 この 10 年間、既存のソリューションとモバイル エクスペリエンスの統合がイノベーションのきっかけとなることがよくありました。
 
-Azure App Service はこのアプローチの好例です。 初期の反復の間、[Azure App Service の Web アプリ機能](/azure/app-service/overview)を仮説のテストに使用できます。 仮説がさらに複雑になると、[Azure App Service のモバイル アプリ機能](/azure/app-service-mobile)で Web アプリを拡張し、さまざまなモバイル プラットフォームで実行することができます。
+Azure App Service はこのアプローチの好例です。 初期の反復の間、[Azure App Service の Web アプリ機能](/azure/app-service/overview)を仮説のテストに使用できます。 仮説がさらに複雑になると、[Azure App Service のモバイル アプリ機能](/previous-versions/azure/app-service-mobile/)で Web アプリを拡張し、さまざまなモバイル プラットフォームで実行することができます。
 
 ## <a name="mixed-reality"></a>複合現実
 
@@ -69,9 +69,9 @@ Azure App Service はこのアプローチの好例です。 初期の反復の�
 
 Azure の Integrated Reality の例として含まれるもの:
 
-- [Azure モノのインターネット (IoT) ソリューション](/azure/iot-fundamentals):デバイスと、そのデバイスからクラウドに流れ、エンド ユーザーに戻されるデータのフローの管理を支援する一連の Azure サービス。
-- [Azure Sphere](/azure-sphere):デバイスと Azure IoT ソリューションの間でデータを安全に送信することを既存のデバイスで可能にする本質的に安全な方法を提供するハードウェアとソフトウェアの組み合わせ。
-- [Azure Kinect DK](/azure/kinect-dk): 高度な Computer Vision と音声モデルを備えた AI センサー。 これらのセンサーでは、周囲の環境から映像データや音声データを収集し、それらの入力データをソリューションに提供できます。
+- [Azure モノのインターネット (IoT) ソリューション](/azure/iot-fundamentals/):デバイスと、そのデバイスからクラウドに流れ、エンド ユーザーに戻されるデータのフローの管理を支援する一連の Azure サービス。
+- [Azure Sphere](/azure-sphere/):デバイスと Azure IoT ソリューションの間でデータを安全に送信することを既存のデバイスで可能にする本質的に安全な方法を提供するハードウェアとソフトウェアの組み合わせ。
+- [Azure Kinect DK](/azure/kinect-dk/): 高度な Computer Vision と音声モデルを備えた AI センサー。 これらのセンサーでは、周囲の環境から映像データや音声データを収集し、それらの入力データをソリューションに提供できます。
 
 この 3 つのツールをすべて使用することで、顧客のニーズが発生した時点で、周囲の自然な環境からデータを収集できます。 ソリューションでは、データ入力に応答し、ニーズを解決できます。そのニーズのトリガーが発生したことに顧客が気付く前にニーズが解決されることもあります。
 
@@ -83,11 +83,11 @@ Azure の Integrated Reality の例として含まれるもの:
 
 調整現実のその他の例は、世界中の工場の生産現場から提供されます。 統合現実の初期段階では、デバイスのセンサーが過熱などの状況を検出し、アプリケーションを通じて人に警告していました。 調整現実では、顧客が引き続き関与する場合もありますが、フィードバック ループが厳しくなります。 調整現実を取り入れた工場の生産現場で、あるデバイスが組み立てラインのどこかにある重要な機械の過熱を検出したとします。 生産現場の別の場所で、別のデバイスが生産速度を少し落としてその機械を冷却できるようにし、状況が解決されたら元のペースに戻します。 この場合、顧客は間接的な参加者です。 顧客はアプリケーションを使用してルールを設定し、それらのルールが生産に与えた影響を理解することができますが、フィードバック ループにはルールは不要です。
 
-[Azure モノのインターネット (IoT) ソリューション](/azure/iot-fundamentals)、[Azure Sphere](/azure-sphere)、[Azure Kinect DK](/azure/kinect-dk) で説明した Azure サービスは、それぞれ調整現実ソリューションの構成要素になる可能性があります。 元のアプリケーションとビジネス ロジックは、環境の入力と物理環境で行う必要がある変更の間を仲介する役割を果たします。
+[Azure モノのインターネット (IoT) ソリューション](/azure/iot-fundamentals/)、[Azure Sphere](/azure-sphere/)、[Azure Kinect DK](/azure/kinect-dk/) で説明した Azure サービスは、それぞれ調整現実ソリューションの構成要素になる可能性があります。 元のアプリケーションとビジネス ロジックは、環境の入力と物理環境で行う必要がある変更の間を仲介する役割を果たします。
 
 デジタル ツインは調整現実のもう 1 つの例です。 この用語は、コンピューター、モバイル、または複合現実の形式で提示される、物理デバイスのデジタル表現を指します。 洗練された 3D モデルとは異なり、デジタル ツインは、物理的環境で実際のデバイスから収集されたデータを反映します。 このソリューションにより、ユーザーは現実世界では不可能な方法でデジタル表現を操作できます。 このアプローチでは、物理デバイスによって複合現実環境が調整されます。 ただし、このソリューションは統合現実ソリューションから引き続きデータを収集し、そのデータを使用して顧客の現在の環境の現実を形成します。
 
-Azure では、デジタル ツインは [Azure Digital Twins](/azure/digital-twins/about-digital-twins) という名称のサービスから作成され、アクセスされます。
+Azure では、デジタル ツインは [Azure Digital Twins](/azure/digital-twins/overview) という名称のサービスから作成され、アクセスされます。
 
 ## <a name="next-steps"></a>次のステップ
 

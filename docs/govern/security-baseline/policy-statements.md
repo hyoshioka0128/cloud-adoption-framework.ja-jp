@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: ce6d0747fdca348a2a97fa9b796801a99dcfb98b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 06ba3164410c5828da7dd97a999a0c152580a910
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018977"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792382"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>セキュリティ ベースラインのサンプル ポリシー ステートメント
 
@@ -63,7 +63,7 @@ ms.locfileid: "97018977"
 
 **ポリシー ステートメント:** パブリックにアクセス可能なすべてのネットワーク エンドポイントに、自動化された DDoS リスク軽減メカニズムをデプロイします。 IaaS によってサポートされる一般向け Web サイトは、DDoS なしでインターネットに公開しないでください。
 
-**使用可能な設計オプション:** [Azure DDoS Protection Standard](/azure/virtual-network/ddos-protection-overview) を使用して、DDoS 攻撃による中断を最小限に抑えます。
+**使用可能な設計オプション:** [Azure DDoS Protection Standard](/azure/ddos-protection/ddos-protection-overview) を使用して、DDoS 攻撃による中断を最小限に抑えます。
 
 ## <a name="secure-on-premises-connectivity"></a>オンプレミスの接続をセキュリティ保護する
 
@@ -87,7 +87,7 @@ ms.locfileid: "97018977"
 
 **ポリシー ステートメント:** クラウドのデプロイに影響を及ぼす可能性があるトレンドおよび潜在的悪用をセキュリティ チームが定期的にレビューし、クラウドで使用されるセキュリティ ベースライン ツールの更新を提供する必要があります。
 
-**使用可能な設計オプション:** 関連する IT およびガバナンス チームのメンバーが参加するセキュリティ レビュー会議を定期的に行います。 既存のセキュリティ データとメトリックのレビューを行って、現在のポリシーとセキュリティ ベースライン ツールのギャップを確かめ、新しいリスクを修復するようにポリシーを更新します。 [Azure Advisor](/azure/advisor/advisor-overview) と [Azure Security Center](/azure/security-center/security-center-intro) を使用して、実際のデプロイに固有の新しい脅威について、アクションにつながる分析情報を入手します。
+**使用可能な設計オプション:** 関連する IT およびガバナンス チームのメンバーが参加するセキュリティ レビュー会議を定期的に行います。 既存のセキュリティ データとメトリックのレビューを行って、現在のポリシーとセキュリティ ベースライン ツールのギャップを確かめ、新しいリスクを修復するようにポリシーを更新します。 [Azure Advisor](/azure/advisor/advisor-overview) と [Azure Security Center](/azure/security-center/security-center-introduction) を使用して、実際のデプロイに固有の新しい脅威について、アクションにつながる分析情報を入手します。
 
 ## <a name="next-steps"></a>次のステップ
 

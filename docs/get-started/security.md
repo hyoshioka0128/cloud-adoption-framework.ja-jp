@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: a61af9ba10bf99168aa2cc389e9a12930745101c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5f44a962c5c24c7946cd8f92d281f096557f48a3
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022377"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792960"
 ---
 <!-- docutune:casing IR -->
 
@@ -168,7 +168,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
     - [ゼロ トラスト ユーザー アクセス リファレンス アーキテクチャ](/security/ciso-workshop/ciso-workshop-module-3#part-5-zero-trust-user-access-reference-architecture-842)。これは、クラウドの生成用のアクセス制御アーキテクチャを最新化するためのものです。
 
-    - [Azure Security Center](/azure/security-center) と [Microsoft クラウド アプリケーション セキュリティ](/cloud-app-security)。これは、クラウド資産をセキュリティで保護するためものです。
+    - [Azure Security Center](/azure/security-center/) と [Microsoft クラウド アプリケーション セキュリティ](/cloud-app-security/)。これは、クラウド資産をセキュリティで保護するためものです。
 
   - **セキュリティの意識と教育のプラン**: すべてのチームが、重要なセキュリティに関する基礎知識を身に付けます。
 
@@ -206,7 +206,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 - **Microsoft ラーニングとガイダンスを確認する:** Microsoft では、組織がクラウドへの変革と最新のセキュリティ戦略を計画する際に役立つ、分析情報と展望を公開しています。 資料には、記録されたトレーニング、ドキュメント、セキュリティのベスト プラクティスと推奨される標準が含まれています。
 
-  プランとアーキテクチャの策定に役立つ技術的なガイダンスについては、[Microsoft のセキュリティ ドキュメント](/security)を参照してください。
+  プランとアーキテクチャの策定に役立つ技術的なガイダンスについては、[Microsoft のセキュリティ ドキュメント](/security/)を参照してください。
 
 <br>
 
@@ -235,14 +235,14 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
   Microsoft では、セキュリティ ベースラインを構築するのに役立つガイダンスを公開しています。
   - [戦略とアーキテクチャに関する Azure のセキュリティ標準](/security/compass/compass): 環境のセキュリティ体制を形成するための戦略とアーキテクチャに関する推奨事項。
   - [Azure セキュリティ ベンチマーク](/azure/security/benchmarks/introduction): Azure 環境をセキュリティで保護するための特定の構成に関する推奨事項。
-  - [Azure セキュリティ ベースラインのトレーニング](/learn/modules/create-security-baselines)。
+  - [Azure セキュリティ ベースラインのトレーニング](/learn/modules/create-security-baselines/)。
 
 - **ガードレールを提供する:** 保護対策には、自動化されたポリシーの監査と適用を含める必要があります。 これらの新しい環境では、チームは組織のセキュリティ ベースラインの監査と適用の両方に努める必要があります。 これらの取り組みにより、ワークロードの開発時のセキュリティの問題を最小限に抑えることができるだけでなく、ワークロードの継続的インテグレーションと継続的配置 (CI/CD) も実現できます。
 
   Microsoft では、これを可能にするために Azure でいくつかのネイティブ機能を提供しています。
   - [セキュリティ スコア](/azure/security-center/secure-score-security-controls): Azure セキュリティ体制のスコア付けされた評価を使用して、組織内のセキュリティの取り組みとプロジェクトを追跡します。
   - [Azure Blueprints](/azure/governance/blueprints/overview):クラウド アーキテクトと一元化された IT グループは、組織の標準、パターン、要件を実装し、これらに準拠した一連の反復可能な Azure リソースを定義できます。
-  - [Azure Policy](/azure/governance/policy):これは、他のサービスで使用される可視性と制御の機能の基盤となります。 Azure Policy は、[Azure Resource Manager](/azure/azure-resource-manager) に統合されています。これにより、変更を監査し、Azure 内のリソースの作成前、作成中、または作成後にポリシーを適用できます。
+  - [Azure Policy](/azure/governance/policy/):これは、他のサービスで使用される可視性と制御の機能の基盤となります。 Azure Policy は、[Azure Resource Manager](/azure/azure-resource-manager/) に統合されています。これにより、変更を監査し、Azure 内のリソースの作成前、作成中、または作成後にポリシーを適用できます。
   - [ランディング ゾーンの運用を改善する](../ready/considerations/landing-zone-security.md): ランディング ゾーン内のセキュリティを強化するためのベスト プラクティスを使用します。
 
 <br>
@@ -269,7 +269,7 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 - 運用およびセキュリティ リスクのバランスを取ります。 これらの環境では、重要なビジネス プロセスを可能にする運用システムをホストしている可能性があるため、運用ダウンタイムのリスクを回避するために、セキュリティの強化を段階的に行うことが必要な場合があります。
 - ビジネスの重要度で、セキュリティ リスクの検出と修復に優先順位を付けます。 侵害された場合にビジネスに大きな影響を与えるワークロードと、リスクにさらされる可能性が高いワークロードから始めます。
 
-詳細については、「[ビジネス クリティカルなアプリケーションを特定して分類する](/azure/architecture/framework/security/applications-services#identify-and-classify-business-critical-applications)」をご覧ください。
+詳細については、「[ビジネス クリティカルなアプリケーションを特定して分類する](/azure/architecture/framework/security/design-apps-services#identify-and-classify-business-critical-applications)」をご覧ください。
 
 <br>
 
@@ -306,8 +306,8 @@ Microsoft では、Microsoft Azure に関するこのセキュリティ ガイ�
 
 手順の完了後、クラウド セキュリティの運用モードに入るときは、以下に示す次のステップを検討してください。
 
-- [Microsoft のセキュリティ ドキュメント](/security)を確認します。 セキュリティ担当者がサイバーセキュリティ戦略、アーキテクチャ、優先順位付けされたロードマップを策定および改善する際に役立つ技術的なガイダンスが提供されます。
+- [Microsoft のセキュリティ ドキュメント](/security/)を確認します。 セキュリティ担当者がサイバーセキュリティ戦略、アーキテクチャ、優先順位付けされたロードマップを策定および改善する際に役立つ技術的なガイダンスが提供されます。
 - [Azure サービスの組み込みセキュリティ コントロール](/azure/security/fundamentals/security-controls)に関する記事で、セキュリティ情報を確認します。
-- 「[Azure で利用できるセキュリティ サービスとテクノロジ](/azure/security/azure-security-services-technologies)」で、Azure セキュリティ ツールとサービスを確認します。
+- 「[Azure で利用できるセキュリティ サービスとテクノロジ](/azure/security/fundamentals/services-technologies)」で、Azure セキュリティ ツールとサービスを確認します。
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter/guidance/risk-assessment)を確認します。 ここには、規制コンプライアンス プロセスの一環としてリスク評価を行う際に役立つ広範なガイダンス、レポート、関連ドキュメントが含まれています。
 - セキュリティ要件を容易に満たすために使用できるサードパーティ ツールを確認します。 詳細については、「[Azure Security Center でのセキュリティ ソリューションの統合](/azure/security-center/security-center-partner-integration)」を参照してください。

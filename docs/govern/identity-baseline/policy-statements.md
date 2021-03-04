@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 3036bdff7300db9a84cf48a033aa73715ca225ab
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: e8c5216cd0541e7bd9a13e21669a20f0ef3df928
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712775"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792892"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>ID ベースラインのサンプル ポリシー ステートメント
 
@@ -42,7 +42,7 @@ ms.locfileid: "97712775"
 - ミッション クリティカルなアプリケーションまたは保護対象データに関わるあらゆるリソースに、最小特権アクセス モデルが適用されます。
 - アクセス許可の昇格は例外とするべきであり、クラウド ガバナンス チームはそのような例外をすべて記録する必要があります。 例外は定期的に監査されます。
 
-**使用可能な設計オプション:** [知る必要性](https://wikipedia.org/wiki/Need_to_know)と[最小特権セキュリティ](https://wikipedia.org/wiki/Principle_of_least_privilege)の各原則に基づいてアクセスを制限する Azure ロールベースのアクセス制御 (Azure RBAC) 戦略を、[Azure の ID 管理のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)を参考にして実装します。
+**使用可能な設計オプション:** [知る必要性](https://wikipedia.org/wiki/Need_to_know)と [最小特権セキュリティ](https://wikipedia.org/wiki/Principle_of_least_privilege)の各原則に基づいてアクセスを制限する Azure ロールベースのアクセス制御 (Azure RBAC) 戦略を、[Azure の ID 管理のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)を参考にして実装します。
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>オンプレミスとクラウドの間で共有される管理アカウントの欠如
 
@@ -66,7 +66,7 @@ ms.locfileid: "97712775"
 
 **ポリシー ステートメント:** カスタマー認証が必要なアプリケーションをデプロイする場合、内部ユーザー用のプライマリ ID プロバイダーと互換性のある承認済み ID プロバイダーを使用する必要があります。
 
-**使用可能な設計オプション:** 内部および顧客の ID プロバイダーの間に [Azure Active Directory を使用したフェデレーション](/azure/active-directory/hybrid/whatis-fed)を実装するか、[Azure Active Directory B2B](/azure/active-directory/b2b/what-is-b2b) を使用します
+**使用可能な設計オプション:** 内部および顧客の ID プロバイダーの間に [Azure Active Directory を使用したフェデレーション](/azure/active-directory/hybrid/whatis-fed)を実装するか、[Azure Active Directory B2B](/azure/active-directory/external-identities/what-is-b2b) を使用します
 
 ## <a name="identity-reviews"></a>ID レビュー
 

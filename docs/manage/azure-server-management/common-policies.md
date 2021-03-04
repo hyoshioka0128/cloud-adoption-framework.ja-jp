@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 1859cd42cdfa5487dd2a14d766debf75739576e3
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 1b9c04a3c5b4e7c87e54b41c29c2eb53b4b81665
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631952"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792637"
 ---
 # <a name="common-azure-policy-examples"></a>Azure Policy の一般的な例
 
@@ -40,14 +40,18 @@ Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn')
 次のスクリプトでは、ポリシーの割り当て方法を示しています。 ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount) コマンドレットを使用してサインインします。
 
 ```powershell
+
 # Specify the value for $SubscriptionID.
+
 $SubscriptionID = <subscription ID>
 $scope = "/subscriptions/$SubscriptionID"
 
 # Replace the -Name GUID with the policy GUID you want to assign.
+
 $AllowedLocationPolicy = Get-AzPolicyDefinition -Name "e56962a6-4747-49cd-b67b-bf8b01975c4c"
 
 # Replace the locations with the ones you want to specify.
+
 $policyParam = '{ "listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyParam
 ```
@@ -64,7 +68,7 @@ New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations 
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*allowed resource types") }
 ```
 
-使用するポリシーを特定したら、「[リソースのリージョンの制限](#restrict-resource-regions)」にある PowerShell サンプルを変更して、このポリシーを割り当てることができます。
+使用するポリシーを識別した後、「[リソースのリージョンの制限](#restrict-resource-regions)」セクションにある PowerShell サンプルを変更して、このポリシーを割り当てることができます。
 
 ### <a name="restrict-vm-size"></a>VM サイズの制限
 
@@ -79,14 +83,17 @@ Azure では、さまざまなワークロードをサポートするための�
 次のスクリプトでは、ポリシーの割り当て方法を示しています。 スクリプトを使用するには、ポリシーを割り当てるサブスクリプションを指すように `$SubscriptionID` を変更します。 スクリプトを実行する前に、[Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount) コマンドレットを使用してサインインします。
 
 ```powershell
+
 # Specify the value for $SubscriptionID.
+
 $subscriptionID = <subscription ID>
 $scope = "/subscriptions/$subscriptionID"
 
 $antimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
 
 # Replace location "eastus" with the value that you want to use.
-New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $antimalwarePolicy -Location eastus –AssignIdentity
+
+New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $antimalwarePolicy -Location eastus -AssignIdentity
 
 ```
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 3c897accf314ca7d787f59051c7d43d8868ed9e8
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: 8fa6f164cea1a5382a2a6591052936cb18a76784
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99230634"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792756"
 ---
 # <a name="responsible-and-trusted-ai"></a>責任ある信頼された AI
 
@@ -53,7 +53,7 @@ Microsoft は、グラスボックス モデルとブラックボックス モ�
 
 - ブラックボックス モデルの内部構造 (ニューラル ネットワーク) は複雑であるため、解釈が困難になっています。 LIME や SHapley Additive exPlanations (SHAP) のような解釈ツールでは、入力と出力の関係を分析することで、これらのモデルの解釈を行っています。
 
-- [Fairlearn](https://fairlearn.github.io/) は、SDK および AutoML グラフィカル ユーザー インターフェイス用のオープンソース ツールキットである Azure Machine Learning 統合です。 主に何がモデルに影響を与えるのかを理解し、ドメインの専門家によるこのような影響を検証するために、解釈ツールを使用します。
+- [Fairlearn](https://fairlearn.org/) は、SDK および AutoML グラフィカル ユーザー インターフェイス用のオープンソース ツールキットである Azure Machine Learning 統合です。 主に何がモデルに影響を与えるのかを理解し、ドメインの専門家によるこのような影響を検証するために、解釈ツールを使用します。
 
 解釈可能性の詳細については、[Azure Machine Learning におけるモデルの解釈可能性](/azure/machine-learning/how-to-machine-learning-interpretability)に関するページを参照してください。
 

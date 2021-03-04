@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 7b39a03b54c2ebd99db4fc6dd508e914620f4257
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ed0b6a1f4aeeda17568c3bd93ec6fa3b34d755c1
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016971"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792246"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>評価のために単一の VM 上のサーバー管理サービスを有効にする
 
@@ -31,7 +31,7 @@ Azure portal で、個々の仮想マシンを Azure サーバー管理サービ
 これらのソリューションを個々の VM にオンボードする方法の詳細については、以下を参照してください。
 
 - [Azure の VM の Update Management ソリューションおよび変更履歴とインベントリ ソリューションをオンボードする](/azure/automation/change-tracking/manage-inventory-vms)
-- [Azure Monitor for VMs の配布準備をする](/azure/azure-monitor/insights/vminsights-enable-single-vm)
+- [Azure Monitor for VMs の配布準備をする](/azure/azure-monitor/vm/vminsights-enable-portal)
 
 ## <a name="next-steps"></a>次のステップ
 

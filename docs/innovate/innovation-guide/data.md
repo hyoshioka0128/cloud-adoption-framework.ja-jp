@@ -1,8 +1,8 @@
 ---
 title: データの民主化
 description: データの見つけやすさと解釈を強化するための Azure Data Catalog、Azure Data Share、およびその他のツールによるデータの民主化について説明します。
-author: absheik
-ms.author: absheik
+author: BrianBlanchard
+ms.author: brblanch
 ms.date: 01/27/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-new, AQC, seo-caf-innovate
 keywords: 民主化, データを民主化する, データ民主化, データの民主化, 民主化された
-ms.openlocfilehash: a60948ea705b42cf44c664615ef81f2d3f6461df
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: cffb167db17bf28c21f4abf0324b91f1ca708f55
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525900"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792314"
 ---
 # <a name="democratize-data"></a>データの民主化
 
@@ -39,7 +39,7 @@ Azure Data Catalog は、データ コンシューマーによるデータ検出
 
 ::: zone target="docs"
 
-**[Azure Data Catalog のドキュメント](/azure/data-catalog)に移動する**
+**[Azure Data Catalog のドキュメント](/azure/data-catalog/)に移動する**
 
 ::: zone-end
 
@@ -77,7 +77,7 @@ Azure Data Catalog は、組織ごとに 1 つだけ使用できます。 組織
 
 ::: zone target="docs"
 
-**[Azure Data Share のドキュメント](/azure/data-share)に移動する**
+**[Azure Data Share のドキュメント](/azure/data-share/)に移動する**
 
 ::: zone-end
 
@@ -115,7 +115,7 @@ Azure Time Series Insights のデータ イノベーション機能は無限で�
 
 ::: zone target="docs"
 
-**[Azure Time Series Insights の概要](/azure/time-series-insights/time-series-insights-update-overview)に移動する**
+**[Azure Time Series Insights の概要](/azure/time-series-insights/overview-what-is-tsi)に移動する**
 
 ::: zone-end
 

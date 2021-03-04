@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 787a3fb046e4bebdd25b6fbd40b4b8139e91bd32
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 16a2d068517add917d4c6429be34c79fccd25de1
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019266"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792807"
 ---
-<!-- cSpell:ignore DPIAs inexhaustive -->
-
 # <a name="microsoft-security-guidance"></a>Microsoft セキュリティ ガイダンス
 
 ## <a name="tools"></a>ツール
@@ -51,7 +49,7 @@ ms.locfileid: "97019266"
 
 ## <a name="unique-intelligent-insights"></a>他にはないインテリジェントな分析情報
 
-セキュリティ シグナルの量や複雑さが増してくると、これらのシグナルが確実な脅威であるかどうかを判定して行動するにはかなり長い時間がかかります。 Microsoft は、脅威をすばやく検出して修復するのに役立つ、クラウド規模で提供される類を見ない幅広いセキュリティ インテリジェンスを提供します。 詳しくは、[Azure Security Center の概要](/azure/security-center/security-center-intro)に関するページをご覧ください。
+セキュリティ シグナルの量や複雑さが増してくると、これらのシグナルが確実な脅威であるかどうかを判定して行動するにはかなり長い時間がかかります。 Microsoft は、脅威をすばやく検出して修復するのに役立つ、クラウド規模で提供される類を見ない幅広いセキュリティ インテリジェンスを提供します。 詳しくは、[Azure Security Center の概要](/azure/security-center/security-center-introduction)に関するページをご覧ください。
 
 ## <a name="azure-threat-intelligence"></a>Azure の脅威インテリジェンス
 
