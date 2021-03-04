@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: f89da567e6869e77999eb55b9388fabf6f91daca
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 64c70208dc0030a221dd657a5ab83309734c78c5
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788574"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113964"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -34,7 +34,7 @@ ms.locfileid: "101788574"
   - [Azure CLI を使用する](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
   - [Azure PowerShell の概要](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- ポリシー、Azure ロールベースのアクセス制御、その他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソース管理のセキュリティを実装する](/learn/paths/implement-resource-mgmt-security)」をご覧ください。
+- ポリシー、Azure ロールベースのアクセス制御、その他の Azure サービスを使用してリソースをセキュリティで保護する方法については、「[Azure にリソース管理のセキュリティを実装する](/learn/paths/implement-resource-mgmt-security/)」をご覧ください。
 
 - 「[Microsoft Azure リソースとワークロードの監視](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring-update)」では、Azure 監視ツールを使用して Azure ネットワーク リソースおよびオンプレミスにあるリソースを監視する方法について学習できます。
 
@@ -66,7 +66,7 @@ ms.locfileid: "101788574"
 
   - 「[Microsoft Azure のデータベース監視に関するプレイブック](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring)」では、Azure SQL Database、Azure SQL Data Warehouse、および Azure Cosmos DB の監視を実装して使用する方法について学習できます。
 
-  - 「[Instrument applications with Azure Monitor Application Insights (Azure Monitor Application Insights を使用したアプリケーションのインストルメント化)](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument)」では、Application Insights SDK を使用して、Angular と Node.js コンポーネントを使用するアプリケーションからテレメトリとイベントを収集する方法について詳しく説明します。
+  - 「[Instrument applications with Azure Monitor Application Insights (Azure Monitor Application Insights を使用したアプリケーションのインストルメント化)](https://www.pluralsight.com/courses/microsoft-azure-application-insights-web-application-instrument)」では、Application Insights SDK を使用して、Angular と Node.js コンポーネントを使用するアプリケーションからテレメトリとイベントを収集する方法について詳しく説明します。
 
   - 「[Application Debugging and Profiling (アプリケーションのデバッグとプロファイリング)](https://www.pluralsight.com/courses/devintersection-azureai-session-31)」は、Azure Monitor Application Insights のスナップショット デバッガーとプロファイラーによって提供されるデータの使用と解釈について、Microsoft カンファレンスのセッションから記録したものです。
 
@@ -88,23 +88,23 @@ Microsoft とパートナーは、あらゆるお客様を対象に、Azure サ�
 
 - [ロールとスキルの関連付け](../../plan/suggested-skills.md):クラウドのキャリア パスを関連付けるためのリソース。 クラウドでの役割と推奨されるスキルについて説明しています。 ご自分のペースで学習カリキュラムを進めて、価値ある存在であり続けるために最も必要なスキルを磨くことができます。
 
-- Azure に関する公式の知識認定を受けるため、[Azure 認定資格のトレーニングや試験](https://www.microsoft.com/learning/certification-overview.aspx)をご覧ください。
+- Azure に関する公式の知識認定を受けるため、[Azure 認定資格のトレーニングや試験](/learn/certifications/)をご覧ください。
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps とプロジェクトの管理
 
 ハイブリッド クラウド環境では、定義されていない役割、責任、およびアクティビティによって IT が中断されます。 組織は、アジャイルや DevOps の手法を含む、サービスを管理するための最新の手法に移行して、合理化された効率的な方法で、現在のビジネスにおける変革と最適化のニーズをより適切に満たす必要があります。
 
-クラウド監視プラットフォームへの移行の一環として、企業内の監視の管理を担当する IT チームは、アジャイルのトレーニングと参加を DevOps アクティビティに含める必要があります。 これには、ビジネス ニーズに合わせて繰り返し調整された最小限の実行可能な監視ソリューションを提供するために、DevOps の _Dev_ に従い、要件を把握して、それを整理されたアジャイルの要件に発展させることも含まれます。 反復的な監視ソリューション パッケージとその他の関連する対象を管理するソース管理では、Azure DevOps Server プロジェクトと GitHub Enterprise Server リポジトリを関連付けます。 これにより、GitHub のコミットとプル要求からの作業項目へのリンクが提供されます。 Azure Boards を使用して作業を計画および追跡する一方で、継続的な監視の統合とデプロイのサポートにより、開発のために GitHub Enterprise を使用できます。
+クラウド監視プラットフォームへの移行の一環として、企業内の監視の管理を担当する IT チームは、アジャイルのトレーニングと参加を DevOps アクティビティに含める必要があります。 これには、ビジネス ニーズに合わせて繰り返し調整された最小限の実行可能な監視ソリューションを提供するために、DevOps の *Dev* に従い、要件を把握して、それを整理されたアジャイルの要件に発展させることも含まれます。 反復的な監視ソリューション パッケージとその他の関連する対象を管理するソース管理では、Azure DevOps Server プロジェクトと GitHub Enterprise Server リポジトリを関連付けます。 これにより、GitHub のコミットとプル要求からの作業項目へのリンクが提供されます。 Azure Boards を使用して作業を計画および追跡する一方で、継続的な監視の統合とデプロイのサポートにより、開発のために GitHub Enterprise を使用できます。
 
 詳細については、以下を参照してください。
 
-- [Azure DevOps を使用して作業を開始する](/learn/modules/get-started-with-devops)
+- [Azure DevOps を使用して作業を開始する](/learn/modules/get-started-with-devops/)
 
-- [DevOps 白帯道場の基礎について理解する](/learn/paths/devops-dojo-white-belt-foundation)
+- [DevOps 白帯道場の基礎について理解する](/learn/paths/devops-dojo-white-belt-foundation/)
 
-- [DevOps のプラクティスを進化させる](/learn/paths/evolve-your-devops-practices)
+- [DevOps のプラクティスを進化させる](/learn/paths/evolve-your-devops-practices/)
 
-- [Azure DevOps を使用してデプロイを自動化する](/learn/paths/automate-deployments-azure-devops)
+- [Azure DevOps を使用してデプロイを自動化する](/learn/paths/automate-deployments-azure-devops/)
 
 ## <a name="other-considerations"></a>その他の考慮事項
 
@@ -116,4 +116,4 @@ Microsoft とパートナーは、あらゆるお客様を対象に、Azure サ�
 
 ## <a name="learn-more"></a>詳細情報
 
-追加のラーニング パスについては、[Microsoft Learn のカタログ](/learn/browse)を参照してください。 ロール フィルターを使用して、ラーニング パスを自分のロールに合わせてください。
+追加のラーニング パスについては、[Microsoft Learn のカタログ](/learn/browse/)を参照してください。 ロール フィルターを使用して、ラーニング パスを自分のロールに合わせてください。

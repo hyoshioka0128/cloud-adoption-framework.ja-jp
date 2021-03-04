@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: e6cbf9526f3eb7247a1cc9e1e8cdbe637f059dd3
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 3dc0ae3099bb713861860f2debb9580bad3c1dfe
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101786313"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114083"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド管理
 
@@ -25,7 +25,7 @@ ms.locfileid: "101786313"
 
 | <span title="アイコン">&nbsp;</span> | <span title="説明">&nbsp;</span> |
 |--|--|
-| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [ビジネス コミットメントの定義](./considerations/business-alignment.md):サポートされているワークロードを文書化して、ビジネスに対する運用上のコミットメントを確立し、各ワークロードに対するクラウド管理への投資に同意します。  |
+| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [ビジネス コミットメントの定義](./considerations/business-alignment.md):サポートされているワークロードを文書化して、ビジネスに対する運用上のコミットメントを確立し、各ワークロードに対するクラウド管理への投資に同意します。 |
 | <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [管理ベースラインの確立](./azure-management-guide/index.md):運用管理に対する最小限のコミットメントを提供するために必要な重要度の分類、クラウド管理ツール、プロセスを定義します。 |
 | <br> :::image type="icon" source="../_images/icons/3.png"::: | <br> [管理ベースラインの展開](./best-practices.md):ビジネス コミットメントと運用上の決定に基づいて、含まれているベスト プラクティスを活用し、必要なクラウド管理ツールを実装します。 |
 | <br> :::image type="icon" source="../_images/icons/4.png"::: | <br> [高度な運用と設計の原則](./design-principles.md):より高いレベルのビジネス コミットメントを必要とするプラットフォームやワークロードでは、回復性と信頼性のコミットメントを提供するために、より深いアーキテクチャ レビューが必要になる場合があります。 |
@@ -47,7 +47,7 @@ ms.locfileid: "101786313"
 
 クラウド アーキテクトは、これらの対象ユーザーをまとめる思想的リーダーおよび進行役の役割を果たします。 このガイドのコレクションの内容は、クラウド アーキテクトが適切な対象ユーザーと適切なコミュニケーションを取り、必要な決定を促すことをサポートするために設計されています。 クラウドによって実現されるビジネスの変革は、ビジネスと IT 全体にわたる意思決定を導くクラウド アーキテクトによって決まります。
 
-クラウド導入フレームワークの各セクションは、クラウド アーキテクトの役割のさまざまな専門性やバリエーションを表しています。 クラウド導入フレームワークのこのセクションは、デプロイ ソリューションの運用と管理に対する情熱を持つクラウド アーキテクトを対象として設計されています。 このフレームワーク内で、これらのスペシャリストは、_クラウド運用_ またはまとめて _クラウド運用チーム_ として呼ばれることがよくあります。
+クラウド導入フレームワークの各セクションは、クラウド アーキテクトの役割のさまざまな専門性やバリエーションを表しています。 クラウド導入フレームワークのこのセクションは、デプロイ ソリューションの運用と管理に対する情熱を持つクラウド アーキテクトを対象として設計されています。 このフレームワーク内で、これらのスペシャリストは、*クラウド運用* またはまとめて *クラウド運用チーム* として呼ばれることがよくあります。
 
 このガイドに最初から最後まで従う場合、この内容は、堅牢なクラウド運用戦略を開発するのに役立ちます。 このガイダンスでは、そのような戦略の理論と実装を段階を追って説明します。
 

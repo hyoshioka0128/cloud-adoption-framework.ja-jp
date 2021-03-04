@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 7b5e38cf3226294faaa56fbf7bdf936ffe9e288b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5f5af92ebe5d4c6f7a59e31c533416e1357293fd
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016478"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113522"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>クラウド管理の規範にわたる管理の平準化
 
@@ -41,7 +41,7 @@ IT ポートフォリオ内のワークロードは異なるため、1 つのレ
 
 推奨される各管理レベルでは、さまざまなクラウド管理の規範が求められる可能性があります。 ただし、このマッピングは、適切なレベルのクラウド管理を実現するために推奨されるプロセスやツールを簡単に見つけることができるように設計されています。
 
-ほとんどの場合、前述の "_管理ベースライン レベル_" は、次の分野のプロセスとツールで構成されています。 いずれの場合も、"_拡張ベースライン機能_" を示すためにいくつかのプロセスとツールが強調されています。
+ほとんどの場合、前述の "*管理ベースライン レベル*" は、次の分野のプロセスとツールで構成されています。 いずれの場合も、"*拡張ベースライン機能*" を示すためにいくつかのプロセスとツールが強調されています。
 
 - **インベントリと可視性:** 少なくとも、管理ベースラインには、資産のインベントリ作成と、各資産の実行状態を可視化するための手段が用意されている必要があります。
 - **運用のコンプライアンス:** 資産の構成、サイズ、コスト、およびパフォーマンスを定期的に管理することが、期待どおりのパフォーマンスと管理ベースラインを維持するための鍵となります。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: b89f54d380bf8a9e6a828c951d5720f464f2d888
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0894bd86ce474bb26f9f1d2ed6f8b261f53bc193
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016155"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112400"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>設計の原則と高度な運用の適用
 
@@ -78,7 +78,7 @@ CCoE における役割の自然な配置の概要を次に示します。
 
 システム設計の改善は、どの共通プラットフォームでも運用を改善する上で最も効果的なアプローチです。 システム設計の改善により、安定性を高め、ビジネスの中断を減らすことができます。 個々のシステムの設計は、クラウド導入フレームワークを介して実行される環境ビューの範囲外です。
 
-このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。 フレームワークでは、アーキテクチャ エクセレンスの 5 つの要素の向上に重点を置いています。
+このフレームワークを補完するものとして、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) では、プラットフォームまたは特定のワークロードの品質向上のための基本原則が提供されます。 フレームワークでは、アーキテクチャ エクセレンスの 5 つの要素の向上に重点を置いています。
 
 - **コストの最適化**: もたらされる価値が最大になるようにコストを管理します。
 - **オペレーショナル エクセレンス:** 運用環境でのシステムの動作を維持するオペレーショナル プロセスに従います。
@@ -88,7 +88,7 @@ CCoE における役割の自然な配置の概要を次に示します。
 
 ほとんどのビジネス中断は、何らかの形の技術的負債が発生しているか、またはアーキテクチャに欠陥があることを意味します。 既存のデプロイの場合、システム設計の改善は、既存の技術的負債の返済と見なすことができます。 新しいデプロイの場合、システム設計の改善は、技術的負債の回避と見なすことができます。 次の「自動修復」では、対処できない、または対処する必要がない技術的負債に対処する方法について説明します。
 
-システムの設計を改善するには、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) の詳細をご覧ください。 システム設計が改善されたら、この記事に戻り、改善を行って改善点を環境全体に拡張できる新たな機会を見つけてください。
+システムの設計を改善するには、[Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) の詳細をご覧ください。 システム設計が改善されたら、この記事に戻り、改善を行って改善点を環境全体に拡張できる新たな機会を見つけてください。
 
 ### <a name="automated-remediation"></a>自動修復
 
@@ -104,12 +104,12 @@ CCoE における役割の自然な配置の概要を次に示します。
 
 最適化されたプラットフォームを最大限に導入し、メンテナンスのオーバーヘッドを最小限に抑えるには、そのプラットフォームをサービス カタログに追加する必要があります。 カタログ内の各アプリケーションは、サービス カタログを介した内部使用のため、または外部の消費者向けのマーケットプレース オファリングとしてデプロイすることができます。
 
-サービス カタログに発行する方法については、[サービス カタログへの発行](/azure/managed-applications/publish-service-catalog-app)に関する一連の記事をご覧ください。
+サービス カタログに発行する方法については、[サービス カタログへの発行](/azure/azure-resource-manager/managed-applications/publish-service-catalog-app)に関する一連の記事をご覧ください。
 
 ### <a name="continuous-improvement"></a>継続的な改善
 
 プラットフォームの特化とプラットフォームの運用は共に、導入、プラットフォーム、自動化、および管理の各チーム間で作成される強力なフィードバック ループに依存します。 各チームは、データ内のこのフィードバック ループを基にすることで、より賢明な意思決定を行うことができます。 プラットフォームの運用で長期的なビジネス コミットメントを実現するには、一元化されたプラットフォームに固有の分析情報を利用することが重要です。 コンテナーと SQL Server は、最も一般的に使用されている 2 つの一元管理型プラットフォームであるため、以下の記事をよく調べ、改善データの継続的収集を始めることを検討してください。
 
-- [コンテナーのパフォーマンス](/azure/azure-monitor/insights/container-insights-overview)
+- [コンテナーのパフォーマンス](/azure/azure-monitor/containers/container-insights-overview)
 - [PaaS データベースのパフォーマンス](/azure/azure-monitor/insights/azure-sql)
 - [IaaS データベースのパフォーマンス](/azure/azure-monitor/insights/sql-assessment)

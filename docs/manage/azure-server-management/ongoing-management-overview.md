@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 7e4e3b728a4e2c14b14615f00f32ed9034e302a0
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 41615efbde7f7b4c32846e73c2493c2d4b47500f
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016886"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113641"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>フェーズ 3: 継続中の管理とセキュリティ
 
@@ -29,7 +29,7 @@ Azure サーバー管理サービスをオンボードした後、進行中の�
 
 Azure Security Center は、環境のセキュリティを管理する一元的な場所です。 全体的な評価と実践目標となる推奨事項が表示されます。
 
-このサービスによって提供される推奨事項を確認し、実践することをお勧めします。 Azure Security Center のその他のメリットについては、「[Azure Security Center の推奨事項に従う](/azure/migrate/migrate-best-practices-security-management#best-practice-follow-azure-security-center-recommendations)」を参照してください。
+このサービスによって提供される推奨事項を確認し、実践することをお勧めします。 Azure Security Center のその他のメリットについては、「[Azure Security Center の推奨事項に従う](../../migrate/azure-best-practices/migrate-best-practices-security-management.md#best-practice-follow-azure-security-center-recommendations)」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 
