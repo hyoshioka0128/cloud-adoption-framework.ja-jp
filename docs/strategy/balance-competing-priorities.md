@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 7b630741c7d86d6fcf4987172273f328c3521f77
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 06fcd59e26240a01c8b64e391c7e36595cc77de9
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174592"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787945"
 ---
 # <a name="balance-competing-priorities"></a>競合する優先順位のバランスを取る
 

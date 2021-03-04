@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: c6270e657ed776a9d30dd4808182bfc0898710c0
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 844fe7471e7b7bdee84720ec01f65099ff3bb937
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025046"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788387"
 ---
 # <a name="decommission-retired-assets"></a>廃止された資産を使用停止する
 
