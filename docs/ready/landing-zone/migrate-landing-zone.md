@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 2bbaf3c56bdf82824c6577bd64e2cee93a9e2e0e
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 9e409514d5c6e6e79d644343ebfb862e87693624
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026627"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786415"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>Azure で移行ランディング ゾーンをデプロイする
 
@@ -98,7 +98,7 @@ ms.locfileid: "97026627"
 |------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 移行ツール              | Azure Site Recovery がデプロイされ、Azure Migrate プロジェクトが作成されます。                | [移行ツール決定ガイド](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | ログ記録と監視       | Operational Insights ワークスペースと診断ストレージ アカウントがプロビジョニングされます。                |                                                                                                                                                                                                                                                                                       |
-| ネットワーク                      | ゲートウェイ、ファイアウォール、ジャンプボックス、ランディング ゾーンのサブネットを持つ仮想ネットワークが作成されます。  | [ネットワーク関連の意思決定](../considerations/networking-options.md)                                                                                                                                                                                                                       |
+| ネットワーク                      | ゲートウェイ、ファイアウォール、ジャンプボックス、ランディング ゾーンのサブネットを持つ仮想ネットワークが作成されます。 | [ネットワーク関連の意思決定](../considerations/networking-options.md)                                                                                                                                                                                                                       |
 | ID                     | サブスクリプションは既に Azure Active Directory インスタンスに関連付けられていると想定されます。 | [ID 管理のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | ポリシー                       | このブループリントでは現在、Azure ポリシーを適用しないことを想定しています。                        |                                                                                                                                                                                                                                                                                       |
 | サブスクリプション デザイン          | 該当なし - 単一の運用サブスクリプション用に設計されています。                                              | [初期サブスクリプションを作成する](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |

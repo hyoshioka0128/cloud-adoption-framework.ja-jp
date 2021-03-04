@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 1a3073ff71cc3dfee726249d7ec5dbcdb710abac
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 76c5a449ad0153acb46d8d99254761cc0bc2767d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013605"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785378"
 ---
 # <a name="review-your-data-options"></a>データ オプションを確認する
 
@@ -49,7 +49,7 @@ _図 1: Azure データベース サービスのデシジョン ツリー。_
 
 次の表は、いくつかの一般的な使用シナリオの要件と、その処理に推奨されるデータベース サービスを示しています。
 
-| シナリオ  | データ サービス |
+| シナリオ | データ サービス |
 |---|---|
 | NoSQL の選択をサポートする、グローバルに分散されたマルチモデル データベースが必要です。 | [Azure Cosmos DB](/azure/cosmos-db/introduction) |
 | 迅速なプロビジョニングと即座のスケーリングが可能な、インテリジェンスとセキュリティを組み込んだ、フル マネージド リレーショナル データベースが必要です。 | [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) |

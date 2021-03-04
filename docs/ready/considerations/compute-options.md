@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: d5a4f593e62772dbd45fa9aea3eebfb6360fbcf4
-ms.sourcegitcommit: 9f5b94ff2a57f17541c9bd706245ae23883ad22c
+ms.openlocfilehash: 85aa7b4ff6692e8abb1808cd0fd2bed895c631de
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98625720"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787265"
 ---
 # <a name="review-your-compute-options"></a>コンピューティング オプションを確認する
 
@@ -58,7 +58,7 @@ ms.locfileid: "98625720"
 
 次の表は、いくつかの一般的な使用シナリオと、その処理に推奨されるコンピューティング サービスを示しています。
 
-| シナリオ  | コンピューティング サービス |
+| シナリオ | コンピューティング サービス |
 | --- | --- |
 | 選択した構成を使用して、Linux と Windows の仮想マシンを数秒でプロビジョニングする必要がある。 | [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) |
 | 自動スケーリングにより数分で数千台の VM を作成し、高可用性を実現する必要がある。 | [仮想マシン スケール セット](https://azure.microsoft.com/services/virtual-machine-scale-sets) |

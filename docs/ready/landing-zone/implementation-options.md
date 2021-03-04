@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 0b2dad61c2524dc5d381b9c0057d7a5f8dbee319
-ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
+ms.openlocfilehash: e5a06f41404fe3db7bd0a98a1324461ae61ac85b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838875"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786432"
 ---
 # <a name="landing-zone-implementation-options"></a>ランディング ゾーンの実装オプション
 
@@ -47,9 +47,9 @@ ms.locfileid: "99838875"
 
 | 実装オプション | ハブ | スポーク | デプロイ テクノロジ | デプロイの手順 |
 |---|---|---|---|---|
-| [クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン](../enterprise-scale/index.md) | Included  | Included | Azure Resource Manager テンプレート、Azure portal、Azure Policy、GitHub | [デプロイする](../enterprise-scale/implementation-guidelines.md) |
+| [クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン](../enterprise-scale/index.md) | Included | Included | Azure Resource Manager テンプレート、Azure portal、Azure Policy、GitHub | [デプロイする](../enterprise-scale/implementation-guidelines.md) |
 | [CAF 移行ランディング ゾーンのブループリント](./migrate-landing-zone.md) | リファクタリングが必要 | Included | Azure Resource Manager テンプレート、Azure portal、Azure Blueprints | [デプロイする](./migrate-landing-zone.md) |
-| [CAF Terraform モジュール](./terraform-landing-zone.md)  | 仮想データセンター モジュールに含まれます | Included | Terraform | [デプロイする](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
+| [CAF Terraform モジュール](./terraform-landing-zone.md) | 仮想データセンター モジュールに含まれます | Included | Terraform | [デプロイする](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 
 ## <a name="next-steps"></a>次のステップ
 

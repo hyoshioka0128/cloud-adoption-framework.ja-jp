@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 2f4ddeb537e958ae6582fd66e8fad613266d7ef4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: fab9e826186f9eb915a9c3499af5771a84979a60
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017090"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785174"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -37,10 +37,10 @@ Azure サーバー管理サービスをサーバーにオンボードするに�
 
 [Azure 管理ツールとサービス](./tools-services.md)に関する記事で説明するすべての管理ソリューションでは、Azure の仮想マシンとオンプレミスのサーバーに Log Analytics エージェントをインストールする必要があります。 Azure Policy を使用すると Azure VM を大規模にオンボードできます。 エージェントがお使いの Azure VM にインストールされ、適切な Log Analytics ワークスペースに接続されるようにポリシーを割り当てます。
 
-Azure Policy には、Log Analytics エージェントと [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) を含む[組み込みのポリシー イニシアチブ](/azure/governance/policy/concepts/definition-structure#initiatives)があります。これは Azure Monitor for VMs に必要です。
+Azure Policy には、Log Analytics エージェントと [Microsoft Dependency Agent](/azure/azure-monitor/vm/vminsights-enable-overview#the-microsoft-dependency-agent) を含む[組み込みのポリシー イニシアチブ](/azure/governance/policy/concepts/definition-structure#initiatives)があります。これは Azure Monitor for VMs に必要です。
 
 > [!NOTE]
-> Azure を監視するためのさまざまなエージェントの詳細については、[Azure 監視エージェントの概要](/azure/azure-monitor/platform/agents-overview)に関する記事をご覧ください。
+> Azure を監視するためのさまざまなエージェントの詳細については、[Azure 監視エージェントの概要](/azure/azure-monitor/agents/agents-overview)に関する記事をご覧ください。
 
 ### <a name="assign-policies"></a>ポリシーの割り当て
 
@@ -73,7 +73,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 > [!NOTE]
 > Azure サーバー管理サービスをサーバーにオンボードする前に、必須の [Log Analytics ワークスペースと Azure Automation アカウント](./prerequisites.md#create-a-workspace-and-automation-account)を作成します。
 
-オンプレミスのサーバーの場合、[Log Analytics エージェントと Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) を手動でダウンロードしてインストールし、適切なワークスペースに接続するようにそれらを構成する必要があります。 ワークスペース ID とキー情報を指定する必要があります。 この情報を取得するには、Azure portal で Log Analytics ワークスペースに移動し、 **[設定]**  >  **[詳細設定]** を選択します。
+オンプレミスのサーバーの場合、[Log Analytics エージェントと Microsoft Dependency Agent](/azure/azure-monitor/vm/vminsights-enable-hybrid) を手動でダウンロードしてインストールし、適切なワークスペースに接続するようにそれらを構成する必要があります。 ワークスペース ID とキー情報を指定する必要があります。 この情報を取得するには、Azure portal で Log Analytics ワークスペースに移動し、 **[設定]**  >  **[詳細設定]** を選択します。
 
 ![Azure portal 内の Log Analytics ワークスペース詳細設定のスクリーンショット](./media/onboarding-on-premises.png)
 
@@ -134,7 +134,7 @@ Change Tracking と Inventory のソリューションをオンボードする�
 
 ### <a name="azure-activity-log"></a>Azure activity log
 
-[Azure アクティビティ ログ](/azure/azure-monitor/platform/activity-logs-overview)も Azure Monitor の一部です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
+[Azure アクティビティ ログ](/azure/azure-monitor/essentials/platform-logs-overview)も Azure Monitor の一部です。 ここから、Azure で発生するサブスクリプション レベルのイベントに関する分析情報を得ることができます。
 
 このソリューションを実行するには:
 
@@ -177,7 +177,7 @@ Antimalware Assessment ソリューションは、マルウェアに感染して
 
 ### <a name="azure-monitor-for-vms"></a>VM に対する Azure Monitor
 
-「[評価のために単一の VM 上の管理サービスを有効にする](./onboard-single-vm.md)」で説明されているように、VM インスタンスのビュー ページを通して [Azure Monitor for VMs](/azure/azure-monitor/insights/vminsights-overview) を有効にすることができます。 この記事で説明されている他のソリューションに対して行ったように **[ソリューション]** ページからソリューションを直接有効にすることはしないでください。 大規模なデプロイの場合、[自動化](./onboarding-automation.md)を使用してワークスペース内で適切なソリューションを有効にする方が簡単な場合があります。
+「[評価のために単一の VM 上の管理サービスを有効にする](./onboard-single-vm.md)」で説明されているように、VM インスタンスのビュー ページを通して [Azure Monitor for VMs](/azure/azure-monitor/vm/vminsights-overview) を有効にすることができます。 この記事で説明されている他のソリューションに対して行ったように **[ソリューション]** ページからソリューションを直接有効にすることはしないでください。 大規模なデプロイの場合、[自動化](./onboarding-automation.md)を使用してワークスペース内で適切なソリューションを有効にする方が簡単な場合があります。
 
 ### <a name="azure-security-center"></a>Azure Security Center
 

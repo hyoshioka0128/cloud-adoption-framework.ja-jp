@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 87326ff3f61ae0d5743beaaf25a6f4b3cf1361c0
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 49f9dbc31a35c247b8c908df7b7d4c563019d690
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026491"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786557"
 ---
 # <a name="cloud-platform-functions"></a>クラウド プラットフォームの機能
 
@@ -37,7 +37,7 @@ ms.locfileid: "97026491"
 
 - [クラウド アーキテクチャの基礎](https://www.pluralsight.com/courses/cloud-architecture-foundations):適切な基本的ソリューションの設計を支援する Pluralsight コース。
 - [Microsoft Azure アーキテクチャ](https://www.pluralsight.com/courses/cloud-architecture-foundations): アーキテクトに Azure アーキテクチャの基礎を教える Pluralsight コース。
-- [Azure のネットワーク サービス](/learn/modules/intro-to-azure-networking): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
+- [Azure のネットワーク サービス](/learn/modules/azure-networking-fundamentals/): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
 
 **以下のことを確認してください。**
 

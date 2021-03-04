@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 512d5574110ea46afc256504230ce669efb2de97
-ms.sourcegitcommit: b210ef2a057d61554148b4c4b89485a4a5c9b25c
+ms.openlocfilehash: e6cbf9526f3eb7247a1cc9e1e8cdbe637f059dd3
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97646315"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786313"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>クラウド導入フレームワークにおけるクラウド管理
 
@@ -52,5 +52,3 @@ ms.locfileid: "97646315"
 このガイドに最初から最後まで従う場合、この内容は、堅牢なクラウド運用戦略を開発するのに役立ちます。 このガイダンスでは、そのような戦略の理論と実装を段階を追って説明します。
 
 手法を適用して、[明確なビジネス コミットメントを確立する](./considerations/business-alignment.md)こともできます。
-
-<!-- TODO: For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](TODO). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->

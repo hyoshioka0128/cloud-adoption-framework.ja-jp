@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 88eb52e410c9f7a1caf2c3c8f4bfc45bbb743ce0
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 81e8660fbb041abbca8b1bbb5025e597e407fd89
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632530"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785038"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
@@ -28,7 +28,7 @@ ms.locfileid: "100632530"
 
 デプロイ オプションに関係なく、各設計領域を注意深く検討してください。 決定は、各ランディング ゾーンが依存するプラットフォームの基礎に影響します。
 
-| 設計領域 | 目的  | 関連する方法 |
+| 設計領域 | 目的 | 関連する方法 |
 |---|---|---|
 | エンタープライズ登録 | Azure を契約している企業のお客様にとって、適切なテナントの作成と登録は重要な初期段階です。 | Ready |
 | ID | ID およびアクセス管理は、パブリック クラウドの主要なセキュリティ境界です。 セキュリティで保護され、完全に準拠したアーキテクチャの基盤になるものです。 | Ready |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: c52a46a16f757d20d53d4f3920f123ffe126f288
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ed4587e1028f9adf21ca2ee30365de3ae1114911
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025233"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786806"
 ---
 # <a name="evaluate-workload-readiness"></a>ワークロードの準備状況を評価する
 
@@ -35,8 +35,8 @@ ms.locfileid: "97025233"
 ## <a name="common-database-evaluation-activities"></a>一般的なデータベース評価アクティビティ
 
 - 現在のデータベース デプロイの目標復旧時点 (RPO) と目標復旧時間 (RTO) を文書化します。 これらは、意思決定を支援するために[アーキテクチャ アクティビティ](./architect.md)で使用されます。
-- 高可用性構成の要件をすべて文書化します。 SQL Server の要件を理解するには、[SQL Server 高可用性ソリューション ガイド](/sql/sql-server/failover-clusters/high-availability-solutions-sql-server)に関するページを参照してください。
-- PaaS 互換性を評価します。 [Azure データ移行ガイド](https://datamigration.microsoft.com)では、オンプレミス データベースが [Azure Cosmos DB](/azure/cosmos-db)、[Azure SQL Database](/azure/sql-database)、[Azure Database for MySQL](/azure/mysql)、[Azure Database for PostgreSQL](/azure/postgresql)、[Azure Database for MariaDB](/azure/mariadb) などの互換性のある Azure PaaS ソリューションにマップされています。
+- 高可用性構成の要件をすべて文書化します。 SQL Server の要件を理解するには、[SQL Server 高可用性ソリューション ガイド](/sql/database-engine/sql-server-business-continuity-dr)に関するページを参照してください。
+- PaaS 互換性を評価します。 [Azure データ移行ガイド](https://datamigration.microsoft.com)では、オンプレミス データベースが [Azure Cosmos DB](/azure/cosmos-db/)、[Azure SQL Database](/azure/azure-sql/)、[Azure Database for MySQL](/azure/mysql/)、[Azure Database for PostgreSQL](/azure/postgresql/)、[Azure Database for MariaDB](/azure/mariadb/) などの互換性のある Azure PaaS ソリューションにマップされています。
 - PaaS 互換性がオプションであり、修復の必要がない場合は、[アーキテクチャ アクティビティ](./architect.md)を担当するチームに問い合わせてください。 PaaS 移行によって、大幅な時間短縮と、ほとんどのクラウド ソリューションの総保有コスト (TCO) の削減が生み出される可能性があります。
 - PaaS 互換性がオプションであるが、修復が必要な場合は、[アーキテクチャ アクティビティ](./architect.md)と[修復アクティビティ](../migrate/remediate.md)を担当するチームに問い合わせてください。 多くのシナリオでは、修復時間の増加よりデータベース ソリューションの PaaS 移行の利点の方が上回ります。
 - 移行されるデータベースごとに変更のサイズと比率を文書化します。

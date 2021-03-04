@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: 4c709429bf6d45c231b7aa44e6fa81af9b605fe1
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
+ms.openlocfilehash: b7ddc0641e1aaecf2828e74234c0daf5c9b1216b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909465"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786177"
 ---
 # <a name="define-your-naming-convention"></a>名前付け規則を定義する
 

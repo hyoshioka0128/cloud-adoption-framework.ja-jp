@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: b09e5ca4d5bbe6e2080cc90f5c017858b0fe5fce
-ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
+ms.openlocfilehash: ff64f7bb30f6fb986c4d74dd64923c85b67af4db
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95447304"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786449"
 ---
 # <a name="enterprise-scale-business-continuity-and-disaster-recovery"></a>エンタープライズ規模の事業継続とディザスター リカバリー
 
 組織またはエンタープライズは、アプリケーションのワークロードがそれ固有の要件を満たすために使用できる、適切な、プラットフォーム レベルの機能を設計する必要があります。 具体的には、これらのアプリケーション ワークロードには、目標復旧時間 (RTO) と目標復旧ポイント (RPO) に関する要件があります。 これらのワークロードに適した機能を設計するために、ディザスター リカバリー (DR) の要件について把握しておいてください。
 
-## <a name="design-considerations"></a>設計上の考慮事項
+**設計上の考慮事項:**
 
 次の要因について検討します。
 
@@ -63,7 +63,7 @@ ms.locfileid: "95447304"
 
 - アプリケーション キー、証明書、シークレット用の Azure Key Vault DR。
 
-## <a name="design-recommendations"></a>設計の推奨事項
+**設計上の推奨事項:**
 
 設計のベスト プラクティスを次に示します。
 

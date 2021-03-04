@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: bf6d4651c4cf145bd21a94c7ac87bd669b7d83cb
-ms.sourcegitcommit: b12b731b1cf22f9e80db108f79734bc4cf17895e
+ms.openlocfilehash: 0a26becab0f8aab80a5e4cf9504e754362ca6091
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810789"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785769"
 ---
 # <a name="tools-and-templates"></a>ツールとテンプレート
 
@@ -58,7 +58,7 @@ ms.locfileid: "98810789"
 | [ID ベースライン規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | ID の要件に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [リソースの整合性規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | リソースの整合性に重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
 | [セキュリティ ベースライン規範テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | セキュリティ ベースラインに重点を置いて組織内のクラウド ガバナンスを成熟させることができるポリシー ステートメントと設計ガイダンスを定義します。 |
-| [Azure セキュリティ ベンチマーク](https://docs.microsoft.com/azure/security/benchmarks/overview) | Azure セキュリティベンチマーク (ASB) は、Azure 上のワークロード、データ、およびサービスのセキュリティを強化するための規範的なベスト プラクティスと推奨事項を提供します。 |
+| [Azure セキュリティ ベンチマーク](/azure/security/benchmarks/overview) | Azure セキュリティベンチマーク (ASB) は、Azure 上のワークロード、データ、およびサービスのセキュリティを強化するための規範的なベスト プラクティスと推奨事項を提供します。 |
 | [Azure のガバナンス ビジュアライザー](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Azure のガバナンス ビジュアライザーは、Azure テナントの管理グループ階層をサブスクリプション レベルまで反復処理する PowerShell スクリプトです。 Azure Policy、Azure ロールベースのアクセス制御 (Azure RBAC)、Azure Blueprints など、特に関連性の高い Azure のガバナンス機能からデータをキャプチャします。 このビジュアライザーは、収集されたデータから階層マップを表示し、テナントの概要を作成し、管理グループとサブスクリプションに関する詳細なスコープの分析情報を作成します。 |
 
 ## <a name="migrate"></a>移行

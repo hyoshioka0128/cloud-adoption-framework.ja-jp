@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: 303d09b9c65c19ab9f30fb4c27f55e8ea1116529
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 6b49b694f9db2b3f0b8d7e7a3dc4b9efd28d0849
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025386"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785565"
 ---
 # <a name="azure-migration-guide-overview"></a>Azure 移行ガイドの概要
 
@@ -45,7 +45,7 @@ ms.locfileid: "97025386"
 
 ## <a name="when-to-use-this-guide"></a>[このガイドを使用する状況](#tab/WhenToUseThisGuide)
 
-このガイドで説明されているツールはさまざまな移行シナリオをサポートしていますが、このガイドでは、_複雑さが最小限_ の限られた範囲の作業に焦点を当てます。 この移行ガイドがご自分のプロジェクトに適しているかどうかを判断するには、次の条件がご自身の状況に該当するかどうかを検討してください。
+このガイドで説明されているツールはさまざまな移行シナリオをサポートしていますが、このガイドでは、*複雑さが最小限* の限られた範囲の作業に焦点を当てます。 この移行ガイドがご自分のプロジェクトに適しているかどうかを判断するには、次の条件がご自身の状況に該当するかどうかを検討してください。
 
 - 初期移行のワークロードはミッション クリティカルではなく、機密データも含まれていない。
 - 同種環境を移行する。

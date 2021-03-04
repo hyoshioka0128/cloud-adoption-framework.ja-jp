@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: c41ab530f82af020c5142d40d09e65f45340856d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 594c85a000f9b8ff8a78fd88d3b26869b2a57659
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025284"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786296"
 ---
 # <a name="workload-classification-before-migration"></a>移行前のワークロードの分類
 

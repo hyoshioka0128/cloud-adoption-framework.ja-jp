@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC
-ms.openlocfilehash: fb7abb91ce8950b2b455044cc7135065e2c71098
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ef56557ed05f199486209538d1bd29e2a80a7891
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025879"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784834"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>移行に重点を置いたコスト管理のメカニズム
 
@@ -42,8 +42,8 @@ ms.locfileid: "97025879"
 
 手動のコスト計算については、移行されるワークロードのアーキテクチャに基づいて迅速なコスト見積もりを提供できる便利な計算ツールが 2 つ存在します。
 
-- [Azure 料金計算ツール](https://azure.microsoft.com/pricing/calculator)は、選択した Azure 製品のコスト見積もりを提供します。
-- 決定のために、将来のクラウド コストと現在のオンプレミス コストの比較が必要になる場合があります。 [総保有コスト (TCO) 計算ツール](https://azure.microsoft.com/pricing/tco/calculator)は、このような比較を提供できます。
+- [Azure 料金計算ツール](https://azure.microsoft.com/pricing/calculator/)は、選択した Azure 製品のコスト見積もりを提供します。
+- 決定のために、将来のクラウド コストと現在のオンプレミス コストの比較が必要になる場合があります。 [総保有コスト (TCO) 計算ツール](https://azure.microsoft.com/pricing/tco/calculator/)は、このような比較を提供できます。
 
 これらの手動のコスト計算ツールを独自に使用すると、潜在的な支出や削減を予測できます。 これらを Azure Migrate のコスト予測ツールと組み合わせて使用すると、代替アーキテクチャまたはパフォーマンス制約に合うようにコスト予測を調整することもできます。
 
@@ -66,11 +66,11 @@ Azure Migrate では、コレクターや Service Map によってキャプチ�
 
 ![[コスト詳細] ビュー](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
 
-"_図 1:Azure Migrate での評価の [コスト詳細] ビューの図。_
+"*図 1:Azure Migrate での評価の [コスト詳細] ビューの図。*
 
 ### <a name="additional-resources"></a>その他のリソース
 
-- [Azure Migrate を使用した評価の設定と確認](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- [Azure Migrate を使用した評価の設定と確認](/azure/migrate/tutorial-assess-vmware-azure-vm#set-up-an-assessment)
 - 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[コスト管理規範のガイダンス](../../govern/cost-management/index.md)と[コスト管理規範の改善](../../govern/guides/complex/cost-management-improvement.md)に関するページをご覧ください。
 
 ## <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[移行中および移行後に VM のコストを見積もり、最適化する](#tab/EstimateOptimize)
@@ -106,7 +106,7 @@ Azure Cost Management + Billing は、消費習慣のより総合的なビュー
 
 - 多数の資産 (インフラストラクチャ、アプリ、およびデータ) にわたるコスト管理に関するより包括的な計画については、[クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)に関するページを参照してください。 特に、[コスト管理規範](../../govern/cost-management/index.md)と[コスト管理規範の改善](../../govern/guides/complex/cost-management-improvement.md)に関するページをご覧ください。
 - Azure Advisor の詳細については、[Azure Advisor を使用したサービス コストの削減](/azure/advisor/advisor-cost-recommendations)に関するページを参照してください。
-- Azure Cost Management + Billing の詳細については、「[スコープを理解して使用する](/azure/cost-management/understand-work-scopes)」および「[コスト分析を使用してコストを調査および分析する](/azure/cost-management/quick-acm-cost-analysis)」をご覧ください。
+- Azure Cost Management + Billing の詳細については、「[スコープを理解して使用する](/azure/cost-management-billing/costs/understand-work-scopes)」および「[コスト分析を使用してコストを調査および分析する](/azure/cost-management-billing/costs/quick-acm-cost-analysis)」をご覧ください。
 
 ## <a name="tips-and-tricks-to-optimize-costs"></a>[コストを最適化するためのヒントとコツ](#tab/TipsTricks)
 
@@ -134,7 +134,7 @@ Microsoft アカウント担当者と話をして、どのようにしたら現�
 
 ### <a name="use-azure-hybrid-benefit"></a>Azure ハイブリッド特典を利用する
 
-オンプレミス デプロイで既に Windows Server または SQL Server のライセンスを持っている場合は、[Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit)プログラムを使用して Azure で節約できます。 Windows Server を利用した場合、各ライセンスに OS のコストが含まれ (最大 2 台の仮想マシンが対象)、お客様が支払うのは基本的なコンピューティング コストのみとなります。 既存の SQL Server ライセンスを使用すれば、仮想コアベースの SQL Database オプションで最大 55% の節約となります。 オプションには、Azure 仮想マシン内の SQL Server と、SQL Server Integration Services が含まれます。
+オンプレミス デプロイで既に Windows Server または SQL Server のライセンスを持っている場合は、[Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit/)プログラムを使用して Azure で節約できます。 Windows Server を利用した場合、各ライセンスに OS のコストが含まれ (最大 2 台の仮想マシンが対象)、お客様が支払うのは基本的なコンピューティング コストのみとなります。 既存の SQL Server ライセンスを使用すれば、仮想コアベースの SQL Database オプションで最大 55% の節約となります。 オプションには、Azure 仮想マシン内の SQL Server と、SQL Server Integration Services が含まれます。
 
 ### <a name="low-priority-vms-with-batch"></a>バッチを使用した優先順位の低い VM
 

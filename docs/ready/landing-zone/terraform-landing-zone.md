@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: a1e2de16aea7af82795c4227675c5dc72ccf523c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0ad91b2d09e08bf05cca62323e18ed242ef5e1b6
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012517"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785327"
 ---
 <!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -91,12 +91,12 @@ CAF Terraform モジュールでは、次の決定事項が示されます。
 <!-- TODO: Review capitalization and hyphenation -->
 <!-- TODO: Eliminate either "Tag name" or "Key" column -->
 
-| タグ名          | 説明                                                                                        | Key             | 値の例                                    |
+| タグ名          | 説明                                                                                        | Key               | 値の例                                    |
 |-------------------|----------------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------|
-| 事業単位     | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 | `BusinessUnit`    | `finance`、`marketing`、`<product-name>`、`corp`、`shared` |
+| 事業単位     | リソースが属しているサブスクリプションまたはワークロードを所有する会社の最上位の部門。 | `BusinessUnit`    | `finance`, `marketing`, `<product-name>`, `corp`, `shared` |
 | コスト センター       | このリソースに関連付けられたアカウンティング コスト センター。                                              | `CostCenter`      | `<cost-center-number>`                                     |
 | 障害復旧 | アプリケーション、ワークロード、またはサービスのビジネス上の重要度。                                     | `DR`              | `dr-enabled`, `non-dr-enabled`                   |
-| 環境       | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                   | `Env`             | `prod`、`dev`、`qa`、`staging`、`test`、`training` |
+| 環境       | アプリケーション、ワークロード、またはサービスのデプロイ環境。                                   | `Env`             | `prod`, `dev`, `qa`, `staging`, `test`, `training` |
 | 所有者名        | このアプリケーション、ワークロード、またはサービスの所有者。                                                    | `Owner`           | `email`                                            |
 | デプロイの種類   | リソースの管理方法を定義します。                                                    | `DeploymentType`  | `manual`, `terraform`                                |
 | Version           | デプロイされるブループリントのバージョン。                                                                 | `Version`         | `v0.1`                                             |

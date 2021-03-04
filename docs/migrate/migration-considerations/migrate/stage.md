@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 13f2c81dab13aa0bebc00396b357213dc024fa85
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d20a29d014d05562f3c97e12043dd14f1d72e1f9
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025063"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785888"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>移行の間のステージング アクティビティを理解する
 
-プロモーションのモデルに関する記事で説明しているように、_ステージング_ は、クラウドへの資産の移行が完了している時点になります。 ただし、まだ運用環境に昇格できる状態にはなっていません。 これは、多くの場合、移行プロセスの最後の手順です。 ステージング後、ワークロードは、IT 運用チームまたはクラウド運用チームによって管理され、運用環境で使用するための準備がなされます。
+プロモーションのモデルに関する記事で説明しているように、*ステージング* は、クラウドへの資産の移行が完了している時点になります。 ただし、まだ運用環境に昇格できる状態にはなっていません。 これは、多くの場合、移行プロセスの最後の手順です。 ステージング後、ワークロードは、IT 運用チームまたはクラウド運用チームによって管理され、運用環境で使用するための準備がなされます。
 
 ## <a name="deliverables"></a>成果物
 

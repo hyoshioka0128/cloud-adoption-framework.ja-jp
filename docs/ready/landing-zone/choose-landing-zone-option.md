@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 5a4f5de75d3550db5446302eccb3d621cf8bc012
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.openlocfilehash: dfcb3c7c40fafb6343dffed4682eed993c60c3cc
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492274"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785055"
 ---
 # <a name="choose-the-landing-zone-for-your-organization"></a>組織に適したランディング ゾーンを選択する
 
@@ -28,7 +28,7 @@ Microsoft では、ランディング ゾーンを実装する 2 つのオプシ
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwZeg]
 
-また、サードパーティの実装を採用することも検討することもできます。 Microsoft のパートナーは、そのサービスを通じて多くの実装を提供しています。 詳細については、「[Microsoft パートナーの Azure ランディング ゾーンを評価する](/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone)」を参照してください。
+また、サードパーティの実装を採用することも検討することもできます。 Microsoft のパートナーは、そのサービスを通じて多くの実装を提供しています。 詳細については、「[Microsoft パートナーの Azure ランディング ゾーンを評価する](./partner-landing-zone.md)」を参照してください。
 
 ## <a name="overview-of-landing-zone-options"></a>ランディング ゾーンのオプションの概要
 
@@ -53,7 +53,7 @@ Microsoft では、ランディング ゾーンを実装する 2 つのオプシ
         **最初の考慮事項**
     :::column-end:::
     :::column:::
-        [運用モデルの調整](/azure/cloud-adoption-framework/operating-model/compare#operating-model-comparison)
+        [運用モデルの調整](../../operating-model/compare.md#operating-model-comparison)
     :::column-end:::
     :::column:::
         集中型の運用
@@ -229,7 +229,7 @@ Microsoft では、ランディング ゾーンを実装する 2 つのオプシ
 
 ベースライン アーキテクチャまたは環境は必要でしょうか。 小規模から始めて拡張するアプローチは、独自のソリューションを構築できる簡単な出発点となります。 エンタープライズ規模のアプローチは、クラウドネイティブの運用を含む Azure テナント全体の環境を提供します。
 
-運用の種類の詳細については、「[一般的なクラウド運用モデルを比較する](/azure/cloud-adoption-framework/operating-model/compare)」を参照してください。
+運用の種類の詳細については、「[一般的なクラウド運用モデルを比較する](../../operating-model/compare.md)」を参照してください。
 
 ## <a name="adoption-plan-considerations"></a>導入計画に関する考慮事項
 
@@ -241,9 +241,9 @@ Microsoft では、ランディング ゾーンを実装する 2 つのオプシ
 
 エンタープライズ規模では、長期的な自己完結性とオペレーショナル エクセレンスをすぐに実現できます。 また、エンタープライズ規模は、組織全体でのコンプライアンスの導入にも役立ちます。 エンタープライズ規模のアプローチを採用すると、基盤構築を行うことができます。 エンタープライズ規模には、セキュリティ、ID、およびネットワークに関するガードレールが含まれています。 このアプローチには、DevOps と自動化のための CI/CD パイプライン オプションが含まれています。
 
-小規模から始めて拡張する場合、自己完結性、導入速度、およびオペレーショナル エクセレンスを実現する方法がいくつかあります。 クラウド導入フレームワークの方法論または管理手法を使用して、これらの要素をランディング ゾーン ソリューションに反復的に構築します。 設計を反復的に改善するには、設計の 8 つの領域である[クラウド導入フレームワークのエンタープライズ規模の設計ガイドライン](/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines)を使用します。
+小規模から始めて拡張する場合、自己完結性、導入速度、およびオペレーショナル エクセレンスを実現する方法がいくつかあります。 クラウド導入フレームワークの方法論または管理手法を使用して、これらの要素をランディング ゾーン ソリューションに反復的に構築します。 設計を反復的に改善するには、設計の 8 つの領域である[クラウド導入フレームワークのエンタープライズ規模の設計ガイドライン](../enterprise-scale/design-guidelines.md)を使用します。
 
-オペレーショナル エクセレンスの詳細については、「[デジタル変革におけるオペレーショナル エクセレンスを実現する](/azure/cloud-adoption-framework/get-started/operational-excellence)」を参照してください。
+オペレーショナル エクセレンスの詳細については、「[デジタル変革におけるオペレーショナル エクセレンスを実現する](../../get-started/operational-excellence.md)」を参照してください。
 
 ## <a name="compliance-considerations"></a>コンプライアンスの考慮事項
 
@@ -254,9 +254,9 @@ Microsoft では、ランディング ゾーンを実装する 2 つのオプシ
 
 組織によっては、ワークロードやアプリケーションを短期間でコンプライアンスに準拠させる必要がある場合があるため、この要件が選択に影響を与える可能性があります。
 
-小規模から始めて拡張することは、コンプライアンスを実現するための反復的なアプローチです。 機密データや重要なワークロードに対応するには、クラウド導入フレームワークのガバナンスと管理の手法を使用します。 詳細については、「[クラウドのガバナンス手法](/azure/cloud-adoption-framework/govern/methodology)」と「[クラウドの IT 管理と運用](/azure/cloud-adoption-framework/manage/considerations/)」を参照してください。
+小規模から始めて拡張することは、コンプライアンスを実現するための反復的なアプローチです。 機密データや重要なワークロードに対応するには、クラウド導入フレームワークのガバナンスと管理の手法を使用します。 詳細については、「[クラウドのガバナンス手法](../../govern/methodology.md)」と「[クラウドの IT 管理と運用](../../manage/considerations/index.md)」を参照してください。
 
-エンタープライズ規模のアーキテクチャには、コンプライアンス目標をサポートするためのセグメント化と分離の設計と、適切なレベルのガバナンス、セキュリティ、コンプライアンスを実現する方法を決定するための[サービス有効化フレームワーク](/azure/cloud-adoption-framework/ready/enterprise-scale/security-governance-and-compliance#service-enablement-framework)が含まれています。
+エンタープライズ規模のアーキテクチャには、コンプライアンス目標をサポートするためのセグメント化と分離の設計と、適切なレベルのガバナンス、セキュリティ、コンプライアンスを実現する方法を決定するための[サービス有効化フレームワーク](../enterprise-scale/security-governance-and-compliance.md#service-enablement-framework)が含まれています。
 
 可能であれば、最初に実装するリスクの低いワークロードを特定します。 この手法は、時間をかけてインフラストラクチャとスキルを構築するのに役立ちます。 クラウドの仕組みを理解するにつれて、ガバナンスと管理の手法を追加することができます。
 
@@ -274,7 +274,7 @@ Microsoft では、ランディング ゾーンを実装する 2 つのオプシ
 
 エンタープライズ規模では、すべての重要なサービスが構成済みで提供されます。 小規模から始めて拡張の場合は、一部のリソースが展開されています。
 
-詳細については、「[Azure 対応性のベスト プラクティス](/azure/cloud-adoption-framework/ready/azure-best-practices/)」を参照してください。
+詳細については、「[Azure 対応性のベスト プラクティス](../azure-best-practices/index.md)」を参照してください。
 
 どちらの方法でも、自動化機能を使用できます。
 
@@ -283,8 +283,8 @@ Microsoft では、ランディング ゾーンを実装する 2 つのオプシ
 
 小規模から始めて拡張する方法では、ARM テンプレート、Azure Policy、および Azure Blueprints を使用します。
 
-- [CAF 基盤ブループリント](/azure/cloud-adoption-framework/ready/landing-zone/foundation-blueprint)
-- [CAF 移行ランディング ゾーンのブループリント](/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone)
+- [CAF 基盤ブループリント](./foundation-blueprint.md)
+- [CAF 移行ランディング ゾーンのブループリント](./migrate-landing-zone.md)
 
 エンタープライズ規模では、ARM テンプレート、Azure Policy を使用し、3 つのリファレンス実装と異なるデプロイを提供しています。
 
