@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: e9fa4ef47cf7e98779a2e09bff8c6afbc6da7da2
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: f8cdf5e0f7c7993968bf5e0e833e3b1e5c9fdca5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712112"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101793062"
 ---
 # <a name="policy-enforcement-decision-guide"></a>ポリシー適用の意思決定ガイド
 
@@ -44,7 +44,7 @@ ms.locfileid: "97712112"
 
 Azure プラットフォームによって提供されるポリシー適用メカニズムにただ頼ることを超えた最初のステップは、クラウドベースのアプリケーションとサービスが組織のポリシーに準拠していることを確実に確認できるようにすることです。 これには、リソースが非準拠の状態になったときに責任者にアラートを送る通知機能の実装が含まれます。 クラウド ワークロードのコンプライアンス状態の[ログ記録とレポート作成](../logging-and-reporting/index.md)を効果的に行うことは、企業ポリシー適用戦略の重要な一部です。
 
-クラウド資産が拡大したら、[Azure Security Center](/azure/security-center) などの追加ツールによって、統合されたセキュリティと脅威の検出を提供できます。こうしたツールは、一元化されたポリシー管理を適用したり、オンプレミスとクラウドの両方の資産にアラートを適用したりするのに役立ちます。
+クラウド資産が拡大したら、[Azure Security Center](/azure/security-center/) などの追加ツールによって、統合されたセキュリティと脅威の検出を提供できます。こうしたツールは、一元化されたポリシー管理を適用したり、オンプレミスとクラウドの両方の資産にアラートを適用したりするのに役立ちます。
 
 ## <a name="policy-enforcement"></a>ポリシーの適用
 

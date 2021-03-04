@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: f88b4b68fe0fde661d611ecaf1b63d0d603741bd
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 304136ceb8fe8bdedad89ebf52406722702ea064
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712129"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101793045"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -66,7 +66,7 @@ Azure では、[リソース グループ](/azure/azure-resource-manager/managem
 
 リソース グループを使用すると、サブスクリプション内の組織内で追加の階層レベルをサポートでき、リソース グループ レベルで Azure Policy の規則とアクセス制御を適用できます。 クラウド資産のサイズ拡大に合わせて、Azure エンタープライズ契約の企業、部門、アカウント、サブスクリプションの各階層を使用してサポートできる、さらに複雑なサブスクリプション間ガバナンス要件のサポートが必要となる場合があります。
 
-[Azure 管理グループ](/azure/governance/management-groups)を使用すると、サブスクリプションをエンタープライズ契約の階層と異なる階層にグループ化することで、サブスクリプションをより高度な組織構造に編成することができます。 この代替階層では、複数のサブスクリプションと各サブスクリプションに含まれるリソースにまたがって、アクセス制御とポリシー実施のメカニズムを適用できます。 管理グループ階層を使用して、クラウド資産のサブスクリプションを運用やビジネス ガバナンスの要件に一致させることができます。 詳細については、「[サブスクリプション決定ガイド](../subscriptions/index.md)」を参照してください。
+[Azure 管理グループ](/azure/governance/management-groups/)を使用すると、サブスクリプションをエンタープライズ契約の階層と異なる階層にグループ化することで、サブスクリプションをより高度な組織構造に編成することができます。 この代替階層では、複数のサブスクリプションと各サブスクリプションに含まれるリソースにまたがって、アクセス制御とポリシー実施のメカニズムを適用できます。 管理グループ階層を使用して、クラウド資産のサブスクリプションを運用やビジネス ガバナンスの要件に一致させることができます。 詳細については、「[サブスクリプション決定ガイド](../subscriptions/index.md)」を参照してください。
 
 ## <a name="automated-consistency"></a>整合性の自動化
 
