@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: f1d55875ca62dd78bc9840337f8ff5be49e1ae36
-ms.sourcegitcommit: 86d51757bd34b49ce3b061123a6aaa8c88d3b2cc
+ms.openlocfilehash: c510873857e3767c76eff58b2b9748486f22d527
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97909448"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102207913"
 ---
 # <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 
@@ -70,7 +70,7 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 | アプリケーションの所有者 (DevOps/AppOps) | リソース グループ レベルでアプリケーションおよび運用チームに付与される共同作成者ロール                                 | `*`                                                                                                                                                                                                                   | `Microsoft.Authorization/*/write`, `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
 
 - Azure Security Center の Just-In-Time アクセスをすべてのサービスとしてのインフラストラクチャ (IaaS) リソースに使用して、IaaS 仮想マシンへの一時的なユーザー アクセスに対してネットワークレベルの保護を有効にします。
-- Azure リソースに Azure AD のマネージド ID を使用して、ユーザー名とパスワードに基づく認証を回避します。 パブリック クラウド リソースのセキュリティ違反の多くは、コードまたはその他のテキスト ソースに埋め込まれた資格情報の盗難に起因しているため、プログラムによるアクセスにマネージド ID を適用することで、資格情報の盗難のリスクを大幅に減らすことができます。
+- ユーザー名とパスワードに基づく認証を避けるために、Azure リソースには Azure AD マネージド ID を使用します。 パブリック クラウド リソースのセキュリティ違反の多くは、コードまたはその他のテキスト ソースに埋め込まれた資格情報の盗難に起因しているため、プログラムによるアクセスにマネージド ID を適用することで、資格情報の盗難のリスクを大幅に減らすことができます。
 - 管理者特権でのアクセス許可を必要とする Automation Runbook に特権 ID を使用します。 重要なセキュリティ境界に違反する自動ワークフローは、同等の特権を持つユーザーと同じツールとポリシーで管理する必要があります。
 - ユーザーを Azure リソース スコープに直接追加しないでください。 代わりに、定義済みのロールにユーザーを追加して、それをリソース スコープに割り当てます。 直接ユーザー割り当てでは一元管理が難しくなり、制限されたデータに対する未承認のアクセスを防ぐために必要な管理が大幅に増加します。
 
