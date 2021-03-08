@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 66b5a9971af9e39bb9333496f4eff09f5975a3d1
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 6f2048d17f62cf5f555038f43a394df8112b181b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787010"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113403"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -88,7 +88,7 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 | 考慮事項 | 詳細 |
 | --- | --- |
-| **長所** | <li>ハイ パフォーマンスのベアメタル VMware インフラストラクチャ。 <li>インフラストラクチャは、完全に Contoso 専用となり、他のお客様のインフラストラクチャから物理的に分離されます。 <li>Contoso は VMware を使ったリホストを使用することになるので、特別な構成や移行の複雑さはありません。 <li>Contoso は、[Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit/)と、レガシ Windows および SQL プラットフォーム用の[拡張セキュリティ更新プログラム](https://www.microsoft.com/cloud-platform/windows-server-2008)を使用して、ソフトウェア アシュランスへの投資を活用できます。 <li>Contoso は、Azure でアプリケーション VM の完全な制御を維持できます。 <br><br> |
+| **長所** | <li> ハイ パフォーマンスのベアメタル VMware インフラストラクチャ。 <li> インフラストラクチャは、完全に Contoso 専用となり、他のお客様のインフラストラクチャから物理的に分離されます。 <li> Contoso は VMware を使ったリホストを使用することになるので、特別な構成や移行の複雑さはありません。 <li> Contoso は、[Azure ハイブリッド特典](https://azure.microsoft.com/pricing/hybrid-benefit/)と、レガシ Windows および SQL プラットフォーム用の[拡張セキュリティ更新プログラム](/windows-server/)を使用して、ソフトウェア アシュランスへの投資を活用できます。 <li> Contoso は、Azure でアプリケーション VM の完全な制御を維持できます。 <br><br> |
 | **短所** | <li>Contoso は今後も、Azure App Service や Azure SQL Database などのマネージド サービスにアプリケーションを移行するのではなく、VMware VM としてアプリケーションをサポートしていく必要があります。 <li>Azure VMware Solution の設定と価格は、Azure IaaS 内の個々の VM 単位ではなく大きなノード単位であり、少なくとも 3 ノードが必要です。 現在使用されているオンプレミス環境によって、他の Azure サービスが備えるオンデマンドな特性が制限されるため、Contoso はその容量ニーズを計画する必要があります。 |
 
 > [!NOTE]
