@@ -2,19 +2,18 @@
 title: 境界ネットワーク
 description: Azure 向けのクラウド導入フレームワークを使用して、組織に合った効果的な Azure のセットアップ方法を学習します。
 author: tracsman
-manager: rossort
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank, virtual-network
-ms.openlocfilehash: 13838e7fc0e517c9c688ffa937bd0caf20dafe76
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 94a76c26b4848fd5bb8b3c45593e7f3365790098
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024383"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787316"
 ---
 # <a name="perimeter-networks"></a>境界ネットワーク
 
@@ -28,9 +27,9 @@ ms.locfileid: "97024383"
 - [ネットワーク仮想アプライアンス (NVA)][network-virtual-appliances]
 - [Azure Load Balancer][alb]
 - [Azure Application Gateway][appgw] と [Web アプリケーション ファイアウォール (WAF)][appgwwaf]
-- [パブリック IP][PIP]
+- [パブリック IP][public-ip]
 - [Azure Front Door][afd] と [Web アプリケーション ファイアウォール][afdwaf]
-- [Azure Firewall][Azure-firewall]
+- [Azure Firewall][azure-firewall]
 
 > [!NOTE]
 > Azure の参照アーキテクチャには、独自の境界ネットワークを実装するために使用できるサンプル テンプレートが含まれています。
@@ -41,7 +40,7 @@ ms.locfileid: "97024383"
 通常、中央 IT チームとセキュリティ チームは、境界ネットワークを運用するための要件の定義を担当します。
 
 ![ハブ アンド スポーク ネットワーク トポロジの例](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
-_図 1:ハブ アンド スポーク ネットワーク トポロジの例_
+*図 1:ハブ アンド スポーク ネットワーク トポロジの例*
 
 上の図では、インターネットとオンプレミス ネットワークにアクセスする 2 つの境界の適用を実装する[ハブ アンド スポーク ネットワーク](./hub-spoke-network-topology.md)の例が示されています。 どちらの境界も DMZ ハブに存在します。 DMZ ハブでは、WAF と Azure Firewall インスタンスからなるファームを複数利用してスポーク仮想ネットワークを保護すると、多数の基幹業務をサポートするよう、インターネットへの境界ネットワークをスケールアップできます。 ハブは、必要に応じて VPN または Azure ExpressRoute 経由で接続することもできます。
 
@@ -57,7 +56,7 @@ _図 1:ハブ アンド スポーク ネットワーク トポロジの例_
 
 ## <a name="azure-firewall"></a>Azure Firewall
 
-[Azure Firewall][Azure-firewall] とは、Azure Virtual Network リソースの保護に役立つクラウドベースのマネージド サービスです。 これは、組み込みの高可用性とクラウドによる無制限のスケーラビリティを備えた、完全にステートフルなマネージド ファイアウォールです。 サブスクリプションと仮想ネットワークをまたいでアプリケーションとネットワークの接続ポリシーを一元的に作成、適用、記録できます。
+[Azure Firewall][azure-firewall] とは、Azure Virtual Network リソースの保護に役立つクラウドベースのマネージド サービスです。 これは、組み込みの高可用性とクラウドによる無制限のスケーラビリティを備えた、完全にステートフルなマネージド ファイアウォールです。 サブスクリプションと仮想ネットワークをまたいでアプリケーションとネットワークの接続ポリシーを一元的に作成、適用、記録できます。
 
 Azure Firewall では、仮想ネットワーク リソースに静的パブリック IP アドレスが使用されます。 これにより、仮想ネットワークから送信されるトラフィックを外部のファイアウォールで識別できます。 サービスはログ記録と分析を行うために Azure Monitor と相互運用されます。
 
@@ -99,11 +98,11 @@ Azure Application Gateway の WAF SKU には、Web アプリケーション フ�
 
 ## <a name="public-ips"></a>パブリック IP
 
-Azure の一部の機能を使用して、インターネットからリソースにアクセスできるように、サービス エンドポイントを[パブリック IP][PIP] アドレスに関連付けることができます。 このエンドポイントでは、ネットワーク アドレス変換 (NAT) を使用して、Azure Virtual Network 上の内部アドレスとポートにトラフィックをルーティングします。 これは、外部トラフィックが仮想ネットワークに到達するための主な経路です。 パブリック IP アドレスを構成すると、仮想ネットワークに渡されるトラフィックと、そのトラフィックが仮想ネットワークのどこでどのように変換されるのかを決定できます。
+Azure の一部の機能を使用して、インターネットからリソースにアクセスできるように、サービス エンドポイントを[パブリック IP][public-ip] アドレスに関連付けることができます。 このエンドポイントでは、ネットワーク アドレス変換 (NAT) を使用して、Azure 仮想ネットワーク上の内部アドレスとポートにトラフィックをルーティングします。 これは、外部トラフィックが仮想ネットワークに到達するための主な経路です。 パブリック IP アドレスを構成すると、仮想ネットワークに渡されるトラフィックと、そのトラフィックが仮想ネットワークのどこでどのように変換されるのかを決定できます。
 
 ## <a name="azure-ddos-protection-standard"></a>Azure DDoS Protection Standard
 
-[Azure DDoS Protection Standard][DDoS] は、[Basic サービス][DDoS] レベルに加えて、特に Azure Virtual Network リソースに対してチューニングされた追加の軽減機能を提供します。 DDoS Protection Standard の有効化は簡単であり、アプリケーションの変更は不要です。
+[Azure DDoS Protection Standard][ddos] は、[Basic サービス][ddos] レベルに加えて、特に Azure Virtual Network リソースに対してチューニングされた追加の軽減機能を提供します。 DDoS Protection Standard の有効化は簡単であり、アプリケーションの変更は不要です。
 
 保護ポリシーは、専用のトラフィック監視や機械学習アルゴリズムによってチューニングできます。 ポリシーは、仮想ネットワークにデプロイされたリソースに関連付けられているパブリック IP アドレスに適用されます。 例として、Azure Load Balancer、Application Gateway、および Service Fabric のインスタンスがあります。
 
@@ -111,16 +110,16 @@ Azure の一部の機能を使用して、インターネットからリソー�
 
 <!-- links -->
 
-[Virtual-networks]: /azure/virtual-network/virtual-networks-overview
-[Network-security-groups]: /azure/virtual-network/virtual-networks-nsg
-[User-defined-routes]: /azure/virtual-network/virtual-networks-udr-overview
-[Network-virtual-appliances]: /azure/architecture/reference-architectures/dmz/nva-ha
-[Azure-firewall]: /azure/firewall/overview
-[Perimeter-network]: /azure/best-practices-network-security
-[Alb]: /azure/load-balancer/load-balancer-overview
-[DDoS]: /azure/virtual-network/ddos-protection-overview
-[PIP]: /azure/virtual-network/virtual-network-public-ip-address
-[Afd]: /azure/frontdoor/front-door-overview
-[Afdwaf]: /azure/frontdoor/waf-overview
-[Appgw]: /azure/application-gateway/application-gateway-introduction
-[Appgwwaf]: /azure/application-gateway/application-gateway-web-application-firewall-overview
+[virtual-networks]: /azure/virtual-network/virtual-networks-overview
+[network-security-groups]: /azure/virtual-network/virtual-network-vnet-plan-design-arm
+[user-defined-routes]: /azure/virtual-network/virtual-networks-udr-overview
+[network-virtual-appliances]: /azure/architecture/reference-architectures/dmz/nva-ha
+[azure-firewall]: /azure/firewall/overview
+[perimeter-network]: ../../reference/networking-vdc
+[alb]: /azure/load-balancer/load-balancer-overview
+[ddos]: /azure/ddos-protection/ddos-protection-overview
+[public-ip]: /azure/virtual-network/virtual-network-public-ip-address
+[afd]: /azure/frontdoor/front-door-overview
+[afdwaf]: /azure/web-application-firewall/afds/afds-overview
+[appgw]: /azure/application-gateway/overview
+[appgwwaf]: /azure/web-application-firewall/ag/ag-overview
