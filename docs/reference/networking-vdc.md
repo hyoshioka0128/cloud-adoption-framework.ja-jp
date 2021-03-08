@@ -2,19 +2,19 @@
 title: 仮想データセンター:ネットワーク パースペクティブ
 description: Azure を使用してインフラストラクチャをクラウドにシームレスに拡張し、多層アーキテクチャを構築する方法を理解するために、Azure のクラウド導入フレームワークを利用します。
 author: tracsman
-manager: rossort
 ms.author: brblanch
+manager: rossort
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank, virtual-network
-ms.openlocfilehash: efe7a4e957bd2287c4cfe846562788b0c165c3ee
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: ed98a21bf3a987cd15d0485b639283791e95355d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713083"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788098"
 ---
 <!-- docutune:disable TODO -->
 <!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->
@@ -113,19 +113,19 @@ Azure ファブリックは、テナントのワークロードにインフラ�
 
 仮想データセンターは、ニーズとスケール要件に基づいて、次のような高レベルのトポロジのいずれかを使用して構築できます。
 
-"_フラット トポロジ_" では、すべてのリソースが 1 つの仮想ネットワークにデプロイされます。 サブネットではフロー制御と分離が許可されます。
+"*フラット トポロジ*" では、すべてのリソースが 1 つの仮想ネットワークにデプロイされます。 サブネットではフロー制御と分離が許可されます。
 
 ![11][11]
 
-"_メッシュ トポロジ_" では、仮想ネットワーク ピアリングによって、すべての仮想ネットワークが相互に直接接続されます。
+"*メッシュ トポロジ*" では、仮想ネットワーク ピアリングによって、すべての仮想ネットワークが相互に直接接続されます。
 
 ![12][12]
 
-"_ピアリングハブ アンド スポーク トポロジ_" は、責任を委任された分散アプリケーションやチームに非常に適しています。
+"*ピアリングハブ アンド スポーク トポロジ*" は、責任を委任された分散アプリケーションやチームに非常に適しています。
 
 ![13][13]
 
-"_Azure Virtual WAN トポロジ_" では、大規模なブランチ オフィス シナリオとグローバル WAN サービスをサポートできます。
+"*Azure Virtual WAN トポロジ*" では、大規模なブランチ オフィス シナリオとグローバル WAN サービスをサポートできます。
 
 ![14][14]
 
@@ -215,7 +215,7 @@ VDC は、ハブを管理する中央 IT チーム用に作成されたグルー
 
 インフラストラクチャ コンポーネントは、VDC 実装のさまざまなコンポーネントに相互接続を提供し、ハブとスポークの両方に存在します。 インフラストラクチャ コンポーネントの管理と保守の責任は、通常、中央 IT チームまたはセキュリティ チームに割り当てられます。
 
-IT インフラストラクチャ チームの主要なタスクの 1 つは、企業全体にわたって一貫した IP アドレス スキーマを保証することです。 VDC 実装に割り当てられたプライベート IP アドレス空間は、一貫性があり、オンプレミスのネットワークで割り当てられたプライベート IP アドレスと重複していない必要があります。
+IT インフラストラクチャ チームの主要なタスクの 1 つは、企業全体にわたって一貫した IP アドレス スキーマを保証することです。 VDC 実装に割り当てられたプライベート IP アドレス空間は、一貫性があり、オンプレミスのネットワークで割り当てられたプライベート IP アドレスと重複して **いない** 必要があります。
 
 オンプレミスのエッジ ルーター上または Azure 環境内の NAT は、IP アドレスの競合を回避できますが、インフラストラクチャ コンポーネントが複雑になります。 管理の簡単さが VDC の主な目標の 1 つなので、NAT を使って IP の問題を処理することは有効なソリューションではあるものの、推奨されるソリューションではありません。
 
@@ -433,8 +433,8 @@ Azure データセンターは世界中の多数のリージョンに存在し�
     :::column:::
         **負荷分散** <br>
         [Azure Front Door][azure-front-door] <br>
-        [Azure Load Balancer (L4)][ALB] <br>
-        [Application Gateway (L7)][AppGW] <br>
+        [Azure Load Balancer (レイヤー 4)][ALB] <br>
+        [Application Gateway (レイヤー 7)][AppGW] <br>
         [Azure の Traffic Manager][azure-traffic-manager]
     :::column-end:::
     :::column:::
@@ -502,7 +502,7 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 <!-- images -->
 
 [0]: ../_images/vdc/networking-vdc-redundant.png "コンポーネントのオーバーラップの例"
-<!-- _1_ >: ../_images/vdc/networking-vdc-high-level.png "Example of hub and spoke VDC" -->
+<!-- *1* >: ../_images/vdc/networking-vdc-high-level.png "Example of hub and spoke VDC" -->
 [2]: ../_images/vdc/networking-vdc-cluster.png "ハブとスポークのクラスター"
 [3]: ../_images/vdc/networking-vdc-spoke-to-spoke.png "スポーク間"
 [4]: ../_images/vdc/networking-vdc-block-level-diagram.png "VDC のブロック レベルの図"
@@ -522,7 +522,7 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 [limits]: /azure/azure-resource-manager/management/azure-subscription-service-limits
 [Roles]: /azure/role-based-access-control/built-in-roles
 [virtual-network]: /azure/virtual-network/virtual-networks-overview
-[NSG]: /azure/virtual-network/security-overview
+[NSG]: /azure/virtual-network/network-security-groups-overview
 [PrivateLink]: /azure/private-link/private-link-overview
 [PrivateLinkSvc]: /azure/private-link/private-link-service-overview
 [ServiceEndpoints]: /azure/virtual-network/virtual-network-service-endpoints-overview
@@ -543,7 +543,7 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 [MgmtGrp]: /azure/governance/management-groups/overview
 [RGMgmt]: /azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group
 [ALB]: /azure/load-balancer/load-balancer-overview
-[DDoS]: /azure/virtual-network/ddos-protection-overview
+[DDoS]: /azure/ddos-protection/ddos-protection-overview
 [PIP]: /azure/virtual-network/virtual-network-public-ip-address
 [azure-front-door]: /azure/frontdoor/front-door-overview
 [AFDWAF]: /azure/web-application-firewall/afds/afds-overview
@@ -551,9 +551,9 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 [AppGWWAF]: /azure/web-application-firewall/ag/ag-overview
 [MonitorOverview]: /azure/networking/networking-overview#monitor
 [AzureMonitor]: /azure/azure-monitor/overview
-[Metrics]: /azure/azure-monitor/platform/data-platform-metrics
-[Logs]: /azure/azure-monitor/platform/data-platform-logs
-[LogAnalytics]: /azure/azure-monitor/log-query/get-started-portal
+[Metrics]: /azure/azure-monitor/essentials/data-platform-metrics
+[Logs]: /azure/azure-monitor/logs/data-platform-logs
+[LogAnalytics]: /azure/azure-monitor/logs/log-analytics-tutorial
 [NetWatch]: /azure/network-watcher/network-watcher-monitoring-overview
 [WebApps]: /azure/app-service/
 [HDInsight]: /azure/hdinsight/hdinsight-overview
@@ -561,7 +561,7 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 [ServiceBus]: /azure/service-bus-messaging/service-bus-messaging-overview
 [azure-traffic-manager]: /azure/traffic-manager/traffic-manager-overview
 [Storage]: /azure/storage/common/storage-introduction
-[SQL]: /azure/sql-database/sql-database-technical-overview
+[SQL]: /azure/azure-sql/database/sql-database-paas-overview
 [cosmos-db]: /azure/cosmos-db/introduction
 [IoT]: /azure/iot-fundamentals/iot-introduction
 [machine-learning]: /azure/machine-learning/overview-what-is-azure-ml

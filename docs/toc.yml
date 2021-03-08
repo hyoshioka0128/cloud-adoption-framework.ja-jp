@@ -7,30 +7,32 @@ items:
     href: overview.md
   - name: 新機能
     href: get-started/whats-new.md
-  - name: 作業開始
+  - name: 導入体験
     items:
-      - name: 概要
-        href: get-started/index.md
-      - name: 基本的な連携
+      - name: 開始するには
         items:
-          - name: 基本的な連携に関する決定事項を文書化する
-            href: get-started/cloud-concepts.md
-          - name: Azure のしくみ
-            href: get-started/what-is-azure.md
-          - name: Azure 基礎の概念
-            href: ready/considerations/fundamental-concepts.md
-          - name: ポートフォリオ階層
-            href: reference/fundamental-concepts/hosting-hierarchy.md
-          - name: Azure 階層のサポート
-            href: reference/fundamental-concepts/hierarchy-azure-tools.md
-      - name: 導入を加速する
-        items:
-          - name: 移行を促進する
-            href: get-started/migrate.md
-          - name: 新しい製品とサービスを構築する
-            href: get-started/innovate.md
-          - name: 環境の設計と構成の阻害要素を取り除く
-            href: get-started/design-and-configuration.md
+          - name: 概要
+            href: get-started/index.md
+          - name: 基本的な連携
+            items:
+              - name: 基本的な連携に関する決定事項を文書化する
+                href: get-started/cloud-concepts.md
+              - name: Azure のしくみ
+                href: get-started/what-is-azure.md
+              - name: Azure 基礎の概念
+                href: ready/considerations/fundamental-concepts.md
+              - name: ポートフォリオ階層
+                href: reference/fundamental-concepts/hosting-hierarchy.md
+              - name: Azure 階層のサポート
+                href: reference/fundamental-concepts/hierarchy-azure-tools.md
+          - name: 導入を加速する
+            items:
+              - name: 移行を促進する
+                href: get-started/migrate.md
+              - name: 新しい製品とサービスを構築する
+                href: get-started/innovate.md
+              - name: 環境の設計と構成の阻害要素を取り除く
+                href: get-started/design-and-configuration.md
       - name: コントロールを改善する
         items:
           - name: 顧客の成功を支援する
@@ -57,6 +59,12 @@ items:
             href: get-started/team/cloud-governance.md
           - name: クラウド運用チームを結成する
             href: get-started/team/cloud-operations.md
+      - name: 導入のシナリオ
+        items:
+          - name: ハイブリッドとマルチクラウド
+            href: scenarios/hybrid/index.md
+          - name: 最新のコンテナー
+            href: scenarios/aks/index.md
   - name: 戦略
     items:
       - name: 概要
@@ -217,7 +225,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: アーキテクチャ
+              - name: Architecture
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md
@@ -232,7 +240,37 @@ items:
                   - name: 管理グループとサブスクリプションの組織
                     href: ready/enterprise-scale/management-group-and-subscription-organization.md
                   - name: ネットワーク トポロジと接続
-                    href: ready/enterprise-scale/network-topology-and-connectivity.md
+                    items:
+                      - name: 概要
+                        href: ready/enterprise-scale/network-topology-and-connectivity.md
+                      - name: IP アドレス指定を計画する
+                        href: ready/azure-best-practices/plan-for-ip-addressing.md
+                      - name: オンプレミスおよび Azure リソース用の DNS
+                        href: ready/azure-best-practices/dns-for-on-premises-and-azure-resources.md
+                      - name: Private Link と DNS の大規模な統合
+                        href: ready/azure-best-practices/private-link-and-dns-integration-at-scale.md
+                      - name: Azure のネットワーク トポロジを定義する
+                        href: ready/azure-best-practices/define-an-azure-network-topology.md
+                      - name: Virtual WAN ネットワーク トポロジ (Microsoft 管理)
+                        href: ready/azure-best-practices/virtual-wan-network-topology.md
+                      - name: 従来の Azure ネットワーク トポロジ
+                        href: ready/azure-best-practices/traditional-azure-networking-topology.md
+                      - name: Azure への接続性
+                        href: ready/azure-best-practices/connectivity-to-azure.md
+                      - name: Azure PaaS サービスへの接続
+                        href: ready/azure-best-practices/connectivity-to-azure-paas-services.md
+                      - name: 受信と送信のインターネット接続を計画する
+                        href: ready/azure-best-practices/plan-for-inbound-and-outbound-internet-connectivity.md
+                      - name: アプリの配信を計画する
+                        href: ready/azure-best-practices/plan-for-app-delivery.md
+                      - name: ランディング ゾーンのネットワーク セグメント化を計画する
+                        href: ready/azure-best-practices/plan-for-landing-zone-network-segmentation.md
+                      - name: ネットワーク暗号化の要件を定義する
+                        href: ready/azure-best-practices/define-network-encryption-requirements.md
+                      - name: トラフィックの検査を計画する
+                        href: ready/azure-best-practices/plan-for-traffic-inspection.md
+                      - name: 他のクラウド プロバイダーへの接続
+                        href: ready/azure-best-practices/connectivity-to-other-cloud-providers.md
                   - name: 管理と監視
                     href: ready/enterprise-scale/management-and-monitoring.md
                   - name: 事業継続とディザスター リカバリー
