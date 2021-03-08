@@ -7,12 +7,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 90a99c1c7c817b6bb8e578515f1fae8b8d7ae341
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: e8c6d6074e075b6804038269dfb5f570dbe7488c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800097"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112876"
 ---
 # <a name="manage-modern-container-solutions-clusters"></a>最新のコンテナー ソリューションのクラスターを管理する
 
@@ -52,7 +52,7 @@ ms.locfileid: "101800097"
 
 ### <a name="inventory-and-visibility"></a>インベントリと可視性
 
-コンテナーと AKS クラスターの監視では、運用ベースラインに含まれているツール、ダッシュボード、アラートを使用します。 ただし、コンテナーから運用監視ツール ([Azure Monitor for containers](/azure/azure-monitor/containers/container-insights-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json toc=/azure/cloud-adoption-framework/toc.json) など) にデータを取得するには、追加の構成を行うことが必要になる場合があります。 コンテナーと AKS プラットフォームの運用を運用ベースラインに追加するために必要なデータを収集するには、[Azure Monitor for containers の概要](/azure/azure-monitor/containers/container-insights-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json toc=/azure/cloud-adoption-framework/toc.json)に関するページを参照してください。
+コンテナーと AKS クラスターの監視では、運用ベースラインに含まれているツール、ダッシュボード、アラートを使用します。 ただし、コンテナーから運用監視ツール ([Azure Monitor for containers](/azure/azure-monitor/containers/container-insights-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/toc.json) など) にデータを取得するには、追加の構成を行うことが必要になる場合があります。 コンテナーと AKS プラットフォームの運用を運用ベースラインに追加するために必要なデータを収集するには、[Azure Monitor for containers の概要](/azure/azure-monitor/containers/container-insights-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/toc.json)に関するページを参照してください。
 
 コンテナー上のデータを収集するように Azure Monitor を構成したら、一元化された管理プロセスの一部として次の領域を監視できます。
 

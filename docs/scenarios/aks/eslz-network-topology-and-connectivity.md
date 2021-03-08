@@ -7,12 +7,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 695d46a7641ec300aaf7956537f2b8cd2a3363fa
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d04811ba3f0aa034362cb1683d82074dfd5eb776
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800709"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102111992"
 ---
 # <a name="network-topology-and-connectivity-for-azure-kubernetes-service-aks-enterprise-scale-scenario"></a>Azure Kubernetes Service (AKS) のエンタープライズ規模のシナリオのネットワーク トポロジと接続性
 
@@ -29,7 +29,7 @@ ms.locfileid: "101800709"
 - 仮想ノードは、クラスターの迅速なスケーリングに使用できますが、いくつかの[既知の制限](/azure/aks/virtual-nodes-portal)があります。
 - AKS クラスターでは、Basic と Standard の Azure Load Balancer SKU がサポートされています。
 - AKS サービスは、パブリックまたは内部ロード バランサーを使用して公開できます。 内部ロード バランサーは、Kubernetes ノードと同じサブネットまたは専用サブネット内に構成できます。
-- Azure Policy と [AKS 用 Azure Policy アドオン](/azure/governance/policy/concepts/policy-for-kubernetes "AKS の Azure Policy")により、クラスター内のパブリック IP アドレスの作成の拒否など、AKS クラスターに作成されるオブジェクトを制御および制限できます。
+- Azure Policy と [AKS 用 Azure Policy アドオン](/azure/governance/policy/concepts/policy-for-kubernetes)により、クラスター内のパブリック IP アドレスの作成の拒否など、AKS クラスターに作成されるオブジェクトを制御および制限できます。
 - AKS では CoreDNS を使用して、クラスターで実行されているポッドに名前解決が提供されます。
   - CoreDNS により、クラスター内部ドメインが直接解決されます。
   - その他のドメインは、Azure Virtual Network に構成された DNS サーバーに転送されます。これは、既定の Azure DNS リゾルバー、または仮想ネットワーク レベルで構成された任意のカスタム DNS サーバーのいずれかになります。
