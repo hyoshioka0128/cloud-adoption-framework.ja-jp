@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 304136ceb8fe8bdedad89ebf52406722702ea064
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d23ca46ca9373d5fdf2cba652f1502294744fc6b
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101793045"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113250"
 ---
 # <a name="resource-consistency-decision-guide"></a>リソースの整合性の意思決定ガイド
 
@@ -48,7 +48,7 @@ Azure では、[リソース グループ](/azure/azure-resource-manager/managem
 
 [Azure Resource Manager テンプレート](/azure/azure-resource-manager/templates/overview)を使用すると、事前に定義された構成とリソース グループの構造を使用して一貫した状態でリソースを繰り返しデプロイすることができます。 Resource Manager テンプレートを使用して、デプロイの基礎として標準のセットを定義できます。
 
-たとえば、サーバー間のトラフィックを分散するために、ロード バランサーと組み合わせた Web サーバーとして 2 つの仮想マシンを含む Web サーバー ワークロードをデプロイするための標準テンプレートを作成できます。 この種類のワークロードが必要な場合はいつでも、このテンプレートを再利用して、関連するデプロイ名と IP アドレスを変更するだけで構造的に同一な一連の仮想マシンとロード バランサーを作成できます。
+たとえば、サーバー間のトラフィックを分散するために、ロード バランサーと組み合わせた Web サーバーとして 2 つの仮想マシンを含む Web サーバー ワークロードをデプロイするための標準テンプレートを作成できます。 その後、この種類のワークロードが必要な場合はいつでも、このテンプレートを再利用して、関連するデプロイ名と IP アドレスを変更するだけで構造的に同一の一連の仮想マシンとロード バランサーを作成できます。
 
 プログラムでこれらのテンプレートをデプロイして、CI/CD システムと統合することもできます。
 
@@ -70,7 +70,7 @@ Azure では、[リソース グループ](/azure/azure-resource-manager/managem
 
 ## <a name="automated-consistency"></a>整合性の自動化
 
-大規模なクラウド デプロイでは、グローバル ガバナンスがさらに重要で複雑になります。 リソースをデプロイするときにガバナンスの要件を自動的に適用し、強制することは、既存のデプロイの更新された要件を満たすことと同様に非常に重要です。
+大規模なクラウド デプロイでは、グローバル ガバナンスがさらに重要で複雑になります。 リソースをデプロイするときにガバナンスの要件を自動的に適用して強制することは、既存のデプロイに対する更新された要件を満たすことと共に非常に重要です。
 
 [Azure Blueprints](/azure/governance/blueprints/overview) を使用すると、組織で Azure 内の大規模なクラウド資産のグローバル ガバナンスをサポートできます。 Blueprints は、標準の Azure Resource Manager テンプレートで提供される機能を超えて、リソースのデプロイとポリシー規則の適用が可能な完全なデプロイ オーケストレーションを作成します。 Blueprints では、バージョン管理、ブループリントが使用されていたすべてのサブスクリプションを更新する機能、およびデプロイされたサブスクリプションをロックしてリソースの不正な作成および変更を回避する機能がサポートされています。
 

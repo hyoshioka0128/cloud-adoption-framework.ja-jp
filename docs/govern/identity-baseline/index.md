@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 3e0f1ad5cf9c0fc402b456ad2a781302bc554c9a
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 614409e05a994fe4c3c1dd4afc8e4587e6a94259
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790750"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112434"
 ---
 # <a name="identity-baseline-discipline-overview"></a>ID ベースライン規範の概要
 
@@ -41,7 +41,7 @@ ID ベースラインは、[クラウド導入フレームワーク ガバナン
 |--|--|
 | <br> ![テンプレート アイコン](../../_images/govern/process-template.png)   | <br> [ID ベースライン規範テンプレート](./template.md):ID ベースライン規範を文書化するためのテンプレートをダウンロードします。 |
 | <br> ![リスク アイコン](../../_images/govern/process-risks.png)         | <br> [ビジネス リスク](./business-risks.md):一般的に ID ベースラインの規範に関係する動機およびリスクを理解できます。 |
-| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png)     | <br> [インジケーターとメトリック](./metrics-tolerance.md):ID ベースラインの規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png)     | <br> [インジケーターとメトリック](./metrics-tolerance.md): ID ベースラインの規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
 | <br> ![準拠アイコン](../../_images/govern/process-enforce.png)   | <br> [ポリシー準拠プロセス](./compliance-processes.md):ID ベースラインの規範がポリシーに準拠するようにするための推奨の手順です。 |
 | <br> ![成熟度アイコン](../../_images/govern/process-maturity.png)   | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
 | <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):ID ベースラインの規範をサポートするために実装できる Azure サービスです。 |

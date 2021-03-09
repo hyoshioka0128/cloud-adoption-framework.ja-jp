@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: c5b545ffcd3b1bf9cf7c82cac58eaa3ae7291fe5
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 8424d6b30aab3e1289b8b18a52ae3cf2a81fc811
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790733"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115392"
 ---
 # <a name="resource-consistency-discipline-overview"></a>リソースの整合性の規範の概要
 
@@ -41,9 +41,9 @@ ms.locfileid: "101790733"
 |--|--|
 | <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [リソースの整合性規範テンプレート](./template.md):リソースの整合性規範を文書化するためのテンプレートをダウンロードできます。 |
 | <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):リソースの整合性の規範に通常関係する、動機およびリスクを理解できます。 |
-| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md):リソースの整合性の規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md): リソースの整合性の規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
 | <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | <br> [ポリシー準拠プロセス](./compliance-processes.md):リソースの整合性の規範がポリシーに準拠するようにするための推奨の手順です。 |
-| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。  |
+| <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
 | <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):リソースの整合性の規範をサポートするために実装できる Azure サービスです。 |
 
 ## <a name="next-steps"></a>次のステップ

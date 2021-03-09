@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 5359d9960b4ac2c3054491fac1ba5e31037eef7b
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 28ff0ca7457e7f53bcf81358b22128c6d34edef9
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021612"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112689"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>デプロイ高速化の規範の概要
 
@@ -41,7 +41,7 @@ ms.locfileid: "97021612"
 |--|--|
 | <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [デプロイ高速化規範テンプレート](./template.md):デプロイ高速化の規範を文書化するためのテンプレートをダウンロードします。 |
 | <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):一般的にデプロイ高速化の規範に関係する動機およびリスクを理解できます。|
-| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md):デプロイ高速化の規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md): デプロイ高速化の規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
 | <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | <br> [ポリシー準拠プロセス](./compliance-processes.md):デプロイ高速化の規範でのポリシー準拠を確保するための推奨の手順です。 |
 | <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。|
 | <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):デプロイ高速化の規範をサポートするために実装できる Azure サービスです。 |

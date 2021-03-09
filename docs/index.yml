@@ -5,19 +5,19 @@ brand: azure
 metadata:
   title: Azure 向けの Microsoft Cloud 導入フレームワーク
   description: クラウド導入フレームワークは、クラウド導入作業の時間が短縮されるように設計されている、ドキュメント、実装ガイド、ベスト プラクティス、ツールのコレクションです。
-  ms.service: cloud-adoption-framework
-  ms.topic: hub-page
   services: cloud-adoption-framework
-  ms.subservice: overview
   author: JanetCThomas
   ms.author: janet
   ms.date: 05/15/2020
-  ms.openlocfilehash: dad20e2b85cd94c038e3cb2202a849ac5baf0637
-  ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+  ms.topic: hub-page
+  ms.service: cloud-adoption-framework
+  ms.subservice: overview
+  ms.openlocfilehash: 2785c4e826facd9277c2b861f9f4b80976a6a6eb
+  ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "100492411"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102115222"
 highlightedContent:
   items:
   - title: クラウド導入作業に着手する

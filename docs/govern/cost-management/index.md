@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 7bf50f9cea70eca3a4f6f3eefe56567fe463b0b0
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c19c0536d1873ca7140524228b711f2971bee012
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021952"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113080"
 ---
 # <a name="cost-management-discipline-overview"></a>Cost Management の規範の概要
 
@@ -39,7 +39,7 @@ Cost Management 規範は、[クラウド導入フレームワーク ガバナ�
 |--|--|
 | <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [Cost Management 規範テンプレート](./template.md):Cost Management 規範を文書化するテンプレートをダウンロードします。 |
 | <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):一般的に Cost Management の規範に関係する動機およびリスクを理解できます。 |
-| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md):Cost Management の規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md): Cost Management の規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
 | <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | <br> [ポリシー準拠プロセス](./compliance-processes.md):Cost Management の規範でのポリシー準拠を確保するための推奨の手順です。 |
 | <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
 | <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):Cost Management の規範をサポートするために実装できる Azure サービスです。 |

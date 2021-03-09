@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: b244492009e80ad2505eb7519c6bf4247971561e
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 5820870fb83d4d04e44b776c7c7e58a8c102f1cd
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101789373"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115256"
 ---
 # <a name="security-baseline-discipline-overview"></a>セキュリティ ベースライン規範の概要
 
@@ -41,7 +41,7 @@ ms.locfileid: "101789373"
 |--|--|
 | <br> ![テンプレート アイコン](../../_images/govern/process-template.png) | <br> [セキュリティ ベースライン規範テンプレート](./template.md):セキュリティ ベースライン規範を文書化するテンプレートをダウンロードします。 |
 | <br> ![リスク アイコン](../../_images/govern/process-risks.png) | <br> [ビジネス リスク](./business-risks.md):一般的にセキュリティ ベースラインの規範に関係する動機およびリスクを理解できます。 |
-| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md):セキュリティ ベースラインの規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
+| <br> ![メトリック アイコン](../../_images/govern/process-metrics.png) | <br> [インジケーターとメトリック](./metrics-tolerance.md): セキュリティ ベースラインの規範に投資する最適なタイミングであるかどうかを判断するためのインジケーターです。 |
 | <br> ![準拠アイコン](../../_images/govern/process-enforce.png) | <br> [ポリシー準拠プロセス](./compliance-processes.md):セキュリティ ベースラインの規範によりポリシーのコンプライアンスがサポートされるようにするための推奨の手順です。 |
 | <br> ![成熟度アイコン](../../_images/govern/process-maturity.png) | <br> [成熟度](./discipline-improvement.md):クラウドの導入の段階とクラウド管理の成熟度を調整します。 |
 | <br> ![ツールチェーン アイコン](../../_images/govern/process-toolchain.png) | <br> [ツールチェーン](./toolchain.md):セキュリティ ベースラインの規範をサポートするために実装できる Azure サービスです。 |
