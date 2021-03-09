@@ -1,5 +1,5 @@
 ---
-title: ID 管理とアクセス管理
+title: ID およびアクセス管理 (IAM)
 description: エンタープライズ環境での ID およびアクセス管理に関連する設計上の考慮事項と推奨事項を検討します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: c510873857e3767c76eff58b2b9748486f22d527
-ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
+ms.openlocfilehash: 8fbce73e4cd0ae47beeb348be151093dda932c27
+ms.sourcegitcommit: 3dd5cb5e84df8049ecbd484061e6df16a1914bb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102207913"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102515381"
 ---
 # <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 
