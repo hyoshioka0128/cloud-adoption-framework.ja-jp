@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: 機械学習とは何か, Azure Machine Learning, 機械学習ツール, MLOPS, 自動機械学習
-ms.openlocfilehash: 3797005099c46e7d2e9a12628e4376e51552a3bc
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d4ef45ff15b8a43dfc2886191aa71e82fd86ed36
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792739"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115001"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -68,7 +68,7 @@ Azure Machine Learning の [Python SDK](/python/api/overview/azure/ml/) また�
 
 デプロイされたモデルは、[Azure Machine Learning SDK for Python](/python/api/overview/azure/ml/)、[Azure Machine Learning Studio (classic)](https://ml.azure.com/)、または [Machine Learning CLI](/azure/machine-learning/reference-azure-machine-learning-cli) を使用して管理できます。
 
-これらのモデルを使用して、[リアルタイム](/azure/machine-learning/how-to-consume-web-service)で予測を返したり、データが大量の場合は[非同期で](/azure/machine-learning/tutorial-pipeline-batch-scoring-classification)予測を返したりすることができます。
+これらのモデルを使用して、[リアルタイム](/azure/machine-learning/how-to-consume-web-service)で予測を返したり、データが大量の場合は[非同期](/azure/machine-learning/tutorial-pipeline-batch-scoring-classification)で予測を返したりすることができます。
 
 さらに、高度な[機械学習パイプライン](/azure/machine-learning/concept-ml-pipelines)を使用して、データの準備、モデルのトレーニングと評価、およびデプロイの各手順で共同で作業することができます。 パイプラインを使用すると、次のことができます。
 

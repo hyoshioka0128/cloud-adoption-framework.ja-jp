@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: b11f734353eb52e34da459ee9acdb172aebea030
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b54ebb2c61872c80f6fe10c0454e43a5f558734c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790308"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113233"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>リソースの名前付けとタグ付けの意思決定ガイド
 

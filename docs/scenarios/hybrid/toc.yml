@@ -23,6 +23,10 @@ items:
     href: govern.md
   - name: ポートフォリオの管理
     href: manage.md
+  - name: エンタープライズ規模のランディング ゾーン
+    items:
+      - name: ハイブリッドとマルチクラウドに対するサポート
+        href: enterprise-scale-landing-zone.md
   - name: Well-Architected ハイブリッド ワークロード
     items:
       - name: 概要
@@ -35,13 +39,13 @@ items:
         href: /azure/architecture/framework/hybrid/hybrid-performance-efficiency?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
       - name: '[信頼性]'
         href: /azure/architecture/framework/hybrid/hybrid-reliability?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
-      - name: Security
+      - name: セキュリティ
         href: /azure/architecture/framework/hybrid/hybrid-security?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
   - name: アーキテクチャ
     items:
       - name: 概要
         href: /azure/architecture/browse/hybrid_index?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
-      - name: アプリ
+      - name: '[アプリ]'
         items:
           - name: エッジでの AI
             href: /azure/architecture/solution-ideas/articles/ai-at-the-edge?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
@@ -119,7 +123,7 @@ items:
             href: /azure/architecture/reference-architectures/identity/adds-forest?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
           - name: Azure Stack Hub の ID 統合
             href: /azure/architecture/solution-ideas/articles/hybrid-identity?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
-      - name: Security
+      - name: セキュリティ
         items:
           - name: Azure Security Center と Azure Sentinel を使用したハイブリッド セキュリティの監視
             href: /azure/architecture/hybrid/hybrid-security-monitoring?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json

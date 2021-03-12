@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, sep-caf-innovate
 keywords: 革新的なソリューション, クラウド導入フレームワーク, イノベーション ソリューション
-ms.openlocfilehash: 15fd33baa38899db3c8d5f15c083944faf002c5d
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 75981d792211ffef2bbc53c4d7d29a50d2c41096
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788948"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113012"
 ---
 # <a name="azure-innovative-solutions-guide-overview"></a>Azure の革新的なソリューションのガイドの概要
 

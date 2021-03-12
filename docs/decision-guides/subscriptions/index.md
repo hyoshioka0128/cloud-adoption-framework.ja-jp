@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 668a2b7583948a812bda7c0f4f0265117095da49
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a8eba0f8423c0fe7a5037d1e42b70c304acae33f
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101791549"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113216"
 ---
 # <a name="subscription-decision-guide"></a>サブスクリプション決定ガイド
 
@@ -50,7 +50,7 @@ Azure サブスクリプションを作成して、それをアカウントに�
 
 組織のクラウドの占有領域が増加すると、追加のサブスクリプションが、一般に、ビジネスの重要度、コンプライアンスの要件、アクセス制御、またはデータ保護のニーズが根本的に異なるアプリケーションをサポートするために作成されます。 初期の運用と非運用のサブスクリプションから構築すると、これらのアプリケーション カテゴリをサポートするサブスクリプションは、該当する場合は、運用と非運用のいずれかの管理グループの下で整理されます。 通常、これらのサブスクリプションは、中央の IT チームの運用スタッフによって所有および管理されます。
 
-![アプリケーション カテゴリ戦略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy.png)
+![アプリケーション カテゴリ戦略](../../_images/decision-guides/decision-guide-subscriptions-hierarchy.png)
 
 組織ごとにアプリケーションの分類が異なり、多くの場合、特定のアプリケーションやサービスに基づいて、またはアプリケーションのアーキタイプの系統に沿って、サブスクリプションが分けられます。 この分類は、多くの場合、サブスクリプションのリソース制限の大部分を消費する可能性があるワークロードをサポートするように、またはミッション クリティカルなワークロードを分けて、これらの制限の下にある他のワークロードと競合しないように設計されています。 個別サブスクリプションを正当化する可能性のあるワークロードには、次のようなものがあります。
 
@@ -74,7 +74,7 @@ Azure サブスクリプションを作成して、それをアカウントに�
 
 管理グループの階層は、最大レベル 6 の深さになることがあります。 これにより、組織のニーズを満たすように、これらのいくつかの戦略を組み合わせた階層を作成するための柔軟性が提供されます。 たとえば、以下の図では、事業単位戦略を地理的戦略と組み合わせる組織階層を示しています。
 
-![混合サブスクリプション戦略](../../_images\decision-guides\decision-guide-subscriptions-hierarchy-mixed.png)
+![混合サブスクリプション戦略](../../_images/decision-guides/decision-guide-subscriptions-hierarchy-mixed.png)
 
 ## <a name="related-resources"></a>関連リソース
 

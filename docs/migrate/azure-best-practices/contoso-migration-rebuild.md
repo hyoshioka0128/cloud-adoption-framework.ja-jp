@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 38e57822029874c87010f0a935dc65dfc48546e9
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a2fe2068f5a7bc1f782ddd5496e59c2870d9367e
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101789424"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208628"
 ---
 <!-- docutune:casing "Enable .NET" SmartHotel360-Backend Pet.Checker "contoso-datacenter" PetCheckerFunction -->
 
@@ -243,7 +243,7 @@ Contoso は Azure DevOps プロジェクトを作成し、CI ビルドを構成�
     ![Azure DevOps でビルドの作成と構成を行う画面のスクリーンショット。](./media/contoso-migration-rebuild/vsts8.png)
     *図 19:ビルドの作成と構成。*
 
-10. リポジトリの *src* フォルダーにある `docker-compose.yaml` ファイルのパスを指定します。 サービス イメージのビルドを選択し、最新のタグを含めます。 アクションが **[Build service images]\(サービス イメージのビルド\)** に変わると、Azure DevOps タスクの名前が **[Build services automatically]\(サービスを自動的にビルド\)** に変わります。
+10. リポジトリの `src` フォルダーにある `docker-compose.yaml` ファイルのパスを指定します。 サービス イメージのビルドを選択し、最新のタグを含めます。 アクションが **[Build service images]\(サービス イメージのビルド\)** に変わると、Azure DevOps タスクの名前が **[Build services automatically]\(サービスを自動的にビルド\)** に変わります。
 
     ![Azure DevOps における各種タスクビルド指定のスクリーンショット。](./media/contoso-migration-rebuild/vsts9.png)
     *図 20: タスクの詳細。*
@@ -308,10 +308,7 @@ AKS クラスターを作成し、Docker イメージをビルドしたので、
 
 管理者は次のようにしてパイプラインを作成します。
 
-1. Visual Studio で、前に説明したデータベース接続情報で */deploy/k8s/config_local.yml* ファイルを更新します。
-
-    ![Visual Studio の **[新しいパイプライン]** ボタンを示すスクリーンショット。](./media/contoso-migration-rebuild/back-pipe1.png)
-    *図 28: データベース接続。*
+1. Visual Studio で、前に説明したデータベース接続情報で `/deploy/k8s/config_local.yml` ファイルを更新します。
 
 2. Azure DevOps を開き、SmartHotel360 プロジェクトの **[リリース]** ペインで **[+ 新しいパイプライン]** を選択します。
 
@@ -396,7 +393,7 @@ Contoso の管理者は、フロントエンド アプリケーションによ�
 
 4. 後で参照できるように、ストレージ アカウントのアクセスの詳細をテキスト ファイルにキャプチャします。
 
-    ![アクセスの詳細をキャプチャするテキスト ファイルのスクリーンショット。](./media/contoso-migration-rebuild/blob2.png)
+    ![アクセスの詳細をキャプチャするテキスト ファイルのスクリーンショット。](./media/contoso-migration-rebuild/blob3.png)
     *図 42: アクセスの詳細をキャプチャするテキスト ファイル。*
 
 ### <a name="provision-an-azure-cosmos-db-database"></a>Azure Cosmos DB のデータベースをプロビジョニングする
@@ -680,7 +677,7 @@ Contoso の管理者は次のようにしてアプリケーションをデプロ
 
 リソースを Azure に移行したら、新しいインフラストラクチャを完全に操作可能にして、セキュリティ保護する必要があります。
 
-### <a name="security"></a>Security
+### <a name="security"></a>セキュリティ
 
 - Contoso は新しいデータベースが安全であることを確認する必要があります。 詳細については、「[Azure SQL Database と SQL Managed Instance のセキュリティ機能の概要](/azure/azure-sql/database/security-overview)」を参照してください。
 - アプリケーションは、SSL と証明書を使用するように更新する必要があります。 コンテナー インスタンスは 443 で応答するように再デプロイする必要があります。

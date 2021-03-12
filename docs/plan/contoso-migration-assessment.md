@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 993bc79de4c5fc6e3368f94c71cc8537aae13161
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 299077de339074eb1ae21ab84d727fb5f4e6d598
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101784851"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116480"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
@@ -71,8 +71,8 @@ Contoso は移行の評価に Microsoft のツールを使用します。 ツー
 | テクノロジ | 説明 | コスト |
 | --- | --- | --- |
 | [Data Migration Assistant](/sql/dma/dma-overview) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は、SQL のソースとターゲット間の機能パリティを評価します。 そのうえで、パフォーマンスと信頼性の向上箇所を推奨します。 | Data Migration Assistant は無料でダウンロードできるツールです。 |
-| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | Azure Migrate は、追加料金なしで利用できます。 ただし、評価と移行に使用することにするツール (ファースト パーティまたは ISV) によっては料金が発生する場合があります。 [Azure Migrate の価格](https://azure.microsoft.com/pricing/details/azure-migrate)について、詳しくはこちらを参照してください。  |
-| [サービス マップ](/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate では、会社が移行しようとしているマシン間の依存関係が Service Map を使用して示されます。 | Service Map は、Azure Monitor ログの一部です。 現時点では、Contoso は Service Map を 180 日間無料で使用できます。 |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | Azure Migrate は、追加料金なしで利用できます。 ただし、評価と移行に使用することにするツール (ファースト パーティまたは ISV) によっては料金が発生する場合があります。 [Azure Migrate の価格](https://azure.microsoft.com/pricing/details/azure-migrate/)について、詳しくはこちらを参照してください。 |
+| [サービス マップ](/azure/azure-monitor/vm/service-map) | Azure Migrate では、会社が移行しようとしているマシン間の依存関係が Service Map を使用して示されます。 | Service Map は、Azure Monitor ログの一部です。 現時点では、Contoso は Service Map を 180 日間無料で使用できます。 |
 
 このシナリオでは、Contoso は Data Migration Assistant をダウンロードして実行し、旅行アプリ用のオンプレミス SQL Server データベースを評価します。 Contoso は Azure への移行前に、Azure Migrate と依存関係マッピングを使用してアプリ VM を評価します。
 
@@ -107,8 +107,8 @@ Contoso と他のユーザーは、次に示す評価の前提条件を満たす
 - 少なくとも 2 つのオンプレミス VMware VM (1 つは SQL Server データベースを実行)。
 - Azure Migrate エージェントを各 VM にインストールするためのアクセス許可。
 - VM には、インターネットへの直接接続が必要です。
-  - [必要な URL](/azure/migrate/concepts-collector) へのインターネット アクセスを制限できます。
-  - VM がインターネットに接続できない場合、VM に Azure [Log Analytics Gateway](/azure/azure-monitor/platform/gateway) をインストールし、エージェント トラフィックにそのゲートウェイを通過させる必要があります。
+  - [必要な URL](/azure/migrate/migrate-appliance) へのインターネット アクセスを制限できます。
+  - VM がインターネットに接続できない場合、VM に Azure [Log Analytics Gateway](/azure/azure-monitor/agents/gateway) をインストールし、エージェント トラフィックにそのゲートウェイを通過させる必要があります。
 - データベースを評価するための、SQL Server インスタンスを実行している VM の完全修飾ドメイン名 (FQDN)。
 - SQL Server VM 上で実行されている Windows ファイアウォールでは、TCP ポート 1433 (既定値) で外部接続が許可されている必要があります。 このセットアップにより、Data Migration Assistant の接続が可能になります。
 
@@ -191,7 +191,7 @@ Contoso が評価を行う方法は次のとおりです。
     ![Data Migration Assistant:機能に関する推奨事項レポート](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso がすべての SQL Server データベースで [Transparent Data Encryption を有効にする](/sql/relational-databases/security/encryption/transparent-data-encryption)ことが推奨されます。 これは、データベースがオンプレミスでホストされている場合よりも、クラウドにある場合に、よりいっそう重要です。 Transparent Data Encryption は、移行後にのみ有効にする必要があります。 Transparent Data Encryption が既に有効になっている場合は、証明書または非対称キーを対象サーバーの `master` データベースに移動する必要があります。 [Transparent Data Encryption によって保護されたデータベースを別の SQL Server に移動する方法については、こちらを参照してください](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
+    > Contoso がすべての SQL Server データベースで [Transparent Data Encryption を有効にする](/sql/relational-databases/security/encryption/transparent-data-encryption)ことが推奨されます。 これは、データベースがオンプレミスでホストされている場合よりも、クラウドにある場合に、よりいっそう重要です。 Transparent Data Encryption は、移行後にのみ有効にする必要があります。 Transparent Data Encryption が既に有効になっている場合は、証明書または非対称キーを対象サーバーの `master` データベースに移動する必要があります。 [Transparent Data Encryption によって保護されたデータベースを別の SQL Server に移動する方法については、こちらを参照してください](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server)。
 
 3. Contoso は評価を JSON または CSV 形式でエクスポートできます。
 
@@ -200,7 +200,7 @@ Contoso が評価を行う方法は次のとおりです。
 >
 > - 複数の評価を同時に実行し、 **[すべての評価]** ページで評価の状態を確認します。
 > - 評価を [SQL Server データベース](/sql/dma/dma-consolidatereports)に統合します。
-> - 評価を [Power BI レポート](/sql/dma/dma-powerbiassesreport)に統合します。
+> - 評価を [Power BI レポート](/sql/dma/dma-consolidatereports)に統合します。
 
 ## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>手順 3:Azure Migrate を使用した VM 評価の準備をする
 
@@ -221,7 +221,7 @@ Contoso は、.ova 形式でファイルをインポートして、VM を作成�
 
 ### <a name="verify-ports"></a>ポートを確認する
 
-Contoso の評価では、依存関係のマッピングを使用します。 依存関係マッピングを使用するには、評価する対象の VM にエージェントをインストールする必要があります。 エージェントは、各 VM の TCP ポート 443 から Azure に接続できる必要があります。 [接続の要件については、こちらを参照してください](/azure/log-analytics/log-analytics-concept-hybrid)。
+Contoso の評価では、依存関係のマッピングを使用します。 依存関係マッピングを使用するには、評価する対象の VM にエージェントをインストールする必要があります。 エージェントは、各 VM の TCP ポート 443 から Azure に接続できる必要があります。 [接続の要件については、こちらを参照してください](/azure/azure-monitor/agents/log-analytics-agent)。
 
 ## <a name="step-4-discover-vms"></a>手順 4:Discover VMs
 
@@ -283,7 +283,7 @@ Contoso は、VM をデプロイする前に OVA ファイルが安全である�
 
     `C:\> CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 
-3. 生成されるハッシュは、「[Azure Migrate: Server Assessment を使用して VMware VM を評価する](/azure/migrate/tutorial-assess-vmware)」の「[セキュリティを確認する](/azure/migrate/tutorial-assess-vmware#verify-security)」セクションに記載されているハッシュ値と一致する必要があります。
+3. 生成されるハッシュは、「[Azure Migrate: Server Assessment を使用して VMware VM を評価する](/azure/migrate/tutorial-assess-vmware-azure-vm)」の「[セキュリティを確認する](/azure/migrate/tutorial-assess-vmware-azure-vm#verify-security)」セクションに記載されているハッシュ値と一致する必要があります。
 
 ### <a name="create-the-collector-appliance"></a>コレクター アプライアンスを作成する
 
@@ -479,7 +479,7 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 
 - 信頼度レーティングは、評価の計算に必要なデータ ポイントの可用性に基づいて、評価に割り当てられます。
 - レーティングは、Azure Migrate による推奨サイズの信頼性を見積もるために役立ちます。
-- 信頼度レーティングは、_パフォーマンス ベースのサイズ設定_ を行う場合に役に立ちます。 Azure Migrate には、使用率ベースのサイズ設定を行うために十分なデータ ポイントがない場合があります。 _[オンプレミス]_ のサイズ設定の場合、Azure Migrate には VM のサイズ変更に必要なすべてのデータ ポイントがあるため、信頼度レーティングは常に 5 つ星になります。
+- 信頼度レーティングは、*パフォーマンス ベースのサイズ設定* を行う場合に役に立ちます。 Azure Migrate には、使用率ベースのサイズ設定を行うために十分なデータ ポイントがない場合があります。 *[オンプレミス]* のサイズ設定の場合、Azure Migrate には VM のサイズ変更に必要なすべてのデータ ポイントがあるため、信頼度レーティングは常に 5 つ星になります。
 - 次のように、使用可能なデータ ポイントの割合に応じて、評価の信頼度レーティングが決まります。
 
     | データ ポイントの可用性 | 信頼度レーティング |
@@ -503,7 +503,7 @@ Azure Migrate 評価には、オンプレミスと Azure の互換性、推奨�
 | 設定 | 指示内容 | 詳細 |
 | --- | --- | --- |
 | **Azure VM 対応性** | VM が移行できる状態であるかどうかを示します。 | 次の状態があります。 <li> Azure に対応 <li> 条件付きで対応 <li> Azure に未対応 <li> 対応不明 <br><br> VM の準備が整っていない場合、Azure Migrate によって修正手順が表示されます。 |
-| **Azure VM サイズ** | 準備が完了している VM について、Azure Migrate によって Azure VM サイズが推奨されます。 | サイズ設定の推奨事項は、評価のプロパティによって異なります。 <li> パフォーマンス ベースのサイズ設定を使用した場合、サイズ設定では VM のパフォーマンス履歴が考慮されます。 <li> "_オンプレミス_" のサイズ設定を使用した場合、サイズ設定はオンプレミスの VM サイズと使用率に基づきます。 <li> データは使われません。 |
+| **Azure VM サイズ** | 準備が完了している VM について、Azure Migrate によって Azure VM サイズが推奨されます。 | サイズ設定の推奨事項は、評価のプロパティによって異なります。 <li> パフォーマンス ベースのサイズ設定を使用した場合、サイズ設定では VM のパフォーマンス履歴が考慮されます。 <li> "*オンプレミス*" のサイズ設定を使用した場合、サイズ設定はオンプレミスの VM サイズと使用率に基づきます。 <li> データは使われません。 |
 | **推奨されるツール** | Azure マシンではエージェントが実行されているため、マシン内で実行されているプロセスが Azure Migrate によって確認されます。 そのマシンがデータベース マシンであるかどうかが識別されます。 | |
 | **VM 情報** | レポートには、オペレーティング システム、ブートの種類、ディスクとストレージの情報など、オンプレミス VM の設定が表示されます。 | |
 

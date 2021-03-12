@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: f077924c135a9e91c74e131cc03503a5ad71d7f5
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b0dd32f4696676be08dda5ae6c06779f9970d74f
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787520"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112961"
 ---
 <!-- cSpell:ignore kured -->
 
@@ -35,7 +35,7 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > |---|---|
 > | **セキュリティの基本に関するホワイトペーパーを入念に確認する。** セキュリティで保護された Kubernetes 環境の主な目標は、実行されるアプリケーションを保護すること、セキュリティの問題を迅速に特定して対処できること、および今後同様の問題を回避することです。 | [Kubernetes を保護するための決定版ガイド (ホワイトペーパー)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **クラスター ノードのセキュリティ強化の設定を確認する。** セキュリティが強化されたホスト OS を使用すると、攻撃の対象範囲が減り、コンテナーを安全にデプロイできます。 | [AKS 仮想マシン ホストでのセキュリティ強化](/azure/aks/security-hardened-vm-host-image)     |
-> | **クラスター Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) をセットアップする。** この制御メカニズムを使用して、ユーザーまたはユーザー グループに対して、リソースの作成または変更、実行中のアプリケーション ワークロードのログの表示などの操作を行うアクセス許可を割り当てることができます。 | [Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) を理解する (ビデオ)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [Azure AD と Azure Kubernetes Service を統合する](/azure/aks/azure-ad-integration-cli) <br> [クラスター構成ファイルへのアクセスの制限](/azure/aks/control-kubeconfig-access)   |
+> | **クラスター Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) をセットアップする。** この制御メカニズムを使用して、ユーザーまたはユーザー グループに対して、リソースの作成または変更、実行中のアプリケーション ワークロードのログの表示などの操作を行うアクセス許可を割り当てることができます。 | [Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) を理解する (ビデオ)](https://www.youtube.com/watch?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&v=G3R24JSlGjY&index=12) <br> [Azure AD と Azure Kubernetes Service を統合する](/azure/aks/azure-ad-integration-cli) <br> [クラスター構成ファイルへのアクセスの制限](/azure/aks/control-kubeconfig-access)   |
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>運用環境へのデプロイとベスト プラクティスの適用
 
@@ -51,7 +51,7 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > | チェック リスト | リソース |
 > |---|---|
 > | **グループ メンバーシップを使用してクラスターへのアクセスを制御する。** ユーザーの ID またはグループ メンバーシップに基づいてクラスター リソースへのアクセスを制限するように Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) を構成します。 | [Kubernetes RBAC と Azure AD ID を使用してクラスター リソースへのアクセスを制御する](/azure/aks/azure-ad-rbac)    |
-> | **シークレット管理ポリシーを作成する。** Kubernetes でシークレット管理を使用して、パスワードや証明書などの機密情報を安全にデプロイし、管理します。 | [Kubernetes でのシークレット管理について (ビデオ)](https://www.youtube.com/watch?v=KmhM33j5WYk&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=10) |
+> | **シークレット管理ポリシーを作成する。** Kubernetes でシークレット管理を使用して、パスワードや証明書などの機密情報を安全にデプロイし、管理します。 | [Kubernetes でのシークレット管理について (ビデオ)](https://www.youtube.com/watch?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&v=KmhM33j5WYk&index=10) |
 > | **ネットワーク ポリシーを使用して、ポッド間のネットワーク トラフィックをセキュリティで保護する。** 最低限の特権の原則を適用して、クラスター内のポッド間のネットワーク トラフィック フローを制御します。 | [ネットワーク ポリシーを使用したポッド間のトラフィックのセキュリティ保護](/azure/aks/use-network-policies) |
 > | **許可された IP を使用して API サーバーへのアクセスを制限する。** API サーバーへのアクセスを、限られた一連の IP アドレス範囲に制限することで、クラスターのセキュリティを向上させ、攻撃対象を最小限にします。 | [API サーバーへのアクセスをセキュリティで保護する](/azure/aks/api-server-authorized-ip-ranges) |
 > | **クラスターのエグレス トラフィックを制限する。** クラスターのエグレス トラフィックを制限する場合に、どのポートとアドレスを許可するか確認します。 Azure Firewall またはサードパーティ製ファイアウォール アプライアンスを使用して、エグレス トラフィックをセキュリティで保護し、これらの必要なポートとアドレスを定義することができます。 | [AKS でクラスター ノードに対するエグレス トラフィックを制御する](/azure/aks/limit-egress-traffic) |

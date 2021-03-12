@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: f5ddb6c25b237dee2f6f0d09aef027aedfb1a8f7
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 1cb3e460efa4f49f2c2d0146835aed19aa7e4aba
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790257"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115018"
 ---
 # <a name="engage-via-applications"></a>アプリケーションを介したエンゲージ
 
@@ -27,10 +27,10 @@ ms.locfileid: "101790257"
 
 顧客からのフィードバック、市場の変化、イノベーションの機会により迅速かつ正確に反応できるチームは、通常、それぞれの市場でイノベーションをリードします。 革新的なアプリケーションの最初の原則は、[グロース マインドセットの概要](./learn.md#growth-mindset)に関する記事の「コードを共有する」にまとめられています。 時がたつにつれて、カルチャへのフォーカスからイノベーションが生まれます。 イノベーションを維持するには、多様な視点と貢献が必要になります。
 
-イノベーションに備えるために、すべてのアプリケーション開発を共有コード リポジトリから始める必要があります。 コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。このツールでは、共有コード リポジトリをすばやく作成できます。 または、[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) は、コードの管理に使用できる Azure DevOps Services のバージョン管理ツールのセットです。 Azure Repos では、次の 2 種類のバージョン管理が提供されています。
+イノベーションに備えるために、すべてのアプリケーション開発を共有コード リポジトリから始める必要があります。 コード リポジトリを管理するために最も広く採用されているツールは [GitHub](https://guides.github.com) です。このツールでは、共有コード リポジトリをすばやく作成できます。 または、[Azure Repos](/azure/devops/repos/get-started/what-is-repos) は、コードの管理に使用できる Azure DevOps Services のバージョン管理ツールのセットです。 Azure Repos では、次の 2 種類のバージョン管理が提供されています。
 
-- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git):分散バージョン管理。
-- [Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc):集中バージョン管理。
+- [Git](/azure/devops/repos/get-started/what-is-repos#git):分散バージョン管理。
+- [Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/get-started/what-is-repos#tfvc):集中バージョン管理。
 
 ## <a name="citizen-developers"></a>市民開発者
 

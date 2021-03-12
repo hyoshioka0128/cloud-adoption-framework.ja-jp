@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 4b2934eff75f77ddfc4aa4a6925b7b41e2d003c4
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 4543821d183169ff4932f62118915c71db2fe6fc
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101791923"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113811"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -130,7 +130,7 @@ Contoso の管理者が Team Foundation Server インスタンスを Team Founda
      ![Team Foundation Server のインストールを確認するための **[製品バックログ]** ペインのスクリーンショット。](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> 一部の Team Foundation Server アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細については、こちらを参照してください](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=azure-devops preserve-view=true viewFallbackFrom=vsts)。
+> 一部の Team Foundation Server アップグレードでは、アップグレードの完了後に機能の構成ウィザードを実行する必要があります。 [詳細については、こちらを参照してください](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade?view=azure-devops&preserve-view=true&viewFallbackFrom=vsts)。
 
 **さらにサポートが必要な場合**
 
@@ -479,13 +479,13 @@ Contoso の管理者はドライ ラン移行を実行し、すべてが想定�
 
 **さらにサポートが必要な場合**
 
-詳細については、「[TFVC から Git にリポジトリをインポートする](/azure/devops/repos/git/import-from-tfvc?view=azure-devops preserve-view=true viewFallbackFrom=vsts)」を参照してください。
+詳細については、「[TFVC から Git にリポジトリをインポートする](/azure/devops/repos/git/import-from-tfvc?view=azure-devops&preserve-view=true&viewFallbackFrom=vsts)」を参照してください。
 
 ## <a name="clean-up-after-migration"></a>移行後にクリーンアップする
 
 移行が完了したら、Contoso チームは次のことを行う必要があります。
 
-- 追加のインポート アクティビティについては、[インポート後](/azure/devops/migrate/migration-post-import?view=azure-devops preserve-view=true viewFallbackFrom=vsts)に関する記事を参照してください。
+- 追加のインポート アクティビティについては、[インポート後](/azure/devops/migrate/migration-post-import?view=azure-devops&preserve-view=true&viewFallbackFrom=vsts)に関する記事を参照してください。
 - TFVC リポジトリを削除するか、読み取り専用モードに設定します。 コード ベースは使用しないでください。ただし、その履歴を参照することはできます。
 
 ## <a name="post-migration-training"></a>移行後のトレーニング
