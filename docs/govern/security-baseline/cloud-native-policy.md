@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: c4db0589f250c88b77b21e994f35356ada877d3a
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 214d1d21c20d4626aead29f3d0632a5b2ec2bd2b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712520"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791158"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>クラウド ネイティブなセキュリティ ベースライン ポリシー
 
@@ -71,7 +71,7 @@ ID は、セキュリティの新しい境界制御面となりつつあり、�
 
 ### <a name="security-monitoring"></a>セキュリティの監視
 
-セキュリティの監視は、組織の標準やベスト プラクティスを満たしていないシステムを特定するためにリソースを監査する、事前対応型の戦略です。 Azure Security Center では、ハイブリッド クラウド ワークロードの全体にわたり、統合されたセキュリティ ベースラインと Azure Advanced Threat Protection を提供します。 Security Center で、ワークロード全体にセキュリティ ポリシーを適用し、脅威への露出を減らし、攻撃の検出と対応を行うことができます。可能なことには以下が含まれます。
+セキュリティの監視は、組織の標準やベスト プラクティスを満たしていないシステムを特定するためにリソースを監査する、事前対応型の戦略です。 Azure Security Center では、ハイブリッド クラウド ワークロード全体にわたって、統一されたセキュリティ ベースラインと Microsoft Defender for Identity を提供します。 Security Center で、ワークロード全体にセキュリティ ポリシーを適用し、脅威への露出を減らし、攻撃の検出と対応を行うことができます。可能なことには以下が含まれます。
 
 - Azure Security Center を使用した、すべてのオンプレミスおよびクラウド ワークロードにまたがる統合されたセキュリティのビュー。
 - コンプライアンスを確保し、すべての脆弱性を修復するための継続的な監視およびセキュリティ評価。

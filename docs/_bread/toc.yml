@@ -52,6 +52,9 @@ items:
               - name: 管理する
                 tocHref: /azure/cloud-adoption-framework/manage/
                 topicHref: /azure/cloud-adoption-framework/manage
+          - name: シナリオ (レンズ)
+            tocHref: /azure/cloud-adoption-framework/scenarios/
+            topicHref: /azure/cloud-adoption-framework/scenarios
           - name: リファレンス
             tocHref: /azure/cloud-adoption-framework/reference/
             topicHref: /azure/cloud-adoption-framework/reference

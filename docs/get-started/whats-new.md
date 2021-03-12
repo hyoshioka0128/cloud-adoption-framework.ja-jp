@@ -3,17 +3,17 @@ title: Microsoft クラウド導入フレームワークの最新情報
 description: Azure 向けの Microsoft クラウド導入フレームワークの最新情報について取り上げます。
 author: JanetCThomas
 ms.author: janet
-ms.date: 10/30/2020
+ms.date: 03/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: da9c9b4ba21f328f2f5d256a854b0993be6a3356
-ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
+ms.openlocfilehash: 023f95f419db54de03903161e003704e6c5e0705
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838814"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790988"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
@@ -23,15 +23,19 @@ ms.locfileid: "99838814"
 
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームと協力して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携してクラウド導入フレームワークを構築することをお勧めします。
 
-## <a name="january-2021"></a>2021 年 1 月
+## <a name="february-2021"></a>2021 年 2 月
 
-導入とイノベーションを促進するため、GitHub の使用に関する新しい情報を追加し、機械学習のベスト プラクティスを更新しました。 また、最適なランディング ゾーンを選択するのに役立つ新しい記事と動画も公開しました。
+ビジネス成果の概要をクラウドの経済性を紹介する内容で更新して拡張し、ビジネス成果の各カテゴリに、成功したビジネス ケースを示すユース ケースを追加しました。
 
 | [アーティクル] | 説明 |
 |--|--|
-| [GitHub&nbsp; による&nbsp;クラウド&nbsp;導入&nbsp;の促進](../scenarios/github-velocity/index.md) | この記事では、クラウドの導入を促進するために、オープンソース アセット、共同開発環境、自動化およびセキュリティ機能を持つ GitHub を活用する利点について説明します。 |
-| 新しい[機械&nbsp;学習](../innovate/best-practices/machine-learning.md)のベスト プラクティスのガイダンス | Machine Learning のベスト プラクティスのガイダンスを更新して拡張しました。 ベスト プラクティスには次のものが含まれます。 <br><br> <li> [機械学習運用のアプローチ方法](../innovate/best-practices/how-to-approach-mlops.md)および [MLOps プロセス](../innovate/best-practices/mlops-process.md) <li> [機械学習のセキュリティ](../innovate/best-practices/ml-security.md) <li> [機械学習推論とデプロイ](../innovate/best-practices/ml-deployment-inference.md) <li> [モデルに合ったコンピューティング インスタンスの決定](../innovate/best-practices/dev-train-comp-instances-for-ml.md) <li> [機械学習ワークスペースの設定](../innovate/best-practices/set-up-ml-workspaces.md) <li> [責任ある信頼された AI](../innovate/best-practices/trusted-ai.md) |
-| [ランディング&nbsp; &nbsp;ゾーンの&nbsp;オプションを&nbsp;選択する](../ready/landing-zone/choose-landing-zone-option.md) | Microsoft では、ランディング ゾーンを実装する 2 つのオプションを提供しています。*小規模から始めて拡張する* と *エンタープライズ規模* です。 この新しい記事を使用して、両方のオプションを確認し、組織に適したアプローチを選択します。 |
+| [ビジネス成果の概要](../strategy/business-outcomes/index.md) | ビジネス成果の各カテゴリの概要を更新し、クラウドの経済性に関するケース スタディへの参照を追加し、組織において関連するビジネス目標を実現する方法を示しています。 具体的なケース スタディで更新された概要は以下のとおりです。 <br><br> <li> [財務上の結果](../strategy/business-outcomes/fiscal-outcomes.md) <li> [機敏性成果](../strategy/business-outcomes/agility-outcomes.md) <li> [グローバルなリーチの成果](../strategy/business-outcomes/reach-outcomes.md) <li> [顧客エンゲージメントの成果](../strategy/business-outcomes/engagement-outcomes.md)<li> [パフォーマンスの成果](../strategy/business-outcomes/performance-outcomes.md) <li> [持続可能性の目標](../strategy/business-outcomes/sustainability.md) |
+
+## <a name="january-2021"></a>2021 年 1 月
+
+導入とイノベーションを促進するため、GitHub の使用に関する新しい情報を追加し、機械学習のベスト プラクティスを更新しました。 最適なランディング ゾーンを選択するのに役立つ新しい記事と動画を公開しました。
+
+| [GitHub によるクラウド導入の促進](../scenarios/github-velocity/index.md) | この記事では、クラウドの導入を促進するために、オープンソース アセット、共同開発環境、自動化およびセキュリティ機能を持つ GitHub を活用する利点について説明します。 | | [機械学習のベスト プラクティス](../innovate/best-practices/machine-learning.md) | Machine Learning のベスト プラクティスのガイダンスを更新して拡張しました。 ベスト プラクティスには次のものが含まれます。 <br><br> <li> [機械学習運用のアプローチ方法](../innovate/best-practices/how-to-approach-mlops.md)および [MLOps プロセス](../innovate/best-practices/mlops-process.md) <li> [機械学習のセキュリティ](../innovate/best-practices/ml-security.md) <li> [機械学習推論とデプロイ](../innovate/best-practices/ml-deployment-inference.md) <li> [モデルに合ったコンピューティング インスタンスの決定](../innovate/best-practices/dev-train-comp-instances-for-ml.md) <li> [機械学習ワークスペースの設定](../innovate/best-practices/set-up-ml-workspaces.md) <li> [責任ある信頼された AI](../innovate/best-practices/trusted-ai.md) | | [ランディング ゾーンの選択オプション](../ready/landing-zone/choose-landing-zone-option.md) | Microsoft では、ランディング ゾーンを実装するオプションとして、"*小規模から始めて拡張する*" と "*エンタープライズ規模*" の 2 つを提供しています。 この新しい記事を使用して、両方のオプションを確認し、組織に適したアプローチを選択します。 |
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -139,8 +143,8 @@ Microsoft クラウド導入フレームワークに AI ソリューションと
 | [アーティクル] | 説明 |
 |--|--|
 | [Azure ランディング ゾーン](../ready/landing-zone/index.md) | Azure ランディング ゾーンでは、クラウド導入計画とクラウド運用モデルと整合した環境の作成を高速化するための、設計領域と実装オプションの共通セットが作成されます。 この新しい記事では、Azure ランディング ゾーンがより明確に定義されています。 |
-| [Azure ランディング ゾーン:設計領域](../ready/landing-zone/design-areas.md) | すべての Azure ランディング ゾーンでは、8 つの設計領域の共通セットが共有されています。 Azure ランディング ゾーンをデプロイする前に、お客様はこれらの各設計を検討し、重要な決定を行う必要があります。 |
-| [Azure ランディング ゾーン:実装オプション](../ready/landing-zone/implementation-options.md) | クラウド導入計画とクラウド運用モデルに応じて、Azure ランディングゾーンの最適な実装オプションを選択します。 |
+| [Azure ランディング ゾーン: 設計領域](../ready/landing-zone/design-areas.md) | すべての Azure ランディング ゾーンでは、8 つの設計領域の共通セットが共有されています。 Azure ランディング ゾーンをデプロイする前に、お客様はこれらの各設計を検討し、重要な決定を行う必要があります。 |
+| [Azure ランディング ゾーン: 実装オプション](../ready/landing-zone/implementation-options.md) | クラウド導入計画とクラウド運用モデルに応じて、Azure ランディングゾーンの最適な実装オプションを選択します。 |
 
 既存の CAF ブループリント定義と CAF Terraform モジュールは、Azure ランディング ゾーンの実装の出発点となります。 しかしながら、エンタープライズ規模のクラウド導入計画の需要に対応できる、より高度な実装オプションを必要とされるお客様もいます。 このリリースでは、そのようなニーズに応えるため、Azure ランディング ゾーンの実装オプションに **CAF エンタープライズ規模** が追加されています。 以下では、CAF エンタープライズ規模のアーキテクチャとリファレンス実装の概要を理解するための記事をいくつか示します。
 

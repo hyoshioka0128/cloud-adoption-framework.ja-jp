@@ -1,0 +1,265 @@
+# docsTest:ignore "NET Core" "Cloud Operating Model" "Virtual Datacenter" Framework app
+items:
+  - name: ハイブリッドとマルチクラウド - Azure 向けの Microsoft Cloud 導入フレームワーク
+    href: scenario-overview.md
+    pdf_name: Hybrid and multicloud - Microsoft Cloud Adoption Framework for Azure
+  - name: 概要
+    items:
+      - name: ハイブリッドとマルチクラウドの概要
+        href: index.md
+      - name: 統合運用の概要
+        href: unified-operations.md
+      - name: Azure 製品
+        href: toolchain.md
+  - name: 初期戦略の構築
+    href: strategy.md
+  - name: 計画の定義
+    href: plan.md
+  - name: 環境の準備
+    href: ready.md
+  - name: クラウドへの移行
+    href: migrate.md
+  - name: ポートフォリオのガバナンス
+    href: govern.md
+  - name: ポートフォリオの管理
+    href: manage.md
+  - name: Well-Architected ハイブリッド ワークロード
+    items:
+      - name: 概要
+        href: /azure/architecture/framework/hybrid/hybrid-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: コストの最適化
+        href: /azure/architecture/framework/hybrid/hybrid-cost?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: オペレーショナル エクセレンス
+        href: /azure/architecture/framework/hybrid/hybrid-opex?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: パフォーマンス効率
+        href: /azure/architecture/framework/hybrid/hybrid-performance-efficiency?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: '[信頼性]'
+        href: /azure/architecture/framework/hybrid/hybrid-reliability?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Security
+        href: /azure/architecture/framework/hybrid/hybrid-security?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+  - name: アーキテクチャ
+    items:
+      - name: 概要
+        href: /azure/architecture/browse/hybrid_index?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: アプリ
+        items:
+          - name: エッジでの AI
+            href: /azure/architecture/solution-ideas/articles/ai-at-the-edge?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: エッジでの AI (接続なし)
+            href: /azure/architecture/solution-ideas/articles/ai-at-the-edge-disconnected?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ハイブリッド環境での Azure Functions
+            href: /azure/architecture/hybrid/azure-functions-hybrid?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack HCI の ROBO アプリケーションの例
+            href: /azure/architecture/hybrid/azure-stack-robo?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ハイブリッド環境でコンテナーを実行する
+            href: /azure/architecture/hybrid/hybrid-containers?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack Edge での AI ML
+            href: /azure/architecture/hybrid/deploy-ai-ml-azure-stack-edge?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: HPC Pack を使用したハイブリッド HPC
+            href: /azure/architecture/solution-ideas/articles/hybrid-hpc-in-azure-with-hpc-pack?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ハイブリッド DevOps
+            href: /azure/architecture/solution-ideas/articles/devops-in-a-hybrid-environment?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Data
+        items:
+          - name: Azure Arc を使用して任意の場所で SQL Server を管理する
+            href: /azure/architecture/hybrid/azure-arc-sql-server?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: HDInsight を使用したハイブリッド ビッグ データ
+            href: /azure/architecture/solution-ideas/articles/extend-your-on-premises-big-data-investments-with-hdinsight?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: オンプレミス データ ソリューションの Azure への拡張
+            href: /azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Data Factory を使用したハイブリット ETL
+            href: /azure/architecture/example-scenario/data/hybrid-etl-with-adf?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack Edge を使用してエッジで AI と機械学習をデプロイする
+            href: /azure/architecture/hybrid/deploy-ai-ml-azure-stack-edge?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Logic Apps 用のオンプレミス データ ゲートウェイ
+            href: /azure/architecture/hybrid/gateway-logic-apps?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 管理
+        items:
+          - name: Azure Arc 対応サーバーの構成を管理する
+            href: /azure/architecture/hybrid/azure-arc-hybrid-config?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ハイブリッド環境での Azure Automation
+            href: /azure/architecture/hybrid/azure-automation-hybrid?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack Hub 上のファイルとアプリケーションのバックアップ
+            href: /azure/architecture/hybrid/azure-stack-backup?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Automation の Update Management
+            href: /azure/architecture/hybrid/azure-update-mgmt?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ハイブリッドの可用性とパフォーマンスの監視
+            href: /azure/architecture/hybrid/hybrid-perf-monitoring?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Windows Admin Center を使用したハイブリッド Azure ワークロードの管理
+            href: /azure/architecture/hybrid/hybrid-server-os-mgmt?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Kubernetes クラスター向けの Azure Arc ハイブリッド管理とデプロイ
+            href: /azure/architecture/hybrid/arc-hybrid-kubernetes?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack Hub の仮想マシンのディザスター リカバリー
+            href: /azure/architecture/hybrid/azure-stack-vm-dr?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: クロス クラウド スケーリング
+            href: /azure/architecture/solution-ideas/articles/cross-cloud-scaling?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: ネットワーク
+        items:
+          - name: Azure へのオンプレミス ネットワークの接続
+            href: /azure/architecture/reference-architectures/hybrid-networking/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Express Route 経由の接続
+            href: /azure/architecture/reference-architectures/hybrid-networking/expressroute?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: VPN Gateway 経由の接続
+            href: /azure/architecture/reference-architectures/hybrid-networking/vpn?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: VPN のフェールオーバーを伴う ExpressRoute
+            href: /azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure ネットワーク アダプターを使用したスタンドアロン サーバー接続
+            href: /azure/architecture/hybrid/azure-network-adapter?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ハイブリッド DNS ソリューション
+            href: /azure/architecture/hybrid/hybrid-dns-infra?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: ID
+        items:
+          - name: ハイブリッド Active Directory (AD) のオプション
+            href: /azure/architecture/reference-architectures/identity/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Active Directory と Azure AD の統合
+            href: /azure/architecture/reference-architectures/identity/azure-ad?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: AD フェデレーション サービス (AD FS) を使用した Active Directory の拡張
+            href: /azure/architecture/reference-architectures/identity/adfs?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: AD ドメイン サービス (AD DS) を使用した Active Directory の拡張
+            href: /azure/architecture/reference-architectures/identity/adds-forest?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Stack Hub の ID 統合
+            href: /azure/architecture/solution-ideas/articles/hybrid-identity?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Security
+        items:
+          - name: Azure Security Center と Azure Sentinel を使用したハイブリッド セキュリティの監視
+            href: /azure/architecture/hybrid/hybrid-security-monitoring?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure Security Center と Azure Sentinel を使用したハイブリッド セキュリティの監視
+            href: /azure/architecture/solution-ideas/articles/devsecops-in-azure?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 環境の準備
+        items:
+          - name: ハイブリッド ファイル サービス
+            href: /azure/architecture/hybrid/hybrid-file-services?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Azure エンタープライズ クラウド ファイル共有
+            href: /azure/architecture/hybrid/azure-files-private?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ハイブリッド環境での Azure ファイル共有の使用
+            href: /azure/architecture/hybrid/azure-file-share?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: エンタープライズ向けの FSLogix
+            href: /azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: DR のための Azure Stack ストレッチ クラスター
+            href: /azure/architecture/hybrid/azure-stack-hci-dr?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: リモート オフィスとブランチ向けの Azure Stack
+            href: /azure/architecture/hybrid/azure-stack-robo?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+  - name: ベスト プラクティス
+    items:
+      - name: 利用開始
+        items:
+          - name: Azure
+            items:
+              - name: ARM テンプレートを使用した Azure Linux
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arm-template-linux?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: ARM テンプレートを使用した Azure Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arm-template-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: オンプレミス - ローカル データセンター
+            items:
+              - name: シェル スクリプトを使用した Linux
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/onboard-server-linux?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: PowerShell を使用した Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/onboard-server-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: Vagrant を使用した Ubuntu
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/local-vagrant-ubuntu?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: Vagrant を使用した Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/local-vagrant-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: VMware
+            items:
+              - name: Ubuntu 用の VM テンプレートを作成する
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-ubuntu-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: Windows 用の VM テンプレートを作成する
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-windows-template?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: VMware PowerCLI を使用した Linux
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-scaled-powercli-linux?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: VMware PowerCLI を使用した Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-scaled-powercli-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: Terraform を使用した Ubuntu
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-terraform-ubuntu?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: Terraform を使用した Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/vmware-terraform-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: AWS - アマゾン ウェブ サービス
+            items:
+              - name: Terraform を使用した AWS Ubuntu
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/aws-terraform-ubuntu?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: Terraform を使用した AWS Linux
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/aws-terraform-al2?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: Ansible を使用した AWS EC2 のオンボード
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/aws-scale-ansible?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: GCP - Google Cloud Provider
+            items:
+              - name: Terraform を使用した GCP Ubuntu
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/gcp-terraform-ubuntu?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+              - name: Terraform を使用した GCP Windows
+                href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/gcp-terraform-windows?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: 操作
+        items:
+          - name: 資産のインベントリとタグ付け
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-inventory-tagging?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: パッチと更新プログラムの管理
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-update-management?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: ポリシーを適用する
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-policies-mma?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: セキュリティ データの収集と検出
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-security-center?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: セキュリティ上の脅威の調査と対応
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-azure-sentinel?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: Microsoft Monitoring Agent (MMA) を使用した VM の管理
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-vm-extension-mma?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+          - name: MMA のスケール構成
+            href: /azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-vm-extension-custom-script?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+  - name: おすすめの Azure 製品
+    items:
+      - name: すべてのハイブリッドおよびマルチクラウド製品
+        href: /hybrid/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Arc
+        href: /azure/azure-arc/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Stack HCI
+        href: /azure-stack/hci/overview#azure-stack-hub?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Modular Data Center
+        href: /azure-stack#azure-stack-hub?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Stack HCI
+        href: /azure-stack#azure-stack-hci?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure IoT Edge
+        href: /azure/iot-edge/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Sphere
+        href: /azure-sphere?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Windows for IoT
+        href: /windows/iot-core/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Virtual WAN
+        href: /azure/virtual-wan/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: ExpressRoute
+        href: /azure/expressroute/?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: VPN Gateway
+        href: /azure/vpn-gateway/vpn-gateway-about-vpngateways?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+      - name: Azure Firewall
+        href: /azure/firewall/overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/hybrid/toc.json
+  - name: 学習モジュール
+    items:
+      - name: ハイブリッド クラウド
+        items:
+          - name: Azure ハイブリッド クラウド サービスの概要
+            href: /learn/modules/intro-to-azure-hybrid-services/
+          - name: Azure でハイブリッド ネットワーク アーキテクチャを設計する
+            href: /learn/modules/design-a-hybrid-network-architecture/
+          - name: ハイブリッド ネットワーク インフラストラクチャを実装する
+            href: /learn/modules/implement-hybrid-network-infrastructure/
+      - name: Azure Arc
+        items:
+          - name: Azure Arc の概要
+            href: /learn/modules/intro-to-azure-arc/
+          - name: Arc for servers
+            href: /learn/modules/intro-to-arc-for-servers/
+          - name: Arc for Kubernetes
+            href: /learn/modules/intro-to-arc-enabled-kubernetes/
+          - name: Arc for Hybrid Infrastructure
+            href: /learn/paths/manage-hybrid-infrastructure-with-azure-arc/
+          - name: Arc for Hybrid Workloads
+            href: /learn/modules/manage-hybrid-workloads-azure-arc/
+      - name: Azure Stack
+        items:
+          - name: Azure Stack の概要
+            href: /learn/modules/intro-to-azure-stack/
+          - name: Azure Stack HCI の基礎
+            href: /learn/paths/azure-stack-hci-foundations/
+          - name: Azure Stack HCI のデプロイ
+            href: /learn/modules/azure-stack-hci-plan-deploy/
+          - name: Azure Stack HCI のテクノロジ
+            href: /learn/modules/azure-stack-hci-technologies/
+          - name: Azure Stack HCI - Arc 統合
+            href: /learn/modules/stack-hci-arc-integration/

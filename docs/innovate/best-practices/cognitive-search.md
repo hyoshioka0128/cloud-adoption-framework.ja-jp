@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: Cognitive Search, Azure Cognitive Services, コグニティブな検索エンジン, コグニティブとは何か, Azure Search
-ms.openlocfilehash: 9596b8bb0f0fec90b2c4704b5be49de95f7e2c70
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 54503d9b79961b70fb40cb1def8f90f09f982446
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632190"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789186"
 ---
-<!-- cSpell:ignore Lucene -->
-
 <!-- docutune:casing "JFK Files" -->
 <!-- docutune:ignore "Azure Search" -->
 
@@ -27,7 +25,7 @@ Azure Cognitive Search (旧称 Azure Search) は、Web アプリケーション�
 
 サービスの他の面では、アプリケーション コードを使用して、クエリ要求を発行し、応答を処理します。 検索エクスペリエンスは、Azure Cognitive Search の機能を使用してクライアント内で定義します。クエリは、自分で作成および所有し、サービスに保存する永続化されたインデックスに対して実行します。
 
-Cognitive Search は、アプリケーションにおける重要な機能です。 関連のあるデータをすばやく見つける機能は、エンド ユーザー エクスペリエンスと結果の向上に不可欠です。 コグニティブな検索エンジンでは、より人間らしい方法でアプリケーションが機能するように支援する AI 機能を使用しているため、単なるキーワード一致を超えた関連付けを実現できます。 Azure Cognitive Services は、エンド ユーザーが知る必要のあるものを、より迅速に見つけるために役立ちます。
+Azure Cognitive Search は、アプリケーションにおける重要な機能です。 関連のあるデータをすばやく見つける機能は、エンド ユーザー エクスペリエンスと結果の向上に不可欠です。 Azure Cognitive Search エンジンでは、より人間らしい方法でアプリケーションが機能するように支援する AI 機能を使用しているため、単なるキーワード一致を超えた関連付けを実現できます。 Azure Cognitive Services は、エンド ユーザーが知る必要のあるものを、より迅速に見つけるために役立ちます。
 
 ![Azure Cognitive Search を示す図。](../../_images/ai-cognitive-search.png)
 
@@ -64,13 +62,13 @@ Azure Cognitive Search は、次のアプリケーション シナリオに適�
 
 インデックスを定義したら、コンテンツをアップロードする準備が完了します。 プッシュ モデルまたはプル モデルを使用できます。
 
-プル モデルは、外部データ ソースからデータを取得します。 これは、データへの接続、読み取り、シリアル化など、データ インジェストのさまざまな側面を効率化および自動化するインデクサーを通じてサポートされます。 [インデクサー](/rest/api/searchservice/Indexer-operations)は、Azure Cosmos DB、Azure SQL Database、Azure Blob Storage、および Azure Virtual Machines インスタンスでホストされている SQL Server で使用できます。 インデクサーは、オンデマンドのデータ更新にもスケジュールされたデータ更新にも構成できます。
+プル モデルは、外部データ ソースからデータを取得します。 これは、データへの接続、読み取り、シリアル化など、データ インジェストのさまざまな側面を効率化および自動化するインデクサーを通じてサポートされます。 [インデクサー](/rest/api/searchservice/indexer-operations)は、Azure Cosmos DB、Azure SQL Database、Azure Blob Storage、および Azure Virtual Machines インスタンスでホストされている SQL Server で使用できます。 インデクサーは、オンデマンドのデータ更新にもスケジュールされたデータ更新にも構成できます。
 
 プッシュ モデルは SDK または REST API によって提供され、更新したドキュメントをインデックスに送信するために使用されます。 JSON 形式を使用することにより、事実上すべてのデータセットからデータをプッシュできます。 データの読み込み方法の詳細については、[ドキュメントの追加、更新、削除](/rest/api/searchservice/addupdate-or-delete-documents)に関するページまたは[.NET SDK の使用方法](/azure/search/search-howto-dotnet-sdk)に関するページを参照してください。
 
 ### <a name="step-4-search"></a>手順 4:検索
 
-インデックスを入力したら、[REST API](/rest/api/searchservice/search-documents) または [.NET SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations) で簡単な HTTP 要求を使用して、サービス エンドポイントに[検索クエリを発行](/azure/search/search-query-overview)できます。 [最初の検索アプリケーションの作成](/azure/search/tutorial-csharp-create-first-app)の手順に従って、ユーザー入力を収集して結果を処理する Web ページをビルドして拡張します。 [対話型 REST 向けの Postman](/azure/search/search-get-started-postman) 呼び出しや Azure portal の組み込みの[検索エクスプローラー](/azure/search/search-explorer)を使用して、既存のインデックスに対するクエリを実行することもできます。
+インデックスを入力したら、[REST API](/rest/api/searchservice/search-documents) または [.NET SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations) で簡単な HTTP 要求を使用して、サービス エンドポイントに[検索クエリを発行](/azure/search/search-query-overview)できます。 [最初の検索アプリケーションの作成](/azure/search/tutorial-csharp-create-first-app)の手順に従って、ユーザー入力を収集して結果を処理する Web ページをビルドして拡張します。 [対話型 REST 向けの Postman](/azure/search/search-get-started-rest) 呼び出しや Azure portal の組み込みの[検索エクスプローラー](/azure/search/search-explorer)を使用して、既存のインデックスに対するクエリを実行することもできます。
 
 ## <a name="next-steps"></a>次の手順
 

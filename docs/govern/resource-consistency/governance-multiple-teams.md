@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 7f011b67288b40a82dc4901ca264dfc0f607ed7d
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: b5d2b2020a2e59b5f36624d1323c7f5b5ba3ca68
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712945"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791379"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -61,12 +61,12 @@ Azure アカウント所有者と Azure AD グローバル管理者の両方の�
 Azure アカウント所有者には、サブスクリプションを作成、更新、および削除するアクセス許可が付与されています。
 
 ![Azure アカウント所有者と Azure AD グローバル管理者が含まれる Azure アカウントを示す図。](../../_images/govern/design/governance-3-0.png)
-_図 1:Azure アカウント所有者と Azure AD グローバル管理者が含まれる Azure アカウント。_
+*図 1:Azure アカウント所有者と Azure AD グローバル管理者が含まれる Azure アカウント。*
 
 Azure AD **グローバル管理者** には、ユーザー アカウントを作成するアクセス許可が付与されています。
 
 ![Azure AD グローバル管理者は必要なユーザー アカウントをテナント内に作成することを示す図。](../../_images/govern/design/governance-3-0a.png)
-_図 2:Azure AD グローバル管理者は必要なユーザー アカウントをテナント内に作成する。_
+*図 2:Azure AD グローバル管理者は必要なユーザー アカウントをテナント内に作成する。*
 
 最初の 2 つのアカウント **app1 ワークロード所有者** と **app2 ワークロード所有者** はそれぞれ、ワークロードの管理を担当するご自身の組織内の個人に関連付けられています。 **ネットワーク操作** アカウントは、共有インフラストラクチャ リソースを担当する個人が所有します。 最後の **サブスクリプション所有者** アカウントは、サブスクリプションの所有権を担当する個人と関連付けられています。
 
@@ -85,7 +85,7 @@ _図 2:Azure AD グローバル管理者は必要なユーザー アカウント
 どちらの例でも、サブスクリプション スコープで組み込み所有者ロールが割り当てられているサブスクリプション サービス管理者がいます。 組み込み所有者ロールにより、リソースへのアクセスの管理を含むすべてのアクセス許可が付与されることに注意してください。
 
 ![所有者ロールを持つサブスクリプション サービス管理者](../../_images/govern/design/governance-2-1.png)
-_図 3:組み込み所有者ロールが割り当てられたサービス管理者が含まれるサブスクリプション。_
+*図 3:組み込み所有者ロールが割り当てられたサービス管理者が含まれるサブスクリプション。*
 
 <!-- docutune:casing "group A" "groups A and B" "owner A" -->
 
@@ -107,7 +107,8 @@ _図 3:組み込み所有者ロールが割り当てられたサービス管理�
 
 この時点で、ワークロード所有者はそれぞれ、自身のリソース グループで孤立しています。 ワークロード所有者またはそのチーム メンバーが、他のリソース グループのリソースに管理アクセスすることはできません。
 
-![リソース グループ A と B が含まれるサブスクリプションを示す図。](../../_images/govern/design/governance-2-10.png) 図 4: それぞれのリソース グループで孤立している 2 人のワークロード所有者が含まれるサブスクリプション。
+![リソース グループ A と B が含まれるサブスクリプションを示す図。](../../_images/govern/design/governance-2-10.png)
+*図 4: それぞれのリソース グループで孤立している 2 人のワークロード所有者が含まれるサブスクリプション。*
 
 このモデルは最小特権モデルです。 各ユーザーには、適切なリソース管理スコープで適切なアクセス許可が割り当てられます。
 
@@ -128,7 +129,7 @@ _図 3:組み込み所有者ロールが割り当てられたサービス管理�
 このモデルでは、**サービス管理者** が実行するアクションが、最初の例よりも少なくなっていることに注意してください。これはそれぞれのワークロード所有者に管理アクセスが委任されているためです。
 
 ![リソース グループ A と B のサービス管理者と 2 人のワークロード所有者を示す図。](../../_images/govern/design/governance-2-16.png)
-_図 5:組み込み所有者ロールが割り当てられた、サービス管理者と 2 人のワークロード所有者が含まれるサブスクリプション。_
+*図 5:組み込み所有者ロールが割り当てられた、サービス管理者と 2 人のワークロード所有者が含まれるサブスクリプション。*
 
 **ワークロード所有者 A** と **ワークロード所有者 B** の両方に、サブスクリプション スコープで組み込み所有者ロールが割り当てられているため、それぞれが、互いのリソース グループの組み込み所有者ロールを継承しています。 つまり、互いのリソースにフル アクセスできるだけでなく、互いのリソース グループへの管理アクセスを委任することもできます。 たとえば、**ワークロード所有者 B** は他のユーザーを **リソース グループ A** に追加する権限を持ち、組み込み所有者ロールなど、任意のロールをそれらのユーザーに割り当てることができます。
 
@@ -151,12 +152,12 @@ _図 5:組み込み所有者ロールが割り当てられた、サービス管�
 サブスクリプションを担当する個人が組織にいる、という要件を思い出してください。このユーザーは、Azure AD テナント内で **サブスクリプション所有者** アカウントを所有しています。 このアカウントには、サブスクリプションを作成するためのアクセス許可がありません。 これを行うアクセス許可を持っているのは **Azure アカウント所有者** だけです。
 
 ![Azure アカウント所有者がサブスクリプションを作成する](../../_images/govern/design/governance-3-0b.png)
-_図 6:Azure アカウント所有者がサブスクリプションを作成する。_
+*図 6:Azure アカウント所有者がサブスクリプションを作成する。*
 
 サブスクリプションが作成されたら、**Azure アカウント所有者** は、**サブスクリプション所有者** アカウントを、**所有者** ロールと共にサブスクリプションに追加できます。
 
 ![Azure アカウント所有者は、サブスクリプション所有者ユーザー アカウントを所有者ロールと共にサブスクリプションに追加する。](../../_images/govern/design/governance-3-0c.png)
-_図 7:Azure アカウント所有者は、**サブスクリプション所有者** ユーザー アカウントを **所有者** ロールと共にサブスクリプションに追加する。_
+*図 7: Azure アカウント所有者は、サブスクリプション所有者ユーザー アカウントを所有者ロールと共にサブスクリプションに追加する。*
 
 これで、**サブスクリプション所有者** アカウントで、**リソース グループ** を作成して、リソース アクセス管理を委任できます。
 
@@ -241,11 +242,11 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
 
 次の手順に従います。
 
-1. [Azure アカウント](/azure/active-directory/sign-up-organization)を作成します (まだ組織にない場合)。 Azure アカウントにサインアップしたユーザーは、Azure アカウント管理者になります。また、組織の指導者は、このロールを担う個人を選択する必要があります。 この個人は、次を担当します。
+1. [Azure アカウント](/azure/active-directory/fundamentals/sign-up-organization)を作成します (まだ組織にない場合)。 Azure アカウントにサインアップしたユーザーは、Azure アカウント管理者になります。また、組織の指導者は、このロールを担う個人を選択する必要があります。 この個人は、次を担当します。
     - サブスクリプションの作成。
     - これらのサブスクリプションのユーザー ID を格納する [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) テナントの作成および管理。
 2. 組織の指導チームが、次の作業の担当者を決定します。
-    - ユーザー ID の管理。ご自身の組織の Azure アカウントの作成時に [Azure AD テナント](/azure/active-directory/develop/active-directory-howto-tenant)が既定で作成されます。アカウント管理者は、[Azure AD グローバル管理者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)として既定で追加されます。 ご自身の組織がユーザー ID 管理の担当者として別のユーザーを選択するには、[そのユーザーに Azure AD グローバル管理者ロールを割り当て](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)ます。
+    - ユーザー ID の管理。ご自身の組織の Azure アカウントの作成時に [Azure AD テナント](/azure/active-directory/develop/quickstart-create-new-tenant)が既定で作成されます。アカウント管理者は、[Azure AD グローバル管理者](/azure/active-directory/roles/permissions-reference)として既定で追加されます。 ご自身の組織がユーザー ID 管理の担当者として別のユーザーを選択するには、[そのユーザーに Azure AD グローバル管理者ロールを割り当て](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)ます。
     - サブスクリプション。これらのユーザーは次を行います。
         - そのサブスクリプション内のリソース使用状況に関連付けられたコストを管理します。
         - リソース アクセスのための最小アクセス許可モデルを実装および維持します。
@@ -254,7 +255,7 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
         - オンプレミスから Azure ネットワークへの接続。
         - Azure 内での仮想ネットワーク ピアリング経由のネットワーク接続の所有権。
     - ワークロード所有者。
-3. Azure AD グローバル管理者は、次に対する[ユーザー アカウントを新しく作成](/azure/active-directory/add-users-azure-active-directory)します。
+3. Azure AD グローバル管理者は、次に対する[ユーザー アカウントを新しく作成](/azure/active-directory/fundamentals/add-users-azure-active-directory)します。
     - 各環境に関連付けられている各サブスクリプションのサブスクリプション所有者になる人。 これは、サブスクリプション **サービス管理者** に、各サブスクリプション/環境のリソース アクセス管理のタスクが割り当てられない場合にのみ必要です。
     - **ネットワーク操作ユーザー** になる人。
     - **ワークロード所有者** になる人。
@@ -262,11 +263,11 @@ Azure リソースへのアクセスを管理するためのモデルをいく�
     - **共有インフラストラクチャ** 環境のサブスクリプション。
     - **運用** 環境のサブスクリプション。
     - **開発** 環境のサブスクリプション。
-5. Azure アカウント管理者は、[サブスクリプション サービス所有者を各サブスクリプションに追加](/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator)します。
+5. Azure アカウント管理者は、[サブスクリプション サービス所有者を各サブスクリプションに追加](/azure/cost-management-billing/manage/add-change-subscription-administrator#to-assign-a-user-as-an-administrator)します。
 6. **ワークロード所有者** の承認プロセスを作成して、リソース グループの作成を要求します。 承認プロセスは、さまざまな方法で実装できます。たとえば、電子メールや、[SharePoint ワークフロー](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3)などのプロセス管理ツールを使用できます。 承認プロセスでは、次の手順に従うことができます。
     - **ワークロード所有者** は、**開発** 環境、**運用** 環境、またはその両方で、必要な Azure リソースの部品表を準備して、**サブスクリプション所有者** に送信します。
-    - **サブスクリプション所有者** は部品表を確認し、要求されたリソースを検証して、そのリソースが計画的な使用に適していることを確かめます。たとえば、要求された [仮想マシンのサイズ](/azure/virtual-machines/windows/sizes)が正しいことをチェックします。
-    - 要求が承認されなかった場合は、**ワークロード所有者** に通知されます。 要求が承認された場合、**サブスクリプション所有者** は、自分の組織の [名前付け規則](../../ready/azure-best-practices/naming-and-tagging.md)に従って [要求されたリソース グループを作成](/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups)し、[**共同作成者** ロール](/azure/role-based-access-control/built-in-roles#contributor)と共に [**ワークロード所有者** を追加](/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)して、リソース グループが作成されたことを **ワークロード所有者** に通知します。
+    - **サブスクリプション所有者** は部品表を確認し、要求されたリソースを検証して、そのリソースが計画的な使用に適していることを確かめます。たとえば、要求された [仮想マシンのサイズ](/azure/virtual-machines/sizes)が正しいことをチェックします。
+    - 要求が承認されなかった場合は、**ワークロード所有者** に通知されます。 要求が承認された場合、**サブスクリプション所有者** は、自分の組織の [名前付け規則](../../ready/azure-best-practices/naming-and-tagging.md)に従って [要求されたリソース グループを作成](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)し、[**共同作成者** ロール](/azure/role-based-access-control/built-in-roles#contributor)と共に [**ワークロード所有者** を追加](/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment)して、リソース グループが作成されたことを **ワークロード所有者** に通知します。
 7. ワークロード所有者の承認プロセスを作成して、仮想ネットワーク ピアリング接続を共有インフラストラクチャ所有者に要求します。 前の手順と同様に、この承認プロセスは、電子メールまたはプロセス管理ツールを使用して実装できます。
 
 ガバナンス モデルが実装されたので、共有インフラストラクチャ サービスをデプロイできます。

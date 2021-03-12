@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: 5a5d279ea5da00c3fa9b2f2ad311cf528c21b0af
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5e026a46a8c7b49bba64a73aadb1bac815d2ec2b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97024740"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784766"
 ---
 # <a name="cloud-operations-functions"></a>クラウド運用機能
 
@@ -35,7 +35,7 @@ ms.locfileid: "97024740"
 ## <a name="preparation"></a>準備
 
 - [Azure でのリソースの管理](/learn/paths/manage-resources-in-azure/):Azure CLI と Web ポータルを介してクラウドベースのリソースを作成、管理、制御する方法について学習します。
-- [Azure のネットワーク サービス](/learn/modules/intro-to-azure-networking/): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
+- [Azure のネットワーク サービス](/learn/modules/azure-networking-fundamentals/): Azure のネットワークの基本と、回復性を向上させて待ち時間を短縮する方法を学習します。
 
 次の項目を確認してください。
 
@@ -79,6 +79,6 @@ ms.locfileid: "97024740"
 各項目の詳細情報
 
 - [クラウドのセンター オブ エクセレンス](../organize/cloud-center-of-excellence.md)の機能。
-- [組織のアンチパターン: サイロと封土](../organize/fiefdoms-silos.md)
+- [組織のアンチパターン: サイロと封土](../organize/fiefdoms-silos.md)。
 
 "実行責任、説明責任、助言、通知" (RACI) の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整する方法について説明します。 [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)をダウンロードして変更してください。

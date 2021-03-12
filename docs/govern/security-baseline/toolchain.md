@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 3cb114a6cd0bf0d7ebf285c0689f4f02e17b88ae
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ea3fdbc23847b1e0c20c84bade64e5d0e96b439e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018875"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787639"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Azure でのセキュリティ ベースライン ツール
 
@@ -21,7 +21,7 @@ ms.locfileid: "97018875"
 
 Azure ツールの次の一覧は、この規範をサポートするポリシーとプロセスを成熟させるのに役立ちます。
 
-| ツール | [Azure portal](https://azure.microsoft.com/features/azure-portal) と [Azure Resource Manager](/azure/azure-resource-manager/management/overview)  | [Azure Key Vault](/azure/key-vault)  | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](/azure/governance/policy/overview) | [Azure Security Center](/azure/security-center/security-center-intro) | [Azure Monitor](/azure/azure-monitor/overview) |
+| ツール | [Azure portal](https://azure.microsoft.com/features/azure-portal/) と [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure Key Vault](/azure/key-vault/)  | [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](/azure/governance/policy/overview) | [Azure Security Center](/azure/security-center/security-center-introduction) | [Azure Monitor](/azure/azure-monitor/overview) |
 |------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
 | アクセスの制御をリソースとリソースの作成に適用する   | はい                             | いいえ              | はい      | いいえ           | いいえ                    | いいえ            |
 | 仮想ネットワークをセキュリティで保護する                                    | はい                             | いいえ              | いいえ       | はい          | いいえ                    | いいえ            |
@@ -39,4 +39,4 @@ Azure ツールの次の一覧は、この規範をサポートするポリシ�
 
 お客様は、一般にサードパーティのツールを使用して、セキュリティ ベースライン規範のアクティビティを有効にします。 詳細については、「[Azure Security Center でのセキュリティ ソリューションの統合](/azure/security-center/security-center-partner-integration)」の記事を参照してください。
 
-セキュリティ ツールに加えて、[Microsoft Trust Center](https://www.microsoft.com/microsoft-365/business/compliance-solutions#office-KeyMessages-k3j63yo) には、広範なガイダンス、レポート、および移行計画のプロセスの一環として、リスク評価の実行に役立つ関連するドキュメントが含まれます。
+セキュリティ ツールに加えて、[Microsoft 365 のコンプライアンス管理](https://www.microsoft.com/microsoft-365/enterprise/compliance-management)には、広範なガイダンス、レポート、および移行計画プロセスの一環としてのリスク評価の実行に役立つ関連ドキュメントが含まれます。

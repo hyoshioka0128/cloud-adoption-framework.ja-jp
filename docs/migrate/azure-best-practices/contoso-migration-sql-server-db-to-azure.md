@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 22cc5f779cbdbac94ac7de0e661b11d40f9c24de
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: b51f4dde61325ed36ee001d2aff753c4a8b31e00
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174133"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788540"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -47,7 +47,7 @@ Contoso のクラウド チームは、さまざまな移行の目標を設定�
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| **パフォーマンス** | 移行後も、Azure 内のアプリケーションは、Contoso のオンプレミス環境で現在提供されているのと同じパフォーマンスを発揮できる必要があります。 クラウドに移行するのは、そのアプリケーションのパフォーマンスが重要性が低いからではありません。 |
+| **パフォーマンス** | 移行後も、Azure 内のアプリケーションは、Contoso のオンプレミス環境で現在提供されているのと同じパフォーマンスを発揮できる必要があります。 クラウドに移行するのは、そのアプリケーションのパフォーマンスがそれほど重要でないからではありません。 |
 | **互換性** | Contoso では、自社のアプリケーションおよびデータベースと Azure との互換性を理解する必要があります。 また、Azure ホスティングのオプションについても理解する必要があります。 |
 | **[データ ソース]** | すべてのデータベースは例外なく Azure に移動します。 使用中の SQL 機能のデータベースおよびアプリケーション分析に基づいて、PaaS、IaaS、またはマネージド インスタンスに移動します。 すべてのデータベースを移動する必要があります。 |
 | **Application** | アプリケーションは、可能な限りクラウドに移動する必要があります。 移動できない場合、移行されたデータベースには Azure ネットワーク経由でプライベート接続を使用してのみ接続することが許可されます。 |
@@ -69,7 +69,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 | 考慮事項 | 詳細 |
 | --- | --- |
-| **長所** | Azure では、データベース ワークロードを一元的に確認できます <br><br> コストは Azure Cost Management および Billing によって監視されます。 <br><br> ビジネスのチャージバック課金は、Azure Billing API シリーズを使用して簡単に実行できます。 <br><br> サーバーとソフトウェアのメンテナンスは、IaaS ベースの環境のみに削減されます。 |
+| **長所** | Azure では、データベース ワークロードを一元的に確認できます <br><br> コストは Azure Cost Management + Billing によって監視されます。 <br><br> ビジネスのチャージバック課金は、Azure Billing API シリーズを使用して簡単に実行できます。 <br><br> サーバーとソフトウェアのメンテナンスは、IaaS ベースの環境のみに限定されます。 |
 | **短所** | IaaS ベースの仮想マシンが必要になるため、これらのマシン上のソフトウェアを管理する必要性が残ります。 |
 
 ### <a name="budget-and-management"></a>予算と管理
@@ -110,7 +110,7 @@ Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存�
 
 <!-- docutune:casing "mainly .NET-based" "non-.NET-based" -->
 
-この評価の結果として、Contoso が主として利用しているのが .NET ベースのアプリケーションであることがわかりました。ただし、年月の経過とともにさまざまなプロジェクトで PHP や Node.js などの他のテクノロジが使用されるようになりました。 ベンダーが購入したシステムでも、非 .NET ベースのアプリケーションが導入されました。 次のものを特定しました。
+評価により、Contoso では主に .NET ベースのアプリケーションを使用していることが明らかとなりました。 ただし、一部のプロジェクトでは、PHP や Node.js などの他のテクノロジが使用されています。 ベンダーが購入したシステムでも、.NET ベースではないアプリケーションが導入されました。 Contoso では次のアプリケーションが特定されました。
 
 - 約 800 個の Windows .NET アプリケーション
 - 約 50 個の PHP アプリケーション
@@ -142,7 +142,7 @@ Contoso では、DMA を使用して評価を実行し、Azure Migrate にデー
 データ ソースで DMA を実行できなかった場合は、次のガイドラインに従ってデータベースを移行しました。
 
 > [!NOTE]
-> 評価フェーズにおいて、Contoso ではさまざまなオープンソース データベースを検出しました。 これとは別に、同社は移行計画のために、「[オープンソース データベースを Azure に移行する](./contoso-migration-oss-db-to-azure.md)」に従いました。
+> 評価フェーズにおいて、Contoso ではさまざまなオープンソース データベースを検出しました。 これとは別に、同社は移行計画のために、[オープンソース データベースを Azure に移行する](./contoso-migration-oss-db-to-azure.md)方法に関するガイドラインに従いました。
 
 <!-- docutune:casing "custom .NET" -->
 
@@ -152,9 +152,9 @@ Contoso では、この情報を参考に、次のガイドラインを使用し
 
 | 移行先 | データベースの使用状況 | 詳細 | オンライン移行 | オフライン移行 | 最大サイズ | 移行ガイド |
 | --- | --- | --- | --- | ---| --- | --- |
-| Azure SQL Database (PaaS) | SQL Server (データのみ) | これらのデータベースでは、単純に、基本的なテーブル、列、ストアド プロシージャ、関数を使用します | [Data Migration Assistant](/sql/dma/dma-overview)、[トランザクション レプリケーション](/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](/sql/tools/bcp-utility?view=sql-server-ver15) | 1 TiB | [リンク](/azure/dms/tutorial-sql-server-to-azure-sql) |
-| Azure SQL Managed Instance | SQL Server (高度な機能) | これらのデータベースでは、トリガーおよびその他の[高度な概念](/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker) (カスタム .NET 型、サービス ブローカーなど) が使用されます。 | [Data Migration Assistant](/sql/dma/dma-overview)、[トランザクション レプリケーション](/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](/sql/tools/bcp-utility?view=sql-server-ver15)、[ネイティブのバックアップと復元](/azure/sql-database/sql-database-managed-instance-get-started-restore) | 2 TiB - 8 TiB | [リンク](/azure/dms/tutorial-sql-server-managed-instance-online) |
-| Azure Virtual Machines 上の SQL Server (IaaS) | SQL Server (サードパーティによる統合) | データベースのアクティビティをサポートするため、SQL Server には、[サポートされていない SQL Managed Instance 機能](/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker) (インスタンス間のサービス ブローカー、暗号化プロバイダー、バッファー プール、100 未満の互換性レベル、データベース ミラーリング、FILESTREAM、PolyBase、ファイル共有や外部スクリプトや拡張ストアド プロシージャへのアクセスが必要な機能、その他)、またはサードパーティ製ソフトウェアがインストールされている必要があります。 | [トランザクション レプリケーション](/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](/sql/tools/bcp-utility?view=sql-server-ver15)、[スナップショット レプリケーション](/azure/sql-database/sql-database-managed-instance-transactional-replication)、[ネイティブのバックアップと復元](/azure/sql-database/sql-database-managed-instance-get-started-restore)、物理マシンから VM への変換 | 4 GiB - 64 TiB | [リンク](/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql) |
+| Azure SQL Database (PaaS) | SQL Server (データのみ) | これらのデータベースでは、単純に、基本的なテーブル、列、ストアド プロシージャ、関数を使用します | [Data Migration Assistant](/sql/dma/dma-overview)、[トランザクション レプリケーション](/azure/azure-sql/managed-instance/replication-transactional-overview) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](/sql/tools/bcp-utility?view=sql-server-ver15) | 1 TiB | [リンク](/azure/dms/tutorial-sql-server-to-azure-sql) |
+| Azure SQL Managed Instance | SQL Server (高度な機能) | これらのデータベースでは、トリガーおよびその他の[高度な概念](/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server#service-broker) (カスタム .NET 型、サービス ブローカーなど) が使用されます。 | [Data Migration Assistant](/sql/dma/dma-overview)、[トランザクション レプリケーション](/azure/azure-sql/managed-instance/replication-transactional-overview) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](/sql/tools/bcp-utility?view=sql-server-ver15)、[ネイティブのバックアップと復元](/azure/azure-sql/managed-instance/restore-sample-database-quickstart) | 2 TiB - 8 TiB | [リンク](/azure/dms/tutorial-sql-server-managed-instance-online) |
+| Azure Virtual Machines 上の SQL Server (IaaS) | SQL Server (サードパーティによる統合) | データベースのアクティビティをサポートするため、SQL Server には、[サポートされていない SQL Managed Instance 機能](/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server#service-broker) (インスタンス間のサービス ブローカー、暗号化プロバイダー、バッファー プール、100 未満の互換性レベル、データベース ミラーリング、FILESTREAM、PolyBase、ファイル共有や外部スクリプトや拡張ストアド プロシージャへのアクセスが必要な機能、その他)、またはサードパーティ製ソフトウェアがインストールされている必要があります。 | [トランザクション レプリケーション](/azure/azure-sql/managed-instance/replication-transactional-overview) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database)、[bcp](/sql/tools/bcp-utility?view=sql-server-ver15)、[スナップショット レプリケーション](/azure/azure-sql/managed-instance/replication-transactional-overview)、[ネイティブのバックアップと復元](/azure/azure-sql/managed-instance/restore-sample-database-quickstart)、物理マシンから VM への変換 | 4 GiB - 64 TiB | [リンク](/azure/azure-sql/virtual-machines/windows/migrate-to-vm-from-sql-server) |
 
 データベースの数が多いため、Contoso ではプロジェクト管理オフィス (PMO) を作成して、すべてのデータベース移行インスタンスを追跡しました。 各ビジネスおよびアプリケーション チームには、[説明責任と責任](../..//migrate/migration-considerations/assess/index.md)が割り当てられました。
 
@@ -193,10 +193,10 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 
 #### <a name="security"></a>セキュリティ
 
-- Contoso では、新しい Azure データベース ワークロードを確実にセキュリティで保護する必要があります。 [詳細については、こちらを参照してください](/azure/sql-database/sql-database-security-overview)。
+- Contoso では、新しい Azure データベース ワークロードを確実にセキュリティで保護する必要があります。 [詳細については、こちらを参照してください](/azure/azure-sql/database/security-overview)。
 - 特に、ファイアウォールと仮想ネットワークの構成を確認する必要があります。
 - [Private Link](/azure/azure-sql/database/private-endpoint-overview) をセットアップして、すべてのデータベース トラフィックが Azure とオンプレミスのネットワーク内に保持されるようにします。
-- Azure SQL Database のための [Azure Advanced Threat Protection](/azure/azure-sql/database/threat-detection-overview) を有効にします。
+- Azure SQL Database の [Microsoft Defender for Identity](/azure/azure-sql/database/threat-detection-overview) を有効にします。
 
 #### <a name="backups"></a>バックアップ
 
@@ -207,12 +207,12 @@ Contoso では、すべてのデータベース ワークロードのアーカ�
 
 - 多くの Azure データベース ワークロードはスケールアップまたはスケールダウンできるので、ニーズを満たすだけでなく、コストを最小限に抑えるために、サーバーとデータベースのパフォーマンスを監視することが重要です。
 - CPU とストレージの両方にコストが関連付けられています。 選択できる価格レベルはいくつかあります。 データ ワークロードに適した価格プランが選択されていることを確認してください。
-- [エラスティック プール](/azure/sql-database/sql-database-service-tiers-dtu)は、互換性のあるリソース使用状況パターンを持つデータベースに対して実装されます。
+- [エラスティック プール](/azure/azure-sql/database/service-tiers-dtu)は、互換性のあるリソース使用状況パターンを持つデータベースに対して実装されます。
 - 各読み取りレプリカは、選択されたコンピューティングとストレージに基づいて課金されます
 - 予約容量を使用してコストを節約します。
 
 ## <a name="conclusion"></a>まとめ
 
 この記事では、Contoso が、Microsoft SQL Server ワークロードの Azure への移行を評価し、計画し、実行しました。
- 
-SQL 移行の過程における学習用に Azure DevOps プロジェクトが開発されており、これはクラウド導入フレームワークに合わせています。 このプロジェクトに従って、必要となる重要な決定を行うことができます。 Azure DevOps プロジェクトに移動するには、[このリンクを選択](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration)してください。
+
+SQL 移行の過程における学習用に Azure DevOps プロジェクトが開発されており、これはクラウド導入フレームワークに適合しています。 このプロジェクトに従って、必要となる重要な決定を行うことができます。 Azure DevOps プロジェクトに移動するには、[このリンクを選択](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration)してください。

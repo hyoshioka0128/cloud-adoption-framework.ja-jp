@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: ca690c8137a8059febbd8f444f7397ad061c650a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 14ccfe4558f231078c19267050c4e2a10cc95594
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019657"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787707"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>規制コンプライアンスの概要
 
-これは規制コンプライアンスについての入門記事であり、したがってコンプライアンス戦略の実装については触れられていません。 [Azure のコンプライアンス認証](/microsoft-365/compliance/offering-home)の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trust-center) をご覧ください。 さらに、Azure の特定のお客様は、[Microsoft Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
+これは規制コンプライアンスの概要に関する記事であり、したがってコンプライアンス戦略の実装については触れられていません。 [Azure のコンプライアンス認証](/compliance/regulatory/offering-home)の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trust-center) をご覧ください。 さらに、Azure の特定のお客様は、[Microsoft Service Trust Portal](https://servicetrust.microsoft.com) からすべてのダウンロード可能なドキュメントを入手できます。
 
-規制コンプライアンスとは、地域の行政機関によって施行される法律、または自主的に採択された業界標準で要求されている規則に企業が従うことを保証するための規範とプロセスのことです。 IT 規制コンプライアンスの場合、ユーザーやプロセスが企業システムを監視し、これらの準拠法、規制、標準によって確立されたポリシーや手順への違反を検出して防ぎます。 これはさらに、幅広い監視と強制のプロセスに適用されます。 業界や地域によっては、長くて複雑なプロセスになることがあります。
+規制コンプライアンスとは、地域の行政機関によって施行される法律、または自主的に採択された業界標準で要求されている規則に企業が従うことを保証するための規範とプロセスのことです。 IT の規制コンプライアンスの場合、ユーザーやプロセスが企業システムを監視し、これらの準拠法、規制、標準によって定められたポリシーや手順への違反を検出して防ぎます。 これはさらに、幅広い監視と強制のプロセスに適用されます。 業界や地域によっては、長くて複雑なプロセスになることがあります。
 
 多国籍組織 (特に、ヘルスケアや金融サービスなどの規制の厳しい業界) では、コンプライアンスが困難です。 標準と規制は数多く存在し、頻繁に変更されることもあるため、企業が変わり続ける国際電子データ処理法に対応するのは困難です。
 
@@ -27,14 +27,11 @@ ms.locfileid: "97019657"
 
 以下では、さまざまな業界や地域でのコンプライアンスに関する規制について説明します。
 
-<!-- docutune:casing PHI "Health Information Portability and Accountability Act" -->
-
 ## <a name="hipaa"></a>HIPAA
 
-保護医療情報 (PHI) を処理する医療アプリケーションは、Health Information Portability and Accountability Act (HIPAA) に含まれるプライバシー規則とセキュリティ規則の両方の対象となっています。 少なくとも、HIPAA では、受け取るか作成された PHI が保護されていることを保証する書面を、医療機関がクラウド プロバイダーから受け取ることが要求されている場合があります。
+保護医療情報 (PHI) を処理する医療アプリケーションは、Health Insurance Portability and Accountability Act (HIPAA) に含まれるプライバシー規則とセキュリティ規則の両方の対象となっています。 少なくとも、HIPAA では、受け取るか作成された PHI が保護されていることを保証する書面を、医療機関がクラウド プロバイダーから受け取ることが要求されている場合があります。
 
 <!-- docutune:ignore Discover -->
-<!-- cSpell:ignore Visa Mastercard -->
 
 ## <a name="pci"></a>PCI
 
@@ -42,7 +39,7 @@ Payment Card Industry Data Security Standard (PCI DSS) は、Visa、MasterCard�
 
 ## <a name="personal-data"></a>個人データ
 
-個人データは、コンシューマー、従業員、パートナー、またはその他の個人や法人を識別するために使用できる情報です。 多くの新たな法律 (特にプライバシーや個人データに関するもの) では、企業自体に対してコンプライアンスに準拠し、侵害が発生した場合は報告することが義務付けられています。
+個人データは、コンシューマー、従業員、パートナー、またはその他の個人や法人を識別するために使用できる情報です。 多くの新たな法律 (特にプライバシーや個人データに関するもの) では、企業はコンプライアンスに準拠し、侵害が発生した場合は報告することが義務付けられています。
 
 ## <a name="gdpr"></a>GDPR
 
@@ -50,14 +47,14 @@ Payment Card Industry Data Security Standard (PCI DSS) は、Visa、MasterCard�
 
 ## <a name="compliant-foundation-in-azure"></a>Azure での準拠の基盤
 
-規制の対象となる業界や世界中の市場にわたり、お客様各自の遵守義務を満たす助けとなるように、Azure では、その幅の広さ (認証の総数) と深さ (評価範囲に含まれる顧客向けサービスの数) において、業界最大のコンプライアンス ポートフォリオを保持しています。 Azure のコンプライアンス認証は、以下の 4 つのセグメントにグループ化されています。
+世界中の規制の対象となる業界や市場において、お客様自身がコンプライアンス義務を満たすことを可能にするために、Azure では、その幅の広さ (認証の総数) と深さ (評価対象である顧客向けサービスの数) の両方の点で業界最大のコンプライアンス ポートフォリオを保持しています。 Azure のコンプライアンス認証は、以下の 4 つのセグメントにグループ化されています。
 
 - グローバル
 - 米国政府
 - 業界
 - 地域
 
-Azure のコンプライアンス認証は、独立したサードパーティの監査企業による正式な認証、証明、検証、承認、および評価の他に、Microsoft による契約の修正、自己評価、顧客向けのガイダンス ドキュメントを含むさまざまな種類の保証に基づいています。 このドキュメントでの各認証の説明では、評価の対象になる顧客向けのサービス、および顧客による独自のコンプライアンスへの順守を支援するダウンロード可能なリソースへのリンクを示す、最新の範囲のステートメントが提供されています。
+Azure のコンプライアンス認証は、独立したサードパーティの監査企業による正式な認証、証明、検証、承認、および評価の他に、Microsoft による契約の修正、自己評価、顧客向けのガイダンス ドキュメントを含むさまざまな種類の保証に基づいています。 このドキュメントでの各認証の説明では、評価の対象になる Azure の顧客向けのサービスを示す最新の範囲のステートメント、および顧客自身のコンプライアンス義務の順守を支援するダウンロード可能なリソースへのリンクが提供されています。
 
 Microsoft Trust Center では、[Azure のコンプライアンス認証の詳細](https://www.microsoft.com/trust-center/compliance/compliance-overview)をご確認いただけます。 さらに、Azure の特定のお客様は [Service Trust Portal](https://servicetrust.microsoft.com) から、以下に示す区分のすべてのダウンロード可能なドキュメントを入手できます。
 

@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 1c301eef0bfe30309cb847c1a1b54216f4326f62
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 24e616badb72796d474ab6f8cd6fb1b58f786d81
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015033"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786976"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>オープンソース データベースを Azure に移行する
 
 この記事では、架空の会社である Contoso が、さまざまなオンプレミス オープンソース データベースの Azure への移行をどのように評価、計画し、実行したかについて説明します。
 
-Azure への移行を検討する際、Contoso では技術的および財務的な評価を実行して、オンプレミスのワークロードがクラウドへの移行に適しているかどうかを確認する必要があります。 Contoso 社のチームは特に、移行対象のマシンおよびデータベースの互換性を評価する必要があります。 また、Azure で Contoso のリソースを実行するための容量とコストを見積もる必要があります。
+Azure への移行を検討する際、Contoso では技術的および財務的な評価を実行して、オンプレミスのワークロードがクラウドへの移行に適しているかどうかを確認する必要があります。 Contoso 社のチームは特に、移行対象のマシンおよびデータベースの互換性を評価する必要があります。 また、Contoso のリソースを Azure 内で実行するための容量とコストを見積もる必要があります。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
@@ -36,12 +36,12 @@ IT リーダーシップ チームは、ビジネス パートナーと密接に
 
 ## <a name="migration-goals"></a>移行の目標
 
-Contoso のクラウド チームは、さまざまな移行の目標を設定しました。 これらの目標は最良の移行方法を決定するために使用されました。
+Contoso のクラウド チームは、さまざまな移行の目標を設定しました。 これらの目標を使用して、最良の移行方法を決定しました。
 
 | 必要条件 | 詳細 |
 | --- | --- |
-| **パフォーマンス** | 移行後も、Azure 内のアプリケーションには、Contoso のオンプレミス環境で現在提供されているのと同じパフォーマンス能力が必要です。 クラウドに移行するのは、そのアプリケーションのパフォーマンスがそれほど重要でないからではありません。 |
-| **互換性** | Contoso では、自社のアプリケーションおよびデータベースと Azure との互換性を理解する必要があります。 また、Contoso では Azure ホスティングのオプションについても理解する必要があります。 |
+| **パフォーマンス** | 移行後も、Azure 内のアプリケーションは、Contoso のオンプレミス環境で現在提供されているのと同じパフォーマンスを発揮できる必要があります。 クラウドに移行するのは、そのアプリケーションのパフォーマンスがそれほど重要でないからではありません。 |
+| **互換性** | Contoso では、自社のアプリケーションおよびデータベースと Azure との互換性を理解する必要があります。 また、Azure ホスティングのオプションについても理解する必要があります。 |
 | **[データ ソース]** | すべてのデータベースは例外なく、Azure に移動されます。 使用中の SQL 機能のデータベースおよびアプリケーション分析に基づいて、サービスとしてのプラットフォーム (PaaS) またはサービスとしてのインフラストラクチャ (IaaS) に移動します。 すべてのデータベースを移動する必要があります。 |
 | **Application** | アプリケーションは、可能な限りクラウドに移動する必要があります。 移動できない場合、移行されたデータベースには Azure ネットワーク経由でプライベート接続を使用してのみ接続します。 |
 | **コスト** | Contoso は移行オプションだけでなく、インフラストラクチャをクラウドに移動した後のインフラストラクチャに関連するコストも理解する必要があります。 |
@@ -53,7 +53,7 @@ Contoso のクラウド チームは、さまざまな移行の目標を設定�
 Contoso では、[Azure Migrate](/azure/migrate/migrate-services-overview) を使用して、自社のデジタル資産の[移行評価](../..//plan/contoso-migration-assessment.md)を既に実行しました。
 
 ![移行プロセスを示す図。](./media/contoso-migration-oss-db-to-azure/migration-process.png)
-_図 1: 移行プロセス。_
+*図 1: 移行プロセス。*
 
 ### <a name="solution-review"></a>ソリューションのレビュー
 
@@ -68,9 +68,9 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 
 移行を実行する前に、ソリューションの管理と課金の側面をサポートするために、必要な Azure 構造を整える必要があります。
 
-管理要件については、組織の構造をサポートするために、いくつかの[管理グループ](/azure/governance/management-groups/overview)が作成されました。
+管理要件については、組織の構造をサポートするために、いくつかの[管理グループ](/azure/governance/management-groups/overview)を作成しました。
 
-課金要件については、各 Azure リソースに、該当する課金タグが[タグ付け](/azure/azure-resource-manager/management/tag-resources)されます。
+課金要件については、各 Azure リソースに、該当する課金タグを[タグ付け](/azure/azure-resource-manager/management/tag-resources)します。
 
 ### <a name="migration-process"></a>移行プロセス
 
@@ -79,20 +79,20 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 - 移行前:
   - **検出:** インベントリ データベース資産とアプリケーション スタック。
   - **評価:** ワークロードを評価し、推奨事項を修正します。
-  - **変換:** ターゲットで動作するようにソース スキーマを変換します。
+  - **変換:** ソース スキーマをターゲットで動作するように変換します。
 - 移行:
   - **移行:** ソース スキーマ、ソース データ、オブジェクトをターゲットに移行します。
   - **データの同期:** データを同期します (ダウンタイムを最小限に抑えるため)。
-  - **カットオーバー:** ソースからターゲットにカット オーバーします。
+  - **一括:** ソースからターゲットに一括移行します。
 - 移行後:
   - **アプリケーションの修復:** アプリケーションに対して、必要な変更を繰り返し実行します。
   - **テストの実行:** 機能とパフォーマンスのテストを繰り返し実行します。
   - **最適化:** テストに基づいて、パフォーマンスの問題に対処し、パフォーマンスの向上を確認するために再テストします。
-  - **資産の廃止:** 古い VM とホスティング環境がバックアップされ、廃止されます。
+  - **資産の廃止:** 前の VM とホスティング環境をバックアップし、廃止します。
 
 #### <a name="step-1-discovery"></a>手順 1:探索
 
-Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate によって、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Contoso サーバー間の接続、プロセス、インバウンド接続とアウトバウンド接続の待ち時間、TCP 接続アーキテクチャ全体のポートも Azure Migrate によって明らかになりました。 Contoso で必要な作業は、[Microsoft Monitoring Agent](/azure/azure-monitor/platform/agent-windows) および [Microsoft Dependency Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid#install-the-dependency-agent-on-windows) をインストールすることだけでした。
+Contoso では、Azure Migrate を使用して、Contoso 環境全体の依存関係を明らかにしました。 Azure Migrate によって、Windows および Linux システム上のアプリケーション コンポーネントが自動的に検出され、サービス間の通信がマップされました。 Contoso サーバー間の接続、プロセス、インバウンド接続とアウトバウンド接続の待ち時間、TCP 接続アーキテクチャ全体のポートも Azure Migrate によって明らかになりました。 Contoso で必要な作業は、[Microsoft Monitoring Agent](/azure/azure-monitor/agents/agent-windows) および [Microsoft Dependency Agent](/azure/azure-monitor/vm/vminsights-enable-hybrid#install-the-dependency-agent-on-windows) をインストールすることだけでした。
 
 Contoso によって、移行する必要がある 300 個を超えるデータベース インスタンスが特定されました。 これらのインスタンスのうち約 40% は、PaaS ベースのサービスに移行できます。 残りの 60% は、各データベース ソフトウェアを実行する VM を使用して、IaaS ベースのアプローチに移行する必要があります。
 
@@ -149,7 +149,7 @@ Contoso は次のことを行う必要があります。
 - 新しい Azure データベース ワークロードがセキュリティで保護されていることを確認します。 詳細については、[Azure SQL Database と SQL Managed Instance のセキュリティ機能](/azure/azure-sql/database/security-overview)に関するページを参照してください。
 - ファイアウォールと仮想ネットワークの構成を確認します。
 - Azure Private Link を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
-- Azure Advanced Threat Protection を有効にします。
+- Microsoft Defender for Identity を有効化します。
 
 #### <a name="backups"></a>バックアップ
 

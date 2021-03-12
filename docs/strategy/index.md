@@ -1,19 +1,19 @@
 ---
-title: クラウド導入戦略を作成する
+title: クラウドの経済性を利用してクラウド導入戦略を策定する
 description: Azure のクラウド導入フレームワークを使用して、クラウドがビジネス戦略をどのように進めることができるかを理解します。
-author: BrianBlanchard
+author: mpvenables
 ms.author: brblanch
 ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 93676cd9b9ff491d44dff7e752d891d9986fae75
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f6dc188b4face3657ae7b48c174c93f0c9a75b8d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023958"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786058"
 ---
 # <a name="develop-a-cloud-adoption-strategy"></a>クラウド導入戦略を作成する
 

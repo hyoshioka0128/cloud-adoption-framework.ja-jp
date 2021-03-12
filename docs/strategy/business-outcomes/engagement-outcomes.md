@@ -1,21 +1,21 @@
 ---
 title: 顧客エンゲージメントの成果の例
 description: ビジネスの変革の過程における顧客のニーズとその周辺のエコシステムを把握するための顧客エンゲージメントの例について説明します。
-author: BrianBlanchard
+author: mpvenables
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: e87b2fc16c215a1e750ed1b3d783e54f8f0381a9
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 8d45fffa960e4d96ae7b85944c25d12f0c0c79c1
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013112"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785310"
 ---
-<!-- cSpell:ignore ExakTime -->
+<!-- docutune:casing ExakTime "Descartes MacroPoint" -->
 
 # <a name="examples-of-customer-engagement-outcomes"></a>顧客エンゲージメントの成果の例
 
@@ -30,13 +30,13 @@ ms.locfileid: "97013112"
 
 顧客エンゲージメントの成果は、顧客の期待に応え、期待を上回ることです。 顧客エンゲージメントのベースラインとして、顧客は、製品とサービスが実行され、信頼できるものであると想定しています。 そうなっていない場合、経営幹部は、パフォーマンスと信頼性というビジネス上の成果の価値を簡単に理解できます。 先端企業では、このプロセスから知識と見解を統合するスピードが基礎的なビジネス上の成果です。
 
-以降のセクションでは、顧客エンゲージメントに関連する例と結果を示します。
+[Descartes](https://customers.microsoft.com/story/724203-the-descartes-systems-group-travel-and-transportation-azure-sql-database) は、自社の優先プラットフォームとして Microsoft Azure を選択し、Descartes MacroPoint ソリューションを Azure SQL Database に移行することによってユーザーに対する柔軟性を高め、社内のリソースを製品価値の拡張に集中することに成功しました。
 
 ## <a name="cycle-time"></a>サイクル時間
 
 クラウド対応アプリケーションのイノベーションに向けた取り組といった顧客中心の変革では、顧客が直接的なエンゲージメントによって対応します。 また、自分たちのニーズが開発チームによって迅速に満たされていることを評価します。 サイクル時間は、機能の開始から終了までの期間を指すシックス シグマ用語です。 顧客エンゲージメントの向上に多大な投資をしているビジネス リーダーにとっては、サイクル時間がビジネスの大きな成果になる可能性があります。
 
-### <a name="example"></a>例
+### <a name="shorten-release-cycles"></a>リリース サイクルを短縮する
 
 企業間 (B2B) サービスを提供しているサービス会社が、競争の激しい市場でマーケット シェアを保持しようとしています。 競合するサービス プロバイダーに移った顧客は、複雑過ぎる技術ソリューションが自分たちのビジネス プロセスを阻害していることがわかり、それが、その会社から離れた一番の理由であると述べています。 このケースでは、サイクル時間が非常に重要です。
 
@@ -46,7 +46,7 @@ ms.locfileid: "97013112"
 
 お客様の満足度とエクスペリエンスは、成功する組織の中核にあります。 従業員が使える時間を増やし、より優れたカスタマー サービスに専念できるようにすると、お客様の忠誠心と定着率に大きな影響を与えることができます。 現在利用できる AI テクノロジを使用すると、お客様の問い合わせを受けているときの多くの手順を自動化することができます。これにより、コンタクト センター エージェントはより優れたカスタマー サービスの提供に専念できるようになります。
 
-### <a name="example"></a>例
+### <a name="improve-customer-experience"></a>カスタマー エクスペリエンスの向上
 
 ある保険会社では、顧客の要求に迅速に対応するためにデジタル エージェントを実装しています。 これらのデジタル エージェントは、Azure Bot Service ソリューションを構築することによって、会社の Web サイトとモバイル アプリを通じて入手できます。 この保険会社は、強化されたカスタマー サービス エクスペリエンスをコンタクト センターにまで拡張し、ライブ通話の文字起こし、センチメント分析、キー フレーズ検出を実装しました。 これらはコンタクト センター エージェントが次の推奨手順とフォーム処理を行うのに役立ちます。 その結果、お客様がコンタクト センターに電話をかける回数が減り、コンタクト センター エージェントが優れたカスタマー エクスペリエンスを提供することにより専念できるようになりました。
 

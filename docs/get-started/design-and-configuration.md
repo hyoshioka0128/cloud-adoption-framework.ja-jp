@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 170f8c68e8bf23030cdf858c63f73a2eb1b82930
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: aa81840791a123d109cc9eff58bfd26584536d29
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022802"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789611"
 ---
 # <a name="get-started-environment-design-and-configuration"></a>作業を開始しましょう。環境の設計と構成
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: dae5df4aed892e197211887350b506c5ff220183
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1e964a664c7c80d8e8de8a31eeb479c723a51958
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020303"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792824"
 ---
 # <a name="identity-baseline-discipline-template"></a>ID ベースライン規範テンプレート
 
-変更を実装する最初の手順は、必要な変更を伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウドでの ID サービスを管理するポリシー ステートメントを文書化して伝達するための開始点として機能します。
+変更を実装する最初の手順は、必要な変更を伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 以下のテンプレートは、クラウドでの ID サービスを管理するポリシー ステートメントを文書化して伝達するための開始点として機能します。
 
 ディスカッションが進んだら、このテンプレートの構造を、組織の ID ベースライン ポリシーのステートメントを定義するために必要なビジネス リスク、リスク許容度、コンプライアンス プロセス、およびツールを把握するためのモデルとして使用してください。
 

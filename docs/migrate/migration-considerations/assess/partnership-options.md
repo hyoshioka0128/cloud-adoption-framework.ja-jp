@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: c9d8d44e60b238938eaf8b04eed7f49a5c5e8730
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f726bad8cbbe670f6d3e5631686f39e8f92f7ca1
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025250"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785463"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -36,14 +36,14 @@ ms.locfileid: "97025250"
 
 - **評価と移行のツール。** Azure では、既存のインフラストラクチャの評価など、クラウド変換のさまざまなフェーズで使われる広範なツールが提供されています。 詳しくは、後の "移行" に関する章の "評価" に関するセクションを参照してください。
 - **[Microsoft クラウド導入フレームワーク](../../index.md)。** このフレームワークでは、クラウドの導入と移行に対して構造化されたアプローチが提供されています。 Microsoft がサポートしている多くのお客様のエンゲージメントで最善のプラクティスに基づいており、アーキテクチャや設計から実装までの一連の手順として編成されています。 手順ごとに、アプリケーション アーキテクチャの設計に役立つ補助的なガイダンスがあります。
-- **[クラウド設計パターン](/azure/architecture/patterns)。** Azure では、信頼性が高くスケーラブルで安全なワークロードをクラウドで構築するための便利なクラウド設計パターンがいくつか提供されています。 パターンごとに、そのパターンで対処する問題、パターンの適用に関する考慮事項、Azure に基づいた例が説明されています。 ほとんどのパターンには、Azure でのパターンの実装方法を示すコード サンプルまたはスニペットが含まれています。 ただし、それらは、ホストが Azure か他のクラウド プラットフォームかにかかわらず、分散システムに関連しています。
-- **[クラウドの基礎](/azure/architecture/guide)。** 基礎は、主要な概念の実装に対する基本的な方法を教えるために役立ちます。 このガイドは、単一の Azure サービスの範囲を超えてソリューションについて考えている技術者に役立ちます。
-- **[シナリオ例](/azure/architecture/example-scenario)。** 実際のお客様からの参照情報が提供されており、過去のお客様が特定のビジネス目標を達成するために従ったツール、アプローチ、プロセスの概要がわかります。
-- **[参照アーキテクチャ](/azure/architecture/reference-architectures)。** 参照アーキテクチャは、関連するアーキテクチャをまとめてシナリオごとに配置されています。 各アーキテクチャの説明には、最善のプラクティスが、スケーラビリティ、可用性、管理性、およびセキュリティに関する考慮事項と共に含まれます。 また、ほとんどにはデプロイ可能なソリューションも含まれています。
+- **[クラウド設計パターン](/azure/architecture/patterns/)。** Azure では、信頼性が高くスケーラブルで安全なワークロードをクラウドで構築するための便利なクラウド設計パターンがいくつか提供されています。 パターンごとに、そのパターンで対処する問題、パターンの適用に関する考慮事項、Azure に基づいた例が説明されています。 ほとんどのパターンには、Azure でのパターンの実装方法を示すコード サンプルまたはスニペットが含まれています。 ただし、それらは、ホストが Azure か他のクラウド プラットフォームかにかかわらず、分散システムに関連しています。
+- **[クラウドの基礎](/azure/architecture/guide/)。** 基礎は、主要な概念の実装に対する基本的な方法を教えるために役立ちます。 このガイドは、単一の Azure サービスの範囲を超えてソリューションについて考えている技術者に役立ちます。
+- **[シナリオ例](/azure/architecture/browse/)。** 実際のお客様からの参照情報が提供されており、過去のお客様が特定のビジネス目標を達成するために従ったツール、アプローチ、プロセスの概要がわかります。
+- **[参照アーキテクチャ](/azure/architecture/browse/)。** 参照アーキテクチャは、関連するアーキテクチャをまとめてシナリオごとに配置されています。 各アーキテクチャの説明には、最善のプラクティスが、スケーラビリティ、可用性、管理性、およびセキュリティに関する考慮事項と共に含まれます。 また、ほとんどにはデプロイ可能なソリューションも含まれています。
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
-[FastTrack for Azure](https://azure.microsoft.com/programs/azure-fasttrack) では、Azure エンジニアから直接支援を受け、パートナーと協力して作業できるため、お客様は、Azure ソリューションを迅速に、自信を持って構築できます。 FastTrack では、お客様の実体験に基づくベスト プラクティスとツールが用意されており、Azure ソリューションのセットアップ、構成、開発から運用まで、お客様に対して次のようなガイドが提供されます。
+[FastTrack for Azure](https://azure.microsoft.com/programs/azure-fasttrack/) では、Azure エンジニアから直接支援を受け、パートナーと協力して作業できるため、お客様は、Azure ソリューションを迅速に、自信を持って構築できます。 FastTrack では、お客様の実体験に基づくベスト プラクティスとツールが用意されており、Azure ソリューションのセットアップ、構成、開発から運用まで、お客様に対して次のようなガイドが提供されます。
 
 - データセンターの移行
 - Azure での Windows Server
@@ -84,9 +84,9 @@ FastTrack for Azure の一般的な連携の主な段階は次のとおりです
 
 **イノベーション:** Microsoft Services の [クラウドのセンター オブ エクセレンス (CCoE) ソリューション](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf)では、DevOps コーチング エンゲージメントが提供され、DevOps の原則と規範的なクラウドネイティブのサービス管理とセキュリティ コントロールの組み合わせにより、安全で予測可能かつ柔軟なサービス配信および運用管理機能で、ビジネス革新が推進され、アジリティが向上し、価値実現の時間が短縮されます。
 
-## <a name="azure-support"></a>Azure サポート
+## <a name="azure-support"></a>Azure Support
 
-ご質問がある場合やヘルプが必要な場合は、[サポート リクエストを作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)してください。 サポート リクエストに高度な技術的ガイダンスが必要な場合は、[Azure サポート プラン](https://azure.microsoft.com/support/plans)でニーズに最適なプランを探してください。
+ご質問がある場合やヘルプが必要な場合は、[サポート リクエストを作成](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)してください。 サポート リクエストに高度な技術的ガイダンスが必要な場合は、[Azure サポート プラン](https://azure.microsoft.com/support/plans/)でニーズに最適なプランを探してください。
 
 ## <a name="azure-solutions-partner"></a>Azure ソリューション パートナー
 

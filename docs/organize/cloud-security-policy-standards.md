@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: a001704126e5433a4bfcfa52cc091cc259d8dc84
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a78ae5f3ae71d9ca41bb661aaa826d776900d84b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026389"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787299"
 ---
 # <a name="function-of-cloud-security-policy-and-standards"></a>クラウド セキュリティ ポリシーと標準の機能
 

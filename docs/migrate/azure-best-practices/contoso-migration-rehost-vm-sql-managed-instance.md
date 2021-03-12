@@ -1,6 +1,6 @@
 ---
 title: オンプレミス アプリケーションを Azure VM および Azure SQL Managed Instance に移行してリホストする
-description: Contoso が、Azure SQL Managed Instance を使用して、オンプレミス アプリを Azure VM にリホストする方法について説明します。
+description: Contoso が、Azure SQL Managed Instance を使用して、オンプレミス アプリケーションを Azure VM にリホストする方法について説明します。
 author: givenscj
 ms.author: abuck
 ms.date: 07/01/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 813e3a7dd9c0ee90bf86c89ab72123160952b6fc
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: fa17261cf94d1f07fc51f23904b8a30a88036640
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631595"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787044"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "100631595"
 
 この記事では、Contoso という架空の会社が、Azure Migrate を使用して、VMware 仮想マシン (VM) 上で実行されている 2 層の Windows .NET フロントエンド アプリケーションを Azure VM に移行する方法について説明します。 また、Contoso がアプリケーション データベースを Azure SQL Managed Instance に移行する方法についても説明します。
 
-この例で使用される SmartHotel360 アプリケーションは、オープン ソースとして提供されています。 独自のテスト目的に使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードしてください。
+この例で使用される SmartHotel360 アプリケーションは、オープンソース ソフトウェアとして提供されています。 独自のテスト目的に使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードしてください。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
@@ -223,7 +223,7 @@ Contoso は以下の点を考慮します。
 
 1. マネージド インスタンスをデプロイすると、`ContosoRG` リソース グループ内に 2 つの新しいリソースが表示されます。
 
-    - 新しい SQL マネージド インスタンス。
+    - SQL マネージド インスタンス。
     - Contoso に複数のマネージド インスタンスがある場合の仮想クラスター。
 
       ![2 つの新しいリソースを示すスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
@@ -335,7 +335,7 @@ Contoso は移行後、Azure VM に接続し、Azure で VM を管理できる�
     - **パブリック** プロファイルに TCP 規則と UDP 規則が追加されていることを確認します。
     - オペレーティング システムのファイアウォールで RDP または SSH が許可されていることを確認します。
 
-1. サイト間 VPN でアクセスする場合:
+1. サイト間 VPN 経由でアクセスする場合:
 
     - 移行前に、オンプレミス VM で RDP または SSH を有効にします。
     - オペレーティング システムのファイアウォールで RDP または SSH が許可されていることを確認します。
@@ -486,7 +486,7 @@ Contoso の管理者はクイック テスト移行を実行し、VM が正常�
 
 ### <a name="update-the-connection-string"></a>接続文字列を更新する
 
-移行プロセスの最後の手順として、Contoso の管理者は、Contoso の SQL Managed Instance で実行されている移行されたデータベースを指すように、アプリケーションの接続文字列を更新します。
+移行プロセスの最後の手順として、Contoso の管理者は、SQL Managed Instance で実行されている移行されたデータベースを指すように、アプリケーションの接続文字列を更新します。
 
 1. Azure portal で **[設定]**  >  **[接続文字列]** の順に選択して、接続文字列を探します。
 
@@ -496,7 +496,7 @@ Contoso の管理者はクイック テスト移行を実行し、VM が正常�
 1. 文字列が構成されたら、アプリケーションの `web.config` ファイルに含まれる現在の接続文字列を置き換えます。
 1. ファイルを更新して保存したら、コマンド プロンプト ウィンドウで `iisreset /restart` を実行して、`WEBVM` 上で IIS を再起動します。
 1. IIS の再起動後、SQL Managed Instance 上で実行されているデータベースがアプリケーションで使用されます。
-1. この時点で、オンプレミスの SQLVM マシンをシャットダウンできます。 移行が完了しました。
+1. この時点で、オンプレミスの `SQLVM` マシンをシャットダウンできます。 移行が完了しました。
 
 **さらにサポートが必要な場合**
 
@@ -523,7 +523,7 @@ Contoso の管理者はクイック テスト移行を実行し、VM が正常�
 
 ### <a name="security"></a>Security
 
-Contoso セキュリティ チームは、Azure VM と SQL Managed Instance を調査し、その実装でセキュリティ上の問題がないかどうかを確認します。
+Contoso のセキュリティ チームは、Azure VM と SQL Managed Instance の実装にセキュリティ上の問題がないかどうかを確認します。
 
 - チームは、VM のアクセスを制御するために使用されるネットワーク セキュリティ グループを確認します。 ネットワーク セキュリティ グループは、アプリケーションに対して許可されたトラフィックだけが通過できるようにするのに役立ちます。
 - Contoso のセキュリティ チームは、ディスク上のデータ保護のために、Azure Disk Encryption と Azure Key Vault の使用も検討します。
@@ -543,8 +543,8 @@ VM のセキュリティに関する作業の詳細については、「[Azure �
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
-- Contoso は、WEBVM の既存のライセンスを所有しています。 Azure ハイブリッド特典の価格を利用するために、Contoso は既存の Azure VM を変換します。
-- Contoso は [Azure Cost Management および Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
+- Contoso は、`WEBVM` の既存のライセンスを所有しています。 Azure ハイブリッド特典の価格を利用するために、Contoso は既存の Azure VM を変換します。
+- Contoso は [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが設定した予算内に確実に収まるようにします。
 
 ## <a name="conclusion"></a>まとめ
 

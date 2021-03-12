@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 40c3b2cce9a5dfca3f2413856b3b8125d5b5a0c7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d109ec2fc98b8cdfddbcb5b9dc738b9eb1274945
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025097"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785514"
 ---
 <!-- cSpell:ignore Eason -->
 <!-- docutune:casing "Eason Matrix" -->
@@ -26,10 +26,10 @@ ms.locfileid: "97025097"
 
 ユーザー導入プランは、ユーザーが新しいテクノロジを導入したり、特定のテクノロジを変更したりする方法に重点を置いています。 このアプローチは、ユーザーに新しいツールを紹介する場合に長年の実績があります。 一般的なユーザー導入プランでは、IT は、ビジネス環境に取り込まれる技術的変更に関連付けられているインストール、構成、保守、トレーニングに重点を置きます。
 
-アプローチはさまざまに異なることがありますが、ほとんどのユーザー導入プランには汎用的なテーマが存在します。 これらのテーマは一般に、段階的な改善に合わせたリスク コントロールと円滑化のアプローチに基づきます。 次の図に示す Eason Matrix は、さまざまな導入の種類についてそれらのテーマの背後にある推進力を表します。
+アプローチはさまざまに異なることがありますが、ほとんどのユーザー導入プランには汎用的なテーマが存在します。 これらのテーマは一般に、段階的な改善に合わせたリスク コントロールと円滑化のアプローチに基づきます。 次の図に示す Eason Matrix は、さまざまな導入の種類についてそれらのテーマの背後にある推進要因を表します。
 
 ![ユーザー導入の懸念事項の Eason Matrix](../../../_images/migrate/eason-matrix.jpg)
-_図:ユーザー導入の種類の Eason Matrix。_
+*図:ユーザー導入の種類の Eason Matrix。*
 
 これらのテーマは多くの場合に、ユーザーへの新しいソリューションの導入では、主にリスク コントロールと変更の円滑化に重点を置くべきであるという前提に基づきます。 さらに、IT はテクノロジの変更によるリスクと、その変更の円滑化に主に重点を置いてきました。
 
@@ -71,6 +71,6 @@ _図:ユーザー導入の種類の Eason Matrix。_
 
 <!-- docutune:disable -->
 
-- Eason, K.(1988) _Information Technology and Organizational Change_ (情報技術と組織の変化)、ニューヨーク:Taylor と Francis
+- Eason, K.(1988) *Information Technology and Organizational Change* (情報技術と組織の変化)、ニューヨーク:Taylor と Francis
 
 <!-- docutune:enable -->

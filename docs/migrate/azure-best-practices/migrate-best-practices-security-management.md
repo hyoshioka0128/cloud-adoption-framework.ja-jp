@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: a58049062037daa3fcb2c3289b0993a6fb6848c8
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 0015a48ca34a02bb2d263cab0e404301e120798a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713179"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786942"
 ---
 <!-- docutune:casing "Update Management" -->
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
@@ -63,7 +63,7 @@ Azure Security Center には、評価と推奨事項に加え、特定のリソ�
 
 **詳細情報:**
 
-- [Azure Security Center](/azure/security-center/security-center-intro) の詳細について学習します。
+- [Azure Security Center](/azure/security-center/security-center-introduction) の詳細について学習します。
 - [Just-In-Time VM アクセス](/azure/security-center/security-center-just-in-time)の詳細を確認する。
 - [適応型アプリケーション制御の適用](/azure/security-center/security-center-adaptive-application)について学習する。
 - ファイルの整合性の監視を[始める](/azure/security-center/security-center-file-integrity-monitoring)。
@@ -100,9 +100,9 @@ Azure Security Center には、評価と推奨事項に加え、特定のリソ�
 - [仮想マシンおよび仮想マシン スケール セット向けの Azure Disk Encryption](/azure/security/fundamentals/azure-disk-encryption-vms-vmss) について学習する。
 - [Windows VM 用の Azure Disk Encryption ](/azure/virtual-machines/windows/disk-encryption-overview)を有効にする。
 - [保存データに対する Azure Storage 暗号化](/azure/storage/common/storage-service-encryption)について学習する。
-- [Always Encrypted の概要](/azure/sql-database/sql-database-always-encrypted-azure-key-vault)を読む。
-- [SQL Database および Azure Synapse の Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-azure-sql) に関する記事を読む。
-- [カスタマー マネージド キーを使用した Azure SQL Database Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-byok-azure-sql) について学習する。
+- [Always Encrypted の概要](/azure/azure-sql/database/always-encrypted-azure-key-vault-configure)を読む。
+- [SQL Database および Azure Synapse の Transparent Data Encryption](/azure/azure-sql/database/transparent-data-encryption-tde-overview) に関する記事を読む。
+- [カスタマー マネージド キーを使用した Azure SQL Database Transparent Data Encryption](/azure/azure-sql/database/transparent-data-encryption-byok-overview) について学習する。
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>ベスト プラクティス:マルウェア対策で VM を保護する
 
@@ -113,7 +113,7 @@ Azure Security Center には、評価と推奨事項に加え、特定のリソ�
 - Azure Security Center では、エンドポイントの保護が実行されていない VM を簡単に識別し、必要に応じて Microsoft マルウェア対策をインストールできます。
 
   ![VM 向けのマルウェア対策のスクリーンショット。](./media/migrate-best-practices-security-management/antimalware.png)
-  "_図 1: VM 向けのマルウェア対策。_ "
+  "*図 1: VM 向けのマルウェア対策。* "
 
 **詳細情報:**
 
@@ -141,14 +141,14 @@ Azure では、次のソリューションを提供しています。
   - Azure Monitor を使用して、Web アプリケーション ファイアウォールを監視できます。 Web アプリケーション ファイアウォールは Azure Security Center に統合されています。
 
   ![Azure Key Vault とセキュリティで保護された Web アプリの図。](./media/migrate-best-practices-security-management/web-apps.png)
-  "_図 2: Azure Key Vault。_ "
+  "*図 2: Azure Key Vault。* "
 
 **詳細情報:**
 
 - [Azure Key Vault の概要](/azure/key-vault/general/overview)を読む。
-- [Web アプリケーション ファイアウォール](/azure/application-gateway/waf-overview)について学習する。
+- [Web アプリケーション ファイアウォール](/azure/web-application-firewall/ag/ag-overview)について学習する。
 - [App Service Environment の概要](/azure/app-service/environment/intro)を読む。
-- [Key Vault からシークレットを読み取るように Web アプリを構成する](/azure/key-vault/tutorial-web-application-keyvault)方法を学習する。
+- [Key Vault からシークレットを読み取るように Web アプリを構成する](/azure/key-vault/general/tutorial-net-create-vault-azure-web-app)方法を学習する。
 
 ## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>ベスト プラクティス:サブスクリプションとリソースのアクセス許可を確認する
 
@@ -162,7 +162,7 @@ Azure では、次のソリューションを提供しています。
 Azure へのアクセス権を持つ管理者が許可されたリソースにのみアクセスできることを確認します。 Azure で定義済みのロールの細かさが十分でない場合は、カスタム ロールを作成し、アクセス許可を分離して制限できます。
 
   ![アクセスの制御のスクリーンショット。](./media/migrate-best-practices-security-management/subscription.png)
-  "_図 3:アクセスの制御。_ "
+  "*図 3:アクセスの制御。* "
 
 **詳細情報:**
 
@@ -180,7 +180,7 @@ Azure Active Directory (Azure AD) では、Azure Monitor に表示されるア�
 - ログの確認を慣習的に行うようにするか、またはセキュリティ情報およびイベント管理 (SIEM) ツールを統合して異常が自動的に確認されるようにします。 Premium ライセンスを使用していない場合は、ユーザーが自分で、または SIEM システムを使用して、さまざまな分析を行う必要があります。 分析には、危険なサインインやイベント、およびその他のユーザー攻撃パターンを探すことが含まれます。
 
   ![Azure AD のユーザーとグループのスクリーンショット。](./media/migrate-best-practices-security-management/azure-ad.png)
-  "_図 4: Azure AD のユーザーとグループ。_ "
+  "*図 4: Azure AD のユーザーとグループ。* "
 
 **詳細情報:**
 
@@ -191,10 +191,10 @@ Azure Active Directory (Azure AD) では、Azure Monitor に表示されるア�
 
 Azure では、高度なセキュリティ オプションを提供するセキュリティ機能が他にも用意されています。 次のベスト プラクティスの一部を実行するには、アドオン ライセンスと Premium オプションが必要です。
 
-- **Azure AD 管理単位 (AU) を実装する。** サポート スタッフへの管理責務の委任は、基本的な Azure アクセス制御だけでは複雑な場合があります。 Azure AD 内のすべてのグループを管理できるアクセス権をサポート スタッフに与えるのは、組織のセキュリティにとって理想的な方法ではない可能性があります。 AU を使用すると、オンプレミスの組織単位 (OU) と同様の方法で、コンテナーに Azure リソースを分離することができます。 AU を使用するには、AU の管理者に Premium Azure AD ライセンスが必要です。 詳細については、[Azure Active Directory での管理単位の管理](/azure/active-directory/users-groups-roles/directory-administrative-units)に関するページをご覧ください。
-- **多要素認証を使用する。** Premium Azure AD ライセンスがある場合は、管理者アカウントに対して多要素認証を有効にして適用できます。 フィッシングは、アカウントの資格情報を侵害する最も一般的な方法です。 悪意のあるアクターが管理者アカウントの資格情報を手に入れると、すべてのリソース グループの削除など、影響範囲の広いアクションを阻止することはできません。 多要素認証は、電子メール、認証アプリ、携帯電話のテキスト メッセージなどのさまざまな方法で確立できます。 管理者は、最も影響が少ないオプションを選択できます。 多要素認証では、脅威分析と条件付きアクセス ポリシーと統合して、多要素認証チャレンジの応答をランダムに要求します。 詳しくは、[セキュリティ ガイダンス](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)と[多要素認証の設定方法](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)に関する記事をご覧ください。
-- **条件付きアクセスを実装する。** ほとんどの中小規模の組織では、多くの場合、Azure 管理者とサポート チームは地理的に 1 つの場所に配置されます。 この場合、ほとんどのサインインは同じ地域から行われます。 これらの場所の IP アドレスが非常に静的な場合、これらの地域以外から管理者のサインインが見えてはならないのは当然のことです。 離れた場所にいる不正なアクターが管理者の資格情報を侵害した場合でも、条件付きアクセスと多要素認証の組み合わせのようなセキュリティ機能を実装することで、離れた場所からのサインインを防ぐことができます。 これにより、ランダムな IP アドレスで偽装された場所からのサインインを防止することもできます。 [条件付きアクセス](/azure/active-directory/conditional-access/overview)についての詳細を学習し、Azure AD での条件付きアクセスの[ベスト プラクティスを確認](/azure/active-directory/conditional-access/best-practices)してください。
-- **エンタープライズ アプリケーションのアクセス許可を確認する。** 時間が経つと、管理者は組織に与える影響を知らずに Microsoft やサード パーティのリンクを選択するようになります。 リンクをクリックすると、Azure アプリにアクセス許可を割り当てる同意画面が表示される場合があります。 これにより、Azure AD データを読み取るためのアクセスや、Azure サブスクリプション全体を管理するためのフル アクセスが許可される場合があります。 管理者やユーザーに Azure リソースへのアクセスが許可されるアプリケーションを定期的に確認する必要があります。 このようなアプリケーションには、必要なアクセス許可のみを確保してください。 さらに、四半期または半年ごとに、アプリケーション ページへのリンクを含むメールをユーザーに送り、組織データへのアクセスが許可されているアプリケーションの存在を認識させることができます。 詳細については、「[アプリケーション リストに予期しないアプリケーションがある](/azure/active-directory/manage-apps/application-types)」と、Azure AD でアプリケーションの割り当てを[制御する方法](/azure/active-directory/manage-apps/remove-user-or-group-access-portal)に関するページを参照してください。
+- **Azure AD 管理単位 (AU) を実装する。** サポート スタッフへの管理責務の委任は、基本的な Azure アクセス制御だけでは複雑な場合があります。 Azure AD 内のすべてのグループを管理できるアクセス権をサポート スタッフに与えるのは、組織のセキュリティにとって理想的な方法ではない可能性があります。 AU を使用すると、オンプレミスの組織単位 (OU) と同様の方法で、コンテナーに Azure リソースを分離することができます。 AU を使用するには、AU の管理者に Premium Azure AD ライセンスが必要です。 詳細については、[Azure Active Directory での管理単位の管理](/azure/active-directory/roles/administrative-units)に関するページをご覧ください。
+- **多要素認証を使用する。** Premium Azure AD ライセンスがある場合は、管理者アカウントに対して多要素認証を有効にして適用できます。 フィッシングは、アカウントの資格情報を侵害する最も一般的な方法です。 悪意のあるアクターが管理者アカウントの資格情報を手に入れると、すべてのリソース グループの削除など、影響範囲の広いアクションを阻止することはできません。 多要素認証は、電子メール、認証アプリ、携帯電話のテキスト メッセージなどのさまざまな方法で確立できます。 管理者は、最も影響が少ないオプションを選択できます。 多要素認証では、脅威分析と条件付きアクセス ポリシーと統合して、多要素認証チャレンジの応答をランダムに要求します。 詳しくは、[セキュリティ ガイダンス](/azure/active-directory/authentication/howto-mfa-getstarted)と[多要素認証の設定方法](/azure/active-directory/authentication/howto-mfa-getstarted)に関する記事をご覧ください。
+- **条件付きアクセスを実装する。** ほとんどの中小規模の組織では、多くの場合、Azure 管理者とサポート チームは地理的に 1 つの場所に配置されます。 この場合、ほとんどのサインインは同じ地域から行われます。 これらの場所の IP アドレスが非常に静的な場合、これらの地域以外から管理者のサインインが見えてはならないのは当然のことです。 離れた場所にいる不正なアクターが管理者の資格情報を侵害した場合でも、条件付きアクセスと多要素認証の組み合わせのようなセキュリティ機能を実装することで、離れた場所からのサインインを防ぐことができます。 これにより、ランダムな IP アドレスで偽装された場所からのサインインを防止することもできます。 [条件付きアクセス](/azure/active-directory/conditional-access/overview)についての詳細を学習し、Azure AD での条件付きアクセスの[ベスト プラクティスを確認](/azure/active-directory/conditional-access/overview)してください。
+- **エンタープライズ アプリケーションのアクセス許可を確認する。** 時間が経つと、管理者は組織に与える影響を知らずに Microsoft やサード パーティのリンクを選択するようになります。 リンクをクリックすると、Azure アプリにアクセス許可を割り当てる同意画面が表示される場合があります。 これにより、Azure AD データを読み取るためのアクセスや、Azure サブスクリプション全体を管理するためのフル アクセスが許可される場合があります。 管理者やユーザーに Azure リソースへのアクセスが許可されるアプリケーションを定期的に確認する必要があります。 このようなアプリケーションには、必要なアクセス許可のみを確保してください。 さらに、四半期または半年ごとに、アプリケーション ページへのリンクを含むメールをユーザーに送り、組織データへのアクセスが許可されているアプリケーションの存在を認識させることができます。 詳細については、「[アプリケーション リストに予期しないアプリケーションがある](/azure/active-directory/manage-apps/application-types)」と、Azure AD でアプリケーションの割り当てを[制御する方法](/azure/active-directory/manage-apps/assign-user-or-group-access-portal)に関するページを参照してください。
 
 ## <a name="managed-migrated-workloads"></a>移行されるワークロードを管理する
 
@@ -208,7 +208,7 @@ Azure では、高度なセキュリティ オプションを提供するセキ�
 - 障害が発生したときにデータの安全、環境の回復性、リソースの稼働状態を維持するための、事業継続とディザスター リカバリー (BCDR) 戦略を作成します。
 - 回復性と高可用性のために VM を可用性グループにグループ化します。 VM のディスクとストレージの管理を容易にするため、マネージド ディスクを使用します。
 - Azure リソースの診断ログを有効にし、プロアクティブなトラブルシューティングのためのアラートとプレイブックを作成し、デプロイの正常性と状態の統一ビューのために Azure ダッシュボードを使用します。
-- Azure のサポート プランとその実装方法を理解し、VM を最新の状態に維持するためのベスト プラクティスを把握して、プロセスを変更管理に組み込みます。
+- Azure サポート プランとその実装方法を理解し、VM を最新の状態に維持するためのベスト プラクティスを把握して、プロセスを変更管理に組み込みます。
 
 ## <a name="best-practice-name-resource-groups"></a>ベスト プラクティス:リソース グループに名前を付ける
 
@@ -217,7 +217,7 @@ Azure では、高度なセキュリティ オプションを提供するセキ�
 Azure AD Connect を使用してオンプレミスの Active Directory を Azure AD に同期している場合は、オンプレミスのセキュリティ グループの名前を Azure でのリソース グループの名前と一致させることを検討してください。
 
   ![リソース グループの名前付けのスクリーンショット。](./media/migrate-best-practices-security-management/naming.png)
-  _図 5:リソース グループの名前付け。_ "
+  *図 5:リソース グループの名前付け。* "
 
 **詳細情報:**
 
@@ -228,11 +228,11 @@ Azure AD Connect を使用してオンプレミスの Active Directory を Azure
 最も困るのは、誤って削除したためにリソース グループが消えてしまうことです。 このようなことが起きないように、削除ロックを実装することをお勧めします。
 
   ![削除ロックのスクリーンショット。](./media/migrate-best-practices-security-management/locks.png)
-  _図 6:削除ロック。_ "
+  *図 6:削除ロック。* "
 
 **詳細情報:**
 
-- [予期しない変更を防ぐためのリソースのロック](/azure/azure-resource-manager/resource-group-lock-resources)について学習する。
+- [予期しない変更を防ぐためのリソースのロック](/azure/azure-resource-manager/management/lock-resources)について学習する。
 
 ## <a name="best-practice-understand-resource-access-permissions"></a>ベスト プラクティス:リソースのアクセス許可を理解する
 
@@ -245,7 +245,7 @@ Azure AD Connect を使用してオンプレミスの Active Directory を Azure
 
 **詳細情報:**
 
-- [サブスクリプションとリソース グループの編成](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise)について学習する。
+- [サブスクリプションとリソース グループの編成](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise/)について学習する。
 
 ## <a name="best-practice-tag-resources-effectively"></a>ベスト プラクティス:リソースに効果的なタグを付ける
 
@@ -258,7 +258,7 @@ Azure AD Connect を使用してオンプレミスの Active Directory を Azure
 - 要求および変更管理システムを導入している場合は、要求の情報を使用して会社固有のリソース タグを簡単に設定できます。
 
   ![タグ付けのスクリーンショット。](./media/migrate-best-practices-security-management/tagging.png)
-  "_図 7: タグ付け。_ "
+  "*図 7: タグ付け。* "
 
 **詳細情報:**
 
@@ -276,7 +276,7 @@ Azure AD Connect を使用してオンプレミスの Active Directory を Azure
 **詳細情報:**
 
 - ブループリントについて[読む](/azure/governance/blueprints/overview)。
-- [医療分野で AI を促進するためのブループリントの例](https://azure.microsoft.com/blog/customizing-azure-blueprints-to-accelerate-ai-in-healthcare)を確認する。
+- [医療分野で AI を促進するためのブループリントの例](https://azure.microsoft.com/blog/customizing-azure-blueprints-to-accelerate-ai-in-healthcare/)を確認する。
 
 ## <a name="best-practice-review-azure-reference-architectures"></a>ベスト プラクティス:Azure の参照アーキテクチャを確認する
 
@@ -286,8 +286,8 @@ Azure においてセキュリティ保護されたスケーラブルで管理�
 
 **詳細情報:**
 
-- [Azure リファレンス アーキテクチャ](/azure/architecture/reference-architectures)について学習する。
-- [Azure のシナリオ例](/azure/architecture/example-scenario)を確認する。
+- [Azure リファレンス アーキテクチャ](/azure/architecture/browse/)について学習する。
+- [Azure のシナリオ例](/azure/architecture/browse/)を確認する。
 
 ## <a name="best-practice-manage-resources-with-azure-management-groups"></a>ベスト プラクティス:Azure 管理グループを使用してリソースを管理する
 
@@ -302,11 +302,11 @@ Azure においてセキュリティ保護されたスケーラブルで管理�
 次の図は、管理グループを使用して管理のための階層を作成する例を示しています。
 
   ![管理グループの図。](./media/migrate-best-practices-security-management/management-groups.png)
-  _図 8:管理グループ。_ "
+  *図 8:管理グループ。* "
 
 **詳細情報:**
 
-- [管理グループへのリソースの整理](/azure/governance/management-groups)の詳細を確認する。
+- [管理グループへのリソースの整理](/azure/governance/management-groups/)の詳細を確認する。
 
 ## <a name="best-practice-deploy-azure-policy"></a>ベスト プラクティス:Azure Policy をデプロイする
 
@@ -315,7 +315,7 @@ Azure Policy は、ポリシーの作成、割り当て、および管理に使�
 Azure Policy ではリソースが評価されて、ポリシーに準拠していないリソースがスキャンされます。 たとえば、VM に対して特定の SKU サイズのみを許可するポリシーを自身の環境に作成できます。 この設定は、リソースを作成および更新するときと既存のリソースをスキャンするときに Azure Policy によって評価されます。 Azure で提供されている組み込みポリシーを割り当てることも、独自に作成することもできます。
 
   ![Azure Policy のスクリーンショット。](./media/migrate-best-practices-security-management/policy.png)
-  _図 9:Azure Policy。_ "
+  *図 9:Azure Policy。* "
 
 **詳細情報:**
 
@@ -324,7 +324,7 @@ Azure Policy ではリソースが評価されて、ポリシーに準拠して�
 
 ## <a name="best-practice-implement-a-bcdr-strategy"></a>ベスト プラクティス:BCDR 戦略を実装する
 
-事業継続とディザスター リカバリー (BCDR) の計画は、Azure への移行計画プロセスの一環として完了する必要がある重要な作業です。 法律的には、台風や地震などの大きな力が発生した場合に、責務が免除される "_不可抗力_" 条項を契約に含めることができます。 しかし、災害が発生したときは、サービスを継続的に実行し、必要に応じて復旧を行うことを可能な範囲で保証する義務もあります。 これを行う能力は、会社の未来を左右する可能性があります。
+事業継続とディザスター リカバリー (BCDR) の計画は、Azure への移行計画プロセスの一環として完了する必要がある重要な作業です。 法律的には、台風や地震などの大きな力が発生した場合に、責務が免除される "*不可抗力*" 条項を契約に含めることができます。 しかし、災害が発生したときは、サービスを継続的に実行し、必要に応じて復旧を行うことを可能な範囲で保証する義務もあります。 これを行う能力は、会社の未来を左右する可能性があります。
 
 一般に、BCDR 戦略では以下のことを検討する必要があります。
 
@@ -345,7 +345,7 @@ Azure に移行する際は、Azure のプラットフォームには回復性�
 Azure IaaS VM で実行されるワークロードについては、以下のバックアップ ソリューションを検討します。
 
 - **Azure Backup:** Azure のWindows と Linux の VM に、アプリケーション整合性バックアップを提供します。
-- **ストレージのスナップショット:** BLOB ストレージのスナップショットを作成します。
+- **ストレージのスナップショット:** Blob Storage のスナップショットを作成します。
 
 #### <a name="azure-backup"></a>Azure Backup
 
@@ -360,7 +360,7 @@ Azure Backup を使用すると、次の方法で VM をバックアップする
 セキュリティ上の理由により、Azure Backup では AES-256 を使用して送信中のデータが暗号化されます。 これは HTTPS 経由で Azure に送信されます。 Azure に保存されているバックアップ データは、[Azure Storage 暗号化](/azure/storage/common/storage-service-encryption)を使用して暗号化されます。
 
 ![Azure Backup のスクリーンショット。](./media/migrate-best-practices-security-management/iaas-backup.png)
-"_図 10: Azure Backup。_ "
+"*図 10: Azure Backup。* "
 
 **詳細情報:**
 
@@ -371,14 +371,14 @@ Azure Backup を使用すると、次の方法で VM をバックアップする
 
 Azure VM は、Azure Storage にページ BLOB として格納されます。 スナップショットでは、特定の時点における BLOB の状態がキャプチャされています。 Azure VM ディスクの別のバックアップ方法として、ストレージ BLOB のスナップショットを取得し、別のストレージ アカウントにコピーできます。
 
-BLOB 全体をコピーするか、または増分スナップショット コピーを使用して差分変更のみをコピーし、ストレージ スペースを削減できます。 追加の予防措置として、BLOB ストレージ アカウントの論理的な削除を有効にできます。 この機能が有効になっている場合、削除された BLOB は削除対象としてマークされますが、すぐには消去されません。 猶予期間中は BLOB を復元できます。
+BLOB 全体をコピーするか、または増分スナップショット コピーを使用して差分変更のみをコピーし、ストレージ スペースを削減できます。 追加の予防措置として、Blob Storage アカウントの論理的な削除を有効にできます。 この機能が有効になっている場合、削除された BLOB は削除対象としてマークされますが、すぐには消去されません。 猶予期間中は BLOB を復元できます。
 
 **詳細情報:**
 
 - [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) について学習する。
-- [BLOB スナップショットを作成する](/azure/storage/blobs/storage-blob-snapshots)方法を学習する。
-- BLOB ストレージ バックアップの[サンプル シナリオを確認する](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup)。
-- [BLOB の論理的な削除](/azure/storage/blobs/storage-blob-soft-delete)について読む。
+- [BLOB スナップショットを作成する](/azure/storage/blobs/snapshots-overview)方法を学習する。
+- Blob Storage バックアップの[サンプル シナリオを確認する](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup/)。
+- [BLOB の論理的な削除](/azure/storage/blobs/soft-delete-blob-overview)について読む。
 - [Azure Storage でのディザスター リカバリーと強制フェールオーバー (プレビュー)](/azure/storage/common/storage-disaster-recovery-guidance)
 
 #### <a name="third-party-backup"></a>サード パーティのバックアップ
@@ -396,7 +396,7 @@ Azure Site Recovery は、障害が発生したときに Azure VM をオンラ�
 Site Recovery によって、プライマリ Azure リージョンからセカンダリ Azure リージョンに VM がレプリケートされます。 災害が発生した場合は、プライマリ リージョンから VM をフェールオーバーし、セカンダリ リージョンで通常どおり引き続き VM にアクセスします。 操作が正常に戻ったら、プライマリ リージョンに VM をフェールバックできます。
 
   ![Azure Site Recovery の図。](./media/migrate-best-practices-security-management/site-recovery.png)
-  _図 11:Site Recovery。_ "
+  *図 11:Site Recovery。* "
 
 **詳細情報:**
 
@@ -414,13 +414,13 @@ Azure マネージド ディスクによって VM ディスクに関連付けら
 - 高い回復性と可用性のためには、可用性セットに VM を作成する必要があります。 計画済み、または計画外の停止が発生したときは、可用性セットによって、セット内の少なくとも 1 つの VM が使用可能であることが保証されます。
 
   ![マネージド ディスクの図。](./media/migrate-best-practices-security-management/managed-disks.png)
-  "_図 12: マネージド ディスク。_ "
+  "*図 12: マネージド ディスク。* "
 
 **詳細情報:**
 
-- [Managed Disks の概要](/azure/virtual-machines/windows/managed-disks-overview)を読む。
+- [Managed Disks の概要](/azure/virtual-machines/managed-disks-overview)を読む。
 - [マネージドへのディスクの変換](/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks)について学習する。
-- [Azure で Windows VM の可用性を管理する](/azure/virtual-machines/windows/manage-availability)方法を学習する。
+- [Azure で Windows VM の可用性を管理する](/azure/virtual-machines/manage-availability)方法を学習する。
 
 ## <a name="best-practice-monitor-resource-usage-and-performance"></a>ベスト プラクティス:リソースの使用状況とパフォーマンスを監視する
 
@@ -435,14 +435,14 @@ Azure の優れたスケーリング機能が目的で、Azure にワークロ�
 - サード パーティ製の SIEM アプリケーションを統合して、Azure ログで監査とパフォーマンスのイベントを監視することもできます。
 
   ![Azure Monitor のスクリーンショット。](./media/migrate-best-practices-security-management/monitor.png)
-  "_図 13: Azure Monitor。_ "
+  "*図 13: Azure Monitor。* "
 
 **詳細情報:**
 
 - [Azure Monitor](/azure/azure-monitor/overview) について学習する。
 - 監視と診断に関する[ベスト プラクティスを知る](/azure/architecture/best-practices/monitoring)。
 - [自動スケーリング](/azure/architecture/best-practices/auto-scaling)について学習する。
-- [Azure のデータを SIEM ツールにルーティングする](/azure/security-center/security-center-export-data-to-siem)方法を学習する。
+- [Azure のデータを SIEM ツールにルーティングする](/azure/security-center/security-center-partner-integration)方法を学習する。
 
 ## <a name="best-practice-enable-diagnostic-logging"></a>ベスト プラクティス:診断ログの有効化
 
@@ -451,12 +451,12 @@ Azure リソースでは、かなり多くのログ メトリックとテレメ�
 診断ログを有効にするとき、各リソースには特定のカテゴリのセットがあります。 1 つまたは複数のログ カテゴリと、ログ データの場所を選択します。 ログは、ストレージ アカウント、イベント ハブ、または Azure Monitor ログに送信できます。
 
 ![診断ログのスクリーンショット。](./media/migrate-best-practices-security-management/diagnostics.png)
-"_図 14: 診断ログ。_ "
+"*図 14: 診断ログ。* "
 
 **詳細情報:**
 
-- [ログ データの収集と使用](/azure/azure-monitor/platform/platform-logs-overview)について学習する。
-- [診断ログ](/azure/azure-monitor/platform/diagnostic-logs-schema)でサポートされているものを確認する。
+- [ログ データの収集と使用](/azure/azure-monitor/essentials/platform-logs-overview)について学習する。
+- [診断ログ](/azure/azure-monitor/essentials/resource-logs-schema)でサポートされているものを確認する。
 
 ## <a name="best-practice-set-up-alerts-and-playbooks"></a>ベスト プラクティス:アラートとプレイブックを設定する
 
@@ -468,12 +468,12 @@ Azure リソースの診断ログを有効にすると、ログ データを使�
 - もう 1 つの例は、メモリ リークが発生しているアプリケーションです。 メモリの使用量が特定のポイントに達したら、プレイブックでプロセスをリサイクルできます。
 
   ![アラートのスクリーンショット。](./media/migrate-best-practices-security-management/alerts.png)
-  "_図 15: アラート。_ "
+  "*図 15: アラート。* "
 
 **詳細情報:**
 
-- [アラート](/azure/azure-monitor/platform/alerts-overview)について学習する。
-- [Security Center のアラートに応答するセキュリティ プレイブック](/azure/security-center/security-center-playbooks)について学習する。
+- [アラート](/azure/azure-monitor/alerts/alerts-overview)について学習する。
+- [Security Center のアラートに応答するセキュリティ プレイブック](/azure/security-center/workflow-automation)について学習する。
 
 ## <a name="best-practice-use-the-azure-dashboard"></a>ベスト プラクティス:Azure ダッシュボードを使用する
 
@@ -483,7 +483,7 @@ Azure portal は Web ベースの統合コンソールで、簡単な Web アプ
 - この共有モデルでは、チームは Azure 環境の内部を見ることができ、プロアクティブにクラウド内のシステムを管理できます。
 
   ![Azure ダッシュボードのスクリーンショット。](./media/migrate-best-practices-security-management/dashboard.png)
-  "_図 16: Azure ダッシュボード。_ "
+  "*図 16: Azure ダッシュボード。* "
 
 **詳細情報:**
 
@@ -498,12 +498,12 @@ Azure portal は Web ベースの統合コンソールで、簡単な Web アプ
 - Azure に対して提供されているさまざまなサポート プランを理解しておきます。 その範囲は、開発者インスタンス専用の応答時間から、応答時間が 15 分未満の Premier サポートにまで及びます。
 
   ![サポート プランのスクリーンショット。](./media/migrate-best-practices-security-management/support.png)
-  "_図 17: サポート プラン。_ "
+  "*図 17: サポート プラン。* "
 
 **詳細情報:**
 
-- [Azure サポート プランの概要](https://azure.microsoft.com/support/options)を読む。
-- [サービス レベル アグリーメント (SLA)](https://azure.microsoft.com/support/legal/sla) について学習する。
+- [Azure サポート プランの概要](https://azure.microsoft.com/support/options/)を読む。
+- [サービス レベル アグリーメント (SLA)](https://azure.microsoft.com/support/legal/sla/) について学習する。
 
 ## <a name="best-practice-manage-updates"></a>ベスト プラクティス:更新プログラムの管理
 
@@ -515,13 +515,13 @@ Azure VM をオペレーティング システムとソフトウェアの最新�
 - さらに、Azure VM を System Center Configuration Manager に登録できます。 そうすると、Configuration Manager のワークロードを Azure に移行して、単一の Web インターフェイスからレポートの作成やソフトウェアの更新を行うことができます。
 
   ![VM の更新の図。](./media/migrate-best-practices-security-management/updates.png)
-  "_図 18: 更新。_ "
+  "*図 18: 更新。* "
 
 **詳細情報:**
 
 - [Azure の Update Management](/azure/automation/update-management/overview) について学習する。
-- [Configuration Manager と Update Management を統合する](/azure/automation/oms-solution-updatemgmt-sccmintegration)方法を学習する。
-- Azure での Configuration Manager について[よく寄せられる質問](/sccm/core/understand/configuration-manager-on-azure)。
+- [Configuration Manager と Update Management を統合する](/azure/automation/update-management/mecmintegration)方法を学習する。
+- Azure での Configuration Manager について[よく寄せられる質問](/mem/configmgr/core/understand/configuration-manager-on-azure)。
 
 ## <a name="implement-a-change-management-process"></a>変更管理プロセスを実装する
 
@@ -539,11 +539,11 @@ Azure では、Azure Automation の変更追跡ソリューションを使用で
 - [変更の追跡] ダッシュボードでは、サーバー インフラストラクチャで行われた変更を簡単に確認できます。
 
   ![変更管理のスクリーンショット。](./media/migrate-best-practices-security-management/change.png)
-  "_図 19: 変更管理。_ "
+  "*図 19: 変更管理。* "
 
 **詳細情報:**
 
-- [Change Tracking](/azure/automation/automation-change-tracking) について学習する。
+- [Change Tracking](/azure/automation/change-tracking/overview) について学習する。
 - [Azure Automation の機能](/azure/automation/automation-intro)について学習する。
 
 ## <a name="next-steps"></a>次のステップ

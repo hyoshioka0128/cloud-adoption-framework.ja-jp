@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: ccc8f2d86a9e99544a1022e8864523e56f226d7f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 89c3587961a2a887a02e67ea3de8e3d7ed7002a0
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022615"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101793028"
 ---
 # <a name="get-started-manage-cloud-costs"></a>作業を開始しましょう。クラウド コストを管理する
 
@@ -58,7 +58,7 @@ ms.locfileid: "97022615"
 
 - コスト最適化のための効果的な変更を実装するには、ワークロード レベルでのトレードオフが必要になる場合があります。 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs) と [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review) は、特定のワークロードの技術所有者との対話を導くのに役立ちます。
 - クラウド ガバナンスを初めて使用する場合は、ガバナンス手法を使用して、[ガバナンスのポリシー、プロセス、規範](../govern/index.md)を確立します。
-- コスト管理規範を初めて使用する場合は、[コスト管理規範の改善に関する記事](../govern/guides/complex/cost-management-improvement.md)に従うことを検討してください。特に、[実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)に関するセクションを重点的にお読みください。
+- Cost Management の規範を初めて使用する場合は、[コスト管理規範の改善に関する記事](../govern/guides/complex/cost-management-improvement.md)に従うことを検討してください。特に、[実装](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)に関するセクションを重点的にお読みください。
 
 <br>
 
@@ -174,7 +174,7 @@ Azure 用の Microsoft クラウド導入フレームワークの準備手法で
 **成果物の完遂をサポートするうえでのガイダンス:**
 
 - [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review) を使用して、アーキテクチャに関する決定のバランスを把握します。
-- イノベーションでのコスト最適化に関する詳細なガイダンスについては、「[Microsoft Azure Well-Architected Framework](/azure/architecture/framework)」をご覧ください。
+- イノベーションでのコスト最適化に関する詳細なガイダンスについては、「[Microsoft Azure Well-Architected Framework](/azure/architecture/framework/)」をご覧ください。
 
 <br>
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: a437e1cbc6daa788fa5e24c3af4ef892d826ccce
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 993bc79de4c5fc6e3368f94c71cc8537aae13161
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026576"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784851"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
@@ -30,7 +30,7 @@ Azure への移行を検討する際、Contoso では技術的および財務的
 | アプリの名前 | プラットフォーム | アプリ層 | 詳細 |
 | --- | --- | --- | --- |
 | **SmartHotel360** <br><br> (Contoso の旅行要件を管理します) | SQL Server データベースが搭載された Windows 上で実行 | 2 層アプリ。 1 つの VM (`WEBVM`) 上でフロントエンド ASP.NET Web サイトが実行され、別の VM (`SQLVM`) 上で SQL Server が実行されます。 | VM は、vCenter Server によって管理される VMware ESXi ホスト上で実行されています。 <br><br> サンプル アプリは [GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。 |
-| **osTicket** <br><br> (Contoso のサービス デスク アプリ) | [LAMP](https://wikipedia.org/wiki/LAMP_(software_bundle)) スタック上で実行されます。 | 2 層アプリ。 1 つの VM (`OSTICKETWEB`) 上でフロントエンド PHP Web サイトが実行され、別の VM (`OSTICKETMYSQL`) 上で MySQL データベースが実行されます。 | このアプリは、社内の従業員と外部の顧客の問題を追跡するために、顧客サービス アプリによって使用されます。 <br><br> サンプルは [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 |
+| **osTicket** <br><br> (Contoso のサービス デスク アプリ) | [LAMP](https://wikipedia.org/wiki/LAMP_software_bundle) スタック上で実行されます。 | 2 層アプリ。 1 つの VM (`OSTICKETWEB`) 上でフロントエンド PHP Web サイトが実行され、別の VM (`OSTICKETMYSQL`) 上で MySQL データベースが実行されます。 | このアプリは、社内の従業員と外部の顧客の問題を追跡するために、顧客サービス アプリによって使用されます。 <br><br> サンプルは [GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。 |
 
 ## <a name="current-architecture"></a>現在のアーキテクチャ
 
@@ -70,8 +70,8 @@ Contoso は移行の評価に Microsoft のツールを使用します。 ツー
 
 | テクノロジ | 説明 | コスト |
 | --- | --- | --- |
-| [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は、SQL のソースとターゲット間の機能パリティを評価します。 そのうえで、パフォーマンスと信頼性の向上箇所を推奨します。 | Data Migration Assistant は無料でダウンロードできるツールです。 |
-| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | Azure Migrate は、追加料金なしで利用できます。 ただし、評価と移行に使用するツール (ファーストパーティまたは ISV) によっては料金が発生する場合があります。 [Azure Migrate の価格](https://azure.microsoft.com/pricing/details/azure-migrate)について、詳しくはこちらを参照してください。  |
+| [Data Migration Assistant](/sql/dma/dma-overview) | Contoso は Data Migration Assistant を使用して、Azure でのデータベースの機能に影響を与える可能性のある互換性の問題を評価し、検出します。 Data Migration Assistant は、SQL のソースとターゲット間の機能パリティを評価します。 そのうえで、パフォーマンスと信頼性の向上箇所を推奨します。 | Data Migration Assistant は無料でダウンロードできるツールです。 |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso は、Azure Migrate サービスを使用して VMware VM を評価します。 Azure Migrate は、マシンの移行適合性を評価します。 そのうえで、Azure で実行するための、サイズとコストの見積もりを提供します。 | Azure Migrate は、追加料金なしで利用できます。 ただし、評価と移行に使用することにするツール (ファースト パーティまたは ISV) によっては料金が発生する場合があります。 [Azure Migrate の価格](https://azure.microsoft.com/pricing/details/azure-migrate)について、詳しくはこちらを参照してください。  |
 | [サービス マップ](/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate では、会社が移行しようとしているマシン間の依存関係が Service Map を使用して示されます。 | Service Map は、Azure Monitor ログの一部です。 現時点では、Contoso は Service Map を 180 日間無料で使用できます。 |
 
 このシナリオでは、Contoso は Data Migration Assistant をダウンロードして実行し、旅行アプリ用のオンプレミス SQL Server データベースを評価します。 Contoso は Azure への移行前に、Azure Migrate と依存関係マッピングを使用してアプリ VM を評価します。
@@ -191,7 +191,7 @@ Contoso が評価を行う方法は次のとおりです。
     ![Data Migration Assistant:機能に関する推奨事項レポート](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso がすべての SQL Server データベースで [Transparent Data Encryption を有効にする](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)ことが推奨されます。 これは、データベースがオンプレミスでホストされている場合よりも、クラウドにある場合に、よりいっそう重要です。 Transparent Data Encryption は、移行後にのみ有効にする必要があります。 Transparent Data Encryption が既に有効になっている場合は、証明書または非対称キーを対象サーバーの `master` データベースに移動する必要があります。 [Transparent Data Encryption によって保護されたデータベースを別の SQL Server に移動する方法については、こちらを参照してください](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
+    > Contoso がすべての SQL Server データベースで [Transparent Data Encryption を有効にする](/sql/relational-databases/security/encryption/transparent-data-encryption)ことが推奨されます。 これは、データベースがオンプレミスでホストされている場合よりも、クラウドにある場合に、よりいっそう重要です。 Transparent Data Encryption は、移行後にのみ有効にする必要があります。 Transparent Data Encryption が既に有効になっている場合は、証明書または非対称キーを対象サーバーの `master` データベースに移動する必要があります。 [Transparent Data Encryption によって保護されたデータベースを別の SQL Server に移動する方法については、こちらを参照してください](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017)。
 
 3. Contoso は評価を JSON または CSV 形式でエクスポートできます。
 
@@ -199,8 +199,8 @@ Contoso が評価を行う方法は次のとおりです。
 > 大規模な評価を行う場合:
 >
 > - 複数の評価を同時に実行し、 **[すべての評価]** ページで評価の状態を確認します。
-> - 評価を [SQL Server データベース](/sql/dma/dma-consolidatereports?view=ssdt-18vs2017)に統合します。
-> - 評価を [Power BI レポート](/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017)に統合します。
+> - 評価を [SQL Server データベース](/sql/dma/dma-consolidatereports)に統合します。
+> - 評価を [Power BI レポート](/sql/dma/dma-powerbiassesreport)に統合します。
 
 ## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>手順 3:Azure Migrate を使用した VM 評価の準備をする
 

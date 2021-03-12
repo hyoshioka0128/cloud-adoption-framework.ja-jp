@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: イノベーション ツール, AI 予測, AI アプリケーション, デジタル イノベーション, AI エージェント
-ms.openlocfilehash: 1da02626f1b2bc8717439eb2a053d1296f3bad0b
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: 21285454e40a8b58136faa5189cd85f0dda7fb9a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525815"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791056"
 ---
 # <a name="use-innovation-tools-with-ai-to-predict-and-influence"></a>予測して影響を与えるために AI とともにイノベーション ツールを使用する
 
-AI とは人工知能のことであり、コンピューターでデータのパターンを検出して、顧客の行動を会社が解釈するために役立つ分析情報を生み出します。 AI 予測では、顧客のニーズを予測したり、ビジネス プロセスを自動化したりできます。 AI アプリケーションとデジタル イノベーション ツールを使用すると、会社では、非構造化データに潜む情報を発見し、より優れたエクスペリエンスを提供する新しい顧客エンゲージメントの手段を実現できます。
+AI とは *人工知能* のことであり、コンピューターでデータのパターンを検出して、顧客の行動を企業が把握するために役立つ分析情報を生み出します。 AI 予測では、顧客のニーズを予測したり、ビジネス プロセスを自動化したりできます。 AI アプリケーションとデジタル イノベーション ツールを使用すると、会社では、非構造化データに潜む情報を発見し、より優れたエクスペリエンスを提供する新しい顧客エンゲージメントの手段を実現できます。
 
 この種類のデジタル イノベーションは、次のソリューション領域のそれぞれを通して加速できます。 デジタル発明を加速するためのベスト プラクティスと技術的なガイダンスは、このページの左側の目次に一覧表示されています。 これらの記事は、ソリューション領域別にグループ化されています。
 

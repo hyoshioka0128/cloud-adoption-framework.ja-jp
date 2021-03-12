@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: 56a46d56101da7e610e45f87b30909e3890d4568
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 41c80e1ad1be85fcc53f015064a1bff28db5f7b7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017396"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790121"
 ---
 <!-- docutune:casing "Update Management" "Guest Configuration" "Blueprints: Getting started" "Blueprints: Blueprint definitions" MMA -->
 <!-- cSpell:ignore WSUS -->
 
 # <a name="operational-compliance-in-azure"></a>Azure における運用のコンプライアンス
 
-"_運用のコンプライアンス_" は、すべてのクラウド管理ベースラインにおける 2 つ目の規範です。
+"*運用のコンプライアンス*" は、すべてのクラウド管理ベースラインにおける 2 つ目の規範です。
 
 ![クラウド管理ベースライン](../../_images/manage/management-baseline.png)
 
@@ -127,9 +127,9 @@ Azure Policy ゲスト構成では、現在、マシン内の設定の監査の�
 
 詳細については、次を参照してください。
 
-- [Azure Policy](/azure/azure-policy)
+- [Azure Policy](/azure/governance/policy/)
 - [Azure Policy: ゲスト構成](/azure/governance/policy/concepts/guest-configuration)
-- [クラウド導入フレームワーク:ポリシー適用の意思決定ガイド](../../decision-guides/policy-enforcement/index.md)
+- [クラウド導入フレームワークのポリシー適用の意思決定ガイド](../../decision-guides/policy-enforcement/index.md)
 
 ## <a name="azure-blueprints"></a>Azure Blueprint
 
@@ -215,8 +215,8 @@ Azure Blueprints を使用すると、開発チームは新しい環境を迅速
 
 詳細については、次を参照してください。
 
-- [Azure Blueprint](/azure/governance/blueprints)
-- [クラウド導入フレームワーク:リソースの整合性の意思決定ガイド](../../decision-guides/resource-consistency/index.md)
-- [標準ベースのブループリント サンプル](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Azure Blueprint](/azure/governance/blueprints/)
+- [クラウド導入フレームワークにおけるリソースの整合性の意思決定ガイド](../../decision-guides/resource-consistency/index.md)
+- [標準ベースのブループリント サンプル](/azure/governance/blueprints/samples/#standards-based-blueprint-samples)
 
 ::: zone-end

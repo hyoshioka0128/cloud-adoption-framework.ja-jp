@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: aa2a90a768b271ce00e6d04d3775bd77358a9feb
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d7b3918e80e46c27b83d54afef84e019ddd14bff
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021731"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790869"
 ---
 # <a name="cost-management-discipline-template"></a>Cost Management 規範テンプレート
 
-変更を実装する最初の手順は、必要な変更を伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウドのコスト管理問題を管理するポリシー ステートメントを文書化して伝達する開始点として機能します。
+変更を実装する最初の手順は、必要な変更を伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 次のテンプレートは、クラウドのコスト管理問題を管理するポリシー ステートメントを文書化して伝達する開始点として機能します。
 
 ディスカッションが進んだら、このテンプレートの構造を、組織のコスト管理ポリシー ステートメントを定義するために必要なビジネス リスク、リスク許容度、コンプライアンス プロセス、およびツールを把握するためのモデルとして使用してください。
 

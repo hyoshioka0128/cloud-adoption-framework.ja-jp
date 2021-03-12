@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: 923cb7542d85af87a40beb6c1429a3e47fc440b8
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: af558e03f56fd759474dc2c5900d34d5cf272be4
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174660"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789951"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -62,7 +62,7 @@ Azure Migrate では、移行前評価フェーズの一環として適切なサ
 
 ::: zone target="docs"
 
-- [Azure リソースに対する予約を管理する](/azure/billing/billing-manage-reserved-vm-instance)
+- [Azure リソースに対する予約を管理する](/azure/cost-management-billing/reservations/manage-reserved-vm-instance)
 - [Windows VM のサイズを変更する](/azure/virtual-machines/windows/resize-vm)
 - [Azure CLI を使用して Linux 仮想マシンのサイズを変更する](/azure/virtual-machines/linux/change-vm-size)
 
@@ -128,8 +128,8 @@ Azure Cost Management + Billing は、Azure Advisor と連携してコストの�
 
 ::: zone target="docs"
 
-- [チュートリアル:推奨事項に従ってコストを最適化する](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
-- [Azure Cost Management と Billing で予想外の料金を防ぐ](/azure/billing/billing-getting-started)
-- [コスト分析を使用してコストを調査および分析する](/azure/cost-management/quick-acm-cost-analysis)
+- [チュートリアル: 推奨事項に従ってコストを最適化する](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [Azure Cost Management と Billing で予想外の料金を防ぐ](/azure/cost-management-billing/cost-management-billing-overview)
+- [コスト分析を使用してコストを調査および分析する](/azure/cost-management-billing/costs/quick-acm-cost-analysis)
 
 ::: zone-end

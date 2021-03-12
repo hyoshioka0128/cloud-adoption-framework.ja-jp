@@ -1,6 +1,6 @@
 ---
 title: オンプレミス アプリケーションを Azure App Service Web アプリと SQL マネージド インスタンスにリファクターする
-description: Contoso が、オンプレミスのアプリを Azure App Service Web アプリと SQL マネージド インスタンスに移行することでリホストする方法について説明します。
+description: Contoso が、オンプレミスのアプリケーションを Azure App Service Web アプリと SQL マネージド インスタンスに移行することで再ホストする方法について説明します。
 author: givenscj
 ms.author: abuck
 ms.date: 07/01/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 0264f875fde9ec2f4d3407232b5eba7de7f3acef
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 6ca32f6ce655250d5bbde8c127a6efd27dedef0d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631697"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786398"
 ---
 <!-- cSpell:ignore contoso's contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "100631697"
 
 この記事では、Contoso という架空の会社が、Azure への移行の一環として、VMware 仮想マシン (VM) 上で実行される 2 階層の Windows .NET アプリケーションをリファクターする方法を説明します。 Contoso チームは、アプリケーションのフロントエンド VM を、Azure App Service の Web アプリに移行します。 また、Contoso がアプリケーション データベースを Azure SQL マネージド インスタンスに移行する方法についても説明します。
 
-この例で使用する SmartHotel360 アプリケーションは、オープンソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
+この例で使用する SmartHotel360 アプリケーションは、オープンソース ソフトウェアとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
@@ -52,7 +52,7 @@ Contoso は、その目標と要件を設定した後、デプロイ ソリュ�
 
 - SmartHotel360 オンプレミス アプリケーションは 2 つの VM (`WEBVM` と `SQLVM`) に階層化されています。
 - VM は、VMware ESXi ホスト contosohost1.contoso.com バージョン 6.5 上にあります。
-- VMware 環境は、VM 上で実行されている vCenter Server 6.5 (vcenter.contoso.com) によって管理されています。
+- VMware 環境は、VM 上で実行されている vCenter Server 6.5 (`vcenter.contoso.com`) によって管理されています。
 - Contoso にオンプレミスのデータセンター (contoso-datacenter) があり、そこにオンプレミスのドメイン コントローラー (contosodc1) が含まれています。
 - Contoso データセンター内のオンプレミス VM は、移行が行われた後に使用停止にされます。
 
@@ -79,7 +79,7 @@ Contoso は、次の表のように長所と短所の一覧をまとめて、提
 
 | 考慮事項 | 詳細 |
 | --- | --- |
-| **長所** | Azure に移行するために SmartHotel360 アプリケーション コードを変更する必要はありません。 <br><br> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。 <br><br> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 詳細については、「[Microsoft ライフサイクル ポリシー](/lifecycle/)」を参照してください。 <br><br> Contoso では、複数のインスタンスを保持するアプリケーションの Web 層を構成できるので、Web 層は単一障害点ではなくなります。 <br><br> データベースは古い SQL Server 2008 R2 に依存しなくなります。 <br><br> SQL Managed Instance では、Contoso の技術面の要件と目標がサポートされています。 <br><br> マネージド インスタンスでは、SQL Server 2008 R2 から移行するときに、現在のデプロイとの 100% の互換性が提供されます。 <br><br> Contoso は、SQL Server と Windows Server の Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。 <br><br> 将来の移行で、Azure Database Migration Service を再利用できます。 <br><br> マネージド インスタンスには、フォールト トレランスが組み込まれていて、Contoso がそれを構成する必要はありません。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。 |
+| **長所** | Azure に移行するために SmartHotel360 アプリケーション コードを変更する必要はありません。 <br><br> Contoso では、SQL Server と Windows Server の両方に Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。 <br><br> 移行後は、Windows Server 2008 R2 をサポートする必要がなくなります。 詳細については、「[Microsoft ライフサイクル ポリシー](/lifecycle/)」を参照してください。 <br><br> Contoso では、複数のインスタンスを保持するアプリケーションの Web 層を構成できるので、Web 層は単一障害点ではなくなります。 <br><br> データベースは古い SQL Server 2008 R2 に依存しなくなります。 <br><br> SQL Managed Instance では、Contoso の技術面の要件と目標がサポートされています。 <br><br> SQL マネージド インスタンスでは、SQL Server 2008 R2 から移行するときに、現在のデプロイとの 100% の互換性が提供されます。 <br><br> Contoso は、SQL Server と Windows Server の Azure ハイブリッド特典を使用して、ソフトウェア アシュアランスへの投資を活かすことができます。 <br><br> 将来の移行で、Azure Database Migration Service を再利用できます。 <br><br> SQL マネージド インスタンスには、Contoso が構成する必要のないフォールト トレランスが組み込まれています。 そのため、データ層がフェールオーバーの単一ポイントではなくなります。 |
 | **短所** | Azure App Service でサポートされるアプリケーションのデプロイは、各 Web アプリにつき 1 つだけです。 これは、2 つの Web アプリをプロビジョニングする必要がある (Web サイト用に 1 つと WCF サービス用に 1 つ) ことを意味します。 <br><br> データ層について、Contoso がオペレーティング システムまたはデータベース サーバーをカスタマイズしたい場合、または SQL Server と共にサードパーティ製アプリケーションを実行したい場合、SQL Managed Instance は最適なソリューションではない可能性があります。 IaaS VM で SQL Server を実行すると、このような柔軟性が提供されます。 |
 
 ## <a name="proposed-architecture"></a>提案されたアーキテクチャ
@@ -127,7 +127,7 @@ Contoso が移行を実行する方法を次に示します。
 
 ## <a name="step-1-assess-and-migrate-the-web-apps"></a>手順 1:Web アプリの評価と移行
 
-Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、Web アプリを評価し、移行します。 このプロセスでは、[の Microsoft ラーニング パス](/learn/paths/migrate-dotnet-apps-azure/)をガイドとして使用します。 簡単に言えば、管理者は次の操作を実行します。
+Contoso 管理者は、[Azure App Service Migration Assistant](https://azure.microsoft.com/migration/web-applications/) ツールを使用して、Web アプリを評価し、移行します。 このプロセスでは、[Microsoft ラーニング パス](/learn/paths/migrate-dotnet-apps-azure/)をガイドとして使用します。 簡単に言えば、管理者は次の操作を実行します。
 
 - Azure [App Service 移行評価](https://azure.microsoft.com/services/app-service/migration-assistant/)ツールを使用して、Web アプリ間の依存関係を評価し、オンプレミスの Web アプリと Azure App Service でサポートされているものの間に非互換性がないかどうかを判断します。
 
@@ -152,13 +152,13 @@ Azure SQL マネージド インスタンスを設定するため、Contoso は�
 
 Contoso の管理者は仮想ネットワークを次のように設定します。
 
-1. プライマリ リージョン (米国東部 2) に新しい仮想ネットワーク (VNET-SQLMI-EU2) を作成します。 その仮想ネットワークを ContosoNetworkingRG リソース グループに追加します。
-1. **10.235.0.0/24** のアドレス空間を割り当てます。 その範囲がエンタープライズ内の他のどのネットワークとも重複しないことを確認します。
+1. プライマリ リージョン (`East US 2`) に新しい仮想ネットワーク (`VNET-SQLMI-EU2`) を作成します。 これにより、仮想ネットワークが `ContosoNetworkingRG` リソース グループに追加されます。
+1. `10.235.0.0/24` のアドレス空間を割り当てます。 その範囲がエンタープライズ内の他のどのネットワークとも重複しないことを確認します。
 1. ネットワークに以下の 2 つのサブネットを追加します。
     - `SQLMI-DS-EUS2` (`10.235.0.0/25`).
     - `SQLMI-SAW-EUS2` (`10.235.0.128/29`). このサブネットは、マネージド インスタンスにディレクトリを接続するために使用されます。
 
-      ![マネージド インスタンスの [仮想ネットワークの作成] ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
+      ![マネージド インスタンスの **[仮想ネットワークの作成]** ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
 
 1. 仮想ネットワークとサブネットがデプロイされた後、ネットワークを以下のようにピアリングします。
 
@@ -170,7 +170,7 @@ Contoso の管理者は仮想ネットワークを次のように設定します
 
 1. Contoso は、カスタム DNS 設定を行います。 DNS 設定は、最初は Contoso の Azure ドメイン コント ローラーを指しています。 Azure DNS はセカンダリです。 Contoso Azure ドメイン コントローラーは、以下のように配置されます。
 
-    - 配置先は、米国東部 2 リージョンにある実稼働ネットワーク (VNET-PROD-EUS2) のサブネット PROD-DC-EUS2 です。
+    - `East US 2` リージョンの運用ネットワーク (`VNET-PROD-EUS2`) の `PROD-DC-EUS2` サブネットにあります。
 
     - `CONTOSODC3` アドレス: `10.245.42.4`
 
@@ -200,17 +200,17 @@ Contoso は以下の点を考慮します。
 
 Contoso の管理者は、次のようにしてルーティングを設定します。
 
-1. ContosoNetworkingRG リソース グループ内にユーザー定義ルート テーブルを作成します。
+1. ユーザー定義のルート テーブルを `ContosoNetworkingRG` リソース グループに作成します。
 
-    ![[ルート テーブルの作成] ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table.png)
+    ![**[ルート テーブルの作成]** ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table.png)
 
-1. SQL Managed Instance の要件に準拠するため、管理者は、ルート テーブル (MIRouteTable) のデプロイ後、アドレス プレフィックスが **0.0.0.0/0** のルートを追加します。 **[次ホップの種類]** オプションは **[インターネット]** に設定します。
+1. SQL Managed Instance の要件に準拠するため、管理者は、ルート テーブル (`MIRouteTable`) のデプロイ後、アドレス プレフィックスが `0.0.0.0/0` のルートを追加します。 **[次ホップの種類]** オプションは **[インターネット]** に設定します。
 
-    ![アドレス プレフィックスを追加するための [ルートの追加] ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-prefix.png)
+    ![アドレス プレフィックスを追加するための **[ルートの追加]** ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-prefix.png)
 
-1. (VNET-SQLMI-EUS2 ネットワーク内の) SQLMI-DB-EUS2 サブネットにルート テーブルを関連付けます。
+1. ルート テーブルを `SQLMI-DB-EUS2` サブネット (`VNET-SQLMI-EUS2` ネットワーク内) に関連付けます。
 
-    ![サブネットにテーブルをルーティングするための [サブネットの関連付け] ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-subnet.png)
+    ![サブネットにテーブルをルーティングするための **[サブネットの関連付け]** ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-subnet.png)
 
 **さらにサポートが必要な場合**
 
@@ -220,13 +220,14 @@ Contoso の管理者は、次のようにしてルーティングを設定しま
 
 これで、Contoso の管理者は、次のようにして SQL マネージド インスタンスをプロビジョニングできます。
 
-1. マネージド インスタンスにより、ビジネス アプリケーションにサービスが提供されるため、管理者は、会社のプライマリ リージョン (米国東部 2) にマネージド インスタンスをデプロイします。 そのマネージド インスタンスを ContosoRG リソース グループに追加します。
+1. マネージド インスタンスにより、ビジネス アプリケーションにサービスが提供されるため、管理者は、会社のプライマリ リージョン (米国東部 2) にマネージド インスタンスをデプロイします。 マネージド インスタンスを `ContosoRG` リソース グループに追加します。
 1. 価格レベルを選択し、インスタンスのコンピューティングとストレージのサイズを設定します。 詳細については、[SQL Managed Instance の価格](https://azure.microsoft.com/pricing/details/azure-sql/sql-managed-instance/single/)に関するページを参照してください。
 
-    ![[SQL Managed Instance] ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
+    ![**[SQL Managed Instance]** ペインのスクリーンショット。](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
 
-    マネージド インスタンスをデプロイすると、ContosoRG リソース グループ内に、次の 2 つの新しいリソースが表示されます。
-    - 新しい SQL マネージド インスタンス。
+    マネージド インスタンスをデプロイすると、`ContosoRG` リソース グループ内に 2 つの新しいリソースが表示されます。
+
+    - SQL マネージド インスタンス。
 
     - 仮想クラスター (複数のマネージド インスタンスが存在する場合)。
 
@@ -238,7 +239,7 @@ Contoso の管理者は、次のようにしてルーティングを設定しま
 
 ## <a name="step-3-migrate-via-azure-database-migration-service"></a>手順 3:Azure Database Migration Service を使用して移行する
 
-Contoso の管理者は、[ステップバイステップの移行チュートリアル](/azure/dms/tutorial-sql-server-azure-sql-online)の手順に従って、Azure Database Migration Service を使用してマネージド インスタンスを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
+Contoso の管理者は、[ステップバイステップの移行チュートリアル](/azure/dms/tutorial-sql-server-to-azure-sql)の手順に従って、Azure Database Migration Service を使用してマネージド インスタンスを移行します。 オンライン、オフライン、およびハイブリッド (プレビュー) の移行を実行できます。
 
 Contoso の管理者が行う作業の概要は次のとおりです。
 
@@ -258,17 +259,17 @@ Contoso の管理者が行う作業の概要は次のとおりです。
 
 Contoso は、アプリケーションのために DevOps インフラストラクチャとパイプラインを構築する必要があります。 これを行うために、Contoso 管理者は新しい DevOps プロジェクトを作成し、コードをインポートしてから、ビルドとリリース パイプラインを設定します。
 
-1. Contoso Azure DevOps アカウントで、新しいプロジェクト (ContosoSmartHotelRefactor) を作成し、バージョン コントロールに **[Git]** を選択します。
+1. Contoso Azure DevOps アカウントで、新しいプロジェクト (`ContosoSmartHotelRefactor`) を作成し、バージョン コントロールに **[Git]** を選択します。
 
     ![プロジェクトの新規作成ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/vsts1.png)
 
 1. アプリケーション コードを現在保持している Git リポジトリをインポートします。 ダウンロードは、[パブリック GitHub リポジトリ](https://github.com/Microsoft/SmartHotel360-Registration)から行います。
 
-    ![ソースの種類とクローン URL を指定するための [Git リポジトリをインポートする] ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/vsts2.png)
+    ![ソースの種類とクローン URL を指定するための **[Git リポジトリをインポートする]** ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/vsts2.png)
 
 1. Visual Studio をリポジトリに接続し、チーム エクスプローラーを使用して開発用マシンにコードを複製します。
 
-    ![[プロジェクトに接続] ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/devops1.png)
+    ![**[プロジェクトに接続]** ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/devops1.png)
 
 1. アプリケーションのソリューション ファイルを開きます。 このファイルには、Web アプリと WCF サービスのプロジェクトが別々に存在します。
 
@@ -278,18 +279,18 @@ Contoso は、アプリケーションのために DevOps インフラストラ�
 
 Contoso の管理者は、Web アプリとデータベースが互いに通信できるようにします。 そのために、コードと Web アプリで接続文字列を構成します。
 
-1. WCF サービス (SHWCF-EUS2) の Web アプリで、 **[設定]**  >  **[アプリケーションの設定]** の順に選択し、**DefaultConnection** という新しい接続文字列を追加します。
+1. WCF サービス (`SHWCF-EUS2`) の Web アプリで、 **[設定]**  >  **[アプリケーションの設定]** の順に選択し、`DefaultConnection` という名前の新しい接続文字列を追加します。
 1. 接続文字列は SmartHotel-Registration データベースからプルし、正しい資格情報を使用して更新します。
 
     ![接続文字列の設定ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/string1.png)
 
-1. Visual Studio で、管理者がソリューション ファイルから `SmartHotel.Registration.wcf` プロジェクトを開きます。 このプロジェクトの *web.config* ファイルの `connectionStrings` セクションを接続文字列で更新します。
+1. Visual Studio で、管理者がソリューション ファイルから `SmartHotel.Registration.wcf` プロジェクトを開きます。 このプロジェクトの `web.config` ファイルの `connectionStrings` セクションを接続文字列で更新します。
 
-     ![SmartHotel.Registration.wcf プロジェクトの web.config ファイルの connectionStrings セクションのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/string2.png)
+     ![`SmartHotel.Registration.wcf` プロジェクトの `web.config` ファイルの `connectionStrings` セクションのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/string2.png)
 
-1. SmartHotel.Registration.Web の `web.config` ファイルの `client` セクションを、WCF サービスの新しい場所を指すように変更します。 これは、サービス エンドポイントをホストする WCF Web アプリの URL です。
+1. `SmartHotel.Registration.Web` の `web.config` ファイルの `client` セクションを、WCF サービスの新しい場所を指すように変更します。 これは、サービス エンドポイントをホストする WCF Web アプリの URL です。
 
-    ![SmartHotel.Registration.wcf プロジェクトの web.config ファイルの client セクションのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/strings3.png)
+    ![`SmartHotel.Registration.wcf` プロジェクトの `web.config` ファイルの client セクションのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/strings3.png)
 
 1. コードの変更は以上で完了です。管理者は、Visual Studio のチーム エクスプローラーを使用して、変更のコミットと同期を行います。
 
@@ -299,19 +300,19 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
 1. Azure DevOps 内で、 **[Build and release]\(ビルドとリリース\)**  >  **[新しいパイプライン]** の順に選択します。
 
-    ![Azure DevOps の [新しいパイプライン] リンクのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline1.png)
+    ![Azure DevOps の **[新しいパイプライン]** リンクのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline1.png)
 
 1. **[Azure Repos Git]** を選択し、関連するリポジトリを選択します。
 
-    ![[Azure Repos Git] ボタンと選択されたリポジトリのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline2.png)
+    ![**[Azure Repos Git]** ボタンと選択されたリポジトリのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline2.png)
 
 1. **[テンプレートの選択]** で、ビルド用の ASP.NET テンプレートを選択します。
 
-     ![ASP.NET テンプレートを選択するための [テンプレートの選択] ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline3.png)
+     ![ASP.NET テンプレートを選択するための **[テンプレートの選択]** ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline3.png)
 
-1. ビルドの名前に **ContosoSmartHotelRefactor-ASP.NET-CI** を使用し、 **[保存してキューに登録]** を選択して、最初のビルドを開始します。
+1. ビルドの名前に `ContosoSmartHotelRefactor-ASP.NET-CI` を使用し、 **[保存してキューに登録]** を選択して、最初のビルドを開始します。
 
-     ![ビルドの [保存してキューに登録] ボタンのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline4.png)
+     ![ビルドの **[保存してキューに登録]** ボタンのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline4.png)
 
 1. プロセスを監視するビルド番号を選択します。 完了後、管理者はプロセスのフィードバックを表示し、 **[成果物]** を選択してビルドの結果を確認できます。
 
@@ -322,23 +323,23 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
     - 2 つの .zip ファイルは、アプリケーションが格納されているパッケージです。
     - これらの .zip ファイルは、Azure App Service にデプロイするためにリリース パイプライン内で使用されます。
 
-     ![[成果物エクスプローラー] ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline6.png)
+     ![**[成果物エクスプローラー]** ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline6.png)
 
 1. **[リリース]**  >  **[+ New pipeline]\(+ 新しいパイプライン\)** の順に選択します。
 
-    ![[New pipeline]\(新しいパイプライン\) リンクのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline7.png)
+    ![**[新しいパイプライン]** リンクのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline7.png)
 
 1. Azure App Service 用のデプロイ テンプレートを選択します。
 
     ![Azure App Service のデプロイ テンプレートのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline8.png)
 
-1. リリース パイプラインに **ContosoSmartHotel360Refactor** という名前を付け、 **[ステージ名]** ボックスに、WCF Web アプリの名前として「**SHWCF-EUS2**」を指定します。
+1. リリース パイプラインに `ContosoSmartHotel360Refactor` という名前を付け、 **[ステージ名]** ボックスに、WCF Web アプリの名前として「`SHWCF-EUS2`」を指定します。
 
     ![WCF Web アプリのステージ名のスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline9.png)
 
 1. ステージ下で、 **[1 個のジョブ、1 個のタスク]** を選択して WCF サービスのデプロイを構成します。
 
-    ![[1 個のジョブ、1 個のタスク] オプションのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline10.png)
+    ![**[1 個のジョブ、1 個のタスク]** オプションのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline10.png)
 
 1. サブスクリプションが選択および承認されていることを確認し、 **[App Service の名前]** を選択します。
 
@@ -346,7 +347,7 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
 1. パイプラインで **[成果物]** 、 **[+ 成果物の追加]** の順に選択し、ソースの種類に **[ビルド]** を選択して、`ContosoSmarthotel360Refactor` パイプラインを使用してビルドします。
 
-     ![[Add an artifact]\(成果物の追加\) ペインの [ビルド] ボタンのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline12.png)
+     ![**[成果物の追加]** ペインの [ビルド] ボタンのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline12.png)
 
 1. 継続的デプロイ トリガーを有効にするために、管理者が成果物の稲妻アイコンを選択します。
 
@@ -358,19 +359,19 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
 1. 管理者は、ステージ **[1 個のジョブ、1 個のタスク]** に戻り、 **[Deploy Azure App Service]\(Azure App Service のデプロイ\)** を選択します。
 
-    ![[Deploy Azure App Service]\(Azure App Service のデプロイ\) を選択するオプションのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline15.png)
+    ![**[Deploy Azure App Service]\(Azure App Service のデプロイ\)** を選択するオプションのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline15.png)
 
 1. **[Select a file or folder]\(ファイルまたはフォルダーの選択\)** で **drop** フォルダーを展開し、ビルド中に作成された `SmartHotel.Registration.Wcf.zip` ファイルを選択して、 **[保存]** を選択します。
 
-    ![WCF ファイルを選択するための [Select a file or folder]\(ファイルまたはフォルダーの選択\) ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
+    ![WCF ファイルを選択するための **[Select a file or folder]\(ファイルまたはフォルダーの選択\)** ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
 
 1. **[パイプライン]**  >  **[ステージ]** の順に選択し、 **[+ 追加]** を選択して、`SHWEB-EUS2` 用の環境を追加します。 別の Azure App Service のデプロイを選択します。
 
-    ![環境を追加するための [1 個のジョブ、1 個のタスク] リンクのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
+    ![環境を追加するための **[1 個のジョブ、1 個のタスク]** リンクのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
 
-1. このプロセスを繰り返して Web アプリの *SmartHotel.Registration.Web.zip* ファイルを適切な Web アプリに発行し、 **[保存]** を選択します。
+1. このプロセスを繰り返して Web アプリの `SmartHotel.Registration.Web.zip` ファイルを適切な Web アプリに発行し、 **[保存]** を選択します。
 
-    ![Web ファイルを選択するための [Select a file or folder]\(ファイルまたはフォルダーの選択\) ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline18.png)
+    ![Web ファイルを選択するための **[Select a file or folder]\(ファイルまたはフォルダーの選択\)** ペインのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline18.png)
 
     次のリリース パイプラインが表示されます。
 
@@ -378,11 +379,11 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
 1. **[ビルド]** に戻り、 **[トリガー]** を選択して、 **[継続的インテグレーションを有効にする]** チェック ボックスをオンにします。 この操作でパイプラインが有効になり、変更がコードに対してコミットされると、フル ビルドとリリースが行われます。
 
-    ![[継続的インテグレーションを有効にする] チェック ボックスを強調表示した画面のスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline20.png)
+    ![**[継続的インテグレーションを有効にする]** チェック ボックスを強調表示した画面のスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline20.png)
 
 1. **[保存してキューに登録]** を選択し、フル パイプラインを実行します。 新しいビルドがトリガーされ、続いてアプリケーションの最初のリリースが Azure App Service に対して作成されます。
 
-    ![[保存してキューに登録] ボタンのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline21.png)
+    ![**[保存してキューに登録]** ボタンのスクリーンショット。](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline21.png)
 
 1. Contoso 管理者は、Azure DevOps からビルドとリリース パイプラインのプロセスに従うことができます。 ビルドの完了後、リリースが開始されます。
 
@@ -415,7 +416,7 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 ### <a name="backups"></a>バックアップ
 
 - Contoso チームは、Azure SQL Managed Instance のデータベースのバックアップ要件を確認します。 [詳細については、こちらを参照してください](/azure/azure-sql/database/automated-backups-overview)。
-- また、SQL Database のバックアップと復元の管理について確認します。 自動バックアップについては、[こちら](/azure/azure-sql/database/automated-backups-overview)をご覧ください。
+- また、SQL Database のバックアップと復元の管理について確認します。 [自動バックアップ](/azure/azure-sql/database/automated-backups-overview)の詳細をご覧ください。
 - データベースのリージョン内フェールオーバーを提供するようにフェールオーバー グループの実装を検討します。 [詳細については、こちらを参照してください](/azure/azure-sql/database/auto-failover-group-overview)。
 - 回復性を高めるために、メイン リージョン (`East US 2`) とセカンダリ リージョン (`Central US`) に Web アプリをデプロイすることを検討します。 チームはリージョンの障害が発生しても確実にフェールオーバーされるように Traffic Manager を構成することができます。
 
@@ -423,7 +424,7 @@ Contoso の管理者は、Web アプリとデータベースが互いに通信�
 
 - すべてのリソースをデプロイした後、Contoso は[インフラストラクチャ計画](./contoso-migration-infrastructure.md#set-up-tagging)に基づいて Azure タグを割り当てます。
 - すべてのライセンスは、Contoso が使用している PaaS サービスのコストに組み込まれています。 このコストは Enterprise Agreement から差し引かれます。
-- Contoso は [Azure Cost Management と Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
+- Contoso は [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
 
 ## <a name="conclusion"></a>まとめ
 

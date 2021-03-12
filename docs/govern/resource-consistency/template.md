@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 940b5be82ec811bd74dec5cbef80d9543d62a1ce
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 41d8caf89a054d5e0c63a77b674738b7e24d29b5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019300"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790716"
 ---
 # <a name="resource-consistency-discipline-template"></a>リソースの整合性規範テンプレートの概要
 
-変更を実装するための最初の手順は、必要なものを伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウドでの IT 運用および管理を管理するポリシー ステートメントを文書化して伝達するための開始点として機能します。
+変更を実装するための最初の手順は、必要なものを伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 以下のテンプレートは、クラウドでの IT 運用および管理を管理するポリシー ステートメントを文書化して伝達するための開始点として機能します。
 
 議論が進んだら、このテンプレートの構造を、ビジネス リスク、リスク許容度、コンプライアンス プロセス、および組織のリソース整合性ポリシー ステートメントを定義するために必要なツールをキャプチャするためのモデルとして使用してください。
 

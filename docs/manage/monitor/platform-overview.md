@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 5b5b5318baed959387540b65580d69d1877ccad2
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 3d8fc4b224992abdd4f4354adea19eceb64aa25e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631731"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785072"
 ---
 <!-- docutune:casing "Squared Up" -->
 <!-- cSpell:ignore opsman ITSM -->
@@ -28,7 +28,7 @@ Microsoft では、2 つの製品からさまざまな監視機能を提供し�
 
 ## <a name="the-story-of-system-center-operations-manager"></a>System Center Operations Manager のストーリー
 
-Microsoft は 2000 年に Microsoft Operations Manager 2000 で運用管理の分野に参入しました。 2007 年には、その製品のリエンジニア バージョンである System Center Operations Manager を導入しました。 これは、Windows サーバーの単純な監視にとどまらず、異種プラットフォーム、ネットワーク デバイス、他のアプリケーションやサービスの依存関係など、サービスとアプリケーションの堅牢なエンド ツー エンドの監視に注力したものでした。 これは、業界において IBM Tivoli や HP Operations Manager と同じクラスに属する、確立されたエンタープライズ レベルのオンプレミス環境向け監視プラットフォームでした。 それが、Azure、アマゾン ウェブ サービス (AWS)、およびその他のクラウド プロバイダーで実行されているコンピューティングとプラットフォームのリソースの監視をサポートするように拡大してきました。
+Microsoft は 2000 年に Microsoft Operations Manager 2000 で運用管理の分野に参入しました。 2007 年には、その製品のリエンジニア バージョンである System Center Operations Manager を導入しました。 これは、Windows Server インスタンスの単なる監視にとどまらず、異種プラットフォーム、ネットワーク デバイス、その他のアプリケーションやサービスの依存関係を含むサービスおよびアプリケーションの、堅牢なエンドツーエンドの監視に注力したものでした。 これは、業界において IBM Tivoli や HP Operations Manager と同じクラスに属する、確立されたエンタープライズ レベルのオンプレミス環境向け監視プラットフォームでした。 それが、Azure、アマゾン ウェブ サービス (AWS)、およびその他のクラウド プロバイダーで実行されているコンピューティングとプラットフォームのリソースの監視をサポートするように拡大してきました。
 
 ## <a name="the-story-of-azure-monitor"></a>Azure Monitor のストーリー
 
@@ -109,7 +109,7 @@ Operations Manager は、ワークフロー (ルール、モニター、およ�
 
 #### <a name="data-sources"></a>データ ソース
 
-Azure Monitor では、Azure のインフラストラクチャとプラットフォームのリソース、Windows コンピューターと Linux コンピューター上のエージェント、Azure ストレージ内に収集された監視データなど、さまざまなソースからデータが収集されます。 任意の REST クライアントで API を使用して Azure Monitor にログ データを書き込むことができ、お使いの Web アプリケーション用にカスタム メトリックを定義できます。 一部のメトリックデータは、その用途に応じて異なる場所にルーティングできます。 たとえば、データを "可能な限り迅速な" アラートに使用したり、他のログ データと組み合わせた長期的な傾向分析検索に使用したりできます。
+Azure Monitor では、Azure のインフラストラクチャおよびプラットフォーム リソース、Windows および Linux コンピューター上のエージェント、Azure Storage 内で収集された監視データなど、さまざまなソースからデータが収集されます。 任意の REST クライアントで API を使用して Azure Monitor にログ データを書き込むことができ、お使いの Web アプリケーション用にカスタム メトリックを定義できます。 一部のメトリックデータは、その用途に応じて異なる場所にルーティングできます。 たとえば、データを "可能な限り迅速な" アラートに使用したり、他のログ データと組み合わせた長期的な傾向分析検索に使用したりできます。
 
 #### <a name="monitoring-solutions-and-insights"></a>監視ソリューションと分析情報
 

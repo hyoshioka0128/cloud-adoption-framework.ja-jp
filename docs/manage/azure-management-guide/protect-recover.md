@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: f4a28779dafb5d89390a44d273bc0b90966bc8eb
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: af73cfe2b5bedfa414968f43193d3fc252268f10
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97017260"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790427"
 ---
 <!-- docutune:ignore "provide advanced threat protection" -->
 
 # <a name="protect-and-recover-in-azure"></a>Azure での保護と復旧
 
-"_保護と復旧_" は、すべてのクラウド管理ベースラインにおいて 3 つ目の、そして最後の分野です。
+"*保護と復旧*" は、すべてのクラウド管理ベースラインにおいて 3 つ目の、そして最後の分野です。
 
 ![クラウド管理ベースライン](../../_images/manage/management-baseline.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "97017260"
 
 Azure Backup では、ご自身のデータを Microsoft Cloud 内でバックアップ、保護、および復旧できます。 Azure Backup によって、既存のオンプレミスまたはオフサイトのバックアップ ソリューションがクラウドベースのソリューションに置き換えられます。 この新しいソリューションは、信頼性が高く、セキュリティで保護され、コスト競争力を備えています。 Azure Backup では、1 つの一貫したソリューションを通じてオンプレミスの資産を保護および復旧することもできます。
 
-Azure に存在するデータに対して、Azure Backup にはさまざまなレベルの保護が用意されています。 たとえば、Azure Virtual Machines や Azure Files など、クラウド インフラストラクチャの重要な要素をバックアップする場合は、[Azure Virtual Machines バックアップ](/azure/backup/backup-azure-vms-introduction)と [Azure Files バックアップ](/azure/backup/azure-file-share-backup-overview)が提供されます。 Azure Virtual Machines で実行されるデータベースなど、より重要なコンポーネントの場合は、[MS SQL](/azure/backup/backup-azure-sql-database) および [SAP HANA](/azure/backup/sap-hana-db-about) 専用のデータベース バックアップ ソリューションが大幅に低い RPO で提供されます。
+Azure に存在するデータに対して、Azure Backup にはさまざまなレベルの保護が用意されています。 たとえば、Azure Virtual Machines や Azure Files など、クラウド インフラストラクチャの重要な要素をバックアップする場合は、[Azure Virtual Machines バックアップ](/azure/backup/backup-azure-vms-introduction)と [Azure Files バックアップ](/azure/backup/azure-file-share-backup-overview)が提供されます。 Azure Virtual Machines で実行されるデータベースなど、より重要なコンポーネントの場合は、[SQL Server](/azure/backup/backup-azure-sql-database) および [SAP HANA](/azure/backup/sap-hana-db-about) 専用のデータベース バックアップ ソリューションが大幅に低い RPO で提供されます。
 
 Azure Backup でバックアップを有効にすることがいかに簡単であるかを知るために、次のセクションを参照して、Azure Virtual Machines のバックアップを有効にします。
 

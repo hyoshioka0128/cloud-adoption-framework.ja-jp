@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: cfd2587c3b45de7021755916c8913b26bd6a13f3
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: a0d88b3f6c308c531fd9128e4861babd0769131b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632581"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786211"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -22,7 +22,7 @@ ms.locfileid: "100632581"
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure エンタープライズ スキャフォールディング:サブスクリプションの規範的なガバナンス
 
 > [!NOTE]
-> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在はこの新しいフレームワークの「[準備完了](../ready/index.md) 」セクションに移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスを使い始めるには、[準備の概要](../ready/index.md)、[Azure ランディング ゾーン](../ready/landing-zone/index.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
+> Azure エンタープライズ スキャフォールディングは、Microsoft Cloud Adoption Framework に統合されています。 この記事の内容は、現在ではフレームワークの「[準備手法](../ready/index.md)」に移されています。 この記事は、2020 年前半に非推奨になる予定です。 新しいプロセスを使い始めるには、[準備手法の概要](../ready/index.md)、[Azure ランディング ゾーン](../ready/landing-zone/index.md)、[ランディング ゾーンに関する考慮事項](../ready/considerations/index.md)に関するページを参照してください。
 
 俊敏性と柔軟性を求めてパブリック クラウドを採用する企業がますます増えています。 これらの企業は、収益を生み出したり、ビジネスのリソース使用状況を最適化したりするために、クラウドの強みに依存しています。 Microsoft Azure は、企業がさまざまなワークロードやアプリケーションに対応するためにブロックのように組み立てることができる多数のサービスと機能を提供しています。
 
@@ -172,7 +172,7 @@ Azure Resource Manager では、管理、課金、または自然なアフィニ
 
 リソースへのアクセスをセキュリティで保護するには、まず ID プロバイダーを構成してから、ロールとアクセス権を構成します。 オンプレミスの Active Directory に接続している Azure Active Directory (Azure AD) は、Azure Identity の基盤です。 ただし、Azure AD はオンプレミスの Active Directory と同じでは **ありません**。Azure AD テナントとは何か、加入契約とどのように関連しているかを理解することが重要です。 [Azure でのリソース アクセス管理](../govern/resource-consistency/resource-access-management.md)について確認し、Azure AD とオンプレミスの Active Directory についてよく理解してください。 オンプレミスのディレクトリを Azure AD に接続して同期するには、[Azure AD Connect ツール](/azure/active-directory/connect/active-directory-aadconnect)をオンプレミスにインストールして構成します。
 
-![AD アーキテクチャの図](../_images/reference/ad-architecture.png)
+![Active Directory アーキテクチャの図](../_images/reference/ad-architecture.png)
 
 Azure が最初にリリースされたときには、サブスクリプションに対するアクセス制御が基本でした (管理者または共同管理者)。 クラシック モデルでのサブスクリプションへのアクセスは、ポータルでのすべてのリソースへのアクセスを意味していました。 きめ細かく制御することができなかったため、加入契約に一定レベルの妥当なアクセスの制御を提供するためにサブスクリプションが急増しました。 このようにサブスクリプションを急増させる必要はなくなりました。 Azure ロールベースのアクセス制御 (Azure RBAC) では、"所有者"、"共同作成者"、"閲覧者" など一般的なアクセス権を提供する標準ロールをユーザーに割り当てることができます。独自のロールを作成することもできます。
 
@@ -188,7 +188,7 @@ Azure ロールベースのアクセス制御を実装するとき、次を強�
 
 ID およびアクセス制御について計画を立てて準備すること、および [Azure Identity Management のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)に従うことは、採用できる最適なリスク軽減戦略の 1 つであり、すべてのデプロイにおいて必須と考える必要があります。
 
-## <a name="security"></a>セキュリティ
+## <a name="security"></a>Security
 
 従来、クラウド導入の最大の障壁の 1 つは、セキュリティに対する懸念でした。 IT リスク マネージャーとセキュリティ部門は、Azure 内のリソースのセキュリティが既定で保護されており安全であることを保証する必要があります。 Azure には、リソースを保護しながら、リソースに対する脅威を検出して排除するために使用できる機能があります。
 

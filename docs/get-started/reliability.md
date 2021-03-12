@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: a42115e034e0f737e05feedad44cd5c0c777317f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f20091fbd5c142c6f70024f6647c5977e7456349
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022343"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792994"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>作業を開始しましょう。適切な管理によって信頼性を向上させる
 
@@ -52,7 +52,7 @@ ms.locfileid: "97022343"
   - [運用のコンプライアンス](../manage/considerations/operational-compliance.md):機能停止の大部分は、リソースの構成に対する変更や不適切なメンテナンス プラクティスから生じる傾向があります。 [Azure サーバー管理ガイド](../manage/azure-server-management/index.md)に従ってクラウドネイティブのツールを実装し、リソースの構成に対する変更やパッチを管理してください。
   - [保護と回復](../manage/considerations/protect.md): どのプラットフォームでも機能停止は必ず起きるものです。 [バックアップと回復のソリューション](../manage/azure-management-guide/protect-recover.md)で備え、中断が発生しても中断時間が最小限で済むようにしてください。
 - [高度な運用](../manage/design-principles.md): [ビジネス アラインメント](../manage/considerations/business-alignment.md)に関する会話の基盤として、管理ベースラインを使用します。 [重要度](../manage/considerations/criticality.md)、[ビジネスへの影響](../manage/considerations/impact.md)、[運用上のコミットメント](../manage/considerations/commitment.md)について明確に説明するのに役立ちます。 ビジネス アラインメントを通じて、[ベースラインの改善](../manage/azure-management-guide/enhanced-baseline.md)、特定の[テクノロジ プラットフォーム](../manage/azure-management-guide/workload-specialization.md)の管理、[ワークロード固有の運用](../manage/azure-management-guide/platform-specialization.md)への要求を定量化して検証することができます。
-- **アーキテクチャ レビューのガイド:** 運用上の要件を満たすために、ワークロード レベルでのアーキテクチャの変更が必要になる場合があります。 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs) と [Microsoft Azure Well-Architected Review](/assessments?id=azure-architecture-review) は、特定のワークロードの技術所有者との対話を導くのに役立ちます。
+- **アーキテクチャ レビューのガイド:** 運用上の要件を満たすために、ワークロード レベルでのアーキテクチャの変更が必要になる場合があります。 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs) と [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review) は、特定のワークロードの技術所有者との対話を導くのに役立ちます。
 
 <br>
 

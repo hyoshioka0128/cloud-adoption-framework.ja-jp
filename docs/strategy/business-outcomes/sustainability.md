@@ -1,19 +1,19 @@
 ---
 title: ビジネスにおける持続可能性の成果と利点
 description: クラウド導入フレームワークとクラウド コンピューティングを使用して、二酸化炭素排出量の削減、資源の効率的な使用、環境フットプリントの削減を実現する方法を確認します。
-author: wayneme75
+author: mpvenables
 ms.author: brblanch
-ms.date: 10/21/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.custom: think-tank
-ms.openlocfilehash: c4dc771a9e5d72b2c552f93c08b7cb70ac205f95
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.custom: internal
+ms.openlocfilehash: 4b9b249e305a38987fac2450897c888d31b21e05
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492716"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784579"
 ---
 <!-- docutune:casing AGL WSP -->
 <!-- cSpell:ignore AGL Bee'ah WSP -->
@@ -23,10 +23,17 @@ ms.locfileid: "100492716"
 クラウドの影響と利点は、従来、財務と効率性のメトリックで測定されてきました。しかし、一般的になってきていることとして、顧客は、持続可能性と環境の目標を達成するためにクラウドがどのように役立つかを理解しようと努めています。 クラウド コンピューティングを使用すると、二酸化炭素排出量の削減、資源の効率的な使用、環境フットプリントの削減を実現できます。
 
 次のビデオから、持続可能性に関する詳細と、クラウド移行によって、地球に優しく、会社に優しい、持続可能なソリューションへの扉を開く方法についてご覧ください。
+<!-- markdownlint-disable MD034 -->
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWx4po]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWx4po]
+
+<!-- markdownlint-enable MD034 -->
 
 Microsoft は、これらの分野の多くで主要な役割を担ってきました。 2012 年以降、弊社はカーボン ニュートラルであり、2030 年までに二酸化炭素の収支をマイナスにすることに取り組んでいます。 [クラウド コンピューティングが二酸化炭素に関してもたらす利点](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf)について、WSP と協力して行っている Microsoft クラウドの研究で示されています。これは、オンプレミス データセンターから Microsoft クラウドへの移行によって、どのようにカーボン フットプリントが大幅に削減されるかに関する調査に寄与しています。
+
+<!-- docutune:casing "Bühler Insights" -->
+
+Bühler Insights とも呼ばれる、Azure IoT Hub を採用した [Bühler Group の](https://customers.microsoft.com/story/730776-buhler-group-consumer-goods-azure-iot-germany) IoT プラットフォームでは極めて重要なデータが生成されており、顧客はマシンのパフォーマンスを監視するとともに、すべての製品バッチに対する正確なレコードを生成できるようになるため、食品製造業者がサプライチェーン全体の安全性、持続可能性、透明性を最適化するのに役立ちます。
 
 ## <a name="the-microsoft-sustainability-journey"></a>Microsoft の持続可能性への取り組み
 
@@ -37,7 +44,7 @@ Microsoft の取り組みは、10 年以上前に弊社が新しいビジネス 
 - **水:** 使用量を削減し、水を管理するためのテクノロジに投資しています。
 - **廃棄物:** 責任ある調達、リサイクル、廃棄を実践し、ソフトウェアとテクノロジを使用して建物の効率をさらに高めています。
 
-Microsoft による[惑星規模の課題への取り組み](https://www.microsoft.com/sustainability/approach)が、持続可能性の目標を立てて実現するのにどのように役立つかについて詳細をお読みください。
+Microsoft による[惑星規模の課題への取り組み](https://www.microsoft.com/sustainability/approach)が、持続可能性の目標設定と実現にどう役立つかについての詳細をお読みください。
 
 ## <a name="examples-of-sustainability-outcomes"></a>持続可能性の成果の例
 
@@ -57,7 +64,7 @@ Bee'ah は、中東の持続可能性の先駆者で、将来に向けたソリ�
 
 **手順 2:** ベンダー、パートナー、プロバイダーが排出量を削減するための手段を講じているかどうかを確認し、これらの手段がお客様に合っているかどうかを評価します。
 
-**手順 3:** 二酸化炭素排出量を削減するため、チームに対してインセンティブを作成します。 「[Microsoft の炭素税:理論と実践](https://download.microsoft.com/documents/en-us/csr/environment/microsoft_carbon_fee_guide.pdf)」は、組織におけるチーム全体の連携と責任を推進するのに役立ちます。
+**手順 3:** 二酸化炭素排出量を削減するため、チームに対してインセンティブを作成します。 「[Microsoft の炭素税: 理論と実践](https://download.microsoft.com/documents/en-us/csr/environment/microsoft_carbon_fee_guide.pdf)」ガイドは、組織におけるチーム全体の連携と責任を推進するのに役立ちます。
 
 **手順 4:** Microsoft のビジネス チームに連絡し、そのサポートを得て、改善すべき分野に関するアイデアを生み出します。 各自が当事者意識を持つ参加者であるイノベーション カルチャを構築します。
 

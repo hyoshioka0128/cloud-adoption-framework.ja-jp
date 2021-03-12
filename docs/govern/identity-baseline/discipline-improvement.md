@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: b7f40bd5a4eca62b3712c0a9b6073512edbdb374
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: a94d1d04f3c0bea3f1b9b6ca45e6e50eb66743cc
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712846"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790818"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>ID ベースライン規範の改良
 
@@ -21,9 +21,8 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 
 この記事では、会社が ID ベースライン規範をより適切に開発し、成熟させるために実行できるいくつかの潜在的なタスクの概要について説明します。 これらのタスクは、クラウド ソリューション実装の計画、構築、導入、および運用フェーズに分類できます。これらのフェーズは繰り返され、[クラウド ガバナンスへの増分アプローチ](../guides/index.md#an-incremental-approach-to-cloud-governance)を開発できるようになります。
 
-![クラウド ガバナンスに対する増分型アプローチのフェーズ](../../_images/govern/adoption-phases.png)
-
-"_図 1:クラウド ガバナンスに対する増分型アプローチのフェーズ。_ "
+![クラウド ガバナンスへの段階的なアプローチのフェーズ](../../_images/govern/adoption-phases.png)
+*図 1: クラウド ガバナンスへの段階的なアプローチのフェーズ*
 
 1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、段階的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、ID ベースライン規範を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
 
@@ -132,7 +131,7 @@ ID ベースライン規範では、アプリケーションまたはワーク�
 - 開発セキュリティ運用 (DevSecOps) アプローチの実装を検討します。
 - 影響分析を実施して、コスト、セキュリティ、およびユーザー導入に関する結果を測定します。
 - システムによって作成されるメトリックの変化を示す影響レポートを定期的に生成し、[ハイブリッド ID 戦略](../../decision-guides/identity/index.md)のビジネスへの影響を推定します。
-- [Azure Security Center](/azure/security-center/security-center-intro) によって推奨されている統合された監視を確立します。
+- [Azure Security Center](/azure/security-center/security-center-introduction) によって推奨されている統合された監視を確立します。
 
 ## <a name="next-steps"></a>次のステップ
 

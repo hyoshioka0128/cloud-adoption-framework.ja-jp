@@ -1,6 +1,6 @@
 ---
 title: Azure Migrate を使用してアプリケーションを Azure VM にリホストする
-description: Contoso が、Azure Migrate サービスを使用して Azure へのオンプレミス マシンのリフトアンドシフト移行を実行し、オンプレミス アプリをリホストする方法について説明します。
+description: Contoso が、Azure Migrate サービスを使用して Azure へのオンプレミス マシンのリフトアンドシフト移行を実行し、オンプレミス アプリケーションを再ホストする方法について説明します。
 author: givenscj
 ms.author: abuck
 ms.date: 07/01/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 9602b4921249c13cc34d23fcf8a44f75b65b6251
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: e64e5b4318dd2d4be0881e96eec022a3518013cb
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631442"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785616"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "100631442"
 
 この記事では、Contoso という架空の会社が、アプリケーション VM を Azure VM に移行することによって、VMware 仮想マシン (VM) 上で実行されている 2 層の Windows .NET フロントエンド アプリケーションをリホストする方法について説明します。
 
-この例で使用される SmartHotel360 アプリケーションは、オープンソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
+この例で使用される SmartHotel360 アプリケーションは、オープンソース ソフトウェアとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/Microsoft/SmartHotel360) からダウンロードできます。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
@@ -92,7 +92,7 @@ Contoso は、Azure Migrate のエージェントレス方式を使用して、�
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Migrate: Server Migration](/azure/cloud-adoption-framework/migrate/) | このサービスでは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) と Google Cloud Platform (GCP) VM のインスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われ、VM が Azure で実行されている場合、Azure VM が作成され、料金が発生します。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate/)の詳細をご覧ください。  |
+| [Azure Migrate: Server Migration](../index.md) | このサービスでは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) と Google Cloud Platform (GCP) VM のインスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われ、VM が Azure で実行されている場合、Azure VM が作成され、料金が発生します。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate/)の詳細をご覧ください。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -304,9 +304,8 @@ Contoso セキュリティ チームは、Azure VM を調査して、セキュ�
 
 Contoso は VM の既存のライセンスを所有しているので、Azure ハイブリッド特典を活用します。 Contoso は、この特典を活用するために、既存の Azure VM を変換します。
 
-Contoso は、[Azure Cost Management および Billing](/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理を支援します。
+Contoso は、[Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理に役立てます。
 
 ## <a name="conclusion"></a>まとめ
 
-この記事では、Contoso が SmartHotel360 アプリケーションを Azure にリホストしました。 管理者は、Azure Migrate を使用して、アプリケーション VM を Azure VM に移行しました。サーバー移行ツール。
-また、[DevOps ジェネレーター](https://aka.ms/adopt/plan/generator)で公開されている Azure DevOps プロジェクトを参照することもできます。 ジェネレーターで、クラウド導入フレームワークのナビゲーションの下にある[サーバー移行プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)をダウンロードします。
+この記事では、Contoso が SmartHotel360 アプリケーションを Azure にリホストしました。 管理者は、Azure Migrate を使用して、アプリケーション VM を Azure VM に移行しました。サーバー移行ツール。 また、[DevOps ジェネレーター](https://aka.ms/adopt/plan/generator)で公開されている Azure DevOps プロジェクトを確認することもできます。 ジェネレーターで、クラウド導入フレームワークのナビゲーションの下にある[サーバー移行プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration)をダウンロードします。

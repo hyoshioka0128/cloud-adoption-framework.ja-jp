@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 030c036b41532c1cc55321ebcfe4c352a66e9775
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 5373e8e4074198db48ab494a2c735e6b5e207c95
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631527"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785089"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
@@ -81,9 +81,8 @@ Contoso は、長所と短所の一覧をまとめて、提案された設計を
 
 ## <a name="proposed-architecture"></a>提案されたアーキテクチャ
 
-![シナリオ アーキテクチャの図。](./media/contoso-migration-postgresql-to-azure/architecture.png)
-
-"_図 1:シナリオのアーキテクチャ_
+![シナリオのアーキテクチャの図。](./media/contoso-migration-postgresql-to-azure/architecture.png)
+*図 1: シナリオのアーキテクチャ。*
 
 ### <a name="migration-process"></a>移行プロセス
 
@@ -95,7 +94,7 @@ Contoso は、PostgreSQL データベースを移行する前に、自社のイ�
 
 同じバージョンまたはそれ以降のバージョンへの移行のみがサポートされます。 PostgreSQL 9.5 から Azure Database for PostgreSQL 9.6 または 10 への移行はサポートされますが、PostgreSQL 11 から PostgreSQL 9.6 への移行はサポートされません。
 
-Microsoft では、Azure Database for PostgreSQL - 単一サーバーでの PostgreSQL エンジンの _n-2_ バージョンのサポートを予定しています。 バージョンは、Azure の現在のメジャー バージョン (_n_) とその前の 2 つのメジャー バージョン ( _-2_) です。
+Microsoft では、Azure Database for PostgreSQL - 単一サーバーでの PostgreSQL エンジンの *n-2* バージョンのサポートを予定しています。 バージョンは、Azure の現在のメジャー バージョン (*n*) とその前の 2 つのメジャー バージョン ( *-2*) です。
 
 サポートされているバージョンの最新情報については、「[サポートされる PostgreSQL のメジャー バージョン](/azure/postgresql/concepts-supported-versions)」をご覧ください。
 
@@ -116,7 +115,7 @@ Contoso では、レプリケーションの問題について、現在のデー
 - 同じ名前であっても大文字と小文字が異なる複数のテーブルを移行すると、予期しない動作が発生する可能性があります。
 
   ![移行プロセスの図。](./media/contoso-migration-postgresql-to-azure/migration-process.png)
-  _図 2: 移行プロセス_
+  *図 2: 移行プロセス*
 
 #### <a name="migration"></a>移行
 
@@ -145,7 +144,7 @@ Contoso は、メジャーからメジャーへのアップグレードを実行
 1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
     ![**[移行サービスの作成]** ページのスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_create.png)
-    "_図 3:確認と作成_
+    "*図 3:確認と作成*
 
 1. **［作成］** を選択します
 
@@ -193,8 +192,7 @@ Contoso は、メジャーからメジャーへのアップグレードを実行
 1. **[新しい移行プロジェクト]** を選択します。
 
     ![[新しい移行プロジェクト] オプションが強調表示されているスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_new_project.png)
-
-    "_図 4:新しい移行の開始。_
+    "*図 4:新しい移行の開始。*
 
 1. **[新しいアクティビティ]**  >  **[オンライン データの移行]** の順に選択します。
 1. 名前を入力します。
@@ -202,50 +200,49 @@ Contoso は、メジャーからメジャーへのアップグレードを実行
 1. ターゲットについては、 **[Azure Database for PostgreSQL]** を選択し、 **[保存]** を選択します。
 
     ![[新しい移行プロジェクト] ペインを示すスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_new_project02.png)
-
-    _図 5:新しい移行プロジェクトが強調表示されています。_
+    *図 5:新しい移行プロジェクトが強調表示されています。*
 
 1. ソース情報を入力し、 **[保存]** を選択します。
 
     ![ソース情報の入力を示すスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_source.png)
-    _図 6:ソース情報の入力。_
+    *図 6:ソース情報の入力。*
 
 1. ターゲット情報を入力し、 **[保存]** を選択します。
 
     ![ターゲット情報の選択を示すスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_target.png)
-    _図 7:ターゲット情報の選択。_
+    *図 7:ターゲット情報の選択。*
 
 1. 移行するデータベースを選択します。 各データベースのスキーマは、以前に移行されているはずです。 次に、 **[保存]** を選択します。
 
     ![データベースの選択を示すスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_db.png)
-    _図 8:データベースの選択。_
+    *図 8:データベースの選択。*
 
 1. 詳細設定を構成し、 **[保存]** を選択します。
 
     ![詳細設定の構成を示すスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_advanced.png)
-    _図 9:詳細設定の構成。_
+    *図 9:詳細設定の構成。*
 
 1. アクティビティに名前を付け、 **[実行]** を選択します。
 
     ![アクティビティの名前付けと実行を示すスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_summary.png)
-    _図 10:アクティビティの名前付けと実行。_
+    *図 10:アクティビティの名前付けと実行。*
 
 1. 移行を監視する。 なんらかのエラーが発生した場合は再試行します。 たとえば、外部キー参照が見つからない場合などです。
 1. `Full load completed` がテーブル数と一致したら、 **[一括で開始]** を選択します。
 
     ![一括を開始するための移行の監視を示すスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_complete.png)
-    _図 11:カットオーバーを開始するための移行の監視。_
+    *図 11:カットオーバーを開始するための移行の監視。*
 
 1. ソース サーバーからのすべてのトランザクションを停止します。
 1. **[確認]** チェック ボックスをオンにし、 **[適用]** を選択します。
 
     ![一括の実行を示すスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_cutover.png)
-    _図 12:カットオーバーの実行。_
+    *図 12:カットオーバーの実行。*
 
 1. カットオーバーが完了するまで待ちます。
 
     ![一括の完了を示すスクリーンショット。](./media/contoso-migration-postgresql-to-azure/azure_migration_service_finished.png)
-    _図 13:カットオーバーの完了。_
+    *図 13:カットオーバーの完了。*
 
       > [!NOTE]
       > 上記の Database Migration Service の手順は、[Azure CLI](/azure/dms/tutorial-postgresql-azure-postgresql-online) を使用して実行することもできます。
@@ -277,7 +274,7 @@ Contoso は次のことを行う必要があります。
 - データの暗号化のために [BYOK](/azure/postgresql/concepts-data-encryption-postgresql) を実装します。
 - データベースへの [SSL 接続を要求する](/azure/postgresql/concepts-ssl-connection-security)ように、すべてのアプリケーションを更新します。
 - [Private Link](/azure/postgresql/concepts-data-access-and-security-private-link) を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
-- [Azure Advanced Threat Protection (ATP)](/azure/postgresql/concepts-data-access-and-security-threat-protection) を有効にします。
+- [Microsoft Defender for Identity](/azure/postgresql/concepts-data-access-and-security-threat-protection) を有効にします。
 - 対象のセキュリティおよびログ エントリを監視し、アラートを生成するように Log Analytics を構成します。
 
 ### <a name="backups"></a>バックアップ

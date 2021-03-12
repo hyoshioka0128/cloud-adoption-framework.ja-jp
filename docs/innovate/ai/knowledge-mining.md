@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 10baaefc8b06b46b918beb4e08c27ecc188e6e90
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 32942357902adfd51d9a32c51852ecdabf272742
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174337"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791107"
 ---
 # <a name="knowledge-mining"></a>ナレッジ マイニング
 
@@ -34,12 +34,12 @@ Azure Cognitive Search は、Web アプリケーション、モバイル アプ�
 - **概要:** 無料のナレッジ マイニング ソリューション アクセラレータ、ブート キャンプ、ワークショップにアクセスします。
 
   - [ナレッジ マイニング ソリューション アクセラレータ](https://github.com/Azure-Samples/azure-search-knowledge-mining)
-  - [ナレッジ マイニング ワークショップ](https://github.com/Azure-Samples/azure-search-knowledge-mining/tree/master/workshops)
+  - [ナレッジ マイニング ワークショップ](https://github.com/Azure-Samples/azure-search-knowledge-mining/tree/main/workshops)
   - [ナレッジ マイニング ブート キャンプ](https://github.com/MicrosoftLearning/LearnAI-KnowledgeMiningBootcamp)
   - [ナレッジ マイニングに関する電子書籍](https://azure.microsoft.com/resources/a-developers-guide-to-building-ai-driven-knowledge-mining-solutions/)
-  - [ナレッジマイニング Azure DevOps プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine): サインインして、導入フレームワークのナビゲーションに移動し、[ナレッジマイニング] を選択します。 
+  - [ナレッジ マイニング Azure DevOps プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine): サインインして、クラウド導入フレームワークのナビゲーションに移動し、 **[ナレッジ マイニング]** を選択します。
 
-- **Power Skills を使用する:** [Azure Search Power Skills](https://github.com/Azure-Samples/azure-search-power-skills) には、Azure Cognitive Search のカスタム スキルとしてデプロイできる便利な機能が用意されています。 スキルは、独自のカスタム スキルの[テンプレート](https://github.com/Azure-Samples/azure-search-power-skills/blob/master/Template/HelloWorld/README.md)または開始点として使用できます。 また、これらが要件を満たしている場合には、そのまま展開して使用することもできます。 また、[pull request](https://github.com/Azure-Samples/azure-search-power-skills/compare) を送信して独自のものを投稿することもできます。
+- **Power Skills を使用する:** [Azure Search Power Skills](https://github.com/Azure-Samples/azure-search-power-skills) には、Azure Cognitive Search のカスタム スキルとしてデプロイできる便利な機能が用意されています。 スキルは、独自のカスタム スキルの[テンプレート](https://github.com/Azure-Samples/azure-search-power-skills/blob/main/Template/HelloWorld/README.md)または開始点として使用できます。 また、これらが要件を満たしている場合には、そのまま展開して使用することもできます。 また、[pull request](https://github.com/Azure-Samples/azure-search-power-skills/compare) を送信して独自のものを投稿することもできます。
 
 - **その他のリソースを調べる:**
 

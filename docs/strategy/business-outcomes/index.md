@@ -1,19 +1,19 @@
 ---
 title: 変換の取り組みによるビジネス成果
 description: Azure のクラウド導入フレームワークを使用して、クラウド変換に関連するビジネスの成果を理解します。
-author: BrianBlanchard
+author: mpvenables
 ms.author: brblanch
-ms.date: 10/28/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: e175460e3e8464e10dacdd809e27e7ebb1647e8c
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4ddf022edeb995b77dd219a3016fbf967abe459b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013027"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787894"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>変革の取り組みに関連するビジネス成果
 
@@ -22,6 +22,12 @@ ms.locfileid: "97013027"
 どのクラウド変換の間も、ビジネス成果の観点で話すことができるため、透明性や職能上の枠を超えたパートナーシップがサポートされます。 ビジネス成果フレームワークは、技術に詳しい個人が文書を作成し、合意を得る際に役立つシンプルなテンプレートから始まります。 このテンプレートを複数のビジネス利害関係者が使用することにより、各種のビジネス成果を収集できます。それぞれの成果は、企業の変革の取り組みの影響を受ける可能性があります。 自由にこのテンプレートを電子的に使用したり、さらにホワイトボードに書いたりして、ビジネス リーダーやビジネス利害関係者が成果に焦点を置いた議論を行うことができます。
 
 ビジネス成果およびビジネス成果テンプレートの詳細については、[ビジネス成果の文書化](./business-outcome-template.md)に関するページを参照するか、[ビジネス成果テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/business-outcome-template.xlsx)をダウンロードしてください。
+
+## <a name="optimize-your-cloud-investment-using-cloud-economics"></a>クラウドの経済性を活用してクラウド投資を最適化
+
+Azure でのクラウドの経済性の基礎とは Azure で既存のワークロードを実行しているか、新しいソリューションを構築しているかにかかわらず、組織のクラウドの経済性を活用し、特定のワークロードに基づいて Azure の運用コストを最適化するためのベスト プラクティスのガイダンスについて説明します。 主要な財務ガイダンスと技術ガイダンスを使用してクラウド ビジネス ケースの構築を開始し、クラウドへの投資を最大限に活用できるようにしましょう。
+
+クラウドの経済性のしくみについては[こちら](https://azure.microsoft.com/overview/cloud-economics/)を参照してください。
 
 ## <a name="prepare-for-conversations-with-different-personas"></a>さまざまな担当者との対話の準備
 

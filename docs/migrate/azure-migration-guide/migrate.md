@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: 685282288f7cd313492c4c0509ae3177958cd2f6
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 54b206e73d5dfa8f75a5ce7f6321c969b1688186
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632513"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784800"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>ワークロードと資産 (インフラストラクチャ、アプリ、データ) のデプロイ
 
@@ -130,7 +130,7 @@ Migration Assistant によって選択内容が収集および検証されると
 
 詳細については次を参照してください:
 
-[ASP.NET アプリを Azure に移行する](/learn/paths/migrate-dotnet-apps-azure/)
+[ASP.NET アプリケーションを Azure に移行する](/learn/paths/migrate-dotnet-apps-azure/)
 
 ### <a name="data-migration-assistant"></a>Data Migration Assistant
 
@@ -172,7 +172,7 @@ Microsoft SQL Server Migration Assistant (SSMA) は、Microsoft Access、DB2、M
 
 Database Experimentation Assistant (DEA) は、SQL Server アップグレード用の新しい A/B テストソリューションです。 特定のワークロード用の SQL のターゲット バージョンを評価する際に役立ちます。 SQL Server の以前のバージョン (SQL Server 2005 以降) から SQL Server の新しいバージョンにアップグレードするお客様は、これらの分析メトリックを使用できます。
 
-Database Experimentation Assistant には、次のワークフロー アクティビティが含まれています。
+Database Experimentation Assistant には、以下のワークフロー アクティビティが含まれています。
 
 - **キャプチャ:** SQL Server A/B テストの最初のステップでは、ソース サーバーでトレースをキャプチャします。 通常、ソース サーバーは実稼働サーバーです。
 - **再生:** SQL Server A/B テストの 2 番目のステップでは、キャプチャされたトレース ファイルをターゲット サーバーで再生します。 次に、分析のために、再生から大量のトレースを収集します。
@@ -238,7 +238,7 @@ NoSQL データベースの要件に合わせて Azure Cosmos DB の移行をサ
 
 追跡も管理もされていないプロジェクトでは、問題が発生しやすくなります。 確実に成功を収めるためには、お客様がプロジェクト管理ツールを使用することが重要であると Microsoft では考えています。 利用可能なさまざまなツールがあり、組織のプロジェクト マネージャーが気に入っているツールが既にあるかもしれません。
 
-Azure DevOps は、クラウド移行時のプロジェクト管理に推奨されるツールです。 Azure DevOps の使用を高速化するために、クラウド導入フレームワークには、プロジェクト テンプレートを自動的にデプロイするためのツールが含まれています。 このテンプレートには、移行作業中に一般的に実行されるタスクが含まれています。 [クラウド導入プランと Azure DevOps](/azure/cloud-adoption-framework/plan/template) の手順に従って、テンプレートをデプロイします。 これで、移行する[ワークロード](/azure/cloud-adoption-framework/plan/workloads)と[資産](/azure/cloud-adoption-framework/plan/assets)を反映するようにテンプレートを変更できるようになります。
+Azure DevOps は、クラウド移行時のプロジェクト管理に推奨されるツールです。 Azure DevOps の使用を高速化するために、クラウド導入フレームワークには、プロジェクト テンプレートを自動的にデプロイするためのツールが含まれています。 このテンプレートには、移行作業中に一般的に実行されるタスクが含まれています。 [クラウド導入プランと Azure DevOps](../../plan/template.md) の手順に従って、テンプレートをデプロイします。 これで、移行する[ワークロード](../../plan/workloads.md)と[資産](../../plan/assets.md)を反映するようにテンプレートを変更できるようになります。
 
 Microsoft では以下のプロジェクト管理ツールも用意しており、これらを併用してより広範な機能を提供できます。
 

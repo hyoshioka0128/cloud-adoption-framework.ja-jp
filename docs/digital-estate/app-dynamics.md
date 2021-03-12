@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 306375d0d399b078cd7257d88c8d74e04bf9ebd5
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 561be9cd3c8ceaebc9ba8b7faab8f87297170fc4
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023023"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790274"
 ---
 <!-- docutune:casing "Movie Tickets Online" -->
 
@@ -35,11 +35,10 @@ AppDynamics はほとんどのユース ケースに対してビジネスの分�
 
 ## <a name="how-appdynamics-works"></a>AppDynamics のしくみ
 
-移行前に、アプリケーションと共に小規模な軽量エージェントがデプロイされます。 エージェントは、.NET、Java、Node.js などの各種言語専用になっています。 エージェントは、移行中にパフォーマンスおよび診断のデータを収集してコントローラーに送信し、情報を関連付けて分析します。 コントローラーは、フル マネージド AppDynamics 環境に配置できます。また、Azure でそれらを管理することもできます。 主要なユーザー エクスペリエンスは、"ビジネス トランザクション" として識別されます。これは、通常のアプリケーションまたはビジネス パフォーマンスのベースラインを検出するのに役立ちます。 従来のサーバー インフラストラクチャ、データベース、ミドルウェア コンポーネント、オンプレミス、またはクラウド内のいずれであっても、すべてのアプリケーション コンポーネントと依存関係は、アプリケーション全体と各ビジネス トランザクションに対してリアルタイムで識別されます。
+移行前に、アプリケーションと共に小規模な軽量エージェントがデプロイされます。 エージェントは、.NET、Java、Node.js などの各種言語専用になっています。 エージェントは、移行中にパフォーマンスおよび診断のデータを収集してコントローラーに送信し、情報を関連付けて分析します。 コントローラーは、フル マネージド AppDynamics 環境に配置できます。また、Azure でそれらを管理することもできます。 主要なユーザー エクスペリエンスは、"*ビジネス トランザクション*" として識別されます。これは、通常のアプリケーションまたはビジネス パフォーマンスのベースラインを検出するのに役立ちます。 従来のサーバー インフラストラクチャ、データベース、ミドルウェア コンポーネント、オンプレミス、またはクラウド内のいずれであっても、すべてのアプリケーション コンポーネントと依存関係は、アプリケーション全体と各ビジネス トランザクションに対してリアルタイムで識別されます。
 
 ![AppDynamics のフロー マップ](./media/app-dynamics-flow-map.jpg)
-
-"_図 1:AppDynamics のフロー マップ。_ "
+*図 1: AppDynamics のフロー マップ。*
 
 ## <a name="appdynamics-identifies-business-metrics"></a>AppDynamics でビジネス メトリックを特定する
 
@@ -70,8 +69,7 @@ AppDynamics を使用すると、アプリケーションのビジネス価値�
 構成可能なダッシュボードは、これらの分析情報を視覚化する多くの AppDynamics ツールの 1 つです。 このリアルタイムの例では、コンバージョン ファネル全体と、放棄した人に対する個々のページのパフォーマンスへの影響が、ショッピング カートの合計、顧客セグメント、場所、および全般的な収益の詳細と共に表示されます。
 
 ![AppDynamics のビジネスへの影響ダッシュボード](./media/app-dynamics-business-impact-dashboard.jpg)
-
-"_図 2:AppDynamics のビジネスへの影響ダッシュボード。_ "
+*図 2: AppDynamics のビジネスへの影響ダッシュボード。*
 
 ## <a name="resources-to-help-identify-business-metrics"></a>ビジネス メトリックの特定に役立つリソース
 
@@ -92,9 +90,8 @@ AppDynamics がビジネスおよびアプリケーションのメトリック�
 このケースでは、48 から 79 パーセントへのコンバージョン率の増加と、基になるパフォーマンス、応答時間、およびチケット売上高の向上を確認できました。
 
 ![AppDynamics の移行の比較](./media/app-dynamics-migration-comparison.jpg)
-
-"_図 3:AppDynamics の移行の比較。_ "
+*図 3: AppDynamics の移行の比較。*
 
 ## <a name="next-steps"></a>次のステップ
 
-AppDynamics は、クラウド導入戦略の中でビジネス成果を測定する固有の機能を組織に提供します。 [AppDynamics](https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring/microsoft-azure) にアクセスして、Azure での AppDynamics の詳細を確認します。
+AppDynamics は、クラウド導入戦略の中でビジネス成果を測定する固有の機能を組織に提供します。 [AppDynamics](https://www.appdynamics.com/solutions/azure-monitoring) にアクセスして、Azure での AppDynamics の詳細を確認します。

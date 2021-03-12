@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 9f86a97665d3a6fc4e14165b6f6eed4ac9ffa936
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 9a3304635985e9d4452d9f06d7f4863408fd3d87
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713234"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785807"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 <!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
@@ -26,7 +26,7 @@ ms.locfileid: "97713234"
 
 暗号化は、Microsoft Azure でデータのプライバシー、コンプライアンス、データ所在地を確保するための重要な手順です。 また、多くの企業にとって、最も重要なセキュリティに関する考慮事項の 1 つでもあります。 このセクションでは、暗号化とキー管理に関連する設計上の考慮事項と推奨事項について説明します。
 
-### <a name="design-considerations"></a>設計上の考慮事項
+**設計上の考慮事項:**
 
 - Azure Key Vault に適用されるサブスクリプションとスケールの制限:Key Vault には、キーとシークレットのトランザクション制限があります。 特定期間内のコンテナーごとのトランザクションを調整するには、[Azure の制限](/azure/azure-resource-manager/management/azure-subscription-service-limits)に関するページを参照してください。
 
@@ -52,12 +52,12 @@ ms.locfileid: "97713234"
 - 委任された Key Vault のインスタンス化と特権アクセス: [セキュリティで保護されたアクセス](/azure/key-vault/general/secure-your-key-vault)。
 
 - Azure Storage 暗号化などのネイティブな暗号化メカニズムにカスタマー マネージド キーを使用するための要件:
-  - [カスタマー マネージド キー](/azure/storage/common/storage-encryption-keys-portal)。
+  - [カスタマー マネージド キー](/azure/storage/common/customer-managed-keys-configure-key-vault)。
   - 仮想マシン (VM) のディスク全体の暗号化
   - 転送中データの暗号化。
   - 保存データの暗号化。
 
-### <a name="design-recommendations"></a>設計の推奨事項
+**設計上の推奨事項:**
 
 - トランザクション スケールの制限を回避するために、フェデレーション Azure Key Vault モデルを使用します。
 
@@ -97,7 +97,7 @@ ms.locfileid: "97713234"
 
 - Azure Policy には、特定のスコープでの定義の制限など、制限があることを理解します ([ポリシーの制限](/azure/azure-resource-manager/management/azure-subscription-service-limits))。
 
-- 規制コンプライアンス ポリシーを理解します。 これには、HIPAA、PCI DSS、SOC2 Trust Service Principles and Criteria などが含まれます。
+- 規制コンプライアンス ポリシーを理解します。 これには、HIPAA、PCI-DSS、SOC 2 信頼サービス プリンシパルなどが含まれます。
 
 **設計上の推奨事項:**
 
@@ -185,7 +185,7 @@ Azure を採用する場合には、正常なセキュリティ体制を維持�
 
 - 必要に応じて、Azure プラットフォームにアクセスするためのゼロ信頼アプローチを実装します。
 
-<!-- docutune:ignore "and conditional access" -->
+<!-- docutune:ignore "and conditional access" "patch and update management" -->
 
 ## <a name="azure-security-benchmark"></a>Azure セキュリティ ベンチマーク
 
@@ -207,7 +207,7 @@ Azure セキュリティ ベンチマークのドキュメントでは、セキ�
 |                              |                                                                       | Azure サービスとサービス エンドポイントは直接対話できますか。                                                                              |
 |                              |                                                                       | Azure Private Link エンドポイントをサポートしていますか?                                                                                                           |
 |                              |                                                                       | 仮想ネットワーク内にデプロイできますか。                                                                                                            |
-|                              | データの流出防止                                          | PaaS サービスには、Azure ExpressRoute Microsoft ピアリングに個別のボーダー ゲートウェイ プロトコル コミュニティがありますか? ExpressRoute によって、サービスのルート フィルターは公開されますか? |
+|                              | データの流出防止                                          | PaaS サービスには、Azure ExpressRoute Microsoft ピアリングに個別の Border Gateway Protocol (BGP) コミュニティがありますか。 ExpressRoute によって、サービスのルート フィルターは公開されますか? |
 |                              |                                                                       | サービスは Private Link エンドポイントをサポートしていますか。                                                                                                       |
 |                              | 管理およびデータ プレーン操作にネットワーク トラフィック フローを適用する | サービスに出入りするトラフィックを検査することはできますか。 ユーザー定義のルーティングを使用してトラフィックを強制的にトンネリングできますか。                                    |
 |                              |                                                                       | 管理操作に Azure 共有パブリック IP 範囲は使用されますか。                                                                                 |
@@ -215,7 +215,7 @@ Azure セキュリティ ベンチマークのドキュメントでは、セキ�
 |                              | 保存時のデータの暗号化                                               | 暗号化は既定で適用されますか。                                                                                                            |
 |                              |                                                                       | 暗号化を無効にすることはできますか。                                                                                                                  |
 |                              |                                                                       | 暗号化は、Microsoft マネージド キーとカスタマーマネージド キーのどちらを使用して実行されますか。                                                   |
-|                              | 転送中のデータの暗号化                                            | サービスへのトラフィックはプロトコル レベル (セキュア ソケット レイヤー、トランスポート層セキュリティ) で暗号化されていますか。                                                                           |
+|                              | 転送中のデータの暗号化                                            | サービスへのトラフィックはプロトコル レベル (SSL または TLS) で暗号化されていますか。                                                                           |
 |                              |                                                                       | HTTP エンドポイントはありますか。また、それらを無効にすることはできますか。                                                                                        |
 |                              |                                                                       | 基となるサービス通信も暗号化されていますか。                                                                                          |
 |                              |                                                                       | 暗号化は、Microsoft マネージド キーとカスタマーマネージド キーのどちらを使用して実行されますか。 (独自の暗号化をサポートしていますか)。                                                                               |

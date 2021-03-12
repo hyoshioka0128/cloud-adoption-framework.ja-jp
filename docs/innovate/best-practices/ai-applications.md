@@ -1,6 +1,6 @@
 ---
 title: AI アプリケーションとは
-description: AI アプリケーションとは Azure Cognitive Services を使用して AI のアプリケーションと機能をアプリに統合する方法について説明します。
+description: AI アプリケーションとは Azure Cognitive Services を使用して、AI のアプリケーションと機能を自身のアプリケーションに統合する方法について説明します。
 author: v-hanki
 ms.author: janet
 ms.date: 01/26/2021
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: AI アプリケーション, AI アプリケーションとは何か, Speech Recognition API, Computer Vision API, Decision Logic API
-ms.openlocfilehash: 39d664452d14b13514f7e1b0ff78c0cf66e59468
-ms.sourcegitcommit: a0b808d5602e09c6cd7f3485fd28bb592692ea8d
+ms.openlocfilehash: ab9f00265152119cb9db3d7f880e6f7c554ce1f9
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100526019"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789271"
 ---
+<!-- docutune:ignore "computer vision APIs" -->
+
 # <a name="what-are-ai-applications"></a>AI アプリケーションとは
 
 AI アプリケーションとは、Speech Recognition API、Computer Vision API、Decision Logic API、および人間の理性を模倣するその他の種類のインテリジェント システムなどのことをいいます。 AI アプリケーションは、より自然な方法でエンド ユーザーとやり取りすることができ、より優れたユーザー エクスペリエンスに貢献できるため、現在の市場における多くのソフトウェア製品に不可欠な機能となっています。 Azure を使用すると、AI アプリケーションをどこへでもロールアウトできるため、お客様やお客様のチームが時間を節約するのに役立ちます。
@@ -37,27 +39,26 @@ Cognitive Services は、開発者が直接的な AI またはデータ サイ�
 | [サービス名] | サービスの説明 |
 | --- | --- |
 | [Computer Vision](/azure/cognitive-services/computer-vision/) | Computer Vision API を使用すると、画像を処理して情報を返すための高度なアルゴリズムにアクセスできます。 |
-| [Custom Vision](/azure/cognitive-services/custom-vision-service/home) | Custom Vision を使用すると、カスタム画像分類器を構築できます。 |
+| [Custom Vision](/azure/cognitive-services/custom-vision-service/overview) | Custom Vision を使用すると、カスタム画像分類器を構築できます。 |
 | [Face](/azure/cognitive-services/face/) | Face サービスを使用すると、顔属性を検出して認識する高度な顔アルゴリズムにアクセスできます。 |
 | [Form Recognizer](/azure/cognitive-services/form-recognizer/) (プレビュー) | Form Recognizer を使用すると、フォーム ドキュメントからキーと値のペアおよびテーブル データを識別して抽出できます。 その後、元のファイル内の関係を含む構造化データが出力されます。 |
-| [Ink Recognizer](/azure/cognitive-services/ink-recognizer/) (プレビュー) | Ink Recognizer を使用すると、デジタル インク ストローク データ、シェイプ、および手書きのコンテンツを認識して分析し、認識されたすべてのエンティティを備えたドキュメント構造を出力できます。 |
-| [Video Indexer](/azure/cognitive-services/video-indexer/video-indexer-overview) | Video Indexer では、ビデオから分析情報を抽出できます。 |
+| [Video Indexer](/azure/media-services/video-indexer/video-indexer-overview) | Video Indexer では、ビデオから分析情報を抽出できます。 |
 
 ### <a name="speech-recognition-apis"></a>Speech Recognition API
 
 | [サービス名] | サービスの説明 |
 | --- | --- |
 | [Speech](/azure/cognitive-services/speech-service/) | Speech サービスは、音声対応の機能をアプリケーションに追加します。 |
-| [Speaker Recognition](/azure/cognitive-services/speaker-recognition/home "Speaker Recognition API") (プレビュー) | Speaker Recognition API では、話者識別と検証のアルゴリズムが提供されます。 |
-| [Bing Speech](/azure/cognitive-services/speech/home) (廃止) | Bing Speech API は、アプリケーションに音声対応の機能を作成する簡単な方法を提供します。 |
-| [Translator Speech](/azure/cognitive-services/translator-speech/) (廃止) | Translator Speech は、機械翻訳サービスです。 |
+| [Speaker Recognition](/azure/cognitive-services/speech-service/speaker-recognition-overview) (プレビュー) | Speaker Recognition API では、話者識別と検証のアルゴリズムが提供されます。 |
+| [Bing Speech](/azure/cognitive-services/speech-service/how-to-migrate-from-bing-speech) (廃止) | 既存の Bing Speech API アプリケーションを Speech サービスに移行できます。 |
+| [Translator Speech](/azure/cognitive-services/speech-service/how-to-migrate-from-translator-speech-api) (廃止) | 既存の Bing Translator Speech API アプリケーションを Speech サービスに移行できます。 |
 
 ### <a name="language-apis"></a>Language API
 
 | [サービス名] | サービスの説明 |
 |--|--|
 | [Language Understanding (LUIS)](/azure/cognitive-services/luis/) | Language Understanding サービス (LUIS) を使用すると、アプリケーションで人の発話の意図を認識できるようになります。 |
-| [QnA Maker](/azure/cognitive-services/qnamaker/index "QnA Maker") | QnA Maker を使用すると、半構造化コンテンツから質疑応答サービスを構築できます。 |
+| [QnA Maker](/azure/cognitive-services/qnamaker/) | QnA Maker を使用すると、半構造化コンテンツから質疑応答サービスを構築できます。 |
 | [Text Analytics](/azure/cognitive-services/text-analytics/) | Text Analytics によって、未加工のテキストに対して、感情分析、キー フレーズ抽出、および言語検出のための自然言語処理が提供されます。 |
 | [Translator](/azure/cognitive-services/translator/) | Translator によって、ほぼリアルタイムでのマシン ベースのテキスト翻訳が提供されます。 |
 
@@ -66,7 +67,7 @@ Cognitive Services は、開発者が直接的な AI またはデータ サイ�
 | [サービス名] | サービスの説明 |
 | --- | --- |
 | [Anomaly Detector](/azure/cognitive-services/anomaly-detector/) (プレビュー) | Anomaly Detector では、時系列データを監視し、その中の異常を検出できます。 |
-| [Content Moderator](/azure/cognitive-services/content-moderator/overview "Content Moderator") | Content Moderator は、不快感を与えたり、望ましくなかったり、危険であったりする可能性があるコンテンツを監視します。 |
+| [Content Moderator](/azure/cognitive-services/content-moderator/overview) | Content Moderator は、不快感を与えたり、望ましくなかったり、危険であったりする可能性があるコンテンツを監視します。 |
 | [Personalizer](/azure/cognitive-services/personalizer/) | Personalizer を使用すると、ユーザー向けの最もカスタマイズされたエクスペリエンスを選択するために、ユーザーのリアルタイムの行動から学習することができます。 |
 
 ### <a name="supported-cultural-languages"></a>サポートされる言語 (カルチャ)
@@ -86,8 +87,6 @@ Cognitive Services には、クラウドまたはオンプレミスへのデプ�
 ### <a name="certifications-and-compliance"></a>認定資格とコンプライアンス
 
 Cognitive Services には、CSA STAR Certification、FedRAMP Moderate、HIPAA BAA などの認定資格が与えられています。
-
-自分で監査したり、セキュリティを確認する目的で認定資格を[ダウンロード](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)できます。
 
 プライバシーやデータ管理を理解するには、[Microsoft セキュリティ センター](https://servicetrust.microsoft.com/)を参照してください。
 

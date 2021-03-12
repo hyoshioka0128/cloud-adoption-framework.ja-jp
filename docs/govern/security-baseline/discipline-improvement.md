@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 69a833c1cd7018cd29445c18e55e65c8e375b35a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 35441db19fb468e1f993e9e8ca6029975db5f2a5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97019131"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792399"
 ---
 # <a name="security-baseline-discipline-improvement"></a>セキュリティ ベースライン規範の改良
 
@@ -21,9 +21,8 @@ ms.locfileid: "97019131"
 
 この記事では、会社がセキュリティ ベースライン規範をより適切に開発し、成熟させるために実行できるいくつかの潜在的なタスクの概要について説明します。 これらのタスクは、クラウド ソリューション実装の計画、構築、導入、および運用フェーズに分類できます。これらのフェーズは繰り返され、[クラウド ガバナンスへの増分アプローチ](../guides/index.md#an-incremental-approach-to-cloud-governance)を開発できるようになります。
 
-![クラウド ガバナンスに対する増分型アプローチのフェーズ](../../_images/govern/adoption-phases.png)
-
-"*図 1:クラウド ガバナンスに対する増分型アプローチのフェーズ。* "
+![クラウド ガバナンスへの段階的なアプローチのフェーズ](../../_images/govern/adoption-phases.png)
+*図 1: クラウド ガバナンスへの段階的なアプローチのフェーズ。*
 
 1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、漸進的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、セキュリティ ベースライン規範を改善するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
 
@@ -68,7 +67,7 @@ ms.locfileid: "97019131"
 - クラウドでホストされたデータのための組織の[暗号化](../../decision-guides/encryption/index.md)戦略を決定します。
 - クラウド デプロイの [ID](../../decision-guides/identity/index.md) 戦略を評価します。 クラウド ベースの ID ソリューションがオンプレミスの ID プロバイダーと共存または統合する方法を決定します。
 - [ソフトウェア定義ネットワーク (SDN)](../../decision-guides/software-defined-network/index.md) 設計で仮想ネットワーク機能を確実にセキュリティで保護するためのネットワーク境界ポリシーを決定します。
-- 組織の[最小特権アクセス](/azure/active-directory/users-groups-roles/roles-delegate-by-task) ポリシーを評価し、タスク ベースのロールを使用して特定のリソースへのアクセスを提供します。
+- 組織の[最小特権アクセス](/azure/active-directory/roles/delegate-by-task) ポリシーを評価し、タスク ベースのロールを使用して特定のリソースへのアクセスを提供します。
 - すべてのクラウド サービスと仮想マシンにセキュリティおよび監視メカニズムを適用します。
 - 可能な場合は、[セキュリティ ポリシー](../../decision-guides/policy-enforcement/index.md)を自動化します。
 - セキュリティ ベースライン ポリシーをレビューし、[セキュリティ開発ライフサイクル](https://www.microsoft.com/sdl)で概要が説明されているようなベスト プラクティス ガイダンスに従って計画を変更する必要があるかどうかを判定します。

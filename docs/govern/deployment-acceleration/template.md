@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: eb31bd87ad6e8faa0494a10c3d4a18aee312c9ce
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e48cc6cdabfc23d5acef07f16e54e9329ce49082
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021442"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790784"
 ---
 # <a name="deployment-acceleration-template"></a>デプロイ高速化テンプレート
 
-変更を実装する最初の手順は、必要な変更を伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウドでの構成とデプロイに関する問題を管理するポリシー ステートメントを文書化して伝達する際の開始点として機能します。 このテンプレートには、文書化されたポリシー ステートメントの作成に至った理由である可能性もあるビジネス条件の概要も記入します。
+変更を実装する最初の手順は、必要な変更を伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 次のテンプレートは、クラウドでの構成とデプロイに関する問題を管理するポリシー ステートメントを文書化して伝達する際の開始点として機能します。 このテンプレートには、文書化されたポリシー ステートメントの作成に至った理由である可能性もあるビジネス条件の概要も記入します。
 
 ディスカッションが進んだら、このテンプレートの構造を、組織のデプロイ高速化ポリシー ステートメントを定義するために必要なビジネス リスク、リスク許容度、コンプライアンス プロセス、およびツールを把握するためのモデルとして使用してください。
 

@@ -1,5 +1,5 @@
 ---
-title: 定性的および定量的データ フィードバック
+title: 定性的および定量的なデータ フィードバック
 description: Azure のツールを使用して、GitHub でホストされている Web アプリと API に関する定量的で定性的なフィードバックを収集する方法について説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
 keywords: 定量的データ, 定量的フィードバック, 定性的フィードバック, テスト フィードバック, カスタマー フィードバック
-ms.openlocfilehash: 72a932f827c658c11f55f353746a171d3defe4c2
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 3f7e58140007dc7991258966691848ca2c3e2632
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632122"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787622"
 ---
 # <a name="prepare-for-customer-feedback"></a>カスタマー フィードバックの準備
 
@@ -26,7 +26,7 @@ ms.locfileid: "100632122"
 - **定量的 (テストからのフィードバック):** このフィードバックは、開発側が求めるアクションを評価します。
 - **定性的 (顧客からのフィードバック):** このフィードバックは、メトリックが意味することを顧客の声で伝えます。
 
-定量的データは、定量化可能な測定プロセスを使用した数値ベースのデータです。 定量的フィードバックでは、顧客から大量の回答をすばやく収集する場合に役立つ、データに対する数値的な分析情報が得られます。 定量的フィードバックの例には、複数の選択肢のある質問や数字で表したユーザー エンゲージメント データがあります。 定性的フィードバックでは、さらに深く、顧客の考えや意見に対するより幅広い種類の回答や分析情報が得られます。 定性的フィードバックの例には、自由回答形式の質問を含む顧客アンケートがあります。 どちらの方法のカスタマー フィードバックからも、お客様の会社の製品とサービスを向上させるための貴重な分析情報が提供されます。  
+定量的データは、定量化可能な測定プロセスを使用した数値ベースのデータです。 定量的フィードバックでは、顧客から大量の回答をすばやく収集する場合に役立つ、データに対する数値的な分析情報が得られます。 定量的フィードバックの例には、複数の選択肢のある質問や数字で表したユーザー エンゲージメント データがあります。 定性的フィードバックでは、さらに深く、顧客の考えや意見に対するより幅広い種類の回答や分析情報が得られます。 定性的フィードバックの例には、自由回答形式の質問を含む顧客アンケートがあります。 どちらの方法のカスタマー フィードバックからも、お客様の会社の製品とサービスを向上させるための貴重な洞察を得ることができます。
 
 フィードバック ループを統合する前に、ソリューションの共有リポジトリを用意する必要があります。 一元化されたリポジトリにより、プロジェクトについて寄せられるすべてのフィードバックを記録し、それらのフィードバックに基づいて行動できるようになります。 [GitHub](https://github.com) はオープンソース ソフトウェアのホームです。 商用として開発されたアプリケーションのソース コード リポジトリをホストするために、最も一般的に使用されているプラットフォームの 1 つでもあります。 GitHub リポジトリの作成に関する[こちら](/azure/devops/pipelines/repos/github)の記事は、自分のリポジトリを開始する際に役立ちます。
 
@@ -63,9 +63,9 @@ Application Insights は、アプリケーションの使用状況に関する�
 
 ### <a name="learn-more"></a>詳細情報
 
-- [Azure Monitor を設定する](/azure/azure-monitor/learn/quick-monitor-portal)
-- [Azure Monitor Application Insights の概要](/azure/azure-monitor/learn/tutorial-users)
-- [利用統計情報ダッシュボードを作成する](/azure/azure-monitor/learn/tutorial-app-dashboards)
+- [Azure Monitor を設定する](/azure/azure-monitor/azure-monitor-app-hub)
+- [Azure Monitor Application Insights の概要](/azure/azure-monitor/app/tutorial-users)
+- [利用統計情報ダッシュボードを作成する](/azure/azure-monitor/app/tutorial-app-dashboards)
 
 ## <a name="quantitative-feedback-for-apis"></a>[API の定量的フィードバック](#tab/Quantitative-APIs)
 

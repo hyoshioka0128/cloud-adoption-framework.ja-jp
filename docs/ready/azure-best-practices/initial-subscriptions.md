@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 7cdfc50b10507ec1407d46af9e14cfc9e812708d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4d78f100772e1779f8e8385ca413b979996403aa
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026236"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789679"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Azure の初期サブスクリプションを作成する
 
@@ -35,8 +35,8 @@ _図 1:"運用" と "非運用" のラベルが付いたボックスの横にキ
 - 非運用ワークロード向けに、Azure Dev/Test サブスクリプション オファリングが提供されています。 これらのオファリングでは、Azure のサービスとソフトウェア ライセンスを割引料金で利用できます。
 - 運用環境と非運用環境では、Azure ポリシーのセットが異なることが多くなります。 サブスクリプションを分けることで、サブスクリプション レベルで独自のポリシー を簡単に適用できます。
 - 非運用サブスクリプションで、特定の種類の Azure リソースをテスト目的で許可できます。 それらのリソース プロバイダーは、運用環境で使用可能にしなくても、非運用サブスクリプションで有効にすることができます。
-- 開発/テスト サブスクリプションは、分離されたサンドボックス環境として使用できます。 これらのサンドボックスを使用すると、管理者と開発者は、Azure リソースのセット全体の構築と破棄を短時間で行うことができます。 この分離は、データ保護やセキュリティ上の問題に対応する場合にも役立ちます。
-- 定義する許容可能なコストのしきい値は、運用と開発/テスト サブスクリプションで異なる可能性があります。
+- Azure Dev/Test サブスクリプションは、分離されたサンドボックス環境として使用できます。 これらのサンドボックスを使用すると、管理者と開発者は、Azure リソースのセット全体の構築と破棄を短時間で行うことができます。 この分離は、データ保護やセキュリティ上の問題に対応する場合にも役立ちます。
+- 定義する許容可能なコストのしきい値は、運用環境と非運用環境で異なる可能性があります。
 
 ## <a name="sandbox-subscriptions"></a>サンドボックス サブスクリプション
 

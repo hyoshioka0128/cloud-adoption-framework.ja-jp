@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: c2a56c5617d55a0254e0caa324e52d70d1954998
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: f077924c135a9e91c74e131cc03503a5ad71d7f5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712469"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787520"
 ---
 <!-- cSpell:ignore kured -->
 
@@ -31,11 +31,11 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > - クラスターで Kubernetes のロールベースのアクセス制御が有効になっていますか?
 > [!div class="tdCol2BreakAll"]
 >
-> | チェック リスト  | リソース |
-> |------------------------------------------------------------------|-----------------------------------------------------------------|
+> | チェック リスト | リソース |
+> |---|---|
 > | **セキュリティの基本に関するホワイトペーパーを入念に確認する。** セキュリティで保護された Kubernetes 環境の主な目標は、実行されるアプリケーションを保護すること、セキュリティの問題を迅速に特定して対処できること、および今後同様の問題を回避することです。 | [Kubernetes を保護するための決定版ガイド (ホワイトペーパー)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **クラスター ノードのセキュリティ強化の設定を確認する。** セキュリティが強化されたホスト OS を使用すると、攻撃の対象範囲が減り、コンテナーを安全にデプロイできます。 | [AKS 仮想マシン ホストでのセキュリティ強化](/azure/aks/security-hardened-vm-host-image)     |
-> | **クラスター Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) をセットアップする。** この制御メカニズムを使用して、ユーザーまたはユーザー グループに対して、リソースの作成または変更、実行中のアプリケーション ワークロードのログの表示などの操作を行うアクセス許可を割り当てることができます。 | [Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) を理解する (ビデオ)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [Azure AD と Azure Kubernetes Service を統合する](/azure/aks/azure-ad-integration) <br> [クラスター構成ファイルへのアクセスの制限](/azure/aks/control-kubeconfig-access)   |
+> | **クラスター Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) をセットアップする。** この制御メカニズムを使用して、ユーザーまたはユーザー グループに対して、リソースの作成または変更、実行中のアプリケーション ワークロードのログの表示などの操作を行うアクセス許可を割り当てることができます。 | [Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) を理解する (ビデオ)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [Azure AD と Azure Kubernetes Service を統合する](/azure/aks/azure-ad-integration-cli) <br> [クラスター構成ファイルへのアクセスの制限](/azure/aks/control-kubeconfig-access)   |
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>運用環境へのデプロイとベスト プラクティスの適用
 
@@ -48,16 +48,16 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > - クラスターとコンテナーのワークロードに対してセキュリティ スキャン ソリューションを実行していますか?
 > [!div class="tdCol2BreakAll"]
 >
-> | チェック リスト  | リソース |
-> |------------------------------------------------------------------|-----------------------------------------------------------------|
+> | チェック リスト | リソース |
+> |---|---|
 > | **グループ メンバーシップを使用してクラスターへのアクセスを制御する。** ユーザーの ID またはグループ メンバーシップに基づいてクラスター リソースへのアクセスを制限するように Kubernetes のロールベースのアクセス制御 (Kubernetes RBAC) を構成します。 | [Kubernetes RBAC と Azure AD ID を使用してクラスター リソースへのアクセスを制御する](/azure/aks/azure-ad-rbac)    |
 > | **シークレット管理ポリシーを作成する。** Kubernetes でシークレット管理を使用して、パスワードや証明書などの機密情報を安全にデプロイし、管理します。 | [Kubernetes でのシークレット管理について (ビデオ)](https://www.youtube.com/watch?v=KmhM33j5WYk&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=10) |
 > | **ネットワーク ポリシーを使用して、ポッド間のネットワーク トラフィックをセキュリティで保護する。** 最低限の特権の原則を適用して、クラスター内のポッド間のネットワーク トラフィック フローを制御します。 | [ネットワーク ポリシーを使用したポッド間のトラフィックのセキュリティ保護](/azure/aks/use-network-policies) |
 > | **許可された IP を使用して API サーバーへのアクセスを制限する。** API サーバーへのアクセスを、限られた一連の IP アドレス範囲に制限することで、クラスターのセキュリティを向上させ、攻撃対象を最小限にします。 | [API サーバーへのアクセスをセキュリティで保護する](/azure/aks/api-server-authorized-ip-ranges) |
 > | **クラスターのエグレス トラフィックを制限する。** クラスターのエグレス トラフィックを制限する場合に、どのポートとアドレスを許可するか確認します。 Azure Firewall またはサードパーティ製ファイアウォール アプライアンスを使用して、エグレス トラフィックをセキュリティで保護し、これらの必要なポートとアドレスを定義することができます。 | [AKS でクラスター ノードに対するエグレス トラフィックを制御する](/azure/aks/limit-egress-traffic) |
-> | **Web アプリケーション ファイアウォール (WAF) を使用してトラフィックをセキュリティで保護する。** Kubernetes クラスターのイングレス コントローラーとして Azure Application Gateway を使用します。  | [Azure Application Gateway をイングレス コントローラーとして構成する](/azure/application-gateway/ingress-controller-overview)    |
+> | **Web アプリケーション ファイアウォール (WAF) を使用してトラフィックをセキュリティで保護する。** Kubernetes クラスターのイングレス コントローラーとして Azure Application Gateway を使用します。 | [Azure Application Gateway をイングレス コントローラーとして構成する](/azure/application-gateway/ingress-controller-overview) |
 > | **ワーカー ノードにセキュリティとカーネルの更新プログラムを適用する。** AKS ノードの更新エクスペリエンスを理解します。 クラスターを保護するために、AKS のノードにセキュリティ更新プログラムが自動的に適用されます。 これらの更新プログラムには、OS のセキュリティ修正プログラムやカーネルの更新プログラムが含まれています。 これらの更新プログラムの中には、プロセスを完了するためにノードの再起動が必要なものがあります。 | [更新プログラムを適用するために Kured を使用してノードを自動的に再起動する](/azure/aks/node-updates-kured) |
-> | **コンテナーとクラスターのスキャン ソリューションを構成する。** Azure Container Registry にプッシュされたコンテナーをスキャンし、クラスター ノード、クラウド トラフィック、およびセキュリティ制御についてより詳しく把握します。 | [Azure Container Registry と Security Center の統合](/azure/security-center/azure-container-registry-integration) <br> [Azure Kubernetes Service と Security Center の統合](/azure/security-center/azure-kubernetes-service-integration)  |
+> | **コンテナーとクラスターのスキャン ソリューションを構成する。** Azure Container Registry にプッシュされたコンテナーをスキャンし、クラスター ノード、クラウド トラフィック、およびセキュリティ制御についてより詳しく把握します。 | [Azure Container Registry と Security Center の統合](/azure/security-center/defender-for-container-registries-introduction) <br> [Azure Kubernetes Service と Security Center の統合](/azure/security-center/defender-for-kubernetes-introduction)  |
 
 ## <a name="optimize-and-scale"></a>最適化とスケーリング
 
@@ -68,7 +68,7 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 > - ガバナンスとクラスターのポリシーを大規模に適用できますか?
 > [!div class="tdCol2BreakAll"]
 >
-> | チェック リスト  | リソース |
-> |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **クラスター ガバナンス ポリシーを適用する。** 一貫した一元的な方法で、クラスターで大規模な実施と保護を適用します。 | [Azure Policy を使用したデプロイの制御](/azure/governance/policy/concepts/rego-for-aks)    |
-> | **クラスター証明書を定期的にローテーションする。** Kubernetes では、そのコンポーネントの多くで認証に証明書が使用されます。 セキュリティやポリシー上の理由から、これらの証明書を定期的にローテーションすることが必要な場合があります。 | [Azure Kubernetes Service (AKS) での証明書のローテーション](/azure/aks/certificate-rotation)    |
+> | チェック リスト | リソース |
+> |---|---|
+> | **クラスター ガバナンス ポリシーを適用する。** 一貫した一元的な方法で、クラスターで大規模な実施と保護を適用します。 | [Azure Policy を使用したデプロイの制御](/azure/governance/policy/concepts/policy-for-kubernetes) |
+> | **クラスター証明書を定期的にローテーションする。** Kubernetes では、そのコンポーネントの多くで認証に証明書が使用されます。 セキュリティやポリシー上の理由から、これらの証明書を定期的にローテーションすることが必要な場合があります。 | [Azure Kubernetes Service (AKS) での証明書のローテーション](/azure/aks/certificate-rotation) |

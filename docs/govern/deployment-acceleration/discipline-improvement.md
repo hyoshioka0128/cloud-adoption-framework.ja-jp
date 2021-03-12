@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: adb67d071eeee6b0170f93cf178d9a9075900b8d
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: e206763a8200080858a8afda6ab7ba2b26ecdde9
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021646"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791464"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>デプロイ加速規範の改良
 
@@ -21,9 +21,8 @@ ms.locfileid: "97021646"
 
 この記事では、会社がデプロイ加速規範を適切に開発し、成熟させるために実行できるいくつかの潜在的なタスクの概要について説明します。 これらのタスクは、クラウド ソリューション実装の計画、構築、導入、および運用フェーズに分類できます。これらのフェーズは繰り返され、[クラウド ガバナンスへの増分アプローチ](../guides/index.md#an-incremental-approach-to-cloud-governance)を開発できるようになります。
 
-![クラウド ガバナンスに対する増分型アプローチのフェーズ](../../_images/govern/adoption-phases.png)
-
-"*図 1:クラウド ガバナンスに対する増分型アプローチのフェーズ。* "
+![クラウド ガバナンスへの段階的なアプローチのフェーズ](../../_images/govern/adoption-phases.png)
+*図 1: クラウド ガバナンスへの段階的なアプローチのフェーズ*
 
 1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、段階的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、ID ベースライン規範を強化するために、これらのアクティビティにどれだけ投資するかを決定する必要があります。
 
@@ -51,7 +50,7 @@ ms.locfileid: "97021646"
 
 - 新しいクラウドベースのアプリケーションでは、完全に自動化されたデプロイを早期の開発プロセスに導入します。 この投資によって、テスト プロセスの信頼性が向上し、開発、QA、および運用環境における一貫性が確保されます。
 - デプロイ テンプレートや構成スクリプトなどのデプロイのすべての成果物を、GitHub や Azure DevOps などのソース管理プラットフォームを使用して格納します。
-- すべてのシークレット、パスワード、証明書、および接続文字列を [Azure Key Vault](/azure/key-vault) に格納します。
+- すべてのシークレット、パスワード、証明書、および接続文字列を [Azure Key Vault](/azure/key-vault/) に格納します。
 - ご自身の[デプロイ加速ツールチェーン](./toolchain.md)を実装する前にパイロット テストの実施を検討し、デプロイが可能な限り合理化されていることを確認します。 デプロイ前フェーズで、必要に応じてパイロット テストからのフィードバックを繰り返し適用します。
 - アプリケーションの論理および物理アーキテクチャを評価し、他のクラウドベースのリソースを使用して、アプリケーションのリソースのデプロイを自動化したり、アーキテクチャの特定の部分を改良したりする機会を特定します。
 - デプロイとユーザー導入計画を含むようにアーキテクチャ ガイドライン ドキュメントを更新し、主な利害関係者に配布します。

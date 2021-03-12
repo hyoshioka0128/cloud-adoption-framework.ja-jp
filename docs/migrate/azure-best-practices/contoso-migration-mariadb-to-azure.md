@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: a2ccca8bc86fe344690ec74ba3d567d045cbb6ee
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: fbf8ed9d395355d96b9e0d767a0b7ab9ab01d01b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631544"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789016"
 ---
 <!-- cSpell:ignore mysqldump -->
 
@@ -35,7 +35,7 @@ Contoso では、次の理由により、MySQL ではなく MariaDB が使用さ
 IT リーダーシップ チームは、ビジネス パートナーと密接に連絡を取り合い、彼らがこの移行で何を達成しようとしているのかを理解しました。 目的は次のとおりです。
 
 - **可用性の向上。** Contoso は、オンプレミスの MariaDB 環境で可用性の問題を抱えていました。 ビジネス部門は、このデータ ストアを使用するアプリケーションの信頼性を高めることを求めています。
-- **効率化。** Contoso では、不要な手順を排除し、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は、顧客の要求により迅速に対応するために、IT 部門に対して、時間やコストを無駄にせず、迅速に作業を行うことを求めています。
+- **効率化。** Contoso では、不要な手順を取り除き、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は、顧客の要求により迅速に対応するために、IT 部門に対して、時間やコストを無駄にせず、迅速に作業を行うことを求めています。
 - **機敏性の向上。** Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済で成功を収めるために、市場の変化よりも迅速に対応する必要があります。 ビジネスの妨げや、障害にならないようにする必要があります。
 - **スケール。** ビジネスが順調に成長している中で、Contoso IT 部門は、同じペースで拡張するシステムを提供する必要があります。
 
@@ -59,7 +59,7 @@ Contoso は、目標と要件を明確にした後、デプロイ ソリュー�
 
 ### <a name="current-application"></a>現在のアプリケーション
 
-MariaDB データベースでは、会社の HR 部門のあらゆる側面に使用される従業員データがホストされています。 [LAMP ベース](https://wikipedia.org/wiki/LAMP_(software_bundle))のアプリケーションは、従業員の HR 要求を処理するフロントエンドとして使用されています。 Contoso は世界中に 100,000 人の従業員を抱えているので、データベースのアップタイムが重要となります。
+MariaDB データベースでは、会社の HR 部門のあらゆる側面に使用される従業員データがホストされています。 [LAMP ベース](https://wikipedia.org/wiki/LAMP_software_bundle)のアプリケーションは、従業員の HR 要求を処理するフロントエンドとして使用されています。 Contoso は世界中に 100,000 人の従業員を抱えているので、データベースのアップタイムが重要となります。
 
 ### <a name="proposed-solution"></a>提案されるソリューション
 
@@ -91,7 +91,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 ## <a name="proposed-architecture"></a>提案されたアーキテクチャ
 
 ![シナリオのアーキテクチャを示す図。](./media/contoso-migration-mariadb-to-azure/architecture.png)
-_図 1: シナリオのアーキテクチャ_
+*図 1: シナリオのアーキテクチャ*
 
 ### <a name="migration-process"></a>移行プロセス
 
@@ -110,7 +110,7 @@ MariaDB データベースを移行する前に、移行を成功させるため
 Contoso は、オンプレミス環境から、MariaDB データベースが配置されている仮想ネットワークへの仮想ネットワーク ゲートウェイ接続を設定する必要があります。 この接続より、接続文字列が更新されたときに、オンプレミス アプリケーションはゲートウェイを介してデータベースにアクセスできるようになります。
 
   ![移行プロセスを示す図。](./media/contoso-migration-mariadb-to-azure/migration-process.png)
-  "_図 2:移行プロセス_
+  "*図 2:移行プロセス*
 
 #### <a name="migration"></a>移行
 
@@ -125,7 +125,7 @@ Contoso では、次の手順を使用してデータベースを移行しまし
   ```
 
   ![オンプレミスの MariaDB のバージョンを確認する方法を示すスクリーンショット。](./media/contoso-migration-mariadb-to-azure/mariadb_version.png)
-  _図 3: オンプレミスの MariaDB バージョンの確認_
+  *図 3: オンプレミスの MariaDB バージョンの確認*
 
 - Azure で新しい MariaDB インスタンスを作成します。
 
@@ -134,7 +134,7 @@ Contoso では、次の手順を使用してデータベースを移行しまし
   - `MariaDB` を検索します。
 
     ![Azure の新しい MariaDB インスタンスを示すスクリーンショット。](./media/contoso-migration-mariadb-to-azure/azure-mariadb-create.png)
-    _図 4: Azure の新しい MariaDB インスタンス_
+    *図 4: Azure の新しい MariaDB インスタンス*
 
   - **［作成］** を選択します
   - サブスクリプションとリソース グループを選択します。
@@ -145,7 +145,7 @@ Contoso では、次の手順を使用してデータベースを移行しまし
   - **[Review + create]\(レビュー + 作成\)** を選択します。
 
     ![**[Create MariaDB Server]\(MariaDB サーバーの作成\)** ページのスクリーンショット。](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
-    _図 5: レビューと作成_
+    *図 5: レビューと作成*
 
   - **［作成］** を選択します
   - サーバーのホスト名、ユーザー名、パスワードを記録します。
@@ -156,13 +156,13 @@ Contoso では、次の手順を使用してデータベースを移行しまし
 - 次のコマンドを実行して、`Employees` というデータベースをエクスポートします。 データベースごとにこれを繰り返します。
 
     ```cmd
-    mysqldump -h localhost -u root -p -–skip-triggers -–single-transaction –-extended-insert -–order-by-primary -–disable-keys Employees > Employees.sql
+    mysqldump -h localhost -u root -p --skip-triggers --single-transaction --extended-insert --order-by-primary --disable-keys Employees > Employees.sql
     ```
 
 - データベースを復元します。 Azure Database for MariaDB インスタンスのエンドポイントとユーザー名に置き換えます。
 
   ```cmd
-  mysql -h {name}.mariadb.database.azure.com -u user@{name} -p –ssl
+  mysql -h {name}.mariadb.database.azure.com -u user@{name} -p -ssl
   create database employees;
   use database employees;
   source employees.sql;
@@ -189,7 +189,7 @@ Contoso は次のことを行う必要があります。
 - MariaDB [ゲートウェイ IP アドレス](/azure/mariadb/concepts-connectivity-architecture)への接続を許可するように、送信 IP 要件を構成します。
 - データベースへの [SSL 接続を要求する](/azure/mariadb/concepts-ssl-connection-security)ように、すべてのアプリケーションを更新します。
 - [Private Link](/azure/mariadb/concepts-data-access-security-private-link) を設定して、すべてのデータベース トラフィックが Azure とオンプレミス ネットワーク内に保持されるようにします。
-- [Azure Advanced Threat Protection (ATP)](/azure/mariadb/concepts-data-access-and-security-threat-protection) を有効にします。
+- [Microsoft Defender for Identity](/azure/mariadb/concepts-data-access-and-security-threat-protection) を有効にします。
 - 対象のセキュリティおよびログ エントリを監視し、アラートを送信するように Log Analytics を構成します。
 
 ### <a name="backups"></a>バックアップ

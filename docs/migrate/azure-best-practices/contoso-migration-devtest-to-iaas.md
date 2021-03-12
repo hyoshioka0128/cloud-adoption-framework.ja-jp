@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 24b29df57baf21d6d0d96dd605bcec4ba1cafb1f
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 9ff3b78cc53698ddbe2f5aca2ac97eca2650359a
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631833"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791753"
 ---
 <!-- cSpell:ignore vcenter contosohost contosodc NSGs agentless WEBVMDEV SQLVMDEV OSTICKETWEBDEV OSTICKETMYSQLDEV -->
 
@@ -70,8 +70,7 @@ Contoso は、目標と要件を明確にした後、デプロイ ソリュー�
 - Contoso データセンター内のオンプレミス VM は、移行が行われた後に使用停止にされます。
 
   ![オンプレミスと仮想マシンに関して提案されたシナリオ アーキテクチャの図。](./media/contoso-migration-devtest-to-iaas/architecture.png)
-
-  "_図 1:提案されたアーキテクチャ_
+  *図 1: 提案されたアーキテクチャ。*
 
 ### <a name="database-considerations"></a>データベースの考慮事項
 
@@ -104,8 +103,7 @@ Contoso では、Azure Migrate のエージェントレスの方法を使用し�
 - Azure で開発 VM が稼働状態になったら、Contoso は Azure で実行されるようになった VM を参照するように開発ワークステーションを再構成します。
 
 ![移行プロセスの図。](./media/contoso-migration-devtest-to-iaas/migration-process-az-migrate.png)
-
-"_図 2:移行プロセスの概要_
+*図 2: 移行プロセスの概要。*
 
 ### <a name="azure-services"></a>Azure サービス
 
@@ -150,34 +148,29 @@ Contoso では、Azure Migrate:Server Migration ツールによって Azure VM �
     1. Azure Migrate から、.OVA イメージをダウンロードし、VMware にインポートします。
 
        ![.OVA ファイルのダウンロードを示すスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-download-ova.png)
-
-       "_図 3:.OVA file ファイルのダウンロード_
+       *図 3: .OVA ファイルのダウンロード。*
 
     1. インポートしたイメージを起動し、次のステップを含めてツールを構成します。
 
        - 前提条件を設定します。
 
          ![前提条件を設定するためのセクションのスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-setup-prerequisites.png)
-
-         "_図 4:前提条件の設定_
+         *図 4: 前提条件の設定。*
 
        - ツールを Azure サブスクリプションにポイントします。
 
          ![Azure Migrate の検出を設定するためのセクションのスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-register-azure.png)
-
-         _図 5:Azure サブスクリプション_
+         *図 5: Azure サブスクリプション。*
 
        - VMware vCenter の資格情報を設定します。
 
          ![VMware vCenter 資格情報を設定するためのセクションのスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-vcenter-server.png)
-
-         _図 6:VMware vCenter の資格情報の設定_
+         *図 6: VMware vCenter の資格情報の設定。*
 
        - 検出用の Windows ベースの資格情報を追加します。
 
-         ![VM アプリケーションと依存関係を検出するためのセクションのスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-credentials.png)
-
-         _図 7:検出用の Windows ベースの資格情報の追加_
+         ![VM のアプリケーションと依存関係を検出するためのセクションのスクリーンショット。](./media/contoso-migration-devtest-to-iaas/migration-credentials.png)
+         *図 7: 検出用の Windows ベースの資格情報の追加。*
 
 3. 構成が完了すると、ツールによりすべての VM が列挙されます。 このプロセスが完了すると、Azure の Azure Migrate ツールにそれらが設定されていることがわかります。
 
@@ -217,16 +210,14 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
 1. Azure Migrate プロジェクトで、 **[サーバー]**  >  **[Azure Migrate:Server Migration]** に移動します。 次に、 **[レプリケート]** を選択します。
 
     ![移行ツールの [レプリケート] ボタンを示すスクリーンショット。](./media/contoso-migration-devtest-to-iaas/select-replicate.png)
-
-    _図 8:VM のレプリケーション_
+    *図 8:VM のレプリケーション*
 
 2. **[レプリケート]**  >  **[ソースの設定]**  >  **[マシンは仮想化されていますか?]** で、 **[はい (VMware vSphere の場合)]** を選択します。
 
 3. **[オンプレミスのアプライアンス]** で、設定した Azure Migrate アプライアンスの名前を選択し、 **[OK]** を選択します。
 
     ![ソースの設定とアプライアンス名のボックスを示すスクリーンショット。](./media/contoso-migration-devtest-to-iaas/source-settings.png)
-
-    _図 9:ソースの設定_
+    *図 9:ソースの設定*
 
 4. **[仮想マシン]** で、レプリケートするマシンを選択します。
     - VM の評価を実行した場合は、評価結果から VM のサイズ設定とディスクの種類 (Premium または Standard) の推奨事項を適用できます。 これを行うには、 **[Azure Migrate Assessment から移行設定をインポートしますか?]** で **[はい]** オプションを選択します。
@@ -234,8 +225,7 @@ Contoso の管理者は、Azure への移行を実行する前に、レプリケ
     - 評価の使用を選択した場合は、VM グループと評価名を選択します。
 
       ![仮想マシンの評価の選択を示すスクリーンショット。](./media/contoso-migration-devtest-to-iaas/select-assessment.png)
-
-      _図 10:前提条件の設定方法_
+      *図 10: 前提条件の設定方法。*
 
 5. **[仮想マシン]** で、必要に応じて VM を検索し、移行する各 VM を確認します。 次に、 **[次のステップ: ターゲット設定]** をクリックします。
 
@@ -268,14 +258,12 @@ Contoso の管理者は、クイック テスト移行を実行し、その後�
 1. **[移行の目標]**  >  **[サーバー]**  >  **[Azure Migrate: Server Migration]** で、 **[移行されたサーバーをテストします]** を選択します。
 
     ![移行されたサーバーをテストするための選択を示すスクリーンショット。](./media/contoso-migration-devtest-to-iaas/test-migrated-servers.png)
-
-    _図 11:移行されたサーバーのテスト_
+    *図 11:移行されたサーバーのテスト*
 
 2. テストする VM を選択したまま (または右クリックし)、 **[テスト移行]** を選択します。
 
     ![移行テスト用のボタンを示すスクリーンショット。](./media/contoso-migration-devtest-to-iaas/test-migrate.png)
-
-    _図 12:移行のテスト_
+    *図 12:移行のテスト*
 
 3. **[テスト移行]** で、移行後に Azure VM が配置される仮想ネットワークを選択します。 非運用環境の仮想ネットワークを使用することをお勧めします。
 4. **テスト移行** ジョブが開始されます。 ポータルの通知でジョブを監視します。
@@ -283,8 +271,7 @@ Contoso の管理者は、クイック テスト移行を実行し、その後�
 6. テストが完了したら、 **[マシンのレプリケート]** で Azure VM を選択したまま (または右クリックし)、 **[テスト移行をクリーンアップ]** を選択します。
 
     ![テスト移行をクリーンアップするための選択内容を示すスクリーンショット。](./media/contoso-migration-devtest-to-iaas/clean-up.png)
-
-    _図 13:テスト移行のクリーンアップ_
+    *図 13:テスト移行のクリーンアップ*
 
 ### <a name="migrate-the-vms"></a>VM を移行する
 
@@ -293,8 +280,7 @@ Contoso の管理者は、クイック テスト移行を実行し、その後�
 1. Azure Migrate プロジェクトで、 **[サーバー]**  >  **[Azure Migrate:Server Migration]**  >  **[サーバーをレプリケートしています]** の順に選択します。
 
     ![サーバーをレプリケートするための選択を示すスクリーンショット。](./media/contoso-migration-devtest-to-iaas/replicating-servers.png)
-
-    _図 14: サーバーのレプリケート_
+    *図 14: サーバーのレプリケート*
 
 2. **[マシンのレプリケート]** で VM を選択したまま (または右クリックし)、 **[移行]** を選択します。
 3. **[移行]**  >  **[仮想マシンをシャットダウンし、データ損失のない計画された移行を実行しますか]** で、 **[はい]**  >  **[OK]** の順に選択します。 既定では、Azure Migrate によってオンプレミス VM がシャットダウンされ、前回のレプリケーションが発生した後に行われた VM の変更を同期するためにオンデマンド レプリケーションが実行されます。 こうすることで、データ損失がなくなります。 VM をシャットダウンしたくない場合は、 **[いいえ]** を選択します。
@@ -333,7 +319,7 @@ Contoso セキュリティ チームは、Azure VM を調査して、セキュ�
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
-Contoso は、すべての Azure 開発リソースがこの Dev/Test サブスクリプションを使用して作成されるようにすることで、コストを 80% 削減できます。 管理者は、[Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理を支援します。
+Contoso は、すべての Azure 開発リソースが Azure Dev/Test サブスクリプションを使用して作成されるようにすることで、コストを 80% 削減できます。 管理者は、[Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理を支援します。
 
 ## <a name="conclusion"></a>まとめ
 

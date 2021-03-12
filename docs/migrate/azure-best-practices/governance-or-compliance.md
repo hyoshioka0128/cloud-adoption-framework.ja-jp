@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: bb8b123e4b1414a63d58a23e9ca71e5723b39149
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: ef20ca5c73424ff5d8f1338f1838efb41ad9138c
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97013690"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786959"
 ---
 # <a name="governance-or-compliance-strategy"></a>ガバナンスまたはコンプライアンスの戦略
 
@@ -29,7 +29,7 @@ ms.locfileid: "97013690"
 
 **一般的なガバナンスのアプローチ:** [クラウド導入フレームワーク ガバナンス モデル](../../govern/guides/index.md)は、ほとんどの組織にとって十分なアプローチとなります。 これは、実用最小限の製品 (MVP) の実装と、それに続く、導入計画において特定された具体的なリスクに対処するための、ガバナンス成熟度のターゲットを定めた反復作業によって構成されます。 このアプローチでは、一貫したガバナンスを確立するために必要な最小限のツールが提供されます。そのため、チームはツールを理解できます。 それから、ガバナンスの一般的な懸念事項に対処するために、それらのツールに拡張が行われます。
 
-**国際標準化機構 (ISO) 27001 コンプライアンスのブループリント:** 組織が ISO コンプライアンス標準に準拠する必要がある場合は、[ISO 27001 共有サービス ブループリント サンプル](/azure/governance/blueprints/samples/iso27001-shared)が、より効果的な MVP として役立つことがあります。 このブループリントを使用すると、反復的プロセスの早い段階で、より豊富なガバナンス制約を生成できます。 [ISO 27001 App Service Environment/SQL Database ワークロード ブループリント サンプル](/azure/governance/blueprints/samples/iso27001-ase-sql-workload)を使用すると、共有サービス ブループリントを拡張してコントロールをマップし、アプリケーション環境用の共通アーキテクチャをデプロイできます。
+**国際標準化機構 (ISO) 27001 コンプライアンスのブループリント:** 組織が ISO コンプライアンス標準に準拠する必要がある場合は、[ISO 27001 共有サービス ブループリント サンプル](/azure/governance/blueprints/samples/iso27001-shared/)が、より効果的な MVP として役立つことがあります。 このブループリントを使用すると、反復的プロセスの早い段階で、より豊富なガバナンス制約を生成できます。 [ISO 27001 App Service Environment/SQL Database ワークロード ブループリント サンプル](/azure/governance/blueprints/samples/iso27001-ase-sql-workload/)を使用すると、ISO 27001 共有サービス ブループリントを拡張してコントロールをマップし、アプリケーション環境用の共通アーキテクチャをデプロイできます。
 
 **クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン テンプレート:** より堅牢なガバナンスの出発点が必要になることがあります。 その場合は、[クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン](../../ready/enterprise-scale/index.md)を検討してください。 クラウド導入フレームワークのエンタープライズ規模のランディング ゾーンのアプローチは、1,000 を超える資産 (アプリケーション、インフラストラクチャ、またはデータ資産) をクラウドでホストするという中期目標 (24 か月以内) を設けている導入チームに焦点を当てています。 クラウド導入フレームワークのエンタープライズ規模のランディング ゾーンは、このような大規模なクラウド導入の取り組みにおける複雑なガバナンス シナリオの "事実上の" 選択肢となります。
 

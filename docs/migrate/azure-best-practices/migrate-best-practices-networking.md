@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 62221d86b1bb9b13156118d216e5030fbe1462c7
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 3170fccd644e59ecac169e92230e12714fd26495
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026066"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101786925"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -70,7 +70,7 @@ Azure では、次の機能を備えた仮想ネットワークが提供され�
 - ハブとスポークの仮想ネットワークは異なるリソース グループに実装でき、異なるサブスクリプションに実装することもできます。 異なるサブスクリプションに属する仮想ネットワークをピアリングする場合、サブスクリプションを同じまたは異なる Azure Active Directory (Azure AD) テナントに関連付けることができます。 これにより、各ワークロードを分散管理しながら、ハブ ネットワークで維持されているサービスを共有できます。
 
 ![ハブ アンド スポーク トポロジの図](./media/migrate-best-practices-networking/hub-spoke.png)
-_図 1: ハブ アンド スポーク トポロジ。_
+*図 1: ハブ アンド スポーク トポロジ。*
 
 **詳細情報:**
 
@@ -102,7 +102,7 @@ _図 1: ハブ アンド スポーク トポロジ。_
 **詳細情報:**
 
 - [サブネットの設計](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)について学習する。
-- 架空の会社の Contoso が[移行用に自社のネットワーク インフラストラクチャを準備した](/azure/migrate/contoso-migration-infrastructure)方法を学習する。
+- 架空の会社の Contoso が[移行用に自社のネットワーク インフラストラクチャを準備した](/azure/cloud-adoption-framework/migrate/)方法を学習する。
 
 ## <a name="best-practice-set-up-a-dns-server"></a>ベスト プラクティス:DNS サーバーをセットアップする
 
@@ -118,11 +118,11 @@ _図 1: ハブ アンド スポーク トポロジ。_
 - Azure Resource Manager では、仮想ネットワークとネットワーク インターフェイスに対して DNS サーバーを指定できますが、仮想ネットワークでのみ設定を使用するのがベスト プラクティスです。
 
     ![仮想ネットワークの DNS サーバーのスクリーンショット。](./media/migrate-best-practices-networking/dns2.png)
-    "_図 2:仮想ネットワークの DNS サーバー。_ "
+    "*図 2:仮想ネットワークの DNS サーバー。* "
 
 **詳細情報:**
 
-- [独自の DNS サーバーを使用するときの名前解決](/azure/migrate/contoso-migration-infrastructure)について学習する。
+- [独自の DNS サーバーを使用するときの名前解決](/azure/cloud-adoption-framework/migrate/)について学習する。
 - [DNS の名前付け規則と制限事項](../../ready/azure-best-practices/naming-and-tagging.md)について学習する。
 
 ## <a name="best-practice-set-up-availability-zones"></a>ベスト プラクティス:Availability Zones を設定する
@@ -137,14 +137,14 @@ Availability Zones を設定する際に注意する必要があるいくつか�
 
     ![Azure リージョン内の Availability Zones の図。](./media/migrate-best-practices-networking/availability-zone.png)
 
-    "_図 3:Availability Zones。_ "
+    "*図 3:Availability Zones。* "
 
 - コンピューティング、ストレージ、ネットワーク、およびデータ リソースを 1 つのゾーン内に併置し、他のゾーンにレプリケートすることによって、高可用性を計画し、移行アーキテクチャに組み込むことができます。 Availability Zones をサポートしている Azure サービスは、次の 2 つのカテゴリに分類されます。
   - **ゾーン ベース サービス:** リソースは、VM、マネージド ディスク、IP アドレスなどの特定のゾーンに関連付けます。
   - **ゾーン冗長サービス:** リソースは、ゾーン冗長ストレージや Azure SQL Database などのゾーン間で自動的にレプリケートされます。
 - ゾーン ベースのフォールト トレランスを提供するために、インターネットに接続されたワークロードまたはアプリケーション層を備えた標準の Azure Load Balancer インスタンスをデプロイできます。
 
-    ![標準のロード バランサーの図](./media/migrate-best-practices-networking/load-balancer.png)"_図 4: ロード バランサー。_ "
+    ![標準のロード バランサーの図](./media/migrate-best-practices-networking/load-balancer.png)"*図 4: ロード バランサー。* "
 
 **詳細情報:**
 
@@ -186,17 +186,17 @@ Availability Zones を設定する際に注意する必要があるいくつか�
 - オンプレミスにローカル ネットワーク ゲートウェイを作成し、オンプレミスの VPN デバイスを構成します。
 - 仮想ネットワーク ゲートウェイとオンプレミス デバイスの間に、フェールオーバー サイト間 VPN 接続を作成します。 ルート ベースの VPN を使用すると、Azure に対してアクティブ/パッシブ接続またはアクティブ/アクティブ接続できます。 また、ルートベースのオプションでは、(任意のコンピューターからの) サイト間接続と (1 台のコンピューターからの) ポイント対サイト接続の両方が同時にサポートされます。
 - 使用するゲートウェイ SKU を指定します。 これは、ワークロードの要件、スループット、機能、および SLA に依存します。
-- ボーダー ゲートウェイ プロトコル (BGP) はオプション機能です。 これを Azure ExpressRoute とルートベースの VPN ゲートウェイで使用して、対象のオンプレミス BGP ルートを仮想ネットワークに伝達できます。
+- Border Gateway Protocol (BGP) はオプション機能です。 これを Azure ExpressRoute とルートベースの VPN ゲートウェイで使用して、対象のオンプレミス BGP ルートを仮想ネットワークに伝達できます。
 
-![サイト間 VPN の図](./media/migrate-best-practices-networking/vpn.png)
-"_図 5: サイト間 VPN。_ "
+![サイト間 VPN の図。](./media/migrate-best-practices-networking/vpn.png)
+*図 5: サイト間 VPN*
 
 **詳細情報:**
 
 - [互換性のあるオンプレミス VPN デバイス](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)を確認する。
 - [Azure VPN ゲートウェイの概要](/azure/vpn-gateway/vpn-gateway-about-vpngateways)を読む。
 - [高可用性 VPN 接続](/azure/vpn-gateway/vpn-gateway-highlyavailable)について学習する。
-- [VPN ゲートウェイの計画と設計](/azure/vpn-gateway/vpn-gateway-plan-design)について学習する。
+- [VPN ゲートウェイの計画と設計](/azure/vpn-gateway/vpn-gateway-about-vpngateways)について学習する。
 - [VPN ゲートウェイの設定](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku)を確認する。
 - [ゲートウェイの SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) を確認する。
 - [Azure VPN ゲートウェイでの BGP の設定](/azure/vpn-gateway/vpn-gateway-bgp-overview)について読む。
@@ -209,10 +209,6 @@ Azure で VPN ゲートウェイを作成するときは、`GatewaySubnet` と�
 - ゲートウェイ サブネットのアドレス空間を定義するときは、仮想ネットワーク アドレス空間の最後の部分を使用します。
 - Azure ゲートウェイ サブネットを使用するときは、VM または Azure Application Gateway などの他のデバイスをゲートウェイ サブネットにデプロイしないでください。
 - このサブネットにはネットワーク セキュリティ グループ (NSG) を割り当てないでください。 ゲートウェイが機能を停止する原因になります。
-
-**詳細情報:**
-
-- [このツールを使用](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)して IP アドレス空間を決定する。
 
 ## <a name="best-practice-implement-azure-virtual-wan-for-branch-offices"></a>ベスト プラクティス:ブランチ オフィス用に Azure Virtual WAN を実装する
 
@@ -265,7 +261,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
   - WAN ネットワークでは、両方のプレフィックスが `West US` より `East US` に近いものと見なすことができるため、両方のオフィスのユーザーが `East US` の ExpressRoute 回線にルーティングされます。 これにより、ロサンゼルス オフィスのユーザーのエクスペリエンスが悪くなります。
 
 ![間違った回線を経由するルート パスが設定された VPN の図](./media/migrate-best-practices-networking/bgp1.png)
-"_図 6: BGP コミュニティの最適化されていない接続。_ "
+"*図 6: BGP コミュニティの最適化されていない接続。* "
 
 **解決方法:**
 
@@ -278,7 +274,7 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
 - この構成により、Microsoft に対して両方のパスを使用できる場合、ロサンゼルスのユーザーは西部の回線を使用して `West US` リージョンに接続し、ニューヨークのユーザーは東部の回線を使用して `East US` リージョンに接続します。
 
 ![正しい回線を経由するルート パスが設定された VPN の図](./media/migrate-best-practices-networking/bgp2.png)
-"_図 7: BGP コミュニティの最適化された接続。_ "
+"*図 7: BGP コミュニティの最適化された接続。* "
 
 **詳細情報:**
 
@@ -310,7 +306,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 2 つのセキュリティ境界がある企業ネットワークにおける単一のサブネット境界ネットワークの例を次に示します。
 
 ![Azure Virtual Network 境界ネットワークのデプロイの図。](./media/migrate-best-practices-networking/perimeter.png)
-"_図 8: 境界ネットワークのデプロイ。_ "
+"*図 8: 境界ネットワークのデプロイ。* "
 
 **詳細情報:**
 
@@ -354,8 +350,8 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 
 **詳細情報:**
 
-- [ネットワーク セキュリティ グループ (NSG)](/azure/virtual-network/security-overview) の概要を読む。
-- [NSG に使用可能なサービス タグ](/azure/virtual-network/security-overview#service-tags)を確認する。
+- [ネットワーク セキュリティ グループ (NSG)](/azure/virtual-network/network-security-groups-overview) の概要を読む。
+- [NSG に使用可能なサービス タグ](/azure/virtual-network/network-security-groups-overview#service-tags)を確認する。
 
 ## <a name="best-practice-use-application-security-groups"></a>ベスト プラクティス:アプリケーション セキュリティ グループを使用する
 
@@ -368,7 +364,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 **例:**
 
 ![アプリケーション セキュリティ グループの図](./media/migrate-best-practices-networking/asg.png)
-"_図 9: アプリケーション セキュリティ グループの例。_ "
+"*図 9: アプリケーション セキュリティ グループの例。* "
 
 | ネットワーク インターフェイス | アプリケーション セキュリティ グループ |
 | --- | --- |
@@ -389,7 +385,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 
 **詳細情報:**
 
-- [アプリケーション セキュリティ グループ](/azure/virtual-network/security-overview#application-security-groups)について学習する。
+- [アプリケーション セキュリティ グループ](/azure/virtual-network/network-security-groups-overview#application-security-groups)について学習する。
 
 ### <a name="best-practice-secure-access-to-paas-by-using-virtual-network-service-endpoints"></a>ベスト プラクティス:仮想ネットワーク サービス エンドポイントを使用して PaaS へのアクセスをセキュリティで保護する
 
@@ -400,7 +396,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 - 対象の仮想ネットワークでサービス エンドポイントを有効にした後は、Azure サービス リソースに仮想ネットワーク規則を追加することで、このサービス リソースをセキュリティで保護できます。 こうして、リソースへのパブリック インターネット アクセスを完全に排除し、仮想ネットワークからのトラフィックのみを許可することにより、セキュリティが強化されます。
 
 ![サービス エンドポイントの図。](./media/migrate-best-practices-networking/endpoint.png)
-"_図 10: サービス エンドポイント。_ "
+"*図 10: サービス エンドポイント。* "
 
 **詳細情報:**
 
@@ -420,7 +416,7 @@ Azure 内のパブリック IP アドレスは、VM、ロード バランサー�
 
 **詳細情報:**
 
-- [Azure でのパブリック IP アドレス](/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
+- [Azure でのパブリック IP アドレス](/azure/virtual-network/public-ip-addresses#public-ip-addresses)
 - [Just-In-Time を使用した仮想マシン アクセスの管理](/azure/security-center/security-center-just-in-time)
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>Azure のネットワークに対するセキュリティ機能を利用する
@@ -432,7 +428,7 @@ Azure には、Azure Firewall、Web Application Firewall、Network Watcher な�
 Azure Firewall は、お使いの仮想ネットワーク リソースを保護するのに役立つ、クラウドベースのマネージド ネットワーク セキュリティ サービスです。 これは、組み込みの高可用性とクラウドによる無制限のスケーラビリティを備えた、完全にステートフルなマネージド ファイアウォールです。
 
 ![Azure Firewall の図。](./media/migrate-best-practices-networking/firewall.png)
-"_図 11: Azure Firewall。_ "
+"*図 11: Azure Firewall。* "
 
 このサービスをデプロイする場合は、次のいくつかの点に注意してください。
 
@@ -466,15 +462,15 @@ WAF についての追加の注意事項を次に示します。
 
 **詳細情報:**
 
-- [WAF](/azure/application-gateway/waf-overview) について学習する。
-- [WAF の制限事項と除外事項](/azure/application-gateway/application-gateway-waf-configuration)を確認する。
+- [WAF](/azure/web-application-firewall/ag/ag-overview) について学習する。
+- [WAF の制限事項と除外事項](/azure/web-application-firewall/ag/application-gateway-waf-configuration)を確認する。
 
 ## <a name="best-practice-implement-azure-network-watcher"></a>ベスト プラクティス:Azure Network Watcher を実装する
 
 Azure Network Watcher には、Azure 仮想ネットワーク内のリソースと通信を監視するためのツールが用意されています。 たとえば、VM とエンドポイント (別の VM や FQDN など) との間の通信を監視できます。 また、仮想ネットワーク内のリソースやリソースの関係を表示したり、ネットワーク トラフィックの問題を診断したりすることもできます。
 
 ![Network Watcher のスクリーンショット。](./media/migrate-best-practices-networking/network-watcher.png)
-"_図 12: Network Watcher。_ "
+"*図 12: Network Watcher。* "
 
 追加の詳細情報を以下にいくつか示します。
 
@@ -487,7 +483,7 @@ Azure Network Watcher には、Azure 仮想ネットワーク内のリソース�
 
 **詳細情報:**
 
-- [Network Watcher の概要](/azure/network-watcher)を読む。
+- [Network Watcher の概要](/azure/network-watcher/)を読む。
 - [NSG のフロー ログ](/azure/network-watcher/network-watcher-nsg-flow-logging-overview)の詳細を確認する。
 
 ## <a name="use-partner-tools-in-azure-marketplace"></a>Azure Marketplace のパートナー ツールを使用する
@@ -504,7 +500,7 @@ Azure Network Watcher には、Azure 仮想ネットワーク内のリソース�
 
 | ファイアウォールの種類 | 詳細 |
 | --- | --- |
-| WAF | Web アプリケーションは一般的であり、脆弱性や潜在的な悪用の影響を受ける傾向があります。 WAF は、Web アプリケーション (HTTP、HTTPS) に対する攻撃を検出するように設計されています。 従来のファイアウォール テクノロジと比較すると、WAF は内部 Web サーバーを脅威から保護する特定の機能セットを備えています。 |
+| WAF | Web アプリケーションは一般的であり、脆弱性や潜在的な悪用の影響を受ける傾向があります。 WAF は、Web アプリケーション (HTTP、HTTPS) に対する攻撃を検出するように設計されています。 従来のファイアウォール テクノロジと比較すると、WAF は脅威から内部 Web サーバーを保護する特定の機能セットを備えています。 |
 | Azure Firewall | NVA ファイアウォール ファームのように、Azure Firewall では、一般的な管理メカニズムとセキュリティ規則セットを使用して、スポーク ネットワークでホストされているワークロードが保護されます。 Azure Firewall は、オンプレミスのネットワークへのアクセスを制御するのにも役立ちます。 Azure Firewall にはスケーラビリティが組み込まれています。 |
 | NVA ファイアウォール | Azure Firewall と同様に、NVA ファイアウォール ファームでは、一般的な管理メカニズムとセキュリティ規則セットを使用して、スポーク ネットワークでホストされているワークロードが保護されます。 NVA ファイアウォールは、オンプレミスのネットワークへのアクセスを制御するのにも役立ちます。 NVA ファイアウォールは、ロード バランサーの後方で手動スケーリングできます。 <br><br> NVA ファイアウォールは WAF ほど特化したソフトウェアではありませんが、エグレスおよびイングレスのあらゆる種類のトラフィックをフィルター処理して検査する広範な適用範囲を備えています。 |
 

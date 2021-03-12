@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 7a5149b49e2a50590da2dbbda14f4e6c40ffdc16
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: c36d5b5213d74b0e31890e94b5ac292738e9f2e8
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631493"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101787027"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "100631493"
 IT リーダーシップ チームは、ビジネス パートナーと密接に連絡を取り合い、彼らがこの移行で何を達成しようとしているのかを理解しました。 目的は次のとおりです。
 
 - **可用性の向上。** Contoso は、オンプレミスの MySQL 環境で可用性の問題を抱えていました。 ビジネス部門は、このデータ ストアを使用するアプリケーションの信頼性を高めることを求めています。
-- **効率化。** Contoso では、不要な手順を排除し、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は、顧客の要求により迅速に対応するために、IT 部門に対して、時間やコストを無駄にせず、迅速に作業を行うことを求めています。
+- **効率化。** Contoso では、不要な手順を取り除き、開発者とユーザーのプロセスを効率化する必要があります。 ビジネス部門は、顧客の要求により迅速に対応するために、IT 部門に対して、時間やコストを無駄にせず、迅速に作業を行うことを求めています。
 - **機敏性の向上。** Contoso IT は、ビジネス部門の要求に対して、対応力を向上させる必要があります。 また、グローバル経済で成功を収めるために、市場の変化よりも迅速に対応する必要があります。 ビジネスの妨げにならないようにする必要があります。
 - **スケール。** ビジネスが順調に成長している中で、Contoso IT 部門は、同じペースで拡張するシステムを提供する必要があります。
 
@@ -50,7 +50,7 @@ Contoso は、目標と要件を明確にした後、デプロイ ソリュー�
 
 ### <a name="current-application"></a>現在のアプリケーション
 
-MySQL データベースには、会社の HR 部門のあらゆる側面に使用される従業員データが格納されています。 [LAMP ベース](https://wikipedia.org/wiki/LAMP_(software_bundle))のアプリケーションは、従業員の HR 要求を処理するフロントエンドとして使用されています。 Contoso は世界中に 100,000 人の従業員を抱えているので、アップタイムが重要になります。
+MySQL データベースには、会社の HR 部門のあらゆる側面に使用される従業員データが格納されています。 [LAMP ベース](https://wikipedia.org/wiki/LAMP_software_bundle)のアプリケーションは、従業員の HR 要求を処理するフロントエンドとして使用されています。 Contoso は世界中に 100,000 人の従業員を抱えているので、アップタイムが重要になります。
 
 ### <a name="proposed-solution"></a>提案されるソリューション
 
@@ -81,7 +81,7 @@ Contoso は、長所と短所の一覧をまとめて、提案されたデザイ
 ## <a name="proposed-architecture"></a>提案されたアーキテクチャ
 
 ![シナリオのアーキテクチャを示す図。](./media/contoso-migration-mysql-to-azure/architecture.png)
-_図 1: シナリオのアーキテクチャ_
+*図 1: シナリオのアーキテクチャ*
 
 ### <a name="migration-process"></a>移行プロセス
 
@@ -91,7 +91,7 @@ MySQL データベースを移行する前に、移行を成功させるため�
 
 #### <a name="supported-versions"></a>サポートされているバージョン
 
-MySQL では、_x.y.z_ バージョン管理スキームが使用されています。ここで、_x_ はメジャー バージョン、_y_ はマイナー バージョン、_z_ はパッチ バージョンです。
+MySQL では、`x.y.z` バージョン管理スキームが使用されています。ここで、`x` はメジャー バージョン、`y` はマイナー バージョン、`z` はパッチ バージョンです。
 
 Azure では現在、MySQL バージョン10.2.25 と 10.3.16 がサポートされています。
 
@@ -102,7 +102,7 @@ Azure では、パッチの更新プログラムのアップグレードが自�
 Contoso は、オンプレミス環境から、MySQL データベースが配置されている仮想ネットワークへの仮想ネットワーク ゲートウェイ接続を設定する必要があります。 この接続より、接続文字列が更新されたときに、オンプレミス アプリケーションはゲートウェイを介してデータベースにアクセスできるようになります。
 
 ![移行プロセスを示す図。](./media/contoso-migration-mysql-to-azure/migration-process.png)
-_図 2: 移行プロセス_
+*図 2: 移行プロセス*
 
 #### <a name="migration"></a>移行
 
@@ -124,7 +124,7 @@ Contoso の管理者は、Azure Database Migration Service を使用し、[ス�
 - 新しい Database Migration Service プロジェクトを作成します。
 
   ![新しい Database Migration Service プロジェクトを作成する方法を示すスクリーンショット](./media/contoso-migration-mysql-to-azure/migration-dms-new-project.png)
-  _図 3: Azure Database Migration Service プロジェクト。_
+  *図 3: Azure Database Migration Service プロジェクト。*
 
 #### <a name="migration-by-using-native-tools"></a>ネイティブ ツールを使用した移行
 
@@ -153,7 +153,7 @@ Contoso は次のことを行う必要があります。
 - 新しい Azure Database for MySQL インスタンスとデータベースを確実にセキュリティで保護します。 詳細については、「[Azure Database for MySQL のセキュリティ](/azure/mysql/concepts-security)」をご覧ください。
 - ファイアウォールと仮想ネットワークの構成を確認します。
 - Private Link を設定して、すべてのデータベース トラフィックが Azure とオンプレミスのネットワーク内に保持されるようにします。
-- Azure Advanced Threat Protection を有効にします。
+- Microsoft Defender for Identity を有効化します。
 
 ### <a name="backups"></a>バックアップ
 

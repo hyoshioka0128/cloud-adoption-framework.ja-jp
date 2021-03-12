@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 80fa19f514e425bf11fee61a6f245290d49bb3d3
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 9d3bde2d46e3a447a1a3bdcd3ad48634860e8259
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174473"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791311"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>リソースの整合性の規範の改良
 
@@ -21,9 +21,8 @@ ms.locfileid: "98174473"
 
 この記事では、会社の "リソースの整合性" 規範をより適切に発展させ成熟させていくために取り入れることができる、タスクの候補の概要を示します。 これらのタスクは、クラウド ソリューション実装の計画、構築、導入、および運用フェーズに分類できます。これらのフェーズは繰り返され、[クラウド ガバナンスへの増分アプローチ](../guides/index.md#an-incremental-approach-to-cloud-governance)を開発できるようになります。
 
-![クラウド ガバナンスに対する増分型アプローチのフェーズ](../../_images/govern/adoption-phases.png)
-
-"*図 1:クラウド ガバナンスに対する増分型アプローチのフェーズ。* "
+![クラウド ガバナンスへの段階的なアプローチのフェーズ](../../_images/govern/adoption-phases.png)
+*図 1: クラウド ガバナンスへの段階的なアプローチのフェーズ*
 
 1 つのドキュメントですべての企業の要件を説明することはできません。 そのため、この記事ではガバナンス成熟プロセスのフェーズごとに、推奨される最小限のアクティビティと、考えられるアクティビティの例を示します。 これらのアクティビティの最初の目標は、お客様が[ポリシーの MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) を構築し、段階的にポリシーを向上させるためのフレームワークを確立できるように支援することです。 クラウド ガバナンス チームは、"リソースの整合性" 規範を向上させるためにこれらのアクティビティにどれだけ投資するかを決定する必要があります。
 
@@ -122,7 +121,7 @@ ms.locfileid: "98174473"
 - クラウド導入チームとクラウド戦略チームがこれらの異常を理解して解決するのを手伝います。
 - 課金や SLA に関して "リソースの整合性" 規範に変更を加える必要があるかどうかを判断します。
 - ログ記録と監視のツールを評価し、自組織のオンプレミス、クラウド ゲートウェイ、またはハイブリッド ソリューションの調整が必要かどうかを判断します。
-- ビジネス ユニットや地理的に分散したグループについて、一元化したポリシーの適用と SLA 要件の達成のために、追加のクラウド管理機能 ([Azure 管理グループ](/azure/governance/management-groups)など) の使用を検討すべきかどうかを判断します。
+- ビジネス ユニットや地理的に分散したグループについて、一元化したポリシーの適用と SLA 要件の達成のために、追加のクラウド管理機能 ([Azure 管理グループ](/azure/governance/management-groups/)など) の使用を検討すべきかどうかを判断します。
 
 ## <a name="next-steps"></a>次のステップ
 
@@ -130,5 +129,5 @@ ms.locfileid: "98174473"
 
 > [!div class="nextstepaction"]
 > [Azure でのリソース アクセス管理について学習する](./resource-access-management.md)
-> [Azure のサービス レベル アグリーメントについて学習する](https://azure.microsoft.com/support/legal/sla)
+> [Azure のサービス レベル アグリーメントについて学習する](https://azure.microsoft.com/support/legal/sla/)
 > [ログ記録、レポート、監視について学習する](../../decision-guides/logging-and-reporting/index.md)

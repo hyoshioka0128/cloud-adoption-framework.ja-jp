@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 20e59c014198d5260aad110b21c2eda82ad65369
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: f5ddb6c25b237dee2f6f0d09aef027aedfb1a8f7
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018382"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790257"
 ---
 # <a name="engage-via-applications"></a>アプリケーションを介したエンゲージ
 
@@ -36,7 +36,7 @@ ms.locfileid: "97018382"
 
 プロ開発者はイノベーションに欠かせない存在です。 仮説が大筋で正しいことが証明されたら、大規模なソリューションを安定させて準備するためにプロ開発者が必要とされます。 この記事で述べる原則のほとんどには、プロ開発者のサポートが必要です。 残念ながら、現在のトレンドでは、開発者よりプロ開発者の需要が多いことが示されています。 さらに、プロフェッショナル開発が要求されれば、イノベーションのコストとペースはいっそう不十分になる可能性があります。 これらの課題に対し、市民開発者は、開発作業を拡大し、初期仮説の検証を迅速化する手段を提供します。
 
-アプリケーション インターフェイスのための [Power Apps](/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](/powerapps/use-ai-builder)、ワークフローのための [Microsoft Power Automate](/power-automate)、データ利用のための [Power BI](/power-bi) といったツールを使用して初期仮説を検証できる場合、市民開発者を利用することが実用的で効果的な可能性があります。
+アプリケーション インターフェイスのための [Power Apps](/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](/powerapps/use-ai-builder)、ワークフローのための [Microsoft Power Automate](/power-automate/)、データ利用のための [Power BI](/power-bi/) といったツールを使用して初期仮説を検証できる場合、市民開発者を利用することが実用的で効果的な可能性があります。
 
 > [!NOTE]
 > 仮説のテストを市民開発者に頼るときは、プロ開発者がサポート、レビュー、ガイダンスを提供できるようにしておくことが推奨されます。 仮説が大筋で検証されたら、より堅牢なプログラミング モデルにアプリケーションを移行するプロセスによって、イノベーションの成果をさらに得られるようになります。 初期のプロセス定義にプロ開発者が関与すれば、後々の移行をよりクリーンにできる可能性があります。
@@ -104,9 +104,9 @@ ms.locfileid: "97018382"
 
 ソリューション内で保守するものが多ければ多いほど、ソリューションのイテレーションには時間がかかります。 これは、利用可能な帯域幅に対する運用の影響を減らすことで、イノベーションを加速できることを意味します。
 
-革新的なソリューションを提供するために必要な多くのイテレーションに備えるには、先を読むことが重要です。 たとえば、サーバーレス オプションを優先することによって、プロセス初期の運用負担を最小化します。 Azure では、[Azure App Service](/azure/app-service/overview) や[コンテナー](/azure/containers)をサーバーレス アプリケーションの選択肢に含めることができます。
+革新的なソリューションを提供するために必要な多くのイテレーションに備えるには、先を読むことが重要です。 たとえば、サーバーレス オプションを優先することによって、プロセス初期の運用負担を最小化します。 Azure では、[Azure App Service](/azure/app-service/overview) や[コンテナー](/azure/containers/)をサーバーレス アプリケーションの選択肢に含めることができます。
 
-これと並行して、Azure では、同じくオーバーヘッドを削減するサーバーレスのトランザクション データという選択肢が提供されます。 [Azure 製品カタログ](/azure) には、完全なデータ プラットフォームを必要とせずにデータをホストするためのデータベース オプションが用意されています。
+これと並行して、Azure では、同じくオーバーヘッドを削減するサーバーレスのトランザクション データという選択肢が提供されます。 [Azure 製品カタログ](/azure/) には、完全なデータ プラットフォームを必要とせずにデータをホストするためのデータベース オプションが用意されています。
 
 ## <a name="next-steps"></a>次のステップ
 

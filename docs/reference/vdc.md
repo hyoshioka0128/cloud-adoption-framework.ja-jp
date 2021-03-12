@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank
-ms.openlocfilehash: 0ee118444a1bad009f5815029e98520c3bc14fbc
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d52a77b668ce94caf56a83aaac0da2a9cc6e14a3
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025845"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784613"
 ---
 <!-- docutune:ignore "Azure Virtual Datacenter" -->
 
 # <a name="azure-virtual-datacenter"></a>Azure 仮想データセンター
 
-以前の Azure Virtual Datacenter (VDC) アプローチに基づいて構築するために、より堅牢なプラットフォーム アーキテクチャと実装が作成されました。 Azure 用の Microsoft クラウド導入フレームワークの[エンタープライズ規模ランディング ゾーン](../ready/enterprise-scale/index.md)は、より大規模なクラウド導入の取り組みに推奨されるアプローチになりました。
+以前の Azure 仮想データセンター (VDC) アプローチに基づいて構築するために、より堅牢なプラットフォーム アーキテクチャと実装が作成されました。 Azure 用の Microsoft クラウド導入フレームワークの[エンタープライズ規模ランディング ゾーン](../ready/enterprise-scale/index.md)は、より大規模なクラウド導入の取り組みに推奨されるアプローチになりました。
 
 以下のガイダンスは、クラウド導入フレームワークにおける[準備手法](../ready/index.md)と[ガバナンス手法](../govern/index.md)のための基盤の重要な部分として機能します。 この移行を行うお客様をサポートするために、次のリソースはアーカイブされており、別の GitHub リポジトリに保持されます。
 
-- [Azure 仮想データセンター](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf):この電子書籍では、既存のセキュリティとネットワーク ポリシーを順守しながら、エンタープライズ ワークロードを Azure クラウド プラットフォームにデプロイする方法について説明します。
-- [Azure 仮想データ センター リフトアンドシフト ガイド](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf):このホワイト ペーパーでは、大企業の IT スタッフや意思決定者がリフトアンドシフト アプローチを使用して、Azure へのアプリケーションとサーバーの移行方法を特定して計画するために使用できるプロセスについて説明します。これにより、追加の開発コストを最小限に抑えながらクラウドのホスティング オプションを最適化できます。
+- [Azure 仮想データセンター](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf): この電子書籍では、既存のセキュリティとネットワーク ポリシーを順守しながら、エンタープライズ ワークロードを Azure クラウド プラットフォームにデプロイする方法について説明します。
+- [Azure 仮想データセンター リフトアンドシフト ガイド](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf): このホワイト ペーパーでは、大企業の IT スタッフや意思決定者がリフトアンドシフト アプローチを使用して、Azure へのアプリケーションとサーバーの移行方法を特定して計画するために使用できるプロセスについて説明します。これにより、他の開発コストを最小限に抑えながらクラウドのホスティング オプションを最適化できます。

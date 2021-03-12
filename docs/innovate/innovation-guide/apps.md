@@ -1,6 +1,6 @@
 ---
-title: App Services を使用したアプリの構築とエンゲージメント
-description: クラウドネイティブ アプリを構築し、既存の Web および API アプリを簡単に最新化します。 Azure App Service、Azure DevOps、Visual Studio App Center について説明します。
+title: App Services を使用したアプリケーションの構築とエンゲージメント
+description: クラウドネイティブ アプリを構築し、既存の Web および API アプリケーションを簡単に最新化します。 Azure App Service、Azure DevOps、Visual Studio App Center について説明します。
 author: billyclaymyersmsft
 ms.author: brblanch
 ms.date: 01/27/2021
@@ -10,16 +10,16 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC, seo-caf-innovate
 keywords: Azure App Service, App Service Azure, App Service, アプリの構築, クラウドネイティブ アプリ, クラウドネイティブ アプリケーション
-ms.openlocfilehash: e1fe2fb351fed0e092e2d669d2aa7c9384dce2e5
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: a21923856c7e3faa10d5cfaf646fc3691858df73
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632105"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790223"
 ---
 # <a name="engage-customers-through-applications"></a>アプリケーションを介したカスタマー エンゲージメント
 
-クラウドネイティブ アプリを構築すると、新しい方法で顧客とつながることができます。 クラウドネイティブ アプリケーションは一から構築され、クラウドの規模やパフォーマンスに合わせて最適化されます。 クラウドネイティブ アプリは、マイクロサービスのアーキテクチャに基づいており、マネージド サービスを使用します。また、継続的デリバリーを利用して高い信頼性を実現し、市場投入までの時間を短縮します。
+クラウドネイティブ アプリケーションを構築すると、新しい方法で顧客とつながることができます。 クラウドネイティブ アプリケーションは一から構築され、クラウドの規模やパフォーマンスに合わせて最適化されます。 クラウドネイティブ アプリケーションは、マイクロサービスのアーキテクチャに基づいており、マネージド サービスを使用します。また、継続的デリバリーを利用して高い信頼性を実現し、市場投入までの時間を短縮します。
 
 アプリケーションによるイノベーションには、オンプレミスでホストされている既存のアプリケーションの最新化と、コンテナーまたはサーバーレス テクノロジを使用したクラウドネイティブなアプリケーションの構築の両方が含まれます。 Azure では、.NET、.NET Core、Java、Node.js、Ruby、Python、または PHP で記述された既存の Web アプリや API アプリを簡単に最新化して Azure にデプロイできるよう支援する PaaS サービス (Azure App Service など) が提供されます。
 
@@ -101,26 +101,26 @@ Azure Bot Service デプロイを構成または監視するには、次の手�
 
 ### <a name="azure-devops"></a>Azure DevOps
 
-イノベーションの過程では、最終的に DevOps に向かって進むことになります。 Microsoft には長い間、Team Foundation Server (TFS) と呼ばれるオンプレミス製品がありました。 Microsoft は独自のイノベーションの過程で、リリースのさまざまな言語や目的に対応するビルド ツールとリリース ツールを提供するクラウドベースのサービスである Azure DevOps を開発しました。 詳細については、[Azure DevOps](/azure/devops) のページをご覧ください。
+イノベーションの過程では、最終的に DevOps に向かって進むことになります。 Microsoft には長い間、Team Foundation Server (TFS) と呼ばれるオンプレミス製品がありました。 Microsoft は独自のイノベーションの過程で、リリースのさまざまな言語や目的に対応するビルド ツールとリリース ツールを提供するクラウドベースのサービスである Azure DevOps を開発しました。 詳細については、[Azure DevOps](/azure/devops/) のページをご覧ください。
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-モバイル アプリの人気が上がり続ける中、さまざまな構成を持つ実際のデバイスでテストを自動化できるプラットフォームに対するニーズが増えています。 Visual Studio App Center は、iOS、Android、Windows、macOS をまたいでクラウドネイティブ アプリケーションをテストできる場所だけでなく、Azure Application Insights を使用してテレメトリをすばやく簡単に分析できる監視プラットフォームも提供します。 詳細については、[Visual Studio App Center](/appcenter) に関するページを参照してください。
+モバイル アプリの人気が上がり続ける中、さまざまな構成を持つ実際のデバイスでテストを自動化できるプラットフォームに対するニーズが増えています。 Visual Studio App Center は、iOS、Android、Windows、macOS をまたいでクラウドネイティブ アプリケーションをテストできる場所だけでなく、Azure Application Insights を使用してテレメトリをすばやく簡単に分析できる監視プラットフォームも提供します。 詳細については、[Visual Studio App Center](/appcenter/) に関するページを参照してください。
 
-Visual Studio App Center からは通知サービスも提供されます。1 回の呼び出しでプラットフォームに関係なく通知をアプリケーションに送信できます。通知サービス別に連絡する必要がありません。 詳細については、「[Visual Studio App Center Push (ACP)](/appcenter/push)」を参照してください。
+Visual Studio App Center からは通知サービスも提供されます。1 回の呼び出しでプラットフォームに関係なく通知をアプリケーションに送信できます。通知サービス別に連絡する必要がありません。 詳細については、「[Visual Studio App Center Push (ACP)](/appcenter/push/)」を参照してください。
 
 ### <a name="learn-more"></a>詳細情報
 
 - [App Service の概要](/azure/app-service/overview)
-- [Web App for Containers: カスタム コンテナーの実行](/azure/app-service/containers/quickstart-docker)
+- [Web App for Containers: カスタム コンテナーの実行](/azure/app-service/quickstart-custom-container?pivots=platform-linux)
 - [Azure Functions の概要](/azure/azure-functions/functions-overview)
-- [.NET および .NET Core 開発者向けの Azure](/dotnet/azure)
-- [Azure SDK for Python のドキュメント](/azure/python)
-- [Java クラウド開発者向けの Azure](/azure/developer/java)
-- [Azure に PHP Web アプリを作成する](/azure/app-service/app-service-web-get-started-php)
-- [Azure SDK for JavaScript のドキュメント](/azure/javascript)
-- [Azure SDK for Go のドキュメント](/azure/go)
-- [DevOps ソリューション](https://azure.microsoft.com/solutions/devops)
+- [.NET および .NET Core 開発者向けの Azure](/dotnet/azure/)
+- [Azure SDK for Python のドキュメント](/azure/developer/python/)
+- [Java クラウド開発者向けの Azure](/azure/developer/java/)
+- [Azure に PHP Web アプリを作成する](/azure/app-service/quickstart-php)
+- [Azure SDK for JavaScript のドキュメント](/azure/developer/javascript/)
+- [Azure SDK for Go のドキュメント](/azure/developer/go/)
+- [DevOps ソリューション](https://azure.microsoft.com/solutions/devops/)
 
 ## <a name="create-cloud-native-applications"></a>[クラウドネイティブ アプリケーションの作成](#tab/CloudNative)
 
@@ -349,5 +349,5 @@ Azure CDN プロファイルを構成または監視するには:
 ### <a name="learn-more"></a>詳細情報
 
 - [Azure Front Door](/azure/frontdoor/front-door-overview)
-- [Traffic Manager](/azure/traffic-manager)
-- [Azure Content Delivery Network](/azure/cdn)
+- [Traffic Manager](/azure/traffic-manager/)
+- [Azure Content Delivery Network](/azure/cdn/)

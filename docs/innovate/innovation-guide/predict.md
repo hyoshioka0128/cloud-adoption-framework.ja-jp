@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
 keywords: ビジネス プロセスの自動化, AI イノベーション, 機械学習, ナレッジ マイニング
-ms.openlocfilehash: cc42a37a151c3f0c60fe58d3e1137093de7237f3
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 1b61201bba7af957b661fa9f755350482b3db955
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632054"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101790206"
 ---
 <!-- cSpell:ignore ONNX -->
 
@@ -40,7 +40,7 @@ ms.locfileid: "100632054"
 
 Azure には高度な機械学習機能が用意されています。 Azure Machine Learning を使用すると、クラウドとエッジ全体で機械学習モデルを構築、トレーニング、デプロイできます。 自動機械学習を使用すると、モデルを短時間で開発できます。 拘束されることなく、任意のツールとフレームワークを使用できます。
 
-詳細については、[Azure Machine Learning の概要](/azure/machine-learning/overview-what-is-azure-ml)と[初めての機械学習実験の概要](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)に関するページを参照してください。 機械学習のオープンソース モデルの形式とランタイムの詳細については、[ONNX Runtime](http://onnxruntime.ai) を参照してください。
+詳細については、[Azure Machine Learning の概要](/azure/machine-learning/overview-what-is-azure-ml)と[初めての機械学習実験の概要](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)に関するページを参照してください。 機械学習のオープンソース モデルの形式とランタイムの詳細については、[ONNX Runtime](https://www.onnxruntime.ai/) を参照してください。
 
 <!-- markdownlint-disable MD024 -->
 
@@ -146,7 +146,7 @@ Azure Bot Service の使用を開始するには:
 
 ## <a name="knowledge-mining"></a>ナレッジ マイニング
 
-ナレッジ マイニングでは、人工知能 (AI) を使用して、膨大な量の非構造化、半構造化、構造化情報に対するコンテンツの解釈を促進します。 Azure Cognitive Search を使用すると、ドキュメント、画像、メディアなどのコンテンツに潜む分析情報を明らかにすることができます。 コンテンツに含まれるパターンや関係を発見したり、センチメントを理解したり、キー フレーズを抽出したりできます。
+ナレッジ マイニングでは、AI を使用して、膨大な量の非構造化、半構造化、構造化情報に対するコンテンツの解釈を促進します。 Azure Cognitive Search を使用すると、ドキュメント、画像、メディアなどのコンテンツに潜む分析情報を明らかにすることができます。 コンテンツに含まれるパターンや関係を発見したり、センチメントを理解したり、キー フレーズを抽出したりできます。
 
 <!-- docutune:ignore "Azure Search" -->
 

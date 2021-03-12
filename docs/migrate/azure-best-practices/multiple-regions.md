@@ -8,25 +8,25 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: internal
-ms.openlocfilehash: 2fd34ffd8293645ac3035e54e0ace76ffbd5dde3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1e65c1aabade75f5ad44289c4440c3b40ded1d2d
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025896"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788931"
 ---
 # <a name="azure-regions-decision-guide"></a>Azure リージョンの決定ガイド
 
-Azure は、世界中のさまざまなリージョンで構成されています。 各 [Azure リージョン](https://azure.microsoft.com/global-infrastructure/regions)には固有の特性があり、それによって使用するリージョンの選択が非常に重要になります。 これには、利用可能なサービス、容量、制約、および主権が含まれます。
+Azure は、世界中のさまざまなリージョンで構成されています。 各 [Azure リージョン](https://azure.microsoft.com/global-infrastructure/geographies/)には固有の特性があり、それによって使用するリージョンの選択が非常に重要になります。 これには、利用可能なサービス、容量、制約、および主権が含まれます。
 
-- **利用可能なサービス:** 各リージョンにデプロイされるサービスは、さまざまな要因によって異なります。 目的のサービスを含むワークロードのリージョンを選択してください。 詳細については、「[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services)」を参照してください。
+- **利用可能なサービス:** 各リージョンにデプロイされるサービスは、さまざまな要因によって異なります。 目的のサービスを含むワークロードのリージョンを選択してください。 詳細については、「[リージョン別の利用可能な製品](https://azure.microsoft.com/global-infrastructure/services/)」を参照してください。
 - **容量:** 各リージョンには最大容量があります。 これは、どの種類のサブスクリプションでどの種類のサービスをどのような状況でデプロイできるかに影響する場合があります。 これは、サブスクリプション クォータとは異なります。 大規模なデータセンターを Azure に移行する計画をしている場合は、ご自分の地域の Azure フィールド チームまたはアカウント マネージャーに問い合わせて、必要な規模でデプロイできることを確認することをお勧めします。
-- **制約:** 特定のリージョンでのサービスのデプロイには、特定の制約が適用されます。 たとえば、一部のリージョンは、バックアップまたはフェールオーバーのターゲットとしてのみ使用できます。 注意が必要なその他の制約は、[データ主権要件](https://azure.microsoft.com/global-infrastructure/geographies)です。
+- **制約:** 特定のリージョンでのサービスのデプロイには、特定の制約が適用されます。 たとえば、一部のリージョンは、バックアップまたはフェールオーバーのターゲットとしてのみ使用できます。 注意が必要なその他の制約は、[データ主権要件](https://azure.microsoft.com/global-infrastructure/geographies/)です。
 - **主権:** 特定のリージョンは、特定の主権エンティティ専用になっています。 すべてのリージョンは Azure リージョンですが、こうした主権リージョンは他の Azure から完全に分離されています。 これらは、必ずしも Microsoft によって管理されるわけではなく、特定の種類の顧客に制約される場合もあります。 このような主権リージョンは次のとおりです。
-  - [Azure China 21Vianet](https://azure.microsoft.com/global-infrastructure/china)
-  - [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany):Azure Germany は非推奨とされており、ドイツ国内の標準の非主権 Azure リージョンが推奨されています。
-  - [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
-  - [オーストラリア](https://azure.microsoft.com/global-infrastructure/australia)の 2 つのリージョンは Microsoft によって管理されていますが、これらはオーストラリア政府とその顧客および請負業者向けに提供されています。 そのため、これらのリージョンは、他のソブリン クラウドと似たクライアントの制約を受けます。
+  - [Azure China 21Vianet](https://azure.microsoft.com/global-infrastructure/geographies/)
+  - [Azure Germany](https://azure.microsoft.com/global-infrastructure/geographies/):Azure Germany は非推奨とされており、ドイツ国内の標準の非主権 Azure リージョンが推奨されています。
+  - [Azure US Government](https://azure.microsoft.com/global-infrastructure/government/)
+  - [オーストラリア](https://azure.microsoft.com/global-infrastructure/geographies/)の 2 つのリージョンは Microsoft によって管理されていますが、これらはオーストラリア政府とその顧客および請負業者向けに提供されています。 そのため、これらのリージョンは、他のソブリン クラウドと似たクライアントの制約を受けます。
 
 ## <a name="operate-in-multiple-geographic-regions"></a>複数の地理的リージョンでの運用
 
@@ -45,13 +45,13 @@ Azure は、世界中のさまざまなリージョンで構成されていま�
 
 - Azure リージョンはペアで配置されています。 リージョンで致命的な障害が発生した場合に備えて、同じ地理的境界内の別のリージョンがペア リージョンとして指定されています。 回復性の一次的および二次的戦略として、ペア リージョンに配置することを検討してください。 この方法の 1 つの例外は `Brazil South` です。これは、`South Central US` とペアになっています。 詳細については、「[Azure のペアになっているリージョン](/azure/best-practices-availability-paired-regions)」をご覧ください。
 
-  - Azure Storage は、[geo 冗長ストレージ (GRS)](/azure/storage/common/storage-redundancy-grs) をサポートしています。 これは、お客様のデータの 3 つのコピーがプライマリ リージョンに格納され、ペア リージョンにも 3 つのコピーが追加で格納されることを意味します。 GRS のストレージ ペアリングを変更することはできません。
+  - Azure Storage は、[geo 冗長ストレージ (GRS)](/azure/storage/common/storage-redundancy) をサポートしています。 これは、お客様のデータの 3 つのコピーがプライマリ リージョンに格納され、ペア リージョンにも 3 つのコピーが追加で格納されることを意味します。 GRS のストレージ ペアリングを変更することはできません。
   - Azure Storage GRS に依存するサービスでは、このペア リージョンの機能を利用できます。 そのためには、それをサポートするようにアプリケーションとネットワークを配置する必要があります。
   - リージョンの回復性のニーズに対応するために GRS を使用する予定がない場合は、セカンダリとしてペアになっているリージョンを使用しないでください。 リージョンで障害が発生した場合、リソースの移行時に、ペア リージョンのリソースに大きな負荷がかかります。 代替サイトに回復して、復旧時の速度を向上させることにより、このような負荷を回避できます。
   > [!WARNING]
-  > VM のバックアップまたは復旧には Azure GRS を使用しないでください。 代わりに、サービスとしてのインフラストラクチャ (IaaS) ワークロードの回復性をサポートするために、[Azure Backup](https://azure.microsoft.com/services/backup) と [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) を [Azure マネージド ディスク](/azure/virtual-machines/windows/managed-disks-overview)と共に使用してください。
+  > VM のバックアップまたは復旧には Azure GRS を使用しないでください。 代わりに、サービスとしてのインフラストラクチャ (IaaS) ワークロードの回復性をサポートするために、[Azure Backup](https://azure.microsoft.com/services/backup/) と [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/) を [Azure マネージド ディスク](/azure/virtual-machines/managed-disks-overview)と共に使用してください。
 
-- Azure Backup と Azure Site Recovery は、IaaS およびデータ バックアップのニーズに応じてネットワーク設計と連携して機能し、リージョンの回復性を高めます。 データ転送を Microsoft のバックボーンにとどめ、可能な場合は[仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を使用するように、ネットワークが最適化されていることを確認します。 グローバルにデプロイしている大規模な組織では、リージョン間のトラフィックをルーティングして、リージョンのエグレス料金を節約するために [ExpressRoute Premium](/azure/expressroute/expressroute-introduction) を使用することがあります。
+- Azure Backup と Azure Site Recovery は、IaaS およびデータ バックアップのニーズに応じてネットワーク設計と連携して機能し、リージョンの回復性を高めます。 データ転送を Microsoft のバックボーンにとどめ、可能な場合は[仮想ネットワーク ピアリング](/azure/virtual-network/virtual-network-peering-overview)を使用するように、ネットワークが最適化されていることを確認します。 グローバルにデプロイしている大規模な組織では、リージョン間のトラフィックをルーティングして、リージョンのエグレス料金を節約するために [ExpressRoute Premium](/azure/expressroute/expressroute-introduction) を使用する場合があります。
 
 - Azure リソース グループは、リージョン固有のものです。 ただし、通常、リソース グループ内のリソースは複数のリージョンにまたがります。 リージョンの障害が発生した場合、そのリソース グループ内の他のリージョンのリソースは引き続き機能するのに、影響を受けるリージョンではリソース グループに対するコントロール プレーン操作が失敗することを考慮してください。 これは、ネットワークの設計とリソース グループの設計の両方に影響を与える可能性があります。
 

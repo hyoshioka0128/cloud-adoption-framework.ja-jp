@@ -1,25 +1,27 @@
 ---
 title: パフォーマンス結果の例
 description: クラウド変革のコンテキストにおけるパフォーマンス結果を、Azure 向けのクラウド導入フレームワークを使用して理解します。
-author: BrianBlanchard
+author: mpvenables
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 03/02/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 7324e81a2a9f15f6d5ed62755984f24d2ee3fb32
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 05eef909e46b14f5f72212a7c8f5babf2d7933c3
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012943"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101784596"
 ---
 # <a name="examples-of-performance-outcomes"></a>パフォーマンス結果の例
 
 [ビジネス成果](./index.md)に関するページで説明したように、見込みがあるさまざまなビジネス上の成果を、企業との変革に取り組むための対話の基盤として役立てることができます。 この記事では、一般的なビジネス手段であるパフォーマンスに注目します。
 
 今日の技術社会では、お客様はアプリケーションは優れたパフォーマンスで常に使用できるものと思い込んでいます。 この期待が裏切られると、評判が損なわれ、大きい代償が長く続くことになります。
+
+[GE Aviation's Digital Group](https://customers.microsoft.com/story/846315-ge-aviation-manufacturing-azure) は、複数のソースからのデータの取り込みとモデル化を行うために、Microsoft Azure Digital Twins と他の Azure リソースをデプロイしました。それにより、個々のコンポーネントのデジタル トレーサビリティ機能が組み込まれた機体の完全なデジタル ビューを構築でき、顧客の燃料効率の向上、メンテナンス コストの削減、保有機材のフライト準備の促進が可能となりました。
 
 ## <a name="performance"></a>パフォーマンス
 

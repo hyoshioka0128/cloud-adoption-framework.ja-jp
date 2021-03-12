@@ -1,6 +1,6 @@
 ---
 title: オンプレミスの Linux アプリケーションを Azure VM と Azure Database for MySQL にリホストする
-description: Contoso が、オンプレミスの Linux アプリを Azure VM と Azure Database for MySQL に移行することによって、どのようにこのアプリをリホストするかを説明します。
+description: Contoso が、オンプレミスの Linux アプリケーションを Azure VM と Azure Database for MySQL に移行することによって、どのようにそれを再ホストするかを説明します。
 author: givenscj
 ms.author: abuck
 ms.date: 07/01/2020
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: b82eaf9e330e8f59e542d43ea07f3593afa1ffab
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: f19ef45f5d7c18b381c16231d3e48c1ee490406f
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631646"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785718"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
 # <a name="rehost-an-on-premises-linux-application-to-azure-vms-and-azure-database-for-mysql"></a>オンプレミスの Linux アプリケーションを Azure VM と Azure Database for MySQL にリホストする
 
-この記事では、Contoso という架空の会社が、[LAMP ベース](https://wikipedia.org/wiki/LAMP_(software_bundle))の 2 層アプリケーションをリホストし、Azure Virtual Machines (VM) と Azure Database for MySQL を使用して、それをオンプレミスから Azure に移行する方法について説明します。
+この記事では、Contoso という架空の会社が、[LAMP ベース](https://wikipedia.org/wiki/LAMP_software_bundle)の 2 層アプリケーションをリホストし、Azure Virtual Machines (VM) と Azure Database for MySQL を使用して、それをオンプレミスから Azure に移行する方法について説明します。
 
-この例で使用されるサービス デスク アプリケーションである osTicket は、オープンソースとして提供されています。 独自のテストに使用する場合は、[GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。
+この例で使用されるサービス デスク アプリケーションである osTicket は、オープンソース ソフトウェアとして提供されています。 独自のテストに使用する場合は、[GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
@@ -341,7 +341,7 @@ Contoso の管理者は、MySQL ツールでバックアップと復元を使用
 
 1. [インストール手順](https://dev.mysql.com/doc/workbench/en/wb-installing.html)に従って、MySQL Workbench for Windows をインストールします。
 
-1. MySQL Workbench で、OSTICKETMYSQL への MySQL 接続を作成します。
+1. MySQL Workbench で、`OSTICKETMYSQL` への MySQL 接続を作成します。
 
     ![[接続] タブを示すスクリーンショット。](./media/contoso-migration-rehost-linux-vm-mysql/workbench1.png)
 
@@ -429,4 +429,4 @@ Contoso セキュリティ チームは、VM とデータベースを調査し�
 
 - Contoso は、リソースのデプロイ後、[Azure インフラストラクチャ](./contoso-migration-infrastructure.md#set-up-tagging)のデプロイ中に定義されたとおりに Azure タグを割り当てます。
 - Contoso Ubuntu サーバーにライセンスの問題はありません。
-- Contoso は [Azure Cost Management および Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
+- Contoso は [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが設定した予算内に確実に収まるようにします。

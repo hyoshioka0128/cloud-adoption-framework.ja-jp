@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: a7f43c5ec340d7cbf50b570406e27e715e90378a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: d738d917f43c2d9e454e30fcb73b8030ba99fd9c
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97023941"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101788132"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>ランディング ゾーン用のテスト駆動開発 (TDD)
 
@@ -67,12 +67,12 @@ ms.locfileid: "97023941"
 クラウド導入フレームワーク内の管理方法は、ガバナンス チームの自然な成熟度を物語る体験を提供します。 この体験に組み込まれているのは、ポリシー ステートメントの形式での "完了の定義" と "受け入れ基準" のいくつかの例です。
 
 - [初期のポリシー ステートメント](../../govern/guides/complex/initial-corporate-policy.md#policy-statements): 初期段階の導入要件に基づいた、企業ポリシーの管理と初期の完了の定義の例。
-- [ID の展開](../../govern/guides/complex/identity-baseline-improvement.md#incremental-improvement-of-the-policy-statements): ランディング ゾーンの ID 管理を展開するための要件を満たす企業ポリシーの管理 ("完了の定義") の例。
-- [セキュリティの展開](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-the-policy-statements): 参照のクラウド導入計画に準拠したセキュリティ要件を満たすための企業ポリシーの管理 ("完了の定義") の例。
-- [運用の展開](../../govern/guides/complex/resource-consistency-improvement.md#incremental-improvement-of-the-policy-statements): 基本的な運用管理の要件を満たすための企業ポリシーの管理 ("完了の定義") の例。
-- [コストの展開](../../govern/guides/complex/cost-management-improvement.md#changes-to-the-policy-statements): コスト管理の要件を満たすための企業ポリシーの管理 ("完了の定義") の例。
+- [ID の展開](../../govern/guides/complex/identity-baseline-improvement.md#incremental-improvement-of-the-policy-statements): ランディング ゾーンの ID 管理を展開するための要件を満たすための、*完了の定義* を管理する企業ポリシーの例。
+- [セキュリティの展開](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-the-policy-statements): 参照のクラウド導入計画に準拠したセキュリティ要件を満たすための、*完了の定義* を管理する企業ポリシーの例。
+- [運用の展開](../../govern/guides/complex/resource-consistency-improvement.md#incremental-improvement-of-the-policy-statements): 基本的な運用管理の要件を満たすための、*完了の定義* を管理する企業ポリシーの例。
+- [コストの展開](../../govern/guides/complex/cost-management-improvement.md#changes-to-the-policy-statements): コスト管理の要件を満たすための、*完了の定義* を管理する企業ポリシーの例。
 
-上の例は、ランディング ゾーンの "定義の完了" を開発するのに役立つ基本的なサンプルです。 [クラウド ガバナンスの 5 つの規範](../../govern/governance-disciplines.md)のそれぞれについて、追加のサンプル ポリシーを利用できます。
+上の例は、ランディング ゾーンの *完了の定義* を策定するのに役立つ基本的なサンプルです。 [クラウド ガバナンスの 5 つの規範](../../govern/governance-disciplines.md)のそれぞれについて、追加のサンプル ポリシーを利用できます。
 
 ## <a name="next-steps"></a>次のステップ
 

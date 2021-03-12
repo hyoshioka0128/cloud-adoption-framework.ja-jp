@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: f086849ad56e3cced9ac1de89fd109781772526f
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 20c4c671b686a2e584ed63fa7dbc0b3523faf24e
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631986"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789203"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -52,8 +52,7 @@ Contoso が Azure への移行を実施するには、その前に Azure イン�
 以下の図は、Contoso の現在のオンプレミス インフラストラクチャを示しています。
 
 ![Contoso のアーキテクチャの図。](./media/contoso-migration-infrastructure/contoso-architecture.png)
-
-"_図 1:Contoso のオンプレミス アーキテクチャ_
+*図 1: Contoso のオンプレミス アーキテクチャ*
 
 - Contoso は、米国東部のニューヨーク市に 1 つのメイン データセンターを配置しています。
 - Contoso は、米国の地方に 3 つの支店を配置しています。
@@ -92,8 +91,7 @@ Azure の料金を支払った後、Contoso は Azure サブスクリプショ�
 - 将来 Contoso で、サブスクリプションを追加する必要がある場合は、それらのサブスクリプションについてもアクセス、ポリシー、コンプライアンスを管理する必要があります。 Contoso は、サブスクリプションの上に追加の階層として [Azure 管理グループ](/azure/governance/management-groups/overview)を導入することで、これを行うことができます。
 
 ![エンタープライズ階層の図。](./media/contoso-migration-infrastructure/enterprise-structure.png)
-
-"_図 2:エンタープライズ階層_
+*図 2: エンタープライズ階層*
 
 ### <a name="examine-licensing"></a>ライセンスを調べる
 
@@ -114,8 +112,7 @@ Azure ハイブリッド特典では、コスト効果の高い移行方法が�
 予測可能なワークロードは、SAP ERP システムのような基幹業務アプリケーションなど、実行されている VM で常に使用できる必要があります。 予測不可能なワークロードとは、需要が多いときに有効になり、需要が少ないと無効になる VM のような、変わりやすいワークロードです。
 
 ![Azure Reserved Virtual Machine Instances の図。](./media/contoso-migration-infrastructure/reserved-instance.png)
-
-"_図 3:Azure Reserved Virtual Machine Instances_
+*図 3: Azure Reserved Virtual Machine Instances*
 
 長時間維持する必要がある特定の VM インスタンスに対して予約インスタンスを使用する見返りに、Contoso は割引と優先容量の両方を得ることができます。 [Azure Reserved Virtual Machine Instances](https://azure.microsoft.com/pricing/reserved-vm-instances/) を Azure ハイブリッド特典と組み合わせて使用することで、Contoso は通常の従量課金制料金を最大 82% 節約できます (2018 年 4 月現在)。
 
@@ -137,7 +134,7 @@ Contoso は、Azure サブスクリプションに含まれる Azure AD Free エ
 
    ![Azure AD ディレクトリを作成するための選択項目のスクリーンショット。](./media/contoso-migration-infrastructure/azure-ad-create.png)
 
-   "_図 4:Azure AD Directory の作成_
+   "*図 4:Azure AD Directory の作成*
 
 > [!NOTE]
 > 作成したディレクトリの初期ドメイン名は、`domain-name.onmicrosoft.com` という形式になります。 この名前を変更または削除することはできません。 代わりに、管理者は、登録されたドメイン名を Azure AD に追加する必要があります。
@@ -158,7 +155,7 @@ Contoso は、Azure サブスクリプションに含まれる Azure AD Free エ
 
     ![Azure Active Directory DNS の選択画面を示すスクリーンショット。](./media/contoso-migration-infrastructure/azure-ad-dns.png)
 
-    _図 5:ドメイン名の確認_
+    *図 5:ドメイン名の確認*
 
 ### <a name="set-up-on-premises-and-azure-groups-and-users"></a>オンプレミスと Azure でグループとユーザー設定する
 
@@ -188,7 +185,7 @@ Contoso の管理者は、次の表に示すように Azure リソース グル�
 
    ![リソース グループの一覧を示すスクリーンショット](./media/contoso-migration-infrastructure/resource-groups.png)
 
-   _図 6:リソース グループ_
+   *図 6:リソース グループ*
 
 ##### <a name="scale-resource-groups"></a>リソース グループをスケーリングする
 
@@ -199,8 +196,7 @@ Contoso の管理者は、次の表に示すように Azure リソース グル�
 Contoso の管理者は、オンプレミスの Active Directory インスタンスで、Azure リソース グループの名前と一致する名前を持つセキュリティ グループを設定します。
 
 ![オンプレミスの Active Directory セキュリティ グループを示すスクリーンショット。](./media/contoso-migration-infrastructure/on-premises-ad.png)
-
-_図 7:オンプレミスの Active Directory セキュリティ グループ_
+*図 7: オンプレミスの Active Directory セキュリティ グループ*
 
 管理のため、Contoso は他のすべてのグループに追加されるグループを作成します。 このグループには、Azure 内のすべてのリソース グループに対する権限があります。 限られた数のグローバル管理者がこのグループに追加されます。
 
@@ -216,25 +212,25 @@ Contoso は、オンプレミスとクラウドのリソースへのアクセス
 
     ![ダウンロードされた Azure AD Connect へのリンクを示すスクリーンショット。](./media/contoso-migration-infrastructure/download-ad-connect.png)
 
-    _図 8:Azure AD Connect のダウンロード_
+    *図 8:Azure AD Connect のダウンロード*
 
 2. **[簡単設定]** を使用して、`AzureADConnect.msi` のインストールを開始します。 これは最も一般的なインストールであり、認証にパスワード ハッシュ同期を使用する単一フォレスト トポロジで使用できます。
 
     ![Azure AD Connect ウィザードを示すスクリーンショット。](./media/contoso-migration-infrastructure/ad-connect-wiz1.png)
 
-    _図 9:Azure AD Connect ウィザード_
+    *図 9:Azure AD Connect ウィザード*
 
 3. **[Azure AD に接続]** で、Azure AD に接続するための資格情報 (`admin@contoso.com` または `admin@contoso.onmicrosoft.com` の形式) を指定します。
 
     ![Azure AD Connect ウィザードの [Azure AD に接続] ページを示すスクリーンショット。](./media/contoso-migration-infrastructure/ad-connect-wiz2.png)
 
-    _図 10:Azure AD Connect ウィザード:Azure AD に接続_
+    *図 10:Azure AD Connect ウィザード:Azure AD に接続*
 
 4. **[AD DS に接続]** で、オンプレミスのディレクトリの資格情報 (`CONTOSO\admin` または `contoso.com\admin` の形式) を指定します。
 
     ![Azure AD Connect ウィザードの [AD DS に接続] ページを示すスクリーンショット。](./media/contoso-migration-infrastructure/ad-connect-wiz3.png)
 
-    _図 11:Azure AD Connect ウィザード:AD DS に接続_"
+    *図 11:Azure AD Connect ウィザード:AD DS に接続*"
 
 5. **[構成の準備完了]** で、 **[構成が完了したら、同期プロセスを開始してください]** を選択して直ちに同期を開始します。 その後インストールします。
 
@@ -246,13 +242,13 @@ Contoso は、オンプレミスとクラウドのリソースへのアクセス
 
       ![Azure Active Directory に表示されたオンプレミスの Active Directory オブジェクトを示すスクリーンショット。](./media/contoso-migration-infrastructure/on-premises-ad-groups.png)
 
-      _図 12:Azure AD に表示されたオンプレミスの Active Directory オブジェクト_
+      *図 12:Azure AD に表示されたオンプレミスの Active Directory オブジェクト*
 
     - Contoso の IT チームは各グループで表わされ、ロールに基づいています。
 
       ![グループ メンバーシップを示すスクリーンショット。](./media/contoso-migration-infrastructure/on-premises-ad-group-members.png)
 
-      _図 13:グループ メンバーシップ_
+      *図 13:グループ メンバーシップ*
 
 ### <a name="set-up-azure-rbac"></a>Azure RBAC をセットアップする
 
@@ -267,7 +263,7 @@ Contoso の管理者は、オンプレミスから同期した Active Directory 
 
     ![オンプレミスの Azure Active Directory グループを示すスクリーンショット。](./media/contoso-migration-infrastructure/on-premises-ad-groups.png)
 
-    _図 14:セキュリティ グループへのロールの割り当て_
+    *図 14:セキュリティ グループへのロールの割り当て*
 
 ## <a name="step-3-design-for-resiliency"></a>手順 3:回復性の設計
 
@@ -349,9 +345,8 @@ Contoso は、Azure とオンプレミスのデータセンターの間の[ハ�
 
 なお、Contoso のオンプレミス ネットワークのインフラストラクチャは、現在、ニューヨークのデータセンターと、米国の東半分にある複数のローカル支局で構成されています。 すべての場所には、インターネットへのビジネス クラスの接続があります。 各ブランチは、インターネット経由の IPSec VPN トンネルを介してデータセンターに接続されています。
 
-![Contoso ネットワークの図。](./media/contoso-migration-infrastructure/contoso-networking.png)
-
-_図 15:Contoso ネットワーク_
+![Contoso のネットワークの図。](./media/contoso-migration-infrastructure/contoso-networking.png)
+*図 15: Contoso のネットワーク*
 
 Contoso が決定したハイブリッド接続の実装方法は次のとおりです。
 
@@ -364,14 +359,12 @@ Contoso が決定したハイブリッド接続の実装方法は次のとおり
 **VPN のみ:**
 
 ![Contoso の VPN を示すスクリーンショット。](./media/contoso-migration-infrastructure/hybrid-vpn.png)
-
-_図 16:Contoso VPN_
+*図 16: Contoso の VPN*
 
 **VPN および ExpressRoute:**
 
 ![Contoso の VPN と ExpressRoute を示すスクリーンショット。](./media/contoso-migration-infrastructure/hybrid-vpn-expressroute.png)
-
-_図 17:Contoso VPN と ExpressRoute_
+*図 17: Contoso の VPN と ExpressRoute*
 
 ### <a name="design-the-azure-network-infrastructure"></a>Azure のネットワーク インフラストラクチャを設計する
 
@@ -394,8 +387,7 @@ Azure の[仮想ネットワーク ピアリング](/azure/virtual-network/virtu
 Contoso は各リージョンにハブを展開します。 ハブは、オンプレミス ネットワークへの接続の中心点として機能する Azure の仮想ネットワークです。 ハブの仮想ネットワークは、Azure リージョンの境界をまたいで仮想ネットワークを接続するグローバル仮想ネットワーク ピアリングにより、相互に接続されます。 各リージョンのハブは、他のリージョンにあるパートナー ハブにピアリングされます。 ハブは、そのリージョン内のすべてのネットワークにピアリングされ、すべてのネットワーク リソースに接続できます。
 
 ![グローバル ピアリングの図。](./media/contoso-migration-infrastructure/global-peering.png)
-
-_図 18:グローバル ピアリング_
+*図 18: グローバル ピアリング*
 
 #### <a name="hub-and-spoke-model-within-a-region"></a>リージョン内のハブ アンド スポーク モデル
 
@@ -453,9 +445,8 @@ Contoso は、ハブ アンド スポーク モデル内で、オンプレミス
 | `VNET-DEV-EUS2` | `10.245.16.0/20` | `VNET-HUB-EUS2` |
 | `VNET-PROD-EUS2` | `10.245.32.0/20` | `VNET-HUB-EUS2`, `VNET-PROD-CUS` |
 
-![プライマリ リージョン内のハブ アンド スポーク モデルの図。](./media/contoso-migration-infrastructure/primary-hub-peer.png)
-
-_図 19:ハブ アンド スポーク モデル_
+![プライマリ リージョンのハブ アンド スポーク モデルの図。](./media/contoso-migration-infrastructure/primary-hub-peer.png)
+*図 19: ハブ アンド スポーク モデル*
 
 #### <a name="subnets-in-the-east-us-2-hub-network-vnet-hub-eus2"></a>`East US 2 Hub` ネットワーク (`VNET-HUB-EUS2`) のサブネット
 
@@ -489,8 +480,7 @@ Azure IaaS コンポーネントは、運用ネットワークに配置されて
 | `PROD-DC-EUS2` | `10.245.42.0/24` | 251 | ドメイン コントローラー VM |
 
 ![ハブ ネットワーク アーキテクチャの図。](./media/contoso-migration-infrastructure/azure-networks-eus2.png)
-
-_図 20:ハブ ネットワーク アーキテクチャ_
+*図 20: ハブ ネットワーク アーキテクチャ*
 
 #### <a name="virtual-networks-in-central-us-secondary-region"></a>`Central US` (セカンダリ リージョン) の仮想ネットワーク
 
@@ -514,9 +504,8 @@ _図 20:ハブ ネットワーク アーキテクチャ_
 | `VNET-ASR-CUS` | `10.255.16.0/20` | `VNET-HUB-CUS`, `VNET-PROD-CUS` |
 | `VNET-PROD-CUS` | `10.255.32.0/20` | `VNET-HUB-CUS`, `VNET-ASR-CUS`, `VNET-PROD-EUS2` |
 
-![ペア リージョン内のハブ アンド スポーク モデルの図。](./media/contoso-migration-infrastructure/paired-hub-peer.png)
-
-_図 21:ペア リージョン内のハブ アンド スポーク モデル_
+![ペア リージョンのハブ アンド スポーク モデルの図。](./media/contoso-migration-infrastructure/paired-hub-peer.png)
+*図 21: ペア リージョンのハブ アンド スポーク モデル*
 
 #### <a name="subnets-in-the-central-us-hub-network-vnet-hub-cus"></a>`Central US` ハブ ネットワーク (`VNET-HUB-CUS`) のサブネット
 
@@ -552,8 +541,7 @@ _図 21:ペア リージョン内のハブ アンド スポーク モデル_
 | `ASR-DB-CUS` | `10.255.24.0/23` | 507 | データベース VM |
 
 ![ハブ ネットワーク アーキテクチャの図。](./media/contoso-migration-infrastructure/azure-networks-cus.png)
-
-_図 22:ハブ ネットワーク アーキテクチャ_
+*図 22: ハブ ネットワーク アーキテクチャ*
 
 #### <a name="configure-peered-connections"></a>ピアリングされた接続を構成する
 
@@ -569,27 +557,26 @@ _図 22:ハブ ネットワーク アーキテクチャ_
 
     ![トラフィック転送とゲートウェイ転送を許可するチェック ボックスがオンになった画面のスクリーンショット。](./media/contoso-migration-infrastructure/peering1.png)
 
-    _図 23:ピアリングされた接続_
+    *図 23:ピアリングされた接続*
 
 2. ピアリングのもう一方の側 (`VNET-PROD-EUS2` から `VNET-HUB-EUS2` への接続) では、 **[転送されたトラフィックを許可する]** と **[リモート ゲートウェイを使用する]** を設定します。
 
     ![トラフィック転送とリモート ゲートウェイの使用を許可するチェック ボックスがオンになった画面のスクリーンショット。](./media/contoso-migration-infrastructure/peering2.png)
 
-    _図 24:ピアリングされた接続_
+    *図 24:ピアリングされた接続*
 
 3. オンプレミスでは、ローカル トラフィックを、VPN トンネルを経由して仮想ネットワークにルーティングする静的ルートを設定します。 Contoso から Azure への VPN トンネルを提供するゲートウェイで構成を行います。 静的ルートには、ルーティングとリモート アクセス サービス (RRAS) を使用します。
 
     ![静的ルートの選択画面を示すスクリーンショット。](./media/contoso-migration-infrastructure/peering3.png)
 
-    _図 25:ピアリングされた接続_
+    *図 25:ピアリングされた接続*
 
 ##### <a name="production-networks"></a>運用ネットワーク
 
 スポークされたピア ネットワークは、ハブを介して別のリージョンのスポークされたピア ネットワークを認識することはできません。 両方のリージョンの Contoso の運用ネットワークが相互に認識するには、Contoso の管理者は `VNET-PROD-EUS2` と `VENT-PROD-CUS` のピアリングされた直接接続を作成する必要があります。
 
-![ピアリングされた直接接続の作成を表す図。](./media/contoso-migration-infrastructure/peering4.png)
-
-_図 26: ピアリングされた直接接続の作成_
+![ピアリングされた接続の作成の図。](./media/contoso-migration-infrastructure/peering4.png)
+*図 26: ピアリングされた接続の作成*
 
 ### <a name="set-up-dns"></a>DNS を設定する
 
@@ -604,7 +591,7 @@ Contoso の管理者は、Azure DNS サービスはハイブリッド環境に�
 
     ![カスタム DNS の構成を示すスクリーンショット。](./media/contoso-migration-infrastructure/custom-dns.png)
 
-    _図 27: カスタム DNS_
+    *図 27: カスタム DNS*
 
 オンプレミスのドメイン コントローラーに加え、Contoso は Azure ネットワークをサポートするために、4 つのドメイン コントローラー (リージョンごとに 2 つ) を実装します。
 
@@ -626,15 +613,15 @@ Contoso の管理者は、Azure DNS サービスはハイブリッド環境に�
 
     ![可用性セットの作成画面を示すスクリーンショット。](./media/contoso-migration-infrastructure/availability-group.png)
 
-    _図 28: 可用性セット_
+    *図 28: 可用性セット*
 
 3. VM を展開した後、Contoso は VM に対してネットワーク インターフェイスを開きます。 プライベート IP アドレスを静的に設定し、有効なアドレスを指定します。
 
     ![VM ネットワーク インターフェイス接続を示すスクリーンショット。](./media/contoso-migration-infrastructure/vm-nic.png)
 
-    _図 29: VM の NIC_
+    *図 29: VM の NIC*
 
-4. 新しいデータ ディスクを VM に接続します。 このディスクには、Active Directory データベースと SYSVOL 共有が含まれています。
+4. 新しいデータ ディスクを VM に接続します。 このディスクには、Active Directory データベースと sysvol 共有が含まれています。
 
    ディスクのサイズにより、サポートされる IOPS の値が決まります。 時間が経過して環境が拡大すると、ディスク サイズを増やすことが必要になる場合があります。
 
@@ -643,7 +630,7 @@ Contoso の管理者は、Azure DNS サービスはハイブリッド環境に�
 
    ![Active Directory ディスクを示すスクリーンショット。](./media/contoso-migration-infrastructure/ad-disk.png)
 
-   _図 30: Active Directory ディスク_
+   *図 30: Active Directory ディスク*
 
 5. ディスクを追加したら、リモート デスクトップ サービスを介して VM に接続し、サーバー マネージャーを開きます。
 
@@ -651,19 +638,19 @@ Contoso の管理者は、Azure DNS サービスはハイブリッド環境に�
 
     ![新しいボリューム ウィザードを示すスクリーンショット。](./media/contoso-migration-infrastructure/volume-wizard.png)
 
-    _図 31: 新しいボリューム ウィザード_
+    *図 31: 新しいボリューム ウィザード*
 
 7. Contoso はサーバー マネージャーで **Active Directory Domain Services** ロールを追加します。 次に、ドメイン コントローラーとして VM を構成します。
 
     ![サーバー ロールの選択画面のスクリーンショット。](./media/contoso-migration-infrastructure/server-role.png)
 
-    _図 32: サーバー ロールの追加_
+    *図 32: サーバー ロールの追加*
 
 8. VM を DC として構成し、再起動した後、DNS マネージャーを開き、Azure DNS リゾルバーをフォワーダーとして構成します。 これにより、DC は Azure DNS で解決できない DNS クエリを転送できます。
 
     ![DNS リゾルバをフォワーダーとして構成する画面のスクリーンショット。](./media/contoso-migration-infrastructure/dns-forwarder.png)
 
-    _図 33: Azure DNS リゾルバーの構成_
+    *図 33: Azure DNS リゾルバーの構成*
 
 9. 仮想ネットワーク リージョンの適切なドメイン コントローラーで、各仮想ネットワークのカスタム DNS 設定を更新します。 オンプレミスの DC を一覧に含めます。
 
@@ -676,25 +663,24 @@ Active Directory はネットワークに関する重要なサービスであり
 
     ![データセンターのサブネットの作成画面を示すスクリーンショット。](./media/contoso-migration-infrastructure/dc-subnets.png)
 
-    _図 34: データセンターのサブネット_
+    *図 34: データセンターのサブネット*
 
 3. 次に、2 つのサイト リンクを作成してすべてを接続します。 ドメイン コントローラーをそれぞれの場所に移動する必要があります。
 
     ![データセンターのリンクの作成画面を示すスクリーンショット。](./media/contoso-migration-infrastructure/dc-links.png)
 
-    _図 35: データセンターのリンク_
+    *図 35: データセンターのリンク*
 
 4. Active Directory レプリケーション トポロジが完成していることを確認します。
 
     ![データセンターのレプリケーション トポロジを示すスクリーンショット。](./media/contoso-migration-infrastructure/ad-resolution.png)
 
-    _図 36: データセンターのレプリケーション_
+    *図 36: データセンターのレプリケーション*
 
 すべてが完了すると、ドメイン コントローラーとサイトの一覧が、オンプレミスの Active Directory 管理センターに表示されます。
 
 ![Active Directory 管理センターを示すスクリーンショット。](./media/contoso-migration-infrastructure/ad-center.png)
-
-_図 37: Active Directory 管理センター_
+*図 37: Active Directory 管理センター*
 
 ## <a name="step-5-plan-for-governance"></a>手順 5:ガバナンスを計画する
 
@@ -725,29 +711,27 @@ Contoso は、組み込みポリシー定義の **許可されている場所** 
 
     ![ポリシーによって定義された許可されている場所を示すスクリーンショット。](./media/contoso-migration-infrastructure/policy-region.png)
 
-    _図 38: ポリシーによって定義された許可されている場所_
+    *図 38: ポリシーによって定義された許可されている場所*
 
 5. 既定では、このポリシーは **[拒否]** に設定されています。 つまり、`East US 2` または `Central US` リージョンにないサブスクリプションでデプロイが開始された場合、デプロイは失敗します。 Contoso サブスクリプションのユーザーが `West US` でデプロイを設定しようとした場合、次のようになります。
 
     ![失敗したポリシーからのエラーを示すスクリーンショット。](./media/contoso-migration-infrastructure/policy-failed.png)
 
-    _図 39: 失敗したポリシー_
+    *図 39: 失敗したポリシー*
 
 #### <a name="allow-specific-vm-skus"></a>特定の VM SKU を許可する
 
 Contoso は、組み込みポリシー定義の `Allow virtual machine SKUs` を使用して、サブスクリプションに作成できる VM の種類を制限します。
 
 ![SKU の選択を示すスクリーンショット。](./media/contoso-migration-infrastructure/policy-sku.png)
-
-_図 40: ポリシー SKU_
+*図 40: ポリシー SKU*
 
 #### <a name="check-policy-compliance"></a>ポリシーのコンプライアンスを確認する
 
 ポリシーはすぐに有効になり、Contoso はリソースのコンプライアンス状況を確認できます。 Azure Portal で、 **[コンプライアンス]** リンクを選択します。 コンプライアンス ダッシュボードが表示されます。 ドリルダウンして詳細を表示することができます。
 
 ![コンプライアンス ダッシュボードを示すスクリーンショット。](./media/contoso-migration-infrastructure/policy-compliance.png)
-
-_図 41: ポリシーへの準拠_
+*図 41: ポリシーのコンプライアンス*
 
 ### <a name="set-up-locks"></a>ロックを設定する
 
@@ -774,8 +758,7 @@ Contoso は、役割や部署など、ビジネスにとって意味がある方
 次に例を示します。
 
 ![Azure タグを示すスクリーンショット。](./media/contoso-migration-infrastructure/azure-tag.png)
-
-_図 42: Azure タグ_
+*図 42: Azure タグ*
 
 タグの作成後、Contoso は再び新しいポリシー定義と割り当てを作成して、組織全体で必要なタグの使用を強制します。
 
@@ -785,7 +768,7 @@ _図 42: Azure タグ_
 
 Contoso はいくつかの主要な側面を考慮する必要があります。
 
-- [Azure Security Center](/azure/security-center/security-center-introduction) は、ハイブリッド クラウド ワークロード全体にわたって、統合セキュリティ管理と Azure Advanced Threat Protection を提供します。 これを使用して、ワークロード全体へのセキュリティ ポリシーの適用、脅威にさらされる状態の軽減、攻撃の検出とその対応を行うことができます。
+- [Azure Security Center](/azure/security-center/security-center-introduction) では、ハイブリッド クラウド ワークロード全体にわたって、統一されたセキュリティ ベースラインと Microsoft Defender for Identity を提供します。 これを使用して、ワークロード全体へのセキュリティ ポリシーの適用、脅威にさらされる状態の軽減、攻撃の検出とその対応を行うことができます。
 - [ネットワーク セキュリティ グループ (NSG)](/azure/virtual-network/network-security-groups-overview) は、Azure の仮想ネットワークに接続されているリソースへのネットワーク トラフィックを許可または拒否するセキュリティ規則の一覧に基づいて、ネットワーク トラフィックをフィルター処理します。
 - [Azure Disk Encryption](/azure/security/fundamentals/encryption-atrest) は、Windows および Linux IaaS VM ディスクの暗号化を支援する機能です。
 
@@ -801,9 +784,8 @@ Contoso は、新しいハイブリッド クラウド、具体的には Azure �
 
 Contoso では、一元化されたポリシー管理を使用して環境全体のセキュリティ ポリシーを一元的に管理することで、セキュリティ要件に確実に準拠する予定です。 すべての Azure リソースに適用されるポリシーを簡単かつ迅速に実装できます。
 
-![セキュリティ ポリシーの選択画面を示すスクリーンショット。](./media/contoso-migration-infrastructure/security-policy.png)
-
-_図 43: セキュリティ ポリシー_
+![セキュリティ ポリシーの選択を示すスクリーンショット。](./media/contoso-migration-infrastructure/security-policy.png)
+*図 43: セキュリティ ポリシー*
 
 #### <a name="assess-security"></a>セキュリティを評価する
 
@@ -813,9 +795,8 @@ Security Center は、コンピューティング、インフラストラクチ�
 
 Contoso は、すべての VM が確実に保護されるようにしたいと考えています。 Security Center はこれを支援します。 VM の正常性を検証して、セキュリティの脆弱性が悪用される前にそれを修正するための、優先順位付けされた実行可能な推奨事項を提示します。
 
-![仮想マシンの監視画面のスクリーンショット。](./media/contoso-migration-infrastructure/monitoring.png)
-
-_図 44: 監視_
+![仮想マシンの監視画面を示すスクリーンショット。](./media/contoso-migration-infrastructure/monitoring.png)
+*図 44: 監視*
 
 ### <a name="work-with-nsgs"></a>NSG を使用する
 
@@ -835,9 +816,8 @@ Contoso は、NSG と ASG の両方を実装します。 Contoso は NSG の管�
 
 Contoso は、このセキュリティ構成がアプリケーションからどのように見えるかをモデル化しています。
 
-![Contoso セキュリティ モデルの図。](./media/contoso-migration-infrastructure/asg.png)
-
-_図 45: セキュリティ モデル_
+![Contoso のセキュリティ モデルの図。](./media/contoso-migration-infrastructure/asg.png)
+*図 45: セキュリティ モデル*
 
 ASG に関連付けられた NSG は最小限の特権で構成されており、許可されたパケットのみが、ネットワークの 1 つの部分から宛先にフローできます。
 

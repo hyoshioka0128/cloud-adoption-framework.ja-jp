@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 61bf6a17de600385795b3c7ac5913d1ebb4259e4
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: dd81e43538814599f521565fd03e823ec647d1dd
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97018943"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101789305"
 ---
 # <a name="security-baseline-discipline-template"></a>セキュリティ ベースライン規範テンプレート
 
-変更を実装するための最初の手順は、必要なものを伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 下のテンプレートは、クラウド内のセキュリティ関連の問題を管理するポリシー ステートメントを文書化して伝達するための開始点を提供します。
+変更を実装するための最初の手順は、必要なものを伝達することです。 ガバナンス プラクティスを変更する場合も同様です。 以下のテンプレートは、クラウド内のセキュリティ関連の問題を管理するポリシー ステートメントを文書化して伝達するための出発点として利用できます。
 
 議論が進んだら、このテンプレートの構造を、ビジネス リスク、リスク許容度、コンプライアンス プロセス、および組織のセキュリティ ベースライン ポリシー ステートメントを定義するために必要なツールをキャプチャするためのモデルとして使用してください。
 

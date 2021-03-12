@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: fa5ca7a14edd267789f1c355746b42b751491869
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 8f8656992f3e604914df07d4b59acaec62b92d13
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015339"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101785599"
 ---
 <!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo DMVs multinode equi Datometry -->
 
@@ -73,7 +73,7 @@ Azure Synapse Analytics で使用するデータの圧縮率やインデック�
 
 既存のシステムを複数のレイヤー (データの取り込みまたはステージング レイヤー、データ ウェアハウス レイヤー、レポートやデータ マート レイヤーなど) として移行することができます。 各レイヤーは、リレーショナル テーブルおよびビューで構成されます。 これらをすべてそのまま Azure Synapse Analytics に移行することはできますが、Azure エコシステムの特性と機能の一部を活用する方がコスト効率と信頼性が向上する可能性があります。 次に例を示します。
 
-- **データの取り込みとステージング:** リレーショナル テーブルではなく、ETL (抽出、変換、読み込み) または ELT (抽出、読み込み、変換) プロセスの一部で、並列データの高速読み込みを実現する PolyBase と Azure Blob Storage を併用することができます。
+- **データの取り込みとステージング:** ETL (抽出、変換、読み込み) または ELT (抽出、読み込み、変換) プロセスの一部で、リレーショナル テーブルではなく、並列データの高速読み込みを実現する PolyBase と Azure Blob Storage を併用することができます。
 - **レポート レイヤーとデータ マート:** Azure Synapse Analytics のパフォーマンス特性によって、レポート目的やデータ マート用に集計されたテーブルを物理的にインスタンス化する必要がなくなる可能性があります。 これらをビューとしてコア データ ウェアハウスに実装したり、サードパーティのデータ仮想化レイヤー経由で実装したりすることも可能なことがあります。 基本レベルでは、履歴データのデータ移行プロセスと、場合によっては増分更新を、この図に示されているように実現できます。
 
    ![最新のデータ ウェアハウスを示す図。](../../../_images/analytics/schema-migration-ddl.png)

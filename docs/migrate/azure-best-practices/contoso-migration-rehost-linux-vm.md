@@ -1,6 +1,6 @@
 ---
 title: オンプレミスの Linux アプリケーションを Azure VM にリホストする
-description: Contoso が、Azure VM に移行することによってオンプレミス Linux アプリをどのようにリホストするかを説明します。
+description: Contoso が、Azure VM に移行することによってオンプレミス Linux アプリケーションをどのようにリホストするかを説明します。
 author: deltadan
 ms.author: abuck
 ms.date: 07/01/2020
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 8b6bade873c8d42b079ab25b1b4345cf5f1041ad
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: b98b90a7eb08fd5452050c7047825fa0788b724b
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97712605"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791736"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
 
 # <a name="rehost-an-on-premises-linux-application-to-azure-vms"></a>オンプレミスの Linux アプリケーションを Azure VM にリホストする
 
-この記事では、Contoso という架空の会社が、Azure IaaS (サービスとしてのインフラストラクチャ) 仮想マシン (VM) を使用して、[LAMP ベース](https://wikipedia.org/wiki/LAMP_(software_bundle))の 2 層アプリケーションをリホストする方法について説明します。
+この記事では、Contoso という架空の会社が、Azure IaaS (サービスとしてのインフラストラクチャ) 仮想マシン (VM) を使用して、[LAMP ベース](https://wikipedia.org/wiki/LAMP_software_bundle)の 2 層アプリケーションをリホストする方法について説明します。
 
-この例で使用されるサービス デスク アプリケーションである osTicket は、オープンソースとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。
+この例で使用されるサービス デスク アプリケーションである osTicket は、オープンソース ソフトウェアとして提供されています。 独自のテスト目的に沿って使用する場合は、[GitHub](https://github.com/osTicket/osTicket) からダウンロードできます。
 
 ## <a name="business-drivers"></a>ビジネス ドライバー
 
@@ -86,7 +86,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 | サービス | 説明 | コスト |
 | --- | --- | --- |
-| [Azure Migrate: Server Migration](/azure/migrate/contoso-migration-rehost-linux-vm) | このサービスは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) と Google Cloud Platform (GCP) VM のインスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われると、Azure VM が作成されて料金がかかります。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate)の詳細をご覧ください。 |
+| [Azure Migrate: Server Migration](../index.md) | このサービスは、オンプレミスのアプリケーションとワークロード、および Amazon Web Services (AWS) と Google Cloud Platform (GCP) VM のインスタンスの移行を調整、管理します。 | Azure へのレプリケーションの間に、Azure Storage の料金が発生します。 移行が行われると、Azure VM が作成されて料金がかかります。 [料金と価格](https://azure.microsoft.com/pricing/details/azure-migrate/)の詳細をご覧ください。 |
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -94,7 +94,7 @@ Contoso は、次のようにして移行プロセスを完了します。
 
 必要条件 | 詳細 |
 | --- | --- |
-| **Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用する場合に、自分が管理者でないようであれば、管理者と連携して所有者または共同作成者のアクセス許可を自分に割り当てます。 <br><br> より詳細なアクセス許可が必要な場合は、「[Azure のロールベースのアクセス制御 (Azure RBAC) を使用して Site Recovery のアクセスを管理する](/azure/site-recovery/site-recovery-role-based-linked-access-control)」をご覧ください。 |
+| **Azure サブスクリプション** | このシリーズの先行する記事の中で、Contoso はサブスクリプションを作成しました。 Azure サブスクリプションをお持ちでない場合は、[無料アカウント](https://azure.microsoft.com/free/)を作成してください。 <br><br> 無料アカウントを作成する場合、サブスクリプションの管理者としてすべてのアクションを実行できます。 <br><br> 既存のサブスクリプションを使用する場合に、自分が管理者でないようであれば、管理者と連携して所有者または共同作成者のアクセス許可を自分に割り当てます。 <br><br> より詳細なアクセス許可が必要な場合は、「[Azure のロールベースのアクセス制御 (Azure RBAC) を使用して Site Recovery のアクセスを管理する](/azure/site-recovery/site-recovery-role-based-linked-access-control)」をご覧ください。 |
 | **Azure インフラストラクチャ** | [Contoso が Azure インフラストラクチャをセットアップする](./contoso-migration-infrastructure.md)方法を確認します。 <br><br> 以下についての具体的な[前提条件](./contoso-migration-devtest-to-iaas.md#prerequisites)をご確認ください。Azure Migrate:Server Migration に関するエラーのトラブルシューティングに役立つ情報を提供しています。 |
 | **オンプレミスのサーバー** | オンプレミス vCenter Server では、バージョン 5.5、6.0、または 6.5 を実行している必要があります。 <br><br> バージョン 5.5、6.0、または 6.5 を実行している ESXi ホスト。 <br><br> ESXi ホスト上で実行している 1 つ以上の VMware VM。 |
 | **オンプレミスの VM** | Azure での実行が保証されている [Linux ディストリビューションを確認します](/azure/virtual-machines/linux/endorsed-distros)。 |
@@ -132,7 +132,7 @@ Contoso が VM を Azure に移行するには、以下の Azure コンポーネ
 
 **さらにサポートが必要な場合**
 
-[Azure Migrate: Server Migration ツール](/azure/migrate)の設定についてご確認ください。
+[Azure Migrate: Server Migration ツール](/azure/migrate/)の設定についてご確認ください。
 
 ## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>手順 2:Azure Migrate: Server Migration 用のオンプレミス VMware を準備するServer Migration
 
@@ -283,7 +283,7 @@ Contoso の管理者は、ここで、移動を完了する完全移行を実行
 
 ### <a name="security"></a>Security
 
-Contoso のセキュリティ チームは、OSTICKETWEB と OSTICKETMYSQL の VM を再調査して、セキュリティの問題を特定します。
+Contoso セキュリティ チームは、`OSTICKETWEB` と `OSTICKETMYSQL` VM を調査して、セキュリティの問題を特定します。
 
 - アクセスを制御するために、VM のネットワーク セキュリティ グループ (NSG) を見直します。 NSG は、アプリケーションに対して許可されるトラフィックのみが通過できるようにするために使用されます。
 - チームは、Azure Disk Encryption と Azure Key Vault を使用して、VM ディスク上のデータをセキュリティで保護することも検討します。
@@ -295,10 +295,11 @@ Contoso のセキュリティ チームは、OSTICKETWEB と OSTICKETMYSQL の V
 事業継続とディザスター リカバリーのために、Contoso は次のアクションを実施します。
 
 - **データの安全性を確保する。** Contoso は、[Azure VM バックアップ](/azure/backup/backup-azure-vms-introduction)を使用して VM 上のデータをバックアップします。
+
 - **アプリケーションの稼働を維持する。** Contoso は、Site Recovery を使用して、Azure 内のアプリケーション VM をセカンダリ リージョンにレプリケートします。 詳細については、「[クイック スタート: Azure VM のセカンダリ Azure リージョンへのディザスター リカバリーの設定](/azure/site-recovery/azure-to-azure-quickstart)」を参照してください。
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
 - Contoso は、リソースのデプロイ後、[Azure インフラストラクチャのデプロイ](./contoso-migration-infrastructure.md#set-up-tagging)中に定義されたとおりに Azure タグを割り当てます。
 - Contoso に、Ubuntu サーバーとのライセンスの問題はありません。
-- Contoso は [Azure Cost Management および Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが定めた予算内に確実に収まるようにします。
+- Contoso は [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) を使用して、IT リーダーが設定した予算内に確実に収まるようにします。

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 4ee7606522b967849eff4805ddaebbb48021cf2f
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 0a46f17e5d5d441188365599fb1b1cc47271d7a5
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015492"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101791821"
 ---
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>Dev/Test 環境を Azure DevTest Labs に移行する
 
@@ -25,7 +25,7 @@ Contoso には、Dev/Test 環境を Azure に移行するときに使用でき�
 
 | 移行オプション | 結果 |
 | --- | --- |
-| [Azure Migrate](/azure/migrate/migrate-services-overview) | オンプレミスの VM を[評価](/azure/migrate/tutorial-assess-vmware-azure-vm)し、[移行](/azure/migrate/tutorial-migrate-vmware)する。 <br><br> Azure IaaS (サービスとしてのインフラストラクチャ) を使用して、Dev/Test サーバーを実行する。 <br><br> [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/) を使用して VM を管理する。 |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | オンプレミスの VM を[評価](/azure/migrate/tutorial-assess-vmware-azure-vm)し、[移行](/azure/migrate/tutorial-migrate-vmware)する。 <br><br> Azure のサービスとしてのインフラストラクチャ (IaaS) を使用して、開発およびテスト サーバーを実行する。 <br><br> [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/) を使用して VM を管理する。 |
 | [DevTest Labs](/azure/devtest-labs/devtest-lab-overview) | 開発およびテスト環境を迅速にプロビジョニングします。 <br><br> クォータとポリシーを使用して無駄を最小限に抑える。 <br><br> 自動シャットダウンを設定してコストを最小限に抑える。 <br><br> Windows および Linux 環境を構築する。 |
 
 > [!NOTE]
@@ -46,7 +46,7 @@ Contoso には、Dev/Test 環境を Azure に移行するときに使用でき�
 <!-- -->
 
 > [!NOTE]
-> Enterprise Agreement を締結している Azure のお客様は、[Azure Dev/Test サブスクリプション プラン](https://azure.microsoft.com/offers/ms-azr-0148p/)からもメリットが得られます。 詳細については、[EA ポータルを使用した EA Dev/Test サブスクリプションの有効化と作成](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal)に関するビデオを参照してください。
+> Enterprise Agreement を締結している Azure のお客様は、[Azure Dev/Test サブスクリプション プラン](https://azure.microsoft.com/offers/ms-azr-0148p/)からもメリットが得られます。 詳細については、[EA ポータルを使用した Enterprise Dev/Test サブスクリプションの有効化と作成](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal)に関するビデオを参照してください。
 
 ## <a name="migration-goals"></a>移行の目標
 
@@ -75,9 +75,8 @@ Contoso は、目標と要件を明確にした後、デプロイ ソリュー�
 - Contoso データセンター内のオンプレミスの Dev/Test VM は、移行の完了後に使用停止になります。
 - 開発者とテスト担当者は、ワークステーションの Windows Virtual Desktop にアクセスできるようになります。
 
-![シナリオ アーキテクチャの図。](./media/contoso-migration-devtest-to-labs/architecture.png)
-
-"_図 1:シナリオのアーキテクチャ_
+![シナリオのアーキテクチャの図。](./media/contoso-migration-devtest-to-labs/architecture.png)
+*図 1: シナリオのアーキテクチャ*
 
 ### <a name="database-considerations"></a>データベースの考慮事項
 
@@ -87,11 +86,11 @@ Contoso は、目標と要件を明確にした後、デプロイ ソリュー�
 
 ### <a name="solution-review"></a>ソリューションのレビュー
 
-Contoso は、長所と短所の一覧をまとめて、提案された設計を評価します。
+Contoso は、長所と短所の一覧をまとめて、提案されたデザインを評価します。
 
 | 考慮事項 | 詳細 |
 | --- | --- |
-| **長所** | 現在のすべての開発 VM (アプリケーションおよびデータベース) は、DevTest Labs で実行されている新しい VM に置き換えられます。 これにより、専用のクラウド開発環境の機能を利用できるようになります。 <br><br> Contoso は、Azure Dev/Test サブスクリプションへの投資を利用してライセンス料金を節約できます。 <br><br> Contoso は、Azure でアプリケーション VM の完全な制御を維持します。 <br><br> 開発者にサブスクリプションに対する権限が与えられるため、開発者は IT 部門が要求に対応するのを待たずに新しいリソースを作成できるようになります。 |
+| **長所** | 現在のすべての開発 VM (アプリケーションおよびデータベース) は、DevTest Labs で実行されている新しい VM に置き換えられます。 これにより、専用のクラウド開発環境の機能を利用できるようになります。 <br><br> Contoso は、Azure Dev/Test サブスクリプションへの投資を利用してライセンス料金を節約できます。 <br><br> Contoso は、Azure でアプリケーション VM の完全な制御を維持します。 <br><br> IT 部門が要求に対応するのを待たずに新しいリソースを作成できるように、開発者にはサブスクリプションに対する権限が与えられます。 |
 | **短所** | この移行では、開発のみがクラウドに移行されます。 開発者が引き続き VM を使用しているため、開発に PaaS サービスは使用されません。 その結果、Contoso には、セキュリティ更新プログラムなど、VM の操作のサポートを開始する必要が生じます。 IT 部門は過去に VM を管理していましたが、Contoso ではこの新しい運用タスクのソリューションを見つける必要があります。 <br><br> Contoso は新しいアプリケーションおよびデータベース VM を構築して、プロセスを自動化する必要があります これは、クラウドでの VM 構築と、DevTest Labs によって提供されるツールを利用できることを意味します。 したがって、この一覧では短所として挙げられていますが、結果はプラスになります。 |
 
 ### <a name="migration-process"></a>移行プロセス
@@ -105,8 +104,7 @@ Contoso は、DevTest Labs を使用して、開発アプリケーションお�
 - Contoso は、開発用の DevTest Labs 内で VM を作成し、データベースを移行します。
 
 ![移行プロセスを示す図。](./media/contoso-migration-devtest-to-labs/migration-process-devtest-labs.png)
-
-"_図 2:移行プロセス_
+*図 2: 移行プロセス*
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -136,15 +134,13 @@ Contoso の管理者は、まず、Azure Dev/Test プランを使用して新し
 
 管理者はリンクをたどって [Azure Dev/Test サブスクリプション プラン](https://azure.microsoft.com/offers/ms-azr-0023p/)にアクセスし、新しいサブスクリプションをプロビジョニングします。これにより、システムでコストを最大 80% 削減できます。 このプランでは、管理者は Dev/Test のために Windows 10 イメージを Azure 上で実行できます。 リモート開発者の管理エクスペリエンスを簡素化する、[Windows Virtual Desktop](/azure/virtual-desktop/overview) にアクセスできるようになります。
 
-![開発テスト用の従量課金制プランのオファーのスクリーンショット ([有効化する] ボタンが表示されている)。](./media/contoso-migration-devtest-to-labs/devtest-subscription.png)
-
-"_図 3:Azure Dev/Test サブスクリプション プラン_
+![[アクティブ化] ボタンがある、開発テスト用の従量課金制プランのスクリーンショット。](./media/contoso-migration-devtest-to-labs/devtest-subscription.png)
+*図 3: Azure Dev/Test サブスクリプション プラン*
 
 新しいサブスクリプションのプロビジョニングが完了したら、Contoso の管理者は、Azure portal を使用して新しい DevTest Labs インスタンスを作成します。 この新しいラボは、`ContosoDevRG` リソース グループに作成されます。
 
-![ポータル上の DevTest Labs の [作成] ボタンのスクリーンショット。](./media/contoso-migration-devtest-to-labs/new-lab.png)
-
-"_図 4:新しい DevTest Labs インスタンスの作成_
+![ポータルの DevTest Labs の [作成] ボタンのスクリーンショット。](./media/contoso-migration-devtest-to-labs/new-lab.png)
+*図 4: 新しい DevTest Labs インスタンスの作成*
 
 ## <a name="step-2-configure-the-development-virtual-network-assign-a-resource-group-and-set-policies"></a>手順 2:開発用仮想ネットワークを構成し、リソース グループを割り当て、ポリシーを設定する
 
@@ -154,15 +150,15 @@ DevTest Labs インスタンスの作成が完了したら、Contoso は次の�
 
    1. ポータルで DevTest Labs インスタンスを開き、 **[構成とポリシー]** を選択します。
 
-      ![ContosoDevTestLabs の [設定] の [構成とポリシー] のスクリーンショット。](./media/contoso-migration-devtest-to-labs/configure-lab.png)
+      ![ContosoDevTestLabs の [設定] の **[構成とポリシー]** のスクリーンショット。](./media/contoso-migration-devtest-to-labs/configure-lab.png)
 
-      _図 5:DevTest Labs インスタンス: 構成とポリシー_
+      *図 5:DevTest Labs インスタンス: 構成とポリシー*
 
    2. Contoso は、 **[仮想ネットワーク]**  >  **[+ 追加]** の順に選択し、 `vnet-dev-eus2` を選択して **[保存]** を選択します。 これにより、開発用仮想ネットワークを VM のデプロイに使用できるようになります。 仮想ネットワークは、DevTest Labs インスタンスのデプロイ時にも作成されています。
 
       ![仮想ネットワークを追加するための選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/vnets.png)
 
-      _図 6:仮想ネットワーク_
+      *図 6:仮想ネットワーク*
 
 2. リソース グループを割り当てます。
 
@@ -170,7 +166,7 @@ DevTest Labs インスタンスの作成が完了したら、Contoso は次の�
 
       ![リソース グループを割り当てる選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/assign-resource-group.png)
 
-      _図 7:リソース グループの割り当て_
+      *図 7:リソース グループの割り当て*
 
     > [!NOTE]
     > 共同作成者ロールは、他のユーザーにアクセス権を付与する権限以外のすべての権限を持つ管理者レベルのロールです。 詳細については、[Azure のロールベースのアクセス制御](/azure/role-based-access-control/overview)に関するページを参照してください。
@@ -183,25 +179,25 @@ DevTest Labs インスタンスの作成が完了したら、Contoso は次の�
 
        ![自動シャットダウン設定の選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/autoshutdown.png)
 
-       _図 8:自動シャットダウン_
+       *図 8:自動シャットダウン*
 
     1. Contoso は、開発者がオンラインになって作業を開始するときに VM が実行されているようにするため、自動開始を有効にします。 それらは、ローカル タイム ゾーンと開発者が作業する曜日に合わせて構成されます。
 
        ![自動開始設定の選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/autostart.png)
 
-       _図 9:自動開始_
+       *図 9:自動開始*
 
     1. Contoso は、許可される VM サイズを構成して、大規模でコストが高い VM を起動できないようにします。
 
        ![許可される VM サイズを構成するための選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/vm-sizes.png)
 
-       _図 10:許可される VM サイズ_
+       *図 10:許可される VM サイズ*
 
     1. Contoso は、サポートのメッセージを構成します。
 
        ![サポートのメッセージを構成するための選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/support.png)
 
-       _図 11:サポートのメッセージ_
+       *図 11:サポートのメッセージ*
 
 ## <a name="step-3-create-windows-10-enterprise-multi-session-virtual-desktops-for-developers-to-use-from-remote-locations"></a>手順 3:開発者がリモートの場所から使用する Windows 10 Enterprise マルチセッション仮想デスクトップを作成する
 
@@ -211,25 +207,25 @@ Contoso は、リモート開発者向けに Windows Virtual Desktop ベース�
 
    ![Windows 10 ベースの選択画面のスクリーンショット](./media/contoso-migration-devtest-to-labs/windows-10-vm-base.png)
 
-   _図 12:Windows 10 Enterprise マルチセッション ベース_
+   *図 12:Windows 10 Enterprise マルチセッション ベース*
 
 1. Contoso は、VM のサイズに加えて、インストールする成果物も構成します。 この場合、開発者は、Visual Studio Code、Git、Chocolatey などの一般的な開発ツールにアクセスできます。
 
    ![選択された成果物を示すスクリーンショット。](./media/contoso-migration-devtest-to-labs/artifacts.png)
 
-   _図 13:アーティファクト_
+   *図 13:アーティファクト*
 
 1. Contoso は、VM 構成が正確かどうかを確認します。
 
    ![ベースから仮想マシンを作成するための選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/vm-from-base.png)
 
-   _図 14:ベースからの仮想マシンの作成_
+   *図 14:ベースからの仮想マシンの作成*
 
 1. VM が作成されると、Contoso のリモート開発者はこの開発ワークステーションに接続して作業に使用できるようになります。 選択した成果物がインストールされているので、開発者は自分のワークステーションを構成する時間を節約できます。
 
    ![RemoteDevs 仮想マシンの情報を示すスクリーンショット。](./media/contoso-migration-devtest-to-labs/remote-vm.png)
 
-   _図 15:リモート開発者 VM_
+   *図 15:リモート開発者 VM*
 
 ## <a name="step-4-create-formulas-and-vms-within-devtest-labs-for-development-and-migrate-databases"></a>手順 4:開発用の DevTest Labs 内で数式と VM を作成し、データベースを移行する
 
@@ -241,25 +237,25 @@ DevTest Labs が構成され、リモート開発者のワークステーショ�
 
    ![Windows 2012 R2 ベースの選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/windows-2012-base.png)
 
-   _図 16:Windows 2012 R2 ベース_
+   *図 16:Windows 2012 R2 ベース*
 
 1. Contoso は、VM のサイズに加えて、インストールする成果物も構成します。 この場合、開発者は、Visual Studio Code、Git、Chocolatey などの一般的な開発ツールにアクセスできます。
 
    ![Windows 2012 R2 ベースの構成で選択されている VM サイズと成果物を示すスクリーンショット。](./media/contoso-migration-devtest-to-labs/windows-2012-base-configuration.png)
 
-   _図 17:Windows 2012 R2 ベースの構成_
+   *図 17:Windows 2012 R2 ベースの構成*
 
 1. データベース VM の数式を作成するために、Contoso は同じ基本手順を実行します。 今回は、ベースとして SQL Server 2012 イメージを選択します。
 
    ![SQL Server 2012 R2 ベースの選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/sql-2012-base.png)
 
-   _図 18:SQL Server 2012 イメージ_"
+   *図 18:SQL Server 2012 イメージ*"
 
 1. Contoso は、サイズと成果物を指定して数式を構成します。 成果物には、このデータベース開発 VM の数式に必要な SQL Server Management Studio が含まれています。
 
    ![SQL 2012 R2 ベースの構成を示すスクリーンショット。](./media/contoso-migration-devtest-to-labs/sql-2012-base-configuration.png)
 
-   _図 19:SQL 2020 R2 ベースの構成_
+   *図 19:SQL 2020 R2 ベースの構成*
 
    [Azure DevTest Labs での数式の使用](/azure/devtest-labs/devtest-lab-manage-formulas)に関する詳細を確認してください。
 
@@ -267,7 +263,7 @@ DevTest Labs が構成され、リモート開発者のワークステーショ�
 
    ![構成されたデータベース VM を示すスクリーンショット。](./media/contoso-migration-devtest-to-labs/contoso-formulas.png)
 
-   _図 20:Windows ベースの数式_
+   *図 20:Windows ベースの数式*
 
 次に、これらの数式を使用して、アプリケーションとデータベース VM をプロビジョニングします。
 
@@ -275,31 +271,31 @@ DevTest Labs が構成され、リモート開発者のワークステーショ�
 
    ![アプリ VM をベースとして選択する画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/app-vm.png)
 
-   _図 21:アプリケーション開発 VM_
+   *図 21:アプリケーション開発 VM*
 
 1. Contoso は、このアプリケーション VM に必要なサイズと成果物を指定して VM を構成します。
 
    ![アプリ VM のサイズと成果物の選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/app-vm-configuration.png)
 
-   _図 22:VM のサイズとアーティファクトの構成_
+   *図 22:VM のサイズとアーティファクトの構成*
 
 1. Contoso は、現在のデータベース開発 VM の構成に対応する数式 **SQLDbDevVmBase** を使用して、データベース VM をプロビジョニングします。
 
    ![データベース VM のプロビジョニングを示すスクリーンショット。](./media/contoso-migration-devtest-to-labs/database-vm.png)
 
-   _図 23:データベース VM_
+   *図 23:データベース VM*
 
 1. Contoso は、必要なサイズと成果物を指定して VM を構成します。
 
    ![データベース VM のサイズと成果物の選択画面のスクリーンショット。](./media/contoso-migration-devtest-to-labs/database-vm-config.png)
 
-   _図 24:VM のデータベース構成_
+   *図 24:VM のデータベース構成*
 
 1. リモート開発者のワークステーションと最初の VM の作成が完了すると、Contoso の開発者が Azure でコードの記述を開始する準備が整います。
 
    ![Contoso の仮想マシンを示すスクリーンショット。](./media/contoso-migration-devtest-to-labs/contoso-vms.png)
 
-   _図 25:Contoso VM_
+   *図 25:Contoso VM*
 
 1. Contoso は、バックアップから、または何らかの種類のコード生成プロセスを使用して VM 上にスキーマを構築することによって、開発データベースを復元できるようになりました。 成果物を使用して SQL Server Management Studio が既にインストールされているので、これらはツールをインストールする必要のない単純なタスクです。
 
@@ -320,7 +316,7 @@ Contoso セキュリティ チームは、Azure VM を調査して、セキュ�
 
 ### <a name="licensing-and-cost-optimization"></a>ライセンスとコストの最適化
 
-- Contoso は、すべての Azure 開発リソースがこの Dev/Test サブスクリプションを使用して作成されるようにすることで、コストを 80% 削減できます。
+- Contoso は、すべての Azure 開発リソースがこの Azure Dev/Test サブスクリプションを使用して作成されるようにすることで、コストを 80% 削減できます。
 - 確実にコストを抑え、オーバープロビジョニングが誤って発生しないようにするため、すべての DevTest Labs インスタンスと VM のポリシーに照らして予算が確認されます。
 - Contoso は、[Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) を有効にして、Azure リソースの監視と管理を支援します。
 

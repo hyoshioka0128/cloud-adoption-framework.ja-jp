@@ -10,16 +10,18 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-new, AQC, seo-caf-innovate
 keywords: デジタル トランスフォーメーション, デジタル トランスフォーメーション サービス, クラウド導入
-ms.openlocfilehash: 69044c6d7f1a66b7d2cd47dc0cadd1181ae388e4
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 8e1e8f303c16b9be07797ece758599efdf64f971
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632071"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792348"
 ---
 # <a name="empower-cloud-adoption"></a>クラウド導入の強化
 
 ご存知のように、イノベーションとデジタル トランスフォーメーションはビジネスの成功に不可欠です。 デジタル トランスフォーメーションとは、クラウド ベースのデジタル テクノロジ技術を導入して前のシステムを置き換え、カスタマー エクスペリエンスを向上させ、効率を改善し、ビジネスから分析情報を引き出し、データからより大きなイノベーションを生み出すことです。 新しいテクノロジを導入するだけではイノベーションは実現できません。 変化を促進し、求めている新たな価値を生み出す人々を支援することに注力する必要があります。 開発者はデジタル トランスフォーメーションの中心であり、より多くの成果を上げることができるように、開発者のベロシティを高める必要があります。 開発者チームの創造力を解き放つには、生産性を高め、グローバルで安全なコラボレーションを促進し、イノベーションを拡大できるように障壁を取り除く必要があります。
+
+<!-- docutune:ignore "one thing: drive" -->
 
 ## <a name="generate-value"></a>価値の創出
 
@@ -99,8 +101,8 @@ DevOps プロジェクトを作成するには:
 ### <a name="learn-more"></a>詳細情報
 
 - [GitHub で始めるオープンソース](https://azure.microsoft.com/products/github/)
-- [Azure のオープンソース](https://azure.microsoft.com/overview/choose-azure-opensource/)
-- [Microsoft Teams](/MicrosoftTeams/teams-overview)
+- [Azure のオープンソース](https://azure.microsoft.com/overview/open-source/)
+- [Microsoft Teams](/microsoftteams/teams-overview)
 
 ## <a name="innovation-characteristics"></a>[イノベーションの特性](#tab/Characteristics)
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 82bc4a4b70e03e3beeb850a3d82c6e7e0556fdf0
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a2b265b9ae6b4a3d45d8c1de1ac90c8012caabe6
+ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022241"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101792484"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>作業を開始しましょう。クラウド運用チームを結成する
 
@@ -199,6 +199,6 @@ DevOps またはサービス プロバイダーの運用上の合意がない場
 各項目の詳細情報
 
 - [クラウドのセンター オブ エクセレンス機能](../../organize/cloud-center-of-excellence.md)
-- [組織のアンチパターン: サイロと封土](../../organize/fiefdoms-silos.md)
+- [組織のアンチパターン:サイロと封土](../../organize/fiefdoms-silos.md)
 
 RACI の各パーティを明確にするクロスチーム マトリックスを作成することによりチーム間での責任を調整します。 [RACI テンプレート](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)をダウンロードして変更してください。
