@@ -8,29 +8,39 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 0148b36ea11db868c16f3245dce0f24295dc4894
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: c6ed0f262daf6fcf52f57692e00f465766dc08fe
+ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102113131"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103439646"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>クラウド導入フレームワークの概要
 
-クラウド導入フレームワークにより、いくつかの方法で作業を開始することができます。そのため、複数の異なる概要ガイドが用意されています。 この記事では、自身の現在の課題に最適なものを見つけられるように、このガイドがグループ分けされています。
+クラウド導入フレームワークにより、複数の異なる概要ガイドを使用して、いくつかの方法で作業を開始することができます。 この記事では、自身の現在の課題に最適なものを見つけられるように、このガイドがグループ分けされています。
 
 <br>
 
 次の各リンクをクリックすると、組織がクラウド導入の過程で特定の目標を達成しようとしているときによくある質問が表示されます。
 
+- [戦略を最もサポートするクラウド導入シナリオを選択する](#cloud-adoption-scenarios)
+- [手法とソリューション全体にわたるアンチパターンを調べる](#cloud-adoption-antipatterns)
 - [個人、プロジェクト、またはチームをオンボードするために基本概念を調整する](#align-foundation)
 - [ビジネスおよび技術的な結果をより迅速に実現するためにクラウドを導入する](#accelerate-adoption)
 - [コントロールを改良して、クラウドを適切に操作できるようにする](#improve-controls)
 - [導入と運用をサポートするチームを確立する](#establish-teams)
 
+## <a name="cloud-adoption-scenarios"></a>クラウド導入のシナリオ
+
+組織のクラウド導入作業は、クラウド導入過程における長期的な戦略目標の要件をサポートするように調整される傾向があります。 包括的なハイブリッドとマルチクラウドの取り組みを検討しているか、またはクラウド戦略への Kubernetes とコンテナーの統合を準備しているかに応じて、[ハイブリッドとマルチクラウドの導入シナリオ](../scenarios/hybrid/scenario-overview.md)と[最新のコンテナーの導入シナリオ](../scenarios/aks/index.md)に関するガイダンスが更新されています。
+
+## <a name="cloud-adoption-antipatterns"></a>クラウド導入のアンチパターン
+
+クラウドへの移行時に、設計、計画、または実装での誤りが発生する可能性があります。 イノベーションを阻み、企業における目標の採用と達成を妨げる、[アンチパターン](../antipatterns/antipatterns-to-avoid.md)に関する詳細なガイダンスを更新しました。  
+
 ## <a name="align-foundation"></a>基盤を調整する
 
-企業のクラウド導入の取り組みは、通常、クラウド導入の取り組みの結果に影響を与える一連の基本的な決定事項に基づいて構築されています。 次の情報は、主要な意思決定を行い、それをクラウド導入ライフサイクルで使用する参照用に記録するのに役立ちます。
+企業のクラウド導入の取り組みは、通常、クラウド導入の取り組みの結果に影響を与える基本的な決定事項に沿っています。 次の情報は、主要な意思決定を行い、それをクラウド導入ライフサイクルで使用する参照用に記録するのに役立ちます。
 
 - [基本決定の調整を開始する](./cloud-concepts.md)
 - [Azure のしくみ](./what-is-azure.md)

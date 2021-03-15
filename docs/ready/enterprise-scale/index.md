@@ -1,19 +1,19 @@
 ---
 title: クラウド導入フレームワークのエンタープライズ規模ランディング ゾーンから開始する
 description: Azure 向けの Microsoft クラウド導入フレームワークを使用して、エンタープライズ規模のランディング ゾーンから開始します。
-author: BrianBlanchard
+author: JefferyMitchell
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 40e0f6b736e2c009ecf173ac105c65c68aadc84d
-ms.sourcegitcommit: b1217b40301583286a3d05032dbfd7a8e6b83fd9
+ms.openlocfilehash: 983bd95a35420ccad89857a75909d290d353c49d
+ms.sourcegitcommit: 9475c71873d5e6c9fd523d476f536243cdd8b41c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838887"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103234477"
 ---
 # <a name="start-with-cloud-adoption-framework-enterprise-scale-landing-zones"></a>クラウド導入フレームワークのエンタープライズ規模ランディング ゾーンから開始する
 
@@ -23,11 +23,11 @@ ms.locfileid: "99838887"
 
 ## <a name="prescriptive-guidance"></a>規範的なガイダンス
 
-エンタープライズ規模のアーキテクチャは、Azure のベスト プラクティスと組み合わせた規範的なガイダンスを提供します。 組織の Azure 環境の重要なデザイン領域全体にわたる設計原則に従っています。
+エンタープライズ規模のアーキテクチャは、Azure コントロール プレーンのベスト プラクティスと組み合わせた規範的なガイダンスを提供します。 組織の Azure 環境の重要なデザイン領域全体にわたる設計原則に従っています。
 
 ## <a name="qualifiers-should-i-start-with-enterprise-scale"></a>適合条件:エンタープライズ規模で開始する必要があるか
 
-エンタープライズ規模のアーキテクチャは、設計によってモジュール化されています。 アプリケーションが移行されるか、新しく開発されて Azure にデプロイされるかに関係なく、アプリケーション ポートフォリオをサポートする基本ランディング ゾーンから始めることができます。 このアーキテクチャは、スケール ポイントに関係なく、ビジネス要件に応じてスケーリングできます。
+エンタープライズ規模のアーキテクチャは、設計によってモジュール化されています。 アプリケーションが移行されるか、新しく開発されて Azure にデプロイされるかに関係なく、アプリケーション ポートフォリオをサポートする基本ランディング ゾーンのコントロール プレーンから始めることができます。 このアーキテクチャは、スケール ポイントに関係なく、ビジネス要件に応じてスケーリングできます。
 
 ## <a name="start-with-a-cloud-adoption-framework-enterprise-scale-landing-zone"></a>クラウド導入フレームワークのエンタープライズ規模ランディング ゾーンから開始する
 

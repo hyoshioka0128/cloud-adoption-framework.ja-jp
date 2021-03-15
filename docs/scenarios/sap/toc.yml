@@ -1,0 +1,53 @@
+#cSpell:ignore eslz
+items:
+  - name: SAP 導入シナリオ - Azure 向けの Microsoft Cloud 導入フレームワーク
+    href: index.md
+    pdf_name: SAP adoption scenario - Microsoft Cloud Adoption Framework for Azure
+  - name: 戦略
+    href: strategy.md
+  - name: 計画
+    href: plan.md
+  - name: Azure ランディング ゾーンのレビュー
+    href: ready.md
+  - name: SAP の Azure への移行
+    href: migrate.md
+  - name: SAP と Azure によるイノベーション
+    href: innovate.md
+  - name: SAP プラットフォームとワークロードの管理
+    href: manage.md
+  - name: Well-Architected に関する検討事項
+    href: /azure/architecture/reference-architectures/sap/sap-overview?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/sap/toc.json
+  - name: SAP アーキテクチャによる促進
+    items:
+      - name: SAP HANA on Azure (L インスタンス)
+        href: /azure/architecture/reference-architectures/sap/hana-large-instances?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/sap/toc.json
+      - name: Linux での SAP HANA スケールアップ
+        href: /azure/architecture/reference-architectures/sap/run-sap-hana-for-linux-virtual-machines?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/sap/toc.json
+      - name: Azure 上の Windows の SAP NetWeaver
+        href: /azure/architecture/reference-architectures/sap/sap-netweaver?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/sap/toc.json
+      - name: Azure 上の Linux での SAP S/4HANA
+        href: /azure/architecture/reference-architectures/sap/sap-s4hana?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/sap/toc.json
+      - name: Azure 上の Linux での SAP BW/4HANA
+        href: /azure/architecture/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/sap/toc.json
+      - name: SAP NetWeaver on SQL Server
+        href: /azure/architecture/solution-ideas/articles/sap-netweaver-on-sql-server?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/sap/toc.json
+      - name: Oracle データベースを使用した SAP デプロイ
+        href: /azure/architecture/example-scenario/apps/sap-production?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/sap/toc.json
+      - name: SAP の開発/テスト
+        href: /azure/architecture/example-scenario/apps/sap-dev-test?bc=/azure/cloud-adoption-framework/_bread/toc.json&toc=/azure/cloud-adoption-framework/scenarios/sap/toc.json
+  - name: エンタープライズ規模の構築セット
+    items:
+      - name: 概要
+        href: enterprise-scale-landing-zone.md
+      - name: ID 管理とアクセス管理
+        href: eslz-identity-and-access-management.md
+      - name: ネットワーク トポロジと接続
+        href: eslz-network-topology-and-connectivity.md
+      - name: 管理と監視
+        href: eslz-management-and-monitoring.md
+      - name: 事業継続とディザスター リカバリー
+        href: eslz-business-continuity-and-disaster-recovery.md
+      - name: セキュリティ、ガバナンス、およびコンプライアンス
+        href: eslz-security-governance-and-compliance.md
+      - name: プラットフォームの自動化と DevOps
+        href: eslz-platform-automation-and-devops.md
