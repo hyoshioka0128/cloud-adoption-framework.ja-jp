@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 5480355807f862268bbfc3c84b7379e165c38629
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 8c9cc17567152fd173db064e5e166fab993a85ab
+ms.sourcegitcommit: 3dd5cb5e84df8049ecbd484061e6df16a1914bb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787911"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102515364"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>財務上の結果の例
 
@@ -25,7 +25,7 @@ ms.locfileid: "101787911"
 
 この記事の残りの部分では、クラウド変革のコンテキストにおけるこれらの財務上の結果について説明します。
 
-[TransAlta](https://customers.microsoft.com/story/canadian-power-generator-shines-light-on-numbers) では、データの分析情報を増強させ、初期の大規模な資本コストからのコストを回避し、月ごとの運用コストを削減させました。
+[センタラ ヘルスケア](https://customers.microsoft.com/story/769786-sentara-healthcare-health-provider-azure)は、データを Azure に移行することで、モバイル アプリのエクスペリエンスを向上させることができます。また、迅速な診断、IT チームのコスト削減、さらに機敏で変更が可能な組織による患者の治療の向上の実現をメンバーに提供することができるようになりました。
 
 > [!NOTE]
 > 次の例は仮説に基づいており、クラウド戦略の導入による成果を保証するものではありません。
