@@ -1,6 +1,6 @@
 ---
 title: Azure Machine Learning を使用した MLOps
-description: 継続的インテグレーション、継続的デリバリー、継続的デプロイなど、ワークフローの効率を向上させる機械学習の運用 (MLOps) の原則と実践について説明します。
+description: 継続的インテグレーション、継続的デリバリー、継続的デプロイなど、ワークフローの効率を向上させる MLOps の原則と実践について説明します。
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 5dd750bcff3e2db84c709db2f4eaf853811d345a
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 6e9b6734dd982c3e5529f216262d25cf7dcc264b
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100631714"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208202"
 ---
-# <a name="machine-learning-operations-with-azure-machine-learning"></a>Azure Machine Learning を使用した機械学習の運用
+# <a name="mlops-with-azure-machine-learning"></a>Azure Machine Learning を使用した MLOps
 
-機械学習の運用 (MLOps) は、継続的インテグレーション、継続的デリバリー、継続的デプロイなど、ワークフローの効率を向上させる DevOps の原則と実践に基づいています。 MLOps では、次を行うために、これらの原則を機械学習プロセスに適用します。
+*MLOps (機械学習の運用)* は、継続的インテグレーション、継続的デリバリー、継続的デプロイなど、ワークフローの効率を向上させる DevOps の原則と実践に基づいています。 MLOps では、次を行うために、これらの原則を機械学習プロセスに適用します。
 
 - より迅速にモデルの実験と開発を行います。
 - より迅速にモデルのデプロイと運用を行います。
@@ -49,7 +49,7 @@ MLOps によって、機械学習ソリューションの品質と一貫性が�
 
 次のリソースをじっくり読んで理解を深めましょう。
 
-- [MLOps: Azure Machine Learning を使用したモデル管理、デプロイ、および監視](/azure/machine-learning/concept-model-management-and-deployment)
+- [MLOps: Azure Machine Learning を使用したモデルの管理、デプロイ、監視](/azure/machine-learning/concept-model-management-and-deployment)
 - [Azure Machine Learning を使用したモデルのデプロイ](/azure/machine-learning/how-to-deploy-and-where)方法とデプロイ先
 - チュートリアル: [Azure Container Instances に画像分類モデルをデプロイする](/azure/machine-learning/tutorial-deploy-models-with-aml)
 - [エンドツーエンドの MLOps サンプル リポジトリ](https://github.com/microsoft/MLOps)

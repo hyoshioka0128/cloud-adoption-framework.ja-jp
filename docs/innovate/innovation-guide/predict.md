@@ -1,5 +1,5 @@
 ---
-title: Azure イノベーション:AI によるイノベーション
+title: Azure での AI によるイノベーション
 description: お客様のニーズを予測し、ビジネス プロセスを自動化し、非構造化データに潜む情報を発見し、より優れたエクスペリエンスを提供する新しい方法でお客様と関わり合うための Azure ソリューションについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,16 +10,16 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
 keywords: ビジネス プロセスの自動化, AI イノベーション, 機械学習, ナレッジ マイニング
-ms.openlocfilehash: 1b61201bba7af957b661fa9f755350482b3db955
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: c9d9fecd738d098d42fb4f03343a16d28d55664e
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790206"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208576"
 ---
 <!-- cSpell:ignore ONNX -->
 
-# <a name="innovate-with-ai"></a>AI によるイノベーション
+# <a name="innovate-with-ai-in-azure"></a>Azure での AI によるイノベーション
 
 会社には、イノベーターとしてビジネスとお客様に関する豊富な情報があります。 AI イノベーションを利用すると、お客様の会社は:
 
@@ -92,7 +92,7 @@ Cognitive Services API の使用を開始するには:
 
     - 使用するサービスの名前がわかっている場合は、 **[Marketplace を検索]** に名前を入力します。 次に、サービスを選択します。
 
-    - Cognitive Services APIs の一覧については、 **[Cognitive Services]** 見出しの横にある **[さらに参照する]** を選択します。 次に、サービスを選択します。
+    - Cognitive Services API の一覧については、 **[Cognitive Services]** 見出しの横にある **[さらに参照する]** を選択します。 次に、サービスを選択します。
 
 1. **[作成]** を選択し、ポータルの手順に従ってサービスをプロビジョニングします。
 

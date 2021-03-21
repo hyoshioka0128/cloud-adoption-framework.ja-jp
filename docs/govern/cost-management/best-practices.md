@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 0a216b5f8e5fc7504e1d685f9ecb58215dcd6776
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 4fc396611a849769a241fbb07c655f75bcc1d65c
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792467"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208882"
 ---
-<!-- docutune:casing ARO -->
-
 # <a name="best-practices-for-costing-and-sizing-resources-hosted-in-azure"></a>Azure でホストされるリソースの料金計算とサイズ設定のベスト プラクティス
 
 ガバナンスの規範を提供する一方で、コスト管理は企業レベルで繰り返し発生するテーマです。 コストを最適化して管理することで、Azure 環境の長期的な成功を保証できます。 すべてのチーム (財務チーム、管理チーム、アプリケーション開発チーム) が関連するコストを理解しておき、定期的に確認することが重要です。
@@ -106,7 +104,7 @@ Azure リソースの月額料金を予測するために、利用できるツ�
 | **高性能** | 最も高速で最も強力な CPU。 オプションの、高スループットのネットワーク インターフェイス (RDMA) を備えた VM。 | クリティカルな高性能アプリケーション。 |
 
 - これらの VM 間の価格の違いと、長期的な予算への影響を理解しておくことが重要です。
-- 種類ごとに、内部にいくつかの VM シリーズがあります。
+- 各種類には、その中に一連の VM シリーズがいくつか含まれます。
 - さらに、あるシリーズ内の VM を選択すると、そのシリーズ内の VM のみをスケールアップまたはスケールダウンできます。 たとえば、`DS2_v2` インスタンスは `DS4_v2` にスケールアップできますが、`F2S_v2` インスタンスなどの異なるシリーズのインスタンスには変更できません。
 
 **詳細情報:**
@@ -211,8 +209,8 @@ Azure Reserved VM Instances を使用すると、予約インスタンスの 1 �
 - 予約インスタンスは課金割引を提供するもので、リソースの実行時の状態には影響しません。
 - 予約インスタンスはキャンセルできます。
 
-![Azure Reserved Virtual Machine Instances](../../migrate/azure-best-practices/media/migrate-best-practices-costs/reserve.png)
-*図 1:Azure 予約 VMs。*
+![Azure Reserved VM Instances](../../migrate/azure-best-practices/media/migrate-best-practices-costs/reserve.png)
+*図 1: Azure Reserved VM instances。*
 
 **詳細情報:**
 

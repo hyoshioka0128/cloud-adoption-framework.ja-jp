@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 561be9cd3c8ceaebc9ba8b7faab8f87297170fc4
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a79fd88354907457cf59ecfba727ca77cacbaf2e
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790274"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208865"
 ---
 <!-- docutune:casing "Movie Tickets Online" -->
 
@@ -44,7 +44,7 @@ AppDynamics はほとんどのユース ケースに対してビジネスの分�
 
 AppDynamics を使用すると、アプリケーションのビジネス価値を定義し、その価値を維持するために達成する必要がある主要なメトリックを特定し、目標とするビジネス成果を達成しているかどうかを確認できます。 AppDynamics エージェントは、これらのデータ ポイントと従来のアプリケーション パフォーマンス メトリック (応答時間やメモリ使用率など) をリアルタイムでアプリケーションから直接収集します。コードを変更する必要はありません。
 
-ビジネス メトリックは、ビジネス成果に密接に関連しています。 多くの組織には、固有のビジネス成果を測定する複雑なメトリックがあります。これらの成果は、財政や機敏性に関する目標から、パフォーマンスや顧客エンゲージメントの目標に及びます。 AppDynamics は組織に固有で有用なメトリックを収集します。これらのメトリックは移行前の現在の事業運営と移行後に寄与する可能性があります。
+ビジネス メトリックは、ビジネス成果に密接に関連しています。 多くの組織には、固有のビジネス成果を測定する複雑なメトリックがあります。これらの成果は、財政や機敏性に関する目標から、パフォーマンスや顧客エンゲージメントの目標に及びます。 AppDynamics は組織に固有で有用なメトリックを収集します。これらのメトリックは、Azure にワークロードを移行する前と後で、現行の事業運営に寄与する可能性があります。
 
 **例:**
 

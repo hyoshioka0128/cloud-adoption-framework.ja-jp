@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 05eef909e46b14f5f72212a7c8f5babf2d7933c3
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a34ed14ee6bb6dd407cd46290d1167c7ce9f39da
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101784596"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208270"
 ---
 # <a name="examples-of-performance-outcomes"></a>パフォーマンス結果の例
 

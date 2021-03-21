@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: c38f725f7a2f7f138594d6167c0c823d04118166
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: 53ff4e872ffa5bf6d92061388c89a7b92ecddb21
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632479"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208338"
 ---
 <!-- docutune:casing WorkBoard -->
 
@@ -70,8 +70,8 @@ OKR の例を次に示します。
 **成果指標:**
 
 1. K-12 の学校の 45 % が自社のプラットフォームを使用している
-1. 内部システムによる測定で、学生エンゲージメントの 12 % の増加
-1. 親を対象とする四半期ごとのアンケートで、95 % の満足度
+1. 内部システムによる測定で、学生エンゲージメントの 12% の増加
+1. 親を対象とする四半期ごとのアンケートで、95% の満足度
 
 **目標 2:** 自社の事業に関連するすべての人が、革新と創造を行えるように支援するテクノロジ プラットフォームを構築する。
 

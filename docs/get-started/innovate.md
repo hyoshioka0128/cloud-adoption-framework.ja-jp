@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 50a866ae8600875b524bb6746386023e145e5287
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: e367cf3f09b8b85a3d4a2c8d14d52037614678a0
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792501"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208814"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>作業を開始しましょう。クラウドで新しい製品とサービスのイノベーションを促進する
 
@@ -21,7 +21,9 @@ ms.locfileid: "101792501"
 
 このガイドでは、次の図で強調表示されているクラウド導入フレームワークの各セクションを使用します。 イノベーションは、標準的な移行と比べて予測しづらいものの、広義のクラウド導入計画のコンテキストには当てはまります。 このガイドは、企業がイノベーションに必要なサポートを提供すると共に、クラウド導入全体でバランスの取れたポートフォリオを作成するための構造を提供するうえで役立ちます。
 
-![イノベーションの方法論を含むクラウド導入フレームワークの図。](../_images/get-started/innovation-map.png)
+![革新的な方法論など、クラウド導入フレームワークの方法論。](../_images/get-started/innovation-map.png)
+
+_図 1: 革新的な方法論など、クラウド導入フレームワークの方法論。_
 
 ## <a name="step-1-document-the-business-strategy"></a>手順 1:ビジネス戦略を文書化する
 
@@ -207,13 +209,13 @@ ms.locfileid: "101792501"
 
 ## <a name="step-9-assess-the-innovation-maturity-of-your-organization"></a>手順 9:組織のイノベーションの成熟度を評価する
 
-イノベーション戦略の開発をサポートする AI 成熟度モデルは、AI ベースのシステムを作成および所有する能力を組織自身で評価するのに役立つ無料のツールです。 成熟度には、基礎、アプローチ、意欲、成熟の 4 つのレベルがあります。 各レベルには、お客様の組織について、特定の種類の AI ソリューションを採用し、関連するリスクを軽減し、戦略を実装する能力を判断するのに役立つ特定の特性セットが含まれています。
+イノベーション戦略の開発をサポートする [AI 準備評価ツール](https://info.microsoft.com/ww-landing-ai-maturity-model-website.html)は、AI ベースのシステムを作成および所有する能力を組織自身で評価するのに役立つ無料のリソースです。 成熟度には、基礎、アプローチ、意欲、成熟の 4 つのレベルがあります。 各レベルには、お客様の組織について、特定の種類の AI ソリューションを採用し、関連するリスクを軽減し、戦略を実装する能力を判断するのに役立つ特定の特性セットが含まれています。
 
-評価には 5 分から 10 分かかり、4 つのカテゴリ (戦略、カルチャ、組織の特性、機能) にわたってお客様の組織の能力が測定されます。 これらのカテゴリを測定することで、AI 成熟度モデルは、お客様の組織のスコアを計算し、曲線上に AI イノベーションの成熟度の推定値を示すことができます。
+評価には 5 分から 10 分かかり、4 つのカテゴリ (戦略、カルチャ、組織の特性、機能) にわたってお客様の組織の能力が測定されます。 これらのカテゴリを測定することで、AI 準備評価ツールは、お客様の組織のスコアを計算し、曲線上に AI イノベーションの成熟度の推定値を示すことができます。
 
 **成果物:**
 
-- [AI 成熟度モデル ツール](https://www.gartner.com/en/documents/3982174/artificial-intelligence-maturity-model)を使用することで、組織の AI 成熟度を評価して、AI ベースのシステムを作成します。
+- [Gartner AI 成熟度モデル](https://www.gartner.com/en/documents/3982174/artificial-intelligence-maturity-model) を使用して、組織の AI 成熟度を評価して、AI ベースのシステムを作成します。
 
 **成果物の完遂をサポートするうえでのガイダンス:**
 

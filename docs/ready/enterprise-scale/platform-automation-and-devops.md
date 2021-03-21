@@ -1,6 +1,6 @@
 ---
 title: プラットフォームの自動化と DevOps
-description: プラットフォームの自動化と DevOps。
+description: Azure 向けの Microsoft クラウド導入フレームワークのプラットフォームの自動化と DevOps について説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 77b04dc10f6a41f73ec5a38e2ae50558a8ec7cd4
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: 2d62ae49e60c32f8f66175e92a4c4538cf701fb9
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99227007"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209120"
 ---
-<!-- docutune:casing PlatformOps AppDevOps AppDataOps AppSecOps -->
-
 # <a name="platform-automation-and-devops"></a>プラットフォームの自動化と DevOps
 
 ![プラットフォームの自動化と DevOps の図。](./media/devops.png)
@@ -55,7 +53,7 @@ ms.locfileid: "99227007"
 
   - コードとしてのプラットフォーム (テンプレート、スクリプト、その他の資産の管理)。
 
-  - Azure Active Directory テナント内の Microsoft Azure の全体的な運用を担当 (サービス プリンシパルの管理、Graph API の登録、ロールの定義)。
+  - Azure Active Directory テナント内の Microsoft Azure の全体的な運用を担当 (サービス プリンシパルの管理、Microsoft Graph API の登録、ロールの定義)。
 
 - **SecOps** (セキュリティ運用)
 

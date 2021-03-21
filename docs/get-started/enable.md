@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: cefb7a92c6ed7ada514eef199f2890b3c7b65000
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2b24872323bd4d771634564a64532aa216652731
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97022683"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208848"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>健全な運用モデルと組織配置でお客様の成功を実現する
 
@@ -34,7 +34,7 @@ ms.locfileid: "97022683"
 
 一般的な問題点を超えて、運用モデルを段階的に強化することにより、いくつかの主要な機会をポートフォリオ全体でスケーリングできます。 一般的に顧客は、特に運用上の優位性、コストの最適化、セキュリティ、信頼性、パフォーマンス、または人員の管理をスケーリングする必要があります。 これらの内容をポートフォリオ レベルでスケーリングすると、ワークロード中心の特定のチームのベスト プラクティスを、他のすべてのプロジェクトやワークロードに適用できます。
 
-## <a name="get-started-guides-to-enable-teams-through-an-operating-model"></a>運用モデルを使用してチームを有効にするためのファースト ステップ ガイド
+## <a name="getting-started-guides-to-enable-teams-through-an-operating-model"></a>運用モデルを使用してチームを有効にするためのファースト ステップ ガイド
 
 次のガイドは、運用モデルの調整を開始し、時間の経過と共に改善を図るのに役立ちます。
 
@@ -49,9 +49,11 @@ ms.locfileid: "97022683"
 
 ## <a name="shared-architecture-principles"></a>共有アーキテクチャの原則
 
-適切に管理された運用モデルの核となる原則は、一連の一般的なアーキテクチャの原則に基づいています。 この記事のシリーズのファースト ステップ ガイドは、これらの原則をクラウド プラットフォームにわたって、ワークロードのポートフォリオ全体でスケーリングするうえで、チームをサポートするのに役立ちます。
+適切に管理された運用モデルの核となる原則は、一連の一般的なアーキテクチャの原則に基づいています。 この記事シリーズのファースト ステップ ガイドは、これらの原則をクラウド プラットフォームにわたって、ワークロードのポートフォリオ全体でスケーリングするうえで、チームをサポートするのに役立ちます。
 
 ![共有アーキテクチャの原則を示す図。](../_images/shared-principles.png)
+
+_図 1: 共有アーキテクチャの原則。_
 
 これらの原則は、Azure Advisor、Microsoft Azure Well-Architected Framework、および Azure アーキテクチャ センターのソリューションで共有されます。
 

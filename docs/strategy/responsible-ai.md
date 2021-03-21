@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: 84cf77a093f46966542b2a3a04dd27e325ddde37
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 4584306b34f0f9566a5aac07f676e7f4f0803b0d
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97012500"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208236"
 ---
 <!-- docutune:ignore InterpretML FairLearn -->
 
@@ -59,7 +59,7 @@ AI ソリューションを実装する際、ソリューションで次の AI �
 
 ## <a name="next-steps"></a>次の手順
 
-責任あるソリューションの開発をサポートするためのその他のリソースについては、以下を参照してください。
+責任あるソリューション開発の詳細については、次にアクセスしてください。
 
 - [責任ある AI の概要](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6)
 - [責任ある AI リソース](https://www.microsoft.com/ai/responsible-ai-resources)

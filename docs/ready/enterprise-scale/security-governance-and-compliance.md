@@ -8,16 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 9a3304635985e9d4452d9f06d7f4863408fd3d87
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 333627564f49ff29837e099ed079db03e3bf69f1
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101785807"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209018"
 ---
-<!-- cSpell:ignore FIPS SIEM majeure NSGs -->
-<!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
-
 # <a name="enterprise-scale-security-governance-and-compliance"></a>エンタープライズ規模のセキュリティ、ガバナンス、コンプライアンス
 
 この記事では、暗号化とキー管理の定義、ガバナンスの計画、セキュリティの監視と監査ポリシーの定義、プラットフォーム セキュリティの計画について説明します。 記事の最後に、Azure サービスのエンタープライズ セキュリティの準備状況を評価するためのフレームワークについて説明した表を掲載します。
@@ -202,7 +199,7 @@ Azure セキュリティ ベンチマークのドキュメントでは、セキ�
 
 | 評価                    | カテゴリ                                                              | 条件                                                                                                                                     |
 |------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Security                     | ネットワーク エンドポイント                                                      | サービスには、仮想ネットワークの外部からアクセスできるパブリック エンドポイントがありますか。                                                                |
+| セキュリティ                     | ネットワーク エンドポイント                                                      | サービスには、仮想ネットワークの外部からアクセスできるパブリック エンドポイントがありますか。                                                                |
 |                              |                                                                       | 仮想ネットワーク サービス エンドポイントをサポートしていますか。                                                                                                      |
 |                              |                                                                       | Azure サービスとサービス エンドポイントは直接対話できますか。                                                                              |
 |                              |                                                                       | Azure Private Link エンドポイントをサポートしていますか?                                                                                                           |
@@ -227,7 +224,7 @@ Azure セキュリティ ベンチマークのドキュメントでは、セキ�
 | ID 管理とアクセス管理 | 認証とアクセス制御                                       | すべてのコントロール プレーン操作は Azure AD によって管理されていますか Azure Kubernetes Service など、入れ子になったコントロール プレーンはありますか?                             |
 |                              |                                                                       | データ プレーンへのアクセスを提供するにはどのような方法がありますか。                                                                                      |
 |                              |                                                                       | データ プレーンは Azure AD と統合されますか。                                                                                                      |
-|                              |                                                                       | Azure 間 (サービス間) の認証では、MSI およびサービス プリンシパルが使用されますか?                                                         |
+|                              |                                                                       | Azure サービス間の認証では、マネージド ID やサービス プリンシパルが使用されますか。                                                         |
 |                              |                                                                       | Azure から IaaS (サービスから仮想ネットワーク) への認証は Azure AD を介しますか?                                                                                   |
 |                              |                                                                       | 適用可能なキーまたは共有アクセス署名はどのように管理されますか?                                                                                                     |
 |                              |                                                                       | アクセスはどのような方法で取り消すことができますか。                                                                                                                   |

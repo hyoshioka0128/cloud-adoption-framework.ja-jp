@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 0015a48ca34a02bb2d263cab0e404301e120798a
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a4a05791b220fea280a55b9183011fee57ff3df5
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101786942"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209154"
 ---
 <!-- docutune:casing "Update Management" -->
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
@@ -41,19 +41,19 @@ ms.locfileid: "101786942"
 
 ## <a name="best-practice-follow-azure-security-center-recommendations"></a>ベスト プラクティス:Azure Security Center の推奨事項に従う
 
-Azure テナント管理者は、攻撃からワークロードを保護するセキュリティ機能を有効にする必要があります。 Azure Security Center では、統合されたセキュリティ管理が提供されます。 Security Center からは、ワークロード全体へのセキュリティ ポリシーの適用、脅威にさらされる機会の制限、攻撃の検出とその対応を行うことができます。 Security Center では、Azure テナント全体のリソースと構成が分析され、次のようにセキュリティに関する推奨事項が示されます。
+Azure テナント管理者は、攻撃からワークロードを保護するセキュリティ機能を有効にする必要があります。 Security Center には、統合されたセキュリティ管理が用意されています。 Security Center からは、ワークロード全体へのセキュリティ ポリシーの適用、脅威にさらされる機会の制限、攻撃の検出とその対応を行うことができます。 Security Center では、Azure テナント全体のリソースと構成が分析され、次のようにセキュリティに関する推奨事項が示されます。
 
 - **一元化されたポリシー管理:** すべてのハイブリッド クラウド ワークロードのセキュリティ ポリシーを一元的に管理することで、会社や規制のセキュリティ要件に確実に準拠できます。
 - **継続的なセキュリティ評価:** マシン、ネットワーク、ストレージとデータ サービス、アプリケーションのセキュリティに対する姿勢を監視して、潜在的なセキュリティの問題を検出します。
 - **実行可能な推奨事項:** 優先順位が付けられた実行可能なセキュリティの推奨事項を使って、攻撃者が悪用する前にセキュリティの脆弱性を修復します。
 - **優先順位が付けられたアラートとインシデント:** 優先順位が付けられたセキュリティ アラートとインシデントにより、最も重大な脅威にまず重点を置きます。
 
-Azure Security Center には、評価と推奨事項に加え、特定のリソースに対して有効にできるセキュリティ機能が用意されています。
+Security Center には、評価と推奨事項に加え、特定のリソースに対して有効にできるセキュリティ機能が用意されています。
 
-- **Just-In-Time (JIT) アクセス。** Azure VM の管理ポートに対する制御されたアクセスである Just-In-Time を使用して、ネットワークの攻撃対象領域を減らします。
+- **Just-In-Time (JIT) アクセス。** Azure VM の管理ポートに対する制御されたアクセスである JIT を使用して、ネットワークの攻撃対象領域を減らします。
   - VM の RDP ポート 3389 をインターネットに対して開いた場合、VM は悪意のあるアクターによるアクティビティに継続的にさらされます。 Azure の IP アドレスはよく知られており、ハッカーは開いているポート 3389 での攻撃を常に探っています。
-  - Just-In-Time では、ネットワーク セキュリティ グループ (NSG) と、特定のポートが開いている時間の長さを制限する受信規則が使用されます。
-  - Just-In-Time アクセスを有効にすると、Security Center によって、ユーザーが VM に対して Azure ロールベースのアクセス制御 (Azure RBAC) の書き込みアクセス許可を持っていることが確認されます。 さらに、ユーザーが VM に接続する方法に関する規則を指定できます。 アクセス許可に問題がない場合、アクセス要求は承認され、Security Center によって、選択したポートへの受信トラフィックを指定した時間だけ許可するように NSG が構成されます。 その時間が経過すると、NSG は以前の状態に戻ります。
+  - JIT では、ネットワーク セキュリティ グループ (NSG) と、特定のポートが開いている時間の長さを制限する受信規則が使用されます。
+  - JIT アクセスを有効にすると、Security Center によって、ユーザーが VM に対して Azure ロールベースのアクセス制御 (Azure RBAC) の書き込みアクセス許可を持っていることが確認されます。 さらに、ユーザーが VM に接続する方法に関する規則を指定できます。 アクセス許可に問題がない場合、アクセス要求は承認され、Security Center によって、選択したポートへの受信トラフィックを指定した時間だけ許可するように NSG が構成されます。 その時間が経過すると、NSG は以前の状態に戻ります。
 - **適応型アプリケーション制御。** 動的な許可リストを使用して VM で実行されるアプリケーションを制御することにより、ソフトウェアやマルウェアを VM から遠ざけます。
   - 適応型アプリケーション制御を使用すると、アプリケーションを承認し、悪意のあるユーザーや管理者によって未承認または審査中のソフトウェア アプリケーションが VM にインストールされるのを防ぐことができます。
     - 悪意のあるアプリケーションを実行する試みをブロックまたは警告し、不要なまたは悪意のあるアプリケーションを回避し、組織のアプリケーション セキュリティ ポリシーに確実に準拠することができます。
@@ -72,20 +72,20 @@ Azure Security Center には、評価と推奨事項に加え、特定のリソ�
 
 暗号化は、Azure のセキュリティ プラクティスの重要な部分です。 すべてのレベルで暗号化を有効にすることは、承認されていないユーザーが転送中や保存時の機密データにアクセスするのを防ぐのに役立ちます。
 
-### <a name="encryption-for-infrastructure-as-a-service-iaas"></a>サービスとしてのインフラストラクチャ (IaaS) の暗号化
+### <a name="encryption-for-infrastructure-as-a-service"></a>サービスとしてのインフラストラクチャの暗号化
 
-- **仮想マシン:** VM の場合は、Azure Disk Encryption を使用して、Windows および Linux の IaaS VM ディスクを暗号化できます。
+- **仮想マシン:** VM の場合は、Azure Disk Encryption を使用して、Windows および Linux のサービスとしてのインフラストラクチャ (IaaS) VM ディスクを暗号化できます。
   - Azure Disk Encryption では、BitLocker (Windows の場合) および DM-Crypt (Linux の場合) を使用して、オペレーティング システムとデータ ディスクのボリューム暗号化を行います。
   - Azure によって作成された暗号化キーを使用するか、独自の暗号化キーを提供し、Azure Key Vault で保護することができます。
   - Azure Disk Encryption では、保存時 (ディスク上) および VM の起動中に IaaS VM データがセキュリティで保護されます。
-    - Azure Security Center では、暗号化されていない VM があると警告を受け取ります。
+    - 暗号化されていない VM がある場合は、Security Center からアラートが通知されます。
 - **ストレージ:** Azure Storage に保存されている格納データを保護します。
   - Azure ストレージ アカウントの格納データは、Microsoft が生成する、FIPS 140-2 準拠の AES キーを使用して暗号化できます。また、ユーザー独自のキーを使用することもできます。
   - Azure Storage 暗号化は、新規と既存のすべてのストレージ アカウントに対して有効になっており、無効にすることはできません。
 
-### <a name="encryption-for-platform-as-a-service-paas"></a>サービスとしてのプラットフォーム (PaaS) の暗号化
+### <a name="encryption-for-platform-as-a-service"></a>サービスとしてのプラットフォームの暗号化
 
-ユーザーが自分の VM とインフラストラクチャを管理する IaaS とは異なり、PaaS モデルでは、プラットフォームとインフラストラクチャがプロバイダーによって管理されます。 ユーザーはコア アプリケーションのロジックと機能に専念できます。 PaaS サービスの種類は非常に多いので、セキュリティに関する評価はサービスごとに個別に行います。 例として、Azure SQL Database の暗号化を有効にする方法を見てみましょう。
+ユーザーが自分の VM とインフラストラクチャを管理する IaaS とは異なり、サービスとしてのプラットフォーム (PaaS) モデルでは、プラットフォームとインフラストラクチャがプロバイダーによって管理されます。 ユーザーはコア アプリケーションのロジックと機能に専念できます。 PaaS サービスの種類は非常に多いので、セキュリティに関する評価はサービスごとに個別に行います。 例として、Azure SQL Database の暗号化を有効にする方法を見てみましょう。
 
 - **Always Encrypted:** SQL Server Management Studio で Always Encrypted ウィザードを使用して、保存データを保護します。
   - Always Encrypted キーを作成して、個々の列のデータを暗号化します。
@@ -101,16 +101,16 @@ Azure Security Center には、評価と推奨事項に加え、特定のリソ�
 - [Windows VM 用の Azure Disk Encryption ](/azure/virtual-machines/windows/disk-encryption-overview)を有効にする。
 - [保存データに対する Azure Storage 暗号化](/azure/storage/common/storage-service-encryption)について学習する。
 - [Always Encrypted の概要](/azure/azure-sql/database/always-encrypted-azure-key-vault-configure)を読む。
-- [SQL Database および Azure Synapse の Transparent Data Encryption](/azure/azure-sql/database/transparent-data-encryption-tde-overview) に関する記事を読む。
-- [カスタマー マネージド キーを使用した Azure SQL Database Transparent Data Encryption](/azure/azure-sql/database/transparent-data-encryption-byok-overview) について学習する。
+- [SQL Database と Azure Synapse 用の TDE](/azure/azure-sql/database/transparent-data-encryption-tde-overview) を読む。
+- [カスタマー マネージド キーを使用した Azure SQL Database TDE](/azure/azure-sql/database/transparent-data-encryption-byok-overview) について学習する。
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>ベスト プラクティス:マルウェア対策で VM を保護する
 
 特に、Azure に移行された古い VM には、適切なレベルのマルウェア対策がインストールされていない可能性があります。 Azure では、ウイルス、スパイウェア、その他のマルウェアからの VM の保護に役立つ無料のエンドポイント ソリューションが提供されています。
 
-- Azure Cloud Services と仮想マシン向けの Microsoft Antimalware では、既知の悪意のあるソフトウェアや望ましくないソフトウェアが自身をインストールしようとしたときにアラートが生成されます。
-- これは、ユーザーの介入なしにバックグラウンドで実行される単一のエージェント ソリューションです。
-- Azure Security Center では、エンドポイントの保護が実行されていない VM を簡単に識別し、必要に応じて Microsoft マルウェア対策をインストールできます。
+- Azure Cloud Services と Virtual Machines 向けの Microsoft Antimalware では、既知の悪意のあるソフトウェアや望ましくないソフトウェアがそれ自体をインストールしようとしたときにアラートが生成されます。
+- それは、ユーザーの介入なしにバックグラウンドで実行される単一エージェント ソリューションです。
+- Security Center では、エンドポイントの保護が実行されていない VM を識別し、必要に応じて Microsoft マルウェア対策をインストールできます。
 
   ![VM 向けのマルウェア対策のスクリーンショット。](./media/migrate-best-practices-security-management/antimalware.png)
   "*図 1: VM 向けのマルウェア対策。* "
@@ -138,7 +138,7 @@ Azure では、次のソリューションを提供しています。
 - **Web アプリケーション ファイアウォール:** これは Azure Application Gateway の機能であり、Web アプリに対する一元的な保護を提供します。
   - Web アプリを保護するためにバックエンドのコードを変更する必要はありません。
   - Application Gateway の後方にある複数の Web アプリが同時に保護されます。
-  - Azure Monitor を使用して、Web アプリケーション ファイアウォールを監視できます。 Web アプリケーション ファイアウォールは Azure Security Center に統合されています。
+  - Azure Monitor を使用して、Web アプリケーション ファイアウォールを監視できます。 Web Application Firewall は Security Center に統合されています。
 
   ![Azure Key Vault とセキュリティで保護された Web アプリの図。](./media/migrate-best-practices-security-management/web-apps.png)
   "*図 2: Azure Key Vault。* "
@@ -155,8 +155,8 @@ Azure では、次のソリューションを提供しています。
 ワークロードを移行して Azure で実行すると、ワークロードのアクセス権を持つスタッフはあちこち移動するようになります。 セキュリティ チームは、定期的に Azure テナントとリソース グループへのアクセスを確認する必要があります。 Azure には ID 管理とアクセス制御のセキュリティのためのオファリングがあり、その中には Azure リソースにアクセスするためのアクセス許可を承認する Azure ロールベースのアクセス制御 (Azure RBAC) も含まれます。
 
 - Azure RBAC では、セキュリティ プリンシパルに対してアクセス許可が割り当てられます。 セキュリティ プリンシパルは、ユーザー、グループ (ユーザーのセット)、サービス プリンシパル (アプリケーションとサービスによって使用される ID)、マネージド ID (Azure によって自動的に管理される Azure Active Directory の ID) を表します。
-- Azure RBAC を使用すると、所有者、共同作成者、閲覧者などのロールと、そのロールで実行できる操作を定義するロール定義 (アクセス許可のコレクション) を、セキュリティ プリンシパルに割り当てることができます。
-- また、Azure RBAC ではロールの境界を設定するスコープを設定することもできます。 スコープは、管理グループ、サブスクリプション、リソース グループ、リソースなどのさまざまなレベルで設定できます
+- Azure RBAC を使用すると、ロール (所有者、共同作成者、閲覧者など) を、セキュリティ プリンシパルと、そのロールが実行できる操作を定義するロール定義 (アクセス許可のコレクション) に割り当てることができます。
+- また、Azure RBAC ではロールの境界を設定するスコープを設定することもできます。 スコープは、管理グループ、サブスクリプション、リソース グループ、リソースなどのさまざまなレベルで設定できます。
 - Azure へのアクセス権を持つ管理者が許可されたリソースにのみアクセスできることを確認します。 Azure で定義済みのロールの細かさが十分でない場合は、カスタム ロールを作成し、アクセス許可を分離して制限できます。
 
 Azure へのアクセス権を持つ管理者が許可されたリソースにのみアクセスできることを確認します。 Azure で定義済みのロールの細かさが十分でない場合は、カスタム ロールを作成し、アクセス許可を分離して制限できます。
@@ -166,13 +166,13 @@ Azure へのアクセス権を持つ管理者が許可されたリソースに�
 
 **詳細情報:**
 
-- [Azure ロールベースのアクセス制御 (Azure RBAC)](/azure/role-based-access-control/overview) について学習する。
+- [Azure RBAC](/azure/role-based-access-control/overview) について学習する。
 - [Azure RBAC と Azure portal](/azure/role-based-access-control/role-assignments-portal) を使用したアクセスの管理について学習する。
 - [カスタム ロール](/azure/role-based-access-control/custom-roles)について学習する。
 
 ## <a name="best-practice-review-audit-and-security-logs"></a>ベスト プラクティス:監査とセキュリティ ログを確認する
 
-Azure Active Directory (Azure AD) では、Azure Monitor に表示されるアクティビティ ログが提供されています。 ログでは、Azure テナントで実行された操作、操作が発生した日時、操作を実行したユーザーがキャプチャされます。
+Azure AD には、Azure Monitor に表示されるアクティビティ ログが用意されています。 ログでは、Azure テナントで実行された操作、操作が発生した日時、操作を実行したユーザーがキャプチャされます。
 
 - 監査ログでは、テナントでのタスクの履歴が示されます。 サインイン アクティビティ ログでは、タスクを実行したユーザーが示されます。
 - セキュリティ レポートに対するアクセスは、Azure AD のライセンスによって異なります。 Free および Basic ライセンスを使用している場合は、危険なユーザーとサインインの一覧が表示されます。Premium ライセンスを使用している場合は、基になるイベント情報が表示されます。
@@ -191,10 +191,10 @@ Azure Active Directory (Azure AD) では、Azure Monitor に表示されるア�
 
 Azure では、高度なセキュリティ オプションを提供するセキュリティ機能が他にも用意されています。 次のベスト プラクティスの一部を実行するには、アドオン ライセンスと Premium オプションが必要です。
 
-- **Azure AD 管理単位 (AU) を実装する。** サポート スタッフへの管理責務の委任は、基本的な Azure アクセス制御だけでは複雑な場合があります。 Azure AD 内のすべてのグループを管理できるアクセス権をサポート スタッフに与えるのは、組織のセキュリティにとって理想的な方法ではない可能性があります。 AU を使用すると、オンプレミスの組織単位 (OU) と同様の方法で、コンテナーに Azure リソースを分離することができます。 AU を使用するには、AU の管理者に Premium Azure AD ライセンスが必要です。 詳細については、[Azure Active Directory での管理単位の管理](/azure/active-directory/roles/administrative-units)に関するページをご覧ください。
-- **多要素認証を使用する。** Premium Azure AD ライセンスがある場合は、管理者アカウントに対して多要素認証を有効にして適用できます。 フィッシングは、アカウントの資格情報を侵害する最も一般的な方法です。 悪意のあるアクターが管理者アカウントの資格情報を手に入れると、すべてのリソース グループの削除など、影響範囲の広いアクションを阻止することはできません。 多要素認証は、電子メール、認証アプリ、携帯電話のテキスト メッセージなどのさまざまな方法で確立できます。 管理者は、最も影響が少ないオプションを選択できます。 多要素認証では、脅威分析と条件付きアクセス ポリシーと統合して、多要素認証チャレンジの応答をランダムに要求します。 詳しくは、[セキュリティ ガイダンス](/azure/active-directory/authentication/howto-mfa-getstarted)と[多要素認証の設定方法](/azure/active-directory/authentication/howto-mfa-getstarted)に関する記事をご覧ください。
-- **条件付きアクセスを実装する。** ほとんどの中小規模の組織では、多くの場合、Azure 管理者とサポート チームは地理的に 1 つの場所に配置されます。 この場合、ほとんどのサインインは同じ地域から行われます。 これらの場所の IP アドレスが非常に静的な場合、これらの地域以外から管理者のサインインが見えてはならないのは当然のことです。 離れた場所にいる不正なアクターが管理者の資格情報を侵害した場合でも、条件付きアクセスと多要素認証の組み合わせのようなセキュリティ機能を実装することで、離れた場所からのサインインを防ぐことができます。 これにより、ランダムな IP アドレスで偽装された場所からのサインインを防止することもできます。 [条件付きアクセス](/azure/active-directory/conditional-access/overview)についての詳細を学習し、Azure AD での条件付きアクセスの[ベスト プラクティスを確認](/azure/active-directory/conditional-access/overview)してください。
-- **エンタープライズ アプリケーションのアクセス許可を確認する。** 時間が経つと、管理者は組織に与える影響を知らずに Microsoft やサード パーティのリンクを選択するようになります。 リンクをクリックすると、Azure アプリにアクセス許可を割り当てる同意画面が表示される場合があります。 これにより、Azure AD データを読み取るためのアクセスや、Azure サブスクリプション全体を管理するためのフル アクセスが許可される場合があります。 管理者やユーザーに Azure リソースへのアクセスが許可されるアプリケーションを定期的に確認する必要があります。 このようなアプリケーションには、必要なアクセス許可のみを確保してください。 さらに、四半期または半年ごとに、アプリケーション ページへのリンクを含むメールをユーザーに送り、組織データへのアクセスが許可されているアプリケーションの存在を認識させることができます。 詳細については、「[アプリケーション リストに予期しないアプリケーションがある](/azure/active-directory/manage-apps/application-types)」と、Azure AD でアプリケーションの割り当てを[制御する方法](/azure/active-directory/manage-apps/assign-user-or-group-access-portal)に関するページを参照してください。
+- **Azure AD 管理単位 (AU) を実装する。** サポート スタッフへの管理責務の委任は、基本的な Azure アクセス制御だけでは複雑な場合があります。 Azure AD 内のすべてのグループを管理できるアクセス権をサポート スタッフに与えるのは、組織のセキュリティにとって理想的な方法ではない可能性があります。 AU を使用すると、オンプレミスの組織単位 (OU) と同様の方法で、コンテナーに Azure リソースを分離することができます。 AU を使用するには、AU の管理者に Premium Azure AD ライセンスが必要です。 詳細については、「[Azure Active Directory の管理単位](/azure/active-directory/users-groups-roles/directory-administrative-units)」を参照してください。
+- **多要素認証を使用する。** Premium Azure AD ライセンスがある場合は、管理者アカウントに対して多要素認証を有効にして適用できます。 フィッシングは、アカウントの資格情報を侵害する最も一般的な方法です。 悪意のあるアクターが管理者アカウントの資格情報を手に入れると、すべてのリソース グループの削除など、影響範囲の広いアクションを阻止することはできません。 多要素認証は、電子メール、認証アプリ、携帯電話のテキスト メッセージなどのさまざまな方法で確立できます。 管理者は、最も影響が少ないオプションを選択できます。 多要素認証では、脅威分析と条件付きアクセス ポリシーと統合して、多要素認証チャレンジの応答をランダムに要求します。 詳しくは、[セキュリティ ガイダンス](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)と[多要素認証の設定方法](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)に関する記事をご覧ください。
+- **条件付きアクセスを実装する。** ほとんどの中小規模の組織では、多くの場合、Azure 管理者とサポート チームは地理的に 1 つの場所に配置されます。 この場合、ほとんどのサインインは同じ地域から行われます。 これらの場所の IP アドレスが非常に静的な場合、これらの地域以外から管理者のサインインが見えてはならないのは当然のことです。 離れた場所にいる不正なアクターが管理者の資格情報を侵害した場合でも、条件付きアクセスと多要素認証の組み合わせのようなセキュリティ機能を実装することで、離れた場所からのサインインを防ぐことができます。 これにより、ランダムな IP アドレスで偽装された場所からのサインインを防止することもできます。 [条件付きアクセス](/azure/active-directory/conditional-access/overview)についての詳細を学習し、Azure AD での条件付きアクセスの[ベスト プラクティスを確認](/azure/active-directory/conditional-access/best-practices)してください。
+- **エンタープライズ アプリケーションのアクセス許可を確認する。** 時間が経つと、管理者は組織に与える影響を知らずに Microsoft やサード パーティのリンクを選択するようになります。 リンクをクリックすると、Azure アプリにアクセス許可を割り当てる同意画面が表示される場合があります。 これにより、Azure AD データを読み取るためのアクセスや、Azure サブスクリプション全体を管理するためのフル アクセスが許可される場合があります。 管理者やユーザーに Azure リソースへのアクセスが許可されるアプリケーションを定期的に確認する必要があります。 このようなアプリケーションには、必要なアクセス許可のみを確保してください。 さらに、四半期または半年ごとに、アプリケーション ページへのリンクを含むメールをユーザーに送り、組織データへのアクセスが許可されているアプリケーションの存在を認識させることができます。 詳細については、「[アプリケーション リストに予期しないアプリケーションがある](/azure/active-directory/manage-apps/application-types)」と、Azure AD でアプリケーションの割り当てを[制御する方法](/azure/active-directory/manage-apps/remove-user-or-group-access-portal)に関するページを参照してください。
 
 ## <a name="managed-migrated-workloads"></a>移行されるワークロードを管理する
 
@@ -324,7 +324,7 @@ Azure Policy ではリソースが評価されて、ポリシーに準拠して�
 
 ## <a name="best-practice-implement-a-bcdr-strategy"></a>ベスト プラクティス:BCDR 戦略を実装する
 
-事業継続とディザスター リカバリー (BCDR) の計画は、Azure への移行計画プロセスの一環として完了する必要がある重要な作業です。 法律的には、台風や地震などの大きな力が発生した場合に、責務が免除される "*不可抗力*" 条項を契約に含めることができます。 しかし、災害が発生したときは、サービスを継続的に実行し、必要に応じて復旧を行うことを可能な範囲で保証する義務もあります。 これを行う能力は、会社の未来を左右する可能性があります。
+BCDR の計画は、Azure への移行計画プロセスの一環として完了する必要がある重要な作業です。 法律的には、台風や地震などの大きな力が発生した場合に、責務が免除される "*不可抗力*" 条項を契約に含めることができます。 ただし、災害が発生した場合でも、重要なサービスが引き続き実行され、復旧できるようにする必要があります。 これを行う能力は、会社の未来を左右する可能性があります。
 
 一般に、BCDR 戦略では以下のことを検討する必要があります。
 
@@ -464,7 +464,7 @@ Azure リソースの診断ログを有効にすると、ログ データを使�
 
 - アラートでは、監視データで条件が検出されると事前に通知されます。 その後は、システムのユーザーがそれに気付く前に問題に対処することができます。 メトリックの値、ログ検索クエリ、アクティビティ ログ イベント、プラットフォームの正常性、Web サイトの可用性についてアラートを生成できます。
 - アラートがトリガーされたら、ロジック アプリのプレイブックを実行できます。 プレイブックを使用すると、特定のアラートへの応答を自動化して調整できます。 プレイブックは、Azure Logic Apps に基づいています。 ロジック アプリ テンプレートを使用してプレイブックを作成するか、独自のプレイブックを作成することができます。
-- 簡単な例としては、ネットワーク セキュリティ グループに対してポート スキャンが発生するとトリガーされるアラートを作成できます。 実行してスキャン元の IP アドレスをロックするプレイブックを設定することができます。
+- 簡単な例としては、NSG に対してポート スキャンが発生するとトリガーされるアラートを作成できます。 実行してスキャン元の IP アドレスをロックするプレイブックを設定することができます。
 - もう 1 つの例は、メモリ リークが発生しているアプリケーションです。 メモリの使用量が特定のポイントに達したら、プレイブックでプロセスをリサイクルできます。
 
   ![アラートのスクリーンショット。](./media/migrate-best-practices-security-management/alerts.png)
@@ -480,7 +480,9 @@ Azure リソースの診断ログを有効にすると、ログ データを使�
 Azure portal は Web ベースの統合コンソールで、簡単な Web アプリから複雑なクラウド アプリケーションまですべてを構築、管理、監視することができます。 これには、カスタマイズ可能なダッシュボードとユーザー補助オプションが用意されています。
 
 - ダッシュボードを複数作成し、ご自分の Azure サブスクリプションにアクセスできる他のユーザーと共有することができます。
-- この共有モデルでは、チームは Azure 環境の内部を見ることができ、プロアクティブにクラウド内のシステムを管理できます。
+- この共有モデルを使用すると、チームは Azure 環境の内部を見ることができるため、クラウド内のシステムを管理する際に積極的に取り組むことができます。
+
+  ![Azure ダッシュボードのスクリーンショット。](./media/migrate-best-practices-security-management/dashboard.png)
 
   ![Azure ダッシュボードのスクリーンショット。](./media/migrate-best-practices-security-management/dashboard.png)
   "*図 16: Azure ダッシュボード。* "
@@ -515,7 +517,7 @@ Azure VM をオペレーティング システムとソフトウェアの最新�
 - さらに、Azure VM を System Center Configuration Manager に登録できます。 そうすると、Configuration Manager のワークロードを Azure に移行して、単一の Web インターフェイスからレポートの作成やソフトウェアの更新を行うことができます。
 
   ![VM の更新の図。](./media/migrate-best-practices-security-management/updates.png)
-  "*図 18: 更新。* "
+  "*図 18: VM の更新。* "
 
 **詳細情報:**
 
@@ -538,8 +540,9 @@ Azure では、Azure Automation の変更追跡ソリューションを使用で
 - 受信したデータにロジックが適用され、クラウド サービスによってそのデータが記録されます。
 - [変更の追跡] ダッシュボードでは、サーバー インフラストラクチャで行われた変更を簡単に確認できます。
 
-  ![変更管理のスクリーンショット。](./media/migrate-best-practices-security-management/change.png)
-  "*図 19: 変更管理。* "
+  ![変更管理グラフのスクリーンショット。](./media/migrate-best-practices-security-management/change.png)
+
+  _図 19: 変更管理グラフ。_
 
 **詳細情報:**
 

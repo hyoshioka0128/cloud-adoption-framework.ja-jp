@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 5e271a1144aaa09a45b92125c5d6db473932b751
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 040f6947ee7ac50985e6792b918d6c298096802e
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025777"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208559"
 ---
 # <a name="assess-workloads-for-azure-stack-hub-migration"></a>Azure Stack Hub 移行のワークロードを評価する
 
@@ -65,7 +65,7 @@ ms.locfileid: "97025777"
 
 - IT マネージド クラウド サービスとアプリケーション固有のサービス間の相関関係を調べることで、作業の重複を回避し、サービス レベル アグリーメント (SLA) を最適化します。
 - アプリケーションのデプロイおよび移行中に、サービスのプロビジョニングを調整するために必要な自動化について検討します。
-- 操作の要件を満たすため、従量課金、仮想マシン (VM) 可用性セット、VM スケール セット、ネットワーク アダプター、VM およびディスクの追加とサイズ変更の機能などの[スケーラビリティと可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/)のサービスについて検討してください。
+- 操作の要件を満たすため、従量課金、可用性セット、仮想マシン スケール セット、ネットワーク アダプター、VM およびディスクの追加とサイズ変更の機能などの[スケーラビリティと可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/)のサービスについて検討してください。
 
 ## <a name="monitoring"></a>監視
 

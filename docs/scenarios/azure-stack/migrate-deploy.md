@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 8d25844c2560fd6463bdb77e1b6d5c5116c33001
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 1313d3253d87d60928459521a6cefb43b56ed030
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97025760"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102208542"
 ---
 # <a name="deploy-workloads-to-azure-stack-hub"></a>Azure Stack Hub にワークロードをデプロイする
 
@@ -48,14 +48,14 @@ Azure Stack Hub の管理者がスタック インスタンスを適切に構成
 
 ## <a name="additional-considerations-during-migration"></a>移行に関するその他の考慮事項
 
-以下の記事は、チームが移行とモダン化を行う際に役立ちます。
+以下のリソースは、チームが移行と最新化を行う際に役立ちます。
 
-- 従量課金、VM 可用性セット、VM スケール セット、ネットワーク アダプター、VM とディスクの追加やサイズ変更の機能などの[スケーラビリティと可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/)のサービス
-- VM イメージをアップロードし、ダウンロードし、キャプチャし、デプロイするための機能を含む、[ストレージ容量](https://azure.microsoft.com/blog/azure-stack-iaas-part-3/)
-- [Azure Stack クイックスタート テンプレート](https://github.com/Azure/AzureStack-QuickStart-Templates)の GitHub リポジトリ
-- [Azure クイックスタート テンプレート](https://github.com/Azure/Azure-QuickStart-Templates)の GitHub リポジトリ
+- 従量課金、可用性セット、仮想マシン スケール セット、ネットワーク アダプター、ディスクの追加とサイズ変更の機能などの[スケーラビリティと可用性](https://azure.microsoft.com/blog/azure-stack-iaas-part-six/)のサービス。
+- VM イメージをアップロードし、ダウンロードし、キャプチャし、デプロイするための機能を含む、[ストレージ容量](https://azure.microsoft.com/blog/azure-stack-iaas-part-3/)。
+- [Azure Stack クイックスタート テンプレート](https://github.com/Azure/AzureStack-QuickStart-Templates)の GitHub リポジトリ。
+- [Azure クイックスタート テンプレート](https://github.com/Azure/Azure-QuickStart-Templates)の GitHub リポジトリ。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 クラウド導入の取り組みの特定の要素に関するガイダンスについては、以下を参照してください。
 

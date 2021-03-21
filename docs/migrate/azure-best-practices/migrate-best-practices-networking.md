@@ -1,6 +1,6 @@
 ---
 title: Azure に移行されたワークロードのネットワークの設定に関するベスト プラクティス
-description: Azure 向けのクラウド導入フレームワークを使用し、移行されたワークロードのネットワークを設定するためのベスト プラクティスについて説明します。
+description: Azure 向けのクラウド導入フレームワークを使用し、移行されたワークロードのネットワーク設定に役立つベスト プラクティスについて説明します。
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 3170fccd644e59ecac169e92230e12714fd26495
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 5914004310b660d42e961fa57152f07ecdcfd073
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101786925"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102209137"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -33,8 +33,8 @@ Azure では、次の機能を備えた仮想ネットワークが提供され�
 - 仮想ネットワークは、ご使用のサブスクリプション専用の Azure クラウドを論理的に分離したものです。
 - 各 Azure サブスクリプションと Azure リージョン内に複数の仮想ネットワークを実装できます。
 - 各仮想ネットワークは、他の仮想ネットワークから分離されています。
-- 仮想ネットワークには、[RFC 1918](https://tools.ietf.org/html/rfc1918) で定義されている、CIDR 表記で表されたプライベート IP アドレスとパブリック IP アドレスを含めることができます。 仮想ネットワークのアドレス空間内に指定されたパブリック IP アドレスは、インターネットから直接アクセスすることはできません。
-- 仮想ネットワークは、仮想ネットワーク ピアリングを使用して相互に接続できます。 接続される仮想ネットワークが配置されるリージョンは、同一でも異なっていてもかまいません。 したがって、ある仮想ネットワーク内のリソースは、他の仮想ネットワーク内のリソースに接続できます。
+- 仮想ネットワークには、[RFC 1918](https://tools.ietf.org/html/rfc1918) で定義されている、CIDR (クラスレス ドメイン間ルーティング) 表記で表されたプライベートおよびパブリック IP アドレスを含めることができます。 仮想ネットワークのアドレス空間内に指定されたパブリック IP アドレスは、インターネットから直接アクセスすることはできません。
+- 仮想ネットワークは、仮想ネットワーク ピアリングを使用して相互に接続できます。 仮想ネットワークは同じリージョンで接続することも、異なるリージョンで接続することもできます。ある仮想ネットワークのリソースが他の仮想ネットワークのリソースに接続できます。
 - Azure では、既定で、仮想ネットワーク内のサブネット、接続されている仮想ネットワーク、オンプレミス ネットワーク、インターネットの間でトラフィックがルーティングされます。
 
 仮想ネットワーク トポロジを計画するときは、IP アドレス空間の配置方法、ハブ アンド スポーク ネットワーク トポロジの実装方法、仮想ネットワークをサブネットに分割する方法、DNS の設定、Azure Availability Zones の実装を検討する必要があります。
@@ -50,7 +50,7 @@ Azure では、次の機能を備えた仮想ネットワークが提供され�
 - 仮想ネットワーク アドレス空間は、オンプレミス ネットワークの範囲と重複しないようにする必要があります。
 - アドレスが重複していると、ネットワークに接続できなくなったり、ルーティングが正常に動作しなくなったりする可能性があります。
 - ネットワークが重複する場合は、ネットワークを設計し直す必要があります。
-- ネットワークを設計し直すことがどうしてもできない場合は、ネットワーク アドレス変換 (NAT) が役に立ちます。 ただし、できるだけ避けるか制限するようにしてください。
+- ネットワークをまったく再設計できない場合、NAT (ネットワーク アドレス変換) が役立ちますが、可能な限り避けるか、限定してください。
 
 **詳細情報:**
 
@@ -102,7 +102,7 @@ Azure では、次の機能を備えた仮想ネットワークが提供され�
 **詳細情報:**
 
 - [サブネットの設計](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation)について学習する。
-- 架空の会社の Contoso が[移行用に自社のネットワーク インフラストラクチャを準備した](/azure/cloud-adoption-framework/migrate/)方法を学習する。
+- 架空の会社の Contoso が[移行用に自社のネットワーク インフラストラクチャを準備した](../../migrate/index.md)方法を学習する。
 
 ## <a name="best-practice-set-up-a-dns-server"></a>ベスト プラクティス:DNS サーバーをセットアップする
 
@@ -122,7 +122,7 @@ Azure では、次の機能を備えた仮想ネットワークが提供され�
 
 **詳細情報:**
 
-- [独自の DNS サーバーを使用するときの名前解決](/azure/cloud-adoption-framework/migrate/)について学習する。
+- [独自の DNS サーバーを使用するときの名前解決](../../migrate/index.md)について学習する。
 - [DNS の名前付け規則と制限事項](../../ready/azure-best-practices/naming-and-tagging.md)について学習する。
 
 ## <a name="best-practice-set-up-availability-zones"></a>ベスト プラクティス:Availability Zones を設定する
@@ -133,7 +133,7 @@ Availability Zones を設定する際に注意する必要があるいくつか�
 
 - ゾーン冗長サービスによってアプリケーションとデータが Availability Zones 全体にレプリケートされ、単一障害点から保護されます。
 
-- Availability Zones を使用することで、Azure による 99.99% VM アップタイムの SLA が実現されます。
+- Availability Zones を使用すると、Azure では、VM アップタイムで 99.99% の SLA が実現されます。
 
     ![Azure リージョン内の Availability Zones の図。](./media/migrate-best-practices-networking/availability-zone.png)
 
@@ -144,7 +144,7 @@ Availability Zones を設定する際に注意する必要があるいくつか�
   - **ゾーン冗長サービス:** リソースは、ゾーン冗長ストレージや Azure SQL Database などのゾーン間で自動的にレプリケートされます。
 - ゾーン ベースのフォールト トレランスを提供するために、インターネットに接続されたワークロードまたはアプリケーション層を備えた標準の Azure Load Balancer インスタンスをデプロイできます。
 
-    ![標準のロード バランサーの図](./media/migrate-best-practices-networking/load-balancer.png)"*図 4: ロード バランサー。* "
+    ![標準の Azure ロード バランサーの図](./media/migrate-best-practices-networking/load-balancer.png) *図 4: ロード バランサー。*
 
 **詳細情報:**
 
@@ -260,12 +260,12 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
   - どのプレフィックスがどのリージョンからのものかがわからないと、プレフィックスの処理を変えることができません。
   - WAN ネットワークでは、両方のプレフィックスが `West US` より `East US` に近いものと見なすことができるため、両方のオフィスのユーザーが `East US` の ExpressRoute 回線にルーティングされます。 これにより、ロサンゼルス オフィスのユーザーのエクスペリエンスが悪くなります。
 
-![間違った回線を経由するルート パスが設定された VPN の図](./media/migrate-best-practices-networking/bgp1.png)
-"*図 6: BGP コミュニティの最適化されていない接続。* "
+![間違った回線を経由するルート パスが設定された VPN の図。](./media/migrate-best-practices-networking/bgp1.png)
+*図 6: BGP コミュニティの最適化されていない接続。*
 
 **解決方法:**
 
-両方のオフィスに対するルーティングを最適化するには、どちらのプレフィックスが Azure `West US` からのもので、どちらが Azure `East US` からのものかを知る必要があります。 この情報は、BGP コミュニティ値を使用してコード化できます。
+両方のオフィスに対するルーティングを最適化するには、どちらのプレフィックスが Azure `West US` からのもので、どちらのプレフィックスが Azure `East US` からのものかを知る必要があります。 この情報は、BGP コミュニティ値を使用してコード化できます。
 
 - 各 Azure リージョンに一意の BGP コミュニティ値を割り当てます。 たとえば、`East US` は 12076:51004、`West US` は 12076:51006 のように割り当てます。
 - このようにすると、どのプレフィックスがどの Azure リージョンに属しているかが明確になり、優先 ExpressRoute 回線を構成できます。
@@ -273,8 +273,8 @@ ExpressRoute 回線が複数あるとき、Microsoft への接続経路は複数
 - この例では、`West US` で `13.100.0.0/16` に割り当てるローカル設定の値を `East US` よりも大きくします。 同様に、`East US` で `23.100.0.0/16` に割り当てるローカル設定の値を `West US` よりも大きくします。
 - この構成により、Microsoft に対して両方のパスを使用できる場合、ロサンゼルスのユーザーは西部の回線を使用して `West US` リージョンに接続し、ニューヨークのユーザーは東部の回線を使用して `East US` リージョンに接続します。
 
-![正しい回線を経由するルート パスが設定された VPN の図](./media/migrate-best-practices-networking/bgp2.png)
-"*図 7: BGP コミュニティの最適化された接続。* "
+![正しい回線を経由するルート パスが設定された VPN の図。](./media/migrate-best-practices-networking/bgp2.png)
+*図 7: BGP コミュニティの最適化された接続。*
 
 **詳細情報:**
 
@@ -306,7 +306,7 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 2 つのセキュリティ境界がある企業ネットワークにおける単一のサブネット境界ネットワークの例を次に示します。
 
 ![Azure Virtual Network 境界ネットワークのデプロイの図。](./media/migrate-best-practices-networking/perimeter.png)
-"*図 8: 境界ネットワークのデプロイ。* "
+*図 8: 境界ネットワークのデプロイ。*
 
 **詳細情報:**
 
@@ -363,8 +363,8 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 
 **例:**
 
-![アプリケーション セキュリティ グループの図](./media/migrate-best-practices-networking/asg.png)
-"*図 9: アプリケーション セキュリティ グループの例。* "
+![サンプル アプリケーション セキュリティ グループの図。](./media/migrate-best-practices-networking/asg.png)
+*図 9: アプリケーション セキュリティ グループの例。*
 
 | ネットワーク インターフェイス | アプリケーション セキュリティ グループ |
 | --- | --- |
@@ -407,8 +407,8 @@ Microsoft は、クラウド インフラストラクチャの保護に多額の
 Azure 内のパブリック IP アドレスは、VM、ロード バランサー、アプリケーション ゲートウェイ、VPN ゲートウェイと関連付けることができます。
 
 - パブリック IP アドレスを使用すると、インターネット リソースから Azure リソースへの受信通信を許可したり、Azure リソースからインターネットへの送信通信を許可したりすることができます。
-- パブリック IP アドレスは Basic SKU または Standard SKU で作成されますが、それらの間にはいくつかの相違点があります。 Standard SKU は任意のサービスに割り当てることができますが、通常は、VM、ロード バランサー、およびアプリケーション ゲートウェイで構成されます。
-- Basic パブリック IP アドレスには NSG が自動的に構成されないことに注意することが重要です。 自分で構成して、アクセスを制御する規則を割り当てる必要があります。 Standard SKU の IP アドレスでは、既定で NSG が作成されて、規則が割り当てられます。
+- パブリック IP アドレスは Basic SKU または Standard SKU を使用して作成されます。 Standard SKU は任意のサービスに割り当てることができますが、通常、VM、ロード バランサー、アプリケーション ゲートウェイの上で構成されます。
+- Basic パブリック IP アドレスの場合、NSG は自動的に構成されません。 自分で構成して、アクセスを制御する規則を割り当てる必要があります。 Standard SKU の IP アドレスでは、既定で NSG が作成されて、規則が割り当てられます。
 - ベスト プラクティスとしては、VM ではパブリック IP アドレスを構成しないようにする必要があります。
   - ポートを開く必要がある場合は、ポート 80 や 443 など、Web サービスに対するものだけにする必要があります。
   - SSH (22) や RDP (3389) などの標準のリモート管理ポートは、他のすべてのポートと共に、NSG を使用して拒否に設定する必要があります。
@@ -421,7 +421,7 @@ Azure 内のパブリック IP アドレスは、VM、ロード バランサー�
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>Azure のネットワークに対するセキュリティ機能を利用する
 
-Azure には、Azure Firewall、Web Application Firewall、Network Watcher などの、プラットフォームレベルのセキュリティ機能があります。
+Azure には、Azure Firewall、Azure Web Application Firewall (WAF)、Azure Network Watcher などの、プラットフォームレベルのセキュリティ機能があります。
 
 ## <a name="best-practice-deploy-azure-firewall"></a>ベスト プラクティス:Azure Firewall をデプロイする
 
@@ -465,9 +465,11 @@ WAF についての追加の注意事項を次に示します。
 - [WAF](/azure/web-application-firewall/ag/ag-overview) について学習する。
 - [WAF の制限事項と除外事項](/azure/web-application-firewall/ag/application-gateway-waf-configuration)を確認する。
 
-## <a name="best-practice-implement-azure-network-watcher"></a>ベスト プラクティス:Azure Network Watcher を実装する
+## <a name="best-practice-implement-network-watcher"></a>ベスト プラクティス: Network Watcher を実装する
 
-Azure Network Watcher には、Azure 仮想ネットワーク内のリソースと通信を監視するためのツールが用意されています。 たとえば、VM とエンドポイント (別の VM や FQDN など) との間の通信を監視できます。 また、仮想ネットワーク内のリソースやリソースの関係を表示したり、ネットワーク トラフィックの問題を診断したりすることもできます。
+Network Watcher には、Azure 仮想ネットワーク内のリソースと通信を監視するためのツールが用意されています。 たとえば、VM とエンドポイント (別の VM や FQDN など) との間の通信を監視できます。 また、仮想ネットワーク内のリソースやリソースの関係を表示したり、ネットワーク トラフィックの問題を診断したりすることもできます。
+
+![Azure Network Watcher のスクリーンショット。](./media/migrate-best-practices-networking/network-watcher.png)
 
 ![Network Watcher のスクリーンショット。](./media/migrate-best-practices-networking/network-watcher.png)
 "*図 12: Network Watcher。* "
