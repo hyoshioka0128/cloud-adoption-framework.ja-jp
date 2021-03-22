@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 16f495d830e4e6feeb20bd162be850d903c2e244
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 16a110dd380149aaa72cbb316cbb549eec12ef42
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801509"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114270"
 ---
 # <a name="create-a-vmware-vsphere-template-for-windows-server-2019"></a>Windows Server 2019 用の VMware vSphere テンプレートを作成する
 
@@ -80,23 +80,23 @@ VM をテンプレートに変換する前に、いくつかの操作が必要�
 
 1. VMware ツールをインストールし、再起動します。
 
-    ![WMware ツールのインストールを示す最初のスクリーンショット。](./media/vmware-template/windows-template-tools-1.png)
+    ![VMware ツールのインストールを示す最初のスクリーンショット。](./media/vmware-template/windows-template-tools-1.png)
 
-    ![WMware ツールのインストールを示す 2 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-2.png)
+    ![VMware ツールのインストールを示す 2 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-2.png)
 
-    ![WMware ツールのインストールを示す 3 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-3.png)
+    ![VMware ツールのインストールを示す 3 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-3.png)
 
-    ![WMware ツールのインストールを示す 4 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-4.png)
+    ![VMware ツールのインストールを示す 4 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-4.png)
 
-    ![WMware ツールのインストールを示す 5 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-5.png)
+    ![VMware ツールのインストールを示す 5 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-5.png)
 
-    ![WMware ツールのインストールを示す 6 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-6.png)
+    ![VMware ツールのインストールを示す 6 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-6.png)
 
-    ![WMware ツールのインストールを示す 7 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-7.png)
+    ![VMware ツールのインストールを示す 7 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-7.png)
 
-    ![WMware ツールのインストールを示す 8 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-8.png)
+    ![VMware ツールのインストールを示す 8 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-8.png)
 
-    ![WMware ツールのインストールを示す 9 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-9.png)
+    ![VMware ツールのインストールを示す 9 番目のスクリーンショット。](./media/vmware-template/windows-template-tools-9.png)
 
 2. Windows 更新プログラムを実行します。
 
@@ -111,7 +111,7 @@ VM をテンプレートに変換する前に、いくつかの操作が必要�
     - Internet Explorer セキュリティ強化の構成 (ESC) の無効化 (後でグループ ポリシーまたは PowerShell スクリプトを使用して調整可能)
     - リモート デスクトップの有効化
     - PowerShell で [Chocolatey](https://chocolatey.org/install) をインストールする
-  
+
       ```powershell
       Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
       ```

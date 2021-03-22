@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 0205f46467b336f78d89412250b4bf1d53a730b6
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b4dd445fd3ac8e9dc9677ebcae0933cf4bf386e1
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800793"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112128"
 ---
 # <a name="use-an-azure-resource-manager-template-to-deploy-and-connect-an-azure-virtual-machine-to-azure-arc"></a>Azure Resource Manager テンプレートを使用して Azure 仮想マシンを Azure Arc にデプロイして接続する
 
@@ -34,7 +34,7 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
     git clone https://github.com/microsoft/azure_arc.git
     ```
 
-2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します。](/cli/azure/install-azure-cli) 現在インストールされているバージョンを確認するには、次のコマンドを使用してください。
+2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します](/cli/azure/install-azure-cli)。 次のコマンドを使用して、現在インストールされているバージョンを確認します。
 
     ```console
     az --version
@@ -44,7 +44,7 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
 
 4. Azure サービス プリンシパルを作成します。
 
-    ARM テンプレートを使用して Azure リソースをデプロイするには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは、[Azure Cloud Shell](https://shell.azure.com/) 内で実行することもできます。
+    ARM テンプレートを使用して Azure リソースをデプロイするには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは [Azure Cloud Shell](https://shell.azure.com/) で実行することもできます。
 
     ```console
     az login
@@ -84,9 +84,9 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
 
     1. ローカル OS 環境変数が設定されます。
 
-    2. *LogonScript.ps1* という名前のローカル OS サインイン スクリプトが生成されます。 このスクリプトでは、次のことが行われます。
+    2. `LogonScript.ps1` という名前のローカル OS サインイン スクリプトを生成します。 このスクリプトでは、次のことが行われます。
 
-        - *LogonScript.Log* ファイルを作成します。
+        - `LogonScript.log` ファイルを作成します。
 
         - Windows Azure ゲスト エージェント サービスが停止され、無効になります。
 
@@ -96,7 +96,7 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
 
     3. Windows サーバー マネージャーを無効にして起動時に実行されないようにします。
 
-4. ユーザーは RDP 経由で Windows VM に接続します。これにより、*LogonScript.ps1* の実行が開始され、VM が Azure Arc にオンボードされます。
+4. ユーザーは RDP 経由で Windows VM に接続します。これにより、`LogonScript.ps1` の実行が開始され、VM が Azure Arc にオンボードされます。
 
 ## <a name="deployment"></a>デプロイ
 
@@ -109,7 +109,7 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
 3. ARM テンプレートをデプロイするには、ローカルに複製された[デプロイ フォルダー](https://github.com/microsoft/azure_arc/tree/main/azure_arc_servers_jumpstart/azure/windows/arm_template)に移動し、次のコマンドを実行します。
 
     ```console
-    az group create --name <Name of the Azure resource group> --location <Azure Region> --tags "Project=jumpstart-azure-arc-servers"
+    az group create --name <Name of the Azure resource group> --location <Azure Region> --tags "Project=jumpstart_azure_arc_servers"
     az deployment group create \
     --resource-group <Name of the Azure resource group> \
     --name <The name of this deployment> \
@@ -123,7 +123,7 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
     次に例を示します。
 
     ```console
-    az group create --name Arc-Servers-Win-Demo --location "East US" --tags "Project=jumpstart-azure-arc-servers"
+    az group create --name Arc-Servers-Win-Demo --location "East US" --tags "Project=jumpstart_azure_arc_servers"
     az deployment group create \
     --resource-group Arc-Servers-Win-Demo \
     --name arcwinsrvdemo \

@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 74943f7dae0e71807da5cfcd449f79e1fb1cb055
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: c8ed21eb3af4307bb0e23c53c27ebf47ffca3437
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97026117"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115732"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>事業単位、環境、プロジェクトをまたいでコストを追跡する
 
 [コスト志向の組織を構築する](../../organize/cost-conscious-organization.md)には、コスト関連データに対する可視性および適切に定義されたアクセス権 (スコープ) が必要です。 このベスト プラクティスに関する記事では、追跡メカニズムを作成するための意思決定と実装の方法について概説します。
 
 ![コスト志向のプロセスの概要](../../_images/ready/cost-optimization-process.png)
-_図 1: コスト志向のプロセスの概要。_
+*図 1: コスト志向のプロセスの概要。*
 
 ## <a name="establish-a-well-managed-environment-hierarchy"></a>適切に管理された環境の階層の確立
 
@@ -30,7 +30,7 @@ _図 1: コスト志向のプロセスの概要。_
 
 ### <a name="classification"></a>分類
 
-"_タグ付け_" は、アセットを分類する簡単な方法です。 タグ付けにより、資産にメタデータが関連付けられます。 このメタデータを使用して、さまざまなデータ ポイントに基づいて資産を分類できます。 企業がコスト管理の取り組みの一環としてタグを使って資産を分類する場合、事業単位、部署、請求コード、地域、環境、プロジェクト、ワークロード、"アプリケーション分類" などのタグが必要であることが多いです。 Azure Cost Management + Billing では、これらのタグを使用してコスト データのさまざまなビューを作成できます。
+"*タグ付け*" は、アセットを分類する簡単な方法です。 タグ付けにより、資産にメタデータが関連付けられます。 このメタデータを使用して、さまざまなデータ ポイントに基づいて資産を分類できます。 企業がコスト管理の取り組みの一環としてタグを使って資産を分類する場合、事業単位、部署、請求コード、地域、環境、プロジェクト、ワークロード、アプリケーション分類などのタグが必要であることが多いです。 Azure Cost Management + Billing では、これらのタグを使用してコスト データのさまざまなビューを作成できます。
 
 タグ付けは、あらゆるコスト レポートのデータを理解するための主要な方法です。 これは、適切に管理された環境の基本要素です。 また、環境の適切なガバナンスを確立する最初の手順でもあります。
 
@@ -43,7 +43,7 @@ _図 1: コスト志向のプロセスの概要。_
 大企業の場合は、次のモデルのように、管理グループ、サブスクリプション、およびリソース グループの階層を作成して、必要な職務を遂行できる適切な可視性レベルを各チームに提供できます。 企業で予算超過を防ぐためにコスト管理が必要な場合は、この構造内のサブスクリプションに Azure Blueprints や Azure Policy などのガバナンス ツールを適用して、将来のコスト エラーを迅速に食い止めることができます。
 
 ![大企業のリソース編成の図](../../_images/govern/large-enterprise-resource-organization.png)
-_図 2: 大企業のリソース編成。_
+*図 2: 大企業のリソース編成。*
 
 上の図では、管理グループ階層のルートに各事業単位のノードがあります。 この例の多国籍企業では、地域の事業単位に可視性が必要であるため、階層内の各事業単位の下に地域のノードが作成されています。
 
@@ -132,9 +132,9 @@ Azure Cost Management + Billing の使用を開始するには、[Azure Cost Man
 ### <a name="use-azure-cost-management--billing-to-govern-aws-costs"></a>Azure Cost Management + Billing を使用して AWS のコストを管理する
 
 - [AWS のコストと使用状況レポートの統合を設定する](/azure/cost-management-billing/costs/aws-integration-set-up-configure)
-- [AWS のコストの管理](/azure/cost-management/aws-integration-manage)
+- [AWS のコストの管理](/azure/cost-management-billing/costs/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>アクセス、ロール、スコープを設定する
 
-- [コスト管理のスコープについて](/azure/cost-management/understand-work-scopes)
+- [コスト管理のスコープについて](/azure/cost-management-billing/costs/understand-work-scopes)
 - [リソース グループのスコープの設定](/azure/role-based-access-control/quickstart-assign-role-user-portal)

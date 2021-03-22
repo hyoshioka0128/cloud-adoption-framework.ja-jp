@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 33bfa7ef30dabe154c6547f83185160ddd0d3340
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 90ffa0737316616754fd8c8df0e530ea1539371a
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800746"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114440"
 ---
 # <a name="use-a-terraform-plan-to-deploy-a-google-cloud-platform-windows-instance-and-connect-it-to-azure-arc"></a>Terraform プランを使用して Google Cloud Platform Windows インスタンスをデプロイし、Azure Arc に接続する
 
@@ -101,12 +101,12 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 2. Terraform プランでは、Microsoft Azure と Google Cloud Platform の両方にリソースが作成されます。 次に、GCP 仮想マシンでスクリプトが実行され、Azure Arc エージェントと必要なすべてのアーティファクトがインストールされます。 このスクリプトには、GCP および Azure 環境に関する特定の情報が必要です。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/windows/terraform/scripts/vars.sh) を編集し、各変数を適切な値で更新します。
 
-    - `TF-VAR-subscription-id` = お使いの Azure サブスクリプション ID
-    - `TF-VAR-client-id` = お使いの Azure サービス プリンシパル アプリケーション ID
-    - `TF-VAR-client-secret` = お使いの Azure サービス プリンシパル パスワード
-    - `TF-VAR-tenant-id` = お使いの Azure テナント ID
-    - `TF-VAR-gcp-project-id` = GCP プロジェクト ID
-    - `TF-VAR-gcp-credentials-filename` = GCP 資格情報 JSON ファイル名
+    - `TF_VAR_subscription_id` = お使いの Azure サブスクリプション ID
+    - `TF_VAR_client_id` = お使いの Azure サービス プリンシパル アプリケーション ID
+    - `TF_VAR_client_secret` = お使いの Azure サービス プリンシパル パスワード
+    - `TF_VAR_tenant_id` = お使いの Azure テナント ID
+    - `TF_VAR_gcp_project_id` = GCP プロジェクト ID
+    - `TF_VAR_gcp_credentials_filename` = GCP 資格情報 JSON ファイル名
 
 3. CLI から、クローンされたリポジトリの `azure_arc_servers_jumpstart/gcp/windows/terraform` ディレクトリに移動します。
 
@@ -138,7 +138,7 @@ Terraform プランは、VM が最初に起動されたときに PowerShell ス�
 
 1. `terraform apply` コマンドを実行する前に [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/windows/terraform/main.tf) を開き、`windows-startup-script-ps1 = local-file.install_arc_agent-ps1.content` 行をコメント アウトしてファイルを保存します。
 
-    ![Azure Arc エージェントの自動オンボードを無効にするためにコメント アウトされた '' を示すスクリーンショット。](./media/gcp-windows/main-tf.png)
+    ![Azure Arc エージェントの自動オンボードを無効にするためにコメント アウトされた "main.tf" を示すスクリーンショット。](./media/gcp-windows/main-tf.png)
 
 2. 上記の指示に従って `terraform apply --auto-approve` を実行します。
 
@@ -146,11 +146,11 @@ Terraform プランは、VM が最初に起動されたときに PowerShell ス�
 
     ![GCP コンソールでのサーバーのスクリーンショット。](./media/gcp-windows/gcp-server.png)
 
-    ![GCP 内で Windows サーバーのパスワードをリセットする方法を示すスクリーンショット。](./media/gcp-windows/reset-password.png)
+    ![GCP コンソール内で Windows サーバーのパスワードをリセットする方法を示すスクリーンショット。](./media/gcp-windows/reset-password.png)
 
 4. **[Set Password]\(パスワードの設定\)** を選択し、ユーザー名を指定して VM のユーザーとパスワードを作成します。
 
-    ![GCP 内で Windows サーバーのユーザー名とパスワードを設定する方法を示すスクリーンショット。](./media/gcp-windows/name-pword.png)
+    ![GCP コンソール内で Windows サーバーのユーザー名とパスワードを設定する方法を示すスクリーンショット。](./media/gcp-windows/name-pword.png)
 
 5. GCP コンソールの VM ページで [RDP] ボタンを選択して仮想マシンに RDP 接続し、先ほど作成したユーザー名とパスワードでサインインします。
 

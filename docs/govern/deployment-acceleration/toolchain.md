@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: d52eb8ada0d778a2f87991289f32cf4e267064d7
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 498e3c6cf7f4116918f472227c01cc54affefd37
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101791430"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113862"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Azure のデプロイ高速化ツール
 

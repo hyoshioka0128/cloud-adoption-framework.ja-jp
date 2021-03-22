@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 01204abd59f06b8d1467ef43bd58dcafbb748f40
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 2cbf5a203a0b03d1247c9293a4c75e33db5caa02
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788982"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112910"
 ---
 <!-- cSpell:ignore autoscaler PDBs -->
 
@@ -71,4 +71,4 @@ ms.locfileid: "101788982"
 > |--|--|
 > | **アプリケーションの需要を満たすためにクラスターを自動的にスケーリングする。** アプリケーションの需要に対応するには、クラスター オートスケーラーを使用してワークロードを自動的に実行するノードの数を調整することが必要な場合があります。 | <li> [Kubernetes クラスター オートスケーラーを構成する](/azure/aks/cluster-autoscaler) |
 > | **事業継続とディザスター リカバリーを計画する。** 複数リージョンのデプロイを計画して、ストレージ移行計画を作成し、コンテナー イメージの geo レプリケーションを有効にします。 | <li> [リージョンのデプロイのベスト プラクティス](/azure/aks/operator-best-practices-multi-region) <li> [Azure Container Registry の geo レプリケーション](/azure/container-registry/container-registry-geo-replication) |
-> | **大規模な監視およびトラブルシューティングを構成する。** Kubernetes でアプリケーションのアラートと監視を設定します。 既定の構成、より高度なメトリックを統合する方法、アプリケーションを確実に動作させるために独自のカスタム監視およびアラートを追加する方法について説明します。 | <li> [Kubernetes の監視とアラートの概要 (ビデオ)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <li> [コンテナーに対する Azure Monitor を使用してアラートを構成する](/azure/azure-monitor/containers/container-insights-overview) <li> [マスター コンポーネントの&nbsp;診断&nbsp;ログ&nbsp;を確認する](/azure/aks/view-control-plane-logs) <li> [Azure Kubernetes Service (AKS) 診断](/azure/aks/concepts-diagnostics) |
+> | **大規模な監視およびトラブルシューティングを構成する。** Kubernetes でアプリケーションのアラートと監視を設定します。 既定の構成、より高度なメトリックを統合する方法、アプリケーションを確実に動作させるために独自のカスタム監視およびアラートを追加する方法について説明します。 | <li> [Kubernetes の監視とアラートの概要 (ビデオ)](https://www.youtube.com/watch?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&v=W7aN_z-cyUw&index=16) <li> [コンテナーに対する Azure Monitor を使用してアラートを構成する](/azure/azure-monitor/containers/container-insights-overview) <li> [マスター コンポーネントの&nbsp;診断&nbsp;ログ&nbsp;を確認する](/azure/aks/view-control-plane-logs) <li> [Azure Kubernetes Service (AKS) 診断](/azure/aks/concepts-diagnostics) |

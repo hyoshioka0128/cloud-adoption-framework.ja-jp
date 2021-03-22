@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 0e760195cc2ea0afb00c472086a0ed7a6fe9b2f9
-ms.sourcegitcommit: 9d76f709e39ff5180404eacd2bd98eb502e006e0
+ms.openlocfilehash: a7a3fdc5312053504d7ec1ef594661bd8b994dac
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100632411"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102207947"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -143,7 +143,7 @@ ms.locfileid: "100632411"
 | [`Allowed-ResourceLocation`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyAssignments-Allowed-ResourceLocation.parameters.json)   | リソースをデプロイできる許可されたリージョンを指定します |
 | [`Allowed-RGLocation`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyAssignments-Allowed-RGLocation.parameters.json)         | リソース グループをデプロイできる許可されたリージョンを指定します。 |
 | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | 会社に対して拒否されているリソース。 |
-| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.json)     | Azure Web アプリケーション ファイアウォールを有効にしてデプロイされたアプリケーション ゲートウェイを許可します。 |
+| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.json)     | Azure Web Application Firewall (WAF) を有効にしてデプロイされたアプリケーション ゲートウェイを許可します。 |
 | [`Deny-IP-Forwarding`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyAssignments-Deny-IP-Forwarding.parameters.json)         | IP 転送を拒否します。 |
 | [`Deny-RDP-From-Internet`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyAssignments-Deny-RDP-From-Internet.parameters.json)     | インターネットからの RDP 接続を拒否します。 |
 | [`Deny-Subnet-Without-Nsg`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.json)    | NSG を使用しないサブネットの作成を拒否します。 |
@@ -184,7 +184,7 @@ ms.locfileid: "100632411"
 | [`Deploy-LA-Config`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.json) | Log Analytics ワークスペースの構成。 |
 | [`Deploy-Log-Analytics`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)) /.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | Log Analytics ワークスペースをデプロイします。 |
 
-## <a name="file--new--region"></a>[ファイル] > [新規] > [リージョン]
+## <a name="file---new---region"></a>[ファイル] > [新規] > [リージョン]
 
 1. Azure Policy を介してネットワーク リソースを作成する場合は、次の表に記載されているポリシーを接続サブスクリプションに割り当てます。 こうすることで、指定されたパラメーターに基づいて次の一覧のリソースが作成されることが Azure Policy により保証されます。
 
@@ -204,7 +204,7 @@ ms.locfileid: "100632411"
 
 <!-- docutune:disable -->
 
-## <a name="file--new--landing-zone-for-applications-and-workloads"></a>アプリケーションおよびワークロード用の [ファイル] > [新規] > [Landing zone]\(ランディング ゾーン\)
+## <a name="file---new---landing-zone-for-applications-and-workloads"></a>アプリケーションおよびワークロード用の [ファイル] -> [新規] -> [Landing zone]\(ランディング ゾーン\)
 
 <!-- docutune:enable -->
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 270b73e5533f2da5808d68a45b700112892b6bb9
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: ea1ea4913b3adb406806696254bdec0d514341a9
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800985"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112230"
 ---
 # <a name="use-a-terraform-plan-to-deploy-an-amazon-linux-2-instance-on-amazon-elastic-compute-cloud-and-connect-it-to-azure-arc"></a>Terraform プランを使用して Amazon Elastic Compute Cloud に Amazon Linux 2 インスタンスをデプロイし、それを Azure Arc に接続する
 
-この記事では、提供された [Terraform](https://www.terraform.io/) プランを使用してアマゾン ウェブ サービス (AWS) の Amazon Elastic Compute Cloud (Amazon EC2) Linux 2 インスタンスをデプロイし、それを Azure Arc 対応サーバー リソースとして接続するためのガイダンスを提供します。
+この記事では、提供された [Terraform](https://www.terraform.io/) プランを使用してアマゾン ウェブ サービス (AWS) の Amazon Elastic Compute Cloud (EC2) Linux 2 インスタンスをデプロイし、それを Azure Arc 対応サーバー リソースとして接続するためのガイダンスを提供します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -103,12 +103,12 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 2. Terraform プランでは、Microsoft Azure と AWS の両方にリソースが作成されます。 次に、AWS EC2 仮想マシンでスクリプトを実行されて、Azure Arc エージェントと必要なすべてのアーティファクトがインストールされます。 このスクリプトには、AWS および Azure 環境に関する特定の情報が必要です。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/AL2/terraform/scripts/vars.sh) を編集し、各変数を適切な値で更新します。
 
-    - `TF-VAR-subscription-id` = お使いの Azure サブスクリプション ID
-    - `TF-VAR-client-id` = お使いの Azure サービス プリンシパル アプリケーション ID
-    - `TF-VAR-client-secret` = お使いの Azure サービス プリンシパル パスワード
-    - `TF-VAR-tenant-id` = お使いの Azure テナント ID
-    - `AWS-ACCESS-KEY-ID` = AWS アクセス キー
-    - `AWS-SECRET-ACCESS-KEY` = AWS シークレット キー
+    - `TF_VAR_subscription_id` = お使いの Azure サブスクリプション ID
+    - `TF_VAR_client_id` = お使いの Azure サービス プリンシパル アプリケーション ID
+    - `TF_VAR_client_secret` = お使いの Azure サービス プリンシパル パスワード
+    - `TF_VAR_tenant_id` = お使いの Azure テナント ID
+    - `AWS_ACCESS_KEY_ID` = AWS アクセス キー
+    - `AWS_SECRET_ACCESS_KEY` = AWS シークレット キー
 
 3. Azure CLI から、複製されたリポジトリの `azure_arc_servers_jumpstart/aws/al2/terraform` ディレクトリに移動します。
 
@@ -118,7 +118,7 @@ Terraform プランを実行する前に、プランで使用される環境変�
     source ./scripts/vars.sh
     ```
 
-5. SSH キーが `~/.ssh` で使用可能であり、かつ `id-rsa.pub` および `id-rsa` という名前であることを確認します。 上記の ssh-keygen ガイドに従ってキーを作成した場合は、既に正しくセットアップされているはずです。 されていない場合は、別のパスのキーを使用するように [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/AL2/terraform/main.tf) を変更する必要があります。
+5. SSH キーが `~/.ssh` で使用可能であり、かつ `id_rsa.pub` および `id_rsa` という名前であることを確認します。 上記の ssh-keygen ガイドに従ってキーを作成した場合は、既に正しくセットアップされているはずです。 されていない場合は、別のパスのキーを使用するように [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/AL2/terraform/main.tf) を変更する必要があります。
 
 6. Terraform AzureRM プロバイダーをダウンロードする `terraform init` コマンドを実行します。
 
@@ -154,12 +154,12 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 4. [`vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/AL2/terraform/scripts/vars.sh) のすべての環境変数をエクスポートします。
 
-    !['' でエクスポートする環境変数のスクリーンショット。](./media/aws-terraform-al2/al2-export-variables.png)
+    !["var.sh" のエクスポートされた環境変数のスクリーンショット。](./media/aws-terraform-al2/al2-export-variables.png)
 
 5. 次のコマンドを実行します。
 
     ```console
-    azcmagent connect --service-principal-id $TF-VAR-client-id --service-principal-secret $TF-VAR-client-secret --resource-group "Arc-Servers-Demo" --tenant-id $TF-VAR-tenant-id --location "westus2" --subscription-id $TF-VAR-subscription-id
+    azcmagent connect --service-principal-id $TF_VAR_client_id --service-principal-secret $TF_VAR_client_secret --resource-group "Arc-Servers-Demo" --tenant-id $TF_VAR_tenant_id --location "westus2" --subscription-id $TF_VAR_subscription_id
     ```
 
     ![`azcmagent connect` コマンドの別のスクリーンショット。](./media/aws-terraform-al2/al2-azcmagent-2.png)

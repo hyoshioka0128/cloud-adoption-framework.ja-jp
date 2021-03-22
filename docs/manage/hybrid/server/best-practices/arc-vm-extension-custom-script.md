@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 0892e38abdde324bdb58595bdabc9136d55a20ee
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b8ac9e7f9041fe94d0644e06e342a1a1f6978d8a
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800662"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112009"
 ---
 # <a name="use-virtual-machine-extensions-and-an-azure-resource-manager-template-to-deploy-custom-scripts-to-azure-arc-linux-and-windows-servers"></a>仮想マシン拡張機能と Azure Resource Manager テンプレートを使用して Azure Arc Linux および Windows サーバーにカスタム スクリプトをデプロイする
 
@@ -43,15 +43,15 @@ Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テン
 
 2. 前述のように、このガイドは、既に VM またはサーバーをデプロイして Azure Arc に接続している段階から開始します。次のスクリーンショットでは、GCP サーバーが既に Azure Arc に接続されており、Azure のリソースとして表示されています。
 
-    ![Azure Arc 対応サーバーのリソース グループのスクリーンショット。](./media/arc-vm-extension-custom-script/resource-group.png)
+    ![Azure Arc 対応サーバーのリソース グループを示すスクリーンショット。](./media/arc-vm-extension-custom-script/resource-group.png)
 
     ![Azure Arc 対応サーバーの接続済み状態のスクリーンショット。](./media/arc-vm-extension-custom-script/connected-status.png)
 
-3. [Azure CLI をインストールするか更新します](/cli/azure/install-azure-cli)。 Azure CLI は、バージョン 2.7 以降を実行している必要があります。 現在インストールされているバージョンを確認するには、`az --version` を使用します。
+3. [Azure CLI をインストールまたは更新します](/cli/azure/install-azure-cli)。 Azure CLI は、バージョン 2.7 以降を実行している必要があります。 現在インストールされているバージョンを確認するには、`az --version` を使用します。
 
 4. Azure サービス プリンシパルを作成します。
 
-    VM またはベアメタル サーバーを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは、[Azure Cloud Shell](https://shell.azure.com/) 内で実行することもできます。
+    VM またはベアメタル サーバーを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは [Azure Cloud Shell](https://shell.azure.com/) で実行することもできます。
 
     ```console
     az login
@@ -94,7 +94,7 @@ Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テン
 
     - Azure Arc に登録されている VM の名前。
 
-    ![Azure Arc 対応サーバーのコンピューター名のスクリーンショット。](./media/arc-vm-extension-custom-script/machine-name.png)
+    ![Azure Arc 対応サーバーのマシン名のスクリーンショット。](./media/arc-vm-extension-custom-script/machine-name.png)
 
     - Azure Arc 対応サーバーを登録したリソース グループの場所。
 
@@ -109,13 +109,13 @@ Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テン
     - Windows:
 
          ```powershell
-         powershell -ExecutionPolicy Unrestricted -File custom-script-windows.ps1
+         powershell -ExecutionPolicy Unrestricted -File custom_script_windows.ps1
          ```
 
     - Linux:
 
          ```bash
-         ./custom-script-linux.sh
+         ./custom_script_linux.sh
          ```
 
 4. Linux または Windows 用の ARM テンプレートをデプロイするには、[デプロイ フォルダー](https://github.com/microsoft/azure_arc/tree/main/azure_arc_servers_jumpstart/extensions/arm) に移動し、オペレーティング システムと一致するテンプレートを使用して次のコマンドを実行します。
@@ -140,7 +140,7 @@ Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テン
 
   ![更新されたその日のメッセージのスクリーンショット。](./media/arc-vm-extension-custom-script/daily-message.png)
 
-- Windows VM の場合は、RDP を使用して VM に接続し、追加のソフトウェア (Microsoft Edge、7-Zip、および Visual Studio Code) がインストールされていることを確認します。
+- RDP 経由で Windows VM に接続し、追加のソフトウェア (Microsoft Edge、7-Zip、Visual Studio Code) がインストールされていることを確認します。
 
   ![追加のソフトウェアがインストールされているスクリーンショット。](./media/arc-vm-extension-custom-script/additional-software.png)
 

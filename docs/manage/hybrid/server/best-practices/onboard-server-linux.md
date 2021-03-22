@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 6961d80e893d59361ae0c9475972ddfb0e4f87f5
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 9bf8b1b8ace2bcebc1151ccebdba04e094f239fd
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800130"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114372"
 ---
 # <a name="connect-an-existing-linux-server-to-azure-arc"></a>既存の Linux サーバーを Azure Arc に接続する
 
@@ -61,7 +61,7 @@ ms.locfileid: "101800130"
 
     ![リソース グループが空の Azure portal のスクリーンショット。](./media/onboard-server/linux-resource-group.png)
 
-4. [`az-connect-linux`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/az_connect_linux.sh) シェル スクリプトをダウンロードします。
+4. [`az_connect_linux`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/az_connect_linux.sh) シェル スクリプトをダウンロードします。
 
 5. 環境変数をお使いの環境に合わせて変更します。
 
@@ -73,14 +73,14 @@ ms.locfileid: "101800130"
 
 ## <a name="deployment"></a>デプロイ
 
-`. ./az-connect-linux.sh` コマンドを使用してスクリプトを実行します。
+`. ./az_connect_linux.sh` コマンドを使用してスクリプトを実行します。
 
 > [!NOTE]
-> ドットが付加されている理由は、スクリプトに *export* 関数があり、残りのコマンドと同じシェル セッションで変数をエクスポートする必要があるからです。
+> ドットが付加されている理由は、スクリプトに _export_ 関数があり、残りのコマンドと同じシェル セッションで変数をエクスポートする必要があるからです。
 
 正常に完了すると、Linux サーバーがリソース グループ内の新しい Azure Arc リソースとして接続されます。
 
-![実行中の `az_connect` Linux スクリプトのスクリーンショット。](./media/onboard-server/az-connect-linux.png)
+![実行中の `az_connect_linux.sh` Linux スクリプトのスクリーンショット。](./media/onboard-server/az-connect-linux.png)
 
 ![Azure portal の Azure Arc 対応リソースのスクリーンショット。](./media/onboard-server/linux-resource.png)
 

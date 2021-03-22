@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 38b5d79919fa8e4f75af0e9f485e5fec32149aeb
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 91bbb5af82efc6e54c414c7a6a9e80a72e06ce2d
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800118"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114338"
 ---
 # <a name="connect-an-existing-windows-server-instance-to-azure-arc"></a>既存の Windows Server インスタンスを Azure Arc に接続する
 
@@ -61,7 +61,7 @@ ms.locfileid: "101800118"
 
     ![Azure portal 内の空のリソース グループのスクリーンショット。](./media/onboard-server/windows-resource-group.png)
 
-4. [`az-connect-win`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/az_connect_win.ps1) PowerShell スクリプトをダウンロードします。
+4. [`az_connect_win.ps1`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/az_connect_win.ps1) PowerShell スクリプトをダウンロードします。
 
 5. 実際の環境に合わせて環境変数を変更し、指定されたマシンにスクリプトをコピーします。
 
@@ -71,13 +71,13 @@ ms.locfileid: "101800118"
 
 指定されたマシンで **管理者として** PowerShell ISE を開き、スクリプトを実行します。 スクリプトのエージェントのインストール パスには `$env:ProgramFiles` が使用されているので、**PowerShell ISE (x86) は使用しない** ようにしてください。
 
-!['azcmagent connect' コマンドのスクリーンショット。](./media/onboard-server/azcmagent.png)
+![`azcmagent connect` コマンドのスクリーンショット。](./media/onboard-server/azcmagent.png)
 
-!['az-connect' Windows スクリプトのスクリーンショット。](./media/onboard-server/az-connect-windows-2.png)
+![`az_connect_win.ps1` Windows スクリプトのスクリーンショット。](./media/onboard-server/az-connect-windows-2.png)
 
 完了すると、リソース グループ内の新しい Azure Arc リソースとして Windows Server インスタンスが接続されます。
 
-![実行中の 'az_connect' Windows スクリプトのスクリーンショット。](./media/onboard-server/az-connect-windows.png)
+![実行中の `az_connect_win.ps1` Windows スクリプトのスクリーンショット。](./media/onboard-server/az-connect-windows.png)
 
 ![Azure portal の Azure Arc 対応リソースのスクリーンショット。](./media/onboard-server/windows-resource.png)
 

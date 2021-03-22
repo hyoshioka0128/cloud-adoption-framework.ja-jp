@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 539c364ad0a6863ce82035a54c7a47031b5213be
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b547c84549ddeb1549047178c3e792009708aaf4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801061"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114355"
 ---
 # <a name="use-vmware-powercli-to-scale-onboarding-vmware-vsphere-linux-virtual-machines-to-azure-arc"></a>VMware PowerCLI を使用して、VMware vSphere Linux 仮想マシンのオンボードを Azure Arc にスケーリングする
 
@@ -23,13 +23,13 @@ ms.locfileid: "101801061"
 
 ## <a name="prerequisites"></a>前提条件
 
-1. Azure Arc Jumpstart リポジトリを複製します。
+1. Azure Arc Jumpstart リポジトリをクローンします。
 
     ```console
     git clone https://github.com/microsoft/azure_arc.git
     ```
 
-2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します。](/cli/azure/install-azure-cli) 現在インストールされているバージョンを確認するには、次のコマンドを使用してください。
+2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します](/cli/azure/install-azure-cli)。 現在インストールされているバージョンを確認するには、次のコマンドを使用してください。
 
     ```console
     az --version
@@ -57,7 +57,7 @@ ms.locfileid: "101801061"
 
 5. Azure サービス プリンシパルを作成します。
 
-    VMware vSphere 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは、[Azure Cloud Shell](https://shell.azure.com/) 内で実行することもできます。
+    VMware vSphere 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは、[Azure Cloud Shell](https://shell.azure.com/) 内で実行することもできます。
 
     ```console
     az login
@@ -95,9 +95,9 @@ ms.locfileid: "101801061"
 
     - スクリプトにより、ユーザーの Azure 環境変数を基に `vars.sh` シェル スクリプトが自動生成されます。
 
-    - スクリプトが実行されると、vCenter に対する認証が開始され、Azure Arc の候補となる VM が配置されている場所のターゲット VM フォルダーがスキャンされます。自動生成された `vars.sh` および `install-azure-arc-agent.sh` シェル スクリプトの両方が、`/vmware/scaled-deploy/powercli/linux` に配置されている VM Linux OS の VM フォルダー内の各 VM にコピーされます。
+    - スクリプトが実行されると、vCenter に対する認証が開始され、Azure Arc の候補となる VM が配置されている場所のターゲット VM フォルダーがスキャンされます。自動生成された `vars.sh` および `install_azure_arc_agent.sh` シェル スクリプトの両方が、`/vmware/scaled-deploy/powercli/linux` に配置されている VM Linux OS の VM フォルダー内の各 VM にコピーされます。
 
-3. `install-azure-arc-agent.sh` シェル スクリプトが VM ゲスト OS 上で実行され、VM を Azure Arc にオンボードするために Azure Arc が接続されたマシン エージェントにインストールされます。
+3. `install_azure_arc_agent.sh` シェル スクリプトが VM ゲスト OS 上で実行され、VM を Azure Arc にオンボードするために Azure Arc が接続されたマシン エージェントにインストールされます。
 
 ## <a name="predeployment"></a>展開前
 
@@ -111,7 +111,7 @@ ms.locfileid: "101801061"
 
 ## <a name="deployment"></a>デプロイ
 
-PowerCLI スクリプトを実行する前に、`install-azure-arc-agent.sh` スクリプトによって使用される[環境変数](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/scaled_deployment/powercli/linux/vars.ps1)を設定する必要があります。 これらの変数は、先ほど作成した Azure サービス プリンシパル、Azure サブスクリプションとテナント、VMware vSphere の資格情報とデータに基づいています。
+PowerCLI スクリプトを実行する前に、`install_azure_arc_agent.sh` スクリプトによって使用される[環境変数](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/scaled_deployment/powercli/linux/vars.ps1)を設定する必要があります。 これらの変数は、先ほど作成した Azure サービス プリンシパル、Azure サブスクリプションとテナント、VMware vSphere の資格情報とデータに基づいています。
 
 - `az account list` コマンドを使用して、Azure サブスクリプション ID とテナント ID を取得します
 
@@ -121,11 +121,11 @@ PowerCLI スクリプトを実行する前に、`install-azure-arc-agent.sh` ス
 
 - 管理者として `azure_arc_servers_jumpstart\vmware\scaled-deploy\powercli\linux` フォルダーから PowerShell セッションを開き、`scale-deploy.ps1` スクリプトを実行します。
 
-    ![PowerShell スクリプトを使用して拡大デプロイする方法を示すスクリーンショット。](./media/vmware-scale-powercli/cli-linux-scale-deploy-1.png)
+    ![`scale_deploy.ps1` のスクリーンショット。](./media/vmware-scale-powercli/cli-linux-scale-deploy-1.png)
 
-    ![PowerShell スクリプトを使用して拡大デプロイする方法を示す 2 つ目のスクリーンショット。](./media/vmware-scale-powercli/cli-linux-scale-deploy-2.png)
+    ![`scale_deploy.ps1` の 2 番目のスクリーンショット。](./media/vmware-scale-powercli/cli-linux-scale-deploy-2.png)
 
-    ![PowerShell スクリプトを使用して拡大デプロイする方法を示す 3 つ目のスクリーンショット。](./media/vmware-scale-powercli/cli-linux-scale-deploy-3.png)
+    ![`scale_deploy.ps1` の 3 番目のスクリーンショット。](./media/vmware-scale-powercli/cli-linux-scale-deploy-3.png)
 
 - 完了すると、VM には Azure Arc に接続されたマシン エージェントがインストールされ、Azure リソース グループには新しい Azure Arc 対応サーバーが設定されます。
 

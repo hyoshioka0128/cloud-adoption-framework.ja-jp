@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 1edcdd42d4b635929410a7e54c2f865f8ab4dc60
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2d0ef37f6de87a496383aac321750a0f514ae280
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016274"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114678"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>クラウド管理のインベントリと可視性
 

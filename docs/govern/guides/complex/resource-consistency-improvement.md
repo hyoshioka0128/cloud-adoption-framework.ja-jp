@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 1078c2d64fb2053f22e8a17602d174e14091a227
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 2a0d44baf496be0999cdbee5aa3d5f659a0441f8
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020949"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112621"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>複雑な企業向けのガバナンス ガイド: リソースの整合性の規範の改善
 

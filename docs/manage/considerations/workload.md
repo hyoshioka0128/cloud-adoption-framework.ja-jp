@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 950e48e41b53bd99be14a694992cd920e34df4e9
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: bea0b70a8a99f44b592e94e7d3355f77add2d8f9
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97016189"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112315"
 ---
 # <a name="workload-operations-in-cloud-management"></a>クラウド管理におけるワークロードの運用
 
@@ -23,7 +23,7 @@ ms.locfileid: "97016189"
 
 ## <a name="when-to-invest-in-workload-operations"></a>ワークロードの運用に投資するタイミング
 
-"_パレート原則_" ("_80/20 ルール_" とも呼ばれます) によると、結果の 80% は原因の 20% に由来しています。 IT ポートフォリオが時間の経過と共に有機的に成長することを見込んでいる場合、IT ポートフォリオのレビューでこのルールがよい例になることがよくあります。 投資を必要とする効果に応じて原因は異なりますが、一般的な原則は当てはまります。
+"*パレート原則*" ("*80/20 ルール*" とも呼ばれます) によると、結果の 80% は原因の 20% に由来しています。 IT ポートフォリオが時間の経過と共に有機的に成長することを見込んでいる場合、IT ポートフォリオのレビューでこのルールがよい例になることがよくあります。 投資を必要とする効果に応じて原因は異なりますが、一般的な原則は当てはまります。
 
 - システム障害の 80 パーセントは、一般的なエラーまたはバグの 20 パーセントの結果である傾向があります。
 - ビジネス価値の 80% は、ポートフォリオ内のワークロードの 20% に由来する傾向があります。
@@ -93,7 +93,7 @@ ms.locfileid: "97016189"
 - **管理:** 運用環境でシステムを継続的に動作させる運用プロセスです。
 - **セキュリティ:** 脅威からアプリケーションとデータを保護することです。
 
-[Microsoft Azure Well-Architected Framework](/azure/architecture/framework) では、全体的な運用の改善を支援するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 プラットフォームの運用とワークロードの運用の両方に、重要な要素を適用します。
+[Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) では、全体的な運用の改善を支援するために、これらの重要な要素への準拠について特定のワークロードを評価するアプローチを提供します。 プラットフォームの運用とワークロードの運用の両方に、重要な要素を適用します。
 
 ## <a name="next-steps"></a>次のステップ
 

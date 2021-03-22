@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: bf412babad0590d8ab9cef0aaf49796f21790bf0
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b2540c18ea1aa98b0188c29c59564f303fd6fe6c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800729"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114168"
 ---
 # <a name="use-a-terraform-plan-to-deploy-a-vmware-windows-virtual-machine-and-connect-it-to-azure-arc"></a>Terraform プランを使用して VMware Windows 仮想マシンをデプロイし、Azure Arc に接続する
 
@@ -84,17 +84,17 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 2. Terraform プランでは、Microsoft Azure と VMware vSphere の両方にリソースが作成されます。 次に、仮想マシンでスクリプトが実行され、Azure Arc エージェントと必要なすべてのアーティファクトがインストールされます。 このスクリプトには、VMware vSphere および Azure 環境に関する特定の情報が必要です。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/winsrv/terraform/scripts/vars.sh) を編集し、各変数を適切な値で更新します。
 
-    - `TF-VAR-subscription-id` = お使いの Azure サブスクリプション ID
-    - `TF-VAR-client-id` = お使いの Azure サービス プリンシパル名
-    - `TF-VAR-client-secret` = お使いの Azure サービス プリンシパル パスワード
-    - `TF-VAR-tenant-id` = お使いの Azure テナント ID
-    - `TF-VAR-resourceGroup` = Azure リソース グループ名
-    - `TF-VAR-location` = Azure リージョン
-    - `TF-VAR-vsphere-user` = vCenter 管理者ユーザー名
-    - `TF-VAR-vsphere-password` = vCenter 管理者パスワード
-    - `TF-VAR-vsphere-server` = vCenter サーバー FQDN/IP
-    - `TF-VAR-admin-user` = OS 管理者ユーザー名
-    - `TF-VAR-admin-password` = OS 管理者パスワード
+    - `TF_VAR_subscription_id` = お使いの Azure サブスクリプション ID
+    - `TF_VAR_client_id` = お使いの Azure サービス プリンシパル名
+    - `TF_VAR_client_secret` = お使いの Azure サービス プリンシパル パスワード
+    - `TF_VAR_tenant_id` = お使いの Azure テナント ID
+    - `TF_VAR_resourceGroup` = Azure リソース グループ名
+    - `TF_VAR_location` = Azure リージョン
+    - `TF_VAR_vsphere_user` = vCenter 管理者ユーザー名
+    - `TF_VAR_vsphere_password` = vCenter 管理者パスワード
+    - `TF_VAR_vsphere_server` = vCenter サーバー FQDN/IP
+    - `TF_VAR_admin_user` = OS 管理者ユーザー名
+    - `TF_VAR_admin_password` = OS 管理者パスワード
 
 3. CLI から、クローンされたリポジトリの `azure_arc_servers_jumpstart/vmware/winsrv/terraform` ディレクトリに移動します。
 
@@ -104,9 +104,9 @@ Terraform プランを実行する前に、プランで使用される環境変�
     source ./scripts/vars.sh
     ```
 
-5. エクスポートした *TF-VAR* 環境変数に加えて、[`terraform.tfvars`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/winsrv/terraform/terraform.tfvars) の Terraform 変数を VMware vSphere 環境に合わせて編集します。
+5. エクスポートした `TF_VAR` 環境変数に加えて、[`terraform.tfvars`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/winsrv/terraform/terraform.tfvars) の Terraform 変数を VMware vSphere 環境に合わせて編集します。
 
-    ![TF-VAR 環境変数のスクリーンショット](./media/vmware-terraform-windows/windows-variables.png)
+    !["TF-VAR" 環境変数のスクリーンショット](./media/vmware-terraform-windows/windows-variables.png)
 
 6. Terraform AzureRM、local、および vSphere プロバイダーをダウンロードする `terraform init` コマンドを実行します。
 
@@ -128,7 +128,7 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
     ![削除される Azure Arc 対応サーバーのスクリーンショット。](./media/vmware-terraform-windows/delete-server.png)
 
-- インスタンスを手動で削除する場合は、Terraform プランによって作成された *install-azure-arc-agent.ps1* も削除する必要があります。
+- インスタンスを手動で削除する場合は、Terraform プランによって作成された `install_arc_agent.ps1` も削除する必要があります。
 
 - 環境全体を破棄する場合は、以下のように `terraform destroy --auto-approve` コマンドを使用します。
 

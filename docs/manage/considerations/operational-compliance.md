@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: 6e7b37b5ff6b299027bc89ab18974a10e5dc4083
-ms.sourcegitcommit: 54f01dd0eafa23c532e54c821954ba682357f686
+ms.openlocfilehash: 2ed195a6d5cf4e7c8f0b86244aa5c4f28f5b0178
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98174252"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113386"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>クラウド管理における運用のコンプライアンス
 
@@ -46,8 +46,6 @@ ms.locfileid: "98174252"
 ### <a name="update-consistency"></a>更新の整合性
 
 アプローチの安定性は、より安定した運用につながります。 ただし、クラウド管理プロセス内でいくつかの変更が必要になります。 特に、中断を削減し、コストを制御するには、通常の修正プログラムとパフォーマンスの変更が不可欠です。
-
-<!-- docutune:ignore "a cloud management methodology" -->
 
 成熟したクラウド管理手法の多くの価値の 1 つは、必要な変更の安定化と制御に重点を置くことです。
 

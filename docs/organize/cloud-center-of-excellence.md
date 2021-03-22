@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: internal
-ms.openlocfilehash: c8b1c464c268f873f06564d2dd3162c3847380c8
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: ca61c0efb127190d263693112d55acd2e2fb959c
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788421"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116344"
 ---
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>クラウドのセンター オブ エクセレンス (CCoE) 機能
 
@@ -93,7 +93,7 @@ CCoE の各メンバーは、現在の IT コントロール セットの原因�
 
 ## <a name="enable-ccoe-success"></a>CCoE の成功を有効にする
 
-このモデルを使用して先に進む前に、成長の思考様式に対する会社の許容度と一元的な責任の解放による IT 部門の快適性を検証することが重要です。 前述のとおり、CCoE の目的は、機敏性とスピードのコントロールの交換です。
+このモデルを使用して先に進む前に、成長の思考様式に対する会社の許容度と一元的な責任の解放による IT の快適性レベルを考慮することが重要です。 前述のとおり、CCoE の目的は、機敏性とスピードのコントロールの交換です。
 
 この種の変更は、時間、実験、ネゴシエーションを要します。 この成熟プロセス中には悪路や後退があります。 ただし、チームが勤勉であり続け、実験をやめさせるような要因がないのであれば、機敏性、スピード、信頼性を高めることに成功する可能性が高くなります。 CCoE の成功または失敗の最大要因の 1 つは、リーダーシップと主要利害関係者からのサポートです。
 

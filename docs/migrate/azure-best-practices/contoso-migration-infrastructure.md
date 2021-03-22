@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 20c4c671b686a2e584ed63fa7dbc0b3523faf24e
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d84fc083ed5dff5e166e81905b120946dc7b6790
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101789203"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114211"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -31,12 +31,12 @@ Contoso が Azure への移行を実施するには、その前に Azure イン�
 
 > [!div class="checklist"]
 >
-> - **ステップ 1:Azure サブスクリプション。** Azure を購入する方法と、Azure プラットフォームおよびサービスを操作する方法。
-> - **手順 2:ハイブリッド ID。** 移行後にオンプレミスおよび Azure のリソースへのアクセスを管理および制御する方法。 ID 管理をクラウドに拡張または移行する方法。
-> - **ステップ 3:ディザスター リカバリーと回復性。** 停止や障害が発生した場合のアプリケーションとインフラストラクチャの回復性を確保する方法。
-> - **手順 4:ネットワーク。** ネットワーク インフラストラクチャを設計する方法、およびオンプレミスのデータ センターと Azure の間の接続を確立する方法。
-> - **手順 5:セキュリティ。** ハイブリッド デプロイをセキュリティで保護する方法。
-> - **手順 6:ガバナンス。** セキュリティとガバナンスの要件を満たしたデプロイを維持する方法。
+> - **ステップ 1:Azure サブスクリプション。** IT が Azure を購入する方法と、Azure プラットフォームおよびサービスを操作する方法。
+> - **手順 2:ハイブリッド ID。** 移行後に IT がオンプレミスおよび Azure のリソースへのアクセスを管理および制御する方法。 IT が ID 管理をクラウドに拡張または移行する方法。
+> - **ステップ 3:ディザスター リカバリーと回復性。** IT が停止や障害が発生した場合のアプリケーションとインフラストラクチャの回復性を確保する方法。
+> - **手順 4:ネットワーク。** IT がネットワーク インフラストラクチャを設計する方法、およびオンプレミスのデータ センターと Azure の間の接続を確立する方法。
+> - **手順 5:セキュリティ。** IT がハイブリッド デプロイをセキュリティで保護する方法。
+> - **手順 6:ガバナンス。** IT がセキュリティとガバナンスの要件を満たしたデプロイを維持する方法。
 
 ## <a name="before-you-start"></a>開始する前に
 
@@ -68,11 +68,11 @@ Contoso は、Azure の購入方法、サブスクリプションの管理方法
 
 ### <a name="buy-azure"></a>Azure を購入する
 
-Contoso は、[マイクロソフト エンタープライズ契約](https://azure.microsoft.com/overview/sales-number/)に登録しようとしています。 この契約には、Azure に対する前払いによる年額コミットメントが必然的に伴います。 Contoso には柔軟な課金オプションや価格の最適化などのメリットがあります。
+Contoso は、[マイクロソフト エンタープライズ契約](https://azure.microsoft.com/overview/sales-number/)に登録しようとしています。 この契約では Azure にあらかじめ年額コミットメントを支払います。柔軟な課金オプションや料金の最適化など、大きなメリットがこれで Contoso に与えられます。
 
 これらについて詳しく説明します。
 
-- Contoso は Azure への年間の支出を推定しました。 契約に署名する時点で、Contoso は最初の 1 年間の料金を払いました。
+- Contoso は Azure への年間の支出を推定しました。 Contoso は契約に署名したとき、最初の 1 年間の料金を払いました。
 - Contoso は 1 年が過ぎる前にすべてのコミットメントを使用する必要があります。そうしないと、金銭的価値を失うことになります。
 - なんらかの理由で Contoso がそのコミットメントを超えて使うと、Microsoft は差額を請求します。
 - コミットメントを超えて発生したコストはすべて、Contoso のコントラクトに記載されているものと同じレートになります。 超過に対するペナルティはありません。

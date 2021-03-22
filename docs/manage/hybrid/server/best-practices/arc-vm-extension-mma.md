@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 21bb83e68f7e31862e0485853016a6a059c7fc20
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: c1555d43bfe245f307284b0702742c41f6030cbc
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801002"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112180"
 ---
 # <a name="manage-extensions-and-use-an-azure-resource-manager-template-to-deploy-microsoft-monitoring-agent-to-azure-arc-linux-and-windows-servers"></a>拡張機能を管理し、Azure Resource Manager テンプレートを使用して Microsoft Monitoring Agent を Azure Arc Linux および Windows サーバーにデプロイする
 
@@ -35,11 +35,11 @@ Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テン
 - [Vagrant Ubuntu box](./local-vagrant-ubuntu.md)
 - [Vagrant Windows box](./local-vagrant-windows.md)
 
-[Azure Monitor のサポート対象 OS のドキュメント](/azure/azure-monitor/insights/vminsights-enable-overview#supported-operating-systems)を参照して、こちらの演習で使用する VM がサポートされていることを確認してください。 Linux VM の場合は、Linux ディストリビューションとカーネルの両方をチェックして、サポートされている構成を使用していることを確認します。
+[Azure Monitor のサポート対象 OS のドキュメント](/azure/azure-monitor/vm/vminsights-enable-overview#supported-operating-systems)を参照して、こちらの演習で使用する VM がサポートされていることを確認してください。 Linux VM の場合は、Linux ディストリビューションとカーネルの両方をチェックして、サポートされている構成を使用していることを確認します。
 
 ## <a name="prerequisites"></a>前提条件
 
-1. Azure Arc Jumpstart リポジトリを複製します。
+1. Azure Arc Jumpstart リポジトリをクローンします。
 
     ```console
     git clone https://github.com/microsoft/azure_arc.git

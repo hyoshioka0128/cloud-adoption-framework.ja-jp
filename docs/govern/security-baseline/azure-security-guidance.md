@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 16a2d068517add917d4c6429be34c79fccd25de1
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 681b37dbcb925b3591f004307a491279547a7cff
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792807"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115341"
 ---
 # <a name="microsoft-security-guidance"></a>Microsoft セキュリティ ガイダンス
 

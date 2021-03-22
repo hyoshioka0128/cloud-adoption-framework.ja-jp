@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: cdbba0f9047a351af9240712f69e4886ea4750d6
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: eca952db591f2d906a5189566ee537ff4f4eacf5
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020116"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112349"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>初期のクラウド ガバナンス基盤の確立
 

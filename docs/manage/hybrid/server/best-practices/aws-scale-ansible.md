@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 58b8355659779ef4258dd9d2935e8b09d3d9559b
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: a6fb1c371a608be1906b42528c4c80beffda3500
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800789"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112043"
 ---
 # <a name="use-ansible-to-scale-onboarding-amazon-web-services-amazon-elastic-compute-cloud-instances-to-azure-arc"></a>Ansible を使用してアマゾン ウェブ サービス Amazon Elastic Compute Cloud インスタンスの Azure Arc へのオンボードをスケーリングする
 
-この記事では、[Ansible](https://www.ansible.com/) を使用してアマゾン ウェブ サービス (AWS) Amazon Elastic Compute Cloud (Amazon EC2) インスタンスの Azure Arc へのオンボードをスケーリングする方法について説明します。
+この記事では、[Ansible](https://www.ansible.com/) を使用してアマゾン ウェブ サービス (AWS) Amazon Elastic Compute Cloud (EC2) インスタンスの Azure Arc へのオンボードをスケーリングする方法について説明します。
 
-このガイドは、Ansible に関する基礎知識があることを前提としています。 EC2 サーバー インベントリの動的読み込みに [`amazon.aws.aws-ec2`](https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws_ec2_inventory.html) プラグインを使用する、基本的な Ansible プレイブックと構成が用意されています。
+このガイドは、Ansible に関する基礎知識があることを前提としています。 EC2 サーバー インベントリの動的読み込みに [`amazon.aws.aws_ec2`](https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws_ec2_inventory.html) プラグインを使用する、基本的な Ansible プレイブックと構成が用意されています。
 
 このガイドは、既存の Ansible テスト環境がまだない場合でも使用できます。また、4 つの Windows Server 2019 サーバーと 4 つの Ubuntu サーバーのほか、単純な構成を持つ基本的な CentOS 7 Ansible 制御サーバーで構成されるサンプルの AWS EC2 サーバー インベントリを作成する Terraform プランが含まれています。
 
@@ -34,7 +34,7 @@ ms.locfileid: "101800789"
     git clone https://github.com/microsoft/azure_arc.git
     ```
 
-2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します。](/cli/azure/install-azure-cli) 現在インストールされているバージョンを確認するには、次のコマンドを使用してください。
+2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します](/cli/azure/install-azure-cli)。 現在インストールされているバージョンを確認するには、次のコマンドを使用してください。
 
    ```console
    az --version
@@ -48,21 +48,21 @@ ms.locfileid: "101800789"
 
    - Azure サービス プリンシパルを作成します。
 
-      AWS 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは、[Azure Cloud Shell](https://shell.azure.com/) 内で実行することもできます。
+      AWS 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは [Azure Cloud Shell](https://shell.azure.com/) で実行することもできます。
 
       ```console
       az login
       az ad sp create-for-rbac -n "<Unique SP Name>" --role contributor
       ```
-  
+
       次に例を示します。
-  
+
       ```console
       az ad sp create-for-rbac -n "http://AzureArcAWS" --role contributor
       ```
-  
+
       出力は次のようになります。
-  
+
       ```json
       {
       "appId": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -72,17 +72,17 @@ ms.locfileid: "101800789"
       "tenant": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
       }
       ```
-  
+
       > [!NOTE]
       > サービス プリンシパルのスコープを、特定の [Azure サブスクリプションとリソース グループ](/cli/azure/ad/sp)に限定することを強くお勧めします。
-  
+
 ## <a name="create-an-aws-identity"></a>AWS ID を作成する
 
 Terraform で AWS にリソースを作成するには、適切なアクセス許可を持つ新しい AWS IAM ロールを作成し、それを使用するように Terraform を構成する必要があります。
 
 1. [AWS マネジメント コンソール](https://console.aws.amazon.com/console/home)にサインインします
 
-2. サインインした後、左上にある **[サービス]** ドロップダウンを選択します。 **[セキュリティ、ID、およびコンプライアンス]** で、 **[IAM]** を選択して [[Identity and Access Management] ページ](https://console.aws.amazon.com/iam/home)にアクセスします
+2. サインインした後、左上にある **[サービス]** ドロップダウンを選択します。 **[Security, Identity, and Compliance]\(セキュリティ、ID、およびコンプライアンス\)** で、 **[IAM]** を選択して、[ID およびアクセス管理のページ](https://console.aws.amazon.com/iam/home)にアクセスします
 
     ![AWS クラウド コンソールのスクリーンショット。](./media/aws-scale-ansible/ansible-aws-console.png)
 
@@ -125,12 +125,12 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 2. Terraform プランでは、Microsoft Azure と AWS の両方にリソースが作成されます。 次に、AWS EC2 仮想マシン上でスクリプトが実行され、Ansible および必要なすべてのアーティファクトがインストールされます。 この Terraform プランには、環境変数を使用してアクセスする AWS と Azure の環境に関する特定の情報が必要です。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/scaled_deployment/ansible/terraform/scripts/vars.sh) を編集し、各変数を適切な値で更新します。
 
-   - `TF-VAR-subscription-id` = お使いの Azure サブスクリプション ID
-   - `TF-VAR-client-id` = お使いの Azure サービス プリンシパル アプリケーション ID
-   - `TF-VAR-client-secret` = お使いの Azure サービス プリンシパル パスワード
-   - `TF-VAR-tenant-id` = Azure テナント ID
-   - `AWS-ACCESS-KEY-ID` = AWS アクセス キー
-   - `AWS-SECRET-ACCESS-KEY` = AWS シークレット キー
+   - `TF_VAR_subscription_id` = お使いの Azure サブスクリプション ID
+   - `TF_VAR_client_id` = お使いの Azure サービス プリンシパル アプリケーション ID
+   - `TF_VAR_client_secret` = お使いの Azure サービス プリンシパル パスワード
+   - `TF_VAR_tenant_id` = Azure テナント ID
+   - `AWS_ACCESS_KEY_ID` = AWS アクセス キー
+   - `AWS_SECRET_ACCESS_KEY` = AWS シークレット キー
 
 3. シェルから、複製されたリポジトリの `azure_arc_servers_jumpstart/aws/scaled_deployment/ansible/terraform` ディレクトリに移動します。
 
@@ -140,7 +140,7 @@ Terraform プランを実行する前に、プランで使用される環境変�
     source ./scripts/vars.sh
     ```
 
-5. SSH キーが `~/.ssh` で使用可能であり、かつ `id-rsa.pub` および `id-rsa` という名前であることを確認します。 上記の SSH keygen ガイドに従ってキーを作成した場合は、既に正しくセットアップされているはずです。 そうでない場合は、別のパスのキーを使用するように [`aws-infrastructure.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/scaled_deployment/ansible/terraform/aws_infra.tf) を変更する必要があります。
+5. SSH キーが `~/.ssh` で使用可能であり、かつ `id_rsa.pub` および `id_rsa` という名前であることを確認します。 上記の SSH keygen ガイドに従ってキーを作成した場合は、既に正しくセットアップされているはずです。 そうでない場合は、別のパスのキーを使用するように [`aws_infra.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/scaled_deployment/ansible/terraform/aws_infra.tf) を変更する必要があります。
 
 6. 必要な Terraform プロバイダーをダウンロードする `terraform init` コマンドを実行します。
 
@@ -156,19 +156,19 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 ### <a name="run-the-ansible-playbook-to-onboard-the-aws-ec2-instances-as-azure-arc-enabled-servers"></a>Ansible プレイブックを実行して AWS EC2 インスタンスを Azure Arc 対応サーバーとしてオンボードする
 
-1. Terraform プランが完了すると、`ansible-ip` という名前の出力変数に Ansible 制御サーバーのパブリック IP が表示されます。 `ssh centos@xx.xx.xx.xx` を実行して Ansible サーバーに SSH で接続します。ここで、`xx.xx.xx.xx` は Ansible サーバーの IP アドレスに置き換えます。
+1. Terraform プランが完了すると、`ansible_ip` という名前の出力変数に Ansible 制御サーバーのパブリック IP が表示されます。 `ssh centos@xx.xx.xx.xx` を実行して Ansible サーバーに SSH で接続します。ここで、`xx.xx.xx.xx` は Ansible サーバーの IP アドレスに置き換えます。
 
     ![Ansible を使用してリモート サーバーに接続する SSH キーのスクリーンショット。](./media/aws-scale-ansible/ansible-ssh.png)
 
 2. `cd ansible` を実行してディレクトリを `ansible` ディレクトリに変更します。 このフォルダーには、サーバーを Azure Arc にオンボードするために使用するサンプルの Ansible 構成とプレイブックが含まれています。
 
-    ![ファイルを一覧表示するシェル スクリプトのスクリーンショット。](./media/aws-scale-ansible/ansible-cfg.png)
+    !["ansible" 構成フォルダーのスクリーンショット。](./media/aws-scale-ansible/ansible-cfg.png)
 
-3. `aw-ec2` Ansible プラグインでは、AWS サーバー インベントリを動的に読み取るために AWS の資格情報が必要です。 これらは環境変数としてエクスポートします。 次のコマンドを実行します。このとき、`AWS-ACCESS-KEY-ID` と `AWS-SECRET-ACCESS-KEY` の値を、前に作成した AWS の資格情報に置き換えます。
+3. `aw-ec2` Ansible プラグインでは、AWS サーバー インベントリを動的に読み取るために AWS の資格情報が必要です。 これらは環境変数としてエクスポートします。 次のコマンドを実行します。このとき、`AWS_ACCESS_KEY_ID` と `AWS_SECRET_ACCESS_KEY` の値を、前に作成した AWS の資格情報に置き換えます。
 
     ```console
-    export AWS-ACCESS-KEY-ID="XXXXXXXXXXXXXXXXX"
-    export AWS-SECRET-ACCESS-KEY="XXXXXXXXXXXXXXX"
+    export AWS_ACCESS_KEY_ID="XXXXXXXXXXXXXXXXX"
+    export AWS_SECRET_ACCESS_KEY="XXXXXXXXXXXXXXX"
     ```
 
 4. [`group-vars/all.yml`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/scaled_deployment/ansible/terraform/ansible_config/group_vars/all.yml) ファイル内の Azure テナント ID とサブスクリプション ID のプレースホルダーの値を、ご使用の環境に適した値に置き換えます。
@@ -178,14 +178,14 @@ Terraform プランを実行する前に、プランで使用される環境変�
 5. 次のコマンドを実行して Ansible プレイブックを実行します。このとき、Azure サービス プリンシパル ID とサービス プリンシパル シークレットを置き換えます。
 
     ```console
-    ansible-playbook arc-agent.yml -i ansible-plugins/inventory-uswest2-aws-ec2.yml --extra-vars '{"service-principal-id": "XXXXXXX-XXXXX-XXXXXXX", "service-principal-secret": "XXXXXXXXXXXXXXXXXXXXXXXX"}'
+    ansible-playbook arc_agent.yml -i ansible_plugins/inventory-uswest2-aws_ec2.yml --extra-vars '{"service_principal_id": "XXXXXXX-XXXXX-XXXXXXX", "service_principal_secret": "XXXXXXXXXXXXXXXXXXXXXXXX"}'
     ```
 
     プレイブックが正常に実行されると、下のスクリーンショットのような出力が表示されます。
 
     ![実行中の Ansible プレイブックのスクリーンショット。](./media/aws-scale-ansible/ansible-playbook.png)
 
-6. Azure portal を開き、arc-aws-demo のリソース グループに移動します。 Azure Arc 対応サーバーが一覧表示されます。
+6. Azure portal を開き、`arc-aws-demo` リソース グループに移動します。 Azure Arc 対応サーバーが一覧表示されます。
 
     ![Azure Arc 対応サーバーがオンボードされている Azure portal のスクリーンショット。](./media/aws-scale-ansible/onboarding-servers.png)
 
@@ -202,24 +202,24 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 ### <a name="review-provided-ansible-configuration-and-playbook"></a>指定されている Ansible 構成とプレイブックを確認する
 
-1. `ansible-config` ディレクトリに移動し、指定された構成を確認します。 指定されている構成には、基本的な `ansible.cfg` ファイルが含まれています。 このファイルを使用すると、AWS IAM ロールを使用してサーバー インベントリを動的に読み込む [`amazon.aws.aws-ec2`](https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws-ec2-inventory.html) Ansible プラグインを有効にすることができます。 使用する IAM ロールに、オンボードするインベントリにアクセスするための十分な特権があることを確認します。
+1. `ansible_config` ディレクトリに移動し、指定された構成を確認します。 指定されている構成には、基本的な `ansible.cfg` ファイルが含まれています。 このファイルを使用すると、AWS IAM ロールを使用してサーバー インベントリを動的に読み込む [`amazon.aws.aws_ec2`](https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws_ec2_inventory.html) Ansible プラグインを有効にすることができます。 使用する IAM ロールに、オンボードするインベントリにアクセスするための十分な特権があることを確認します。
 
     ![`ansible.cfg` ファイルの詳細を示すスクリーンショット。](./media/aws-scale-ansible/ansible-cfg-details.png)
 
-2. ファイル [`inventory-uswest2-aws-ec2.yml`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/scaled_deployment/ansible/terraform/ansible_config/ansible_plugins/inventory_uswest2_aws_ec2.yml) によって、`aws-ec2` プラグインが `uswest2` リージョンからインベントリをプルし、適用されたタグによって資産をグループ化するように構成されます。 リージョンの変更や、グループまたはフィルターの調整など、サーバー インベントリのオンボードをサポートするように、このファイルを必要に応じて調整します。
+2. ファイル [`inventory-uswest2-aws_ec2.yml`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/aws/scaled_deployment/ansible/terraform/ansible_config/ansible_plugins/inventory_uswest2_aws_ec2.yml) によって、`aws_ec2` プラグインが `uswest2` リージョンからインベントリをプルし、適用されたタグによって資産をグループ化するように構成されます。 リージョンの変更や、グループまたはフィルターの調整など、サーバー インベントリのオンボードをサポートするように、このファイルを必要に応じて調整します。
 
    `./ansible-config/group-vars` 内のファイルは、さまざまな Ansible ホスト グループをオンボードするために使用する資格情報を提供するように調整する必要があります。
 
 3. 指定された構成を、環境をサポートするように調整したら、次のコマンドを実行して Ansible プレイブックを実行します。このとき、Azure サービス プリンシパル ID とサービス プリンシパル シークレットを置き換えます。
 
     ```console
-    ansible-playbook arc-agent.yml -i ansible-plugins/inventory-uswest2-aws-ec2.yml --extra-vars '{"service-principal-id": "XXXXXXX-XXXXX-XXXXXXX", "service-principal-secret": "XXXXXXXXXXXXXXXXXXXXXXXX"}'
+    ansible-playbook arc_agent.yml -i ansible_plugins/inventory-uswest2-aws_ec2.yml --extra-vars '{"service_principal_id": "XXXXXXX-XXXXX-XXXXXXX", "service_principal_secret": "XXXXXXXXXXXXXXXXXXXXXXXX"}'
     ```
 
     前と同じように、プレイブックが正常に実行されると、次のスクリーンショットのような出力が表示されます。
 
       ![実行中の Ansible プレイブックのスクリーンショット。](./media/aws-scale-ansible/ansible-playbook.png)
 
-    前と同じように、Azure portal を開き、arc-aws-demo のリソース グループに移動します。 Azure Arc 対応サーバーが一覧表示されます。
+    前と同じように、Azure portal を開き、`arc-aws-demo` リソース グループに移動します。 Azure Arc 対応サーバーが一覧表示されます。
 
     ![Azure Arc 対応サーバーが表示されている Azure portal のスクリーンショット。](./media/aws-scale-ansible/onboarding-servers.png)

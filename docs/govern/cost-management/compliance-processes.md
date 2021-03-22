@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 0bc21e340218a9a29f162a4cfdfcc88f3bdf6fc3
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b0536efe30ed43279c5d0fe4120c1b988b1a6d9e
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021935"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113063"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>コスト管理のポリシー コンプライアンス プロセス
 

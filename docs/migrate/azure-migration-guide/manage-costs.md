@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-edit, AQC
-ms.openlocfilehash: ef56557ed05f199486209538d1bd29e2a80a7891
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 4ead518f93dee8421581bd1a7a17c20cb91ee4d3
+ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101784834"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102207896"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>移行に重点を置いたコスト管理のメカニズム
 
 クラウドでは、テクノロジ チームでの役割には関係なく、作業方法にいくつかのシフトが導入されます。 コストは、このシフトの格好の例です。 以前には、IT 資産 (インフラストラクチャ、アプリ、およびデータ) のコストに関心があったのは財務および IT リーダーシップだけでした。 クラウドは IT のすべてのメンバーの能力を高めて、エンド ユーザーをより適切にサポートする意思決定を行い、それに基づいて行動できるようにします。 ただし、その能力には、これらの意思決定を行うときにコストを意識する必要があるという責任が付属します。
 
-この記事では、Azure への移行前、移行中、および移行後に、コストに関する賢い意思決定を行うのに役立つツールを導入します。
+この記事では、Azure へのワークロードの移行前、移行中、移行後に、コストに関する賢い意思決定を行うのに役立つツールを導入します。
 
 この記事のツールには、次のものがあります。
 

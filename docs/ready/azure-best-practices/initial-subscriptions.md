@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 4d78f100772e1779f8e8385ca413b979996403aa
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 097f490a6dda451c2320e3ab51498b57cf66baf4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101789679"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102115800"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Azure の初期サブスクリプションを作成する
 
@@ -24,10 +24,10 @@ ms.locfileid: "101789679"
 最初に、次の 2 つのサブスクリプションを作成します。
 
 - 運用環境のワークロードを格納するための Azure サブスクリプションを 1 つ作成します。
-- より低価格の [Azure Dev/Test オファー](https://azure.microsoft.com/pricing/dev-test)を使用して、非運用環境として機能する 2 つ目のサブスクリプションを作成します。
+- より低価格の [Azure Dev/Test オファー](https://azure.microsoft.com/pricing/dev-test/)を使用して、非運用環境として機能する 2 つ目のサブスクリプションを作成します。
 
-!["運用" と "非運用" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model.png)
-_図 1:"運用" と "非運用" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル_
+![**運用** と **非運用** のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model.png)
+*図 1:"運用" と "非運用" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル*
 
 この方法には多くの利点があります。
 
@@ -42,15 +42,15 @@ _図 1:"運用" と "非運用" のラベルが付いたボックスの横にキ
 
 イノベーションに関する目標がクラウド導入戦略の一部となっている場合は、1 つ以上のサンドボックス サブスクリプションを作成することを検討してください。 セキュリティ ポリシーを適用して、これらのテスト サブスクリプションを運用環境および非運用環境から分離できます。 ユーザーは、これらの分離された環境で Azure の機能を簡単に試すことができます。 Azure Dev/Test オファーを使用して、これらのサブスクリプションを作成します。
 
-!["運用"、"非運用"、"サンドボックス" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model-with-sandboxes.png)
-_図 2:サンドボックス サブスクリプション付きサブスクリプション モデル_
+![**運用**、**非運用**、**サンドボックス** のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model-with-sandboxes.png)
+*図 2:サンドボックス サブスクリプション付きサブスクリプション モデル*
 
 ## <a name="shared-services-subscription"></a>共有サービス サブスクリプション
 
 **24 か月以内にクラウドで 1,000 を超える VM またはコンピューティング インスタンス** をホストすることを計画している場合は、共有サービスをホストするために別の Azure サブスクリプションを作成してください。 これにより、最終状態のエンタープライズ アーキテクチャをサポートできる状態になります。
 
-!["運用" と "共有サービス" のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model-with-shared-services.png)
-_図 3:共有サービス付きサブスクリプション モデル_
+![**運用** と **共有サービス** のラベルが付いたボックスの横にキーが表示された初期サブスクリプション モデル](../../_images/ready/initial-subscription-model-with-shared-services.png)
+*図 3:共有サービス付きサブスクリプション モデル*
 
 ## <a name="next-steps"></a>次のステップ
 

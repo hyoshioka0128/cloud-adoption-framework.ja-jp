@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: a702b08b518919b6f3b1a30bf954e81a5b02aeea
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: 2f081bb86cab9423c039c5554b623d37dc537d07
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99230680"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114984"
 ---
 # <a name="machine-learning-security"></a>機械学習のセキュリティ
 
@@ -31,7 +31,7 @@ ms.locfileid: "99230680"
 
 ## <a name="deploy-azure-kubernetes-service-to-secure-an-inference-environment"></a>Azure Kubernetes Service をデプロイして推論環境をセキュリティで保護する
 
-運用環境での推論には、Azure Kubernetes Service (AKS) を使用することをお勧めします。 仮想ネットワークでは、次の 2 つのオプションを使用できます。
+Azure Kubernetes Service (AKS) は運用環境での推論に推奨されます。 仮想ネットワークでは、次の 2 つのオプションを使用できます。
 
 - パブリック IP アドレスを持つ AKS クラスターを仮想ネットワークにデプロイするか、接続します。
 - プライベート AKS クラスターを仮想ネットワークにアタッチします。

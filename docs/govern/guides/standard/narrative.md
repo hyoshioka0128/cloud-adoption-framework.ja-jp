@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: fd063e049713ebc45cbd5dcde7bf40a492f6685e
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: fe65cf8b1f96d765ddeb922be7e419e961585490
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790240"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112417"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>標準的な企業のガバナンス ガイド:ガバナンス戦略の背景にある物語
 
@@ -23,7 +23,7 @@ ms.locfileid: "101790240"
 
 取締役会は、いくつかの方法で事業を活性化する計画からその年を始めました。 市場シェアを獲得するために顧客エクスペリエンスを改善するリーダーシップを推し進めています。 また、会社を業界のソート リーダーと位置づけることになる新しい製品とサービスを求めています。 さらに、無駄を減らし、不必要なコストを削減する取り組みも並行して始めました。 威圧的ではありますが、取締役会の行動とリーダーシップは、この取り組みが将来の成長に最大限の資本を集中させていることを示します。
 
-過去には、会社の CIO はこのような戦略的な話し合いから除外されていました。 将来のビジョンは本質的にテクノロジの成長と関連しているので、このような大きな計画を指導するための会議には IT 部門の席が用意されます。 現在、IT 部門は新しい方法を提示することが期待されています。 チームはこのような変更に備えておらず、学習曲線に苦労する可能性があります。
+過去には、会社の CIO はこのような戦略的な話し合いから除外されていました。 将来のビジョンは本質的にテクノロジの成長と関連しているので、このような大きな計画を指導するための会議には IT の席が用意されます。現在、IT は新しい方法を提示することが期待されています。 チームはこのような変更に備えておらず、学習曲線に苦労する可能性があります。
 
 ## <a name="business-characteristics"></a>ビジネスの特性
 

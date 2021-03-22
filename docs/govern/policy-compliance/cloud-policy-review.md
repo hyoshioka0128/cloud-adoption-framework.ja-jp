@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: c6b39638f1560e29c8be4fcdc146510c5f43e700
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a8b0ac0c446e7a163bae5f4fe5c120671c420601
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97020014"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112366"
 ---
 # <a name="conduct-a-cloud-policy-review"></a>クラウド ポリシーの確認を実施する
 
@@ -58,7 +58,7 @@ ms.locfileid: "97020014"
   - 実稼働機器と同じ物理的な場所にバックアップを保存することに関連して想定されるビジネス上のリスク。
 - リスクはまだ存在しますか? はい。 クラウドでも、1 つの施設に依存することでリスクが発生します。 オンプレミスのソリューションに存在していたリスクよりも、このリスクがビジネスに影響を与える可能性は低いですが、リスクは依然として存在します。
 - ポリシーを書き換えます。 データ センター全体の障害の場合は、障害から 24 時間以内に別のデータセンターと別の地理的な場所に実稼働システムを復元する手段が必要です。
-  - また、上記の要件で指定されたタイムラインは、クラウドに存在しなくなった技術的な制約によって設定されている可能性があることも考慮する必要があります。 レガシ RTO/RPO を単に適用する前に、クラウドの技術的な制約と機能について理解してください。
+  - また、上記の要件で指定されたタイムラインは、クラウドに存在しなくなった技術的な制約によって設定されている可能性があることも考慮することが重要です。 レガシ RTO/RPO を単に適用する前に、クラウドの技術的な制約と機能について理解してください。
 - クラウド導入のチームと確認します。 実装されるソリューションに応じて、このリソース整合性ポリシーに準拠する複数の手段があります。
 
 ## <a name="next-steps"></a>次のステップ

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 676732093b1d26c3b2221999d67ae2f010f6ac0a
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: 5bc49f19dd8127412e2b417600c4be776d7ae0e4
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97021136"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112672"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>複雑な企業向けのガバナンス ガイド: マルチクラウドの改善
 

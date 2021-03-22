@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC, seo-caf-innovate
 keywords: 定量的データ, 定量的フィードバック, 定性的フィードバック, テスト フィードバック, カスタマー フィードバック
-ms.openlocfilehash: 3f7e58140007dc7991258966691848ca2c3e2632
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: df83743be2399ddb2651582df482b3b987c659c9
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787622"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112978"
 ---
 # <a name="prepare-for-customer-feedback"></a>カスタマー フィードバックの準備
 

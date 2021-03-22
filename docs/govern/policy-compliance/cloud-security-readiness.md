@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: 4daada6803f18554015f11469e1e31c3efea506a
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 7a52ba860bfe3de9851d2c7a378d58fe75162b26
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792416"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112383"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>CISO のクラウド準備状況に関するガイド
 
@@ -44,7 +44,7 @@ ms.locfileid: "101792416"
 - [セキュリティ開発ライフサイクル、内部監査](https://www.microsoft.com/sdl)
 - [必須のセキュリティ トレーニング、バックグラウンド チェック](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
 - [侵入テスト、不正侵入検出、DDoS、監査、ログ記録](https://www.microsoft.com/security/business/operations)
-- [最新のデータ センター](https://www.microsoft.com/cloud-platform/global-datacenters)、物理的なセキュリティ、[セキュリティで保護されたネットワーク](/azure/security/security-network-overview)
+- [最新のデータ センター](https://azure.microsoft.com/global-infrastructure/)、物理的なセキュリティ、[セキュリティで保護されたネットワーク](/azure/security/fundamentals/network-overview)
 
 **プライバシーと管理:**
 

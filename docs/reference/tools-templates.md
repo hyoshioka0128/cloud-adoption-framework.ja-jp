@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: internal
-ms.openlocfilehash: 0a26becab0f8aab80a5e4cf9504e754362ca6091
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 3a121fe48499e12fa578c0a715d3dfb319ef6189
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101785769"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102116395"
 ---
 # <a name="tools-and-templates"></a>ツールとテンプレート
 
@@ -73,7 +73,7 @@ ms.locfileid: "101785769"
 
 | リソース | 説明 |
 |----------|-------------|
-| [デプロイ テンプレート](https://aka.ms/adopt/plan/generator) | [ナレッジ マイニング](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine) テンプレートには、構造化および非構造化データに潜む分析情報を明らかにするための体系的なアプローチが用意されています。 .
+| [デプロイ テンプレート](https://aka.ms/adopt/plan/generator) | Azure DevOps ジェネレーターにはプロジェクト チェックリストがあり、[ナレッジ マイニング](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine)、[最新式のデータ ウェアハウス](https://azuredevopsdemogenerator.azurewebsites.net/?name=moddw)、業界固有のアクセラレータ (AI を利用して[小売レコメンダー](https://azuredevopsdemogenerator.azurewebsites.net/?name=moddw)など) の開発に便利です。 テンプレートの場合、手法とチェックリストが系統立てて作られており、指示どおり進められます。 各テンプレートおよび作業項目には必要なコンテンツ、アセット、コード サンプルのリンクがあり、作業開始に役立ちます。
 
 
 ## <a name="manage"></a>管理する

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: ba39a2e2b8bd9e226c8d81599de1920b9878b9e0
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: e1f004ca4572e6faa337730cb18004397e446ae3
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801405"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102114406"
 ---
 # <a name="use-a-terraform-plan-to-deploy-a-google-cloud-platform-ubuntu-instance-and-connect-it-to-azure-arc"></a>Terraform プランを使用して Google Cloud Platform Ubuntu インスタンスをデプロイし、Azure Arc に接続する
 
@@ -27,7 +27,7 @@ ms.locfileid: "101801405"
     git clone https://github.com/microsoft/azure_arc.git
     ```
 
-2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します](/cli/azure/install-azure-cli)。 次のコマンドを使用して、現在インストールされているバージョンを確認します。
+2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します](/cli/azure/install-azure-cli)。 現在インストールされているバージョンを確認するには、次のコマンドを使用してください。
 
     ```console
     az --version
@@ -41,7 +41,7 @@ ms.locfileid: "101801405"
 
 6. Azure サービス プリンシパルを作成します。
 
-    GCP 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは、[Azure Cloud Shell](https://shell.azure.com/) 内で実行することもできます。
+    GCP 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは [Azure Cloud Shell](https://shell.azure.com/) で実行することもできます。
 
     ```console
     az login
@@ -89,7 +89,7 @@ ms.locfileid: "101801405"
 
     ![GCP コンソールでのサービス アカウントの作成方法を示すスクリーンショット。](./media/gcp-ubuntu/ubuntu-svc-account.png)
 
-4. 最後に、SSH キーが `~/.ssh` で使用可能であり、かつ `id-rsa.pub` および `id-rsa` という名前であることを確認します。 上記の ssh-keygen ガイドに従ってキーを作成した場合は、既に正しくセットアップされているはずです。 されていない場合は、別のパスのキーを使用するように [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/ubuntu/terraform/main.tf) を変更する必要があります。
+4. 最後に、SSH キーが `~/.ssh` で使用可能であり、かつ `id_rsa.pub` および `id_rsa` という名前であることを確認します。 上記の ssh-keygen ガイドに従ってキーを作成した場合は、既に正しくセットアップされているはずです。 されていない場合は、別のパスのキーを使用するように [`main.tf`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/ubuntu/terraform/main.tf) を変更する必要があります。
 
 ## <a name="deployment"></a>デプロイ
 
@@ -97,14 +97,14 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 1. `az account list` コマンドを使用して、Azure サブスクリプション ID とテナント ID を取得します。
 
-2. Terraform プランでは、Microsoft Azure と Google Cloud Platform の両方にリソースが作成されます。 次に、GCP 仮想マシンでスクリプトが実行されて、Azure Arc エージェントと必要なすべての成果物がインストールされます。 このスクリプトには、GCP および Azure 環境に関する特定の情報が必要です。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/ubuntu/terraform/scripts/vars.sh) を編集し、各変数を適切な値で更新します。
+2. Terraform プランでは、Microsoft Azure と Google Cloud Platform の両方にリソースが作成されます。 次に、GCP 仮想マシンでスクリプトが実行され、Azure Arc エージェントと必要なすべてのアーティファクトがインストールされます。 このスクリプトには、GCP および Azure 環境に関する特定の情報が必要です。 [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/ubuntu/terraform/scripts/vars.sh) を編集し、各変数を適切な値で更新します。
 
-    - `TF-VAR-subscription-id` = お使いの Azure サブスクリプション ID
-    - `TF-VAR-client-id` = お使いの Azure サービス プリンシパル アプリケーション ID
-    - `TF-VAR-client-secret` = お使いの Azure サービス プリンシパル パスワード
-    - `TF-VAR-tenant-id` = お使いの Azure テナント ID
-    - `TF-VAR-gcp-project-id` = GCP プロジェクト ID
-    - `TF-VAR-gcp-credentials-filename` = GCP 資格情報 JSON ファイル名
+    - `TF_VAR_subscription_id` = お使いの Azure サブスクリプション ID
+    - `TF_VAR_client_id` = お使いの Azure サービス プリンシパル アプリケーション ID
+    - `TF_VAR_client_secret` = お使いの Azure サービス プリンシパル パスワード
+    - `TF_VAR_tenant_id` = お使いの Azure テナント ID
+    - `TF_VAR_gcp_project_id` = GCP プロジェクト ID
+    - `TF_VAR_gcp_credentials_filename` = GCP 資格情報 JSON ファイル名
 
 3. CLI から、クローンされたリポジトリの `azure_arc_servers_jumpstart/gcp/ubuntu/terraform` ディレクトリに移動します。
 
@@ -116,7 +116,7 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 5. Terraform AzureRM プロバイダーをダウンロードする `terraform init` コマンドを実行します。
 
-    !["terraform init" コマンドのスクリーンショット。](./media/gcp-ubuntu/ubuntu-terraform-init.png)
+    ![`terraform init` コマンドのスクリーンショット。](./media/gcp-ubuntu/ubuntu-terraform-init.png)
 
 6. 次に、`terraform apply --auto-approve` コマンドを実行して、プランが終了するまで待ちます。 完了すると、GCP Ubuntu VM がデプロイされ、新しいリソース グループ内の新しい Azure Arc 対応サーバーとして接続されます。
 
@@ -132,7 +132,7 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 実際の登録プロセスのデモまたは制御を行う場合は、次の手順を行います。
 
-1. [`install_arc_agent.sh.tmpl`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/ubuntu/terraform/scripts/install_arc_agent.sh.tmpl) スクリプト テンプレートで `run connect command` セクションをコメント アウトし、ファイルを保存します。
+1. [`install_arc_agent.sh.tmpl`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/gcp/ubuntu/terraform/scripts/install_arc_agent.sh.tmpl)スクリプト テンプレートで `run connect command` セクションをコメント アウトし、ファイルを保存します。
 
     ![Azure Arc エージェントの自動オンボードを無効にするためにコメント アウトされた "main.tf" を示すスクリーンショット。](./media/gcp-ubuntu/ubuntu-main-tf.png)
 
@@ -150,7 +150,8 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 5. 次のコマンドを実行します。
 
-    ```console azcmagent connect --service-principal-ID $tf-VAR-client-ID --service-principal-secret $tf-VAR-client-secret --resource-group "Azure Arc gcp-demo" --tenant-ID $tf-VAR-tenant-ID --location "westus2" --subscription-ID $tf-VAR-subscription-ID
+    ```console
+    azcmagent connect --service-principal-id $TF_VAR_client_id --service-principal-secret $TF_VAR_client_secret --resource-group "Azure Arc gcp-demo" --tenant-id $TF_VAR_tenant_id --location "westus2" --subscription-id $TF_VAR_subscription_id
     ```
 
     !["azcmagent connect" コマンドの正常完了を示すスクリーンショット。](./media/gcp-ubuntu/ubuntu-azcmagent.png)
@@ -161,7 +162,7 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 このデモの一部として作成したすべてのリソースを削除するには、下のように `terraform destroy --auto-approve` コマンドを使用します。
 
-!["terraform destroy" コマンドのスクリーンショット。](./media/gcp-ubuntu/ubuntu-terraform-destroy.png)
+![`terraform destroy` コマンドのスクリーンショット。](./media/gcp-ubuntu/ubuntu-terraform-destroy.png)
 
 または、[GCP コンソール](https://console.cloud.google.com/compute/instances)から直接 GCP VM を削除することもできます。
 

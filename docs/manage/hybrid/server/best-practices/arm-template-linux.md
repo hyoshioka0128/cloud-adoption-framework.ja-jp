@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 50fc9c721716bd7be378db247daf3df1319f7d75
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 55289cb5383c490b5e7cc8a24c5c4621257af3e3
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801081"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102112026"
 ---
 # <a name="use-an-azure-resource-manager-template-to-deploy-and-connect-an-ubuntu-virtual-machine-to-azure-arc"></a>Azure Resource Manager テンプレートを使用して Ubuntu 仮想マシンを Azure Arc にデプロイして接続する
 
@@ -24,17 +24,17 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
 このガイドでは、**デモ目的でのみ** Azure VM を使用して Azure Arc にオンボードすることができます。 Azure の外部 (オンプレミスや他のクラウド プラットフォームなど) にデプロイされているサーバーをシミュレートすることができます。
 
 > [!NOTE]
-> Azure VM を Azure Arc 対応サーバーとして投影することは想定されていません。 **以下のシナリオはサポートされていません。これは、デモとテストの目的でのみ使用してください。**
+> Azure VM は、Azure Arc 対応サーバーとして投影することが想定されていません。 **次のシナリオはサポートされていません。これは、デモとテストの目的でのみ使用してください。**
 
 ## <a name="prerequisites"></a>前提条件
 
-1. Azure Arc Jumpstart リポジトリを複製します。
+1. Azure Arc Jumpstart リポジトリをクローンします。
 
     ```console
     git clone https://github.com/microsoft/azure_arc.git
     ```
 
-2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します。](/cli/azure/install-azure-cli) 現在インストールされているバージョンを確認するには、次のコマンドを使用してください。
+2. [バージョン 2.7 以降の Azure CLI をインストールするか、更新します](/cli/azure/install-azure-cli)。 現在インストールされているバージョンを確認するには、次のコマンドを使用してください。
 
     ```console
     az --version
@@ -84,7 +84,7 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
 
     1. ローカル OS 環境変数が設定されます。
 
-    2. 環境を構成するために、ユーザーの初回サインイン時に初期化される `~/.bash-profile` ファイルが生成されます。 このスクリプトでは、次のことが行われます。
+    2. 環境を構成するために、ユーザーの初回サインイン時に初期化される `~/.bash_profile` ファイルが生成されます。 このスクリプトでは、次のことが行われます。
 
         - Linux Azure ゲスト エージェント サービスが停止され、無効になります。
 
@@ -92,9 +92,9 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
 
         - Azure Arc 接続マシン エージェントがインストールされます。
 
-        - 初回サインインの後に実行されいよう、`~/.bash-profile` ファイルが削除されます。
+        - 初回サインインの後に実行されいよう、`~/.bash_profile` ファイルが削除されます。
 
-4. ユーザーが Linux VM に SSH 接続します。これにより、`~/.bash-profile` スクリプトの実行が開始され、VM が Azure Arc にオンボードされます。
+4. ユーザーが Linux VM に SSH 接続します。これにより、`~/.bash_profile` スクリプトの実行が開始され、VM が Azure Arc にオンボードされます。
 
     > [!NOTE]
     >  [`install_arc_agent.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/azure/linux/arm_template/scripts/install_arc_agent.sh) シェル スクリプトを実行すると、OS ファイアウォールが有効になり、着信接続と発信接続に対する新しいルールが設定されます。 既定では、受信トラフィックと送信トラフィックはすべて許可され、`169.254.169.254` リモート アドレスへの Azure IMDS 送信トラフィックのみブロックされます。
@@ -110,7 +110,7 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
 3. ARM テンプレートをデプロイするには、ローカルに複製された[デプロイ フォルダー](https://github.com/microsoft/azure_arc/tree/main/azure_arc_servers_jumpstart/azure/linux/arm_template)に移動し、次のコマンドを実行します。
 
     ```console
-    az group create --name <Name of the Azure resource group> --location <Azure region> --tags "Project=jumpstart-azure-arc-servers"
+    az group create --name <Name of the Azure resource group> --location <Azure region> --tags "Project=jumpstart_azure_arc_servers"
     az deployment group create \
     --resource-group <Name of the Azure resource group> \
     --name <The name of this deployment> \
@@ -124,7 +124,7 @@ Azure VM では、既定で [Azure Instance Metadata Service (IMDS)](/azure/virt
     次に例を示します。
 
     ```console
-    az group create --name Arc-Servers-Linux-Demo --location "westeurope" --tags "Project=jumpstart-azure-arc-servers"
+    az group create --name Arc-Servers-Linux-Demo --location "westeurope" --tags "Project=jumpstart_azure_arc_servers"
     az deployment group create \
     --resource-group Arc-Servers-Linux-Demo \
     --name arclinuxdemo \
