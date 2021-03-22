@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-edit, AQC
-ms.openlocfilehash: af73cfe2b5bedfa414968f43193d3fc252268f10
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 358032dd02ad1db252beec3fab50d17a6e68d643
+ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790427"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102113743"
 ---
 <!-- docutune:ignore "provide advanced threat protection" -->
 
@@ -48,7 +48,7 @@ Azure Backup では、ご自身のデータを Microsoft Cloud 内でバック�
 
 Azure に存在するデータに対して、Azure Backup にはさまざまなレベルの保護が用意されています。 たとえば、Azure Virtual Machines や Azure Files など、クラウド インフラストラクチャの重要な要素をバックアップする場合は、[Azure Virtual Machines バックアップ](/azure/backup/backup-azure-vms-introduction)と [Azure Files バックアップ](/azure/backup/azure-file-share-backup-overview)が提供されます。 Azure Virtual Machines で実行されるデータベースなど、より重要なコンポーネントの場合は、[SQL Server](/azure/backup/backup-azure-sql-database) および [SAP HANA](/azure/backup/sap-hana-db-about) 専用のデータベース バックアップ ソリューションが大幅に低い RPO で提供されます。
 
-Azure Backup でバックアップを有効にすることがいかに簡単であるかを知るために、次のセクションを参照して、Azure Virtual Machines のバックアップを有効にします。
+次のセクションをレビューし、Azure Virtual Machines のバックアップを簡単に有効にできることをご確認ください。
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Azure VM のバックアップを有効にする
 
