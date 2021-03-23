@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 023f95f419db54de03903161e003704e6c5e0705
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 69e9ac4fc1002042285cb796c03633970fc25221
+ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101790988"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103439629"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
@@ -23,19 +23,50 @@ ms.locfileid: "101790988"
 
 このフレームワークは、お客様、パートナー、および Microsoft の社内チームと協力して構築されています。 新しいコンテンツと更新されたコンテンツは、使用可能になった時点でリリースされます。 これらのリリースを使用して、Microsoft と共にガイダンスをテストし、検証し、改良することができます。 Microsoft と連携してクラウド導入フレームワークを構築することをお勧めします。
 
-## <a name="february-2021"></a>2021 年 2 月
+## <a name="march-2021"></a>2021 年 3 月
 
-ビジネス成果の概要をクラウドの経済性を紹介する内容で更新して拡張し、ビジネス成果の各カテゴリに、成功したビジネス ケースを示すユース ケースを追加しました。
+このリリースはフレームワーク最大の更新プログラムであり、フレームワーク全体にまたがる一連の新しいガイダンスが多数追加されています。
 
-| [アーティクル] | 説明 |
+### <a name="adoption-journeys"></a>導入体験
+
+このリリースで最も注目すべき点は、導入体験が追加されたことです。これにより、より深いフレームワークの上にある短く消費可能なオーバーレイやレンズが得られ、より迅速にエンゲージメントを進めることができます。 この短いガイドでは、特定のテクノロジ プラットフォームの導入に向けて、クラウド導入フレームワーク、 [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/)、 [Azure アーキテクチャ センター](/azure/architecture)、 [Microsoft Learn](/learn)、およびその他の [Microsoft ドキュメント](/) のガイダンスを適用する方法を説明します。 次の表に、それぞれの新しい体験の概要ページへのリンクを示します。
+
+| Journey | 説明 |
 |--|--|
-| [ビジネス成果の概要](../strategy/business-outcomes/index.md) | ビジネス成果の各カテゴリの概要を更新し、クラウドの経済性に関するケース スタディへの参照を追加し、組織において関連するビジネス目標を実現する方法を示しています。 具体的なケース スタディで更新された概要は以下のとおりです。 <br><br> <li> [財務上の結果](../strategy/business-outcomes/fiscal-outcomes.md) <li> [機敏性成果](../strategy/business-outcomes/agility-outcomes.md) <li> [グローバルなリーチの成果](../strategy/business-outcomes/reach-outcomes.md) <li> [顧客エンゲージメントの成果](../strategy/business-outcomes/engagement-outcomes.md)<li> [パフォーマンスの成果](../strategy/business-outcomes/performance-outcomes.md) <li> [持続可能性の目標](../strategy/business-outcomes/sustainability.md) |
+| [ハイブリッド &nbsp; と &nbsp; マルチクラウド](../scenarios/hybrid/index.md) | ハイブリッド、マルチクラウド、統合された操作をクラウドの導入過程に統合するためのライフサイクル ガイド。 |
+| [最新のコンテナー](../scenarios/aks/index.md) | コンテナーの改革によって、迅速なイノベーションとワークロードの移植性が実現します。 最新のコンテナーをクラウド導入体験に統合する方法を確認します。 |
+| [SAP on Azure](../scenarios/sap/index.md) | このユーザー体験は、OneMigrate (移行シナリオ) コミットメントの一環として、SAP 移行プロセスとその他のメインストリーム移行プロセスの間のギャップを橋渡しとなり、SAP on Azure の大規模な導入を実現します。 |
+
+### <a name="cloud-economics"></a>クラウドの経済性
+
+Microsoft の[クラウド経済プログラム](https://azure.microsoft.com/overview/cloud-economics/)を統合することによって、[戦略手法](../strategy/index.md)を最新の状態に更新するための最初の手順として、フィードバックや教訓を構築します。
+
+ビジネス成果の各カテゴリの概要を更新し、クラウドの経済性に関するケース スタディへの参照を追加し、組織において関連するビジネス目標を実現する方法を示しています。 具体的なケース スタディで更新された概要は以下のとおりです。
+
+- [財務上の結果](../strategy/business-outcomes/fiscal-outcomes.md)
+- [機敏性成果](../strategy/business-outcomes/agility-outcomes.md)
+- [グローバルなリーチの成果](../strategy/business-outcomes/reach-outcomes.md)
+- [顧客エンゲージメントの成果](../strategy/business-outcomes/engagement-outcomes.md)
+- [パフォーマンスの成果](../strategy/business-outcomes/performance-outcomes.md)
+- [持続可能性の目標](../strategy/business-outcomes/sustainability.md)
+
+### <a name="enterprise-scale-updates"></a>エンタープライズ規模の更新プログラム
+
+[ネットワークトポロジと接続](../ready/azure-best-practices/define-an-azure-network-topology.md)の重要なデザイン領域には、ネットワーク設計の個々のコンポーネントの合理化を簡略化する新しい記事が含まれています。 これらの設計の側面には、Oracle クラウド インフラストラクチャなどの [マルチクラウド プロバイダーへの接続](../ready/azure-best-practices/connectivity-to-other-providers.md) に関するガイダンスが含まれるようになりました。 また、新しいエンタープライズ規模の Terraform モジュールもリリースされており、Microsoft が Azure ランディング ゾーンの構成に対するオープンソース アプローチへの継続的な投資を示すことができます。
+
+### <a name="anti-patterns"></a>アンチ パターン
+
+企業はクラウド導入の取り組みにおいて重要な手順を見逃しがちです。 新しい [クラウド導入のアンチパターン](../antipatterns/antipatterns-to-avoid.md) ガイダンスでは、お客様の一般的な問題点、その問題の原因となったスキップされる手順、回復の最速パスを取り上げています。 アンチパターンは各方法に沿って配布されますが、フレームワークの作業の開始セクションには上位 10 個のリストがあります。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
 導入とイノベーションを促進するため、GitHub の使用に関する新しい情報を追加し、機械学習のベスト プラクティスを更新しました。 最適なランディング ゾーンを選択するのに役立つ新しい記事と動画を公開しました。
 
-| [GitHub によるクラウド導入の促進](../scenarios/github-velocity/index.md) | この記事では、クラウドの導入を促進するために、オープンソース アセット、共同開発環境、自動化およびセキュリティ機能を持つ GitHub を活用する利点について説明します。 | | [機械学習のベスト プラクティス](../innovate/best-practices/machine-learning.md) | Machine Learning のベスト プラクティスのガイダンスを更新して拡張しました。 ベスト プラクティスには次のものが含まれます。 <br><br> <li> [機械学習運用のアプローチ方法](../innovate/best-practices/how-to-approach-mlops.md)および [MLOps プロセス](../innovate/best-practices/mlops-process.md) <li> [機械学習のセキュリティ](../innovate/best-practices/ml-security.md) <li> [機械学習推論とデプロイ](../innovate/best-practices/ml-deployment-inference.md) <li> [モデルに合ったコンピューティング インスタンスの決定](../innovate/best-practices/dev-train-comp-instances-for-ml.md) <li> [機械学習ワークスペースの設定](../innovate/best-practices/set-up-ml-workspaces.md) <li> [責任ある信頼された AI](../innovate/best-practices/trusted-ai.md) | | [ランディング ゾーンの選択オプション](../ready/landing-zone/choose-landing-zone-option.md) | Microsoft では、ランディング ゾーンを実装するオプションとして、"*小規模から始めて拡張する*" と "*エンタープライズ規模*" の 2 つを提供しています。 この新しい記事を使用して、両方のオプションを確認し、組織に適したアプローチを選択します。 |
+| [アーティクル] | 説明 |
+|--|--|
+| [GitHub&nbsp; による&nbsp;クラウド&nbsp;導入&nbsp;の促進](../scenarios/github-velocity/index.md) | この記事では、クラウドの導入を促進するために、オープンソース アセット、共同開発環境、自動化およびセキュリティ機能を持つ GitHub を活用する利点について説明します。 |
+| [機械学習のベストプラクティス](../innovate/best-practices/machine-learning.md) | Machine Learning のベスト プラクティスのガイダンスを更新して拡張しました。 ベスト プラクティスには次のものが含まれます。 <br><br> <li> [機械学習運用のアプローチ方法](../innovate/best-practices/how-to-approach-mlops.md)および [MLOps プロセス](../innovate/best-practices/mlops-process.md) <li> [機械学習のセキュリティ](../innovate/best-practices/ml-security.md) <li> [機械学習推論とデプロイ](../innovate/best-practices/ml-deployment-inference.md) <li> [モデルに合ったコンピューティング インスタンスの決定](../innovate/best-practices/dev-train-comp-instances-for-ml.md) <li> [機械学習ワークスペースの設定](../innovate/best-practices/set-up-ml-workspaces.md) <li> [責任ある信頼された AI](../innovate/best-practices/trusted-ai.md) |
+| [ランディング&nbsp; &nbsp;ゾーンの&nbsp;オプションを&nbsp;選択する](../ready/landing-zone/choose-landing-zone-option.md) | Microsoft では、ランディング ゾーンを実装する 2 つのオプションを提供しています。*小規模から始めて拡張する* と *エンタープライズ規模* です。 この新しい記事を使用して、両方のオプションを確認し、組織に適したアプローチを選択します。 |
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -107,7 +138,7 @@ Azure ランディング ゾーンの背後にある概念と実装オプショ�
 
 **移行シナリオ:**
 
-新しい[移行シナリオ概要ページ](../scenarios/index.md)では、移行手法を基に、Azure の "#OneMigrate" ソリューションがいかに実現されているかを紹介しています。 ファーストおよびサード パーティの複数のシナリオを Azure に移行するためのアプローチが紹介されています。 これには、次に示す 3 つの新しい移行シナリオが含まれます。
+新しい[移行シナリオ概要ページ](../scenarios/index.md)では、移行手法を基に、Azure の #OneMigrate ソリューションがいかに実現されているかを紹介しています。 ファーストおよびサード パーティの複数のシナリオを Azure に移行するためのアプローチが紹介されています。 これには、次に示す新しい移行シナリオが含まれます。
 
 | [アーティクル] | 説明 |
 |--|--|

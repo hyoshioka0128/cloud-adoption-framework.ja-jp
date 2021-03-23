@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: internal
-ms.openlocfilehash: 4fc396611a849769a241fbb07c655f75bcc1d65c
-ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
+ms.openlocfilehash: 10aeeef858817ea17aeab6795d5ed1f2bdf81aa8
+ms.sourcegitcommit: 9475c71873d5e6c9fd523d476f536243cdd8b41c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102208882"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103234494"
 ---
 # <a name="best-practices-for-costing-and-sizing-resources-hosted-in-azure"></a>Azure でホストされるリソースの料金計算とサイズ設定のベスト プラクティス
 

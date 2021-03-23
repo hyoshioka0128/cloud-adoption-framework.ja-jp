@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: internal
-ms.openlocfilehash: a8b0ac0c446e7a163bae5f4fe5c120671c420601
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: d9f9ce3f2ba52ff6447ccf66c75cb271b7e4410a
+ms.sourcegitcommit: 9475c71873d5e6c9fd523d476f536243cdd8b41c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102112366"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103234460"
 ---
 # <a name="conduct-a-cloud-policy-review"></a>クラウド ポリシーの確認を実施する
 

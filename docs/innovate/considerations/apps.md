@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal
-ms.openlocfilehash: 1cb3e460efa4f49f2c2d0146835aed19aa7e4aba
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 58b67847b4c7773d6d137ebed5868a5dba0d407a
+ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102115018"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103439697"
 ---
 # <a name="engage-via-applications"></a>アプリケーションを介したエンゲージ
 
@@ -36,7 +36,7 @@ ms.locfileid: "102115018"
 
 プロ開発者はイノベーションに欠かせない存在です。 仮説が大筋で正しいことが証明されたら、大規模なソリューションを安定させて準備するためにプロ開発者が必要とされます。 この記事で述べる原則のほとんどには、プロ開発者のサポートが必要です。 残念ながら、現在のトレンドでは、開発者よりプロ開発者の需要が多いことが示されています。 さらに、プロフェッショナル開発が要求されれば、イノベーションのコストとペースはいっそう不十分になる可能性があります。 これらの課題に対し、市民開発者は、開発作業を拡大し、初期仮説の検証を迅速化する手段を提供します。
 
-アプリケーション インターフェイスのための [Power Apps](/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](/powerapps/use-ai-builder)、ワークフローのための [Microsoft Power Automate](/power-automate/)、データ利用のための [Power BI](/power-bi/) といったツールを使用して初期仮説を検証できる場合、市民開発者を利用することが実用的で効果的な可能性があります。
+アプリケーション インターフェイスのための [Power Apps](/powerapps/powerapps-overview)、プロセスと予測のための [AI Builder](/powerapps/use-ai-builder)、ワークフローのための [ Power Automate](/power-automate/)、データ利用のための [Power BI](/power-bi/) といったツールを使用して初期仮説を検証できる場合、市民開発者を利用することが実用的で効果的な可能性があります。
 
 > [!NOTE]
 > 仮説のテストを市民開発者に頼るときは、プロ開発者がサポート、レビュー、ガイダンスを提供できるようにしておくことが推奨されます。 仮説が大筋で検証されたら、より堅牢なプログラミング モデルにアプリケーションを移行するプロセスによって、イノベーションの成果をさらに得られるようになります。 初期のプロセス定義にプロ開発者が関与すれば、後々の移行をよりクリーンにできる可能性があります。
