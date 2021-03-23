@@ -9,7 +9,7 @@ items:
     href: get-started/whats-new.md
   - name: 導入体験
     items:
-      - name: 開始するには
+      - name: はじめに
         items:
           - name: 概要
             href: get-started/index.md
@@ -65,6 +65,8 @@ items:
             href: scenarios/hybrid/index.md
           - name: 最新のコンテナー
             href: scenarios/aks/index.md
+          - name: SAP
+            href: scenarios/sap/index.md
       - name: 回避すべきアンチパターン
         href: antipatterns/antipatterns-to-avoid.md
   - name: 戦略
