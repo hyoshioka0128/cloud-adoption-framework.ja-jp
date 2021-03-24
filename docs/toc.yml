@@ -233,7 +233,7 @@ items:
                 href: ready/enterprise-scale/index.md
               - name: エンタープライズ規模のランディング ゾーンを実装する
                 href: ready/enterprise-scale/implementation.md
-              - name: アーキテクチャ
+              - name: Architecture
                 href: ready/enterprise-scale/architecture.md
               - name: 設計原則
                 href: ready/enterprise-scale/design-principles.md
@@ -1485,6 +1485,8 @@ items:
                 href: manage/monitor/index.md
               - name: クラウド監視のモデル
                 href: manage/monitor/cloud-models-monitor-overview.md
+              - name: 可観測性
+                href: manage/monitor/observability.md
               - name: データ コレクション
                 href: manage/monitor/data-collection.md
               - name: アラート

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 629f4d0e9c1d675941e91a4fe75c3ae511effb91
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: dd52a06b5626abdb0d70cfaa7328a62dedb8441d
+ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117515"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674327"
 ---
 # <a name="cloud-operation-and-management-antipatterns"></a>クラウドの操作と管理のアンチパターン
 
@@ -29,10 +29,10 @@ IT ツールを最新式にすると、退屈な仕事を社員から解放し�
 
 ### <a name="preferred-outcome-measure-success-with-business-outcomes"></a>推奨される結果: ビジネス上の成果で成功を測定する
 
-テクノロジと事業目標の足並みを揃えるため、望ましい成果を、両方の領域の指導者に共同で定義してもらいます。 こうした成果と目標が SMART (具体的、測定可能、達成可能、合理的、時間制約あり、の略) であるようにします。 成果と目標が、確実にテクノロジとビジネスに影響を与えるようにします。 [ビジネス内で適切なコミットメントを判断する](/azure/cloud-adoption-framework/manage/considerations/commitment)場合に、Microsoft Cloud Adoption Framework for Azure が役立ちます。
+テクノロジと事業目標の足並みを揃えるため、望ましい成果を、両方の領域の指導者に共同で定義してもらいます。 こうした成果と目標が SMART (具体的、測定可能、達成可能、合理的、時間制約あり、の略) であるようにします。 成果と目標が、確実にテクノロジとビジネスに影響を与えるようにします。 [ビジネス内で適切なコミットメントを判断する](../manage/considerations/commitment.md)場合に、Microsoft Cloud Adoption Framework for Azure が役立ちます。
 
 単純なテクノロジだけの成果 (展開の高速化やパイプラインの構成など) で成功を測らないようにします。 そうではなく、テクノロジとビジネスの成果を利用してください。 このタスクでサポートが必要であれば、「[開発者のベロシティ](https://azure.microsoft.com/overview/developer-velocity/)」を参照してください。
 
 ## <a name="next-step"></a>次の手順
 
-- [クラウド管理におけるビジネス コミットメント](/azure/cloud-adoption-framework/manage/considerations/commitment)
+- [クラウド管理におけるビジネス コミットメント](../manage/considerations/commitment.md)

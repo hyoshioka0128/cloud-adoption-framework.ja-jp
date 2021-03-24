@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: 1686da4d10bd708c98344650901b4082e154c74a
-ms.sourcegitcommit: 4f7d5c7207487474dc0c1f497db3ff8705395bbd
+ms.openlocfilehash: a414d36fccec0f16f9ea20d64e1ff9a74e99514d
+ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102603982"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674293"
 ---
 # <a name="cloud-migration-antipatterns"></a>クラウド移行のアンチパターン
 
@@ -35,7 +35,7 @@ ms.locfileid: "102603982"
 
 ### <a name="preferred-outcome-establish-security-and-compliance-guardrails"></a>推奨される結果: セキュリティとコンプライアンスのガードレールを確立する
 
-ワークロードをクラウドに移行する前に、セキュリティとコンプライアンスのガードレールを配置します。 これらのガードレールがあれば、ワークロードでセキュリティとコンプライアンスの要件に確実に従うようになります。 クラウド ガバナンスとクラウド セキュリティ チームが、[Azure ランディング ゾーン](/azure/cloud-adoption-framework/ready/landing-zone/)内にガードレールを提供するようにします。 特にハイブリッド ワークロードの場合は、ガードレールについて IT チームに確認してください。 高速で一貫性のあるコンプライアンスに準拠した安全な方法で作業できるように、ワークロード チームをサポートするガードレールを定義するのに役立つ「[クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン アーキテクチャ](/azure/cloud-adoption-framework/ready/enterprise-scale/architecture)」を参照してください。
+ワークロードをクラウドに移行する前に、セキュリティとコンプライアンスのガードレールを配置します。 これらのガードレールがあれば、ワークロードでセキュリティとコンプライアンスの要件に確実に従うようになります。 クラウド ガバナンスとクラウド セキュリティ チームが、[Azure ランディング ゾーン](../ready/landing-zone/index.md)内にガードレールを提供するようにします。 特にハイブリッド ワークロードの場合は、ガードレールについて IT チームに確認してください。 高速で一貫性のあるコンプライアンスに準拠した安全な方法で作業できるように、ワークロード チームをサポートするガードレールを定義するのに役立つ「[クラウド導入フレームワークのエンタープライズ規模ランディング ゾーン アーキテクチャ](../ready/enterprise-scale/architecture.md)」を参照してください。
 
 ## <a name="antipattern-migrate-modernize-or-innovate-without-an-assessment"></a>アンチパターン: 評価せずに移行、最新化、またはイノベーションを行う
 
@@ -47,11 +47,11 @@ ms.locfileid: "102603982"
 
 ### <a name="preferred-outcome-assess-infrastructure-before-migrating-or-modernizing"></a>推奨される結果: 移行または最新化の前にインフラストラクチャを評価する
 
-大規模な移行または最新化プロジェクトの場合は、移行を開始する前にインフラストラクチャの評価を行います。 この評価は、依存関係と互換性の問題を特定するのに役立ちます。 [移行のベスト プラクティス](/azure/cloud-adoption-framework/migrate/azure-best-practices/)に関して [Azure 向けの Microsoft Cloud 導入フレームワーク](/azure/cloud-adoption-framework/overview)で提供される詳細情報については、[Azure の移行ガイド](/azure/cloud-adoption-framework/migrate/azure-migration-guide/)を参照してください。
+大規模な移行または最新化プロジェクトの場合は、移行を開始する前にインフラストラクチャの評価を行います。 この評価は、依存関係と互換性の問題を特定するのに役立ちます。 [移行のベスト プラクティス](../migrate/azure-best-practices/index.md)に関して [Azure 向けの Microsoft Cloud 導入フレームワーク](../overview.md)で提供される詳細情報については、[Azure の移行ガイド](../migrate/azure-migration-guide/index.md)を参照してください。
 
-最新化プロジェクトでは、追加のアプリケーション評価を使用して、コードのアンチパターン、互換性の問題、および技術的負債を特定します。 最新化の側面の詳細については、「[Azure へのアプリケーション移行例の概要](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-overview)」を参照してください。
+最新化プロジェクトでは、追加のアプリケーション評価を使用して、コードのアンチパターン、互換性の問題、および技術的負債を特定します。 最新化の側面の詳細については、「[Azure へのアプリケーション移行例の概要](../migrate/azure-best-practices/contoso-migration-overview.md)」を参照してください。
 
-イノベーション プロジェクトについては、「[Azure の革新的なソリューションのガイドの概要](/azure/cloud-adoption-framework/innovate/innovation-guide/)」を参照してください。これは、革新的なクラウド ソリューションを計画および開発するのに適した方法を特定するのに役立ちます。
+イノベーション プロジェクトについては、「[Azure の革新的なソリューションのガイドの概要](../innovate/innovation-guide/index.md)」を参照してください。これは、革新的なクラウド ソリューションを計画および開発するのに適した方法を特定するのに役立ちます。
 
 ミッション クリティカル ワークロードまたはアーキテクチャの変更が必要なワークロードの場合は、[Well-Architected フレームワーク](/azure/architecture/framework)または[アーキテクチャ デザイン セッション (ADS)](/azure/architecture/serverless-quest/ads) を使用すると、企業内でスケーリングできる高品質で堅牢なアーキテクチャを設計、構築、デプロイするのに役立ちます。 ADS ホワイトボードを使用して、ソリューションの検出、構想、計画を行います。
 
@@ -81,6 +81,6 @@ Azure に移行する前に、さまざまな職務を分離し、異なる環�
 
 ## <a name="next-steps"></a>次のステップ
 
-- [Azure 移行ガイドの概要](/azure/cloud-adoption-framework/migrate/azure-migration-guide/)
-- [Azure クラウド移行のベスト プラクティスのチェックリスト](/azure/cloud-adoption-framework/migrate/azure-best-practices/)
+- [Azure 移行ガイドの概要](../migrate/azure-migration-guide/index.md)
+- [Azure クラウド移行のベスト プラクティスのチェックリスト](../migrate/azure-best-practices/index.md)
 - [管理グループとサブスクリプションの組織](../ready/enterprise-scale/management-group-and-subscription-organization.md)

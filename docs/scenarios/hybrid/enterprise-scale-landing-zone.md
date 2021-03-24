@@ -7,12 +7,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 698fa8ed9569755df0349bbd8c7c77021d295000
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 894383ea615d756a726be6281ff6fb5f44cd5aa2
+ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102116361"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674344"
 ---
 # <a name="enterprise-scale-support-for-hybrid-and-multicloud"></a>ハイブリッドとマルチクラウドに対するエンタープライズ規模のサポート
   
@@ -61,7 +61,7 @@ Azure のクラウド導入フレームワークにおけるエンタープラ�
 
 クラウド導入フレームワークには、Azure に外部環境と接続するアーキテクチャを開発する場合の特定の指針があります。 [外部の場所からのイングレスおよびエグレス用に、ハブやスポークなどのパターンを使用して、ランディング ゾーンを作成することです。](../../ready/enterprise-scale/implementation.md)
 
-たとえば、[こちらのガイダンスに従い](../../ready/azure-best-practices/connectivity-to-other-cloud-providers.md)、他のクラウド環境との接続専用のランディング ゾーン アーキテクチャを構築します。
+たとえば、[こちらのガイダンスに従い](../../ready/azure-best-practices/connectivity-to-other-providers.md)、他のクラウド環境との接続専用のランディング ゾーン アーキテクチャを構築します。
 
 ## <a name="network"></a>ネットワーク
 
@@ -82,18 +82,18 @@ Azure には、ユーザーの操作性を簡略化する、オンプレミス�
 
 ハイブリッドで ID を使用するには、組織で Azure Active Directory の次の 3 つのアプローチを検討する必要があります。
 
-- [パスワード ハッシュの同期 (PHS)](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-phs)
-- [パススルー認証 (PTA)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta)
-- [フェデレーション (AD FS)](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed)
+- [パスワード ハッシュの同期 (PHS)](/azure/active-directory/hybrid/whatis-phs)
+- [パススルー認証 (PTA)](/azure/active-directory/hybrid/how-to-connect-pta)
+- [フェデレーション (AD FS)](/azure/active-directory/hybrid/whatis-fed)
 
-ハイブリッド環境での ID モデルの計画の詳細については、[こちらをご確認](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)ください。
+ハイブリッド環境での ID モデルの計画の詳細については、[こちらをご確認](/azure/active-directory/hybrid/whatis-hybrid-identity)ください。
 
 ## <a name="governance"></a>ガバナンス
 
 インフラストラクチャとアプリケーションが複数の場所で拡大されると、ガバナンスの標準の維持がさらに複雑になる場合があります。
 ハイブリッドを計画する場合、ワークロードのスケールアウトに伴い、適したパターンを確定するために、ガバナンス ツールとプロセスも一元化する必要があります。
 
-[クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ](../../ready/enterprise-scale/architecture.md)には、リソースを論理的にグループ化するために管理グループを構造化して使用できる、[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) と[ロールベースのアクセス制御 (RBAC)](../../ready/azure-setup-guide/manage-access.md) のデプロイを標準化するパターンが含まれます。
+[クラウド導入フレームワークのエンタープライズ規模のランディング ゾーン アーキテクチャ](../../ready/enterprise-scale/architecture.md)には、リソースを論理的にグループ化するために管理グループを構造化して使用できる、[Azure Policy](/azure/governance/policy/overview) と[ロールベースのアクセス制御 (RBAC)](../../ready/azure-setup-guide/manage-access.md) のデプロイを標準化するパターンが含まれます。
 これらのパターンは、Azure Arc などのテクノロジを使用して拡張できます。詳細については、以下で詳しく説明します。
 
 ## <a name="management"></a>管理

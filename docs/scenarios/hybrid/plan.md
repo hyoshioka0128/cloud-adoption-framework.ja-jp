@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: e2e-hybrid
-ms.openlocfilehash: 3c63d2a2517f1650a2cdd6bc4cd416f307a15218
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: e4511cab3ab8266e7d4ab4c434aaf28c87da3207
+ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102116378"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674361"
 ---
 # <a name="plan-for-hybrid-and-multicloud"></a>ハイブリッドおよびマルチクラウドの計画
 
@@ -158,7 +158,7 @@ Azure Arc によって、オンプレミス、エッジ、マルチクラウド�
 
 ## <a name="hybrid-and-multicloud-readiness-plan"></a>ハイブリッドおよびマルチクラウドの準備計画
 
-このチームが作業を開始する前に必要とする特定スキルや特別なトレーニングがありますか? ハイブリッドおよびマルチクラウドで移行するときの準備フェーズのための準備にあたり、組織的および技術的な準備にスキルを追加する目的で[スキル準備パス](/azure/cloud-adoption-framework/ready/suggested-skills)を検討してください。
+このチームが作業を開始する前に必要とする特定スキルや特別なトレーニングがありますか? ハイブリッドおよびマルチクラウドで移行するときの準備フェーズのための準備にあたり、組織的および技術的な準備にスキルを追加する目的で[スキル準備パス](../../ready/suggested-skills.md)を検討してください。
 
 ## <a name="next-step-review-your-environment-or-azure-landing-zone"></a>次のステップ: 環境または Azure ランディング ゾーンを確認する
 

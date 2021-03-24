@@ -7,12 +7,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 12ca9ad27af872e64d4cef1a90a99c04f5c21c87
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d635a4d535b1fa09267224ff8fa00946f199849c
+ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801314"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674412"
 ---
 # <a name="identity-and-access-management-for-azure-kubernetes-service-aks-enterprise-scale-scenario"></a>Azure Kubernetes Service (AKS) のための ID およびアクセス管理のエンタープライズ規模のシナリオ
 
@@ -36,11 +36,11 @@ ms.locfileid: "101801314"
 ## <a name="design-recommendations"></a>設計の推奨事項
 
 - **クラスター ID**
-  - AKS クラスターに独自の[マネージド ID](https://aka.ms/aks/mi) を使用します。
+  - AKS クラスターに独自の[マネージド ID](/azure/aks/use-managed-identity) を使用します。
   - クラスター マネージド ID に必要なアクセス許可の管理を簡略化するには、AKS ランディング ゾーン用のカスタム Azure RBAC ロールを定義します。
 - **クラスターへのアクセス**
   - 構成およびシークレットへのアクセスを保護するために[特権を制限](/azure/aks/azure-ad-rbac)し、管理者特権の付与を最小限に抑えるには、Azure AD で Kubernetes RBAC を使用します。
-  - 認証やオペレーターおよび開発者のアクセスに Azure AD を使用するには、[AKS マネージド Azure AD 統合](https://aka.ms/aks/managed-aad)を使用します。
+  - 認証やオペレーターおよび開発者のアクセスに Azure AD を使用するには、[AKS マネージド Azure AD 統合](/azure/aks/managed-aad)を使用します。
 - Kubernetes で、必要な RBAC ロールとロール バインディングを定義します。
   - サイト信頼性エンジニアリング (SRE)、SecOps、開発者のアクセスのために、Azure AD グループに対して [Kubernetes のロールとロール バインディング](/azure/aks/concepts-identity#kubernetes-role-based-access-control-kubernetes-rbac)を使用します。
   - SRE のフル アクセスは、必要に応じてジャストインタイムに付与する必要があります。 [Azure AD の Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) と ID およびアクセス管理を[エンタープライズ規模](../../ready/enterprise-scale/identity-and-access-management.md)で使用します。

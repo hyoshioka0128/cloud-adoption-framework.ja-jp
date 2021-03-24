@@ -7,12 +7,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e8c6d6074e075b6804038269dfb5f570dbe7488c
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 07000d7db80567595317112a4f30f1ff86c7fcad
+ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102112876"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674395"
 ---
 # <a name="manage-modern-container-solutions-clusters"></a>最新のコンテナー ソリューションのクラスターを管理する
 
@@ -102,7 +102,7 @@ AKS ノードは本質的に一時的であるため、個別に復元できる�
 
 上記の「プラットフォームの運用」セクションでは、AKS クラスターを管理する場合の一般的な会話を示しています。 Kubernetes クラスターは、一元的に管理されるテクノロジ プラットフォームですか? あるいは、各ワークロードを所有するチームで管理されるべきワークロード ツールですか? その質問は、組織によって異なります。 ほとんどの組織で変わらず見られることとして、コンテナーと AKS が、ワークロード チームに各ワークロードを運用する方法でのより高い柔軟性を提供するように設計されており、アプリケーションの所有者や顧客にメリットを与えるためにこれらのワークロードがそれぞれのアーキテクチャで使用する特定の機能を提供するという点があります。
 
-ワークロード運用は、既存の運用ベースラインとプラットフォーム固有の運用に基づいて構築できます。 また、完全に分散化されたワークロード運用を使用して AKS クラスターを安全に運用することもできます。 どちらの場合も、特定のワークロードの特定の成果に重点を置くために運用を昇格させる必要がある場合は、[Azure Well-Architected Framework](/azure/architecture/framework/) と [Microsoft Azure Well-Architected Review](https://aka.ms/architecture/review) を使用して、ワークロードのために使用する運用プロセスとツールの種類に関してきわめて固有の方法を選択できます。
+ワークロード運用は、既存の運用ベースラインとプラットフォーム固有の運用に基づいて構築できます。 また、完全に分散化されたワークロード運用を使用して AKS クラスターを安全に運用することもできます。 どちらの場合も、特定のワークロードの特定の成果に重点を置くために運用を昇格させる必要がある場合は、[Azure Well-Architected Framework](/azure/architecture/framework/) と [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review&mode=pre-assessment) を使用して、ワークロードのために使用する運用プロセスとツールの種類に関してきわめて固有の方法を選択できます。
 
 ## <a name="next-step-your-next-migration-iteration"></a>次のステップ: 次の移行の繰り返し
 
@@ -111,7 +111,7 @@ AKS ノードは本質的に一時的であるため、個別に復元できる�
 - [最新のコンテナーの戦略](./strategy.md)
 - [最新のコンテナーを計画する](./plan.md)
 - [環境または Azure ランディング ゾーンを確認する](./ready.md)
-- [ワークロードを最新のコンテナーに移行する](./migrate.md)
+- [最新のコンテナーへのワークロードの移行](./migrate.md)
 - [最新のコンテナー ソリューションを使用したイノベーション](/azure/architecture/reference-architectures/containers/aks-start-here?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 - [最新のコンテナー ソリューションのガバナンス](./govern.md)
-- [最新のコンテナー ソリューションを管理する](./manage.md)
+- [最新のコンテナー ソリューションの管理](./manage.md)

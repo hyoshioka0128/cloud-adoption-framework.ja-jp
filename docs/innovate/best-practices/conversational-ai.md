@@ -10,10 +10,10 @@ ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: ai エージェント, ai エージェント, bot フレームワーク, 会話インターフェイス, ボットのビルド, azure bot service
 ms.openlocfilehash: 716419e5579641e99a3c73efb7a2cd65275192df
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/23/2021
 ms.locfileid: "101789118"
 ---
 <!-- docutune:ignore "natural language understanding" -->

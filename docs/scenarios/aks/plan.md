@@ -7,12 +7,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 03e946b343661d76c7203dc1b26d93e8ff3729a6
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 5665aece1aeedee7f398e92bb844cab5c2d5ee83
+ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800898"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104674310"
 ---
 # <a name="plan-for-modern-containers"></a>最新のコンテナーを計画する
 
@@ -64,9 +64,9 @@ ms.locfileid: "101800898"
 
 クラウド導入スキルアップ計画に加えて、クラウド導入チームは、計画を実行する前に、コンテナーと Kubernetes に関連するスキル開発が必要になる場合があります。
 
-- [Kubernetes の基本について学ぶ](https://aka.ms/LearnAKS)
+- [Kubernetes の基本について学ぶ](/azure/aks/concepts-clusters-workloads)
 - [コンテナーについて学ぶ](https://azure.microsoft.com/product-categories/containers/)
-- [Kubernetes のベスト プラクティスについて理解を深める](https://aka.ms/aks/bestpractices)
+- [Kubernetes のベスト プラクティスについて理解を深める](/azure/aks/best-practices)
 
 ワークロード チームが移行計画を文書化およびドライランするための時間を確実に割り当てます。 既存のアプリケーションまたは外部システム (このワークロードに依存する依存関係とシステムの両方) を変更し、移行作業をサポートするために柔軟性を高める必要がある場合があります。 これは、運用前の環境と運用環境の両方に当てはまります。
 
