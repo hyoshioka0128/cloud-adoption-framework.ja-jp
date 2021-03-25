@@ -3,17 +3,17 @@ title: クラウド監視ガイド
 description: 各クラウド デプロイ モデルを監視するための Azure Monitor、System Center Operations Manager、および推奨される戦略について説明します。
 author: MGoedtel
 ms.author: brblanch
-ms.date: 10/05/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: b213f150c975c820b74c8da2b7045e8a5fc374c9
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: b9f3ce43adbf6bdaccce242532bc82dfb51b8bac
+ms.sourcegitcommit: a4b5340bf75c70d9f7d9f5617dfca1dcc0eebada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015878"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104891034"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>クラウド監視ガイド: はじめに
 
@@ -48,7 +48,9 @@ Azure Monitor と System Center Operations Manager に精通していない場�
 この記事はシリーズの一部です。 次の記事は、次の順で、まとめて読まれるように作られています。
 
 - はじめに (この記事)
-- [クラウド デプロイ モデルの監視戦略](./cloud-models-monitor-overview.md)
+- [クラウド監視戦略](../../strategy/monitoring-strategy.md)
+- [クラウド デプロイ モデルの監視プラットフォーム戦略](./cloud-models-monitor-overview.md)
+- [可観測性](./observability.md)
 - [適切なデータの収集](./data-collection.md)
 - [アラート](./alerting.md)
 
@@ -64,7 +66,7 @@ Azure、お客様の企業ネットワーク、その他のクラウド プロ�
 - [Azure Logic Apps](/azure/logic-apps/logic-apps-overview)
 - [Azure Event Hubs](/azure/event-hubs/event-hubs-about)
 
-このガイドの最初のバージョンでは、現在の監視プラットフォームについて説明します。Azure Monitor と System Center Operations Manager。 また、各クラウド デプロイ モデルを監視するための推奨される戦略についても概説します。 また、データ収集とアラートをはじめとする、監視に関する推奨事項の最初のセットも含まれています。
+このガイドの最初のバージョンでは、現在の監視プラットフォームについて説明します。Azure Monitor と System Center Operations Manager。 また、各クラウド デプロイ モデルを監視するための推奨される戦略についても概説します。 さらに、データ収集、監視、アラートをはじめとする、監視に関する推奨事項の最初のセットも含まれています。
 
 ## <a name="next-steps"></a>次のステップ
 
