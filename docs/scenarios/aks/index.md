@@ -7,12 +7,12 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1a9cb60e3579589c0d6c6399da0dd7c3f656ebbe
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 8296db630024cf5439d5eb1bbcf8e4f59510df7e
+ms.sourcegitcommit: bf73a3f16001cd7c5ef74d9f6de4292f9bfd62e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101793117"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105099606"
 ---
 # <a name="introduction-to-the-modern-containers-adoption-scenario"></a>最新のコンテナーの導入シナリオの概要
 
@@ -23,7 +23,7 @@ ms.locfileid: "101793117"
 - **コンテナー化されたソリューション:** コンテナーは、技術資産と基になるインフラストラクチャの間に抽象レイヤーを作成します。 組織は、ベンダーによるロックインを削減し、ワークロードの移植性を高めるために、全体的な戦略にコンテナーを含めます。
 - **Kubernetes を使用したコンテナーの管理:** Kubernetes は、コンテナー化されたアプリケーションの管理とデプロイ、コンピューティング密度の管理、およびワークロードの高可用性のニーズの記述を行うためのコントロール プレーンを提供します。
 
-この記事シリーズでは、コンテナーとコンテナーの管理を、クラウドの戦略、計画、導入、運用に統合する方法について説明します。
+この記事シリーズでは、クラウドへの移行における戦略、計画、導入、運用の各段階に、コンテナーとコンテナーの管理を統合する方法について説明します。
 
 ## <a name="components-of-the-scenario"></a>シナリオのコンポーネント
 
@@ -52,7 +52,7 @@ ms.locfileid: "101793117"
 次の記事の一覧では、クラウド導入のシナリオを成功させるために役立つクラウド導入の取り組みの特定のポイントについて説明します。
 
 - [最新のコンテナーの戦略](./strategy.md)
-- [最新のコンテナーの計画](./plan.md)
+- [最新のコンテナーを計画する](./plan.md)
 - [環境または Azure ランディング ゾーンを確認する](./ready.md)
 - [最新のコンテナーへのワークロードの移行](./migrate.md)
 - [最新のコンテナー ソリューションを使用したイノベーション](/azure/architecture/reference-architectures/containers/aks-start-here?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
