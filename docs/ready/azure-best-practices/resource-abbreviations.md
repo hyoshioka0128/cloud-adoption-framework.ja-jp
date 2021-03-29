@@ -76,7 +76,7 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 | コンテナー インスタンス | `ci-` |
 | AKS クラスター | `aks-` |
 | Service Fabric クラスター | `sf-` |
-| App Service 環境 | `ase-` |
+| App Service Environment | `ase-` |
 | App Service プラン | `plan-` |
 | Web アプリ | `app-` |
 | 静的 Web アプリ | `stapp` |
