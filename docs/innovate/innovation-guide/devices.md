@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC, seo-caf-innovate
 keywords: 接続されているデバイス, ユビキタス コンピューティング, デバイス管理, エッジ デバイス
-ms.openlocfilehash: 2d098a907ed0b1ce0865a0e52b51b566999d1d15
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 4c63f1826bbf342d909fd856da41c9d575840ddc
+ms.sourcegitcommit: a4b5340bf75c70d9f7d9f5617dfca1dcc0eebada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101787605"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104891017"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -52,8 +52,9 @@ Azure のお客様は、接続されたシステムとデバイスから成る�
 
 ### <a name="learn-more"></a>詳細情報
 
-- [Azure IoT Hub](/azure/iot-hub/)
-- [Azure IoT Hub Device Provisioning Service (DPS)](/azure/iot-dps/)
+- [Azure IoT Hub](/azure/iot-hub)
+- [Azure IoT Hub Device Provisioning Service (DPS)](/azure/iot-dps)
+- [最新の IoT Azure DevOps プロジェクトを利用して、作業項目の管理を支援する](https://azuredevopsdemogenerator.azurewebsites.net/?name=modiot)
 
 ::: zone-end
 
