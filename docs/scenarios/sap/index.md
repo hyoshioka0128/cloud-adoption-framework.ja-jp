@@ -7,13 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.custom: think-tank
-ms.openlocfilehash: 3db8ca65a7b621e6be916f82d97ef2f9d4d1ed55
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: e4e4cc50153aeea0d70c100307336089bc641d1f
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103442548"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734316"
 ---
 # <a name="introduction-to-an-sap-adoption-scenario"></a>SAP 導入シナリオの概要
 

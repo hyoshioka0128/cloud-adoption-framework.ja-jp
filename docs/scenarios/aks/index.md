@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8296db630024cf5439d5eb1bbcf8e4f59510df7e
-ms.sourcegitcommit: bf73a3f16001cd7c5ef74d9f6de4292f9bfd62e4
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: 2a55ca5629082952b55d64c576bf131b984969e9
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105099606"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733653"
 ---
 # <a name="introduction-to-the-modern-containers-adoption-scenario"></a>最新のコンテナーの導入シナリオの概要
 
