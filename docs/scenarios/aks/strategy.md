@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ed78eeae296d2a2bb2c80ea6006ef8e92622709e
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: d8ef2161089002aa185da2c54d53eab138b98108
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800096"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734639"
 ---
 # <a name="strategic-impact-of-modern-containers"></a>最新のコンテナーの戦略的影響
 

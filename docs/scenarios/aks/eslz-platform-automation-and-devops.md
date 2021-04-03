@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ff7b2cceab332b76091489a2adb91368ae4251b7
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: af081d354b1d07701360e9355feacef1253acf87
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801053"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733823"
 ---
 # <a name="aks-enterprise-scale-platform-automation-and-devops"></a>エンタープライズ規模の AKS プラットフォームの自動化と DevOps
 

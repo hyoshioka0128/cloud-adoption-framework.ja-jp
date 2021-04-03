@@ -7,12 +7,13 @@ ms.date: 02/18/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fa72f05e479ff56a7163a747ea5cca49c08e7199
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: b63cf54ba0ea5ae9b43a4f26b1461b6ea5abd8a3
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800726"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733772"
 ---
 # <a name="enterprise-scale-business-continuity-and-disaster-recovery-for-azure-kubernetes-service"></a>Azure Kubernetes Service に対するエンタープライズ規模の事業継続とディザスター リカバリー
 

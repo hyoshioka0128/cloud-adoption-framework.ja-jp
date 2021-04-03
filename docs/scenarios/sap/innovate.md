@@ -7,13 +7,13 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: think-tank
-ms.openlocfilehash: 8d2e9d15da44f5f1485c3ea5332de728886d5616
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: 35e53bcea90fb6a84f239e33c3021f036275f106
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103443181"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734554"
 ---
 # <a name="innovate-with-sap-and-azure"></a>SAP と Azure によるイノベーション
 

@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14db2304c724cf9d17652f7b2bbe0d44dca15d1e
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: 44d215c990f1666997d8ea8199b28778e3fe06bd
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801306"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733799"
 ---
 <!-- docutune:casing "HPA" -->
 

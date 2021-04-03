@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ca2e137dec3c9b2e0874003c617f783fb1e8b046
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: 2883b695062064f409a7bfd662d827b763806c88
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801214"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733798"
 ---
 # <a name="management-and-monitoring-for-aks-enterprise-scale-scenario"></a>AKS のエンタープライズ規模のシナリオの管理と監視
 

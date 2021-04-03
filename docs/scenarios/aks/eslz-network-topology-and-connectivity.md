@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d04811ba3f0aa034362cb1683d82074dfd5eb776
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: f847ecf10204871dc54dbba20e743df9f04cb1ca
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102111992"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733891"
 ---
 # <a name="network-topology-and-connectivity-for-azure-kubernetes-service-aks-enterprise-scale-scenario"></a>Azure Kubernetes Service (AKS) のエンタープライズ規模のシナリオのネットワーク トポロジと接続性
 

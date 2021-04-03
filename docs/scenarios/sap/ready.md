@@ -7,13 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: think-tank
-ms.openlocfilehash: 5f45966fa3f37920c6cb594fabe68eba31aa62c4
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: e9d0eacbf0a6347de23b7b3de2816eb190962e30
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103443173"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734282"
 ---
 # <a name="review-your-environment-or-azure-landing-zone-for-an-sap-enterprise-scale-migration"></a>SAP エンタープライズ規模の移行のために環境または Azure ランディング ゾーンを確認する
 

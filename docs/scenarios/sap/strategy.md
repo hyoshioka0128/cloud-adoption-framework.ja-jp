@@ -7,13 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.custom: think-tank
-ms.openlocfilehash: 30188cdc1568a9f55e6c6dd4fd2e9504416ecc6b
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: 4793c963e299ba6cad7800c91697d69b3e6c7564
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103443170"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734299"
 ---
 # <a name="the-strategic-impact-of-sap-in-the-cloud"></a>クラウドでの SAP の戦略的な影響
 

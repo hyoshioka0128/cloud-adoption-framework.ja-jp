@@ -7,13 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: think-tank
-ms.openlocfilehash: ddb240ebab1e605902dc064e887f1e4af59be558
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: 46fbdd8c59cb7eea5fc5a6347e9f71009aedac79
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103443182"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734605"
 ---
 <!-- docutune:casing "Enterprise Edition" SOAR -->
 

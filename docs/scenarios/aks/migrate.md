@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 810a62968a6703e110dfad04a9f6c0256b2109cf
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: 59c27c9ae036944fa373374d373811e22e1c3219
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800099"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734401"
 ---
 # <a name="migrate-workloads-to-modern-containers"></a>最新のコンテナーへのワークロードの移行
 
@@ -56,5 +57,5 @@ ms.locfileid: "101800099"
 以下の記事は、クラウド導入の取り組みにおける特定ポイントでのガイダンスを提供し、クラウド導入シナリオでの成功に役立ちます。
 
 - [最新のコンテナー ソリューションを使用したイノベーション](/azure/architecture/reference-architectures/containers/aks-start-here?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
-- [最新のコンテナー ソリューションの管理](./govern.md)
+- [最新のコンテナー ソリューションのガバナンス](./govern.md)
 - [最新のコンテナー ソリューションの管理](./manage.md)

@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5665aece1aeedee7f398e92bb844cab5c2d5ee83
-ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: 24959657530a7bfe748f4cc79456a402b962595d
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104674310"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734333"
 ---
 # <a name="plan-for-modern-containers"></a>最新のコンテナーを計画する
 

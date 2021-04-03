@@ -7,13 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.custom: think-tank
-ms.openlocfilehash: 06aafcc423cefb16e64fb2720dfe72b8d870bd6d
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: b92352340323a02f1c0173465c001e0b35a5976e
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103443187"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734214"
 ---
 # <a name="migrate-an-sap-platform-to-azure"></a>SAP プラットフォームを Azure に移行する
 

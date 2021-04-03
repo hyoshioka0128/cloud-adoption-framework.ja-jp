@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: a764ac7671eeeea7430b20f48cff223fba554845
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: c6ab8166fdb02ccc90cb4087f86be636d7e1d932
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801281"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733687"
 ---
 <!-- docutune:ignore "public container registry" -->
 

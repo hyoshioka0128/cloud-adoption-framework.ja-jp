@@ -7,13 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.custom: think-tank
-ms.openlocfilehash: fed7db6e993326b242d6c59e39d255e1d9f2fc3b
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: 64b26a889cd6f220bc493aacda14c235d9ae9244
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103443174"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733993"
 ---
 # <a name="plan-for-sap-cloud-adoption-in-azure"></a>Azure での SAP クラウド導入の計画
 

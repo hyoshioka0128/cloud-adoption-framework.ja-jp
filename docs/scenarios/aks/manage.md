@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 07000d7db80567595317112a4f30f1ff86c7fcad
-ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: ae3ebbd707892c92175e7e35fca5965fc81f2eb5
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104674395"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733721"
 ---
 # <a name="manage-modern-container-solutions-clusters"></a>最新のコンテナー ソリューションのクラスターを管理する
 

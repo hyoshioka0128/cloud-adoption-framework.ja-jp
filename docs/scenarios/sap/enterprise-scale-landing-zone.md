@@ -7,13 +7,13 @@ ms.date: 02/15/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: think-tank
-ms.openlocfilehash: ccfc26c34fd3c7d97d2725cad3ac69ce75c1d7fb
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: 6cc81ddf55c9986f2c39ecdbc5ef8fc8dab3356a
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103443221"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734622"
 ---
 # <a name="enterprise-scale-support-for-sap-on-azure-construction-set"></a>SAP on Azure 構築セットのエンタープライズ規模のサポート
 

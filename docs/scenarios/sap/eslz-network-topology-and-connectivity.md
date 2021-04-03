@@ -7,13 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: think-tank
-ms.openlocfilehash: 304d25c93beb683842126227602b374a3e82d8d8
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: 856f9aebd4527c20e24d6b47627a8d378546b35a
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103443198"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734503"
 ---
 # <a name="enterprise-scale-network-topology-and-connectivity-for-an-sap-migration"></a>SAP 移行のエンタープライズ規模のネットワーク トポロジと接続性
 

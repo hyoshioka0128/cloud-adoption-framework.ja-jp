@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ddeeb4518141224cf0f210c208cf80a718f4f3f7
-ms.sourcegitcommit: 3dd5cb5e84df8049ecbd484061e6df16a1914bb5
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: 89729ba99f0871e1fca03b2ead06287ad758c23f
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102515347"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733874"
 ---
 # <a name="construction-set-for-aks-enterprise-scale-scenario"></a>AKS のエンタープライズ規模のシナリオ用の構築セット
 

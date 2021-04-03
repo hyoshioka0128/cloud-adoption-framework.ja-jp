@@ -7,13 +7,13 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.custom: think-tank
-ms.openlocfilehash: 50bc14e7b2588a7ed7486d07654edaf70aab6618
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: 12b786a2462097506a9cf5138cb651d7dc96355e
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103443184"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734588"
 ---
 # <a name="govern-sap"></a>SAP を管理する
 

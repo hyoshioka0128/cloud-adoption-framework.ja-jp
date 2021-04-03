@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f0bf2bdb2cc00ec32f6b56942335343a6b94fa73
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: a4a277ab11c719d55b0cf8e4fc584c64053b9209
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800909"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733840"
 ---
 # <a name="azure-landing-zone-review-for-modern-containers"></a>Azure ランディング ゾーンの最新のコンテナーの確認
 

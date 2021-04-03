@@ -7,13 +7,13 @@ ms.date: 02/11/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: think-tank
-ms.openlocfilehash: 0f1cf6045db4a6fabe0f1250bc517ae1bf1be19e
-ms.sourcegitcommit: 676ba16fb02b395b048780a9296850934107efd8
+ms.custom: think-tank, e2e-sap
+ms.openlocfilehash: 2f87c003a33746c285831d91267d0a7b430efacc
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103468111"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734010"
 ---
 <!-- docutune:casing Snow -->
 

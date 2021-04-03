@@ -1,18 +1,19 @@
 ---
 title: ハイブリッドとマルチクラウドに対するエンタープライズ規模のサポート
 description: エンタープライズ規模で、ハイブリッドまたはマルチクラウド アーキテクチャの導入を加速する方法について説明します。
-author: DominicAllen
+author: JefferyMitchell
 ms.author: doalle
 ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 894383ea615d756a726be6281ff6fb5f44cd5aa2
-ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
+ms.custom: think-tank, e2e-hybrid
+ms.openlocfilehash: e13490f8f770c5b99e0334b557decdb57debf975
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104674344"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734537"
 ---
 # <a name="enterprise-scale-support-for-hybrid-and-multicloud"></a>ハイブリッドとマルチクラウドに対するエンタープライズ規模のサポート
   
@@ -111,6 +112,6 @@ Azure には、ユーザーの操作性を簡略化する、オンプレミス�
 これは、可能な限り簡単に大規模な監視および管理ができるよう、ハイブリッド資産全体を 1 つの管理プレーンと 1 つのビューで管理できるようにします。
 
 [Azure Arc](/azure/azure-arc/) は、矛盾のない、マルチクラウドおよびオンプレミス管理プラットフォームを提供することにより、ガバナンスおよび管理を容易にします。
-Azure Arc では、お使いの既存のリソースを [Azure Resource Manager](/azure/azure-resource-manager/management/overview#:~:text=Azure%20Resource%20Manager%20is%20the%20deployment%20and%20management,Manager%20templates%20(ARM%20templates),%20see%20the%20template) に投影することでお使いの環境全体を単一枠ビューで管理できるようにします。
+Azure Arc では、お使いの既存のリソースを [Azure Resource Manager](/azure/azure-resource-manager/management/overview) に投影することでお使いの環境全体を単一枠ビューで管理できるようにします。
 
 あたかも Azure 内で実行されているかのように、仮想マシンや Kubernetes クラスター、データベースを管理できるようになります。 それらがどこにあっても、使い慣れた Azure のサービスや管理機能を使用することが可能です。 Azure Arc なら、従来の ITOps を引き続き使用しながら、DevOps プラクティスを導入し、自分の環境で新しいクラウド ネイティブ パターンをサポートすることができます。

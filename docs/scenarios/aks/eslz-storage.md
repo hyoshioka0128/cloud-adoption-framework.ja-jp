@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 896d327577c790952de9f58002cf4d5b0eee1cda
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: b73b4f6af1cb05504bd466f2fc48c0e0617ccc15
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800697"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734435"
 ---
 # <a name="aks-enterprise-scale-storage"></a>AKS のエンタープライズ規模のストレージ
 

@@ -7,12 +7,13 @@ ms.date: 03/01/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d635a4d535b1fa09267224ff8fa00946f199849c
-ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
+ms.custom: think-tank, e2e-aks
+ms.openlocfilehash: 263e61efa384ea2bd57606d388ef085eb3fc4095
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104674412"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105733636"
 ---
 # <a name="identity-and-access-management-for-azure-kubernetes-service-aks-enterprise-scale-scenario"></a>Azure Kubernetes Service (AKS) のための ID およびアクセス管理のエンタープライズ規模のシナリオ
 
