@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: think-tank
-ms.openlocfilehash: cafd35c3353e9cb54bd8d57d938e96c3044cb9f0
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 564fdd71dc8515ba251e81e56e715fc83c9e48fa
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117516"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734163"
 ---
 # <a name="govern-antipatterns"></a>ガバナンスのアンチパターン
 
@@ -41,11 +41,11 @@ ms.locfileid: "102117516"
 
 ### <a name="preferred-outcome-define-a-cloud-security-strategy"></a>推奨される結果: クラウド セキュリティ戦略を定義する
 
-適切なクラウド [セキュリティ戦略](../strategy/define-security-strategy.md)を定義します。 詳細については、「[CISO のクラウド準備状況に関するガイド](../govern/policy-compliance/cloud-security-readiness.md)」を参照してください。また、最高情報セキュリティ責任者 (CISO) にこのガイドを紹介してください。 セキュリティ プラットフォームのリソース、プライバシーと制御、コンプライアンス、透明性などのトピックについて説明されています。
+適切な[クラウド セキュリティ戦略](../strategy/define-security-strategy.md)を定義します。 詳細については、「[CISO のクラウド準備状況に関するガイド](../govern/policy-compliance/cloud-security-readiness.md)」を参照してください。また、最高情報セキュリティ責任者 (CISO) にこのガイドを紹介してください。 セキュリティ プラットフォームのリソース、プライバシーと制御、コンプライアンス、透明性などのトピックについて説明されています。
 
-セキュリティで保護されたクラウド ワークロードについては、[Azure セキュリティ ベンチマーク](/azure/security/benchmarks/introduction)に関するページを参照してください。 [Center for Internet Security (CIS) Controls Version 7.1](https://learn.cisecurity.org/cis-controls-download) と [National Institute of Standards and Technology (NIST) SP800-53 Framework](https://www.nist.gov/privacy-framework/nist-sp-800-53) に基づいて構築されており、ほとんどのセキュリティ リスクと対策に対応しています。
+セキュリティで保護されたクラウド ワークロードについては、[Azure セキュリティ ベンチマーク](/azure/security/benchmarks/introduction)に関するページを参照してください。 ほとんどのセキュリティ リスクと対策に対応している、Center for Internet Security の [CIS Controls v7.1](https://learn.cisecurity.org/cis-controls-download) と National Institute of Standards and Technology の [NIST SP800-53 Framework](https://www.nist.gov/privacy-framework/nist-sp-800-53) に基づいて構築されています。
 
-Azure Security Center を使用して、リスクを特定し、ベスト プラクティスを適応させ、企業のセキュリティ体制を改善してください。
+Azure Security Center を使用して、リスクを特定し、ベスト プラクティスを適応させ、企業のセキュリティ態勢を改善してください。
 
 [Azure Policy](/azure/governance/policy/overview) と [Azure Blueprints](/azure/governance/blueprints/overview) を使用して、企業固有の自動化されたコンプライアンスとセキュリティ要件を実装またはサポートしてください。
 
@@ -61,7 +61,7 @@ Azure には、この企業独自のフレームワークとは異なる、よ�
 
 ### <a name="preferred-outcome-rely-on-existing-frameworks"></a>推奨される結果: 既存のフレームワークに依存する
 
-カスタムの企業コンプライアンス フレームワークを確立または導入する前に、CIS Controls バージョン 7.1 や NIST SP800-53 などの既存のフレームワークを使用するか、それに基づいて構築してください。 既存のフレームワークを使用することで、クラウド セキュリティ設定への移行がより簡単になり、測定しやすくなります。 その他のフレームワークの実装については、[Azure Blueprints のサンプル ページ](/azure/governance/blueprints/samples)を参照してください。 一般的なコンプライアンス フレームワーク用のブループリントも Azure に使用できます。
+カスタムの企業コンプライアンス フレームワークを確立または導入する前に、CIS Controls v7.1 や NIST SP800-53 などの既存のフレームワークを使用するか、それに基づいて構築してください。 既存のフレームワークを使用することで、クラウド セキュリティ設定への移行がより簡単になり、測定しやすくなります。 その他のフレームワークの実装については、[Azure Blueprints のサンプル ページ](/azure/governance/blueprints/samples/)を参照してください。 一般的なコンプライアンス フレームワーク用のブループリントも Azure に使用できます。
 
 ## <a name="next-steps"></a>次のステップ
 

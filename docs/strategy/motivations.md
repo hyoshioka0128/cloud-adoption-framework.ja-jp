@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: internal
-ms.openlocfilehash: 671f11c4eaadf3e6f3864e97589ffc16a48065a7
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: e4f9196fde274b30172ade0c5373c957beef48a1
+ms.sourcegitcommit: 6a31f8c3a28781b1e0813717993e7db32446b75c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101784936"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105983808"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>動機:クラウドに移行する理由
 

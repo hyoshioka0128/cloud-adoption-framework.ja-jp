@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: a414d36fccec0f16f9ea20d64e1ff9a74e99514d
-ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
+ms.openlocfilehash: 7f5cacd2153bb7d5591cd213449781ec94d5156b
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104674293"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734112"
 ---
 # <a name="cloud-migration-antipatterns"></a>クラウド移行のアンチパターン
 
@@ -53,19 +53,21 @@ ms.locfileid: "104674293"
 
 イノベーション プロジェクトについては、「[Azure の革新的なソリューションのガイドの概要](../innovate/innovation-guide/index.md)」を参照してください。これは、革新的なクラウド ソリューションを計画および開発するのに適した方法を特定するのに役立ちます。
 
-ミッション クリティカル ワークロードまたはアーキテクチャの変更が必要なワークロードの場合は、[Well-Architected フレームワーク](/azure/architecture/framework)または[アーキテクチャ デザイン セッション (ADS)](/azure/architecture/serverless-quest/ads) を使用すると、企業内でスケーリングできる高品質で堅牢なアーキテクチャを設計、構築、デプロイするのに役立ちます。 ADS ホワイトボードを使用して、ソリューションの検出、構想、計画を行います。
+<!-- docutune:casing ADS -->
+
+ミッション クリティカルなワークロードまたはアーキテクチャの変更が必要なワークロードの場合は、[Azure Well-Architected フレームワーク](/azure/architecture/framework/)または[アーキテクチャ デザイン セッション (ADS)](/azure/architecture/serverless-quest/ads) を使用すると、企業内でスケーリングできる高品質で堅牢なアーキテクチャを設計、構築、デプロイするのに役立ちます。 ADS ホワイトボードを使用して、ソリューションの検出、構想、計画を行います。
 
 ## <a name="antipattern-dictate-an-architecture"></a>アンチパターン: アーキテクチャを決定する
 
 ある会社ではクラウドで開発する際に、マイクロサービス ファーストの戦略を追求することがあります。その場合、マイクロサービス アーキテクチャが常に従来のモノリシック アーキテクチャより高性能であると想定します。 その会社でアプリケーションについて適切なアプリケーション評価とデュー デリジェンスが行われないと、この戦略が失敗する可能性があります。 そのアプリケーションには他のアーキテクチャ アプローチがより適している場合があります。 すべての状況に対してマイクロサービス アーキテクチャまたはアーキテクチャを選択または決定すると、多くの場合、プロジェクトが失敗することになります。
 
-### <a name="example-use-a-microservice-architecture-for-all-apps"></a>例: すべてのアプリに対してマイクロサービス アーキテクチャを使用する
+### <a name="example-use-a-microservice-architecture-for-all-applications"></a>例: すべてのアプリケーションに対してマイクロサービス アーキテクチャを使用する
 
 ある会社の最高情報責任者 (CIO) は、クラウドで新しいアプリケーションをビルドするときに、マイクロサービス アーキテクチャを使用するポリシーを確立します。 その会社の開発者は、マイクロサービス アーキテクチャに携わったことがありません。 シンプルな Web アプリを開発する必要があります。 その開発者は、数か月間アプリケーションで作業した後、モノリシック アーキテクチャで作業を開始していた場合、開発が既に完了している可能性があったということに気付きます。 その会社では、数ある利点のうち、市場投入までの時間の短縮が実現していません。
 
 ### <a name="preferred-outcome-base-architectural-decisions-on-assessments"></a>推奨される結果: 評価に基づいてアーキテクチャを決定する
 
-特定のアーキテクチャ スタイルにこだわらず、ユースケースまたはアーキテクチャの評価とデュー デリジェンスに基づいて、アーキテクチャを決定します。 自由に選択できるのがクラウドの主な利点の 1 つであるため、使用できるアーキテクチャを制限しないようにしてください。 流行っているからといってアーキテクチャを選ぶのは、避けるべきアンチパターンです。 詳細については、「[Azure アプリケーション アーキテクチャ ガイド](/azure/architecture/guide)」と「[クラウド設計パターン](/azure/architecture/patterns)」を参照してください。
+特定のアーキテクチャ スタイルにこだわらず、ユースケースまたはアーキテクチャの評価とデュー デリジェンスに基づいて、アーキテクチャを決定します。 自由に選択できるのがクラウドの主な利点の 1 つであるため、使用できるアーキテクチャを制限しないようにしてください。 流行っているからといってアーキテクチャを選ぶのは、避けるべきアンチパターンです。 詳細については、「[Azure アプリケーション アーキテクチャ ガイド](/azure/architecture/guide/)」と「[クラウド設計パターン](/azure/architecture/patterns/)」を参照してください。
 
 ## <a name="antipattern-use-a-single-subscription"></a>アンチパターン: 単一のサブスクリプションを使用する
 

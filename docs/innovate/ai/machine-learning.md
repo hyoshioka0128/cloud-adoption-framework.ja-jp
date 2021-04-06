@@ -1,29 +1,32 @@
 ---
-title: 機械学習
-description: このチェックリストとリソースは、アプリケーションの開発とデプロイを計画するのに役立ちます。
+title: Machine Learning ソリューション
+description: 機械学習に関するこれらのチェックリストとリソースは、機械学習 AI アプリケーションの開発とデプロイを計画するのに役立ちます。
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: think-tank
-ms.openlocfilehash: acbb9fd8744b720848ad5043cbd71080dba4c8fb
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom: think-tank, seo-caf-innovate
+keywords: Machine Learning ソリューション, 機械学習のチェックリスト, 機械学習 AI
+ms.openlocfilehash: 6de7e1a3a70a8475ad175fdd0858c17bd7a1da73
+ms.sourcegitcommit: 6a31f8c3a28781b1e0813717993e7db32446b75c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101791090"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105983763"
 ---
 <!-- cSpell:ignore scikit RLlib ONNX Jupyter -->
 
 # <a name="machine-learning"></a>機械学習
 
-Azure には、高度な機械学習機能が用意されています。 Azure Machine Learning を使用すると、独自の機械学習モデルの構築、トレーニング、デプロイを迅速かつ簡単に行えます。 Machine Learning は、従来のものからディープ ラーニング、教師あり学習と教師なし学習まで、あらゆる種類の機械学習に使用できます。 Python または R のコードを記述するか、または[デザイナー](/azure/machine-learning/tutorial-designer-automobile-price-train-score)などのコード不要またはローコード オプションを使用するかにかかわらず、Machine Learning ワークスペースで非常に正確な機械学習およびディープ ラーニング モデルの構築、トレーニング、追跡を行えます。
+機械学習は AI (人工知能) のサブセットであり、これによって、明示的にプログラミングせずに、機械がパターンを検出したり、データから学習したりすることができるようになります。 Azure Machine Learning ソリューションは、コンピューティングの分析情報を促進することができます。
+
+Azure には、高度な機械学習機能が用意されています。 Azure Machine Learning を使用すると、独自の機械学習モデルの構築、トレーニング、デプロイを迅速かつ簡単に行えます。 Machine Learning AI は、従来のものからディープ ラーニング、教師あり学習と教師なし学習まで、あらゆる種類の機械学習に使用できます。 Python または R のコードを記述するか、または[デザイナー](/azure/machine-learning/tutorial-designer-automobile-price-train-score)などのコード不要またはローコード オプションを使用するかにかかわらず、Machine Learning ワークスペースで非常に正確な機械学習およびディープ ラーニング モデルの構築、トレーニング、追跡を行えます。
 
 ローカル コンピューターでトレーニングを開始し、その後、クラウドにスケールアウトすることもできます。 また、このサービスは、PyTorch、TensorFlow、scikit-learn、Ray および RLlib など、ディープ ラーニングや強化のための一般的なオープンソース ツールと連携します。
 
-[Machine Learning](/azure/machine-learning/) を開始します。 [機械学習の実験の開始](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)方法についてのチュートリアルも用意されています。 機械学習のオープンソース モデル形式とランタイムの詳細については、[ONNX Runtime](https://www.onnxruntime.ai/) を参照してください。
+最初に、[Machine Learning ソリューションに関する記事](/azure/machine-learning/)をお読みください。[初めて Machine Learning の実験を設定する](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)方法についてのチュートリアルが記載されています。 機械学習のオープンソース モデル形式とランタイムの詳細については、[ONNX Runtime](https://www.onnxruntime.ai/) を参照してください。
 
 機械学習ソリューションを使用する一般的なシナリオを以下に示します。
 
@@ -34,13 +37,13 @@ Azure には、高度な機械学習機能が用意されています。 Azure M
 - インテリジェント レコメンデーション
 - 売上予測
 
-## <a name="checklist"></a>チェック リスト
+## <a name="machine-learning-checklist"></a>機械学習のチェックリスト
 
 - **まず、Machine Learning についての理解を深め** てから、最初に作成するエクスペリエンスを選択します。 Python を使用した Jupyter Notebook、ビジュアル ドラッグ アンド ドロップ エクスペリエンス、自動機械学習 (AutoML) を使用する手順に従うことができます。
 
-  - [Machine Learning の概要](/azure/machine-learning/overview-what-is-azure-ml)
+  - [Machine Learning に関する詳細](/azure/machine-learning/overview-what-is-azure-ml)
   - [Python で Jupyter Notebook を使用して初めての機械学習の実験を作成する](/azure/machine-learning/tutorial-1st-experiment-sdk-setup)
-  - [ビジュアル ドラッグアンドドロップの実験](/azure/machine-learning/tutorial-designer-automobile-price-train-score)
+  - [ビジュアルのドラッグ アンド ドロップによる実験](/azure/machine-learning/tutorial-designer-automobile-price-train-score)
   - [AutoML UI を使用する](/azure/machine-learning/tutorial-first-experiment-automated-ml)
   - [開発環境を構成する](/azure/machine-learning/how-to-configure-environment)
 
@@ -60,7 +63,7 @@ Azure には、高度な機械学習機能が用意されています。 Azure M
   - [モデルの解釈可能性と透過性](https://aka.ms/azuremlinterpret)
   - [R を使用したモデル構築](https://aka.ms/Rmodels)
 
-- [AI ソリューションの参照用アーキテクチャを確認する](/azure/architecture/browse/#ai--machine-learning)
+- [AI 機械学習ソリューションの参照アーキテクチャを確認します](/azure/architecture/browse/#ai--machine-learning)。
 
 ## <a name="next-steps"></a>次のステップ
 

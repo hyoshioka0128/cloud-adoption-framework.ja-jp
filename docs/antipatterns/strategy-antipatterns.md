@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: think-tank
-ms.openlocfilehash: 455d4011ea01de622e829541d9bab49b651fe391
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: d5b32e6db22ce24727a91239c2818aa79cb5c482
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117498"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734044"
 ---
 # <a name="cloud-strategy-antipatterns"></a>クラウド戦略のアンチパターン
 

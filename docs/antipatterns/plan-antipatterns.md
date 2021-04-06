@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: think-tank
-ms.openlocfilehash: 6d3063f8ba61ab1d25e9402177e11a01b1d3d25b
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: c427b8045b661a246462801475cf2b60b02b6bf0
+ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117502"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105734129"
 ---
 # <a name="cloud-adoption-plan-antipatterns"></a>クラウド導入計画のアンチパターン
 
@@ -83,7 +83,7 @@ PaaS と SaaS (サービスとしてのソフトウェア) に基づくアプリ
 
 大規模または複雑なアプリケーション環境を置き換える前に、代わりに最新化して、自分の環境を段階的に改善することを検討します。 お使いのアプリケーション環境に比較的小さな変更を加えた場合でも、パフォーマンスと信頼性に大きな影響がある場合があります。 たとえば、ホスト プラットフォームを Azure に変更すると、安定性と即効性のある結果を得られます。 推定した置き換えコストのほんの一部で、パフォーマンスと信頼性を得られます。
 
-革新戦略を決定する場合は、最新化のさまざまな選択肢を検討します。 これらのオプションを、概念実証 (PoC) で評価します。
+革新戦略を決定する場合は、最新化のさまざまな選択肢を検討します。 これらのオプションを、概念実証 (POC) で評価します。
 
 自分の会社の[デジタル資産](../digital-estate/index.md)を把握します。 自分の資産を最もうまく最新化および移行できるのは、[合理化の 5 つの R](../digital-estate/5-rs-of-rationalization.md) のどれであるか判断します。
 
