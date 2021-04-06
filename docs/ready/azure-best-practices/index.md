@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal
-ms.openlocfilehash: 39e94b661964ab2ac22f485d09aad93331220b40
-ms.sourcegitcommit: a0ddde4afcc7d8c21559e79d406dc439ee4f38d2
+ms.openlocfilehash: 26b6792c251c6d7fea825078ed097a906f32c216
+ms.sourcegitcommit: 076f51e2288f903b4dd06e037c2aa666a37454f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97713700"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106177255"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Azure 対応性のベスト プラクティス
 
@@ -59,6 +59,10 @@ Azure 環境でアセットを整理およびデプロイします。
 - [データベース セキュリティのベスト プラクティス](/azure/security/azure-database-security-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)。 Azure プラットフォーム上のデータベース セキュリティのベスト プラクティスについて説明します。
 - [適切なデータ ストアの選択](/azure/architecture/guide/technology-choices/data-store-overview)。 要件を満たす適切なデータストアを選択します。 SQL および NoSQL データベースから、何百もの実装を選択できます。 データ ストアは、多くの場合、データの構造とサポートする操作の種類によって分類されます。 この記事では、一般的ないくつかのストレージ モデルについて説明します。
 
+## <a name="ai--machine-learning"></a>AI + 機械学習
+
+- [Azure Machine Learning for Enterprise のスケールを設定する](./ai-machine-learning-resource-organization.md)。 組織向けの Azure Machine Learning のセットアップにおける重要な意思決定ポイントを説明します。 
+ 
 ## <a name="cost-management"></a>コスト管理
 
 - [事業単位、環境、プロジェクトをまたいでコストを追跡する](./track-costs.md)。 正しいコスト追跡メカニズムを構築するためのベスト プラクティスについて説明します。

@@ -401,6 +401,10 @@ items:
                 href: /azure/sql-database/sql-database-security-best-practice?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
               - name: Azure SQL でデプロイ オプションを選択する
                 href: /azure/sql-database/sql-database-paas-vs-sql-server-iaas?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+          - name: AI + 機械学習
+            items:
+              - name: Azure Machine Learning 環境の整理とセットアップ
+                href: ready/azure-best-practices/ai-machine-learning-resource-organization.md
           - name: コスト管理
             items:
               - name: コストの追跡
@@ -1058,7 +1062,7 @@ items:
                           - name: Azure Spring Cloud を使用した分散トレース
                             href: /azure/spring-cloud/spring-cloud-tutorial-distributed-tracing?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: Azure Cosmos DB を Azure Spring Cloud アプリケーションにバインドする
-                            href: /azure/spring-cloud/spring-cloud-tutorial-bind-cosmos?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                            href: /azure/spring-cloud/how-to-bind-cosmos?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                       - name: イベントドリブン アプリケーション
                         items:
                           - name: サーバーレス アプリケーションを作成するためのラーニングパス
