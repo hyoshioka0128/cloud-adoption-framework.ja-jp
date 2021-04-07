@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal, operating-model
-ms.openlocfilehash: 7dcba3b919e00d0a5186f9a14a8fd424f4be2b9e
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 4b029aeeaba5792f67a18d1f1dc80e1ffe1e93df
+ms.sourcegitcommit: 2aeb418ad97f3bdb7ce1e5ef76c0f3cbea9a57e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101786602"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106503439"
 ---
 # <a name="compare-common-cloud-operating-models"></a>一般的なクラウド運用モデルを比較する
 
@@ -52,13 +52,13 @@ ms.locfileid: "101786602"
 
 多くのチームと個人が、さまざまな機能をサポートするための責務を果たしますが、それぞれの一般的な運用モデルでは、意思決定とその結果に対する最終的な責任を 1 つのチームまたは 1 人の個人に割り当てます。 このアプローチは、運用モデルの資金調達方法と、各機能にどのレベルのサポートを提供するかに影響します。
 
-||非集中型の運用 |集中型の運用  |エンタープライズ型の運用          |分散型の運用|
-|---------              |---------      |---------    |---------          |---------|
-|**ビジネスの整合**|[ワークロード チーム](../organize/cloud-adoption.md)|[中央のクラウド戦略](../organize/cloud-strategy.md)|[CCoE](../organize/cloud-center-of-excellence.md)|可変 - [幅広いクラウド戦略チームを編成?](../get-started/team/cloud-strategy.md)|
-|**[クラウド運用](../organize/cloud-operations.md)**|[ワークロード チーム](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|ポートフォリオ分析に基づく - [ビジネス アラインメント](../manage/considerations/business-alignment.md)と[ビジネス コミットメント](../manage/considerations/commitment.md)に関するページを参照|
-|**[クラウド ガバナンス](../organize/cloud-governance.md)**|[ワークロード チーム](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|[複数レイヤーのガバナンス](../govern/guides/complex/multiple-layers-of-governance.md)|
-|**[クラウドのセキュリティ](../organize/cloud-security.md)**|[ワークロード チーム](../organize/cloud-adoption.md)|[セキュリティ オペレーション センター (SOC)](../organize/cloud-security-operations-center.md)|[CCoE](../organize/cloud-center-of-excellence.md) + [SOC](../organize/cloud-security-operations-center.md)|混合 - 「[セキュリティ戦略を定義する](../strategy/define-security-strategy.md)」を参照|
-|**[クラウドの自動化と DevOps](../organize/cloud-automation.md)**|[ワークロード チーム](../organize/cloud-adoption.md)|[中央 IT](../organize/central-it.md) または該当なし|[CCoE](../organize/cloud-center-of-excellence.md)|ポートフォリオ分析に基づく - [ビジネス アラインメント](../manage/considerations/business-alignment.md)と[ビジネス コミットメント](../manage/considerations/commitment.md)に関するページを参照|
+|  | 非集中型の運用 | 集中型の運用 | エンタープライズ型の運用 | 分散型の運用 |
+|--|--|--|--|--|
+| **ビジネスの整合** | [ワークロード チーム](../organize/cloud-adoption.md) | [中央のクラウド戦略](../organize/cloud-strategy.md) | [CCoE](../organize/cloud-center-of-excellence.md) | 可変 - [幅広いクラウド戦略チームを編成?](../get-started/team/cloud-strategy.md) |
+| **[クラウド運用](../organize/cloud-operations.md)** | [ワークロード チーム](../organize/cloud-adoption.md) | [中央 IT](../organize/central-it.md) | [CCoE](../organize/cloud-center-of-excellence.md) | ポートフォリオ分析に基づく - [ビジネス アラインメント](../manage/considerations/business-alignment.md)と[ビジネス コミットメント](../manage/considerations/commitment.md)に関するページを参照 |
+| **[クラウド ガバナンス](../organize/cloud-governance.md)** | [ワークロード チーム](../organize/cloud-adoption.md) | [中央 IT](../organize/central-it.md) | [CCoE](../organize/cloud-center-of-excellence.md) | [複数レイヤーのガバナンス](../govern/guides/complex/multiple-layers-of-governance.md) |
+| **[クラウドのセキュリティ](../organize/cloud-security.md)** | [ワークロード チーム](../organize/cloud-adoption.md) | [セキュリティ オペレーション センター (SOC)](../organize/cloud-security-operations-center.md) | [CCoE](../organize/cloud-center-of-excellence.md) + [SOC](../organize/cloud-security-operations-center.md) | 混合 - 「[セキュリティ戦略を定義する](../strategy/define-security-strategy.md)」を参照 |
+| **[クラウドの自動化と DevOps](../organize/cloud-automation.md)** | [ワークロード チーム](../organize/cloud-adoption.md) | [中央 IT](../organize/central-it.md) または該当なし | [CCoE](../organize/cloud-center-of-excellence.md) | ポートフォリオ分析に基づく - [ビジネス アラインメント](../manage/considerations/business-alignment.md)と[ビジネス コミットメント](../manage/considerations/commitment.md)に関するページを参照 |
 
 ### <a name="accelerate-operating-model-implementation-in-azure"></a>Azure での運用モデル実装の加速
 

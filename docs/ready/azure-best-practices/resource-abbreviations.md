@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: internal, readiness, fasttrack-edit
-ms.openlocfilehash: bc0aae28551efd126e7dc0ff37978a63649cf717
-ms.sourcegitcommit: 042fb295ef5623d45066ce38a389dd8d636cbc20
+ms.openlocfilehash: 1b69b833bb6ce6dfb06e597714ee08823b899734
+ms.sourcegitcommit: 2aeb418ad97f3bdb7ce1e5ef76c0f3cbea9a57e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100492257"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "106503303"
 ---
 # <a name="recommended-abbreviations-for-azure-resource-types"></a>Azure リソースの種類に推奨される省略形
 
@@ -21,8 +21,7 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 
 この一覧には、名前付け規則に含める、さまざまな Azure リソースの種類に推奨される省略形が示されています。 これらの省略形は、リソース名のプレフィックスとしてよく使用されるため、リソース名のハイフンを許可しないリソースの種類を除き、各省略形は次のようにハイフン (`-`) が後に続きます。 組織のニーズにより適している場合、名前付け規則で、リソースの種類の省略形が名前の別の場所に配置されることがあります。
 
-<!-- cSpell:ignore osdisk stvm arck ssimp -->
-<!-- cSpell:ignoreRegExp [a-z]+- -->
+<!-- cSpell:ignoreRegExp `[a-z]+-?` -->
 
 ## <a name="general"></a>全般
 
