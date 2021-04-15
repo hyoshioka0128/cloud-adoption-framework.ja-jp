@@ -1,25 +1,28 @@
 ---
 title: ナレッジ マイニング
-description: 大規模な AI とクラウドネイティブ プラクティスの導入を簡略化するツール、プログラム、コンテンツ (ベスト プラクティス、構成テンプレート、アーキテクチャ ガイダンス)。
+description: クラウド検索サービスやナレッジ マイニングのベストプラクティス、テンプレート、ガイダンスを含む、ナレッジ マイニング ソリューション、ツール、プログラム、コンテンツを検索します。
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom: think-tank
-ms.openlocfilehash: 32942357902adfd51d9a32c51852ecdabf272742
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.custom:
+- think-tank
+- seo-caf-innovate
+keywords: ナレッジ マイニング、ナレッジ マイニング ソリューション、認知検索、クラウド検索サービス
+ms.openlocfilehash: 466ccb2c734c063f66e4c3a9f694b8af5dcc60df
+ms.sourcegitcommit: c77685b7339301914f0ce4db17f623f37afa4c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101791107"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106381489"
 ---
 # <a name="knowledge-mining"></a>ナレッジ マイニング
 
-ナレッジ マイニングは、構造化データや非構造化データの中に隠されている分析情報にアクセスするプロセスを簡略化するために設計された、AI の新たなカテゴリです。 ナレッジ マイニングで AI パイプラインの使用プロセスを定義すると、構造化データや非構造化データのセットから、隠れたパターンやアクションにつながる情報をスケーラブルな方法で検出できます。
+ナレッジ マイニングは、構造化データや非構造化データの中に隠されている分析情報にアクセスするプロセスを簡略化するために設計された、AI の新たなカテゴリです。 ナレッジ マイニングで AI パイプラインの使用プロセスを定義して、構造化および非構造化データのセットから、隠れたパターンやアクションにつながる情報をスケーラブルな方法で検出します。 ナレッジ マイニングには複雑で論理的な理解が含まれており、情報ストリームを接続して実際のビジネスの分析情報を得ることができます。
 
-Azure Cognitive Search は、Web アプリケーション、モバイル アプリケーション、エンタープライズ アプリケーションのプライベートな異種コンテンツに対する豊富な検索エクスペリエンスを追加するための API とツールを開発者に提供するマネージド クラウド ソリューションです。 これには、スコアリング、ファセット、候補、シノニム、地域検索などの機能が用意されており、豊富なユーザー エクスペリエンスを提供します。 Azure Cognitive Search は、組み込みのナレッジ マイニング機能を備えた唯一のクラウド検索サービスでもあります。 Azure Cognitive Search は、取り込み、エンリッチ、調査と分析の手順に従って、ナレッジ マイニング エンリッチメント パイプラインのオーケストレーターとして機能します。
+Azure Cognitive Search は、Web、モバイル、エンタープライズ アプリケーションのプライベートな異種コンテンツに対する豊富な検索エクスペリエンスを追加するための API とツールを開発者に提供する、マネージド クラウド検索サービスおよびソリューションです。 これには、スコアリング、ファセット、候補、シノニム、地域検索などの機能が用意されており、豊富なユーザー エクスペリエンスを提供します。 Azure Cognitive Search は、組み込みのナレッジ マイニング機能を備えた唯一のクラウド検索サービスでもあります。 Azure Cognitive Search は、取り込み、エンリッチ、調査と分析の手順に従って、ナレッジ マイニング エンリッチメント パイプラインのオーケストレーターとして機能します。
 
 ナレッジ マイニングを使用する主なシナリオを以下に示します。
 
@@ -29,7 +32,7 @@ Azure Cognitive Search は、Web アプリケーション、モバイル アプ�
 - **技術的コンテンツのレビューと調査:** ドキュメントを迅速に確認し、重要な情報を抽出すると、情報に基づいた意思決定を行えます。
 - **監査とコンプライアンス管理:** ドキュメントに含まれる重要な領域をすばやく識別し、重要なアイデアや情報にフラグを付けます。
 
-## <a name="checklist"></a>チェック リスト
+## <a name="knowledge-mining-solutions-checklist"></a>ナレッジ マイニング ソリューションのチェックリスト
 
 - **概要:** 無料のナレッジ マイニング ソリューション アクセラレータ、ブート キャンプ、ワークショップにアクセスします。
 
@@ -37,9 +40,9 @@ Azure Cognitive Search は、Web アプリケーション、モバイル アプ�
   - [ナレッジ マイニング ワークショップ](https://github.com/Azure-Samples/azure-search-knowledge-mining/tree/main/workshops)
   - [ナレッジ マイニング ブート キャンプ](https://github.com/MicrosoftLearning/LearnAI-KnowledgeMiningBootcamp)
   - [ナレッジ マイニングに関する電子書籍](https://azure.microsoft.com/resources/a-developers-guide-to-building-ai-driven-knowledge-mining-solutions/)
-  - [ナレッジ マイニング Azure DevOps プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine): サインインして、クラウド導入フレームワークのナビゲーションに移動し、 **[ナレッジ マイニング]** を選択します。
+  - [ナレッジ マイニングの Azure DevOps プロジェクト](https://azuredevopsdemogenerator.azurewebsites.net/?name=kmine)。 このプロジェクトでは、サインインし、**クラウド導入フレームワーク** のナビゲーションに移動してから、 **[ナレッジ マイニング]** を選択します。
 
-- **Power Skills を使用する:** [Azure Search Power Skills](https://github.com/Azure-Samples/azure-search-power-skills) には、Azure Cognitive Search のカスタム スキルとしてデプロイできる便利な機能が用意されています。 スキルは、独自のカスタム スキルの[テンプレート](https://github.com/Azure-Samples/azure-search-power-skills/blob/main/Template/HelloWorld/README.md)または開始点として使用できます。 また、これらが要件を満たしている場合には、そのまま展開して使用することもできます。 また、[pull request](https://github.com/Azure-Samples/azure-search-power-skills/compare) を送信して独自のものを投稿することもできます。
+- **Power Skills を使用する:** [Azure Search Power Skills](https://github.com/Azure-Samples/azure-search-power-skills) には、Azure Cognitive Search のカスタム スキルとしてデプロイできる便利な機能が用意されています。 これらのスキルは、独自のカスタム スキルの[テンプレート](https://github.com/Azure-Samples/azure-search-power-skills/blob/main/Template/HelloWorld/README.md)または始点として使用できます。 要件を満たしている場合は、デプロイしてそのまま使用することもできます。 また、[pull request](https://github.com/Azure-Samples/azure-search-power-skills/compare) を送信して独自のものを投稿することもできます。
 
 - **その他のリソースを調べる:**
 

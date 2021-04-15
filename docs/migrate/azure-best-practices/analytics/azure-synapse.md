@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: think-tank
-ms.openlocfilehash: d63d656864b55ebabfef8913f021ed0d8d1435b1
-ms.sourcegitcommit: b6f2b4f8db6c3b1157299ece1f044cff56895919
+ms.openlocfilehash: a8c8c73331d25a638ac76043890bd8b235b8312d
+ms.sourcegitcommit: c77685b7339301914f0ce4db17f623f37afa4c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97015305"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106381500"
 ---
 # <a name="high-availability-for-azure-synapse-analytics"></a>Azure Synapse Analytics の高可用性
 
@@ -31,4 +31,4 @@ Azure Synapse Analytics では、スナップショットが終日自動的に�
 
 ## <a name="disaster-recovery"></a>障害復旧
 
-前述のスナップショットに加えて、Azure Synapse Analytics によって、1 日に 1 回、ペアになっているデータセンターに対して標準の geo バックアップも実行されます。 geo 復元の RPO は 24 時間です。 geo バックアップは、Azure Synapse Analytics がサポートされているその他の任意のリージョン内のサーバーに復元することができます。 geo バックアップにより、プライマリ リージョン内の復元ポイントを利用できない場合でもデータ ウェアハウスを確実に復元できます。
+前述のスナップショットに加えて、Azure Synapse Analytics によって、1 日に 1 回、ペアになっているデータセンターに対して標準の geo バックアップも実行されます。 geo 復元の RPO は 24 時間です。 専用 SQL プールがバックアップされます。 geo バックアップは、Azure Synapse Analytics がサポートされているその他の任意のリージョン内のサーバーに復元することができます。 geo バックアップにより、プライマリ リージョン内の復元ポイントを利用できない場合でもデータ ウェアハウスを確実に復元できます。

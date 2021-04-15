@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.localizationpriority: high
 ms.custom: think-tank, fasttrack-new, AQC
-ms.openlocfilehash: a7aecea80789818cc5b6f93803b0edf6c4b4f7ef
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: de81ebed18cfd5dda009b78a3f7d100e7f5c7ace
+ms.sourcegitcommit: 076f51e2288f903b4dd06e037c2aa666a37454f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101785922"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106177289"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>ワークロードを評価して計画を調整する
 
@@ -26,34 +26,31 @@ ms.locfileid: "101785922"
 
 ### <a name="azure-migrate"></a>Azure Migrate
 
-Azure Migrate では、Azure への移行についてオンプレミスのインフラストラクチャ、アプリケーション、データが評価されます。 このサービスは以下のことを行います。
+Azure Migrate では、オンプレミスのサーバー、インフラストラクチャ、アプリケーション、データを評価し、Azure への移行を行うための一元化されたハブが提供されます。 このサービスは以下のことを行います。
 
-- オンプレミス資産の移行の適合性を評価します。
-- パフォーマンスベースのサイズ設定を実行します。
-- オンプレミスの資産を Azure で実行する場合のコスト見積もりを提供します。
+- オンプレミスのサーバーで Azure に移行する準備ができているかどうかを評価します。
+- 移行後の Azure VM/Azure SQL 構成のサイズまたは Azure VMware Solution ノードの数を推定します。
+- Azure でオンプレミス サーバーを実行する場合のコストを見積もります。
+- 相互に依存するサーバーを Azure に移動できるように、サーバー間の依存関係と最適化戦略を特定します。
 
 リフトアンドシフトのアプローチを検討している場合、または移行の初期評価段階にある場合に、このサービスは適しています。 評価が完了したら、Azure Migrate を使用して移行を実行します。
 
 ![Azure Migrate の概要](./media/assess/azure-migrate-overview-1.png)
 
-#### <a name="create-a-new-server-migration-project"></a>新しいサーバー移行プロジェクトの作成
+#### <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
-以下の手順を使用して、Azure Migrate を使用したサーバーの移行評価を開始します。
+以下の手順を使用して、Azure Migrate を使用したサーバーの検出、評価、移行を開始します。
 
 1. **[Azure Migrate]** を選択します。
-1. **[概要]** で **[サーバーの評価と移行]** を選択します。
+1. **[概要]** で、 **[検出、評価、移行]** を選択します。
 1. **[ツールの追加]** を選択します。
-1. **[サーバーの検出、評価、移行]** で、 **[ツールの追加]** を選択します。
-1. **[移行プロジェクト]** で、自分の Azure サブスクリプションを選択し、リソース グループがない場合は作成します。
-1. **[プロジェクトの詳細]** で、プロジェクト名と、プロジェクトを作成したい地域を指定し、 **[次へ]** を選択します。
-1. **[評価ツールの選択]** で、 **[今は評価ツールの追加をスキップします]**  >  **[次へ]** の順に選択します。
-1. **[移行ツールの選択]** で、次を選択します: **[Azure Migrate: Server Migration]**  >  **[次へ]** 。
-1. **[確認 + ツールの追加]** で設定を確認し、 **[ツールの追加]** を選択します。
-1. ツールを追加すると、**Azure Migrate プロジェクト** >  **[サーバー]**  >  **[移行ツール]** に表示されます。
+1. **[プロジェクト]** で、自分の Azure サブスクリプションを選択し、リソース グループがない場合は作成します。
+1. **[プロジェクトの詳細]** で、プロジェクト名と、プロジェクトを作成したい地域を指定し、 **[作成]** を選択します。
+1. プロジェクトの作成後に、プロジェクトにツールが表示され、ユーザーは Discovery を開始できます。
 
 ::: zone target="chromeless"
 
-::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
+::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Discover, assess and migrate" :::
 
 ::: zone-end
 
@@ -67,26 +64,20 @@ Azure Migrate では、Azure への移行についてオンプレミスのイン
 
 ::: zone-end
 
-### <a name="service-map"></a>サービス マップ
+### <a name="dependency-analysis"></a>依存関係の分析
 
-Service Map は自動的に Windows および Linux のシステム上のアプリケーション コンポーネントを検出し、サービス間の通信をマップします。 Service Map を使用すると、サーバーを重要なサービスを提供する相互接続されたシステムとして表示することができます。 Service Map は、TCP 接続アーキテクチャ全体におけるサーバー、プロセス、受信接続と送信接続の待機時間、ポートの間の接続を表示します。エージェントのインストール以外の構成は必要ありません。
+依存関係の分析では、検出されたオンプレミス サーバー間の依存関係を特定します。 これには以下のような利点があります。
 
-Azure Migrate では、Service Map を使用して、環境全体でレポート機能と依存関係が強化されます。 この統合の詳細については、「[依存関係の視覚化](/azure/migrate/concepts-dependency-visualization)」を参照してください。 Azure Migrate サービスを使用する場合、Service Map を構成してその利点を得るために追加の手順は必要ありません。 以下の説明は、Service Map を他の目的またはプロジェクトに使用したい場合の参考用に提供されています。
-
-#### <a name="enable-dependency-visualization-using-service-map"></a>Service Map を使用して依存関係の視覚化を有効にする
-
-依存関係の視覚化を使用するには、分析するオンプレミスの各マシンにエージェントをダウンロードしてインストールします。
-
-- 各コンピューターに [Microsoft Monitoring Agent](/azure/azure-monitor/agents/agent-windows) をインストールする必要があります。
-- 各コンピューターに [Microsoft Dependency Agent](/azure/azure-monitor/vm/vminsights-enable-hybrid#install-the-dependency-agent-on-windows) をインストールする必要があります。
-- インターネットに接続されていないマシンがある場合、それらのマシンに Log Analytics ゲートウェイをダウンロードしてインストールする必要もあります。
+- サーバーをグループ化して、より正確で信頼性が高い評価を実現します。
+- 一緒に移行する必要があるサーバーを特定します。 これは特に、どのサーバーが、Azure に移行するアプリのデプロイの一部になっているか明確でない場合に便利です。
+- サーバーが使用中かどうかや、移行の代わりにどのサーバーの使用を停止できるかを特定します。
+- 依存関係の分析は、作業漏れがないようにする助けになるため、移行後の突然の停止を避けられます。
 
 <!-- markdownlint-disable MD024 -->
 
 #### <a name="learn-more"></a>詳細情報
 
-- [Azure での Service Map ソリューションの使用](/azure/azure-monitor/vm/service-map)
-- [Azure Migrate と Service Map: 依存関係の視覚化](/azure/migrate/concepts-dependency-visualization)
+- [Azure Migrate 依存関係分析](/azure/migrate/concepts-dependency-visualization)
 
 ## <a name="challenge-assumptions"></a>[前提条件を吟味する](#tab/Challenge-Assumptions)
 
