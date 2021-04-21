@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: a0d88b3f6c308c531fd9128e4861babd0769131b
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 080fe1c10ad455ec094edaa712fcd4897e7aef62
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101786211"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746958"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -188,7 +188,7 @@ Azure ロールベースのアクセス制御を実装するとき、次を強�
 
 ID およびアクセス制御について計画を立てて準備すること、および [Azure Identity Management のベスト プラクティス](/azure/security/fundamentals/identity-management-best-practices)に従うことは、採用できる最適なリスク軽減戦略の 1 つであり、すべてのデプロイにおいて必須と考える必要があります。
 
-## <a name="security"></a>Security
+## <a name="security"></a>セキュリティ
 
 従来、クラウド導入の最大の障壁の 1 つは、セキュリティに対する懸念でした。 IT リスク マネージャーとセキュリティ部門は、Azure 内のリソースのセキュリティが既定で保護されており安全であることを保証する必要があります。 Azure には、リソースを保護しながら、リソースに対する脅威を検出して排除するために使用できる機能があります。
 
@@ -356,3 +356,5 @@ Azure では、効果的なセキュリティ体制を提供する充実した�
 ガバナンスは Azure の成功に不可欠です。 この記事は、エンタープライズ スキャフォールディングの技術的な実装を対象としていますが、広範なプロセスとコンポーネント間の関係だけを取り上げています。 ポリシー ガバナンスのフローはトップダウンであり、その企業が目指していることによって決まります。 当然ながら、Azure のガバナンス モデルの作成には IT 部門の担当者が参加しますが、さらに重要なことは、ビジネス グループのリーダーの有力な代表者とセキュリティおよびリスク管理部門も参加することです。 要するに、エンタープライズ スキャフォールディングとは、ビジネス リスクを軽減して組織の任務や目的を推進することです。
 
 ここでは、サブスクリプション ガバナンスについて説明しました。次に、これらの推奨事項を実際に確認してください。 詳細については、「[Azure 対応性のベスト プラクティス](../ready/azure-best-practices/index.md)」を参照してください。
+
+<!-- docutune:enable -->

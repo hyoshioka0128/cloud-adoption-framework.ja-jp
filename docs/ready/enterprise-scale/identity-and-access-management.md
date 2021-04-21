@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 8fbce73e4cd0ae47beeb348be151093dda932c27
-ms.sourcegitcommit: 3dd5cb5e84df8049ecbd484061e6df16a1914bb5
+ms.openlocfilehash: 6f9095cf39f9db0151d168481f6363efd791984c
+ms.sourcegitcommit: 37b9560a02ae301d05da338446a5d47fa3bc1908
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102515381"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107371659"
 ---
 # <a name="identity-and-access-management"></a>ID 管理とアクセス管理
 
@@ -45,6 +45,7 @@ ID およびアクセス管理は、ID 統合の慎重な計画と、レガシ�
 - リソース所有権の一元化とフェデレーション:
   - 共有リソース、またはネットワークなどのセキュリティ境界を実装または適用する環境の側面は、一元的に管理する必要があります。 この要件は、多くの規制フレームワークに含まれています。 これは、機密または重要なビジネス リソースへのアクセスを許可または拒否するすべての組織にとって、標準的な方法です。
   - セキュリティ境界や、セキュリティとコンプライアンスの維持に必要なその他の側面に違反していないアプリケーション リソースの管理は、アプリケーション チームに委任することができます。 安全に管理された環境内でユーザーがリソースをプロビジョニングできるようにすると、組織ではクラウドのアジャイルな性質を活用し、さらに重要なセキュリティやガバナンスの境界の違反を防ぐことができます。
+  - 一元的またはフェデレーション リソースの所有権の定義に応じて、カスタム ロールが異なる場合があります。 一元的なリソースの所有権のカスタム ロールは制限されているため、責任モデルによっては追加の権限が必要になる場合があります。 たとえば、組織によっては、NetOps ロールで必要とされるのはグローバル接続の管理と構成のみである場合があります。 しかし、より一元的なアプローチを必要とする他の組織では、ハブとスポーク間にピアリングを作成するなど、より多くの許可されたアクションで NetOps ロールを強化する必要があります。
 
 <!-- docutune:ignore Azure-AD-only Azure-AD-managed -->
 

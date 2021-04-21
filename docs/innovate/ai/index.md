@@ -7,16 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- think-tank
-- seo-caf-innovate
+ms.custom: think-tank, seo-caf-innovate
 keywords: クラウド導入フレームワークの概要, CAF, クラウド導入フレームワーク, AI アプリケーション, クラウド導入ライフサイクル
-ms.openlocfilehash: 03d4e355c1183c3339cfb17083c916f0f3f128fa
-ms.sourcegitcommit: 37b9560a02ae301d05da338446a5d47fa3bc1908
+ms.openlocfilehash: d48b0de62adf6f675cc60220419343e1fd28449d
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107371438"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747128"
 ---
 <!-- docutune:casing InterpretML FairLearn -->
 

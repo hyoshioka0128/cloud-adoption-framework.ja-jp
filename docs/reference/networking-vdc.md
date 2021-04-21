@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: think-tank, virtual-network
-ms.openlocfilehash: ed98a21bf3a987cd15d0485b639283791e95355d
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 6677dbcb438b781e0d74615c91e1e83a63dc0b03
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788098"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747451"
 ---
-<!-- docutune:disable TODO -->
+<!-- docutune:disable -->
 <!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->
 
 # <a name="the-virtual-datacenter-a-network-perspective"></a>仮想データセンター:ネットワーク パースペクティブ
@@ -173,7 +173,7 @@ Azure では、種類に関係なく、すべてのコンポーネントが Azur
 
 Azure では複雑なトポロジを構成できますが、VDC の概念の中核となる原則の 1 つは再現性と単純さです。 管理作業を最小限に抑えるために、単純なハブ スポーク設計が、推奨される VDC 参照アーキテクチャです。
 
-### <a name="components"></a>コンポーネント
+### <a name="components"></a>Components
 
 仮想データセンターは、4 種類の基本的なコンポーネントで構成されています。**インフラストラクチャ**、**境界ネットワーク**、**ワークロード**、および **監視** です。
 
@@ -565,3 +565,5 @@ Azure データセンターは世界中の多数のリージョンに存在し�
 [cosmos-db]: /azure/cosmos-db/introduction
 [IoT]: /azure/iot-fundamentals/iot-introduction
 [machine-learning]: /azure/machine-learning/overview-what-is-azure-ml
+
+<!--docutune:enable -->

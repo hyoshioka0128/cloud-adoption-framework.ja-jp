@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: e2e-hybrid
-ms.openlocfilehash: e4511cab3ab8266e7d4ab4c434aaf28c87da3207
-ms.sourcegitcommit: 4d68f2e496b065aa5cd915c4e999def51c8901ba
+ms.openlocfilehash: e03d6a120edbf5c5b572b5b28fb86dcb5bde2d7d
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104674361"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747196"
 ---
 # <a name="plan-for-hybrid-and-multicloud"></a>ハイブリッドおよびマルチクラウドの計画
 
@@ -82,7 +82,7 @@ Azure Arc によって Azure のサービスと管理の単一のエンタープ
 
 ハイブリッドとマルチクラウドの環境を考慮する統合運用アプローチでは、Azure サービスおよびサーバー管理手法を他のマルチクラウド環境やエッジで使用することによりクラウド イノベーションを提供するためのフォーム ファクターがさらに広がります。
 
-[Azure Stack ファミリ ポートフォリオ](https://azure.microsoft.com/resources/azure-stack-portfolio-datasheet/)、統合システム、およびハイパーコンバージド ソリューションによって標準的クラウドのフォーム ファクターが広がり、Azure サービスと管理をデータセンター、クラウド、およびエッジの場所にわたって拡張します。
+[Azure Stack ファミリ ポートフォリオ](https://azure.microsoft.com/blog/expanding-the-azure-stack-portfolio-to-run-hybrid-applications-across-the-cloud-datacenter-and-the-edge/)、統合システム、およびハイパーコンバージド ソリューションによって標準的クラウドのフォーム ファクターが広がり、Azure サービスと管理をデータセンター、クラウド、およびエッジの場所にわたって拡張します。
 
 [Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) によって Azure フルスタック サービスをオンプレミスに拡張することで、アプリケーションをオンプレミス環境で実行して Azure サービスをデータセンターで提供できるようになります。 顧客対応および内部基幹業務用の両アプリケーションに対して新しいハイブリッド クラウド ユースケースが引き出されます (エッジおよび非接続ソリューション、さまざまな規制要件を持つクラウド アプリケーション、Azure サービス、コンテナー、サーバーレス、およびマイクロサービス アーキテクチャを使用したオンプレミスのクラウド アプリケーション モデル)。
 

@@ -2,21 +2,19 @@
 title: Build-Measure-Learn (構築-計測-学習) フィードバック ループ
 description: Build-Measure-Learn (構築-計測-学習) フィードバック ループを使用してカスタマー パートナーシップを構築し、顧客の共感を構築して顧客への影響を測定します。
 author: BrianBlanchard
-keywords: Build-Measure-Learn (構築-計測-学習)、Build-Measure-Learn (構築-計測-学習) フィードバック ループ、カスタマー パートナーシップ
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
-ms.openlocfilehash: 787619472f77261c4b1104516bcfd0d281ffa4ca
-ms.sourcegitcommit: 95ba6496b12b16216ccb8016b86b5126ede64748
+ms.custom: internal, seo-caf-innovate
+keywords: Build-Measure-Learn (構築-計測-学習)、Build-Measure-Learn (構築-計測-学習) フィードバック ループ、カスタマー パートナーシップ
+ms.openlocfilehash: d00575059f92887f2334aab1f681bea7ae4fbf3b
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082338"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747791"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Build-Measure-Learn (構築-計測-学習) フィードバック ループを使用したカスタマー パートナーシップの構築
 

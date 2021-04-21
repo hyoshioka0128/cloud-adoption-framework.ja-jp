@@ -2,21 +2,19 @@
 title: データを民主化するためのイノベーション ツール
 description: より広範で、よりコストのかかるデジタル発明に展開する前に仮説を迅速にテストするのに役立つ Azure Data Catalog とその他のデータ収集サービスについて説明します。
 author: BrianBlanchard
-keywords: データを民主化する, データの民主化, データ収集, イノベーション ツール
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
-ms.openlocfilehash: 79188228341fa131ed2c52aeb87232d19ee45c78
-ms.sourcegitcommit: bf73a3f16001cd7c5ef74d9f6de4292f9bfd62e4
+ms.custom: internal, seo-caf-innovate
+keywords: データを民主化する, データの民主化, データ収集, イノベーション ツール
+ms.openlocfilehash: 938f7a2ec3641a4a196a9418fe6cd9c4c3f48daf
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105099623"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747961"
 ---
 # <a name="innovation-tools-to-democratize-data-in-azure"></a>Azure でデータを民主化するためのイノベーション ツール
 

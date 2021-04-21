@@ -7,16 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- think-tank
-- seo-caf-innovate
+ms.custom: think-tank, seo-caf-innovate
 keywords: ナレッジ マイニング、ナレッジ マイニング ソリューション、認知検索、クラウド検索サービス
-ms.openlocfilehash: 466ccb2c734c063f66e4c3a9f694b8af5dcc60df
-ms.sourcegitcommit: c77685b7339301914f0ce4db17f623f37afa4c76
+ms.openlocfilehash: ce5c4ce33bb3dc83e56a27dc8fb0309be60a0d33
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106381489"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747077"
 ---
 # <a name="knowledge-mining"></a>ナレッジ マイニング
 

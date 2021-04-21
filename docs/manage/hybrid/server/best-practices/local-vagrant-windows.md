@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: f2a0dc375146f9f35bb3b1d91cf2cb039510fb56
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 904a9d477defb27b321f95b58afba2bc9331df54
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800646"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746704"
 ---
 # <a name="deploy-a-local-windows-server-instance-hosted-by-vagrant-and-connect-it-to-azure-arc"></a>Vagrant によってホストされるローカルの Windows Server インスタンスをデプロイして Azure Arc に接続する
 
@@ -21,7 +21,7 @@ ms.locfileid: "101800646"
 
 ## <a name="prerequisites"></a>前提条件
 
-1. Azure Arc Jumpstart リポジトリをクローンします。
+1. Azure Arc Jumpstart リポジトリを複製します。
 
     ```console
     git clone https://github.com/microsoft/azure_arc.git
@@ -49,7 +49,7 @@ ms.locfileid: "101800646"
 
 4. Azure サービス プリンシパルを作成します。
 
-    Vagrant 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは、[Azure Cloud Shell](https://shell.azure.com/) で実行することもできます。
+    Vagrant 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは [Azure Cloud Shell](https://shell.azure.com/) で実行することもできます。
 
     ```console
     az login
@@ -129,7 +129,7 @@ Vagrant のすべてのデプロイと同様に、[vagrantfile](https://github.c
 
     ![Windows PowerShell ISE のスクリーンショット。](./media/local-vagrant/vagrant-windows-ise.png)
 
-4. `Invoke-Expression "C:\runtime\vars.ps1"` コマンド、`az group create --location $env:location --name $env:resourceGroup --subscription $env:subscriptionId` コマンド、`azcmagent connect` コマンドを貼り付けて、スクリプトを実行します。
+4. `Invoke-Expression C:\runtime\vars.ps1` コマンド、`az group create --location $env:location --name $env:resourceGroup --subscription $env:subscriptionId` コマンド、`azcmagent connect` コマンドを貼り付けて、スクリプトを実行します。
 
     ![スクリプトを実行している PowerShell ISE のスクリーンショット。](./media/local-vagrant/vagrant-windows-ise-script.png)
 

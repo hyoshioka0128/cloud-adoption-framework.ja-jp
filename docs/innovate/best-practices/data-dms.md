@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: seo-caf-innovate
 keywords: データの収集, データの移行, データ移行, データの最新化
-ms.openlocfilehash: 46898d732b8b1673a3e99069268bb94ce008226f
-ms.sourcegitcommit: bf73a3f16001cd7c5ef74d9f6de4292f9bfd62e4
+ms.openlocfilehash: 2105edeba384fe185997e892477383f281fdf795
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105099589"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747978"
 ---
 # <a name="collect-data-through-the-migration-and-data-modernization-of-existing-sources"></a>既存のソースの移行とデータの最新化によってデータを収集する
 

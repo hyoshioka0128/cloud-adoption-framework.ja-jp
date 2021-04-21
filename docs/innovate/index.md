@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: internal, seo-caf-innovate
 keywords: クラウド イノベーション, クラウド導入, クラウド フレームワーク, クラウド導入フレームワーク
-ms.openlocfilehash: e9f90820db6e123d86a7e27a437e7b3f2075a203
-ms.sourcegitcommit: 6a31f8c3a28781b1e0813717993e7db32446b75c
+ms.openlocfilehash: bc566336e7cc94713a154fa8d0c92b17d24f89cb
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983876"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747587"
 ---
 # <a name="cloud-adoption-related-innovation"></a>クラウド導入に関連するイノベーション
 

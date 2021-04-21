@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: c6fe231f81324815f8004a6ed3408ab326a6be02
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 21d15322033cbc5a6f5ce325c28ef851c261ace4
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102115103"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747910"
 ---
 # <a name="machine-learning-inference-during-deployment"></a>展開時の機械学習推論
 
@@ -108,4 +108,4 @@ Azure Machine Learning を使用した推論の詳細については、次のリ
 
 - [バッチ スコアリング用の Azure Machine Learning パイプラインを構築する](/azure/machine-learning/tutorial-pipeline-batch-scoring-classification)
 - [Azure Machine Learning デザイナーを使用してバッチ予測を実行する](/azure/machine-learning/how-to-run-batch-predictions-designer)
-- [Azure Machine Learning でのバッチ推論](https://techcommunity.microsoft.com/t5/azure-ai/batch-inference-in-azure-machine-learning/ba-p/1417010#:~:text=%20Batch%20Inference%20in%20Azure%20Machine%20Learning%20,Learning%20Pipelines.%20ParallelRunStep%20is%20available%20through...%20More%20)
+- [Azure Machine Learning でのバッチ推論](https://techcommunity.microsoft.com/t5/azure-ai/batch-inference-in-azure-machine-learning/ba-p/1417010)

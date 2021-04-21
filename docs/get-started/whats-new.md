@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 69e9ac4fc1002042285cb796c03633970fc25221
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.openlocfilehash: 58f90c0b53869e4825853de21675a6754adecb22
+ms.sourcegitcommit: 37b9560a02ae301d05da338446a5d47fa3bc1908
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103439629"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107371455"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
@@ -52,7 +52,7 @@ Microsoft の[クラウド経済プログラム](https://azure.microsoft.com/ove
 
 ### <a name="enterprise-scale-updates"></a>エンタープライズ規模の更新プログラム
 
-[ネットワークトポロジと接続](../ready/azure-best-practices/define-an-azure-network-topology.md)の重要なデザイン領域には、ネットワーク設計の個々のコンポーネントの合理化を簡略化する新しい記事が含まれています。 これらの設計の側面には、Oracle クラウド インフラストラクチャなどの [マルチクラウド プロバイダーへの接続](../ready/azure-best-practices/connectivity-to-other-providers.md) に関するガイダンスが含まれるようになりました。 また、新しいエンタープライズ規模の Terraform モジュールもリリースされており、Microsoft が Azure ランディング ゾーンの構成に対するオープンソース アプローチへの継続的な投資を示すことができます。
+[ネットワークトポロジと接続](../ready/azure-best-practices/define-an-azure-network-topology.md)の重要なデザイン領域には、ネットワーク設計の個々のコンポーネントの合理化を簡略化する新しい記事が含まれています。 これらの設計の側面には、Oracle クラウド インフラストラクチャなどの [マルチクラウド プロバイダーへの接続](../ready/azure-best-practices/connectivity-to-other-providers.md) に関するガイダンスが含まれるようになりました。 また、新しいエンタープライズ規模の Terraform モジュールもリリースされており、Microsoft が Azure ランディング ゾーンの構成に対するオープンソース アプローチへの継続的な投資を示すことができます。 最後に、クラウドのガバナンス要件を満たすために、企業が Azure で[管理グループを最適化し、サブスクリプションを整理する](../ready/enterprise-scale/management-group-and-subscription-organization)方法についてのガイダンスを更新しました。
 
 ### <a name="anti-patterns"></a>アンチ パターン
 

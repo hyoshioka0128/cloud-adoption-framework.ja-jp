@@ -11,12 +11,12 @@ ms.custom:
 - think-tank
 - seo-caf-innovate
 keywords: アプリケーション開発、アプリケーションのデプロイ、サイト信頼性エンジニアリング
-ms.openlocfilehash: da90a4ca564df8be50e0f8a487daa17cadfdeb85
-ms.sourcegitcommit: 2aeb418ad97f3bdb7ce1e5ef76c0f3cbea9a57e7
+ms.openlocfilehash: b81c3e3ac26bf567d910e146beac87dae119573a
+ms.sourcegitcommit: 2848b189c4c5d3cf857b4e7f364e9c257243c9d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "106503337"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "107003212"
 ---
 <!-- cSpell:ignore autoscaler Istio Linkerd -->
 
@@ -43,7 +43,7 @@ ms.locfileid: "106503337"
   詳細については、次を参照してください。
   - [Visual Studio Code での Docker の操作](https://code.visualstudio.com/docs/containers/overview)
   - [Visual Studio Code での Kubernetes の操作](https://code.visualstudio.com/docs/azure/kubernetes)
-  - [Azure Dev Spaces の概要](/azure/dev-spaces/about)
+  - [Bridge to Kubernetes の概要](/visualstudio/containers/overview-bridge-to-kubernetes)
 
 - **アプリケーションをコンテナー化する。** アプリケーション スキャフォールディング、内部ループのワークフロー、アプリケーション管理フレームワーク、CI/CD パイプライン、ログの集計、監視、アプリケーション メトリックなど、エンドツーエンドの Kubernetes 開発エクスペリエンスについてよく理解します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "106503337"
   詳細については、次を参照してください。
   - [Kubernetes アプリケーションを成功させるためのプロジェクトの設計とレイアウト (ウェビナー)](https://info.microsoft.com/ww-OnDemandRegistration-successful-kubernetes-applications-webinar.html)
   - [Kubernetes デプロイのしくみ (ビデオ)](https://www.youtube.com/watch?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&v=mNK14yXIZF4&index=3)
-  - [Azure Kubernetes Service ワークショップ (Learn モジュール)](/learn/modules/aks-workshop/)
+  - [Kubernetes でのアプリケーションの開発とデプロイ (Microsoft Learn)](/learn/paths/develop-deploy-applications-kubernetes/)
 
 - **アプリケーション ストレージを管理する。** 適切なストレージ オプションを提供できるように、パフォーマンスのニーズとポッドのアクセス方法を理解します。 また、接続されたストレージをバックアップし、その復元プロセスをテストする方法を計画します。
 
@@ -133,13 +133,14 @@ ms.locfileid: "106503337"
 
   詳細については、次を参照してください。
   - [Kubernetes でのサービス メッシュのしくみ (ビデオ)](https://www.youtube.com/watch?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&v=izVWk7rYqWI&index=15)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
-  - [サービス メッシュの詳細](/azure/aks/servicemesh-about) <br>
-  - [Azure Kubernetes Service での Istio の使用](/azure/aks/servicemesh-istio-about) <br>
-  - [Azure Kubernetes Service での Linkerd の使用](/azure/aks/servicemesh-linkerd-about) <br>
+  - [サービス メッシュの詳細](/azure/aks/servicemesh-about)
+  - [Azure Kubernetes Service で Open Service Mesh を使用する](/azure/aks/servicemesh-osm-about)
+  - [Azure Kubernetes Service での Istio の使用](/azure/aks/servicemesh-istio-about)
+  - [Azure Kubernetes Service での Linkerd の使用](/azure/aks/servicemesh-linkerd-about)
   - [Azure Kubernetes Service での Consul の使用](/azure/aks/servicemesh-consul-about)
 
 - **サイト信頼性エンジニアリング (SRE) のプラクティスを実施する。** サイト信頼性エンジニアリング (SRE) は、マーケットプレースで要求される速度で反復を行う一方で、重要なシステムとアプリケーションの信頼性を維持できる実証済みの手法です。
 
   詳細については、次を参照してください。
-  - [サイト信頼性エンジニアリング (SRE) の概要](/learn/modules/intro-to-site-reliability-engineering/) <br>
+  - [サイト信頼性エンジニアリング (SRE) の概要](/learn/modules/intro-to-site-reliability-engineering/)
   - [Microsoft での DevOps: ゲーム ストリーミングの SRE](https://azure.microsoft.com/resources/devops-at-microsoft-game-streaming-sre/)

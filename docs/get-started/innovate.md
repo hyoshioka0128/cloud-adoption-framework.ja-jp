@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: e367cf3f09b8b85a3d4a2c8d14d52037614678a0
-ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
+ms.openlocfilehash: 9b3f693b67a128dd5050b53a53f8df173e4210e5
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102208814"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746550"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>作業を開始しましょう。クラウドで新しい製品とサービスのイノベーションを促進する
 
@@ -23,7 +23,7 @@ ms.locfileid: "102208814"
 
 ![革新的な方法論など、クラウド導入フレームワークの方法論。](../_images/get-started/innovation-map.png)
 
-_図 1: 革新的な方法論など、クラウド導入フレームワークの方法論。_
+*図 1: 革新的な方法論など、クラウド導入フレームワークの方法論。*
 
 ## <a name="step-1-document-the-business-strategy"></a>手順 1:ビジネス戦略を文書化する
 

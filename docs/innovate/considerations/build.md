@@ -2,21 +2,19 @@
 title: 顧客の共感を構築する
 description: 顧客の共感 (顧客のエクスペリエンスの深い理解) に基づいてクラウドのイノベーションを推進するソリューションを作成する方法について説明します。
 author: BrianBlanchard
-keywords: 共感を構築する方法, 顧客の共感, クラウド イノベーション
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
-ms.openlocfilehash: c374863d33602a343fff5f1dc6d95be56a972e30
-ms.sourcegitcommit: 6a31f8c3a28781b1e0813717993e7db32446b75c
+ms.custom: internal, seo-caf-innovate
+keywords: 共感を構築する方法, 顧客の共感, クラウド イノベーション
+ms.openlocfilehash: b89462812f37f424e2ba27e8fb002ce8cf11d562
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983791"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747706"
 ---
 <!-- docutune:casing "Oxford English Dictionary" -->
 

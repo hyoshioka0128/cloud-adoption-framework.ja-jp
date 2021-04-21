@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: a074346edf78040190e845ff8bffff468fb8e39e
-ms.sourcegitcommit: beb42b6e99ae8a2d83a85cb95108dae23c55b694
+ms.openlocfilehash: 230d4258762e05ee9320f32c9165b176119040a8
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103570075"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746516"
 ---
 # <a name="terraform-module-for-cloud-adoption-framework-enterprise-scale"></a>クラウド導入フレームワークのエンタープライズ規模用の terraform モジュール
 
@@ -108,8 +108,6 @@ module "enterprise_scale" {
 
 }
 ```
-
-<!-- docutune:enable -->
 
 このコード例では、エンタープライズ規模の参照アーキテクチャから、推奨される最小の [管理グループとサブスクリプションの組織](./management-group-and-subscription-organization.md) をデプロイします。 これを実行すると、デプロイのカスタマイズが開始されます。
 

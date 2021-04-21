@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 2b24872323bd4d771634564a64532aa216652731
-ms.sourcegitcommit: c167c45b66cc7324b60c88b8b7aac439f956b65d
+ms.openlocfilehash: fe8e9eebcab48e78958a26be094f77ffc16d3da3
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102208848"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746618"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>健全な運用モデルと組織配置でお客様の成功を実現する
 
@@ -53,7 +53,7 @@ ms.locfileid: "102208848"
 
 ![共有アーキテクチャの原則を示す図。](../_images/shared-principles.png)
 
-_図 1: 共有アーキテクチャの原則。_
+*図 1: 共有アーキテクチャの原則。*
 
 これらの原則は、Azure Advisor、Microsoft Azure Well-Architected Framework、および Azure アーキテクチャ センターのソリューションで共有されます。
 

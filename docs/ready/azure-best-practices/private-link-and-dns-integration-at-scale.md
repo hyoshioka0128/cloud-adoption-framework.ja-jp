@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: 2d7afeca3547f5880e743b82c221f1ab58fdab11
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: de21f0685cb90e5dd0c97edda340855d495032f6
+ms.sourcegitcommit: d599a48de8cfedf426b8a98a7cec3c047d03f930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101800926"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107477306"
 ---
 # <a name="private-link-and-dns-integration-at-scale"></a>Private Link と DNS の大規模な統合
 
@@ -310,7 +310,7 @@ ms.locfileid: "101800926"
 
 この時点で、DNS レコードがプライベート DNS ゾーンに自動的に記録されているため、アプリケーション チームは、ハブ アンド スポーク ネットワーク環境の任意の VNet から、およびオンプレミスから、プライベート エンドポイント経由でストレージアカウントを使用できます。
 
-アプリケーション所有者がプライベート エンドポイントを削除すると、プライベート DNS ゾーンの対応するレコードが自動的に削除されます。
+アプリケーション所有者がプライベート エンドポイントを削除すると、プライベート DNS ゾーンの対応するレコードが自動的に削除されます。 
 
 [link-1]: /azure/private-link/private-link-overview
 [link-2]: /azure/private-link/private-link-overview#availability
@@ -323,16 +323,16 @@ ms.locfileid: "101800926"
 [link-9]: /azure/governance/policy/how-to/remediate-resources
 [link-10]: /azure/governance/policy/overview
 [image-1]: ./media/private-link-example-central-dns.png
-[image-2]: ./media/private-link-storage-with-blob.jpg
-[image-3]: ./media/private-link-storage-policy-step-1.jpg
-[image-4]: ./media/private-link-storage-policy-step-2.jpg
-[image-5]: ./media/private-link-storage-policy-step-3.jpg
-[image-6]: ./media/private-link-private-dns-set-no.jpg
-[image-7]: ./media/private-link-create-storage.jpg
+[image-2]: ./media/create-private-dns-zones.jpg
+[image-3]: ./media/create-storage-account-blob.jpg
+[image-4]: ./media/validation.jpg
+[image-5]: ./media/validation-error-detail.jpg
+[image-6]: ./media/private-dns-integration.jpg
+[image-7]: ./media/create-storage-account.jpg
 [image-8]: ./media/private-link-network-private.jpg
-[image-9]: ./media/private-link-create-private.jpg
-[image-10]: ./media/private-link-target-blob.jpg
-[image-11]: ./media/private-link-integrate-with-private.jpg
-[image-12]: ./media/private-link-fqdn-private-ip.jpg
-[image-13]: ./media/private-link-activity-log.jpg
-[image-14]: ./media/private-link-check-private-dns.jpg
+[image-9]: ./media/create-private-endpoint.jpg
+[image-10]: ./media/create-private-endpoint-resources.jpg
+[image-11]: ./media/create-private-endpoint-configuration.jpg
+[image-12]: ./media/private-endpoint-ip-fqdn.jpg
+[image-13]: ./media/private-endpoint-activity-log.jpg
+[image-14]: ./media/private-dns-zones.png

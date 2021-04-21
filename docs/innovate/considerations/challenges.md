@@ -7,16 +7,14 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
+ms.custom: internal, seo-caf-innovate
 keywords: イノベーションの課題、クラウドの導入に関する課題、イノベーションの課題、テクノロジの導入、新しいテクノロジの導入に関する課題
-ms.openlocfilehash: 965122b980d92fe3f5322f20f59336ae79098662
-ms.sourcegitcommit: 2aeb418ad97f3bdb7ce1e5ef76c0f3cbea9a57e7
+ms.openlocfilehash: a8f12bb5c866a3863342f603b56201e237c4a38a
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "106503371"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747638"
 ---
 # <a name="common-technology-adoption-blockers-and-challenges-to-innovation"></a>テクノロジ導入に関する一般的な阻害要因とイノベーションの課題
 

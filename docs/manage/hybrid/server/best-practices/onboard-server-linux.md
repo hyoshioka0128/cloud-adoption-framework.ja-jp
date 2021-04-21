@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 9bf8b1b8ace2bcebc1151ccebdba04e094f239fd
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 6608133beaafa0deccbd9ea54968575009d8a903
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102114372"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746890"
 ---
 # <a name="connect-an-existing-linux-server-to-azure-arc"></a>既存の Linux サーバーを Azure Arc に接続する
 
@@ -76,7 +76,7 @@ ms.locfileid: "102114372"
 `. ./az_connect_linux.sh` コマンドを使用してスクリプトを実行します。
 
 > [!NOTE]
-> ドットが付加されている理由は、スクリプトに _export_ 関数があり、残りのコマンドと同じシェル セッションで変数をエクスポートする必要があるからです。
+> ドットが付加されている理由は、スクリプトに *export* 関数があり、残りのコマンドと同じシェル セッションで変数をエクスポートする必要があるからです。
 
 正常に完了すると、Linux サーバーがリソース グループ内の新しい Azure Arc リソースとして接続されます。
 
