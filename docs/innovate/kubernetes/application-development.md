@@ -7,16 +7,14 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- think-tank
-- seo-caf-innovate
+ms.custom: think-tank, seo-caf-innovate
 keywords: アプリケーション開発、アプリケーションのデプロイ、サイト信頼性エンジニアリング
-ms.openlocfilehash: b81c3e3ac26bf567d910e146beac87dae119573a
-ms.sourcegitcommit: 2848b189c4c5d3cf857b4e7f364e9c257243c9d2
+ms.openlocfilehash: 98dba7a2368dd538b59015bf75311038b33984a8
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003212"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747468"
 ---
 <!-- cSpell:ignore autoscaler Istio Linkerd -->
 

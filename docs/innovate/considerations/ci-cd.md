@@ -1,22 +1,20 @@
 ---
 title: CI/CD パイプラインとデジタル発明
 description: ベスト プラクティスを維持しつつ、イノベーション手法の成熟度モデルを使用して、CI/CD パイプラインの導入を遅らせてしまう摩擦を減らします。
-keywords: 継続的インテグレーション, 継続的デプロイ, ci cd, デジタル発明, ci cd パイプライン
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
-ms.openlocfilehash: 3da6a1ee8344138d5d1620c33a939004b100bdf5
-ms.sourcegitcommit: 990d94680da828f428432a82984ae5f7e096caf4
+ms.custom: internal, seo-caf-innovate
+keywords: 継続的インテグレーション, 継続的デプロイ, ci cd, デジタル発明, ci cd パイプライン
+ms.openlocfilehash: c3994171b748b57397c8ff81e509ee5055074a68
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107265610"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747655"
 ---
 # <a name="empower-adoption-with-digital-invention"></a>デジタル発明で導入を強化する
 
@@ -51,7 +49,7 @@ ms.locfileid: "107265610"
 
 デジタル発明とイノベーションをスケーリングする場合、ソリューションの共有コード ベースほど有益なツールはありません。 残念ながら、どの反復または MVP の組み合わせが成功につながるのかを確実に予測する方法はありません。 このため、共有コード ベースまたはリポジトリはいつ確立しても早すぎるということはありません。 これは、遅滞すべきでない[技術的スパイク](./build.md#reduce-complexity-and-delay-technical-spikes)の 1 つです。 チームはさまざまな MVP ソリューションを反復するため、共有リポジトリによって共同作業がしやすくなり、迅速な開発が可能になります。 ソリューションの変更が学習メトリックに悪影響を及ぼす場合は、バージョン コントロールを使用して、以前のより効果的なバージョンのソリューションにロールバックできます。
 
-コード リポジトリを管理するために最も広く採用されている CI/CD ツールは [GitHub](https://guides.github.com) です。これを使うと、いくつかの手順を実行するだけで共有コード リポジトリを作成できます。 また、Azure DevOps の [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 機能を使用して、[Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) または [TFVC](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) リポジトリを作成することもできます。
+コード リポジトリを管理するために最も広く採用されている CI/CD ツールは [GitHub](https://guides.github.com) です。これを使うと、いくつかの手順を実行するだけで共有コード リポジトリを作成できます。 また、Azure DevOps の [Azure Repos](/azure/devops/repos/get-started/what-is-repos) 機能を使用して、[Git](/azure/devops/repos/get-started/what-is-repos#git) または [TFVC](/azure/devops/repos/get-started/what-is-repos#tfvc) リポジトリを作成することもできます。
 
 ## <a name="feedback-loops"></a>フィードバック ループ
 
@@ -75,7 +73,7 @@ Azure DevOps と [Azure Pipelines](/azure/devops/pipelines/) では、GitHub や
 
 MVP ソリューションの初期の反復期間には欠陥が想定されています。 早期導入者はそれらを好意的に受け入れる場合もあります。 初期リリースでは、通常、承認テストはありません。 ただし、共感を得ながらの構築の一側面はニーズと仮説の検証に関係します。 どちらも、コード レベルの単体テストと、デプロイ前の手動承認テストによって完了できます。 これらを組み合わせることで、テストの信頼性を高めることができます。 明確に定義された一連のビルド、単体、承認の各テストの自動化を試す必要があります。 これらにより、仮説および結果として構築されたソリューションのより細かい調整に関連する信頼性の高いメトリックが確保されます。
 
-[Azure Test Plans](/azure/devops/test/track-test-status?view=azure-devops) 機能には、手動または自動テストの実行期間にテスト計画を作成して実施するためのツールが用意されています。
+[Azure Test Plans](/azure/devops/test/track-test-status) 機能には、手動または自動テストの実行期間にテスト計画を作成して実施するためのツールが用意されています。
 
 ## <a name="solution-deployment"></a>ソリューションのデプロイ
 

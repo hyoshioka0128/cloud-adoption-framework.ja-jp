@@ -2,19 +2,19 @@
 title: クラスターの設計と操作
 description: クラスターの設計、ネットワークの設計、および操作用のクラウド導入フレームワークにおける Kubernetes について説明します。
 author: sabbour
-keywords: ネットワークの設計, クラスターの設計, インフラストラクチャのプロビジョニング, kubernetes
 ms.author: brblanch
 ms.date: 04/02/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
-ms.openlocfilehash: 6a7fd3dcfee99db412b3ed6e22c377704e6c64d3
-ms.sourcegitcommit: 990d94680da828f428432a82984ae5f7e096caf4
+keywords: ネットワークの設計, クラスターの設計, インフラストラクチャのプロビジョニング, kubernetes
+ms.openlocfilehash: cd503c50f90ea09a9a8de85bab0bfb47b4bf89d4
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107265559"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747265"
 ---
 <!-- cSpell:ignore autoscaler PDBs -->
 
@@ -43,8 +43,7 @@ ms.locfileid: "107265559"
 
 - **複数のノード プールを作成する。** コンピューティングまたはストレージのさまざまな要件があるアプリケーションをサポートするには、必要に応じて複数のノード プールでクラスターを構成します。 たとえば、より多くのノード プールを使用して、コンピューティング集中型アプリケーションに GPU を提供したり、高パフォーマンスな SSD ストレージへのアクセスを提供したりします。 詳細については、[Azure Kubernetes Service のクラスターでの複数のノード プールの作成と管理](/azure/aks/use-multiple-node-pools)に関する記事を参照してください。
 
-- **可用性の要件を決定する。** Azure Kubernetes Service の背後に少なくとも 2 つのポッドがあれば、ポッドのエラーや再起動があった場合のアプリケーションの高可用性が確保されます。 ポッドのエラーや再起動時の負荷を処理するには、3 つ以上のポッドを使用してください。
-クラスター構成では、99.95% のサービス レベル アグリーメントを満たすために、可用性セットまたは仮想マシン スケール セット内に少なくとも 2 つのノードが必要です。 ノードのエラー時と再起動時のポッドのスケジューリングを保証するには、少なくとも 3 つのポッドを使用します。
+- **可用性の要件を決定する。** Azure Kubernetes Service の背後に少なくとも 2 つのポッドがあれば、ポッドのエラーや再起動があった場合のアプリケーションの高可用性が確保されます。 ポッドのエラーや再起動時の負荷を処理するには、3 つ以上のポッドを使用してください。 クラスター構成では、99.95% のサービス レベル アグリーメントを満たすために、可用性セットまたは仮想マシン スケール セット内に少なくとも 2 つのノードが必要です。 ノードのエラー時と再起動時のポッドのスケジューリングを保証するには、少なくとも 3 つのポッドを使用します。
 
   アプリケーションにより高いレベルの可用性を提供するために、クラスターは可用性ゾーンにまたがって分散させることができます。 これらのゾーンは、特定のリージョン内の物理的に分離されたデータセンターです。 クラスター コンポーネントが複数のゾーンに分散されている場合、クラスターは、それらのゾーンのいずれかで障害が発生しても許容できます。 アプリケーションと管理操作は、1 つのデータセンター全体で障害が発生した場合でも継続して利用できます。 詳細については、「[可用性ゾーンを使用する Azure Kubernetes Service (AKS) クラスターを作成する](/azure/aks/availability-zones)」を参照してください。
 

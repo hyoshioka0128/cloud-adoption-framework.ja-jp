@@ -7,16 +7,14 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
+ms.custom: internal, seo-caf-innovate
 keywords: 顧客の行動の予測, 予測モデリング, 予測モデリングとは
-ms.openlocfilehash: d5a914e18f2a39c918c11330da24462b013f6102
-ms.sourcegitcommit: 37b9560a02ae301d05da338446a5d47fa3bc1908
+ms.openlocfilehash: 955e3aca21621cba6bfc973321db4c5e534f38cf
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107371516"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747570"
 ---
 # <a name="predictive-modeling-and-influencing-customer-behavior"></a>予測モデリングと顧客の行動への影響
 

@@ -2,21 +2,19 @@
 title: 対話型デバイスを使用したアンビエント ユーザー エクスペリエンス
 description: デジタル イノベーションのために、アプリケーションではなく対話型デバイスを使用するアンビエント ユーザー エクスペリエンスのための高度なアプローチについて説明します。
 author: BrianBlanchard
-keywords: アンビエント ユーザー エクスペリエンス, デジタル エクスペリエンス, 対話型デバイス, デジタル イノベーション, アンビエント インテリジェンス
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
-ms.openlocfilehash: 56c4182154e87214b2e81503f7d124b17fcddc46
-ms.sourcegitcommit: 990d94680da828f428432a82984ae5f7e096caf4
+ms.custom: internal, seo-caf-innovate
+keywords: アンビエント ユーザー エクスペリエンス, デジタル エクスペリエンス, 対話型デバイス, デジタル イノベーション, アンビエント インテリジェンス
+ms.openlocfilehash: 1d7d3e56192ec678a816b2945ecdaaf60fd8d418
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107265542"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747604"
 ---
 # <a name="ambient-user-experiences-interact-with-devices"></a>アンビエント ユーザー エクスペリエンス: デバイスとの対話
 
