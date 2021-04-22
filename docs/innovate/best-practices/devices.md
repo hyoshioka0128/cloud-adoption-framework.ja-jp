@@ -2,21 +2,19 @@
 title: デバイスとの対話のためのアンビエント エクスペリエンス
 description: デバイスとの対話のための Azure ツールと、顧客の自然な環境と動作を強化するアンビエント エクスペリエンスについて説明します。
 author: BrianBlanchard
-keywords: アンビエント ユーザー エクスペリエンス, アンビエント エクスペリエンス, デバイスとの対話
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
-ms.openlocfilehash: 8a4504c0d1bb94765f446ec7bb938963cd3f30e2
-ms.sourcegitcommit: 6a31f8c3a28781b1e0813717993e7db32446b75c
+ms.custom: internal, seo-caf-innovate
+keywords: アンビエント ユーザー エクスペリエンス, アンビエント エクスペリエンス, デバイスとの対話
+ms.openlocfilehash: d6e91786fcc7be69707965a4b967c5b118cc6078
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983859"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747944"
 ---
 # <a name="ambient-experience-tools-to-interact-with-devices-in-azure"></a>Azure でデバイスと対話するためのアンビエント エクスペリエンス ツール
 

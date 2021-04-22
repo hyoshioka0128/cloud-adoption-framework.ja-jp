@@ -7,16 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- think-tank
-- seo-caf-innovate
+ms.custom: think-tank, seo-caf-innovate
 keywords: AI アプリケーション, AI アプリケーションの例, AI アプリケーションのチェックリスト, AI の適用分野, AI エージェント
-ms.openlocfilehash: 0edf493b60819d453074bfc30ce8f1bd1f4b20d2
-ms.sourcegitcommit: 6a31f8c3a28781b1e0813717993e7db32446b75c
+ms.openlocfilehash: d9f7a2e4ebdf28cb1831ae67e58c960770f4c0b1
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983769"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747162"
 ---
 # <a name="ai-applications-and-agents"></a>AI アプリケーションとエージェント
 
@@ -74,7 +72,7 @@ Azure Bot Service と Microsoft Bot Framework には次の特性があります�
 - Bot Framework は、ボットの設計、構築、テストを支援する SDK を提供するオープンソース オファリングです。 この SDK は、C#、JavaScript、Python、Java で使用できます。 また、Bot Framework Composer での無料のビジュアル作成キャンバスと、Bot Framework Emulator でのテスト ツールも提供されています。
 - Azure Bot Service は Azure 内の専用サービスで、これを使用することにより、お客様は Azure でボットをホストまたは公開したり、人気のあるチャネルに接続したりできます。
 
-Bot Service と Bot Framework の詳細については、以下を参照してください。
+Azure Bot Service と Bot Framework の詳細については、以下を参照してください。
 
 - [Azure Bot Service および Bot Framework の概要](/azure/bot-service/bot-service-overview-introduction)
 - [ボット設計の原則](/azure/bot-service/bot-service-design-principles)

@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
 keywords: Machine Learning ソリューション, 機械学習のチェックリスト, 機械学習 AI
-ms.openlocfilehash: 6de7e1a3a70a8475ad175fdd0858c17bd7a1da73
-ms.sourcegitcommit: 6a31f8c3a28781b1e0813717993e7db32446b75c
+ms.openlocfilehash: df49fab831a8a45a76eeaf21e1fd372c2f3bd2cf
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983763"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107748046"
 ---
 <!-- cSpell:ignore scikit RLlib ONNX Jupyter -->
 
 # <a name="machine-learning"></a>機械学習
 
-機械学習は AI (人工知能) のサブセットであり、これによって、明示的にプログラミングせずに、機械がパターンを検出したり、データから学習したりすることができるようになります。 Azure Machine Learning ソリューションは、コンピューティングの分析情報を促進することができます。
+機械学習は AI のサブセットであり、これによって、明示的にプログラミングせずに、機械がパターンを検出したり、データから学習したりすることができるようになります。 Azure Machine Learning ソリューションは、コンピューティングの分析情報を促進することができます。
 
 Azure には、高度な機械学習機能が用意されています。 Azure Machine Learning を使用すると、独自の機械学習モデルの構築、トレーニング、デプロイを迅速かつ簡単に行えます。 Machine Learning AI は、従来のものからディープ ラーニング、教師あり学習と教師なし学習まで、あらゆる種類の機械学習に使用できます。 Python または R のコードを記述するか、または[デザイナー](/azure/machine-learning/tutorial-designer-automobile-price-train-score)などのコード不要またはローコード オプションを使用するかにかかわらず、Machine Learning ワークスペースで非常に正確な機械学習およびディープ ラーニング モデルの構築、トレーニング、追跡を行えます。
 

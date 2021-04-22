@@ -2,21 +2,19 @@
 title: イノベーションを通じてビジネス価値を築く
 description: Azure のクラウド導入フレームワークを使用して、ビジネス価値について学び、利害関係者全体でビジネス価値の定義に関する合意を築く方法について説明します。
 author: BrianBlanchard
-keywords: ビジネス価値、ビジネス価値の定義、ビジネス価値の概要、ビジネス価値、ビジネス イノベーション
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
-ms.openlocfilehash: 77930e96f9e61511f7d92e00269efb13bc4f6674
-ms.sourcegitcommit: 2aeb418ad97f3bdb7ce1e5ef76c0f3cbea9a57e7
+ms.custom: internal, seo-caf-innovate
+keywords: ビジネス価値、ビジネス価値の定義、ビジネス価値の概要、ビジネス価値、ビジネス イノベーション
+ms.openlocfilehash: 9d003e3c0ad4e9221851b2973256527944692eb9
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "106503354"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747825"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>イノベーションのビジネス価値の合意を築く
 
@@ -79,7 +77,7 @@ ms.locfileid: "106503354"
   - [Azure DevOps でアプリケーションを構築する](/learn/paths/build-applications-with-azure-devops/)
   - [Azure DevOps でアプリケーションをデプロイする](/learn/paths/deploy-applications-with-azure-devops/)
 
-この記事の各セクションのビジネス イノベーション手法とバックログ管理ツールに従うと、ソリューションを一致させるのに役立ちます。
+この記事の各セクションのイノベーション手法とバックログ管理ツールに従うと、ソリューションを一致させるのに役立ちます。
 
 ## <a name="next-steps"></a>次のステップ
 

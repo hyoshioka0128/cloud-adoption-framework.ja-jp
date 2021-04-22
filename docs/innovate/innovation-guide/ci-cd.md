@@ -10,12 +10,12 @@ ms.subservice: innovate
 ms.localizationpriority: high
 ms.custom: internal, fasttrack-new, AQC, seo-caf-innovate
 keywords: デジタル トランスフォーメーション, デジタル トランスフォーメーション サービス, クラウド導入
-ms.openlocfilehash: 8e1e8f303c16b9be07797ece758599efdf64f971
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 39909f5a95c1da2fc890e78df7335e70cd9901a6
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101792348"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747485"
 ---
 # <a name="empower-cloud-adoption"></a>クラウド導入の強化
 

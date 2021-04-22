@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: think-tank
-ms.openlocfilehash: 564fdd71dc8515ba251e81e56e715fc83c9e48fa
-ms.sourcegitcommit: 5716a8165934bd69d02d9d3641785039196aee3a
+ms.openlocfilehash: 403ae8ff38f22c35ec1b3a064ec271447dc18ed8
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "105734163"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746992"
 ---
 # <a name="govern-antipatterns"></a>ガバナンスのアンチパターン
 
@@ -43,7 +43,7 @@ ms.locfileid: "105734163"
 
 適切な[クラウド セキュリティ戦略](../strategy/define-security-strategy.md)を定義します。 詳細については、「[CISO のクラウド準備状況に関するガイド](../govern/policy-compliance/cloud-security-readiness.md)」を参照してください。また、最高情報セキュリティ責任者 (CISO) にこのガイドを紹介してください。 セキュリティ プラットフォームのリソース、プライバシーと制御、コンプライアンス、透明性などのトピックについて説明されています。
 
-セキュリティで保護されたクラウド ワークロードについては、[Azure セキュリティ ベンチマーク](/azure/security/benchmarks/introduction)に関するページを参照してください。 ほとんどのセキュリティ リスクと対策に対応している、Center for Internet Security の [CIS Controls v7.1](https://learn.cisecurity.org/cis-controls-download) と National Institute of Standards and Technology の [NIST SP800-53 Framework](https://www.nist.gov/privacy-framework/nist-sp-800-53) に基づいて構築されています。
+セキュリティで保護されたクラウド ワークロードについては、[Azure セキュリティ ベンチマーク](/security/benchmark/azure/introduction)に関するページを参照してください。 ほとんどのセキュリティ リスクと対策に対応している、Center for Internet Security の [CIS Controls v7.1](https://learn.cisecurity.org/cis-controls-download) と National Institute of Standards and Technology の [NIST SP800-53](https://www.nist.gov/privacy-framework/nist-sp-800-53) に基づいて構築されています。
 
 Azure Security Center を使用して、リスクを特定し、ベスト プラクティスを適応させ、企業のセキュリティ態勢を改善してください。
 

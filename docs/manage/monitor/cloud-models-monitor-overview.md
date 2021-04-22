@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 8b27b996b631c45ee09d7e44a2fbd3ff3567d8d7
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 00e6daad053b9e66a00da44bc7aa35c7b34920fd
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102114015"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747248"
 ---
 <!-- docutune:casing "Squared Up" Savision APM -->
 <!-- cSpell:ignore Savision -->
@@ -48,7 +48,7 @@ Azure Active Directory Domain Services などのテナント サービスから�
 |---|---|---|---|
 | Application | Azure VM、Azure App Service、Azure Service Fabric、Azure Functions、および Azure Cloud Service 上の .NET、.NET Core、Java、JavaScript、および Node.js プラットフォームで実行されている Web ベースのアプリケーション。 | ライブ Web アプリケーションを監視して、パフォーマンスの異常を自動検出し、コードの例外と問題を識別し、ユーザー動作の分析を収集します。 | Application Insights (Azure Monitor の機能)。 |
 | Azure リソース - サービスとしてのプラットフォーム (PaaS) | Azure Database サービス (SQL、MySQL など)。 | Azure SQL Database のパフォーマンス メトリック。 | 診断ログで SQL データを Azure Monitor ログにストリーミングできるようにします。 |
-| Azure リソース - サービスとしてのインフラストラクチャ (IaaS) | 1.Azure Storage <br> 2.Azure の[負荷分散サービス](/azure/architecture/guide/technology-choices/load-balancing-overview#azure-load-balancing-services) <br> 3.ネットワーク セキュリティ グループ <br> 4.Azure Virtual Machines <br> 5.[Azure Kubernetes Service](/azure/aks/intro-kubernetes)/[Azure Container Instances](/azure/container-instances/) | 1.容量、可用性、およびパフォーマンス。 <br> 2.パフォーマンス ログと診断ログ (アクティビティ、アクセス、パフォーマンス、ファイアウォール)。 <br> 3.ルールが適用されたときのイベントと、拒否または許可を行うためにルールが適用された回数を示すルール カウンターを監視します。 <br> 4.ゲスト VM オペレーティング システム (OS) での容量、可用性、パフォーマンスを監視します。 各 VM 上でホストされているアプリケーションの依存関係をマップします。これには、サーバー間のアクティブなネットワーク接続の可視性、受信および送信接続の待機時間、任意の TCP 接続アーキテクチャでのポートなどが含まれます。 <br> 5.コンテナーおよびコンテナー インスタンス上で実行されるワークロードの容量、可用性、およびパフォーマンスを監視します。 | 最初の列の項目 1 から 5 では、プラットフォーム メトリックとアクティビティ ログが自動的に収集され、分析とアラートのために Azure Monitor で使用できます。 <br> リソース ログを Azure Monitor ログに転送するように診断設定を構成します。 <br> 4.[Azure Monitor for VMs](/azure/azure-monitor/vm/vminsights-overview) を有効にします。 <br> 5.[Azure Monitor for containers](/azure/azure-monitor/containers/container-insights-overview) を有効にします。 |
+| Azure リソース - サービスとしてのインフラストラクチャ (IaaS) | 1.Azure Storage <br> 2.Azure の[負荷分散サービス](/azure/architecture/guide/technology-choices/load-balancing-overview#azure-load-balancing-services) <br> 3.ネットワーク セキュリティ グループ <br> 4.Azure Virtual Machines <br> 5.[Azure Kubernetes Service](/azure/aks/intro-kubernetes) / [Azure Container Instances](/azure/container-instances/) | 1.容量、可用性、およびパフォーマンス。 <br> 2.パフォーマンス ログと診断ログ (アクティビティ、アクセス、パフォーマンス、ファイアウォール)。 <br> 3.ルールが適用されたときのイベントと、拒否または許可を行うためにルールが適用された回数を示すルール カウンターを監視します。 <br> 4.ゲスト VM オペレーティング システム (OS) での容量、可用性、パフォーマンスを監視します。 各 VM 上でホストされているアプリケーションの依存関係をマップします。これには、サーバー間のアクティブなネットワーク接続の可視性、受信および送信接続の待機時間、任意の TCP 接続アーキテクチャでのポートなどが含まれます。 <br> 5.コンテナーおよびコンテナー インスタンス上で実行されるワークロードの容量、可用性、およびパフォーマンスを監視します。 | 最初の列の項目 1 から 5 では、プラットフォーム メトリックとアクティビティ ログが自動的に収集され、分析とアラートのために Azure Monitor で使用できます。 <br> リソース ログを Azure Monitor ログに転送するように診断設定を構成します。 <br> 4.[Azure Monitor for VMs](/azure/azure-monitor/vm/vminsights-overview) を有効にします。 <br> 5.[Azure Monitor for containers](/azure/azure-monitor/containers/container-insights-overview) を有効にします。 |
 | ネットワーク | ご利用の仮想マシンと 1 つまたは複数のエンドポイント (別の VM、完全修飾ドメイン名、Uniform Resource Identifier、または IPv4 アドレス) との間の通信です。 | VM とエンドポイントの間で発生する到達可能性、待機時間、およびネットワーク トポロジ変更を監視します。 | Azure Network Watcher。 |
 | Azure サブスクリプション | Azure サービスの観点からの [Azure Service Health](/azure/service-health/overview) と基本的なリソース正常性。 | <li> サービスまたはリソースに対して実行された管理操作。 <li> 低下状態または利用不可状態である、Azure サービスのサービス正常性。 <li> Azure サービスの観点から Azure リソースで検出された正常性の問題。 <li> 失敗または例外を示す Azure の自動スケーリングを使用して実行された操作。 <li> 許可または拒否操作が発生したことを示す Azure Policy を使用して実行された操作。 <li> Azure Security Center によって生成されたアラートのレコード。 | Azure Monitor を使用して、監視およびアラート用にアクティビティ ログで提供されます。 |
 | Azure テナント | Azure Active Directory | Azure AD 監査ログとサインイン ログ。 | [診断ログ](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)を有効にし、Azure Monitor ログへのストリーミングを構成します。 |
@@ -61,7 +61,7 @@ Azure Active Directory Domain Services などのテナント サービスから�
 
 次の主要な技術的面に注意してください。
 
-- ワークロードをサポートする Azure リソースからデータを収集し、それらを既存のオンプレミスのツールまたはマネージド サービス プロバイダーのツールに転送する必要があります。
+- ワークロードをサポートする Azure リソースからデータを収集し、そのデータを既存のオンプレミスのツールまたはマネージド サービス プロバイダーのツールに転送する必要があります。
 
 - System Center Operations Manager への現在の投資を維持し、Azure で実行されている IaaS および PaaS リソースを監視するように構成する必要があります。 場合によっては、特性の異なる 2 つの環境を監視するので、要件に基づいて、Azure Monitor との統合によって戦略をサポートする方法を決定します。
 

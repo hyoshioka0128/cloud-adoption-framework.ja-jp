@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: b2540c18ea1aa98b0188c29c59564f303fd6fe6c
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 7bc86b6bc5bbba91794b27397c0a2582ca3cb999
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102114168"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747332"
 ---
 # <a name="use-a-terraform-plan-to-deploy-a-vmware-windows-virtual-machine-and-connect-it-to-azure-arc"></a>Terraform プランを使用して VMware Windows 仮想マシンをデプロイし、Azure Arc に接続する
 
@@ -21,7 +21,7 @@ ms.locfileid: "102114168"
 
 ## <a name="prerequisites"></a>前提条件
 
-1. Azure Arc Jumpstart リポジトリをクローンします。
+1. Azure Arc Jumpstart リポジトリを複製します。
 
     ```console
     git clone https://github.com/microsoft/azure_arc.git
@@ -39,7 +39,7 @@ ms.locfileid: "102114168"
 
 5. Azure サービス プリンシパルを作成します。
 
-    VMware vSphere 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは、[Azure Cloud Shell](https://shell.azure.com/) 内で実行することもできます。
+    VMware vSphere 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは [Azure Cloud Shell](https://shell.azure.com/) で実行することもできます。
 
     ```console
     az login
@@ -74,7 +74,7 @@ ms.locfileid: "102114168"
 **Terraform プランは、WinRM プロトコルを使用して必要な Azure Arc スクリプトをコピーして実行する、`remote-exec` プロビジョナーを使用します。VM への WinRM 接続を許可するには、テンプレートに変換する前に [`allow_winrm`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/winsrv/terraform/scripts/allow_winrm.ps1) PowerShell スクリプトを VM 上で実行します。**
 
 > [!NOTE]
-> Windows Server VM テンプレートを既にお持ちの場合でも、このガイドを参照用に使用されることをお勧めします。
+> Windows Server VM テンプレートを既にお持ちの場合でも、このガイドを参照用に使用する必要があります。
 
 ## <a name="deployment"></a>デプロイ
 
@@ -98,7 +98,7 @@ Terraform プランを実行する前に、プランで使用される環境変�
 
 3. CLI から、クローンされたリポジトリの `azure_arc_servers_jumpstart/vmware/winsrv/terraform` ディレクトリに移動します。
 
-4. 以下に示すように、source コマンドを使って [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/winsrv/terraform/scripts/vars.sh) を実行することにより、編集した環境変数をエクスポートします。 Terraform ではプランを適切に実行するために、これらを設定する必要があります。 このスクリプトは、Terraform のデプロイの一部として、仮想マシンでも自動的にリモートで実行されることに注意してください。
+4. 下に示すように、source コマンドを使って [`scripts/vars.sh`](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/vmware/winsrv/terraform/scripts/vars.sh) を実行することにより、編集した環境変数をエクスポートします。 Terraform ではプランを適切に実行するために、これらを設定する必要があります。 このスクリプトは、Terraform のデプロイの一部として、仮想マシンでも自動的にリモートで実行されることに注意してください。
 
     ```console
     source ./scripts/vars.sh

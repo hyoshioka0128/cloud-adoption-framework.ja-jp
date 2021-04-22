@@ -2,21 +2,19 @@
 title: イノベーション手法と成熟度モデリング
 description: 成熟度モデルを使用して仮説の成熟度に応じて徐々に障害を取り除き、導入を強化するイノベーション手法を使用する Azure ツールについて説明します。
 author: BrianBlanchard
-keywords: ツールチェーン、成熟度モデル、継続的インテグレーション、イノベーション手法
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
-ms.openlocfilehash: d5d5333492ba109c9afadd4c7b261d89d4a331dc
-ms.sourcegitcommit: 95ba6496b12b16216ccb8016b86b5126ede64748
+ms.custom: internal, seo-caf-innovate
+keywords: ツールチェーン, 成熟度モデル, 継続的インテグレーション, イノベーション手法
+ms.openlocfilehash: fe1a71aeff1d1ad7d790d2df5f93e138314b6f37
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082365"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747995"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Azure での導入を強化するツール
 

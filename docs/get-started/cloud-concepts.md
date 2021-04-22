@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 0e73ed6f0f60f32bb5d50d8b089127e65215d1b5
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: f7c284877dbe1d4753c2db408150bb26cf423d8c
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101788659"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746584"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>作業を開始しましょう。基本的なアラインメントに関する決定事項を理解し、文書化する
 

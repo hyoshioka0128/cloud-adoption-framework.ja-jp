@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 8658150b7c472a1eb67c6002f3b7181a9b2e2d11
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: b195a3157cb6d326f47a9275b63c9363538556c3
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102114304"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746669"
 ---
 # <a name="use-a-terraform-plan-to-deploy-a-vmware-ubuntu-virtual-machine-and-connect-it-to-azure-arc"></a>Terraform プランを使用して VMware Ubuntu 仮想マシンをデプロイして Azure Arc に接続する
 
@@ -39,7 +39,7 @@ ms.locfileid: "102114304"
 
 5. Azure サービス プリンシパルを作成します。
 
-    VMware vSphere 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは [Azure Cloud Shell](https://shell.azure.com/) で実行することもできます。
+    VMware vSphere 仮想マシンを Azure Arc に接続するには、共同作成者ロールが割り当てられた Azure サービス プリンシパルが必要です。 これを作成するには、自分の Azure アカウントにサインインして、次のコマンドを実行します。 このコマンドは [Azure Cloud Shell](https://shell.azure.com/) で実行することもできます。
 
     ```bash
     az login
@@ -72,7 +72,7 @@ ms.locfileid: "102114304"
 下のガイドを使用して Ubuntu サーバー VM をデプロイしてそれを Azure Arc に接続する前に、VMware vSphere テンプレートが必要です。 [この記事](./vmware-ubuntu-template.md)では、VMware vSphere 6.5 以降を使用してこのようなテンプレートを簡単に作成する方法について説明します。
 
 > [!NOTE]
-> Ubuntu サーバー VM テンプレートを既にお持ちの場合でも、このガイドを参照用に使用することをお勧めします。
+> Ubuntu サーバー VM テンプレートを既にお持ちの場合でも、このガイドを参照用に使用する必要があります。
 
 ## <a name="deployment"></a>デプロイ
 

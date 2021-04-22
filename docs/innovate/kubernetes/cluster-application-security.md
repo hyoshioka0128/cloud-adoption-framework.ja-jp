@@ -2,19 +2,19 @@
 title: クラスターとアプリケーションのセキュリティ
 description: クラスターとアプリケーションのセキュリティのためのクラウド導入フレームワークでの Kubernetes のセキュリティの重要項目について説明します。
 author: sabbour
-keywords: アプリケーションのセキュリティ, セキュリティの重要項目, Kubernetes のセキュリティ
 ms.author: brblanch
 ms.date: 04/06/2021
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank, seo-caf-innovate
-ms.openlocfilehash: 071a25ea6895de2c8b52d6f20a87a9f74fb859d6
-ms.sourcegitcommit: 37b9560a02ae301d05da338446a5d47fa3bc1908
+keywords: アプリケーションのセキュリティ, セキュリティの重要項目, Kubernetes のセキュリティ
+ms.openlocfilehash: 24ba7cc719cb9178672a6e3a92973a341d5f9829
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107371421"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747418"
 ---
 <!-- cSpell:ignore kured -->
 
@@ -24,7 +24,7 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 
 ## <a name="plan-train-and-proof"></a>計画、トレーニング、および証明
 
-開始時に、下のセキュリティの重要項目のチェックリストと Kubernetes セキュリティ リソースを使用すると、クラスターの操作とアプリケーションのセキュリティについて計画するのに役立ちます。  このセクションを終了すると、こちらの質問に答えることができます。
+開始時に、下のセキュリティの重要項目のチェックリストと Kubernetes セキュリティ リソースを使用すると、クラスターの操作とアプリケーションのセキュリティについて計画するのに役立ちます。 このセクションを終了すると、こちらの質問に答えることができます。
 
 > [!div class="checklist"]
 >
@@ -46,7 +46,7 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 
 ## <a name="deploy-to-production-and-apply-kubernetes-security-best-practices"></a>運用環境へのデプロイと Kubernetes セキュリティのベスト プラクティスの適用
 
-運用環境向けにアプリケーションを準備するときには、ベスト プラクティスの最小セットを実装します。 この段階で、こちらのチェックリストを使用します。  このセクションを終了すると、こちらの質問に答えることができます。
+運用環境向けにアプリケーションを準備するときには、ベスト プラクティスの最小セットを実装します。 この段階で、こちらのチェックリストを使用します。 このセクションを終了すると、こちらの質問に答えることができます。
 
 > [!div class="checklist"]
 >
@@ -78,7 +78,7 @@ Kubernetes のセキュリティの基本について理解し、クラスター
 
 ## <a name="optimize-and-scale"></a>最適化とスケーリング
 
-アプリケーションの運用開始後、ワークフローの最適化と、アプリケーションとチームでのスケーリングの準備はどのように行うことができますか? 最適化とスケーリングのチェックリストを使用して準備してください。  このセクションを終了すると、こちらの質問に答えることができます。
+アプリケーションの運用開始後、ワークフローの最適化と、アプリケーションとチームでのスケーリングの準備はどのように行うことができますか? 最適化とスケーリングのチェックリストを使用して準備してください。 このセクションを終了すると、こちらの質問に答えることができます。
 
 > [!div class="checklist"]
 >

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: 58f90c0b53869e4825853de21675a6754adecb22
-ms.sourcegitcommit: 37b9560a02ae301d05da338446a5d47fa3bc1908
+ms.openlocfilehash: 961128094a2c3e2b36a3d5ff932d8410addcfad4
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107371455"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746923"
 ---
 <!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 

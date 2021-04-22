@@ -2,21 +2,19 @@
 title: イノベーション アプリケーション開発ツール
 description: クラウド導入フレームワークのイノベーションの方法論に合致した Azure アプリケーション開発ツールについて説明します。
 author: BrianBlanchard
-keywords: アプリケーション開発サービス, アプリケーション開発ツール, イノベーション手法
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.custom:
-- internal
-- seo-caf-innovate
-ms.openlocfilehash: 34cc11053b53c867864161abdccf9d762f368105
-ms.sourcegitcommit: 6a31f8c3a28781b1e0813717993e7db32446b75c
+ms.custom: internal, seo-caf-innovate
+keywords: アプリケーション開発サービス, アプリケーション開発ツール, イノベーション手法
+ms.openlocfilehash: c0a340dc4f00757786d972f8ffc416352390e3b4
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983842"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107748029"
 ---
 # <a name="tools-to-engage-via-applications-in-azure"></a>Azure でアプリケーションを使用して連携するためのツール
 

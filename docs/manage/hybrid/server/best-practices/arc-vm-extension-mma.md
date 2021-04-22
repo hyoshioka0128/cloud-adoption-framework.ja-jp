@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: c1555d43bfe245f307284b0702742c41f6030cbc
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 9d8498bcdc0dba21e4b7261f76bfff32eff5240d
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102112180"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107748097"
 ---
 # <a name="manage-extensions-and-use-an-azure-resource-manager-template-to-deploy-microsoft-monitoring-agent-to-azure-arc-linux-and-windows-servers"></a>拡張機能を管理し、Azure Resource Manager テンプレートを使用して Microsoft Monitoring Agent を Azure Arc Linux および Windows サーバーにデプロイする
 
@@ -21,7 +21,7 @@ ms.locfileid: "102112180"
 
 Azure Arc 対応サーバーを使用すると、Azure VM 拡張機能を Azure 以外の Windows および Linux VM にデプロイできます。これにより、Azure VM と同等のハイブリッドまたはマルチクラウド管理エクスペリエンスが提供されます。
 
-Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テンプレート)、PowerShell スクリプト、または Azure ポリシーを使用して、Linux と Windows の両方で Azure Arc 対応サーバーへの拡張機能のデプロイを管理できます。 次の手順では、ARM テンプレートを使用して、Microsoft Monitoring Agent (MMA) をサーバーにデプロイします。 これにより、このエージェントを使用する Azure サービス (Azure Monitor、Azure Security Center、Azure Sentinel など) にそれらがオンボードされます。
+Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テンプレート)、PowerShell スクリプト、または Azure ポリシーを使用して、Linux と Windows の両方で Azure Arc 対応サーバーへの拡張機能のデプロイを管理できます。 次の手順では、ARM テンプレートを使用して、Log Analytics エージェントをサーバーにデプロイします。 これにより、このエージェントを使用する Azure サービス (Azure Monitor、Azure Security Center、Azure Sentinel など) にそれらがオンボードされます。
 
 > [!IMPORTANT]
 > この記事の手順では、既に VM、またはオンプレミスや他のクラウドで実行されているサーバーをデプロイ済みで、それらが Azure Arc に接続されていることを前提としています。まだ行っていない場合は、これを自動化するのに次の情報が役立ちます。
@@ -39,7 +39,7 @@ Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テン
 
 ## <a name="prerequisites"></a>前提条件
 
-1. Azure Arc Jumpstart リポジトリをクローンします。
+1. Azure Arc Jumpstart リポジトリを複製します。
 
     ```console
     git clone https://github.com/microsoft/azure_arc.git
@@ -129,7 +129,7 @@ Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テン
 
     ![ARM テンプレートからの出力のスクリーンショット。](./media/arc-vm-extension-mma/mma-output.png)
 
-4. Microsoft Monitoring Agent が Windows または Linux システムにデプロイされ、選択した Log Analytics ワークスペースに報告されます。 確認するには、ワークスペース内の **[Agents Management]\(エージェント管理\)** に戻り、 **[Windows]** または **[Linux]** を選択します。 追加の接続された VM が表示されます。
+4. Log Analytics エージェントが Windows または Linux システムにデプロイされ、選択した Log Analytics ワークスペースに報告されます。 確認するには、ワークスペース内の **[Agents Management]\(エージェント管理\)** に戻り、 **[Windows]** または **[Linux]** を選択します。 追加の接続された VM が表示されます。
 
     ![Windows サーバー用の接続されたエージェントのスクリーンショット。](./media/arc-vm-extension-mma/windows-agents.png)
 

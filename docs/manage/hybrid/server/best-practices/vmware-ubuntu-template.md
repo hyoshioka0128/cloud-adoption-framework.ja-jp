@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 1fac9dcacad7ff5f6230cdfdc9e18910a9792109
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 31180477f01fda908a9b8460debd8a6f2413a43d
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801150"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746822"
 ---
 # <a name="create-a-vmware-vsphere-template-for-ubuntu-server-1804"></a>Ubuntu Server 18.04 用の VMware vSphere テンプレートを作成する
 
@@ -22,7 +22,7 @@ ms.locfileid: "101801150"
 ## <a name="prerequisites"></a>前提条件
 
 > [!NOTE]
-> このガイドは、VMware vSphere に多少精通している読者を想定しています。 また、VMware や Ubuntu のベスト プラクティスをレビューすることを目的としたものではありません。
+> このガイドは、VMware vSphere に多少精通している読者を想定しています。 VMware や Ubuntu のベスト プラクティスをレビューすることを目的としたものではありません。
 
 - [最新の Ubuntu Server 18.04 の ISO ファイルをダウンロードする](https://releases.ubuntu.com/18.04/)
 
@@ -38,13 +38,13 @@ ms.locfileid: "101801150"
 
     ![新しい VMware vSphere 仮想マシンを作成する方法のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-1.png)
 
-    ![新しい VMware vSphere 仮想マシンを作成する方法の 2 番目のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-2.png)
+    ![新しい VMware vSphere 仮想マシンを作成する方法を示す 2 番目のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-2.png)
 
-    ![新しい VMware vSphere 仮想マシンを作成する方法の 3 番目のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-3.png)
+    ![新しい VMware vSphere 仮想マシンを作成する方法を示す 3 番目のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-3.png)
 
-    ![新しい VMware vSphere 仮想マシンを作成する方法の 4 番目のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-4.png)
+    ![新しい VMware vSphere 仮想マシンを作成する方法を示す 4 番目のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-4.png)
 
-    ![新しい VMware vSphere 仮想マシンを作成する方法の 5 番目のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-5.png)
+    ![新しい VMware vSphere 仮想マシンを作成する方法を示す 5 番目のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-5.png)
 
     ![新しい VMware vSphere 仮想マシンを作成する方法の 6 番目のスクリーンショット。](./media/vmware-template/ubuntu-template-new-vm-6.png)
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 8b177db065887d3031797a26109389fd44c35f58
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: 6bb394c4ab7d40590affe87ca58ac141182a3593
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801454"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107748114"
 ---
 # <a name="connect-azure-arc-enabled-servers-to-azure-sentinel"></a>Azure Arc 対応サーバーを Azure Sentinel に接続する
 
@@ -39,7 +39,7 @@ ms.locfileid: "101801454"
 
 ## <a name="prerequisites"></a>前提条件
 
-1. Azure Arc Jumpstart リポジトリをクローンします。
+1. Azure Arc Jumpstart リポジトリを複製します。
 
     ```console
     git clone https://github.com/microsoft/azure_arc
@@ -109,7 +109,7 @@ Log Analytics ワークスペースに Azure Sentinel をデプロイしたら�
 
 Microsoft サービス用のコネクタと、セキュリティ製品エコシステムのサードパーティ ソリューションがあります。 Common Event Format (CEF)、syslog、または REST API を使用して、お使いのデータ ソースを Azure Sentinel に接続することもできます。
 
-サーバーと VM には、Microsoft Monitoring Agent (MMA) エージェント、またはログを収集して Azure Sentinel に転送する Azure Sentinel エージェントをインストールできます。 Azure Arc を使用すると、複数の方法でエージェントをデプロイできます。
+サーバーと VM には、Log Analytics エージェント (MMA) エージェント、またはログを収集して Azure Sentinel に送信する Azure Sentinel エージェントをインストールできます。 Azure Arc を使用すると、複数の方法でエージェントをデプロイできます。
 
 - [拡張機能の管理](./arc-vm-extension-mma.md): Azure Arc 対応サーバーのこの機能を使用すると、Azure 以外の Windows または Linux VM に MMA エージェントの VM 拡張機能をデプロイできます。 Azure portal、Azure CLI、ARM テンプレート、PowerShell スクリプトを使用して、Azure Arc 対応サーバーへの拡張機能のデプロイを管理できます。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: 3d8fc4b224992abdd4f4354adea19eceb64aa25e
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: b0a3299515e5407f8b02bf515fec54caecf46b32
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101785072"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746652"
 ---
 <!-- docutune:casing "Squared Up" -->
 <!-- cSpell:ignore opsman ITSM -->

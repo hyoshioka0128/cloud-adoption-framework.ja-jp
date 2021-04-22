@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank
-ms.openlocfilehash: a18e43532200998ec4c785a62dec2492bf84f4ff
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: 668bc647cea1f1ae521e37b43a461ff54f0eab33
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102114049"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746567"
 ---
 <!-- cSpell:ignore multisignal -->
 
@@ -89,7 +89,7 @@ Azure Monitor には、他の監視プラットフォームや、ServiceNow な�
 
 ### <a name="fastest-speed-driven-by-cost"></a>コストに基づく最高速度
 
-サービスに影響を与える問題のアラートと迅速な解決を促進する最も重要な決定の 1 つは待機時間です。 5 分未満でのほぼリアルタイムのアラートが必要な場合は、テレメトリに関するアラートが既定の保存場所にあるか、そこで取得できるかを最初に評価します。 一般的に、使用中のツールは既にその場所にデータを送信しているため、この戦略は最もコストが低い選択肢でもあります。
+サービスに影響を与える問題のアラートと迅速な解決を促進する最も重要な決定の 1 つは待機時間です。 5 分未満でのほぼリアルタイムのアラートが必要な場合は、テレメトリに関するアラートが既定の保存場所にあるか、またはそこで取得できるかを最初に評価します。 一般的に、使用中のツールは既にその場所にデータを送信しているため、この戦略は最もコストが低い選択肢でもあります。
 
 とは言え、この原則にはいくつかの重要な注意事項があります。
 

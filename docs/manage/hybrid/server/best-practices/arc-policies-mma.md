@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: think-tank, e2e-hybrid
-ms.openlocfilehash: 255ad6726b06d5f59e17c11851c7822e969c87f5
-ms.sourcegitcommit: 9e4bc0e233a24642853f5e8acbeb9746b2444024
+ms.openlocfilehash: d9a9c08f361f3988e55cfd2d9789c911c872cb2b
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102114525"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107748080"
 ---
 # <a name="manage-azure-policies-and-deploy-the-azure-monitoring-agent-extension-to-azure-arc-linux-and-windows-servers"></a>Azure ポリシーを管理し、Azure Arc Linux および Windows サーバーに Azure 監視エージェント拡張機能をデプロイする
 
 この記事では、Azure Arc 対応サーバーを使用して Azure 外部の VM (オンプレミスにあるか他のクラウドにあるかは問いません) に Azure ポリシーを割り当てる方法に関するガイダンスを提供します。 この機能により、Azure Policy を使用して、Azure Arc 対応サーバーのオペレーティング システムの設定を監査できます。設定が準拠していない場合は、修復タスクをトリガーすることもできます。
 
-ここでは、Azure Arc に接続されたマシンに MMA (Microsoft Monitoring Agent) エージェントがインストールされているかどうかを監査するポリシーを割り当てます。 されていない場合は、Azure VM を同じレベルにする登録エクスペリエンスである拡張機能を使用して、VM にそれを自動的にデプロイします。 このアプローチを使用すると、すべてのサーバーが確実に Azure Monitor、Azure Security Center、Azure Sentinel などのサービスにオンボードされるようにすることができます。
+ここでは、Azure Arc に接続されたマシンに Log Analytics エージェントがインストールされているかどうかを監査するポリシーを割り当てます。 されていない場合は、Azure VM を同じレベルにする登録エクスペリエンスである拡張機能を使用して、VM にそれを自動的にデプロイします。 このアプローチを使用すると、すべてのサーバーが確実に Azure Monitor、Azure Security Center、Azure Sentinel などのサービスにオンボードされるようにすることができます。
 
 Azure portal、Azure Resource Manager テンプレート (ARM テンプレート)、または PowerShell スクリプトを使用して、Azure サブスクリプションまたはリソース グループにポリシーを割り当てることができます。 次の手順では、ARM テンプレートを使用して組み込みのポリシーを割り当てます。
 
@@ -39,7 +39,7 @@ Azure portal、Azure Resource Manager テンプレート (ARM テンプレート
 
 ## <a name="prerequisites"></a>前提条件
 
-1. Azure Arc Jumpstart リポジトリをクローンします。
+1. Azure Arc Jumpstart リポジトリを複製します。
 
    ```console
    git clone https://github.com/microsoft/azure_arc
@@ -125,7 +125,7 @@ az deployment group create --resource-group <Name of the Azure resource group> \
 
    ![修復タスク内の Azure Policy 修復アクションのスクリーンショット。](./media/arc-policies-mma/remediation-action.png)
 
-5. 修復タスクを割り当てると、ポリシーが再び評価されます。 GCP 上のサーバーが準拠していることと、Microsoft Monitoring Agent 拡張機能が Azure Arc マシンにインストールされていることが表示されます。
+5. 修復タスクを割り当てると、ポリシーが再び評価されます。 GCP 上のサーバーが準拠していることと、Log Analytics エージェントが Azure Arc マシンにインストールされていることが表示されます。
 
    ![修復タスクの構成を示すスクリーンショット。](./media/arc-policies-mma/task-config.png)
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: internal
-ms.openlocfilehash: fab9e826186f9eb915a9c3499af5771a84979a60
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: d04d5adc643883ed606bdfe08e111b1a3fa66cd8
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101785174"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747298"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -66,7 +66,7 @@ Azure Policy には、Log Analytics エージェントと [Microsoft Dependency 
 
 7. **[割り当て]** を選択します。
 
-ウィザードを完了すると、ポリシー割り当てが環境にデプロイされます。 ポリシーが有効になるまで、最大で 30 分かかる可能性があります。 テストするには、30 分後に新しい VM を作成し、その VM 上で Microsoft Monitoring エージェントが既定で有効になっているかどうかを確認します。
+ウィザードを完了すると、ポリシー割り当てが環境にデプロイされます。 ポリシーが有効になるまで、最大で 30 分かかる可能性があります。 テストするには、30 分後に新しい VM を作成し、その VM 上で Log Analytics エージェントが既定で有効になっているかどうかを確認します。
 
 ## <a name="install-agents-on-on-premises-servers"></a>エージェントをオンプレミスのサーバーにインストールする
 
@@ -107,7 +107,7 @@ Change Tracking と Inventory のソリューションをオンボードする�
 
 ![Azure portal 内の Change Tracking のスクリーンショット](./media/onboarding-configuration2.png)
 
-#### <a name="opt-in-by-using-saved-searches"></a>保存された検索を使用したオプトイン
+#### <a name="opt-in-by-using-saved-searches&quot;></a>保存された検索を使用したオプトイン
 
 また、スコープ構成を構成してオンプレミスのサーバーをオプトインできます。 スコープ構成では、保存された検索を使用します。
 
@@ -123,7 +123,7 @@ Change Tracking と Inventory のソリューションをオンボードする�
 
   ```kusto
   Heartbeat
-  | where AzureEnvironment=~"Azure" or Computer in~ ("list of the on-premises server names", "server1")
+  | where AzureEnvironment=~&quot;Azure&quot; or Computer in~ (&quot;list of the on-premises server names&quot;, &quot;server1")
   | distinct Computer
   ```
 

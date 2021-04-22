@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: think-tank
-ms.openlocfilehash: c0dbbfa85eed220540a0aabb42cab540267c270d
-ms.sourcegitcommit: b8f8b7631aabaab28e9705934bf67dad15e3a179
+ms.openlocfilehash: edce4faf219ee72635248e047f66493a66856a14
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101801054"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107748131"
 ---
 # <a name="plan-for-landing-zone-network-segmentation"></a>ランディング ゾーンのネットワーク セグメント化を計画する
 
@@ -46,3 +46,15 @@ ms.locfileid: "101801054"
 - ランディング ゾーン間の接続を選択的に許可するには、NSG を使用します。
 
 - Virtual WAN トポロジでは、お客様の組織がランディング ゾーン間を流れるトラフィックに対するフィルター処理とログの機能を必要とする場合、Azure Firewall を介してランディング ゾーン間のトラフィックをルーティングします。
+
+- 組織でオンプレミスへの強制トンネリング (既定のルートのアドバタイズ) を実装することにした場合は、BGP セッションがドロップした場合に VNet からインターネットに直接流れるエグレス トラフィックを拒否するために、次の **送信** NSG ルールを組み込むことをお勧めします。 
+
+> [!NOTE] 
+> ルールの優先順位は、既存の NSG ルールセットに基づいて調整する必要があります。 
+
+  | Priority | 名前 | source | 宛先 | サービス | アクション | 注記 |
+  | --- | --- | --- | --- | --- | --- | --- |
+  | 100 | `AllowLocal` | `Any` | `VirtualNetwork` | `Any` | `Allow` | 通常の操作中にトラフィックを許可します。 強制トンネリングが有効になっている場合、BGP が ExpressRoute または VPN ゲートウェイにアドバタイズしている限り、`0.0.0.0/0` は `VirtualNetwork` タグの一部と見なされます。 | 
+  | 110 | `DenyInternet` | `Any` | `Internet` | `Any` | `Deny` | アドバタイズされたルートから `0.0.0.0/0` ルートが引き出された場合 (たとえば、障害や構成の誤りが原因で)、インターネットへの直接トラフィックを拒否します。 | 
+  
+  

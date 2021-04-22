@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: think-tank
-ms.openlocfilehash: 3fba2353343fa633f5a70024b66060a5019a6e49
-ms.sourcegitcommit: 9cd2b48fbfee229edc778f8c5deaf2dc39dfe2d6
+ms.openlocfilehash: 2d42ec1e43dacdad0d4cdb6f2088e4152290bbe9
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99230705"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107747927"
 ---
 # <a name="how-to-approach-machine-learning-operations"></a>機械学習運用のアプローチ方法
 
@@ -27,7 +27,7 @@ ms.locfileid: "99230705"
 
 <!-- docutune:disable -->
 
-_Sculley et al.2015。 Hidden technical debt in machine learning systems (機械学習システムの隠れた技術負債)。 Proceedings of the 28th International Conference on Neural Information Processing Systems (第 28 回ニューラル情報処理システムに関する国際会議の議事録)、ボリューム 2 (NIPS 2015)。*
+*Sculley ほか、2015 年。Hidden technical debt in machine learning systems (機械学習システムにおける隠れた技術的負債)。Proceedings of the 28th International Conference on Neural Information Processing Systems, Volume 2 (NIPS 2015)。*
 
 <!-- docutune:enable -->
 
