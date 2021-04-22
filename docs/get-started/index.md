@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: internal
-ms.openlocfilehash: c6ed0f262daf6fcf52f57692e00f465766dc08fe
-ms.sourcegitcommit: 36e85ac734b184de3f29884b744ea74c81ccc72b
+ms.openlocfilehash: 0c4a411a144d9399790f08dd4033349d13212a7d
+ms.sourcegitcommit: 51565dc4d3a1858bd62f708f2e4c082fbd4c6fe4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "103439646"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107746941"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>クラウド導入フレームワークの概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "103439646"
 
 ## <a name="cloud-adoption-antipatterns"></a>クラウド導入のアンチパターン
 
-クラウドへの移行時に、設計、計画、または実装での誤りが発生する可能性があります。 イノベーションを阻み、企業における目標の採用と達成を妨げる、[アンチパターン](../antipatterns/antipatterns-to-avoid.md)に関する詳細なガイダンスを更新しました。  
+クラウドへの移行時に、設計、計画、または実装での誤りが発生する可能性があります。 イノベーションを阻み、企業における目標の採用と達成を妨げる、[アンチパターン](../antipatterns/antipatterns-to-avoid.md)に関する詳細なガイダンスを更新しました。
 
 ## <a name="align-foundation"></a>基盤を調整する
 

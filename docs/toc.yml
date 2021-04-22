@@ -461,6 +461,12 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
                   - name: Azure VM と SQL Server AlwaysOn 可用性グループでアプリをリホストする
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
+              - name: 記憶域の移行
+                items:
+                  - name: Storage の移行の概要
+                    href: /azure/storage/common/storage-migration-overview?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                  - name: 非構造化ストレージ移行用ツール
+                    href: /azure/storage/solution-integration/validated-partners/data-management/migration-tools-comparison?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
               - name: Linux およびオープンソース データベース
                 items:
                   - name: オープンソース データベースを Azure に移行する
