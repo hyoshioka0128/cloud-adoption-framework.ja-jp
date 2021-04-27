@@ -80,7 +80,7 @@ Azure ワークロードは、通常、複数のリソースおよびサービ�
 
 | 資産の種類 | リソース プロバイダー名前空間とエンティティ | 省略形 |
 |--|--|--|
-| App Service 環境 | `Microsoft.Web/sites` | `ase-` |
+| App Service Environment | `Microsoft.Web/sites` | `ase-` |
 | App Service プラン | `Microsoft.Web/serverFarms` | `plan-` |
 | 可用性セット | `Microsoft.Compute/availabilitySets` | `avail-` |
 | Azure Arc 対応サーバー | `Microsoft.HybridCompute/machines` | `arcs-` |
