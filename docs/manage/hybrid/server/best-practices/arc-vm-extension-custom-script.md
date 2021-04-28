@@ -82,7 +82,7 @@ Azure portal、Azure CLI、Azure Resource Manager テンプレート (ARM テン
 カスタム スクリプト拡張機能を試行するには、以下の Linux スクリプトと Windows スクリプトを使用します。
 
 - [Linux](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/custom_script_linux.sh): スクリプトによって、オペレーティング システム上でその日のメッセージが変更されます。
-- [Windows](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/custom_script_windows.ps1): スクリプトによって、Windows ターミナル、Microsoft Edge、7-Zip、Visual Studio Code [Chocolatey](https://chocolatey.org/) パッケージが VM にインストールされます。
+- [Windows](https://github.com/microsoft/azure_arc/blob/main/azure_arc_servers_jumpstart/scripts/custom_script_windows.ps1): スクリプトによって、Windows Terminal、Microsoft Edge、7-Zip、Visual Studio Code [Chocolatey](https://chocolatey.org/) パッケージが VM にインストールされます。
 
 ## <a name="azure-arc-enabled-servers-custom-script-extension-deployment"></a>Azure Arc 対応サーバーのカスタム スクリプト拡張機能のデプロイ
 
